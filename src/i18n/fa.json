@@ -52,5 +52,22 @@
   "contact.send": "ارسال",
   "search.placeholder": "جستجو...",
   "pagination.prev": "قبلی",
-  "pagination.next": "بعدی"
+  "pagination.next": "بعدی",
+  "nav.tags": "برچسب‌ها",
+  "nav.drafts": "پیش‌نویس‌ها",
+  "tags.title": "برچسب‌ها",
+  "tags.description": "مرور مطالب بر اساس برچسب موضوعی",
+  "tags.articles_count": "مقاله",
+  "tags.books_count": "کتاب",
+  "tags.all_tagged": "مطالب با برچسب",
+  "tags.no_content": "محتوایی با این برچسب یافت نشد.",
+  "tags.back_to_tags": "بازگشت به برچسب‌ها",
+  "drafts.title": "پیش‌نویس‌ها",
+  "drafts.description": "مطالبی که هنوز در مرحله تکمیل هستند و نهایی نشده‌اند.",
+  "drafts.badge": "پیش‌نویس",
+  "drafts.no_drafts": "در حال حاضر پیش‌نویسی وجود ندارد.",
+  "content.article": "مقاله",
+  "content.book": "کتاب",
+  "content.statement": "بیانیه",
+  "content.wiki": "ویکی"
 }

@@ -52,5 +52,22 @@
   "contact.send": "Send",
   "search.placeholder": "Search...",
   "pagination.prev": "Previous",
-  "pagination.next": "Next"
+  "pagination.next": "Next",
+  "nav.tags": "Tags",
+  "nav.drafts": "Drafts",
+  "tags.title": "Tags",
+  "tags.description": "Browse content by topic tags",
+  "tags.articles_count": "articles",
+  "tags.books_count": "books",
+  "tags.all_tagged": "Content tagged with",
+  "tags.no_content": "No content found with this tag.",
+  "tags.back_to_tags": "Back to tags",
+  "drafts.title": "Drafts",
+  "drafts.description": "Content that is still being developed and not yet finalized.",
+  "drafts.badge": "Draft",
+  "drafts.no_drafts": "No drafts at the moment.",
+  "content.article": "Article",
+  "content.book": "Book",
+  "content.statement": "Statement",
+  "content.wiki": "Wiki"
 }

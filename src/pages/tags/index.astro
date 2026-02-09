@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { t, getLocalizedPath } from '../../i18n';
+import { getCollection } from 'astro:content';
+
+const lang = 'fa';
+
+const allArticles = await getCollection('articles', ({ data }) => data.lang === 'fa' && !data.draft);
+const allBooks = await getCollection('books', ({ data }) => data.lang === 'fa' && !data.draft && !data.bookSlug);
+
+// Build tag map: tag -> { articles: count, books: count }
+const tagMap = new Map<string, { articles: number; books: number }>();
+
+for (const article of allArticles) {
+  for (const tag of article.data.tags) {
+    const entry = tagMap.get(tag) ?? { articles: 0, books: 0 };
+    entry.articles++;
+    tagMap.set(tag, entry);
+  }
+}
+
+for (const book of allBooks) {
+  for (const tag of book.data.tags) {
+    const entry = tagMap.get(tag) ?? { articles: 0, books: 0 };
+    entry.books++;
+    tagMap.set(tag, entry);
+  }
+}
+
+// Sort tags by total count (descending)
+const sortedTags = [...tagMap.entries()].sort(
+  (a, b) => (b[1].articles + b[1].books) - (a[1].articles + a[1].books)
+);
+---
+
+<BaseLayout title={t('tags.title', lang)} description={t('tags.description', lang)}>
+  <div class="container-wide py-16">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4">{t('tags.title', lang)}</h1>
+    <p class="text-text-muted dark:text-text-dark-muted mb-10">{t('tags.description', lang)}</p>
+
+    {sortedTags.length > 0 ? (
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {sortedTags.map(([tag, counts]) => (
+          <a
+            href={getLocalizedPath(`tags/${encodeURIComponent(tag)}`, lang)}
+            class="group flex items-center justify-between p-4 rounded-xl border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline"
+          >
+            <span class="text-base font-medium text-text-base dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors">
+              #{tag}
+            </span>
+            <div class="flex items-center gap-3 text-xs text-text-muted dark:text-text-dark-muted">
+              {counts.articles > 0 && (
+                <span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary dark:bg-primary-light/10 dark:text-primary-light">
+                  {counts.articles} {t('tags.articles_count', lang)}
+                </span>
+              )}
+              {counts.books > 0 && (
+                <span class="px-2 py-0.5 rounded-full bg-secondary/10 text-secondary dark:bg-secondary-light/10 dark:text-secondary-light">
+                  {counts.books} {t('tags.books_count', lang)}
+                </span>
+              )}
+            </div>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <p class="text-text-muted dark:text-text-dark-muted">{t('tags.no_content', lang)}</p>
+    )}
+  </div>
+</BaseLayout>
