@@ -1,4 +1,4 @@
-name: Deploy Astro to GitHub Pages
+name: Deploy Astro to GitHub Pages and Cloudflare Pages
 
 on:
   push:
@@ -33,12 +33,22 @@ jobs:
       - name: Build Astro
         run: npm run build
 
-      - name: Upload artifact
+      # Deploy به Cloudflare Pages (اینجا اضافه شد)
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: mahdisalem
+          directory: dist
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
-  deploy:
+  deploy-github:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -47,4 +57,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4 
