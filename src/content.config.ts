@@ -11,6 +11,7 @@ const books = defineCollection({
     coverImage: z.string().optional(),
     pdfUrl: z.string().optional(),
     publishDate: z.coerce.date().optional(),
+    updatedDate: z.coerce.date().optional(),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
     order: z.number().default(0),
@@ -28,6 +29,7 @@ const articles = defineCollection({
     lang: z.enum(['fa', 'en']),
     publishDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
+    type: z.enum(['statement', 'press', 'position']).default('statement'),
     author: z.string().default('مهدی سالم'),
     categories: z.array(z.string()).default([]),
     tags: z.array(z.string()).default([]),
@@ -57,6 +59,7 @@ const wiki = defineCollection({
     section: z.string().optional(),
     order: z.number().default(0),
     lastUpdated: z.coerce.date().optional(),
+    updatedDate: z.coerce.date().optional(),
     draft: z.boolean().default(false),
   }),
 });

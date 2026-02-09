@@ -69,5 +69,21 @@
   "content.article": "Article",
   "content.book": "Book",
   "content.statement": "Statement",
-  "content.wiki": "Wiki"
+  "content.wiki": "Wiki",
+  "nav.timeline": "Timeline",
+  "nav.search": "Search",
+  "search.title": "Search",
+  "search.description": "Search all site content",
+  "timeline.title": "Timeline",
+  "timeline.description": "Browse all content chronologically",
+  "timeline.updated": "Updated",
+  "timeline.published": "Published",
+  "reading_time.minutes": "min read",
+  "related.title": "Related Content",
+  "about.intro_title": "Introduction",
+  "about.education_title": "Academic Background",
+  "about.research_title": "Research Interests",
+  "about.professional_title": "Professional Experience",
+  "about.mission_title": "Mission",
+  "about.experience_title": "Personal Experience"
 }

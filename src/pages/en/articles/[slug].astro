@@ -14,6 +14,7 @@ export async function getStaticPaths() {
 
 const { article } = Astro.props;
 const { Content } = await render(article);
+const slug = article.id.replace(/^en\//, '');
 ---
 
 <ArticleLayout
@@ -26,6 +27,7 @@ const { Content } = await render(article);
   categories={article.data.categories}
   tags={article.data.tags}
   coverImage={article.data.coverImage}
->
+  rawContent={article.body ?? ''}
+  slug={slug}>
   <Content />
 </ArticleLayout>

@@ -1,0 +1,48 @@
+---
+import { t, getLocalizedPath, type Locale, stripLangPrefix } from '../i18n';
+import { getCollection } from 'astro:content';
+ 
+interface Props {
+  lang: Locale;
+  currentTags: string[];
+  currentSlug: string;
+}
+ 
+const { lang, currentTags, currentSlug } = Astro.props;
+ 
+// Find articles with overlapping tags
+const allArticles = await getCollection('articles', ({ data }) => data.lang === lang && !data.draft);
+ 
+const related = allArticles
+  .filter((article) => stripLangPrefix(article.id) !== currentSlug)
+  .map((article) => {
+    const commonTags = article.data.tags.filter((tag) => currentTags.includes(tag));
+    return { article, score: commonTags.length };
+  })
+  .filter((item) => item.score > 0)
+  .sort((a, b) => b.score - a.score)
+  .slice(0, 3);
+ 
+const prefix = lang === 'fa' ? '' : '/en';
+---
+ 
+{related.length > 0 && (
+  <div class="mt-8 pt-6 border-t border-border dark:border-border-dark">
+    <h2 class="text-lg font-bold mb-4">{t('related.title', lang)}</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      {related.map(({ article }) => (
+        <a
+          href={`${prefix}/articles/${stripLangPrefix(article.id)}`}
+          class="group block p-4 rounded-xl border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline"
+        >
+          <h3 class="text-sm font-bold text-text-base dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors mb-1 line-clamp-2">
+            {article.data.title}
+          </h3>
+          <p class="text-xs text-text-muted dark:text-text-dark-muted line-clamp-2">
+            {article.data.description}
+          </p>
+        </a>
+      ))}
+    </div>
+  </div>
+)}

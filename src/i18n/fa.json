@@ -69,5 +69,21 @@
   "content.article": "مقاله",
   "content.book": "کتاب",
   "content.statement": "بیانیه",
-  "content.wiki": "ویکی"
+  "content.wiki": "ویکی",
+  "nav.timeline": "آرشیو زمانی",
+  "nav.search": "جستجو",
+  "search.title": "جستجو",
+  "search.description": "جستجو در تمام محتوای سایت",
+  "timeline.title": "آرشیو زمانی",
+  "timeline.description": "مرور تمام مطالب به ترتیب زمانی",
+  "timeline.updated": "به‌روزرسانی شد",
+  "timeline.published": "منتشر شد",
+  "reading_time.minutes": "دقیقه مطالعه",
+  "related.title": "مطالب مرتبط",
+  "about.intro_title": "معرفی",
+  "about.education_title": "پیشینه تحصیلی",
+  "about.research_title": "حوزه‌های پژوهشی",
+  "about.professional_title": "تجربه حرفه‌ای",
+  "about.mission_title": "رسالت",
+  "about.experience_title": "تجربه شخصی"
 }

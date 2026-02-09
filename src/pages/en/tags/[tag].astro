@@ -2,17 +2,17 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { t, getLocalizedPath, stripLangPrefix } from '../../../i18n';
 import { getCollection } from 'astro:content';
-
+ 
 const lang = 'en';
-
+ 
 export async function getStaticPaths() {
   const allArticles = await getCollection('articles', ({ data }) => data.lang === 'en' && !data.draft);
   const allBooks = await getCollection('books', ({ data }) => data.lang === 'en' && !data.draft && !data.bookSlug);
-
+ 
   const tagSet = new Set<string>();
   allArticles.forEach((a) => a.data.tags.forEach((t) => tagSet.add(t)));
   allBooks.forEach((b) => b.data.tags.forEach((t) => tagSet.add(t)));
-
+ 
   return [...tagSet].map((tag) => ({
     params: { tag },
     props: {
@@ -24,16 +24,16 @@ export async function getStaticPaths() {
     },
   }));
 }
-
+ 
 const { tag, articles, books } = Astro.props;
-
+ 
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
 });
 ---
-
+ 
 <BaseLayout title={`${t('tags.all_tagged', lang)} "${tag}"`}>
   <div class="container-wide py-16">
     <div class="mb-8">
@@ -44,14 +44,14 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
         &larr; {t('tags.back_to_tags', lang)}
       </a>
     </div>
-
+ 
     <h1 class="text-3xl md:text-4xl font-bold mb-2">
       #{tag}
     </h1>
     <p class="text-text-muted dark:text-text-dark-muted mb-10">
       {t('tags.all_tagged', lang)} "{tag}"
     </p>
-
+ 
     {/* Articles section */}
     {articles.length > 0 && (
       <section class="mb-12">
@@ -79,7 +79,7 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
         </div>
       </section>
     )}
-
+ 
     {/* Books section */}
     {books.length > 0 && (
       <section class="mb-12">
@@ -109,7 +109,7 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
         </div>
       </section>
     )}
-
+ 
     {articles.length === 0 && books.length === 0 && (
       <p class="text-text-muted dark:text-text-dark-muted">{t('tags.no_content', lang)}</p>
     )}

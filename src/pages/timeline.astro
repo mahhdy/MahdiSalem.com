@@ -1,0 +1,193 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { t, stripLangPrefix, getLocalizedPath } from '../i18n';
+import { getCollection } from 'astro:content';
+ 
+const lang = 'fa';
+ 
+// Gather all published content
+const articles = await getCollection('articles', ({ data }) => data.lang === 'fa' && !data.draft);
+const books = await getCollection('books', ({ data }) => data.lang === 'fa' && !data.draft && !data.bookSlug);
+const statements = await getCollection('statements', ({ data }) => data.lang === 'fa' && !data.draft);
+ 
+// Build unified timeline events
+type TimelineEvent = {
+  date: Date;
+  type: 'publish' | 'update';
+  contentType: 'article' | 'book' | 'statement';
+  title: string;
+  description: string;
+  href: string;
+  tags?: string[];
+  categories?: string[];
+};
+ 
+const events: TimelineEvent[] = [];
+ 
+for (const article of articles) {
+  events.push({
+    date: article.data.publishDate,
+    type: 'publish',
+    contentType: 'article',
+    title: article.data.title,
+    description: article.data.description,
+    href: `/articles/${stripLangPrefix(article.id)}`,
+    tags: article.data.tags,
+    categories: article.data.categories,
+  });
+  if (article.data.updatedDate) {
+    events.push({
+      date: article.data.updatedDate,
+      type: 'update',
+      contentType: 'article',
+      title: article.data.title,
+      description: article.data.description,
+      href: `/articles/${stripLangPrefix(article.id)}`,
+      tags: article.data.tags,
+      categories: article.data.categories,
+    });
+  }
+}
+ 
+for (const book of books) {
+  if (book.data.publishDate) {
+    events.push({
+      date: book.data.publishDate,
+      type: 'publish',
+      contentType: 'book',
+      title: book.data.title,
+      description: book.data.description,
+      href: `/books/${stripLangPrefix(book.id)}`,
+      tags: book.data.tags,
+    });
+  }
+  if (book.data.updatedDate) {
+    events.push({
+      date: book.data.updatedDate,
+      type: 'update',
+      contentType: 'book',
+      title: book.data.title,
+      description: book.data.description,
+      href: `/books/${stripLangPrefix(book.id)}`,
+      tags: book.data.tags,
+    });
+  }
+}
+ 
+for (const statement of statements) {
+  events.push({
+    date: statement.data.publishDate,
+    type: 'publish',
+    contentType: 'statement',
+    title: statement.data.title,
+    description: statement.data.description,
+    href: `/statements/${stripLangPrefix(statement.id)}`,
+  });
+  if (statement.data.updatedDate) {
+    events.push({
+      date: statement.data.updatedDate,
+      type: 'update',
+      contentType: 'statement',
+      title: statement.data.title,
+      description: statement.data.description,
+      href: `/statements/${stripLangPrefix(statement.id)}`,
+    });
+  }
+}
+ 
+// Sort by date descending
+events.sort((a, b) => b.date.getTime() - a.date.getTime());
+ 
+// Group by year-month
+const grouped = new Map<string, TimelineEvent[]>();
+const dateFormatter = new Intl.DateTimeFormat('fa-IR', { year: 'numeric', month: 'long' });
+const fullDateFormatter = new Intl.DateTimeFormat('fa-IR', { year: 'numeric', month: 'long', day: 'numeric' });
+ 
+for (const event of events) {
+  const key = dateFormatter.format(event.date);
+  const group = grouped.get(key) ?? [];
+  group.push(event);
+  grouped.set(key, group);
+}
+ 
+const contentTypeColors: Record<string, string> = {
+  article: 'bg-primary/10 text-primary dark:bg-primary-light/10 dark:text-primary-light',
+  book: 'bg-secondary/10 text-secondary dark:bg-secondary-light/10 dark:text-secondary-light',
+  statement: 'bg-accent/10 text-accent dark:bg-accent-light/10 dark:text-accent-light',
+};
+---
+ 
+<BaseLayout title={t('timeline.title', lang)} description={t('timeline.description', lang)}>
+  <div class="container-narrow py-16">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4">{t('timeline.title', lang)}</h1>
+    <p class="text-text-muted dark:text-text-dark-muted mb-10">{t('timeline.description', lang)}</p>
+ 
+    {events.length > 0 ? (
+      <div class="relative">
+        {/* Vertical timeline line */}
+        <div class="absolute top-0 bottom-0 start-4 w-0.5 bg-border dark:bg-border-dark"></div>
+ 
+        {[...grouped.entries()].map(([monthYear, monthEvents]) => (
+          <div class="mb-10">
+            {/* Month-year header */}
+            <div class="relative flex items-center mb-6 ps-12">
+              <div class="absolute start-2 w-4 h-4 rounded-full bg-primary dark:bg-primary-light border-2 border-surface dark:border-surface-dark"></div>
+              <h2 class="text-lg font-bold text-primary dark:text-primary-light">{monthYear}</h2>
+            </div>
+ 
+            {/* Events in this month */}
+            <div class="space-y-4 ps-12">
+              {monthEvents.map((event) => (
+                <a
+                  href={event.href}
+                  class="group block p-4 rounded-xl border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline relative"
+                >
+                  {/* Connector dot */}
+                  <div class="absolute -start-[2.28rem] top-5 w-2.5 h-2.5 rounded-full border-2 border-border dark:border-border-dark bg-surface dark:bg-surface-dark group-hover:border-primary dark:group-hover:border-primary-light transition-colors"></div>
+ 
+                  <div class="flex flex-wrap items-center gap-2 mb-2">
+                    {/* Event type badge */}
+                    <span class:list={['text-xs px-2 py-0.5 rounded-full font-medium', contentTypeColors[event.contentType]]}>
+                      {t(`content.${event.contentType}`, lang)}
+                    </span>
+                    {/* Publish or Update badge */}
+                    {event.type === 'update' ? (
+                      <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400 font-medium">
+                        {t('timeline.updated', lang)}
+                      </span>
+                    ) : (
+                      <span class="text-xs px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400 font-medium">
+                        {t('timeline.published', lang)}
+                      </span>
+                    )}
+                    <time datetime={event.date.toISOString()} class="text-xs text-text-muted dark:text-text-dark-muted">
+                      {fullDateFormatter.format(event.date)}
+                    </time>
+                  </div>
+                  <h3 class="text-base font-bold text-text-base dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors mb-1">
+                    {event.title}
+                  </h3>
+                  <p class="text-sm text-text-muted dark:text-text-dark-muted line-clamp-2">
+                    {event.description}
+                  </p>
+                  {/* Tags */}
+                  {event.tags && event.tags.length > 0 && (
+                    <div class="flex flex-wrap gap-1.5 mt-2">
+                      {event.tags.map((tag) => (
+                        <span class="text-xs px-1.5 py-0.5 rounded border border-border dark:border-border-dark text-text-muted dark:text-text-dark-muted">
+                          #{tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    ) : (
+      <p class="text-text-muted dark:text-text-dark-muted">محتوایی برای نمایش وجود ندارد.</p>
+    )}
+  </div>
+</BaseLayout>

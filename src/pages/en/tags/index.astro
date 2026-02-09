@@ -2,15 +2,15 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { t, getLocalizedPath } from '../../../i18n';
 import { getCollection } from 'astro:content';
-
+ 
 const lang = 'en';
-
+ 
 const allArticles = await getCollection('articles', ({ data }) => data.lang === 'en' && !data.draft);
 const allBooks = await getCollection('books', ({ data }) => data.lang === 'en' && !data.draft && !data.bookSlug);
-
+ 
 // Build tag map: tag -> { articles: count, books: count }
 const tagMap = new Map<string, { articles: number; books: number }>();
-
+ 
 for (const article of allArticles) {
   for (const tag of article.data.tags) {
     const entry = tagMap.get(tag) ?? { articles: 0, books: 0 };
@@ -18,7 +18,7 @@ for (const article of allArticles) {
     tagMap.set(tag, entry);
   }
 }
-
+ 
 for (const book of allBooks) {
   for (const tag of book.data.tags) {
     const entry = tagMap.get(tag) ?? { articles: 0, books: 0 };
@@ -26,18 +26,18 @@ for (const book of allBooks) {
     tagMap.set(tag, entry);
   }
 }
-
+ 
 // Sort tags by total count (descending)
 const sortedTags = [...tagMap.entries()].sort(
   (a, b) => (b[1].articles + b[1].books) - (a[1].articles + a[1].books)
 );
 ---
-
+ 
 <BaseLayout title={t('tags.title', lang)} description={t('tags.description', lang)}>
   <div class="container-wide py-16">
     <h1 class="text-3xl md:text-4xl font-bold mb-4">{t('tags.title', lang)}</h1>
     <p class="text-text-muted dark:text-text-dark-muted mb-10">{t('tags.description', lang)}</p>
-
+ 
     {sortedTags.length > 0 ? (
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {sortedTags.map(([tag, counts]) => (

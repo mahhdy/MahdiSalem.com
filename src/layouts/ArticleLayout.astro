@@ -1,9 +1,11 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import ReadingProgress from '../components/ReadingProgress.astro';
+import ReadingTime from '../components/ReadingTime.astro';
+import RelatedContent from '../components/RelatedContent.astro';
 import ShareButtons from '../components/ShareButtons.astro';
 import Giscus from '../components/Giscus.astro';
-import { t, getLocalizedPath, type Locale } from '../i18n';
+import { t, getLocalizedPath, stripLangPrefix,  type Locale } from '../i18n';
 
 interface Props {
   title: string;
@@ -15,6 +17,8 @@ interface Props {
   categories?: string[];
   tags?: string[];
   coverImage?: string;
+  rawContent?: string;
+  slug?: string;
 }
 
 const {
@@ -27,6 +31,8 @@ const {
   categories = [],
   tags = [],
   coverImage,
+  rawContent = '',
+  slug = '',
 } = Astro.props;
 
 const dateFormatter = new Intl.DateTimeFormat(lang === 'fa' ? 'fa-IR' : 'en-US', {
@@ -70,6 +76,12 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
             </time>
           </>
         )}
+        {rawContent && (
+          <>
+            <span>&middot;</span>
+            <ReadingTime lang={lang} content={rawContent} />
+          </>
+        )}
       </div>
     </header>
 
@@ -103,7 +115,11 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
         </div>
       </div>
     )}
-
+    <!-- Related Content -->
+    {tags.length > 0 && slug && (
+      <RelatedContent lang={lang} currentTags={tags} currentSlug={slug} />
+    )}
+ 
     <!-- Share & Comments -->
     <div class="mt-8 pt-6 border-t border-border dark:border-border-dark">
       <ShareButtons title={title} url={articleUrl} lang={lang} />
