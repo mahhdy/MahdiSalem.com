@@ -3,7 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import ReadingProgress from '../components/ReadingProgress.astro';
 import ShareButtons from '../components/ShareButtons.astro';
 import Giscus from '../components/Giscus.astro';
-import { t, type Locale } from '../i18n';
+import { t, getLocalizedPath, type Locale } from '../i18n';
 
 interface Props {
   title: string;
@@ -93,9 +93,12 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
         <div class="flex flex-wrap items-center gap-2">
           <span class="text-sm text-text-muted dark:text-text-dark-muted">{t('articles.tags', lang)}:</span>
           {tags.map((tag) => (
-            <span class="text-xs px-2.5 py-1 rounded-full border border-border dark:border-border-dark text-text-muted dark:text-text-dark-muted">
+            <a
+              href={getLocalizedPath(`tags/${encodeURIComponent(tag)}`, lang)}
+              class="text-xs px-2.5 py-1 rounded-full border border-border dark:border-border-dark text-text-muted dark:text-text-dark-muted hover:border-primary hover:text-primary dark:hover:border-primary-light dark:hover:text-primary-light transition-colors no-underline"
+            >
               #{tag}
-            </span>
+            </a>
           ))}
         </div>
       </div>

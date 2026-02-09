@@ -1,0 +1,173 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { t, stripLangPrefix } from '../../i18n';
+import { getCollection } from 'astro:content';
+
+const lang = 'en';
+
+const draftArticles = await getCollection('articles', ({ data }) => data.lang === 'en' && data.draft);
+const draftBooks = await getCollection('books', ({ data }) => data.lang === 'en' && data.draft && !data.bookSlug);
+const draftStatements = await getCollection('statements', ({ data }) => data.lang === 'en' && data.draft);
+const draftWiki = await getCollection('wiki', ({ data }) => data.lang === 'en' && data.draft);
+
+const sortedArticles = draftArticles.sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
+const sortedBooks = draftBooks.sort((a, b) => a.data.order - b.data.order);
+
+const hasDrafts = draftArticles.length > 0 || draftBooks.length > 0 || draftStatements.length > 0 || draftWiki.length > 0;
+
+const dateFormatter = new Intl.DateTimeFormat('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<BaseLayout title={t('drafts.title', lang)} description={t('drafts.description', lang)}>
+  <div class="container-wide py-16">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4">{t('drafts.title', lang)}</h1>
+    <p class="text-text-muted dark:text-text-dark-muted mb-10">{t('drafts.description', lang)}</p>
+
+    {hasDrafts ? (
+      <div class="space-y-12">
+        {/* Draft Articles */}
+        {sortedArticles.length > 0 && (
+          <section>
+            <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+              {t('nav.articles', lang)}
+              <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
+                {sortedArticles.length}
+              </span>
+            </h2>
+            <div class="space-y-4">
+              {sortedArticles.map((article) => (
+                <div class="relative group p-5 rounded-xl border-2 border-dashed border-amber-300 dark:border-amber-700 bg-amber-50/50 dark:bg-amber-900/10">
+                  <div class="flex items-start justify-between gap-4">
+                    <div class="flex-1">
+                      <div class="flex items-center gap-2 mb-2">
+                        <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400 font-medium">
+                          {t('drafts.badge', lang)}
+                        </span>
+                        <span class="text-xs text-text-muted dark:text-text-dark-muted">
+                          {t('content.article', lang)}
+                        </span>
+                      </div>
+                      <h3 class="text-lg font-bold text-text-base dark:text-text-dark mb-1">
+                        {article.data.title}
+                      </h3>
+                      <p class="text-sm text-text-muted dark:text-text-dark-muted line-clamp-2">
+                        {article.data.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Draft Books */}
+        {sortedBooks.length > 0 && (
+          <section>
+            <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+              {t('nav.books', lang)}
+              <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
+                {sortedBooks.length}
+              </span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {sortedBooks.map((book) => (
+                <div class="relative rounded-xl border-2 border-dashed border-amber-300 dark:border-amber-700 bg-amber-50/50 dark:bg-amber-900/10 overflow-hidden">
+                  {book.data.coverImage && (
+                    <img src={book.data.coverImage} alt={book.data.title} class="w-full h-48 object-cover opacity-60" loading="lazy" />
+                  )}
+                  <div class="p-5">
+                    <div class="flex items-center gap-2 mb-2">
+                      <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400 font-medium">
+                        {t('drafts.badge', lang)}
+                      </span>
+                      <span class="text-xs text-text-muted dark:text-text-dark-muted">
+                        {t('content.book', lang)}
+                      </span>
+                    </div>
+                    <h3 class="text-lg font-bold text-text-base dark:text-text-dark mb-1">
+                      {book.data.title}
+                    </h3>
+                    <p class="text-sm text-text-muted dark:text-text-dark-muted line-clamp-2">
+                      {book.data.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Draft Statements */}
+        {draftStatements.length > 0 && (
+          <section>
+            <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+              {t('nav.statements', lang)}
+              <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
+                {draftStatements.length}
+              </span>
+            </h2>
+            <div class="space-y-4">
+              {draftStatements.map((statement) => (
+                <div class="p-5 rounded-xl border-2 border-dashed border-amber-300 dark:border-amber-700 bg-amber-50/50 dark:bg-amber-900/10">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400 font-medium">
+                      {t('drafts.badge', lang)}
+                    </span>
+                    <span class="text-xs text-text-muted dark:text-text-dark-muted">
+                      {t('content.statement', lang)}
+                    </span>
+                  </div>
+                  <h3 class="text-lg font-bold text-text-base dark:text-text-dark mb-1">
+                    {statement.data.title}
+                  </h3>
+                  <p class="text-sm text-text-muted dark:text-text-dark-muted line-clamp-2">
+                    {statement.data.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Draft Wiki */}
+        {draftWiki.length > 0 && (
+          <section>
+            <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+              {t('nav.wiki', lang)}
+              <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
+                {draftWiki.length}
+              </span>
+            </h2>
+            <div class="space-y-4">
+              {draftWiki.map((page) => (
+                <div class="p-5 rounded-xl border-2 border-dashed border-amber-300 dark:border-amber-700 bg-amber-50/50 dark:bg-amber-900/10">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400 font-medium">
+                      {t('drafts.badge', lang)}
+                    </span>
+                    <span class="text-xs text-text-muted dark:text-text-dark-muted">
+                      {t('content.wiki', lang)}
+                    </span>
+                  </div>
+                  <h3 class="text-lg font-bold text-text-base dark:text-text-dark mb-1">
+                    {page.data.title}
+                  </h3>
+                  <p class="text-sm text-text-muted dark:text-text-dark-muted line-clamp-2">
+                    {page.data.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+      </div>
+    ) : (
+      <p class="text-text-muted dark:text-text-dark-muted">{t('drafts.no_drafts', lang)}</p>
+    )}
+  </div>
+</BaseLayout>

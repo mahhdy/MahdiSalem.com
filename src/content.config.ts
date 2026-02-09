@@ -11,6 +11,7 @@ const books = defineCollection({
     coverImage: z.string().optional(),
     pdfUrl: z.string().optional(),
     publishDate: z.coerce.date().optional(),
+    tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
     order: z.number().default(0),
     // For chapters within a book
