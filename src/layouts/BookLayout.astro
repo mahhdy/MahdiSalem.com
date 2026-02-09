@@ -2,7 +2,8 @@
 import BaseLayout from './BaseLayout.astro';
 import ReadingProgress from '../components/ReadingProgress.astro';
 import TableOfContents from '../components/TableOfContents.astro';
-import { t, getLocalizedPath, type Locale } from '../i18n';
+import Rating from '../components/Rating.astro';
+import { t, getLocalizedPath, stripLangPrefix, type Locale } from '../i18n';
 
 interface Chapter {
   slug: string;
@@ -20,6 +21,7 @@ interface Props {
   headings: { depth: number; slug: string; text: string }[];
   prevChapter?: Chapter;
   nextChapter?: Chapter;
+  draft?: boolean;
 }
 
 const {
@@ -32,6 +34,7 @@ const {
   headings,
   prevChapter,
   nextChapter,
+  draft = false,
 } = Astro.props;
 ---
 
@@ -90,9 +93,24 @@ const {
         <article>
           <h1 class="text-3xl md:text-4xl font-bold mb-8">{title}</h1>
           <div class="prose">
+            {draft && (
+              <div class="bg-amber-50 dark:bg-amber-900/20 text-amber-800 dark:text-amber-200 px-4 py-3 rounded-lg mb-8 border border-amber-200 dark:border-amber-800/50 flex items-start gap-3">
+                <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                <div>
+                  <p class="text-sm font-bold mb-1">{t('draft.label', lang)}</p>
+                  <p class="text-sm opacity-90 m-0">
+                    {t('draft.warning', lang)}
+                  </p>
+                </div>
+              </div>
+            )}
             <slot />
           </div>
         </article>
+
+        <!-- Rating -->
+        <Rating contentId={`books/${bookSlug}/${stripLangPrefix(Astro.url.pathname).split('/').pop()}`} lang={lang} />
+
 
         <!-- Chapter navigation -->
         <nav class="mt-12 pt-6 border-t border-border dark:border-border-dark flex justify-between" aria-label="Chapter navigation">

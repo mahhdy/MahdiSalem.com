@@ -4,71 +4,98 @@ import { getCollection } from 'astro:content';
 import { t } from '../i18n';
 import stats from '../data/stats.json';
 
-const lang = 'fa'; // Default to Persian for the dashboard
+const { lang = 'fa' } = Astro.props;
 
-// Get all content for tags
-const allArticles = await getCollection('articles');
-const allBooks = await getCollection('books');
+// Get all content
+const allArticles = await getCollection('articles', ({ data }) => !data.draft);
+const allBooks = await getCollection('books', ({ data }) => !data.draft && !data.bookSlug);
+const allContent = [...allArticles, ...allBooks];
 
-// Calculate tag counts
-const tagCounts = new Map();
-[...allArticles, ...allBooks].forEach(item => {
-  if (item.data.tags) {
-    item.data.tags.forEach(tag => {
-      tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
+function aggregateData(contentList, key) {
+  const counts = new Map();
+  contentList.forEach(item => {
+    const values = Array.isArray(item.data[key]) ? item.data[key] : (item.data[key] ? [item.data[key]] : []);
+    values.forEach(val => {
+      if (!counts.has(val)) {
+        counts.set(val, { name: val, value: 0, items: [] });
+      }
+      const entry = counts.get(val);
+      entry.value += 1;
+      
+      // Track visits for tooltips (using stats.json)
+      const path = item.id.replace(/\.md$/, '').replace(/^content\//, '');
+      const visitCount = stats.visits[path] || 0;
+      entry.items.push({ title: item.data.title, slug: path, visits: visitCount });
     });
+  });
+
+  return Array.from(counts.values())
+    .map(d => {
+      d.items.sort((a, b) => b.visits - a.visits);
+      d.items = d.items.slice(0, 3); // Top 3
+      return d;
+    })
+    .sort((a, b) => b.value - a.value);
+}
+
+const tagData = aggregateData(allContent, 'tags');
+const categoryData = aggregateData(allContent, 'categories');
+
+// TreeMap squarify helper (simplified)
+function squarify(data, container, result = []) {
+  if (data.length === 0) return result;
+
+  const { x, y, w, h } = container;
+  const totalValue = data.reduce((sum, d) => sum + d.value, 0);
+
+  // Divide the area based on the first item
+  const first = data[0];
+  const firstArea = (first.value / totalValue) * (w * h);
+
+  let nodeX = x, nodeY = y, nodeW = w, nodeH = h;
+  
+  if (w > h) {
+    nodeW = firstArea / h;
+    result.push({ ...first, x, y, w: nodeW, h });
+    return squarify(data.slice(1), { x: x + nodeW, y, w: w - nodeW, h }, result);
+  } else {
+    nodeH = firstArea / w;
+    result.push({ ...first, x, y, w, h: nodeH });
+    return squarify(data.slice(1), { x, y: y + nodeH, w, h: h - nodeH }, result);
   }
-});
+}
 
-const sortedTags = Array.from(tagCounts.entries())
-  .sort((a, b) => b[1] - a[1])
-  .slice(0, 15); // Top 15 tags
-
-// Simple TreeMap implementation (SVG)
-const totalTagUse = sortedTags.reduce((sum, [_, count]) => sum + count, 0);
-let currentX = 0;
-let currentY = 0;
 const width = 800;
-const height = 400;
+const height = 450;
+const tagNodes = squarify(tagData, { x: 0, y: 0, w: width, h: height });
+const categoryNodes = squarify(categoryData, { x: 0, y: 0, w: width, h: height });
 
-const treeMapItems = sortedTags.map(([tag, count], index) => {
-  const area = (count / totalTagUse) * (width * height);
-  // This is a VERY simplified tiling for demo purposes
-  const w = (count / totalTagUse) * width;
-  const h = height;
-  const item = { tag, count, x: currentX, y: 0, w, h };
-  currentX += w;
-  return item;
-});
-
-// Popular Content logic
-const popularContent = Object.entries(stats.visits)
-  .sort((a, b) => b[1] - a[1])
-  .slice(0, 5);
+const numFormatter = new Intl.NumberFormat(lang === 'fa' ? 'fa-IR' : 'en-US');
+const dateFormatter = new Intl.DateTimeFormat(lang === 'fa' ? 'fa-IR' : 'en-US');
 ---
 
-<BaseLayout title="آمار بازدیدها و فعالیت‌ها">
+<BaseLayout title={t('nav.analytics', lang)}>
   <div class="container-narrow py-16">
-    <h1 class="text-3xl md:text-4xl font-bold mb-8 italic">آمار و فعالیت‌ها (Analytics)</h1>
+    <h1 class="text-3xl md:text-4xl font-bold mb-8 italic">{t('analytics.title', lang)}</h1>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
       <div class="p-6 bg-surface-dim dark:bg-surface-dark-dim rounded-2xl border border-border dark:border-border-dark">
-        <h2 class="text-xl font-bold mb-4">کل بازدیدها</h2>
+        <h2 class="text-xl font-bold mb-4">{t('analytics.total_visits', lang)}</h2>
         <p class="text-4xl font-black text-primary dark:text-primary-light">
-          {stats.totalVisits.toLocaleString('fa-IR')}
+          {numFormatter.format(stats.totalVisits)}
         </p>
         <p class="text-sm text-text-muted dark:text-text-dark-muted mt-2">
-          آخرین بروزرسانی: {new Date(stats.lastUpdated).toLocaleDateString('fa-IR')}
+          {t('analytics.last_updated', lang)}: {dateFormatter.format(new Date(stats.lastUpdated))}
         </p>
       </div>
 
       <div class="p-6 bg-surface-dim dark:bg-surface-dark-dim rounded-2xl border border-border dark:border-border-dark">
-        <h2 class="text-xl font-bold mb-4">پربازدیدترین مطالب</h2>
+        <h2 class="text-xl font-bold mb-4">{t('analytics.popular_content', lang)}</h2>
         <ul class="space-y-2">
-          {popularContent.map(([path, count]) => (
+          {Object.entries(stats.visits).sort((a, b) => b[1] - a[1]).slice(0, 5).map(([path, count]) => (
             <li class="flex justify-between items-center text-sm">
               <span class="truncate">{path}</span>
-              <span class="font-mono bg-primary/10 text-primary px-2 py-0.5 rounded">{count.toLocaleString('fa-IR')}</span>
+              <span class="font-mono bg-primary/10 text-primary px-2 py-0.5 rounded">{numFormatter.format(count)}</span>
             </li>
           ))}
         </ul>
@@ -76,44 +103,182 @@ const popularContent = Object.entries(stats.visits)
     </div>
 
     <section class="mb-12">
-      <h2 class="text-2xl font-bold mb-6">درخت برچسب‌ها (Tag TreeMap)</h2>
-      <div class="w-full overflow-x-auto">
-        <svg viewBox={`0 0 ${width} ${height}`} class="w-full h-auto rounded-xl overflow-hidden border border-border dark:border-border-dark">
-          {treeMapItems.map((item, i) => (
-            <g>
-              <rect
-                x={item.x}
-                y={item.y}
-                width={item.w}
-                height={item.h}
-                fill={`hsl(${200 + (i * 10)}, 70%, ${40 + (i % 2 * 10)}%)`}
-                class="hover:opacity-80 transition-opacity"
-              />
-              {item.w > 40 && (
-                <text
-                  x={item.x + item.w / 2}
-                  y={item.y + item.h / 2}
-                  text-anchor="middle"
-                  fill="white"
-                  class="text-[10px] md:text-xs font-bold pointer-events-none"
-                >
-                  {item.tag} ({item.count})
-                </text>
-              )}
-            </g>
-          ))}
-        </svg>
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <h2 class="text-2xl font-bold">{t('analytics.treemap_title', lang)}</h2>
+        
+        <div class="flex p-1 bg-surface-dim dark:bg-surface-dark-dim rounded-lg border border-border dark:border-border-dark">
+          <button class="tab-btn active px-4 py-1.5 rounded-md text-sm font-medium transition-colors" data-tab="tags">
+            {t('analytics.tab_tags', lang)}
+          </button>
+          <button class="tab-btn px-4 py-1.5 rounded-md text-sm font-medium transition-colors" data-tab="categories">
+            {t('analytics.tab_categories', lang)}
+          </button>
+        </div>
       </div>
+
+      <div class="relative w-full overflow-hidden rounded-xl border border-border dark:border-border-dark aspect-[16/9]">
+        <div id="tags-map" class="map-container absolute inset-0">
+          <svg viewBox={`0 0 ${width} ${height}`} class="w-full h-full">
+            {tagNodes.map((item, i) => (
+              <g class="tile group" data-items={JSON.stringify(item.items)}>
+                <rect
+                  x={item.x} y={item.y} width={item.w} height={item.h}
+                  fill={`hsl(${200 + (i * 15)}, 65%, ${45 + (i % 2 * 5)}%)`}
+                  stroke="white" stroke-width="0.5"
+                  class="hover:opacity-90 transition-opacity cursor-pointer"
+                />
+                {item.w > 30 && item.h > 20 && (
+                  <text
+                    x={item.x + item.w / 2} y={item.y + item.h / 2}
+                    text-anchor="middle" dominant-baseline="middle"
+                    fill="white" class="text-[10px] md:text-xs font-bold pointer-events-none select-none"
+                  >
+                    {item.name}
+                  </text>
+                )}
+              </g>
+            ))}
+          </svg>
+        </div>
+
+        <div id="categories-map" class="map-container absolute inset-0 hidden">
+          <svg viewBox={`0 0 ${width} ${height}`} class="w-full h-full">
+            {categoryNodes.map((item, i) => (
+              <g class="tile group" data-items={JSON.stringify(item.items)}>
+                <rect
+                  x={item.x} y={item.y} width={item.w} height={item.h}
+                  fill={`hsl(${140 + (i * 20)}, 60%, ${40 + (i % 2 * 5)}%)`}
+                  stroke="white" stroke-width="0.5"
+                  class="hover:opacity-90 transition-opacity cursor-pointer"
+                />
+                {item.w > 30 && item.h > 20 && (
+                  <text
+                    x={item.x + item.w / 2} y={item.y + item.h / 2}
+                    text-anchor="middle" dominant-baseline="middle"
+                    fill="white" class="text-[10px] md:text-xs font-bold pointer-events-none select-none"
+                  >
+                    {item.name}
+                  </text>
+                )}
+              </g>
+            ))}
+          </svg>
+        </div>
+
+        <!-- Tooltip -->
+        <div id="map-tooltip" class="absolute hidden pointer-events-none z-10 p-3 bg-white/95 dark:bg-surface-dark/95 backdrop-blur-sm rounded-lg shadow-xl border border-border dark:border-border-dark min-w-[200px] max-w-[300px]">
+          <h4 class="font-bold text-sm mb-2 border-b border-border dark:border-border-dark pb-1 text-primary"></h4>
+          <ul class="space-y-1.5 text-xs"></ul>
+        </div>
+      </div>
+      
       <p class="text-sm text-text-muted dark:text-text-dark-muted mt-4">
-        این نمودار نشان‌دهنده فراوانی استفاده از برچسب‌های مختلف در مقالات و کتاب‌ها است.
+        {t('analytics.treemap_desc', lang)}
       </p>
     </section>
 
     <div class="prose dark:prose-invert max-w-none bg-surface-dim dark:bg-surface-dark-dim p-8 rounded-2xl border border-border dark:border-border-dark">
-      <h3>درباره این بخش</h3>
-      <p>
-        این صفحه به منظور شفاف‌سازی و نمایش مسیر رشد محتوای سایت ایجاد شده است. آمارهای فوق به صورت دوره‌ای بروزرسانی می‌شوند.
-      </p>
+      <h3>{t('analytics.about_title', lang)}</h3>
+      <p>{t('analytics.about_desc', lang)}</p>
     </div>
   </div>
 </BaseLayout>
+
+<style>
+  .tab-btn.active {
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    color: var(--color-primary);
+  }
+  
+  html.dark .tab-btn.active {
+    background-color: var(--color-surface-dark);
+    color: var(--color-primary-light);
+  }
+
+  .tab-btn:not(.active) {
+    color: var(--color-text-muted);
+  }
+
+  html.dark .tab-btn:not(.active) {
+    color: var(--color-text-dark-muted);
+  }
+
+  .tab-btn:not(.active):hover {
+    color: var(--color-text-base);
+  }
+
+  html.dark .tab-btn:not(.active):hover {
+    color: var(--color-text-dark);
+  }
+</style>
+
+<script>
+  const tabs = document.querySelectorAll('.tab-btn');
+  const tagMap = document.getElementById('tags-map');
+  const catMap = document.getElementById('categories-map');
+  const tooltip = document.getElementById('map-tooltip');
+  
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      
+      const type = tab.getAttribute('data-tab');
+      if (type === 'tags') {
+        tagMap?.classList.remove('hidden');
+        catMap?.classList.add('hidden');
+      } else {
+        catMap?.classList.remove('hidden');
+        tagMap?.classList.add('hidden');
+      }
+    });
+  });
+
+  const tiles = document.querySelectorAll('.tile');
+  tiles.forEach(tile => {
+    tile.addEventListener('mouseenter', (e) => {
+      const g = tile as SVGGElement;
+      const name = g.querySelector('text')?.textContent || '';
+      const items = JSON.parse(g.getAttribute('data-items') || '[]');
+      
+      if (!tooltip) return;
+      
+      const titleEl = tooltip.querySelector('h4');
+      const listEl = tooltip.querySelector('ul');
+      if (titleEl) titleEl.textContent = name;
+      if (listEl) {
+        listEl.innerHTML = items.length > 0 
+          ? items.map(item => `
+              <li class="flex justify-between gap-4">
+                <span class="truncate pr-2">${item.title}</span>
+                <span class="font-mono opacity-60 shrink-0">${item.visits}</span>
+              </li>`).join('')
+          : '<li>محتوایی یافت نشد</li>';
+      }
+      
+      tooltip.classList.remove('hidden');
+    });
+
+    tile.addEventListener('mousemove', (e) => {
+      if (!tooltip) return;
+      const mouseEvent = e as MouseEvent;
+      const rect = tooltip.parentElement?.getBoundingClientRect();
+      if (!rect) return;
+      
+      let x = mouseEvent.clientX - rect.left + 15;
+      let y = mouseEvent.clientY - rect.top + 15;
+      
+      // Keep tooltip inside bounds
+      if (x + tooltip.offsetWidth > rect.width) x -= tooltip.offsetWidth + 30;
+      if (y + tooltip.offsetHeight > rect.height) y -= tooltip.offsetHeight + 30;
+      
+      tooltip.style.left = `${x}px`;
+      tooltip.style.top = `${y}px`;
+    });
+
+    tile.addEventListener('mouseleave', () => {
+      tooltip?.classList.add('hidden');
+    });
+  });
+</script>

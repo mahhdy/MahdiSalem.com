@@ -120,7 +120,76 @@ const contentTypeColors: Record<string, string> = {
 <BaseLayout title={t('timeline.title', lang)} description={t('timeline.description', lang)}>
   <div class="container-narrow py-16">
     <h1 class="text-3xl md:text-4xl font-bold mb-4">{t('timeline.title', lang)}</h1>
-    <p class="text-text-muted dark:text-text-dark-muted mb-10">{t('timeline.description', lang)}</p>
+    <p class="text-text-muted dark:text-text-dark-muted mb-8">{t('timeline.description', lang)}</p>
+
+    {/* Filter Controls */}
+    <div class="flex flex-wrap gap-2 mb-10" id="timeline-filters">
+      <button 
+        class="filter-btn active px-4 py-2 rounded-full text-sm font-medium bg-primary text-white dark:bg-primary-light dark:text-surface-dark transition-all"
+        data-filter="all"
+      >
+        All
+      </button>
+      <button 
+        class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-surface-dim dark:bg-surface-dark-dim text-text-muted dark:text-text-dark-muted hover:bg-primary/10 hover:text-primary dark:hover:bg-primary-light/10 dark:hover:text-primary-light transition-all"
+        data-filter="article"
+      >
+        Articles
+      </button>
+      <button 
+        class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-surface-dim dark:bg-surface-dark-dim text-text-muted dark:text-text-dark-muted hover:bg-primary/10 hover:text-primary dark:hover:bg-primary-light/10 dark:hover:text-primary-light transition-all"
+        data-filter="book"
+      >
+        Books
+      </button>
+      <button 
+        class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-surface-dim dark:bg-surface-dark-dim text-text-muted dark:text-text-dark-muted hover:bg-primary/10 hover:text-primary dark:hover:bg-primary-light/10 dark:hover:text-primary-light transition-all"
+        data-filter="statement"
+      >
+        Statements
+      </button>
+    </div>
+
+    <script>
+      const buttons = document.querySelectorAll('.filter-btn');
+      const events = document.querySelectorAll('.timeline-event');
+      const monthGroups = document.querySelectorAll('.month-group');
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Update active state
+          buttons.forEach(b => {
+             b.classList.remove('bg-primary', 'text-white', 'dark:bg-primary-light', 'dark:text-surface-dark', 'active');
+             b.classList.add('bg-surface-dim', 'dark:bg-surface-dark-dim', 'text-text-muted', 'dark:text-text-dark-muted');
+          });
+          btn.classList.add('bg-primary', 'text-white', 'dark:bg-primary-light', 'dark:text-surface-dark', 'active');
+          btn.classList.remove('bg-surface-dim', 'dark:bg-surface-dark-dim', 'text-text-muted', 'dark:text-text-dark-muted');
+
+          const filter = btn.getAttribute('data-filter');
+
+          // Filter events
+          events.forEach(event => {
+            if (filter === 'all' || event.getAttribute('data-type') === filter) {
+              event.classList.remove('hidden');
+              event.classList.add('block');
+            } else {
+              event.classList.add('hidden');
+              event.classList.remove('block');
+            }
+          });
+
+          // Hide empty month groups
+          monthGroups.forEach(group => {
+            const visibleEvents = group.querySelectorAll('.timeline-event:not(.hidden)');
+            if (visibleEvents.length === 0) {
+              group.classList.add('hidden');
+            } else {
+              group.classList.remove('hidden');
+            }
+          });
+        });
+      });
+    </script>
  
     {events.length > 0 ? (
       <div class="relative">
@@ -128,7 +197,7 @@ const contentTypeColors: Record<string, string> = {
         <div class="absolute top-0 bottom-0 start-4 w-0.5 bg-border dark:bg-border-dark"></div>
  
         {[...grouped.entries()].map(([monthYear, monthEvents]) => (
-          <div class="mb-10">
+          <div class="mb-10 month-group">
             {/* Month-year header */}
             <div class="relative flex items-center mb-6 ps-12">
               <div class="absolute start-2 w-4 h-4 rounded-full bg-primary dark:bg-primary-light border-2 border-surface dark:border-surface-dark"></div>
@@ -140,7 +209,8 @@ const contentTypeColors: Record<string, string> = {
               {monthEvents.map((event) => (
                 <a
                   href={event.href}
-                  class="group block p-4 rounded-xl border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline relative"
+                  class="timeline-event group block p-4 rounded-xl border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline relative"
+                  data-type={event.contentType}
                 >
                   {/* Connector dot */}
                   <div class="absolute -start-[2.28rem] top-5 w-2.5 h-2.5 rounded-full border-2 border-border dark:border-border-dark bg-surface dark:bg-surface-dark group-hover:border-primary dark:group-hover:border-primary-light transition-colors"></div>

@@ -5,6 +5,7 @@ import ReadingTime from '../components/ReadingTime.astro';
 import RelatedContent from '../components/RelatedContent.astro';
 import ShareButtons from '../components/ShareButtons.astro';
 import Giscus from '../components/Giscus.astro';
+import Rating from '../components/Rating.astro';
 import { t, getLocalizedPath, stripLangPrefix,  type Locale } from '../i18n';
 
 interface Props {
@@ -19,6 +20,7 @@ interface Props {
   coverImage?: string;
   rawContent?: string;
   slug?: string;
+  draft?: boolean;
 }
 
 const {
@@ -33,6 +35,7 @@ const {
   coverImage,
   rawContent = '',
   slug = '',
+  draft = false,
 } = Astro.props;
 
 const dateFormatter = new Intl.DateTimeFormat(lang === 'fa' ? 'fa-IR' : 'en-US', {
@@ -96,8 +99,22 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
 
     <!-- Content -->
     <div class="prose">
+      {draft && (
+        <div class="bg-amber-50 dark:bg-amber-900/20 text-amber-800 dark:text-amber-200 px-4 py-3 rounded-lg mb-8 border border-amber-200 dark:border-amber-800/50 flex items-start gap-3">
+          <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          <div>
+            <p class="text-sm font-bold mb-1">{t('draft.label', lang)}</p>
+            <p class="text-sm opacity-90 m-0">
+              {t('draft.warning', lang)}
+            </p>
+          </div>
+        </div>
+      )}
       <slot />
     </div>
+
+    <!-- Rating -->
+    <Rating contentId={slug ? `articles/${slug}` : `articles/${stripLangPrefix(Astro.url.pathname)}`} lang={lang} />
 
     <!-- Tags -->
     {tags.length > 0 && (

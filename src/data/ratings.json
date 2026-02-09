@@ -1,0 +1,30 @@
+{
+    "articles/democracy-and-ethics": {
+        "average": 4.8,
+        "count": 24
+    },
+    "articles/public-policy-evaluation": {
+        "average": 4.2,
+        "count": 12
+    },
+    "articles/fa/Ethics-and-Conflicts": {
+        "average": 4.5,
+        "count": 8
+    },
+    "books/fa/my-book": {
+        "average": 4.9,
+        "count": 156
+    },
+    "books/fa/ch01-introduction": {
+        "average": 4.7,
+        "count": 45
+    },
+    "wiki/fa/democracy": {
+        "average": 4.6,
+        "count": 32
+    },
+    "statements/fa/freedom-of-speech": {
+        "average": 4.4,
+        "count": 19
+    }
+}

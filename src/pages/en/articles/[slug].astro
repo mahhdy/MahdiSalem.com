@@ -28,6 +28,7 @@ const slug = article.id.replace(/^en\//, '');
   tags={article.data.tags}
   coverImage={article.data.coverImage}
   rawContent={article.body ?? ''}
-  slug={slug}>
+  slug={slug}
+  draft={article.data.draft}>
   <Content />
 </ArticleLayout>

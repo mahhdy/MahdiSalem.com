@@ -153,4 +153,101 @@
   .container-wide {
     @apply max-w-6xl mx-auto px-4 sm:px-6;
   }
+
+  /* Primary color utilities */
+  .border-primary {
+    border-color: var(--color-primary);
+  }
+
+  .text-primary {
+    color: var(--color-primary);
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+
+  .ring-primary {
+    --tw-ring-color: var(--color-primary);
+  }
+
+  /* Primary light variants */
+  .border-primary-light {
+    border-color: var(--color-primary-light);
+  }
+
+  .text-primary-light {
+    color: var(--color-primary-light);
+  }
+
+  .hover\:border-primary:hover {
+    border-color: var(--color-primary);
+  }
+
+  .hover\:text-primary:hover {
+    color: var(--color-primary);
+  }
+
+  .hover\:bg-primary:hover {
+    background-color: var(--color-primary);
+  }
+
+  .dark\:border-primary-light {
+    @media (prefers-color-scheme: dark) {
+      border-color: var(--color-primary-light);
+    }
+  }
+
+  html.dark & .dark\:border-primary-light {
+    border-color: var(--color-primary-light);
+  }
+
+  .dark\:text-primary-light {
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-primary-light);
+    }
+  }
+
+  html.dark & .dark\:text-primary-light {
+    color: var(--color-primary-light);
+  }
+
+  .dark\:hover\:border-primary-light:hover {
+    @media (prefers-color-scheme: dark) {
+      border-color: var(--color-primary-light);
+    }
+  }
+
+  html.dark & .dark\:hover\:border-primary-light:hover {
+    border-color: var(--color-primary-light);
+  }
+
+  .dark\:hover\:text-primary-light:hover {
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-primary-light);
+    }
+  }
+
+  html.dark & .dark\:hover\:text-primary-light:hover {
+    color: var(--color-primary-light);
+  }
+
+  .group:hover .group-hover\:border-primary {
+    border-color: var(--color-primary);
+  }
+
+  .group:hover .dark\:group-hover\:border-primary-light {
+    @media (prefers-color-scheme: dark) {
+      border-color: var(--color-primary-light);
+    }
+  }
+
+  html.dark & .group:hover .dark\:group-hover\:border-primary-light {
+    border-color: var(--color-primary-light);
+  }
+
+  /* Background opacity */
+  .bg-primary\/5 {
+    background-color: rgb(26 95 122 / 0.05);
+  }
 }

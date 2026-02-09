@@ -63,6 +63,7 @@ const chapterList = chapters.map((c: any) => ({
     headings={headings}
     prevChapter={prevChapter ? { slug: stripPrefix(prevChapter.id), title: prevChapter.data.title, chapterNumber: prevChapter.data.chapterNumber ?? 0 } : undefined}
     nextChapter={nextChapter ? { slug: stripPrefix(nextChapter.id), title: nextChapter.data.title, chapterNumber: nextChapter.data.chapterNumber ?? 0 } : undefined}
+    draft={entry.data.draft}
   >
     <Content />
   </BookLayout>
