@@ -10,19 +10,25 @@ interface Props {
 const { lang } = Astro.props;
 const dir = getDir(lang);
 
-const navItems = [
+const primaryNav = [
   { key: 'nav.home', path: '' },
   { key: 'nav.about', path: 'about' },
   { key: 'nav.books', path: 'books' },
   { key: 'nav.articles', path: 'articles' },
+];
+
+const secondaryNav = [
   { key: 'nav.statements', path: 'statements' },
   { key: 'nav.wiki', path: 'wiki' },
   { key: 'nav.tags', path: 'tags' },
- { key: 'nav.timeline', path: 'timeline' },
+  { key: 'nav.timeline', path: 'timeline' },
   { key: 'nav.drafts', path: 'drafts' },
   { key: 'nav.support', path: 'support' },
   { key: 'nav.contact', path: 'contact' },
+  { key: 'nav.analytics', path: 'analytics' },
 ];
+
+const navItems = [...primaryNav, ...secondaryNav];
 ---
 
 <header class="sticky top-0 z-50 bg-surface/80 dark:bg-surface-dark/80 backdrop-blur-md border-b border-border dark:border-border-dark">
@@ -34,7 +40,7 @@ const navItems = [
 
     <!-- Desktop nav -->
     <div class="hidden lg:flex items-center gap-1">
-      {navItems.map((item) => (
+      {primaryNav.map((item) => (
         <a
           href={getLocalizedPath(item.path, lang)}
           class="px-3 py-2 text-sm rounded-lg text-text-base dark:text-text-dark hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors no-underline"
@@ -42,6 +48,30 @@ const navItems = [
           {t(item.key, lang)}
         </a>
       ))}
+
+      {/* Dropdown for Secondary Nav */}
+      <div class="relative group">
+        <button
+          class="flex items-center gap-1 px-3 py-2 text-sm rounded-lg text-text-base dark:text-text-dark hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          {t('nav.more', lang)}
+          <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="absolute right-0 top-full mt-1 w-48 bg-surface dark:bg-surface-dark border border-border dark:border-border-dark rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
+          {secondaryNav.map((item) => (
+            <a
+              href={getLocalizedPath(item.path, lang)}
+              class="block px-4 py-2 text-sm text-text-base dark:text-text-dark hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors no-underline"
+            >
+              {t(item.key, lang)}
+            </a>
+          ))}
+        </div>
+      </div>
     </div>
 
     <!-- Actions -->

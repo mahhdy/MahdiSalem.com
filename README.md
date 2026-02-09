@@ -26,6 +26,8 @@ Personal website for **Mehdi Salem** (مهدی سالم) - independent researche
 - SEO optimized (Open Graph, Twitter Cards, sitemap, structured URLs)
 - Privacy-friendly (no cookies, no tracking by default)
 - Ko-fi donation integration
+- **NEW**: Analytics dashboard with visit statistics and tag TreeMap
+- **NEW**: Simplified navigation with grouped "More" menu
 
 ## Project Structure
 
@@ -46,6 +48,7 @@ src/
 │       ├── fa/
 │       └── en/
 ├── i18n/             # Translation files (fa.json, en.json)
+├── data/             # Static data & stats (stats.json)
 ├── layouts/          # Page layouts (Base, Article, Book)
 ├── pages/            # Route pages
 │   ├── en/           # English pages (prefixed)
@@ -96,9 +99,36 @@ Article content here...
 1. Create a book overview in `src/content/books/fa/my-book.md`
 2. Create chapters as `src/content/books/fa/ch01-name.md` with `bookSlug: "fa/my-book"` in frontmatter
 
+### Statements
+
+Create a new `.md` file in `src/content/statements/fa/` or `src/content/statements/en/`:
+
+```markdown
+---
+title: "Statement Title"
+description: "Short description"
+lang: fa
+publishDate: 2025-03-01
+type: statement # options: statement, press, position
+---
+
+Statement content here...
+```
+
 ### Wiki Pages
 
 Create `.md` files in `src/content/wiki/fa/` or `src/content/wiki/en/` with `section` and `order` frontmatter.
+
+### Drafts
+
+To mark any content (Article, Book, Statement, or Wiki) as a draft, add `draft: true` to its frontmatter. Drafts will only be visible in the **Drafts** (پیش‌نویس‌ها) section and will be excluded from main lists and RSS feeds.
+
+```markdown
+---
+...
+draft: true
+---
+```
 
 ## Converting from LaTeX
 

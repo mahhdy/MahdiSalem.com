@@ -1,0 +1,119 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { t } from '../i18n';
+import stats from '../data/stats.json';
+
+const lang = 'fa'; // Default to Persian for the dashboard
+
+// Get all content for tags
+const allArticles = await getCollection('articles');
+const allBooks = await getCollection('books');
+
+// Calculate tag counts
+const tagCounts = new Map();
+[...allArticles, ...allBooks].forEach(item => {
+  if (item.data.tags) {
+    item.data.tags.forEach(tag => {
+      tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
+    });
+  }
+});
+
+const sortedTags = Array.from(tagCounts.entries())
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 15); // Top 15 tags
+
+// Simple TreeMap implementation (SVG)
+const totalTagUse = sortedTags.reduce((sum, [_, count]) => sum + count, 0);
+let currentX = 0;
+let currentY = 0;
+const width = 800;
+const height = 400;
+
+const treeMapItems = sortedTags.map(([tag, count], index) => {
+  const area = (count / totalTagUse) * (width * height);
+  // This is a VERY simplified tiling for demo purposes
+  const w = (count / totalTagUse) * width;
+  const h = height;
+  const item = { tag, count, x: currentX, y: 0, w, h };
+  currentX += w;
+  return item;
+});
+
+// Popular Content logic
+const popularContent = Object.entries(stats.visits)
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 5);
+---
+
+<BaseLayout title="آمار بازدیدها و فعالیت‌ها">
+  <div class="container-narrow py-16">
+    <h1 class="text-3xl md:text-4xl font-bold mb-8 italic">آمار و فعالیت‌ها (Analytics)</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      <div class="p-6 bg-surface-dim dark:bg-surface-dark-dim rounded-2xl border border-border dark:border-border-dark">
+        <h2 class="text-xl font-bold mb-4">کل بازدیدها</h2>
+        <p class="text-4xl font-black text-primary dark:text-primary-light">
+          {stats.totalVisits.toLocaleString('fa-IR')}
+        </p>
+        <p class="text-sm text-text-muted dark:text-text-dark-muted mt-2">
+          آخرین بروزرسانی: {new Date(stats.lastUpdated).toLocaleDateString('fa-IR')}
+        </p>
+      </div>
+
+      <div class="p-6 bg-surface-dim dark:bg-surface-dark-dim rounded-2xl border border-border dark:border-border-dark">
+        <h2 class="text-xl font-bold mb-4">پربازدیدترین مطالب</h2>
+        <ul class="space-y-2">
+          {popularContent.map(([path, count]) => (
+            <li class="flex justify-between items-center text-sm">
+              <span class="truncate">{path}</span>
+              <span class="font-mono bg-primary/10 text-primary px-2 py-0.5 rounded">{count.toLocaleString('fa-IR')}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6">درخت برچسب‌ها (Tag TreeMap)</h2>
+      <div class="w-full overflow-x-auto">
+        <svg viewBox={`0 0 ${width} ${height}`} class="w-full h-auto rounded-xl overflow-hidden border border-border dark:border-border-dark">
+          {treeMapItems.map((item, i) => (
+            <g>
+              <rect
+                x={item.x}
+                y={item.y}
+                width={item.w}
+                height={item.h}
+                fill={`hsl(${200 + (i * 10)}, 70%, ${40 + (i % 2 * 10)}%)`}
+                class="hover:opacity-80 transition-opacity"
+              />
+              {item.w > 40 && (
+                <text
+                  x={item.x + item.w / 2}
+                  y={item.y + item.h / 2}
+                  text-anchor="middle"
+                  fill="white"
+                  class="text-[10px] md:text-xs font-bold pointer-events-none"
+                >
+                  {item.tag} ({item.count})
+                </text>
+              )}
+            </g>
+          ))}
+        </svg>
+      </div>
+      <p class="text-sm text-text-muted dark:text-text-dark-muted mt-4">
+        این نمودار نشان‌دهنده فراوانی استفاده از برچسب‌های مختلف در مقالات و کتاب‌ها است.
+      </p>
+    </section>
+
+    <div class="prose dark:prose-invert max-w-none bg-surface-dim dark:bg-surface-dark-dim p-8 rounded-2xl border border-border dark:border-border-dark">
+      <h3>درباره این بخش</h3>
+      <p>
+        این صفحه به منظور شفاف‌سازی و نمایش مسیر رشد محتوای سایت ایجاد شده است. آمارهای فوق به صورت دوره‌ای بروزرسانی می‌شوند.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
