@@ -1,18 +1,17 @@
-name: Deploy Astro to GitHub Pages and Cloudflare Pages
+name: Deploy Astro to GitHub Pages
 on:
   push:
     branches: [main]
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: "pages"
   cancel-in-progress: false
-
-env:
-  NODE_VERSION: '20'
 
 jobs:
   build:
@@ -24,7 +23,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.NODE_VERSION }}
+          node-version: "20"
           cache: 'npm'
           
       - name: Install dependencies
@@ -32,21 +31,13 @@ jobs:
         
       - name: Build Astro
         run: npm run build
-        
-      # Deploy به Cloudflare Pages با wrangler
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=mahdisalem
           
-      - name: Upload artifact for GitHub Pages
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
-  deploy-github:
+  deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
