@@ -1,0 +1,36 @@
+---
+import { t, type Locale } from '../i18n';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+---
+
+<section class="bg-surface-dim dark:bg-surface-dark-dim rounded-2xl p-8 text-center">
+  <h2 class="text-2xl font-bold mb-2">{t('home.newsletter.title', lang)}</h2>
+  <p class="text-text-muted dark:text-text-dark-muted mb-6">
+    {t('home.newsletter.description', lang)}
+  </p>
+  <form
+    action="https://buttondown.email/api/emails/embed-subscribe/mehdi-salem"
+    method="post"
+    target="popupwindow"
+    class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+  >
+    <input
+      type="email"
+      name="email"
+      required
+      placeholder={t('home.newsletter.placeholder', lang)}
+      class="flex-1 px-4 py-2.5 rounded-lg border border-border dark:border-border-dark bg-surface dark:bg-surface-dark text-text-base dark:text-text-dark placeholder:text-text-muted dark:placeholder:text-text-dark-muted focus:outline-none focus:ring-2 focus:ring-primary"
+    />
+    <button
+      type="submit"
+      class="px-6 py-2.5 rounded-lg bg-primary text-white font-medium hover:bg-primary-dark transition-colors"
+    >
+      {t('home.newsletter.submit', lang)}
+    </button>
+  </form>
+</section>

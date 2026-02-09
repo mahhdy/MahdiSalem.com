@@ -1,0 +1,24 @@
+---
+import { t, getAlternateLocale, getLocalizedPath, type Locale } from '../i18n';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const altLang = getAlternateLocale(lang);
+
+// Build the alternate URL: map current path to the other locale
+const currentPath = Astro.url.pathname;
+// Remove locale prefix if present, then rebuild
+const cleanPath = currentPath.replace(/^\/(en|fa)\//, '/').replace(/^\/(en|fa)$/, '/');
+const altPath = altLang === 'fa' ? cleanPath : `/en${cleanPath === '/' ? '' : cleanPath}`;
+---
+
+<a
+  href={altPath}
+  class="px-3 py-1.5 text-sm rounded-lg border border-border dark:border-border-dark hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors no-underline text-text-base dark:text-text-dark"
+  aria-label={`Switch to ${altLang === 'fa' ? 'Persian' : 'English'}`}
+>
+  {t('lang.switch', lang)}
+</a>

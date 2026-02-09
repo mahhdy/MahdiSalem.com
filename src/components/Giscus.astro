@@ -1,0 +1,50 @@
+---
+import { type Locale } from '../i18n';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+---
+
+<section id="comments" class="mt-12">
+  <div id="giscus-container"></div>
+</section>
+
+<script define:vars={{ lang }}>
+  function loadGiscus() {
+    const container = document.getElementById('giscus-container');
+    if (!container || container.querySelector('.giscus')) return;
+
+    const script = document.createElement('script');
+    script.src = 'https://giscus.app/client.js';
+    // TODO: Replace with actual repo details
+    script.setAttribute('data-repo', 'Mahhdy/mahdisalem.com');
+    script.setAttribute('data-repo-id', 'YOUR_REPO_ID');
+    script.setAttribute('data-category', 'Comments');
+    script.setAttribute('data-category-id', 'YOUR_CATEGORY_ID');
+    script.setAttribute('data-mapping', 'pathname');
+    script.setAttribute('data-strict', '0');
+    script.setAttribute('data-reactions-enabled', '1');
+    script.setAttribute('data-emit-metadata', '0');
+    script.setAttribute('data-input-position', 'top');
+    script.setAttribute('data-theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+    script.setAttribute('data-lang', lang === 'fa' ? 'fa' : 'en');
+    script.setAttribute('crossorigin', 'anonymous');
+    script.async = true;
+
+    container.appendChild(script);
+  }
+
+  // Load on visible
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      loadGiscus();
+      observer.disconnect();
+    }
+  });
+
+  const target = document.getElementById('giscus-container');
+  if (target) observer.observe(target);
+</script>

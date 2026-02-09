@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { t, stripLangPrefix } from '../../../i18n';
+import { getCollection } from 'astro:content';
+
+const lang = 'en';
+
+const allStatements = await getCollection('statements', ({ data }) => data.lang === 'en' && !data.draft);
+const statements = allStatements.sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
+
+const dateFormatter = new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+const typeLabels: Record<string, string> = {
+  statement: 'Statement',
+  press: 'Press Release',
+  position: 'Position',
+};
+---
+
+<BaseLayout title={t('nav.statements', lang)}>
+  <div class="container-wide py-16">
+    <h1 class="text-3xl md:text-4xl font-bold mb-8">{t('nav.statements', lang)}</h1>
+
+    {statements.length > 0 ? (
+      <div class="space-y-6">
+        {statements.map((statement) => (
+          <a href={`/en/statements/${stripLangPrefix(statement.id)}`} class="group block p-6 rounded-xl border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-xs px-2.5 py-1 rounded-full bg-accent/10 text-accent dark:bg-accent-light/10 dark:text-accent-light font-medium">{typeLabels[statement.data.type] ?? statement.data.type}</span>
+              <time datetime={statement.data.publishDate.toISOString()} class="text-xs text-text-muted dark:text-text-dark-muted">{dateFormatter.format(statement.data.publishDate)}</time>
+            </div>
+            <h2 class="text-lg font-bold text-text-base dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors mb-1">{statement.data.title}</h2>
+            <p class="text-sm text-text-muted dark:text-text-dark-muted line-clamp-2">{statement.data.description}</p>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <p class="text-text-muted dark:text-text-dark-muted">Statements will be published here soon.</p>
+    )}
+  </div>
+</BaseLayout>

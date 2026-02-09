@@ -1,0 +1,92 @@
+---
+import { t, getDir, getLocalizedPath, getAlternateLocale, type Locale } from '../i18n';
+import ThemeToggle from './ThemeToggle.astro';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const dir = getDir(lang);
+
+const navItems = [
+  { key: 'nav.home', path: '' },
+  { key: 'nav.about', path: 'about' },
+  { key: 'nav.books', path: 'books' },
+  { key: 'nav.articles', path: 'articles' },
+  { key: 'nav.statements', path: 'statements' },
+  { key: 'nav.wiki', path: 'wiki' },
+  { key: 'nav.support', path: 'support' },
+  { key: 'nav.contact', path: 'contact' },
+];
+---
+
+<header class="sticky top-0 z-50 bg-surface/80 dark:bg-surface-dark/80 backdrop-blur-md border-b border-border dark:border-border-dark">
+  <nav class="container-wide flex items-center justify-between h-16" aria-label="Main navigation">
+    <!-- Logo / Site name -->
+    <a href={getLocalizedPath('', lang)} class="text-xl font-bold text-primary dark:text-primary-light no-underline hover:no-underline">
+      {t('site.title', lang)}
+    </a>
+
+    <!-- Desktop nav -->
+    <div class="hidden lg:flex items-center gap-1">
+      {navItems.map((item) => (
+        <a
+          href={getLocalizedPath(item.path, lang)}
+          class="px-3 py-2 text-sm rounded-lg text-text-base dark:text-text-dark hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors no-underline"
+        >
+          {t(item.key, lang)}
+        </a>
+      ))}
+    </div>
+
+    <!-- Actions -->
+    <div class="flex items-center gap-2">
+      <ThemeToggle />
+      <LanguageSwitcher lang={lang} />
+
+      <!-- Mobile menu button -->
+      <button
+        id="mobile-menu-btn"
+        class="lg:hidden p-2 rounded-lg hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div id="mobile-menu" class="hidden lg:hidden border-t border-border dark:border-border-dark">
+    <div class="container-wide py-4 flex flex-col gap-1">
+      {navItems.map((item) => (
+        <a
+          href={getLocalizedPath(item.path, lang)}
+          class="px-3 py-2 text-sm rounded-lg text-text-base dark:text-text-dark hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors no-underline"
+        >
+          {t(item.key, lang)}
+        </a>
+      ))}
+    </div>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  btn?.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    menu?.classList.toggle('hidden');
+    menuIcon?.classList.toggle('hidden');
+    closeIcon?.classList.toggle('hidden');
+  });
+</script>

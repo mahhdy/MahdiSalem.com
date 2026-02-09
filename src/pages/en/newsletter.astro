@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import { t } from '../../i18n';
+
+const lang = 'en';
+---
+
+<BaseLayout title={t('nav.newsletter', lang)}>
+  <div class="container-narrow py-16">
+    <h1 class="text-3xl md:text-4xl font-bold mb-8">{t('nav.newsletter', lang)}</h1>
+    <Newsletter lang={lang} />
+    <div class="mt-12">
+      <h2 class="text-xl font-bold mb-4">Newsletter Archive</h2>
+      <p class="text-text-muted dark:text-text-dark-muted">Past newsletter archives will be available here soon.</p>
+    </div>
+  </div>
+</BaseLayout>

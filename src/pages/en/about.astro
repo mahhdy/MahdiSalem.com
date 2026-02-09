@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { t } from '../../i18n';
+
+const lang = 'en';
+---
+
+<BaseLayout title={t('nav.about', lang)}>
+  <div class="container-narrow py-16">
+    <h1 class="text-3xl md:text-4xl font-bold mb-8">{t('nav.about', lang)}</h1>
+
+    <div class="prose">
+      <p>
+        <strong>Mehdi Salem</strong> is an independent researcher in analytical philosophy and ethics, and a political writer focused on Iran's transition to democracy.
+      </p>
+
+      <h2>Academic Background</h2>
+      <p>
+        Mehdi Salem holds an MBA and is a former PhD candidate in Public Policy at Tarbiat Modares University. His thesis topic was "Developing a Model for Ethical Evaluation of Public Policies."
+      </p>
+
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Analytical Philosophy</li>
+        <li>Ethics</li>
+        <li>Social Sciences</li>
+        <li>Public Policy</li>
+        <li>Democracy and Human Rights</li>
+      </ul>
+
+      <h2>Mission</h2>
+      <p>
+        Writing books and articles about Iran's flourishing and transition from authoritarianism to democracy is Mehdi Salem's primary intellectual and practical concern.
+      </p>
+
+      <h2>Experience</h2>
+      <p>
+        Mehdi Salem is a former political prisoner of Evin Prison and has firsthand experience with the consequences of authoritarianism. This experience is his primary motivation for intellectual and written efforts toward freedom and justice.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

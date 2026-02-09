@@ -1,0 +1,37 @@
+---
+import { t, type Locale } from '../i18n';
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: Heading[];
+  lang: Locale;
+}
+
+const { headings, lang } = Astro.props;
+const filteredHeadings = headings.filter((h) => h.depth >= 2 && h.depth <= 3);
+---
+
+{filteredHeadings.length > 0 && (
+  <nav class="toc p-4 rounded-lg border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim" aria-label="Table of contents">
+    <h2 class="text-sm font-bold mb-3 uppercase tracking-wider text-text-muted dark:text-text-dark-muted">
+      {t('books.toc', lang)}
+    </h2>
+    <ul class="space-y-1.5 text-sm">
+      {filteredHeadings.map((heading) => (
+        <li style={`padding-inline-start: ${(heading.depth - 2) * 1}rem`}>
+          <a
+            href={`#${heading.slug}`}
+            class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline transition-colors"
+          >
+            {heading.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}

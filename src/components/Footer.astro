@@ -1,0 +1,50 @@
+---
+import { t, getLocalizedPath, type Locale } from '../i18n';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="border-t border-border dark:border-border-dark mt-16">
+  <div class="container-wide py-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Brand -->
+      <div>
+        <a href={getLocalizedPath('', lang)} class="text-lg font-bold text-primary dark:text-primary-light no-underline">
+          {t('site.title', lang)}
+        </a>
+        <p class="mt-2 text-sm text-text-muted dark:text-text-dark-muted">
+          {t('site.description', lang)}
+        </p>
+      </div>
+
+      <!-- Quick links -->
+      <div>
+        <ul class="space-y-2 text-sm">
+          <li><a href={getLocalizedPath('books', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.books', lang)}</a></li>
+          <li><a href={getLocalizedPath('articles', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.articles', lang)}</a></li>
+          <li><a href={getLocalizedPath('wiki', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.wiki', lang)}</a></li>
+          <li><a href={getLocalizedPath('newsletter', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.newsletter', lang)}</a></li>
+        </ul>
+      </div>
+
+      <!-- Social / Contact -->
+      <div>
+        <ul class="space-y-2 text-sm">
+          <li><a href={getLocalizedPath('about', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.about', lang)}</a></li>
+          <li><a href={getLocalizedPath('contact', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.contact', lang)}</a></li>
+          <li><a href={getLocalizedPath('support', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.support', lang)}</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-8 pt-6 border-t border-border dark:border-border-dark text-center text-sm text-text-muted dark:text-text-dark-muted">
+      <p>&copy; {currentYear} {t('site.title', lang)}. {t('footer.rights', lang)}</p>
+      <p class="mt-1">{t('footer.built_with', lang)} <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="hover:text-primary dark:hover:text-primary-light">Astro</a></p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { t, stripLangPrefix } from '../../i18n';
+import { getCollection } from 'astro:content';
+
+const lang = 'fa';
+
+const allBooks = await getCollection('books', ({ data }) => data.lang === 'fa' && !data.draft && !data.bookSlug);
+const books = allBooks.sort((a, b) => a.data.order - b.data.order);
+---
+
+<BaseLayout title={t('nav.books', lang)}>
+  <div class="container-wide py-16">
+    <h1 class="text-3xl md:text-4xl font-bold mb-8">{t('nav.books', lang)}</h1>
+
+    {books.length > 0 ? (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {books.map((book) => (
+          <a
+            href={`/books/${stripLangPrefix(book.id)}`}
+            class="group block rounded-xl border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline overflow-hidden"
+          >
+            {book.data.coverImage && (
+              <img src={book.data.coverImage} alt={book.data.title} class="w-full h-56 object-cover" loading="lazy" />
+            )}
+            <div class="p-6">
+              <h2 class="text-xl font-bold mb-2 text-text-base dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors">
+                {book.data.title}
+              </h2>
+              <p class="text-sm text-text-muted dark:text-text-dark-muted mb-4">
+                {book.data.description}
+              </p>
+              <div class="flex gap-3">
+                <span class="text-sm text-primary dark:text-primary-light font-medium">
+                  {t('books.read_online', lang)}
+                </span>
+                {book.data.pdfUrl && (
+                  <span class="text-sm text-secondary font-medium">
+                    {t('books.download_pdf', lang)}
+                  </span>
+                )}
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <p class="text-text-muted dark:text-text-dark-muted">به زودی کتاب‌ها در این بخش منتشر خواهند شد.</p>
+    )}
+  </div>
+</BaseLayout>
