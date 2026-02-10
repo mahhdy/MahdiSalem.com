@@ -9,45 +9,44 @@ const stripPrefix = (id: string) => id.replace(/^fa\//, '');
 
 export async function getStaticPaths() {
   const strip = (id: string) => id.replace(/^fa\//, '');
-  const allBooks = await getCollection('books', ({ data }) => data.lang === 'fa');
+  const allBooks = await getCollection('books', ({ data }) => data.lang === 'fa' && !data.draft);
 
   const bookMap = new Map();
 
-  // 1. Identify Books (Overviews)
+  // 1. Identify Books
+  // In Astro content collections, index.md files are returned with IDs like "fa/action-for-iran" (no file extension)
+  // while chapter files have IDs like "fa/action-for-iran/ch01-..." (with implicit .md extension in the path)
   for (const book of allBooks) {
-    const isExplicitBook = !book.data.bookSlug && !book.id.includes('/'); // Legacy flat book
-    const isIndexBook = book.id.endsWith('/index.md') || book.id.endsWith('/index.mdx'); // New folder book
-
-    if (isExplicitBook || isIndexBook) {
+    // A book is a file that:
+    // - Contains a slash (is in a subdirectory)
+    // - Does NOT have a file-like name after the last slash (no extension-like pattern)
+    // This matches "fa/action-for-iran" but not "fa/action-for-iran/ch01-..."
+    const parts = book.id.split('/');
+    const lastPart = parts[parts.length - 1];
+    
+    // If the last part doesn't contain a hyphen or looks like a chapter file, it's likely a book (index)
+    // Books: "fa/action-for-iran", "fa/sample-book"
+    // Chapters: "fa/action-for-iran/ch01-...", "fa/sample-book/chapter-1"
+    const isBook = parts.length === 2 && !lastPart.includes('.md') && !lastPart.includes('.mdx');
+    
+    if (isBook) {
       bookMap.set(book.id, { entry: book, chapters: [] });
     }
   }
 
-  // 2. Identify Chapters and Link to Books
+  // 2. Identify Chapters (files with more than 2 path segments)
   for (const file of allBooks) {
     if (bookMap.has(file.id)) continue; // Skip books themselves
 
-    let bookId = file.data.bookSlug;
-
-    // implicit association: check if file is in a folder that is a book
-    if (!bookId && file.id.includes('/')) {
-        const parts = file.id.split('/');
-        parts.pop(); // remove filename
-        const folderPath = parts.join('/');
+    const parts = file.id.split('/');
+    
+    // Chapters have 3 parts: "fa/action-for-iran/ch01-..."
+    if (parts.length === 3) {
+        const bookId = `${parts[0]}/${parts[1]}`; // "fa/action-for-iran"
         
-        // Check for index.md or index.mdx in the same folder
-        const potentialIndexMd = `${folderPath}/index.md`;
-        const potentialIndexMdx = `${folderPath}/index.mdx`;
-        
-        if (bookMap.has(potentialIndexMd)) {
-            bookId = potentialIndexMd;
-        } else if (bookMap.has(potentialIndexMdx)) {
-            bookId = potentialIndexMdx;
+        if (bookMap.has(bookId)) {
+            bookMap.get(bookId).chapters.push(file);
         }
-    }
-
-    if (bookId && bookMap.has(bookId)) {
-        bookMap.get(bookId).chapters.push(file);
     }
   }
 
@@ -58,11 +57,8 @@ export async function getStaticPaths() {
     // Sort chapters
     chapters.sort((a: any, b: any) => (a.data.chapterNumber ?? 0) - (b.data.chapterNumber ?? 0));
 
-    // Prepare book slug
-    let rawBookSlug = strip(bookId);
-    // For folder books: fa/sample-book/index.md -> sample-book
-    // For flat books: fa/ethical.md -> ethical
-    let bookSlugClean = rawBookSlug.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '');
+    // Prepare book slug: fa/action-for-iran -> action-for-iran
+    let bookSlugClean = strip(bookId);
 
     // Book Overview Path
     paths.push({
@@ -74,28 +70,11 @@ export async function getStaticPaths() {
     for (const chapter of chapters) {
         const idx = chapters.findIndex((c: any) => c.id === chapter.id);
         
-        // Determine chapter slug
-        // Flat: fa/ch01.md -> ch01.md -> ch01. joined with book: ethical/ch01
-        // Folder: fa/sample-book/ch01.md -> sample-book/ch01.md -> sample-book/ch01
-        
-        let finalSlug = '';
-        if (chapter.id.includes('/index.md')) continue; // Should not happen but safety
-
-        if (chapter.id.includes('/')) {
-             // Folder structure: fa/sample-book/ch01.md
-             // strip -> sample-book/ch01.md
-             // remove ext -> sample-book/ch01
-             finalSlug = strip(chapter.id).replace(/\.mdx?$/, '');
-        } else {
-             // Flat structure: fa/ch01.md
-             // strip -> ch01.md
-             // remove ext -> ch01
-             // Prepend book slug
-             finalSlug = `${bookSlugClean}/${strip(chapter.id).replace(/\.mdx?$/, '')}`;
-        }
+        // Chapter slug: fa/action-for-iran/ch01-... -> action-for-iran/ch01-...
+        let chapterSlugFull = strip(chapter.id);
 
         paths.push({
-            params: { slug: finalSlug },
+            params: { slug: chapterSlugFull },
             props: {
                 entry: chapter,
                 chapters: chapters,
@@ -153,8 +132,16 @@ const chapterList = chapters.map((c: any) => {
     chapterNumber={entry.data.chapterNumber}
     chapters={chapterList}
     headings={headings}
-    prevChapter={prevChapter ? { slug: stripPrefix(prevChapter.id), title: prevChapter.data.title, chapterNumber: prevChapter.data.chapterNumber ?? 0 } : undefined}
-    nextChapter={nextChapter ? { slug: stripPrefix(nextChapter.id), title: nextChapter.data.title, chapterNumber: nextChapter.data.chapterNumber ?? 0 } : undefined}
+    prevChapter={prevChapter ? { 
+      slug: stripPrefix(prevChapter.id).replace(`${bookSlugClean}/`, ''), 
+      title: prevChapter.data.title, 
+      chapterNumber: prevChapter.data.chapterNumber ?? 0 
+    } : undefined}
+    nextChapter={nextChapter ? { 
+      slug: stripPrefix(nextChapter.id).replace(`${bookSlugClean}/`, ''), 
+      title: nextChapter.data.title, 
+      chapterNumber: nextChapter.data.chapterNumber ?? 0 
+    } : undefined}
     draft={entry.data.draft}
   >
     <Content />

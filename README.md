@@ -123,11 +123,24 @@ Article content here...
 
 ### Books
 
-1. Create a book overview in `src/content/books/fa/my-book.md`
-2. Create chapters as `src/content/books/fa/ch01-name.md` with `bookSlug: "fa/my-book"` in frontmatter
+Books are organized in subdirectories. This allows managing chapters as separate files within a book's folder.
 
-### Statements
+1. Create a folder in `src/content/books/fa/` or `en/` named after your book slug (e.g., `my-book`).
+2. Create an `index.md` (or `.mdx`) inside that folder for the book overview.
+3. Create chapters as separate files (e.g., `ch01-intro.md`, `ch02-laws.md`) inside the same folder.
+4. The system automatically associates chapters based on their folder location.
+5. Use `chapterNumber: N` in the chapter frontmatter to control the sort order.
 
+**Note:** Only the `index.md` files appear in the main book lists (the home page and `/books` index). Chapters are visible inside the book reader.
+
+### Pushing Content
+
+To update the live website:
+
+1. **Commit your changes**: `git add .` then `git commit -m "Add new article/book: [Title]"`
+2. **Push to GitHub**: `git push origin main`
+3. **Automatic Deployment**: Cloudflare Pages will automatically detect the push, build the site, and deploy it.
+4. **Verification**: Check the [Cloudflare Pages Dashboard](https://dash.cloudflare.com) or wait for the build to complete (usually 1-2 minutes).
 Create a new `.md` file in `src/content/statements/fa/` or `src/content/statements/en/`:
 
 ```markdown

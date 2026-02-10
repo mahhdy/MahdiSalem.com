@@ -42,6 +42,17 @@ This guide helps you configure and manage the new website features.
 - فایل: `src/content/articles/fa/philosophy.md`
 - کلید در stats.json: `"articles/fa/philosophy": 1250`
 
+- فایل کتاب: `src/content/books/fa/my-book/index.md`
+- کلید در stats.json: `"books/fa/my-book": 3200` (بدون index.md)
+- فصل کتاب: `"books/fa/my-book/ch01-intro": 500`
+
+- File: `src/content/articles/en/philosophy.md`
+- Key in stats.json: `"articles/en/philosophy": 1250`
+
+- Book File: `src/content/books/en/my-book/index.md`
+- Key in stats.json: `"books/en/my-book": 3200` (without index.md)
+- Book Chapter: `"books/en/my-book/ch01-intro": 500`
+
 #### گزینه ۲: API سمت سرور / Server-Side API (پیشرفته / Advanced)
 
 1. یک Cloudflare Worker یا Netlify Function بسازید

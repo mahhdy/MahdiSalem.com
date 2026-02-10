@@ -7,7 +7,9 @@ import ratings from '../../data/ratings.json';
 
 const lang = 'fa';
 
-const allBooks = await getCollection('books', ({ data }) => data.lang === 'fa' && !data.bookSlug);
+const allBooks = await getCollection('books', (entry) => {
+  return entry.data.lang === 'fa' && entry.id.split('/').length === 2;
+});
 
 // Pre-process books with stats and ratings
 const books = allBooks.map(b => {
@@ -50,7 +52,7 @@ const books = allBooks.map(b => {
       <div id="books-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {books.map((book) => (
           <a
-            href={`/books/${stripLangPrefix(book.id)}`}
+            href={`/books/${stripLangPrefix(book.id).replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '')}`}
             class={`book-card group block rounded-xl border ${book.data.draft ? 'border-dashed border-amber-300 dark:border-amber-700 bg-amber-50 dark:bg-amber-900/10' : 'border-border dark:border-border-dark'} hover:border-blue-500 dark:hover:border-blue-400 transition-colors no-underline overflow-hidden`}
             data-title={book.data.title.toLowerCase()}
             data-desc={book.data.description.toLowerCase()}

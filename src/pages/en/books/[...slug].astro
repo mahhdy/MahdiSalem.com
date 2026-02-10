@@ -45,11 +45,20 @@ const { Content, headings } = await render(entry);
 
 const bookSlugClean = stripPrefix(entry.data.bookSlug ?? entry.id);
 
-const chapterList = chapters.map((c: any) => ({
-  slug: stripPrefix(c.id),
-  title: c.data.title,
-  chapterNumber: c.data.chapterNumber ?? 0,
-}));
+const chapterList = chapters.map((c: any) => {
+  let slug = stripPrefix(c.id).replace(/\.mdx?$/, '');
+  
+  // Strip book slug if it's already there (folder structure)
+  if (slug.startsWith(bookSlugClean + '/')) {
+      slug = slug.substring(bookSlugClean.length + 1);
+  }
+  
+  return {
+    slug: slug,
+    title: c.data.title,
+    chapterNumber: c.data.chapterNumber ?? 0,
+  };
+});
 ---
 
 {isChapter ? (
