@@ -2,7 +2,6 @@
 title: "فصل دوم: مبانی نظری"
 description: "بررسی مبانی فلسفی و نظری ارزیابی اخلاقی سیاست‌های عمومی"
 lang: fa
-bookSlug: "fa/ethical-evaluation"
 chapterNumber: 2
 ---
 

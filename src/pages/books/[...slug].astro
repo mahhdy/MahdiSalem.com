@@ -11,58 +11,137 @@ export async function getStaticPaths() {
   const strip = (id: string) => id.replace(/^fa\//, '');
   const allBooks = await getCollection('books', ({ data }) => data.lang === 'fa');
 
-  // Separate book overviews from chapters
-  const overviews = allBooks.filter((b) => !b.data.bookSlug);
-  const chapters = allBooks.filter((b) => b.data.bookSlug);
+  const bookMap = new Map();
+
+  // 1. Identify Books (Overviews)
+  for (const book of allBooks) {
+    const isExplicitBook = !book.data.bookSlug && !book.id.includes('/'); // Legacy flat book
+    const isIndexBook = book.id.endsWith('/index.md') || book.id.endsWith('/index.mdx'); // New folder book
+
+    if (isExplicitBook || isIndexBook) {
+      bookMap.set(book.id, { entry: book, chapters: [] });
+    }
+  }
+
+  // 2. Identify Chapters and Link to Books
+  for (const file of allBooks) {
+    if (bookMap.has(file.id)) continue; // Skip books themselves
+
+    let bookId = file.data.bookSlug;
+
+    // implicit association: check if file is in a folder that is a book
+    if (!bookId && file.id.includes('/')) {
+        const parts = file.id.split('/');
+        parts.pop(); // remove filename
+        const folderPath = parts.join('/');
+        
+        // Check for index.md or index.mdx in the same folder
+        const potentialIndexMd = `${folderPath}/index.md`;
+        const potentialIndexMdx = `${folderPath}/index.mdx`;
+        
+        if (bookMap.has(potentialIndexMd)) {
+            bookId = potentialIndexMd;
+        } else if (bookMap.has(potentialIndexMdx)) {
+            bookId = potentialIndexMdx;
+        }
+    }
+
+    if (bookId && bookMap.has(bookId)) {
+        bookMap.get(bookId).chapters.push(file);
+    }
+  }
 
   const paths = [];
 
-  // Overview pages: /books/ethical-evaluation
-  for (const book of overviews) {
-    const bookChapters = chapters
-      .filter((c) => c.data.bookSlug === book.id)
-      .sort((a, b) => (a.data.chapterNumber ?? 0) - (b.data.chapterNumber ?? 0));
+  // 3. Generate paths
+  for (const [bookId, { entry, chapters }] of bookMap.entries()) {
+    // Sort chapters
+    chapters.sort((a: any, b: any) => (a.data.chapterNumber ?? 0) - (b.data.chapterNumber ?? 0));
 
+    // Prepare book slug
+    let rawBookSlug = strip(bookId);
+    // For folder books: fa/sample-book/index.md -> sample-book
+    // For flat books: fa/ethical.md -> ethical
+    let bookSlugClean = rawBookSlug.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '');
+
+    // Book Overview Path
     paths.push({
-      params: { slug: strip(book.id) },
-      props: { entry: book, chapters: bookChapters, isChapter: false },
+      params: { slug: bookSlugClean },
+      props: { entry: entry, chapters: chapters, isChapter: false, bookSlugOverride: bookSlugClean },
     });
-  }
 
-  // Chapter pages: /books/ethical-evaluation/ch01-introduction
-  for (const chapter of chapters) {
-    const bookChapters = chapters
-      .filter((c) => c.data.bookSlug === chapter.data.bookSlug)
-      .sort((a, b) => (a.data.chapterNumber ?? 0) - (b.data.chapterNumber ?? 0));
+    // Chapter Paths
+    for (const chapter of chapters) {
+        const idx = chapters.findIndex((c: any) => c.id === chapter.id);
+        
+        // Determine chapter slug
+        // Flat: fa/ch01.md -> ch01.md -> ch01. joined with book: ethical/ch01
+        // Folder: fa/sample-book/ch01.md -> sample-book/ch01.md -> sample-book/ch01
+        
+        let finalSlug = '';
+        if (chapter.id.includes('/index.md')) continue; // Should not happen but safety
 
-    const idx = bookChapters.findIndex((c) => c.id === chapter.id);
-    const bookSlugClean = strip(chapter.data.bookSlug!);
+        if (chapter.id.includes('/')) {
+             // Folder structure: fa/sample-book/ch01.md
+             // strip -> sample-book/ch01.md
+             // remove ext -> sample-book/ch01
+             finalSlug = strip(chapter.id).replace(/\.mdx?$/, '');
+        } else {
+             // Flat structure: fa/ch01.md
+             // strip -> ch01.md
+             // remove ext -> ch01
+             // Prepend book slug
+             finalSlug = `${bookSlugClean}/${strip(chapter.id).replace(/\.mdx?$/, '')}`;
+        }
 
-    paths.push({
-      params: { slug: `${bookSlugClean}/${strip(chapter.id)}` },
-      props: {
-        entry: chapter,
-        chapters: bookChapters,
-        isChapter: true,
-        prevChapter: idx > 0 ? bookChapters[idx - 1] : undefined,
-        nextChapter: idx < bookChapters.length - 1 ? bookChapters[idx + 1] : undefined,
-      },
-    });
+        paths.push({
+            params: { slug: finalSlug },
+            props: {
+                entry: chapter,
+                chapters: chapters,
+                isChapter: true,
+                prevChapter: idx > 0 ? chapters[idx - 1] : undefined,
+                nextChapter: idx < chapters.length - 1 ? chapters[idx + 1] : undefined,
+                bookSlugOverride: bookSlugClean
+            },
+        });
+    }
   }
 
   return paths;
 }
 
-const { entry, chapters, isChapter, prevChapter, nextChapter } = Astro.props;
+const { entry, chapters, isChapter, prevChapter, nextChapter, bookSlugOverride } = Astro.props;
 const { Content, headings } = await render(entry);
 
-const bookSlugClean = stripPrefix(entry.data.bookSlug ?? entry.id);
+// Determine book slug for UI links
+// Priority: passed override -> entry data -> entry id
+const rawBookSlug = entry.data.bookSlug ?? bookSlugOverride ?? entry.id;
+let bookSlugClean = stripPrefix(rawBookSlug);
+bookSlugClean = bookSlugClean.replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '');
 
-const chapterList = chapters.map((c: any) => ({
-  slug: stripPrefix(c.id),
-  title: c.data.title,
-  chapterNumber: c.data.chapterNumber ?? 0,
-}));
+const chapterList = chapters.map((c: any) => {
+  let slug = stripPrefix(c.id).replace(/\.mdx?$/, '');
+  
+  // If the chapter slug starts with the book slug (folder structure), remove it for relative linking if needed
+  // BUT: The UI links are constructed as `/books/${bookSlugClean}/${ch.slug}`
+  // If ch.slug is `sample-book/ch01` and bookSlugClean is `sample-book`, result: `/books/sample-book/sample-book/ch01` (WRONG)
+  // We want ch.slug to be just partial if we prepend bookSlugClean.
+  
+  // If flat: ch.slug is `ch01`. Link: `/books/ethical/ch01`. Correct.
+  // If folder: ch.slug is `sample-book/ch01`. Link: `/books/sample-book/sample-book/ch01`. Wrong.
+  
+  // Fix: If slug starts with bookSlugClean, strip it.
+  if (slug.startsWith(bookSlugClean + '/')) {
+      slug = slug.substring(bookSlugClean.length + 1);
+  }
+  
+  return {
+    slug: slug,
+    title: c.data.title,
+    chapterNumber: c.data.chapterNumber ?? 0,
+  };
+});
 ---
 
 {isChapter ? (

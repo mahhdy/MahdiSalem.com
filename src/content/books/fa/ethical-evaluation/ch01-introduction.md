@@ -2,7 +2,6 @@
 title: "فصل اول: مقدمه و طرح مسئله"
 description: "بررسی ضرورت ارزیابی اخلاقی سیاست‌های عمومی و معرفی رویکرد کتاب"
 lang: fa
-bookSlug: "fa/ethical-evaluation"
 chapterNumber: 1
 ---
 

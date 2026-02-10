@@ -1,8 +1,9 @@
 ---
 title: "نظریه‌های انقلاب و گذار دموکراتیک"
-bookSlug: "fa/untitled"
-order: 1
+description: "نظریه‌های انقلاب و گذار دموکراتیک"
 lang: fa
+order: 1
+chapterNumber: 11
 ---
 
 
