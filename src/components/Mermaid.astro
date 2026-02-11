@@ -1,0 +1,12 @@
+---
+// src/components/Mermaid.astro
+interface Props {
+  chart: string;
+}
+
+const { chart } = Astro.props;
+---
+
+<div class="mermaid-wrapper">
+  <pre class="mermaid">{chart}</pre>
+</div>

@@ -4,9 +4,16 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && npx pagefind --site dist",
+    "build": "npm run content:all && astro build && npx pagefind --site dist",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "content:all": "node scripts/process-content.mjs --all",
+    "content:zip": "node scripts/process-content.mjs --zip",
+    "content:book": "node scripts/process-content.mjs --book",
+    "content:file": "node scripts/process-content.mjs --file",
+    "content:watch": "node scripts/watch-content.mjs",
+    "content:watch:no-ai": "node scripts/watch-content.mjs --no-ai",
+    "dev:watch": "npm-run-all --parallel dev content:watch"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
@@ -15,9 +22,22 @@
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.17.1",
     "astro-icon": "^1.1.5",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.1.18",
+    "unist-util-visit": "^5.1.0"
   },
   "devDependencies": {
-    "pagefind": "^1.4.0"
+    "@anthropic-ai/sdk": "^0.10.0",
+    "adm-zip": "^0.5.16",
+    "chokidar": "^3.6.0",
+    "globby": "^14.0.0",
+    "gray-matter": "^4.0.3",
+    "mammoth": "^1.6.0",
+    "npm-run-all": "^4.1.5",
+    "openai": "^4.20.0",
+    "pagefind": "^1.4.0",
+    "pdf-parse": "^1.1.1",
+    "rimraf": "^5.0.5",
+    "sharp": "^0.33.0",
+    "unzipper": "^0.10.14"
   }
 }

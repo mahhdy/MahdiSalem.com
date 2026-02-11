@@ -57,14 +57,30 @@
   }
 
   /* Typography */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-bold leading-tight;
   }
 
-  h1 { @apply text-3xl md:text-4xl; }
-  h2 { @apply text-2xl md:text-3xl; }
-  h3 { @apply text-xl md:text-2xl; }
-  h4 { @apply text-lg md:text-xl; }
+  h1 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+
+  h4 {
+    @apply text-lg md:text-xl;
+  }
 
   a {
     @apply text-primary hover:text-primary-light transition-colors;
@@ -91,7 +107,8 @@
     @apply mt-8 mb-3;
   }
 
-  .prose ul, .prose ol {
+  .prose ul,
+  .prose ol {
     @apply mb-4 ps-6;
   }
 
@@ -141,6 +158,231 @@
 
   html.dark .prose hr {
     @apply border-border-dark;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════ */
+/* Component styles - نمودارها و محتوای خاص                        */
+/* ═══════════════════════════════════════════════════════════════ */
+@layer components {
+
+  /* ─────────────────────────────────────────────────────────────── */
+  /* نمودارهای Mermaid                                              */
+  /* ─────────────────────────────────────────────────────────────── */
+  .mermaid-wrapper {
+    direction: ltr !important;
+    text-align: center !important;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 12px;
+    overflow-x: auto;
+    border: 1px solid #e2e8f0;
+  }
+
+  html.dark .mermaid-wrapper {
+    background: #1e293b;
+    border-color: #334155;
+  }
+
+  .mermaid {
+    display: flex;
+    justify-content: center;
+    font-family: 'Vazirmatn', sans-serif !important;
+  }
+
+  /* رندر شده توسط Mermaid.js */
+  .mermaid svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .mermaid-diagram {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+  }
+
+  /* فیکس فونت فارسی در نمودار */
+  .mermaid .node text,
+  .mermaid .edgeLabel text,
+  .mermaid .cluster-label text,
+  .mermaid .nodeLabel,
+  .mermaid .edgeLabel,
+  .mermaid text {
+    font-family: 'Vazirmatn', sans-serif !important;
+  }
+
+  /* رنگ‌های نمودار در حالت تاریک */
+  html.dark .mermaid .node rect,
+  html.dark .mermaid .node circle,
+  html.dark .mermaid .node polygon {
+    fill: #334155;
+    stroke: #64748b;
+  }
+
+  html.dark .mermaid .node text {
+    fill: #e2e8f0;
+  }
+
+  html.dark .mermaid .edgePath path {
+    stroke: #64748b;
+  }
+
+  html.dark .mermaid .edgeLabel {
+    background-color: #1e293b;
+    color: #e2e8f0;
+  }
+
+  /* ─────────────────────────────────────────────────────────────── */
+  /* نمودارهای TikZ (SVG تولیدشده)                                  */
+  /* ─────────────────────────────────────────────────────────────── */
+  .tikz-diagram {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 8px;
+  }
+
+  figure.tikz-figure {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  figure.tikz-figure figcaption {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-top: 0.75rem;
+  }
+
+  html.dark figure.tikz-figure figcaption {
+    color: var(--color-text-dark-muted);
+  }
+
+  /* اینورت برای حالت تاریک */
+  html.dark .tikz-diagram {
+    filter: invert(0.88) hue-rotate(180deg);
+  }
+
+  /* ─────────────────────────────────────────────────────────────── */
+  /* جداول                                                          */
+  /* ─────────────────────────────────────────────────────────────── */
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+  }
+
+  .prose th,
+  .prose td {
+    border: 1px solid var(--color-border);
+    padding: 0.75rem 1rem;
+    text-align: right;
+  }
+
+  html[dir="ltr"] .prose th,
+  html[dir="ltr"] .prose td {
+    text-align: left;
+  }
+
+  .prose th {
+    background: var(--color-surface-dim);
+    font-weight: 600;
+  }
+
+  .prose tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.02);
+  }
+
+  html.dark .prose th,
+  html.dark .prose td {
+    border-color: var(--color-border-dark);
+  }
+
+  html.dark .prose th {
+    background: var(--color-surface-dark-dim);
+  }
+
+  html.dark .prose tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  /* ─────────────────────────────────────────────────────────────── */
+  /* کادرهای ویژه (Callouts/Admonitions)                            */
+  /* ─────────────────────────────────────────────────────────────── */
+  .prose blockquote.note,
+  .prose blockquote.tip,
+  .prose blockquote.warning,
+  .prose blockquote.danger,
+  .prose blockquote.info {
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    font-style: normal;
+  }
+
+  html[dir="ltr"] .prose blockquote.note,
+  html[dir="ltr"] .prose blockquote.tip,
+  html[dir="ltr"] .prose blockquote.warning,
+  html[dir="ltr"] .prose blockquote.danger,
+  html[dir="ltr"] .prose blockquote.info {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .prose blockquote.note,
+  .prose blockquote.info {
+    background: #eff6ff;
+    border-color: #3b82f6;
+  }
+
+  .prose blockquote.tip {
+    background: #f0fdf4;
+    border-color: #22c55e;
+  }
+
+  .prose blockquote.warning {
+    background: #fffbeb;
+    border-color: #f59e0b;
+  }
+
+  .prose blockquote.danger {
+    background: #fef2f2;
+    border-color: #ef4444;
+  }
+
+  html.dark .prose blockquote.note,
+  html.dark .prose blockquote.info {
+    background: rgba(59, 130, 246, 0.1);
+  }
+
+  html.dark .prose blockquote.tip {
+    background: rgba(34, 197, 94, 0.1);
+  }
+
+  html.dark .prose blockquote.warning {
+    background: rgba(245, 158, 11, 0.1);
+  }
+
+  html.dark .prose blockquote.danger {
+    background: rgba(239, 68, 68, 0.1);
+  }
+
+  /* ─────────────────────────────────────────────────────────────── */
+  /* بلوک‌های کد                                                    */
+  /* ─────────────────────────────────────────────────────────────── */
+  .prose pre {
+    direction: ltr !important;
+    text-align: left !important;
+    background: #1e293b;
+    color: #e2e8f0;
+  }
+
+  html.dark .prose pre {
+    background: #0f172a;
+    border: 1px solid #334155;
   }
 }
 
@@ -198,7 +440,7 @@
     }
   }
 
-  html.dark & .dark\:border-primary-light {
+  html.dark .dark\:border-primary-light {
     border-color: var(--color-primary-light);
   }
 
@@ -208,7 +450,7 @@
     }
   }
 
-  html.dark & .dark\:text-primary-light {
+  html.dark .dark\:text-primary-light {
     color: var(--color-primary-light);
   }
 
@@ -218,7 +460,7 @@
     }
   }
 
-  html.dark & .dark\:hover\:border-primary-light:hover {
+  html.dark .dark\:hover\:border-primary-light:hover {
     border-color: var(--color-primary-light);
   }
 
@@ -228,7 +470,7 @@
     }
   }
 
-  html.dark & .dark\:hover\:text-primary-light:hover {
+  html.dark .dark\:hover\:text-primary-light:hover {
     color: var(--color-primary-light);
   }
 
@@ -242,7 +484,7 @@
     }
   }
 
-  html.dark & .group:hover .dark\:group-hover\:border-primary-light {
+  html.dark .group:hover .dark\:group-hover\:border-primary-light {
     border-color: var(--color-primary-light);
   }
 

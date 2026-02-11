@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
+import { remarkMermaid } from './src/plugins/remark-mermaid.mjs';
 
 // https://astro.build/config
 export default defineConfig({
@@ -23,5 +24,6 @@ export default defineConfig({
     shikiConfig: {
       theme: 'github-dark',
     },
+    remarkPlugins: [remarkMermaid],
   },
 });

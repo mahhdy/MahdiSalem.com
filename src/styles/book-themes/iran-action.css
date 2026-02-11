@@ -1,0 +1,35 @@
+/* تم خودکار: iran-action */
+
+.book-iran-action {
+  --color-bleurepublique: rgb(0, 85, 164);
+  --color-rougerevolution: rgb(190, 30, 45);
+  --color-orroyal: rgb(218, 165, 32);
+  --color-orroyaldark: rgb(184, 134, 11);
+  --color-vertnapoleon: rgb(0, 102, 51);
+  --color-violetempire: rgb(102, 51, 153);
+  --color-gris: rgb(128, 128, 128);
+  --color-grisclair: rgb(220, 220, 220);
+  --color-bleulight: rgb(230, 240, 250);
+  --color-bleumid: rgb(100, 149, 237);
+  --color-rougelight: rgb(255, 230, 230);
+  --color-rougemid: rgb(220, 100, 100);
+  --color-vertlight: rgb(230, 250, 230);
+  --color-vertmid: rgb(100, 180, 100);
+  --color-violetlight: rgb(245, 235, 255);
+  --color-violetmid: rgb(180, 140, 200);
+  --color-orroyallight: rgb(255, 248, 220);
+  --color-orroyalmid: rgb(238, 201, 0);
+  --color-grislight: rgb(245, 245, 245);
+  --color-scenario1: rgb(52, 152, 219);
+  --color-scenario2: rgb(46, 204, 113);
+  --color-scenario3: rgb(241, 196, 15);
+  --color-scenario4: rgb(230, 126, 34);
+  --color-scenario5: rgb(231, 76, 60);
+  --color-rowgray: rgb(245, 245, 245);
+  --color-headerblue: rgb(0, 85, 164);
+}
+
+
+.book-iran-action { font-family: var(--font-main, 'Vazirmatn', serif); }
+.book-iran-action .tikz-diagram { max-width: 100%; height: auto; margin: 2rem auto; display: block; }
+.book-iran-action figure.tikz-figure { text-align: center; margin: 2rem 0; }
