@@ -1,0 +1,1884 @@
+% ═══════════════════════════════════════════════════════════════════════════════
+%                    تاریخ تحولات فرانسه - فصل [X]
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\documentclass[12pt,a4paper]{book}
+
+% ─────────────────────────── پکیج‌ها ───────────────────────────
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{top=2.5cm, bottom=2.5cm, left=2cm, right=2.5cm, headheight=15pt}
+\usepackage{graphicx}
+\usepackage{array,booktabs,longtable,multirow,colortbl}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc, backgrounds, 
+	fit, decorations.pathmorphing, shadows, patterns}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{pdflscape}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage{pdfpages}
+\usepackage{pdflscape}  % برای صفحات landscape
+\usepackage{hyperref}
+
+% ─────────────────────────── رنگ‌ها ───────────────────────────
+\definecolor{bleurepublique}{RGB}{0, 35, 149}
+\definecolor{rougerevolution}{RGB}{237, 41, 57}
+\definecolor{orroyal}{RGB}{255, 215, 0}
+\definecolor{vertnapoleon}{RGB}{0, 100, 0}
+\definecolor{violetempire}{RGB}{128, 0, 128}
+\definecolor{fondclair}{RGB}{255, 253, 240}
+\definecolor{gris}{RGB}{128, 128, 128}
+\definecolor{grisclair}{RGB}{245, 245, 245}
+\definecolor{noirsombre}{RGB}{30, 30, 30}
+
+% رنگ‌های کمکی
+\definecolor{bleulight}{RGB}{230, 235, 250}
+\definecolor{rougelight}{RGB}{253, 235, 237}
+\definecolor{vertlight}{RGB}{235, 250, 235}
+\definecolor{violetlight}{RGB}{245, 235, 250}
+\definecolor{orroyallight}{RGB}{255, 250, 230}
+\definecolor{grislight}{RGB}{248, 248, 248}
+\definecolor{bleumid}{RGB}{180, 195, 230}
+\definecolor{rougemid}{RGB}{245, 180, 185}
+\definecolor{vertmid}{RGB}{180, 220, 180}
+\definecolor{violetmid}{RGB}{210, 180, 220}
+\definecolor{orroyalmid}{RGB}{255, 240, 180}
+\definecolor{orroyaldark}{RGB}{200, 170, 0}
+
+% ─────────────────────────── فونت فارسی ───────────────────────────
+\usepackage{fontspec}
+\setmainfont{Vazirmatn}
+\usepackage{xepersian}
+\settextfont{Vazirmatn}
+\setdigitfont{Vazirmatn}
+
+% ─────────────────────────── هایپرلینک ───────────────────────────
+\hypersetup{
+	colorlinks=true,
+	linkcolor=bleurepublique,
+	urlcolor=bleurepublique,
+	citecolor=vertnapoleon
+}
+
+% ─────────────────────────── کادرها ───────────────────────────
+\newtcolorbox{kholasebox}[1][]{enhanced,breakable,colback=bleulight,
+	colframe=bleurepublique,coltitle=white,fonttitle=\bfseries\large,
+	title={#1},boxrule=2pt,arc=4pt,left=10pt,right=10pt,top=10pt,bottom=10pt,
+	drop shadow={opacity=0.3}}
+
+\newtcolorbox{naghlbox}[1][]{enhanced,breakable,colback=orroyallight,
+	colframe=orroyaldark,coltitle=black,fonttitle=\bfseries,title={#1},
+	boxrule=1.5pt,arc=3pt,borderline west={4pt}{0pt}{orroyal},
+	left=15pt,right=10pt,top=8pt,bottom=8pt}
+
+\newtcolorbox{olgoobox}[1][]{enhanced,breakable,colback=vertlight,
+	colframe=vertnapoleon,coltitle=white,fonttitle=\bfseries,title={#1},
+	boxrule=1.5pt,arc=4pt,left=10pt,right=10pt,top=8pt,bottom=8pt,
+	before upper={\parindent15pt}}
+
+\newtcolorbox{enghelabbox}[1][]{enhanced,breakable,colback=rougelight,
+	colframe=rougerevolution,coltitle=white,fonttitle=\bfseries,title={#1},
+	boxrule=2pt,arc=4pt,left=10pt,right=10pt,top=8pt,bottom=8pt}
+
+\newtcolorbox{empirebox}[1][]{enhanced,breakable,colback=violetlight,
+	colframe=violetempire,coltitle=white,fonttitle=\bfseries,title={#1},
+	boxrule=1.5pt,arc=4pt,left=10pt,right=10pt,top=8pt,bottom=8pt}
+
+\newtcolorbox{noktebox}[1][]{enhanced,colback=grisclair,colframe=gris,
+	fonttitle=\bfseries,title={#1},boxrule=1pt,arc=3pt,left=8pt,right=8pt}
+
+% ─────────────────────────── صفحه‌آرایی ───────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RO]{\leftmark}
+\fancyhead[LE]{\rightmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\setstretch{1.5}
+
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries\color{bleurepublique}}
+{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titleformat{\section}
+{\normalfont\Large\bfseries\color{bleurepublique}}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\large\bfseries\color{bleurepublique}}{\thesubsection}{1em}{}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\begin{document}
+%══════════════════════════════════════════════════════════════════════════════
+% فصل ۶: جمهوری سوم (۱۸۷۰-۱۹۴۰)
+%══════════════════════════════════════════════════════════════════════════════
+
+\chapter{جمهوری سوم (۱۸۷۰-۱۹۴۰)}
+\label{chap:third-republic}
+
+\begin{kholasebox}
+	\textbf{خلاصه فصل:}
+	
+	جمهوری سوم با ۷۰ سال عمر، طولانی‌ترین رژیم فرانسه پس از انقلاب بود. این جمهوری که از شکست نظامی زاده شد و در شکست نظامی مُرد، دستاوردهای ماندگاری برجای گذاشت: تثبیت نهایی جمهوری، جدایی کلیسا و دولت، آموزش عمومی، و پیروزی در جنگ جهانی اول.
+	
+	\textbf{دوره‌بندی:}
+	\begin{itemize}[nosep,rightmargin=0pt]
+		\item \textbf{تأسیس دشوار (۱۸۷۰-۱۸۷۹):} کمون، سلطنت‌طلبان، جمهوری محافظه‌کار
+		\item \textbf{جمهوری فرصت‌طلب (۱۸۷۹-۱۸۹۹):} گامبتا، فری، بحران‌ها
+		\item \textbf{جمهوری رادیکال (۱۸۹۹-۱۹۱۴):} ماجرای دریفوس، لائیسیته
+		\item \textbf{جنگ بزرگ (۱۹۱۴-۱۹۱۸):} اتحاد ملی، پیروزی پرهزینه
+		\item \textbf{بین دو جنگ (۱۹۱۸-۱۹۴۰):} بی‌ثباتی، بحران، سقوط
+	\end{itemize}
+	
+	\textbf{مفاهیم کلیدی:} لائیسیته، رادیکالیسم، ناسیونالیسم، ضدکلریکالیسم، رِوانشیسم، اتحاد مقدس، جبهه مردمی.
+\end{kholasebox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{زایش در آتش: ۱۸۷۰-۱۸۷۱}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{اعلام جمهوری}
+
+در ۴ سپتامبر ۱۸۷۰، با رسیدن خبر اسارت ناپلئون سوم در سدان، جمهوری سوم در پاریس اعلام شد. اما این جمهوری در شرایطی متولد می‌شد که نیمی از کشور در اشغال دشمن بود.
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	box/.style={rectangle, rounded corners, draw=rougerevolution, fill=rougelight,
+		minimum width=3.5cm, minimum height=1.5cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,7) {دولت دفاع ملی (سپتامبر ۱۸۷۰ - فوریه ۱۸۷۱)};
+	
+	% Members
+	\node[box] (trochu) at (2,4.5) {\textbf{ژنرال تروشو}\\رئیس، فرماندهی نظامی};
+	\node[box] (favre) at (6,4.5) {\textbf{ژول فاور}\\امور خارجه};
+	\node[box] (gambetta) at (10,4.5) {\textbf{گامبتا}\\کشور، جنگ\\(از تور)};
+	\node[box] (simon) at (4,2) {\textbf{ژول سیمون}\\آموزش};
+	\node[box] (picard) at (8,2) {\textbf{ارنست پیکار}\\دارایی};
+	
+	% Context
+	\node[rectangle, draw=gris, fill=grisclair, rounded corners, align=center] at (12,2) {
+		\textbf{وضعیت:}\\
+		پاریس محاصره\\
+		نیمی از فرانسه اشغال‌شده\\
+		ارتش متلاشی
+	};
+	
+\end{tikzpicture}
+
+\subsection{محاصره پاریس}
+
+از ۱۹ سپتامبر ۱۸۷۰، پاریس در محاصره ارتش پروس قرار گرفت. محاصره‌ای که ۱۳۲ روز طول کشید:
+
+\begin{enghelabbox}
+	\textbf{محاصره پاریس (۱۹ سپتامبر ۱۸۷۰ - ۲۸ ژانویه ۱۸۷۱)}
+	
+	\begin{itemize}[nosep]
+		\item \textbf{جمعیت محاصره‌شده:} ۲ میلیون نفر
+		\item \textbf{گارد ملی:} ۳۵۰,۰۰۰ نفر مسلح (شهروندان)
+		\item \textbf{قحطی:} مصرف سگ، گربه، موش، حیوانات باغ‌وحش
+		\item \textbf{قیمت‌ها:} گوشت اسب ۵ برابر، موش ۲ فرانک
+		\item \textbf{بمباران:} از ۵ ژانویه ۱۸۷۱، ۱۲,۰۰۰ گلوله توپ
+		\item \textbf{تلفات غیرنظامی:} حدود ۴۷,۰۰۰ نفر (سرما، گرسنگی، بیماری)
+		\item \textbf{فرار گامبتا:} با بالون از پاریس خارج شد تا مقاومت را از شهرستان‌ها سازمان دهد
+	\end{itemize}
+\end{enghelabbox}
+
+\begin{naghlbox}
+	«پاریس گرسنگی می‌کشد اما تسلیم نمی‌شود. پاریس بمباران می‌شود اما پاریس مقاومت می‌کند.»
+	
+	\hfill --- \textit{ویکتور هوگو، ژانویه ۱۸۷۱}
+\end{naghlbox}
+
+\subsection{آتش‌بس و انتخابات}
+
+در ۲۸ ژانویه ۱۸۷۱، دولت دفاع ملی آتش‌بس امضا کرد. بیسمارک خواستار انتخابات برای تشکیل دولتی بود که بتواند صلح امضا کند. انتخابات ۸ فوریه ۱۸۷۱ نتایج شگفت‌انگیزی داشت:
+
+\begin{table}[htbp]
+	\centering
+	\caption{نتایج انتخابات ۸ فوریه ۱۸۷۱}
+	\label{tab:elections-1871}
+	\begin{tabular}{|r|c|c|}
+		\hline
+		\rowcolor{bleumid}
+		\textcolor{white}{\textbf{گرایش}} & \textcolor{white}{\textbf{کرسی}} & \textcolor{white}{\textbf{موضع درباره جنگ}} \\
+		\hline
+		سلطنت‌طلبان (اورلئانیست و لژیتیمیست) & ۴۰۰ & صلح \\
+		\hline
+		\rowcolor{bleulight}
+		جمهوری‌خواهان میانه‌رو & ۱۵۰ & صلح \\
+		\hline
+		جمهوری‌خواهان رادیکال & ۸۰ & ادامه جنگ \\
+		\hline
+		\rowcolor{bleulight}
+		بناپارتیست & ۲۰ & --- \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{noktebox}
+	\textbf{چرا سلطنت‌طلبان پیروز شدند؟}
+	
+	سلطنت‌طلبان نه به دلیل محبوبیت سلطنت، بلکه به دلیل خواست صلح پیروز شدند. مردم روستاها که از جنگ خسته بودند، به نامزدهای طرفدار صلح رأی دادند که اتفاقاً اکثراً سلطنت‌طلب بودند. جمهوری‌خواهان که خواهان ادامه جنگ بودند، در شهرها پیروز شدند اما در روستاها شکست خوردند.
+\end{noktebox}
+
+\subsection{آدولف تی‌یر و معاهده فرانکفورت}
+
+مجلس ملی در بوردو تشکیل شد و آدولف تی‌یر را به عنوان «رئیس قوه مجریه جمهوری فرانسه» برگزید. تی‌یر، سیاستمدار کهنه‌کار اورلئانیست، مأموریت دردناکی داشت: مذاکره صلح.
+
+\begin{table}[htbp]
+	\centering
+	\caption{معاهده فرانکفورت (۱۰ مه ۱۸۷۱)}
+	\label{tab:frankfurt-treaty}
+	\begin{tabular}{|r|p{9cm}|}
+		\hline
+		\rowcolor{rougemid}
+		\textcolor{white}{\textbf{بند}} & \textcolor{white}{\textbf{محتوا}} \\
+		\hline
+		\textbf{از دست دادن خاک} & آلزاس (به‌جز بلفور) و بخشی از لورن به آلمان \\
+		\hline
+		\rowcolor{rougelight}
+		\textbf{غرامت} & ۵ میلیارد فرانک طلا \\
+		\hline
+		\textbf{اشغال} & نیروهای آلمانی تا پرداخت کامل غرامت می‌مانند \\
+		\hline
+		\rowcolor{rougelight}
+		\textbf{رژه پیروزی} & ارتش آلمان از شانزه‌لیزه رژه می‌رود \\
+		\hline
+		\textbf{جمعیت از دست رفته} & ۱.۶ میلیون نفر \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{naghlbox}
+	«همیشه به آن فکر کنید، هرگز از آن سخن نگویید.»
+	
+	\hfill --- \textit{گامبتا، درباره آلزاس-لورن}
+\end{naghlbox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{کمون پاریس (مارس-مه ۱۸۷۱)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{ریشه‌های شورش}
+
+پاریس که ۱۳۲ روز در محاصره مقاومت کرده بود، تسلیم ناگهانی و صلح تحقیرآمیز را نپذیرفت. چندین عامل زمینه‌ساز شورش بود:
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	factor/.style={rectangle, rounded corners, draw=rougerevolution, fill=rougelight,
+		minimum width=3cm, minimum height=1.2cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,7) {عوامل شکل‌گیری کمون};
+	
+	% Center
+	\node[factor, fill=rougemid, text=white, minimum width=3.5cm, minimum height=1.5cm] (center) at (7,4) 
+	{\textbf{کمون پاریس}\\۱۸ مارس ۱۸۷۱};
+	
+	% Factors
+	\node[factor] (f1) at (2,6) {تحقیر ملی\\شکست و اشغال};
+	\node[factor] (f2) at (7,6.5) {گارد ملی مسلح\\۲۰۰,۰۰۰ تفنگ\\۴۰۰ توپ};
+	\node[factor] (f3) at (12,6) {نفرت از سلطنت‌طلبان\\مجلس بوردو};
+	\node[factor] (f4) at (2,2) {بحران اقتصادی\\بیکاری، بدهی};
+	\node[factor] (f5) at (7,1.5) {تصمیمات تی‌یر\\قطع حقوق گارد\\سررسید بدهی‌ها};
+	\node[factor] (f6) at (12,2) {سنت انقلابی\\۱۷۹۲، ۱۸۴۸};
+	
+	% Arrows
+	\draw[->, thick, rougerevolution] (f1) -- (center);
+	\draw[->, thick, rougerevolution] (f2) -- (center);
+	\draw[->, thick, rougerevolution] (f3) -- (center);
+	\draw[->, thick, rougerevolution] (f4) -- (center);
+	\draw[->, thick, rougerevolution] (f5) -- (center);
+	\draw[->, thick, rougerevolution] (f6) -- (center);
+	
+\end{tikzpicture}
+
+\subsection{۱۸ مارس: آغاز شورش}
+
+در ۱۸ مارس ۱۸۷۱، تی‌یر دستور داد توپ‌های گارد ملی در مونمارتر ضبط شوند. سربازان فرستاده‌شده با مردم برادری کردند و دو ژنرال (لکومت و توما) به دست جمعیت خشمگین کشته شدند. تی‌یر و دولت به ورسای گریختند.
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	event/.style={rectangle, rounded corners, draw=rougerevolution, fill=rougelight,
+		minimum width=3.5cm, minimum height=1.5cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,7) {وقایع ۱۸ مارس ۱۸۷۱};
+	
+	% Timeline
+	\draw[very thick, rougerevolution] (0,5) -- (14,5);
+	
+	% Events
+	\node[event] (e1) at (2,3) {\textbf{صبح زود}\\حمله به توپ‌های\\مونمارتر};
+	\node[event] (e2) at (6,3) {\textbf{صبح}\\مقاومت زنان\\برادری سربازان};
+	\node[event] (e3) at (10,3) {\textbf{بعدازظهر}\\قتل ژنرال‌ها\\فرار دولت};
+	\node[event, fill=rougemid, text=white] (e4) at (13,3) {\textbf{شب}\\کمیته مرکزی\\گارد ملی در قدرت};
+	
+	% Markers
+	\foreach \x in {2, 6, 10, 13} {
+		\fill[rougerevolution] (\x,5) circle (0.12);
+		\draw[->, thick, rougerevolution] (\x,5) -- (\x,4);
+	}
+	
+\end{tikzpicture}
+
+\subsection{ساختار و اقدامات کمون}
+
+در ۲۶ مارس انتخابات برگزار شد و شورای کمون با ۹۰ عضو تشکیل شد. کمون ترکیبی بود از گرایش‌های مختلف چپ:
+
+\begin{table}[htbp]
+	\centering
+	\caption{ترکیب سیاسی کمون پاریس}
+	\label{tab:commune-composition}
+	\begin{tabular}{|r|c|p{5cm}|}
+		\hline
+		\rowcolor{rougemid}
+		\textcolor{white}{\textbf{گرایش}} & \textcolor{white}{\textbf{تعداد تقریبی}} & \textcolor{white}{\textbf{ویژگی}} \\
+		\hline
+		ژاکوبن‌ها/بلانکیست‌ها & ۳۵ & انقلاب متمرکز، دیکتاتوری موقت \\
+		\hline
+		\rowcolor{rougelight}
+		پرودونیست‌ها & ۲۵ & فدرالیسم، تعاونی، ضد دولت \\
+		\hline
+		انترناسیونالیست‌ها & ۱۵ & سوسیالیسم، طبقه کارگر \\
+		\hline
+		\rowcolor{rougelight}
+		جمهوری‌خواهان رادیکال & ۱۵ & جمهوری دموکراتیک و اجتماعی \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{olgoobox}
+	\textbf{اقدامات کمون پاریس (۷۲ روز)}
+	
+	\textbf{اقدامات اجتماعی:}
+	\begin{itemize}[nosep]
+		\item تعلیق پرداخت اجاره‌بها (موراتوریوم)
+		\item بازگرداندن اشیای گروگذاشته‌شده در رهنی‌ها (تا ۲۰ فرانک)
+		\item لغو کار شبانه نانوایان
+		\item ممنوعیت جریمه کارفرمایان بر کارگران
+		\item واگذاری کارگاه‌های رهاشده به تعاونی‌های کارگری
+	\end{itemize}
+	
+	\textbf{اقدامات سیاسی:}
+	\begin{itemize}[nosep]
+		\item جدایی کلیسا و دولت
+		\item انتخابی‌شدن قضات
+		\item حداکثر حقوق کارمندان: ۶,۰۰۰ فرانک (برابر کارگر ماهر)
+		\item حق عزل نمایندگان توسط رأی‌دهندگان
+	\end{itemize}
+	
+	\textbf{اقدامات نمادین:}
+	\begin{itemize}[nosep]
+		\item تخریب ستون واندوم (نماد ناپلئونی)
+		\item پرچم سرخ به جای سه‌رنگ
+		\item تقویم انقلابی
+	\end{itemize}
+\end{olgoobox}
+
+\subsection{هفته خونین}
+
+ارتش ورسای به فرماندهی مارشال مک‌ماهون، پس از بازسازی، در ۲۱ مه ۱۸۷۱ وارد پاریس شد. یک هفته جنگ خیابانی—«هفته خونین» (\lr{Semaine sanglante})—در تاریخ فرانسه بی‌سابقه بود.
+
+\begin{enghelabbox}
+	\textbf{هفته خونین (۲۱-۲۸ مه ۱۸۷۱)}
+	
+	\begin{itemize}[nosep]
+		\item \textbf{کشته‌های کموناردها:} ۲۰,۰۰۰ تا ۳۰,۰۰۰ نفر
+		\item \textbf{اعدام‌های صحرایی:} هزاران نفر بدون محاکمه
+		\item \textbf{دیوار فدره‌ها:} ۱۴۷ نفر در قبرستان پرلاشز اعدام شدند
+		\item \textbf{بازداشت‌ها:} ۴۳,۵۰۰ نفر
+		\item \textbf{محاکمات:} ۱۰,۰۰۰ محکومیت
+		\item \textbf{تبعید:} ۴,۵۰۰ نفر به کالدونی جدید
+		\item \textbf{آتش‌سوزی‌ها:} تویلری، شهرداری، دادگستری (توسط کموناردها یا توپ‌باران)
+	\end{itemize}
+	
+	\textbf{مقایسه:} کشتار هفته خونین از تمام اعدام‌های دوره ترور (۱۷۹۳-۱۷۹۴) بیشتر بود.
+\end{enghelabbox}
+
+\begin{naghlbox}
+	«چه قتل‌عام! چه خون‌ریزی! چه قساوتی! و اینها کسانی هستند که خود را متمدن می‌نامند!»
+	
+	\hfill --- \textit{لوئیز میشل، «کموناردِ سرخ»}
+\end{naghlbox}
+
+\subsection{میراث کمون}
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	legacy/.style={rectangle, rounded corners, minimum width=4cm, minimum height=1.5cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,7) {میراث دوگانه کمون پاریس};
+	
+	% Left - For the Left
+	\node[legacy, draw=rougerevolution, fill=rougelight] at (3,5) 
+	{\textbf{برای چپ:}\\اولین حکومت کارگری\\نماد انقلاب};
+	\node[legacy, draw=rougerevolution, fill=rougelight] at (3,3) 
+	{الهام‌بخش\\مارکس، لنین، مائو};
+	\node[legacy, draw=rougerevolution, fill=rougelight] at (3,1) 
+	{دیوار فدره‌ها\\زیارتگاه چپ};
+	
+	% Right - For the Right
+	\node[legacy, draw=orroyaldark, fill=orroyallight] at (11,5) 
+	{\textbf{برای راست:}\\هرج‌ومرج، آتش‌سوزی\\«خطر سرخ»};
+	\node[legacy, draw=orroyaldark, fill=orroyallight] at (11,3) 
+	{توجیه سرکوب\\نظم بر آزادی};
+	\node[legacy, draw=orroyaldark, fill=orroyallight] at (11,1) 
+	{ساکره‌کور\\کفاره گناهان پاریس};
+	
+	% Center divide
+	\draw[very thick, dashed] (7,6) -- (7,0);
+	
+\end{tikzpicture}
+
+\begin{naghlbox}
+	«کمون شکلی بود که سرانجام یافته شد و تحت آن رهایی اقتصادی کار می‌توانست به انجام رسد.»
+	
+	\hfill --- \textit{کارل مارکس، «جنگ داخلی در فرانسه»}
+\end{naghlbox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{تأسیس دشوار جمهوری (۱۸۷۱-۱۸۷۹)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{جمهوری بدون جمهوری‌خواهان}
+
+پارادوکس بزرگ: جمهوری سوم توسط مجلسی تأسیس شد که اکثریت آن سلطنت‌طلب بود. چرا سلطنت احیا نشد؟
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	reason/.style={rectangle, rounded corners, draw=bleurepublique, fill=bleulight,
+		minimum width=4.5cm, minimum height=1.5cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,7) {چرا سلطنت احیا نشد؟};
+	
+	% Reasons
+	\node[reason] (r1) at (3,5) {\textbf{انشعاب سلطنت‌طلبان}\\لژیتیمیست vs اورلئانیست\\کنت شامبور vs کنت پاریس};
+	
+	\node[reason] (r2) at (11,5) {\textbf{سرسختی شامبور}\\امتناع از پرچم سه‌رنگ\\«هانری پنجم» پرچم سفید می‌خواست};
+	
+	\node[reason] (r3) at (3,2.5) {\textbf{انتظار برای مرگ}\\شامبور بدون فرزند بود\\اورلئانیست‌ها منتظر بودند};
+	
+	\node[reason] (r4) at (11,2.5) {\textbf{رشد جمهوری‌خواهی}\\هر انتخابات میان‌دوره‌ای\\پیروزی جمهوری‌خواهان};
+	
+	% Result
+	\node[rectangle, rounded corners, draw=vertnapoleon, fill=vertlight,
+	minimum width=6cm, minimum height=1.2cm, align=center] at (7,0) 
+	{\textbf{نتیجه:} جمهوری «موقت» که دائمی شد};
+	
+	% Arrows
+	\draw[->, thick, bleurepublique] (r1) -- (7,0);
+	\draw[->, thick, bleurepublique] (r2) -- (7,0);
+	\draw[->, thick, bleurepublique] (r3) -- (7,0);
+	\draw[->, thick, bleurepublique] (r4) -- (7,0);
+	
+\end{tikzpicture}
+
+\subsection{دولت تی‌یر (۱۸۷۱-۱۸۷۳)}
+
+تی‌یر با کارایی غرامات جنگی را پرداخت و آخرین سرباز آلمانی در سپتامبر ۱۸۷۳ خاک فرانسه را ترک کرد—دو سال زودتر از موعد. اما وقتی تی‌یر آشکارا از جمهوری حمایت کرد، اکثریت سلطنت‌طلب مجلس او را برکنار کرد (۲۴ مه ۱۸۷۳).
+
+\subsection{جمهوری اخلاقی مک‌ماهون (۱۸۷۳-۱۸۷۹)}
+
+مارشال مک‌ماهون، سلطنت‌طلب کاتولیک، به ریاست جمهوری رسید با این امید که سلطنت را آماده کند. قانون «سپتنا» (۱۸۷۳) دوره ریاست‌جمهوری را ۷ سال تعیین کرد—به امید اینکه شامبور در این مدت بمیرد.
+
+\begin{noktebox}
+	\textbf{«نظم اخلاقی»:}
+	
+	مک‌ماهون و دولت‌های محافظه‌کارش سیاست «نظم اخلاقی» را پیش گرفتند: حمایت از کلیسا، محدودیت مطبوعات، تصفیه جمهوری‌خواهان از ادارات. ساخت کلیسای ساکره‌کور در مونمارتر (شروع ۱۸۷۵) نماد این دوره بود—کفاره برای «گناهان» کمون و شکست فرانسه.
+\end{noktebox}
+
+\subsection{قوانین اساسی ۱۸۷۵}
+
+در ژانویه-ژوئیه ۱۸۷۵، مجلس سه قانون تصویب کرد که مجموعاً قانون اساسی جمهوری سوم را تشکیل دادند:
+
+\begin{table}[htbp]
+	\centering
+	\caption{ساختار نهادی جمهوری سوم}
+	\label{tab:third-republic-structure}
+	\begin{tabular}{|r|p{9cm}|}
+		\hline
+		\rowcolor{bleumid}
+		\textcolor{white}{\textbf{نهاد}} & \textcolor{white}{\textbf{ویژگی‌ها}} \\
+		\hline
+		\textbf{رئیس‌جمهور} & انتخاب توسط دو مجلس، دوره ۷ ساله، قابل انتخاب مجدد، حق انحلال مجلس (با موافقت سنا) \\
+		\hline
+		\rowcolor{bleulight}
+		\textbf{مجلس نمایندگان} & انتخاب مستقیم با رأی همگانی مردان، دوره ۴ ساله \\
+		\hline
+		\textbf{سنا} & ۳۰۰ عضو: ۲۲۵ انتخابی توسط هیئت‌های انتخاباتی، ۷۵ مادام‌العمر \\
+		\hline
+		\rowcolor{bleulight}
+		\textbf{دولت} & مسئول در برابر هر دو مجلس \\
+		\hline
+		\textbf{کلمه «جمهوری»} & با اصلاحیه والون (۳۰ ژانویه ۱۸۷۵) با یک رأی اکثریت (۳۵۳ به ۳۵۲) وارد متن شد \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{بحران ۱۶ مه ۱۸۷۷}
+
+در ۱۶ مه ۱۸۷۷، مک‌ماهون نخست‌وزیر جمهوری‌خواه (ژول سیمون) را برکنار کرد و با موافقت سنا، مجلس را منحل ساخت. این «کودتای قانونی» بحرانی اساسی آفرید.
+
+\begin{enghelabbox}
+	\textbf{بحران ۱۶ مه ۱۸۷۷}
+	
+	\begin{itemize}[nosep]
+		\item \textbf{اقدام مک‌ماهون:} برکناری سیمون، انتصاب دوک دو برولی، انحلال مجلس
+		\item \textbf{واکنش جمهوری‌خواهان:} بیانیه ۳۶۳ نماینده (مانیفست)
+		\item \textbf{سخن گامبتا:} «وقتی فرانسه سخن گفت، یا باید تسلیم شد یا استعفا داد»
+		\item \textbf{انتخابات اکتبر ۱۸۷۷:} علی‌رغم فشار دولت، جمهوری‌خواهان پیروز شدند (۳۲۰ کرسی)
+		\item \textbf{نتیجه:} مک‌ماهون تسلیم شد، سپس در ۱۸۷۹ استعفا داد
+	\end{itemize}
+	
+	\textbf{پیامد ماندگار:} هیچ رئیس‌جمهوری دیگری جرئت انحلال مجلس را نداشت. قدرت رئیس‌جمهور عملاً تشریفاتی شد.
+\end{enghelabbox}
+
+\subsection{پیروزی نهایی (۱۸۷۹)}
+
+در ژانویه ۱۸۷۹، جمهوری‌خواهان اکثریت سنا را نیز به دست آوردند. مک‌ماهون استعفا داد و ژول گرِوی، جمهوری‌خواه، رئیس‌جمهور شد. مجلس از ورسای به پاریس بازگشت. ۱۴ ژوئیه روز ملی شد. «مارسی‌یز» سرود ملی شد. جمهوری سرانجام تثبیت شده بود.
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{جمهوری فرصت‌طلب (۱۸۷۹-۱۸۹۹)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{جمهوری‌خواهان در قدرت}
+
+«فرصت‌طلبان» (\lr{Opportunistes}) نامی بود که رادیکال‌ها به جمهوری‌خواهان میانه‌رو دادند—کسانی که معتقد بودند اصلاحات باید تدریجی و در «فرصت» مناسب باشد، نه همه با هم.
+
+\begin{table}[htbp]
+	\centering
+	\caption{رهبران جمهوری فرصت‌طلب}
+	\label{tab:opportunist-leaders}
+	\begin{tabular}{|r|c|p{6cm}|}
+		\hline
+		\rowcolor{bleumid}
+		\textcolor{white}{\textbf{نام}} & \textcolor{white}{\textbf{سال‌ها}} & \textcolor{white}{\textbf{نقش و ویژگی}} \\
+		\hline
+		لئون گامبتا & ۱۸۳۸-۱۸۸۲ & رهبر کاریزماتیک، نماد مقاومت ۱۸۷۰ \\
+		\hline
+		\rowcolor{bleulight}
+		ژول فری & ۱۸۳۲-۱۸۹۳ & آموزش لائیک، امپراتوری استعماری \\
+		\hline
+		ژول گرِوی & ۱۸۰۷-۱۸۹۱ & رئیس‌جمهور ۱۸۷۹-۱۸۸۷، نماد ثبات \\
+		\hline
+		\rowcolor{bleulight}
+		شارل دو فری‌سینه & ۱۸۲۸-۱۹۲۳ & چهار بار نخست‌وزیر، توسعه راه‌آهن \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{اصلاحات بنیادین}
+
+\subsubsection{قوانین آزادی‌ها}
+
+\begin{itemize}
+	\item \textbf{۱۸۸۱:} آزادی مطبوعات (لغو مجوز قبلی و تمبر)
+	\item \textbf{۱۸۸۱:} آزادی تجمعات عمومی
+	\item \textbf{۱۸۸۴:} آزادی اتحادیه‌های صنفی (سندیکاها)
+	\item \textbf{۱۸۸۴:} قانون‌شهرداری‌ها (انتخاب شهردار توسط شورا)
+	\item \textbf{۱۸۸۴:} اصلاح سنا (حذف سناتورهای مادام‌العمر)
+\end{itemize}
+
+\subsubsection{قوانین ژول فری: مدرسه لائیک}
+
+مهم‌ترین میراث جمهوری فرصت‌طلب، انقلاب آموزشی ژول فری بود:
+
+\begin{olgoobox}
+	\textbf{قوانین مدرسه ژول فری (۱۸۸۱-۱۸۸۲)}
+	
+	\begin{itemize}[nosep]
+		\item \textbf{رایگان (۱۶ ژوئن ۱۸۸۱):} آموزش ابتدایی کاملاً رایگان
+		\item \textbf{اجباری (۲۸ مارس ۱۸۸۲):} آموزش از ۶ تا ۱۳ سالگی اجباری
+		\item \textbf{لائیک (۲۸ مارس ۱۸۸۲):} آموزش مذهبی از مدارس دولتی حذف شد
+	\end{itemize}
+	
+	\textbf{آموزش اخلاق مدنی} جایگزین آموزش دینی شد.
+	
+	\textbf{اهداف:}
+	\begin{enumerate}[nosep]
+		\item تربیت شهروندان جمهوری‌خواه
+		\item کاهش نفوذ کلیسا
+		\item ایجاد هویت ملی مشترک
+		\item مدرنیزاسیون جامعه
+	\end{enumerate}
+	
+	\textbf{نتایج:} نرخ باسوادی از ۶۰٪ (۱۸۷۰) به ۹۵٪ (۱۹۱۰)
+\end{olgoobox}
+
+\begin{naghlbox}
+	«معلمان، شما مأموریت بزرگی دارید: از کودکان فرانسوی، شهروندان بسازید.»
+	
+	\hfill --- \textit{ژول فری}
+\end{naghlbox}
+
+\subsubsection{امپراتوری استعماری}
+
+ژول فری همچنین معمار امپراتوری دوم استعماری فرانسه بود:
+
+\begin{table}[htbp]
+	\centering
+	\caption{توسعه استعماری دوره جمهوری سوم}
+	\label{tab:colonial-expansion}
+	\begin{tabular}{|c|r|c|}
+		\hline
+		\rowcolor{violetmid}
+		\textcolor{white}{\textbf{سال}} & \textcolor{white}{\textbf{منطقه}} & \textcolor{white}{\textbf{نوع}} \\
+		\hline
+		۱۸۸۱ & تونس & تحت‌الحمایه \\
+		\hline
+		\rowcolor{violetlight}
+		۱۸۸۳-۱۸۸۵ & ویتنام، لائوس، کامبوج & مستعمره (هندوچین) \\
+		\hline
+		۱۸۸۵ & کنگو & مستعمره \\
+		\hline
+		\rowcolor{violetlight}
+		۱۸۸۵ & ماداگاسکار & تحت‌الحمایه (مستعمره ۱۸۹۶) \\
+		\hline
+		۱۸۸۱-۱۸۹۸ & آفریقای غربی و مرکزی & گسترش تدریجی \\
+		\hline
+		\rowcolor{violetlight}
+		۱۹۱۲ & مراکش & تحت‌الحمایه \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{noktebox}
+	\textbf{توجیهات استعمار:}
+	
+	ژول فری استعمار را با چند استدلال توجیه می‌کرد:
+	\begin{itemize}[nosep]
+		\item \textbf{اقتصادی:} بازار برای صنایع فرانسه
+		\item \textbf{استراتژیک:} رقابت با انگلستان و آلمان
+		\item \textbf{تمدنی:} «نژادهای برتر وظیفه‌ای در قبال نژادهای پست‌تر دارند»
+	\end{itemize}
+	این دیدگاه، هرچند امروز نژادپرستانه ارزیابی می‌شود، در زمان خود حتی توسط بسیاری از چپ‌ها پذیرفته بود.
+\end{noktebox}
+
+\subsection{بحران‌های دهه ۱۸۸۰}
+
+\subsubsection{بحران بولانژه (۱۸۸۶-۱۸۸۹)}
+
+ژنرال ژرژ بولانژه، وزیر جنگ محبوب، تهدیدی جدی برای جمهوری شد:
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	event/.style={rectangle, rounded corners, draw=violetempire, fill=violetlight,
+		minimum width=3cm, minimum height=1.2cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,7) {بحران بولانژه (۱۸۸۶-۱۸۸۹)};
+	
+	% Timeline
+	\draw[very thick, violetempire] (0,5) -- (14,5);
+	
+	% Events
+	\node[event] (e1) at (1.5,3) {۱۸۸۶\\وزیر جنگ\\محبوبیت ملی};
+	
+	\node[event] (e2) at (5,3) {۱۸۸۷\\برکناری\\«ژنرال انتقام»};
+	
+	\node[event] (e3) at (8.5,3) {۱۸۸۸\\پیروزی‌های\\انتخاباتی متعدد};
+	
+	\node[event] (e4) at (12,3) {ژانویه ۱۸۸۹\\پیروزی در پاریس\\انتظار کودتا};
+	
+	% Markers
+	\foreach \x in {1.5, 5, 8.5, 12} {
+		\fill[violetempire] (\x,5) circle (0.12);
+		\draw[->, thick, violetempire] (\x,5) -- (\x,4);
+	}
+	
+	% Outcome
+	\node[rectangle, draw=bleurepublique, fill=bleulight, rounded corners, align=center] at (7,0.5) 
+	{\textbf{نتیجه:} بولانژه کودتا نکرد، فرار کرد، و در ۱۸۹۱ خودکشی کرد.\\جمهوری نجات یافت اما ضعف‌هایش آشکار شد.};
+	
+\end{tikzpicture}
+
+\begin{noktebox}
+	\textbf{بولانژیسم چه بود؟}
+	
+	ترکیبی از:
+	\begin{itemize}[nosep]
+		\item ناسیونالیسم و رِوانشیسم (انتقام از آلمان)
+		\item عوام‌گرایی ضد پارلمانی
+		\item حمایت از طیف‌های متضاد: سلطنت‌طلبان، رادیکال‌ها، سوسیالیست‌ها
+		\item «رأی‌دادن به بولانژه» نماد اعتراض به نظام شد
+	\end{itemize}
+\end{noktebox}
+
+\subsubsection{رسوایی پاناما (۱۸۹۲)}
+
+ورشکستگی شرکت کانال پاناما و افشای رشوه‌خواری نمایندگان مجلس، اعتماد به جمهوری را تضعیف کرد. حدود ۱۵۰ نماینده متهم شدند، هرچند فقط تعداد کمی محکوم شدند.
+
+\subsubsection{تروریسم آنارشیست (۱۸۹۲-۱۸۹۴)}
+
+موجی از بمب‌گذاری آنارشیست‌ها فرانسه را تکان داد:
+\begin{itemize}
+	\item ۱۸۹۲: بمب راوشول در خانه قاضی
+	\item ۱۸۹۳: بمب وایان در مجلس
+	\item ۱۸۹۴: ترور رئیس‌جمهور سادی کارنو توسط کازریو
+\end{itemize}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{ماجرای دریفوس (۱۸۹۴-۱۹۰۶)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{آغاز ماجرا}
+
+در اکتبر ۱۸۹۴، کاپیتان آلفرد دریفوس، افسر یهودی ستاد ارتش، به اتهام جاسوسی برای آلمان بازداشت شد. محاکمه‌ای سری و با مدارک جعلی به محکومیت او انجامید.
+
+\begin{table}[htbp]
+	\centering
+	\caption{مراحل ماجرای دریفوس}
+	\label{tab:dreyfus-stages}
+	\begin{tabular}{|c|p{9cm}|}
+		\hline
+		\rowcolor{rougemid}
+		\textcolor{white}{\textbf{تاریخ}} & \textcolor{white}{\textbf{رویداد}} \\
+		\hline
+		اکتبر ۱۸۹۴ & بازداشت دریفوس \\
+		\hline
+		\rowcolor{rougelight}
+		دسامبر ۱۸۹۴ & محکومیت به حبس ابد در جزیره شیطان \\
+		\hline
+		ژانویه ۱۸۹۵ & مراسم تحقیرآمیز خلع درجه \\
+		\hline
+		\rowcolor{rougelight}
+		۱۸۹۶ & سرهنگ پیکار مدرک علیه استرهازی را کشف می‌کند \\
+		\hline
+		نوامبر ۱۸۹۷ & ماتیو دریفوس (برادر) استرهازی را متهم می‌کند \\
+		\hline
+		\rowcolor{rougelight}
+		ژانویه ۱۸۹۸ & تبرئه استرهازی / «من متهم می‌کنم!» زولا \\
+		\hline
+		اوت ۱۸۹۸ & اعتراف به جعل سند، خودکشی سرهنگ هانری \\
+		\hline
+		\rowcolor{rougelight}
+		ژوئن ۱۸۹۹ & بازگشت دریفوس، محاکمه جدید در رِن \\
+		\hline
+		سپتامبر ۱۸۹۹ & محکومیت مجدد (!), عفو رئیس‌جمهوری \\
+		\hline
+		\rowcolor{rougelight}
+		ژوئیه ۱۹۰۶ & تبرئه کامل، بازگشت به ارتش \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{«من متهم می‌کنم!»}
+
+در ۱۳ ژانویه ۱۸۹۸، امیل زولا نامه سرگشاده‌اش را در روزنامه «اورور» منتشر کرد:
+
+\begin{naghlbox}
+	\textbf{«من متهم می‌کنم...!»}
+	
+	«من سرهنگ دوپاتی دو کلام را متهم می‌کنم که مهندس اصلی این خطای قضایی بوده است...
+	
+	من ستاد کل را متهم می‌کنم که در مطبوعات... کارزار شنیع فریب افکار عمومی را رهبری کرده است...
+	
+	من نخستین دادگاه نظامی را متهم می‌کنم که حقوق را نقض کرده و متهمی را بر اساس مدرکی محکوم کرده که مخفی نگه داشته شد...
+	
+	من دومین دادگاه نظامی را متهم می‌کنم که این بی‌قانونی را با حکمی آگاهانه پنهان کرده است...»
+	
+	\hfill --- \textit{امیل زولا، ۱۳ ژانویه ۱۸۹۸}
+\end{naghlbox}
+
+\subsection{فرانسه دوپاره}
+
+ماجرای دریفوس فرانسه را به دو اردوگاه متخاصم تقسیم کرد:
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	camp/.style={rectangle, rounded corners, minimum width=5cm, minimum height=3.5cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,8) {فرانسه دوپاره شده};
+	
+	% Dreyfusards
+	\node[camp, draw=bleurepublique, fill=bleulight] (dreyf) at (3,4) {
+		\textbf{دریفوسارها}\\[0.5em]
+		جمهوری‌خواهان\\
+		سوسیالیست‌ها (بخشی)\\
+		روشنفکران\\
+		پروتستان‌ها\\
+		یهودیان\\[0.5em]
+		\textit{«حقیقت و عدالت»}
+	};
+	
+	% Anti-Dreyfusards
+	\node[camp, draw=orroyaldark, fill=orroyallight] (anti) at (11,4) {
+		\textbf{ضد دریفوسارها}\\[0.5em]
+		ناسیونالیست‌ها\\
+		ارتش\\
+		کلیسای کاتولیک\\
+		سلطنت‌طلبان\\
+		یهودستیزان\\[0.5em]
+		\textit{«شرف ارتش»}
+	};
+	
+	% Key figures
+	\node[font=\footnotesize, align=center] at (3,1) 
+	{\textbf{چهره‌ها:} زولا، کلمانسو،\\ژورِس، پگی، پروست};
+	\node[font=\footnotesize, align=center] at (11,1) 
+	{\textbf{چهره‌ها:} دِرولد، بارِس،\\موراس، دروم};
+	
+	% Divide
+	\draw[very thick, rougerevolution, dashed] (7,7) -- (7,0);
+	
+\end{tikzpicture}
+
+\begin{noktebox}
+	\textbf{واژه «روشنفکر»:}
+	
+	واژه «روشنفکر» (\lr{intellectuel}) به معنای امروزی، در جریان ماجرای دریفوس متولد شد. موریس بارِس، ضد دریفوسار، این واژه را به طعنه برای توصیف امضاکنندگان بیانیه حمایت از دریفوس به کار برد. اما طرفداران دریفوس آن را با افتخار پذیرفتند.
+\end{noktebox}
+
+\subsection{پیامدهای ماجرای دریفوس}
+
+\begin{olgoobox}
+	\textbf{پیامدهای ماندگار}
+	
+	\begin{enumerate}
+		\item \textbf{پیروزی جمهوری:} ماجرا نشان داد که جمهوری از ارتش و کلیسا قوی‌تر است
+		\item \textbf{ضربه به ارتش:} اعتبار ستاد کل خدشه‌دار شد
+		\item \textbf{ضربه به کلیسا:} حمایت کلیسا از ضد دریفوسارها، جدایی کلیسا و دولت را تسریع کرد
+		\item \textbf{تولد راست افراطی مدرن:} «اَکسیون فرانسز» (۱۸۹۹) از دل این ماجرا زاده شد
+		\item \textbf{تقویت چپ:} ائتلاف «دفاع از جمهوری» شکل گرفت
+		\item \textbf{سازمان‌یابی یهودستیزی:} یهودستیزی از تعصب مذهبی به ایدئولوژی سیاسی تبدیل شد
+	\end{enumerate}
+\end{olgoobox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{جمهوری رادیکال (۱۸۹۹-۱۹۱۴)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{دولت والدک-روسو و «دفاع از جمهوری»}
+
+در ژوئن ۱۸۹۹، پیر والدک-روسو دولتی ائتلافی از جمهوری‌خواهان میانه‌رو تا سوسیالیست‌ها تشکیل داد—نخستین بار یک سوسیالیست (میلِران) وارد دولت می‌شد. هدف: دفاع از جمهوری در برابر تهدید ناسیونالیست‌ها.
+
+\begin{itemize}
+	\item \textbf{قانون انجمن‌ها (۱۹۰۱):} کنترل شدید بر فرقه‌های مذهبی (کنگرگاسیون‌ها)
+	\item \textbf{بستن مدارس فرقه‌ای:} هزاران مدرسه بسته شد
+	\item \textbf{اخراج فرقه‌ها:} بسیاری از راهبان و راهبه‌ها فرانسه را ترک کردند
+\end{itemize}
+
+\subsection{دولت کومب (۱۹۰۲-۱۹۰۵)}
+
+امیل کومب، رادیکال ضدکلریکال، سیاست سخت‌تری پیش گرفت:
+
+\begin{enghelabbox}
+%══════════════════════════════════════════════════════════════════════════════
+% ادامه فصل ۶ — بخش ۲
+%══════════════════════════════════════════════════════════════════════════════
+
+\textbf{سیاست‌های ضدکلریکال کومب (۱۹۰۲-۱۹۰۵)}
+
+\begin{itemize}[nosep]
+	\item بستن ۲,۵۰۰ مدرسه فرقه‌ای غیرمجاز
+	\item ممنوعیت تدریس برای تمام اعضای فرقه‌های مذهبی
+	\item قطع روابط دیپلماتیک با واتیکان (۱۹۰۴)
+	\item «رسوایی کارت‌ها»: جاسوسی از افسران کاتولیک
+\end{itemize}
+
+\textbf{نتیجه:} ۳۰,۰۰۰ راهب و راهبه فرانسه را ترک کردند.
+\end{enghelabbox}
+
+\subsection{جدایی کلیسا و دولت (۱۹۰۵)}
+
+قانون ۹ دسامبر ۱۹۰۵، یکی از مهم‌ترین قوانین تاریخ فرانسه، جدایی کامل کلیسا و دولت را اعلام کرد:
+
+\begin{olgoobox}
+\textbf{قانون جدایی کلیسا و دولت (۹ دسامبر ۱۹۰۵)}
+
+\textbf{ماده ۱:} «جمهوری آزادی وجدان را تضمین می‌کند. جمهوری آزادی اجرای آیین‌های مذهبی را تضمین می‌کند...»
+
+\textbf{ماده ۲:} «جمهوری هیچ مذهبی را به رسمیت نمی‌شناسد، حقوقی نمی‌پردازد، و یارانه‌ای نمی‌دهد.»
+
+\textbf{مفاد کلیدی:}
+\begin{itemize}[nosep]
+	\item پایان کنکوردای ۱۸۰۱ (ناپلئون-پاپ)
+	\item پایان پرداخت حقوق روحانیون توسط دولت
+	\item اموال کلیسا به «انجمن‌های آیینی» واگذار شد
+	\item کلیساها مالکیت عمومی شدند اما برای عبادت در اختیار مؤمنان ماندند
+	\item دولت در امور داخلی کلیساها دخالت نمی‌کند
+\end{itemize}
+
+\textbf{مجری قانون:} آریستید بریان (گزارشگر، بعداً ۱۱ بار نخست‌وزیر)
+\end{olgoobox}
+
+\begin{tikzpicture}[
+every node/.style={font=\small},
+box/.style={rectangle, rounded corners, minimum width=4cm, minimum height=1.5cm, align=center}
+]
+% Title
+\node[font=\bfseries\large] at (7,7) {مفهوم لائیسیته فرانسوی};
+
+% Center concept
+\node[box, draw=bleurepublique, fill=bleumid, text=white, minimum width=5cm] (center) at (7,4.5) 
+{\textbf{لائیسیته}\\جدایی دین و دولت};
+
+% Components
+\node[box, draw=bleurepublique, fill=bleulight] (c1) at (2,2) 
+{آزادی وجدان\\حق داشتن یا\\نداشتن دین};
+
+\node[box, draw=bleurepublique, fill=bleulight] (c2) at (7,2) 
+{بی‌طرفی دولت\\عدم حمایت یا\\مخالفت با دین};
+
+\node[box, draw=bleurepublique, fill=bleulight] (c3) at (12,2) 
+{فضای عمومی\\سکولار\\دین امر خصوصی};
+
+% Arrows
+\draw[->, thick, bleurepublique] (center) -- (c1);
+\draw[->, thick, bleurepublique] (center) -- (c2);
+\draw[->, thick, bleurepublique] (center) -- (c3);
+
+% Note
+\node[font=\footnotesize, align=center] at (7,0) 
+{لائیسیته فرانسوی با «سکولاریسم» آمریکایی یا انگلیسی متفاوت است:\\
+	نه فقط جدایی نهادی، بلکه حذف دین از فضای عمومی};
+
+\end{tikzpicture}
+
+\begin{naghlbox}
+«دولت نه کاتولیک است، نه پروتستان، نه یهودی. دولت لائیک است.»
+
+\hfill --- \textit{آریستید بریان، ۱۹۰۵}
+\end{naghlbox}
+
+\subsection{اصلاحات اجتماعی}
+
+دوره رادیکال‌ها اصلاحات اجتماعی محدودی نیز داشت:
+
+\begin{table}[htbp]
+\centering
+\caption{اصلاحات اجتماعی جمهوری رادیکال}
+\label{tab:radical-reforms}
+\begin{tabular}{|c|p{8cm}|}
+	\hline
+	\rowcolor{vertmid}
+	\textcolor{white}{\textbf{سال}} & \textcolor{white}{\textbf{قانون}} \\
+	\hline
+	۱۸۹۸ & قانون حوادث کار (مسئولیت کارفرما) \\
+	\hline
+	\rowcolor{vertlight}
+	۱۹۰۰ & محدودیت کار روزانه به ۱۰ ساعت (برای زنان و کودکان) \\
+	\hline
+	۱۹۰۶ & استراحت هفتگی اجباری \\
+	\hline
+	\rowcolor{vertlight}
+	۱۹۱۰ & قانون بازنشستگی کارگران و دهقانان \\
+	\hline
+	۱۹۱۳ & محدودیت کار روزانه به ۱۰ ساعت (برای همه) \\
+	\hline
+\end{tabular}
+\end{table}
+
+\subsection{جنبش کارگری و \lr{CGT}}
+
+در ۱۸۹۵ کنفدراسیون عمومی کار (\lr{CGT}) تأسیس شد. این سازمان، برخلاف سندیکاهای آلمانی یا انگلیسی، گرایش آنارکوسندیکالیستی داشت:
+
+\begin{noktebox}
+\textbf{منشور آمیَن (۱۹۰۶)}
+
+\lr{CGT} استقلال کامل از احزاب سیاسی (از جمله سوسیالیست‌ها) را اعلام کرد:
+\begin{itemize}[nosep]
+	\item اعتصاب عمومی به عنوان ابزار انقلاب
+	\item «عمل مستقیم» به جای فعالیت پارلمانی
+	\item هدف: لغو نظام دستمزدی و مالکیت خصوصی
+\end{itemize}
+\end{noktebox}
+
+\subsection{بحران‌های بین‌المللی}
+
+\begin{tikzpicture}[
+every node/.style={font=\small},
+crisis/.style={rectangle, rounded corners, draw=rougerevolution, fill=rougelight,
+	minimum width=3.5cm, minimum height=1.5cm, align=center}
+]
+% Title
+\node[font=\bfseries\large] at (7,7) {بحران‌های بین‌المللی پیش از جنگ};
+
+% Timeline
+\draw[very thick, rougerevolution] (0,5) -- (14,5);
+
+% Crises
+\node[crisis] (c1) at (2,3) {\textbf{فاشودا ۱۸۹۸}\\رویارویی با انگلستان\\در سودان};
+
+\node[crisis] (c2) at (6,3) {\textbf{مراکش اول ۱۹۰۵}\\رویارویی با آلمان\\طنجه};
+
+\node[crisis] (c3) at (10,3) {\textbf{مراکش دوم ۱۹۱۱}\\بحران آگادیر\\لب جنگ};
+
+\node[crisis] (c4) at (13.5,3) {\textbf{بالکان}\\۱۹۱۲-۱۳};
+
+% Markers
+\foreach \x in {2, 6, 10, 13.5} {
+	\fill[rougerevolution] (\x,5) circle (0.12);
+	\draw[->, thick, rougerevolution] (\x,5) -- (\x,4);
+}
+
+% Alliances box
+\node[rectangle, draw=bleurepublique, fill=bleulight, rounded corners, align=center] at (7,0.5) {
+	\textbf{اتحادها:} آنتانت کوردیال با انگلستان (۱۹۰۴) — اتحاد سه‌گانه با روسیه و انگلستان (۱۹۰۷)
+};
+
+\end{tikzpicture}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{جنگ بزرگ (۱۹۱۴-۱۹۱۸)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{ورود به جنگ}
+
+ترور آرشیدوک فرانتس فردیناند (۲۸ ژوئن ۱۹۱۴) زنجیره‌ای از رویدادها را آغاز کرد که به جنگ جهانی انجامید. آلمان در ۳ اوت ۱۹۱۴ به فرانسه اعلام جنگ کرد.
+
+\begin{enghelabbox}
+\textbf{«اتحاد مقدس» (\lr{Union sacrée})}
+
+در ۴ اوت ۱۹۱۴، رئیس‌جمهور پوانکاره «اتحاد مقدس» را اعلام کرد. تمام احزاب—از سلطنت‌طلبان تا سوسیالیست‌ها—در دفاع از میهن متحد شدند:
+
+\begin{itemize}[nosep]
+	\item ژان ژورِس (رهبر سوسیالیست‌ها) دو روز قبل ترور شده بود
+	\item سوسیالیست‌ها به دولت پیوستند (ژول گِد، مارسل سامبا)
+	\item \lr{CGT} اعتصابات را متوقف کرد
+	\item کاتولیک‌ها و ضدکلریکال‌ها کنار هم جنگیدند
+	\item دولت‌ها ائتلافی شدند
+\end{itemize}
+\end{enghelabbox}
+
+\subsection{چهار سال جنگ}
+
+\begin{tikzpicture}[
+every node/.style={font=\small},
+phase/.style={rectangle, rounded corners, draw=rougerevolution, fill=rougelight,
+	minimum width=5cm, minimum height=2cm, align=center}
+]
+% Title
+\node[font=\bfseries\large] at (7,8) {مراحل جنگ بزرگ در جبهه غرب};
+
+% Phases
+\node[phase] (p1) at (3,5.5) {\textbf{جنگ حرکتی}\\اوت-سپتامبر ۱۹۱۴\\نقشه شلیفن، نبرد مارن\\توقف آلمان‌ها};
+
+\node[phase] (p2) at (11,5.5) {\textbf{جنگ خندق‌ها}\\۱۹۱۵-۱۹۱۷\\جبهه ثابت ۷۵۰ کیلومتری\\وردن، سوم};
+
+\node[phase] (p3) at (3,2) {\textbf{بحران ۱۹۱۷}\\شورش‌ها، خستگی\\انقلاب روسیه\\ورود آمریکا};
+
+\node[phase] (p4) at (11,2) {\textbf{پیروزی ۱۹۱۸}\\حملات آلمان (بهار)\\ضدحمله متفقین (تابستان)\\آتش‌بس ۱۱ نوامبر};
+
+% Arrows
+\draw[->, very thick, rougerevolution] (p1) -- (p2);
+\draw[->, very thick, rougerevolution] (p2) -- (p3);
+\draw[->, very thick, rougerevolution] (p3) -- (p4);
+
+\end{tikzpicture}
+
+\subsubsection{نبرد وردن (فوریه-دسامبر ۱۹۱۶)}
+
+\begin{enghelabbox}
+\textbf{وردن: نماد مقاومت فرانسه}
+
+\begin{itemize}[nosep]
+	\item \textbf{هدف آلمان:} «خونریزی» ارتش فرانسه در نقطه‌ای که نمی‌توانست عقب بنشیند
+	\item \textbf{مدت:} ۱۰ ماه (۲۱ فوریه - ۱۸ دسامبر ۱۹۱۶)
+	\item \textbf{تلفات فرانسوی:} ~۳۷۷,۰۰۰ (۱۶۳,۰۰۰ کشته)
+	\item \textbf{تلفات آلمانی:} ~۳۳۷,۰۰۰
+	\item \textbf{شعار پتن:} «رد نخواهند شد!» (\lr{Ils ne passeront pas!})
+	\item \textbf{نتیجه:} شکست استراتژی آلمان، اما جهنم برای هر دو طرف
+\end{itemize}
+\end{enghelabbox}
+
+\subsubsection{بحران ۱۹۱۷}
+
+سال ۱۹۱۷ بحرانی‌ترین سال جنگ بود:
+
+\begin{itemize}
+\item \textbf{آوریل:} حمله ناموفق نیول در شمن دِ دام
+\item \textbf{مه-ژوئن:} شورش در ارتش فرانسه (۴۰,۰۰۰ سرباز نافرمانی کردند)
+\item \textbf{پتن:} فرمانده جدید، اعدام‌های محدود + بهبود شرایط
+\item \textbf{نوامبر:} کلمانسو نخست‌وزیر شد
+\end{itemize}
+
+\subsubsection{کلمانسو: «پدر پیروزی»}
+
+\begin{table}[htbp]
+\centering
+\caption{ژرژ کلمانسو (۱۸۴۱-۱۹۲۹)}
+\label{tab:clemenceau}
+\begin{tabular}{|r|p{10cm}|}
+	\hline
+	\rowcolor{bleumid}
+	\textcolor{white}{\textbf{ویژگی}} & \textcolor{white}{\textbf{توضیح}} \\
+	\hline
+	\textbf{لقب} & «ببر» — به خاطر سرسختی و حملات بی‌امان \\
+	\hline
+	\rowcolor{bleulight}
+	\textbf{سابقه} & رادیکال، ضدکلریکال، سرنگون‌کننده دولت‌ها \\
+	\hline
+	\textbf{شعار ۱۹۱۷} & «جنگ داخلی نه! جنگ خارجی نه! فقط جنگ!» \\
+	\hline
+	\rowcolor{bleulight}
+	\textbf{سیاست} & سرکوب شکست‌طلبان، بازدید مداوم از جبهه \\
+	\hline
+	\textbf{نقش} & متحدکننده متفقین تحت فرماندهی فوش \\
+	\hline
+\end{tabular}
+\end{table}
+
+\begin{naghlbox}
+«سیاست داخلی من: من جنگ می‌کنم. سیاست خارجی من: من جنگ می‌کنم. همیشه، من جنگ می‌کنم.»
+
+\hfill --- \textit{کلمانسو، ۸ مارس ۱۹۱۸}
+\end{naghlbox}
+
+\subsection{هزینه پیروزی}
+
+\begin{table}[htbp]
+\centering
+\caption{آمار جنگ جهانی اول برای فرانسه}
+\label{tab:wwi-statistics}
+\begin{tabular}{|r|c|}
+	\hline
+	\rowcolor{rougemid}
+	\textcolor{white}{\textbf{شاخص}} & \textcolor{white}{\textbf{رقم}} \\
+	\hline
+	بسیج‌شدگان & ۸.۴ میلیون \\
+	\hline
+	\rowcolor{rougelight}
+	کشته‌ها & ۱.۴ میلیون (۱۶.۵٪) \\
+	\hline
+	مجروحان & ۴.۳ میلیون \\
+	\hline
+	\rowcolor{rougelight}
+	معلولان دائمی & ۱.۱ میلیون \\
+	\hline
+	اسرا & ۵۰۰,۰۰۰ \\
+	\hline
+	\rowcolor{rougelight}
+	یتیمان جنگ & ۷۶۰,۰۰۰ \\
+	\hline
+	بیوه‌های جنگ & ۶۰۰,۰۰۰ \\
+	\hline
+	\rowcolor{rougelight}
+	خسارت مادی & ۱۰ استان شمالی ویران \\
+	\hline
+	بدهی ملی & ۴ برابر شد \\
+	\hline
+\end{tabular}
+\end{table}
+
+\begin{noktebox}
+\textbf{«نسل از دست رفته»:}
+
+از هر ۱۰ مرد فرانسوی که در ۱۹۱۴ بین ۲۰ تا ۴۵ سال داشتند، تقریباً ۲ نفر کشته و ۴ نفر مجروح شدند. این تلفات نسلی، بر جمعیت‌شناسی فرانسه تا دهه‌ها تأثیر گذاشت.
+\end{noktebox}
+
+\subsection{معاهده ورسای (۱۹۱۹)}
+
+کلمانسو در کنفرانس صلح پاریس برای منافع فرانسه جنگید:
+
+\begin{table}[htbp]
+\centering
+\caption{مفاد معاهده ورسای برای فرانسه}
+\label{tab:versailles-treaty}
+\begin{tabular}{|r|p{9cm}|}
+	\hline
+	\rowcolor{bleumid}
+	\textcolor{white}{\textbf{موضوع}} & \textcolor{white}{\textbf{محتوا}} \\
+	\hline
+	\textbf{آلزاس-لورن} & بازگشت به فرانسه \\
+	\hline
+	\rowcolor{bleulight}
+	\textbf{سار} & تحت مدیریت جامعه ملل، همه‌پرسی پس از ۱۵ سال \\
+	\hline
+	\textbf{راینلند} & اشغال نظامی ۱۵ ساله، غیرنظامی دائمی \\
+	\hline
+	\rowcolor{bleulight}
+	\textbf{غرامات} & ۱۳۲ میلیارد مارک طلا (تعیین نهایی ۱۹۲۱) \\
+	\hline
+	\textbf{مستعمرات آلمان} & بخشی به فرانسه (توگو، کامرون) \\
+	\hline
+	\rowcolor{bleulight}
+	\textbf{ماده ۲۳۱} & آلمان مسئولیت جنگ را پذیرفت \\
+	\hline
+\end{tabular}
+\end{table}
+
+\begin{naghlbox}
+«این صلح نیست، این آتش‌بس بیست‌ساله است.»
+
+\hfill --- \textit{مارشال فوش، ۱۹۱۹ (پیش‌بینی جنگ جهانی دوم)}
+\end{naghlbox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{بین دو جنگ (۱۹۱۸-۱۹۴۰)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{ویژگی‌های دوره}
+
+دوره بین دو جنگ با بی‌ثباتی سیاسی شدید مشخص می‌شد:
+
+\begin{tikzpicture}[
+every node/.style={font=\small}
+]
+% Title
+\node[font=\bfseries\large] at (7,7) {بی‌ثباتی سیاسی: دولت‌های جمهوری سوم};
+
+% Statistics
+\node[rectangle, draw=rougerevolution, fill=rougelight, rounded corners,
+minimum width=10cm, minimum height=3cm, align=center] at (7,4) {
+	\textbf{۱۹۱۸-۱۹۴۰: ۲۲ سال}\\[0.5em]
+	\textbf{۴۴ دولت} — میانگین عمر: ۶ ماه\\[0.5em]
+	\textbf{برخی نخست‌وزیران:}\\
+	بریان (۱۱ بار) — پوانکاره (۵ بار) — هریو (۳ بار)
+};
+
+% Causes
+\node[rectangle, draw=bleurepublique, fill=bleulight, rounded corners, align=right] at (3,0.5) {
+	\textbf{دلایل بی‌ثباتی:}\\
+	— نظام چندحزبی\\
+	— ائتلاف‌های شکننده\\
+	— قدرت سنا در سرنگونی دولت‌ها\\
+	— عدم انضباط حزبی
+};
+
+\node[rectangle, draw=orroyaldark, fill=orroyallight, rounded corners, align=right] at (11,0.5) {
+	\textbf{پارادوکس:}\\
+	بی‌ثباتی دولت‌ها\\
+	همراه با ثبات نسبی\\
+	سیاست‌ها و کادرها\\
+	(همان افراد می‌چرخیدند)
+};
+
+\end{tikzpicture}
+
+\subsection{دوره‌بندی سیاسی}
+
+\begin{table}[htbp]
+\centering
+\caption{دوره‌های سیاسی بین دو جنگ}
+\label{tab:interwar-periods}
+\begin{tabular}{|c|r|p{5.5cm}|}
+	\hline
+	\rowcolor{bleumid}
+	\textcolor{white}{\textbf{دوره}} & \textcolor{white}{\textbf{سال‌ها}} & \textcolor{white}{\textbf{ویژگی}} \\
+	\hline
+	بلوک ملی & ۱۹۱۹-۱۹۲۴ & راست محافظه‌کار، اشغال روهر \\
+	\hline
+	\rowcolor{bleulight}
+	کارتل چپ & ۱۹۲۴-۱۹۲۶ & رادیکال‌ها + سوسیالیست‌ها، بحران مالی \\
+	\hline
+	اتحاد ملی & ۱۹۲۶-۱۹۲۹ & پوانکاره، ثبات مالی \\
+	\hline
+	\rowcolor{bleulight}
+	بحران و بی‌ثباتی & ۱۹۲۹-۱۹۳۶ & رکود بزرگ، ۶ فوریه ۱۹۳۴ \\
+	\hline
+	جبهه مردمی & ۱۹۳۶-۱۹۳۸ & چپ متحد، اصلاحات اجتماعی \\
+	\hline
+	\rowcolor{bleulight}
+	پیش از سقوط & ۱۹۳۸-۱۹۴۰ & راست، مونیخ، جنگ \\
+	\hline
+\end{tabular}
+\end{table}
+
+\subsection{انشعاب چپ: تور (۱۹۲۰)}
+
+در کنگره تور (دسامبر ۱۹۲۰)، حزب سوسیالیست (\lr{SFIO}) منشعب شد:
+
+\begin{tikzpicture}[
+every node/.style={font=\small},
+party/.style={rectangle, rounded corners, minimum width=4cm, minimum height=2cm, align=center}
+]
+% Title
+\node[font=\bfseries\large] at (7,7) {انشعاب تور (دسامبر ۱۹۲۰)};
+
+% Before
+\node[party, draw=rougerevolution, fill=rougelight] (sfio) at (7,5) 
+{\textbf{\lr{SFIO}}\\حزب سوسیالیست\\(واحد)};
+
+% After
+\node[party, draw=rougerevolution, fill=rougemid, text=white] (pcf) at (3,2) 
+{\textbf{\lr{PCF / SFIC}}\\حزب کمونیست\\اکثریت (۳/۴)\\پیوستن به کمینترن};
+
+\node[party, draw=rougerevolution, fill=rougelight] (sfio2) at (11,2) 
+{\textbf{\lr{SFIO}}\\حزب سوسیالیست\\اقلیت (۱/۴)\\بلوم، رنودل};
+
+% Arrows
+\draw[->, very thick, rougerevolution] (sfio) -- (pcf);
+\draw[->, very thick, rougerevolution] (sfio) -- (sfio2);
+
+% Reason
+\node[font=\footnotesize, align=center] at (7,3.5) {پذیرش یا رد\\۲۱ شرط لنین};
+
+\end{tikzpicture}
+
+\subsection{بحران‌های دهه ۱۹۳۰}
+
+\subsubsection{رکود بزرگ}
+
+رکود جهانی دیرتر به فرانسه رسید (۱۹۳۱) اما طولانی‌تر ماند:
+
+\begin{table}[htbp]
+\centering
+\caption{شاخص‌های اقتصادی دهه ۱۹۳۰}
+\label{tab:depression-indicators}
+\begin{tabular}{|r|c|c|c|}
+	\hline
+	\rowcolor{gris}
+	\textcolor{white}{\textbf{شاخص}} & \textcolor{white}{\textbf{۱۹۲۹}} & \textcolor{white}{\textbf{۱۹۳۵}} & \textcolor{white}{\textbf{تغییر}} \\
+	\hline
+	تولید صنعتی (شاخص) & ۱۰۰ & ۷۲ & -۲۸٪ \\
+	\hline
+	\rowcolor{grisclair}
+	بیکاری (هزار نفر) & ۱۰ & ۵۰۰ & — \\
+	\hline
+	قیمت‌ها (شاخص) & ۱۰۰ & ۶۵ & -۳۵٪ \\
+	\hline
+	\rowcolor{grisclair}
+	صادرات & ۱۰۰ & ۴۰ & -۶۰٪ \\
+	\hline
+\end{tabular}
+\end{table}
+
+\subsubsection{۶ فوریه ۱۹۳۴}
+
+\begin{enghelabbox}
+\textbf{بحران ۶ فوریه ۱۹۳۴}
+
+\textbf{زمینه:} رسوایی ستاویسکی (کلاهبرداری با ارتباطات سیاسی)
+
+\textbf{رویداد:} تظاهرات لیگ‌های راست افراطی در میدان کنکورد:
+\begin{itemize}[nosep]
+	\item اَکسیون فرانسز (سلطنت‌طلب)
+	\item صلیب‌های آتشین (\lr{Croix-de-Feu})
+	\item فدراسیون‌های جانبازان
+\end{itemize}
+
+\textbf{نتیجه:}
+\begin{itemize}[nosep]
+	\item ۱۵ کشته، ۱,۵۰۰ مجروح
+	\item استعفای دالادیه (نخست‌وزیر)
+	\item چپ آن را «کودتای فاشیستی ناموفق» نامید
+	\item آغاز اتحاد چپ که به جبهه مردمی انجامید
+\end{itemize}
+\end{enghelabbox}
+
+\subsection{جبهه مردمی (۱۹۳۶-۱۹۳۸)}
+
+در پاسخ به تهدید فاشیسم، چپ متحد شد:
+
+\begin{tikzpicture}[
+every node/.style={font=\small},
+party/.style={rectangle, rounded corners, draw=rougerevolution, fill=rougelight,
+	minimum width=3.5cm, minimum height=1.5cm, align=center}
+]
+% Title
+\node[font=\bfseries\large] at (7,7.5) {جبهه مردمی (\lr{Front populaire})};
+
+% Parties
+\node[party] (rad) at (2,5.5) {\textbf{رادیکال‌ها}\\دالادیه\\میانه‌چپ};
+
+\node[party] (sfio) at (7,5.5) {\textbf{\lr{SFIO}}\\لئون بلوم\\سوسیالیست};
+
+\node[party, fill=rougemid, text=white] (pcf) at (12,5.5) {\textbf{\lr{PCF}}\\توره، دوکلو\\کمونیست};
+
+% Coalition
+\node[rectangle, draw=bleurepublique, fill=bleulight, rounded corners,
+minimum width=8cm, minimum height=1.5cm, align=center] (fp) at (7,3) 
+{\textbf{جبهه مردمی}\\«نان، صلح، آزادی»};
+
+% Arrows
+\draw[->, thick, rougerevolution] (rad) -- (fp);
+\draw[->, thick, rougerevolution] (sfio) -- (fp);
+\draw[->, thick, rougerevolution] (pcf) -- (fp);
+
+% Election result
+\node[rectangle, draw=vertnapoleon, fill=vertlight, rounded corners, align=center] at (7,0.5) {
+	\textbf{انتخابات مه ۱۹۳۶:} پیروزی جبهه مردمی\\
+	لئون بلوم نخست‌وزیر (اولین سوسیالیست، اولین یهودی)
+};
+
+\end{tikzpicture}
+
+\subsubsection{اصلاحات جبهه مردمی}
+
+\begin{olgoobox}
+\textbf{قراردادهای ماتینیون و اصلاحات ۱۹۳۶}
+
+در ژوئن ۱۹۳۶، پس از موج اعتصابات با اشغال کارخانه‌ها (۲ میلیون اعتصابی):
+
+\textbf{قراردادهای ماتینیون (۷ ژوئن):}
+\begin{itemize}[nosep]
+	\item افزایش دستمزدها (۷-۱۵٪)
+	\item حق قرارداد جمعی
+	\item نمایندگان کارگری در کارخانه‌ها
+\end{itemize}
+
+\textbf{قوانین ژوئن ۱۹۳۶:}
+\begin{itemize}[nosep]
+	\item \textbf{هفته ۴۰ ساعته} (بدون کاهش دستمزد)
+	\item \textbf{دو هفته مرخصی با حقوق} (اولین بار)
+	\item ملی‌سازی صنایع جنگی
+	\item انحلال لیگ‌های فاشیستی
+	\item افزایش سن ترک تحصیل به ۱۴ سال
+\end{itemize}
+
+\textbf{نماد:} تصاویر کارگران در ساحل—«تابستان ۳۶»
+\end{olgoobox}
+
+\begin{naghlbox}
+«برای اولین بار در تاریخ این کشور، کارگران احساس کردند که وزیران آن‌ها هستند، نه وزیران سرمایه‌داران.»
+
+\hfill --- \textit{سیمون وِی، فیلسوف}
+\end{naghlbox}
+
+\subsubsection{شکست جبهه مردمی}
+
+جبهه مردمی دوام نیاورد:
+
+\begin{itemize}
+\item \textbf{فرار سرمایه:} بحران مالی، کاهش ارزش فرانک
+\item \textbf{«مکث» بلوم (فوریه ۱۹۳۷):} توقف اصلاحات
+\item \textbf{جنگ داخلی اسپانیا:} عدم مداخله، نارضایتی چپ
+\item \textbf{سقوط بلوم (ژوئن ۱۹۳۷):} مخالفت سنا
+\item \textbf{پایان ائتلاف (۱۹۳۸):} رادیکال‌ها به راست چرخیدند
+\end{itemize}
+
+\subsection{راه سقوط (۱۹۳۸-۱۹۴۰)}
+
+\subsubsection{مونیخ (سپتامبر ۱۹۳۸)}
+
+\begin{enghelabbox}
+\textbf{کنفرانس مونیخ (۲۹-۳۰ سپتامبر ۱۹۳۸)}
+
+فرانسه (دالادیه) و انگلستان (چمبرلین) با واگذاری سودت به هیتلر موافقت کردند:
+
+\begin{itemize}[nosep]
+	\item \textbf{توجیه:} اجتناب از جنگ، «صلح برای زمان ما»
+	\item \textbf{قیمت:} خیانت به متحد (چکسلواکی)
+	\item \textbf{واکنش فرانسه:} تشویق اولیه، سپس شرم
+	\item \textbf{نتیجه:} هیتلر جسورتر شد
+\end{itemize}
+
+\textbf{سخن دالادیه (به منشی‌اش، هنگام دیدن جمعیت شادمان):} «احمق‌ها، نمی‌دانند به چه چیزی تشویق می‌کنند.»
+\end{enghelabbox}
+
+\subsubsection{شروع جنگ جهانی دوم}
+
+\begin{itemize}
+\item \textbf{۱ سپتامبر ۱۹۳۹:} آلمان به لهستان حمله کرد
+\item \textbf{۳ سپتامبر ۱۹۳۹:} فرانسه و انگلستان اعلام جنگ کردند
+\item \textbf{سپتامبر ۱۹۳۹ - مه ۱۹۴۰:} «جنگ عجیب» (\lr{drôle de guerre})—بدون درگیری واقعی
+\end{itemize}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{سقوط (مه-ژوئن ۱۹۴۰)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{شکست نظامی}
+
+\begin{tikzpicture}[
+every node/.style={font=\small},
+event/.style={rectangle, rounded corners, draw=rougerevolution, fill=rougelight,
+	minimum width=3cm, minimum height=1.2cm, align=center}
+]
+% Title
+\node[font=\bfseries\large] at (7,7.5) {شش هفته فاجعه (مه-ژوئن ۱۹۴۰)};
+
+% Timeline
+\draw[very thick, rougerevolution] (0,5.5) -- (14,5.5);
+
+% Events
+\node[event] (e1) at (1.5,3.5) {۱۰ مه\\حمله آلمان\\نقشه مانشتاین};
+
+\node[event] (e2) at (4.5,3.5) {۱۳ مه\\عبور از آردن\\شکست سدان};
+
+\node[event] (e3) at (7.5,3.5) {۲۰ مه\\رسیدن به\\کانال مانش};
+
+\node[event] (e4) at (10.5,3.5) {۱۰ ژوئن\\ایتالیا وارد\\جنگ شد};
+
+\node[event, fill=rougemid, text=white] (e5) at (13,3.5) {۱۴ ژوئن\\سقوط پاریس};
+
+% Markers
+\foreach \x in {1.5, 4.5, 7.5, 10.5, 13} {
+	\fill[rougerevolution] (\x,5.5) circle (0.1);
+	\draw[->, thick, rougerevolution] (\x,5.5) -- (\x,4.3);
+}
+
+% Key info
+\node[rectangle, draw=gris, fill=grisclair, rounded corners, align=center] at (7,1) {
+	\textbf{نیروها:} تقریباً برابر (۱۳۵ لشکر متفقین vs ۱۳۶ لشکر آلمان)\\
+	\textbf{تانک‌ها:} متفقین بیشتر داشتند!\\
+	\textbf{مشکل:} استراتژی، تاکتیک، فرماندهی، روحیه
+};
+
+\end{tikzpicture}
+
+\subsection{آتش‌بس و پایان جمهوری}
+
+\begin{table}[htbp]
+\centering
+\caption{آخرین روزهای جمهوری سوم}
+\label{tab:fall-third-republic}
+\begin{tabular}{|c|p{10cm}|}
+	\hline
+	\rowcolor{rougemid}
+	\textcolor{white}{\textbf{تاریخ}} & \textcolor{white}{\textbf{رویداد}} \\
+	\hline
+	۱۰ ژوئن & دولت پاریس را ترک کرد (تور، سپس بوردو) \\
+	\hline
+	\rowcolor{rougelight}
+	۱۶ ژوئن & استعفای رینو، مارشال پتن نخست‌وزیر شد \\
+	\hline
+	۱۷ ژوئن & پتن خواستار آتش‌بس شد \\
+	\hline
+	\rowcolor{rougelight}
+	۱۸ ژوئن & ندای دوگل از لندن: «فرانسه نبرد را باخته، نه جنگ را» \\
+	\hline
+	۲۲ ژوئن & امضای آتش‌بس در رتوند (همان واگن ۱۹۱۸) \\
+	\hline
+	\rowcolor{rougelight}
+	۱۰ ژوئیه & مجلسین در ویشی: دادن اختیارات تام به پتن (۵۶۹ موافق، ۸۰ مخالف، ۱۷ ممتنع) \\
+	\hline
+	\textbf{۱۱ ژوئیه} & \textbf{پایان جمهوری سوم — آغاز «دولت فرانسوی»} \\
+	\hline
+\end{tabular}
+\end{table}
+
+\begin{naghlbox}
+«من، فیلیپ پتن، مارشال فرانسه، به شما می‌گویم که باید جنگ را متوقف کرد.»
+
+\hfill --- \textit{پتن، ۱۷ ژوئن ۱۹۴۰}
+
+\vspace{0.5em}
+
+«فرانسه تنها نیست... این جنگ، جنگ جهانی است. شعله مقاومت فرانسه نباید خاموش شود و خاموش نخواهد شد.»
+
+\hfill --- \textit{دوگل، ۱۸ ژوئن ۱۹۴۰}
+\end{naghlbox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{تحلیل: چرا جمهوری سوم سقوط کرد؟}
+%──────────────────────────────────────────────────────────────────────────────
+
+\begin{tikzpicture}[
+every node/.style={font=\small},
+cause/.style={rectangle, rounded corners, draw=rougerevolution, fill=rougelight,
+	minimum width=4cm, minimum height=1.5cm, align=center}
+]
+% Title
+\node[font=\bfseries\large] at (7,8) {علل سقوط جمهوری سوم};
+
+% Categories
+\node[cause, draw=rougerevolution, fill=rougemid, text=white] (mil) at (2,5.5) 
+{\textbf{نظامی}\\شکست سریع ۱۹۴۰};
+
+\node[cause] at (2,3.5) {دکترین دفاعی\\خط ماژینو\\عدم انعطاف};
+
+\node[cause, draw=bleurepublique, fill=bleumid, text=white] (pol) at (7,5.5) 
+{\textbf{سیاسی}\\بی‌ثباتی مزمن};
+
+\node[cause, draw=bleurepublique, fill=bleulight] at (7,3.5) 
+{تفرقه چپ و راست\\ضعف رهبری\\بدبینی};
+
+\node[cause, draw=gris, fill=grisclair] (soc) at (12,5.5) 
+{\textbf{اجتماعی-روانی}\\خستگی از جنگ قبلی};
+
+\node[cause, draw=gris, fill=grisclair] at (12,3.5) 
+{پاسیفیسم\\«نسل از دست رفته»\\ترس از تکرار};
+
+% Central result
+\node[rectangle, draw=black, fill=black!80, text=white, rounded corners,
+minimum width=6cm, minimum height=1.5cm, align=center] at (7,1) 
+{\textbf{نتیجه:}\\رژیمی که توان و اراده دفاع از خود را نداشت};
+
+% Arrows
+\draw[->, thick] (2,2.8) -- (7,1.8);
+\draw[->, thick] (7,2.8) -- (7,1.8);
+\draw[->, thick] (12,2.8) -- (7,1.8);
+
+\end{tikzpicture}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{خط زمانی جامع}
+%──────────────────────────────────────────────────────────────────────────────
+
+\begin{landscape}
+\begin{tikzpicture}[
+	every node/.style={font=\footnotesize},
+	event/.style={rectangle, rounded corners, minimum width=1.2cm, minimum height=0.5cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (12,10) {خط زمانی جمهوری سوم (۱۸۷۰-۱۹۴۰)};
+	
+	% Main timeline
+	\draw[ultra thick, black] (0,7) -- (24,7);
+	
+	% Decade markers
+	\foreach \x/\year in {0/۱۸۷۰, 3.4/۱۸۸۰, 6.8/۱۸۹۰, 10.2/۱۹۰۰, 13.6/۱۹۱۰, 17/۱۹۲۰, 20.4/۱۹۳۰, 24/۱۹۴۰} {
+		\draw[thick] (\x,6.7) -- (\x,7.3);
+		\node at (\x,6.3) {\year};
+	}
+	
+	% Period bars
+	\fill[rougelight] (0,8) rectangle (1,8.4);
+	\node[font=\tiny] at (0.5,8.2) {کمون};
+	
+	\fill[orroyallight] (1,8) rectangle (5,8.4);
+	\node[font=\tiny] at (3,8.2) {تأسیس (سلطنت‌طلبان در قدرت)};
+	
+	\fill[bleulight] (5,8) rectangle (10,8.4);
+	\node[font=\tiny] at (7.5,8.2) {جمهوری فرصت‌طلب};
+	
+	\fill[bleumid] (10,8) rectangle (14,8.4);
+	\node[font=\tiny, text=white] at (12,8.2) {جمهوری رادیکال};
+	
+	\fill[rougemid] (14,8) rectangle (16,8.4);
+	\node[font=\tiny, text=white] at (15,8.2) {جنگ};
+	
+	\fill[grisclair] (16,8) rectangle (24,8.4);
+	\node[font=\tiny] at (20,8.2) {بین دو جنگ};
+	
+	% Key events - above
+	\node[event, draw=rougerevolution, fill=rougelight] at (0.5,9) {کمون\\۱۸۷۱};
+	\node[event, draw=bleurepublique, fill=bleulight] at (3,9) {قوانین\\فری};
+	\node[event, draw=violetempire, fill=violetlight] at (5.5,9) {بولانژه\\۱۸۸۹};
+	\node[event, draw=rougerevolution, fill=rougelight] at (8,9) {دریفوس\\۱۸۹۴-۱۹۰۶};
+	\node[event, draw=bleurepublique, fill=bleulight] at (11,9) {جدایی\\۱۹۰۵};
+	\node[event, draw=rougerevolution, fill=rougemid, text=white] at (14.5,9) {جنگ\\۱۴-۱۸};
+	\node[event, draw=rougerevolution, fill=rougelight] at (18.5,9) {۶ فوریه\\۱۹۳۴};
+	\node[event, draw=vertnapoleon, fill=vertlight] at (21,9) {جبهه\\مردمی};
+	\node[event, draw=rougerevolution, fill=rougemid, text=white] at (24,9) {سقوط\\۱۹۴۰};
+	
+	% Key events - below
+	\node[event, draw=gris, fill=grisclair] at (1.7,5) {تی‌یر\\فرانکفورت};
+	\node[event, draw=orroyaldark, fill=orroyallight] at (4.2,5) {۱۶ مه\\۱۸۷۷};
+	\node[event, draw=gris, fill=grisclair] at (6.5,5) {پاناما\\۱۸۹۲};
+	\node[event, draw=bleurepublique, fill=bleulight] at (9.5,5) {آنتانت\\۱۹۰۴};
+	\node[event, draw=rougerevolution, fill=rougelight] at (12.5,5) {وردن\\۱۹۱۶};
+	\node[event, draw=bleurepublique, fill=bleulight] at (15.5,5) {ورسای\\۱۹۱۹};
+	\node[event, draw=rougerevolution, fill=rougelight] at (17.5,5) {تور\\۱۹۲۰};
+	\node[event, draw=gris, fill=grisclair] at (22.5,5) {مونیخ\\۱۹۳۸};
+	
+\end{tikzpicture}
+\end{landscape}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{الگوها و درس‌ها}
+%──────────────────────────────────────────────────────────────────────────────
+
+\begin{olgoobox}
+\textbf{الگوهای کلیدی جمهوری سوم}
+
+\begin{enumerate}
+	\item \textbf{الگوی «جمهوری از شکست زاده شده»:}
+	\begin{itemize}[nosep]
+		\item جمهوری اول: از بحران جنگ (۱۷۹۲)
+		\item جمهوری دوم: از انقلاب (۱۸۴۸)
+		\item جمهوری سوم: از شکست نظامی (۱۸۷۰)
+		\item (جمهوری چهارم: از آزادی؛ پنجم: از بحران الجزایر)
+	\end{itemize}
+	
+	\item \textbf{الگوی «تثبیت از طریق دشمن مشترک»:}
+	\begin{itemize}[nosep]
+		\item جمهوری علیه کلیسا متحد شد
+	\item ماجرای دریفوس خطوط را روشن کرد
+	\item تهدید فاشیسم، جبهه مردمی را ساخت
+	\item اما: وقتی دشمن خارجی آمد، اتحاد کافی نبود
+\end{itemize}
+
+\item \textbf{الگوی «پارلمانتاریسم افراطی»:}
+\begin{itemize}[nosep]
+	\item قدرت تمرکز در مجلس، رئیس‌جمهور تشریفاتی
+	\item دولت‌های کوتاه‌عمر، بی‌ثباتی مزمن
+	\item انعطاف‌پذیری یا ضعف؟ هر دو
+	\item درس: تعادل قوا ضروری است
+\end{itemize}
+
+\item \textbf{الگوی «لائیسیته به عنوان هویت»:}
+\begin{itemize}[nosep]
+	\item جدایی دین و دولت، بخش اصلی هویت جمهوری شد
+	\item مدرسه لائیک، کارخانه شهروندسازی
+	\item این میراث تا امروز در فرانسه زنده است
+\end{itemize}
+
+\item \textbf{الگوی «پیروزی پیرانه، شکست جوانانه»:}
+\begin{itemize}[nosep]
+	\item ۱۹۱۸: پیروزی با هزینه نسلی
+	\item ۱۹۴۰: شکست سریع و تحقیرآمیز
+	\item نسلی که جنگ بزرگ را برده بود، توان جنگ دیگر را نداشت
+\end{itemize}
+\end{enumerate}
+\end{olgoobox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{میراث جمهوری سوم}
+%──────────────────────────────────────────────────────────────────────────────
+
+\begin{tikzpicture}[
+every node/.style={font=\small},
+legacy/.style={rectangle, rounded corners, minimum width=5cm, minimum height=1.5cm, align=center}
+]
+% Title
+\node[font=\bfseries\large] at (7,8) {میراث ماندگار جمهوری سوم};
+
+% Positive legacies
+\node[legacy, draw=vertnapoleon, fill=vertlight] at (3,6) 
+{\textbf{لائیسیته}\\جدایی دین و دولت\\ماده اول قانون اساسی امروز};
+
+\node[legacy, draw=vertnapoleon, fill=vertlight] at (11,6) 
+{\textbf{آموزش عمومی}\\رایگان، اجباری، لائیک\\باسوادی همگانی};
+
+\node[legacy, draw=vertnapoleon, fill=vertlight] at (3,3.5) 
+{\textbf{آزادی‌های اساسی}\\مطبوعات، تجمع، اتحادیه\\قوانین ۱۸۸۱-۱۸۸۴};
+
+\node[legacy, draw=vertnapoleon, fill=vertlight] at (11,3.5) 
+{\textbf{حقوق اجتماعی}\\هفته ۴۰ ساعته، مرخصی\\جبهه مردمی ۱۹۳۶};
+
+% Negative legacies
+\node[legacy, draw=rougerevolution, fill=rougelight] at (3,1) 
+{\textbf{امپراتوری استعماری}\\میراثی پرتنش\\جنگ‌های استقلال آینده};
+
+\node[legacy, draw=rougerevolution, fill=rougelight] at (11,1) 
+{\textbf{بی‌ثباتی نهادی}\\درس منفی برای جمهوری پنجم\\دوگل: «رژیم احزاب»};
+
+\end{tikzpicture}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{جمع‌بندی فصل}
+%──────────────────────────────────────────────────────────────────────────────
+
+\begin{kholasebox}
+\textbf{جمع‌بندی: جمهوری سوم (۱۸۷۰-۱۹۴۰)}
+
+\textbf{ویژگی‌های کلی:}
+\begin{itemize}[nosep]
+\item طولانی‌ترین رژیم پس از انقلاب (۷۰ سال)
+\item زاده از شکست، مرده در شکست
+\item پارلمانتاریسم افراطی، رئیس‌جمهور تشریفاتی
+\item ۱۰۸ دولت در ۷۰ سال (میانگین ۸ ماه)
+\end{itemize}
+
+\textbf{دوره‌ها:}
+\begin{itemize}[nosep]
+\item ۱۸۷۰-۱۸۷۱: جنگ، کمون، تأسیس دردناک
+\item ۱۸۷۱-۱۸۷۹: جمهوری بدون جمهوری‌خواهان
+\item ۱۸۷۹-۱۸۹۹: جمهوری فرصت‌طلب (قوانین فری)
+\item ۱۸۹۹-۱۹۱۴: جمهوری رادیکال (دریفوس، لائیسیته)
+\item ۱۹۱۴-۱۹۱۸: جنگ بزرگ (پیروزی پرهزینه)
+\item ۱۹۱۸-۱۹۴۰: بین دو جنگ (بی‌ثباتی، سقوط)
+\end{itemize}
+
+\textbf{رویدادهای کلیدی:}
+\begin{itemize}[nosep]
+\item کمون پاریس (۱۸۷۱): اولین حکومت کارگری، سرکوب خونین
+\item بحران ۱۶ مه ۱۸۷۷: پیروزی مجلس بر رئیس‌جمهور
+\item قوانین ژول فری (۱۸۸۱-۸۲): مدرسه لائیک
+\item ماجرای دریفوس (۱۸۹۴-۱۹۰۶): فرانسه دوپاره
+\item جدایی کلیسا و دولت (۱۹۰۵): تثبیت لائیسیته
+\item جنگ جهانی اول: ۱.۴ میلیون کشته
+\item جبهه مردمی (۱۹۳۶): اصلاحات اجتماعی
+\item سقوط ۱۹۴۰: شکست در ۶ هفته
+\end{itemize}
+
+\textbf{میراث:}
+\begin{itemize}[nosep]
+\item لائیسیته به عنوان اصل بنیادین
+\item آموزش عمومی رایگان و اجباری
+\item آزادی‌های مدنی (مطبوعات، تجمع، اتحادیه)
+\item امپراتوری استعماری (میراث پرتنش)
+\item درس بی‌ثباتی برای جمهوری پنجم
+\end{itemize}
+\end{kholasebox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{نقشه مفهومی: تحول جمهوری سوم}
+%──────────────────────────────────────────────────────────────────────────────
+
+\begin{landscape}
+\begin{tikzpicture}[
+every node/.style={font=\small},
+phase/.style={rectangle, rounded corners, draw=bleurepublique, fill=bleulight,
+	minimum width=4cm, minimum height=2.5cm, align=center},
+challenge/.style={rectangle, rounded corners, draw=rougerevolution, fill=rougelight,
+	minimum width=2.5cm, minimum height=1cm, align=center},
+response/.style={rectangle, rounded corners, draw=vertnapoleon, fill=vertlight,
+	minimum width=2.5cm, minimum height=1cm, align=center}
+]
+% Title
+\node[font=\bfseries\large] at (11,11) {تحول جمهوری سوم: چالش‌ها و پاسخ‌ها};
+
+% Phases
+\node[phase] (p1) at (3,7) {\textbf{۱۸۷۰-۱۸۷۹}\\تأسیس\\«جمهوری بدون\\جمهوری‌خواهان»};
+
+\node[phase] (p2) at (9,7) {\textbf{۱۸۷۹-۱۹۱۴}\\تثبیت\\جمهوری فرصت‌طلب\\و رادیکال};
+
+\node[phase] (p3) at (15,7) {\textbf{۱۹۱۴-۱۹۱۸}\\آزمون بزرگ\\جنگ جهانی};
+
+\node[phase] (p4) at (21,7) {\textbf{۱۹۱۸-۱۹۴۰}\\انحطاط\\بحران و سقوط};
+
+% Challenges
+\node[challenge] (c1) at (3,3.5) {سلطنت‌طلبان\\کمون};
+\node[challenge] (c2) at (9,3.5) {بولانژه\\دریفوس\\کلیسا};
+\node[challenge] (c3) at (15,3.5) {آلمان\\خستگی\\شورش ۱۹۱۷};
+\node[challenge] (c4) at (21,3.5) {رکود\\فاشیسم\\آلمان نازی};
+
+% Responses
+\node[response] (r1) at (3,1) {صبر استراتژیک\\قوانین ۱۸۷۵};
+\node[response] (r2) at (9,1) {قوانین لائیک\\جدایی ۱۹۰۵};
+\node[response] (r3) at (15,1) {اتحاد مقدس\\کلمانسو};
+\node[response, fill=rougelight, draw=rougerevolution] (r4) at (21,1) {مونیخ\\تسلیم ۱۹۴۰};
+
+% Arrows between phases
+\draw[->, very thick, bleurepublique] (p1) -- (p2);
+\draw[->, very thick, bleurepublique] (p2) -- (p3);
+\draw[->, very thick, bleurepublique] (p3) -- (p4);
+
+% Arrows challenges to responses
+\draw[->, thick, rougerevolution] (c1) -- (r1);
+\draw[->, thick, rougerevolution] (c2) -- (r2);
+\draw[->, thick, rougerevolution] (c3) -- (r3);
+\draw[->, thick, rougerevolution] (c4) -- (r4);
+
+% Labels
+\node[font=\footnotesize] at (3,5.2) {چالش};
+\node[font=\footnotesize] at (3,2.2) {پاسخ};
+
+% Overall assessment
+\node[rectangle, draw=gris, fill=grisclair, rounded corners,
+minimum width=8cm, minimum height=1.5cm, align=center] at (11,-1) {
+	\textbf{ارزیابی:} جمهوری سوم توانست از بحران‌های داخلی (سلطنت‌طلبان، دریفوس، فاشیسم) عبور کند\\
+	اما در برابر چالش خارجی (جنگ جهانی دوم) فروپاشید
+};
+
+\end{tikzpicture}
+\end{landscape}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section*{منابع فصل}
+%──────────────────────────────────────────────────────────────────────────────
+\addcontentsline{toc}{section}{منابع فصل}
+
+\begin{itemize}[nosep]
+\item Agulhon, Maurice. \textit{La République}. 2 vols. Paris: Hachette, 1990.
+\item Becker, Jean-Jacques. \textit{La France en guerre, 1914-1918}. Paris: Complexe, 1988.
+\item Berstein, Serge, and Pierre Milza. \textit{Histoire de la France au XXe siècle}. 5 vols. Paris: Complexe, 1990-1995.
+\item Bredin, Jean-Denis. \textit{L'Affaire}. Paris: Julliard, 1983.
+\item Jackson, Julian. \textit{The Fall of France: The Nazi Invasion of 1940}. Oxford: Oxford UP, 2003.
+\item Larkin, Maurice. \textit{Church and State after the Dreyfus Affair}. London: Macmillan, 1974.
+\item Mayeur, Jean-Marie, and Madeleine Rebérioux. \textit{The Third Republic from its Origins to the Great War}. Cambridge: Cambridge UP, 1984.
+\item McMillan, James F. \textit{Twentieth-Century France: Politics and Society, 1898-1991}. London: Arnold, 1992.
+\item Tombs, Robert. \textit{The Paris Commune 1871}. London: Longman, 1999.
+\item Weber, Eugen. \textit{Peasants into Frenchmen: The Modernization of Rural France, 1870-1914}. Stanford: Stanford UP, 1976.
+\item Winock, Michel. \textit{La France politique, XIXe-XXe siècle}. Paris: Seuil, 1999.
+\end{itemize}
+
+%══════════════════════════════════════════════════════════════════════════════
+% پایان فصل ۶
+%══════════════════════════════════════════════════════════════════════════════
+\end{document}

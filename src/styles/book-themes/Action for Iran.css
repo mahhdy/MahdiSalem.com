@@ -1,0 +1,18 @@
+/* تم خودکار: Action for Iran */
+
+.book-Action for Iran {
+  --color-bleurepublique: rgb(0, 85, 164);
+  --color-rougerevolution: rgb(190, 30, 45);
+  --color-orroyal: rgb(218, 165, 32);
+  --color-vertnapoleon: rgb(0, 102, 51);
+  --color-violetempire: rgb(102, 51, 153);
+  --color-gris: rgb(128, 128, 128);
+  --color-grisclair: rgb(220, 220, 220);
+  --color-grislight: rgb(245, 245, 245);
+  --font-main: 'Vazirmatn', serif;
+}
+
+
+.book-Action for Iran { font-family: var(--font-main, 'Vazirmatn', serif); }
+.book-Action for Iran .tikz-diagram { max-width: 100%; height: auto; margin: 2rem auto; display: block; }
+.book-Action for Iran figure.tikz-figure { text-align: center; margin: 2rem 0; }

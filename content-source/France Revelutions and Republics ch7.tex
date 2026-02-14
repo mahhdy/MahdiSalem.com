@@ -1,0 +1,1451 @@
+% ═══════════════════════════════════════════════════════════════════════════════
+%                    تاریخ تحولات فرانسه - فصل [X]
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\documentclass[12pt,a4paper]{book}
+
+% ─────────────────────────── پکیج‌ها ───────────────────────────
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{top=2.5cm, bottom=2.5cm, left=2cm, right=2.5cm, headheight=15pt}
+\usepackage{graphicx}
+\usepackage{array,booktabs,longtable,multirow,colortbl}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc, backgrounds, 
+	fit, decorations.pathmorphing, shadows, patterns}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{pdflscape}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage{pdfpages}
+\usepackage{pdflscape}  % برای صفحات landscape
+\usepackage{hyperref}
+
+% ─────────────────────────── رنگ‌ها ───────────────────────────
+\definecolor{bleurepublique}{RGB}{0, 35, 149}
+\definecolor{rougerevolution}{RGB}{237, 41, 57}
+\definecolor{orroyal}{RGB}{255, 215, 0}
+\definecolor{vertnapoleon}{RGB}{0, 100, 0}
+\definecolor{violetempire}{RGB}{128, 0, 128}
+\definecolor{fondclair}{RGB}{255, 253, 240}
+\definecolor{gris}{RGB}{128, 128, 128}
+\definecolor{grisclair}{RGB}{245, 245, 245}
+\definecolor{noirsombre}{RGB}{30, 30, 30}
+
+% رنگ‌های کمکی
+\definecolor{bleulight}{RGB}{230, 235, 250}
+\definecolor{rougelight}{RGB}{253, 235, 237}
+\definecolor{vertlight}{RGB}{235, 250, 235}
+\definecolor{violetlight}{RGB}{245, 235, 250}
+\definecolor{orroyallight}{RGB}{255, 250, 230}
+\definecolor{grislight}{RGB}{248, 248, 248}
+\definecolor{bleumid}{RGB}{180, 195, 230}
+\definecolor{rougemid}{RGB}{245, 180, 185}
+\definecolor{vertmid}{RGB}{180, 220, 180}
+\definecolor{violetmid}{RGB}{210, 180, 220}
+\definecolor{orroyalmid}{RGB}{255, 240, 180}
+\definecolor{orroyaldark}{RGB}{200, 170, 0}
+
+% ─────────────────────────── فونت فارسی ───────────────────────────
+\usepackage{fontspec}
+\setmainfont{Vazirmatn}
+\usepackage{xepersian}
+\settextfont{Vazirmatn}
+\setdigitfont{Vazirmatn}
+
+% ─────────────────────────── هایپرلینک ───────────────────────────
+\hypersetup{
+	colorlinks=true,
+	linkcolor=bleurepublique,
+	urlcolor=bleurepublique,
+	citecolor=vertnapoleon
+}
+
+% ─────────────────────────── کادرها ───────────────────────────
+\newtcolorbox{kholasebox}[1][]{enhanced,breakable,colback=bleulight,
+	colframe=bleurepublique,coltitle=white,fonttitle=\bfseries\large,
+	title={#1},boxrule=2pt,arc=4pt,left=10pt,right=10pt,top=10pt,bottom=10pt,
+	drop shadow={opacity=0.3}}
+
+\newtcolorbox{naghlbox}[1][]{enhanced,breakable,colback=orroyallight,
+	colframe=orroyaldark,coltitle=black,fonttitle=\bfseries,title={#1},
+	boxrule=1.5pt,arc=3pt,borderline west={4pt}{0pt}{orroyal},
+	left=15pt,right=10pt,top=8pt,bottom=8pt}
+
+\newtcolorbox{olgoobox}[1][]{enhanced,breakable,colback=vertlight,
+	colframe=vertnapoleon,coltitle=white,fonttitle=\bfseries,title={#1},
+	boxrule=1.5pt,arc=4pt,left=10pt,right=10pt,top=8pt,bottom=8pt,
+	before upper={\parindent15pt}}
+
+\newtcolorbox{enghelabbox}[1][]{enhanced,breakable,colback=rougelight,
+	colframe=rougerevolution,coltitle=white,fonttitle=\bfseries,title={#1},
+	boxrule=2pt,arc=4pt,left=10pt,right=10pt,top=8pt,bottom=8pt}
+
+\newtcolorbox{empirebox}[1][]{enhanced,breakable,colback=violetlight,
+	colframe=violetempire,coltitle=white,fonttitle=\bfseries,title={#1},
+	boxrule=1.5pt,arc=4pt,left=10pt,right=10pt,top=8pt,bottom=8pt}
+
+\newtcolorbox{noktebox}[1][]{enhanced,colback=grisclair,colframe=gris,
+	fonttitle=\bfseries,title={#1},boxrule=1pt,arc=3pt,left=8pt,right=8pt}
+
+% ─────────────────────────── صفحه‌آرایی ───────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RO]{\leftmark}
+\fancyhead[LE]{\rightmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\setstretch{1.5}
+
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries\color{bleurepublique}}
+{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titleformat{\section}
+{\normalfont\Large\bfseries\color{bleurepublique}}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\large\bfseries\color{bleurepublique}}{\thesubsection}{1em}{}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\begin{document}
+
+
+
+%══════════════════════════════════════════════════════════════════════════════
+% ادامه فصل ۷ — بخش ۲
+%══════════════════════════════════════════════════════════════════════════════
+%══════════════════════════════════════════════════════════════════════════════
+% فصل ۷: ویشی و جمهوری چهارم (۱۹۴۰-۱۹۵۸)
+%══════════════════════════════════════════════════════════════════════════════
+
+\chapter{ویشی و جمهوری چهارم (۱۹۴۰-۱۹۵۸)}
+\label{chap:vichy-fourth}
+
+\begin{kholasebox}
+	\textbf{خلاصه فصل:}
+	
+	دوره ۱۹۴۰-۱۹۵۸ یکی از دردناک‌ترین و پرتنش‌ترین دوره‌های تاریخ فرانسه است. این کشور که در ۱۹۴۰ ظرف شش هفته شکست خورد، چهار سال تحت اشغال و حکومت همکار ویشی زیست، سپس آزاد شد و کوشید با جمهوری چهارم به ثبات دست یابد—اما بار دیگر در بحران استعماری الجزایر فروپاشید.
+	
+	\textbf{دوره‌بندی:}
+	\begin{itemize}[nosep,rightmargin=0pt]
+		\item \textbf{فرانسه ویشی (۱۹۴۰-۱۹۴۴):} «دولت فرانسوی»، همکاری، انقلاب ملی
+		\item \textbf{مقاومت (۱۹۴۰-۱۹۴۴):} فرانسه آزاد، مقاومت داخلی
+		\item \textbf{آزادی و دولت موقت (۱۹۴۴-۱۹۴۶):} تصفیه، بازسازی
+		\item \textbf{جمهوری چهارم (۱۹۴۶-۱۹۵۸):} بی‌ثباتی، جنگ‌های استعماری، سقوط
+	\end{itemize}
+	
+	\textbf{مفاهیم کلیدی:} همکاری (\lr{collaboration})، مقاومت (\lr{Résistance})، تصفیه (\lr{épuration})، سه‌جانبه‌گرایی، استعمارزدایی، بحران الجزایر.
+\end{kholasebox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{فرانسه ویشی (۱۹۴۰-۱۹۴۴)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{تولد رژیم}
+
+در ۱۰ ژوئیه ۱۹۴۰، در کازینوی شهر آبگرم ویشی، ۵۶۹ نماینده و سناتور (از ۶۴۹ حاضر) به لایحه‌ای رأی دادند که «تمام اختیارات را به دولت جمهوری، تحت امضا و اقتدار مارشال پتن» واگذار می‌کرد. فقط ۸۰ نفر مخالفت کردند—آنها که بعداً «هشتاد تن» نامیده شدند.
+
+\begin{table}[htbp]
+	\centering
+	\caption{رأی‌گیری ۱۰ ژوئیه ۱۹۴۰}
+	\label{tab:vichy-vote}
+	\begin{tabular}{|r|c|c|}
+		\hline
+		\rowcolor{gris}
+		\textcolor{white}{\textbf{گزینه}} & \textcolor{white}{\textbf{تعداد}} & \textcolor{white}{\textbf{درصد حاضران}} \\
+		\hline
+		موافق & ۵۶۹ & ۸۸٪ \\
+		\hline
+		\rowcolor{grisclair}
+		مخالف & ۸۰ & ۱۲٪ \\
+		\hline
+		ممتنع & ۱۷ & — \\
+		\hline
+		\rowcolor{grisclair}
+		غایب & ۱۷۶ & — \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{noktebox}
+	\textbf{چرا چنین رأی یک‌طرفه‌ای؟}
+	
+	\begin{itemize}[nosep]
+		\item \textbf{شوک شکست:} باور به پایان فرانسه قدیم
+		\item \textbf{اعتبار پتن:} «قهرمان وردن»، پدر ملت
+		\item \textbf{فشار:} حضور آلمان‌ها، فضای رعب
+		\item \textbf{فرصت‌طلبی:} امید به جایگاه در نظم جدید
+		\item \textbf{غیبت:} ۲۷ نماینده در کشتی «ماسیلیا» به مراکش رفته بودند
+	\end{itemize}
+\end{noktebox}
+
+\subsection{ساختار رژیم}
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	box/.style={rectangle, rounded corners, draw=gris, fill=grisclair,
+		minimum width=3.5cm, minimum height=1.5cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,8) {ساختار «دولت فرانسوی» (ویشی)};
+	
+	% Pétain at top
+	\node[box, fill=orroyalmid, draw=orroyaldark, text=white, minimum width=5cm] (petain) at (7,6) 
+	{\textbf{مارشال پتن}\\«رئیس دولت فرانسوی»\\قدرت مطلقه};
+	
+	% Key positions
+	\node[box] (laval) at (2.5,3.5) {\textbf{لاوال}\\معاون (۱۹۴۰)\\نخست‌وزیر (۱۹۴۲-۴۴)};
+	
+	\node[box] (darlan) at (7,3.5) {\textbf{دارلان}\\جانشین (۱۹۴۱-۴۲)\\دریاسالار};
+	
+	\node[box] (ministers) at (11.5,3.5) {\textbf{وزرا}\\منصوب توسط پتن\\مسئول در برابر او};
+	
+	% Characteristics
+	\node[rectangle, draw=rougerevolution, fill=rougelight, rounded corners, align=center] at (3,1) 
+	{بدون مجلس\\بدون احزاب\\بدون انتخابات};
+	
+	\node[rectangle, draw=orroyaldark, fill=orroyallight, rounded corners, align=center] at (7,1) 
+	{شعار: «کار، خانواده، میهن»\\به جای «آزادی، برابری، برادری»};
+	
+	\node[rectangle, draw=violetempire, fill=violetlight, rounded corners, align=center] at (11,1) 
+	{پایتخت: ویشی\\منطقه «آزاد» (تا ۱۹۴۲)};
+	
+	% Arrows
+	\draw[->, thick, orroyaldark] (petain) -- (laval);
+	\draw[->, thick, orroyaldark] (petain) -- (darlan);
+	\draw[->, thick, orroyaldark] (petain) -- (ministers);
+	
+\end{tikzpicture}
+
+\subsection{تقسیم فرانسه}
+
+آتش‌بس ۲۲ ژوئن ۱۹۴۰ فرانسه را به چند منطقه تقسیم کرد:
+
+\begin{table}[htbp]
+	\centering
+	\caption{تقسیمات فرانسه تحت اشغال}
+	\label{tab:france-zones}
+	\begin{tabular}{|r|p{7cm}|c|}
+		\hline
+		\rowcolor{gris}
+		\textcolor{white}{\textbf{منطقه}} & \textcolor{white}{\textbf{توضیح}} & \textcolor{white}{\textbf{مساحت}} \\
+		\hline
+		منطقه اشغالی شمال & تحت کنترل مستقیم آلمان، پاریس & ۶۰٪ \\
+		\hline
+		\rowcolor{grisclair}
+		منطقه «آزاد» جنوب & تحت حاکمیت ویشی (تا نوامبر ۱۹۴۲) & ۴۰٪ \\
+		\hline
+		آلزاس-لورن & الحاق عملی به آلمان & — \\
+		\hline
+		\rowcolor{grisclair}
+		منطقه ممنوعه شمال‌شرق & برای مهاجرت آلمانی آینده & — \\
+		\hline
+		منطقه ایتالیایی & جنوب‌شرق (تا ۱۹۴۳) & کوچک \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{tikzpicture}[
+	every node/.style={font=\small}
+	]
+	% Title
+	\node[font=\bfseries\large] at (6,8) {نقشه فرانسه تقسیم‌شده (۱۹۴۰-۱۹۴۲)};
+	
+	% Simplified map outline
+	\draw[very thick] (0,0) -- (4,0) -- (5,2) -- (6,1) -- (8,2) -- (9,4) -- 
+	(10,5) -- (9,7) -- (6,7.5) -- (3,7) -- (1,5) -- (0,3) -- cycle;
+	
+	% Demarcation line
+	\draw[ultra thick, rougerevolution, dashed] (0,3.5) -- (3,3) -- (6,4) -- (9,3.5);
+	
+	% Zones
+	\fill[bleulight, opacity=0.5] (0,3.5) -- (3,3) -- (6,4) -- (9,3.5) -- 
+	(9,7) -- (6,7.5) -- (3,7) -- (1,5) -- (0,3) -- cycle;
+	\fill[orroyallight, opacity=0.5] (0,0) -- (4,0) -- (5,2) -- (6,1) -- (8,2) -- 
+	(9,3.5) -- (6,4) -- (3,3) -- (0,3.5) -- cycle;
+	
+	% Labels
+	\node at (5,5.5) {\textbf{منطقه اشغالی}};
+	\node[font=\footnotesize] at (5,5) {(تحت کنترل آلمان)};
+	
+	\node at (5,1.5) {\textbf{منطقه «آزاد»}};
+	\node[font=\footnotesize] at (5,1) {(ویشی)};
+	
+	% Cities
+	\fill (6,6) circle (0.1);
+	\node[font=\footnotesize, right] at (6.1,6) {پاریس};
+	
+	\fill (4,1.8) circle (0.1);
+	\node[font=\footnotesize, right] at (4.1,1.8) {ویشی};
+	
+	% Line label
+	\node[font=\footnotesize, rougerevolution] at (1,2.5) {خط مرزی};
+	
+	% Note
+	\node[font=\footnotesize, align=center] at (6,-1) 
+	{نوامبر ۱۹۴۲: آلمان منطقه «آزاد» را نیز اشغال کرد};
+	
+\end{tikzpicture}
+
+\subsection{«انقلاب ملی»}
+
+پتن فقط نمی‌خواست فرانسه را اداره کند؛ می‌خواست آن را دگرگون سازد. «انقلاب ملی» (\lr{Révolution nationale}) پروژه‌ای بود برای بازسازی فرانسه بر پایه‌های ضد جمهوری:
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	value/.style={rectangle, rounded corners, draw=orroyaldark, fill=orroyallight,
+		minimum width=3cm, minimum height=1.5cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,7.5) {«انقلاب ملی» ویشی};
+	
+	% Old values (crossed out)
+	\node[rectangle, draw=rougerevolution, fill=rougelight, rounded corners,
+	minimum width=8cm, minimum height=1.2cm, align=center] at (7,6) 
+	{{آزادی، برابری، برادری} — «شعارهای دروغین»};
+	
+	% New values
+	\node[value] (travail) at (2,3.5) {\textbf{کار}\\(\lr{Travail})\\ضد بیکاری، ضد اعتصاب};
+	
+	\node[value] (famille) at (7,3.5) {\textbf{خانواده}\\(\lr{Famille})\\ضد فردگرایی، نقش زن};
+	
+	\node[value] (patrie) at (12,3.5) {\textbf{میهن}\\(\lr{Patrie})\\ضد بین‌المللی‌گرایی};
+	
+	% Enemies
+	\node[rectangle, draw=gris, fill=grisclair, rounded corners, align=center] at (7,1) {
+		\textbf{«دشمنان فرانسه»:} فراماسون‌ها، کمونیست‌ها، یهودیان،\\
+		معلمان لائیک، «ضد فرانسه» (\lr{Anti-France})
+	};
+	
+\end{tikzpicture}
+
+\subsubsection{سیاست‌های انقلاب ملی}
+
+\begin{table}[htbp]
+	\centering
+	\caption{اقدامات انقلاب ملی}
+	\label{tab:national-revolution}
+	\begin{tabular}{|r|p{9cm}|}
+		\hline
+		\rowcolor{orroyalmid}
+		\textcolor{white}{\textbf{حوزه}} & \textcolor{white}{\textbf{اقدامات}} \\
+		\hline
+		\textbf{ضد جمهوری} & انحلال احزاب، ممنوعیت فراماسونری، تصفیه معلمان \\
+		\hline
+		\rowcolor{orroyallight}
+		\textbf{ضد یهود} & قوانین یهودستیزانه (اکتبر ۱۹۴۰، ژوئن ۱۹۴۱) \\
+		\hline
+		\textbf{کار} & منشور کار (۱۹۴۱)، ممنوعیت اتحادیه‌های آزاد \\
+		\hline
+		\rowcolor{orroyallight}
+		\textbf{خانواده} & محدودیت طلاق، تشویق زایمان، جرم‌انگاری سقط جنین \\
+		\hline
+		\textbf{جوانان} & «شانتیه دو ژونس» (اردوگاه‌های کار جوانان) \\
+		\hline
+		\rowcolor{orroyallight}
+		\textbf{روستا} & ایدئولوژی «بازگشت به زمین» (\lr{retour à la terre}) \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{همکاری با آلمان}
+
+همکاری (\lr{collaboration}) در چند سطح صورت گرفت:
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	level/.style={rectangle, rounded corners, minimum width=4.5cm, minimum height=1.8cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,8) {سطوح همکاری با آلمان نازی};
+	
+	% Levels
+	\node[level, draw=gris, fill=grisclair] (state) at (3,5.5) 
+	{\textbf{همکاری دولتی}\\مذاکره با آلمان\\«محافظت» از فرانسه};
+	
+	\node[level, draw=orroyaldark, fill=orroyallight] (admin) at (8,5.5) 
+	{\textbf{همکاری اداری}\\اجرای دستورات آلمان\\پلیس، بوروکراسی};
+	
+	\node[level, draw=violetempire, fill=violetlight] (econ) at (13,5.5) 
+	{\textbf{همکاری اقتصادی}\\کار اجباری، صنایع\\۴۰٪ تولید برای آلمان};
+	
+	\node[level, draw=rougerevolution, fill=rougemid, text=white] (ideol) at (5.5,2.5) 
+	{\textbf{همکاری ایدئولوژیک}\\فاشیست‌های فرانسوی\\دِآ، دوریو، براسیاک};
+	
+	\node[level, draw=rougerevolution, fill=rougemid, text=white] (milit) at (10.5,2.5) 
+	{\textbf{همکاری نظامی}\\لژیون ضدبلشویکی\\واحد اس‌اس شارلمانی};
+	
+	% Spectrum arrow
+	\draw[->, ultra thick] (0,0) -- (14,0);
+	\node at (0,0.4) {کمتر داوطلبانه};
+	\node at (14,0.4) {کاملاً داوطلبانه};
+	
+\end{tikzpicture}
+
+\subsubsection{دیدار مونتوار (۲۴ اکتبر ۱۹۴۰)}
+
+\begin{naghlbox}
+	«من امروز راه همکاری را در پیش می‌گیرم... این همکاری باید صادقانه باشد... من این همکاری را در افتخار می‌پذیرم.»
+	
+	\hfill --- \textit{مارشال پتن، ۳۰ اکتبر ۱۹۴۰}
+\end{naghlbox}
+
+دست‌دادن پتن و هیتلر در مونتوار، نماد «همکاری» شد—تصویری که تا ابد با ویشی گره خورد.
+
+\subsection{یهودستیزی و هولوکاست}
+
+ویشی منتظر دستور آلمان نماند؛ خودش ابتکار عمل را در دست گرفت:
+
+\begin{enghelabbox}
+	\textbf{قوانین یهودستیزانه ویشی}
+	
+	\textbf{قانون ۳ اکتبر ۱۹۴۰ (بدون درخواست آلمان):}
+	\begin{itemize}[nosep]
+		\item تعریف «یهودی» (نژادی)
+		\item ممنوعیت مشاغل دولتی، ارتش، آموزش، رسانه
+		\item محدودیت در مشاغل آزاد (پزشکی، حقوق)
+	\end{itemize}
+	
+	\textbf{قانون ۲ ژوئن ۱۹۴۱:}
+	\begin{itemize}[nosep]
+		\item سرشماری یهودیان
+		\item «آریایی‌سازی» اموال یهودی
+		\item محدودیت‌های بیشتر
+	\end{itemize}
+	
+	\textbf{رویداد وِل دیو (۱۶-۱۷ ژوئیه ۱۹۴۲):}
+	\begin{itemize}[nosep]
+		\item دستگیری ۱۳,۱۵۲ یهودی در پاریس توسط پلیس فرانسه
+		\item از جمله ۴,۰۰۰ کودک
+		\item زندانی در ولودروم زمستانی (ورزشگاه)
+		\item تحویل به آلمان‌ها، ارسال به آشویتس
+	\end{itemize}
+	
+	\textbf{آمار کلی:}
+	\begin{itemize}[nosep]
+		\item ۷۶,۰۰۰ یهودی از فرانسه به اردوگاه‌ها فرستاده شدند
+		\item فقط ۲,۵۰۰ نفر بازگشتند
+		\item حدود ۲۵٪ یهودیان فرانسه
+	\end{itemize}
+\end{enghelabbox}
+
+\begin{noktebox}
+	\textbf{نکته مهم:}
+	
+	ویشی یهودیان «خارجی» را راحت‌تر تحویل داد تا یهودیان «فرانسوی». این «معامله» نشان می‌داد که ویشی یهودستیزی را پذیرفته بود، فقط می‌خواست «یهودیان خودش» را نگه دارد—که البته نتوانست.
+\end{noktebox}
+
+\subsection{کار اجباری (\lr{STO})}
+
+از فوریه ۱۹۴۳، «خدمت کار اجباری» (\lr{Service du travail obligatoire}) برقرار شد:
+
+\begin{itemize}
+	\item \textbf{هدف:} ارسال کارگر به آلمان
+	\item \textbf{تعداد:} ۶۵۰,۰۰۰ فرانسوی به آلمان فرستاده شدند
+	\item \textbf{پیامد:} هزاران جوان به جنگل‌ها گریختند و به «ماکی» (مقاومت روستایی) پیوستند
+\end{itemize}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{مقاومت (۱۹۴۰-۱۹۴۴)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{فرانسه آزاد و دوگل}
+
+در ۱۸ ژوئن ۱۹۴۰، ژنرال شارل دوگل از لندن ندای مقاومت سر داد:
+
+\begin{naghlbox}
+	\textbf{ندای ۱۸ ژوئن ۱۹۴۰}
+	
+	«آیا آخرین کلمه گفته شده است؟ آیا امید باید ناپدید شود؟ آیا شکست قطعی است؟ نه!
+	
+	باور کنید مرا، من که با آگاهی کامل سخن می‌گویم، و به شما می‌گویم که هیچ چیز از دست نرفته است برای فرانسه. همان ابزارهایی که ما را شکست دادند، می‌توانند روزی پیروزی را بیاورند.
+	
+	زیرا فرانسه تنها نیست!... این جنگ، جنگ جهانی است.
+	
+	من، ژنرال دوگل، که اکنون در لندن هستم، از افسران و سربازان فرانسوی... از مهندسان و کارگران متخصص صنایع تسلیحاتی... دعوت می‌کنم که با من تماس بگیرند.
+	
+	هر چه پیش آید، شعله مقاومت فرانسه نباید خاموش شود و خاموش نخواهد شد.»
+	
+	\hfill --- \textit{شارل دوگل، ۱۸ ژوئن ۱۹۴۰}
+\end{naghlbox}
+
+\begin{table}[htbp]
+	\centering
+	\caption{شارل دوگل در ۱۹۴۰}
+	\label{tab:de-gaulle-1940}
+	\begin{tabular}{|r|p{10cm}|}
+		\hline
+		\rowcolor{bleumid}
+		\textcolor{white}{\textbf{ویژگی}} & \textcolor{white}{\textbf{توضیح}} \\
+		\hline
+		\textbf{سن} & ۴۹ سال \\
+		\hline
+		\rowcolor{bleulight}
+		\textbf{درجه} & ژنرال بریگاد (تازه ارتقا یافته) \\
+		\hline
+		\textbf{سابقه} & فرمانده تانک در ۱۹۴۰، معاون وزیر جنگ (چند روز) \\
+		\hline
+		\rowcolor{bleulight}
+		\textbf{شهرت} & نویسنده نظامی، طرفدار جنگ مکانیزه \\
+		\hline
+		\textbf{وضعیت قانونی} & محکوم به اعدام غیابی توسط ویشی \\
+		\hline
+		\rowcolor{bleulight}
+		\textbf{منابع اولیه} & چند صد داوطلب، حمایت محدود چرچیل \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{تحول فرانسه آزاد}
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	phase/.style={rectangle, rounded corners, draw=bleurepublique, fill=bleulight,
+		minimum width=5cm, minimum height=2cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,8) {تحول فرانسه آزاد به فرانسه مبارز};
+	
+	% Timeline
+	\draw[very thick, bleurepublique] (0,5.5) -- (14,5.5);
+	
+	% Phases
+	\node[phase] (p1) at (2.5,3) {\textbf{۱۹۴۰-۱۹۴۲}\\«فرانسه آزاد»\\نیروهای محدود\\آفریقای استوایی};
+	
+	\node[phase] (p2) at (7.5,3) {\textbf{۱۹۴۲-۱۹۴۳}\\«فرانسه مبارز»\\گسترش، الجزایر\\ادغام با ژیرو};
+	
+	\node[phase] (p3) at (12,3) {\textbf{۱۹۴۳-۱۹۴۴}\\«\lr{CFLN/GPRF}»\\دولت موقت\\به رسمیت شناخته شده};
+	
+	% Markers
+	\fill[bleurepublique] (2.5,5.5) circle (0.12);
+	\fill[bleurepublique] (7.5,5.5) circle (0.12);
+	\fill[bleurepublique] (12,5.5) circle (0.12);
+	
+	% Key events
+	\node[font=\footnotesize] at (2.5,6.2) {ژوئن ۱۹۴۰};
+	\node[font=\footnotesize] at (7.5,6.2) {نوامبر ۱۹۴۲};
+	\node[font=\footnotesize] at (12,6.2) {ژوئن ۱۹۴۴};
+	
+	% Arrows
+	\draw[->, very thick, bleurepublique] (p1) -- (p2);
+	\draw[->, very thick, bleurepublique] (p2) -- (p3);
+	
+\end{tikzpicture}
+
+\subsection{مقاومت داخلی}
+
+مقاومت داخلی از گروه‌های کوچک و پراکنده شروع شد و تدریجاً سازمان‌یافته شد:
+
+\begin{table}[htbp]
+	\centering
+	\caption{جنبش‌های اصلی مقاومت داخلی}
+	\label{tab:resistance-movements}
+	\begin{tabular}{|r|c|p{5cm}|}
+		\hline
+		\rowcolor{rougemid}
+		\textcolor{white}{\textbf{جنبش}} & \textcolor{white}{\textbf{منطقه}} & \textcolor{white}{\textbf{گرایش}} \\
+		\hline
+		کمبا (\lr{Combat}) & جنوب & مسیحی دموکرات، ملی \\
+		\hline
+		\rowcolor{rougelight}
+		فران-تیرور (\lr{Franc-Tireur}) & جنوب & سوسیالیست \\
+		\hline
+		لیبراسیون (\lr{Libération}) & شمال و جنوب & چپ، سندیکالیست \\
+		\hline
+		\rowcolor{rougelight}
+		\lr{FTP} & سراسری & کمونیست (از ۱۹۴۱) \\
+		\hline
+		دفاع از فرانسه & شمال & گلیست \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsubsection{ژان مولَن و شورای ملی مقاومت}
+
+\begin{olgoobox}
+	\textbf{ژان مولَن (۱۸۹۹-۱۹۴۳)}
+	
+	\begin{itemize}[nosep]
+		\item استاندار جوان، مقاوم از ۱۹۴۰
+		\item فرستاده دوگل به فرانسه (ژانویه ۱۹۴۲)
+		\item مأموریت: متحد کردن مقاومت تحت رهبری دوگل
+		\item \textbf{۲۷ مه ۱۹۴۳:} تشکیل شورای ملی مقاومت (\lr{CNR})
+		\item \textbf{۲۱ ژوئن ۱۹۴۳:} دستگیری در کالویر
+		\item \textbf{۸ ژوئیه ۱۹۴۳:} مرگ زیر شکنجه کلاوس باربی
+	\end{itemize}
+	
+	خاکستر مولَن در ۱۹۶۴ به پانتئون منتقل شد.
+\end{olgoobox}
+
+\begin{naghlbox}
+	«او کسی بود که شعله یک چراغ ضعیف را حفظ کرد؛ و مهم نیست: شعله روشن بود.»
+	
+	\hfill --- \textit{آندره مالرو، در مراسم پانتئون، ۱۹۶۴}
+\end{naghlbox}
+
+\subsection{برنامه شورای ملی مقاومت (مارس ۱۹۴۴)}
+
+\begin{olgoobox}
+	\textbf{برنامه \lr{CNR} — «روزهای خوش»}
+	
+	برنامه‌ای برای فرانسه پس از آزادی، توافق‌شده میان همه گرایش‌ها (از گلیست‌ها تا کمونیست‌ها):
+	
+	\textbf{اقدامات فوری:}
+	\begin{itemize}[nosep]
+		\item برقراری مجدد آزادی‌های جمهوری
+		\item مجازات خائنان
+		\item مصادره اموال همکاران
+	\end{itemize}
+	
+	\textbf{اصلاحات ساختاری:}
+	\begin{itemize}[nosep]
+		\item ملی‌سازی انرژی، بیمه، بانک‌های بزرگ
+		\item برنامه‌ریزی اقتصادی
+		\item حق مشارکت کارگران در مدیریت
+		\item تأمین اجتماعی جامع
+		\item حق کار و استراحت
+		\item آموزش برابر برای همه
+	\end{itemize}
+	
+	این برنامه، اساس دولت رفاه فرانسه شد.
+\end{olgoobox}
+
+\subsection{نبرد و آزادی}
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	event/.style={rectangle, rounded corners, draw=bleurepublique, fill=bleulight,
+		minimum width=3.5cm, minimum height=1.3cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,7.5) {آزادی فرانسه (۱۹۴۴)};
+	
+	% Timeline
+	\draw[very thick, bleurepublique] (0,5.5) -- (14,5.5);
+	
+	% Events
+	\node[event] (e1) at (2,3.5) {\textbf{۶ ژوئن}\\پیاده‌روی نرماندی\\روز دی};
+	
+	\node[event] (e2) at (5.5,3.5) {\textbf{۱۵ اوت}\\پیاده‌روی\\پروونس};
+	
+	\node[event] (e3) at (9,3.5) {\textbf{۱۹-۲۵ اوت}\\قیام پاریس\\آزادی پایتخت};
+	
+	\node[event] (e4) at (12.5,3.5) {\textbf{پاییز ۱۹۴۴}\\آزادی کامل\\(جز «جیب‌ها»)};
+	
+	% Markers
+	\foreach \x in {2, 5.5, 9, 12.5} {
+		\fill[bleurepublique] (\x,5.5) circle (0.1);
+		\draw[->, thick, bleurepublique] (\x,5.5) -- (\x,4.3);
+	}
+	
+	% De Gaulle's entry
+	\node[rectangle, draw=vertnapoleon, fill=vertlight, rounded corners, align=center] at (7,1) {
+		\textbf{۲۶ اوت ۱۹۴۴:} رژه دوگل در شانزه‌لیزه\\
+		تثبیت مشروعیت دولت موقت\\
+		جلوگیری از قدرت‌گیری کمونیست‌ها یا متفقین
+	};
+	
+\end{tikzpicture}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{دولت موقت و تصفیه (۱۹۴۴-۱۹۴۶)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{دولت موقت جمهوری فرانسه (\lr{GPRF})}
+
+دوگل در ۲۵ اوت ۱۹۴۴ وارد پاریس شد و دولت موقت را تشکیل داد—ائتلافی از گلیست‌ها، کمونیست‌ها، سوسیالیست‌ها، و دموکرات‌مسیحی‌ها (\lr{MRP}).
+
+\begin{table}[htbp]
+	\centering
+	\caption{اقدامات دولت موقت (۱۹۴۴-۱۹۴۶)}
+	\label{tab:gprf-actions}
+	\begin{tabular}{|c|p{9cm}|}
+		\hline
+		\rowcolor{bleumid}
+		\textcolor{white}{\textbf{سال}} & \textcolor{white}{\textbf{اقدام}} \\
+		\hline
+		۱۹۴۴ & حق رأی زنان (اولین بار در تاریخ فرانسه) \\
+		\hline
+		\rowcolor{bleulight}
+		۱۹۴۴-۴۵ & ملی‌سازی‌ها: رنو، ایر فرانس، زغال‌سنگ، بانک فرانسه \\
+		\hline
+		۱۹۴۵ & تأسیس تأمین اجتماعی (\lr{Sécurité sociale}) \\
+		\hline
+		\rowcolor{bleulight}
+		۱۹۴۵ & تأسیس کمیساریای برنامه‌ریزی (ژان مونه) \\
+		\hline
+		۱۹۴۵ & تأسیس مدرسه ملی مدیریت (\lr{ENA}) \\
+		\hline
+		\rowcolor{bleulight}
+		۱۹۴۶ & قانون اساسی جدید (پس از دو همه‌پرسی) \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{تصفیه (\lr{Épuration})}
+
+پس از آزادی، موج انتقام از «همکاران» آغاز شد:
+
+\begin{enghelabbox}
+	\textbf{تصفیه: آمار و ابعاد}
+	
+	\textbf{تصفیه غیررسمی («وحشی»):}
+	\begin{itemize}[nosep]
+		\item اعدام‌های بدون محاکمه: ۹,۰۰۰ تا ۱۰,۰۰۰ نفر
+		\item تراشیدن سر زنان («همکاران افقی»): حدود ۲۰,۰۰۰
+		\item خشونت، غارت، انتقام‌جویی
+	\end{itemize}
+	
+	\textbf{تصفیه قانونی:}
+	\begin{itemize}[nosep]
+		\item بازداشت‌ها: بیش از ۱۲۰,۰۰۰ نفر
+		\item محاکمات: حدود ۱۲۵,۰۰۰ نفر
+		\item احکام اعدام: ۷,۰۳۷ (اجرا شده: ۱,۵۰۰)
+		\item حبس: ۳۸,۰۰۰
+		\item محرومیت از حقوق مدنی: ۴۹,۰۰۰
+	\end{itemize}
+	
+	\textbf{محاکمات مهم:}
+	\begin{itemize}[nosep]
+		\item \textbf{پتن:} محکوم به اعدام، تبدیل به حبس ابد (مرگ ۱۹۵۱)
+		\item \textbf{لاوال:} اعدام (اکتبر ۱۹۴۵)
+		\item \textbf{براسیاک:} اعدام (فوریه ۱۹۴۵)
+	\end{itemize}
+\end{enghelabbox}
+
+\begin{naghlbox}
+	«تصفیه ناقص بود، اما اگر کامل‌تر بود، فرانسه را پاره‌پاره می‌کرد.»
+	
+	\hfill --- \textit{تحلیل رایج}
+\end{naghlbox}
+
+\subsection{استعفای دوگل (ژانویه ۱۹۴۶)}
+
+در ۲۰ ژانویه ۱۹۴۶، دوگل به طور ناگهانی استعفا داد. دلیل: مخالفت با «رژیم احزاب» که در حال شکل‌گیری بود.
+
+\begin{noktebox}
+	\textbf{چرا دوگل رفت؟}
+	
+	\begin{itemize}[nosep]
+		\item مخالفت با قانون اساسی پارلمانتاریستی در حال تدوین
+		\item اعتقاد به ضرورت قوه مجریه قوی
+		\item امتناع از سازش با احزاب
+		\item امید (نادرست) به اینکه ملت او را فرا خواهد خواند
+	\end{itemize}
+	
+	دوگل ۱۲ سال در «بیابان» سیاسی ماند تا بحران الجزایر او را بازگرداند.
+\end{noktebox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{جمهوری چهارم (۱۹۴۶-۱۹۵۸)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{تأسیس}
+
+پس از رد اولین پیش‌نویس قانون اساسی در همه‌پرسی مه ۱۹۴۶، دومین پیش‌نویس با اکثریت ضعیف (۵۳٪) در اکتبر ۱۹۴۶ تصویب شد.
+
+\begin{table}[htbp]
+	\centering
+	\caption{مقایسه جمهوری سوم و چهارم}
+	\label{tab:third-fourth-comparison}
+	\begin{tabular}{|r|p{5cm}|p{5cm}|}
+		\hline
+		\rowcolor{bleumid}
+		\textcolor{white}{\textbf{ویژگی}} & \textcolor{white}{\textbf{جمهوری سوم}} & \textcolor{white}{\textbf{جمهوری چهارم}} \\
+		\hline
+		نظام & پارلمانی & پارلمانی (تقویت‌شده) \\
+		\hline
+		\rowcolor{bleulight}
+		مجلسین & هر دو قوی & مجلس ملی قوی‌تر \\
+		\hline
+		رئیس‌جمهور & تشریفاتی & تشریفاتی \\
+		\hline
+		\rowcolor{bleulight}
+		دولت & ناپایدار & ناپایدار \\
+		\hline
+		حق رأی & مردان & همگانی (زنان از ۱۹۴۴) \\
+		\hline
+		\rowcolor{bleulight}
+		مدت & ۷۰ سال & ۱۲ سال \\
+		\hline
+		تعداد دولت‌ها & ۱۰۸ & ۲۴ \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	box/.style={rectangle, rounded corners, draw=bleurepublique, fill=bleulight,
+		minimum width=3.5cm, minimum height=1.5cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,7.5) {ساختار جمهوری چهارم};
+	
+	% President
+	\node[box, fill=grisclair, draw=gris] (pres) at (7,6) 
+	{\textbf{رئیس‌جمهور}\\انتخاب توسط مجلسین\\تشریفاتی};
+	
+	% National Assembly
+	\node[box] (assembly) at (3,3.5) 
+	{\textbf{مجلس ملی}\\انتخاب مستقیم\\قدرت اصلی};
+	
+	% Council of Republic
+	\node[box, fill=grisclair, draw=gris] (council) at (11,3.5) 
+	{\textbf{شورای جمهوری}\\جایگزین سنا\\اختیارات محدود};
+	
+	% Government
+	\node[box, fill=rougelight, draw=rougerevolution] (gov) at (7,1) 
+	{\textbf{دولت}\\مسئول در برابر مجلس\\«سرمایه‌گذاری» + رأی اعتماد};
+	
+	% Arrows
+	\draw[->, thick] (assembly) -- (gov) node[midway, left] {کنترل};
+	\draw[->, thick] (pres) -- (gov) node[midway, right] {انتصاب نخست‌وزیر};
+	\draw[<->, thick, dashed] (assembly) -- (council);
+	
+\end{tikzpicture}
+
+\subsection{سه‌جانبه‌گرایی (۱۹۴۴-۱۹۴۷)}
+
+از آزادی تا ۱۹۴۷، سه حزب بزرگ با هم حکومت کردند:
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	party/.style={rectangle, rounded corners, minimum width=3.5cm, minimum height=2cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,7) {سه‌جانبه‌گرایی (\lr{Tripartisme})};
+	
+	% Parties
+	\node[party, draw=rougerevolution, fill=rougemid, text=white] (pcf) at (2,4) 
+	{\textbf{\lr{PCF}}\\حزب کمونیست\\۲۸٪ آرا (۱۹۴۶)};
+	
+	\node[party, draw=rougerevolution, fill=rougelight] (sfio) at (7,4) 
+	{\textbf{\lr{SFIO}}\\سوسیالیست\\۲۱٪ آرا};
+	
+	\node[party, draw=bleurepublique, fill=bleulight] (mrp) at (12,4) 
+	{\textbf{\lr{MRP}}\\دموکرات‌مسیحی\\۲۶٪ آرا};
+	
+	% Coalition
+	\node[rectangle, draw=vertnapoleon, fill=vertlight, rounded corners,
+	minimum width=10cm, minimum height=1.2cm, align=center] at (7,1.5) 
+	{\textbf{ائتلاف حاکم:} بیش از ۷۵٪ آرا\\اجماع بر بازسازی، تأمین اجتماعی، ملی‌سازی};
+	
+	% Arrows
+	\draw[->, thick] (pcf) -- (7,2.2);
+	\draw[->, thick] (sfio) -- (7,2.2);
+	\draw[->, thick] (mrp) -- (7,2.2);
+	
+\end{tikzpicture}
+
+\subsection{جنگ سرد و پایان سه‌جانبه‌گرایی (۱۹۴۷)}
+
+در مه ۱۹۴۷، نخست‌وزیر رامادیه وزرای کمونیست را برکنار کرد:
+
+\begin{itemize}
+	\item \textbf{دلیل رسمی:} اختلاف بر سر سیاست دستمزد
+	\item \textbf{دلیل واقعی:} جنگ سرد، فشار آمریکا (طرح مارشال)
+	\item \textbf{نتیجه:} \lr{PCF} تا ۱۹۸۱ از دولت بیرون ماند
+\end{itemize}
+
+\subsection{«نیروی سوم» و بی‌ثباتی}
+
+پس از ۱۹۴۷، جمهوری چهارم میان دو اپوزیسیون گیر افتاد:
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	opp/.style={rectangle, rounded corners, draw=rougerevolution, fill=rougelight,
+		minimum width=4cm, minimum height=2cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,7) {جمهوری چهارم میان دو آتش};
+	
+	% Left opposition
+	\node[opp, fill=rougemid, text=white] (left) at (2,4) 
+	{\textbf{چپ:}\\حزب کمونیست\\۲۵-۲۸٪ آرا\\«حزب شوروی»};
+	
+	% Center - government
+	\node[rectangle, rounded corners, draw=bleurepublique, fill=bleulight,
+	minimum width=5cm, minimum height=2cm, align=center] (center) at (7,4) 
+	{\textbf{«نیروی سوم»:}\\سوسیالیست‌ها + \lr{MRP} + رادیکال‌ها\\حکومت با اکثریت شکننده};
+	
+	% Right opposition
+	\node[opp, fill=violetlight, draw=violetempire] (right) at (12,4) 
+	{\textbf{راست:}\\گلیست‌ها (\lr{RPF})\\پوژادیست‌ها\\ضد نظام};
+	
+	% Pressure arrows
+	\draw[->, ultra thick, rougerevolution] (left) -- (center);
+	\draw[->, ultra thick, violetempire] (right) -- (center);
+	
+	% Result
+	\node[rectangle, draw=gris, fill=grisclair, rounded corners, align=center] at (7,1) 
+	{\textbf{نتیجه:} دولت‌های ائتلافی ضعیف\\۲۴ دولت در ۱۲ سال — میانگین ۶ ماه};
+	
+\end{tikzpicture}
+
+\subsection{دستاوردهای اقتصادی}
+
+علی‌رغم بی‌ثباتی سیاسی، جمهوری چهارم دوره رشد اقتصادی بود:
+
+\begin{table}[htbp]
+	\centering
+	\caption{شاخص‌های اقتصادی جمهوری چهارم}
+	\label{tab:fourth-republic-economy}
+	\begin{tabular}{|r|c|c|c|}
+		\hline
+		\rowcolor{vertmid}
+		\textcolor{white}{\textbf{شاخص}} & \textcolor{white}{\textbf{۱۹۴۶}} & \textcolor{white}{\textbf{۱۹۵۸}} & \textcolor{white}{\textbf{رشد}} \\
+		\hline
+		تولید صنعتی (شاخص) & ۷۰ & ۱۸۰ & +۱۵۷٪ \\
+		\hline
+		\rowcolor{vertlight}
+		تولید ناخالص داخلی & پایه & +۵۰٪ & ۴.۵٪ سالانه \\
+		\hline
+		خودرو سالانه (هزار) & ۸۵ & ۱,۱۰۰ & +۱,۲۰۰٪ \\
+		\hline
+		\rowcolor{vertlight}
+		مصرف برق & پایه & ۳ برابر & — \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{olgoobox}
+	\textbf{عوامل رشد اقتصادی}
+	
+	\begin{itemize}[nosep]
+		\item \textbf{طرح مارشال:} ۲.۵ میلیارد دلار کمک آمریکا (۱۹۴۸-۱۹۵۲)
+		\item \textbf{برنامه‌ریزی:} طرح‌های مونه (مدرنیزاسیون)
+		\item \textbf{ملی‌سازی:} سرمایه‌گذاری دولتی در زیرساخت
+		\item \textbf{جامعه زغال و فولاد:} آغاز همگرایی اروپایی (۱۹۵۱)
+		\item \textbf{رشد جمعیت:} بیبی‌بوم پس از جنگ
+	\end{itemize}
+\end{olgoobox}
+
+\subsection{آغاز اتحادیه اروپا}
+
+فرانسه نقش محوری در ساختن اروپای متحد داشت:
+
+\begin{table}[htbp]
+	\centering
+	\caption{گام‌های اروپایی جمهوری چهارم}
+	\label{tab:european-steps}
+	\begin{tabular}{|c|p{8cm}|}
+		\hline
+		\rowcolor{bleumid}
+		\textcolor{white}{\textbf{سال}} & \textcolor{white}{\textbf{رویداد}} \\
+		\hline
+		۱۹۵۰ & اعلامیه شومان: پیشنهاد جامعه زغال و فولاد \\
+		\hline
+		\rowcolor{bleulight}
+		۱۹۵۱ & معاهده پاریس: تأسیس \lr{CECA} (شش کشور) \\
+		\hline
+		۱۹۵۴ & رد ارتش اروپایی (\lr{CED}) توسط مجلس فرانسه \\
+		\hline
+		\rowcolor{bleulight}
+		۱۹۵۷ & معاهده رم: تأسیس جامعه اقتصادی اروپا (\lr{CEE}) \\
+		\hline
+	\end{tabular}
+\end{table}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{جنگ‌های استعماری}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{هندوچین (۱۹۴۶-۱۹۵۴)}
+
+\begin{enghelabbox}
+	\textbf{جنگ هندوچین}
+	
+	\begin{itemize}[nosep]
+		\item \textbf{آغاز:} بمباران هایفونگ (نوامبر ۱۹۴۶)
+		\item \textbf{دشمن:} ویت‌مین به رهبری هو شی مین
+		\item \textbf{ماهیت:} جنگ چریکی، کمونیسم vs استعمار
+		\item \textbf{تلفات فرانسه:} ۹۲,۰۰۰ (از جمله ۲۰,۰۰۰ فرانسوی)
+		\item \textbf{هزینه:} بیش از بودجه طرح مارشال برای فرانسه
+		\item \textbf{فاجعه نهایی:} دین‌بین‌فو (مارس-مه ۱۹۵۴)
+		\item \textbf{نتیجه:} قراردادهای ژنو، خروج فرانسه، تقسیم ویتنام
+	\end{itemize}
+\end{enghelabbox}
+
+\begin{naghlbox}
+	«دین‌بین‌فو نه فقط یک شکست نظامی بود، بلکه پایان توهم فرانسه بزرگ استعماری بود.»
+	
+	\hfill --- \textit{تحلیل مورخان}
+\end{naghlbox}
+
+\subsection{شروع جنگ الجزایر (۱۹۵۴)}
+
+در ۱ نوامبر ۱۹۵۴—همان روز امضای قراردادهای ژنو—جبهه آزادی‌بخش ملی الجزایر با حملات هماهنگ در سراسر الجزایر، قیام مسلحانه را آغاز کرد.
+
+\begin{table}[htbp]
+	\centering
+	\caption{الجزایر در نظام استعماری فرانسه}
+	\label{tab:algeria-status}
+	\begin{tabular}{|r|p{9cm}|}
+		\hline
+		\rowcolor{rougemid}
+		\textcolor{white}{\textbf{ویژگی}} & \textcolor{white}{\textbf{توضیح}} \\
+		\hline
+		\textbf{وضعیت حقوقی} & سه «دپارتمان» فرانسه (نه مستعمره)—بخشی از خاک فرانسه \\
+		\hline
+		\rowcolor{rougelight}
+		\textbf{جمعیت (۱۹۵۴)} & ۹ میلیون مسلمان، ۱ میلیون اروپایی‌تبار («پیه‌نوار») \\
+		\hline
+		\textbf{سابقه استعمار} & از ۱۸۳۰ (۱۲۴ سال) \\
+		\hline
+		\rowcolor{rougelight}
+		\textbf{مهاجران فرانسوی} & نسل سوم و چهارم، الجزایر را «وطن» می‌دانستند \\
+		\hline
+		\textbf{نابرابری} & مسلمانان شهروند درجه دو، محرومیت اقتصادی و سیاسی \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{noktebox}
+	\textbf{چرا الجزایر متفاوت بود؟}
+	
+	\begin{itemize}[nosep]
+		\item \textbf{وضعیت حقوقی:} الجزایر «فرانسه» بود، نه مستعمره
+		\item \textbf{جمعیت اروپایی:} یک میلیون «پیه‌نوار» با نفوذ سیاسی قوی
+		\item \textbf{احساسات:} پس از شکست هندوچین، «دیگر عقب‌نشینی نه»
+		\item \textbf{ارتش:} افسران می‌خواستند «شکست را جبران کنند»
+		\item \textbf{نفت:} کشف نفت صحرا در ۱۹۵۶
+	\end{itemize}
+\end{noktebox}
+
+\subsubsection{تشدید جنگ}
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	event/.style={rectangle, rounded corners, draw=rougerevolution, fill=rougelight,
+		minimum width=3cm, minimum height=1.2cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,7.5) {تشدید جنگ الجزایر (۱۹۵۴-۱۹۵۸)};
+	
+	% Timeline
+	\draw[very thick, rougerevolution] (0,5.5) -- (14,5.5);
+	
+	% Events
+	\node[event] (e1) at (1.5,3.5) {\textbf{نوامبر ۱۹۵۴}\\«توسن سرخ»\\آغاز قیام};
+	
+	\node[event] (e2) at (5,3.5) {\textbf{اوت ۱۹۵۵}\\کشتار فیلیپ‌ویل\\قسطنطنیه};
+	
+	\node[event] (e3) at (8.5,3.5) {\textbf{۱۹۵۶-۵۷}\\نبرد الجزیره\\شکنجه سیستماتیک};
+	
+	\node[event] (e4) at (12,3.5) {\textbf{فوریه ۱۹۵۸}\\بمباران ساکیه\\بحران بین‌المللی};
+	
+	% Markers
+	\foreach \x in {1.5, 5, 8.5, 12} {
+		\fill[rougerevolution] (\x,5.5) circle (0.1);
+		\draw[->, thick, rougerevolution] (\x,5.5) -- (\x,4.3);
+	}
+	
+	% Statistics box
+	\node[rectangle, draw=gris, fill=grisclair, rounded corners, align=center] at (7,1) {
+		\textbf{نیروی فرانسه:} ۴۰۰,۰۰۰ سرباز (۱۹۵۶)\\
+		\textbf{سربازان وظیفه:} برای اولین بار در جنگ استعماری\\
+		\textbf{روش‌ها:} جمع‌آوری جمعیت، شکنجه، اعدام‌های فراقانونی
+	};
+	
+\end{tikzpicture}
+
+\subsubsection{شکنجه و بحران اخلاقی}
+
+\begin{enghelabbox}
+	\textbf{مسئله شکنجه}
+	
+	در جریان «نبرد الجزیره» (ژانویه-اکتبر ۱۹۵۷)، ارتش فرانسه به شکنجه سیستماتیک روی آورد:
+	
+	\begin{itemize}[nosep]
+		\item برق‌گرفتگی («ژژن»)
+		\item غرق‌کردن («باینوار»)
+		\item شکنجه جنسی
+		\item «ناپدیدشدن» زندانیان
+	\end{itemize}
+	
+	\textbf{واکنش‌ها:}
+	\begin{itemize}[nosep]
+		\item افشاگری‌ها: کتاب «سؤال» (هانری آلگ، ۱۹۵۸)
+		\item اعتراض روشنفکران: سارتر، موریاک، کامو
+		\item استعفای ژنرال دو بولاردیه (تنها ژنرال معترض)
+		\item بحران وجدان ملی
+	\end{itemize}
+\end{enghelabbox}
+
+\begin{naghlbox}
+	«نه قربانیان و نه شکنجه‌گران فراموش نخواهند کرد. شکنجه در خاطره ملت‌ها حک می‌شود.»
+	
+	\hfill --- \textit{ژان-پل سارتر}
+\end{naghlbox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{سقوط جمهوری چهارم (۱۹۵۸)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{بحران مه ۱۹۵۸}
+
+جمهوری چهارم در بحران الجزایر غرق شد. دولت‌ها یکی پس از دیگری سقوط می‌کردند، بدون آنکه راه‌حلی بیابند.
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	event/.style={rectangle, rounded corners, draw=rougerevolution, fill=rougelight,
+		minimum width=4cm, minimum height=1.5cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,8) {بحران مه ۱۹۵۸: سقوط جمهوری چهارم};
+	
+	% Timeline
+	\draw[very thick, rougerevolution] (0,6) -- (14,6);
+	
+	% Events
+	\node[event] (e1) at (2,4) {\textbf{۱۳ مه}\\شورش در الجزیره\\تصرف ساختمان دولتی\\«کمیته نجات عمومی»};
+	
+	\node[event] (e2) at (7,4) {\textbf{۱۵ مه}\\ژنرال سالان:\\«دوگل زنده باد!»\\ارتش خواهان دوگل};
+	
+	\node[event] (e3) at (12,4) {\textbf{۲۴ مه}\\«عملیات احیا»\\چترباران کُرس\\تهدید پاریس};
+	
+	% Result
+	\node[rectangle, draw=bleurepublique, fill=bleumid, text=white, rounded corners,
+	minimum width=10cm, minimum height=1.5cm, align=center] (result) at (7,1) {
+		\textbf{۱ ژوئن ۱۹۵۸:} دوگل نخست‌وزیر شد (۳۲۹ رأی موافق، ۲۲۴ مخالف)\\
+		\textbf{۲ ژوئن:} اختیارات تام برای ۶ ماه + تدوین قانون اساسی جدید
+	};
+	
+	% Arrows
+	\draw[->, ultra thick, rougerevolution] (e1) -- (e2);
+	\draw[->, ultra thick, rougerevolution] (e2) -- (e3);
+	\draw[->, ultra thick, bleurepublique] (7,2.5) -- (result);
+	
+\end{tikzpicture}
+
+\subsection{چگونه دوگل بازگشت؟}
+
+\begin{table}[htbp]
+	\centering
+	\caption{مراحل بازگشت دوگل به قدرت}
+	\label{tab:de-gaulle-return}
+	\begin{tabular}{|c|p{9cm}|}
+		\hline
+		\rowcolor{bleumid}
+		\textcolor{white}{\textbf{تاریخ}} & \textcolor{white}{\textbf{رویداد}} \\
+		\hline
+		۱۳ مه & شورش نظامی-مدنی در الجزیره، دولت پفلیملن ناتوان \\
+		\hline
+		\rowcolor{bleulight}
+		۱۵ مه & دوگل: «آماده‌ام مسئولیت جمهوری را بپذیرم» \\
+		\hline
+		۱۹ مه & کنفرانس مطبوعاتی دوگل: رد کودتا، اما آماده برای قدرت \\
+		\hline
+		\rowcolor{bleulight}
+		۲۴ مه & چتربازان کُرس را گرفتند—تهدید «عملیات احیا» علیه پاریس \\
+		\hline
+		۲۸ مه & استعفای پفلیملن \\
+		\hline
+		\rowcolor{bleulight}
+		۲۹ مه & رئیس‌جمهور کوتی از دوگل برای نخست‌وزیری دعوت کرد \\
+		\hline
+		۱ ژوئن & مجلس به دولت دوگل رأی داد \\
+		\hline
+		\rowcolor{bleulight}
+		۳ ژوئن & قانون اختیارات تام + حق تدوین قانون اساسی جدید \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{noktebox}
+	\textbf{کودتا یا قانونی؟}
+	
+	بازگشت دوگل همیشه بحث‌برانگیز بوده:
+	
+	\begin{itemize}[nosep]
+		\item \textbf{از نظر شکلی:} مجلس به دوگل رأی داد—قانونی
+		\item \textbf{از نظر واقعی:} تحت تهدید کودتای نظامی—فشار
+		\item \textbf{دیدگاه دوگل:} «من قانونی آمدم، جمهوری را نجات دادم»
+		\item \textbf{دیدگاه چپ:} «کودتای آرام با کمک ارتش»
+	\end{itemize}
+	
+	فرانسوا میتران کتابی نوشت با عنوان «کودتای دائم» (۱۹۶۴).
+\end{noktebox}
+
+\subsection{پایان جمهوری چهارم}
+
+\begin{naghlbox}
+	«جمهوری چهارم به دست خودش نمُرد. کُشته شد—توسط الجزایر.»
+	
+	\hfill --- \textit{تحلیل رایج}
+\end{naghlbox}
+
+در سپتامبر ۱۹۵۸، قانون اساسی جدید با ۷۹٪ آرا تصویب شد. در دسامبر ۱۹۵۸، دوگل رئیس‌جمهور شد. جمهوری پنجم آغاز شده بود.
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{خط زمانی جامع}
+%──────────────────────────────────────────────────────────────────────────────
+
+\begin{landscape}
+	\begin{tikzpicture}[
+		every node/.style={font=\footnotesize},
+		event/.style={rectangle, rounded corners, minimum width=1.3cm, minimum height=0.6cm, align=center}
+		]
+		% Title
+		\node[font=\bfseries\large] at (12,10) {خط زمانی ویشی و جمهوری چهارم (۱۹۴۰-۱۹۵۸)};
+		
+		% Main timeline
+		\draw[ultra thick, black] (0,7) -- (24,7);
+		
+		% Year markers
+		\foreach \x/\year in {0/۱۹۴۰, 4/۱۹۴۴, 8/۱۹۴۶, 12/۱۹۵۰, 16/۱۹۵۴, 20/۱۹۵۶, 24/۱۹۵۸} {
+			\draw[thick] (\x,6.7) -- (\x,7.3);
+			\node at (\x,6.3) {\year};
+		}
+		
+		% Period bars
+		\fill[orroyallight] (0,8) rectangle (4,8.5);
+		\node[font=\tiny] at (2,8.25) {ویشی/اشغال};
+		\draw[orroyaldark, thick] (0,8) rectangle (4,8.5);
+		
+		\fill[rougelight] (4,8) rectangle (8,8.5);
+		\node[font=\tiny] at (6,8.25) {آزادی/موقت};
+		\draw[rougerevolution, thick] (4,8) rectangle (8,8.5);
+		
+		\fill[bleulight] (8,8) rectangle (24,8.5);
+		\node[font=\tiny] at (16,8.25) {جمهوری چهارم};
+		\draw[bleurepublique, thick] (8,8) rectangle (24,8.5);
+		
+		% Key events - above
+		\node[event, draw=orroyaldark, fill=orroyallight] at (0.5,9.3) {ویشی\\ژوئیه ۴۰};
+		\node[event, draw=bleurepublique, fill=bleulight] at (2,9.3) {ندای\\دوگل};
+		\node[event, draw=rougerevolution, fill=rougelight] at (3,9.3) {وِل\\دیو ۴۲};
+		\node[event, draw=bleurepublique, fill=bleulight] at (5,9.3) {آزادی\\پاریس};
+		\node[event, draw=vertnapoleon, fill=vertlight] at (7,9.3) {تأمین\\اجتماعی};
+		\node[event, draw=rougerevolution, fill=rougelight] at (16,9.3) {دین‌بین‌فو};
+		\node[event, draw=rougerevolution, fill=rougelight] at (18,9.3) {سوئز\\۵۶};
+		\node[event, draw=rougerevolution, fill=rougemid, text=white] at (24,9.3) {۱۳ مه\\۵۸};
+		
+		% Key events - below
+		\node[event, draw=orroyaldark, fill=orroyallight] at (1,5) {مونتوار};
+		\node[event, draw=rougerevolution, fill=rougelight] at (2.5,5) {\lr{STO}\\۴۳};
+		\node[event, draw=bleurepublique, fill=bleulight] at (4.5,5) {\lr{CNR}};
+		\node[event, draw=gris, fill=grisclair] at (6,5) {تصفیه};
+		\node[event, draw=rougerevolution, fill=rougelight] at (9,5) {جنگ سرد\\۴۷};
+		\node[event, draw=bleurepublique, fill=bleulight] at (12,5) {\lr{CECA}\\۵۱};
+		\node[event, draw=bleurepublique, fill=bleulight] at (15,5) {\lr{CEE}\\۵۷};
+		\node[event, draw=rougerevolution, fill=rougelight] at (17.5,5) {الجزایر\\۵۴-};
+		
+	\end{tikzpicture}
+\end{landscape}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{تحلیل: ویشی در حافظه ملی}
+%──────────────────────────────────────────────────────────────────────────────
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	phase/.style={rectangle, rounded corners, minimum width=5.5cm, minimum height=2cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,8.5) {تحول حافظه ویشی در فرانسه};
+	
+	% Phases
+	\node[phase, draw=gris, fill=grisclair] (p1) at (3,6) 
+	{\textbf{۱۹۴۴-۱۹۷۰}\\«اسطوره رزیستانسیالیستی»\\همه مقاومت کردند\\(دوگل، کمونیست‌ها)};
+	
+	\node[phase, draw=rougerevolution, fill=rougelight] (p2) at (11,6) 
+	{\textbf{۱۹۷۰-۱۹۹۰}\\«آینه شکسته»\\فیلم «غم و ترحم» (۱۹۷۱)\\افشای همکاری};
+	
+	\node[phase, draw=bleurepublique, fill=bleulight] (p3) at (3,2.5) 
+	{\textbf{۱۹۹۰-۲۰۰۰}\\«اعتراف»\\شیراک ۱۹۹۵: مسئولیت دولت\\محاکمه پاپون (۱۹۹۷)};
+	
+	\node[phase, draw=vertnapoleon, fill=vertlight] (p4) at (11,2.5) 
+	{\textbf{۲۰۰۰-حال}\\«یادآوری متوازن»\\تکریم «عادلان»\\تداوم بحث‌ها};
+	
+	% Arrows
+	\draw[->, very thick] (p1) -- (p2);
+	\draw[->, very thick] (p2) -- (p3);
+	\draw[->, very thick] (p3) -- (p4);
+	
+\end{tikzpicture}
+
+\begin{naghlbox}
+	\textbf{سخنرانی شیراک (۱۶ ژوئیه ۱۹۹۵)}
+	
+	«این روزها که فرانسه جشن می‌گیرد، یادآور لحظات تاریک تاریخ ماست... فرانسه، سرزمین روشنگری و حقوق بشر، سرزمین پذیرش و پناه‌دهی، فرانسه در آن روز کاری جبران‌ناپذیر کرد. فرانسه به تعهدش خیانت کرد و تحویل‌دادنی‌هایش را به جلادانشان سپرد.»
+	
+	\hfill --- \textit{ژاک شیراک، پنجاهمین سالگرد وِل دیو}
+\end{naghlbox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{الگوها و درس‌ها}
+%──────────────────────────────────────────────────────────────────────────────
+
+\begin{olgoobox}
+	\textbf{الگوهای کلیدی دوره ۱۹۴۰-۱۹۵۸}
+	
+	\begin{enumerate}
+		\item \textbf{الگوی «شکست به‌مثابه فرصت برای ارتجاع»:}
+		\begin{itemize}[nosep]
+			\item ویشی از شکست ۱۹۴۰ برای برچیدن جمهوری استفاده کرد
+			\item «انقلاب ملی» پروژه‌ای قدیمی بود که جنگ فرصتش را داد
+			\item شباهت با ۱۸۱۵ (بازگشت بوربون‌ها پس از شکست ناپلئون)
+		\end{itemize}
+		
+		\item \textbf{الگوی «مشروعیت دوگانه»:}
+		\begin{itemize}[nosep]
+			\item ویشی: مشروعیت قانونی (رأی مجلس)
+			\item دوگل: مشروعیت تاریخی (ادامه جنگ، ارزش‌های جمهوری)
+			\item تنش میان قانونیت و مشروعیت—موضوعی تکرارشونده
+		\end{itemize}
+		
+		\item \textbf{الگوی «استعمار به‌مثابه بن‌بست»:}
+		\begin{itemize}[nosep]
+			\item هندوچین، الجزایر: هزینه سنگین، شکست نهایی
+			\item جمهوری چهارم قربانی ناتوانی در استعمارزدایی شد
+			\item دوگل همان کسی بود که توانست الجزایر را رها کند
+		\end{itemize}
+		
+		\item \textbf{الگوی «بی‌ثباتی پارلمانی»:}
+		\begin{itemize}[nosep]
+			\item جمهوری چهارم تکرار ضعف جمهوری سوم بود
+			\item ۲۴ دولت در ۱۲ سال
+			\item این تجربه، قانون اساسی جمهوری پنجم را شکل داد
+		\end{itemize}
+		
+		\item \textbf{الگوی «بحران به‌مثابه مامای تغییر»:}
+		\begin{itemize}[nosep]
+			\item جمهوری سوم در شکست ۱۹۴۰ مُرد
+			\item جمهوری چهارم در بحران الجزایر مُرد
+			\item جمهوری پنجم از بحران زاده شد
+		\end{itemize}
+	\end{enumerate}
+\end{olgoobox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{نقشه مفهومی: مسئله مشروعیت}
+%──────────────────────────────────────────────────────────────────────────────
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	entity/.style={rectangle, rounded corners, minimum width=4cm, minimum height=1.8cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,9) {مسئله مشروعیت در دوره ۱۹۴۰-۱۹۴۴};
+	
+	% Entities
+	\node[entity, draw=orroyaldark, fill=orroyallight] (vichy) at (3,6) 
+	{\textbf{ویشی}\\مشروعیت قانونی\\رأی مجلس ۱۹۴۰\\«دولت فرانسوی»};
+	
+	\node[entity, draw=bleurepublique, fill=bleulight] (fl) at (11,6) 
+	{\textbf{فرانسه آزاد}\\مشروعیت تاریخی\\ادامه جنگ\\«جمهوری واقعی»};
+	
+	% Question
+	\node[rectangle, draw=rougerevolution, fill=rougelight, rounded corners,
+	minimum width=6cm, minimum height=1.5cm, align=center] at (7,3) {
+		\textbf{سؤال:} کدام‌یک «فرانسه واقعی» بود؟\\
+		پاسخ تاریخ: فرانسه آزاد
+	};
+	
+	% Vichy claims
+	\node[font=\footnotesize, align=center] at (3,3.5) {
+		حفاظت از فرانسویان\\
+		جلوگیری از بدتر شدن\\
+		ادامه دولت
+	};
+	
+	% Free France claims
+	\node[font=\footnotesize, align=center] at (11,3.5) {
+		افتخار ملی\\
+		ارزش‌های جمهوری\\
+		پیروزی نهایی
+	};
+	
+	% Arrows
+	\draw[->, thick, orroyaldark] (vichy) -- (7,4.2);
+	\draw[->, thick, bleurepublique] (fl) -- (7,4.2);
+	
+	% Post-war resolution
+	\node[rectangle, draw=vertnapoleon, fill=vertlight, rounded corners,
+	minimum width=10cm, minimum height=1cm, align=center] at (7,0.5) {
+		\textbf{راه‌حل پس از جنگ:} ویشی «هیچ» بود—جمهوری هرگز متوقف نشد (دکترین دوگل)
+	};
+	
+\end{tikzpicture}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{جمع‌بندی فصل}
+%──────────────────────────────────────────────────────────────────────────────
+
+\begin{kholasebox}
+	\textbf{جمع‌بندی: ویشی و جمهوری چهارم (۱۹۴۰-۱۹۵۸)}
+	
+	\textbf{دوره ویشی (۱۹۴۰-۱۹۴۴):}
+	\begin{itemize}[nosep]
+		\item رژیم اقتدارگرا، ضد جمهوری، همکار با نازی‌ها
+		\item «انقلاب ملی»: کار، خانواده، میهن
+		\item یهودستیزی فعال: ۷۶,۰۰۰ یهودی به اردوگاه‌ها
+		\item همکاری اقتصادی، نظامی، پلیسی
+		\item نقطه سیاه تاریخ فرانسه
+	\end{itemize}
+	
+	\textbf{مقاومت (۱۹۴۰-۱۹۴۴):}
+	\begin{itemize}[nosep]
+		\item فرانسه آزاد دوگل: از لندن و آفریقا
+		\item مقاومت داخلی: کمونیست‌ها، گلیست‌ها، دیگران
+		\item ژان مولَن و شورای ملی مقاومت
+		\item برنامه \lr{CNR}: اساس دولت رفاه
+	\end{itemize}
+	
+	\textbf{آزادی و تصفیه (۱۹۴۴-۱۹۴۶):}
+	\begin{itemize}[nosep]
+		\item اعدام‌های بدون محاکمه و قانونی
+		\item محاکمه پتن و لاوال
+		\item ملی‌سازی‌ها، تأمین اجتماعی، حق رأی زنان
+	\end{itemize}
+	
+	\textbf{جمهوری چهارم (۱۹۴۶-۱۹۵۸):}
+	\begin{itemize}[nosep]
+		\item پارلمانتاریسم ادامه جمهوری سوم
+		\item بی‌ثباتی: ۲۴ دولت در ۱۲ سال
+		\item اما: رشد اقتصادی، آغاز اروپا، دولت رفاه
+		\item جنگ‌های استعماری: هندوچین (شکست)، الجزایر (بحران)
+		\item سقوط در ۱۳ مه ۱۹۵۸: بازگشت دوگل
+	\end{itemize}
+	
+	\textbf{میراث:}
+	\begin{itemize}[nosep]
+		\item یادآوری دردناک ویشی و همکاری
+		\item تأمین اجتماعی و دولت رفاه
+		\item آغاز همگرایی اروپایی
+		\item درس بی‌ثباتی پارلمانی برای جمهوری پنجم
+		\item زخم الجزایر (تا امروز)
+	\end{itemize}
+\end{kholasebox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section*{منابع فصل}
+%──────────────────────────────────────────────────────────────────────────────
+\addcontentsline{toc}{section}{منابع فصل}
+
+\begin{itemize}[nosep]
+	\item Azéma, Jean-Pierre. \textit{From Munich to the Liberation, 1938-1944}. Cambridge: Cambridge UP, 1984.
+	\item Burrin, Philippe. \textit{France under the Germans: Collaboration and Compromise}. New York: New Press, 1996.
+	\item Gildea, Robert. \textit{Marianne in Chains: Daily Life in the Heart of France during the German Occupation}. New York: Metropolitan Books, 2002.
+	\item Jackson, Julian. \textit{France: The Dark Years, 1940-1944}. Oxford: Oxford UP, 2001.
+	\item Kedward, H.R. \textit{Resistance in Vichy France}. Oxford: Oxford UP, 1978.
+	\item Paxton, Robert O. \textit{Vichy France: Old Guard and New Order, 1940-1944}. New York: Columbia UP, 1972.
+	\item Rioux, Jean-Pierre. \textit{The Fourth Republic, 1944-1958}. Cambridge: Cambridge UP, 1987.
+	\item Rousso, Henry. \textit{The Vichy Syndrome: History and Memory in France since 1944}. Cambridge: Harvard UP, 1991.
+	\item Shepard, Todd. \textit{The Invention of Decolonization: The Algerian War and the Remaking of France}. Ithaca: Cornell UP, 2006.
+	\item Wall, Irwin M. \textit{France, the United States, and the Algerian War}. Berkeley: UC Press, 2001.
+\end{itemize}
+
+%══════════════════════════════════════════════════════════════════════════════
+% پایان فصل ۷
+%══════════════════════════════════════════════════════════════════════════════
+
+\end{document}

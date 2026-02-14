@@ -1,0 +1,211 @@
+---
+title: "نقشه راه عملیاتی"
+description: ""
+lang: "fa"
+tags: ['سیاسی، انقلاب، ایران، خط مشی عمومی، برنامه\u200c ی گذار']
+draft: false
+order: 9
+bookSlug: "untitled"
+chapterNumber: 10
+aiGenerated: true
+aiNote: "متن کلی ااز هوش مصنوعی اقتباس شده است. ولی بررسی دقیق و تکمیل با نویسنده بوده است."
+author: "مهدی سالم"
+category: "انقلاب"
+---
+
+import Callout from '@components/Callout.astro';
+
+# نقشه راه عملیاتی
+
+
+```latex
+% TikZ Diagram
+\begintikzpicture
+\foreach \i/\label in 1/تثبیت, 2/ائتلاف, 3/بسیج, 4/اقدام
+        \node[step, minimum width=2.5cm, fill=iranblue!\the\numexpr\i*20] (s\i) at (\i*3, 0) \label;
+
+    \draw[connection] (s1) – (s2);
+    \draw[connection] (s2) – (s3);
+    \draw[connection] (s3) – (s4);
+
+    \node[below=1.5cm of s2.south east, align=center, font=  \coloriranblue!70] توالی زمانی مراحل عملیاتی;
+\endtikzpicture
+```
+
+\captionoffigureنقشه راه کلی عملیات گذار
+
+
+<Callout type="quote" title="💬 نقل قول">
+
+«هدف بدون برنامه فقط یک آرزوست. برنامه بدون عمل فقط یک رویاست.»
+
+</Callout>
+
+
+## مرحله اول: تثبیت (۰-۳ ماه)
+
+
+<figure>
+<div class="table-wrapper" dir="rtl">
+<table>
+  <thead>
+  <tr style="background-color: rgba(100,100,200,0.2);">
+    <th></th>
+    <th><strong>اقدام</strong></th>
+    <th><strong>مسئول</strong></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>$\square$</td>
+    <td>تشکیل کمیته هماهنگی موقت</td>
+    <td>رهبران</td>
+  </tr>
+  <tr>
+    <td>$\square$</td>
+    <td>تعیین سخنگوی واحد</td>
+    <td>کمیته</td>
+  </tr>
+  <tr>
+    <td>$\square$</td>
+    <td>راه‌اندازی کانال‌های ارتباطی امن</td>
+    <td>فنی</td>
+  </tr>
+  <tr>
+    <td>$\square$</td>
+    <td>تدوین بیانیه اصول مشترک</td>
+    <td>همه</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+<figcaption>چک‌لیست مرحله تثبیت</figcaption>
+</figure>
+
+
+## مرحله دوم: ائتلاف‌سازی (۳-۱۲ ماه)
+
+
+```latex
+% TikZ Diagram
+\begintikzpicture
+\node[block, fill=iranblue!20] (talks) مذاکرات دوجانبه;
+    \node[block, fill=iranblue!30, right=of talks] (doc) تدوین منشور;
+    \node[block, fill=iranblue!40, right=of doc] (sign) امضای منشور;
+    \node[block, fill=olgoogreen!50, right=of sign] (announce) اعلام عمومی;
+
+    \draw[arrow] (talks) – (doc);
+    \draw[arrow] (doc) – (sign);
+    \draw[arrow] (sign) – (announce);
+\endtikzpicture
+```
+
+\captionoffigureفرآیند ائتلاف‌سازی
+
+
+## مرحله سوم: بسیج (۶-۱۸ ماه)
+
+
+- ارتباط با شبکه‌های داخلی
+- کمپین‌های رسانه‌ای
+- لابی‌گری بین‌المللی
+- جذب منابع
+- آموزش کادرها
+
+
+## مرحله چهارم: اقدام
+
+
+<Callout type="strategy" title="♟️ title=شرایط آغاز">
+
+1. ائتلاف پایدار شکل گرفته
+
+2. حمایت بین‌المللی تأمین شده
+
+3. ظرفیت بسیج کافی
+
+4. رویداد آغازگر (Trigger)
+
+5. آمادگی برای حکومت انتقالی
+
+</Callout>
+
+
+## شاخص‌های پایش پیشرفت
+
+
+<figure>
+<div class="table-wrapper" dir="rtl">
+<table>
+  <thead>
+  <tr style="background-color: rgba(100,100,200,0.2);">
+    <th><strong>شاخص</strong></th>
+    <th><strong>هدف</strong></th>
+    <th><strong>وضعیت فعلی</strong></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>تعداد جریانات در ائتلاف</td>
+    <td>۵+</td>
+    <td>در حال مذاکره</td>
+  </tr>
+  <tr>
+    <td>بودجه سالانه</td>
+    <td>۱۰M+</td>
+    <td>نامشخص</td>
+  </tr>
+  <tr>
+    <td>حمایت دولت‌ها</td>
+    <td>۳+</td>
+    <td>۱-۲</td>
+  </tr>
+  <tr>
+    <td>ارتباط با داخل</td>
+    <td>فعال</td>
+    <td>محدود</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+<figcaption>داشبورد پایش</figcaption>
+</figure>
+
+
+## نقاط تصمیم‌گیری کلیدی
+
+
+```latex
+% TikZ Diagram
+\begintikzpicture
+\node[decision] (d1) ائتلاف ممکن؟;
+    \node[block, right=of d1] (continue) ادامه مستقل;
+    \node[block, below=of d1] (coalition) تشکیل ائتلاف;
+
+    \node[decision, below=of coalition] (d2) بسیج کافی؟;
+    \node[block, right=of d2] (build) ظرفیت‌سازی;
+    \node[block, below=of d2] (action) اقدام;
+
+    \draw[arrow] (d1) – node[above] خیر (continue);
+    \draw[arrow] (d1) – node[right] بله (coalition);
+    \draw[arrow] (coalition) – (d2);
+    \draw[arrow] (d2) – node[above] خیر (build);
+    \draw[arrow] (d2) – node[right] بله (action);
+    \draw[arrow] (build.south) |- ++(0,-0.5) -| (d2.east);
+\endtikzpicture
+```
+
+\captionoffigureدرخت تصمیم‌گیری
+
+
+<Callout type="summary" title="📋 title=خلاصه فصل">
+
+- نقشه راه چهار مرحله‌ای: تثبیت، ائتلاف، بسیج، اقدام
+
+- هر مرحله اقدامات و مسئولین مشخص دارد
+
+- شاخص‌های پایش باید مرتب بررسی شوند
+
+- نقاط تصمیم‌گیری کلیدی را بشناسید
+
+</Callout>

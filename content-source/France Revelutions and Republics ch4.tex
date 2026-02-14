@@ -1,0 +1,1400 @@
+% ═══════════════════════════════════════════════════════════════════════════════
+%                    تاریخ تحولات فرانسه - فصل [X]
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\documentclass[12pt,a4paper]{book}
+
+% ─────────────────────────── پکیج‌ها ───────────────────────────
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{top=2.5cm, bottom=2.5cm, left=2cm, right=2.5cm, headheight=15pt}
+\usepackage{graphicx}
+\usepackage{array,booktabs,longtable,multirow,colortbl}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc, backgrounds, 
+	fit, decorations.pathmorphing, shadows, patterns}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{pdflscape}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage{pdfpages}
+\usepackage{pdflscape}  % برای صفحات landscape
+\usepackage{hyperref}
+
+% ─────────────────────────── رنگ‌ها ───────────────────────────
+\definecolor{bleurepublique}{RGB}{0, 35, 149}
+\definecolor{rougerevolution}{RGB}{237, 41, 57}
+\definecolor{orroyal}{RGB}{255, 215, 0}
+\definecolor{vertnapoleon}{RGB}{0, 100, 0}
+\definecolor{violetempire}{RGB}{128, 0, 128}
+\definecolor{fondclair}{RGB}{255, 253, 240}
+\definecolor{gris}{RGB}{128, 128, 128}
+\definecolor{grisclair}{RGB}{245, 245, 245}
+\definecolor{noirsombre}{RGB}{30, 30, 30}
+
+% رنگ‌های کمکی
+\definecolor{bleulight}{RGB}{230, 235, 250}
+\definecolor{rougelight}{RGB}{253, 235, 237}
+\definecolor{vertlight}{RGB}{235, 250, 235}
+\definecolor{violetlight}{RGB}{245, 235, 250}
+\definecolor{orroyallight}{RGB}{255, 250, 230}
+\definecolor{grislight}{RGB}{248, 248, 248}
+\definecolor{bleumid}{RGB}{180, 195, 230}
+\definecolor{rougemid}{RGB}{245, 180, 185}
+\definecolor{vertmid}{RGB}{180, 220, 180}
+\definecolor{violetmid}{RGB}{210, 180, 220}
+\definecolor{orroyalmid}{RGB}{255, 240, 180}
+\definecolor{orroyaldark}{RGB}{200, 170, 0}
+
+% ─────────────────────────── فونت فارسی ───────────────────────────
+\usepackage{fontspec}
+\setmainfont{Vazirmatn}
+\usepackage{xepersian}
+\settextfont{Vazirmatn}
+\setdigitfont{Vazirmatn}
+
+% ─────────────────────────── هایپرلینک ───────────────────────────
+\hypersetup{
+	colorlinks=true,
+	linkcolor=bleurepublique,
+	urlcolor=bleurepublique,
+	citecolor=vertnapoleon
+}
+
+% ─────────────────────────── کادرها ───────────────────────────
+\newtcolorbox{kholasebox}[1][]{enhanced,breakable,colback=bleulight,
+	colframe=bleurepublique,coltitle=white,fonttitle=\bfseries\large,
+	title={#1},boxrule=2pt,arc=4pt,left=10pt,right=10pt,top=10pt,bottom=10pt,
+	drop shadow={opacity=0.3}}
+
+\newtcolorbox{naghlbox}[1][]{enhanced,breakable,colback=orroyallight,
+	colframe=orroyaldark,coltitle=black,fonttitle=\bfseries,title={#1},
+	boxrule=1.5pt,arc=3pt,borderline west={4pt}{0pt}{orroyal},
+	left=15pt,right=10pt,top=8pt,bottom=8pt}
+
+\newtcolorbox{olgoobox}[1][]{enhanced,breakable,colback=vertlight,
+	colframe=vertnapoleon,coltitle=white,fonttitle=\bfseries,title={#1},
+	boxrule=1.5pt,arc=4pt,left=10pt,right=10pt,top=8pt,bottom=8pt,
+	before upper={\parindent15pt}}
+
+\newtcolorbox{enghelabbox}[1][]{enhanced,breakable,colback=rougelight,
+	colframe=rougerevolution,coltitle=white,fonttitle=\bfseries,title={#1},
+	boxrule=2pt,arc=4pt,left=10pt,right=10pt,top=8pt,bottom=8pt}
+
+\newtcolorbox{empirebox}[1][]{enhanced,breakable,colback=violetlight,
+	colframe=violetempire,coltitle=white,fonttitle=\bfseries,title={#1},
+	boxrule=1.5pt,arc=4pt,left=10pt,right=10pt,top=8pt,bottom=8pt}
+
+\newtcolorbox{noktebox}[1][]{enhanced,colback=grisclair,colframe=gris,
+	fonttitle=\bfseries,title={#1},boxrule=1pt,arc=3pt,left=8pt,right=8pt}
+
+% ─────────────────────────── صفحه‌آرایی ───────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RO]{\leftmark}
+\fancyhead[LE]{\rightmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\setstretch{1.5}
+
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries\color{bleurepublique}}
+{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titleformat{\section}
+{\normalfont\Large\bfseries\color{bleurepublique}}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\large\bfseries\color{bleurepublique}}{\thesubsection}{1em}{}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\begin{document}
+% ██████████████████████████████████████████████████████████████████████████████
+%
+%                    فصل ۴: دوره ناپلئونی (۱۷۹۹-۱۸۱۵)
+%
+% ██████████████████████████████████████████████████████████████████████████████
+
+\chapter{دوره ناپلئونی (۱۷۹۹-۱۸۱۵)}
+
+\begin{kholasebox}[خلاصه فصل چهارم]
+	این فصل به شانزده سال حکومت ناپلئون بناپارت می‌پردازد: از کودتای برومر (۱۷۹۹) تا واترلو (۱۸۱۵). ناپلئون انقلاب را «تثبیت» کرد — اما به چه قیمتی؟ او فرانسه را به امپراتوری بزرگی تبدیل کرد، اصلاحات ماندگار انجام داد، اما میلیون‌ها نفر در جنگ‌هایش کشته شدند. پرسش محوری: ناپلئون وارث انقلاب بود یا خائن به آن؟
+\end{kholasebox}
+
+\section{ناپلئون کیست؟}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.95,
+		phase/.style={
+			rectangle, draw=violetempire, line width=1.5pt, fill=violetlight,
+			text=black, minimum width=3.5cm, minimum height=2cm,
+			align=center, font=\small, rounded corners=5pt
+		}
+		]
+		% خط زمان زندگی
+		\draw[line width=3pt, gris] (0,0) -- (16,0);
+		
+		% مراحل
+		\node[phase] at (1.5,2.5) {
+			\begin{tabular}{c}
+				\textbf{کرس}\\
+				{\scriptsize ۱۷۶۹-۱۷۸۵}\\
+				تولد، تحصیل
+			\end{tabular}
+		};
+		\draw[->, >=Stealth, violetempire] (1.5,1.5) -- (1.5,0.3);
+		
+		\node[phase] at (4.5,2.5) {
+			\begin{tabular}{c}
+				\textbf{افسر جوان}\\
+				{\scriptsize ۱۷۸۵-۱۷۹۵}\\
+				انقلاب، تولون
+			\end{tabular}
+		};
+		\draw[->, >=Stealth, violetempire] (4.5,1.5) -- (4.5,0.3);
+		
+		\node[phase] at (7.5,2.5) {
+			\begin{tabular}{c}
+				\textbf{ژنرال}\\
+				{\scriptsize ۱۷۹۶-۱۷۹۹}\\
+				ایتالیا، مصر
+			\end{tabular}
+		};
+		\draw[->, >=Stealth, violetempire] (7.5,1.5) -- (7.5,0.3);
+		
+		\node[phase] at (10.5,2.5) {
+			\begin{tabular}{c}
+				\textbf{کنسول/امپراتور}\\
+				{\scriptsize ۱۷۹۹-۱۸۱۴}\\
+				اوج قدرت
+			\end{tabular}
+		};
+		\draw[->, >=Stealth, violetempire] (10.5,1.5) -- (10.5,0.3);
+		
+		\node[phase] at (14,2.5) {
+			\begin{tabular}{c}
+				\textbf{تبعید}\\
+				{\scriptsize ۱۸۱۴-۱۸۲۱}\\
+				اِلبا، سنت‌هلن
+			\end{tabular}
+		};
+		\draw[->, >=Stealth, violetempire] (14,1.5) -- (14,0.3);
+		
+		% سال‌ها
+		\foreach \x/\year in {0/۱۷۶۹, 3/۱۷۸۵, 6/۱۷۹۶, 9/۱۷۹۹, 12/۱۸۱۴, 16/۱۸۲۱} {
+			\draw[black, line width=1pt] (\x,-0.2) -- (\x,0.2);
+			\node[below, font=\tiny] at (\x,-0.3) {\year};
+		}
+		
+	\end{tikzpicture}
+	\caption{خط زمانی زندگی ناپلئون بناپارت}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{ناپلئون بناپارت: مشخصات}
+	\begin{tabular}{|>{\bfseries}r|p{9cm}|}
+		\hline
+		\rowcolor{violetlight}
+		\textbf{مشخصه} & \textbf{توضیح} \\
+		\hline
+		تولد & ۱۵ اوت ۱۷۶۹، آژاکسیو، کرس (یک سال پس از الحاق به فرانسه) \\
+		\hline
+		\rowcolor{grisclair}
+		خانواده & اشراف جزئی ایتالیایی‌تبار، هشت فرزند \\
+		\hline
+		تحصیلات & مدرسه نظامی بری‌ین، سپس پاریس (توپخانه) \\
+		\hline
+		\rowcolor{grisclair}
+		ویژگی‌ها & هوش استثنایی، حافظه عکس‌برداری، انرژی خستگی‌ناپذیر \\
+		\hline
+		ضعف‌ها & خودبزرگ‌بینی، عدم پذیرش شکست، بی‌اعتمادی به دیگران \\
+		\hline
+		\rowcolor{grisclair}
+		وفات & ۵ مه ۱۸۲۱، سنت‌هلن (احتمالاً سرطان معده) \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{naghlbox}[ناپلئون درباره خودش]
+	«من انقلاب را بستم، نه به‌عنوان شاه، بلکه به‌عنوان مجری اراده ملت.»
+	
+	«قدرت من بر ترس مبتنی نیست، بلکه بر افتخار فرانسه.»
+	
+	«من جزیره‌ای کوچک را به تخت و تاج بزرگ‌ترین امپراتوری جهان تبدیل کردم.»
+	\begin{flushright}
+		— از یادداشت‌های سنت‌هلن
+	\end{flushright}
+\end{naghlbox}
+
+\section{کنسولا (۱۷۹۹-۱۸۰۴)}
+
+\subsection{ساختار قانون اساسی سال هشتم}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.9,
+		organ/.style={
+			rectangle, draw=#1, line width=2pt, fill=#1,
+			text=black, minimum width=4.5cm, minimum height=1.8cm,
+			align=center, font=\small, rounded corners=5pt
+		}
+		]
+		% عنوان
+		\node[font=\large\bfseries, text=violetempire] at (0,6) {
+			ساختار کنسولا (قانون اساسی سال هشتم)
+		};
+		
+		% کنسول اول
+		\node[organ=violetlight] (consul) at (0,4) {
+			\begin{tabular}{c}
+				\textbf{کنسول اول: ناپلئون}\\
+				{\scriptsize تمام قدرت اجرایی، پیشنهاد قوانین}\\
+				{\scriptsize انتصاب همه مقامات}
+			\end{tabular}
+		};
+		
+		% دو کنسول دیگر
+		\node[organ=grislight] at (-5,4) {
+			\begin{tabular}{c}
+				کنسول دوم\\
+				{\scriptsize کامباسرس}\\
+				{\scriptsize فقط مشورتی}
+			\end{tabular}
+		};
+		
+		\node[organ=grislight] at (5,4) {
+			\begin{tabular}{c}
+				کنسول سوم\\
+				{\scriptsize لوبرون}\\
+				{\scriptsize فقط مشورتی}
+			\end{tabular}
+		};
+		
+		% مجالس
+		\node[organ=bleulight] (senat) at (-4,1) {
+			\begin{tabular}{c}
+				\textbf{سنا}\\
+				{\scriptsize ۸۰ عضو، مادام‌العمر}\\
+				{\scriptsize حافظ قانون اساسی}
+			\end{tabular}
+		};
+		
+		\node[organ=bleulight] (trib) at (0,1) {
+			\begin{tabular}{c}
+				\textbf{تریبونا}\\
+				{\scriptsize ۱۰۰ عضو، بحث قوانین}\\
+				{\scriptsize بدون حق رأی!}
+			\end{tabular}
+		};
+		
+		\node[organ=bleulight] (legis) at (4,1) {
+			\begin{tabular}{c}
+				\textbf{مجلس قانون‌گذار}\\
+				{\scriptsize ۳۰۰ عضو، رأی}\\
+				{\scriptsize بدون حق بحث!}
+			\end{tabular}
+		};
+		
+		% شورای دولتی
+		\node[organ=vertlight] (conseil) at (0,-1.5) {
+			\begin{tabular}{c}
+				\textbf{شورای دولتی}\\
+				{\scriptsize تهیه پیش‌نویس قوانین}\\
+				{\scriptsize مشاوران ناپلئون}
+			\end{tabular}
+		};
+		
+		% پیکان‌ها
+		\draw[->, >=Stealth, line width=1.5pt, violetempire] (consul) -- (senat);
+		\draw[->, >=Stealth, line width=1.5pt, violetempire] (consul) -- (trib);
+		\draw[->, >=Stealth, line width=1.5pt, violetempire] (consul) -- (legis);
+		\draw[->, >=Stealth, line width=1.5pt, violetempire] (consul) -- (conseil);
+		
+		% نتیجه
+		\node[rectangle, draw=rougerevolution, fill=rougelight,
+		minimum width=12cm, minimum height=1cm, font=\small, rounded corners=3pt]
+		at (0,-3.5) {
+			\textbf{نتیجه}: دموکراسی ظاهری، دیکتاتوری واقعی — همه قدرت در دست کنسول اول
+		};
+		
+	\end{tikzpicture}
+	\caption{ساختار نظام کنسولا}
+\end{figure}
+
+\subsection{«همه‌پرسی» و مشروعیت‌سازی}
+
+\begin{table}[H]
+	\centering
+	\caption{همه‌پرسی‌های دوره ناپلئون}
+	\begin{tabular}{|c|p{4.5cm}|c|c|}
+		\hline
+		\rowcolor{violetlight}
+		\textbf{سال} & \textbf{موضوع} & \textbf{آری} & \textbf{نه} \\
+		\hline
+		۱۸۰۰ & قانون اساسی سال هشتم & ۳,۰۱۱,۰۰۷ & ۱,۵۶۲ \\
+		\hline
+		\rowcolor{grisclair}
+		۱۸۰۲ & کنسولی مادام‌العمر & ۳,۵۶۸,۸۸۵ & ۸,۳۷۴ \\
+		\hline
+		۱۸۰۴ & امپراتوری موروثی & ۳,۵۷۲,۳۲۹ & ۲,۵۷۹ \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{enghelabbox}[آیا این ارقام واقعی بودند؟]
+	ارقام همه‌پرسی‌ها بسیار مشکوک است:
+	\begin{itemize}[nosep]
+		\item رأی علنی، نه مخفی
+		\item فشار اداری و نظامی
+		\item دستکاری آشکار اعداد (توسط لوسین بناپارت)
+		\item بسیاری اصلاً رأی ندادند
+	\end{itemize}
+	
+	با این حال، محبوبیت واقعی ناپلئون در این دوره غیرقابل انکار است.
+\end{enghelabbox}
+
+\subsection{صلح خارجی و داخلی}
+
+\begin{table}[H]
+	\centering
+	\caption{دستاوردهای اولیه کنسولا}
+	\begin{tabular}{|>{\bfseries}r|c|p{6cm}|}
+		\hline
+		\rowcolor{vertlight}
+		\textbf{دستاورد} & \textbf{تاریخ} & \textbf{اهمیت} \\
+		\hline
+		پیروزی مارنگو & ۱۸۰۰ & شکست اتریش در ایتالیا \\
+		\hline
+		\rowcolor{grisclair}
+		صلح لونویل & ۱۸۰۱ & پایان جنگ با اتریش \\
+		\hline
+		صلح آمیان & ۱۸۰۲ & صلح با انگلستان (موقت) \\
+		\hline
+		\rowcolor{grisclair}
+		پایان شورش واندé & ۱۸۰۰ & عفو عمومی، آرامش \\
+		\hline
+		کنکوردا & ۱۸۰۱ & آشتی با کلیسا \\
+		\hline
+		\rowcolor{grisclair}
+		بازگشت مهاجران & ۱۸۰۰-۰۲ & عفو اشراف (مشروط) \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{naghlbox}[ناپلئون درباره صلح]
+	«صلح اولین نیاز من بود. فرانسه خسته از جنگ بود. من صلح را به ارمغان آوردم — برای مدتی.»
+\end{naghlbox}
+
+\section{اصلاحات ناپلئونی: میراث ماندگار}
+
+\subsection{کد ناپلئون (قانون مدنی ۱۸۰۴)}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.95,
+		principle/.style={
+			rectangle, draw=bleurepublique, line width=1.5pt, fill=bleulight,
+			text=black, minimum width=4.5cm, minimum height=1.5cm,
+			align=center, font=\small, rounded corners=3pt
+		}
+		]
+		% عنوان
+		\node[font=\large\bfseries, text=bleurepublique] at (0,5) {
+			اصول کد ناپلئون
+		};
+		
+		% مرکز
+		\node[ellipse, draw=violetempire, line width=3pt, fill=violetlight,
+		minimum width=3.5cm, minimum height=2cm, font=\bfseries]
+		(center) at (0,2) {
+			\begin{tabular}{c}
+				کد\\
+				ناپلئون
+			\end{tabular}
+		};
+		
+		% اصول
+		\node[principle] at (-5,3.5) {برابری در برابر قانون};
+		\node[principle] at (5,3.5) {حق مالکیت مقدس};
+		\node[principle] at (-5,0.5) {آزادی قرارداد};
+		\node[principle] at (5,0.5) {سکولاریسم (ازدواج مدنی)};
+		\node[principle] at (-5,-2) {وحدت قانونی (پایان قوانین محلی)};
+		\node[principle] at (5,-2) {قدرت پدر خانواده};
+		
+		% خطوط
+		\draw[bleurepublique, line width=1pt] (-5,2.8) -- (center);
+		\draw[bleurepublique, line width=1pt] (5,2.8) -- (center);
+		\draw[bleurepublique, line width=1pt] (-5,1.2) -- (center);
+		\draw[bleurepublique, line width=1pt] (5,1.2) -- (center);
+		\draw[bleurepublique, line width=1pt] (-5,-1.3) -- (center);
+		\draw[bleurepublique, line width=1pt] (5,-1.3) -- (center);
+		
+		% آمار
+		\node[rectangle, draw=gris, fill=grisclair,
+		minimum width=10cm, minimum height=0.8cm, font=\scriptsize]
+		at (0,-3.5) {
+			۲,۲۸۱ ماده | تهیه‌شده توسط شورای دولتی | هنوز پایه حقوق فرانسه
+		};
+		
+	\end{tikzpicture}
+	\caption{اصول کد ناپلئون (۱۸۰۴)}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{کد ناپلئون: دستاوردها و محدودیت‌ها}
+	\begin{tabular}{|>{\bfseries}r|p{5.5cm}|p{5.5cm}|}
+		\hline
+		\rowcolor{bleumid}
+		\textbf{حوزه} & \textbf{دستاورد} & \textbf{محدودیت} \\
+		\hline
+		برابری & پایان امتیازات موروثی & فقط مردان برابر \\
+		\hline
+		\rowcolor{grisclair}
+		مالکیت & تضمین مالکیت خصوصی & به نفع بورژوازی \\
+		\hline
+		خانواده & ازدواج مدنی، طلاق & قدرت مطلق شوهر بر زن \\
+		\hline
+		\rowcolor{grisclair}
+		کار & آزادی قرارداد & ممنوعیت اتحادیه کارگری \\
+		\hline
+		زنان & — & از نظر حقوقی صغیر \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{naghlbox}[ناپلئون درباره کد]
+	«افتخار واقعی من پیروزی در چهل نبرد نیست؛ واترلو خاطره همه را پاک خواهد کرد. اما چیزی که هرگز پاک نخواهد شد، قانون مدنی من است.»
+	\begin{flushright}
+		— ناپلئون، سنت‌هلن
+	\end{flushright}
+\end{naghlbox}
+
+\begin{enghelabbox}[وضعیت زنان در کد ناپلئون]
+	کد ناپلئون زنان را به وضعیت حقوقی تحقیرآمیزی محکوم کرد:
+	\begin{itemize}[nosep]
+		\item زن متأهل بدون اجازه شوهر نمی‌توانست کار کند، مالک شود، یا قرارداد ببندد
+		\item زنا برای زن جرم بود، برای مرد فقط اگر در خانه بود
+		\item فرزندان نامشروع حق ارث نداشتند
+		\item شوهر می‌توانست زن را زندانی کند
+	\end{itemize}
+	
+	ماده ۲۱۳: «زن باید از شوهر اطاعت کند.»
+\end{enghelabbox}
+
+\subsection{کنکوردا با پاپ (۱۸۰۱)}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.9,
+		party/.style={
+			rectangle, draw=#1, line width=2pt, fill=#1,
+			text=black, minimum width=5cm, minimum height=3cm,
+			align=center, font=\small, rounded corners=5pt
+		}
+		]
+		% دو طرف
+		\node[party=violetlight] (nap) at (-4,0) {
+			\begin{tabular}{c}
+				\textbf{ناپلئون}\\[5pt]
+				آشتی با کاتولیک‌ها\\
+				کنترل بر کلیسا\\
+				پایان شکاف دینی\\
+				مشروعیت داخلی
+			\end{tabular}
+		};
+		
+		\node[party=orroyallight] (pope) at (4,0) {
+			\begin{tabular}{c}
+				\textbf{پاپ پیوس هفتم}\\[5pt]
+				به رسمیت شناختن\\
+				انتصاب اسقف‌ها\\
+				حقوق روحانیون\\
+				بازگشت به فرانسه
+			\end{tabular}
+		};
+		
+		% توافق
+		\node[ellipse, draw=vertnapoleon, line width=2pt, fill=vertlight,
+		minimum width=3cm, minimum height=1.5cm, font=\bfseries]
+		at (0,0) {کنکوردا};
+		
+		\draw[<->, >=Stealth, line width=2pt, gris] (nap) -- (-1.5,0);
+		\draw[<->, >=Stealth, line width=2pt, gris] (1.5,0) -- (pope);
+		
+		% مفاد
+		\node[rectangle, draw=vertnapoleon, fill=vertlight,
+		minimum width=12cm, minimum height=2cm, font=\small, rounded corners=5pt]
+		at (0,-3) {
+			\begin{tabular}{c}
+				\textbf{مفاد اصلی}:\\
+				کاتولیسیسم «دین اکثریت فرانسویان» (نه دین رسمی) |
+				دولت اسقف‌ها را نامزد، پاپ تأیید می‌کند\\
+				حقوق روحانیون از دولت | اموال مصادره‌شده برنمی‌گردد
+			\end{tabular}
+		};
+		
+	\end{tikzpicture}
+	\caption{کنکوردا ۱۸۰۱}
+\end{figure}
+
+\begin{olgoobox}[اهمیت کنکوردا]
+	کنکوردا یکی از مهم‌ترین دستاوردهای ناپلئون بود:
+	\begin{enumerate}[nosep]
+		\item پایان شکاف دینی ده‌ساله
+		\item آشتی با کاتولیک‌های سنتی
+		\item کنترل دولت بر کلیسا (نه برعکس)
+		\item مشروعیت برای نظام جدید
+	\end{enumerate}
+	
+	اما ناپلئون «مواد ارگانیک» را بدون موافقت پاپ اضافه کرد که قدرت دولت را افزایش داد.
+\end{olgoobox}
+
+\subsection{نظام آموزشی}
+
+\begin{table}[H]
+	\centering
+	\caption{نظام آموزشی ناپلئونی}
+	\begin{tabular}{|>{\bfseries}r|p{4cm}|p{4cm}|p{3cm}|}
+		\hline
+		\rowcolor{bleulight}
+		\textbf{سطح} & \textbf{نهاد} & \textbf{هدف} & \textbf{کنترل} \\
+		\hline
+		ابتدایی & مدارس محلی & سواد پایه & کلیسا/شهرداری \\
+		\hline
+		\rowcolor{grisclair}
+		متوسطه & لیسه & تربیت نخبگان & دولت مرکزی \\
+		\hline
+		عالی & دانشگاه امپراتوری & کادرسازی & دولت مرکزی \\
+		\hline
+		\rowcolor{grisclair}
+		نظامی & اکول پلی‌تکنیک & افسران، مهندسان & ارتش \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{naghlbox}[ناپلئون درباره آموزش]
+	«از همه نهادهای سیاسی، آموزش عمومی مهم‌ترین است. همه چیز به آموزش بستگی دارد: حال و آینده.»
+\end{naghlbox}
+
+\subsection{نظام اداری}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.9,
+		level/.style={
+			rectangle, draw=bleurepublique, line width=1.5pt, fill=bleulight,
+			text=black, minimum width=4cm, minimum height=1.5cm,
+			align=center, font=\small, rounded corners=3pt
+		}
+		]
+		% سلسله‌مراتب
+		\node[level] (nap) at (0,4) {
+			\begin{tabular}{c}
+				\textbf{ناپلئون}\\
+				{\scriptsize وزرا، شورای دولتی}
+			\end{tabular}
+		};
+		
+		\node[level] (pref) at (0,2) {
+			\begin{tabular}{c}
+				\textbf{پرفه (استاندار)}\\
+				{\scriptsize منصوب توسط ناپلئون، ۱ در هر دپارتمان}
+			\end{tabular}
+		};
+		
+		\node[level] (sous) at (0,0) {
+			\begin{tabular}{c}
+				\textbf{سو-پرفه}\\
+				{\scriptsize در هر آروندیسمان}
+			\end{tabular}
+		};
+		
+		\node[level] (maire) at (0,-2) {
+			\begin{tabular}{c}
+				\textbf{شهردار (مِر)}\\
+				{\scriptsize منصوب، نه انتخابی}
+			\end{tabular}
+		};
+		
+		% پیکان‌ها
+		\draw[->, >=Stealth, line width=2pt, bleurepublique] (nap) -- (pref);
+		\draw[->, >=Stealth, line width=2pt, bleurepublique] (pref) -- (sous);
+		\draw[->, >=Stealth, line width=2pt, bleurepublique] (sous) -- (maire);
+		
+		% توضیح
+		\node[right, font=\small, text=gris] at (3,1) {
+			\begin{tabular}{l}
+				زنجیره فرمان واحد\\
+				همه منصوب، نه انتخابی\\
+				گزارش‌دهی به بالا\\
+				اجرای دستور از بالا
+			\end{tabular}
+		};
+		
+	\end{tikzpicture}
+	\caption{سلسله‌مراتب اداری ناپلئونی}
+\end{figure}
+
+\begin{olgoobox}[میراث اداری ناپلئون]
+	نظام پرفه (préfet) هنوز پایه اداره فرانسه است:
+	\begin{itemize}[nosep]
+		\item تمرکز شدید
+		\item کارآمدی اداری
+		\item یکنواختی در سراسر کشور
+		\item اما: کاهش خودمختاری محلی
+	\end{itemize}
+\end{olgoobox}
+
+\subsection{سایر اصلاحات}
+
+\begin{table}[H]
+	\centering
+	\caption{سایر اصلاحات ناپلئونی}
+	\begin{tabular}{|>{\bfseries}r|p{6cm}|p{4cm}|}
+		\hline
+		\rowcolor{vertlight}
+		\textbf{حوزه} & \textbf{اصلاح} & \textbf{ماندگاری} \\
+		\hline
+		مالی & بانک فرانسه (۱۸۰۰)، فرانک ژرمینال & تا ۱۹۱۴ \\
+		\hline
+		\rowcolor{grisclair}
+		افتخارات & لژیون دونور (۱۸۰۲) & تا امروز \\
+		\hline
+		زیرساخت & جاده‌ها، پل‌ها، کانال‌ها & تا امروز \\
+		\hline
+		\rowcolor{grisclair}
+		قضایی & کد جزایی، کد تجاری & با اصلاحات \\
+		\hline
+		متریک & نظام متریک اجباری & جهانی شد \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\section{از کنسولا به امپراتوری (۱۸۰۴)}
+
+\subsection{چرا امپراتوری؟}
+
+\begin{enghelabbox}[توطئه کادودال و بهانه امپراتوری]
+	در ۱۸۰۴، توطئه‌ای برای ترور ناپلئون کشف شد (توطئه کادودال). ناپلئون از این فرصت استفاده کرد:
+	\begin{itemize}[nosep]
+		\item دوک دانگین (شاهزاده بوربون) ربوده و اعدام شد — بدون محاکمه واقعی
+		\item استدلال: «باید جانشینی تضمین شود»
+		\item سنا از ناپلئون خواست امپراتور شود
+		\item همه‌پرسی (مشکوک) تأیید کرد
+	\end{itemize}
+\end{enghelabbox}
+
+\subsection{تاجگذاری: ۲ دسامبر ۱۸۰۴}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		% کادر اصلی
+		\node[rectangle, draw=violetempire, line width=3pt, fill=violetlight,
+		minimum width=13cm, minimum height=5cm, rounded corners=10pt]
+		at (0,0) {};
+		
+		% عنوان
+		\node[font=\large\bfseries, text=violetempire] at (0,1.8) {
+			تاجگذاری در نوتردام
+		};
+		
+		% جزئیات
+		\node[text width=11cm, align=center, font=\small] at (0,0) {
+			پاپ پیوس هفتم به پاریس آمد — اولین بار که پاپ فرانسه را برای تاجگذاری ترک می‌کرد.\\[5pt]
+			اما در لحظه حساس، \textbf{ناپلئون تاج را از دست پاپ گرفت و خودش بر سر نهاد}.\\[5pt]
+			پیام: قدرت من از خودم است، نه از کلیسا.\\[5pt]
+			سپس تاج ژوزفین را نیز خود بر سر او گذاشت.
+		};
+		
+		% نقل قول
+		\node[font=\footnotesize\itshape, text=gris] at (0,-1.8) {
+			«من تاج را یافتم در جوی آب افتاده، و با شمشیرم آن را برداشتم.»
+		};
+		
+	\end{tikzpicture}
+	\caption{تاجگذاری ناپلئون (۲ دسامبر ۱۸۰۴)}
+\end{figure}
+
+\begin{naghlbox}[واکنش بتهوون]
+	وقتی بتهوون شنید ناپلئون امپراتور شده، صفحه عنوان سمفونی سوم («قهرمانی») را که به ناپلئون تقدیم کرده بود، پاره کرد و گفت: «پس او هم فقط یک انسان عادی است! حالا حقوق بشر را زیر پا خواهد گذاشت و فقط به جاه‌طلبی خود خدمت خواهد کرد.»
+\end{naghlbox}
+
+\section{جنگ‌های ناپلئونی}
+
+\subsection{نبردهای اصلی}
+
+% صفحه افقی برای جدول جنگ‌ها
+\begin{landscape}
+	\begin{table}[p]
+		\centering
+		\caption{نبردهای اصلی ناپلئونی (۱۸۰۵-۱۸۱۵)}
+		\small
+		\begin{tabular}{|c|>{\bfseries}r|p{3cm}|p{3cm}|c|p{4cm}|}
+			\hline
+			\rowcolor{violetlight}
+			\textbf{سال} & \textbf{نبرد} & \textbf{دشمن} & \textbf{فرمانده دشمن} & \textbf{نتیجه} & \textbf{پیامد} \\
+			\hline
+			۱۸۰۵ & ترافالگار & انگلستان & نلسون & شکست & پایان رؤیای تهاجم به انگلستان \\
+			\hline
+			\rowcolor{grisclair}
+			۱۸۰۵ & آستِرلیتس & اتریش، روسیه & کوتوزوف & پیروزی & انحلال امپراتوری مقدس روم \\
+			\hline
+			۱۸۰۶ & یِنا & پروس & برانشوایگ & پیروزی & سقوط پروس، تسلط بر آلمان \\
+			\hline
+			\rowcolor{grisclair}
+			۱۸۰۷ & فریدلند & روسیه & بنیگسن & پیروزی & صلح تیلسیت، اوج امپراتوری \\
+			\hline
+			۱۸۰۹ & واگرام & اتریش & کارل & پیروزی & ازدواج با ماری‌لوئیز \\
+			\hline
+			\rowcolor{grisclair}
+			۱۸۱۲ & بورودینو & روسیه & کوتوزوف & پیروزی پیروسی & تصرف مسکو، فاجعه بازگشت \\
+			\hline
+			۱۸۱۳ & لایپزیگ & ائتلاف & شوارتزنبرگ & شکست & از دست رفتن آلمان \\
+			\hline
+			\rowcolor{grisclair}
+			۱۸۱۵ & واترلو & انگلستان، پروس & ولینگتون، بلوخر & شکست & پایان کار ناپلئون \\
+			\hline
+		\end{tabular}
+	\end{table}
+\end{landscape}
+
+\subsection{آستِرلیتس: شاهکار تاکتیکی}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.9
+		]
+		% کادر
+		\node[rectangle, draw=violetempire, line width=3pt, fill=violetlight,
+		minimum width=14cm, minimum height=6cm, rounded corners=10pt]
+		at (0,0) {};
+		
+		% عنوان
+		\node[font=\large\bfseries, text=violetempire] at (0,2.3) {
+			نبرد آستِرلیتس — «نبرد سه امپراتور»
+		};
+		\node[font=\small, text=gris] at (0,1.7) {۲ دسامبر ۱۸۰۵};
+		
+		% آمار
+		\node[text width=12cm, align=center, font=\small] at (0,0.3) {
+			\textbf{فرانسه}: ۶۸,۰۰۰ نفر \quad vs \quad \textbf{ائتلاف}: ۸۵,۰۰۰ نفر\\[5pt]
+			\textbf{تلفات فرانسه}: ۹,۰۰۰ \quad vs \quad \textbf{تلفات ائتلاف}: ۳۶,۰۰۰\\[10pt]
+			ناپلئون دشمن را فریب داد: وانمود کرد جناح راستش ضعیف است.\\
+			متحدین به آنجا حمله کردند — دقیقاً همان‌طور که ناپلئون می‌خواست.\\
+			سپس مرکز دشمن را شکافت و آنها را نابود کرد.
+		};
+		
+		% نتیجه
+		\node[rectangle, draw=vertnapoleon, fill=vertlight,
+		minimum width=10cm, minimum height=1cm, font=\small, rounded corners=3pt]
+		at (0,-2) {
+			\textbf{نتیجه}: پایان امپراتوری مقدس روم، اتریش تحقیر شد، ناپلئون ارباب اروپا
+		};
+		
+	\end{tikzpicture}
+	\caption{نبرد آستِرلیتس}
+\end{figure}
+
+\subsection{اوج امپراتوری: ۱۸۰۷-۱۸۱۲}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.85,
+		transform shape,
+		territory/.style={
+			rectangle, draw=violetempire, line width=1.5pt, fill=violetlight,
+			text=black, minimum width=3cm, minimum height=1.2cm,
+			align=center, font=\scriptsize, rounded corners=3pt
+		}
+		]
+		% عنوان
+		\node[font=\large\bfseries, text=violetempire] at (0,5) {
+			امپراتوری ناپلئون در اوج (۱۸۱۲)
+		};
+		
+		% امپراتوری فرانسه
+		\node[ellipse, draw=violetempire, line width=3pt, fill=violetlight,
+		minimum width=4cm, minimum height=2cm, font=\bfseries]
+		(france) at (0,2) {
+			\begin{tabular}{c}
+				فرانسه\\
+				{\scriptsize ۱۳۰ دپارتمان}
+			\end{tabular}
+		};
+		
+		% کشورهای وابسته
+		\node[territory] (spain) at (-6,3) {اسپانیا\\(ژوزف)};
+		\node[territory] (italy) at (-6,1) {ایتالیا\\(اوژن)};
+		\node[territory] (naples) at (-6,-1) {ناپل\\(مورا)};
+		\node[territory] (holland) at (-3,4) {هلند\\(لویی→الحاق)};
+		\node[territory] (westph) at (3,4) {وستفالی\\(ژروم)};
+		\node[territory] (confed) at (6,3) {کنفدراسیون راین\\(متحد)};
+		\node[territory] (warsaw) at (6,1) {ورشو\\(وابسته)};
+		\node[territory] (swiss) at (6,-1) {سوئیس\\(تحت‌الحمایه)};
+		
+		% خطوط
+		\draw[violetempire, line width=1pt] (france) -- (spain);
+		\draw[violetempire, line width=1pt] (france) -- (italy);
+		\draw[violetempire, line width=1pt] (france) -- (naples);
+		\draw[violetempire, line width=1pt] (france) -- (holland);
+		\draw[violetempire, line width=1pt] (france) -- (westph);
+		\draw[violetempire, line width=1pt] (france) -- (confed);
+		\draw[violetempire, line width=1pt] (france) -- (warsaw);
+		\draw[violetempire, line width=1pt] (france) -- (swiss);
+		
+		% دشمنان باقیمانده
+		\node[rectangle, draw=rougerevolution, fill=rougelight,
+		minimum width=8cm, minimum height=1cm, font=\small, rounded corners=3pt]
+		at (0,-2) {
+			\textbf{دشمنان}: انگلستان (دریا) | روسیه (شرق) | پرتغال و اسپانیا (مقاومت)
+		};
+		
+	\end{tikzpicture}
+	\caption{امپراتوری ناپلئون در اوج (۱۸۱۲)}
+\end{figure}
+
+\subsection{نظام قاره‌ای: جنگ اقتصادی با انگلستان}
+
+\begin{table}[H]
+	\centering
+	\caption{نظام قاره‌ای (Continental System)}
+	\begin{tabular}{|>{\bfseries}r|p{9cm}|}
+		\hline
+		\rowcolor{rougelight}
+		\textbf{جنبه} & \textbf{توضیح} \\
+		\hline
+		هدف & محاصره اقتصادی انگلستان — «بستن قاره» \\
+		\hline
+		\rowcolor{grisclair}
+		اعلام & فرمان برلین (۱۸۰۶)، میلان (۱۸۰۷) \\
+		\hline
+		مفاد & ممنوعیت واردات کالای انگلیسی به همه اروپا \\
+		\hline
+		\rowcolor{grisclair}
+		مشکلات & قاچاق گسترده، نارضایتی متحدین، ضرر به خود فرانسه \\
+		\hline
+		شکست & انگلستان دوام آورد، نظام فروپاشید \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{olgoobox}[چرا نظام قاره‌ای شکست خورد؟]
+	\begin{enumerate}[nosep]
+		\item انگلستان بازارهای دیگر یافت (آمریکا، آسیا)
+		\item قاچاق غیرقابل کنترل بود
+		\item متحدین ناپلئون از ممنوعیت رنج می‌بردند
+		\item حتی فرانسه به کالاهای انگلیسی نیاز داشت
+		\item روسیه از نظام خارج شد — بهانه حمله ۱۸۱۲
+	\end{enumerate}
+\end{olgoobox}
+
+\section{سقوط امپراتوری (۱۸۱۲-۱۸۱۵)}
+
+\subsection{فاجعه روسیه: ۱۸۱۲}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.9
+		]
+		% عنوان
+		\node[font=\large\bfseries, text=rougerevolution] at (0,4.5) {
+			لشکرکشی به روسیه: فاجعه بزرگ
+		};
+		
+		% آمار شروع و پایان
+		\node[rectangle, draw=bleurepublique, fill=bleulight,
+		minimum width=5cm, minimum height=2cm, font=\small, rounded corners=5pt]
+		at (-4,2) {
+			\begin{tabular}{c}
+				\textbf{شروع (ژوئن ۱۸۱۲)}\\[5pt]
+				۶۸۵,۰۰۰ سرباز\\
+				بزرگ‌ترین ارتش تاریخ
+			\end{tabular}
+		};
+		
+		\node[rectangle, draw=rougerevolution, fill=rougelight,
+		minimum width=5cm, minimum height=2cm, font=\small, rounded corners=5pt]
+		at (4,2) {
+			\begin{tabular}{c}
+				\textbf{پایان (دسامبر ۱۸۱۲)}\\[5pt]
+				۲۷,۰۰۰ سرباز\\
+				فقط ۴٪ بازگشتند
+			\end{tabular}
+		};
+		
+		% پیکان
+		\draw[->, >=Stealth, line width=3pt, rougerevolution] (-1,2) -- (1,2);
+		
+		% علل
+		\node[rectangle, draw=gris, fill=grisclair,
+		minimum width=12cm, minimum height=2.5cm, font=\small, rounded corners=5pt]
+		at (0,-1) {
+			\begin{tabular}{c}
+				\textbf{علل فاجعه}:\\[3pt]
+				عقب‌نشینی روس‌ها و سوزاندن همه چیز (زمین سوخته)\\
+				خطوط تدارکاتی بیش از حد طولانی\\
+				زمستان روسیه (−۳۰ درجه) | گرسنگی و بیماری\\
+				حمله پارتیزانی در بازگشت
+			\end{tabular}
+		};
+		
+		% نقل قول
+		\node[font=\small\itshape, text=gris] at (0,-3.5) {
+			«از مسکو به ویلنا، ارتش بزرگ یک گورستان متحرک بود.»
+		};
+		
+	\end{tikzpicture}
+	\caption{فاجعه روسیه (۱۸۱۲)}
+\end{figure}
+
+\subsection{فروپاشی: ۱۸۱۳-۱۸۱۴}
+
+\begin{table}[H]
+	\centering
+	\caption{مراحل سقوط امپراتوری}
+	\begin{tabular}{|c|p{4cm}|p{6cm}|}
+		\hline
+		\rowcolor{rougelight}
+		\textbf{تاریخ} & \textbf{رویداد} & \textbf{پیامد} \\
+		\hline
+		۱۸۱۳ & نبرد لایپزیگ («نبرد ملل») & شکست بزرگ، از دست رفتن آلمان \\
+		\hline
+		\rowcolor{grisclair}
+		ژانویه ۱۸۱۴ & ائتلاف وارد فرانسه شد & جنگ در خاک فرانسه \\
+		\hline
+		مارس ۱۸۱۴ & سقوط پاریس & ارتش تسلیم شد \\
+		\hline
+		\rowcolor{grisclair}
+		۶ آوریل ۱۸۱۴ & استعفای ناپلئون & تبعید به اِلبا \\
+		\hline
+		مه ۱۸۱۴ & لویی هجدهم به قدرت رسید & بازگشت بوربون‌ها \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{صد روز و واترلو}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.85,
+		event/.style={
+			rectangle, draw=violetempire, line width=1.5pt, fill=violetlight,
+			text=black, minimum width=3cm, minimum height=1.5cm,
+			align=center, font=\scriptsize, rounded corners=3pt
+		}
+		]
+		% خط زمان
+		\draw[line width=3pt, gris] (0,0) -- (14,0);
+		
+		% تاریخ‌ها
+		\node[below, font=\tiny] at (0,-0.3) {مارس ۱۵};
+		\node[below, font=\tiny] at (3.5,-0.3) {مارس ۲۰};
+		\node[below, font=\tiny] at (7,-0.3) {ژوئن ۱};
+		\node[below, font=\tiny] at (10.5,-0.3) {ژوئن ۱۸};
+		\node[below, font=\tiny] at (14,-0.3) {ژوئن ۲۲};
+		
+		% رویدادها
+		\node[event] at (1.5,2) {
+			\begin{tabular}{c}
+				فرار از اِلبا\\
+				فرود در فرانسه
+			\end{tabular}
+		};
+		\draw[->, >=Stealth, violetempire] (1.5,1.2) -- (1.5,0.3);
+		
+		\node[event] at (5,2) {
+			\begin{tabular}{c}
+				ورود به پاریس\\
+				فرار لویی ۱۸
+			\end{tabular}
+		};
+		\draw[->, >=Stealth, violetempire] (5,1.2) -- (5,0.3);
+		
+		\node[event] at (8.5,2) {
+			\begin{tabular}{c}
+				آغاز جنگ\\
+				با ائتلاف هفتم
+			\end{tabular}
+		};
+		\draw[->, >=Stealth, violetempire] (8.5,1.2) -- (8.5,0.3);
+		
+		\node[event, draw=rougerevolution, fill=rougelight] at (12,2) {
+			\begin{tabular}{c}
+				\textbf{واترلو}\\
+				شکست نهایی
+			\end{tabular}
+		};
+		\draw[->, >=Stealth, rougerevolution, line width=2pt] (12,1.2) -- (12,0.3);
+		
+		% نتیجه
+		\node[rectangle, draw=bleurepublique, fill=bleulight,
+		minimum width=10cm, minimum height=1cm, font=\small, rounded corners=3pt]
+		at (7,-2) {
+			استعفای دوم → تبعید به سنت‌هلن → مرگ ۱۸۲۱
+		};
+		
+	\end{tikzpicture}
+	\caption{صد روز (مارس-ژوئن ۱۸۱۵)}
+\end{figure}
+
+\begin{naghlbox}[واترلو]
+	«واترلو شکستی بود که فتح را تکمیل کرد.»
+	\begin{flushright}
+		— ویکتور هوگو، بینوایان
+	\end{flushright}
+\end{naghlbox}
+
+\section{ارزیابی: ناپلئون وارث یا خائن؟}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[
+		scale=0.9,
+		arg/.style={
+			rectangle, draw=#1, line width=1.5pt, fill=#1,
+			text=black, minimum width=5.5cm, minimum height=1.2cm,
+			align=center, font=\small, rounded corners=3pt
+		}
+		]
+		% دو ستون
+		\node[font=\large\bfseries, text=vertnapoleon] at (-4,5) {وارث انقلاب};
+		\node[font=\large\bfseries, text=rougerevolution] at (4,5) {خائن به انقلاب};
+		
+		% استدلال‌ها
+		\node[arg=vertlight] at (-4,3.8) {تثبیت اصلاحات (کد، کنکوردا)};
+		\node[arg=vertlight] at (-4,2.4) {برابری حقوقی (مردان)};
+		\node[arg=vertlight] at (-4,1) {پایان فئودالیسم در اروپا};
+		\node[arg=vertlight] at (-4,-0.4) {شایسته‌سالاری (کارِیر آزاد)};
+		\node[arg=vertlight] at (-4,-1.8) {گسترش ایده‌های انقلابی};
+		
+		\node[arg=rougelight] at (4,3.8) {پایان دادن به آزادی سیاسی};
+		\node[arg=rougelight] at (4,2.4) {امپراتوری موروثی};
+		\node[arg=rougelight] at (4,1) {سانسور و پلیس مخفی};
+		\node[arg=rougelight] at (4,-0.4) {جنگ‌های بی‌پایان، میلیون‌ها کشته};
+		\node[arg=rougelight] at (4,-1.8) {محدودیت حقوق زنان};
+		
+		% خط جداکننده
+		\draw[gris, line width=2pt, dashed] (0,4.5) -- (0,-2.5);
+		
+		% نتیجه
+		\node[rectangle, draw=gris, fill=grisclair,
+		minimum width=12cm, minimum height=1.2cm, font=\small, rounded corners=5pt]
+		at (0,-3.5) {
+			\textbf{نتیجه}: ناپلئون هم وارث و هم خائن بود — بسته به معیار ارزیابی
+		};
+		
+	\end{tikzpicture}
+	\caption{ناپلئون: وارث یا خائن به انقلاب؟}
+\end{figure}
+
+\begin{olgoobox}[الگوی ناپلئونی]
+	ناپلئون الگویی ایجاد کرد که بارها تکرار شد:
+	\begin{enumerate}[nosep]
+		\item \textbf{بحران و هرج‌ومرج} → مردم خواستار نظم
+		\item \textbf{مرد قوی} ظهور می‌کند — معمولاً ژنرال
+		\item \textbf{همه‌پرسی} مشروعیت می‌دهد
+		\item \textbf{اصلاحات} با اقتدارگرایی
+		\item \textbf{جنگ خارجی} برای حفظ مشروعیت
+		\item \textbf{شکست نهایی} به دلیل توسعه‌طلبی بیش از حد
+	\end{enumerate}
+	
+	این الگو در ناپلئون سوم، موسولینی، و بسیاری دیگر دیده می‌شود.
+\end{olgoobox}
+
+\section{منابع فصل چهارم}
+
+% ══════════════════════════════════════════════════════════════════════════════
+%                    ادامه فصل ۴ (از منابع)
+% ══════════════════════════════════════════════════════════════════════════════
+
+\subsection{منابع اولیه}
+
+\begin{enumerate}[nosep]
+	\item ناپلئون بناپارت. یادداشت‌های سنت‌هلن (روایت لاس کازس).
+	\item کد ناپلئون (قانون مدنی ۱۸۰۴).
+	\item مکاتبات ناپلئون. ۳۲ جلد.
+	\item کنکوردا ۱۸۰۱.
+	\item بولتن‌های ارتش بزرگ.
+\end{enumerate}
+
+\subsection{منابع ثانویه}
+
+\begin{enumerate}[nosep]
+	\item Englund, Steven. \textit{Napoleon: A Political Life}. Harvard UP, 2004.
+	\item Lefebvre, Georges. \textit{Napoleon: From 18 Brumaire to Tilsit}. Columbia UP, 1969.
+	\item Tulard, Jean. \textit{Napoleon: The Myth of the Saviour}. Weidenfeld, 1984.
+	\item Broers, Michael. \textit{Napoleon: Soldier of Destiny}. Pegasus, 2015.
+	\item Ellis, Geoffrey. \textit{The Napoleonic Empire}. Macmillan, 2003.
+	\item Dwyer, Philip. \textit{Napoleon: The Path to Power}. Yale UP, 2008.
+	\item Grab, Alexander. \textit{Napoleon and the Transformation of Europe}. Palgrave, 2003.
+	\item Woolf, Stuart. \textit{Napoleon's Integration of Europe}. Routledge, 1991.
+	\item Zamoyski, Adam. \textit{1812: Napoleon's Fatal March on Moscow}. HarperCollins, 2004.
+	\item Roberts, Andrew. \textit{Napoleon: A Life}. Viking, 2014.
+\end{enumerate}
+
+\begin{kholasebox}[جمع‌بندی فصل چهارم]
+	در این فصل دیدیم که:
+	
+	\begin{itemize}[nosep]
+		\item \textbf{کنسولا (۱۷۹۹-۱۸۰۴)}: تثبیت انقلاب با اقتدارگرایی
+		\item \textbf{اصلاحات ماندگار}: کد ناپلئون، کنکوردا، نظام اداری، آموزش
+		\item \textbf{امپراتوری (۱۸۰۴-۱۸۱۴)}: تبدیل جمهوری به سلطنت موروثی
+		\item \textbf{جنگ‌ها}: از آستِرلیتس تا واترلو — میلیون‌ها کشته
+		\item \textbf{سقوط}: توسعه‌طلبی بیش از حد، فاجعه روسیه، شکست نهایی
+		\item \textbf{میراث}: هم تثبیت انقلاب، هم خیانت به آن
+	\end{itemize}
+	
+	\textbf{پرسش کلیدی}: آیا دستاوردهای ناپلئون ارزش هزینه‌هایش را داشت؟
+	
+	\textbf{در فصل بعد}: قرن ناآرام (۱۸۱۵-۱۸۷۰) — بازگشت سلطنت، انقلاب‌های ۱۸۳۰ و ۱۸۴۸، جمهوری دوم، امپراتوری دوم
+\end{kholasebox}
+
+% ══════════════════════════════════════════════════════════════════════════════
+%                    پایان فصل ۴
+% ══════════════════════════════════════════════════════════════════════════════
+% ══════════════════════════════════════════════════════════════════════════════
+%                    خط زمانی جامع دوره ناپلئونی - صفحه افقی
+% ══════════════════════════════════════════════════════════════════════════════
+
+\begin{landscape}
+	\begin{figure}[p]
+		\centering
+		\begin{tikzpicture}[
+			scale=0.7,
+			transform shape
+			]
+			% عنوان
+			\node[font=\Large\bfseries, text=violetempire] at (12,8) {
+				خط زمانی دوره ناپلئونی (۱۷۹۹-۱۸۱۵)
+			};
+			
+			% خط اصلی زمان
+			\draw[line width=3pt, gris] (0,0) -- (24,0);
+			
+			% دوره‌ها
+			\fill[bleulight] (0,0.4) rectangle (6,0.8);
+			\node[above, font=\scriptsize\bfseries, text=bleurepublique] at (3,0.9) {کنسولا};
+			
+			\fill[violetlight] (6,0.4) rectangle (20,0.8);
+			\node[above, font=\scriptsize\bfseries, text=violetempire] at (13,0.9) {امپراتوری اول};
+			
+			\fill[orroyallight] (20,0.4) rectangle (22,0.8);
+			\node[above, font=\scriptsize\bfseries, text=orroyaldark] at (21,0.9) {اِلبا};
+			
+			\fill[rougelight] (22,0.4) rectangle (24,0.8);
+			\node[above, font=\scriptsize\bfseries, text=rougerevolution] at (23,0.9) {۱۰۰ روز};
+			
+			% سال‌ها
+			\foreach \x/\year in {0/۱۷۹۹, 3/۱۸۰۱, 6/۱۸۰۴, 9/۱۸۰۵, 12/۱۸۰۷, 
+				15/۱۸۱۰, 18/۱۸۱۲, 20/۱۸۱۴, 24/۱۸۱۵} {
+				\draw[black, line width=1.5pt] (\x,-0.3) -- (\x,0.3);
+				\node[below, font=\tiny] at (\x,-0.4) {\year};
+			}
+			
+			% رویدادهای بالا (سیاسی/نظامی)
+			\node[rectangle, draw=bleurepublique, fill=bleulight, 
+			minimum width=2cm, minimum height=0.8cm, font=\tiny, align=center]
+			at (1.5,2.5) {کودتای\\برومر};
+			\draw[->, >=Stealth, bleurepublique] (1.5,2) -- (1.5,0.5);
+			
+			\node[rectangle, draw=vertnapoleon, fill=vertlight, 
+			minimum width=2cm, minimum height=0.8cm, font=\tiny, align=center]
+			at (4,2.5) {صلح آمیان\\با انگلستان};
+			\draw[->, >=Stealth, vertnapoleon] (4,2) -- (4,0.5);
+			
+			\node[rectangle, draw=violetempire, fill=violetlight, 
+			minimum width=2cm, minimum height=0.8cm, font=\tiny, align=center]
+			at (7,2.5) {تاجگذاری\\امپراتور};
+			\draw[->, >=Stealth, violetempire] (7,2) -- (7,0.5);
+			
+			\node[rectangle, draw=rougerevolution, fill=rougelight, 
+			minimum width=2cm, minimum height=0.8cm, font=\tiny, align=center]
+			at (9.5,2.5) {ترافالگار\\(شکست)};
+			\draw[->, >=Stealth, rougerevolution] (9.5,2) -- (9.5,0.5);
+			
+			\node[rectangle, draw=vertnapoleon, fill=vertlight, 
+			minimum width=2cm, minimum height=0.8cm, font=\tiny, align=center]
+			at (10.5,4) {آستِرلیتس\\(پیروزی)};
+			\draw[->, >=Stealth, vertnapoleon] (10.5,3.5) -- (10.5,0.5);
+			
+			\node[rectangle, draw=violetempire, fill=violetlight, 
+			minimum width=2cm, minimum height=0.8cm, font=\tiny, align=center]
+			at (13,2.5) {صلح تیلسیت\\اوج قدرت};
+			\draw[->, >=Stealth, violetempire] (13,2) -- (13,0.5);
+			
+			\node[rectangle, draw=rougerevolution, fill=rougelight, 
+			minimum width=2cm, minimum height=0.8cm, font=\tiny, align=center]
+			at (16,2.5) {جنگ اسپانیا\\شروع زوال};
+			\draw[->, >=Stealth, rougerevolution] (16,2) -- (16,0.5);
+			
+			\node[rectangle, draw=rougerevolution, fill=rougemid, 
+			minimum width=2cm, minimum height=0.8cm, font=\tiny, align=center]
+			at (18.5,2.5) {فاجعه\\روسیه};
+			\draw[->, >=Stealth, rougerevolution, line width=2pt] (18.5,2) -- (18.5,0.5);
+			
+			\node[rectangle, draw=rougerevolution, fill=rougemid, 
+			minimum width=2cm, minimum height=0.8cm, font=\tiny, align=center]
+			at (23,2.5) {واترلو\\پایان};
+			\draw[->, >=Stealth, rougerevolution, line width=2pt] (23,2) -- (23,0.5);
+			
+			% رویدادهای پایین (اصلاحات)
+			\node[rectangle, draw=bleurepublique, fill=bleulight, 
+			minimum width=2cm, minimum height=0.8cm, font=\tiny, align=center]
+			at (2.5,-2.5) {بانک فرانسه\\کنکوردا};
+			\draw[->, >=Stealth, bleurepublique] (2.5,-2) -- (2.5,-0.5);
+			
+			\node[rectangle, draw=bleurepublique, fill=bleulight, 
+			minimum width=2cm, minimum height=0.8cm, font=\tiny, align=center]
+			at (5.5,-2.5) {کد ناپلئون\\لژیون دونور};
+			\draw[->, >=Stealth, bleurepublique] (5.5,-2) -- (5.5,-0.5);
+			
+			\node[rectangle, draw=violetempire, fill=violetlight, 
+			minimum width=2cm, minimum height=0.8cm, font=\tiny, align=center]
+			at (8,-2.5) {نظام قاره‌ای\\(برلین)};
+			\draw[->, >=Stealth, violetempire] (8,-2) -- (8,-0.5);
+			
+			\node[rectangle, draw=bleurepublique, fill=bleulight, 
+			minimum width=2.5cm, minimum height=0.8cm, font=\tiny, align=center]
+			at (11,-2.5) {دانشگاه\\امپراتوری};
+			\draw[->, >=Stealth, bleurepublique] (11,-2) -- (11,-0.5);
+			
+			% راهنما
+			\node[right, font=\footnotesize] at (0,-4.5) {
+				\begin{tabular}{r@{\hspace{3pt}}l@{\hspace{15pt}}r@{\hspace{3pt}}l@{\hspace{15pt}}r@{\hspace{3pt}}l}
+					\textcolor{bleurepublique}{$\blacksquare$} & اصلاحات/صلح &
+					\textcolor{violetempire}{$\blacksquare$} & امپراتوری/توسعه &
+					\textcolor{rougerevolution}{$\blacksquare$} & جنگ/شکست \\
+				\end{tabular}
+			};
+			
+		\end{tikzpicture}
+		\caption{خط زمانی جامع دوره ناپلئونی (۱۷۹۹-۱۸۱۵)}
+	\end{figure}
+\end{landscape}
+% ══════════════════════════════════════════════════════════════════════════════
+%                    نقشه مفهومی میراث ناپلئون - صفحه افقی
+% ══════════════════════════════════════════════════════════════════════════════
+
+\begin{landscape}
+	\begin{figure}[p]
+		\centering
+		\begin{tikzpicture}[
+			scale=0.7,
+			transform shape,
+			legacy/.style={
+				rectangle, draw=#1, line width=2pt, fill=#1,
+				text=black, minimum width=4cm, minimum height=2.5cm,
+				align=center, font=\small, rounded corners=5pt
+			},
+			sub/.style={
+				rectangle, draw=#1, line width=1pt, fill=white,
+				text=black, minimum width=3cm, minimum height=0.7cm,
+				align=center, font=\scriptsize, rounded corners=2pt
+			}
+			]
+			% عنوان
+			\node[font=\Large\bfseries, text=violetempire] at (12,8) {
+				میراث ناپلئون: تأثیر ماندگار
+			};
+			
+			% مرکز
+			\node[ellipse, draw=violetempire, line width=3pt, fill=violetlight,
+			minimum width=5cm, minimum height=3cm, font=\large\bfseries]
+			(center) at (12,4) {
+				\begin{tabular}{c}
+					میراث\\
+					ناپلئون
+				\end{tabular}
+			};
+			
+			% ───────────── میراث حقوقی ─────────────
+			\node[legacy=bleulight] (legal) at (3,6) {
+				\begin{tabular}{c}
+					\textbf{حقوقی}\\[5pt]
+					کد ناپلئون\\
+					برابری قانونی\\
+					سکولاریسم
+				\end{tabular}
+			};
+			\node[sub=bleurepublique] at (3,3.5) {هنوز پایه حقوق فرانسه};
+			\node[sub=bleurepublique] at (3,2.7) {الگو برای ۷۰+ کشور};
+			
+			% ───────────── میراث اداری ─────────────
+			\node[legacy=vertlight] (admin) at (21,6) {
+				\begin{tabular}{c}
+					\textbf{اداری}\\[5pt]
+					نظام پرفه\\
+					تمرکزگرایی\\
+					شایسته‌سالاری
+				\end{tabular}
+			};
+			\node[sub=vertnapoleon] at (21,3.5) {ساختار فعلی فرانسه};
+			\node[sub=vertnapoleon] at (21,2.7) {الگوی دولت مدرن};
+			
+			% ───────────── میراث آموزشی ─────────────
+			\node[legacy=orroyallight] (edu) at (3,0) {
+				\begin{tabular}{c}
+					\textbf{آموزشی}\\[5pt]
+					لیسه\\
+					دانشگاه دولتی\\
+					اکول پلی‌تکنیک
+				\end{tabular}
+			};
+			\node[sub=orroyaldark] at (3,-2.5) {نظام آموزشی فرانسه};
+			
+			% ───────────── میراث نظامی ─────────────
+			\node[legacy=rougelight] (milit) at (21,0) {
+				\begin{tabular}{c}
+					\textbf{نظامی}\\[5pt]
+					ارتش توده‌ای\\
+					تاکتیک‌های نوین\\
+					سربازگیری عمومی
+				\end{tabular}
+			};
+			\node[sub=rougerevolution] at (21,-2.5) {الگوی جنگ مدرن};
+			
+			% ───────────── میراث ایدئولوژیک ─────────────
+			\node[legacy=violetlight] (ideol) at (12,-1) {
+				\begin{tabular}{c}
+					\textbf{ایدئولوژیک}\\[5pt]
+					ناسیونالیسم\\
+					«مرد قوی»\\
+					افسانه ناپلئونی
+				\end{tabular}
+			};
+			\node[sub=violetempire] at (12,-3.5) {الگوی بناپارتیسم};
+			\node[sub=violetempire] at (12,-4.3) {ناپلئون سوم، دوگل...};
+			
+			% خطوط اتصال
+			\draw[bleurepublique, line width=2pt] (legal) -- (center);
+			\draw[vertnapoleon, line width=2pt] (admin) -- (center);
+			\draw[orroyaldark, line width=2pt] (edu) -- (center);
+			\draw[rougerevolution, line width=2pt] (milit) -- (center);
+			\draw[violetempire, line width=2pt] (ideol) -- (center);
+			
+		\end{tikzpicture}
+		\caption{نقشه مفهومی: میراث ماندگار ناپلئون}
+	\end{figure}
+\end{landscape}	
+	
+	
+\end{document}
