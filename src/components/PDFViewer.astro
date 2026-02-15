@@ -1,0 +1,286 @@
+---
+/**
+ * PDFViewer Component
+ *
+ * Client-side PDF viewer using PDF.js
+ * Features: pagination, zoom, download
+ */
+
+interface Props {
+  pdfUrl: string;
+  title: string;
+  lang: 'fa' | 'en';
+}
+
+const { pdfUrl, title, lang } = Astro.props;
+
+// i18n labels
+const labels = {
+  page: lang === 'fa' ? 'صفحه' : 'Page',
+  of: lang === 'fa' ? 'از' : 'of',
+  zoomIn: lang === 'fa' ? 'بزرگنمایی' : 'Zoom In',
+  zoomOut: lang === 'fa' ? 'کوچک‌نمایی' : 'Zoom Out',
+  fitWidth: lang === 'fa' ? 'عرض صفحه' : 'Fit Width',
+  download: lang === 'fa' ? 'دانلود PDF' : 'Download PDF',
+  loading: lang === 'fa' ? 'در حال بارگذاری...' : 'Loading...',
+  error: lang === 'fa' ? 'خطا در بارگذاری PDF' : 'Error loading PDF',
+  prevPage: lang === 'fa' ? 'صفحه قبلی' : 'Previous Page',
+  nextPage: lang === 'fa' ? 'صفحه بعدی' : 'Next Page',
+};
+---
+
+<div class="pdf-viewer-container" data-pdf-url={pdfUrl} data-lang={lang}>
+  <!-- Controls -->
+  <div class="pdf-controls flex items-center justify-between gap-4 p-4 bg-surface-dim dark:bg-surface-dark-dim border border-border dark:border-border-dark rounded-lg mb-4">
+    <!-- Navigation -->
+    <div class="flex items-center gap-2">
+      <button
+        class="pdf-prev-btn px-3 py-2 rounded-md bg-surface dark:bg-surface-dark border border-border dark:border-border-dark hover:bg-primary/10 dark:hover:bg-primary-light/10 transition-colors"
+        title={labels.prevPage}
+        aria-label={labels.prevPage}
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={lang === 'fa' ? "M9 5l7 7-7 7" : "M15 19l-7-7 7-7"} />
+        </svg>
+      </button>
+
+      <div class="flex items-center gap-2 text-sm">
+        <span class="pdf-page-num font-medium">1</span>
+        <span class="text-text-muted dark:text-text-dark-muted">{labels.of}</span>
+        <span class="pdf-page-count text-text-muted dark:text-text-dark-muted">-</span>
+      </div>
+
+      <button
+        class="pdf-next-btn px-3 py-2 rounded-md bg-surface dark:bg-surface-dark border border-border dark:border-border-dark hover:bg-primary/10 dark:hover:bg-primary-light/10 transition-colors"
+        title={labels.nextPage}
+        aria-label={labels.nextPage}
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={lang === 'fa' ? "M15 19l-7-7 7-7" : "M9 5l7 7-7 7"} />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Zoom Controls -->
+    <div class="flex items-center gap-2">
+      <button
+        class="pdf-zoom-out-btn px-3 py-2 rounded-md bg-surface dark:bg-surface-dark border border-border dark:border-border-dark hover:bg-primary/10 dark:hover:bg-primary-light/10 transition-colors"
+        title={labels.zoomOut}
+        aria-label={labels.zoomOut}
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM13 10H7" />
+        </svg>
+      </button>
+
+      <span class="pdf-zoom-level text-sm font-medium min-w-[4rem] text-center">100%</span>
+
+      <button
+        class="pdf-zoom-in-btn px-3 py-2 rounded-md bg-surface dark:bg-surface-dark border border-border dark:border-border-dark hover:bg-primary/10 dark:hover:bg-primary-light/10 transition-colors"
+        title={labels.zoomIn}
+        aria-label={labels.zoomIn}
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+        </svg>
+      </button>
+
+      <button
+        class="pdf-fit-width-btn px-3 py-2 text-sm rounded-md bg-surface dark:bg-surface-dark border border-border dark:border-border-dark hover:bg-primary/10 dark:hover:bg-primary-light/10 transition-colors"
+        title={labels.fitWidth}
+      >
+        {labels.fitWidth}
+      </button>
+    </div>
+
+    <!-- Download -->
+    <a
+      href={pdfUrl}
+      download={title}
+      class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-primary text-white dark:bg-primary-light hover:opacity-90 transition-opacity text-sm font-medium"
+    >
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      </svg>
+      {labels.download}
+    </a>
+  </div>
+
+  <!-- PDF Canvas Container -->
+  <div class="pdf-canvas-container relative bg-surface-dim dark:bg-surface-dark-dim rounded-lg overflow-auto" style="min-height: 600px;">
+    <!-- Loading State -->
+    <div class="pdf-loading absolute inset-0 flex items-center justify-center">
+      <div class="text-center">
+        <svg class="animate-spin h-10 w-10 text-primary dark:text-primary-light mx-auto mb-3" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        <p class="text-text-muted dark:text-text-dark-muted">{labels.loading}</p>
+      </div>
+    </div>
+
+    <!-- Error State -->
+    <div class="pdf-error absolute inset-0 flex items-center justify-center hidden">
+      <div class="text-center">
+        <svg class="h-10 w-10 text-red-500 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <p class="text-red-500">{labels.error}</p>
+      </div>
+    </div>
+
+    <!-- Canvas -->
+    <canvas class="pdf-canvas mx-auto"></canvas>
+  </div>
+</div>
+
+<script>
+  // PDF.js viewer implementation
+  import * as pdfjsLib from 'pdfjs-dist';
+
+  // Configure worker
+  pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
+
+  class PDFViewer {
+    constructor(container: HTMLElement) {
+      this.container = container;
+      this.pdfUrl = container.dataset.pdfUrl!;
+      this.lang = container.dataset.lang as 'fa' | 'en';
+
+      this.canvas = container.querySelector('.pdf-canvas') as HTMLCanvasElement;
+      this.context = this.canvas.getContext('2d')!;
+
+      this.loadingEl = container.querySelector('.pdf-loading') as HTMLElement;
+      this.errorEl = container.querySelector('.pdf-error') as HTMLElement;
+
+      this.pageNumEl = container.querySelector('.pdf-page-num') as HTMLElement;
+      this.pageCountEl = container.querySelector('.pdf-page-count') as HTMLElement;
+      this.zoomLevelEl = container.querySelector('.pdf-zoom-level') as HTMLElement;
+
+      this.currentPage = 1;
+      this.scale = 1.0;
+      this.pdfDoc = null;
+
+      this.bindEvents();
+      this.loadPDF();
+    }
+
+    private container: HTMLElement;
+    private pdfUrl: string;
+    private lang: 'fa' | 'en';
+    private canvas: HTMLCanvasElement;
+    private context: CanvasRenderingContext2D;
+    private loadingEl: HTMLElement;
+    private errorEl: HTMLElement;
+    private pageNumEl: HTMLElement;
+    private pageCountEl: HTMLElement;
+    private zoomLevelEl: HTMLElement;
+    private currentPage: number;
+    private scale: number;
+    private pdfDoc: any;
+
+    private bindEvents() {
+      this.container.querySelector('.pdf-prev-btn')?.addEventListener('click', () => this.prevPage());
+      this.container.querySelector('.pdf-next-btn')?.addEventListener('click', () => this.nextPage());
+      this.container.querySelector('.pdf-zoom-in-btn')?.addEventListener('click', () => this.zoomIn());
+      this.container.querySelector('.pdf-zoom-out-btn')?.addEventListener('click', () => this.zoomOut());
+      this.container.querySelector('.pdf-fit-width-btn')?.addEventListener('click', () => this.fitWidth());
+    }
+
+    private async loadPDF() {
+      try {
+        this.showLoading();
+        const loadingTask = pdfjsLib.getDocument(this.pdfUrl);
+        this.pdfDoc = await loadingTask.promise;
+
+        this.pageCountEl.textContent = this.pdfDoc.numPages.toString();
+        this.hideLoading();
+        this.renderPage(this.currentPage);
+      } catch (error) {
+        console.error('Error loading PDF:', error);
+        this.showError();
+      }
+    }
+
+    private async renderPage(pageNum: number) {
+      const page = await this.pdfDoc.getPage(pageNum);
+      const viewport = page.getViewport({ scale: this.scale });
+
+      this.canvas.height = viewport.height;
+      this.canvas.width = viewport.width;
+
+      const renderContext = {
+        canvasContext: this.context,
+        viewport: viewport,
+      };
+
+      await page.render(renderContext).promise;
+      this.pageNumEl.textContent = pageNum.toString();
+      this.updateZoomLabel();
+    }
+
+    private prevPage() {
+      if (this.currentPage <= 1) return;
+      this.currentPage--;
+      this.renderPage(this.currentPage);
+    }
+
+    private nextPage() {
+      if (this.currentPage >= this.pdfDoc.numPages) return;
+      this.currentPage++;
+      this.renderPage(this.currentPage);
+    }
+
+    private zoomIn() {
+      this.scale += 0.25;
+      this.renderPage(this.currentPage);
+    }
+
+    private zoomOut() {
+      if (this.scale <= 0.5) return;
+      this.scale -= 0.25;
+      this.renderPage(this.currentPage);
+    }
+
+    private fitWidth() {
+      const containerWidth = this.container.querySelector('.pdf-canvas-container')!.clientWidth;
+      this.scale = (containerWidth - 40) / this.canvas.width;
+      this.renderPage(this.currentPage);
+    }
+
+    private updateZoomLabel() {
+      this.zoomLevelEl.textContent = `${Math.round(this.scale * 100)}%`;
+    }
+
+    private showLoading() {
+      this.loadingEl.classList.remove('hidden');
+      this.errorEl.classList.add('hidden');
+    }
+
+    private hideLoading() {
+      this.loadingEl.classList.add('hidden');
+    }
+
+    private showError() {
+      this.loadingEl.classList.add('hidden');
+      this.errorEl.classList.remove('hidden');
+    }
+  }
+
+  // Initialize all PDF viewers on the page
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.pdf-viewer-container').forEach((container) => {
+      new PDFViewer(container as HTMLElement);
+    });
+  });
+</script>
+
+<style>
+  .pdf-canvas-container {
+    max-height: 800px;
+  }
+
+  .pdf-canvas {
+    display: block;
+  }
+</style>

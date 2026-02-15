@@ -10,6 +10,7 @@ const books = defineCollection({
     lang: z.enum(['fa', 'en']),
     coverImage: z.string().optional(),
     pdfUrl: z.string().optional(),
+    showPdfViewer: z.boolean().default(false),
     publishDate: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
     tags: z.array(z.string()).default([]),
