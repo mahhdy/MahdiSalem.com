@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: Improve article width and add category taxonomy foundation\n\nThis commit implements Phase 1 of content organization improvements:\n\n## Feature 1: Article Width Adjustment\n- Add `.container-article` CSS utility with 960px max-width for better desktop viewing\n- Update ArticleLayout to use wider container instead of narrow 768px layout\n- Improves readability and screen space utilization on desktop displays\n\n## Feature 2: Category Taxonomy System\n- Create comprehensive bilingual category taxonomy \\(25+ categories\\)\n- Add `src/data/categories.ts` with complete category definitions\n- Categories cover: Philosophy, Science, Logic & Mathematics, Ethics, Politics, Economics, Life\n- Include Farsi and English names, descriptions, and content type associations\n- Provide helper functions: getCategoryName, getCategoryDescription, getCategoriesByContentType\n\n## Feature 3: Category SVG Icons\n- Create 25 custom SVG icons for all category classifications\n- Icons stored in `public/images/categories/`\n- Designed with `currentColor` for automatic dark/light mode compatibility\n- Thematic designs: ontology \\(network\\), epistemology \\(eye\\), physics \\(waves\\), etc.\n\n**Breaking Changes:** None - backward compatible additions only\n\n**Related:** Prepares foundation for upcoming category-based navigation tabs\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)"
+    ]
+  }
+}

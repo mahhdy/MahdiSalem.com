@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CategoryTabView from '../../../components/CategoryTabView.astro';
 import { t, stripLangPrefix } from '../../../i18n';
 import { getCollection } from 'astro:content';
 import stats from '../../../data/stats.json';
@@ -31,6 +32,9 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
 
 <BaseLayout title={t('nav.articles', lang)}>
   <div class="container-wide py-16">
+    <h1 class="text-3xl font-bold mb-8 text-center">{t('nav.articles', lang)}</h1>
+
+    <CategoryTabView contentType="articles" lang={lang} allItems={articles} defaultTab="categories">
     <div class="flex flex-col md:flex-row gap-6 mb-8">
       {/* Search */}
       <div class="flex-1 relative">
@@ -175,3 +179,7 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
 
   sortSelect?.addEventListener('change', update);
 </script>
+
+    </CategoryTabView>
+  </div>
+</BaseLayout>
