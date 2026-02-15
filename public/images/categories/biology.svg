@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- DNA helix -->
+  <path d="M60 40 Q100 60 140 40" stroke="currentColor" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M60 70 Q100 90 140 70" stroke="currentColor" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M60 100 Q100 120 140 100" stroke="currentColor" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M60 130 Q100 150 140 130" stroke="currentColor" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M60 160 Q100 180 140 160" stroke="currentColor" stroke-width="3" fill="none" opacity="0.5"/>
+
+  <path d="M140 40 Q100 20 60 40" stroke="currentColor" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M140 70 Q100 50 60 70" stroke="currentColor" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M140 100 Q100 80 60 100" stroke="currentColor" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M140 130 Q100 110 60 130" stroke="currentColor" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M140 160 Q100 140 60 160" stroke="currentColor" stroke-width="3" fill="none" opacity="0.5"/>
+
+  <!-- Base pairs -->
+  <line x1="75" y1="55" x2="125" y2="55" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+  <line x1="75" y1="85" x2="125" y2="85" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+  <line x1="75" y1="115" x2="125" y2="115" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+  <line x1="75" y1="145" x2="125" y2="145" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+</svg>

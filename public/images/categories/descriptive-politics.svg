@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Political landscape/map -->
+  <path d="M40 80 L60 60 L90 70 L110 50 L140 65 L160 55 L160 140 L40 140 Z"
+        fill="currentColor" opacity="0.1" stroke="currentColor" stroke-width="2"/>
+
+  <circle cx="70" cy="90" r="5" fill="currentColor" opacity="0.5"/>
+  <circle cx="120" cy="85" r="5" fill="currentColor" opacity="0.5"/>
+  <circle cx="100" cy="110" r="5" fill="currentColor" opacity="0.5"/>
+
+  <line x1="70" y1="90" x2="120" y2="85" stroke="currentColor" stroke-width="1.5" opacity="0.3" stroke-dasharray="3 2"/>
+  <line x1="70" y1="90" x2="100" y2="110" stroke="currentColor" stroke-width="1.5" opacity="0.3" stroke-dasharray="3 2"/>
+  <line x1="120" y1="85" x2="100" y2="110" stroke="currentColor" stroke-width="1.5" opacity="0.3" stroke-dasharray="3 2"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Eye with knowledge rays -->
+  <ellipse cx="100" cy="100" rx="60" ry="35" fill="currentColor" opacity="0.1"/>
+  <ellipse cx="100" cy="100" rx="60" ry="35" stroke="currentColor" stroke-width="3" opacity="0.5"/>
+  <circle cx="100" cy="100" r="20" fill="currentColor" opacity="0.3"/>
+  <circle cx="100" cy="100" r="10" fill="currentColor"/>
+
+  <!-- Knowledge rays -->
+  <line x1="40" y1="85" x2="20" y2="70" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+  <line x1="160" y1="85" x2="180" y2="70" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+  <line x1="50" y1="100" x2="25" y2="100" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+  <line x1="150" y1="100" x2="175" y2="100" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+  <line x1="40" y1="115" x2="20" y2="130" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+  <line x1="160" y1="115" x2="180" y2="130" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Speech bubble with semantic symbols -->
+  <path d="M40 60 Q40 40 60 40 L140 40 Q160 40 160 60 L160 120 Q160 140 140 140 L80 140 L60 160 L60 140 Q40 140 40 120 Z"
+        fill="currentColor" opacity="0.1" stroke="currentColor" stroke-width="3" opacity="0.5"/>
+
+  <!-- Semantic symbols inside -->
+  <text x="100" y="90" font-size="40" text-anchor="middle" fill="currentColor" opacity="0.6" font-family="serif">∀</text>
+  <text x="70" y="110" font-size="30" text-anchor="middle" fill="currentColor" opacity="0.4" font-family="serif">P</text>
+  <text x="130" y="110" font-size="30" text-anchor="middle" fill="currentColor" opacity="0.4" font-family="serif">Q</text>
+</svg>

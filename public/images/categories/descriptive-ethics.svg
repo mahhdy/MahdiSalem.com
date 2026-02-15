@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Magnifying glass -->
+  <circle cx="90" cy="90" r="40" fill="currentColor" opacity="0.05" stroke="currentColor" stroke-width="3"/>
+  <line x1="120" y1="120" x2="160" y2="160" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Observed content -->
+  <text x="90" y="100" font-size="32" text-anchor="middle" fill="currentColor" opacity="0.5">∃</text>
+</svg>

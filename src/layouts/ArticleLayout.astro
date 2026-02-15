@@ -50,7 +50,7 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
 <BaseLayout title={title} description={description}>
   <ReadingProgress />
 
-  <article class="container-narrow py-10">
+  <article class="container-article py-10">
     <!-- Header -->
     <header class="mb-8">
       {categories.length > 0 && (

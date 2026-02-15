@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Neural network -->
+  <circle cx="100" cy="50" r="12" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2"/>
+  <circle cx="60" cy="100" r="12" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2"/>
+  <circle cx="140" cy="100" r="12" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2"/>
+  <circle cx="80" cy="150" r="12" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2"/>
+  <circle cx="120" cy="150" r="12" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2"/>
+
+  <line x1="100" y1="62" x2="60" y2="88" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+  <line x1="100" y1="62" x2="140" y2="88" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+  <line x1="60" y1="112" x2="80" y2="138" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+  <line x1="60" y1="112" x2="120" y2="138" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+  <line x1="140" y1="112" x2="80" y2="138" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+  <line x1="140" y1="112" x2="120" y2="138" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+
+  <circle cx="100" cy="50" r="6" fill="currentColor"/>
+  <circle cx="60" cy="100" r="6" fill="currentColor"/>
+  <circle cx="140" cy="100" r="6" fill="currentColor"/>
+  <circle cx="80" cy="150" r="6" fill="currentColor"/>
+  <circle cx="120" cy="150" r="6" fill="currentColor"/>
+</svg>

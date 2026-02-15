@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Supply/demand curves -->
+  <!-- Demand curve (downward sloping) -->
+  <path d="M50 60 Q100 100 150 140" stroke="currentColor" stroke-width="3" fill="none" opacity="0.6"/>
+
+  <!-- Supply curve (upward sloping) -->
+  <path d="M50 140 Q100 100 150 60" stroke="currentColor" stroke-width="3" fill="none" opacity="0.6"/>
+
+  <!-- Equilibrium point -->
+  <circle cx="100" cy="100" r="8" fill="currentColor"/>
+  <circle cx="100" cy="100" r="15" fill="none" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+
+  <!-- Axes -->
+  <line x1="40" y1="160" x2="160" y2="160" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+  <line x1="40" y1="50" x2="40" y2="160" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+
+  <!-- Labels -->
+  <text x="155" y="175" font-size="12" fill="currentColor" opacity="0.5">Q</text>
+  <text x="25" y="55" font-size="12" fill="currentColor" opacity="0.5">P</text>
+</svg>

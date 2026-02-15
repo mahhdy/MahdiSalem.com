@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Venn diagrams -->
+  <circle cx="85" cy="100" r="45" fill="currentColor" opacity="0.1" stroke="currentColor" stroke-width="3"/>
+  <circle cx="115" cy="100" r="45" fill="currentColor" opacity="0.1" stroke="currentColor" stroke-width="3"/>
+
+  <text x="60" y="105" font-size="24" text-anchor="middle" fill="currentColor" opacity="0.6">A</text>
+  <text x="140" y="105" font-size="24" text-anchor="middle" fill="currentColor" opacity="0.6">B</text>
+  <text x="100" y="105" font-size="20" text-anchor="middle" fill="currentColor" opacity="0.8">∩</text>
+</svg>
