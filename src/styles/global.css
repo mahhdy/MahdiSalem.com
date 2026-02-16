@@ -576,3 +576,91 @@
     background-color: rgb(41 128 185 / 0.1);
   }
 }
+
+/* =============================================
+   Width Toggle — Content Container Sizing
+   ============================================= */
+
+/* Base container styles (NOT inside @layer so they have normal specificity) */
+.container-article,
+.container-wide {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 56rem; /* 896px default */
+  width: 100%;
+  transition: max-width 0.35s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .container-article,
+  .container-wide {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-article,
+  .container-wide {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* CSS-driven width overrides via data attribute on <html> */
+html[data-content-width="default"] .container-article,
+html[data-content-width="default"] .container-wide {
+  max-width: 56rem !important; /* 896px */
+}
+
+html[data-content-width="1024"] .container-article,
+html[data-content-width="1024"] .container-wide {
+  max-width: 1024px !important;
+}
+
+html[data-content-width="1280"] .container-article,
+html[data-content-width="1280"] .container-wide {
+  max-width: 1280px !important;
+}
+
+html[data-content-width="full"] .container-article,
+html[data-content-width="full"] .container-wide {
+  max-width: 90vw !important;
+}
+
+/* Content offset — header only shows on scroll, no permanent offset needed */
+.content-with-header {
+  margin-top: 0;
+}
+
+/* Scroll padding for anchor links when header is visible */
+html {
+  scroll-padding-top: 4rem;
+}
+
+/* Hide width toggle header on very small screens (optional — remove if unwanted) */
+@media (max-width: 639px) {
+  #width-toggle-header {
+    /* Uncomment below to hide on phones: */
+    /* display: none !important; */
+  }
+}
+
+/* =============================================
+   Override Tailwind .prose max-width 
+   when width toggle is active
+   ============================================= */
+
+/* Allow prose content to fill the full container width */
+html[data-content-width="1024"] .prose,
+html[data-content-width="1280"] .prose,
+html[data-content-width="full"] .prose {
+  max-width: none !important;
+}
+
+/* At default width, keep the nice .prose reading width */
+html[data-content-width="default"] .prose {
+  max-width: 65ch; /* Tailwind default — comfortable reading */
+}

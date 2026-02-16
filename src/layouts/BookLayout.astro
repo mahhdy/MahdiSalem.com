@@ -3,6 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import ReadingProgress from '../components/ReadingProgress.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import Rating from '../components/Rating.astro';
+import WidthToggle from '../components/WidthToggle.astro';
 import { t, getLocalizedPath, stripLangPrefix, type Locale } from '../i18n';
 
 interface Chapter {
@@ -22,6 +23,7 @@ interface Props {
   prevChapter?: Chapter;
   nextChapter?: Chapter;
   draft?: boolean;
+  author?: string;
 }
 
 const {
@@ -35,13 +37,17 @@ const {
   prevChapter,
   nextChapter,
   draft = false,
+  author = 'مهدی سالم',
 } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description}>
   <ReadingProgress />
 
-  <div class="container-wide py-10">
+  <!-- Sticky Width Toggle Header -->
+  <WidthToggle title={title} author={author} lang={lang} />
+
+  <div class="content-with-header container-wide py-10">
     <div class="flex flex-col lg:flex-row gap-8">
       <!-- Sidebar: Chapter list -->
       <aside class="lg:w-64 shrink-0">
@@ -92,7 +98,7 @@ const {
 
         <article>
           <h1 class="text-3xl md:text-4xl font-bold mb-8">{title}</h1>
-          <div class="prose">
+          <div class="prose article-content">
             {draft && (
               <div class="bg-amber-50 dark:bg-amber-900/20 text-amber-800 dark:text-amber-200 px-4 py-3 rounded-lg mb-8 border border-amber-200 dark:border-amber-800/50 flex items-start gap-3">
                 <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
