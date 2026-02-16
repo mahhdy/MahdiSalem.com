@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Stylized Iran map outline (simplified) -->
+  <path d="M60 70 L80 60 L110 55 L140 65 L155 75 L160 95 L155 120 L145 140 L125 150 L95 155 L70 145 L55 125 L50 100 L55 80 Z"
+        fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="3"/>
+
+  <!-- Central marker -->
+  <circle cx="100" cy="100" r="8" fill="currentColor"/>
+  <circle cx="100" cy="100" r="15" fill="none" stroke="currentColor" stroke-width="2" opacity="0.4"/>
+</svg>

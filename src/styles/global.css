@@ -396,6 +396,10 @@
     @apply max-w-6xl mx-auto px-4 sm:px-6;
   }
 
+  .container-article {
+    @apply max-w-[60rem] mx-auto px-4 sm:px-6;
+  }
+
   /* Primary color utilities */
   .border-primary {
     border-color: var(--color-primary);

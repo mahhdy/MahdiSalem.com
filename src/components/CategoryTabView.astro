@@ -1,0 +1,199 @@
+---
+/**
+ * CategoryTabView Component
+ *
+ * Provides tabbed interface for viewing content as list or by categories.
+ * Defaults to category view per user preference.
+ */
+
+import CategoryCard from './CategoryCard.astro';
+import { categories, getCategoriesByContentType } from '../data/categories';
+
+interface Props {
+  contentType: 'articles' | 'books' | 'statements';
+  lang: 'fa' | 'en';
+  allItems: any[];
+  defaultTab?: 'list' | 'categories';
+}
+
+const { contentType, lang, allItems, defaultTab = 'categories' } = Astro.props;
+
+// Filter categories relevant to this content type
+const relevantCategories = getCategoriesByContentType(contentType);
+
+// Group items by category
+const categorizedItems = new Map<string, any[]>();
+
+relevantCategories.forEach((category) => {
+  const items = allItems.filter((item) => {
+    const itemCategories = item.data.categories || [];
+    return itemCategories.some((cat: string) => {
+      // Match by slug or by name (for backward compatibility)
+      return cat === category.slug ||
+             cat === category.nameFa ||
+             cat === category.nameEn;
+    });
+  });
+
+  if (items.length > 0) {
+    categorizedItems.set(category.slug, items);
+  }
+});
+
+// Get i18n labels
+const labels = {
+  listView: lang === 'fa' ? 'نمای فهرستی' : 'List View',
+  categoryView: lang === 'fa' ? 'نمای دسته‌بندی' : 'Category View',
+};
+---
+
+<div class="category-tab-view" data-default-tab={defaultTab}>
+  <!-- Tab Buttons -->
+  <div class="flex justify-center mb-8">
+    <div class="inline-flex p-1 bg-surface-dim dark:bg-surface-dark-dim rounded-lg border border-border dark:border-border-dark">
+      <button
+        class="tab-btn px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
+        data-tab="list"
+        type="button"
+      >
+        {labels.listView}
+      </button>
+      <button
+        class="tab-btn px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
+        data-tab="categories"
+        type="button"
+      >
+        {labels.categoryView}
+      </button>
+    </div>
+  </div>
+
+  <!-- Tab Content -->
+  <div class="tab-content-container">
+    <!-- List View (slot content) -->
+    <div id="list-content" class="tab-content">
+      <slot />
+    </div>
+
+    <!-- Category View -->
+    <div id="categories-content" class="tab-content">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {Array.from(categorizedItems.entries()).map(([slug, items]) => {
+          const category = relevantCategories.find((c) => c.slug === slug);
+          if (!category) return null;
+
+          return (
+            <CategoryCard
+              category={category}
+              items={items}
+              lang={lang}
+              contentType={contentType}
+            />
+          );
+        })}
+      </div>
+
+      {categorizedItems.size === 0 && (
+        <div class="text-center py-16">
+          <p class="text-text-muted dark:text-text-dark-muted">
+            {lang === 'fa' ? 'هیچ دسته‌بندی‌ای یافت نشد' : 'No categories found'}
+          </p>
+        </div>
+      )}
+    </div>
+  </div>
+</div>
+
+<style>
+  .tab-btn {
+    color: var(--color-text-muted);
+  }
+
+  html.dark .tab-btn {
+    color: var(--color-text-dark-muted);
+  }
+
+  .tab-btn:hover {
+    color: var(--color-text);
+  }
+
+  html.dark .tab-btn:hover {
+    color: var(--color-text-dark);
+  }
+
+  .tab-btn.active {
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    color: var(--color-primary);
+  }
+
+  html.dark .tab-btn.active {
+    background-color: var(--color-surface-dark);
+    color: var(--color-primary-light);
+  }
+
+  .tab-content {
+    display: none;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+</style>
+
+<script>
+  // Tab switching functionality
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabViews = document.querySelectorAll('.category-tab-view');
+
+    tabViews.forEach((tabView) => {
+      const buttons = tabView.querySelectorAll('.tab-btn');
+      const listContent = tabView.querySelector('#list-content');
+      const categoriesContent = tabView.querySelector('#categories-content');
+      const defaultTab = tabView.getAttribute('data-default-tab') || 'categories';
+
+      // Set initial active tab
+      const initialButton = tabView.querySelector(`[data-tab="${defaultTab}"]`);
+      const initialContent = defaultTab === 'list' ? listContent : categoriesContent;
+
+      if (initialButton && initialContent) {
+        initialButton.classList.add('active');
+        initialContent.classList.add('active');
+      }
+
+      // Add click handlers
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const tab = button.getAttribute('data-tab');
+
+          // Update active button
+          buttons.forEach((btn) => btn.classList.remove('active'));
+          button.classList.add('active');
+
+          // Update active content
+          if (listContent && categoriesContent) {
+            if (tab === 'list') {
+              listContent.classList.add('active');
+              categoriesContent.classList.remove('active');
+            } else {
+              categoriesContent.classList.add('active');
+              listContent.classList.remove('active');
+            }
+          }
+
+          // Update URL hash (optional, for bookmark/share)
+          window.history.replaceState(null, '', `#${tab}`);
+        });
+      });
+
+      // Handle initial hash in URL
+      const hash = window.location.hash.slice(1);
+      if (hash === 'list' || hash === 'categories') {
+        const hashButton = tabView.querySelector(`[data-tab="${hash}"]`);
+        if (hashButton) {
+          hashButton.click();
+        }
+      }
+    });
+  });
+</script>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Infinity symbol + equation -->
+  <path d="M50 100 Q50 70 70 70 Q90 70 100 100 Q110 70 130 70 Q150 70 150 100 Q150 130 130 130 Q110 130 100 100 Q90 130 70 130 Q50 130 50 100 Z"
+        fill="currentColor" opacity="0.1" stroke="currentColor" stroke-width="3"/>
+
+  <text x="100" y="160" font-size="36" text-anchor="middle" fill="currentColor" opacity="0.5" font-family="serif">∫ƒ(x)dx</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Recursive logic loops -->
+  <path d="M100 100 Q70 60 100 40 Q130 60 100 100 Q130 140 100 160 Q70 140 100 100"
+        fill="currentColor" opacity="0.05" stroke="currentColor" stroke-width="3"/>
+
+  <circle cx="100" cy="40" r="6" fill="currentColor"/>
+  <circle cx="100" cy="160" r="6" fill="currentColor"/>
+  <circle cx="100" cy="100" r="10" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2"/>
+
+  <text x="100" y="105" font-size="20" text-anchor="middle" fill="currentColor" opacity="0.7">⊨</text>
+</svg>

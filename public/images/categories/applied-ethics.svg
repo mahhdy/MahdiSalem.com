@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Bridge connecting theory to practice -->
+  <rect x="30" y="120" width="50" height="40" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="2"/>
+  <text x="55" y="145" font-size="14" text-anchor="middle" fill="currentColor">Theory</text>
+
+  <!-- Bridge arch -->
+  <path d="M80 130 Q100 90 120 130" stroke="currentColor" stroke-width="3" fill="none"/>
+  <line x1="80" y1="130" x2="80" y2="145" stroke="currentColor" stroke-width="2"/>
+  <line x1="120" y1="130" x2="120" y2="145" stroke="currentColor" stroke-width="2"/>
+
+  <rect x="120" y="120" width="50" height="40" fill="currentColor" opacity="0.2" stroke="currentColor" stroke-width="2"/>
+  <text x="145" y="145" font-size="14" text-anchor="middle" fill="currentColor">Practice</text>
+</svg>
