@@ -243,6 +243,12 @@ export class ContentPipeline {
             bodyContent = bodyContent.replace(/<\/?head[^>]*>/gi, '');
             bodyContent = bodyContent.replace(/<\/?body[^>]*>/gi, '');
 
+            // Fix Mermaid syntax: remove spaces after colons in JSON-like structures
+            // This fixes patterns like ": '" to ":'" and ": {" to ":{"
+            bodyContent = bodyContent.replace(/:\s+'/g, ":'");
+            bodyContent = bodyContent.replace(/:\s+\{/g, ":{");
+            bodyContent = bodyContent.replace(/,\s+'/g, ",'");
+
             // Clean up excessive whitespace
             bodyContent = bodyContent.replace(/\n\s*\n\s*\n/g, '\n\n');
         }
