@@ -56,11 +56,56 @@ Personal website for **Mehdi Salem** (مهدی سالم) - independent researche
 - **Visit Count Display** - Show popularity metrics on all content
 - **Responsive Design** - Mobile-optimized search and filter controls
 
+### Category Taxonomy System (NEW)
+
+- **Comprehensive Categorization** - 25+ bilingual categories covering philosophy, politics, ethics, technology, and more
+- **Visual Category Cards** - SVG icons with custom designs for each category
+- **Category Tab View** - Toggle between traditional list view and category-based exploration
+- **Smart Grouping** - Categories automatically group related content (articles, books, statements)
+- **Hierarchical Support** - Parent-child category relationships for better organization
+- **Hover Tooltips** - View top 3 items in each category on hover
+- **Item Counts** - Real-time display of content count per category
+
+### Enhanced Reading Experience (NEW)
+
+- **Wider Article Layout** - Optimized 960px width for comfortable desktop reading (previously 768px)
+- **PDF Viewer Integration** - Full in-page PDF viewer with controls for books
+  - Page navigation (next/previous)
+  - Zoom controls (in/out, fit to width)
+  - Download original PDF
+  - Loading states and error handling
+  - Bilingual UI support
+- **Tab Interface for Books** - Switch between chapter reading and PDF viewing
+- **Responsive PDF Display** - Mobile-optimized PDF rendering
+
+## Planned Features
+
+The following features are planned for future releases:
+
+### 🎥 Multimedia Content System
+- Video content management and display
+- Audio/Podcast player integration
+- Playlist and series organization
+- Transcript support
+- Multi-format media support
+
+### 📱 Telegram Feed Integration
+- Display 3-5 latest posts from Telegram channel
+- Show engagement metrics (views, comments)
+- Link to full channel for more content
+- Cloudflare Worker integration for Telegram API
+- Real-time or scheduled updates
+
+**Want to contribute or suggest features?** Open an issue on GitHub!
+
 ## Project Structure
 
 ```
 src/
 ├── components/       # Reusable Astro components
+│   ├── CategoryCard.astro       # Category display cards
+│   ├── CategoryTabView.astro    # Tab interface for categories
+│   └── PDFViewer.astro          # In-page PDF viewer
 ├── content/          # Markdown content (articles, books, statements, wiki)
 │   ├── articles/
 │   │   ├── fa/       # Persian articles
@@ -74,13 +119,20 @@ src/
 │   └── wiki/
 │       ├── fa/
 │       └── en/
+├── data/             # Static data and configurations
+│   ├── categories.ts          # Category taxonomy definitions
+│   ├── stats.json             # Visit statistics
+│   └── ratings.json           # Content ratings
 ├── i18n/             # Translation files (fa.json, en.json)
-├── data/             # Static data (stats.json for visits, ratings.json for content ratings)
 ├── layouts/          # Page layouts (Base, Article, Book)
 ├── pages/            # Route pages
 │   ├── en/           # English pages (prefixed)
 │   └── ...           # Persian pages (default, no prefix)
-└── styles/           # Global CSS with Tailwind
+├── styles/           # Global CSS with Tailwind
+└── content.config.ts # Content collection schemas
+public/
+└── images/
+    └── categories/   # SVG icons for categories (25+ custom icons)
 ```
 
 ## Development
@@ -132,6 +184,24 @@ Books are organized in subdirectories. This allows managing chapters as separate
 5. Use `chapterNumber: N` in the chapter frontmatter to control the sort order.
 
 **Note:** Only the `index.md` files appear in the main book lists (the home page and `/books` index). Chapters are visible inside the book reader.
+
+**PDF Support:**
+
+To add PDF viewing capability to a book:
+
+```markdown
+---
+title: "Book Title"
+description: "Book description"
+lang: fa
+pdfUrl: "/pdfs/my-book.pdf"
+showPdfViewer: true
+categories:
+  - Category Name
+---
+```
+
+Place the PDF file in `public/pdfs/` directory. The book page will show a tab interface allowing readers to switch between chapter reading and PDF viewing.
 
 ### Pushing Content
 
