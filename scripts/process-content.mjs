@@ -29,6 +29,9 @@ import { SmartRenderer } from './lib/smart-renderer.mjs';
 import { PDFExtractor, UniversalExtractor } from './lib/pdf-extractor.mjs';
 import { AITagger } from './lib/ai-tagger.mjs';
 import { MermaidProcessor } from './lib/mermaid-processor.mjs';
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const { removeAllHtmlComments } = require('./remove-html-comments.cjs');
 
 // تلاش برای import ماژول ZIP (اختیاری)
 let ZipExtractor, BookStructureProcessor;
@@ -211,7 +214,10 @@ export class ContentPipeline {
 
     async processHTML(filePath, options = {}) {
         console.log(`   🌐 پردازش HTML...`);
-        const content = await fs.readFile(filePath, 'utf-8');
+        let content = await fs.readFile(filePath, 'utf-8');
+
+        // FIRST: Remove ALL HTML comments using the robust function
+        content = removeAllHtmlComments(content);
 
         // Parse HTML
         const $ = cheerio.load(content);
@@ -235,9 +241,6 @@ export class ContentPipeline {
 
         // Additional cleanup for MDX compatibility
         if (bodyContent) {
-            // Remove HTML comments that might interfere with MDX
-            bodyContent = bodyContent.replace(/<!--[\s\S]*?-->/g, '');
-
             // Remove any stray <html>, <head>, <body> tags that might have been nested
             bodyContent = bodyContent.replace(/<\/?html[^>]*>/gi, '');
             bodyContent = bodyContent.replace(/<\/?head[^>]*>/gi, '');
