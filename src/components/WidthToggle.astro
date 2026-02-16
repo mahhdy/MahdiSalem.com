@@ -320,160 +320,6 @@ const isArabic = lang === 'fa';
 </style>
 
 <script is:inline>
-    background: linear-gradient(135deg, rgb(26 95 122) 0%, rgb(41 128 185) 100%);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    padding: 0.5rem 1rem;
-    transform: translateY(-100%);
-    opacity: 0;
-    pointer-events: none;
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-  }
-
-  .floating-header.is-visible {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .floating-header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    max-width: 90vw;
-    height: auto;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-
-  .header-info {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .header-title {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: white;
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .header-author {
-    font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.8);
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .width-options {
-    display: flex;
-    gap: 0.375rem;
-    flex-shrink: 0;
-  }
-
-  .width-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.25rem;
-    padding: 0.4rem 0.6rem;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 0.375rem;
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 0.7rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
-    white-space: nowrap;
-    line-height: 1;
-  }
-
-  .width-btn:hover {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgba(255, 255, 255, 0.5);
-    color: white;
-    transform: translateY(-1px);
-  }
-
-  .width-btn.active {
-    background: rgba(255, 255, 255, 0.3);
-    border-color: white;
-    color: white;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
-  }
-
-  .btn-label {
-    font-weight: 700;
-    letter-spacing: 0.02em;
-  }
-
-  .go-to-top-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.25rem;
-    height: 2.25rem;
-    padding: 0;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 0.375rem;
-    color: rgba(255, 255, 255, 0.85);
-    cursor: pointer;
-    transition: all 0.2s;
-    flex-shrink: 0;
-  }
-
-  .go-to-top-btn:hover {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgba(255, 255, 255, 0.5);
-    color: white;
-    transform: translateY(-2px);
-  }
-
-  /* ===== Responsive ===== */
-  @media (max-width: 768px) {
-    .floating-header {
-      padding: 0.375rem 0.5rem;
-    }
-
-    .floating-header-content {
-      gap: 0.5rem;
-      padding: 0 0.5rem;
-    }
-
-    .header-info {
-      display: none; /* Hide title on mobile to save space */
-    }
-
-    .width-btn {
-      padding: 0.35rem 0.5rem;
-      font-size: 0.625rem;
-    }
-
-    .width-btn svg {
-      width: 14px;
-      height: 14px;
-    }
-
-    .go-to-top-btn {
-      width: 2rem;
-      height: 2rem;
-    }
-  }
-
-  @media (max-width: 1023px) {
-    /* Optionally hide on very small screens — remove this block if you want it everywhere */
-    /* #width-toggle-header { display: none !important; } */
-  }
-</style>
-
-<script is:inline>
   (function () {
     'use strict';
 
@@ -484,19 +330,11 @@ const isArabic = lang === 'fa';
       full: '90vw',
     };
 
-    // ---- Selectors for the content container AND any ancestor wrappers ----
-    // Add more selectors here if your BaseLayout wraps content in another div
     const CONTAINER_SELECTORS = [
       'article.container-article',
       '.container-article',
       'div.container-wide',
       '.container-wide',
-    ];
-
-    const ANCESTOR_SELECTORS = [
-      'main',                // common wrapper
-      '.main-content',       // possible wrapper
-      '[class*="container"]', // any generic container ancestor (careful)
     ];
 
     function findContentContainer() {
@@ -507,18 +345,12 @@ const isArabic = lang === 'fa';
       return null;
     }
 
-    /**
-     * Walk up from `container` and loosen any ancestor that has a restrictive
-     * max-width (smaller than the desired width).  Stores originals so we can
-     * restore when switching back to a smaller size.
-     */
     function loosenAncestors(container, desiredMaxWidth) {
       let el = container.parentElement;
       while (el && el !== document.documentElement) {
         const computed = window.getComputedStyle(el);
         const currentMax = computed.maxWidth;
 
-        // If ancestor has a constraining max-width, override it
         if (currentMax && currentMax !== 'none') {
           const currentPx = parseFloat(currentMax);
           const desiredPx =
@@ -527,7 +359,6 @@ const isArabic = lang === 'fa';
               : parseFloat(desiredMaxWidth);
 
           if (!isNaN(currentPx) && currentPx < desiredPx) {
-            // Save original so we can restore later
             if (!el.dataset.origMaxWidth) {
               el.dataset.origMaxWidth = el.style.maxWidth || '';
             }
@@ -550,43 +381,38 @@ const isArabic = lang === 'fa';
     }
 
     function initWidthToggle() {
-      const header = document.getElementById('width-toggle-header');
-      const headerContent = document.getElementById('floating-header-content');
+      const toolbar = document.getElementById('width-toggle-header');
       const widthBtns = document.querySelectorAll('.width-btn');
       const goToTopBtn = document.getElementById('go-to-top-btn');
       const container = findContentContainer();
 
-      if (!header) return;
+      if (!toolbar) return;
 
       if (!container) {
-        console.warn('[WidthToggle] No content container found — toggle disabled.');
-        header.style.display = 'none';
+        console.warn('[WidthToggle] No content container found.');
         return;
       }
 
-      // ---- Apply saved width (or default) ----
+      // Load and apply saved width
       const saved = localStorage.getItem('content-width') || 'default';
       applyWidth(saved);
       setActiveBtn(saved);
 
-      // ---- Scroll-based visibility ----
+      // Scroll-based visibility
       let visible = false;
-      const SHOW_AFTER = 300; // px
+      const SHOW_AFTER = 300;
 
       function onScroll() {
         const y = window.scrollY || document.documentElement.scrollTop;
         if (y > SHOW_AFTER && !visible) {
           visible = true;
-          header.classList.add('is-visible');
-          header.setAttribute('aria-hidden', 'false');
+          toolbar.classList.add('is-visible');
         } else if (y <= SHOW_AFTER && visible) {
           visible = false;
-          header.classList.remove('is-visible');
-          header.setAttribute('aria-hidden', 'true');
+          toolbar.classList.remove('is-visible');
         }
       }
 
-      // Throttle via rAF
       let ticking = false;
       window.addEventListener('scroll', function () {
         if (!ticking) {
@@ -598,54 +424,44 @@ const isArabic = lang === 'fa';
         }
       }, { passive: true });
 
-      // Initial check (in case page loads already scrolled)
       onScroll();
 
-      // ---- Button clicks ----
+      // Button clicks
       widthBtns.forEach(function (btn) {
         btn.addEventListener('click', function (e) {
           e.preventDefault();
           e.stopPropagation();
-          var w = btn.getAttribute('data-width');
+          const w = btn.getAttribute('data-width');
           applyWidth(w);
           setActiveBtn(w);
           localStorage.setItem('content-width', w);
         });
       });
 
-      // ---- Go to top ----
+      // Go to top
       if (goToTopBtn) {
         goToTopBtn.addEventListener('click', function () {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         });
       }
 
-      // ---- Core: apply width to content ----
       function applyWidth(key) {
-        var value = WIDTH_MAP[key];
+        let value = WIDTH_MAP[key];
         if (!value) value = WIDTH_MAP['default'];
 
-        // 1. Restore any previously loosened ancestors
         restoreAncestors(container);
 
-        // 2. Set container width
         container.style.setProperty('max-width', value, 'important');
         container.style.setProperty('width', '100%', 'important');
         container.style.setProperty('margin-left', 'auto', 'important');
         container.style.setProperty('margin-right', 'auto', 'important');
-
-        // 3. Transition hint
         container.style.setProperty('transition', 'max-width 0.35s ease-in-out');
 
-        // 4. Loosen any parent that clips us
         loosenAncestors(container, value);
-
-        // 5. Set data attribute on <html> for CSS fallback
         document.documentElement.setAttribute('data-content-width', key);
 
-        // =========== ADD THIS BLOCK ===========
-        // 6. Override .prose max-width so content actually fills the container
-        var proseEls = container.querySelectorAll('.prose');
+        // Override .prose max-width
+        const proseEls = container.querySelectorAll('.prose');
         proseEls.forEach(function (prose) {
           if (key === 'default') {
             prose.style.removeProperty('max-width');
@@ -653,12 +469,6 @@ const isArabic = lang === 'fa';
             prose.style.setProperty('max-width', 'none', 'important');
           }
         });
-        // ======================================
-
-        // 7. Match header content width
-        if (headerContent) {
-          headerContent.style.setProperty('max-width', value, 'important');
-        }
       }
 
       function setActiveBtn(activeKey) {
@@ -672,14 +482,13 @@ const isArabic = lang === 'fa';
       }
     }
 
-    // ---- Bootstrap ----
+    // Bootstrap
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', initWidthToggle);
     } else {
       initWidthToggle();
     }
 
-    // Astro view-transitions support
     document.addEventListener('astro:after-swap', initWidthToggle);
     document.addEventListener('astro:page-load', initWidthToggle);
   })();
