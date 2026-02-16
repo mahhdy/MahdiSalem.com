@@ -1,0 +1,144 @@
+---
+/**
+ * VideoPlayer Component
+ *
+ * Client-side video player supporting YouTube, Vimeo, and self-hosted videos
+ * Features: play/pause, volume control, fullscreen, platform detection
+ */
+
+interface Props {
+  videoUrl: string;
+  thumbnailUrl?: string;
+  platform?: 'youtube' | 'vimeo' | 'self-hosted';
+  lang: 'fa' | 'en';
+  title?: string;
+}
+
+const { videoUrl, thumbnailUrl, platform = 'self-hosted', lang, title } = Astro.props;
+
+// Auto-detect platform from URL if not specified
+function detectPlatform(url: string): 'youtube' | 'vimeo' | 'self-hosted' {
+  if (url.includes('youtube.com') || url.includes('youtu.be')) return 'youtube';
+  if (url.includes('vimeo.com')) return 'vimeo';
+  return 'self-hosted';
+}
+
+const detectedPlatform = platform === 'self-hosted' ? detectPlatform(videoUrl) : platform;
+
+// Convert YouTube/Vimeo URLs to embed URLs
+function getEmbedUrl(url: string, platform: string): string {
+  if (platform === 'youtube') {
+    const videoId = url.includes('youtu.be')
+      ? url.split('youtu.be/')[1]?.split('?')[0]
+      : url.split('v=')[1]?.split('&')[0];
+    return `https://www.youtube-nocookie.com/embed/${videoId}`;
+  }
+  if (platform === 'vimeo') {
+    const videoId = url.split('vimeo.com/')[1]?.split('?')[0];
+    return `https://player.vimeo.com/video/${videoId}`;
+  }
+  return url;
+}
+
+const embedUrl = detectedPlatform !== 'self-hosted' ? getEmbedUrl(videoUrl, detectedPlatform) : videoUrl;
+
+// i18n labels
+const labels = {
+  play: lang === 'fa' ? 'پخش' : 'Play',
+  pause: lang === 'fa' ? 'توقف' : 'Pause',
+  volume: lang === 'fa' ? 'صدا' : 'Volume',
+  mute: lang === 'fa' ? 'بی‌صدا' : 'Mute',
+  unmute: lang === 'fa' ? 'برقراری صدا' : 'Unmute',
+  fullscreen: lang === 'fa' ? 'تمام صفحه' : 'Fullscreen',
+  exitFullscreen: lang === 'fa' ? 'خروج از تمام صفحه' : 'Exit Fullscreen',
+  loading: lang === 'fa' ? 'در حال بارگذاری...' : 'Loading...',
+  error: lang === 'fa' ? 'خطا در بارگذاری ویدیو' : 'Error loading video',
+  viewOn: lang === 'fa' ? 'مشاهده در' : 'View on',
+};
+---
+
+<div
+  class="video-player-container"
+  data-platform={detectedPlatform}
+  data-lang={lang}
+  dir={lang === 'fa' ? 'rtl' : 'ltr'}
+>
+  {detectedPlatform === 'self-hosted' ? (
+    <!-- Self-hosted HTML5 Video -->
+    <div class="video-wrapper relative bg-black rounded-lg overflow-hidden">
+      <video
+        class="video-element w-full h-auto"
+        src={videoUrl}
+        poster={thumbnailUrl}
+        controls
+        preload="metadata"
+      >
+        <p>{labels.error}</p>
+      </video>
+    </div>
+  ) : (
+    <!-- YouTube/Vimeo Embed -->
+    <div class="video-wrapper relative aspect-video bg-black rounded-lg overflow-hidden">
+      <iframe
+        class="video-iframe w-full h-full"
+        src={embedUrl}
+        title={title || 'Video player'}
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  )}
+
+  <!-- Platform Badge -->
+  {detectedPlatform !== 'self-hosted' && (
+    <div class="platform-badge mt-3 flex items-center justify-center gap-2">
+      <a
+        href={videoUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-surface dark:bg-surface-dark border border-border dark:border-border-dark hover:bg-primary/10 dark:hover:bg-primary-light/10 transition-colors text-sm"
+      >
+        {detectedPlatform === 'youtube' && (
+          <svg class="w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+        )}
+        {detectedPlatform === 'vimeo' && (
+          <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23.977 6.416c-.105 2.338-1.739 5.543-4.894 9.609-3.268 4.247-6.026 6.37-8.29 6.37-1.409 0-2.578-1.294-3.553-3.881L5.322 11.4C4.603 8.816 3.834 7.522 3.01 7.522c-.179 0-.806.378-1.881 1.132L0 7.197a315.065 315.065 0 0 0 3.501-3.128C5.08 2.701 6.266 1.984 7.055 1.91c1.867-.18 3.016 1.1 3.447 3.838.465 2.953.789 4.789.971 5.507.539 2.45 1.131 3.674 1.776 3.674.502 0 1.256-.796 2.265-2.385 1.004-1.589 1.54-2.797 1.612-3.628.144-1.371-.395-2.061-1.614-2.061-.574 0-1.167.121-1.777.391 1.186-3.868 3.434-5.757 6.762-5.637 2.473.06 3.628 1.664 3.493 4.797l-.013.01z"/>
+          </svg>
+        )}
+        <span>{labels.viewOn} {detectedPlatform === 'youtube' ? 'YouTube' : 'Vimeo'}</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </a>
+    </div>
+  )}
+</div>
+
+<style>
+  .video-wrapper {
+    position: relative;
+  }
+
+  .aspect-video {
+    aspect-ratio: 16 / 9;
+  }
+
+  .video-element {
+    max-height: 600px;
+  }
+
+  .video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* Custom controls for HTML5 video (optional enhancement) */
+  video::-webkit-media-controls-panel {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+  }
+</style>

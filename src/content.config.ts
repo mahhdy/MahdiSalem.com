@@ -65,4 +65,38 @@ const wiki = defineCollection({
   }),
 });
 
-export const collections = { books, articles, statements, wiki };
+const multimedia = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/multimedia' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    lang: z.enum(['fa', 'en']),
+    publishDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+
+    // Media Type
+    type: z.enum(['video', 'audio', 'podcast']),
+
+    // Media URLs
+    mediaUrl: z.string(),  // Main media file/embed URL
+    thumbnailUrl: z.string().optional(),
+
+    // Media Metadata
+    duration: z.number().optional(),  // Duration in seconds
+    platform: z.enum(['youtube', 'vimeo', 'soundcloud', 'self-hosted']).optional(),
+
+    // Podcast-specific
+    episodeNumber: z.number().optional(),
+    seasonNumber: z.number().optional(),
+    podcastName: z.string().optional(),
+
+    // Standard fields
+    author: z.string().default('مهدی سالم'),
+    categories: z.array(z.string()).default([]),
+    tags: z.array(z.string()).default([]),
+    coverImage: z.string().optional(),
+    draft: z.boolean().default(false),
+  }),
+});
+
+export const collections = { books, articles, statements, wiki, multimedia };

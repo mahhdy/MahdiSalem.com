@@ -1,0 +1,301 @@
+---
+/**
+ * AudioPlayer Component
+ *
+ * Client-side audio player for MP3, OGG, and other audio formats
+ * Features: play/pause, volume control, seek, duration display
+ */
+
+interface Props {
+  audioUrl: string;
+  title: string;
+  lang: 'fa' | 'en';
+  coverImage?: string;
+  platform?: 'soundcloud' | 'self-hosted';
+}
+
+const { audioUrl, title, lang, coverImage, platform = 'self-hosted' } = Astro.props;
+
+// Auto-detect SoundCloud
+function detectPlatform(url: string): 'soundcloud' | 'self-hosted' {
+  if (url.includes('soundcloud.com')) return 'soundcloud';
+  return 'self-hosted';
+}
+
+const detectedPlatform = platform === 'self-hosted' ? detectPlatform(audioUrl) : platform;
+
+// i18n labels
+const labels = {
+  play: lang === 'fa' ? 'پخش' : 'Play',
+  pause: lang === 'fa' ? 'توقف' : 'Pause',
+  volume: lang === 'fa' ? 'صدا' : 'Volume',
+  mute: lang === 'fa' ? 'بی‌صدا' : 'Mute',
+  unmute: lang === 'fa' ? 'برقراری صدا' : 'Unmute',
+  loading: lang === 'fa' ? 'در حال بارگذاری...' : 'Loading...',
+  error: lang === 'fa' ? 'خطا در بارگذاری صوت' : 'Error loading audio',
+  download: lang === 'fa' ? 'دانلود' : 'Download',
+};
+---
+
+<div
+  class="audio-player-container"
+  data-audio-url={audioUrl}
+  data-lang={lang}
+  dir={lang === 'fa' ? 'rtl' : 'ltr'}
+>
+  {detectedPlatform === 'self-hosted' ? (
+    <!-- Self-hosted HTML5 Audio -->
+    <div class="audio-player bg-surface dark:bg-surface-dark border border-border dark:border-border-dark rounded-lg p-6">
+      <!-- Header -->
+      <div class="audio-header flex items-center gap-4 mb-6">
+        {coverImage && (
+          <div class="audio-cover w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
+            <img src={coverImage} alt={title} class="w-full h-full object-cover" />
+          </div>
+        )}
+        <div class="audio-info flex-1 min-w-0">
+          <h3 class="audio-title font-semibold text-lg truncate">{title}</h3>
+          <p class="audio-duration text-sm text-text-muted dark:text-text-dark-muted">
+            <span class="current-time">0:00</span> / <span class="total-time">0:00</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Audio Element (hidden) -->
+      <audio class="audio-element" src={audioUrl} preload="metadata"></audio>
+
+      <!-- Progress Bar -->
+      <div class="audio-progress mb-6">
+        <input
+          type="range"
+          class="progress-bar w-full h-2 rounded-lg appearance-none cursor-pointer bg-surface-dim dark:bg-surface-dark-dim"
+          min="0"
+          max="100"
+          value="0"
+          step="0.1"
+        />
+      </div>
+
+      <!-- Controls -->
+      <div class="audio-controls flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <!-- Play/Pause Button -->
+          <button
+            class="play-pause-btn w-12 h-12 rounded-full bg-primary text-white dark:bg-primary-light hover:opacity-90 transition-opacity flex items-center justify-center"
+            aria-label={labels.play}
+          >
+            <svg class="play-icon w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            <svg class="pause-icon w-6 h-6 hidden" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+            </svg>
+          </button>
+
+          <!-- Volume Control -->
+          <div class="volume-control flex items-center gap-2">
+            <button class="volume-btn" aria-label={labels.volume}>
+              <svg class="volume-on-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+              </svg>
+              <svg class="volume-off-icon w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
+              </svg>
+            </button>
+            <input
+              type="range"
+              class="volume-slider w-20 h-1 rounded-lg appearance-none cursor-pointer bg-surface-dim dark:bg-surface-dark-dim"
+              min="0"
+              max="100"
+              value="100"
+            />
+          </div>
+        </div>
+
+        <!-- Download Button -->
+        <a
+          href={audioUrl}
+          download={title}
+          class="download-btn inline-flex items-center gap-2 px-4 py-2 rounded-md bg-surface-dim dark:bg-surface-dark-dim border border-border dark:border-border-dark hover:bg-primary/10 dark:hover:bg-primary-light/10 transition-colors text-sm"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+          {labels.download}
+        </a>
+      </div>
+    </div>
+  ) : (
+    <!-- SoundCloud Embed -->
+    <div class="soundcloud-wrapper">
+      <iframe
+        width="100%"
+        height="166"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src={`https://w.soundcloud.com/player/?url=${encodeURIComponent(audioUrl)}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false`}
+      ></iframe>
+    </div>
+  )}
+</div>
+
+<script>
+  // Audio Player Implementation
+  class AudioPlayer {
+    constructor(container: HTMLElement) {
+      this.container = container;
+      this.audio = container.querySelector('.audio-element') as HTMLAudioElement;
+
+      if (!this.audio) return; // Skip if SoundCloud embed
+
+      this.playPauseBtn = container.querySelector('.play-pause-btn') as HTMLButtonElement;
+      this.playIcon = container.querySelector('.play-icon') as SVGElement;
+      this.pauseIcon = container.querySelector('.pause-icon') as SVGElement;
+      this.progressBar = container.querySelector('.progress-bar') as HTMLInputElement;
+      this.currentTimeEl = container.querySelector('.current-time') as HTMLElement;
+      this.totalTimeEl = container.querySelector('.total-time') as HTMLElement;
+      this.volumeBtn = container.querySelector('.volume-btn') as HTMLButtonElement;
+      this.volumeSlider = container.querySelector('.volume-slider') as HTMLInputElement;
+      this.volumeOnIcon = container.querySelector('.volume-on-icon') as SVGElement;
+      this.volumeOffIcon = container.querySelector('.volume-off-icon') as SVGElement;
+
+      this.bindEvents();
+    }
+
+    private container: HTMLElement;
+    private audio: HTMLAudioElement;
+    private playPauseBtn: HTMLButtonElement;
+    private playIcon: SVGElement;
+    private pauseIcon: SVGElement;
+    private progressBar: HTMLInputElement;
+    private currentTimeEl: HTMLElement;
+    private totalTimeEl: HTMLElement;
+    private volumeBtn: HTMLButtonElement;
+    private volumeSlider: HTMLInputElement;
+    private volumeOnIcon: SVGElement;
+    private volumeOffIcon: SVGElement;
+
+    private bindEvents() {
+      // Play/Pause
+      this.playPauseBtn.addEventListener('click', () => this.togglePlayPause());
+
+      // Progress bar
+      this.progressBar.addEventListener('input', (e) => {
+        const target = e.target as HTMLInputElement;
+        const time = (parseFloat(target.value) / 100) * this.audio.duration;
+        this.audio.currentTime = time;
+      });
+
+      // Volume
+      this.volumeBtn.addEventListener('click', () => this.toggleMute());
+      this.volumeSlider.addEventListener('input', (e) => {
+        const target = e.target as HTMLInputElement;
+        this.audio.volume = parseFloat(target.value) / 100;
+        this.updateVolumeIcon();
+      });
+
+      // Audio events
+      this.audio.addEventListener('loadedmetadata', () => this.updateDuration());
+      this.audio.addEventListener('timeupdate', () => this.updateProgress());
+      this.audio.addEventListener('ended', () => this.handleEnded());
+    }
+
+    private togglePlayPause() {
+      if (this.audio.paused) {
+        this.audio.play();
+        this.playIcon.classList.add('hidden');
+        this.pauseIcon.classList.remove('hidden');
+      } else {
+        this.audio.pause();
+        this.playIcon.classList.remove('hidden');
+        this.pauseIcon.classList.add('hidden');
+      }
+    }
+
+    private toggleMute() {
+      this.audio.muted = !this.audio.muted;
+      this.updateVolumeIcon();
+    }
+
+    private updateVolumeIcon() {
+      if (this.audio.muted || this.audio.volume === 0) {
+        this.volumeOnIcon.classList.add('hidden');
+        this.volumeOffIcon.classList.remove('hidden');
+      } else {
+        this.volumeOnIcon.classList.remove('hidden');
+        this.volumeOffIcon.classList.add('hidden');
+      }
+    }
+
+    private updateDuration() {
+      this.totalTimeEl.textContent = this.formatTime(this.audio.duration);
+    }
+
+    private updateProgress() {
+      const progress = (this.audio.currentTime / this.audio.duration) * 100;
+      this.progressBar.value = progress.toString();
+      this.currentTimeEl.textContent = this.formatTime(this.audio.currentTime);
+    }
+
+    private handleEnded() {
+      this.playIcon.classList.remove('hidden');
+      this.pauseIcon.classList.add('hidden');
+      this.audio.currentTime = 0;
+    }
+
+    private formatTime(seconds: number): string {
+      if (isNaN(seconds)) return '0:00';
+      const mins = Math.floor(seconds / 60);
+      const secs = Math.floor(seconds % 60);
+      return `${mins}:${secs.toString().padStart(2, '0')}`;
+    }
+  }
+
+  // Initialize all audio players on the page
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.audio-player-container').forEach((container) => {
+      new AudioPlayer(container as HTMLElement);
+    });
+  });
+</script>
+
+<style>
+  /* Progress Bar Styling */
+  .progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    cursor: pointer;
+  }
+
+  .progress-bar::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    cursor: pointer;
+    border: none;
+  }
+
+  /* Volume Slider Styling */
+  .volume-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    cursor: pointer;
+  }
+
+  .volume-slider::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    cursor: pointer;
+    border: none;
+  }
+</style>

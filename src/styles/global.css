@@ -496,4 +496,83 @@
   .bg-primary\/5 {
     background-color: rgb(26 95 122 / 0.05);
   }
+
+  /* Surface colors */
+  .bg-surface {
+    background-color: var(--color-surface);
+  }
+
+  .bg-surface-dim {
+    background-color: var(--color-surface-dim);
+  }
+
+  .bg-surface-dark {
+    background-color: var(--color-surface-dark);
+  }
+
+  .bg-surface-dark-dim {
+    background-color: var(--color-surface-dark-dim);
+  }
+
+  html.dark .dark\:bg-surface-dark {
+    background-color: var(--color-surface-dark);
+  }
+
+  html.dark .dark\:bg-surface-dark-dim {
+    background-color: var(--color-surface-dark-dim);
+  }
+
+  /* Text colors */
+  .text-text-base {
+    color: var(--color-text-base);
+  }
+
+  .text-text-muted {
+    color: var(--color-text-muted);
+  }
+
+  .text-text-dark {
+    color: var(--color-text-dark);
+  }
+
+  .text-text-dark-muted {
+    color: var(--color-text-dark-muted);
+  }
+
+  html.dark .dark\:text-text-dark {
+    color: var(--color-text-dark);
+  }
+
+  html.dark .dark\:text-text-dark-muted {
+    color: var(--color-text-dark-muted);
+  }
+
+  .group:hover .group-hover\:text-primary {
+    color: var(--color-primary);
+  }
+
+  html.dark .group:hover .dark\:group-hover\:text-primary-light {
+    color: var(--color-primary-light);
+  }
+
+  /* Border colors */
+  .border-border {
+    border-color: var(--color-border);
+  }
+
+  .border-border-dark {
+    border-color: var(--color-border-dark);
+  }
+
+  html.dark .dark\:border-border-dark {
+    border-color: var(--color-border-dark);
+  }
+
+  .hover\:bg-primary\/10:hover {
+    background-color: rgb(26 95 122 / 0.1);
+  }
+
+  html.dark .dark\:hover\:bg-primary-light\/10:hover {
+    background-color: rgb(41 128 185 / 0.1);
+  }
 }

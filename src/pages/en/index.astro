@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Newsletter from '../../components/Newsletter.astro';
+import TelegramFeed from '../../components/TelegramFeed.astro';
 import { t, stripLangPrefix } from '../../i18n';
 import { getCollection } from 'astro:content';
 
@@ -83,6 +84,11 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
       </div>
     </section>
   )}
+
+  <!-- Telegram Feed Section -->
+  <section class="container-wide py-12">
+    <TelegramFeed lang={lang} limit={5} />
+  </section>
 
   <section class="container-narrow py-16">
     <Newsletter lang={lang} />

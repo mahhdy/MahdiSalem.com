@@ -1,0 +1,37 @@
+# Cloudflare Workers configuration for Telegram Feed Worker
+#
+# To deploy this worker:
+# 1. Install wrangler: npm install -g wrangler
+# 2. Login to Cloudflare: wrangler login
+# 3. Create KV namespace: wrangler kv:namespace create "KV"
+# 4. Update the kv_namespaces id below with the returned ID
+# 5. Set secrets:
+#    wrangler secret put TELEGRAM_BOT_TOKEN
+#    wrangler secret put TELEGRAM_CHANNEL
+# 6. Deploy: wrangler deploy
+
+name = "telegram-feed"
+main = "telegram-feed.js"
+compatibility_date = "2024-01-01"
+
+# KV Namespace for caching
+# Create with: wrangler kv:namespace create "KV"
+# Then replace the ID below with the actual namespace ID
+[[kv_namespaces]]
+binding = "KV"
+id = "3f729c242c5a4736a54cd7d7737bcb68"
+
+# Environment variables (non-sensitive)
+# For sensitive values, use: wrangler secret put <KEY>
+[vars]
+# TELEGRAM_CHANNEL will be set as a secret
+# TELEGRAM_BOT_TOKEN will be set as a secret
+
+# Routes (optional - configure your custom domain)
+# routes = [
+#   { pattern = "telegram-feed.mahdisalem.com/*", zone_name = "mahdisalem.com" }
+# ]
+
+# Workers Paid plan features (optional)
+# logpush = false
+# usage_model = "bundled"

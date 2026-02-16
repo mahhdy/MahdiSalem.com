@@ -317,9 +317,219 @@ export default defineConfig({
 
 ---
 
+## 🎥 محتوای چندرسانه‌ای / Multimedia Content
+
+### محل فایل‌ها / File Location
+
+```
+src/content/multimedia/
+├── fa/  # محتوای فارسی
+│   ├── video-example.md
+│   ├── audio-example.md
+│   └── podcast-ep01.md
+└── en/  # محتوای انگلیسی
+    └── video-example.md
+```
+
+### انواع محتوا / Content Types
+
+1. **ویدیو (Video)** - YouTube, Vimeo, یا self-hosted
+2. **صوتی (Audio)** - فایل‌های MP3/OGG
+3. **پادکست (Podcast)** - قسمت‌های پادکست با متادیتای کامل
+
+### نحوه اضافه کردن محتوا / How to Add Content
+
+#### مثال ویدیو YouTube / YouTube Video Example
+
+```markdown
+---
+title: "عنوان ویدیو"
+description: "توضیح کوتاه"
+lang: fa
+publishDate: 2025-03-01
+type: video
+mediaUrl: "https://www.youtube.com/watch?v=VIDEO_ID"
+thumbnailUrl: "/images/thumbnail.jpg"  # اختیاری
+duration: 1800  # مدت زمان به ثانیه
+platform: youtube  # اختیاری - خودکار تشخیص داده می‌شود
+categories:
+  - تکنولوژی
+tags:
+  - آموزش
+---
+
+محتوای توضیحات یا transcript اینجا...
+```
+
+#### مثال صوتی Self-hosted / Self-hosted Audio Example
+
+```markdown
+---
+title: "عنوان فایل صوتی"
+description: "توضیح"
+lang: fa
+publishDate: 2025-03-01
+type: audio
+mediaUrl: "/media/my-audio.mp3"
+coverImage: "/images/audio-cover.jpg"
+duration: 600
+platform: self-hosted
+---
+```
+
+#### مثال پادکست / Podcast Episode Example
+
+```markdown
+---
+title: "قسمت اول: مقدمه"
+description: "توضیح قسمت"
+lang: fa
+publishDate: 2025-03-01
+type: podcast
+mediaUrl: "/media/podcast-ep01.mp3"
+podcastName: "نام پادکست"
+episodeNumber: 1
+seasonNumber: 1
+duration: 1800
+---
+```
+
+### آپلود فایل‌های رسانه / Uploading Media Files
+
+برای فایل‌های self-hosted:
+
+1. فایل را در `public/media/` قرار دهید
+2. مسیر را در `mediaUrl` تنظیم کنید: `"/media/filename.mp3"`
+
+For self-hosted files:
+
+1. Place file in `public/media/`
+2. Set path in `mediaUrl`: `"/media/filename.mp3"`
+
+### پلتفرم‌های پشتیبانی‌شده / Supported Platforms
+
+- **YouTube** - خودکار تشخیص داده می‌شود، استفاده از youtube-nocookie.com
+- **Vimeo** - embed خودکار
+- **SoundCloud** - پشتیبانی کامل
+- **Self-hosted** - فایل‌های MP4, MP3, OGG, WebM
+
+---
+
+## 📱 فید تلگرام / Telegram Feed
+
+### پیش‌نیازها / Prerequisites
+
+1. کانال عمومی تلگرام / Public Telegram channel
+2. حساب Cloudflare / Cloudflare account
+3. ربات تلگرام (از @BotFather) / Telegram bot (from @BotFather)
+
+### مراحل راه‌اندازی / Setup Steps
+
+#### گام ۱: ایجاد ربات تلگرام / Step 1: Create Telegram Bot
+
+1. پیام به @BotFather در تلگرام / Message @BotFather on Telegram
+2. ارسال دستور `/newbot` / Send `/newbot` command
+3. دنبال کردن دستورالعمل‌ها / Follow instructions
+4. کپی کردن توکن API / Copy the API token
+
+#### گام ۲: استقرار Cloudflare Worker / Step 2: Deploy Cloudflare Worker
+
+```bash
+cd workers
+npm install -g wrangler
+wrangler login
+```
+
+**ایجاد KV Namespace:**
+
+```bash
+wrangler kv:namespace create "KV"
+# خروجی مثل: id = "abc123..."
+```
+
+**ویرایش `wrangler.toml`:**
+
+```toml
+[[kv_namespaces]]
+binding = "KV"
+id = "abc123..."  ← ID دریافتی را اینجا قرار دهید
+```
+
+**تنظیم Secrets:**
+
+```bash
+wrangler secret put TELEGRAM_BOT_TOKEN
+# توکن ربات را وارد کنید
+
+wrangler secret put TELEGRAM_CHANNEL
+# نام کانال را وارد کنید (مثلاً @yourchannelname)
+```
+
+**استقرار Worker:**
+
+```bash
+wrangler deploy
+```
+
+خروجی URL مثل: `https://telegram-feed.YOUR-SUBDOMAIN.workers.dev`
+
+#### گام ۳: تنظیم متغیرهای محیطی / Step 3: Set Environment Variables
+
+**توسعه محلی (`.env`):**
+
+```env
+PUBLIC_TELEGRAM_WORKER_URL=https://telegram-feed.YOUR-SUBDOMAIN.workers.dev
+PUBLIC_TELEGRAM_CHANNEL=@yourchannelname
+```
+
+**تولید (Cloudflare Pages Dashboard):**
+
+1. Settings → Environment variables
+2. اضافه کردن:
+   - `PUBLIC_TELEGRAM_WORKER_URL`
+   - `PUBLIC_TELEGRAM_CHANNEL`
+
+### تست / Testing
+
+```bash
+# تست محلی Worker
+wrangler dev
+
+# تست در مرورگر
+curl https://telegram-feed.YOUR-SUBDOMAIN.workers.dev
+```
+
+خروجی باید JSON شامل آخرین پست‌ها باشد.
+
+### عیب‌یابی / Troubleshooting
+
+**خطا: پست‌ها یافت نشد**
+- کانال تلگرام عمومی باشد / Channel must be public
+- نام کانال صحیح وارد شده باشد / Check channel name is correct
+
+**خطا: 403 Forbidden**
+- توکن ربات معتبر باشد / Verify bot token is valid
+- ربات به کانال اضافه شده باشد (اختیاری) / Bot added to channel (optional)
+
+**خطا: KV namespace**
+- ID در wrangler.toml صحیح باشد / Check ID in wrangler.toml
+- KV namespace ایجاد شده باشد / Ensure KV namespace is created
+
+### مدیریت کش / Cache Management
+
+- زمان کش: ۵ دقیقه (۳۰۰ ثانیه) / Cache TTL: 5 minutes (300 seconds)
+- تغییر در `telegram-feed.js`: / Modify in `telegram-feed.js`:
+  ```javascript
+  const CACHE_TTL = 300; // به ثانیه
+  ```
+
+---
+
 ## 📝 چک‌لیست نهایی / Final Checklist
 
 قبل از استقرار سایت (Before deployment):
+
+### الزامی / Required
 
 - [ ] `stats.json` را با آمار واقعی پر کنید
 - [ ] `ratings.json` را خالی بگذارید یا با داده‌های اولیه پر کنید
@@ -327,7 +537,14 @@ export default defineConfig({
 - [ ] مشخصات Giscus را در `Giscus.astro` وارد کنید
 - [ ] نام کاربری Buttondown را در `Newsletter.astro` تنظیم کنید
 - [ ] کد Formspree را در صفحات تماس وارد کنید
-- [ ] (اختیاری) API برای ذخیره امتیازات راه‌اندازی کنید
+
+### اختیاری / Optional
+
+- [ ] محتوای چندرسانه‌ای اضافه کنید (ویدیو/صوتی/پادکست)
+- [ ] Cloudflare Worker برای فید تلگرام راه‌اندازی کنید
+- [ ] متغیرهای محیطی تلگرام را تنظیم کنید
+- [ ] API برای ذخیره امتیازات راه‌اندازی کنید
+- [ ] فایل‌های رسانه self-hosted آپلود کنید در `public/media/`
 
 ---
 

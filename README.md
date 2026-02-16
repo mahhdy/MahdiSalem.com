@@ -78,23 +78,41 @@ Personal website for **Mehdi Salem** (مهدی سالم) - independent researche
 - **Tab Interface for Books** - Switch between chapter reading and PDF viewing
 - **Responsive PDF Display** - Mobile-optimized PDF rendering
 
-## Planned Features
+### 🎥 Multimedia Content System (NEW)
 
-The following features are planned for future releases:
+- **Video Player** - Support for YouTube, Vimeo, and self-hosted videos
+  - Auto-platform detection from URL
+  - Privacy-focused YouTube embeds (youtube-nocookie.com)
+  - Thumbnail and duration display
+  - Direct links to platform
+- **Audio Player** - Custom HTML5 audio player with full controls
+  - Play/pause, volume control, seek functionality
+  - Time display and progress bar
+  - Cover image support
+  - Download option
+- **Podcast Support** - Dedicated podcast episode management
+  - Episode and season numbering
+  - Podcast series grouping
+  - Full metadata support
+- **Content Organization**
+  - Filter by type (video, audio, podcast)
+  - Category and tag support
+  - Search and sort functionality
+  - Grid layout with thumbnails and duration badges
 
-### 🎥 Multimedia Content System
-- Video content management and display
-- Audio/Podcast player integration
-- Playlist and series organization
-- Transcript support
-- Multi-format media support
+### 📱 Telegram Feed Integration (NEW)
 
-### 📱 Telegram Feed Integration
-- Display 3-5 latest posts from Telegram channel
-- Show engagement metrics (views, comments)
-- Link to full channel for more content
-- Cloudflare Worker integration for Telegram API
-- Real-time or scheduled updates
+- **Live Channel Feed** - Display latest posts from Telegram channel on homepage
+  - Cloudflare Worker integration for efficient API access
+  - Caching system (5-minute TTL) to reduce API calls
+  - Fallback for public channels via web scraping
+- **Rich Post Display**
+  - Post text with formatting preservation
+  - View counts and timestamps
+  - Direct links to full posts
+  - Loading and error states
+- **Bilingual Support** - Fully localized in Persian and English
+- **Easy Configuration** - Simple environment variable setup
 
 **Want to contribute or suggest features?** Open an issue on GitHub!
 
@@ -105,8 +123,11 @@ src/
 ├── components/       # Reusable Astro components
 │   ├── CategoryCard.astro       # Category display cards
 │   ├── CategoryTabView.astro    # Tab interface for categories
-│   └── PDFViewer.astro          # In-page PDF viewer
-├── content/          # Markdown content (articles, books, statements, wiki)
+│   ├── PDFViewer.astro          # In-page PDF viewer
+│   ├── VideoPlayer.astro        # Video player (YouTube/Vimeo/self-hosted)
+│   ├── AudioPlayer.astro        # Custom audio player
+│   └── TelegramFeed.astro       # Telegram channel feed widget
+├── content/          # Markdown content (articles, books, statements, wiki, multimedia)
 │   ├── articles/
 │   │   ├── fa/       # Persian articles
 │   │   └── en/       # English articles
@@ -116,7 +137,10 @@ src/
 │   ├── statements/
 │   │   ├── fa/
 │   │   └── en/
-│   └── wiki/
+│   ├── wiki/
+│   │   ├── fa/
+│   │   └── en/
+│   └── multimedia/   # NEW: Videos, audio, podcasts
 │       ├── fa/
 │       └── en/
 ├── data/             # Static data and configurations
@@ -127,12 +151,17 @@ src/
 ├── layouts/          # Page layouts (Base, Article, Book)
 ├── pages/            # Route pages
 │   ├── en/           # English pages (prefixed)
-│   └── ...           # Persian pages (default, no prefix)
+│   │   └── multimedia/       # Multimedia pages (EN)
+│   ├── multimedia/           # Multimedia pages (FA, default)
+│   └── ...           # Other Persian pages (default, no prefix)
 ├── styles/           # Global CSS with Tailwind
 └── content.config.ts # Content collection schemas
+workers/              # Cloudflare Workers
+└── telegram-feed.js  # Telegram API worker with caching
 public/
-└── images/
-    └── categories/   # SVG icons for categories (25+ custom icons)
+├── images/
+│   └── categories/   # SVG icons for categories (25+ custom icons)
+└── media/            # Self-hosted media files (optional)
 ```
 
 ## Development
@@ -222,6 +251,45 @@ Statement content here...
 ### Wiki Pages
 
 Create `.md` files in `src/content/wiki/fa/` or `src/content/wiki/en/` with `section` and `order` frontmatter.
+
+### Multimedia Content (Videos, Audio, Podcasts)
+
+Create a new `.md` file in `src/content/multimedia/fa/` or `src/content/multimedia/en/`:
+
+```markdown
+---
+title: "Video/Audio Title"
+description: "Short description"
+lang: fa
+publishDate: 2025-03-01
+type: video # options: video, audio, podcast
+mediaUrl: "https://www.youtube.com/watch?v=VIDEO_ID" # or direct media URL
+thumbnailUrl: "/images/thumbnail.jpg" # optional
+duration: 1800 # duration in seconds, optional
+platform: youtube # options: youtube, vimeo, soundcloud, self-hosted (auto-detected if not specified)
+categories:
+  - Category Name
+tags:
+  - tag1
+
+# Podcast-specific fields (optional)
+podcastName: "Podcast Series Name"
+episodeNumber: 1
+seasonNumber: 1
+---
+
+Detailed description or transcript here...
+```
+
+**Media Hosting Options:**
+
+1. **YouTube/Vimeo** - Simply provide the URL, player will auto-embed
+2. **SoundCloud** - Provide the track URL for audio content
+3. **Self-hosted** - Place media files in `public/media/` and reference them:
+   ```markdown
+   mediaUrl: "/media/my-video.mp4"
+   thumbnailUrl: "/media/thumbnails/my-video.jpg"
+   ```
 
 ### Drafts and Feedback
 
@@ -330,6 +398,41 @@ Before deploying, update these placeholders:
 - [ ] `src/data/stats.json` - Add your actual visit statistics
 - [ ] `src/data/ratings.json` - Add initial ratings or leave empty
 - [ ] **(Optional)** Implement backend API for real-time ratings storage
+
+### Telegram Feed Configuration (Optional)
+
+To enable the Telegram feed on your homepage:
+
+1. **Get Telegram Bot Token**
+   - Message [@BotFather](https://t.me/BotFather) on Telegram
+   - Send `/newbot` and follow instructions
+   - Copy the API token provided
+
+2. **Deploy Cloudflare Worker**
+   ```bash
+   cd workers
+   npm install -g wrangler
+   wrangler login
+   wrangler kv:namespace create "KV"
+   # Update the namespace ID in wrangler.toml
+   wrangler secret put TELEGRAM_BOT_TOKEN
+   wrangler secret put TELEGRAM_CHANNEL
+   wrangler deploy
+   ```
+
+3. **Set Environment Variables**
+
+   Add to your `.env` file (local development):
+   ```env
+   PUBLIC_TELEGRAM_WORKER_URL=https://telegram-feed.YOUR-SUBDOMAIN.workers.dev
+   PUBLIC_TELEGRAM_CHANNEL=@yourchannelname
+   ```
+
+   Add to Cloudflare Pages environment variables (production):
+   - `PUBLIC_TELEGRAM_WORKER_URL`: Your deployed worker URL
+   - `PUBLIC_TELEGRAM_CHANNEL`: Your Telegram channel username
+
+**See `workers/README.md` for detailed setup instructions.**
 
 ## License
 
