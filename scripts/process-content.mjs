@@ -29,6 +29,9 @@ import { SmartRenderer } from './lib/smart-renderer.mjs';
 import { PDFExtractor, UniversalExtractor } from './lib/pdf-extractor.mjs';
 import { AITagger } from './lib/ai-tagger.mjs';
 import { MermaidProcessor } from './lib/mermaid-processor.mjs';
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const { removeAllHtmlComments } = require('./remove-html-comments.cjs');
 
 // تلاش برای import ماژول ZIP (اختیاری)
 let ZipExtractor, BookStructureProcessor;
@@ -211,9 +214,12 @@ export class ContentPipeline {
 
     async processHTML(filePath, options = {}) {
         console.log(`   🌐 پردازش HTML...`);
-        const content = await fs.readFile(filePath, 'utf-8');
+        let content = await fs.readFile(filePath, 'utf-8');
 
-        // Parse HTML
+        // FIRST: Remove ALL HTML comments using the robust function
+        content = removeAllHtmlComments(content);
+
+        // Parse HTML for metadata
         const $ = cheerio.load(content);
 
         // Extract metadata from HTML
@@ -222,8 +228,9 @@ export class ContentPipeline {
                      path.basename(filePath, path.extname(filePath));
         const description = $('meta[name="description"]').attr('content') || '';
 
-        // Extract body content only (remove <html>, <head>, scripts, etc.)
-        let bodyContent = $('body').html() || content;
+        // Extract body content using regex (more reliable for large files)
+        const bodyMatch = content.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
+        let bodyContent = bodyMatch ? bodyMatch[1] : content;
 
         // Clean up: remove external scripts and style tags
         const $body = cheerio.load(bodyContent);
@@ -232,6 +239,20 @@ export class ContentPipeline {
 
         // Keep inline styles and scripts (for Mermaid, etc.)
         bodyContent = $body.html();
+
+        // Additional cleanup for MDX compatibility
+        if (bodyContent) {
+            // Remove any stray <html>, <head>, <body> tags that might have been nested
+            bodyContent = bodyContent.replace(/<\/?html[^>]*>/gi, '');
+            bodyContent = bodyContent.replace(/<\/?head[^>]*>/gi, '');
+            bodyContent = bodyContent.replace(/<\/?body[^>]*>/gi, '');
+
+            // Convert class to className for JSX
+            bodyContent = bodyContent.replace(/class=/g, 'className=');
+
+            // Clean up excessive whitespace
+            bodyContent = bodyContent.replace(/\n\s*\n\s*\n/g, '\n\n');
+        }
 
         // Process Mermaid diagrams
         const prefix = path.basename(filePath, path.extname(filePath));
