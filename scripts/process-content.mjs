@@ -233,6 +233,20 @@ export class ContentPipeline {
         // Keep inline styles and scripts (for Mermaid, etc.)
         bodyContent = $body.html();
 
+        // Additional cleanup for MDX compatibility
+        if (bodyContent) {
+            // Remove HTML comments that might interfere with MDX
+            bodyContent = bodyContent.replace(/<!--[\s\S]*?-->/g, '');
+
+            // Remove any stray <html>, <head>, <body> tags that might have been nested
+            bodyContent = bodyContent.replace(/<\/?html[^>]*>/gi, '');
+            bodyContent = bodyContent.replace(/<\/?head[^>]*>/gi, '');
+            bodyContent = bodyContent.replace(/<\/?body[^>]*>/gi, '');
+
+            // Clean up excessive whitespace
+            bodyContent = bodyContent.replace(/\n\s*\n\s*\n/g, '\n\n');
+        }
+
         // Process Mermaid diagrams
         const prefix = path.basename(filePath, path.extname(filePath));
         const processedContent = await this.mermaidProcessor.process(bodyContent, { prefix });
