@@ -22,6 +22,8 @@ const CONFIG = {
         'content-source/**/*.tex',
         'content-source/**/*.md',
         'content-source/**/*.mdx',
+        'content-source/**/*.html',
+        'content-source/**/*.htm',
         'content-source/**/*.pdf',
         'content-source/**/*.docx'
     ],
@@ -73,7 +75,7 @@ class Logger {
 
     stats(s) {
         console.log(`\n${COLORS.dim}${'─'.repeat(40)}${COLORS.reset}`);
-        console.log(`${COLORS.cyan}📊 آمار: LaTeX:${s.latex} MD:${s.markdown} PDF:${s.pdf} AI:${s.aiTagged} خطا:${s.errors}${COLORS.reset}`);
+        console.log(`${COLORS.cyan}📊 آمار: LaTeX:${s.latex} MD:${s.markdown} HTML:${s.html || 0} PDF:${s.pdf} AI:${s.aiTagged} خطا:${s.errors}${COLORS.reset}`);
     }
 }
 
@@ -88,7 +90,7 @@ class ContentWatcher {
         this.debounceTimers = new Map();
         this.queue = [];
         this.isProcessing = false;
-        this.stats = { latex: 0, markdown: 0, pdf: 0, word: 0, aiTagged: 0, errors: 0 };
+        this.stats = { latex: 0, markdown: 0, html: 0, pdf: 0, word: 0, aiTagged: 0, errors: 0 };
     }
 
     async start() {
@@ -180,6 +182,7 @@ class ContentWatcher {
         let type = 'unknown';
         if (['.tex'].includes(ext)) type = 'latex';
         else if (['.md', '.mdx'].includes(ext)) type = 'markdown';
+        else if (['.html', '.htm'].includes(ext)) type = 'html';
         else if (['.pdf'].includes(ext)) type = 'pdf';
         else if (['.docx', '.doc'].includes(ext)) type = 'word';
 
@@ -205,6 +208,7 @@ class ContentWatcher {
     updateStats(type) {
         if (type === 'latex') this.stats.latex++;
         else if (type === 'markdown') this.stats.markdown++;
+        else if (type === 'html') this.stats.html = (this.stats.html || 0) + 1;
         else if (type === 'pdf') this.stats.pdf++;
         else if (type === 'word') this.stats.word++;
         if (process.env.AI_ENABLED !== 'false') this.stats.aiTagged++;

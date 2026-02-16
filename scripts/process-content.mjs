@@ -13,10 +13,11 @@ import { promisify } from 'util';
 const execAsync = promisify(exec);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-let globby, matter;
+let globby, matter, cheerio;
 try {
     globby = (await import('globby')).globby;
     matter = (await import('gray-matter')).default;
+    cheerio = await import('cheerio');
 } catch {
     console.error('❌ لطفاً وابستگی‌ها را نصب کنید: npm install');
     process.exit(1);
@@ -54,6 +55,7 @@ const CONFIG = {
     supportedFormats: {
         latex: ['.tex', '.ltx', '.TEX', '.LTX', '.TeX', '.LTX'],
         markdown: ['.md', '.mdx', '.MD', '.MDX', '.Md', '.MDx'],
+        html: ['.html', '.htm', '.HTML', '.HTM'],
         pdf: ['.pdf', '.PDF', '.Pdf'],
         word: ['.docx', '.doc', '.DOCX', '.DOC', '.Docx', '.Doc'],
         zip: ['.zip', '.ZIP', '.Zip']
@@ -120,6 +122,9 @@ export class ContentPipeline {
             } else if (CONFIG.supportedFormats.markdown.includes(ext)) {
                 result = await this.processMarkdown(filePath, options);
                 this.stats.markdown++;
+            } else if (CONFIG.supportedFormats.html.includes(ext)) {
+                result = await this.processHTML(filePath, options);
+                this.stats.html = (this.stats.html || 0) + 1;
             } else if (CONFIG.supportedFormats.pdf.includes(ext)) {
                 result = await this.processPDF(filePath, options);
                 this.stats.pdf++;
@@ -202,6 +207,43 @@ export class ContentPipeline {
         const title = this.extractTitle(extracted.markdown) || path.basename(filePath, '.docx');
 
         return { type: 'word', source: filePath, title, content: extracted.markdown, metadata: {} };
+    }
+
+    async processHTML(filePath, options = {}) {
+        console.log(`   🌐 پردازش HTML...`);
+        const content = await fs.readFile(filePath, 'utf-8');
+
+        // Parse HTML
+        const $ = cheerio.load(content);
+
+        // Extract metadata from HTML
+        const title = $('title').text() ||
+                     $('h1').first().text() ||
+                     path.basename(filePath, path.extname(filePath));
+        const description = $('meta[name="description"]').attr('content') || '';
+
+        // Extract body content only (remove <html>, <head>, scripts, etc.)
+        let bodyContent = $('body').html() || content;
+
+        // Clean up: remove external scripts and style tags
+        const $body = cheerio.load(bodyContent);
+        $body('script[src]').remove(); // Remove external scripts
+        $body('link[rel="stylesheet"]').remove(); // Remove external stylesheets
+
+        // Keep inline styles and scripts (for Mermaid, etc.)
+        bodyContent = $body.html();
+
+        // Process Mermaid diagrams
+        const prefix = path.basename(filePath, path.extname(filePath));
+        const processedContent = await this.mermaidProcessor.process(bodyContent, { prefix });
+
+        return {
+            type: 'html',
+            source: filePath,
+            title,
+            content: processedContent,
+            metadata: { description }
+        };
     }
 
     async processZipBook(zipPath, options = {}) {
@@ -292,23 +334,44 @@ export class ContentPipeline {
     }
 
     buildFrontmatter(result) {
+        // Start with existing frontmatter (for MDX files) or empty object
+        const existing = result.frontmatter || {};
+
+        // Determine language
+        const lang = existing.lang || result.metadata?.lang || 'fa';
+
+        // Default author based on language
+        const defaultAuthor = lang === 'en' ? 'Mahdi Salem' : 'مهدی سالم';
+
+        // Build base frontmatter with existing values taking priority
         const fm = {
-            title: result.title,
-            description: result.ai?.description || result.ai?.summary?.slice(0, 160) || '',
-            lang: result.metadata?.lang || 'fa',
-            publishDate: new Date().toISOString().split('T')[0],
-            sourceType: result.type
+            title: existing.title || result.title,
+            description: existing.description || result.ai?.description || result.ai?.summary?.slice(0, 160) || result.metadata?.description || '',
+            lang: lang,
+            publishDate: existing.publishDate || new Date().toISOString().split('T')[0],
+            author: existing.author || defaultAuthor,
+            sourceType: existing.sourceType || result.type
         };
 
+        // Preserve existing frontmatter fields
+        if (existing.tags?.length) fm.tags = existing.tags;
+        if (existing.category) fm.category = existing.category;
+        if (existing.keywords?.length) fm.keywords = existing.keywords;
+        if (existing.draft !== undefined) fm.draft = existing.draft;
+        if (existing.order !== undefined) fm.order = existing.order;
+        if (existing.aiGenerated !== undefined) fm.aiGenerated = existing.aiGenerated;
+
+        // Add AI-generated fields only if not already present
         if (result.ai) {
-            if (result.ai.tags?.length) fm.tags = result.ai.tags;
-            if (result.ai.category?.primary) fm.category = result.ai.category.primary;
-            if (result.ai.keywords?.length) fm.keywords = result.ai.keywords;
-            if (result.ai.readingTime) fm.readingTime = result.ai.readingTime;
-            if (result.ai.difficulty) fm.difficulty = result.ai.difficulty;
-            if (result.ai.summary) fm.summary = result.ai.summary;
+            if (!fm.tags && result.ai.tags?.length) fm.tags = result.ai.tags;
+            if (!fm.category && result.ai.category?.primary) fm.category = result.ai.category.primary;
+            if (!fm.keywords && result.ai.keywords?.length) fm.keywords = result.ai.keywords;
+            if (!existing.readingTime && result.ai.readingTime) fm.readingTime = result.ai.readingTime;
+            if (!existing.difficulty && result.ai.difficulty) fm.difficulty = result.ai.difficulty;
+            if (!existing.summary && result.ai.summary) fm.summary = result.ai.summary;
         }
 
+        // Add book metadata
         if (result.metadata?.bookSlug) fm.book = result.metadata.bookSlug;
         if (result.metadata?.chapterNumber) fm.chapterNumber = result.metadata.chapterNumber;
 
@@ -338,7 +401,10 @@ export class ContentPipeline {
         const finalContent = `---\n${this.stringifyYaml(frontmatter)}\n---\n\n${result.content}`;
 
         const baseName = customFileName || path.basename(result.source, path.extname(result.source));
-        const outputPath = path.join(outputDir, `${baseName}.md`);
+
+        // Use .mdx extension for HTML sources (they contain JSX/HTML)
+        const extension = result.type === 'html' ? '.mdx' : '.md';
+        const outputPath = path.join(outputDir, `${baseName}${extension}`);
 
         await fs.writeFile(outputPath, finalContent, 'utf-8');
         console.log(`   💾 ذخیره: ${path.basename(outputPath)}`);
