@@ -219,7 +219,7 @@ export class ContentPipeline {
         // FIRST: Remove ALL HTML comments using the robust function
         content = removeAllHtmlComments(content);
 
-        // Parse HTML
+        // Parse HTML for metadata
         const $ = cheerio.load(content);
 
         // Extract metadata from HTML
@@ -228,8 +228,9 @@ export class ContentPipeline {
                      path.basename(filePath, path.extname(filePath));
         const description = $('meta[name="description"]').attr('content') || '';
 
-        // Extract body content only (remove <html>, <head>, scripts, etc.)
-        let bodyContent = $('body').html() || content;
+        // Extract body content using regex (more reliable for large files)
+        const bodyMatch = content.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
+        let bodyContent = bodyMatch ? bodyMatch[1] : content;
 
         // Clean up: remove external scripts and style tags
         const $body = cheerio.load(bodyContent);

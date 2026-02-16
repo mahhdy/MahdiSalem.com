@@ -29,27 +29,29 @@ function removeAllHtmlComments(htmlContent) {
     return htmlContent;
 }
 
-// CLI usage
-const args = process.argv.slice(2);
-if (args.length !== 2) {
-    console.log('Usage: node remove-html-comments.js <input.html> <output.html>');
-    process.exit(1);
-}
-
-const inputFile = args[0];
-const outputFile = args[1];
-
-try {
-    const htmlContent = fs.readFileSync(inputFile, 'utf8');
-    const cleanHtml = removeAllHtmlComments(htmlContent);
-
-    fs.writeFileSync(outputFile, cleanHtml, 'utf8');
-    console.log(`✅ All comments removed! ${inputFile} → ${outputFile}`);
-
-} catch (error) {
-    console.error('❌ Error:', error.message);
-    process.exit(1);
-}
-
 // Export for use in other scripts
 module.exports = { removeAllHtmlComments };
+
+// CLI usage - only run if executed directly (not when required)
+if (require.main === module) {
+    const args = process.argv.slice(2);
+    if (args.length !== 2) {
+        console.log('Usage: node remove-html-comments.cjs <input.html> <output.html>');
+        process.exit(1);
+    }
+
+    const inputFile = args[0];
+    const outputFile = args[1];
+
+    try {
+        const htmlContent = fs.readFileSync(inputFile, 'utf8');
+        const cleanHtml = removeAllHtmlComments(htmlContent);
+
+        fs.writeFileSync(outputFile, cleanHtml, 'utf8');
+        console.log(`✅ All comments removed! ${inputFile} → ${outputFile}`);
+
+    } catch (error) {
+        console.error('❌ Error:', error.message);
+        process.exit(1);
+    }
+}
