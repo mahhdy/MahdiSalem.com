@@ -203,14 +203,8 @@ categories:
 
 Place the PDF file in `public/pdfs/` directory. The book page will show a tab interface allowing readers to switch between chapter reading and PDF viewing.
 
-### Pushing Content
+### Statements
 
-To update the live website:
-
-1. **Commit your changes**: `git add .` then `git commit -m "Add new article/book: [Title]"`
-2. **Push to GitHub**: `git push origin main`
-3. **Automatic Deployment**: Cloudflare Pages will automatically detect the push, build the site, and deploy it.
-4. **Verification**: Check the [Cloudflare Pages Dashboard](https://dash.cloudflare.com) or wait for the build to complete (usually 1-2 minutes).
 Create a new `.md` file in `src/content/statements/fa/` or `src/content/statements/en/`:
 
 ```markdown
@@ -253,6 +247,15 @@ Draft content is excluded from:
 - Homepage "Latest" sections (in some cases)
 
 A dedicated **Drafts** page (`/drafts` or `/en/drafts`) is available to view only draft content across all content types.
+
+### Pushing Content
+
+To update the live website:
+
+1. **Commit your changes**: `git add .` then `git commit -m "Add new article/book: [Title]"`
+2. **Push to GitHub**: `git push origin main`
+3. **Automatic Deployment**: Cloudflare Pages will automatically detect the push, build the site, and deploy it.
+4. **Verification**: Check the [Cloudflare Pages Dashboard](https://dash.cloudflare.com) or wait for the build to complete (usually 1-2 minutes).
 
 ## Converting from LaTeX
 
