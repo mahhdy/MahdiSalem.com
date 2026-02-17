@@ -13,6 +13,8 @@ const books = defineCollection({
     showPdfViewer: z.boolean().default(false),
     publishDate: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
+    categories: z.array(z.string()).optional(),
+    interface: z.string().optional(), // Category taxonomy field
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
     order: z.number().default(0),
@@ -33,6 +35,7 @@ const articles = defineCollection({
     type: z.enum(['statement', 'press', 'position']).default('statement'),
     author: z.string().default('مهدی سالم'),
     categories: z.array(z.string()).default([]),
+    interface: z.string().optional(), // Category taxonomy field
     tags: z.array(z.string()).default([]),
     coverImage: z.string().optional(),
     draft: z.boolean().default(false),
@@ -47,6 +50,9 @@ const statements = defineCollection({
     lang: z.enum(['fa', 'en']),
     publishDate: z.coerce.date(),
     type: z.enum(['statement', 'press', 'position']).default('statement'),
+    categories: z.array(z.string()).optional(),
+    interface: z.string().optional(), // Category taxonomy field
+    tags: z.array(z.string()).optional(),
     draft: z.boolean().default(false),
   }),
 });
@@ -93,6 +99,7 @@ const multimedia = defineCollection({
     // Standard fields
     author: z.string().default('مهدی سالم'),
     categories: z.array(z.string()).default([]),
+    interface: z.string().optional(), // Category taxonomy field
     tags: z.array(z.string()).default([]),
     coverImage: z.string().optional(),
     draft: z.boolean().default(false),
