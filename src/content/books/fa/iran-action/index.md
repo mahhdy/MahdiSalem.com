@@ -1,10 +1,14 @@
 ---
-title: "iran-action"
-description: "فهرست کتاب"
-lang: "fa"
-type: "book-index"
-book: "iran-action"
-bookSlug: "iran-action"
+title: iran-action
+description: فهرست کتاب
+lang: fa
+type: book-index
+book: iran-action
+bookSlug: iran-action
+categories:
+  - گذار دموکراتیک
+  - نظریه سیاسی
+  - اصلاحات سیاسی
 ---
 
 # فهرست مطالب

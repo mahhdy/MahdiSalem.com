@@ -575,6 +575,15 @@
   html.dark .dark\:hover\:bg-primary-light\/10:hover {
     background-color: rgb(41 128 185 / 0.1);
   }
+
+  /* Hover states for surface colors */
+  .hover\:bg-surface-dim:hover {
+    background-color: var(--color-surface-dim);
+  }
+
+  html.dark .dark\:hover\:bg-surface-dark-dim:hover {
+    background-color: var(--color-surface-dark-dim);
+  }
 }
 
 /* =============================================

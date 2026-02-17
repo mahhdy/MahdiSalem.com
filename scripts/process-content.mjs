@@ -247,6 +247,13 @@ export class ContentPipeline {
             bodyContent = bodyContent.replace(/<\/?head[^>]*>/gi, '');
             bodyContent = bodyContent.replace(/<\/?body[^>]*>/gi, '');
 
+            // Remove first <h1> to avoid duplication with ArticleLayout title
+            bodyContent = bodyContent.replace(/<h1[^>]*>.*?<\/h1>/, '');
+
+            // Remove subtitle and meta paragraphs if they exist right after h1
+            bodyContent = bodyContent.replace(/<p\s+className="subtitle"[^>]*>.*?<\/p>/i, '');
+            bodyContent = bodyContent.replace(/<p\s+className="meta"[^>]*>.*?<\/p>/i, '');
+
             // Convert class to className for JSX
             bodyContent = bodyContent.replace(/class=/g, 'className=');
 

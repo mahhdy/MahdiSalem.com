@@ -147,7 +147,7 @@ function parseChannelHTML(html, channelUsername) {
   const postRegex = /<div class="tgme_widget_message[^"]*"[^>]*data-post="[^"]*\/(\d+)"[^>]*>([\s\S]*?)<\/div>\s*<\/div>\s*<\/div>/g;
 
   let match;
-  while ((match = postRegex.exec(html)) && posts.length < 10) {
+  while ((match = postRegex.exec(html)) && posts.length < 15) {
     const messageId = match[1];
     const postHtml = match[2];
 
@@ -186,6 +186,9 @@ function parseChannelHTML(html, channelUsername) {
       });
     }
   }
+
+  // Sort by message ID descending (newest first)
+  posts.sort((a, b) => parseInt(b.id) - parseInt(a.id));
 
   return posts;
 }

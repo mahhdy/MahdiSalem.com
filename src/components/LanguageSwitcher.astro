@@ -8,11 +8,28 @@ interface Props {
 const { lang } = Astro.props;
 const altLang = getAlternateLocale(lang);
 
-// Build the alternate URL: map current path to the other locale
+// Build the alternate URL maintaining content type context
 const currentPath = Astro.url.pathname;
-// Remove locale prefix if present, then rebuild
-const cleanPath = currentPath.replace(/^\/(en|fa)\//, '/').replace(/^\/(en|fa)$/, '/');
-const altPath = altLang === 'fa' ? cleanPath : `/en${cleanPath === '/' ? '' : cleanPath}`;
+
+// Detect content type from current path
+let contentType = '';
+if (currentPath.includes('/articles/')) contentType = 'articles';
+else if (currentPath.includes('/books/')) contentType = 'books';
+else if (currentPath.includes('/multimedia/')) contentType = 'multimedia';
+else if (currentPath.includes('/statements/')) contentType = 'statements';
+else if (currentPath.includes('/wiki/')) contentType = 'wiki';
+
+// If we're on a content page, go to the index page of that content type in the other language
+// Otherwise, just switch the language prefix
+let altPath;
+if (contentType) {
+  // Go to the content type index page in the alternate language
+  altPath = altLang === 'fa' ? `/${contentType}` : `/en/${contentType}`;
+} else {
+  // For other pages, just swap the language prefix
+  const cleanPath = currentPath.replace(/^\/(en|fa)\//, '/').replace(/^\/(en|fa)$/, '/');
+  altPath = altLang === 'fa' ? cleanPath : `/en${cleanPath === '/' ? '' : cleanPath}`;
+}
 ---
 
 <a
