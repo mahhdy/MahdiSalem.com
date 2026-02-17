@@ -26,9 +26,14 @@ const categorizedItems = new Map<string, any[]>();
 
 relevantCategories.forEach((category) => {
   const items = allItems.filter((item) => {
+    // Primary: use the interface field (new taxonomy system)
+    if (item.data.interface) {
+      return item.data.interface === category.slug;
+    }
+
+    // Fallback: check old categories array for backward compatibility
     const itemCategories = item.data.categories || [];
     return itemCategories.some((cat: string) => {
-      // Match by slug or by name (for backward compatibility)
       return cat === category.slug ||
              cat === category.nameFa ||
              cat === category.nameEn;
