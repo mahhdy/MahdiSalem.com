@@ -136,10 +136,15 @@ const labels = {
 
 <script>
   // PDF.js viewer implementation
-  import * as pdfjsLib from 'pdfjs-dist';
+  async function loadPdfJs() {
+    const dynamicImport = new Function('u', 'return import(u)') as (u: string) => Promise<any>;
+    const pdfjsLib = await dynamicImport('https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.624/build/pdf.min.mjs');
 
-  // Configure worker
-  pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      'https://cdn.jsdelivr.net/npm/pdfjs-dist@5.4.624/build/pdf.worker.min.mjs';
+
+    return pdfjsLib;
+  }
 
   class PDFViewer {
     constructor(container: HTMLElement) {
@@ -178,6 +183,7 @@ const labels = {
     private currentPage: number;
     private scale: number;
     private pdfDoc: any;
+    private pdfjsLib: any;
 
     private bindEvents() {
       this.container.querySelector('.pdf-prev-btn')?.addEventListener('click', () => this.prevPage());
@@ -190,7 +196,8 @@ const labels = {
     private async loadPDF() {
       try {
         this.showLoading();
-        const loadingTask = pdfjsLib.getDocument(this.pdfUrl);
+        this.pdfjsLib = await loadPdfJs();
+        const loadingTask = this.pdfjsLib.getDocument(this.pdfUrl);
         this.pdfDoc = await loadingTask.promise;
 
         this.pageCountEl.textContent = this.pdfDoc.numPages.toString();

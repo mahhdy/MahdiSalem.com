@@ -257,11 +257,35 @@ export class ContentPipeline {
             // Convert class to className for JSX
             bodyContent = bodyContent.replace(/class=/g, 'className=');
 
+            // Make HTML void tags JSX-safe for MDX
+            bodyContent = bodyContent.replace(/<br(\s*?)>/gi, '<br />');
+            bodyContent = bodyContent.replace(/<hr(\s*?)>/gi, '<hr />');
+            bodyContent = bodyContent.replace(/<img([^>]*?)(?<!\/)\s*>/gi, '<img$1 />');
+            bodyContent = bodyContent.replace(/<input([^>]*?)(?<!\/)\s*>/gi, '<input$1 />');
+            bodyContent = bodyContent.replace(/<meta([^>]*?)(?<!\/)\s*>/gi, '<meta$1 />');
+            bodyContent = bodyContent.replace(/<link([^>]*?)(?<!\/)\s*>/gi, '<link$1 />');
+
+            // Remove empty table header/data cells that can break MDX JSX parsing
+            bodyContent = bodyContent.replace(/<th>\s*<\/th>/gi, '');
+            bodyContent = bodyContent.replace(/<td>\s*<\/td>/gi, '');
+
             // Clean up excessive whitespace
             bodyContent = bodyContent.replace(/\n\s*\n\s*\n/g, '\n\n');
         }
 
         // Process Mermaid diagrams
+        // Convert HTML <pre className="mermaid">...</pre> blocks to fenced code blocks.
+        // This avoids MDX JSX parsing errors for Mermaid syntax containing `{}` and `<br>`.
+        if (bodyContent) {
+            bodyContent = bodyContent.replace(
+                /<pre\s+className="mermaid">([\s\S]*?)<\/pre>/g,
+                (_, mermaidCode) => {
+                    const normalized = String(mermaidCode).replace(/^\n+|\n+$/g, '');
+                    return `\n\n\`\`\`mermaid\n${normalized}\n\`\`\`\n\n`;
+                }
+            );
+        }
+
         const prefix = path.basename(filePath, path.extname(filePath));
         const processedContent = await this.mermaidProcessor.process(bodyContent, { prefix });
 
