@@ -1,9 +1,12 @@
 ---
-title: "Statement on Iran's Democratic Transition"
-description: "Expressing positions and perspectives on the necessity and conditions for Iran's peaceful transition to democracy"
+title: Statement on Iran's Democratic Transition
+description: >-
+  Expressing positions and perspectives on the necessity and conditions for
+  Iran's peaceful transition to democracy
 lang: en
-publishDate: 2025-03-01
+publishDate: 2025-03-01T00:00:00.000Z
 type: statement
+interface: iran
 ---
 
 ## Introduction

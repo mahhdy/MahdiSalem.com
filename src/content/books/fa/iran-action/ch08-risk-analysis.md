@@ -1,13 +1,14 @@
 ---
-title: "تحلیل ریسک: چه می‌تواند اشتباه شود؟"
-description: ""
-lang: "fa"
-book: "iran-action"
-bookSlug: "iran-action"
-sectionType: "chapter"
+title: 'تحلیل ریسک: چه می‌تواند اشتباه شود؟'
+description: ''
+lang: fa
+book: iran-action
+bookSlug: iran-action
+sectionType: chapter
 chapterNumber: 8
 order: 8
 readingTime: 5
+interface: philosophy-other
 ---
 
 # تحلیل ریسک: چه می‌تواند اشتباه شود؟

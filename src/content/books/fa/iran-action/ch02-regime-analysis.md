@@ -1,13 +1,14 @@
 ---
-title: "تشریح نظام حاکم: آناتومی قدرت"
-description: ""
-lang: "fa"
-book: "iran-action"
-bookSlug: "iran-action"
-sectionType: "chapter"
+title: 'تشریح نظام حاکم: آناتومی قدرت'
+description: ''
+lang: fa
+book: iran-action
+bookSlug: iran-action
+sectionType: chapter
 chapterNumber: 2
 order: 2
 readingTime: 5
+interface: philosophy-other
 ---
 
 # تشریح نظام حاکم: آناتومی قدرت

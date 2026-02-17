@@ -1,13 +1,14 @@
 ---
-title: "طیف‌شناسی اپوزیسیون: نقشه نیروهای تغییر"
-description: ""
-lang: "fa"
-book: "iran-action"
-bookSlug: "iran-action"
-sectionType: "chapter"
+title: 'طیف‌شناسی اپوزیسیون: نقشه نیروهای تغییر'
+description: ''
+lang: fa
+book: iran-action
+bookSlug: iran-action
+sectionType: chapter
 chapterNumber: 3
 order: 3
 readingTime: 5
+interface: philosophy-other
 ---
 
 # طیف‌شناسی اپوزیسیون: نقشه نیروهای تغییر

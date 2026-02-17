@@ -1,13 +1,14 @@
 ---
-title: "app-F-human-rights"
-description: ""
-lang: "fa"
-book: "iran-action"
-bookSlug: "iran-action"
-sectionType: "appendix"
+title: app-F-human-rights
+description: ''
+lang: fa
+book: iran-action
+bookSlug: iran-action
+sectionType: appendix
 appendixNumber: 6
-appendixLetter: "F"
+appendixLetter: F
 order: 1006
 readingTime: 5
+interface: philosophy-other
 ---
 

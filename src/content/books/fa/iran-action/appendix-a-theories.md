@@ -1,14 +1,15 @@
 ---
-title: "نظریه‌های انقلاب و گذار دموکراتیک {#app:theories}"
-description: ""
-lang: "fa"
-book: "iran-action"
-bookSlug: "iran-action"
-sectionType: "appendix"
+title: 'نظریه‌های انقلاب و گذار دموکراتیک {#app:theories}'
+description: ''
+lang: fa
+book: iran-action
+bookSlug: iran-action
+sectionType: appendix
 appendixNumber: 1
-appendixLetter: "A"
+appendixLetter: A
 order: 1001
 readingTime: 5
+interface: descriptive-politics
 ---
 
 # نظریه‌های انقلاب و گذار دموکراتیک {#app:theories}

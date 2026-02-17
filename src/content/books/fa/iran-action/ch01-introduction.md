@@ -1,13 +1,14 @@
 ---
-title: "مقدمه: چرا این راهنما و چرا اکنون؟"
-description: ""
-lang: "fa"
-book: "iran-action"
-bookSlug: "iran-action"
-sectionType: "chapter"
+title: 'مقدمه: چرا این راهنما و چرا اکنون؟'
+description: ''
+lang: fa
+book: iran-action
+bookSlug: iran-action
+sectionType: chapter
 chapterNumber: 1
 order: 1
 readingTime: 5
+interface: philosophy-other
 ---
 
 # مقدمه: چرا این راهنما و چرا اکنون؟

@@ -9,6 +9,7 @@ categories:
   - گذار دموکراتیک
   - نظریه سیاسی
   - اصلاحات سیاسی
+interface: descriptive-politics
 ---
 
 # فهرست مطالب

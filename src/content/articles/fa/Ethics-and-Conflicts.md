@@ -13,6 +13,7 @@ tags:
   - جانبداری
   - اقدام عملی
 draft: true
+interface: philosophy-of-ethics
 ---
 ## مقدمه
 

@@ -1,13 +1,14 @@
 ---
-title: "جمع‌بندی: به‌سوی آینده {#ch:conclusion}"
-description: ""
-lang: "fa"
-book: "iran-action"
-bookSlug: "iran-action"
-sectionType: "chapter"
+title: 'جمع‌بندی: به‌سوی آینده {#ch:conclusion}'
+description: ''
+lang: fa
+book: iran-action
+bookSlug: iran-action
+sectionType: chapter
 chapterNumber: 10
 order: 10
 readingTime: 5
+interface: philosophy-other
 ---
 
 # جمع‌بندی: به‌سوی آینده {#ch:conclusion}

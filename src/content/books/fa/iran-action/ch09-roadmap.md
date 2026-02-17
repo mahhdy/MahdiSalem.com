@@ -1,13 +1,14 @@
 ---
-title: "نقشه راه عملیاتی: از امروز تا روز گذار"
-description: ""
-lang: "fa"
-book: "iran-action"
-bookSlug: "iran-action"
-sectionType: "chapter"
+title: 'نقشه راه عملیاتی: از امروز تا روز گذار'
+description: ''
+lang: fa
+book: iran-action
+bookSlug: iran-action
+sectionType: chapter
 chapterNumber: 9
 order: 9
 readingTime: 5
+interface: descriptive-politics
 ---
 
 # نقشه راه عملیاتی: از امروز تا روز گذار

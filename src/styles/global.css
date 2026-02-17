@@ -185,6 +185,50 @@
     border-color: #334155;
   }
 
+  /* Ensure the site header background honors dark mode explicitly
+     (some browsers or stacking contexts may preserve translucency differently).
+     Use a dedicated class so we don't accidentally affect other headers. */
+  .site-header {
+    --site-header-height: 4rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+
+  html.dark .site-header {
+    background-color: rgba(15, 23, 42, 0.8);
+  }
+
+  /* Stronger overrides to ensure the header and links honor dark mode
+     even when utility classes or stacking contexts apply. */
+  .site-header {
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    --site-header-height: 4rem;
+  }
+
+  html.dark .site-header {
+    background-color: rgba(15, 23, 42, 0.85) !important;
+  }
+
+  /* Force nav link colors inside the header to follow theme. Use
+     container-wide selector to target the main nav anchors. */
+  .site-header .container-wide a {
+    color: var(--color-text-base) !important;
+  }
+
+  html.dark .site-header .container-wide a {
+    color: var(--color-text-dark) !important;
+  }
+
+  /* Ensure mobile menu anchors also follow the same colors */
+  .site-header #mobile-menu a {
+    color: var(--color-text-base) !important;
+  }
+
+  html.dark .site-header #mobile-menu a {
+    color: var(--color-text-dark) !important;
+  }
+
   .mermaid {
     display: flex;
     justify-content: center;

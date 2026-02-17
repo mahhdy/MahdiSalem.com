@@ -1,13 +1,14 @@
 ---
-title: "سناریوهای گذار: پنج مسیر برای تغییر"
-description: ""
-lang: "fa"
-book: "iran-action"
-bookSlug: "iran-action"
-sectionType: "chapter"
+title: 'سناریوهای گذار: پنج مسیر برای تغییر'
+description: ''
+lang: fa
+book: iran-action
+bookSlug: iran-action
+sectionType: chapter
 chapterNumber: 4
 order: 4
 readingTime: 5
+interface: descriptive-politics
 ---
 
 # سناریوهای گذار: پنج مسیر برای تغییر

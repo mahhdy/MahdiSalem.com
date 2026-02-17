@@ -1,8 +1,10 @@
 ---
-title: "Democracy and Ethics: An Inseparable Bond"
-description: "Examining the relationship between democracy and ethical foundations in contemporary political thought and its impact on Iran's transition"
+title: 'Democracy and Ethics: An Inseparable Bond'
+description: >-
+  Examining the relationship between democracy and ethical foundations in
+  contemporary political thought and its impact on Iran's transition
 lang: en
-publishDate: 2025-01-15
+publishDate: 2025-01-15T00:00:00.000Z
 categories:
   - Political Philosophy
   - Ethics
@@ -11,6 +13,7 @@ tags:
   - ethics
   - analytical philosophy
   - Iran
+interface: philosophy-of-ethics
 ---
 
 ## Introduction

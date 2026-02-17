@@ -1,13 +1,14 @@
 ---
-title: "تقویت اپوزیسیون: چگونه قوی‌تر شویم؟"
-description: ""
-lang: "fa"
-book: "iran-action"
-bookSlug: "iran-action"
-sectionType: "chapter"
+title: 'تقویت اپوزیسیون: چگونه قوی‌تر شویم؟'
+description: ''
+lang: fa
+book: iran-action
+bookSlug: iran-action
+sectionType: chapter
 chapterNumber: 6
 order: 6
 readingTime: 5
+interface: philosophy-other
 ---
 
 # تقویت اپوزیسیون: چگونه قوی‌تر شویم؟

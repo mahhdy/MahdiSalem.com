@@ -1,13 +1,14 @@
 ---
-title: "بُعد بین‌المللی: بازیگران، منافع و امکانات"
-description: ""
-lang: "fa"
-book: "iran-action"
-bookSlug: "iran-action"
-sectionType: "chapter"
+title: 'بُعد بین‌المللی: بازیگران، منافع و امکانات'
+description: ''
+lang: fa
+book: iran-action
+bookSlug: iran-action
+sectionType: chapter
 chapterNumber: 5
 order: 5
 readingTime: 5
+interface: philosophy-other
 ---
 
 # بُعد بین‌المللی: بازیگران، منافع و امکانات

@@ -1,13 +1,14 @@
 ---
-title: "خلاصه مدیریتی {#خلاصه-مدیریتی .unnumbered}"
-description: ""
-lang: "fa"
-book: "iran-action"
-bookSlug: "iran-action"
-sectionType: "chapter"
+title: 'خلاصه مدیریتی {#خلاصه-مدیریتی .unnumbered}'
+description: ''
+lang: fa
+book: iran-action
+bookSlug: iran-action
+sectionType: chapter
 chapterNumber: 11
 order: 11
 readingTime: 5
+interface: philosophy-other
 ---
 
 # خلاصه مدیریتی {#خلاصه-مدیریتی .unnumbered}
