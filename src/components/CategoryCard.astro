@@ -31,9 +31,15 @@ const topItems = items
   })
   .slice(0, 3);
 
-// Build filter URL
+// Build filter URL - link to list view with category filter hash
 const baseUrl = lang === 'fa' ? `/${contentType}` : `/en/${contentType}`;
-const filterUrl = `${baseUrl}?category=${encodeURIComponent(category.slug)}`;
+const filterUrl = `${baseUrl}#list&category=${encodeURIComponent(category.slug)}`;
+
+// Helper to get item URL
+function getItemUrl(item: any) {
+  const slug = item.id.replace(/\.(md|mdx)$/, '').replace(/^(fa|en)\//, '');
+  return lang === 'fa' ? `/${contentType}/${slug}` : `/en/${contentType}/${slug}`;
+}
 ---
 
 <a
@@ -84,14 +90,18 @@ const filterUrl = `${baseUrl}?category=${encodeURIComponent(category.slug)}`;
         {lang === 'fa' ? 'آخرین مطالب:' : 'Recent items:'}
       </p>
       {topItems.map((item) => (
-        <div class="flex items-start gap-2 text-sm">
+        <a
+          href={getItemUrl(item)}
+          class="flex items-start gap-2 text-sm hover:translate-x-1 transition-transform no-underline"
+          onclick="event.stopPropagation();"
+        >
           <svg class="w-4 h-4 flex-shrink-0 mt-0.5 text-primary dark:text-primary-light opacity-60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          <span class="line-clamp-1 text-text-muted dark:text-text-dark-muted group-hover:text-text dark:group-hover:text-text-dark transition-colors">
+          <span class="line-clamp-1 text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light transition-colors">
             {item.data.title}
           </span>
-        </div>
+        </a>
       ))}
     </div>
   )}

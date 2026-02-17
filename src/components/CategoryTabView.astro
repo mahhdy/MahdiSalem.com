@@ -191,12 +191,32 @@ const labels = {
         });
       });
 
-      // Handle initial hash in URL
+      // Handle initial hash in URL (supports both tab switching and category filtering)
       const hash = window.location.hash.slice(1);
-      if (hash === 'list' || hash === 'categories') {
-        const hashButton = tabView.querySelector(`[data-tab="${hash}"]`);
+      const hashParts = hash.split('&');
+      const tab = hashParts[0]; // 'list' or 'categories'
+
+      // Switch to the tab if specified
+      if (tab === 'list' || tab === 'categories') {
+        const hashButton = tabView.querySelector(`[data-tab="${tab}"]`);
         if (hashButton) {
           hashButton.click();
+        }
+
+        // If switching to list view with a category filter
+        if (tab === 'list' && hashParts.length > 1) {
+          const categoryParam = hashParts.find(p => p.startsWith('category='));
+          if (categoryParam) {
+            const categorySlug = decodeURIComponent(categoryParam.split('=')[1]);
+
+            // Find and click the category filter button in list view
+            setTimeout(() => {
+              const categoryButton = document.querySelector(`.category-filter[data-category="${categorySlug}"]`);
+              if (categoryButton) {
+                categoryButton.click();
+              }
+            }, 100);
+          }
         }
       }
     });
