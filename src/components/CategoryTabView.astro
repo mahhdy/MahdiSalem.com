@@ -210,12 +210,18 @@ const labels = {
             const categorySlug = decodeURIComponent(categoryParam.split('=')[1]);
 
             // Find and click the category filter button in list view
-            setTimeout(() => {
-              const categoryButton = document.querySelector(`.category-filter[data-category="${categorySlug}"]`);
+            // Wait for DOM to be fully ready before searching
+            const tryClickButton = () => {
+              const categoryButton = listContent?.querySelector(`.category-filter[data-category="${categorySlug}"]`);
               if (categoryButton) {
                 categoryButton.click();
               }
-            }, 100);
+            };
+
+            // Try immediately, then with a small delay if needed
+            tryClickButton();
+            setTimeout(tryClickButton, 50);
+            setTimeout(tryClickButton, 200);
           }
         }
       }
