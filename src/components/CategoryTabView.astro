@@ -10,7 +10,7 @@ import CategoryCard from './CategoryCard.astro';
 import { categories, getCategoriesByContentType } from '../data/categories';
 
 interface Props {
-  contentType: 'articles' | 'books' | 'statements';
+  contentType: 'articles' | 'books' | 'statements' | 'multimedia';
   lang: 'fa' | 'en';
   allItems: any[];
   defaultTab?: 'list' | 'categories';
