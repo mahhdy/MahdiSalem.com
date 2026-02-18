@@ -19,8 +19,8 @@ const { lang, limit = 5 } = Astro.props;
 
 // Get worker URL from environment variable
 // In production, this should be set in Cloudflare Pages environment variables
-const workerUrl = import.meta.env.PUBLIC_TELEGRAM_WORKER_URL || '';
-const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || '';
+const workerUrl = import.meta.env.PUBLIC_TELEGRAM_WORKER_URL || 'https://telegram-feed.mahhdy.workers.dev';
+const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || '@mahhdy57';
 ---
 
 <div
