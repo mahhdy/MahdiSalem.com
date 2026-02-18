@@ -71,7 +71,7 @@ export default {
       const webUrl = `https://t.me/s/${channelUsername}`;
       const response = await fetch(webUrl);
       const html = await response.text();
-      const posts = parseChannelHTML(html, channelUsername);
+      const posts = await parseChannelHTML(html, channelUsername);
 
       await env.KV.put(CACHE_KEY, JSON.stringify(posts.slice(0, 5)), { expirationTtl: 300 });
       

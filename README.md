@@ -1,439 +1,106 @@
 # MahdiSalem.com
 
-Personal website for **Mehdi Salem** (مهدی سالم) - independent researcher in analytical philosophy and ethics, political writer focused on Iran's transition to democracy.
+Personal website for **Mehdi Salem** (مهدی سالم) — philosophy, ethics, politics, and democracy.
 
-📖 **[Configuration Guide](./CONFIGURATION.md)** - راهنمای پیکربندی ویژگی‌های جدید / Step-by-step setup guide for new features
+## Quick Start & Usage
 
-## Tech Stack
-
-- **Framework**: [Astro](https://astro.build) (Static Site Generation)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com) with full RTL support
-- **Content**: Markdown/MDX via Astro Content Collections
-- **Comments**: [Giscus](https://giscus.app) (GitHub Discussions-based)
-- **Newsletter**: [Buttondown](https://buttondown.email)
-- **Deployment**: [Cloudflare Pages](https://pages.cloudflare.com)
-- **i18n**: Persian (fa, RTL, default) + English (en, LTR)
-
-## Features
-
-### Core Features
-
-- **Bilingual Support** - Full Persian (RTL) and English (LTR) with automatic direction switching
-- **Online Book Reader** - Chapter navigation, sidebar TOC, in-page TOC, and reading progress tracking
-- **Blog System** - Category filtering, tag support, and search functionality
-- **Wiki** - Collaborative knowledge base with controlled edits via GitHub Issues
-- **Statements/Press Releases** - Dedicated section for official statements
-- **Dark/Light Theme** - User-toggleable theme with system preference detection
-- **Newsletter Integration** - Buttondown email newsletter signup
-- **Comments System** - Giscus-powered comments on articles (GitHub Discussions-based)
-- **RSS Feeds** - Separate feeds per language
-- **SEO Optimized** - Open Graph, Twitter Cards, sitemap, structured URLs
-- **Privacy-Friendly** - No cookies, no tracking by default
-- **Ko-fi Integration** - Donation support
-
-### Advanced Analytics Dashboard
-
-- **Squarified TreeMap Visualization** - Advanced 2D layout algorithm for optimal space utilization
-- **Interactive Tabs** - Switch between tag-based and category-based visualizations
-- **Smart Tooltips** - Hover over blocks to see top 3 most popular content items
-- **Visit Statistics** - Real-time tracking and display of content popularity
-- **Internationalized** - Full support for Persian/English with locale-specific number formatting
-
-### Content Rating System
-
-- **Star Ratings** - 5-star rating display on all articles and books
-- **Interactive Voting** - Click-to-rate functionality with visual feedback
-- **Vote Tracking** - Display of total votes and average ratings
-- **Duplicate Prevention** - LocalStorage-based prevention of multiple ratings
-- **Integrated Display** - Seamless integration in content layouts
-
-### Enhanced Content Discovery
-
-- **Real-time Search** - Instant search across titles and descriptions
-- **Multi-Criteria Sorting** - Sort by newest, oldest, most popular, or top-rated
-- **Category Filtering** - Filter content by categories (works with search and sort)
-- **Rating Badges** - Visual rating indicators on content cards
-- **Visit Count Display** - Show popularity metrics on all content
-- **Responsive Design** - Mobile-optimized search and filter controls
-
-### Category Taxonomy System (NEW)
-
-- **Comprehensive Categorization** - 25+ bilingual categories covering philosophy, politics, ethics, technology, and more
-- **Visual Category Cards** - SVG icons with custom designs for each category
-- **Category Tab View** - Toggle between traditional list view and category-based exploration
-- **Smart Grouping** - Categories automatically group related content (articles, books, statements)
-- **Hierarchical Support** - Parent-child category relationships for better organization
-- **Hover Tooltips** - View top 3 items in each category on hover
-- **Item Counts** - Real-time display of content count per category
-
-### Enhanced Reading Experience (NEW)
-
-- **Wider Article Layout** - Optimized 960px width for comfortable desktop reading (previously 768px)
-- **PDF Viewer Integration** - Full in-page PDF viewer with controls for books
-  - Page navigation (next/previous)
-  - Zoom controls (in/out, fit to width)
-  - Download original PDF
-  - Loading states and error handling
-  - Bilingual UI support
-- **Tab Interface for Books** - Switch between chapter reading and PDF viewing
-- **Responsive PDF Display** - Mobile-optimized PDF rendering
-
-### 🎥 Multimedia Content System (NEW)
-
-- **Video Player** - Support for YouTube, Vimeo, and self-hosted videos
-  - Auto-platform detection from URL
-  - Privacy-focused YouTube embeds (youtube-nocookie.com)
-  - Thumbnail and duration display
-  - Direct links to platform
-- **Audio Player** - Custom HTML5 audio player with full controls
-  - Play/pause, volume control, seek functionality
-  - Time display and progress bar
-  - Cover image support
-  - Download option
-- **Podcast Support** - Dedicated podcast episode management
-  - Episode and season numbering
-  - Podcast series grouping
-  - Full metadata support
-- **Content Organization**
-  - Filter by type (video, audio, podcast)
-  - Category and tag support
-  - Search and sort functionality
-  - Grid layout with thumbnails and duration badges
-
-### 📱 Telegram Feed Integration (NEW)
-
-- **Live Channel Feed** - Display latest posts from Telegram channel on homepage
-  - Cloudflare Worker integration for efficient API access
-  - Caching system (5-minute TTL) to reduce API calls
-  - Fallback for public channels via web scraping
-- **Rich Post Display**
-  - Post text with formatting preservation
-  - View counts and timestamps
-  - Direct links to full posts
-  - Loading and error states
-- **Bilingual Support** - Fully localized in Persian and English
-- **Easy Configuration** - Simple environment variable setup
-
-**Want to contribute or suggest features?** Open an issue on GitHub!
-
-## Project Structure
-
-```
-src/
-├── components/       # Reusable Astro components
-│   ├── CategoryCard.astro       # Category display cards
-│   ├── CategoryTabView.astro    # Tab interface for categories
-│   ├── PDFViewer.astro          # In-page PDF viewer
-│   ├── VideoPlayer.astro        # Video player (YouTube/Vimeo/self-hosted)
-│   ├── AudioPlayer.astro        # Custom audio player
-│   └── TelegramFeed.astro       # Telegram channel feed widget
-├── content/          # Markdown content (articles, books, statements, wiki, multimedia)
-│   ├── articles/
-│   │   ├── fa/       # Persian articles
-│   │   └── en/       # English articles
-│   ├── books/
-│   │   ├── fa/       # Persian books & chapters
-│   │   └── en/       # English books & chapters
-│   ├── statements/
-│   │   ├── fa/
-│   │   └── en/
-│   ├── wiki/
-│   │   ├── fa/
-│   │   └── en/
-│   └── multimedia/   # NEW: Videos, audio, podcasts
-│       ├── fa/
-│       └── en/
-├── data/             # Static data and configurations
-│   ├── categories.ts          # Category taxonomy definitions
-│   ├── stats.json             # Visit statistics
-│   └── ratings.json           # Content ratings
-├── i18n/             # Translation files (fa.json, en.json)
-├── layouts/          # Page layouts (Base, Article, Book)
-├── pages/            # Route pages
-│   ├── en/           # English pages (prefixed)
-│   │   └── multimedia/       # Multimedia pages (EN)
-│   ├── multimedia/           # Multimedia pages (FA, default)
-│   └── ...           # Other Persian pages (default, no prefix)
-├── styles/           # Global CSS with Tailwind
-└── content.config.ts # Content collection schemas
-workers/              # Cloudflare Workers
-└── telegram-feed.js  # Telegram API worker with caching
-public/
-├── images/
-│   └── categories/   # SVG icons for categories (25+ custom icons)
-└── media/            # Self-hosted media files (optional)
-```
-
-## Development
+### 1. Install & Setup
 
 ```bash
-# Install dependencies
+git clone https://github.com/mahhdy/MahdiSalem.com.git
+cd MahdiSalem.com
 npm install
+npm run dev # Start local server
+```
 
-# Start development server
-npm run dev
+### 2. Update or Deploy (New Machine)
 
+```bash
+# Update dependencies
+npm install
 # Build for production
 npm run build
-
-# Preview production build
+# Preview
 npm run preview
+# Push changes
+git add .
+git commit -m "Update content"
+git push origin main
+# Cloudflare Pages auto-deploys
 ```
 
-## Adding Content
+### 3. Add Content
 
-### Articles
+- **Articles**: `src/content/articles/fa/` or `en/` — add `.md` files with frontmatter (title, description, lang, publishDate, categories, tags, interface, draft)
+- **Books**: `src/content/books/fa/` or `en/` — folder per book, `index.md` for overview, chapters as `.md` files, `pdfUrl` for PDF, `showPdfViewer: true` for viewer
+- **Statements**: `src/content/statements/fa/` or `en/` — add `.md` files
+- **Wiki**: `src/content/wiki/fa/` or `en/` — add `.md` files with section/order
+- **Multimedia**: `src/content/multimedia/fa/` or `en/` — add `.md` files (type: video/audio/podcast, mediaUrl, thumbnailUrl, duration, platform, podcastName, episodeNumber, seasonNumber)
 
-Create a new `.md` file in `src/content/articles/fa/` or `src/content/articles/en/`:
+### 4. Categorization & Tagging
 
-```markdown
----
-title: "Article Title"
-description: "Short description"
-lang: fa
-publishDate: 2025-03-01
-categories:
-  - Category Name
-tags:
-  - tag1
-  - tag2
----
+- **Interface**: Use the `interface` field for taxonomy (see `src/data/categories.ts`)
+- **Categories**: Assign one or more categories (bilingual, hierarchical)
+- **Tags**: Add relevant tags for search/discovery
 
-Article content here...
-```
+### 5. Analytics & Ratings
 
-### Books
+- **Visit Statistics**: Update `src/data/stats.json` manually or via API (see below)
+- **Ratings**: Update `src/data/ratings.json` (client-side, or implement backend API for real ratings)
 
-Books are organized in subdirectories. This allows managing chapters as separate files within a book's folder.
+### 6. Telegram Feed Integration
 
-1. Create a folder in `src/content/books/fa/` or `en/` named after your book slug (e.g., `my-book`).
-2. Create an `index.md` (or `.mdx`) inside that folder for the book overview.
-3. Create chapters as separate files (e.g., `ch01-intro.md`, `ch02-laws.md`) inside the same folder.
-4. The system automatically associates chapters based on their folder location.
-5. Use `chapterNumber: N` in the chapter frontmatter to control the sort order.
+1. Get Telegram Bot Token from [@BotFather](https://t.me/BotFather)
+2. Deploy Cloudflare Worker (see `workers/README.md`)
+3. Set environment variables:
+   - `PUBLIC_TELEGRAM_WORKER_URL`
+   - `PUBLIC_TELEGRAM_CHANNEL`
 
-**Note:** Only the `index.md` files appear in the main book lists (the home page and `/books` index). Chapters are visible inside the book reader.
-
-**PDF Support:**
-
-To add PDF viewing capability to a book:
-
-```markdown
----
-title: "Book Title"
-description: "Book description"
-lang: fa
-pdfUrl: "/pdfs/my-book.pdf"
-showPdfViewer: true
-categories:
-  - Category Name
----
-```
-
-Place the PDF file in `public/pdfs/` directory. The book page will show a tab interface allowing readers to switch between chapter reading and PDF viewing.
-
-### Statements
-
-Create a new `.md` file in `src/content/statements/fa/` or `src/content/statements/en/`:
-
-```markdown
----
-title: "Statement Title"
-description: "Short description"
-lang: fa
-publishDate: 2025-03-01
-type: statement # options: statement, press, position
----
-
-Statement content here...
-```
-
-### Wiki Pages
-
-Create `.md` files in `src/content/wiki/fa/` or `src/content/wiki/en/` with `section` and `order` frontmatter.
-
-### Multimedia Content (Videos, Audio, Podcasts)
-
-Create a new `.md` file in `src/content/multimedia/fa/` or `src/content/multimedia/en/`:
-
-```markdown
----
-title: "Video/Audio Title"
-description: "Short description"
-lang: fa
-publishDate: 2025-03-01
-type: video # options: video, audio, podcast
-mediaUrl: "https://www.youtube.com/watch?v=VIDEO_ID" # or direct media URL
-thumbnailUrl: "/images/thumbnail.jpg" # optional
-duration: 1800 # duration in seconds, optional
-platform: youtube # options: youtube, vimeo, soundcloud, self-hosted (auto-detected if not specified)
-categories:
-  - Category Name
-tags:
-  - tag1
-
-# Podcast-specific fields (optional)
-podcastName: "Podcast Series Name"
-episodeNumber: 1
-seasonNumber: 1
----
-
-Detailed description or transcript here...
-```
-
-**Media Hosting Options:**
-
-1. **YouTube/Vimeo** - Simply provide the URL, player will auto-embed
-2. **SoundCloud** - Provide the track URL for audio content
-3. **Self-hosted** - Place media files in `public/media/` and reference them:
-   ```markdown
-   mediaUrl: "/media/my-video.mp4"
-   thumbnailUrl: "/media/thumbnails/my-video.jpg"
-   ```
-
-### Drafts and Feedback
-
-Content marked with `draft: true` in the frontmatter is displayed alongside published content in the main lists (Articles, Books, etc.), allowing readers to view, rate, and provide feedback on work-in-progress content.
-
-```markdown
----
-...
-draft: true
----
-```
-
-**Note:** Draft content is included in:
-
-- Main content lists (articles, books)
-- Search and filtering
-- Rating system
-- Analytics dashboard
-
-Draft content is excluded from:
-
-- RSS feeds
-- Homepage "Latest" sections (in some cases)
-
-A dedicated **Drafts** page (`/drafts` or `/en/drafts`) is available to view only draft content across all content types.
-
-### Pushing Content
-
-To update the live website:
-
-1. **Commit your changes**: `git add .` then `git commit -m "Add new article/book: [Title]"`
-2. **Push to GitHub**: `git push origin main`
-3. **Automatic Deployment**: Cloudflare Pages will automatically detect the push, build the site, and deploy it.
-4. **Verification**: Check the [Cloudflare Pages Dashboard](https://dash.cloudflare.com) or wait for the build to complete (usually 1-2 minutes).
-
-## Converting from LaTeX
+### 7. LaTeX Conversion
 
 ```bash
-# Convert LaTeX to Markdown
 pandoc input.tex -o output.md --wrap=none
-
 # For books with chapters
 pandoc book.tex -o book.md --wrap=none --toc
 ```
 
-## Data Configuration
+## Features & Architecture
 
-### Analytics and Ratings
+- **Bilingual (FA/EN)**, RTL/LTR, mobile-first, dark/light theme
+- **Category Taxonomy**: 25+ categories, SVG icons, parent-child, interface field
+- **Tagging System**: Tag support for all content
+- **Multimedia**: Video, audio, podcast, player components
+- **Telegram Feed**: Cloudflare Worker, homepage integration
+- **Analytics Dashboard**: Visit stats, rating system, TreeMap visualization
+- **Wiki & Statements**: Collaborative editing, GitHub Issues
+- **PDF Viewer**: In-page PDF, tab interface for books
+- **SEO & Privacy**: Open Graph, Twitter Cards, no cookies by default
 
-The website uses two JSON files in `src/data/` to track content metrics:
+## Known Issues & Lessons Learned
 
-#### `stats.json` - Visit Statistics
+- **Tagging system**: Not fully implemented; tags are supported in schema but not all UI views. Use interface/category for main grouping.
+- **Interface field**: All content should use the `interface` field for taxonomy. Scripts available: `node scripts/add-interface-categories.mjs` and `node scripts/fix-interface-categories.mjs`.
+- **Category/Tag/Interface**: See `src/data/categories.ts` for taxonomy. Use scripts to update content.
+- **Analytics**: Visit stats and ratings are manual unless API is implemented. See `src/data/stats.json` and `src/data/ratings.json`.
+- **Telegram Feed**: Requires Cloudflare Worker and environment setup. See `workers/README.md`.
+- **Accessibility**: All players/components have ARIA labels and keyboard support.
+- **Performance**: Lazy loading, caching, responsive images, CDN recommended for media.
+- **Privacy**: No cookies/tracking by default. External embeds (YouTube/Vimeo) use privacy mode.
 
-```json
-{
-  "visits": {
-    "articles/fa/article-slug": 1250,
-    "books/en/book-slug": 840
-  }
-}
-```
+## Project Structure
 
-**Update Method:**
+See folder tree in repo. Key files:
+- `src/content.config.ts` — content schema
+- `src/data/categories.ts` — taxonomy
+- `src/components/` — UI components
+- `src/pages/` — route pages
+- `workers/` — Telegram Worker
+- `public/images/categories/` — SVG icons
 
-- Manually update visit counts from your analytics provider (e.g., Cloudflare Analytics, Google Analytics)
-- Or implement a server-side API to track visits dynamically
+## Contributing
 
-#### `ratings.json` - Content Ratings
-
-```json
-{
-  "articles/fa/article-slug": {
-    "average": 4.5,
-    "count": 120
-  },
-  "books/fa/book-slug": {
-    "average": 4.8,
-    "count": 85
-  }
-}
-```
-
-**Current Implementation:**
-
-- Client-side rating submission uses `localStorage` to prevent duplicate votes
-- Ratings are simulated/not persisted to the server
-- You can manually update `ratings.json` to display custom ratings
-
-**To Enable Real Rating Storage:**
-
-1. Create a backend API endpoint (e.g., Cloudflare Workers, Netlify Functions)
-2. Modify `src/components/Rating.astro` to POST ratings to your API
-3. Update `ratings.json` periodically from your database
-4. Consider implementing authentication to prevent abuse
-
-## Configuration Checklist
-
-Before deploying, update these placeholders:
-
-- [ ] `astro.config.mjs` - Set your actual domain in `site`
-- [ ] `src/components/Giscus.astro` - Set GitHub repo details
-- [ ] `src/components/Newsletter.astro` - Set Buttondown username
-- [ ] `src/pages/contact.astro` - Set Formspree form ID
-- [ ] GitHub Issue templates - Set your GitHub username
-- [ ] Social media links in contact pages
-- [ ] `src/data/stats.json` - Add your actual visit statistics
-- [ ] `src/data/ratings.json` - Add initial ratings or leave empty
-- [ ] **(Optional)** Implement backend API for real-time ratings storage
-
-### Telegram Feed Configuration (Optional)
-
-To enable the Telegram feed on your homepage:
-
-1. **Get Telegram Bot Token**
-   - Message [@BotFather](https://t.me/BotFather) on Telegram
-   - Send `/newbot` and follow instructions
-   - Copy the API token provided
-
-2. **Deploy Cloudflare Worker**
-   ```bash
-   cd workers
-   npm install -g wrangler
-   wrangler login
-   wrangler kv:namespace create "KV"
-   # Update the namespace ID in wrangler.toml
-   wrangler secret put TELEGRAM_BOT_TOKEN
-   wrangler secret put TELEGRAM_CHANNEL
-   wrangler deploy
-   ```
-
-3. **Set Environment Variables**
-
-   Add to your `.env` file (local development):
-   ```env
-   PUBLIC_TELEGRAM_WORKER_URL=https://telegram-feed.YOUR-SUBDOMAIN.workers.dev
-   PUBLIC_TELEGRAM_CHANNEL=@yourchannelname
-   ```
-
-   Add to Cloudflare Pages environment variables (production):
-   - `PUBLIC_TELEGRAM_WORKER_URL`: Your deployed worker URL
-   - `PUBLIC_TELEGRAM_CHANNEL`: Your Telegram channel username
-
-**See `workers/README.md` for detailed setup instructions.**
+Open issues or pull requests for suggestions, bug reports, or feature requests. See `CONTRIBUTING.md` for guidelines.
 
 ## License
 
-Content is copyright Mehdi Salem. Code is MIT licensed.
+Content © Mehdi Salem. Code MIT licensed.
