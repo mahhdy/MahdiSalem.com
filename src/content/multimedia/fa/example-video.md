@@ -5,7 +5,7 @@ lang: fa
 publishDate: 2025-03-01
 type: video
 mediaUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-thumbnailUrl: "/images/video-thumbnail-example.jpg"
+thumbnailUrl: "/images/mic-sample.svg"
 duration: 213
 platform: youtube
 categories:

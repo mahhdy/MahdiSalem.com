@@ -5,7 +5,7 @@ lang: fa
 publishDate: 2025-03-02
 type: audio
 mediaUrl: "/media/example-audio.mp3"
-coverImage: "/images/audio-cover-example.jpg"
+coverImage: "/images/mic-sample.svg"
 duration: 300
 platform: self-hosted
 categories:
@@ -13,7 +13,8 @@ categories:
 tags:
   - صوتی
   - نمونه
-draft: true
+draft: false
+interface: epistemology
 ---
 
 # نمونه محتوای صوتی

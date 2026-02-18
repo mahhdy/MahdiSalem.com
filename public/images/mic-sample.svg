@@ -1,0 +1,37 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="70%" stop-color="#16213e"/>
+      <stop offset="100%" stop-color="#0f0f23"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle waveforms -->
+  <path d="M50 300 Q100 280 150 310 T250 290 T350 305" stroke="#4a90e2" stroke-width="2" fill="none" opacity="0.3"/>
+  <path d="M50 320 Q120 300 190 330 T300 310" stroke="#7b68ee" stroke-width="1.5" fill="none" opacity="0.4"/>
+  
+  <!-- Microphone stand -->
+  <rect x="185" y="200" width="30" height="120" rx="15" fill="#333" stroke="#555" stroke-width="2"/>
+  
+  <!-- Microphone body -->
+  <ellipse cx="200" cy="140" rx="35" ry="60" fill="#222" stroke="#666" stroke-width="3"/>
+  <circle cx="200" cy="100" r="25" fill="#111" stroke="#777" stroke-width="2"/>
+  
+  <!-- Mic grille -->
+  <g fill="#444" stroke="#555" stroke-width="1">
+    <circle cx="200" cy="105" r="18" fill="none"/>
+    <path d="M185 95 L215 95 M185 105 L215 105 M185 115 L215 115"/>
+    <path d="M195 85 L195 125 M205 85 L205 125"/>
+  </g>
+  
+  <!-- Windscreen foam -->
+  <ellipse cx="200" cy="135" rx="32" ry="55" fill="#2a2a2a" opacity="0.8"/>
+  
+  <!-- Text -->
+  <text x="200" y="280" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="bold">PODCAST</text>
+  <text x="200" y="310" text-anchor="middle" fill="#a0a0ff" font-family="Arial, sans-serif" font-size="24">PLACEHOLDER</text>
+  <text x="200" y="350" text-anchor="middle" fill="#888" font-family="Arial, sans-serif" font-size="16">Mic Ready</text>
+</svg>
