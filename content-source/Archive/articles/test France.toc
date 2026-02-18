@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}تست کادرها}{1}{}%
+\contentsline {section}{\numberline {2}تست جدول}{2}{}%
+\contentsline {section}{\numberline {3}تست نمودار خطی}{2}{}%
+\contentsline {section}{\numberline {4}تست نقشه مفهومی}{3}{}%
+\contentsline {section}{\numberline {5}تست نقشه با متن چندخطی}{3}{}%
+\contentsline {section}{\numberline {6}تست خط زمانی}{3}{}%
+\contentsline {section}{\numberline {7}تست نمودار ستونی}{4}{}%

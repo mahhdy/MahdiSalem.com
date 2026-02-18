@@ -1,0 +1,118 @@
+% ═══════════════════════════════════════════════════════════════════════════════
+%                    تاریخ تحولات فرانسه - فصل [X]
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\documentclass[12pt,a4paper]{book}
+
+% ─────────────────────────── پکیج‌ها ───────────────────────────
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{top=2.5cm, bottom=2.5cm, left=2cm, right=2.5cm, headheight=15pt}
+\usepackage{graphicx}
+\usepackage{array,booktabs,longtable,multirow,colortbl}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc, backgrounds, 
+	fit, decorations.pathmorphing, shadows, patterns}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage{pdfpages}
+\usepackage{pdflscape}  % برای صفحات landscape
+\usepackage{hyperref}
+
+% ─────────────────────────── رنگ‌ها ───────────────────────────
+\definecolor{bleurepublique}{RGB}{0, 35, 149}
+\definecolor{rougerevolution}{RGB}{237, 41, 57}
+\definecolor{orroyal}{RGB}{255, 215, 0}
+\definecolor{vertnapoleon}{RGB}{0, 100, 0}
+\definecolor{violetempire}{RGB}{128, 0, 128}
+\definecolor{fondclair}{RGB}{255, 253, 240}
+\definecolor{gris}{RGB}{128, 128, 128}
+\definecolor{grisclair}{RGB}{245, 245, 245}
+\definecolor{noirsombre}{RGB}{30, 30, 30}
+
+% رنگ‌های کمکی
+\definecolor{bleulight}{RGB}{230, 235, 250}
+\definecolor{rougelight}{RGB}{253, 235, 237}
+\definecolor{vertlight}{RGB}{235, 250, 235}
+\definecolor{violetlight}{RGB}{245, 235, 250}
+\definecolor{orroyallight}{RGB}{255, 250, 230}
+\definecolor{grislight}{RGB}{248, 248, 248}
+\definecolor{bleumid}{RGB}{180, 195, 230}
+\definecolor{rougemid}{RGB}{245, 180, 185}
+\definecolor{vertmid}{RGB}{180, 220, 180}
+\definecolor{violetmid}{RGB}{210, 180, 220}
+\definecolor{orroyalmid}{RGB}{255, 240, 180}
+\definecolor{orroyaldark}{RGB}{200, 170, 0}
+
+% ─────────────────────────── فونت فارسی ───────────────────────────
+\usepackage{fontspec}
+\setmainfont{Vazirmatn}
+\usepackage{xepersian}
+\settextfont{Vazirmatn}
+\setdigitfont{Vazirmatn}
+
+% ─────────────────────────── هایپرلینک ───────────────────────────
+\hypersetup{
+	colorlinks=true,
+	linkcolor=bleurepublique,
+	urlcolor=bleurepublique,
+	citecolor=vertnapoleon
+}
+
+% ─────────────────────────── کادرها ───────────────────────────
+\newtcolorbox{kholasebox}[1][]{enhanced,breakable,colback=bleulight,
+	colframe=bleurepublique,coltitle=white,fonttitle=\bfseries\large,
+	title={#1},boxrule=2pt,arc=4pt,left=10pt,right=10pt,top=10pt,bottom=10pt,
+	drop shadow={opacity=0.3}}
+
+\newtcolorbox{naghlbox}[1][]{enhanced,breakable,colback=orroyallight,
+	colframe=orroyaldark,coltitle=black,fonttitle=\bfseries,title={#1},
+	boxrule=1.5pt,arc=3pt,borderline west={4pt}{0pt}{orroyal},
+	left=15pt,right=10pt,top=8pt,bottom=8pt}
+
+\newtcolorbox{olgoobox}[1][]{enhanced,breakable,colback=vertlight,
+	colframe=vertnapoleon,coltitle=white,fonttitle=\bfseries,title={#1},
+	boxrule=1.5pt,arc=4pt,left=10pt,right=10pt,top=8pt,bottom=8pt,
+	before upper={\parindent15pt}}
+
+\newtcolorbox{enghelabbox}[1][]{enhanced,breakable,colback=rougelight,
+	colframe=rougerevolution,coltitle=white,fonttitle=\bfseries,title={#1},
+	boxrule=2pt,arc=4pt,left=10pt,right=10pt,top=8pt,bottom=8pt}
+
+\newtcolorbox{empirebox}[1][]{enhanced,breakable,colback=violetlight,
+	colframe=violetempire,coltitle=white,fonttitle=\bfseries,title={#1},
+	boxrule=1.5pt,arc=4pt,left=10pt,right=10pt,top=8pt,bottom=8pt}
+
+\newtcolorbox{noktebox}[1][]{enhanced,colback=grisclair,colframe=gris,
+	fonttitle=\bfseries,title={#1},boxrule=1pt,arc=3pt,left=8pt,right=8pt}
+
+% ─────────────────────────── صفحه‌آرایی ───────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RO]{\leftmark}
+\fancyhead[LE]{\rightmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\setstretch{1.5}
+
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries\color{bleurepublique}}
+{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titleformat{\section}
+{\normalfont\Large\bfseries\color{bleurepublique}}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\large\bfseries\color{bleurepublique}}{\thesubsection}{1em}{}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\begin{document}
+	% محتوای فصل اینجا
+\end{document}

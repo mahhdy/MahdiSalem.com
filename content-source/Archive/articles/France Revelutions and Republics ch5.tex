@@ -1,0 +1,2084 @@
+% ═══════════════════════════════════════════════════════════════════════════════
+%                    تاریخ تحولات فرانسه - فصل [X]
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\documentclass[12pt,a4paper]{book}
+
+% ─────────────────────────── پکیج‌ها ───────────────────────────
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{top=2.5cm, bottom=2.5cm, left=2cm, right=2.5cm, headheight=15pt}
+\usepackage{graphicx}
+\usepackage{array,booktabs,longtable,multirow,colortbl}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc, backgrounds, 
+	fit, decorations.pathmorphing, shadows, patterns}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{pdflscape}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage{pdfpages}
+\usepackage{pdflscape}  % برای صفحات landscape
+\usepackage{hyperref}
+
+% ─────────────────────────── رنگ‌ها ───────────────────────────
+\definecolor{bleurepublique}{RGB}{0, 35, 149}
+\definecolor{rougerevolution}{RGB}{237, 41, 57}
+\definecolor{orroyal}{RGB}{255, 215, 0}
+\definecolor{vertnapoleon}{RGB}{0, 100, 0}
+\definecolor{violetempire}{RGB}{128, 0, 128}
+\definecolor{fondclair}{RGB}{255, 253, 240}
+\definecolor{gris}{RGB}{128, 128, 128}
+\definecolor{grisclair}{RGB}{245, 245, 245}
+\definecolor{noirsombre}{RGB}{30, 30, 30}
+
+% رنگ‌های کمکی
+\definecolor{bleulight}{RGB}{230, 235, 250}
+\definecolor{rougelight}{RGB}{253, 235, 237}
+\definecolor{vertlight}{RGB}{235, 250, 235}
+\definecolor{violetlight}{RGB}{245, 235, 250}
+\definecolor{orroyallight}{RGB}{255, 250, 230}
+\definecolor{grislight}{RGB}{248, 248, 248}
+\definecolor{bleumid}{RGB}{180, 195, 230}
+\definecolor{rougemid}{RGB}{245, 180, 185}
+\definecolor{vertmid}{RGB}{180, 220, 180}
+\definecolor{violetmid}{RGB}{210, 180, 220}
+\definecolor{orroyalmid}{RGB}{255, 240, 180}
+\definecolor{orroyaldark}{RGB}{200, 170, 0}
+
+% ─────────────────────────── فونت فارسی ───────────────────────────
+\usepackage{fontspec}
+\setmainfont{Vazirmatn}
+\usepackage{xepersian}
+\settextfont{Vazirmatn}
+\setdigitfont{Vazirmatn}
+
+% ─────────────────────────── هایپرلینک ───────────────────────────
+\hypersetup{
+	colorlinks=true,
+	linkcolor=bleurepublique,
+	urlcolor=bleurepublique,
+	citecolor=vertnapoleon
+}
+
+% ─────────────────────────── کادرها ───────────────────────────
+\newtcolorbox{kholasebox}[1][]{enhanced,breakable,colback=bleulight,
+	colframe=bleurepublique,coltitle=white,fonttitle=\bfseries\large,
+	title={#1},boxrule=2pt,arc=4pt,left=10pt,right=10pt,top=10pt,bottom=10pt,
+	drop shadow={opacity=0.3}}
+
+\newtcolorbox{naghlbox}[1][]{enhanced,breakable,colback=orroyallight,
+	colframe=orroyaldark,coltitle=black,fonttitle=\bfseries,title={#1},
+	boxrule=1.5pt,arc=3pt,borderline west={4pt}{0pt}{orroyal},
+	left=15pt,right=10pt,top=8pt,bottom=8pt}
+
+\newtcolorbox{olgoobox}[1][]{enhanced,breakable,colback=vertlight,
+	colframe=vertnapoleon,coltitle=white,fonttitle=\bfseries,title={#1},
+	boxrule=1.5pt,arc=4pt,left=10pt,right=10pt,top=8pt,bottom=8pt,
+	before upper={\parindent15pt}}
+
+\newtcolorbox{enghelabbox}[1][]{enhanced,breakable,colback=rougelight,
+	colframe=rougerevolution,coltitle=white,fonttitle=\bfseries,title={#1},
+	boxrule=2pt,arc=4pt,left=10pt,right=10pt,top=8pt,bottom=8pt}
+
+\newtcolorbox{empirebox}[1][]{enhanced,breakable,colback=violetlight,
+	colframe=violetempire,coltitle=white,fonttitle=\bfseries,title={#1},
+	boxrule=1.5pt,arc=4pt,left=10pt,right=10pt,top=8pt,bottom=8pt}
+
+\newtcolorbox{noktebox}[1][]{enhanced,colback=grisclair,colframe=gris,
+	fonttitle=\bfseries,title={#1},boxrule=1pt,arc=3pt,left=8pt,right=8pt}
+
+% ─────────────────────────── صفحه‌آرایی ───────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RO]{\leftmark}
+\fancyhead[LE]{\rightmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\setstretch{1.5}
+
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries\color{bleurepublique}}
+{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titleformat{\section}
+{\normalfont\Large\bfseries\color{bleurepublique}}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\large\bfseries\color{bleurepublique}}{\thesubsection}{1em}{}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\begin{document}
+%══════════════════════════════════════════════════════════════════════════════
+% فصل ۵: قرن ناآرام (۱۸۱۵-۱۸۷۰)
+%══════════════════════════════════════════════════════════════════════════════
+
+\chapter{قرن ناآرام (۱۸۱۵-۱۸۷۰)}
+\label{chap:turbulent-century}
+
+\begin{kholasebox}
+	\textbf{خلاصه فصل:}
+	
+	دوره ۱۸۱۵ تا ۱۸۷۰ نمایانگر یکی از پرتلاطم‌ترین دوره‌های تاریخ فرانسه است که در آن پنج رژیم سیاسی متفاوت بر سر کار آمدند و سه انقلاب بزرگ رخ داد. این دوره شاهد تلاش مداوم برای یافتن تعادل میان اصول انقلاب ۱۷۸۹، خواست‌های طبقات نوظهور صنعتی، و میراث سلطنتی بود.
+	
+	\textbf{رژیم‌های این دوره:}
+	\begin{itemize}[nosep,rightmargin=0pt]
+		\item \textbf{بازگشت بوربون‌ها (۱۸۱۴-۱۸۳۰):} تلاش برای احیای سلطنت مشروطه
+		\item \textbf{سلطنت ژوئیه (۱۸۳۰-۱۸۴۸):} سلطنت بورژوایی لویی-فیلیپ
+		\item \textbf{جمهوری دوم (۱۸۴۸-۱۸۵۲):} آزمایش کوتاه دموکراسی
+		\item \textbf{امپراتوری دوم (۱۸۵۲-۱۸۷۰):} بازگشت بناپارتیسم
+	\end{itemize}
+	
+	\textbf{مفاهیم کلیدی:} مشروطه‌خواهی، لیبرالیسم، سوسیالیسم اولیه، ناسیونالیسم، صنعتی‌شدن، مسئله اجتماعی، طبقه کارگر، بناپارتیسم.
+\end{kholasebox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{مقدمه: فرانسه در جستجوی ثبات}
+%──────────────────────────────────────────────────────────────────────────────
+
+شکست ناپلئون در واترلو (ژوئن ۱۸۱۵) فرانسه را در وضعیتی پارادوکسیکال قرار داد: کشوری که انقلاب خود را به سراسر اروپا صادر کرده بود، اکنون تحت اشغال نظامی قدرت‌های پیروز قرار داشت و باید تاوان ماجراجویی‌های امپراتوری را می‌پرداخت. اما این فقط آغاز داستان بود.
+
+\begin{naghlbox}
+	«فرانسه همچون آتشفشانی است که گاه آرام می‌گیرد اما هرگز خاموش نمی‌شود. هر نسل باید منتظر فوران دیگری باشد.»
+	
+	\hfill --- \textit{آلکسی دو توکویل، ۱۸۵۶}
+\end{naghlbox}
+
+دوره ۱۸۱۵-۱۸۷۰ را می‌توان از چند منظر تحلیل کرد:
+
+\subsection{تنش‌های ساختاری}
+
+\begin{enumerate}
+	\item \textbf{تنش ایدئولوژیک:} میان اصول انقلاب (آزادی، برابری، حاکمیت ملی) و اصول سلطنتی (مشروعیت الهی، سلسله‌مراتب، سنت)
+	
+	\item \textbf{تنش طبقاتی:} میان اشرافیت قدیم، بورژوازی صنعتی و مالی، و طبقه کارگر نوظهور
+	
+	\item \textbf{تنش منطقه‌ای:} میان پاریس انقلابی و شهرستان‌های محافظه‌کار
+	
+	\item \textbf{تنش بین‌المللی:} میان خواست استقلال ملی و فشار قدرت‌های اروپایی برای حفظ وضع موجود
+\end{enumerate}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{بازگشت بوربون‌ها (۱۸۱۴-۱۸۳۰)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{بازگشت اول و صد روز}
+
+پس از تبعید ناپلئون به الب در آوریل ۱۸۱۴، لویی هجدهم (برادر لویی شانزدهم) به عنوان پادشاه به پاریس بازگشت. او که ۲۳ سال در تبعید زیسته بود، می‌دانست که بازگشت به رژیم پیش از انقلاب نه ممکن است و نه مطلوب.
+
+\begin{table}[htbp]
+	\centering
+	\caption{مقایسه منشور ۱۸۱۴ با اعلامیه حقوق ۱۷۸۹}
+	\label{tab:charter-comparison}
+	\begin{tabular}{|r|p{5.5cm}|p{5.5cm}|}
+		\hline
+		\rowcolor{bleumid}
+		\textcolor{white}{\textbf{موضوع}} & \textcolor{white}{\textbf{منشور ۱۸۱۴}} & \textcolor{white}{\textbf{اعلامیه ۱۷۸۹}} \\
+		\hline
+		منبع قدرت & اعطای پادشاه (octroyer) & حاکمیت ملت \\
+		\hline
+		\rowcolor{bleulight}
+		آزادی‌های فردی & تضمین شده (ماده ۱-۱۲) & حقوق طبیعی غیرقابل سلب \\
+		\hline
+		برابری قانونی & حفظ شده & اصل بنیادین \\
+		\hline
+		\rowcolor{bleulight}
+		مذهب & کاتولیک دین دولتی & آزادی مذهبی \\
+		\hline
+		مالکیت & مالکیت‌های ملی تضمین شده & حق مقدس \\
+		\hline
+		\rowcolor{bleulight}
+		قوه مقننه & دو مجلسی (انتصابی/انتخابی) & مجلس ملی \\
+		\hline
+		حق رأی & سنسیتر (پرداخت مالیات) & --- \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\textbf{منشور ۱۸۱۴} سندی سازشی بود که تلاش می‌کرد دستاوردهای اساسی انقلاب را با اصل سلطنت موروثی ترکیب کند. نکته کلیدی در فلسفه این سند بود: منشور توسط پادشاه «اعطا» شده بود، نه توسط ملت تصویب. این تفاوت ظریف اما بنیادین، مشروعیت نظام را بر پایه لطف سلطنتی قرار می‌داد نه حقوق ملت.
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	box/.style={rectangle, rounded corners, draw=bleurepublique, fill=bleulight, 
+		minimum width=3cm, minimum height=1cm, align=center},
+	arrow/.style={->, thick, >=stealth}
+	]
+	% Title
+	\node[font=\bfseries\large] at (6,5.5) {ساختار قدرت در منشور ۱۸۱۴};
+	
+	% King at top
+	\node[box, fill=orroyallight, draw=orroyaldark, minimum width=4cm] (king) at (6,4) 
+	{پادشاه\\{\footnotesize قدرت اجرایی کامل}};
+	
+	% Two chambers
+	\node[box] (peers) at (2.5,2) {مجلس اعیان\\{\footnotesize انتصابی و موروثی}};
+	\node[box] (deputies) at (9.5,2) {مجلس نمایندگان\\{\footnotesize انتخابی (سنسیتر)}};
+	
+	% Ministers
+	\node[box, fill=violetlight, draw=violetempire] (ministers) at (6,2) 
+	{وزرا\\{\footnotesize مسئول در برابر پادشاه}};
+	
+	% Voters
+	\node[box, fill=grisclair, draw=gris] (voters) at (9.5,0) 
+	{رأی‌دهندگان\\{\footnotesize حدود ۱۰۰,۰۰۰ نفر}};
+	
+	% Arrows
+	\draw[arrow, orroyaldark] (king) -- (ministers);
+	\draw[arrow, orroyaldark] (king) -- (peers) node[midway, left] {\footnotesize انتصاب};
+	\draw[arrow, bleurepublique] (voters) -- (deputies) node[midway, left] {\footnotesize انتخاب};
+	\draw[arrow, violetempire] (ministers) -- (deputies) node[midway, below] {\footnotesize قوانین};
+	\draw[arrow, violetempire] (ministers) -- (peers);
+	
+	% Legend
+	\node[font=\footnotesize] at (2,0) {شرط رأی دادن: پرداخت ۳۰۰ فرانک مالیات سالانه};
+	\node[font=\footnotesize] at (2,-0.5) {شرط نامزدی: پرداخت ۱,۰۰۰ فرانک مالیات سالانه};
+\end{tikzpicture}
+
+\subsection{ترور سفید و واکنش اولترا}
+
+بازگشت ناپلئون در دوره «صد روز» (مارس-ژوئن ۱۸۱۵) و شکست نهایی او در واترلو، موج جدیدی از خشونت سیاسی را در فرانسه برانگیخت. گروه‌های سلطنت‌طلب افراطی (\lr{Ultras}) که از بازگشت قبلی ناپلئون خشمگین بودند، دست به انتقام‌جویی گسترده زدند.
+
+\begin{enghelabbox}
+	\textbf{ترور سفید (۱۸۱۵)}
+	
+	موجی از خشونت علیه بناپارتیست‌ها، جمهوری‌خواهان، و پروتستان‌ها در جنوب فرانسه:
+	
+	\begin{itemize}[nosep]
+		\item \textbf{قربانیان:} صدها نفر کشته، هزاران نفر آواره
+		\item \textbf{مناطق:} نیم، آویینون، تولوز، مارسی
+		\item \textbf{عاملان:} باندهای سلطنت‌طلب، اشرافیت محلی
+		\item \textbf{ویژگی:} آمیختگی انتقام سیاسی با تعصب مذهبی
+	\end{itemize}
+	
+	مارشال برون، قهرمان جنگ‌های ناپلئونی، در آویینون توسط جمعیت کشته شد.
+\end{enghelabbox}
+
+\subsection{دوره لویی هجدهم (۱۸۱۵-۱۸۲۴)}
+
+لویی هجدهم، علی‌رغم سن بالا و مشکلات جسمی، سیاستمداری هوشمند بود که اهمیت میانه‌روی را درک می‌کرد. او در برابر فشارهای اولتراها مقاومت کرد و تلاش نمود تعادلی میان گرایش‌های مختلف برقرار سازد.
+
+\subsubsection{مجلس «یافت‌نشده» (۱۸۱۵-۱۸۱۶)}
+
+انتخابات اوت ۱۸۱۵ در فضای ترور سفید، مجلسی بسیار محافظه‌کار به وجود آورد که لویی هجدهم آن را «یافت‌نشدنی» (\lr{Chambre introuvable}) نامید—چنان سلطنت‌طلب که حتی پادشاه نمی‌توانست چنین مجلسی را تصور کند.
+
+\begin{table}[htbp]
+	\centering
+	\caption{ترکیب سیاسی مجالس دوره بازگشت}
+	\label{tab:restoration-assemblies}
+	\begin{tabular}{|r|c|c|c|c|}
+		\hline
+		\rowcolor{bleumid}
+		\textcolor{white}{\textbf{دوره}} & \textcolor{white}{\textbf{اولترا}} & \textcolor{white}{\textbf{میانه‌رو}} & \textcolor{white}{\textbf{لیبرال}} & \textcolor{white}{\textbf{گرایش غالب}} \\
+		\hline
+		۱۸۱۵-۱۸۱۶ & ۳۵۰ & ۵۰ & ۱۰ & اولترا \\
+		\hline
+		\rowcolor{bleulight}
+		۱۸۱۶-۱۸۲۰ & ۹۰ & ۱۴۰ & ۱۲۰ & میانه‌رو \\
+		\hline
+		۱۸۲۰-۱۸۲۴ & ۱۸۰ & ۱۰۰ & ۷۰ & راست \\
+		\hline
+		\rowcolor{bleulight}
+		۱۸۲۴-۱۸۲۷ & ۲۸۰ & ۵۰ & ۳۰ & اولترا \\
+		\hline
+		۱۸۲۷-۱۸۳۰ & ۱۲۰ & ۸۰ & ۱۸۰ & لیبرال \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsubsection{دولت‌های میانه‌رو (۱۸۱۶-۱۸۲۰)}
+
+پس از انحلال مجلس یافت‌نشده، دولت‌های میانه‌روی دسز (\lr{Decazes}) و ریشلیو سیاست‌هایی متعادل‌تر پیش گرفتند:
+
+\begin{itemize}
+	\item \textbf{۱۸۱۸:} خروج نیروهای اشغالگر متفقین
+	\item \textbf{۱۸۱۸:} قانون گومند—اصلاح نظام نظامی
+	\item \textbf{۱۸۱۹:} قوانین آزادی مطبوعات (نسبی)
+	\item \textbf{پرداخت غرامات:} تکمیل پرداخت ۷۰۰ میلیون فرانک به متفقین
+\end{itemize}
+
+\subsubsection{چرخش به راست (۱۸۲۰)}
+
+ترور دوک دو بری (پسر کنت دو آرتوا و وارث احتمالی تاج) در فوریه ۱۸۲۰ توسط لووِل، کارگری بناپارتیست، نقطه عطفی در سیاست بازگشت بود. اولتراها این رویداد را بهانه‌ای برای تغییر جهت سیاسی قرار دادند.
+
+\begin{noktebox}
+	\textbf{قانون «دو رأی» (۱۸۲۰)}
+	
+	این قانون به ثروتمندترین رأی‌دهندگان (حدود ۱۲,۰۰۰ نفر) اجازه می‌داد دو بار رأی دهند: یک‌بار در حوزه عادی و یک‌بار در «کالج‌های بزرگ» استانی. این تغییر تعادل قدرت را به نفع محافظه‌کاران بر هم زد.
+\end{noktebox}
+
+\subsection{دوره شارل دهم (۱۸۲۴-۱۸۳۰)}
+
+با مرگ لویی هجدهم در سپتامبر ۱۸۲۴، برادرش کنت دو آرتوا به عنوان شارل دهم به سلطنت رسید. برخلاف برادر عمل‌گرایش، شارل دهم معتقد راسخ به حق الهی پادشاهان و ضرورت بازگشت به نظم قدیم بود.
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	event/.style={rectangle, rounded corners, draw=orroyaldark, fill=orroyallight,
+		minimum width=2.5cm, minimum height=0.8cm, align=center},
+	arrow/.style={->, thick, >=stealth, orroyaldark}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,6) {سیاست‌های ارتجاعی شارل دهم};
+	
+	% Timeline
+	\draw[very thick, orroyaldark] (0,4.5) -- (14,4.5);
+	
+	% Events
+	\node[event] (e1) at (1.5,3) {تاج‌گذاری رنس\\{\footnotesize مه ۱۸۲۵}};
+	\node[event] (e2) at (4.5,3) {قانون توهین\\{\footnotesize آوریل ۱۸۲۵}};
+	\node[event] (e3) at (7.5,3) {غرامت مهاجران\\{\footnotesize آوریل ۱۸۲۵}};
+	\node[event] (e4) at (10.5,3) {انحلال گارد ملی\\{\footnotesize آوریل ۱۸۲۷}};
+	\node[event, fill=rougelight, draw=rougerevolution] (e5) at (13,3) {فرمان‌های ژوئیه\\{\footnotesize ۲۶ ژوئیه ۱۸۳۰}};
+	
+	% Dots on timeline
+	\foreach \x in {1.5, 4.5, 7.5, 10.5, 13} {
+		\fill[orroyaldark] (\x,4.5) circle (0.1);
+	}
+	
+	% Connections
+	\draw[arrow] (1.5,4.5) -- (e1);
+	\draw[arrow] (4.5,4.5) -- (e2);
+	\draw[arrow] (7.5,4.5) -- (e3);
+	\draw[arrow] (10.5,4.5) -- (e4);
+	\draw[arrow] (13,4.5) -- (e5);
+	
+	% Descriptions
+	\node[font=\footnotesize, align=center] at (1.5,1.8) {مراسم سنتی\\مسح مقدس};
+	\node[font=\footnotesize, align=center] at (4.5,1.8) {مجازات اعدام\\برای توهین به مذهب};
+	\node[font=\footnotesize, align=center] at (7.5,1.8) {۱ میلیارد فرانک\\به اشراف مهاجر};
+	\node[font=\footnotesize, align=center] at (10.5,1.8) {به دلیل\\شعارهای ضد دولتی};
+	\node[font=\footnotesize, align=center, text=rougerevolution] at (13,1.8) {سانسور، انحلال مجلس\\محدودیت رأی};
+	
+\end{tikzpicture}
+
+\subsubsection{نمادگرایی ارتجاعی}
+
+تاج‌گذاری شارل دهم در کلیسای جامع رنس با تمام مراسم سنتی—از جمله مسح با روغن مقدس و ادعای شفای بیماران—نمادی از گرایش او به احیای سلطنت مطلقه بود. این در حالی بود که فرانسه ربع قرن از انقلاب و دوره ناپلئونی را پشت سر گذاشته بود.
+
+\begin{naghlbox}
+	«شارل دهم از تبعید بازگشت بدون آنکه چیزی آموخته یا چیزی فراموش کرده باشد.»
+	
+	\hfill --- \textit{تالیران}
+\end{naghlbox}
+
+\subsubsection{قانون غرامت به مهاجران}
+
+یکی از بحث‌برانگیزترین قوانین این دوره، «میلیارد مهاجران» بود که در آوریل ۱۸۲۵ تصویب شد. این قانون به اشرافیتی که اموالشان در انقلاب مصادره شده بود، غرامتی معادل حدود یک میلیارد فرانک (در قالب اوراق قرضه سه درصدی) اختصاص می‌داد.
+
+\begin{table}[htbp]
+	\centering
+	\caption{تحلیل قانون غرامت مهاجران}
+	\label{tab:emigre-compensation}
+	\begin{tabular}{|r|p{10cm}|}
+		\hline
+		\rowcolor{orroyalmid}
+		\textcolor{white}{\textbf{جنبه}} & \textcolor{white}{\textbf{توضیح}} \\
+		\hline
+		\textbf{هدف رسمی} & جبران خسارات وارده به اشرافیت و تثبیت مالکیت‌های ملی \\
+		\hline
+		\rowcolor{orroyallight}
+		\textbf{مبلغ} & حدود ۹۸۸ میلیون فرانک در اوراق قرضه ۳٪ \\
+		\hline
+		\textbf{ذی‌نفعان} & حدود ۲۵,۰۰۰ خانواده اشرافی \\
+		\hline
+		\rowcolor{orroyallight}
+		\textbf{تأمین مالی} & کاهش نرخ بهره اوراق دولتی از ۵٪ به ۳٪ \\
+		\hline
+		\textbf{انتقادات} & پاداش دادن به کسانی که علیه انقلاب جنگیده بودند؛ فشار بر دارندگان اوراق \\
+		\hline
+		\rowcolor{orroyallight}
+		\textbf{اثر سیاسی} & تقویت روایت «ضد انقلابی» بودن رژیم \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsubsection{دولت پولینیاک و بحران نهایی}
+
+در اوت ۱۸۲۹، شارل دهم ژول دو پولینیاک را به نخست‌وزیری منصوب کرد—اشرافی متعصب که در دوره ناپلئون به جرم توطئه زندانی بوده و نماد کامل ارتجاع محسوب می‌شد. این انتصاب موجی از نگرانی در میان لیبرال‌ها برانگیخت.
+
+انتخابات ژوئن-ژوئیه ۱۸۳۰ پیروزی قاطع اپوزیسیون لیبرال را نشان داد: ۲۷۴ نماینده لیبرال در برابر ۱۴۵ نماینده دولتی. پاسخ شارل دهم، صدور «فرمان‌های ژوئیه» بود.
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{انقلاب ژوئیه ۱۸۳۰}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{فرمان‌های ژوئیه}
+
+در ۲۶ ژوئیه ۱۸۳۰، شارل دهم با استناد به ماده ۱۴ منشور (که به پادشاه اجازه صدور فرمان برای «امنیت دولت» را می‌داد)، چهار فرمان صادر کرد:
+
+\begin{enghelabbox}
+	\textbf{فرمان‌های ژوئیه (۲۶ ژوئیه ۱۸۳۰)}
+	
+	\begin{enumerate}[nosep]
+		\item \textbf{تعلیق آزادی مطبوعات:} همه نشریات نیاز به مجوز قبلی داشتند
+		\item \textbf{انحلال مجلس نمایندگان:} مجلسی که هنوز تشکیل نشده بود
+		\item \textbf{اصلاح قانون انتخابات:} حذف مالیات صنعتی و تجاری از شرایط رأی‌دهی (کاهش رأی‌دهندگان از ۱۰۰,۰۰۰ به ۲۵,۰۰۰)
+		\item \textbf{تعیین تاریخ انتخابات جدید:} سپتامبر ۱۸۳۰
+	\end{enumerate}
+	
+	\textbf{هدف:} حذف بورژوازی تجاری و صنعتی از فرآیند سیاسی و بازگشت قدرت به زمین‌داران اشرافی
+\end{enghelabbox}
+
+\subsection{سه روز شکوهمند}
+
+واکنش به فرمان‌ها سریع و قاطع بود. روزنامه‌نگاران لیبرال در همان روز ۲۶ ژوئیه اعتراض‌نامه‌ای امضا کردند. روز بعد، کارگران چاپخانه‌ها که بیکار شده بودند، به خیابان‌ها ریختند.
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	day/.style={rectangle, rounded corners, draw=rougerevolution, fill=rougelight,
+		minimum width=4cm, minimum height=2cm, align=center},
+	arrow/.style={->, very thick, >=stealth, rougerevolution}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,7) {سه روز شکوهمند (\lr{Les Trois Glorieuses})};
+	
+	% Three days
+	\node[day] (d1) at (2,4) {\textbf{۲۷ ژوئیه (سه‌شنبه)}\\تظاهرات اولیه\\درگیری با پلیس\\سنگربندی در شرق پاریس};
+	
+	\node[day] (d2) at (7,4) {\textbf{۲۸ ژوئیه (چهارشنبه)}\\گسترش شورش\\تصرف شهرداری\\پرچم سه‌رنگ برافراشته};
+	
+	\node[day] (d3) at (12,4) {\textbf{۲۹ ژوئیه (پنج‌شنبه)}\\تصرف لوور و تویلری\\فرار شارل دهم\\پیروزی انقلاب};
+	
+	% Arrows
+	\draw[arrow] (d1) -- (d2);
+	\draw[arrow] (d2) -- (d3);
+	
+	% Statistics
+	\node[rectangle, draw=gris, fill=grisclair, rounded corners] at (7,1) {
+		\begin{tabular}{rc}
+			کشته‌های مردمی: & حدود ۸۰۰ نفر \\
+			کشته‌های نظامی: & حدود ۲۰۰ نفر \\
+			سنگرهای مردمی: & بیش از ۴,۰۰۰ \\
+			مدت انقلاب: & ۳ روز \\
+		\end{tabular}
+	};
+	
+\end{tikzpicture}
+
+\subsubsection{ترکیب اجتماعی انقلابیون}
+
+\begin{table}[htbp]
+	\centering
+	\caption{ترکیب اجتماعی کشته‌شدگان انقلاب ۱۸۳۰}
+	\label{tab:july-martyrs}
+	\begin{tabular}{|r|c|c|}
+		\hline
+		\rowcolor{rougemid}
+		\textcolor{white}{\textbf{طبقه/شغل}} & \textcolor{white}{\textbf{تعداد تقریبی}} & \textcolor{white}{\textbf{درصد}} \\
+		\hline
+		پیشه‌وران و کارگران & ۵۲۰ & ۶۵٪ \\
+		\hline
+		\rowcolor{rougelight}
+		صاحبان مغازه و کارگاه & ۱۲۰ & ۱۵٪ \\
+		\hline
+		دانشجویان & ۶۴ & ۸٪ \\
+		\hline
+		\rowcolor{rougelight}
+		کارمندان و حرفه‌ای‌ها & ۵۶ & ۷٪ \\
+		\hline
+		سایر & ۴۰ & ۵٪ \\
+		\hline
+	\end{tabular}
+\end{table}
+
+نکته مهم این آمار: کسانی که در خیابان جنگیدند عمدتاً طبقات پایین‌تر بودند، اما کسانی که قدرت را به دست گرفتند، بورژوازی لیبرال بودند.
+
+\subsection{سرقت انقلاب}
+
+در حالی که خیابان‌های پاریس هنوز بوی باروت می‌داد، نمایندگان لیبرال مجلس گرد هم آمدند تا آینده را تعیین کنند. دو گزینه پیش رو بود:
+
+\begin{enumerate}
+	\item \textbf{جمهوری:} خواست بخشی از انقلابیون، به‌ویژه جمهوری‌خواهان و طبقات پایین
+	\item \textbf{سلطنت مشروطه جدید:} ترجیح بورژوازی لیبرال برای اجتناب از افراط‌گری
+\end{enumerate}
+
+تالیران، سیاستمدار کهنه‌کار، و تی‌یر، روزنامه‌نگار لیبرال، لویی-فیلیپ دوک دو اورلئان را به عنوان نامزد سلطنت معرفی کردند. او از شاخه جوان‌تر بوربون‌ها بود، در انقلاب ۱۷۸۹ شرکت کرده، در ولمی جنگیده، و به عنوان «شهروند-شاه» شناخته می‌شد.
+
+\begin{naghlbox}
+	«جمهوری ما را در جنگ با اروپا قرار می‌داد؛ دوک اورلئان یک شاهزاده است که به انقلاب وفادار بوده است.»
+	
+	\hfill --- \textit{تی‌یر، ۳۰ ژوئیه ۱۸۳۰}
+\end{naghlbox}
+
+در ۳۱ ژوئیه، لافایت—قهرمان پیر انقلاب‌ها—لویی-فیلیپ را در بالکن هتل دو ویل در آغوش گرفت و پرچم سه‌رنگ را به دست او داد. این صحنه نمادین، انقلاب را به سلطنت جدید انتقال داد.
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{سلطنت ژوئیه (۱۸۳۰-۱۸۴۸)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{ماهیت رژیم جدید}
+
+سلطنت ژوئیه از نظر نظری و عملی با بازگشت بوربون تفاوت‌های اساسی داشت:
+
+\begin{table}[htbp]
+	\centering
+	\caption{مقایسه منشور ۱۸۱۴ و منشور اصلاح‌شده ۱۸۳۰}
+	\label{tab:charter-comparison-2}
+	\begin{tabular}{|r|p{5cm}|p{5cm}|}
+		\hline
+		\rowcolor{bleumid}
+		\textcolor{white}{\textbf{موضوع}} & \textcolor{white}{\textbf{منشور ۱۸۱۴}} & \textcolor{white}{\textbf{منشور ۱۸۳۰}} \\
+		\hline
+		مبنای مشروعیت & اعطای پادشاه & پذیرش ملت \\
+		\hline
+		\rowcolor{bleulight}
+		عنوان پادشاه & پادشاه فرانسه & پادشاه فرانسویان \\
+		\hline
+		پرچم & سفید بوربونی & سه‌رنگ ملی \\
+		\hline
+		\rowcolor{bleulight}
+		دین دولتی & کاتولیک & حذف (سکولار) \\
+		\hline
+		سانسور & مجاز & ممنوع برای همیشه \\
+		\hline
+		\rowcolor{bleulight}
+		حق رأی (مالیات) & ۳۰۰ فرانک & ۲۰۰ فرانک \\
+		\hline
+		شرط نامزدی (مالیات) & ۱,۰۰۰ فرانک & ۵۰۰ فرانک \\
+		\hline
+		\rowcolor{bleulight}
+		سن رأی‌دهی & ۳۰ سال & ۲۵ سال \\
+		\hline
+		تعداد رأی‌دهندگان & ۱۰۰,۰۰۰ & ۱۶۶,۰۰۰ (بعداً ۲۴۰,۰۰۰) \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	box/.style={rectangle, rounded corners, minimum width=3.5cm, minimum height=1.2cm, align=center},
+	arrow/.style={->, thick, >=stealth}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,7) {ایدئولوژی سلطنت ژوئیه: «میانه طلایی»};
+	
+	% Center
+	\node[box, draw=bleurepublique, fill=bleulight, minimum width=5cm, minimum height=1.5cm] (center) at (7,4) 
+	{\textbf{سلطنت ژوئیه}\\«میانه طلایی» (\lr{Juste Milieu})};
+	
+	% Rejected extremes
+	\node[box, draw=rougerevolution, fill=rougelight] (left) at (1.5,4) 
+	{جمهوری‌خواهی\\«هرج‌ومرج»};
+	\node[box, draw=orroyaldark, fill=orroyallight] (right) at (12.5,4) 
+	{سلطنت مطلقه\\«استبداد»};
+	
+	% Key features
+	\node[box, draw=vertnapoleon, fill=vertlight] (f1) at (4,1.5) 
+	{نظم و ثبات};
+	\node[box, draw=vertnapoleon, fill=vertlight] (f2) at (7,1.5) 
+	{آزادی مطبوعات};
+	\node[box, draw=vertnapoleon, fill=vertlight] (f3) at (10,1.5) 
+	{حکومت قانون};
+	
+	% Arrows
+	\draw[arrow, red!50] (center) -- (left) node[midway, above] {رد};
+	\draw[arrow, orange!50] (center) -- (right) node[midway, above] {رد};
+	\draw[arrow, vertnapoleon] (center) -- (f1);
+	\draw[arrow, vertnapoleon] (center) -- (f2);
+	\draw[arrow, vertnapoleon] (center) -- (f3);
+	
+	% Quote
+	\node[font=\footnotesize\itshape, align=center] at (7,6) 
+	{«عرش سلطنتی محاط به نهادهای جمهوری»\\— گیزو};
+\end{tikzpicture}
+
+\subsection{لویی-فیلیپ: شهروند-شاه}
+
+\begin{table}[htbp]
+	\centering
+	\caption{مشخصات لویی-فیلیپ اول}
+	\label{tab:louis-philippe}
+	\begin{tabular}{|r|p{10cm}|}
+		\hline
+		\rowcolor{bleumid}
+		\textcolor{white}{\textbf{مشخصه}} & \textcolor{white}{\textbf{توضیح}} \\
+		\hline
+		\textbf{تولد} & ۶ اکتبر ۱۷۷۳، پاریس \\
+		\hline
+		\rowcolor{bleulight}
+		\textbf{پدر} & لویی-فیلیپ دوک اورلئان («فیلیپ برابری») \\
+		\hline
+		\textbf{در انقلاب} & عضو ژاکوبن‌ها، جنگید در ولمی و ژماپ \\
+		\hline
+		\rowcolor{bleulight}
+		\textbf{تبعید} & ۱۷۹۳-۱۸۱۴ (سوئیس، آمریکا، انگلستان) \\
+		\hline
+		\textbf{سبک زندگی} & ساده، بدون تشریفات، با چتر در خیابان \\
+		\hline
+		\rowcolor{bleulight}
+		\textbf{شعار} & «غنی‌سازی خود» (\lr{Enrichissez-vous}) \\
+		\hline
+		\textbf{نهایت} & فرار به انگلستان ۱۸۴۸، مرگ ۱۸۵۰ \\
+		\hline
+	\end{tabular}
+\end{table}
+
+لویی-فیلیپ تصویری از «شهروند-شاه» ارائه می‌داد: مردی که با چتر در خیابان‌های پاریس قدم می‌زد، با شهروندان دست می‌داد، و فرزندانش را به مدارس عمومی می‌فرستاد. اما این تصویر مردمی پوششی بود بر حکومتی که اساساً در خدمت بورژوازی مالی و صنعتی قرار داشت.
+
+\subsection{اپوزیسیون‌های سلطنت ژوئیه}
+
+سلطنت ژوئیه از همان آغاز با مخالفت‌های گوناگون مواجه بود:
+
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	opp/.style={rectangle, rounded corners, draw=gris, fill=grisclair,
+		minimum width=3cm, minimum height=2.5cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,7.5) {اپوزیسیون‌های سلطنت ژوئیه};
+	
+	% Center - regime
+	\node[rectangle, rounded corners, draw=bleurepublique, fill=bleulight,
+	minimum width=3cm, minimum height=1.5cm] (regime) at (7,4.5) 
+	{\textbf{سلطنت ژوئیه}\\لویی-فیلیپ};
+	
+	% Oppositions
+	\node[opp, draw=orroyaldark, fill=orroyallight] (legit) at (2,6.5) 
+	{\textbf{لژیتیمیست‌ها}\\(مشروعه‌خواهان)\\وفادار به بوربون\\خط ارشد};
+	
+	\node[opp, draw=violetempire, fill=violetlight] (bonap) at (12,6.5) 
+	{\textbf{بناپارتیست‌ها}\\حسرت دوره\\ناپلئون\\شکوه ملی};
+	
+	\node[opp, draw=rougerevolution, fill=rougelight] (repub) at (2,2) 
+	{\textbf{جمهوری‌خواهان}\\حاکمیت ملی\\رأی همگانی\\برابری};
+	
+	\node[opp, draw=vertnapoleon, fill=vertlight] (social) at (12,2) 
+	{\textbf{سوسیالیست‌های اولیه}\\سن‌سیمون، فوریه\\پرودون\\طبقه کارگر};
+	
+	% Arrows
+	\draw[->, thick, orroyaldark] (legit) -- (regime);
+	\draw[->, thick, violetempire] (bonap) -- (regime);
+	\draw[->, thick, rougerevolution] (repub) -- (regime);
+	\draw[->, thick, vertnapoleon] (social) -- (regime);
+	
+\end{tikzpicture}
+
+\subsubsection{شورش‌ها و سرکوب‌ها}
+
+\begin{table}[htbp]
+	\centering
+	\caption{شورش‌های مهم دوره سلطنت ژوئیه}
+	\label{tab:july-monarchy-revolts}
+	\begin{tabular}{|c|r|p{6cm}|c|}
+		\hline
+		\rowcolor{rougemid}
+		\textcolor{white}{\textbf{سال}} & \textcolor{white}{\textbf{مکان}} & \textcolor{white}{\textbf{ماهیت}} & \textcolor{white}{\textbf{نتیجه}} \\
+		\hline
+		۱۸۳۱ & لیون & شورش کارگران ابریشم‌باف (کانو) & سرکوب \\
+		\hline
+		\rowcolor{rougelight}
+		۱۸۳۲ & پاریس & شورش جمهوری‌خواهان & سرکوب \\
+		\hline
+		۱۸۳۴ & لیون و پاریس & شورش کارگری-جمهوری‌خواه & سرکوب خونین \\
+		\hline
+		\rowcolor{rougelight}
+		۱۸۳۹ & پاریس & قیام بلانکی & شکست \\
+		\hline
+		۱۸۴۰ & بولونی & کودتای لویی-ناپلئون & شکست و زندان \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{enghelabbox}
+	\textbf{شورش کارگران ابریشم‌باف لیون (نوامبر ۱۸۳۱)}
+	
+	اولین شورش بزرگ طبقه کارگر صنعتی در تاریخ فرانسه:
+	
+	\begin{itemize}[nosep]
+		\item \textbf{علت:} کاهش دستمزد توسط تاجران ابریشم
+		\item \textbf{شعار:} «زنده باد کار یا بمیریم در نبرد» (\lr{Vivre en travaillant ou mourir en combattant})
+		\item \textbf{مشارکت:} حدود ۳۰,۰۰۰ کارگر
+		\item \textbf{نتیجه:} تصرف موقت شهر، سپس سرکوب توسط ارتش
+		\item \textbf{اهمیت:} نشان‌دهنده ظهور «مسئله اجتماعی» (\lr{question sociale})
+	\end{itemize}
+\end{enghelabbox}
+
+\subsection{سیاست‌های داخلی}
+
+\subsubsection{دولت‌های کلیدی}
+
+\begin{itemize}
+	\item \textbf{کازیمیر پریه (۱۸۳۱-۱۸۳۲):} سرکوب شورش‌ها، ثبات مالی
+	\item \textbf{سولت و برولی (۱۸۳۲-۱۸۳۶):} ائتلاف محافظه‌کار
+	\item \textbf{مولِه و تی‌یر (۱۸۳۶-۱۸۴۰):} رقابت سیاسی
+	\item \textbf{گیزو (۱۸۴۰-۱۸۴۸):} محافظه‌کاری و مقاومت در برابر اصلاحات
+\end{itemize}
+
+\subsubsection{سیاست گیزو}
+
+فرانسوا گیزو، مورخ و سیاستمدار، از ۱۸۴۰ تا ۱۸۴۸ شخصیت غالب سیاست فرانسه بود. او طرفدار حکومت «ظرفیت‌ها» (\lr{capacités}) بود—یعنی حکومت کسانی که ثروت یا تحصیلاتشان نشان‌دهنده توانایی‌شان برای مشارکت سیاسی است.
+
+\begin{naghlbox}
+	«غنی شوید از طریق کار و پس‌انداز، و رأی‌دهنده خواهید شد.»
+	
+	\hfill --- \textit{گیزو (نقل‌قول منتسب)}
+\end{naghlbox}
+
+گیزو در برابر هر نوع اصلاح انتخاباتی مقاومت می‌کرد. وقتی در ۱۸۴۷ لایحه‌ای برای کاهش شرط مالیاتی رأی‌دهی به ۱۰۰ فرانک مطرح شد، گیزو مخالفت کرد. این سرسختی، زمینه‌ساز سقوط رژیم شد.
+
+\subsection{تحولات اقتصادی و اجتماعی}
+
+دوره سلطنت ژوئیه مصادف با آغاز صنعتی‌شدن جدی فرانسه بود:
+
+\begin{table}[htbp]
+	\centering
+	\caption{شاخص‌های توسعه اقتصادی ۱۸۳۰-۱۸۴۸}
+	\label{tab:economic-indicators}
+	\begin{tabular}{|r|c|c|c|}
+		\hline
+		\rowcolor{bleumid}
+		\textcolor{white}{\textbf{شاخص}} & \textcolor{white}{\textbf{۱۸۳۰}} & \textcolor{white}{\textbf{۱۸۴۸}} & \textcolor{white}{\textbf{تغییر}} \\
+		\hline
+		خطوط راه‌آهن (کیلومتر) & ۰ & ۱,۸۰۰ & — \\
+		\hline
+		\rowcolor{bleulight}
+		تولید زغال‌سنگ (میلیون تن) & ۱.۸ & ۴.۴ & +۱۴۴٪ \\
+		\hline
+		تولید آهن (هزار تن) & ۲۲۰ & ۵۹۰ & +۱۶۸٪ \\
+		\hline
+		\rowcolor{bleulight}
+		ماشین‌های بخار & ۶۲۵ & ۴,۸۵۳ & +۶۷۷٪ \\
+		\hline
+		جمعیت پاریس (میلیون) & ۰.۷۸ & ۱.۰۵ & +۳۵٪ \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{tikzpicture}[
+	every node/.style={font=\small}
+	]
+	% Title
+	\node[font=\bfseries\large] at (7,7) {ساختار طبقاتی فرانسه در دهه ۱۸۴۰};
+	
+	% Pyramid
+	\fill[orroyallight] (4,6) -- (7,6) -- (5.5,5.2) -- cycle;
+	\fill[violetlight] (3.5,5.2) -- (7.5,5.2) -- (5.5,4) -- cycle;
+	\fill[bleulight] (3,4) -- (8,4) -- (5.5,2.5) -- cycle;
+	\fill[vertlight] (2.5,2.5) -- (8.5,2.5) -- (5.5,0.5) -- cycle;
+	\fill[grisclair] (2,0.5) -- (9,0.5) -- (5.5,-1) -- cycle;
+	
+	% Borders
+	\draw[orroyaldark, thick] (4,6) -- (7,6) -- (5.5,5.2) -- cycle;
+	\draw[violetempire, thick] (3.5,5.2) -- (7.5,5.2) -- (5.5,4) -- cycle;
+	\draw[bleurepublique, thick] (3,4) -- (8,4) -- (5.5,2.5) -- cycle;
+	\draw[vertnapoleon, thick] (2.5,2.5) -- (8.5,2.5) -- (5.5,0.5) -- cycle;
+	\draw[gris, thick] (2,0.5) -- (9,0.5) -- (5.5,-1) -- cycle;
+	
+	% Labels
+	\node at (5.5,5.5) {\footnotesize اشرافیت و بانکداران بزرگ};
+	\node at (5.5,4.5) {\footnotesize بورژوازی صنعتی و تجاری};
+	\node at (5.5,3.2) {\footnotesize خرده‌بورژوازی (مغازه‌داران، پیشه‌وران)};
+	\node at (5.5,1.4) {\footnotesize دهقانان (مالک و مستأجر)};
+	\node at (5.5,-0.2) {\footnotesize پرولتاریای شهری و روستایی};
+	
+	% Numbers
+	\node[font=\footnotesize] at (10,5.5) {$\approx$ ۵۰,۰۰۰ خانوار};
+	\node[font=\footnotesize] at (10,4.5) {$\approx$ ۲۰۰,۰۰۰ خانوار};
+	\node[font=\footnotesize] at (10,3.2) {$\approx$ ۲ میلیون خانوار};
+	\node[font=\footnotesize] at (10,1.4) {$\approx$ ۵ میلیون خانوار};
+	\node[font=\footnotesize] at (10,-0.2) {$\approx$ ۲ میلیون خانوار};
+	
+	% Political rights
+	\node[font=\footnotesize, text=rougerevolution] at (1,5.5) {رأی‌دهندگان};
+	\draw[rougerevolution, thick, decorate, decoration={brace, amplitude=5pt}] (2.2,6.2) -- (2.2,4.8);
+	
+\end{tikzpicture}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{انقلاب ۱۸۴۸ و جمهوری دوم}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{زمینه‌های انقلاب}
+
+سال‌های ۱۸۴۶-۱۸۴۷ شاهد بحران‌های متعدد بود که زمینه را برای انقلاب فراهم کرد:
+
+\begin{itemize}
+	\item \textbf{بحران کشاورزی (۱۸۴۶):} آفت سیب‌زمینی و محصولات غلات، گرسنگی گسترده
+	\item \textbf{بحران صنعتی (۱۸۴۷):} رکود تولید، بیکاری انبوه
+	\item \textbf{بحران مالی:} ورشکستگی بانک‌ها، سقوط بورس
+	\item \textbf{بحران سیاسی:} رسوایی‌های فساد، سرسختی در کابینه گیزو
+\item \textbf{بحران مشروعیت:} امتناع از اصلاحات انتخاباتی
+\end{itemize}
+
+\subsubsection{کمپین ضیافت‌ها}
+
+از ژوئیه ۱۸۴۷، اپوزیسیون لیبرال و جمهوری‌خواه «کمپین ضیافت‌ها» (\lr{Campagne des banquets}) را سازمان داد. چون تجمعات سیاسی ممنوع بود، مخالفان در قالب مهمانی‌های خصوصی گرد هم می‌آمدند و سخنرانی می‌کردند. بیش از ۷۰ ضیافت در سراسر فرانسه برگزار شد.
+
+\begin{noktebox}
+\textbf{خواسته‌های کمپین ضیافت‌ها:}
+\begin{itemize}[nosep]
+	\item کاهش شرط مالیاتی رأی‌دهی به ۱۰۰ فرانک
+	\item افزودن «ظرفیت‌ها» (تحصیل‌کردگان) به رأی‌دهندگان
+	\item اصلاحات پارلمانی
+	\item (جناح رادیکال: رأی همگانی مردان)
+\end{itemize}
+\end{noktebox}
+
+\subsection{روزهای فوریه ۱۸۴۸}
+
+دولت گیزو ضیافت بزرگ پاریس را که برای ۲۲ فوریه ۱۸۴۸ برنامه‌ریزی شده بود، ممنوع کرد. این ممنوعیت جرقه انقلاب را زد.
+
+\begin{tikzpicture}[
+every node/.style={font=\small},
+day/.style={rectangle, rounded corners, draw=rougerevolution, fill=rougelight,
+	minimum width=4.5cm, minimum height=2.2cm, align=center},
+arrow/.style={->, very thick, >=stealth, rougerevolution}
+]
+% Title
+\node[font=\bfseries\large] at (7,7.5) {انقلاب فوریه ۱۸۴۸};
+
+% Timeline
+\draw[very thick, rougerevolution] (0,5.5) -- (14,5.5);
+
+% Days
+\node[day] (d1) at (2.5,3.5) {\textbf{۲۲ فوریه}\\تظاهرات دانشجویی\\و کارگری\\ممنوعیت ضیافت};
+
+\node[day] (d2) at (7,3.5) {\textbf{۲۳ فوریه}\\گسترش شورش\\سنگربندی‌ها\\استعفای گیزو};
+
+\node[day] (d3) at (11.5,3.5) {\textbf{۲۴ فوریه}\\کشتار بولوار\\فرار لویی-فیلیپ\\اعلام جمهوری};
+
+% Dots
+\fill[rougerevolution] (2.5,5.5) circle (0.15);
+\fill[rougerevolution] (7,5.5) circle (0.15);
+\fill[rougerevolution] (11.5,5.5) circle (0.15);
+
+% Connections
+\draw[arrow] (2.5,5.5) -- (d1);
+\draw[arrow] (7,5.5) -- (d2);
+\draw[arrow] (11.5,5.5) -- (d3);
+
+% Key event
+\node[rectangle, draw=rougerevolution, fill=white, rounded corners, align=center] at (7,1) 
+{\textbf{شب ۲۳ فوریه:} تیراندازی سربازان به جمعیت\\در بولوار دِ کاپوسین — حدود ۵۰ کشته\\حمل اجساد با مشعل در خیابان‌ها};
+
+\end{tikzpicture}
+
+\subsubsection{سقوط سلطنت}
+
+صبح ۲۴ فوریه، لویی-فیلیپ که دید ارتش حاضر به سرکوب نیست، به نفع نوه‌اش کناره‌گیری کرد و به انگلستان گریخت. اما جمعیت به کاخ بوربون (مجلس نمایندگان) هجوم آورد و اجازه نداد نیابت سلطنت تشکیل شود. نمایندگان تحت فشار جمعیت، دولت موقت جمهوری را اعلام کردند.
+
+\begin{naghlbox}
+«جمهوری در فرانسه اعلام شده است. این جمهوری، حکومتی است که ملت فرانسه می‌خواهد... جمهوری آرام‌بخش‌ترین و در عین حال قهرمانانه‌ترین شکل حکومت است.»
+
+\hfill --- \textit{آلفونس دو لامارتین، ۲۵ فوریه ۱۸۴۸}
+\end{naghlbox}
+
+\subsection{دولت موقت و آرمان‌گرایی بهار ۱۸۴۸}
+
+دولت موقت ترکیبی بود از جمهوری‌خواهان میانه‌رو و سوسیالیست‌ها:
+
+\begin{table}[htbp]
+\centering
+\caption{ترکیب دولت موقت (فوریه ۱۸۴۸)}
+\label{tab:provisional-government}
+\begin{tabular}{|r|r|p{5cm}|}
+	\hline
+	\rowcolor{bleumid}
+	\textcolor{white}{\textbf{نام}} & \textcolor{white}{\textbf{گرایش}} & \textcolor{white}{\textbf{سمت/نقش}} \\
+	\hline
+	لامارتین & جمهوری‌خواه میانه‌رو & امور خارجه، رهبری عملی \\
+	\hline
+	\rowcolor{bleulight}
+	لدرو-رولَن & جمهوری‌خواه رادیکال & کشور \\
+	\hline
+	آراگو & جمهوری‌خواه & دریاداری، جنگ \\
+	\hline
+	\rowcolor{bleulight}
+	ماری & جمهوری‌خواه میانه‌رو & امور عمومی \\
+	\hline
+	کِرِمیو & جمهوری‌خواه & دادگستری \\
+	\hline
+	\rowcolor{vertlight}
+	لویی بلان & سوسیالیست & کمیسیون کارگری \\
+	\hline
+	آلبِر & کارگر سوسیالیست & کمیسیون کارگری \\
+	\hline
+\end{tabular}
+\end{table}
+
+\subsubsection{اصلاحات بنیادین}
+
+دولت موقت در چند هفته اول، اصلاحاتی انقلابی تصویب کرد:
+
+\begin{olgoobox}
+\textbf{دستاوردهای بهار ۱۸۴۸}
+
+\begin{enumerate}[nosep]
+	\item \textbf{رأی همگانی مردان (۲ مارس):} افزایش رأی‌دهندگان از ۲۵۰,۰۰۰ به ۹ میلیون
+	\item \textbf{لغو برده‌داری (۲۷ آوریل):} در همه مستعمرات فرانسه
+	\item \textbf{آزادی کامل مطبوعات و تجمعات}
+	\item \textbf{لغو مجازات اعدام برای جرایم سیاسی}
+	\item \textbf{کاهش ساعات کار:} ۱۰ ساعت در پاریس، ۱۱ ساعت در شهرستان
+	\item \textbf{کارگاه‌های ملی:} اشتغال دولتی برای بیکاران
+	\item \textbf{«حق کار»:} به رسمیت شناخته شد (در اصل)
+\end{enumerate}
+\end{olgoobox}
+
+\subsubsection{کارگاه‌های ملی}
+
+یکی از بحث‌برانگیزترین نهادهای جمهوری دوم، «کارگاه‌های ملی» (\lr{Ateliers nationaux}) بود. این طرح، که توسط امیل توما اجرا شد (نه لویی بلان که ایده‌های متفاوتی داشت)، به بیکاران کار یا یارانه می‌داد.
+
+\begin{table}[htbp]
+\centering
+\caption{کارگاه‌های ملی: آمار و مشکلات}
+\label{tab:national-workshops}
+\begin{tabular}{|r|p{9cm}|}
+	\hline
+	\rowcolor{vertmid}
+	\textcolor{white}{\textbf{جنبه}} & \textcolor{white}{\textbf{توضیح}} \\
+	\hline
+	\textbf{ثبت‌نام اولیه} & مارس ۱۸۴۸: ۱۴,۰۰۰ نفر \\
+	\hline
+	\rowcolor{vertlight}
+	\textbf{اوج ثبت‌نام} & ژوئن ۱۸۴۸: بیش از ۱۰۰,۰۰۰ نفر \\
+	\hline
+	\textbf{دستمزد} & ۲ فرانک در روز کار، ۱ فرانک بدون کار \\
+	\hline
+	\rowcolor{vertlight}
+	\textbf{نوع کار} & عمدتاً خاک‌برداری، کار غیرمولد \\
+	\hline
+	\textbf{هزینه} & بحران مالی برای دولت \\
+	\hline
+	\rowcolor{vertlight}
+	\textbf{مشکل} & جذب بیکاران سراسر فرانسه به پاریس \\
+	\hline
+\end{tabular}
+\end{table}
+
+\subsection{انتخابات آوریل و چرخش به راست}
+
+انتخابات مجلس مؤسسان در ۲۳ آوریل ۱۸۴۸—اولین انتخابات با رأی همگانی در تاریخ فرانسه—نتایجی غیرمنتظره داشت:
+
+\begin{tikzpicture}[
+every node/.style={font=\small}
+]
+% Title
+\node[font=\bfseries\large] at (6,6.5) {نتایج انتخابات آوریل ۱۸۴۸};
+
+% Pie chart (simplified as bars)
+\fill[bleulight] (0,0) rectangle (4,4);
+\fill[bleumid] (4,0) rectangle (7.5,4);
+\fill[rougelight] (7.5,0) rectangle (9.5,4);
+\fill[vertlight] (9.5,0) rectangle (10,4);
+\fill[orroyallight] (10,0) rectangle (12,4);
+
+\draw[thick] (0,0) rectangle (12,4);
+\draw[thick] (4,0) -- (4,4);
+\draw[thick] (7.5,0) -- (7.5,4);
+\draw[thick] (9.5,0) -- (9.5,4);
+\draw[thick] (10,0) -- (10,4);
+
+% Labels
+\node[align=center] at (2,2) {\textbf{جمهوری‌خواهان}\\\textbf{میانه‌رو}\\۵۰۰ کرسی};
+\node[align=center] at (5.75,2) {\textbf{سلطنت‌طلبان}\\۲۹۰ کرسی};
+\node[align=center] at (8.5,2) {\textbf{رادیکال}\\۸۰};
+\node[align=center] at (9.75,2.5) {\tiny سوس.};
+\node[align=center] at (11,2) {\textbf{بناپارت}\\۵};
+
+% Analysis
+\node[rectangle, draw=gris, fill=grisclair, rounded corners, align=right] at (6,-1.5) {
+	\textbf{تحلیل:} روستاها (۷۵٪ جمعیت) محافظه‌کار رأی دادند.\\
+	کشیشان و زمین‌داران رأی‌دهندگان بی‌سواد را هدایت کردند.\\
+	شکست نسبی سوسیالیست‌ها و رادیکال‌ها.
+};
+
+\end{tikzpicture}
+
+\subsection{روزهای ژوئن: جنگ داخلی طبقاتی}
+
+با تسلط جمهوری‌خواهان میانه‌رو و سلطنت‌طلبان بر مجلس، تصمیم به انحلال کارگاه‌های ملی گرفته شد. در ۲۱ ژوئن ۱۸۴۸، فرمان انحلال صادر شد: کارگران جوان باید به ارتش می‌پیوستند یا به پروژه‌های زهکشی در سولونی (مناطق باتلاقی) می‌رفتند.
+
+\begin{enghelabbox}
+\textbf{قیام ژوئن ۱۸۴۸ (۲۳-۲۶ ژوئن)}
+
+خونین‌ترین درگیری خیابانی در تاریخ پاریس تا آن زمان:
+
+\begin{itemize}[nosep]
+	\item \textbf{شورشیان:} ۴۰,۰۰۰ تا ۵۰,۰۰۰ کارگر مسلح
+	\item \textbf{مناطق:} شرق و شمال پاریس (محلات کارگری)
+	\item \textbf{سنگرها:} بیش از ۴۰۰ سنگر
+	\item \textbf{سرکوبگر:} ژنرال کاوِنیاک با اختیارات دیکتاتوری
+	\item \textbf{کشته‌ها:} ۱,۵۰۰ نفر در نبرد، ۳,۰۰۰ نفر در اعدام‌های صحرایی
+	\item \textbf{بازداشت‌ها:} ۱۵,۰۰۰ نفر
+	\item \textbf{تبعید:} ۴,۵۰۰ نفر به الجزایر
+\end{itemize}
+
+\textbf{شعار شورشیان:} «نان یا سرب!» (\lr{Du pain ou du plomb!})
+\end{enghelabbox}
+
+\begin{naghlbox}
+«این جنگ داخلی نبود؛ این جنگ طبقاتی بود. از یک سو همه کسانی که چیزی داشتند، از سوی دیگر همه کسانی که هیچ نداشتند.»
+
+\hfill --- \textit{آلکسی دو توکویل، «یادبودها»}
+\end{naghlbox}
+
+\subsubsection{پیامدهای ژوئن}
+
+\begin{itemize}
+\item \textbf{پایان آرمان‌گرایی:} «توهم لیریک» (\lr{illusion lyrique}) بهار ۱۸۴۸ نابود شد
+\item \textbf{شکاف طبقاتی:} بورژوازی و پرولتاریا به عنوان دشمنان طبقاتی رو در روی هم قرار گرفتند
+\item \textbf{ترس از «سرخ‌ها»:} محافظه‌کاران و لیبرال‌ها به «حزب نظم» پیوستند
+\item \textbf{زمینه‌سازی برای بناپارتیسم:} خواست «مردی قوی» برای حفظ نظم
+\end{itemize}
+
+\subsection{قانون اساسی جمهوری دوم}
+
+مجلس مؤسسان در نوامبر ۱۸۴۸ قانون اساسی جدید را تصویب کرد:
+
+\begin{table}[htbp]
+\centering
+\caption{ویژگی‌های قانون اساسی ۱۸۴۸}
+\label{tab:constitution-1848}
+\begin{tabular}{|r|p{10cm}|}
+	\hline
+	\rowcolor{bleumid}
+	\textcolor{white}{\textbf{ویژگی}} & \textcolor{white}{\textbf{توضیح}} \\
+	\hline
+	\textbf{رئیس‌جمهور} & انتخاب مستقیم توسط مردم، دوره ۴ ساله، بدون حق انتخاب مجدد \\
+	\hline
+	\rowcolor{bleulight}
+	\textbf{مجلس} & یک مجلسی، ۷۵۰ نماینده، دوره ۳ ساله \\
+	\hline
+	\textbf{حق رأی} & همگانی مردان بالای ۲۱ سال \\
+	\hline
+	\rowcolor{bleulight}
+	\textbf{حقوق} & آزادی‌های اساسی، «حق آموزش و کمک» \\
+	\hline
+	\textbf{تفکیک قوا} & سخت‌گیرانه، بدون مکانیزم حل بن‌بست \\
+	\hline
+	\rowcolor{bleulight}
+	\textbf{ضعف ساختاری} & رئیس‌جمهور قوی + مجلس قوی = احتمال بحران \\
+	\hline
+\end{tabular}
+\end{table}
+
+\subsection{انتخابات ریاست‌جمهوری دسامبر ۱۸۴۸}
+
+انتخابات ۱۰ دسامبر ۱۸۴۸ نتیجه‌ای شگفت‌انگیز داشت:
+
+\begin{tikzpicture}[
+every node/.style={font=\small}
+]
+% Title
+\node[font=\bfseries\large] at (6,7) {نتایج انتخابات ریاست‌جمهوری ۱۸۴۸};
+
+% Bar chart
+\fill[violetlight] (1,0) rectangle (3,5.5);
+\fill[bleulight] (4,0) rectangle (6,1.5);
+\fill[rougelight] (7,0) rectangle (9,0.4);
+\fill[grisclair] (10,0) rectangle (12,0.3);
+
+\draw[violetempire, thick] (1,0) rectangle (3,5.5);
+\draw[bleurepublique, thick] (4,0) rectangle (6,1.5);
+\draw[rougerevolution, thick] (7,0) rectangle (9,0.4);
+\draw[gris, thick] (10,0) rectangle (12,0.3);
+
+% Labels
+\node[align=center] at (2,6) {\textbf{لویی-ناپلئون}\\{\footnotesize ۵.۵ میلیون}\\{\footnotesize ۷۴.۲٪}};
+\node[align=center] at (5,2) {\textbf{کاوِنیاک}\\{\footnotesize ۱.۴ میلیون}\\{\footnotesize ۱۹.۵٪}};
+\node[align=center] at (8,1) {\textbf{لدرو-رولَن}\\{\footnotesize ۳۷۱,۰۰۰}};
+\node[align=center] at (11,1) {\textbf{سایر}\\{\footnotesize ---}};
+
+% Scale
+\draw[thick] (0,0) -- (13,0);
+\node[font=\footnotesize] at (0,-0.5) {۰};
+\node[font=\footnotesize] at (13,-0.5) {میلیون رأی};
+
+\end{tikzpicture}
+
+\begin{noktebox}
+\textbf{چرا لویی-ناپلئون؟}
+
+\begin{itemize}[nosep]
+	\item \textbf{افسانه ناپلئونی:} نام «بناپارت» نماد شکوه ملی
+	\item \textbf{نارضایتی روستاییان:} مالیات ۴۵ سانتیم بر هر فرانک که دولت موقت وضع کرده بود
+	\item \textbf{ترس بورژوازی:} امید به «نظم» پس از ژوئن
+	\item \textbf{امید کارگران:} وعده‌های اجتماعی در کتاب «نابودی فقر»
+	\item \textbf{ضعف رقبا:} کاوِنیاک با سرکوب ژوئن منفور بود
+\end{itemize}
+\end{noktebox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{از جمهوری به امپراتوری (۱۸۴۸-۱۸۵۲)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{لویی-ناپلئون بناپارت}
+
+\begin{table}[htbp]
+\centering
+\caption{زندگی‌نامه لویی-ناپلئون تا ۱۸۴۸}
+\label{tab:louis-napoleon-bio}
+\begin{tabular}{|r|p{10cm}|}
+	\hline
+	\rowcolor{violetmid}
+	\textcolor{white}{\textbf{تاریخ}} & \textcolor{white}{\textbf{رویداد}} \\
+	\hline
+	۱۸۰۸ & تولد در پاریس (پسر لویی بناپارت، برادر ناپلئون اول) \\
+	\hline
+	\rowcolor{violetlight}
+	۱۸۱۵ & تبعید خانواده پس از واترلو \\
+	\hline
+	۱۸۳۱ & شرکت در شورش کربوناری در ایتالیا \\
+	\hline
+	\rowcolor{violetlight}
+	۱۸۳۶ & کودتای ناموفق در استراسبورگ \\
+	\hline
+	۱۸۴۰ & کودتای ناموفق در بولونی، محکومیت به حبس ابد \\
+	\hline
+	\rowcolor{violetlight}
+	۱۸۴۶ & فرار از قلعه هام \\
+	\hline
+	۱۸۴۸ & بازگشت به فرانسه، انتخاب به ریاست‌جمهوری \\
+	\hline
+\end{tabular}
+\end{table}
+
+\subsection{جمهوری محافظه‌کار (۱۸۴۹-۱۸۵۱)}
+
+انتخابات مجلس قانون‌گذاری در مه ۱۸۴۹ پیروزی «حزب نظم» (ائتلاف سلطنت‌طلبان اورلئانیست و لژیتیمیست) را نشان داد. این مجلس سیاست‌های ارتجاعی پیش گرفت:
+
+\begin{itemize}
+\item \textbf{قانون فالو (مارس ۱۸۵۰):} گسترش نقش کلیسا در آموزش
+\item \textbf{قانون انتخاباتی (مه ۱۸۵۰):} محدودیت رأی‌دهی با شرط اقامت سه‌ساله (حذف ۳ میلیون رأی‌دهنده)
+\item \textbf{محدودیت مطبوعات و تجمعات}
+\end{itemize}
+
+\begin{tikzpicture}[
+every node/.style={font=\small},
+box/.style={rectangle, rounded corners, draw=gris, fill=grisclair,
+	minimum width=3cm, minimum height=1.5cm, align=center}
+]
+% Title
+\node[font=\bfseries\large] at (7,6.5) {بازیگران سیاسی ۱۸۴۹-۱۸۵۱};
+
+% President
+\node[box, draw=violetempire, fill=violetlight, minimum width=4cm] (pres) at (7,4.5) 
+{\textbf{رئیس‌جمهور}\\لویی-ناپلئون\\(بناپارتیست)};
+
+% Assembly factions
+\node[box, draw=orroyaldark, fill=orroyallight] (legit) at (2,2) 
+{\textbf{لژیتیمیست}\\هوادار شاخه ارشد\\بوربون};
+
+\node[box, draw=bleurepublique, fill=bleulight] (orl) at (5.5,2) 
+{\textbf{اورلئانیست}\\هوادار\\اورلئان‌ها};
+
+\node[box, draw=rougerevolution, fill=rougelight] (mont) at (9,2) 
+{\textbf{کوه (مونتانیار)}\\جمهوری‌خواه\\رادیکال};
+
+\node[box, draw=vertnapoleon, fill=vertlight] (rep) at (12.5,2) 
+{\textbf{جمهوری‌خواه}\\میانه‌رو};
+
+% Numbers
+\node[font=\footnotesize] at (2,0.8) {حدود ۲۰۰};
+\node[font=\footnotesize] at (5.5,0.8) {حدود ۲۵۰};
+\node[font=\footnotesize] at (9,0.8) {حدود ۱۸۰};
+\node[font=\footnotesize] at (12.5,0.8) {حدود ۷۰};
+
+% Coalition
+\draw[thick, dashed] (1,0.5) rectangle (7,3.5);
+\node[font=\footnotesize] at (4,3.8) {حزب نظم (اکثریت)};
+
+\end{tikzpicture}
+
+\subsection{بحران ۱۸۵۱ و کودتا}
+
+قانون اساسی اجازه انتخاب مجدد رئیس‌جمهور را نمی‌داد. لویی-ناپلئون از ۱۸۵۰ تلاش کرد مجلس را به تغییر قانون اساسی متقاعد کند، اما اکثریت سه‌چهارم لازم را به دست نیاورد (با ۴۴۶ رأی موافق در برابر ۲۷۸ مخالف، ۱ نوامبر ۱۸۵۱).
+
+\begin{enghelabbox}
+\textbf{کودتای ۲ دسامبر ۱۸۵۱}
+
+در سالگرد تاج‌گذاری ناپلئون اول و پیروزی آستریلیتز:
+
+\begin{enumerate}[nosep]
+	\item \textbf{شب ۱-۲ دسامبر:} بازداشت ۷۸ نماینده مجلس و رهبران سیاسی
+	\item \textbf{۲ دسامبر صبح:} اعلامیه‌های رئیس‌جمهور: انحلال مجلس، برقراری حکومت نظامی
+	\item \textbf{۳-۴ دسامبر:} مقاومت محدود در پاریس، سنگربندی
+	\item \textbf{۴ دسامبر:} سرکوب خونین؛ تیراندازی به جمعیت در بولوارها
+	\item \textbf{۵-۱۰ دسامبر:} قیام‌های پراکنده در شهرستان‌ها، سرکوب
+\end{enumerate}
+
+\textbf{قربانیان:} حدود ۴۰۰ کشته در پاریس، ۲۷,۰۰۰ بازداشت، ۱۰,۰۰۰ تبعید
+\end{enghelabbox}
+
+\begin{naghlbox}
+«این عمل یک جنایت است... پیروزی خواهد یافت اما تاریخ آن را محکوم خواهد کرد.»
+
+\hfill --- \textit{ویکتور هوگو، «ناپلئون کوچک»}
+\end{naghlbox}
+
+\subsection{همه‌پرسی و مشروعیت‌سازی}
+
+لویی-ناپلئون برای مشروعیت‌بخشی به کودتا، همه‌پرسی برگزار کرد:
+
+\begin{table}[htbp]
+\centering
+\caption{نتایج همه‌پرسی دسامبر ۱۸۵۱}
+\label{tab:plebiscite-1851}
+\begin{tabular}{|r|c|c|}
+	\hline
+	\rowcolor{violetmid}
+	\textcolor{white}{\textbf{گزینه}} & \textcolor{white}{\textbf{تعداد}} & \textcolor{white}{\textbf{درصد}} \\
+	\hline
+	آری & ۷,۴۳۹,۰۰۰ & ۹۲٪ \\
+	\hline
+	\rowcolor{violetlight}
+	نه & ۶۴۰,۰۰۰ & ۸٪ \\
+	\hline
+\end{tabular}
+\end{table}
+
+یک سال بعد، همه‌پرسی دیگری برگزار شد (نوامبر ۱۸۵۲) که با ۷.۸ میلیون رأی موافق، امپراتوری را تأیید کرد. در ۲ دسامبر ۱۸۵۲، لویی-ناپلئون به عنوان \textbf{ناپلئون سوم} امپراتور فرانسویان شد.
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{امپراتوری دوم (۱۸۵۲-۱۸۷۰)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{ماهیت رژیم}
+
+امپراتوری دوم ترکیبی بود از عناصر متناقض:
+
+\begin{tikzpicture}[
+every node/.style={font=\small},
+elem/.style={rectangle, rounded corners, draw=violetempire, fill=violetlight,
+	minimum width=3.5cm, minimum height=1.5cm, align=center}
+]
+% Title
+\node[font=\bfseries\large] at (7,7) {عناصر تشکیل‌دهنده امپراتوری دوم};
+
+% Center
+\node[elem, minimum width=5cm, minimum height=2cm, fill=violetmid, text=white] (center) at (7,4) 
+{\textbf{بناپارتیسم}\\ترکیب اقتدارگرایی\\و جلب توده‌ها};
+
+% Elements
+\node[elem] (auth) at (2,6) {اقتدارگرایی\\سانسور، پلیس\\کنترل انتخابات};
+
+\node[elem] (pop) at (12,6) {توده‌گرایی\\رأی همگانی\\همه‌پرسی};
+
+\node[elem] (mod) at (2,1.5) {مدرنیزاسیون\\راه‌آهن، بانک\\بازسازی پاریس};
+
+\node[elem] (glory) at (12,1.5) {شکوه‌طلبی\\جنگ کریمه\\ایتالیا، مکزیک};
+
+% Arrows
+\draw[->, thick, violetempire] (center) -- (auth);
+\draw[->, thick, violetempire] (center) -- (pop);
+\draw[->, thick, violetempire] (center) -- (mod);
+\draw[->, thick, violetempire] (center) -- (glory);
+
+\end{tikzpicture}
+
+\subsection{دوره‌بندی امپراتوری}
+
+\begin{table}[htbp]
+\centering
+\caption{دوره‌های امپراتوری دوم}
+\label{tab:second-empire-periods}
+\begin{tabular}{|c|r|p{7cm}|}
+	\hline
+	\rowcolor{violetmid}
+	\textcolor{white}{\textbf{دوره}} & \textcolor{white}{\textbf{سال‌ها}} & \textcolor{white}{\textbf{ویژگی‌ها}} \\
+	\hline
+	امپراتوری اقتدارگرا & ۱۸۵۲-۱۸۶۰ & سانسور شدید، کنترل انتخابات، رونق اقتصادی \\
+	\hline
+	\rowcolor{violetlight}
+	گذار & ۱۸۶۰-۱۸۶۳ & آزادسازی تدریجی، عفو سیاسی \\
+	\hline
+	امپراتوری لیبرال & ۱۸۶۳-۱۸۷۰ & آزادی نسبی مطبوعات، قدرت بیشتر مجلس \\
+	\hline
+\end{tabular}
+\end{table}
+
+\subsection{تحولات اقتصادی}
+
+امپراتوری دوم دوره‌ای از رشد اقتصادی بی‌سابقه بود:
+
+\subsubsection{انقلاب راه‌آهن}
+
+\begin{table}[htbp]
+\centering
+\caption{توسعه شبکه راه‌آهن فرانسه}
+\label{tab:railway-expansion}
+\begin{tabular}{|c|c|c|}
+	\hline
+	\rowcolor{bleumid}
+	\textcolor{white}{\textbf{سال}} & \textcolor{white}{\textbf{کیلومتر خط}} & \textcolor{white}{\textbf{مسافر (میلیون)}} \\
+	\hline
+	۱۸۵۰ & ۳,۰۰۰ & ۲۰ \\
+	\hline
+	\rowcolor{bleulight}
+	۱۸۵۵ & ۵,۵۰۰ & ۳۵ \\
+	\hline
+	۱۸۶۰ & ۹,۵۰۰ & ۵۵ \\
+	\hline
+	\rowcolor{bleulight}
+	۱۸۶۵ & ۱۳,۵۰۰ & ۸۵ \\
+	\hline
+	۱۸۷۰ & ۱۷,۵۰۰ & ۱۱۰ \\
+	\hline
+\end{tabular}
+\end{table}
+
+\subsubsection{نوسازی پاریس}
+
+بارون اوسمان، استاندار سن، پاریس را طی ۱۷ سال (۱۸۵۳-۱۸۷۰) دگرگون کرد:
+
+\begin{olgoobox}
+\textbf{پروژه اوسمان: بازسازی پاریس}
+
+\begin{itemize}[nosep]
+	\item \textbf{بولوارهای بزرگ:} ۱۳۷ کیلومتر خیابان جدید، پهنای ۲۰-۳۰ متر
+	\item \textbf{تخریب:} ۲۰,۰۰۰ ساختمان قدیمی
+	\item \textbf{ساخت:} ۴۰,۰۰۰ ساختمان جدید با نمای یکسان
+	\item \textbf{فاضلاب:} ۵۰۰ کیلومتر شبکه جدید
+	\item \textbf{آب:} آبرسانی از رودخانه‌های دوردست
+	\item \textbf{پارک‌ها:} بولون، ونسن، بوت‌شومون، مونسو
+	\item \textbf{هزینه:} ۲.۵ میلیارد فرانک
+\end{itemize}
+
+\textbf{نقد:} جابجایی اجباری طبقات فقیر به حومه، تسهیل سرکوب شورش‌ها
+\end{olgoobox}
+
+\subsubsection{نظام بانکی}
+
+\begin{itemize}
+\item \textbf{کردی موبیلیه (۱۸۵۲):} بانک سرمایه‌گذاری صنعتی برادران پریر
+\item \textbf{کردی فونسیه (۱۸۵۲):} وام مسکن
+\item \textbf{کردی لیونه (۱۸۶۳):} بانک تجاری
+\item \textbf{سوسیته ژنرال (۱۸۶۴):} بانک تجاری
+\end{itemize}
+
+\subsection{سیاست خارجی}
+
+ناپلئون سوم خواهان بازگرداندن فرانسه به جایگاه قدرت بزرگ اروپایی بود:
+
+\begin{table}[htbp]
+\centering
+\caption{جنگ‌های امپراتوری دوم}
+\label{tab:second-empire-wars}
+\begin{tabular}{|c|r|p{4cm}|c|}
+	\hline
+	\rowcolor{rougemid}
+	\textcolor{white}{\textbf{سال}} & \textcolor{white}{\textbf{جنگ}} & \textcolor{white}{\textbf{دلیل/هدف}} & \textcolor{white}{\textbf{نتیجه}} \\
+	\hline
+	۱۸۵۴-۵۶ & کریمه & حمایت از عثمانی، اعتبار & پیروزی \\
+	\hline
+	\rowcolor{rougelight}
+	۱۸۵۹ & ایتالیا & حمایت از وحدت ایتالیا & پیروزی (ساووا و نیس) \\
+	\hline
+	۱۸۶۰-۶۱ & سوریه & حمایت از مسیحیان & موفق \\
+	\hline
+	\rowcolor{rougelight}
+	۱۸۶۲-۶۷ & مکزیک & امپراتوری دست‌نشانده & فاجعه \\
+	\hline
+	۱۸۷۰ & پروس & مخالفت با وحدت آلمان & شکست کامل \\
+	\hline
+\end{tabular}
+\end{table}
+
+\subsection{لیبرالیزاسیون دهه ۱۸۶۰}
+
+از ۱۸۶۰، ناپلئون سوم تحت فشارها (مخالفت کاتولیک‌ها با سیاست ایتالیایی، نارضایتی صنعتگران از قرارداد تجارت آزاد با انگلستان، رشد اپوزیسیون) به لیبرالیزاسیون تدریجی روی آورد:
+
+\begin{itemize}
+\item \textbf{۱۸۶۰:} حق مجلس برای پاسخ به نطق تاج
+\item \textbf{۱۸۶۱:} انتشار مذاکرات مجلس در روزنامه‌ها
+\item \textbf{۱۸۶۴:} حق اعتصاب برای کارگران
+\item \textbf{۱۸۶۷:} حق سؤال نمایندگان از وزرا
+\item \textbf{۱۸۶۸:} آزادی نسبی مطبوعات و تجمعات
+\item \textbf{۱۸۷۰:} «امپراتوری پارلمانی»—مسئولیت وزرا در برابر مجلس
+\end{itemize}
+
+\subsection{اپوزیسیون}
+
+\begin{tikzpicture}[
+every node/.style={font=\small},
+opp/.style={rectangle, rounded corners, minimum width=3.5cm, minimum height=2cm, align=center}
+]
+% Title
+\node[font=\bfseries\large] at (7,7) {اپوزیسیون امپراتوری دوم};
+
+% Opposition types
+\node[opp, draw=rougerevolution, fill=rougelight] (rep) at (2,4.5) 
+{\textbf{جمهوری‌خواهان}\\گامبتا، ژول فاور\\فرِی، ژول سیمون};
+
+\node[opp, draw=orroyaldark, fill=orroyallight] (orl) at (7,4.5) 
+{\textbf{اورلئانیست‌ها}\\تی‌یر\\لیبرالیسم محافظه‌کار};
+
+\node[opp, draw=vertnapoleon, fill=vertlight] (soc) at (12,4.5) 
+{\textbf{سوسیالیست‌ها}\\پرودون، بلانکی\\انترناسیونال اول (۱۸۶۴)};
+
+\node[opp, draw=bleurepublique, fill=bleulight] (cath) at (4.5,1.5) 
+{\textbf{کاتولیک‌ها}\\مخالف سیاست ایتالیایی\\مونتالامبر};
+
+\node[opp, draw=gris, fill=grisclair] (legit) at (9.5,1.5) 
+{\textbf{لژیتیمیست‌ها}\\شاخه ارشد بوربون\\اقلیت};
+
+\end{tikzpicture}
+
+\begin{naghlbox}
+«امپراتوری، این صلح است.»
+
+\hfill --- \textit{ناپلئون سوم، ۱۸۵۲}
+
+\vspace{0.5em}
+
+«اگر امپراتوری صلح است، پس این جنگ‌ها چیست؟»
+
+\hfill --- \textit{ژول فاور، ۱۸۶۷}
+\end{naghlbox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{سقوط امپراتوری (۱۸۷۰)}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{بحران جانشینی اسپانیا}
+
+در ژوئیه ۱۸۷۰، کاندیداتوری شاهزاده لئوپولد هوهنتسولرن (از خاندان پروسی) برای تاج اسپانیا، بحرانی دیپلماتیک آفرید. فرانسه این را تهدیدی برای تعادل قدرت می‌دانست.
+
+\begin{tikzpicture}[
+every node/.style={font=\small},
+event/.style={rectangle, rounded corners, draw=rougerevolution, fill=rougelight,
+	minimum width=3.5cm, minimum height=1.5cm, align=center}
+]
+% Title
+\node[font=\bfseries\large] at (7,7) {بحران ژوئیه ۱۸۷۰ و آغاز جنگ};
+
+% Timeline
+\draw[very thick, rougerevolution] (0,5) -- (14,5);
+
+% Events
+\node[event] (e1) at (2,3) {۳ ژوئیه\\کاندیداتوری\\هوهنتسولرن};
+
+\node[event] (e2) at (5.5,3) {۱۲ ژوئیه\\انصراف\\لئوپولد};
+
+\node[event] (e3) at (9,3) {۱۳ ژوئیه\\تلگرام امس\\توهین بیسمارک};
+
+\node[event, fill=rougemid, text=white] (e4) at (12.5,3) {۱۹ ژوئیه\\اعلام جنگ\\فرانسه};
+
+% Dots
+\foreach \x in {2, 5.5, 9, 12.5} {
+	\fill[rougerevolution] (\x,5) circle (0.12);
+}
+
+% Connections
+\draw[->, thick, rougerevolution] (2,5) -- (e1);
+\draw[->, thick, rougerevolution] (5.5,5) -- (e2);
+\draw[->, thick, rougerevolution] (9,5) -- (e3);
+\draw[->, thick, rougerevolution] (12.5,5) -- (e4);
+
+\end{tikzpicture}
+
+\begin{noktebox}
+\textbf{تلگرام امس:}
+
+پادشاه پروس، ویلهلم اول، در امس با سفیر فرانسه ملاقات کرد. بیسمارک گزارش این ملاقات را طوری ویرایش و منتشر کرد که به نظر برسد پادشاه به سفیر فرانسه توهین کرده است. این «تلگرام امس» افکار عمومی فرانسه را برانگیخت و دولت فرانسه اعلام جنگ کرد—دقیقاً آنچه بیسمارک می‌خواست.
+\end{noktebox}
+
+\subsection{فاجعه نظامی}
+
+جنگ فرانسه-پروس (۱۹ ژوئیه - ۱ سپتامبر ۱۸۷۰) یکی از سریع‌ترین شکست‌های تاریخ نظامی بود:
+
+\begin{enghelabbox}
+\textbf{جنگ فرانسه-پروس ۱۸۷۰}
+
+\begin{itemize}[nosep]
+	\item \textbf{۴ اوت:} شکست در ویسامبورگ
+	\item \textbf{۶ اوت:} شکست‌های اشپیشرن و ورت
+	\item \textbf{۱۸ اوت:} محاصره متس (مارشال بازِن)
+	\item \textbf{۱ سپتامبر:} نبرد سدان—ناپلئون سوم تسلیم می‌شود
+	\item \textbf{۲ سپتامبر:} ۱۰۴,۰۰۰ اسیر فرانسوی از جمله امپراتور
+\end{itemize}
+
+\textbf{دلایل شکست:}
+\begin{itemize}[nosep]
+	\item برتری عددی پروس (۱.۲ میلیون در برابر ۵۰۰,۰۰۰)
+	\item برتری سازمانی و لجستیک آلمانی
+	\item توپخانه برتر (توپ کروپ)
+	\item رهبری ضعیف فرانسوی
+\end{itemize}
+\end{enghelabbox}
+
+\subsection{سقوط امپراتوری و اعلام جمهوری}
+
+با رسیدن خبر اسارت ناپلئون سوم به پاریس در ۴ سپتامبر ۱۸۷۰، جمعیت به مجلس هجوم آورد. نمایندگان جمهوری‌خواه به هتل دو ویل رفتند و جمهوری سوم را اعلام کردند. امپراتوری دوم بدون دفاع فروپاشید.
+
+\begin{naghlbox}
+«امپراتوری سقوط کرده است. جمهوری اعلام شده است. یک دولت دفاع ملی تشکیل شده است.»
+
+\hfill --- \textit{اعلامیه ۴ سپتامبر ۱۸۷۰}
+\end{naghlbox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{تحلیل طبقاتی و ایدئولوژیک}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{تحول ساختار طبقاتی}
+
+دوره ۱۸۱۵-۱۸۷۰ شاهد دگرگونی عمیق ساختار طبقاتی فرانسه بود:
+
+\begin{landscape}
+\begin{tikzpicture}[
+	every node/.style={font=\small},
+	box/.style={rectangle, rounded corners, minimum width=3.5cm, minimum height=1.2cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (11,10) {تحول ساختار طبقاتی فرانسه ۱۸۱۵-۱۸۷۰};
+	
+	% 1815 column
+	\node[font=\bfseries] at (3,8.5) {۱۸۱۵};
+	\draw[thick] (1,8) -- (5,8);
+	
+	\node[box, draw=orroyaldark, fill=orroyallight] at (3,7) {اشرافیت زمین‌دار\\(قدرت اجتماعی)};
+	\node[box, draw=bleurepublique, fill=bleulight] at (3,5.5) {بورژوازی\\(ثروت، بدون قدرت سیاسی کامل)};
+	\node[box, draw=vertnapoleon, fill=vertlight] at (3,4) {خرده‌بورژوازی\\پیشه‌وران};
+	\node[box, draw=gris, fill=grisclair] at (3,2.5) {دهقانان\\(اکثریت جمعیت)};
+	\node[box, draw=gris, fill=grisclair] at (3,1) {کارگران شهری\\(اقلیت)};
+	
+	% Arrow
+	\draw[->, ultra thick, rougerevolution] (6,4) -- (8,4);
+	
+	% 1848 column
+	\node[font=\bfseries] at (11,8.5) {۱۸۴۸};
+	\draw[thick] (9,8) -- (13,8);
+	
+	\node[box, draw=orroyaldark, fill=orroyallight] at (11,7) {اشرافیت\\(کاهش قدرت)};
+	\node[box, draw=bleurepublique, fill=bleumid, text=white] at (11,5.5) {بورژوازی بزرگ\\(قدرت سیاسی)};
+	\node[box, draw=vertnapoleon, fill=vertlight] at (11,4) {خرده‌بورژوازی\\(متحد بالقوه)};
+	\node[box, draw=gris, fill=grisclair] at (11,2.5) {دهقانان\\(رأی‌دهنده محافظه‌کار)};
+	\node[box, draw=rougerevolution, fill=rougelight] at (11,1) {پرولتاریای صنعتی\\(طبقه جدید)};
+	
+	% Arrow
+	\draw[->, ultra thick, violetempire] (14,4) -- (16,4);
+	
+	% 1870 column
+	\node[font=\bfseries] at (19,8.5) {۱۸۷۰};
+	\draw[thick] (17,8) -- (21,8);
+	
+	\node[box, draw=orroyaldark, fill=orroyallight] at (19,7) {اشرافیت\\(ادغام با بورژوازی)};
+	\node[box, draw=violetempire, fill=violetmid, text=white] at (19,5.5) {بورژوازی صنعتی-مالی\\(طبقه حاکم)};
+	\node[box, draw=vertnapoleon, fill=vertlight] at (19,4) {طبقه متوسط جدید\\(کارمندان، حرفه‌ای‌ها)};
+	\node[box, draw=gris, fill=grisclair] at (19,2.5) {دهقانان\\(کاهش نسبی)};
+	\node[box, draw=rougerevolution, fill=rougemid, text=white] at (19,1) {طبقه کارگر صنعتی\\(متشکل، آگاه)};
+	
+\end{tikzpicture}
+\end{landscape}
+
+\subsection{نقشه ایدئولوژیک}
+
+\begin{tikzpicture}[
+every node/.style={font=\small}
+]
+% Title
+\node[font=\bfseries\large] at (7,9) {نقشه ایدئولوژیک فرانسه در قرن نوزدهم};
+
+% Axes
+\draw[->, thick] (0,4) -- (14,4) node[right] {آزادی اقتصادی};
+\draw[->, thick] (7,0) -- (7,8) node[above] {برابری};
+
+% Labels
+\node[font=\footnotesize] at (0.5,4.3) {دولت‌گرایی};
+\node[font=\footnotesize] at (13.5,4.3) {بازار آزاد};
+\node[font=\footnotesize, rotate=90] at (6.7,0.5) {سلسله‌مراتب};
+\node[font=\footnotesize, rotate=90] at (6.7,7.5) {برابری};
+
+% Ideologies positioned on the map
+\node[rectangle, rounded corners, draw=orroyaldark, fill=orroyallight, 
+minimum width=2cm, minimum height=0.8cm] at (10,2) {لژیتیمیسم};
+
+\node[rectangle, rounded corners, draw=bleurepublique, fill=bleulight,
+minimum width=2cm, minimum height=0.8cm] at (11,5) {لیبرالیسم اورلئانی};
+
+\node[rectangle, rounded corners, draw=rougerevolution, fill=rougelight,
+minimum width=2cm, minimum height=0.8cm] at (4,6.5) {جمهوری‌خواهی رادیکال};
+
+\node[rectangle, rounded corners, draw=vertnapoleon, fill=vertlight,
+minimum width=2cm, minimum height=0.8cm] at (2,7) {سوسیالیسم};
+
+\node[rectangle, rounded corners, draw=violetempire, fill=violetlight,
+minimum width=2cm, minimum height=0.8cm] at (7,3) {بناپارتیسم};
+
+\node[rectangle, rounded corners, draw=gris, fill=grisclair,
+minimum width=2cm, minimum height=0.8cm] at (3,2) {کاتولیسیسم اجتماعی};
+
+\node[rectangle, rounded corners, draw=bleurepublique, fill=bleumid, text=white,
+minimum width=2cm, minimum height=0.8cm] at (9,6) {جمهوری‌خواهی میانه‌رو};
+
+\end{tikzpicture}
+
+\subsection{جریان‌های فکری اصلی}
+
+\subsubsection{لیبرالیسم}
+
+لیبرالیسم فرانسوی در این دوره چند شاخه داشت:
+
+\begin{table}[htbp]
+\centering
+\caption{شاخه‌های لیبرالیسم فرانسوی}
+\label{tab:liberalism-branches}
+\begin{tabular}{|r|p{4cm}|p{5cm}|}
+	\hline
+	\rowcolor{bleumid}
+	\textcolor{white}{\textbf{شاخه}} & \textcolor{white}{\textbf{نمایندگان}} & \textcolor{white}{\textbf{ویژگی‌ها}} \\
+	\hline
+	لیبرالیسم دکترینر & گیزو، روایه-کولار & حکومت «ظرفیت‌ها»، رأی محدود \\
+	\hline
+	\rowcolor{bleulight}
+	لیبرالیسم کاتولیک & لامنه، مونتالامبر & آشتی کلیسا و آزادی \\
+	\hline
+	لیبرالیسم دموکراتیک & توکویل & آزادی + دموکراسی، نگرانی از استبداد اکثریت \\
+	\hline
+	\rowcolor{bleulight}
+	لیبرالیسم اقتصادی & باستیا، سِی & بازار آزاد، ضد مداخله دولت \\
+	\hline
+\end{tabular}
+\end{table}
+
+\begin{naghlbox}
+«دموکراسی و سوسیالیسم جز در یک کلمه مشترک نیستند: برابری. اما تفاوت را ببینید: دموکراسی برابری در آزادی می‌خواهد، سوسیالیسم برابری در اجبار و بندگی.»
+
+\hfill --- \textit{آلکسی دو توکویل}
+\end{naghlbox}
+
+\subsubsection{سوسیالیسم اولیه}
+
+فرانسه زادگاه سوسیالیسم اولیه (یوتوپیایی) بود:
+
+\begin{table}[htbp]
+\centering
+\caption{متفکران سوسیالیست اولیه فرانسه}
+\label{tab:early-socialists}
+\begin{tabular}{|r|c|p{6cm}|}
+	\hline
+	\rowcolor{vertmid}
+	\textcolor{white}{\textbf{متفکر}} & \textcolor{white}{\textbf{سال‌ها}} & \textcolor{white}{\textbf{ایده‌های کلیدی}} \\
+	\hline
+	سن‌سیمون & ۱۷۶۰-۱۸۲۵ & جامعه صنعتی، تکنوکراسی، «بهره‌کشی انسان از انسان» \\
+	\hline
+	\rowcolor{vertlight}
+	شارل فوریه & ۱۷۷۲-۱۸۳۷ & فالانستر (کمون‌های تعاونی)، هماهنگی اجتماعی \\
+	\hline
+	پرودون & ۱۸۰۹-۱۸۶۵ & «مالکیت دزدی است»، فدرالیسم، موتوئالیسم \\
+	\hline
+	\rowcolor{vertlight}
+	لویی بلان & ۱۸۱۱-۱۸۸۲ & کارگاه‌های اجتماعی، دولت به عنوان سازمان‌دهنده کار \\
+	\hline
+	بلانکی & ۱۸۰۵-۱۸۸۱ & انقلاب از طریق توطئه نخبگان، دیکتاتوری انقلابی \\
+	\hline
+	\rowcolor{vertlight}
+	اتین کابه & ۱۷۸۸-۱۸۵۶ & «ایکاری»، کمونیسم یوتوپیایی \\
+	\hline
+\end{tabular}
+\end{table}
+
+\begin{noktebox}
+\textbf{واژه «سوسیالیسم»:}
+
+این واژه در دهه ۱۸۳۰ در فرانسه رایج شد. پیش از آن، اصطلاحاتی مانند «کمونیسم»، «اشتراکی‌گری»، یا صرفاً «سیستم‌های اجتماعی» به کار می‌رفت. پیر لورو (۱۷۹۷-۱۸۷۱) از نخستین کسانی بود که واژه «سوسیالیسم» را به کار برد.
+\end{noktebox}
+
+\subsubsection{جمهوری‌خواهی}
+
+جمهوری‌خواهی فرانسوی نیز طیفی گسترده داشت:
+
+\begin{itemize}
+\item \textbf{جمهوری‌خواهان میانه‌رو:} لامارتین، ماری—جمهوری لیبرال، حقوق فردی
+\item \textbf{جمهوری‌خواهان رادیکال (کوه):} لدرو-رولَن—رأی همگانی، اصلاحات اجتماعی
+\item \textbf{جمهوری‌خواهان سوسیالیست:} لویی بلان—جمهوری دموکراتیک و اجتماعی
+\item \textbf{نئوژاکوبن‌ها:} بلانکی—انقلاب دائمی، دیکتاتوری پرولتاریا
+\end{itemize}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{نقش طبقه کارگر جدید}
+%──────────────────────────────────────────────────────────────────────────────
+
+\subsection{شکل‌گیری طبقه کارگر}
+
+صنعتی‌شدن فرانسه، هرچند کندتر از انگلستان، طبقه کارگر صنعتی جدیدی به وجود آورد:
+
+\begin{table}[htbp]
+\centering
+\caption{رشد طبقه کارگر صنعتی فرانسه}
+\label{tab:working-class-growth}
+\begin{tabular}{|r|c|c|c|}
+	\hline
+	\rowcolor{rougemid}
+	\textcolor{white}{\textbf{شاخص}} & \textcolor{white}{\textbf{۱۸۳۰}} & \textcolor{white}{\textbf{۱۸۵۰}} & \textcolor{white}{\textbf{۱۸۷۰}} \\
+	\hline
+	کارگران صنعتی (میلیون) & ۲.۵ & ۴.۰ & ۵.۵ \\
+	\hline
+	\rowcolor{rougelight}
+	کارگران معدن & ۳۰,۰۰۰ & ۶۵,۰۰۰ & ۱۵۰,۰۰۰ \\
+	\hline
+	کارگران نساجی & ۸۰۰,۰۰۰ & ۱.۱ میلیون & ۱.۳ میلیون \\
+	\hline
+	\rowcolor{rougelight}
+	کارگران فلزکاری & ۱۵۰,۰۰۰ & ۲۵۰,۰۰۰ & ۴۵۰,۰۰۰ \\
+	\hline
+	ساعت کار روزانه & ۱۴-۱۶ & ۱۲-۱۴ & ۱۱-۱۲ \\
+	\hline
+\end{tabular}
+\end{table}
+
+\subsection{شرایط زندگی و کار}
+
+\begin{enghelabbox}
+\textbf{شرایط طبقه کارگر در میانه قرن نوزدهم}
+
+\begin{itemize}[nosep]
+	\item \textbf{دستمزد:} ۱.۵ تا ۳ فرانک در روز (مرد)، ۰.۷۵ تا ۱.۵ (زن)، ۰.۵ (کودک)
+	\item \textbf{ساعت کار:} ۱۲ تا ۱۵ ساعت، ۶ روز در هفته
+	\item \textbf{کار کودکان:} از ۶-۷ سالگی در کارخانه‌ها (قانون ۱۸۴۱ محدودیت ضعیف)
+	\item \textbf{مسکن:} اتاق‌های تنگ و تاریک، بدون بهداشت
+	\item \textbf{بیماری:} سل، وبا، حصبه شایع
+	\item \textbf{امید به زندگی:} در محلات کارگری ۲۵-۳۰ سال کمتر از مناطق ثروتمند
+\end{itemize}
+\end{enghelabbox}
+
+\begin{naghlbox}
+«در منچستر و لیل، کارگر زودتر می‌میرد، اما زندگی نکرده می‌میرد. در این کارخانه‌های عظیم که ماشین‌ها غرش می‌کنند، انسان به زائده ماشین تبدیل شده است.»
+
+\hfill --- \textit{ویلِرمه، «جدول وضعیت فیزیکی و اخلاقی کارگران»، ۱۸۴۰}
+\end{naghlbox}
+
+\subsection{سازمان‌یابی کارگری}
+
+\begin{tikzpicture}[
+every node/.style={font=\small},
+phase/.style={rectangle, rounded corners, draw=vertnapoleon, fill=vertlight,
+	minimum width=4cm, minimum height=1.8cm, align=center}
+]
+% Title
+\node[font=\bfseries\large] at (7,7.5) {مراحل سازمان‌یابی کارگری در فرانسه};
+
+% Timeline
+\draw[very thick, vertnapoleon] (1,5.5) -- (13,5.5);
+
+% Phases
+\node[phase] (p1) at (2.5,3.5) {\textbf{۱۸۱۵-۱۸۳۰}\\انجمن‌های مخفی\\کمپانیوناژ سنتی};
+
+\node[phase] (p2) at (7,3.5) {\textbf{۱۸۳۰-۱۸۴۸}\\موتوئل‌ها\\انجمن‌های مقاومت\\شورش‌های خودجوش};
+
+\node[phase] (p3) at (11.5,3.5) {\textbf{۱۸۴۸-۱۸۷۰}\\تعاونی‌ها\\اتحادیه‌های صنفی\\انترناسیونال اول};
+
+% Markers
+\fill[vertnapoleon] (2.5,5.5) circle (0.12);
+\fill[vertnapoleon] (7,5.5) circle (0.12);
+\fill[vertnapoleon] (11.5,5.5) circle (0.12);
+
+% Connections
+\draw[->, thick, vertnapoleon] (2.5,5.5) -- (p1);
+\draw[->, thick, vertnapoleon] (7,5.5) -- (p2);
+\draw[->, thick, vertnapoleon] (11.5,5.5) -- (p3);
+
+% Key events
+\node[font=\footnotesize, align=center] at (2.5,1.5) {قانون لو شاپلیه\\(۱۷۹۱) همچنان\\اتحادیه‌ها را ممنوع می‌کرد};
+\node[font=\footnotesize, align=center] at (7,1.5) {شورش‌های لیون\\۱۸۳۱، ۱۸۳۴\\روزهای ژوئن ۱۸۴۸};
+\node[font=\footnotesize, align=center] at (11.5,1.5) {قانون ۱۸۶۴:\\حق اعتصاب\\انترناسیونال (۱۸۶۴)};
+
+\end{tikzpicture}
+
+\subsubsection{انترناسیونال اول}
+
+در سپتامبر ۱۸۶۴، «انجمن بین‌المللی کارگران» (انترناسیونال اول) در لندن تأسیس شد. بخش فرانسوی آن نقش مهمی داشت:
+
+\begin{olgoobox}
+\textbf{انترناسیونال اول و فرانسه}
+
+\begin{itemize}[nosep]
+	\item \textbf{تأسیس:} ۲۸ سپتامبر ۱۸۶۴، لندن
+	\item \textbf{نمایندگان فرانسوی:} تولَن، فریبور، لیموزَن (پرودونیست‌ها)
+	\item \textbf{گرایش غالب در فرانسه:} موتوئالیسم پرودونی (تعاونی‌گرایی)
+	\item \textbf{رشد:} از چند صد عضو (۱۸۶۵) به ده‌ها هزار (۱۸۷۰)
+	\item \textbf{سرکوب:} محاکمات ۱۸۶۸ و ۱۸۷۰، انحلال رسمی
+	\item \textbf{نقش در کمون:} بسیاری از رهبران کمون ۱۸۷۱ عضو انترناسیونال بودند
+\end{itemize}
+\end{olgoobox}
+
+\subsection{آگاهی طبقاتی}
+
+روزهای ژوئن ۱۸۴۸ نقطه عطفی در شکل‌گیری آگاهی طبقاتی کارگران فرانسوی بود. پیش از آن، کارگران اغلب خود را بخشی از «مردم» (\lr{peuple}) یا «ملت» می‌دانستند. پس از ژوئن، شکاف میان کارگران و بورژوازی آشکار شد.
+
+\begin{naghlbox}
+«ژوئن ۱۸۴۸ نخستین جنگ داخلی بزرگ میان پرولتاریا و بورژوازی بود... توهمات فوریه درباره برادری طبقات، که قرار بود در جمهوری به ثمر بنشیند، در خون کارگران پاریس غرق شد.»
+
+\hfill --- \textit{کارل مارکس، «مبارزات طبقاتی در فرانسه»}
+\end{naghlbox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{خط زمانی جامع}
+%──────────────────────────────────────────────────────────────────────────────
+
+\begin{landscape}
+\begin{tikzpicture}[
+	every node/.style={font=\footnotesize},
+	event/.style={rectangle, rounded corners, minimum width=1.5cm, minimum height=0.6cm, align=center}
+	]
+	% Title
+	\node[font=\bfseries\large] at (12,11) {خط زمانی قرن ناآرام (۱۸۱۵-۱۸۷۰)};
+	
+	% Main timeline
+	\draw[ultra thick, black] (0,8) -- (24,8);
+	
+	% Decade markers
+	\foreach \x/\year in {0/۱۸۱۵, 2.7/۱۸۲۰, 5.4/۱۸۲۵, 8.1/۱۸۳۰, 10.8/۱۸۳۵, 13.5/۱۸۴۰, 16.2/۱۸۴۵, 18.9/۱۸۵۰, 21.6/۱۸۵۵, 24/۱۸۶۰} {
+		\draw[thick] (\x,7.7) -- (\x,8.3);
+		\node at (\x,7.3) {\year};
+	}
+	
+	% Regime bars
+	\fill[orroyallight] (0,9) rectangle (8.1,9.5);
+	\node at (4,9.25) {بازگشت بوربون‌ها};
+	\draw[orroyaldark, thick] (0,9) rectangle (8.1,9.5);
+	
+	\fill[bleulight] (8.1,9) rectangle (18,9.5);
+	\node at (13,9.25) {سلطنت ژوئیه};
+	\draw[bleurepublique, thick] (8.1,9) rectangle (18,9.5);
+	
+	\fill[rougelight] (18,9) rectangle (20.5,9.5);
+	\node at (19.25,9.25) {ج.۲};
+	\draw[rougerevolution, thick] (18,9) rectangle (20.5,9.5);
+	
+	\fill[violetlight] (20.5,9) rectangle (24,9.5);
+	\node at (22.25,9.25) {امپ. ۲};
+	\draw[violetempire, thick] (20.5,9) rectangle (24,9.5);
+	
+	% Key events - above line
+	\node[event, draw=orroyaldark, fill=orroyallight] at (0,10.2) {واترلو\\۱۸۱۵};
+	\node[event, draw=rougerevolution, fill=rougelight] at (2.7,10.2) {ترور\\دوک دوبری};
+	\node[event, draw=orroyaldark, fill=orroyallight] at (5.4,10.2) {شارل دهم\\تاج‌گذاری};
+	\node[event, draw=rougerevolution, fill=rougelight] at (8.1,10.2) {انقلاب\\ژوئیه ۱۸۳۰};
+	\node[event, draw=rougerevolution, fill=rougelight] at (10.2,10.2) {شورش\\لیون ۱۸۳۱};
+	\node[event, draw=bleurepublique, fill=bleulight] at (15,10.2) {گیزو\\۱۸۴۰};
+	\node[event, draw=rougerevolution, fill=rougemid, text=white] at (18,10.2) {انقلاب\\۱۸۴۸};
+	\node[event, draw=violetempire, fill=violetlight] at (20.5,10.2) {کودتا\\۱۸۵۱};
+	
+	% Key events - below line
+	\node[event, draw=gris, fill=grisclair] at (1.5,6) {منشور\\۱۸۱۴};
+	\node[event, draw=rougerevolution, fill=rougelight] at (4,6) {ترور\\سفید};
+	\node[event, draw=orroyaldark, fill=orroyallight] at (7,6) {فرمان‌های\\ژوئیه};
+	\node[event, draw=rougerevolution, fill=rougelight] at (10.8,6) {شورش\\۱۸۳۴};
+	\node[event, draw=bleurepublique, fill=bleulight] at (13.5,6) {قانون\\مطبوعات};
+	\node[event, draw=rougerevolution, fill=rougemid, text=white] at (18.5,6) {ژوئن\\۱۸۴۸};
+	\node[event, draw=violetempire, fill=violetmid, text=white] at (21,6) {امپراتوری\\۱۸۵۲};
+	
+	% Connections
+	\foreach \x in {0, 2.7, 5.4, 8.1, 10.2, 15, 18, 20.5} {
+		\draw[thick] (\x,8) -- (\x,9.7);
+	}
+	\foreach \x in {1.5, 4, 7, 10.8, 13.5, 18.5, 21} {
+		\draw[thick] (\x,8) -- (\x,6.5);
+	}
+	
+\end{tikzpicture}
+
+\vspace{1cm}
+
+% Second part of timeline (1855-1870)
+\begin{tikzpicture}[
+	every node/.style={font=\footnotesize},
+	event/.style={rectangle, rounded corners, minimum width=1.5cm, minimum height=0.6cm, align=center}
+	]
+	% Main timeline
+	\draw[ultra thick, black] (0,8) -- (24,8);
+	
+	% Year markers
+	\foreach \x/\year in {0/۱۸۵۵, 4/۱۸۵۸, 8/۱۸۶۱, 12/۱۸۶۴, 16/۱۸۶۷, 20/۱۸۷۰, 24/۱۸۷۱} {
+		\draw[thick] (\x,7.7) -- (\x,8.3);
+		\node at (\x,7.3) {\year};
+	}
+	
+	% Regime bar
+	\fill[violetlight] (0,9) rectangle (20,9.5);
+	\node at (10,9.25) {امپراتوری دوم};
+	\draw[violetempire, thick] (0,9) rectangle (20,9.5);
+	
+	\fill[rougelight] (20,9) rectangle (24,9.5);
+	\node at (22,9.25) {ج.۳};
+	\draw[rougerevolution, thick] (20,9) rectangle (24,9.5);
+	
+	% Events above
+	\node[event, draw=rougerevolution, fill=rougelight] at (1,10.2) {جنگ کریمه\\۱۸۵۴-۵۶};
+	\node[event, draw=violetempire, fill=violetlight] at (5.5,10.2) {جنگ\\ایتالیا ۱۸۵۹};
+	\node[event, draw=bleurepublique, fill=bleulight] at (10,10.2) {قرارداد تجارت\\آزاد ۱۸۶۰};
+	\node[event, draw=vertnapoleon, fill=vertlight] at (12,10.2) {انترناسیونال\\۱۸۶۴};
+	\node[event, draw=vertnapoleon, fill=vertlight] at (13.5,10.2) {حق\\اعتصاب};
+	\node[event, draw=rougerevolution, fill=rougemid, text=white] at (20,10.2) {سدان\\۱۸۷۰};
+	\node[event, draw=rougerevolution, fill=rougemid, text=white] at (23,10.2) {کمون\\۱۸۷۱};
+	
+	% Events below
+	\node[event, draw=bleurepublique, fill=bleulight] at (3,6) {نوسازی\\پاریس};
+	\node[event, draw=rougerevolution, fill=rougelight] at (7,6) {فاجعه\\مکزیک};
+	\node[event, draw=bleurepublique, fill=bleulight] at (15,6) {آزادی\\مطبوعات ۱۸۶۸};
+	\node[event, draw=violetempire, fill=violetlight] at (18,6) {امپراتوری\\پارلمانی ۱۸۷۰};
+	\node[event, draw=rougerevolution, fill=rougelight] at (21.5,6) {محاصره\\پاریس};
+	
+	% Connections
+	\foreach \x in {1, 5.5, 10, 12, 13.5, 20, 23} {
+		\draw[thick] (\x,8) -- (\x,9.7);
+	}
+	\foreach \x in {3, 7, 15, 18, 21.5} {
+		\draw[thick] (\x,8) -- (\x,6.5);
+	}
+	
+\end{tikzpicture}
+\end{landscape}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{نقشه مفهومی: چرخه‌های انقلاب}
+%──────────────────────────────────────────────────────────────────────────────
+
+\begin{tikzpicture}[
+every node/.style={font=\small},
+cycle/.style={circle, draw=rougerevolution, fill=rougelight, 
+	minimum size=2.5cm, align=center},
+factor/.style={rectangle, rounded corners, draw=gris, fill=grisclair,
+	minimum width=2cm, minimum height=0.8cm, align=center}
+]
+% Title
+\node[font=\bfseries\large] at (7,9) {چرخه انقلاب-ارتجاع در فرانسه};
+
+% Central cycle
+\draw[->, ultra thick, rougerevolution, rotate around={0:(7,4.5)}] 
+(7,4.5) ++(0:3) arc (0:330:3);
+
+% Revolution nodes
+\node[cycle] (r1) at (4,7) {۱۸۳۰\\انقلاب\\ژوئیه};
+\node[cycle] (r2) at (10,7) {۱۸۴۸\\انقلاب\\فوریه};
+\node[cycle] (r3) at (10,2) {۱۸۷۰\\سقوط\\امپراتوری};
+\node[cycle, fill=grisclair, draw=gris] (r4) at (4,2) {بازگشت به\\نظم؟};
+
+% Arrows between cycles
+\draw[->, very thick, bleurepublique] (r1) -- (r2) 
+node[midway, above] {ناکامی اصلاحات};
+\draw[->, very thick, violetempire] (r2) -- (r3) 
+node[midway, right] {اقتدارگرایی};
+\draw[->, very thick, rougerevolution] (r3) -- (r4) 
+node[midway, below] {شکست نظامی};
+\draw[->, very thick, orroyaldark] (r4) -- (r1) 
+node[midway, left] {محافظه‌کاری};
+
+% Factors
+\node[factor] at (7,5.5) {بحران اقتصادی};
+\node[factor] at (7,3.5) {انسداد سیاسی};
+
+% Legend
+\node[align=right, font=\footnotesize] at (1,0) {
+	\textbf{الگوی تکرارشونده:}\\
+	۱. رژیم جدید با وعده‌ها\\
+	۲. تثبیت و محافظه‌کاری\\
+	۳. بحران و انسداد\\
+	۴. انقلاب یا سقوط
+};
+
+\end{tikzpicture}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{الگوها و درس‌ها}
+%──────────────────────────────────────────────────────────────────────────────
+
+\begin{olgoobox}
+\textbf{الگوهای کلیدی قرن ناآرام}
+
+\begin{enumerate}
+	\item \textbf{الگوی «انقلاب ربوده‌شده»:}
+	\begin{itemize}[nosep]
+		\item ۱۸۳۰: کارگران و پیشه‌وران می‌جنگند، بورژوازی قدرت را می‌گیرد
+		\item ۱۸۴۸: مردم جمهوری می‌خواهند، بناپارتیسم پیروز می‌شود
+		\item نتیجه: شکاف میان انقلابیون خیابانی و بهره‌برندگان سیاسی
+	\end{itemize}
+	
+	\item \textbf{الگوی «میانه‌روی ناپایدار»:}
+	\begin{itemize}[nosep]
+		\item هر رژیم میانه‌رو (لویی هجدهم، لویی-فیلیپ، جمهوری دوم) تحت فشار افراط‌ها سقوط می‌کند
+		\item میانه‌روی بدون پایگاه اجتماعی محکم، ناپایدار است
+	\end{itemize}
+	
+	\item \textbf{الگوی «رأی همگانی محافظه‌کار»:}
+	\begin{itemize}[nosep]
+		\item رأی همگانی لزوماً به نتایج رادیکال نمی‌انجامد
+		\item روستاییان (اکثریت) تمایل محافظه‌کارانه دارند
+		\item ناپلئون سوم با رأی دهقانان به قدرت رسید
+	\end{itemize}
+	
+	\item \textbf{الگوی «مسئله اجتماعی حل‌نشده»:}
+	\begin{itemize}[nosep]
+		\item هر رژیم با مسئله فقر و نابرابری مواجه است
+		\item سرکوب (ژوئن ۱۸۴۸) راه‌حل پایدار نیست
+		\item مسئله به نسل بعد منتقل می‌شود
+	\end{itemize}
+\end{enumerate}
+\end{olgoobox}
+
+\begin{naghlbox}
+«تاریخ فرانسه از ۱۷۸۹ تا امروز، تاریخ جستجوی بی‌پایان برای شکلی از حکومت است که هم آزادی را تضمین کند و هم نظم را، هم برابری را و هم مالکیت را.»
+
+\hfill --- \textit{فرانسوا فوره}
+\end{naghlbox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section{جمع‌بندی فصل}
+%──────────────────────────────────────────────────────────────────────────────
+
+\begin{kholasebox}
+\textbf{جمع‌بندی: قرن ناآرام (۱۸۱۵-۱۸۷۰)}
+
+\textbf{رژیم‌ها:}
+\begin{itemize}[nosep]
+	\item بازگشت بوربون (۱۸۱۴-۱۸۳۰): تلاش ناموفق برای سازش سلطنت و انقلاب
+	\item سلطنت ژوئیه (۱۸۳۰-۱۸۴۸): سلطنت بورژوایی، امتناع از اصلاحات
+	\item جمهوری دوم (۱۸۴۸-۱۸۵۲): آزمایش کوتاه دموکراسی، شکست
+	\item امپراتوری دوم (۱۸۵۲-۱۸۷۰): اقتدارگرایی + مدرنیزاسیون، سقوط در جنگ
+\end{itemize}
+
+\textbf{انقلاب‌ها:}
+\begin{itemize}[nosep]
+	\item ۱۸۳۰: سه روز شکوهمند — علیه ارتجاع شارل دهم
+	\item ۱۸۴۸ (فوریه): علیه انسداد سیاسی لویی-فیلیپ
+	\item ۱۸۴۸ (ژوئن): جنگ طبقاتی — سرکوب کارگران
+	\item ۱۸۷۰: سقوط بدون انقلاب — شکست نظامی
+\end{itemize}
+
+\textbf{تحولات بنیادین:}
+\begin{itemize}[nosep]
+	\item صنعتی‌شدن و پیدایش طبقه کارگر
+	\item گسترش تدریجی حق رأی تا رأی همگانی مردان
+	\item شکل‌گیری ایدئولوژی‌های مدرن (لیبرالیسم، سوسیالیسم، ناسیونالیسم)
+	\item ظهور «مسئله اجتماعی» به عنوان چالش اصلی سیاست
+\end{itemize}
+
+\textbf{میراث:}
+\begin{itemize}[nosep]
+	\item رأی همگانی مردان به عنوان اصل پذیرفته‌شده
+	\item جمهوری‌خواهی به عنوان گرایش غالب (پس از ۱۸۷۰)
+	\item جنبش کارگری سازمان‌یافته
+	\item خاطره ۱۸۴۸ و ۱۸۷۱ در جنبش‌های چپ
+\end{itemize}
+\end{kholasebox}
+
+%──────────────────────────────────────────────────────────────────────────────
+\section*{منابع فصل}
+%──────────────────────────────────────────────────────────────────────────────
+\addcontentsline{toc}{section}{منابع فصل}
+
+\begin{itemize}[nosep]
+\item Agulhon, Maurice. \textit{1848 ou l'apprentissage de la République}. Paris: Seuil, 1973.
+\item Aprile, Sylvie. \textit{La IIe République et le Second Empire}. Paris: Pygmalion, 2000.
+\item Fortescue, William. \textit{France and 1848: The End of Monarchy}. London: Routledge, 2005.
+\item Furet, François. \textit{Revolutionary France, 1770-1880}. Oxford: Blackwell, 1992.
+\item Magraw, Roger. \textit{A History of the French Working Class}. 2 vols. Oxford: Blackwell, 1992.
+\item Pinkney, David. \textit{The French Revolution of 1830}. Princeton: Princeton UP, 1972.
+\item Price, Roger. \textit{The French Second Empire: An Anatomy of Political Power}. Cambridge: Cambridge UP, 2001.
+\item Sewell, William H. \textit{Work and Revolution in France}. Cambridge: Cambridge UP, 1980.
+\item Tocqueville, Alexis de. \textit{Recollections: The French Revolution of 1848}. Trans. George Lawrence. New York: Doubleday, 1970.
+\item Tombs, Robert. \textit{France 1814-1914}. London: Longman, 1996.
+\end{itemize}
+
+%══════════════════════════════════════════════════════════════════════════════
+% پایان فصل ۵
+%══════════════════════════════════════════════════════════════════════════════
+
+\end{document}
