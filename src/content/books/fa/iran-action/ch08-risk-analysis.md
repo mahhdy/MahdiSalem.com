@@ -9,6 +9,7 @@ chapterNumber: 8
 order: 8
 readingTime: 5
 interface: philosophy-other
+show-header: false
 ---
 
 # تحلیل ریسک: چه می‌تواند اشتباه شود؟

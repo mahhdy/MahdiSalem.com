@@ -22,6 +22,7 @@ interface Props {
   rawContent?: string;
   slug?: string;
   draft?: boolean;
+  showHeader?: boolean;
 }
 
 const {
@@ -37,6 +38,7 @@ const {
   rawContent = '',
   slug = '',
   draft = false,
+  showHeader = false,
 } = Astro.props;
 
 const dateFormatter = new Intl.DateTimeFormat(lang === 'fa' ? 'fa-IR' : 'en-US', {
@@ -67,7 +69,9 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
         </div>
       )}
 
-      <h1 class="text-3xl md:text-4xl font-bold mb-4">{title}</h1>
+      {showHeader && (
+        <h1 class="text-3xl md:text-4xl font-bold mb-4">{title}</h1>
+      )}
 
       <div class="flex flex-wrap items-center gap-4 text-sm text-text-muted dark:text-text-dark-muted">
         <span>{author}</span>

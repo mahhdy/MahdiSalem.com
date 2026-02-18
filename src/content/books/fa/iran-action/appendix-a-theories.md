@@ -10,6 +10,7 @@ appendixLetter: A
 order: 1001
 readingTime: 5
 interface: descriptive-politics
+show-header: false
 ---
 
 # نظریه‌های انقلاب و گذار دموکراتیک {#app:theories}

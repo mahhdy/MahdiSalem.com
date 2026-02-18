@@ -29,6 +29,7 @@ const slug = article.id.replace(/^en\//, '');
   coverImage={article.data.coverImage}
   rawContent={article.body ?? ''}
   slug={slug}
-  draft={article.data.draft}>
+  draft={article.data.draft}
+  showHeader={article.data['show-header']}>
   <Content />
 </ArticleLayout>

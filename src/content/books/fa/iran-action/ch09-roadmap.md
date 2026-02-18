@@ -9,6 +9,7 @@ chapterNumber: 9
 order: 9
 readingTime: 5
 interface: descriptive-politics
+show-header: false
 ---
 
 # نقشه راه عملیاتی: از امروز تا روز گذار

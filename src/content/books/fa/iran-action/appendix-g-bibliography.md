@@ -10,5 +10,6 @@ appendixLetter: G
 order: 1007
 readingTime: 5
 interface: philosophy-other
+show-header: false
 ---
 

@@ -31,11 +31,13 @@ git push origin main
 
 ### 3. Add Content
 
-- **Articles**: `src/content/articles/fa/` or `en/` — add `.md` files with frontmatter (title, description, lang, publishDate, categories, tags, interface, draft)
-- **Books**: `src/content/books/fa/` or `en/` — folder per book, `index.md` for overview, chapters as `.md` files, `pdfUrl` for PDF, `showPdfViewer: true` for viewer
+- **Articles**: `src/content/articles/fa/` or `en/` — add `.md` files with frontmatter (title, description, lang, publishDate, categories, tags, interface, draft, show-header)
+- **Books**: `src/content/books/fa/` or `en/` — folder per book, `index.md` for overview, chapters as `.md` files, `pdfUrl` for PDF, `showPdfViewer: true` for viewer, `show-header: false` (default) to hide redundant H1
 - **Statements**: `src/content/statements/fa/` or `en/` — add `.md` files
 - **Wiki**: `src/content/wiki/fa/` or `en/` — add `.md` files with section/order
 - **Multimedia**: `src/content/multimedia/fa/` or `en/` — add `.md` files (type: video/audio/podcast, mediaUrl, thumbnailUrl, duration, platform, podcastName, episodeNumber, seasonNumber)
+
+**Note on `show-header`**: By default, article and book content templates hide the first H1 heading to avoid redundancy (since the layout already shows the title). Set `show-header: true` in frontmatter if you want to display it.
 
 ### 4. Categorization & Tagging
 
@@ -68,6 +70,9 @@ pandoc book.tex -o book.md --wrap=none --toc
 
 - **Bilingual (FA/EN)**, RTL/LTR, mobile-first, dark/light theme
 - **Category Taxonomy**: 25+ categories, SVG icons, parent-child, interface field
+  - **Category Cards**: Clickable with hover tooltips, show top 5 items per category
+  - **Query Filtering**: URL-based filtering via `?interface=<slug>` across all list pages
+  - **Filter Reset**: "Show All" button removes active filters
 - **Tagging System**: Tag support for all content
 - **Multimedia**: Video, audio, podcast, player components
 - **Telegram Feed**: Cloudflare Worker, homepage integration
@@ -75,6 +80,9 @@ pandoc book.tex -o book.md --wrap=none --toc
 - **Wiki & Statements**: Collaborative editing, GitHub Issues
 - **PDF Viewer**: In-page PDF, tab interface for books
 - **SEO & Privacy**: Open Graph, Twitter Cards, no cookies by default
+- **Content Controls**: 
+  - `show-header: false` (default) hides redundant first H1 in articles/books
+  - `draft: true` marks content as unpublished
 
 ## Known Issues & Lessons Learned
 

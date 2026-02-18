@@ -9,6 +9,7 @@ chapterNumber: 11
 order: 11
 readingTime: 5
 interface: philosophy-other
+show-header: false
 ---
 
 # خلاصه مدیریتی {#خلاصه-مدیریتی .unnumbered}

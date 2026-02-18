@@ -10,5 +10,6 @@ appendixLetter: D
 order: 1004
 readingTime: 5
 interface: philosophy-other
+show-header: false
 ---
 

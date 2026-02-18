@@ -9,6 +9,7 @@ chapterNumber: 4
 order: 4
 readingTime: 5
 interface: descriptive-politics
+show-header: false
 ---
 
 # سناریوهای گذار: پنج مسیر برای تغییر

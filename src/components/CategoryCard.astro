@@ -3,7 +3,7 @@
  * CategoryCard Component
  *
  * Displays a category with icon, item count, and top items.
- * Clicking the card filters the list view by category.
+ * Clicking the card filters the list view by interface query.
  */
 
 import type { Category } from '../data/categories';
@@ -21,7 +21,7 @@ const { category, items, lang, contentType } = Astro.props;
 const categoryName = lang === 'fa' ? category.nameFa : category.nameEn;
 const categoryDescription = lang === 'fa' ? category.descriptionFa : category.descriptionEn;
 
-// Get top 3 most recent or popular items
+// Get top 5 most recent items
 const topItems = items
   .sort((a, b) => {
     // Sort by date (most recent first)
@@ -29,11 +29,11 @@ const topItems = items
     const dateB = new Date(b.data.publishDate || b.data.updatedDate || 0);
     return dateB.getTime() - dateA.getTime();
   })
-  .slice(0, 3);
+  .slice(0, 5);
 
-// Build filter URL - link to list view with category filter hash
+// Build filter URL - query based filtering
 const baseUrl = lang === 'fa' ? `/${contentType}` : `/en/${contentType}`;
-const filterUrl = `${baseUrl}#list&category=${encodeURIComponent(category.slug)}`;
+const filterUrl = `${baseUrl}?view=list&interface=${encodeURIComponent(category.slug)}`;
 
 // Helper to get item URL
 function getItemUrl(item: any) {
@@ -46,6 +46,8 @@ function getItemUrl(item: any) {
   class="category-card group relative p-5 rounded-xl border-2 border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-all duration-200 hover:shadow-lg cursor-pointer"
   data-category={category.slug}
   data-filter-url={filterUrl}
+  role="button"
+  tabindex="0"
 >
   <!-- Header with Icon and Count -->
   <div class="flex items-start justify-between mb-3">
@@ -61,18 +63,18 @@ function getItemUrl(item: any) {
           />
         </div>
 
-        <!-- Category Name -->
-        <h3 class="text-base font-bold text-text dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors">
-          {categoryName}
-        </h3>
+        <!-- Category Name + Tooltip -->
+        <div class="relative category-title-wrap">
+          <h3 class="text-base font-bold text-text dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors">
+            {categoryName}
+          </h3>
+          {categoryDescription && (
+            <div class="category-tooltip absolute z-20 bottom-full mb-2 left-0 hidden w-64 rounded-lg border border-border dark:border-border-dark bg-surface dark:bg-surface-dark p-2 text-xs text-text-muted dark:text-text-dark-muted shadow-lg">
+              {categoryDescription}
+            </div>
+          )}
+        </div>
       </div>
-
-      <!-- Category Description -->
-      {categoryDescription && (
-        <p class="text-xs text-text-muted dark:text-text-dark-muted line-clamp-1 mb-2">
-          {categoryDescription}
-        </p>
-      )}
     </div>
 
     <!-- Item Count Badge -->
@@ -85,12 +87,13 @@ function getItemUrl(item: any) {
 
   <!-- Top Items List - Compact -->
   {topItems.length > 0 && (
-    <div class="space-y-1 pt-2 border-t border-border dark:border-border-dark mt-3">
+    <div class="space-y-1 pt-2 border-t border-border dark:border-border-dark mt-3 max-h-32 overflow-y-auto pe-1">
       {topItems.map((item) => (
         <a
           href={getItemUrl(item)}
           class="item-link flex items-start gap-1 text-xs hover:translate-x-0.5 transition-transform no-underline py-0.5"
           data-item-link="true"
+          title={item.data.description || item.data.title}
         >
           <svg class="w-2.5 h-2.5 flex-shrink-0 mt-0.5 text-primary dark:text-primary-light opacity-60" fill="currentColor" viewBox="0 0 24 24">
             <path d="M8 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
@@ -119,7 +122,31 @@ function getItemUrl(item: any) {
 </div>
 
 <script>
-  // No special click handling needed - anchor tag handles navigation naturally
+  document.addEventListener('click', (event) => {
+    const target = event.target as HTMLElement;
+    const card = target.closest('.category-card[data-filter-url]') as HTMLElement | null;
+    if (!card) return;
+
+    // Let normal item/view-all anchors work naturally
+    if (target.closest('a')) return;
+
+    const url = card.dataset.filterUrl;
+    if (url) {
+      window.location.href = url;
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    const target = event.target as HTMLElement;
+    if (!target.classList.contains('category-card')) return;
+    if (event.key !== 'Enter' && event.key !== ' ') return;
+
+    event.preventDefault();
+    const url = target.dataset.filterUrl;
+    if (url) {
+      window.location.href = url;
+    }
+  });
 </script>
 
 <style>
@@ -136,5 +163,9 @@ function getItemUrl(item: any) {
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+
+  .category-title-wrap:hover .category-tooltip {
+    display: block;
   }
 </style>

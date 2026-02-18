@@ -9,6 +9,7 @@ chapterNumber: 5
 order: 5
 readingTime: 5
 interface: philosophy-other
+show-header: false
 ---
 
 # بُعد بین‌المللی: بازیگران، منافع و امکانات

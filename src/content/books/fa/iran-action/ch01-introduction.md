@@ -9,6 +9,7 @@ chapterNumber: 1
 order: 1
 readingTime: 5
 interface: philosophy-other
+show-header: false
 ---
 
 # مقدمه: چرا این راهنما و چرا اکنون؟

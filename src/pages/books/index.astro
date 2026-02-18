@@ -3,10 +3,13 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import CategoryTabView from '../../components/CategoryTabView.astro';
 import { t, stripLangPrefix } from '../../i18n';
 import { getCollection } from 'astro:content';
+import { getCategoryName, getCategoriesByContentType } from '../../data/categories';
 import stats from '../../data/stats.json';
 import ratings from '../../data/ratings.json';
 
 const lang = 'fa';
+const statsVisits = stats.visits as Record<string, number>;
+const ratingsMap = ratings as Record<string, { average?: number; count?: number }>;
 
 const allBooks = await getCollection('books', (entry) => {
   return entry.data.lang === 'fa' && entry.id.split('/').length === 2;
@@ -17,11 +20,15 @@ const books = allBooks.map(b => {
   const path = b.id.replace(/\.md$/, '').replace(/^content\//, '');
   return {
     ...b,
-    visits: stats.visits[path] || 0,
-    rating: ratings[path]?.average || 0,
-    votes: ratings[path]?.count || 0
+    visits: statsVisits[path] || 0,
+    rating: ratingsMap[path]?.average || 0,
+    votes: ratingsMap[path]?.count || 0
   };
 }).sort((a, b) => a.data.order - b.data.order);
+
+const allInterfaces = [...new Set(books.map((b) => b.data.interface).filter((value): value is string => Boolean(value)))];
+const relevantCategories = getCategoriesByContentType('books');
+const availableInterfaces = allInterfaces.filter((iface) => relevantCategories.some((cat) => cat.slug === iface));
 ---
 
 <BaseLayout title={t('nav.books', lang)}>
@@ -52,6 +59,19 @@ const books = allBooks.map(b => {
       </div>
     </div>
 
+    {availableInterfaces.length > 0 && (
+      <div class="flex flex-wrap gap-2 mb-8">
+        <button class="category-filter active text-sm px-3 py-1.5 rounded-full border border-primary text-primary dark:border-primary-light dark:text-primary-light font-medium" data-category="all">
+          همه
+        </button>
+        {availableInterfaces.map((slug) => (
+          <button class="category-filter text-sm px-3 py-1.5 rounded-full border border-border dark:border-border-dark text-text-muted dark:text-text-dark-muted hover:border-primary dark:hover:border-primary-light hover:text-primary dark:hover:text-primary-light transition-colors" data-category={slug}>
+            {getCategoryName(slug, lang)}
+          </button>
+        ))}
+      </div>
+    )}
+
     {books.length > 0 ? (
       <div id="books-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {books.map((book) => (
@@ -60,6 +80,7 @@ const books = allBooks.map(b => {
             class={`book-card group block rounded-xl border ${book.data.draft ? 'border-dashed border-amber-300 dark:border-amber-700 bg-amber-50 dark:bg-amber-900/10' : 'border-border dark:border-border-dark'} hover:border-blue-500 dark:hover:border-blue-400 transition-colors no-underline overflow-hidden`}
             data-title={book.data.title.toLowerCase()}
             data-desc={book.data.description.toLowerCase()}
+            data-interface={book.data.interface || 'unknown'}
             data-visits={book.visits}
             data-rating={book.rating}
             data-order={book.data.order}
@@ -105,19 +126,39 @@ const books = allBooks.map(b => {
     )}
 
 <script>
+  const filters = document.querySelectorAll('.category-filter');
   const searchInput = document.getElementById('search-input') as HTMLInputElement;
   const sortSelect = document.getElementById('sort-select') as HTMLSelectElement;
   const container = document.getElementById('books-container');
   const cards = Array.from(document.querySelectorAll('.book-card')) as HTMLElement[];
 
+  const params = new URLSearchParams(window.location.search);
+  const initialInterface = params.get('interface') || 'all';
+
+  let activeCategory = 'all';
   let searchTerm = '';
+
+  function syncUrl() {
+    const url = new URL(window.location.href);
+    url.searchParams.set('view', 'list');
+
+    if (activeCategory === 'all') {
+      url.searchParams.delete('interface');
+    } else {
+      url.searchParams.set('interface', activeCategory);
+    }
+
+    window.history.replaceState(null, '', `${url.pathname}${url.search}`);
+  }
 
   function update() {
     // 1. Filter
     cards.forEach((card) => {
+      const iface = card.getAttribute('data-interface') ?? '';
       const title = card.getAttribute('data-title') ?? '';
       const desc = card.getAttribute('data-desc') ?? '';
-      card.style.display = (title.includes(searchTerm) || desc.includes(searchTerm)) ? '' : 'none';
+      const categoryMatch = activeCategory === 'all' || iface === activeCategory;
+      card.style.display = (categoryMatch && (title.includes(searchTerm) || desc.includes(searchTerm))) ? '' : 'none';
     });
 
     // 2. Sort
@@ -134,12 +175,29 @@ const books = allBooks.map(b => {
     visibleCards.forEach(card => container?.appendChild(card));
   }
 
+  filters.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      activeCategory = btn.getAttribute('data-category') ?? 'all';
+      filters.forEach(f => f.classList.remove('active', 'border-primary', 'text-primary', 'dark:border-primary-light', 'dark:text-primary-light', 'font-medium'));
+      btn.classList.add('active', 'border-primary', 'text-primary', 'dark:border-primary-light', 'dark:text-primary-light', 'font-medium');
+      syncUrl();
+      update();
+    });
+  });
+
   searchInput?.addEventListener('input', (e) => {
     searchTerm = (e.target as HTMLInputElement).value.toLowerCase();
     update();
   });
 
   sortSelect?.addEventListener('change', update);
+
+  const initialButton = document.querySelector(`.category-filter[data-category="${initialInterface}"]`) as HTMLButtonElement | null;
+  if (initialButton) {
+    initialButton.click();
+  } else {
+    update();
+  }
 </script>
 
 

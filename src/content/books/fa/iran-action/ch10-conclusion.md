@@ -9,6 +9,7 @@ chapterNumber: 10
 order: 10
 readingTime: 5
 interface: philosophy-other
+show-header: false
 ---
 
 # جمع‌بندی: به‌سوی آینده {#ch:conclusion}

@@ -144,6 +144,7 @@ const chapterList = chapters.map((c: any) => {
       chapterNumber: nextChapter.data.chapterNumber ?? 0 
     } : undefined}
     draft={entry.data.draft}
+    showHeader={entry.data['show-header']}
   >
     <Content />
   </BookLayout>

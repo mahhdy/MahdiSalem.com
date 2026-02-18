@@ -9,6 +9,7 @@ chapterNumber: 6
 order: 6
 readingTime: 5
 interface: philosophy-other
+show-header: false
 ---
 
 # تقویت اپوزیسیون: چگونه قوی‌تر شویم؟

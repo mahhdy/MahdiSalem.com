@@ -8,6 +8,8 @@ import stats from '../../data/stats.json';
 import ratings from '../../data/ratings.json';
 
 const lang = 'fa';
+const statsVisits = stats.visits as Record<string, number>;
+const ratingsMap = ratings as Record<string, { average?: number; count?: number }>;
 
 const allArticles = await getCollection('articles', ({ data }) => data.lang === 'fa');
 
@@ -16,14 +18,14 @@ const articles = allArticles.map(a => {
   const path = a.id.replace(/\.md$/, '').replace(/^content\//, '');
   return {
     ...a,
-    visits: stats.visits[path] || 0,
-    rating: ratings[path]?.average || 0,
-    votes: ratings[path]?.count || 0
+    visits: statsVisits[path] || 0,
+    rating: ratingsMap[path]?.average || 0,
+    votes: ratingsMap[path]?.count || 0
   };
 }).sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
 
 // Get all interface values from articles
-const allInterfaces = [...new Set(articles.map((a) => a.data.interface).filter(Boolean))];
+const allInterfaces = [...new Set(articles.map((a) => a.data.interface).filter((value): value is string => Boolean(value)))];
 const relevantCategories = getCategoriesByContentType('articles');
 const availableInterfaces = allInterfaces.filter(iface => relevantCategories.some(cat => cat.slug === iface));
 
@@ -137,8 +139,24 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
   const container = document.getElementById('articles-container');
   const cards = Array.from(document.querySelectorAll('.article-card')) as HTMLElement[];
 
+  const params = new URLSearchParams(window.location.search);
+  const initialInterface = params.get('interface') || 'all';
+
   let activeCategory = 'all';
   let searchTerm = '';
+
+  function syncUrl() {
+    const url = new URL(window.location.href);
+    url.searchParams.set('view', 'list');
+
+    if (activeCategory === 'all') {
+      url.searchParams.delete('interface');
+    } else {
+      url.searchParams.set('interface', activeCategory);
+    }
+
+    window.history.replaceState(null, '', `${url.pathname}${url.search}`);
+  }
 
   function update() {
     // 1. Filter
@@ -173,6 +191,7 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
       activeCategory = btn.getAttribute('data-category') ?? 'all';
       filters.forEach(f => f.classList.remove('active', 'border-primary', 'text-primary', 'dark:border-primary-light', 'dark:text-primary-light', 'font-medium'));
       btn.classList.add('active', 'border-primary', 'text-primary', 'dark:border-primary-light', 'dark:text-primary-light', 'font-medium');
+      syncUrl();
       update();
     });
   });
@@ -183,4 +202,11 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
   });
 
   sortSelect?.addEventListener('change', update);
+
+  const initialButton = document.querySelector(`.category-filter[data-category="${initialInterface}"]`) as HTMLButtonElement | null;
+  if (initialButton) {
+    initialButton.click();
+  } else {
+    update();
+  }
 </script>

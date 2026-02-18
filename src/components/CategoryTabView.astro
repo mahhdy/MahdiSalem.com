@@ -7,7 +7,7 @@
  */
 
 import CategoryCard from './CategoryCard.astro';
-import { categories, getCategoriesByContentType } from '../data/categories';
+import { getCategoriesByContentType } from '../data/categories';
 
 interface Props {
   contentType: 'articles' | 'books' | 'statements' | 'multimedia';
@@ -186,44 +186,40 @@ const labels = {
             }
           }
 
-          // Update URL hash (optional, for bookmark/share)
-          window.history.replaceState(null, '', `#${tab}`);
+          // Update URL query for shareable state
+          const url = new URL(window.location.href);
+          if (tab) {
+            url.searchParams.set('view', tab);
+          }
+          window.history.replaceState(null, '', `${url.pathname}${url.search}`);
         });
       });
 
-      // Handle initial hash in URL (supports both tab switching and category filtering)
-      const hash = window.location.hash.slice(1);
-      const hashParts = hash.split('&');
-      const tab = hashParts[0]; // 'list' or 'categories'
+      // Handle initial URL state (query first, then hash fallback)
+      const params = new URLSearchParams(window.location.search);
+      const queryView = params.get('view');
+      const interfaceParam = params.get('interface');
+      const hashView = window.location.hash.replace('#', '');
+      const initialView = queryView || (interfaceParam ? 'list' : hashView);
 
-      // Switch to the tab if specified
-      if (tab === 'list' || tab === 'categories') {
-        const hashButton = tabView.querySelector(`[data-tab="${tab}"]`);
-        if (hashButton) {
-          hashButton.click();
+      if (initialView === 'list' || initialView === 'categories') {
+        const button = tabView.querySelector(`[data-tab="${initialView}"]`) as HTMLButtonElement | null;
+        if (button) {
+          button.click();
         }
+      }
 
-        // If switching to list view with a category filter
-        if (tab === 'list' && hashParts.length > 1) {
-          const categoryParam = hashParts.find(p => p.startsWith('category='));
-          if (categoryParam) {
-            const categorySlug = decodeURIComponent(categoryParam.split('=')[1]);
-
-            // Find and click the category filter button in list view
-            // Wait for DOM to be fully ready before searching
-            const tryClickButton = () => {
-              const categoryButton = listContent?.querySelector(`.category-filter[data-category="${categorySlug}"]`);
-              if (categoryButton) {
-                categoryButton.click();
-              }
-            };
-
-            // Try immediately, then with a small delay if needed
-            tryClickButton();
-            setTimeout(tryClickButton, 50);
-            setTimeout(tryClickButton, 200);
+      if (interfaceParam && listContent) {
+        const applyInterfaceFilter = () => {
+          const filterBtn = listContent.querySelector(`.category-filter[data-category="${interfaceParam}"]`) as HTMLButtonElement | null;
+          if (filterBtn) {
+            filterBtn.click();
           }
-        }
+        };
+
+        applyInterfaceFilter();
+        setTimeout(applyInterfaceFilter, 50);
+        setTimeout(applyInterfaceFilter, 200);
       }
     });
   });

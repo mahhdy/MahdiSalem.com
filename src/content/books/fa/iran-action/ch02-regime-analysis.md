@@ -9,6 +9,7 @@ chapterNumber: 2
 order: 2
 readingTime: 5
 interface: philosophy-other
+show-header: false
 ---
 
 # تشریح نظام حاکم: آناتومی قدرت

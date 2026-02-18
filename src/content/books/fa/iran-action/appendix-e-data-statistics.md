@@ -10,5 +10,6 @@ appendixLetter: E
 order: 1005
 readingTime: 5
 interface: philosophy-other
+show-header: false
 ---
 

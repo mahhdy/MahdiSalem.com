@@ -10,6 +10,7 @@ categories:
   - نظریه سیاسی
   - اصلاحات سیاسی
 interface: descriptive-politics
+show-header: false
 ---
 
 # فهرست مطالب

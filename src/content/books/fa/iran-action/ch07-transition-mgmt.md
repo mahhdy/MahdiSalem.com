@@ -9,5 +9,6 @@ chapterNumber: 7
 order: 7
 readingTime: 5
 interface: descriptive-politics
+show-header: false
 ---
 

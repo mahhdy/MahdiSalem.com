@@ -153,5 +153,17 @@
   "telegram.view_channel": "View Channel",
   "telegram.views": "views",
   "telegram.comments": "comments",
-  "telegram.read_more": "Read more"
+  "telegram.read_more": "Read more",
+  "nav.contents": "All Contents",
+  "contents.title": "All Contents",
+  "contents.description": "Overview of all site content, organized by category",
+  "contents.group_by": "Group by",
+  "contents.group_interface": "Interface",
+  "contents.group_category": "Category",
+  "contents.group_tags": "Tags",
+  "contents.group_type": "Content Type",
+  "contents.all_content": "All Content",
+  "content.type.article": "Article",
+  "content.type.book": "Book",
+  "content.type.multimedia": "Multimedia"
 }

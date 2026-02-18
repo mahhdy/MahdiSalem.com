@@ -153,5 +153,17 @@
   "telegram.view_channel": "مشاهده کانال",
   "telegram.views": "بازدید",
   "telegram.comments": "کامنت",
-  "telegram.read_more": "ادامه مطلب"
+  "telegram.read_more": "ادامه مطلب",
+  "nav.contents": "همه محتوا",
+  "contents.title": "همه محتوا",
+  "contents.description": "نمای کلی تمام مطالب سایت، سازماندهی شده بر اساس دسته‌بندی",
+  "contents.group_by": "گروه‌بندی بر اساس",
+  "contents.group_interface": "رابط",
+  "contents.group_category": "دسته‌بندی",
+  "contents.group_tags": "برچسب‌ها",
+  "contents.group_type": "نوع محتوا",
+  "contents.all_content": "همه محتوا",
+  "content.type.article": "مقاله",
+  "content.type.book": "کتاب",
+  "content.type.multimedia": "چندرسانه‌ای"
 }

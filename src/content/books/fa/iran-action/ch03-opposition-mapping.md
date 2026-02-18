@@ -9,6 +9,7 @@ chapterNumber: 3
 order: 3
 readingTime: 5
 interface: philosophy-other
+show-header: false
 ---
 
 # طیف‌شناسی اپوزیسیون: نقشه نیروهای تغییر

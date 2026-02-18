@@ -13,9 +13,12 @@ const books = defineCollection({
     showPdfViewer: z.boolean().default(false),
     publishDate: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
+    category: z.union([z.string(), z.array(z.string())]).optional(),
     categories: z.array(z.string()).optional(),
+    subject: z.union([z.string(), z.array(z.string())]).optional(),
     interface: z.string().optional(), // Category taxonomy field
     tags: z.array(z.string()).default([]),
+    'show-header': z.boolean().default(false),
     draft: z.boolean().default(false),
     order: z.number().default(0),
     // For chapters within a book
@@ -34,9 +37,12 @@ const articles = defineCollection({
     updatedDate: z.coerce.date().optional(),
     type: z.enum(['statement', 'press', 'position']).default('statement'),
     author: z.string().default('مهدی سالم'),
+    category: z.union([z.string(), z.array(z.string())]).optional(),
     categories: z.array(z.string()).default([]),
+    subject: z.union([z.string(), z.array(z.string())]).optional(),
     interface: z.string().optional(), // Category taxonomy field
     tags: z.array(z.string()).default([]),
+    'show-header': z.boolean().default(false),
     coverImage: z.string().optional(),
     draft: z.boolean().default(false),
   }),
@@ -50,7 +56,9 @@ const statements = defineCollection({
     lang: z.enum(['fa', 'en']),
     publishDate: z.coerce.date(),
     type: z.enum(['statement', 'press', 'position']).default('statement'),
+    category: z.union([z.string(), z.array(z.string())]).optional(),
     categories: z.array(z.string()).optional(),
+    subject: z.union([z.string(), z.array(z.string())]).optional(),
     interface: z.string().optional(), // Category taxonomy field
     tags: z.array(z.string()).optional(),
     draft: z.boolean().default(false),
@@ -65,6 +73,8 @@ const wiki = defineCollection({
     lang: z.enum(['fa', 'en']),
     section: z.string().optional(),
     order: z.number().default(0),
+    subject: z.union([z.string(), z.array(z.string())]).optional(),
+    tags: z.array(z.string()).optional(),
     lastUpdated: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
     draft: z.boolean().default(false),
@@ -98,7 +108,9 @@ const multimedia = defineCollection({
 
     // Standard fields
     author: z.string().default('مهدی سالم'),
+    category: z.union([z.string(), z.array(z.string())]).optional(),
     categories: z.array(z.string()).default([]),
+    subject: z.union([z.string(), z.array(z.string())]).optional(),
     interface: z.string().optional(), // Category taxonomy field
     tags: z.array(z.string()).default([]),
     coverImage: z.string().optional(),

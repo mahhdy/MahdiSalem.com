@@ -24,6 +24,7 @@ interface Props {
   nextChapter?: Chapter;
   draft?: boolean;
   author?: string;
+  showHeader?: boolean;
 }
 
 const {
@@ -38,6 +39,7 @@ const {
   nextChapter,
   draft = false,
   author = 'مهدی سالم',
+  showHeader = false,
 } = Astro.props;
 ---
 
@@ -97,7 +99,7 @@ const {
         )}
 
         <article>
-          <h1 class="text-3xl md:text-4xl font-bold mb-8">{title}</h1>
+          {showHeader && <h1 class="text-3xl md:text-4xl font-bold mb-8">{title}</h1>}
           <div class="prose article-content">
             {draft && (
               <div class="bg-amber-50 dark:bg-amber-900/20 text-amber-800 dark:text-amber-200 px-4 py-3 rounded-lg mb-8 border border-amber-200 dark:border-amber-800/50 flex items-start gap-3">
