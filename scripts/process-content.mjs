@@ -224,8 +224,8 @@ export class ContentPipeline {
 
         // Extract metadata from HTML
         const title = $('title').text() ||
-                     $('h1').first().text() ||
-                     path.basename(filePath, path.extname(filePath));
+            $('h1').first().text() ||
+            path.basename(filePath, path.extname(filePath));
         const description = $('meta[name="description"]').attr('content') || '';
 
         // Extract body content using regex (more reliable for large files)
@@ -376,6 +376,28 @@ export class ContentPipeline {
             .trim();
     }
 
+    escapeForMDX(content) {
+        // MDX is strict about < and {. 
+        // We only escape < that are clearly not HTML tags (e.g. <5, < space, < Persian num)
+        // Also we don't want to touch < inside code blocks. We could just do a simple replace first.
+        let result = content;
+
+        // Temporarily hide code blocks so we don't escape stuff inside them
+        const codeBlocks = [];
+        result = result.replace(/```[\s\S]*?```/g, match => {
+            codeBlocks.push(match);
+            return `__CODE_BLOCK_${codeBlocks.length - 1}__`;
+        });
+
+        // Escape < that is followed by non-alpha, non-slash, non-exclamation (like numbers, spaces or Persian letters/numbers)
+        result = result.replace(/<([^a-zA-Z\/!\?])/g, '&lt;$1');
+
+        // Restore code blocks
+        result = result.replace(/__CODE_BLOCK_(\d+)__/g, (_, idx) => codeBlocks[idx]);
+
+        return result;
+    }
+
     extractTitle(content) {
         const match = content.match(/^#\s+(.+)$/m);
         return match ? match[1].trim() : null;
@@ -450,12 +472,15 @@ export class ContentPipeline {
         await fs.mkdir(outputDir, { recursive: true });
 
         const frontmatter = this.buildFrontmatter(result);
-        const finalContent = `---\n${this.stringifyYaml(frontmatter)}\n---\n\n${result.content}`;
+
+        // Escape content to prevent MDX build failures
+        const escapedContent = this.escapeForMDX(result.content);
+        const finalContent = `---\n${this.stringifyYaml(frontmatter)}\n---\n\n${escapedContent}`;
 
         const baseName = customFileName || path.basename(result.source, path.extname(result.source));
 
-        // Use .mdx extension for HTML sources (they contain JSX/HTML)
-        const extension = result.type === 'html' ? '.mdx' : '.md';
+        // Default to .mdx extension for all content files
+        const extension = '.mdx';
         const outputPath = path.join(outputDir, `${baseName}${extension}`);
 
         await fs.writeFile(outputPath, finalContent, 'utf-8');
@@ -509,6 +534,9 @@ export class ContentPipeline {
         const outputDir = path.join(CONFIG.outputDir, 'books', lang, bookSlug);
         await fs.mkdir(outputDir, { recursive: true });
 
+        let combinedContent = '';
+        let commonMetadata = null;
+
         for (let i = 0; i < chapters.length; i++) {
             const chapterPath = chapters[i];
             const chapterNumber = i + 1;
@@ -517,17 +545,29 @@ export class ContentPipeline {
                 const result = await this.processFile(chapterPath, { bookSlug, chapterNumber, config, lang });
 
                 if (result) {
-                    const baseName = path.basename(chapterPath, '.tex');
-                    const outputFileName = `ch${String(chapterNumber).padStart(2, '0')}-${baseName}`;
-                    await this.saveResult({ ...result, metadata: { ...result.metadata, bookSlug, chapterNumber, lang } }, outputDir, outputFileName);
+                    const chapterName = path.basename(chapterPath, '.tex');
+                    if (!commonMetadata) commonMetadata = result;
+                    combinedContent += `\n\n## فصل ${chapterNumber}: ${result.title || chapterName}\n\n`;
+                    combinedContent += result.content;
                 }
             } catch (error) {
                 console.error(`   ❌ فصل ${chapterNumber}: ${error.message}`);
             }
         }
 
-        await this.generateBookIndex(bookSlug, chapters, outputDir, lang);
-        console.log(`   ✅ کتاب ${bookSlug} کامل شد!`);
+        if (combinedContent && commonMetadata) {
+            // Remove previous chapter generation logic and only generate a single index file
+            const bookResult = {
+                ...commonMetadata,
+                title: bookSlug.replace(/-/g, ' '),
+                content: combinedContent,
+                metadata: { ...commonMetadata.metadata, bookSlug, lang, chapterNumber: undefined }
+            };
+            await this.saveResult(bookResult, outputDir, 'index');
+            console.log(`   ✅ کتاب ${bookSlug} کامل شد و در index.mdx ترکیب شد!`);
+        } else {
+            console.log(`   ⚠️ کتاب ${bookSlug} فاقد محتوای معتبر بود.`);
+        }
     }
 
     async generateBookIndex(bookSlug, chapters, outputDir, lang) {

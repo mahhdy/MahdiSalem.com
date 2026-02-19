@@ -52,9 +52,38 @@ categoriesRoutes.get('/', async (c) => {
     }
 });
 
-// PUT and POST will be implemented in Phase 3
 categoriesRoutes.post('/', async (c) => {
-    return c.json({ error: 'Not yet implemented — Phase 3' }, 501);
+    try {
+        const body = await c.req.json();
+        const { slug, nameFa, nameEn, parentCategory } = body;
+
+        if (!slug || !nameFa || !nameEn) {
+            return c.json({ error: 'Missing required fields' }, 400);
+        }
+
+        let raw = await fs.readFile(CATEGORIES_FILE(), 'utf-8');
+
+        // Ensure slug is unique
+        if (raw.includes(`slug: '${slug}'`) || raw.includes(`slug: "${slug}"`)) {
+            return c.json({ error: 'Category slug already exists' }, 400);
+        }
+
+        const newCatStr = `  {
+    slug: '${slug}',
+    nameFa: '${nameFa}',
+    nameEn: '${nameEn}',
+    imagePath: '/images/categories/${slug}.svg',${parentCategory ? `\n    parentCategory: '${parentCategory}',` : ''}
+    contentTypes: ['articles', 'books', 'statements', 'multimedia'],
+  },`;
+
+        // Insert before the final ];
+        raw = raw.replace(/\n];/, `\n${newCatStr}\n];`);
+        await fs.writeFile(CATEGORIES_FILE(), raw, 'utf-8');
+
+        return c.json({ success: true, category: body });
+    } catch (err) {
+        return c.json({ error: (err as Error).message }, 500);
+    }
 });
 
 categoriesRoutes.put('/:slug', async (c) => {
@@ -62,5 +91,22 @@ categoriesRoutes.put('/:slug', async (c) => {
 });
 
 categoriesRoutes.delete('/:slug', async (c) => {
-    return c.json({ error: 'Not yet implemented — Phase 3' }, 501);
+    try {
+        const slug = c.req.param('slug');
+        let raw = await fs.readFile(CATEGORIES_FILE(), 'utf-8');
+
+        // Regex to match a category block by slug
+        const blockRegex = new RegExp(`\\s*\\{[\\s\\S]*?slug:\\s*['"]${slug}['"][\\s\\S]*?\\},?`, 'g');
+
+        if (!raw.match(blockRegex)) {
+            return c.json({ error: 'Category not found' }, 404);
+        }
+
+        raw = raw.replace(blockRegex, '');
+        await fs.writeFile(CATEGORIES_FILE(), raw, 'utf-8');
+
+        return c.json({ success: true });
+    } catch (err) {
+        return c.json({ error: (err as Error).message }, 500);
+    }
 });

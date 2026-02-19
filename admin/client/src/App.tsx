@@ -8,6 +8,7 @@ import TagManager from './pages/TagManager';
 import I18nManager from './pages/I18nManager';
 import MediaManager from './pages/MediaManager';
 import ScriptRunner from './pages/ScriptRunner';
+import Cheatsheet from './pages/Cheatsheet';
 
 export default function App() {
     return (
@@ -15,12 +16,13 @@ export default function App() {
             <Route element={<Layout />}>
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/content" element={<ContentBrowser />} />
-                <Route path="/content/:collection/:slug" element={<ContentEditor />} />
+                <Route path="/content/:collection/*" element={<ContentEditor />} />
                 <Route path="/categories" element={<CategoryManager />} />
                 <Route path="/tags" element={<TagManager />} />
                 <Route path="/i18n" element={<I18nManager />} />
                 <Route path="/media" element={<MediaManager />} />
                 <Route path="/scripts" element={<ScriptRunner />} />
+                <Route path="/cheatsheet" element={<Cheatsheet />} />
             </Route>
         </Routes>
     );

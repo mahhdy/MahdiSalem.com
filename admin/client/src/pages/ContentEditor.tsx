@@ -29,6 +29,54 @@ export default function ContentEditor() {
     const [showPicker, setShowPicker] = useState(false);
     const [activePickerField, setActivePickerField] = useState<string | null>(null);
 
+    // AI Tagging State
+    const [showAiModal, setShowAiModal] = useState(false);
+    const [aiLoading, setAiLoading] = useState(false);
+    const [aiResult, setAiResult] = useState<any>(null);
+
+    const handleAITagging = async () => {
+        setAiLoading(true);
+        setShowAiModal(true);
+        setAiResult(null);
+        try {
+            const res = await fetch('/api/ai/tag', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    text: body || '',
+                    title: frontmatter.title || fullSlug,
+                    lang: frontmatter.lang || 'fa'
+                })
+            });
+            const data = await res.json();
+            if (data.success) {
+                setAiResult(data.result);
+            } else {
+                setMessage(`❌ AI Error: ${data.error}`);
+                setShowAiModal(false);
+            }
+        } catch (err) {
+            setMessage(`❌ ${(err as Error).message}`);
+            setShowAiModal(false);
+        }
+        setAiLoading(false);
+    };
+
+    const applyAITags = () => {
+        if (!aiResult) return;
+        setFrontmatter(prev => ({
+            ...prev,
+            tags: aiResult.tags || prev.tags,
+            keywords: aiResult.keywords || prev.keywords,
+            description: aiResult.description || prev.description,
+            interface: aiResult.category?.primary || prev.interface,
+        }));
+        setShowAiModal(false);
+        setMessage('✅ AI suggestions applied (not saved yet).');
+    };
+
+    const isDevelopment = import.meta.env.MODE === 'development';
+
     const loadContent = useCallback(() => {
         if (!collection || !fullSlug) return;
         fetch(`/api/content/${collection}/${fullSlug}`)
@@ -165,6 +213,9 @@ export default function ContentEditor() {
                     <button className="btn btn-secondary" onClick={() => navigate('/content')}>
                         ← Back
                     </button>
+                    <button className="btn btn-secondary" onClick={handleAITagging} disabled={aiLoading}>
+                        🤖 AI Tagging
+                    </button>
                     <button className="btn btn-danger" onClick={() => setShowDelete(true)}>
                         🗑️ Delete
                     </button>
@@ -217,6 +268,42 @@ export default function ContentEditor() {
                         <MediaManager isPicker onSelect={handlePickImage} />
                         <div style={{ marginTop: 16, textAlign: 'right' }}>
                             <button className="btn btn-secondary" onClick={() => setShowPicker(false)}>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* AI Tagging Modal */}
+            {showAiModal && (
+                <div className="modal-overlay" onClick={() => !aiLoading && setShowAiModal(false)}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()} style={{ maxWidth: 600 }}>
+                        <h2 style={{ fontSize: '1.2rem', marginBottom: 16 }}>🤖 AI Content Analysis</h2>
+                        {aiLoading ? (
+                            <div style={{ padding: 40, textAlign: 'center' }}>
+                                <div className="loading-skeleton" style={{ height: 20, width: '60%', margin: '0 auto 16px' }} />
+                                <div className="loading-skeleton" style={{ height: 20, width: '40%', margin: '0 auto' }} />
+                                <p style={{ marginTop: 16, color: 'var(--text-muted)' }}>Analyzing text and generating taxonomy...</p>
+                            </div>
+                        ) : aiResult ? (
+                            <div style={{ fontSize: '0.9rem' }}>
+                                <div style={{ marginBottom: 12 }}><strong>Category (interface):</strong> <span className="badge collection">{aiResult.category?.primary}</span></div>
+                                <div style={{ marginBottom: 12 }}><strong>Tags:</strong>
+                                    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginTop: 6 }}>
+                                        {aiResult.tags?.map((t: string) => <span key={t} className="badge" style={{ background: 'var(--bg-tertiary)' }}>{t}</span>)}
+                                    </div>
+                                </div>
+                                <div style={{ marginBottom: 12 }}><strong>Keywords:</strong> {aiResult.keywords?.join(', ')}</div>
+                                <div style={{ marginBottom: 12 }}><strong>Description:</strong> {aiResult.description}</div>
+                                <div style={{ marginBottom: 12 }}><strong>Summary:</strong> {aiResult.summary}</div>
+                            </div>
+                        ) : (
+                            <div style={{ color: 'var(--danger)' }}>Failed to load results.</div>
+                        )}
+                        <div style={{ marginTop: 24, display: 'flex', justifyContent: 'flex-end', gap: 12 }}>
+                            <button className="btn btn-secondary" onClick={() => setShowAiModal(false)}>Close</button>
+                            <button className="btn btn-primary" onClick={applyAITags} disabled={aiLoading || !aiResult}>
+                                ✨ Apply Suggestions
+                            </button>
                         </div>
                     </div>
                 </div>

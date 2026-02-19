@@ -11,6 +11,7 @@ const navItems = [
     { path: '/i18n', label: 'Translations', icon: '🌐' },
     { path: '/media', label: 'Media', icon: '🖼️' },
     { path: '/scripts', label: 'Scripts', icon: '⚙️' },
+    { path: '/cheatsheet', label: 'MDX Guide', icon: '📚' },
 ];
 
 export default function Sidebar() {

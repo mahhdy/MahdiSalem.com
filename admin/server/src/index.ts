@@ -46,7 +46,9 @@ app.get('/', (c) => c.html(`
 // Health check
 app.get('/api/health', (c) => c.json({ status: 'ok', projectRoot: PROJECT_ROOT }));
 
-// Mount route groups
+import { aiRoutes } from './routes/ai.js';
+
+// ... (in routes section)
 app.route('/api/stats', statsRoutes);
 app.route('/api/content', contentRoutes);
 app.route('/api/categories', categoriesRoutes);
@@ -54,6 +56,7 @@ app.route('/api/tags', tagsRoutes);
 app.route('/api/i18n', i18nRoutes);
 app.route('/api/media', mediaRoutes);
 app.route('/api/scripts', scriptsRoutes);
+app.route('/api/ai', aiRoutes);
 
 const PORT = 3334;
 

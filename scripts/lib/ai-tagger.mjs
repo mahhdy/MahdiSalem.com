@@ -74,7 +74,7 @@ export class AITagger {
     }
 
     async analyze(content, options = {}) {
-        const { title, forceRefresh = false, lang = 'fa' } = options;
+        const { title, forceRefresh = false, lang = 'fa', availableCategories } = options;
 
         const cacheKey = this.getCacheKey(content, title);
         if (this.cacheEnabled && !forceRefresh) {
@@ -85,7 +85,7 @@ export class AITagger {
         console.log(`   🤖 تحلیل AI...`);
 
         try {
-            const result = await this.performAnalysis(content, title, lang);
+            const result = await this.performAnalysis(content, title, lang, availableCategories);
             if (this.cacheEnabled && result) await this.saveToCache(cacheKey, result);
             this.stats.processed++;
             return result;
@@ -95,8 +95,8 @@ export class AITagger {
         }
     }
 
-    async performAnalysis(content, title, lang) {
-        const prompt = this.buildPrompt(title, content.slice(0, 4000), lang);
+    async performAnalysis(content, title, lang, availableCategories) {
+        const prompt = this.buildPrompt(title, content.slice(0, 4000), lang, availableCategories);
         const response = await this.provider.complete(prompt, {
             systemPrompt: this.getSystemPrompt(lang),
             temperature: 0.3
@@ -118,11 +118,14 @@ export class AITagger {
             : 'You are a content analysis system. Always return valid JSON.';
     }
 
-    buildPrompt(title, content, lang) {
+    buildPrompt(title, content, lang, availableCategories) {
+        const catStrFa = availableCategories ? `\n\n📌 توجه: دسته (category.primary) باید حتما یکی از این مقادیر باشد: ${availableCategories.join(', ')}` : '';
+        const catStrEn = availableCategories ? `\n\n📌 NOTE: The category (category.primary) MUST be strictly one of these values: ${availableCategories.join(', ')}` : '';
+
         if (lang === 'fa') {
-            return `عنوان: ${title || 'بدون عنوان'}\n\nمتن:\n${content}\n\n---\n\nJSON با این ساختار برگردان:\n{"tags":["تگ۱","تگ۲"],"category":{"primary":"دسته","secondary":[]},"summary":"خلاصه","description":"توضیح","keywords":["کلید۱"],"readingTime":5,"difficulty":"متوسط"}`;
+            return `عنوان: ${title || 'بدون عنوان'}\n\nمتن:\n${content}\n\n---\n\nJSON با این ساختار برگردان:\n{"tags":["تگ۱","تگ۲"],"category":{"primary":"دسته","secondary":[]},"summary":"خلاصه","description":"توضیح","keywords":["کلید۱"],"readingTime":5,"difficulty":"متوسط"}${catStrFa}`;
         }
-        return `Title: ${title || 'Untitled'}\n\nContent:\n${content}\n\n---\n\nReturn JSON: {"tags":["tag1"],"category":{"primary":"cat","secondary":[]},"summary":"summary","description":"desc","keywords":["key"],"readingTime":5,"difficulty":"intermediate"}`;
+        return `Title: ${title || 'Untitled'}\n\nContent:\n${content}\n\n---\n\nReturn JSON: {"tags":["tag1"],"category":{"primary":"cat","secondary":[]},"summary":"summary","description":"desc","keywords":["key"],"readingTime":5,"difficulty":"intermediate"}${catStrEn}`;
     }
 
     validateResult(result, lang) {

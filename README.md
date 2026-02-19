@@ -1,128 +1,112 @@
 # MahdiSalem.com
 
-Personal website for **Mehdi Salem** (مهدی سالم) — philosophy, ethics, politics, and democracy.
+Personal website for **Mehdi Salem** (مهدی سالم) — exploring philosophy, ethics, politics, and democracy.
 
-## Quick Start & Usage
+## 🚀 Quick Start & Setup
 
-### 1. Install & Setup
+### 1. Installation
+
+Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/mahhdy/MahdiSalem.com.git
 cd MahdiSalem.com
 npm install
-npm run dev # Start local server
 ```
 
-### 2. Update or Deploy (New Machine)
+### 2. Local Development
+
+Run the main website locally (Astro Dev Server):
 
 ```bash
-# Update dependencies
-npm install
-# Build for production
+npm run dev
+```
+
+Visit `http://localhost:4321` to view the site.
+
+### 3. Build & Production Preview
+
+To test the production build locally:
+
+```bash
 npm run build
-# Preview
 npm run preview
-# Push changes
-git add .
-git commit -m "Update content"
-git push origin main
-# Cloudflare Pages auto-deploys
 ```
 
-### 3. Add Content
+## 🛠️ Content Pipelines
 
-- **Articles**: `src/content/articles/fa/` or `en/` — add `.md` files with frontmatter (title, description, lang, publishDate, categories, tags, interface, draft, show-header)
-- **Books**: `src/content/books/fa/` or `en/` — folder per book, `index.md` for overview, chapters as `.md` files, `pdfUrl` for PDF, `showPdfViewer: true` for viewer, `show-header: false` (default) to hide redundant H1
-- **Statements**: `src/content/statements/fa/` or `en/` — add `.md` files
-- **Wiki**: `src/content/wiki/fa/` or `en/` — add `.md` files with section/order
-- **Multimedia**: `src/content/multimedia/fa/` or `en/` — add `.md` files (type: video/audio/podcast, mediaUrl, thumbnailUrl, duration, platform, podcastName, episodeNumber, seasonNumber)
+The project relies on specific Node.js pipelines to process content (LaTeX, Markdown, files) and generate search indexes.
 
-**Note on `show-header`**: By default, article and book content templates hide the first H1 heading to avoid redundancy (since the layout already shows the title). Set `show-header: true` in frontmatter if you want to display it.
+### Process Content (HTML/LaTeX to MDX)
 
-### 4. Categorization & Tagging
-
-- **Interface**: Use the `interface` field for taxonomy (see `src/data/categories.ts`)
-- **Categories**: Assign one or more categories (bilingual, hierarchical)
-- **Tags**: Add relevant tags for search/discovery
-
-### 5. Analytics & Ratings
-
-- **Visit Statistics**: Update `src/data/stats.json` manually or via API (see below)
-- **Ratings**: Update `src/data/ratings.json` (client-side, or implement backend API for real ratings)
-
-### 6. Telegram Feed Integration
-
-1. Get Telegram Bot Token from [@BotFather](https://t.me/BotFather)
-2. Deploy Cloudflare Worker (see `workers/README.md`)
-3. Set environment variables:
-   - `PUBLIC_TELEGRAM_WORKER_URL`
-   - `PUBLIC_TELEGRAM_CHANNEL`
-
-### 7. LaTeX Conversion
+Automatically converts LaTeX, raw Markdown, and updates Mermaid diagrams to `.mdx` format:
 
 ```bash
-pandoc input.tex -o output.md --wrap=none
-# For books with chapters
-pandoc book.tex -o book.md --wrap=none --toc
+npm run content:all
 ```
 
-## Features & Architecture
+*Note: This script is automatically triggered before `npm run build`.*
 
-- **Bilingual (FA/EN)**, RTL/LTR, mobile-first, dark/light theme
-- **Category Taxonomy**: 25+ categories, SVG icons, parent-child, interface field
-  - **Category Cards**: Clickable with hover tooltips, show top 5 items per category
-  - **Query Filtering**: URL-based filtering via `?interface=<slug>` across all list pages
-  - **Filter Reset**: "Show All" button removes active filters
-- **Tagging System**: Tag support for all content
-- **Multimedia**: Video, audio, podcast, player components
-- **Telegram Feed**: Cloudflare Worker, homepage integration
-- **Analytics Dashboard**: Visit stats, rating system, TreeMap visualization
-- **Wiki & Statements**: Collaborative editing, GitHub Issues
-- **PDF Viewer**: In-page PDF, tab interface for books
-- **SEO & Privacy**: Open Graph, Twitter Cards, no cookies by default
-- **Content Controls**:
-  - `show-header: false` (default) hides redundant first H1 in articles/books
-  - `draft: true` marks content as unpublished
+### Generate Search Index
 
-## Known Issues & Lessons Learned
+Indexes the output static files for the client-side search functionality using Pagefind:
 
-- **Tagging system**: Not fully implemented; tags are supported in schema but not all UI views. Use interface/category for main grouping.
-- **Interface field**: All content should use the `interface` field for taxonomy. Scripts available: `node scripts/add-interface-categories.mjs` and `node scripts/fix-interface-categories.mjs`.
-- **Category/Tag/Interface**: See `src/data/categories.ts` for taxonomy. Use scripts to update content.
-- **Analytics**: Visit stats and ratings are manual unless API is implemented. See `src/data/stats.json` and `src/data/ratings.json`.
-- **Telegram Feed**: Requires Cloudflare Worker and environment setup. See `workers/README.md`.
-- **Accessibility**: All players/components have ARIA labels and keyboard support.
-- **Performance**: Lazy loading, caching, responsive images, CDN recommended for media.
-- **Privacy**: No cookies/tracking by default. External embeds (YouTube/Vimeo) use privacy mode.
+```bash
+npx pagefind --site dist
+```
 
-## Project Structure
+## 🖥️ Admin Panel
 
-See folder tree in repo. Key files:
+A zero-database, flat-file CMS is included for safe local content management. It allows you to create articles, manage categories/tags, and interact with the AI Tagger directly from the browser.
 
-- `src/content.config.ts` — content schema
-- `src/data/categories.ts` — taxonomy
-- `src/components/` — UI components
-- `src/pages/` — route pages
-- `workers/` — Telegram Worker
-- `public/images/categories/` — SVG icons
+### Running the Admin Panel
 
-How to Run
-bash
+Start both the backend API and the frontend React application concurrently:
 
-# Start both servers in parallel
-
+```bash
 npm run admin:dev
+```
 
-# Or start individually
+Alternatively, you can run them individually:
 
-npm run admin:server    # → localhost:3334
-npm run admin:client    # → localhost:3333
-Open <http://localhost:3333> in your browser.
+- **Backend (Hono):** `npm run admin:server` (localhost:3334)
+- **Frontend (React):** `npm run admin:client` (localhost:3333)
 
-## Contributing
+**Access the UI at:** `http://localhost:3333`
 
-Open issues or pull requests for suggestions, bug reports, or feature requests. See `CONTRIBUTING.md` for guidelines.
+## 📖 Technical Guidelines
 
-## License
+### Content Structure
+
+All content must be placed in `src/content/` under the respective collection (`articles`, `books`, `statements`, `multimedia`) and localized folder (`fa/` or `en/`).
+
+- **Format:** All content uses MDX (`.mdx`).
+- **Books:** Books use a single `index.mdx` entry containing all chapters.
+- **Frontmatter Headers:** By default, layout components hide the primary `H1` in articles/books to prevent redundancy. Override with `show-header: true` if needed.
+
+### Taxonomy (Categories & Tags)
+
+- **Interface:** Use `interface` inside frontmatter to assign the primary category identifier (e.g., `ontology`, `descriptive-politics`). The complete hierarchical list is maintained in `src/data/categories.ts`.
+- **Tags:** Use the `tags` array for topical grouping.
+- **AI Tagging:** You can use the Admin Panel's AI Tagging tool to automatically classify text into the correct strict taxonomy.
+
+### Integrations
+
+- **Cloudflare Workers:** Check `workers/README.md` for deploying the Telegram Feed bot.
+- **AI Tagger:** Requires an API Key in the `.env` file (e.g., `OPENAI_API_KEY`).
+
+## 📁 Project Organization
+
+- `src/` — Astro website source code, configuration, and flat-file content.
+- `admin/` — Self-contained local Admin CMS (Hono backend + React frontend).
+- `scripts/` — Content processing pipelines and AI tools.
+- `developments/` — Internal design documents, phase strategies, and milestone tracking.
+- `public/` — Static assets, images, and localized diagrams.
+
+## 🤝 Contributing
+
+Feature suggestions, bug reports, and improvement ideas can be submitted via GitHub Issues or Pull Requests. See `CONTRIBUTING.md` for guidelines.
+
+## 📄 License
 
 Content © Mehdi Salem. Code MIT licensed.
