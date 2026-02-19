@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 800"
+     role="img" aria-labelledby="title desc">
+  <title id="title">Iran Map Silhouette</title>
+  <desc id="desc">Two-tone silhouette of Iran suitable for both dark and light backgrounds.</desc>
+
+  <defs>
+    <style><![CDATA[
+      :root { --fg: #0f172a;  /* slate-900 */  --bg: #e2e8f0;  /* slate-200 */ }
+      @media (prefers-color-scheme: dark) {
+        :root { --fg: #e2e8f0; /* light on dark */ --bg: #0f172a; }
+      }
+      .shape { fill: var(--fg); stroke: var(--bg); stroke-width: 12; }
+    ]]></style>
+  </defs>
+
+  <!-- Simplified outline of Iran (silhouette for display use) -->
+  <path class="shape"
+    d="M 760 150
+       L 720 180 L 690 170 L 650 200 L 620 190
+       L 580 220 L 560 260 L 520 270 L 500 320
+       L 470 330 L 450 360 L 430 410 L 390 420
+       L 360 450 L 340 500 L 320 520 L 300 570
+       L 330 600 L 360 620 L 410 650 L 450 670
+       L 500 690 L 550 690 L 600 680 L 650 660
+       L 700 640 L 720 610 L 750 600 L 780 560
+       L 820 530 L 850 520 L 870 490 L 900 470
+       L 920 430 L 940 390 L 960 360 L 950 320
+       L 940 300 L 900 290 L 880 260 L 860 230
+       L 820 210 L 800 190 L 780 170 Z" />
+</svg>
