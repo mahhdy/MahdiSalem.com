@@ -88,10 +88,10 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     </main>
     <Footer lang={lang} />
     
-  <!-- Mermaid - هر دو باید is:inline باشند -->
-  <script is:inline src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
-  <script is:inline>
-    document.addEventListener('DOMContentLoaded', function() {
+    <!-- Mermaid.js - Diagram Rendering -->
+    <script is:inline src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script is:inline>
+      // Initialize mermaid with proper configuration
       if (typeof mermaid !== 'undefined') {
         mermaid.initialize({ 
           startOnLoad: true,
@@ -100,10 +100,60 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
             useMaxWidth: true,
             htmlLabels: true,
             curve: 'basis'
+          },
+          sequenceDiagram: {
+            useMaxWidth: true
+          },
+          mindmap: {
+            useMaxWidth: true
+          },
+          gantt: {
+            useMaxWidth: true
+          },
+          pie: {
+            useMaxWidth: true
+          },
+          gitGraph: {
+            useMaxWidth: true
+          },
+          stateDiagram: {
+            useMaxWidth: true
           }
         });
       }
-    });
-  </script>
-</body>
+      
+      // Run mermaid on page load
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+          if (typeof mermaid !== 'undefined') {
+            mermaid.run();
+          }
+        });
+      } else {
+        if (typeof mermaid !== 'undefined') {
+          mermaid.run();
+        }
+      }
+      
+      // Listen for theme changes and re-render diagrams
+      const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.attributeName === 'class' && typeof mermaid !== 'undefined') {
+            const isDark = document.documentElement.classList.contains('dark');
+            mermaid.initialize({ 
+              theme: isDark ? 'dark' : 'default'
+            });
+            // Re-render diagrams - remove old SVGs
+            document.querySelectorAll('.mermaid svg').forEach(svg => {
+              svg.remove();
+            });
+            // Re-run mermaid
+            mermaid.run();
+          }
+        });
+      });
+      
+      observer.observe(document.documentElement, { attributes: true });
+    </script>
+  </body>
 </html>
