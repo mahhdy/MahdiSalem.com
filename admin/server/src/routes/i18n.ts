@@ -71,9 +71,6 @@ i18nRoutes.get('/:lang', async (c) => {
     }
 
     try {
-        const filePath = path.join(I18N_DIR(), `${lang}.json`);
-        const raw = await fs.readFile(filePath, 'utf-8');
-        const data = JSON.parse(raw);
         const data = await readLang(lang);
         return c.json({ lang, keys: Object.keys(data).length, data });
     } catch (err) {
@@ -84,14 +81,7 @@ i18nRoutes.get('/:lang', async (c) => {
 /**
  * GET /parity — show keys present in one lang but not the other
  */
-i18nRoutes.get('/check/parity', async (c) => {
-    try {
-        const enRaw = await fs.readFile(path.join(I18N_DIR(), 'en.json'), 'utf-8');
-        const faRaw = await fs.readFile(path.join(I18N_DIR(), 'fa.json'), 'utf-8');
-        const en = JSON.parse(enRaw);
-        const fa = JSON.parse(faRaw);
- * GET /check/parity — show keys present in one lang but not the other
- */
+
 i18nRoutes.get('/check/parity', async (c) => {
     try {
         const en = await readLang('en');
@@ -115,24 +105,13 @@ i18nRoutes.get('/check/parity', async (c) => {
     }
 });
 
-// Write operations — Phase 4
-i18nRoutes.put('/:lang/:key', async (c) => {
-    return c.json({ error: 'Not yet implemented — Phase 4' }, 501);
-});
-
-i18nRoutes.post('/key', async (c) => {
-    return c.json({ error: 'Not yet implemented — Phase 4' }, 501);
-});
-
-i18nRoutes.delete('/key/:key', async (c) => {
-    return c.json({ error: 'Not yet implemented — Phase 4' }, 501);
 /**
- * PUT /:lang/:key — update a single key in one language
+ * PUT /:lang/:key — update a translation key
  * The key supports dot notation for nested paths
  */
-i18nRoutes.put('/:lang/:key{.*}', async (c) => {
+i18nRoutes.put('/:lang/*', async (c) => {
     const lang = c.req.param('lang');
-    const key = c.req.param('key');
+    const key = c.req.path.split(`/i18n/${lang}/`)[1];
 
     if (lang !== 'en' && lang !== 'fa') {
         return c.json({ error: 'Invalid language' }, 400);
@@ -182,8 +161,8 @@ i18nRoutes.post('/key', async (c) => {
 /**
  * DELETE /key/:key — delete a key from BOTH languages
  */
-i18nRoutes.delete('/key/:key{.*}', async (c) => {
-    const key = c.req.param('key');
+i18nRoutes.delete('/key/*', async (c) => {
+    const key = c.req.path.split('/i18n/key/')[1];
 
     try {
         const enData = await readLang('en');
