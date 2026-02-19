@@ -31,6 +31,18 @@ const app = new Hono();
 app.use('*', cors({ origin: 'http://localhost:3333' }));
 app.use('*', logger());
 
+// Basic info at root
+app.get('/', (c) => c.html(`
+    <body style="font-family: sans-serif; background: #0f1117; color: #e8eaf0; padding: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 80vh;">
+        <h1 style="color: #638cff;">🔧 MahdiSalem Admin API</h1>
+        <p style="color: #8b8fa3;">The server is running correctly.</p>
+        <div style="background: #1c1f2e; padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); margin-top: 20px;">
+            <p>Access the Admin UI at: <a href="http://localhost:3333" style="color: #638cff; font-weight: bold; text-decoration: none;">http://localhost:3333</a></p>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.8rem; color: #5c6078;">Project Root: ${PROJECT_ROOT}</p>
+    </body>
+`));
+
 // Health check
 app.get('/api/health', (c) => c.json({ status: 'ok', projectRoot: PROJECT_ROOT }));
 

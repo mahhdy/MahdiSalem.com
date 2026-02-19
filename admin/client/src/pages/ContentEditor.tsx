@@ -253,7 +253,7 @@ export default function ContentEditor() {
                         language="markdown"
                         theme="vs-dark"
                         value={body}
-                        onChange={(v) => setBody(v || '')}
+                        onChange={(v: string | undefined) => setBody(v || '')}
                         options={{
                             minimap: { enabled: false },
                             fontSize: 14,
