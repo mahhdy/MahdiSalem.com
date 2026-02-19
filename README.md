@@ -80,7 +80,7 @@ pandoc book.tex -o book.md --wrap=none --toc
 - **Wiki & Statements**: Collaborative editing, GitHub Issues
 - **PDF Viewer**: In-page PDF, tab interface for books
 - **SEO & Privacy**: Open Graph, Twitter Cards, no cookies by default
-- **Content Controls**: 
+- **Content Controls**:
   - `show-header: false` (default) hides redundant first H1 in articles/books
   - `draft: true` marks content as unpublished
 
@@ -98,12 +98,26 @@ pandoc book.tex -o book.md --wrap=none --toc
 ## Project Structure
 
 See folder tree in repo. Key files:
+
 - `src/content.config.ts` — content schema
 - `src/data/categories.ts` — taxonomy
 - `src/components/` — UI components
 - `src/pages/` — route pages
 - `workers/` — Telegram Worker
 - `public/images/categories/` — SVG icons
+
+How to Run
+bash
+
+# Start both servers in parallel
+
+npm run admin:dev
+
+# Or start individually
+
+npm run admin:server    # → localhost:3334
+npm run admin:client    # → localhost:3333
+Open <http://localhost:3333> in your browser.
 
 ## Contributing
 
