@@ -71,6 +71,9 @@ i18nRoutes.get('/:lang', async (c) => {
     }
 
     try {
+        const filePath = path.join(I18N_DIR(), `${lang}.json`);
+        const raw = await fs.readFile(filePath, 'utf-8');
+        const data = JSON.parse(raw);
         const data = await readLang(lang);
         return c.json({ lang, keys: Object.keys(data).length, data });
     } catch (err) {
@@ -79,6 +82,14 @@ i18nRoutes.get('/:lang', async (c) => {
 });
 
 /**
+ * GET /parity — show keys present in one lang but not the other
+ */
+i18nRoutes.get('/check/parity', async (c) => {
+    try {
+        const enRaw = await fs.readFile(path.join(I18N_DIR(), 'en.json'), 'utf-8');
+        const faRaw = await fs.readFile(path.join(I18N_DIR(), 'fa.json'), 'utf-8');
+        const en = JSON.parse(enRaw);
+        const fa = JSON.parse(faRaw);
  * GET /check/parity — show keys present in one lang but not the other
  */
 i18nRoutes.get('/check/parity', async (c) => {
@@ -104,6 +115,17 @@ i18nRoutes.get('/check/parity', async (c) => {
     }
 });
 
+// Write operations — Phase 4
+i18nRoutes.put('/:lang/:key', async (c) => {
+    return c.json({ error: 'Not yet implemented — Phase 4' }, 501);
+});
+
+i18nRoutes.post('/key', async (c) => {
+    return c.json({ error: 'Not yet implemented — Phase 4' }, 501);
+});
+
+i18nRoutes.delete('/key/:key', async (c) => {
+    return c.json({ error: 'Not yet implemented — Phase 4' }, 501);
 /**
  * PUT /:lang/:key — update a single key in one language
  * The key supports dot notation for nested paths
