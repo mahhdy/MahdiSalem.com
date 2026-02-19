@@ -20,8 +20,7 @@
   },
   "overrides": {
   "minimatch": "^10.2.1",
-  "glob": "^10.3.10",
-  "rimraf": "^5.0.10"
+  "glob": "^10.3.10"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
