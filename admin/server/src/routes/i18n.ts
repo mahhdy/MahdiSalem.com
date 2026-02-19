@@ -11,6 +11,56 @@ export const i18nRoutes = new Hono();
 
 const I18N_DIR = () => path.join(PROJECT_ROOT, 'src', 'i18n');
 
+async function readLang(lang: string): Promise<Record<string, unknown>> {
+    const filePath = path.join(I18N_DIR(), `${lang}.json`);
+    const raw = await fs.readFile(filePath, 'utf-8');
+    return JSON.parse(raw);
+}
+
+async function writeLang(lang: string, data: Record<string, unknown>): Promise<void> {
+    const filePath = path.join(I18N_DIR(), `${lang}.json`);
+    // Create backup
+    const existing = await fs.readFile(filePath, 'utf-8');
+    await fs.writeFile(filePath + '.bak', existing, 'utf-8');
+    // Write new content (pretty-printed for readability)
+    await fs.writeFile(filePath, JSON.stringify(data, null, 2) + '\n', 'utf-8');
+}
+
+/**
+ * Set a nested key on an object. "nav.home" → obj.nav.home = value
+ */
+function setNestedKey(obj: Record<string, unknown>, key: string, value: unknown): void {
+    const parts = key.split('.');
+    let current = obj;
+    for (let i = 0; i < parts.length - 1; i++) {
+        if (!current[parts[i]] || typeof current[parts[i]] !== 'object') {
+            current[parts[i]] = {};
+        }
+        current = current[parts[i]] as Record<string, unknown>;
+    }
+    current[parts[parts.length - 1]] = value;
+}
+
+/**
+ * Delete a nested key from an object
+ */
+function deleteNestedKey(obj: Record<string, unknown>, key: string): boolean {
+    const parts = key.split('.');
+    let current = obj;
+    for (let i = 0; i < parts.length - 1; i++) {
+        if (!current[parts[i]] || typeof current[parts[i]] !== 'object') {
+            return false;
+        }
+        current = current[parts[i]] as Record<string, unknown>;
+    }
+    const lastKey = parts[parts.length - 1];
+    if (lastKey in current) {
+        delete current[lastKey];
+        return true;
+    }
+    return false;
+}
+
 /**
  * GET /:lang — return the full i18n JSON for a language
  */
@@ -24,6 +74,7 @@ i18nRoutes.get('/:lang', async (c) => {
         const filePath = path.join(I18N_DIR(), `${lang}.json`);
         const raw = await fs.readFile(filePath, 'utf-8');
         const data = JSON.parse(raw);
+        const data = await readLang(lang);
         return c.json({ lang, keys: Object.keys(data).length, data });
     } catch (err) {
         return c.json({ error: (err as Error).message }, 500);
@@ -39,6 +90,12 @@ i18nRoutes.get('/check/parity', async (c) => {
         const faRaw = await fs.readFile(path.join(I18N_DIR(), 'fa.json'), 'utf-8');
         const en = JSON.parse(enRaw);
         const fa = JSON.parse(faRaw);
+ * GET /check/parity — show keys present in one lang but not the other
+ */
+i18nRoutes.get('/check/parity', async (c) => {
+    try {
+        const en = await readLang('en');
+        const fa = await readLang('fa');
 
         const enKeys = new Set(Object.keys(flattenObject(en)));
         const faKeys = new Set(Object.keys(flattenObject(fa)));
@@ -69,6 +126,83 @@ i18nRoutes.post('/key', async (c) => {
 
 i18nRoutes.delete('/key/:key', async (c) => {
     return c.json({ error: 'Not yet implemented — Phase 4' }, 501);
+/**
+ * PUT /:lang/:key — update a single key in one language
+ * The key supports dot notation for nested paths
+ */
+i18nRoutes.put('/:lang/:key{.*}', async (c) => {
+    const lang = c.req.param('lang');
+    const key = c.req.param('key');
+
+    if (lang !== 'en' && lang !== 'fa') {
+        return c.json({ error: 'Invalid language' }, 400);
+    }
+
+    try {
+        const { value } = await c.req.json<{ value: string }>();
+        const data = await readLang(lang);
+        setNestedKey(data, key, value);
+        await writeLang(lang, data);
+        return c.json({ success: true, lang, key, value });
+    } catch (err) {
+        return c.json({ error: (err as Error).message }, 500);
+    }
+});
+
+/**
+ * POST /key — add a key to BOTH languages atomically
+ */
+i18nRoutes.post('/key', async (c) => {
+    try {
+        const { key, en: enValue, fa: faValue } = await c.req.json<{
+            key: string;
+            en: string;
+            fa: string;
+        }>();
+
+        if (!key || !key.trim()) {
+            return c.json({ error: 'Key is required' }, 400);
+        }
+
+        const enData = await readLang('en');
+        const faData = await readLang('fa');
+
+        setNestedKey(enData, key, enValue || '');
+        setNestedKey(faData, key, faValue || '');
+
+        await writeLang('en', enData);
+        await writeLang('fa', faData);
+
+        return c.json({ success: true, key, en: enValue, fa: faValue });
+    } catch (err) {
+        return c.json({ error: (err as Error).message }, 500);
+    }
+});
+
+/**
+ * DELETE /key/:key — delete a key from BOTH languages
+ */
+i18nRoutes.delete('/key/:key{.*}', async (c) => {
+    const key = c.req.param('key');
+
+    try {
+        const enData = await readLang('en');
+        const faData = await readLang('fa');
+
+        const deletedEn = deleteNestedKey(enData, key);
+        const deletedFa = deleteNestedKey(faData, key);
+
+        if (!deletedEn && !deletedFa) {
+            return c.json({ error: `Key "${key}" not found in either language` }, 404);
+        }
+
+        await writeLang('en', enData);
+        await writeLang('fa', faData);
+
+        return c.json({ success: true, key, deletedFromEn: deletedEn, deletedFromFa: deletedFa });
+    } catch (err) {
+        return c.json({ error: (err as Error).message }, 500);
+    }
 });
 
 // --- Helpers ---
