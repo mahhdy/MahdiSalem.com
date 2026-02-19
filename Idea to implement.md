@@ -1,8 +1,9 @@
-# Idea to Implement..
+# Idea to Implement
 
 ## Recently Completed
 
 ### ✅ Category View Improvements (Feb 2026)
+
 - **Category Cards**: Now fully clickable with hover descriptions and tooltip functionality
 - **Query-Based Filtering**: Implemented `?interface=<slug>` URL filtering across all content list pages (articles, books, multimedia - both FA & EN)
 - **Filter Reset**: Added "Show All" functionality via URL state management
@@ -10,6 +11,7 @@
 - **Item Preview**: Top 5 items displayed on each category card with direct links
 
 ### ✅ Show-Header Frontmatter Support
+
 - Added `show-header: false` as default option in content schema
 - Allows hiding redundant first H1 headings in articles and books
 - User can override with `show-header: true` when needed
@@ -17,6 +19,7 @@
 ## Planned / In Progress
 
 ### 🔄 AIO Contents Page (All-in-One Content View)
+
 - Bilingual sitemap-style page showing all content organized by:
   - Interface (primary taxonomy)
   - Category (legacy support)
@@ -25,6 +28,26 @@
 - Switchable grouping modes
 - Colored SVG icons per content type (book/article/multimedia)
 - Scrollable card previews (5-10 items per category)
+
+### 🔄 Local Admin Panel (Feb 2026) — `feature/admin-panel` branch
+
+A local-only web admin UI (`localhost:3333`) for managing site content without touching production.
+Full proposal in the conversation artifact `admin_panel_proposal.md`.
+
+**Architecture**: Hono server (port 3334) + Vite React SPA (port 3333). Reads/writes flat files directly.
+
+**Modules planned:**
+
+- **Dashboard** — health check: drafts, missing metadata, category coverage
+- **Content Editor** — type-safe frontmatter forms for all 5 collections (books, articles, statements, multimedia, wiki)
+- **Category Manager** — edit `categories.ts` via a visual tree (no TypeScript editing)
+- **Tag Manager** — canonical tag list; rename/merge across all frontmatter
+- **Schema Inspector** — surface field drift (`category`/`categories`/`subject`/`interface`) + bulk migration
+- **i18n Manager** — parity table for `fa.json` ↔ `en.json` with inline edit
+- **Script Runner** — trigger `process-content.mjs` from browser with live log stream
+- **Media Manager** — browse/upload `public/` assets, copy paths to clipboard
+
+Start with: `npm run admin:dev`
 
 ## Future Plans
 
