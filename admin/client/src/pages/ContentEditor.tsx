@@ -1,5 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import Editor from '@monaco-editor/react';
+import MediaManager from './MediaManager';
 
 interface ContentFile {
     collection: string;
@@ -10,7 +12,10 @@ interface ContentFile {
 }
 
 export default function ContentEditor() {
-    const { collection, '*': slug } = useParams();
+    const params = useParams();
+    const collection = params.collection || '';
+    const fullSlug = params['*'] || params.slug || '';
+
     const navigate = useNavigate();
     const [file, setFile] = useState<ContentFile | null>(null);
     const [loading, setLoading] = useState(true);
@@ -18,11 +23,14 @@ export default function ContentEditor() {
     const [body, setBody] = useState('');
     const [frontmatter, setFrontmatter] = useState<Record<string, unknown>>({});
     const [message, setMessage] = useState('');
+    const [showDelete, setShowDelete] = useState(false);
 
-    // Reconstruct slug from wildcard param
-    const fullSlug = slug || useParams().slug || '';
+    // Image Picker State
+    const [showPicker, setShowPicker] = useState(false);
+    const [activePickerField, setActivePickerField] = useState<string | null>(null);
 
-    useEffect(() => {
+    const loadContent = useCallback(() => {
+        if (!collection || !fullSlug) return;
         fetch(`/api/content/${collection}/${fullSlug}`)
             .then((r) => r.json())
             .then((data) => {
@@ -41,7 +49,11 @@ export default function ContentEditor() {
             });
     }, [collection, fullSlug]);
 
-    const handleSave = async () => {
+    useEffect(() => {
+        loadContent();
+    }, [loadContent]);
+
+    const handleSave = useCallback(async () => {
         setSaving(true);
         setMessage('');
         try {
@@ -60,10 +72,52 @@ export default function ContentEditor() {
             setMessage(`❌ ${(err as Error).message}`);
         }
         setSaving(false);
+    }, [collection, fullSlug, frontmatter, body]);
+
+    const handleDelete = async () => {
+        try {
+            const res = await fetch(`/api/content/${collection}/${fullSlug}`, {
+                method: 'DELETE',
+            });
+            const data = await res.json();
+            if (data.success) {
+                navigate('/content', { replace: true });
+            } else {
+                setMessage(`❌ ${data.error || 'Delete failed'}`);
+            }
+        } catch (err) {
+            setMessage(`❌ ${(err as Error).message}`);
+        }
+        setShowDelete(false);
     };
+
+    // Ctrl+S / Cmd+S to save
+    useEffect(() => {
+        const handler = (e: KeyboardEvent) => {
+            if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+                e.preventDefault();
+                handleSave();
+            }
+        };
+        window.addEventListener('keydown', handler);
+        return () => window.removeEventListener('keydown', handler);
+    }, [handleSave]);
 
     const updateField = (key: string, value: unknown) => {
         setFrontmatter((prev) => ({ ...prev, [key]: value }));
+    };
+
+    const openPicker = (key: string) => {
+        setActivePickerField(key);
+        setShowPicker(true);
+    };
+
+    const handlePickImage = (path: string) => {
+        if (activePickerField) {
+            updateField(activePickerField, path);
+        }
+        setShowPicker(false);
+        setActivePickerField(null);
     };
 
     if (loading) {
@@ -90,8 +144,7 @@ export default function ContentEditor() {
         );
     }
 
-    // Determine which fields to show based on collection type
-    const fields = getFieldsForCollection(collection || '');
+    const fields = getFieldsForCollection(collection);
 
     return (
         <div>
@@ -112,27 +165,60 @@ export default function ContentEditor() {
                     <button className="btn btn-secondary" onClick={() => navigate('/content')}>
                         ← Back
                     </button>
+                    <button className="btn btn-danger" onClick={() => setShowDelete(true)}>
+                        🗑️ Delete
+                    </button>
                     <button className="btn btn-primary" onClick={handleSave} disabled={saving}>
-                        {saving ? '💾 Saving...' : '💾 Save'}
+                        {saving ? '💾 Saving...' : '💾 Save (Ctrl+S)'}
                     </button>
                 </div>
             </div>
 
+            {/* Delete Confirmation */}
+            {showDelete && (
+                <div style={{
+                    padding: '16px 20px',
+                    borderRadius: 'var(--radius-md)',
+                    marginBottom: 16,
+                    background: 'hsla(0, 75%, 60%, 0.08)',
+                    border: '1px solid hsla(0, 75%, 60%, 0.25)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                }}>
+                    <span style={{ color: 'var(--danger)', fontSize: '0.9rem' }}>
+                        ⚠️ Soft-delete the file? (Recoverable via .deleted suffix)
+                    </span>
+                    <div style={{ display: 'flex', gap: 8 }}>
+                        <button className="btn btn-secondary" onClick={() => setShowDelete(false)}>Cancel</button>
+                        <button className="btn btn-danger" onClick={handleDelete}>Confirm Delete</button>
+                    </div>
+                </div>
+            )}
+
             {message && (
                 <div
+                    className="toast"
                     style={{
-                        padding: '10px 16px',
-                        borderRadius: 'var(--radius-md)',
-                        marginBottom: 16,
-                        fontSize: '0.85rem',
-                        background: message.startsWith('✅')
-                            ? 'hsla(150, 70%, 50%, 0.1)'
-                            : 'hsla(0, 75%, 60%, 0.1)',
+                        background: message.startsWith('✅') ? 'hsla(150, 70%, 50%, 0.1)' : 'hsla(0, 75%, 60%, 0.1)',
                         color: message.startsWith('✅') ? 'var(--success)' : 'var(--danger)',
                         border: `1px solid ${message.startsWith('✅') ? 'hsla(150,70%,50%,0.2)' : 'hsla(0,75%,60%,0.2)'}`,
                     }}
                 >
                     {message}
+                    <button onClick={() => setMessage('')} style={{ float: 'right', background: 'none', border: 'none', color: 'inherit', cursor: 'pointer' }}>✕</button>
+                </div>
+            )}
+
+            {/* Image Picker Modal */}
+            {showPicker && (
+                <div className="modal-overlay" onClick={() => setShowPicker(false)}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        <MediaManager isPicker onSelect={handlePickImage} />
+                        <div style={{ marginTop: 16, textAlign: 'right' }}>
+                            <button className="btn btn-secondary" onClick={() => setShowPicker(false)}>Cancel</button>
+                        </div>
+                    </div>
                 </div>
             )}
 
@@ -151,6 +237,7 @@ export default function ContentEditor() {
                         field={field}
                         value={frontmatter[field.key]}
                         onChange={(v) => updateField(field.key, v)}
+                        onOpenPicker={() => openPicker(field.key)}
                     />
                 ))}
             </div>
@@ -160,24 +247,25 @@ export default function ContentEditor() {
                 <label style={{ display: 'block', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.07em', color: 'var(--text-muted)', fontWeight: 600, marginBottom: 8 }}>
                     Content Body (Markdown)
                 </label>
-                <textarea
-                    value={body}
-                    onChange={(e) => setBody(e.target.value)}
-                    style={{
-                        width: '100%',
-                        minHeight: 400,
-                        background: 'var(--bg-input)',
-                        border: '1px solid var(--border)',
-                        borderRadius: 'var(--radius-md)',
-                        color: 'var(--text-primary)',
-                        padding: 16,
-                        fontFamily: "'Fira Code', 'Consolas', monospace",
-                        fontSize: '0.85rem',
-                        lineHeight: 1.7,
-                        resize: 'vertical',
-                        outline: 'none',
-                    }}
-                />
+                <div style={{ border: '1px solid var(--border)', borderRadius: 'var(--radius-md)', overflow: 'hidden' }}>
+                    <Editor
+                        height="500px"
+                        language="markdown"
+                        theme="vs-dark"
+                        value={body}
+                        onChange={(v) => setBody(v || '')}
+                        options={{
+                            minimap: { enabled: false },
+                            fontSize: 14,
+                            lineNumbers: 'on',
+                            wordWrap: 'on',
+                            scrollBeyondLastLine: false,
+                            padding: { top: 16 },
+                            renderWhitespace: 'selection',
+                            automaticLayout: true,
+                        }}
+                    />
+                </div>
             </div>
 
             <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
@@ -187,12 +275,12 @@ export default function ContentEditor() {
     );
 }
 
-// --- Field definitions per collection ---
+// --- Field definitions ---
 
 interface FieldDef {
     key: string;
     label: string;
-    type: 'text' | 'textarea' | 'date' | 'boolean' | 'select' | 'tags' | 'number';
+    type: 'text' | 'textarea' | 'date' | 'boolean' | 'select' | 'tags' | 'number' | 'image';
     options?: string[];
     placeholder?: string;
 }
@@ -203,7 +291,6 @@ function getFieldsForCollection(collection: string): FieldDef[] {
         { key: 'description', label: 'Description', type: 'textarea' },
         { key: 'lang', label: 'Language', type: 'select', options: ['fa', 'en'] },
         { key: 'draft', label: 'Draft', type: 'boolean' },
-        { key: 'interface', label: 'Interface (Taxonomy)', type: 'text', placeholder: 'e.g. ontology' },
         { key: 'tags', label: 'Tags', type: 'tags' },
     ];
 
@@ -213,11 +300,8 @@ function getFieldsForCollection(collection: string): FieldDef[] {
                 ...common,
                 { key: 'author', label: 'Author', type: 'text' },
                 { key: 'publishDate', label: 'Publish Date', type: 'date' },
-                { key: 'coverImage', label: 'Cover Image', type: 'text', placeholder: '/images/covers/...' },
+                { key: 'coverImage', label: 'Cover Image', type: 'image' },
                 { key: 'pdfUrl', label: 'PDF URL', type: 'text' },
-                { key: 'showPdfViewer', label: 'Show PDF Viewer', type: 'boolean' },
-                { key: 'bookSlug', label: 'Book Slug', type: 'text' },
-                { key: 'chapterNumber', label: 'Chapter Number', type: 'number' },
                 { key: 'order', label: 'Order', type: 'number' },
             ];
         case 'articles':
@@ -226,49 +310,31 @@ function getFieldsForCollection(collection: string): FieldDef[] {
                 { key: 'author', label: 'Author', type: 'text' },
                 { key: 'publishDate', label: 'Publish Date', type: 'date' },
                 { key: 'type', label: 'Type', type: 'select', options: ['statement', 'press', 'position'] },
-                { key: 'coverImage', label: 'Cover Image', type: 'text' },
+                { key: 'coverImage', label: 'Cover Image', type: 'image' },
             ];
         case 'multimedia':
             return [
                 ...common,
-                { key: 'publishDate', label: 'Publish Date', type: 'date' },
                 { key: 'type', label: 'Media Type', type: 'select', options: ['video', 'audio', 'podcast'] },
                 { key: 'mediaUrl', label: 'Media URL', type: 'text' },
-                { key: 'thumbnailUrl', label: 'Thumbnail URL', type: 'text' },
-                { key: 'duration', label: 'Duration (seconds)', type: 'number' },
-                { key: 'platform', label: 'Platform', type: 'select', options: ['youtube', 'vimeo', 'soundcloud', 'self-hosted'] },
-                { key: 'episodeNumber', label: 'Episode #', type: 'number' },
-                { key: 'seasonNumber', label: 'Season #', type: 'number' },
-                { key: 'podcastName', label: 'Podcast Name', type: 'text' },
-            ];
-        case 'statements':
-            return [
-                ...common,
-                { key: 'publishDate', label: 'Publish Date', type: 'date' },
-                { key: 'type', label: 'Type', type: 'select', options: ['statement', 'press', 'position'] },
-            ];
-        case 'wiki':
-            return [
-                ...common,
-                { key: 'section', label: 'Section', type: 'text' },
-                { key: 'order', label: 'Order', type: 'number' },
-                { key: 'lastUpdated', label: 'Last Updated', type: 'date' },
+                { key: 'thumbnailUrl', label: 'Thumbnail URL', type: 'image' },
+                { key: 'platform', label: 'Platform', type: 'select', options: ['youtube', 'vimeo', 'soundcloud'] },
             ];
         default:
             return common;
     }
 }
 
-// --- Field Editor Component ---
-
 function FieldEditor({
     field,
     value,
     onChange,
+    onOpenPicker
 }: {
     field: FieldDef;
     value: unknown;
     onChange: (v: unknown) => void;
+    onOpenPicker: () => void;
 }) {
     const baseStyle = {
         width: '100%',
@@ -278,106 +344,54 @@ function FieldEditor({
         color: 'var(--text-primary)',
         padding: '8px 14px',
         fontSize: '0.85rem',
-        fontFamily: 'inherit',
         outline: 'none',
     } as const;
 
     return (
         <div>
-            <label
-                style={{
-                    display: 'block',
-                    fontSize: '0.72rem',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.06em',
-                    color: 'var(--text-muted)',
-                    fontWeight: 600,
-                    marginBottom: 6,
-                }}
-            >
+            <label style={{ display: 'block', fontSize: '0.72rem', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: 600, marginBottom: 6 }}>
                 {field.label}
             </label>
 
             {field.type === 'text' && (
-                <input
-                    type="text"
-                    style={baseStyle}
-                    value={String(value || '')}
-                    placeholder={field.placeholder}
-                    onChange={(e) => onChange(e.target.value)}
-                />
+                <input type="text" style={baseStyle} value={String(value || '')} onChange={(e) => onChange(e.target.value)} />
+            )}
+
+            {field.type === 'image' && (
+                <div style={{ display: 'flex', gap: 6 }}>
+                    <input type="text" style={{ ...baseStyle, flex: 1 }} value={String(value || '')} onChange={(e) => onChange(e.target.value)} />
+                    <button className="btn btn-secondary" style={{ padding: '8px 12px', fontSize: '0.75rem' }} onClick={onOpenPicker}>🖼️ Select</button>
+                </div>
             )}
 
             {field.type === 'textarea' && (
-                <textarea
-                    style={{ ...baseStyle, minHeight: 80, resize: 'vertical' }}
-                    value={String(value || '')}
-                    onChange={(e) => onChange(e.target.value)}
-                />
+                <textarea style={{ ...baseStyle, minHeight: 80, resize: 'vertical' }} value={String(value || '')} onChange={(e) => onChange(e.target.value)} />
             )}
 
             {field.type === 'date' && (
-                <input
-                    type="date"
-                    style={baseStyle}
-                    value={value ? String(value).split('T')[0] : ''}
-                    onChange={(e) => onChange(e.target.value)}
-                />
+                <input type="date" style={baseStyle} value={value ? String(value).split('T')[0] : ''} onChange={(e) => onChange(e.target.value)} />
             )}
 
             {field.type === 'number' && (
-                <input
-                    type="number"
-                    style={baseStyle}
-                    value={value !== undefined && value !== null ? Number(value) : ''}
-                    onChange={(e) => onChange(e.target.value ? Number(e.target.value) : undefined)}
-                />
+                <input type="number" style={baseStyle} value={value !== undefined ? Number(value) : ''} onChange={(e) => onChange(e.target.value ? Number(e.target.value) : undefined)} />
             )}
 
             {field.type === 'boolean' && (
                 <label style={{ display: 'flex', alignItems: 'center', gap: 10, cursor: 'pointer' }}>
-                    <input
-                        type="checkbox"
-                        checked={Boolean(value)}
-                        onChange={(e) => onChange(e.target.checked)}
-                        style={{ width: 18, height: 18, accentColor: 'var(--accent)' }}
-                    />
-                    <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                        {Boolean(value) ? 'Yes' : 'No'}
-                    </span>
+                    <input type="checkbox" checked={Boolean(value)} onChange={(e) => onChange(e.target.checked)} style={{ width: 18, height: 18 }} />
+                    <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>{Boolean(value) ? 'Yes' : 'No'}</span>
                 </label>
             )}
 
             {field.type === 'select' && (
-                <select
-                    style={baseStyle}
-                    value={String(value || '')}
-                    onChange={(e) => onChange(e.target.value)}
-                >
+                <select style={baseStyle} value={String(value || '')} onChange={(e) => onChange(e.target.value)}>
                     <option value="">— Select —</option>
-                    {field.options?.map((opt) => (
-                        <option key={opt} value={opt}>
-                            {opt}
-                        </option>
-                    ))}
+                    {field.options?.map((opt) => <option key={opt} value={opt}>{opt}</option>)}
                 </select>
             )}
 
             {field.type === 'tags' && (
-                <input
-                    type="text"
-                    style={baseStyle}
-                    value={Array.isArray(value) ? value.join(', ') : String(value || '')}
-                    placeholder="tag1, tag2, tag3"
-                    onChange={(e) =>
-                        onChange(
-                            e.target.value
-                                .split(',')
-                                .map((t) => t.trim())
-                                .filter(Boolean)
-                        )
-                    }
-                />
+                <input type="text" style={baseStyle} value={Array.isArray(value) ? value.join(', ') : String(value || '')} placeholder="tag1, tag2" onChange={(e) => onChange(e.target.value.split(',').map(t => t.trim()).filter(Boolean))} />
             )}
         </div>
     );

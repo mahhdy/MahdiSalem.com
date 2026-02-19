@@ -53,11 +53,59 @@ mediaRoutes.get('/', async (c) => {
 
 // Upload and delete — Phase 5
 mediaRoutes.post('/upload', async (c) => {
-    return c.json({ error: 'Not yet implemented — Phase 5' }, 501);
+    try {
+        const body = await c.req.parseBody();
+        const file = body.file;
+        const subdir = (body.dir as string) || '';
+
+        if (!(file instanceof File)) {
+            return c.json({ error: 'No file uploaded' }, 400);
+        }
+
+        const targetDir = path.join(PUBLIC_DIR(), subdir);
+        await fs.mkdir(targetDir, { recursive: true });
+
+        const filePath = path.join(targetDir, file.name);
+
+        // Check if file exists - add timestamp if it does to avoid overwrite
+        let finalPath = filePath;
+        try {
+            await fs.access(filePath);
+            const ext = path.extname(file.name);
+            const base = path.basename(file.name, ext);
+            finalPath = path.join(targetDir, `${base}-${Date.now()}${ext}`);
+        } catch {
+            // File doesn't exist, use original name
+        }
+
+        const arrayBuffer = await file.arrayBuffer();
+        await fs.writeFile(finalPath, Buffer.from(arrayBuffer));
+
+        return c.json({
+            success: true,
+            filename: path.basename(finalPath),
+            path: '/' + path.relative(PUBLIC_DIR(), finalPath).replace(/\\/g, '/')
+        }, 201);
+    } catch (err) {
+        return c.json({ error: (err as Error).message }, 500);
+    }
 });
 
 mediaRoutes.delete('/:path{.*}', async (c) => {
-    return c.json({ error: 'Not yet implemented — Phase 5' }, 501);
+    const relativePath = c.req.param('path');
+    const fullPath = path.join(PUBLIC_DIR(), relativePath);
+
+    try {
+        await fs.access(fullPath);
+
+        // Soft delete: rename to .deleted
+        const deletedPath = fullPath + '.deleted';
+        await fs.rename(fullPath, deletedPath);
+
+        return c.json({ success: true, message: `File soft-deleted: ${relativePath}` });
+    } catch (err) {
+        return c.json({ error: 'File not found or could not be deleted' }, 404);
+    }
 });
 
 // --- Helpers ---
