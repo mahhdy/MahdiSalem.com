@@ -16,7 +16,7 @@
     "dev:watch": "npm-run-all --parallel dev content:watch",
     "admin:server": "cd admin/server && npx tsx --watch src/index.ts",
     "admin:client": "cd admin/client && npx vite --port 3333",
-    "admin:dev": "npm-run-all --parallel admin:server admin:client"
+    "admin:dev": "npm-run-all --parallel dev admin:server admin:client"
   },
   "overrides": {
     "minimatch": "^10.2.1",

@@ -90,6 +90,24 @@ All content must be placed in `src/content/` under the respective collection (`a
 - **Tags:** Use the `tags` array for topical grouping.
 - **AI Tagging:** You can use the Admin Panel's AI Tagging tool to automatically classify text into the correct strict taxonomy.
 
+### How to Add/Update Books
+
+The content pipeline (`npm run content:all`) automatically processes books from `content-source/books/`.
+
+1.  **Format Options**:
+    - **Folder**: Create a folder (e.g., `My-Book/`). Place `.tex` files for chapters inside. It will automatically find `main.tex` and chapters.
+    - **Standalone LaTeX**: Drop a single `.tex` file (e.g., `My-Book.tex`).
+    - **ZIP File**: Drop a `.zip` file containing a LaTeX project.
+    - **Standalone PDF**: Drop a `.pdf` file. It will extract text for the web view and provide a PDF viewer.
+2.  **PDF Association**:
+    - If you have a PDF version of a LaTeX book, name it the same as the folder or file (e.g., `My-Book.pdf` for `My-Book.tex` or `My-Book/` folder).
+    - The pipeline will automatically link it and store it in `public/documents/books/`.
+3.  **Language Detection**:
+    - If files are placed in `content-source/books/en/` or `content-source/books/fa/`, the language is explicitly set.
+    - Otherwise, the pipeline detects Persian characters to decide between `fa` and `en`.
+4.  **Admin Panel**:
+    - Use the **"Process Book"** or **"Process All"** buttons in the Admin Panel (`npm run admin:dev`) to trigger the conversion.
+
 ### Integrations
 
 - **Cloudflare Workers:** Check `workers/README.md` for deploying the Telegram Feed bot.

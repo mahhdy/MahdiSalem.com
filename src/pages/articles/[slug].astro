@@ -44,6 +44,8 @@ const slug = routeSlug ?? String(article.id ?? '').replace(/^fa\//, '').split('/
   slug={slug}
   draft={article.data.draft}
   showHeader={article.data['show-header']}
+  pdfOnly={article.data.pdfOnly}
+  pdfUrl={article.data.pdfUrl}
 >
   <Content />
 </ArticleLayout>

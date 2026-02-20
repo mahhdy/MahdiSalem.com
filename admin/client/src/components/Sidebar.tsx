@@ -12,6 +12,8 @@ const navItems = [
     { path: '/media', label: 'Media', icon: '🖼️' },
     { path: '/scripts', label: 'Scripts', icon: '⚙️' },
     { path: '/cheatsheet', label: 'MDX Guide', icon: '📚' },
+    { section: 'System' },
+    { path: 'http://localhost:4321', label: 'Go to Site', icon: '🏠', external: true },
 ];
 
 export default function Sidebar() {
@@ -35,6 +37,21 @@ export default function Sidebar() {
                         );
                     }
                     if ('path' in item) {
+                        const isExternal = 'external' in item && item.external;
+                        if (isExternal) {
+                            return (
+                                <a
+                                    key={item.path}
+                                    href={item.path!}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="nav-link"
+                                >
+                                    <span className="nav-icon">{item.icon}</span>
+                                    <span>{item.label}</span>
+                                </a>
+                            );
+                        }
                         return (
                             <NavLink
                                 key={item.path}

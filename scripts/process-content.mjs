@@ -205,7 +205,7 @@ export class ContentPipeline {
         markdown = await this.mermaidProcessor.process(markdown, { prefix });
 
         // پس‌پردازش نهایی
-        markdown = this.postProcessMarkdown(markdown);
+        markdown = this.postProcessMarkdown(markdown, finalConfig);
 
         const title = this.extractTitle(markdown) || path.basename(filePath, '.tex');
 
@@ -231,7 +231,17 @@ export class ContentPipeline {
         const extracted = await this.pdfExtractor.toMarkdown(filePath, options);
         const title = extracted.metadata?.title || path.basename(filePath, '.pdf');
 
-        return { type: 'pdf', source: filePath, title, content: extracted.markdown, pdfMetadata: extracted.metadata, metadata: {} };
+        return {
+            type: 'pdf',
+            source: filePath,
+            title,
+            content: extracted.markdown,
+            pdfMetadata: extracted.metadata,
+            metadata: {
+                pdfOnly: true,
+                showPdfViewer: true
+            }
+        };
     }
 
     async processWord(filePath, options = {}) {
@@ -384,7 +394,14 @@ export class ContentPipeline {
         const outputFile = path.join(tempDir, `output-${timestamp}.md`);
 
         await fs.writeFile(inputFile, content, 'utf-8');
-        await execAsync(`pandoc "${inputFile}" -o "${outputFile}" --wrap=none --columns=1000`, { timeout: 60000 });
+        try {
+            await execAsync(`pandoc "${inputFile}" -o "${outputFile}" --wrap=none --columns=1000`, { timeout: 60000 });
+        } catch (error) {
+            if (error.message.includes('not found') || error.message.includes('not recognized')) {
+                throw new Error('Pandoc is NOT installed on this system. Please install Pandoc (https://pandoc.org/) to convert LaTeX files.');
+            }
+            throw error;
+        }
 
         const result = await fs.readFile(outputFile, 'utf-8');
 
@@ -394,35 +411,59 @@ export class ContentPipeline {
         return result;
     }
 
-    postProcessMarkdown(markdown) {
-        return markdown
-            // پاکسازی کدهای TikZ باقی‌مانده
-            .replace(/$$node distance[\s\S]*?(?=\n\n|\n#|$)/g, '')
+    postProcessMarkdown(markdown, config = {}) {
+        let result = markdown;
+
+        // 1. Remove Pandoc's header attributes: {#id .class}
+        // Use a broader regex to include Persian characters in IDs
+        result = result.replace(/\{#[\S]+\s+\.[^}]+\}/g, '');
+        result = result.replace(/\{#[\S]+\}/g, '');
+
+        // 2. Convert Pandoc's container blocks: ::: class ... :::
+        result = result.replace(/^:::\s*([\w-]+)\s*$/gm, '<div class="$1">');
+        result = result.replace(/^:::\s*$/gm, '</div>');
+
+        // 3. Convert Pandoc's span attributes: [text]{style="color: NAME"}
+        result = result.replace(/\[([^\]]+)\]\{style="color: ([^"]+)"\}/g, (match, text, colorName) => {
+            const kebabColor = colorName.replace(/([a-z])([A-Z])/g, '$1-$2').replace(/[_\s]+/g, '-').toLowerCase();
+            const colorExpr = (config.colors && config.colors[colorName]) ? `var(--color-${kebabColor})` : colorName;
+            return `<span style="color: ${colorExpr}">${text}</span>`;
+        });
+
+        return result
+            // Clean up TikZ artifacts
+            .replace(/\$\$node distance[\s\S]*?(?=\n\n|\n#|$)/g, '')
             .replace(/\\node[\s\S]*?;/g, '')
             .replace(/\\draw[\s\S]*?;/g, '')
             .replace(/\[.*?$$\s*\(.*?\)\s*\{[\s\S]*?\};?/g, '')
-            // پاکسازی خطوط خالی اضافی
+            // Clean up extra newlines
             .replace(/\n{3,}/g, '\n\n')
             .trim();
     }
 
     escapeForMDX(content) {
-        // MDX is strict about < and {. 
-        // We only escape < that are clearly not HTML tags (e.g. <5, < space, < Persian num)
-        // Also we don't want to touch < inside code blocks. We could just do a simple replace first.
         let result = content;
 
-        // Temporarily hide code blocks so we don't escape stuff inside them
+        // MDX is strict about < and {
         const codeBlocks = [];
         result = result.replace(/```[\s\S]*?```/g, match => {
             codeBlocks.push(match);
             return `__CODE_BLOCK_${codeBlocks.length - 1}__`;
         });
 
-        // Escape < that is followed by non-alpha, non-slash, non-exclamation (like numbers, spaces or Persian letters/numbers)
-        result = result.replace(/<([^a-zA-Z\/!\?])/g, '&lt;$1');
+        // Escape < that is not an HTML tag
+        result = result.replace(/<([^a-zA-Z\/!\?{])/g, '&lt;$1');
 
-        // Restore code blocks
+        // Escape { and } if they are not part of an HTML attribute or tag
+        // Lone { and } in text will crash MDX
+        // But we must be careful not to break the <span style="..."> we just added
+        // A simple way is to escape { } that are surrounded by spaces or at word boundaries in text
+        result = result.replace(/ ([{}]) /g, ' {"$1"} ');
+
+        // If the content has Persian numbers followed by < or {
+        // (Just a safe fallback for the user's specific content)
+        result = result.replace(/([۰-۹])([<{])/g, '$1 $2');
+
         result = result.replace(/__CODE_BLOCK_(\d+)__/g, (_, idx) => codeBlocks[idx]);
 
         return result;
@@ -433,8 +474,23 @@ export class ContentPipeline {
         return match ? match[1].trim() : null;
     }
 
-    detectLanguage(filePath) {
-        return (filePath.includes('/en/') || filePath.includes('\\en\\')) ? 'en' : 'fa';
+    hasPersianCharacters(text) {
+        if (!text) return false;
+        const persianRegex = /[\u0600-\u06FF]/;
+        return persianRegex.test(text);
+    }
+
+    detectLanguage(filePath, content = null) {
+        // First priority: explicit path indicators
+        if (filePath.includes('/en/') || filePath.includes('\\en\\')) return 'en';
+        if (filePath.includes('/fa/') || filePath.includes('\\fa\\')) return 'fa';
+
+        // Second priority: content heuristic (if content provided or file can be read)
+        if (content && this.hasPersianCharacters(content)) return 'fa';
+
+        // Default to 'fa' for this project as requested, or 'en' if preferred.
+        // But let's try reading a bit of the file if content wasn't provided.
+        return 'fa';
     }
 
     buildFrontmatter(result) {
@@ -454,7 +510,8 @@ export class ContentPipeline {
             lang: lang,
             publishDate: existing.publishDate || new Date().toISOString().split('T')[0],
             author: existing.author || defaultAuthor,
-            sourceType: existing.sourceType || result.type
+            sourceType: existing.sourceType || result.type,
+            interface: existing.interface || (result.metadata?.bookSlug ? 'iran' : undefined)
         };
 
         // Preserve existing frontmatter fields
@@ -479,6 +536,16 @@ export class ContentPipeline {
         if (result.metadata?.bookSlug) fm.book = result.metadata.bookSlug;
         if (result.metadata?.chapterNumber) fm.chapterNumber = result.metadata.chapterNumber;
 
+        // Add PDF metadata
+        if (result.metadata?.pdfUrl || result.pdfUrl) fm.pdfUrl = result.metadata?.pdfUrl || result.pdfUrl;
+        if (result.metadata?.pdfOnly || result.pdfOnly) fm.pdfOnly = result.metadata?.pdfOnly || result.pdfOnly;
+        if (result.metadata?.showPdfViewer || result.showPdfViewer) fm.showPdfViewer = result.metadata?.showPdfViewer || result.showPdfViewer;
+
+        // Preserve manual overrides from existing frontmatter
+        if (existing.pdfUrl) fm.pdfUrl = existing.pdfUrl;
+        if (existing.pdfOnly !== undefined) fm.pdfOnly = existing.pdfOnly;
+        if (existing.showPdfViewer !== undefined) fm.showPdfViewer = existing.showPdfViewer;
+
         return fm;
     }
 
@@ -500,6 +567,22 @@ export class ContentPipeline {
 
     async saveResult(result, outputDir, customFileName = null) {
         await fs.mkdir(outputDir, { recursive: true });
+
+        // Handle PDF source (copy to public)
+        if (result.type === 'pdf') {
+            const pdfName = path.basename(result.source);
+            // Determine subfolder based on outputDir (books or articles)
+            const typeDir = outputDir.includes('books') ? 'books' : 'articles';
+            const pubDocsDir = path.join(process.cwd(), 'public', 'documents', typeDir);
+            await fs.mkdir(pubDocsDir, { recursive: true });
+
+            const pdfDest = path.join(pubDocsDir, pdfName);
+            await fs.copyFile(result.source, pdfDest);
+
+            result.pdfUrl = `/documents/${typeDir}/${pdfName}`;
+            result.showPdfViewer = true;
+            result.pdfOnly = true;
+        }
 
         const frontmatter = this.buildFrontmatter(result);
 
@@ -541,39 +624,63 @@ export class ContentPipeline {
         return chapters;
     }
 
-    async processBook(bookDir, options = {}) {
+    async processBook(bookPath, options = {}) {
+        const stats = await fs.stat(bookPath);
+        const isDir = stats.isDirectory();
+        const ext = path.extname(bookPath).toLowerCase();
+
         // Skip language directories that don't directly contain books but only house book directories
-        if (path.basename(bookDir) === 'fa' || path.basename(bookDir) === 'en') {
-            const hasTexFiles = (await globby(`${bookDir}/*.tex`)).length > 0;
+        if (isDir && (path.basename(bookPath) === 'fa' || path.basename(bookPath) === 'en')) {
+            const hasTexFiles = (await globby(`${bookPath}/*.tex`)).length > 0;
             if (!hasTexFiles) return; // Not a book, just a language wrapper
         }
 
-        const bookSlug = options.slug || path.basename(bookDir);
-        const lang = options.lang || this.detectLanguage(bookDir) || 'fa';
+        const bookSlug = options.slug || path.basename(bookPath, ext);
+        let lang = options.lang || this.detectLanguage(bookPath);
 
         console.log(`\n${'═'.repeat(60)}`);
         console.log(`📚 کتاب: ${bookSlug}`);
         console.log(`${'═'.repeat(60)}`);
 
         let config;
-        try {
-            config = await this.parser.analyzeProject(bookDir);
-            this.configCache.set(bookSlug, config);
-            await this.styleGen.generateCSS(config, bookSlug);
-        } catch {
+        let chapters = [];
+        let pdfSource = null;
+
+        if (isDir) {
+            try {
+                config = await this.parser.analyzeProject(bookPath);
+                this.configCache.set(bookSlug, config);
+                await this.styleGen.generateCSS(config, bookSlug);
+            } catch {
+                config = await this.parser.getDefaultConfig();
+            }
+            chapters = await this.findChapters(bookPath);
+            pdfSource = await this.findRelatedPDF(bookPath);
+        } else {
             config = await this.parser.getDefaultConfig();
+            if (CONFIG.supportedFormats.latex.includes(ext)) {
+                chapters = [bookPath];
+            } else if (CONFIG.supportedFormats.pdf.includes(ext)) {
+                pdfSource = bookPath;
+            }
+            // Check for related PDF for standalone tex
+            if (!pdfSource) pdfSource = await this.findRelatedPDF(bookPath);
         }
 
-        const chapters = await this.findChapters(bookDir);
         console.log(`   📑 فصل‌ها: ${chapters.length}`);
 
         const outputDir = path.join(CONFIG.outputDir, 'books', lang, bookSlug);
         await fs.mkdir(outputDir, { recursive: true });
 
-        // Calculate a composite hash for the entire book based on chapters, main file, config, and PDF
-        const allRelevantFiles = [...chapters, path.join(bookDir, 'main.tex')].filter(Boolean);
-        const pdfFiles = await globby(`${bookDir}/*.pdf`);
-        allRelevantFiles.push(...pdfFiles);
+        // Calculate a composite hash
+        const allRelevantFiles = [...chapters];
+        if (pdfSource) allRelevantFiles.push(pdfSource);
+        if (isDir) {
+            const mainFile = path.join(bookPath, 'main.tex');
+            if (await fs.access(mainFile).then(() => true).catch(() => false)) {
+                allRelevantFiles.push(mainFile);
+            }
+        }
 
         let compositeString = '';
         for (const f of allRelevantFiles) {
@@ -587,7 +694,7 @@ export class ContentPipeline {
         const indexPath = path.join(outputDir, 'index.mdx');
         const bookExists = await fs.access(indexPath).then(() => true).catch(() => false);
 
-        if (bookHash && this.hashes[bookDir] === bookHash && bookExists) {
+        if (bookHash && this.hashes[bookPath] === bookHash && bookExists) {
             console.log(`   ⏩ مستندات تغییر نکرده‌اند. صرف‌نظر: ${bookSlug}`);
             this.stats.skipped = (this.stats.skipped || 0) + 1;
             return;
@@ -597,8 +704,7 @@ export class ContentPipeline {
         let pdfUrl = undefined;
         let showPdfViewer = undefined;
 
-        if (pdfFiles.length > 0) {
-            const pdfSource = pdfFiles[0];
+        if (pdfSource) {
             const pdfName = path.basename(pdfSource);
             const pubDocsDir = path.join(process.cwd(), 'public', 'documents', 'books');
             await fs.mkdir(pubDocsDir, { recursive: true });
@@ -613,7 +719,9 @@ export class ContentPipeline {
 
         let combinedContent = '';
         let commonMetadata = null;
+        let conversionFailed = false;
 
+        // Process chapters
         for (let i = 0; i < chapters.length; i++) {
             const chapterPath = chapters[i];
             const chapterNumber = i + 1;
@@ -622,18 +730,35 @@ export class ContentPipeline {
                 const result = await this.processFile(chapterPath, { bookSlug, chapterNumber, config, lang });
 
                 if (result) {
-                    const chapterName = path.basename(chapterPath, '.tex');
                     if (!commonMetadata) commonMetadata = result;
-                    combinedContent += `\n\n## فصل ${chapterNumber}: ${result.title || chapterName}\n\n`;
+                    if (chapters.length > 1) {
+                        const chapterName = path.basename(chapterPath, path.extname(chapterPath));
+                        combinedContent += `\n\n## فصل ${chapterNumber}: ${result.title || chapterName}\n\n`;
+                    }
                     combinedContent += result.content;
                 }
             } catch (error) {
                 console.error(`   ❌ فصل ${chapterNumber}: ${error.message}`);
+                conversionFailed = true;
             }
         }
 
+        // Fallback to PDF-only if conversion failed or no chapters, and we have a PDF
+        if ((conversionFailed || !combinedContent) && pdfSource) {
+            console.log(`   💡 استفاده از نسخه PDF به عنوان محتوای اصلی...`);
+            const pdfResult = await this.processPDF(pdfSource, { lang });
+            commonMetadata = pdfResult;
+            combinedContent = pdfResult.content;
+            // Mark as PDF-only to bypass MDX rendering in frontend
+            commonMetadata.metadata = { ...commonMetadata.metadata, pdfOnly: true, showPdfViewer: true };
+        }
+
         if (combinedContent && commonMetadata) {
-            // Remove previous chapter generation logic and only generate a single index file
+            // Heuristic for language if not explicitly set
+            if (!options.lang && this.hasPersianCharacters(combinedContent)) {
+                lang = 'fa';
+            }
+
             const bookResult = {
                 ...commonMetadata,
                 title: bookSlug.replace(/-/g, ' '),
@@ -646,15 +771,45 @@ export class ContentPipeline {
                     ...(pdfUrl ? { pdfUrl, showPdfViewer } : {})
                 }
             };
-            await this.saveResult(bookResult, outputDir, 'index');
+
+            // Re-calculate final output path in case lang changed
+            const finalOutputDir = path.join(CONFIG.outputDir, 'books', lang, bookSlug);
+            await this.saveResult(bookResult, finalOutputDir, 'index');
             console.log(`   ✅ کتاب ${bookSlug} کامل شد و در index.mdx ترکیب شد!`);
 
             if (bookHash) {
-                this.hashes[bookDir] = bookHash;
+                this.hashes[bookPath] = bookHash;
             }
         } else {
             console.log(`   ⚠️ کتاب ${bookSlug} فاقد محتوای معتبر بود.`);
         }
+    }
+
+    async findRelatedPDF(itemPath) {
+        const isDir = (await fs.stat(itemPath)).isDirectory();
+        const baseDir = isDir ? itemPath : path.dirname(itemPath);
+        const fileName = isDir ? path.basename(itemPath) : path.basename(itemPath, path.extname(itemPath));
+
+        // 1. Same name in same folder (for standalone files)
+        const candidates = [
+            path.join(baseDir, `${fileName}.pdf`),
+            path.join(baseDir, `${fileName}.PDF`)
+        ];
+
+        // 2. Any PDF inside the folder (for book folders)
+        if (isDir) {
+            const pdfs = await globby(`${itemPath}/*.pdf`, { nocase: true });
+            if (pdfs.length > 0) return pdfs[0];
+        }
+
+        for (const candidate of candidates) {
+            try {
+                await fs.access(candidate);
+                return candidate;
+            } catch { }
+        }
+
+        return null;
     }
 
     async generateBookIndex(bookSlug, chapters, outputDir, lang) {
@@ -681,14 +836,54 @@ ${chapters.map((ch, i) => {
 
         await this.loadHashes();
 
-        const bookDirs = await globby([`${CONFIG.sourceDir}/books/*`, `${CONFIG.sourceDir}/books/*/*`], { onlyDirectories: true });
-        console.log(`📚 مسیر کتاب‌های پیدا شده: ${bookDirs.length}`);
+        // 1. Find all potential book items
+        const bookPatterns = [
+            `${CONFIG.sourceDir}/books/*`,
+            ...Object.values(CONFIG.supportedFormats).flat().map(ext => `${CONFIG.sourceDir}/books/*${ext}`),
+            `${CONFIG.sourceDir}/books/*/*`,
+            ...Object.values(CONFIG.supportedFormats).flat().map(ext => `${CONFIG.sourceDir}/books/*/*${ext}`)
+        ];
 
-        for (const bookDir of bookDirs) {
+        const allItems = await globby(bookPatterns, { expandDirectories: false });
+        const uniqueItems = [...new Set(allItems)].filter(i => !i.includes('.content-cache'));
+
+        console.log(`📚 موارد پیدا شده در بخش کتاب‌ها: ${uniqueItems.length}`);
+
+        const processedPaths = new Set();
+
+        // Process Books
+        for (const itemPath of uniqueItems) {
+            if (processedPaths.has(itemPath)) continue;
+
+            const isDir = (await fs.stat(itemPath)).isDirectory();
+            const ext = path.extname(itemPath).toLowerCase();
+
             try {
-                await this.processBook(bookDir, options);
+                if (isDir) {
+                    // It's a directory, treat as a book
+                    await this.processBook(itemPath, options);
+                    processedPaths.add(itemPath);
+
+                    // Mark associated PDFs as processed
+                    const companionPdf = await this.findRelatedPDF(itemPath);
+                    if (companionPdf) processedPaths.add(companionPdf);
+                } else if (CONFIG.supportedFormats.zip.includes(ext)) {
+                    await this.processZipBook(itemPath, options);
+                    processedPaths.add(itemPath);
+                } else if (CONFIG.supportedFormats.latex.includes(ext)) {
+                    await this.processBook(itemPath, options);
+                    processedPaths.add(itemPath);
+
+                    const companionPdf = await this.findRelatedPDF(itemPath);
+                    if (companionPdf) processedPaths.add(companionPdf);
+                } else if (CONFIG.supportedFormats.pdf.includes(ext)) {
+                    // Only process as book if it's not a companion to anything else
+                    // (But we iterate through all items, so we'll check later if it was already processed)
+                    await this.processBook(itemPath, options);
+                    processedPaths.add(itemPath);
+                }
             } catch (error) {
-                console.error(`❌ خطا در ${path.basename(bookDir)}: ${error.message}`);
+                console.error(`❌ خطا در پردازش ${path.basename(itemPath)}: ${error.message}`);
             }
         }
 

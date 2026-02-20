@@ -99,6 +99,11 @@ const availableInterfaces = allInterfaces.filter((iface) => relevantCategories.s
                     <span>{book.rating.toFixed(1)}</span>
                   </div>
                 )}
+                {book.data.pdfOnly && (
+                  <div class="px-2 py-0.5 rounded bg-red-100 text-red-600 dark:bg-red-900/20 dark:text-red-400 text-[10px] font-bold uppercase tracking-wider shrink-0 mt-1">
+                    PDF
+                  </div>
+                )}
               </div>
               <p class="text-sm text-text-muted dark:text-text-dark-muted mb-4 line-clamp-2">
                 {book.data.description}

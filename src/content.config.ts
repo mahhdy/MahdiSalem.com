@@ -11,6 +11,7 @@ const books = defineCollection({
     coverImage: z.string().optional(),
     pdfUrl: z.string().optional(),
     showPdfViewer: z.boolean().default(false),
+    pdfOnly: z.boolean().default(false),
     publishDate: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
     category: z.union([z.string(), z.array(z.string())]).optional(),
@@ -44,6 +45,8 @@ const articles = defineCollection({
     tags: z.array(z.string()).default([]),
     'show-header': z.boolean().default(false),
     coverImage: z.string().optional(),
+    pdfUrl: z.string().optional(),
+    pdfOnly: z.boolean().default(false),
     draft: z.boolean().default(false),
   }),
 });
@@ -61,6 +64,8 @@ const statements = defineCollection({
     subject: z.union([z.string(), z.array(z.string())]).optional(),
     interface: z.string().optional(), // Category taxonomy field
     tags: z.array(z.string()).optional(),
+    pdfUrl: z.string().optional(),
+    pdfOnly: z.boolean().default(false),
     draft: z.boolean().default(false),
   }),
 });
