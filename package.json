@@ -13,6 +13,7 @@
     "content:file": "node scripts/process-content.mjs --file",
     "content:watch": "node scripts/watch-content.mjs",
     "content:watch:no-ai": "node scripts/watch-content.mjs --no-ai",
+    "test:mermaid": "node scripts/extract-mermaid-tests.mjs",
     "dev:watch": "npm-run-all --parallel dev content:watch",
     "admin:server": "cd admin/server && npx tsx --watch src/index.ts",
     "admin:client": "cd admin/client && npx vite --port 3333",
