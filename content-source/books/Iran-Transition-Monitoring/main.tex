@@ -1,0 +1,114 @@
+% ╔══════════════════════════════════════════════════════════════════╗
+% ║  نظارت بین‌المللی بر گذار دموکراتیک ایران                      ║
+% ║  ابعاد، انتخاب‌ها و انتظارات                                    ║
+% ║  مهدی سالم — ۲۰۲۵                                              ║
+% ╚══════════════════════════════════════════════════════════════════╝
+
+\documentclass[
+    a4paper,
+    12pt,
+    twoside,
+    openright,
+    final              % تغییر به draft برای نمایش سرریزها
+]{book}
+% بارگذاری بسته‌ها و تنظیمات
+\input{preamble/packages}
+% ============================================================
+% بارگذاری xepersian — آخرین بسته
+% ============================================================
+\usepackage{xepersian}
+% مرحله ۳: فونت‌ها (بعد از xepersian)
+% ═══════════════════════════════════════════════════════
+\input{preamble/fonts}
+% ═══════════════════════════════════════════════════════
+% مرحله ۴: کادرها (بعد از xepersian)
+% ═══════════════════════════════════════════════════════
+\input{preamble/boxes}
+% ═══════════════════════════════════════════════════════
+% مرحله ۵: دستورات (بعد از xepersian — نیاز به \lr)
+% ═══════════════════════════════════════════════════════
+\input{preamble/commands}
+% ═══════════════════════════════════════════════════════
+% مرحله ۶: صفحه‌آرایی (بعد از xepersian)
+% ═══════════════════════════════════════════════════════
+\input{preamble/layout}
+% ============================================================
+% عنوان‌های فارسی
+% ============================================================
+\renewcommand{\contentsname}{فهرست مطالب}
+\renewcommand{\listfigurename}{فهرست شکل‌ها و نمودارها}
+\renewcommand{\listtablename}{فهرست جداول}
+\renewcommand{\bibname}{فهرست منابع و مراجع}
+\renewcommand{\appendixname}{پیوست}
+\renewcommand{\indexname}{نمایه}
+\renewcommand{\figurename}{شکل}
+\renewcommand{\tablename}{جدول}
+\renewcommand{\chaptername}{فصل}
+\renewcommand{\partname}{بخش}
+
+% ============================================================
+% واژه‌نامه
+% ============================================================
+\input{glossary}
+
+% ============================================================
+% شروع سند
+% ============================================================
+\begin{document}
+
+% ---- صفحات ابتدایی ----
+\frontmatter
+\input{chapters/titlepage}
+\input{chapters/dedication}
+\input{chapters/ch00-preface}
+
+\dominitoc
+\tableofcontents
+\clearpage
+\listoftables
+\clearpage
+\listoffigures
+
+% ---- فصول اصلی ----
+\mainmatter
+
+\input{chapters/ch01-theoretical}
+\input{chapters/ch02-why-iran}
+\input{chapters/ch03-approaches}
+\input{chapters/ch04-scenarios}
+\input{chapters/ch05-actors}
+\input{chapters/ch06-guarantees}
+\input{chapters/ch07-risks}
+\input{chapters/ch08-requirements}
+\input{chapters/ch09-timeline}
+\input{chapters/ch10-budget}
+\input{chapters/ch11-roadmap}
+\input{chapters/ch12-conclusion}
+
+% ---- پیوست‌ها ----
+\appendix
+\input{appendices/app-A-comparison}
+\input{appendices/app-B-south-africa}
+\input{appendices/app-C-chile}
+\input{appendices/app-D-tunisia}
+\input{appendices/app-E-poland}
+\input{appendices/app-F-iraq}
+\input{appendices/app-G-myanmar}
+\input{appendices/app-H-timor}
+\input{appendices/app-I-glossary}
+\input{appendices/app-J-directory}
+
+% ---- منابع ----
+\backmatter
+\printbibliography[
+    heading=bibintoc,
+    title={فهرست منابع و مراجع}
+]
+
+% ---- واژه‌نامه ----
+\printglossaries
+
+% ---- نمایه ----
+\printindex
+
+\end{document}

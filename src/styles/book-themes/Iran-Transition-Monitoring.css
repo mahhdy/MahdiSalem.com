@@ -1,0 +1,45 @@
+/* تم خودکار: Iran-Transition-Monitoring */
+
+.book-Iran-Transition-Monitoring {
+  --color-main-purple: #6A0DAD;
+  --color-light-purple: #E8D5F5;
+  --color-dark-purple: #4A0078;
+  --color-purple-bg: #F3E5F5;
+  --color-main-blue: #1565C0;
+  --color-light-blue: #BBDEFB;
+  --color-dark-blue: #0D47A1;
+  --color-blue-bg: #E3F2FD;
+  --color-main-green: #2E7D32;
+  --color-light-green: #C8E6C9;
+  --color-dark-green: #1B5E20;
+  --color-green-bg: #E8F5E9;
+  --color-main-orange: #E65100;
+  --color-light-orange: #FFE0B2;
+  --color-dark-orange: #BF360C;
+  --color-orange-bg: #FFF3E0;
+  --color-main-red: #B71C1C;
+  --color-light-red: #FFCDD2;
+  --color-dark-red: #7F0000;
+  --color-red-bg: #FFEBEE;
+  --color-main-yellow: #F9A825;
+  --color-light-yellow: #FFF9C4;
+  --color-dark-yellow: #F57F17;
+  --color-yellow-bg: #FFFDE7;
+  --color-dark-gray: #424242;
+  --color-medium-gray: #757575;
+  --color-light-gray: #E0E0E0;
+  --color-very-light-gray: #F5F5F5;
+  --color-link-color: #1976D2;
+  --color-cite-color: #6A1B9A;
+  --color-urlcolor: #E65100;
+  --color-code-bg: #263238;
+  --color-code-text: #EEFFFF;
+  --color-highlight-gold: #FFD54F;
+  --color-table-header-bg: #E8EAF6;
+  --color-table-alt-row: #F8F8F8;
+}
+
+
+.book-Iran-Transition-Monitoring { font-family: var(--font-main, 'Vazirmatn', serif); }
+.book-Iran-Transition-Monitoring .tikz-diagram { max-width: 100%; height: auto; margin: 2rem auto; display: block; }
+.book-Iran-Transition-Monitoring figure.tikz-figure { text-align: center; margin: 2rem 0; }

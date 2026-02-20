@@ -1,0 +1,23 @@
+/* تم خودکار: Nations-States */
+
+.book-Nations-States {
+  --color-primary-dark: #1B2A4A;
+  --color-primary-mid: #2C5F8A;
+  --color-primary-light: #5B9BD5;
+  --color-accent-gold: #D4A84B;
+  --color-accent-copper: #C1724C;
+  --color-bg-cream: #FAF8F4;
+  --color-bg-light-blue: #EDF4FB;
+  --color-bg-light-gold: #FDF8EE;
+  --color-text-dark: #2D2D2D;
+  --color-text-mid: #555555;
+  --color-border-light: #D6D6D6;
+  --color-success-green: #3A7D44;
+  --color-warning-orange: #E8913A;
+  --color-danger-red: #C0392B;
+}
+
+
+.book-Nations-States { font-family: var(--font-main, 'Vazirmatn', serif); }
+.book-Nations-States .tikz-diagram { max-width: 100%; height: auto; margin: 2rem auto; display: block; }
+.book-Nations-States figure.tikz-figure { text-align: center; margin: 2rem 0; }

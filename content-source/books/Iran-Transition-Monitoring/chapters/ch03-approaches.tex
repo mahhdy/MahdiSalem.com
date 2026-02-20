@@ -1,0 +1,1424 @@
+% ╔══════════════════════════════════════════════════════════════════╗
+% ║  فصل ۳: رویکردها، ساختارها و محدوده‌های نظارت                  ║
+% ║  تحلیل مقایسه‌ای شش مدل + مدل ترکیبی پیشنهادی                 ║
+% ║  ** قلب تحلیلی کتاب **                                         ║
+% ╚══════════════════════════════════════════════════════════════════╝
+
+% ---- صفحه‌ی آغازین فصل ----
+\chapteropening{۳}
+    {رویکردها، ساختارها و محدوده‌های نظارت}
+    {MainGreen}
+    {بدترین کار این است که مردم را وادار کنیم 
+    چرخ را دوباره اختراع کنند، در حالی که تجربه‌ی 
+    دیگران روی میز است. اما بدتر از آن، کپی 
+    کورکورانه‌ی تجربه‌ی دیگران بدون درک 
+    زمینه‌ی خودمان است.}
+    {کوفی عنان، دبیرکل سابق سازمان ملل}
+
+\chapter{رویکردها، ساختارها و محدوده‌های نظارت: 
+تحلیل مقایسه‌ای}
+\label{ch:approaches}
+\minitoc
+
+% ---- خلاصه‌ی اجرایی فصل ----
+\begin{executivesummary}
+این فصل \emphgreen{قلب تحلیلی کتاب} است. 
+در اینجا شش مدل متمایز نظارت بین‌المللی بر 
+گذار شناسایی، تشریح و مقایسه می‌شوند — 
+از «نظارت انتخاباتی محدود» تا 
+«مدیریت بین‌المللی مستقیم». هر مدل از نظر 
+قوت‌ها، ضعف‌ها، نیروی انسانی، هزینه، 
+تناسب با ایران و درس‌های تاریخی تحلیل 
+می‌شود. سپس \emphgreen{مدل ششم (ترکیبی-تطبیقی)} 
+به‌عنوان مدل پیشنهادی این کتاب معرفی می‌گردد: 
+مدلی فازبندی‌شده که عناصر بهترین مدل‌ها را 
+با ویژگی‌های خاص ایران ترکیب می‌کند.
+\end{executivesummary}
+
+% ============================================================
+\section{طیف نظارت: از حداقل تا حداکثر}
+\label{sec:monitoring-spectrum}
+% ============================================================
+
+پیش از بررسی تفصیلی هر مدل، مهم است که 
+جایگاه آن‌ها را در یک طیف کلی ببینیم:
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[
+        scale=0.95,
+        model/.style={
+            draw, rounded corners=3pt,
+            minimum height=1.8cm, minimum width=2.6cm,
+            align=center, font=\footnotesize\bfseries,
+            drop shadow={shadow xshift=0.5mm, 
+            shadow yshift=-0.5mm, opacity=0.3}
+        }
+    ]
+    
+    % فلش طیف
+    \draw[ultra thick, -{Stealth[length=4mm]}, 
+        gray!60] (-1, -1.5) -- (15, -1.5);
+    
+    % برچسب‌های طیف
+    \node[font=\small\bfseries, MainGreen] 
+        at (0, -2.2) {حداقلی};
+    \node[font=\small\bfseries, MainRed] 
+        at (14, -2.2) {حداکثری};
+    
+    \node[font=\tiny, MediumGray] 
+        at (0, -2.7) {تهاجم کم به حاکمیت};
+    \node[font=\tiny, MediumGray] 
+        at (14, -2.7) {تهاجم زیاد به حاکمیت};
+    
+    % مدل‌ها
+    \node[model, fill=GreenBG, draw=MainGreen] 
+        (m1) at (0.5, 0.5) {
+        مدل ۱\\[2pt]
+        \footnotesize نظارت\\انتخاباتی\\محدود
+    };
+    
+    \node[model, fill=GreenBG, draw=MainGreen!70] 
+        (m2) at (3.3, 0.5) {
+        مدل ۲\\[2pt]
+        \footnotesize نظارت\\مشورتی\\و فنی
+    };
+    
+    \node[model, fill=BlueBG, draw=MainBlue] 
+        (m3) at (6.1, 0.5) {
+        مدل ۳\\[2pt]
+        \footnotesize نظارت\\ساختاری\\و نهادی
+    };
+    
+    \node[model, fill=OrangeBG, draw=MainOrange] 
+        (m4) at (8.9, 0.5) {
+        مدل ۴\\[2pt]
+        \footnotesize نظارت\\اجرایی\\و تضمینی
+    };
+    
+    \node[model, fill=RedBG, draw=MainRed] 
+        (m5) at (11.7, 0.5) {
+        مدل ۵\\[2pt]
+        \footnotesize مدیریت\\بین‌المللی\\مستقیم
+    };
+    
+    % مدل ۶ پیشنهادی
+    \node[model, fill=PurpleBG, draw=MainPurple, 
+        line width=1.5pt] 
+        (m6) at (7.5, 3.2) {
+        مدل ۶\\[2pt]
+        \footnotesize ترکیبی\\تطبیقی\\(پیشنهادی)
+    };
+    
+    % فلش‌های مدل ۶
+    \draw[MainPurple, thick, dashed, ->] 
+        (m6.south west) -- (m2.north east);
+    \draw[MainPurple, thick, dashed, ->] 
+        (m6.south) -- (m3.north);
+    \draw[MainPurple, thick, dashed, ->] 
+        (m6.south east) -- (m4.north west);
+    
+    % برچسب مدل ۶
+    \node[font=\tiny\itshape, MainPurple, 
+        text width=4cm, align=center] 
+        at (7.5, 4.3) {
+        ترکیب عناصر مدل‌های ۲، ۳ و ۴\\
+        با فازبندی مرحله‌ای
+    };
+    
+    \end{tikzpicture}
+    \caption{طیف مدل‌های نظارت بین‌المللی 
+    و جایگاه مدل ترکیبی پیشنهادی}
+    \label{fig:monitoring-spectrum}
+\end{figure}
+
+\sectiondivider
+
+% ============================================================
+\section{مدل ۱: نظارت انتخاباتی محدود}
+\label{sec:model1}
+% ============================================================
+
+\begin{definitionbox}{نظارت انتخاباتی محدود 
+(\lr{Election-Only Monitoring})}
+حضور ناظران بین‌المللی صرفاً در دوره‌ی 
+انتخابات (معمولاً ۱ تا ۳ ماه) برای مشاهده‌ی 
+فرایند رأی‌گیری، شمارش آرا و اعلام نتایج. 
+بدون دخالت در طراحی نهادها، اصلاح قوانین 
+یا نظارت بلندمدت.
+\end{definitionbox}
+
+\subsection{محدوده و مکانیزم‌ها}
+
+\begin{itemize}[itemsep=4pt]
+    \item \textbf{پیش از رأی‌گیری:} 
+    بررسی فهرست رأی‌دهندگان، ثبت‌نام نامزدها، 
+    دسترسی به رسانه، فضای مبارزاتی
+    \item \textbf{روز رأی‌گیری:} 
+    حضور در شعب، مشاهده‌ی فرایند، 
+    گزارش تخلفات
+    \item \textbf{پس از رأی‌گیری:} 
+    نظارت بر شمارش، تأیید نتایج، 
+    گزارش نهایی
+\end{itemize}
+
+\subsection{نهادهای مجری معمول}
+
+\begin{table}[htbp]
+    \centering
+    \caption{نهادهای اصلی نظارت انتخاباتی 
+    بین‌المللی}
+    \label{tab:election-monitors}
+    \tablefontsize
+    \begin{tabularx}{\textwidth}{
+        L{2.5cm} X C{1.5cm} C{2cm}
+    }
+        \toprule
+        \headerrow
+        \textbf{نهاد} & 
+        \textbf{تخصص و سابقه} & 
+        \textbf{تعداد مأموریت} &
+        \textbf{اعتبار} \\
+        \midrule
+        
+        \lr{OSCE/ODIHR} &
+        معتبرترین نهاد نظارت انتخاباتی اروپا، 
+        استانداردهای دقیق &
+        ۴۰۰+ &
+        \starrating{5} \\
+        \altrow
+        
+        \lr{EU EOM} &
+        مأموریت‌های نظارت انتخاباتی اتحادیه 
+        اروپا در خارج از اروپا &
+        ۱۵۰+ &
+        \starrating{4} \\
+        
+        \lr{Carter Center} &
+        نظارت انتخاباتی مستقل، 
+        ۳۹ کشور &
+        ۱۱۰+ &
+        \starrating{5} \\
+        \altrow
+        
+        \lr{Commonwealth} &
+        نظارت در کشورهای مشترک‌المنافع &
+        ۱۵۰+ &
+        \starrating{3} \\
+        
+        \lr{African Union} &
+        نظارت در آفریقا &
+        ۱۰۰+ &
+        \starrating{3} \\
+        
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsection{تحلیل قوت‌ها و ضعف‌ها}
+
+\begin{table}[htbp]
+    \centering
+    \caption{تحلیل \lr{SWOT} مدل ۱: 
+    نظارت انتخاباتی محدود}
+    \label{tab:model1-swot}
+    \begin{tabularx}{\textwidth}{
+        C{0.5cm} X X
+    }
+        \toprule
+        \headerrow
+        & \textbf{مثبت} & \textbf{منفی} \\
+        \midrule
+        
+        \rotatebox{90}{\footnotesize\bfseries درونی} &
+        \cellgreen{
+        \textbf{قوت‌ها:}\\
+        • کم‌هزینه (\$۵-۲۰M)\\
+        • کم‌تنش با حاکمیت\\
+        • تجربه‌ی فراوان جهانی\\
+        • استقرار سریع\\
+        • استانداردهای شفاف
+        } &
+        \cellred{
+        \textbf{ضعف‌ها:}\\
+        • سطحی و ناکافی\\
+        • فاقد نظارت ساختاری\\
+        • قابل دور زدن\\
+        • فقط روز انتخابات\\
+        • بدون پی‌گیری
+        } \\
+        \altrow
+        
+        \rotatebox{90}{\footnotesize\bfseries بیرونی} &
+        \cellgreen{
+        \textbf{فرصت‌ها:}\\
+        • نقطه‌ی شروع خوب\\
+        • مشروعیت‌بخشی اولیه\\
+        • پذیرش عمومی بالا
+        } &
+        \cellred{
+        \textbf{تهدیدها:}\\
+        • مشروعیت‌بخشی کاذب\\
+        • توهم دموکراسی\\
+        • مصادره توسط اقتدارگرایان
+        } \\
+        
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsection{نیروی انسانی و هزینه}
+
+\begin{table}[htbp]
+    \centering
+    \caption{نیازمندی‌های عملیاتی مدل ۱}
+    \label{tab:model1-operations}
+    \begin{tabularx}{\textwidth}{L{3.5cm} X}
+        \toprule
+        \headerrow
+        \textbf{عنصر} & \textbf{تخمین} \\
+        \midrule
+        ناظران بلندمدت (\lr{LTO}) & 
+        ۵۰-۱۰۰ نفر (۲ ماه قبل) \\
+        \altrow
+        ناظران کوتاه‌مدت (\lr{STO}) & 
+        ۵۰۰-۲,۰۰۰ نفر (۱ هفته) \\
+        تیم هسته‌ای (\lr{Core Team}) & 
+        ۱۵-۳۰ نفر \\
+        \altrow
+        مدت استقرار & ۱-۳ ماه \\
+        بودجه‌ی تخمینی & 
+        \$۵-۲۰ میلیون \\
+        \altrow
+        نهادهای پشتیبان & 
+        \lr{OSCE, EU, Carter Center} \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsection{نمونه‌ی تاریخی و درس‌های آموخته}
+
+\begin{casestudy}{انتخابات میانمار ۲۰۱۰}
+در ۲۰۱۰ ارتش میانمار انتخاباتی برگزار کرد 
+که ظاهراً «چندحزبی» بود. ناظران بین‌المللی 
+محدودی حضور داشتند. حزب حامی ارتش با 
+اکثریت قاطع «پیروز» شد. جامعه‌ی بین‌المللی 
+نتوانست فرایند را رد کند زیرا نظارت کافی 
+نداشت. نتیجه: مشروعیت‌بخشی به نظام نظامی 
+برای ۵ سال دیگر.
+
+\vspace{4pt}
+\textbf{درس برای ایران:} 
+\emphred{نظارت انتخاباتی بدون نظارت ساختاری، 
+ابزار مشروعیت‌بخشی به اقتدارگرایی است.} 
+اگر در ایران فقط به نظارت روز انتخابات 
+بسنده شود — بدون نظارت بر فیلترینگ نامزدها، 
+آزادی رسانه و دسترسی اپوزیسیون — نتیجه 
+تکرار تجربه‌ی میانمار خواهد بود.
+\end{casestudy}
+
+\begin{keypoint}
+\textbf{حکم نهایی درباره‌ی مدل ۱ برای ایران:}
+\emphred{ناکافی و خطرناک} اگر به‌تنهایی 
+به‌کار رود. می‌تواند \emphgreen{بخشی از 
+یک مدل ترکیبی} باشد (فاز انتخاباتی)، 
+اما هرگز نباید تمام برنامه‌ی نظارت باشد.
+\end{keypoint}
+
+\sectiondivider
+
+% ============================================================
+\section{مدل ۲: نظارت مشورتی و فنی}
+\label{sec:model2}
+% ============================================================
+
+\begin{definitionbox}{نظارت مشورتی و فنی 
+(\lr{Advisory \& Technical Monitoring})}
+ارائه‌ی مشاوره‌ی تخصصی و کمک فنی 
+به نهادهای دوره‌ی گذار در حوزه‌های مختلف 
+(طراحی قانون انتخابات، ظرفیت‌سازی نهادی، 
+آموزش قضات و...) بدون قدرت اجرایی یا 
+حق وتو.
+\end{definitionbox}
+
+\subsection{محدوده و مکانیزم‌ها}
+
+\begin{itemize}[itemsep=4pt]
+    \item \textbf{مشاوره‌ی حقوقی:} 
+    کمک به تدوین قانون اساسی، قانون انتخابات، 
+    قانون احزاب و قانون رسانه
+    \item \textbf{ظرفیت‌سازی نهادی:} 
+    آموزش کارکنان کمیسیون انتخابات، قضات، 
+    پلیس و کارمندان دولتی
+    \item \textbf{انتقال دانش:} 
+    به‌اشتراک‌گذاری تجربه‌ی کشورهای دیگر
+    \item \textbf{ارزیابی و گزارش:} 
+    تهیه‌ی گزارش‌های فنی درباره‌ی وضعیت 
+    نهادها و پیشنهاد اصلاحات
+\end{itemize}
+
+\subsection{نهادهای مجری معمول}
+
+\begin{table}[htbp]
+    \centering
+    \caption{نهادهای اصلی نظارت مشورتی}
+    \label{tab:advisory-bodies}
+    \tablefontsize
+    \begin{tabularx}{\textwidth}{
+        L{2.5cm} X L{3cm}
+    }
+        \toprule
+        \headerrow
+        \textbf{نهاد} & 
+        \textbf{تخصص} & 
+        \textbf{نمونه‌ی فعالیت} \\
+        \midrule
+        
+        \lr{UNDP} &
+        ظرفیت‌سازی حکمرانی، 
+        توسعه‌ی نهادی، 
+        مدیریت انتخابات &
+        ۱۷۰ کشور \\
+        \altrow
+        
+        \lr{International IDEA} &
+        طراحی نظام انتخاباتی، 
+        دموکراسی‌سنجی &
+        تونس، مصر، نپال \\
+        
+        \lr{Venice Commission}\newline
+        (شورای اروپا) &
+        حقوق اساسی، 
+        قانون اساسی تطبیقی &
+        ۶۰+ کشور \\
+        \altrow
+        
+        \lr{IFES} &
+        زیرساخت انتخاباتی، 
+        فناوری رأی‌گیری &
+        ۱۴۵ کشور \\
+        
+        \lr{ICTJ} &
+        عدالت انتقالی، 
+        کمیسیون حقیقت &
+        ۳۰+ کشور \\
+        
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsection{تحلیل قوت‌ها و ضعف‌ها}
+
+\begin{table}[htbp]
+    \centering
+    \caption{تحلیل \lr{SWOT} مدل ۲: 
+    نظارت مشورتی و فنی}
+    \label{tab:model2-swot}
+    \begin{tabularx}{\textwidth}{
+        C{0.5cm} X X
+    }
+        \toprule
+        \headerrow
+        & \textbf{مثبت} & \textbf{منفی} \\
+        \midrule
+        
+        \rotatebox{90}{\footnotesize\bfseries درونی} &
+        \cellgreen{
+        \textbf{قوت‌ها:}\\
+        • ظرفیت‌سازی واقعی\\
+        • انتقال دانش بین‌المللی\\
+        • پذیرش بالای داخلی\\
+        • حفظ مالکیت ملی\\
+        • هزینه‌ی متوسط
+        } &
+        \cellred{
+        \textbf{ضعف‌ها:}\\
+        • فاقد قدرت اجرایی\\
+        • وابسته به حسن نیت\\
+        • توصیه‌ها قابل نادیده‌گیری\\
+        • سرعت کم\\
+        • بدون ضمانت اجرا
+        } \\
+        \altrow
+        
+        \rotatebox{90}{\footnotesize\bfseries بیرونی} &
+        \cellgreen{
+        \textbf{فرصت‌ها:}\\
+        • ساخت ظرفیت بلندمدت\\
+        • ایجاد شبکه‌ی متخصصان\\
+        • مقبولیت بین‌المللی
+        } &
+        \cellred{
+        \textbf{تهدیدها:}\\
+        • نادیده‌گرفتن توسط بازیگران\\
+        قدرتمند داخلی\\
+        • سوءاستفاده‌ی نمایشی\\
+        • فرسایش در طول زمان
+        } \\
+        
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsection{نمونه‌ی تاریخی: تونس ۲۰۱۱-۲۰۱۴}
+
+\begin{casestudy}{نظارت مشورتی در تونس}
+پس از انقلاب یاسمین (۲۰۱۱)، تونس از 
+مشاوره‌ی فنی گسترده‌ی نهادهای بین‌المللی 
+بهره برد: \lr{UNDP} در طراحی سیستم انتخاباتی، 
+\lr{Venice Commission} در تدوین قانون اساسی، 
+\lr{International IDEA} در ظرفیت‌سازی احزاب. 
+نتیجه: قانون اساسی ۲۰۱۴ یکی از مترقی‌ترین 
+قوانین اساسی جهان عرب شد.
+
+\vspace{4pt}
+\textbf{اما...} بدون ضمانت اجرایی، رئیس‌جمهور 
+قیس سعید در ۲۰۲۱ قانون اساسی را تعلیق کرد، 
+مجلس را منحل نمود و عملاً به اقتدارگرایی 
+بازگشت. ناظران مشورتی هیچ ابزاری برای 
+جلوگیری نداشتند.
+
+\vspace{4pt}
+\textbf{درس برای ایران:}
+\emphblue{مشاوره بدون ضمانت اجرا، در برابر 
+بازیگران فرصت‌طلب آسیب‌پذیر است.} مدل 
+مشورتی باید با مکانیزم‌های تضمینی ترکیب شود.
+\end{casestudy}
+
+\sectiondivider
+
+% ============================================================
+\section{مدل ۳: نظارت ساختاری و نهادی}
+\label{sec:model3}
+% ============================================================
+
+\begin{definitionbox}{نظارت ساختاری و نهادی 
+(\lr{Structural \& Institutional Oversight})}
+نظارت بلندمدت و عمیق بر فرایند اصلاح 
+ساختار نهادهای کلیدی کشور — از قانون اساسی 
+و قوه‌ی قضاییه تا بخش امنیتی و نظام اقتصادی — 
+با معیارهای مشخص (\lr{benchmarks}) 
+و مکانیزم‌های مشوق/تنبیه.
+\end{definitionbox}
+
+\subsection{محدوده و مکانیزم‌ها}
+
+\begin{itemize}[itemsep=4pt]
+    \item \textbf{نظارت بر قانون اساسی:} 
+    بررسی انطباق قانون اساسی جدید با 
+    استانداردهای دموکراتیک بین‌المللی
+    \item \textbf{اصلاح بخش امنیتی (\lr{SSR}):}
+    نظارت بر بازسازی ارتش، پلیس و 
+    نهادهای اطلاعاتی
+    \item \textbf{اصلاح قضایی:} 
+    استقلال قوه‌ی قضاییه، آموزش قضات، 
+    بازنگری قوانین
+    \item \textbf{معیارسنجی (\lr{Benchmarking}):}
+    تعیین شاخص‌های مشخص و اندازه‌گیری 
+    دوره‌ای پیشرفت
+    \item \textbf{مشوق/تنبیه (\lr{Conditionality}):}
+    پیوند پیشرفت در اصلاحات با مزایای 
+    بین‌المللی (رفع تحریم، کمک مالی، عضویت)
+\end{itemize}
+
+\subsection{نمونه‌ی تاریخی: 
+اروپای شرقی و مسیر الحاق به اتحادیه‌ی اروپا}
+
+\begin{casestudy}{نظارت ساختاری اتحادیه‌ی اروپا 
+بر اروپای شرقی (۱۹۹۰-۲۰۰۴)}
+پس از فروپاشی شوروی، کشورهای اروپای شرقی 
+(لهستان، چک، مجارستان، استونی و...) برای 
+الحاق به اتحادیه‌ی اروپا باید «معیارهای 
+کپنهاگ» را برآورده می‌کردند:
+
+\begin{enumerate}[itemsep=2pt, font=\small]
+    \item ثبات نهادهای تضمین‌کننده‌ی دموکراسی
+    \item حاکمیت قانون
+    \item حقوق بشر و حمایت از اقلیت‌ها
+    \item اقتصاد بازار کارآمد
+    \item ظرفیت پذیرش تعهدات عضویت
+\end{enumerate}
+
+\lr{EU} هر سال «گزارش پیشرفت» هر کشور را 
+منتشر می‌کرد. پیشرفت → نزدیکی به عضویت؛ 
+عقب‌گرد → تعویق. 
+\emphgreen{این مشوق (عضویت در EU) 
+قوی‌ترین اهرم نظارت ساختاری در تاریخ بود.}
+
+\vspace{4pt}
+\textbf{نتیجه:} ۱۰ کشور اروپای شرقی در 
+۲۰۰۴ و ۲۰۰۷ به EU پیوستند. 
+اکثر آن‌ها دموکراسی‌های پایدار شدند 
+(البته مجارستان و لهستان اخیراً پس‌رفت داشته‌اند).
+
+\vspace{4pt}
+\textbf{درس برای ایران:}
+\emphblue{مشوق خارجی (عضویت در EU) 
+کلید موفقیت این مدل بود. ایران چنین مشوقی 
+ندارد.} باید جایگزین‌هایی طراحی شود: 
+رفع تحریم‌ها، بسته‌ی حمایت اقتصادی، 
+و عضویت در سازمان‌های بین‌المللی.
+\end{casestudy}
+
+\subsection{تحلیل مقایسه‌ای: قوت‌ها، ضعف‌ها 
+و نیازمندی‌ها}
+
+\begin{table}[htbp]
+    \centering
+    \caption{مشخصات عملیاتی مدل ۳}
+    \label{tab:model3-specs}
+    \begin{tabularx}{\textwidth}{L{3.5cm} X}
+        \toprule
+        \headerrow
+        \textbf{عنصر} & \textbf{تخمین/توضیح} \\
+        \midrule
+        نیروی انسانی & 
+        ۵۰۰-۲,۰۰۰ کارشناس بخشی \\
+        \altrow
+        مدت زمان & ۳-۷ سال (حداقل) \\
+        بودجه‌ی تخمینی & 
+        \$۵۰۰M - \$۲B \\
+        \altrow
+        پیش‌نیاز اصلی & 
+        اجماع داخلی + مشوق خارجی قوی \\
+        قوت اصلی & 
+        عمق بالا، اصلاح واقعی نهادها \\
+        \altrow
+        ضعف اصلی & 
+        زمان‌بر، نیاز به مشوق 
+        (ایران مشوق EU ندارد) \\
+        تناسب با ایران & 
+        \cellblue{\textbf{بالا — اما نیاز به 
+        طراحی مشوق جایگزین}} \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\sectiondivider
+
+% ============================================================
+\section{مدل ۴: نظارت اجرایی و تضمینی}
+\label{sec:model4}
+% ============================================================
+
+\begin{definitionbox}{نظارت اجرایی و تضمینی 
+(\lr{Executive \& Guarantee-Based Oversight})}
+حضور بین‌المللی با قدرت اجرایی محدود 
+در حوزه‌های خاص (مانند امنیت، مالیه یا 
+انتخابات) و مکانیزم‌های تضمین‌کننده 
+برای جلوگیری از بازگشت اقتدارگرایانه. 
+شامل حق وتو یا تأیید بر تصمیمات 
+کلیدی در دوره‌ی معین.
+\end{definitionbox}
+
+\subsection{محدوده و مکانیزم‌ها}
+
+\begin{itemize}[itemsep=4pt]
+    \item \textbf{قدرت اجرایی محدود:} 
+    مثلاً تأیید فرمانده‌ی ارتش جدید، 
+    نظارت بر بودجه‌ی دفاعی، 
+    تأیید قضات ارشد
+    
+    \item \textbf{مکانیزم قفل‌کننده 
+    (\lr{Locking Mechanism}):}
+    ضمانت‌هایی که تغییر آن‌ها 
+    نیاز به تأیید بین‌المللی دارد 
+    (مثلاً تغییر قانون اساسی)
+    
+    \item \textbf{نیروهای بین‌المللی:} 
+    حضور نظامی/انتظامی 
+    بین‌المللی برای تضمین امنیت 
+    (مشابه \lr{KFOR} در کوزوو)
+    
+    \item \textbf{نظارت مالی:}
+    مدیریت مشترک درآمد نفت 
+    یا صندوق امانی بین‌المللی
+\end{itemize}
+
+\subsection{نمونه‌های تاریخی}
+
+\begin{table}[htbp]
+    \centering
+    \caption{نمونه‌های نظارت اجرایی در تاریخ}
+    \label{tab:model4-examples}
+    \tablefontsize
+    \begin{tabularx}{\textwidth}{
+        L{2cm} C{1.5cm} X C{1.5cm}
+    }
+        \toprule
+        \headerrow
+        \textbf{مورد} & 
+        \textbf{نهاد} & 
+        \textbf{محدوده‌ی اختیار} &
+        \textbf{نتیجه} \\
+        \midrule
+        
+        تیمور شرقی &
+        \lr{UNTAET} &
+        مدیریت کامل اجرایی → انتقال 
+        تدریجی به دولت ملی &
+        \cellgreen{نسبتاً موفق} \\
+        \altrow
+        
+        کوزوو &
+        \lr{UNMIK} &
+        مدیریت اجرایی + \lr{KFOR} 
+        (نیروی نظامی) &
+        \cellorange{ناتمام} \\
+        
+        بوسنی &
+        \lr{OHR} &
+        نماینده‌ی عالی با قدرت 
+        «بان» (حکم اجرایی) &
+        \cellorange{وابستگی} \\
+        \altrow
+        
+        کامبوج &
+        \lr{UNTAC} &
+        مدیریت مشترک + نظارت 
+        انتخاباتی &
+        \cellgreen{موفق اولیه} \\
+        
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{lessonlearned}
+\textbf{از تجربه‌ی تیمور شرقی (\lr{UNTAET}, 
+۱۹۹۹-۲۰۰۲):}
+\lr{UNTAET} موفق‌ترین نمونه‌ی نظارت اجرایی 
+محسوب می‌شود. دلایل موفقیت:
+\begin{enumerate}[itemsep=2pt, font=\small]
+    \item جمعیت کم (۱ میلیون) → قابل مدیریت
+    \item حمایت قاطع شورای امنیت
+    \item همکاری مردم محلی
+    \item \textbf{زمان‌بندی شفاف خروج}
+\end{enumerate}
+
+\textbf{اما:} تیمور ۱ میلیون نفر جمعیت داشت. 
+ایران ۸۵ میلیون. مقیاس‌پذیری مدل \lr{UNTAET} 
+برای ایران یک چالش بنیادین است. 
+همچنین ایران — بر خلاف تیمور — 
+یک قدرت منطقه‌ای با غرور ملی قوی است. 
+\emphblue{نظارت اجرایی بدون زمان‌بندی 
+خروج شفاف، به «اشغال» تبدیل می‌شود.}
+\end{lessonlearned}
+
+\begin{warningbox}
+\textbf{هشدار درباره‌ی مدل ۴ برای ایران:}
+هرگونه حضور «اجرایی» بین‌المللی در ایران 
+با حساسیت شدید ملی‌گرایانه مواجه خواهد شد. 
+ایرانیان حافظه‌ی تاریخی عمیقی از مداخله‌ی 
+خارجی دارند (کودتای ۲۸ مرداد ۱۳۳۲، 
+قرارداد ۱۹۱۹ وثوق‌الدوله). \emphred{هر 
+عنصر اجرایی باید با دقت فوق‌العاده، شفافیت 
+کامل و زمان‌بندی مشخص طراحی شود.}
+\end{warningbox}
+
+\sectiondivider
+
+% ============================================================
+\section{مدل ۵: مدیریت بین‌المللی مستقیم}
+\label{sec:model5}
+% ============================================================
+
+\begin{definitionbox}{مدیریت بین‌المللی مستقیم 
+(\lr{Full International Administration})}
+کنترل کامل یا شبه‌کامل حکمرانی توسط 
+نهاد بین‌المللی (معمولاً سازمان ملل یا 
+ائتلاف بین‌المللی) برای مدت معین. 
+تمام تصمیمات اجرایی، قضایی و تقنینی 
+توسط مقام بین‌المللی اتخاذ می‌شود.
+\end{definitionbox}
+
+\begin{warningbox}
+\textbf{موضع قاطع این کتاب:}
+\emphred{مدل ۵ برای ایران نه ممکن است، 
+نه مطلوب و نه مشروع.} بررسی این مدل 
+صرفاً به‌منظور کامل بودن تحلیل و 
+نشان دادن خطرات آن انجام می‌شود.
+\end{warningbox}
+
+\subsection{نمونه‌ی تاریخی: عراق (CPA, ۲۰۰۳-۲۰۰۴)}
+
+\begin{casestudy}{مدیریت مستقیم آمریکا در عراق}
+پس از سقوط صدام حسین (آوریل ۲۰۰۳)، 
+\org{مرجع موقت ائتلاف}%
+{Coalition Provisional Authority, CPA} 
+به ریاست \person{پل برمر}{L. Paul Bremer} 
+مدیریت کامل عراق را بر عهده گرفت.
+
+\vspace{4pt}
+\textbf{اقدامات فاجعه‌بار:}
+\begin{enumerate}[itemsep=2pt, font=\small]
+    \item \textbf{دی‌بعثی‌سازی:} اخراج 
+    ۵۰۰,۰۰۰ نفر → بیکاری و خشم
+    \item \textbf{انحلال ارتش:} ۳۵۰,۰۰۰ 
+    سرباز مسلح بیکار → شورش مسلحانه
+    \item \textbf{تصمیم‌گیری بدون مشورت:} 
+    ناآشنایی با فرهنگ و جامعه‌ی عراق
+    \item \textbf{فساد گسترده:} میلیاردها 
+    دلار هدر رفت
+\end{enumerate}
+
+\vspace{4pt}
+\textbf{نتیجه:} جنگ داخلی، ظهور داعش، 
+بیش از ۵۰۰,۰۰۰ کشته، ۲+ تریلیون 
+دلار هزینه، و عراقی که هنوز بی‌ثبات است.
+
+\vspace{4pt}
+\textbf{درس برای ایران:}
+\emphred{مدیریت مستقیم بین‌المللی بر 
+کشوری با ۸۵ میلیون جمعیت، تمدن ۳۰۰۰ 
+ساله و هویت ملی قوی، فاجعه‌بار خواهد بود. 
+این گزینه باید از ابتدا از روی میز 
+برداشته شود.}
+\end{casestudy}
+
+\sectiondivider
+
+% ============================================================
+\section{مدل ۶ (پیشنهادی): مدل ترکیبی-تطبیقی ایران}
+\label{sec:model6}
+% ============================================================
+
+\begin{keypoint}
+\textbf{ایده‌ی محوری مدل ۶:}
+هیچ مدل واحدی جواب نمی‌دهد. 
+\emphpurple{مدل ترکیبی-تطبیقی} عناصر 
+بهترین مدل‌ها (۲، ۳ و ۴) را ترکیب می‌کند 
+و آن‌ها را در سه فاز زمانی سازمان‌دهی 
+می‌کند — از نظارت سنگین‌تر در آغاز 
+به نظارت سبک‌تر در انتها.
+\end{keypoint}
+
+\subsection{فازبندی مدل ترکیبی}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[
+        phase/.style={
+            draw, rounded corners=4pt,
+            minimum height=3cm, minimum width=4.2cm,
+            align=center, font=\small,
+            drop shadow={opacity=0.2}
+        }
+    ]
+    
+    % فاز ۱
+    \node[phase, fill=RedBG, draw=MainRed] 
+        (p1) at (0, 0) {
+        \textbf{\large فاز ۱}\\[4pt]
+        \textbf{تثبیت}\\[2pt]
+        ماه ۱ تا ۶\\[4pt]
+        {\footnotesize 
+        نظارت اجرایی (مدل ۴)\\
+        بر امنیت + حقوق بشر\\
+        + انتخابات اولیه}
+    };
+    
+    % فاز ۲
+    \node[phase, fill=OrangeBG, draw=MainOrange] 
+        (p2) at (5.5, 0) {
+        \textbf{\large فاز ۲}\\[4pt]
+        \textbf{نهادسازی}\\[2pt]
+        ماه ۶ تا ۲۴\\[4pt]
+        {\footnotesize 
+        نظارت ساختاری (مدل ۳)\\
+        بر قانون اساسی + SSR\\
+        + عدالت انتقالی}
+    };
+    
+    % فاز ۳
+    \node[phase, fill=GreenBG, draw=MainGreen] 
+        (p3) at (11, 0) {
+        \textbf{\large فاز ۳}\\[4pt]
+        \textbf{تحکیم}\\[2pt]
+        ماه ۲۴ تا ۶۰\\[4pt]
+        {\footnotesize 
+        نظارت مشورتی (مدل ۲)\\
+        بر عملکرد نهادها\\
+        + کاهش تدریجی حضور}
+    };
+    
+    % فلش‌ها
+    \draw[-{Stealth}, ultra thick, MainOrange] 
+        (p1) -- (p2) 
+        node[midway, above, font=\tiny\bfseries] 
+        {ارزیابی};
+    \draw[-{Stealth}, ultra thick, MainGreen] 
+        (p2) -- (p3) 
+        node[midway, above, font=\tiny\bfseries] 
+        {ارزیابی};
+    
+    % شدت نظارت
+    \draw[ultra thick, MainRed!70, -{Stealth}] 
+        (0, -2.5) -- (11, -2.5)
+        node[midway, below, font=\small\bfseries] 
+        {کاهش تدریجی عمق نظارت};
+    
+    % مالکیت ملی
+    \draw[ultra thick, MainGreen!70, -{Stealth}] 
+        (0, -3.3) -- (11, -3.3)
+        node[midway, below, font=\small\bfseries] 
+        {افزایش تدریجی مالکیت ملی};
+    
+    \end{tikzpicture}
+    \caption{فازبندی مدل ترکیبی-تطبیقی 
+    پیشنهادی برای ایران}
+    \label{fig:hybrid-model}
+\end{figure}
+
+\subsection{جزئیات هر فاز}
+
+\subsubsection{فاز ۱: تثبیت (ماه ۱ تا ۶)}
+
+\begin{table}[htbp]
+    \centering
+    \caption{جزئیات عملیاتی فاز ۱ (تثبیت)}
+    \label{tab:phase1-details}
+    \tablefontsize
+    \begin{tabularx}{\textwidth}{
+        L{3cm} X
+    }
+        \toprule
+        \headerrow
+        \textbf{عنصر} & \textbf{توضیح} \\
+        \midrule
+        
+        هدف اصلی &
+        جلوگیری از خلأ امنیتی، ثبت نقض 
+        حقوق بشر، آماده‌سازی انتخابات اولیه \\
+        \altrow
+        
+        مدل غالب &
+        مدل ۴ (نظارت اجرایی) + عناصر مدل ۱ 
+        (نظارت انتخاباتی) \\
+        
+        اختیارات اجرایی &
+        تأیید فرماندهان امنیتی، نظارت بر بودجه‌ی 
+        دفاعی، حفاظت از زیرساخت‌های حیاتی 
+        (نفت، هسته‌ای) \\
+        \altrow
+        
+        نیروی انسانی &
+        ۳,۰۰۰-۵,۰۰۰ بین‌المللی + 
+        ۱۰,۰۰۰+ ناظر ایرانی \\
+        
+        بودجه‌ی تخمینی &
+        \$۵۰۰M - \$۱B \\
+        \altrow
+        
+        اقدامات کلیدی &
+        آزادی زندانیان سیاسی، بازگشایی 
+        رسانه‌ها، اعلام تقویم انتخاباتی، 
+        ایجاد کمیسیون انتخابات مستقل \\
+        
+        نقطه‌ی عطف خروج &
+        برگزاری موفق انتخابات اولیه 
+        (رفراندوم یا مجلس مؤسسان) \\
+        
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsubsection{فاز ۲: نهادسازی (ماه ۶ تا ۲۴)}
+
+\begin{table}[htbp]
+    \centering
+    \caption{جزئیات عملیاتی فاز ۲ (نهادسازی)}
+    \label{tab:phase2-details}
+    \tablefontsize
+    \begin{tabularx}{\textwidth}{
+        L{3cm} X
+    }
+        \toprule
+        \headerrow
+        \textbf{عنصر} & \textbf{توضیح} \\
+        \midrule
+        
+        هدف اصلی &
+        تدوین قانون اساسی، اصلاح بخش امنیتی، 
+        عدالت انتقالی، انتخابات پارلمانی \\
+        \altrow
+        
+        مدل غالب &
+        مدل ۳ (نظارت ساختاری) + عناصر مدل ۲ 
+        (مشاوره‌ی فنی) \\
+        
+        اختیارات &
+        مشاوره با قدرت نفوذ: توصیه‌های 
+        \lr{Venice Commission} + معیارسنجی + 
+        مشوق‌های مالی (رفع تحریم مرحله‌ای) \\
+        \altrow
+        
+        نیروی انسانی &
+        ۱,۵۰۰-۳,۰۰۰ کارشناس بخشی \\
+        
+        بودجه‌ی تخمینی &
+        \$۸۰۰M - \$۱.۵B \\
+        \altrow
+        
+        اقدامات کلیدی &
+        رفراندوم قانون اساسی، تأسیس دادگاه 
+        قانون اساسی، آغاز \lr{SSR}، 
+        تأسیس کمیسیون حقیقت و آشتی \\
+        
+        نقطه‌ی عطف خروج &
+        برگزاری انتخابات پارلمانی و 
+        ریاست‌جمهوری آزاد \\
+        
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsubsection{فاز ۳: تحکیم (ماه ۲۴ تا ۶۰)}
+
+\begin{table}[htbp]
+    \centering
+    \caption{جزئیات عملیاتی فاز ۳ (تحکیم)}
+    \label{tab:phase3-details}
+    \tablefontsize
+    \begin{tabularx}{\textwidth}{
+        L{3cm} X
+    }
+        \toprule
+        \headerrow
+        \textbf{عنصر} & \textbf{توضیح} \\
+        \midrule
+        
+        هدف اصلی &
+        نهادینه‌سازی دموکراسی، 
+        انتقال کامل مسئولیت به نهادهای ملی، 
+        کاهش تدریجی حضور بین‌المللی \\
+        \altrow
+        
+        مدل غالب &
+        مدل ۲ (نظارت مشورتی) + 
+        ارزیابی‌های دوره‌ای مستقل \\
+        
+        اختیارات &
+        مشاوره‌ی درخواست‌محور، ارزیابی 
+        سالانه، گزارش‌دهی بین‌المللی \\
+        \altrow
+        
+        نیروی انسانی &
+        ۲۰۰-۵۰۰ مشاور بلندمدت \\
+        
+        بودجه‌ی تخمینی &
+        \$۲۰۰-۵۰۰M (کل فاز) \\
+        \altrow
+        
+        اقدامات کلیدی &
+        دومین دوره‌ی انتخابات (اولین انتقال 
+        مسالمت‌آمیز قدرت)، تکمیل \lr{SSR}، 
+        جمع‌بندی عدالت انتقالی \\
+        
+        نقطه‌ی عطف خروج &
+        اولین انتقال مسالمت‌آمیز قدرت + 
+        شاخص‌های تحکیم محقق شده \\
+        
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\subsection{مکانیزم بازخورد و تنظیم مسیر}
+
+\begin{recommendation}
+\textbf{اصل انطباق‌پذیری:}
+مدل ترکیبی نباید خشک و از‌پیش‌تعیین‌شده 
+اجرا شود. در پایان هر فاز (و حتی درون هر فاز) 
+باید ارزیابی مستقل انجام شود و بر اساس 
+شرایط واقعی تنظیمات لازم اعمال گردد. 
+سه سناریوی ممکن در هر نقطه‌ی ارزیابی:
+
+\begin{enumerate}[itemsep=3pt]
+    \item \textcolor{MainGreen}{\textbf{پیشرفت مطلوب}} 
+    → انتقال به فاز بعد طبق برنامه
+    \item \textcolor{MainOrange}{\textbf{پیشرفت جزئی}} 
+    → تمدید فاز فعلی با اصلاحات
+    \item \textcolor{MainRed}{\textbf{بحران یا بازگشت}} 
+    → تقویت عناصر اجرایی و بازگشت 
+    موقت به فاز قبل
+\end{enumerate}
+\end{recommendation}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[
+        node distance=2cm,
+        decision/.style={
+            diamond, draw=MainPurple, fill=PurpleBG,
+            text width=2.2cm, align=center, 
+            inner sep=1pt, font=\tiny\bfseries,
+            aspect=1.5
+        },
+        process/.style={
+            rectangle, draw, rounded corners=3pt,
+            minimum height=0.8cm, minimum width=2.5cm,
+            align=center, font=\tiny\bfseries
+        },
+        good/.style={process, fill=GreenBG, draw=MainGreen},
+        mid/.style={process, fill=OrangeBG, draw=MainOrange},
+        bad/.style={process, fill=RedBG, draw=MainRed},
+        arr/.style={-{Stealth[length=2mm]}, thick}
+    ]
+    
+    % شروع
+    \node[process, fill=BlueBG, draw=MainBlue] 
+        (start) {پایان فاز N};
+    
+    % ارزیابی
+    \node[decision, below=1.5cm of start] 
+        (eval) {ارزیابی\\مستقل};
+    
+    % سه مسیر
+    \node[good, below left=1.5cm and 2cm of eval] 
+        (next) {انتقال به\\فاز N+1};
+    \node[mid, below=1.5cm of eval] 
+        (extend) {تمدید فاز N\\با اصلاحات};
+    \node[bad, below right=1.5cm and 2cm of eval] 
+        (back) {بازگشت به\\فاز N-1};
+    
+    % فلش‌ها
+    \draw[arr, MainGreen] (eval) -- (next)
+        node[midway, above left, font=\tiny] 
+        {شاخص‌ها محقق};
+    \draw[arr, MainOrange] (eval) -- (extend)
+        node[midway, right, font=\tiny] 
+        {پیشرفت جزئی};
+    \draw[arr, MainRed] (eval) -- (back)
+        node[midway, above right, font=\tiny] 
+        {بحران/بازگشت};
+    
+    \draw[arr] (start) -- (eval);
+    
+    \end{tikzpicture}
+    \caption{مکانیزم بازخورد و تنظیم مسیر 
+    در مدل ترکیبی-تطبیقی}
+    \label{fig:feedback-mechanism}
+\end{figure}
+
+\subsection{اصول بنیادین مدل ترکیبی}
+
+مدل ششم بر هفت اصل بنیادین استوار است 
+که باید در تمام فازها رعایت شوند:
+
+\begin{table}[htbp]
+    \centering
+    \caption{هفت اصل بنیادین مدل ترکیبی-تطبیقی}
+    \label{tab:model6-principles}
+    \begin{tabularx}{\textwidth}{
+        C{0.6cm} L{3cm} X
+    }
+        \toprule
+        \headerrow
+        \textbf{\#} & 
+        \textbf{اصل} & 
+        \textbf{معنای عملی} \\
+        \midrule
+        
+        ۱ &
+        \textbf{مالکیت ملی}
+        \newline\lr{\tiny National Ownership} &
+        ایرانیان تصمیم‌گیرنده‌ی نهایی هستند. 
+        نقش بین‌المللی: همراهی و نظارت، 
+        نه مدیریت \\
+        \altrow
+        
+        ۲ &
+        \textbf{فازبندی تدریجی}
+        \newline\lr{\tiny Phased Approach} &
+        شروع با نظارت عمیق‌تر، کاهش تدریجی 
+        تا استقلال کامل \\
+        
+        ۳ &
+        \textbf{انطباق‌پذیری}
+        \newline\lr{\tiny Adaptability} &
+        مدل نباید خشک باشد؛ بازنگری مستمر 
+        بر اساس شرایط واقعی \\
+        \altrow
+        
+        ۴ &
+        \textbf{فراگیری}
+        \newline\lr{\tiny Inclusivity} &
+        همه‌ی گروه‌ها (زنان، اقوام، جوانان، 
+        مذهبیون، سکولارها) باید نمایندگی شوند \\
+        
+        ۵ &
+        \textbf{شفافیت}
+        \newline\lr{\tiny Transparency} &
+        تمام تصمیمات، بودجه‌ها و ارزیابی‌ها 
+        باید عمومی باشند \\
+        \altrow
+        
+        ۶ &
+        \textbf{پاسخگویی دوسویه}
+        \newline\lr{\tiny Mutual Accountability} &
+        هم نهادهای ایرانی و هم نهادهای 
+        بین‌المللی باید پاسخگو باشند \\
+        
+        ۷ &
+        \textbf{خروج شفاف}
+        \newline\lr{\tiny Clear Exit} &
+        زمان‌بندی و شرایط خروج مأموریت 
+        بین‌المللی از ابتدا تعریف شود \\
+        
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\sectiondivider
+
+% ============================================================
+\section{جدول مقایسه‌ای کلان شش مدل}
+\label{sec:grand-comparison}
+% ============================================================
+
+جدول زیر خلاصه‌ی مقایسه‌ای شش مدل را 
+ارائه می‌دهد. به دلیل گستردگی، این جدول 
+در صفحه‌ی افقی چاپ شده است.
+
+% ---- جدول بزرگ در صفحه‌ی افقی ----
+\begin{landscape}
+\begin{table}[htbp]
+    \centering
+    \caption{جدول مقایسه‌ای کلان شش مدل 
+    نظارت بین‌المللی}
+    \label{tab:grand-comparison}
+    \bigtablefontsize
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabularx}{\linewidth}{
+        L{2.5cm}
+        C{2cm} C{2cm} C{2cm} 
+        C{2cm} C{2cm} C{2.5cm}
+    }
+        \toprule
+        \headerrow
+        \textbf{معیار} & 
+        \rotsmall{\textbf{مدل ۱: انتخاباتی}} &
+        \rotsmall{\textbf{مدل ۲: مشورتی}} &
+        \rotsmall{\textbf{مدل ۳: ساختاری}} &
+        \rotsmall{\textbf{مدل ۴: اجرایی}} &
+        \rotsmall{\textbf{مدل ۵: مدیریت مستقیم}} &
+        \rotsmall{\textbf{مدل ۶: ترکیبی (پیشنهادی)}} \\
+        \midrule
+        
+        عمق نظارت & 
+        \rating{1} & \rating{2} & \rating{3} & 
+        \rating{4} & \rating{5} & \rating{4} \\
+        \altrow
+        
+        پذیرش داخلی & 
+        \rating{5} & \rating{4} & \rating{3} & 
+        \rating{2} & \rating{1} & \rating{3} \\
+        
+        اثربخشی واقعی & 
+        \rating{1} & \rating{2} & \rating{4} & 
+        \rating{4} & \rating{3} & \rating{5} \\
+        \altrow
+        
+        ریسک شکست & 
+        \cellred{\rating{5}} & 
+        \cellorange{\rating{4}} & 
+        \cellgreen{\rating{2}} & 
+        \cellorange{\rating{3}} & 
+        \cellred{\rating{5}} & 
+        \cellgreen{\rating{2}} \\
+        
+        هزینه & 
+        \$۵-۲۰M & \$۵۰-۲۰۰M & 
+        \$۵۰۰M-۲B & \$۱-۳B & 
+        \$۳-۱۰B+ & \$۲.۵-۵B \\
+        \altrow
+        
+        نیروی انسانی & 
+        ۲۰۰-۲K & ۵۰-۱۵۰ & 
+        ۵۰۰-۲K & ۲-۱۰K & 
+        ۱۰-۵۰K & ۶-۱۲K \\
+        
+        مدت زمان & 
+        ۱-۳ ماه & ۱-۳ سال & 
+        ۳-۷ سال & ۲-۵ سال & 
+        ۳-۱۰+ سال & ۵ سال (فازی) \\
+        \altrow
+        
+        نمونه‌ی موفق & 
+        غنا ۲۰۱۲ & تونس ۲۰۱۱ & 
+        لهستان ۱۹۹۰ & تیمور ۱۹۹۹ & 
+        --- & (پیشنهادی) \\
+        
+        نمونه‌ی شکست & 
+        میانمار ۲۰۱۰ & تونس ۲۰۲۱ & 
+        مجارستان ۲۰۱۰+ & کوزوو (وابستگی) & 
+        عراق ۲۰۰۳ & --- \\
+        \altrow
+        
+        \textbf{تناسب با ایران} & 
+        \cellred{ناکافی} & 
+        \cellorange{جزئی} & 
+        \cellblue{بالا (بخشی)} & 
+        \cellorange{پرریسک} & 
+        \cellred{نامناسب} & 
+        \cellcolor{PurpleBG}\textbf{بهینه} \\
+        
+        \bottomrule
+    \end{tabularx}
+    
+    \vspace{6pt}
+    {\footnotesize
+    \rating{1} = خیلی کم \hspace{0.5cm}
+    \rating{2} = کم \hspace{0.5cm}
+    \rating{3} = متوسط \hspace{0.5cm}
+    \rating{4} = بالا \hspace{0.5cm}
+    \rating{5} = خیلی بالا
+    }
+\end{table}
+\end{landscape}
+
+\sectiondivider
+
+% ============================================================
+\section{نقش نظارت شهروندی و مکمل‌های 
+غیررسمی}
+\label{sec:citizen-monitoring}
+% ============================================================
+
+در کنار نظارت رسمی بین‌المللی، نظارت 
+شهروندی و مکمل‌های غیررسمی نقش حیاتی 
+دارند — به‌ویژه در کشوری مانند ایران که 
+جامعه‌ی مدنی فعال و جمعیت جوان و 
+آشنا به فناوری دارد.
+
+\subsection{انواع نظارت شهروندی}
+
+\begin{table}[htbp]
+    \centering
+    \caption{انواع نظارت شهروندی و 
+    ابزارهای مرتبط}
+    \label{tab:citizen-monitoring}
+    \tablefontsize
+    \begin{tabularx}{\textwidth}{
+        L{2.5cm} X L{3cm}
+    }
+        \toprule
+        \headerrow
+        \textbf{نوع} & 
+        \textbf{توضیح} & 
+        \textbf{ابزار/نمونه} \\
+        \midrule
+        
+        ناظران داخلی انتخابات &
+        شهروندان آموزش‌دیده که در شعب 
+        رأی‌گیری حضور دارند &
+        \lr{ISFED} (گرجستان)، 
+        \lr{NAMFREL} (فیلیپین) \\
+        \altrow
+        
+        روزنامه‌نگاری شهروندی &
+        مستندسازی رویدادها توسط 
+        شهروندان عادی &
+        تلگرام، توییتر، 
+        \lr{YouTube} \\
+        
+        پلتفرم‌های گزارش‌دهی &
+        سیستم‌های آنلاین گزارش 
+        تخلفات و نقض حقوق &
+        \lr{Ushahidi}، 
+        \lr{Electionwatch} \\
+        \altrow
+        
+        نظارت اجتماعی &
+        پایش عملکرد نهادهای عمومی 
+        توسط سازمان‌های مردم‌نهاد &
+        \lr{Transparency Intl.}\\
+        
+        نظارت دیجیتال &
+        تحلیل داده‌های باز، تصاویر 
+        ماهواره‌ای، هوش مصنوعی &
+        \lr{Bellingcat}، 
+        \lr{Planet Labs} \\
+        
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+\begin{operationalnote}
+\textbf{برای ایران:}
+با توجه به سابقه‌ی فعالیت مدنی ایرانیان 
+(حتی تحت سرکوب) و مهارت فناورانه‌ی 
+نسل جوان، نظارت شهروندی می‌تواند 
+مکمل بسیار قوی‌ای برای نظارت رسمی 
+بین‌المللی باشد. \emphgreen{باید از همین 
+الان برنامه‌ی آموزش ناظران شهروندی 
+ایرانی (داخل و دیاسپورا) آغاز شود.}
+\end{operationalnote}
+
+\sectiondivider
+
+% ============================================================
+\section{جمع‌بندی فصل}
+\label{sec:ch3-summary}
+% ============================================================
+
+\begin{chaptersummary}
+
+\textbf{آنچه در این فصل آموختیم:}
+
+\begin{enumerate}[
+    label=\textcolor{DarkGray}{\bfseries\arabic*.},
+    itemsep=4pt
+]
+    \item \textbf{شش مدل متمایز} نظارت بین‌المللی 
+    وجود دارد — از حداقلی (انتخاباتی) تا 
+    حداکثری (مدیریت مستقیم).
+    
+    \item \textbf{مدل ۱ (انتخاباتی)} برای ایران 
+    \emphred{ناکافی} است — نظارت بدون عمق 
+    ساختاری، ابزار مشروعیت‌بخشی کاذب می‌شود.
+    
+    \item \textbf{مدل ۲ (مشورتی)} مفید اما 
+    \emphred{ناکافی} است — بدون ضمانت اجرا، 
+    تجربه‌ی تونس تکرار می‌شود.
+    
+    \item \textbf{مدل ۳ (ساختاری)} مناسب‌ترین 
+    مدل منفرد است اما نیاز به \emphblue{مشوق 
+    خارجی قوی} دارد که معادل عضویت EU 
+    برای ایران طراحی شود.
+    
+    \item \textbf{مدل ۴ (اجرایی)} عناصر ضروری 
+    دارد اما \emphred{حساسیت ملی‌گرایانه} و 
+    \emphred{مقیاس‌ناپذیری} چالش‌های اصلی‌اند.
+    
+    \item \textbf{مدل ۵ (مدیریت مستقیم)} باید 
+    \emphred{قاطعانه رد شود} — تجربه‌ی عراق 
+    کافی است.
+    
+    \item \textbf{مدل ۶ (ترکیبی-تطبیقی)} — 
+    پیشنهاد این کتاب — عناصر مدل‌های ۲، ۳ 
+    و ۴ را در سه فاز زمانی ترکیب می‌کند: 
+    تثبیت → نهادسازی → تحکیم.
+    
+    \item \textbf{هفت اصل بنیادین} مدل ترکیبی: 
+    مالکیت ملی، فازبندی، انطباق‌پذیری، 
+    فراگیری، شفافیت، پاسخگویی دوسویه 
+    و خروج شفاف.
+    
+    \item \textbf{نظارت شهروندی} مکمل حیاتی 
+    نظارت رسمی است و باید از الان 
+    برنامه‌ریزی شود.
+\end{enumerate}
+
+\vspace{6pt}
+\begin{center}
+    \textcolor{MainOrange}{
+        \faArrowLeft\hspace{8pt}
+        \textbf{فصل بعد: سناریوهای گذار و 
+        مدل‌های نظارتی متناظر}
+        \hspace{8pt}\faArrowLeft
+    }
+\end{center}
+
+\end{chaptersummary}
+
+\chapterend

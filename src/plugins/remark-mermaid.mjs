@@ -7,13 +7,25 @@ export function remarkMermaid() {
     return (tree) => {
         visit(tree, 'code', (node, index, parent) => {
             if (node.lang === 'mermaid') {
-                // تبدیل بلوک کد به HTML
-                // Convert to proper mermaid.js format with escaped content
+                let processedValue = node.value;
+
+                // 1. Escape HTML to prevent MDX JSX parsing errors
+                processedValue = processedValue.replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+
+                // 2. Auto-quote Farsi text inside Mermaid nodes
+                // Match patterns like Node[متن فارسی] and replace with Node["متن فارسی"]
+                processedValue = processedValue.replace(/([\[\(\{>])([^"\[\(\{>][^\]\)\}<]+?)([\]\)\}])/g, (match, open, text, close) => {
+                    if (/[\u0600-\u06FF]/.test(text) && !text.includes('"')) {
+                        return `${open}"${text}"${close}`;
+                    }
+                    return match;
+                });
+
                 const html = {
                     type: 'html',
                     value: `<div class="mermaid-wrapper" role="figure">
 <div class="mermaid">
-${node.value}
+${processedValue}
 </div>
 </div>`
                 };

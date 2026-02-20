@@ -367,7 +367,7 @@ export default function ContentEditor() {
 interface FieldDef {
     key: string;
     label: string;
-    type: 'text' | 'textarea' | 'date' | 'boolean' | 'select' | 'tags' | 'number' | 'image';
+    type: 'text' | 'textarea' | 'date' | 'boolean' | 'select' | 'tags' | 'number' | 'image' | 'file';
     options?: string[];
     placeholder?: string;
 }
@@ -388,7 +388,7 @@ function getFieldsForCollection(collection: string): FieldDef[] {
                 { key: 'author', label: 'Author', type: 'text' },
                 { key: 'publishDate', label: 'Publish Date', type: 'date' },
                 { key: 'coverImage', label: 'Cover Image', type: 'image' },
-                { key: 'pdfUrl', label: 'PDF URL', type: 'text' },
+                { key: 'pdfUrl', label: 'PDF URL', type: 'file' },
                 { key: 'order', label: 'Order', type: 'number' },
             ];
         case 'articles':
@@ -444,10 +444,12 @@ function FieldEditor({
                 <input type="text" style={baseStyle} value={String(value || '')} onChange={(e) => onChange(e.target.value)} />
             )}
 
-            {field.type === 'image' && (
+            {(field.type === 'image' || field.type === 'file') && (
                 <div style={{ display: 'flex', gap: 6 }}>
                     <input type="text" style={{ ...baseStyle, flex: 1 }} value={String(value || '')} onChange={(e) => onChange(e.target.value)} />
-                    <button className="btn btn-secondary" style={{ padding: '8px 12px', fontSize: '0.75rem' }} onClick={onOpenPicker}>🖼️ Select</button>
+                    <button className="btn btn-secondary" style={{ padding: '8px 12px', fontSize: '0.75rem' }} onClick={onOpenPicker}>
+                        {field.type === 'image' ? '🖼️ Select' : '📁 Select'}
+                    </button>
                 </div>
             )}
 

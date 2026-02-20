@@ -270,7 +270,7 @@
 
   /* رندر شده توسط Mermaid.js */
   .mermaid svg {
-    max-width: 100%;
+    max-width: none !important;
     height: auto;
   }
 
@@ -1205,12 +1205,14 @@
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  max-width: 56rem; /* 896px default */
+  max-width: 56rem;
+  /* 896px default */
   width: 100%;
   transition: max-width 0.35s ease-in-out;
 }
 
 @media (min-width: 768px) {
+
   .container-article,
   .container-wide {
     padding-left: 1.5rem;
@@ -1219,6 +1221,7 @@
 }
 
 @media (min-width: 1024px) {
+
   .container-article,
   .container-wide {
     padding-left: 2rem;
@@ -1229,7 +1232,8 @@
 /* CSS-driven width overrides via data attribute on <html> */
 html[data-content-width="default"] .container-article,
 html[data-content-width="default"] .container-wide {
-  max-width: 56rem !important; /* 896px */
+  max-width: 56rem !important;
+  /* 896px */
 }
 
 html[data-content-width="1024"] .container-article,
@@ -1279,5 +1283,6 @@ html[data-content-width="full"] .prose {
 
 /* At default width, keep the nice .prose reading width */
 html[data-content-width="default"] .prose {
-  max-width: 65ch; /* Tailwind default — comfortable reading */
+  max-width: 65ch;
+  /* Tailwind default — comfortable reading */
 }

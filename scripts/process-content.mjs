@@ -6,6 +6,7 @@
 
 import fs from 'fs/promises';
 import path from 'path';
+import crypto from 'crypto';
 import { fileURLToPath } from 'url';
 import { exec } from 'child_process';
 import { promisify } from 'util';
@@ -107,7 +108,36 @@ export class ContentPipeline {
         }
 
         this.configCache = new Map();
-        this.stats = { latex: 0, markdown: 0, pdf: 0, word: 0, aiTagged: 0, errors: 0 };
+        this.stats = { latex: 0, markdown: 0, pdf: 0, word: 0, aiTagged: 0, errors: 0, skipped: 0 };
+        this.hashes = {};
+        this.hashFilePath = path.join(CONFIG.cacheDir, 'hashes.json');
+    }
+
+    async loadHashes() {
+        try {
+            const data = await fs.readFile(this.hashFilePath, 'utf-8');
+            this.hashes = JSON.parse(data);
+        } catch (error) {
+            this.hashes = {};
+        }
+    }
+
+    async saveHashes() {
+        try {
+            await fs.mkdir(CONFIG.cacheDir, { recursive: true });
+            await fs.writeFile(this.hashFilePath, JSON.stringify(this.hashes, null, 2));
+        } catch (error) {
+            console.error('❌ خطا در ذخیره کش hash:', error.message);
+        }
+    }
+
+    async getFileHash(filePath) {
+        try {
+            const content = await fs.readFile(filePath);
+            return crypto.createHash('md5').update(content).digest('hex');
+        } catch (error) {
+            return null;
+        }
     }
 
     async processFile(filePath, options = {}) {
@@ -512,6 +542,12 @@ export class ContentPipeline {
     }
 
     async processBook(bookDir, options = {}) {
+        // Skip language directories that don't directly contain books but only house book directories
+        if (path.basename(bookDir) === 'fa' || path.basename(bookDir) === 'en') {
+            const hasTexFiles = (await globby(`${bookDir}/*.tex`)).length > 0;
+            if (!hasTexFiles) return; // Not a book, just a language wrapper
+        }
+
         const bookSlug = options.slug || path.basename(bookDir);
         const lang = options.lang || this.detectLanguage(bookDir) || 'fa';
 
@@ -533,6 +569,47 @@ export class ContentPipeline {
 
         const outputDir = path.join(CONFIG.outputDir, 'books', lang, bookSlug);
         await fs.mkdir(outputDir, { recursive: true });
+
+        // Calculate a composite hash for the entire book based on chapters, main file, config, and PDF
+        const allRelevantFiles = [...chapters, path.join(bookDir, 'main.tex')].filter(Boolean);
+        const pdfFiles = await globby(`${bookDir}/*.pdf`);
+        allRelevantFiles.push(...pdfFiles);
+
+        let compositeString = '';
+        for (const f of allRelevantFiles) {
+            const h = await this.getFileHash(f);
+            if (h) compositeString += h;
+        }
+
+        const bookHash = compositeString ? crypto.createHash('md5').update(compositeString).digest('hex') : null;
+
+        // Skip check
+        const indexPath = path.join(outputDir, 'index.mdx');
+        const bookExists = await fs.access(indexPath).then(() => true).catch(() => false);
+
+        if (bookHash && this.hashes[bookDir] === bookHash && bookExists) {
+            console.log(`   ⏩ مستندات تغییر نکرده‌اند. صرف‌نظر: ${bookSlug}`);
+            this.stats.skipped = (this.stats.skipped || 0) + 1;
+            return;
+        }
+
+        // Handle PDF associated with the book
+        let pdfUrl = undefined;
+        let showPdfViewer = undefined;
+
+        if (pdfFiles.length > 0) {
+            const pdfSource = pdfFiles[0];
+            const pdfName = path.basename(pdfSource);
+            const pubDocsDir = path.join(process.cwd(), 'public', 'documents', 'books');
+            await fs.mkdir(pubDocsDir, { recursive: true });
+
+            const pdfDest = path.join(pubDocsDir, pdfName);
+            await fs.copyFile(pdfSource, pdfDest);
+
+            pdfUrl = `/documents/books/${pdfName}`;
+            showPdfViewer = true;
+            console.log(`   📄 پی دی اف ذخیره شد: ${pdfName}`);
+        }
 
         let combinedContent = '';
         let commonMetadata = null;
@@ -561,10 +638,20 @@ export class ContentPipeline {
                 ...commonMetadata,
                 title: bookSlug.replace(/-/g, ' '),
                 content: combinedContent,
-                metadata: { ...commonMetadata.metadata, bookSlug, lang, chapterNumber: undefined }
+                metadata: {
+                    ...commonMetadata.metadata,
+                    bookSlug,
+                    lang,
+                    chapterNumber: undefined,
+                    ...(pdfUrl ? { pdfUrl, showPdfViewer } : {})
+                }
             };
             await this.saveResult(bookResult, outputDir, 'index');
             console.log(`   ✅ کتاب ${bookSlug} کامل شد و در index.mdx ترکیب شد!`);
+
+            if (bookHash) {
+                this.hashes[bookDir] = bookHash;
+            }
         } else {
             console.log(`   ⚠️ کتاب ${bookSlug} فاقد محتوای معتبر بود.`);
         }
@@ -592,8 +679,10 @@ ${chapters.map((ch, i) => {
     async processAll(options = {}) {
         console.log('🚀 شروع پردازش همه محتوا...\n');
 
-        const bookDirs = await globby(`${CONFIG.sourceDir}/books/*`, { onlyDirectories: true });
-        console.log(`📚 کتاب‌ها: ${bookDirs.length}`);
+        await this.loadHashes();
+
+        const bookDirs = await globby([`${CONFIG.sourceDir}/books/*`, `${CONFIG.sourceDir}/books/*/*`], { onlyDirectories: true });
+        console.log(`📚 مسیر کتاب‌های پیدا شده: ${bookDirs.length}`);
 
         for (const bookDir of bookDirs) {
             try {
@@ -612,15 +701,32 @@ ${chapters.map((ch, i) => {
         for (const file of articleFiles) {
             const lang = this.detectLanguage(file);
             const outputDir = path.join(CONFIG.outputDir, 'articles', lang);
+            const baseName = path.basename(file, path.extname(file));
+            const outputFile = path.join(outputDir, `${baseName}.mdx`);
 
             try {
+                const currentHash = await this.getFileHash(file);
+                const fileExists = await fs.access(outputFile).then(() => true).catch(() => false);
+
+                if (currentHash && this.hashes[file] === currentHash && fileExists) {
+                    console.log(`⏩ صرف‌نظر: ${path.basename(file)} (بدون تغییر)`);
+                    this.stats.skipped = (this.stats.skipped || 0) + 1;
+                    continue;
+                }
+
                 const result = await this.processFile(file, { lang });
-                if (result) await this.saveResult({ ...result, metadata: { ...result.metadata, lang } }, outputDir);
+                if (result) {
+                    await this.saveResult({ ...result, metadata: { ...result.metadata, lang } }, outputDir);
+                    if (currentHash) {
+                        this.hashes[file] = currentHash;
+                    }
+                }
             } catch (error) {
                 console.error(`❌ خطا در ${path.basename(file)}: ${error.message}`);
             }
         }
 
+        await this.saveHashes();
         this.printFinalReport();
         return this.stats;
     }
