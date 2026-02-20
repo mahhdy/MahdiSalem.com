@@ -79,7 +79,7 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
       </div>
     )}
 
-    {articles.length > 0 ? (
+    {articles.length > 0 ? 
       <div id="articles-container" class="space-y-6">
         {articles.map((article) => (
           <a
@@ -109,7 +109,6 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
                       <span>{article.rating.toFixed(1)}</span>
                     </div>
                   )}
-                  )}
                   {article.data.pdfOnly && (
                     <div class="px-2 py-0.5 rounded bg-red-100 text-red-600 dark:bg-red-900/20 dark:text-red-400 text-[10px] font-bold uppercase tracking-wider shrink-0 mt-1">
                       PDF
@@ -131,9 +130,9 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
           </a>
         ))}
       </div>
-    ) : (
+     : 
       <p class="text-text-muted dark:text-text-dark-muted">به زودی مقالات در این بخش منتشر خواهند شد.</p>
-    )}
+    }
     </CategoryTabView>
   </div>
 </BaseLayout>

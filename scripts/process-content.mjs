@@ -111,6 +111,34 @@ export class ContentPipeline {
         this.stats = { latex: 0, markdown: 0, pdf: 0, word: 0, aiTagged: 0, errors: 0, skipped: 0 };
         this.hashes = {};
         this.hashFilePath = path.join(CONFIG.cacheDir, 'hashes.json');
+        this.archiveDir = path.join(CONFIG.sourceDir, 'Archive');
+    }
+
+    async archiveProcessedFile(filePath) {
+        try {
+            const date = new Date().toISOString().split('T')[0].replace(/-/g, '');
+            const targetDir = path.join(this.archiveDir, date);
+            await fs.mkdir(targetDir, { recursive: true });
+
+            const fileName = path.basename(filePath);
+            let targetPath = path.join(targetDir, fileName);
+
+            // Handle duplicates by renaming
+            if (await fs.access(targetPath).then(() => true).catch(() => false)) {
+                const ext = path.extname(fileName);
+                const name = path.basename(fileName, ext);
+                const timestamp = Date.now();
+                targetPath = path.join(targetDir, `${name}_${timestamp}${ext}`);
+            }
+
+            // Move the file
+            await fs.rename(filePath, targetPath);
+            console.log(`   📦 بایگانی: ${path.basename(targetPath)}`);
+            return targetPath;
+        } catch (error) {
+            console.error(`   ⚠️ خطا در بایگانی ${path.basename(filePath)}: ${error.message}`);
+            return null;
+        }
     }
 
     async loadHashes() {
@@ -882,6 +910,15 @@ ${chapters.map((ch, i) => {
                     await this.processBook(itemPath, options);
                     processedPaths.add(itemPath);
                 }
+
+                // If it was a directory or file and processed successfully, we might archive it.
+                // For books, we should be careful. Usually archiving the whole folder or specific files.
+                // Let's archive based on user preference, but here we'll archive the processed item.
+                if (processedPaths.has(itemPath)) {
+                    // If it's a directory, archive its contents or just move it? 
+                    // Better to archive as is.
+                    await this.archiveProcessedFile(itemPath);
+                }
             } catch (error) {
                 console.error(`❌ خطا در پردازش ${path.basename(itemPath)}: ${error.message}`);
             }
@@ -915,6 +952,8 @@ ${chapters.map((ch, i) => {
                     if (currentHash) {
                         this.hashes[file] = currentHash;
                     }
+                    // Archive the file after successful processing
+                    await this.archiveProcessedFile(file);
                 }
             } catch (error) {
                 console.error(`❌ خطا در ${path.basename(file)}: ${error.message}`);

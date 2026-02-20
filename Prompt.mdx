@@ -2,6 +2,35 @@
 
 ## Content Management
 
+
+
+### Processed contents should moved to Archive folder
+
+there is ontent-source/archive folder. the processed contents should be moved to this folder after they been Processed and added to site content. they should be added like in a date format yyyymmdd subfolder. if duplicate they should rename the older files. 
+
+### Proccessing and preparing articles and other contents for the site
+
+#### problem 1- Mermaid diagrams are not rendered in the site properly
+
+I see that the Mermaid diagrams are not rendered in the site. I have added the Mermaid diagrams to the documents, but they are not visible on the output site properly visible. 
+farsi contents should be wrapped correctly in "" or [""] in mermaid diagrams. so this hsould be checked and applied. 
+
+#### problem 2- the size and width of the diagrams are not correct
+some are very limited, some are very big! can this be manageble by the user? so there be a defult sizing (if the diagram is very tall heigh is too much it should not bother user so he / she loose the site content! then the size should be smaller, if the diagram is very wide width is too much) and user can override it if needed. So anyway, user can handle the size and see the content as he /she like, while the beaty and neatness of content of site stayes untouched. 
+look: [mermaid-small](public/dev/mermaid-small.png)
+look: [mermaid-super-small](public/dev/mermaid-super-small.png)
+look: [mermaid-big](public/dev/mermaid-tall.png)
+look: [mermaid-big](public/dev/mermaid-bad-tall.png)
+
+#### problem 3- still issue with mixing the mermaid and other html element! please check and fix! 
+
+
+
+
+# to ignore // already done
+<details open>
+<summary>ignore</summary>
+```markdown
 ### Processing and preparing Books for the sites
 
 ~~#### Problem1- Book Contents are not processed! 
@@ -42,24 +71,4 @@ if the site have latex or MDX contents, they shoul donly be visible when pdf-onl
 
 is this possible or good idea? 
 
-
-### Processed contents should moved to Archive folder
-
-there is ontent-source/archive folder. the processed contents should be moved to this folder after they been Processed and added to site content. they should be added like in a date format yyyymmdd subfolder. if duplicate they should rename the older files. 
-
-### Proccessing and preparing articles and other contents for the site
-
-#### problem 1- Mermaid diagrams are not rendered in the site properly
-
-I see that the Mermaid diagrams are not rendered in the site. I have added the Mermaid diagrams to the documents, but they are not visible on the output site properly visible. 
-farsi contents should be wrapped correctly in "" or [""] in mermaid diagrams. so this hsould be checked and applied. 
-
-#### problem 2- the size and width of the diagrams are not correct
-some are very limited, some are very big! can this be manageble by the user? so there be a defult sizing (if the diagram is very tall heigh is too much it should not bother user so he / she loose the site content! then the size should be smaller, if the diagram is very wide width is too much) and user can override it if needed. So anyway, user can handle the size and see the content as he /she like, while the beaty and neatness of content of site stayes untouched. 
-look: [mermaid-small](public/dev/mermaid-small.png)
-look: [mermaid-super-small](public/dev/mermaid-super-small.png)
-look: [mermaid-big](public/dev/mermaid-tall.png)
-look: [mermaid-big](public/dev/mermaid-bad-tall.png)
-
-#### problem 3- still issue with mixing the mermaid and other html element! please check and fix! 
-
+</details>

@@ -4,6 +4,9 @@ import ReadingProgress from '../components/ReadingProgress.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import Rating from '../components/Rating.astro';
 import WidthToggle from '../components/WidthToggle.astro';
+import RelatedContent from '../components/RelatedContent.astro';
+import ShareButtons from '../components/ShareButtons.astro';
+import Giscus from '../components/Giscus.astro';
 import { t, getLocalizedPath, stripLangPrefix, type Locale } from '../i18n';
 
 interface Chapter {
@@ -25,6 +28,8 @@ interface Props {
   draft?: boolean;
   author?: string;
   showHeader?: boolean;
+  tags?: string[];
+  slug?: string;
 }
 
 const {
@@ -40,7 +45,12 @@ const {
   draft = false,
   author = 'مهدی سالم',
   showHeader = false,
+  tags = [],
+  slug = '',
 } = Astro.props;
+
+const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const currentSlug = slug || stripLangPrefix(Astro.url.pathname);
 ---
 
 <BaseLayout title={title} description={description}>
@@ -117,7 +127,36 @@ const {
         </article>
 
         <!-- Rating -->
-        <Rating contentId={`books/${bookSlug}/${stripLangPrefix(Astro.url.pathname).split('/').pop()}`} lang={lang} />
+        <Rating contentId={currentSlug.startsWith('books/') ? currentSlug : `books/${bookSlug}/${currentSlug.split('/').pop()}`} lang={lang} />
+
+        <!-- Tags -->
+        {tags.length > 0 && (
+          <div class="mt-8 pt-6 border-t border-border dark:border-border-dark">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="text-sm text-text-muted dark:text-text-dark-muted">{t('articles.tags', lang)}:</span>
+              {tags.map((tag) => (
+                <a
+                  href={getLocalizedPath(`tags/${encodeURIComponent(tag)}`, lang)}
+                  class="text-xs px-2.5 py-1 rounded-full border border-border dark:border-border-dark text-text-muted dark:text-text-dark-muted hover:border-primary hover:text-primary dark:hover:border-primary-light dark:hover:text-primary-light transition-colors no-underline"
+                >
+                  #{tag}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <!-- Related Content -->
+        {tags.length > 0 && (
+          <RelatedContent lang={lang} currentTags={tags} currentSlug={currentSlug} />
+        )}
+
+        <!-- Share & Comments -->
+        <div class="mt-8 pt-6 border-t border-border dark:border-border-dark">
+          <ShareButtons title={title} url={articleUrl} lang={lang} />
+        </div>
+
+        <Giscus lang={lang} />
 
 
         <!-- Chapter navigation -->

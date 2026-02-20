@@ -6,20 +6,45 @@ export class MermaidProcessor {
     }
 
     async process(content, options = {}) {
-        // فقط بلوک‌های ```mermaid را به فرمت خاص تبدیل کنید
-        // که بعداً rehype بتواند آن را پیدا کند
+        if (!content) return content;
 
-        // هیچ تغییری نمی‌دهیم! بلوک‌های ```mermaid را همان‌طور نگه می‌داریم
-        // کار اصلی را rehype plugin انجام می‌دهد
-
-        // فقط آمار می‌گیریم
-        const regex = /```mermaid\s*\n([\s\S]*?)```/g;
-        let match;
-        while ((match = regex.exec(content)) !== null) {
+        // Find all mermaid code blocks
+        return content.replace(/```mermaid\s*\n([\s\S]*?)```/g, (match, code) => {
             this.stats.processed++;
-        }
 
-        return content; // بدون تغییر!
+            let processedCode = code;
+
+            // 1. Auto-quote Farsi text inside Mermaid nodes/labels
+            // This handles common Mermaid syntax like:
+            // Node[متن]  -> Node["متن"]
+            // Node(متن)  -> Node("متن")
+            // Node{متن}  -> Node{"متن"}
+            // |текст|    -> |"текст"|
+            // >متن]     -> >"متن"]
+
+            // Nodes with brackets: [ ], ( ), (( )), { }, > ]
+            processedCode = processedCode.replace(/([\[\(\{>])\s*([^"\[\(\{>][^\]\)\}<]+?)\s*([\]\)\}])/g, (m, open, text, close) => {
+                const trimmedText = text.trim();
+                if (/[\u0600-\u06FF]/.test(trimmedText) && !trimmedText.startsWith('"')) {
+                    return `${open}"${trimmedText}"${close}`;
+                }
+                return m;
+            });
+
+            // Labels with pipes: |text|
+            processedCode = processedCode.replace(/\|\s*([^"|]+?)\s*\|/g, (m, text) => {
+                const trimmedText = text.trim();
+                if (/[\u0600-\u06FF]/.test(trimmedText) && !trimmedText.startsWith('"')) {
+                    return `|"${trimmedText}"|`;
+                }
+                return m;
+            });
+
+            // Edge cases: nodes that are just text without brackets (if possible in some mermaid types)
+            // But usually mermaid requires brackets for text with spaces or special chars.
+
+            return `\n\n\`\`\`mermaid\n${processedCode}\n\`\`\`\n\n`;
+        });
     }
 
     getStats() {
