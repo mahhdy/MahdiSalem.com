@@ -397,7 +397,7 @@ export class ContentPipeline {
                 const relativePath = `/diagrams/${path.basename(result.path)}`;
                 content = content.replace(tikzCode, `\n\n![نمودار ${counter}](${relativePath}){.tikz-diagram}\n\n`);
             } else {
-                content = content.replace(tikzCode, `\n\n<!-- TIKZ_ERROR: ${name} -->\n\n`);
+                content = content.replace(tikzCode, `\n\n{/* TIKZ_ERROR: ${name} */}\n\n`);
             }
         }
 
@@ -441,14 +441,20 @@ export class ContentPipeline {
     postProcessMarkdown(markdown, config = {}) {
         let result = markdown;
 
-        // 1. Remove Pandoc's header attributes: {#id .class}
-        // Use a broader regex to include Persian characters in IDs
+        // 0. Remove all HTML comments (MDX doesn't like them)
+        result = removeAllHtmlComments(result);
+
+        // 1. Remove Pandoc's header and link attributes: {#id .class} or {reference-type="..."}
+        // These crash MDX because it tries to parse them as JSX
         result = result.replace(/\{#[\S]+\s+\.[^}]+\}/g, '');
         result = result.replace(/\{#[\S]+\}/g, '');
+        result = result.replace(/\{[\w-]+="[^"]*"\s*[^}]*\}/g, ''); // Handles {key="value"}
+        result = result.replace(/\{reference-type=[^}]+\}/g, ''); // Specific handle for refs
+
 
         // 2. Convert Pandoc's container blocks: ::: class ... :::
-        result = result.replace(/^:::\s*([\w-]+)\s*$/gm, '<div class="$1">');
-        result = result.replace(/^:::\s*$/gm, '</div>');
+        result = result.replace(/^:{3,}\s*([\w-]+)\s*$/gm, '<div class="$1">');
+        result = result.replace(/^:{3,}\s*$/gm, '</div>');
 
         // 3. Convert Pandoc's span attributes: [text]{style="color: NAME"}
         result = result.replace(/\[([^\]]+)\]\{style="color: ([^"]+)"\}/g, (match, text, colorName) => {
@@ -469,28 +475,33 @@ export class ContentPipeline {
     }
 
     escapeForMDX(content) {
+        if (!content) return '';
         let result = content;
 
-        // MDX is strict about < and {
+        // 1. Protect code blocks
         const codeBlocks = [];
         result = result.replace(/```[\s\S]*?```/g, match => {
             codeBlocks.push(match);
             return `__CODE_BLOCK_${codeBlocks.length - 1}__`;
         });
 
-        // Escape < that is not an HTML tag
-        result = result.replace(/<([^a-zA-Z\/!\?{])/g, '&lt;$1');
+        // 2. Protect HTML tags (simple version)
+        const htmlTags = [];
+        result = result.replace(/<[^>]+>/g, match => {
+            htmlTags.push(match);
+            return `__HTML_TAG_${htmlTags.length - 1}__`;
+        });
 
-        // Escape { and } if they are not part of an HTML attribute or tag
-        // Lone { and } in text will crash MDX
-        // But we must be careful not to break the <span style="..."> we just added
-        // A simple way is to escape { } that are surrounded by spaces or at word boundaries in text
-        result = result.replace(/ ([{}]) /g, ' {"$1"} ');
+        // 3. Escape { and } in the remaining text
+        // We use entities because backslashes are unreliable in MDX/Vite
+        result = result.replace(/\{/g, '&#123;');
+        result = result.replace(/\}/g, '&#125;');
 
-        // If the content has Persian numbers followed by < or {
-        // (Just a safe fallback for the user's specific content)
-        result = result.replace(/([۰-۹])([<{])/g, '$1 $2');
+        // 4. Escape backslashes that could be interpreted as JS escape sequences (\u, \x)
+        result = result.replace(/\\([uxUX])/g, '&#92;$1');
 
+        // 5. Restore HTML tags and code blocks
+        result = result.replace(/__HTML_TAG_(\d+)__/g, (_, idx) => htmlTags[idx]);
         result = result.replace(/__CODE_BLOCK_(\d+)__/g, (_, idx) => codeBlocks[idx]);
 
         return result;
@@ -535,19 +546,18 @@ export class ContentPipeline {
             title: existing.title || result.title,
             description: existing.description || result.ai?.description || result.ai?.summary?.slice(0, 160) || result.metadata?.description || '',
             lang: lang,
-            publishDate: existing.publishDate || new Date().toISOString().split('T')[0],
+            publishDate: existing.publishDate || existing.date || new Date().toISOString().split('T')[0],
             author: existing.author || defaultAuthor,
             sourceType: existing.sourceType || result.type,
             interface: existing.interface || (result.metadata?.bookSlug ? 'iran' : undefined)
         };
 
-        // Preserve existing frontmatter fields
-        if (existing.tags?.length) fm.tags = existing.tags;
-        if (existing.category) fm.category = existing.category;
-        if (existing.keywords?.length) fm.keywords = existing.keywords;
-        if (existing.draft !== undefined) fm.draft = existing.draft;
-        if (existing.order !== undefined) fm.order = existing.order;
-        if (existing.aiGenerated !== undefined) fm.aiGenerated = existing.aiGenerated;
+        // Preserve all existing frontmatter fields to avoid data loss
+        for (const [key, value] of Object.entries(existing)) {
+            if (!fm.hasOwnProperty(key)) {
+                fm[key] = value;
+            }
+        }
 
         // Add AI-generated fields only if not already present
         if (result.ai) {
@@ -583,6 +593,8 @@ export class ContentPipeline {
             if (Array.isArray(value)) {
                 lines.push(`${key}:`);
                 value.forEach(item => lines.push(`  - "${String(item).replace(/"/g, '\\"')}"`));
+            } else if (value instanceof Date) {
+                lines.push(`${key}: ${value.toISOString().split('T')[0]}`);
             } else if (typeof value === 'string') {
                 lines.push(`${key}: "${value.replace(/"/g, '\\"')}"`);
             } else {
@@ -872,7 +884,11 @@ ${chapters.map((ch, i) => {
         ];
 
         const allItems = await globby(bookPatterns, { expandDirectories: false });
-        const uniqueItems = [...new Set(allItems)].filter(i => !i.includes('.content-cache'));
+        const uniqueItems = [...new Set(allItems)].filter(i => 
+            !i.includes('.content-cache') && 
+            !i.includes('/Archive/') && 
+            !i.startsWith('Archive/')
+        );
 
         console.log(`📚 موارد پیدا شده در بخش کتاب‌ها: ${uniqueItems.length}`);
 
@@ -926,7 +942,8 @@ ${chapters.map((ch, i) => {
         const articlePatterns = Object.values(CONFIG.supportedFormats).flat()
             .filter(ext => ext !== '.zip')
             .map(ext => `${CONFIG.sourceDir}/articles/**/*${ext}`);
-        const articleFiles = await globby(articlePatterns);
+        let articleFiles = await globby(articlePatterns);
+        articleFiles = articleFiles.filter(i => !i.includes('/Archive/') && !i.startsWith('Archive/'));
         console.log(`\n📄 مقالات: ${articleFiles.length}`);
 
         for (const file of articleFiles) {

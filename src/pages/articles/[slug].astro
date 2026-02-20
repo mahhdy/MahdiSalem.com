@@ -10,7 +10,8 @@ export async function getStaticPaths() {
   const toRouteSlug = (entry: { slug?: string; id?: string }) => {
     const raw = String(entry.slug ?? entry.id ?? '');
     const withoutLang = raw.replace(/^fa\//, '');
-    const segments = withoutLang.split('/').filter(Boolean);
+    const withoutExt = withoutLang.replace(/\.(md|mdx)$/, '');
+    const segments = withoutExt.split('/').filter(Boolean);
     return segments.at(-1) ?? '';
   };
 

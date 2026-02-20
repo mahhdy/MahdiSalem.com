@@ -17,20 +17,26 @@ export function remarkMermaid() {
                 const width = widthMatch ? (widthMatch[1].endsWith('%') || widthMatch[1].endsWith('px') ? widthMatch[1] : `${widthMatch[1]}px`) : null;
                 const height = heightMatch ? (heightMatch[1].endsWith('%') || heightMatch[1].endsWith('px') ? heightMatch[1] : `${heightMatch[1]}px`) : null;
 
-                // 1. Escape HTML and braces to prevent MDX JSX parsing errors
-                processedValue = processedValue
-                    .replaceAll('<', '&lt;')
-                    .replaceAll('>', '&gt;')
-                    .replaceAll('{', '&#123;')
-                    .replaceAll('}', '&#125;');
-
                 // 2. Auto-quote Farsi text inside Mermaid nodes
-                processedValue = processedValue.replace(/([\[\(\{>])([^"\[\(\{>][^\]\)\}<]+?)([\]\)\}])/g, (match, open, text, close) => {
-                    if (/[\u0600-\u06FF]/.test(text) && !text.includes('"')) {
-                        return `${open}"${text}"${close}`;
+                // Handles: ID[text], ID(text), ID((text)), ID{text}, ID>text]
+                processedValue = processedValue.replace(/(\w+)(\(\(|[\(\[\{>])([^"\[\(\{\}>]+?)(\)\)|[\]\)\}])/g, (m, id, open, text, close) => {
+                    const trimmedText = text.trim();
+                    if (/[\u0600-\u06FF]/.test(trimmedText) && !trimmedText.startsWith('"')) {
+                        return `${id}${open}"${trimmedText}"${close}`;
                     }
-                    return match;
+                    return m;
                 });
+
+                // 3. Labels with pipes: |text| (common in flowcharts)
+                processedValue = processedValue.replace(/\|\s*([^"|]+?)\s*\|/g, (m, text) => {
+                    const trimmedText = text.trim();
+                    if (/[\u0600-\u06FF]/.test(trimmedText) && !trimmedText.startsWith('"')) {
+                        return `|"${trimmedText}"|`;
+                    }
+                    return m;
+                });
+
+                processedValue = processedValue.trim();
 
                 const wrapperStyles = [];
                 if (width) wrapperStyles.push(`width: ${width}`);
@@ -50,10 +56,11 @@ export function remarkMermaid() {
 
                 // Metadata for client-side JS
                 const expanded = meta.includes('expanded') ? 'true' : 'false';
+                const collapseClass = expanded === 'false' ? ' is-collapsed' : '';
 
                 const html = {
                     type: 'html',
-                    value: `<div class="mermaid-wrapper" role="figure"${styleAttr} data-align="${align}" data-expanded="${expanded}">
+                    value: `<div class="mermaid-wrapper${collapseClass}" role="figure"${styleAttr} data-align="${align}" data-expanded="${expanded}">
 <div class="mermaid-toolbar">
     <div class="mermaid-zoom-control">
         <span class="zoom-label">🔍</span>
@@ -68,6 +75,7 @@ export function remarkMermaid() {
 ${processedValue}
 </div>
 </div>`
+
                 };
 
                 parent.children[index] = html;

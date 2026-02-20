@@ -14,32 +14,49 @@ const lang = 'fa';
 const stripPrefix = (id: string) => id.replace(/^fa\//, '');
 
 export async function getStaticPaths() {
-  const strip = (id: string) => id.replace(/^fa\//, '');
+  const strip = (id: string) => id.replace(/^fa\//, '').replace(/\.(md|mdx)$/, '');
   const allBooks = await getCollection('books', ({ data }) => data.lang === 'fa' && !data.draft);
 
   const bookMap = new Map();
 
-  // 1. Identify Books
-  for (const book of allBooks) {
-    const parts = book.id.split('/');
-    const lastPart = parts[parts.length - 1];
-    const isBook = parts.length === 2 && !lastPart.includes('.md') && !lastPart.includes('.mdx');
+  // 1. Identify Books & Chapters
+  for (const entry of allBooks) {
+    const idWithoutExt = entry.id.replace(/\.(md|mdx)$/, '');
+    const segments = idWithoutExt.split('/');
     
-    if (isBook) {
-      bookMap.set(book.id, { entry: book, chapters: [] });
+    // A book root is either:
+    // - fa/BookTitle/index
+    // - fa/BookTitle (standalone file)
+    const isIndex = segments.at(-1) === 'index';
+    
+    if (isIndex) {
+      const bookIdBase = segments.slice(0, -1).join('/');
+      if (!bookMap.has(bookIdBase)) {
+        bookMap.set(bookIdBase, { entry, chapters: [] });
+      } else {
+        // If we already had something, index.mdx takes priority as root
+        bookMap.get(bookIdBase).entry = entry;
+      }
+    } else if (segments.length === 2) {
+      // Standalone book file: fa/BookTitle
+      if (!bookMap.has(idWithoutExt)) {
+        bookMap.set(idWithoutExt, { entry, chapters: [] });
+      }
     }
   }
 
-  // 2. Identify Chapters
-  for (const file of allBooks) {
-    if (bookMap.has(file.id)) continue; 
+  // 2. Assign Chapters
+  for (const entry of allBooks) {
+    const idWithoutExt = entry.id.replace(/\.(md|mdx)$/, '');
+    const segments = idWithoutExt.split('/');
+    const isIndex = segments.at(-1) === 'index';
 
-    const parts = file.id.split('/');
-    if (parts.length === 3) {
-        const bookId = `${parts[0]}/${parts[1]}`;
-        if (bookMap.has(bookId)) {
-            bookMap.get(bookId).chapters.push(file);
-        }
+    if (!isIndex && segments.length > 2) {
+      // Try to find the parent book
+      let parentId = segments.slice(0, -1).join('/');
+      if (bookMap.has(parentId)) {
+        bookMap.get(parentId).chapters.push(entry);
+      }
     }
   }
 
@@ -75,6 +92,7 @@ export async function getStaticPaths() {
 
   return paths;
 }
+
 
 const { entry, chapters, isChapter, prevChapter, nextChapter, bookSlugOverride } = Astro.props;
 const { Content, headings } = await render(entry);

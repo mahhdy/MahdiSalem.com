@@ -14,22 +14,17 @@ export class MermaidProcessor {
 
             let processedCode = code;
 
-            // 1. Auto-quote Farsi text inside Mermaid nodes/labels
-            // This handles common Mermaid syntax like:
-            // Node[متن]  -> Node["متن"]
-            // Node(متن)  -> Node("متن")
-            // Node{متن}  -> Node{"متن"}
-            // |текст|    -> |"текст"|
-            // >متن]     -> >"متن"]
-
-            // Nodes with brackets: [ ], ( ), (( )), { }, > ]
-            processedCode = processedCode.replace(/([\[\(\{>])\s*([^"\[\(\{>][^\]\)\}<]+?)\s*([\]\)\}])/g, (m, open, text, close) => {
+            // 1. Auto-quote Farsi text inside Mermaid nodes
+            // Handles: ID[text], ID(text), ID((text)), ID{text}, ID>text]
+            processedCode = processedCode.replace(/(\w+)(\(\(|[\(\[\{>])([^"\[\(\{\}>]+?)(\)\)|[\]\)\}])/g, (m, id, open, text, close) => {
                 const trimmedText = text.trim();
+                // Check if it's Farsi and not already quoted
                 if (/[\u0600-\u06FF]/.test(trimmedText) && !trimmedText.startsWith('"')) {
-                    return `${open}"${trimmedText}"${close}`;
+                    return `${id}${open}"${trimmedText}"${close}`;
                 }
                 return m;
             });
+
 
             // Labels with pipes: |text|
             processedCode = processedCode.replace(/\|\s*([^"|]+?)\s*\|/g, (m, text) => {

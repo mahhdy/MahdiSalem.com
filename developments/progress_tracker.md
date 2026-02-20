@@ -27,6 +27,7 @@ This document consolidates earlier tracking files to provide a single overview o
 - **Category View Improvements**: Query-based filtering (`?interface=<slug>`), Tooltips, Item Previews.
 - **Show-Header Frontmatter**: Support for `show-header: false` to hide redundant h1 headings.
 - **Mermaid & Archiving (Feb 20, 2026)**: Smart sizing (zoom, pan, auto-collapse), Farsi text support, and automated date-based archiving with duplicate protection.
+- **Build Stability & MDX Patches (Feb 20, 2026)**: Fixed MDX parsing crashes by implementing robust character escaping (`{`, `}`, `\`) and stripping Pandoc-specific attributes from converted content.
 
 ### 🔄 Planned / In Progress
 

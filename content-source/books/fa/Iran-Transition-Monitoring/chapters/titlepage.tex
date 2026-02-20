@@ -1,0 +1,134 @@
+% ╔══════════════════════════════════════════════════════════════════╗
+% ║  صفحه‌ی عنوان                                                   ║
+% ╚══════════════════════════════════════════════════════════════════╝
+
+\begin{titlepage}
+\begin{tikzpicture}[remember picture, overlay]
+
+    % پس‌زمینه
+    \fill[white] (current page.south west) rectangle (current page.north east);
+    
+    % نوار بنفش بالا
+    \fill[MainPurple] 
+        (current page.north west) rectangle 
+        ([yshift=-6cm]current page.north east);
+    
+    % نوار نازک طلایی
+    \fill[HighlightGold] 
+        ([yshift=-6cm]current page.north west) rectangle 
+        ([yshift=-6.3cm]current page.north east);
+    
+    % عنوان اصلی
+    \node[
+        anchor=center,
+        font=\fontsize{26}{32}\selectfont\bfseries,
+        text=white,
+        text width=15cm,
+        align=center
+    ] at ([yshift=-2.5cm]current page.north) {
+            \rl{نظارت بین‌المللی بر گذار دموکراتیک ایران}
+
+    };
+    
+    % زیرعنوان
+    \node[
+        anchor=center,
+        font=\fontsize{18}{22}\selectfont,
+        text=white!85,
+        text width=14cm,
+        align=center
+    ] at ([yshift=-4.5cm]current page.north) {
+            \rl{ابعاد، انتخاب‌ها و انتظارات}
+
+    };
+    
+    % خط تزئینی وسط
+    \draw[MainPurple!30, line width=0.5pt] 
+        ([yshift=2cm, xshift=3cm]current page.center) -- 
+        ([yshift=2cm, xshift=-3cm]current page.center);
+    \node[text=MainPurple!50] at ([yshift=2cm]current page.center) {◆};
+    
+    % عنوان انگلیسی
+    \node[
+        anchor=center,
+        font=\large,
+        text=MainPurple!70
+    ] at ([yshift=0.5cm]current page.center) {
+        \lr{International Monitoring of Iran's Democratic Transition}
+    };
+    
+    \node[
+        anchor=center,
+        font=\normalsize,
+        text=MainPurple!50
+    ] at ([yshift=-0.5cm]current page.center) {
+        \lr{Dimensions, Choices, and Expectations}
+    };
+    
+    % نام نویسنده
+    \node[
+        anchor=center,
+        font=\LARGE\bfseries,
+        text=DarkGray
+    ] at ([yshift=-2.5cm]current page.center) {
+            \rl{مهدی سالم}
+    };
+    
+    \node[
+        anchor=center,
+        font=\large,
+        text=MediumGray
+    ] at ([yshift=-3.5cm]current page.center) {
+        \lr{Mehdi Salem}
+    };
+    
+    % تاریخ
+    \node[
+        anchor=center,
+        font=\large,
+        text=MediumGray
+    ] at ([yshift=-5cm]current page.center) {
+            \rl{زمستان ۱۴۰۴ — فوریه ۲۰۲۶}
+
+    };
+    
+    % نوار پایین
+    \fill[MainPurple] 
+        (current page.south west) rectangle 
+        ([yshift=1.5cm]current page.south east);
+    
+    \fill[HighlightGold] 
+        ([yshift=1.5cm]current page.south west) rectangle 
+        ([yshift=1.8cm]current page.south east);
+    
+    % متن پایین
+    \node[
+        anchor=center,
+        font=\small,
+        text=white!80
+    ] at ([yshift=0.75cm]current page.south) {
+        \rl{نسخه‌ی اول — برای بازبینی و نقد}
+    };
+
+\end{tikzpicture}
+\end{titlepage}
+
+% ---- صفحه‌ی حقوقی (پشت جلد) ----
+\clearpage
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+    \textcolor{MediumGray}{\small
+        \textbf{نظارت بین‌المللی بر گذار دموکراتیک ایران: 
+        ابعاد، انتخاب‌ها و انتظارات}\\[6pt]
+        نویسنده: مهدی سالم\\[6pt]
+        نسخه‌ی اول — ژوئن ۲۰۲۵\\[12pt]
+        \rule{4cm}{0.3pt}\\[12pt]
+        این سند برای استفاده‌ی آزاد در خدمت 
+        گذار دموکراتیک ایران تدوین شده است.\\
+        بازتولید با ذکر منبع مجاز است.\\[12pt]
+        حروف‌چینی با \lr{XeLaTeX} و \lr{XePersian}
+    }
+\end{center}
+\vspace*{\fill}
+\clearpage
