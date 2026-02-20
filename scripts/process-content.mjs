@@ -342,16 +342,15 @@ export class ContentPipeline {
         }
 
         // Process Mermaid diagrams
-        // Convert HTML <pre className="mermaid">...</pre> blocks to fenced code blocks.
-        // This avoids MDX JSX parsing errors for Mermaid syntax containing `{}` and `<br>`.
+        // Convert HTML <pre class="mermaid"> or <div class="mermaid"> blocks to fenced code blocks.
+        // We use a general regex to catch various patterns before MDX conversion.
         if (bodyContent) {
-            bodyContent = bodyContent.replace(
-                /<pre\s+className="mermaid">([\s\S]*?)<\/pre>/g,
-                (_, mermaidCode) => {
-                    const normalized = String(mermaidCode).replace(/^\n+|\n+$/g, '');
-                    return `\n\n\`\`\`mermaid\n${normalized}\n\`\`\`\n\n`;
-                }
-            );
+            const mermaidRegex = /<(pre|div)[^>]*class(?:Name)?=["']mermaid["'][^>]*>([\s\S]*?)<\/\1>/gi;
+            bodyContent = bodyContent.replace(mermaidRegex, (_, tag, mermaidCode) => {
+                // Remove internal HTML tags if any (sometimes mermaid is wrapped in <code>)
+                const cleanCode = mermaidCode.replace(/<[^>]*>/g, '').trim();
+                return `\n\n\`\`\`mermaid\n${cleanCode}\n\`\`\`\n\n`;
+            });
         }
 
         const prefix = path.basename(filePath, path.extname(filePath));
@@ -722,7 +721,7 @@ export class ContentPipeline {
         const indexPath = path.join(outputDir, 'index.mdx');
         const bookExists = await fs.access(indexPath).then(() => true).catch(() => false);
 
-        if (bookHash && this.hashes[bookPath] === bookHash && bookExists) {
+        if (!options.force && bookHash && this.hashes[bookPath] === bookHash && bookExists) {
             console.log(`   ⏩ مستندات تغییر نکرده‌اند. صرف‌نظر: ${bookSlug}`);
             this.stats.skipped = (this.stats.skipped || 0) + 1;
             return;
@@ -940,7 +939,10 @@ ${chapters.map((ch, i) => {
                 const currentHash = await this.getFileHash(file);
                 const fileExists = await fs.access(outputFile).then(() => true).catch(() => false);
 
-                if (currentHash && this.hashes[file] === currentHash && fileExists) {
+                const result_temp = await fs.readFile(file, 'utf-8');
+                const hasForceTag = result_temp.includes('force: true') || result_temp.includes('reprocess: true');
+
+                if (!options.force && !hasForceTag && currentHash && this.hashes[file] === currentHash && fileExists) {
                     console.log(`⏩ صرف‌نظر: ${path.basename(file)} (بدون تغییر)`);
                     this.stats.skipped = (this.stats.skipped || 0) + 1;
                     continue;
@@ -994,7 +996,8 @@ async function main() {
         aiProvider: args.find(a => a.startsWith('--ai-provider='))?.split('=')[1],
         lang: args.find(a => a.startsWith('--lang='))?.split('=')[1] || 'fa',
         slug: args.find(a => a.startsWith('--slug='))?.split('=')[1],
-        mermaidRenderMode: args.find(a => a.startsWith('--mermaid='))?.split('=')[1] || 'client'
+        mermaidRenderMode: args.find(a => a.startsWith('--mermaid='))?.split('=')[1] || 'client',
+        force: args.includes('--force')
     };
 
     const pipeline = new ContentPipeline(options);
@@ -1008,6 +1011,7 @@ async function main() {
   --book <path>      پردازش کتاب (پوشه)
   --zip <file>       پردازش کتاب از ZIP
   --file <path>      پردازش یک فایل
+  --force            اجبار به پردازش مجدد (نادیده گرفتن هش)
 
 گزینه‌ها:
   --no-ai            غیرفعال کردن AI

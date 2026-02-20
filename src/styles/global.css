@@ -218,6 +218,158 @@
     transition: all 0.3s ease;
   }
 
+  /* Toolbar */
+  .mermaid-toolbar {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 10;
+    display: flex;
+    gap: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .mermaid-wrapper:hover .mermaid-toolbar {
+    opacity: 1;
+  }
+
+  .mermaid-zoom-control {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 0 0.5rem;
+    gap: 0.5rem;
+    height: 32px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  html.dark .mermaid-zoom-control {
+    background: rgba(30, 41, 59, 0.9);
+    border-color: #334155;
+  }
+
+  .mermaid-zoom-slider {
+    width: 80px;
+    height: 4px;
+    cursor: pointer;
+    accent-color: var(--color-primary);
+  }
+
+  .zoom-label {
+    font-size: 0.75rem;
+    color: #64748b;
+  }
+
+  .mermaid-tool-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: #475569;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+  }
+
+  html.dark .mermaid-tool-btn {
+    background: rgba(30, 41, 59, 0.9);
+    border-color: #334155;
+    color: #94a3b8;
+  }
+
+  .mermaid-tool-btn:hover {
+    background: white;
+    color: var(--color-primary);
+    border-color: var(--color-primary-light);
+  }
+
+  html.dark .mermaid-tool-btn:hover {
+    background: #1e293b;
+    color: var(--color-primary-light);
+  }
+
+  .mermaid-tool-btn.active {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+  }
+
+  html.dark .mermaid-tool-btn.active {
+    background: var(--color-primary-light);
+    color: #0f172a;
+    border-color: var(--color-primary-light);
+  }
+
+  /* Collapsed State */
+  .mermaid-wrapper.is-collapsed {
+    max-height: 400px !important;
+    overflow: hidden !important;
+  }
+
+  .mermaid-wrapper.is-collapsed::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, #f8fafc);
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  html.dark .mermaid-wrapper.is-collapsed::after {
+    background: linear-gradient(to bottom, transparent, #1e293b);
+  }
+
+  /* Full Screen Overlay */
+  .mermaid-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    cursor: zoom-out;
+  }
+
+  .mermaid-modal .mermaid-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 95vw;
+    max-height: 95vh;
+    overflow: auto;
+    cursor: default;
+  }
+
+  html.dark .mermaid-modal .mermaid-content {
+    background: #0f172a;
+  }
+
+  .mermaid-modal .close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+  }
+
   .mermaid-wrapper:hover {
     border-color: var(--color-primary-light);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -276,6 +428,9 @@
     display: flex;
     justify-content: center;
     font-family: "Vazirmatn", sans-serif !important;
+    overflow: visible;
+    position: relative;
+    user-select: none;
   }
 
   /* رندر شده توسط Mermaid.js */

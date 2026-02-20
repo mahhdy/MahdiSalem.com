@@ -14,7 +14,10 @@
 
 - Content files: Markdown/MDX, frontmatter includes title, description, lang, publishDate, categories, tags, interface, draft
 - Books: folder per book, `index.md` for overview, chapters as `.md` files, `pdfUrl` for PDF, `showPdfViewer: true` for viewer
-- Scripts: `add-interface-categories.mjs`, `fix-interface-categories.mjs` for taxonomy updates
+- Scripts/Pipeline:
+  - `process-content.mjs`: Core pipeline for converting LaTeX, DOCX, and HTML to MDX.
+  - Mermaid Processor: Automated Farsi support and interactive controls (Zoom/Pan).
+  - Archiving: Automatic movement of processed source files to `content-source/Archive/YYYYMMDD`.
 
 ## Deployment & Environment
 
@@ -45,4 +48,5 @@
 - `public/images/categories/` — SVG icons
 
 ---
+
 For further development, see the "Idea to implement.." file for prompts, requests, and future plans.

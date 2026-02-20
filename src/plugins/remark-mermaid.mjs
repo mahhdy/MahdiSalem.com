@@ -35,13 +35,35 @@ export function remarkMermaid() {
                 const wrapperStyles = [];
                 if (width) wrapperStyles.push(`width: ${width}`);
                 if (height) wrapperStyles.push(`max-height: ${height}`);
-                if (width || height) wrapperStyles.push(`margin-left: auto`, `margin-right: auto`, `overflow: auto`);
+
+                // Alignment logic
+                const alignMatch = meta.match(/align=["']?([^"'\s]+)["']?/);
+                const align = alignMatch ? alignMatch[1] : 'center';
+
+                if (align === 'left') wrapperStyles.push(`margin-left: 0`, `margin-right: auto`);
+                else if (align === 'right') wrapperStyles.push(`margin-left: auto`, `margin-right: 0`);
+                else wrapperStyles.push(`margin-left: auto`, `margin-right: auto`);
+
+                wrapperStyles.push(`overflow: auto`);
 
                 const styleAttr = wrapperStyles.length > 0 ? ` style="${wrapperStyles.join('; ')}"` : '';
 
+                // Metadata for client-side JS
+                const expanded = meta.includes('expanded') ? 'true' : 'false';
+
                 const html = {
                     type: 'html',
-                    value: `<div class="mermaid-wrapper" role="figure"${styleAttr}>
+                    value: `<div class="mermaid-wrapper" role="figure"${styleAttr} data-align="${align}" data-expanded="${expanded}">
+<div class="mermaid-toolbar">
+    <div class="mermaid-zoom-control">
+        <span class="zoom-label">🔍</span>
+        <input type="range" class="mermaid-zoom-slider" min="0.2" max="3" step="0.1" value="1" title="Zoom">
+    </div>
+    <button class="mermaid-tool-btn pan-btn" title="Pan Tool">🤚</button>
+    <button class="mermaid-tool-btn reset-btn" title="Reset View">🔄</button>
+    <button class="mermaid-tool-btn zoom-btn" title="Full Screen">↔️</button>
+    <button class="mermaid-tool-btn expand-btn" title="Expand/Collapse">↕️</button>
+</div>
 <div class="mermaid">
 ${processedValue}
 </div>

@@ -26,6 +26,7 @@ This document consolidates earlier tracking files to provide a single overview o
 
 - **Category View Improvements**: Query-based filtering (`?interface=<slug>`), Tooltips, Item Previews.
 - **Show-Header Frontmatter**: Support for `show-header: false` to hide redundant h1 headings.
+- **Mermaid & Archiving (Feb 20, 2026)**: Smart sizing (zoom, pan, auto-collapse), Farsi text support, and automated date-based archiving with duplicate protection.
 
 ### 🔄 Planned / In Progress
 
