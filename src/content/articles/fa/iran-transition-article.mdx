@@ -51,8 +51,6 @@ difficulty: "متوسط"
 
 ### ۱.۲ اصول بنیادین
 
-
-
 ```mermaid
 graph LR
     A["همکاری"] --> B["شفافیت"]
@@ -64,18 +62,13 @@ graph LR
     style B fill:#0066a2,stroke:#333,color:white
     style C fill:#008000,stroke:#333,color:white
     style D fill:#ffd700,stroke:#333,color:#333
-
 ```
-
-
 
 ---
 
 ## ۲. چارچوب نهادی پیشنهادی
 
 ### ۲.۱ مثلث حکمرانی دموکراتیک
-
-
 
 ```mermaid
 graph TD
@@ -88,10 +81,7 @@ graph TD
     style B fill:#008000,stroke:#333,color:white
     style C fill:#ffd700,stroke:#333,color:#333
     style D fill:#0066a2,stroke:#333,color:white
-
 ```
-
-
 
 ### ۲.۲ ساختار پیشنهادی قدرت
 
@@ -107,29 +97,23 @@ graph TD
 
 ### ۳.۱ فازبندی زمانی
 
-
-
 ```mermaid
 gantt
     title نقشه راه گذار دموکراتیک ایران
     dateFormat  YYYY-MM
-    axisFormat  ماه
+    axisFormat  %Y-%m
+    فاز 1: آمادگی         :active,    des1, 2025-01-01, 90d
+    مذاکرات محرمانه       :          des2, 2025-01-01, 60d
+    ایجاد شورای انتقالی  :          des3, 2025-03-01, 30d
     
-    فاز ۱: آمادگی         :active,    des1, 2025-01, 3ماه
-    مذاکرات محرمانه       :          des2, 2025-01, 2ماه
-    ایجاد شورای انتقالی  :          des3, 2025-03, 1ماه
+    فاز 2: انتقال         :          des4, 2025-04-01, 180d
+    تدوین قانون اساسی     :          des5, 2025-04-01, 120d
+    رفراندوم              :          des6, 2025-08-01, 30d
     
-    فاز ۲: انتقال         :          des4, 2025-04, 6ماه
-    تدوین قانون اساسی     :          des5, 2025-04, 4ماه
-    رفراندوم              :          des6, 2025-08, 1ماه
-    
-    فاز ۳: تثبیت         :          des7, 2025-09, 6ماه
-    برگزاری انتخاب       :          des8, 2025-09, 2ماه
-    انتقال قدرت          :          des9, 2025-11, 1ماه
-
+    فاز 3: تثبیت         :          des7, 2025-09-01, 180d
+    برگزاری انتخاب       :          des8, 2025-09-01, 60d
+    انتقال قدرت          :          des9, 2025-11-01, 30d
 ```
-
-
 
 ### ۳.۲ نقاط عطف کلیدی
 
@@ -148,19 +132,17 @@ gantt
 
 ### ۴.۱ دایره مشارکت
 
-
-
 ```mermaid
 graph TD
-    subgraph حلقه هسته‌ای
+    subgraph "حلقه هسته‌ای"
     A["رهبران سیاسی"]
     end
     
-    subgraph حلقه میانی
+    subgraph "حلقه میانی"
     B["احزاب و سازمان‌های مدنی"]
     end
     
-    subgraph حلقه بیرونی
+    subgraph "حلقه بیرونی"
     C["مردم و شهروندان"]
     end
     
@@ -170,10 +152,7 @@ graph TD
     style A fill:#003d6e,stroke:#333,color:white
     style B fill:#0066a2,stroke:#333,color:white
     style C fill:#008000,stroke:#333,color:white
-
 ```
-
-
 
 ### ۴.۲ ماتریس مسئولیت‌ها
 
@@ -190,11 +169,9 @@ graph TD
 
 ### ۵.۱ پروتکل‌های حل اختلاف
 
-
-
 ```mermaid
 flowchart LR
-    A["اختلاف"] --> B{"شدت؟"}
+    A["اختلاف"] --> B{شدت؟}
     B -->|"کم"| C["گفتگوی مستقیم"]
     B -->|"متوسط"| D["میانجیگری"]
     B -->|"بالا"| E["شورای عالی"]
@@ -204,17 +181,14 @@ flowchart LR
     E --> F
     
     F --> G["اجرا"]
-    G --> H{"موفق؟"}
+    G --> H{موفق؟}
     H -->|"بله"| I["پایان"]
     H -->|"خیر"| A
     
     style A fill:#ff6b6b,stroke:#333,color:white
     style F fill:#51cf66,stroke:#333,color:white
     style I fill:#339af0,stroke:#333,color:white
-
 ```
-
-
 
 ### ۵.۲ تکنیک‌های عملی
 
@@ -249,8 +223,6 @@ flowchart LR
 
 ### ۶.۲ مدل نظارت بین‌المللی
 
-
-
 ```mermaid
 graph LR
     A["تیم نظارت بین‌المللی"] --> B["سازمان ملل"]
@@ -265,18 +237,13 @@ graph LR
     
     style A fill:#003d6e,stroke:#333,color:white
     style F fill:#008000,stroke:#333,color:white
-
 ```
-
-
 
 ---
 
 ## ۷. شاخص‌های موفقیت
 
 ### ۷.۱ داشبورد KPI
-
-
 
 ```mermaid
 pie
@@ -286,10 +253,7 @@ pie
     "اعتماد عمومی >60%" : 15
     "شفافیت >8/10" : 10
     "مشارکت زنان >40%" : 10
-
 ```
-
-
 
 ### ۷.۲ ماتریس اولویت‌ها
 
@@ -316,8 +280,6 @@ pie
 
 ### ۸.۱ برای مردم
 
-
-
 ```mermaid
 graph TD
     A["مردم"] --> B["ثبت‌نام فعال"]
@@ -330,10 +292,7 @@ graph TD
     style C fill:#0066a2,stroke:#333,color:white
     style D fill:#0066a2,stroke:#333,color:white
     style E fill:#0066a2,stroke:#333,color:white
-
 ```
-
-
 
 ### ۸.۲ برای دانشگاه‌ها
 
@@ -364,17 +323,15 @@ graph TD
 
 ### ۹.۲ درخت تصمیم‌گیری
 
-
-
 ```mermaid
 flowchart TD
-    A["شروع"] --> B{"وضعیت؟"}
+    A["شروع"] --> B{وضعیت؟}
     B -->|"موافق"| C["ادامه برنامه"]
-    B -->|"مقاومت"| D{"شدت؟"}
+    B -->|"مقاومت"| D{شدت؟}
     D -->|"کم"| E["مذاکره"]
     D -->|"زیاد"| F["میانجیگری"]
     E --> G["توافق"]
-    F --> H{"موفق؟"}
+    F --> H{موفق؟}
     H -->|"بله"| G
     H -->|"خیر"| I["تغییر برنامه"]
     G --> C
@@ -382,18 +339,13 @@ flowchart TD
     
     style A fill:#003d6e,stroke:#333,color:white
     style C fill:#51cf66,stroke:#333,color:white
-
 ```
-
-
 
 ---
 
 ## ۱۰. نتیجه‌گیری
 
 ### اصول کلیدی
-
-
 
 ```mermaid
 graph LR
@@ -407,10 +359,7 @@ graph LR
     style C fill:#008000,stroke:#333,color:white
     style D fill:#ffd700,stroke:#333,color:#333
     style E fill:#6c757d,stroke:#333,color:white
-
 ```
-
-
 
 > **همکاری** به جای تقابل
 > 

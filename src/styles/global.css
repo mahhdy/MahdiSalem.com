@@ -1586,3 +1586,100 @@ html.dark .mermaid-modal .mermaid-content {
   z-index: 10001;
 }
 
+/* =============================================
+   Gantt Chart — RTL / Farsi Specific Fixes
+   ============================================= */
+
+/* Gantt containers scroll horizontally on small screens */
+.mermaid-type-gantt {
+  width: 100%;
+  max-width: 100%;
+  min-width: 600px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mermaid-type-gantt .mermaid {
+  min-width: 750px;
+}
+
+.mermaid-type-gantt svg {
+  min-width: 700px;
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* RTL task bar text */
+.mermaid-type-gantt .taskText,
+.mermaid-type-gantt .taskTextOutsideRight,
+.mermaid-type-gantt .taskTextOutsideLeft {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  font-family: 'Vazirmatn', 'Vazir', 'Tahoma', sans-serif !important;
+  font-size: 12px !important;
+}
+
+/* Section headers */
+.mermaid-type-gantt .sectionTitle {
+  direction: rtl;
+  font-family: 'Vazirmatn', 'Vazir', 'Tahoma', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: bold;
+}
+
+/* Chart title */
+.mermaid-type-gantt .titleText {
+  direction: rtl;
+  font-family: 'Vazirmatn', 'Vazir', 'Tahoma', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: bold;
+}
+
+/* Axis dates — keep LTR */
+.mermaid-type-gantt .tick text {
+  direction: ltr;
+  font-size: 11px;
+}
+
+/* Prevent task text from being clipped */
+.mermaid-type-gantt .task {
+  overflow: visible !important;
+}
+
+/* Text outside narrow bars */
+.mermaid-type-gantt .taskTextOutsideRight {
+  fill: #333 !important;
+  font-size: 11px !important;
+}
+
+/* Grid lines */
+.mermaid-type-gantt .grid .tick line {
+  stroke: #e5e7eb;
+  stroke-dasharray: 3;
+}
+
+/* Dark mode overrides */
+html.dark .mermaid-type-gantt .taskTextOutsideRight {
+  fill: #e2e8f0 !important;
+}
+html.dark .mermaid-type-gantt .grid .tick line {
+  stroke: #334155;
+}
+
+/* Touch-friendly scrollbar */
+.mermaid-type-gantt::-webkit-scrollbar {
+  height: 8px;
+}
+.mermaid-type-gantt::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+/* =============================================
+   All Mermaid Types — Farsi Font Override
+   ============================================= */
+.mermaid-wrapper svg text,
+.mermaid-wrapper svg .label,
+.mermaid-wrapper svg .nodeLabel {
+  font-family: 'Vazirmatn', 'Vazir', 'Tahoma', sans-serif !important;
+}

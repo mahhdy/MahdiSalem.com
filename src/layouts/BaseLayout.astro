@@ -91,70 +91,69 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <!-- Mermaid.js - Diagram Rendering -->
     <script is:inline src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
     <script is:inline>
-      // Initialize mermaid with proper configuration
+      // Initialize Mermaid with full RTL / Farsi / Gantt support
       if (typeof mermaid !== 'undefined') {
-        mermaid.initialize({ 
-          startOnLoad: true,
-          theme: document.documentElement.classList.contains('dark') ? 'dark' : 'default',
+        const isDark = document.documentElement.classList.contains('dark');
+        mermaid.initialize({
+          startOnLoad: false,   // We call mermaid.run() manually below
+          theme: isDark ? 'dark' : 'default',
+          fontFamily: '"Vazirmatn", "Vazir", "Tahoma", sans-serif',
           flowchart: {
-            useMaxWidth: true,
+            useMaxWidth: false,
             htmlLabels: true,
             curve: 'basis'
           },
-          sequenceDiagram: {
-            useMaxWidth: true
-          },
-          mindmap: {
-            useMaxWidth: true
-          },
           gantt: {
-            useMaxWidth: true
+            useMaxWidth: true,
+            titleTopMargin: 25,
+            barHeight: 30,
+            barGap: 6,
+            topPadding: 60,
+            rightPadding: 120,
+            leftPadding: 150,
+            gridLineStartPadding: 35,
+            fontSize: 13,
+            sectionFontSize: 14,
+            numberSectionStyles: 4,
+            axisFormat: '%Y-%m',
           },
-          pie: {
-            useMaxWidth: true
-          },
-          gitGraph: {
-            useMaxWidth: true
-          },
-          stateDiagram: {
-            useMaxWidth: true
+          mindmap:     { useMaxWidth: true },
+          pie:         { useMaxWidth: true },
+          timeline:    { useMaxWidth: true },
+          gitGraph:    { useMaxWidth: true },
+          stateDiagram:{ useMaxWidth: true },
+          themeVariables: {
+            fontFamily: '"Vazirmatn", "Vazir", "Tahoma", sans-serif',
           }
         });
       }
-      
-      // Run mermaid on page load
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function() {
-          if (typeof mermaid !== 'undefined') {
-            mermaid.run();
-          }
-        });
-      } else {
+
+      function runMermaid() {
         if (typeof mermaid !== 'undefined') {
-          mermaid.run();
+          mermaid.run({ querySelector: '.mermaid:not([data-processed])' });
         }
       }
-      
-      // Listen for theme changes and re-render diagrams
-      const observer = new MutationObserver(function(mutations) {
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', runMermaid);
+      } else {
+        runMermaid();
+      }
+
+      // Re-render on theme change
+      const themeObserver = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
           if (mutation.attributeName === 'class' && typeof mermaid !== 'undefined') {
             const isDark = document.documentElement.classList.contains('dark');
-            mermaid.initialize({ 
-              theme: isDark ? 'dark' : 'default'
-            });
-            // Re-render diagrams - remove old SVGs
-            document.querySelectorAll('.mermaid svg').forEach(svg => {
-              svg.remove();
-            });
-            // Re-run mermaid
-            mermaid.run();
+            mermaid.initialize({ theme: isDark ? 'dark' : 'default', startOnLoad: false });
+            document.querySelectorAll('.mermaid svg').forEach(svg => svg.remove());
+            runMermaid();
           }
         });
       });
-      
-      observer.observe(document.documentElement, { attributes: true });
+      themeObserver.observe(document.documentElement, { attributes: true });
     </script>
+
 
     <script>
       import '../scripts/mermaid-interact';

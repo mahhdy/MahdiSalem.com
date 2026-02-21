@@ -368,11 +368,25 @@ export function remarkMermaid() {
           .replaceAll('}', '&#125;');
 
         // 2. Auto-quote Farsi text
+        // ✅ NEW - safe auto-quoting
         processedValue = processedValue.replace(
-          /([\[\(\{>])([^"\[\(\{>][^\]\)\}<]+?)([\]\)\}])/g,
+          // Only match bracket content that is NOT already quoted
+          /([$$\(\{>])(?!")([^$$\)\}<"]+?)([\]\)\}])/g,
           (match, open, text, close) => {
-            if (/[\u0600-\u06FF]/.test(text) && !text.includes('"')) {
-              return `${open}"${text}"${close}`;
+            // Only add quotes if:
+            // 1. Contains Farsi characters
+            // 2. Not already quoted
+            // 3. Not a single word (likely a node ID like A, B1, etc.)
+            // 4. Not inside a style definition
+            if (
+              /[\u0600-\u06FF]/.test(text) &&
+              !text.startsWith('"') &&
+              !text.endsWith('"') &&
+              text.trim().length > 1 &&
+              !text.includes(':::') &&
+              !text.includes('style')
+            ) {
+              return `${open}"${text.trim()}"${close}`;
             }
             return match;
           }

@@ -167,7 +167,92 @@ _(Run `npm run test:mermaid` anytime to refresh the test file — all IDs are pr
 
 ---
 
-## 🔧 PART 3: Proposed Fix Strategy (Ordered by Safety)
+## 📊 PART 3: Proposed Fix Strategy (Ordered by Safety)
+
+**Rule:** Each fix must be **isolated, reversible, and targeted** at one class only.
+
+### Step 1 — Fix Class A: HTML Entity De-encoding (PIPELINE) ✅ VERIFIED NOT AN ISSUE
+
+- **Status:** After investigation, the source MDX files already contain literal `-->` arrows.
+- The remark plugin passes `node.value` raw from the AST — no entity encoding occurs.
+- Class A is NOT a real issue in the current pipeline.
+
+### Step 2 — Fix Class B: Malformed AI-Generated Node Syntax ✅ PIPELINE FIXED (2026-02-20)
+
+- **File:** `src/plugins/remark-mermaid.mjs` — `fixMalformedNodeSyntax()`
+- **Also:** `scripts/lib/mermaid-processor.mjs` — same function
+- **Effect:** At render time, `-->"B["label""]` is automatically rewritten to `--> B["label"]`
+- **Note:** Source files still show as CLASS_B (expected — source is not modified, fix is at render)
+- **Test:** Build passes ✅
+
+### Step 3 — Fix Class C: `<br/>` Preservation ✅ PIPELINE FIXED (2026-02-20)
+
+- **File:** `src/plugins/remark-mermaid.mjs` — `protectBrTags()` / `restoreBrTags()`
+- **Effect:** `<br/>` is replaced with placeholder before processing, then restored before HTML output
+
+### Step 4 — Fix Class D: Gantt Farsi Durations ✅ PIPELINE FIXED (2026-02-20)
+
+- **File:** `src/plugins/remark-mermaid.mjs` — `convertFarsiDurations()` + `fixGanttAxes()`
+- **Also Source:** `iran-transition-article.mdx` — gantt syntax corrected directly
+- **Effect:** `3ماه` → `90d`, `axisFormat ماه` → `axisFormat %Y-%m`, dates padded with `-01`
+
+### Step 5 — Fix Class E: Timeline Typo ✅ PIPELINE FIXED (2026-02-20)
+
+- **File:** `src/plugins/remark-mermaid.mjs` — `fixTimelineTypo()`
+- **Also Source:** `انقلاب-فرانسه.mdx` line 125 — `titleChronologie` → `title Chronologie`
+
+### Step 6 — Fix Class F: Pie Title Nested Quotes ✅ PIPELINE FIXED (2026-02-20)
+
+- **File:** `src/plugins/remark-mermaid.mjs` — `fixPieTitleQuotes()`
+
+### Step 7 — Fix Class G: Unquoted Farsi Subgraph Labels ✅ PIPELINE FIXED (2026-02-20)
+
+- **File:** `src/plugins/remark-mermaid.mjs` — `fixSubgraphLabels()`
+
+### Step 8 — Fix Class H: Trailing `<` in Edge Labels ✅ PIPELINE FIXED (2026-02-20)
+
+- **File:** `src/plugins/remark-mermaid.mjs` — `fixEdgeLabelTrailingChar()`
+
+---
+
+## 📊 PART 4: What NOT to Touch
+
+These changes have been tried and **broke other things**. Do not re-introduce them:
+
+| ❌ Change                                            | Why it Broke Things                                         |
+| ---------------------------------------------------- | ----------------------------------------------------------- |
+| `.replaceAll('>', '&gt;')` in remark plugin          | Converts `-->` arrows to `--&gt;` — Mermaid cannot parse    |
+| `.replaceAll('{', '&#123;')` globally                | Destroys `{}` diamond nodes in flowcharts                   |
+| `\\` → `\\\\` globally                               | Double-escaping LaTeX expressions; causes `\u` parse errors |
+| Applying `escapeForMDX()` to mermaid blocks          | Mermaid needs raw syntax, not MDX-safe entities             |
+| Complex nested char classes like `[\]\)\}]` in regex | Rollup's regex parser throws "Unmatched )"                  |
+
+---
+
+## 📝 PART 5: Progress Log
+
+| Date       | Action                                                        | Before    | After     | Build |
+| ---------- | ------------------------------------------------------------- | --------- | --------- | ----- |
+| 2026-02-20 | Initial analysis — created tracker                            | 33 issues | 33 issues | ✅    |
+| 2026-02-20 | Added chart IDs to test file                                  | —         | —         | ✅    |
+| 2026-02-20 | Applied CLASS B–H pipeline fixes in `remark-mermaid.mjs`      | —         | —         | ✅    |
+| 2026-02-20 | Added Gantt CSS for RTL/Farsi support                         | —         | —         | ✅    |
+| 2026-02-20 | Updated Mermaid init config (startOnLoad=false, gantt config) | —         | —         | ✅    |
+
+> **Note on issue count:** The static extractor counts issues in _source_ MDX files.
+> Pipeline fixes apply at **render time only** — source count stays at 32.
+> To reduce the source count, source files need to be manually corrected (CLASS B requires content editing in 30 files).
+
+---
+
+## 📝 PART 6: User Feedback Log
+
+_Fill this in as you review the Chart-test page._
+
+| Date       | Chart ID | Observation                      | Action                                    |
+| ---------- | -------- | -------------------------------- | ----------------------------------------- |
+| 2026-02-20 | ALL      | Most charts showing parse errors | Analysis complete, pipeline fixes applied |
+|            |          |                                  |                                           |
 
 **Rule:** Each fix must be **isolated, reversible, and targeted** at one class only.
 
