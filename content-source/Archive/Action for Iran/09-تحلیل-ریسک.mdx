@@ -1,233 +1,0 @@
----
-title: "تحلیل ریسک"
-description: ""
-lang: "fa"
-tags: ['سیاسی، انقلاب، ایران، خط مشی عمومی، برنامه\u200c ی گذار']
-draft: false
-order: 8
-bookSlug: "untitled"
-chapterNumber: 9
-aiGenerated: true
-aiNote: "متن کلی ااز هوش مصنوعی اقتباس شده است. ولی بررسی دقیق و تکمیل با نویسنده بوده است."
-author: "مهدی سالم"
-category: "انقلاب"
----
-
-import Callout from '@components/Callout.astro';
-
-# تحلیل ریسک
-
-
-```latex
-% TikZ Diagram
-\begintikzpicture
-\fill[iranred!20] (0,3) rectangle (3,6);
-    \fill[irangold!20] (0,0) rectangle (3,3);
-    \fill[irangold!20] (3,3) rectangle (6,6);
-    \fill[irangreen!20] (3,0) rectangle (6,3);
-
-    \draw[thick, <->] (0, 0) – (6.5, 0) node[right] احتمال;
-    \draw[thick, <->] (0, 0) – (0, 6.5) node[above] تأثیر;
-
-
-    \node[circle, fill=iranred, inner sep=2pt, label=right:سرکوب] at (2, 5.5) ;
-    \node[circle, fill=iranred!70, inner sep=2pt, label=right:جنگ داخلی] at (1, 5) ;
-    \node[circle, fill=irangold, inner sep=2pt, label=right:تجزیه] at (0.5, 5.8) ;
-    \node[circle, fill=irangreen, inner sep=2pt, label=right:اقتصاد] at (4, 2) ;
-
-    \node[below=3.5cm of goal, align=center, font=  \coloriranred!70] at (3,0) نقشه حرارتی ریسک‌های استراتژیک;
-\endtikzpicture
-```
-
-\captionoffigureارزیابی توزیع ریسک‌های گذار
-
-
-<Callout type="quote" title="💬 نقل قول">
-
-«مدیریت ریسک یعنی آمادگی برای بدترین و تلاش برای بهترین.»
-
-</Callout>
-
-
-## ماتریس ریسک
-
-
-```latex
-% TikZ Diagram
-\begintikzpicture
-\draw[step=2cm, gray, thin] (0,0) grid (10,10);
-
-
-    \draw[thick, ->] (0,0) – (10.5,0) node[right] احتمال;
-    \draw[thick, ->] (0,0) – (0,10.5) node[above] تأثیر;
-
-
-    \foreach \x/\label in 1/کم, 3/متوسط, 5/بالا, 7/بسیار بالا, 9/حداکثر
-        \node[font=] at (\x, -0.3) \label;
-        \node[font=] at (-0.5, \x) \label;
-
-
-    \fill[green!20] (0,0) rectangle (4,4);
-    \fill[yellow!30] (4,0) rectangle (10,4);
-    \fill[yellow!30] (0,4) rectangle (4,10);
-    \fill[orange!30] (4,4) rectangle (8,8);
-    \fill[red!30] (8,4) rectangle (10,10);
-    \fill[red!30] (4,8) rectangle (10,10);
-
-
-    \node[draw, circle, fill=white, font=] at (7, 9) R1;
-    \node[draw, circle, fill=white, font=] at (5, 7) R2;
-    \node[draw, circle, fill=white, font=] at (3, 8) R3;
-    \node[draw, circle, fill=white, font=] at (6, 5) R4;
-    \node[draw, circle, fill=white, font=] at (4, 3) R5;
-\endtikzpicture
-```
-
-\captionoffigureماتریس ریسک استراتژیک
-
-
-<figure>
-<div class="table-wrapper" dir="rtl">
-<table>
-  <thead>
-  <tr style="background-color: rgba(100,100,200,0.2);">
-    <th><strong>کد</strong></th>
-    <th><strong>ریسک</strong></th>
-    <th><strong>احتمال</strong></th>
-    <th><strong>تأثیر</strong></th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>R1</td>
-    <td>سرکوب خونین‌تر</td>
-    <td>بالا</td>
-    <td>حداکثر</td>
-  </tr>
-  <tr>
-    <td>R2</td>
-    <td>جنگ داخلی</td>
-    <td>متوسط</td>
-    <td>بسیار بالا</td>
-  </tr>
-  <tr>
-    <td>R3</td>
-    <td>تجزیه کشور</td>
-    <td>کم</td>
-    <td>حداکثر</td>
-  </tr>
-  <tr>
-    <td>R4</td>
-    <td>دیکتاتوری جدید</td>
-    <td>متوسط</td>
-    <td>بالا</td>
-  </tr>
-  <tr>
-    <td>R5</td>
-    <td>شکست اقتصادی</td>
-    <td>متوسط</td>
-    <td>متوسط</td>
-  </tr>
-  </tbody>
-</table>
-</div>
-<figcaption>فهرست ریسک‌های اصلی</figcaption>
-</figure>
-
-
-## سناریوهای بدترین حالت
-
-
-### سناریو ۱: سرکوب خونین
-
-
-<Callout type="warning" title="⚠️ هشدار">
-
-نظام با استفاده از تمام ظرفیت سرکوب، اعتراضات را سرکوب می‌کند.
-
-- **تلفات:** هزاران تا ده‌ها هزار
-
-- **پیامد:** سکوت موقت، خشم انباشته
-
-- **کاهش:** تاکتیک‌های پراکنده، اجتناب از تجمعات متمرکز
-
-</Callout>
-
-
-### سناریو ۲: جنگ داخلی
-
-
-<Callout type="warning" title="⚠️ هشدار">
-
-درگیری مسلحانه بین گروه‌های مختلف.
-
-- **تلفات:** صدها هزار
-
-- **پیامد:** ویرانی، مداخله خارجی
-
-- **کاهش:** اجتناب از مسلح شدن، وحدت اپوزیسیون
-
-</Callout>
-
-
-### سناریو ۳: تجزیه
-
-
-<Callout type="warning" title="⚠️ هشدار">
-
-جدایی مناطق قومی.
-
-- **احتمال:** پایین اما موجود
-
-- **کاهش:** تضمین حقوق اقلیت‌ها، فدرالیسم
-
-</Callout>
-
-
-## استراتژی‌های کاهش ریسک
-
-
-<figure>
-<div class="table-wrapper" dir="rtl">
-<table>
-  <thead>
-  <tr style="background-color: rgba(100,100,200,0.3);">
-    <th><strong>ریسک</strong></th>
-    <th><strong>استراتژی کاهش</strong></th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>سرکوب</td>
-    <td>تاکتیک‌های غیرمتمرکز، حمایت بین‌المللی</td>
-  </tr>
-  <tr>
-    <td>جنگ داخلی</td>
-    <td>وحدت اپوزیسیون، خلع سلاح</td>
-  </tr>
-  <tr>
-    <td>تجزیه</td>
-    <td>فدرالیسم، حقوق برابر</td>
-  </tr>
-  <tr>
-    <td>دیکتاتوری</td>
-    <td>نظارت بین‌المللی، نهادهای قوی</td>
-  </tr>
-  </tbody>
-</table>
-</div>
-<figcaption>استراتژی‌های کاهش ریسک</figcaption>
-</figure>
-
-
-<Callout type="summary" title="📋 title=خلاصه فصل">
-
-- ریسک‌های جدی وجود دارند و باید مدیریت شوند
-
-- سرکوب خونین محتمل‌ترین ریسک است
-
-- جنگ داخلی و تجزیه باید به شدت از آنها اجتناب شود
-
-- استراتژی‌های کاهش از قبل باید آماده باشند
-
-</Callout>

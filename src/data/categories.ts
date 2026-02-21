@@ -278,6 +278,21 @@ export const categories: Category[] = [
     imagePath: '/images/categories/life.svg',
     contentTypes: ['articles', 'books', 'multimedia'],
   },
+  {
+    slug: 'theology',
+    nameFa: 'الاهیات و دین',
+    nameEn: 'Theology',
+    imagePath: '/images/categories/theology.svg',
+    contentTypes: ['articles', 'books', 'statements', 'multimedia'],
+  },
+  {
+    slug: 'natural-theology',
+    nameFa: 'الاهیات طبیعی',
+    nameEn: 'Natural Theology',
+    imagePath: '/images/categories/natural-theology.svg',
+    parentCategory: 'theology',
+    contentTypes: ['articles', 'books', 'statements', 'multimedia'],
+  },
 ];
 
 /**
