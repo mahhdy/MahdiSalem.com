@@ -1,4 +1,102 @@
-# Problems to be Addressed
+# To Do List for Prompt Implementation
+
+### Update Todos
+
+- [x] Batch 1: Footer 2-col mobile, PDF desktop hint, mobile PDF fix  
+- [x] Batch 2: Add `hidden` field to schemas + all content files  
+- [x] Write script to add `hidden` + `showInContents` to all content files missing them  
+- [x] Batch 3a: All-categories page with category + tag tabs + footer link  
+- [x] Batch 3b: Social media page (Telegram tab + stubs)  
+- [x] Batch 3c: Telegram view toggle (config file + admin Config page)  
+
+- [ ] Committing and pushing branch  
+- [ ] Batch 4a: Admin pages (SocialManager, HiddenContentManager, AllContentsManager, SiteConfigManager)  
+- [ ] Batch 4b: Admin FrontmatterManager page  
+- [ ] Batch 4c: Bulk frontmatter editing in ContentBrowser  
+- [ ] Update `README` and `progress_tracker.md`  
+
+
+
+```markdown
+Summary of Your 10 Items
+## Item 0 — hidden frontmatter field
+Current state: No hidden field exists. The draft field is used instead.
+Plan: Add hidden: boolean (default: false) to all collection schemas. Hidden content won't render unless a ?force=true query param (or --force suffix) is present in the URL. This needs schema changes + layout logic.
+
+## Item 1 — PDF force-open in browser (not IDM) on desktop
+Current state: PDFViewer uses <a href=... download> for download button and target="_blank" for fullscreen. IDM intercepts Content-Disposition: attachment headers.
+Plan: For the "open in browser" link, use JS window.open(url) or #toolbar=1 hash trick. The download button stays as-is. On desktop, we can add #view=FitH to the URL to hint the browser to render inline.
+
+## Item 2 — Mobile PDF optimization
+Current state: The iframe has height: calc(100vh - 120px) with no mobile-specific navigation. On mobile, iframe PDFs are not navigable.
+Plan: Detect mobile, show a message with "Open PDF" button that opens the native PDF app. Also offer a download button. Keep iframe for desktop.
+
+## Item 3 — Footer two columns on mobile
+Current state: Footer is grid-cols-1 md:grid-cols-3 — so on mobile it's 1 column (stacked).
+Plan: Change to grid-cols-2 md:grid-cols-3 — brand stays full-width on top, links columns side by side.
+
+## Item 4 — "All Categories" page with two tabs (per-category, per-tag)
+Current state: contents.astro shows stats + categories but no tag view.
+Plan: Enhance contents.astro with two tabs: one per-category (current view), one per-tag. Add link to it in footer. Cards show content items similar to existing content pages.
+
+## Item 5 — Social Media page (hidden in nav)
+Current state: No social media section exists.
+Plan: Create src/pages/social/index.astro with tabs for Telegram, X, Instagram, Facebook. Add to hidden nav. Telegram pulls from the existing worker. Other platforms use embed approach with manually managed IDs. This is the largest feature.
+
+## Item 6 — Telegram section view toggle (full vs compact 2-col)
+Current state: TelegramFeed.astro shows full view.
+Plan: Add a telegramView config option (controllable from admin or env var/config file) that switches between full view (current) and a compact 2-column grid with link to Telegram page.
+
+## Item 7 — Admin: Social media management + All Contents + Hidden content management pages
+Current state: Admin has Dashboard, ContentBrowser, ContentEditor, CategoryManager, TagManager, I18nManager, MediaManager, ScriptRunner.
+Plan: Add 3 new admin pages: SocialMediaManager, AllContentsManager (control showInAllContentsPage), HiddenContentManager (control hidden field).
+
+## Item 8 — Admin: Frontmatter control panel
+Current state: ContentEditor has frontmatter editing per-file.
+Plan: Add a FrontmatterManager page in admin showing schema-level defaults, per-content-type defaults, and per-subject defaults. Very ambitious — I'll implement the schema/defaults view with editing.
+
+## Item 9 — Bulk frontmatter editing in content management
+Current state: ContentEditor is single-file only.
+Plan: Add bulk-select mode in ContentBrowser + a bulk-edit dialog for frontmatter fields.
+
+## Item 10 — New subject types (multimedia, social media) for search/filter
+Current state: Categories system exists via src/data/categories.ts.
+Plan: Add multimedia and social media as filterable subject types in search and content browser.
+
+## Recommended Implementation Order
+Given complexity, I suggest tackling these in batches:
+
+### Batch 1 (Quick wins — no new pages):
+
+Item 3: Footer 2-col mobile
+Item 2: Mobile PDF fix
+Item 1: PDF desktop browser hint
+
+### Batch 2 (Schema + frontmatter):
+
+Item 0: hidden frontmatter field
+
+### Batch 3 (New pages):
+
+Item 4: All-categories page with tag tab
+Item 5: Social media page (Telegram tab first, others as stubs)
+Item 6: Telegram view toggle
+
+### Batch 4 (Admin panel):
+
+Item 7: Admin social/hidden/all-contents pages
+Item 8: Frontmatter manager
+Item 9: Bulk frontmatter editing
+Item 10: New subject types
+
+## Note
+just for batch 2 remember to add the frontmatter to all available contents, if they are lacking it. I think I already added one hidden: false to the items.
+you can skip Archive folder as it is just a parking and is not being posted to the website.
+for the telegram control switch, you can keep it in config file, however if I can change it from Admin page like in a page like setup or config. that would be great too..
+remeber to update the readme file and progress file as you adding the features.
+```
+
+# Problems to be Addressed (My Version)
 
 0. add a frontmatter (if it is not already there) as hidden:false (defult = false) so if it is true, the content not be displayed unless forced in url (like --force at the end of link) or someother way you can advise
 1. if the website is openned in big screens, (not mobile) Force to PDF's to be opeened in browser if any tool is forcing them to download like idm! or identify them link for download
@@ -11,6 +109,7 @@
 8. in admin section give me a page to control fronmatters. Their defult values and also to control the frontmatters of each content (like hidden, showPdfViewer, pdfOnly, showInAllContentsPage, tags, category, interface, book, sourceType ...etc) and also to control the content of each frontmatter (like pdfUrl for pdfOnly contents) and also to control the default values of frontmatters for each sourceType (like for pdf sourceType the default value of showPdfViewer is true and for article sourceType the default value of showPdfViewer is false ...etc) I shoudl be able to see per subject (book, article, multimedia .. ) what are the used fronmatter, what are neccessary and what are optional and also to control the default values of each frontmatter for each subject (book, article, multimedia .. ) and also to control the default values of each frontmatter for each sourceType (like for pdf sourceType the default value of showPdfViewer is true and for article sourceType the default value of showPdfViewer is false ...etc) and also to control the default values of each frontmatter for each interface (like for iran interface the default value of showPdfViewer is true and for other interfaces the default value of showPdfViewer is false ...etc) and also to control the default values of each frontmatter for each book (like for Iran Nations or Nation book the default value of showPdfViewer is true and for other books the default value of showPdfViewer is false ...etc)
 9. in content management I should be able to change fronmatters of selected items at once (like select 10 items and change their showInAllContentsPage fronmatter to true at once) and also to change the content of frontmatters of selected items at once (like select 10 items and change their pdfUrl fronmatter to a new url at once) and also to change the default values of frontmatters for each sourceType at once (like change the default value of showPdfViewer for pdf sourceType to true at once) and also to change the default values of frontmatters for each interface at once (like change the default value of showPdfViewer for iran interface to true at once) and also to change the default values of frontmatters for each book at once (like change the default value of showPdfViewer for Iran Nations or Nation book to true at once)
 10. add new subject types to the admin section (multimedia, social media) and so one for search and filter purpose... etc
+
 
 what I have for adding social media page: 
 

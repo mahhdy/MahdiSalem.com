@@ -9,6 +9,9 @@ import I18nManager from './pages/I18nManager';
 import MediaManager from './pages/MediaManager';
 import ScriptRunner from './pages/ScriptRunner';
 import Cheatsheet from './pages/Cheatsheet';
+import SiteConfigManager from './pages/SiteConfigManager';
+import HiddenContentManager from './pages/HiddenContentManager';
+import AllContentsManager from './pages/AllContentsManager';
 
 export default function App() {
     return (
@@ -23,6 +26,9 @@ export default function App() {
                 <Route path="/media" element={<MediaManager />} />
                 <Route path="/scripts" element={<ScriptRunner />} />
                 <Route path="/cheatsheet" element={<Cheatsheet />} />
+                <Route path="/site-config" element={<SiteConfigManager />} />
+                <Route path="/hidden-content" element={<HiddenContentManager />} />
+                <Route path="/all-contents" element={<AllContentsManager />} />
             </Route>
         </Routes>
     );

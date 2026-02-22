@@ -47,6 +47,8 @@ app.get('/', (c) => c.html(`
 app.get('/api/health', (c) => c.json({ status: 'ok', projectRoot: PROJECT_ROOT }));
 
 import { aiRoutes } from './routes/ai.js';
+import { siteConfigRoutes } from './routes/siteConfig.js';
+import { bulkContentRoutes } from './routes/bulkContent.js';
 
 // ... (in routes section)
 app.route('/api/stats', statsRoutes);
@@ -57,6 +59,8 @@ app.route('/api/i18n', i18nRoutes);
 app.route('/api/media', mediaRoutes);
 app.route('/api/scripts', scriptsRoutes);
 app.route('/api/ai', aiRoutes);
+app.route('/api/site-config', siteConfigRoutes);
+app.route('/api/bulk-content', bulkContentRoutes);
 
 const PORT = 3334;
 

@@ -7,12 +7,16 @@ const navItems = [
     { path: '/content', label: 'Content Browser', icon: '📝' },
     { path: '/categories', label: 'Categories', icon: '🏷️' },
     { path: '/tags', label: 'Tags', icon: '🔖' },
+    { section: 'Visibility' },
+    { path: '/hidden-content', label: 'Hidden Content', icon: '🔒' },
+    { path: '/all-contents', label: 'Contents Page', icon: '📋' },
     { section: 'Tools' },
     { path: '/i18n', label: 'Translations', icon: '🌐' },
     { path: '/media', label: 'Media', icon: '🖼️' },
     { path: '/scripts', label: 'Scripts', icon: '⚙️' },
     { path: '/cheatsheet', label: 'MDX Guide', icon: '📚' },
     { section: 'System' },
+    { path: '/site-config', label: 'Site Config', icon: '🛠️' },
     { path: 'http://localhost:4321', label: 'Go to Site', icon: '🏠', external: true },
 ];
 

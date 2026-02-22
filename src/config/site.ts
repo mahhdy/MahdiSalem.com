@@ -21,9 +21,9 @@ export const siteConfig = {
    */
   social: {
     telegram: '@mahhdy57',
-    x: '',
-    instagram: '',
-    facebook: '',
+    x: 'mahhdy57',
+    instagram: 'mahhdy57',
+    facebook: 'mahhdy',
     linkedin: '',
   },
 };
