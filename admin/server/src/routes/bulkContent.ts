@@ -27,10 +27,10 @@ bulkContentRoutes.post('/update-frontmatter', async (c) => {
         fields: Record<string, unknown>;
     }>();
 
-    if (\!Array.isArray(slugs) || slugs.length === 0) {
+    if (!Array.isArray(slugs) || slugs.length === 0) {
         return c.json({ error: 'No slugs provided' }, 400);
     }
-    if (\!fields || Object.keys(fields).length === 0) {
+    if (!fields || Object.keys(fields).length === 0) {
         return c.json({ error: 'No fields to update' }, 400);
     }
 
@@ -59,7 +59,7 @@ bulkContentRoutes.post('/update-frontmatter', async (c) => {
             }
         }
 
-        if (\!done) {
+        if (!done) {
             results.push({ slug, success: false, error: 'File not found' });
         }
     }
@@ -76,11 +76,11 @@ bulkContentRoutes.get('/by-field', async (c) => {
     const field = c.req.query('field');
     const rawValue = c.req.query('value');
 
-    if (\!field) return c.json({ error: 'field param required' }, 400);
+    if (!field) return c.json({ error: 'field param required' }, 400);
 
     // Parse value: try JSON parse, fallback to string
     let value: unknown = rawValue;
-    if (rawValue \!== undefined) {
+    if (rawValue !== undefined) {
         try { value = JSON.parse(rawValue); } catch { /* keep as string */ }
     }
 
