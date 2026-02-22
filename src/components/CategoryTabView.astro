@@ -6,14 +6,14 @@
  * Defaults to category view per user preference.
  */
 
-import CategoryCard from './CategoryCard.astro';
-import { getCategoriesByContentType } from '../data/categories';
+import CategoryCard from "./CategoryCard.astro";
+import { getCategoriesByContentType } from "../data/categories";
 
 interface Props {
-  contentType: 'articles' | 'books' | 'statements' | 'multimedia';
-  lang: 'fa' | 'en';
+  contentType: "articles" | "books" | "statements" | "multimedia";
+  lang: "fa" | "en";
   allItems: any[];
-  defaultTab?: 'list' | 'categories';
+  defaultTab?: "list" | "categories";
 }
 
 const { contentType, lang, allItems, defaultTab } = Astro.props;
@@ -34,9 +34,11 @@ relevantCategories.forEach((category) => {
     // Fallback: check old categories array for backward compatibility
     const itemCategories = item.data.categories || [];
     return itemCategories.some((cat: string) => {
-      return cat === category.slug ||
-             cat === category.nameFa ||
-             cat === category.nameEn;
+      return (
+        cat === category.slug ||
+        cat === category.nameFa ||
+        cat === category.nameEn
+      );
     });
   });
 
@@ -47,19 +49,26 @@ relevantCategories.forEach((category) => {
 
 // Dynamic default: category view when multiple interfaces exist, list view otherwise.
 // The passed-in defaultTab prop can override only if explicitly provided.
-const effectiveDefault = defaultTab ?? (categorizedItems.size > 1 ? 'categories' : 'list');
+const effectiveDefault =
+  defaultTab ?? (categorizedItems.size > 1 ? "categories" : "list");
 
 // Get i18n labels
 const labels = {
-  listView: lang === 'fa' ? 'نمای فهرستی' : 'List View',
-  categoryView: lang === 'fa' ? 'نمای دسته‌بندی' : 'Category View',
+  listView: lang === "fa" ? "نمای فهرستی" : "List View",
+  categoryView: lang === "fa" ? "نمای دسته‌بندی" : "Category View",
 };
 ---
 
-<div class="category-tab-view" data-default-tab={effectiveDefault} data-category-count={categorizedItems.size}>
+<div
+  class="category-tab-view"
+  data-default-tab={effectiveDefault}
+  data-category-count={categorizedItems.size}
+>
   <!-- Tab Buttons -->
   <div class="flex justify-center mb-8">
-    <div class="inline-flex p-1 bg-surface-dim dark:bg-surface-dark-dim rounded-lg border border-border dark:border-border-dark">
+    <div
+      class="inline-flex p-1 bg-surface-dim dark:bg-surface-dark-dim rounded-lg border border-border dark:border-border-dark"
+    >
       <button
         class="tab-btn px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
         data-tab="list"
@@ -87,28 +96,34 @@ const labels = {
     <!-- Category View -->
     <div id="categories-content" class="tab-content">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {Array.from(categorizedItems.entries()).map(([slug, items]) => {
-          const category = relevantCategories.find((c) => c.slug === slug);
-          if (!category) return null;
+        {
+          Array.from(categorizedItems.entries()).map(([slug, items]) => {
+            const category = relevantCategories.find((c) => c.slug === slug);
+            if (!category) return null;
 
-          return (
-            <CategoryCard
-              category={category}
-              items={items}
-              lang={lang}
-              contentType={contentType}
-            />
-          );
-        })}
+            return (
+              <CategoryCard
+                category={category}
+                items={items}
+                lang={lang}
+                contentType={contentType}
+              />
+            );
+          })
+        }
       </div>
 
-      {categorizedItems.size === 0 && (
-        <div class="text-center py-16">
-          <p class="text-text-muted dark:text-text-dark-muted">
-            {lang === 'fa' ? 'هیچ دسته‌بندی‌ای یافت نشد' : 'No categories found'}
-          </p>
-        </div>
-      )}
+      {
+        categorizedItems.size === 0 && (
+          <div class="text-center py-16">
+            <p class="text-text-muted dark:text-text-dark-muted">
+              {lang === "fa"
+                ? "هیچ دسته‌بندی‌ای یافت نشد"
+                : "No categories found"}
+            </p>
+          </div>
+        )
+      }
     </div>
   </div>
 </div>
@@ -152,62 +167,77 @@ const labels = {
 
 <script>
   function initCategoryTabViews() {
-    const tabViews = document.querySelectorAll('.category-tab-view');
+    const tabViews = document.querySelectorAll(".category-tab-view");
 
     tabViews.forEach((tabView) => {
-      const buttons = tabView.querySelectorAll<HTMLButtonElement>('.tab-btn');
-      const listContent = tabView.querySelector('#list-content');
-      const categoriesContent = tabView.querySelector('#categories-content');
-      const defaultTab = tabView.getAttribute('data-default-tab') || 'list';
+      const buttons = tabView.querySelectorAll<HTMLButtonElement>(".tab-btn");
+      const listContent = tabView.querySelector("#list-content");
+      const categoriesContent = tabView.querySelector("#categories-content");
 
-      const activateTab = (tab: string) => {
-        buttons.forEach((btn) => btn.classList.remove('active'));
+      const activateTab = (tab: string, updateUrl = true) => {
+        buttons.forEach((btn) => btn.classList.remove("active"));
         const activeBtn = tabView.querySelector(`[data-tab="${tab}"]`);
-        if (activeBtn) activeBtn.classList.add('active');
+        if (activeBtn) activeBtn.classList.add("active");
 
         if (listContent && categoriesContent) {
-          if (tab === 'list') {
-            listContent.classList.add('active');
-            categoriesContent.classList.remove('active');
+          if (tab === "list") {
+            listContent.classList.add("active");
+            categoriesContent.classList.remove("active");
           } else {
-            categoriesContent.classList.add('active');
-            listContent.classList.remove('active');
+            categoriesContent.classList.add("active");
+            listContent.classList.remove("active");
           }
         }
 
-        const url = new URL(window.location.href);
-        url.searchParams.set('view', tab);
-        window.history.replaceState(null, '', `${url.pathname}${url.search}`);
+        if (updateUrl) {
+          const url = new URL(window.location.href);
+          if (url.searchParams.get("view") !== tab) {
+            url.searchParams.set("view", tab);
+            window.history.replaceState(
+              null,
+              "",
+              `${url.pathname}${url.search}`,
+            );
+          }
+        }
       };
 
-      // Set initial active tab from defaultTab
-      activateTab(defaultTab);
+      // Determine initial tab from URL or default
+      const params = new URLSearchParams(window.location.search);
+      const queryView = params.get("view");
+      const interfaceParam = params.get("interface");
+      const hashView = window.location.hash.replace("#", "");
+      const defaultTab = tabView.getAttribute("data-default-tab") || "list";
+
+      let initialTab = defaultTab;
+      if (queryView === "list" || queryView === "categories") {
+        initialTab = queryView;
+      } else if (interfaceParam) {
+        initialTab = "list";
+      } else if (hashView === "list" || hashView === "categories") {
+        initialTab = hashView;
+      }
+
+      // Initialize the UI state
+      activateTab(initialTab, false);
 
       // Add click handlers
       buttons.forEach((button) => {
-        button.addEventListener('click', () => {
-          const tab = button.getAttribute('data-tab') || 'list';
+        button.addEventListener("click", () => {
+          const tab = button.getAttribute("data-tab") || "list";
           activateTab(tab);
         });
       });
-
-      // Override with URL state if explicitly set
-      const params = new URLSearchParams(window.location.search);
-      const queryView = params.get('view');
-      const interfaceParam = params.get('interface');
-      const hashView = window.location.hash.replace('#', '');
-      const urlView = queryView || (interfaceParam ? 'list' : hashView);
-      if (urlView === 'list' || urlView === 'categories') {
-        activateTab(urlView);
-      }
 
       // Apply ?interface= filter in list view
       if (interfaceParam && listContent) {
         const applyInterfaceFilter = () => {
           const filterBtn = listContent.querySelector<HTMLButtonElement>(
-            `.category-filter[data-category="${interfaceParam}"]`
+            `.category-filter[data-category="${interfaceParam}"]`,
           );
-          if (filterBtn) filterBtn.click();
+          if (filterBtn) {
+            filterBtn.click();
+          }
         };
         applyInterfaceFilter();
         setTimeout(applyInterfaceFilter, 50);
@@ -216,7 +246,7 @@ const labels = {
     });
   }
 
-  document.addEventListener('DOMContentLoaded', initCategoryTabViews);
-  document.addEventListener('astro:after-swap', initCategoryTabViews);
-  document.addEventListener('astro:page-load', initCategoryTabViews);
+  document.addEventListener("DOMContentLoaded", initCategoryTabViews);
+  document.addEventListener("astro:after-swap", initCategoryTabViews);
+  document.addEventListener("astro:page-load", initCategoryTabViews);
 </script>

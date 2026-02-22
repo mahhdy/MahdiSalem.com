@@ -10,7 +10,7 @@ export const siteConfig = {
    * "full"    – full card view (one column, current behaviour)
    * "compact" – 2-column compact grid with a link to /social
    */
-  telegramView: 'compact' as 'full' | 'compact',
+  telegramView: 'full' as 'full' | 'compact',
 
   /** How many Telegram posts to show on the homepage */
   telegramHomeLimit: 5,

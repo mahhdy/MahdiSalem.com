@@ -63,7 +63,7 @@ siteConfigRoutes.put('/', async (c) => {
             );
         }
 
-        if (updates.telegramHomeLimit \!== undefined) {
+        if (updates.telegramHomeLimit !== undefined) {
             raw = raw.replace(
                 /telegramHomeLimit:\s*\d+/,
                 `telegramHomeLimit: ${updates.telegramHomeLimit}`
