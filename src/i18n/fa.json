@@ -170,5 +170,20 @@
   "contents.all_content": "همه محتوا",
   "content.type.article": "مقاله",
   "content.type.book": "کتاب",
-  "content.type.multimedia": "چندرسانه‌ای"
+  "content.type.multimedia": "چندرسانه‌ای",
+  "nav.social": "شبکه‌های اجتماعی",
+  "social.title": "شبکه‌های اجتماعی",
+  "social.description": "آخرین پست‌ها و محتوای منتشر شده در شبکه‌های اجتماعی",
+  "social.telegram": "تلگرام",
+  "social.x": "ایکس (X)",
+  "social.instagram": "اینستاگرام",
+  "social.facebook": "فیسبوک",
+  "social.linkedin": "لینکدین",
+  "social.view_all": "مشاهده همه",
+  "social.coming_soon": "در حال آماده‌سازی است",
+  "hidden.badge": "پنهان",
+  "hidden.warning": "این محتوا پنهان است و به صورت عادی نمایش داده نمی‌شود.",
+  "contents.tab_categories": "بر اساس دسته‌بندی",
+  "contents.tab_tags": "بر اساس برچسب",
+  "contents.no_tags": "برچسبی یافت نشد."
 }

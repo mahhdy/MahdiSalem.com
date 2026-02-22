@@ -5,6 +5,8 @@ lang: fa
 section: "اسناد بنیادین"
 order: 1
 lastUpdated: 2025-03-15
+hidden: false
+showInContents: true
 ---
 
 ## پیشگفتار

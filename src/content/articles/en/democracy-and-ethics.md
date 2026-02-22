@@ -15,6 +15,8 @@ tags:
   - Iran
 interface: philosophy-of-ethics
 show-header: false
+hidden: false
+showInContents: true
 ---
 
 ## Introduction

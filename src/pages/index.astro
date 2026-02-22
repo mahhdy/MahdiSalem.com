@@ -2,8 +2,10 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Newsletter from '../components/Newsletter.astro';
 import TelegramFeed from '../components/TelegramFeed.astro';
+import TelegramFeedCompact from '../components/TelegramFeedCompact.astro';
 import { t, stripLangPrefix } from '../i18n';
 import { getCollection } from 'astro:content';
+import { siteConfig } from '../config/site';
 
 const lang = 'fa';
 
@@ -233,9 +235,12 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
     </div>
   </section>
 
-  <!-- Telegram Feed Section -->
+  <!-- Telegram Feed Section (view controlled by siteConfig.telegramView) -->
   <section class="container-wide py-12">
-    <TelegramFeed lang={lang} limit={5} />
+    {siteConfig.telegramView === 'compact'
+      ? <TelegramFeedCompact lang={lang} limit={siteConfig.telegramHomeLimit} />
+      : <TelegramFeed lang={lang} limit={siteConfig.telegramHomeLimit} />
+    }
   </section>
 
   <!-- Newsletter CTA -->

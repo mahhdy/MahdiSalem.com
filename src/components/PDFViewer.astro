@@ -1,10 +1,13 @@
 ---
 /**
  * PDFViewer Component (Stable Native Version)
- * 
+ *
  * This version uses the browser's native PDF engine via iframe
- * for maximum rendering quality (especially Farsi fonts) 
+ * for maximum rendering quality (especially Farsi fonts)
  * while maintaining integrated width controls and premium UI.
+ *
+ * - Desktop: Forces browser-native rendering (prevents IDM/download-manager interception)
+ * - Mobile: Shows a native-friendly open button instead of the iframe
  */
 import { t } from '../i18n';
 
@@ -21,16 +24,21 @@ const labels = {
   download: t('books.download_pdf', lang),
   fullscreen: t('books.pdf_fullscreen', lang),
   zoom: t('books.pdf_zoom', lang),
+  openInBrowser: lang === 'fa' ? 'باز کردن در مرورگر' : 'Open in Browser',
+  mobileHint: lang === 'fa'
+    ? 'برای مشاهده بهتر روی گوشی، PDF را در مرورگر یا اپلیکیشن PDF خود باز کنید.'
+    : 'For the best experience on mobile, open the PDF in your browser or PDF app.',
+  openPdf: lang === 'fa' ? 'باز کردن PDF' : 'Open PDF',
 };
 ---
 
-<div 
+<div
   class="pdf-viewer-root flex flex-col bg-surface-dim dark:bg-surface-dark-dim rounded-2xl border border-border dark:border-border-dark overflow-hidden transition-all duration-300 shadow-xl mx-auto w-full"
   id="pdf-root"
 >
   <!-- Top Toolbar -->
   <div class="pdf-toolbar z-20 flex flex-wrap items-center justify-between gap-3 p-3 bg-white/95 dark:bg-[#0a1117]/95 backdrop-blur-md border-b border-border dark:border-border-dark">
-    
+
     <!-- Left: Info -->
     <div class="flex items-center gap-3">
       <div class="w-8 h-8 rounded-lg bg-primary/10 dark:bg-primary-light/10 flex items-center justify-center text-primary dark:text-primary-light">
@@ -62,17 +70,19 @@ const labels = {
       </div>
 
       <div class="flex items-center gap-1">
-        <a
-          href={pdfUrl}
-          target="_blank"
-          class="p-2 rounded-xl bg-surface-dim dark:bg-surface-dark-dim border border-border dark:border-border-dark hover:bg-primary/10 dark:hover:bg-primary-light/10 text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light transition-all flex items-center justify-center"
-          title={labels.fullscreen}
+        <!-- Open in Browser button (desktop only - avoids IDM interception) -->
+        <button
+          id="pdf-open-browser-btn"
+          class="hidden md:flex p-2 rounded-xl bg-surface-dim dark:bg-surface-dark-dim border border-border dark:border-border-dark hover:bg-primary/10 dark:hover:bg-primary-light/10 text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light transition-all items-center gap-2 px-3 text-xs font-bold"
+          title={labels.openInBrowser}
+          data-pdf-url={pdfUrl}
         >
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
           </svg>
-        </a>
-        
+          <span class="hidden lg:inline">{labels.openInBrowser}</span>
+        </button>
+
         <a
           href={pdfUrl}
           download={title}
@@ -88,32 +98,62 @@ const labels = {
     </div>
   </div>
 
-  <!-- Main Viewport -->
-  <div class="pdf-viewport-container relative bg-white dark:bg-black w-full" style="height: calc(100vh - 120px); min-height: 800px; display: block;">
-    <iframe 
-      src={`${pdfUrl}#view=FitH&toolbar=1`} 
+  <!-- Desktop: iframe PDF viewer -->
+  <div class="pdf-desktop-view pdf-viewport-container relative bg-white dark:bg-black w-full" style="height: calc(100vh - 120px); min-height: 800px; display: block;">
+    <iframe
+      src={`${pdfUrl}#view=FitH&toolbar=1`}
       class="block w-full h-full"
       style="width: 100%; height: 100%; border: none; min-height: 800px;"
       title={title}
       loading="lazy"
     ></iframe>
-    
-    <!-- Mobile Fallback overlay (only if needed/detected) -->
-    <div id="pdf-mobile-fallback" class="absolute inset-0 z-10 flex flex-col items-center justify-center bg-surface-dim dark:bg-surface-dark-dim hidden">
-       <p class="mb-4 text-center px-4 font-medium opacity-70">
-         {lang === 'fa' ? 'برای مشاهده بهتر، فایل را دانلود کنید یا در پنجره جدید باز کنید.' : 'For better experience, download the file or open in a new window.'}
-       </p>
-       <div class="flex gap-3">
-          <a href={pdfUrl} target="_blank" class="px-5 py-2 rounded-lg bg-surface border border-border dark:bg-surface-dark dark:border-border-dark text-sm font-bold">Open</a>
-          <a href={pdfUrl} download class="px-5 py-2 rounded-lg bg-primary text-white text-sm font-bold">Download</a>
-       </div>
+  </div>
+
+  <!-- Mobile: friendly open-in-browser card (shown instead of iframe on mobile) -->
+  <div class="pdf-mobile-view hidden flex-col items-center justify-center py-16 px-6 text-center gap-6 bg-surface-dim dark:bg-surface-dark-dim">
+    <!-- PDF icon illustration -->
+    <div class="w-20 h-20 rounded-2xl bg-primary/10 dark:bg-primary-light/10 flex items-center justify-center">
+      <svg class="w-10 h-10 text-primary dark:text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+      </svg>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-bold text-text-base dark:text-text-dark mb-2">{title}</h3>
+      <p class="text-sm text-text-muted dark:text-text-dark-muted max-w-sm">{labels.mobileHint}</p>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-3 w-full max-w-xs">
+      <!-- Open in browser tab (native PDF app on iOS/Android) -->
+      <a
+        href={pdfUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-white font-semibold text-sm hover:bg-primary-dark transition-all no-underline shadow-lg shadow-primary/20"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+        {labels.openPdf}
+      </a>
+      <!-- Download -->
+      <a
+        href={pdfUrl}
+        download={title}
+        class="flex items-center justify-center gap-2 px-6 py-3 rounded-xl border-2 border-primary text-primary dark:border-primary-light dark:text-primary-light font-semibold text-sm hover:bg-primary/5 transition-all no-underline"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+        {labels.download}
+      </a>
     </div>
   </div>
-  
+
   <!-- Footer Info -->
   <div class="pdf-footer px-4 py-1.5 flex items-center justify-between text-[10px] font-black uppercase tracking-tighter opacity-40 border-t border-border dark:border-border-dark bg-white/50 dark:bg-black/50">
      <span class="truncate pr-4">{title}</span>
-     <span class="flex items-center gap-1.5 whitespace-nowrap">
+     <span class="flex items-center gap-1.5 whitespace-nowrap pdf-footer-status">
        <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>
        High Fidelity Browser Native Engine
      </span>
@@ -134,19 +174,63 @@ const labels = {
   [data-lang="fa"] .pdf-toolbar {
     direction: rtl;
   }
-  
-  @media (max-width: 640px) {
+
+  @media (max-width: 768px) {
     .pdf-viewer-root {
       border-radius: 0.5rem;
     }
-    .pdf-viewport-container {
-      height: 70vh !important;
+    /* On mobile hide desktop iframe, show mobile card */
+    .pdf-desktop-view {
+      display: none !important;
+    }
+    .pdf-mobile-view {
+      display: flex !important;
+    }
+    .pdf-footer-status {
+      display: none;
     }
   }
 </style>
 
 <script>
-  // Sync width buttons with global <html>[data-content-width]
+  // ─── Open in Browser (bypasses IDM/download-managers on desktop) ───────────
+  // Uses blob URL trick: fetches the PDF, creates a blob URL, opens in new tab.
+  // The browser treats blob: URLs as internal and renders them natively.
+  function initOpenInBrowser() {
+    const btn = document.getElementById('pdf-open-browser-btn') as HTMLButtonElement | null;
+    if (!btn) return;
+
+    btn.addEventListener('click', async () => {
+      const pdfUrl = btn.dataset.pdfUrl;
+      if (!pdfUrl) return;
+
+      btn.disabled = true;
+      const originalContent = btn.innerHTML;
+      btn.innerHTML = `<svg class="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path></svg>`;
+
+      try {
+        const response = await fetch(pdfUrl, { headers: { 'Accept': 'application/pdf' } });
+        const blob = await response.blob();
+        const blobUrl = URL.createObjectURL(new Blob([blob], { type: 'application/pdf' }));
+        const win = window.open(blobUrl, '_blank');
+        // Clean up blob URL after a delay
+        if (win) {
+          setTimeout(() => URL.revokeObjectURL(blobUrl), 30000);
+        } else {
+          // Popup blocked fallback - direct open
+          window.open(pdfUrl + '#toolbar=1&view=FitH', '_blank');
+        }
+      } catch {
+        // Fallback: open with hash that hints browser inline rendering
+        window.open(pdfUrl + '#toolbar=1&view=FitH', '_blank');
+      } finally {
+        btn.disabled = false;
+        btn.innerHTML = originalContent;
+      }
+    });
+  }
+
+  // ─── Sync width buttons with global <html>[data-content-width] ─────────────
   function initPdfSync() {
     const root = document.getElementById('pdf-root');
     if (!root) return;
@@ -164,7 +248,6 @@ const labels = {
         const key = (btn as HTMLElement).dataset.widthKey!;
         document.documentElement.setAttribute('data-content-width', key);
         localStorage.setItem('content-width', key);
-        // Custom events for WidthToggle stability
         window.dispatchEvent(new Event('resize'));
         upgradeUI(key);
       });
@@ -184,16 +267,14 @@ const labels = {
       });
     });
     observer.observe(document.documentElement, { attributes: true });
-
-    // Simple mobile detection for fallback
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      // Some mobile browsers handle iframes poorly, but Chrome/Safari are usually ok.
-      // We keep the iframe but maybe show a hint if it fails to load?
-      // For now, let's trust the iframe unless user reports issues.
-    }
   }
 
-  document.addEventListener('DOMContentLoaded', initPdfSync);
-  document.addEventListener('astro:after-swap', initPdfSync);
-  document.addEventListener('astro:page-load', initPdfSync);
+  function init() {
+    initPdfSync();
+    initOpenInBrowser();
+  }
+
+  document.addEventListener('DOMContentLoaded', init);
+  document.addEventListener('astro:after-swap', init);
+  document.addEventListener('astro:page-load', init);
 </script>

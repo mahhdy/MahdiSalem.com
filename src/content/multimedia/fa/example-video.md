@@ -14,6 +14,8 @@ tags:
   - نمونه
   - ویدیو
 draft: false
+hidden: false
+showInContents: true
 ---
 
 # نمونه ویدیو

@@ -15,7 +15,9 @@ tags:
   - clubhouse
   - ویدیو
 draft: false
+hidden: false
 interface: epistemology
+showInContents: true
 ---
 
 ## زمینه‌ی موضوعی

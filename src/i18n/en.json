@@ -170,5 +170,20 @@
   "contents.all_content": "All Content",
   "content.type.article": "Article",
   "content.type.book": "Book",
-  "content.type.multimedia": "Multimedia"
+  "content.type.multimedia": "Multimedia",
+  "nav.social": "Social Media",
+  "social.title": "Social Media",
+  "social.description": "Latest posts and content published on social media platforms",
+  "social.telegram": "Telegram",
+  "social.x": "X",
+  "social.instagram": "Instagram",
+  "social.facebook": "Facebook",
+  "social.linkedin": "LinkedIn",
+  "social.view_all": "View all",
+  "social.coming_soon": "Connection coming soon",
+  "hidden.badge": "Hidden",
+  "hidden.warning": "This content is hidden and not shown publicly.",
+  "contents.tab_categories": "By Category",
+  "contents.tab_tags": "By Tag",
+  "contents.no_tags": "No tags found."
 }
