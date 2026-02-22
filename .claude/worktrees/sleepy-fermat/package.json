@@ -1,0 +1,7 @@
+{
+  "name": "sleepy-fermat-worktree",
+  "type": "module",
+  "scripts": {
+    "dev": "node D:/Code/MahdiSalem.com/node_modules/astro/astro.js dev --root D:/Code/MahdiSalem.com"
+  }
+}
