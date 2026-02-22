@@ -26,7 +26,7 @@ const typeLabels: Record<string, string> = {
   <div class="container-wide py-16">
     <h1 class="text-3xl md:text-4xl font-bold mb-8 text-center">{t('nav.statements', lang)}</h1>
 
-    <CategoryTabView contentType="statements" lang={lang} allItems={statements} defaultTab="categories">
+    <CategoryTabView contentType="statements" lang={lang} allItems={statements}>
     {statements.length > 0 ? (
       <div class="space-y-6">
         {statements.map((statement) => (

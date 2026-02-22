@@ -18,7 +18,9 @@ tags:
   - پادکست
   - مقدمه
 draft: false
+hidden: false
 interface: descriptive-ethics
+showInContents: true
 ---
 
 ## **قسمت اول: آغاز**

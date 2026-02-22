@@ -21,10 +21,20 @@ const books = defineCollection({
     tags: z.array(z.string()).default([]),
     'show-header': z.boolean().default(false),
     draft: z.boolean().default(false),
+    hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
+    showInContents: z.boolean().default(true), // Control visibility in All Contents page
     order: z.number().default(0),
     // For chapters within a book
     bookSlug: z.string().optional(),
     chapterNumber: z.number().optional(),
+    // Extra metadata fields (tolerated from content files)
+    sourceType: z.string().optional(),
+    book: z.string().optional(),
+    authorTitle: z.string().optional(),
+    email: z.string().optional(),
+    website: z.string().optional(),
+    location: z.string().optional(),
+    date: z.coerce.date().optional(),
   }),
 });
 
@@ -48,6 +58,15 @@ const articles = defineCollection({
     pdfUrl: z.string().optional(),
     pdfOnly: z.boolean().default(false),
     draft: z.boolean().default(false),
+    hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
+    showInContents: z.boolean().default(true), // Control visibility in All Contents page
+    // Extra metadata fields (tolerated from content files)
+    sourceType: z.string().optional(),
+    authorTitle: z.string().optional(),
+    email: z.string().optional(),
+    website: z.string().optional(),
+    location: z.string().optional(),
+    date: z.coerce.date().optional(),
   }),
 });
 
@@ -67,6 +86,8 @@ const statements = defineCollection({
     pdfUrl: z.string().optional(),
     pdfOnly: z.boolean().default(false),
     draft: z.boolean().default(false),
+    hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
+    showInContents: z.boolean().default(true), // Control visibility in All Contents page
   }),
 });
 
@@ -83,6 +104,8 @@ const wiki = defineCollection({
     lastUpdated: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
     draft: z.boolean().default(false),
+    hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
+    showInContents: z.boolean().default(true), // Control visibility in All Contents page
   }),
 });
 
@@ -120,6 +143,8 @@ const multimedia = defineCollection({
     tags: z.array(z.string()).default([]),
     coverImage: z.string().optional(),
     draft: z.boolean().default(false),
+    hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
+    showInContents: z.boolean().default(true), // Control visibility in All Contents page
   }),
 });
 

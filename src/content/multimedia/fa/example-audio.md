@@ -14,7 +14,9 @@ tags:
   - صوتی
   - نمونه
 draft: false
+hidden: false
 interface: epistemology
+showInContents: true
 ---
 
 # نمونه محتوای صوتی

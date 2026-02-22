@@ -1,616 +1,1449 @@
-# Problems to be Addressed
+# To Do List for Prompt Implementation
 
-## Content Management
+### Update Todos
+
+- [x] Batch 1: Footer 2-col mobile, PDF desktop hint, mobile PDF fix  
+- [x] Batch 2: Add `hidden` field to schemas + all content files  
+- [x] Write script to add `hidden` + `showInContents` to all content files missing them  
+- [x] Batch 3a: All-categories page with category + tag tabs + footer link  
+- [x] Batch 3b: Social media page (Telegram tab + stubs)  
+- [x] Batch 3c: Telegram view toggle (config file + admin Config page)  
+
+- [ ] Committing and pushing branch  
+- [ ] Batch 4a: Admin pages (SocialManager, HiddenContentManager, AllContentsManager, SiteConfigManager)  
+- [ ] Batch 4b: Admin FrontmatterManager page  
+- [ ] Batch 4c: Bulk frontmatter editing in ContentBrowser  
+- [ ] Update `README` and `progress_tracker.md`  
 
 
 
+```markdown
+Summary of Your 10 Items
+## Item 0 — hidden frontmatter field
+Current state: No hidden field exists. The draft field is used instead.
+Plan: Add hidden: boolean (default: false) to all collection schemas. Hidden content won't render unless a ?force=true query param (or --force suffix) is present in the URL. This needs schema changes + layout logic.
 
-#### problem 3- still issue with mixing the mermaid and other html element! please check and fix the logic specially for farsi contents ! 
+## Item 1 — PDF force-open in browser (not IDM) on desktop
+Current state: PDFViewer uses <a href=... download> for download button and target="_blank" for fullscreen. IDM intercepts Content-Disposition: attachment headers.
+Plan: For the "open in browser" link, use JS window.open(url) or #toolbar=1 hash trick. The download button stays as-is. On desktop, we can add #view=FitH to the URL to hint the browser to render inline.
 
-### Mermaid Chart Size and Position
-Keep the toolbar button you added. 
-review the ouputs of current converted diagrams and charts or figures! the ones are not showing correctly in the html page. (having error-icon or not showing at all)
-however check and apply improvment regarding making the diagram sizes and its resizing more smart using this instruction. 
+## Item 2 — Mobile PDF optimization
+Current state: The iframe has height: calc(100vh - 120px) with no mobile-specific navigation. On mobile, iframe PDFs are not navigable.
+Plan: Detect mobile, show a message with "Open PDF" button that opens the native PDF app. Also offer a download button. Keep iframe for desktop.
 
-like this one:
-<details open>
-<summary>syntax error</summary>
-```html
-<div class="mermaid-wrapper is-collapsed" role="figure" style="margin-left:auto;margin-right:auto;overflow:auto" data-align="center" data-expanded="false">
-<div class="mermaid-toolbar">
-    <button class="mermaid-tool-btn zoom-btn" title="Full Screen">🔍</button>
-    <button class="mermaid-tool-btn expand-btn" title="Expand/Collapse">↕️</button>
-</div>
-<div class="mermaid" data-processed="true"><div id="dmermaid-1771620147602" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif;"><svg id="mermaid-1771620147602" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2412 512" style="max-width: 512px;" role="graphics-document document" aria-roledescription="error"><style>#mermaid-1771620147602{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1771620147602 .error-icon{fill:#552222;}#mermaid-1771620147602 .error-text{fill:#552222;stroke:#552222;}#mermaid-1771620147602 .edge-thickness-normal{stroke-width:2px;}#mermaid-1771620147602 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1771620147602 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1771620147602 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1771620147602 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1771620147602 .marker{fill:#333333;stroke:#333333;}#mermaid-1771620147602 .marker.cross{stroke:#333333;}#mermaid-1771620147602 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1771620147602 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g></g><g><path class="error-icon" d="m411.313,123.313c6.25-6.25 6.25-16.375 0-22.625s-16.375-6.25-22.625,0l-32,32-9.375,9.375-20.688-20.688c-12.484-12.5-32.766-12.5-45.25,0l-16,16c-1.261,1.261-2.304,2.648-3.31,4.051-21.739-8.561-45.324-13.426-70.065-13.426-105.867,0-192,86.133-192,192s86.133,192 192,192 192-86.133 192-192c0-24.741-4.864-48.327-13.426-70.065 1.402-1.007 2.79-2.049 4.051-3.31l16-16c12.5-12.492 12.5-32.758 0-45.25l-20.688-20.688 9.375-9.375 32.001-31.999zm-219.313,100.687c-52.938,0-96,43.063-96,96 0,8.836-7.164,16-16,16s-16-7.164-16-16c0-70.578 57.422-128 128-128 8.836,0 16,7.164 16,16s-7.164,16-16,16z"></path><path class="error-icon" d="m459.02,148.98c-6.25-6.25-16.375-6.25-22.625,0s-6.25,16.375 0,22.625l16,16c3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688 6.25-6.25 6.25-16.375 0-22.625l-16.001-16z"></path><path class="error-icon" d="m340.395,75.605c3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688 6.25-6.25 6.25-16.375 0-22.625l-16-16c-6.25-6.25-16.375-6.25-22.625,0s-6.25,16.375 0,22.625l15.999,16z"></path><path class="error-icon" d="m400,64c8.844,0 16-7.164 16-16v-32c0-8.836-7.156-16-16-16-8.844,0-16,7.164-16,16v32c0,8.836 7.156,16 16,16z"></path><path class="error-icon" d="m496,96.586h-32c-8.844,0-16,7.164-16,16 0,8.836 7.156,16 16,16h32c8.844,0 16-7.164 16-16 0-8.836-7.156-16-16-16z"></path><path class="error-icon" d="m436.98,75.605c3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688l32-32c6.25-6.25 6.25-16.375 0-22.625s-16.375-6.25-22.625,0l-32,32c-6.251,6.25-6.251,16.375-0.001,22.625z"></path><text class="error-text" x="1440" y="250" font-size="150px" style="text-anchor: middle;">Syntax error in text</text><text class="error-text" x="1250" y="400" font-size="100px" style="text-anchor: middle;">mermaid version 10.9.5</text></g></svg></div></div>
-</div>
+## Item 3 — Footer two columns on mobile
+Current state: Footer is grid-cols-1 md:grid-cols-3 — so on mobile it's 1 column (stacked).
+Plan: Change to grid-cols-2 md:grid-cols-3 — brand stays full-width on top, links columns side by side.
+
+## Item 4 — "All Categories" page with two tabs (per-category, per-tag)
+Current state: contents.astro shows stats + categories but no tag view.
+Plan: Enhance contents.astro with two tabs: one per-category (current view), one per-tag. Add link to it in footer. Cards show content items similar to existing content pages.
+
+## Item 5 — Social Media page (hidden in nav)
+Current state: No social media section exists.
+Plan: Create src/pages/social/index.astro with tabs for Telegram, X, Instagram, Facebook. Add to hidden nav. Telegram pulls from the existing worker. Other platforms use embed approach with manually managed IDs. This is the largest feature.
+
+## Item 6 — Telegram section view toggle (full vs compact 2-col)
+Current state: TelegramFeed.astro shows full view.
+Plan: Add a telegramView config option (controllable from admin or env var/config file) that switches between full view (current) and a compact 2-column grid with link to Telegram page.
+
+## Item 7 — Admin: Social media management + All Contents + Hidden content management pages
+Current state: Admin has Dashboard, ContentBrowser, ContentEditor, CategoryManager, TagManager, I18nManager, MediaManager, ScriptRunner.
+Plan: Add 3 new admin pages: SocialMediaManager, AllContentsManager (control showInAllContentsPage), HiddenContentManager (control hidden field).
+
+## Item 8 — Admin: Frontmatter control panel
+Current state: ContentEditor has frontmatter editing per-file.
+Plan: Add a FrontmatterManager page in admin showing schema-level defaults, per-content-type defaults, and per-subject defaults. Very ambitious — I'll implement the schema/defaults view with editing.
+
+## Item 9 — Bulk frontmatter editing in content management
+Current state: ContentEditor is single-file only.
+Plan: Add bulk-select mode in ContentBrowser + a bulk-edit dialog for frontmatter fields.
+
+## Item 10 — New subject types (multimedia, social media) for search/filter
+Current state: Categories system exists via src/data/categories.ts.
+Plan: Add multimedia and social media as filterable subject types in search and content browser.
+
+## Recommended Implementation Order
+Given complexity, I suggest tackling these in batches:
+
+### Batch 1 (Quick wins — no new pages):
+
+Item 3: Footer 2-col mobile
+Item 2: Mobile PDF fix
+Item 1: PDF desktop browser hint
+
+### Batch 2 (Schema + frontmatter):
+
+Item 0: hidden frontmatter field
+
+### Batch 3 (New pages):
+
+Item 4: All-categories page with tag tab
+Item 5: Social media page (Telegram tab first, others as stubs)
+Item 6: Telegram view toggle
+
+### Batch 4 (Admin panel):
+
+Item 7: Admin social/hidden/all-contents pages
+Item 8: Frontmatter manager
+Item 9: Bulk frontmatter editing
+Item 10: New subject types
+
+## Note
+just for batch 2 remember to add the frontmatter to all available contents, if they are lacking it. I think I already added one hidden: false to the items.
+you can skip Archive folder as it is just a parking and is not being posted to the website.
+for the telegram control switch, you can keep it in config file, however if I can change it from Admin page like in a page like setup or config. that would be great too..
+remeber to update the readme file and progress file as you adding the features.
 ```
-</details>
 
-or this one:
-```html
-<div class="mermaid" data-processed="true"><div id="dmermaid-1771620274386" style="font-family: &quot;trebuchet ms&quot;, verdana, arial, sans-serif;"><svg id="mermaid-1771620274386" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2412 512" style="max-width: 512px;" role="graphics-document document" aria-roledescription="error"><style>#mermaid-1771620274386{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1771620274386 .error-icon{fill:#552222;}#mermaid-1771620274386 .error-text{fill:#552222;stroke:#552222;}#mermaid-1771620274386 .edge-thickness-normal{stroke-width:2px;}#mermaid-1771620274386 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1771620274386 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1771620274386 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1771620274386 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1771620274386 .marker{fill:#333333;stroke:#333333;}#mermaid-1771620274386 .marker.cross{stroke:#333333;}#mermaid-1771620274386 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1771620274386 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g></g><g><path class="error-icon" d="m411.313,123.313c6.25-6.25 6.25-16.375 0-22.625s-16.375-6.25-22.625,0l-32,32-9.375,9.375-20.688-20.688c-12.484-12.5-32.766-12.5-45.25,0l-16,16c-1.261,1.261-2.304,2.648-3.31,4.051-21.739-8.561-45.324-13.426-70.065-13.426-105.867,0-192,86.133-192,192s86.133,192 192,192 192-86.133 192-192c0-24.741-4.864-48.327-13.426-70.065 1.402-1.007 2.79-2.049 4.051-3.31l16-16c12.5-12.492 12.5-32.758 0-45.25l-20.688-20.688 9.375-9.375 32.001-31.999zm-219.313,100.687c-52.938,0-96,43.063-96,96 0,8.836-7.164,16-16,16s-16-7.164-16-16c0-70.578 57.422-128 128-128 8.836,0 16,7.164 16,16s-7.164,16-16,16z"></path><path class="error-icon" d="m459.02,148.98c-6.25-6.25-16.375-6.25-22.625,0s-6.25,16.375 0,22.625l16,16c3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688 6.25-6.25 6.25-16.375 0-22.625l-16.001-16z"></path><path class="error-icon" d="m340.395,75.605c3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688 6.25-6.25 6.25-16.375 0-22.625l-16-16c-6.25-6.25-16.375-6.25-22.625,0s-6.25,16.375 0,22.625l15.999,16z"></path><path class="error-icon" d="m400,64c8.844,0 16-7.164 16-16v-32c0-8.836-7.156-16-16-16-8.844,0-16,7.164-16,16v32c0,8.836 7.156,16 16,16z"></path><path class="error-icon" d="m496,96.586h-32c-8.844,0-16,7.164-16,16 0,8.836 7.156,16 16,16h32c8.844,0 16-7.164 16-16 0-8.836-7.156-16-16-16z"></path><path class="error-icon" d="m436.98,75.605c3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688l32-32c6.25-6.25 6.25-16.375 0-22.625s-16.375-6.25-22.625,0l-32,32c-6.251,6.25-6.251,16.375-0.001,22.625z"></path><text class="error-text" x="1440" y="250" font-size="150px" style="text-anchor: middle;">Syntax error in text</text><text class="error-text" x="1250" y="400" font-size="100px" style="text-anchor: middle;">mermaid version 10.9.5</text></g></svg></div></div>
-```
+# Problems to be Addressed (My Version)
 
-### instruction for smarter handeling of mermais charts visually
-````markdown
+0. add a frontmatter (if it is not already there) as hidden:false (defult = false) so if it is true, the content not be displayed unless forced in url (like --force at the end of link) or someother way you can advise
+1. if the website is openned in big screens, (not mobile) Force to PDF's to be opeened in browser if any tool is forcing them to download like idm! or identify them link for download
+2. optimize the pdf only pages for mobile view! the frame is not letting to navigate in mobile at all! maybe it need to simple load the pdf using native PDF view however somehow inside the website, so the menu be available for other navigations! so if it is not possible somehow inform the user to do something! 
+3. in mobile view the footer to be in two columns
+4. add a page like all content, for all categories (havfing two tabs 1- per category ,2) per Tags / keywords) and the contents be visible in cards like as per interface in All contents page (link to this page also should be added in footer)
+5. Add a Social media pages (added in hidden list of menus) including one page to laod contents from Linkedin, X, instagram, Facebook, telegram ... (each if these if are connected and having contents should have their own tab)
+6. telegram section in main page to have a selective form of view (I can control in admin section) to show full like now, or a simpler version in two column with link to the telegram page + telegram channel 
+7. in admin section give me a page to manage / view the contents of social media pages (like telegram, x, instagram, facebook) and also a page to manage the all contents page (to control which content to be shown in all contents page and which not) and also a page to manage the hidden contents (to control which content to be hidden and which not)
+8. in admin section give me a page to control fronmatters. Their defult values and also to control the frontmatters of each content (like hidden, showPdfViewer, pdfOnly, showInAllContentsPage, tags, category, interface, book, sourceType ...etc) and also to control the content of each frontmatter (like pdfUrl for pdfOnly contents) and also to control the default values of frontmatters for each sourceType (like for pdf sourceType the default value of showPdfViewer is true and for article sourceType the default value of showPdfViewer is false ...etc) I shoudl be able to see per subject (book, article, multimedia .. ) what are the used fronmatter, what are neccessary and what are optional and also to control the default values of each frontmatter for each subject (book, article, multimedia .. ) and also to control the default values of each frontmatter for each sourceType (like for pdf sourceType the default value of showPdfViewer is true and for article sourceType the default value of showPdfViewer is false ...etc) and also to control the default values of each frontmatter for each interface (like for iran interface the default value of showPdfViewer is true and for other interfaces the default value of showPdfViewer is false ...etc) and also to control the default values of each frontmatter for each book (like for Iran Nations or Nation book the default value of showPdfViewer is true and for other books the default value of showPdfViewer is false ...etc)
+9. in content management I should be able to change fronmatters of selected items at once (like select 10 items and change their showInAllContentsPage fronmatter to true at once) and also to change the content of frontmatters of selected items at once (like select 10 items and change their pdfUrl fronmatter to a new url at once) and also to change the default values of frontmatters for each sourceType at once (like change the default value of showPdfViewer for pdf sourceType to true at once) and also to change the default values of frontmatters for each interface at once (like change the default value of showPdfViewer for iran interface to true at once) and also to change the default values of frontmatters for each book at once (like change the default value of showPdfViewer for Iran Nations or Nation book to true at once)
+10. add new subject types to the admin section (multimedia, social media) and so one for search and filter purpose... etc
 
 
-# Smart Mermaid Chart Sizing for Astro
+what I have for adding social media page: 
 
-The root problem: Mermaid generates SVGs with `width="100%"` and a `max-width` set to the **exact pixel dimensions** of the viewBox. Small diagrams stretch too wide, and wide diagrams get constrained too small.
+```markdown
 
-## The Solution: A Post-Render Sizing Script + CSS
 
-### 1. Client-Side Smart Resizer Script
+Great questions! Let me help you design this properly.
 
-Create `src/scripts/mermaid-resize.ts` (or `.js`):
+## 1. Data Needed for Individual Telegram Pages
 
-```js
-// src/scripts/mermaid-resize.js
-// Run AFTER mermaid has rendered all diagrams
+Here's the complete data structure you'd need:
 
-export function smartResizeMermaidDiagrams() {
-  const wrappers = document.querySelectorAll('.mermaid-wrapper');
+```typescript
+// src/types/social.ts
+export interface SocialMediaPost {
+  // Common fields for all platforms
+  id: string;
+  platform: 'telegram' | 'x' | 'instagram' | 'facebook';
+  slug: string;  // URL-friendly ID
+  
+  // Content
+  text: string;
+  textHtml: string;
+  
+  // Metadata
+  date: Date;
+  updatedAt?: Date;
+  author?: {
+    name: string;
+    username: string;
+    avatar?: string;
+  };
+  
+  // Engagement
+  views?: number;
+  likes?: number;
+  comments?: number;
+  shares?: number;
+  
+  // Media
+  media: MediaItem[];
+  hasMedia: boolean;
+  
+  // Links
+  originalUrl: string;
+  embedUrl?: string;
+  
+  // Telegram-specific
+  telegram?: {
+    channelUsername: string;
+    messageId: string;
+    forwardedFrom?: { name: string; url: string };
+    replyTo?: { author: string; text: string; url: string };
+  };
+  
+  // X-specific
+  x?: {
+    tweetId: string;
+    isRetweet: boolean;
+    isReply: boolean;
+    quotedTweet?: SocialMediaPost;
+  };
+  
+  // Instagram-specific
+  instagram?: {
+    postId: string;
+    type: 'post' | 'reel' | 'story';
+    carousel?: boolean;
+  };
+  
+  // Facebook-specific
+  facebook?: {
+    postId: string;
+    type: 'post' | 'reel' | 'story';
+  };
+  
+  // For MDX content
+  tags?: string[];
+  category?: string;
+}
 
-  wrappers.forEach((wrapper) => {
-    const svg = wrapper.querySelector('svg');
-    if (!svg) return;
-
-    const viewBox = svg.getAttribute('viewBox');
-    if (!viewBox) return;
-
-    const parts = viewBox.split(/\s+/).map(Number);
-    // viewBox = "minX minY width height"
-    const vbWidth = parts[2] - parts[0];   // could have negative minX offset
-    const vbHeight = parts[3] - parts[1];
-
-    // Actual content dimensions (accounting for -8 -8 offset mermaid adds)
-    const contentWidth = parts[2];
-    const contentHeight = parts[3];
-
-    const aspectRatio = contentWidth / contentHeight;
-    const containerWidth = wrapper.parentElement?.clientWidth || 800;
-
-    // Remove mermaid's default width="100%" and max-width
-    svg.removeAttribute('width');
-    svg.style.removeProperty('max-width');
-
-    // Classification
-    const isSmall = contentWidth < 350 && contentHeight < 350;
-    const isNarrow = contentWidth < 400 && aspectRatio < 0.6;       // tall & narrow
-    const isWide = contentWidth > 500 && aspectRatio > 1.8;         // wide & short
-    const isMedium = !isSmall && !isNarrow && !isWide;
-
-    // Desired rendered width
-    let targetWidth;
-    let maxHeight = null;
-
-    if (isWide) {
-      // Wide diagrams: use full container width, minimum 80%
-      targetWidth = Math.min(contentWidth * 1.2, containerWidth);
-      targetWidth = Math.max(targetWidth, containerWidth * 0.8);
-    } else if (isNarrow) {
-      // Tall narrow diagrams: cap width, constrain height
-      targetWidth = Math.min(contentWidth * 1.5, containerWidth * 0.6);
-      maxHeight = Math.min(contentHeight * (targetWidth / contentWidth), 700);
-    } else if (isSmall) {
-      // Small diagrams: scale up but not beyond 2x or container
-      targetWidth = Math.min(contentWidth * 2, containerWidth * 0.7);
-    } else {
-      // Medium diagrams: natural size up to 90% container
-      targetWidth = Math.min(contentWidth * 1.3, containerWidth * 0.9);
-    }
-
-    // Apply sizing
-    svg.style.width = `${Math.round(targetWidth)}px`;
-    svg.style.maxWidth = '100%';
-    svg.style.height = 'auto';
-
-    if (maxHeight) {
-      wrapper.style.maxHeight = `${Math.round(maxHeight)}px`;
-      wrapper.style.overflowY = 'auto';
-    }
-
-    // Add size class for CSS hooks
-    wrapper.classList.add(`mermaid-${isWide ? 'wide' : isNarrow ? 'narrow' : isSmall ? 'small' : 'medium'}`);
-
-    // Store original dimensions for the zoom/fullscreen feature
-    wrapper.dataset.vbWidth = String(contentWidth);
-    wrapper.dataset.vbHeight = String(contentHeight);
-    wrapper.dataset.aspectRatio = String(aspectRatio.toFixed(2));
-  });
+export interface MediaItem {
+  type: 'photo' | 'video' | 'audio' | 'document' | 'gif';
+  url: string;
+  thumbnail?: string;
+  width?: number;
+  height?: number;
+  duration?: string;
+  title?: string;
+  fileSize?: string;
+  mimeType?: string;
 }
 ```
 
-### 2. Enhanced Initialization Script
+## 2. Content Organization Recommendation
 
-In your Astro layout or component where Mermaid is initialized:
+I recommend **"Social Media"** as a separate section. Here's why:
+
+| Option | Pros | Cons |
+|--------|------|------|
+| **Social Media (New)** ✅ | Clear purpose, scalable, familiar to users | One more nav item |
+| **Other Media / Media** | Fewer sections | Confusing mix of podcasts + tweets |
+| **Feed / Stream** | Modern feel | Vague naming |
+
+### Suggested Site Structure
+
+```
+📁 src/content/
+├── 📁 books/
+├── 📁 articles/
+├── 📁 statements/
+├── 📁 wiki/
+├── 📁 multimedia/        # Podcasts, videos you create
+│   ├── podcasts/
+│   └── videos/
+└── 📁 social/            # NEW: Social media posts
+    ├── telegram/
+    ├── x/
+    ├── instagram/
+    └── facebook/
+```
+
+## 3. Implementation Plan
+
+### Step 1: Create Collection Schema
+
+```typescript
+// src/content/config.ts
+import { defineCollection, z } from 'astro:content';
+
+const socialCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+    platform: z.enum(['telegram', 'x', 'instagram', 'facebook']),
+    originalId: z.string(),
+    date: z.date(),
+    author: z.object({
+      name: z.string(),
+      username: z.string(),
+      avatar: z.string().optional(),
+    }).optional(),
+    views: z.number().optional(),
+    likes: z.number().optional(),
+    media: z.array(z.object({
+      type: z.enum(['photo', 'video', 'audio', 'document', 'gif']),
+      url: z.string(),
+      thumbnail: z.string().optional(),
+      duration: z.string().optional(),
+    })).default([]),
+    originalUrl: z.string().url(),
+    tags: z.array(z.string()).default([]),
+    // Platform-specific
+    telegram: z.object({
+      channelUsername: z.string(),
+      messageId: z.string(),
+      forwardedFrom: z.object({
+        name: z.string(),
+        url: z.string(),
+      }).optional(),
+    }).optional(),
+    x: z.object({
+      tweetId: z.string(),
+      isRetweet: z.boolean().default(false),
+    }).optional(),
+    instagram: z.object({
+      postId: z.string(),
+      type: z.enum(['post', 'reel', 'story']),
+    }).optional(),
+    facebook: z.object({
+      postId: z.string(),
+      type: z.enum(['post', 'reel', 'story']),
+    }).optional(),
+  }),
+});
+
+export const collections = {
+  // ... your existing collections
+  social: socialCollection,
+};
+```
+
+### Step 2: Create Sync Script to Generate MDX Files
+
+```typescript
+// scripts/sync-social.ts
+import fs from 'fs/promises';
+import path from 'path';
+
+const SOCIAL_CONTENT_DIR = 'src/content/social';
+const TELEGRAM_WORKER_URL = 'https://telegram-feed.mahhdy.workers.dev';
+
+interface TelegramPost {
+  id: string;
+  text: string;
+  textHtml: string;
+  date: number;
+  views: number;
+  link: string;
+  media: any[];
+}
+
+async function syncTelegram() {
+  console.log('📡 Fetching Telegram posts...');
+  
+  const response = await fetch(TELEGRAM_WORKER_URL);
+  const posts: TelegramPost[] = await response.json();
+  
+  const telegramDir = path.join(SOCIAL_CONTENT_DIR, 'telegram');
+  await fs.mkdir(telegramDir, { recursive: true });
+  
+  for (const post of posts) {
+    const slug = `tg-${post.id}`;
+    const filePath = path.join(telegramDir, `${slug}.mdx`);
+    
+    // Check if file already exists
+    try {
+      await fs.access(filePath);
+      console.log(`  ⏭️  Skipping ${slug} (already exists)`);
+      continue;
+    } catch {
+      // File doesn't exist, create it
+    }
+    
+    const frontmatter = {
+      platform: 'telegram',
+      originalId: post.id,
+      date: new Date(post.date * 1000).toISOString(),
+      views: post.views,
+      media: post.media || [],
+      originalUrl: post.link,
+      tags: extractHashtags(post.text),
+      telegram: {
+        channelUsername: 'mahhdy57',
+        messageId: post.id,
+      },
+    };
+    
+    const mdxContent = `---
+${jsonToYaml(frontmatter)}
+---
+
+${post.textHtml || post.text}
+`;
+    
+    await fs.writeFile(filePath, mdxContent, 'utf-8');
+    console.log(`  ✅ Created ${slug}`);
+  }
+  
+  console.log('✅ Telegram sync complete!');
+}
+
+// For X (Twitter) - using their embed API
+async function syncX() {
+  // You'd need Twitter API access or use a service like:
+  // - Twitter API v2 (requires developer account)
+  // - Nitter instances for scraping
+  // - Manual export from Twitter archive
+  console.log('📡 X/Twitter sync not implemented yet');
+}
+
+// For Instagram - Meta's API is
+
+// For Instagram - Meta's API is restrictive, alternatives:
+async function syncInstagram() {
+  // Options:
+  // 1. Meta Graph API (requires business account + app review)
+  // 2. Manual: Download your data from Instagram settings
+  // 3. Use a service like Apify for scraping
+  // 4. Embed-only approach (just store post IDs)
+  
+  console.log('📡 Instagram sync - using embed approach...');
+  
+  // If you have a list of post IDs you want to feature:
+  const instagramPosts = [
+    { id: 'DT0XwAMjp3o', type: 'reel' as const },
+    // Add more post IDs manually or from a config file
+  ];
+  
+  const instaDir = path.join(SOCIAL_CONTENT_DIR, 'instagram');
+  await fs.mkdir(instaDir, { recursive: true });
+  
+  for (const post of instagramPosts) {
+    const slug = `ig-${post.id}`;
+    const filePath = path.join(instaDir, `${slug}.mdx`);
+    
+    try {
+      await fs.access(filePath);
+      console.log(`  ⏭️  Skipping ${slug} (already exists)`);
+      continue;
+    } catch {
+      // Create new file
+    }
+    
+    // Fetch oEmbed data from Instagram (no auth required)
+    let embedData: any = {};
+    try {
+      const oembedUrl = `https://api.instagram.com/oembed?url=https://www.instagram.com/p/${post.id}/`;
+      const response = await fetch(oembedUrl);
+      if (response.ok) {
+        embedData = await response.json();
+      }
+    } catch (e) {
+      console.log(`  ⚠️  Could not fetch oEmbed for ${post.id}`);
+    }
+    
+    const frontmatter = {
+      platform: 'instagram',
+      originalId: post.id,
+      date: new Date().toISOString(), // oEmbed doesn't provide date
+      author: embedData.author_name ? {
+        name: embedData.author_name,
+        username: embedData.author_name,
+      } : undefined,
+      media: [{
+        type: post.type === 'reel' ? 'video' : 'photo',
+        url: embedData.thumbnail_url || '',
+        thumbnail: embedData.thumbnail_url,
+      }],
+      originalUrl: `https://www.instagram.com/p/${post.id}/`,
+      tags: [],
+      instagram: {
+        postId: post.id,
+        type: post.type,
+      },
+    };
+    
+    const mdxContent = `---
+${jsonToYaml(frontmatter)}
+---
+
+${embedData.title || ''}
+
+{/* Instagram Embed */}
+<InstagramEmbed postId="${post.id}" />
+`;
+    
+    await fs.writeFile(filePath, mdxContent, 'utf-8');
+    console.log(`  ✅ Created ${slug}`);
+  }
+}
+
+// For X/Twitter
+async function syncX() {
+  console.log('📡 X/Twitter sync - using embed approach...');
+  
+  // Store tweet IDs you want to feature
+  const tweets = [
+    { id: '1234567890123456789' },
+    // Add tweet IDs
+  ];
+  
+  const xDir = path.join(SOCIAL_CONTENT_DIR, 'x');
+  await fs.mkdir(xDir, { recursive: true });
+  
+  for (const tweet of tweets) {
+    const slug = `x-${tweet.id}`;
+    const filePath = path.join(xDir, `${slug}.mdx`);
+    
+    try {
+      await fs.access(filePath);
+      continue;
+    } catch {
+      // Create new file
+    }
+    
+    // Fetch oEmbed from Twitter/X
+    let embedData: any = {};
+    try {
+      const oembedUrl = `https://publish.twitter.com/oembed?url=https://twitter.com/i/status/${tweet.id}`;
+      const response = await fetch(oembedUrl);
+      if (response.ok) {
+        embedData = await response.json();
+      }
+    } catch (e) {
+      console.log(`  ⚠️  Could not fetch oEmbed for ${tweet.id}`);
+    }
+    
+    const frontmatter = {
+      platform: 'x',
+      originalId: tweet.id,
+      date: new Date().toISOString(),
+      author: embedData.author_name ? {
+        name: embedData.author_name,
+        username: embedData.author_url?.split('/').pop() || '',
+      } : undefined,
+      media: [],
+      originalUrl: `https://x.com/i/status/${tweet.id}`,
+      tags: [],
+      x: {
+        tweetId: tweet.id,
+        isRetweet: false,
+      },
+    };
+    
+    const mdxContent = `---
+${jsonToYaml(frontmatter)}
+---
+
+<XEmbed tweetId="${tweet.id}" />
+`;
+    
+    await fs.writeFile(filePath, mdxContent, 'utf-8');
+    console.log(`  ✅ Created ${slug}`);
+  }
+}
+
+// For Facebook
+async function syncFacebook() {
+  console.log('📡 Facebook sync - using embed approach...');
+  
+  const posts = [
+    { id: 'pfbid02ABC123', type: 'post' as const },
+  ];
+  
+  const fbDir = path.join(SOCIAL_CONTENT_DIR, 'facebook');
+  await fs.mkdir(fbDir, { recursive: true });
+  
+  for (const post of posts) {
+    const slug = `fb-${post.id}`;
+    const filePath = path.join(fbDir, `${slug}.mdx`);
+    
+    try {
+      await fs.access(filePath);
+      continue;
+    } catch {
+      // Create file
+    }
+    
+    const frontmatter = {
+      platform: 'facebook',
+      originalId: post.id,
+      date: new Date().toISOString(),
+      media: [],
+      originalUrl: `https://www.facebook.com/share/p/${post.id}/`,
+      tags: [],
+      facebook: {
+        postId: post.id,
+        type: post.type,
+      },
+    };
+    
+    const mdxContent = `---
+${jsonToYaml(frontmatter)}
+---
+
+<FacebookEmbed postId="${post.id}" />
+`;
+    
+    await fs.writeFile(filePath, mdxContent, 'utf-8');
+    console.log(`  ✅ Created ${slug}`);
+  }
+}
+
+// Helper: Extract hashtags from text
+function extractHashtags(text: string): string[] {
+  const matches = text.match(/#[\w\u0600-\u06FF]+/g) || [];
+  return matches.map(tag => tag.slice(1)); // Remove # prefix
+}
+
+// Helper: Convert object to YAML-like frontmatter
+function jsonToYaml(obj: any, indent = 0): string {
+  const spaces = '  '.repeat(indent);
+  let result = '';
+  
+  for (const [key, value] of Object.entries(obj)) {
+    if (value === undefined || value === null) continue;
+    
+    if (Array.isArray(value)) {
+      if (value.length === 0) {
+        result += `${spaces}${key}: []\n`;
+      } else if (typeof value[0] === 'object') {
+        result += `${spaces}${key}:\n`;
+        for (const item of value) {
+          result += `${spaces}  -\n`;
+          result += jsonToYaml(item, indent + 2);
+        }
+      } else {
+        result += `${spaces}${key}:\n`;
+        for (const item of value) {
+          result += `${spaces}  - "${item}"\n`;
+        }
+      }
+    } else if (typeof value === 'object') {
+      result += `${spaces}${key}:\n`;
+      result += jsonToYaml(value, indent + 1);
+    } else if (typeof value === 'string') {
+      // Handle multiline strings and special characters
+      if (value.includes('\n') || value.includes(':') || value.includes('#')) {
+        result += `${spaces}${key}: |\n`;
+        for (const line of value.split('\n')) {
+          result += `${spaces}  ${line}\n`;
+        }
+      } else {
+        result += `${spaces}${key}: "${value.replace(/"/g, '\\"')}"\n`;
+      }
+    } else {
+      result += `${spaces}${key}: ${value}\n`;
+    }
+  }
+  
+  return result;
+}
+
+// Main function
+async function main() {
+  console.log('🚀 Starting social media sync...\n');
+  
+  await syncTelegram();
+  console.log('');
+  
+  await syncInstagram();
+  console.log('');
+  
+  await syncX();
+  console.log('');
+  
+  await syncFacebook();
+  console.log('');
+  
+  console.log('🎉 All done!');
+}
+
+main().catch(console.error);
+```
+
+### Step 3: Add to package.json
+
+```json
+{
+  "scripts": {
+    "sync:social": "npx tsx scripts/sync-social.ts",
+    "build": "npm run sync:social && astro build"
+  }
+}
+```
+
+### Step 4: Create Embed Components
 
 ```astro
 ---
-// MermaidInit.astro - place this in your layout
+// src/components/embeds/TelegramEmbed.astro
+interface Props {
+  channelUsername: string;
+  messageId: string;
+  color?: string;
+}
+
+const { channelUsername, messageId, color = '1E88E5' } = Astro.props;
+const embedUrl = `https://t.me/${channelUsername}/${messageId}?embed=1&color=${color}`;
 ---
+
+<div class="telegram-embed-wrapper">
+  <iframe
+    src={embedUrl}
+    width="100%"
+    height="auto"
+    frameborder="0"
+    scrolling="no"
+    style="border: none; overflow: hidden; min-height: 200px;"
+    loading="lazy"
+  ></iframe>
+  <a 
+    href={`https://t.me/${channelUsername}/${messageId}`} 
+    target="_blank"
+    rel="noopener noreferrer"
+    class="embed-link"
+  >
+    مشاهده در تلگرام ↗
+  </a>
+</div>
 
 <script>
-import mermaid from 'mermaid';
-import { smartResizeMermaidDiagrams } from '../scripts/mermaid-resize.js';
-
-mermaid.initialize({
-  startOnLoad: false,
-  theme: 'default',
-  flowchart: {
-    useMaxWidth: false,    // KEY: This prevents the width="100%" problem
-    htmlLabels: true,
-    curve: 'basis',
-  },
-  themeVariables: {
-    fontSize: '14px',
-  },
-});
-
-async function renderMermaid() {
-  try {
-    await mermaid.run({
-      querySelector: '.mermaid:not([data-processed])',
-    });
-  } catch (e) {
-    console.error('Mermaid render error:', e);
-  }
-
-  // Apply smart sizing AFTER render
-  requestAnimationFrame(() => {
-    smartResizeMermaidDiagrams();
+  // Auto-resize iframe based on content
+  window.addEventListener('message', (event) => {
+    if (event.origin === 'https://t.me') {
+      const iframe = document.querySelector('.telegram-embed-wrapper iframe') as HTMLIFrameElement;
+      if (iframe && event.data?.height) {
+        iframe.style.height = event.data.height + 'px';
+      }
+    }
   });
-}
-
-// Initial render
-document.addEventListener('DOMContentLoaded', renderMermaid);
-
-// Re-render on page navigation (Astro View Transitions)
-document.addEventListener('astro:page-load', renderMermaid);
-
-// Re-size on window resize (debounced)
-let resizeTimeout;
-window.addEventListener('resize', () => {
-  clearTimeout(resizeTimeout);
-  resizeTimeout = setTimeout(smartResizeMermaidDiagrams, 250);
-});
 </script>
-```
 
-### 3. CSS for Smart Sizing
-
-```css
-/* src/styles/mermaid.css */
-
-/* ========================================
-   BASE WRAPPER
-   ======================================== */
-.mermaid-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 1.5rem auto;
-  padding: 1rem;
-  border-radius: 8px;
-  background: #fafafa;
-  border: 1px solid #e5e7eb;
-  overflow: hidden; /* default - overridden by JS for narrow */
-  transition: all 0.3s ease;
-}
-
-.mermaid-wrapper svg {
-  display: block;
-  margin: 0 auto;
-  height: auto;
-  /* Override Mermaid defaults until JS runs */
-  max-width: 100% !important;
-}
-
-/* ========================================
-   SIZE-SPECIFIC OVERRIDES (added by JS)
-   ======================================== */
-
-/* Wide diagrams: full width */
-.mermaid-wrapper.mermaid-wide {
-  width: 100%;
-  max-width: 100%;
-  padding: 1rem 0.5rem;
-}
-
-.mermaid-wrapper.mermaid-wide svg {
-  width: 100% !important;
-}
-
-/* Narrow/tall diagrams */
-.mermaid-wrapper.mermaid-narrow {
-  max-width: 60%;
-  max-height: 700px;
-  overflow-y: auto;
-  scrollbar-width: thin;
-}
-
-.mermaid-wrapper.mermaid-narrow::-webkit-scrollbar {
-  width: 6px;
-}
-
-.mermaid-wrapper.mermaid-narrow::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 3px;
-}
-
-/* Small diagrams: don't over-stretch */
-.mermaid-wrapper.mermaid-small {
-  max-width: 70%;
-}
-
-/* Medium diagrams */
-.mermaid-wrapper.mermaid-medium {
-  max-width: 90%;
-}
-
-/* ========================================
-   RESPONSIVE BREAKPOINTS
-   ======================================== */
-@media (max-width: 768px) {
-  .mermaid-wrapper.mermaid-wide,
-  .mermaid-wrapper.mermaid-medium,
-  .mermaid-wrapper.mermaid-small,
-  .mermaid-wrapper.mermaid-narrow {
-    max-width: 100%;
-    overflow-x: auto;
+<style>
+  .telegram-embed-wrapper {
+    max-width: 550px;
+    margin: 1rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
   }
-
-  .mermaid-wrapper.mermaid-narrow {
-    max-height: 500px;
+  
+  .embed-link {
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    border-top: 1px solid var(--color-border);
+    font-size: 0.875rem;
   }
-}
-
-/* ========================================
-   TOOLBAR (your existing zoom/expand)
-   ======================================== */
-.mermaid-toolbar {
-  position: absolute;
-  top: 4px;
-  right: 4px;
-  display: flex;
-  gap: 4px;
-  opacity: 0;
-  transition: opacity 0.2s;
-  z-index: 10;
-}
-
-.mermaid-wrapper:hover .mermaid-toolbar {
-  opacity: 1;
-}
-
-.mermaid-tool-btn {
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid #d1d5db;
-  border-radius: 4px;
-  padding: 2px 6px;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 1;
-}
-
-.mermaid-tool-btn:hover {
-  background: #e5e7eb;
-}
-
-/* ========================================
-   FULLSCREEN MODAL (for zoom button)
-   ======================================== */
-.mermaid-fullscreen-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.85);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  cursor: zoom-out;
-}
-
-.mermaid-fullscreen-overlay svg {
-  max-width: 95vw !important;
-  max-height: 90vh !important;
-  width: auto !important;
-  height: auto !important;
-  background: white;
-  border-radius: 8px;
-  padding: 1rem;
-}
+  
+  .embed-link:hover {
+    background: var(--color-surface-dim);
+  }
+</style>
 ```
 
-### 4. Updated Remark Plugin
-
-The key change: **pass `useMaxWidth: false`** hint, and add dimension metadata:
-
-```mjs
-// src/plugins/remark-mermaid.mjs
-import { visit } from 'unist-util-visit';
-
-export function remarkMermaid() {
-  return (tree) => {
-    visit(tree, 'code', (node, index, parent) => {
-      if (node.lang === 'mermaid') {
-        let processedValue = node.value;
-        const meta = node.meta || '';
-
-        // Extract optional sizing hints
-        const widthMatch = meta.match(/width=["']?([^"'\s]+)["']?/);
-        const heightMatch = meta.match(/height=["']?([^"'\s]+)["']?/);
-        const sizeMatch = meta.match(/size=["']?(small|medium|large|full|auto)["']?/);
-
-        const width = widthMatch
-          ? widthMatch[1].endsWith('%') || widthMatch[1].endsWith('px')
-            ? widthMatch[1]
-            : `${widthMatch[1]}px`
-          : null;
-
-        const height = heightMatch
-          ? heightMatch[1].endsWith('%') || heightMatch[1].endsWith('px')
-            ? heightMatch[1]
-            : `${heightMatch[1]}px`
-          : null;
-
-        const sizeHint = sizeMatch ? sizeMatch[1] : 'auto';
-
-        // 1. Escape HTML and braces
-        processedValue = processedValue
-          .replaceAll('<', '&lt;')
-          .replaceAll('>', '&gt;')
-          .replaceAll('{', '&#123;')
-          .replaceAll('}', '&#125;');
-
-        // 2. Auto-quote Farsi text
-        // ✅ NEW - safe auto-quoting
-        processedValue = processedValue.replace(
-          // Only match bracket content that is NOT already quoted
-          /([$$\(\{>])(?!")([^$$\)\}<"]+?)([\]\)\}])/g,
-          (match, open, text, close) => {
-            // Only add quotes if:
-            // 1. Contains Farsi characters
-            // 2. Not already quoted
-            // 3. Not a single word (likely a node ID like A, B1, etc.)
-            // 4. Not inside a style definition
-            if (
-              /[\u0600-\u06FF]/.test(text) &&
-              !text.startsWith('"') &&
-              !text.endsWith('"') &&
-              text.trim().length > 1 &&
-              !text.includes(':::') &&
-              !text.includes('style')
-            ) {
-              return `${open}"${text.trim()}"${close}`;
-            }
-            return match;
-          }
-        );
-
-        // Build wrapper styles
-        const wrapperStyles = ['overflow: auto'];
-
-        if (width) wrapperStyles.push(`width: ${width}`);
-        if (height) wrapperStyles.push(`max-height: ${height}`);
-
-        // Size hint classes
-        const sizeClassMap = {
-          small: 'mermaid-hint-small',
-          medium: 'mermaid-hint-medium',
-          large: 'mermaid-hint-large',
-          full: 'mermaid-hint-full',
-          auto: '',
-        };
-        const sizeClass = sizeClassMap[sizeHint] || '';
-
-        // Alignment
-        const alignMatch = meta.match(/align=["']?([^"'\s]+)["']?/);
-        const align = alignMatch ? alignMatch[1] : 'center';
-
-        if (align === 'left') {
-          wrapperStyles.push('margin-left: 0', 'margin-right: auto');
-        } else if (align === 'right') {
-          wrapperStyles.push('margin-left: auto', 'margin-right: 0');
-        } else {
-          wrapperStyles.push('margin-left: auto', 'margin-right: auto');
-        }
-
-        const styleAttr = ` style="${wrapperStyles.join('; ')}"`;
-        const expanded = meta.includes('expanded') ? 'true' : 'false';
-        const classAttr = `mermaid-wrapper${sizeClass ? ` ${sizeClass}` : ''}`;
-
-        const html = {
-          type: 'html',
-          value: `<div class="${classAttr}" role="figure"${styleAttr} data-align="${align}" data-expanded="${expanded}" data-size-hint="${sizeHint}">
-<div class="mermaid-toolbar">
-    <button class="mermaid-tool-btn zoom-btn" title="Full Screen">🔍</button>
-    <button class="mermaid-tool-btn expand-btn" title="Expand/Collapse">↕️</button>
-</div>
-<div class="mermaid">
-${processedValue}
-</div>
-</div>`,
-        };
-
-        parent.children[index] = html;
-      }
-    });
-  };
+```astro
+---
+// src/components/embeds/InstagramEmbed.astro
+interface Props {
+  postId: string;
+  captioned?: boolean;
 }
 
-export default remarkMermaid;
-```
-
-### 5. Fullscreen Zoom Handler
-
-```js
-// src/scripts/mermaid-toolbar.js
-
-export function initMermaidToolbar() {
-  document.addEventListener('click', (e) => {
-    const btn = e.target.closest('.mermaid-tool-btn');
-    if (!btn) return;
-
-    const wrapper = btn.closest('.mermaid-wrapper');
-    if (!wrapper) return;
-
-    // ZOOM / FULLSCREEN
-    if (btn.classList.contains('zoom-btn')) {
-      const svg = wrapper.querySelector('svg');
-      if (!svg) return;
-
-      const overlay = document.createElement('div');
-      overlay.className = 'mermaid-fullscreen-overlay';
-      overlay.innerHTML = svg.outerHTML;
-      overlay.addEventListener('click', () => overlay.remove());
-
-      // ESC to close
-      const escHandler = (e) => {
-        if (e.key === 'Escape') {
-          overlay.remove();
-          document.removeEventListener('keydown', escHandler);
-        }
-      };
-      document.addEventListener('keydown', escHandler);
-
-      document.body.appendChild(overlay);
-    }
-
-    // EXPAND / COLLAPSE
-    if (btn.classList.contains('expand-btn')) {
-      const isExpanded = wrapper.dataset.expanded === 'true';
-      if (isExpanded) {
-        wrapper.style.maxHeight = '';
-        wrapper.dataset.expanded = 'false';
-      } else {
-        wrapper.style.maxHeight = 'none';
-        wrapper.style.overflow = 'visible';
-        wrapper.dataset.expanded = 'true';
-      }
-    }
-  });
-}
-```
-
+const { postId, captioned = true } = Astro.props;
 ---
 
-## How It Fixes Your 3 Examples
+<div class="instagram-embed-wrapper">
+  <blockquote
+    class="instagram-media"
+    data-instgrm-captioned={captioned}
+    data-instgrm-permalink={`https://www.instagram.com/p/${postId}/`}
+    data-instgrm-version="14"
+  >
+    <a href={`https://www.instagram.com/p/${postId}/`} target="_blank">
+      مشاهده در اینستاگرام
+    </a>
+  </blockquote>
+</div>
 
-| Example | Problem | viewBox | Fix Applied |
-|---------|---------|---------|-------------|
-| **#1** (4 nodes) | Tiny diagram stretched to 100% width | `278 × 253` | Classified as **small** → capped at `~556px` (2×) or 70% of container |
-| **#2** (9 nodes, tall) | Narrow tall diagram stretched wide | `311 × 945` | Classified as **narrow** → capped at ~60% width, max-height 700px with scroll |
-| **#3** (12 nodes, tree) | Wide diagram squished small | `736 × 253` | Classified as **wide** → uses 80-100% of container width |
+<script async src="https://www.instagram.com/embed.js"></script>
 
-## Usage in MDX
-
-Default auto-sizing:
-```markdown
-```mermaid
-graph TD
-    A --> B
-```　
+<style>
+  .instagram-embed-wrapper {
+    max-width: 540px;
+    margin: 1rem auto;
+  }
+  
+  .instagram-media {
+    background: #FFF;
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.5), 0 1px 10px 0 rgba(0,0,0,0.15);
+    margin: 0 auto;
+    max-width: 540px;
+    min-width: 326px;
+    padding: 0;
+    width: 100%;
+  }
+</style>
 ```
 
-Manual override when needed:
-```markdown
-```mermaid size="full"
-graph LR
-    A --> B --> C --> D --> E
-```　
+```astro
+---
+// src/components/embeds/XEmbed.astro
+interface Props {
+  tweetId: string;
+  theme?: 'light' | 'dark';
+}
+
+const { tweetId, theme = 'light' } = Astro.props;
+---
+
+<div class="x-embed-wrapper" data-theme={theme}>
+  <blockquote class="twitter-tweet" data-theme={theme}>
+    <a href={`https://twitter.com/i/status/${tweetId}`}>Loading tweet...</a>
+  </blockquote>
+</div>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<style>
+  .x-embed-wrapper {
+    max-width: 550px;
+    margin: 1rem auto;
+  }
+</style>
 ```
 
-```markdown
-```mermaid size="small" align="right"
-graph TD
-    A --> B
-```　
+```astro
+---
+// src/components/embeds/FacebookEmbed.astro
+interface Props {
+  postUrl: string;
+  width?: number;
+}
+
+const { postUrl, width = 500 } = Astro.props;
+---
+
+<div class="facebook-embed-wrapper">
+  <div
+    class="fb-post"
+    data-href={postUrl}
+    data-width={width}
+    data-show-text="true"
+  ></div>
+</div>
+
+<script async defer crossorigin="anonymous" 
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0">
+</script>
+
+<style>
+  .facebook-embed-wrapper {
+    max-width: 550px;
+    margin: 1rem auto;
+  }
+</style>
 ```
 
-### Critical Mermaid Config
+### Step 5: Social Media Index Page
 
-The **single most important setting** is in `mermaid.initialize()`:
+```astro
+---
+// src/pages/[lang]/social/index.astro
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { t } from '../../../i18n';
+import type { Locale } from '../../../i18n';
 
-```js
-mermaid.initialize({
-  flowchart: {
-    useMaxWidth: false,  // ← THIS IS THE KEY FIX
+export async function getStaticPaths() {
+  return [{ params: { lang: 'fa' } }, { params: { lang: 'en' } }];
+}
+
+const { lang } = Astro.params as { lang: Locale };
+
+// Get all social media posts
+const allPosts = await getCollection('social');
+
+// Sort by date (newest first)
+const sortedPosts = allPosts.sort((a, b) => 
+  new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+
+// Group by platform
+const platforms = {
+  telegram: sortedPosts.filter(p => p.data.platform === 'telegram'),
+  x: sortedPosts.filter(p => p.data.platform === 'x'),
+  instagram: sortedPosts.filter(p => p.data.platform === 'instagram'),
+  facebook: sortedPosts.filter(p => p.data.platform === 'facebook'),
+};
+
+const platformInfo = {
+  telegram: {
+    name: lang === 'fa' ? 'تلگرام' : 'Telegram',
+    icon: 'M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z',
+    color: '#0088cc',
   },
-});
+  x: {
+    name: 'X',
+    icon: 'M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z',
+    color: '#000000',
+  },
+  instagram: {
+    name: lang === 'fa' ? 'اینستاگرام' : 'Instagram',
+    icon: 'M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z',
+    color: '#E4405F',
+  },
+  facebook: {
+    name: lang === 'fa' ? 'فیسبوک' : 'Facebook',
+    icon: 'M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z',
+    color: '#1877F2',
+  },
+};
+---
+
+<BaseLayout 
+  title={lang === 'fa' ? 'شبکه‌های اجتماعی' : 'Social Media'} 
+  lang={lang}
+>
+  <main class="container mx-auto px-4 py-12" dir={lang === 'fa' ? 'rtl' : 'ltr'}>
+    <header class="text-center mb-12">
+      <h1 class="text-4xl font-bold mb-4">
+        {lang === 'fa' ? 'شبکه‌های اجتماعی' : 'Social Media'}
+      </h1>
+      <p class="text-text-muted dark:text-text-dark-muted max-w-2xl mx-auto">
+        {lang === 'fa' 
+          ? 'آخرین پست‌ها و محتوای منتشر شده در شبکه‌های اجتماعی'
+          : 'Latest posts and content published on social media platforms'
+        }
+      </p>
+    </header>
+
+    <!-- Platform Filter Tabs -->
+    <div class="flex flex-wrap justify-center gap-3 mb-10">
+      <button
+        class="platform-tab active"
+        data-platform="all"
+      >
+        {lang === 'fa' ? 'همه' : 'All'}
+        <span class="count">{sortedPosts.length}</span>
+      </button>
+      
+      {Object.entries(platforms).map(([key, posts]) => posts.length > 0 && (
+        <button
+          class="platform-tab"
+          data-platform={key}
+          style={`--platform-color: ${platformInfo[key as keyof typeof platformInfo].color}`}
+        >
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d={platformInfo[key as keyof typeof platformInfo].icon} />
+          </svg>
+          {platformInfo[key as keyof typeof platformInfo].name}
+          <span class="count">{posts.length}</span>
+        </button>
+      ))}
+    </div>
+
+    <!-- Posts Grid -->
+    <div class="posts-grid grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {sortedPosts.map((post) => (
+        <article
+          class="post-card"
+          data-platform={post.data.platform}
+        >
+          <a href={`/${lang}/social/${post.slug}`} class="block">
+            <!-- Platform Badge -->
+            <div class="flex items-center justify-between mb-3">
+              <span 
+                class="platform-badge"
+                style={`background-color: ${platformInfo[post.data.platform].color}15; color: ${platformInfo[post.data.platform].color}`}
+              >
+                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d={platformInfo[post.data.platform].icon} />
+                </svg>
+                {platformInfo[post.data.platform].name}
+              </span>
+              
+              <time class="text-xs text-text-muted dark:text-text-dark-muted">
+                {new Intl.DateTimeFormat(lang === 'fa' ? 'fa-IR' : 'en-US', {
+                  year: 'numeric',
+                  month: 'short',
+                  day: 'numeric',
+                }).format(new Date(post.data.date))}
+              </time>
+            </div>
+
+            <!-- Media Thumbnail -->
+            {post.data.media?.[0]?.thumbnail && (
+              <div class="media-thumbnail mb-3">
+                <img 
+                  src={post.data.media[0].thumbnail} 
+                  alt=""
+                  class="w-full h-40 object-cover rounded-lg"
+                  loading="lazy"
+                />
+                {post.data.media[0].type === 'video' && (
+                  <div class="play-icon">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  </div>
+                )}
+              </div>
+            )}
+
+            <!-- Text Preview -->
+            <p class="text-preview text-sm leading-relaxed">
+              {post.body?.slice(0, 150)}...
+            </p>
+
+            <!-- Stats -->
+            <div class="flex items-center gap-4 mt-3 text-xs text-text-muted dark:text-text-dark-muted">
+              {post.data.views && (
+                <span class="flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                  {post.data.views.toLocaleString(lang === 'fa' ? 'fa-IR' : 'en-US')}
+                </span>
+              )}
+              
+              {post.data.likes && (
+                <span class="flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                  {post.data.likes.toLocaleString(lang === 'fa' ? 'fa-IR' : 'en-US')}
+                </span>
+              )}
+              
+              {post.data.media && post.data.media.length > 0 && (
+                <span class="flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  {post.data.media.length}
+                </span>
+              )}
+            </div>
+
+            <!-- Tags -->
+            {post.data.tags && post.data.tags.length > 0 && (
+              <div class="flex flex-wrap gap-1 mt-3">
+                {post.data.tags.slice(0, 3).map(tag => (
+                  <span class="tag">#{tag}</span>
+                ))}
+              </div>
+            )}
+          </a>
+        </article>
+      ))}
+    </div>
+
+    <!-- Empty State -->
+    {sortedPosts.length === 0 && (
+      <div class="text-center py-20">
+        <p class="text-text-muted dark:text-text-dark-muted">
+          {lang === 'fa' ? 'هنوز پستی منتشر نشده است' : 'No posts published yet'}
+        </p>
+      </div>
+    )}
+  </main>
+</BaseLayout>
+
+<script>
+  // Platform filter functionality
+  const tabs = document.querySelectorAll('.platform-tab');
+  const posts = document.querySelectorAll('.post-card');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const platform = tab.getAttribute('data-platform');
+      
+      // Update active tab
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      
+      // Filter posts
+      posts.forEach(post => {
+        const postPlatform = post.getAttribute('data-platform');
+        if (platform === 'all' || postPlatform === platform) {
+          (post as HTMLElement).style.display = 'block';
+        } else {
+          (post as HTMLElement).style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  .platform-tab {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .platform-tab:hover {
+    border-color: var(--platform-color, var(--color-primary));
+  }
+  
+  .platform-tab.active {
+    background: var(--platform-color, var(--color-primary));
+    color: white;
+    border-color: transparent;
+  }
+  
+  .platform-tab .count {
+    background: rgba(255,255,255,0.2);
+    padding: 0.125rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+  }
+  
+  .platform-tab:not(.active) .count {
+    background: var(--color-surface-dim);
+  }
+
+  .post-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    transition: all 0.2s;
+  }
+  
+  .post-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  html.dark .post-card {
+    background: var(--color-surface-dark);
+    border-color: var(--color-border-dark);
+  }
+
+  .platform-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  .media-thumbnail {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+  }
+  
+  .play-icon {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.3);
+    color: white;
+  }
+
+  .text-preview {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--color-text-base);
+  }
+  
+  html.dark .text-preview {
+    color: var(--color-text-dark);
+  }
+
+  .tag {
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    padding: 0.125rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+  }
+</style>
 ```
 
-When `useMaxWidth: false`, Mermaid generates SVGs with their **natural pixel dimensions** instead of `width="100%"`, making the smart resizer work correctly.
+### Step 6: Individual Post Page
 
-````
+```astro
+---
+// src/pages/[lang]/social/[...slug].astro
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import TelegramEmbed from '../../../components/embeds/TelegramEmbed.astro';
+import InstagramEmbed from '../../../components/embeds/InstagramEmbed.astro';
+import XEmbed from '../../../components/embeds/XEmbed.astro';
+import FacebookEmbed from '../../../components/embeds/FacebookEmbed.astro';
+import type { Locale } from '../../../i18n';
 
+export async function getStaticPaths() {
+  const posts = await getCollection('social');
+  const paths = [];
+  
+  for (const post of posts) {
+    paths.push({ params: { lang: 'fa', slug: post.slug }, props: { post } });
+    paths.push({ params: { lang: 'en', slug: post.slug }, props: { post } });
+  }
+  
+  return paths;
+}
 
-# to ignore // already done
+const { lang } = Astro.params as { lang: Locale };
+const { post } = Astro.props;
+const { Content } = await post.render();
 
+const platformNames = {
+  telegram: lang === 'fa' ? 'تلگرام' : 'Telegram',
+  x: 'X',
+  instagram: lang === 'fa' ? 'اینستاگرام' : 'Instagram',
+  facebook: lang === 'fa' ? 'فیسبوک' : 'Facebook',
+};
 
-### Processed contents should moved to Archive folder
+const formattedDate = new Intl.DateTimeFormat(lang === 'fa' ? 'fa-IR' : 'en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+}).format(new Date(post.data.date));
+---
 
-there is ontent-source/archive folder. the processed contents should be moved to this folder after they been Processed and added to site content. they should be added like in a date format yyyymmdd subfolder. if duplicate they should rename the older files. 
+<BaseLayout 
+  title={`${platformNames[post.data.platform]} - ${post.data.originalId}`}
+  lang={lang}
+>
+  <main class="container mx-auto px-4 py-12 max-w-3xl" dir={lang === 'fa' ? 'rtl' : 'ltr'}>
+    <!-- Breadcrumb -->
+    <nav class="mb-8 text-sm">
+      <a href={`/${lang}/social`} class="text-primary hover:underline">
+        {lang === 'fa' ? 'شبکه‌های اجتماعی' : 'Social Media'}
+      </a>
+      <span class="mx-2 text-text-muted">/</span>
+      <span class="text-text-muted">{platformNames[post.data.platform]}</span>
+    </nav>
 
-### Proccessing and preparing articles and other contents for the site
+    <article class="social-post">
+      <!-- Header -->
+      <header class="mb-8">
+        <div class="flex items-center gap-4 mb-4">
+          <!-- Platform icon -->
+          <div 
+            class="w-12 h-12 rounded-full flex items-center justify-center"
+            style={`background-color: var(--platform-bg)`}
+          >
+            {post.data.platform === 'telegram' && (
+              <svg class="w-6 h-6 text-[#0088cc]" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+              </svg>
+            )}
+            {/* Add other platform icons similarly */}
+          </div>
+          
+          <div>
+            <h1 class="text-lg font-bold">
+              {post.data.author?.name || platformNames[post.data.platform]}
+            </h1>
+            {post.data.author?.username && (
+              <p class="text-sm text-text-muted">@{post.data.author.username}</p>
+            )}
+          </div>
+        </div>
+        
+        <time class="text-sm text-text-muted dark:text-text-dark-muted">
+          {formattedDate}
+        </time>
+      </header>
 
-#### problem 1- Mermaid diagrams are not rendered in the site properly
+      <!-- Media Gallery -->
+      {post.data.media && post.data.media.length > 0 && (
+        <div class="media-gallery mb-6">
+          {post.data.media.map((media: any) => (
+            media.type === 'photo' && media.url && (
+              <img 
+                src={media.url} 
+                alt="" 
+                class="rounded-xl w-full"
+                loading="lazy"
+              />
+            )
+          ))}
+          {post.data.media.map((media: any) => (
+            media.type === 'video' && media.url && (
+              <video 
+                controls 
+                class="rounded-xl w-full"
+                poster={media.thumbnail}
+              >
+                <source src={media.url} type="video/mp4" />
+              </video>
+            )
+          ))}
+        </div>
+      )}
 
-I see that the Mermaid diagrams are not rendered in the site. I have added the Mermaid diagrams to the documents, but they are not visible on the output site properly visible. 
-farsi contents should be wrapped correctly in "" or [""] in mermaid diagrams. so this hsould be checked and applied. 
+      <!-- Content -->
+      <div class="prose prose-lg dark:prose-invert max-w-none">
+        <Content />
+      </div>
 
-#### problem 2- the size and width of the diagrams are not correct
-some are very limited, some are very big! can this be manageble by the user? so there be a defult sizing (if the diagram is very tall heigh is too much it should not bother user so he / she loose the site content! then the size should be smaller, if the diagram is very wide width is too much) and user can override it if needed. So anyway, user can handle the size and see the content as he /she like, while the beaty and neatness of content of site stayes untouched. 
-look: [mermaid-small](public/dev/mermaid-small.png)
-look: [mermaid-super-small](public/dev/mermaid-super-small.png)
-look: [mermaid-big](public/dev/mermaid-tall.png)
-look: [mermaid-big](public/dev/mermaid-bad-tall.png)
+      <!-- Native Embed Option -->
+      <details class="mt-8 border border-border dark:border-border-dark rounded-xl">
+        <summary class="px-4 py-3 cursor-pointer text-sm font-medium">
+          {lang === 'fa' ? 'نمایش امبد اصلی' : 'Show Original Embed'}
+        </summary>
+        <div class="p-4 border-t border-border dark:border-border-dark">
+          {post.data.platform === 'telegram' && post.data.telegram && (
+            <TelegramEmbed 
+              channelUsername={post.data.telegram.channelUsername}
+              messageId={post.data.telegram.messageId}
+            />
+          )}
+          {post.data.platform === 'instagram' && post.data.instagram && (
+            <InstagramEmbed postId={post.data.instagram.postId} />
+          )}
+          {post.data.platform === 'x' && post.data.x && (
+            <XEmbed tweetId={post.data.x.tweetId} />
+          )}
+        </div>
+      </details>
 
-<details open>
-<summary>ignore</summary>
-```markdown
-### Processing and preparing Books for the sites
+      <!-- Stats & Actions -->
+      <footer class="mt-8 pt-6 border-t border-border dark:border-border-dark">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-6 text-sm text-text-muted">
+            {post.data.views && (
+              <span class="flex items-center gap-1">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+                {post.data.views.toLocaleString(lang === 'fa' ? 'fa-IR' : 'en-US')}
+                {lang === 'fa' ? 'بازدید' : 'views'}
+              </span>
+            )}
+            
+            {post.data.likes && (
+              <span class="flex items-center gap-1">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+                {post.data.likes.toLocaleString(lang === 'fa' ? 'fa-IR' : 'en-US')}
+              </span>
+            )}
+          </div>
+          
+          <a
+            href={post.data.originalUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white hover:bg-primary-dark transition-colors text-sm"
+          >
+            {lang === 'fa' ? `مشاهده در ${platformNames[post.data.platform]}` : `View on ${platformNames[post.data.platform]}`}
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </div>
+        
+        <!-- Tags -->
+        {post.data.tags && post.data.tags.length > 0 && (
+          <div class="flex flex-wrap gap-2 mt-4">
+            {post.data.tags.map((tag: string) => (
+              <a 
+                href={`/${lang}/social?tag=${tag}`}
+                class="text-sm px-3 py-1 rounded-full bg-surface-dim dark:bg-surface-dark-dim text-primary hover:bg-primary hover:text-white transition-colors"
+              >
+                #{tag}
+              </a>
+            ))}
+          </div>
+        )}
+      </footer>
+    </article>
 
-~~#### Problem1- Book Contents are not processed! 
+    <!-- Navigation -->
+    <nav class="mt-12 flex justify-between">
+      <a href={`/${lang}/social`} class="text-primary hover:underline flex items-center gap-1">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={lang === 'fa' ? 'M9 5l7 7-7 7' : 'M15 19l-7-7 7-7'} />
+        </svg>
+        {lang === 'fa' ? 'بازگشت به همه پست‌ها' : 'Back to all posts'}
+      </a>
+    </nav>
+  </main>
+</BaseLayout>
 
-in [content-source/books] folder, there are some books that are not processed. I added different type of books in the ways could be presented.
-1- Single Latex File [content-source/books/Shadow Political Court for Iran.tex](content-source\books\Shadow Political Court for Iran.tex)
-2- Book in a Folder with subfolders and files  [content-source/books/Iran-Transition-Monitoring](content-source\books\Iran-Transition-Monitoring)
-3- Book in a Folder with subfolders as zip file [content-source/books/Nations-States.zip](content-source\books\Nations-States.zip)
-4- Book as PDF file [content-source/books/Shadow Political Court for Iran.pdf](content-source\books\Shadow Political Court for Iran.pdf)
+<style>
+  .social-post {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 1.5rem;
+    padding: 2rem;
+  }
+  
+  html.dark .social-post {
+    background: var(--color-surface-dark);
+    border-color: var(--color-border-dark);
+  }
+  
+  .media-gallery {
+    display: grid;
+    gap: 0.5rem;
+  }
+  
+  .media-gallery:has(> :nth-child(2)) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .prose a {
+    color: var(--color-primary);
+  }
+</style>
+```
 
+## Summary: Complete Architecture
 
-So the problem is that the books are not processed and added to the site. What I am only seeing is some bunch of folders! 
-the conversion should have two phase: 
-1- Conversion of the book to mdx files and moving them to src/content/books
-2- if PDF file is available (no matter is same folder as book content or same folder as book folder is available, but in same name as the folder name) the pdf file also should be available in the book page. This should be already implemented as we have fronmatters of `pdfUrl: /pdfs/***.pdf` ans `showPdfViewer: true` 
+```
+📁 Your Astro Site
+├── 📁 src/
+│   ├── 📁 content/
+│   │   └── 📁 social/           # Social media posts as MDX
+│   │       ├── 📁 telegram/
+│   │       │   ├── tg-123.mdx
+│   │       │   └── tg-124.mdx
+│   │       ├── 📁 x/
+│   │       ├── 📁 instagram/
+│   │       └── 📁 facebook/
+│   │
+│   ├── 📁 components/
+│   │   └── 📁 embeds/
+│   │       ├── TelegramEmbed.astro
+│   │       ├── InstagramEmbed.astro
+│   │       ├── XEmbed.astro
+│   │       └── FacebookEmbed.astro
+│   │
+│   ├── 📁 pages/
+│   │   └── 📁 [lang]/
+│   │       └── 📁 social/
+│   │           ├── index.astro    # List all posts
+│   │           └── [...slug].astro # Individual post
+│   │
+│   └── 📁 types/
+│       └── social.ts
+│
+├── 📁 scripts/
+│   └── sync-social.ts            # Auto-sync from APIs
+│
+└── 📁 workers/
+    └── telegram-feed.js          # Cloudflare Worker
+```
 
-so please check this all. first lets confirm your underestanding of this issue and then go from there. ~~
+This gives you:
 
-#### Problem 2- PDF are not attached to book (need Automatic PDF Association)
+| Feature | Benefit |
+|---------|---------|
+| ✅ **MDX files** | Full control, can edit/enhance posts |
+| ✅ **Static pages** | Fast loading, SEO-friendly |
+| ✅ **Native embeds** | Option to show original platform embed |
+| ✅ **Unified feed** | All platforms in one place |
+| ✅ **Auto-sync** | `npm run sync:social` pulls latest |
+| ✅ **Tags/Search** | Filter by hashtags |
+| ✅ **Media support** | Photos, videos, audio |
+| ✅ **Bilingual** | Persian + English |
 
-I see that the PDF files are not attached to the book pages. I have added the PDF files to the book pages, but they are not visible on the book pages. 
+```
 
-Implement a helper to find a related PDF for any book and ensure PDFs are stored in public/documents/books (updating script to be consistent).
-
-so please check this all. first lets confirm your underestanding of this issue and then go from there. 
-
-### change of mind for Book processing! 
-
-lets consider another scenario... it seems the converting books is not possible or feasible. 
-lets tottaly forget that. 
-
-optimize the website for displaying books (and article or statements) when they are only pdf files! 
-so there should be frontmatter and meta data for them, but what should be displayed in the html page itself is embeded pdf file! 
-somethink link fronmatter as pdf-only:true
-is this better or not? 
-i will separately convert the books to PDF, 
-if the site have latex or MDX contents, they shoul donly be visible when pdf-only:false and they don't have error.. 
-
-is this possible or good idea? 
-
-</details>

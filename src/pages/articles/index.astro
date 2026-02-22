@@ -40,7 +40,7 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
   <div class="container-wide py-16">
     <h1 class="text-3xl font-bold mb-8 text-center">{t('nav.articles', lang)}</h1>
 
-    <CategoryTabView contentType="articles" lang={lang} allItems={articles} defaultTab="categories">
+    <CategoryTabView contentType="articles" lang={lang} allItems={articles}>
     <div class="flex flex-col md:flex-row gap-6 mb-8">
       {/* Search */}
       <div class="flex-1 relative">
