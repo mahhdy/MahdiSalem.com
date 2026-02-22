@@ -16,7 +16,7 @@ interface Props {
   defaultTab?: 'list' | 'categories';
 }
 
-const { contentType, lang, allItems, defaultTab = 'categories' } = Astro.props;
+const { contentType, lang, allItems, defaultTab } = Astro.props;
 
 // Filter categories relevant to this content type
 const relevantCategories = getCategoriesByContentType(contentType);
@@ -45,6 +45,10 @@ relevantCategories.forEach((category) => {
   }
 });
 
+// Dynamic default: category view when multiple interfaces exist, list view otherwise.
+// The passed-in defaultTab prop can override only if explicitly provided.
+const effectiveDefault = defaultTab ?? (categorizedItems.size > 1 ? 'categories' : 'list');
+
 // Get i18n labels
 const labels = {
   listView: lang === 'fa' ? 'نمای فهرستی' : 'List View',
@@ -52,7 +56,7 @@ const labels = {
 };
 ---
 
-<div class="category-tab-view" data-default-tab={defaultTab}>
+<div class="category-tab-view" data-default-tab={effectiveDefault} data-category-count={categorizedItems.size}>
   <!-- Tab Buttons -->
   <div class="flex justify-center mb-8">
     <div class="inline-flex p-1 bg-surface-dim dark:bg-surface-dark-dim rounded-lg border border-border dark:border-border-dark">
@@ -147,80 +151,72 @@ const labels = {
 </style>
 
 <script>
-  // Tab switching functionality
-  document.addEventListener('DOMContentLoaded', () => {
+  function initCategoryTabViews() {
     const tabViews = document.querySelectorAll('.category-tab-view');
 
     tabViews.forEach((tabView) => {
-      const buttons = tabView.querySelectorAll('.tab-btn');
+      const buttons = tabView.querySelectorAll<HTMLButtonElement>('.tab-btn');
       const listContent = tabView.querySelector('#list-content');
       const categoriesContent = tabView.querySelector('#categories-content');
-      const defaultTab = tabView.getAttribute('data-default-tab') || 'categories';
+      const defaultTab = tabView.getAttribute('data-default-tab') || 'list';
 
-      // Set initial active tab
-      const initialButton = tabView.querySelector(`[data-tab="${defaultTab}"]`);
-      const initialContent = defaultTab === 'list' ? listContent : categoriesContent;
+      const activateTab = (tab: string) => {
+        buttons.forEach((btn) => btn.classList.remove('active'));
+        const activeBtn = tabView.querySelector(`[data-tab="${tab}"]`);
+        if (activeBtn) activeBtn.classList.add('active');
 
-      if (initialButton && initialContent) {
-        initialButton.classList.add('active');
-        initialContent.classList.add('active');
-      }
+        if (listContent && categoriesContent) {
+          if (tab === 'list') {
+            listContent.classList.add('active');
+            categoriesContent.classList.remove('active');
+          } else {
+            categoriesContent.classList.add('active');
+            listContent.classList.remove('active');
+          }
+        }
+
+        const url = new URL(window.location.href);
+        url.searchParams.set('view', tab);
+        window.history.replaceState(null, '', `${url.pathname}${url.search}`);
+      };
+
+      // Set initial active tab from defaultTab
+      activateTab(defaultTab);
 
       // Add click handlers
       buttons.forEach((button) => {
         button.addEventListener('click', () => {
-          const tab = button.getAttribute('data-tab');
-
-          // Update active button
-          buttons.forEach((btn) => btn.classList.remove('active'));
-          button.classList.add('active');
-
-          // Update active content
-          if (listContent && categoriesContent) {
-            if (tab === 'list') {
-              listContent.classList.add('active');
-              categoriesContent.classList.remove('active');
-            } else {
-              categoriesContent.classList.add('active');
-              listContent.classList.remove('active');
-            }
-          }
-
-          // Update URL query for shareable state
-          const url = new URL(window.location.href);
-          if (tab) {
-            url.searchParams.set('view', tab);
-          }
-          window.history.replaceState(null, '', `${url.pathname}${url.search}`);
+          const tab = button.getAttribute('data-tab') || 'list';
+          activateTab(tab);
         });
       });
 
-      // Handle initial URL state (query first, then hash fallback)
+      // Override with URL state if explicitly set
       const params = new URLSearchParams(window.location.search);
       const queryView = params.get('view');
       const interfaceParam = params.get('interface');
       const hashView = window.location.hash.replace('#', '');
-      const initialView = queryView || (interfaceParam ? 'list' : hashView);
-
-      if (initialView === 'list' || initialView === 'categories') {
-        const button = tabView.querySelector(`[data-tab="${initialView}"]`) as HTMLButtonElement | null;
-        if (button) {
-          button.click();
-        }
+      const urlView = queryView || (interfaceParam ? 'list' : hashView);
+      if (urlView === 'list' || urlView === 'categories') {
+        activateTab(urlView);
       }
 
+      // Apply ?interface= filter in list view
       if (interfaceParam && listContent) {
         const applyInterfaceFilter = () => {
-          const filterBtn = listContent.querySelector(`.category-filter[data-category="${interfaceParam}"]`) as HTMLButtonElement | null;
-          if (filterBtn) {
-            filterBtn.click();
-          }
+          const filterBtn = listContent.querySelector<HTMLButtonElement>(
+            `.category-filter[data-category="${interfaceParam}"]`
+          );
+          if (filterBtn) filterBtn.click();
         };
-
         applyInterfaceFilter();
         setTimeout(applyInterfaceFilter, 50);
         setTimeout(applyInterfaceFilter, 200);
       }
     });
-  });
+  }
+
+  document.addEventListener('DOMContentLoaded', initCategoryTabViews);
+  document.addEventListener('astro:after-swap', initCategoryTabViews);
+  document.addEventListener('astro:page-load', initCategoryTabViews);
 </script>

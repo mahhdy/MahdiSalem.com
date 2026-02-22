@@ -42,8 +42,8 @@ const ICONS: Record<string, string> = {
         <button
           role="tab"
           aria-selected={i === 0 ? 'true' : 'false'}
-          aria-controls={}
-          id={}
+          aria-controls={`tab-panel-${p.id}`}
+          id={`tab-${p.id}`}
           class="social-tab flex items-center gap-2 px-5 py-2.5 rounded-full border text-sm font-semibold transition-all bg-surface dark:bg-surface-dark border-border dark:border-border-dark text-text-muted dark:text-text-dark-muted hover:border-primary dark:hover:border-primary-light"
           data-platform={p.id}
           data-color={p.color}
@@ -60,8 +60,8 @@ const ICONS: Record<string, string> = {
     {visibleTabs.map((p, i) => (
       <div
         role="tabpanel"
-        id={}
-        class={}
+        id={`tab-panel-${p.id}`}
+        class={`social-panel${i !== 0 ? ' hidden' : ''}`}
         data-platform={p.id}
       >
         {p.id === 'telegram' && (
@@ -75,10 +75,10 @@ const ICONS: Record<string, string> = {
             <p class="text-lg mb-3">اتصال به {p.labelFa} در حال آماده‌سازی است</p>
             {p.handle && (
               <a
-                href={p.id === 'instagram' ?  :
-                      p.id === 'facebook' ?  :
-                      p.id === 'x' ?  :
-                      p.id === 'linkedin' ?  : '#'}
+                href={p.id === 'instagram' ? `https://instagram.com/${p.handle}` :
+                      p.id === 'facebook'  ? `https://facebook.com/${p.handle}` :
+                      p.id === 'x'         ? `https://x.com/${p.handle}` :
+                      p.id === 'linkedin'  ? `https://linkedin.com/in/${p.handle}` : '#'}
                 target="_blank" rel="noopener noreferrer"
                 class="text-primary dark:text-primary-light hover:underline text-sm"
               >
