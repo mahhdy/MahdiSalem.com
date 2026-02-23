@@ -24,19 +24,19 @@
    ❌ خطا: 0
 ════════════════════════════════════════════════════════════
 
-[2m16:35:15[22m [34m[content][39m Syncing content
-[2m16:35:15[22m [34m[content][39m Synced content
-[2m16:35:15[22m [34m[types][39m Generated [2m436ms[22m
-[2m16:35:15[22m [34m[build][39m output: [34m"static"[39m
-[2m16:35:15[22m [34m[build][39m mode: [34m"static"[39m
-[2m16:35:15[22m [34m[build][39m directory: [34mC:\Users\b0583931\GitHub\MahdiSalem.com\dist\[39m
-[2m16:35:15[22m [34m[build][39m Collecting build info...
-[2m16:35:15[22m [34m[build][39m [32m✓ Completed in 467ms.[39m
-[2m16:35:15[22m [34m[build][39m Building static entrypoints...
-[31m[1m16:35:16[22m [ERROR] [vite][39m [31m✗[39m Build failed in 903ms
-[@mdx-js/rollup] Expected the closing tag `</summary>` either after the end of `paragraph` (61:39) or another opening tag after the start of `paragraph` (61:3)
-file: C:/Users/b0583931/GitHub/MahdiSalem.com/src/content/articles/fa/story-of-freedom-fa-fixed.mdx:61:29
+[2m16:39:32[22m [34m[content][39m Syncing content
+[2m16:39:32[22m [34m[content][39m Synced content
+[2m16:39:32[22m [34m[types][39m Generated [2m443ms[22m
+[2m16:39:32[22m [34m[build][39m output: [34m"static"[39m
+[2m16:39:32[22m [34m[build][39m mode: [34m"static"[39m
+[2m16:39:32[22m [34m[build][39m directory: [34mC:\Users\b0583931\GitHub\MahdiSalem.com\dist\[39m
+[2m16:39:32[22m [34m[build][39m Collecting build info...
+[2m16:39:32[22m [34m[build][39m [32m✓ Completed in 477ms.[39m
+[2m16:39:32[22m [34m[build][39m Building static entrypoints...
+[31m[1m16:39:33[22m [ERROR] [vite][39m [31m✗[39m Build failed in 1.21s
+[@mdx-js/rollup] Expected a closing tag for `<li>` (64:5-64:9) before the end of `paragraph`
+file: C:/Users/b0583931/GitHub/MahdiSalem.com/src/content/articles/fa/story-of-freedom-fa-fixed.mdx:64:5
   [1mLocation:[22m
-    [4mC:/Users/b0583931/GitHub/MahdiSalem.com/src/content/articles/fa/story-of-freedom-fa-fixed.mdx:61:29[24m
+    [4mC:/Users/b0583931/GitHub/MahdiSalem.com/src/content/articles/fa/story-of-freedom-fa-fixed.mdx:64:5[24m
   [1mStack trace:[22m
 [2m    at Object.transform (file:///C:/Users/b0583931/GitHub/MahdiSalem.com/node_modules/@astrojs/mdx/dist/vite-plugin-mdx.js:62:15)[22m

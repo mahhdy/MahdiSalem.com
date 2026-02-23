@@ -14,13 +14,16 @@ import { promisify } from 'util';
 const execAsync = promisify(exec);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-let globby, matter, cheerio;
+let globby, matter, cheerio, TurndownService, gfm;
 try {
     globby = (await import('globby')).globby;
     matter = (await import('gray-matter')).default;
     cheerio = await import('cheerio');
-} catch {
+    TurndownService = (await import('turndown')).default;
+    gfm = (await import('turndown-plugin-gfm')).gfm;
+} catch (err) {
     console.error('❌ لطفاً وابستگی‌ها را نصب کنید: npm install');
+    console.error(err);
     process.exit(1);
 }
 
@@ -296,7 +299,7 @@ export class ContentPipeline {
             path.basename(filePath, path.extname(filePath));
         const description = $('meta[name="description"]').attr('content') || '';
 
-        // Extract body content using regex (more reliable for large files)
+        // Extract body content
         const bodyMatch = content.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
         let bodyContent = bodyMatch ? bodyMatch[1] : content;
 
@@ -305,56 +308,49 @@ export class ContentPipeline {
         $body('script[src]').remove(); // Remove external scripts
         $body('link[rel="stylesheet"]').remove(); // Remove external stylesheets
 
-        // Keep inline styles and scripts (for Mermaid, etc.)
-        bodyContent = $body.html();
+        // Remove first <h1> to avoid duplication with ArticleLayout title
+        $body('h1').first().remove();
 
-        // Additional cleanup for MDX compatibility
-        if (bodyContent) {
-            // Remove any stray <html>, <head>, <body> tags that might have been nested
-            bodyContent = bodyContent.replace(/<\/?html[^>]*>/gi, '');
-            bodyContent = bodyContent.replace(/<\/?head[^>]*>/gi, '');
-            bodyContent = bodyContent.replace(/<\/?body[^>]*>/gi, '');
+        // Remove subtitle and meta paragraphs if they exist right after h1
+        $body('.subtitle, .meta').remove();
 
-            // Remove first <h1> to avoid duplication with ArticleLayout title
-            bodyContent = bodyContent.replace(/<h1[^>]*>.*?<\/h1>/, '');
+        // Get the cleaned HTML
+        bodyContent = $body.html() || '';
 
-            // Remove subtitle and meta paragraphs if they exist right after h1
-            bodyContent = bodyContent.replace(/<p\s+className="subtitle"[^>]*>.*?<\/p>/i, '');
-            bodyContent = bodyContent.replace(/<p\s+className="meta"[^>]*>.*?<\/p>/i, '');
+        // Convert HTML cleanly to MDX using Turndown
+        const turndownService = new TurndownService({
+            headingStyle: 'atx',
+            codeBlockStyle: 'fenced',
+            emDelimiter: '*'
+        });
 
-            // Convert class to className for JSX
-            bodyContent = bodyContent.replace(/class=/g, 'className=');
+        // Enable GitHub Flavored Markdown (tables, strikethrough, etc.)
+        turndownService.use(gfm);
 
-            // Make HTML void tags JSX-safe for MDX
-            bodyContent = bodyContent.replace(/<br(\s*?)>/gi, '<br />');
-            bodyContent = bodyContent.replace(/<hr(\s*?)>/gi, '<hr />');
-            bodyContent = bodyContent.replace(/<img([^>]*?)(?<!\/)\s*>/gi, '<img$1 />');
-            bodyContent = bodyContent.replace(/<input([^>]*?)(?<!\/)\s*>/gi, '<input$1 />');
-            bodyContent = bodyContent.replace(/<meta([^>]*?)(?<!\/)\s*>/gi, '<meta$1 />');
-            bodyContent = bodyContent.replace(/<link([^>]*?)(?<!\/)\s*>/gi, '<link$1 />');
+        // Custom rule to retain/convert mermaid diagrams
+        turndownService.addRule('mermaid', {
+            filter: function (node, options) {
+                return (
+                    (node.nodeName === 'PRE' || node.nodeName === 'DIV') &&
+                    ((node.classList && node.classList.contains('mermaid')) ||
+                        (node.className && typeof node.className === 'string' && node.className.includes('mermaid')))
+                );
+            },
+            replacement: function (content, node) {
+                // If it contains a code tag, unwrap it. Sometimes <pre><code class="mermaid">...
+                let cleanCode = node.textContent || '';
+                cleanCode = cleanCode.replace(/<[^>]*>/g, '').trim();
+                return '\n\n```mermaid\n' + cleanCode + '\n```\n\n';
+            }
+        });
 
-            // Remove empty table header/data cells that can break MDX JSX parsing
-            bodyContent = bodyContent.replace(/<th>\s*<\/th>/gi, '');
-            bodyContent = bodyContent.replace(/<td>\s*<\/td>/gi, '');
-
-            // Clean up excessive whitespace
-            bodyContent = bodyContent.replace(/\n\s*\n\s*\n/g, '\n\n');
-        }
-
-        // Process Mermaid diagrams
-        // Convert HTML <pre class="mermaid"> or <div class="mermaid"> blocks to fenced code blocks.
-        // We use a general regex to catch various patterns before MDX conversion.
-        if (bodyContent) {
-            const mermaidRegex = /<(pre|div)[^>]*class(?:Name)?=["']mermaid["'][^>]*>([\s\S]*?)<\/\1>/gi;
-            bodyContent = bodyContent.replace(mermaidRegex, (_, tag, mermaidCode) => {
-                // Remove internal HTML tags if any (sometimes mermaid is wrapped in <code>)
-                const cleanCode = mermaidCode.replace(/<[^>]*>/g, '').trim();
-                return `\n\n\`\`\`mermaid\n${cleanCode}\n\`\`\`\n\n`;
-            });
-        }
+        // Convert body content to Markdown
+        let markdownContent = turndownService.turndown(bodyContent);
 
         const prefix = path.basename(filePath, path.extname(filePath));
-        const processedContent = await this.mermaidProcessor.process(bodyContent, { prefix });
+
+        // Process Mermaid diagrams explicitly using our mermaid processor if needed
+        const processedContent = await this.mermaidProcessor.process(markdownContent, { prefix });
 
         return {
             type: 'html',
@@ -884,9 +880,9 @@ ${chapters.map((ch, i) => {
         ];
 
         const allItems = await globby(bookPatterns, { expandDirectories: false });
-        const uniqueItems = [...new Set(allItems)].filter(i => 
-            !i.includes('.content-cache') && 
-            !i.includes('/Archive/') && 
+        const uniqueItems = [...new Set(allItems)].filter(i =>
+            !i.includes('.content-cache') &&
+            !i.includes('/Archive/') &&
             !i.startsWith('Archive/')
         );
 
