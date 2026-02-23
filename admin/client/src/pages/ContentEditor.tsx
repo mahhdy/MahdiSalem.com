@@ -24,6 +24,10 @@ export default function ContentEditor() {
     const [frontmatter, setFrontmatter] = useState<Record<string, unknown>>({});
     const [message, setMessage] = useState('');
     const [showDelete, setShowDelete] = useState(false);
+    
+    // Custom field state
+    const [newCustomKey, setNewCustomKey] = useState('');
+    const [newCustomVal, setNewCustomVal] = useState('');
 
     // Image Picker State
     const [showPicker, setShowPicker] = useState(false);
@@ -193,6 +197,8 @@ export default function ContentEditor() {
     }
 
     const fields = getFieldsForCollection(collection);
+    const standardKeys = new Set(fields.map(f => f.key));
+    const customKeys = Object.keys(frontmatter).filter(k => !standardKeys.has(k) && k !== 'layout');
 
     return (
         <div>
@@ -315,7 +321,7 @@ export default function ContentEditor() {
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
                     gap: 16,
-                    marginBottom: 32,
+                    marginBottom: 24,
                 }}
             >
                 {fields.map((field) => (
@@ -327,6 +333,83 @@ export default function ContentEditor() {
                         onOpenPicker={() => openPicker(field.key)}
                     />
                 ))}
+
+                {/* Custom Fields */}
+                {customKeys.map(key => {
+                    const val = frontmatter[key];
+                    let valStr = '';
+                    if (val !== undefined && val !== null) {
+                        valStr = typeof val === 'object' ? JSON.stringify(val) : String(val);
+                    }
+                    
+                    return (
+                        <div key={key}>
+                            <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.72rem', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: 600, marginBottom: 6 }}>
+                                <span>{key} <i style={{ textTransform: 'none', fontWeight: 400, opacity: 0.7 }}>(custom)</i></span>
+                                <button
+                                    onClick={() => {
+                                        const newFm = { ...frontmatter };
+                                        delete newFm[key];
+                                        setFrontmatter(newFm);
+                                    }}
+                                    style={{ background: 'none', border: 'none', color: 'var(--danger)', cursor: 'pointer', padding: 0 }}
+                                    title="Delete field"
+                                >
+                                    ✕
+                                </button>
+                            </label>
+                            <input
+                                type="text"
+                                style={{
+                                    width: '100%', background: 'var(--bg-input)', border: '1px solid var(--border)', borderRadius: 'var(--radius-md)',
+                                    color: 'var(--text-primary)', padding: '8px 14px', fontSize: '0.85rem', outline: 'none'
+                                }}
+                                value={valStr}
+                                onChange={(e) => {
+                                    let newVal: any = e.target.value;
+                                    try { 
+                                        if (newVal === 'true') newVal = true;
+                                        else if (newVal === 'false') newVal = false;
+                                        else if (!isNaN(Number(newVal)) && newVal.trim() !== '') newVal = Number(newVal);
+                                        else newVal = JSON.parse(newVal); 
+                                    } catch { /* keep as string if not JSON parsable */ }
+                                    updateField(key, newVal);
+                                }}
+                            />
+                        </div>
+                    );
+                })}
+            </div>
+
+            {/* Add Custom Field */}
+            <div style={{ marginBottom: 32, background: 'var(--bg-card)', padding: '16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', display: 'flex', gap: 12, alignItems: 'flex-end', flexWrap: 'wrap' }}>
+                <div style={{ flex: '1 1 200px' }}>
+                    <label style={{ display: 'block', fontSize: '0.72rem', color: 'var(--text-muted)', marginBottom: 4, fontWeight: 600 }}>ADD NEW FIELD</label>
+                    <input type="text" className="filter-input" style={{ width: '100%' }} value={newCustomKey} onChange={e => setNewCustomKey(e.target.value)} placeholder="Field key (e.g. featured)" />
+                </div>
+                <div style={{ flex: '2 1 300px' }}>
+                    <label style={{ display: 'block', fontSize: '0.72rem', color: 'transparent', marginBottom: 4 }}>Value</label>
+                    <input type="text" className="filter-input" style={{ width: '100%' }} value={newCustomVal} onChange={e => setNewCustomVal(e.target.value)} placeholder="Field value..." onKeyDown={e => {
+                        if (e.key === 'Enter') document.getElementById('add-field-btn')?.click();
+                    }} />
+                </div>
+                <button id="add-field-btn" className="btn btn-secondary" onClick={() => {
+                    const key = newCustomKey.trim();
+                    if (!key) return;
+                    let parsedVal: any = newCustomVal;
+                    if (newCustomVal === 'true') parsedVal = true;
+                    else if (newCustomVal === 'false') parsedVal = false;
+                    else if (!isNaN(Number(newCustomVal)) && newCustomVal.trim() !== '') parsedVal = Number(newCustomVal);
+                    else {
+                        try { parsedVal = JSON.parse(newCustomVal); } catch {}
+                    }
+                    
+                    updateField(key, parsedVal);
+                    setNewCustomKey('');
+                    setNewCustomVal('');
+                }}>
+                    + Add Field
+                </button>
             </div>
 
             {/* Body Editor */}

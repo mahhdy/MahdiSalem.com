@@ -194,23 +194,24 @@ export default function ContentBrowser() {
 
             {/* Batch Editor Panel */}
             {editorOpen && (
-                <div style={{ background: '#f8f9fa', padding: '1rem', borderRadius: 8, marginBottom: '1rem', border: '1px solid #ddd' }}>
-                    <h3 style={{ margin: '0 0 1rem 0', display: 'flex', alignItems: 'center', gap: 8 }}>
+                <div style={{ background: 'var(--bg-card)', padding: '1rem', borderRadius: 8, marginBottom: '1rem', border: '1px solid var(--border)' }}>
+                    <h3 style={{ margin: '0 0 1rem 0', display: 'flex', alignItems: 'center', gap: 8, color: 'var(--text-primary)' }}>
                         🛠 Batch Frontmatter Editor
-                        <span style={{ fontSize: '0.8rem', background: '#e0e0e0', padding: '2px 8px', borderRadius: 12, fontWeight: 'normal' }}>
+                        <span style={{ fontSize: '0.8rem', background: 'var(--bg-primary)', padding: '2px 8px', borderRadius: 12, fontWeight: 'normal', color: 'var(--text-muted)' }}>
                             {selectedDocs.size} docs selected
                         </span>
                     </h3>
 
                     <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'flex-end' }}>
                         <div>
-                            <label style={{ display: 'block', fontSize: '0.9rem', marginBottom: 4, fontWeight: 500 }}>Field Name</label>
+                            <label style={{ display: 'block', fontSize: '0.9rem', marginBottom: 4, fontWeight: 500, color: 'var(--text-secondary)' }}>Field Name</label>
                             <input
                                 list="common-fields"
                                 value={targetField}
                                 onChange={e => setTargetField(e.target.value)}
                                 placeholder="e.g. tags, draft"
-                                style={{ padding: '6px 12px', border: '1px solid #ccc', borderRadius: 4, width: 200 }}
+                                className="filter-input"
+                                style={{ width: 200 }}
                             />
                             <datalist id="common-fields">
                                 {commonFields.map(f => <option key={f} value={f} />)}
@@ -221,11 +222,11 @@ export default function ContentBrowser() {
                             <>
                                 {isArrayField && (
                                     <div>
-                                        <label style={{ display: 'block', fontSize: '0.9rem', marginBottom: 4, fontWeight: 500 }}>Operation</label>
+                                        <label style={{ display: 'block', fontSize: '0.9rem', marginBottom: 4, fontWeight: 500, color: 'var(--text-secondary)' }}>Operation</label>
                                         <select 
                                             value={arrayMode} 
                                             onChange={e => setArrayMode(e.target.value as any)}
-                                            style={{ padding: '6px 12px', border: '1px solid #ccc', borderRadius: 4 }}
+                                            className="filter-select"
                                         >
                                             <option value="merge">Add / Merge</option>
                                             <option value="remove">Remove</option>
@@ -235,12 +236,12 @@ export default function ContentBrowser() {
                                 )}
 
                                 <div>
-                                    <label style={{ display: 'block', fontSize: '0.9rem', marginBottom: 4, fontWeight: 500 }}>Value</label>
+                                    <label style={{ display: 'block', fontSize: '0.9rem', marginBottom: 4, fontWeight: 500, color: 'var(--text-secondary)' }}>Value</label>
                                     {isBoolField ? (
                                         <select 
                                             value={batchBool === null ? 'mixed' : batchBool ? 'true' : 'false'}
                                             onChange={e => setBatchBool(e.target.value === 'mixed' ? null : e.target.value === 'true')}
-                                            style={{ padding: '6px 12px', border: '1px solid #ccc', borderRadius: 4 }}
+                                            className="filter-select"
                                         >
                                             <option value="mixed" disabled>--- Mixed Values ---</option>
                                             <option value="true">True</option>
@@ -252,7 +253,8 @@ export default function ContentBrowser() {
                                             value={batchValue}
                                             onChange={e => setBatchValue(e.target.value)}
                                             placeholder={isArrayField ? "comma, separated, tags" : "Enter value..."}
-                                            style={{ padding: '6px 12px', border: '1px solid #ccc', borderRadius: 4, width: 250 }}
+                                            className="filter-input"
+                                            style={{ width: 250 }}
                                         />
                                     )}
                                 </div>
@@ -260,7 +262,7 @@ export default function ContentBrowser() {
                                 <button 
                                     className="btn btn-primary" 
                                     onClick={handleBatchUpdate}
-                                    style={{ height: '32px', marginBottom: '2px' }}
+                                    style={{ height: '36px', marginBottom: '2px' }}
                                     disabled={selectedDocs.size === 0}
                                 >
                                     Apply to Selected ({selectedDocs.size})
@@ -268,13 +270,13 @@ export default function ContentBrowser() {
                             </>
                         )}
                         {PROTECTED_FIELDS.includes(targetField) && (
-                            <div style={{ color: 'red', fontSize: '0.9rem', marginBottom: 6 }}>
+                            <div style={{ color: 'var(--danger)', fontSize: '0.9rem', marginBottom: 6 }}>
                                 ⚠️ Cannot edit protected field "{targetField}"
                             </div>
                         )}
                     </div>
                     {batchMsg.text && (
-                        <div style={{ marginTop: '1rem', color: batchMsg.type === 'error' ? '#cc0000' : '#008800', fontWeight: 500 }}>
+                        <div style={{ marginTop: '1rem', color: batchMsg.type === 'error' ? 'var(--danger)' : 'var(--success)', fontWeight: 500 }}>
                             {batchMsg.text}
                         </div>
                     )}

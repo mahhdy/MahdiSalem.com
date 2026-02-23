@@ -1,27 +1,23 @@
 ---
-title: راست یا چپ؛ میانه کجاست؟
-description: >-
-  تحلیل تطبیقی دو سنت بزرگ فکری مدرن: چپ و راست، با تمرکز بر آرمان‌شهرها،
-  دغدغه‌ها، نظریه‌پردازان و پیامدهای عملی
-lang: fa
-publishDate: '2026-02-18'
-author: مهدی سالم
-sourceType: html
-category: سیاسی، فلسفی، اجتماعی
+title: "راست یا چپ؛ میانه کجاست؟"
+description: "تحلیل تطبیقی دو سنت بزرگ فکری مدرن: چپ و راست، با تمرکز بر آرمان‌شهرها، دغدغه‌ها، نظریه‌پردازان و پیامدهای عملی"
+lang: "fa"
+publishDate: "2026-02-18"
+author: "مهدی سالم"
+sourceType: "html"
+category: "سیاسی، فلسفی، اجتماعی"
 keywords:
   - راست"
-  - چپ
+  - "چپ"
   - محافظه‌کاری
   - پیشرفت‌گرایی
   - میانه‌طلبی
 readingTime: 40
-difficulty: متوسط
+difficulty: "متوسط"
 show-header: true
-interface: descriptive-politics
+interface: "descriptive-politics"
 hidden: false
 showInContents: true
-categories:
-  - ایدئولوژی‌های سیاسی، ایدئولوژی، گرایش سیاسی
 ---
   
   <p className="subtitle">
