@@ -75,7 +75,7 @@ export default function ContentEditor() {
         setMessage('✅ AI suggestions applied (not saved yet).');
     };
 
-    const isDevelopment = import.meta.env.MODE === 'development';
+    const isDevelopment = (import.meta as any).env.MODE === 'development';
 
     const loadContent = useCallback(() => {
         if (!collection || !fullSlug) return;

@@ -7,9 +7,7 @@ const navItems = [
     { path: '/content', label: 'Content Browser', icon: '📝' },
     { path: '/categories', label: 'Categories', icon: '🏷️' },
     { path: '/tags', label: 'Tags', icon: '🔖' },
-    { section: 'Visibility' },
-    { path: '/hidden-content', label: 'Hidden Content', icon: '🔒' },
-    { path: '/all-contents', label: 'Contents Page', icon: '📋' },
+
     { section: 'Tools' },
     { path: '/i18n', label: 'Translations', icon: '🌐' },
     { path: '/media', label: 'Media', icon: '🖼️' },

@@ -26,6 +26,7 @@ export interface ContentMeta {
     category?: string | string[];
     tags?: string[];
     interface?: string;
+    frontmatter: Record<string, unknown>;
 }
 
 /**
@@ -61,6 +62,7 @@ export async function scanContentDir(contentDir: string): Promise<ContentMeta[]>
                     category: data.category || data.categories,
                     tags: Array.isArray(data.tags) ? data.tags : [],
                     interface: data.interface,
+                    frontmatter: data,
                 });
             } catch (err) {
                 console.warn(`⚠️  Failed to parse ${filePath}:`, (err as Error).message);
