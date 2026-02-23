@@ -68,7 +68,7 @@ keywords:
 
 ```mermaid
 mindmap
-  root((دولت، ملت و تنوع قومی))
+  root("(دولت، ملت و تنوع قومی"))
     مبانی نظری
       تعریف دولت
       تعریف ملت
@@ -109,11 +109,11 @@ mindmap
 
 ```mermaid
 graph TD
-    S[🏛️ دولت مدرن State] --> T[📍 قلمرو مشخص Territory]
-    S --> P[👥 جمعیت دائمی Population]
-    S --> G[⚙️ حکومت Government]
-    S --> V[👑 حاکمیت Sovereignty]
-    
+    S["🏛️ دولت مدرن State"] --> T["📍 قلمرو مشخص Territory"]
+    S --> P["👥 جمعیت دائمی Population"]
+    S --> G["⚙️ حکومت Government"]
+    S --> V["👑 حاکمیت Sovereignty"]
+
     style S fill:#1B2A4A,color:#fff,stroke:#D4A84B,stroke-width:3px
     style T fill:#EDF4FB,stroke:#2C5F8A,stroke-width:2px
     style P fill:#EDF4FB,stroke:#2C5F8A,stroke-width:2px
@@ -175,12 +175,12 @@ graph TD
 
 ```mermaid
 graph LR
-    A[⚔️ جنگ و رقابت نظامی] --> B[💰 نظام مالیاتی گسترده‌تر]
-    B --> C[📋 بوروکراسی حرفه‌ای]
-    C --> D[🎖️ ارتش دائمی بزرگ‌تر]
-    D --> E[🏛️ دولت مدرن متمرکز]
-    E -.->|بازخورد| A
-    
+    A["⚔️ جنگ و رقابت نظامی"] --> B["💰 نظام مالیاتی گسترده‌تر"]
+    B --> C["📋 بوروکراسی حرفه‌ای"]
+    C --> D["🎖️ ارتش دائمی بزرگ‌تر"]
+    D --> E["🏛️ دولت مدرن متمرکز"]
+    E -.->|"بازخورد"| A
+
     style A fill:#C0392B,color:#fff,stroke:#922B21,stroke-width:2px
     style B fill:#E8913A,color:#fff,stroke:#CA7A2E,stroke-width:2px
     style C fill:#D4A84B,color:#1B2A4A,stroke:#B8912F,stroke-width:2px
@@ -231,7 +231,7 @@ graph LR
     D --> E["🏠 خودمختاری سرزمینی"]
     E --> F["🏗️ فدرالیسم قومی"]
     F --> G["🔗 کنفدراسیون"]
-    
+
     style A fill:#C0392B,color:#fff
     style B fill:#E8913A,color:#fff
     style C fill:#D4A84B,color:#1B2A4A
@@ -266,14 +266,14 @@ graph TD
     R --> P2["🛡️ حق وتو متقابل"]
     R --> P3["⚖️ تناسب در نمایندگی"]
     R --> P4["🏠 خودمختاری بخش‌ها"]
-    
+
     B["جامعه‌ی چندپاره"]
-    
+
     P1 --> B
     P2 --> B
     P3 --> B
     P4 --> B
-    
+
     style R fill:#D4A84B,color:#1B2A4A,stroke:#B8912F,stroke-width:3px
     style B fill:#1B2A4A,color:#fff,stroke:#D4A84B,stroke-width:2px
     style P1 fill:#EDF4FB,stroke:#2C5F8A,stroke-width:2px
@@ -308,7 +308,7 @@ graph LR
     B --> C["🟡 دولت منطقه‌ای‌شده"]
     C --> D["🟢 فدراسیون"]
     D --> E["🔵 کنفدراسیون / اتحادیه"]
-    
+
     style A fill:#C0392B,color:#fff
     style B fill:#E8913A,color:#fff
     style C fill:#D4A84B,color:#1B2A4A
@@ -412,11 +412,11 @@ graph LR
 graph TD
     F["🏛️ حکومت فدرال دهلی نو"] -->|"فهرست مشترک + ایالتی"| S["🏢 ایالت‌ها 28 ایالت + 8 ق.ا."]
     S -->|"اصلاحیه‌های ۷۳ و ۷۴"| L["🏘️ حکومت‌های محلی"]
-    
+
     F ---|"حل اختلاف"| SC["⚖️ دادگاه عالی"]
     S ---|"نظارت"| COM["📊 کمیسیون‌های زبانی"]
     S ---|"منصوب مرکز"| GOV["👤 فرمانداران"]
-    
+
     style F fill:#1B2A4A,color:#fff,stroke:#D4A84B,stroke-width:2px
     style S fill:#2C5F8A,color:#fff,stroke:#5B9BD5,stroke-width:2px
     style L fill:#3A7D44,color:#fff,stroke:#4CAF50,stroke-width:2px
@@ -520,18 +520,18 @@ graph TD
         CC["⚖️ دادگاه قانون اساسی"]
         CAB["📋 هیئت دولت فدرال"]
     end
-    
+
     subgraph "سطح منطقه‌ای"
         RGOV["👤 فرماندار منتخب"]
         RPARL["🏛️ مجلس قانون‌گذاری منطقه‌ای"]
         RCOURT["⚖️ دادگستری منطقه‌ای"]
     end
-    
+
     subgraph "سطح محلی"
         CITY["🏘️ شهرداری‌ها و شوراها"]
         VILLAGE["🌾 دهیاری‌ها و شوراهای روستا"]
     end
-    
+
     PRES --> CAB
     M1 --> CC
     M2 --> CC
@@ -540,7 +540,7 @@ graph TD
     CC -.-> RCOURT
     RGOV -.-> CITY
     RPARL -.-> VILLAGE
-    
+
     style PRES fill:#1B2A4A,color:#fff,stroke:#D4A84B,stroke-width:2px
     style M1 fill:#1B2A4A,color:#fff,stroke:#D4A84B,stroke-width:2px
     style M2 fill:#1B2A4A,color:#fff,stroke:#D4A84B,stroke-width:2px
@@ -572,24 +572,24 @@ graph TD
 graph TD
     REV["💰 درآمدهای ملّی نفت و گمرک و مالیات فدرال"]
     POOL["🏦 صندوق توزیع ملّی"]
-    
+
     FED["🏛️ بودجه‌ی فدرال 50 درصد"]
     REG["🗺️ سهم مناطق 35 درصد بر اساس فرمول"]
     EQ["⚖️ صندوق تعدیل 15 درصد"]
-    
+
     FORM["📊 فرمول = جمعیت و وسعت و شاخص محرومیت و درآمد سرانه"]
     TARGET["🎯 تخصیص ویژه: سیستان و کردستان و خوزستان"]
-    
+
     OWN["💵 درآمدهای اختصاصی منطقه‌ای"]
-    
+
     REV --> POOL
     POOL --> FED
     POOL --> REG
     POOL --> EQ
     REG -.-> FORM
     EQ -.-> TARGET
-    OWN -.->|مکمل| REG
-    
+    OWN -.->|"مکمل"| REG
+
     style REV fill:#1B2A4A,color:#fff,stroke:#D4A84B,stroke-width:2px
     style POOL fill:#D4A84B,color:#1B2A4A,stroke:#B8912F,stroke-width:2px
     style FED fill:#2C5F8A,color:#fff

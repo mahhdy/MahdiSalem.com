@@ -9,33 +9,33 @@ import { visit } from 'unist-util-visit';
 // ─────────────────────────────────────────────────────────────
 
 function toEnglishDigits(str) {
-    return str.replace(/[۰-۹]/g, function(d) {
+    return str.replace(/[۰-۹]/g, function (d) {
         return String(d.codePointAt(0) - '۰'.codePointAt(0));
     });
 }
 
 // CLASS D: Convert Farsi duration strings to Mermaid-compatible day counts.
 function convertFarsiDurations(text) {
-    return text.replace(/([۰-۹0-9]+)\s*(ماه|هفته|روز|سال)/g, function(match, num, unit) {
+    return text.replace(/([۰-۹0-9]+)\s*(ماه|هفته|روز|سال)/g, function (match, num, unit) {
         const n = parseInt(toEnglishDigits(num), 10);
-        if (unit === 'سال')  return n * 365 + 'd';
-        if (unit === 'ماه')  return n * 30 + 'd';
+        if (unit === 'سال') return n * 365 + 'd';
+        if (unit === 'ماه') return n * 30 + 'd';
         if (unit === 'هفته') return n * 7 + 'd';
-        if (unit === 'روز')  return n + 'd';
+        if (unit === 'روز') return n + 'd';
         return match;
     });
 }
 
 function detectDiagramType(code) {
-    var firstLine = code.trim().split('\n').find(function(l) { return l.trim(); }) || '';
+    var firstLine = code.trim().split('\n').find(function (l) { return l.trim(); }) || '';
     var fl = firstLine.trim().toLowerCase();
-    if (fl.startsWith('gantt'))     return 'gantt';
+    if (fl.startsWith('gantt')) return 'gantt';
     if (fl.startsWith('flowchart')) return 'flowchart';
-    if (fl.startsWith('graph'))     return 'graph';
-    if (fl.startsWith('sequence'))  return 'sequence';
-    if (fl.startsWith('pie'))       return 'pie';
-    if (fl.startsWith('timeline'))  return 'timeline';
-    if (fl.startsWith('mindmap'))   return 'mindmap';
+    if (fl.startsWith('graph')) return 'graph';
+    if (fl.startsWith('sequence')) return 'sequence';
+    if (fl.startsWith('pie')) return 'pie';
+    if (fl.startsWith('timeline')) return 'timeline';
+    if (fl.startsWith('mindmap')) return 'mindmap';
     if (fl.startsWith('classdiagram') || fl.startsWith('classDiagram')) return 'class';
     return 'unknown';
 }
@@ -48,13 +48,13 @@ function detectDiagramType(code) {
 function fixMalformedNodeSyntax(code) {
     // Pattern: arrow + quote + NodeId + ["label""]
     code = code.replace(/(-->|-\.->|===>?|~~~)\s*"([A-Za-z][A-Za-z0-9]*)\["([^"]+)""\]/g,
-        function(_, arrow, nodeId, label) {
+        function (_, arrow, nodeId, label) {
             return arrow + ' ' + nodeId + '["' + label + '"]';
         }
     );
     // Simpler form: -->"B[" -> --> B["
     code = code.replace(/(-->|===>?)\s*"([A-Za-z]\d*)\["/g,
-        function(_, arrow, nodeId) {
+        function (_, arrow, nodeId) {
             return arrow + ' ' + nodeId + '["';
         }
     );
@@ -70,14 +70,14 @@ function fixTimelineTypo(code) {
 
 // CLASS F: Fix nested/unmatched quotes in pie title.
 function fixPieTitleQuotes(code) {
-    return code.replace(/^(pie\s+title\s+)"(.+?)\("(.+?)"\)"?\s*$/gm, function(match, prefix, main, sub) {
+    return code.replace(/^(pie\s+title\s+)"(.+?)\("(.+?)"\)"?\s*$/gm, function (match, prefix, main, sub) {
         return prefix + '"' + main + ' - ' + sub + '"';
     });
 }
 
 // CLASS G: Auto-quote unquoted Farsi subgraph labels.
 function fixSubgraphLabels(code) {
-    return code.replace(/^(\s*subgraph\s+)([^"\n]+[\u0600-\u06FF][^"\n]*)$/gm, function(match, prefix, label) {
+    return code.replace(/^(\s*subgraph\s+)([^"\n]+[\u0600-\u06FF][^"\n]*)$/gm, function (match, prefix, label) {
         var trimmed = label.trim();
         if (trimmed.charAt(0) === '"') return match;
         return prefix + '"' + trimmed + '"';
@@ -105,15 +105,15 @@ function autoQuoteFarsiNodes(code) {
     // Only touch nodes that contain Farsi and aren't already quoted
     // Process line by line to be safe
     var lines = code.split('\n');
-    var result = lines.map(function(line) {
+    var result = lines.map(function (line) {
         // Match node definition: letters+digits + open bracket + content + close bracket
         // But only if content has Farsi and is not already quoted
-        return line.replace(/([A-Za-z]\d*)(\[)([^\]"]+)(])/g, function(m, id, open, text, close) {
+        return line.replace(/([A-Za-z]\d*)(\[)([^\]"]+)(])/g, function (m, id, open, text, close) {
             var t = text.trim();
             if (!t || t.charAt(0) === '"') return m;
             if (/[\u0600-\u06FF]/.test(t)) return id + open + '"' + t + '"' + close;
             return m;
-        }).replace(/([A-Za-z]\d*)(\()([^)"]+)(\))/g, function(m, id, open, text, close) {
+        }).replace(/([A-Za-z]\d*)(\()([^)"]+)(\))/g, function (m, id, open, text, close) {
             // Skip double-paren (( which is already handled or mindmap
             var t = text.trim();
             if (!t || t.charAt(0) === '"') return m;
@@ -124,7 +124,7 @@ function autoQuoteFarsiNodes(code) {
     code = result.join('\n');
 
     // Step 2: quote Farsi edge labels |text|
-    code = code.replace(/\|([^|"]+)\|/g, function(m, text) {
+    code = code.replace(/\|([^|"]+)\|/g, function (m, text) {
         var t = text.trim();
         if (!t || t.charAt(0) === '"' || !/[\u0600-\u06FF]/.test(t)) return m;
         return '|"' + t + '"|';
@@ -139,7 +139,7 @@ function fixGanttAxes(code) {
     // Add day to dates missing it: 2025-01 -> 2025-01-01
     code = code.replace(/\b(\d{4}-\d{2})(?!-\d{2})\b/g, '$1-01');
     // Convert Farsi digits
-    code = code.replace(/[۰-۹]/g, function(d) { return toEnglishDigits(d); });
+    code = code.replace(/[۰-۹]/g, function (d) { return toEnglishDigits(d); });
     return code;
 }
 
@@ -148,8 +148,8 @@ function fixGanttAxes(code) {
 // ─────────────────────────────────────────────────────────────
 
 export function remarkMermaid() {
-    return function(tree) {
-        visit(tree, 'code', function(node, index, parent) {
+    return function (tree) {
+        visit(tree, 'code', function (node, index, parent) {
             if (node.lang !== 'mermaid') return;
 
             var code = node.value;
@@ -216,6 +216,15 @@ export function remarkMermaid() {
 
             var styleAttr = ' style="' + wrapperStyles.join('; ') + '"';
             var expanded = meta.includes('expanded') ? 'true' : 'false';
+
+            // Auto-collapse large/complex types by default if not specified
+            if (!meta.includes('expanded') && !meta.includes('collapsed')) {
+                if (diagramType === 'gantt' || diagramType === 'timeline' || diagramType === 'mindmap') {
+                    expanded = 'false';
+                }
+            }
+            if (meta.includes('collapsed')) expanded = 'false';
+
             var collapseClass = expanded === 'false' ? ' is-collapsed' : '';
             var classes = 'mermaid-wrapper' + collapseClass + ' mermaid-type-' + diagramType;
 

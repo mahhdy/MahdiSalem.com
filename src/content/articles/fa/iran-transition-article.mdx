@@ -59,7 +59,7 @@ graph LR
     B --> C["مشارکت"]
     C --> D["انتقال"]
     D --> A
-    
+
     style A fill:#003d6e,stroke:#333,color:white
     style B fill:#0066a2,stroke:#333,color:white
     style C fill:#008000,stroke:#333,color:white
@@ -78,7 +78,7 @@ graph TD
     A --> C["مجلس مؤسسان"]
     B --> D["انتخاب آزاد"]
     C --> D
-    
+
     style A fill:#003d6e,stroke:#333,color:white
     style B fill:#008000,stroke:#333,color:white
     style C fill:#ffd700,stroke:#333,color:#333
@@ -102,17 +102,17 @@ graph TD
 ```mermaid
 gantt
     title نقشه راه گذار دموکراتیک ایران
-    dateFormat  YYYY-MM
+    dateFormat  YYYY-MM-DD
     axisFormat  %Y-%m
-    فاز 1: آمادگی         :active,    des1, 2025-01-01, 90d
+    فاز 1 (آمادگی)         :active,    des1, 2025-01-01, 90d
     مذاکرات محرمانه       :          des2, 2025-01-01, 60d
     ایجاد شورای انتقالی  :          des3, 2025-03-01, 30d
-    
-    فاز 2: انتقال         :          des4, 2025-04-01, 180d
+
+    فاز 2 (انتقال)         :          des4, 2025-04-01, 180d
     تدوین قانون اساسی     :          des5, 2025-04-01, 120d
     رفراندوم              :          des6, 2025-08-01, 30d
-    
-    فاز 3: تثبیت         :          des7, 2025-09-01, 180d
+
+    فاز 3 (تثبیت)         :          des7, 2025-09-01, 180d
     برگزاری انتخاب       :          des8, 2025-09-01, 60d
     انتقال قدرت          :          des9, 2025-11-01, 30d
 ```
@@ -139,18 +139,18 @@ graph TD
     subgraph "حلقه هسته‌ای"
     A["رهبران سیاسی"]
     end
-    
+
     subgraph "حلقه میانی"
     B["احزاب و سازمان‌های مدنی"]
     end
-    
+
     subgraph "حلقه بیرونی"
     C["مردم و شهروندان"]
     end
-    
+
     A --> B
     B --> C
-    
+
     style A fill:#003d6e,stroke:#333,color:white
     style B fill:#0066a2,stroke:#333,color:white
     style C fill:#008000,stroke:#333,color:white
@@ -177,16 +177,16 @@ flowchart LR
     B -->|"کم"| C["گفتگوی مستقیم"]
     B -->|"متوسط"| D["میانجیگری"]
     B -->|"بالا"| E["شورای عالی"]
-    
+
     C --> F["توافق"]
     D --> F
     E --> F
-    
+
     F --> G["اجرا"]
     G --> H{موفق؟}
     H -->|"بله"| I["پایان"]
     H -->|"خیر"| A
-    
+
     style A fill:#ff6b6b,stroke:#333,color:white
     style F fill:#51cf66,stroke:#333,color:white
     style I fill:#339af0,stroke:#333,color:white
@@ -231,12 +231,12 @@ graph LR
     A --> C["اتحادیه اروپا"]
     A --> D["کشورهای همسایه"]
     A --> E["کارشناسان مستقل"]
-    
+
     B --> F["گزارش‌دهی شفاف"]
     C --> F
     D --> F
     E --> F
-    
+
     style A fill:#003d6e,stroke:#333,color:white
     style F fill:#008000,stroke:#333,color:white
 ```
@@ -288,7 +288,7 @@ graph TD
     A --> C["مشارکت در بحث‌ها"]
     A --> D["نظارت بر نامزدها"]
     A --> E["گزارش تخلفات"]
-    
+
     style A fill:#003d6e,stroke:#333,color:white
     style B fill:#0066a2,stroke:#333,color:white
     style C fill:#0066a2,stroke:#333,color:white
@@ -325,24 +325,23 @@ graph TD
 
 ### ۹.۲ درخت تصمیم‌گیری
 
-```mermaid
+```mermaid align="center"
 flowchart TD
-    A["شروع"] --> B{وضعیت؟}
+    A["شروع"] --> B{"وضعیت؟"}
     B -->|"موافق"| C["ادامه برنامه"]
-    B -->|"مقاومت"| D{شدت؟}
+    B -->|"مقاومت"| D{"شدت؟"}
     D -->|"کم"| E["مذاکره"]
     D -->|"زیاد"| F["میانجیگری"]
     E --> G["توافق"]
-    F --> H{موفق؟}
+    F --> H{"موفق؟"}
     H -->|"بله"| G
     H -->|"خیر"| I["تغییر برنامه"]
     G --> C
     I --> C
-    
+
     style A fill:#003d6e,stroke:#333,color:white
     style C fill:#51cf66,stroke:#333,color:white
 ```
-
 ---
 
 ## ۱۰. نتیجه‌گیری
@@ -355,7 +354,7 @@ graph LR
     B -.-> C["مشارکت"]
     C -.-> D["نظارت"]
     D -.-> E["انعطاف‌پذیری"]
-    
+
     style A fill:#003d6e,stroke:#333,color:white
     style B fill:#0066a2,stroke:#333,color:white
     style C fill:#008000,stroke:#333,color:white

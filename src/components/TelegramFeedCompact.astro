@@ -4,8 +4,8 @@
  * Controlled via siteConfig.telegramView = 'compact'.
  * Shows a brief card per post and links to the full /social page and Telegram channel.
  */
-import { t } from '../i18n';
-import type { Locale } from '../i18n';
+import { t } from "../i18n";
+import type { Locale } from "../i18n";
 
 interface Props {
   lang: Locale;
@@ -14,9 +14,11 @@ interface Props {
 
 const { lang, limit = 6 } = Astro.props;
 
-const workerUrl = import.meta.env.PUBLIC_TELEGRAM_WORKER_URL || 'https://telegram-feed.mahhdy.workers.dev';
-const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || '@mahhdy57';
-const channelHandle = channelUsername.replace('@', '');
+const workerUrl =
+  import.meta.env.PUBLIC_TELEGRAM_WORKER_URL ||
+  "https://telegram-feed.mahhdy.workers.dev";
+const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || "@mahhdy57";
+const channelHandle = channelUsername.replace("@", "");
 ---
 
 <div
@@ -24,36 +26,58 @@ const channelHandle = channelUsername.replace('@', '');
   data-worker-url={workerUrl}
   data-limit={limit}
   data-lang={lang}
-  dir={lang === 'fa' ? 'rtl' : 'ltr'}
+  dir={lang === "fa" ? "rtl" : "ltr"}
 >
   <!-- Header -->
   <div class="flex items-center justify-between mb-6">
     <h2 class="text-2xl font-bold flex items-center gap-3">
-      <svg class="w-7 h-7 text-[#0088cc]" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+      <svg
+        class="w-7 h-7 text-[#0088cc]"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+        ></path>
       </svg>
-      {t('telegram.latest_posts', lang)}
+      {t("telegram.latest_posts", lang)}
     </h2>
     <a
-      href={lang === 'fa' ? '/social' : '/en/social'}
+      href={lang === "fa" ? "/social" : "/en/social"}
       class="text-sm text-primary dark:text-primary-light hover:underline font-medium"
     >
-      {lang === 'fa' ? 'مشاهده همه ↗' : 'View all ↗'}
+      {lang === "fa" ? "مشاهده همه ↗" : "View all ↗"}
     </a>
   </div>
 
   <!-- Loading -->
   <div class="compact-loading flex items-center justify-center py-8">
-    <svg class="animate-spin h-6 w-6 text-primary dark:text-primary-light ml-2" fill="none" viewBox="0 0 24 24">
-      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+    <svg
+      class="animate-spin h-6 w-6 text-primary dark:text-primary-light ml-2"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <circle
+        class="opacity-25"
+        cx="12"
+        cy="12"
+        r="10"
+        stroke="currentColor"
+        stroke-width="4"></circle>
+      <path
+        class="opacity-75"
+        fill="currentColor"
+        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+      ></path>
     </svg>
-    <span class="text-text-muted dark:text-text-dark-muted text-sm">{t('telegram.loading', lang)}</span>
+    <span class="text-text-muted dark:text-text-dark-muted text-sm"
+      >{t("telegram.loading", lang)}</span
+    >
   </div>
 
   <!-- Error -->
   <div class="compact-error hidden text-center py-8 text-red-500 text-sm">
-    {t('telegram.error', lang)}
+    {t("telegram.error", lang)}
   </div>
 
   <!-- 2-column grid of compact cards -->
@@ -64,10 +88,10 @@ const channelHandle = channelUsername.replace('@', '');
   <!-- Footer actions -->
   <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
     <a
-      href={lang === 'fa' ? '/social' : '/en/social'}
+      href={lang === "fa" ? "/social" : "/en/social"}
       class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border-2 border-primary text-primary dark:border-primary-light dark:text-primary-light text-sm font-semibold hover:bg-primary/5 transition-all no-underline"
     >
-      {lang === 'fa' ? 'صفحه شبکه‌های اجتماعی' : 'Social Media Page'}
+      {lang === "fa" ? "صفحه شبکه‌های اجتماعی" : "Social Media Page"}
     </a>
     <a
       href={`https://t.me/${channelHandle}`}
@@ -76,9 +100,11 @@ const channelHandle = channelUsername.replace('@', '');
       class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#0088cc] text-white text-sm font-semibold hover:bg-[#0077b3] transition-all no-underline"
     >
       <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.258 1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+        <path
+          d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.258 1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+        ></path>
       </svg>
-      {t('telegram.view_channel', lang)}
+      {t("telegram.view_channel", lang)}
     </a>
   </div>
 </div>
@@ -93,61 +119,75 @@ const channelHandle = channelUsername.replace('@', '');
     media?: { type: string; url?: string; thumbnail?: string }[];
   }
 
-  document.querySelectorAll('.telegram-compact-feed').forEach(async (container) => {
-    const workerUrl = container.getAttribute('data-worker-url');
-    const limit = parseInt(container.getAttribute('data-limit') || '6');
-    const lang = container.getAttribute('data-lang') as 'fa' | 'en';
+  document
+    .querySelectorAll(".telegram-compact-feed")
+    .forEach(async (container) => {
+      const workerUrl = container.getAttribute("data-worker-url");
+      const limit = parseInt(container.getAttribute("data-limit") || "6");
+      const lang = container.getAttribute("data-lang") as "fa" | "en";
 
-    const loadingEl = container.querySelector('.compact-loading') as HTMLElement;
-    const errorEl = container.querySelector('.compact-error') as HTMLElement;
-    const gridEl = container.querySelector('.compact-grid') as HTMLElement;
+      const loadingEl = container.querySelector(
+        ".compact-loading",
+      ) as HTMLElement;
+      const errorEl = container.querySelector(".compact-error") as HTMLElement;
+      const gridEl = container.querySelector(".compact-grid") as HTMLElement;
 
-    if (!workerUrl) {
-      loadingEl?.classList.add('hidden');
-      errorEl?.classList.remove('hidden');
-      return;
-    }
-
-    try {
-      const res = await fetch(workerUrl);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const posts: TelegramPost[] = await res.json();
-
-      loadingEl?.classList.add('hidden');
-
-      if (!Array.isArray(posts) || posts.length === 0) {
-        errorEl?.classList.remove('hidden');
+      if (!workerUrl) {
+        loadingEl?.classList.add("hidden");
+        errorEl?.classList.remove("hidden");
         return;
       }
 
-      posts.slice(0, limit).forEach(post => {
-        const card = document.createElement('a');
-        card.href = post.link;
-        card.target = '_blank';
-        card.rel = 'noopener noreferrer';
-        card.className = 'compact-card flex flex-col gap-2 p-4 rounded-xl border border-border dark:border-border-dark bg-surface dark:bg-surface-dark hover:border-[#0088cc] hover:shadow-md transition-all no-underline';
-        card.setAttribute('dir', lang === 'fa' ? 'rtl' : 'ltr');
+      try {
+        const res = await fetch(workerUrl);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const posts: TelegramPost[] = await res.json();
 
-        const date = new Intl.DateTimeFormat(lang === 'fa' ? 'fa-IR' : 'en-US', {
-          month: 'short', day: 'numeric',
-        }).format(new Date(post.date * 1000));
+        loadingEl?.classList.add("hidden");
 
-        // Thumbnail
-        const thumb = post.media?.find(m => m.thumbnail || m.url);
-        let thumbHtml = '';
-        if (thumb) {
-          thumbHtml = `<img src="${thumb.thumbnail || thumb.url}" alt="" class="w-full h-28 object-cover rounded-lg mb-2" loading="lazy" />`;
+        if (!Array.isArray(posts) || posts.length === 0) {
+          errorEl?.classList.remove("hidden");
+          return;
         }
 
-        // Text preview (strip HTML tags)
-        const rawText = post.textHtml
-          ? post.textHtml.replace(/<[^>]+>/g, '').trim()
-          : (post.text || '').trim();
-        const preview = rawText.length > 120 ? rawText.slice(0, 120) + '…' : rawText;
+        posts.slice(0, limit).forEach((post) => {
+          const card = document.createElement("a");
+          card.href = post.link;
+          card.target = "_blank";
+          card.rel = "noopener noreferrer";
+          card.className =
+            "compact-card flex flex-col gap-2 p-4 rounded-xl border border-border dark:border-border-dark bg-surface dark:bg-surface-dark hover:border-[#0088cc] hover:shadow-md transition-all no-underline";
+          card.setAttribute("dir", lang === "fa" ? "rtl" : "ltr");
 
-        card.innerHTML = `
+          const date = new Intl.DateTimeFormat(
+            lang === "fa" ? "fa-IR" : "en-US",
+            {
+              month: "short",
+              day: "numeric",
+            },
+          ).format(new Date(post.date * 1000));
+
+          // Thumbnail
+          const thumb = post.media?.find((m) => m.thumbnail || m.url);
+          let thumbHtml = "";
+          if (thumb) {
+            thumbHtml = `<img src="${thumb.thumbnail || thumb.url}" alt="" class="w-full h-28 object-cover rounded-lg mb-2" loading="lazy" />`;
+          }
+
+          // Helper to escape raw text
+          const escapeHtml = (str: string) =>
+            str
+              .replace(/&/g, "&amp;")
+              .replace(/</g, "&lt;")
+              .replace(/>/g, "&gt;");
+
+          // Text content — Prioritize HTML, fallback to escaped text, and normalize line breaks
+          let htmlContent = post.textHtml || escapeHtml(post.text || "");
+          htmlContent = htmlContent.replace(/\n/g, "<br />");
+
+          card.innerHTML = `
           ${thumbHtml}
-          <p class="text-sm text-text-base dark:text-text-dark leading-relaxed flex-1">${preview || '&nbsp;'}</p>
+          <p class="text-sm text-text-base dark:text-text-dark leading-relaxed flex-1 line-clamp-4 whitespace-pre-wrap">${htmlContent || "&nbsp;"}</p>
           <div class="flex items-center justify-between text-xs text-text-muted dark:text-text-dark-muted mt-1">
             <span>${date}</span>
             <span class="flex items-center gap-1">
@@ -157,19 +197,19 @@ const channelHandle = channelUsername.replace('@', '');
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
               </svg>
-              ${post.views.toLocaleString(lang === 'fa' ? 'fa-IR' : 'en-US')}
+              ${post.views.toLocaleString(lang === "fa" ? "fa-IR" : "en-US")}
             </span>
           </div>
         `;
 
-        gridEl?.appendChild(card);
-      });
-    } catch (e) {
-      console.error('Compact Telegram feed error:', e);
-      loadingEl?.classList.add('hidden');
-      errorEl?.classList.remove('hidden');
-    }
-  });
+          gridEl?.appendChild(card);
+        });
+      } catch (e) {
+        console.error("Compact Telegram feed error:", e);
+        loadingEl?.classList.add("hidden");
+        errorEl?.classList.remove("hidden");
+      }
+    });
 </script>
 
 <style>

@@ -13,7 +13,7 @@ export const siteConfig = {
   telegramView: 'compact' as 'full' | 'compact',
 
   /** How many Telegram posts to show on the homepage */
-  telegramHomeLimit: 5,
+  telegramHomeLimit: 6,
 
   /**
    * Social media channel handles / page IDs.
