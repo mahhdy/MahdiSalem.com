@@ -38,6 +38,7 @@ const collectionIcons: Record<string, string> = {
 const quickActions = [
     { label: 'New Article', icon: '📝', to: '/content/articles/new', color: 'hsl(150, 70%, 50%)' },
     { label: 'New Book', icon: '📕', to: '/content/books/new', color: 'hsl(220, 85%, 60%)' },
+    { label: 'Publish Queue', icon: '🚀', to: '/publish-queue', color: 'hsl(0, 75%, 60%)' },
     { label: 'Content Browser', icon: '🔍', to: '/content', color: 'hsl(200, 80%, 60%)' },
     { label: 'Run Scripts', icon: '⚡', to: '/scripts', color: 'hsl(40, 90%, 55%)' },
     { label: 'Media Manager', icon: '🖼️', to: '/media', color: 'hsl(280, 70%, 60%)' },

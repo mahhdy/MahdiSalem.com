@@ -5,6 +5,7 @@ const navItems = [
     { path: '/', label: 'Dashboard', icon: '📊' },
     { section: 'Content' },
     { path: '/content', label: 'Content Browser', icon: '📝' },
+    { path: '/publish-queue', label: 'Publish Queue', icon: '🚀' },
     { path: '/categories', label: 'Categories', icon: '🏷️' },
     { path: '/tags', label: 'Tags', icon: '🔖' },
 

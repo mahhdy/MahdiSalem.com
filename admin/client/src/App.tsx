@@ -10,12 +10,14 @@ import MediaManager from './pages/MediaManager';
 import ScriptRunner from './pages/ScriptRunner';
 import Cheatsheet from './pages/Cheatsheet';
 import SiteConfigManager from './pages/SiteConfigManager';
+import PublishQueue from './pages/PublishQueue';
 
 export default function App() {
     return (
         <Routes>
             <Route element={<Layout />}>
                 <Route path="/" element={<Dashboard />} />
+                <Route path="/publish-queue" element={<PublishQueue />} />
                 <Route path="/content" element={<ContentBrowser />} />
                 <Route path="/content/:collection/*" element={<ContentEditor />} />
                 <Route path="/categories" element={<CategoryManager />} />
