@@ -28,9 +28,13 @@ const slug = article.id.replace(/^en\//, '');
   tags={article.data.tags}
   coverImage={article.data.coverImage}
   imageDisplay={article.data.imageDisplay}
+  interfaceSlug={article.data.interface}
   rawContent={article.body ?? ''}
   slug={slug}
   draft={article.data.draft}
-  showHeader={article.data['show-header']}>
+  showHeader={article.data['show-header']}
+  pdfOnly={article.data.pdfOnly}
+  pdfUrl={article.data.pdfUrl}
+  showPdfViewer={!!article.data.pdfUrl && !article.data.pdfOnly}>
   <Content />
 </ArticleLayout>

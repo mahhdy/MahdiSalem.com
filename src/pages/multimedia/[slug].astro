@@ -30,6 +30,7 @@ const slug = item.id.replace(/^fa\//, '');
   tags={item.data.tags}
   coverImage={item.data.coverImage || item.data.thumbnailUrl}
   imageDisplay={item.data.imageDisplay}
+  interfaceSlug={item.data.interface}
   rawContent={item.body ?? ''}
   slug={slug}
   draft={item.data.draft}

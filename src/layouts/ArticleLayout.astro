@@ -21,12 +21,14 @@ interface Props {
   tags?: string[];
   coverImage?: string;
   imageDisplay?: 'full' | 'side' | 'thumbnail' | 'hidden';
+  interfaceSlug?: string;
   rawContent?: string;
   slug?: string;
   draft?: boolean;
   showHeader?: boolean;
   pdfOnly?: boolean;
   pdfUrl?: string;
+  showPdfViewer?: boolean;
 }
 
 const {
@@ -40,13 +42,18 @@ const {
   tags = [],
   coverImage,
   imageDisplay = 'full',
+  interfaceSlug,
   rawContent = '',
   slug = '',
   draft = false,
   showHeader = false,
   pdfOnly = false,
   pdfUrl,
+  showPdfViewer = false,
 } = Astro.props;
+
+// Determine the content type from the slug for category links
+const contentType = slug.includes('/') ? slug.split('/')[0] : 'articles';
 
 const dateFormatter = new Intl.DateTimeFormat(lang === 'fa' ? 'fa-IR' : 'en-US', {
   year: 'numeric',
@@ -90,9 +97,14 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
         {categories.length > 0 && (
           <div class="flex flex-wrap gap-2 mb-3">
             {categories.map((cat) => (
-              <span class="text-xs px-2.5 py-1 rounded-full bg-primary/10 text-primary dark:bg-primary-light/10 dark:text-primary-light font-medium">
+              <a
+                href={interfaceSlug
+                  ? getLocalizedPath(`articles?interface=${interfaceSlug}`, lang)
+                  : getLocalizedPath(`tags/${encodeURIComponent(cat)}`, lang)}
+                class="text-xs px-2.5 py-1 rounded-full bg-primary/10 text-primary dark:bg-primary-light/10 dark:text-primary-light font-medium no-underline hover:bg-primary/20 dark:hover:bg-primary-light/20 transition-colors"
+              >
                 {cat}
-              </span>
+              </a>
             ))}
           </div>
         )}
@@ -151,6 +163,7 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
       )}
       
       {pdfOnly && pdfUrl ? (
+        <!-- PDF-only: show only PDF viewer + download -->
         <div class="pdf-only-article">
           <PDFViewer pdfUrl={pdfUrl} title={title} lang={lang} />
           <div class="mt-8 flex justify-center">
@@ -164,8 +177,63 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
             </a>
           </div>
         </div>
+      ) : pdfUrl && showPdfViewer ? (
+        <!-- Has both content AND PDF: show tab interface -->
+        <div class="article-pdf-tabs">
+          <div class="flex justify-center mb-6">
+            <div class="inline-flex p-1 bg-surface-dim dark:bg-surface-dark-dim rounded-lg border border-border dark:border-border-dark">
+              <button
+                class="article-tab-btn active px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
+                data-tab="content"
+                type="button"
+              >
+                {lang === 'fa' ? 'متن مقاله' : 'Article'}
+              </button>
+              <button
+                class="article-tab-btn px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
+                data-tab="pdf"
+                type="button"
+              >
+                {t('books.pdf_tab', lang)}
+              </button>
+            </div>
+          </div>
+
+          <div id="article-content-tab" class="article-tab-content active">
+            <slot />
+          </div>
+          <div id="article-pdf-tab" class="article-tab-content">
+            <PDFViewer pdfUrl={pdfUrl} title={title} lang={lang} />
+            <div class="mt-8 flex justify-center">
+              <a
+                href={pdfUrl}
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-white font-medium hover:opacity-90 transition-colors no-underline"
+                download
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                {t('books.download_pdf', lang)}
+              </a>
+            </div>
+          </div>
+        </div>
       ) : (
-        <slot />
+        <!-- Normal content: just render slot -->
+        <fragment>
+          <slot />
+          {/* Show PDF download button if PDF exists but viewer is not enabled */}
+          {pdfUrl && (
+            <div class="mt-8 flex justify-center">
+              <a
+                href={pdfUrl}
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-secondary text-white font-medium hover:opacity-90 transition-colors no-underline"
+                download
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                {t('books.download_pdf', lang)}
+              </a>
+            </div>
+          )}
+        </fragment>
       )}
     </div>
 
@@ -202,4 +270,71 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
     <Giscus lang={lang} />
   </article>
 </BaseLayout>
-<!-- ✅ NOTHING after this line — the duplicate content was removed -->
+
+<style>
+  .article-tab-btn {
+    color: var(--color-text-muted);
+  }
+  html.dark .article-tab-btn {
+    color: var(--color-text-dark-muted);
+  }
+  .article-tab-btn:hover {
+    color: var(--color-text);
+  }
+  html.dark .article-tab-btn:hover {
+    color: var(--color-text-dark);
+  }
+  .article-tab-btn.active {
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    color: var(--color-primary);
+  }
+  html.dark .article-tab-btn.active {
+    background-color: var(--color-surface-dark);
+    color: var(--color-primary-light);
+  }
+  .article-tab-content {
+    display: none;
+  }
+  .article-tab-content.active {
+    display: block;
+  }
+</style>
+
+<script>
+  // Tab switching for articles with PDF viewer
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabButtons = document.querySelectorAll('.article-tab-btn');
+    const tabContents = document.querySelectorAll('.article-tab-content');
+
+    if (tabButtons.length === 0) return;
+
+    tabButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const tab = button.getAttribute('data-tab');
+
+        tabButtons.forEach((btn) => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        tabContents.forEach((content) => {
+          if (content.id === `article-${tab}-tab`) {
+            content.classList.add('active');
+          } else {
+            content.classList.remove('active');
+          }
+        });
+
+        window.history.replaceState(null, '', `#${tab}`);
+      });
+    });
+
+    // Handle initial hash in URL
+    const hash = window.location.hash.slice(1);
+    if (hash === 'content' || hash === 'pdf') {
+      const hashButton = document.querySelector(`.article-tab-btn[data-tab="${hash}"]`);
+      if (hashButton) {
+        (hashButton as HTMLElement).click();
+      }
+    }
+  });
+</script>
