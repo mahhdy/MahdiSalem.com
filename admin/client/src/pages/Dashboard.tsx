@@ -42,6 +42,7 @@ const quickActions = [
     { label: 'Content Browser', icon: '🔍', to: '/content', color: 'hsl(200, 80%, 60%)' },
     { label: 'Run Scripts', icon: '⚡', to: '/scripts', color: 'hsl(40, 90%, 55%)' },
     { label: 'Media Manager', icon: '🖼️', to: '/media', color: 'hsl(280, 70%, 60%)' },
+    { label: 'Cleanup Backups', icon: '🗄️', to: '/backups', color: 'hsl(330, 80%, 60%)' },
 ];
 
 /* ─── Inline styles scoped to Dashboard ─── */

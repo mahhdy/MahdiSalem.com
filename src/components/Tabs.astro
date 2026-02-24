@@ -1,0 +1,122 @@
+---
+
+---
+
+<div
+    class="mdx-tabs my-6 border border-border dark:border-border-dark rounded-lg bg-surface dark:bg-surface-dark overflow-hidden"
+>
+    <div
+        class="tabs-header flex overflow-x-auto border-b border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim"
+    >
+        <!-- Buttons will be injected here by client-side script -->
+    </div>
+    <div class="tabs-content p-4">
+        <slot />
+    </div>
+</div>
+
+<script>
+    function setupTabs() {
+        const tabContainers = document.querySelectorAll(".mdx-tabs");
+
+        tabContainers.forEach((container) => {
+            const header = container.querySelector(
+                ".tabs-header",
+            ) as HTMLElement;
+            const panels = container.querySelectorAll(
+                ".tab-panel",
+            ) as NodeListOf<HTMLElement>;
+
+            // Prevent double init
+            if (!header || header.children.length > 0) return;
+            if (!panels.length) return;
+
+            panels.forEach((panel, index) => {
+                const title =
+                    panel.getAttribute("data-label") || `Tab ${index + 1}`;
+                const btn = document.createElement("button");
+
+                // Base classes
+                btn.className =
+                    "px-5 py-3 text-sm font-medium transition-colors whitespace-nowrap focus:outline-none";
+
+                // Active vs Inactive setup
+                const setActive = () => {
+                    btn.classList.add(
+                        "text-primary",
+                        "dark:text-primary-light",
+                        "bg-surface",
+                        "dark:bg-surface-dark",
+                        "border-b-2",
+                        "border-primary",
+                        "dark:border-primary-light",
+                    );
+                    btn.classList.remove(
+                        "text-text-muted",
+                        "dark:text-text-dark-muted",
+                        "hover:bg-black/5",
+                        "dark:hover:bg-white/5",
+                    );
+                };
+                const setInactive = () => {
+                    btn.classList.remove(
+                        "text-primary",
+                        "dark:text-primary-light",
+                        "bg-surface",
+                        "dark:bg-surface-dark",
+                        "border-b-2",
+                        "border-primary",
+                        "dark:border-primary-light",
+                    );
+                    btn.classList.add(
+                        "text-text-muted",
+                        "dark:text-text-dark-muted",
+                        "hover:bg-black/5",
+                        "dark:hover:bg-white/5",
+                        "border-b-2",
+                        "border-transparent",
+                    );
+                };
+
+                if (index === 0) {
+                    setActive();
+                    panel.style.display = "block";
+                } else {
+                    setInactive();
+                    panel.style.display = "none";
+                }
+
+                btn.textContent = title;
+                btn.addEventListener("click", () => {
+                    // Reset all
+                    const allBtns = header.querySelectorAll("button");
+                    allBtns.forEach((b, i) => {
+                        b.classList.remove(
+                            "text-primary",
+                            "dark:text-primary-light",
+                            "bg-surface",
+                            "dark:bg-surface-dark",
+                            "border-primary",
+                            "dark:border-primary-light",
+                        );
+                        b.classList.add(
+                            "text-text-muted",
+                            "dark:text-text-dark-muted",
+                            "border-transparent",
+                        );
+                        panels[i].style.display = "none";
+                    });
+
+                    // Set active
+                    setActive();
+                    panel.style.display = "block";
+                });
+
+                header.appendChild(btn);
+            });
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", setupTabs);
+    document.addEventListener("astro:page-load", setupTabs);
+</script>

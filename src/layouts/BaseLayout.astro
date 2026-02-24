@@ -1,8 +1,8 @@
 ---
-import '../styles/global.css';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { getLangFromUrl, getDir, t } from '../i18n';
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { getLangFromUrl, getDir, t } from "../i18n";
 
 interface Props {
   title?: string;
@@ -14,13 +14,16 @@ interface Props {
 const lang = getLangFromUrl(Astro.url);
 const dir = getDir(lang);
 const {
-  title = t('site.title', lang),
-  description = t('site.description', lang),
-  ogImage = '/images/og-default.jpg',
+  title = t("site.title", lang),
+  description = t("site.description", lang),
+  ogImage = "/images/og-default.jpg",
   noIndex = false,
 } = Astro.props;
 
-const fullTitle = title === t('site.title', lang) ? title : `${title} | ${t('site.title', lang)}`;
+const fullTitle =
+  title === t("site.title", lang)
+    ? title
+    : `${title} | ${t("site.title", lang)}`;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -55,7 +58,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={new URL(ogImage, Astro.site)} />
-    <meta property="og:locale" content={lang === 'fa' ? 'fa_IR' : 'en_US'} />
+    <meta property="og:locale" content={lang === "fa" ? "fa_IR" : "en_US"} />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -67,16 +70,19 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <link
       rel="alternate"
       type="application/rss+xml"
-      title={t('site.title', lang)}
+      title={t("site.title", lang)}
       href={`/rss-${lang}.xml`}
     />
 
     <!-- Theme initialization (prevent flash) -->
     <script is:inline>
       (function () {
-        const theme = localStorage.getItem('theme');
-        if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.classList.add('dark');
+        const theme = localStorage.getItem("theme");
+        if (
+          theme === "dark" ||
+          (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark");
         }
       })();
     </script>
@@ -87,21 +93,24 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       <slot />
     </main>
     <Footer lang={lang} />
-    
+
     <!-- Mermaid.js - Diagram Rendering -->
-    <script is:inline src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script
+      is:inline
+      src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"
+    ></script>
     <script is:inline>
       // Initialize Mermaid with full RTL / Farsi / Gantt support
-      if (typeof mermaid !== 'undefined') {
-        const isDark = document.documentElement.classList.contains('dark');
+      if (typeof mermaid !== "undefined") {
+        const isDark = document.documentElement.classList.contains("dark");
         mermaid.initialize({
-          startOnLoad: false,   // We call mermaid.run() manually below
-          theme: isDark ? 'dark' : 'default',
+          startOnLoad: false, // We call mermaid.run() manually below
+          theme: isDark ? "dark" : "default",
           fontFamily: '"Vazirmatn", "Vazir", "Tahoma", sans-serif',
           flowchart: {
             useMaxWidth: false,
             htmlLabels: true,
-            curve: 'basis'
+            curve: "basis",
           },
           gantt: {
             useMaxWidth: true,
@@ -115,38 +124,61 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
             fontSize: 13,
             sectionFontSize: 14,
             numberSectionStyles: 4,
-            axisFormat: '%Y-%m',
+            axisFormat: "%Y-%m",
           },
-          mindmap:     { useMaxWidth: true },
-          pie:         { useMaxWidth: true },
-          timeline:    { useMaxWidth: true },
-          gitGraph:    { useMaxWidth: true },
-          stateDiagram:{ useMaxWidth: true },
+          mindmap: { useMaxWidth: true },
+          pie: { useMaxWidth: true },
+          timeline: { useMaxWidth: true },
+          gitGraph: { useMaxWidth: true },
+          stateDiagram: { useMaxWidth: true },
           themeVariables: {
             fontFamily: '"Vazirmatn", "Vazir", "Tahoma", sans-serif',
-          }
+          },
         });
       }
 
       function runMermaid() {
-        if (typeof mermaid !== 'undefined') {
-          mermaid.run({ querySelector: '.mermaid:not([data-processed])' });
+        if (typeof mermaid !== "undefined") {
+          // Save original code before Mermaid touches it
+          document
+            .querySelectorAll(".mermaid:not([data-original-code])")
+            .forEach((el) => {
+              el.setAttribute("data-original-code", el.textContent);
+            });
+          mermaid
+            .run({ querySelector: ".mermaid:not([data-processed])" })
+            .catch(console.error);
         }
       }
 
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', runMermaid);
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", runMermaid);
       } else {
         runMermaid();
       }
 
       // Re-render on theme change
-      const themeObserver = new MutationObserver(function(mutations) {
-        mutations.forEach(function(mutation) {
-          if (mutation.attributeName === 'class' && typeof mermaid !== 'undefined') {
-            const isDark = document.documentElement.classList.contains('dark');
-            mermaid.initialize({ theme: isDark ? 'dark' : 'default', startOnLoad: false });
-            document.querySelectorAll('.mermaid svg').forEach(svg => svg.remove());
+      const themeObserver = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+          if (
+            mutation.attributeName === "class" &&
+            typeof mermaid !== "undefined"
+          ) {
+            const isDark = document.documentElement.classList.contains("dark");
+            mermaid.initialize({
+              theme: isDark ? "dark" : "default",
+              startOnLoad: false,
+            });
+
+            // Restore original text so Mermaid can re-render it
+            document.querySelectorAll(".mermaid").forEach((el) => {
+              const code = el.getAttribute("data-original-code");
+              if (code) {
+                el.innerHTML = code;
+                el.removeAttribute("data-processed");
+              }
+            });
+
             runMermaid();
           }
         });
@@ -154,9 +186,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       themeObserver.observe(document.documentElement, { attributes: true });
     </script>
 
-
     <script>
-      import '../scripts/mermaid-interact';
+      import "../scripts/mermaid-interact";
     </script>
   </body>
 </html>

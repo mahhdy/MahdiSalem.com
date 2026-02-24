@@ -9,6 +9,8 @@ import matter from 'gray-matter';
 import { ContentValidator } from './astro-content-schema.mjs';
 import { ImageOptimizer } from './image-optimizer.mjs';
 import { LinkNormalizer } from './link-normalizer.mjs';
+import { MermaidProcessor } from './mermaid-processor.mjs';
+
 
 export class AstroMDXConverter {
   constructor(options = {}) {
@@ -116,6 +118,346 @@ export class AstroMDXConverter {
     }
   }
 
+    /**
+   * Comprehensive HTML entity map
+   */
+  static HTML_ENTITIES = {
+    // Typography
+    '&hellip;': '…', '&mdash;': '—', '&ndash;': '–',
+    '&laquo;': '«', '&raquo;': '»', '&bull;': '•',
+    '&middot;': '·',
+
+    // Quotes
+    '&ldquo;': '\u201C', '&rdquo;': '\u201D',
+    '&lsquo;': '\u2018', '&rsquo;': '\u2019',
+
+    // Spaces & Joiners
+    '&nbsp;': '\u00A0', '&zwnj;': '\u200C', '&zwj;': '\u200D',
+    '&thinsp;': '\u2009', '&ensp;': '\u2002', '&emsp;': '\u2003',
+
+    // Arrows
+    '&rarr;': '→', '&larr;': '←', '&darr;': '↓',
+    '&uarr;': '↑', '&harr;': '↔',
+
+    // Accented (French, German, etc.)
+    '&eacute;': 'é', '&Eacute;': 'É', '&egrave;': 'è',
+    '&Egrave;': 'È', '&ecirc;': 'ê', '&Ecirc;': 'Ê',
+    '&euml;': 'ë', '&aacute;': 'á', '&agrave;': 'à',
+    '&acirc;': 'â', '&auml;': 'ä', '&Auml;': 'Ä',
+    '&ouml;': 'ö', '&Ouml;': 'Ö', '&uuml;': 'ü',
+    '&Uuml;': 'Ü', '&icirc;': 'î', '&ccedil;': 'ç',
+    '&scaron;': 'š', '&szlig;': 'ß', '&oslash;': 'ø',
+    '&aring;': 'å', '&aelig;': 'æ', '&ntilde;': 'ñ',
+
+    // Symbols
+    '&times;': '×', '&divide;': '÷', '&copy;': '©',
+    '&reg;': '®', '&trade;': '™', '&deg;': '°',
+    '&para;': '¶', '&sect;': '§',
+
+    // HTML reserved (decode LAST)
+    '&amp;': '&',
+  };
+
+  /**
+   * Decode HTML entities in text
+   */
+  static decodeHTMLEntities(text) {
+    let result = text;
+
+    // Named entities (skip &amp; for now)
+    for (const [entity, char] of Object.entries(AstroMDXConverter.HTML_ENTITIES)) {
+      if (entity === '&amp;') continue;
+      result = result.replaceAll(entity, char);
+    }
+
+    // Numeric decimal: &#128214;
+    result = result.replace(/&#(\d+);/g, (_, c) => {
+      try { return String.fromCodePoint(parseInt(c, 10)); }
+      catch { return `&#${c};`; }
+    });
+
+    // Numeric hex: &#x02BB;
+    result = result.replace(/&#x([0-9a-f]+);/gi, (_, h) => {
+      try { return String.fromCodePoint(parseInt(h, 16)); }
+      catch { return `&#x${h};`; }
+    });
+
+    // Now decode &amp; (avoid creating new entities)
+    result = result.replace(/&amp;(?!#?\w+;)/g, '&');
+
+    return result;
+  }
+
+  /**
+   * Main HTML preprocessor — run BEFORE existing MDX processing
+   * Converts raw HTML content into MDX-ready format
+   *
+   * @param {string} htmlContent - Raw HTML string
+   * @param {object} options - { filename, frontmatter }
+   * @returns {string} MDX-ready content with frontmatter
+   */
+  async preprocessHTML(htmlContent, options = {}) {
+    const log = options.silent ? () => {} : (msg) => console.log(msg);
+    log('🔄 HTML Preprocessing started...\n');
+
+    let content = htmlContent;
+
+    // ── Step 1: Extract body ──
+    const bodyMatch = content.match(/<body[^>]*>([\s\S]*)<\/body>/i);
+    if (bodyMatch) content = bodyMatch[1];
+    log('  ✅ Step 1: Extract body');
+
+    // ── Step 2: Extract frontmatter from header ──
+    const fm = options.frontmatter ||
+      this._extractFrontmatterFromHTML(content, options.filename);
+    log('  ✅ Step 2: Extract frontmatter');
+
+    // ── Step 3: Strip boilerplate ──
+    content = content
+      .replace(/<header\s+class="page-header">[\s\S]*?<\/header>/gi, '')
+      .replace(/<footer[\s\S]*?<\/footer>/gi, '')
+      .replace(/<style[\s\S]*?<\/style>/gi, '')
+      .replace(/<script[\s\S]*?<\/script>/gi, '')
+      .replace(/<main[^>]*>/gi, '')
+      .replace(/<\/main>/gi, '');
+    log('  ✅ Step 3: Strip boilerplate');
+
+    // ── Step 4: Strip HTML comments ──
+    content = content.replace(/<!--[\s\S]*?-->/g, '');
+    log('  ✅ Step 4: Strip HTML comments');
+
+    // ── Step 5: Convert Mermaid blocks (BEFORE entity decode!) ──
+    content = this._convertMermaidBlocks(content);
+    log('  ✅ Step 5: Convert Mermaid blocks');
+
+    // ── Step 6: Convert headings ──
+    content = this._convertHeadings(content);
+    log('  ✅ Step 6: Convert headings');
+
+    // ── Step 7: Fix self-closing tags ──
+    content = content
+      .replace(/<br\s*>/gi, '<br/>')
+      .replace(/<br\s+\/>/gi, '<br/>')
+      .replace(/<hr\s*>/gi, '<hr/>')
+      .replace(/<hr\s+\/>/gi, '<hr/>')
+      .replace(/<img\s+([^>]*?)(?<!\/)>/gi, '<img \$1 />');
+    log('  ✅ Step 7: Fix self-closing tags');
+
+    // ── Step 8: Decode HTML entities (selective) ──
+    content = this._decodeEntitiesSelective(content);
+    log('  ✅ Step 8: Decode HTML entities');
+
+    // ── Step 9: Run MermaidProcessor on code fences ──
+    const mermaidProc = new MermaidProcessor({
+      decodeHTMLEntities: true,
+      stripClassAnnotations: true,
+      fixNewlines: true,
+    });
+    content = await mermaidProc.process(content);
+    log(`  ✅ Step 9: Mermaid fixes (${mermaidProc.getStats().fixed} fixed)`);
+
+    // ── Step 10: Clean whitespace ──
+    content = content
+      .replace(/\n{4,}/g, '\n\n\n')
+      .split('\n').map(l => l.trimEnd()).join('\n')
+      .trim() + '\n';
+    log('  ✅ Step 10: Clean whitespace');
+
+    // ── Step 11: Assemble with frontmatter ──
+    const frontmatterStr = this.generateFrontmatter(fm);
+    const finalContent = `---\n${frontmatterStr}\n---\n\n${content}`;
+
+    log(`\n✅ HTML preprocessing complete`);
+    log(`   Size: ${(finalContent.length / 1024).toFixed(1)} KB`);
+    log(`   Lines: ${finalContent.split('\n').length}`);
+
+    return finalContent;
+  }
+
+  /**
+   * Extract frontmatter data from HTML header
+   */
+  _extractFrontmatterFromHTML(html, filename = '') {
+    const fm = {
+      title: '', description: '', lang: 'fa',
+      publishDate: new Date().toISOString().split('T')[0],
+      author: '', categories: [], tags: [], draft: true,
+    };
+
+    const headerMatch = html.match(
+      /<header\s+class="page-header">([\s\S]*?)<\/header>/i
+    );
+    if (headerMatch) {
+      const h = headerMatch[1];
+      const h1 = h.match(/<h1>([\s\S]*?)<\/h1>/i);
+      if (h1) fm.title = AstroMDXConverter.decodeHTMLEntities(
+        h1[1].replace(/<[^>]*>/g, '').trim()
+      );
+      const sub = h.match(/class="subtitle"[^>]*>([\s\S]*?)<\/div>/i);
+      if (sub) fm.description = AstroMDXConverter.decodeHTMLEntities(
+        sub[1].replace(/<[^>]*>/g, '').trim()
+      );
+      const auth = h.match(/<strong>(.*?)<\/strong>/i);
+      if (auth) fm.author = AstroMDXConverter.decodeHTMLEntities(auth[1].trim());
+    }
+
+    if (!fm.title && filename) {
+      fm.title = filename.replace(/\.html?$/i, '').replace(/[-_]/g, ' ');
+    }
+
+    return fm;
+  }
+
+  /**
+   * Convert <pre class="mermaid"> blocks to ```mermaid fences
+   */
+  _convertMermaidBlocks(html) {
+    // Pattern: wrapper with title + pre.mermaid + caption
+    let result = html.replace(
+      /<div\s+class="diagram-wrapper">\s*(?:<(?:div|p)\s+class="diagram-title"[^>]*>([\s\S]*?)<\/(?:div|p)>\s*)?<pre\s+class="mermaid">([\s\S]*?)<\/pre>\s*(?:<(?:div|p|figcaption)\s+class="diagram-caption"[^>]*>([\s\S]*?)<\/(?:div|p|figcaption)>\s*)?<\/div>/gi,
+      (_, rawTitle, rawMermaid, rawCaption) =>
+        this._buildMermaidFence(rawTitle, rawMermaid, rawCaption)
+    );
+
+    // Bare <pre class="mermaid"> without wrapper
+    result = result.replace(
+      /<pre\s+class="mermaid">([\s\S]*?)<\/pre>/gi,
+      (_, rawMermaid) => this._buildMermaidFence(null, rawMermaid, null)
+    );
+
+    return result;
+  }
+
+  _buildMermaidFence(rawTitle, rawMermaid, rawCaption) {
+    let code = AstroMDXConverter.decodeHTMLEntities(rawMermaid.trim());
+    code = code.split('\n').map(l => l.trimEnd()).join('\n').trim();
+
+    const parts = [];
+    if (rawTitle) {
+      const t = AstroMDXConverter.decodeHTMLEntities(
+        rawTitle.replace(/<[^>]*>/g, '').trim()
+      );
+      parts.push(`\n**${t}**\n`);
+    }
+    parts.push('```mermaid');
+    parts.push(code);
+    parts.push('```');
+    if (rawCaption) {
+      const c = AstroMDXConverter.decodeHTMLEntities(
+        rawCaption.replace(/<[^>]*>/g, '').trim()
+      );
+      parts.push(`\n*${c}*`);
+    }
+    return '\n' + parts.join('\n') + '\n';
+  }
+
+  /**
+   * Convert HTML headings to markdown
+   */
+  _convertHeadings(html) {
+    let r = html;
+
+    // <h2 class="section-title"><span class="num">N</span> Title</h2>
+    r = r.replace(
+      /<h2\s+class="section-title">\s*<span\s+class="num">(.*?)<\/span>\s*([\s\S]*?)\s*<\/h2>/gi,
+      (_, num, title) => {
+        const clean = AstroMDXConverter.decodeHTMLEntities(
+          title.replace(/<[^>]*>/g, '').trim()
+        );
+        return `\n## ${num}. ${clean}\n`;
+      }
+    );
+
+    // <h3 id="...">content</h3>
+    r = r.replace(
+      /<h3\s+(?:id="([^"]*)")?\s*>([\s\S]*?)<\/h3>/gi,
+      (_, id, content) => {
+        const clean = AstroMDXConverter.decodeHTMLEntities(
+          content.replace(/<[^>]*>/g, '').trim()
+        );
+        return id ? `\n### ${clean} {#${id}}\n` : `\n### ${clean}\n`;
+      }
+    );
+
+    return r;
+  }
+
+  /**
+   * Decode entities selectively (skip mermaid code fences)
+   */
+  _decodeEntitiesSelective(content) {
+    const lines = content.split('\n');
+    let inMermaid = false;
+
+    return lines.map(line => {
+      if (line.trim() === '```mermaid') { inMermaid = true; return line; }
+      if (inMermaid && line.trim() === '```') { inMermaid = false; return line; }
+      if (inMermaid) return line;
+      return AstroMDXConverter.decodeHTMLEntities(line);
+    }).join('\n');
+  }
+  
+  // ═══════════════════════════════════════════════
+  // OPTION B: preprocessHTML returns body-only
+  // Let existing pipeline handle frontmatter entirely
+  // ═══════════════════════════════════════════════
+
+  // In astro-mdx-converter.mjs, add this method:
+
+  async preprocessHTMLToBody(htmlContent, options = {}) {
+    // Same as preprocessHTML but returns ONLY the body
+    // No frontmatter generation — that's the main pipeline's job
+
+    let content = htmlContent;
+
+    // All the same steps...
+    content = this._extractBodyFromHTML(content);
+    content = this._stripBoilerplate(content);
+    content = this._stripComments(content);
+    content = this._convertMermaidBlocks(content);
+    content = this._collapseSplitTags(content);
+    content = this._convertHeadings(content);
+    content = this._fixSelfClosingTags(content);
+    content = this._removeEmptyWrappers(content);
+    content = this._mapCSSClasses(content);
+    content = this._decodeEntitiesSelective(content);
+    content = this._cleanWhitespace(content);
+
+    // Extract metadata hints (for AI pipeline to use)
+    const hints = this._extractMetadataHints(htmlContent);
+
+    return {
+      body: content,
+      hints, // { title, description, author, lang }
+    };
+  }
+
+  _extractMetadataHints(html) {
+    const hints = {};
+    const hm = html.match(
+      /<header\s+class="page-header">([\s\S]*?)<\/header>/i
+    );
+    if (hm) {
+      const h = hm[1];
+      const h1 = h.match(/<h1>([\s\S]*?)<\/h1>/i);
+      if (h1) hints.title = AstroMDXConverter.decodeHTMLEntities(
+        h1[1].replace(/<[^>]*>/g, '').trim()
+      );
+      const sub = h.match(/class="subtitle"[^>]*>([\s\S]*?)<\/div>/i);
+      if (sub) hints.description = AstroMDXConverter.decodeHTMLEntities(
+        sub[1].replace(/<[^>]*>/g, '').trim()
+      );
+      const auth = h.match(/<strong>(.*?)<\/strong>/i);
+      if (auth) hints.author = AstroMDXConverter.decodeHTMLEntities(
+        auth[1].trim()
+      );
+    }
+
+    // Detect language
+    if (/[\u0600-\u06FF]/.test(hints.title || '')) hints.lang = 'fa';
+
+    return hints;
+  }
   /**
    * Auto-fix common frontmatter issues
    */

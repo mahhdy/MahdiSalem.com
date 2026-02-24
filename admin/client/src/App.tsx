@@ -11,6 +11,7 @@ import ScriptRunner from './pages/ScriptRunner';
 import Cheatsheet from './pages/Cheatsheet';
 import SiteConfigManager from './pages/SiteConfigManager';
 import PublishQueue from './pages/PublishQueue';
+import Backups from './pages/Backups';
 
 export default function App() {
     return (
@@ -27,6 +28,7 @@ export default function App() {
                 <Route path="/scripts" element={<ScriptRunner />} />
                 <Route path="/cheatsheet" element={<Cheatsheet />} />
                 <Route path="/site-config" element={<SiteConfigManager />} />
+                <Route path="/backups" element={<Backups />} />
             </Route>
         </Routes>
     );

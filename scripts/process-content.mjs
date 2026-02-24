@@ -283,6 +283,557 @@ export class ContentPipeline {
         return { type: 'word', source: filePath, title, content: extracted.markdown, metadata: {} };
     }
 
+    // ═══════════════════════════════════════════════════════════════
+    // 🔴 REPLACE the existing processHTML() with this version
+    // This preserves rich HTML formatting instead of flattening to markdown
+    // ═══════════════════════════════════════════════════════════════
+
+    async processHTML(filePath, options = {}) {
+        console.log(`   🌐 پردازش HTML (rich-preserve mode)...`);
+        let content = await fs.readFile(filePath, 'utf-8');
+
+        // ── Step 1: Extract metadata BEFORE stripping ──
+        const $ = cheerio.load(content);
+
+        // Title: from <header>, then <h1>, then <title>, then filename
+        let title = '';
+        const pageHeader = $('header.page-header');
+        if (pageHeader.length) {
+            title = pageHeader.find('h1').text().trim();
+        }
+        if (!title) title = $('h1').first().text().trim();
+        if (!title) title = $('title').text().trim();
+        if (!title) title = path.basename(filePath, path.extname(filePath));
+
+        // Description: from header subtitle, then meta tag
+        let description = '';
+        const subtitle = pageHeader.find('.subtitle');
+        if (subtitle.length) {
+            description = subtitle.text().trim();
+        }
+        if (!description) {
+            description = $('meta[name="description"]').attr('content') || '';
+        }
+
+        // Author: from header
+        let author = '';
+        const metaDiv = pageHeader.find('.meta strong');
+        if (metaDiv.length) {
+            author = metaDiv.first().text().trim();
+        }
+
+        // Detect language
+        const htmlLang = $('html').attr('lang') || '';
+        const lang = htmlLang || (this.hasPersianCharacters(title) ? 'fa' : 'en');
+
+        // ── Step 2: Preprocess HTML body ──
+        const processedBody = this._preprocessHTMLBody(content);
+
+        // ── Step 3: Run MermaidProcessor on the result ──
+        const prefix = path.basename(filePath, path.extname(filePath));
+        const finalContent = await this.mermaidProcessor.process(processedBody, { prefix });
+
+        console.log(`   ✅ HTML processed: ${title}`);
+
+        return {
+            type: 'html',
+            source: filePath,
+            title: this._decodeEntities(title),
+            content: finalContent,
+            metadata: {
+                description: this._decodeEntities(description),
+                author: this._decodeEntities(author),
+                lang,
+            }
+        };
+    }
+    // ═══════════════════════════════════════════════════════════════
+    // 🟢 NEW: HTML Body Preprocessor — rich formatting preserved
+    // Add this right after processHTML()
+    // ═══════════════════════════════════════════════════════════════
+
+    _preprocessHTMLBody(html) {
+        let c = html;
+
+        // 1. Extract <body> if full document
+        const bodyMatch = c.match(/<body[^>]*>([\s\S]*)<\/body>/i);
+        if (bodyMatch) c = bodyMatch[1];
+
+        // 2. Strip boilerplate
+        c = c.replace(/<header\s+class="page-header">[\s\S]*?<\/header>/gi, '');
+        c = c.replace(/<footer[\s\S]*?<\/footer>/gi, '');
+        c = c.replace(/<style[\s\S]*?<\/style>/gi, '');
+        c = c.replace(/<script[\s\S]*?<\/script>/gi, '');
+        c = c.replace(/<main[^>]*>/gi, '');
+        c = c.replace(/<\/main>/gi, '');
+
+        // 3. Strip ALL comments
+        c = removeAllHtmlComments(c);
+        // Also strip CSS comments in inline styles
+        c = c.replace(
+            /style="([^"]*)"/gi,
+            (match, styleContent) => {
+                const cleaned = styleContent.replace(/\/\*[\s\S]*?\*\//g, '');
+                return `style="${cleaned}"`;
+            }
+        );
+
+        // 4. Convert Mermaid <pre> blocks → ```mermaid fences
+        //    (MUST happen before entity decoding!)
+        c = this._convertMermaidPreBlocks(c);
+
+        // 5. Collapse split/broken OPENING TAG attributes (multi-line attr → one line)
+        c = c.replace(
+            /<(\w+)((?:\s+[\w-]+(?:\s*=\s*(?:"[^"]*"|'[^']*'|[^>\s]+))?)*)\s*>/g,
+            (match) => match.replace(/\s*\n\s*/g, ' ')
+        );
+
+        // 5b. Universal line-balancer: join lines until every opened HTML tag is closed.
+        //     MDX's strict parser fails when a tag opens on one line and its content
+        //     or closing tag appears on the next — it treats the gap as a paragraph.
+        //     We scan line-by-line, count net open tags, and join subsequent lines
+        //     until the tag depth returns to zero. Works for ANY tag, no hardcoded list.
+        c = this._balanceHTMLLines(c);
+
+        // 6. Convert headings (produces HTML id= anchors, not {#id} markdown)
+        c = this._convertHTMLHeadings(c);
+
+        // 7. Fix self-closing tags for MDX compatibility
+        c = c.replace(/<br\s*>/gi, '<br/>');
+        c = c.replace(/<br\s+\/>/gi, '<br/>');
+        c = c.replace(/<hr\s*>/gi, '<hr/>');
+        c = c.replace(/<hr\s+\/>/gi, '<hr/>');
+        // Fix img: add self-close slash if missing (careful: avoid double-slashing)
+        c = c.replace(/<img(\s[^>]*?)(?<!\/)(\s*)>/gi, '<img$1/>');
+
+        // 8. Remove empty wrapper divs (iterative until stable)
+        let prev;
+        do {
+            prev = c;
+            c = c.replace(/<div[^>]*>\s*<\/div>/gi, '');
+            c = c.replace(
+                /<div>\s*(<(?:div|section|table|article|nav|details)[\s>][\s\S]*?<\/(?:div|section|table|article|nav|details)>)\s*<\/div>/gi,
+                '$1'
+            );
+        } while (c !== prev);
+
+        // 9. Map CSS classes to site equivalents
+        c = this._mapHTMLClasses(c);
+
+        // 10. Decode HTML entities (selective — skip mermaid fences)
+        c = this._decodeEntitiesSelective(c);
+
+        // 11. Clean whitespace
+        c = c.replace(/\n{4,}/g, '\n\n\n');
+        c = c.split('\n').map(l => l.trimEnd()).join('\n');
+        c = c.trim() + '\n';
+
+        // 12. Compact HTML blocks — remove blank lines WITHIN HTML block contexts.
+        //     MDX uses blank lines to switch between HTML-block and markdown mode.
+        //     A blank line inside <details>, <nav>, <table>, <section> etc. makes
+        //     MDX exit HTML mode mid-block, breaking nested tag parsing.
+        c = this._compactHTMLBlocks(c);
+
+        return c;
+    }
+
+    // ─── Remove blank lines within PURE-HTML block contexts for MDX ───
+    // MDX spec: a blank line terminates an HTML block. This matters only
+    // for containers that MDX parses as fully literal HTML — specifically
+    // list/table/details/nav structures. Layout wrappers (section, div)
+    // intentionally excluded because they can contain markdown content.
+    _compactHTMLBlocks(html) {
+        // Pass 1: Flatten all <li>...</li> blocks onto single lines.
+        // MDX parses HTML with a JSX-like parser that requires <li> closing tags
+        // before any block-level children appear on a new line. Flattening
+        // prevents the "Expected closing tag for <li>" error.
+        html = this._flattenListItems(html);
+
+        // Only seal tags whose entire content is HTML (no markdown inside)
+        const SEAL_TAGS = 'details|nav|ul|ol|li|table|thead|tbody|tfoot|tr|th|td|caption|colgroup|col|select|optgroup|option|datalist|dialog|fieldset|figure|figcaption';
+
+        const openPat = new RegExp(`<(?:${SEAL_TAGS})(?:\\s[^>]*)?>`, 'g');
+        const closePat = new RegExp(`</(?:${SEAL_TAGS})>`, 'g');
+
+        // Marker for lines that are markdown — we never suppress blanks before these
+        const isMdLine = (s) => /^(?:```|#{1,6}\s|>\s|\*\*|\*[^\s]|[-*+]\s|\d+\.\s|---|\|)/.test(s);
+
+        const lines = html.split('\n');
+        const out = [];
+        let depth = 0;
+
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i];
+            const trimmed = line.trim();
+
+            // Count opens & closes contributed by this line
+            const opens = (line.match(openPat) || []).length;
+            const closes = (line.match(closePat) || []).length;
+
+            if (depth > 0 && trimmed === '') {
+                // Peek ahead: if the NEXT non-blank line is markdown, keep the blank
+                let nextNonBlank = '';
+                for (let j = i + 1; j < lines.length; j++) {
+                    if (lines[j].trim()) { nextNonBlank = lines[j].trim(); break; }
+                }
+                if (isMdLine(nextNonBlank)) {
+                    // Preserve blank — the following markdown needs breathing room
+                    out.push(line);
+                }
+                // Otherwise suppress blank (stay in HTML-block mode)
+                depth = Math.max(0, depth + opens - closes);
+                continue;
+            }
+
+            out.push(line);
+            depth = Math.max(0, depth + opens - closes);
+        }
+
+        return out.join('\n');
+    }
+
+    // ─── Universal HTML line balancer (leaf-level only) ───
+    // Counts net open HTML tags per line. If unbalanced, joins subsequent lines.
+    // IMPORTANT: Only operates on LEAF-LEVEL tags — those that should never
+    // contain block-level content or markdown. Skips layout containers (div,
+    // section, article) since those legitimately span many lines with markdown.
+    _balanceHTMLLines(html) {
+        // Tags where multi-line content breaks MDX parsing
+        const LEAF_TAGS = new Set([
+            'p', 'summary', 'caption', 'dt', 'dd', 'label', 'button',
+            'option', 'figcaption', 'legend', 'a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+            // Table row/cell elements
+            'tr', 'td', 'th', 'thead', 'tbody', 'tfoot',
+            // Definition list
+            'li'
+        ]);
+
+        // Void elements — never need a closing tag
+        const VOID = new Set([
+            'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input',
+            'link', 'meta', 'param', 'source', 'track', 'wbr'
+        ]);
+
+        // Count net LEAF open tags on a single line
+        const netLeafTags = (line) => {
+            let opens = 0;
+            let closes = 0;
+            // Opening non-void, non-self-closing tags that are in LEAF_TAGS
+            for (const m of line.matchAll(/<([a-zA-Z][a-zA-Z0-9]*)(?:\s[^>]*)?>(?!\/)/g)) {
+                const tag = m[1].toLowerCase();
+                if (LEAF_TAGS.has(tag) && !VOID.has(tag)) opens++;
+            }
+            // Closing tags that are in LEAF_TAGS
+            for (const m of line.matchAll(/<\/([a-zA-Z][a-zA-Z0-9]*)>/g)) {
+                const tag = m[1].toLowerCase();
+                if (LEAF_TAGS.has(tag)) closes++;
+            }
+            return opens - closes;
+        };
+
+        const isMdOnlyLine = (s) =>
+            /^(?:```|#{1,6}\s|\*\*|\*[^\s*]|>\s|[-*+]\s|\d+\.\s|---$|\|)/.test(s);
+
+        const lines = html.split('\n');
+        const out = [];
+        let inMermaid = false;
+
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i];
+            const trimmed = line.trim();
+
+            // Track mermaid fences — don't touch content inside
+            if (trimmed.startsWith('```')) {
+                inMermaid = !inMermaid;
+                out.push(line);
+                continue;
+            }
+            if (inMermaid || trimmed === '' || isMdOnlyLine(trimmed)) {
+                out.push(line);
+                continue;
+            }
+
+            // Count net LEAF tags on this line
+            let net = netLeafTags(line);
+
+            if (net <= 0) {
+                // Balanced or more closes (fine, just emit)
+                out.push(line);
+                continue;
+            }
+
+            // Line has unbalanced opens — absorb subsequent lines until balanced.
+            // STOP at: blank lines, code fence boundaries, pure-markdown lines.
+            const merged = [line];
+            while (net > 0 && i + 1 < lines.length) {
+                const peek = lines[i + 1];
+                const peekTrimmed = peek.trim();
+
+                // Hard stops — never absorb past these boundaries
+                if (peekTrimmed === '' || peekTrimmed.startsWith('```') || isMdOnlyLine(peekTrimmed)) {
+                    break;  // emit what we have and stop merging
+                }
+
+                i++;
+                merged.push(peekTrimmed);
+                net += netLeafTags(peek);
+            }
+            out.push(merged.join(' ').replace(/\s{2,}/g, ' '));
+
+        }
+
+        return out.join('\n');
+    }
+
+    // ─── Flatten <li>...</li> blocks to single lines ───
+    // Scans line by line, joining all content within <li>...</li> onto one line.
+    // Handles nested <li> correctly by counting depth.
+    _flattenListItems(html) {
+        const lines = html.split('\n');
+        const out = [];
+        let liDepth = 0;      // current <li> nesting depth
+        let liBuffer = [];     // lines collected for the current <li>
+
+        const countTag = (line, tag) => {
+            const opens = (line.match(new RegExp(`<${tag}(?:\\s[^>]*)?>`, 'gi')) || []).length;
+            const closes = (line.match(new RegExp(`</${tag}>`, 'gi')) || []).length;
+            return opens - closes;
+        };
+
+        for (const line of lines) {
+            const liDelta = countTag(line, 'li');
+
+            if (liDepth === 0 && liDelta > 0) {
+                // Opening a new top-level <li> — start buffering
+                liBuffer = [line];
+                liDepth += liDelta;
+            } else if (liDepth > 0) {
+                liBuffer.push(line);
+                liDepth = Math.max(0, liDepth + liDelta);
+
+                if (liDepth === 0) {
+                    // Closing the last open <li> — flush buffer as one line
+                    out.push(liBuffer.map(l => l.trim()).join(' ').replace(/\s+/g, ' '));
+                    liBuffer = [];
+                }
+            } else {
+                out.push(line);
+            }
+        }
+
+        // Flush any unclosed buffer
+        if (liBuffer.length) out.push(liBuffer.map(l => l.trim()).join(' '));
+
+        return out.join('\n');
+    }
+    // ─── Convert <pre class="mermaid"> → ```mermaid ───
+    _convertMermaidPreBlocks(html) {
+        // Pattern 1: Full wrapper with title + pre.mermaid + caption
+        let r = html.replace(
+            /<div\s+class="diagram-wrapper">\s*(?:<(?:div|p)\s+class="diagram-title"[^>]*>([\s\S]*?)<\/(?:div|p)>\s*)?<pre\s+class="mermaid">([\s\S]*?)<\/pre>\s*(?:<(?:div|p|figcaption)\s+class="diagram-caption"[^>]*>([\s\S]*?)<\/(?:div|p|figcaption)>\s*)?<\/div>/gi,
+            (_, rawTitle, rawMermaid, rawCaption) =>
+                this._buildMermaidFence(rawTitle, rawMermaid, rawCaption)
+        );
+
+        // Pattern 2: Bare <pre class="mermaid"> without wrapper
+        r = r.replace(
+            /<pre\s+class="mermaid">([\s\S]*?)<\/pre>/gi,
+            (_, rawMermaid) => this._buildMermaidFence(null, rawMermaid, null)
+        );
+
+        return r;
+    }
+
+    _buildMermaidFence(rawTitle, rawMermaid, rawCaption) {
+        // Decode entities INSIDE mermaid content
+        let code = this._decodeEntities(rawMermaid.trim());
+
+        // Strip :::className (mindmap)
+        code = code.replace(/:::[\w-]+/g, '');
+
+        // Fix = in mindmap text
+        code = code.replace(/^(\s{2,}\S.*?)\s+=\s+(.*)$/gm, '\$1 as \$2');
+
+        // Fix comma before year in mindmap
+        code = code.replace(/^(\s{2,}.*),\s+(\d{4})\s*$/gm, '\$1 \$2');
+
+        // Fix \n → <br/> in flowchart nodes
+        code = code.replace(/$$"([^"]*?)"$$/g, m => m.replace(/\\n/g, '<br/>'));
+        code = code.replace(/$$([^$$"]*?\\n[^\]]*?)\]/g, m => m.replace(/\\n/g, '<br/>'));
+
+        // Clean whitespace
+        code = code.split('\n').map(l => l.trimEnd()).join('\n').trim();
+
+        const parts = [];
+
+        if (rawTitle) {
+            const t = this._decodeEntities(rawTitle.replace(/<[^>]*>/g, '').trim());
+            parts.push(`\n**${t}**\n`);
+        }
+
+        parts.push('```mermaid');
+        parts.push(code);
+        parts.push('```');
+
+        if (rawCaption) {
+            const cap = this._decodeEntities(rawCaption.replace(/<[^>]*>/g, '').trim());
+            parts.push(`\n*${cap}*`);
+        }
+
+        return '\n' + parts.join('\n') + '\n';
+    }
+
+    // ─── Convert HTML headings → H tags with id= (MDX-safe) ───
+    _convertHTMLHeadings(html) {
+        let r = html;
+
+        // Helper: strip tags, normalize whitespace, decode entities
+        const cleanHeadingText = (raw) =>
+            this._decodeEntities(
+                raw.replace(/<[^>]*>/g, ' ')   // replace tags with space (not empty) to preserve word boundaries
+                    .replace(/\s+/g, ' ')        // collapse all whitespace incl. newlines
+                    .trim()
+            );
+
+        // <h2 class="section-title"><span class="num">N</span> Title</h2>
+        // → ## N. Title  (no id needed, section already has id)
+        r = r.replace(
+            /<h2\s+class="section-title">\s*<span\s+class="num">(.*?)<\/span>\s*([\s\S]*?)\s*<\/h2>/gi,
+            (_, num, title) => {
+                const numClean = cleanHeadingText(num);
+                const clean = cleanHeadingText(title);
+                return `\n## ${numClean}. ${clean}\n`;
+            }
+        );
+
+        // <h2 id="..."> (without section-title class) — keep as HTML to avoid breaking nav/details
+        r = r.replace(
+            /<h2(\s[^>]*)?>([\\s\\S]*?)<\/h2>/gi,
+            (match, attrs, content) => {
+                // Already replaced section-title h2s above; skip those (they become ## markdown)
+                if (attrs && /class\s*=\s*["'][^"']*section-title[^"']*["']/i.test(attrs)) return match;
+                const idMatch = attrs ? attrs.match(/id="([^"]*)"/) : null;
+                const clean = cleanHeadingText(content);
+                if (!clean) return '';
+                // Keep as HTML h2 — safe in all contexts (nav, details, section...)
+                return idMatch
+                    ? `\n<h2 id="${idMatch[1]}">${clean}</h2>\n`
+                    : `\n<h2>${clean}</h2>\n`;
+            }
+        );
+
+        // <h3 ...>content</h3> → <h3 id="...">content</h3> (keep as HTML for MDX anchor support)
+        r = r.replace(
+            /<h3((?:\s+[^>]*?)?)>([\s\S]*?)<\/h3>/gi,
+            (_, attrs, content) => {
+                const idMatch = attrs.match(/id="([^"]*)"/i);
+                const clean = cleanHeadingText(content);
+                if (!clean) return '';
+                if (idMatch) {
+                    // Keep as HTML element so the id= attribute is preserved correctly in MDX
+                    return `\n<h3 id="${idMatch[1]}">${clean}</h3>\n`;
+                }
+                return `\n### ${clean}\n`;
+            }
+        );
+
+        // <h4>content</h4> → #### content
+        r = r.replace(
+            /<h4((?:\s+[^>]*)?)>([\s\S]*?)<\/h4>/gi,
+            (_, attrs, content) => {
+                const idMatch = attrs.match(/id="([^"]*)"/i);
+                const clean = cleanHeadingText(content);
+                if (!clean) return '';
+                return idMatch
+                    ? `\n<h4 id="${idMatch[1]}">${clean}</h4>\n`
+                    : `\n#### ${clean}\n`;
+            }
+        );
+
+        return r;
+    }
+
+    // ─── Map HTML classes to site CSS equivalents ───
+    _mapHTMLClasses(html) {
+        let r = html;
+
+        // Adjust these mappings to match YOUR global.css!
+        const classMap = {
+            'card accent-right': 'card right',
+            'card accent-primary': 'card primary',
+            'card accent-green': 'card accent',
+            'card accent-gold': 'card gold',
+        };
+
+        for (const [from, to] of Object.entries(classMap)) {
+            r = r.replaceAll(`class="${from}"`, `class="${to}"`);
+        }
+
+        // Wave cards → card (preserve border style)
+        r = r.replace(/<div\s+class="wave-card"/gi, '<div class="card"');
+
+        // Remove wave-num (heading already has the number)
+        r = r.replace(/<div\s+class="wave-num"[^>]*>.*?<\/div>/gi, '');
+
+        return r;
+    }
+
+    // ─── HTML Entity Decoder ───
+    static _ENTITY_MAP = {
+        '&hellip;': '…', '&mdash;': '—', '&ndash;': '–', '&laquo;': '«', '&raquo;': '»',
+        '&bull;': '•', '&middot;': '·', '&ldquo;': '\u201C', '&rdquo;': '\u201D',
+        '&lsquo;': '\u2018', '&rsquo;': '\u2019',
+        '&nbsp;': '\u00A0', '&zwnj;': '\u200C', '&zwj;': '\u200D',
+        '&thinsp;': '\u2009', '&ensp;': '\u2002', '&emsp;': '\u2003',
+        '&rarr;': '→', '&larr;': '←', '&darr;': '↓', '&uarr;': '↑', '&harr;': '↔',
+        '&eacute;': 'é', '&Eacute;': 'É', '&egrave;': 'è', '&Egrave;': 'È',
+        '&ecirc;': 'ê', '&Ecirc;': 'Ê', '&euml;': 'ë',
+        '&aacute;': 'á', '&agrave;': 'à', '&acirc;': 'â', '&auml;': 'ä', '&Auml;': 'Ä',
+        '&ouml;': 'ö', '&Ouml;': 'Ö', '&uuml;': 'ü', '&Uuml;': 'Ü',
+        '&icirc;': 'î', '&ccedil;': 'ç', '&scaron;': 'š', '&szlig;': 'ß',
+        '&oslash;': 'ø', '&Oslash;': 'Ø', '&aring;': 'å', '&Aring;': 'Å',
+        '&aelig;': 'æ', '&AElig;': 'Æ', '&ntilde;': 'ñ',
+        '&times;': '×', '&divide;': '÷', '&copy;': '©', '&reg;': '®',
+        '&trade;': '™', '&deg;': '°', '&para;': '¶', '&sect;': '§',
+    };
+
+    _decodeEntities(text) {
+        if (!text) return '';
+        let r = text;
+
+        for (const [entity, char] of Object.entries(ContentPipeline._ENTITY_MAP)) {
+            r = r.replaceAll(entity, char);
+        }
+
+        // Numeric decimal: &#128214;
+        r = r.replace(/&#(\d+);/g, (_, c) => {
+            try { return String.fromCodePoint(parseInt(c, 10)); }
+            catch { return `&#${c};`; }
+        });
+
+        // Numeric hex: &#x02BB;
+        r = r.replace(/&#x([0-9a-f]+);/gi, (_, h) => {
+            try { return String.fromCodePoint(parseInt(h, 16)); }
+            catch { return `&#x${h};`; }
+        });
+
+        // &amp; last (avoid creating new entities)
+        r = r.replace(/&amp;(?!#?\w+;)/g, '&');
+
+        return r;
+    }
+
+    // ─── Decode entities but skip inside mermaid code fences ───
+    _decodeEntitiesSelective(content) {
+        let inMermaid = false;
+        return content.split('\n').map(line => {
+            if (line.trim() === '```mermaid') { inMermaid = true; return line; }
+            if (inMermaid && line.trim() === '```') { inMermaid = false; return line; }
+            if (inMermaid) return line; // Already decoded in _buildMermaidFence
+            return this._decodeEntities(line);
+        }).join('\n');
+    }
+    /*
     async processHTML(filePath, options = {}) {
         console.log(`   🌐 پردازش HTML...`);
         let content = await fs.readFile(filePath, 'utf-8');
@@ -360,7 +911,7 @@ export class ContentPipeline {
             metadata: { description }
         };
     }
-
+    */
     async processZipBook(zipPath, options = {}) {
         if (!this.bookStructureProcessor) {
             throw new Error('پشتیبانی ZIP نصب نشده. npm install adm-zip');
@@ -474,31 +1025,53 @@ export class ContentPipeline {
         if (!content) return '';
         let result = content;
 
-        // 1. Protect code blocks
+        // ─── Step 1: Protect code/mermaid fences ───────────────────────
         const codeBlocks = [];
         result = result.replace(/```[\s\S]*?```/g, match => {
             codeBlocks.push(match);
             return `__CODE_BLOCK_${codeBlocks.length - 1}__`;
         });
 
-        // 2. Protect HTML tags (simple version)
+        // ─── Step 2: Protect HTML tags (complete tags including attributes) ───
+        // Use a more robust matcher that handles multiline attributes
         const htmlTags = [];
-        result = result.replace(/<[^>]+>/g, match => {
+        result = result.replace(/<(?:[a-zA-Z][a-zA-Z0-9]*|\/?[a-zA-Z][a-zA-Z0-9]*)[^>]*>/g, match => {
             htmlTags.push(match);
             return `__HTML_TAG_${htmlTags.length - 1}__`;
         });
 
-        // 3. Escape { and } in the remaining text
-        // We use entities because backslashes are unreliable in MDX/Vite
+        // ─── Step 3: Protect MDX-safe curly-brace patterns ───────────────
+        const safePatterns = [];
+
+        // 3a. Protect markdown heading anchor {#id} (MDX remark-slug syntax)
+        result = result.replace(/\{#[\w-]+\}/g, match => {
+            safePatterns.push(match);
+            return `__SAFE_PAT_${safePatterns.length - 1}__`;
+        });
+
+        // 3b. Protect var(--css-var) references
+        result = result.replace(/var\(--[\w-]+(?:\s*,\s*[^)]+)?\)/g, match => {
+            safePatterns.push(match);
+            return `__SAFE_PAT_${safePatterns.length - 1}__`;
+        });
+
+        // 3c. Protect numeric/hex HTML entities (already-escaped, must not be double-escaped)
+        result = result.replace(/&#(?:\d+|x[0-9a-fA-F]+);/g, match => {
+            safePatterns.push(match);
+            return `__SAFE_PAT_${safePatterns.length - 1}__`;
+        });
+
+        // ─── Step 4: Escape bare { and } that remain ────────────────────
         result = result.replace(/\{/g, '&#123;');
         result = result.replace(/\}/g, '&#125;');
 
-        // 4. Escape backslashes that could be interpreted as JS escape sequences (\u, \x)
+        // ─── Step 5: Escape dangerous backslash sequences ───────────────
         result = result.replace(/\\([uxUX])/g, '&#92;$1');
 
-        // 5. Restore HTML tags and code blocks
-        result = result.replace(/__HTML_TAG_(\d+)__/g, (_, idx) => htmlTags[idx]);
-        result = result.replace(/__CODE_BLOCK_(\d+)__/g, (_, idx) => codeBlocks[idx]);
+        // ─── Step 6: Restore all protected tokens (reverse order) ────────
+        result = result.replace(/__SAFE_PAT_(\d+)__/g, (_, idx) => safePatterns[+idx]);
+        result = result.replace(/__HTML_TAG_(\d+)__/g, (_, idx) => htmlTags[+idx]);
+        result = result.replace(/__CODE_BLOCK_(\d+)__/g, (_, idx) => codeBlocks[+idx]);
 
         return result;
     }
@@ -543,7 +1116,7 @@ export class ContentPipeline {
             description: existing.description || result.ai?.description || result.ai?.summary?.slice(0, 160) || result.metadata?.description || '',
             lang: lang,
             publishDate: existing.publishDate || existing.date || new Date().toISOString().split('T')[0],
-            author: existing.author || defaultAuthor,
+            author: existing.author || result.metadata?.author || defaultAuthor,
             sourceType: existing.sourceType || result.type,
             interface: existing.interface || (result.metadata?.bookSlug ? 'iran' : undefined)
         };
@@ -988,6 +1561,7 @@ ${chapters.map((ch, i) => {
         console.log('═'.repeat(60));
         console.log(`   📄 LaTeX: ${this.stats.latex}`);
         console.log(`   📝 Markdown: ${this.stats.markdown}`);
+        console.log(`   🌐 HTML: ${this.stats.html || 0}`);    // 🟢 NEW
         console.log(`   📑 PDF: ${this.stats.pdf}`);
         console.log(`   📃 Word: ${this.stats.word}`);
         console.log(`   🤖 AI: ${this.stats.aiTagged}`);

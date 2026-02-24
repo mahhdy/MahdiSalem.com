@@ -1,0 +1,30 @@
+﻿[2m14:58:14[22m [34m[content][39m Syncing content
+[2m14:58:14[22m [34m[content][39m Synced content
+[2m14:58:14[22m [34m[types][39m Generated [2m459ms[22m
+[2m14:58:14[22m [34m[build][39m output: [34m"static"[39m
+[2m14:58:14[22m [34m[build][39m mode: [34m"static"[39m
+[2m14:58:14[22m [34m[build][39m directory: [34mD:\Code\MahdiSalem.com\dist\[39m
+[2m14:58:14[22m [34m[build][39m Collecting build info...
+[2m14:58:14[22m [34m[build][39m [32m✓ Completed in 497ms.[39m
+[2m14:58:14[22m [34m[build][39m Building static entrypoints...
+node.exe : [31m[1m14:58:16[22m [ERROR] [vite][39m [31m✗[39m 
+Build failed in 1.66s
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
+    + CategoryInfo          : NotSpecified: ([31m[1m14:58:...fail 
+   ed in 1.66s:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[@mdx-js/rollup] Expected a closing tag for `<li>` (43:11-43:15) 
+before the end of `paragraph`
+file: D:/Code/MahdiSalem.com/src/content/articles/fa/freedom_article
+_full.mdx:43:11
+  [1mLocation:[22m
+    [4mD:/Code/MahdiSalem.com/src/content/articles/fa/freedom_artic
+le_full.mdx:43:11[24m
+  [1mStack trace:[22m
+[2m    at Object.transform (file:///D:/Code/MahdiSalem.com/node_mod
+ules/@astrojs/mdx/dist/vite-plugin-mdx.js:62:15)[22m

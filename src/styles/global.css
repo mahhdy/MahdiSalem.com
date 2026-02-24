@@ -198,6 +198,7 @@
 /* Component styles - نمودارها و محتوای خاص                        */
 /* ═══════════════════════════════════════════════════════════════ */
 @layer components {
+
   /* ─────────────────────────────────────────────────────────────── */
   /* نمودارهای Mermaid                                              */
   /* ─────────────────────────────────────────────────────────────── */
@@ -208,8 +209,9 @@
     padding: 2rem;
     background: #ffffff;
     border-radius: 16px;
-    overflow: hidden; /* Changed to hidden, inner .mermaid handles scroll */
-    max-height: none; 
+    overflow: hidden;
+    /* Changed to hidden, inner .mermaid handles scroll */
+    max-height: none;
     border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow:
       0 4px 20px rgba(0, 0, 0, 0.04),
@@ -379,8 +381,13 @@
   }
 
   @keyframes mermaidModalFade {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 
   .mermaid-modal .mermaid-content {
@@ -479,12 +486,14 @@
   /* Diagrams with minimum width for legibility */
   .mermaid-type-gantt .mermaid,
   .mermaid-type-timeline .mermaid {
-    justify-content: flex-start; /* Key to allow scrolling without centering clipping */
+    justify-content: flex-start;
+    /* Key to allow scrolling without centering clipping */
   }
 
   .mermaid-type-gantt svg,
   .mermaid-type-timeline svg {
-    min-width: 1000px; /* Force minimum width for horizontal diagrams */
+    min-width: 1000px;
+    /* Force minimum width for horizontal diagrams */
   }
 
   .mermaid-type-mindmap svg {
@@ -507,27 +516,6 @@
   .mermaid .edgeLabel,
   .mermaid text {
     font-family: "Vazirmatn", sans-serif !important;
-  }
-
-  /* رنگ‌های نمودار در حالت تاریک */
-  html.dark .mermaid .node rect,
-  html.dark .mermaid .node circle,
-  html.dark .mermaid .node polygon {
-    fill: #334155;
-    stroke: #64748b;
-  }
-
-  html.dark .mermaid .node text {
-    fill: #e2e8f0;
-  }
-
-  html.dark .mermaid .edgePath path {
-    stroke: #64748b;
-  }
-
-  html.dark .mermaid .edgeLabel {
-    background-color: #1e293b;
-    color: #e2e8f0;
   }
 
   /* ─────────────────────────────────────────────────────────────── */
@@ -668,11 +656,9 @@
 
   /* Insight Box - کادر یافته */
   .insight {
-    background: linear-gradient(
-      135deg,
-      rgba(41, 128, 185, 0.05) 0%,
-      rgba(41, 128, 185, 0.02) 100%
-    );
+    background: linear-gradient(135deg,
+        rgba(41, 128, 185, 0.05) 0%,
+        rgba(41, 128, 185, 0.02) 100%);
     border: 1px solid #2980b9;
     border-radius: 8px;
     padding: 1.5rem;
@@ -681,11 +667,9 @@
   }
 
   html.dark .insight {
-    background: linear-gradient(
-      135deg,
-      rgba(41, 128, 185, 0.1) 0%,
-      rgba(41, 128, 185, 0.05) 100%
-    );
+    background: linear-gradient(135deg,
+        rgba(41, 128, 185, 0.1) 0%,
+        rgba(41, 128, 185, 0.05) 100%);
     border-color: #3498db;
   }
 
@@ -1436,6 +1420,7 @@
 }
 
 @media (min-width: 768px) {
+
   .container-article,
   .container-wide {
     padding-left: 1.5rem;
@@ -1444,6 +1429,7 @@
 }
 
 @media (min-width: 1024px) {
+
   .container-article,
   .container-wide {
     padding-left: 2rem;
@@ -1714,6 +1700,7 @@ html.dark .mermaid-modal .mermaid-content {
 html.dark .mermaid-type-gantt .taskTextOutsideRight {
   fill: #e2e8f0 !important;
 }
+
 html.dark .mermaid-type-gantt .grid .tick line {
   stroke: #334155;
 }
@@ -1722,6 +1709,7 @@ html.dark .mermaid-type-gantt .grid .tick line {
 .mermaid-type-gantt::-webkit-scrollbar {
   height: 8px;
 }
+
 .mermaid-type-gantt::-webkit-scrollbar-thumb {
   background: #94a3b8;
   border-radius: 4px;

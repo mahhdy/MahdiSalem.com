@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>آزادی به مثابه... | مهدی سالم | ۲۰۲۶</title>
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap"
     rel="stylesheet" />
 
+  <!-- Mermaid -->
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
     mermaid.initialize({
@@ -31,6 +33,7 @@
   </script>
 
   <style>
+    /* ─── CSS Variables ─── */
     :root {
       --clr-primary: #1a5276;
       --clr-secondary: #148f77;
@@ -49,6 +52,7 @@
       --font: 'Vazirmatn', Tahoma, sans-serif;
     }
 
+    /* ─── Reset & Base ─── */
     *,
     *::before,
     *::after {
@@ -70,6 +74,7 @@
       direction: rtl;
     }
 
+    /* ─── Layout ─── */
     .container {
       max-width: 1100px;
       margin: 0 auto;
@@ -82,6 +87,7 @@
       margin-left: calc(-50vw + 50%);
     }
 
+    /* ─── Page Header ─── */
     .page-header {
       background: linear-gradient(135deg, #1a5276 0%, #148f77 50%, #1a5276 100%);
       color: #fff;
@@ -124,6 +130,7 @@
       position: relative;
     }
 
+    /* ─── TOC ─── */
     .toc {
       background: var(--clr-surface);
       border: 1px solid var(--clr-border);
@@ -161,6 +168,7 @@
       border-bottom-color: var(--clr-accent);
     }
 
+    /* ─── Section Headings ─── */
     .section-title {
       font-size: 1.8rem;
       font-weight: 900;
@@ -197,6 +205,7 @@
       margin: 1.5rem 0 .5rem;
     }
 
+    /* ─── Cards ─── */
     .card {
       background: var(--clr-surface);
       border: 1px solid var(--clr-border);
@@ -227,6 +236,7 @@
       border-right: 4px solid var(--clr-primary);
     }
 
+    /* ─── Info Box ─── */
     .info-box {
       background: var(--clr-highlight);
       border-right: 4px solid var(--clr-primary);
@@ -246,6 +256,7 @@
       border-right-color: var(--clr-accent);
     }
 
+    /* ─── Tables ─── */
     table {
       width: 100%;
       border-collapse: collapse;
@@ -285,13 +296,35 @@
 
     .diagram-wrapper {
       direction: ltr;
+      /* recommended for diagrams */
       text-align: center;
+      /* ensures SVG inside is centered */
       padding: 1.5rem;
       margin: 2rem 0;
       border-radius: 10px;
       border: 1px solid #ddd;
       background: #fafafa;
     }
+
+    /* ─── Diagram Wrapper (optional visual chrome) ─── */
+    /* To enable the wrapper box, remove the leading "/*" and trailing "* /" on this block,
+   then delete the inline explanation on the margin line. */
+    /*
+.diagram-wrapper {
+  background: var(--clr-surface, #fafafa);
+  border: 1px solid var(--clr-border, #e5e7eb);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 2rem auto;  /* centers the wrapper itself if it has a fixed or max width * /
+  box-shadow: var(--shadow-sm, 0 1px 2px rgba(0,0,0,.06));
+  overflow-x: auto;
+  direction: ltr;     /* recommended for diagrams * /
+  text-align: center; /* parent centering for inline-block scenarios * /
+  max-width: 100%;
+}
+*/
+
+    /* Titles / captions (RTL text but centered) */
     .diagram-wrapper .diagram-title {
       direction: rtl;
       text-align: center;
@@ -309,19 +342,41 @@
       margin-top: .75rem;
     }
 
+    /* Ensure the Mermaid block centers before and after render */
     .diagram-wrapper pre.mermaid,
     .diagram-wrapper .mermaid {
       text-align: center !important;
       margin: 0 auto !important;
     }
 
+    /* Center the generated SVG reliably */
     .diagram-wrapper svg {
       display: block !important;
       margin-left: auto !important;
       margin-right: auto !important;
       max-width: 100% !important;
+      /* prevent overflow on narrow containers */
       height: auto !important;
+      /* keep aspect ratio */
     }
+
+    /* Avoid overriding Mermaid engine layout;
+   Uncomment ONLY if you have a persistent left-offset bug in your setup. */
+    /*
+.diagram-wrapper svg > g {
+  transform: translateX(0) !important;
+}
+*/
+
+    /* ══════════════════════════════════════
+       Custom Mermaid Mindmap Node Styles
+       ══════════════════════════════════════
+       Targets :::className assigned in the mindmap.
+       Uses multiple selectors for Mermaid v10+ compatibility.
+       Adjust selectors if your Mermaid version differs.
+    */
+
+    /* ── Root ── */
     .rootNode>section,
     .rootNode .node-bkg {
       background: #ffffff !important;
@@ -330,6 +385,7 @@
       stroke-width: 2px !important;
     }
 
+    /* ── Negative (Red) ── */
     .branchNeg>section,
     .branchNeg .node-bkg {
       background: #fdecea !important;
@@ -370,6 +426,7 @@
       color: #c62828 !important;
     }
 
+    /* ── Positive (Green) ── */
     .branchPos>section,
     .branchPos .node-bkg {
       background: #e8f5e9 !important;
@@ -410,6 +467,7 @@
       color: #2e7d32 !important;
     }
 
+    /* ── Republican (Blue) ── */
     .branchRep>section,
     .branchRep .node-bkg {
       background: #e3f2fd !important;
@@ -450,6 +508,7 @@
       color: #1565c0 !important;
     }
 
+    /* ── Existential (Purple) ── */
     .branchEx>section,
     .branchEx .node-bkg {
       background: #f3e5f5 !important;
@@ -490,6 +549,7 @@
       color: #6a1b9a !important;
     }
 
+    /* ── Capability (Orange) ── */
     .branchCap>section,
     .branchCap .node-bkg {
       background: #fff8e1 !important;
@@ -530,6 +590,7 @@
       color: #e65100 !important;
     }
 
+    /* ── Critical / Post (Indigo) ── */
     .branchCrit>section,
     .branchCrit .node-bkg {
       background: #e8eaf6 !important;
@@ -570,6 +631,7 @@
       color: #283593 !important;
     }
 
+    /* ── Islamic-Iranian (Cyan) ── */
     .branchIr>section,
     .branchIr .node-bkg {
       background: #f1f8ff !important;
@@ -610,6 +672,7 @@
       color: #0277bd !important;
     }
 
+    /* ─── Collapsible Details ─── */
     details {
       background: var(--clr-surface);
       border: 1px solid var(--clr-border);
@@ -648,6 +711,7 @@
       padding: .5rem 1.25rem 1.25rem;
     }
 
+    /* ─── Tags / Badges ─── */
     .badge {
       display: inline-block;
       padding: .15rem .6rem;
@@ -687,6 +751,7 @@
       color: #566573;
     }
 
+    /* ─── Wave Section ─── */
     .wave-card {
       border-right: 5px solid;
       padding: 1.5rem;
@@ -705,6 +770,7 @@
       line-height: 1;
     }
 
+    /* ─── Print ─── */
     @media print {
       .page-header {
         padding: 2rem;
@@ -726,6 +792,7 @@
       }
     }
 
+    /* ─── Responsive ─── */
     @media (max-width: 768px) {
       .page-header h1 {
         font-size: 1.8rem;
@@ -749,6 +816,7 @@
 
 <body>
 
+  <!-- ═══════════════════ PAGE HEADER ═══════════════════ -->
   <header class="page-header">
     <h1>آزادی به مثابه&hellip;</h1>
     <div class="subtitle">جغرافیای مفهومی، تاریخ تعبیرسازی، و تحلیل انتقادی</div>
@@ -761,6 +829,7 @@
 
   <main class="container">
 
+    <!-- ═══════════════════ TOC ═══════════════════ -->
     <details>
       <summary class="no-print" style="font-weight:700;color:var(--clr-primary);cursor:pointer;margin:1.5rem 0;">
         &#128214; فهرست مطالب (برای کلیک) </summary>
@@ -787,6 +856,7 @@
         </ol>
       </nav>
     </details>
+    <!-- ═══════════════════ SECTION 1 ═══════════════════ -->
     <section id="sec1">
       <h2 class="section-title"><span class="num">۱</span> نگاه از بالا &mdash; نقشه‌ی شماتیک آزادی</h2>
 
@@ -797,6 +867,7 @@
         تا خواننده تصویر کلان را در ذهن داشته باشد.
       </div>
 
+      <!-- ─── 1.1 Timeline ─── -->
       <h3 id="sec1-1">۱.۱ خط زمانی ۲۵۰۰ ساله</h3>
 
       <div class="diagram-wrapper">
@@ -860,6 +931,7 @@ timeline
         <div class="diagram-caption">شکل ۱ (بخش دوم) &ndash;۱: خط زمانی ۲۵۰۰ ساله&zwnj;ی تحول تعبیرسازی از آزادی. هر
           نقطه نمایان‌گر لحظه‌ای کلیدی در بازتعریف مفهوم آزادی است.</div>
       </div>
+      <!-- ─── 1.2 Mind Map of Schools ─── -->
       <h3 id="sec1-2">۱.۲ نقشه‌ی مفهومی مکاتب</h3>
 
       <div class="diagram-wrapper">
@@ -948,6 +1020,7 @@ mindmap
           &laquo;خانواده‌ی مفهومی&raquo; را نمایش می‌دهد.</div>
       </div>
 
+      <!-- ─── 1.3 Family Classification ─── -->
       <h3 id="sec1-3">۱.۳ خانواده‌های مفهومی آزادی</h3>
 
       <div class="diagram-wrapper">
@@ -1015,6 +1088,7 @@ flowchart TB
           جمهوری‌خواهانه) در مرکز قرار دارند.</div>
       </div>
 
+      <!-- ─── 1.4 Thinker × Dimension Matrix ─── -->
       <h3 id="sec1-4">۱.۴ ماتریس متفکران و ابعاد آزادی</h3>
 
       <div class="info-box">
@@ -1205,6 +1279,7 @@ flowchart TB
         در <a href="#sec4">بخش چهارم</a> هر موضع به تفصیل واکاوی خواهد شد.
       </div>
 
+      <!-- ─── 1.5 Conceptual Enemies ─── -->
       <h3 id="sec1-5">۱.۵ نقشه‌ی دشمنان مفهومی آزادی</h3>
 
       <p>
@@ -1293,6 +1368,7 @@ flowchart TB
     </section>
 
 
+    <!-- ═══════════════════ SECTION 2 ═══════════════════ -->
     <section id="sec2">
       <h2 class="section-title"><span class="num">۲</span> هفت موج تحول در مفهوم آزادی</h2>
 
@@ -1367,6 +1443,7 @@ flowchart TB
   </pre>
         <div class="diagram-caption">شکل ۲&ndash;۱: (با تفصیل) هفت موج تحول مفهوم آزادی و زمینه‌های تاریخی هر موج</div>
       </div>
+      <!-- ════════ WAVE 1 ════════ -->
       <div class="wave-card" id="wave1" style="border-right-color:#1a5276;">
         <div class="wave-num" style="color:#1a5276;">۱</div>
         <h3>موج اول: از بردگی تا شهروندی <span class="badge badge-blue">یونان و روم باستان &#8226; ۵۰۰ ق.م&ndash;۳۰۰
@@ -1432,6 +1509,7 @@ flowchart TB
         </div>
       </div>
 
+      <!-- ════════ WAVE 2 ════════ -->
       <div class="wave-card" id="wave2" style="border-right-color:#7d3c98;">
         <div class="wave-num" style="color:#7d3c98;">۲</div>
         <h3>موج دوم: اختیار و اراده <span class="badge badge-purple">قرون وسطی &#8226; ۴۰۰&ndash;۱۴۰۰ م</span></h3>
@@ -1512,6 +1590,7 @@ flowchart TB
         </div>
       </div>
 
+      <!-- ════════ WAVE 3 ════════ -->
       <div class="wave-card" id="wave3" style="border-right-color:#b7950b;">
         <div class="wave-num" style="color:#b7950b;">۳</div>
         <h3>موج سوم: حقوق طبیعی و قرارداد اجتماعی <span class="badge badge-gold">مدرن اولیه &#8226;
@@ -1624,6 +1703,7 @@ flowchart LR
         </div>
       </div>
 
+      <!-- ════════ WAVE 4 ════════ -->
       <div class="wave-card" id="wave4" style="border-right-color:#b03a2e;">
         <div class="wave-num" style="color:#b03a2e;">۴</div>
         <h3>موج چهارم: فردیت و رهایی <span class="badge badge-red">قرن نوزدهم &#8226; ۱۸۰۰&ndash;۱۹۰۰</span></h3>
@@ -1743,6 +1823,7 @@ flowchart LR
         </div>
       </div>
 
+      <!-- ════════ WAVE 5 ════════ -->
       <div class="wave-card" id="wave5" style="border-right-color:#148f77;">
         <div class="wave-num" style="color:#148f77;">۵</div>
         <h3>موج پنجم: آزادی منفی در برابر مثبت <span class="badge badge-green">اواسط قرن بیستم &#8226;
@@ -1853,6 +1934,7 @@ flowchart TB
         </div>
       </div>
 
+      <!-- ════════ WAVE 6 ════════ -->
       <div class="wave-card" id="wave6" style="border-right-color:#2e86c1;">
         <div class="wave-num" style="color:#2e86c1;">۶</div>
         <h3>موج ششم: توانمندی، شناسایی، عدم سلطه <span class="badge badge-blue">اواخر قرن بیستم &#8226;
@@ -1940,6 +2022,7 @@ flowchart TB
         </p>
       </div>
 
+      <!-- ════════ WAVE 7 ════════ -->
       <div class="wave-card" id="wave7" style="border-right-color:#17a589;">
         <div class="wave-num" style="color:#17a589;">۷</div>
         <h3>موج هفتم: دیجیتال، بوم‌شناختی، پسااستعماری <span class="badge badge-green">قرن بیست‌ویکم &#8226;

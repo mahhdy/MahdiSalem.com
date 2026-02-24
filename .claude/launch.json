@@ -3,15 +3,23 @@
   "configurations": [
     {
       "name": "astro-dev",
-      "runtimeExecutable": "npm",
+      "runtimeExecutable": "npm.cmd",
       "runtimeArgs": ["run", "dev"],
       "port": 4321
     },
     {
       "name": "admin-client",
-      "runtimeExecutable": "npm",
+      "runtimeExecutable": "npm.cmd",
       "runtimeArgs": ["run", "dev"],
+      "cwd": "admin/client",
       "port": 3333
+    },
+    {
+      "name": "admin-server",
+      "runtimeExecutable": "npm.cmd",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "admin/server",
+      "port": 3334
     }
   ]
 }
