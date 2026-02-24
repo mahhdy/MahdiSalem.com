@@ -130,7 +130,7 @@ const availableInterfaces = allInterfaces.filter((iface) =>
                 data-rating={book.rating}
                 data-order={book.data.order}
               >
-                {book.data.coverImage && (
+                {book.data.coverImage && (book.data.cardImage ?? 'show') !== 'hidden' && (
                   <img
                     src={book.data.coverImage}
                     alt={book.data.title}

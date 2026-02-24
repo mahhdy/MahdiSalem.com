@@ -381,6 +381,37 @@ export default function ContentEditor() {
                 })}
             </div>
 
+            {/* Cover Image Preview */}
+            {(frontmatter.coverImage || frontmatter.thumbnailUrl) && (
+                <div style={{ marginBottom: 24, background: 'var(--bg-card)', padding: '16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
+                    <label style={{ display: 'block', fontSize: '0.72rem', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: 600, marginBottom: 8 }}>
+                        Cover Image Preview
+                        {frontmatter.imageDisplay && (
+                            <span style={{ marginLeft: 8, textTransform: 'none', fontWeight: 400, opacity: 0.7 }}>
+                                (Page: {String(frontmatter.imageDisplay)} · Card: {String(frontmatter.cardImage || 'show')})
+                            </span>
+                        )}
+                    </label>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                        <img
+                            src={`http://localhost:4321${String(frontmatter.coverImage || frontmatter.thumbnailUrl)}`}
+                            alt="Cover preview"
+                            style={{
+                                maxHeight: 120,
+                                maxWidth: 200,
+                                borderRadius: 'var(--radius-md)',
+                                objectFit: 'cover',
+                                border: '1px solid var(--border)',
+                            }}
+                            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                        />
+                        <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+                            {String(frontmatter.coverImage || frontmatter.thumbnailUrl)}
+                        </div>
+                    </div>
+                </div>
+            )}
+
             {/* Add Custom Field */}
             <div style={{ marginBottom: 32, background: 'var(--bg-card)', padding: '16px', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)', display: 'flex', gap: 12, alignItems: 'flex-end', flexWrap: 'wrap' }}>
                 <div style={{ flex: '1 1 200px' }}>
@@ -471,6 +502,8 @@ function getFieldsForCollection(collection: string): FieldDef[] {
                 { key: 'author', label: 'Author', type: 'text' },
                 { key: 'publishDate', label: 'Publish Date', type: 'date' },
                 { key: 'coverImage', label: 'Cover Image', type: 'image' },
+                { key: 'imageDisplay', label: 'Image in Page', type: 'select', options: ['full', 'side', 'thumbnail', 'hidden'] },
+                { key: 'cardImage', label: 'Image in Card', type: 'select', options: ['show', 'hidden'] },
                 { key: 'pdfUrl', label: 'PDF URL', type: 'file' },
                 { key: 'order', label: 'Order', type: 'number' },
             ];
@@ -481,6 +514,8 @@ function getFieldsForCollection(collection: string): FieldDef[] {
                 { key: 'publishDate', label: 'Publish Date', type: 'date' },
                 { key: 'type', label: 'Type', type: 'select', options: ['statement', 'press', 'position'] },
                 { key: 'coverImage', label: 'Cover Image', type: 'image' },
+                { key: 'imageDisplay', label: 'Image in Page', type: 'select', options: ['full', 'side', 'thumbnail', 'hidden'] },
+                { key: 'cardImage', label: 'Image in Card', type: 'select', options: ['show', 'hidden'] },
             ];
         case 'multimedia':
             return [
@@ -488,6 +523,9 @@ function getFieldsForCollection(collection: string): FieldDef[] {
                 { key: 'type', label: 'Media Type', type: 'select', options: ['video', 'audio', 'podcast'] },
                 { key: 'mediaUrl', label: 'Media URL', type: 'text' },
                 { key: 'thumbnailUrl', label: 'Thumbnail URL', type: 'image' },
+                { key: 'coverImage', label: 'Cover Image', type: 'image' },
+                { key: 'imageDisplay', label: 'Image in Page', type: 'select', options: ['full', 'side', 'thumbnail', 'hidden'] },
+                { key: 'cardImage', label: 'Image in Card', type: 'select', options: ['show', 'hidden'] },
                 { key: 'platform', label: 'Platform', type: 'select', options: ['youtube', 'vimeo', 'soundcloud'] },
             ];
         default:

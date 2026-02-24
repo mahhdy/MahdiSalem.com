@@ -80,9 +80,34 @@ const chapterList = chapters.map((c: any) => {
 ) : (
   <BaseLayout title={entry.data.title} description={entry.data.description}>
     <div class="container-narrow py-16">
-      {entry.data.coverImage && <img src={entry.data.coverImage} alt={entry.data.title} class="w-full max-w-sm mx-auto rounded-xl mb-8" loading="lazy" />}
-      <h1 class="text-3xl md:text-4xl font-bold mb-4">{entry.data.title}</h1>
-      <p class="text-lg text-text-muted dark:text-text-dark-muted mb-8">{entry.data.description}</p>
+      {/* Full-width cover image (default) */}
+      {entry.data.coverImage && (entry.data.imageDisplay ?? 'full') === 'full' && (
+        <img src={entry.data.coverImage} alt={entry.data.title} class="w-full max-w-sm mx-auto rounded-xl mb-8" loading="lazy" />
+      )}
+
+      {/* Side image — beside title */}
+      {entry.data.coverImage && (entry.data.imageDisplay) === 'side' ? (
+        <div class="flex flex-col sm:flex-row sm:items-start gap-6 mb-8">
+          <img src={entry.data.coverImage} alt={entry.data.title} class="w-full sm:w-40 md:w-48 h-auto rounded-xl object-cover shrink-0" loading="lazy" />
+          <div>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">{entry.data.title}</h1>
+            <p class="text-lg text-text-muted dark:text-text-dark-muted">{entry.data.description}</p>
+          </div>
+        </div>
+      ) : entry.data.coverImage && (entry.data.imageDisplay) === 'thumbnail' ? (
+        <div class="flex items-start gap-4 mb-8">
+          <img src={entry.data.coverImage} alt={entry.data.title} class="w-16 h-16 rounded-lg object-cover shrink-0 mt-1" loading="lazy" />
+          <div>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">{entry.data.title}</h1>
+            <p class="text-lg text-text-muted dark:text-text-dark-muted">{entry.data.description}</p>
+          </div>
+        </div>
+      ) : (
+        <>
+          <h1 class="text-3xl md:text-4xl font-bold mb-4">{entry.data.title}</h1>
+          <p class="text-lg text-text-muted dark:text-text-dark-muted mb-8">{entry.data.description}</p>
+        </>
+      )}
 
       {chapterList.length > 0 && (
         <div class="mb-8">

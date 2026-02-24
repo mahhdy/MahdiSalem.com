@@ -41,6 +41,7 @@ const slug = routeSlug ?? String(article.id ?? '').replace(/^fa\//, '').split('/
   categories={article.data.categories}
   tags={article.data.tags}
   coverImage={article.data.coverImage}
+  imageDisplay={article.data.imageDisplay}
   rawContent={article.body ?? ''}
   slug={slug}
   draft={article.data.draft}

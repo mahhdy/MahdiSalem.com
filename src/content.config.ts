@@ -9,6 +9,8 @@ const books = defineCollection({
     author: z.string().default('مهدی سالم'),
     lang: z.enum(['fa', 'en']),
     coverImage: z.string().optional(),
+    imageDisplay: z.enum(['full', 'side', 'thumbnail', 'hidden']).default('full'), // How cover image is displayed on the detail page
+    cardImage: z.enum(['show', 'hidden']).default('show'), // Whether cover image is shown in card/list views
     pdfUrl: z.string().optional(),
     showPdfViewer: z.boolean().default(false),
     pdfOnly: z.boolean().default(false),
@@ -55,6 +57,8 @@ const articles = defineCollection({
     tags: z.array(z.string()).default([]),
     'show-header': z.boolean().default(false),
     coverImage: z.string().optional(),
+    imageDisplay: z.enum(['full', 'side', 'thumbnail', 'hidden']).default('full'), // How cover image is displayed on the detail page
+    cardImage: z.enum(['show', 'hidden']).default('show'), // Whether cover image is shown in card/list views
     pdfUrl: z.string().optional(),
     pdfOnly: z.boolean().default(false),
     draft: z.boolean().default(false),
@@ -142,6 +146,8 @@ const multimedia = defineCollection({
     interface: z.string().optional(), // Category taxonomy field
     tags: z.array(z.string()).default([]),
     coverImage: z.string().optional(),
+    imageDisplay: z.enum(['full', 'side', 'thumbnail', 'hidden']).default('side'), // Default to 'side' for multimedia — focus on the media player
+    cardImage: z.enum(['show', 'hidden']).default('show'), // Whether cover image is shown in card/list views
     draft: z.boolean().default(false),
     hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
     showInContents: z.boolean().default(true), // Control visibility in All Contents page

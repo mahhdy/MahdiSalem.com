@@ -138,7 +138,7 @@ const dateFormatter = new Intl.DateTimeFormat("fa-IR", {
                 data-rating={article.rating}
               >
                 <div class="flex flex-col sm:flex-row sm:items-start gap-4">
-                  {article.data.coverImage && (
+                  {article.data.coverImage && (article.data.cardImage ?? 'show') !== 'hidden' && (
                     <img
                       src={article.data.coverImage}
                       alt={article.data.title}

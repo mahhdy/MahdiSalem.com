@@ -20,6 +20,7 @@ interface Props {
   categories?: string[];
   tags?: string[];
   coverImage?: string;
+  imageDisplay?: 'full' | 'side' | 'thumbnail' | 'hidden';
   rawContent?: string;
   slug?: string;
   draft?: boolean;
@@ -38,6 +39,7 @@ const {
   categories = [],
   tags = [],
   coverImage,
+  imageDisplay = 'full',
   rawContent = '',
   slug = '',
   draft = false,
@@ -62,46 +64,69 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
   <WidthToggle title={title} author={author} lang={lang} />
 
   <article class="content-with-header container-article py-10">
-    <!-- Header -->
-    <header class="mb-8">
-      {categories.length > 0 && (
-        <div class="flex flex-wrap gap-2 mb-3">
-          {categories.map((cat) => (
-            <span class="text-xs px-2.5 py-1 rounded-full bg-primary/10 text-primary dark:bg-primary-light/10 dark:text-primary-light font-medium">
-              {cat}
-            </span>
-          ))}
+    <!-- Header with optional side/thumbnail image -->
+    <header class={`mb-8 ${coverImage && imageDisplay === 'side' ? 'flex flex-col sm:flex-row sm:items-start gap-6' : coverImage && imageDisplay === 'thumbnail' ? 'flex items-start gap-4' : ''}`}>
+      {/* Side image — medium size beside header */}
+      {coverImage && imageDisplay === 'side' && (
+        <img
+          src={coverImage}
+          alt={title}
+          class="w-full sm:w-40 md:w-48 h-auto rounded-xl object-cover shrink-0"
+          loading="lazy"
+        />
+      )}
+
+      {/* Thumbnail image — small icon beside title */}
+      {coverImage && imageDisplay === 'thumbnail' && (
+        <img
+          src={coverImage}
+          alt={title}
+          class="w-16 h-16 rounded-lg object-cover shrink-0 mt-1"
+          loading="lazy"
+        />
+      )}
+
+      <div class="flex-1">
+        {categories.length > 0 && (
+          <div class="flex flex-wrap gap-2 mb-3">
+            {categories.map((cat) => (
+              <span class="text-xs px-2.5 py-1 rounded-full bg-primary/10 text-primary dark:bg-primary-light/10 dark:text-primary-light font-medium">
+                {cat}
+              </span>
+            ))}
+          </div>
+        )}
+
+        {showHeader && (
+          <h1 class="text-3xl md:text-4xl font-bold mb-4">{title}</h1>
+        )}
+
+        <div class="flex flex-wrap items-center gap-4 text-sm text-text-muted dark:text-text-dark-muted">
+          <span>{author}</span>
+          <span>&middot;</span>
+          <time datetime={publishDate.toISOString()}>
+            {dateFormatter.format(publishDate)}
+          </time>
+          {updatedDate && (
+            <>
+              <span>&middot;</span>
+              <time datetime={updatedDate.toISOString()}>
+                Updated: {dateFormatter.format(updatedDate)}
+              </time>
+            </>
+          )}
+          {rawContent && (
+            <>
+              <span>&middot;</span>
+              <ReadingTime lang={lang} content={rawContent} />
+            </>
+          )}
         </div>
-      )}
-
-      {showHeader && (
-        <h1 class="text-3xl md:text-4xl font-bold mb-4">{title}</h1>
-      )}
-
-      <div class="flex flex-wrap items-center gap-4 text-sm text-text-muted dark:text-text-dark-muted">
-        <span>{author}</span>
-        <span>&middot;</span>
-        <time datetime={publishDate.toISOString()}>
-          {dateFormatter.format(publishDate)}
-        </time>
-        {updatedDate && (
-          <>
-            <span>&middot;</span>
-            <time datetime={updatedDate.toISOString()}>
-              Updated: {dateFormatter.format(updatedDate)}
-            </time>
-          </>
-        )}
-        {rawContent && (
-          <>
-            <span>&middot;</span>
-            <ReadingTime lang={lang} content={rawContent} />
-          </>
-        )}
       </div>
     </header>
 
-    {coverImage && (
+    {/* Full-width cover image (default mode) */}
+    {coverImage && imageDisplay === 'full' && (
       <img
         src={coverImage}
         alt={title}
@@ -109,6 +134,7 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
         loading="lazy"
       />
     )}
+    {/* 'hidden' and 'side'/'thumbnail' modes: no full-width image rendered here */}
 
     <!-- Content -->
     <div class="prose article-content">

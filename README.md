@@ -84,6 +84,23 @@ All content must be placed in `src/content/` under the respective collection (`a
 - **Books:** Books use a single `index.mdx` entry containing all chapters.
 - **Frontmatter Headers:** By default, layout components hide the primary `H1` in articles/books to prevent redundancy. Override with `show-header: true` if needed.
 
+### Cover Image Display Control
+
+Two frontmatter fields control how cover images appear:
+
+- **`imageDisplay`**: Controls image rendering on the **detail page**.
+  - `full` (default) — full-width banner image above content
+  - `side` — small image beside the title/header
+  - `thumbnail` — tiny icon-sized image next to title
+  - `hidden` — image exists in frontmatter but is not rendered on the page
+  - *Multimedia pages default to `side` so the media player stays prominent.*
+
+- **`cardImage`**: Controls image rendering in **card/list views**.
+  - `show` (default) — cover image is visible in article/book cards
+  - `hidden` — cover image is hidden in card/list views
+
+Both fields are available as dropdown selects in the Admin Panel content editor.
+
 ### Taxonomy (Categories & Tags)
 
 - **Interface:** Use `interface` inside frontmatter to assign the primary category identifier (e.g., `ontology`, `descriptive-politics`). The complete hierarchical list is maintained in `src/data/categories.ts`.

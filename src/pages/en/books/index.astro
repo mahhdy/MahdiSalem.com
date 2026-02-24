@@ -85,7 +85,7 @@ const availableInterfaces = allInterfaces.filter((iface) => relevantCategories.s
             data-rating={book.rating}
             data-order={book.data.order}
           >
-            {book.data.coverImage && (
+            {book.data.coverImage && (book.data.cardImage ?? 'show') !== 'hidden' && (
               <img src={book.data.coverImage} alt={book.data.title} class="w-full h-56 object-cover" loading="lazy" />
             )}
             <div class="p-6">
