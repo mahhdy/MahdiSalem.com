@@ -1,15 +1,16 @@
 ---
-title: در چیستی صدق و توجیه، و تحلیلی بر مبانی تحلیلی صدق پذیری
-description: صدق و اثبات (توجیه)
+title: "در چیستی صدق و توجیه، و تحلیلی بر مبانی تحلیلی صدق پذیری"
+description: "صدق و اثبات (توجیه)"
 lang: fa
-publishDate: '2023-11-27T00:00:00.000Z'
+publishDate: 2023-11-27
 type: video
-mediaUrl: 'https://youtu.be/sHW1rYVlAPk'
-duration: 1300
+mediaUrl: "https://youtu.be/sHW1rYVlAPk"
+# thumbnailUrl: "/images/truth-justification.jpg"
+duration: 2500
 platform: youtube
 categories:
-  - فلسفه
-  - معرفت‌شناسی
+  - "فلسفه"
+  - "معرفت‌شناسی"
 tags:
   - clubhouse
   - ویدیو
@@ -17,7 +18,6 @@ draft: false
 hidden: false
 interface: epistemology
 showInContents: true
-coverImage: /images/truth-justification_s.png
 ---
 
 ## زمینه‌ی موضوعی

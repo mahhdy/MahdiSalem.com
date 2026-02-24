@@ -10,41 +10,28 @@ keywords:
   - آزادی
   - برابری
   - عدم سلطه
-readingTime: 5
+readingTime: 25
 difficulty: متوسط
 pdfUrl: /documents/articles/Fredoom-As-.pdf
 pdfOnly: false
 showPdfViewer: true
 draft: true
 tags:
-  - آزادی،برابری،فلسفه،سیاست
+  - آزادی
+  - فلسفه‌ی سیاسی
+  - برابری
+  - عدم سلطه
+  - عدم مداخله
+  - آزادی مثبت
+  - آزادی منفی
 coverImage: /images/articles/covers/freedom_concepts.png
 interface: philosophy-of-politics
 showInContents: true
+categories:
+  - فلسفه سیاسی، آزادی، حقوق
 ---
-
-
 <div dir="rtl" lang="fa">
-﻿
 
-
-
-
-
-
-&#123;/* Fonts */&#125;
-
-
-
-&#123;/* Mermaid */&#125;
-
-
-
-
-
-
-
-&#123;/* ═══════════════════ PAGE HEADER ═══════════════════ */&#125;
 <header class="page-header">
   <h1>آزادی به مثابه…</h1>
   <div class="subtitle">جغرافیای مفهومی، تاریخ تعبیرسازی، و تحلیل انتقادی</div>
@@ -57,7 +44,6 @@ showInContents: true
 
 <main class="container">
 
-&#123;/* ═══════════════════ TOC ═══════════════════ */&#125;
  <details>
 <summary class="no-print"> 📖 فهرست مطالب (برای کلیک) </summary>
 - [بخش یکم: نگاه از بالا — نقشه‌ی شماتیک آزادی](#sec1)
@@ -75,7 +61,7 @@ showInContents: true
 - [پیوست ب: نکات تحلیلی تکمیلی](#appB)
 - [کتاب‌شناسی و منابع](#bib)
  </details>
-&#123;/* ═══════════════════ SECTION 1 ═══════════════════ */&#125;
+
 <section id="sec1">
 <h2 class="section-title"><span class="num">۱</span> نگاه از بالا — نقشه‌ی شماتیک آزادی</h2>
 
@@ -86,7 +72,6 @@ showInContents: true
   تا خواننده تصویر کلان را در ذهن داشته باشد.
 </div>
 
-&#123;/* ─── 1.1 Timeline ─── */&#125;
 <h3 id="sec1-1">۱.۱ خط زمانی ۲۵۰۰ ساله</h3>
 
 <div class="diagram-wrapper">
@@ -160,89 +145,81 @@ timeline
   
 ```mermaid
 mindmap
-  root((FREEDOM)):::rootNode
-
-    Negative Liberty:::branchNeg
-      Hobbes:::nodeNeg
-        Absence of external impediments:::textNeg
-      Bentham:::nodeNeg
-        Non-interference by law:::textNeg
-      Constant:::nodeNeg
-        Liberty of the Moderns:::textNeg
-      Berlin:::nodeNeg
-        Two Concepts of Liberty, 1958:::textNeg
-      Hayek:::nodeNeg
-        Spontaneous order:::textNeg
-      Nozick:::nodeNeg
-        Self-ownership:::textNeg
-
-    Positive Liberty:::branchPos
-      Rousseau:::nodePos
-        General Will / Self-legislation:::textPos
-      Kant:::nodePos
-        Autonomy of practical reason:::textPos
-      Hegel:::nodePos
-        Ethical life / Self-realization:::textPos
-      T.H. Green:::nodePos
-        Rational self-direction:::textPos
-      Taylor:::nodePos
-        Authenticity / Strong evaluation:::textPos
-      Marx:::nodePos
-        Emancipation from alienation:::textPos
-
-    Republican Liberty:::branchRep
-      Cicero:::nodeRep
-        Libertas = non-domination:::textRep
-      Machiavelli:::nodeRep
-        Civic virtue:::textRep
-      Skinner:::nodeRep
-        Neo-Roman liberty:::textRep
-      Pettit:::nodeRep
-        Freedom as non-domination:::textRep
-
-    Existential Liberty:::branchEx
-      Kierkegaard:::nodeEx
-        Radical choice / Anxiety:::textEx
-      Heidegger:::nodeEx
-        Openness / Letting-be:::textEx
-      Sartre:::nodeEx
-        Condemned to be free:::textEx
-      Arendt:::nodeEx
-        Freedom as action / Natality:::textEx
-
-    Capability Approach:::branchCap
-      Sen:::nodeCap
-        Substantive freedoms:::textCap
-      Nussbaum:::nodeCap
-        Human capabilities:::textCap
-
-    Critical / Post:::branchCrit
-      Foucault:::nodeCrit
-        Resistance / Parrhesia:::textCrit
-      Butler:::nodeCrit
-        Performative subversion:::textCrit
-      Fanon:::nodeCrit
-        Decolonial liberation:::textCrit
-      Spivak:::nodeCrit
-        Subaltern agency:::textCrit
-      Fricker:::nodeCrit
-        Epistemic freedom:::textCrit
-
-    Islamic-Iranian:::branchIr
-      Quran:::nodeIr
-        Fitrah / Taklif:::textIr
-      Rumi-Sufism:::nodeIr
-        Mystical liberation:::textIr
-      Iranshahri:::nodeIr
-        Justice vs despotism:::textIr
-      Modern Muslim Thinkers:::nodeIr
-        Shariati / Soroush / Nasr:::textIr
+  root((FREEDOM))
+    Negative Liberty
+      Hobbes
+        Absence of external impediments
+      Bentham
+        Non-interference by law
+      Constant
+        Liberty of the Moderns
+      Berlin
+        Two Concepts of Liberty, 1958
+      Hayek
+        Spontaneous order
+      Nozick
+        Self-ownership
+    Positive Liberty
+      Rousseau
+        General Will / Self-legislation
+      Kant
+        Autonomy of practical reason
+      Hegel
+        Ethical life / Self-realization
+      T.H. Green
+        Rational self-direction
+      Taylor
+        Authenticity / Strong evaluation
+      Marx
+        Emancipation from alienation
+    Republican Liberty
+      Cicero
+        Libertas = non-domination
+      Machiavelli
+        Civic virtue
+      Skinner
+        Neo-Roman liberty
+      Pettit
+        Freedom as non-domination
+    Existential Liberty
+      Kierkegaard
+        Radical choice / Anxiety
+      Heidegger
+        Openness / Letting-be
+      Sartre
+        Condemned to be free
+      Arendt
+        Freedom as action / Natality
+    Capability Approach
+      Sen
+        Substantive freedoms
+      Nussbaum
+        Human capabilities
+    Critical / Post
+      Foucault
+        Resistance / Parrhesia
+      Butler
+        Performative subversion
+      Fanon
+        Decolonial liberation
+      Spivak
+        Subaltern agency
+      Fricker
+        Epistemic freedom
+    Islamic-Iranian
+      Quran
+        Fitrah / Taklif
+      Rumi-Sufism
+        Mystical liberation
+      Iranshahri
+        Justice vs despotism
+      Modern Muslim Thinkers
+        Shariati / Soroush / Nasr
 ```
 
   <figcaption>شکل ۱–۲: نقشه‌ی ذهنی مکاتب اصلی تعبیرسازی از آزادی. هر شاخه یک &laquo;خانواده‌ی مفهومی&raquo; را نمایش می‌دهد.</figcaption>
 </div>
 
-&#123;/* ─── 1.3 Family Classification ─── */&#125;
 <h3 id="sec1-3">۱.۳ خانواده‌های مفهومی آزادی</h3>
 
 <div class="diagram-wrapper">
@@ -311,7 +288,6 @@ flowchart TB
   <figcaption>شکل ۱–۳: طبقه‌بندی خانوادگی تعابیر آزادی. سه تعبیر بنیادین (منفی، مثبت، جمهوری‌خواهانه) در مرکز قرار دارند.</figcaption>
 </div>
 
-&#123;/* ─── 1.4 Thinker × Dimension Matrix ─── */&#125;
 <h3 id="sec1-4">۱.۴ ماتریس متفکران و ابعاد آزادی</h3>
 
 <div class="info-box">
@@ -502,7 +478,6 @@ flowchart TB
   در <a href="#sec4">بخش چهارم</a> هر موضع به تفصیل واکاوی خواهد شد.
 </div>
 
-&#123;/* ─── 1.5 Conceptual Enemies ─── */&#125;
 <h3 id="sec1-5">۱.۵ نقشه‌ی دشمنان مفهومی آزادی</h3>
 
 <p> هر تعبیر از آزادی در تقابل با یک &laquo;دشمن مفهومی&raquo; شکل گرفته است. نقشه‌ی زیر نشان می‌دهد که هر تعبیر چه چیزی را <em>نفی</em> می‌کند. </p>
@@ -579,8 +554,6 @@ flowchart TB
 
 </section>
 
-
-&#123;/* ═══════════════════ SECTION 2 ═══════════════════ */&#125;
 <section id="sec2">
 <h2 class="section-title"><span class="num">۲</span> هفت موج تحول در مفهوم آزادی</h2>
 
@@ -659,7 +632,6 @@ flowchart TB
 
   <figcaption>شکل ۲–۱:  (با تفصیل) هفت موج تحول مفهوم آزادی و زمینه‌های تاریخی هر موج</figcaption>
 </div>
-&#123;/* ════════ WAVE 1 ════════ */&#125;
 <div class="wave-card" id="wave1">
   <div class="wave-num">۱</div>
   <h3>موج اول: از بردگی تا شهروندی <span class="badge badge-blue">یونان و روم باستان &#8226; ۵۰۰ ق.م–۳۰۰ م</span></h3>
@@ -689,7 +661,6 @@ flowchart TB
   </div>
 </div>
 
-&#123;/* ════════ WAVE 2 ════════ */&#125;
 <div class="wave-card" id="wave2">
   <div class="wave-num">۲</div>
   <h3>موج دوم: اختیار و اراده <span class="badge badge-purple">قرون وسطی &#8226; ۴۰۰–۱۴۰۰ م</span></h3>
@@ -723,7 +694,6 @@ flowchart TB
   </div>
 </div>
 
-&#123;/* ════════ WAVE 3 ════════ */&#125;
 <div class="wave-card" id="wave3">
   <div class="wave-num">۳</div>
   <h3>موج سوم: حقوق طبیعی و قرارداد اجتماعی <span class="badge badge-gold">مدرن اولیه &#8226; ۱۵۰۰–۱۷۸۹</span></h3>
@@ -791,7 +761,6 @@ flowchart LR
   </div>
 </div>
 
-&#123;/* ════════ WAVE 4 ════════ */&#125;
 <div class="wave-card" id="wave4">
   <div class="wave-num">۴</div>
   <h3>موج چهارم: فردیت و رهایی <span class="badge badge-red">قرن نوزدهم &#8226; ۱۸۰۰–۱۹۰۰</span></h3>
@@ -860,7 +829,6 @@ flowchart LR
   </div>
 </div>
 
-&#123;/* ════════ WAVE 5 ════════ */&#125;
 <div class="wave-card" id="wave5">
   <div class="wave-num">۵</div>
   <h3>موج پنجم: آزادی منفی در برابر مثبت <span class="badge badge-green">اواسط قرن بیستم &#8226; ۱۹۴۰–۱۹۷۰</span></h3>
@@ -927,7 +895,6 @@ flowchart TB
   </div>
 </div>
 
-&#123;/* ════════ WAVE 6 ════════ */&#125;
 <div class="wave-card" id="wave6">
   <div class="wave-num">۶</div>
   <h3>موج ششم: توانمندی، شناسایی، عدم سلطه <span class="badge badge-blue">اواخر قرن بیستم &#8226; ۱۹۷۰–۲۰۰۰</span></h3>
@@ -989,7 +956,6 @@ flowchart TB
   <p> <span class="badge badge-red">سلطه (domination)</span> <span class="badge badge-red">محرومیت (deprivation)</span> <span class="badge badge-red">تحقیر / نادیده‌انگاری (misrecognition)</span> <span class="badge badge-red">ظلم ساختاری (structural injustice)</span> </p>
 </div>
 
-&#123;/* ════════ WAVE 7 ════════ */&#125;
 <div class="wave-card" id="wave7">
   <div class="wave-num">۷</div>
   <h3>موج هفتم: دیجیتال، بوم‌شناختی، پسااستعماری <span class="badge badge-green">قرن بیست‌ویکم &#8226; ۲۰۰۰+</span></h3>
@@ -1081,8 +1047,6 @@ flowchart TB
 
 </section>
 
-
-&#123;/* ═══════════════════ SECTION 3 ═══════════════════ */&#125;
 <section id="sec3">
 <h2 class="section-title"><span class="num">۳</span> آزادی در میان مکاتب و سنت‌های فکری</h2>
 
@@ -1150,7 +1114,6 @@ flowchart LR
   <figcaption>شکل ۳–۱: پنج موضع سیاسی اصلی و تعبیر هر یک از آزادی</figcaption>
 </div>
 
-&#123;/* ──── 3.1 RIGHT ──── */&#125;
 <h3 id="right-section">۳.۱ راست: آزادی محافظه‌کارانه و لیبرتارین</h3>
 
 <div class="card accent-primary">
@@ -1176,7 +1139,6 @@ flowchart LR
   <p><strong>&#9940; دشمن:</strong> <span class="badge badge-red">انقلاب</span> <span class="badge badge-red">عقل‌گرایی انتزاعی</span> <span class="badge badge-red">هرج‌ومرج</span> </p>
 </div>
 
-&#123;/* ──── 3.2 LEFT ──── */&#125;
 <h3 id="left-section">۳.۲ چپ: آزادی رهایی‌بخش</h3>
 
 <div class="card accent-right">
@@ -1201,7 +1163,6 @@ flowchart LR
   </ul>
 </div>
 
-&#123;/* ──── 3.3 CENTER ──── */&#125;
 <h3 id="center-section">۳.۳ میانه: لیبرالیسم اجتماعی و سوسیال‌دموکراسی</h3>
 
 <div class="card accent-green">
@@ -1216,7 +1177,6 @@ flowchart LR
   <p><strong>&#10067; نقد (از راست):</strong> دولت رفاه خود به سلطه‌ی بوروکراتیک و وابستگی می‌انجامد. هایک: &laquo;دولت رفاه راهِ بردگی است.&raquo; </p>
 </div>
 
-&#123;/* ──── 3.4 Comparative Table ──── */&#125;
 <h3 id="school-table">۳.۴ جدول تطبیقی بزرگ: مکاتب سیاسی و آزادی</h3>
 
 <div>
@@ -1292,7 +1252,6 @@ flowchart LR
 </table>
 </div>
 
-&#123;/* ──── 3.5 Key Debates ──── */&#125;
 <h3>۳.۵ سه جدال کلیدی بین مکاتب</h3>
 
 <div class="diagram-wrapper">

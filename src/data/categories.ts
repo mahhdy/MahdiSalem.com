@@ -68,7 +68,16 @@ export const categories: Category[] = [
     parentCategory: 'philosophy',
     contentTypes: ['articles', 'books', 'multimedia'],
   },
-
+  {
+    slug: 'philosophy-of-politics',
+    nameFa: 'فلسفه‌ی سیاسی',
+    nameEn: 'Philosophy of Politics',
+    descriptionFa: 'مطالعات فلسفی درباره سیاست و ایدئولوژی‌های سیاسی',
+    descriptionEn: 'Philosophical studies on politics and political ideologies',
+    imagePath: '/images/categories/philosophy-of-politics.svg',
+    parentCategory: 'philosophy',
+    contentTypes: ['articles', 'books', 'multimedia'],
+  },
   // Science (علم)
   {
     slug: 'philosophy-of-science',

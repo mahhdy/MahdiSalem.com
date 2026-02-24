@@ -12,7 +12,7 @@ keywords:
   - آزادی
   - به
   - مثابه...
-readingTime: 5
+readingTime: 25
 difficulty: متوسط
 pdfUrl: /documents/articles/Fredoom-As-.pdf
 pdfOnly: true
@@ -23,6 +23,10 @@ tags:
 coverImage: /images/articles/covers/freedom_minds.png
 interface: philosophy-of-politics
 showInContents: true
+categories:
+  - فلسفه سیاسی، آزادی، حقوق
+cardImage: show
+imageDisplay: side
 ---
 
 # آزادی به مثابه...
