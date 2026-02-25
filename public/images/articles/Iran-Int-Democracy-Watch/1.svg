@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" dir="rtl">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0533;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2d1b4e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1b2a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6A0DAD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E040FB;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad1)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="900" cy="150" r="200" fill="#6A0DAD" opacity="0.1"/>
+  <circle cx="180" cy="900" r="250" fill="#E040FB" opacity="0.08"/>
+  <circle cx="540" cy="540" r="400" fill="none" stroke="#6A0DAD" stroke-width="1" opacity="0.2"/>
+  <circle cx="540" cy="540" r="350" fill="none" stroke="#E040FB" stroke-width="0.5" opacity="0.15"/>
+  
+  <!-- Question mark decoration -->
+  <text x="850" y="280" font-family="Arial" font-size="300" fill="#6A0DAD" opacity="0.15" font-weight="bold">؟</text>
+  
+  <!-- Top accent line -->
+  <rect x="340" y="120" width="400" height="4" rx="2" fill="url(#accentGrad)" filter="url(#glow)"/>
+  
+  <!-- Main Question -->
+  <text x="540" y="280" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="52" fill="#ffffff" font-weight="bold" direction="rtl">
+    اگر فردا
+  </text>
+  <text x="540" y="360" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="52" fill="#ffffff" font-weight="bold" direction="rtl">
+    جمهوری اسلامی
+  </text>
+  <text x="540" y="440" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="52" fill="#E040FB" font-weight="bold" direction="rtl" filter="url(#glow)">
+    سقوط کند...
+  </text>
+  
+  <!-- Sub question box -->
+  <rect x="140" y="500" width="800" height="200" rx="20" fill="#ffffff" opacity="0.05"/>
+  <rect x="140" y="500" width="800" height="200" rx="20" fill="none" stroke="url(#accentGrad)" stroke-width="2"/>
+  
+  <text x="540" y="570" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="38" fill="#ffffff" direction="rtl">
+    چه کسی کشور را اداره می‌کند؟
+  </text>
+  <text x="540" y="630" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="38" fill="#ffffff" direction="rtl">
+    چگونه از جنگ داخلی جلوگیری شود؟
+  </text>
+  <text x="540" y="690" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="38" fill="#ffffff" direction="rtl">
+    نقش جهان چیست؟
+  </text>
+  
+  <!-- Answer teaser -->
+  <text x="540" y="800" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="32" fill="#B0B0B0" direction="rtl">
+    این کتاب پاسخ می‌دهد:
+  </text>
+  
+  <!-- Book title box -->
+  <rect x="190" y="850" width="700" height="90" rx="15" fill="url(#accentGrad)" filter="url(#shadow)"/>
+  <text x="540" y="905" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="30" fill="#ffffff" font-weight="bold" direction="rtl">
+    نظارت بین‌المللی بر گذار دموکراتیک ایران
+  </text>
+  
+  <!-- Bottom accent -->
+  <rect x="440" y="1000" width="200" height="4" rx="2" fill="url(#accentGrad)" opacity="0.6"/>
+  
+  <!-- Slide indicator -->
+  <circle cx="500" cy="1050" r="6" fill="#E040FB"/>
+  <circle cx="530" cy="1050" r="6" fill="#ffffff" opacity="0.3"/>
+  <circle cx="560" cy="1050" r="6" fill="#ffffff" opacity="0.3"/>
+  <circle cx="590" cy="1050" r="6" fill="#ffffff" opacity="0.3"/>
+</svg>

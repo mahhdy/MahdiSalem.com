@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" dir="rtl">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B5E20;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0d3d15;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a1628;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ctaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E040FB;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6A0DAD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E040FB;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glowStrong">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad5)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="150" cy="200" r="100" fill="#4CAF50" opacity="0.1"/>
+  <circle cx="930" cy="880" r="150" fill="#E040FB" opacity="0.08"/>
+  
+  <!-- Radiating lines from center -->
+  <g opacity="0.1">
+    <line x1="540" y1="540" x2="100" y2="100" stroke="#ffffff" stroke-width="1"/>
+    <line x1="540" y1="540" x2="980" y2="100" stroke="#ffffff" stroke-width="1"/>
+    <line x1="540" y1="540" x2="100" y2="980" stroke="#ffffff" stroke-width="1"/>
+    <line x1="540" y1="540" x2="980" y2="980" stroke="#ffffff" stroke-width="1"/>
+  </g>
+  
+  <!-- Header -->
+  <text x="540" y="100" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="48" fill="#4CAF50" font-weight="bold" filter="url(#glowStrong)">
+    🤝 شما هم می‌توانید
+  </text>
+  
+  <!-- Main message box -->
+  <rect x="90" y="150" width="900" height="180" rx="20" fill="#ffffff" opacity="0.05"/>
+  <rect x="90" y="150" width="900" height="180" rx="20" fill="none" stroke="#4CAF50" stroke-width="2"/>
+  
+  <text x="540" y="210" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="32" fill="#ffffff" font-weight="bold">
+    آیندهٔ ایران «اتفاقی» نخواهد بود
+  </text>
+  <text x="540" y="260" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="26" fill="#B0B0B0">
+    یا ما آن را می‌سازیم، یا دیگران برایمان می‌سازند
+  </text>
+  <text x="540" y="305" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="24" fill="#4CAF50">
+    این کتاب نقشهٔ راه آماده‌سازی است
+  </text>
+  
+  <!-- Action cards -->
+  <text x="540" y="390" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="28" fill="#ffffff" font-weight="bold">
+    چگونه مشارکت کنید:
+  </text>
+  
+  <!-- Card 1 -->
+  <rect x="60" y="420" width="300" height="150" rx="15" fill="#1565C0" opacity="0.2"/>
+  <rect x="60" y="420" width="300" height="150" rx="15" fill="none" stroke="#42A5F5" stroke-width="1.5"/>
+  <text x="210" y="470" text-anchor="middle" font-family="Arial" font-size="40">📖</text>
+  <text x="210" y="510" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#42A5F5" font-weight="bold">بخوانید</text>
+  <text x="210" y="545" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="16" fill="#B0B0B0">کتاب را مطالعه کنید</text>
+  <text x="210" y="565" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="16" fill="#B0B0B0">و آگاه شوید</text>
+  
+  <!-- Card 2 -->
+  <rect x="390" y="420" width="300" height="150" rx="15" fill="#2E7D32" opacity="0.2"/>
+  <rect x="390" y="420" width="300" height="150" rx="15" fill="none" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="540" y="470" text-anchor="middle" font-family="Arial" font-size="40">🗣️</text>
+  <text x="540" y="510" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#4CAF50" font-weight="bold">گفت‌وگو کنید</text>
+  <text x="540" y="545" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="16" fill="#B0B0B0">با خانواده و دوستان</text>
+  <text x="540" y="565" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="16" fill="#B0B0B0">دربارهٔ آینده صحبت کنید</text>
+  
+  <!-- Card 3 -->
+  <rect x="720" y="420" width="300" height="150" rx="15" fill="#E65100" opacity="0.2"/>
+  <rect x="720" y="420" width="300" height="150" rx="15" fill="none" stroke="#FF9800" stroke-width="1.5"/>
+  <text x="870" y="470" text-anchor="middle" font-family="Arial" font-size="40">📢</text>
+  <text x="870" y="510" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#FF9800" font-weight="bold">منتشر کنید</text>
+  <text x="870" y="545" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="16" fill="#B0B0B0">این پست و کتاب را</text>
+  <text x="870" y="565" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="16" fill="#B0B0B0">با دیگران به اشتراک بگذارید</text>
+  
+  <!-- Card 4 -->
+  <rect x="140" y="590" width="350" height="150" rx="15" fill="#6A0DAD" opacity="0.2"/>
+  <rect x="140" y="590" width="350" height="150" rx="15" fill="none" stroke="#E040FB" stroke-width="1.5"/>
+  <text x="315" y="640" text-anchor="middle" font-family="Arial" font-size="40">🏛️</text>
+  <text x="315" y="680" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#E040FB" font-weight="bold">سازماندهی کنید</text>
+  <text x="315" y="715" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="16" fill="#B0B0B0">در تشکل‌های مدنی، صنفی</text>
+  <text x="315" y="735" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="16" fill="#B0B0B0">و حرفه‌ای فعال شوید</text>
+  
+  <!-- Card 5 -->
+  <rect x="590" y="590" width="350" height="150" rx="15" fill="#F9A825" opacity="0.2"/>
+  <rect x="590" y="590" width="350" height="150" rx="15" fill="none" stroke="#FFD54F" stroke-width="1.5"/>
+  <text x="765" y="640" text-anchor="middle" font-family="Arial" font-size="40">💡</text>
+  <text x="765" y="680" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#FFD54F" font-weight="bold">نقد کنید</text>
+  <text x="765" y="715" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="16" fill="#B0B0B0">ایده‌ها و انتقادات خود را</text>
+  <text x="765" y="735" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="16" fill="#B0B0B0">با نویسنده در میان بگذارید</text>
+  
+  <!-- Quote box -->
+  <rect x="140" y="780" width="800" height="100" rx="15" fill="#ffffff" opacity="0.03"/>
+  <text x="540" y="820" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="26" fill="#ffffff" font-style="italic">
+    «آمادگی = موفقیت»
+  </text>
+  <text x="540" y="860" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="20" fill="#B0B0B0">
+    فرصت آماده‌سازی ممکن است محدود باشد — همین امروز شروع کنید
+  </text>
+  
+  <!-- Final CTA -->
+  <rect x="290" y="910" width="500" height="70" rx="35" fill="url(#ctaGrad)" filter="url(#glowStrong)"/>
+  <text x="540" y="955" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="28" fill="#ffffff" font-weight="bold">
+    🔗 لینک دانلود در بایو
+  </text>
+  
+  <!-- Author -->
+  <text x="540" y="1030" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="20" fill="#808080">
+    مهدی سالم | نظارت بین‌المللی بر گذار دموکراتیک ایران
+  </text>
+  
+  <!-- Slide indicator -->
+  <circle cx="480" cy="1060" r="6" fill="#ffffff" opacity="0.3"/>
+  <circle cx="510" cy="1060" r="6" fill="#ffffff" opacity="0.3"/>
+  <circle cx="540" cy="1060" r="6" fill="#ffffff" opacity="0.3"/>
+  <circle cx="570" cy="1060" r="6" fill="#ffffff" opacity="0.3"/>
+  <circle cx="600" cy="1060" r="6" fill="#4CAF50"/>
+</svg>

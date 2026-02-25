@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" dir="rtl">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a0533;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#B71C1C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F44336;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1B5E20;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4CAF50;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad2)"/>
+  
+  <!-- Grid pattern -->
+  <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#ffffff" stroke-width="0.3" opacity="0.1"/>
+  </pattern>
+  <rect width="1080" height="1080" fill="url(#grid)"/>
+  
+  <!-- Header -->
+  <rect x="290" y="60" width="500" height="70" rx="35" fill="url(#redGrad)" filter="url(#glow2)"/>
+  <text x="540" y="108" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="34" fill="#ffffff" font-weight="bold">
+    آیا می‌دانستید؟
+  </text>
+  
+  <!-- Stat 1: Iraq -->
+  <rect x="80" y="180" width="920" height="140" rx="15" fill="#ffffff" opacity="0.03"/>
+  <rect x="80" y="180" width="920" height="140" rx="15" fill="none" stroke="#B71C1C" stroke-width="1.5" opacity="0.5"/>
+  
+  <text x="950" y="235" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="28" fill="#F44336" font-weight="bold">
+    عراق ۲۰۰۳
+  </text>
+  <text x="130" y="235" text-anchor="start" font-family="Arial, Vazir" font-size="48" fill="#F44336" font-weight="bold" filter="url(#glow2)">
+    +۲۰۰,۰۰۰
+  </text>
+  <text x="950" y="290" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="26" fill="#B0B0B0">
+    کشته | بدون برنامه برای «روز بعد»
+  </text>
+  
+  <!-- Stat 2: Cost -->
+  <rect x="80" y="340" width="920" height="140" rx="15" fill="#ffffff" opacity="0.03"/>
+  <rect x="80" y="340" width="920" height="140" rx="15" fill="none" stroke="#E65100" stroke-width="1.5" opacity="0.5"/>
+  
+  <text x="950" y="395" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="28" fill="#FF9800" font-weight="bold">
+    هزینهٔ شکست
+  </text>
+  <text x="130" y="395" text-anchor="start" font-family="Arial, Vazir" font-size="48" fill="#FF9800" font-weight="bold" filter="url(#glow2)">
+    $۲ تریلیون
+  </text>
+  <text x="950" y="450" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="26" fill="#B0B0B0">
+    هزینهٔ مداخلهٔ نظامی آمریکا در عراق
+  </text>
+  
+  <!-- Stat 3: Success -->
+  <rect x="80" y="500" width="920" height="140" rx="15" fill="#ffffff" opacity="0.03"/>
+  <rect x="80" y="500" width="920" height="140" rx="15" fill="none" stroke="#2E7D32" stroke-width="1.5" opacity="0.5"/>
+  
+  <text x="950" y="555" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="28" fill="#4CAF50" font-weight="bold">
+    آفریقای جنوبی
+  </text>
+  <text x="130" y="555" text-anchor="start" font-family="Arial, Vazir" font-size="48" fill="#4CAF50" font-weight="bold" filter="url(#glow2)">
+    &lt;$۳ میلیارد
+  </text>
+  <text x="950" y="610" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="26" fill="#B0B0B0">
+    هزینهٔ گذار موفق و مسالمت‌آمیز
+  </text>
+  
+  <!-- Stat 4: Iran potential -->
+  <rect x="80" y="660" width="920" height="140" rx="15" fill="#6A0DAD" opacity="0.2"/>
+  <rect x="80" y="660" width="920" height="140" rx="15" fill="none" stroke="#E040FB" stroke-width="2"/>
+  
+  <text x="950" y="715" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="28" fill="#E040FB" font-weight="bold">
+    ایران (پیشنهاد کتاب)
+  </text>
+  <text x="130" y="715" text-anchor="start" font-family="Arial, Vazir" font-size="48" fill="#E040FB" font-weight="bold" filter="url(#glow2)">
+    $۲.۵-۵ میلیارد
+  </text>
+  <text x="950" y="770" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="26" fill="#ffffff">
+    مدل ۶ ترکیبی-تطبیقی | ۱۰ سال
+  </text>
+  
+  <!-- Bottom message -->
+  <rect x="240" y="850" width="600" height="80" rx="15" fill="#ffffff" opacity="0.05"/>
+  <text x="540" y="900" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="30" fill="#ffffff" font-weight="bold">
+    تفاوت در «برنامه‌ریزی» است
+  </text>
+  
+  <!-- CTA -->
+  <text x="540" y="980" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="24" fill="#B0B0B0">
+    جزئیات در کتاب ← سوایپ کنید
+  </text>
+  
+  <!-- Slide indicator -->
+  <circle cx="500" cy="1050" r="6" fill="#ffffff" opacity="0.3"/>
+  <circle cx="530" cy="1050" r="6" fill="#E040FB"/>
+  <circle cx="560" cy="1050" r="6" fill="#ffffff" opacity="0.3"/>
+  <circle cx="590" cy="1050" r="6" fill="#ffffff" opacity="0.3"/>
+</svg>

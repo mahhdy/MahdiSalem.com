@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" dir="rtl">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1b2a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1b263b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a1628;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1565C0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#42A5F5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad3)"/>
+  
+  <!-- Decorative book shape -->
+  <path d="M 850 100 Q 900 100 900 150 L 900 350 Q 900 400 850 400 L 750 400 L 750 150 Q 750 100 800 100 Z" 
+        fill="none" stroke="#1565C0" stroke-width="2" opacity="0.2"/>
+  <path d="M 870 120 Q 910 120 910 160 L 910 360 Q 910 400 870 400" 
+        fill="none" stroke="#42A5F5" stroke-width="1" opacity="0.15"/>
+  
+  <!-- Header -->
+  <text x="540" y="90" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="38" fill="#42A5F5" font-weight="bold">
+    📖 در این کتاب چه می‌خوانید؟
+  </text>
+  <rect x="340" y="110" width="400" height="3" rx="1.5" fill="url(#blueGrad)"/>
+  
+  <!-- Chapter boxes - Row 1 -->
+  <rect x="560" y="150" width="460" height="85" rx="12" fill="#1565C0" opacity="0.15"/>
+  <rect x="560" y="150" width="460" height="85" rx="12" fill="none" stroke="#1565C0" stroke-width="1.5"/>
+  <circle cx="980" cy="192" r="25" fill="#1565C0"/>
+  <text x="980" y="200" text-anchor="middle" font-family="Arial" font-size="22" fill="#fff" font-weight="bold">۱</text>
+  <text x="940" y="185" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#42A5F5" font-weight="bold">مبانی نظری گذار</text>
+  <text x="940" y="215" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="18" fill="#B0B0B0">سه نسل فکری + پنج عرصهٔ تحکیم</text>
+  
+  <rect x="60" y="150" width="460" height="85" rx="12" fill="#1565C0" opacity="0.15"/>
+  <rect x="60" y="150" width="460" height="85" rx="12" fill="none" stroke="#1565C0" stroke-width="1.5"/>
+  <circle cx="480" cy="192" r="25" fill="#1565C0"/>
+  <text x="480" y="200" text-anchor="middle" font-family="Arial" font-size="22" fill="#fff" font-weight="bold">۲</text>
+  <text x="440" y="185" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#42A5F5" font-weight="bold">چرا ایران متفاوت است</text>
+  <text x="440" y="215" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="18" fill="#B0B0B0">سپاه + هسته‌ای + تنوع قومی</text>
+  
+  <!-- Row 2 -->
+  <rect x="560" y="255" width="460" height="85" rx="12" fill="#2E7D32" opacity="0.15"/>
+  <rect x="560" y="255" width="460" height="85" rx="12" fill="none" stroke="#2E7D32" stroke-width="1.5"/>
+  <circle cx="980" cy="297" r="25" fill="#2E7D32"/>
+  <text x="980" y="305" text-anchor="middle" font-family="Arial" font-size="22" fill="#fff" font-weight="bold">۳</text>
+  <text x="940" y="290" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#4CAF50" font-weight="bold">۶ مدل نظارت</text>
+  <text x="940" y="320" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="18" fill="#B0B0B0">از حداقلی تا مدیریت مستقیم</text>
+  
+  <rect x="60" y="255" width="460" height="85" rx="12" fill="#E65100" opacity="0.15"/>
+  <rect x="60" y="255" width="460" height="85" rx="12" fill="none" stroke="#E65100" stroke-width="1.5"/>
+  <circle cx="480" cy="297" r="25" fill="#E65100"/>
+  <text x="480" y="305" text-anchor="middle" font-family="Arial" font-size="22" fill="#fff" font-weight="bold">۴</text>
+  <text x="440" y="290" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#FF9800" font-weight="bold">۶ سناریوی گذار</text>
+  <text x="440" y="320" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="18" fill="#B0B0B0">فروپاشی تا مداخلهٔ نظامی</text>
+  
+  <!-- Row 3 -->
+  <rect x="560" y="360" width="460" height="85" rx="12" fill="#E65100" opacity="0.15"/>
+  <rect x="560" y="360" width="460" height="85" rx="12" fill="none" stroke="#E65100" stroke-width="1.5"/>
+  <circle cx="980" cy="402" r="25" fill="#E65100"/>
+  <text x="980" y="410" text-anchor="middle" font-family="Arial" font-size="22" fill="#fff" font-weight="bold">۵</text>
+  <text x="940" y="395" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#FF9800" font-weight="bold">نهادها و بازیگران</text>
+  <text x="940" y="425" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="18" fill="#B0B0B0">سازمان ملل + منطقه‌ای + ایرانی</text>
+  
+  <rect x="60" y="360" width="460" height="85" rx="12" fill="#2E7D32" opacity="0.15"/>
+  <rect x="60" y="360" width="460" height="85" rx="12" fill="none" stroke="#2E7D32" stroke-width="1.5"/>
+  <circle cx="480" cy="402" r="25" fill="#2E7D32"/>
+  <text x="480" y="410" text-anchor="middle" font-family="Arial" font-size="22" fill="#fff" font-weight="bold">۶</text>
+  <text x="440" y="395" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#4CAF50" font-weight="bold">تضمین‌های موفقیت</text>
+  <text x="440" y="425" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="18" fill="#B0B0B0">امنیتی + حقوقی + اقتصادی</text>
+  
+  <!-- Row 4 -->
+  <rect x="560" y="465" width="460" height="85" rx="12" fill="#B71C1C" opacity="0.15"/>
+  <rect x="560" y="465" width="460" height="85" rx="12" fill="none" stroke="#B71C1C" stroke-width="1.5"/>
+  <circle cx="980" cy="507" r="25" fill="#B71C1C"/>
+  <text x="980" y="515" text-anchor="middle" font-family="Arial" font-size="22" fill="#fff" font-weight="bold">۷</text>
+  <text x="940" y="500" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#F44336" font-weight="bold">آسیب‌شناسی و ریسک‌ها</text>
+  <text x="940" y="530" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="18" fill="#B0B0B0">۶ دستهٔ خطر + نظام هشدار</text>
+  
+  <rect x="60" y="465" width="460" height="85" rx="12" fill="#F9A825" opacity="0.15"/>
+  <rect x="60" y="465" width="460" height="85" rx="12" fill="none" stroke="#F9A825" stroke-width="1.5"/>
+  <circle cx="480" cy="507" r="25" fill="#F9A825"/>
+  <text x="480" y="515" text-anchor="middle" font-family="Arial" font-size="22" fill="#1a1a1a" font-weight="bold">۸-۱۰</text>
+  <text x="440" y="500" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#FFD54F" font-weight="bold">عملیاتی</text>
+  <text x="440" y="530" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="18" fill="#B0B0B0">نیازمندی + زمان‌بندی + بودجه</text>
+  
+  <!-- Row 5 -->
+  <rect x="310" y="570" width="460" height="85" rx="12" fill="#6A0DAD" opacity="0.2"/>
+  <rect x="310" y="570" width="460" height="85" rx="12" fill="none" stroke="#E040FB" stroke-width="2"/>
+  <circle cx="730" cy="612" r="25" fill="#6A0DAD"/>
+  <text x="730" y="620" text-anchor="middle" font-family="Arial" font-size="18" fill="#fff" font-weight="bold">۱۱-۱۲</text>
+  <text x="690" y="605" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#E040FB" font-weight="bold">نقشهٔ راه + جمع‌بندی</text>
+  <text x="690" y="635" text-anchor="end" font-family="Vazir, Tahoma, Arial" font-size="18" fill="#ffffff">۱۰ توصیهٔ کلیدی + دعوت به اقدام</text>
+  
+  <!-- Appendices section -->
+  <rect x="140" y="690" width="800" height="120" rx="15" fill="#ffffff" opacity="0.03"/>
+  <rect x="140" y="690" width="800" height="120" rx="15" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  
+  <text x="540" y="730" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="26" fill="#ffffff" font-weight="bold">
+    + ۱۰ پیوست تخصصی
+  </text>
+  <text x="540" y="770" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="20" fill="#B0B0B0">
+    ۷ مطالعهٔ موردی | ۱۵۰+ واژهٔ تخصصی | ۸۰+ نهاد
+  </text>
+  <text x="540" y="795" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="18" fill="#808080">
+    آفریقای جنوبی • شیلی • تونس • لهستان • عراق • میانمار • تیمور شرقی
+  </text>
+  
+  <!-- Stats bar -->
+  <rect x="190" y="850" width="700" height="70" rx="15" fill="url(#blueGrad)"/>
+  <text x="330" y="895" text-anchor="middle" font-family="Arial, Vazir" font-size="26" fill="#ffffff" font-weight="bold">۲۵۰+</text>
+  <text x="330" y="875" text-anchor="middle" font-family="Vazir" font-size="14" fill="#ffffff" opacity="0.8">صفحه</text>
+  <text x="540" y="895" text-anchor="middle" font-family="Arial, Vazir" font-size="26" fill="#ffffff" font-weight="bold">۱۰۰+</text>
+  <text x="540" y="875" text-anchor="middle" font-family="Vazir" font-size="14" fill="#ffffff" opacity="0.8">جدول</text>
+  <text x="750" y="895" text-anchor="middle" font-family="Arial, Vazir" font-size="26" fill="#ffffff" font-weight="bold">۳۰+</text>
+  <text x="750" y="875" text-anchor="middle" font-family="Vazir" font-size="14" fill="#ffffff" opacity="0.8">نمودار</text>
+  
+  <!-- CTA -->
+  <text x="540" y="980" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="24" fill="#B0B0B0">
+    درس‌های تاریخ ← سوایپ کنید
+  </text>
+  
+  <!-- Slide indicator -->
+  <circle cx="500" cy="1050" r="6" fill="#ffffff" opacity="0.3"/>
+  <circle cx="530" cy="1050" r="6" fill="#ffffff" opacity="0.3"/>
+  <circle cx="560" cy="1050" r="6" fill="#42A5F5"/>
+  <circle cx="590" cy="1050" r="6" fill="#ffffff" opacity="0.3"/>
+</svg>

@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" dir="rtl">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0533;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1b2a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFD54F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad4)"/>
+  
+  <!-- World map silhouette hint (decorative) -->
+  <ellipse cx="540" cy="400" rx="450" ry="250" fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.1"/>
+  
+  <!-- Header -->
+  <text x="540" y="80" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="38" fill="#FFD54F" font-weight="bold">
+    🌍 درس‌های ۹ کشور در یک کتاب
+  </text>
+  <rect x="290" y="100" width="500" height="3" rx="1.5" fill="url(#goldGrad)"/>
+  
+  <!-- Country cards - Success stories (Green) -->
+  <text x="280" y="170" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="24" fill="#4CAF50" font-weight="bold">
+    ✓ الگوهای موفق
+  </text>
+  
+  <!-- South Africa -->
+  <rect x="60" y="190" width="220" height="100" rx="12" fill="#2E7D32" opacity="0.2"/>
+  <rect x="60" y="190" width="220" height="100" rx="12" fill="none" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="170" y="225" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="20" fill="#4CAF50" font-weight="bold">🇿🇦 آفریقای جنوبی</text>
+  <text x="170" y="255" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="15" fill="#B0B0B0">مذاکره + TRC</text>
+  <text x="170" y="275" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="15" fill="#B0B0B0">امتیاز: ۳۶/۴۰</text>
+  
+  <!-- Chile -->
+  <rect x="300" y="190" width="220" height="100" rx="12" fill="#2E7D32" opacity="0.2"/>
+  <rect x="300" y="190" width="220" height="100" rx="12" fill="none" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="410" y="225" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="20" fill="#4CAF50" font-weight="bold">🇨🇱 شیلی</text>
+  <text x="410" y="255" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="15" fill="#B0B0B0">رفراندوم + عدالت تدریجی</text>
+  <text x="410" y="275" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="15" fill="#B0B0B0">امتیاز: ۲۹/۴۰</text>
+  
+  <!-- Spain -->
+  <rect x="540" y="190" width="220" height="100" rx="12" fill="#2E7D32" opacity="0.2"/>
+  <rect x="540" y="190" width="220" height="100" rx="12" fill="none" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="650" y="225" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="20" fill="#4CAF50" font-weight="bold">🇪🇸 اسپانیا</text>
+  <text x="650" y="255" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="15" fill="#B0B0B0">پاکت مونکلوا</text>
+  <text x="650" y="275" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="15" fill="#B0B0B0">امتیاز: ۲۹/۴۰</text>
+  
+  <!-- Poland -->
+  <rect x="780" y="190" width="220" height="100" rx="12" fill="#2E7D32" opacity="0.2"/>
+  <rect x="780" y="190" width="220" height="100" rx="12" fill="none" stroke="#4CAF50" stroke-width="1.5"/>
+  <text x="890" y="225" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="20" fill="#4CAF50" font-weight="bold">🇵🇱 لهستان</text>
+  <text x="890" y="255" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="15" fill="#B0B0B0">همبستگی + EU</text>
+  <text x="890" y="275" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="15" fill="#B0B0B0">امتیاز: ۲۸/۴۰</text>
+  
+  <!-- Mixed results (Orange) -->
+  <text x="280" y="350" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="24" fill="#FF9800" font-weight="bold">
+    ⚠ درس‌های ترکیبی
+  </text>
+  
+  <!-- Tunisia -->
+  <rect x="140" y="370" width="250" height="100" rx="12" fill="#E65100" opacity="0.2"/>
+  <rect x="140" y="370" width="250" height="100" rx="12" fill="none" stroke="#FF9800" stroke-width="1.5"/>
+  <text x="265" y="405" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="20" fill="#FF9800" font-weight="bold">🇹🇳 تونس</text>
+  <text x="265" y="435" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="15" fill="#B0B0B0">موفقیت ← بازگشت ۲۰۲۱</text>
+  <text x="265" y="455" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="14" fill="#808080">الگو + هشدار</text>
+  
+  <!-- Indonesia -->
+  <rect x="415" y="370" width="250" height="100" rx="12" fill="#E65100" opacity="0.2"/>
+  <rect x="415" y="370" width="250" height="100" rx="12" fill="none" stroke="#FF9800" stroke-width="1.5"/>
+  <text x="540" y="405" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="20" fill="#FF9800" font-weight="bold">🇮🇩 اندونزی</text>
+  <text x="540" y="435" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="15" fill="#B0B0B0">تفکیک اقتصاد ارتش</text>
+  <text x="540" y="455" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="14" fill="#808080">مدل سپاه</text>
+  
+  <!-- Timor -->
+  <rect x="690" y="370" width="250" height="100" rx="12" fill="#E65100" opacity="0.2"/>
+  <rect x="690" y="370" width="250" height="100" rx="12" fill="none" stroke="#FF9800" stroke-width="1.5"/>
+  <text x="815" y="405" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="20" fill="#FF9800" font-weight="bold">🇹🇱 تیمور شرقی</text>
+  <text x="815" y="435" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="15" fill="#B0B0B0">مدیریت سازمان ملل</text>
+  <text x="815" y="455" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="14" fill="#808080">مرحله‌بندی</text>
+  
+  <!-- Failures (Red) -->
+  <text x="280" y="530" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="24" fill="#F44336" font-weight="bold">
+    ✗ ضد الگوها
+  </text>
+  
+  <!-- Iraq -->
+  <rect x="220" y="550" width="300" height="120" rx="12" fill="#B71C1C" opacity="0.2"/>
+  <rect x="220" y="550" width="300" height="120" rx="12" fill="none" stroke="#F44336" stroke-width="2"/>
+  <text x="370" y="590" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#F44336" font-weight="bold">🇮🇶 عراق</text>
+  <text x="370" y="620" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="16" fill="#F44336">مداخلهٔ نظامی + انحلال ارتش</text>
+  <text x="370" y="650" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="18" fill="#B0B0B0">۲۰۰,۰۰۰+ کشته | داعش</text>
+  
+  <!-- Myanmar -->
+  <rect x="560" y="550" width="300" height="120" rx="12" fill="#B71C1C" opacity="0.2"/>
+  <rect x="560" y="550" width="300" height="120" rx="12" fill="none" stroke="#F44336" stroke-width="2"/>
+  <text x="710" y="590" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#F44336" font-weight="bold">🇲🇲 میانمار</text>
+  <text x="710" y="620" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="16" fill="#F44336">گشایش بدون اصلاح واقعی</text>
+  <text x="710" y="650" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="18" fill="#B0B0B0">کودتای ۲۰۲۱ | جنگ داخلی</text>
+  
+  <!-- Key insight box -->
+  <rect x="140" y="720" width="800" height="100" rx="15" fill="#6A0DAD" opacity="0.3"/>
+  <rect x="140" y="720" width="800" height="100" rx="15" fill="none" stroke="#E040FB" stroke-width="2"/>
+  <text x="540" y="760" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="26" fill="#ffffff" font-weight="bold">
+    💡 یافتهٔ کلیدی:
+  </text>
+  <text x="540" y="800" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#E040FB">
+    تفاوت موفقیت و شکست = «برنامه‌ریزی قبل از گذار»
+  </text>
+  
+  <!-- CTA -->
+  <rect x="340" y="860" width="400" height="60" rx="30" fill="url(#goldGrad)"/>
+  <text x="540" y="900" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="24" fill="#1a1a1a" font-weight="bold">
+    مدل ۶ برای ایران چیست؟
+  </text>
+  
+  <text x="540" y="980" text-anchor="middle" font-family="Vazir, Tahoma, Arial" font-size="22" fill="#B0B0B0">
+    چگونه مشارکت کنید؟ ← سوایپ کنید
+  </text>
+  
+  <!-- Slide indicator -->
+  <circle cx="500" cy="1050" r="6" fill="#ffffff" opacity="0.3"/>
+  <circle cx="530" cy="1050" r="6" fill="#ffffff" opacity="0.3"/>
+  <circle cx="560" cy="1050" r="6" fill="#ffffff" opacity="0.3"/>
+  <circle cx="590" cy="1050" r="6" fill="#FFD54F"/>
+</svg>
