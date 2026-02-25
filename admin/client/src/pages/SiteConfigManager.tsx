@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 interface SiteConfig {
     telegramView: 'full' | 'compact';
     telegramHomeLimit: number;
+    articleListColumns: 1 | 2;
     social: {
         telegram: string;
         x: string;
@@ -49,7 +50,7 @@ export default function SiteConfigManager() {
         <div>
             <div className="page-header">
                 <h1 className="page-title">Site Config</h1>
-                <p className="page-subtitle">Telegram display and social media settings</p>
+                <p className="page-subtitle">Telegram display, article layout, and social media settings</p>
             </div>
 
             <div style={{ maxWidth: 600, display: 'flex', flexDirection: 'column', gap: 24 }}>
@@ -82,6 +83,28 @@ export default function SiteConfigManager() {
                                 style={{ width: 70, padding: '4px 8px', borderRadius: 4, border: '1px solid var(--border)' }}
                             />
                         </label>
+                    </div>
+                </section>
+
+                {/* Article List Layout */}
+                <section className="card" style={{ padding: 20 }}>
+                    <h2 style={{ marginBottom: 16 }}>Article List Layout</h2>
+                    <p style={{ marginBottom: 12, fontSize: 13, color: 'var(--text-muted)' }}>
+                        Choose how articles are displayed on the /articles page
+                    </p>
+                    <div style={{ display: 'flex', gap: 24 }}>
+                        {([1, 2] as const).map(v => (
+                            <label key={v} style={{ display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer' }}>
+                                <input
+                                    type="radio"
+                                    name="articleListColumns"
+                                    value={v}
+                                    checked={config.articleListColumns === v}
+                                    onChange={() => setConfig({ ...config, articleListColumns: v })}
+                                />
+                                <span>{v !== 2 ? '1 Column (List)' : '2 Columns (Grid)'}</span>
+                            </label>
+                        ))}
                     </div>
                 </section>
 

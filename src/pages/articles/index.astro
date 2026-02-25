@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CategoryTabView from "../../components/CategoryTabView.astro";
 import { t, stripLangPrefix } from "../../i18n";
+import { siteConfig } from "../../config/site";
 import { getCollection } from "astro:content";
 import {
   getCategoryName,
@@ -130,7 +131,14 @@ const dateFormatter = new Intl.DateTimeFormat("fa-IR", {
 
       {
         articles.length > 0 ? (
-          <div id="articles-container" class="space-y-6">
+          <div
+            id="articles-container"
+            class={
+              siteConfig.articleListColumns === 2
+                ? "grid grid-cols-1 md:grid-cols-2 gap-6"
+                : "space-y-6"
+            }
+          >
             {articles.map((article) => (
               <a
                 href={`/articles/${stripLangPrefix(article.id)}`}

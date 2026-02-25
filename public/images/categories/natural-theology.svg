@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Mountain/nature -->
+  <path d="M30 150 L80 60 L110 100 L130 75 L170 150" stroke="currentColor" stroke-width="2.5" fill="currentColor" opacity="0.15"/>
+  <!-- Sun/light -->
+  <circle cx="100" cy="40" r="15" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2"/>
+  <!-- Rays of light -->
+  <line x1="100" y1="20" x2="100" y2="10" stroke="currentColor" stroke-width="2"/>
+  <line x1="120" y1="25" x2="128" y2="18" stroke="currentColor" stroke-width="2"/>
+  <line x1="80" y1="25" x2="72" y2="18" stroke="currentColor" stroke-width="2"/>
+  <line x1="118" y1="40" x2="128" y2="40" stroke="currentColor" stroke-width="2"/>
+  <line x1="82" y1="40" x2="72" y2="40" stroke="currentColor" stroke-width="2"/>
+  <!-- Eye/witness -->
+  <ellipse cx="100" cy="120" rx="25" ry="12" stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.1"/>
+  <circle cx="100" cy="120" r="6" fill="currentColor" opacity="0.5"/>
+  <!-- Ground -->
+  <line x1="25" y1="155" x2="175" y2="155" stroke="currentColor" stroke-width="2"/>
+</svg>

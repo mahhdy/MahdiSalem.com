@@ -20,6 +20,7 @@ siteConfigRoutes.get('/', async (c) => {
         // Extract telegramView
         const tvMatch = raw.match(/telegramView:\s*['"](\w+)['"]/);
         const tlMatch = raw.match(/telegramHomeLimit:\s*(\d+)/);
+        const alcMatch = raw.match(/articleListColumns:\s*(\d+)/);
 
         // Extract social handles
         const socialMatch = (key: string) => {
@@ -30,6 +31,7 @@ siteConfigRoutes.get('/', async (c) => {
         return c.json({
             telegramView: tvMatch ? tvMatch[1] : 'full',
             telegramHomeLimit: tlMatch ? parseInt(tlMatch[1]) : 5,
+            articleListColumns: alcMatch ? (parseInt(alcMatch[1]) as 1 | 2) : 2,
             social: {
                 telegram: socialMatch('telegram'),
                 x: socialMatch('x'),
@@ -49,6 +51,7 @@ siteConfigRoutes.put('/', async (c) => {
         const updates = await c.req.json<{
             telegramView?: 'full' | 'compact';
             telegramHomeLimit?: number;
+            articleListColumns?: 1 | 2;
             social?: Record<string, string>;
         }>();
 
@@ -67,6 +70,13 @@ siteConfigRoutes.put('/', async (c) => {
             raw = raw.replace(
                 /telegramHomeLimit:\s*\d+/,
                 `telegramHomeLimit: ${updates.telegramHomeLimit}`
+            );
+        }
+
+        if (updates.articleListColumns !== undefined) {
+            raw = raw.replace(
+                /articleListColumns:\s*\d+/,
+                `articleListColumns: ${updates.articleListColumns}`
             );
         }
 

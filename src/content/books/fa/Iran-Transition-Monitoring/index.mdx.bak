@@ -16,7 +16,7 @@ showPdfViewer: true
 hidden: false
 showInContents: true
 coverImage: /images/articles/covers/intl-monitoring-democratic-transition-cover.png
-imageDisplay: side
+imageDisplay: full
 cardImage: show
 ---
 

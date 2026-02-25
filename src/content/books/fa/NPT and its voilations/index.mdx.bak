@@ -16,7 +16,7 @@ showPdfViewer: true
 hidden: false
 showInContents: true
 coverImage: /images/articles/covers/npt-treaty-violations-cover.png
-imageDisplay: side
+imageDisplay: full
 cardImage: show
 ---
 

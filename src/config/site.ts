@@ -11,6 +11,8 @@ export const siteConfig = {
    * "compact" – 2-column compact grid with a link to /social
    */
   telegramView: 'compact' as 'full' | 'compact',
+  /** Number of columns for article list view: 1 or 2 (default 2) */
+  articleListColumns: 2 as 1 | 2,
 
   /** How many Telegram posts to show on the homepage */
   telegramHomeLimit: 6,

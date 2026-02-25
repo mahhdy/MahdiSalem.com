@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Open book -->
+  <path d="M100 50 L100 150" stroke="currentColor" stroke-width="2"/>
+  <path d="M100 50 C80 48 50 45 40 55 L40 145 C50 135 80 138 100 150" stroke="currentColor" stroke-width="2.5" fill="currentColor" opacity="0.1"/>
+  <path d="M100 50 C120 48 150 45 160 55 L160 145 C150 135 120 138 100 150" stroke="currentColor" stroke-width="2.5" fill="currentColor" opacity="0.1"/>
+  <!-- Star/light above -->
+  <circle cx="100" cy="30" r="8" fill="currentColor" opacity="0.5"/>
+  <line x1="100" y1="18" x2="100" y2="12" stroke="currentColor" stroke-width="2"/>
+  <line x1="88" y1="22" x2="84" y2="18" stroke="currentColor" stroke-width="2"/>
+  <line x1="112" y1="22" x2="116" y2="18" stroke="currentColor" stroke-width="2"/>
+  <!-- Cross on book page -->
+  <line x1="70" y1="85" x2="70" y2="115" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+  <line x1="58" y1="100" x2="82" y2="100" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+  <!-- Crescent on book page -->
+  <path d="M135 90 A12 12 0 1 0 135 110 A8 8 0 1 1 135 90" stroke="currentColor" stroke-width="2" opacity="0.5" fill="none"/>
+</svg>

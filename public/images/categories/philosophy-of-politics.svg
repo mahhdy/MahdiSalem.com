@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Columns (government/politics) -->
+  <rect x="45" y="80" width="12" height="70" rx="2" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2"/>
+  <rect x="95" y="80" width="12" height="70" rx="2" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2"/>
+  <rect x="145" y="80" width="12" height="70" rx="2" fill="currentColor" opacity="0.3" stroke="currentColor" stroke-width="2"/>
+  <!-- Top bar -->
+  <rect x="35" y="70" width="132" height="14" rx="4" fill="currentColor" opacity="0.5"/>
+  <!-- Pediment (triangle) -->
+  <path d="M35 70 L100 35 L167 70" stroke="currentColor" stroke-width="3" fill="currentColor" opacity="0.15"/>
+  <!-- Base -->
+  <rect x="30" y="150" width="142" height="12" rx="3" fill="currentColor"/>
+  <!-- People silhouettes at bottom -->
+  <circle cx="70" cy="175" r="5" fill="currentColor" opacity="0.4"/>
+  <circle cx="100" cy="175" r="5" fill="currentColor" opacity="0.4"/>
+  <circle cx="130" cy="175" r="5" fill="currentColor" opacity="0.4"/>
+</svg>

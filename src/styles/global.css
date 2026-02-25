@@ -1723,3 +1723,236 @@ html.dark .mermaid-type-gantt .grid .tick line {
 .mermaid-wrapper svg .nodeLabel {
   font-family: 'Vazirmatn', 'Vazir', 'Tahoma', sans-serif !important;
 }
+
+/* ═══════════════════════════════════════════════════════════════ */
+/*  VISUAL ENHANCEMENTS — Premium Polish                          */
+/* ═══════════════════════════════════════════════════════════════ */
+
+/* ── 1. Smooth Theme Transition ─────────────────────────────── */
+body,
+body *:not(.mermaid-wrapper):not(.mermaid-wrapper *):not(pre):not(pre *) {
+  transition:
+    background-color 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* ── 2. Reading Progress Bar ────────────────────────────────── */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-primary-light));
+  background-size: 200% 100%;
+  animation: progressShimmer 3s ease infinite;
+  z-index: 9999;
+  transition: width 0.1s linear;
+  border-radius: 0 2px 2px 0;
+  box-shadow: 0 0 8px rgba(13, 71, 161, 0.4);
+}
+
+html.dark .reading-progress {
+  box-shadow: 0 0 10px rgba(25, 118, 210, 0.5);
+}
+
+@keyframes progressShimmer {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* ── 3. Card Hover Effects ──────────────────────────────────── */
+.article-card,
+[class*="rounded-xl"][class*="border"] {
+  transition:
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.3s ease !important;
+}
+
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.08),
+    0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+html.dark .article-card:hover {
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(25, 118, 210, 0.08);
+}
+
+/* ── 4. Hero Section Polish ─────────────────────────────────── */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 40%,
+      rgba(13, 71, 161, 0.06) 0%,
+      transparent 70%);
+  animation: heroGlow 8s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+html.dark .hero-section::before {
+  background: radial-gradient(ellipse 80% 60% at 50% 40%,
+      rgba(25, 118, 210, 0.08) 0%,
+      transparent 70%);
+}
+
+@keyframes heroGlow {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+/* ── 5. Premium Blockquotes ─────────────────────────────────── */
+.prose blockquote {
+  position: relative;
+  border-inline-start-width: 4px;
+  border-image: linear-gradient(180deg, var(--color-primary), var(--color-secondary)) 1;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 2;
+}
+
+html[dir="rtl"] .prose blockquote {
+  border-radius: 8px 0 0 8px;
+}
+
+.prose blockquote::before {
+  content: '❝';
+  position: absolute;
+  top: -8px;
+  inset-inline-start: 12px;
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  opacity: 0.15;
+  line-height: 1;
+  font-style: normal;
+}
+
+html.dark .prose blockquote::before {
+  color: var(--color-primary-light);
+  opacity: 0.2;
+}
+
+/* ── 6. Navigation Link Animations ──────────────────────────── */
+nav a:not(.no-underline) {
+  position: relative;
+}
+
+nav a:not(.no-underline)::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease, left 0.3s ease;
+  border-radius: 1px;
+}
+
+nav a:not(.no-underline):hover::after {
+  width: 100%;
+  left: 0%;
+}
+
+/* ── 7. Smooth Tab Animation ────────────────────────────────── */
+.contents-tab,
+[role="tab"] {
+  position: relative;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ── 8. Book/Content Card Image Consistency ─────────────────── */
+.article-card img,
+[class*="article-card"] img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ── 9. Category Card Specific Polish ───────────────────────── */
+.category-filter {
+  transition: all 0.25s ease;
+}
+
+.category-filter:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+html.dark .category-filter:hover {
+  box-shadow: 0 2px 10px rgba(25, 118, 210, 0.12);
+}
+
+/* ── 10. Category Image Fallback ────────────────────────────── */
+img[src$=".svg"][alt] {
+  color: var(--color-primary);
+}
+
+html.dark img[src$=".svg"][alt] {
+  color: var(--color-primary-light);
+}
+
+/* ── 11. Scroll-down fade-in for sections ───────────────────── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.prose h2,
+.prose h3 {
+  animation: fadeInUp 0.4s ease both;
+}
+
+/* ── 12. Better focus outlines ──────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-primary-light);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ── 13. Print-friendly ─────────────────────────────────────── */
+@media print {
+
+  .reading-progress,
+  .mermaid-toolbar,
+  nav,
+  footer {
+    display: none !important;
+  }
+}

@@ -1,82 +1,113 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Newsletter from '../components/Newsletter.astro';
-import TelegramFeed from '../components/TelegramFeed.astro';
-import TelegramFeedCompact from '../components/TelegramFeedCompact.astro';
-import { t, stripLangPrefix } from '../i18n';
-import { getCollection } from 'astro:content';
-import { siteConfig } from '../config/site';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Newsletter from "../components/Newsletter.astro";
+import TelegramFeed from "../components/TelegramFeed.astro";
+import TelegramFeedCompact from "../components/TelegramFeedCompact.astro";
+import { t, stripLangPrefix } from "../i18n";
+import { getCollection } from "astro:content";
+import { siteConfig } from "../config/site";
 
-const lang = 'fa';
+const lang = "fa";
 
 // Get content for all tabs
-const allBooks = await getCollection('books', (entry) => {
+const allBooks = await getCollection("books", (entry) => {
   // A book is a file in a 2-level path: lang/slug (e.g., "fa/action-for-iran")
-  const isBook = entry.data.lang === 'fa' && !entry.data.draft && entry.id.split('/').length === 2;
+  const isBook =
+    entry.data.lang === "fa" &&
+    !entry.data.draft &&
+    entry.id.split("/").length === 2;
   return isBook;
 });
 const books = allBooks.sort((a, b) => a.data.order - b.data.order).slice(0, 6);
 
-const allArticles = await getCollection('articles', ({ data }) => data.lang === 'fa' && !data.draft);
-const articles = allArticles
+const allArticlesRaw = await getCollection(
+  "articles",
+  ({ data }) => data.lang === "fa" && !data.draft,
+);
+const articles = allArticlesRaw
+  .filter((a) => !a.data.hidden)
   .sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime())
   .slice(0, 6);
 
-const allStatements = await getCollection('statements', ({ data }) => data.lang === 'fa' && !data.draft);
+const allStatements = await getCollection(
+  "statements",
+  ({ data }) => data.lang === "fa" && !data.draft,
+);
 const statements = allStatements
   .sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime())
   .slice(0, 6);
 
-const allWiki = await getCollection('wiki', ({ data }) => data.lang === 'fa' && !data.draft);
+const allWiki = await getCollection(
+  "wiki",
+  ({ data }) => data.lang === "fa" && !data.draft,
+);
 const wiki = allWiki.sort((a, b) => a.data.order - b.data.order).slice(0, 6);
 
-const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
+const dateFormatter = new Intl.DateTimeFormat("fa-IR", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
 });
 ---
 
 <BaseLayout>
   <!-- Hero Section - More Compact -->
-  <section class="relative overflow-hidden">
+  <section class="hero-section relative overflow-hidden">
     <div class="container-wide py-12 md:py-20">
       <div class="max-w-3xl mx-auto text-center">
-        <h1 class="text-3xl md:text-5xl font-extrabold mb-4 text-primary dark:text-primary-light tracking-tight leading-tight">
-          {t('hero.greeting', lang)}
+        <h1
+          class="text-3xl md:text-5xl font-extrabold mb-4 text-primary dark:text-primary-light tracking-tight leading-tight"
+        >
+          {t("hero.greeting", lang)}
         </h1>
-        <p class="text-lg md:text-xl font-medium text-text-muted dark:text-text-dark-muted mb-4">
-          {t('hero.subtitle', lang)}
+        <p
+          class="text-lg md:text-xl font-medium text-text-muted dark:text-text-dark-muted mb-4"
+        >
+          {t("hero.subtitle", lang)}
         </p>
         <div class="h-px w-24 bg-primary/20 mx-auto mb-6"></div>
-        <p class="text-base text-text-muted dark:text-text-dark-muted mb-8 leading-relaxed max-w-2xl mx-auto">
-          {t('hero.description', lang)}
+        <p
+          class="text-base text-text-muted dark:text-text-dark-muted mb-8 leading-relaxed max-w-2xl mx-auto"
+        >
+          {t("hero.description", lang)}
         </p>
         <div class="flex flex-wrap justify-center gap-4">
           <a
             href="/books"
             class="inline-flex items-center px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary-dark transition-all hover:scale-105 active:scale-95 no-underline shadow-lg shadow-primary/20"
           >
-            {t('hero.cta.books', lang)}
+            {t("hero.cta.books", lang)}
           </a>
           <a
             href="/articles"
             class="inline-flex items-center px-6 py-3 rounded-xl border-2 border-primary text-primary dark:border-primary-light dark:text-primary-light font-semibold hover:bg-primary/5 transition-all hover:scale-105 active:scale-95 no-underline"
           >
-            {t('hero.cta.articles', lang)}
+            {t("hero.cta.articles", lang)}
           </a>
         </div>
       </div>
     </div>
     <!-- Decorative background -->
-    <div class="absolute top-0 end-0 w-1/3 h-full opacity-5 dark:opacity-[0.02]" aria-hidden="true">
+    <div
+      class="absolute top-0 end-0 w-1/3 h-full opacity-5 dark:opacity-[0.02]"
+      aria-hidden="true"
+    >
       <svg viewBox="0 0 200 200" class="w-full h-full">
         <defs>
-          <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="currentColor" stroke-width="0.5" />
+          <pattern
+            id="grid"
+            width="20"
+            height="20"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 20 0 L 0 0 0 20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="0.5"></path>
           </pattern>
         </defs>
-        <rect width="200" height="200" fill="url(#grid)" />
+        <rect width="200" height="200" fill="url(#grid)"></rect>
       </svg>
     </div>
   </section>
@@ -84,9 +115,11 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
   <!-- Tabbed Content Section -->
   <section class="container-wide py-12">
     <h2 class="text-2xl md:text-3xl font-bold mb-6">محتوای اخیر</h2>
-    
+
     <!-- Tab Buttons -->
-    <div class="flex gap-2 mb-8 border-b border-border dark:border-border-dark overflow-x-auto">
+    <div
+      class="flex gap-2 mb-8 border-b border-border dark:border-border-dark overflow-x-auto"
+    >
       <button
         data-tab="books"
         class="tab-button active px-4 py-2.5 font-medium text-sm whitespace-nowrap border-b-2 transition-colors"
@@ -118,30 +151,37 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
       <!-- Books Tab -->
       <div id="books-tab" class="tab-content active">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {books.map((book) => (
-            <a
-              href={`/books/${stripLangPrefix(book.id).replace(/\/index\.mdx?$/, '').replace(/\.mdx?$/, '')}`}
-              class="group block p-4 rounded-lg border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline"
-            >
-              {book.data.coverImage && (
-                <img
-                  src={book.data.coverImage}
-                  alt={book.data.title}
-                  class="w-full h-32 object-cover rounded-md mb-3"
-                  loading="lazy"
-                />
-              )}
-              <h3 class="text-base font-bold mb-1.5 text-text-base dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors line-clamp-1">
-                {book.data.title}
-              </h3>
-              <p class="text-sm text-text-muted dark:text-text-dark-muted line-clamp-2">
-                {book.data.description}
-              </p>
-            </a>
-          ))}
+          {
+            books.map((book) => (
+              <a
+                href={`/books/${stripLangPrefix(book.id)
+                  .replace(/\/index\.mdx?$/, "")
+                  .replace(/\.mdx?$/, "")}`}
+                class="article-card group block p-4 rounded-lg border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline"
+              >
+                {book.data.coverImage && (
+                  <img
+                    src={book.data.coverImage}
+                    alt={book.data.title}
+                    class="w-full h-32 object-cover rounded-md mb-3"
+                    loading="lazy"
+                  />
+                )}
+                <h3 class="text-base font-bold mb-1.5 text-text-base dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors line-clamp-1">
+                  {book.data.title}
+                </h3>
+                <p class="text-sm text-text-muted dark:text-text-dark-muted line-clamp-2">
+                  {book.data.description}
+                </p>
+              </a>
+            ))
+          }
         </div>
         <div class="mt-6 text-center">
-          <a href="/books" class="text-sm text-primary dark:text-primary-light no-underline hover:underline">
+          <a
+            href="/books"
+            class="text-sm text-primary dark:text-primary-light no-underline hover:underline"
+          >
             مشاهده همه کتاب‌ها ←
           </a>
         </div>
@@ -150,30 +190,35 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
       <!-- Articles Tab -->
       <div id="articles-tab" class="tab-content hidden">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {articles.map((article) => (
-            <a
-              href={`/articles/${stripLangPrefix(article.id)}`}
-              class="group block p-4 rounded-lg border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline"
-            >
-              <div class="flex items-start justify-between gap-2 mb-2">
-                <h3 class="text-base font-bold text-text-base dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors line-clamp-2">
-                  {article.data.title}
-                </h3>
-              </div>
-              <time
-                datetime={article.data.publishDate.toISOString()}
-                class="text-xs text-text-muted dark:text-text-dark-muted block mb-2"
+          {
+            articles.map((article) => (
+              <a
+                href={`/articles/${stripLangPrefix(article.id)}`}
+                class="article-card group block p-4 rounded-lg border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline"
               >
-                {dateFormatter.format(article.data.publishDate)}
-              </time>
-              <p class="text-sm text-text-muted dark:text-text-dark-muted line-clamp-2">
-                {article.data.description}
-              </p>
-            </a>
-          ))}
+                <div class="flex items-start justify-between gap-2 mb-2">
+                  <h3 class="text-base font-bold text-text-base dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors line-clamp-2">
+                    {article.data.title}
+                  </h3>
+                </div>
+                <time
+                  datetime={article.data.publishDate.toISOString()}
+                  class="text-xs text-text-muted dark:text-text-dark-muted block mb-2"
+                >
+                  {dateFormatter.format(article.data.publishDate)}
+                </time>
+                <p class="text-sm text-text-muted dark:text-text-dark-muted line-clamp-2">
+                  {article.data.description}
+                </p>
+              </a>
+            ))
+          }
         </div>
         <div class="mt-6 text-center">
-          <a href="/articles" class="text-sm text-primary dark:text-primary-light no-underline hover:underline">
+          <a
+            href="/articles"
+            class="text-sm text-primary dark:text-primary-light no-underline hover:underline"
+          >
             مشاهده همه مقالات ←
           </a>
         </div>
@@ -182,28 +227,33 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
       <!-- Statements Tab -->
       <div id="statements-tab" class="tab-content hidden">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {statements.map((statement) => (
-            <a
-              href={`/statements/${stripLangPrefix(statement.id)}`}
-              class="group block p-4 rounded-lg border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline"
-            >
-              <h3 class="text-base font-bold mb-2 text-text-base dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors line-clamp-2">
-                {statement.data.title}
-              </h3>
-              <time
-                datetime={statement.data.publishDate.toISOString()}
-                class="text-xs text-text-muted dark:text-text-dark-muted block mb-2"
+          {
+            statements.map((statement) => (
+              <a
+                href={`/statements/${stripLangPrefix(statement.id)}`}
+                class="article-card group block p-4 rounded-lg border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline"
               >
-                {dateFormatter.format(statement.data.publishDate)}
-              </time>
-              <p class="text-sm text-text-muted dark:text-text-dark-muted line-clamp-2">
-                {statement.data.description}
-              </p>
-            </a>
-          ))}
+                <h3 class="text-base font-bold mb-2 text-text-base dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors line-clamp-2">
+                  {statement.data.title}
+                </h3>
+                <time
+                  datetime={statement.data.publishDate.toISOString()}
+                  class="text-xs text-text-muted dark:text-text-dark-muted block mb-2"
+                >
+                  {dateFormatter.format(statement.data.publishDate)}
+                </time>
+                <p class="text-sm text-text-muted dark:text-text-dark-muted line-clamp-2">
+                  {statement.data.description}
+                </p>
+              </a>
+            ))
+          }
         </div>
         <div class="mt-6 text-center">
-          <a href="/statements" class="text-sm text-primary dark:text-primary-light no-underline hover:underline">
+          <a
+            href="/statements"
+            class="text-sm text-primary dark:text-primary-light no-underline hover:underline"
+          >
             مشاهده همه بیانیه‌ها ←
           </a>
         </div>
@@ -212,22 +262,27 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
       <!-- Wiki Tab -->
       <div id="wiki-tab" class="tab-content hidden">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {wiki.map((entry) => (
-            <a
-              href={`/wiki/${stripLangPrefix(entry.id)}`}
-              class="group block p-4 rounded-lg border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline"
-            >
-              <h3 class="text-base font-bold mb-2 text-text-base dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors line-clamp-2">
-                {entry.data.title}
-              </h3>
-              <p class="text-sm text-text-muted dark:text-text-dark-muted line-clamp-3">
-                {entry.data.description}
-              </p>
-            </a>
-          ))}
+          {
+            wiki.map((entry) => (
+              <a
+                href={`/wiki/${stripLangPrefix(entry.id)}`}
+                class="article-card group block p-4 rounded-lg border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline"
+              >
+                <h3 class="text-base font-bold mb-2 text-text-base dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors line-clamp-2">
+                  {entry.data.title}
+                </h3>
+                <p class="text-sm text-text-muted dark:text-text-dark-muted line-clamp-3">
+                  {entry.data.description}
+                </p>
+              </a>
+            ))
+          }
         </div>
         <div class="mt-6 text-center">
-          <a href="/wiki" class="text-sm text-primary dark:text-primary-light no-underline hover:underline">
+          <a
+            href="/wiki"
+            class="text-sm text-primary dark:text-primary-light no-underline hover:underline"
+          >
             مشاهده همه مطالب ویکی ←
           </a>
         </div>
@@ -237,9 +292,12 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
 
   <!-- Telegram Feed Section (view controlled by siteConfig.telegramView) -->
   <section class="container-wide py-12">
-    {siteConfig.telegramView === 'compact'
-      ? <TelegramFeedCompact lang={lang} limit={siteConfig.telegramHomeLimit} />
-      : <TelegramFeed lang={lang} limit={siteConfig.telegramHomeLimit} />
+    {
+      siteConfig.telegramView === "compact" ? (
+        <TelegramFeedCompact lang={lang} limit={siteConfig.telegramHomeLimit} />
+      ) : (
+        <TelegramFeed lang={lang} limit={siteConfig.telegramHomeLimit} />
+      )
     }
   </section>
 
@@ -254,25 +312,25 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
     border-bottom-color: transparent;
     color: var(--color-text-muted);
   }
-  
+
   .tab-button:hover {
     color: var(--color-primary);
   }
-  
+
   .tab-button.active {
     border-bottom-color: var(--color-primary);
     color: var(--color-primary);
   }
-  
+
   :global(.dark) .tab-button.active {
     border-bottom-color: var(--color-primary-light);
     color: var(--color-primary-light);
   }
-  
+
   .tab-content {
     animation: fadeIn 0.3s ease-in-out;
   }
-  
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -286,25 +344,25 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', {
 </style>
 
 <script>
-  const tabButtons = document.querySelectorAll('.tab-button');
-  const tabContents = document.querySelectorAll('.tab-content');
+  const tabButtons = document.querySelectorAll(".tab-button");
+  const tabContents = document.querySelectorAll(".tab-content");
 
   tabButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      const targetTab = button.getAttribute('data-tab');
+    button.addEventListener("click", () => {
+      const targetTab = button.getAttribute("data-tab");
 
       // Update button states
-      tabButtons.forEach((btn) => btn.classList.remove('active'));
-      button.classList.add('active');
+      tabButtons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
 
       // Update content visibility
       tabContents.forEach((content) => {
         if (content.id === `${targetTab}-tab`) {
-          content.classList.remove('hidden');
-          content.classList.add('active');
+          content.classList.remove("hidden");
+          content.classList.add("active");
         } else {
-          content.classList.add('hidden');
-          content.classList.remove('active');
+          content.classList.add("hidden");
+          content.classList.remove("active");
         }
       });
     });
