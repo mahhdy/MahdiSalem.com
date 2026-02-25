@@ -1,0 +1,66 @@
+---
+import DialogueLayout from "../../../layouts/DialogueLayout.astro";
+import { getCollection, render } from "astro:content";
+import { shouldShowHidden } from "../../../lib/hidden";
+
+const lang = "en";
+
+export async function getStaticPaths() {
+    const dialogues = await getCollection(
+        "dialogues",
+        ({ data }) => data.lang === "en",
+    );
+
+    const toRouteSlug = (entry: { slug?: string; id?: string }) => {
+        const raw = String(entry.slug ?? entry.id ?? "");
+        const withoutLang = raw.replace(/^en\//, "");
+        const withoutExt = withoutLang.replace(/\.(md|mdx)$/, "");
+        const segments = withoutExt.split("/").filter(Boolean);
+        return segments.at(-1) ?? "";
+    };
+
+    return dialogues.flatMap((dialogue) => {
+        const slug = toRouteSlug(dialogue);
+        if (!slug) return [];
+
+        return [
+            {
+                params: { slug },
+                props: { dialogue, slug },
+            },
+        ];
+    });
+}
+
+const { dialogue, slug: routeSlug } = Astro.props;
+
+// Hidden content guard
+if (dialogue.data.hidden && !shouldShowHidden(Astro.url)) {
+    return Astro.redirect("/en/404");
+}
+
+const { Content, remarkPluginFrontmatter } = await render(dialogue);
+---
+
+<DialogueLayout
+    title={dialogue.data.title}
+    description={dialogue.data.description}
+    lang={lang}
+    publishDate={dialogue.data.publishDate}
+    updatedDate={dialogue.data.updatedDate}
+    participants={dialogue.data.participants}
+    categories={dialogue.data.categories}
+    tags={dialogue.data.tags}
+    coverImage={dialogue.data.coverImage}
+    imageDisplay={dialogue.data.imageDisplay}
+    interfaceSlug={dialogue.data.interface}
+    rawContent={dialogue.body ?? ""}
+    slug={routeSlug}
+    draft={dialogue.data.draft}
+    showHeader={dialogue.data["show-header"]}
+    pdfOnly={dialogue.data.pdfOnly}
+    pdfUrl={dialogue.data.pdfUrl}
+    showPdfViewer={!!dialogue.data.pdfUrl && !dialogue.data.pdfOnly}
+>
+    <Content />
+</DialogueLayout>

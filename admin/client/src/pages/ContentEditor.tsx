@@ -33,7 +33,7 @@ function getSectionsForCollection(collection: string): SectionDef[] {
         {
             id: 'metadata',
             label: 'Metadata',
-            keys: ['author', 'publishDate', 'updatedDate', 'type'],
+            keys: ['author', 'participants', 'publishDate', 'updatedDate', 'type'],
             defaultOpen: false,
         },
         {
@@ -822,7 +822,7 @@ export default function ContentEditor() {
                         }}
                     >
                         Cover Image Preview
-                        {frontmatter.imageDisplay && (
+                        {Boolean(frontmatter.imageDisplay) && (
                             <span
                                 style={{
                                     marginLeft: 8,
@@ -867,7 +867,7 @@ export default function ContentEditor() {
                         >
                             {String(
                                 frontmatter.coverImage ||
-                                    frontmatter.thumbnailUrl
+                                frontmatter.thumbnailUrl
                             )}
                         </div>
                     </div>
@@ -952,7 +952,7 @@ export default function ContentEditor() {
                         else {
                             try {
                                 parsedVal = JSON.parse(newCustomVal);
-                            } catch {}
+                            } catch { }
                         }
 
                         updateField(key, parsedVal);
@@ -1019,15 +1019,15 @@ interface FieldDef {
     key: string;
     label: string;
     type:
-        | 'text'
-        | 'textarea'
-        | 'date'
-        | 'boolean'
-        | 'select'
-        | 'tags'
-        | 'number'
-        | 'image'
-        | 'file';
+    | 'text'
+    | 'textarea'
+    | 'date'
+    | 'boolean'
+    | 'select'
+    | 'tags'
+    | 'number'
+    | 'image'
+    | 'file';
     options?: string[];
     placeholder?: string;
 }
@@ -1073,6 +1073,15 @@ function getFieldsForCollection(collection: string): FieldDef[] {
                 { key: 'imageDisplay', label: 'Image in Page', type: 'select', options: ['full', 'side', 'thumbnail', 'hidden'] },
                 { key: 'cardImage', label: 'Image in Card', type: 'select', options: ['show', 'hidden'] },
                 { key: 'platform', label: 'Platform', type: 'select', options: ['youtube', 'vimeo', 'soundcloud'] },
+            ];
+        case 'dialogues':
+            return [
+                ...common,
+                { key: 'participants', label: 'Participants', type: 'tags' },
+                { key: 'publishDate', label: 'Publish Date', type: 'date' },
+                { key: 'coverImage', label: 'Cover Image', type: 'image' },
+                { key: 'imageDisplay', label: 'Image in Page', type: 'select', options: ['full', 'side', 'thumbnail', 'hidden'] },
+                { key: 'cardImage', label: 'Image in Card', type: 'select', options: ['show', 'hidden'] },
             ];
         default:
             return common;

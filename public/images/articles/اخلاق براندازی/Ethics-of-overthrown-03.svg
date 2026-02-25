@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#16213E;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0F3460;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E53935;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#B71C1C;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow3">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="glowRed">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feFlood flood-color="#E53935" flood-opacity="0.3"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#bgGrad3)"/>
+
+  <!-- Geometric pattern -->
+  <g opacity="0.03" stroke="#FFFFFF" fill="none" stroke-width="1">
+    <polygon points="540,100 940,400 940,900 540,1200 140,900 140,400"/>
+    <polygon points="540,200 840,430 840,830 540,1060 240,830 240,430"/>
+  </g>
+
+  <!-- Warning icon -->
+  <g transform="translate(540,120)" filter="url(#shadow3)">
+    <polygon points="0,-55 50,40 -50,40" fill="#E53935" stroke="#FF8A80" stroke-width="2"/>
+    <text x="0" y="25" text-anchor="middle" font-family="Arial" font-weight="900" font-size="48" fill="#FFFFFF">!</text>
+  </g>
+
+  <!-- Top badge -->
+  <rect x="310" y="200" width="460" height="60" rx="30" fill="#E53935" fill-opacity="0.2" stroke="#E53935" stroke-width="2"/>
+  <text x="540" y="240" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="28" fill="#FF8A80" direction="rtl">⚠️ آیا می‌دانستید؟</text>
+
+  <!-- Main message -->
+  <text x="540" y="350" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="38" fill="#FFFFFF" direction="rtl">هر مجوز نظری‌ای</text>
+  <text x="540" y="440" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="900" font-size="72" fill="#E53935" direction="rtl" filter="url(#shadow3)">دوطرفه است!</text>
+
+  <!-- Mirror arrows illustration -->
+  <g transform="translate(540,580)">
+    <!-- Left side: Freedom fighter -->
+    <rect x="-460" y="-80" width="380" height="160" rx="16" fill="#1B5E20" fill-opacity="0.4" stroke="#4CAF50" stroke-width="2"/>
+    <text x="-270" y="-30" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#A5D6A7" direction="rtl">مبارز آزادی‌خواه:</text>
+    <text x="-270" y="10" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="20" fill="#E8F5E9" direction="rtl">«خشونت علیه</text>
+    <text x="-270" y="40" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="20" fill="#E8F5E9" direction="rtl">ظالم مجاز است»</text>
+
+    <!-- Double arrow -->
+    <line x1="-60" y1="0" x2="60" y2="0" stroke="#F9A825" stroke-width="4"/>
+    <polygon points="-65,-8 -80,0 -65,8" fill="#F9A825"/>
+    <polygon points="65,-8 80,0 65,8" fill="#F9A825"/>
+    <text x="0" y="-20" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="16" fill="#F9A825">↔</text>
+
+    <!-- Right side: Oppressor -->
+    <rect x="80" y="-80" width="380" height="160" rx="16" fill="#B71C1C" fill-opacity="0.4" stroke="#EF5350" stroke-width="2"/>
+    <text x="270" y="-30" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#EF9A9A" direction="rtl">حکومت مستبد:</text>
+    <text x="270" y="10" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="20" fill="#FFCDD2" direction="rtl">«خشونت علیه</text>
+    <text x="270" y="40" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="20" fill="#FFCDD2" direction="rtl">فتنه‌گران مجاز است»</text>
+  </g>
+
+  <!-- Solution box -->
+  <rect x="80" y="730" width="920" height="340" rx="24" fill="#FFFFFF" fill-opacity="0.08" stroke="#F9A825" stroke-width="2" stroke-opacity="0.6"/>
+
+  <text x="540" y="800" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="30" fill="#F9A825" direction="rtl">🔐 راه‌حل چیست؟</text>
+
+  <text x="540" y="860" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="26" fill="#E8EAF6" direction="rtl">مگر آنکه محدودیت‌ها</text>
+  <text x="540" y="910" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="26" fill="#E8EAF6" direction="rtl">دقیق، موجه و مقبول باشد:</text>
+
+  <g transform="translate(540, 980)">
+    <text x="150" y="0" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="24" fill="#4CAF50" direction="rtl">✓ تناسب</text>
+    <text x="-170" y="0" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="24" fill="#4CAF50" direction="rtl">✓ ضرورت</text>
+    <text x="150" y="50" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="24" fill="#4CAF50" direction="rtl">✓ تمایز</text>
+    <text x="-170" y="50" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="24" fill="#4CAF50" direction="rtl">✓ کرامت انسانی</text>
+  </g>
+
+  <!-- Bottom quote -->
+  <rect x="80" y="1120" width="920" height="100" rx="16" fill="#0F3460"/>
+  <text x="540" y="1165" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-style="italic" font-size="22" fill="#B0BEC5" direction="rtl">«بزرگ‌ترین چالش اخلاق براندازی:</text>
+  <text x="540" y="1200" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-style="italic" font-size="22" fill="#B0BEC5" direction="rtl">مرزی که توانمند سازد اما از سوءاستفاده جلوگیری کند»</text>
+
+  <!-- Footer -->
+  <text x="540" y="1290" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="18" fill="#B0BEC5" direction="rtl" opacity="0.5">اسلاید ۳ از ۸  ◀</text>
+</svg>

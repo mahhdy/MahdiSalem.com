@@ -6,20 +6,21 @@
  * Clicking the card filters the list view by interface query.
  */
 
-import type { Category } from '../data/categories';
+import type { Category } from "../data/categories";
 
 interface Props {
   category: Category;
   items: any[];
-  lang: 'fa' | 'en';
-  contentType: 'articles' | 'books' | 'statements' | 'multimedia';
+  lang: "fa" | "en";
+  contentType: "articles" | "books" | "statements" | "multimedia" | "dialogues";
 }
 
 const { category, items, lang, contentType } = Astro.props;
 
 // Get category name based on language
-const categoryName = lang === 'fa' ? category.nameFa : category.nameEn;
-const categoryDescription = lang === 'fa' ? category.descriptionFa : category.descriptionEn;
+const categoryName = lang === "fa" ? category.nameFa : category.nameEn;
+const categoryDescription =
+  lang === "fa" ? category.descriptionFa : category.descriptionEn;
 
 // Get top 5 most recent items
 const topItems = items
@@ -32,13 +33,15 @@ const topItems = items
   .slice(0, 5);
 
 // Build filter URL - query based filtering
-const baseUrl = lang === 'fa' ? `/${contentType}` : `/en/${contentType}`;
+const baseUrl = lang === "fa" ? `/${contentType}` : `/en/${contentType}`;
 const filterUrl = `${baseUrl}?view=list&interface=${encodeURIComponent(category.slug)}`;
 
 // Helper to get item URL
 function getItemUrl(item: any) {
-  const slug = item.id.replace(/\.(md|mdx)$/, '').replace(/^(fa|en)\//, '');
-  return lang === 'fa' ? `/${contentType}/${slug}` : `/en/${contentType}/${slug}`;
+  const slug = item.id.replace(/\.(md|mdx)$/, "").replace(/^(fa|en)\//, "");
+  return lang === "fa"
+    ? `/${contentType}/${slug}`
+    : `/en/${contentType}/${slug}`;
 }
 ---
 
@@ -54,7 +57,9 @@ function getItemUrl(item: any) {
     <div class="flex-1">
       <div class="flex items-center gap-2 mb-2">
         <!-- Category Icon -->
-        <div class="w-10 h-10 flex-shrink-0 text-primary dark:text-primary-light opacity-70 group-hover:opacity-100 transition-opacity">
+        <div
+          class="w-10 h-10 flex-shrink-0 text-primary dark:text-primary-light opacity-70 group-hover:opacity-100 transition-opacity"
+        >
           <img
             src={category.imagePath}
             alt={categoryName}
@@ -65,46 +70,58 @@ function getItemUrl(item: any) {
 
         <!-- Category Name + Tooltip -->
         <div class="relative category-title-wrap">
-          <h3 class="text-base font-bold text-text dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors">
+          <h3
+            class="text-base font-bold text-text dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors"
+          >
             {categoryName}
           </h3>
-          {categoryDescription && (
-            <div class="category-tooltip absolute z-20 bottom-full mb-2 left-0 hidden w-64 rounded-lg border border-border dark:border-border-dark bg-surface dark:bg-surface-dark p-2 text-xs text-text-muted dark:text-text-dark-muted shadow-lg">
-              {categoryDescription}
-            </div>
-          )}
+          {
+            categoryDescription && (
+              <div class="category-tooltip absolute z-20 bottom-full mb-2 left-0 hidden w-64 rounded-lg border border-border dark:border-border-dark bg-surface dark:bg-surface-dark p-2 text-xs text-text-muted dark:text-text-dark-muted shadow-lg">
+                {categoryDescription}
+              </div>
+            )
+          }
         </div>
       </div>
     </div>
 
     <!-- Item Count Badge -->
     <div class="flex-shrink-0 ms-3">
-      <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary dark:bg-primary-light/10 dark:text-primary-light">
+      <span
+        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary dark:bg-primary-light/10 dark:text-primary-light"
+      >
         {items.length}
       </span>
     </div>
   </div>
 
   <!-- Top Items List - Compact -->
-  {topItems.length > 0 && (
-    <div class="space-y-1 pt-2 border-t border-border dark:border-border-dark mt-3 max-h-32 overflow-y-auto pe-1">
-      {topItems.map((item) => (
-        <a
-          href={getItemUrl(item)}
-          class="item-link flex items-start gap-1 text-xs hover:translate-x-0.5 transition-transform no-underline py-0.5"
-          data-item-link="true"
-          title={item.data.description || item.data.title}
-        >
-          <svg class="w-2.5 h-2.5 flex-shrink-0 mt-0.5 text-primary dark:text-primary-light opacity-60" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M8 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-          </svg>
-          <span class="line-clamp-1 text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light transition-colors">
-            {item.data.title}
-          </span>
-        </a>
-      ))}
-    </div>
-  )}
+  {
+    topItems.length > 0 && (
+      <div class="space-y-1 pt-2 border-t border-border dark:border-border-dark mt-3 max-h-32 overflow-y-auto pe-1">
+        {topItems.map((item) => (
+          <a
+            href={getItemUrl(item)}
+            class="item-link flex items-start gap-1 text-xs hover:translate-x-0.5 transition-transform no-underline py-0.5"
+            data-item-link="true"
+            title={item.data.description || item.data.title}
+          >
+            <svg
+              class="w-2.5 h-2.5 flex-shrink-0 mt-0.5 text-primary dark:text-primary-light opacity-60"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M8 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+            </svg>
+            <span class="line-clamp-1 text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light transition-colors">
+              {item.data.title}
+            </span>
+          </a>
+        ))}
+      </div>
+    )
+  }
 
   <!-- View All Link -->
   <a
@@ -113,22 +130,33 @@ function getItemUrl(item: any) {
     data-view-all="true"
   >
     <span class="inline-flex items-center gap-1">
-      {lang === 'fa' ? 'مشاهده همه' : 'View all'}
-      <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={lang === 'fa' ? "M15 19l-7-7 7-7" : "M9 5l7 7-7 7"} />
+      {lang === "fa" ? "مشاهده همه" : "View all"}
+      <svg
+        class="w-3 h-3"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d={lang === "fa" ? "M15 19l-7-7 7-7" : "M9 5l7 7-7 7"}></path>
       </svg>
     </span>
   </a>
 </div>
 
 <script>
-  document.addEventListener('click', (event) => {
+  document.addEventListener("click", (event) => {
     const target = event.target as HTMLElement;
-    const card = target.closest('.category-card[data-filter-url]') as HTMLElement | null;
+    const card = target.closest(
+      ".category-card[data-filter-url]",
+    ) as HTMLElement | null;
     if (!card) return;
 
     // Let normal item/view-all anchors work naturally
-    if (target.closest('a')) return;
+    if (target.closest("a")) return;
 
     const url = card.dataset.filterUrl;
     if (url) {
@@ -136,10 +164,10 @@ function getItemUrl(item: any) {
     }
   });
 
-  document.addEventListener('keydown', (event) => {
+  document.addEventListener("keydown", (event) => {
     const target = event.target as HTMLElement;
-    if (!target.classList.contains('category-card')) return;
-    if (event.key !== 'Enter' && event.key !== ' ') return;
+    if (!target.classList.contains("category-card")) return;
+    if (event.key !== "Enter" && event.key !== " ") return;
 
     event.preventDefault();
     const url = target.dataset.filterUrl;

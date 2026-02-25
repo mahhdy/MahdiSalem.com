@@ -28,6 +28,15 @@ export const siteConfig = {
     facebook: 'mahhdy',
     linkedin: '',
   },
+  feedLimits: {
+    telegram: 6,
+    x: 10,
+    instagram: 12,
+  },
+  feedUrls: {
+    instagram: 'https://feeds.behold.so/RzC3RaQ4Nsnydi63ycsL',
+    x: 'https://rss.app/feeds/HZm9MUOpxj54TfEk.xml',
+  },
 };
 
 export type SiteConfig = typeof siteConfig;

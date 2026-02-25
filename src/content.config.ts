@@ -154,4 +154,37 @@ const multimedia = defineCollection({
   }),
 });
 
-export const collections = { books, articles, statements, wiki, multimedia };
+const dialogues = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/dialogues' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    lang: z.enum(['fa', 'en']),
+    publishDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+    participants: z.array(z.string()).default(['مهدی سالم']),
+    category: z.union([z.string(), z.array(z.string())]).optional(),
+    categories: z.array(z.string()).default([]),
+    subject: z.union([z.string(), z.array(z.string())]).optional(),
+    interface: z.string().optional(), // Category taxonomy field
+    tags: z.array(z.string()).default([]),
+    'show-header': z.boolean().default(false),
+    coverImage: z.string().optional(),
+    imageDisplay: z.enum(['full', 'side', 'thumbnail', 'hidden']).default('full'), // How cover image is displayed on the detail page
+    cardImage: z.enum(['show', 'hidden']).default('show'), // Whether cover image is shown in card/list views
+    pdfUrl: z.string().optional(),
+    pdfOnly: z.boolean().default(false),
+    draft: z.boolean().default(false),
+    hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
+    showInContents: z.boolean().default(true), // Control visibility in All Contents page
+    // Extra metadata fields (tolerated from content files)
+    sourceType: z.string().optional(),
+    authorTitle: z.string().optional(),
+    email: z.string().optional(),
+    website: z.string().optional(),
+    location: z.string().optional(),
+    date: z.coerce.date().optional(),
+  }),
+});
+
+export const collections = { books, articles, statements, wiki, multimedia, dialogues };

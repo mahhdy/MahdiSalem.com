@@ -1,0 +1,216 @@
+---
+/**
+ * XFeed (Twitter) Component
+ * Displays the latest posts from X via RSS.app XML feed
+ */
+import { siteConfig } from "../config/site";
+
+interface Props {
+    lang: "fa" | "en";
+}
+
+const { lang } = Astro.props;
+const { feedUrls, feedLimits } = siteConfig;
+const feedUrl = feedUrls.x;
+const limit = feedLimits.x || 10;
+
+const t = {
+    fa: {
+        latest_posts: "جدیدترین پست‌های ایکس (Twitter)",
+        loading: "در حال بارگذاری...",
+        error: "خطا در بارگذاری فید ایکس",
+        view_profile: "مشاهده پروفایل در ایکس",
+        no_posts: "پستی یافت نشد",
+    },
+    en: {
+        latest_posts: "Latest X (Twitter) Posts",
+        loading: "Loading...",
+        error: "Error loading X feed",
+        view_profile: "View Profile on X",
+        no_posts: "No posts found",
+    },
+}[lang];
+---
+
+<div
+    class="x-feed"
+    data-feed-url={feedUrl}
+    data-limit={limit}
+    data-lang={lang}
+    dir={lang === "fa" ? "rtl" : "ltr"}
+>
+    <div class="feed-header flex items-center justify-between mb-8">
+        <h2 class="text-2xl font-bold flex items-center gap-3">
+            <svg
+                class="w-7 h-7 text-text-base dark:text-text-dark"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+            >
+                <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                ></path>
+            </svg>
+            {t.latest_posts}
+        </h2>
+    </div>
+
+    <!-- Loading -->
+    <div
+        class="feed-loading py-20 flex flex-col items-center justify-center text-text-muted"
+    >
+        <div
+            class="animate-spin rounded-full h-10 w-10 border-b-2 border-primary mb-4"
+        >
+        </div>
+        <p>{t.loading}</p>
+    </div>
+
+    <!-- Error -->
+    <div class="feed-error hidden py-20 text-center text-red-500">
+        <p>{t.error}</p>
+    </div>
+
+    <!-- Posts Container -->
+    <div class="feed-posts space-y-6">
+        <!-- Items Injected here -->
+    </div>
+
+    <!-- Profile Button -->
+    <div class="feed-footer text-center mt-12 hidden">
+        <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-all font-medium"
+        >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                ></path>
+            </svg>
+            {t.view_profile}
+        </a>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll(".x-feed").forEach(async (container) => {
+        const feedUrl = container.getAttribute("data-feed-url");
+        const limit = parseInt(container.getAttribute("data-limit") || "10");
+        const lang = container.getAttribute("data-lang");
+
+        if (!feedUrl) return;
+
+        const loadingEl = container.querySelector(
+            ".feed-loading",
+        ) as HTMLElement;
+        const errorEl = container.querySelector(".feed-error") as HTMLElement;
+        const postsEl = container.querySelector(".feed-posts") as HTMLElement;
+        const footerEl = container.querySelector(".feed-footer") as HTMLElement;
+
+        try {
+            const response = await fetch(feedUrl);
+            if (!response.ok) throw new Error();
+            const text = await response.text();
+
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(text, "text/xml");
+            const items = xmlDoc.querySelectorAll("item");
+
+            loadingEl.classList.add("hidden");
+
+            if (items.length === 0) {
+                errorEl.classList.remove("hidden");
+                errorEl.textContent =
+                    lang === "fa" ? "پستی یافت نشد" : "No posts found";
+                return;
+            }
+
+            // Update footer link (try to get from channel link)
+            const channelLink =
+                xmlDoc.querySelector("channel > link")?.textContent;
+            if (channelLink) {
+                const profileLink = footerEl.querySelector(
+                    "a",
+                ) as HTMLAnchorElement;
+                profileLink.href = channelLink;
+                footerEl.classList.remove("hidden");
+            }
+
+            // Render posts
+            Array.from(items)
+                .slice(0, limit)
+                .forEach((item) => {
+                    const title =
+                        item.querySelector("title")?.textContent || "";
+                    const link = item.querySelector("link")?.textContent || "#";
+                    const description =
+                        item.querySelector("description")?.textContent || "";
+                    const pubDate =
+                        item.querySelector("pubDate")?.textContent || "";
+
+                    const date = new Date(pubDate);
+                    const formattedDate = date.toLocaleDateString(
+                        lang === "fa" ? "fa-IR" : "en-US",
+                        {
+                            year: "numeric",
+                            month: "short",
+                            day: "numeric",
+                        },
+                    );
+
+                    const postCard = document.createElement("article");
+                    postCard.className =
+                        "p-5 rounded-lg bg-surface dark:bg-surface-dark border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-all hover:shadow-md";
+
+                    // Extract media if present (RSS.app often puts img in description or uses media:content)
+                    let mediaHtml = "";
+                    const mediaContent =
+                        item.querySelector("content") ||
+                        item.getElementsByTagName("media:content")[0];
+                    if (mediaContent) {
+                        const mediaUrl = mediaContent.getAttribute("url");
+                        if (mediaUrl) {
+                            mediaHtml = `<img src="${mediaUrl}" class="rounded-lg mb-4 max-h-96 w-auto object-cover" loading="lazy" />`;
+                        }
+                    } else {
+                        // Check for images in description
+                        const imgMatch = description.match(
+                            /<img[^>]+src="([^">]+)"/,
+                        );
+                        if (imgMatch) {
+                            mediaHtml = `<img src="${imgMatch[1]}" class="rounded-lg mb-4 max-h-96 w-auto object-cover" loading="lazy" />`;
+                        }
+                    }
+
+                    // Clean up description (remove HTML if any, RSS.app sometimes puts raw text)
+                    const cleanDesc = description
+                        .replace(/<[^>]*>/g, "")
+                        .trim();
+
+                    postCard.innerHTML = `
+          <div class="flex items-center gap-2 mb-3 text-sm text-text-muted">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>${formattedDate}</span>
+          </div>
+          ${mediaHtml}
+          <div class="post-text mb-4 text-text-base dark:text-text-dark leading-relaxed whitespace-pre-wrap">${cleanDesc || title}</div>
+          <a href="${link}" target="_blank" rel="noopener noreferrer" 
+             class="text-primary dark:text-primary-light hover:underline text-sm font-medium inline-flex items-center gap-1">
+            ${lang === "fa" ? "مشاهده در ایکس" : "View on X"}
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${lang === "fa" ? "M15 19l-7-7 7-7" : "M9 5l7 7-7 7"}" />
+            </svg>
+          </a>
+        `;
+                    postsEl.appendChild(postCard);
+                });
+        } catch (e) {
+            console.error("X feed error:", e);
+            loadingEl.classList.add("hidden");
+            errorEl.classList.remove("hidden");
+        }
+    });
+</script>

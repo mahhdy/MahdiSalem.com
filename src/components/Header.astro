@@ -1,7 +1,13 @@
 ---
-import { t, getDir, getLocalizedPath, getAlternateLocale, type Locale } from '../i18n';
-import ThemeToggle from './ThemeToggle.astro';
-import LanguageSwitcher from './LanguageSwitcher.astro';
+import {
+  t,
+  getDir,
+  getLocalizedPath,
+  getAlternateLocale,
+  type Locale,
+} from "../i18n";
+import ThemeToggle from "./ThemeToggle.astro";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
 
 interface Props {
   lang: Locale;
@@ -11,45 +17,56 @@ const { lang } = Astro.props;
 const dir = getDir(lang);
 
 const primaryNav = [
-  { key: 'nav.home', path: '' },
-  { key: 'nav.about', path: 'about' },
-  { key: 'nav.books', path: 'books' },
-  { key: 'nav.articles', path: 'articles' },
-  { key: 'nav.multimedia', path: 'multimedia' },
+  { key: "nav.home", path: "" },
+  { key: "nav.about", path: "about" },
+  { key: "nav.books", path: "books" },
+  { key: "nav.articles", path: "articles" },
+  { key: "nav.multimedia", path: "multimedia" },
 ];
 
 const secondaryNav = [
-  { key: 'nav.statements', path: 'statements' },
-  { key: 'nav.wiki', path: 'wiki' },
-  { key: 'nav.social', path: 'social' },
-  { key: 'nav.tags', path: 'tags' },
-  { key: 'nav.timeline', path: 'timeline' },
-  { key: 'nav.drafts', path: 'drafts' },
-  { key: 'nav.support', path: 'support' },
-  { key: 'nav.contact', path: 'contact' },
-  { key: 'nav.analytics', path: 'analytics' },
+  { key: "nav.dialogues", path: "dialogues" },
+  { key: "nav.statements", path: "statements" },
+  { key: "nav.wiki", path: "wiki" },
+  { key: "nav.social", path: "social" },
+  { key: "nav.tags", path: "tags" },
+  { key: "nav.timeline", path: "timeline" },
+  { key: "nav.drafts", path: "drafts" },
+  { key: "nav.support", path: "support" },
+  { key: "nav.contact", path: "contact" },
+  { key: "nav.analytics", path: "analytics" },
 ];
 
 const navItems = [...primaryNav, ...secondaryNav];
 ---
 
-<header class="site-header sticky top-0 z-50 bg-surface/80 dark:bg-surface-dark/80 backdrop-blur-md border-b border-border dark:border-border-dark">
-  <nav class="container-wide flex items-center justify-between h-16" aria-label="Main navigation">
+<header
+  class="site-header sticky top-0 z-50 bg-surface/80 dark:bg-surface-dark/80 backdrop-blur-md border-b border-border dark:border-border-dark"
+>
+  <nav
+    class="container-wide flex items-center justify-between h-16"
+    aria-label="Main navigation"
+  >
     <!-- Logo / Site name -->
-    <a href={getLocalizedPath('', lang)} class="text-xl font-bold text-primary dark:text-primary-light no-underline hover:no-underline">
-      {t('site.title', lang)}
+    <a
+      href={getLocalizedPath("", lang)}
+      class="text-xl font-bold text-primary dark:text-primary-light no-underline hover:no-underline"
+    >
+      {t("site.title", lang)}
     </a>
 
     <!-- Desktop nav -->
     <div class="hidden lg:flex items-center gap-1">
-      {primaryNav.map((item) => (
-        <a
-          href={getLocalizedPath(item.path, lang)}
-          class="px-3 py-2 text-sm rounded-lg text-text-base dark:text-text-dark hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors no-underline"
-        >
-          {t(item.key, lang)}
-        </a>
-      ))}
+      {
+        primaryNav.map((item) => (
+          <a
+            href={getLocalizedPath(item.path, lang)}
+            class="px-3 py-2 text-sm rounded-lg text-text-base dark:text-text-dark hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors no-underline"
+          >
+            {t(item.key, lang)}
+          </a>
+        ))
+      }
 
       {/* Dropdown for Secondary Nav */}
       <div class="relative group">
@@ -58,53 +75,92 @@ const navItems = [...primaryNav, ...secondaryNav];
           aria-haspopup="true"
           aria-expanded="false"
         >
-          {t('nav.more', lang)}
-          <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          {t("nav.more", lang)}
+          <svg
+            class="w-4 h-4 transition-transform group-hover:rotate-180"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"></path>
           </svg>
         </button>
-        <div class="absolute right-0 top-full mt-1 w-48 bg-surface dark:bg-surface-dark border border-border dark:border-border-dark rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
-          {secondaryNav.map((item) => (
-            <a
-              href={getLocalizedPath(item.path, lang)}
-              class="block px-4 py-2 text-sm text-text-base dark:text-text-dark hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors no-underline"
-            >
-              {t(item.key, lang)}
-            </a>
-          ))}
+        <div
+          class="absolute right-0 top-full mt-1 w-48 bg-surface dark:bg-surface-dark border border-border dark:border-border-dark rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2"
+        >
+          {
+            secondaryNav.map((item) => (
+              <a
+                href={getLocalizedPath(item.path, lang)}
+                class="block px-4 py-2 text-sm text-text-base dark:text-text-dark hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors no-underline"
+              >
+                {t(item.key, lang)}
+              </a>
+            ))
+          }
         </div>
       </div>
     </div>
 
     <!-- Actions -->
     <div class="flex items-center gap-2">
-          <!-- Search button -->
+      <!-- Search button -->
       <a
-        href={getLocalizedPath('search', lang)}
+        href={getLocalizedPath("search", lang)}
         class="p-2 rounded-lg hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors"
-        aria-label={t('nav.search', lang)}
+        aria-label={t("nav.search", lang)}
       >
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
         </svg>
       </a>
       <ThemeToggle />
       <LanguageSwitcher lang={lang} />
-      
-      {import.meta.env.DEV && (
-        <a 
-          href="http://localhost:3333" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="p-2 rounded-lg hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors text-text-muted hover:text-primary dark:hover:text-primary-light"
-          title="Admin Panel"
-        >
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg>
-        </a>
-      )}
+
+      {
+        import.meta.env.DEV && (
+          <a
+            href="http://localhost:3333"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="p-2 rounded-lg hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors text-text-muted hover:text-primary dark:hover:text-primary-light"
+            title="Admin Panel"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
+          </a>
+        )
+      }
 
       <!-- Mobile menu button -->
       <button
@@ -113,40 +169,61 @@ const navItems = [...primaryNav, ...secondaryNav];
         aria-label="Toggle menu"
         aria-expanded="false"
       >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            id="menu-icon"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+          <path
+            id="close-icon"
+            class="hidden"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"></path>
         </svg>
       </button>
     </div>
   </nav>
 
   <!-- Mobile nav -->
-  <div id="mobile-menu" class="hidden lg:hidden border-t border-border dark:border-border-dark">
+  <div
+    id="mobile-menu"
+    class="hidden lg:hidden border-t border-border dark:border-border-dark"
+  >
     <div class="container-wide py-4 flex flex-col gap-1">
-      {navItems.map((item) => (
-        <a
-          href={getLocalizedPath(item.path, lang)}
-          class="px-3 py-2 text-sm rounded-lg text-text-base dark:text-text-dark hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors no-underline"
-        >
-          {t(item.key, lang)}
-        </a>
-      ))}
+      {
+        navItems.map((item) => (
+          <a
+            href={getLocalizedPath(item.path, lang)}
+            class="px-3 py-2 text-sm rounded-lg text-text-base dark:text-text-dark hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors no-underline"
+          >
+            {t(item.key, lang)}
+          </a>
+        ))
+      }
     </div>
   </div>
 </header>
 
 <script>
-  const btn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  const menuIcon = document.getElementById('menu-icon');
-  const closeIcon = document.getElementById('close-icon');
+  const btn = document.getElementById("mobile-menu-btn");
+  const menu = document.getElementById("mobile-menu");
+  const menuIcon = document.getElementById("menu-icon");
+  const closeIcon = document.getElementById("close-icon");
 
-  btn?.addEventListener('click', () => {
-    const expanded = btn.getAttribute('aria-expanded') === 'true';
-    btn.setAttribute('aria-expanded', String(!expanded));
-    menu?.classList.toggle('hidden');
-    menuIcon?.classList.toggle('hidden');
-    closeIcon?.classList.toggle('hidden');
+  btn?.addEventListener("click", () => {
+    const expanded = btn.getAttribute("aria-expanded") === "true";
+    btn.setAttribute("aria-expanded", String(!expanded));
+    menu?.classList.toggle("hidden");
+    menuIcon?.classList.toggle("hidden");
+    closeIcon?.classList.toggle("hidden");
   });
 </script>

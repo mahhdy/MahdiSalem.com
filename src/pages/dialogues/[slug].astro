@@ -1,0 +1,74 @@
+---
+import DialogueLayout from "../../layouts/DialogueLayout.astro";
+import { getCollection, render } from "astro:content";
+import { shouldShowHidden } from "../../lib/hidden";
+
+const lang = "fa";
+
+export async function getStaticPaths() {
+    const dialogues = await getCollection(
+        "dialogues",
+        ({ data }) => data.lang === "fa",
+    );
+
+    const toRouteSlug = (entry: { slug?: string; id?: string }) => {
+        const raw = String(entry.slug ?? entry.id ?? "");
+        const withoutLang = raw.replace(/^fa\//, "");
+        const withoutExt = withoutLang.replace(/\.(md|mdx)$/, "");
+        const segments = withoutExt.split("/").filter(Boolean);
+        return segments.at(-1) ?? "";
+    };
+
+    return dialogues.flatMap((dialogue) => {
+        const slug = toRouteSlug(dialogue);
+        if (!slug) return [];
+
+        return [
+            {
+                params: { slug },
+                props: { dialogue, slug },
+            },
+        ];
+    });
+}
+
+const { dialogue, slug: routeSlug } = Astro.props;
+
+// Hidden content guard
+if (dialogue.data.hidden && !shouldShowHidden(Astro.url)) {
+    return Astro.redirect("/404");
+}
+
+const { Content, remarkPluginFrontmatter } = await render(dialogue);
+const slug =
+    routeSlug ??
+    String(dialogue.id ?? "")
+        .replace(/^fa\//, "")
+        .split("/")
+        .filter(Boolean)
+        .at(-1) ??
+    "";
+---
+
+<DialogueLayout
+    title={dialogue.data.title}
+    description={dialogue.data.description}
+    lang={lang}
+    publishDate={dialogue.data.publishDate}
+    updatedDate={dialogue.data.updatedDate}
+    participants={dialogue.data.participants}
+    categories={dialogue.data.categories}
+    tags={dialogue.data.tags}
+    coverImage={dialogue.data.coverImage}
+    imageDisplay={dialogue.data.imageDisplay}
+    interfaceSlug={dialogue.data.interface}
+    rawContent={dialogue.body ?? ""}
+    slug={slug}
+    draft={dialogue.data.draft}
+    showHeader={dialogue.data["show-header"]}
+    pdfOnly={dialogue.data.pdfOnly}
+    pdfUrl={dialogue.data.pdfUrl}
+    showPdfViewer={!!dialogue.data.pdfUrl && !dialogue.data.pdfOnly}
+>
+    <Content />
+</DialogueLayout>

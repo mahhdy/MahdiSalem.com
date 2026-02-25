@@ -11,6 +11,15 @@ interface SiteConfig {
         facebook: string;
         linkedin: string;
     };
+    feedLimits: {
+        telegram: number;
+        x: number;
+        instagram: number;
+    };
+    feedUrls: {
+        instagram: string;
+        x: string;
+    };
 }
 
 export default function SiteConfigManager() {
@@ -73,7 +82,7 @@ export default function SiteConfigManager() {
                     </div>
                     <div style={{ marginTop: 16 }}>
                         <label style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                            <span>Posts shown on homepage:</span>
+                            <span>Posts shown on <strong>Homepage</strong>:</span>
                             <input
                                 type="number"
                                 min={1}
@@ -110,25 +119,65 @@ export default function SiteConfigManager() {
 
                 {/* Social */}
                 <section className="card" style={{ padding: 20 }}>
-                    <h2 style={{ marginBottom: 16 }}>Social Media Handles</h2>
-                    <p style={{ marginBottom: 12, fontSize: 13, color: 'var(--text-muted)' }}>
-                        Leave blank to hide a platform tab on /social
+                    <h2 style={{ marginBottom: 16 }}>Social Media Connections</h2>
+                    <p style={{ marginBottom: 16, fontSize: 13, color: 'var(--text-muted)' }}>
+                        Configure handles, feed URLs, and display limits for each platform.
                     </p>
-                    {Object.entries(config.social).map(([key, val]) => (
-                        <div key={key} style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 10 }}>
-                            <span style={{ width: 90, textTransform: 'capitalize', fontWeight: 500 }}>{key}</span>
-                            <input
-                                type="text"
-                                value={val}
-                                placeholder={`${key} handle`}
-                                onChange={e => setConfig({
-                                    ...config,
-                                    social: { ...config.social, [key]: e.target.value }
-                                })}
-                                style={{ flex: 1, padding: '4px 8px', borderRadius: 4, border: '1px solid var(--border)' }}
-                            />
-                        </div>
-                    ))}
+
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+                        {Object.entries(config.social).map(([key, handle]) => (
+                            <div key={key} style={{ borderBottom: '1px solid var(--border)', pb: 16, marginBottom: 16 }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
+                                    <span style={{ width: 90, textTransform: 'capitalize', fontWeight: 600 }}>{key}</span>
+                                    <input
+                                        type="text"
+                                        value={handle}
+                                        placeholder={`${key} handle`}
+                                        onChange={e => setConfig({
+                                            ...config,
+                                            social: { ...config.social, [key]: e.target.value }
+                                        })}
+                                        style={{ flex: 1, padding: '6px 10px', borderRadius: 4, border: '1px solid var(--border)' }}
+                                    />
+
+                                    {/* Limits for Telegram, X, Instagram */}
+                                    {['telegram', 'x', 'instagram'].includes(key) && (
+                                        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                                            <span style={{ fontSize: 12 }}>{key === 'telegram' ? 'Social Page Limit:' : 'Limit:'}</span>
+                                            <input
+                                                type="number"
+                                                min={1}
+                                                max={50}
+                                                value={config.feedLimits[key as keyof typeof config.feedLimits] || 10}
+                                                onChange={e => setConfig({
+                                                    ...config,
+                                                    feedLimits: { ...config.feedLimits, [key]: parseInt(e.target.value) || 10 }
+                                                })}
+                                                style={{ width: 55, padding: '4px 6px', borderRadius: 4, border: '1px solid var(--border)' }}
+                                            />
+                                        </div>
+                                    )}
+                                </div>
+
+                                {/* Feed URLs for X and Instagram */}
+                                {['x', 'instagram'].includes(key) && (
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginLeft: 102 }}>
+                                        <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>Feed URL:</span>
+                                        <input
+                                            type="text"
+                                            value={config.feedUrls[key as keyof typeof config.feedUrls] || ''}
+                                            placeholder={`JSON/RSS Feed URL for ${key}`}
+                                            onChange={e => setConfig({
+                                                ...config,
+                                                feedUrls: { ...config.feedUrls, [key]: e.target.value }
+                                            })}
+                                            style={{ flex: 1, padding: '4px 8px', borderRadius: 4, border: '1px solid var(--border)', fontSize: 12 }}
+                                        />
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                    </div>
                 </section>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>

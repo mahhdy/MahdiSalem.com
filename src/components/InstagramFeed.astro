@@ -1,0 +1,185 @@
+---
+/**
+ * InstagramFeed Component
+ * Displays the latest posts from Instagram via Behold.so JSON feed
+ */
+
+import { siteConfig } from "../config/site";
+
+interface Props {
+    lang: "fa" | "en";
+    limit?: number;
+}
+
+const { lang } = Astro.props;
+const { feedUrls, feedLimits } = siteConfig;
+const feedUrl = feedUrls.instagram;
+const limit = feedLimits.instagram || 12;
+
+const t = {
+    fa: {
+        latest_posts: "جدیدترین پست‌های اینستاگرام",
+        loading: "در حال بارگذاری...",
+        error: "خطا در بارگذاری فید اینستاگرام",
+        view_profile: "مشاهده پروفایل در اینستاگرام",
+        no_posts: "پستی یافت نشد",
+    },
+    en: {
+        latest_posts: "Latest Instagram Posts",
+        loading: "Loading...",
+        error: "Error loading Instagram feed",
+        view_profile: "View Profile on Instagram",
+        no_posts: "No posts found",
+    },
+}[lang];
+---
+
+<div
+    class="instagram-feed"
+    data-feed-url={feedUrl}
+    data-limit={limit}
+    data-lang={lang}
+    dir={lang === "fa" ? "rtl" : "ltr"}
+>
+    <div class="feed-header flex items-center justify-between mb-8">
+        <h2 class="text-2xl font-bold flex items-center gap-3">
+            <svg
+                class="w-7 h-7 text-[#E4405F]"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+            >
+                <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                ></path>
+            </svg>
+            {t.latest_posts}
+        </h2>
+    </div>
+
+    <!-- Loading -->
+    <div
+        class="feed-loading py-20 flex flex-col items-center justify-center text-text-muted"
+    >
+        <div
+            class="animate-spin rounded-full h-10 w-10 border-b-2 border-primary mb-4"
+        >
+        </div>
+        <p>{t.loading}</p>
+    </div>
+
+    <!-- Error -->
+    <div class="feed-error hidden py-20 text-center text-red-500">
+        <p>{t.error}</p>
+    </div>
+
+    <!-- Grid -->
+    <div class="feed-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- Items Injected here -->
+    </div>
+
+    <!-- Profile Button -->
+    <div class="feed-footer text-center mt-12 hidden">
+        <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-all font-medium"
+        >
+            <svg
+                class="w-5 h-5 text-[#E4405F]"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+            >
+                <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                ></path>
+            </svg>
+            {t.view_profile}
+        </a>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll(".instagram-feed").forEach(async (container) => {
+        const feedUrl = container.getAttribute("data-feed-url");
+        const limit = parseInt(container.getAttribute("data-limit") || "12");
+        const lang = container.getAttribute("data-lang");
+
+        if (!feedUrl) return;
+
+        const loadingEl = container.querySelector(
+            ".feed-loading",
+        ) as HTMLElement;
+        const errorEl = container.querySelector(".feed-error") as HTMLElement;
+        const gridEl = container.querySelector(".feed-grid") as HTMLElement;
+        const footerEl = container.querySelector(".feed-footer") as HTMLElement;
+
+        try {
+            const response = await fetch(feedUrl);
+            if (!response.ok) throw new Error();
+            const data = await response.json();
+
+            loadingEl.classList.add("hidden");
+
+            if (!data.posts || data.posts.length === 0) {
+                errorEl.classList.remove("hidden");
+                errorEl.textContent =
+                    lang === "fa" ? "پستی یافت نشد" : "No posts found";
+                return;
+            }
+
+            // Update footer link
+            const profileLink = footerEl.querySelector(
+                "a",
+            ) as HTMLAnchorElement;
+            profileLink.href = `https://instagram.com/${data.username}`;
+            footerEl.classList.remove("hidden");
+
+            // Render posts
+            data.posts.slice(0, limit).forEach((post: any) => {
+                const item = document.createElement("a");
+                item.href = post.permalink;
+                item.target = "_blank";
+                item.rel = "noopener noreferrer";
+                item.className =
+                    "instagram-item group relative overflow-hidden rounded-xl aspect-square bg-surface-dim dark:bg-surface-dark-dim border border-border dark:border-border-dark";
+
+                // Image content
+                const thumb = post.sizes?.medium?.mediaUrl || post.mediaUrl;
+                item.innerHTML = `
+          <img 
+            src="${thumb}" 
+            alt="Instagram post" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4 text-white text-xs">
+            <p class="line-clamp-3 mb-2">${post.prunedCaption || ""}</p>
+            <div class="flex items-center justify-between opacity-80">
+               <span>${new Date(post.timestamp).toLocaleDateString(lang === "fa" ? "fa-IR" : "en-US")}</span>
+               ${post.mediaType === "CAROUSEL_ALBUM" ? '<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22 16V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2zm-11-4l2.03 2.71L16 11l4 5H8l3-4zM2 6v14c0 1.1.9 2 2 2h14v-2H4V6H2z"/></svg>' : ""}
+               ${post.mediaType === "VIDEO" ? '<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>' : ""}
+            </div>
+          </div>
+        `;
+                gridEl.appendChild(item);
+            });
+        } catch (e) {
+            loadingEl.classList.add("hidden");
+            errorEl.classList.remove("hidden");
+        }
+    });
+</script>
+
+<style>
+    .instagram-item {
+        box-shadow:
+            0 4px 6px -1px rgb(0 0 0 / 0.1),
+            0 2px 4px -2px rgb(0 0 0 / 0.1);
+    }
+    .instagram-item:hover {
+        box-shadow:
+            0 10px 15px -3px rgb(0 0 0 / 0.1),
+            0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+</style>

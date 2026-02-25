@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <!-- Complex gradients -->
+    <linearGradient id="bgCoverMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A192F;stop-opacity:1"/>
+      <stop offset="30%" style="stop-color:#1A237E;stop-opacity:1"/>
+      <stop offset="70%" style="stop-color:#4A148C;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1A1A2E;stop-opacity:1"/>
+    </linearGradient>
+    
+    <radialGradient id="centerGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" style="stop-color:#F9A825;stop-opacity:0.2"/>
+      <stop offset="50%" style="stop-color:#E91E63;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0"/>
+    </radialGradient>
+    
+    <linearGradient id="goldTitle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD54F;stop-opacity:1"/>
+      <stop offset="30%" style="stop-color:#F9A825;stop-opacity:1"/>
+      <stop offset="70%" style="stop-color:#FF6F00;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FFD54F;stop-opacity:1"/>
+    </linearGradient>
+
+    <linearGradient id="purpleShine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#CE93D8;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#AB47BC;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#CE93D8;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="shadowHeavy">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+    
+    <filter id="shadowSoft">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+
+    <filter id="glowGold">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#F9A825" flood-opacity="0.4"/>
+      <feComposite in2="blur" operator="in" result="glowOut"/>
+      <feComposite in="SourceGraphic" in2="glowOut" operator="over"/>
+    </filter>
+
+    <!-- Patterns -->
+    <pattern id="dotsPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1.5" fill="#F9A825" opacity="0.15"/>
+      <circle cx="25" cy="25" r="1.5" fill="#CE93D8" opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <!-- Background layers -->
+  <rect width="1080" height="1350" fill="url(#bgCoverMain)"/>
+  <rect width="1080" height="1350" fill="url(#centerGlow)"/>
+  <rect width="1080" height="1350" fill="url(#dotsPattern)"/>
+
+  <!-- Decorative geometric shapes -->
+  <g opacity="0.06">
+    <polygon points="540,150 640,350 440,350" fill="#F9A825"/>
+    <circle cx="150" cy="300" r="200" fill="none" stroke="#CE93D8" stroke-width="2"/>
+    <circle cx="930" cy="1050" r="250" fill="none" stroke="#F9A825" stroke-width="2"/>
+    <rect x="700" y="200" width="200" height="200" rx="20" fill="none" stroke="#FFFFFF" stroke-width="1" transform="rotate(25 800 300)"/>
+  </g>
+
+  <!-- Large decorative circles -->
+  <g opacity="0.08" fill="none">
+    <circle cx="540" cy="675" r="600" stroke="#F9A825" stroke-width="1"/>
+    <circle cx="540" cy="675" r="500" stroke="#CE93D8" stroke-width="0.8"/>
+    <circle cx="540" cy="675" r="400" stroke="#FFFFFF" stroke-width="0.6"/>
+  </g>
+
+  <!-- Top ornamental line -->
+  <g transform="translate(540, 140)">
+    <rect x="-200" y="0" width="400" height="3" rx="1.5" fill="url(#goldTitle)" filter="url(#glowGold)"/>
+    <circle cx="-220" cy="1.5" r="6" fill="url(#goldTitle)"/>
+    <circle cx="220" cy="1.5" r="6" fill="url(#goldTitle)"/>
+    <circle cx="0" cy="1.5" r="8" fill="url(#goldTitle)" filter="url(#glowGold)"/>
+  </g>
+
+  <!-- Small category badge -->
+  <rect x="340" y="180" width="400" height="50" rx="25" fill="#F9A825" fill-opacity="0.15" stroke="#F9A825" stroke-width="1.5"/>
+  <text x="540" y="213" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#F9A825" letter-spacing="6" direction="rtl">فلسفهٔ سیاسی  •  اخلاق</text>
+
+  <!-- Main Title Group -->
+  <g transform="translate(540, 330)">
+    <!-- "اخلاق" -->
+    <text x="0" y="0" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="900" font-size="110" fill="#FFFFFF" filter="url(#shadowHeavy)" opacity="0.95">اخلاق</text>
+    
+    <!-- "براندازی" with gradient -->
+    <text x="0" y="130" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="900" font-size="110" fill="url(#goldTitle)" filter="url(#shadowHeavy)">براندازی</text>
+  </g>
+
+  <!-- Subtitle divider -->
+  <g transform="translate(540, 520)">
+    <line x1="-250" y1="0" x2="-50" y2="0" stroke="url(#purpleShine)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="8" fill="url(#goldTitle)" filter="url(#glowGold)"/>
+    <line x1="50" y1="0" x2="250" y2="0" stroke="url(#purpleShine)" stroke-width="2"/>
+  </g>
+
+  <!-- Subtitle lines -->
+  <text x="540" y="590" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="32" fill="#E8EAF6" direction="rtl" opacity="0.9">حاشیه علیه متن</text>
+  <text x="540" y="640" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="28" fill="#CE93D8" direction="rtl" opacity="0.85">حق عصیان، اخلاق دشمنی</text>
+  <text x="540" y="685" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="28" fill="#CE93D8" direction="rtl" opacity="0.85">و راه میانهٔ آزادی‌خواهی</text>
+
+  <!-- Central Question Box -->
+  <rect x="100" y="750" width="880" height="240" rx="24" fill="#FFFFFF" fill-opacity="0.04" stroke="url(#goldTitle)" stroke-width="2" filter="url(#shadowSoft)"/>
+  
+  <text x="540" y="820" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="30" fill="#F9A825" direction="rtl" filter="url(#glowGold)">سؤال محوری:</text>
+  
+  <text x="540" y="880" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="28" fill="#FFFFFF" direction="rtl">وقتی تحت ستم سیستماتیک قرار داری</text>
+  <text x="540" y="925" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="28" fill="#FFFFFF" direction="rtl">مبارزه چه اخلاقی دارد؟</text>
+  <text x="540" y="970" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="24" fill="#B0BEC5" direction="rtl" font-style="italic">و چگونه در دشمنی با شیطان، به شیطان بدل نشویم؟</text>
+
+  <!-- Feature highlights -->
+  <g transform="translate(540, 1050)">
+    <!-- Three key points side by side -->
+    <g transform="translate(-280, 0)">
+      <circle cx="0" cy="0" r="40" fill="#1B5E20" fill-opacity="0.3" stroke="#4CAF50" stroke-width="2"/>
+      <text x="0" y="8" text-anchor="middle" font-size="32">📊</text>
+      <text x="0" y="60" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="18" fill="#A5D6A7" direction="rtl">تحلیل تطبیقی</text>
+      <text x="0" y="85" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="16" fill="#81C784" direction="rtl">۳۰۰+ جنبش</text>
+    </g>
+
+    <g transform="translate(0, 0)">
+      <circle cx="0" cy="0" r="40" fill="#4A148C" fill-opacity="0.3" stroke="#CE93D8" stroke-width="2"/>
+      <text x="0" y="8" text-anchor="middle" font-size="32">📚</text>
+      <text x="0" y="60" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="18" fill="#CE93D8" direction="rtl">منابع جامع</text>
+      <text x="0" y="85" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="16" fill="#BA68C8" direction="rtl">۸۰+ کتاب</text>
+    </g>
+
+    <g transform="translate(280, 0)">
+      <circle cx="0" cy="0" r="40" fill="#B71C1C" fill-opacity="0.3" stroke="#EF5350" stroke-width="2"/>
+      <text x="0" y="8" text-anchor="middle" font-size="32">🇮🇷</text>
+      <text x="0" y="60" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="18" fill="#EF9A9A" direction="rtl">مورد ایران</text>
+      <text x="0" y="85" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="16" fill="#E57373" direction="rtl">۴۷ سال</text>
+    </g>
+  </g>
+
+  <!-- Bottom decorative bar -->
+  <rect x="0" y="1220" width="1080" height="130" fill="#000000" fill-opacity="0.3"/>
+  
+  <text x="540" y="1270" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="24" fill="#B0BEC5" direction="rtl">مقاله‌ای جامع و تحلیلی دربارهٔ</text>
+  <text x="540" y="1310" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="28" fill="#F9A825" direction="rtl">مبانی، ابعاد و چالش‌های اخلاقی مقاومت</text>
+
+  <!-- Bottom ornamental line -->
+  <rect x="340" y="1325" width="400" height="2" rx="1" fill="url(#goldTitle)" opacity="0.4"/>
+
+  <!-- Swipe indicator -->
+  <text x="540" y="1340" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="18" fill="#78909C" direction="rtl">⟵  برای شروع، ورق بزنید</text>
+</svg>

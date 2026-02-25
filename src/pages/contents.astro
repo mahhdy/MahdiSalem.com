@@ -1,34 +1,58 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import { t } from '../i18n';
-import { getCollection } from 'astro:content';
-import { categories } from '../data/categories';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { t } from "../i18n";
+import { getCollection } from "astro:content";
+import { categories } from "../data/categories";
 
-const lang = 'fa';
+const lang = "fa";
 
 // Get all non-draft, non-hidden content
-const allArticles   = await getCollection('articles',   ({ data }) => data.lang === 'fa' && !data.draft && !data.hidden);
-const allBooks      = await getCollection('books',      (entry)   => entry.data.lang === 'fa' && !entry.data.draft && !entry.data.hidden && entry.id.split('/').length === 2);
-const allMultimedia = await getCollection('multimedia', ({ data }) => data.lang === 'fa' && !data.draft && !data.hidden);
-const allStatements = await getCollection('statements', ({ data }) => data.lang === 'fa' && !data.draft && !data.hidden);
+const allArticles = await getCollection(
+  "articles",
+  ({ data }) => data.lang === "fa" && !data.draft && !data.hidden,
+);
+const allBooks = await getCollection(
+  "books",
+  (entry) =>
+    entry.data.lang === "fa" &&
+    !entry.data.draft &&
+    !entry.data.hidden &&
+    entry.id.split("/").length === 2,
+);
+const allMultimedia = await getCollection(
+  "multimedia",
+  ({ data }) => data.lang === "fa" && !data.draft && !data.hidden,
+);
+const allStatements = await getCollection(
+  "statements",
+  ({ data }) => data.lang === "fa" && !data.draft && !data.hidden,
+);
+const allDialogues = await getCollection(
+  "dialogues",
+  ({ data }) => data.lang === "fa" && !data.draft && !data.hidden,
+);
 
 // Combine all content
 const allContent = [
-  ...allArticles.map(a   => ({ ...a, contentType: 'articles'   as const })),
-  ...allBooks.map(b      => ({ ...b, contentType: 'books'      as const })),
-  ...allMultimedia.map(m => ({ ...m, contentType: 'multimedia' as const })),
-  ...allStatements.map(s => ({ ...s, contentType: 'statements' as const })),
+  ...allArticles.map((a) => ({ ...a, contentType: "articles" as const })),
+  ...allBooks.map((b) => ({ ...b, contentType: "books" as const })),
+  ...allMultimedia.map((m) => ({ ...m, contentType: "multimedia" as const })),
+  ...allStatements.map((s) => ({ ...s, contentType: "statements" as const })),
+  ...allDialogues.map((d) => ({ ...d, contentType: "dialogues" as const })),
 ];
 
 // ─── TAB 1: Group by interface/category ───────────────────────────────────────
 const contentByInterface = new Map<string, typeof allContent>();
 
-categories.forEach(category => {
-  const items = allContent.filter(item => {
+categories.forEach((category) => {
+  const items = allContent.filter((item) => {
     if (item.data.interface) return item.data.interface === category.slug;
     const itemCats = (item.data.categories as string[] | undefined) || [];
-    return itemCats.some((cat: string) =>
-      cat === category.slug || cat === category.nameFa || cat === category.nameEn
+    return itemCats.some(
+      (cat: string) =>
+        cat === category.slug ||
+        cat === category.nameFa ||
+        cat === category.nameEn,
     );
   });
   if (items.length > 0) contentByInterface.set(category.slug, items);
@@ -36,125 +60,234 @@ categories.forEach(category => {
 
 const sortedCategories = Array.from(contentByInterface.entries())
   .sort((a, b) => b[1].length - a[1].length)
-  .map(([slug]) => categories.find(c => c.slug === slug)!)
+  .map(([slug]) => categories.find((c) => c.slug === slug)!)
   .filter(Boolean);
 
 // ─── TAB 2: Group by tags ─────────────────────────────────────────────────────
 const tagMap = new Map<string, typeof allContent>();
 
-allContent.forEach(item => {
+allContent.forEach((item) => {
   const tags: string[] = (item.data.tags as string[] | undefined) || [];
-  tags.forEach(tag => {
+  tags.forEach((tag) => {
     if (!tag || !tag.trim()) return;
     if (!tagMap.has(tag)) tagMap.set(tag, []);
     tagMap.get(tag)!.push(item);
   });
 });
 
-const sortedTags = Array.from(tagMap.entries())
-  .sort((a, b) => b[1].length - a[1].length);
+const sortedTags = Array.from(tagMap.entries()).sort(
+  (a, b) => b[1].length - a[1].length,
+);
 ---
 
-<BaseLayout title={t('contents.title', lang)} description={t('contents.description', lang)} lang={lang}>
+<BaseLayout
+  title={t("contents.title", lang)}
+  description={t("contents.description", lang)}
+  lang={lang}
+>
   <div class="container-wide py-16" dir="rtl">
-
     <!-- Page header -->
     <div class="mb-12 text-center">
-      <h1 class="text-3xl md:text-4xl font-bold mb-4">{t('contents.title', lang)}</h1>
-      <p class="text-lg text-text-muted dark:text-text-dark-muted max-w-2xl mx-auto">
-        {t('contents.description', lang)}
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">
+        {t("contents.title", lang)}
+      </h1>
+      <p
+        class="text-lg text-text-muted dark:text-text-dark-muted max-w-2xl mx-auto"
+      >
+        {t("contents.description", lang)}
       </p>
     </div>
 
     <!-- Stats Overview -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-      <div class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center">
-        <div class="text-3xl font-bold text-primary dark:text-primary-light">{allArticles.length}</div>
-        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">{t('nav.articles', lang)}</div>
+    <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
+      <div
+        class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center"
+      >
+        <div class="text-3xl font-bold text-primary dark:text-primary-light">
+          {allArticles.length}
+        </div>
+        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">
+          {t("nav.articles", lang)}
+        </div>
       </div>
-      <div class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center">
-        <div class="text-3xl font-bold text-primary dark:text-primary-light">{allBooks.length}</div>
-        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">{t('nav.books', lang)}</div>
+      <div
+        class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center"
+      >
+        <div class="text-3xl font-bold text-primary dark:text-primary-light">
+          {allDialogues.length}
+        </div>
+        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">
+          {t("nav.dialogues", lang)}
+        </div>
       </div>
-      <div class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center">
-        <div class="text-3xl font-bold text-primary dark:text-primary-light">{allMultimedia.length}</div>
-        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">{t('nav.multimedia', lang)}</div>
+      <div
+        class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center"
+      >
+        <div class="text-3xl font-bold text-primary dark:text-primary-light">
+          {allBooks.length}
+        </div>
+        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">
+          {t("nav.books", lang)}
+        </div>
       </div>
-      <div class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center">
-        <div class="text-3xl font-bold text-primary dark:text-primary-light">{allStatements.length}</div>
-        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">{t('nav.statements', lang)}</div>
+      <div
+        class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center"
+      >
+        <div class="text-3xl font-bold text-primary dark:text-primary-light">
+          {allMultimedia.length}
+        </div>
+        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">
+          {t("nav.multimedia", lang)}
+        </div>
+      </div>
+      <div
+        class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center"
+      >
+        <div class="text-3xl font-bold text-primary dark:text-primary-light">
+          {allStatements.length}
+        </div>
+        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">
+          {t("nav.statements", lang)}
+        </div>
       </div>
     </div>
 
     <!-- Tab switcher -->
-    <div class="flex gap-0 mb-8 border-b border-border dark:border-border-dark" role="tablist">
+    <div
+      class="flex gap-0 mb-8 border-b border-border dark:border-border-dark"
+      role="tablist"
+    >
       <button
-        role="tab" id="tab-categories" aria-selected="true" aria-controls="panel-categories"
+        role="tab"
+        id="tab-categories"
+        aria-selected="true"
+        aria-controls="panel-categories"
         class="contents-tab px-5 py-3 text-sm font-semibold border-b-2 border-primary text-primary dark:text-primary-light -mb-px transition-colors"
         data-panel="panel-categories"
       >
-        {t('contents.tab_categories', lang)}
-        <span class="mr-2 text-xs bg-primary/10 text-primary dark:bg-primary-light/10 dark:text-primary-light px-2 py-0.5 rounded-full">{sortedCategories.length}</span>
+        {t("contents.tab_categories", lang)}
+        <span
+          class="mr-2 text-xs bg-primary/10 text-primary dark:bg-primary-light/10 dark:text-primary-light px-2 py-0.5 rounded-full"
+          >{sortedCategories.length}</span
+        >
       </button>
       <button
-        role="tab" id="tab-tags" aria-selected="false" aria-controls="panel-tags"
+        role="tab"
+        id="tab-tags"
+        aria-selected="false"
+        aria-controls="panel-tags"
         class="contents-tab px-5 py-3 text-sm font-semibold border-b-2 border-transparent text-text-muted dark:text-text-dark-muted -mb-px hover:text-primary dark:hover:text-primary-light transition-colors"
         data-panel="panel-tags"
       >
-        {t('contents.tab_tags', lang)}
-        <span class="mr-2 text-xs bg-surface-dim dark:bg-surface-dark-dim px-2 py-0.5 rounded-full">{sortedTags.length}</span>
+        {t("contents.tab_tags", lang)}
+        <span
+          class="mr-2 text-xs bg-surface-dim dark:bg-surface-dark-dim px-2 py-0.5 rounded-full"
+          >{sortedTags.length}</span
+        >
       </button>
     </div>
 
     <!-- Panel 1: By Category -->
     <div id="panel-categories" role="tabpanel" aria-labelledby="tab-categories">
-      {sortedCategories.length === 0
-        ? <p class="text-center text-text-muted py-12">محتوایی یافت نشد</p>
-        : (
+      {
+        sortedCategories.length === 0 ? (
+          <p class="text-center text-text-muted py-12">محتوایی یافت نشد</p>
+        ) : (
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {sortedCategories.map(category => {
+            {sortedCategories.map((category) => {
               const items = contentByInterface.get(category.slug)!;
-              const arts  = items.filter(i => i.contentType === 'articles');
-              const bks   = items.filter(i => i.contentType === 'books');
-              const mlt   = items.filter(i => i.contentType === 'multimedia');
-              const stmts = items.filter(i => i.contentType === 'statements');
+              const arts = items.filter((i) => i.contentType === "articles");
+              const bks = items.filter((i) => i.contentType === "books");
+              const mlt = items.filter((i) => i.contentType === "multimedia");
+              const stmts = items.filter((i) => i.contentType === "statements");
+              const dlgs = items.filter((i) => i.contentType === "dialogues");
 
               return (
                 <div class="rounded-xl border border-border dark:border-border-dark p-5 hover:border-primary dark:hover:border-primary-light transition-colors">
                   <div class="flex items-start gap-3 mb-4">
                     <div class="w-10 h-10 flex-shrink-0">
-                      <img src={category.imagePath} alt={category.nameFa} class="w-full h-full object-contain" loading="lazy" />
+                      <img
+                        src={category.imagePath}
+                        alt={category.nameFa}
+                        class="w-full h-full object-contain"
+                        loading="lazy"
+                      />
                     </div>
                     <div class="flex-1">
-                      <h3 class="text-lg font-bold text-text dark:text-text-dark mb-1">{category.nameFa}</h3>
+                      <h3 class="text-lg font-bold text-text dark:text-text-dark mb-1">
+                        {category.nameFa}
+                      </h3>
                       {category.descriptionFa && (
-                        <p class="text-xs text-text-muted dark:text-text-dark-muted line-clamp-2">{category.descriptionFa}</p>
+                        <p class="text-xs text-text-muted dark:text-text-dark-muted line-clamp-2">
+                          {category.descriptionFa}
+                        </p>
                       )}
                     </div>
                   </div>
                   <div class="grid grid-cols-2 gap-3 text-sm">
                     {arts.length > 0 && (
-                      <a href={`/articles?view=list&interface=${category.slug}`} class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors">
-                        <span class="text-text-muted dark:text-text-dark-muted">مقالات</span>
-                        <span class="font-bold text-primary dark:text-primary-light">{arts.length}</span>
+                      <a
+                        href={`/articles?view=list&interface=${category.slug}`}
+                        class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors"
+                      >
+                        <span class="text-text-muted dark:text-text-dark-muted">
+                          مقالات
+                        </span>
+                        <span class="font-bold text-primary dark:text-primary-light">
+                          {arts.length}
+                        </span>
                       </a>
                     )}
                     {bks.length > 0 && (
-                      <a href={`/books?view=list&interface=${category.slug}`} class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors">
-                        <span class="text-text-muted dark:text-text-dark-muted">کتاب‌ها</span>
-                        <span class="font-bold text-primary dark:text-primary-light">{bks.length}</span>
+                      <a
+                        href={`/books?view=list&interface=${category.slug}`}
+                        class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors"
+                      >
+                        <span class="text-text-muted dark:text-text-dark-muted">
+                          کتاب‌ها
+                        </span>
+                        <span class="font-bold text-primary dark:text-primary-light">
+                          {bks.length}
+                        </span>
                       </a>
                     )}
                     {mlt.length > 0 && (
-                      <a href={`/multimedia?view=list&interface=${category.slug}`} class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors">
-                        <span class="text-text-muted dark:text-text-dark-muted">چندرسانه‌ای</span>
-                        <span class="font-bold text-primary dark:text-primary-light">{mlt.length}</span>
+                      <a
+                        href={`/multimedia?view=list&interface=${category.slug}`}
+                        class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors"
+                      >
+                        <span class="text-text-muted dark:text-text-dark-muted">
+                          چندرسانه‌ای
+                        </span>
+                        <span class="font-bold text-primary dark:text-primary-light">
+                          {mlt.length}
+                        </span>
                       </a>
                     )}
                     {stmts.length > 0 && (
-                      <a href={`/statements?view=list&interface=${category.slug}`} class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors">
-                        <span class="text-text-muted dark:text-text-dark-muted">بیانیه‌ها</span>
-                        <span class="font-bold text-primary dark:text-primary-light">{stmts.length}</span>
+                      <a
+                        href={`/statements?view=list&interface=${category.slug}`}
+                        class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors"
+                      >
+                        <span class="text-text-muted dark:text-text-dark-muted">
+                          بیانیه‌ها
+                        </span>
+                        <span class="font-bold text-primary dark:text-primary-light">
+                          {stmts.length}
+                        </span>
+                      </a>
+                    )}
+                    {dlgs.length > 0 && (
+                      <a
+                        href={`/dialogues?view=list&interface=${category.slug}`}
+                        class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors"
+                      >
+                        <span class="text-text-muted dark:text-text-dark-muted">
+                          {t("nav.dialogues", lang)}
+                        </span>
+                        <span class="font-bold text-primary dark:text-primary-light">
+                          {dlgs.length}
+                        </span>
                       </a>
                     )}
                   </div>
@@ -167,10 +300,18 @@ const sortedTags = Array.from(tagMap.entries())
     </div>
 
     <!-- Panel 2: By Tag -->
-    <div id="panel-tags" role="tabpanel" aria-labelledby="tab-tags" class="hidden">
-      {sortedTags.length === 0
-        ? <p class="text-center text-text-muted py-12">{t('contents.no_tags', lang)}</p>
-        : (
+    <div
+      id="panel-tags"
+      role="tabpanel"
+      aria-labelledby="tab-tags"
+      class="hidden"
+    >
+      {
+        sortedTags.length === 0 ? (
+          <p class="text-center text-text-muted py-12">
+            {t("contents.no_tags", lang)}
+          </p>
+        ) : (
           <div class="flex flex-wrap gap-3">
             {sortedTags.map(([tag, items]) => (
               <a
@@ -189,33 +330,35 @@ const sortedTags = Array.from(tagMap.entries())
         )
       }
     </div>
-
   </div>
 </BaseLayout>
 
 <script>
   function initContentsTabs() {
-    const tabs = document.querySelectorAll<HTMLButtonElement>('.contents-tab');
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
+    const tabs = document.querySelectorAll<HTMLButtonElement>(".contents-tab");
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
         const panelId = tab.dataset.panel!;
-        tabs.forEach(t => {
+        tabs.forEach((t) => {
           const active = t === tab;
-          t.setAttribute('aria-selected', String(active));
-          t.classList.toggle('border-primary', active);
-          t.classList.toggle('text-primary', active);
-          t.classList.toggle('dark:text-primary-light', active);
-          t.classList.toggle('border-transparent', !active);
-          t.classList.toggle('text-text-muted', !active);
-          t.classList.toggle('dark:text-text-dark-muted', !active);
+          t.setAttribute("aria-selected", String(active));
+          t.classList.toggle("border-primary", active);
+          t.classList.toggle("text-primary", active);
+          t.classList.toggle("dark:text-primary-light", active);
+          t.classList.toggle("border-transparent", !active);
+          t.classList.toggle("text-text-muted", !active);
+          t.classList.toggle("dark:text-text-dark-muted", !active);
         });
-        document.querySelectorAll('[role="tabpanel"]').forEach(panel => {
-          (panel as HTMLElement).classList.toggle('hidden', panel.id !== panelId);
+        document.querySelectorAll('[role="tabpanel"]').forEach((panel) => {
+          (panel as HTMLElement).classList.toggle(
+            "hidden",
+            panel.id !== panelId,
+          );
         });
       });
     });
   }
-  document.addEventListener('DOMContentLoaded', initContentsTabs);
-  document.addEventListener('astro:after-swap', initContentsTabs);
-  document.addEventListener('astro:page-load', initContentsTabs);
+  document.addEventListener("DOMContentLoaded", initContentsTabs);
+  document.addEventListener("astro:after-swap", initContentsTabs);
+  document.addEventListener("astro:page-load", initContentsTabs);
 </script>

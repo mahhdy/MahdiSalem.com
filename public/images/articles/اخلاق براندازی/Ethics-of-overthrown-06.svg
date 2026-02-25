@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="bgGrad6" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#263238;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#37474F;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="bridgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2E7D32;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#43A047;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow6">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#bgGrad6)"/>
+
+  <!-- Title -->
+  <text x="540" y="100" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#F9A825" letter-spacing="5" direction="rtl">مهم‌ترین درس این مقاله</text>
+  <text x="540" y="170" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="900" font-size="48" fill="#FFFFFF" direction="rtl" filter="url(#shadow6)">میان دو پرتگاه</text>
+
+  <!-- Left cliff (Oversimplification) -->
+  <g transform="translate(0,0)">
+    <rect x="40" y="280" width="460" height="400" rx="20" fill="#B71C1C" fill-opacity="0.25" stroke="#E53935" stroke-width="2"/>
+
+    <!-- Cliff icon -->
+    <text x="270" y="340" text-anchor="middle" font-size="40">🔥</text>
+    <text x="270" y="390" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="28" fill="#E53935" direction="rtl">پرتگاه ساده‌سازی</text>
+
+    <text x="270" y="440" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="20" fill="#FFCDD2" direction="rtl">«هر کاری مجاز است»</text>
+    <text x="270" y="475" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="20" fill="#FFCDD2" direction="rtl">«دشمن = شیطان مطلق»</text>
+    <text x="270" y="510" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="20" fill="#FFCDD2" direction="rtl">«اخلاق = ضعف»</text>
+    <text x="270" y="545" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="20" fill="#FFCDD2" direction="rtl">«فقط نتیجه مهم است»</text>
+
+    <rect x="100" y="590" width="340" height="50" rx="10" fill="#B71C1C" fill-opacity="0.5"/>
+    <text x="270" y="622" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="20" fill="#FFFFFF" direction="rtl">⬇ نتیجه: بازتولید استبداد</text>
+  </g>
+
+  <!-- Right cliff (Overcomplexity) -->
+  <g transform="translate(0,0)">
+    <rect x="580" y="280" width="460" height="400" rx="20" fill="#1565C0" fill-opacity="0.25" stroke="#42A5F5" stroke-width="2"/>
+
+    <text x="810" y="340" text-anchor="middle" font-size="40">❄️</text>
+    <text x="810" y="390" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="28" fill="#42A5F5" direction="rtl">پرتگاه پیچیده‌سازی</text>
+
+    <text x="810" y="440" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="20" fill="#BBDEFB" direction="rtl">«شرایط فراهم نیست»</text>
+    <text x="810" y="475" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="20" fill="#BBDEFB" direction="rtl">«هیچ عملی کامل نیست»</text>
+    <text x="810" y="510" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="20" fill="#BBDEFB" direction="rtl">«همه‌چیز خاکستری است»</text>
+    <text x="810" y="545" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="20" fill="#BBDEFB" direction="rtl">«اخلاق = بی‌عملی»</text>
+
+    <rect x="640" y="590" width="340" height="50" rx="10" fill="#1565C0" fill-opacity="0.5"/>
+    <text x="810" y="622" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="20" fill="#FFFFFF" direction="rtl">⬇ نتیجه: تداوم استبداد</text>
+  </g>
+
+  <!-- Bridge (Middle Way) -->
+  <rect x="140" y="750" width="800" height="320" rx="24" fill="url(#bridgeGrad)" fill-opacity="0.3" stroke="#4CAF50" stroke-width="3" filter="url(#shadow6)"/>
+
+  <text x="540" y="820" text-anchor="middle" font-size="50">🌉</text>
+  <text x="540" y="880" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="900" font-size="40" fill="#4CAF50" direction="rtl">راه میانه</text>
+
+  <text x="540" y="935" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="24" fill="#C8E6C9" direction="rtl">✦ عملِ سنجیده + نقد مداوم</text>
+  <text x="540" y="975" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="24" fill="#C8E6C9" direction="rtl">✦ اصولِ روشن + انعطاف عملی</text>
+  <text x="540" y="1015" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="24" fill="#C8E6C9" direction="rtl">✦ هم فرایند مهم و هم نتیجه</text>
+  <text x="540" y="1055" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="24" fill="#F9A825" direction="rtl" font-weight="700">✦ اخلاق = قدرت و هوشمندی</text>
+
+  <!-- Connecting arrows -->
+  <line x1="270" y1="700" x2="400" y2="770" stroke="#E53935" stroke-width="2" stroke-dasharray="8,4" opacity="0.5"/>
+  <line x1="810" y1="700" x2="680" y2="770" stroke="#42A5F5" stroke-width="2" stroke-dasharray="8,4" opacity="0.5"/>
+
+  <!-- Bottom message -->
+  <rect x="80" y="1120" width="920" height="100" rx="16" fill="#000000" fill-opacity="0.3"/>
+  <text x="540" y="1165" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="24" fill="#FFFFFF" direction="rtl">اخلاقی که فلج کند، اخلاق نیست</text>
+  <text x="540" y="1200" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="24" fill="#F9A825" direction="rtl" font-weight="700">ابزار سرکوب است.</text>
+
+  <!-- Footer -->
+  <text x="540" y="1290" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="18" fill="#B0BEC5" direction="rtl" opacity="0.5">اسلاید ۶ از ۸  ◀</text>
+</svg>

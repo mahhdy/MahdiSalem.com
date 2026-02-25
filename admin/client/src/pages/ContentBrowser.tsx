@@ -22,6 +22,7 @@ const FIELD_GROUPS: { label: string; fields: { value: string; label: string }[] 
             { value: 'title', label: 'title' },
             { value: 'description', label: 'description' },
             { value: 'author', label: 'author' },
+            { value: 'participants', label: 'participants' },
             { value: 'lang', label: 'lang' },
             { value: 'publishDate', label: 'publishDate' },
             { value: 'updatedDate', label: 'updatedDate' },
@@ -436,6 +437,7 @@ export default function ContentBrowser() {
                     <option value="">All Collections</option>
                     <option value="books">Books</option>
                     <option value="articles">Articles</option>
+                    <option value="dialogues">Dialogues</option>
                     <option value="statements">Statements</option>
                     <option value="multimedia">Multimedia</option>
                     <option value="wiki">Wiki</option>

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="bgGrad7" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0D1147;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="goldLine7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F9A825;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#F9A825;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#F9A825;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="shadow7">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#bgGrad7)"/>
+
+  <!-- Decorative corner elements -->
+  <rect x="40" y="40" width="60" height="4" rx="2" fill="#F9A825" opacity="0.6"/>
+  <rect x="40" y="40" width="4" height="60" rx="2" fill="#F9A825" opacity="0.6"/>
+  <rect x="980" y="40" width="60" height="4" rx="2" fill="#F9A825" opacity="0.6"/>
+  <rect x="1036" y="40" width="4" height="60" rx="2" fill="#F9A825" opacity="0.6"/>
+
+  <!-- Title -->
+  <text x="540" y="120" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#F9A825" letter-spacing="4" direction="rtl">📋 خلاصهٔ عملی</text>
+  <text x="540" y="185" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="900" font-size="46" fill="#FFFFFF" direction="rtl" filter="url(#shadow7)">۵ اصل طلایی مبارزهٔ اخلاقی</text>
+
+  <rect x="200" y="210" width="680" height="2" fill="url(#goldLine7)"/>
+
+  <!-- Principle 1 -->
+  <g transform="translate(0, 260)">
+    <circle cx="920" cy="40" r="35" fill="#F9A825" filter="url(#shadow7)"/>
+    <text x="920" y="52" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="900" font-size="32" fill="#1A237E">۱</text>
+    <text x="860" y="35" text-anchor="end" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="30" fill="#FFFFFF" direction="rtl">معقولیت</text>
+    <text x="860" y="70" text-anchor="end" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#B0BEC5" direction="rtl">تدبیر شده، برنامه‌ریزی‌شده، هدفمند — نه هیجانی</text>
+  </g>
+
+  <!-- Divider -->
+  <rect x="100" y="370" width="880" height="1" fill="#FFFFFF" opacity="0.08"/>
+
+  <!-- Principle 2 -->
+  <g transform="translate(0, 400)">
+    <circle cx="920" cy="40" r="35" fill="#F9A825" filter="url(#shadow7)"/>
+    <text x="920" y="52" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="900" font-size="32" fill="#1A237E">۲</text>
+    <text x="860" y="35" text-anchor="end" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="30" fill="#FFFFFF" direction="rtl">اندازه‌داشتن (تناسب)</text>
+    <text x="860" y="70" text-anchor="end" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#B0BEC5" direction="rtl">شدت، زمان و مکان متناسب با هدف</text>
+  </g>
+
+  <rect x="100" y="510" width="880" height="1" fill="#FFFFFF" opacity="0.08"/>
+
+  <!-- Principle 3 -->
+  <g transform="translate(0, 540)">
+    <circle cx="920" cy="40" r="35" fill="#F9A825" filter="url(#shadow7)"/>
+    <text x="920" y="52" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="900" font-size="32" fill="#1A237E">۳</text>
+    <text x="860" y="35" text-anchor="end" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="30" fill="#FFFFFF" direction="rtl">توجیه‌داشتن (شفافیت)</text>
+    <text x="860" y="70" text-anchor="end" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#B0BEC5" direction="rtl">اسناد، مدارک، و صداقت دربارهٔ تردیدها</text>
+  </g>
+
+  <rect x="100" y="650" width="880" height="1" fill="#FFFFFF" opacity="0.08"/>
+
+  <!-- Principle 4 -->
+  <g transform="translate(0, 680)">
+    <circle cx="920" cy="40" r="35" fill="#F9A825" filter="url(#shadow7)"/>
+    <text x="920" y="52" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="900" font-size="32" fill="#1A237E">۴</text>
+    <text x="860" y="35" text-anchor="end" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="30" fill="#FFFFFF" direction="rtl">کرامت انسانی</text>
+    <text x="860" y="70" text-anchor="end" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#B0BEC5" direction="rtl">شکنجه ممنوع — حتی علیه بدترین دشمن</text>
+  </g>
+
+  <rect x="100" y="790" width="880" height="1" fill="#FFFFFF" opacity="0.08"/>
+
+  <!-- Principle 5 -->
+  <g transform="translate(0, 820)">
+    <circle cx="920" cy="40" r="35" fill="#F9A825" filter="url(#shadow7)"/>
+    <text x="920" y="52" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="900" font-size="32" fill="#1A237E">۵</text>
+    <text x="860" y="35" text-anchor="end" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="30" fill="#FFFFFF" direction="rtl">نقدپذیری و پاسخگویی</text>
+    <text x="860" y="70" text-anchor="end" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#B0BEC5" direction="rtl">مهم‌ترین تفاوت مبارز و مستبد: پاسخگوبودن</text>
+  </g>
+
+  <!-- Bottom highlight box -->
+  <rect x="80" y="960" width="920" height="220" rx="20" fill="#F9A825" fill-opacity="0.1" stroke="#F9A825" stroke-width="2"/>
+
+  <text x="540" y="1020" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="28" fill="#F9A825" direction="rtl">🎯 به یاد داشته باش:</text>
+  <text x="540" y="1075" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="26" fill="#FFFFFF" direction="rtl">اخلاق محدودیت نیست</text>
+  <text x="540" y="1120" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="26" fill="#FFFFFF" direction="rtl" font-weight="700">اخلاق قدرت است.</text>
+  <text x="540" y="1160" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#B0BEC5" direction="rtl">جنبشی که اصولش را حفظ کند، مشروعیت و حمایت بیشتری دارد.</text>
+
+  <!-- Footer -->
+  <text x="540" y="1250" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="18" fill="#B0BEC5" direction="rtl" opacity="0.5">اسلاید ۷ از ۸  ◀</text>
+
+  <!-- Bottom corner elements -->
+  <rect x="40" y="1300" width="60" height="4" rx="2" fill="#F9A825" opacity="0.6"/>
+  <rect x="40" y="1246" width="4" height="60" rx="2" fill="#F9A825" opacity="0.6"/>
+  <rect x="980" y="1300" width="60" height="4" rx="2" fill="#F9A825" opacity="0.6"/>
+  <rect x="1036" y="1246" width="4" height="60" rx="2" fill="#F9A825" opacity="0.6"/>
+</svg>

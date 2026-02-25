@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1147"/>
+      <stop offset="100%" style="stop-color:#1A237E"/>
+    </linearGradient>
+    <linearGradient id="gold7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F9A825"/>
+      <stop offset="100%" style="stop-color:#FFD54F"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B5E20;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#01579B;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#0277BD;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="card3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A148C;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#6A1B9A;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="card4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#BF360C;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#D84315;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="card5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00695C;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#00897B;stop-opacity:0.3"/>
+    </linearGradient>
+    <filter id="sh7">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="shSm">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#bg7)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.03" stroke="#FFFFFF" stroke-width="1">
+    <line x1="270" y1="0" x2="270" y2="1350"/>
+    <line x1="540" y1="0" x2="540" y2="1350"/>
+    <line x1="810" y1="0" x2="810" y2="1350"/>
+  </g>
+
+  <!-- Corners -->
+  <path d="M40,70 L40,40 L70,40" fill="none" stroke="#F9A825" stroke-width="3" opacity="0.7"/>
+  <path d="M1010,40 L1040,40 L1040,70" fill="none" stroke="#F9A825" stroke-width="3" opacity="0.7"/>
+  <path d="M40,1280 L40,1310 L70,1310" fill="none" stroke="#F9A825" stroke-width="3" opacity="0.7"/>
+  <path d="M1010,1310 L1040,1310 L1040,1280" fill="none" stroke="#F9A825" stroke-width="3" opacity="0.7"/>
+
+  <!-- Header -->
+  <rect x="300" y="45" width="480" height="50" rx="25"
+        fill="#F9A825" fill-opacity="0.15"
+        stroke="#F9A825" stroke-width="1.5" stroke-opacity="0.4"/>
+  <text x="540" y="80" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial"
+        font-weight="700" font-size="24" fill="#F9A825" direction="rtl">📋 خلاصهٔ عملی مقاله</text>
+
+  <!-- Titles -->
+  <text x="540" y="155" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial"
+        font-weight="900" font-size="50" fill="#FFFFFF" direction="rtl" filter="url(#sh7)">۵ اصل طلایی</text>
+  <text x="540" y="205" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial"
+        font-weight="700" font-size="36" fill="#E8EAF6" direction="rtl">مبارزهٔ اخلاقی با استبداد</text>
+
+  <!-- Divider -->
+  <rect x="250" y="235" width="580" height="3" rx="1.5" fill="url(#gold7)" opacity="0.6"/>
+
+  <!-- Card Template (reused with updated alignments) -->
+  <g transform="translate(0,270)">
+    <rect x="80" y="0" width="920" height="130" rx="18" fill="url(#card1)"
+          stroke="#4CAF50" stroke-width="1.5" stroke-opacity="0.6" filter="url(#shSm)"/>
+    <rect x="865" y="15" width="100" height="100" rx="16" fill="#4CAF50" filter="url(#shSm)"/>
+    <text x="915" y="80" text-anchor="middle" font-family="Vazirmatn" font-size="52"
+          font-weight="900" fill="#FFF">۱</text>
+    <text x="830" y="48" text-anchor="end" font-size="32" font-weight="800" fill="#A5D6A7" direction="rtl">معقولیت</text>
+    <text x="830" y="88" text-anchor="end" font-size="22" fill="#E8F5E9" direction="rtl">تدبیرشده · برنامه‌ریزی‌شده · هدفمند</text>
+    <text x="830" y="116" text-anchor="end" font-size="18" fill="#C8E6C9" opacity="0.7" direction="rtl">
+      عمل هیجانی حتی اگر درست باشد، ضد‌مولد است
+    </text>
+  </g>
+
+  <g transform="translate(0,420)">
+    <rect x="80" y="0" width="920" height="130" rx="18" fill="url(#card2)"
+          stroke="#42A5F5" stroke-width="1.5" stroke-opacity="0.6" filter="url(#shSm)"/>
+    <rect x="865" y="15" width="100" height="100" rx="16" fill="#1E88E5" filter="url(#shSm)"/>
+    <text x="915" y="80" text-anchor="middle" font-size="52" font-weight="900" fill="#FFF">۲</text>
+    <text x="830" y="48" text-anchor="end" font-size="32" font-weight="800" fill="#90CAF9" direction="rtl">اندازه‌داشتن (تناسب)</text>
+    <text x="830" y="88" text-anchor="end" font-size="22" fill="#E3F2FD" direction="rtl">
+      شدت · زمان · مکان — متناسب با هدف
+    </text>
+    <text x="830" y="116" text-anchor="end" font-size="18" fill="#BBDEFB" opacity="0.7" direction="rtl">
+      واکنش نامتناسب — چه شدید چه ضعیف — هر دو مخرب‌اند
+    </text>
+  </g>
+
+  <g transform="translate(0,570)">
+    <rect x="80" y="0" width="920" height="130" rx="18" fill="url(#card3)"
+          stroke="#AB47BC" stroke-width="1.5" stroke-opacity="0.6" filter="url(#shSm)"/>
+    <rect x="865" y="15" width="100" height="100" rx="16" fill="#8E24AA" filter="url(#shSm)"/>
+    <text x="915" y="80" text-anchor="middle" font-size="52" font-weight="900" fill="#FFF">۳</text>
+    <text x="830" y="48" text-anchor="end" font-size="32" font-weight="800" fill="#CE93D8" direction="rtl">
+      توجیه‌داشتن (شفافیت)
+    </text>
+    <text x="830" y="88" text-anchor="end" font-size="22" fill="#F3E5F5" direction="rtl">
+      اسناد · مدارک · صداقت دربارهٔ تردیدها
+    </text>
+    <text x="830" y="116" text-anchor="end" font-size="18" fill="#E1BEE7" opacity="0.7" direction="rtl">
+      اختلاف‌نظرهای درون‌گروهی را پنهان نکن
+    </text>
+  </g>
+
+  <g transform="translate(0,720)">
+    <rect x="80" y="0" width="920" height="130" rx="18" fill="url(#card4)"
+          stroke="#EF5350" stroke-width="1.5" stroke-opacity="0.6" filter="url(#shSm)"/>
+    <rect x="865" y="15" width="100" height="100" rx="16" fill="#E53935" filter="url(#shSm)"/>
+    <text x="915" y="80" text-anchor="middle" font-size="52" font-weight="900" fill="#FFF">۴</text>
+    <text x="830" y="48" text-anchor="end" font-size="32" font-weight="800" fill="#EF9A9A" direction="rtl">کرامت انسانی</text>
+    <text x="830" y="88" text-anchor="end" font-size="22" fill="#FFEBEE" direction="rtl">
+      شکنجه ممنوع — حتی علیه بدترین دشمن
+    </text>
+    <text x="830" y="116" text-anchor="end" font-size="18" fill="#FFCDD2" opacity="0.7" direction="rtl">
+      ابتذال شر: وقتی رفتار غیراخلاقی عادی شود
+    </text>
+  </g>
+
+  <g transform="translate(0,870)">
+    <rect x="80" y="0" width="920" height="130" rx="18" fill="url(#card5)"
+          stroke="#26A69A" stroke-width="1.5" stroke-opacity="0.6" filter="url(#shSm)"/>
+    <rect x="865" y="15" width="100" height="100" rx="16" fill="#00897B" filter="url(#shSm)"/>
+    <text x="915" y="80" text-anchor="middle" font-size="52" font-weight="900" fill="#FFF">۵</text>
+    <text x="830" y="48" text-anchor="end" font-size="32" font-weight="800" fill="#80CBC4" direction="rtl">
+      نقدپذیری و پاسخگویی
+    </text>
+    <text x="830" y="88" text-anchor="end" font-size="22" fill="#E0F2F1" direction="rtl">
+      مهم‌ترین تفاوت مبارز و مستبد
+    </text>
+    <text x="830" y="116" text-anchor="end" font-size="18" fill="#B2DFDB" opacity="0.7" direction="rtl">
+      مستبد پاسخگو نیست — مبارز آزادی‌خواه باید باشد
+    </text>
+  </g>
+
+  <!-- Bottom Box -->
+  <rect x="80" y="1040" width="920" height="180" rx="22"
+        fill="#F9A825" fill-opacity="0.08"
+        stroke="#F9A825" stroke-width="2.5" stroke-opacity="0.5"/>
+  <rect x="280" y="1040" width="520" height="3" rx="1.5" fill="url(#gold7)"/>
+
+  <text x="540" y="1095" text-anchor="middle"
+        font-family="Vazirmatn" font-weight="700" font-size="28"
+        fill="#F9A825" direction="rtl">🎯 به یاد داشته باش</text>
+  <text x="540" y="1145" text-anchor="middle"
+        font-family="Vazirmatn" font-size="28" fill="#FFFFFF" direction="rtl">
+        اخلاق محدودیت نیست —
+  </text>
+  <text x="540" y="1190" text-anchor="middle"
+        font-family="Vazirmatn" font-weight="900" font-size="34"
+        fill="#F9A825" direction="rtl">اخلاق قدرت است.</text>
+
+  <!-- Footer -->
+  <text x="540" y="1290" text-anchor="middle"
+        font-family="Vazirmatn" font-size="20"
+        fill="#B0BEC5" opacity="0.4" direction="rtl">اسلاید ۷ از ۸ ◀</text>
+</svg>

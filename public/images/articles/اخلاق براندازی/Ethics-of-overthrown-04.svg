@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#212121;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0D0D0D;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="spotGrad" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#4A148C;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0"/>
+    </radialGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#CE93D8;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#AB47BC;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow4">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#bgGrad4)"/>
+  <rect width="1080" height="1350" fill="url(#spotGrad)"/>
+
+  <!-- Flame/light illustration at top -->
+  <g transform="translate(540,200)" opacity="0.15">
+    <ellipse cx="0" cy="0" rx="200" ry="150" fill="#F9A825"/>
+    <ellipse cx="0" cy="0" rx="120" ry="90" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Large quotation mark -->
+  <text x="140" y="250" font-family="Georgia, serif" font-size="200" fill="#4A148C" opacity="0.3">❝</text>
+
+  <!-- Story title -->
+  <text x="540" y="200" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#CE93D8" letter-spacing="6" direction="rtl">یک داستان آموزنده</text>
+
+  <!-- The story -->
+  <text x="540" y="340" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="28" fill="#E0E0E0" direction="rtl">انقلاب فرانسه آغاز شد</text>
+  <text x="540" y="390" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="28" fill="#E0E0E0" direction="rtl">با شعار آزادی، برابری، برادری.</text>
+
+  <text x="540" y="470" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="28" fill="#E0E0E0" direction="rtl">اما وقتی «هدف، وسیله را توجیه کرد»</text>
+  <text x="540" y="520" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="28" fill="#E0E0E0" direction="rtl">گیوتین جای عدالت را گرفت.</text>
+
+  <text x="540" y="600" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="28" fill="#E0E0E0" direction="rtl">روبسپیر — که «فضیلت» را تبلیغ می‌کرد —</text>
+  <text x="540" y="650" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="28" fill="#E0E0E0" direction="rtl">خودش به ترور فضیلت‌مدار رسید.</text>
+
+  <!-- Turning point -->
+  <rect x="200" y="710" width="680" height="3" rx="1.5" fill="url(#purpleGrad)" opacity="0.5"/>
+
+  <text x="540" y="790" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="36" fill="#CE93D8" direction="rtl">و سرانجام،</text>
+  <text x="540" y="850" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="36" fill="#CE93D8" direction="rtl">خودِ روبسپیر هم</text>
+  <text x="540" y="910" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="36" fill="#CE93D8" direction="rtl">سر خود را از دست داد.</text>
+
+  <!-- Moral box -->
+  <rect x="100" y="970" width="880" height="200" rx="20" fill="#4A148C" fill-opacity="0.3" stroke="#CE93D8" stroke-width="2"/>
+
+  <text x="540" y="1030" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="26" fill="#F9A825" direction="rtl">💎 درس داستان:</text>
+  <text x="540" y="1085" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="28" fill="#FFFFFF" direction="rtl" font-weight="700">در دشمنی با شیطان</text>
+  <text x="540" y="1135" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="28" fill="#FFFFFF" direction="rtl" font-weight="700">به شیطان بدل نشو!</text>
+
+  <!-- Closing quotation mark -->
+  <text x="900" y="1130" font-family="Georgia, serif" font-size="120" fill="#4A148C" opacity="0.3">❞</text>
+
+  <!-- Camus quote -->
+  <text x="540" y="1230" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-style="italic" font-size="20" fill="#9E9E9E" direction="rtl">«هر انقلابی سرانجام یا سرکوبگر می‌شود یا بدعت‌گذار.»</text>
+  <text x="540" y="1265" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="18" fill="#CE93D8" direction="rtl">— آلبر کامو، انسان طاغی</text>
+
+  <!-- Footer -->
+  <text x="540" y="1320" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="18" fill="#757575" direction="rtl" opacity="0.5">اسلاید ۴ از ۸  ◀</text>
+</svg>

@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="bgCov" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#020510"/>
+      <stop offset="30%" style="stop-color:#0A1628"/>
+      <stop offset="60%" style="stop-color:#0D1B4A"/>
+      <stop offset="100%" style="stop-color:#12005E"/>
+    </linearGradient>
+    <radialGradient id="glowTop" cx="50%" cy="30%" r="45%">
+      <stop offset="0%" style="stop-color:#1A237E;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#000;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="glowGold" cx="50%" cy="42%" r="25%">
+      <stop offset="0%" style="stop-color:#F9A825;stop-opacity:0.06"/>
+      <stop offset="100%" style="stop-color:#000;stop-opacity:0"/>
+    </radialGradient>
+    <linearGradient id="goldCov" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F9A825"/>
+      <stop offset="50%" style="stop-color:#FFD54F"/>
+      <stop offset="100%" style="stop-color:#F9A825"/>
+    </linearGradient>
+    <linearGradient id="goldFadeCov" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F9A825;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#F9A825;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#F9A825;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="dsCov">
+      <feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="dsM">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="glowF">
+      <feGaussianBlur stdDeviation="20" result="b"/>
+      <feFlood flood-color="#F9A825" flood-opacity="0.12"/>
+      <feComposite in2="b" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <pattern id="dotP" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="25" cy="25" r="1" fill="#F9A825" opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <!-- ══════ BACKGROUND ══════ -->
+  <rect width="1080" height="1350" fill="url(#bgCov)"/>
+  <rect width="1080" height="1350" fill="url(#glowTop)"/>
+  <rect width="1080" height="1350" fill="url(#glowGold)"/>
+  <rect width="1080" height="1350" fill="url(#dotP)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="540" cy="480" r="360" fill="none" stroke="#F9A825" stroke-width="0.4" opacity="0.07"/>
+  <circle cx="540" cy="480" r="310" fill="none" stroke="#F9A825" stroke-width="0.3" opacity="0.05"/>
+  <circle cx="540" cy="480" r="260" fill="none" stroke="#FFF" stroke-width="0.3" opacity="0.03"/>
+  <circle cx="0" cy="0" r="180" fill="none" stroke="#F9A825" stroke-width="0.4" opacity="0.05"/>
+  <circle cx="1080" cy="1350" r="220" fill="none" stroke="#F9A825" stroke-width="0.4" opacity="0.05"/>
+
+  <!-- Thin diagonal lines -->
+  <line x1="0" y1="250" x2="180" y2="70" stroke="#F9A825" stroke-width="0.4" opacity="0.06"/>
+  <line x1="900" y1="1280" x2="1080" y2="1100" stroke="#F9A825" stroke-width="0.4" opacity="0.06"/>
+
+  <!-- Double border frame -->
+  <rect x="55" y="35" width="970" height="1280" rx="4" fill="none" stroke="#F9A825" stroke-width="0.7" opacity="0.1"/>
+  <rect x="65" y="45" width="950" height="1260" rx="2" fill="none" stroke="#F9A825" stroke-width="0.4" opacity="0.06"/>
+
+  <!-- Corner ornaments -->
+  <path d="M75,70 L75,52 L93,52" fill="none" stroke="#F9A825" stroke-width="2.5" opacity="0.7"/>
+  <path d="M987,52 L1005,52 L1005,70" fill="none" stroke="#F9A825" stroke-width="2.5" opacity="0.7"/>
+  <path d="M75,1280 L75,1298 L93,1298" fill="none" stroke="#F9A825" stroke-width="2.5" opacity="0.7"/>
+  <path d="M987,1298 L1005,1298 L1005,1280" fill="none" stroke="#F9A825" stroke-width="2.5" opacity="0.7"/>
+
+  <!-- ══════ TOP SECTION ══════ -->
+  <rect x="350" y="100" width="380" height="2" rx="1" fill="url(#goldFadeCov)"/>
+  <text x="540" y="150" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="22" fill="#F9A825" letter-spacing="8" opacity="0.8">مقاله‌ای دربارهٔ</text>
+
+  <!-- ══════ MAIN TITLE ══════ -->
+  <!-- Ghost glow -->
+  <text x="540" y="305" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="900" font-size="130" fill="#F9A825" opacity="0.03" filter="url(#glowF)">اخلاق</text>
+  <!-- Title 1 -->
+  <text x="540" y="305" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="900" font-size="130" fill="#FFFFFF" filter="url(#dsCov)">اخلاق</text>
+  <!-- Title 2 -->
+  <text x="540" y="455" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="900" font-size="120" fill="url(#goldCov)" filter="url(#dsCov)">براندازی</text>
+
+  <!-- ══════ ORNAMENTAL DIVIDER ══════ -->
+  <line x1="250" y1="510" x2="490" y2="510" stroke="#F9A825" stroke-width="1.2" opacity="0.5"/>
+  <line x1="590" y1="510" x2="830" y2="510" stroke="#F9A825" stroke-width="1.2" opacity="0.5"/>
+  <polygon points="540,500 550,510 540,520 530,510" fill="#F9A825" opacity="0.8"/>
+  <circle cx="495" cy="510" r="3" fill="#F9A825" opacity="0.4"/>
+  <circle cx="585" cy="510" r="3" fill="#F9A825" opacity="0.4"/>
+
+  <!-- ══════ SUBTITLE ══════ -->
+  <text x="540" y="580" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="700" font-size="34" fill="#E8EAF6" filter="url(#dsM)">حاشیه علیه متن</text>
+  <text x="540" y="630" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="26" fill="#9E9E9E">حق عصیان · اخلاق دشمنی · راه میانهٔ آزادی‌خواهی</text>
+
+  <!-- ══════ QUESTION BOX ══════ -->
+  <rect x="130" y="680" width="820" height="190" rx="20" fill="#FFFFFF" fill-opacity="0.035" stroke="#F9A825" stroke-width="1.2" stroke-opacity="0.2"/>
+
+  <text x="540" y="730" text-anchor="middle" font-size="32" opacity="0.7">❓</text>
+  <text x="540" y="785" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="28" fill="#FFFFFF">وقتی تحت ستم سیستماتیک هستی</text>
+  <text x="540" y="825" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="700" font-size="30" fill="#F9A825">مبارزه چه اخلاقی دارد؟</text>
+  <text x="540" y="860" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="20" fill="#9E9E9E">و چگونه در دشمنی با شیطان، به شیطان بدل نشویم؟</text>
+
+  <!-- ══════ TOPIC TAGS ══════ -->
+  <!-- Row 1 -->
+  <rect x="130" y="910" width="155" height="42" rx="21" fill="#1B5E20" fill-opacity="0.35" stroke="#4CAF50" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="207" y="938" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="17" fill="#A5D6A7">اخلاق جنگ</text>
+
+  <rect x="305" y="910" width="160" height="42" rx="21" fill="#01579B" fill-opacity="0.35" stroke="#42A5F5" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="385" y="938" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="17" fill="#90CAF9">اخلاق دشمنی</text>
+
+  <rect x="485" y="910" width="160" height="42" rx="21" fill="#4A148C" fill-opacity="0.35" stroke="#AB47BC" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="565" y="938" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="17" fill="#CE93D8">خشونت‌پرهیزی</text>
+
+  <rect x="665" y="910" width="140" height="42" rx="21" fill="#BF360C" fill-opacity="0.35" stroke="#EF5350" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="735" y="938" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="17" fill="#EF9A9A">حق عصیان</text>
+
+  <rect x="825" y="910" width="145" height="42" rx="21" fill="#00695C" fill-opacity="0.35" stroke="#26A69A" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="897" y="938" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="17" fill="#80CBC4">مورد ایران</text>
+
+  <!-- Row 2 -->
+  <rect x="230" y="965" width="180" height="42" rx="21" fill="#E65100" fill-opacity="0.25" stroke="#FF9800" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="320" y="993" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="17" fill="#FFB74D">عدالت انتقالی</text>
+
+  <rect x="430" y="965" width="220" height="42" rx="21" fill="#1A237E" fill-opacity="0.5" stroke="#5C6BC0" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="540" y="993" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="17" fill="#9FA8DA">مکاتب فلسفی و ایدئولوژیک</text>
+
+  <rect x="670" y="965" width="180" height="42" rx="21" fill="#880E4F" fill-opacity="0.3" stroke="#EC407A" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="760" y="993" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="17" fill="#F48FB1">روان‌شناسی مبارزه</text>
+
+  <!-- ══════ THINKERS ══════ -->
+  <rect x="200" y="1050" width="680" height="1" fill="url(#goldFadeCov)"/>
+  <text x="540" y="1085" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="16" fill="#78909C" letter-spacing="1">ارسطو · لاک · کانت · میل · گاندی · فانون · کامو · شریعتی · والزر · شارپ · هاول</text>
+
+  <!-- ══════ STATS ══════ -->
+  <rect x="200" y="1115" width="200" height="40" rx="10" fill="#FFF" fill-opacity="0.04"/>
+  <text x="300" y="1142" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="17" fill="#B0BEC5">+۸۰ منبع علمی</text>
+
+  <rect x="440" y="1115" width="200" height="40" rx="10" fill="#FFF" fill-opacity="0.04"/>
+  <text x="540" y="1142" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="17" fill="#B0BEC5">+۴۰ صفحه</text>
+
+  <rect x="680" y="1115" width="200" height="40" rx="10" fill="#FFF" fill-opacity="0.04"/>
+  <text x="780" y="1142" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="17" fill="#B0BEC5">۵ پیوست تحلیلی</text>
+
+  <!-- ══════ CTA ══════ -->
+  <text x="540" y="1215" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="24" fill="#F9A825" opacity="0.7">⟵ برای مطالعه، ورق بزنید</text>
+
+  <!-- Bottom line -->
+  <rect x="350" y="1260" width="380" height="2" rx="1" fill="url(#goldFadeCov)"/>
+
+  <!-- Brand/source -->
+  <text x="540" y="1295" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="15" fill="#546E7A" opacity="0.4">اسلاید ۱ از ۸</text>
+</svg>

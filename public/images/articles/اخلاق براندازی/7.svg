@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="bg7v3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1147"/>
+      <stop offset="100%" style="stop-color:#1A237E"/>
+    </linearGradient>
+    <linearGradient id="gold7v3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F9A825;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#F9A825;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#F9A825;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="ds">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="dsLight">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#bg7v3)"/>
+  <!-- Subtle noise -->
+  <g opacity="0.03" stroke="#FFF" stroke-width="0.5" fill="none">
+    <line x1="0" y1="270" x2="1080" y2="270"/>
+    <line x1="0" y1="540" x2="1080" y2="540"/>
+    <line x1="0" y1="810" x2="1080" y2="810"/>
+    <line x1="0" y1="1080" x2="1080" y2="1080"/>
+  </g>
+
+  <!-- Corner accents -->
+  <path d="M50,75 L50,50 L75,50" fill="none" stroke="#F9A825" stroke-width="2.5" opacity="0.6"/>
+  <path d="M1005,50 L1030,50 L1030,75" fill="none" stroke="#F9A825" stroke-width="2.5" opacity="0.6"/>
+  <path d="M50,1275 L50,1300 L75,1300" fill="none" stroke="#F9A825" stroke-width="2.5" opacity="0.6"/>
+  <path d="M1005,1300 L1030,1300 L1030,1275" fill="none" stroke="#F9A825" stroke-width="2.5" opacity="0.6"/>
+
+  <!-- ══════ HEADER ══════ -->
+  <rect x="350" y="40" width="380" height="48" rx="24" fill="#F9A825" fill-opacity="0.12" stroke="#F9A825" stroke-width="1.5" stroke-opacity="0.4"/>
+  <text x="540" y="73" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="700" font-size="22" fill="#F9A825">📋 خلاصهٔ عملی مقاله</text>
+
+  <text x="540" y="140" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="900" font-size="52" fill="#FFFFFF" filter="url(#ds)">۵ اصل طلایی</text>
+  <text x="540" y="195" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="600" font-size="32" fill="#C5CAE9">مبارزهٔ اخلاقی با استبداد</text>
+  <rect x="280" y="220" width="520" height="2" rx="1" fill="url(#gold7v3)"/>
+
+  <!-- ══════ CARD 1 — معقولیت ══════ -->
+  <rect x="80" y="255" width="920" height="140" rx="18" fill="#1B5E20" fill-opacity="0.35" stroke="#4CAF50" stroke-width="1.5" stroke-opacity="0.5" filter="url(#dsLight)"/>
+  <!-- number circle -->
+  <circle cx="540" cy="280" r="22" fill="#4CAF50" opacity="0.9"/>
+  <text x="540" y="288" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="900" font-size="24" fill="#FFF">۱</text>
+  <!-- title -->
+  <text x="540" y="330" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="800" font-size="34" fill="#A5D6A7">معقولیت</text>
+  <!-- desc -->
+  <text x="540" y="365" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="22" fill="#E8F5E9">تدبیرشده · برنامه‌ریزی‌شده · هدفمند</text>
+  <text x="540" y="390" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="17" fill="#C8E6C9" opacity="0.7">عمل هیجانی حتی اگر درست باشد، ضد‌مولد است</text>
+
+  <!-- ══════ CARD 2 — تناسب ══════ -->
+  <rect x="80" y="415" width="920" height="140" rx="18" fill="#01579B" fill-opacity="0.35" stroke="#42A5F5" stroke-width="1.5" stroke-opacity="0.5" filter="url(#dsLight)"/>
+  <circle cx="540" cy="440" r="22" fill="#1E88E5" opacity="0.9"/>
+  <text x="540" y="448" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="900" font-size="24" fill="#FFF">۲</text>
+  <text x="540" y="490" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="800" font-size="34" fill="#90CAF9">اندازه‌داشتن (تناسب)</text>
+  <text x="540" y="525" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="22" fill="#E3F2FD">شدت · زمان · مکان — متناسب با هدف</text>
+  <text x="540" y="550" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="17" fill="#BBDEFB" opacity="0.7">واکنش نامتناسب — چه شدید چه ضعیف — هر دو مخرب‌اند</text>
+
+  <!-- ══════ CARD 3 — شفافیت ══════ -->
+  <rect x="80" y="575" width="920" height="140" rx="18" fill="#4A148C" fill-opacity="0.35" stroke="#AB47BC" stroke-width="1.5" stroke-opacity="0.5" filter="url(#dsLight)"/>
+  <circle cx="540" cy="600" r="22" fill="#8E24AA" opacity="0.9"/>
+  <text x="540" y="608" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="900" font-size="24" fill="#FFF">۳</text>
+  <text x="540" y="650" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="800" font-size="34" fill="#CE93D8">توجیه‌داشتن (شفافیت)</text>
+  <text x="540" y="685" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="22" fill="#F3E5F5">اسناد · مدارک · صداقت دربارهٔ تردیدها</text>
+  <text x="540" y="710" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="17" fill="#E1BEE7" opacity="0.7">اختلاف‌نظرهای درون‌گروهی را پنهان نکن</text>
+
+  <!-- ══════ CARD 4 — کرامت ══════ -->
+  <rect x="80" y="735" width="920" height="140" rx="18" fill="#BF360C" fill-opacity="0.3" stroke="#EF5350" stroke-width="1.5" stroke-opacity="0.5" filter="url(#dsLight)"/>
+  <circle cx="540" cy="760" r="22" fill="#E53935" opacity="0.9"/>
+  <text x="540" y="768" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="900" font-size="24" fill="#FFF">۴</text>
+  <text x="540" y="810" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="800" font-size="34" fill="#EF9A9A">کرامت انسانی</text>
+  <text x="540" y="845" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="22" fill="#FFEBEE">شکنجه ممنوع — حتی علیه بدترین دشمن</text>
+  <text x="540" y="870" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="17" fill="#FFCDD2" opacity="0.7">ابتذال شر: وقتی رفتار غیراخلاقی عادی شود، خودت شیطان می‌شوی</text>
+
+  <!-- ══════ CARD 5 — پاسخگویی ══════ -->
+  <rect x="80" y="895" width="920" height="140" rx="18" fill="#00695C" fill-opacity="0.35" stroke="#26A69A" stroke-width="1.5" stroke-opacity="0.5" filter="url(#dsLight)"/>
+  <circle cx="540" cy="920" r="22" fill="#00897B" opacity="0.9"/>
+  <text x="540" y="928" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="900" font-size="24" fill="#FFF">۵</text>
+  <text x="540" y="970" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="800" font-size="34" fill="#80CBC4">نقدپذیری و پاسخگویی</text>
+  <text x="540" y="1005" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="22" fill="#E0F2F1">مهم‌ترین تفاوت مبارز و مستبد</text>
+  <text x="540" y="1030" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="17" fill="#B2DFDB" opacity="0.7">مستبد پاسخگو نیست — مبارز آزادی‌خواه باید باشد</text>
+
+  <!-- ══════ BOTTOM MESSAGE ══════ -->
+  <rect x="120" y="1075" width="840" height="160" rx="22" fill="#F9A825" fill-opacity="0.07" stroke="#F9A825" stroke-width="2" stroke-opacity="0.5"/>
+  <rect x="330" y="1075" width="420" height="3" rx="1.5" fill="#F9A825" opacity="0.6"/>
+
+  <text x="540" y="1125" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="700" font-size="28" fill="#F9A825">🎯 به یاد داشته باش</text>
+  <text x="540" y="1175" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="28" fill="#FFFFFF">اخلاق محدودیت نیست —</text>
+  <text x="540" y="1215" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-weight="900" font-size="36" fill="#F9A825">اخلاق قدرت است.</text>
+
+  <!-- Footer -->
+  <text x="540" y="1305" text-anchor="middle" font-family="Tahoma, Arial, sans-serif" font-size="18" fill="#78909C" opacity="0.5">◀  اسلاید ۷ از ۸</text>
+</svg>

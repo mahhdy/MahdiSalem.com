@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <linearGradient id="bgGrad8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1B4A;stop-opacity:1"/>
+      <stop offset="40%" style="stop-color:#1A237E;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4A148C;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="goldGrad8" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F9A825;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FFD54F;stop-opacity:1"/>
+    </linearGradient>
+    <radialGradient id="spotlight8" cx="50%" cy="35%" r="45%">
+      <stop offset="0%" style="stop-color:#F9A825;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="shadow8">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow8">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#bgGrad8)"/>
+  <rect width="1080" height="1350" fill="url(#spotlight8)"/>
+
+  <!-- Decorative elements -->
+  <circle cx="540" cy="400" r="300" fill="none" stroke="#F9A825" stroke-width="0.5" opacity="0.08"/>
+  <circle cx="540" cy="400" r="250" fill="none" stroke="#F9A825" stroke-width="0.5" opacity="0.06"/>
+  <circle cx="540" cy="400" r="200" fill="none" stroke="#F9A825" stroke-width="0.5" opacity="0.04"/>
+
+  <!-- Top decorative -->
+  <rect x="440" y="80" width="200" height="3" rx="1.5" fill="url(#goldGrad8)" opacity="0.5"/>
+
+  <!-- Book icon -->
+  <text x="540" y="180" text-anchor="middle" font-size="70" filter="url(#glow8)">📖</text>
+
+  <!-- Main message -->
+  <text x="540" y="280" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="900" font-size="52" fill="#FFFFFF" direction="rtl" filter="url(#shadow8)">آزادی</text>
+  <text x="540" y="355" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="34" fill="#E8EAF6" direction="rtl">درختی است که باید آبیاری شود</text>
+
+  <rect x="300" y="390" width="480" height="3" rx="1.5" fill="url(#goldGrad8)" opacity="0.6"/>
+
+  <text x="540" y="450" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="30" fill="#CE93D8" direction="rtl">اما نه با هر آبی و نه به هر بهایی</text>
+  <text x="540" y="510" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="36" fill="#F9A825" direction="rtl" filter="url(#shadow8)">آبِ آن عدالت است</text>
+  <text x="540" y="565" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="36" fill="#F9A825" direction="rtl">و حدّ آن، کرامت انسانی.</text>
+
+  <!-- Separator -->
+  <rect x="200" y="620" width="680" height="1" fill="#FFFFFF" opacity="0.1"/>
+
+  <!-- What you'll find box -->
+  <rect x="100" y="660" width="880" height="380" rx="24" fill="#FFFFFF" fill-opacity="0.06" stroke="#F9A825" stroke-width="1.5" stroke-opacity="0.3"/>
+
+  <text x="540" y="720" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="700" font-size="28" fill="#F9A825" direction="rtl">📚 در مقالهٔ کامل می‌خوانید:</text>
+
+  <g transform="translate(540, 770)">
+    <text x="0" y="0" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#E8EAF6" direction="rtl">✦  مبانی فلسفی حق عصیان — از ارسطو تا فانون</text>
+    <text x="0" y="42" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#E8EAF6" direction="rtl">✦  اخلاق جنگ و دشمنی — چارچوب جنگ عادلانه</text>
+    <text x="0" y="84" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#E8EAF6" direction="rtl">✦  خشونت‌پرهیزی — آمار و شواهد تاریخی</text>
+    <text x="0" y="126" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#E8EAF6" direction="rtl">✦  مورد ایران — تحلیل اخلاقی جنبش‌ها</text>
+    <text x="0" y="168" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#E8EAF6" direction="rtl">✦  ۵ موج تاریخی مقاومت + ۸۰ منبع کتاب‌شناسی</text>
+    <text x="0" y="210" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#CE93D8" direction="rtl" font-style="italic">✦  و پرسش‌هایی که شاید هرگز نپرسیده باشید...</text>
+  </g>
+
+  <!-- CTA Button -->
+  <rect x="280" y="1080" width="520" height="80" rx="40" fill="url(#goldGrad8)" filter="url(#shadow8)"/>
+  <text x="540" y="1132" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-weight="900" font-size="30" fill="#1A237E" direction="rtl">مقاله را بخوانید ↗</text>
+
+  <!-- Social sharing prompt -->
+  <text x="540" y="1200" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="22" fill="#B0BEC5" direction="rtl">اگر این محتوا مفید بود، با دیگران به اشتراک بگذارید</text>
+  <text x="540" y="1240" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="28" fill="#FFFFFF">💬  🔄  ❤️  📌</text>
+
+  <!-- Bottom line -->
+  <rect x="340" y="1290" width="400" height="2" rx="1" fill="url(#goldGrad8)" opacity="0.4"/>
+  <text x="540" y="1320" text-anchor="middle" font-family="Vazirmatn, Tahoma, Arial" font-size="18" fill="#B0BEC5" direction="rtl" opacity="0.5">اسلاید ۸ از ۸  ■</text>
+</svg>

@@ -1,0 +1,335 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import ReadingProgress from '../components/ReadingProgress.astro';
+import ReadingTime from '../components/ReadingTime.astro';
+import RelatedContent from '../components/RelatedContent.astro';
+import ShareButtons from '../components/ShareButtons.astro';
+import Giscus from '../components/Giscus.astro';
+import Rating from '../components/Rating.astro';
+import WidthToggle from '../components/WidthToggle.astro';
+import PDFViewer from '../components/PDFViewer.astro';
+import { t, getLocalizedPath, stripLangPrefix, type Locale } from '../i18n';
+
+interface Props {
+  title: string;
+  description: string;
+  lang: Locale;
+  publishDate: Date;
+  updatedDate?: Date;
+  participants?: string[];
+  categories?: string[];
+  tags?: string[];
+  coverImage?: string;
+  imageDisplay?: 'full' | 'side' | 'thumbnail' | 'hidden';
+  interfaceSlug?: string;
+  rawContent?: string;
+  slug?: string;
+  draft?: boolean;
+  showHeader?: boolean;
+  pdfOnly?: boolean;
+  pdfUrl?: string;
+  showPdfViewer?: boolean;
+}
+
+const {
+  title,
+  description,
+  lang,
+  publishDate,
+  updatedDate,
+  participants = ['مهدی سالم'],
+  categories = [],
+  tags = [],
+  coverImage,
+  imageDisplay = 'full',
+  interfaceSlug,
+  rawContent = '',
+  slug = '',
+  draft = false,
+  showHeader = false,
+  pdfOnly = false,
+  pdfUrl,
+  showPdfViewer = false,
+} = Astro.props;
+
+const authorDisplay = participants.join(' و '); // Using 'و' for Farsi as default, will adjust for English
+
+const dateFormatter = new Intl.DateTimeFormat(lang === 'fa' ? 'fa-IR' : 'en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
+---
+
+<BaseLayout title={title} description={description}>
+  <ReadingProgress />
+
+  <!-- Floating Width Toggle (only visible after scroll) -->
+  <WidthToggle title={title} author={authorDisplay} lang={lang} />
+
+  <article class="content-with-header container-article py-10">
+    <!-- Header with optional side/thumbnail image -->
+    <header class={`mb-8 ${coverImage && imageDisplay === 'side' ? 'flex flex-col sm:flex-row sm:items-start gap-6' : coverImage && imageDisplay === 'thumbnail' ? 'flex items-start gap-4' : ''}`}>
+      {/* Side image — medium size beside header */}
+      {coverImage && imageDisplay === 'side' && (
+        <img
+          src={coverImage}
+          alt={title}
+          class="w-full sm:w-40 md:w-48 h-auto rounded-xl object-cover shrink-0"
+          loading="lazy"
+        />
+      )}
+
+      {/* Thumbnail image — small icon beside title */}
+      {coverImage && imageDisplay === 'thumbnail' && (
+        <img
+          src={coverImage}
+          alt={title}
+          class="w-16 h-16 rounded-lg object-cover shrink-0 mt-1"
+          loading="lazy"
+        />
+      )}
+
+      <div class="flex-1">
+        {categories.length > 0 && (
+          <div class="flex flex-wrap gap-2 mb-3">
+            {categories.map((cat) => (
+              <a
+                href={interfaceSlug
+                  ? getLocalizedPath(`dialogues?interface=${interfaceSlug}`, lang)
+                  : getLocalizedPath(`tags/${encodeURIComponent(cat)}`, lang)}
+                class="text-xs px-2.5 py-1 rounded-full bg-primary/10 text-primary dark:bg-primary-light/10 dark:text-primary-light font-medium no-underline hover:bg-primary/20 dark:hover:bg-primary-light/20 transition-colors"
+              >
+                {cat}
+              </a>
+            ))}
+          </div>
+        )}
+
+        {(showHeader || true) && (
+          <h1 class="text-3xl md:text-4xl font-bold mb-4">{title}</h1>
+        )}
+
+        <div class="flex flex-wrap items-center gap-4 text-sm text-text-muted dark:text-text-dark-muted">
+          <div class="flex items-center gap-1">
+            <svg class="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            <span>{authorDisplay}</span>
+          </div>
+          <span>&middot;</span>
+          <time datetime={publishDate.toISOString()}>
+            {dateFormatter.format(publishDate)}
+          </time>
+          {updatedDate && (
+            <>
+              <span>&middot;</span>
+              <time datetime={updatedDate.toISOString()}>
+                {lang === 'fa' ? 'به‌روزرسانی:' : 'Updated:'} {dateFormatter.format(updatedDate)}
+              </time>
+            </>
+          )}
+          {rawContent && (
+            <>
+              <span>&middot;</span>
+              <ReadingTime lang={lang} content={rawContent} />
+            </>
+          )}
+        </div>
+      </div>
+    </header>
+
+    {/* Full-width cover image (default mode) */}
+    {coverImage && imageDisplay === 'full' && (
+      <img
+        src={coverImage}
+        alt={title}
+        class="w-full rounded-xl mb-8 object-cover max-h-96"
+        loading="lazy"
+      />
+    )}
+
+    <!-- Content -->
+    <div class="prose article-content">
+      {draft && (
+        <div class="bg-amber-50 dark:bg-amber-900/20 text-amber-800 dark:text-amber-200 px-4 py-3 rounded-lg mb-8 border border-amber-200 dark:border-amber-800/50 flex items-start gap-3">
+          <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          <div>
+            <p class="text-sm font-bold mb-1">{t('draft.label', lang)}</p>
+            <p class="text-sm opacity-90 m-0">
+              {t('draft.warning', lang)}
+            </p>
+          </div>
+        </div>
+      )}
+      
+      {pdfOnly && pdfUrl ? (
+        <div class="pdf-only-article">
+          <PDFViewer pdfUrl={pdfUrl} title={title} lang={lang} />
+          <div class="mt-8 flex justify-center">
+            <a
+              href={pdfUrl}
+              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-white font-medium hover:opacity-90 transition-colors no-underline"
+              download
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              {t('books.download_pdf', lang)}
+            </a>
+          </div>
+        </div>
+      ) : pdfUrl && showPdfViewer ? (
+        <div class="article-pdf-tabs">
+          <div class="flex justify-center mb-6">
+            <div class="inline-flex p-1 bg-surface-dim dark:bg-surface-dark-dim rounded-lg border border-border dark:border-border-dark">
+              <button
+                class="article-tab-btn active px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
+                data-tab="content"
+                type="button"
+              >
+                {lang === 'fa' ? 'متن گفتگو' : 'Dialogue'}
+              </button>
+              <button
+                class="article-tab-btn px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
+                data-tab="pdf"
+                type="button"
+              >
+                {t('books.pdf_tab', lang)}
+              </button>
+            </div>
+          </div>
+
+          <div id="article-content-tab" class="article-tab-content active">
+            <slot />
+          </div>
+          <div id="article-pdf-tab" class="article-tab-content">
+            <PDFViewer pdfUrl={pdfUrl} title={title} lang={lang} />
+            <div class="mt-8 flex justify-center">
+              <a
+                href={pdfUrl}
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-white font-medium hover:opacity-90 transition-colors no-underline"
+                download
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                {t('books.download_pdf', lang)}
+              </a>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <fragment>
+          <slot />
+          {pdfUrl && (
+            <div class="mt-8 flex justify-center">
+              <a
+                href={pdfUrl}
+                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-secondary text-white font-medium hover:opacity-90 transition-colors no-underline"
+                download
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                {t('books.download_pdf', lang)}
+              </a>
+            </div>
+          )}
+        </fragment>
+      )}
+    </div>
+
+    <!-- Rating -->
+    <Rating contentId={slug ? `dialogues/${slug}` : `dialogues/${stripLangPrefix(Astro.url.pathname)}`} lang={lang} />
+
+    <!-- Tags -->
+    {tags.length > 0 && (
+      <div class="mt-8 pt-6 border-t border-border dark:border-border-dark">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-sm text-text-muted dark:text-text-dark-muted">{t('articles.tags', lang)}:</span>
+          {tags.map((tag) => (
+            <a
+              href={getLocalizedPath(`tags/${encodeURIComponent(tag)}`, lang)}
+              class="text-xs px-2.5 py-1 rounded-full border border-border dark:border-border-dark text-text-muted dark:text-text-dark-muted hover:border-primary hover:text-primary dark:hover:border-primary-light dark:hover:text-primary-light transition-colors no-underline"
+            >
+              #{tag}
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Related Content -->
+    {tags.length > 0 && slug && (
+      <RelatedContent lang={lang} currentTags={tags} currentSlug={slug} />
+    )}
+
+    <!-- Share & Comments -->
+    <div class="mt-8 pt-6 border-t border-border dark:border-border-dark">
+      <ShareButtons title={title} url={articleUrl} lang={lang} />
+    </div>
+
+    <Giscus lang={lang} />
+  </article>
+</BaseLayout>
+
+<style>
+  .article-tab-btn {
+    color: var(--color-text-muted);
+  }
+  html.dark .article-tab-btn {
+    color: var(--color-text-dark-muted);
+  }
+  .article-tab-btn:hover {
+    color: var(--color-text);
+  }
+  html.dark .article-tab-btn:hover {
+    color: var(--color-text-dark);
+  }
+  .article-tab-btn.active {
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    color: var(--color-primary);
+  }
+  html.dark .article-tab-btn.active {
+    background-color: var(--color-surface-dark);
+    color: var(--color-primary-light);
+  }
+  .article-tab-content {
+    display: none;
+  }
+  .article-tab-content.active {
+    display: block;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabButtons = document.querySelectorAll('.article-tab-btn');
+    const tabContents = document.querySelectorAll('.article-tab-content');
+
+    if (tabButtons.length === 0) return;
+
+    tabButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const tab = button.getAttribute('data-tab');
+
+        tabButtons.forEach((btn) => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        tabContents.forEach((content) => {
+          if (content.id === `article-${tab}-tab`) {
+            content.classList.add('active');
+          } else {
+            content.classList.remove('active');
+          }
+        });
+
+        window.history.replaceState(null, '', `#${tab}`);
+      });
+    });
+
+    const hash = window.location.hash.slice(1);
+    if (hash === 'content' || hash === 'pdf') {
+      const hashButton = document.querySelector(`.article-tab-btn[data-tab="${hash}"]`);
+      if (hashButton) {
+        (hashButton as HTMLElement).click();
+      }
+    }
+  });
+</script>
