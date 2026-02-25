@@ -6,6 +6,6 @@ export interface Props {
 const { label } = Astro.props;
 ---
 
-<div class="tab-panel" data-label={label} style="display: none;">
+<div class="tab-panel" data-label={label}>
     <slot />
 </div>

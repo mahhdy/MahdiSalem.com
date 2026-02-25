@@ -14,7 +14,7 @@ const navItems = [
     { path: '/media', label: 'Media', icon: '🖼️' },
     { path: '/scripts', label: 'Scripts', icon: '⚙️' },
     { path: '/backups', label: 'Backups', icon: '🗄️' },
-    { path: '/cheatsheet', label: 'MDX Guide', icon: '📚' },
+    { path: '/guides', label: 'Guides & Training', icon: '📚' },
     { section: 'System' },
     { path: '/site-config', label: 'Site Config', icon: '🛠️' },
     { path: 'http://localhost:4321', label: 'Go to Site', icon: '🏠', external: true },

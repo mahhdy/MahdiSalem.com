@@ -1,20 +1,36 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import TableOfContents from '../../components/TableOfContents.astro';
-import { t } from '../../i18n';
-import { getCollection, render } from 'astro:content';
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TableOfContents from "../../components/TableOfContents.astro";
+import { t } from "../../i18n";
+import { getCollection, render } from "astro:content";
+import { shouldShowHidden } from "../../lib/hidden";
 
-const lang = 'fa';
+const lang = "fa";
 
 export async function getStaticPaths() {
-  const wiki = await getCollection('wiki', ({ data }) => data.lang === 'fa' && !data.draft);
-  return wiki.map((page) => ({ params: { slug: page.id.replace(/^fa\//, '') }, props: { entry: page } }));
+  const wiki = await getCollection(
+    "wiki",
+    ({ data }) => data.lang === "fa" && !data.draft,
+  );
+  return wiki.map((page) => ({
+    params: { slug: page.id.replace(/^fa\//, "") },
+    props: { entry: page },
+  }));
 }
 
 const { entry } = Astro.props;
+
+if (entry.data.hidden && !shouldShowHidden(Astro.url)) {
+  return Astro.redirect("/404");
+}
+
 const { Content, headings } = await render(entry);
 
-const dateFormatter = new Intl.DateTimeFormat('fa-IR', { year: 'numeric', month: 'long', day: 'numeric' });
+const dateFormatter = new Intl.DateTimeFormat("fa-IR", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
@@ -22,27 +38,44 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', { year: 'numeric', month:
     <div class="flex flex-col lg:flex-row gap-8">
       <article class="flex-1 min-w-0">
         <header class="mb-8">
-          <h1 class="text-3xl md:text-4xl font-bold mb-2">{entry.data.title}</h1>
-          {entry.data.lastUpdated && (
-            <p class="text-sm text-text-muted dark:text-text-dark-muted">
-              آخرین بروزرسانی: {dateFormatter.format(entry.data.lastUpdated)}
-            </p>
-          )}
+          <h1 class="text-3xl md:text-4xl font-bold mb-2">
+            {entry.data.title}
+          </h1>
+          {
+            entry.data.lastUpdated && (
+              <p class="text-sm text-text-muted dark:text-text-dark-muted">
+                آخرین بروزرسانی: {dateFormatter.format(entry.data.lastUpdated)}
+              </p>
+            )
+          }
         </header>
 
         <div class="prose">
           <Content />
         </div>
 
-        <div class="mt-8 pt-6 border-t border-border dark:border-border-dark flex flex-wrap gap-4">
+        <div
+          class="mt-8 pt-6 border-t border-border dark:border-border-dark flex flex-wrap gap-4"
+        >
           <a
             href={`https://github.com/Mahhdy/mahdisalem.com/issues/new?template=suggest-amendment.md&title=${encodeURIComponent(entry.data.title)}`}
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center gap-2 text-sm text-primary dark:text-primary-light no-underline hover:underline"
           >
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
-            {t('wiki.suggest_amendment', lang)}
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+              ></path></svg
+            >
+            {t("wiki.suggest_amendment", lang)}
           </a>
           <a
             href={`https://github.com/Mahhdy/mahdisalem.com/commits/main/src/content/wiki`}
@@ -50,19 +83,31 @@ const dateFormatter = new Intl.DateTimeFormat('fa-IR', { year: 'numeric', month:
             rel="noopener noreferrer"
             class="inline-flex items-center gap-2 text-sm text-text-muted dark:text-text-dark-muted no-underline hover:text-primary dark:hover:text-primary-light"
           >
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            {t('wiki.version_history', lang)}
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg
+            >
+            {t("wiki.version_history", lang)}
           </a>
         </div>
       </article>
 
-      {headings.length > 0 && (
-        <aside class="hidden lg:block w-56 shrink-0">
-          <div class="sticky top-20">
-            <TableOfContents headings={headings} lang={lang} />
-          </div>
-        </aside>
-      )}
+      {
+        headings.length > 0 && (
+          <aside class="hidden lg:block w-56 shrink-0">
+            <div class="sticky top-20">
+              <TableOfContents headings={headings} lang={lang} />
+            </div>
+          </aside>
+        )
+      }
     </div>
   </div>
 </BaseLayout>

@@ -6,6 +6,7 @@ import { PROJECT_ROOT } from '../index.js';
 // @ts-ignore
 import AdmZip from 'adm-zip';
 import { globby } from 'globby';
+import matter from 'gray-matter';
 
 export const backupsRoutes = new Hono();
 
@@ -23,22 +24,42 @@ backupsRoutes.get('/', async (c) => {
         const items = await Promise.all([
             ...bakFiles.map(async f => {
                 const stat = await fs.stat(f);
+                let frontmatter = null;
+                try {
+                    const parsed = matter.read(f);
+                    if (parsed.data && Object.keys(parsed.data).length > 0) {
+                        frontmatter = parsed.data;
+                    }
+                } catch (e) { }
+
                 return {
                     path: path.relative(PROJECT_ROOT, f).replace(/\\/g, '/'),
                     name: path.basename(f),
                     type: 'bak',
                     size: stat.size,
                     modifiedAt: stat.mtime.toISOString(),
+                    frontmatter,
                 };
             }),
             ...archiveFiles.map(async f => {
                 const stat = await fs.stat(f);
+                let frontmatter = null;
+                if (f.endsWith('.mdx') || f.endsWith('.md')) {
+                    try {
+                        const parsed = matter.read(f);
+                        if (parsed.data && Object.keys(parsed.data).length > 0) {
+                            frontmatter = parsed.data;
+                        }
+                    } catch (e) { }
+                }
+
                 return {
                     path: path.relative(PROJECT_ROOT, f).replace(/\\/g, '/'),
                     name: path.basename(f),
                     type: 'archive',
                     size: stat.size,
                     modifiedAt: stat.mtime.toISOString(),
+                    frontmatter,
                 };
             }),
         ]);

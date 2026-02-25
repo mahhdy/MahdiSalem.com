@@ -1,20 +1,29 @@
 ---
-import ArticleLayout from '../../../layouts/ArticleLayout.astro';
-import { getCollection, render } from 'astro:content';
+import ArticleLayout from "../../../layouts/ArticleLayout.astro";
+import { getCollection, render } from "astro:content";
+import { shouldShowHidden } from "../../../lib/hidden";
 
-const lang = 'en';
+const lang = "en";
 
 export async function getStaticPaths() {
-  const articles = await getCollection('articles', ({ data }) => data.lang === 'en' && !data.draft);
+  const articles = await getCollection(
+    "articles",
+    ({ data }) => data.lang === "en" && !data.draft,
+  );
   return articles.map((article) => ({
-    params: { slug: article.id.replace(/^en\//, '') },
+    params: { slug: article.id.replace(/^en\//, "") },
     props: { article },
   }));
 }
 
 const { article } = Astro.props;
+
+if (article.data.hidden && !shouldShowHidden(Astro.url)) {
+  return Astro.redirect("/404");
+}
+
 const { Content } = await render(article);
-const slug = article.id.replace(/^en\//, '');
+const slug = article.id.replace(/^en\//, "");
 ---
 
 <ArticleLayout
@@ -29,12 +38,13 @@ const slug = article.id.replace(/^en\//, '');
   coverImage={article.data.coverImage}
   imageDisplay={article.data.imageDisplay}
   interfaceSlug={article.data.interface}
-  rawContent={article.body ?? ''}
+  rawContent={article.body ?? ""}
   slug={slug}
   draft={article.data.draft}
-  showHeader={article.data['show-header']}
+  showHeader={article.data["show-header"]}
   pdfOnly={article.data.pdfOnly}
   pdfUrl={article.data.pdfUrl}
-  showPdfViewer={!!article.data.pdfUrl && !article.data.pdfOnly}>
+  showPdfViewer={!!article.data.pdfUrl && !article.data.pdfOnly}
+>
   <Content />
 </ArticleLayout>

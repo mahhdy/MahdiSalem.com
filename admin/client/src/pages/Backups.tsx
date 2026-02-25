@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 
 interface BackupItem {
     path: string;
@@ -6,7 +6,11 @@ interface BackupItem {
     type: 'bak' | 'archive';
     size: number;
     modifiedAt: string;
+    frontmatter?: Record<string, any> | null;
 }
+
+type SortCol = 'name' | 'path' | 'type' | 'size' | 'modifiedAt';
+type SortDir = 'asc' | 'desc';
 
 export default function Backups() {
     const [items, setItems] = useState<BackupItem[]>([]);
@@ -16,7 +20,12 @@ export default function Backups() {
     const [isDeleting, setIsDeleting] = useState(false);
     const [isDownloading, setIsDownloading] = useState(false);
 
-    // Check if the current theme is dark
+    // Filters & Sorting state
+    const [searchQuery, setSearchQuery] = useState('');
+    const [typeFilter, setTypeFilter] = useState<'all' | 'bak' | 'archive'>('all');
+    const [sortCol, setSortCol] = useState<SortCol>('modifiedAt');
+    const [sortDir, setSortDir] = useState<SortDir>('desc');
+
     const [isDark, setIsDark] = useState(() => document.documentElement.classList.contains('dark'));
 
     useEffect(() => {
@@ -53,6 +62,48 @@ export default function Backups() {
         return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
     };
 
+    // Filter and Sort logic
+    const filteredItems = useMemo(() => {
+        let result = items;
+
+        if (typeFilter !== 'all') {
+            result = result.filter(i => i.type === typeFilter);
+        }
+
+        if (searchQuery.trim().length > 0) {
+            const lowerQuery = searchQuery.toLowerCase();
+            result = result.filter(i =>
+                i.name.toLowerCase().includes(lowerQuery) ||
+                i.path.toLowerCase().includes(lowerQuery)
+            );
+        }
+
+        result.sort((a, b) => {
+            let valA: any = a[sortCol];
+            let valB: any = b[sortCol];
+
+            if (sortCol === 'modifiedAt') {
+                valA = new Date(valA).getTime();
+                valB = new Date(valB).getTime();
+            }
+
+            if (valA < valB) return sortDir === 'asc' ? -1 : 1;
+            if (valA > valB) return sortDir === 'asc' ? 1 : -1;
+            return 0;
+        });
+
+        return result;
+    }, [items, typeFilter, searchQuery, sortCol, sortDir]);
+
+    const handleSort = (col: SortCol) => {
+        if (sortCol === col) {
+            setSortDir(sortDir === 'asc' ? 'desc' : 'asc');
+        } else {
+            setSortCol(col);
+            setSortDir('asc');
+        }
+    };
+
     const toggleSelect = (path: string) => {
         const next = new Set(selected);
         if (next.has(path)) next.delete(path);
@@ -61,10 +112,10 @@ export default function Backups() {
     };
 
     const toggleAll = () => {
-        if (selected.size === items.length) {
+        if (selected.size === filteredItems.length && filteredItems.length > 0) {
             setSelected(new Set());
         } else {
-            setSelected(new Set(items.map(i => i.path)));
+            setSelected(new Set(filteredItems.map(i => i.path)));
         }
     };
 
@@ -123,6 +174,11 @@ export default function Backups() {
     const archiveCount = items.filter(i => i.type === 'archive').length;
     const archiveSize = items.filter(i => i.type === 'archive').reduce((sum, item) => sum + item.size, 0);
 
+    const SortIcon = ({ col }: { col: SortCol }) => {
+        if (sortCol !== col) return <span style={{ opacity: 0.3, marginLeft: 4 }}>↕</span>;
+        return <span style={{ color: 'var(--accent)', marginLeft: 4 }}>{sortDir === 'asc' ? '↑' : '↓'}</span>;
+    };
+
     return (
         <div>
             <div className="page-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
@@ -166,24 +222,47 @@ export default function Backups() {
                     padding: '16px 20px',
                     borderBottom: '1px solid var(--border)',
                     display: 'flex',
+                    flexWrap: 'wrap',
                     alignItems: 'center',
                     justifyContent: 'space-between',
                     gap: 16,
                     background: isDark ? 'rgba(0,0,0,0.2)' : 'rgba(0,0,0,0.02)'
                 }}>
-                    <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+                    <div style={{ display: 'flex', gap: 16, alignItems: 'center', flexWrap: 'wrap' }}>
                         <label style={{ display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer', margin: 0, fontWeight: 600, fontSize: '0.9rem' }}>
                             <input
                                 type="checkbox"
-                                checked={items.length > 0 && selected.size === items.length}
+                                checked={filteredItems.length > 0 && selected.size === filteredItems.length}
                                 onChange={toggleAll}
                                 style={{ width: 16, height: 16, cursor: 'pointer' }}
                             />
                             Select All
                         </label>
                         <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-                            ({selected.size} selected)
+                            ({selected.size} selected of {filteredItems.length})
                         </span>
+
+                        <div style={{ borderLeft: '1px solid var(--border)', height: '24px', margin: '0 8px' }}></div>
+
+                        <input
+                            type="text"
+                            className="input"
+                            placeholder="🔍 Search files..."
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            style={{ padding: '6px 12px', fontSize: '0.85rem', width: 200 }}
+                        />
+
+                        <select
+                            className="input"
+                            value={typeFilter}
+                            onChange={(e) => setTypeFilter(e.target.value as any)}
+                            style={{ padding: '6px 12px', fontSize: '0.85rem', width: 140 }}
+                        >
+                            <option value="all">Every Type</option>
+                            <option value="bak">.bak Only</option>
+                            <option value="archive">Archives Only</option>
+                        </select>
                     </div>
 
                     <div style={{ display: 'flex', gap: 12 }}>
@@ -213,9 +292,9 @@ export default function Backups() {
 
                 {loading ? (
                     <div style={{ padding: '40px', textAlign: 'center', color: 'var(--text-muted)' }}>Loading...</div>
-                ) : items.length === 0 ? (
+                ) : filteredItems.length === 0 ? (
                     <div style={{ padding: '40px', textAlign: 'center', color: 'var(--text-muted)' }}>
-                        No backup or archive files found. Your system is totally clean!
+                        Nothing conforms to your filters, or your system is squeaky clean!
                     </div>
                 ) : (
                     <div style={{ overflowX: 'auto', maxHeight: '500px' }}>
@@ -223,15 +302,40 @@ export default function Backups() {
                             <thead style={{ position: 'sticky', top: 0, background: 'var(--bg-card)', zIndex: 1, boxShadow: '0 1px 0 var(--border)' }}>
                                 <tr>
                                     <th style={{ padding: '12px 20px', width: 40 }}></th>
-                                    <th style={{ padding: '12px 20px', color: 'var(--text-muted)', fontWeight: 600 }}>File</th>
-                                    <th style={{ padding: '12px 20px', color: 'var(--text-muted)', fontWeight: 600 }}>Location</th>
-                                    <th style={{ padding: '12px 20px', color: 'var(--text-muted)', fontWeight: 600 }}>Type</th>
-                                    <th style={{ padding: '12px 20px', color: 'var(--text-muted)', fontWeight: 600 }}>Size</th>
-                                    <th style={{ padding: '12px 20px', color: 'var(--text-muted)', fontWeight: 600 }}>Date</th>
+                                    <th
+                                        style={{ padding: '12px 20px', color: 'var(--text-muted)', fontWeight: 600, cursor: 'pointer', userSelect: 'none' }}
+                                        onClick={() => handleSort('name')}
+                                    >
+                                        File <SortIcon col="name" />
+                                    </th>
+                                    <th
+                                        style={{ padding: '12px 20px', color: 'var(--text-muted)', fontWeight: 600, cursor: 'pointer', userSelect: 'none' }}
+                                        onClick={() => handleSort('path')}
+                                    >
+                                        Location <SortIcon col="path" />
+                                    </th>
+                                    <th
+                                        style={{ padding: '12px 20px', color: 'var(--text-muted)', fontWeight: 600, cursor: 'pointer', userSelect: 'none' }}
+                                        onClick={() => handleSort('type')}
+                                    >
+                                        Type <SortIcon col="type" />
+                                    </th>
+                                    <th
+                                        style={{ padding: '12px 20px', color: 'var(--text-muted)', fontWeight: 600, cursor: 'pointer', userSelect: 'none' }}
+                                        onClick={() => handleSort('size')}
+                                    >
+                                        Size <SortIcon col="size" />
+                                    </th>
+                                    <th
+                                        style={{ padding: '12px 20px', color: 'var(--text-muted)', fontWeight: 600, cursor: 'pointer', userSelect: 'none' }}
+                                        onClick={() => handleSort('modifiedAt')}
+                                    >
+                                        Date <SortIcon col="modifiedAt" />
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {items.map((item) => (
+                                {filteredItems.map((item) => (
                                     <tr
                                         key={item.path}
                                         style={{
@@ -239,6 +343,7 @@ export default function Backups() {
                                             background: selected.has(item.path) ? (isDark ? 'rgba(56, 189, 248, 0.1)' : 'rgba(56, 189, 248, 0.05)') : 'transparent',
                                             transition: 'background 0.2s'
                                         }}
+                                        title={item.frontmatter ? Object.entries(item.frontmatter).map(([k, v]) => `${k}: ${v}`).join('\n') : undefined}
                                     >
                                         <td style={{ padding: '12px 20px' }}>
                                             <input
@@ -250,6 +355,7 @@ export default function Backups() {
                                         </td>
                                         <td style={{ padding: '12px 20px', fontWeight: 500, color: 'var(--text-primary)' }}>
                                             {item.name}
+                                            {item.frontmatter && <span style={{ marginLeft: 6, opacity: 0.5, fontSize: '0.8em' }}>ℹ️</span>}
                                         </td>
                                         <td style={{ padding: '12px 20px', color: 'var(--text-secondary)', fontSize: '0.8rem', wordBreak: 'break-all', maxWidth: 300 }}>
                                             {item.path}

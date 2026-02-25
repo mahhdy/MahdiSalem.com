@@ -8,7 +8,7 @@ import TagManager from './pages/TagManager';
 import I18nManager from './pages/I18nManager';
 import MediaManager from './pages/MediaManager';
 import ScriptRunner from './pages/ScriptRunner';
-import Cheatsheet from './pages/Cheatsheet';
+import Guides from './pages/Guides';
 import SiteConfigManager from './pages/SiteConfigManager';
 import PublishQueue from './pages/PublishQueue';
 import Backups from './pages/Backups';
@@ -26,7 +26,7 @@ export default function App() {
                 <Route path="/i18n" element={<I18nManager />} />
                 <Route path="/media" element={<MediaManager />} />
                 <Route path="/scripts" element={<ScriptRunner />} />
-                <Route path="/cheatsheet" element={<Cheatsheet />} />
+                <Route path="/guides" element={<Guides />} />
                 <Route path="/site-config" element={<SiteConfigManager />} />
                 <Route path="/backups" element={<Backups />} />
             </Route>

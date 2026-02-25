@@ -9,6 +9,7 @@ import PDFViewer from '../../components/PDFViewer.astro';
 import WidthToggle from '../../components/WidthToggle.astro';
 import { t, getLocalizedPath, stripLangPrefix } from '../../i18n';
 import { getCollection, render } from 'astro:content';
+import { shouldShowHidden } from '../../lib/hidden';
 
 const lang = 'fa';
 const stripPrefix = (id: string) => id.replace(/^fa\//, '');
@@ -95,6 +96,11 @@ export async function getStaticPaths() {
 
 
 const { entry, chapters, isChapter, prevChapter, nextChapter, bookSlugOverride } = Astro.props;
+
+if (entry.data.hidden && !shouldShowHidden(Astro.url)) {
+  return Astro.redirect('/404');
+}
+
 const { Content, headings } = await render(entry);
 
 const rawBookSlug = entry.data.bookSlug ?? bookSlugOverride ?? entry.id;

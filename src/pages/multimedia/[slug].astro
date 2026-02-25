@@ -1,22 +1,31 @@
 ---
-import ArticleLayout from '../../layouts/ArticleLayout.astro';
-import VideoPlayer from '../../components/VideoPlayer.astro';
-import AudioPlayer from '../../components/AudioPlayer.astro';
-import { getCollection, render } from 'astro:content';
+import ArticleLayout from "../../layouts/ArticleLayout.astro";
+import VideoPlayer from "../../components/VideoPlayer.astro";
+import AudioPlayer from "../../components/AudioPlayer.astro";
+import { getCollection, render } from "astro:content";
+import { shouldShowHidden } from "../../lib/hidden";
 
-const lang = 'fa';
+const lang = "fa";
 
 export async function getStaticPaths() {
-  const multimedia = await getCollection('multimedia', ({ data }) => data.lang === 'fa');
+  const multimedia = await getCollection(
+    "multimedia",
+    ({ data }) => data.lang === "fa",
+  );
   return multimedia.map((item) => ({
-    params: { slug: item.id.replace(/^fa\//, '') },
+    params: { slug: item.id.replace(/^fa\//, "") },
     props: { item },
   }));
 }
 
 const { item } = Astro.props;
+
+if (item.data.hidden && !shouldShowHidden(Astro.url)) {
+  return Astro.redirect("/404");
+}
+
 const { Content, remarkPluginFrontmatter } = await render(item);
-const slug = item.id.replace(/^fa\//, '');
+const slug = item.id.replace(/^fa\//, "");
 ---
 
 <ArticleLayout
@@ -31,64 +40,83 @@ const slug = item.id.replace(/^fa\//, '');
   coverImage={item.data.coverImage || item.data.thumbnailUrl}
   imageDisplay={item.data.imageDisplay}
   interfaceSlug={item.data.interface}
-  rawContent={item.body ?? ''}
+  rawContent={item.body ?? ""}
   slug={slug}
   draft={item.data.draft}
 >
   <!-- Media Player Section -->
   <div class="mb-8">
-    {item.data.type === 'video' && (
-      <VideoPlayer
-        videoUrl={item.data.mediaUrl}
-        thumbnailUrl={item.data.thumbnailUrl}
-        platform={item.data.platform}
-        lang={lang}
-        title={item.data.title}
-      />
-    )}
+    {
+      item.data.type === "video" && (
+        <VideoPlayer
+          videoUrl={item.data.mediaUrl}
+          thumbnailUrl={item.data.thumbnailUrl}
+          platform={item.data.platform}
+          lang={lang}
+          title={item.data.title}
+        />
+      )
+    }
 
-    {(item.data.type === 'audio' || item.data.type === 'podcast') && (
-      <AudioPlayer
-        audioUrl={item.data.mediaUrl}
-        title={item.data.title}
-        lang={lang}
-        coverImage={item.data.coverImage || item.data.thumbnailUrl}
-        platform={item.data.platform}
-      />
-    )}
+    {
+      (item.data.type === "audio" || item.data.type === "podcast") && (
+        <AudioPlayer
+          audioUrl={item.data.mediaUrl}
+          title={item.data.title}
+          lang={lang}
+          coverImage={item.data.coverImage || item.data.thumbnailUrl}
+          platform={item.data.platform}
+        />
+      )
+    }
   </div>
 
   <!-- Podcast Info (if podcast) -->
-  {item.data.type === 'podcast' && (item.data.episodeNumber || item.data.seasonNumber || item.data.podcastName) && (
-    <div class="mb-6 p-4 bg-surface-dim dark:bg-surface-dark-dim rounded-lg border border-border dark:border-border-dark">
-      <div class="flex flex-wrap gap-4 text-sm">
-        {item.data.podcastName && (
-          <div>
-            <span class="text-text-muted dark:text-text-dark-muted">نام پادکست:</span>
-            <span class="font-medium mr-2">{item.data.podcastName}</span>
+  {
+    item.data.type === "podcast" &&
+      (item.data.episodeNumber ||
+        item.data.seasonNumber ||
+        item.data.podcastName) && (
+        <div class="mb-6 p-4 bg-surface-dim dark:bg-surface-dark-dim rounded-lg border border-border dark:border-border-dark">
+          <div class="flex flex-wrap gap-4 text-sm">
+            {item.data.podcastName && (
+              <div>
+                <span class="text-text-muted dark:text-text-dark-muted">
+                  نام پادکست:
+                </span>
+                <span class="font-medium mr-2">{item.data.podcastName}</span>
+              </div>
+            )}
+            {item.data.seasonNumber && (
+              <div>
+                <span class="text-text-muted dark:text-text-dark-muted">
+                  فصل:
+                </span>
+                <span class="font-medium mr-2">{item.data.seasonNumber}</span>
+              </div>
+            )}
+            {item.data.episodeNumber && (
+              <div>
+                <span class="text-text-muted dark:text-text-dark-muted">
+                  قسمت:
+                </span>
+                <span class="font-medium mr-2">{item.data.episodeNumber}</span>
+              </div>
+            )}
+            {item.data.duration && (
+              <div>
+                <span class="text-text-muted dark:text-text-dark-muted">
+                  مدت زمان:
+                </span>
+                <span class="font-medium mr-2">
+                  {Math.floor(item.data.duration / 60)} دقیقه
+                </span>
+              </div>
+            )}
           </div>
-        )}
-        {item.data.seasonNumber && (
-          <div>
-            <span class="text-text-muted dark:text-text-dark-muted">فصل:</span>
-            <span class="font-medium mr-2">{item.data.seasonNumber}</span>
-          </div>
-        )}
-        {item.data.episodeNumber && (
-          <div>
-            <span class="text-text-muted dark:text-text-dark-muted">قسمت:</span>
-            <span class="font-medium mr-2">{item.data.episodeNumber}</span>
-          </div>
-        )}
-        {item.data.duration && (
-          <div>
-            <span class="text-text-muted dark:text-text-dark-muted">مدت زمان:</span>
-            <span class="font-medium mr-2">{Math.floor(item.data.duration / 60)} دقیقه</span>
-          </div>
-        )}
-      </div>
-    </div>
-  )}
+        </div>
+      )
+  }
 
   <!-- Content (Markdown) -->
   <Content />

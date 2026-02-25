@@ -38,7 +38,7 @@ import Tabs from '../../../components/Tabs.astro';
 import TabItem from '../../../components/TabItem.astro';
 
 <details>
- <summary class="no-print" style="font-weight:700;color:var(--clr-primary);cursor:pointer;margin:1.5rem 0;"> 📖 فهرست مطالب (بازشونده) </summary>
+ <summary class="no-print" style="font-weight:700;color:var(--clr-primary);cursor:pointer;margin:1.5rem 0;"> 📖 فهرست مطالب (برای کلیک) </summary>
       <nav class="toc" id="toc">
         <h2>📖 فهرست مطالب</h2>
         <ol>

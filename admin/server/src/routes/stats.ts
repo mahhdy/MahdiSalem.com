@@ -118,3 +118,16 @@ statsRoutes.get('/recent', async (c) => {
 
     return c.json({ items });
 });
+
+/**
+ * GET /api/stats/readme — GET project README.md
+ */
+statsRoutes.get('/readme', async (c) => {
+    try {
+        const readmePath = path.join(PROJECT_ROOT, 'README.md');
+        const content = await fs.readFile(readmePath, 'utf-8');
+        return c.json({ content });
+    } catch (err: any) {
+        return c.json({ error: 'README not found', content: '' }, 404);
+    }
+});

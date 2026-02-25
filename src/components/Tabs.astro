@@ -10,12 +10,19 @@
     >
         <!-- Buttons will be injected here by client-side script -->
     </div>
-    <div class="tabs-content p-4">
+    <div class="tabs-content" style="position: relative; padding: 1rem;">
         <slot />
     </div>
 </div>
 
 <script>
+    /**
+     * Tab setup runs AFTER Mermaid has rendered all diagrams.
+     * Sequence:
+     *   1. Page loads → all .tab-panel are visible (no inline display:none)
+     *   2. Mermaid.run() renders all .mermaid blocks (both tabs visible = correct SVG)
+     *   3. This script hides inactive tabs AFTER mermaid is done
+     */
     function setupTabs() {
         const tabContainers = document.querySelectorAll(".mdx-tabs");
 
@@ -31,16 +38,22 @@
             if (!header || header.children.length > 0) return;
             if (!panels.length) return;
 
+            const showPanel = (p: HTMLElement) => {
+                p.style.display = "block";
+            };
+
+            const hidePanel = (p: HTMLElement) => {
+                p.style.display = "none";
+            };
+
             panels.forEach((panel, index) => {
                 const title =
                     panel.getAttribute("data-label") || `Tab ${index + 1}`;
                 const btn = document.createElement("button");
 
-                // Base classes
                 btn.className =
                     "px-5 py-3 text-sm font-medium transition-colors whitespace-nowrap focus:outline-none";
 
-                // Active vs Inactive setup
                 const setActive = () => {
                     btn.classList.add(
                         "text-primary",
@@ -78,12 +91,12 @@
                     );
                 };
 
+                // First tab = active, rest hidden
+                // NOTE: We DON'T hide yet — we defer until after Mermaid renders.
                 if (index === 0) {
                     setActive();
-                    panel.style.display = "block";
                 } else {
                     setInactive();
-                    panel.style.display = "none";
                 }
 
                 btn.textContent = title;
@@ -104,19 +117,63 @@
                             "dark:text-text-dark-muted",
                             "border-transparent",
                         );
-                        panels[i].style.display = "none";
+                        hidePanel(panels[i]);
                     });
 
-                    // Set active
+                    // Set this tab active
                     setActive();
-                    panel.style.display = "block";
+                    showPanel(panel);
                 });
 
                 header.appendChild(btn);
             });
+
+            // Now hide all panels except the first.
+            // This runs AFTER Mermaid has rendered (because we use a delay).
+            panels.forEach((panel, index) => {
+                if (index !== 0) hidePanel(panel);
+            });
         });
     }
 
-    document.addEventListener("DOMContentLoaded", setupTabs);
-    document.addEventListener("astro:page-load", setupTabs);
+    /**
+     * Wait for Mermaid to finish rendering before setting up tabs.
+     * Mermaid.run() is called at DOMContentLoaded in BaseLayout.astro,
+     * so we schedule our tab setup ~500ms after to be safe.
+     */
+    function deferredSetupTabs() {
+        // If mermaid exists, wait for it to finish
+        if (typeof (window as any).mermaid !== "undefined") {
+            // Mermaid.run() returns a promise; we hook after it
+            const checkInterval = setInterval(() => {
+                // Check if mermaid diagrams have been processed (have SVG children)
+                const mermaidEls =
+                    document.querySelectorAll(".mdx-tabs .mermaid");
+                let allProcessed = true;
+                mermaidEls.forEach((el) => {
+                    if (
+                        !el.querySelector("svg") &&
+                        !el.getAttribute("data-processed")
+                    ) {
+                        allProcessed = false;
+                    }
+                });
+                if (allProcessed || mermaidEls.length === 0) {
+                    clearInterval(checkInterval);
+                    setupTabs();
+                }
+            }, 100);
+            // Fallback: after 3 seconds, set up tabs anyway
+            setTimeout(() => {
+                clearInterval(checkInterval);
+                setupTabs();
+            }, 3000);
+        } else {
+            // No mermaid on page — set up immediately
+            setupTabs();
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", deferredSetupTabs);
+    document.addEventListener("astro:page-load", deferredSetupTabs);
 </script>

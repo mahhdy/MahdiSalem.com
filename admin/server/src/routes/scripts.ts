@@ -42,20 +42,33 @@ scriptsRoutes.post('/run', async (c) => {
     const { command } = await c.req.json<{ command: string }>();
 
     // Whitelist allowed commands for safety
-    const allowed = ['--all', '--zip', '--book', '--file'];
+    const allowedFlags = ['--all', '--zip', '--book', '--file', '--html'];
+    const allowedNpmScripts = ['fix:mermaid', 'fix:mermaid:dry', 'test:mermaid', 'content:watch'];
     const flag = command || '--all';
 
-    if (!allowed.includes(flag)) {
-        return c.json({ error: `Invalid command. Allowed: ${allowed.join(', ')}` }, 400);
+    // Determine if this is an npm script or a process-content flag
+    const isNpmScript = allowedNpmScripts.includes(flag);
+    const isFlag = allowedFlags.includes(flag);
+
+    if (!isNpmScript && !isFlag) {
+        return c.json({ error: `Invalid command. Allowed flags: ${allowedFlags.join(', ')}. Allowed scripts: ${allowedNpmScripts.join(', ')}` }, 400);
     }
 
     isRunning = true;
     lastRunOutput = [];
 
-    const child = spawn('node', ['scripts/process-content.mjs', flag], {
-        cwd: PROJECT_ROOT,
-        shell: true,
-    });
+    let child;
+    if (isNpmScript) {
+        child = spawn('npm', ['run', flag], {
+            cwd: PROJECT_ROOT,
+            shell: true,
+        });
+    } else {
+        child = spawn('node', ['scripts/process-content.mjs', flag], {
+            cwd: PROJECT_ROOT,
+            shell: true,
+        });
+    }
 
     child.stdout.on('data', (data: Buffer) => {
         const lines = data.toString().split('\n').filter(Boolean);

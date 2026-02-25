@@ -17,9 +17,14 @@ const ratingsMap = ratings as Record<
   { average?: number; count?: number }
 >;
 
-const allArticles = await getCollection(
+const allArticlesRaw = await getCollection(
   "articles",
   ({ data }) => data.lang === "fa",
+);
+
+// Filter out hidden articles (unless ?force=true)
+const allArticles = allArticlesRaw.filter(
+  (a) => !a.data.hidden || Astro.url.searchParams.get("force") === "true",
 );
 
 // Pre-process articles with stats and ratings
@@ -138,14 +143,15 @@ const dateFormatter = new Intl.DateTimeFormat("fa-IR", {
                 data-rating={article.rating}
               >
                 <div class="flex flex-col sm:flex-row sm:items-start gap-4">
-                  {article.data.coverImage && (article.data.cardImage ?? 'show') !== 'hidden' && (
-                    <img
-                      src={article.data.coverImage}
-                      alt={article.data.title}
-                      class="w-full sm:w-32 h-24 object-cover rounded-lg shrink-0"
-                      loading="lazy"
-                    />
-                  )}
+                  {article.data.coverImage &&
+                    (article.data.cardImage ?? "show") !== "hidden" && (
+                      <img
+                        src={article.data.coverImage}
+                        alt={article.data.title}
+                        class="w-full sm:w-32 h-24 object-cover rounded-lg shrink-0"
+                        loading="lazy"
+                      />
+                    )}
                   <div class="flex-1">
                     <div class="flex flex-wrap items-center justify-between gap-4 mb-2">
                       <div class="flex flex-wrap gap-2">

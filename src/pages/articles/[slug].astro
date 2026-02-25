@@ -1,34 +1,53 @@
 ---
-import ArticleLayout from '../../layouts/ArticleLayout.astro';
-import { getCollection, render } from 'astro:content';
+import ArticleLayout from "../../layouts/ArticleLayout.astro";
+import { getCollection, render } from "astro:content";
+import { shouldShowHidden } from "../../lib/hidden";
 
-const lang = 'fa';
+const lang = "fa";
 
 export async function getStaticPaths() {
-  const articles = await getCollection('articles', ({ data }) => data.lang === 'fa');
+  const articles = await getCollection(
+    "articles",
+    ({ data }) => data.lang === "fa",
+  );
 
   const toRouteSlug = (entry: { slug?: string; id?: string }) => {
-    const raw = String(entry.slug ?? entry.id ?? '');
-    const withoutLang = raw.replace(/^fa\//, '');
-    const withoutExt = withoutLang.replace(/\.(md|mdx)$/, '');
-    const segments = withoutExt.split('/').filter(Boolean);
-    return segments.at(-1) ?? '';
+    const raw = String(entry.slug ?? entry.id ?? "");
+    const withoutLang = raw.replace(/^fa\//, "");
+    const withoutExt = withoutLang.replace(/\.(md|mdx)$/, "");
+    const segments = withoutExt.split("/").filter(Boolean);
+    return segments.at(-1) ?? "";
   };
 
   return articles.flatMap((article) => {
     const slug = toRouteSlug(article);
     if (!slug) return [];
 
-    return [{
-      params: { slug },
-      props: { article, slug },
-    }];
+    return [
+      {
+        params: { slug },
+        props: { article, slug },
+      },
+    ];
   });
 }
 
 const { article, slug: routeSlug } = Astro.props;
+
+// Hidden content guard — return 404 unless ?force=true
+if (article.data.hidden && !shouldShowHidden(Astro.url)) {
+  return Astro.redirect("/404");
+}
+
 const { Content, remarkPluginFrontmatter } = await render(article);
-const slug = routeSlug ?? String(article.id ?? '').replace(/^fa\//, '').split('/').filter(Boolean).at(-1) ?? '';
+const slug =
+  routeSlug ??
+  String(article.id ?? "")
+    .replace(/^fa\//, "")
+    .split("/")
+    .filter(Boolean)
+    .at(-1) ??
+  "";
 ---
 
 <ArticleLayout
@@ -43,10 +62,10 @@ const slug = routeSlug ?? String(article.id ?? '').replace(/^fa\//, '').split('/
   coverImage={article.data.coverImage}
   imageDisplay={article.data.imageDisplay}
   interfaceSlug={article.data.interface}
-  rawContent={article.body ?? ''}
+  rawContent={article.body ?? ""}
   slug={slug}
   draft={article.data.draft}
-  showHeader={article.data['show-header']}
+  showHeader={article.data["show-header"]}
   pdfOnly={article.data.pdfOnly}
   pdfUrl={article.data.pdfUrl}
   showPdfViewer={!!article.data.pdfUrl && !article.data.pdfOnly}
