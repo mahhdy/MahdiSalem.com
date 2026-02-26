@@ -8,6 +8,7 @@ import Giscus from '../components/Giscus.astro';
 import Rating from '../components/Rating.astro';
 import WidthToggle from '../components/WidthToggle.astro';
 import PDFViewer from '../components/PDFViewer.astro';
+import ImageSlider from '../components/ImageSlider.astro';
 import { t, getLocalizedPath, stripLangPrefix, type Locale } from '../i18n';
 
 interface Props {
@@ -29,6 +30,8 @@ interface Props {
   pdfOnly?: boolean;
   pdfUrl?: string;
   showPdfViewer?: boolean;
+  hasSlide?: boolean;
+  slideArray?: string[] | null;
 }
 
 const {
@@ -50,6 +53,8 @@ const {
   pdfOnly = false,
   pdfUrl,
   showPdfViewer = false,
+  hasSlide = false,
+  slideArray = [],
 } = Astro.props;
 
 // Determine the content type from the slug for category links
@@ -162,7 +167,7 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
         </div>
       )}
       
-      {pdfOnly && pdfUrl ? (
+      {pdfOnly && pdfUrl && !hasSlide ? (
         <!-- PDF-only: show only PDF viewer + download -->
         <div class="pdf-only-article">
           <PDFViewer pdfUrl={pdfUrl} title={title} lang={lang} />
@@ -177,44 +182,68 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
             </a>
           </div>
         </div>
-      ) : pdfUrl && showPdfViewer ? (
-        <!-- Has both content AND PDF: show tab interface -->
-        <div class="article-pdf-tabs">
+      ) : (pdfUrl && showPdfViewer) || hasSlide ? (
+        <!-- Has content AND PDF and/or Slides: show tab interface -->
+        <div class="article-tabs-container">
           <div class="flex justify-center mb-6">
-            <div class="inline-flex p-1 bg-surface-dim dark:bg-surface-dark-dim rounded-lg border border-border dark:border-border-dark">
-              <button
-                class="article-tab-btn active px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
-                data-tab="content"
-                type="button"
-              >
-                {lang === 'fa' ? 'متن مقاله' : 'Article'}
-              </button>
-              <button
-                class="article-tab-btn px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
-                data-tab="pdf"
-                type="button"
-              >
-                {t('books.pdf_tab', lang)}
-              </button>
+            <div class="inline-flex p-1 bg-surface-dim dark:bg-surface-dark-dim rounded-lg border border-border dark:border-border-dark flex-wrap justify-center">
+              {!pdfOnly && (
+                <button
+                  class="article-tab-btn active px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
+                  data-tab="content"
+                  type="button"
+                >
+                  {lang === 'fa' ? 'متن مقاله' : 'Article'}
+                </button>
+              )}
+              {pdfUrl && showPdfViewer && (
+                <button
+                  class={`article-tab-btn ${pdfOnly ? 'active' : ''} px-6 py-2.5 rounded-md text-sm font-medium transition-colors`}
+                  data-tab="pdf"
+                  type="button"
+                >
+                  {t('books.pdf_tab', lang)}
+                </button>
+              )}
+              {hasSlide && slideArray && slideArray.length > 0 && (
+                <button
+                  class="article-tab-btn px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
+                  data-tab="slides"
+                  type="button"
+                >
+                  {lang === 'fa' ? 'اسلایدها' : 'Slides'}
+                </button>
+              )}
             </div>
           </div>
 
-          <div id="article-content-tab" class="article-tab-content active">
-            <slot />
-          </div>
-          <div id="article-pdf-tab" class="article-tab-content">
-            <PDFViewer pdfUrl={pdfUrl} title={title} lang={lang} />
-            <div class="mt-8 flex justify-center">
-              <a
-                href={pdfUrl}
-                class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-white font-medium hover:opacity-90 transition-colors no-underline"
-                download
-              >
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                {t('books.download_pdf', lang)}
-              </a>
+          {!pdfOnly && (
+            <div id="article-content-tab" class="article-tab-content active transition-opacity duration-300">
+              <slot />
             </div>
-          </div>
+          )}
+          
+          {pdfUrl && showPdfViewer && (
+            <div id="article-pdf-tab" class={`article-tab-content ${pdfOnly ? 'active' : ''} transition-opacity duration-300`}>
+              <PDFViewer pdfUrl={pdfUrl} title={title} lang={lang} />
+              <div class="mt-8 flex justify-center">
+                <a
+                  href={pdfUrl}
+                  class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-white font-medium hover:opacity-90 transition-colors no-underline"
+                  download
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                  {t('books.download_pdf', lang)}
+                </a>
+              </div>
+            </div>
+          )}
+
+          {hasSlide && slideArray && slideArray.length > 0 && (
+            <div id="article-slides-tab" class="article-tab-content transition-opacity duration-300 p-2 sm:p-4 bg-surface dark:bg-surface-dark rounded-xl border border-border dark:border-border-dark my-8">
+              <ImageSlider images={slideArray} />
+            </div>
+          )}
         </div>
       ) : (
         <!-- Normal content: just render slot -->
@@ -330,7 +359,8 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
 
     // Handle initial hash in URL
     const hash = window.location.hash.slice(1);
-    if (hash === 'content' || hash === 'pdf') {
+    // Support content, pdf, or slides in hash
+    if (hash === 'content' || hash === 'pdf' || hash === 'slides') {
       const hashButton = document.querySelector(`.article-tab-btn[data-tab="${hash}"]`);
       if (hashButton) {
         (hashButton as HTMLElement).click();

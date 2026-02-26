@@ -58,6 +58,8 @@ const FIELD_GROUPS: { label: string; fields: { value: string; label: string }[] 
         label: 'Media',
         fields: [
             { value: 'pdfUrl', label: 'pdfUrl' },
+            { value: 'hasSlide', label: 'hasSlide' },
+            { value: 'slideArray', label: 'slideArray' },
             { value: 'pdfOnly', label: 'pdfOnly' },
             { value: 'showPdfViewer', label: 'showPdfViewer' },
             { value: 'mediaUrl', label: 'mediaUrl' },

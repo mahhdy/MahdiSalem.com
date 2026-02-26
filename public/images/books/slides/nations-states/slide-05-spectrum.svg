@@ -1,0 +1,40 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080" xml:lang="fa">
+  <rect width="1080" height="1080" fill="#0D1B2E"/>
+
+  <text x="540" y="75" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="34" font-weight="900" fill="#D4A84B" direction="rtl" unicode-bidi="embed">طیف نظام‌های سیاسی جهان</text>
+  <text x="540" y="115" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="18" fill="#8AAFD0" direction="rtl" unicode-bidi="embed">از تمرکز مطلق تا حداکثر تمرکززدایی</text>
+
+  <line x1="100" y1="160" x2="960" y2="160" stroke="#D4A84B" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="965,152 985,160 965,168" fill="#D4A84B"/>
+  <text x="120" y="150" font-family="Vazirmatn" font-size="12" fill="#C0392B" direction="rtl" unicode-bidi="embed">تمرکز مطلق</text>
+  <text x="940" y="150" font-family="Vazirmatn" font-size="12" fill="#3A7D44" direction="rtl" unicode-bidi="embed">حداکثر آزادی</text>
+
+  <rect x="60" y="200" width="960" height="140" rx="14" fill="#C0392B" opacity="0.92"/>
+  <text x="540" y="248" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="28" font-weight="bold" fill="#fff" direction="rtl" unicode-bidi="embed">یکپارچه‌ی متمرکز</text>
+  <text x="540" y="285" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="17" fill="#FFD0D0" direction="rtl" unicode-bidi="embed">همه‌ی قدرت در مرکز — واحدهای محلی بی‌اختیار</text>
+  <text x="540" y="315" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="15" fill="#FFD0D0" direction="rtl" unicode-bidi="embed">ایران فعلی • ترکیه‌ی کمالیستی • فرانسه‌ی قدیم</text>
+
+  <rect x="60" y="360" width="960" height="140" rx="14" fill="#E8913A" opacity="0.92"/>
+  <text x="540" y="408" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="28" font-weight="bold" fill="#fff" direction="rtl" unicode-bidi="embed">یکپارچه‌ی غیرمتمرکز</text>
+  <text x="540" y="445" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="17" fill="#FFF3E0" direction="rtl" unicode-bidi="embed">تفویض اختیارات اجرایی — قابل بازپس‌گیری</text>
+  <text x="540" y="475" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="15" fill="#FFF3E0" direction="rtl" unicode-bidi="embed">فرانسه‌ی معاصر • اندونزی • ژاپن</text>
+
+  <rect x="60" y="520" width="960" height="140" rx="14" fill="#D4A84B" opacity="0.92"/>
+  <text x="540" y="568" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="28" font-weight="bold" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">منطقه‌ای‌شده</text>
+  <text x="540" y="605" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="17" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">برخی مناطق خودمختاری قانون‌گذاری دارند</text>
+  <text x="540" y="635" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="15" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">اسپانیا • ایتالیا</text>
+
+  <rect x="60" y="680" width="960" height="140" rx="14" fill="#3A7D44" opacity="0.92"/>
+  <text x="540" y="728" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="28" font-weight="bold" fill="#fff" direction="rtl" unicode-bidi="embed">فدراسیون</text>
+  <text x="540" y="765" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="17" fill="#E8F5E9" direction="rtl" unicode-bidi="embed">تقسیم قانون‌اساسی قدرت — مجلس دوم — دادگاه قانون اساسی</text>
+  <text x="540" y="795" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="15" fill="#E8F5E9" direction="rtl" unicode-bidi="embed">هند • آلمان • سوئیس • کانادا • آمریکا</text>
+
+  <rect x="60" y="840" width="960" height="140" rx="14" fill="#2C5F8A" opacity="0.92"/>
+  <text x="540" y="888" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="28" font-weight="bold" fill="#fff" direction="rtl" unicode-bidi="embed">کنفدراسیون یا اتحادیه</text>
+  <text x="540" y="925" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="17" fill="#BBDEFB" direction="rtl" unicode-bidi="embed">واحدها حاکمیت کامل دارند — نهاد مرکزی ضعیف</text>
+  <text x="540" y="955" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="15" fill="#BBDEFB" direction="rtl" unicode-bidi="embed">اتحادیه‌ی اروپا</text>
+
+  <rect x="0" y="1040" width="1080" height="40" fill="#D4A84B"/>
+  <text x="540" y="1067" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="16" font-weight="bold" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">دولت، ملت و تنوع قومی — مهدی سالم</text>
+  <text x="50" y="1020" font-family="Vazirmatn" font-size="14" fill="#D4A84B" opacity="0.5">5/10</text>
+</svg>

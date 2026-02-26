@@ -1,0 +1,42 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080" xml:lang="fa">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FAF8F4"/>
+      <stop offset="100%" stop-color="#EDF4FB"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg2)"/>
+  <rect x="0" y="0" width="1080" height="8" fill="#D4A84B"/>
+
+  <rect x="440" y="60" width="200" height="200" rx="20" fill="#C0392B"/>
+  <rect x="520" y="100" width="40" height="120" rx="5" fill="#fff"/>
+  <rect x="480" y="140" width="120" height="40" rx="5" fill="#fff"/>
+
+  <text x="540" y="350" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="48" font-weight="900" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">سوئیس</text>
+  <text x="540" y="410" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="28" fill="#2C5F8A" direction="rtl" unicode-bidi="embed">کشوری با چهار زبان رسمی</text>
+
+  <rect x="60" y="450" width="220" height="70" rx="12" fill="#1B2A4A"/>
+  <text x="170" y="493" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="20" font-weight="bold" fill="#D4A84B" direction="rtl" unicode-bidi="embed">آلمانی ۶۳٪</text>
+
+  <rect x="300" y="450" width="220" height="70" rx="12" fill="#2C5F8A"/>
+  <text x="410" y="493" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="20" font-weight="bold" fill="#ffffff" direction="rtl" unicode-bidi="embed">فرانسوی ۲۳٪</text>
+
+  <rect x="540" y="450" width="220" height="70" rx="12" fill="#3A7D44"/>
+  <text x="650" y="493" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="20" font-weight="bold" fill="#ffffff" direction="rtl" unicode-bidi="embed">ایتالیایی ۸٪</text>
+
+  <rect x="780" y="450" width="220" height="70" rx="12" fill="#D4A84B"/>
+  <text x="890" y="493" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="18" font-weight="bold" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">رومانش ۰.۵٪</text>
+
+  <rect x="120" y="570" width="840" height="160" rx="20" fill="#1B2A4A" opacity="0.05"/>
+  <rect x="940" y="570" width="6" height="160" rx="3" fill="#D4A84B"/>
+  <text x="920" y="620" text-anchor="start" font-family="Vazirmatn,Tahoma,sans-serif" font-size="26" font-weight="bold" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">و در عین حال:</text>
+  <text x="920" y="665" text-anchor="start" font-family="Vazirmatn,Tahoma,sans-serif" font-size="22" fill="#2C5F8A" direction="rtl" unicode-bidi="embed">بالاترین شاخص توسعه‌ی انسانی جهان ✅</text>
+  <text x="920" y="710" text-anchor="start" font-family="Vazirmatn,Tahoma,sans-serif" font-size="22" fill="#2C5F8A" direction="rtl" unicode-bidi="embed">پایدارترین دموکراسی جهان ✅</text>
+
+  <rect x="190" y="785" width="700" height="80" rx="40" fill="#D4A84B"/>
+  <text x="540" y="835" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="28" font-weight="bold" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">تنوع = ضعف؟ نه! تنوع = ثروت</text>
+
+  <rect x="0" y="1040" width="1080" height="40" fill="#1B2A4A"/>
+  <text x="540" y="1067" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="16" fill="#D4A84B" direction="rtl" unicode-bidi="embed">دولت، ملت و تنوع قومی — مهدی سالم</text>
+  <text x="50" y="1015" font-family="Vazirmatn" font-size="14" fill="#2C5F8A" opacity="0.5">2/10</text>
+</svg>

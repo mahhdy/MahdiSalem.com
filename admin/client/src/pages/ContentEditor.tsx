@@ -46,6 +46,8 @@ function getSectionsForCollection(collection: string): SectionDef[] {
                 'pdfUrl',
                 'pdfOnly',
                 'showPdfViewer',
+                'hasSlide',
+                'slideArray',
                 'thumbnailUrl',
                 'mediaUrl',
                 'platform',
@@ -1039,6 +1041,8 @@ function getFieldsForCollection(collection: string): FieldDef[] {
         { key: 'lang', label: 'Language', type: 'select', options: ['fa', 'en'] },
         { key: 'draft', label: 'Draft', type: 'boolean' },
         { key: 'tags', label: 'Tags', type: 'tags' },
+        { key: 'hasSlide', label: 'Has Slide', type: 'boolean' },
+        { key: 'slideArray', label: 'Slide Images', type: 'tags', placeholder: '/images/1.jpg, /images/2.jpg' },
     ];
 
     switch (collection) {

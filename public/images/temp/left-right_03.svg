@@ -1,0 +1,535 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" dir="rtl">
+  <defs>
+    <!-- پس‌زمینه اصلی -->
+    <linearGradient id="bgMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b1a1a"/>
+      <stop offset="30%" style="stop-color:#4a1528"/>
+      <stop offset="50%" style="stop-color:#3d2050"/>
+      <stop offset="70%" style="stop-color:#2a2a6a"/>
+      <stop offset="100%" style="stop-color:#1a2250"/>
+    </linearGradient>
+
+    <!-- وینیت (تاریکی گوشه‌ها) -->
+    <radialGradient id="vignette" cx="50%" cy="48%" r="55%">
+      <stop offset="0%" style="stop-color:#000;stop-opacity:0"/>
+      <stop offset="70%" style="stop-color:#000;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#000;stop-opacity:0.65"/>
+    </radialGradient>
+
+    <!-- دایره پس‌زمینه -->
+    <radialGradient id="circleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8090b0;stop-opacity:0.35"/>
+      <stop offset="60%" style="stop-color:#607090;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#405070;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- نور حجمی از بالا -->
+    <linearGradient id="volumeLight" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:0.06"/>
+      <stop offset="40%" style="stop-color:#fff;stop-opacity:0.02"/>
+      <stop offset="100%" style="stop-color:#fff;stop-opacity:0"/>
+    </linearGradient>
+
+    <!-- گرادیان ستون ترازو -->
+    <linearGradient id="pillarGradRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c62828"/>
+      <stop offset="50%" style="stop-color:#d32f2f"/>
+      <stop offset="100%" style="stop-color:#8b1a1a"/>
+    </linearGradient>
+    <linearGradient id="pillarGradBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a3a7a"/>
+      <stop offset="50%" style="stop-color:#2a4a8a"/>
+      <stop offset="100%" style="stop-color:#1a2a5a"/>
+    </linearGradient>
+
+    <!-- بازوی ترازو -->
+    <linearGradient id="armGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5e6b8"/>
+      <stop offset="40%" style="stop-color:#d4c088"/>
+      <stop offset="100%" style="stop-color:#a08850"/>
+    </linearGradient>
+
+    <!-- پایه ترازو -->
+    <linearGradient id="baseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4c088"/>
+      <stop offset="100%" style="stop-color:#806838"/>
+    </linearGradient>
+
+    <!-- کفه چپ -->
+    <linearGradient id="leftBowlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#c62828"/>
+      <stop offset="100%" style="stop-color:#7f1a1a"/>
+    </linearGradient>
+    <linearGradient id="leftTriGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#b71c1c"/>
+      <stop offset="50%" style="stop-color:#a01818"/>
+      <stop offset="100%" style="stop-color:#801515"/>
+    </linearGradient>
+
+    <!-- کفه راست -->
+    <linearGradient id="rightBowlGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a7a"/>
+      <stop offset="100%" style="stop-color:#0d2050"/>
+    </linearGradient>
+    <linearGradient id="rightTriGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3a7a"/>
+      <stop offset="50%" style="stop-color:#152e65"/>
+      <stop offset="100%" style="stop-color:#0d2050"/>
+    </linearGradient>
+
+    <!-- نوار طلایی تایم‌لاین -->
+    <linearGradient id="timeGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a08850;stop-opacity:0.4"/>
+      <stop offset="50%" style="stop-color:#d4c088;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#a08850;stop-opacity:0.4"/>
+    </linearGradient>
+
+    <!-- فیلترهای سه‌بعدی -->
+    <filter id="shadow3d" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="4" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="shadowMedium">
+      <feDropShadow dx="3" dy="5" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="shadowLight">
+      <feDropShadow dx="2" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="shadowSoft">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+    <filter id="innerGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bigGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- بافت نویز -->
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="4" seed="3"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.06"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- بافت کاغذ -->
+    <filter id="paperCrack">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="6" seed="7"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.04"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- نور حجمی مخروطی -->
+    <radialGradient id="spotlightCenter" cx="50%" cy="30%" r="40%">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#fff;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="spotlightLeft" cx="25%" cy="40%" r="30%">
+      <stop offset="0%" style="stop-color:#ff5252;stop-opacity:0.06"/>
+      <stop offset="100%" style="stop-color:#ff5252;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="spotlightRight" cx="75%" cy="40%" r="30%">
+      <stop offset="0%" style="stop-color:#448aff;stop-opacity:0.06"/>
+      <stop offset="100%" style="stop-color:#448aff;stop-opacity:0"/>
+    </radialGradient>
+
+    <!-- سایه زمین -->
+    <radialGradient id="groundShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#000;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#000;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ===================== پس‌زمینه ===================== -->
+  <rect width="1200" height="1200" fill="url(#bgMain)"/>
+  
+  <!-- بافت‌ها -->
+  <rect width="1200" height="1200" filter="url(#noise)" opacity="0.7"/>
+  <rect width="1200" height="1200" filter="url(#paperCrack)" opacity="0.8"/>
+
+  <!-- نورهای حجمی سینمایی -->
+  <rect width="1200" height="1200" fill="url(#spotlightCenter)"/>
+  <rect width="1200" height="1200" fill="url(#spotlightLeft)"/>
+  <rect width="1200" height="1200" fill="url(#spotlightRight)"/>
+  <rect width="1200" height="600" fill="url(#volumeLight)"/>
+
+  <!-- دایره پس‌زمینه (عمق) -->
+  <circle cx="600" cy="480" r="340" fill="url(#circleGlow)"/>
+  <circle cx="600" cy="480" r="280" fill="none" stroke="#8090b0" stroke-width="0.5" opacity="0.1"/>
+
+  <!-- خطوط ترک روی دیوار -->
+  <g opacity="0.04" stroke="#fff" stroke-width="0.5" fill="none">
+    <path d="M300,200 C350,250 320,300 380,350 C400,380 370,420 400,450"/>
+    <path d="M850,150 C820,200 860,250 830,300"/>
+    <path d="M200,600 C250,620 230,660 270,700"/>
+    <path d="M950,550 C920,580 950,620 910,660"/>
+  </g>
+
+  <!-- ===================== عناصر سمت چپ (پشت) ===================== -->
+
+  <!-- کارخانه (دور، عمق بیشتر) -->
+  <g transform="translate(55, 280)" opacity="0.2" filter="url(#shadowSoft)">
+    <!-- ساختمان اصلی -->
+    <rect x="0" y="120" width="200" height="220" fill="#8b2020" rx="3"/>
+    <!-- هایلایت ساختمان -->
+    <rect x="0" y="120" width="8" height="220" fill="#a03030" opacity="0.5" rx="1"/>
+    <!-- دودکش‌ها با پرسپکتیو -->
+    <rect x="20" y="30" width="28" height="90" fill="#8b2020" rx="2"/>
+    <rect x="20" y="30" width="6" height="90" fill="#a03030" opacity="0.4"/>
+    <rect x="65" y="0" width="32" height="120" fill="#8b2020" rx="2"/>
+    <rect x="65" y="0" width="6" height="120" fill="#a03030" opacity="0.4"/>
+    <rect x="120" y="40" width="28" height="80" fill="#8b2020" rx="2"/>
+    <rect x="165" y="15" width="24" height="105" fill="#8b2020" rx="2"/>
+    <!-- دود -->
+    <ellipse cx="34" cy="15" rx="25" ry="14" fill="#5a1515" opacity="0.3"/>
+    <ellipse cx="81" cy="-20" rx="30" ry="16" fill="#5a1515" opacity="0.25"/>
+    <ellipse cx="81" cy="-45" rx="22" ry="12" fill="#5a1515" opacity="0.15"/>
+    <!-- پنجره‌ها (نور درونی) -->
+    <g fill="#d4a050" opacity="0.3">
+      <rect x="15" y="150" width="22" height="28" rx="2"/>
+      <rect x="50" y="150" width="22" height="28" rx="2"/>
+      <rect x="85" y="150" width="22" height="28" rx="2"/>
+      <rect x="125" y="150" width="22" height="28" rx="2"/>
+      <rect x="160" y="150" width="22" height="28" rx="2"/>
+      <rect x="15" y="195" width="22" height="28" rx="2"/>
+      <rect x="50" y="195" width="22" height="28" rx="2"/>
+      <rect x="85" y="195" width="22" height="28" rx="2"/>
+      <rect x="125" y="195" width="22" height="28" rx="2"/>
+      <rect x="160" y="195" width="22" height="28" rx="2"/>
+    </g>
+    <!-- سقف -->
+    <polygon points="-5,120 100,85 205,120" fill="#702020" opacity="0.6"/>
+  </g>
+
+  <!-- پرچم سرخ (پشت ترازو) -->
+  <g transform="translate(240, 210)" opacity="0.35" filter="url(#shadowMedium)">
+    <line x1="0" y1="0" x2="0" y2="280" stroke="#d4c088" stroke-width="5" stroke-linecap="round"/>
+    <!-- سر میله -->
+    <circle cx="0" cy="0" r="5" fill="#d4c088"/>
+    <!-- پرچم مواج با عمق -->
+    <path d="M0,15 C40,5 70,35 110,20 C140,8 170,30 200,18 
+             L200,110 C170,125 140,100 110,112 C70,128 40,100 0,110Z" 
+          fill="#c62828"/>
+    <!-- سایه روی پرچم -->
+    <path d="M0,15 C40,5 70,35 110,20 C140,8 170,30 200,18 
+             L200,60 C170,75 140,50 110,62 C70,78 40,50 0,60Z" 
+          fill="#a01818" opacity="0.4"/>
+    <!-- هایلایت -->
+    <path d="M50,20 C70,15 90,30 110,22" fill="none" stroke="#e05050" stroke-width="1.5" opacity="0.3"/>
+    <!-- ستاره -->
+    <polygon points="100,50 104,38 115,38 106,48 110,60 100,52 90,60 94,48 85,38 96,38" 
+             fill="#f5e6b8" opacity="0.7"/>
+  </g>
+
+  <!-- دست‌دهی (همبستگی) -->
+  <g transform="translate(60, 560)" opacity="0.22" filter="url(#shadowSoft)">
+    <!-- دست چپ -->
+    <path d="M0,40 C10,25 25,15 45,20 C55,22 60,30 65,40 C68,48 65,55 58,58 
+             L40,65 C30,68 15,60 5,50 Z" 
+          fill="#d4b888" stroke="#a08858" stroke-width="1"/>
+    <!-- دست راست -->
+    <path d="M120,40 C110,25 95,15 75,20 C65,22 60,30 55,40 C52,48 55,55 62,58 
+             L80,65 C90,68 105,60 115,50 Z" 
+          fill="#d4b888" stroke="#a08858" stroke-width="1"/>
+    <!-- ساعدها -->
+    <path d="M0,40 L-25,80 L-10,85 L15,50Z" fill="#c0a070" opacity="0.7"/>
+    <path d="M120,40 L145,80 L130,85 L105,50Z" fill="#c0a070" opacity="0.7"/>
+  </g>
+
+  <!-- ===================== عناصر سمت راست (پشت) ===================== -->
+
+  <!-- ساختمان‌های بورس/بانک -->
+  <g transform="translate(880, 230)" opacity="0.22" filter="url(#shadowSoft)">
+    <!-- ساختمان بلند ۱ -->
+    <rect x="0" y="0" width="70" height="280" fill="#1a3060" rx="2"/>
+    <rect x="0" y="0" width="10" height="280" fill="#253a6a" opacity="0.5"/>
+    <!-- پنجره‌ها -->
+    <g fill="#4a6aa0" opacity="0.35">
+      <rect x="12" y="15" width="12" height="18" rx="1"/>
+      <rect x="30" y="15" width="12" height="18" rx="1"/>
+      <rect x="48" y="15" width="12" height="18" rx="1"/>
+      <rect x="12" y="45" width="12" height="18" rx="1"/>
+      <rect x="30" y="45" width="12" height="18" rx="1"/>
+      <rect x="48" y="45" width="12" height="18" rx="1"/>
+      <rect x="12" y="75" width="12" height="18" rx="1"/>
+      <rect x="30" y="75" width="12" height="18" rx="1"/>
+      <rect x="48" y="75" width="12" height="18" rx="1"/>
+      <rect x="12" y="105" width="12" height="18" rx="1"/>
+      <rect x="30" y="105" width="12" height="18" rx="1"/>
+      <rect x="48" y="105" width="12" height="18" rx="1"/>
+    </g>
+    <!-- سقف -->
+    <rect x="10" y="-12" width="50" height="15" fill="#253a6a" rx="2"/>
+    <rect x="25" y="-30" width="20" height="22" fill="#2a4070" rx="1"/>
+
+    <!-- ساختمان ۲ -->
+    <rect x="85" y="60" width="90" height="220" fill="#1a2a55" rx="2"/>
+    <rect x="85" y="60" width="12" height="220" fill="#223060" opacity="0.4"/>
+    <!-- ستون‌های نئوکلاسیک -->
+    <rect x="92" y="70" width="8" height="90" fill="#2a3a65" rx="1"/>
+    <rect x="110" y="70" width="8" height="90" fill="#2a3a65" rx="1"/>
+    <rect x="128" y="70" width="8" height="90" fill="#2a3a65" rx="1"/>
+    <rect x="146" y="70" width="8" height="90" fill="#2a3a65" rx="1"/>
+    <rect x="164" y="70" width="8" height="90" fill="#2a3a65" rx="1"/>
+    <!-- سقف مثلثی -->
+    <polygon points="82,60 130,25 178,60" fill="#223060"/>
+  </g>
+
+  <!-- کبوتر/پرنده آزادی -->
+  <g transform="translate(950, 340)" opacity="0.35" filter="url(#glow)">
+    <!-- بدن -->
+    <ellipse cx="30" cy="20" rx="18" ry="12" fill="#e0e8f0"/>
+    <!-- سر -->
+    <circle cx="48" cy="12" r="8" fill="#e8f0f8"/>
+    <!-- نوک -->
+    <polygon points="56,12 64,10 56,14" fill="#d4a050"/>
+    <!-- چشم -->
+    <circle cx="50" cy="10" r="1.5" fill="#1a2a50"/>
+    <!-- بال بالا -->
+    <path d="M15,15 C5,5 -10,-5 -20,0 C-5,5 5,10 15,15Z" fill="#d0d8e8" opacity="0.9"/>
+    <path d="M15,15 C0,-5 -15,-20 -30,-15 C-15,-10 0,0 15,15Z" fill="#c8d0e0" opacity="0.7"/>
+    <!-- بال پایین -->
+    <path d="M20,25 C10,35 -5,40 -15,35 C0,32 10,28 20,25Z" fill="#d8e0f0" opacity="0.8"/>
+    <!-- دم -->
+    <path d="M12,20 C5,25 -5,30 -10,28 C0,24 8,22 12,20Z" fill="#c0c8d8"/>
+    <!-- هایلایت بدن -->
+    <ellipse cx="32" cy="17" rx="10" ry="6" fill="#fff" opacity="0.15"/>
+  </g>
+
+  <!-- فرد بر قلهٔ کوه -->
+  <g transform="translate(880, 520)" opacity="0.35" filter="url(#shadowSoft)">
+    <!-- کوه پشتی -->
+    <polygon points="-40,200 100,40 250,200" fill="#152040" opacity="0.5"/>
+    <!-- کوه اصلی -->
+    <polygon points="0,200 130,20 270,200" fill="#1a2a50"/>
+    <!-- برف قله -->
+    <polygon points="110,40 130,20 150,40 140,50 120,45" fill="#8090b0" opacity="0.3"/>
+    <!-- هایلایت کوه -->
+    <polygon points="130,20 200,120 130,80" fill="#253a65" opacity="0.4"/>
+    <!-- فرد -->
+    <g transform="translate(120, 5)">
+      <circle cx="10" cy="-12" r="7" fill="#c0c8d8"/>
+      <line x1="10" y1="-5" x2="10" y2="18" stroke="#c0c8d8" stroke-width="3"/>
+      <line x1="10" y1="3" x2="0" y2="12" stroke="#c0c8d8" stroke-width="2.5"/>
+      <line x1="10" y1="3" x2="22" y2="-2" stroke="#c0c8d8" stroke-width="2.5"/>
+      <line x1="10" y1="18" x2="2" y2="32" stroke="#c0c8d8" stroke-width="2.5"/>
+      <line x1="10" y1="18" x2="18" y2="32" stroke="#c0c8d8" stroke-width="2.5"/>
+      <!-- پرچم در دست -->
+      <line x1="22" y1="-2" x2="38" y2="-22" stroke="#c0c8d8" stroke-width="1.5"/>
+      <path d="M38,-22 C45,-25 52,-18 55,-22 L55,-10 C52,-6 45,-13 38,-10Z" fill="#d04040" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- ===================== ترازو (عنصر اصلی) ===================== -->
+  <g transform="translate(600, 200)" filter="url(#shadow3d)">
+    
+    <!-- سایه زمین -->
+    <ellipse cx="0" cy="680" rx="200" ry="20" fill="url(#groundShadow)" opacity="0.5"/>
+
+    <!-- ===================== پایه ===================== -->
+    <!-- پایه سه‌بعدی -->
+    <polygon points="-55,670 55,670 25,470 -25,470" fill="url(#baseGrad)"/>
+    <!-- هایلایت پایه -->
+    <polygon points="-55,670 0,670 -5,470 -25,470" fill="#e0d0a0" opacity="0.15"/>
+    <!-- سایه پایه -->
+    <polygon points="0,670 55,670 25,470 5,470" fill="#000" opacity="0.1"/>
+    <!-- زیر پایه -->
+    <ellipse cx="0" cy="675" rx="70" ry="14" fill="#806838"/>
+    <ellipse cx="0" cy="672" rx="68" ry="12" fill="#a08850"/>
+    <!-- هایلایت زیر پایه -->
+    <ellipse cx="-15" cy="670" rx="30" ry="6" fill="#c0b078" opacity="0.3"/>
+
+    <!-- ===================== ستون مرکزی ===================== -->
+    <!-- ستون دو رنگ -->
+    <rect x="-14" y="100" width="14" height="370" fill="url(#pillarGradRed)"/>
+    <rect x="0" y="100" width="14" height="370" fill="url(#pillarGradBlue)"/>
+    <!-- هایلایت ستون -->
+    <rect x="-3" y="100" width="6" height="370" fill="#fff" opacity="0.05"/>
+    <!-- خط تقسیم -->
+    <line x1="0" y1="100" x2="0" y2="470" stroke="#000" stroke-width="1" opacity="0.15"/>
+    
+    <!-- ===================== نقطه اتکا ===================== -->
+    <!-- دایره مرکزی (سه‌بعدی) -->
+    <circle cx="0" cy="105" r="22" fill="#c0a868"/>
+    <circle cx="0" cy="105" r="18" fill="#d4b878"/>
+    <circle cx="0" cy="105" r="12" fill="#e0c888"/>
+    <circle cx="-3" cy="102" r="6" fill="#f0dca0" opacity="0.5"/>
+    <!-- حلقه -->
+    <circle cx="0" cy="105" r="20" fill="none" stroke="#a08848" stroke-width="2"/>
+
+    <!-- ===================== بازو ===================== -->
+    <!-- بازوی مایل (چپ پایین‌تر = سنگین‌تر) -->
+    <line x1="-420" y1="140" x2="420" y2="60" stroke="#a08850" stroke-width="2" opacity="0.3"/>
+    <line x1="-420" y1="135" x2="420" y2="55" stroke="url(#armGrad)" stroke-width="12" stroke-linecap="round"/>
+    <!-- هایلایت بازو -->
+    <line x1="-415" y1="132" x2="415" y2="52" stroke="#f0dca0" stroke-width="2" opacity="0.25"/>
+    <!-- سایه بازو -->
+    <line x1="-415" y1="141" x2="415" y2="61" stroke="#000" stroke-width="2" opacity="0.1"/>
+
+    <!-- مفصل‌ها روی بازو -->
+    <circle cx="-420" cy="137" r="8" fill="#d4b878" stroke="#a08848" stroke-width="1.5"/>
+    <circle cx="420" cy="57" r="8" fill="#d4b878" stroke="#a08848" stroke-width="1.5"/>
+    <circle cx="-420" cy="137" r="3" fill="#e0c888"/>
+    <circle cx="420" cy="57" r="3" fill="#e0c888"/>
+
+    <!-- ===================== زنجیرها سمت چپ ===================== -->
+    <g stroke="#c0a868" stroke-width="2.5" fill="none">
+      <line x1="-420" y1="145" x2="-420" y2="260"/>
+      <line x1="-370" y1="139" x2="-370" y2="254"/>
+      <!-- حلقه‌های زنجیر -->
+      <ellipse cx="-420" cy="180" rx="4" ry="8" opacity="0.4"/>
+      <ellipse cx="-420" cy="220" rx="4" ry="8" opacity="0.4"/>
+      <ellipse cx="-370" cy="175" rx="4" ry="8" opacity="0.4"/>
+      <ellipse cx="-370" cy="215" rx="4" ry="8" opacity="0.4"/>
+    </g>
+
+    <!-- ===================== زنجیرها سمت راست ===================== -->
+    <g stroke="#c0a868" stroke-width="2.5" fill="none">
+      <line x1="420" y1="65" x2="420" y2="175"/>
+      <line x1="370" y1="61" x2="370" y2="171"/>
+      <!-- حلقه‌های زنجیر -->
+      <ellipse cx="420" cy="100" rx="4" ry="8" opacity="0.4"/>
+      <ellipse cx="420" cy="140" rx="4" ry="8" opacity="0.4"/>
+      <ellipse cx="370" cy="96" rx="4" ry="8" opacity="0.4"/>
+      <ellipse cx="370" cy="136" rx="4" ry="8" opacity="0.4"/>
+    </g>
+
+    <!-- ===================== کفه چپ (قرمز) ===================== -->
+    <g transform="translate(-395, 255)" filter="url(#shadowMedium)">
+      <!-- کاسه‌ بیضی (سه‌بعدی) -->
+      <path d="M-65,10 C-65,35 -40,55 0,60 C40,55 65,35 65,10" fill="#7f1a1a" opacity="0.7"/>
+      <ellipse cx="0" cy="10" rx="70" ry="20" fill="url(#leftBowlGrad)"/>
+      <!-- هایلایت کاسه -->
+      <ellipse cx="-20" cy="5" rx="25" ry="8" fill="#d04040" opacity="0.2"/>
+
+      <!-- مثلث (کفه مثلثی مثل تصویر) -->
+      <polygon points="0,-140 -80,10 80,10" fill="url(#leftTriGrad)" stroke="#d4b878" stroke-width="2.5"/>
+      <!-- هایلایت مثلث -->
+      <polygon points="0,-140 -40,-65 0,-70" fill="#c02020" opacity="0.15"/>
+      <!-- سایه مثلث -->
+      <polygon points="0,-140 40,-65 80,10 0,10" fill="#000" opacity="0.08"/>
+
+      <!-- نماد چکش و داس -->
+      <g transform="translate(-25, -95)" opacity="0.85">
+        <!-- داس -->
+        <path d="M30,45 C15,25 20,5 40,-5 C55,-10 70,0 65,20 C60,35 45,50 30,45Z" 
+              fill="none" stroke="#f5e6b8" stroke-width="4" stroke-linecap="round"/>
+        <line x1="30" y1="45" x2="12" y2="75" stroke="#f5e6b8" stroke-width="4" stroke-linecap="round"/>
+        <!-- چکش -->
+        <rect x="52" y="15" width="6" height="55" fill="#f5e6b8" rx="2" transform="rotate(-25, 55, 42)"/>
+        <rect x="40" y="8" width="28" height="12" fill="#f5e6b8" rx="3" transform="rotate(-25, 54, 14)"/>
+      </g>
+
+      <!-- نماد برابری -->
+      <g transform="translate(18, -85)" opacity="0.85">
+        <rect x="0" y="0" width="40" height="7" fill="#f5e6b8" rx="2"/>
+        <rect x="0" y="16" width="40" height="7" fill="#f5e6b8" rx="2"/>
+      </g>
+    </g>
+
+    <!-- ===================== کفه راست (آبی) ===================== -->
+    <g transform="translate(395, 170)" filter="url(#shadowMedium)">
+      <!-- کاسه بیضی -->
+      <path d="M-65,10 C-65,35 -40,55 0,60 C40,55 65,35 65,10" fill="#0d2050" opacity="0.7"/>
+      <ellipse cx="0" cy="10" rx="70" ry="20" fill="url(#rightBowlGrad)"/>
+      <ellipse cx="-20" cy="5" rx="25" ry="8" fill="#2a4a8a" opacity="0.2"/>
+
+      <!-- مثلث -->
+      <polygon points="0,-140 -80,10 80,10" fill="url(#rightTriGrad)" stroke="#d4b878" stroke-width="2.5"/>
+      <polygon points="0,-140 -40,-65 0,-70" fill="#2a4a8a" opacity="0.15"/>
+      <polygon points="0,-140 40,-65 80,10 0,10" fill="#000" opacity="0.08"/>
+
+      <!-- نماد دلار -->
+      <text x="0" y="-30" fill="#f5e6b8" font-size="80" font-weight="bold" 
+            font-family="Georgia, serif" text-anchor="middle" opacity="0.85">$</text>
+    </g>
+  </g>
+
+  <!-- ===================== تایم‌لاین ===================== -->
+  <g transform="translate(0, 1085)">
+    <!-- خط اصلی -->
+    <line x1="180" y1="0" x2="1020" y2="0" stroke="url(#timeGold)" stroke-width="2"/>
+    
+    <!-- فلش‌ها و نقاط -->
+    <!-- ۱۷۸۹ -->
+    <g transform="translate(230, 0)">
+      <circle r="5" fill="#d4b878"/>
+      <circle r="2" fill="#f0dca0"/>
+      <text y="-15" fill="#d4b878" font-size="11" text-anchor="middle" opacity="0.6">|</text>
+      <text y="25" fill="#c0a868" font-size="17" font-weight="bold" text-anchor="middle" 
+            font-family="Georgia, serif" opacity="0.8">1789</text>
+    </g>
+    <text x="305" y="4" fill="#c0a868" font-size="16" text-anchor="middle" opacity="0.5">→</text>
+
+    <!-- ۱۸۴۸ -->
+    <g transform="translate(380, 0)">
+      <circle r="5" fill="#d4b878"/>
+      <circle r="2" fill="#f0dca0"/>
+      <text y="25" fill="#c0a868" font-size="17" font-weight="bold" text-anchor="middle" 
+            font-family="Georgia, serif" opacity="0.8">1848</text>
+    </g>
+    <text x="460" y="4" fill="#c0a868" font-size="16" text-anchor="middle" opacity="0.5">→</text>
+
+    <!-- ۱۸۴۱ -->
+    <g transform="translate(540, 0)">
+      <circle r="5" fill="#d4b878"/>
+      <circle r="2" fill="#f0dca0"/>
+      <text y="25" fill="#c0a868" font-size="17" font-weight="bold" text-anchor="middle" 
+            font-family="Georgia, serif" opacity="0.8">1841</text>
+    </g>
+    <text x="610" y="4" fill="#c0a868" font-size="16" text-anchor="middle" opacity="0.5">→</text>
+
+    <!-- ۱۹۱۷ -->
+    <g transform="translate(680, 0)">
+      <circle r="6" fill="#d4b878"/>
+      <circle r="2.5" fill="#f0dca0"/>
+      <text y="25" fill="#c0a868" font-size="17" font-weight="bold" text-anchor="middle" 
+            font-family="Georgia, serif" opacity="0.8">1917</text>
+    </g>
+    <text x="760" y="4" fill="#c0a868" font-size="16" text-anchor="middle" opacity="0.5">→</text>
+
+    <!-- ۱۹۸۹ -->
+    <g transform="translate(840, 0)">
+      <circle r="6" fill="#d4b878"/>
+      <circle r="2.5" fill="#f0dca0"/>
+      <text y="25" fill="#c0a868" font-size="17" font-weight="bold" text-anchor="middle" 
+            font-family="Georgia, serif" opacity="0.8">1989</text>
+    </g>
+    <text x="910" y="4" fill="#c0a868" font-size="16" text-anchor="middle" opacity="0.5">→</text>
+
+    <!-- ۲۰۲۴ -->
+    <g transform="translate(980, 0)">
+      <circle r="5" fill="#d4b878"/>
+      <circle r="2" fill="#f0dca0"/>
+      <text y="25" fill="#c0a868" font-size="17" font-weight="bold" text-anchor="middle" 
+            font-family="Georgia, serif" opacity="0.8">2024</text>
+    </g>
+  </g>
+
+  <!-- ستاره گوشه پایین راست -->
+  <g transform="translate(1130, 1110)" opacity="0.35" filter="url(#glow)">
+    <polygon points="0,-14 4,-5 14,-5 6,2 9,12 0,6 -9,12 -6,2 -14,-5 -4,-5" 
+             fill="#d4b878"/>
+  </g>
+
+  <!-- ===================== وینیت نهایی ===================== -->
+  <rect width="1200" height="1200" fill="url(#vignette)"/>
+
+  <!-- قاب ظریف -->
+  <rect x="8" y="8" width="1184" height="1184" fill="none" stroke="#d4b878" stroke-width="0.5" opacity="0.08" rx="4"/>
+</svg>

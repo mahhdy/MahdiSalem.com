@@ -7,6 +7,7 @@ import ShareButtons from '../../components/ShareButtons.astro';
 import Giscus from '../../components/Giscus.astro';
 import PDFViewer from '../../components/PDFViewer.astro';
 import WidthToggle from '../../components/WidthToggle.astro';
+import ImageSlider from '../../components/ImageSlider.astro';
 import { t, getLocalizedPath, stripLangPrefix } from '../../i18n';
 import { getCollection, render } from 'astro:content';
 import { shouldShowHidden } from '../../lib/hidden';
@@ -181,8 +182,8 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
         </>
       )}
 
-      {/* PDF Only View */}
-      {entry.data.pdfOnly && entry.data.pdfUrl ? (
+      {/* PDF Only View (without slides) */}
+      {entry.data.pdfOnly && entry.data.pdfUrl && !entry.data.hasSlide ? (
         <div class="pdf-only-box mt-8">
            <PDFViewer pdfUrl={entry.data.pdfUrl} title={entry.data.title} lang={lang} />
            <div class="mt-8 flex justify-center">
@@ -198,65 +199,89 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
         </div>
       ) : (
         <>
-      {/* Tab interface if PDF viewer is enabled */}
-      {entry.data.pdfUrl && entry.data.showPdfViewer && (
+      {/* Tab interface if PDF viewer is enabled or hasSlide is true */}
+      {(entry.data.pdfUrl && entry.data.showPdfViewer) || entry.data.hasSlide ? (
         <div class="book-tabs mb-8">
           <div class="flex justify-center mb-6">
-            <div class="inline-flex p-1 bg-surface-dim dark:bg-surface-dark-dim rounded-lg border border-border dark:border-border-dark">
-              <button
-                class="book-tab-btn active px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
-                data-tab="chapters"
-                type="button"
-              >
-                {t('books.chapters_tab', lang)}
-              </button>
-              <button
-                class="book-tab-btn px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
-                data-tab="pdf"
-                type="button"
-              >
-                {t('books.pdf_tab', lang)}
-              </button>
+            <div class="inline-flex p-1 bg-surface-dim dark:bg-surface-dark-dim rounded-lg border border-border dark:border-border-dark flex-wrap justify-center">
+              {!entry.data.pdfOnly && (
+                <button
+                  class="book-tab-btn active px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
+                  data-tab="chapters"
+                  type="button"
+                >
+                  {t('books.chapters_tab', lang)}
+                </button>
+              )}
+              {entry.data.pdfUrl && entry.data.showPdfViewer && (
+                <button
+                  class={`book-tab-btn ${entry.data.pdfOnly ? 'active' : ''} px-6 py-2.5 rounded-md text-sm font-medium transition-colors`}
+                  data-tab="pdf"
+                  type="button"
+                >
+                  {t('books.pdf_tab', lang)}
+                </button>
+              )}
+              {entry.data.hasSlide && entry.data.slideArray && entry.data.slideArray.length > 0 && (
+                <button
+                  class="book-tab-btn px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
+                  data-tab="slides"
+                  type="button"
+                >
+                  {lang === 'fa' ? 'اسلایدها' : 'Slides'}
+                </button>
+              )}
             </div>
           </div>
 
           {/* Chapters Tab */}
-          <div id="chapters-tab" class="book-tab-content active">
-            {chapterList.length > 0 && (
-              <div class="mb-8">
-                <h2 class="text-xl font-bold mb-4">{t('books.toc', lang)}</h2>
-                <ol class="space-y-2">
-                  {chapterList.map((ch: any) => (
-                    <li>
-                      <a
-                        href={`/books/${bookSlugClean}/${ch.slug}`}
-                        class="flex items-center gap-3 p-3 rounded-lg border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline"
-                      >
-                        <span class="text-sm text-text-muted dark:text-text-dark-muted w-8 text-center shrink-0">
-                          {ch.chapterNumber}
-                        </span>
-                        <span class="text-text-base dark:text-text-dark font-medium">{ch.title}</span>
-                      </a>
-                    </li>
-                  ))}
-                </ol>
-              </div>
-            )}
+          {!entry.data.pdfOnly && (
+            <div id="chapters-tab" class="book-tab-content active">
+              {chapterList.length > 0 && (
+                <div class="mb-8">
+                  <h2 class="text-xl font-bold mb-4">{t('books.toc', lang)}</h2>
+                  <ol class="space-y-2">
+                    {chapterList.map((ch: any) => (
+                      <li>
+                        <a
+                          href={`/books/${bookSlugClean}/${ch.slug}`}
+                          class="flex items-center gap-3 p-3 rounded-lg border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline"
+                        >
+                          <span class="text-sm text-text-muted dark:text-text-dark-muted w-8 text-center shrink-0">
+                            {ch.chapterNumber}
+                          </span>
+                          <span class="text-text-base dark:text-text-dark font-medium">{ch.title}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              )}
 
-            <div class="prose mt-8">
-              <Content />
+              <div class="prose mt-8">
+                <Content />
+              </div>
             </div>
-          </div>
+          )}
 
           {/* PDF Tab */}
-          <div id="pdf-tab" class="book-tab-content">
-            <PDFViewer pdfUrl={entry.data.pdfUrl} title={entry.data.title} lang={lang} />
-          </div>
-        </div>
-      )}
+          {entry.data.pdfUrl && entry.data.showPdfViewer && (
+            <div id="pdf-tab" class={`book-tab-content ${entry.data.pdfOnly ? 'active' : ''}`}>
+              <PDFViewer pdfUrl={entry.data.pdfUrl} title={entry.data.title} lang={lang} />
+            </div>
+          )}
 
-      {/* No PDF viewer - show traditional layout */}
-      {(!entry.data.pdfUrl || !entry.data.showPdfViewer) && chapterList.length > 0 && (
+          {/* Slides Tab */}
+          {entry.data.hasSlide && entry.data.slideArray && entry.data.slideArray.length > 0 && (
+            <div id="slides-tab" class="book-tab-content p-2 sm:p-4 bg-surface dark:bg-surface-dark rounded-xl border border-border dark:border-border-dark">
+              <ImageSlider images={entry.data.slideArray} />
+            </div>
+          )}
+        </div>
+      ) : null}
+
+      {/* No PDF viewer and No Slide viewer - show traditional layout */}
+      {(!(entry.data.pdfUrl && entry.data.showPdfViewer) && !entry.data.hasSlide) && chapterList.length > 0 && (
         <div class="mb-8">
           <h2 class="text-xl font-bold mb-4">{t('books.toc', lang)}</h2>
           <ol class="space-y-2">
@@ -277,7 +302,7 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
         </div>
       )}
 
-      {(!entry.data.pdfUrl || !entry.data.showPdfViewer) && entry.data.pdfUrl && (
+      {(!(entry.data.pdfUrl && entry.data.showPdfViewer) && !entry.data.hasSlide) && entry.data.pdfUrl && (
         <a
           href={entry.data.pdfUrl}
           class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-secondary text-white font-medium hover:bg-secondary-light transition-colors no-underline mb-8"
@@ -288,7 +313,7 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
         </a>
       )}
 
-      {(!entry.data.pdfUrl || !entry.data.showPdfViewer) && (
+      {(!(entry.data.pdfUrl && entry.data.showPdfViewer) && !entry.data.hasSlide) && (
         <div class="prose mt-8">
           <Content />
         </div>
@@ -400,7 +425,7 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
 
     // Handle initial hash in URL
     const hash = window.location.hash.slice(1);
-    if (hash === 'chapters' || hash === 'pdf') {
+    if (hash === 'chapters' || hash === 'pdf' || hash === 'slides') {
       const hashButton = document.querySelector(`[data-tab="${hash}"]`);
       if (hashButton) {
         (hashButton as HTMLElement).click();

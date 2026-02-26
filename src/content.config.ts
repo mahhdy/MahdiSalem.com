@@ -14,6 +14,8 @@ const books = defineCollection({
     pdfUrl: z.string().optional(),
     showPdfViewer: z.boolean().default(false),
     pdfOnly: z.boolean().default(false),
+    hasSlide: z.boolean().default(false),
+    slideArray: z.array(z.string()).nullable().optional(),
     publishDate: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
     category: z.union([z.string(), z.array(z.string())]).optional(),
@@ -61,6 +63,8 @@ const articles = defineCollection({
     cardImage: z.enum(['show', 'hidden']).default('show'), // Whether cover image is shown in card/list views
     pdfUrl: z.string().optional(),
     pdfOnly: z.boolean().default(false),
+    hasSlide: z.boolean().default(false),
+    slideArray: z.array(z.string()).nullable().optional(),
     draft: z.boolean().default(false),
     hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
     showInContents: z.boolean().default(true), // Control visibility in All Contents page
@@ -89,6 +93,8 @@ const statements = defineCollection({
     tags: z.array(z.string()).optional(),
     pdfUrl: z.string().optional(),
     pdfOnly: z.boolean().default(false),
+    hasSlide: z.boolean().default(false),
+    slideArray: z.array(z.string()).nullable().optional(),
     draft: z.boolean().default(false),
     hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
     showInContents: z.boolean().default(true), // Control visibility in All Contents page
@@ -109,6 +115,8 @@ const wiki = defineCollection({
     updatedDate: z.coerce.date().optional(),
     draft: z.boolean().default(false),
     hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
+    hasSlide: z.boolean().default(false),
+    slideArray: z.array(z.string()).nullable().optional(),
     showInContents: z.boolean().default(true), // Control visibility in All Contents page
   }),
 });
@@ -150,6 +158,8 @@ const multimedia = defineCollection({
     cardImage: z.enum(['show', 'hidden']).default('show'), // Whether cover image is shown in card/list views
     draft: z.boolean().default(false),
     hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
+    hasSlide: z.boolean().default(false),
+    slideArray: z.array(z.string()).nullable().optional(),
     showInContents: z.boolean().default(true), // Control visibility in All Contents page
   }),
 });
@@ -174,6 +184,8 @@ const dialogues = defineCollection({
     cardImage: z.enum(['show', 'hidden']).default('show'), // Whether cover image is shown in card/list views
     pdfUrl: z.string().optional(),
     pdfOnly: z.boolean().default(false),
+    hasSlide: z.boolean().default(false),
+    slideArray: z.array(z.string()).nullable().optional(),
     draft: z.boolean().default(false),
     hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
     showInContents: z.boolean().default(true), // Control visibility in All Contents page

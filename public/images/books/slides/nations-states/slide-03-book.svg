@@ -1,0 +1,43 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080" xml:lang="fa">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/><stop offset="100%" stop-color="#0D1B2E"/>
+    </linearGradient>
+    <linearGradient id="gld3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8C86A"/><stop offset="100%" stop-color="#D4A84B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg3)"/>
+  <polygon points="0,0 300,0 0,300" fill="#2C5F8A" opacity="0.08"/>
+  <polygon points="1080,1080 780,1080 1080,780" fill="#D4A84B" opacity="0.06"/>
+
+  <g transform="translate(340,60)">
+    <rect x="12" y="12" width="380" height="500" rx="8" fill="#000" opacity="0.25"/>
+    <rect x="0" y="0" width="380" height="500" rx="8" fill="url(#gld3)"/>
+    <rect x="0" y="0" width="28" height="500" rx="8" fill="#B8912F"/>
+    <rect x="48" y="28" width="310" height="444" rx="4" fill="none" stroke="#1B2A4A" stroke-width="1.5"/>
+    <text x="203" y="120" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="30" font-weight="900" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">دولت، ملت</text>
+    <text x="203" y="165" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="30" font-weight="900" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">و تنوع قومی</text>
+    <line x1="90" y1="190" x2="316" y2="190" stroke="#1B2A4A" stroke-width="1.5"/>
+    <circle cx="203" cy="190" r="3.5" fill="#1B2A4A"/>
+    <text x="203" y="235" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="15" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">مبانی نظری</text>
+    <text x="203" y="260" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="15" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">الگوهای تطبیقی</text>
+    <text x="203" y="285" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="15" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">و راهنمای اجرایی برای ایران</text>
+    <text x="203" y="420" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="20" font-weight="bold" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">مهدی سالم</text>
+    <text x="203" y="452" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="14" fill="#1B2A4A">1404</text>
+  </g>
+
+  <text x="540" y="640" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="24" fill="#D4A84B" direction="rtl" unicode-bidi="embed">پژوهشی جامع درباره‌ی</text>
+  <text x="540" y="690" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="21" fill="#8AAFD0" direction="rtl" unicode-bidi="embed">چگونه کشورها تنوع قومی خود را مدیریت می‌کنند؟</text>
+  <text x="540" y="730" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="21" fill="#8AAFD0" direction="rtl" unicode-bidi="embed">چه الگوهایی موفق و چه الگوهایی شکست خورده‌اند؟</text>
+  <text x="540" y="770" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="21" fill="#8AAFD0" direction="rtl" unicode-bidi="embed">ایران چه راهی پیش رو دارد؟</text>
+
+  <rect x="320" y="820" width="440" height="60" rx="30" fill="#D4A84B"/>
+  <text x="540" y="860" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="22" font-weight="bold" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">لینک مطالعه در بیو</text>
+
+  <text x="540" y="950" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="16" fill="#ffffff" opacity="0.35" direction="rtl" unicode-bidi="embed">رایگان — آنلاین — قابل دانلود</text>
+
+  <rect x="0" y="1040" width="1080" height="40" fill="#D4A84B"/>
+  <text x="540" y="1067" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="16" font-weight="bold" fill="#1B2A4A">@mehdisalem</text>
+  <text x="50" y="1015" font-family="Vazirmatn" font-size="14" fill="#D4A84B" opacity="0.5">3/10</text>
+</svg>

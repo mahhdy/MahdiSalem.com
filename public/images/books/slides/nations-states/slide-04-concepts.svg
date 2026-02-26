@@ -1,0 +1,34 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080" xml:lang="fa">
+  <rect width="1080" height="1080" fill="#FAF8F4"/>
+  <rect x="0" y="0" width="1080" height="8" fill="#1B2A4A"/>
+
+  <text x="540" y="90" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="38" font-weight="900" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">سه مفهوم که اشتباه نگیرید</text>
+
+  <rect x="60" y="140" width="960" height="250" rx="16" fill="#1B2A4A"/>
+  <text x="540" y="195" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="50" fill="#D4A84B">🏛️</text>
+  <text x="540" y="245" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="32" font-weight="bold" fill="#D4A84B" direction="rtl" unicode-bidi="embed">دولت</text>
+  <text x="540" y="280" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="16" fill="#D4A84B">State</text>
+  <text x="540" y="320" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="20" fill="#ffffff" direction="rtl" unicode-bidi="embed">نهاد سیاسی با مرز و ارتش و حاکمیت</text>
+  <text x="540" y="355" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="16" fill="#8AAFD0" direction="rtl" unicode-bidi="embed">ماهیت: حقوقی-سیاسی • مثال: جمهوری فرانسه</text>
+
+  <rect x="60" y="410" width="960" height="250" rx="16" fill="#2C5F8A"/>
+  <text x="540" y="465" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="50" fill="#fff">🌍</text>
+  <text x="540" y="515" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="32" font-weight="bold" fill="#ffffff" direction="rtl" unicode-bidi="embed">ملت</text>
+  <text x="540" y="550" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="16" fill="#EDF4FB">Nation</text>
+  <text x="540" y="590" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="20" fill="#EDF4FB" direction="rtl" unicode-bidi="embed">مردمی با هویت مشترک و آرزوی خودحکومتی</text>
+  <text x="540" y="625" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="16" fill="#BBDEFB" direction="rtl" unicode-bidi="embed">ماهیت: فرهنگی-سیاسی • مثال: ملت کُرد</text>
+
+  <rect x="60" y="680" width="960" height="250" rx="16" fill="#3A7D44"/>
+  <text x="540" y="735" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="50" fill="#fff">🧬</text>
+  <text x="540" y="785" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="32" font-weight="bold" fill="#ffffff" direction="rtl" unicode-bidi="embed">قومیت</text>
+  <text x="540" y="820" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="16" fill="#E8F5E9">Ethnicity</text>
+  <text x="540" y="860" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="20" fill="#E8F5E9" direction="rtl" unicode-bidi="embed">گروه فرهنگی با زبان و آداب مشترک</text>
+  <text x="540" y="895" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="16" fill="#A5D6A7" direction="rtl" unicode-bidi="embed">ماهیت: فرهنگی-اجتماعی • مثال: بلوچ‌ها</text>
+
+  <rect x="140" y="958" width="800" height="50" rx="25" fill="#D4A84B" opacity="0.15"/>
+  <text x="540" y="991" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="21" font-weight="bold" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">بیشتر تنش‌ها از عدم تطابق این سه ناشی می‌شود</text>
+
+  <rect x="0" y="1040" width="1080" height="40" fill="#1B2A4A"/>
+  <text x="540" y="1067" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="16" fill="#D4A84B" direction="rtl" unicode-bidi="embed">دولت، ملت و تنوع قومی — مهدی سالم</text>
+  <text x="50" y="1015" font-family="Vazirmatn" font-size="14" fill="#2C5F8A" opacity="0.5">4/10</text>
+</svg>

@@ -1,0 +1,51 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080" xml:lang="fa">
+  <rect width="1080" height="1080" fill="#1B2A4A"/>
+
+  <text x="540" y="80" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="40" font-weight="900" fill="#D4A84B" direction="rtl" unicode-bidi="embed">ایران: سرزمین تنوع</text>
+
+  <circle cx="540" cy="380" r="180" fill="#2C5F8A" opacity="0.8"/>
+  <text x="540" y="365" text-anchor="middle" font-family="Vazirmatn" font-size="50" font-weight="bold" fill="#fff">۵۲٪</text>
+  <text x="540" y="410" text-anchor="middle" font-family="Vazirmatn" font-size="24" fill="#D4A84B" direction="rtl" unicode-bidi="embed">فارس</text>
+
+  <circle cx="270" cy="230" r="65" fill="#C0392B" opacity="0.85"/>
+  <text x="270" y="225" text-anchor="middle" font-family="Vazirmatn" font-size="24" font-weight="bold" fill="#fff">۱۷٪</text>
+  <text x="270" y="255" text-anchor="middle" font-family="Vazirmatn" font-size="15" fill="#FFD0D0" direction="rtl" unicode-bidi="embed">آذری</text>
+
+  <circle cx="810" cy="230" r="52" fill="#3A7D44" opacity="0.85"/>
+  <text x="810" y="225" text-anchor="middle" font-family="Vazirmatn" font-size="22" font-weight="bold" fill="#fff">۹٪</text>
+  <text x="810" y="252" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#E8F5E9" direction="rtl" unicode-bidi="embed">کُرد</text>
+
+  <circle cx="810" cy="500" r="45" fill="#5B9BD5" opacity="0.85"/>
+  <text x="810" y="495" text-anchor="middle" font-family="Vazirmatn" font-size="20" font-weight="bold" fill="#fff">۷٪</text>
+  <text x="810" y="522" text-anchor="middle" font-family="Vazirmatn" font-size="13" fill="#EDF4FB" direction="rtl" unicode-bidi="embed">لُر</text>
+
+  <circle cx="270" cy="510" r="42" fill="#C1724C" opacity="0.85"/>
+  <text x="270" y="505" text-anchor="middle" font-family="Vazirmatn" font-size="20" font-weight="bold" fill="#fff">۶٪</text>
+  <text x="270" y="532" text-anchor="middle" font-family="Vazirmatn" font-size="12" fill="#FFE0D0" direction="rtl" unicode-bidi="embed">گیلک و مازنی</text>
+
+  <circle cx="420" cy="590" r="32" fill="#D4A84B" opacity="0.85"/>
+  <text x="420" y="588" text-anchor="middle" font-family="Vazirmatn" font-size="17" font-weight="bold" fill="#1B2A4A">۳٪</text>
+  <text x="420" y="610" text-anchor="middle" font-family="Vazirmatn" font-size="11" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">عرب</text>
+
+  <circle cx="660" cy="590" r="28" fill="#E8913A" opacity="0.85"/>
+  <text x="660" y="588" text-anchor="middle" font-family="Vazirmatn" font-size="16" font-weight="bold" fill="#fff">۳٪</text>
+  <text x="660" y="608" text-anchor="middle" font-family="Vazirmatn" font-size="11" fill="#FFF3E0" direction="rtl" unicode-bidi="embed">بلوچ</text>
+
+  <circle cx="540" cy="610" r="24" fill="#1B2A4A" stroke="#D4A84B" stroke-width="1.5"/>
+  <text x="540" y="608" text-anchor="middle" font-family="Vazirmatn" font-size="14" font-weight="bold" fill="#D4A84B">۲٪</text>
+  <text x="540" y="628" text-anchor="middle" font-family="Vazirmatn" font-size="10" fill="#D4A84B" direction="rtl" unicode-bidi="embed">ترکمن</text>
+
+  <line x1="220" y1="690" x2="860" y2="690" stroke="#D4A84B" stroke-width="1" opacity="0.4"/>
+
+  <text x="540" y="750" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="30" font-weight="bold" fill="#fff" direction="rtl" unicode-bidi="embed">این تنوع ثروت ماست</text>
+  <text x="540" y="800" text-anchor="middle" font-family="Vazirmatn,Tahoma,sans-serif" font-size="26" fill="#8AAFD0" direction="rtl" unicode-bidi="embed">نه تهدید ما</text>
+
+  <rect x="160" y="850" width="760" height="75" rx="12" fill="#D4A84B" opacity="0.12"/>
+  <rect x="910" y="850" width="5" height="75" rx="2" fill="#D4A84B"/>
+  <text x="540" y="885" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="18" fill="#D4A84B" direction="rtl" unicode-bidi="embed" font-style="italic">تنها چیزی که ما را تهدید می‌کند</text>
+  <text x="540" y="915" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="18" fill="#D4A84B" direction="rtl" unicode-bidi="embed" font-style="italic">نادیده گرفتن تنوعمان است</text>
+
+  <rect x="0" y="1040" width="1080" height="40" fill="#D4A84B"/>
+  <text x="540" y="1067" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="16" font-weight="bold" fill="#1B2A4A" direction="rtl" unicode-bidi="embed">دولت، ملت و تنوع قومی — مهدی سالم</text>
+  <text x="50" y="1015" font-family="Vazirmatn" font-size="14" fill="#D4A84B" opacity="0.5">7/10</text>
+</svg>

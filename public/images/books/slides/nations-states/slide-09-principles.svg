@@ -1,0 +1,71 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg9" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#0D1B2E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg9)"/>
+
+  <text x="540" y="75" text-anchor="middle" font-family="Vazirmatn, IRANSans" font-size="42" font-weight="900" fill="#D4A84B" direction="rtl">📜 ده اصل اصلاحات ساختاری</text>
+
+  <!-- 10 commandments -->
+  <g font-family="Vazirmatn, IRANSans" font-size="21" fill="#ffffff">
+    <circle cx="950" cy="135" r="18" fill="#D4A84B"/>
+    <text x="950" y="142" text-anchor="middle" font-size="20" font-weight="bold" fill="#1B2A4A">۱</text>
+    <text x="630" y="142" text-anchor="middle" direction="rtl"  font-size="32" fill="#E8F5E9">وحدت در تنوع: یکپارچگی + احترام به تفاوت‌ها</text>
+
+    <circle cx="950" cy="225" r="18" fill="#D4A84B"/>
+    <text x="950" y="232" text-anchor="middle" font-size="20" font-weight="bold" fill="#1B2A4A">۲</text>
+    <text x="650" y="232" text-anchor="middle" direction="rtl"  font-size="32">تدریجی‌بودن: عجله دشمن اصلاحات است</text>
+
+    <circle cx="950" cy="315" r="18" fill="#D4A84B"/>
+    <text x="950" y="322" text-anchor="middle" font-size="20" font-weight="bold" fill="#1B2A4A">۳</text>
+    <text x="630" y="322" text-anchor="middle" direction="rtl"  font-size="32">عدالت اقتصادی پیش‌شرط صلح قومی است</text>
+
+    <circle cx="950" cy="405" r="18" fill="#D4A84B"/>
+    <text x="950" y="412" text-anchor="middle" font-size="20" font-weight="bold" fill="#1B2A4A">۴</text>
+    <text x="710" y="412" text-anchor="middle" direction="rtl"  font-size="32">زبان مادری حق است، نه امتیاز</text>
+
+    <circle cx="950" cy="495" r="18" fill="#D4A84B"/>
+    <text x="950" y="502" text-anchor="middle" font-size="20" font-weight="bold" fill="#1B2A4A">۵</text>
+    <text x="650" y="502" text-anchor="middle" direction="rtl"  font-size="32">فدرالیسم نامتقارن بر متقارن ترجیح دارد</text>
+
+    <circle cx="950" cy="585" r="18" fill="#D4A84B"/>
+    <text x="950" y="592" text-anchor="middle" font-size="20" font-weight="bold" fill="#1B2A4A">۶</text>
+    <text x="640" y="592" text-anchor="middle" direction="rtl"  font-size="32">واحدبندی جغرافیایی-فرهنگی نه صرفاً قومی</text>
+
+    <circle cx="950" cy="675" r="18" fill="#D4A84B"/>
+    <text x="950" y="682" text-anchor="middle" font-size="20" font-weight="bold" fill="#1B2A4A">۷</text>
+    <text x="640" y="682" text-anchor="middle" direction="rtl"  font-size="32">مجلس دوم برای صدای مناطق ضروری است</text>
+
+    <circle cx="950" cy="765" r="18" fill="#D4A84B"/>
+    <text x="950" y="772" text-anchor="middle" font-size="20" font-weight="bold" fill="#1B2A4A">۸</text>
+    <text x="680" y="772" text-anchor="middle" direction="rtl"  font-size="32">دادگاه قانون اساسی مستقل داور نهایی</text>
+
+    <circle cx="950" cy="855" r="18" fill="#D4A84B"/>
+    <text x="950" y="862" text-anchor="middle" font-size="20" font-weight="bold" fill="#1B2A4A">۹</text>
+    <text x="685" y="862" text-anchor="middle" direction="rtl"  font-size="32">دموکراسی محلی پایه‌ی دموکراسی ملّی</text>
+
+    <circle cx="950" cy="945" r="18" fill="#D4A84B"/>
+    <text x="950" y="952" text-anchor="middle" font-size="20" font-weight="bold" fill="#1B2A4A">۱۰</text>
+    <text x="660" y="952" text-anchor="middle" direction="rtl"  font-size="32" fill="#D4A84B" font-weight="bold">گفت‌وگوی ملّی جایگزین تحمیل از بالاست</text>
+  </g>
+
+  <!-- Decorative lines between items -->
+  <g stroke="#D4A84B" stroke-width="0.3" opacity="0.3">
+    <line x1="130" y1="180" x2="960" y2="180"/>
+    <line x1="130" y1="270" x2="960" y2="270"/>
+    <line x1="130" y1="360" x2="960" y2="360"/>
+    <line x1="130" y1="450" x2="960" y2="450"/>
+    <line x1="130" y1="540" x2="960" y2="540"/>
+    <line x1="130" y1="630" x2="960" y2="630"/>
+    <line x1="130" y1="720" x2="960" y2="720"/>
+    <line x1="130" y1="810" x2="960" y2="810"/>
+    <line x1="130" y1="900" x2="960" y2="900"/>
+  </g>
+
+  <rect x="0" y="1040" width="1080" height="40" fill="#D4A84B"/>
+  <text x="540" y="1067" text-anchor="middle" font-family="Vazirmatn" font-size="20" font-weight="bold" fill="#1B2A4A" direction="rtl">دولت، ملت و تنوع قومی — مهدی سالم</text>
+  <text x="50" y="1015" font-family="Vazirmatn" font-size="14" fill="#D4A84B" opacity="0.6">9/10</text>
+</svg>

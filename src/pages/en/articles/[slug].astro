@@ -45,6 +45,8 @@ const slug = article.id.replace(/^en\//, "");
   pdfOnly={article.data.pdfOnly}
   pdfUrl={article.data.pdfUrl}
   showPdfViewer={!!article.data.pdfUrl && !article.data.pdfOnly}
+  hasSlide={article.data.hasSlide}
+  slideArray={article.data.slideArray}
 >
   <Content />
 </ArticleLayout>

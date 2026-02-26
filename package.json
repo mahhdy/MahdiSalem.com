@@ -15,6 +15,8 @@
     "content:watch:no-ai": "node scripts/watch-content.mjs --no-ai",
     "content:html": "node scripts/process-content.mjs --html",
     "content:html:file": "node scripts/process-content.mjs --html --file",
+    "svgpng": "node scripts/svg-to-png.mjs",
+    "svgpng:help": "node scripts/svg-to-png.mjs --help",
     "test:mermaid": "node scripts/extract-mermaid-tests.mjs",
     "dev:watch": "npm-run-all --parallel dev content:watch",
     "admin:server": "cd admin/server && npx tsx --watch src/index.ts",
@@ -34,9 +36,15 @@
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.17.1",
     "astro-icon": "^1.1.5",
+    "chalk": "^5.6.2",
     "cheerio": "^1.2.0",
+    "commander": "^14.0.3",
+    "for": "^0.0.1-dev.0",
+    "nice": "^0.7.1",
+    "output": "^0.0.0",
     "pdfjs-dist": "^5.4.624",
     "rimraf": "^6.1.3",
+    "svgpng": "^3.0.0",
     "tailwindcss": "^4.1.18",
     "tsx": "^4.21.0",
     "turndown": "^7.2.2",
@@ -54,7 +62,7 @@
     "openai": "^4.20.0",
     "pagefind": "^1.4.0",
     "pdf-parse": "^1.1.1",
-    "sharp": "^0.33.0",
+    "sharp": "^0.33.5",
     "unzipper": "^0.10.14"
   }
 }
