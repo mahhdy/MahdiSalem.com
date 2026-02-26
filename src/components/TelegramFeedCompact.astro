@@ -1,8 +1,7 @@
 ---
 /**
- * TelegramFeedCompact — 2-column grid view for the homepage.
- * Controlled via siteConfig.telegramView = 'compact'.
- * Shows a brief card per post and links to the full /social page and Telegram channel.
+ * TelegramFeedCompact — Rich but compact 2-column grid for homepage.
+ * Shows thread info, replies, albums, polls, etc. in a compact format.
  */
 import { t } from "../i18n";
 import type { Locale } from "../i18n";
@@ -70,9 +69,9 @@ const channelHandle = channelUsername.replace("@", "");
         d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
       ></path>
     </svg>
-    <span class="text-text-muted dark:text-text-dark-muted text-sm"
-      >{t("telegram.loading", lang)}</span
-    >
+    <span class="text-text-muted dark:text-text-dark-muted text-sm">
+      {t("telegram.loading", lang)}
+    </span>
   </div>
 
   <!-- Error -->
@@ -80,9 +79,9 @@ const channelHandle = channelUsername.replace("@", "");
     {t("telegram.error", lang)}
   </div>
 
-  <!-- 2-column grid of compact cards -->
+  <!-- 2-column grid -->
   <div class="compact-grid grid grid-cols-1 sm:grid-cols-2 gap-4">
-    <!-- Cards injected here by JS -->
+    <!-- Cards injected by JS -->
   </div>
 
   <!-- Footer actions -->
@@ -101,14 +100,56 @@ const channelHandle = channelUsername.replace("@", "");
     >
       <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
         <path
-          d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.258 1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+          d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
         ></path>
       </svg>
       {t("telegram.view_channel", lang)}
     </a>
   </div>
 </div>
+
 <script>
+  // ============================================================
+  // TYPES
+  // ============================================================
+
+  interface MediaItem {
+    type: string;
+    url?: string;
+    thumbnail?: string;
+    title?: string;
+    description?: string;
+    duration?: string;
+    fileName?: string;
+  }
+
+  interface ReplyToPost {
+    id: string;
+    text: string;
+    textHtml?: string;
+    hasMedia?: boolean;
+    mediaType?: string;
+    mediaThumbnail?: string;
+    link: string;
+  }
+
+  interface ThreadPart {
+    current: number;
+    total: number | null;
+  }
+
+  interface Poll {
+    question: string;
+    options: { text: string; voterCount: number }[];
+    totalVoters: number;
+  }
+
+  interface ForwardedFrom {
+    type: string;
+    name: string;
+    url?: string;
+  }
+
   interface TelegramPost {
     id: string;
     text: string;
@@ -116,8 +157,293 @@ const channelHandle = channelUsername.replace("@", "");
     date: number;
     views: number;
     link: string;
-    media?: { type: string; url?: string; thumbnail?: string }[];
+    media?: MediaItem[];
+    hasMedia?: boolean;
+    isAlbum?: boolean;
+    albumCount?: number;
+    forwardedFrom?: ForwardedFrom;
+    replyTo?: { id: string; url: string };
+    replyToPost?: ReplyToPost;
+    poll?: Poll;
+    threadPart?: ThreadPart;
+    isContinuation?: boolean;
+    reactions?: { emoji: string; count: number }[];
+    edited?: boolean;
   }
+
+  // ============================================================
+  // HELPERS
+  // ============================================================
+
+  function escapeHtml(str: string): string {
+    return (str || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+  }
+
+  function truncate(text: string, max: number): string {
+    if (!text || text.length <= max) return text || "";
+    return text.slice(0, max).trim() + "…";
+  }
+
+  function extractTitle(html: string, plain: string): string {
+    // Try to find ## heading or <strong> at start
+    const strongMatch = html.match(/^<strong>([^<]+)<\/strong>/);
+    if (strongMatch) {
+      return strongMatch[1].replace(/^##\s*/, "").trim();
+    }
+
+    const headingMatch = plain.match(/^##\s*(.+?)(?:\n|$)/);
+    if (headingMatch) {
+      return headingMatch[1].trim();
+    }
+
+    return "";
+  }
+
+  function extractQuote(html: string): string {
+    const match = html.match(/<blockquote[^>]*>([\s\S]*?)<\/blockquote>/i);
+    if (match) {
+      // Strip inner HTML
+      const temp = document.createElement("div");
+      temp.innerHTML = match[1];
+      return temp.textContent || "";
+    }
+    return "";
+  }
+
+  function getPreviewText(post: TelegramPost, maxChars: number): string {
+    let text = post.text || "";
+
+    // Remove ## heading if we'll show it separately
+    text = text.replace(/^##\s*.+?\n?/, "").trim();
+
+    // Remove thread markers like (1/2)
+    text = text.replace(/\s*\(?\d+\/\d+\)?$/, "").trim();
+
+    return truncate(text, maxChars);
+  }
+
+  function getMediaBadges(post: TelegramPost, lang: "fa" | "en"): string[] {
+    const badges: string[] = [];
+
+    if (post.isAlbum && post.albumCount) {
+      badges.push(`📷 ${post.albumCount} ${lang === "fa" ? "عکس" : "photos"}`);
+    } else if (post.media) {
+      const types = post.media.map((m) => m.type);
+      if (types.includes("video"))
+        badges.push(lang === "fa" ? "🎬 ویدیو" : "🎬 Video");
+      else if (types.includes("audio"))
+        badges.push(lang === "fa" ? "🎵 صوت" : "🎵 Audio");
+      else if (types.includes("voice"))
+        badges.push(lang === "fa" ? "🎤 پیام صوتی" : "🎤 Voice");
+      else if (types.includes("document"))
+        badges.push(lang === "fa" ? "📎 فایل" : "📎 File");
+      else if (types.includes("sticker")) badges.push("🎨 Sticker");
+    }
+
+    if (post.poll) {
+      badges.push(lang === "fa" ? "📊 نظرسنجی" : "📊 Poll");
+    }
+
+    return badges;
+  }
+
+  // ============================================================
+  // CARD BUILDER
+  // ============================================================
+
+  function buildCompactCard(
+    post: TelegramPost,
+    lang: "fa" | "en",
+  ): HTMLElement {
+    const card = document.createElement("article");
+    card.className = "compact-card";
+    card.setAttribute("dir", lang === "fa" ? "rtl" : "ltr");
+    card.tabIndex = 0;
+
+    // Click handler
+    card.addEventListener("click", (e) => {
+      const target = e.target as HTMLElement;
+      if (target.closest("a")) return;
+      window.open(post.link, "_blank", "noopener,noreferrer");
+    });
+    card.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        window.open(post.link, "_blank", "noopener,noreferrer");
+      }
+    });
+
+    // Format date
+    const date = new Intl.DateTimeFormat(lang === "fa" ? "fa-IR" : "en-US", {
+      month: "short",
+      day: "numeric",
+    }).format(new Date(post.date * 1000));
+
+    // Format views
+    const views = post.views.toLocaleString(lang === "fa" ? "fa-IR" : "en-US");
+
+    // Extract content parts
+    const title = extractTitle(post.textHtml || "", post.text || "");
+    const quote = extractQuote(post.textHtml || "");
+    const previewText = getPreviewText(post, 150);
+    const mediaBadges = getMediaBadges(post, lang);
+
+    // Get thumbnail
+    const thumb = post.media?.find((m) => m.thumbnail || m.url);
+    const linkPreview = post.media?.find((m) => m.type === "linkPreview");
+
+    // Build HTML
+    let html = "";
+
+    // === Top badges row ===
+    const topBadges: string[] = [];
+
+    // Thread part indicator
+    if (post.threadPart) {
+      const partText = post.threadPart.total
+        ? `${post.threadPart.current}/${post.threadPart.total}`
+        : `${lang === "fa" ? "بخش" : "Part"} ${post.threadPart.current}`;
+      topBadges.push(`<span class="badge badge-thread">📑 ${partText}</span>`);
+    }
+
+    // Continuation indicator
+    if (post.isContinuation && !post.threadPart) {
+      topBadges.push(
+        `<span class="badge badge-cont">${lang === "fa" ? "↩️ ادامه" : "↩️ Cont."}</span>`,
+      );
+    }
+
+    // Forward indicator
+    if (post.forwardedFrom) {
+      topBadges.push(
+        `<span class="badge badge-fwd">↪️ ${truncate(post.forwardedFrom.name, 15)}</span>`,
+      );
+    }
+
+    // Edited indicator
+    if (post.edited) {
+      topBadges.push(
+        `<span class="badge badge-edit">${lang === "fa" ? "✏️" : "✏️"}</span>`,
+      );
+    }
+
+    if (topBadges.length > 0) {
+      html += `<div class="badges-row">${topBadges.join("")}</div>`;
+    }
+
+    // === Media thumbnail ===
+    if (thumb && (thumb.thumbnail || thumb.url)) {
+      html += `
+        <div class="card-thumb">
+          <img src="${thumb.thumbnail || thumb.url}" alt="" loading="lazy" />
+          ${post.isAlbum && post.albumCount ? `<span class="thumb-count">+${post.albumCount - 1}</span>` : ""}
+          ${post.media?.find((m) => m.type === "video")?.duration ? `<span class="thumb-duration">${post.media.find((m) => m.type === "video")?.duration}</span>` : ""}
+        </div>
+      `;
+    }
+
+    // === Reply preview (compact) ===
+    if (post.replyToPost) {
+      const replyText = truncate(post.replyToPost.text || "", 60);
+      html += `
+        <div class="reply-preview">
+          <span class="reply-icon">↩</span>
+          <span class="reply-text">${escapeHtml(replyText)}</span>
+        </div>
+      `;
+    } else if (post.replyTo) {
+      html += `
+        <div class="reply-preview">
+          <span class="reply-icon">↩</span>
+          <span class="reply-text">${lang === "fa" ? "پاسخ به پست قبلی" : "Reply to previous"}</span>
+        </div>
+      `;
+    }
+
+    // === Title ===
+    if (title) {
+      html += `<h3 class="card-title">${escapeHtml(truncate(title, 60))}</h3>`;
+    }
+
+    // === Quote preview ===
+    if (quote) {
+      html += `<div class="card-quote">${escapeHtml(truncate(quote, 80))}</div>`;
+    }
+
+    // === Main text ===
+    if (previewText) {
+      html += `<p class="card-text">${escapeHtml(previewText)}</p>`;
+    }
+
+    // === Poll preview ===
+    if (post.poll) {
+      html += `
+        <div class="card-poll">
+          <span class="poll-icon">📊</span>
+          <span class="poll-question">${escapeHtml(truncate(post.poll.question, 50))}</span>
+          <span class="poll-voters">${post.poll.totalVoters} ${lang === "fa" ? "رای" : "votes"}</span>
+        </div>
+      `;
+    }
+
+    // === Link preview (compact) ===
+    if (linkPreview && linkPreview.title) {
+      html += `
+        <div class="card-link">
+          ${linkPreview.thumbnail ? `<img src="${linkPreview.thumbnail}" alt="" />` : `<span class="link-icon">🔗</span>`}
+          <span class="link-title">${escapeHtml(truncate(linkPreview.title, 40))}</span>
+        </div>
+      `;
+    }
+
+    // === Media badges row ===
+    if (mediaBadges.length > 0 && !thumb) {
+      html += `<div class="media-badges">${mediaBadges.map((b) => `<span class="badge badge-media">${b}</span>`).join("")}</div>`;
+    }
+
+    // === Footer ===
+    html += `
+      <div class="card-footer">
+        <span class="card-date">${date}</span>
+        <span class="card-views">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+          </svg>
+          ${views}
+        </span>
+        ${
+          post.reactions && post.reactions.length > 0
+            ? `
+          <span class="card-reactions">
+            ${post.reactions
+              .slice(0, 3)
+              .map((r) => `<span class="reaction">${r.emoji}${r.count}</span>`)
+              .join("")}
+          </span>
+        `
+            : ""
+        }
+        <a 
+          class="card-open" 
+          href="${post.link}" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          title="${lang === "fa" ? "باز کردن در تلگرام" : "Open in Telegram"}"
+        >↗</a>
+      </div>
+    `;
+
+    card.innerHTML = html;
+    return card;
+  }
+
+  // ============================================================
+  // INITIALIZATION
+  // ============================================================
 
   document
     .querySelectorAll(".telegram-compact-feed")
@@ -151,55 +477,7 @@ const channelHandle = channelUsername.replace("@", "");
         }
 
         posts.slice(0, limit).forEach((post) => {
-          const card = document.createElement("div");
-          card.className =
-            "compact-card flex flex-col gap-2 p-4 rounded-xl border border-border dark:border-border-dark bg-surface dark:bg-surface-dark hover:border-[#0088cc] hover:shadow-md transition-all cursor-pointer";
-          card.setAttribute("dir", lang === "fa" ? "rtl" : "ltr");
-          card.onclick = () => window.open(post.link, "_blank");
-
-          const date = new Intl.DateTimeFormat(
-            lang === "fa" ? "fa-IR" : "en-US",
-            {
-              month: "short",
-              day: "numeric",
-            },
-          ).format(new Date(post.date * 1000));
-
-          // Thumbnail
-          const thumb = post.media?.find((m) => m.thumbnail || m.url);
-          let thumbHtml = "";
-          if (thumb) {
-            thumbHtml = `<img src="${thumb.thumbnail || thumb.url}" alt="" class="w-full h-28 object-cover rounded-lg mb-2" loading="lazy" />`;
-          }
-
-          // Helper to escape raw text
-          const escapeHtml = (str: string) =>
-            str
-              .replace(/&/g, "&amp;")
-              .replace(/</g, "&lt;")
-              .replace(/>/g, "&gt;");
-
-          // Text content — Prioritize HTML, fallback to escaped text, and normalize line breaks
-          let htmlContent = post.textHtml || escapeHtml(post.text || "");
-          htmlContent = htmlContent.replace(/\n/g, "<br />");
-
-          card.innerHTML = `
-          ${thumbHtml}
-          <div class="text-sm text-text-base dark:text-text-dark leading-relaxed flex-1 line-clamp-4 whitespace-pre-wrap post-content-compact">${htmlContent || "&nbsp;"}</div>
-          <div class="flex items-center justify-between text-xs text-text-muted dark:text-text-dark-muted mt-1">
-            <span>${date}</span>
-            <span class="flex items-center gap-1">
-              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
-              </svg>
-              ${post.views.toLocaleString(lang === "fa" ? "fa-IR" : "en-US")}
-            </span>
-          </div>
-        `;
-
+          const card = buildCompactCard(post, lang);
           gridEl?.appendChild(card);
         });
       } catch (e) {
@@ -211,42 +489,442 @@ const channelHandle = channelUsername.replace("@", "");
 </script>
 
 <style>
+  /* ============================================================
+     CONTAINER
+     ============================================================ */
   .telegram-compact-feed {
     background-color: var(--color-surface-dim);
     border-radius: 0.75rem;
     padding: 1.5rem;
     border: 1px solid var(--color-border);
   }
+
   html.dark .telegram-compact-feed {
     background-color: var(--color-surface-dark-dim);
     border-color: var(--color-border-dark);
   }
 
-  /* Quotes styling */
-  :global(.post-content-compact blockquote) {
-    border-right: 3px solid var(--color-primary);
-    padding-right: 0.75rem;
-    margin: 0.25rem 0;
-    color: var(--color-text-muted);
-    font-size: 0.9em;
-    font-style: italic;
-  }
-  :global(html[dir="ltr"] .post-content-compact blockquote) {
-    border-right: none;
-    border-left: 3px solid var(--color-primary);
-    padding-right: 0;
-    padding-left: 0.75rem;
-  }
-
-  /* Ensure links inside don't break the blue card issue if they were still there */
-  :global(.post-content-compact a) {
-    color: var(--color-primary);
-    text-decoration: none;
-    pointer-events: none; /* Make them part of the card click */
-  }
-
+  /* ============================================================
+     CARD
+     ============================================================ */
   .compact-card {
-    max-height: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-surface);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    max-height: 320px;
     overflow: hidden;
+  }
+
+  html.dark .compact-card {
+    background-color: var(--color-surface-dark);
+    border-color: var(--color-border-dark);
+  }
+
+  .compact-card:hover {
+    border-color: #0088cc;
+    box-shadow: 0 4px 12px rgba(0, 136, 204, 0.1);
+    transform: translateY(-1px);
+  }
+
+  .compact-card:focus {
+    outline: 2px solid #0088cc;
+    outline-offset: 2px;
+  }
+
+  /* ============================================================
+     BADGES ROW
+     ============================================================ */
+  .badges-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    font-size: 0.625rem;
+    font-weight: 600;
+    padding: 0.15rem 0.4rem;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+  }
+
+  .badge-thread {
+    background-color: #0088cc20;
+    color: #0088cc;
+  }
+
+  .badge-cont {
+    background-color: #10b98120;
+    color: #10b981;
+  }
+
+  .badge-fwd {
+    background-color: #8b5cf620;
+    color: #8b5cf6;
+  }
+
+  .badge-edit {
+    background-color: #f5920020;
+    color: #f59200;
+  }
+
+  .badge-media {
+    background-color: var(--color-surface-dim);
+    color: var(--color-text-muted);
+  }
+
+  html.dark .badge-media {
+    background-color: var(--color-surface-dark-dim);
+    color: var(--color-text-dark-muted);
+  }
+
+  /* ============================================================
+     THUMBNAIL
+     ============================================================ */
+  .card-thumb {
+    position: relative;
+    height: 120px;
+    margin: -0.75rem -0.75rem 0.25rem -0.75rem;
+    overflow: hidden;
+    background-color: var(--color-surface-dim);
+  }
+
+  html.dark .card-thumb {
+    background-color: var(--color-surface-dark-dim);
+  }
+
+  .card-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .thumb-count {
+    position: absolute;
+    top: 0.4rem;
+    inset-inline-end: 0.4rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 0.15rem 0.35rem;
+    border-radius: 0.25rem;
+  }
+
+  .thumb-duration {
+    position: absolute;
+    bottom: 0.4rem;
+    inset-inline-end: 0.4rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-size: 0.6rem;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.2rem;
+    font-family: ui-monospace, monospace;
+  }
+
+  /* ============================================================
+     REPLY PREVIEW
+     ============================================================ */
+  .reply-preview {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+    background-color: var(--color-surface-dim);
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.35rem;
+    border-inline-start: 2px solid #0088cc;
+  }
+
+  html.dark .reply-preview {
+    background-color: var(--color-surface-dark-dim);
+    color: var(--color-text-dark-muted);
+  }
+
+  .reply-icon {
+    color: #0088cc;
+    font-weight: bold;
+  }
+
+  .reply-text {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* ============================================================
+     TITLE
+     ============================================================ */
+  .card-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-text-base);
+    margin: 0;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  html.dark .card-title {
+    color: var(--color-text-dark);
+  }
+
+  /* ============================================================
+     QUOTE
+     ============================================================ */
+  .card-quote {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    padding: 0.35rem 0.5rem;
+    border-radius: 0.3rem;
+    background-color: var(--color-surface-dim);
+    border-inline-start: 2px solid var(--color-text-muted);
+    font-style: italic;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  html.dark .card-quote {
+    background-color: var(--color-surface-dark-dim);
+    color: var(--color-text-dark-muted);
+  }
+
+  /* ============================================================
+     TEXT
+     ============================================================ */
+  .card-text {
+    font-size: 0.8125rem;
+    color: var(--color-text-base);
+    line-height: 1.5;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  html.dark .card-text {
+    color: var(--color-text-dark);
+  }
+
+  /* ============================================================
+     POLL PREVIEW
+     ============================================================ */
+  .card-poll {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+    background-color: var(--color-surface-dim);
+    border-radius: 0.35rem;
+    border: 1px solid var(--color-border);
+  }
+
+  html.dark .card-poll {
+    background-color: var(--color-surface-dark-dim);
+    border-color: var(--color-border-dark);
+  }
+
+  .poll-icon {
+    flex-shrink: 0;
+  }
+
+  .poll-question {
+    flex: 1;
+    font-weight: 500;
+    color: var(--color-text-base);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  html.dark .poll-question {
+    color: var(--color-text-dark);
+  }
+
+  .poll-voters {
+    flex-shrink: 0;
+    font-size: 0.625rem;
+    color: var(--color-text-muted);
+  }
+
+  /* ============================================================
+     LINK PREVIEW
+     ============================================================ */
+  .card-link {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.6875rem;
+    padding: 0.35rem 0.5rem;
+    background-color: var(--color-surface-dim);
+    border-radius: 0.35rem;
+    border: 1px solid var(--color-border);
+  }
+
+  html.dark .card-link {
+    background-color: var(--color-surface-dark-dim);
+    border-color: var(--color-border-dark);
+  }
+
+  .card-link img {
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 0.25rem;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .link-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0088cc;
+    color: white;
+    border-radius: 0.25rem;
+    flex-shrink: 0;
+    font-size: 0.75rem;
+  }
+
+  .link-title {
+    flex: 1;
+    font-weight: 500;
+    color: var(--color-text-base);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  html.dark .link-title {
+    color: var(--color-text-dark);
+  }
+
+  /* ============================================================
+     MEDIA BADGES
+     ============================================================ */
+  .media-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  /* ============================================================
+     FOOTER
+     ============================================================ */
+  .card-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: auto;
+    padding-top: 0.4rem;
+    border-top: 1px solid var(--color-border);
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+  }
+
+  html.dark .card-footer {
+    border-color: var(--color-border-dark);
+    color: var(--color-text-dark-muted);
+  }
+
+  .card-date {
+    flex-shrink: 0;
+  }
+
+  .card-views {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    flex-shrink: 0;
+  }
+
+  .card-reactions {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    flex-shrink: 0;
+  }
+
+  .reaction {
+    font-size: 0.6rem;
+    background-color: var(--color-surface-dim);
+    padding: 0.1rem 0.25rem;
+    border-radius: 0.2rem;
+  }
+
+  html.dark .reaction {
+    background-color: var(--color-surface-dark-dim);
+  }
+
+  .card-open {
+    margin-inline-start: auto;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.75rem;
+    transition: all 0.15s ease;
+  }
+
+  html.dark .card-open {
+    border-color: var(--color-border-dark);
+    color: var(--color-text-dark-muted);
+  }
+
+  .card-open:hover {
+    border-color: #0088cc;
+    color: #0088cc;
+    background-color: rgba(0, 136, 204, 0.08);
+  }
+
+  /* ============================================================
+     RESPONSIVE
+     ============================================================ */
+  @media (max-width: 640px) {
+    .compact-card {
+      padding: 0.6rem;
+      max-height: 280px;
+    }
+
+    .card-thumb {
+      height: 100px;
+      margin: -0.6rem -0.6rem 0.2rem -0.6rem;
+    }
+
+    .card-title {
+      font-size: 0.8125rem;
+    }
+
+    .card-text {
+      font-size: 0.75rem;
+      -webkit-line-clamp: 2;
+    }
   }
 </style>
