@@ -151,13 +151,11 @@ const channelHandle = channelUsername.replace("@", "");
         }
 
         posts.slice(0, limit).forEach((post) => {
-          const card = document.createElement("a");
-          card.href = post.link;
-          card.target = "_blank";
-          card.rel = "noopener noreferrer";
+          const card = document.createElement("div");
           card.className =
-            "compact-card flex flex-col gap-2 p-4 rounded-xl border border-border dark:border-border-dark bg-surface dark:bg-surface-dark hover:border-[#0088cc] hover:shadow-md transition-all no-underline";
+            "compact-card flex flex-col gap-2 p-4 rounded-xl border border-border dark:border-border-dark bg-surface dark:bg-surface-dark hover:border-[#0088cc] hover:shadow-md transition-all cursor-pointer";
           card.setAttribute("dir", lang === "fa" ? "rtl" : "ltr");
+          card.onclick = () => window.open(post.link, "_blank");
 
           const date = new Intl.DateTimeFormat(
             lang === "fa" ? "fa-IR" : "en-US",
@@ -187,7 +185,7 @@ const channelHandle = channelUsername.replace("@", "");
 
           card.innerHTML = `
           ${thumbHtml}
-          <p class="text-sm text-text-base dark:text-text-dark leading-relaxed flex-1 line-clamp-4 whitespace-pre-wrap">${htmlContent || "&nbsp;"}</p>
+          <div class="text-sm text-text-base dark:text-text-dark leading-relaxed flex-1 line-clamp-4 whitespace-pre-wrap post-content-compact">${htmlContent || "&nbsp;"}</div>
           <div class="flex items-center justify-between text-xs text-text-muted dark:text-text-dark-muted mt-1">
             <span>${date}</span>
             <span class="flex items-center gap-1">
@@ -222,5 +220,33 @@ const channelHandle = channelUsername.replace("@", "");
   html.dark .telegram-compact-feed {
     background-color: var(--color-surface-dark-dim);
     border-color: var(--color-border-dark);
+  }
+
+  /* Quotes styling */
+  :global(.post-content-compact blockquote) {
+    border-right: 3px solid var(--color-primary);
+    padding-right: 0.75rem;
+    margin: 0.25rem 0;
+    color: var(--color-text-muted);
+    font-size: 0.9em;
+    font-style: italic;
+  }
+  :global(html[dir="ltr"] .post-content-compact blockquote) {
+    border-right: none;
+    border-left: 3px solid var(--color-primary);
+    padding-right: 0;
+    padding-left: 0.75rem;
+  }
+
+  /* Ensure links inside don't break the blue card issue if they were still there */
+  :global(.post-content-compact a) {
+    color: var(--color-primary);
+    text-decoration: none;
+    pointer-events: none; /* Make them part of the card click */
+  }
+
+  .compact-card {
+    max-height: 280px;
+    overflow: hidden;
   }
 </style>

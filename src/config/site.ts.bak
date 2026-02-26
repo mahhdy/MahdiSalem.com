@@ -12,7 +12,7 @@ export const siteConfig = {
    */
   telegramView: 'compact' as 'full' | 'compact',
   /** Number of columns for article list view: 1 or 2 (default 2) */
-  articleListColumns: 1 as 1 | 2,
+  articleListColumns: 2 as 1 | 2,
 
   /** How many Telegram posts to show on the homepage */
   telegramHomeLimit: 6,
@@ -22,11 +22,20 @@ export const siteConfig = {
    * Leave as empty string '' to hide that platform tab on /social.
    */
   social: {
-    telegram: '@mahhdy57',
+    telegram: '',
     x: 'mahhdy57',
     instagram: 'mahhdy57',
-    facebook: 'mahhdy',
+    facebook: '',
     linkedin: '',
+  },
+  feedLimits: {
+    telegram: 12,
+    x: 15,
+    instagram: 30,
+  },
+  feedIds: {
+    instagram: import.meta.env.PUBLIC_INSTAGRAM_FEED_ID || 'RzC3RaQ4Nsnydi63ycsL',
+    x: import.meta.env.PUBLIC_X_FEED_ID || 'HZm9MUOpxj54TfEk',
   },
 };
 

@@ -34,9 +34,9 @@ siteConfigRoutes.get('/', async (c) => {
             return m ? parseInt(m[1]) : 10;
         };
 
-        // Extract feedUrls
-        const fuMatch = (key: string) => {
-            const m = raw.match(new RegExp(`${key}:\\s*['"]([^'"]*)['"]`, 'm'));
+        // Extract feedIds
+        const fiMatch = (key: string) => {
+            const m = raw.match(new RegExp(`${key}:\\s*(?:import\\.meta\\.env\\.[A-Z_]+\\s*\\|\\|\\s*)?['"]([^'"]*)['"]`, 'm'));
             return m ? m[1] : '';
         };
 
@@ -55,10 +55,12 @@ siteConfigRoutes.get('/', async (c) => {
                 telegram: flMatch('telegram'),
                 x: flMatch('x'),
                 instagram: flMatch('instagram'),
+                linkedin: flMatch('linkedin'),
             },
-            feedUrls: {
-                instagram: fuMatch('instagram'),
-                x: fuMatch('x'),
+            feedIds: {
+                instagram: fiMatch('instagram'),
+                x: fiMatch('x'),
+                linkedin: fiMatch('linkedin'),
             },
         });
     } catch (e) {
@@ -75,7 +77,7 @@ siteConfigRoutes.put('/', async (c) => {
             articleListColumns?: 1 | 2;
             social?: Record<string, string>;
             feedLimits?: Record<string, number>;
-            feedUrls?: Record<string, string>;
+            feedIds?: Record<string, string>;
         }>();
 
         let raw = await readFile(CONFIG_PATH(), 'utf-8');
@@ -84,7 +86,7 @@ siteConfigRoutes.put('/', async (c) => {
 
         if (updates.telegramView) {
             raw = raw.replace(
-                /telegramView:\s*['"][^'"]*['"]\s*as\s*['"]full['"]\s*\|\s*['"]compact['"]/,
+                /telegramView:\s*['"][^'"]*['"]\s*as\s*['"](full|compact)['"]\s*\|\s*['"](full|compact)['"]/,
                 `telegramView: '${updates.telegramView}' as 'full' | 'compact'`
             );
         }
@@ -105,8 +107,10 @@ siteConfigRoutes.put('/', async (c) => {
 
         if (updates.social) {
             for (const [key, val] of Object.entries(updates.social)) {
+                // If it's an import.meta.env line, don't replace with a string literal if it looks like an ENV call
+                // Actually, let's keep it simple: just replace the fallback or the whole line if it matches
                 raw = raw.replace(
-                    new RegExp(`(${key}:\\s*)['"][^'"]*['"]`),
+                    new RegExp(`(${key}:\\s*)(?:import\\.meta\\.env\\.[A-Z_]+\\s*\\|\\|\\s*)?['"][^'"]*['"]`),
                     `$1'${val}'`
                 );
             }
@@ -122,10 +126,10 @@ siteConfigRoutes.put('/', async (c) => {
             }
         }
 
-        if (updates.feedUrls) {
-            for (const [key, val] of Object.entries(updates.feedUrls)) {
+        if (updates.feedIds) {
+            for (const [key, val] of Object.entries(updates.feedIds)) {
                 raw = raw.replace(
-                    new RegExp(`(${key}:\\s*)['"][^'"]*['"]`),
+                    new RegExp(`(${key}:\\s*)(?:import\\.meta\\.env\\.[A-Z_]+\\s*\\|\\|\\s*)?['"][^'"]*['"]`),
                     `$1'${val}'`
                 );
             }

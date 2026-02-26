@@ -1,6 +1,9 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import TelegramFeed from "../../../components/TelegramFeed.astro";
+import InstagramFeed from "../../../components/InstagramFeed.astro";
+import XFeed from "../../../components/XFeed.astro";
+import LinkedInFeed from "../../../components/LinkedInFeed.astro";
 import { siteConfig } from "../../../config/site";
 import { t } from "../../../i18n";
 
@@ -107,40 +110,46 @@ const ICONS: Record<string, string> = {
                     {p.id === "telegram" && (
                         <TelegramFeed lang={lang} limit={20} />
                     )}
-                    {p.id !== "telegram" && (
-                        <div class="text-center py-20 text-text-muted dark:text-text-dark-muted">
-                            <svg
-                                class="w-16 h-16 mx-auto mb-4 opacity-30"
-                                fill="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path d={ICONS[p.id] || ""} />
-                            </svg>
-                            <p class="text-lg mb-3">
-                                {t("social.coming_soon", lang)} ({p.label})
-                            </p>
-                            {p.handle && (
-                                <a
-                                    href={
-                                        p.id === "instagram"
-                                            ? `https://instagram.com/${p.handle}`
-                                            : p.id === "facebook"
-                                              ? `https://facebook.com/${p.handle}`
-                                              : p.id === "x"
-                                                ? `https://x.com/${p.handle}`
-                                                : p.id === "linkedin"
-                                                  ? `https://linkedin.com/in/${p.handle}`
-                                                  : "#"
-                                    }
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="text-primary dark:text-primary-light hover:underline text-sm"
+                    {p.id === "instagram" && <InstagramFeed lang={lang} />}
+                    {p.id === "x" && <XFeed lang={lang} />}
+                    {p.id === "linkedin" && <LinkedInFeed lang={lang} />}
+                    {p.id !== "telegram" &&
+                        p.id !== "instagram" &&
+                        p.id !== "x" &&
+                        p.id !== "linkedin" && (
+                            <div class="text-center py-20 text-text-muted dark:text-text-dark-muted">
+                                <svg
+                                    class="w-16 h-16 mx-auto mb-4 opacity-30"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
                                 >
-                                    View on {p.label} ↗
-                                </a>
-                            )}
-                        </div>
-                    )}
+                                    <path d={ICONS[p.id] || ""} />
+                                </svg>
+                                <p class="text-lg mb-3">
+                                    {t("social.coming_soon", lang)} ({p.label})
+                                </p>
+                                {p.handle && (
+                                    <a
+                                        href={
+                                            p.id === "instagram"
+                                                ? `https://instagram.com/${p.handle}`
+                                                : p.id === "facebook"
+                                                  ? `https://facebook.com/${p.handle}`
+                                                  : p.id === "x"
+                                                    ? `https://x.com/${p.handle}`
+                                                    : p.id === "linkedin"
+                                                      ? `https://linkedin.com/in/${p.handle}`
+                                                      : "#"
+                                        }
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="text-primary dark:text-primary-light hover:underline text-sm"
+                                    >
+                                        View on {p.label} ↗
+                                    </a>
+                                )}
+                            </div>
+                        )}
                 </div>
             ))
         }

@@ -16,9 +16,10 @@ interface SiteConfig {
         x: number;
         instagram: number;
     };
-    feedUrls: {
+    feedIds: {
         instagram: string;
         x: string;
+        linkedin: string;
     };
 }
 
@@ -126,7 +127,7 @@ export default function SiteConfigManager() {
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
                         {Object.entries(config.social).map(([key, handle]) => (
-                            <div key={key} style={{ borderBottom: '1px solid var(--border)', pb: 16, marginBottom: 16 }}>
+                            <div key={key} style={{ borderBottom: '1px solid var(--border)', paddingBottom: 16, marginBottom: 16 }}>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
                                     <span style={{ width: 90, textTransform: 'capitalize', fontWeight: 600 }}>{key}</span>
                                     <input
@@ -159,17 +160,17 @@ export default function SiteConfigManager() {
                                     )}
                                 </div>
 
-                                {/* Feed URLs for X and Instagram */}
-                                {['x', 'instagram'].includes(key) && (
+                                {/* Feed URLs for X, Instagram, LinkedIn */}
+                                {['x', 'instagram', 'linkedin'].includes(key) && (
                                     <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginLeft: 102 }}>
-                                        <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>Feed URL:</span>
+                                        <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>Feed ID:</span>
                                         <input
                                             type="text"
-                                            value={config.feedUrls[key as keyof typeof config.feedUrls] || ''}
-                                            placeholder={`JSON/RSS Feed URL for ${key}`}
+                                            value={config.feedIds[key as keyof typeof config.feedIds] || ''}
+                                            placeholder={`ID for ${key}`}
                                             onChange={e => setConfig({
                                                 ...config,
-                                                feedUrls: { ...config.feedUrls, [key]: e.target.value }
+                                                feedIds: { ...config.feedIds, [key]: e.target.value }
                                             })}
                                             style={{ flex: 1, padding: '4px 8px', borderRadius: 4, border: '1px solid var(--border)', fontSize: 12 }}
                                         />

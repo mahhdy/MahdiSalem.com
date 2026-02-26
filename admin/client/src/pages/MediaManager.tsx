@@ -11,11 +11,14 @@ interface MediaItem {
 
 interface MediaManagerProps {
     onSelect?: (path: string) => void;
+    onSelectMultiple?: (paths: string[]) => void;
     isPicker?: boolean;
+    multiSelect?: boolean;
 }
 
-export default function MediaManager({ onSelect, isPicker = false }: MediaManagerProps) {
+export default function MediaManager({ onSelect, onSelectMultiple, isPicker = false, multiSelect = false }: MediaManagerProps) {
     const [items, setItems] = useState<MediaItem[]>([]);
+    const [selectedPaths, setSelectedPaths] = useState<Set<string>>(new Set());
     const [currentDir, setCurrentDir] = useState('');
     const [loading, setLoading] = useState(true);
     const [copied, setCopied] = useState('');
@@ -40,8 +43,35 @@ export default function MediaManager({ onSelect, isPicker = false }: MediaManage
     const navigate = (item: MediaItem) => {
         if (item.isDirectory) {
             load(currentDir ? `${currentDir}/${item.name}` : item.name);
-        } else if (isPicker && onSelect) {
-            onSelect(item.path);
+            setSelectedPaths(new Set()); // Reset selection when navigating
+        } else if (isPicker) {
+            if (multiSelect) {
+                const next = new Set(selectedPaths);
+                if (next.has(item.path)) next.delete(item.path);
+                else next.add(item.path);
+                setSelectedPaths(next);
+            } else if (onSelect) {
+                onSelect(item.path);
+            }
+        }
+    };
+
+    const handleSelectAll = () => {
+        const next = new Set(selectedPaths);
+        const filesInDir = items.filter(i => !i.isDirectory);
+        const allSelected = filesInDir.every(f => next.has(f.path));
+
+        if (allSelected) {
+            filesInDir.forEach(f => next.delete(f.path));
+        } else {
+            filesInDir.forEach(f => next.add(f.path));
+        }
+        setSelectedPaths(next);
+    };
+
+    const handleSubmitMulti = () => {
+        if (onSelectMultiple) {
+            onSelectMultiple(Array.from(selectedPaths));
         }
     };
 
@@ -146,8 +176,20 @@ export default function MediaManager({ onSelect, isPicker = false }: MediaManage
 
             {isPicker && (
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
-                    <h2 style={{ fontSize: '1rem', fontWeight: 600 }}>Select Image</h2>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                        <h2 style={{ fontSize: '1rem', fontWeight: 600 }}>{multiSelect ? 'Select Files' : 'Select Image'}</h2>
+                        {multiSelect && !loading && items.some(i => !i.isDirectory) && (
+                            <button className="btn btn-secondary" style={{ padding: '2px 8px', fontSize: '0.7rem' }} onClick={handleSelectAll}>
+                                {items.filter(i => !i.isDirectory).every(f => selectedPaths.has(f.path)) ? 'Deselect All' : 'Select All Files'}
+                            </button>
+                        )}
+                    </div>
                     <div style={{ display: 'flex', gap: 8 }}>
+                        {multiSelect && selectedPaths.size > 0 && (
+                            <button className="btn btn-primary" onClick={handleSubmitMulti} style={{ padding: '4px 12px', fontSize: '0.8rem' }}>
+                                Use {selectedPaths.size} Selected
+                            </button>
+                        )}
                         <input
                             type="file"
                             ref={fileInputRef}
@@ -158,7 +200,7 @@ export default function MediaManager({ onSelect, isPicker = false }: MediaManage
                             className="btn btn-primary"
                             onClick={() => fileInputRef.current?.click()}
                             disabled={uploading}
-                            style={{ padding: '4px 12px', fontSize: '0.8rem' }}
+                            style={{ padding: '4px 12px', fontSize: '0.8rem', background: 'var(--bg-tertiary)', color: 'var(--text-primary)', border: '1px solid var(--border)' }}
                         >
                             {uploading ? '...' : 'Upload'}
                         </button>
@@ -220,17 +262,22 @@ export default function MediaManager({ onSelect, isPicker = false }: MediaManage
                             key={item.name}
                             onClick={() => navigate(item)}
                             style={{
-                                background: 'var(--bg-card)',
-                                border: '1px solid var(--border)',
+                                background: selectedPaths.has(item.path) ? 'hsla(var(--accent-hsl), 0.1)' : 'var(--bg-card)',
+                                border: selectedPaths.has(item.path) ? '2px solid var(--accent)' : '1px solid var(--border)',
                                 borderRadius: 'var(--radius-md)',
-                                padding: 14,
+                                padding: selectedPaths.has(item.path) ? 13 : 14,
                                 cursor: 'pointer',
                                 transition: 'all 150ms ease',
                                 position: 'relative',
                             }}
-                            onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = 'var(--border-hover)'; }}
-                            onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = 'var(--border)'; }}
+                            onMouseEnter={(e) => { if (!selectedPaths.has(item.path)) e.currentTarget.style.borderColor = 'var(--border-hover)'; }}
+                            onMouseLeave={(e) => { if (!selectedPaths.has(item.path)) e.currentTarget.style.borderColor = 'var(--border)'; }}
                         >
+                            {selectedPaths.has(item.path) && (
+                                <div style={{ position: 'absolute', top: -8, right: -8, background: 'var(--accent)', color: 'white', borderRadius: '50%', width: 20, height: 20, display: 'flex', alignItems: 'center', justifyItems: 'center', fontSize: '0.7rem', fontWeight: 'bold', zIndex: 10, justifyContent: 'center' }}>
+                                    ✓
+                                </div>
+                            )}
                             <div style={{ fontSize: '1.5rem', marginBottom: 8, textAlign: 'center' }}>
                                 {typeIcons[item.type] || '📋'}
                             </div>

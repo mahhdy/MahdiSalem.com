@@ -167,6 +167,8 @@ export default function ContentEditor() {
     // Image Picker State
     const [showPicker, setShowPicker] = useState(false);
     const [activePickerField, setActivePickerField] = useState<string | null>(null);
+    const [isMultiPicker, setIsMultiPicker] = useState(false);
+    const [multiPickerMode, setMultiPickerMode] = useState<'add' | 'replace'>('add');
 
     // AI Tagging State
     const [showAiModal, setShowAiModal] = useState(false);
@@ -317,8 +319,10 @@ export default function ContentEditor() {
         setFrontmatter((prev) => ({ ...prev, [key]: value }));
     };
 
-    const openPicker = (key: string) => {
+    const openPicker = (key: string, multi = false, mode: 'add' | 'replace' = 'add') => {
         setActivePickerField(key);
+        setIsMultiPicker(multi);
+        setMultiPickerMode(mode);
         setShowPicker(true);
     };
 
@@ -326,6 +330,25 @@ export default function ContentEditor() {
         if (activePickerField) {
             updateField(activePickerField, path);
         }
+        setShowPicker(false);
+        setActivePickerField(null);
+    };
+
+    const handlePickMultiple = (paths: string[]) => {
+        if (!activePickerField) return;
+
+        const current = Array.isArray(frontmatter[activePickerField])
+            ? (frontmatter[activePickerField] as string[])
+            : [];
+
+        if (multiPickerMode === 'replace') {
+            updateField(activePickerField, paths);
+        } else {
+            // Add unique paths
+            const next = [...current, ...paths.filter(p => !current.includes(p))];
+            updateField(activePickerField, next);
+        }
+
         setShowPicker(false);
         setActivePickerField(null);
     };
@@ -542,7 +565,12 @@ export default function ContentEditor() {
                         className="modal-content"
                         onClick={(e) => e.stopPropagation()}
                     >
-                        <MediaManager isPicker onSelect={handlePickImage} />
+                        <MediaManager
+                            isPicker
+                            multiSelect={isMultiPicker}
+                            onSelect={handlePickImage}
+                            onSelectMultiple={handlePickMultiple}
+                        />
                         <div style={{ marginTop: 16, textAlign: 'right' }}>
                             <button
                                 className="btn btn-secondary"
@@ -698,7 +726,7 @@ export default function ContentEditor() {
                                 field={field}
                                 value={frontmatter[field.key]}
                                 onChange={(v) => updateField(field.key, v)}
-                                onOpenPicker={() => openPicker(field.key)}
+                                onOpenPicker={(multi, mode) => openPicker(field.key, multi, mode)}
                             />
                         ))}
                     </CollapsibleSection>
@@ -1101,7 +1129,7 @@ function FieldEditor({
     field: FieldDef;
     value: unknown;
     onChange: (v: unknown) => void;
-    onOpenPicker: () => void;
+    onOpenPicker: (multi?: boolean, mode?: 'add' | 'replace') => void;
 }) {
     const baseStyle = {
         width: '100%',
@@ -1138,7 +1166,7 @@ function FieldEditor({
                 />
             )}
 
-            {(field.type === 'image' || field.type === 'file') && (
+            {field.type === 'image' && (
                 <div style={{ display: 'flex', gap: 6 }}>
                     <input
                         type="text"
@@ -1149,10 +1177,68 @@ function FieldEditor({
                     <button
                         className="btn btn-secondary"
                         style={{ padding: '8px 12px', fontSize: '0.75rem' }}
-                        onClick={onOpenPicker}
+                        onClick={() => onOpenPicker(false)}
                     >
-                        {field.type === 'image' ? '🖼️ Select' : '📁 Select'}
+                        🖼️ Select
                     </button>
+                </div>
+            )}
+
+            {field.type === 'file' && (
+                <div style={{ display: 'flex', gap: 6 }}>
+                    <input
+                        type="text"
+                        style={{ ...baseStyle, flex: 1 }}
+                        value={String(value || '')}
+                        onChange={(e) => onChange(e.target.value)}
+                    />
+                    <button
+                        className="btn btn-secondary"
+                        style={{ padding: '8px 12px', fontSize: '0.75rem' }}
+                        onClick={() => onOpenPicker(false)}
+                    >
+                        📁 Select
+                    </button>
+                </div>
+            )}
+
+            {field.type === 'tags' && field.key === 'slideArray' && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                    <div style={{ display: 'flex', gap: 6 }}>
+                        <button
+                            className="btn btn-secondary"
+                            style={{ flex: 1, fontSize: '0.75rem' }}
+                            onClick={() => onOpenPicker(true, 'add')}
+                        >
+                            ➕ Add Files from Folder
+                        </button>
+                        <button
+                            className="btn btn-secondary"
+                            style={{ flex: 1, fontSize: '0.75rem' }}
+                            onClick={() => onOpenPicker(true, 'replace')}
+                        >
+                            🔄 Replace All from Folder
+                        </button>
+                    </div>
+                    <textarea
+                        style={{ ...baseStyle, minHeight: 60, fontSize: '0.75rem' }}
+                        value={Array.isArray(value) ? value.join(', ') : String(value || '')}
+                        placeholder="path1, path2..."
+                        onChange={(e) => onChange(e.target.value.split(',').map(s => s.trim()).filter(Boolean))}
+                    />
+                    {Array.isArray(value) && value.length > 0 && (
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4 }}>
+                            {value.map((p, i) => (
+                                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 4, background: 'var(--bg-tertiary)', padding: '2px 6px', borderRadius: 4, fontSize: '0.7rem' }}>
+                                    <span>{String(p).split('/').pop()}</span>
+                                    <button
+                                        style={{ background: 'none', border: 'none', color: 'var(--danger)', cursor: 'pointer', padding: 0 }}
+                                        onClick={() => onChange(value.filter((_, idx) => idx !== i))}
+                                    >✕</button>
+                                </div>
+                            ))}
+                        </div>
+                    )}
                 </div>
             )}
 
@@ -1227,7 +1313,7 @@ function FieldEditor({
                 </select>
             )}
 
-            {field.type === 'tags' && (
+            {field.type === 'tags' && field.key !== 'slideArray' && (
                 <input
                     type="text"
                     style={baseStyle}

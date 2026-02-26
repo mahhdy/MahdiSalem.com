@@ -26,16 +26,18 @@ export const siteConfig = {
     x: 'mahhdy57',
     instagram: 'mahhdy57',
     facebook: 'mahhdy',
-    linkedin: '',
+    linkedin: 'mahhdy',
   },
   feedLimits: {
-    telegram: 6,
-    x: 10,
-    instagram: 12,
+    telegram: 12,
+    x: 15,
+    instagram: 30,
+    linkedin: 10,
   },
-  feedUrls: {
-    instagram: 'https://feeds.behold.so/RzC3RaQ4Nsnydi63ycsL',
-    x: 'https://rss.app/feeds/HZm9MUOpxj54TfEk.xml',
+  feedIds: {
+    instagram: import.meta.env.PUBLIC_INSTAGRAM_FEED_ID || 'RzC3RaQ4Nsnydi63ycsL',
+    x: import.meta.env.PUBLIC_X_FEED_ID || 'HZm9MUOpxj54TfEk',
+    linkedin: import.meta.env.PUBLIC_LINKEDIN_FEED_ID || '',
   },
 };
 
