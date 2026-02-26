@@ -1,8 +1,8 @@
 ---
 /**
- * TelegramFeed Component - Enhanced with media support
+ * TelegramFeed Component - Merged version
+ * Richness from "TelegramFeed- Rich" with the Look & Feel of the "Original"
  */
-
 import { t } from "../i18n";
 import type { Locale } from "../i18n";
 
@@ -26,7 +26,7 @@ const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || "@mahhdy57";
   data-lang={lang}
   dir={lang === "fa" ? "rtl" : "ltr"}
 >
-  <div class="feed-header flex items-center justify-between mb-6">
+  <div class="feed-header flex items-center justify-between mb-8">
     <h2 class="text-2xl font-bold flex items-center gap-3">
       <svg
         class="w-7 h-7 text-[#0088cc]"
@@ -43,9 +43,9 @@ const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || "@mahhdy57";
 
   <!-- Loading State -->
   <div class="feed-loading">
-    <div class="flex items-center justify-center py-12">
+    <div class="flex items-center justify-center py-20">
       <svg
-        class="animate-spin h-8 w-8 text-primary dark:text-primary-light"
+        class="animate-spin h-8 w-8 text-[#0088cc]"
         fill="none"
         viewBox="0 0 24 24"
       >
@@ -70,55 +70,33 @@ const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || "@mahhdy57";
 
   <!-- Error State -->
   <div class="feed-error hidden">
-    <div class="flex items-center justify-center py-12">
-      <svg
-        class="h-8 w-8 text-red-500 ml-3"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
+    <div class="flex flex-col items-center justify-center py-20 text-center">
+      <p class="text-red-500 mb-4">{t("telegram.error", lang)}</p>
+      <button class="retry-btn text-sm text-[#0088cc] hover:underline"
+        >Retry</button
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-      </svg>
-      <p class="text-red-500">{t("telegram.error", lang)}</p>
     </div>
   </div>
 
   <!-- Posts Container -->
-  <div class="feed-posts space-y-6">
+  <div class="feed-posts space-y-8">
     <!-- Posts will be injected here -->
   </div>
 
   <!-- View Channel Button -->
   {
     channelUsername && (
-      <div class="text-center mt-8">
+      <div class="text-center mt-12">
         <a
           href={`https://t.me/${channelUsername.replace("@", "")}`}
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[#0088cc] text-white hover:bg-[#0077b3] transition-colors font-medium"
+          class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-[#0088cc] text-white hover:bg-[#0077b3] transition-all font-semibold shadow-lg shadow-[#0088cc]/20"
         >
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
             <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
           </svg>
           {t("telegram.view_channel", lang)}
-          <svg
-            class="w-4 h-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-            />
-          </svg>
         </a>
       </div>
     )
@@ -126,6 +104,46 @@ const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || "@mahhdy57";
 </div>
 
 <script>
+  // ============================================================
+  // TYPES
+  // ============================================================
+
+  interface MediaItem {
+    type: string;
+    url?: string;
+    thumbnail?: string;
+    title?: string;
+    description?: string;
+    duration?: string;
+    fileName?: string;
+    fileSize?: string;
+    mimeType?: string;
+  }
+
+  interface ReplyToPost {
+    id: string;
+    text: string;
+    hasMedia?: boolean;
+    mediaType?: string;
+    link: string;
+  }
+
+  interface ThreadPart {
+    current: number;
+    total: number | null;
+  }
+
+  interface Poll {
+    question: string;
+    options: { text: string; voterCount: number }[];
+    totalVoters: number;
+  }
+
+  interface ForwardedFrom {
+    name: string;
+    url?: string;
+  }
+
   interface TelegramPost {
     id: string;
     text: string;
@@ -135,29 +153,217 @@ const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || "@mahhdy57";
     link: string;
     media?: MediaItem[];
     hasMedia?: boolean;
-    forwardedFrom?: { url: string; name: string };
-    replyTo?: { url: string; author: string; text: string };
+    isAlbum?: boolean;
+    albumCount?: number;
+    forwardedFrom?: ForwardedFrom;
+    replyTo?: { id: string; url: string; author?: string; text?: string };
+    replyToPost?: ReplyToPost;
+    poll?: Poll;
+    threadPart?: ThreadPart;
+    isContinuation?: boolean;
+    reactions?: { emoji: string; count: number }[];
+    edited?: boolean;
   }
 
-  interface MediaItem {
-    type:
-      | "photo"
-      | "video"
-      | "audio"
-      | "voice"
-      | "document"
-      | "sticker"
-      | "linkPreview"
-      | "roundvideo";
-    url?: string;
-    thumbnail?: string;
-    title?: string;
-    duration?: string;
-    fileName?: string;
-    fileSize?: string;
-    description?: string;
-    embedUrl?: string;
+  // ============================================================
+  // HELPERS
+  // ============================================================
+
+  function escapeHtml(str: string): string {
+    return (str || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
   }
+
+  function formatTime(timestamp: number, lang: "fa" | "en"): string {
+    return new Intl.DateTimeFormat(lang === "fa" ? "fa-IR" : "en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    }).format(new Date(timestamp * 1000));
+  }
+
+  // ============================================================
+  // CARD BUILDER
+  // ============================================================
+
+  function createPostCard(post: TelegramPost, lang: "fa" | "en"): HTMLElement {
+    const card = document.createElement("article");
+    card.className =
+      "post-card p-6 rounded-2xl bg-surface dark:bg-surface-dark border border-border dark:border-border-dark shadow-sm hover:shadow-md transition-all";
+    card.setAttribute("dir", lang === "fa" ? "rtl" : "ltr");
+
+    let html = "";
+
+    // 1. TOP META - Date and Views
+    const date = formatTime(post.date, lang);
+    const views = post.views.toLocaleString(lang === "fa" ? "fa-IR" : "en-US");
+
+    html += `
+      <div class="post-meta text-xs text-text-muted dark:text-text-dark-muted mb-4 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <span class="flex items-center gap-1.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            ${date}
+          </span>
+          <span class="flex items-center gap-1.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+            ${views}
+          </span>
+        </div>
+        <span class="opacity-50">#${post.id}</span>
+      </div>
+    `;
+
+    // 2. BADGES row
+    const badges = [];
+    if (post.threadPart)
+      badges.push({
+        color: "thread",
+        text: `📑 ${post.threadPart.current}/${post.threadPart.total || ""}`,
+      });
+    if (post.forwardedFrom)
+      badges.push({
+        color: "fwd",
+        text: `↪️ ${lang === "fa" ? "فوروارد" : "Fwd"}: ${post.forwardedFrom.name}`,
+      });
+    if (post.edited)
+      badges.push({
+        color: "edit",
+        text: `✏️ ${lang === "fa" ? "ویرایش" : "Edited"}`,
+      });
+
+    if (badges.length > 0) {
+      html += `<div class="flex flex-wrap gap-2 mb-4">
+        ${badges.map((b) => `<span class="badge-${b.color} px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider">${b.text}</span>`).join("")}
+      </div>`;
+    }
+
+    // 3. REPLY Box (Grey Area)
+    if (post.replyToPost || post.replyTo) {
+      const author = post.replyTo?.author || "Prev Post";
+      const text = post.replyToPost?.text || post.replyTo?.text || "";
+      html += `
+        <div class="reply-box bg-surface-dim dark:bg-surface-dark-dim border-r-4 border-[#0088cc] p-3 rounded-lg mb-4 text-sm">
+          <div class="text-[#0088cc] font-bold mb-1">${author}</div>
+          <p class="text-text-muted dark:text-text-dark-muted line-clamp-1">${escapeHtml(text)}</p>
+        </div>
+      `;
+    }
+
+    // 4. MAIN MEDIA
+    if (post.media && post.media.length > 0) {
+      html += `<div class="post-media mb-5 space-y-3">`;
+      post.media.forEach((m) => {
+        if (m.type === "photo") {
+          html += `<a href="${post.link}" target="_blank" class="block rounded-xl overflow-hidden shadow-sm">
+                    <img src="${m.url || m.thumbnail}" class="w-full object-cover max-h-[500px]" loading="lazy" />
+                  </a>`;
+        } else if (m.type === "video") {
+          html += `<div class="rounded-xl overflow-hidden bg-black aspect-video">
+                    <video controls class="w-full h-full" poster="${m.thumbnail || ""}">
+                      <source src="${m.url}" type="video/mp4" />
+                    </video>
+                  </div>`;
+        } else if (m.type === "document") {
+          html += `<a href="${post.link}" target="_blank" class="flex items-center gap-3 p-4 bg-surface-dim dark:bg-surface-dark-dim rounded-xl border border-border/50">
+                    <div class="w-12 h-12 bg-[#0088cc]/10 text-[#0088cc] flex items-center justify-center rounded-lg">
+                      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                      <div class="font-bold truncate">${m.fileName || "File"}</div>
+                      <div class="text-xs text-text-muted">${m.fileSize || ""}</div>
+                    </div>
+                  </a>`;
+        } else if (m.type === "linkPreview") {
+          html += `<a href="${m.url}" target="_blank" class="flex gap-4 p-4 bg-surface-dim dark:bg-surface-dark-dim rounded-xl border border-border/50">
+                    ${m.thumbnail ? `<img src="${m.thumbnail}" class="w-20 h-20 object-cover rounded-lg flex-shrink-0" />` : ""}
+                    <div class="flex-1 min-w-0">
+                      <div class="text-[#0088cc] font-bold truncate mb-1">${m.title || ""}</div>
+                      <p class="text-sm text-text-muted line-clamp-2">${m.description || ""}</p>
+                    </div>
+                  </a>`;
+        }
+      });
+      html += `</div>`;
+    }
+
+    // 5. POLL
+    if (post.poll) {
+      html += `
+        <div class="poll-box bg-surface-dim dark:bg-surface-dark-dim p-5 rounded-2xl border border-border/50 mb-5">
+          <div class="flex items-center gap-2 text-[#0088cc] mb-3 font-bold">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+            ${post.poll.question}
+          </div>
+          <div class="space-y-2">
+            ${post.poll.options
+              .map((o) => {
+                const per = Math.round(
+                  (o.voterCount / (post.poll?.totalVoters || 1)) * 100,
+                );
+                return `<div class="relative h-10 bg-surface dark:bg-surface-dark rounded-lg flex items-center px-4 overflow-hidden border border-border/20">
+                <div class="absolute inset-y-0 left-0 bg-[#0088cc]/10" style="width: ${per}%"></div>
+                <span class="relative flex-1 text-sm font-medium z-1">${o.text}</span>
+                <span class="relative text-sm font-bold text-[#0088cc] z-1">${per}%</span>
+              </div>`;
+              })
+              .join("")}
+          </div>
+          <div class="mt-4 text-center text-xs text-text-muted">
+            ${post.poll.totalVoters} ${lang === "fa" ? "رای" : "votes"}
+          </div>
+        </div>
+      `;
+    }
+
+    // 6. MAIN TEXT (White Area)
+    if (post.textHtml || post.text) {
+      // Prioritize HTML. We use whitespace-pre-wrap to respect \n from the worker.
+      let content = post.textHtml || escapeHtml(post.text);
+      html += `<div class="post-content text-base md:text-lg leading-relaxed mb-6 whitespace-pre-wrap">${content}</div>`;
+    }
+
+    // 7. REACTIONS
+    if (post.reactions && post.reactions.length > 0) {
+      html += `<div class="flex flex-wrap gap-2 mb-6">
+        ${post.reactions
+          .slice(0, 8)
+          .map(
+            (r) =>
+              `<span class="bg-surface-dim dark:bg-surface-dark-dim px-3 py-1 rounded-full text-sm border border-border/30">${r.emoji} ${r.count}</span>`,
+          )
+          .join("")}
+      </div>`;
+    }
+
+    // 8. FOOTER - View on Telegram
+    html += `
+      <div class="pt-5 border-t border-border/50 flex items-center justify-between">
+        <a href="${post.link}" target="_blank" rel="noopener noreferrer" class="text-[#0088cc] font-bold flex items-center gap-1.5 hover:underline decoration-2 underline-offset-4">
+          ${lang === "fa" ? "مشاهده در تلگرام" : "View on Telegram"}
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+    `;
+
+    card.innerHTML = html;
+    return card;
+  }
+
+  // ============================================================
+  // INITIALIZATION
+  // ============================================================
 
   document.querySelectorAll(".telegram-feed").forEach(async (container) => {
     const workerUrl = container.getAttribute("data-worker-url");
@@ -167,346 +373,120 @@ const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || "@mahhdy57";
     const loadingEl = container.querySelector(".feed-loading") as HTMLElement;
     const errorEl = container.querySelector(".feed-error") as HTMLElement;
     const postsEl = container.querySelector(".feed-posts") as HTMLElement;
+    const retryBtn = container.querySelector(".retry-btn");
 
-    if (!workerUrl) {
-      loadingEl.classList.add("hidden");
-      errorEl.classList.remove("hidden");
-      return;
-    }
+    async function loadFeed() {
+      if (!workerUrl) return;
+      loadingEl.classList.remove("hidden");
+      errorEl.classList.add("hidden");
+      postsEl.innerHTML = "";
 
-    try {
-      const response = await fetch(workerUrl);
+      try {
+        const response = await fetch(workerUrl);
+        if (!response.ok) throw new Error();
+        const posts: TelegramPost[] = await response.json();
 
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
+        loadingEl.classList.add("hidden");
+        if (!posts || posts.length === 0) throw new Error();
 
-      const posts: TelegramPost[] = await response.json();
-
-      loadingEl.classList.add("hidden");
-
-      if (!Array.isArray(posts) || posts.length === 0) {
+        posts.slice(0, limit).forEach((post) => {
+          postsEl.appendChild(createPostCard(post, lang));
+        });
+      } catch (err) {
+        loadingEl.classList.add("hidden");
         errorEl.classList.remove("hidden");
-        errorEl.querySelector("p")!.textContent =
-          lang === "fa" ? "پستی یافت نشد" : "No posts found";
-        return;
       }
-
-      posts.slice(0, limit).forEach((post) => {
-        const postCard = createPostCard(post, lang);
-        postsEl.appendChild(postCard);
-      });
-    } catch (error) {
-      console.error("Telegram feed error:", error);
-      loadingEl.classList.add("hidden");
-      errorEl.classList.remove("hidden");
     }
+
+    retryBtn?.addEventListener("click", loadFeed);
+    loadFeed();
   });
-
-  function createPostCard(post: TelegramPost, lang: "fa" | "en"): HTMLElement {
-    const card = document.createElement("article");
-    card.className =
-      "post-card p-5 rounded-lg bg-surface dark:bg-surface-dark border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-all hover:shadow-md";
-    card.setAttribute("dir", lang === "fa" ? "rtl" : "ltr");
-
-    // Format date
-    const date = new Date(post.date * 1000);
-    const formattedDate = new Intl.DateTimeFormat(
-      lang === "fa" ? "fa-IR" : "en-US",
-      {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-      },
-    ).format(date);
-
-    // Format views
-    const formattedViews = post.views.toLocaleString(
-      lang === "fa" ? "fa-IR" : "en-US",
-    );
-
-    // Build card HTML
-    let html = "";
-
-    // Forwarded from
-    if (post.forwardedFrom) {
-      html += `
-        <div class="forwarded-from text-xs text-text-muted dark:text-text-dark-muted mb-2 flex items-center gap-1">
-          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
-          </svg>
-          ${lang === "fa" ? "فوروارد از" : "Forwarded from"}
-          <a href="${post.forwardedFrom.url}" target="_blank" class="text-primary hover:underline">${post.forwardedFrom.name}</a>
-        </div>
-      `;
-    }
-
-    // Reply to
-    if (post.replyTo) {
-      html += `
-        <div class="reply-to text-xs bg-surface-dim dark:bg-surface-dark-dim p-2 rounded mb-3 border-r-2 border-primary">
-          <a href="${post.replyTo.url}" target="_blank" class="font-medium text-primary">${post.replyTo.author}</a>
-          <p class="text-text-muted dark:text-text-dark-muted truncate">${post.replyTo.text}</p>
-        </div>
-      `;
-    }
-
-    // Meta info
-    html += `
-      <div class="post-meta text-sm text-text-muted dark:text-text-dark-muted mb-3 flex items-center gap-3 flex-wrap">
-        <span class="flex items-center gap-1">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          ${formattedDate}
-        </span>
-        <span class="flex items-center gap-1">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-          </svg>
-          ${formattedViews} ${lang === "fa" ? "بازدید" : "views"}
-        </span>
-      </div>
-    `;
-
-    // Media
-    if (post.media && post.media.length > 0) {
-      html += '<div class="post-media mb-4 space-y-3">';
-
-      for (const media of post.media) {
-        html += renderMedia(media, post.link, lang);
-      }
-
-      html += "</div>";
-    }
-
-    // Text content
-    if (post.textHtml || post.text) {
-      // Prioritize HTML but ensure line breaks are preserved
-      let textContent = post.textHtml || escapeAndFormat(post.text);
-      // Some workers might send \n in textHtml, convert to <br/> for display
-      textContent = textContent.replace(/\n/g, "<br />");
-      html += `<div class="post-text mb-4 text-text-base dark:text-text-dark leading-relaxed whitespace-pre-wrap">${textContent}</div>`;
-    }
-
-    // Read more link
-    html += `
-      <a href="${post.link}" target="_blank" rel="noopener noreferrer"
-         class="read-more text-primary dark:text-primary-light hover:underline text-sm font-medium inline-flex items-center gap-1">
-        ${lang === "fa" ? "مشاهده در تلگرام" : "View on Telegram"}
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="${lang === "fa" ? "M15 19l-7-7 7-7" : "M9 5l7 7-7 7"}" />
-        </svg>
-      </a>
-    `;
-
-    card.innerHTML = html;
-    return card;
-  }
-
-  function renderMedia(
-    media: MediaItem,
-    postLink: string,
-    lang: "fa" | "en",
-  ): string {
-    switch (media.type) {
-      case "photo":
-        return `
-          <a href="${postLink}" target="_blank" class="block">
-            <img src="${media.url || media.thumbnail}" alt="" 
-                 class="rounded-lg max-h-80 w-auto object-cover" loading="lazy" />
-          </a>
-        `;
-
-      case "video":
-        if (media.url) {
-          return `
-            <video controls class="rounded-lg max-h-80 w-full" poster="${media.thumbnail || ""}">
-              <source src="${media.url}" type="video/mp4" />
-            </video>
-          `;
-        }
-        return `
-          <a href="${media.embedUrl || postLink}" target="_blank" class="block relative">
-            <img src="${media.thumbnail}" alt="" class="rounded-lg max-h-80 w-auto object-cover" loading="lazy" />
-            <div class="absolute inset-0 flex items-center justify-center">
-              <div class="bg-black/50 rounded-full p-4">
-                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </div>
-            </div>
-            ${media.duration ? `<span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">${media.duration}</span>` : ""}
-          </a>
-        `;
-
-      case "audio":
-        return `
-          <div class="audio-preview flex items-center gap-3 p-3 bg-surface-dim dark:bg-surface-dark-dim rounded-lg">
-            <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
-              </svg>
-            </div>
-            <div class="flex-1 min-w-0">
-              <p class="font-medium truncate">${media.title || (lang === "fa" ? "فایل صوتی" : "Audio")}</p>
-              <p class="text-sm text-text-muted">${media.duration || ""}</p>
-            </div>
-            <a href="${postLink}" target="_blank" class="text-primary hover:underline text-sm">
-              ${lang === "fa" ? "دانلود" : "Download"}
-            </a>
-          </div>
-        `;
-
-      case "voice":
-        return `
-          <div class="voice-message flex items-center gap-3 p-3 bg-surface-dim dark:bg-surface-dark-dim rounded-lg">
-            <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.91-3c-.49 0-.9.36-.98.85C16.52 14.2 14.47 16 12 16s-4.52-1.8-4.93-4.15c-.08-.49-.49-.85-.98-.85-.61 0-1.09.54-1 1.14.49 3 2.89 5.35 5.91 5.78V20c0 .55.45 1 1 1s1-.45 1-1v-2.08c3.02-.43 5.42-2.78 5.91-5.78.1-.6-.39-1.14-1-1.14z"/>
-              </svg>
-            </div>
-            <div class="flex-1">
-              <div class="h-1 bg-text-muted/30 rounded-full"></div>
-            </div>
-            <span class="text-sm text-text-muted">${media.duration || ""}</span>
-          </div>
-        `;
-
-      case "document":
-        return `
-          <a href="${postLink}" target="_blank" class="document-preview flex items-center gap-3 p-3 bg-surface-dim dark:bg-surface-dark-dim rounded-lg hover:bg-surface-dim/80 transition-colors">
-            <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
-              <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-              </svg>
-            </div>
-            <div class="flex-1 min-w-0">
-              <p class="font-medium truncate">${media.fileName || (lang === "fa" ? "فایل" : "File")}</p>
-              <p class="text-sm text-text-muted">${media.fileSize || ""}</p>
-            </div>
-            <svg class="w-5 h-5 text-text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-          </a>
-        `;
-
-      case "linkPreview":
-        return `
-          <a href="${media.url}" target="_blank" rel="noopener noreferrer" 
-             class="link-preview flex gap-3 p-3 bg-surface-dim dark:bg-surface-dark-dim rounded-lg hover:bg-surface-dim/80 transition-colors border border-border dark:border-border-dark">
-            ${media.thumbnail ? `<img src="${media.thumbnail}" alt="" class="w-16 h-16 rounded object-cover" />` : ""}
-            <div class="flex-1 min-w-0">
-              <p class="font-medium text-primary truncate">${media.title || ""}</p>
-              <p class="text-sm text-text-muted line-clamp-2">${media.description || ""}</p>
-            </div>
-          </a>
-        `;
-
-      case "sticker":
-        return `
-          <img src="${media.url}" alt="Sticker" class="w-32 h-32 object-contain" loading="lazy" />
-        `;
-
-      default:
-        return "";
-    }
-  }
-
-  function escapeAndFormat(text: string): string {
-    return text
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/\n/g, "<br />");
-  }
 </script>
 
 <style>
   .telegram-feed {
-    background-color: var(--color-surface-dim);
-    border-radius: 0.75rem;
-    padding: 2rem;
-    border: 1px solid var(--color-border);
+    max-width: 800px;
+    margin: 0 auto;
   }
 
-  html.dark .telegram-feed {
-    background-color: var(--color-surface-dark-dim);
-    border-color: var(--color-border-dark);
+  .post-content {
+    word-break: break-word;
+    white-space: pre-wrap;
   }
 
-  .post-text {
-    max-height: 600px;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 20;
-    -webkit-box-orient: vertical;
-  }
-
-  .post-text a {
-    color: var(--color-primary);
+  .post-content :global(a) {
+    color: #0088cc;
     text-decoration: underline;
+    text-underline-offset: 2px;
   }
 
-  .post-text .hashtag {
-    color: var(--color-primary);
+  .post-content :global(blockquote) {
+    border-inline-start: 4px solid #0088cc;
+    padding-inline-start: 1rem;
+    margin: 1rem 0;
+    color: var(--color-text-muted);
+    font-style: italic;
+    background: var(--color-surface-dim);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .post-content :global(.hashtag),
+  .post-content :global(.mention) {
+    color: #0088cc;
+    text-decoration: none;
     font-weight: 500;
   }
 
-  .post-text .mention {
-    color: var(--color-primary);
-  }
-
-  .post-text .spoiler {
-    background-color: currentColor;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-
-  .post-text .spoiler:hover,
-  .post-text .spoiler.revealed {
-    background-color: transparent;
-  }
-
-  .post-text code {
+  .post-content :global(code) {
     background-color: var(--color-surface-dim);
-    padding: 0.125rem 0.375rem;
+    padding: 0.15rem 0.4rem;
     border-radius: 0.25rem;
-    font-family: monospace;
+    font-family: ui-monospace, monospace;
     font-size: 0.9em;
   }
 
-  .post-text pre {
+  .post-content :global(pre) {
     background-color: var(--color-surface-dim);
     padding: 1rem;
     border-radius: 0.5rem;
     overflow-x: auto;
-    font-family: monospace;
+    font-family: ui-monospace, monospace;
     font-size: 0.9em;
+    margin: 1rem 0;
   }
 
-  .post-text blockquote {
-    border-right: 3px solid var(--color-primary);
-    padding-right: 1rem;
-    margin: 0.5rem 0;
-    color: var(--color-text-muted);
+  .post-content :global(.spoiler) {
+    background-color: var(--color-text-base);
+    color: transparent;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.2s;
   }
 
-  html[dir="ltr"] .post-text blockquote {
-    border-right: none;
-    border-left: 3px solid var(--color-primary);
-    padding-right: 0;
-    padding-left: 1rem;
+  .post-content :global(.spoiler:hover),
+  .post-content :global(.spoiler.revealed) {
+    background-color: transparent;
+    color: inherit;
   }
 
-  .line-clamp-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  /* Badges */
+  .badge-thread {
+    background: #0088cc20;
+    color: #0088cc;
+  }
+  .badge-fwd {
+    background: #8b5cf620;
+    color: #8b5cf6;
+  }
+  .badge-edit {
+    background: #f59e0b20;
+    color: #f59e0b;
+  }
+
+  /* RTL Support for Poll bars */
+  [dir="rtl"] .poll-option-bar {
+    left: auto;
+    right: 0;
   }
 </style>
