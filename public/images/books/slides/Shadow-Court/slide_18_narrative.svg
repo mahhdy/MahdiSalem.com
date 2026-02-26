@@ -1,0 +1,40 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#0D1642"/>
+  <rect x="0" y="0" width="1080" height="1350" opacity="0.05">
+    <animate attributeName="opacity" values="0.03;0.07;0.03" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <foreignObject x="60" y="60" width="960" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#F9A825; font-size:26px; text-align:center;">
+      📖 یک روایت آموزنده
+    </div>
+  </foreignObject>
+  <rect x="80" y="160" width="920" height="1060" rx="20" fill="rgba(255,255,255,0.05)" stroke="rgba(249,168,37,0.3)" stroke-width="1"/>
+  <foreignObject x="120" y="200" width="840" height="980">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:right; line-height:2.4;">
+      <span style="color:#F9A825; font-weight:bold; font-size:30px;">تصور کنید...</span>
+      <br/><br/>
+      یک ورزشکار ایرانی سال‌ها تلاش کرده تا به المپیک برسد.
+      <br/><br/>
+      حالا اپوزیسیون می‌خواهد ایران را از المپیک محروم کند.
+      <br/><br/>
+      <span style="color:#C0392B;">رژیم می‌گوید:</span> «ببینید! آن‌ها با ورزشکاران هم دشمنند.»
+      <br/><br/>
+      <span style="color:#2E7D32;">اما اگر دادگاه در سایه وجود داشت:</span>
+      <br/><br/>
+      <span style="color:#F9A825;">•</span> دلایل تحریم بررسی شده بود
+      <br/>
+      <span style="color:#F9A825;">•</span> جایگزین‌ها سنجیده شده بود
+      <br/>
+      <span style="color:#F9A825;">•</span> حقوق ورزشکار لحاظ شده بود
+      <br/>
+      <span style="color:#F9A825;">•</span> رأی مستند و مستدل بود
+      <br/><br/>
+      <span style="color:#F9A825; font-weight:bold;">و جمهوری اسلامی نمی‌توانست سوءاستفاده کند.</span>
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1260" width="960" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.5); font-size:20px; text-align:center;">
+      📖 جزئیات بیشتر در کتاب | لینک در بیو
+    </div>
+  </foreignObject>
+</svg>

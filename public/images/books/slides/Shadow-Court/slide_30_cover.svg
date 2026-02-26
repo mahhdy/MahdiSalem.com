@@ -1,0 +1,64 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs>
+    <linearGradient id="bg30" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E"/>
+      <stop offset="50%" style="stop-color:#0D1642"/>
+      <stop offset="100%" style="stop-color:#1A237E"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="40%" r="45%">
+      <stop offset="0%" style="stop-color:#F9A825; stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#0D1642; stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#bg30)"/>
+  <circle cx="540" cy="500" r="400" fill="url(#halo)"/>
+  <rect x="140" y="100" width="800" height="6" rx="3" fill="#F9A825"/>
+  <foreignObject x="100" y="160" width="880" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:56px; font-weight:bold; text-align:center; line-height:1.5;">
+      دادگاه در سایه
+    </div>
+  </foreignObject>
+  <foreignObject x="100" y="320" width="880" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#F9A825; font-size:36px; text-align:center; line-height:1.5;">
+      وجدان منفصل مسئول
+    </div>
+  </foreignObject>
+  <rect x="300" y="440" width="480" height="3" fill="rgba(255,255,255,0.3)"/>
+  <foreignObject x="100" y="480" width="880" height="180">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.8); font-size:26px; text-align:center; line-height:2;">
+      سند پیشنهادی برای تأسیس
+      <br/>
+      نظام شبه‌قضایی
+      <br/>
+      اپوزیسیون دموکراتیک ایران
+    </div>
+  </foreignObject>
+  <rect x="140" y="720" width="800" height="340" rx="20" fill="rgba(255,255,255,0.05)" stroke="rgba(249,168,37,0.3)" stroke-width="1"/>
+  <foreignObject x="180" y="750" width="720" height="280">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:22px; text-align:center; line-height:2.4;">
+      <span style="color:#F9A825;">✦</span> مستندسازی نظام‌مند جرایم رژیم
+      <br/>
+      <span style="color:#F9A825;">✦</span> داوری تصمیم‌های حساس جنبش
+      <br/>
+      <span style="color:#F9A825;">✦</span> گفت‌وگوی نخبگانی ساختارمند
+      <br/>
+      <span style="color:#F9A825;">✦</span> ثبت آراء برای بازنگری آینده
+      <br/>
+      <span style="color:#F9A825;">✦</span> دفاعیه محکم در برابر جنگ روانی
+    </div>
+  </foreignObject>
+  <rect x="240" y="1110" width="600" height="80" rx="40" fill="#F9A825"/>
+  <foreignObject x="260" y="1125" width="560" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:28px; font-weight:bold; text-align:center;">
+      دانلود و مطالعه‌ی رایگان
+    </div>
+  </foreignObject>
+  <foreignObject x="100" y="1220" width="880" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.5); font-size:20px; text-align:center; line-height:1.8;">
+      لینک در بیو ↗
+      <br/>
+      <span style="font-size:16px;">Creative Commons BY-SA 4.0 — بازتولید با ذکر منبع آزاد است</span>
+    </div>
+  </foreignObject>
+  <rect x="140" y="1320" width="800" height="4" rx="2" fill="#F9A825" opacity="0.6"/>
+</svg>

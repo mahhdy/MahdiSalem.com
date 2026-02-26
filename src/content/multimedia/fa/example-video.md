@@ -1,11 +1,13 @@
 ---
-title: "نمونه ویدیو"
-description: "این یک نمونه محتوای ویدیویی است که نحوه استفاده از سیستم محتوای چندرسانه‌ای را نشان می‌دهد."
+title: نمونه ویدیو
+description: >-
+  این یک نمونه محتوای ویدیویی است که نحوه استفاده از سیستم محتوای چندرسانه‌ای را
+  نشان می‌دهد.
 lang: fa
-publishDate: 2025-03-01
+publishDate: 2025-03-01T00:00:00.000Z
 type: video
-mediaUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-thumbnailUrl: "/images/mic-sample.svg"
+mediaUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+thumbnailUrl: /images/mic-sample.svg
 duration: 213
 platform: youtube
 categories:
@@ -13,7 +15,7 @@ categories:
 tags:
   - نمونه
   - ویدیو
-draft: false
+draft: true
 hidden: false
 showInContents: true
 ---

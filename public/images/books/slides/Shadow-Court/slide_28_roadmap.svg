@@ -1,0 +1,94 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#FAFAFA"/>
+  <rect width="1080" height="160" fill="#F9A825"/>
+  <foreignObject x="60" y="40" width="960" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:38px; font-weight:bold; text-align:center;">
+      نقشه‌ی راه کتاب
+    </div>
+  </foreignObject>
+  <rect x="60" y="200" width="240" height="100" rx="10" fill="#1A237E"/>
+  <foreignObject x="70" y="215" width="220" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:18px; text-align:center; line-height:1.5;">
+      <span style="font-weight:bold;">فصل ۱</span><br/>تشریح مسئله
+    </div>
+  </foreignObject>
+  <rect x="320" y="200" width="240" height="100" rx="10" fill="#1A237E" opacity="0.9"/>
+  <foreignObject x="330" y="215" width="220" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:18px; text-align:center; line-height:1.5;">
+      <span style="font-weight:bold;">فصل ۲</span><br/>انتظارات مثبت
+    </div>
+  </foreignObject>
+  <rect x="580" y="200" width="240" height="100" rx="10" fill="#C0392B"/>
+  <foreignObject x="590" y="215" width="220" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:18px; text-align:center; line-height:1.5;">
+      <span style="font-weight:bold;">فصل ۳</span><br/>آسیب‌شناسی
+    </div>
+  </foreignObject>
+  <rect x="840" y="200" width="180" height="100" rx="10" fill="#C0392B" opacity="0.8"/>
+  <foreignObject x="850" y="215" width="160" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:18px; text-align:center; line-height:1.5;">
+      <span style="font-weight:bold;">فصل ۴</span><br/>سازماندهی
+    </div>
+  </foreignObject>
+  <rect x="60" y="320" width="280" height="100" rx="10" fill="#2E7D32"/>
+  <foreignObject x="70" y="335" width="260" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:18px; text-align:center; line-height:1.5;">
+      <span style="font-weight:bold;">فصل ۵</span><br/>رویه‌های اجرایی و قضایی
+    </div>
+  </foreignObject>
+  <rect x="360" y="320" width="240" height="100" rx="10" fill="#F9A825"/>
+  <foreignObject x="370" y="335" width="220" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:18px; text-align:center; line-height:1.5;">
+      <span style="font-weight:bold;">فصل ۶</span><br/>مباحث مالی
+    </div>
+  </foreignObject>
+  <rect x="620" y="320" width="400" height="100" rx="10" fill="#1A237E" opacity="0.7"/>
+  <foreignObject x="630" y="335" width="380" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:18px; text-align:center; line-height:1.5;">
+      <span style="font-weight:bold;">فصل ۷</span><br/>مراجع بین‌المللی
+    </div>
+  </foreignObject>
+  <rect x="60" y="440" width="320" height="100" rx="10" fill="#F9A825" opacity="0.8"/>
+  <foreignObject x="70" y="455" width="300" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:18px; text-align:center; line-height:1.5;">
+      <span style="font-weight:bold;">فصل ۸</span><br/>نمونه‌های مشابه و مطالعه موردی
+    </div>
+  </foreignObject>
+  <rect x="400" y="440" width="300" height="100" rx="10" fill="#2E7D32" opacity="0.8"/>
+  <foreignObject x="410" y="455" width="280" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:18px; text-align:center; line-height:1.5;">
+      <span style="font-weight:bold;">فصل ۹</span><br/>ادغام پس از گذار
+    </div>
+  </foreignObject>
+  <rect x="720" y="440" width="300" height="100" rx="10" fill="#1A237E"/>
+  <foreignObject x="730" y="455" width="280" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:18px; text-align:center; line-height:1.5;">
+      <span style="font-weight:bold;">فصل ۱۰-۱۱</span><br/>افراد و جمع‌بندی
+    </div>
+  </foreignObject>
+  <rect x="60" y="600" width="960" height="600" rx="20" fill="#1A237E" opacity="0.05"/>
+  <foreignObject x="80" y="630" width="920" height="550">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:24px; text-align:right; line-height:2.4;">
+      <span style="font-weight:bold; font-size:30px; color:#F9A825;">این کتاب چه می‌گوید؟</span>
+      <br/><br/>
+      <span style="color:#1A237E;">▸</span> چرا اپوزیسیون به نظام قضایی سایه نیاز دارد
+      <br/>
+      <span style="color:#1A237E;">▸</span> چگونه تصمیم‌های سخت را مشروع کنیم
+      <br/>
+      <span style="color:#1A237E;">▸</span> چه خطراتی باید مدیریت شوند
+      <br/>
+      <span style="color:#1A237E;">▸</span> رویه‌های عملی و اجرایی
+      <br/>
+      <span style="color:#1A237E;">▸</span> چگونه از نمونه‌های تاریخی درس بگیریم
+      <br/>
+      <span style="color:#1A237E;">▸</span> چطور این نهاد پس از گذار منحل شود
+      <br/>
+      <span style="color:#1A237E;">▸</span> چه کسانی می‌توانند مشارکت کنند
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1240" width="960" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#7F8C8D; font-size:22px; text-align:center;">
+      📖 دانلود رایگان | لینک در بیو
+    </div>
+  </foreignObject>
+</svg>

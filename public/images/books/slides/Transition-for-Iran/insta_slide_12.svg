@@ -1,0 +1,50 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#F4F7F9" />
+  
+  <rect width="1080" height="220" fill="#311B92" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      پنج ستونِ ثباتِ دموکراسی
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #1A237E;">
+      
+      <p style="font-size: 38px; line-height: 1.5; text-align: center; margin-bottom: 60px; color: #4527A0;">
+        بر اساس نظریه‌ی لینز و استپان، دموکراسی تنها یک صندوق رای نیست؛ بلکه سیستمی از پنج حوزه‌ی بهم پیوسته است:
+      </p>
+
+      <!-- 5 Pillars List -->
+      <div style="background: white; border-radius: 25px; padding: 40px; box-shadow: 0 10px 30px rgba(49, 27, 146, 0.05);">
+        
+        <div style="margin-bottom: 25px; border-bottom: 1px solid #EEE; padding-bottom: 15px;">
+          <h5 style="margin: 0; font-size: 38px; color: #311B92;">۱. جامعه مدنی پویا</h5>
+          <p style="margin: 5px 0 0 0; font-size: 28px; color: #546E7A;">آزادی انجمن‌ها، سندیکاها و رسانه‌های مستقل.</p>
+        </div>
+
+        <div style="margin-bottom: 25px; border-bottom: 1px solid #EEE; padding-bottom: 15px;">
+          <h5 style="margin: 0; font-size: 38px; color: #311B92;">۲. جامعه سیاسی رقابتی</h5>
+          <p style="margin: 5px 0 0 0; font-size: 28px; color: #546E7A;">احزاب سیاسی آزاد و قانون انتخاباتی عادلانه.</p>
+        </div>
+
+        <div style="margin-bottom: 25px; border-bottom: 1px solid #EEE; padding-bottom: 15px;">
+          <h5 style="margin: 0; font-size: 38px; color: #311B92;">۳. حاکمیت قانون (Legal Society)</h5>
+          <p style="margin: 5px 0 0 0; font-size: 28px; color: #546E7A;">قانون اساسی که حقوق همه‌ی شهروندان را تضمین کند.</p>
+        </div>
+
+        <div style="margin-bottom: 25px; border-bottom: 1px solid #EEE; padding-bottom: 15px;">
+          <h5 style="margin: 0; font-size: 38px; color: #311B92;">۴. دولت کارآمد (State Apparatus)</h5>
+          <p style="margin: 5px 0 0 0; font-size: 28px; color: #546E7A;">بوروکراسی حرفه‌ای و غیرسیاسی برای ارائه‌ی خدمات.</p>
+        </div>
+
+        <div>
+          <h5 style="margin: 0; font-size: 38px; color: #311B92;">۵. جامعه اقتصادی (بازار قاعده‌مند)</h5>
+          <p style="margin: 5px 0 0 0; font-size: 28px; color: #546E7A;">توازن بین آزادی بازار و حمایت‌های اجتماعی دولت.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

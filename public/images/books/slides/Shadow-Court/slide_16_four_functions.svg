@@ -1,0 +1,76 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#1A237E"/>
+  <foreignObject x="60" y="60" width="960" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#F9A825; font-size:42px; font-weight:bold; text-align:center;">
+      چهار وظیفه‌ی اصلی
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="160" width="960" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.7); font-size:24px; text-align:center;">
+      نهاد شبه‌قضایی سایه
+    </div>
+  </foreignObject>
+  <rect x="60" y="280" width="460" height="420" rx="20" fill="rgba(255,255,255,0.08)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="80" y="300" width="420" height="380">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:24px; text-align:center; line-height:1.8;">
+      <span style="font-size:64px; color:#F9A825;">۱</span>
+      <br/>
+      <span style="font-weight:bold; font-size:28px;">مستندسازی جرایم</span>
+      <br/><br/>
+      ثبت نظام‌مند جرایم رژیم
+      <br/>
+      بر پایه‌ی معیارهای
+      <br/>
+      حقوق بین‌الملل
+    </div>
+  </foreignObject>
+  <rect x="560" y="280" width="460" height="420" rx="20" fill="rgba(255,255,255,0.08)" stroke="#2E7D32" stroke-width="2"/>
+  <foreignObject x="580" y="300" width="420" height="380">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:24px; text-align:center; line-height:1.8;">
+      <span style="font-size:64px; color:#2E7D32;">۲</span>
+      <br/>
+      <span style="font-weight:bold; font-size:28px;">داوری و تنظیم</span>
+      <br/><br/>
+      تنظیم‌بخشی تصمیم‌های
+      <br/>
+      حساس جنبش بر اساس
+      <br/>
+      «پاسخ مشروع و متناسب»
+    </div>
+  </foreignObject>
+  <rect x="60" y="740" width="460" height="420" rx="20" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2"/>
+  <foreignObject x="80" y="760" width="420" height="380">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:24px; text-align:center; line-height:1.8;">
+      <span style="font-size:64px; color:#FFFFFF;">۳</span>
+      <br/>
+      <span style="font-weight:bold; font-size:28px;">گفت‌وگوی نخبگانی</span>
+      <br/><br/>
+      بستر بحث ساختارمند
+      <br/>
+      برای مسائل پرمناقشه
+      <br/>
+      تحریم، مداخله، اخراج…
+    </div>
+  </foreignObject>
+  <rect x="560" y="740" width="460" height="420" rx="20" fill="rgba(255,255,255,0.08)" stroke="#C0392B" stroke-width="2"/>
+  <foreignObject x="580" y="760" width="420" height="380">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:24px; text-align:center; line-height:1.8;">
+      <span style="font-size:64px; color:#C0392B;">۴</span>
+      <br/>
+      <span style="font-weight:bold; font-size:28px;">ثبت و بایگانی</span>
+      <br/><br/>
+      ذخیره‌ی آراء و دلایل
+      <br/>
+      برای بازنگری
+      <br/>
+      پس از گذار
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1200" width="960" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.5); font-size:22px; text-align:center; line-height:1.6;">
+      هر وظیفه با رویه‌های اجرایی مشخص تعریف شده
+      <br/>
+      📖 فصل ۵ کتاب «دادگاه در سایه»
+    </div>
+  </foreignObject>
+</svg>

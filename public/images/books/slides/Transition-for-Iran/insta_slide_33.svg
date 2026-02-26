@@ -1,0 +1,48 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#FFFDE7" />
+  
+  <rect width="1080" height="220" fill="#F9A825" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: black; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 60px; font-weight: bold;">
+      فرمولِ مذاکره: لهستان و میزِ گِرد
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="270" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl;">
+      
+      <div style="background: white; padding: 50px; border-radius: 40px; box-shadow: 0 15px 40px rgba(249, 168, 37, 0.1); border: 1px solid #FFF176;">
+        <p style="font-size: 42px; font-weight: 900; color: #E65100; margin-top: 0; text-align: center;">«پیروزی به معنای نابودی نیست.»</p>
+        
+        <p style="font-size: 34px; line-height: 1.7; color: #3E2723; text-align: justify;">
+          در سال ۱۹۸۹، جنبش «همبستگی» لهستان به جای جنگ تمام‌عیار، پشت میز مذاکره نشست. آن‌ها با حکومتی که سال‌ها سرکوبشان کرده بود، بر سر انتخابات آزاد توافق کردند.
+        </p>
+
+        <div style="display: flex; gap: 30px; margin-top: 50px;">
+          <div style="flex: 1; text-align: center;">
+            <div style="font-size: 60px; color: #F9A825; font-weight: bold;">۱۰ سال</div>
+            <div style="font-size: 30px; color: #5D4037;">مبارزه مدنی</div>
+          </div>
+          <div style="flex: 1; text-align: center; border-right: 2px solid #EEE;">
+            <div style="font-size: 60px; color: #F9A825; font-weight: bold;">۲ ماه</div>
+            <div style="font-size: 30px; color: #5D4037;">مذاکره سنگین</div>
+          </div>
+          <div style="flex: 1; text-align: center; border-right: 2px solid #EEE;">
+            <div style="font-size: 60px; color: #F9A825; font-weight: bold;">۱۰۰٪</div>
+            <div style="font-size: 30px; color: #5D4037;">تغییر نظام</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 70px;">
+        <h3 style="font-size: 40px; color: #F57F17; margin-bottom: 25px;">چرا این مدل جواب داد؟</h3>
+        <ul style="font-size: 34px; line-height: 1.8; color: #4E342E; padding-right: 30px;">
+          <li><strong>اعتمادسازی:</strong> تضمینِ امنیت برای کسانی که قدرت را ترک می‌کنند.</li>
+          <li><strong>رهبری واحد:</strong> لخ والسا سخنگوی اصلی تمام مخالفان بود.</li>
+          <li><strong>برنامه اقتصادی:</strong> آن‌ها برای فردای پس از سقوط برنامه داشتند.</li>
+        </ul>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

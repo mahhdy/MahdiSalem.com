@@ -1,0 +1,26 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#1A237E"/>
+  <text x="100" y="300" font-size="200" fill="#F9A825" opacity="0.2" font-family="Georgia, serif">"</text>
+  <text x="880" y="1000" font-size="200" fill="#F9A825" opacity="0.2" font-family="Georgia, serif">"</text>
+  <foreignObject x="100" y="350" width="880" height="600">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:36px; text-align:center; line-height:2;">
+      وقتی یک جنبش از تحریم نهاد ورزشی حمایت می‌کند،
+      <br/><br/>
+      <span style="color:#F9A825; font-size:44px; font-weight:bold;">عملاً حکمی صادر کرده</span>
+      <br/><br/>
+      که بر زندگی حرفه‌ای هزاران ورزشکار اثر می‌گذارد
+    </div>
+  </foreignObject>
+  <rect x="200" y="1020" width="680" height="4" fill="#F9A825"/>
+  <foreignObject x="100" y="1060" width="880" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:28px; text-align:center; line-height:1.6;">
+      آیا این حکم باید بدون دادرسی باشد؟
+    </div>
+  </foreignObject>
+  <rect x="300" y="1180" width="480" height="80" rx="40" fill="#2E7D32"/>
+  <foreignObject x="320" y="1195" width="440" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; font-weight:bold; text-align:center;">
+      دادگاه در سایه پاسخ است
+    </div>
+  </foreignObject>
+</svg>

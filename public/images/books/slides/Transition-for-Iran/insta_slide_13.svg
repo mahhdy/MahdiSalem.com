@@ -1,0 +1,36 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#E0F2F1" />
+  
+  <rect width="1080" height="220" fill="#00695C" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      پایانِ «نفرینِ منابع» در ایران
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #004D40;">
+      
+      <p style="font-size: 38px; line-height: 1.5; text-align: center; margin-bottom: 50px;">
+        چرا نفت به‌جای رفاه، باعث فساد و استبداد شده است؟ راهکار پیشنهادی برای گذار: <span style="font-weight: bold; color: #00695C;">توزیع مستقیم ثروت ملی بین شهروندان.</span>
+      </p>
+
+      <div style="background: white; border-radius: 25px; padding: 40px; box-shadow: 0 10px 30px rgba(0, 105, 92, 0.05); margin-bottom: 50px;">
+        <h3 style="font-size: 45px; color: #00695C; margin: 0 0 20px 0;">حسابِ شهروندی:</h3>
+        <ul style="font-size: 32px; line-height: 1.6; margin: 0; padding-right: 30px;">
+          <li style="margin-bottom: 15px;">واریز مستقیم سهم نفت و گاز به حساب هر ایرانی.</li>
+          <li style="margin-bottom: 15px;">دولت امانتدار است، نه مالک ثروت‌های زیرزمینی.</li>
+          <li style="margin-bottom: 15px;">جایگزینی «رانت دولتی» با «انتخاب شهروندی».</li>
+          <li>تأمین بودجه دولت فقط از طریق مالیات شفاف.</li>
+        </ul>
+      </div>
+
+      <div style="background: #00695C; color: white; padding: 35px; border-radius: 20px; text-align: center;">
+        <p style="font-size: 40px; font-weight: 900; margin: 0;">
+          دولتِ مالیات‌محور، پاسخگوست؛ <br/> دولتِ نفت‌محور، ارباب است.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

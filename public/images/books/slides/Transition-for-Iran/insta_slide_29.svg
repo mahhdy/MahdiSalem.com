@@ -1,0 +1,35 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#E8EAF6" />
+  
+  <rect width="1080" height="220" fill="#1A237E" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      استقلالِ قضایی چیست؟
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #1A237E;">
+      
+      <p style="font-size: 40px; line-height: 1.5; text-align: center; margin-bottom: 55px; color: #3949AB;">
+        در نظامِ دموکراتیک، قاضی نه مطیعِ حاکم است و نه پیروِ ایدئولوژی؛ او تنها بنده و حافظِ «قانون» است. ارکانِ استقلالِ قضایی:
+      </p>
+
+      <div style="background: white; padding: 40px; border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 15px solid #F9A825;">
+        <ul style="font-size: 34px; line-height: 1.8; color: #283593; padding-right: 30px; margin: 0;">
+          <li style="margin-bottom: 25px;"><strong>تفکیکِ نظارتی:</strong> رئیسِ قوه قضاییه نباید توسط شخصِ اولِ کشور منصوب شود، بلکه باید با فرآیندی شفاف (مانند شورای عالی قضات) انتخاب گردد.</li>
+          <li style="margin-bottom: 25px;"><strong>امنیتِ شغلی:</strong> قضات نباید به دلیل صدورِ احکامِ علیه دولت یا صاحبانِ قدرت، با خطرِ اخراج یا تنزل مواجه شوند.</li>
+          <li style="margin-bottom: 25px;"><strong>حذفِ قوانینِ شرعیِ سلیقه‌ای:</strong> جایگزینیِ فتاوای متناقض با «کدهای قانونیِ مدون و مدرن» که برای همه‌ی شهروندان یکسان است.</li>
+          <li><strong>حقِ دادرسیِ منصفانه:</strong> حضورِ وکیلِ مستقل، هیئتِ منصفه و آزادیِ کاملِ متهم برای دفاع در دادگاه‌های علنی.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 65px; border-right: 12px solid #C62828; padding-right: 30px;">
+        <p style="font-size: 38px; font-weight: 900; color: #1A237E; line-height: 1.3;">
+          عدلیه‌ی مستقل، آخرین پناهگاهِ شهروند <br/> در برابرِ خودکامگی است.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

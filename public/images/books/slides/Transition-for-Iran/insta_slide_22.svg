@@ -1,0 +1,36 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#FAFAFA" />
+  
+  <rect width="1080" height="220" fill="#1A237E" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: #F9A825; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      پایانِ سیاستِ «همه یا هیچ»
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #1A237E;">
+      
+      <p style="font-size: 38px; line-height: 1.5; text-align: center; margin-bottom: 50px;">
+        بزرگ‌ترین خطر برای ایرانِ فردا، جایگزینیِ استبدادی با استبدادِ دیگر است. مدلِ پیشنهادی برای حکمرانیِ شمول‌گرا:
+      </p>
+
+      <div style="background: white; padding: 40px; border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-right: 12px solid #F9A825;">
+        <h3 style="font-size: 42px; color: #1A237E; margin: 0 0 15px 0;">حاکمیتِ قانونی به جای حاکمیتِ مقتدر:</h3>
+        <ul style="font-size: 32px; line-height: 1.6; color: #37474F; padding-right: 30px; margin: 0;">
+          <li style="margin-bottom: 20px;"><strong>توزیعِ افقیِ قدرت:</strong> تقویتِ پارلمان و استقلالِ کاملِ قضایی برای کنترلِ قدرتِ مجریه.</li>
+          <li style="margin-bottom: 20px;"><strong>شوراهای محلیِ قدرتمند:</strong> واگذاریِ تصمیماتِ منطقه به خودِ مردم (پایانِ مرکزگرایی).</li>
+          <li style="margin-bottom: 20px;"><strong>ائتلاف‌سازیِ اجباری:</strong> قوانینی که احزاب را به همکاری و سازش برای تشکیلِ دولت سوق می‌دهد.</li>
+          <li><strong>وتوی اقلیت‌ها:</strong> سازوکارهایی برای تضمینِ این که اکثریت نمی‌تواند حقوقِ بنیادینِ اقلیت‌ها را سلب کند.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 60px; text-align: center; background: #FFF9C4; padding: 30px; border-radius: 20px;">
+        <p style="font-size: 36px; font-weight: bold; color: #1A237E; margin: 0;">
+          دموکراسی، پیروزیِ یک جناح نیست؛ توافق بر سرِ «قواعدِ بازی» است.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

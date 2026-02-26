@@ -1,0 +1,39 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#FDF2F2" />
+  
+  <rect width="1080" height="220" fill="#9B1C1C" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      پایداریِ ایران: مسئله‌ی اقوام
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #111827;">
+      
+      <p style="font-size: 40px; line-height: 1.5; text-align: center; margin-bottom: 60px;">
+        تنوعِ قومی ایران، نه یک تهدید، بلکه بزرگ‌ترین فرصتِ توسعه است؛ مشروط بر گذار از تمرکزگرایی به «وحدت در کثرت».
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 30px;">
+        
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-right: 15px solid #1A237E;">
+          <h3 style="color: #1A237E; font-size: 45px; margin: 0 0 10px 0;">فدرالیسمِ آموزشی و فرهنگی</h3>
+          <p style="font-size: 32px; color: #4B5563; margin: 0;">حق تحصیل به زبان مادری و حفظ هویت‌های بومی در چارچوب ایران یکپارچه.</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-right: 15px solid #F9A825;">
+          <h3 style="color: #F9A825; font-size: 45px; margin: 0 0 10px 0;">عدالت در توزیع منابع</h3>
+          <p style="font-size: 32px; color: #4B5563; margin: 0;">پایان دادن به تبعیض سیستماتیک مرکز-پیرامون و اولویت دادن به توسعه مناطق مرزی.</p>
+        </div>
+
+        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-right: 15px solid #2E7D32;">
+          <h3 style="color: #2E7D32; font-size: 45px; margin: 0 0 10px 0;">شورای عالی اقوام و مذاهب</h3>
+          <p style="font-size: 32px; color: #4B5563; margin: 0;">مشارکت واقعی تمامی اقوام در تصمیم‌گیری‌های کلان و حاکمیتی ایران فردا.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

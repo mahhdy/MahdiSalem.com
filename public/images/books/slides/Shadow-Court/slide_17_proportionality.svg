@@ -1,0 +1,65 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#FAFAFA"/>
+  <rect width="1080" height="180" fill="#F9A825"/>
+  <foreignObject x="60" y="50" width="960" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:40px; font-weight:bold; text-align:center;">
+      آزمون تناسب و ضرورت
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="220" width="960" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:28px; text-align:center;">
+      هر تصمیم باید از این دو فیلتر عبور کند:
+    </div>
+  </foreignObject>
+  <rect x="80" y="360" width="400" height="600" rx="20" fill="#1A237E"/>
+  <foreignObject x="100" y="390" width="360" height="550">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:24px; text-align:center; line-height:2;">
+      <span style="font-size:80px;">⚖️</span>
+      <br/><br/>
+      <span style="color:#F9A825; font-weight:bold; font-size:32px;">تناسب</span>
+      <br/>
+      <span style="font-size:20px;">Proportionality</span>
+      <br/><br/>
+      آیا هزینه‌ی وارد بر
+      <br/>
+      بی‌گناهان از فایده‌ی
+      <br/>
+      مورد انتظار
+      <br/>
+      <span style="color:#F9A825; font-weight:bold;">کمتر است؟</span>
+    </div>
+  </foreignObject>
+  <rect x="600" y="360" width="400" height="600" rx="20" fill="#2E7D32"/>
+  <foreignObject x="620" y="390" width="360" height="550">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:24px; text-align:center; line-height:2;">
+      <span style="font-size:80px;">🔍</span>
+      <br/><br/>
+      <span style="color:#F9A825; font-weight:bold; font-size:32px;">ضرورت</span>
+      <br/>
+      <span style="font-size:20px;">Necessity</span>
+      <br/><br/>
+      آیا این اقدام
+      <br/>
+      تنها راه ممکن
+      <br/>
+      برای رسیدن به هدف
+      <br/>
+      <span style="color:#F9A825; font-weight:bold;">مشروع است؟</span>
+    </div>
+  </foreignObject>
+  <rect x="60" y="1010" width="960" height="200" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 20px rgba(0,0,0,0.08))"/>
+  <foreignObject x="80" y="1030" width="920" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; text-align:center; line-height:2;">
+      <span style="font-weight:bold;">اگر هر دو آزمون پاس نشوند:</span>
+      <br/>
+      توصیه صادر نمی‌شود
+      <br/>
+      <span style="color:#C0392B;">حتی اگر از نظر سیاسی محبوب باشد</span>
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1250" width="960" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#7F8C8D; font-size:20px; text-align:center;">
+      📖 اصل IV هفت اصل بنیادین — کتاب «دادگاه در سایه»
+    </div>
+  </foreignObject>
+</svg>

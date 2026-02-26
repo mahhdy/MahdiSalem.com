@@ -1,0 +1,55 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#212121" />
+  
+  <rect width="1080" height="220" fill="#C62828" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      مدیریت ریسک در دوران گذار
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: white;">
+      
+      <p style="font-size: 40px; line-height: 1.5; text-align: center; color: #EF9A9A; margin-bottom: 50px;">
+        برای هر تهدیدی باید پاسخی هوشمندانه داشت. ماتریس ریسک، نقشه‌ی آمادگی ماست:
+      </p>
+
+      <!-- Risk Table -->
+      <table style="width: 100%; border-collapse: collapse; font-size: 30px;">
+        <tr style="background: #333; color: #F9A825;">
+          <th style="padding: 20px; border: 1px solid #444;">ریسک کلیدی</th>
+          <th style="padding: 20px; border: 1px solid #444;">اولویت</th>
+          <th style="padding: 20px; border: 1px solid #444;">راهکار اصلی</th>
+        </tr>
+        <tr>
+          <td style="padding: 20px; border: 1px solid #444; font-weight: bold;">کودتای نظامی</td>
+          <td style="padding: 20px; border: 1px solid #444; color: #FF5252; text-align: center;">بسیار بالا</td>
+          <td style="padding: 20px; border: 1px solid #444;">مشارکت کنترل‌شده نظامیان در گذار</td>
+        </tr>
+        <tr>
+          <td style="padding: 20px; border: 1px solid #444; font-weight: bold;">بحران معیشتی</td>
+          <td style="padding: 20px; border: 1px solid #444; color: #F9A825; text-align: center;">بالا</td>
+          <td style="padding: 20px; border: 1px solid #444;">کمک‌های فوری بین‌المللی و بازتوزیع ثروت</td>
+        </tr>
+        <tr>
+          <td style="padding: 20px; border: 1px solid #444; font-weight: bold;">تنش‌های قومی</td>
+          <td style="padding: 20px; border: 1px solid #444; color: #F9A825; text-align: center;">بالا</td>
+          <td style="padding: 20px; border: 1px solid #444;">خودمختاری فرهنگی و تشکیل شورای اقوام</td>
+        </tr>
+        <tr>
+          <td style="padding: 20px; border: 1px solid #444; font-weight: bold;">اختلاف احزاب</td>
+          <td style="padding: 20px; border: 1px solid #444; color: #8BC34A; text-align: center;">متوسط</td>
+          <td style="padding: 20px; border: 1px solid #444;">ائتلاف‌سازی حولِ «قانون اساسی موقت»</td>
+        </tr>
+      </table>
+
+      <div style="margin-top: 60px; background: rgba(198, 40, 40, 0.1); border: 2px solid #C62828; padding: 30px; border-radius: 20px; text-align: center;">
+        <p style="font-size: 38px; color: #C62828; font-weight: bold; margin: 0;">
+          شناخت ریسک، نیمی از مسیرِ خنثی‌سازی آن است.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

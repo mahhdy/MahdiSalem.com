@@ -1,0 +1,54 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#FAFAFA"/>
+  <rect width="1080" height="200" fill="#1A237E"/>
+  <foreignObject x="60" y="50" width="960" height="130">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:36px; font-weight:bold; text-align:center; line-height:1.5;">
+      ارتباط با مراجع بین‌المللی
+      <br/>
+      <span style="font-size:24px; color:#F9A825;">پل میان اپوزیسیون و جامعه جهانی</span>
+    </div>
+  </foreignObject>
+  <rect x="60" y="260" width="960" height="180" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <foreignObject x="80" y="280" width="920" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-weight:bold; font-size:30px;">🏛 دادگاه بین‌المللی کیفری (ICC)</span>
+      <br/>
+      مستندات این نهاد می‌تواند مبنای پرونده‌سازی باشد
+    </div>
+  </foreignObject>
+  <rect x="60" y="480" width="960" height="180" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <foreignObject x="80" y="500" width="920" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-weight:bold; font-size:30px;">🇺🇳 شورای حقوق بشر سازمان ملل</span>
+      <br/>
+      همکاری فنی و به‌اشتراک‌گذاری گزارش‌ها
+    </div>
+  </foreignObject>
+  <rect x="60" y="700" width="960" height="180" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <foreignObject x="80" y="720" width="920" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-weight:bold; font-size:30px;">⚖️ دادگاه‌های ملی (صلاحیت جهانی)</span>
+      <br/>
+      پیگیری جنایات در کشورهای دارای صلاحیت فراملی
+    </div>
+  </foreignObject>
+  <rect x="60" y="920" width="960" height="180" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <foreignObject x="80" y="940" width="920" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-weight:bold; font-size:30px;">🌍 سازمان‌های حقوق بشری</span>
+      <br/>
+      عفو بین‌الملل، دیده‌بان حقوق بشر، FIDH و…
+    </div>
+  </foreignObject>
+  <rect x="60" y="1140" width="960" height="120" rx="15" fill="#2E7D32"/>
+  <foreignObject x="80" y="1160" width="920" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:28px; font-weight:bold; text-align:center;">
+      مستندات دادگاه سایه = پرونده‌ی آماده برای عدالت جهانی
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1280" width="960" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#7F8C8D; font-size:20px; text-align:center;">
+      📖 فصل ۷ — کتاب «دادگاه در سایه» | لینک در بیو
+    </div>
+  </foreignObject>
+</svg>

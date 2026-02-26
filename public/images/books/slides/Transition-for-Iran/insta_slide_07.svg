@@ -1,0 +1,43 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#1A237E" />
+  
+  <rect width="1080" height="220" fill="rgba(255,255,255,0.05)" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: #F9A825; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      بحران بانکی: بمب ساعتی اقتصاد
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: white;">
+      
+      <p style="font-size: 38px; line-height: 1.6; margin-bottom: 50px; text-align: center; color: #E3F2FD;">
+        نظام بانکی ایران با ناترازی شدیدی مواجه است که تورم را به کل جامعه تحمیل می‌کند.
+      </p>
+
+      <!-- Grid of Icons/Boxes -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 50px;">
+        <div style="background: rgba(249, 168, 37, 0.1); border: 2px solid #F9A825; padding: 30px; border-radius: 20px;">
+          <h4 style="color: #F9A825; font-size: 45px; margin: 0 0 10px 0;">۲۵٪</h4>
+          <p style="font-size: 28px; margin: 0;">نسبت مطالبات غیرجاری (وام‌های سوخت شده)</p>
+        </div>
+        <div style="background: rgba(249, 168, 37, 0.1); border: 2px solid #F9A825; padding: 30px; border-radius: 20px;">
+          <h4 style="color: #F9A825; font-size: 45px; margin: 0 0 10px 0;">۴۰٪</h4>
+          <p style="font-size: 28px; margin: 0;">دارایی‌های منجمد (املاک و شرکت‌های غیرمولد)</p>
+        </div>
+      </div>
+
+      <!-- Warning Card -->
+      <div style="background: #C62828; padding: 40px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.3);">
+        <h3 style="font-size: 45px; margin: 0 0 15px 0;">فرمول تورم بانکی:</h3>
+        <p style="font-size: 38px; line-height: 1.5; margin: 0;">
+          وام به اشخاص مرتبط + تسهیلات دستوری <br/>
+          ➜ کسری منابع <br/>
+          ➜ اضافه برداشت از بانک مرکزی <br/>
+          ➜ <span style="font-weight: 900; text-decoration: underline;">چاپ پول و تورم</span>
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

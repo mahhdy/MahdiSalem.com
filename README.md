@@ -33,6 +33,10 @@ npm run build
 npm run preview
 ```
 
+```powershell
+Get-ChildItem *.svg | ForEach { svgexport $_.Name (".\pngs\" + $_.BaseName + ".png")  }
+```
+
 ## 🛠️ Content Pipelines
 
 The project relies on specific Node.js pipelines to process content (LaTeX, Markdown, files) and generate search indexes.
@@ -111,18 +115,18 @@ Both fields are available as dropdown selects in the Admin Panel content editor.
 
 The content pipeline (`npm run content:all`) automatically processes books from `content-source/books/`.
 
-1.  **Format Options**:
+1. **Format Options**:
     - **Folder**: Create a folder (e.g., `My-Book/`). Place `.tex` files for chapters inside. It will automatically find `main.tex` and chapters.
     - **Standalone LaTeX**: Drop a single `.tex` file (e.g., `My-Book.tex`).
     - **ZIP File**: Drop a `.zip` file containing a LaTeX project.
     - **Standalone PDF**: Drop a `.pdf` file. It will extract text for the web view and provide a PDF viewer.
-2.  **PDF Association**:
+2. **PDF Association**:
     - If you have a PDF version of a LaTeX book, name it the same as the folder or file (e.g., `My-Book.pdf` for `My-Book.tex` or `My-Book/` folder).
     - The pipeline will automatically link it and store it in `public/documents/books/`.
-3.  **Language Detection**:
+3. **Language Detection**:
     - If files are placed in `content-source/books/en/` or `content-source/books/fa/`, the language is explicitly set.
     - Otherwise, the pipeline detects Persian characters to decide between `fa` and `en`.
-4.  **Admin Panel**:
+4. **Admin Panel**:
     - Use the **"Process Book"** or **"Process All"** buttons in the Admin Panel (`npm run admin:dev`) to trigger the conversion.
 
 ### Integrations

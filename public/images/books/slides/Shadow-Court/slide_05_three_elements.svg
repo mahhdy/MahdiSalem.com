@@ -1,0 +1,41 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#FAFAFA"/>
+  <rect width="1080" height="160" fill="#C0392B"/>
+  <foreignObject x="60" y="40" width="960" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:36px; font-weight:bold; text-align:center; line-height:1.6;">
+      ⚠️ سه عنصر گمشده
+    </div>
+  </foreignObject>
+  <rect x="60" y="220" width="960" height="300" rx="20" fill="#FFFFFF" style="filter:drop-shadow(0 4px 20px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="220" width="15" height="300" rx="8" fill="#1A237E"/>
+  <foreignObject x="100" y="240" width="900" height="260">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:36px; font-weight:bold; text-align:right; line-height:2.5;">
+      ۱. مبنای حقوقی
+      <br/>
+      <span style="font-size:26px; font-weight:normal; color:#7F8C8D;">چرا این اقدام مجاز است؟</span>
+    </div>
+  </foreignObject>
+  <rect x="60" y="560" width="960" height="300" rx="20" fill="#FFFFFF" style="filter:drop-shadow(0 4px 20px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="560" width="15" height="300" rx="8" fill="#F9A825"/>
+  <foreignObject x="100" y="580" width="900" height="260">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:36px; font-weight:bold; text-align:right; line-height:2.5;">
+      ۲. تناسب
+      <br/>
+      <span style="font-size:26px; font-weight:normal; color:#7F8C8D;">آیا هزینه بر بی‌گناهان از فایده کمتر است؟</span>
+    </div>
+  </foreignObject>
+  <rect x="60" y="900" width="960" height="300" rx="20" fill="#FFFFFF" style="filter:drop-shadow(0 4px 20px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="900" width="15" height="300" rx="8" fill="#2E7D32"/>
+  <foreignObject x="100" y="920" width="900" height="260">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:36px; font-weight:bold; text-align:right; line-height:2.5;">
+      ۳. مستندسازی
+      <br/>
+      <span style="font-size:26px; font-weight:normal; color:#7F8C8D;">آیا استدلال‌ها برای آینده ثبت شده‌اند؟</span>
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1240" width="960" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#7F8C8D; font-size:22px; text-align:center;">
+      دادگاه در سایه این سه خلأ را پر می‌کند ◄
+    </div>
+  </foreignObject>
+</svg>

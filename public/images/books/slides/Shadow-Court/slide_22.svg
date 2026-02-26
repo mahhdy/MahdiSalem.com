@@ -1,0 +1,69 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#1A237E"/>
+  <foreignObject x="60" y="60" width="960" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#F9A825; font-size:40px; font-weight:bold; text-align:center;">
+      مباحث مالی و هزینه‌ای
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="160" width="960" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.7); font-size:24px; text-align:center;">
+      استقلال مالی = استقلال تصمیم‌گیری
+    </div>
+  </foreignObject>
+  <rect x="80" y="280" width="420" height="380" rx="15" fill="rgba(255,255,255,0.08)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="100" y="300" width="380" height="340">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:24px; text-align:center; line-height:2;">
+      <span style="font-size:48px;">💰</span>
+      <br/>
+      <span style="color:#F9A825; font-weight:bold; font-size:28px;">منابع مالی</span>
+      <br/><br/>
+      • کمک‌های مردمی
+      <br/>
+      • بنیادهای حقوق بشر
+      <br/>
+      • کمک‌هزینه‌های آکادمیک
+      <br/>
+      • دولت‌های حامی دموکراسی
+    </div>
+  </foreignObject>
+  <rect x="580" y="280" width="420" height="380" rx="15" fill="rgba(255,255,255,0.08)" stroke="#C0392B" stroke-width="2"/>
+  <foreignObject x="600" y="300" width="380" height="340">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:24px; text-align:center; line-height:2;">
+      <span style="font-size:48px;">🔒</span>
+      <br/>
+      <span style="color:#C0392B; font-weight:bold; font-size:28px;">خطوط قرمز</span>
+      <br/><br/>
+      • وابستگی به یک منبع واحد
+      <br/>
+      • پذیرش کمک مشروط
+      <br/>
+      • عدم شفافیت مالی
+      <br/>
+      • تأثیرپذیری از اهداکننده
+    </div>
+  </foreignObject>
+  <rect x="80" y="720" width="920" height="340" rx="15" fill="rgba(46,125,50,0.2)" stroke="#2E7D32" stroke-width="2"/>
+  <foreignObject x="100" y="750" width="880" height="290">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:24px; text-align:right; line-height:2.2;">
+      <span style="color:#2E7D32; font-weight:bold; font-size:28px;">اصول مالی پیشنهادی:</span>
+      <br/><br/>
+      <span style="color:#F9A825;">۱.</span> بودجه‌ی شفاف و قابل حسابرسی عمومی
+      <br/>
+      <span style="color:#F9A825;">۲.</span> تنوع منابع مالی برای جلوگیری از وابستگی
+      <br/>
+      <span style="color:#F9A825;">۳.</span> حداکثر استفاده از مشارکت داوطلبانه
+      <br/>
+      <span style="color:#F9A825;">۴.</span> گزارش‌دهی دوره‌ای به عموم
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1100" width="960" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#F9A825; font-size:30px; font-weight:bold; text-align:center;">
+      شفافیت مالی = اعتبار نهاد
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1240" width="960" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.5); font-size:20px; text-align:center;">
+      📖 فصل ۶ — کتاب «دادگاه در سایه»
+    </div>
+  </foreignObject>
+</svg>

@@ -1,0 +1,36 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#263238" />
+  
+  <rect width="1080" height="220" fill="#37474F" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: #F9A825; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      اصلاحِ نهادهای امنیتی (SSR)
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: white;">
+      
+      <p style="font-size: 40px; line-height: 1.5; text-align: center; margin-bottom: 55px; color: #CFD8DC;">
+        جلوگیری از خلاء امنیتی در زمانِ گذار، حیاتی‌ترین وظیفه‌ی شورای انتقالی است. مکانیزمِ پیشنهادی:
+      </p>
+
+      <div style="background: rgba(255,255,255,0.05); padding: 40px; border-radius: 25px; border-bottom: 12px solid #F9A825;">
+        <h4 style="font-size: 42px; color: #F9A825; margin: 0 0 20px 0;">فرآیندِ «پاکسازی و صلاحیت‌سنجی» (Vetting):</h4>
+        <ul style="font-size: 32px; line-height: 1.8; color: #ECEFF1; padding-right: 30px; margin: 0;">
+          <li style="margin-bottom: 20px;"><strong>تشخیصِ عاملان:</strong> جداسازیِ عاملانِ جنایت از بدنه‌ی حرفه‌ای و بی‌طرفِ نیروهای مسلح.</li>
+          <li style="margin-bottom: 20px;"><strong>شفافیتِ سلسله‌مراتب:</strong> بازطراحیِ فرماندهی تحتِ نظارتِ غیرنظامی (دولتِ منتخب).</li>
+          <li style="margin-bottom: 20px;"><strong>حفاظتِ اطلاعات:</strong> صیانت از بایگانی‌های حساس برای اجرای عدالتِ انتقالی.</li>
+          <li><strong>ادغامِ مجدد:</strong> حرفه‌ای‌سازیِ نیروها و آموزشِ مفاهیمِ حقوقِ بشر و وفاداری به میهن (نه لزوماً یک فرد یا ایدئولوژی).</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 60px; text-align: center; background: rgba(249, 168, 37, 0.1); padding: 30px; border-radius: 20px; border: 1px solid #F9A825;">
+        <p style="font-size: 36px; font-weight: bold; color: #F9A825; margin: 0;">
+          بدونِ بازسازیِ نیروهای مسلح، دموکراسی «بی‌پناه» خواهد بود.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

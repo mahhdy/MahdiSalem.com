@@ -1,0 +1,45 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#E8F5E9" />
+  
+  <rect width="1080" height="220" fill="#2E7D32" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      اقتصادِ پسانفتی: گذارِ سبز
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #1B5E20;">
+      
+      <p style="font-size: 40px; line-height: 1.5; text-align: center; margin-bottom: 55px; color: #388E3C;">
+        بودجه‌ای که به نفت وابسته است، دشمنِ دموکراسی است. جایگزینِ رانتِ نفتی در ایرانِ فردا چیست؟
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 30px;">
+        
+        <div style="background: white; padding: 35px; border-radius: 20px; border-right: 15px solid #F9A825;">
+          <h3 style="color: #F9A825; font-size: 42px; margin: 0 0 10px 0;">سودای خورشید (انرژی‌های تجدیدپذیر)</h3>
+          <p style="font-size: 32px; color: #37474F; margin: 0;">تبدیل ایران به قطبِ تولید انرژی خورشیدی و هیدروژن برای صادرات به اروپا و آسیا.</p>
+        </div>
+
+        <div style="background: white; padding: 35px; border-radius: 20px; border-right: 15px solid #0288D1;">
+          <h3 style="color: #0288D1; font-size: 42px; margin: 0 0 10px 0;">اقتصادِ دانش‌بنیان (High-Tech)</h3>
+          <p style="font-size: 32px; color: #37474F; margin: 0;">تمرکز بر صادرات نرم‌افزار، هوش مصنوعی و خدمات مهندسی با تکیه بر نسل جوان و متخصص.</p>
+        </div>
+
+        <div style="background: white; padding: 35px; border-radius: 20px; border-right: 15px solid #AD1457;">
+          <h3 style="color: #AD1457; font-size: 42px; margin: 0 0 10px 0;">گردشگری و میراثِ جهانی</h3>
+          <p style="font-size: 32px; color: #37474F; margin: 0;">باز کردن درهای ایران به روی جهانیان و کسب درآمدهای کلان از صنعت توریسم و صنایع دستی.</p>
+        </div>
+
+      </div>
+
+      <div style="margin-top: 60px; background: #2E7D32; color: white; padding: 30px; border-radius: 50px; text-align: center;">
+        <p style="font-size: 38px; font-weight: bold; margin: 0;">
+          نفت باید سرمایه‌ی زیرساخت باشد، نه خرجِ روزمره‌ی دولت.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

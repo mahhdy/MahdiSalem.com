@@ -1,0 +1,40 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#1A237E" />
+  
+  <rect width="1080" height="220" fill="rgba(255,255,255,0.05)" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: #F9A825; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      جداسازیِ تفنگ از اقتصاد
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: white;">
+      
+      <p style="font-size: 40px; line-height: 1.5; text-align: center; margin-bottom: 55px; color: #E3F2FD;">
+        نفوذِ نظامیان در اقتصاد ایران، بزرگ‌ترین مانعِ رقابتِ سالم و دموکراسی است. نقشه‌ی راهِ اصلاح:
+      </p>
+
+      <!-- Strategy Cards -->
+      <div style="display: flex; flex-direction: column; gap: 30px;">
+        
+        <div style="background: rgba(255,255,255,0.08); padding: 35px; border-radius: 20px; border-right: 15px solid #F9A825;">
+          <h3 style="color: #F9A825; font-size: 42px; margin: 0 0 10px 0;">تأسیس «هلدینگِ ملی بازسازی»</h3>
+          <p style="font-size: 30px; margin: 0; color: #E1F5FE;">انتقالِ تمامیِ دارایی‌های اقتصادیِ نیروهای مسلح به یک هلدینگِ دولتیِ شفاف، تحتِ نظارتِ مجلس و دیوان محاسبات.</p>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.08); padding: 35px; border-radius: 20px; border-right: 15px solid #2E7D32;">
+          <h3 style="color: #2E7D32; font-size: 42px; margin: 0 0 10px 0;">خصوصی‌سازیِ واقعی</h3>
+          <p style="font-size: 30px; margin: 0; color: #E1F5FE;">واگذاریِ تدریجیِ سهامِ این شرکت‌ها به مردم در بورس و کوتاه کردنِ دستِ نهادهای نظامی از مدیریتِ پروژه‌های غیرنظامی.</p>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.08); padding: 35px; border-radius: 20px; border-right: 15px solid #C62828;">
+          <h3 style="color: #C62828; font-size: 42px; margin: 0 0 10px 0;">تمرکزِ تخصصیِ نیروها</h3>
+          <p style="font-size: 30px; margin: 0; color: #E1F5FE;">تغییرِ مأموریتِ نیروهای مسلح به «امنیتِ ملی» و «دفاعِ سرزمینی»، با تامینِ بودجه‌ی شفاف و شأنِ حرفه‌ایِ نظامی.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

@@ -1,0 +1,36 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#FCE4EC" />
+  
+  <rect width="1080" height="220" fill="#AD1457" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 80px; font-weight: bold;">
+      پِیشرانِ تحول: زنانِ ایران
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #880E4F;">
+      
+      <p style="font-size: 42px; line-height: 1.6; text-align: center; margin-bottom: 60px;">
+        مطالعاتِ جهانی نشان می‌دهد گذارهای دموکراتیک که با پیشگامیِ زنان آغاز می‌شوند، پایدارتر و مسالمت‌آمیزتر هستند.
+      </p>
+
+      <div style="background: white; padding: 45px; border-radius: 30px; box-shadow: 0 10px 30px rgba(173, 20, 87, 0.1); border-left: 15px solid #AD1457;">
+        <h3 style="font-size: 45px; color: #AD1457; margin: 0 0 25px 0;">فراتر از برابریِ صوری:</h3>
+        <ul style="font-size: 34px; line-height: 1.8; color: #4A148C; padding-right: 30px; margin: 0;">
+          <li style="margin-bottom: 25px;"><strong>رهبریِ مدنی:</strong> نقشِ حیاتیِ زنان در سازماندهیِ شبکه‌های محلی و صلح‌سازی.</li>
+          <li style="margin-bottom: 25px;"><strong>تغییرِ قوانینِ تبعیض‌آمیز:</strong> اصلاحِ فوریِ قوانینِ خانواده، کار و ارث به عنوانِ اولویتِ شورای انتقالی.</li>
+          <li style="margin-bottom: 25px;"><strong>امنیتِ اجتماعی:</strong> تضمینِ آزادیِ پوشش و حضورِ امن در تمامیِ عرصه‌های عمومی.</li>
+          <li><strong>مشارکتِ اقتصادی:</strong> رفعِ موانعِ اشتغال برای ورودِ نیمی از سرمایه‌ی انسانی به چرخه‌ی تولید.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 70px; text-align: center;">
+        <p style="font-size: 44px; font-weight: 900; color: #AD1457; line-height: 1.3;">
+          دموکراسی در ایران بدونِ آزادیِ کاملِ زنان، <br/> واژه‌ای بی‌معناست.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

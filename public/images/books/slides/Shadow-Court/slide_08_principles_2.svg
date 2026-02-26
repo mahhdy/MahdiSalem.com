@@ -1,0 +1,52 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#FAFAFA"/>
+  <rect width="1080" height="160" fill="#1A237E"/>
+  <foreignObject x="60" y="40" width="960" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#F9A825; font-size:36px; font-weight:bold; text-align:center;">
+      هفت اصل بنیادین (ادامه)
+    </div>
+  </foreignObject>
+  <rect x="60" y="220" width="960" height="280" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="220" width="10" height="280" rx="5" fill="#F9A825"/>
+  <foreignObject x="100" y="250" width="900" height="230">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-size:42px; color:#F9A825; font-weight:bold;">V</span>
+      <span style="font-weight:bold; font-size:30px;"> احترام به کرامت انسانی</span>
+      <br/><br/>
+      حتی وابستگان حکومت از حقوق بنیادین برخوردارند
+      <br/>
+      هیچ توصیه‌ای نباید ناقض اعلامیه جهانی حقوق بشر باشد
+    </div>
+  </foreignObject>
+  <rect x="60" y="540" width="960" height="280" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="540" width="10" height="280" rx="5" fill="#2E7D32"/>
+  <foreignObject x="100" y="570" width="900" height="230">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-size:42px; color:#2E7D32; font-weight:bold;">VI</span>
+      <span style="font-weight:bold; font-size:30px;"> استقلال از جناح‌بندی</span>
+      <br/><br/>
+      اعضا به‌صورت فردی و بر پایه‌ی تخصص خدمت می‌کنند
+      <br/>
+      نه بر اساس وابستگی سیاسی
+    </div>
+  </foreignObject>
+  <rect x="60" y="860" width="960" height="280" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="860" width="10" height="280" rx="5" fill="#1A237E"/>
+  <foreignObject x="100" y="890" width="900" height="230">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-size:42px; color:#1A237E; font-weight:bold;">VII</span>
+      <span style="font-weight:bold; font-size:30px;"> موقتی بودن</span>
+      <br/><br/>
+      این نهاد با تأسیس نظام قضایی رسمی پس از گذار
+      <br/>
+      منحل یا ادغام می‌شود
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1200" width="960" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#7F8C8D; font-size:22px; text-align:center; line-height:1.6;">
+      📖 جزئیات بیشتر در کتاب «دادگاه در سایه»
+      <br/>
+      لینک در بیو
+    </div>
+  </foreignObject>
+</svg>

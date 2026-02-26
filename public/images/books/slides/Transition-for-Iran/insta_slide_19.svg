@@ -1,0 +1,48 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#FFFDE7" />
+  
+  <rect width="1080" height="220" fill="#F9A825" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: #1A237E; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      نظریه‌ی «توافق‌های گذار»
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #1A237E;">
+      
+      <p style="font-size: 40px; line-height: 1.5; text-align: center; margin-bottom: 50px;">
+        چرا برخی دگردیسی‌ها به دموکراسی ختم می‌شوند و برخی به هرج و مرج؟ کلیدِ معما در «توافقِ نخبگان» (Pacts) نهفته است.
+      </p>
+
+      <!-- Theory Illustration -->
+      <div style="background: white; border-radius: 30px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center;">
+        
+        <div style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 40px;">
+          <div style="width: 40%; background: #E1F5FE; border: 2px solid #0288D1; padding: 20px; border-radius: 15px;">
+            <div style="font-size: 32px; font-weight: bold; color: #01579B;">اعتدال‌گرایانِ نظام</div>
+            <div style="font-size: 24px; color: #0277BD; margin-top: 5px;">(Soft-liners)</div>
+          </div>
+          <div style="font-size: 60px; color: #F9A825;">⇄</div>
+          <div style="width: 40%; background: #E8F5E9; border: 2px solid #2E7D32; padding: 20px; border-radius: 15px;">
+            <div style="font-size: 32px; font-weight: bold; color: #1B5E20;">اپوزیسیونِ میانه‌رو</div>
+            <div style="font-size: 24px; color: #2E7D32; margin-top: 5px;">(Moderates)</div>
+          </div>
+        </div>
+
+        <p style="font-size: 34px; line-height: 1.6; color: #455A64;">
+          گذارِ پیروزمند، محصولِ ائتلاف میانِ کسانی است که در <span style="font-weight: bold; color: #C62828;">داخلِ رژیم</span> به دنبال اصلاح هستند و <span style="font-weight: bold; color: #2E7D32;">نیروهای میهن‌پرستی</span> که در بیرونِ قدرت برای عدالت می‌رزمند.
+        </p>
+
+      </div>
+
+      <div style="margin-top: 55px; border-right: 12px solid #F9A825; padding-right: 30px;">
+        <h4 style="font-size: 38px; color: #A44A3F; margin: 0 0 10px 0;">هدفِ توافق:</h4>
+        <p style="font-size: 32px; line-height: 1.5; margin: 0;">
+          جلوگیری از فروپاشیِ کاملِ نهادهای دولتی و تضمینِ خروجیِ مسالمت‌آمیز برای کسانی که دستانشان به خون آلوده نیست.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

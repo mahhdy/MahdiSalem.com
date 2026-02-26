@@ -1,0 +1,37 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E"/>
+      <stop offset="100%" style="stop-color:#0D1642"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#bg1)"/>
+  <rect x="40" y="40" width="1000" height="120" rx="10" fill="#F9A825" opacity="0.9"/>
+  <foreignObject x="50" y="50" width="980" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:42px; font-weight:bold; text-align:center; line-height:1.4;">
+      آیا می‌دانستید؟
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="250" width="960" height="700">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:36px; text-align:center; line-height:2;">
+      جنبش‌های گذارخواه در طول تاریخ
+      <br/><br/>
+      <span style="color:#F9A825; font-size:48px; font-weight:bold;">بدون دادگاه رسمی</span>
+      <br/><br/>
+      مجبور به اتخاذ تصمیم‌های سرنوشت‌ساز بوده‌اند
+    </div>
+  </foreignObject>
+  <rect x="140" y="1000" width="800" height="200" rx="20" fill="rgba(255,255,255,0.1)"/>
+  <foreignObject x="160" y="1020" width="760" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#F9A825; font-size:28px; text-align:center; line-height:1.8;">
+      از جنبش فرانسه آزاد تا کنگره ملی آفریقا
+      <br/>
+      همه با این چالش روبرو بوده‌اند
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1260" width="960" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.6); font-size:20px; text-align:center;">
+      کتاب «دادگاه در سایه» ◄ لینک در بیو
+    </div>
+  </foreignObject>
+</svg>

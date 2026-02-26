@@ -1,0 +1,51 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#F3F4F6" />
+  
+  <rect width="1080" height="220" fill="#2E7D32" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      عدالت انتقالی: التیام زخم‌های ملی
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #1F2937;">
+      
+      <p style="font-size: 40px; line-height: 1.5; text-align: center; margin-bottom: 60px;">
+        عبور از گذشته بدون فراموشی؛ چهار ستون اصلی برای بازسازی اعتماد عمومی در ایران فردا:
+      </p>
+
+      <!-- 4 Pillars Grid -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+        
+        <div style="background: white; padding: 30px; border-radius: 20px; border-top: 10px solid #1A237E; box-shadow: 0 10px 20px rgba(0,0,0,0.05);">
+          <h4 style="color: #1A237E; font-size: 38px; margin: 0 0 10px 0;">۱. کشف حقیقت</h4>
+          <p style="font-size: 26px; line-height: 1.4; margin: 0;">شنیدن صدای قربانیان و ثبت دقیق وقایع تاریخی برای جلوگیری از تحریف.</p>
+        </div>
+
+        <div style="background: white; padding: 30px; border-radius: 20px; border-top: 10px solid #C62828; box-shadow: 0 10px 20px rgba(0,0,0,0.05);">
+          <h4 style="color: #C62828; font-size: 38px; margin: 0 0 10px 0;">۲. عدالت کیفری</h4>
+          <p style="font-size: 26px; line-height: 1.4; margin: 0;">محاکمه عادلانه و شفاف آمران و عاملان جنایات در دادگاه‌های دارای صلاحیت.</p>
+        </div>
+
+        <div style="background: white; padding: 30px; border-radius: 20px; border-top: 10px solid #F9A825; box-shadow: 0 10px 20px rgba(0,0,0,0.05);">
+          <h4 style="color: #F9A825; font-size: 38px; margin: 0 0 10px 0;">۳. جبران خسارت</h4>
+          <p style="font-size: 26px; line-height: 1.4; margin: 0;">اعاده حیثیت و پرداخت غرامت به قربانیان و خانواده‌های آسیب‌دیده.</p>
+        </div>
+
+        <div style="background: white; padding: 30px; border-radius: 20px; border-top: 10px solid #2E7D32; box-shadow: 0 10px 20px rgba(0,0,0,0.05);">
+          <h4 style="color: #2E7D32; font-size: 38px; margin: 0 0 10px 0;">۴. اصلاح نهادی</h4>
+          <p style="font-size: 26px; line-height: 1.4; margin: 0;">پاکسازی نهادهای امنیتی و قضایی برای تضمین عدم تکرار جنایت.</p>
+        </div>
+
+      </div>
+
+      <div style="margin-top: 60px; text-align: center;">
+        <p style="font-size: 36px; font-weight: bold; color: #2E7D32; border: 3px dashed #2E7D32; padding: 25px; border-radius: 50px;">
+          عدالت، انتقام نیست؛ بلکه بنیانِ صلحِ پایدار است.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

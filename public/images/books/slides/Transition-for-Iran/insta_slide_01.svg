@@ -1,0 +1,26 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D47A1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#grad1)" />
+  
+  <foreignObject x="0" y="300" width="1080" height="800">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; padding: 0 50px;">
+      <h1 style="color: #F9A825; font-size: 85px; margin-bottom: 30px; font-weight: 900;">مدیریت دوران گذار ایران</h1>
+      <p style="font-size: 55px; margin-bottom: 50px; line-height: 1.4;">از بحران فرساینده تا استقرار یک دموکراسی پایدار و پویا</p>
+      <div style="width: 400px; height: 4px; background: #F9A825; margin: 0 auto 50px;"></div>
+      <p style="color: #E3F2FD; font-size: 42px; line-height: 1.6;">یک راهنمای علمی و عملی برای ترسیم آینده‌ای متفاوت؛ فراتر از تغییر سیاسی، به سوی بازسازی نهادی.</p>
+    </div>
+  </foreignObject>
+  
+  <!-- Footer Button -->
+  <rect x="340" y="1150" width="400" height="80" rx="40" fill="#F9A825" />
+  <foreignObject x="340" y="1150" width="400" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: #1A237E; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; font-size: 35px; font-weight: bold; line-height: 80px;">
+      ورق بزنید
+    </div>
+  </foreignObject>
+</svg>

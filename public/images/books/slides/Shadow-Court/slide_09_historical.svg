@@ -1,0 +1,73 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs>
+    <linearGradient id="bg9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1642"/>
+      <stop offset="100%" style="stop-color:#1A237E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#bg9)"/>
+  <circle cx="540" cy="400" r="200" fill="none" stroke="#F9A825" stroke-width="3" opacity="0.3"/>
+  <circle cx="540" cy="400" r="280" fill="none" stroke="#F9A825" stroke-width="2" opacity="0.2"/>
+  <circle cx="540" cy="400" r="360" fill="none" stroke="#F9A825" stroke-width="1" opacity="0.1"/>
+  <foreignObject x="60" y="100" width="960" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#F9A825; font-size:24px; text-align:center;">
+      نمونه‌های تاریخی
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="200" width="960" height="400">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:48px; font-weight:bold; text-align:center; line-height:1.6;">
+      جنبش‌هایی که
+      <br/>
+      <span style="color:#F9A825;">قبل از پیروزی</span>
+      <br/>
+      نهاد قضایی ساختند
+    </div>
+  </foreignObject>
+  <rect x="100" y="680" width="400" height="200" rx="15" fill="rgba(255,255,255,0.1)"/>
+  <foreignObject x="120" y="700" width="360" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:center; line-height:1.8;">
+      <span style="color:#F9A825; font-size:32px;">🇫🇷</span>
+      <br/>
+      <span style="font-weight:bold;">فرانسه آزاد</span>
+      <br/>
+      Free French
+    </div>
+  </foreignObject>
+  <rect x="580" y="680" width="400" height="200" rx="15" fill="rgba(255,255,255,0.1)"/>
+  <foreignObject x="600" y="700" width="360" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:center; line-height:1.8;">
+      <span style="color:#F9A825; font-size:32px;">🇿🇦</span>
+      <br/>
+      <span style="font-weight:bold;">کنگره ملی آفریقا</span>
+      <br/>
+      ANC
+    </div>
+  </foreignObject>
+  <rect x="100" y="920" width="400" height="200" rx="15" fill="rgba(255,255,255,0.1)"/>
+  <foreignObject x="120" y="940" width="360" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:center; line-height:1.8;">
+      <span style="color:#F9A825; font-size:32px;">🇵🇱</span>
+      <br/>
+      <span style="font-weight:bold;">دولت تبعیدی لهستان</span>
+      <br/>
+      ۱۹۳۹-۱۹۹۰
+    </div>
+  </foreignObject>
+  <rect x="580" y="920" width="400" height="200" rx="15" fill="rgba(255,255,255,0.1)"/>
+  <foreignObject x="600" y="940" width="360" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:center; line-height:1.8;">
+      <span style="color:#F9A825; font-size:32px;">🇪🇺</span>
+      <br/>
+      <span style="font-weight:bold;">دادگاه راسل</span>
+      <br/>
+      Russell Tribunal
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1180" width="960" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.6); font-size:24px; text-align:center; line-height:1.8;">
+      همه آن‌ها بدون داشتن حاکمیت رسمی
+      <br/>
+      ساختار قضایی ایجاد کردند
+    </div>
+  </foreignObject>
+</svg>

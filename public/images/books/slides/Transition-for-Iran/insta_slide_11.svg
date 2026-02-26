@@ -1,0 +1,61 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#E8EAF6" />
+  
+  <rect width="1080" height="220" fill="#1A237E" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: #F9A825; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      جدول زمانی ۲۴ ماهه‌ی گذار
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl;">
+      
+      <p style="font-size: 38px; line-height: 1.5; text-align: center; color: #1A237E; margin-bottom: 50px;">
+        گذار دموکراتیک یک فرآیند گام‌به‌گام است، نه یک اتفاق آنی. برآورد زمانی محتمل برای استقرار دولت جدید:
+      </p>
+
+      <!-- Timeline Table -->
+      <div style="background: white; border-radius: 20px; border-left: 10px solid #1A237E; padding: 40px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
+        
+        <div style="display: flex; margin-bottom: 30px; border-bottom: 1px solid #EEE; padding-bottom: 20px;">
+          <div style="width: 180px; font-weight: 900; font-size: 45px; color: #1A237E;">ماه ۵</div>
+          <div style="font-size: 35px; color: #37474F; padding-right: 20px;">تشکیل شورای انتقالی و تثبیت امنیت</div>
+        </div>
+
+        <div style="display: flex; margin-bottom: 30px; border-bottom: 1px solid #EEE; padding-bottom: 20px;">
+          <div style="width: 180px; font-weight: 900; font-size: 45px; color: #1A237E;">ماه ۱۱</div>
+          <div style="font-size: 35px; color: #37474F; padding-right: 20px;">برگزاری رفراندوم تعیین ساختار نظام</div>
+        </div>
+
+        <div style="display: flex; margin-bottom: 30px; border-bottom: 1px solid #EEE; padding-bottom: 20px;">
+          <div style="width: 180px; font-weight: 900; font-size: 45px; color: #1A237E;">ماه ۱۸</div>
+          <div style="font-size: 35px; color: #37474F; padding-right: 20px;">تصویب قانون اساسی جدید</div>
+        </div>
+
+        <div style="display: flex;">
+          <div style="width: 180px; font-weight: 900; font-size: 45px; color: #C62828;">ماه ۲۴</div>
+          <div style="font-size: 35px; color: #37474F; padding-right: 20px; font-weight: bold;">برگزاری نخستین انتخابات آزاد و تشکیل دولت</div>
+        </div>
+
+      </div>
+
+      <!-- Scenarios -->
+      <div style="margin-top: 50px; display: flex; justify-content: space-around;">
+        <div style="text-align: center; background: #FFF9C4; padding: 20px; border-radius: 15px; width: 30%;">
+          <div style="font-size: 24px; color: #795548;">خوش‌بینانه</div>
+          <div style="font-size: 32px; font-weight: bold; color: #1A237E;">۱۸ ماه</div>
+        </div>
+        <div style="text-align: center; background: #E1F5FE; padding: 20px; border-radius: 15px; width: 30%;">
+          <div style="font-size: 24px; color: #795548;">محتمل</div>
+          <div style="font-size: 32px; font-weight: bold; color: #1A237E;">۲۴ ماه</div>
+        </div>
+        <div style="text-align: center; background: #FFEBEE; padding: 20px; border-radius: 15px; width: 30%;">
+          <div style="font-size: 24px; color: #795548;">بدبینانه</div>
+          <div style="font-size: 32px; font-weight: bold; color: #1A237E;">۳۶ ماه</div>
+        </div>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

@@ -1,0 +1,45 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#E8F5E9" />
+  
+  <rect width="1080" height="220" fill="#2E7D32" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      درس‌هایی از بهارِ عربی
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #1B5E20;">
+      
+      <p style="font-size: 38px; line-height: 1.5; text-align: center; margin-bottom: 50px;">
+        چرا تونس (در ابتدا) پیروز شد و مصر شکست خورد؟ مطالعه‌ی انتقادی برای ایران:
+      </p>
+
+      <div style="display: flex; gap: 20px; margin-bottom: 50px;">
+        <!-- Tunisia -->
+        <div style="width: 48%; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 10px solid #C62828;">
+          <h3 style="color: #C62828; font-size: 36px; margin: 0 0 10px 0;">تونس: اجماع ملی</h3>
+          <p style="font-size: 26px; line-height: 1.4; margin: 0; color: #37474F;">
+            <span style="font-weight: bold;">کلید:</span> نقشِ وساطتِ جامعه‌ی مدنی (اتحادیه‌ها) و توافق میانِ نیروهای سکولار و مذهبی بر سرِ «قانون اساسی مدرن».
+          </p>
+        </div>
+        <!-- Egypt -->
+        <div style="width: 48%; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 10px solid #455A64;">
+          <h3 style="color: #455A64; font-size: 36px; margin: 0 0 10px 0;">مصر: دوقطبی‌سازی</h3>
+          <p style="font-size: 26px; line-height: 1.4; margin: 0; color: #37474F;">
+            <span style="font-weight: bold;">شکست:</span> شکاف عمیقِ ملت به دو پاره (اخوانی/لائیک) که راه را برای بازگشتِ «منجیِ نظامی» باز کرد.
+          </p>
+        </div>
+      </div>
+
+      <div style="background: white; padding: 40px; border-radius: 25px; box-shadow: 0 10px 30px rgba(46, 125, 50, 0.1);">
+        <h4 style="font-size: 38px; color: #1B5E20; margin: 0 0 15px 0;">درسِ اصلی برای ایران:</h4>
+        <p style="font-size: 32px; line-height: 1.6; color: #1B5E20; margin: 0;">
+          ۱. دموکراسی بدونِ <span style="font-weight: bold;">نظم و امنیت</span> فرو می‌پاشد. <br/>
+          ۲. حذف‌گرایی و انحصارطلبی (حتی توسط اپوزیسیون) به «بازگشت استبداد» منجر می‌شود.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

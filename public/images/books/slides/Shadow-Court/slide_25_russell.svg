@@ -1,0 +1,59 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#0D1642"/>
+  <rect x="0" y="0" width="1080" height="300" fill="#1A237E"/>
+  <foreignObject x="60" y="40" width="960" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#F9A825; font-size:24px; text-align:center;">
+      📋 مطالعه‌ی موردی
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="120" width="960" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:42px; font-weight:bold; text-align:center; line-height:1.5;">
+      دادگاه راسل
+      <br/>
+      <span style="font-size:28px; color:#F9A825;">Russell Tribunal (1966-1967)</span>
+    </div>
+  </foreignObject>
+  <rect x="80" y="340" width="920" height="200" rx="15" fill="rgba(249,168,37,0.15)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="100" y="360" width="880" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:right; line-height:2;">
+      <span style="color:#F9A825; font-weight:bold;">چه بود؟</span>
+      <br/>
+      دادگاهی غیررسمی که برتراند راسل و ژان‌پل سارتر
+      <br/>
+      برای بررسی جنایات جنگ ویتنام تشکیل دادند
+    </div>
+  </foreignObject>
+  <rect x="80" y="580" width="920" height="200" rx="15" fill="rgba(46,125,50,0.15)" stroke="#2E7D32" stroke-width="2"/>
+  <foreignObject x="100" y="600" width="880" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:right; line-height:2;">
+      <span style="color:#2E7D32; font-weight:bold;">چه کرد؟</span>
+      <br/>
+      بدون قدرت اجرایی، اما با اعتبار اخلاقی
+      <br/>
+      جنایات جنگی آمریکا را مستند و محکوم کرد
+    </div>
+  </foreignObject>
+  <rect x="80" y="820" width="920" height="200" rx="15" fill="rgba(255,255,255,0.08)" stroke="#FFFFFF" stroke-width="2"/>
+  <foreignObject x="100" y="840" width="880" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-weight:bold;">چه تأثیری داشت؟</span>
+      <br/>
+      افکار عمومی جهانی را تغییر داد
+      <br/>
+      الگویی برای دادگاه‌های مردمی بعدی شد
+    </div>
+  </foreignObject>
+  <rect x="80" y="1060" width="920" height="160" rx="15" fill="#F9A825"/>
+  <foreignObject x="100" y="1080" width="880" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:28px; font-weight:bold; text-align:center; line-height:1.8;">
+      دادگاه در سایه = نسخه‌ی ایرانی و پیشرفته‌تر
+      <br/>
+      <span style="font-size:22px; font-weight:normal;">با ساختار حقوقی مدرن و فرایند دادرسی واقعی</span>
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1260" width="960" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.5); font-size:20px; text-align:center;">
+      📖 فصل ۸ نمونه‌های مشابه — لینک در بیو
+    </div>
+  </foreignObject>
+</svg>

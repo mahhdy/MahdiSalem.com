@@ -1,0 +1,35 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#212121" />
+  
+  <rect width="1080" height="220" fill="#B71C1C" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      هزینه‌ی گزافِ «تداومِ وضعِ موجود»
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: white;">
+      
+      <p style="font-size: 38px; line-height: 1.5; text-align: center; color: #FFCDD2; margin-bottom: 55px;">
+        مطالعه‌ی انتقادی نشان می‌دهد که هزینه کردن برای «تثبیتِ نظامِ فعلی» از هزینه‌های «گذار دموکراتیک» بسیار بیشتر است:
+      </p>
+
+      <div style="background: rgba(255,255,255,0.05); padding: 40px; border-radius: 20px; border-right: 12px solid #FF5252;">
+        <ul style="font-size: 32px; line-height: 1.8; margin: 0; padding-right: 25px;">
+          <li style="margin-bottom: 20px;"><strong>سقوط سرمایه‌گذاری:</strong> خروج سالانه بیش از ۱۰ میلیارد دلار سرمایه از کشور.</li>
+          <li style="margin-bottom: 20px;"><strong>فرار مغزها:</strong> مهاجرت نخبگان که هزینه‌ای معادل ۵۰ میلیارد دلار در سال به اقتصاد تحمیل می‌کند.</li>
+          <li style="margin-bottom: 20px;"><strong>تخریب زیست‌محیطی:</strong> نابودی منابع آب و خاک به دلیل مدیریتِ رانتی و کوتاه‌مدت.</li>
+          <li><strong>تورمِ سیستمی:</strong> کاهش مداوم قدرت خرید مردم به واسطه‌ی ناترازی‌های بانکی.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 60px; text-align: center; border: 2px dashed #FF5252; padding: 30px; border-radius: 50px;">
+        <p style="font-size: 36px; font-weight: bold; color: #F9A825;">
+          گذار، یک هزینه‌ی سیاسی نیست؛ یک «سرمایه‌گذاری ملی» است.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

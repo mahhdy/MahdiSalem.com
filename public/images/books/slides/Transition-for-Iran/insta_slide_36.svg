@@ -1,0 +1,34 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="#1A237E" />
+  
+  <!-- Decorative Elements -->
+  <circle cx="1080" cy="0" r="400" fill="#283593" opacity="0.6" />
+  <circle cx="0" cy="1350" r="300" fill="#F9A825" opacity="0.2" />
+  
+  <!-- Title -->
+  <text x="540" y="300" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="#F9A825" text-anchor="middle" direction="rtl">
+    آیا می‌دانید؟
+  </text>
+  
+  <!-- Main Content -->
+  <text x="540" y="550" font-family="Arial, sans-serif" font-size="50" fill="white" text-anchor="middle" direction="rtl">
+    <tspan x="540" dy="1.2em">مدیریت دوران گذار، کلید رسیدن به</tspan>
+    <tspan x="540" dy="1.2em">ثبات و دموکراسی در ایران است.</tspan>
+  </text>
+  
+  <!-- Fact Box -->
+  <rect x="140" y="800" width="800" height="300" rx="30" fill="white" opacity="0.1" stroke="#F9A825" stroke-width="2"/>
+  <text x="540" y="880" font-family="Arial, sans-serif" font-size="40" fill="#F9A825" text-anchor="middle" direction="rtl">
+    تجربه کشورهای دیگر نشان داده است که:
+  </text>
+  <text x="540" y="960" font-family="Arial, sans-serif" font-size="35" fill="white" text-anchor="middle" direction="rtl">
+    <tspan x="540" dy="1.2em">برنامه‌ریزی دقیق برای فازهای انتقالی،</tspan>
+    <tspan x="540" dy="1.2em">ریسک بازگشت به استبداد را ۶۰٪ کاهش می‌دهد.</tspan>
+  </text>
+  
+  <!-- Call to action -->
+  <text x="540" y="1250" font-family="Arial, sans-serif" font-size="30" fill="#B0BEC5" text-anchor="middle" direction="rtl">
+    مطالعه بیشتر در کتاب «مدیریت دوران گذار ایران»
+  </text>
+</svg>

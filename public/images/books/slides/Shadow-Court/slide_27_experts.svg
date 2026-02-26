@@ -1,0 +1,74 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#0D1642"/>
+  <foreignObject x="60" y="60" width="960" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#F9A825; font-size:40px; font-weight:bold; text-align:center; line-height:1.5;">
+      چه کسانی می‌توانند عضو باشند؟
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="180" width="960" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.7); font-size:24px; text-align:center;">
+      ایرانیان شناخته‌شده با سوابق آکادمیک و بین‌المللی
+    </div>
+  </foreignObject>
+  <rect x="80" y="300" width="440" height="200" rx="15" fill="rgba(249,168,37,0.1)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="100" y="320" width="400" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:22px; text-align:center; line-height:2;">
+      <span style="color:#F9A825; font-size:36px;">⚖️</span>
+      <br/>
+      <span style="font-weight:bold; font-size:26px;">حقوق‌دانان بین‌المللی</span>
+      <br/>
+      متخصصان حقوق بشر و کیفری
+    </div>
+  </foreignObject>
+  <rect x="560" y="300" width="440" height="200" rx="15" fill="rgba(46,125,50,0.1)" stroke="#2E7D32" stroke-width="2"/>
+  <foreignObject x="580" y="320" width="400" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:22px; text-align:center; line-height:2;">
+      <span style="color:#2E7D32; font-size:36px;">🎓</span>
+      <br/>
+      <span style="font-weight:bold; font-size:26px;">اساتید دانشگاهی</span>
+      <br/>
+      علوم سیاسی، حقوق، جامعه‌شناسی
+    </div>
+  </foreignObject>
+  <rect x="80" y="540" width="440" height="200" rx="15" fill="rgba(26,35,126,0.3)" stroke="#FFFFFF" stroke-width="2"/>
+  <foreignObject x="100" y="560" width="400" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:22px; text-align:center; line-height:2;">
+      <span style="font-size:36px;">🕊️</span>
+      <br/>
+      <span style="font-weight:bold; font-size:26px;">فعالان حقوق بشر</span>
+      <br/>
+      با سابقه‌ی مستندسازی جرایم
+    </div>
+  </foreignObject>
+  <rect x="560" y="540" width="440" height="200" rx="15" fill="rgba(192,57,43,0.1)" stroke="#C0392B" stroke-width="2"/>
+  <foreignObject x="580" y="560" width="400" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:22px; text-align:center; line-height:2;">
+      <span style="font-size:36px;">📊</span>
+      <br/>
+      <span style="font-weight:bold; font-size:26px;">تحلیلگران استراتژیک</span>
+      <br/>
+      متخصصان سیاست خاورمیانه
+    </div>
+  </foreignObject>
+  <rect x="80" y="800" width="920" height="300" rx="15" fill="rgba(255,255,255,0.05)"/>
+  <foreignObject x="100" y="830" width="880" height="250">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:24px; text-align:center; line-height:2.2;">
+      <span style="color:#F9A825; font-weight:bold; font-size:28px;">معیارهای عضویت:</span>
+      <br/><br/>
+      <span style="color:#F9A825;">●</span> شناخته‌شدن در سطح آکادمیک و جهانی
+      <br/>
+      <span style="color:#F9A825;">●</span> استقلال از جناح‌بندی‌های سیاسی
+      <br/>
+      <span style="color:#F9A825;">●</span> تعهد به حقوق بشر و اصول دموکراتیک
+      <br/>
+      <span style="color:#F9A825;">●</span> خدمت فردی بر پایه‌ی تخصص
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1150" width="960" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.6); font-size:24px; text-align:center; line-height:1.8;">
+      فهرست پیشنهادی در فصل ۱۰ کتاب
+      <br/>
+      <span style="font-size:20px; color:rgba(255,255,255,0.4);">📖 «دادگاه در سایه» | لینک در بیو</span>
+    </div>
+  </foreignObject>
+</svg>

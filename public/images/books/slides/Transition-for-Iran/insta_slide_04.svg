@@ -1,0 +1,32 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#F9A825" />
+  <rect x="50" y="50" width="980" height="1250" fill="none" stroke="#1A237E" stroke-width="12" />
+  
+  <foreignObject x="0" y="200" width="1080" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: #1A237E; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; font-size: 85px; font-weight: 900;">
+      همین امروز بخوانید
+    </div>
+  </foreignObject>
+
+  <!-- Book Visual -->
+  <g transform="translate(340, 420)">
+    <rect width="400" height="550" fill="#1A237E" rx="15" />
+    <foreignObject x="0" y="100" width="400" height="400">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color: #F9A825; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; padding: 20px;">
+        <p style="font-size: 45px; margin: 0;">مدیریت دوران</p>
+        <p style="font-size: 70px; font-weight: bold; color: white; margin: 10px 0;">گذار ایران</p>
+      </div>
+    </foreignObject>
+  </g>
+
+  <foreignObject x="0" y="1020" width="1080" height="300">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: #1A237E; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; padding: 0 100px;">
+      <h3 style="font-size: 55px; font-weight: bold; margin: 0 0 30px 0;">مهدی سالم</h3>
+      <p style="font-size: 38px; margin-bottom: 50px;">در دسترس در تمامی پلتفرم‌های کتاب الکترونیک و وب‌سایت‌های معتبر</p>
+      
+      <div style="background: #1A237E; color: white; width: 480px; height: 90px; line-height: 90px; border-radius: 45px; margin: 0 auto; font-size: 35px; font-weight: bold;">
+        لینک در بیو
+      </div>
+    </div>
+  </foreignObject>
+</svg>

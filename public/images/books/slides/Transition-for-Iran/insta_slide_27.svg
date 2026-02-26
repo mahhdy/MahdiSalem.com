@@ -1,0 +1,44 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#F5F5F5" />
+  
+  <rect width="1080" height="220" fill="#424242" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      بهایِ سیاسیِ صلح: عفو یا مجازات؟
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #212121;">
+      
+      <p style="font-size: 40px; line-height: 1.5; text-align: center; margin-bottom: 55px; color: #616161;">
+        دشوارترین پرسش در هر گذار: با کارگزارانِ نظامِ سابق چه کنیم؟ مطالعه‌ی انتقادیِ مدل‌های موفق:
+      </p>
+
+      <div style="background: white; padding: 40px; border-radius: 25px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); margin-bottom: 50px;">
+        <h4 style="font-size: 38px; color: #C62828; margin: 0 0 20px 0;">اصلِ «مصونیتِ مشروط» در قبالِ حقیقت:</h4>
+        <p style="font-size: 32px; line-height: 1.6; color: #424242; margin: 0;">
+          مشابه مدل آفریقای جنوبی، عفو می‌تواند ابزاری برای <span style="font-weight: bold;">جلوگیری از جنگ داخلی</span> باشد، به شرطی که فرد تمامیِ حقیقت را افشا کرده و دستانش به خونِ بی‌گناهان آلوده نباشد.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+        <div style="background: #E8F5E9; padding: 25px; border-radius: 15px; border-top: 8px solid #2E7D32;">
+          <h5 style="font-size: 32px; color: #1B5E20; margin: 0 0 10px 0;">مجازاتِ آمران</h5>
+          <p style="font-size: 26px; color: #388E3C; margin: 0;">محاکمه‌ی لایه‌ی اول مسئولین که فرمانِ سرکوب صادر کرده‌اند.</p>
+        </div>
+        <div style="background: #FFF3E0; padding: 25px; border-radius: 15px; border-top: 8px solid #EF6C00;">
+          <h5 style="font-size: 32px; color: #E65100; margin: 0 0 10px 0;">ادغامِ بدنه</h5>
+          <p style="font-size: 26px; color: #F57C00; margin: 0;">عفو عمومی برای بدنه‌ی اجرایی و اداری که صرفاً مجریِ فرامین بوده‌اند.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 60px; text-align: center; border-top: 2px solid #EEE; padding-top: 30px;">
+        <p style="font-size: 34px; font-weight: bold; color: #424242;">
+          عدالتِ انتقالی، پلی است از «خشمِ گذشته» به «امنیتِ آینده».
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

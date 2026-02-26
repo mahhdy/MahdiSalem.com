@@ -1,11 +1,11 @@
 ---
-title: "نمونه صوتی"
-description: "نمونه‌ای از محتوای صوتی با پلیر سفارشی HTML5"
+title: نمونه صوتی
+description: نمونه‌ای از محتوای صوتی با پلیر سفارشی HTML5
 lang: fa
-publishDate: 2025-03-02
+publishDate: 2025-03-02T00:00:00.000Z
 type: audio
-mediaUrl: "/media/example-audio.mp3"
-coverImage: "/images/mic-sample.svg"
+mediaUrl: /media/example-audio.mp3
+coverImage: /images/mic-sample.svg
 duration: 300
 platform: self-hosted
 categories:
@@ -13,7 +13,7 @@ categories:
 tags:
   - صوتی
   - نمونه
-draft: false
+draft: true
 hidden: false
 interface: epistemology
 showInContents: true

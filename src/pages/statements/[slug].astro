@@ -43,22 +43,59 @@ const typeLabels: Record<string, string> = {
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
   <article class="container-narrow py-16">
-    <header class="mb-8">
-      <div class="flex items-center gap-3 mb-3">
-        <span
-          class="text-xs px-2.5 py-1 rounded-full bg-accent/10 text-accent dark:bg-accent-light/10 dark:text-accent-light font-medium"
-        >
-          {typeLabels[entry.data.type] ?? entry.data.type}
-        </span>
-        <time
-          datetime={entry.data.publishDate.toISOString()}
-          class="text-sm text-text-muted dark:text-text-dark-muted"
-        >
-          {dateFormatter.format(entry.data.publishDate)}
-        </time>
+    <header
+      class={`mb-8 ${entry.data.coverImage && entry.data.imageDisplay === "side" ? "flex flex-col sm:flex-row sm:items-start gap-6" : entry.data.coverImage && entry.data.imageDisplay === "thumbnail" ? "flex items-start gap-4" : ""}`}
+    >
+      {
+        entry.data.coverImage && entry.data.imageDisplay === "side" && (
+          <img
+            src={entry.data.coverImage}
+            alt={entry.data.title}
+            class="w-full sm:w-40 md:w-48 h-auto rounded-xl object-cover shrink-0"
+            loading="lazy"
+          />
+        )
+      }
+
+      {
+        entry.data.coverImage && entry.data.imageDisplay === "thumbnail" && (
+          <img
+            src={entry.data.coverImage}
+            alt={entry.data.title}
+            class="w-16 h-16 rounded-lg object-cover shrink-0 mt-1"
+            loading="lazy"
+          />
+        )
+      }
+
+      <div class="flex-1">
+        <div class="flex items-center gap-3 mb-3">
+          <span
+            class="text-xs px-2.5 py-1 rounded-full bg-accent/10 text-accent dark:bg-accent-light/10 dark:text-accent-light font-medium"
+          >
+            {typeLabels[entry.data.type] ?? entry.data.type}
+          </span>
+          <time
+            datetime={entry.data.publishDate.toISOString()}
+            class="text-sm text-text-muted dark:text-text-dark-muted"
+          >
+            {dateFormatter.format(entry.data.publishDate)}
+          </time>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-bold">{entry.data.title}</h1>
       </div>
-      <h1 class="text-3xl md:text-4xl font-bold">{entry.data.title}</h1>
     </header>
+
+    {
+      entry.data.coverImage && entry.data.imageDisplay === "full" && (
+        <img
+          src={entry.data.coverImage}
+          alt={entry.data.title}
+          class="w-full rounded-xl mb-8 object-cover max-h-96"
+          loading="lazy"
+        />
+      )
+    }
 
     <div class="prose">
       {

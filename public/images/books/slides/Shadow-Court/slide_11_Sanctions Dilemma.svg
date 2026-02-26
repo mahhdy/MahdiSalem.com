@@ -1,0 +1,66 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#FAFAFA"/>
+  <rect width="1080" height="180" fill="#C0392B"/>
+  <foreignObject x="60" y="50" width="960" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:36px; font-weight:bold; text-align:center; line-height:1.5;">
+      معضل تحریم‌ها
+      <br/>
+      <span style="font-size:24px; font-weight:normal;">یکی از سخت‌ترین تصمیم‌ها</span>
+    </div>
+  </foreignObject>
+  <rect x="60" y="230" width="460" height="400" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 20px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="230" width="460" height="10" fill="#C0392B"/>
+  <foreignObject x="80" y="260" width="420" height="350">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:24px; text-align:right; line-height:2;">
+      <span style="font-weight:bold; font-size:28px; color:#C0392B;">مخالفان می‌گویند:</span>
+      <br/><br/>
+      • زندگی مردم عادی سخت می‌شود
+      <br/>
+      • دارو و غذا کمیاب می‌شود
+      <br/>
+      • طبقه متوسط نابود می‌شود
+      <br/>
+      • رژیم از تحریم سود می‌برد
+    </div>
+  </foreignObject>
+  <rect x="560" y="230" width="460" height="400" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 20px rgba(0,0,0,0.08))"/>
+  <rect x="560" y="230" width="460" height="10" fill="#2E7D32"/>
+  <foreignObject x="580" y="260" width="420" height="350">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:24px; text-align:right; line-height:2;">
+      <span style="font-weight:bold; font-size:28px; color:#2E7D32;">موافقان می‌گویند:</span>
+      <br/><br/>
+      • رژیم را تضعیف می‌کند
+      <br/>
+      • منابع سرکوب کم می‌شود
+      <br/>
+      • فشار بین‌المللی لازم است
+      <br/>
+      • بدون تحریم، گذار ممکن نیست
+    </div>
+  </foreignObject>
+  <rect x="60" y="680" width="960" height="200" rx="15" fill="#F9A825"/>
+  <foreignObject x="80" y="700" width="920" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:30px; font-weight:bold; text-align:center; line-height:1.8;">
+      چه کسی تصمیم می‌گیرد؟
+      <br/>
+      <span style="font-size:24px; font-weight:normal;">با چه فرایندی؟ بر اساس چه معیاری؟</span>
+    </div>
+  </foreignObject>
+  <rect x="60" y="930" width="960" height="280" rx="15" fill="#1A237E"/>
+  <foreignObject x="80" y="960" width="920" height="230">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:center; line-height:2;">
+      <span style="color:#F9A825; font-weight:bold;">دادگاه در سایه پیشنهاد می‌دهد:</span>
+      <br/><br/>
+      بررسی هر تحریم با آزمون تناسب و ضرورت
+      <br/>
+      ثبت دلایل موافق و مخالف
+      <br/>
+      توصیه‌ی مستند و قابل بازنگری
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1250" width="960" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#7F8C8D; font-size:20px; text-align:center;">
+      📖 فصل ۳ کتاب «دادگاه در سایه»
+    </div>
+  </foreignObject>
+</svg>

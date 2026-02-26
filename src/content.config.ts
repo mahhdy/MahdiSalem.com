@@ -91,6 +91,9 @@ const statements = defineCollection({
     subject: z.union([z.string(), z.array(z.string())]).optional(),
     interface: z.string().optional(), // Category taxonomy field
     tags: z.array(z.string()).optional(),
+    coverImage: z.string().optional(),
+    imageDisplay: z.enum(['full', 'side', 'thumbnail', 'hidden']).default('full'), // How cover image is displayed on the detail page
+    cardImage: z.enum(['show', 'hidden']).default('show'), // Whether cover image is shown in card/list views
     pdfUrl: z.string().optional(),
     pdfOnly: z.boolean().default(false),
     hasSlide: z.boolean().default(false),
@@ -111,6 +114,9 @@ const wiki = defineCollection({
     order: z.number().default(0),
     subject: z.union([z.string(), z.array(z.string())]).optional(),
     tags: z.array(z.string()).optional(),
+    coverImage: z.string().optional(),
+    imageDisplay: z.enum(['full', 'side', 'thumbnail', 'hidden']).default('full'), // How cover image is displayed on the detail page
+    cardImage: z.enum(['show', 'hidden']).default('show'), // Whether cover image is shown in card/list views
     lastUpdated: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
     draft: z.boolean().default(false),

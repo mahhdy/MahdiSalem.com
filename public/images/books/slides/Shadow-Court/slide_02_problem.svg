@@ -1,0 +1,44 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#FAFAFA"/>
+  <rect width="1080" height="180" fill="#1A237E"/>
+  <foreignObject x="40" y="40" width="1000" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:38px; font-weight:bold; text-align:center; line-height:1.6;">
+      مشکل بزرگ اپوزیسیون ایران
+    </div>
+  </foreignObject>
+  <rect x="60" y="220" width="960" height="280" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 20px rgba(0,0,0,0.08))"/>
+  <foreignObject x="80" y="240" width="920" height="240">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:32px; text-align:right; line-height:1.9;">
+      <span style="color:#C0392B; font-weight:bold;">خلأ مشروعیت‌بخشی حقوقی:</span>
+      <br/><br/>
+      تصمیم‌هایی با ابعاد قضایی، بدون هیچ فرایند دادرسی ساختارمند اتخاذ می‌شوند
+    </div>
+  </foreignObject>
+  <rect x="60" y="540" width="960" height="400" rx="15" fill="#1A237E" opacity="0.05"/>
+  <foreignObject x="80" y="560" width="920" height="360">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:28px; text-align:right; line-height:2.2;">
+      <span style="color:#F9A825;">●</span> حمایت از تحریم‌ها
+      <br/>
+      <span style="color:#F9A825;">●</span> مستندسازی جرایم حکومتی
+      <br/>
+      <span style="color:#F9A825;">●</span> درخواست اخراج وابستگان رژیم
+      <br/>
+      <span style="color:#F9A825;">●</span> موضع‌گیری درباره مداخله بین‌المللی
+      <br/><br/>
+      <span style="font-size:24px; color:#C0392B;">همه بدون فرایند حقوقی انجام می‌شوند!</span>
+    </div>
+  </foreignObject>
+  <rect x="60" y="980" width="960" height="120" rx="15" fill="#2E7D32"/>
+  <foreignObject x="80" y="1000" width="920" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:30px; font-weight:bold; text-align:center; line-height:1.6;">
+      راه‌حل: دادگاه در سایه
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1130" width="960" height="180">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#7F8C8D; font-size:22px; text-align:center; line-height:1.8;">
+      نهاد شبه‌قضایی برای مشروعیت‌بخشی به تصمیم‌های سخت
+      <br/>
+      با رویه‌های حقوق بشری و بین‌المللی
+    </div>
+  </foreignObject>
+</svg>

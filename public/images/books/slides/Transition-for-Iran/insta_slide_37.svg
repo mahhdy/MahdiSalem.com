@@ -1,0 +1,98 @@
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a"/>
+      <stop offset="50%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1e40af"/>
+    </linearGradient>
+    <linearGradient id="phaseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="1080" height="1920" rx="40" fill="url(#bgGrad)"/>
+  
+  <!-- Header -->
+  <text x="540" y="280" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+        font-size="64" font-weight="bold" fill="#ffffff" letter-spacing="1">
+    🚀 فازهای شکوفایی ایران
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="540" y="160" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+        font-size="36" fill="#e0e7ff" letter-spacing="0.5">
+    نقشه راه انقلاب ملی
+  </text>
+  
+  <!-- Phase 1 -->
+  <g transform="translate(100, 420)">
+    <rect width="880" height="220" rx="20" fill="#1e40af" stroke="url(#phaseGrad)" stroke-width="4"/>
+    <text x="440" y="110" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+          font-size="52" font-weight="bold" fill="#fbbf24">یکم، براندازی- سرنگونی - گذار موفق</text>
+    <text x="440" y="165" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+          font-size="32" fill="#e0e7ff"></text>
+    <text x="440" y="200" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+          font-size="28" fill="#bfdbfe"></text>
+    <text x="440" y="240" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+          font-size="28" fill="#bfdbfe"></text>
+  </g>
+  
+  <!-- Phase 2 -->
+  <g transform="translate(100, 700)">
+    <rect width="880" height="280" rx="20" fill="#1e40af" stroke="url(#phaseGrad)" stroke-width="4" opacity="0.9"/>
+    <text x="440" y="110" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+          font-size="52" font-weight="bold" fill="#fbbf24">دوم، تثبیت اولیه، اعتماد سازی، گفتگوی ملی برای ایران آینده</text>
+    <text x="440" y="165" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+          font-size="32" fill="#e0e7ff">تا ۲ سال</text>
+    <text x="440" y="200" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+          font-size="28" fill="#bfdbfe">انتخابات • قانون اساسی • دموکراسی</text>
+  </g>
+  
+  <!-- Phase 3 -->
+  <g transform="translate(100, 980)">
+    <rect width="880" height="220" rx="20" fill="#1e40af" stroke="url(#phaseGrad)" stroke-width="4" opacity="0.8"/>
+    <text x="440" y="110" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+          font-size="52" font-weight="bold" fill="#34d399">سوم، ترسیم سند و نقشه‌ی راه و تصویر نهادی ایران آینده</text>
+    <text x="440" y="165" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+          font-size="32" fill="#d1fae5">میان‌مدت (۲+ سال)</text>
+    <text x="440" y="200" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+          font-size="28" fill="#a7f3d0">اقتصاد پایدار • بازار جهانی</text>
+  </g>
+  
+   <!-- Phase ۴ -->
+  <g transform="translate(100, 1020)">
+    <rect width="880" height="220" rx="20" fill="#1e40af" stroke="url(#phaseGrad)" stroke-width="4" opacity="0.8"/>
+    <text x="440" y="110" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+          font-size="52" font-weight="bold" fill="#34d399">چهارم، تمرین‌های اولیه و آزمون و خطا برای ساختن فردا</text>
+    <text x="440" y="165" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+          font-size="32" fill="#d1fae5">بلندمدت (۲+ سال)</text>
+    <text x="440" y="200" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+          font-size="28" fill="#a7f3d0">اقتصاد پایدار • بازار جهانی</text>
+  </g> <!-- Progress timeline -->
+  <g stroke="#fbbf24" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="200" y1="1360" x2="880" y2="1360"/>
+    <circle cx="240" cy="1360" r="24" fill="#fbbf24"/>
+    <circle cx="540" cy="1360" r="24" fill="#fbbf24"/>
+    <circle cx="840" cy="1360" r="24" fill="#34d399"/>
+  </g>
+  
+  <!-- Footer -->
+  <rect y="1680" width="1080" height="240" fill="#1e3a8a" opacity="0.9"/>
+  <text x="540" y="1750" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+        font-size="32" font-weight="bold" fill="#fbbf24">
+    🇮🇷 ایران آزاد • شکوفا • متحد 🇮🇷
+  </text>
+  <text x="540" y="1800" text-anchor="middle" font-family="XB Zar, Tahoma, sans-serif" 
+        font-size="28" fill="#e0e7ff">
+    #پروژه_شکوفایی #انقلاب_ملی #ایران_آزاد
+  </text>
+  
+  <!-- Decorative stars -->
+  <g fill="#fbbf24" opacity="0.6">
+    <polygon points="50,100 60,120 80,120 65,135 70,155 50,145 30,155 35,135 20,120 40,120" transform="scale(0.8)"/>
+    <polygon points="1030,150 1040,170 1060,170 1045,185 1050,205 1030,195 1010,205 1015,185 1000,170 1020,170" transform="scale(0.8)"/>
+  </g>
+</svg>

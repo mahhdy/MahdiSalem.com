@@ -1,0 +1,73 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#FAFAFA"/>
+  <rect width="1080" height="200" fill="#1A237E"/>
+  <foreignObject x="60" y="40" width="960" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:36px; font-weight:bold; text-align:center; line-height:1.5;">
+      📋 مطالعه‌ی موردی دوم
+      <br/>
+      <span style="font-size:28px; color:#F9A825;">کنگره‌ی ملی آفریقای جنوبی (ANC)</span>
+    </div>
+  </foreignObject>
+  <rect x="60" y="250" width="960" height="320" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 20px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="250" width="960" height="10" fill="#F9A825"/>
+  <foreignObject x="80" y="280" width="920" height="270">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; text-align:right; line-height:2.2;">
+      <span style="font-weight:bold; color:#F9A825; font-size:30px;">زمینه:</span>
+      <br/><br/>
+      ANC در دوران آپارتاید، سازمانی ممنوعه بود
+      <br/>
+      اما ساختارهای شبه‌دولتی از جمله نظام قضایی
+      <br/>
+      در تبعید ایجاد کرد. این ساختارها پس از پیروزی
+      <br/>
+      مبنای «کمیسیون حقیقت و آشتی» شدند
+    </div>
+  </foreignObject>
+  <rect x="60" y="610" width="460" height="320" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 20px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="610" width="10" height="320" rx="5" fill="#2E7D32"/>
+  <foreignObject x="90" y="630" width="410" height="280">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:22px; text-align:right; line-height:2.2;">
+      <span style="font-weight:bold; color:#2E7D32; font-size:26px;">درس‌ها:</span>
+      <br/><br/>
+      <span style="color:#2E7D32;">✓</span> مستندسازی از قبل ضروری بود
+      <br/>
+      <span style="color:#2E7D32;">✓</span> ساختار قضایی اعتبار داد
+      <br/>
+      <span style="color:#2E7D32;">✓</span> انتقال منظم پس از گذار
+      <br/>
+      <span style="color:#2E7D32;">✓</span> آشتی ملی تسهیل شد
+    </div>
+  </foreignObject>
+  <rect x="560" y="610" width="460" height="320" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 20px rgba(0,0,0,0.08))"/>
+  <rect x="560" y="610" width="10" height="320" rx="5" fill="#C0392B"/>
+  <foreignObject x="590" y="630" width="410" height="280">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:22px; text-align:right; line-height:2.2;">
+      <span style="font-weight:bold; color:#C0392B; font-size:26px;">چالش‌ها:</span>
+      <br/><br/>
+      <span style="color:#C0392B;">⚠</span> اتهام به سوگیری سیاسی
+      <br/>
+      <span style="color:#C0392B;">⚠</span> نقض حقوق در اردوگاه‌ها
+      <br/>
+      <span style="color:#C0392B;">⚠</span> کمبود منابع و تخصص
+      <br/>
+      <span style="color:#C0392B;">⚠</span> فشار درون‌سازمانی
+    </div>
+  </foreignObject>
+  <rect x="60" y="980" width="960" height="200" rx="15" fill="#1A237E"/>
+  <foreignObject x="80" y="1000" width="920" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:center; line-height:2;">
+      <span style="color:#F9A825; font-weight:bold; font-size:30px;">نتیجه برای ایران:</span>
+      <br/>
+      دادگاه در سایه باید از اشتباهات ANC درس بگیرد
+      <br/>
+      و از دستاوردهایش الهام بگیرد
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1220" width="960" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#7F8C8D; font-size:20px; text-align:center; line-height:1.6;">
+      📖 تحلیل کامل نمونه‌ها در فصل ۸
+      <br/>
+      کتاب «دادگاه در سایه» | لینک در بیو
+    </div>
+  </foreignObject>
+</svg>

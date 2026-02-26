@@ -16,7 +16,7 @@ showPdfViewer: true
 hidden: false
 showInContents: true
 coverImage: /images/articles/covers/iran-crisis-to-growth-cover.png
-imageDisplay: full
+imageDisplay: side
 cardImage: show
 ---
 

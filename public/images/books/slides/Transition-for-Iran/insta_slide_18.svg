@@ -1,0 +1,50 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#F0F4F8" />
+  
+  <rect width="1080" height="220" fill="#0D47A1" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 80px; font-weight: bold;">
+      دموکراسیِ دیجیتال
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #37474F;">
+      
+      <p style="font-size: 40px; line-height: 1.5; text-align: center; margin-bottom: 50px; color: #1565C0;">
+        ایران، یکی از جوان‌ترین و «آنلاین‌ترین» جوامع در حالِ گذار است. دموکراسی الکترونیک (e-Democracy) چگونه فرآیندِ گذار را شتاب می‌دهد؟
+      </p>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
+        
+        <div style="background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-bottom: 8px solid #F9A825;">
+          <h4 style="font-size: 35px; color: #0D47A1; margin: 0 0 10px 0;">شفافیتِ آنی</h4>
+          <p style="font-size: 26px; line-height: 1.4; margin: 0;">نشرِ زنده و الکترونیکِ تمامیِ مخارجِ دولتِ انتقالی در پلتفرم‌های عمومی.</p>
+        </div>
+
+        <div style="background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-bottom: 8px solid #2E7D32;">
+          <h4 style="font-size: 35px; color: #0D47A1; margin: 0 0 10px 0;">بودجه‌ریزیِ مشارکتی</h4>
+          <p style="font-size: 26px; line-height: 1.4; margin: 0;">حق رأی مستقیم شهروندان برای تخصیص بودجه به پروژه‌های محلی.</p>
+        </div>
+
+        <div style="background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-bottom: 8px solid #C62828;">
+          <h4 style="font-size: 35px; color: #0D47A1; margin: 0 0 10px 0;">نظارتِ همگانی</h4>
+          <p style="font-size: 26px; line-height: 1.4; margin: 0;">امکانِ گزارش‌دهیِ فساد یا نقضِ حقوقِ بشر در لحظه و به صورت امن.</p>
+        </div>
+
+        <div style="background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-bottom: 8px solid #1A237E;">
+          <h4 style="font-size: 35px; color: #0D47A1; margin: 0 0 10px 0;">رأی‌گیریِ امن</h4>
+          <p style="font-size: 26px; line-height: 1.4; margin: 0;">استفاده از بلاک‌چین برای تضمینِ سلامتِ انتخابات در مناطقِ دوردست.</p>
+        </div>
+
+      </div>
+
+      <div style="margin-top: 50px; background: rgba(13, 71, 161, 0.05); padding: 30px; border-radius: 20px; text-align: center;">
+        <p style="font-size: 34px; color: #0D47A1; font-weight: bold; margin: 0;">
+          تکنولوژی، «پلِ اعتماد» میان ملت و دولتِ جدید خواهد بود.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

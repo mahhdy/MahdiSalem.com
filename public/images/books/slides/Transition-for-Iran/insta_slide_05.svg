@@ -1,0 +1,74 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1033;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A237E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1350" fill="url(#bgGrad)" />
+  
+  <rect width="1080" height="200" fill="rgba(255,255,255,0.05)" />
+  <foreignObject x="0" y="40" width="1080" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: #F9A825; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; font-size: 65px; font-weight: 900; line-height: 160px;">
+      نقشه جامع مسیر تحول ایران
+    </div>
+  </foreignObject>
+
+  <line x1="80" y1="250" x2="80" y2="1200" stroke="#F9A825" stroke-width="4" stroke-dasharray="8,8" opacity="0.4" />
+
+  <foreignObject x="130" y="240" width="870" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: white;">
+      
+      <!-- Phase 1 -->
+      <div style="margin-bottom: 45px; position: relative;">
+        <div style="position: absolute; right: -75px; top: 10px; width: 40px; height: 40px; background: #F9A825; border-radius: 50%;"></div>
+        <h4 style="color: #F9A825; font-size: 40px; margin: 0 0 5px 0;">۱. تحول و عبور (از جنبش تا پیروزی)</h4>
+        <p style="font-size: 26px; color: #E3F2FD; margin: 0; line-height: 1.4;">تمرکز بر بسیج توده‌ای، هماهنگی شبکه‌ها و ایجاد همگرایی برای عبور از ساختارهای مستبد.</p>
+      </div>
+
+      <!-- Phase 2 -->
+      <div style="margin-bottom: 45px; position: relative;">
+        <div style="position: absolute; right: -75px; top: 10px; width: 40px; height: 40px; background: #F9A825; border-radius: 50%;"></div>
+        <h4 style="color: #F9A825; font-size: 40px; margin: 0 0 5px 0;">۲. تثبیت و یکپارچگی (فردای پیروزی)</h4>
+        <p style="font-size: 26px; color: #E3F2FD; margin: 0; line-height: 1.4;">مدیریت بحران‌های اولیه، تضمین امنیت و رفع کامل مقاومت‌های رژیم پیشین برای جلوگیری از بازگشت استبداد.</p>
+      </div>
+
+      <!-- Phase 3 -->
+      <div style="margin-bottom: 45px; position: relative;">
+        <div style="position: absolute; right: -75px; top: 10px; width: 40px; height: 40px; background: #F9A825; border-radius: 50%;"></div>
+        <h4 style="color: #F9A825; font-size: 40px; margin: 0 0 5px 0;">۳. گفتمان ملی و ترسیم نقشه راه</h4>
+        <p style="font-size: 26px; color: #E3F2FD; margin: 0; line-height: 1.4;">ترسیم «ایده فردا»، گفتگو بر سر اصول بنیادین حکمرانی و تدوین و تصویب قانون اساسی جدید.</p>
+      </div>
+
+      <!-- Phase 4 -->
+      <div style="margin-bottom: 45px; position: relative;">
+        <div style="position: absolute; right: -75px; top: 10px; width: 40px; height: 40px; background: #F9A825; border-radius: 50%;"></div>
+        <h4 style="color: #F9A825; font-size: 40px; margin: 0 0 5px 0;">۴. استقرار نهادی و حاکمیت قانون</h4>
+        <p style="font-size: 26px; color: #E3F2FD; margin: 0; line-height: 1.4;">ایجاد نهادهای تخصصی دموکراتیک و فعال‌سازی کامل نظم حقوقی جدید در تمامی سطوح حاکمیت.</p>
+      </div>
+
+      <!-- Phase 5 -->
+      <div style="margin-bottom: 45px; position: relative;">
+        <div style="position: absolute; right: -75px; top: 10px; width: 40px; height: 40px; background: #F9A825; border-radius: 50%;"></div>
+        <h4 style="color: #F9A825; font-size: 40px; margin: 0 0 5px 0;">۵. ممارست قدرت و تعدیل ساختاری</h4>
+        <p style="font-size: 26px; color: #E3F2FD; margin: 0; line-height: 1.4;">تمرین چرخش مسالمت‌آمیز قدرت از طریق انتخابات‌های منظم و اصلاح مستمر ساختارها برای پویایی دموکراسی.</p>
+      </div>
+
+      <!-- Phase 6 -->
+      <div style="margin-bottom: 45px; position: relative;">
+        <div style="position: absolute; right: -75px; top: 10px; width: 40px; height: 40px; background: #F9A825; border-radius: 50%;"></div>
+        <h4 style="color: #F9A825; font-size: 40px; margin: 0 0 5px 0;">۶. توسعه پایدار و چشم‌انداز ملی</h4>
+        <p style="font-size: 26px; color: #E3F2FD; margin: 0; line-height: 1.4;">شکوفایی اقتصادی و اجتماعی بر اساس چشم‌انداز بلندمدت ملی برای رسیدن به رفاه و کرامت انسانی.</p>
+      </div>
+
+    </div>
+  </foreignObject>
+
+  <rect y="1230" width="1080" height="120" fill="rgba(249, 168, 37, 0.1)" />
+  <foreignObject x="0" y="1230" width="1080" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: #F9A825; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 120px; font-size: 32px; font-weight: bold;">
+      جزئیات بیشتر در کتاب «مدیریت دوران گذار ایران»
+    </div>
+  </foreignObject>
+</svg>

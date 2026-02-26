@@ -1,0 +1,37 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#F1F8E9" />
+  
+  <rect width="1080" height="220" fill="#388E3C" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      بسیجِ سرمایه‌ی دیاسپورا
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #1B5E20;">
+      
+      <p style="font-size: 42px; line-height: 1.6; text-align: center; margin-bottom: 60px;">
+        بیش از <span style="font-weight: 900; color: #1A237E;">۴ میلیون ایرانی</span> در خارج از مرزها زندگی می‌کنند. آن‌ها ثروتمندترین و متخصص‌ترین دیاسپورای جهان هستند.
+      </p>
+
+      <!-- Stats Circle -->
+      <div style="display: flex; justify-content: center; margin-bottom: 60px;">
+        <div style="width: 350px; height: 350px; border: 15px solid #F9A825; border-radius: 50%; display: flex; flex-direction: column; justify-content: center; align-items: center; background: white; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+          <span style="font-size: 80px; font-weight: 900; color: #1A237E;">۲۰۰۰B$</span>
+          <span style="font-size: 30px; color: #455A64; text-align: center;">برآوردِ کل دارایی‌های <br/> ایرانیان خارج از کشور</span>
+        </div>
+      </div>
+
+      <div style="background: white; padding: 40px; border-radius: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+        <h3 style="font-size: 42px; color: #1A237E; margin: 0 0 15px 0;">نقش دیاسپورا در بازسازی:</h3>
+        <p style="font-size: 30px; line-height: 1.5; color: #37474F; margin: 0;">
+          ۱. انتقال دانش فنی و تکنولوژی نوین به صنایع داخلی. <br/>
+          ۲. لابی‌گریِ سیاسی برای جلب حمایت بین‌المللی از دموکراسی. <br/>
+          ۳. سرمایه‌گذاری مستقیم در پروژه‌های زیرساختی و نمک‌زدایی.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

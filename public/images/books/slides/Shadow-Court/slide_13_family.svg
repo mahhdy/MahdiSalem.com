@@ -1,0 +1,59 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#FAFAFA"/>
+  <rect width="1080" height="200" fill="#1A237E"/>
+  <foreignObject x="60" y="60" width="960" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:38px; font-weight:bold; text-align:center; line-height:1.5;">
+      خانواده‌ی مقامات
+      <br/>
+      <span style="font-size:24px; color:#F9A825;">مسئول یا بی‌گناه؟</span>
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="260" width="960" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:28px; text-align:center; line-height:2;">
+      درخواست اخراج فرزندان سران جمهوری اسلامی
+      <br/>
+      از کشورهای غربی
+      <br/>
+      <span style="color:#C0392B; font-weight:bold;">یک تصمیم قضایی است، نه سیاسی</span>
+    </div>
+  </foreignObject>
+  <rect x="60" y="500" width="960" height="200" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 20px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="500" width="15" height="200" rx="8" fill="#C0392B"/>
+  <foreignObject x="100" y="520" width="900" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-weight:bold; color:#C0392B;">پرسش اخلاقی:</span>
+      <br/>
+      آیا فرزندان مسئول اعمال پدران‌شان هستند؟
+      <br/>
+      مرز بین فشار مشروع و مجازات جمعی کجاست؟
+    </div>
+  </foreignObject>
+  <rect x="60" y="740" width="960" height="200" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 20px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="740" width="15" height="200" rx="8" fill="#F9A825"/>
+  <foreignObject x="100" y="760" width="900" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-weight:bold; color:#F9A825;">پرسش حقوقی:</span>
+      <br/>
+      آیا ثروت‌شان از مسیر قانونی به دست آمده؟
+      <br/>
+      آیا در پولشویی و فساد مشارکت دارند؟
+    </div>
+  </foreignObject>
+  <rect x="60" y="980" width="960" height="220" rx="15" fill="#2E7D32"/>
+  <foreignObject x="80" y="1000" width="920" height="180">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:28px; text-align:center; line-height:2;">
+      <span style="font-weight:bold;">دادگاه در سایه:</span>
+      <br/>
+      بررسی موردی، نه حکم کلی
+      <br/>
+      فرایند حقوقی، نه انتقام‌جویی
+      <br/>
+      <span style="font-size:22px;">مستند، شفاف، قابل بازنگری</span>
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1240" width="960" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#7F8C8D; font-size:20px; text-align:center;">
+      📖 کتاب «دادگاه در سایه — وجدان منفصل مسئول»
+    </div>
+  </foreignObject>
+</svg>

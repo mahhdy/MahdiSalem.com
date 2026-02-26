@@ -1,0 +1,71 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs>
+    <linearGradient id="bg24" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1642"/>
+      <stop offset="50%" style="stop-color:#1A237E"/>
+      <stop offset="100%" style="stop-color:#2E7D32"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#bg24)"/>
+  <foreignObject x="60" y="60" width="960" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#F9A825; font-size:26px; text-align:center;">
+      نگاه به آینده
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="140" width="960" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:44px; font-weight:bold; text-align:center; line-height:1.6;">
+      پس از پیروزی انقلاب
+      <br/>
+      <span style="color:#F9A825; font-size:32px;">چه بر سر دادگاه سایه می‌آید؟</span>
+    </div>
+  </foreignObject>
+  <line x1="540" y1="380" x2="540" y2="1150" stroke="#F9A825" stroke-width="3" stroke-dasharray="8,8"/>
+  <rect x="120" y="400" width="380" height="160" rx="15" fill="rgba(255,255,255,0.1)" stroke="#FFFFFF" stroke-width="2"/>
+  <foreignObject x="140" y="420" width="340" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:22px; text-align:center; line-height:1.8;">
+      <span style="color:#F9A825; font-size:28px; font-weight:bold;">مرحله ۱</span>
+      <br/>
+      انتقال مستندات به نظام قضایی گذار
+    </div>
+  </foreignObject>
+  <circle cx="540" cy="480" r="20" fill="#F9A825"/>
+  <rect x="580" y="580" width="380" height="160" rx="15" fill="rgba(255,255,255,0.1)" stroke="#FFFFFF" stroke-width="2"/>
+  <foreignObject x="600" y="600" width="340" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:22px; text-align:center; line-height:1.8;">
+      <span style="color:#F9A825; font-size:28px; font-weight:bold;">مرحله ۲</span>
+      <br/>
+      بازنگری آراء توسط دادگاه‌های رسمی
+    </div>
+  </foreignObject>
+  <circle cx="540" cy="660" r="20" fill="#F9A825"/>
+  <rect x="120" y="760" width="380" height="160" rx="15" fill="rgba(255,255,255,0.1)" stroke="#FFFFFF" stroke-width="2"/>
+  <foreignObject x="140" y="780" width="340" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:22px; text-align:center; line-height:1.8;">
+      <span style="color:#F9A825; font-size:28px; font-weight:bold;">مرحله ۳</span>
+      <br/>
+      ادغام تجربیات در قانون اساسی جدید
+    </div>
+  </foreignObject>
+  <circle cx="540" cy="840" r="20" fill="#F9A825"/>
+  <rect x="580" y="940" width="380" height="160" rx="15" fill="rgba(255,255,255,0.1)" stroke="#FFFFFF" stroke-width="2"/>
+  <foreignObject x="600" y="960" width="340" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:22px; text-align:center; line-height:1.8;">
+      <span style="color:#F9A825; font-size:28px; font-weight:bold;">مرحله ۴</span>
+      <br/>
+      انحلال رسمی با حفظ آرشیو تاریخی
+    </div>
+  </foreignObject>
+  <circle cx="540" cy="1020" r="20" fill="#F9A825"/>
+  <foreignObject x="60" y="1160" width="960" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:center; line-height:1.8;">
+      <span style="color:#F9A825; font-weight:bold;">اصل هفتم: موقتی بودن</span>
+      <br/>
+      <span style="font-size:22px; color:rgba(255,255,255,0.7);">این نهاد با تأسیس نظام قضایی رسمی منحل می‌شود</span>
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1290" width="960" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.4); font-size:18px; text-align:center;">
+      📖 فصل ۹ — کتاب «دادگاه در سایه»
+    </div>
+  </foreignObject>
+</svg>

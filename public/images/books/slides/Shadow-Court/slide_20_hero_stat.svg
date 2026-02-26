@@ -1,0 +1,54 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs>
+    <radialGradient id="glow20" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#F9A825; stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#0D1642; stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="#0D1642"/>
+  <circle cx="540" cy="500" r="500" fill="url(#glow20)"/>
+  <foreignObject x="60" y="80" width="960" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#F9A825; font-size:28px; text-align:center;">
+      آیا می‌دانستید؟
+    </div>
+  </foreignObject>
+  <foreignObject x="100" y="240" width="880" height="400">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:120px; font-weight:bold; text-align:center; line-height:1.4;">
+      <span style="color:#F9A825;">۱۱</span>
+    </div>
+  </foreignObject>
+  <foreignObject x="100" y="420" width="880" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:32px; text-align:center; line-height:1.8;">
+      فصل تخصصی در این سند
+      <br/>
+      برای ساختاردهی به وجدان جمعی اپوزیسیون
+    </div>
+  </foreignObject>
+  <rect x="140" y="680" width="800" height="4" fill="#F9A825" opacity="0.5"/>
+  <foreignObject x="100" y="720" width="880" height="400">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.8); font-size:24px; text-align:center; line-height:2.2;">
+      از تشریح مسئله تا جمع‌بندی نهایی
+      <br/><br/>
+      <span style="color:#F9A825;">✓</span> نمونه‌های تاریخی مشابه
+      <br/>
+      <span style="color:#F9A825;">✓</span> رویه‌های قضایی بین‌المللی
+      <br/>
+      <span style="color:#F9A825;">✓</span> مباحث مالی و سازمانی
+      <br/>
+      <span style="color:#F9A825;">✓</span> طرح ادغام پس از گذار
+      <br/>
+      <span style="color:#F9A825;">✓</span> افراد پیشنهادی با تخصص آکادمیک
+    </div>
+  </foreignObject>
+  <rect x="240" y="1180" width="600" height="80" rx="40" fill="#F9A825"/>
+  <foreignObject x="260" y="1195" width="560" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; font-weight:bold; text-align:center;">
+      همین حالا مطالعه کنید
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1280" width="960" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.4); font-size:18px; text-align:center;">
+      لینک دانلود رایگان در بیو
+    </div>
+  </foreignObject>
+</svg>

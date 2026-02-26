@@ -7,6 +7,7 @@ type: statement
 interface: iran
 hidden: false
 showInContents: true
+draft: true
 ---
 
 ## مقدمه

@@ -1,0 +1,75 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#FAFAFA"/>
+  <rect width="1080" height="180" fill="#1A237E"/>
+  <foreignObject x="60" y="50" width="960" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:36px; font-weight:bold; text-align:center;">
+      ساختار پیشنهادی
+    </div>
+  </foreignObject>
+  <rect x="340" y="230" width="400" height="120" rx="15" fill="#F9A825"/>
+  <foreignObject x="360" y="250" width="360" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; font-weight:bold; text-align:center; line-height:1.6;">
+      شورای عالی داوری
+      <br/>
+      <span style="font-size:20px;">(هیئت ۷-۱۱ نفره)</span>
+    </div>
+  </foreignObject>
+  <line x1="540" y1="350" x2="540" y2="420" stroke="#1A237E" stroke-width="3"/>
+  <line x1="260" y1="420" x2="820" y2="420" stroke="#1A237E" stroke-width="3"/>
+  <line x1="260" y1="420" x2="260" y2="470" stroke="#1A237E" stroke-width="3"/>
+  <line x1="540" y1="420" x2="540" y2="470" stroke="#1A237E" stroke-width="3"/>
+  <line x1="820" y1="420" x2="820" y2="470" stroke="#1A237E" stroke-width="3"/>
+  <rect x="120" y="470" width="280" height="120" rx="10" fill="#FFFFFF" stroke="#1A237E" stroke-width="2"/>
+  <foreignObject x="130" y="490" width="260" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:22px; font-weight:bold; text-align:center; line-height:1.6;">
+      شعبه مستندسازی
+      <br/>
+      <span style="font-size:18px; font-weight:normal;">جرایم و اعلام‌ها</span>
+    </div>
+  </foreignObject>
+  <rect x="400" y="470" width="280" height="120" rx="10" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2"/>
+  <foreignObject x="410" y="490" width="260" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#2E7D32; font-size:22px; font-weight:bold; text-align:center; line-height:1.6;">
+      شعبه داوری
+      <br/>
+      <span style="font-size:18px; font-weight:normal;">تصمیم‌های حساس</span>
+    </div>
+  </foreignObject>
+  <rect x="680" y="470" width="280" height="120" rx="10" fill="#FFFFFF" stroke="#C0392B" stroke-width="2"/>
+  <foreignObject x="690" y="490" width="260" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#C0392B; font-size:22px; font-weight:bold; text-align:center; line-height:1.6;">
+      شعبه مشورتی
+      <br/>
+      <span style="font-size:18px; font-weight:normal;">تحلیل و پیشنهاد</span>
+    </div>
+  </foreignObject>
+  <rect x="60" y="660" width="960" height="280" rx="15" fill="#1A237E" opacity="0.05"/>
+  <foreignObject x="80" y="680" width="920" height="240">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:24px; text-align:right; line-height:2.2;">
+      <span style="font-weight:bold; font-size:28px;">ویژگی‌های ساختاری:</span>
+      <br/>
+      <span style="color:#F9A825;">●</span> اعضا بر اساس تخصص انتخاب می‌شوند
+      <br/>
+      <span style="color:#F9A825;">●</span> استقلال از گروه‌های سیاسی
+      <br/>
+      <span style="color:#F9A825;">●</span> شفافیت کامل در رویه‌ها
+      <br/>
+      <span style="color:#F9A825;">●</span> ثبت نظرات اقلیت و مخالف
+    </div>
+  </foreignObject>
+  <rect x="60" y="990" width="960" height="220" rx="15" fill="#2E7D32"/>
+  <foreignObject x="80" y="1010" width="920" height="180">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:center; line-height:2;">
+      <span style="font-weight:bold; font-size:30px;">متخصصان + اندیشمندان + روشنفکران</span>
+      <br/>
+      در لایه‌ها و شاخه‌های مختلف
+      <br/>
+      بستری برای گفت‌وگوی سازنده‌ی نخبگانی
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1250" width="960" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#7F8C8D; font-size:20px; text-align:center;">
+      📖 فصل ۴ و ۵ کتاب | لینک در بیو
+    </div>
+  </foreignObject>
+</svg>

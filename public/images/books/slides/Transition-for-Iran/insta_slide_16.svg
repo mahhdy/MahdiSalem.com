@@ -1,0 +1,52 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#ECEFF1" />
+  
+  <rect width="1080" height="220" fill="#455A64" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      شاخص‌های موفقیتِ گذار
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #263238;">
+      
+      <p style="font-size: 38px; line-height: 1.5; text-align: center; margin-bottom: 50px;">
+        چگونه بفهمیم مسیر گذار در جهت درست است؟ شاخص‌های کمی و کیفی برای پایشِ سلامتِ فرآیند:
+      </p>
+
+      <!-- Indicators Grid -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 50px;">
+        
+        <div style="background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+          <div style="font-size: 50px; font-weight: 900; color: #2E7D32;">&gt; ۷۰٪</div>
+          <div style="font-size: 28px; font-weight: bold; margin-top: 5px;">مشارکتِ آزاد</div>
+        </div>
+
+        <div style="background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+          <div style="font-size: 50px; font-weight: 900; color: #1A237E;">&gt; ۵۰٪</div>
+          <div style="font-size: 28px; font-weight: bold; margin-top: 5px;">اعتماد به نهادها</div>
+        </div>
+
+        <div style="background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+          <div style="font-size: 50px; font-weight: 900; color: #F9A825;">۷/۱۰</div>
+          <div style="font-size: 28px; font-weight: bold; margin-top: 5px;">نمره شفافیت</div>
+        </div>
+
+        <div style="background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+          <div style="font-size: 50px; font-weight: 900; color: #C62828;">&gt; ۹۰٪</div>
+          <div style="font-size: 28px; font-weight: bold; margin-top: 5px;">پذیرشِ نتایج</div>
+        </div>
+
+      </div>
+
+      <div style="background: white; padding: 40px; border-radius: 25px; border-left: 10px solid #455A64;">
+        <h3 style="font-size: 40px; color: #263238; margin: 0 0 15px 0;">اهمیت پایش:</h3>
+        <p style="font-size: 30px; line-height: 1.5; color: #546E7B; margin: 0;">
+          عدم تحقق این شاخص‌ها به معنای لزوم بازنگری در سیاست‌ها و گفتگوهای ملی پیش از تشدید بحران است.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

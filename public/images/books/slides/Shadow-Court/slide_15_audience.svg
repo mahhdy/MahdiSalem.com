@@ -1,0 +1,54 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#FAFAFA"/>
+  <rect width="1080" height="160" fill="#F9A825"/>
+  <foreignObject x="60" y="40" width="960" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:38px; font-weight:bold; text-align:center;">
+      این کتاب برای کیست؟
+    </div>
+  </foreignObject>
+  <rect x="60" y="220" width="960" height="220" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="220" width="60" height="220" rx="10" fill="#1A237E"/>
+  <foreignObject x="140" y="250" width="860" height="170">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-weight:bold; font-size:30px; color:#1A237E;">A</span>
+      <span style="font-weight:bold; font-size:28px;"> فعالان سیاسی گذارخواه</span>
+      <br/>
+      برای درک ضرورت ساختارمندسازی تصمیم‌ها
+    </div>
+  </foreignObject>
+  <rect x="60" y="480" width="960" height="220" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="480" width="60" height="220" rx="10" fill="#F9A825"/>
+  <foreignObject x="140" y="510" width="860" height="170">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-weight:bold; font-size:30px; color:#F9A825;">B</span>
+      <span style="font-weight:bold; font-size:28px;"> حقوق‌دانان و پژوهشگران</span>
+      <br/>
+      ایرانی و بین‌المللی — برای مشارکت در طراحی
+    </div>
+  </foreignObject>
+  <rect x="60" y="740" width="960" height="220" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="740" width="60" height="220" rx="10" fill="#2E7D32"/>
+  <foreignObject x="140" y="770" width="860" height="170">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-weight:bold; font-size:30px; color:#2E7D32;">C</span>
+      <span style="font-weight:bold; font-size:28px;"> نهادهای بین‌المللی حقوق بشر</span>
+      <br/>
+      برای همکاری فنی و اعتباربخشی
+    </div>
+  </foreignObject>
+  <rect x="60" y="1000" width="960" height="220" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="1000" width="60" height="220" rx="10" fill="#C0392B"/>
+  <foreignObject x="140" y="1030" width="860" height="170">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-weight:bold; font-size:30px; color:#C0392B;">D</span>
+      <span style="font-weight:bold; font-size:28px;"> افکار عمومی ایرانی</span>
+      <br/>
+      برای اطمینان از نظارت اخلاقی بر تصمیم‌های سخت
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1260" width="960" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#7F8C8D; font-size:20px; text-align:center;">
+      📖 کتاب «دادگاه در سایه» | لینک در بیو
+    </div>
+  </foreignObject>
+</svg>

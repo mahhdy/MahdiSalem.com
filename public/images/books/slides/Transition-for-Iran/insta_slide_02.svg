@@ -1,0 +1,35 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#ECEFF1" />
+  
+  <rect width="1080" height="250" fill="#1A237E" />
+  <foreignObject x="0" y="0" width="1080" height="250">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: #F9A825; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 250px; font-size: 75px; font-weight: bold;">
+      ریشه‌های فساد در ایران
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="320" width="920" height="900">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl;">
+      
+      <!-- Card 1 -->
+      <div style="background: white; border-right: 15px solid #1A237E; border-radius: 15px; padding: 30px; margin-bottom: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <h2 style="color: #1A237E; font-size: 48px; margin: 0 0 10px 0;">۱. رانت ارزی و نظام چندنرخی</h2>
+        <p style="color: #455A64; font-size: 32px; margin: 0; line-height: 1.5;">مادر تمام رانت‌ها که باعث انتقال گسترده ثروت ملی به جیب گروه‌های خاص و نابودی تولید داخلی شده است.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div style="background: white; border-right: 15px solid #F9A825; border-radius: 15px; padding: 30px; margin-bottom: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <h2 style="color: #1A237E; font-size: 48px; margin: 0 0 10px 0;">۲. معافیت‌های مالیاتی نهادهای خاص</h2>
+        <p style="color: #455A64; font-size: 32px; margin: 0; line-height: 1.5;">سیاه‌چاله‌های بودجه‌ای که خارج از نظارت عمومی، بخش بزرگی از اقتصاد ایران را در انحصار خود گرفته‌اند.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div style="background: white; border-right: 15px solid #1A237E; border-radius: 15px; padding: 30px; margin-bottom: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <h2 style="color: #1A237E; font-size: 48px; margin: 0 0 10px 0;">۳. یارانه‌های پنهان انرژی</h2>
+        <p style="color: #455A64; font-size: 32px; margin: 0; line-height: 1.5;">توزیع ناعادلانه ثروت که بیشترین سود را به دهک‌های ثروتمند می‌رساند و مشوق قاچاق سازمان‌یافته است.</p>
+      </div>
+
+      <p style="text-align: center; color: #1A237E; font-size: 38px; font-weight: bold; margin-top: 50px;">تحلیل دقیق ناترازی‌ها در کتاب «مدیریت دوران گذار»</p>
+    </div>
+  </foreignObject>
+</svg>

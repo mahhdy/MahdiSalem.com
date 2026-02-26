@@ -1,0 +1,36 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#E0F7FA" />
+  
+  <rect width="1080" height="220" fill="#006064" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      استردادِ ثروت‌های ملی
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #004D40;">
+      
+      <p style="font-size: 40px; line-height: 1.5; text-align: center; margin-bottom: 55px; color: #006064;">
+        عدالتِ اقتصادی، مکملِ عدالتِ کیفری است. بازگرداندنِ دارایی‌های غارت‌شده توسطِ کانون‌های قدرت، گامی ضروری برای توسعه است:
+      </p>
+
+      <div style="background: white; padding: 40px; border-radius: 25px; box-shadow: 0 10px 30px rgba(0, 96, 100, 0.1); border-right: 15px solid #00ACC1;">
+        <h4 style="font-size: 42px; color: #00838F; margin: 0 0 20px 0;">لوستراسیونِ اقتصادی (Economic Lustration):</h4>
+        <ul style="font-size: 32px; line-height: 1.8; color: #37474F; padding-right: 30px; margin: 0;">
+          <li style="margin-bottom: 20px;"><strong>حسابرسیِ ملی:</strong> بررسیِ پرونده‌های خصوصی‌سازیِ رانتی و قراردادهای مشکوکِ دو دهه‌ی اخیر.</li>
+          <li style="margin-bottom: 20px;"><strong>همکاریِ بین‌المللی:</strong> استفاده از قوانینِ جهانی (مانند UNODC) برای ردیابی و مسدود کردنِ دارایی‌های غارت‌شده در خارج.</li>
+          <li style="margin-bottom: 20px;"><strong>تأسیسِ «صندوقِ عدالتِ ملی»:</strong> واریزِ مبالغِ بازگشتی به حسابی شفاف برای هزینه در بهداشت، آموزش و زیرساخت‌ها.</li>
+          <li><strong>شفافیتِ مالکیتی:</strong> افشای ذینفعانِ نهاییِ تمامیِ هلدینگ‌های بزرگِ شبه‌دولتی.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 60px; text-align: center; background: #006064; padding: 30px; border-radius: 50px;">
+        <p style="font-size: 38px; font-weight: bold; color: white; margin: 0;">
+          ثروتِ ملی باید در خدمتِ توسعه باشد، نه در جیبِ غارتگران.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

@@ -1,0 +1,46 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#F5F5F5" />
+  
+  <rect width="1080" height="220" fill="#1A237E" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 60px; font-weight: bold;">
+      چک‌لیستِ پیروزی: چرا برخی گذارها موفق می‌شوند؟
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="270" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl;">
+      
+      <p style="font-size: 36px; line-height: 1.5; text-align: center; margin-bottom: 50px; color: #455A64;">
+        مطالعه ۳۰ مورد گذار جهانی نشان می‌دهد که ۵ عامل، مرز بین «آزادی» و «جنگ داخلی» را تعیین می‌کنند:
+      </p>
+
+      <div style="background: white; padding: 40px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+        <div style="margin-bottom: 35px; border-bottom: 2px solid #EEE; padding-bottom: 15px;">
+          <span style="color: #2E7D32; font-size: 45px; margin-left: 20px;">✅</span>
+          <span style="font-size: 38px; font-weight: bold; color: #1A237E;">توافقِ میان‌گروهی:</span>
+          <span style="font-size: 32px; color: #616161; display: block; margin-right: 70px;">پرهیز از دوقطبی‌سازی و توافق بر سر قواعدِ بازی.</span>
+        </div>
+
+        <div style="margin-bottom: 35px; border-bottom: 2px solid #EEE; padding-bottom: 15px;">
+          <span style="color: #2E7D32; font-size: 45px; margin-left: 20px;">✅</span>
+          <span style="font-size: 38px; font-weight: bold; color: #1A237E;">مدیریتِ نیروهای مسلح:</span>
+          <span style="font-size: 32px; color: #616161; display: block; margin-right: 70px;">کشاندن ارتش به بی‌طرفی یا همراهی با مردم.</span>
+        </div>
+
+        <div style="margin-bottom: 35px; border-bottom: 2px solid #EEE; padding-bottom: 15px;">
+          <span style="color: #2E7D32; font-size: 45px; margin-left: 20px;">✅</span>
+          <span style="font-size: 38px; font-weight: bold; color: #1A237E;">رهبریِ استراتژیک:</span>
+          <span style="font-size: 32px; color: #616161; display: block; margin-right: 70px;">وجود "مرجعیتِ سیاسی" برای مذاکره و تصمیم‌گیری.</span>
+        </div>
+
+        <div style="margin-bottom: 35px;">
+          <span style="color: #2E7D32; font-size: 45px; margin-left: 20px;">✅</span>
+          <span style="font-size: 38px; font-weight: bold; color: #1A237E;">عدمِ دخالتِ مستقیمِ نظامیِ خارجی:</span>
+          <span style="font-size: 32px; color: #616161; display: block; margin-right: 70px;">حفظِ گذار در چارچوبِ اراده‌ی ملی.</span>
+        </div>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

@@ -1,0 +1,39 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#1A237E" />
+  
+  <foreignObject x="0" y="80" width="1080" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: #F9A825; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; font-size: 70px; font-weight: bold;">
+      نقشه راه بازسازی ایران
+    </div>
+  </foreignObject>
+  
+  <line x1="160" y1="300" x2="160" y2="1100" stroke="#F9A825" stroke-width="4" stroke-dasharray="10,10" opacity="0.3" />
+  
+  <foreignObject x="220" y="250" width="780" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: white;">
+      
+      <!-- Phase 1 -->
+      <div style="margin-bottom: 80px; position: relative;">
+        <div style="position: absolute; right: -85px; top: 10px; width: 50px; height: 50px; background: #F9A825; border-radius: 50%;"></div>
+        <h3 style="color: #F9A825; font-size: 50px; margin: 0 0 10px 0;">فاز ۱: شورای انتقالی</h3>
+        <p style="font-size: 32px; color: #B0BEC5; margin: 0; line-height: 1.4;">تثبیت فوری امنیت، مدیریت نیازهای حیاتی مردم و جلوگیری از فروپاشی سیستم‌های خدماتی در دوران حساس گذار.</p>
+      </div>
+
+      <!-- Phase 2 -->
+      <div style="margin-bottom: 80px; position: relative;">
+        <div style="position: absolute; right: -85px; top: 10px; width: 50px; height: 50px; background: #F9A825; border-radius: 50%;"></div>
+        <h3 style="color: #F9A825; font-size: 50px; margin: 0 0 10px 0;">فاز ۲: رفراندوم قانون اساسی</h3>
+        <p style="font-size: 32px; color: #B0BEC5; margin: 0; line-height: 1.4;">تعیین ساختار کلان نظام آینده و کسب مشروعیت از طریق رای مستقیم و آزاد تمامی آحاد ملت.</p>
+      </div>
+
+      <!-- Phase 3 -->
+      <div style="margin-bottom: 80px; position: relative;">
+        <div style="position: absolute; right: -85px; top: 10px; width: 50px; height: 50px; background: #F9A825; border-radius: 50%;"></div>
+        <h3 style="color: #F9A825; font-size: 50px; margin: 0 0 10px 0;">فاز ۳: نخستین انتخابات آزاد</h3>
+        <p style="font-size: 32px; color: #B0BEC5; margin: 0; line-height: 1.4;">انتقال کامل و مسالمت‌آمیز قدرت از نهادهای موقت به نمایندگان منتخب و استقرار حاکمیت قانون.</p>
+      </div>
+
+      <p style="text-align: center; color: #F9A825; font-size: 40px; font-weight: bold; margin-top: 50px; border: 2px solid #F9A825; padding: 20px; border-radius: 50px;">گذار علمی، ضامن ماندگاری دموکراسی است.</p>
+    </div>
+  </foreignObject>
+</svg>

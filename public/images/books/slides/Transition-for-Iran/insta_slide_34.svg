@@ -1,0 +1,38 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#212121" />
+  
+  <rect width="1080" height="220" fill="#B71C1C" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 60px; font-weight: bold;">
+      تله‌ی ویرانی: درس‌هایی از لیبی و سوریه
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="200" width="920" height="1200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #EEEEEE;">
+      
+      <p style="font-size: 38px; line-height: 1.6; text-align: center; margin-bottom: 60px; color: #FFCDD2;">
+        سقوطِ فیزیکیِ یک حاکم، لزوماً به معنای پیروزیِ دموکراسی نیست. اگر «ساختار» جایگزین وجود نداشته باشد، خلاء قدرت با «هرج و مرج» پر می‌شود.
+      </p>
+
+      <div style="background: rgba(255,255,255,0.05); padding: 50px; border-radius: 30px; border-right: 15px solid #D32F2F;">
+        <div style="margin-bottom: 50px;">
+          <h3 style="color: #FF5252; font-size: 42px; margin-bottom: 15px;">⚠️ لیبی: سقوط بدونِ نهاد</h3>
+          <p style="font-size: 32px; line-height: 1.7; margin: 0;">از میان رفتنِ نهادهای دولتی و ارتش، باعث شد ۱۷ سال پس از قذافی، کشور همچنان میان شبه‌نظامیان تقسیم شده باشد.</p>
+        </div>
+
+        <div>
+          <h3 style="color: #FF5252; font-size: 42px; margin-bottom: 15px;">⚠️ سوریه: نظامی‌گری و مداخله</h3>
+          <p style="font-size: 32px; line-height: 1.7; margin: 0;">تبدیلِ اعتراضات مدنی به جنگ مسلحانه و ورودِ قدرت‌های خارجی، به ویرانیِ کامل و بقای استبداد در ویرانه‌ها منجر شد.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 80px; text-align: center;">
+        <p style="font-size: 40px; font-weight: bold; color: #FFD54F;">
+          نتیجه برای ایران: <br/> حفظِ «ساختارِ اداری و خدماتی» کشور خطِ قرمز است. <br/> تغییر باید نظام‌مند باشد، نه ویرانگر.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

@@ -1,0 +1,51 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#FFFDE7" />
+  
+  <rect width="1080" height="220" fill="#F9A825" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: #1A237E; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      یارانه‌های پنهان: توزیع فقر؟
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl;">
+      
+      <p style="font-size: 42px; line-height: 1.5; text-align: center; color: #1A237E; margin-bottom: 60px;">
+        ایران سالانه بیش از <span style="font-weight: bold; color: #C62828;">۸۰ میلیارد دلار</span> یارانه پنهان انرژی پرداخت می‌کند. اما این ثروت به جیب چه کسی می‌رود؟
+      </p>
+
+      <!-- Comparison Chart -->
+      <div style="background: white; border-radius: 25px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+        
+        <div style="margin-bottom: 50px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+            <span style="font-size: 35px; color: #1A237E; font-weight: bold;">دهک دهم (ثروتمندترین)</span>
+            <span style="font-size: 35px; color: #C62828; font-weight: bold;">سهم بسیار بالا</span>
+          </div>
+          <div style="width: 100%; background: #EEE; height: 40px; border-radius: 20px;">
+            <div style="width: 85%; background: #F9A825; height: 100%; border-radius: 20px;"></div>
+          </div>
+        </div>
+
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+            <span style="font-size: 35px; color: #1A237E; font-weight: bold;">دهک اول (کم‌درآمدترین)</span>
+            <span style="font-size: 35px; color: #2E7D32; font-weight: bold;">سهم ناچیز</span>
+          </div>
+          <div style="width: 100%; background: #EEE; height: 40px; border-radius: 20px;">
+            <div style="width: 15%; background: #1A237E; height: 100%; border-radius: 20px;"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="margin-top: 60px; background: rgba(26, 35, 126, 0.05); border-right: 10px solid #1A237E; padding: 30px; border-radius: 10px;">
+        <p style="font-size: 38px; color: #1A237E; line-height: 1.5; margin: 0;">
+          ثروتمندان به دلیل مصرف بیشتر برق، بنزین و گاز، <span style="font-weight: bold;">۱۲ برابر</span> بیشتر از فقرا از یارانه‌های عمومی بهره‌مند می‌شوند.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

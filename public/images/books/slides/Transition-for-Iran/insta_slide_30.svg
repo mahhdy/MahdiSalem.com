@@ -1,0 +1,36 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#FFF8E1" />
+  
+  <rect width="1080" height="220" fill="#E65100" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      منشورِ حقوقِ بنیادینِ ایران
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="220" width="920" height="1100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl; color: #E65100;">
+      
+      <p style="font-size: 40px; line-height: 1.5; text-align: center; margin-bottom: 55px; color: #BF360C;">
+        این منشور، هسته‌ی اصلیِ توافقِ ملی برای همزیستی در ایرانِ فرداست. اصولی که هیچ اکثریتی نمی‌تواند آن‌ها را نقض کند:
+      </p>
+
+      <div style="background: white; padding: 45px; border-radius: 30px; box-shadow: 0 10px 30px rgba(230, 81, 0, 0.1); border-top: 15px solid #E65100;">
+        <ul style="font-size: 34px; line-height: 1.8; color: #3E2723; padding-right: 30px; margin: 0;">
+          <li style="margin-bottom: 25px;"><strong>کرامتِ انسانی:</strong> لغوِ کاملِ شکنجه، اعدام و هرگونه رفتارِ تحقیرآمیز.</li>
+          <li style="margin-bottom: 25px;"><strong>آزادیِ اندیشه و بیان:</strong> حقِ نقدِ تمامیِ ارکانِ قدرت و حفاظت از آزادیِ مطبوعات.</li>
+          <li style="margin-bottom: 25px;"><strong>برابریِ کامل:</strong> منعِ هرگونه تبعیض بر اساسِ دین، قومیت، جنسیت یا عقیده‌ی سیاسی.</li>
+          <li style="margin-bottom: 25px;"><strong>جداییِ نهادِ دین از دولت:</strong> دولتِ مدنی و بی‌طرف نسبت به عقایدِ مذهبیِ شهروندان.</li>
+          <li><strong>حقِ مالکیتِ خصوصی:</strong> تضمینِ امنیتِ اقتصادی برای تمامیِ کارآفرینان و شهروندان.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 70px; text-align: center;">
+        <p style="font-size: 42px; font-weight: 900; color: #E65100; line-height: 1.3;">
+          قانون، زنجیری بر دستِ قدرت است <br/> و سپری بر سینه‌ی مردم.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

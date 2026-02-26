@@ -1,0 +1,44 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#ECEFF1" />
+  
+  <rect width="1080" height="220" fill="#424242" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: white; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 65px; font-weight: bold;">
+      تقابلِ الگوها: اسپانیا در برابرِ مصر
+    </div>
+  </foreignObject>
+
+  <foreignObject x="50" y="250" width="980" height="1150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl;">
+      
+      <div style="display: flex; gap: 40px; margin-top: 50px;">
+        <!-- Spain Success Column -->
+        <div style="flex: 1; background: #E8F5E9; padding: 40px; border-radius: 30px; border-top: 15px solid #2E7D32;">
+          <h2 style="color: #2E7D32; font-size: 50px; text-align: center; margin-top: 0;">✅ اسپانیا (نمونه موفق)</h2>
+          <ul style="font-size: 32px; line-height: 1.8; color: #1B5E20; padding-right: 20px;">
+            <li style="margin-bottom: 25px;"><strong>پیمانِ الگو:</strong> توافق میان مخالفان و بخشی از بدنه قدرت.</li>
+            <li style="margin-bottom: 25px;"><strong>نقشِ شاه:</strong> پادشاه به جای سرکوب، گذار را تضمین کرد.</li>
+            <li><strong>عدم خشونت:</strong> تمرکز بر صندوق رأی به جای خیابان.</li>
+          </ul>
+        </div>
+
+        <!-- Egypt Failure Column -->
+        <div style="flex: 1; background: #FFEBEE; padding: 40px; border-radius: 30px; border-top: 15px solid #C62828;">
+          <h2 style="color: #C62828; font-size: 50px; text-align: center; margin-top: 0;">❌ مصر (نمونه ناموفق)</h2>
+          <ul style="font-size: 32px; line-height: 1.8; color: #B71C1C; padding-right: 20px;">
+            <li style="margin-bottom: 25px;"><strong>دوقطبی‌سازی:</strong> حذفِ گروه‌های دیگر پس از پیروزی اولیه.</li>
+            <li style="margin-bottom: 25px;"><strong>سیطره‌ی ارتش:</strong> نیروهای نظامی ساختار را قبضه کردند.</li>
+            <li><strong>فقدان پیمان ملی:</strong> عدم توافق بر سر قانون اساسی.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-top: 20px; background: white; padding: 35px; border-radius: 20px; text-align: center; border: 2px dashed #90A4AE;">
+        <p style="font-size: 38px; color: #455A64; font-weight: bold; margin: 0;">
+          درس برای ایران: همبستگی ملی، تنها واکسن در برابرِ دیکتاتوری است.
+        </p>
+      </div>
+
+    </div>
+  </foreignObject>
+</svg>

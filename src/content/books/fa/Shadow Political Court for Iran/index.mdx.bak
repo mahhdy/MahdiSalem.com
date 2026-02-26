@@ -22,7 +22,7 @@ showPdfViewer: true
 hidden: false
 showInContents: true
 coverImage: /images/articles/covers/court-in-exile-cover.png
-imageDisplay: full
+imageDisplay: side
 cardImage: show
 ---
 

@@ -1,0 +1,43 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#0D1642"/>
+  <circle cx="540" cy="300" r="150" fill="none" stroke="#F9A825" stroke-width="4"/>
+  <circle cx="540" cy="300" r="100" fill="none" stroke="#F9A825" stroke-width="3"/>
+  <circle cx="540" cy="300" r="50" fill="#F9A825"/>
+  <foreignObject x="60" y="480" width="960" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:42px; font-weight:bold; text-align:center;">
+      تحریم ورزشی
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="600" width="960" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#F9A825; font-size:28px; text-align:center;">
+      وقتی زندگی حرفه‌ای ورزشکاران در میان است
+    </div>
+  </foreignObject>
+  <rect x="80" y="740" width="920" height="160" rx="15" fill="rgba(192,57,43,0.2)" stroke="#C0392B" stroke-width="2"/>
+  <foreignObject x="100" y="760" width="880" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:center; line-height:1.8;">
+      <span style="color:#C0392B;">⚠️</span> بسیاری از ورزشکاران دغدغه سیاسی ندارند
+      <br/>
+      اما قربانی تصمیم‌های سیاسی می‌شوند
+    </div>
+  </foreignObject>
+  <rect x="80" y="940" width="920" height="160" rx="15" fill="rgba(249,168,37,0.2)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="100" y="960" width="880" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:center; line-height:1.8;">
+      <span style="color:#F9A825;">❓</span> آیا این مجازات جمعی عادلانه است؟
+      <br/>
+      چه معیاری برای تمایز وجود دارد؟
+    </div>
+  </foreignObject>
+  <rect x="200" y="1140" width="680" height="100" rx="50" fill="#2E7D32"/>
+  <foreignObject x="220" y="1160" width="640" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; font-weight:bold; text-align:center;">
+      دادگاه در سایه: فرایند، نه احساس
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1270" width="960" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.5); font-size:20px; text-align:center;">
+      لینک مطالعه در بیو ◄
+    </div>
+  </foreignObject>
+</svg>

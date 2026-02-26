@@ -1,0 +1,72 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#FAFAFA"/>
+  <rect width="1080" height="200" fill="#1A237E"/>
+  <foreignObject x="60" y="50" width="960" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#F9A825; font-size:42px; font-weight:bold; text-align:center; line-height:1.5;">
+      هفت اصل بنیادین
+      <br/>
+      <span style="font-size:26px; color:#FFFFFF;">دادگاه در سایه</span>
+    </div>
+  </foreignObject>
+  <rect x="60" y="250" width="460" height="240" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="250" width="460" height="8" rx="4" fill="#F9A825"/>
+  <foreignObject x="80" y="280" width="420" height="190">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:22px; text-align:right; line-height:1.8;">
+      <span style="font-size:36px; color:#F9A825;">I</span>
+      <br/>
+      <span style="font-weight:bold;">دعوت به اندیشیدن</span>
+      <br/>
+      مرجع مشورتی، نه حاکمیتی
+    </div>
+  </foreignObject>
+  <rect x="560" y="250" width="460" height="240" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <rect x="560" y="250" width="460" height="8" rx="4" fill="#2E7D32"/>
+  <foreignObject x="580" y="280" width="420" height="190">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:22px; text-align:right; line-height:1.8;">
+      <span style="font-size:36px; color:#2E7D32;">II</span>
+      <br/>
+      <span style="font-weight:bold;">مجوزدهی دیرانه</span>
+      <br/>
+      توصیه قهرآمیز فقط پس از بررسی
+    </div>
+  </foreignObject>
+  <rect x="60" y="530" width="460" height="240" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <rect x="60" y="530" width="460" height="8" rx="4" fill="#1A237E"/>
+  <foreignObject x="80" y="560" width="420" height="190">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:22px; text-align:right; line-height:1.8;">
+      <span style="font-size:36px; color:#1A237E;">III</span>
+      <br/>
+      <span style="font-weight:bold;">شفافیت مستند</span>
+      <br/>
+      انتشار کامل آراء و نظرات اقلیت
+    </div>
+  </foreignObject>
+  <rect x="560" y="530" width="460" height="240" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <rect x="560" y="530" width="460" height="8" rx="4" fill="#C0392B"/>
+  <foreignObject x="580" y="560" width="420" height="190">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:22px; text-align:right; line-height:1.8;">
+      <span style="font-size:36px; color:#C0392B;">IV</span>
+      <br/>
+      <span style="font-weight:bold;">تناسب و ضرورت</span>
+      <br/>
+      هر اقدام باید هر دو آزمون را بگذراند
+    </div>
+  </foreignObject>
+  <rect x="60" y="810" width="960" height="300" rx="20" fill="#1A237E" opacity="0.05"/>
+  <foreignObject x="100" y="840" width="880" height="240">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:26px; text-align:center; line-height:2;">
+      <span style="color:#F9A825; font-size:32px;">▼</span>
+      <br/>
+      این اصول تضمین می‌کنند که تصمیم‌های سخت
+      <br/>
+      با رعایت حقوق بشر و اصول اخلاقی اتخاذ شوند
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1150" width="960" height="160">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#7F8C8D; font-size:24px; text-align:center; line-height:1.6;">
+      ◄ ادامه در اسلاید بعد
+      <br/>
+      <span style="font-size:20px;">اصول V تا VII</span>
+    </div>
+  </foreignObject>
+</svg>

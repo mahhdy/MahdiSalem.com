@@ -1,0 +1,55 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <rect width="1080" height="1350" fill="#FAFAFA"/>
+  <rect width="1080" height="200" fill="#C0392B"/>
+  <foreignObject x="60" y="50" width="960" height="130">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:38px; font-weight:bold; text-align:center; line-height:1.5;">
+      آسیب‌شناسی و احتیاط‌ها
+      <br/>
+      <span style="font-size:24px; font-weight:normal;">چه چیزهایی می‌تواند خطرساز باشد؟</span>
+    </div>
+  </foreignObject>
+  <rect x="60" y="250" width="960" height="190" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <foreignObject x="80" y="270" width="920" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#C0392B; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-size:32px;">⚠️</span>
+      <span style="font-weight:bold; font-size:28px;"> سیاسی‌شدن نهاد</span>
+      <br/>
+      خطر تبدیل شدن به ابزار جناح‌بندی سیاسی
+    </div>
+  </foreignObject>
+  <rect x="60" y="480" width="960" height="190" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <foreignObject x="80" y="500" width="920" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#C0392B; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-size:32px;">⚠️</span>
+      <span style="font-weight:bold; font-size:28px;"> نفوذ اطلاعاتی رژیم</span>
+      <br/>
+      تلاش جمهوری اسلامی برای اختلال و انحراف
+    </div>
+  </foreignObject>
+  <rect x="60" y="710" width="960" height="190" rx="15" fill="#FFFFFF" style="filter:drop-shadow(0 4px 15px rgba(0,0,0,0.08))"/>
+  <foreignObject x="80" y="730" width="920" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#C0392B; font-size:26px; text-align:right; line-height:2;">
+      <span style="font-size:32px;">⚠️</span>
+      <span style="font-weight:bold; font-size:28px;"> تکثر دیدگاهی افراطی</span>
+      <br/>
+      اختلاف‌نظرهای عمیق که مانع تصمیم‌گیری شوند
+    </div>
+  </foreignObject>
+  <rect x="60" y="950" width="960" height="260" rx="15" fill="#2E7D32"/>
+  <foreignObject x="80" y="970" width="920" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:center; line-height:2;">
+      <span style="font-weight:bold; font-size:30px; color:#F9A825;">راهکارهای پیشگیرانه:</span>
+      <br/><br/>
+      ✓ انتخاب اعضا بر اساس تخصص نه سیاست
+      <br/>
+      ✓ پروتکل‌های امنیتی شفاف
+      <br/>
+      ✓ مکانیزم مدیریت اختلاف‌نظر
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1250" width="960" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#7F8C8D; font-size:20px; text-align:center;">
+      📖 فصل ۳ آسیب‌شناسی — کتاب «دادگاه در سایه»
+    </div>
+  </foreignObject>
+</svg>

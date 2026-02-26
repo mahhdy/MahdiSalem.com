@@ -1,0 +1,46 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1350" fill="#ECEFF1" />
+  <rect width="1080" height="220" fill="#1A237E" />
+  <foreignObject x="0" y="0" width="1080" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color: #F9A825; font-family: 'Segoe UI', Tahoma, sans-serif; text-align: center; direction: rtl; line-height: 220px; font-size: 70px; font-weight: bold;">
+      پاردوکس مالیات در ایران
+    </div>
+  </foreignObject>
+
+  <foreignObject x="80" y="280" width="920" height="1000">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Segoe UI', Tahoma, sans-serif; direction: rtl;">
+      
+      <!-- Logic -->
+      <div style="display: flex; justify-content: space-between; margin-bottom: 50px;">
+        <div style="width: 45%; background: #FFEBEE; border: 3px solid #C62828; border-radius: 20px; padding: 25px; text-align: center;">
+          <h3 style="color: #C62828; font-size: 40px; margin: 0 0 15px 0;">بیشترین فشار</h3>
+          <p style="font-size: 32px; color: #37474F; margin: 0;">کارمندان و حقوق‌بگیران (شفاف‌ترین بخش)</p>
+        </div>
+        <div style="width: 45%; background: #E8F5E9; border: 3px solid #2E7D32; border-radius: 20px; padding: 25px; text-align: center;">
+          <h3 style="color: #2E7D32; font-size: 40px; margin: 0 0 15px 0;">کمترین سهم</h3>
+          <p style="font-size: 32px; color: #37474F; margin: 0;">بنیادها و نهادهای شبه‌دولتی (معاف از مالیات)</p>
+        </div>
+      </div>
+
+      <!-- Stats List -->
+      <div style="background: white; border-radius: 20px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        <div style="margin-bottom: 35px; border-bottom: 2px solid #EEE; padding-bottom: 15px;">
+          <span style="color: #1A237E; font-size: 45px; font-weight: bold;">۳۸٪</span>
+          <span style="font-size: 35px; color: #546E7A; margin-right: 20px;">سهم مالیات حقوق‌بگیران از کل وصولی</span>
+        </div>
+        <div style="margin-bottom: 35px; border-bottom: 2px solid #EEE; padding-bottom: 15px;">
+          <span style="color: #1A237E; font-size: 45px; font-weight: bold;">۰-۲٪</span>
+          <span style="font-size: 35px; color: #546E7A; margin-right: 20px;">نرخ موثر مالیات نهادهای شبه‌دولتی بزرگ</span>
+        </div>
+        <div>
+          <span style="color: #C62828; font-size: 45px; font-weight: bold;">۳۰B$</span>
+          <span style="font-size: 35px; color: #546E7A; margin-right: 20px;">هزینه سالانه معافیت‌های غیرضروری</span>
+        </div>
+      </div>
+
+      <p style="text-align: center; color: #1A237E; font-size: 36px; font-weight: 900; margin-top: 60px; line-height: 1.5;">
+        عدالت مالیاتی؛ پیش‌نیاز هرگونه اصلاح اقتصادی در دوران گذار.
+      </p>
+    </div>
+  </foreignObject>
+</svg>

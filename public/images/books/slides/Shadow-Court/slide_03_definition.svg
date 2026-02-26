@@ -1,0 +1,44 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E"/>
+      <stop offset="40%" style="stop-color:#1A237E"/>
+      <stop offset="40%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#FFFFFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#bg3)"/>
+  <foreignObject x="60" y="60" width="960" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:28px; text-align:center; line-height:1.6;">
+      تعریف کلیدی
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="120" width="960" height="300">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#F9A825; font-size:52px; font-weight:bold; text-align:center; line-height:1.5;">
+      دادگاه در سایه
+      <br/>
+      <span style="font-size:32px; color:#FFFFFF;">وجدان منفصل مسئول</span>
+    </div>
+  </foreignObject>
+  <rect x="60" y="480" width="960" height="700" rx="20" fill="#FFFFFF" style="filter:drop-shadow(0 8px 30px rgba(0,0,0,0.1))"/>
+  <foreignObject x="100" y="520" width="880" height="640">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#1A237E; font-size:28px; text-align:right; line-height:2.4;">
+      <span style="font-weight:bold; font-size:32px;">Shadow Quasi-Judicial Body</span>
+      <br/><br/>
+      نهادی که وظایف زیر را بر عهده دارد:
+      <br/><br/>
+      <span style="color:#2E7D32; font-size:24px;">۱.</span> مستندسازی نظام‌مند جرایم رژیم
+      <br/>
+      <span style="color:#2E7D32; font-size:24px;">۲.</span> داوری تصمیم‌های حساس جنبش
+      <br/>
+      <span style="color:#2E7D32; font-size:24px;">۳.</span> گفت‌وگوی نخبگانی برای مسائل پرمناقشه
+      <br/>
+      <span style="color:#2E7D32; font-size:24px;">۴.</span> ثبت آراء برای بازنگری پس از گذار
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1220" width="960" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#7F8C8D; font-size:22px; text-align:center;">
+      ◄ ادامه در اسلاید بعد
+    </div>
+  </foreignObject>
+</svg>
