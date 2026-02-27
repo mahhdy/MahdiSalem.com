@@ -3,12 +3,15 @@ import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { getLangFromUrl, getDir, t } from "../i18n";
+import { siteConfig } from "../config/site";
 
 interface Props {
   title?: string;
   description?: string;
   ogImage?: string;
   noIndex?: boolean;
+  contentType?: string;
+  category?: string;
 }
 
 const lang = getLangFromUrl(Astro.url);
@@ -18,7 +21,13 @@ const {
   description = t("site.description", lang),
   ogImage = "/images/og-default.jpg",
   noIndex = false,
+  contentType = "page",
+  category = "none",
 } = Astro.props;
+
+const gaId = siteConfig.analytics.googleAnalyticsId;
+const gtmId = siteConfig.analytics.googleTagManagerId;
+const cfToken = siteConfig.analytics.cloudflareToken;
 
 const fullTitle =
   title === t("site.title", lang)
@@ -30,6 +39,40 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 <!doctype html>
 <html lang={lang} dir={dir} class="scroll-smooth">
   <head>
+    <!-- Google Tag Manager -->
+    {gtmId && (
+      <script is:inline define:vars={{ gtmId }}>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer',gtmId);
+      </script>
+    )}
+    <!-- End Google Tag Manager -->
+    <!-- Google Analytics -->
+    {gaId && (
+      <>
+        <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
+        <script is:inline define:vars={{ gaId, lang, contentType, category }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', gaId, {
+            'language': lang,
+            'content_type': contentType,
+            'category': category,
+            'page_title': document.title,
+            'page_path': window.location.pathname
+          });
+        </script>
+      </>
+    )}
+
+    <!-- Cloudflare Web Analytics -->
+    {cfToken && (
+      <script is:inline defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon={`{"token": "${cfToken}"}`}></script>
+    )}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
@@ -88,6 +131,18 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     </script>
   </head>
   <body class="min-h-screen flex flex-col">
+    <!-- Google Tag Manager (noscript) -->
+    {gtmId && (
+      <noscript>
+        <iframe 
+          src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`}
+          height="0" 
+          width="0" 
+          style="display:none;visibility:hidden"
+        ></iframe>
+      </noscript>
+    )}
+    <!-- End Google Tag Manager (noscript) -->
     <Header lang={lang} />
     <main class="flex-1">
       <slot />

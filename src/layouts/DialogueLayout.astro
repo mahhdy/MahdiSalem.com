@@ -71,7 +71,12 @@ const dateFormatter = new Intl.DateTimeFormat(
 const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout
+  title={title}
+  description={description}
+  contentType="dialogue"
+  category={categories[0] || "dialogues"}
+>
   <ReadingProgress />
 
   <!-- Floating Width Toggle (only visible after scroll) -->

@@ -150,7 +150,12 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
     <Content />
   </BookLayout>
 ) : (
-  <BaseLayout title={entry.data.title} description={entry.data.description}>
+  <BaseLayout 
+    title={entry.data.title} 
+    description={entry.data.description}
+    contentType="book"
+    category={entry.data.categories?.[0] || 'books'}
+  >
     {entry.data.pdfUrl && <WidthToggle title={entry.data.title} author={entry.data.author} lang={lang} />}
     <div class="container-wide py-16">
       {/* Full-width cover image (default) */}

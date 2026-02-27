@@ -39,6 +39,15 @@ export const siteConfig = {
     x: import.meta.env.PUBLIC_X_FEED_ID || 'HZm9MUOpxj54TfEk',
     linkedin: import.meta.env.PUBLIC_LINKEDIN_FEED_ID || '',
   },
+  /** Analytics configuration */
+  analytics: {
+    /** Google Analytics 4 Measurement ID (e.g. G-XXXXXXXXXX) */
+    googleAnalyticsId: '',
+    /** Google Tag Manager ID (e.g. GTM-XXXXXXX) */
+    googleTagManagerId: 'GTM-5B75PNDC',
+    /** Cloudflare Web Analytics Token (Optional if using automatic setup) */
+    cloudflareToken: '',
+  },
 };
 
 export type SiteConfig = typeof siteConfig;
