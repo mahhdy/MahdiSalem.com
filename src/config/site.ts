@@ -42,7 +42,7 @@ export const siteConfig = {
   /** Analytics configuration */
   analytics: {
     /** Google Analytics 4 Measurement ID (e.g. G-XXXXXXXXXX) */
-    googleAnalyticsId: '',
+    googleAnalyticsId: 'G-SCZFSM9GPM',
     /** Google Tag Manager ID (e.g. GTM-XXXXXXX) */
     googleTagManagerId: 'GTM-5B75PNDC',
     /** Cloudflare Web Analytics Token (Optional if using automatic setup) */
