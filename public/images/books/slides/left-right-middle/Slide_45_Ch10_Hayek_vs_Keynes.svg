@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="left45" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E65100"/>
+      <stop offset="100%" style="stop-color:#EF6C00"/>
+    </linearGradient>
+    <linearGradient id="right45" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1565C0"/>
+      <stop offset="100%" style="stop-color:#1976D2"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="540" height="1080" fill="url(#left45)"/>
+  <rect x="540" y="0" width="540" height="1080" fill="url(#right45)"/>
+  <rect x="528" y="0" width="24" height="1080" fill="#F9A825"/>
+
+  <!-- VS Badge -->
+  <circle cx="540" cy="480" r="50" fill="#F9A825"/>
+  <foreignObject x="505" y="455" width="70" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1A237E; font-size: 32px; font-weight: 900; margin: 0;">VS</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="30" width="1080" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 36px; font-weight: 900; text-shadow: 0 4px 20px rgba(0,0,0,0.4);">
+        ⚔️ بزرگ‌ترین دوئل اقتصادی قرن بیستم
+      </h1>
+    </div>
+  </foreignObject>
+
+  <!-- Hayek Side -->
+  <foreignObject x="20" y="130" width="498" height="830">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 50px; margin: 0;">🏛️</p>
+      <h2 style="color: #FFFFFF; font-size: 32px; margin: 8px 0;">فریدریش هایک</h2>
+      <p style="color: #FFCCBC; font-size: 17px; margin: 0 0 15px 0;">۱۸۹۹-۱۹۹۲ | اتریش-انگلستان</p>
+
+      <div style="background: rgba(0,0,0,0.2); border-radius: 14px; padding: 14px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 17px; margin: 0;">📈 بازار = <strong style="color: #F9A825;">نظم خودجوش</strong><br/><span style="color: #FFCCBC; font-size: 14px;">هیچ ذهنی نمی‌تواند جای بازار بنشیند</span></p>
+      </div>
+      <div style="background: rgba(0,0,0,0.2); border-radius: 14px; padding: 14px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 17px; margin: 0;">⚠️ برنامه‌ریزی = <strong style="color: #F9A825;">راه بردگی</strong><br/><span style="color: #FFCCBC; font-size: 14px;">هر دخالت دولتی به دیکتاتوری ختم می‌شود</span></p>
+      </div>
+      <div style="background: rgba(0,0,0,0.2); border-radius: 14px; padding: 14px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 17px; margin: 0;">💡 دانش = <strong style="color: #F9A825;">پراکنده</strong><br/><span style="color: #FFCCBC; font-size: 14px;">قیمت‌ها اطلاعات را منتقل می‌کنند</span></p>
+      </div>
+      <div style="background: rgba(0,0,0,0.2); border-radius: 14px; padding: 14px;">
+        <p style="color: #FFFFFF; font-size: 17px; margin: 0;">🗽 آزادی اقتصادی = <strong style="color: #F9A825;">آزادی سیاسی</strong><br/><span style="color: #FFCCBC; font-size: 14px;">بدون بازار آزاد، دموکراسی نمی‌ماند</span></p>
+      </div>
+
+      <div style="margin-top: 18px; border: 2px solid #F9A825; border-radius: 12px; padding: 12px;">
+        <p style="color: #F9A825; font-size: 16px; margin: 0;">📚 «راه بردگی» (۱۹۴۴)<br/><span style="color: #FFFFFF; font-size: 14px;">نوبل اقتصاد ۱۹۷۴</span></p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Keynes Side -->
+  <foreignObject x="562" y="130" width="498" height="830">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 50px; margin: 0;">🏦</p>
+      <h2 style="color: #FFFFFF; font-size: 32px; margin: 8px 0;">جان مینارد کینز</h2>
+      <p style="color: #BBDEFB; font-size: 17px; margin: 0 0 15px 0;">۱۸۸۳-۱۹۴۶ | انگلستان</p>
+
+      <div style="background: rgba(0,0,0,0.2); border-radius: 14px; padding: 14px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 17px; margin: 0;">📉 بازار = <strong style="color: #F9A825;">ناقص</strong><br/><span style="color: #BBDEFB; font-size: 14px;">بازار خودش را اصلاح نمی‌کند</span></p>
+      </div>
+      <div style="background: rgba(0,0,0,0.2); border-radius: 14px; padding: 14px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 17px; margin: 0;">🏛️ دولت باید <strong style="color: #F9A825;">هزینه کند</strong><br/><span style="color: #BBDEFB; font-size: 14px;">در بحران، فقط دولت می‌تواند تقاضا بسازد</span></p>
+      </div>
+      <div style="background: rgba(0,0,0,0.2); border-radius: 14px; padding: 14px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 17px; margin: 0;">⚖️ سرمایه‌داری <strong style="color: #F9A825;">مدیریت‌شده</strong><br/><span style="color: #BBDEFB; font-size: 14px;">نه لغو بازار، نه رها کردنش</span></p>
+      </div>
+      <div style="background: rgba(0,0,0,0.2); border-radius: 14px; padding: 14px;">
+        <p style="color: #FFFFFF; font-size: 17px; margin: 0;">🕰️ «در بلندمدت <strong style="color: #F9A825;">همه مرده‌ایم</strong>»<br/><span style="color: #BBDEFB; font-size: 14px;">مردم الان به کمک نیاز دارند</span></p>
+      </div>
+
+      <div style="margin-top: 18px; border: 2px solid #F9A825; border-radius: 12px; padding: 12px;">
+        <p style="color: #F9A825; font-size: 16px; margin: 0;">📚 «نظریه عمومی» (۱۹۳۶)<br/><span style="color: #FFFFFF; font-size: 14px;">معمار نظام برتون وودز</span></p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Bottom -->
+  <rect x="180" y="970" width="720" height="68" rx="34" fill="#F9A825"/>
+  <foreignObject x="190" y="982" width="700" height="48">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1A237E; font-size: 22px; font-weight: 700; margin: 0;">
+        💡 این دوئل هنوز ادامه دارد: هر بحران اقتصادی آن را زنده می‌کند
+      </p>
+    </div>
+  </foreignObject>
+
+</svg>

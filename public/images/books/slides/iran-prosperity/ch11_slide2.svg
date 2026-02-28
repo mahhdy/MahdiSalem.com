@@ -1,0 +1,54 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#311B92;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#6200EA;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="1080" height="1350" fill="#F3E5F5" opacity="0.3" />
+    <rect width="1080" height="1350" fill="white" />
+    
+    <rect width="1080" height="120" fill="#6200EA" />
+    <foreignObject x="40" y="35" width="1000" height="60">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif; color: white; font-size: 34px; font-weight: bold;">
+            فصل ۱۱: فاز ۴ و ۵ — بلوغ و تعالی
+        </div>
+    </foreignObject>
+    
+    <foreignObject x="60" y="160" width="960" height="140">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif; color: #311B92; font-size: 50px; font-weight: 900; line-height: 1.3;">
+            فاز ۴: بلوغ نهادی و فرهنگی
+        </div>
+    </foreignObject>
+    
+    <g transform="translate(60, 310)">
+    
+        <rect y="0" width="960" height="280" rx="28" fill="white" style="filter: drop-shadow(0 12px 24px rgba(98,0,234,0.12));" />
+        <rect x="0" y="0" width="16" height="280" rx="8" fill="#6200EA" />
+        
+        <foreignObject x="50" y="35" width="860" height="210">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif;">
+                <div style="color: #6200EA; font-size: 26px; font-weight: 800; margin-bottom: 20px;">چشم‌انداز بلوغ</div>
+                <div style="color: #2D3436; font-size: 44px; font-weight: 900; line-height: 1.6;">
+                    درونی‌سازی ارزش‌های دموکراتیک در فرهنگ عمومی و پختگی کامل نهادهای حاکمیتی در سال‌های ۱۱ تا ۱۵ گذار.
+                </div>
+            </div>
+        </foreignObject>
+        
+        <rect y="320" width="960" height="190" rx="28" fill="white" style="filter: drop-shadow(0 12px 24px rgba(98,0,234,0.12));" />
+        <rect x="0" y="320" width="16" height="190" rx="8" fill="#1A237E" />
+        
+        <foreignObject x="50" y="355" width="860" height="120">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif;">
+                <div style="color: #1A237E; font-size: 26px; font-weight: 800; margin-bottom: 20px;">شاخص موفقیت</div>
+                <div style="color: #2D3436; font-size: 32px; font-weight: 500; line-height: 1.6;">
+                    دموکراسی برگشت‌ناپذیر؛ زمانی که هیچ بازیگر بانفوذی دیگر به بازگشت استبداد به عنوان یک گزینه نمی‌اندیشد.
+                </div>
+            </div>
+        </foreignObject>
+        
+    </g>
+    
+    <text x="540" y="1310" text-anchor="middle" font-family="'Vazirmatn', sans-serif" font-size="22" font-weight="bold" fill="#6200EA">میراث ما برای قرن پانزدهم • ۲۰۲۶</text>
+    </svg>
+    

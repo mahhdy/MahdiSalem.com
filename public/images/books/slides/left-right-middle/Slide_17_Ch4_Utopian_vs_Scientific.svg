@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad17" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAFAFA"/>
+      <stop offset="100%" style="stop-color:#ECEFF1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad17)"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1080" height="140" fill="#C62828"/>
+  <foreignObject x="0" y="40" width="1080" height="90">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 40px; font-weight: 800; margin: 0;">
+        🌹 دو نوع سوسیالیسم
+      </h1>
+      <p style="color: #FFCDD2; font-size: 22px; margin: 10px 0 0 0;">قبل و بعد از مارکس</p>
+    </div>
+  </foreignObject>
+  
+  <!-- Timeline Arrow -->
+  <rect x="100" y="170" width="880" height="8" fill="#E0E0E0"/>
+  <polygon points="980,174 960,160 960,188" fill="#C62828"/>
+  <circle cx="300" cy="174" r="15" fill="#FF9800"/>
+  <circle cx="780" cy="174" r="15" fill="#C62828"/>
+  
+  <foreignObject x="220" y="195" width="160" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FF9800; font-size: 18px; font-weight: 700; margin: 0;">قرن ۱۸-۱۹</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="700" y="195" width="160" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #C62828; font-size: 18px; font-weight: 700; margin: 0;">۱۸۴۸ به بعد</p>
+    </div>
+  </foreignObject>
+  
+  <!-- Utopian Card -->
+  <rect x="60" y="260" width="460" height="420" rx="25" fill="#FFFFFF" stroke="#FF9800" stroke-width="3"/>
+  <rect x="60" y="260" width="460" height="70" rx="25" fill="#FF9800"/>
+  <foreignObject x="60" y="272" width="460" height="55">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h2 style="color: #FFFFFF; font-size: 32px; font-weight: 800; margin: 0;">🌈 سوسیالیسم تخیلی</h2>
+    </div>
+  </foreignObject>
+  <foreignObject x="80" y="345" width="420" height="320">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #424242; font-size: 20px; line-height: 2; margin: 0;">
+        ✦ جامعه ایده‌آل را <strong style="color: #FF9800;">تصور</strong> می‌کرد<br/>
+        ✦ به <strong style="color: #FF9800;">اخلاق و تربیت</strong> تکیه داشت<br/>
+        ✦ <strong style="color: #FF9800;">کمون‌های</strong> آزمایشی ساخت<br/>
+        ✦ از ثروتمندان کمک می‌خواست<br/>
+        ✦ انقلاب را <strong style="color: #FF9800;">رد</strong> می‌کرد
+      </p>
+      <div style="margin-top: 25px; padding: 15px; background: #FFF3E0; border-radius: 15px;">
+        <p style="color: #E65100; font-size: 18px; font-weight: 700; margin: 0 0 10px 0;">👤 چهره‌های کلیدی:</p>
+        <p style="color: #424242; font-size: 16px; margin: 0;">
+          رابرت اوون | سن‌سیمون | شارل فوریه
+        </p>
+      </div>
+    </div>
+  </foreignObject>
+  
+  <!-- Scientific Card -->
+  <rect x="560" y="260" width="460" height="420" rx="25" fill="#FFFFFF" stroke="#C62828" stroke-width="3"/>
+  <rect x="560" y="260" width="460" height="70" rx="25" fill="#C62828"/>
+  <foreignObject x="560" y="272" width="460" height="55">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h2 style="color: #FFFFFF; font-size: 32px; font-weight: 800; margin: 0;">🔬 سوسیالیسم علمی</h2>
+    </div>
+  </foreignObject>
+  <foreignObject x="580" y="345" width="420" height="320">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #424242; font-size: 20px; line-height: 2; margin: 0;">
+        ✦ جامعه را <strong style="color: #C62828;">تحلیل علمی</strong> می‌کرد<br/>
+        ✦ بر <strong style="color: #C62828;">قوانین تاریخ</strong> تکیه داشت<br/>
+        ✦ <strong style="color: #C62828;">طبقه کارگر</strong> را عامل تغییر می‌دانست<br/>
+        ✦ سرمایه‌داری را <strong style="color: #C62828;">محکوم به زوال</strong> می‌دید<br/>
+        ✦ انقلاب را <strong style="color: #C62828;">ضروری</strong> می‌دانست
+      </p>
+      <div style="margin-top: 25px; padding: 15px; background: #FFEBEE; border-radius: 15px;">
+        <p style="color: #C62828; font-size: 18px; font-weight: 700; margin: 0 0 10px 0;">👤 چهره‌های کلیدی:</p>
+        <p style="color: #424242; font-size: 16px; margin: 0;">
+          کارل مارکس | فردریش انگلس
+        </p>
+      </div>
+    </div>
+  </foreignObject>
+  
+  <!-- Key Insight -->
+  <rect x="150" y="720" width="780" height="120" rx="20" fill="#C62828"/>
+  <foreignObject x="170" y="740" width="740" height="90">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 10px 0;">💡 تفاوت کلیدی</p>
+      <p style="color: #FFFFFF; font-size: 24px; margin: 0;">
+        تخیلی‌ها می‌گفتند «چه <strong style="color: #F9A825;">باید</strong> باشد» | علمی‌ها گفتند «چه <strong style="color: #F9A825;">خواهد</strong> شد»
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Footer -->
+  <foreignObject x="0" y="880" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #9E9E9E; font-size: 18px; margin: 0;">📖 فصل ۴ | اسلاید ۲ از ۵</p>
+    </div>
+  </foreignObject>
+  
+</svg>

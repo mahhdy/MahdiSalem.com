@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad52" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#263238"/>
+      <stop offset="50%" style="stop-color:#37474F"/>
+      <stop offset="100%" style="stop-color:#263238"/>
+    </linearGradient>
+    <radialGradient id="danger52" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:rgba(211,47,47,0.12)"/>
+      <stop offset="100%" style="stop-color:rgba(0,0,0,0)"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad52)"/>
+  <rect width="1080" height="1080" fill="url(#danger52)"/>
+
+  <!-- Warning Stripe -->
+  <rect x="0" y="0" width="1080" height="8" fill="#D32F2F"/>
+  <rect x="0" y="1072" width="1080" height="8" fill="#D32F2F"/>
+
+  <rect x="300" y="55" width="480" height="55" rx="27" fill="none" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="300" y="63" width="480" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; margin: 0;">⚠️ فصل دوازدهم | ناسیونالیسم</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="60" y="150" width="960" height="300">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 58px; font-weight: 900; line-height: 1.4; text-shadow: 0 0 40px rgba(211,47,47,0.3);">
+        ملت من<br/>
+        <span style="color: #D32F2F;">بالاتر از همه</span>
+      </h1>
+      <p style="color: #B0BEC5; font-size: 26px; margin-top: 25px; line-height: 1.6;">
+        از وطن‌دوستی تا نسل‌کشی<br/>
+        مرز باریک بین عشق به وطن و نفرت از دیگری
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Spectrum of Nationalism -->
+  <rect x="80" y="480" width="920" height="60" rx="30"/>
+  <linearGradient id="natSpec" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" style="stop-color:#4CAF50"/>
+    <stop offset="33%" style="stop-color:#FF9800"/>
+    <stop offset="66%" style="stop-color:#D32F2F"/>
+    <stop offset="100%" style="stop-color:#212121"/>
+  </linearGradient>
+  <rect x="80" y="480" width="920" height="60" rx="30" fill="url(#natSpec)"/>
+
+  <!-- Labels -->
+  <foreignObject x="60" y="550" width="250" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #4CAF50; font-size: 17px; font-weight: 700; margin: 0;">🟢 وطن‌دوستی<br/><span style="font-weight: 400; font-size: 14px;">عشق سالم به سرزمین</span></p>
+    </div>
+  </foreignObject>
+  <foreignObject x="310" y="550" width="200" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FF9800; font-size: 17px; font-weight: 700; margin: 0;">🟠 ناسیونالیسم<br/><span style="font-weight: 400; font-size: 14px;">ملت بالاتر از فرد</span></p>
+    </div>
+  </foreignObject>
+  <foreignObject x="530" y="550" width="230" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #D32F2F; font-size: 17px; font-weight: 700; margin: 0;">🔴 اولتراناسیونالیسم<br/><span style="font-weight: 400; font-size: 14px;">برتری نژادی/قومی</span></p>
+    </div>
+  </foreignObject>
+  <foreignObject x="780" y="550" width="240" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #BDBDBD; font-size: 17px; font-weight: 700; margin: 0;">⚫ فاشیسم/نازیسم<br/><span style="font-weight: 400; font-size: 14px;">نسل‌کشی + توتالیتاریسم</span></p>
+    </div>
+  </foreignObject>
+
+  <!-- Key Question -->
+  <rect x="100" y="650" width="880" height="160" rx="22" fill="rgba(211,47,47,0.15)" stroke="#D32F2F" stroke-width="2"/>
+  <foreignObject x="120" y="668" width="840" height="130">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; font-weight: 700; margin: 0 0 12px 0;">❓ سؤالات کلیدی این فصل</p>
+      <p style="color: #FFFFFF; font-size: 22px; line-height: 1.7; margin: 0;">
+        آیا ناسیونالیسم <strong style="color: #F9A825;">ذاتاً خطرناک</strong> است؟ یا فقط وقتی افراطی شود؟<br/>
+        چرا «ملت» قوی‌ترین <strong style="color: #F9A825;">هویت سیاسی</strong> تاریخ است؟<br/>
+        فاشیسم <strong style="color: #D32F2F;">چپ</strong> است یا <strong style="color: #D32F2F;">راست</strong>؟
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Hero Stat -->
+  <foreignObject x="80" y="850" width="920" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="display: flex; justify-content: center; gap: 60px;">
+        <div>
+          <p style="color: #F9A825; font-size: 36px; font-weight: 900; margin: 0;">+۸۰M</p>
+          <p style="color: #B0BEC5; font-size: 15px; margin: 3px 0 0 0;">کشته جنگ‌های ناسیونالیستی</p>
+        </div>
+        <div>
+          <p style="color: #D32F2F; font-size: 36px; font-weight: 900; margin: 0;">۶M</p>
+          <p style="color: #B0BEC5; font-size: 15px; margin: 3px 0 0 0;">قربانی هولوکاست</p>
+        </div>
+        <div>
+          <p style="color: #FF9800; font-size: 36px; font-weight: 900; margin: 0;">۲۰۰+</p>
+          <p style="color: #B0BEC5; font-size: 15px; margin: 3px 0 0 0;">دولت-ملت در جهان امروز</p>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="960" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۱۲ | اسلاید ۱ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

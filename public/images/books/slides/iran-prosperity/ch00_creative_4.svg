@@ -1,0 +1,17 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1080" height="1350" fill="#20232A"/>
+    <rect x="0" y="0" width="1080" height="100" fill="#61DAFB"/>
+    <foreignObject x="0" y="0" width="1080" height="100"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; font-family:'Vazirmatn'; font-size:36px; font-weight:800; color:#20232A; direction:rtl;">خلاصه مدیریتی: از بحران تا بالندگی</div></foreignObject>
+    <text x="540" y="180" text-anchor="middle" font-family="'Vazirmatn'" font-size="56" font-weight="900" fill="white">ستون‌های ایران ۱۴۳۰</text>
+    <g transform="translate(90, 350)">
+        <rect width="150" height="600" x="15" fill="#3F51B5" opacity="0.8"/><rect width="180" height="40" x="0" y="-40" fill="#3F51B5"/><rect width="180" height="40" x="0" y="600" fill="#3F51B5"/><rect width="150" height="600" x="200" fill="#009688" opacity="0.8"/><rect width="180" height="40" x="185" y="-40" fill="#009688"/><rect width="180" height="40" x="185" y="600" fill="#009688"/><rect width="150" height="600" x="385" fill="#FF9800" opacity="0.8"/><rect width="180" height="40" x="370" y="-40" fill="#FF9800"/><rect width="180" height="40" x="370" y="600" fill="#FF9800"/><rect width="150" height="600" x="570" fill="#4CAF50" opacity="0.8"/><rect width="180" height="40" x="555" y="-40" fill="#4CAF50"/><rect width="180" height="40" x="555" y="600" fill="#4CAF50"/><rect width="150" height="600" x="755" fill="#673AB7" opacity="0.8"/><rect width="180" height="40" x="740" y="-40" fill="#673AB7"/><rect width="180" height="40" x="740" y="600" fill="#673AB7"/>
+    </g>
+    <g transform="translate(90, 1000)">
+        <foreignObject x="0" y="0" width="180" height="150"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Vazirmatn; color:white; text-align:center; font-size:20px; direction:rtl;"><strong>سیاسی</strong><br/>دموکراسی آزاد</div></foreignObject>
+        <foreignObject x="185" y="0" width="180" height="150"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Vazirmatn; color:white; text-align:center; font-size:20px; direction:rtl;"><strong>اقتصادی</strong><br/>رشد پایدار</div></foreignObject>
+        <foreignObject x="370" y="0" width="180" height="150"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Vazirmatn; color:white; text-align:center; font-size:20px; direction:rtl;"><strong>اجتماعی</strong><br/>عدالت اجتماعی</div></foreignObject>
+        <foreignObject x="555" y="0" width="180" height="150"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Vazirmatn; color:white; text-align:center; font-size:20px; direction:rtl;"><strong>محیط زیست</strong><br/>احیای منابع</div></foreignObject>
+        <foreignObject x="740" y="0" width="180" height="150"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Vazirmatn; color:white; text-align:center; font-size:20px; direction:rtl;"><strong>منطقه‌ای</strong><br/>ثبات و صلح</div></foreignObject>
+    </g>
+    </svg>
+    

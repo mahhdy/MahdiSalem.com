@@ -1,0 +1,16 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1080" height="1350" fill="#f0f4f8"/>
+    <rect x="0" y="0" width="1080" height="100" fill="#1565C0"/>
+    <foreignObject x="0" y="0" width="1080" height="100"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; font-family:Vazirmatn; font-size:36px; font-weight:800; color:white; direction:rtl;">فصل ۹: فاز ۲ — نهادسازی (سال ۳-۵)</div></foreignObject>
+    <text x="540" y="200" text-anchor="middle" font-family="'Vazirmatn'" font-size="52" font-weight="900" fill="#1565C0">ساختار چهارلایه حکومت</text>
+    <g transform="translate(540, 300)">
+        <rect x="-500" y="0" width="1000" height="140" rx="70" fill="#0D47A1"/><text y="60" text-anchor="middle" font-family="Vazirmatn" font-size="32" font-weight="900" fill="white">سطح ملی (فدرال)</text><text y="100" text-anchor="middle" font-family="Vazirmatn" font-size="18" fill="white">دفاع، سیاست خارجی، پول ملی</text>
+        <path d="M0,140 L0,200" stroke="#1565C0" stroke-width="5" marker-end="url(#arrowhead)"/>
+        <rect x="-400" y="200" width="800" height="140" rx="70" fill="#1976D2"/><text y="260" text-anchor="middle" font-family="Vazirmatn" font-size="32" font-weight="900" fill="white">سطح منطقه‌ای (ایالت‌ها)</text><text y="300" text-anchor="middle" font-family="Vazirmatn" font-size="18" fill="white">آموزش، توسعه محلی، پلیس منطقه‌ای</text>
+        <path d="M0,340 L0,400" stroke="#1565C0" stroke-width="5" marker-end="url(#arrowhead)"/>
+        <rect x="-300" y="400" width="600" height="140" rx="70" fill="#1E88E5"/><text y="460" text-anchor="middle" font-family="Vazirmatn" font-size="32" font-weight="900" fill="white">سطح استانی</text><text y="500" text-anchor="middle" font-family="Vazirmatn" font-size="18" fill="white">خدمات تخصصی، راه‌ها، بهداشت</text>
+        <path d="M0,540 L0,600" stroke="#1565C0" stroke-width="5" marker-end="url(#arrowhead)"/>
+        <rect x="-200" y="600" width="400" height="140" rx="70" fill="#42A5F5"/><text y="660" text-anchor="middle" font-family="Vazirmatn" font-size="32" font-weight="900" fill="white">سطح محلی</text><text y="700" text-anchor="middle" font-family="Vazirmatn" font-size="18" fill="white">شهرداری‌ها، خدمات شهری</text>
+    </g>
+    <defs><marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#1565C0" /></marker></defs>
+    </svg>

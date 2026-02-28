@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad48" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E65100"/>
+      <stop offset="50%" style="stop-color:#FF6F00"/>
+      <stop offset="100%" style="stop-color:#F57F17"/>
+    </linearGradient>
+    <radialGradient id="spot48" cx="50%" cy="35%" r="50%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.1)"/>
+      <stop offset="100%" style="stop-color:rgba(0,0,0,0)"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad48)"/>
+  <rect width="1080" height="1080" fill="url(#spot48)"/>
+
+  <!-- Snake Symbol (Don't Tread on Me reference) -->
+  <text x="540" y="340" font-size="200" fill="#FFFFFF" opacity="0.08" text-anchor="middle" font-weight="900">🐍</text>
+
+  <rect x="330" y="60" width="420" height="55" rx="27" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <foreignObject x="330" y="68" width="420" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 24px; margin: 0;">فصل یازدهم | لیبرتارینیسم</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="60" y="160" width="960" height="300">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 62px; font-weight: 900; line-height: 1.4; text-shadow: 0 4px 30px rgba(0,0,0,0.3);">
+        روی من<br/>
+        <span style="color: #1A237E;">پا نگذار!</span>
+      </h1>
+      <p style="color: #FFF3E0; font-size: 26px; margin-top: 25px; line-height: 1.6;">
+        رادیکال‌ترین دفاع از آزادی فردی<br/>
+        آنارشیسم... اما از سمت راست!
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Definition -->
+  <rect x="80" y="490" width="920" height="170" rx="22" fill="rgba(0,0,0,0.25)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <foreignObject x="100" y="508" width="880" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">📚 تعریف: لیبرتارینیسم چیست؟</p>
+      <p style="color: #FFFFFF; font-size: 24px; line-height: 1.8; margin: 0;">
+        <strong style="color: #F9A825;">حداکثر آزادی فردی</strong> + <strong style="color: #F9A825;">حداقل دولت</strong><br/>
+        تنها وظیفه دولت: حفاظت از <strong>جان</strong>، <strong>مالکیت</strong> و <strong>قراردادها</strong><br/>
+        بقیه همه‌چیز = بازار آزاد + توافق داوطلبانه
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Key Distinction -->
+  <rect x="80" y="700" width="440" height="150" rx="18" fill="rgba(255,255,255,0.12)" stroke="#FFFFFF" stroke-width="2"/>
+  <foreignObject x="100" y="718" width="400" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 20px; font-weight: 700; margin: 0 0 8px 0;">🤔 تفاوت با محافظه‌کاری</p>
+      <p style="color: #FFFFFF; font-size: 18px; line-height: 1.6; margin: 0;">
+        محافظه‌کار: آزادی اقتصادی ✅<br/>
+        اما: دولت باید اخلاق را حفظ کند ❌<br/>
+        <strong>لیبرتارین: آزادی همه‌جانبه!</strong>
+      </p>
+    </div>
+  </foreignObject>
+
+  <rect x="560" y="700" width="440" height="150" rx="18" fill="rgba(255,255,255,0.12)" stroke="#FFFFFF" stroke-width="2"/>
+  <foreignObject x="580" y="718" width="400" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 20px; font-weight: 700; margin: 0 0 8px 0;">🤔 تفاوت با آنارشیسم چپ</p>
+      <p style="color: #FFFFFF; font-size: 18px; line-height: 1.6; margin: 0;">
+        آنارشیست چپ: ضد دولت + ضد سرمایه ❌<br/>
+        لیبرتارین: ضد دولت ✅<br/>
+        <strong>اما: سرمایه‌داری مقدس!</strong>
+      </p>
+    </div>
+  </foreignObject>
+
+  <rect x="300" y="890" width="480" height="70" rx="35" fill="#FFFFFF"/>
+  <foreignObject x="310" y="903" width="460" height="48">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #E65100; font-size: 26px; font-weight: 700; margin: 0;">⬅️ انواع و متفکران</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="1000" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 18px; margin: 0;">📖 فصل ۱۱ | اسلاید ۱ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

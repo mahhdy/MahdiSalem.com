@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad34" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#AD1457"/>
+      <stop offset="100%" style="stop-color:#880E4F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad34)"/>
+
+  <foreignObject x="0" y="40" width="1080" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 40px; font-weight: 800; margin: 0;">📌 جمع‌بندی فصل ۷</h1>
+    </div>
+  </foreignObject>
+
+  <rect x="70" y="130" width="940" height="380" rx="22" fill="rgba(0,0,0,0.25)"/>
+  <foreignObject x="90" y="148" width="900" height="350">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="padding: 14px 18px; background: rgba(249,168,37,0.12); border-right: 4px solid #F9A825; border-radius: 10px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 20px; margin: 0;">① سوسیال‌دموکراسی = <strong style="color: #F9A825;">سوسیالیسم + دموکراسی + بازار</strong></p>
+      </div>
+      <div style="padding: 14px 18px; background: rgba(249,168,37,0.12); border-right: 4px solid #4CAF50; border-radius: 10px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 20px; margin: 0;">② برنشتاین اصلاح‌طلبی را بنیان گذاشت | لوکزامبورگ مقاومت کرد</p>
+      </div>
+      <div style="padding: 14px 18px; background: rgba(249,168,37,0.12); border-right: 4px solid #E91E63; border-radius: 10px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 20px; margin: 0;">③ ۶ ستون: دموکراسی | دولت رفاه | مالیات پیشرونده | دیالوگ | اقتصاد مختلط | همبستگی</p>
+      </div>
+      <div style="padding: 14px 18px; background: rgba(249,168,37,0.12); border-right: 4px solid #2196F3; border-radius: 10px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 20px; margin: 0;">④ مدل اسکاندیناوی: <strong style="color: #F9A825;">موفق‌ترین</strong> تجربه سوسیال‌دموکراسی</p>
+      </div>
+      <div style="padding: 14px 18px; background: rgba(249,168,37,0.12); border-right: 4px solid #FF9800; border-radius: 10px;">
+        <p style="color: #FFFFFF; font-size: 20px; margin: 0;">⑤ انتقاد چپ: سازش | انتقاد راست: <strong style="color: #F9A825;">مالیات سنگین</strong> رشد را می‌کُشد</p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Bridge -->
+  <rect x="70" y="545" width="940" height="230" rx="22" fill="#7B1FA2"/>
+  <foreignObject x="90" y="565" width="900" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #CE93D8; font-size: 20px; margin: 0 0 10px 0;">🔜 فصل بعدی</p>
+      <h2 style="color: #FFFFFF; font-size: 42px; font-weight: 900; margin: 0 0 15px 0;">
+        فصل ۸: چپ نو و جنبش‌های معاصر
+      </h2>
+      <p style="color: #E1BEE7; font-size: 22px; line-height: 1.7; margin: 0;">
+        وقتی چپ سنتی جوان‌ها را از دست داد...<br/>
+        <strong style="color: #F9A825;">نسل ۶۸</strong>، فمینیسم، محیط‌زیست، ضد نژادپرستی
+      </p>
+    </div>
+  </foreignObject>
+
+  <rect x="310" y="810" width="460" height="70" rx="35" fill="#F9A825"/>
+  <foreignObject x="320" y="823" width="440" height="48">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #880E4F; font-size: 26px; font-weight: 700; margin: 0;">⬅️ چپ نو چه می‌خواهد؟</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="930" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۷ | اسلاید ۵ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

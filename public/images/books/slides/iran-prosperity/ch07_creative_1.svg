@@ -1,0 +1,78 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient id="compassGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" style="stop-color:#FFD700; stop-opacity:0.2" />
+            <stop offset="100%" style="stop-color:#000; stop-opacity:0" />
+        </radialGradient>
+    </defs>
+    <rect width="1080" height="1350" fill="#121212"/>
+    
+    <!-- Background Glow -->
+    <circle cx="540" cy="700" r="400" fill="url(#compassGrad)"/>
+
+    <!-- Header -->
+    <rect x="0" y="0" width="1080" height="100" fill="#FFC107"/>
+    <foreignObject x="0" y="0" width="1080" height="100">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: 'Vazirmatn', sans-serif; font-size: 36px; font-weight: 800; color: #121212; direction: rtl;">
+            فصل ۷: چشم‌انداز، اصول و میثاق ملی
+        </div>
+    </foreignObject>
+
+    <!-- Main Title -->
+    <text x="540" y="200" text-anchor="middle" font-family="'Vazirmatn'" font-size="52" font-weight="900" fill="white">قطب‌نمای ارزش‌های ملی</text>
+
+    <!-- Compass Drawing -->
+    <g transform="translate(540, 700)">
+        <!-- Outer Circle -->
+        <circle r="320" fill="none" stroke="#FFC107" stroke-width="2" opacity="0.3"/>
+        <circle r="340" fill="none" stroke="#FFC107" stroke-width="1" stroke-dasharray="5 10"/>
+        
+        <!-- North: Secularism -->
+        <g transform="translate(0, -320)">
+            <circle r="80" fill="#1A237E" stroke="#FFC107" stroke-width="3"/>
+            <foreignObject x="-70" y="-40" width="140" height="80">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-family:'Vazirmatn'; font-weight:800; font-size:24px; text-align:center;">سکولاریسم</div>
+            </foreignObject>
+        </g>
+
+        <!-- South: Federalism -->
+        <g transform="translate(0, 320)">
+            <circle r="80" fill="#1B5E20" stroke="#FFC107" stroke-width="3"/>
+            <foreignObject x="-70" y="-40" width="140" height="80">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-family:'Vazirmatn'; font-weight:800; font-size:24px; text-align:center;">فدرالیسم</div>
+            </foreignObject>
+        </g>
+
+        <!-- East: Democracy -->
+        <g transform="translate(320, 0)">
+            <circle r="80" fill="#0D47A1" stroke="#FFC107" stroke-width="3"/>
+            <foreignObject x="-70" y="-40" width="140" height="80">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-family:'Vazirmatn'; font-weight:800; font-size:24px; text-align:center;">دموکراسی</div>
+            </foreignObject>
+        </g>
+
+        <!-- West: Social Justice -->
+        <g transform="translate(-320, 0)">
+            <circle r="80" fill="#B71C1C" stroke="#FFC107" stroke-width="3"/>
+            <foreignObject x="-70" y="-40" width="140" height="80">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-family:'Vazirmatn'; font-weight:800; font-size:24px; text-align:center;">عدالت</div>
+            </foreignObject>
+        </g>
+
+        <!-- Center Star -->
+        <polygon points="0,-100 20,-20 100,0 20,20 0,100 -20,20 -100,0 -20,-20" fill="#FFC107" opacity="0.8"/>
+        <text y="10" text-anchor="middle" font-family="'Vazirmatn'" font-size="20" font-weight="900" fill="#121212">ایران</text>
+    </g>
+
+    <!-- Bottom Note -->
+    <foreignObject x="100" y="1150" width="880" height="100">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: #FFCC80; font-size: 22px; text-align: center; line-height: 1.6;">
+            این چهار رکن، تضمین‌کننده ثبات و بقای پیمان پایدار شهروندی در ایران نوین هستند.
+        </div>
+    </foreignObject>
+
+    <!-- Slide ID -->
+    <circle cx="1020" cy="1300" r="30" fill="#FFC107"/>
+    <text x="1020" y="1310" text-anchor="middle" font-family="'Vazirmatn', sans-serif" font-size="24" font-weight="bold" fill="#121212">۷۱</text>
+    </svg>
+    

@@ -1,0 +1,41 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1080" height="1350" fill="#f8f9fa"/>
+    <rect x="0" y="0" width="1080" height="100" fill="#283593"/>
+    <foreignObject x="0" y="0" width="1080" height="100">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: 'Vazirmatn', sans-serif; font-size: 36px; font-weight: 800; color: white; direction: rtl;">
+            فصل ۳: مبانی نظری — دموکراسی، تنوع، توسعه
+        </div>
+    </foreignObject>
+
+    <text x="540" y="220" text-anchor="middle" font-family="'Vazirmatn'" font-size="52" font-weight="900" fill="#1A237E">لایه‌های دموکراسی: از پوسته تا هسته</text>
+
+    <!-- The Diamond/Pyramid Layers -->
+    <g transform="translate(540, 700)">
+        <!-- Layer 4: Culture -->
+        <path d="M0,-350 L200,-150 L-200,-150 Z" fill="#FFC107" stroke="#FFA000" stroke-width="4"/>
+        <text y="-220" text-anchor="middle" font-family="'Vazirmatn'" font-size="28" font-weight="900" fill="#5D4037">فرهنگ دموکراتیک</text>
+
+        <!-- Layer 3: Institutions -->
+        <path d="M-200,-150 L200,-150 L350,50 L-350,50 Z" fill="#64B5F6" stroke="#1E88E5" stroke-width="4"/>
+        <text y="-50" text-anchor="middle" font-family="'Vazirmatn'" font-size="28" font-weight="900" fill="#0D47A1">نهادهای مستقل</text>
+
+        <!-- Layer 2: Rights -->
+        <path d="M-350,50 L350,50 L500,250 L-500,250 Z" fill="#BBDEFB" stroke="#64B5F6" stroke-width="4"/>
+        <text y="150" text-anchor="middle" font-family="'Vazirmatn'" font-size="28" font-weight="900" fill="#0D47A1">حقوق و آزادی‌ها</text>
+
+        <!-- Layer 1: Elections -->
+        <path d="M-500,250 L500,250 L400,350 L-400,350 Z" fill="#E3F2FD" stroke="#90CAF9" stroke-width="4"/>
+        <text y="310" text-anchor="middle" font-family="'Vazirmatn'" font-size="28" font-weight="900" fill="#0D47A1">انتخابات و رویه‌ها</text>
+    </g>
+
+    <foreignObject x="100" y="1100" width="880" height="200">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: #37474F; font-size: 22px; text-align: center; line-height: 1.8;">
+            بدون <strong style="color: #FF8F00;">فرهنگ مدارا</strong> و <strong style="color: #1E88E5;">نهادهای مستقل</strong>، دموکراسی تنها یک پوسته انتخابی شکننده است که به راحتی به استبداد بازمی‌گردد.
+        </div>
+    </foreignObject>
+
+    <!-- Slide ID -->
+    <circle cx="1020" cy="1300" r="30" fill="#283593"/>
+    <text x="1020" y="1310" text-anchor="middle" font-family="'Vazirmatn', sans-serif" font-size="24" font-weight="bold" fill="white">۳۱</text>
+    </svg>
+    

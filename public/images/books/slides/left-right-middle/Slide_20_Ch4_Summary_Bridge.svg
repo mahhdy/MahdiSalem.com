@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad20" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C62828"/>
+      <stop offset="100%" style="stop-color:#B71C1C"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad20)"/>
+  
+  <!-- Title -->
+  <foreignObject x="0" y="50" width="1080" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 42px; font-weight: 800; margin: 0;">
+        📌 جمع‌بندی فصل ۴: سوسیالیسم
+      </h1>
+    </div>
+  </foreignObject>
+  
+  <!-- Summary Points -->
+  <rect x="80" y="150" width="920" height="380" rx="25" fill="rgba(0,0,0,0.2)"/>
+  <foreignObject x="100" y="170" width="880" height="350">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      
+      <div style="display: flex; align-items: center; margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 15px;">
+        <span style="color: #F9A825; font-size: 32px; margin-left: 15px;">۱</span>
+        <p style="color: #FFFFFF; font-size: 22px; margin: 0;">
+          سوسیالیسم = <strong style="color: #F9A825;">مالکیت اجتماعی</strong> بر ابزار تولید
+        </p>
+      </div>
+      
+      <div style="display: flex; align-items: center; margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 15px;">
+        <span style="color: #F9A825; font-size: 32px; margin-left: 15px;">۲</span>
+        <p style="color: #FFFFFF; font-size: 22px; margin: 0;">
+          دو موج: <strong style="color: #F9A825;">تخیلی</strong> (قرن ۱۹) و <strong style="color: #F9A825;">علمی</strong> (مارکس)
+        </p>
+      </div>
+      
+      <div style="display: flex; align-items: center; margin-bottom: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 15px;">
+        <span style="color: #F9A825; font-size: 32px; margin-left: 15px;">۳</span>
+        <p style="color: #FFFFFF; font-size: 22px; margin: 0;">
+          شاخه‌های متنوع: <strong style="color: #F9A825;">انقلابی | دموکراتیک | آزادی‌خواه</strong>
+        </p>
+      </div>
+      
+      <div style="display: flex; align-items: center; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 15px;">
+        <span style="color: #F9A825; font-size: 32px; margin-left: 15px;">۴</span>
+        <p style="color: #FFFFFF; font-size: 22px; margin: 0;">
+          هدف مشترک: <strong style="color: #F9A825;">پایان استثمار</strong> | روش‌ها متفاوت
+        </p>
+      </div>
+      
+    </div>
+  </foreignObject>
+  
+  <!-- Bridge to Chapter 5 -->
+  <rect x="80" y="570" width="920" height="280" rx="25" fill="#212121"/>
+  <foreignObject x="100" y="590" width="880" height="250">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #B0BEC5; font-size: 22px; margin: 0 0 15px 0;">🔜 فصل بعدی</p>
+      <h2 style="color: #F9A825; font-size: 44px; font-weight: 900; margin: 0;">
+        فصل ۵: کمونیسم
+      </h2>
+      <p style="color: #FFFFFF; font-size: 26px; margin: 20px 0; line-height: 1.6;">
+        از مارکس تا لنین تا مائو<br/>
+        نظریه، انقلاب، قدرت
+      </p>
+      <div style="display: flex; justify-content: center; gap: 15px; margin-top: 15px;">
+        <span style="background: #D32F2F; padding: 10px 20px; border-radius: 20px; color: #FFFFFF; font-size: 18px;">☭ شوروی</span>
+        <span style="background: #D32F2F; padding: 10px 20px; border-radius: 20px; color: #FFFFFF; font-size: 18px;">🇨🇳 چین</span>
+        <span style="background: #D32F2F; padding: 10px 20px; border-radius: 20px; color: #FFFFFF; font-size: 18px;">🇨🇺 کوبا</span>
+      </div>
+    </div>
+  </foreignObject>
+  
+  <!-- CTA -->
+  <rect x="300" y="890" width="480" height="80" rx="40" fill="#F9A825"/>
+  <foreignObject x="310" y="905" width="460" height="55">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #212121; font-size: 28px; font-weight: 700; margin: 0;">
+        ⬅️ وارد جهان کمونیسم شو
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Footer -->
+  <foreignObject x="0" y="1010" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFCDD2; font-size: 18px; margin: 0;">📖 فصل ۴ | اسلاید ۵ از ۵</p>
+    </div>
+  </foreignObject>
+  
+</svg>

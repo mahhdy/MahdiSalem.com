@@ -1,0 +1,51 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="1080" height="1350" fill="#F5F5F7" />
+    
+    <!-- Header Bar -->
+    <rect width="1080" height="100" fill="#1A237E" />
+    <foreignObject x="40" y="20" width="1000" height="60">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif; color: white; font-size: 32px; font-weight: bold;">
+            فصل ۲: تشخیص وضعیت
+        </div>
+    </foreignObject>
+    
+    <!-- Slide Title -->
+    <foreignObject x="60" y="140" width="960" height="120">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif; color: #1A237E; font-size: 48px; font-weight: 800; line-height: 1.2;">
+            اقتصاد در تله انسداد
+        </div>
+    </foreignObject>
+    
+    <g transform="translate(60, 260)">
+    
+        <rect y="0" width="960" height="200" rx="20" fill="white" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.05))" />
+        <rect y="0" width="15" height="200" rx="2" fill="#1A237E" />
+        
+        <foreignObject x="40" y="30" width="880" height="140">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif;">
+                <div style="color: #1A237E; font-size: 24px; font-weight: bold; margin-bottom: 15px;">ریشه بحران</div>
+                <div style="color: #424242; font-size: 28px; font-weight: 500; line-height: 1.5;">
+                    ترکیب تورم مزمن، فساد سیستماتیک و تحریم‌های بین‌المللی، قدرت خرید را نابود کرده است.
+                </div>
+            </div>
+        </foreignObject>
+        
+        <rect y="240" width="960" height="200" rx="20" fill="white" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.05))" />
+        <rect y="240" width="15" height="200" rx="2" fill="#F9A825" />
+        
+        <foreignObject x="40" y="270" width="880" height="140">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif;">
+                <div style="color: #F9A825; font-size: 24px; font-weight: bold; margin-bottom: 15px;">تعریف کلیدی</div>
+                <div style="color: #424242; font-size: 28px; font-weight: 500; line-height: 1.5;">
+                    «اقتصاد دستوری» مانع اصلی هرگونه رقابت سالم و شکوفایی است.
+                </div>
+            </div>
+        </foreignObject>
+        
+    </g>
+    
+    <!-- Footer -->
+    <text x="540" y="1310" text-anchor="middle" font-family="'Vazirmatn', sans-serif" font-size="20" fill="#9E9E9E">ایران در گذار - طرح پیشنهادی کالبدی</text>
+    </svg>
+    

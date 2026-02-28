@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad30" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#212121"/>
+      <stop offset="100%" style="stop-color:#333333"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad30)"/>
+
+  <foreignObject x="0" y="45" width="1080" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 38px; font-weight: 800; margin: 0;">📌 جمع‌بندی فصل ۶</h1>
+    </div>
+  </foreignObject>
+
+  <!-- Summary -->
+  <rect x="70" y="135" width="940" height="350" rx="22" fill="rgba(255,255,255,0.05)"/>
+  <foreignObject x="90" y="152" width="900" height="320">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="padding: 14px 18px; background: rgba(249,168,37,0.1); border-right: 4px solid #F9A825; border-radius: 10px; margin-bottom: 16px;">
+        <p style="color: #FFFFFF; font-size: 21px; margin: 0;">① آنارشیسم = مخالفت با <strong style="color: #F9A825;">هر شکل سلطه</strong> (نه فقط دولت)</p>
+      </div>
+      <div style="padding: 14px 18px; background: rgba(249,168,37,0.1); border-right: 4px solid #CE93D8; border-radius: 10px; margin-bottom: 16px;">
+        <p style="color: #FFFFFF; font-size: 21px; margin: 0;">② ۶ گرایش: کمونیستی | سندیکالیستی | فردگرا | اکولوژیک | فمینیستی | تعاونی</p>
+      </div>
+      <div style="padding: 14px 18px; background: rgba(249,168,37,0.1); border-right: 4px solid #EF9A9A; border-radius: 10px; margin-bottom: 16px;">
+        <p style="color: #FFFFFF; font-size: 21px; margin: 0;">③ تجربه‌های واقعی: اسپانیا ۱۹۳۶ | زاپاتیست‌ها | روژاوا</p>
+      </div>
+      <div style="padding: 14px 18px; background: rgba(249,168,37,0.1); border-right: 4px solid #4CAF50; border-radius: 10px;">
+        <p style="color: #FFFFFF; font-size: 21px; margin: 0;">④ بزرگ‌ترین ضعف: <strong style="color: #F9A825;">سازمان‌دهی پایدار</strong> بدون قدرت متمرکز</p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Bridge -->
+  <rect x="70" y="520" width="940" height="240" rx="22" fill="#E91E63"/>
+  <foreignObject x="90" y="540" width="900" height="210">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F8BBD0; font-size: 20px; margin: 0 0 12px 0;">🔜 فصل بعدی</p>
+      <h2 style="color: #FFFFFF; font-size: 40px; font-weight: 900; margin: 0 0 15px 0;">
+        فصل ۷: سوسیال‌دموکراسی و چپ میانه
+      </h2>
+      <p style="color: #F8BBD0; font-size: 22px; line-height: 1.7; margin: 0;">
+        آیا می‌شود <strong style="color: #FFFFFF;">سوسیالیست بود</strong> و <strong style="color: #FFFFFF;">دموکرات ماند</strong>؟<br/>
+        مدل اسکاندیناوی چگونه کار می‌کند؟
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- CTA -->
+  <rect x="310" y="800" width="460" height="72" rx="36" fill="#F9A825"/>
+  <foreignObject x="320" y="814" width="440" height="48">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #212121; font-size: 26px; font-weight: 700; margin: 0;">⬅️ مدل اسکاندیناوی</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="920" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۶ | اسلاید ۵ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

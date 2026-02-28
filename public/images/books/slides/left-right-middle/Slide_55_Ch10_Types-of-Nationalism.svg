@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad55" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#37474F"/>
+      <stop offset="100%" style="stop-color:#263238"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad55)"/>
+
+  <foreignObject x="0" y="40" width="1080" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 40px; font-weight: 800; margin: 0;">📌 جمع‌بندی فصل ۱۲</h1>
+    </div>
+  </foreignObject>
+
+  <rect x="70" y="130" width="940" height="310" rx="22" fill="rgba(0,0,0,0.25)"/>
+  <foreignObject x="90" y="148" width="900" height="280">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="padding: 13px 16px; background: rgba(249,168,37,0.12); border-right: 4px solid #4CAF50; border-radius: 10px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">① ناسیونالیسم طیفی گسترده: از <strong style="color: #4CAF50;">وطن‌پرستی سالم</strong> تا <strong style="color: #D32F2F;">فاشیسم</strong></p>
+      </div>
+      <div style="padding: 13px 16px; background: rgba(249,168,37,0.12); border-right: 4px solid #F9A825; border-radius: 10px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">② فاشیسم = ناسیونالیسم + توتالیتاریسم + رهبر کاریزماتیک + <strong style="color: #F9A825;">دشمن‌سازی</strong></p>
+      </div>
+      <div style="padding: 13px 16px; background: rgba(249,168,37,0.12); border-right: 4px solid #D32F2F; border-radius: 10px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">③ ۶ نوع ناسیونالیسم: مدنی | رهایی‌بخش | قومی | مذهبی | نژادی | فاشیسم</p>
+      </div>
+      <div style="padding: 13px 16px; background: rgba(249,168,37,0.12); border-right: 4px solid #FF9800; border-radius: 10px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">④ درس تاریخ: ناسیونالیسم قوی‌ترین <strong style="color: #FF9800;">سلاح بسیج</strong> است - هم برای آزادی، هم برای ویرانی</p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Bridge -->
+  <rect x="70" y="478" width="940" height="270" rx="22" fill="#4E342E"/>
+  <foreignObject x="90" y="498" width="900" height="240">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #BCAAA4; font-size: 20px; margin: 0 0 12px 0;">🔜 فصل بعدی</p>
+      <h2 style="color: #FFFFFF; font-size: 42px; font-weight: 900; margin: 0 0 15px 0;">
+        فصل ۱۳: راست نو و پوپولیسم
+      </h2>
+      <p style="color: #D7CCC8; font-size: 22px; line-height: 1.7; margin: 0 0 15px 0;">
+        فاشیسم مرد؟ نه!<br/>
+        بازگشت با <strong style="color: #F9A825;">کت و شلوار</strong> و <strong style="color: #F9A825;">شبکه‌های اجتماعی</strong>
+      </p>
+      <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+        <span style="background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 18px; color: #FFFFFF; font-size: 16px;">ترامپ</span>
+        <span style="background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 18px; color: #FFFFFF; font-size: 16px;">لوپن</span>
+        <span style="background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 18px; color: #FFFFFF; font-size: 16px;">اوربان</span>
+        <span style="background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 18px; color: #FFFFFF; font-size: 16px;">بولسونارو</span>
+        <span style="background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 18px; color: #FFFFFF; font-size: 16px;">مودی</span>
+      </div>
+    </div>
+  </foreignObject>
+
+  <rect x="310" y="790" width="460" height="72" rx="36" fill="#F9A825"/>
+  <foreignObject x="320" y="803" width="440" height="48">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #263238; font-size: 26px; font-weight: 700; margin: 0;">⬅️ پوپولیسم: تهدید یا فرصت؟</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="910" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۱۲ | اسلاید ۵ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

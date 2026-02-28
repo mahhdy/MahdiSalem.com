@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad23" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#0D0D1F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad23)"/>
+
+  <!-- Red Stripe Top -->
+  <rect x="0" y="0" width="1080" height="8" fill="#D32F2F"/>
+
+  <!-- Title -->
+  <foreignObject x="0" y="28" width="1080" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 40px; font-weight: 900; margin: 0;">
+        🌍 سه مدل کمونیسم واقعاً موجود
+      </h1>
+    </div>
+  </foreignObject>
+
+  <!-- Timeline Line -->
+  <rect x="120" y="128" width="840" height="4" fill="#F9A825" opacity="0.4"/>
+  <circle cx="280" cy="130" r="12" fill="#D32F2F"/>
+  <circle cx="540" cy="130" r="12" fill="#D32F2F"/>
+  <circle cx="800" cy="130" r="12" fill="#D32F2F"/>
+
+  <foreignObject x="200" y="148" width="160" height="30">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 16px; margin: 0;">۱۹۱۷</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="460" y="148" width="160" height="30">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 16px; margin: 0;">۱۹۴۹</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="720" y="148" width="160" height="30">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 16px; margin: 0;">۱۹۵۹</p>
+    </div>
+  </foreignObject>
+
+  <!-- Card 1: Leninism -->
+  <rect x="60" y="190" width="300" height="470" rx="22" fill="rgba(211,47,47,0.12)" stroke="#D32F2F" stroke-width="2"/>
+  <rect x="60" y="190" width="300" height="60" rx="22" fill="#D32F2F"/>
+  <foreignObject x="60" y="200" width="300" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 22px; font-weight: 800; margin: 0;">☭ لنینیسم | روسیه</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="75" y="265" width="270" height="385">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 40px; text-align: center; margin: 0 0 10px 0;">🇷🇺</p>
+      <p style="color: #F9A825; font-size: 19px; font-weight: 700; margin: 0 0 10px 0;">ولادیمیر لنین</p>
+      <p style="color: #E0E0E0; font-size: 17px; line-height: 1.8; margin: 0 0 15px 0;">
+        ✦ حزب پیشتاز (وانگارد)<br/>
+        ✦ انقلاب از بالا<br/>
+        ✦ حاکمیت تک‌حزبی<br/>
+        ✦ اقتصاد متمرکز (NEP)<br/>
+        ✦ دولت قوی گذار
+      </p>
+      <div style="background: rgba(211,47,47,0.3); border-radius: 12px; padding: 12px;">
+        <p style="color: #FFCDD2; font-size: 15px; margin: 0;">
+          📌 نوآوری: مارکسیسم را به کشور کشاورزی تطبیق داد
+        </p>
+      </div>
+      <div style="margin-top: 15px; background: rgba(0,0,0,0.3); border-radius: 12px; padding: 12px;">
+        <p style="color: #EF9A9A; font-size: 14px; margin: 0;">
+          ⚠️ انتقاد: دموکراسی را قربانی کرد
+        </p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Card 2: Maoism -->
+  <rect x="390" y="190" width="300" height="470" rx="22" fill="rgba(255,152,0,0.12)" stroke="#FF9800" stroke-width="2"/>
+  <rect x="390" y="190" width="300" height="60" rx="22" fill="#E65100"/>
+  <foreignObject x="390" y="200" width="300" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 22px; font-weight: 800; margin: 0;">🌾 مائوئیسم | چین</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="405" y="265" width="270" height="385">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FF9800; font-size: 40px; text-align: center; margin: 0 0 10px 0;">🇨🇳</p>
+      <p style="color: #F9A825; font-size: 19px; font-weight: 700; margin: 0 0 10px 0;">مائو تسه‌تونگ</p>
+      <p style="color: #E0E0E0; font-size: 17px; line-height: 1.8; margin: 0 0 15px 0;">
+        ✦ انقلاب دهقانی (نه کارگری)<br/>
+        ✦ جنگ پارتیزانی<br/>
+        ✦ انقلاب فرهنگی<br/>
+        ✦ جهش بزرگ به جلو<br/>
+        ✦ خودکفایی ملی
+      </p>
+      <div style="background: rgba(230,81,0,0.3); border-radius: 12px; padding: 12px;">
+        <p style="color: #FFCCBC; font-size: 15px; margin: 0;">
+          📌 نوآوری: مارکسیسم برای جهان سوم
+        </p>
+      </div>
+      <div style="margin-top: 15px; background: rgba(0,0,0,0.3); border-radius: 12px; padding: 12px;">
+        <p style="color: #EF9A9A; font-size: 14px; margin: 0;">
+          ⚠️ بحران: ۴۵ میلیون قربانی قحطی
+        </p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Card 3: Castroism -->
+  <rect x="720" y="190" width="300" height="470" rx="22" fill="rgba(76,175,80,0.12)" stroke="#4CAF50" stroke-width="2"/>
+  <rect x="720" y="190" width="300" height="60" rx="22" fill="#2E7D32"/>
+  <foreignObject x="720" y="200" width="300" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 22px; font-weight: 800; margin: 0;">🌴 گواریسم | کوبا</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="735" y="265" width="270" height="385">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #4CAF50; font-size: 40px; text-align: center; margin: 0 0 10px 0;">🇨🇺</p>
+      <p style="color: #F9A825; font-size: 19px; font-weight: 700; margin: 0 0 10px 0;">چه‌گوارا | کاسترو</p>
+      <p style="color: #E0E0E0; font-size: 17px; line-height: 1.8; margin: 0 0 15px 0;">
+        ✦ فوکوئیسم (هسته مسلح)<br/>
+        ✦ استقلال از شوروی<br/>
+        ✦ بهداشت رایگان<br/>
+        ✦ مقاومت در برابر آمریکا<br/>
+        ✦ انترناسیونالیسم انقلابی
+      </p>
+      <div style="background: rgba(46,125,50,0.3); border-radius: 12px; padding: 12px;">
+        <p style="color: #C8E6C9; font-size: 15px; margin: 0;">
+          📌 نوآوری: سوسیالیسم آمریکای لاتین
+        </p>
+      </div>
+      <div style="margin-top: 15px; background: rgba(0,0,0,0.3); border-radius: 12px; padding: 12px;">
+        <p style="color: #EF9A9A; font-size: 14px; margin: 0;">
+          ⚠️ بحران: تحریم و فقر اقتصادی
+        </p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Bottom Insight -->
+  <rect x="60" y="690" width="960" height="120" rx="18" fill="rgba(249,168,37,0.1)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="80" y="708" width="920" height="90">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">
+        🔍 وجه مشترک همه این مدل‌ها
+      </p>
+      <p style="color: #FFFFFF; font-size: 22px; margin: 0;">
+        هیچ‌کدام به <strong style="color: #F9A825;">«محو دولت»</strong> که مارکس وعده داده بود نرسیدند<br/>
+        بلکه <strong style="color: #EF5350;">قوی‌ترین دولت‌های تاریخ</strong> را ساختند
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- CTA Row -->
+  <rect x="320" y="848" width="440" height="72" rx="36" fill="#D32F2F"/>
+  <foreignObject x="330" y="862" width="420" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 26px; font-weight: 700; margin: 0;">
+        📖 تحلیل کامل در کتاب
+      </p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="955" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #EF9A9A; font-size: 18px; margin: 0;">📖 فصل ۵ | اسلاید ۳ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

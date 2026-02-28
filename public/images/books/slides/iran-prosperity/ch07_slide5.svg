@@ -1,0 +1,54 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#FFD600;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#F9A825;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="1080" height="1350" fill="#FFFDE7" opacity="0.5" />
+    <rect width="1080" height="1350" fill="white" />
+    
+    <rect width="1080" height="120" fill="#F9A825" />
+    <foreignObject x="40" y="35" width="1000" height="60">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif; color: #1A237E; font-size: 34px; font-weight: bold;">
+            فصل ۷: چشم‌انداز و اصول راهنما
+        </div>
+    </foreignObject>
+    
+    <foreignObject x="60" y="160" width="960" height="140">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif; color: #1A237E; font-size: 50px; font-weight: 900; line-height: 1.3;">
+            شاخص‌های بالندگی ۱۴۲۹
+        </div>
+    </foreignObject>
+    
+    <g transform="translate(60, 310)">
+    
+        <rect y="0" width="960" height="190" rx="28" fill="white" style="filter: drop-shadow(0 12px 24px rgba(249,168,37,0.12));" />
+        <rect x="940" y="0" width="20" height="190" rx="10" fill="#1A237E" />
+        
+        <foreignObject x="50" y="35" width="860" height="120">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif;">
+                <div style="color: #1A237E; font-size: 26px; font-weight: 800; margin-bottom: 20px; font-style: italic;">اهداف سنجش‌پذیر</div>
+                <div style="color: #1A237E; font-size: 32px; font-weight: 500; line-height: 1.6;">
+                    ارتقای شاخص دموکراسی به بالای ۷، کاهش سهم نفت در اقتصاد به زیر ۲۰٪ و احیای کامل منابع آب زیرزمینی.
+                </div>
+            </div>
+        </foreignObject>
+        
+        <rect y="230" width="960" height="280" rx="28" fill="white" style="filter: drop-shadow(0 12px 24px rgba(249,168,37,0.12));" />
+        <rect x="940" y="230" width="20" height="280" rx="10" fill="#F9A825" />
+        
+        <foreignObject x="50" y="265" width="860" height="210">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif;">
+                <div style="color: #F9A825; font-size: 26px; font-weight: 800; margin-bottom: 20px; font-style: italic;">آغاز سفر</div>
+                <div style="color: #1A237E; font-size: 44px; font-weight: 900; line-height: 1.6;">
+                    گذار ممکن است؛ اگر با ایمانی راسخ به تغییر و برنامه‌ای دانش‌بنیان، از همین امروز آغاز کنیم.
+                </div>
+            </div>
+        </foreignObject>
+        
+    </g>
+    
+    <text x="540" y="1310" text-anchor="middle" font-family="'Vazirmatn', sans-serif" font-size="22" font-weight="bold" fill="#F9A825">ایران ۱۴۲۹: افق روشنایی</text>
+    </svg>
+    

@@ -1,0 +1,264 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs>
+    <!-- Left Side - Nationalism (Dark Blue) -->
+    <linearGradient id="nationSide" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E"/>
+      <stop offset="100%" style="stop-color:#0D1642"/>
+    </linearGradient>
+    
+    <!-- Right Side - Fascism (Dark Red/Black) -->
+    <linearGradient id="fascismSide" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A0000"/>
+      <stop offset="100%" style="stop-color:#1A0000"/>
+    </linearGradient>
+    
+    <!-- Warning Glow -->
+    <filter id="warningGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Split Background -->
+  <rect x="0" y="0" width="540" height="1350" fill="url(#nationSide)"/>
+  <rect x="540" y="0" width="540" height="1350" fill="url(#fascismSide)"/>
+  
+  <!-- Diagonal Divider -->
+  <polygon points="510,0 570,0 570,1350 510,1350" fill="#0D0D0D"/>
+  
+  <!-- VS Circle -->
+  <circle cx="540" cy="200" r="50" fill="#FFC107" filter="url(#warningGlow)"/>
+  <text x="540" y="215" text-anchor="middle" 
+        font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#1A1A1A">VS</text>
+  
+  <!-- Left Title: Nationalism -->
+  <foreignObject x="20" y="60" width="480" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      font-size: 36px; font-weight: 800; color: #90CAF9;
+      direction: rtl;
+    ">
+      ناسیونالیسم
+    </div>
+  </foreignObject>
+  
+  <foreignObject x="20" y="130" width="480" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; display: flex; justify-content: center;
+      font-family: 'Vazirmatn', sans-serif; font-size: 18px; color: #64B5F6;
+      direction: rtl;
+    ">
+      عشق به وطن
+    </div>
+  </foreignObject>
+  
+  <!-- Right Title: Fascism -->
+  <foreignObject x="580" y="60" width="480" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      font-size: 36px; font-weight: 800; color: #EF9A9A;
+      direction: rtl;
+    ">
+      فاشیسم
+    </div>
+  </foreignObject>
+  
+  <foreignObject x="580" y="130" width="480" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; display: flex; justify-content: center;
+      font-family: 'Vazirmatn', sans-serif; font-size: 18px; color: #E57373;
+      direction: rtl;
+    ">
+      پرستش دولت
+    </div>
+  </foreignObject>
+  
+  <!-- Comparison Categories -->
+  
+  <!-- Category 1: Origin -->
+  <g transform="translate(0, 280)">
+    <rect x="30" y="0" width="470" height="120" rx="15" fill="rgba(255,255,255,0.05)"/>
+    <foreignObject x="40" y="10" width="450" height="100">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.6;
+      ">
+        <div style="font-size: 18px; color: #FFC107; margin-bottom: 8px;">📍 خاستگاه</div>
+        <div style="font-size: 16px;">انقلاب فرانسه (۱۷۸۹)</div>
+        <div style="font-size: 14px; color: #90CAF9;">ایده رهایی‌بخش ملت‌ها</div>
+      </div>
+    </foreignObject>
+    
+    <rect x="580" y="0" width="470" height="120" rx="15" fill="rgba(255,255,255,0.05)"/>
+    <foreignObject x="590" y="10" width="450" height="100">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.6;
+      ">
+        <div style="font-size: 18px; color: #FFC107; margin-bottom: 8px;">📍 خاستگاه</div>
+        <div style="font-size: 16px;">ایتالیا (۱۹۲۲)</div>
+        <div style="font-size: 14px; color: #EF9A9A;">واکنش به بحران مدرنیته</div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Category 2: Core Idea -->
+  <g transform="translate(0, 420)">
+    <rect x="30" y="0" width="470" height="120" rx="15" fill="rgba(255,255,255,0.05)"/>
+    <foreignObject x="40" y="10" width="450" height="100">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.6;
+      ">
+        <div style="font-size: 18px; color: #FFC107; margin-bottom: 8px;">💡 ایده محوری</div>
+        <div style="font-size: 16px;">هر ملت حق دولت دارد</div>
+        <div style="font-size: 14px; color: #90CAF9;">حق تعیین سرنوشت</div>
+      </div>
+    </foreignObject>
+    
+    <rect x="580" y="0" width="470" height="120" rx="15" fill="rgba(255,255,255,0.05)"/>
+    <foreignObject x="590" y="10" width="450" height="100">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.6;
+      ">
+        <div style="font-size: 18px; color: #FFC107; margin-bottom: 8px;">💡 ایده محوری</div>
+        <div style="font-size: 16px;">دولت همه‌چیز است</div>
+        <div style="font-size: 14px; color: #EF9A9A;">توتالیتاریسم کامل</div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Category 3: Violence -->
+  <g transform="translate(0, 560)">
+    <rect x="30" y="0" width="470" height="120" rx="15" fill="rgba(255,255,255,0.05)"/>
+    <foreignObject x="40" y="10" width="450" height="100">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.6;
+      ">
+        <div style="font-size: 18px; color: #FFC107; margin-bottom: 8px;">⚔️ خشونت</div>
+        <div style="font-size: 16px;">ابزار (نه هدف)</div>
+        <div style="font-size: 14px; color: #90CAF9;">برای دفاع از ملت</div>
+      </div>
+    </foreignObject>
+    
+    <rect x="580" y="0" width="470" height="120" rx="15" fill="rgba(255,255,255,0.05)"/>
+    <foreignObject x="590" y="10" width="450" height="100">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.6;
+      ">
+        <div style="font-size: 18px; color: #FFC107; margin-bottom: 8px;">⚔️ خشونت</div>
+        <div style="font-size: 16px;">ارزش ذاتی</div>
+        <div style="font-size: 14px; color: #EF9A9A;">جنگ زیباست!</div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Category 4: Democracy -->
+  <g transform="translate(0, 700)">
+    <rect x="30" y="0" width="470" height="120" rx="15" fill="rgba(255,255,255,0.05)"/>
+    <foreignObject x="40" y="10" width="450" height="100">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.6;
+      ">
+        <div style="font-size: 18px; color: #FFC107; margin-bottom: 8px;">🗳️ دموکراسی</div>
+        <div style="font-size: 16px;">معمولاً سازگار</div>
+        <div style="font-size: 14px; color: #90CAF9;">حاکمیت ملی = حاکمیت مردم</div>
+      </div>
+    </foreignObject>
+    
+    <rect x="580" y="0" width="470" height="120" rx="15" fill="rgba(255,255,255,0.05)"/>
+    <foreignObject x="590" y="10" width="450" height="100">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.6;
+      ">
+        <div style="font-size: 18px; color: #FFC107; margin-bottom: 8px;">🗳️ دموکراسی</div>
+        <div style="font-size: 16px;">ضد دموکراسی</div>
+        <div style="font-size: 14px; color: #EF9A9A;">رهبر همه‌چیز‌دان</div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Category 5: Individual -->
+  <g transform="translate(0, 840)">
+    <rect x="30" y="0" width="470" height="120" rx="15" fill="rgba(255,255,255,0.05)"/>
+    <foreignObject x="40" y="10" width="450" height="100">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.6;
+      ">
+        <div style="font-size: 18px; color: #FFC107; margin-bottom: 8px;">👤 فرد</div>
+        <div style="font-size: 16px;">عضو ملت</div>
+        <div style="font-size: 14px; color: #90CAF9;">حقوق فردی محفوظ</div>
+      </div>
+    </foreignObject>
+    
+    <rect x="580" y="0" width="470" height="120" rx="15" fill="rgba(255,255,255,0.05)"/>
+    <foreignObject x="590" y="10" width="450" height="100">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.6;
+      ">
+        <div style="font-size: 18px; color: #FFC107; margin-bottom: 8px;">👤 فرد</div>
+        <div style="font-size: 16px;">ابزار دولت</div>
+        <div style="font-size: 14px; color: #EF9A9A;">فرد هیچ است</div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Key Figures -->
+  <g transform="translate(0, 990)">
+    <rect x="30" y="0" width="470" height="100" rx="15" fill="rgba(33,150,243,0.2)"/>
+    <foreignObject x="40" y="10" width="450" height="80">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.6;
+      ">
+        <div style="font-size: 16px; color: #64B5F6; margin-bottom: 5px;">چهره‌های کلیدی</div>
+        <div style="font-size: 14px;">ماتزینی • هردر • رنان</div>
+      </div>
+    </foreignObject>
+    
+    <rect x="580" y="0" width="470" height="100" rx="15" fill="rgba(244,67,54,0.2)"/>
+    <foreignObject x="590" y="10" width="450" height="80">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.6;
+      ">
+        <div style="font-size: 16px; color: #E57373; margin-bottom: 5px;">چهره‌های کلیدی</div>
+        <div style="font-size: 14px;">موسولینی • هیتلر • جنتیله</div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Bottom Insight -->
+  <rect x="60" y="1110" width="960" height="100" rx="15" fill="rgba(255,193,7,0.15)"/>
+  <rect x="60" y="1110" width="960" height="5" rx="2" fill="#FFC107"/>
+  
+  <foreignObject x="80" y="1125" width="920" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 20px; color: white;
+      direction: rtl; text-align: center; line-height: 1.7;
+    ">
+      ⚠️ <strong style="color:#FFC107;">هشدار تاریخی:</strong>
+      فاشیسم از ناسیونالیسم افراطی زاده شد، اما فراتر رفت
+      <br/>— هر ناسیونالیستی فاشیست نیست، اما هر فاشیستی ناسیونالیست است
+    </div>
+  </foreignObject>
+  
+  <!-- Slide Number -->
+  <circle cx="540" cy="1300" r="30" fill="#FFC107"/>
+  <text x="540" y="1310" text-anchor="middle" 
+        font-family="Vazirmatn, sans-serif" font-size="22" font-weight="bold" fill="#1A1A1A">۵۴</text>
+</svg>

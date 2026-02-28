@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="left27" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#212121"/>
+      <stop offset="100%" style="stop-color:#333333"/>
+    </linearGradient>
+    <linearGradient id="right27" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B71C1C"/>
+      <stop offset="100%" style="stop-color:#C62828"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Split Background -->
+  <rect x="0" y="0" width="540" height="1080" fill="url(#left27)"/>
+  <rect x="540" y="0" width="540" height="1080" fill="url(#right27)"/>
+  <rect x="528" y="0" width="24" height="1080" fill="#F9A825"/>
+
+  <!-- Header -->
+  <foreignObject x="0" y="30" width="1080" height="90">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 38px; font-weight: 900; text-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+        ⚔️ بزرگ‌ترین دعوای درون چپ
+      </h1>
+      <p style="color: #F9A825; font-size: 24px; margin: 10px 0 0 0;">باکونین vs مارکس (بین‌الملل اول، ۱۸۷۲)</p>
+    </div>
+  </foreignObject>
+
+  <!-- LEFT: Anarchism -->
+  <foreignObject x="20" y="145" width="500" height="800">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 60px; margin: 0;">Ⓐ</p>
+      <h2 style="color: #F9A825; font-size: 36px; margin: 10px 0 25px 0;">آنارشیسم</h2>
+
+      <div style="background: rgba(255,255,255,0.08); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">🏛️ دولت = مشکل اصلی<br/><span style="color: #BDBDBD;">باید فوراً نابود شود</span></p>
+      </div>
+      <div style="background: rgba(255,255,255,0.08); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">⚡ انقلاب از پایین<br/><span style="color: #BDBDBD;">خودانگیخته و بدون رهبر</span></p>
+      </div>
+      <div style="background: rgba(255,255,255,0.08); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">🤝 سازمان‌دهی افقی<br/><span style="color: #BDBDBD;">بدون سلسله‌مراتب</span></p>
+      </div>
+      <div style="background: rgba(255,255,255,0.08); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">🌍 فدرالیسم<br/><span style="color: #BDBDBD;">شوراهای محلی آزاد</span></p>
+      </div>
+      <div style="background: rgba(255,255,255,0.08); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">⚠️ هشدار باکونین:<br/><span style="color: #F9A825;">«دیکتاتوری پرولتاریا = دیکتاتوری حزب»</span></p>
+      </div>
+
+      <div style="margin-top: 20px; padding: 12px; border: 2px solid #F9A825; border-radius: 12px;">
+        <p style="color: #BDBDBD; font-size: 16px; margin: 0;">باکونین | کروپوتکین | گلدمن</p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- RIGHT: Marxism -->
+  <foreignObject x="560" y="145" width="500" height="800">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 60px; margin: 0;">☭</p>
+      <h2 style="color: #F9A825; font-size: 36px; margin: 10px 0 25px 0;">مارکسیسم</h2>
+
+      <div style="background: rgba(0,0,0,0.2); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">🏛️ دولت = ابزار گذار<br/><span style="color: #FFCDD2;">اول تصرف، بعد محو</span></p>
+      </div>
+      <div style="background: rgba(0,0,0,0.2); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">⚡ انقلاب سازمان‌یافته<br/><span style="color: #FFCDD2;">با حزب پیشتاز</span></p>
+      </div>
+      <div style="background: rgba(0,0,0,0.2); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">📋 سازمان‌دهی عمودی<br/><span style="color: #FFCDD2;">سانترالیسم دموکراتیک</span></p>
+      </div>
+      <div style="background: rgba(0,0,0,0.2); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">🏭 تمرکز اقتصادی<br/><span style="color: #FFCDD2;">برنامه‌ریزی ملی</span></p>
+      </div>
+      <div style="background: rgba(0,0,0,0.2); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">📌 پاسخ مارکس:<br/><span style="color: #F9A825;">«بدون سازمان، انقلاب شکست می‌خورد»</span></p>
+      </div>
+
+      <div style="margin-top: 20px; padding: 12px; border: 2px solid #F9A825; border-radius: 12px;">
+        <p style="color: #FFCDD2; font-size: 16px; margin: 0;">مارکس | لنین | گرامشی</p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Bottom Insight -->
+  <rect x="200" y="960" width="680" height="75" rx="37" fill="#F9A825"/>
+  <foreignObject x="210" y="973" width="660" height="52">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #212121; font-size: 22px; font-weight: 700; margin: 0;">
+        💡 باکونین درست گفت: شوروی دیکتاتوری حزب شد!
+      </p>
+    </div>
+  </foreignObject>
+
+</svg>

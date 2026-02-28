@@ -1,0 +1,54 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="headerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#B71C1C;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#880E4F;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="1080" height="1350" fill="#FCE4EC" opacity="0.2" />
+    <rect width="1080" height="1350" fill="white" />
+    
+    <rect width="1080" height="120" fill="#B71C1C" />
+    <foreignObject x="40" y="35" width="1000" height="60">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif; color: white; font-size: 34px; font-weight: bold;">
+            فصل ۵: درس‌های گذارهای ناموفق
+        </div>
+    </foreignObject>
+    
+    <foreignObject x="60" y="160" width="960" height="140">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif; color: #B71C1C; font-size: 50px; font-weight: 900; line-height: 1.3;">
+            عبرت‌هایی از شکست گذارهای ملی
+        </div>
+    </foreignObject>
+    
+    <g transform="translate(60, 310)">
+    
+        <rect y="0" width="960" height="190" rx="28" fill="white" style="filter: drop-shadow(0 12px 24px rgba(183,28,28,0.1));" />
+        <rect x="0" y="0" width="12" height="190" rx="6" fill="#B71C1C" />
+        
+        <foreignObject x="50" y="35" width="860" height="120">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif;">
+                <div style="color: #B71C1C; font-size: 26px; font-weight: 800; margin-bottom: 20px; border-bottom: 2px solid #B71C1C33; display: inline-block;">تبیین مسئله</div>
+                <div style="color: #424242; font-size: 32px; font-weight: 500; line-height: 1.6;">
+                    مطالعه شکست‌ها (عراق، لیبی، مصر، ونزوئلا) به ما می‌آموزد که چه خطراتی در کمین گذار ایران است.
+                </div>
+            </div>
+        </foreignObject>
+        
+        <rect y="230" width="960" height="280" rx="28" fill="white" style="filter: drop-shadow(0 12px 24px rgba(183,28,28,0.1));" />
+        <rect x="0" y="230" width="12" height="280" rx="6" fill="#880E4F" />
+        
+        <foreignObject x="50" y="265" width="860" height="210">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif;">
+                <div style="color: #880E4F; font-size: 26px; font-weight: 800; margin-bottom: 20px; border-bottom: 2px solid #880E4F33; display: inline-block;">یافته اصلی</div>
+                <div style="color: #424242; font-size: 44px; font-weight: 900; line-height: 1.6;">
+                    فروپاشی ناگهانی نهادها و فقدان میثاق نخبگان، دموکراسی را به هرج‌ومرج یا بازگشت استبداد می‌کشاند.
+                </div>
+            </div>
+        </foreignObject>
+        
+    </g>
+    
+    <text x="1040" y="1320" text-anchor="end" font-family="'Vazirmatn', sans-serif" font-size="20" fill="#BDBDBD">آموزه‌هایی برای ایران امروز</text>
+    </svg>
+    

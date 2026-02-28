@@ -1,0 +1,364 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs>
+    <!-- Dark Academic Background -->
+    <linearGradient id="darkAcademic" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#0D0D1A"/>
+    </linearGradient>
+    
+    <!-- Nationalism Spectrum Gradient -->
+    <linearGradient id="nationSpectrum" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4CAF50"/>
+      <stop offset="25%" style="stop-color:#8BC34A"/>
+      <stop offset="50%" style="stop-color:#FFC107"/>
+      <stop offset="75%" style="stop-color:#FF5722"/>
+      <stop offset="100%" style="stop-color:#B71C1C"/>
+    </linearGradient>
+    
+    <!-- Civic Green -->
+    <linearGradient id="civicGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50"/>
+      <stop offset="100%" style="stop-color:#2E7D32"/>
+    </linearGradient>
+    
+    <!-- Ethnic Orange -->
+    <linearGradient id="ethnicOrange" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9800"/>
+      <stop offset="100%" style="stop-color:#E65100"/>
+    </linearGradient>
+    
+    <!-- Extreme Red -->
+    <linearGradient id="extremeRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F44336"/>
+      <stop offset="100%" style="stop-color:#B71C1C"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#darkAcademic)"/>
+  
+  <!-- Subtle Grid -->
+  <g opacity="0.05">
+    <line x1="0" y1="270" x2="1080" y2="270" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="540" x2="1080" y2="540" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="810" x2="1080" y2="810" stroke="white" stroke-width="1"/>
+    <line x1="0" y1="1080" x2="1080" y2="1080" stroke="white" stroke-width="1"/>
+  </g>
+  
+  <!-- Header Bar -->
+  <rect x="0" y="0" width="1080" height="100" fill="#B71C1C"/>
+  <foreignObject x="0" y="0" width="1080" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      font-size: 36px; font-weight: 800; color: white;
+      direction: rtl;
+    ">
+      طیف ناسیونالیسم: از شهروندی تا نژادی
+    </div>
+  </foreignObject>
+  
+  <!-- Spectrum Visual Bar -->
+  <rect x="60" y="130" width="960" height="30" rx="15" fill="url(#nationSpectrum)"/>
+  
+  <!-- Spectrum Labels -->
+  <foreignObject x="60" y="170" width="200" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 16px; color: #4CAF50;
+      direction: rtl; text-align: right;
+    ">
+      مدنی / فراگیر ←
+    </div>
+  </foreignObject>
+  
+  <foreignObject x="820" y="170" width="200" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 16px; color: #F44336;
+      direction: rtl; text-align: left;
+    ">
+      → قومی / انحصاری
+    </div>
+  </foreignObject>
+  
+  <!-- Type 1: Civic Nationalism -->
+  <g transform="translate(60, 230)">
+    <rect width="300" height="320" rx="20" fill="rgba(76,175,80,0.15)" stroke="#4CAF50" stroke-width="2"/>
+    
+    <!-- Icon -->
+    <circle cx="150" cy="50" r="30" fill="url(#civicGreen)"/>
+    <text x="150" y="58" text-anchor="middle" font-size="28">🗳️</text>
+    
+    <foreignObject x="10" y="90" width="280" height="50">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 26px; font-weight: 700;
+        color: #4CAF50; direction: rtl;
+      ">
+        ناسیونالیسم مدنی
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="15" y="145" width="270" height="160">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 17px; color: #E8F5E9;
+        direction: rtl; text-align: center; line-height: 1.8;
+      ">
+        • بر پایه شهروندی و قانون
+        <br/>• پذیرش تنوع قومی
+        <br/>• وفاداری به نهادها
+        <br/>• مثال: فرانسه، آمریکا
+      </div>
+    </foreignObject>
+    
+    <rect x="20" y="280" width="260" height="30" rx="15" fill="rgba(76,175,80,0.3)"/>
+    <foreignObject x="20" y="280" width="260" height="30">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px; color: #A5D6A7;
+        direction: rtl;
+      ">
+        رنان • هابرماس
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Type 2: Cultural Nationalism -->
+  <g transform="translate(390, 230)">
+    <rect width="300" height="320" rx="20" fill="rgba(255,152,0,0.15)" stroke="#FF9800" stroke-width="2"/>
+    
+    <!-- Icon -->
+    <circle cx="150" cy="50" r="30" fill="url(#ethnicOrange)"/>
+    <text x="150" y="58" text-anchor="middle" font-size="28">🏛️</text>
+    
+    <foreignObject x="10" y="90" width="280" height="50">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 26px; font-weight: 700;
+        color: #FF9800; direction: rtl;
+      ">
+        ناسیونالیسم فرهنگی
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="15" y="145" width="270" height="160">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 17px; color: #FFF3E0;
+        direction: rtl; text-align: center; line-height: 1.8;
+      ">
+        • بر پایه زبان و فرهنگ
+        <br/>• تأکید بر میراث مشترک
+        <br/>• روح ملی (Volksgeist)
+        <br/>• مثال: آلمان رمانتیک
+      </div>
+    </foreignObject>
+    
+    <rect x="20" y="280" width="260" height="30" rx="15" fill="rgba(255,152,0,0.3)"/>
+    <foreignObject x="20" y="280" width="260" height="30">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px; color: #FFCC80;
+        direction: rtl;
+      ">
+        هردر • فیخته
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Type 3: Ethnic/Racial Nationalism -->
+  <g transform="translate(720, 230)">
+    <rect width="300" height="320" rx="20" fill="rgba(244,67,54,0.15)" stroke="#F44336" stroke-width="2"/>
+    
+    <!-- Icon -->
+    <circle cx="150" cy="50" r="30" fill="url(#extremeRed)"/>
+    <text x="150" y="58" text-anchor="middle" font-size="28">⚠️</text>
+    
+    <foreignObject x="10" y="90" width="280" height="50">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 26px; font-weight: 700;
+        color: #F44336; direction: rtl;
+      ">
+        ناسیونالیسم قومی
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="15" y="145" width="270" height="160">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 17px; color: #FFEBEE;
+        direction: rtl; text-align: center; line-height: 1.8;
+      ">
+        • بر پایه خون و نژاد
+        <br/>• انحصارگرا و طردکننده
+        <br/>• برتری‌طلبی قومی
+        <br/>• مثال: نازیسم
+      </div>
+    </foreignObject>
+    
+    <rect x="20" y="280" width="260" height="30" rx="15" fill="rgba(244,67,54,0.3)"/>
+    <foreignObject x="20" y="280" width="260" height="30">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px; color: #EF9A9A;
+        direction: rtl;
+      ">
+        ⚠️ افراطی
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Key Distinction Box -->
+  <rect x="60" y="580" width="960" height="180" rx="20" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  
+  <foreignObject x="80" y="595" width="920" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 24px; font-weight: 700;
+      color: #FFC107; direction: rtl; text-align: center;
+    ">
+      🔑 تمایز کلیدی: دو نظریه درباره خاستگاه ملت
+    </div>
+  </foreignObject>
+  
+  <!-- Two Theories -->
+  <g transform="translate(60, 660)">
+    <!-- Primordialism -->
+    <rect x="20" y="0" width="430" height="80" rx="15" fill="rgba(156,39,176,0.2)"/>
+    <foreignObject x="30" y="5" width="410" height="70">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 18px; color: #CE93D8;
+        direction: rtl; text-align: center; line-height: 1.7;
+      ">
+        <strong style="color:#E1BEE7;">ازلی‌گرایی</strong>
+        <br/>ملت‌ها طبیعی و دیرینه‌اند
+      </div>
+    </foreignObject>
+    
+    <!-- Modernism -->
+    <rect x="490" y="0" width="430" height="80" rx="15" fill="rgba(33,150,243,0.2)"/>
+    <foreignObject x="500" y="5" width="410" height="70">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 18px; color: #90CAF9;
+        direction: rtl; text-align: center; line-height: 1.7;
+      ">
+        <strong style="color:#BBDEFB;">مدرنیسم</strong>
+        <br/>ملت‌ها ساخته قرون جدیدند
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Historical Forms -->
+  <foreignObject x="60" y="790" width="960" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 24px; font-weight: 700;
+      color: white; direction: rtl; text-align: center;
+    ">
+      📜 تحولات تاریخی ناسیونالیسم
+    </div>
+  </foreignObject>
+  
+  <!-- Timeline -->
+  <rect x="100" y="860" width="880" height="8" rx="4" fill="rgba(255,255,255,0.2)"/>
+  
+  <!-- Era Points -->
+  <g transform="translate(150, 860)">
+    <circle cy="4" r="12" fill="#4CAF50"/>
+    <foreignObject x="-70" y="25" width="140" height="60">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px; color: #A5D6A7;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <strong>۱۷۸۹</strong><br/>انقلاب فرانسه
+      </div>
+    </foreignObject>
+  </g>
+  
+  <g transform="translate(370, 860)">
+    <circle cy="4" r="12" fill="#2196F3"/>
+    <foreignObject x="-70" y="25" width="140" height="60">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px; color: #90CAF9;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <strong>۱۸۴۸</strong><br/>بهار ملت‌ها
+      </div>
+    </foreignObject>
+  </g>
+  
+  <g transform="translate(590, 860)">
+    <circle cy="4" r="12" fill="#FF9800"/>
+    <foreignObject x="-70" y="25" width="140" height="60">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px; color: #FFCC80;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <strong>۱۹۱۸</strong><br/>ویلسون و ملل
+      </div>
+    </foreignObject>
+  </g>
+  
+  <g transform="translate(810, 860)">
+    <circle cy="4" r="12" fill="#9C27B0"/>
+    <foreignObject x="-70" y="25" width="140" height="60">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px; color: #CE93D8;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <strong>۱۹۶۰</strong><br/>استعمارزدایی
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Bottom Insight -->
+  <rect x="60" y="1000" width="960" height="100" rx="15" fill="rgba(183,28,28,0.3)"/>
+  
+  <foreignObject x="80" y="1015" width="920" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 22px; color: white;
+      direction: rtl; text-align: center; line-height: 1.6;
+    ">
+      💡 <strong style="color:#FFCDD2;">پارادوکس ناسیونالیسم:</strong>
+      <br/>هم نیروی رهایی‌بخش بوده، هم ابزار سرکوب
+    </div>
+  </foreignObject>
+  
+  <!-- Key Terms -->
+  <foreignObject x="60" y="1120" width="960" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;
+      font-family: 'Vazirmatn', sans-serif; font-size: 16px;
+      direction: rtl;
+    ">
+      <span style="background: rgba(255,193,7,0.2); padding: 8px 15px; border-radius: 20px; color: #FFC107;">حق تعیین سرنوشت</span>
+      <span style="background: rgba(76,175,80,0.2); padding: 8px 15px; border-radius: 20px; color: #81C784;">ملت-دولت</span>
+      <span style="background: rgba(244,67,54,0.2); padding: 8px 15px; border-radius: 20px; color: #EF9A9A;">شوونیسم</span>
+      <span style="background: rgba(33,150,243,0.2); padding: 8px 15px; border-radius: 20px; color: #90CAF9;">وطن‌پرستی</span>
+    </div>
+  </foreignObject>
+  
+  <!-- Navigation -->
+  <foreignObject x="60" y="1220" width="480" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 16px; color: #78909C;
+      direction: rtl;
+    ">
+      ← قبلی: لیبرتارینیسم
+    </div>
+  </foreignObject>
+  
+  <foreignObject x="540" y="1220" width="480" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 16px; color: #78909C;
+      direction: rtl; text-align: left;
+    ">
+      بعدی: فاشیسم vs ناسیونالیسم →
+    </div>
+  </foreignObject>
+  
+  <!-- Slide Number -->
+  <rect x="490" y="1280" width="100" height="40" rx="20" fill="rgba(183,28,28,0.5)"/>
+  <text x="540" y="1307" text-anchor="middle" 
+        font-family="Vazirmatn, sans-serif" font-size="20" font-weight="bold" fill="white">۵۳</text>
+</svg>

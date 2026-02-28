@@ -1,0 +1,68 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1080" height="1350" fill="#F4F7F6"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="1080" height="100" fill="#006064"/>
+    <foreignObject x="0" y="0" width="1080" height="100">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: 'Vazirmatn', sans-serif; font-size: 36px; font-weight: 800; color: white; direction: rtl;">
+            فصل ۱۳: بازسازی و توسعه اقتصادی
+        </div>
+    </foreignObject>
+
+    <text x="540" y="200" text-anchor="middle" font-family="'Vazirmatn'" font-size="52" font-weight="900" fill="#006064">نردبان بازسازی اقتصادی</text>
+
+    <!-- The Ladder -->
+    <g transform="translate(140, 300)">
+        <!-- Step 3: Prosperity -->
+        <g transform="translate(0, 0)">
+            <rect width="800" height="200" rx="20" fill="#E0F2F1" stroke="#009688" stroke-width="4"/>
+            <text x="760" y="60" text-anchor="end" font-family="'Vazirmatn'" font-size="32" font-weight="900" fill="#004D40">گام ۳: شکوفایی و رقابت (سال ۵ به بعد)</text>
+            <foreignObject x="40" y="80" width="720" height="100">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: #00695C; font-size: 20px;">
+                    اقتصاد دانش‌بنیان، صادرات غیرنفتی، حضور در زنجیره ارزش جهانی و رفاه پایدار پایه‌گذاری شده بر تولید.
+                </div>
+            </foreignObject>
+        </g>
+
+        <!-- Connector -->
+        <line x1="400" y1="200" x2="400" y2="280" stroke="#009688" stroke-width="8" stroke-dasharray="10 5"/>
+
+        <!-- Step 2: Transition -->
+        <g transform="translate(0, 280)">
+            <rect width="800" height="200" rx="20" fill="#FFF3E0" stroke="#FF9800" stroke-width="4"/>
+            <text x="760" y="60" text-anchor="end" font-family="'Vazirmatn'" font-size="32" font-weight="900" fill="#E65100">گام ۲: آزادسازی و نهادسازی (سال ۱ تا ۵)</text>
+            <foreignObject x="40" y="80" width="720" height="100">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: #BF360C; font-size: 20px;">
+                    حذف رانت‌ها، اصلاح نظام بانکی، خصوصی‌سازی واقعی و جذب سرمایه‌گذاری خارجی کلان.
+                </div>
+            </foreignObject>
+        </g>
+
+        <!-- Connector -->
+        <line x1="400" y1="480" x2="400" y2="560" stroke="#FF9800" stroke-width="8" stroke-dasharray="10 5"/>
+
+        <!-- Step 1: Survival -->
+        <g transform="translate(0, 560)">
+            <rect width="800" height="200" rx="20" fill="#FFEBEE" stroke="#C62828" stroke-width="4"/>
+            <text x="760" y="60" text-anchor="end" font-family="'Vazirmatn'" font-size="32" font-weight="900" fill="#B71C1C">گام ۱: جراحی اضطراری (۱۰۰ روز تا ۱ سال)</text>
+            <foreignObject x="40" y="80" width="720" height="100">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: #C62828; font-size: 20px;">
+                    مهار تورم افسارگسیخته، ثبات‌بخشی به نرخ ارز و توزیع بسته‌های حمایتی معیشتی فوری.
+                </div>
+            </foreignObject>
+        </g>
+    </g>
+
+    <!-- Summary Box -->
+    <rect x="60" y="1100" width="960" height="160" rx="30" fill="white" stroke="#006064" stroke-width="2" style="filter: drop-shadow(0 5px 15px rgba(0,0,0,0.05))"/>
+    <foreignObject x="100" y="1135" width="880" height="100">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: #263238; font-size: 22px; text-align: center; line-height: 1.6;">
+            بدون پیمودن صحیح پله‌های اول، رسیدن به <strong style="color: #00897B;">شکوفایی</strong> غیرممکن است. هر مرحله پیش‌نیاز مرحله بعدی است.
+        </div>
+    </foreignObject>
+
+    <!-- Slide ID -->
+    <circle cx="1020" cy="1300" r="30" fill="#006064"/>
+    <text x="1020" y="1310" text-anchor="middle" font-family="'Vazirmatn', sans-serif" font-size="24" font-weight="bold" fill="white">۱۳۱</text>
+    </svg>
+    

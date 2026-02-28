@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="leftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B71C1C"/>
+      <stop offset="100%" style="stop-color:#C62828"/>
+    </linearGradient>
+    <linearGradient id="rightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D47A1"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Left Side (Red - Left Politics) -->
+  <rect x="0" y="0" width="540" height="1080" fill="url(#leftGrad)"/>
+  
+  <!-- Right Side (Blue - Right Politics) -->
+  <rect x="540" y="0" width="540" height="1080" fill="url(#rightGrad)"/>
+  
+  <!-- Center Divider -->
+  <rect x="530" y="0" width="20" height="1080" fill="#F9A825"/>
+  <polygon points="540,480 580,540 540,600" fill="#F9A825"/>
+  <polygon points="540,480 500,540 540,600" fill="#F9A825"/>
+  
+  <!-- Header -->
+  <foreignObject x="0" y="40" width="1080" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 48px; font-weight: 900; text-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+        دو جهان‌بینی متفاوت
+      </h1>
+    </div>
+  </foreignObject>
+  
+  <!-- LEFT SIDE Content -->
+  <foreignObject x="30" y="160" width="480" height="800">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      
+      <h2 style="color: #FFCDD2; font-size: 52px; font-weight: 900; margin-bottom: 30px;">
+        ◀ چپ
+      </h2>
+      
+      <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 20px; margin-bottom: 20px;">
+        <p style="color: #FFFFFF; font-size: 22px; margin: 0;">🔥 تغییر و اصلاح</p>
+      </div>
+      
+      <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 20px; margin-bottom: 20px;">
+        <p style="color: #FFFFFF; font-size: 22px; margin: 0;">⚖️ برابری اقتصادی</p>
+      </div>
+      
+      <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 20px; margin-bottom: 20px;">
+        <p style="color: #FFFFFF; font-size: 22px; margin: 0;">👥 جمع‌گرایی</p>
+      </div>
+      
+      <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 20px; margin-bottom: 20px;">
+        <p style="color: #FFFFFF; font-size: 22px; margin: 0;">🏛️ دولت فعال</p>
+      </div>
+      
+      <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 20px; margin-bottom: 20px;">
+        <p style="color: #FFFFFF; font-size: 22px; margin: 0;">🌍 بین‌الملل‌گرایی</p>
+      </div>
+      
+      <div style="margin-top: 40px; border-top: 2px solid rgba(255,255,255,0.3); padding-top: 20px;">
+        <p style="color: #FFCDD2; font-size: 18px;">مارکس | لنین | گرامشی</p>
+      </div>
+      
+    </div>
+  </foreignObject>
+  
+  <!-- RIGHT SIDE Content -->
+  <foreignObject x="570" y="160" width="480" height="800">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      
+      <h2 style="color: #BBDEFB; font-size: 52px; font-weight: 900; margin-bottom: 30px;">
+        راست ▶
+      </h2>
+      
+      <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 20px; margin-bottom: 20px;">
+        <p style="color: #FFFFFF; font-size: 22px; margin: 0;">🏛️ حفظ سنت</p>
+      </div>
+      
+      <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 20px; margin-bottom: 20px;">
+        <p style="color: #FFFFFF; font-size: 22px; margin: 0;">📈 آزادی اقتصادی</p>
+      </div>
+      
+      <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 20px; margin-bottom: 20px;">
+        <p style="color: #FFFFFF; font-size: 22px; margin: 0;">👤 فردگرایی</p>
+      </div>
+      
+      <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 20px; margin-bottom: 20px;">
+        <p style="color: #FFFFFF; font-size: 22px; margin: 0;">🏠 دولت محدود</p>
+      </div>
+      
+      <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 20px; margin-bottom: 20px;">
+        <p style="color: #FFFFFF; font-size: 22px; margin: 0;">🇫🇷 ملی‌گرایی</p>
+      </div>
+      
+      <div style="margin-top: 40px; border-top: 2px solid rgba(255,255,255,0.3); padding-top: 20px;">
+        <p style="color: #BBDEFB; font-size: 18px;">برک | هایک | فریدمن</p>
+      </div>
+      
+    </div>
+  </foreignObject>
+  
+  <!-- Bottom Question -->
+  <rect x="240" y="950" width="600" height="70" rx="35" fill="#F9A825"/>
+  <foreignObject x="240" y="960" width="600" height="55">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1A237E; font-size: 24px; font-weight: 700; margin: 0;">
+        ❓ اما واقعیت به این سادگی نیست...
+      </p>
+    </div>
+  </foreignObject>
+  
+</svg>

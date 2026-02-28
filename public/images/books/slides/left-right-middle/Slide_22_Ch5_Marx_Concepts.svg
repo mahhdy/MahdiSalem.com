@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad22" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#212121"/>
+      <stop offset="100%" style="stop-color:#424242"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1080" height="1080" fill="url(#bgGrad22)"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1080" height="120" fill="#D32F2F"/>
+  <foreignObject x="0" y="30" width="1080" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 38px; font-weight: 800; margin: 0;">
+        🧠 ۵ مفهوم کلیدی مارکسیسم
+      </h1>
+    </div>
+  </foreignObject>
+
+  <!-- Concept 1: Historical Materialism -->
+  <rect x="60" y="145" width="455" height="165" rx="18" fill="rgba(211,47,47,0.2)" stroke="#D32F2F" stroke-width="2"/>
+  <foreignObject x="78" y="158" width="420" height="142">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 8px 0;">① ماتریالیسم تاریخی</p>
+      <p style="color: #E0E0E0; font-size: 19px; line-height: 1.7; margin: 0;">
+        اقتصاد = زیربنای جامعه<br/>
+        تاریخ = تکامل شیوه‌های تولید<br/>
+        <span style="color: #EF9A9A;">بردگی ← فئودالیسم ← سرمایه‌داری ← سوسیالیسم</span>
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Concept 2: Class Struggle -->
+  <rect x="565" y="145" width="455" height="165" rx="18" fill="rgba(211,47,47,0.2)" stroke="#D32F2F" stroke-width="2"/>
+  <foreignObject x="583" y="158" width="420" height="142">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 8px 0;">② مبارزه طبقاتی</p>
+      <p style="color: #E0E0E0; font-size: 19px; line-height: 1.7; margin: 0;">
+        جامعه = میدان جنگ طبقاتی<br/>
+        بورژوازی vs پرولتاریا<br/>
+        <span style="color: #EF9A9A;">موتور محرک تاریخ = این تضاد</span>
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Concept 3: Surplus Value -->
+  <rect x="60" y="330" width="455" height="165" rx="18" fill="rgba(255,152,0,0.15)" stroke="#FF9800" stroke-width="2"/>
+  <foreignObject x="78" y="343" width="420" height="142">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 8px 0;">③ ارزش اضافی</p>
+      <p style="color: #E0E0E0; font-size: 19px; line-height: 1.7; margin: 0;">
+        کارگر بیشتر از دستمزدش تولید می‌کند<br/>
+        مابه‌التفاوت = سود سرمایه‌دار<br/>
+        <span style="color: #FFB74D;">این = استثمار سازمان‌یافته</span>
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Concept 4: Alienation -->
+  <rect x="565" y="330" width="455" height="165" rx="18" fill="rgba(255,152,0,0.15)" stroke="#FF9800" stroke-width="2"/>
+  <foreignObject x="583" y="343" width="420" height="142">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 8px 0;">④ از خودبیگانگی</p>
+      <p style="color: #E0E0E0; font-size: 19px; line-height: 1.7; margin: 0;">
+        کارگر با محصول کارش بیگانه است<br/>
+        سرمایه‌داری انسان را شیء می‌کند<br/>
+        <span style="color: #FFB74D;">کار = بردگی داوطلبانه</span>
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Concept 5: Dictatorship of Proletariat (Full Width) -->
+  <rect x="60" y="515" width="960" height="165" rx="18" fill="rgba(156,39,176,0.2)" stroke="#9C27B0" stroke-width="2"/>
+  <foreignObject x="80" y="528" width="920" height="142">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; font-weight: 700; margin: 0 0 12px 0;">⑤ دیکتاتوری پرولتاریا ← مرحله گذار</p>
+      <p style="color: #E0E0E0; font-size: 20px; line-height: 1.7; margin: 0;">
+        پس از انقلاب: <strong style="color: #CE93D8;">دولت کارگری موقت</strong> ← سرکوب بورژوازی<br/>
+        هدف نهایی: <strong style="color: #F9A825;">جامعه بی‌طبقه + محو دولت</strong>
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Stages Arrow -->
+  <rect x="60" y="710" width="960" height="110" rx="18" fill="rgba(249,168,37,0.1)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="80" y="722" width="920" height="90">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 20px; font-weight: 700; margin: 0 0 12px 0;">🗺️ مسیر تاریخی مارکس</p>
+      <div style="display: flex; justify-content: center; align-items: center; gap: 8px; flex-wrap: wrap;">
+        <span style="background: #B71C1C; color: white; padding: 8px 16px; border-radius: 20px; font-size: 17px;">سرمایه‌داری</span>
+        <span style="color: #F9A825; font-size: 24px;">←</span>
+        <span style="background: #6A1B9A; color: white; padding: 8px 16px; border-radius: 20px; font-size: 17px;">انقلاب</span>
+        <span style="color: #F9A825; font-size: 24px;">←</span>
+        <span style="background: #1565C0; color: white; padding: 8px 16px; border-radius: 20px; font-size: 17px;">دیکتاتوری پرولتاریا</span>
+        <span style="color: #F9A825; font-size: 24px;">←</span>
+        <span style="background: #2E7D32; color: white; padding: 8px 16px; border-radius: 20px; font-size: 17px;">کمونیسم</span>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Hero Quote -->
+  <rect x="180" y="850" width="720" height="110" rx="18" fill="#D32F2F"/>
+  <foreignObject x="200" y="865" width="680" height="85">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 22px; font-style: italic; margin: 0 0 8px 0;">
+        «فیلسوفان جهان را فقط تفسیر کرده‌اند<br/>
+        مسئله اما تغییر آن است»
+      </p>
+      <p style="color: #FFCDD2; font-size: 16px; margin: 0;">— کارل مارکس، تزهایی درباره فوئرباخ</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="1000" width="1080" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #EF9A9A; font-size: 18px; margin: 0;">📖 فصل ۵ | اسلاید ۲ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

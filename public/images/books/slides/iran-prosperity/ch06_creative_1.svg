@@ -1,0 +1,67 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1080" height="1350" fill="#E1F5FE"/>
+    
+    <!-- Top Design -->
+    <path d="M0,0 L1080,0 L1080,300 C700,400 300,200 0,300 Z" fill="#0288D1" opacity="0.1"/>
+
+    <!-- Header -->
+    <rect x="0" y="0" width="1080" height="100" fill="#01579B"/>
+    <foreignObject x="0" y="0" width="1080" height="100">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: 'Vazirmatn', sans-serif; font-size: 36px; font-weight: 800; color: white; direction: rtl;">
+            فصل ۶: ابربحران آب — تشخیص و درمان مدیریتی
+        </div>
+    </foreignObject>
+
+    <text x="540" y="220" text-anchor="middle" font-family="'Vazirmatn'" font-size="52" font-weight="900" fill="#01579B">ترازنامه آب: از ورشکستگی تا تعادل</text>
+
+    <!-- The Balance Scale Visual -->
+    <g transform="translate(540, 700)">
+        <!-- Scale Bar -->
+        <line x1="-400" y1="0" x2="400" y2="0" stroke="#01579B" stroke-width="15" stroke-linecap="round"/>
+        <polygon points="0,0 -30,60 30,60" fill="#01579B"/>
+        
+        <!-- Left Pan: Demand (Heavy) -->
+        <g transform="translate(-300, 0)">
+            <path d="M-100,0 L100,0 L80,150 L-80,150 Z" fill="#E57373" opacity="0.8"/>
+            <text y="70" text-anchor="middle" font-family="'Vazirmatn'" font-size="24" font-weight="900" fill="white">تقاضای فعلی</text>
+            <text y="110" text-anchor="middle" font-family="'Vazirmatn'" font-size="18" fill="white">۱۰۰ میلیارد مترمکعب</text>
+            <!-- Down Arrow -->
+            <path d="M0,160 L0,220" stroke="#C62828" stroke-width="5" marker-end="url(#arrowhead)"/>
+        </g>
+
+        <!-- Right Pan: Sustainable Supply (Light) -->
+        <g transform="translate(300, 0)">
+            <path d="M-100,0 L100,0 L80,150 L-80,150 Z" fill="#1976D2" opacity="0.8"/>
+            <text y="70" text-anchor="middle" font-family="'Vazirmatn'" font-size="24" font-weight="900" fill="white">تغذیه مجاز</text>
+            <text y="110" text-anchor="middle" font-family="'Vazirmatn'" font-size="18" fill="white">۶۰ میلیارد مترمکعب</text>
+        </g>
+
+        <!-- The Deficit Label -->
+        <rect x="-100" y="-120" width="200" height="60" rx="10" fill="#B71C1C"/>
+        <text y="-85" text-anchor="middle" font-family="'Vazirmatn'" font-size="20" font-weight="900" fill="white">شکاف ۴۰٪ (ورشکستگی)</text>
+    </g>
+
+    <!-- Solutions Text -->
+    <g transform="translate(140, 950)">
+        <rect width="800" height="250" rx="30" fill="white" stroke="#0288D1" stroke-width="2"/>
+        <foreignObject x="30" y="30" width="740" height="190">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: #01579B; font-size: 22px; line-height: 1.8;">
+                <strong style="color: #C62828;">هدف‌گذاری ایران ۱۴۳۰:</strong><br/>
+                ۱. کاهش مصرف کشاورزی از ۹۰٪ به ۶۰٪ با فناوری‌های نوین.<br/>
+                ۲. بازچرخانی ۱۰۰ درصدی پساب‌های صنعتی و شهری.<br/>
+                ۳. توقف کامل برداشت از سفره‌های زیرزمینی بحرانی.
+            </div>
+        </foreignObject>
+    </g>
+
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#C62828" />
+        </marker>
+    </defs>
+
+    <!-- Slide ID -->
+    <circle cx="1020" cy="1300" r="30" fill="#01579B"/>
+    <text x="1020" y="1310" text-anchor="middle" font-family="'Vazirmatn', sans-serif" font-size="24" font-weight="bold" fill="white">۶۱</text>
+    </svg>
+    

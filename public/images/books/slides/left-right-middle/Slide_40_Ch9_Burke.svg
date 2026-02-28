@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad40" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAFAFA"/>
+      <stop offset="100%" style="stop-color:#E3F2FD"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad40)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1080" height="120" fill="#0D47A1"/>
+  <foreignObject x="0" y="30" width="1080" height="75">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 36px; font-weight: 800; margin: 0;">
+        👤 ادموند برک: پدر محافظه‌کاری مدرن
+      </h1>
+    </div>
+  </foreignObject>
+
+  <!-- Burke Profile Card -->
+  <rect x="60" y="150" width="400" height="480" rx="22" fill="#FFFFFF" stroke="#0D47A1" stroke-width="3"/>
+  <circle cx="260" cy="260" r="70" fill="#0D47A1"/>
+  <foreignObject x="225" y="232" width="70" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+      <p style="color: #FFFFFF; font-size: 42px; margin: 0;">🎩</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="75" y="340" width="370" height="275">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h3 style="color: #0D47A1; font-size: 28px; margin: 0;">ادموند برک</h3>
+      <p style="color: #9E9E9E; font-size: 16px; margin: 6px 0 15px 0;">۱۷۲۹-۱۷۹۷ | ایرلند-انگلستان</p>
+      <p style="color: #424242; font-size: 18px; line-height: 1.8; margin: 0;">
+        📚 کتاب کلیدی:<br/>
+        <strong style="color: #0D47A1;">«تأملاتی بر انقلاب فرانسه»</strong><br/>
+        (۱۷۹۰)
+      </p>
+      <div style="margin-top: 18px; padding: 12px; background: #E3F2FD; border-radius: 10px;">
+        <p style="color: #0D47A1; font-size: 16px; margin: 0;">
+          نماینده پارلمان انگلیس<br/>
+          مدافع حقوق آمریکاییان<br/>
+          اما منتقد سرسخت انقلاب فرانسه
+        </p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Burke's Key Arguments -->
+  <rect x="500" y="150" width="520" height="480" rx="22" fill="#FFFFFF" stroke="#F9A825" stroke-width="3"/>
+  <foreignObject x="515" y="165" width="490" height="455">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h3 style="color: #F9A825; font-size: 24px; margin: 0 0 18px 0; text-align: center;">🧠 ۵ ایده بنیادین برک</h3>
+
+      <div style="padding: 12px 15px; background: #E3F2FD; border-radius: 12px; margin-bottom: 12px;">
+        <p style="color: #0D47A1; font-size: 17px; font-weight: 700; margin: 0;">① خرد جمعی بر خرد فردی</p>
+        <p style="color: #424242; font-size: 15px; margin: 5px 0 0 0;">سنت‌ها حاوی تجربه قرن‌هاست | فیلسوف تنها اشتباه می‌کند</p>
+      </div>
+
+      <div style="padding: 12px 15px; background: #FFF3E0; border-radius: 12px; margin-bottom: 12px;">
+        <p style="color: #E65100; font-size: 17px; font-weight: 700; margin: 0;">② پیش‌داوری مفید است</p>
+        <p style="color: #424242; font-size: 15px; margin: 5px 0 0 0;">غریزه اجتماعی سریع‌تر از استدلال عمل می‌کند</p>
+      </div>
+
+      <div style="padding: 12px 15px; background: #E8F5E9; border-radius: 12px; margin-bottom: 12px;">
+        <p style="color: #2E7D32; font-size: 17px; font-weight: 700; margin: 0;">③ نظم ارگانیک</p>
+        <p style="color: #424242; font-size: 15px; margin: 5px 0 0 0;">جامعه ماشین نیست | نمی‌شود آن را مهندسی کرد</p>
+      </div>
+
+      <div style="padding: 12px 15px; background: #FCE4EC; border-radius: 12px; margin-bottom: 12px;">
+        <p style="color: #C62828; font-size: 17px; font-weight: 700; margin: 0;">④ انقلاب = ویرانگری</p>
+        <p style="color: #424242; font-size: 15px; margin: 5px 0 0 0;">انقلاب فرانسه نتیجه‌اش ترور و خونریزی بود</p>
+      </div>
+
+      <div style="padding: 12px 15px; background: #EDE7F6; border-radius: 12px;">
+        <p style="color: #4A148C; font-size: 17px; font-weight: 700; margin: 0;">⑤ تغییر تدریجی</p>
+        <p style="color: #424242; font-size: 15px; margin: 5px 0 0 0;">حفظ برای تغییر | اصلاح آرام = پایدار</p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Key Insight -->
+  <rect x="100" y="665" width="880" height="130" rx="20" fill="#0D47A1"/>
+  <foreignObject x="120" y="682" width="840" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 10px 0;">💡 چرا برک هنوز مهم است؟</p>
+      <p style="color: #FFFFFF; font-size: 22px; line-height: 1.7; margin: 0;">
+        هر بار که کسی می‌گوید «نباید عجله کرد» یا «فرهنگ را نباید از بین برد»<br/>
+        در واقع دارد <strong style="color: #F9A825;">زبان برک</strong> را حرف می‌زند
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Definition Box -->
+  <rect x="180" y="825" width="720" height="85" rx="15" fill="#FFF8E1" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="195" y="838" width="690" height="62">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F57F17; font-size: 17px; margin: 0 0 5px 0;">📚 تعریف: ارگانیسیسم (Organicism)</p>
+      <p style="color: #5D4037; font-size: 19px; margin: 0;">جامعه مانند یک موجود زنده است | نه ماشینی که بشود قطعاتش را عوض کرد</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="945" width="1080" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #9E9E9E; font-size: 18px; margin: 0;">📖 فصل ۹ | اسلاید ۲ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

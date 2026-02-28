@@ -1,0 +1,53 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1080" height="1350" fill="#263238"/>
+    
+    <!-- Top Bar -->
+    <rect x="0" y="0" width="1080" height="100" fill="#37474F"/>
+    <foreignObject x="0" y="0" width="1080" height="100">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="width:100%; height:100%; display:flex; align-items:center; justify-content:center; font-family:'Vazirmatn'; font-size:36px; font-weight:800; color:white; direction:rtl;">فصل ۱۵: پایش، ارزیابی و مدیریت ریسک</div>
+    </foreignObject>
+
+    <text x="540" y="200" text-anchor="middle" font-family="'Vazirmatn'" font-size="52" font-weight="900" fill="#4DB6AC">داشبورد پایش گذار: ایران در تراز جهانی</text>
+
+    <!-- Radar Chart Design (Simplified) -->
+    <g transform="translate(540, 650)">
+        <!-- Circles -->
+        <circle r="300" fill="none" stroke="#455A64" stroke-width="1"/>
+        <circle r="200" fill="none" stroke="#455A64" stroke-width="1"/>
+        <circle r="100" fill="none" stroke="#455A64" stroke-width="1"/>
+        
+        <!-- Axis -->
+        <line x1="0" y1="-300" x2="0" y2="300" stroke="#455A64" stroke-width="1"/>
+        <line x1="-300" y1="0" x2="300" y2="0" stroke="#455A64" stroke-width="1"/>
+        
+        <!-- The Shape (Target vs Current) -->
+        <polygon points="0,-80 150,50 0,100 -120,30" fill="rgba(255,82,82,0.3)" stroke="#FF5252" stroke-width="3"/> <!-- Current -->
+        <polygon points="0,-280 250,0 0,260 -250,-100" fill="none" stroke="#4DB6AC" stroke-width="3" stroke-dasharray="10 5"/> <!-- Target -->
+        
+        <!-- Legend labels -->
+        <text y="-320" text-anchor="middle" font-family="Vazirmatn" font-size="24" fill="white">آزادی سیاسی</text>
+        <text x="320" y="10" text-anchor="start" font-family="Vazirmatn" font-size="24" fill="white">رفاه اقتصادی</text>
+        <text y="340" text-anchor="middle" font-family="Vazirmatn" font-size="24" fill="white">عدالت اجتماعی</text>
+        <text x="-320" y="10" text-anchor="end" font-family="Vazirmatn" font-size="24" fill="white">پایداری محیط‌زیست</text>
+    </g>
+
+    <!-- Detailed KPIs List -->
+    <g transform="translate(90, 1000)">
+        <rect width="900" height="280" rx="30" fill="rgba(255,255,255,0.05)" stroke="#455A64" stroke-width="1"/>
+        
+        <foreignObject x="40" y="30" width="820" height="220">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:Vazirmatn; font-size:20px; color:#CFD8DC; line-height:1.8;">
+                <strong style="color:#4DB6AC;">برخی از شاخص‌های کلیدی عملکرد (KPI):</strong><br/>
+                • شاخص فلاکت (تورم + بیکاری) <br/>
+                • رتبه در شاخص آزادی‌های مدنی (Freedom House)<br/>
+                • تراز مصرف و تغذیه منابع آب زیرزمینی<br/>
+                • ضریب جینی و شکاف طبقاتی
+            </div>
+        </foreignObject>
+    </g>
+
+    <!-- Slide ID -->
+    <circle cx="1020" cy="1300" r="30" fill="#37474F"/>
+    <text x="1020" y="1310" text-anchor="middle" font-family="'Vazirmatn', sans-serif" font-size="24" font-weight="bold" fill="white">۱۵۱</text>
+    </svg>
+    

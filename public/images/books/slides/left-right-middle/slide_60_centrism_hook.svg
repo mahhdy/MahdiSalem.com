@@ -1,0 +1,202 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs>
+    <!-- Dramatic Purple Gradient -->
+    <linearGradient id="purpleDramatic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A148C"/>
+      <stop offset="50%" style="stop-color:#6A1B9A"/>
+      <stop offset="100%" style="stop-color:#1A1A2E"/>
+    </linearGradient>
+    
+    <!-- Balance Gradient -->
+    <linearGradient id="balanceGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F44336"/>
+      <stop offset="50%" style="stop-color:#FFC107"/>
+      <stop offset="100%" style="stop-color:#2196F3"/>
+    </linearGradient>
+    
+    <!-- Purple Glow -->
+    <filter id="purpleGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#purpleDramatic)"/>
+  
+  <!-- Subtle Pattern -->
+  <g opacity="0.05">
+    <circle cx="200" cy="300" r="200" fill="white"/>
+    <circle cx="880" cy="400" r="180" fill="white"/>
+    <circle cx="540" cy="1100" r="250" fill="white"/>
+  </g>
+  
+  <!-- Section Badge -->
+  <rect x="300" y="50" width="480" height="55" rx="27" fill="rgba(0,0,0,0.5)"/>
+  <foreignObject x="300" y="50" width="480" height="55">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      font-size: 22px; font-weight: 600; color: #CE93D8;
+      direction: rtl;
+    ">
+      🆕 بخش چهارم | فصل چهاردهم
+    </div>
+  </foreignObject>
+  
+  <!-- Balance Scale Visual -->
+  <g transform="translate(540, 320)">
+    <!-- Outer Ring -->
+    <circle r="130" fill="none" stroke="url(#balanceGold)" stroke-width="4" opacity="0.3"/>
+    <circle r="100" fill="none" stroke="url(#balanceGold)" stroke-width="3" opacity="0.5"/>
+    <circle r="70" fill="none" stroke="url(#balanceGold)" stroke-width="2" opacity="0.7"/>
+    
+    <!-- Center Icon -->
+    <circle r="50" fill="rgba(156,39,176,0.8)" filter="url(#purpleGlow)"/>
+    <text x="0" y="15" text-anchor="middle" font-size="45">⚖️</text>
+  </g>
+  
+  <!-- Main Title -->
+  <foreignObject x="40" y="470" width="1000" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      font-size: 64px; font-weight: 900; color: white;
+      direction: rtl; text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    ">
+      میانه‌روی
+    </div>
+  </foreignObject>
+  
+  <!-- Provocative Subtitle -->
+  <foreignObject x="40" y="570" width="1000" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      font-size: 38px; font-weight: 500; color: #E1BEE7;
+      direction: rtl;
+    ">
+      هنر مصالحه یا فرار از موضع‌گیری؟
+    </div>
+  </foreignObject>
+  
+  <!-- Divider -->
+  <rect x="250" y="660" width="580" height="4" rx="2" fill="url(#balanceGold)"/>
+  
+  <!-- Central Paradox -->
+  <rect x="80" y="690" width="920" height="130" rx="20" fill="rgba(0,0,0,0.4)"/>
+  
+  <foreignObject x="100" y="705" width="880" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 22px; color: white;
+      direction: rtl; text-align: center; line-height: 1.9;
+    ">
+      <span style="color: #FFC107; font-weight: 700;">پارادوکس میانه:</span>
+      <br/>میانه‌روها می‌گویند ایدئولوژی ندارند —
+      <br/>اما آیا «بی‌طرفی» خود یک موضع نیست؟
+    </div>
+  </foreignObject>
+  
+  <!-- Challenge Questions -->
+  <g transform="translate(0, 850)">
+    <!-- Question 1 -->
+    <rect x="80" y="0" width="920" height="60" rx="30" fill="rgba(156,39,176,0.2)"/>
+    <foreignObject x="100" y="0" width="880" height="60">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: flex-end;
+        font-family: 'Vazirmatn', sans-serif; font-size: 24px; color: white;
+        direction: rtl; padding-right: 25px;
+      ">
+        💜 اگر در ۱۸۵۰ «میانه» بودی، درباره برده‌داری چه می‌گفتی؟
+      </div>
+    </foreignObject>
+    
+    <!-- Question 2 -->
+    <rect x="80" y="75" width="920" height="60" rx="30" fill="rgba(103,58,183,0.2)"/>
+    <foreignObject x="100" y="75" width="880" height="60">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: flex-end;
+        font-family: 'Vazirmatn', sans-serif; font-size: 24px; color: #D1C4E9;
+        direction: rtl; padding-right: 25px;
+      ">
+        💜 «میانه» بین عدالت و بی‌عدالتی کجاست؟
+      </div>
+    </foreignObject>
+    
+    <!-- Question 3 -->
+    <rect x="80" y="150" width="920" height="60" rx="30" fill="rgba(171,71,188,0.2)"/>
+    <foreignObject x="100" y="150" width="880" height="60">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: flex-end;
+        font-family: 'Vazirmatn', sans-serif; font-size: 24px; color: white;
+        direction: rtl; padding-right: 25px;
+      ">
+        💜 آیا میانه‌روی خود یک ایدئولوژی پنهان است؟
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Two Perspectives Box -->
+  <g transform="translate(60, 1090)">
+    <!-- Defense -->
+    <rect x="0" y="0" width="450" height="100" rx="15" fill="rgba(76,175,80,0.2)" stroke="#4CAF50" stroke-width="1"/>
+    <foreignObject x="10" y="10" width="430" height="80">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.6;
+      ">
+        <div style="font-size: 18px; font-weight: 700; color: #A5D6A7;">✅ دفاع از میانه</div>
+        <div style="font-size: 15px;">واقع‌گرایی، مصالحه، ثبات</div>
+        <div style="font-size: 14px; color: #C8E6C9;">«افراط همیشه خطرناک است»</div>
+      </div>
+    </foreignObject>
+    
+    <!-- Critique -->
+    <rect x="480" y="0" width="450" height="100" rx="15" fill="rgba(244,67,54,0.2)" stroke="#F44336" stroke-width="1"/>
+    <foreignObject x="490" y="10" width="430" height="80">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.6;
+      ">
+        <div style="font-size: 18px; font-weight: 700; color: #EF9A9A;">❌ نقد میانه</div>
+        <div style="font-size: 15px;">بی‌اصالتی، فرصت‌طلبی، حفظ وضع موجود</div>
+        <div style="font-size: 14px; color: #FFCDD2;">«میانه یعنی هیچ‌جا نبودن»</div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Key Names Preview -->
+  <foreignObject x="60" y="1210" width="960" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; display: flex; justify-content: center;
+      font-family: 'Vazirmatn', sans-serif; font-size: 17px; color: #CE93D8;
+      direction: rtl;
+    ">
+      در این فصل: آنتونی گیدنز • تونی بلر • بیل کلینتون • امانوئل مکرون
+    </div>
+  </foreignObject>
+  
+  <!-- Chapter Info -->
+  <foreignObject x="60" y="1255" width="960" height="30">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 14px; color: #B39DDB;
+      direction: rtl; text-align: center;
+    ">
+      بخش چهارم: میانه و ترکیب │ فصل ۱ از ۲
+    </div>
+  </foreignObject>
+  
+  <!-- Slide Number -->
+  <circle cx="540" cy="1310" r="28" fill="rgba(74,20,140,0.7)"/>
+  <text x="540" y="1318" text-anchor="middle" 
+        font-family="Vazirmatn, sans-serif" font-size="20" font-weight="bold" fill="#E1BEE7">۶۰</text>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad9" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1565C0"/>
+      <stop offset="50%" style="stop-color:#311B92"/>
+      <stop offset="100%" style="stop-color:#C62828"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad9)"/>
+  
+  <!-- VS Circle -->
+  <circle cx="540" cy="400" r="80" fill="#F9A825"/>
+  <foreignObject x="490" y="365" width="100" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1A237E; font-size: 42px; font-weight: 900; margin: 0;">VS</p>
+    </div>
+  </foreignObject>
+  
+  <!-- Title -->
+  <foreignObject x="0" y="60" width="1080" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 48px; font-weight: 900; margin: 0;">
+        دوگانه بنیادین فلسفه سیاسی
+      </h1>
+      <p style="color: #B39DDB; font-size: 26px; margin-top: 15px;">کدام ارزش برتر است؟</p>
+    </div>
+  </foreignObject>
+  
+  <!-- Freedom Side (Right of spectrum = Left on screen) -->
+  <foreignObject x="60" y="250" width="400" height="350">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 80px; margin: 0;">🗽</p>
+      <h2 style="color: #FFFFFF; font-size: 48px; font-weight: 900; margin: 20px 0;">آزادی</h2>
+      <p style="color: #BBDEFB; font-size: 22px; line-height: 1.8;">
+        حق انتخاب فردی<br/>
+        محدودیت قدرت دولت<br/>
+        مالکیت خصوصی<br/>
+        بازار آزاد
+      </p>
+      <div style="margin-top: 20px; padding: 10px 20px; background: rgba(255,255,255,0.2); border-radius: 20px; display: inline-block;">
+        <p style="color: #FFFFFF; font-size: 20px; margin: 0;">تأکید: راست کلاسیک</p>
+      </div>
+    </div>
+  </foreignObject>
+  
+  <!-- Equality Side -->
+  <foreignObject x="620" y="250" width="400" height="350">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 80px; margin: 0;">⚖️</p>
+      <h2 style="color: #FFFFFF; font-size: 48px; font-weight: 900; margin: 20px 0;">برابری</h2>
+      <p style="color: #FFCDD2; font-size: 22px; line-height: 1.8;">
+        توزیع عادلانه ثروت<br/>
+        دولت رفاه<br/>
+        حقوق جمعی<br/>
+        عدالت اجتماعی
+      </p>
+      <div style="margin-top: 20px; padding: 10px 20px; background: rgba(255,255,255,0.2); border-radius: 20px; display: inline-block;">
+        <p style="color: #FFFFFF; font-size: 20px; margin: 0;">تأکید: چپ کلاسیک</p>
+      </div>
+    </div>
+  </foreignObject>
+  
+  <!-- Key Question -->
+  <rect x="140" y="650" width="800" height="200" rx="25" fill="rgba(0,0,0,0.3)" stroke="#F9A825" stroke-width="3"/>
+  <foreignObject x="160" y="670" width="760" height="170">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 28px; font-weight: 700; margin: 0 0 15px 0;">
+        ❓ سؤال فلسفی اساسی
+      </p>
+      <p style="color: #FFFFFF; font-size: 26px; line-height: 1.8; margin: 0;">
+        آیا این دو ارزش با هم سازگارند؟<br/>
+        یا باید یکی را فدای دیگری کرد؟<br/>
+        <span style="color: #F9A825;">«راه سوم» وجود دارد؟</span>
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Footer -->
+  <foreignObject x="0" y="900" width="1080" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; margin: 0;">
+        ⬅️ پاسخ در فصل‌های ۱۴ و ۱۵
+      </p>
+    </div>
+  </foreignObject>
+  
+  <foreignObject x="0" y="1020" width="1080" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 18px; margin: 0;">📖 فصل ۲ | اسلاید ۴ از ۵</p>
+    </div>
+  </foreignObject>
+  
+</svg>

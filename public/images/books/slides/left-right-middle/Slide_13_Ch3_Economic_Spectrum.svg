@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad13" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAFAFA"/>
+      <stop offset="100%" style="stop-color:#E0E0E0"/>
+    </linearGradient>
+    <linearGradient id="spectrumGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D32F2F"/>
+      <stop offset="25%" style="stop-color:#F57C00"/>
+      <stop offset="50%" style="stop-color:#FDD835"/>
+      <stop offset="75%" style="stop-color:#7CB342"/>
+      <stop offset="100%" style="stop-color:#1976D2"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad13)"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1080" height="130" fill="#1A237E"/>
+  <foreignObject x="0" y="35" width="1080" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 40px; font-weight: 800; margin: 0;">
+        🎯 طیف نظام‌های اقتصادی
+      </h1>
+    </div>
+  </foreignObject>
+  
+  <!-- Spectrum Bar -->
+  <rect x="80" y="170" width="920" height="60" rx="30" fill="url(#spectrumGrad)"/>
+  <foreignObject x="60" y="240" width="200" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #D32F2F; font-size: 16px; font-weight: 700; margin: 0;">◀ دولت کامل</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="820" y="240" width="200" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1976D2; font-size: 16px; font-weight: 700; margin: 0;">بازار کامل ▶</p>
+    </div>
+  </foreignObject>
+  
+  <!-- Card 1: Command Economy -->
+  <rect x="60" y="300" width="230" height="300" rx="20" fill="#FFFFFF" stroke="#D32F2F" stroke-width="3"/>
+  <rect x="60" y="300" width="230" height="55" rx="20" fill="#D32F2F"/>
+  <foreignObject x="60" y="310" width="230" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 20px; font-weight: 800; margin: 0;">اقتصاد دستوری</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="70" y="365" width="210" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 40px; margin: 5px 0;">🏭</p>
+      <p style="color: #424242; font-size: 16px; line-height: 1.7; margin: 0;">
+        دولت مالک همه‌چیز<br/>
+        برنامه‌ریزی متمرکز<br/>
+        قیمت‌گذاری دولتی
+      </p>
+      <p style="color: #D32F2F; font-size: 14px; margin-top: 15px;">مثال: شوروی، کوبا</p>
+    </div>
+  </foreignObject>
+  
+  <!-- Card 2: Social Democracy -->
+  <rect x="310" y="300" width="230" height="300" rx="20" fill="#FFFFFF" stroke="#FF9800" stroke-width="3"/>
+  <rect x="310" y="300" width="230" height="55" rx="20" fill="#FF9800"/>
+  <foreignObject x="310" y="310" width="230" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 20px; font-weight: 800; margin: 0;">سوسیال‌دموکراسی</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="320" y="365" width="210" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 40px; margin: 5px 0;">🏥</p>
+      <p style="color: #424242; font-size: 16px; line-height: 1.7; margin: 0;">
+        بازار + دولت رفاه<br/>
+        مالیات بالا<br/>
+        خدمات عمومی گسترده
+      </p>
+      <p style="color: #FF9800; font-size: 14px; margin-top: 15px;">مثال: سوئد، نروژ</p>
+    </div>
+  </foreignObject>
+  
+  <!-- Card 3: Mixed Economy -->
+  <rect x="560" y="300" width="230" height="300" rx="20" fill="#FFFFFF" stroke="#4CAF50" stroke-width="3"/>
+  <rect x="560" y="300" width="230" height="55" rx="20" fill="#4CAF50"/>
+  <foreignObject x="560" y="310" width="230" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 20px; font-weight: 800; margin: 0;">اقتصاد مختلط</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="570" y="365" width="210" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 40px; margin: 5px 0;">⚖️</p>
+      <p style="color: #424242; font-size: 16px; line-height: 1.7; margin: 0;">
+        بازار آزاد + نظارت<br/>
+        مالکیت خصوصی<br/>
+        تنظیم‌گری دولت
+      </p>
+      <p style="color: #4CAF50; font-size: 14px; margin-top: 15px;">مثال: آمریکا، ژاپن</p>
+    </div>
+  </foreignObject>
+  
+  <!-- Card 4: Free Market -->
+  <rect x="810" y="300" width="210" height="300" rx="20" fill="#FFFFFF" stroke="#1976D2" stroke-width="3"/>
+  <rect x="810" y="300" width="210" height="55" rx="20" fill="#1976D2"/>
+  <foreignObject x="810" y="310" width="210" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 20px; font-weight: 800; margin: 0;">بازار آزاد</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="820" y="365" width="190" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 40px; margin: 5px 0;">📈</p>
+      <p style="color: #424242; font-size: 16px; line-height: 1.7; margin: 0;">
+        حداقل دخالت دولت<br/>
+        مالکیت خصوصی کامل<br/>
+        رقابت آزاد
+      </p>
+      <p style="color: #1976D2; font-size: 14px; margin-top: 15px;">مثال: هنگ‌کنگ، سنگاپور</p>
+    </div>
+  </foreignObject>
+  
+  <!-- Key Insight -->
+  <rect x="120" y="640" width="840" height="180" rx="20" fill="#1A237E"/>
+  <foreignObject x="140" y="660" width="800" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 26px; font-weight: 700; margin: 0 0 15px 0;">
+        💡 نکته مهم
+      </p>
+      <p style="color: #FFFFFF; font-size: 24px; line-height: 1.8; margin: 0;">
+        هیچ کشوری در «انتهای» این طیف نیست!<br/>
+        همه جایی در <strong style="color: #F9A825;">میانه</strong> قرار دارند<br/>
+        بحث بر سر <strong style="color: #F9A825;">درجه</strong> دخالت دولت است
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Question -->
+  <rect x="250" y="860" width="580" height="80" rx="40" fill="#F9A825"/>
+  <foreignObject x="260" y="875" width="560" height="55">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1A237E; font-size: 26px; font-weight: 700; margin: 0;">
+        ❓ ایران کجای این طیف است؟
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Footer -->
+  <foreignObject x="0" y="1000" width="1080" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #9E9E9E; font-size: 18px; margin: 0;">📖 فصل ۳ | اسلاید ۳ از ۵</p>
+    </div>
+  </foreignObject>
+  
+</svg>

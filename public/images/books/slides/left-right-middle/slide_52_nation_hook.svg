@@ -1,0 +1,175 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs>
+    <!-- Dramatic Red Gradient -->
+    <linearGradient id="redDramatic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B71C1C"/>
+      <stop offset="50%" style="stop-color:#C62828"/>
+      <stop offset="100%" style="stop-color:#1A1A2E"/>
+    </linearGradient>
+    
+    <!-- Fire Accent -->
+    <linearGradient id="fireGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6F00"/>
+      <stop offset="100%" style="stop-color:#E65100"/>
+    </linearGradient>
+    
+    <!-- Text Glow -->
+    <filter id="textGlow52">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Flag Pattern -->
+    <pattern id="flagPattern" width="60" height="40" patternUnits="userSpaceOnUse">
+      <rect width="60" height="40" fill="none"/>
+      <path d="M0,20 Q15,10 30,20 T60,20" stroke="rgba(255,255,255,0.03)" stroke-width="1" fill="none"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#redDramatic)"/>
+  <rect width="1080" height="1350" fill="url(#flagPattern)"/>
+  
+  <!-- Dramatic Light Rays -->
+  <g opacity="0.1">
+    <polygon points="540,0 200,1350 300,1350" fill="white"/>
+    <polygon points="540,0 780,1350 880,1350" fill="white"/>
+    <polygon points="540,0 500,1350 580,1350" fill="white"/>
+  </g>
+  
+  <!-- Top Badge -->
+  <rect x="340" y="60" width="400" height="50" rx="25" fill="rgba(0,0,0,0.4)"/>
+  <foreignObject x="340" y="60" width="400" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      font-size: 20px; font-weight: 600; color: #FFAB91;
+      direction: rtl;
+    ">
+      فصل دوازدهم | ناسیونالیسم
+    </div>
+  </foreignObject>
+  
+  <!-- Central Question Mark Visual -->
+  <g transform="translate(540, 380)">
+    <circle r="150" fill="none" stroke="url(#fireGlow)" stroke-width="4" opacity="0.3"/>
+    <circle r="120" fill="none" stroke="url(#fireGlow)" stroke-width="3" opacity="0.5"/>
+    <circle r="90" fill="none" stroke="url(#fireGlow)" stroke-width="2" opacity="0.7"/>
+    
+    <text x="0" y="30" text-anchor="middle" 
+          font-family="Georgia, serif" font-size="180" font-weight="bold"
+          fill="url(#fireGlow)" filter="url(#textGlow52)">؟</text>
+  </g>
+  
+  <!-- Main Title -->
+  <foreignObject x="40" y="540" width="1000" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      font-size: 72px; font-weight: 900; color: white;
+      direction: rtl; text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    ">
+      ملت چیست؟
+    </div>
+  </foreignObject>
+  
+  <!-- Provocative Subtitle -->
+  <foreignObject x="40" y="670" width="1000" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      font-size: 32px; font-weight: 400; color: #FFCCBC;
+      direction: rtl;
+    ">
+      واقعیت، افسانه، یا پروژه سیاسی؟
+    </div>
+  </foreignObject>
+  
+  <!-- Divider -->
+  <rect x="340" y="760" width="400" height="3" rx="1.5" fill="url(#fireGlow)"/>
+  
+  <!-- Challenge Questions -->
+  <g transform="translate(0, 800)">
+    <!-- Question 1 -->
+    <foreignObject x="60" y="0" width="960" height="70">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: flex-end;
+        font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+        font-size: 26px; font-weight: 500; color: white;
+        direction: rtl; padding-right: 20px;
+      ">
+        🔥 آیا ملت‌ها همیشه وجود داشته‌اند؟
+      </div>
+    </foreignObject>
+    
+    <!-- Question 2 -->
+    <foreignObject x="60" y="70" width="960" height="70">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: flex-end;
+        font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+        font-size: 26px; font-weight: 500; color: #FFCCBC;
+        direction: rtl; padding-right: 20px;
+      ">
+        🔥 چرا مردم برای پرچم می‌میرند؟
+      </div>
+    </foreignObject>
+    
+    <!-- Question 3 -->
+    <foreignObject x="60" y="140" width="960" height="70">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: flex-end;
+        font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+        font-size: 26px; font-weight: 500; color: white;
+        direction: rtl; padding-right: 20px;
+      ">
+        🔥 ناسیونالیسم: نیروی آزادی یا ابزار سرکوب؟
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Provocative Quote Box -->
+  <rect x="80" y="1050" width="920" height="120" rx="15" fill="rgba(0,0,0,0.5)"/>
+  <rect x="80" y="1050" width="8" height="120" rx="4" fill="url(#fireGlow)"/>
+  
+  <foreignObject x="100" y="1060" width="880" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      font-size: 24px; font-weight: 500; color: white;
+      direction: rtl; text-align: center; line-height: 1.6;
+    ">
+      «ملت یک اجتماع تصوری است — تصوری اما نه دروغین»
+      <br/>— بندیکت اندرسون
+    </div>
+  </foreignObject>
+  
+  <!-- Key Thinkers Preview -->
+  <g transform="translate(0, 1200)">
+    <foreignObject x="60" y="0" width="960" height="40">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: center;
+        font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+        font-size: 18px; font-weight: 500; color: #FFAB91;
+        direction: rtl;
+      ">
+        در این فصل: هردر • رنان • گلنر • اندرسون • اسمیت
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Slide Number -->
+  <circle cx="540" cy="1310" r="25" fill="rgba(0,0,0,0.4)"/>
+  <text x="540" y="1318" text-anchor="middle" 
+        font-family="Vazirmatn, sans-serif" font-size="18" font-weight="bold" fill="white">۵۲</text>
+</svg>

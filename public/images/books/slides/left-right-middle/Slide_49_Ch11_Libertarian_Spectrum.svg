@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad49" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAFAFA"/>
+      <stop offset="100%" style="stop-color:#FFF3E0"/>
+    </linearGradient>
+    <linearGradient id="specGrad49" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4CAF50"/>
+      <stop offset="50%" style="stop-color:#FF9800"/>
+      <stop offset="100%" style="stop-color:#D32F2F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad49)"/>
+
+  <rect x="0" y="0" width="1080" height="120" fill="#E65100"/>
+  <foreignObject x="0" y="30" width="1080" height="75">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 38px; font-weight: 800; margin: 0;">
+        🎯 طیف لیبرتارینیسم: از ملایم تا رادیکال
+      </h1>
+    </div>
+  </foreignObject>
+
+  <!-- Spectrum Bar -->
+  <rect x="80" y="150" width="920" height="50" rx="25" fill="url(#specGrad49)"/>
+  <foreignObject x="60" y="210" width="200" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #4CAF50; font-size: 16px; font-weight: 700; margin: 0;">◀ دولت حداقلی</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="820" y="210" width="200" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #D32F2F; font-size: 16px; font-weight: 700; margin: 0;">بدون دولت ▶</p>
+    </div>
+  </foreignObject>
+
+  <!-- Type 1: Classical Liberal -->
+  <rect x="55" y="270" width="310" height="310" rx="20" fill="#FFFFFF" stroke="#4CAF50" stroke-width="3"/>
+  <rect x="55" y="270" width="310" height="58" rx="20" fill="#4CAF50"/>
+  <foreignObject x="60" y="280" width="300" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 22px; font-weight: 800; margin: 0;">لیبرتارینیسم ملایم</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="68" y="340" width="285" height="230">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 36px; margin: 0;">🏛️</p>
+      <p style="color: #424242; font-size: 16px; line-height: 1.7; margin: 8px 0;">
+        دولت حداقلی اما ضروری<br/>
+        ارتش + پلیس + دادگاه<br/>
+        بازار آزاد + تجارت آزاد<br/>
+        آزادی مدنی بالا
+      </p>
+      <div style="margin-top: 10px; padding: 8px; background: #E8F5E9; border-radius: 10px;">
+        <p style="color: #2E7D32; font-size: 14px; margin: 0;">👤 میلتون فریدمن | هایک<br/>📌 مثال: حزب لیبرتارین آمریکا</p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Type 2: Minarchism -->
+  <rect x="385" y="270" width="310" height="310" rx="20" fill="#FFFFFF" stroke="#FF9800" stroke-width="3"/>
+  <rect x="385" y="270" width="310" height="58" rx="20" fill="#FF9800"/>
+  <foreignObject x="390" y="280" width="300" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 22px; font-weight: 800; margin: 0;">مینارکیسم</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="398" y="340" width="285" height="230">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 36px; margin: 0;">🔒</p>
+      <p style="color: #424242; font-size: 16px; line-height: 1.7; margin: 8px 0;">
+        «دولت نگهبان شب»<br/>
+        فقط حفاظت از حقوق<br/>
+        بدون آموزش/بهداشت دولتی<br/>
+        مالیات = دزدی قانونی
+      </p>
+      <div style="margin-top: 10px; padding: 8px; background: #FFF3E0; border-radius: 10px;">
+        <p style="color: #E65100; font-size: 14px; margin: 0;">👤 رابرت نوزیک<br/>📚 «آنارشی، دولت و آرمان‌شهر»</p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Type 3: Anarcho-Capitalism -->
+  <rect x="715" y="270" width="310" height="310" rx="20" fill="#FFFFFF" stroke="#D32F2F" stroke-width="3"/>
+  <rect x="715" y="270" width="310" height="58" rx="20" fill="#D32F2F"/>
+  <foreignObject x="720" y="280" width="300" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 22px; font-weight: 800; margin: 0;">آنارکو-کاپیتالیسم</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="728" y="340" width="285" height="230">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 36px; margin: 0;">⚡</p>
+      <p style="color: #424242; font-size: 16px; line-height: 1.7; margin: 8px 0;">
+        دولت = بزرگ‌ترین تهدید<br/>
+        حتی پلیس و دادگاه خصوصی<br/>
+        جاده‌ها و آتش‌نشانی خصوصی<br/>
+        همه‌چیز بازار تعیین می‌کند
+      </p>
+      <div style="margin-top: 10px; padding: 8px; background: #FFEBEE; border-radius: 10px;">
+        <p style="color: #C62828; font-size: 14px; margin: 0;">👤 موری راتبارد | هانس هوپه<br/>📌 رادیکال‌ترین شکل راست</p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Key Question -->
+  <rect x="120" y="620" width="840" height="130" rx="20" fill="#E65100"/>
+  <foreignObject x="140" y="638" width="800" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 10px 0;">❓ سؤال اساسی</p>
+      <p style="color: #FFFFFF; font-size: 24px; line-height: 1.7; margin: 0;">
+        آیا <strong style="color: #F9A825;">آنارشیسم چپ</strong> و <strong style="color: #F9A825;">آنارکو-کاپیتالیسم</strong> یک چیزند؟<br/>
+        هر دو ضد دولت‌اند، اما نتیجه <strong style="color: #F9A825;">۱۸۰ درجه</strong> متفاوت!
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Comparison Mini -->
+  <rect x="120" y="785" width="400" height="100" rx="15" fill="#FFFFFF" stroke="#212121" stroke-width="2"/>
+  <foreignObject x="130" y="798" width="380" height="75">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #212121; font-size: 18px; margin: 0;">Ⓐ <strong>آنارشیسم چپ:</strong></p>
+      <p style="color: #616161; font-size: 16px; margin: 5px 0 0 0;">ضد دولت + ضد سرمایه‌داری<br/>← جامعه تعاونی</p>
+    </div>
+  </foreignObject>
+
+  <rect x="560" y="785" width="400" height="100" rx="15" fill="#FFFFFF" stroke="#E65100" stroke-width="2"/>
+  <foreignObject x="570" y="798" width="380" height="75">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #E65100; font-size: 18px; margin: 0;">🐍 <strong>آنارکو-کاپیتالیسم:</strong></p>
+      <p style="color: #616161; font-size: 16px; margin: 5px 0 0 0;">ضد دولت + موافق سرمایه‌داری<br/>← بازار تمام‌عیار</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="930" width="1080" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #9E9E9E; font-size: 18px; margin: 0;">📖 فصل ۱۱ | اسلاید ۲ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

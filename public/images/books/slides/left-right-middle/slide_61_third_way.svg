@@ -1,0 +1,345 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs>
+    <!-- Left Side - Traditional Left (Red) -->
+    <linearGradient id="tradLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#B71C1C"/>
+      <stop offset="100%" style="stop-color:#4A0000"/>
+    </linearGradient>
+    
+    <!-- Right Side - Traditional Right (Blue) -->
+    <linearGradient id="tradRight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D47A1"/>
+      <stop offset="100%" style="stop-color:#002171"/>
+    </linearGradient>
+    
+    <!-- Center - Third Way (Purple) -->
+    <linearGradient id="thirdWay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7B1FA2"/>
+      <stop offset="100%" style="stop-color:#4A148C"/>
+    </linearGradient>
+    
+    <!-- Gold Accent -->
+    <linearGradient id="goldAccent61" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF8F00"/>
+      <stop offset="50%" style="stop-color:#FFC107"/>
+      <stop offset="100%" style="stop-color:#FF8F00"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Three-Part Background -->
+  <rect x="0" y="0" width="360" height="1350" fill="url(#tradLeft)"/>
+  <rect x="360" y="0" width="360" height="1350" fill="url(#thirdWay)"/>
+  <rect x="720" y="0" width="360" height="1350" fill="url(#tradRight)"/>
+  
+  <!-- Diagonal Dividers -->
+  <polygon points="350,0 370,0 370,1350 350,1350" fill="#1A1A2E" opacity="0.5"/>
+  <polygon points="710,0 730,0 730,1350 710,1350" fill="#1A1A2E" opacity="0.5"/>
+  
+  <!-- Header Bar -->
+  <rect x="0" y="0" width="1080" height="100" fill="rgba(0,0,0,0.6)"/>
+  <foreignObject x="0" y="0" width="1080" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      font-size: 40px; font-weight: 800; color: white;
+      direction: rtl;
+    ">
+      راه سوم: فراتر از چپ و راست؟
+    </div>
+  </foreignObject>
+  
+  <!-- Column Titles -->
+  <!-- Left Column Title -->
+  <foreignObject x="20" y="120" width="320" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; display: flex; flex-direction: column; align-items: center;
+      font-family: 'Vazirmatn', sans-serif; direction: rtl;
+    ">
+      <div style="font-size: 26px; font-weight: 700; color: #FFCDD2;">چپ سنتی</div>
+      <div style="font-size: 14px; color: #EF9A9A;">سوسیالیسم کلاسیک</div>
+    </div>
+  </foreignObject>
+  
+  <!-- Center Column Title -->
+  <foreignObject x="380" y="120" width="320" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; display: flex; flex-direction: column; align-items: center;
+      font-family: 'Vazirmatn', sans-serif; direction: rtl;
+    ">
+      <div style="font-size: 26px; font-weight: 700; color: #E1BEE7;">راه سوم</div>
+      <div style="font-size: 14px; color: #CE93D8;">سوسیال دموکراسی نو</div>
+    </div>
+  </foreignObject>
+  
+  <!-- Right Column Title -->
+  <foreignObject x="740" y="120" width="320" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; display: flex; flex-direction: column; align-items: center;
+      font-family: 'Vazirmatn', sans-serif; direction: rtl;
+    ">
+      <div style="font-size: 26px; font-weight: 700; color: #BBDEFB;">راست سنتی</div>
+      <div style="font-size: 14px; color: #90CAF9;">لیبرالیسم بازار</div>
+    </div>
+  </foreignObject>
+  
+  <!-- Row 1: Economy -->
+  <g transform="translate(0, 200)">
+    <rect x="20" y="0" width="320" height="110" rx="12" fill="rgba(0,0,0,0.3)"/>
+    <foreignObject x="25" y="10" width="310" height="90">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <div style="font-size: 16px; color: #FFCC80; font-weight: 600;">💰 اقتصاد</div>
+        <div style="font-size: 14px;">دولت مالک صنایع</div>
+        <div style="font-size: 13px; color: #FFCDD2;">برنامه‌ریزی متمرکز</div>
+      </div>
+    </foreignObject>
+    
+    <rect x="380" y="0" width="320" height="110" rx="12" fill="rgba(0,0,0,0.3)"/>
+    <foreignObject x="385" y="10" width="310" height="90">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <div style="font-size: 16px; color: #FFCC80; font-weight: 600;">💰 اقتصاد</div>
+        <div style="font-size: 14px;">بازار + تنظیم‌گری</div>
+        <div style="font-size: 13px; color: #E1BEE7;">«سرمایه‌داری با چهره انسانی»</div>
+      </div>
+    </foreignObject>
+    
+    <rect x="740" y="0" width="320" height="110" rx="12" fill="rgba(0,0,0,0.3)"/>
+    <foreignObject x="745" y="10" width="310" height="90">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <div style="font-size: 16px; color: #FFCC80; font-weight: 600;">💰 اقتصاد</div>
+        <div style="font-size: 14px;">بازار آزاد کامل</div>
+        <div style="font-size: 13px; color: #BBDEFB;">حداقل دخالت دولت</div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Row 2: Welfare -->
+  <g transform="translate(0, 330)">
+    <rect x="20" y="0" width="320" height="110" rx="12" fill="rgba(0,0,0,0.3)"/>
+    <foreignObject x="25" y="10" width="310" height="90">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <div style="font-size: 16px; color: #81C784; font-weight: 600;">🏥 رفاه</div>
+        <div style="font-size: 14px;">دولت رفاه جامع</div>
+        <div style="font-size: 13px; color: #FFCDD2;">حق همگانی</div>
+      </div>
+    </foreignObject>
+    
+    <rect x="380" y="0" width="320" height="110" rx="12" fill="rgba(0,0,0,0.3)"/>
+    <foreignObject x="385" y="10" width="310" height="90">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <div style="font-size: 16px; color: #81C784; font-weight: 600;">🏥 رفاه</div>
+        <div style="font-size: 14px;">«تدارک فعال‌ساز»</div>
+        <div style="font-size: 13px; color: #E1BEE7;">آموزش، نه فقط پول</div>
+      </div>
+    </foreignObject>
+    
+    <rect x="740" y="0" width="320" height="110" rx="12" fill="rgba(0,0,0,0.3)"/>
+    <foreignObject x="745" y="10" width="310" height="90">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <div style="font-size: 16px; color: #81C784; font-weight: 600;">🏥 رفاه</div>
+        <div style="font-size: 14px;">مسئولیت فردی</div>
+        <div style="font-size: 13px; color: #BBDEFB;">بازار خصوصی</div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Row 3: Class -->
+  <g transform="translate(0, 460)">
+    <rect x="20" y="0" width="320" height="110" rx="12" fill="rgba(0,0,0,0.3)"/>
+    <foreignObject x="25" y="10" width="310" height="90">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <div style="font-size: 16px; color: #90CAF9; font-weight: 600;">👥 طبقه</div>
+        <div style="font-size: 14px;">طبقه کارگر محور</div>
+        <div style="font-size: 13px; color: #FFCDD2;">مبارزه طبقاتی</div>
+      </div>
+    </foreignObject>
+    
+    <rect x="380" y="0" width="320" height="110" rx="12" fill="rgba(0,0,0,0.3)"/>
+    <foreignObject x="385" y="10" width="310" height="90">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <div style="font-size: 16px; color: #90CAF9; font-weight: 600;">👥 طبقه</div>
+        <div style="font-size: 14px;">«طبقه میانه جدید»</div>
+        <div style="font-size: 13px; color: #E1BEE7;">فراتر از طبقات</div>
+      </div>
+    </foreignObject>
+    
+    <rect x="740" y="0" width="320" height="110" rx="12" fill="rgba(0,0,0,0.3)"/>
+    <foreignObject x="745" y="10" width="310" height="90">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <div style="font-size: 16px; color: #90CAF9; font-weight: 600;">👥 طبقه</div>
+        <div style="font-size: 14px;">کارآفرینان و مالکان</div>
+        <div style="font-size: 13px; color: #BBDEFB;">شایسته‌سالاری</div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Key Figures Section -->
+  <rect x="60" y="600" width="960" height="180" rx="20" fill="rgba(0,0,0,0.5)"/>
+  
+  <foreignObject x="80" y="615" width="920" height="35">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 22px; font-weight: 700;
+      color: #FFC107; direction: rtl; text-align: center;
+    ">
+      👤 معماران راه سوم
+    </div>
+  </foreignObject>
+  
+  <!-- Figures Row -->
+  <g transform="translate(80, 660)">
+    <!-- Giddens -->
+    <rect x="0" y="0" width="200" height="100" rx="12" fill="rgba(156,39,176,0.3)"/>
+    <foreignObject x="5" y="10" width="190" height="80">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.4;
+      ">
+        <div style="font-size: 16px; font-weight: 700; color: #E1BEE7;">آنتونی گیدنز</div>
+        <div style="font-size: 13px;">🇬🇧 نظریه‌پرداز</div>
+        <div style="font-size: 12px; color: #CE93D8;">«فراتر از چپ و راست»</div>
+      </div>
+    </foreignObject>
+    
+    <!-- Blair -->
+    <rect x="220" y="0" width="200" height="100" rx="12" fill="rgba(183,28,28,0.3)"/>
+    <foreignObject x="225" y="10" width="190" height="80">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.4;
+      ">
+        <div style="font-size: 16px; font-weight: 700; color: #FFCDD2;">تونی بلر</div>
+        <div style="font-size: 13px;">🇬🇧 نیولیبر</div>
+        <div style="font-size: 12px; color: #EF9A9A;">۱۹۹۷-۲۰۰۷</div>
+      </div>
+    </foreignObject>
+    
+    <!-- Clinton -->
+    <rect x="440" y="0" width="200" height="100" rx="12" fill="rgba(13,71,161,0.3)"/>
+    <foreignObject x="445" y="10" width="190" height="80">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.4;
+      ">
+        <div style="font-size: 16px; font-weight: 700; color: #BBDEFB;">بیل کلینتون</div>
+        <div style="font-size: 13px;">🇺🇸 نیو دموکرات</div>
+        <div style="font-size: 12px; color: #90CAF9;">۱۹۹۳-۲۰۰۱</div>
+      </div>
+    </foreignObject>
+    
+    <!-- Schröder -->
+    <rect x="660" y="0" width="200" height="100" rx="12" fill="rgba(255,152,0,0.3)"/>
+    <foreignObject x="665" y="10" width="190" height="80">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.4;
+      ">
+        <div style="font-size: 16px; font-weight: 700; color: #FFCC80;">گرهارد شرودر</div>
+        <div style="font-size: 13px;">🇩🇪 نویه میته</div>
+        <div style="font-size: 12px; color: #FFE0B2;">۱۹۹۸-۲۰۰۵</div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Key Policies Box -->
+  <rect x="60" y="800" width="960" height="120" rx="15" fill="rgba(255,255,255,0.05)"/>
+  
+  <foreignObject x="80" y="810" width="920" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; color: white;
+      direction: rtl; text-align: center;
+    ">
+      <div style="font-size: 20px; font-weight: 700; color: #E1BEE7; margin-bottom: 10px;">
+        📋 سیاست‌های کلیدی راه سوم
+      </div>
+      <div style="display: flex; justify-content: space-around; font-size: 15px; flex-wrap: wrap;">
+        <span style="color: #A5D6A7;">✓ خصوصی‌سازی بخشی</span>
+        <span style="color: #90CAF9;">✓ انعطاف بازار کار</span>
+        <span style="color: #FFCC80;">✓ سرمایه‌گذاری در آموزش</span>
+        <span style="color: #F48FB1;">✓ اصلاح رفاه</span>
+      </div>
+    </div>
+  </foreignObject>
+  
+  <!-- Critique Section -->
+  <rect x="60" y="940" width="960" height="160" rx="20" fill="rgba(244,67,54,0.15)" stroke="#F44336" stroke-width="1"/>
+  
+  <foreignObject x="80" y="955" width="920" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; color: white;
+      direction: rtl; text-align: center;
+    ">
+      <div style="font-size: 20px; font-weight: 700; color: #EF9A9A; margin-bottom: 10px;">
+        ⚠️ انتقادات به راه سوم
+      </div>
+      <div style="font-size: 16px; line-height: 1.8;">
+        <span style="color: #FFCDD2;">از چپ:</span> خیانت به طبقه کارگر، تسلیم به سرمایه‌داری
+        <br/>
+        <span style="color: #BBDEFB;">از راست:</span> دولت همچنان بزرگ، مالیات بالا
+        <br/>
+        <span style="color: #FFC107;">پوپولیست‌ها:</span> نخبگانی که به مردم عادی بی‌توجه‌اند
+      </div>
+    </div>
+  </foreignObject>
+  
+  <!-- Legacy Question -->
+  <rect x="60" y="1120" width="960" height="80" rx="15" fill="rgba(103,58,183,0.3)"/>
+  <foreignObject x="80" y="1135" width="920" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 22px; color: #D1C4E9;
+      direction: rtl; text-align: center;
+    ">
+      ❓ آیا شکست راه سوم، راه را برای پوپولیسم باز کرد؟
+    </div>
+  </foreignObject>
+  
+  <!-- Navigation -->
+  <foreignObject x="60" y="1220" width="480" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 16px; color: #78909C;
+      direction: rtl;
+    ">
+      ← قبلی: میانه‌روی
+    </div>
+  </foreignObject>
+  
+  <foreignObject x="540" y="1220" width="480" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 16px; color: #78909C;
+      direction: rtl; text-align: left;
+    ">
+      بعدی: جمع‌بندی بخش چهارم →
+    </div>
+  </foreignObject>
+  
+  <!-- Slide Number -->
+  <rect x="480" y="1280" width="120" height="45" rx="22" fill="rgba(103,58,183,0.7)"/>
+  <text x="540" y="1310" text-anchor="middle" 
+        font-family="Vazirmatn, sans-serif" font-size="22" font-weight="bold" fill="white">۶۱</text>
+</svg>

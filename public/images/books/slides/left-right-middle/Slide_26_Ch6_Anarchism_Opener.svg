@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad26" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#212121"/>
+      <stop offset="50%" style="stop-color:#000000"/>
+      <stop offset="100%" style="stop-color:#212121"/>
+    </linearGradient>
+    <radialGradient id="spotlight26" cx="50%" cy="35%" r="50%">
+      <stop offset="0%" style="stop-color:rgba(249,168,37,0.15)"/>
+      <stop offset="100%" style="stop-color:rgba(0,0,0,0)"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad26)"/>
+  <rect width="1080" height="1080" fill="url(#spotlight26)"/>
+
+  <!-- Anarchy A Symbol -->
+  <text x="540" y="380" font-size="350" fill="#F9A825" opacity="0.08" text-anchor="middle" font-weight="900">Ⓐ</text>
+
+  <!-- Chapter Badge -->
+  <rect x="360" y="65" width="360" height="55" rx="27" fill="none" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="360" y="73" width="360" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; margin: 0;">فصل ششم | آنارشیسم</p>
+    </div>
+  </foreignObject>
+
+  <!-- Main Title -->
+  <foreignObject x="60" y="170" width="960" height="300">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 68px; font-weight: 900; line-height: 1.4; text-shadow: 0 0 40px rgba(249,168,37,0.3);">
+        نه خدا<br/>
+        <span style="color: #F9A825;">نه ارباب</span>
+      </h1>
+      <p style="color: #BDBDBD; font-size: 28px; margin-top: 30px; line-height: 1.6;">
+        آنارشیسم: رادیکال‌ترین شکل آزادی‌خواهی<br/>
+        اما آیا واقعاً «هرج و مرج» است؟
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Definition Box -->
+  <rect x="80" y="500" width="920" height="180" rx="22" fill="rgba(249,168,37,0.08)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="100" y="518" width="880" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 15px 0;">📚 تعریف دقیق آنارشیسم</p>
+      <p style="color: #FFFFFF; font-size: 24px; line-height: 1.8; margin: 0;">
+        <strong style="color: #F9A825;">An-archos</strong> (یونانی) = بدون حاکم<br/>
+        مخالفت با <strong style="color: #EF5350;">هر شکل سلطه:</strong> دولت، سرمایه، مذهب، پدرسالاری
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Key Distinction -->
+  <rect x="80" y="720" width="440" height="150" rx="18" fill="rgba(76,175,80,0.15)" stroke="#4CAF50" stroke-width="2"/>
+  <foreignObject x="100" y="738" width="400" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #4CAF50; font-size: 20px; font-weight: 700; margin: 0 0 10px 0;">✅ آنارشیسم یعنی:</p>
+      <p style="color: #FFFFFF; font-size: 20px; margin: 0;">
+        نظم بدون دولت<br/>
+        خودگردانی داوطلبانه<br/>
+        تعاون افقی
+      </p>
+    </div>
+  </foreignObject>
+
+  <rect x="560" y="720" width="440" height="150" rx="18" fill="rgba(244,67,54,0.15)" stroke="#F44336" stroke-width="2"/>
+  <foreignObject x="580" y="738" width="400" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F44336; font-size: 20px; font-weight: 700; margin: 0 0 10px 0;">❌ آنارشیسم نیست:</p>
+      <p style="color: #FFFFFF; font-size: 20px; margin: 0;">
+        هرج و مرج<br/>
+        بی‌قانونی<br/>
+        خشونت بی‌هدف
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- CTA -->
+  <rect x="330" y="910" width="420" height="68" rx="34" fill="#F9A825"/>
+  <foreignObject x="340" y="923" width="400" height="48">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #212121; font-size: 26px; font-weight: 700; margin: 0;">⬅️ متفکران و تجربه‌ها</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="1010" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۶ | اسلاید ۱ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

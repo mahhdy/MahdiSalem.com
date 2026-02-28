@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad47" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B5E20"/>
+      <stop offset="100%" style="stop-color:#2E7D32"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad47)"/>
+
+  <foreignObject x="0" y="40" width="1080" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 40px; font-weight: 800; margin: 0;">📌 جمع‌بندی فصل ۱۰</h1>
+    </div>
+  </foreignObject>
+
+  <rect x="70" y="125" width="940" height="360" rx="22" fill="rgba(0,0,0,0.25)"/>
+  <foreignObject x="90" y="142" width="900" height="332">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="padding: 13px 16px; background: rgba(249,168,37,0.12); border-right: 4px solid #F9A825; border-radius: 10px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">① لیبرالیسم دو معنا دارد: <strong style="color: #F9A825;">کلاسیک (راست)</strong> vs <strong style="color: #F9A825;">اجتماعی (چپ‌تر)</strong></p>
+      </div>
+      <div style="padding: 13px 16px; background: rgba(249,168,37,0.12); border-right: 4px solid #4CAF50; border-radius: 10px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">② هایک vs کینز: <strong style="color: #4CAF50;">بازار آزاد vs دولت فعال</strong> = جدال ۱۰۰ ساله</p>
+      </div>
+      <div style="padding: 13px 16px; background: rgba(249,168,37,0.12); border-right: 4px solid #FF9800; border-radius: 10px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">③ نئولیبرالیسم = <strong style="color: #FF9800;">خصوصی‌سازی + مقررات‌زدایی + جهانی‌سازی</strong></p>
+      </div>
+      <div style="padding: 13px 16px; background: rgba(249,168,37,0.12); border-right: 4px solid #D32F2F; border-radius: 10px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">④ نتیجه: رشد جهانی + <strong style="color: #D32F2F;">افزایش نابرابری</strong> + بحران ۲۰۰۸</p>
+      </div>
+      <div style="padding: 13px 16px; background: rgba(249,168,37,0.12); border-right: 4px solid #9C27B0; border-radius: 10px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">⑤ فریدمن: <strong style="color: #9C27B0;">«آزادی انتخاب»</strong> = شعار اصلی نئولیبرالیسم عملی</p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Bridge -->
+  <rect x="70" y="520" width="940" height="240" rx="22" fill="#FF6F00"/>
+  <foreignObject x="90" y="538" width="900" height="210">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFF3E0; font-size: 20px; margin: 0 0 10px 0;">🔜 فصل بعدی</p>
+      <h2 style="color: #FFFFFF; font-size: 42px; font-weight: 900; margin: 0 0 12px 0;">
+        فصل ۱۱: لیبرتارینیسم
+      </h2>
+      <p style="color: #FFE0B2; font-size: 22px; line-height: 1.7; margin: 0;">
+        اگر نئولیبرالیسم بگوید «دولت کمتر»<br/>
+        لیبرتارینیسم می‌گوید: <strong style="color: #FFFFFF;">دولت اصلاً نباید باشد!</strong><br/>
+        (یا فقط برای حفاظت از مالکیت)
+      </p>
+    </div>
+  </foreignObject>
+
+  <rect x="310" y="800" width="460" height="70" rx="35" fill="#F9A825"/>
+  <foreignObject x="320" y="813" width="440" height="48">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1A237E; font-size: 26px; font-weight: 700; margin: 0;">⬅️ آنارشیسم راست؟!</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="920" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۱۰ | اسلاید ۵ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad29" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#16213E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad29)"/>
+
+  <!-- Title -->
+  <foreignObject x="0" y="40" width="1080" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 40px; font-weight: 800; margin: 0;">
+        🌍 تجربه‌های واقعی آنارشیسم
+      </h1>
+    </div>
+  </foreignObject>
+
+  <!-- Experiment 1: Spain 1936 -->
+  <rect x="60" y="140" width="960" height="200" rx="22" fill="rgba(211,47,47,0.12)" stroke="#D32F2F" stroke-width="2"/>
+  <foreignObject x="80" y="155" width="920" height="175">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="display: flex; gap: 25px;">
+        <div style="flex: 0 0 auto; text-align: center; padding-top: 15px;">
+          <p style="color: #D32F2F; font-size: 60px; margin: 0;">🇪🇸</p>
+          <p style="color: #F9A825; font-size: 48px; font-weight: 900; margin: 0;">۱۹۳۶</p>
+        </div>
+        <div style="flex: 1;">
+          <h3 style="color: #F9A825; font-size: 28px; margin: 0 0 10px 0;">کاتالونیای آنارشیست | اسپانیا</h3>
+          <p style="color: #E0E0E0; font-size: 19px; line-height: 1.8; margin: 0;">
+            ✦ ۸ میلیون نفر تحت خودگردانی کارگری<br/>
+            ✦ کارخانه‌ها و مزارع توسط شوراها اداره شد<br/>
+            ✦ اورول: «اولین بار برابری واقعی دیدم»
+          </p>
+          <p style="color: #EF9A9A; font-size: 16px; margin-top: 10px;">⚠️ سرکوب شد: توسط فرانکو + استالین</p>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Experiment 2: Zapatistas -->
+  <rect x="60" y="370" width="960" height="200" rx="22" fill="rgba(76,175,80,0.12)" stroke="#4CAF50" stroke-width="2"/>
+  <foreignObject x="80" y="385" width="920" height="175">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="display: flex; gap: 25px;">
+        <div style="flex: 0 0 auto; text-align: center; padding-top: 15px;">
+          <p style="color: #4CAF50; font-size: 60px; margin: 0;">🇲🇽</p>
+          <p style="color: #F9A825; font-size: 48px; font-weight: 900; margin: 0;">۱۹۹۴</p>
+        </div>
+        <div style="flex: 1;">
+          <h3 style="color: #F9A825; font-size: 28px; margin: 0 0 10px 0;">زاپاتیست‌ها | چیاپاس مکزیک</h3>
+          <p style="color: #E0E0E0; font-size: 19px; line-height: 1.8; margin: 0;">
+            ✦ خودگردانی بومیان مایا<br/>
+            ✦ «حکومت کردن با اطاعت» (از مردم)<br/>
+            ✦ هنوز فعال! ۳۰ سال تجربه زنده
+          </p>
+          <p style="color: #A5D6A7; font-size: 16px; margin-top: 10px;">✅ یکی از موفق‌ترین تجربه‌های خودگردان</p>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Experiment 3: Rojava -->
+  <rect x="60" y="600" width="960" height="200" rx="22" fill="rgba(255,152,0,0.12)" stroke="#FF9800" stroke-width="2"/>
+  <foreignObject x="80" y="615" width="920" height="175">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="display: flex; gap: 25px;">
+        <div style="flex: 0 0 auto; text-align: center; padding-top: 15px;">
+          <p style="color: #FF9800; font-size: 60px; margin: 0;">🏳️</p>
+          <p style="color: #F9A825; font-size: 48px; font-weight: 900; margin: 0;">۲۰۱۲</p>
+        </div>
+        <div style="flex: 1;">
+          <h3 style="color: #F9A825; font-size: 28px; margin: 0 0 10px 0;">روژاوا | شمال سوریه</h3>
+          <p style="color: #E0E0E0; font-size: 19px; line-height: 1.8; margin: 0;">
+            ✦ «کنفدرالیسم دموکراتیک» بوکچین‌محور<br/>
+            ✦ برابری جنسیتی ساختاری (ریاست مشترک)<br/>
+            ✦ شوراهای محله + تعاونی‌ها
+          </p>
+          <p style="color: #FFB74D; font-size: 16px; margin-top: 10px;">⚠️ تحت فشار ترکیه و داعش</p>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Insight -->
+  <rect x="180" y="835" width="720" height="100" rx="18" fill="rgba(249,168,37,0.12)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="200" y="852" width="680" height="72">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; font-weight: 700; margin: 0;">
+        💡 آنارشیسم در حاشیه ماند اما هرگز نمرد<br/>
+        <span style="color: #FFFFFF; font-size: 20px; font-weight: 400;">ایده‌هایش در جنبش‌های جدید زنده‌اند</span>
+      </p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="970" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۶ | اسلاید ۴ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

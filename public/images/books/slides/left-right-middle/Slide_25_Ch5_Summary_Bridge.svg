@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad25" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#880E4F"/>
+      <stop offset="50%" style="stop-color:#AD1457"/>
+      <stop offset="100%" style="stop-color:#880E4F"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad25)"/>
+
+  <!-- Decorative Circles -->
+  <circle cx="100" cy="100" r="90" fill="#F9A825" opacity="0.07"/>
+  <circle cx="980" cy="980" r="110" fill="#F9A825" opacity="0.07"/>
+  <circle cx="950" cy="130" r="60" fill="#F9A825" opacity="0.07"/>
+
+  <!-- Title -->
+  <foreignObject x="0" y="45" width="1080" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 40px; font-weight: 800; margin: 0;">
+        ✅ جمع‌بندی فصل ۵: کمونیسم
+      </h1>
+    </div>
+  </foreignObject>
+
+  <!-- Key Points -->
+  <rect x="70" y="148" width="940" height="430" rx="24" fill="rgba(0,0,0,0.25)"/>
+  <foreignObject x="90" y="165" width="900" height="400">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+
+      <div style="display: flex; align-items: flex-start; margin-bottom: 22px; padding: 15px 18px; background: rgba(249,168,37,0.12); border-right: 4px solid #F9A825; border-radius: 12px;">
+        <div>
+          <p style="color: #F9A825; font-size: 18px; font-weight: 700; margin: 0 0 5px 0;">① تعریف دقیق</p>
+          <p style="color: #FFFFFF; font-size: 20px; margin: 0;">کمونیسم ≠ سوسیالیسم | کمونیسم مرحله <strong style="color: #F9A825;">پیشرفته‌تر</strong> است: بی‌طبقه + بی‌دولت</p>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: flex-start; margin-bottom: 22px; padding: 15px 18px; background: rgba(249,168,37,0.12); border-right: 4px solid #CE93D8; border-radius: 12px;">
+        <div>
+          <p style="color: #CE93D8; font-size: 18px; font-weight: 700; margin: 0 0 5px 0;">② سه گانه مارکس</p>
+          <p style="color: #FFFFFF; font-size: 20px; margin: 0;">ارزش اضافی + مبارزه طبقاتی + ماتریالیسم تاریخی = پایه‌های نظری کمونیسم</p>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: flex-start; margin-bottom: 22px; padding: 15px 18px; background: rgba(249,168,37,0.12); border-right: 4px solid #EF9A9A; border-radius: 12px;">
+        <div>
+          <p style="color: #EF9A9A; font-size: 18px; font-weight: 700; margin: 0 0 5px 0;">③ تنوع مدل‌ها</p>
+          <p style="color: #FFFFFF; font-size: 20px; margin: 0;">لنینیسم | مائوئیسم | گواریسم | استالینیسم | کیم‌ایل‌سونگ‌ایسم ← یک ایده، مسیرهای متفاوت</p>
+        </div>
+      </div>
+
+      <div style="padding: 15px 18px; background: rgba(249,168,37,0.12); border-right: 4px solid #F9A825; border-radius: 12px;">
+        <div>
+          <p style="color: #F9A825; font-size: 18px; font-weight: 700; margin: 0 0 5px 0;">④ پرسش بزرگ بی‌پاسخ</p>
+          <p style="color: #FFFFFF; font-size: 20px; margin: 0;">آیا کمونیسم «واقعی» هرگز اجرا شد؟ یا همیشه در راه ماند؟</p>
+        </div>
+      </div>
+
+    </div>
+  </foreignObject>
+
+  <!-- Stats Bar -->
+  <rect x="70" y="608" width="940" height="110" rx="18" fill="rgba(255,255,255,0.08)" stroke="rgba(249,168,37,0.3)" stroke-width="1"/>
+  <foreignObject x="90" y="620" width="900" height="90">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="display: flex; justify-content: space-around; align-items: center;">
+        <div>
+          <p style="color: #F9A825; font-size: 42px; font-weight: 900; margin: 0;">۱۵</p>
+          <p style="color: #E0E0E0; font-size: 16px; margin: 5px 0 0 0;">کشور کمونیست تجربه شده</p>
+        </div>
+        <div style="width: 2px; height: 70px; background: rgba(255,255,255,0.2);"></div>
+        <div>
+          <p style="color: #EF5350; font-size: 42px; font-weight: 900; margin: 0;">۱۰۰M</p>
+          <p style="color: #E0E0E0; font-size: 16px; margin: 5px 0 0 0;">قربانی تخمینی (کتاب سیاه)</p>
+        </div>
+        <div style="width: 2px; height: 70px; background: rgba(255,255,255,0.2);"></div>
+        <div>
+          <p style="color: #4CAF50; font-size: 42px; font-weight: 900; margin: 0;">۵</p>
+          <p style="color: #E0E0E0; font-size: 16px; margin: 5px 0 0 0;">کشور هنوز کمونیست</p>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Bridge to Next Chapter -->
+  <rect x="70" y="754" width="940" height="190" rx="22" fill="#212121"/>
+  <foreignObject x="90" y="770" width="900" height="165">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #BDBDBD; font-size: 20px; margin: 0 0 12px 0;">🔜 فصل بعدی</p>
+      <h2 style="color: #F9A825; font-size: 38px; font-weight: 900; margin: 0 0 12px 0;">
+        فصل ۶: آنارشیسم و چپ آزادی‌خواه
+      </h2>
+      <p style="color: #FFFFFF; font-size: 22px; line-height: 1.6; margin: 0 0 18px 0;">
+        اگر کمونیسم دولت قوی ساخت،<br/>
+        آنارشیسم می‌گوید: <strong style="color: #F9A825;">دولت اصلاً نباید وجود داشته باشد!</strong>
+      </p>
+      <div style="display: flex; justify-content: center; gap: 15px;">
+        <span style="background: #212121; border: 1px solid #F9A825; color: #F9A825; padding: 8px 18px; border-radius: 18px; font-size: 17px;">باکونین</span>
+        <span style="background: #212121; border: 1px solid #F9A825; color: #F9A825; padding: 8px 18px; border-radius: 18px; font-size: 17px;">کروپوتکین</span>
+        <span style="background: #212121; border: 1px solid #F9A825; color: #F9A825; padding: 8px 18px; border-radius: 18px; font-size: 17px;">چامسکی</span>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- CTA -->
+  <rect x="300" y="976" width="480" height="72" rx="36" fill="#F9A825"/>
+  <foreignObject x="310" y="990" width="460" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #880E4F; font-size: 26px; font-weight: 700; margin: 0;">
+        🔖 ذخیره | ↗️ اشتراک | 💬 نظر بده
+      </p>
+    </div>
+  </foreignObject>
+
+</svg>

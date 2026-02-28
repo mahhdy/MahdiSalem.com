@@ -1,0 +1,53 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#F8F9FA;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#E9ECEF;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="1080" height="1350" fill="url(#bgGrad)" />
+    
+    <rect width="1080" height="100" fill="#1A237E" />
+    <foreignObject x="40" y="20" width="1000" height="60">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif; color: #F9A825; font-size: 32px; font-weight: bold;">
+            فصل ۱: مقدمه - چرا این کتاب؟
+        </div>
+    </foreignObject>
+    
+    <foreignObject x="60" y="140" width="960" height="140">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif; color: #1A237E; font-size: 52px; font-weight: 900; line-height: 1.2;">
+            بن‌بست تاریخی و ضرورت گذار
+        </div>
+    </foreignObject>
+    
+    <g transform="translate(60, 280)">
+    
+        <rect y="0" width="960" height="240" rx="24" fill="white" style="filter: drop-shadow(0 10px 20px rgba(0,0,0,0.08));" />
+        <path d="M 0 24 Q 0 0 24 0 L 40 0 L 40 240 L 24 240 Q 0 240 0 216 Z" fill="#1A237E" />
+        
+        <foreignObject x="70" y="35" width="850" height="170">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif;">
+                <div style="color: #1A237E; font-size: 24px; font-weight: 800; margin-bottom: 20px; opacity: 0.8;">تبیین مسئله</div>
+                <div style="color: #2D3436; font-size: 32px; font-weight: 500; line-height: 1.5;">
+                    وضعیت موجود نه پایدار است و نه مطلوب؛ بحران‌های آب، اقتصاد و مشروعیت در حال تعمیق‌اند و ادامه مسیر فعلی به فروپاشی منجر خواهد شد.
+                </div>
+            </div>
+        </foreignObject>
+        
+        <rect y="280" width="960" height="260" rx="24" fill="white" style="filter: drop-shadow(0 10px 20px rgba(0,0,0,0.08));" />
+        <path d="M 0 304 Q 0 280 24 280 L 40 280 L 40 540 L 24 540 Q 0 540 0 516 Z" fill="#B71C1C" />
+        
+        <foreignObject x="70" y="315" width="850" height="190">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif;">
+                <div style="color: #B71C1C; font-size: 24px; font-weight: 800; margin-bottom: 20px; opacity: 0.8;">هدف غایی</div>
+                <div style="color: #2D3436; font-size: 44px; font-weight: 900; line-height: 1.5;">
+                    گذار دموکراتیک نه‌تنها یک آرمان سیاسی، بلکه تنها راه نجات کالبد ملی ایران از نابودی حتمی است.
+                </div>
+            </div>
+        </foreignObject>
+        
+    </g>
+    
+    <text x="540" y="1310" text-anchor="middle" font-family="'Vazirmatn', sans-serif" font-size="22" font-weight="bold" fill="#B0B0B0">I R A N • T R A N S I T I O N</text>
+    </svg>
+    

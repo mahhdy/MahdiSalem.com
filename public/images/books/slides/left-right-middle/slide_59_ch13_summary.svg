@@ -1,0 +1,252 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs>
+    <!-- Orange Summary Gradient -->
+    <linearGradient id="orangeSummary" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E65100"/>
+      <stop offset="50%" style="stop-color:#BF360C"/>
+      <stop offset="100%" style="stop-color:#1A1A2E"/>
+    </linearGradient>
+    
+    <!-- Gold Line -->
+    <linearGradient id="goldLine59" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF8F00"/>
+      <stop offset="50%" style="stop-color:#FFC107"/>
+      <stop offset="100%" style="stop-color:#FF8F00"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#orangeSummary)"/>
+  
+  <!-- Decorative Circles -->
+  <g opacity="0.03">
+    <circle cx="950" cy="150" r="250" fill="white"/>
+    <circle cx="130" cy="1200" r="200" fill="white"/>
+  </g>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1080" height="120" fill="rgba(0,0,0,0.4)"/>
+  <foreignObject x="0" y="0" width="1080" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      font-size: 38px; font-weight: 800; color: white;
+      direction: rtl;
+    ">
+      📋 جمع‌بندی فصل ۱۳: راست نو و پوپولیسم
+    </div>
+  </foreignObject>
+  
+  <!-- Gold Divider -->
+  <rect x="200" y="130" width="680" height="4" rx="2" fill="url(#goldLine59)"/>
+  
+  <!-- Key Takeaways Title -->
+  <foreignObject x="60" y="155" width="960" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 24px; font-weight: 700;
+      color: #FFE0B2; direction: rtl; text-align: center;
+    ">
+      🎯 نکات کلیدی
+    </div>
+  </foreignObject>
+  
+  <!-- Takeaway Cards -->
+  <g transform="translate(60, 210)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="460" height="110" rx="15" fill="rgba(255,255,255,0.1)"/>
+    <rect x="0" y="0" width="8" height="110" rx="4" fill="#FFC107"/>
+    <foreignObject x="20" y="15" width="420" height="80">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; line-height: 1.6;
+      ">
+        <div style="font-size: 18px; font-weight: 700; color: #FFCC80; margin-bottom: 5px;">۱. پوپولیسم: سبک یا محتوا؟</div>
+        <div style="font-size: 15px;">«ایدئولوژی نازک» که با چپ و راست ترکیب می‌شود — دوگانه مردم/نخبگان</div>
+      </div>
+    </foreignObject>
+    
+    <!-- Card 2 -->
+    <rect x="500" y="0" width="460" height="110" rx="15" fill="rgba(255,255,255,0.1)"/>
+    <rect x="500" y="0" width="8" height="110" rx="4" fill="#4CAF50"/>
+    <foreignObject x="520" y="15" width="420" height="80">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; line-height: 1.6;
+      ">
+        <div style="font-size: 18px; font-weight: 700; color: #A5D6A7; margin-bottom: 5px;">۲. چپ vs راست</div>
+        <div style="font-size: 15px;">چپ: دشمن = ثروتمندان | راست: دشمن = مهاجران و «بیگانگان»</div>
+      </div>
+    </foreignObject>
+    
+    <!-- Card 3 -->
+    <rect x="0" y="130" width="460" height="110" rx="15" fill="rgba(255,255,255,0.1)"/>
+    <rect x="0" y="130" width="8" height="110" rx="4" fill="#2196F3"/>
+    <foreignObject x="20" y="145" width="420" height="80">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; line-height: 1.6;
+      ">
+        <div style="font-size: 18px; font-weight: 700; color: #90CAF9; margin-bottom: 5px;">۳. موج جهانی</div>
+        <div style="font-size: 15px;">از ترامپ تا اردوغان، از چاوز تا مودی — پدیده‌ای فراگیر</div>
+      </div>
+    </foreignObject>
+    
+    <!-- Card 4 -->
+    <rect x="500" y="130" width="460" height="110" rx="15" fill="rgba(255,255,255,0.1)"/>
+    <rect x="500" y="130" width="8" height="110" rx="4" fill="#F44336"/>
+    <foreignObject x="520" y="145" width="420" height="80">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; line-height: 1.6;
+      ">
+        <div style="font-size: 18px; font-weight: 700; color: #EF9A9A; margin-bottom: 5px;">۴. تهدید دموکراسی</div>
+        <div style="font-size: 15px;">تضعیف نهادها، رسانه‌ها، قوه قضائیه — «دموکراسی غیرلیبرال»</div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Definitions Box -->
+  <rect x="60" y="480" width="960" height="180" rx="20" fill="rgba(0,0,0,0.4)"/>
+  
+  <foreignObject x="80" y="495" width="920" height="35">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 22px; font-weight: 700;
+      color: #FFC107; direction: rtl; text-align: center;
+    ">
+      📚 تعاریف کلیدی
+    </div>
+  </foreignObject>
+  
+  <foreignObject x="80" y="535" width="920" height="115">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 16px; color: white;
+      direction: rtl; line-height: 2.1;
+    ">
+      <div><strong style="color:#FFCC80;">پوپولیسم:</strong> سیاست مبتنی بر تقابل «مردم خالص» و «نخبگان فاسد»</div>
+      <div><strong style="color:#A5D6A7;">راست نو:</strong> ترکیب ناسیونالیسم، ضدمهاجرت و پوپولیسم در قرن ۲۱</div>
+      <div><strong style="color:#90CAF9;">دموکراسی غیرلیبرال:</strong> انتخابات بدون حقوق اقلیت و نهادهای مستقل</div>
+      <div><strong style="color:#EF9A9A;">ایدئولوژی نازک:</strong> چارچوب فکری ناقص که نیاز به تکمیل دارد</div>
+    </div>
+  </foreignObject>
+  
+  <!-- Key Thinkers -->
+  <foreignObject x="60" y="680" width="960" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 22px; font-weight: 700;
+      color: #FFE0B2; direction: rtl; text-align: center;
+    ">
+      👤 متفکران کلیدی
+    </div>
+  </foreignObject>
+  
+  <!-- Thinker Cards -->
+  <g transform="translate(60, 730)">
+    <rect x="0" y="0" width="220" height="90" rx="12" fill="rgba(255,193,7,0.2)" stroke="#FFC107" stroke-width="1"/>
+    <foreignObject x="5" y="10" width="210" height="70">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <div style="font-size: 16px; font-weight: 700; color: #FFCC80;">کاس مود</div>
+        <div style="font-size: 13px;">ایدئولوژی نازک</div>
+        <div style="font-size: 12px; color: #FFE0B2;">نظریه‌پرداز اصلی</div>
+      </div>
+    </foreignObject>
+    
+    <rect x="250" y="0" width="220" height="90" rx="12" fill="rgba(156,39,176,0.2)" stroke="#9C27B0" stroke-width="1"/>
+    <foreignObject x="255" y="10" width="210" height="70">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <div style="font-size: 16px; font-weight: 700; color: #CE93D8;">یان-ورنر مولر</div>
+        <div style="font-size: 13px;">پوپولیسم چیست؟</div>
+        <div style="font-size: 12px; color: #E1BEE7;">منتقد پوپولیسم</div>
+      </div>
+    </foreignObject>
+    
+    <rect x="500" y="0" width="220" height="90" rx="12" fill="rgba(233,30,99,0.2)" stroke="#E91E63" stroke-width="1"/>
+    <foreignObject x="505" y="10" width="210" height="70">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <div style="font-size: 16px; font-weight: 700; color: #F48FB1;">ارنستو لاکلائو</div>
+        <div style="font-size: 13px;">عقل پوپولیستی</div>
+        <div style="font-size: 12px; color: #F8BBD9;">مدافع پوپولیسم چپ</div>
+      </div>
+    </foreignObject>
+    
+    <rect x="750" y="0" width="220" height="90" rx="12" fill="rgba(33,150,243,0.2)" stroke="#2196F3" stroke-width="1"/>
+    <foreignObject x="755" y="10" width="210" height="70">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; color: white;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        <div style="font-size: 16px; font-weight: 700; color: #90CAF9;">شانتال موف</div>
+        <div style="font-size: 13px;">پوپولیسم چپ</div>
+        <div style="font-size: 12px; color: #BBDEFB;">لحظه پوپولیستی</div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Bridge Section -->
+  <rect x="60" y="850" width="960" height="200" rx="20" fill="rgba(103,58,183,0.2)" stroke="#7C4DFF" stroke-width="2"/>
+  
+  <foreignObject x="80" y="865" width="920" height="180">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; color: white;
+      direction: rtl; text-align: center;
+    ">
+      <div style="font-size: 26px; font-weight: 800; color: #B388FF; margin-bottom: 15px;">
+        🌉 پل به بخش چهارم: میانه و ترکیب
+      </div>
+      <div style="font-size: 19px; line-height: 1.9;">
+        چپ و راست را دیدیم — حالا سؤال اینجاست:
+        <br/><strong style="color: #D1C4E9;">آیا «میانه» وجود دارد؟</strong>
+        <br/>میانه‌روی هنر است یا فرار از موضع‌گیری؟
+        <br/>«راه سوم» بلر و کلینتون: موفقیت یا خیانت؟
+      </div>
+    </div>
+  </foreignObject>
+  
+  <!-- Chapter Progress -->
+  <foreignObject x="60"y="1070" width="960" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 16px; color: #FFE0B2;
+      direction: rtl; text-align: center;
+    ">
+      بخش سوم: جهان راست │ فصل ۱۳ از ۵ فصل │ ██████████ ۱۰۰٪ ✅
+    </div>
+  </foreignObject>
+  
+  <!-- Teaser Question -->
+  <rect x="60" y="1120" width="960" height="80" rx="15" fill="rgba(103,58,183,0.3)"/>
+  <foreignObject x="80" y="1135" width="920" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 22px; color: #D1C4E9;
+      direction: rtl; text-align: center;
+    ">
+      ❓ آیا می‌توان چپ و راست را کنار گذاشت و «میانه» ماند؟
+    </div>
+  </foreignObject>
+  
+  <!-- Section Complete Badge -->
+  <rect x="380" y="1210" width="320" height="50" rx="25" fill="rgba(76,175,80,0.3)" stroke="#4CAF50" stroke-width="2"/>
+  <foreignObject x="380" y="1210" width="320" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Vazirmatn', sans-serif; font-size: 18px; font-weight: 700;
+      color: #A5D6A7; direction: rtl;
+    ">
+      ✅ بخش سوم تکمیل شد!
+    </div>
+  </foreignObject>
+  
+  <!-- Slide Number -->
+  <rect x="480" y="1280" width="120" height="45" rx="22" fill="rgba(230,81,0,0.7)"/>
+  <text x="540" y="1310" text-anchor="middle" 
+        font-family="Vazirmatn, sans-serif" font-size="22" font-weight="bold" fill="white">۵۹</text>
+</svg>

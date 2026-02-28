@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad43" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D47A1"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad43)"/>
+
+  <foreignObject x="0" y="40" width="1080" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 40px; font-weight: 800; margin: 0;">📌 جمع‌بندی فصل ۹: محافظه‌کاری</h1>
+    </div>
+  </foreignObject>
+
+  <rect x="70" y="130" width="940" height="330" rx="22" fill="rgba(0,0,0,0.25)"/>
+  <foreignObject x="90" y="148" width="900" height="300">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="padding: 14px 18px; background: rgba(249,168,37,0.12); border-right: 4px solid #F9A825; border-radius: 10px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 20px; margin: 0;">① محافظه‌کاری ≠ «عقب‌ماندگی» | بلکه = <strong style="color: #F9A825;">احترام به تجربه تاریخی</strong></p>
+      </div>
+      <div style="padding: 14px 18px; background: rgba(249,168,37,0.12); border-right: 4px solid #64B5F6; border-radius: 10px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 20px; margin: 0;">② ۴ نوع: <strong style="color: #64B5F6;">سنتی | مذهبی | مالی | نو</strong></p>
+      </div>
+      <div style="padding: 14px 18px; background: rgba(249,168,37,0.12); border-right: 4px solid #FFB74D; border-radius: 10px; margin-bottom: 14px;">
+        <p style="color: #FFFFFF; font-size: 20px; margin: 0;">③ ریگان و تاچر: محافظه‌کاری را به <strong style="color: #FFB74D;">نئولیبرالیسم</strong> پیوند زدند</p>
+      </div>
+      <div style="padding: 14px 18px; background: rgba(249,168,37,0.12); border-right: 4px solid #EF9A9A; border-radius: 10px;">
+        <p style="color: #FFFFFF; font-size: 20px; margin: 0;">④ پارادوکس: حفظ سنت + تحمیل تغییر اقتصادی = <strong style="color: #EF9A9A;">تناقض درونی</strong></p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Bridge -->
+  <rect x="70" y="500" width="940" height="240" rx="22" fill="#2E7D32"/>
+  <foreignObject x="90" y="520" width="900" height="210">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #C8E6C9; font-size: 20px; margin: 0 0 10px 0;">🔜 فصل بعدی</p>
+      <h2 style="color: #FFFFFF; font-size: 42px; font-weight: 900; margin: 0 0 15px 0;">
+        فصل ۱۰: لیبرالیسم کلاسیک و نئولیبرالیسم
+      </h2>
+      <p style="color: #A5D6A7; font-size: 22px; line-height: 1.7; margin: 0;">
+        آیا «لیبرال» در آمریکا با «لیبرال» در اروپا فرق دارد؟<br/>
+        <strong style="color: #F9A825;">نئولیبرالیسم</strong>: محبوب‌ترین دشمن چپ!
+      </p>
+    </div>
+  </foreignObject>
+
+  <rect x="310" y="780" width="460" height="70" rx="35" fill="#F9A825"/>
+  <foreignObject x="320" y="793" width="440" height="48">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1A237E; font-size: 26px; font-weight: 700; margin: 0;">⬅️ لیبرالیسم واقعاً چیست؟</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="900" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۹ | اسلاید ۵ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

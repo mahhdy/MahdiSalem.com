@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad32" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAFAFA"/>
+      <stop offset="100%" style="stop-color:#E8EAF6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad32)"/>
+
+  <rect x="0" y="0" width="1080" height="120" fill="#AD1457"/>
+  <foreignObject x="0" y="30" width="1080" height="75">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 36px; font-weight: 800; margin: 0;">
+        ⚔️ بحث بزرگ: اصلاح یا انقلاب؟
+      </h1>
+      <p style="color: #F8BBD0; font-size: 18px; margin: 8px 0 0 0;">دعوای درون سوسیال‌دموکراسی آلمان (SPD)</p>
+    </div>
+  </foreignObject>
+
+  <!-- Reform Side -->
+  <rect x="55" y="145" width="465" height="470" rx="22" fill="#FFFFFF" stroke="#4CAF50" stroke-width="3"/>
+  <rect x="55" y="145" width="465" height="58" rx="22" fill="#4CAF50"/>
+  <foreignObject x="55" y="153" width="465" height="46">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 26px; font-weight: 800; margin: 0;">🕊️ اصلاح‌طلبان</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="70" y="215" width="435" height="385">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #4CAF50; font-size: 22px; font-weight: 700; text-align: center; margin: 0;">ادوارد برنشتاین</p>
+      <p style="color: #9E9E9E; font-size: 15px; text-align: center; margin: 5px 0 15px 0;">۱۸۵۰-۱۹۳۲</p>
+      <p style="color: #424242; font-size: 18px; line-height: 2; margin: 0;">
+        ✦ سرمایه‌داری <strong style="color: #4CAF50;">فرو نمی‌پاشد</strong><br/>
+        ✦ از <strong style="color: #4CAF50;">پارلمان</strong> می‌شود تغییر داد<br/>
+        ✦ اصلاح <strong style="color: #4CAF50;">تدریجی</strong> اما مطمئن<br/>
+        ✦ دموکراسی مقدم بر سوسیالیسم
+      </p>
+      <div style="margin-top: 18px; padding: 12px; background: #E8F5E9; border-radius: 12px;">
+        <p style="color: #2E7D32; font-size: 17px; font-style: italic; text-align: center; margin: 0;">
+          «هدف نهایی هیچ نیست؛ حرکت همه‌چیز است»
+        </p>
+      </div>
+      <div style="margin-top: 12px; text-align: center;">
+        <span style="background: #4CAF50; color: white; padding: 8px 18px; border-radius: 20px; font-size: 15px;">→ پایه‌گذار سوسیال‌دموکراسی</span>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Revolution Side -->
+  <rect x="560" y="145" width="465" height="470" rx="22" fill="#FFFFFF" stroke="#D32F2F" stroke-width="3"/>
+  <rect x="560" y="145" width="465" height="58" rx="22" fill="#D32F2F"/>
+  <foreignObject x="560" y="153" width="465" height="46">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 26px; font-weight: 800; margin: 0;">🔥 انقلابیون</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="575" y="215" width="435" height="385">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #D32F2F; font-size: 22px; font-weight: 700; text-align: center; margin: 0;">رزا لوکزامبورگ</p>
+      <p style="color: #9E9E9E; font-size: 15px; text-align: center; margin: 5px 0 15px 0;">۱۸۷۱-۱۹۱۹</p>
+      <p style="color: #424242; font-size: 18px; line-height: 2; margin: 0;">
+        ✦ اصلاح = <strong style="color: #D32F2F;">سازش</strong> با سرمایه‌داری<br/>
+        ✦ پارلمان <strong style="color: #D32F2F;">بورژوایی</strong> است<br/>
+        ✦ فقط <strong style="color: #D32F2F;">انقلاب</strong> ساختار را عوض می‌کند<br/>
+        ✦ اما انقلاب = آزادی (نه دیکتاتوری)
+      </p>
+      <div style="margin-top: 18px; padding: 12px; background: #FFEBEE; border-radius: 12px;">
+        <p style="color: #C62828; font-size: 17px; font-style: italic; text-align: center; margin: 0;">
+          «آزادی یعنی آزادی اندیشه دگراندیش»
+        </p>
+      </div>
+      <div style="margin-top: 12px; text-align: center;">
+        <span style="background: #D32F2F; color: white; padding: 8px 18px; border-radius: 20px; font-size: 15px;">→ منتقد لنین و برنشتاین هر دو</span>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Bottom Verdict -->
+  <rect x="100" y="648" width="880" height="160" rx="22" fill="#1A237E"/>
+  <foreignObject x="120" y="665" width="840" height="130">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">🏆 چه کسی برنده شد؟</p>
+      <p style="color: #FFFFFF; font-size: 22px; line-height: 1.8; margin: 0;">
+        در <strong style="color: #4CAF50;">اروپای غربی</strong>: برنشتاین! → سوسیال‌دموکراسی حاکم شد<br/>
+        در <strong style="color: #D32F2F;">اروپای شرقی</strong>: لنین! → کمونیسم حاکم شد<br/>
+        لوکزامبورگ: <strong style="color: #F9A825;">ترور شد</strong> و صدایش خاموش ماند
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Definition -->
+  <rect x="160" y="840" width="760" height="90" rx="15" fill="#FFF8E1" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="175" y="855" width="730" height="65">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F57F17; font-size: 18px; margin: 0 0 6px 0;">📚 تعریف: رویزیونیسم (Revisionism)</p>
+      <p style="color: #5D4037; font-size: 20px; margin: 0;">بازنگری در آموزه‌های مارکس | نام دیگر اصلاح‌طلبی سوسیالیستی</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="970" width="1080" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #9E9E9E; font-size: 18px; margin: 0;">📖 فصل ۷ | اسلاید ۲ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

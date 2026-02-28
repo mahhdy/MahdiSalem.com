@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad35" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A148C"/>
+      <stop offset="50%" style="stop-color:#6A1B9A"/>
+      <stop offset="100%" style="stop-color:#7B1FA2"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad35)"/>
+
+  <!-- Decorative -->
+  <text x="850" y="250" font-size="200" fill="#F9A825" opacity="0.06" font-weight="900">✊</text>
+  <text x="100" y="900" font-size="150" fill="#F9A825" opacity="0.06">♀</text>
+
+  <rect x="340" y="65" width="400" height="55" rx="27" fill="none" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="340" y="73" width="400" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; margin: 0;">فصل هشتم | چپ نو</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="60" y="160" width="960" height="300">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 56px; font-weight: 900; line-height: 1.4;">
+        چپ سنتی<br/>
+        <span style="color: #F9A825;">دیگر کافی نبود</span>
+      </h1>
+      <p style="color: #CE93D8; font-size: 26px; margin-top: 25px; line-height: 1.6;">
+        دهه ۱۹۶۰: نسل جوانی که فقط «طبقه» را کافی ندانست<br/>
+        نژاد، جنسیت، جنسیت، محیط‌زیست، فرهنگ...
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Key Year -->
+  <rect x="370" y="475" width="340" height="130" rx="22" fill="rgba(249,168,37,0.15)" stroke="#F9A825" stroke-width="3"/>
+  <foreignObject x="380" y="490" width="320" height="105">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 60px; font-weight: 900; margin: 0;">۱۹۶۸</p>
+      <p style="color: #FFFFFF; font-size: 20px; margin: 5px 0 0 0;">سال انقلاب فرهنگی جهان</p>
+    </div>
+  </foreignObject>
+
+  <!-- Events -->
+  <rect x="60" y="640" width="225" height="160" rx="16" fill="rgba(255,255,255,0.08)"/>
+  <foreignObject x="70" y="655" width="205" height="135">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 36px; margin: 0;">🇫🇷</p>
+      <p style="color: #FFFFFF; font-size: 18px; margin: 8px 0 0 0;">مه ۶۸ پاریس<br/><span style="color: #CE93D8; font-size: 15px;">دانشجویان + کارگران</span></p>
+    </div>
+  </foreignObject>
+
+  <rect x="310" y="640" width="225" height="160" rx="16" fill="rgba(255,255,255,0.08)"/>
+  <foreignObject x="320" y="655" width="205" height="135">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 36px; margin: 0;">🇺🇸</p>
+      <p style="color: #FFFFFF; font-size: 18px; margin: 8px 0 0 0;">جنبش حقوق مدنی<br/><span style="color: #CE93D8; font-size: 15px;">مارتین لوتر کینگ</span></p>
+    </div>
+  </foreignObject>
+
+  <rect x="560" y="640" width="225" height="160" rx="16" fill="rgba(255,255,255,0.08)"/>
+  <foreignObject x="570" y="655" width="205" height="135">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 36px; margin: 0;">☮️</p>
+      <p style="color: #FFFFFF; font-size: 18px; margin: 8px 0 0 0;">ضد جنگ ویتنام<br/><span style="color: #CE93D8; font-size: 15px;">نسل هیپی و صلح</span></p>
+    </div>
+  </foreignObject>
+
+  <rect x="810" y="640" width="210" height="160" rx="16" fill="rgba(255,255,255,0.08)"/>
+  <foreignObject x="820" y="655" width="190" height="135">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 36px; margin: 0;">🇨🇿</p>
+      <p style="color: #FFFFFF; font-size: 18px; margin: 8px 0 0 0;">بهار پراگ<br/><span style="color: #CE93D8; font-size: 15px;">چپ ضد شوروی</span></p>
+    </div>
+  </foreignObject>
+
+  <rect x="280" y="840" width="520" height="80" rx="40" fill="#F9A825"/>
+  <foreignObject x="290" y="855" width="500" height="52">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #4A148C; font-size: 26px; font-weight: 700; margin: 0;">
+        ❓ چپ نو چه چیزی اضافه کرد؟
+      </p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="960" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۸ | اسلاید ۱ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

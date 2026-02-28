@@ -1,0 +1,80 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1080" height="1350" fill="#ffffff"/>
+    
+    <!-- Background Gradient -->
+    <defs>
+        <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#E3F2FD"/>
+            <stop offset="100%" style="stop-color:#BBDEFB"/>
+        </linearGradient>
+    </defs>
+    <rect width="1080" height="1350" fill="url(#skyGrad)"/>
+
+    <!-- Header -->
+    <rect x="0" y="0" width="1080" height="100" fill="#1976D2"/>
+    <foreignObject x="0" y="0" width="1080" height="100">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: 'Vazirmatn', sans-serif; font-size: 36px; font-weight: 800; color: white; direction: rtl;">
+            فصل ۱: مقدمه — چرا این کتاب؟
+        </div>
+    </foreignObject>
+
+    <text x="540" y="220" text-anchor="middle" font-family="'Vazirmatn'" font-size="52" font-weight="900" fill="#0D47A1">پنجره فرصت: همگرایی نیروها</text>
+
+    <!-- The Window Visual -->
+    <g transform="translate(140, 350)">
+        <!-- Window Frame -->
+        <rect width="800" height="600" fill="white" stroke="#1976D2" stroke-width="20" rx="10"/>
+        <line x1="400" y1="0" x2="400" y2="600" stroke="#1976D2" stroke-width="10"/>
+        <line x1="0" y1="300" x2="800" y2="300" stroke="#1976D2" stroke-width="10"/>
+        
+        <!-- Quadrant 1: Youth -->
+        <foreignObject x="40" y="40" width="320" height="220">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: #0D47A1; text-align: center;">
+                <div style="font-size: 80px;">🎓</div>
+                <div style="font-size: 28px; font-weight: 900;">نسل جدید</div>
+                <div style="font-size: 18px;">آگاه، جهانی و مطالبه‌گر</div>
+            </div>
+        </foreignObject>
+
+        <!-- Quadrant 2: Civil Society -->
+        <foreignObject x="440" y="40" width="320" height="220">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: #0D47A1; text-align: center;">
+                <div style="font-size: 80px;">🤝</div>
+                <div style="font-size: 28px; font-weight: 900;">جامعه مدنی</div>
+                <div style="font-size: 18px;">شبکه‌های همبستگی پنهان</div>
+            </div>
+        </foreignObject>
+
+        <!-- Quadrant 3: Tech -->
+        <foreignObject x="40" y="340" width="320" height="220">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: #0D47A1; text-align: center;">
+                <div style="font-size: 80px;">📱</div>
+                <div style="font-size: 28px; font-weight: 900;">انقلاب دیجیتال</div>
+                <div style="font-size: 18px;">شکستن انحصارِ روایت</div>
+            </div>
+        </foreignObject>
+
+        <!-- Quadrant 4: Global -->
+        <foreignObject x="440" y="340" width="320" height="220">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: #0D47A1; text-align: center;">
+                <div style="font-size: 80px;">🌍</div>
+                <div style="font-size: 28px; font-weight: 900;">ژئوپلیتیک</div>
+                <div style="font-size: 18px;">نیاز جهان به ثبات ایران</div>
+            </div>
+        </foreignObject>
+    </g>
+
+    <!-- Sunlight Ray behind the window -->
+    <path d="M540,1350 L140,350 L940,350 Z" fill="#FFD600" opacity="0.1"/>
+
+    <foreignObject x="100" y="1050" width="880" height="150">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: #1565C0; font-size: 26px; text-align: center; line-height: 1.6; font-weight: 700;">
+            این پنجره تا ابد باز نمی‌ماند.<br/>هر تأخیر، هزینه‌ی گذار را به صورت تصاعدی بالا می‌برد.
+        </div>
+    </foreignObject>
+
+    <!-- Slide ID -->
+    <circle cx="1020" cy="1300" r="30" fill="#1976D2"/>
+    <text x="1020" y="1310" text-anchor="middle" font-family="'Vazirmatn', sans-serif" font-size="24" font-weight="bold" fill="white">۱۲</text>
+    </svg>
+    

@@ -1,0 +1,62 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1080" height="1350" fill="#F5F5F5"/>
+    
+    <!-- Background Elements -->
+    <path d="M0,600 C300,500 700,700 1080,600 L1080,1350 L0,1350 Z" fill="#E0E0E0" opacity="0.3"/>
+
+    <!-- Header -->
+    <rect x="0" y="0" width="1080" height="100" fill="#3F51B5"/>
+    <foreignObject x="0" y="0" width="1080" height="100">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: 'Vazirmatn', sans-serif; font-size: 36px; font-weight: 800; color: white; direction: rtl;">
+            فصل ۷: چشم‌انداز، اصول و میثاق ملی
+        </div>
+    </foreignObject>
+
+    <!-- Title -->
+    <text x="540" y="200" text-anchor="middle" font-family="'Vazirmatn'" font-size="52" font-weight="900" fill="#1A237E">از «رعیّت» به «شهروند»</text>
+
+    <!-- The Great Transition Arrow -->
+    <g transform="translate(60, 450)">
+        <path d="M0,150 L840,150 L840,100 L960,175 L840,250 L840,200 L0,200 Z" fill="#3F51B5"/>
+        
+        <!-- Left Side: Subject -->
+        <g transform="translate(50, 20)">
+            <circle cx="0" cy="0" r="100" fill="#BDBDBD"/>
+            <text y="15" text-anchor="middle" font-family="'Vazirmatn'" font-size="40" font-weight="900" fill="#424242">رعیّت</text>
+            <rect x="-80" y="120" width="160" height="120" rx="10" fill="white" stroke="#BDBDBD"/>
+            <foreignObject x="-70" y="130" width="140" height="100">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Vazirmatn'; color:#616161; font-size:16px; text-align:center; direction:rtl;">
+                    اطاعت کورکورانه<br/>ترس از قدرت<br/>بی‌ارادگی سیاسی
+                </div>
+            </foreignObject>
+        </g>
+
+        <!-- Right Side: Citizen -->
+        <g transform="translate(800, 20)">
+            <circle cx="0" cy="0" r="100" fill="#FFC107"/>
+            <text y="15" text-anchor="middle" font-family="'Vazirmatn'" font-size="40" font-weight="900" fill="#1A237E">شهروند</text>
+            <rect x="-80" y="120" width="160" height="120" rx="10" fill="white" stroke="#FFC107"/>
+            <foreignObject x="-70" y="130" width="140" height="100">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Vazirmatn'; color:#1A237E; font-size:16px; text-align:center; direction:rtl;">
+                    مشارکت فعال<br/>حق و مسئولیت<br/>اراده ملی
+                </div>
+            </foreignObject>
+        </g>
+
+        <!-- The Shift (Middle) -->
+        <text x="450" y="130" text-anchor="middle" font-family="'Vazirmatn'" font-size="28" font-weight="900" fill="#3F51B5">بلوغ و آگاهی سیاسی</text>
+    </g>
+
+    <!-- Summary Box -->
+    <rect x="60" y="950" width="960" height="200" rx="30" fill="white" stroke="#3F51B5" stroke-width="2" stroke-dasharray="10 5"/>
+    <foreignObject x="100" y="990" width="880" height="140">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: #1A237E; font-size: 24px; text-align: center; line-height: 1.6;">
+            بنیان دموکراسی نه در صندوق رای، بلکه در ذهن شهروندی نهفته است که می‌داند <strong style="color: #FF8F00;">صاحبِ حق</strong> است و در برابر سرنوشت خود <strong style="color: #FF8F00;">مسئول</strong>.
+        </div>
+    </foreignObject>
+
+    <!-- Slide ID -->
+    <circle cx="1020" cy="1300" r="30" fill="#3F51B5"/>
+    <text x="1020" y="1310" text-anchor="middle" font-family="'Vazirmatn', sans-serif" font-size="24" font-weight="bold" fill="white">۷۲</text>
+    </svg>
+    

@@ -166,6 +166,20 @@ const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || "@mahhdy57";
       `;
     }
 
+    // 6. MAIN TEXT (White Area) - RENDER HTML PROPERLY
+    let htmlContent = post.textHtml || post.text || "";
+
+    // Convert Markdown ## → HTML h3 (ONLY if no textHtml)
+    if (!post.textHtml && htmlContent.trim().startsWith("##")) {
+      htmlContent = htmlContent.replace(
+        /^##\s*(.*?)\r?\n/m,
+        '<h3 style="font-size:1.1em;font-weight:700;margin:0 0 0.8em 0;line-height:1.2;">$1</h3>',
+      );
+    }
+
+    html += `<div class="text-sm line-clamp-4 text-text-base dark:text-text-dark leading-relaxed mb-3 flex-1 post-content-compact" style="line-height:1.5;">${htmlContent}</div>`;
+
+    /*
     // 6. MAIN TEXT (White Area)
     let plainText = post.text || "";
     if (plainText.trim().startsWith("##")) {
@@ -175,7 +189,7 @@ const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || "@mahhdy57";
     }
     const content = escapeHtml(plainText);
     html += `<div class="text-sm line-clamp-4 text-text-base dark:text-text-dark leading-relaxed mb-3 flex-1 post-content-compact whitespace-pre-wrap">${content}</div>`;
-
+*/
     // Badges / Footer
     html += `
       <div class="flex items-center justify-between mt-auto pt-2 border-t border-border/30">

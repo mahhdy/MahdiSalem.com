@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <style>
+      @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+      * {
+        font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      }
+      .rtl {
+        direction: rtl;
+        text-align: right;
+      }
+      .center {
+        text-align: center;
+      }
+    </style>
+    
+    <!-- Gradients -->
+    <linearGradient id="navyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#303F9F;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="redBlueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C62828;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6A1B9A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F9A825;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F57F17;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="emeraldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2E7D32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#43A047;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A148C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6A1B9A;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="spectrumGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C62828;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2E7D32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Filters -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.2"/>
+    </filter>
+    
+    <filter id="shadowSmall" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.15"/>
+    </filter>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="#1A237E"/>
+                    <rect width="1080" height="1350" fill="url(#navyGradient)"/>
+  
+  <!-- Content -->
+  
+  <!-- Background with pattern -->
+  <circle cx="150" cy="200" r="250" fill="#C62828" opacity="0.1"/>
+  <circle cx="930" cy="1150" r="300" fill="#C62828" opacity="0.1"/>
+  
+  <!-- Quote marks -->
+  <text x="100" y="350" fill="#F9A825" font-size="200" opacity="0.3">«</text>
+  <text x="900" y="900" fill="#F9A825" font-size="200" opacity="0.3">»</text>
+  
+  <!-- Main quote card -->
+  <rect x="80" y="350" width="920" height="450" rx="24" fill="rgba(255,255,255,0.95)" filter="url(#shadow)"/>
+  
+  <!-- Quote text -->
+  <text x="540" y="450" text-anchor="middle" fill="#212121" font-size="36" font-weight="500">فیلسوفان تاکنون جهان را</text>
+  <text x="540" y="510" text-anchor="middle" fill="#212121" font-size="36" font-weight="500">فقط تفسیر کرده‌اند؛</text>
+  <text x="540" y="600" text-anchor="middle" fill="#C62828" font-size="42" font-weight="900">مسئله تغییر آن است.</text>
+  
+  <!-- Author -->
+  <line x1="400" y1="680" x2="680" y2="680" stroke="#F9A825" stroke-width="3"/>
+  <text x="540" y="740" text-anchor="middle" fill="#1A237E" font-size="28" font-weight="700">— کارل مارکس</text>
+  <text x="540" y="780" text-anchor="middle" fill="#616161" font-size="20">تزهایی دربارهٔ فوئرباخ، ۱۸۴۵</text>
+  
+  <!-- Context box -->
+  <rect x="80" y="870" width="920" height="200" rx="20" fill="#1A237E" filter="url(#shadowSmall)"/>
+  
+  <text x="540" y="930" text-anchor="middle" fill="#F9A825" font-size="24" font-weight="700">💡 چرا این جمله مهم است؟</text>
+  <text x="540" y="980" text-anchor="middle" fill="#FFFFFF" font-size="20">این جمله فلسفهٔ مارکس را خلاصه می‌کند:</text>
+  <text x="540" y="1020" text-anchor="middle" fill="#FFFFFF" font-size="20">هدف اندیشه، عمل است—نه فقط فهمیدن.</text>
+  <text x="540" y="1050" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="18">این ایده، جنبش‌های انقلابی قرن بیستم را شکل داد.</text>
+  
+  <!-- Call to action -->
+  <rect x="250" y="1130" width="580" height="70" rx="35" fill="#F9A825" filter="url(#shadowSmall)"/>
+  <text x="540" y="1175" text-anchor="middle" fill="#1A237E" font-size="24" font-weight="700">📖 فصل ۴: مارکسیسم چه می‌گوید؟</text>
+  
+  <!-- Footer -->
+  <text x="540" y="1280" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="18">نقل‌قول‌های بیشتر در کتاب</text>
+  <text x="540" y="1320" text-anchor="middle" fill="#F9A825" font-size="20">🔗 لینک در بیو</text>
+
+</svg>

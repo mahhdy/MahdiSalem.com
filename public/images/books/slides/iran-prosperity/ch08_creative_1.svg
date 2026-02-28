@@ -1,0 +1,67 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1080" height="1350" fill="#ECEFF1"/>
+    
+    <!-- Background Decor -->
+    <path d="M0,0 Q540,100 1080,0 L1080,1350 Q540,1250 0,1350 Z" fill="#263238" opacity="0.03"/>
+
+    <!-- Header -->
+    <rect x="0" y="0" width="1080" height="100" fill="#0D47A1"/>
+    <foreignObject x="0" y="0" width="1080" height="100">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: 'Vazirmatn', sans-serif; font-size: 36px; font-weight: 800; color: white; direction: rtl;">
+            فاز ۱: گذار — تثبیت و استقرار (۰ تا ۲۴ ماه)
+        </div>
+    </foreignObject>
+
+    <!-- Title -->
+    <text x="540" y="200" text-anchor="middle" font-family="'Vazirmatn'" font-size="52" font-weight="900" fill="#01579B">مثلث ثبات در ۲۴ ماه اول</text>
+
+    <!-- The Triangle -->
+    <g transform="translate(540, 650)">
+        <!-- Sides -->
+        <path d="M0,-350 L300,170 L-300,170 Z" fill="none" stroke="#01579B" stroke-width="15" stroke-linejoin="round"/>
+        
+        <!-- Nodes -->
+        <!-- Peak: Security (Order) -->
+        <circle cx="0" cy="-350" r="120" fill="#B71C1C" stroke="white" stroke-width="5"/>
+        <foreignObject x="-100" y="-410" width="200" height="120">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; color:white; font-family:'Vazirmatn'; text-align:center; direction:rtl;">
+                <div style="font-size:32px; font-weight:900;">امنیت</div>
+                <div style="font-size:16px;">حفظ نظم و مرزها</div>
+            </div>
+        </foreignObject>
+
+        <!-- Bottom Right: Economy (Livelihood) -->
+        <circle cx="300" cy="170" r="120" fill="#1B5E20" stroke="white" stroke-width="5"/>
+        <foreignObject x="200" y="110" width="200" height="120">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; color:white; font-family:'Vazirmatn'; text-align:center; direction:rtl;">
+                <div style="font-size:32px; font-weight:900;">معیشت</div>
+                <div style="font-size:16px;">رفاه ملموس و فوری</div>
+            </div>
+        </foreignObject>
+
+        <!-- Bottom Left: Legitimacy (Accord) -->
+        <circle cx="-300" cy="170" r="120" fill="#F9A825" stroke="white" stroke-width="5"/>
+        <foreignObject x="-400" y="110" width="200" height="120">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; color:white; font-family:'Vazirmatn'; text-align:center; direction:rtl;">
+                <div style="font-size:32px; font-weight:900;">مشروعیت</div>
+                <div style="font-size:16px;">وفاق و قانون‌گرایی</div>
+            </div>
+        </foreignObject>
+
+        <!-- Center Message -->
+        <text y="0" text-anchor="middle" font-family="'Vazirmatn'" font-size="28" font-weight="900" fill="#01579B">تعادل حیاتی</text>
+    </g>
+
+    <!-- Explanation Box -->
+    <rect x="60" y="1050" width="960" height="150" rx="30" fill="white" stroke="#01579B" stroke-width="2"/>
+    <foreignObject x="100" y="1080" width="880" height="100">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: #263238; font-size: 22px; text-align: center; line-height: 1.6;">
+            شکست در هر یک از این سه ضلع، کل فرآیند گذار را با خطر <strong style="color: #B71C1C;">فروپاشی</strong> یا <strong style="color: #B71C1C;">بازگشت استبداد</strong> مواجه می‌کند.
+        </div>
+    </foreignObject>
+
+    <!-- Slide ID -->
+    <circle cx="1020" cy="1300" r="30" fill="#0D47A1"/>
+    <text x="1020" y="1310" text-anchor="middle" font-family="'Vazirmatn', sans-serif" font-size="24" font-weight="bold" fill="white">۸۱</text>
+    </svg>
+    

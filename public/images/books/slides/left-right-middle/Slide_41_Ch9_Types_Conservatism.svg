@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad41" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1442"/>
+      <stop offset="100%" style="stop-color:#1A237E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad41)"/>
+
+  <foreignObject x="0" y="30" width="1080" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 40px; font-weight: 800; margin: 0;">
+        🏛️ ۴ چهره محافظه‌کاری
+      </h1>
+      <p style="color: #90CAF9; font-size: 20px; margin: 10px 0 0 0;">یک ایده، چهار تفسیر بسیار متفاوت</p>
+    </div>
+  </foreignObject>
+
+  <!-- Type 1: Traditional -->
+  <rect x="60" y="140" width="460" height="215" rx="20" fill="rgba(13,71,161,0.25)" stroke="#1565C0" stroke-width="2"/>
+  <foreignObject x="78" y="155" width="425" height="190">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="display: flex; align-items: center; margin-bottom: 10px;">
+        <span style="font-size: 32px; margin-left: 12px;">📜</span>
+        <h3 style="color: #64B5F6; font-size: 24px; margin: 0;">محافظه‌کاری سنتی</h3>
+      </div>
+      <p style="color: #E0E0E0; font-size: 17px; line-height: 1.7; margin: 0;">
+        ✦ سنت و نهادهای تاریخی مقدس‌اند<br/>
+        ✦ تغییر باید تدریجی باشد<br/>
+        ✦ اشرافیت طبیعی وجود دارد
+      </p>
+      <p style="color: #64B5F6; font-size: 15px; margin-top: 10px;">👤 ادموند برک | مایکل اوکشات</p>
+    </div>
+  </foreignObject>
+
+  <!-- Type 2: Religious -->
+  <rect x="560" y="140" width="460" height="215" rx="20" fill="rgba(136,14,79,0.25)" stroke="#AD1457" stroke-width="2"/>
+  <foreignObject x="578" y="155" width="425" height="190">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="display: flex; align-items: center; margin-bottom: 10px;">
+        <span style="font-size: 32px; margin-left: 12px;">⛪</span>
+        <h3 style="color: #F48FB1; font-size: 24px; margin: 0;">محافظه‌کاری مذهبی</h3>
+      </div>
+      <p style="color: #E0E0E0; font-size: 17px; line-height: 1.7; margin: 0;">
+        ✦ ارزش‌های دینی پایه جامعه‌اند<br/>
+        ✦ خانواده سنتی باید حفظ شود<br/>
+        ✦ اخلاق مطلق (نه نسبی)
+      </p>
+      <p style="color: #F48FB1; font-size: 15px; margin-top: 10px;">👤 راست مسیحی آمریکا | دو مِستر</p>
+    </div>
+  </foreignObject>
+
+  <!-- Type 3: Fiscal -->
+  <rect x="60" y="385" width="460" height="215" rx="20" fill="rgba(46,125,50,0.25)" stroke="#4CAF50" stroke-width="2"/>
+  <foreignObject x="78" y="400" width="425" height="190">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="display: flex; align-items: center; margin-bottom: 10px;">
+        <span style="font-size: 32px; margin-left: 12px;">💰</span>
+        <h3 style="color: #81C784; font-size: 24px; margin: 0;">محافظه‌کاری مالی</h3>
+      </div>
+      <p style="color: #E0E0E0; font-size: 17px; line-height: 1.7; margin: 0;">
+        ✦ بودجه متعادل + مالیات پایین<br/>
+        ✦ دولت کوچک + بازار آزاد<br/>
+        ✦ مخالف هزینه‌کرد دولتی
+      </p>
+      <p style="color: #81C784; font-size: 15px; margin-top: 10px;">👤 ریگان | تاچر | حزب جمهوری‌خواه</p>
+    </div>
+  </foreignObject>
+
+  <!-- Type 4: Neoconservatism -->
+  <rect x="560" y="385" width="460" height="215" rx="20" fill="rgba(230,81,0,0.25)" stroke="#FF9800" stroke-width="2"/>
+  <foreignObject x="578" y="400" width="425" height="190">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="display: flex; align-items: center; margin-bottom: 10px;">
+        <span style="font-size: 32px; margin-left: 12px;">🦅</span>
+        <h3 style="color: #FFB74D; font-size: 24px; margin: 0;">نومحافظه‌کاری</h3>
+      </div>
+      <p style="color: #E0E0E0; font-size: 17px; line-height: 1.7; margin: 0;">
+        ✦ صدور دموکراسی (با زور!)<br/>
+        ✦ قدرت نظامی = امنیت<br/>
+        ✦ رهبری آمریکا بر جهان
+      </p>
+      <p style="color: #FFB74D; font-size: 15px; margin-top: 10px;">👤 کریستول | ولفوویتز | بوش پسر</p>
+    </div>
+  </foreignObject>
+
+  <!-- Paradox Box -->
+  <rect x="100" y="635" width="880" height="150" rx="20" fill="rgba(249,168,37,0.1)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="120" y="652" width="840" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; font-weight: 700; margin: 0 0 12px 0;">🤔 پارادوکس محافظه‌کاری</p>
+      <p style="color: #FFFFFF; font-size: 22px; line-height: 1.7; margin: 0;">
+        محافظه‌کار سنتی می‌گوید: <strong style="color: #64B5F6;">دخالت نکن!</strong><br/>
+        نومحافظه‌کار می‌گوید: <strong style="color: #FFB74D;">با لشکرکشی دموکراسی صادر کن!</strong><br/>
+        اینها چطور هر دو «محافظه‌کار»اند؟
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Quote -->
+  <rect x="220" y="820" width="640" height="90" rx="16" fill="#0D47A1"/>
+  <foreignObject x="235" y="835" width="610" height="65">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 22px; font-style: italic; margin: 0;">
+        «محافظه‌کاری ایدئولوژی ندارد؛ بلکه ضد ایدئولوژی است»
+      </p>
+      <p style="color: #F9A825; font-size: 16px; margin: 5px 0 0 0;">— مایکل اوکشات</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="945" width="1080" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۹ | اسلاید ۳ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

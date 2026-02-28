@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#16213E"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD54F"/>
+      <stop offset="100%" style="stop-color:#F9A825"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad3)"/>
+  
+  <!-- Decorative Lines -->
+  <line x1="540" y1="0" x2="540" y2="150" stroke="#F9A825" stroke-width="2" opacity="0.5"/>
+  <line x1="540" y1="930" x2="540" y2="1080" stroke="#F9A825" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Chapter Badge -->
+  <rect x="390" y="60" width="300" height="50" rx="25" fill="none" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="390" y="65" width="300" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; margin: 0;">فصل اول</p>
+    </div>
+  </foreignObject>
+  
+  <!-- Hero Year -->
+  <foreignObject x="0" y="140" width="1080" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 160px; font-weight: 900; margin: 0; text-shadow: 0 0 60px rgba(249,168,37,0.5);">
+        ۱۷۸۹
+      </h1>
+    </div>
+  </foreignObject>
+  
+  <!-- Subtitle -->
+  <foreignObject x="100" y="340" width="880" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #B0BEC5; font-size: 28px; letter-spacing: 3px; margin: 0;">
+        پاریس | مجلس ملی فرانسه
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Main Story Card -->
+  <rect x="80" y="440" width="920" height="320" rx="20" fill="rgba(255,255,255,0.05)" stroke="rgba(249,168,37,0.3)" stroke-width="1"/>
+  <foreignObject x="100" y="460" width="880" height="290">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      
+      <h2 style="color: #FFFFFF; font-size: 36px; font-weight: 700; margin-bottom: 25px;">
+        🏛️ یک تصمیم ساده که تاریخ را تغییر داد
+      </h2>
+      
+      <p style="color: #CFD8DC; font-size: 26px; line-height: 2;">
+        نمایندگان مجلس باید جایی می‌نشستند...<br/>
+        <span style="color: #EF5350;">هواداران شاه</span> نشستند <strong style="color: #FFFFFF;">سمت راست</strong><br/>
+        <span style="color: #42A5F5;">انقلابیون</span> نشستند <strong style="color: #FFFFFF;">سمت چپ</strong>
+      </p>
+      
+      <p style="color: #F9A825; font-size: 30px; font-weight: 700; margin-top: 25px;">
+        و این‌گونه واژگان «چپ» و «راست» متولد شدند!
+      </p>
+      
+    </div>
+  </foreignObject>
+  
+  <!-- Question Box -->
+  <rect x="200" y="800" width="680" height="100" rx="15" fill="#1A237E" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="200" y="815" width="680" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 26px; margin: 0;">
+        ❓ اما آیا این تقسیم‌بندی هنوز معنا دارد؟
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Footer -->
+  <foreignObject x="0" y="1020" width="1080" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">
+        📖 زایش طیف سیاسی | اسلاید ۳ از ۵
+      </p>
+    </div>
+  </foreignObject>
+  
+</svg>

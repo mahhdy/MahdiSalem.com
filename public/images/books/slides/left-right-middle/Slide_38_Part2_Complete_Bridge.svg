@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad38" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7B1FA2"/>
+      <stop offset="100%" style="stop-color:#4A148C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad38)"/>
+  <circle cx="950" cy="120" r="100" fill="#F9A825" opacity="0.06"/>
+  <circle cx="130" cy="960" r="120" fill="#F9A825" opacity="0.06"/>
+
+  <foreignObject x="0" y="35" width="1080" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 38px; font-weight: 800; margin: 0;">
+        ✅ پایان بخش دوم: نقشه کامل جهان چپ
+      </h1>
+    </div>
+  </foreignObject>
+
+  <!-- 5 Chapter Cards -->
+  <rect x="60" y="125" width="185" height="280" rx="16" fill="rgba(211,47,47,0.2)" stroke="#D32F2F" stroke-width="2"/>
+  <foreignObject x="65" y="135" width="175" height="260">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 36px; margin: 0;">🌹</p>
+      <p style="color: #F9A825; font-size: 16px; font-weight: 700; margin: 8px 0;">فصل ۴</p>
+      <h3 style="color: #FFFFFF; font-size: 18px; margin: 0 0 8px 0;">سوسیالیسم</h3>
+      <p style="color: #FFCDD2; font-size: 13px; line-height: 1.5; margin: 0;">
+        مالکیت اجتماعی<br/>
+        تخیلی ← علمی<br/>
+        اوون | سن‌سیمون<br/>
+        مارکس | انگلس
+      </p>
+    </div>
+  </foreignObject>
+
+  <rect x="260" y="125" width="185" height="280" rx="16" fill="rgba(183,28,28,0.2)" stroke="#B71C1C" stroke-width="2"/>
+  <foreignObject x="265" y="135" width="175" height="260">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 36px; margin: 0;">☭</p>
+      <p style="color: #F9A825; font-size: 16px; font-weight: 700; margin: 8px 0;">فصل ۵</p>
+      <h3 style="color: #FFFFFF; font-size: 18px; margin: 0 0 8px 0;">کمونیسم</h3>
+      <p style="color: #FFCDD2; font-size: 13px; line-height: 1.5; margin: 0;">
+        جامعه بی‌طبقه<br/>
+        لنین | مائو | کاسترو<br/>
+        نظریه vs واقعیت<br/>
+        ۱۰۰ میلیون قربانی
+      </p>
+    </div>
+  </foreignObject>
+
+  <rect x="460" y="125" width="185" height="280" rx="16" fill="rgba(33,33,33,0.5)" stroke="#616161" stroke-width="2"/>
+  <foreignObject x="465" y="135" width="175" height="260">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 36px; margin: 0;">Ⓐ</p>
+      <p style="color: #F9A825; font-size: 16px; font-weight: 700; margin: 8px 0;">فصل ۶</p>
+      <h3 style="color: #FFFFFF; font-size: 18px; margin: 0 0 8px 0;">آنارشیسم</h3>
+      <p style="color: #BDBDBD; font-size: 13px; line-height: 1.5; margin: 0;">
+        نه خدا نه ارباب<br/>
+        ۶ گرایش اصلی<br/>
+        باکونین | کروپوتکین<br/>
+        اسپانیا | روژاوا
+      </p>
+    </div>
+  </foreignObject>
+
+  <rect x="660" y="125" width="185" height="280" rx="16" fill="rgba(233,30,99,0.15)" stroke="#E91E63" stroke-width="2"/>
+  <foreignObject x="665" y="135" width="175" height="260">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 36px; margin: 0;">🗳️</p>
+      <p style="color: #F9A825; font-size: 16px; font-weight: 700; margin: 8px 0;">فصل ۷</p>
+      <h3 style="color: #FFFFFF; font-size: 18px; margin: 0 0 8px 0;">سوسیال‌دموکراسی</h3>
+      <p style="color: #F8BBD0; font-size: 13px; line-height: 1.5; margin: 0;">
+        سوسیالیسم بدون انقلاب<br/>
+        مدل اسکاندیناوی<br/>
+        برنشتاین | دولت رفاه<br/>
+        ۶ ستون اصلی
+      </p>
+    </div>
+  </foreignObject>
+
+  <rect x="860" y="125" width="160" height="280" rx="16" fill="rgba(123,31,162,0.25)" stroke="#9C27B0" stroke-width="2"/>
+  <foreignObject x="865" y="135" width="150" height="260">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 36px; margin: 0;">✊</p>
+      <p style="color: #F9A825; font-size: 16px; font-weight: 700; margin: 8px 0;">فصل ۸</p>
+      <h3 style="color: #FFFFFF; font-size: 18px; margin: 0 0 8px 0;">چپ نو</h3>
+      <p style="color: #CE93D8; font-size: 13px; line-height: 1.5; margin: 0;">
+        فراتر از طبقه<br/>
+        هویت | فرهنگ<br/>
+        گرامشی | فوکو<br/>
+        جنبش‌های نوین
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Key Insight -->
+  <rect x="70" y="435" width="940" height="140" rx="20" fill="rgba(249,168,37,0.1)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="90" y="452" width="900" height="115">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; font-weight: 700; margin: 0 0 12px 0;">
+        🧭 نقشه جهان چپ: از رادیکال تا میانه
+      </p>
+      <div style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap;">
+        <span style="background: #B71C1C; color: white; padding: 8px 16px; border-radius: 16px; font-size: 16px;">کمونیسم</span>
+        <span style="color: #F9A825; font-size: 20px;">←</span>
+        <span style="background: #212121; color: white; padding: 8px 16px; border-radius: 16px; font-size: 16px;">آنارشیسم</span>
+        <span style="color: #F9A825; font-size: 20px;">←</span>
+        <span style="background: #D32F2F; color: white; padding: 8px 16px; border-radius: 16px; font-size: 16px;">سوسیالیسم</span>
+        <span style="color: #F9A825; font-size: 20px;">←</span>
+        <span style="background: #E91E63; color: white; padding: 8px 16px; border-radius: 16px; font-size: 16px;">سوسیال‌دموکراسی</span>
+        <span style="color: #F9A825; font-size: 20px;">←</span>
+        <span style="background: #9C27B0; color: white; padding: 8px 16px; border-radius: 16px; font-size: 16px;">چپ نو</span>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Bridge to Part 3: World of Right -->
+  <rect x="70" y="610" width="940" height="260" rx="22" fill="#0D47A1"/>
+  <foreignObject x="90" y="630" width="900" height="230">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #90CAF9; font-size: 22px; margin: 0 0 12px 0;">🔜 بخش سوم</p>
+      <h2 style="color: #FFFFFF; font-size: 50px; font-weight: 900; margin: 0 0 15px 0;">
+        🔵 جهان راست
+      </h2>
+      <p style="color: #BBDEFB; font-size: 24px; line-height: 1.7; margin: 0 0 20px 0;">
+        محافظه‌کاری | لیبرالیسم کلاسیک | نئولیبرالیسم<br/>
+        لیبرتارینیسم | ناسیونالیسم | راست نو
+      </p>
+      <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+        <span style="background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 18px; color: #FFFFFF; font-size: 17px;">ادموند برک</span>
+        <span style="background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 18px; color: #FFFFFF; font-size: 17px;">آدام اسمیت</span>
+        <span style="background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 18px; color: #FFFFFF; font-size: 17px;">هایک</span>
+        <span style="background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 18px; color: #FFFFFF; font-size: 17px;">فریدمن</span>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- CTA -->
+  <rect x="300" y="910" width="480" height="72" rx="36" fill="#F9A825"/>
+  <foreignObject x="310" y="924" width="460" height="48">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #0D47A1; font-size: 26px; font-weight: 700; margin: 0;">
+        ⬅️ وارد جهان راست شو
+      </p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="1015" width="1080" height="55">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 20px; margin: 0;">
+        🔖 ذخیره | 💬 کدام چپ به تو نزدیک‌تر بود؟ | ↗️ اشتراک
+      </p>
+    </div>
+  </foreignObject>
+
+</svg>

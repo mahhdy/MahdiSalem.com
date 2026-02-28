@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad15" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B5E20"/>
+      <stop offset="100%" style="stop-color:#2E7D32"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad15)"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="80" fill="#F9A825" opacity="0.1"/>
+  <circle cx="980" cy="980" r="100" fill="#F9A825" opacity="0.1"/>
+  
+  <!-- Title -->
+  <foreignObject x="0" y="50" width="1080" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 42px; font-weight: 800; margin: 0;">
+        ✅ پایان بخش اول: مبانی و مفاهیم
+      </h1>
+    </div>
+  </foreignObject>
+  
+  <!-- Summary Box -->
+  <rect x="80" y="170" width="920" height="350" rx="25" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <foreignObject x="100" y="190" width="880" height="320">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h2 style="color: #FFFFFF; font-size: 32px; margin: 0 0 25px 0;">
+        📚 در سه فصل اول چه آموختیم؟
+      </h2>
+      
+      <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+        <div style="text-align: center; padding: 15px;">
+          <div style="width: 80px; height: 80px; background: #F9A825; border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 36px;">🏛️</span>
+          </div>
+          <p style="color: #F9A825; font-size: 20px; font-weight: 700; margin: 0;">فصل ۱</p>
+          <p style="color: #C8E6C9; font-size: 16px; margin: 8px 0 0 0;">زایش طیف سیاسی<br/>در انقلاب فرانسه</p>
+        </div>
+        
+        <div style="text-align: center; padding: 15px;">
+          <div style="width: 80px; height: 80px; background: #F9A825; border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 36px;">🧠</span>
+          </div>
+          <p style="color: #F9A825; font-size: 20px; font-weight: 700; margin: 0;">فصل ۲</p>
+          <p style="color: #C8E6C9; font-size: 16px; margin: 8px 0 0 0;">ریشه‌های فلسفی<br/>و معرفت‌شناختی</p>
+        </div>
+        
+        <div style="text-align: center; padding: 15px;">
+          <div style="width: 80px; height: 80px; background: #F9A825; border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 36px;">💰</span>
+          </div>
+          <p style="color: #F9A825; font-size: 20px; font-weight: 700; margin: 0;">فصل ۳</p>
+          <p style="color: #C8E6C9; font-size: 16px; margin: 8px 0 0 0;">جدال اقتصادی<br/>بازار vs دولت</p>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+  
+  <!-- Next Section Preview -->
+  <rect x="80" y="560" width="920" height="280" rx="25" fill="#E53935"/>
+  <foreignObject x="100" y="580" width="880" height="250">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFCDD2; font-size: 22px; margin: 0 0 15px 0;">🔜 بخش دوم</p>
+      <h2 style="color: #FFFFFF; font-size: 48px; font-weight: 900; margin: 0;">
+        جهان چپ
+      </h2>
+      <p style="color: #FFCDD2; font-size: 24px; margin: 20px 0; line-height: 1.8;">
+        سوسیالیسم | کمونیسم | آنارشیسم<br/>
+        سوسیال‌دموکراسی | چپ نو
+      </p>
+      <div style="display: flex; justify-content: center; gap: 20px; margin-top: 15px;">
+        <span style="background: rgba(255,255,255,0.2); padding: 8px 20px; border-radius: 20px; color: #FFFFFF; font-size: 18px;">مارکس</span>
+        <span style="background: rgba(255,255,255,0.2); padding: 8px 20px; border-radius: 20px; color: #FFFFFF; font-size: 18px;">لنین</span>
+        <span style="background: rgba(255,255,255,0.2); padding: 8px 20px; border-radius: 20px; color: #FFFFFF; font-size: 18px;">گرامشی</span>
+        <span style="background: rgba(255,255,255,0.2); padding: 8px 20px; border-radius: 20px; color: #FFFFFF; font-size: 18px;">چامسکی</span>
+      </div>
+    </div>
+  </foreignObject>
+  
+  <!-- CTA -->
+  <rect x="300" y="880" width="480" height="80" rx="40" fill="#F9A825"/>
+  <foreignObject x="310" y="895" width="460" height="55">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1A237E; font-size: 28px; font-weight: 700; margin: 0;">
+        ⬅️ وارد جهان چپ شو
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Footer -->
+  <foreignObject x="0" y="1000" width="1080" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 20px; margin: 0;">
+        🔖 ذخیره کن | 💬 سؤالت رو بپرس | ↗️ برای دوستات بفرست
+      </p>
+    </div>
+  </foreignObject>
+  
+</svg>

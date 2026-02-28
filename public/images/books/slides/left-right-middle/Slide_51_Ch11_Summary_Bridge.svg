@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad51" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E65100"/>
+      <stop offset="100%" style="stop-color:#FF6F00"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad51)"/>
+
+  <foreignObject x="0" y="40" width="1080" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 40px; font-weight: 800; margin: 0;">📌 جمع‌بندی فصل ۱۱: لیبرتارینیسم</h1>
+    </div>
+  </foreignObject>
+
+  <rect x="70" y="130" width="940" height="340" rx="22" fill="rgba(0,0,0,0.25)"/>
+  <foreignObject x="90" y="148" width="900" height="310">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="padding: 13px 16px; background: rgba(255,255,255,0.1); border-right: 4px solid #F9A825; border-radius: 10px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">① لیبرتارینیسم = <strong style="color: #F9A825;">حداکثر آزادی + حداقل دولت</strong></p>
+      </div>
+      <div style="padding: 13px 16px; background: rgba(255,255,255,0.1); border-right: 4px solid #4CAF50; border-radius: 10px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">② سه طیف: <strong style="color: #4CAF50;">ملایم (فریدمن)</strong> → <strong style="color: #FF9800;">مینارکیسم (نوزیک)</strong> → <strong style="color: #D32F2F;">آنارکو-کاپ (راتبارد)</strong></p>
+      </div>
+      <div style="padding: 13px 16px; background: rgba(255,255,255,0.1); border-right: 4px solid #CE93D8; border-radius: 10px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">③ نوزیک vs رالز: <strong style="color: #CE93D8;">عدالت فرآیندی</strong> vs <strong style="color: #CE93D8;">عدالت توزیعی</strong></p>
+      </div>
+      <div style="padding: 13px 16px; background: rgba(255,255,255,0.1); border-right: 4px solid #EF9A9A; border-radius: 10px;">
+        <p style="color: #FFFFFF; font-size: 19px; margin: 0;">④ نقد اصلی: آیا بدون دولت واقعاً آزادی بیشتر است یا <strong style="color: #EF9A9A;">حکومت شرکت‌ها</strong>؟</p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Bridge -->
+  <rect x="70" y="505" width="940" height="250" rx="22" fill="#4E342E"/>
+  <foreignObject x="90" y="525" width="900" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #BCAAA4; font-size: 20px; margin: 0 0 12px 0;">🔜 فصل بعدی</p>
+      <h2 style="color: #FFFFFF; font-size: 42px; font-weight: 900; margin: 0 0 15px 0;">
+        فصل ۱۲: ناسیونالیسم و راست افراطی
+      </h2>
+      <p style="color: #D7CCC8; font-size: 22px; line-height: 1.7; margin: 0;">
+        وقتی «ملت» جای «فرد» یا «طبقه» می‌نشیند...<br/>
+        از وطن‌پرستی تا <strong style="color: #F9A825;">فاشیسم</strong>: مرز کجاست؟
+      </p>
+      <div style="display: flex; justify-content: center; gap: 15px; margin-top: 15px;">
+        <span style="background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 18px; color: #FFFFFF; font-size: 16px;">ناسیونالیسم</span>
+        <span style="background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 18px; color: #FFFFFF; font-size: 16px;">فاشیسم</span>
+        <span style="background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 18px; color: #FFFFFF; font-size: 16px;">نازیسم</span>
+        <span style="background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 18px; color: #FFFFFF; font-size: 16px;">راست افراطی</span>
+      </div>
+    </div>
+  </foreignObject>
+
+  <rect x="300" y="795" width="480" height="72" rx="36" fill="#F9A825"/>
+  <foreignObject x="310" y="808" width="460" height="48">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #4E342E; font-size: 26px; font-weight: 700; margin: 0;">⬅️ تاریک‌ترین فصل کتاب</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="910" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 20px; margin: 0;">
+        🔖 ذخیره | 💬 لیبرتارین هستی یا نه؟ | ↗️ اشتراک
+      </p>
+    </div>
+  </foreignObject>
+
+</svg>

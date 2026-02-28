@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E"/>
+      <stop offset="50%" style="stop-color:#283593"/>
+      <stop offset="100%" style="stop-color:#1A237E"/>
+    </linearGradient>
+    <radialGradient id="spotlight" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:rgba(249,168,37,0.2)"/>
+      <stop offset="100%" style="stop-color:rgba(249,168,37,0)"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad5)"/>
+  <rect width="1080" height="1080" fill="url(#spotlight)"/>
+  
+  <!-- Decorative Circles -->
+  <circle cx="150" cy="150" r="100" fill="none" stroke="#F9A825" stroke-width="1" opacity="0.2"/>
+  <circle cx="930" cy="930" r="80" fill="none" stroke="#F9A825" stroke-width="1" opacity="0.2"/>
+  <circle cx="900" cy="200" r="60" fill="none" stroke="#2E7D32" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Main Question -->
+  <foreignObject x="80" y="150" width="920" height="300">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      
+      <p style="color: #F9A825; font-size: 28px; letter-spacing: 5px; margin-bottom: 20px;">
+        ◆ سؤالات کلیدی ◆
+      </p>
+      
+      <h1 style="color: #FFFFFF; font-size: 48px; font-weight: 800; line-height: 1.6; margin: 0;">
+        آیا طیف چپ-راست<br/>
+        <span style="color: #F9A825;">منسوخ شده است؟</span>
+      </h1>
+      
+    </div>
+  </foreignObject>
+  
+  <!-- Question Cards -->
+  <rect x="80" y="480" width="440" height="140" rx="15" fill="rgba(255,255,255,0.08)" stroke="rgba(249,168,37,0.3)" stroke-width="1"/>
+  <foreignObject x="100" y="500" width="400" height="110">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 20px; margin: 0 0 10px 0;">🤔 سؤال اول</p>
+      <p style="color: #FFFFFF; font-size: 24px; margin: 0;">چرا یک نفر می‌تواند در اقتصاد چپ و در فرهنگ راست باشد؟</p>
+    </div>
+  </foreignObject>
+  
+  <rect x="560" y="480" width="440" height="140" rx="15" fill="rgba(255,255,255,0.08)" stroke="rgba(46,125,50,0.3)" stroke-width="1"/>
+  <foreignObject x="580" y="500" width="400" height="110">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #2E7D32; font-size: 20px; margin: 0 0 10px 0;">🧭 سؤال دوم</p>
+      <p style="color: #FFFFFF; font-size: 24px; margin: 0;">لیبرتارین چپ است یا راست؟ پوپولیست چطور؟</p>
+    </div>
+  </foreignObject>
+  
+  <rect x="80" y="650" width="920" height="140" rx="15" fill="rgba(255,255,255,0.08)" stroke="rgba(249,168,37,0.5)" stroke-width="2"/>
+  <foreignObject x="100" y="670" width="880" height="110">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 20px; margin: 0 0 10px 0;">🌍 سؤال اساسی</p>
+      <p style="color: #FFFFFF; font-size: 28px; margin: 0;">آیا تجربه سیاسی ایران و شرق در این طیف جا می‌گیرد؟</p>
+    </div>
+  </foreignObject>
+  
+  <!-- CTA Box -->
+  <rect x="200" y="840" width="680" height="120" rx="20" fill="#F9A825"/>
+  <foreignObject x="200" y="855" width="680" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1A237E; font-size: 32px; font-weight: 800; margin: 0 0 10px 0;">
+        📖 پاسخ‌ها در کتاب طیف سیاسی
+      </p>
+      <p style="color: #1A237E; font-size: 22px; margin: 0; opacity: 0.8;">
+        ۱۷ فصل | ۱۰۰ چهره کلیدی | نگاهی جامع
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Footer -->
+  <foreignObject x="0" y="1010" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 20px; margin: 0;">
+        🔖 ذخیره کن | 💬 نظرت چیه؟ | ↗️ اشتراک بذار
+      </p>
+    </div>
+  </foreignObject>
+  
+</svg>

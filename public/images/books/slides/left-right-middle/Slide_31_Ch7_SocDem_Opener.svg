@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad31" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#880E4F"/>
+      <stop offset="50%" style="stop-color:#AD1457"/>
+      <stop offset="100%" style="stop-color:#C2185B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad31)"/>
+
+  <circle cx="900" cy="200" r="150" fill="#F9A825" opacity="0.06"/>
+  <circle cx="180" cy="900" r="120" fill="#F9A825" opacity="0.06"/>
+
+  <rect x="340" y="70" width="400" height="55" rx="27" fill="none" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="340" y="78" width="400" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; margin: 0;">فصل هفتم | سوسیال‌دموکراسی</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="60" y="170" width="960" height="280">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 58px; font-weight: 900; line-height: 1.4;">
+        🌹 سوسیالیسم<br/>
+        <span style="color: #F9A825;">بدون انقلاب</span>
+      </h1>
+      <p style="color: #F8BBD0; font-size: 28px; margin-top: 30px;">
+        آیا می‌شود از صندوق رأی به عدالت رسید؟
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Key Stats -->
+  <rect x="80" y="480" width="280" height="180" rx="18" fill="rgba(255,255,255,0.1)"/>
+  <foreignObject x="90" y="495" width="260" height="155">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 62px; font-weight: 900; margin: 0;">🇸🇪</p>
+      <p style="color: #FFFFFF; font-size: 22px; margin: 10px 0 5px 0;">سوئد</p>
+      <p style="color: #F8BBD0; font-size: 16px; margin: 0;">شاخص توسعه: رتبه ۷ جهان<br/>ضریب جینی: ۰.۲۵ (کم‌ترین نابرابری)</p>
+    </div>
+  </foreignObject>
+
+  <rect x="400" y="480" width="280" height="180" rx="18" fill="rgba(255,255,255,0.1)"/>
+  <foreignObject x="410" y="495" width="260" height="155">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 62px; font-weight: 900; margin: 0;">🇩🇰</p>
+      <p style="color: #FFFFFF; font-size: 22px; margin: 10px 0 5px 0;">دانمارک</p>
+      <p style="color: #F8BBD0; font-size: 16px; margin: 0;">شادترین کشور جهان<br/>مالیات: ۵۵٪ | بهداشت: رایگان</p>
+    </div>
+  </foreignObject>
+
+  <rect x="720" y="480" width="280" height="180" rx="18" fill="rgba(255,255,255,0.1)"/>
+  <foreignObject x="730" y="495" width="260" height="155">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 62px; font-weight: 900; margin: 0;">🇫🇮</p>
+      <p style="color: #FFFFFF; font-size: 22px; margin: 10px 0 5px 0;">فنلاند</p>
+      <p style="color: #F8BBD0; font-size: 16px; margin: 0;">بهترین آموزش جهان<br/>درآمد سرانه: ۵۳,۰۰۰$</p>
+    </div>
+  </foreignObject>
+
+  <!-- Key Question -->
+  <rect x="100" y="700" width="880" height="150" rx="22" fill="rgba(0,0,0,0.3)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="120" y="718" width="840" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; font-weight: 700; margin: 0 0 12px 0;">❓ سؤال‌های اساسی</p>
+      <p style="color: #FFFFFF; font-size: 24px; line-height: 1.7; margin: 0;">
+        آیا اسکاندیناوی <strong style="color: #F9A825;">سوسیالیست</strong> است؟<br/>
+        تفاوت سوسیال‌دموکراسی با <strong style="color: #F9A825;">کمونیسم</strong> چیست؟
+      </p>
+    </div>
+  </foreignObject>
+
+  <rect x="330" y="890" width="420" height="68" rx="34" fill="#F9A825"/>
+  <foreignObject x="340" y="903" width="400" height="48">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #880E4F; font-size: 26px; font-weight: 700; margin: 0;">⬅️ تاریخچه و اصول</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="1000" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۷ | اسلاید ۱ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

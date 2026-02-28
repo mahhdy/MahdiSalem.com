@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad44" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B5E20"/>
+      <stop offset="50%" style="stop-color:#2E7D32"/>
+      <stop offset="100%" style="stop-color:#388E3C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad44)"/>
+
+  <circle cx="900" cy="200" r="130" fill="#F9A825" opacity="0.06"/>
+  <circle cx="180" cy="880" r="100" fill="#F9A825" opacity="0.06"/>
+
+  <rect x="310" y="60" width="460" height="55" rx="27" fill="none" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="310" y="68" width="460" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; margin: 0;">فصل دهم | لیبرالیسم و نئولیبرالیسم</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="60" y="160" width="960" height="250">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 52px; font-weight: 900; line-height: 1.4;">
+        ❓ «لیبرال» یعنی <span style="color: #F9A825;">چپ</span><br/>
+        یا <span style="color: #F9A825;">راست</span>؟
+      </h1>
+      <p style="color: #C8E6C9; font-size: 26px; margin-top: 25px;">
+        سردرگم‌کننده‌ترین واژه در سیاست!
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Two Meanings -->
+  <rect x="60" y="430" width="460" height="250" rx="22" fill="rgba(255,255,255,0.1)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="80" y="448" width="420" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 42px; margin: 0;">🇺🇸</p>
+      <h3 style="color: #F9A825; font-size: 26px; margin: 10px 0;">در آمریکا</h3>
+      <p style="color: #FFFFFF; font-size: 20px; line-height: 1.7; margin: 0;">
+        لیبرال = <strong style="color: #EF5350;">چپ</strong><br/>
+        طرفدار دولت رفاه<br/>
+        حقوق اقلیت‌ها<br/>
+        مثال: حزب دموکرات
+      </p>
+    </div>
+  </foreignObject>
+
+  <rect x="560" y="430" width="460" height="250" rx="22" fill="rgba(255,255,255,0.1)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="580" y="448" width="420" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 42px; margin: 0;">🇪🇺</p>
+      <h3 style="color: #F9A825; font-size: 26px; margin: 10px 0;">در اروپا</h3>
+      <p style="color: #FFFFFF; font-size: 20px; line-height: 1.7; margin: 0;">
+        لیبرال = <strong style="color: #42A5F5;">راست</strong><br/>
+        طرفدار بازار آزاد<br/>
+        ضد دخالت دولت<br/>
+        مثال: FDP آلمان
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Key Insight -->
+  <rect x="120" y="720" width="840" height="140" rx="20" fill="rgba(0,0,0,0.3)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="140" y="738" width="800" height="110">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; font-weight: 700; margin: 0 0 12px 0;">💡 کلید حل این سردرگمی</p>
+      <p style="color: #FFFFFF; font-size: 22px; line-height: 1.7; margin: 0;">
+        <strong style="color: #F9A825;">لیبرالیسم کلاسیک</strong> (لاک، اسمیت) = آزادی فردی + بازار آزاد = <strong>راست</strong><br/>
+        <strong style="color: #F9A825;">لیبرالیسم اجتماعی</strong> (میل، رالز) = آزادی + عدالت = <strong>چپ‌تر</strong>
+      </p>
+    </div>
+  </foreignObject>
+
+  <rect x="330" y="900" width="420" height="68" rx="34" fill="#F9A825"/>
+  <foreignObject x="340" y="913" width="400" height="48">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1B5E20; font-size: 26px; font-weight: 700; margin: 0;">⬅️ تاریخچه و انواع</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="1005" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۱۰ | اسلاید ۱ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="leftSide24" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A148C"/>
+      <stop offset="100%" style="stop-color:#6A1B9A"/>
+    </linearGradient>
+    <linearGradient id="rightSide24" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B71C1C"/>
+      <stop offset="100%" style="stop-color:#C62828"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left (Theory) -->
+  <rect x="0" y="0" width="540" height="1080" fill="url(#leftSide24)"/>
+  <!-- Right (Reality) -->
+  <rect x="540" y="0" width="540" height="1080" fill="url(#rightSide24)"/>
+
+  <!-- Center Gold Divider -->
+  <rect x="528" y="0" width="24" height="1080" fill="#F9A825"/>
+  <foreignObject x="498" y="490" width="84" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1A237E; font-size: 30px; font-weight: 900; margin: 0; background: #F9A825; padding: 10px 6px; border-radius: 8px;">VS</p>
+    </div>
+  </foreignObject>
+
+  <!-- Header -->
+  <foreignObject x="0" y="40" width="1080" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 42px; font-weight: 900; margin: 0; text-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+        کمونیسم در نظر و عمل
+      </h1>
+    </div>
+  </foreignObject>
+
+  <!-- LEFT: Theory Side -->
+  <foreignObject x="20" y="140" width="490" height="820">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #CE93D8; font-size: 30px; font-weight: 800; margin: 0 0 30px 0;">✨ در نظریه</p>
+
+      <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 18px; margin-bottom: 16px;">
+        <p style="color: #E1BEE7; font-size: 18px; margin: 0;">🏙️ جامعه بی‌طبقه<br/>همه برابرند</p>
+      </div>
+      <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 18px; margin-bottom: 16px;">
+        <p style="color: #E1BEE7; font-size: 18px; margin: 0;">🏛️ دولت محو می‌شود<br/>مردم خودگردانند</p>
+      </div>
+      <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 18px; margin-bottom: 16px;">
+        <p style="color: #E1BEE7; font-size: 18px; margin: 0;">💼 کار داوطلبانه<br/>«از هر کس به اندازه توانش»</p>
+      </div>
+      <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 18px; margin-bottom: 16px;">
+        <p style="color: #E1BEE7; font-size: 18px; margin: 0;">🌾 توزیع عادلانه<br/>«به هر کس به اندازه نیازش»</p>
+      </div>
+      <div style="background: rgba(255,255,255,0.1); border-radius: 15px; padding: 18px; margin-bottom: 16px;">
+        <p style="color: #E1BEE7; font-size: 18px; margin: 0;">🕊️ صلح جهانی<br/>پایان استعمار</p>
+      </div>
+      <div style="margin-top: 25px; border: 2px solid #CE93D8; border-radius: 15px; padding: 15px;">
+        <p style="color: #F9A825; font-size: 20px; margin: 0;">
+          «رؤیایی که میلیاردها نفر را<br/>شیفته خود کرد»
+        </p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- RIGHT: Reality Side -->
+  <foreignObject x="560" y="140" width="490" height="820">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #EF9A9A; font-size: 30px; font-weight: 800; margin: 0 0 30px 0;">☠️ در واقعیت</p>
+
+      <div style="background: rgba(0,0,0,0.25); border-radius: 15px; padding: 18px; margin-bottom: 16px;">
+        <p style="color: #FFCDD2; font-size: 18px; margin: 0;">👥 نخبه حزبی جدید<br/>نومنکلاتورا قدرت دارد</p>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); border-radius: 15px; padding: 18px; margin-bottom: 16px;">
+        <p style="color: #FFCDD2; font-size: 18px; margin: 0;">🔒 قوی‌ترین دولت‌ها<br/>KGB | گولاگ | سانسور</p>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); border-radius: 15px; padding: 18px; margin-bottom: 16px;">
+        <p style="color: #FFCDD2; font-size: 18px; margin: 0;">🏭 کار اجباری<br/>برنامه دولتی، نه انتخاب</p>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); border-radius: 15px; padding: 18px; margin-bottom: 16px;">
+        <p style="color: #FFCDD2; font-size: 18px; margin: 0;">🌾 قحطی مصنوعی<br/>اوکراین ۱۹۳۳ | چین ۱۹۵۹</p>
+      </div>
+      <div style="background: rgba(0,0,0,0.25); border-radius: 15px; padding: 18px; margin-bottom: 16px;">
+        <p style="color: #FFCDD2; font-size: 18px; margin: 0;">⚔️ جنگ‌های پرهزینه<br/>افغانستان | آنگولا | ویتنام</p>
+      </div>
+      <div style="margin-top: 25px; border: 2px solid #EF9A9A; border-radius: 15px; padding: 15px;">
+        <p style="color: #F9A825; font-size: 20px; margin: 0;">
+          «کابوسی که ۱۰۰ میلیون نفر<br/>جانشان را از دست دادند»
+        </p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Bottom Question -->
+  <rect x="160" y="950" width="760" height="75" rx="37" fill="#F9A825"/>
+  <foreignObject x="170" y="964" width="740" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1A237E; font-size: 26px; font-weight: 700; margin: 0;">
+        ❓ مشکل نظریه بود یا اجرا؟ → فصل ۵ پاسخ می‌دهد
+      </p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="1040" width="1080" height="35">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 16px; opacity: 0.7; margin: 0;">📖 فصل ۵ | اسلاید ۴ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

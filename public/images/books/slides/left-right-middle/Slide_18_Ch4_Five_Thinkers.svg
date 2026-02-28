@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad18" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#16213E"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad18)"/>
+  
+  <!-- Title -->
+  <foreignObject x="0" y="40" width="1080" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 42px; font-weight: 800; margin: 0;">
+        🌟 ۵ معمار سوسیالیسم
+      </h1>
+    </div>
+  </foreignObject>
+  
+  <!-- Thinker 1: Robert Owen -->
+  <rect x="60" y="160" width="300" height="240" rx="20" fill="rgba(255,152,0,0.15)" stroke="#FF9800" stroke-width="2"/>
+  <circle cx="210" cy="220" r="40" fill="#FF9800"/>
+  <foreignObject x="185" y="200" width="50" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+      <p style="color: #FFFFFF; font-size: 28px; margin: 0;">🏭</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="70" y="270" width="280" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h3 style="color: #FF9800; font-size: 24px; margin: 0;">رابرت اوون</h3>
+      <p style="color: #B0BEC5; font-size: 14px; margin: 5px 0;">۱۷۷۱-۱۸۵۸ | انگلستان</p>
+      <p style="color: #FFFFFF; font-size: 16px; line-height: 1.5; margin: 10px 0 0 0;">
+        کارخانه‌دار انسان‌دوست<br/>
+        بنیان‌گذار «نیو هارمونی»
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Thinker 2: Saint-Simon -->
+  <rect x="390" y="160" width="300" height="240" rx="20" fill="rgba(156,39,176,0.15)" stroke="#9C27B0" stroke-width="2"/>
+  <circle cx="540" cy="220" r="40" fill="#9C27B0"/>
+  <foreignObject x="515" y="200" width="50" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+      <p style="color: #FFFFFF; font-size: 28px; margin: 0;">⚙️</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="400" y="270" width="280" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h3 style="color: #9C27B0; font-size: 24px; margin: 0;">سن‌سیمون</h3>
+      <p style="color: #B0BEC5; font-size: 14px; margin: 5px 0;">۱۷۶۰-۱۸۲۵ | فرانسه</p>
+      <p style="color: #FFFFFF; font-size: 16px; line-height: 1.5; margin: 10px 0 0 0;">
+        جامعه صنعتی ایده‌آل<br/>
+        حکومت دانشمندان
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Thinker 3: Fourier -->
+  <rect x="720" y="160" width="300" height="240" rx="20" fill="rgba(76,175,80,0.15)" stroke="#4CAF50" stroke-width="2"/>
+  <circle cx="870" cy="220" r="40" fill="#4CAF50"/>
+  <foreignObject x="845" y="200" width="50" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+      <p style="color: #FFFFFF; font-size: 28px; margin: 0;">🌻</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="730" y="270" width="280" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h3 style="color: #4CAF50; font-size: 24px; margin: 0;">شارل فوریه</h3>
+      <p style="color: #B0BEC5; font-size: 14px; margin: 5px 0;">۱۷۷۲-۱۸۳۷ | فرانسه</p>
+      <p style="color: #FFFFFF; font-size: 16px; line-height: 1.5; margin: 10px 0 0 0;">
+        فالانستر (کمون ایده‌آل)<br/>
+        کار جذاب و داوطلبانه
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Thinker 4: Marx -->
+  <rect x="170" y="440" width="340" height="280" rx="20" fill="rgba(211,47,47,0.2)" stroke="#D32F2F" stroke-width="3"/>
+  <circle cx="340" cy="510" r="50" fill="#D32F2F"/>
+  <foreignObject x="310" y="485" width="60" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+      <p style="color: #FFFFFF; font-size: 36px; margin: 0;">✊</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="180" y="570" width="320" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h3 style="color: #F9A825; font-size: 28px; margin: 0;">کارل مارکس</h3>
+      <p style="color: #B0BEC5; font-size: 16px; margin: 5px 0;">۱۸۱۸-۱۸۸۳ | آلمان</p>
+      <p style="color: #FFFFFF; font-size: 18px; line-height: 1.6; margin: 10px 0 0 0;">
+        ماتریالیسم تاریخی | نقد سرمایه<br/>
+        مانیفست کمونیست | کتاب سرمایه
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Thinker 5: Engels -->
+  <rect x="570" y="440" width="340" height="280" rx="20" fill="rgba(211,47,47,0.2)" stroke="#D32F2F" stroke-width="3"/>
+  <circle cx="740" cy="510" r="50" fill="#D32F2F"/>
+  <foreignObject x="710" y="485" width="60" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center;">
+      <p style="color: #FFFFFF; font-size: 36px; margin: 0;">📖</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="580" y="570" width="320" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h3 style="color: #F9A825; font-size: 28px; margin: 0;">فردریش انگلس</h3>
+      <p style="color: #B0BEC5; font-size: 16px; margin: 5px 0;">۱۸۲۰-۱۸۹۵ | آلمان</p>
+      <p style="color: #FFFFFF; font-size: 18px; line-height: 1.6; margin: 10px 0 0 0;">
+        وضعیت طبقه کارگر انگلستان<br/>
+        همکار و حامی مالی مارکس
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Connection Line -->
+  <line x1="340" y1="720" x2="540" y2="800" stroke="#F9A825" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="740" y1="720" x2="540" y2="800" stroke="#F9A825" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Quote Box -->
+  <rect x="200" y="760" width="680" height="120" rx="20" fill="rgba(249,168,37,0.15)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="220" y="775" width="640" height="95">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; font-style: italic; margin: 0;">
+        «کارگران جهان متحد شوید!<br/>
+        چیزی جز زنجیرهایتان را از دست نمی‌دهید»
+      </p>
+      <p style="color: #B0BEC5; font-size: 16px; margin: 10px 0 0 0;">— مانیفست کمونیست، ۱۸۴۸</p>
+    </div>
+  </foreignObject>
+  
+  <!-- Footer -->
+  <foreignObject x="0" y="920" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۴ | اسلاید ۳ از ۵</p>
+    </div>
+  </foreignObject>
+  
+</svg>

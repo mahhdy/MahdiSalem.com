@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="left42" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D47A1"/>
+      <stop offset="100%" style="stop-color:#1565C0"/>
+    </linearGradient>
+    <linearGradient id="right42" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E"/>
+      <stop offset="100%" style="stop-color:#283593"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="540" height="1080" fill="url(#left42)"/>
+  <rect x="540" y="0" width="540" height="1080" fill="url(#right42)"/>
+  <rect x="528" y="0" width="24" height="1080" fill="#F9A825"/>
+
+  <!-- Header -->
+  <foreignObject x="0" y="30" width="1080" height="90">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 38px; font-weight: 900; text-shadow: 0 4px 20px rgba(0,0,0,0.4);">
+        🏆 انقلاب محافظه‌کارانه دهه ۱۹۸۰
+      </h1>
+      <p style="color: #F9A825; font-size: 22px; margin: 8px 0 0 0;">دو رهبر که جهان را تغییر دادند</p>
+    </div>
+  </foreignObject>
+
+  <!-- Reagan Side -->
+  <foreignObject x="20" y="140" width="498" height="800">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 60px; margin: 0;">🇺🇸</p>
+      <h2 style="color: #F9A825; font-size: 34px; margin: 10px 0;">رونالد ریگان</h2>
+      <p style="color: #90CAF9; font-size: 18px; margin: 0 0 20px 0;">رئیس‌جمهور آمریکا ۱۹۸۱-۱۹۸۹</p>
+
+      <div style="background: rgba(255,255,255,0.08); border-radius: 14px; padding: 14px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 18px; margin: 0;">💰 کاهش مالیات بزرگ<br/><span style="color: #90CAF9; font-size: 15px;">«اقتصاد چکه‌ای» (Trickle-down)</span></p>
+      </div>
+      <div style="background: rgba(255,255,255,0.08); border-radius: 14px; padding: 14px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 18px; margin: 0;">🏛️ کوچک‌سازی دولت<br/><span style="color: #90CAF9; font-size: 15px;">«دولت مشکل است نه راه‌حل»</span></p>
+      </div>
+      <div style="background: rgba(255,255,255,0.08); border-radius: 14px; padding: 14px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 18px; margin: 0;">⚔️ مقابله با شوروی<br/><span style="color: #90CAF9; font-size: 15px;">«امپراتوری شر» + جنگ ستارگان</span></p>
+      </div>
+      <div style="background: rgba(255,255,255,0.08); border-radius: 14px; padding: 14px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 18px; margin: 0;">🔓 مقررات‌زدایی<br/><span style="color: #90CAF9; font-size: 15px;">آزادسازی بازارها + خصوصی‌سازی</span></p>
+      </div>
+
+      <div style="margin-top: 20px; padding: 12px; border: 2px solid #F9A825; border-radius: 12px;">
+        <p style="color: #F9A825; font-size: 16px; font-style: italic; margin: 0;">
+          «دولت راه‌حل مشکلات ما نیست؛<br/>دولت خود مشکل است»
+        </p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Thatcher Side -->
+  <foreignObject x="562" y="140" width="498" height="800">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 60px; margin: 0;">🇬🇧</p>
+      <h2 style="color: #F9A825; font-size: 34px; margin: 10px 0;">مارگارت تاچر</h2>
+      <p style="color: #B39DDB; font-size: 18px; margin: 0 0 20px 0;">نخست‌وزیر بریتانیا ۱۹۷۹-۱۹۹۰</p>
+
+      <div style="background: rgba(255,255,255,0.08); border-radius: 14px; padding: 14px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 18px; margin: 0;">🏭 خصوصی‌سازی عظیم<br/><span style="color: #B39DDB; font-size: 15px;">معادن، آب، برق، تلفن، گاز</span></p>
+      </div>
+      <div style="background: rgba(255,255,255,0.08); border-radius: 14px; padding: 14px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 18px; margin: 0;">👊 شکست اتحادیه‌ها<br/><span style="color: #B39DDB; font-size: 15px;">اعتصاب معدنچیان ۱۹۸۴</span></p>
+      </div>
+      <div style="background: rgba(255,255,255,0.08); border-radius: 14px; padding: 14px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 18px; margin: 0;">📉 کاهش دولت رفاه<br/><span style="color: #B39DDB; font-size: 15px;">«چیزی به نام جامعه وجود ندارد»</span></p>
+      </div>
+      <div style="background: rgba(255,255,255,0.08); border-radius: 14px; padding: 14px; margin-bottom: 12px;">
+        <p style="color: #FFFFFF; font-size: 18px; margin: 0;">🏠 مالکیت مردمی<br/><span style="color: #B39DDB; font-size: 15px;">فروش خانه‌های دولتی به مستأجران</span></p>
+      </div>
+
+      <div style="margin-top: 20px; padding: 12px; border: 2px solid #F9A825; border-radius: 12px;">
+        <p style="color: #F9A825; font-size: 16px; font-style: italic; margin: 0;">
+          «چیزی به نام جامعه وجود ندارد؛<br/>فقط مردان و زنان و خانواده‌ها هستند»
+        </p>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Bottom Insight -->
+  <rect x="160" y="950" width="760" height="80" rx="40" fill="#F9A825"/>
+  <foreignObject x="175" y="963" width="730" height="55">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1A237E; font-size: 24px; font-weight: 700; margin: 0;">
+        💡 این دو نفر نقطه اتصال محافظه‌کاری و نئولیبرالیسم‌اند
+      </p>
+    </div>
+  </foreignObject>
+
+</svg>

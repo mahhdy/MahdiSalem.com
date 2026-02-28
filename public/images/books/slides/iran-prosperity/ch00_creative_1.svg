@@ -1,0 +1,102 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#0F2027"/>
+            <stop offset="50%" style="stop-color:#203A43"/>
+            <stop offset="100%" style="stop-color:#2C5364"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1080" height="1350" fill="url(#bgGrad)"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="1080" height="100" fill="#37474F"/>
+    <foreignObject x="0" y="0" width="1080" height="100">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: 'Vazirmatn', sans-serif; font-size: 36px; font-weight: 800; color: white; direction: rtl;">
+            خلاصه مدیریتی: از بحران تا بالندگی
+        </div>
+    </foreignObject>
+
+    <!-- Main Title -->
+    <foreignObject x="60" y="140" width="960" height="120">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif; color: #4FC3F7; font-size: 52px; font-weight: 900; text-align: center;">
+            خط زمانی ۲۵ ساله: از بحران تا کمال
+        </div>
+    </foreignObject>
+
+    <!-- Timeline Path (Vertical/Stepped) -->
+    <g transform="translate(100, 300)">
+        <!-- The Line -->
+        <path d="M50,0 L50,850" stroke="#4FC3F7" stroke-width="4" stroke-dasharray="10 5" opacity="0.5"/>
+        
+        <!-- Phase 1: Transition -->
+        <g transform="translate(0, 50)">
+            <circle cx="50" cy="0" r="15" fill="#C62828"/>
+            <rect x="80" y="-40" width="800" height="120" rx="20" fill="rgba(198,40,40,0.15)" stroke="#C62828"/>
+            <foreignObject x="100" y="-30" width="760" height="100">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: white;">
+                    <strong style="color: #FF5252; font-size: 24px;">فاز ۱: گذار (۲ سال)</strong><br/>
+                    تشکیل دولت موقت، تدوین قانون اساسی و ثبات اولیه
+                </div>
+            </foreignObject>
+        </g>
+
+        <!-- Phase 2: Building -->
+        <g transform="translate(0, 220)">
+            <circle cx="50" cy="0" r="15" fill="#2E7D32"/>
+            <rect x="80" y="-40" width="800" height="120" rx="20" fill="rgba(46,125,50,0.15)" stroke="#2E7D32"/>
+            <foreignObject x="100" y="-30" width="760" height="100">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: white;">
+                    <strong style="color: #66BB6A; font-size: 24px;">فاز ۲: نهادسازی (۳ سال)</strong><br/>
+                    استقرار نظام فدرال، استقلال قضایی و اصلاحات ساختاری
+                </div>
+            </foreignObject>
+        </g>
+
+        <!-- Phase 3: Consolidation -->
+        <g transform="translate(0, 390)">
+            <circle cx="50" cy="0" r="15" fill="#F9A825"/>
+            <rect x="80" y="-40" width="800" height="120" rx="20" fill="rgba(249,168,37,0.15)" stroke="#F9A825"/>
+            <foreignObject x="100" y="-30" width="760" height="100">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: white;">
+                    <strong style="color: #FFD54F; font-size: 24px;">فاز ۳: تحکیم (۵ سال)</strong><br/>
+                    آشتی ملی، کاهش ۵۰ درصدی فقر و چرخش مسالمت‌آمیز قدرت
+                </div>
+            </foreignObject>
+        </g>
+
+        <!-- Phase 4: Maturity -->
+        <g transform="translate(0, 560)">
+            <circle cx="50" cy="0" r="15" fill="#1565C0"/>
+            <rect x="80" y="-40" width="800" height="120" rx="20" fill="rgba(21,101,192,0.15)" stroke="#1565C0"/>
+            <foreignObject x="100" y="-30" width="760" height="100">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: white;">
+                    <strong style="color: #64B5F6; font-size: 24px;">فاز ۴: بلوغ (۱۰ سال)</strong><br/>
+                    توسعه هوشمند، درآمد متوسط بالا و رهبری منطقه‌ای
+                </div>
+            </foreignObject>
+        </g>
+
+        <!-- Phase 5: Excellence -->
+        <g transform="translate(0, 730)">
+            <circle cx="50" cy="0" r="15" fill="#6A1B9A"/>
+            <rect x="80" y="-40" width="800" height="120" rx="20" fill="rgba(106,27,154,0.15)" stroke="#6A1B9A"/>
+            <foreignObject x="100" y="-30" width="760" height="100">
+                <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: white;">
+                    <strong style="color: #BA68C8; font-size: 24px;">فاز ۵: تعالی (۵ سال)</strong><br/>
+                    اقتصاد دانش‌بنیان، توازن زیست‌محیطی و الگوی جهانی دموکراسی
+                </div>
+            </foreignObject>
+        </g>
+    </g>
+
+    <!-- Final Destination Label -->
+    <rect x="340" y="1180" width="400" height="60" rx="30" fill="#4FC3F7"/>
+    <text x="540" y="1220" text-anchor="middle" font-family="'Vazirmatn'" font-size="28" font-weight="900" fill="#0F2027">ایران ۱۴۳۰: سربلند و آزاد</text>
+
+    <!-- Slide ID -->
+    <circle cx="1020" cy="1300" r="30" fill="#37474F"/>
+    <text x="1020" y="1310" text-anchor="middle" font-family="'Vazirmatn', sans-serif" font-size="24" font-weight="bold" fill="white">۰۱</text>
+    </svg>
+    

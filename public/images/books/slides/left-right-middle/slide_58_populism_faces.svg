@@ -1,0 +1,418 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs>
+    <!-- Dark Background -->
+    <linearGradient id="darkGrid58" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D0D1A"/>
+      <stop offset="100%" style="stop-color:#1A1A2E"/>
+    </linearGradient>
+    
+    <!-- Card Gradients -->
+    <linearGradient id="usaCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1565C0"/>
+      <stop offset="100%" style="stop-color:#0D47A1"/>
+    </linearGradient>
+    
+    <linearGradient id="hungaryCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#388E3C"/>
+      <stop offset="100%" style="stop-color:#1B5E20"/>
+    </linearGradient>
+    
+    <linearGradient id="turkeyCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C62828"/>
+      <stop offset="100%" style="stop-color:#B71C1C"/>
+    </linearGradient>
+    
+    <linearGradient id="indiaCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6F00"/>
+      <stop offset="100%" style="stop-color:#E65100"/>
+    </linearGradient>
+    
+    <linearGradient id="brazilCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2E7D32"/>
+      <stop offset="100%" style="stop-color:#1B5E20"/>
+    </linearGradient>
+    
+    <linearGradient id="venezuelaCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D32F2F"/>
+      <stop offset="100%" style="stop-color:#C62828"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#darkGrid58)"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <g opacity="0.03">
+    <line x1="360" y1="0" x2="360" y2="1350" stroke="white" stroke-width="1"/>
+    <line x1="720" y1="0" x2="720" y2="1350" stroke="white" stroke-width="1"/>
+  </g>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1080" height="110" fill="rgba(255,152,0,0.9)"/>
+  <foreignObject x="0" y="0" width="1080" height="110">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      font-size: 38px; font-weight: 800; color: white;
+      direction: rtl; text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    ">
+      🌍 چهره‌های پوپولیسم در جهان
+    </div>
+  </foreignObject>
+  
+  <!-- Subtitle -->
+  <foreignObject x="60" y="125" width="960" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 20px; color: #FFCC80;
+      direction: rtl; text-align: center;
+    ">
+      از آمریکا تا آسیا — موج جهانی پوپولیسم
+    </div>
+  </foreignObject>
+  
+  <!-- Row 1: Right Populism -->
+  <foreignObject x="60" y="180" width="960" height="35">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 20px; font-weight: 700;
+      color: #90CAF9; direction: rtl;
+    ">
+      ◀ پوپولیسم راست
+    </div>
+  </foreignObject>
+  
+  <!-- Card 1: Trump -->
+  <g transform="translate(60, 220)">
+    <rect width="300" height="250" rx="15" fill="url(#usaCard)"/>
+    <text x="150" y="55" text-anchor="middle" font-size="45">🇺🇸</text>
+    
+    <foreignObject x="10" y="70" width="280" height="40">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 24px; font-weight: 700;
+        color: white; direction: rtl;
+      ">
+        دونالد ترامپ
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="10" y="110" width="280" height="25">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px;
+        color: #BBDEFB; direction: rtl;
+      ">
+        آمریکا | ۲۰۱۷-۲۰۲۱
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="15" y="140" width="270" height="100">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px; color: #E3F2FD;
+        direction: rtl; text-align: center; line-height: 1.7;
+      ">
+        «آمریکا اول»
+        <br/>ضد مهاجرت
+        <br/>ضد نخبگان واشنگتن
+        <br/>«باتلاق را خشک کنید»
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Card 2: Orbán -->
+  <g transform="translate(390, 220)">
+    <rect width="300" height="250" rx="15" fill="url(#hungaryCard)"/>
+    <text x="150" y="55" text-anchor="middle" font-size="45">🇭🇺</text>
+    
+    <foreignObject x="10" y="70" width="280" height="40">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 24px; font-weight: 700;
+        color: white; direction: rtl;
+      ">
+        ویکتور اوربان
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="10" y="110" width="280" height="25">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px;
+        color: #C8E6C9; direction: rtl;
+      ">
+        مجارستان | ۲۰۱۰-اکنون
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="15" y="140" width="270" height="100">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px; color: #E8F5E9;
+        direction: rtl; text-align: center; line-height: 1.7;
+      ">
+        «دموکراسی غیرلیبرال»
+        <br/>ضد اتحادیه اروپا
+        <br/>ضد مهاجران مسلمان
+        <br/>مسیحیت محور
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Card 3: Erdoğan -->
+  <g transform="translate(720, 220)">
+    <rect width="300" height="250" rx="15" fill="url(#turkeyCard)"/>
+    <text x="150" y="55" text-anchor="middle" font-size="45">🇹🇷</text>
+    
+    <foreignObject x="10" y="70" width="280" height="40">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 24px; font-weight: 700;
+        color: white; direction: rtl;
+      ">
+        رجب طیب اردوغان
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="10" y="110" width="280" height="25">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px;
+        color: #FFCDD2; direction: rtl;
+      ">
+        ترکیه | ۲۰۰۳-اکنون
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="15" y="140" width="270" height="100">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px; color: #FFEBEE;
+        direction: rtl; text-align: center; line-height: 1.7;
+      ">
+        «ترکیه جدید»
+        <br/>ضد نخبگان سکولار
+        <br/>اسلام‌گرایی ملی
+        <br/>عثمانی‌گرایی نو
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Row 2 Label -->
+  <foreignObject x="60" y="490" width="480" height="35">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 20px; font-weight: 700;
+      color: #F48FB1; direction: rtl;
+    ">
+      ◀ پوپولیسم چپ
+    </div>
+  </foreignObject>
+  
+  <foreignObject x="540" y="490" width="480" height="35">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 20px; font-weight: 700;
+      color: #FFCC80; direction: rtl; text-align: left;
+    ">
+      ترکیبی / خاص ▶
+    </div>
+  </foreignObject>
+  
+  <!-- Card 4: Chávez -->
+  <g transform="translate(60, 530)">
+    <rect width="300" height="250" rx="15" fill="url(#venezuelaCard)"/>
+    <text x="150" y="55" text-anchor="middle" font-size="45">🇻🇪</text>
+    
+    <foreignObject x="10" y="70" width="280" height="40">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 24px; font-weight: 700;
+        color: white; direction: rtl;
+      ">
+        هوگو چاوز
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="10" y="110" width="280" height="25">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px;
+        color: #FFCDD2; direction: rtl;
+      ">
+        ونزوئلا | ۱۹۹۹-۲۰۱۳
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="15" y="140" width="270" height="100">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px; color: #FFEBEE;
+        direction: rtl; text-align: center; line-height: 1.7;
+      ">
+        «سوسیالیسم قرن ۲۱»
+        <br/>ضد امپریالیسم آمریکا
+        <br/>ملی‌سازی نفت
+        <br/>توزیع ثروت
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Card 5: Modi -->
+  <g transform="translate(390, 530)">
+    <rect width="300" height="250" rx="15" fill="url(#indiaCard)"/>
+    <text x="150" y="55" text-anchor="middle" font-size="45">🇮🇳</text>
+    
+    <foreignObject x="10" y="70" width="280" height="40">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 24px; font-weight: 700;
+        color: white; direction: rtl;
+      ">
+        نارندرا مودی
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="10" y="110" width="280" height="25">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px;
+        color: #FFE0B2; direction: rtl;
+      ">
+        هند | ۲۰۱۴-اکنون
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="15" y="140" width="270" height="100">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px; color: #FFF3E0;
+        direction: rtl; text-align: center; line-height: 1.7;
+      ">
+        «هند نو»
+        <br/>هندوتوا (ملی‌گرایی هندو)
+        <br/>ضد نخبگان نهرویی
+        <br/>توسعه + هویت
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Card 6: Bolsonaro -->
+  <g transform="translate(720, 530)">
+    <rect width="300" height="250" rx="15" fill="url(#brazilCard)"/>
+    <text x="150" y="55" text-anchor="middle" font-size="45">🇧🇷</text>
+    
+    <foreignObject x="10" y="70" width="280" height="40">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 24px; font-weight: 700;
+        color: white; direction: rtl;
+      ">
+        ژایر بولسونارو
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="10" y="110" width="280" height="25">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px;
+        color: #C8E6C9; direction: rtl;
+      ">
+        برزیل | ۲۰۱۹-۲۰۲۳
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="15" y="140" width="270" height="100">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px; color: #E8F5E9;
+        direction: rtl; text-align: center; line-height: 1.7;
+      ">
+        «ترامپ استوایی»
+        <br/>ضد چپ و فساد
+        <br/>محافظه‌کاری مذهبی
+        <br/>نظامی‌گری
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Common Patterns Box -->
+  <rect x="60" y="810" width="960" height="160" rx="20" fill="rgba(255,152,0,0.1)" stroke="#FF9800" stroke-width="2"/>
+  
+  <foreignObject x="80" y="825" width="920" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; color: white;
+      direction: rtl; text-align: center;
+    ">
+      <div style="font-size: 22px; font-weight: 700; color: #FFC107; margin-bottom: 15px;">
+        📊 الگوهای مشترک
+      </div>
+      <div style="display: flex; justify-content: space-around; font-size: 16px; line-height: 1.8;">
+        <div style="text-align: center;">
+          <div style="color: #FFCC80; font-weight: 600;">ارتباط مستقیم</div>
+          <div style="color: #FFE0B2;">رهبر ↔ مردم</div>
+          <div style="color: #FFF3E0; font-size: 14px;">بدون واسطه</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="color: #FFCC80; font-weight: 600;">شبکه‌های اجتماعی</div>
+          <div style="color: #FFE0B2;">توییتر، تلگرام</div>
+          <div style="color: #FFF3E0; font-size: 14px;">دور زدن رسانه</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="color: #FFCC80; font-weight: 600;">بحران‌سازی</div>
+          <div style="color: #FFE0B2;">همیشه در خطریم</div>
+          <div style="color: #FFF3E0; font-size: 14px;">فقط من نجات‌دهنده</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="color: #FFCC80; font-weight: 600;">ضد سیستم</div>
+          <div style="color: #FFE0B2;">حتی وقتی در قدرت</div>
+          <div style="color: #FFF3E0; font-size: 14px;">همیشه قربانی</div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+  
+  <!-- Warning Box -->
+  <rect x="60" y="990" width="960" height="80" rx="15" fill="rgba(244,67,54,0.2)"/>
+  <foreignObject x="80" y="1000" width="920" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 20px; color: #FFCDD2;
+      direction: rtl; text-align: center; line-height: 1.6;
+    ">
+      ⚠️ <strong>هشدار:</strong> بسیاری از این رهبران نهادهای دموکراتیک را تضعیف کرده‌اند
+      <br/>قوه قضائیه، رسانه‌های مستقل، جامعه مدنی
+    </div>
+  </foreignObject>
+  
+  <!-- Europe Preview -->
+  <foreignObject x="60" y="1090" width="960" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;
+      font-family: 'Vazirmatn', sans-serif; font-size: 15px;
+      direction: rtl;
+    ">
+      <span style="color: #90CAF9;">🇫🇷 لوپن</span>
+      <span style="color: #A5D6A7;">🇮🇹 سالوینی</span>
+      <span style="color: #CE93D8;">🇵🇱 کاچینسکی</span>
+      <span style="color: #FFCC80;">🇬🇧 فاراژ</span>
+      <span style="color: #EF9A9A;">🇦🇹 FPÖ</span>
+      <span style="color: #80DEEA;">🇳🇱 ویلدرز</span>
+    </div>
+  </foreignObject>
+  
+  <!-- Navigation -->
+  <foreignObject x="60" y="1170" width="480" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 16px; color: #78909C;
+      direction: rtl;
+    ">
+      ← قبلی: طیف پوپولیسم
+    </div>
+  </foreignObject>
+  
+  <foreignObject x="540" y="1170" width="480" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 16px; color: #78909C;
+      direction: rtl; text-align: left;
+    ">
+      بعدی: جمع‌بندی فصل ۱۳ →
+    </div>
+  </foreignObject>
+  
+  <!-- Slide Number -->
+  <rect x="480" y="1280" width="120" height="45" rx="22" fill="rgba(255,152,0,0.7)"/>
+  <text x="540" y="1310" text-anchor="middle" 
+        font-family="Vazirmatn, sans-serif" font-size="22" font-weight="bold" fill="white">۵۸</text>
+</svg>

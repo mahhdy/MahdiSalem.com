@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad54" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAFAFA"/>
+      <stop offset="100%" style="stop-color:#ECEFF1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad54)"/>
+
+  <rect x="0" y="0" width="1080" height="120" fill="#37474F"/>
+  <foreignObject x="0" y="30" width="1080" height="75">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 38px; font-weight: 800; margin: 0;">
+        🌍 ۶ نوع ناسیونالیسم: از سالم تا مرگبار
+      </h1>
+    </div>
+  </foreignObject>
+
+  <!-- Type 1 -->
+  <rect x="60" y="150" width="300" height="210" rx="18" fill="#FFFFFF" stroke="#4CAF50" stroke-width="3"/>
+  <rect x="60" y="150" width="300" height="52" rx="18" fill="#4CAF50"/>
+  <foreignObject x="65" y="158" width="290" height="42">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 19px; font-weight: 800; margin: 0;">🟢 ناسیونالیسم مدنی</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="70" y="212" width="280" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #424242; font-size: 15px; line-height: 1.7; margin: 0;">
+        مبتنی بر شهروندی<br/>
+        نه خون بلکه قانون<br/>
+        دموکراتیک و فراگیر
+      </p>
+      <p style="color: #4CAF50; font-size: 13px; margin-top: 8px;">مثال: فرانسه | آمریکا</p>
+    </div>
+  </foreignObject>
+
+  <!-- Type 2 -->
+  <rect x="390" y="150" width="300" height="210" rx="18" fill="#FFFFFF" stroke="#2196F3" stroke-width="3"/>
+  <rect x="390" y="150" width="300" height="52" rx="18" fill="#2196F3"/>
+  <foreignObject x="395" y="158" width="290" height="42">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 19px; font-weight: 800; margin: 0;">🔵 ناسیونالیسم رهایی‌بخش</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="400" y="212" width="280" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #424242; font-size: 15px; line-height: 1.7; margin: 0;">
+        ضد استعمار<br/>
+        استقلال‌طلبانه<br/>
+        چپ‌گرایانه
+      </p>
+      <p style="color: #2196F3; font-size: 13px; margin-top: 8px;">مثال: هند | الجزایر | فلسطین</p>
+    </div>
+  </foreignObject>
+
+  <!-- Type 3 -->
+  <rect x="720" y="150" width="300" height="210" rx="18" fill="#FFFFFF" stroke="#FF9800" stroke-width="3"/>
+  <rect x="720" y="150" width="300" height="52" rx="18" fill="#FF9800"/>
+  <foreignObject x="725" y="158" width="290" height="42">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 19px; font-weight: 800; margin: 0;">🟠 ناسیونالیسم قومی</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="730" y="212" width="280" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #424242; font-size: 15px; line-height: 1.7; margin: 0;">
+        مبتنی بر خون و زبان<br/>
+        تعلق قومی = تعلق ملی<br/>
+        می‌تواند خطرناک شود
+      </p>
+      <p style="color: #FF9800; font-size: 13px; margin-top: 8px;">مثال: آلمان قرن ۱۹ | صربستان</p>
+    </div>
+  </foreignObject>
+
+  <!-- Type 4 -->
+  <rect x="60" y="390" width="300" height="210" rx="18" fill="#FFFFFF" stroke="#9C27B0" stroke-width="3"/>
+  <rect x="60" y="390" width="300" height="52" rx="18" fill="#9C27B0"/>
+  <foreignObject x="65" y="398" width="290" height="42">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 19px; font-weight: 800; margin: 0;">🟣 ناسیونالیسم مذهبی</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="70" y="452" width="280" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #424242; font-size: 15px; line-height: 1.7; margin: 0;">
+        دین = هویت ملی<br/>
+        مرز ملت = مرز مذهب<br/>
+        صهیونیسم | هندوتوا
+      </p>
+      <p style="color: #9C27B0; font-size: 13px; margin-top: 8px;">مثال: اسرائیل | هند | لهستان</p>
+    </div>
+  </foreignObject>
+
+  <!-- Type 5 -->
+  <rect x="390" y="390" width="300" height="210" rx="18" fill="#FFFFFF" stroke="#D32F2F" stroke-width="3"/>
+  <rect x="390" y="390" width="300" height="52" rx="18" fill="#D32F2F"/>
+  <foreignObject x="395" y="398" width="290" height="42">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 19px; font-weight: 800; margin: 0;">🔴 نژادپرستی ملی</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="400" y="452" width="280" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #424242; font-size: 15px; line-height: 1.7; margin: 0;">
+        نژاد = سرنوشت<br/>
+        برتری بیولوژیکی<br/>
+        جداسازی نژادی
+      </p>
+      <p style="color: #D32F2F; font-size: 13px; margin-top: 8px;">مثال: نازیسم | آپارتاید</p>
+    </div>
+  </foreignObject>
+
+  <!-- Type 6 -->
+  <rect x="720" y="390" width="300" height="210" rx="18" fill="#FFFFFF" stroke="#212121" stroke-width="3"/>
+  <rect x="720" y="390" width="300" height="52" rx="18" fill="#212121"/>
+  <foreignObject x="725" y="398" width="290" height="42">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 19px; font-weight: 800; margin: 0;">⚫ فاشیسم</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="730" y="452" width="280" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #424242; font-size: 15px; line-height: 1.7; margin: 0;">
+        ناسیونالیسم + توتالیتاریسم<br/>
+        رهبر مطلق + خشونت<br/>
+        نقطه پایان طیف
+      </p>
+      <p style="color: #757575; font-size: 13px; margin-top: 8px;">مثال: موسولینی | هیتلر</p>
+    </div>
+  </foreignObject>
+
+  <!-- Key Insight -->
+  <rect x="100" y="640" width="880" height="110" rx="18" fill="#37474F"/>
+  <foreignObject x="120" y="655" width="840" height="85">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 8px 0;">💡 نکته کلیدی</p>
+      <p style="color: #FFFFFF; font-size: 21px; margin: 0;">
+        ناسیونالیسم نه ذاتاً خوب است نه بد | بستگی به <strong style="color: #F9A825;">نوع و درجه</strong> دارد
+      </p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="790" width="1080" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #9E9E9E; font-size: 18px; margin: 0;">📖 فصل ۱۲ | اسلاید ۳ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

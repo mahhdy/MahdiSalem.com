@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad7" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAFAFA"/>
+      <stop offset="100%" style="stop-color:#EEEEEE"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad7)"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1080" height="140" fill="#311B92"/>
+  <foreignObject x="0" y="40" width="1080" height="90">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 38px; font-weight: 800; margin: 0;">
+        🧠 معرفت‌شناسی: چگونه می‌فهمیم؟
+      </h1>
+      <p style="color: #B39DDB; font-size: 22px; margin: 10px 0 0 0;">روش شناخت جهان در چپ و راست متفاوت است</p>
+    </div>
+  </foreignObject>
+  
+  <!-- Left Card -->
+  <rect x="60" y="180" width="460" height="380" rx="25" fill="#FFFFFF" stroke="#E53935" stroke-width="3"/>
+  <rect x="60" y="180" width="460" height="70" rx="25" fill="#E53935"/>
+  <foreignObject x="60" y="190" width="460" height="55">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h2 style="color: #FFFFFF; font-size: 32px; font-weight: 800; margin: 0;">چپ: عقل‌گرایی</h2>
+    </div>
+  </foreignObject>
+  <foreignObject x="80" y="270" width="420" height="280">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #424242; font-size: 22px; line-height: 2.2; margin: 0;">
+        ✦ جامعه را می‌توان با <strong style="color: #E53935;">طراحی عقلانی</strong> بهبود داد<br/>
+        ✦ انسان قادر به <strong style="color: #E53935;">مهندسی اجتماعی</strong> است<br/>
+        ✦ سنت‌ها قابل <strong style="color: #E53935;">نقد و تغییر</strong>ند<br/>
+        ✦ پیشرفت <strong style="color: #E53935;">خطی</strong> و ممکن است
+      </p>
+      <div style="margin-top: 20px; padding: 15px; background: #FFEBEE; border-radius: 10px;">
+        <p style="color: #C62828; font-size: 18px; margin: 0; text-align: center;">
+          نمایندگان: مارکس | کندورسه | هگل
+        </p>
+      </div>
+    </div>
+  </foreignObject>
+  
+  <!-- Right Card -->
+  <rect x="560" y="180" width="460" height="380" rx="25" fill="#FFFFFF" stroke="#1565C0" stroke-width="3"/>
+  <rect x="560" y="180" width="460" height="70" rx="25" fill="#1565C0"/>
+  <foreignObject x="560" y="190" width="460" height="55">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h2 style="color: #FFFFFF; font-size: 32px; font-weight: 800; margin: 0;">راست: تجربه‌گرایی</h2>
+    </div>
+  </foreignObject>
+  <foreignObject x="580" y="270" width="420" height="280">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #424242; font-size: 22px; line-height: 2.2; margin: 0;">
+        ✦ <strong style="color: #1565C0;">سنت‌ها</strong> حاوی خرد انباشته‌اند<br/>
+        ✦ عقل انسان <strong style="color: #1565C0;">محدود</strong> است<br/>
+        ✦ تغییر باید <strong style="color: #1565C0;">تدریجی</strong> باشد<br/>
+        ✦ «نظم خودجوش» بر <strong style="color: #1565C0;">طراحی</strong> برتری دارد
+      </p>
+      <div style="margin-top: 20px; padding: 15px; background: #E3F2FD; border-radius: 10px;">
+        <p style="color: #1565C0; font-size: 18px; margin: 0; text-align: center;">
+          نمایندگان: برک | هایک | اوکشات
+        </p>
+      </div>
+    </div>
+  </foreignObject>
+  
+  <!-- Key Insight Box -->
+  <rect x="120" y="600" width="840" height="160" rx="20" fill="#311B92"/>
+  <foreignObject x="140" y="620" width="800" height="130">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; margin: 0 0 15px 0;">💡 نکته کلیدی</p>
+      <p style="color: #FFFFFF; font-size: 28px; line-height: 1.7; margin: 0;">
+        این تفاوت معرفت‌شناختی توضیح می‌دهد چرا چپ به <strong style="color: #F9A825;">انقلاب</strong><br/>
+        و راست به <strong style="color: #F9A825;">اصلاح تدریجی</strong> تمایل دارد
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Definition Box -->
+  <rect x="200" y="800" width="680" height="100" rx="15" fill="#FFF8E1" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="220" y="815" width="640" height="75">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F57F17; font-size: 20px; margin: 0 0 8px 0;">📚 تعریف: معرفت‌شناسی (Epistemology)</p>
+      <p style="color: #5D4037; font-size: 22px; margin: 0;">شاخه‌ای از فلسفه که به چگونگی کسب دانش و حدود آن می‌پردازد</p>
+    </div>
+  </foreignObject>
+  
+  <!-- Footer -->
+  <foreignObject x="0" y="1020" width="1080" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #9E9E9E; font-size: 18px; margin: 0;">📖 فصل ۲ | اسلاید ۲ از ۵</p>
+    </div>
+  </foreignObject>
+  
+</svg>

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad37" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAFAFA"/>
+      <stop offset="100%" style="stop-color:#EDE7F6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad37)"/>
+
+  <rect x="0" y="0" width="1080" height="120" fill="#6A1B9A"/>
+  <foreignObject x="0" y="30" width="1080" height="75">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 38px; font-weight: 800; margin: 0;">
+        ✊ جنبش‌های چپ نو: فراتر از طبقه
+      </h1>
+    </div>
+  </foreignObject>
+
+  <!-- Movement 1: Feminism -->
+  <rect x="60" y="150" width="460" height="175" rx="18" fill="#FFFFFF" stroke="#E91E63" stroke-width="3"/>
+  <foreignObject x="80" y="165" width="420" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="display: flex; align-items: center; margin-bottom: 10px;">
+        <span style="font-size: 36px; margin-left: 12px;">♀️</span>
+        <h3 style="color: #E91E63; font-size: 24px; margin: 0;">فمینیسم (موج دوم و سوم)</h3>
+      </div>
+      <p style="color: #424242; font-size: 17px; line-height: 1.7; margin: 0;">
+        «شخصی، سیاسی است» | برابری جنسیتی فراتر از حق رأی<br/>
+        نقد پدرسالاری | حقوق بدن | برابری دستمزد
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Movement 2: Anti-Racism -->
+  <rect x="560" y="150" width="460" height="175" rx="18" fill="#FFFFFF" stroke="#FF9800" stroke-width="3"/>
+  <foreignObject x="580" y="165" width="420" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="display: flex; align-items: center; margin-bottom: 10px;">
+        <span style="font-size: 36px; margin-left: 12px;">✊🏿</span>
+        <h3 style="color: #FF9800; font-size: 24px; margin: 0;">ضد نژادپرستی</h3>
+      </div>
+      <p style="color: #424242; font-size: 17px; line-height: 1.7; margin: 0;">
+        حقوق مدنی آمریکا | ضد آپارتاید | پسااستعماری<br/>
+        از مارتین لوتر کینگ تا BLM
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Movement 3: Environmentalism -->
+  <rect x="60" y="355" width="460" height="175" rx="18" fill="#FFFFFF" stroke="#4CAF50" stroke-width="3"/>
+  <foreignObject x="80" y="370" width="420" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="display: flex; align-items: center; margin-bottom: 10px;">
+        <span style="font-size: 36px; margin-left: 12px;">🌍</span>
+        <h3 style="color: #4CAF50; font-size: 24px; margin: 0;">محیط‌زیست‌گرایی</h3>
+      </div>
+      <p style="color: #424242; font-size: 17px; line-height: 1.7; margin: 0;">
+        سرمایه‌داری = تخریب طبیعت | رشد بی‌پایان ممکن نیست<br/>
+        از گرتا تونبرگ تا گرین نیو دیل
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Movement 4: LGBTQ+ -->
+  <rect x="560" y="355" width="460" height="175" rx="18" fill="#FFFFFF" stroke="#9C27B0" stroke-width="3"/>
+  <foreignObject x="580" y="370" width="420" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="display: flex; align-items: center; margin-bottom: 10px;">
+        <span style="font-size: 36px; margin-left: 12px;">🏳️‍🌈</span>
+        <h3 style="color: #9C27B0; font-size: 24px; margin: 0;">حقوق دگرباشان</h3>
+      </div>
+      <p style="color: #424242; font-size: 17px; line-height: 1.7; margin: 0;">
+        استونوال ۱۹۶۹ | نقد هنجارهای جنسیتی<br/>
+        ازدواج همجنس | هویت غیردودویی | نظریه کوئیر
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Movement 5: Anti-Globalization -->
+  <rect x="200" y="560" width="680" height="175" rx="18" fill="#FFFFFF" stroke="#1565C0" stroke-width="3"/>
+  <foreignObject x="220" y="575" width="640" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+        <span style="font-size: 36px; margin-left: 12px;">🌐</span>
+        <h3 style="color: #1565C0; font-size: 24px; margin: 0;">ضد جهانی‌سازی و جنبش ۹۹٪</h3>
+      </div>
+      <p style="color: #424242; font-size: 17px; line-height: 1.7; margin: 0;">
+        سیاتل ۱۹۹۹ | اشغال وال‌استریت ۲۰۱۱ | «ما ۹۹ درصدیم»<br/>
+        نقد شرکت‌های چندملیتی | عدالت جهانی | ضد نئولیبرالیسم
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Key Insight -->
+  <rect x="120" y="770" width="840" height="110" rx="18" fill="#6A1B9A"/>
+  <foreignObject x="140" y="788" width="800" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 10px 0;">🔍 چپ نو چه تغییری ایجاد کرد؟</p>
+      <p style="color: #FFFFFF; font-size: 22px; margin: 0;">
+        محور مبارزه از <strong style="color: #F9A825;">طبقه</strong> به <strong style="color: #F9A825;">هویت</strong> تغییر کرد
+      </p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="920" width="1080" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #9E9E9E; font-size: 18px; margin: 0;">📖 فصل ۸ | اسلاید ۳ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

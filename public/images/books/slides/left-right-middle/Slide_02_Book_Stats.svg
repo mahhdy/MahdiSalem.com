@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5F5F5"/>
+      <stop offset="100%" style="stop-color:#E0E0E0"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad2)"/>
+  
+  <!-- Header Bar -->
+  <rect x="0" y="0" width="1080" height="120" fill="#1A237E"/>
+  <foreignObject x="0" y="30" width="1080" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 42px; font-weight: 800; margin: 0;">
+        📚 در این کتاب چه می‌خوانید؟
+      </h1>
+    </div>
+  </foreignObject>
+  
+  <!-- Stats Cards Row 1 -->
+  <rect x="60" y="160" width="280" height="200" rx="20" fill="#FFFFFF" filter="url(#shadow)"/>
+  <foreignObject x="60" y="170" width="280" height="190">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1A237E; font-size: 72px; font-weight: 900; margin: 10px 0;">۱۷</p>
+      <p style="color: #616161; font-size: 24px; margin: 0;">فصل تخصصی</p>
+    </div>
+  </foreignObject>
+  
+  <rect x="400" y="160" width="280" height="200" rx="20" fill="#FFFFFF" filter="url(#shadow)"/>
+  <foreignObject x="400" y="170" width="280" height="190">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 72px; font-weight: 900; margin: 10px 0;">۱۰۰</p>
+      <p style="color: #616161; font-size: 24px; margin: 0;">چهره کلیدی</p>
+    </div>
+  </foreignObject>
+  
+  <rect x="740" y="160" width="280" height="200" rx="20" fill="#FFFFFF" filter="url(#shadow)"/>
+  <foreignObject x="740" y="170" width="280" height="190">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #2E7D32; font-size: 72px; font-weight: 900; margin: 10px 0;">۵</p>
+      <p style="color: #616161; font-size: 24px; margin: 0;">بخش اصلی</p>
+    </div>
+  </foreignObject>
+  
+  <!-- Main Content Card -->
+  <rect x="60" y="400" width="960" height="420" rx="25" fill="#FFFFFF" filter="url(#shadow)"/>
+  <foreignObject x="80" y="420" width="920" height="400">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      
+      <h2 style="color: #1A237E; font-size: 32px; font-weight: 700; margin-bottom: 25px; border-bottom: 3px solid #F9A825; padding-bottom: 15px;">
+        سفری جامع در جغرافیای سیاسی
+      </h2>
+      
+      <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+        <span style="background: #E3F2FD; color: #1565C0; padding: 12px 20px; border-radius: 25px; font-size: 20px;">🔴 جهان چپ</span>
+        <span style="background: #FFEBEE; color: #C62828; padding: 12px 20px; border-radius: 25px; font-size: 20px;">🔵 جهان راست</span>
+        <span style="background: #F3E5F5; color: #7B1FA2; padding: 12px 20px; border-radius: 25px; font-size: 20px;">⚖️ میانه‌روی</span>
+        <span style="background: #E8F5E9; color: #2E7D32; padding: 12px 20px; border-radius: 25px; font-size: 20px;">🌍 جهان غیرغربی</span>
+      </div>
+      
+      <p style="color: #424242; font-size: 24px; line-height: 2; margin-top: 30px;">
+        از <strong style="color: #F9A825;">انقلاب فرانسه</strong> تا <strong style="color: #F9A825;">پوپولیسم امروز</strong><br/>
+        از <strong style="color: #1A237E;">مارکس</strong> تا <strong style="color: #1A237E;">هایک</strong><br/>
+        از <strong style="color: #2E7D32;">آنارشیسم</strong> تا <strong style="color: #2E7D32;">نئولیبرالیسم</strong>
+      </p>
+      
+    </div>
+  </foreignObject>
+  
+  <!-- Bottom CTA -->
+  <rect x="300" y="860" width="480" height="80" rx="40" fill="#1A237E"/>
+  <foreignObject x="300" y="870" width="480" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 28px; font-weight: 700; margin: 0;">
+        ⬅️ ادامه بده
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Footer -->
+  <foreignObject x="0" y="1000" width="1080" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #9E9E9E; font-size: 18px; margin: 0;">
+        📖 کتاب طیف سیاسی | اسلاید ۲ از ۵
+      </p>
+    </div>
+  </foreignObject>
+  
+</svg>

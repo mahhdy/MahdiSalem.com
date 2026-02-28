@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <style>
+      @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+      * {
+        font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      }
+      .rtl {
+        direction: rtl;
+        text-align: right;
+      }
+      .center {
+        text-align: center;
+      }
+    </style>
+    
+    <!-- Gradients -->
+    <linearGradient id="navyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#303F9F;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="redBlueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C62828;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6A1B9A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F9A825;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F57F17;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="emeraldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2E7D32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#43A047;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A148C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6A1B9A;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="spectrumGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C62828;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2E7D32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Filters -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.2"/>
+    </filter>
+    
+    <filter id="shadowSmall" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.15"/>
+    </filter>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="#1A237E"/>
+                    <rect width="1080" height="1350" fill="url(#navyGradient)"/>
+  
+  <!-- Content -->
+  
+  <!-- Background pattern -->
+  <circle cx="100" cy="200" r="300" fill="#C62828" opacity="0.15"/>
+  <circle cx="980" cy="200" r="300" fill="#1565C0" opacity="0.15"/>
+  
+  <!-- Top bar -->
+  <rect x="0" y="0" width="1080" height="6" fill="url(#spectrumGradient)"/>
+  
+  <!-- Question mark visual -->
+  <circle cx="540" cy="280" r="150" fill="rgba(255,255,255,0.1)" />
+  <text x="540" y="340" text-anchor="middle" fill="#F9A825" font-size="180" filter="url(#glow)">؟</text>
+  
+  <!-- Main question -->
+  <rect x="60" y="480" width="960" height="300" rx="24" fill="#FFFFFF" filter="url(#shadow)"/>
+  
+  <text x="540" y="560" text-anchor="middle" fill="#1A237E" font-size="36" font-weight="700">آیا تا به حال از خود پرسیده‌اید:</text>
+  
+  <text x="540" y="650" text-anchor="middle" fill="#C62828" font-size="44" font-weight="900">«چپ» و «راست»</text>
+  <text x="540" y="720" text-anchor="middle" fill="#212121" font-size="38" font-weight="700">واقعاً یعنی چه؟</text>
+  
+  <!-- Sub-questions -->
+  <rect x="60" y="820" width="960" height="380" rx="20" fill="rgba(255,255,255,0.08)"/>
+  
+  <text x="100" y="890" text-anchor="start" fill="#F9A825" font-size="28">🤔</text>
+  <text x="150" y="890" text-anchor="start" fill="#FFFFFF" font-size="24">چرا برخی خود را «چپ» و برخی «راست» می‌نامند؟</text>
+  
+  <text x="100" y="960" text-anchor="start" fill="#F9A825" font-size="28">🌍</text>
+  <text x="150" y="960" text-anchor="start" fill="#FFFFFF" font-size="24">این تقسیم‌بندی از کجا آمده است؟</text>
+  
+  <text x="100" y="1030" text-anchor="start" fill="#F9A825" font-size="28">⚖️</text>
+  <text x="150" y="1030" text-anchor="start" fill="#FFFFFF" font-size="24">آیا «میانه» واقعاً وجود دارد؟</text>
+  
+  <text x="100" y="1100" text-anchor="start" fill="#F9A825" font-size="28">📅</text>
+  <text x="150" y="1100" text-anchor="start" fill="#FFFFFF" font-size="24">این مفاهیم در ۲۳۵ سال چگونه تغییر کرده‌اند؟</text>
+  
+  <!-- CTA -->
+  <text x="540" y="1260" text-anchor="middle" fill="#F9A825" font-size="26" font-weight="700">پاسخ‌ها را در این کتاب بیابید ←</text>
+  
+  <!-- Bottom accent -->
+  <rect x="0" y="1344" width="1080" height="6" fill="url(#spectrumGradient)"/>
+
+</svg>

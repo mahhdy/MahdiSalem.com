@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad10" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#311B92"/>
+      <stop offset="100%" style="stop-color:#1A237E"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad10)"/>
+  
+  <!-- Summary Header -->
+  <foreignObject x="0" y="60" width="1080" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 42px; font-weight: 800; margin: 0;">
+        📌 جمع‌بندی فصل ۲
+      </h1>
+    </div>
+  </foreignObject>
+  
+  <!-- Key Takeaways -->
+  <rect x="80" y="180" width="920" height="400" rx="25" fill="rgba(255,255,255,0.05)" stroke="rgba(249,168,37,0.3)" stroke-width="1"/>
+  <foreignObject x="100" y="200" width="880" height="370">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      
+      <div style="display: flex; align-items: center; margin-bottom: 25px; padding: 15px; background: rgba(76,175,80,0.2); border-radius: 15px;">
+        <span style="color: #4CAF50; font-size: 36px; margin-left: 15px;">۱</span>
+        <p style="color: #FFFFFF; font-size: 24px; margin: 0;">
+          چپ و راست ریشه در <strong style="color: #F9A825;">تفاوت فلسفی</strong> درباره طبیعت انسان دارند
+        </p>
+      </div>
+      
+      <div style="display: flex; align-items: center; margin-bottom: 25px; padding: 15px; background: rgba(33,150,243,0.2); border-radius: 15px;">
+        <span style="color: #2196F3; font-size: 36px; margin-left: 15px;">۲</span>
+        <p style="color: #FFFFFF; font-size: 24px; margin: 0;">
+          <strong style="color: #F9A825;">عقل‌گرایی</strong> چپ در برابر <strong style="color: #F9A825;">تجربه‌گرایی</strong> راست
+        </p>
+      </div>
+      
+      <div style="display: flex; align-items: center; margin-bottom: 25px; padding: 15px; background: rgba(255,152,0,0.2); border-radius: 15px;">
+        <span style="color: #FF9800; font-size: 36px; margin-left: 15px;">۳</span>
+        <p style="color: #FFFFFF; font-size: 24px; margin: 0;">
+          دوگانه <strong style="color: #F9A825;">آزادی-برابری</strong> محور اصلی اختلاف است
+        </p>
+      </div>
+      
+      <div style="display: flex; align-items: center; padding: 15px; background: rgba(156,39,176,0.2); border-radius: 15px;">
+        <span style="color: #9C27B0; font-size: 36px; margin-left: 15px;">۴</span>
+        <p style="color: #FFFFFF; font-size: 24px; margin: 0;">
+          هر ۴ فیلسوف کلیدی (لاک، روسو، برک، مارکس) هنوز <strong style="color: #F9A825;">زنده</strong>‌اند!
+        </p>
+      </div>
+      
+    </div>
+  </foreignObject>
+  
+  <!-- Bridge to Chapter 3 -->
+  <rect x="120" y="620" width="840" height="200" rx="20" fill="#2E7D32"/>
+  <foreignObject x="140" y="640" width="800" height="170">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #C8E6C9; font-size: 22px; margin: 0 0 15px 0;">🔜 فصل بعدی</p>
+      <h2 style="color: #FFFFFF; font-size: 38px; font-weight: 800; margin: 0 0 15px 0;">
+        فصل ۳: اقتصاد سیاسی و جدال بنیادین
+      </h2>
+      <p style="color: #A5D6A7; font-size: 24px; margin: 0;">
+        💰 بازار آزاد یا دولت مداخله‌گر؟<br/>
+        مالکیت خصوصی یا عمومی؟
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- CTA -->
+  <rect x="350" y="860" width="380" height="70" rx="35" fill="#F9A825"/>
+  <foreignObject x="350" y="872" width="380" height="55">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1A237E; font-size: 28px; font-weight: 700; margin: 0;">
+        ⬅️ ادامه بده
+      </p>
+    </div>
+  </foreignObject>
+  
+  <!-- Footer -->
+  <foreignObject x="0" y="1020" width="1080" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۲ | اسلاید ۵ از ۵</p>
+    </div>
+  </foreignObject>
+  
+</svg>

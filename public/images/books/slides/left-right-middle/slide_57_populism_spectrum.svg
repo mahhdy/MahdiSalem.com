@@ -1,0 +1,305 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
+  <defs>
+    <!-- Dark Orange Background -->
+    <linearGradient id="darkOrangeBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#0D0D1A"/>
+    </linearGradient>
+    
+    <!-- Populism Spectrum -->
+    <linearGradient id="populismSpectrum" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E91E63"/>
+      <stop offset="50%" style="stop-color:#FF9800"/>
+      <stop offset="100%" style="stop-color:#3F51B5"/>
+    </linearGradient>
+    
+    <!-- Left Populism -->
+    <linearGradient id="leftPop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E91E63"/>
+      <stop offset="100%" style="stop-color:#AD1457"/>
+    </linearGradient>
+    
+    <!-- Right Populism -->
+    <linearGradient id="rightPop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3F51B5"/>
+      <stop offset="100%" style="stop-color:#1A237E"/>
+    </linearGradient>
+    
+    <!-- Center Orange -->
+    <linearGradient id="centerPop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9800"/>
+      <stop offset="100%" style="stop-color:#E65100"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="url(#darkOrangeBg)"/>
+  
+  <!-- Header Bar -->
+  <rect x="0" y="0" width="1080" height="100" fill="#E65100"/>
+  <foreignObject x="0" y="0" width="1080" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      font-size: 36px; font-weight: 800; color: white;
+      direction: rtl;
+    ">
+      طیف پوپولیسم: از چپ تا راست
+    </div>
+  </foreignObject>
+  
+  <!-- Spectrum Bar -->
+  <rect x="60" y="130" width="960" height="35" rx="17" fill="url(#populismSpectrum)"/>
+  
+  <!-- Spectrum Labels -->
+  <foreignObject x="60" y="175" width="200" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 16px; color: #F48FB1;
+      direction: rtl; text-align: right;
+    ">
+      پوپولیسم چپ ←
+    </div>
+  </foreignObject>
+  
+  <foreignObject x="820" y="175" width="200" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 16px; color: #9FA8DA;
+      direction: rtl; text-align: left;
+    ">
+      → پوپولیسم راست
+    </div>
+  </foreignObject>
+  
+  <!-- Core Definition -->
+  <rect x="60" y="230" width="960" height="120" rx="15" fill="rgba(255,152,0,0.15)" stroke="#FF9800" stroke-width="2"/>
+  <foreignObject x="80" y="245" width="920" height="90">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 22px; color: white;
+      direction: rtl; text-align: center; line-height: 1.8;
+    ">
+      <strong style="color: #FFCC80;">تعریف مشترک:</strong> جهان به دو گروه تقسیم می‌شود
+      <br/>«مردم پاک و واقعی» در برابر «نخبگان فاسد و خائن»
+    </div>
+  </foreignObject>
+  
+  <!-- Left Populism Card -->
+  <g transform="translate(60, 380)">
+    <rect width="450" height="380" rx="20" fill="rgba(233,30,99,0.1)" stroke="#E91E63" stroke-width="2"/>
+    
+    <!-- Icon -->
+    <circle cx="225" cy="50" r="35" fill="url(#leftPop)"/>
+    <text x="225" y="60" text-anchor="middle" font-size="32">✊</text>
+    
+    <foreignObject x="20" y="95" width="410" height="50">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 28px; font-weight: 700;
+        color: #F48FB1; direction: rtl;
+      ">
+        پوپولیسم چپ
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="20" y="150" width="410" height="50">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 18px;
+        color: #CE93D8; direction: rtl;
+      ">
+        دشمن: ثروتمندان و شرکت‌ها
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="25" y="200" width="400" height="160">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 16px; color: #FCE4EC;
+        direction: rtl; text-align: center; line-height: 1.9;
+      ">
+        • ضد اولیگارشی مالی
+        <br/>• عدالت اقتصادی
+        <br/>• ملی‌سازی صنایع
+        <br/>• ضد نئولیبرالیسم
+        <br/>• فراگیر (شامل اقلیت‌ها)
+      </div>
+    </foreignObject>
+    
+    <!-- Examples -->
+    <rect x="20" y="340" width="410" height="30" rx="15" fill="rgba(233,30,99,0.3)"/>
+    <foreignObject x="20" y="340" width="410" height="30">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px; color: #F8BBD9;
+        direction: rtl;
+      ">
+        سندرز • کوربین • پودموس • چاوز
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Right Populism Card -->
+  <g transform="translate(570, 380)">
+    <rect width="450" height="380" rx="20" fill="rgba(63,81,181,0.1)" stroke="#3F51B5" stroke-width="2"/>
+    
+    <!-- Icon -->
+    <circle cx="225" cy="50" r="35" fill="url(#rightPop)"/>
+    <text x="225" y="60" text-anchor="middle" font-size="32">🏴</text>
+    
+    <foreignObject x="20" y="95" width="410" height="50">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 28px; font-weight: 700;
+        color: #9FA8DA; direction: rtl;
+      ">
+        پوپولیسم راست
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="20" y="150" width="410" height="50">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; display: flex; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 18px;
+        color: #B39DDB; direction: rtl;
+      ">
+        دشمن: مهاجران و نخبگان فرهنگی
+      </div>
+    </foreignObject>
+    
+    <foreignObject x="25" y="200" width="400" height="160">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 16px; color: #E8EAF6;
+        direction: rtl; text-align: center; line-height: 1.9;
+      ">
+        • ضد مهاجرت
+        <br/>• هویت ملی/قومی
+        <br/>• ضد جهانی‌شدن
+        <br/>• ضد نخبگان لیبرال
+        <br/>• انحصاری (طرد «دیگران»)
+      </div>
+    </foreignObject>
+    
+    <!-- Examples -->
+    <rect x="20" y="340" width="410" height="30" rx="15" fill="rgba(63,81,181,0.3)"/>
+    <foreignObject x="20" y="340" width="410" height="30">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        width: 100%; height: 100%;
+        display: flex; align-items: center; justify-content: center;
+        font-family: 'Vazirmatn', sans-serif; font-size: 14px; color: #C5CAE9;
+        direction: rtl;
+      ">
+        ترامپ • لوپن • اوربان • سالوینی
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Key Difference Box -->
+  <rect x="60" y="790" width="960" height="140" rx="20" fill="rgba(255,255,255,0.05)"/>
+  
+  <foreignObject x="80" y="805" width="920" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; color: white;
+      direction: rtl; text-align: center;
+    ">
+      <div style="font-size: 22px; font-weight: 700; color: #FFC107; margin-bottom: 15px;">
+        🔑 تفاوت کلیدی: چه کسی «مردم» است؟
+      </div>
+      <div style="display: flex; justify-content: space-around; font-size: 17px;">
+        <span style="color: #F48FB1;">چپ: طبقه کارگر و محرومان اقتصادی</span>
+        <span style="color: #9FA8DA;">راست: اکثریت قومی/فرهنگی «بومی»</span>
+      </div>
+    </div>
+  </foreignObject>
+  
+  <!-- Characteristics Grid -->
+  <foreignObject x="60" y="950" width="960" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 22px; font-weight: 700;
+      color: #FFCC80; direction: rtl; text-align: center;
+    ">
+      ویژگی‌های مشترک هر دو نوع پوپولیسم
+    </div>
+  </foreignObject>
+  
+  <g transform="translate(60, 1000)">
+    <rect x="0" y="0" width="230" height="70" rx="10" fill="rgba(255,152,0,0.2)"/>
+    <foreignObject x="5" y="10" width="220" height="50">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 15px; color: #FFE0B2;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        رهبر کاریزماتیک
+        <br/>«من صدای شما هستم»
+      </div>
+    </foreignObject>
+    
+    <rect x="245" y="0" width="230" height="70" rx="10" fill="rgba(255,152,0,0.2)"/>
+    <foreignObject x="250" y="10" width="220" height="50">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 15px; color: #FFE0B2;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        ضد نهادهای واسط
+        <br/>رسانه، احزاب، دادگاه
+      </div>
+    </foreignObject>
+    
+    <rect x="490" y="0" width="230" height="70" rx="10" fill="rgba(255,152,0,0.2)"/>
+    <foreignObject x="495" y="10" width="220" height="50">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 15px; color: #FFE0B2;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        ساده‌سازی مسائل
+        <br/>راه‌حل‌های فوری
+      </div>
+    </foreignObject>
+    
+    <rect x="735" y="0" width="230" height="70" rx="10" fill="rgba(255,152,0,0.2)"/>
+    <foreignObject x="740" y="10" width="220" height="50">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="
+        font-family: 'Vazirmatn', sans-serif; font-size: 15px; color: #FFE0B2;
+        direction: rtl; text-align: center; line-height: 1.5;
+      ">
+        دشمن‌سازی
+        <br/>«ما» علیه «آنها»
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Academic Note -->
+  <rect x="60" y="1090" width="960" height="80" rx="15" fill="rgba(156,39,176,0.15)"/>
+  <foreignObject x="80" y="1100" width="920" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 18px; color: #E1BEE7;
+      direction: rtl; text-align: center; line-height: 1.6;
+    ">
+      💡 <strong>نکته آکادمیک:</strong> کاس مود (Cas Mudde) پوپولیسم را «ایدئولوژی نازک» می‌نامد
+      <br/>— به تنهایی کامل نیست و همیشه با ایدئولوژی‌های دیگر ترکیب می‌شود
+    </div>
+  </foreignObject>
+  
+  <!-- Navigation -->
+  <foreignObject x="60" y="1190" width="480" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 16px; color: #78909C;
+      direction: rtl;
+    ">
+      ← قبلی: پوپولیسم چیست؟
+    </div>
+  </foreignObject>
+  
+  <foreignObject x="540" y="1190" width="480" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="
+      font-family: 'Vazirmatn', sans-serif; font-size: 16px; color: #78909C;
+      direction: rtl; text-align: left;
+    ">
+      بعدی: چهره‌های پوپولیسم →
+    </div>
+  </foreignObject>
+  
+  <!-- Slide Number -->
+  <rect x="480" y="1280" width="120" height="45" rx="22" fill="rgba(230,81,0,0.6)"/>
+  <text x="540" y="1310" text-anchor="middle" 
+        font-family="Vazirmatn, sans-serif" font-size="22" font-weight="bold" fill="white">۵۷</text>
+</svg>

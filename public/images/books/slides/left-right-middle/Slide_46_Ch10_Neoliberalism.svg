@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad46" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAFAFA"/>
+      <stop offset="100%" style="stop-color:#E8F5E9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad46)"/>
+
+  <rect x="0" y="0" width="1080" height="130" fill="#2E7D32"/>
+  <foreignObject x="0" y="28" width="1080" height="85">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 36px; font-weight: 800; margin: 0;">
+        🌐 نئولیبرالیسم: محبوب‌ترین «دشمن»!
+      </h1>
+      <p style="color: #C8E6C9; font-size: 20px; margin: 8px 0 0 0;">واژه‌ای که همه استفاده می‌کنند ولی کمتر کسی تعریفش را می‌داند</p>
+    </div>
+  </foreignObject>
+
+  <!-- Definition -->
+  <rect x="80" y="160" width="920" height="150" rx="22" fill="#FFFFFF" stroke="#2E7D32" stroke-width="3"/>
+  <foreignObject x="100" y="178" width="880" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #2E7D32; font-size: 20px; font-weight: 700; margin: 0 0 10px 0;">📚 تعریف دقیق</p>
+      <p style="color: #424242; font-size: 22px; line-height: 1.7; margin: 0;">
+        احیای لیبرالیسم کلاسیک از دهه ۱۹۸۰ به بعد:<br/>
+        <strong style="color: #2E7D32;">خصوصی‌سازی</strong> + <strong style="color: #2E7D32;">مقررات‌زدایی</strong> + <strong style="color: #2E7D32;">تجارت آزاد</strong> + <strong style="color: #2E7D32;">کوچک‌سازی دولت</strong>
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- 5 Pillars -->
+  <rect x="60" y="340" width="300" height="170" rx="18" fill="#FFFFFF" stroke="#FF9800" stroke-width="2"/>
+  <foreignObject x="70" y="355" width="280" height="145">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 32px; margin: 0;">🏭</p>
+      <h3 style="color: #FF9800; font-size: 20px; margin: 8px 0;">خصوصی‌سازی</h3>
+      <p style="color: #616161; font-size: 15px; margin: 0;">دولت مالک بد است<br/>بخش خصوصی کاراتر</p>
+    </div>
+  </foreignObject>
+
+  <rect x="390" y="340" width="300" height="170" rx="18" fill="#FFFFFF" stroke="#4CAF50" stroke-width="2"/>
+  <foreignObject x="400" y="355" width="280" height="145">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 32px; margin: 0;">📋</p>
+      <h3 style="color: #4CAF50; font-size: 20px; margin: 8px 0;">مقررات‌زدایی</h3>
+      <p style="color: #616161; font-size: 15px; margin: 0;">قوانین کمتر = نوآوری بیشتر<br/>بوروکراسی = ضد رشد</p>
+    </div>
+  </foreignObject>
+
+  <rect x="720" y="340" width="300" height="170" rx="18" fill="#FFFFFF" stroke="#2196F3" stroke-width="2"/>
+  <foreignObject x="730" y="355" width="280" height="145">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 32px; margin: 0;">🌍</p>
+      <h3 style="color: #2196F3; font-size: 20px; margin: 8px 0;">جهانی‌سازی</h3>
+      <p style="color: #616161; font-size: 15px; margin: 0;">تجارت آزاد بین‌المللی<br/>حذف تعرفه‌ها + مرزهای باز</p>
+    </div>
+  </foreignObject>
+
+  <rect x="170" y="540" width="340" height="170" rx="18" fill="#FFFFFF" stroke="#9C27B0" stroke-width="2"/>
+  <foreignObject x="180" y="555" width="320" height="145">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 32px; margin: 0;">💰</p>
+      <h3 style="color: #9C27B0; font-size: 20px; margin: 8px 0;">کاهش مالیات</h3>
+      <p style="color: #616161; font-size: 15px; margin: 0;">مالیات کمتر = سرمایه‌گذاری بیشتر<br/>ثروت «چکه» می‌کند به پایین</p>
+    </div>
+  </foreignObject>
+
+  <rect x="570" y="540" width="340" height="170" rx="18" fill="#FFFFFF" stroke="#D32F2F" stroke-width="2"/>
+  <foreignObject x="580" y="555" width="320" height="145">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 32px; margin: 0;">📉</p>
+      <h3 style="color: #D32F2F; font-size: 20px; margin: 8px 0;">ریاضت اقتصادی</h3>
+      <p style="color: #616161; font-size: 15px; margin: 0;">بودجه متعادل + کاهش هزینه<br/>دولت رفاه = لوکس غیرضروری</p>
+    </div>
+  </foreignObject>
+
+  <!-- Washington Consensus -->
+  <rect x="100" y="745" width="880" height="130" rx="18" fill="#2E7D32"/>
+  <foreignObject x="120" y="762" width="840" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 10px 0;">🏛️ اجماع واشنگتن (Washington Consensus)</p>
+      <p style="color: #FFFFFF; font-size: 20px; line-height: 1.7; margin: 0;">
+        دستورالعمل IMF و بانک جهانی برای کشورهای در حال توسعه:<br/>
+        خصوصی کن | آزاد کن | بودجه‌ات را ببند = <strong style="color: #F9A825;">نسخه نئولیبرال</strong>
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Question -->
+  <rect x="250" y="910" width="580" height="70" rx="35" fill="#F9A825"/>
+  <foreignObject x="260" y="923" width="560" height="48">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #1A237E; font-size: 24px; font-weight: 700; margin: 0;">
+        ❓ آیا ایران هم «نئولیبرال» شد؟
+      </p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="1015" width="1080" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #9E9E9E; font-size: 18px; margin: 0;">📖 فصل ۱۰ | اسلاید ۳ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

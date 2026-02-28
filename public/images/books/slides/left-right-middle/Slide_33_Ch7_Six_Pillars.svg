@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad33" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E"/>
+      <stop offset="100%" style="stop-color:#16213E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad33)"/>
+
+  <foreignObject x="0" y="35" width="1080" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 40px; font-weight: 800; margin: 0;">
+        🏛️ ۶ ستون سوسیال‌دموکراسی
+      </h1>
+    </div>
+  </foreignObject>
+
+  <!-- Pillar 1 -->
+  <rect x="60" y="140" width="300" height="220" rx="18" fill="rgba(233,30,99,0.15)" stroke="#E91E63" stroke-width="2"/>
+  <foreignObject x="75" y="155" width="270" height="195">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 42px; margin: 0;">🗳️</p>
+      <h3 style="color: #E91E63; font-size: 22px; margin: 8px 0;">دموکراسی پارلمانی</h3>
+      <p style="color: #E0E0E0; font-size: 17px; line-height: 1.6; margin: 0;">
+        تغییر از مسیر صندوق رأی<br/>
+        انتخابات آزاد + احزاب رقیب<br/>
+        نه انقلاب، نه خشونت
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Pillar 2 -->
+  <rect x="390" y="140" width="300" height="220" rx="18" fill="rgba(76,175,80,0.15)" stroke="#4CAF50" stroke-width="2"/>
+  <foreignObject x="405" y="155" width="270" height="195">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 42px; margin: 0;">🏥</p>
+      <h3 style="color: #4CAF50; font-size: 22px; margin: 8px 0;">دولت رفاه</h3>
+      <p style="color: #E0E0E0; font-size: 17px; line-height: 1.6; margin: 0;">
+        بهداشت رایگان<br/>
+        آموزش رایگان<br/>
+        بیمه بیکاری و بازنشستگی
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Pillar 3 -->
+  <rect x="720" y="140" width="300" height="220" rx="18" fill="rgba(255,152,0,0.15)" stroke="#FF9800" stroke-width="2"/>
+  <foreignObject x="735" y="155" width="270" height="195">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 42px; margin: 0;">⚖️</p>
+      <h3 style="color: #FF9800; font-size: 22px; margin: 8px 0;">مالیات پیشرونده</h3>
+      <p style="color: #E0E0E0; font-size: 17px; line-height: 1.6; margin: 0;">
+        پولدارها بیشتر بدهند<br/>
+        بازتوزیع ثروت<br/>
+        کاهش شکاف طبقاتی
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Pillar 4 -->
+  <rect x="60" y="390" width="300" height="220" rx="18" fill="rgba(33,150,243,0.15)" stroke="#2196F3" stroke-width="2"/>
+  <foreignObject x="75" y="405" width="270" height="195">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 42px; margin: 0;">🤝</p>
+      <h3 style="color: #2196F3; font-size: 22px; margin: 8px 0;">دیالوگ اجتماعی</h3>
+      <p style="color: #E0E0E0; font-size: 17px; line-height: 1.6; margin: 0;">
+        مذاکره کارگر-کارفرما<br/>
+        اتحادیه‌های قوی<br/>
+        سه‌جانبه‌گرایی
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Pillar 5 -->
+  <rect x="390" y="390" width="300" height="220" rx="18" fill="rgba(156,39,176,0.15)" stroke="#9C27B0" stroke-width="2"/>
+  <foreignObject x="405" y="405" width="270" height="195">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 42px; margin: 0;">📈</p>
+      <h3 style="color: #9C27B0; font-size: 22px; margin: 8px 0;">اقتصاد مختلط</h3>
+      <p style="color: #E0E0E0; font-size: 17px; line-height: 1.6; margin: 0;">
+        بازار آزاد + تنظیم‌گری<br/>
+        بخش خصوصی + بخش عمومی<br/>
+        سرمایه‌داری مهار‌شده
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Pillar 6 -->
+  <rect x="720" y="390" width="300" height="220" rx="18" fill="rgba(249,168,37,0.15)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="735" y="405" width="270" height="195">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 42px; margin: 0;">🌍</p>
+      <h3 style="color: #F9A825; font-size: 22px; margin: 8px 0;">همبستگی بین‌المللی</h3>
+      <p style="color: #E0E0E0; font-size: 17px; line-height: 1.6; margin: 0;">
+        کمک به کشورهای فقیر<br/>
+        حقوق بشر جهانی<br/>
+        سازمان‌های بین‌المللی
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Key Insight -->
+  <rect x="100" y="645" width="880" height="120" rx="18" fill="rgba(249,168,37,0.1)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="120" y="660" width="840" height="95">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 10px 0;">💡 تفاوت کلیدی با کمونیسم</p>
+      <p style="color: #FFFFFF; font-size: 22px; margin: 0;">
+        سوسیال‌دموکراسی سرمایه‌داری را <strong style="color: #4CAF50;">اصلاح</strong> می‌کند<br/>
+        کمونیسم سرمایه‌داری را <strong style="color: #D32F2F;">نابود</strong> می‌کند
+      </p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="810" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۷ | اسلاید ۳ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

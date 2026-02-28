@@ -1,0 +1,54 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#C62828;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#8E24AA;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <rect width="1080" height="1350" fill="#F8BBD0" opacity="0.2" />
+    <rect width="1080" height="1350" fill="white" />
+    
+    <rect width="1080" height="120" fill="url(#headerGrad)" />
+    <foreignObject x="40" y="35" width="1000" height="60">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif; color: white; font-size: 34px; font-weight: bold;">
+            خلاصه مدیریتی: از بحران تا بالندگی
+        </div>
+    </foreignObject>
+    
+    <foreignObject x="60" y="160" width="960" height="140">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif; color: #880E4F; font-size: 50px; font-weight: 900; line-height: 1.3;">
+            چشم‌انداز ایران ۱۴۳۰ (افق ۲۵ ساله)
+        </div>
+    </foreignObject>
+    
+    <g transform="translate(60, 310)">
+    
+        <rect y="0" width="960" height="280" rx="28" fill="white" style="filter: drop-shadow(0 12px 24px rgba(136,14,79,0.12));" />
+        <rect x="0" y="0" width="16" height="280" rx="8" fill="#8E24AA" />
+        
+        <foreignObject x="50" y="35" width="860" height="210">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif;">
+                <div style="color: #8E24AA; font-size: 26px; font-weight: 800; margin-bottom: 20px;">رؤیای تحقق‌یافته</div>
+                <div style="color: #2D3436; font-size: 44px; font-weight: 900; line-height: 1.6;">
+                    ایرانی با درآمد سرانه بالای ۱۵ هزار دلار، رشد ۵٪ پایدار، احیای نیمی از منابع آب و رتبه «آزاد» در شاخص‌های جهانی.
+                </div>
+            </div>
+        </foreignObject>
+        
+        <rect y="320" width="960" height="190" rx="28" fill="white" style="filter: drop-shadow(0 12px 24px rgba(136,14,79,0.12));" />
+        <rect x="0" y="320" width="16" height="190" rx="8" fill="#2E7D32" />
+        
+        <foreignObject x="50" y="355" width="860" height="120">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn', sans-serif;">
+                <div style="color: #2E7D32; font-size: 26px; font-weight: 800; margin-bottom: 20px;">جایگاه جهانی</div>
+                <div style="color: #2D3436; font-size: 32px; font-weight: 500; line-height: 1.6;">
+                    الگوی منطقه‌ای دموکراسی، هاب فناوری خاورمیانه و عضو محترم و مؤثر در تمام نهادهای پیشرفته بین‌المللی.
+                </div>
+            </div>
+        </foreignObject>
+        
+    </g>
+    
+    <text x="540" y="1310" text-anchor="middle" font-family="'Vazirmatn', sans-serif" font-size="22" font-weight="bold" fill="#880E4F">نقشه راه ایران نوین • ۲۰۲۶</text>
+    </svg>
+    

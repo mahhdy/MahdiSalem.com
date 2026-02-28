@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad36" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D0D1F"/>
+      <stop offset="100%" style="stop-color:#1A1A2E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad36)"/>
+
+  <foreignObject x="0" y="35" width="1080" height="75">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 38px; font-weight: 800; margin: 0;">
+        🧠 متفکران کلیدی چپ نو
+      </h1>
+    </div>
+  </foreignObject>
+
+  <!-- Thinker 1: Gramsci -->
+  <rect x="60" y="130" width="300" height="260" rx="18" fill="rgba(233,30,99,0.12)" stroke="#E91E63" stroke-width="2"/>
+  <foreignObject x="75" y="145" width="270" height="235">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 40px; margin: 0;">📜</p>
+      <h3 style="color: #E91E63; font-size: 22px; margin: 8px 0;">آنتونیو گرامشی</h3>
+      <p style="color: #B0BEC5; font-size: 14px; margin: 0 0 10px 0;">۱۸۹۱-۱۹۳۷ | ایتالیا</p>
+      <p style="color: #E0E0E0; font-size: 16px; line-height: 1.6; margin: 0;">
+        <strong style="color: #F9A825;">هژمونی فرهنگی:</strong><br/>
+        طبقه حاکم از طریق فرهنگ حکومت می‌کند، نه فقط زور
+      </p>
+      <p style="color: #E91E63; font-size: 14px; margin-top: 8px;">«جنگ موضعی» فرهنگی</p>
+    </div>
+  </foreignObject>
+
+  <!-- Thinker 2: Marcuse -->
+  <rect x="390" y="130" width="300" height="260" rx="18" fill="rgba(156,39,176,0.12)" stroke="#9C27B0" stroke-width="2"/>
+  <foreignObject x="405" y="145" width="270" height="235">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 40px; margin: 0;">🎓</p>
+      <h3 style="color: #9C27B0; font-size: 22px; margin: 8px 0;">هربرت مارکوزه</h3>
+      <p style="color: #B0BEC5; font-size: 14px; margin: 0 0 10px 0;">۱۸۹۸-۱۹۷۹ | آلمان-آمریکا</p>
+      <p style="color: #E0E0E0; font-size: 16px; line-height: 1.6; margin: 0;">
+        <strong style="color: #F9A825;">انسان تک‌ساحتی:</strong><br/>
+        سرمایه‌داری از طریق مصرف‌گرایی بردگی می‌آفریند
+      </p>
+      <p style="color: #9C27B0; font-size: 14px; margin-top: 8px;">پدر معنوی نسل ۶۸</p>
+    </div>
+  </foreignObject>
+
+  <!-- Thinker 3: Foucault -->
+  <rect x="720" y="130" width="300" height="260" rx="18" fill="rgba(33,150,243,0.12)" stroke="#2196F3" stroke-width="2"/>
+  <foreignObject x="735" y="145" width="270" height="235">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 40px; margin: 0;">🔍</p>
+      <h3 style="color: #2196F3; font-size: 22px; margin: 8px 0;">میشل فوکو</h3>
+      <p style="color: #B0BEC5; font-size: 14px; margin: 0 0 10px 0;">۱۹۲۶-۱۹۸۴ | فرانسه</p>
+      <p style="color: #E0E0E0; font-size: 16px; line-height: 1.6; margin: 0;">
+        <strong style="color: #F9A825;">قدرت همه‌جاست:</strong><br/>
+        دانش = قدرت | نهادها بدن و ذهن را کنترل می‌کنند
+      </p>
+      <p style="color: #2196F3; font-size: 14px; margin-top: 8px;">تحلیل زندان، تیمارستان، جنسیت</p>
+    </div>
+  </foreignObject>
+
+  <!-- Thinker 4: Chomsky -->
+  <rect x="170" y="420" width="340" height="260" rx="18" fill="rgba(76,175,80,0.12)" stroke="#4CAF50" stroke-width="2"/>
+  <foreignObject x="185" y="435" width="310" height="235">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 40px; margin: 0;">🗣️</p>
+      <h3 style="color: #4CAF50; font-size: 22px; margin: 8px 0;">نوام چامسکی</h3>
+      <p style="color: #B0BEC5; font-size: 14px; margin: 0 0 10px 0;">۱۹۲۸-حال | آمریکا</p>
+      <p style="color: #E0E0E0; font-size: 16px; line-height: 1.6; margin: 0;">
+        <strong style="color: #F9A825;">ساختن رضایت:</strong><br/>
+        رسانه‌ها ابزار مهندسی افکار عمومی‌اند<br/>
+        آنارکو-سندیکالیست | ضد امپریالیسم
+      </p>
+      <p style="color: #4CAF50; font-size: 14px; margin-top: 8px;">مهم‌ترین روشنفکر زنده</p>
+    </div>
+  </foreignObject>
+
+  <!-- Thinker 5: Said -->
+  <rect x="570" y="420" width="340" height="260" rx="18" fill="rgba(255,152,0,0.12)" stroke="#FF9800" stroke-width="2"/>
+  <foreignObject x="585" y="435" width="310" height="235">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 40px; margin: 0;">📚</p>
+      <h3 style="color: #FF9800; font-size: 22px; margin: 8px 0;">ادوارد سعید</h3>
+      <p style="color: #B0BEC5; font-size: 14px; margin: 0 0 10px 0;">۱۹۳۵-۲۰۰۳ | فلسطین-آمریکا</p>
+      <p style="color: #E0E0E0; font-size: 16px; line-height: 1.6; margin: 0;">
+        <strong style="color: #F9A825;">شرق‌شناسی:</strong><br/>
+        غرب «شرق» را اختراع کرد<br/>
+        نقد استعمار و نژادپرستی فرهنگی
+      </p>
+      <p style="color: #FF9800; font-size: 14px; margin-top: 8px;">پایه‌گذار مطالعات پسااستعماری</p>
+    </div>
+  </foreignObject>
+
+  <!-- Insight -->
+  <rect x="100" y="715" width="880" height="100" rx="18" fill="rgba(249,168,37,0.1)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="120" y="732" width="840" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0;">
+        💡 وجه مشترک: قدرت فقط در اقتصاد نیست<br/>
+        <span style="color: #FFFFFF; font-weight: 400;">فرهنگ، زبان، دانش، رسانه = ابزارهای سلطه</span>
+      </p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="855" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #CE93D8; font-size: 18px; margin: 0;">📖 فصل ۸ | اسلاید ۲ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

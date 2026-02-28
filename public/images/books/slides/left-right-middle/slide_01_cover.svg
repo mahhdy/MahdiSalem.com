@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <defs>
+    <style>
+      @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+      * {
+        font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif;
+      }
+      .rtl {
+        direction: rtl;
+        text-align: right;
+      }
+      .center {
+        text-align: center;
+      }
+    </style>
+    
+    <!-- Gradients -->
+    <linearGradient id="navyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#303F9F;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="redBlueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C62828;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6A1B9A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F9A825;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F57F17;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="emeraldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2E7D32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#43A047;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A148C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6A1B9A;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="spectrumGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C62828;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2E7D32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1565C0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Filters -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.2"/>
+    </filter>
+    
+    <filter id="shadowSmall" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.15"/>
+    </filter>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1080" height="1350" fill="#1A237E"/>
+                    <rect width="1080" height="1350" fill="url(#navyGradient)"/>
+  
+  <!-- Content -->
+  
+  <!-- Decorative circles -->
+  <circle cx="950" cy="150" r="200" fill="#F9A825" opacity="0.08"/>
+  <circle cx="130" cy="1200" r="250" fill="#F9A825" opacity="0.08"/>
+  <circle cx="540" cy="675" r="400" fill="#FFFFFF" opacity="0.03"/>
+  
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1080" height="6" fill="#F9A825"/>
+  
+  <!-- Book badge -->
+  <rect x="380" y="60" width="320" height="50" rx="25" fill="#F9A825" filter="url(#shadowSmall)"/>
+  <text x="540" y="95" text-anchor="middle" fill="#1A237E" font-size="22" font-weight="700">📚 کتاب جدید منتشر شد</text>
+  
+  <!-- Main title card -->
+  <rect x="50" y="150" width="980" height="380" rx="24" fill="#FFFFFF" filter="url(#shadow)"/>
+  
+  <!-- Title content -->
+  <text x="540" y="250" text-anchor="middle" fill="#1A237E" font-size="64" font-weight="900">راست یا چپ؛</text>
+  <text x="540" y="340" text-anchor="middle" fill="#F9A825" font-size="64" font-weight="900">میانه کجاست؟</text>
+  <text x="540" y="420" text-anchor="middle" fill="#424242" font-size="26">درآمدی بر طیف سیاسی از انقلاب فرانسه تا عصر ترامپ</text>
+  <text x="540" y="470" text-anchor="middle" fill="#616161" font-size="22">نویسنده: مهدی سالم</text>
+  
+  <!-- Political spectrum bar -->
+  <rect x="80" y="580" width="920" height="40" rx="20" fill="#E0E0E0"/>
+  <rect x="80" y="580" width="307" height="40" rx="20" fill="#C62828"/>
+  <rect x="387" y="580" width="306" height="40" fill="#2E7D32"/>
+  <rect x="693" y="580" width="307" height="40" rx="20" fill="#1565C0"/>
+  
+  <!-- Spectrum labels -->
+  <text x="233" y="660" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="600">چپ</text>
+  <text x="540" y="660" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="600">میانه</text>
+  <text x="847" y="660" text-anchor="middle" fill="#FFFFFF" font-size="20" font-weight="600">راست</text>
+  
+  <!-- Features section -->
+  <rect x="50" y="710" width="470" height="280" rx="20" fill="rgba(255,255,255,0.1)" />
+  <rect x="560" y="710" width="470" height="280" rx="20" fill="rgba(255,255,255,0.1)" />
+  
+  <!-- Feature 1 -->
+  <text x="285" y="770" text-anchor="middle" fill="#F9A825" font-size="48">🏛️</text>
+  <text x="285" y="820" text-anchor="middle" fill="#FFFFFF" font-size="24" font-weight="700">۱۷ فصل جامع</text>
+  <text x="285" y="855" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="18">تاریخ کامل اندیشه سیاسی</text>
+  
+  <!-- Feature 2 -->
+  <text x="285" y="920" text-anchor="middle" fill="#F9A825" font-size="36">👥</text>
+  <text x="285" y="960" text-anchor="middle" fill="#FFFFFF" font-size="20">+۱۰۰ شخصیت کلیدی</text>
+  
+  <!-- Feature 3 -->
+  <text x="795" y="770" text-anchor="middle" fill="#F9A825" font-size="48">📊</text>
+  <text x="795" y="820" text-anchor="middle" fill="#FFFFFF" font-size="24" font-weight="700">نمودار و تایم‌لاین</text>
+  <text x="795" y="855" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="18">تصویرسازی داده‌محور</text>
+  
+  <!-- Feature 4 -->
+  <text x="795" y="920" text-anchor="middle" fill="#F9A825" font-size="36">🌍</text>
+  <text x="795" y="960" text-anchor="middle" fill="#FFFFFF" font-size="20">تحلیل تطبیقی جهانی</text>
+  
+  <!-- Call to action -->
+  <rect x="200" y="1050" width="680" height="80" rx="40" fill="#F9A825" filter="url(#shadowSmall)"/>
+  <text x="540" y="1105" text-anchor="middle" fill="#1A237E" font-size="28" font-weight="700">👆 سوایپ کن برای اطلاعات بیشتر</text>
+  
+  <!-- Footer -->
+  <text x="540" y="1200" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="18">برای دسترسی به کتاب کامل:</text>
+  <text x="540" y="1240" text-anchor="middle" fill="#F9A825" font-size="22" font-weight="600">🔗 لینک در بیو</text>
+  
+  <!-- Bottom accent -->
+  <rect x="0" y="1344" width="1080" height="6" fill="#F9A825"/>
+
+</svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad56" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#BF360C"/>
+      <stop offset="50%" style="stop-color:#D84315"/>
+      <stop offset="100%" style="stop-color:#E64A19"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad56)"/>
+  <circle cx="900" cy="180" r="130" fill="#F9A825" opacity="0.06"/>
+
+  <rect x="320" y="60" width="440" height="55" rx="27" fill="none" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="320" y="68" width="440" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; margin: 0;">فصل سیزدهم | راست نو و پوپولیسم</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="60" y="160" width="960" height="280">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 56px; font-weight: 900; line-height: 1.4;">
+        ما مردم واقعی<br/>
+        <span style="color: #F9A825;">علیه نخبگان دروغگو!</span>
+      </h1>
+      <p style="color: #FFCCBC; font-size: 26px; margin-top: 25px; line-height: 1.6;">
+        پوپولیسم: خطرناک‌ترین جریان سیاسی قرن ۲۱<br/>
+        یا صدای واقعی مردم فراموش‌شده؟
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Definition -->
+  <rect x="80" y="470" width="920" height="170" rx="22" fill="rgba(0,0,0,0.25)" stroke="rgba(249,168,37,0.4)" stroke-width="2"/>
+  <foreignObject x="100" y="488" width="880" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">📚 تعریف: پوپولیسم چیست؟</p>
+      <p style="color: #FFFFFF; font-size: 22px; line-height: 1.8; margin: 0;">
+        تقسیم جامعه به دو گروه: <strong style="color: #F9A825;">«مردم خالص»</strong> vs <strong style="color: #EF5350;">«نخبگان فاسد»</strong><br/>
+        ادعا: فقط ما صدای واقعی مردم هستیم<br/>
+        نتیجه: ضد نهادها، ضد رسانه، ضد روشنفکر
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Key Figures -->
+  <foreignObject x="60" y="675" width="960" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 15px 0;">🌍 چهره‌های راست نو در جهان</p>
+      <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <div style="text-align: center;">
+          <p style="font-size: 36px; margin: 0;">🇺🇸</p>
+          <p style="color: #FFFFFF; font-size: 16px; margin: 3px 0 0 0;">ترامپ<br/><span style="color: #FFCCBC; font-size: 13px;">MAGA</span></p>
+        </div>
+        <div style="text-align: center;">
+          <p style="font-size: 36px; margin: 0;">🇫🇷</p>
+          <p style="color: #FFFFFF; font-size: 16px; margin: 3px 0 0 0;">لوپن<br/><span style="color: #FFCCBC; font-size: 13px;">تجمع ملی</span></p>
+        </div>
+        <div style="text-align: center;">
+          <p style="font-size: 36px; margin: 0;">🇭🇺</p>
+          <p style="color: #FFFFFF; font-size: 16px; margin: 3px 0 0 0;">اوربان<br/><span style="color: #FFCCBC; font-size: 13px;">دموکراسی غیرلیبرال</span></p>
+        </div>
+        <div style="text-align: center;">
+          <p style="font-size: 36px; margin: 0;">🇧🇷</p>
+          <p style="color: #FFFFFF; font-size: 16px; margin: 3px 0 0 0;">بولسونارو<br/><span style="color: #FFCCBC; font-size: 13px;">ترامپ استوایی</span></p>
+        </div>
+        <div style="text-align: center;">
+          <p style="font-size: 36px; margin: 0;">🇮🇳</p>
+          <p style="color: #FFFFFF; font-size: 16px; margin: 3px 0 0 0;">مودی<br/><span style="color: #FFCCBC; font-size: 13px;">هندوتوا</span></p>
+        </div>
+        <div style="text-align: center;">
+          <p style="font-size: 36px; margin: 0;">🇮🇹</p>
+          <p style="color: #FFFFFF; font-size: 16px; margin: 3px 0 0 0;">ملونی<br/><span style="color: #FFCCBC; font-size: 13px;">برادران ایتالیا</span></p>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Key Question -->
+  <rect x="200" y="850" width="680" height="100" rx="20" fill="rgba(0,0,0,0.3)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="220" y="865" width="640" height="75">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; font-weight: 700; margin: 0 0 8px 0;">❓ سؤال اساسی</p>
+      <p style="color: #FFFFFF; font-size: 22px; margin: 0;">
+        آیا پوپولیسم <strong style="color: #F9A825;">بیماری</strong> دموکراسی است یا <strong style="color: #F9A825;">داروی</strong> آن؟
+      </p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="990" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۱۳ | اسلاید ۱ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

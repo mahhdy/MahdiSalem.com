@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad28" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAFAFA"/>
+      <stop offset="100%" style="stop-color:#ECEFF1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad28)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1080" height="130" fill="#212121"/>
+  <foreignObject x="0" y="35" width="1080" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #F9A825; font-size: 38px; font-weight: 800; margin: 0;">
+        Ⓐ ۶ گرایش اصلی آنارشیسم
+      </h1>
+      <p style="color: #BDBDBD; font-size: 20px; margin: 8px 0 0 0;">یک هدف، شش مسیر متفاوت</p>
+    </div>
+  </foreignObject>
+
+  <!-- Card 1: Anarcho-Communism -->
+  <rect x="60" y="160" width="300" height="230" rx="18" fill="#FFFFFF" stroke="#D32F2F" stroke-width="3"/>
+  <rect x="60" y="160" width="300" height="55" rx="18" fill="#D32F2F"/>
+  <foreignObject x="65" y="170" width="290" height="42">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 20px; font-weight: 800; margin: 0;">آنارکو-کمونیسم</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="75" y="228" width="270" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #424242; font-size: 16px; line-height: 1.7; margin: 0;">
+        ✦ اشتراک در همه‌چیز<br/>
+        ✦ «از هر کس... به هر کس...»<br/>
+        ✦ بدون پول و بازار
+      </p>
+      <p style="color: #D32F2F; font-size: 14px; margin-top: 10px;">👤 کروپوتکین | مالاتستا</p>
+    </div>
+  </foreignObject>
+
+  <!-- Card 2: Anarcho-Syndicalism -->
+  <rect x="390" y="160" width="300" height="230" rx="18" fill="#FFFFFF" stroke="#FF9800" stroke-width="3"/>
+  <rect x="390" y="160" width="300" height="55" rx="18" fill="#FF9800"/>
+  <foreignObject x="395" y="170" width="290" height="42">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 20px; font-weight: 800; margin: 0;">آنارکو-سندیکالیسم</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="405" y="228" width="270" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #424242; font-size: 16px; line-height: 1.7; margin: 0;">
+        ✦ اتحادیه‌های کارگری = هسته<br/>
+        ✦ اعتصاب عمومی = سلاح<br/>
+        ✦ کارگران مالک کارخانه
+      </p>
+      <p style="color: #FF9800; font-size: 14px; margin-top: 10px;">👤 CNT اسپانیا | رودولف راکر</p>
+    </div>
+  </foreignObject>
+
+  <!-- Card 3: Mutualism -->
+  <rect x="720" y="160" width="300" height="230" rx="18" fill="#FFFFFF" stroke="#4CAF50" stroke-width="3"/>
+  <rect x="720" y="160" width="300" height="55" rx="18" fill="#4CAF50"/>
+  <foreignObject x="725" y="170" width="290" height="42">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 20px; font-weight: 800; margin: 0;">موتوآلیسم (تعاون)</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="735" y="228" width="270" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #424242; font-size: 16px; line-height: 1.7; margin: 0;">
+        ✦ بازار + بدون سرمایه‌دار<br/>
+        ✦ بانک‌های مردمی<br/>
+        ✦ مالکیت شخصی (نه خصوصی)
+      </p>
+      <p style="color: #4CAF50; font-size: 14px; margin-top: 10px;">👤 پرودون | کارسون</p>
+    </div>
+  </foreignObject>
+
+  <!-- Card 4: Individualist Anarchism -->
+  <rect x="60" y="420" width="300" height="230" rx="18" fill="#FFFFFF" stroke="#2196F3" stroke-width="3"/>
+  <rect x="60" y="420" width="300" height="55" rx="18" fill="#2196F3"/>
+  <foreignObject x="65" y="430" width="290" height="42">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 20px; font-weight: 800; margin: 0;">آنارشیسم فردگرا</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="75" y="488" width="270" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #424242; font-size: 16px; line-height: 1.7; margin: 0;">
+        ✦ فرد = واحد اصلی<br/>
+        ✦ حاکمیت بر خود<br/>
+        ✦ مرز با لیبرتارینیسم
+      </p>
+      <p style="color: #2196F3; font-size: 14px; margin-top: 10px;">👤 اشتیرنر | تاکر</p>
+    </div>
+  </foreignObject>
+
+  <!-- Card 5: Eco-Anarchism -->
+  <rect x="390" y="420" width="300" height="230" rx="18" fill="#FFFFFF" stroke="#2E7D32" stroke-width="3"/>
+  <rect x="390" y="420" width="300" height="55" rx="18" fill="#2E7D32"/>
+  <foreignObject x="395" y="430" width="290" height="42">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 20px; font-weight: 800; margin: 0;">اکو-آنارشیسم</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="405" y="488" width="270" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #424242; font-size: 16px; line-height: 1.7; margin: 0;">
+        ✦ سلطه بر طبیعت = سلطه بر انسان<br/>
+        ✦ اکولوژی اجتماعی<br/>
+        ✦ شهرداری آزادی‌خواه
+      </p>
+      <p style="color: #2E7D32; font-size: 14px; margin-top: 10px;">👤 موری بوکچین</p>
+    </div>
+  </foreignObject>
+
+  <!-- Card 6: Anarcha-Feminism -->
+  <rect x="720" y="420" width="300" height="230" rx="18" fill="#FFFFFF" stroke="#9C27B0" stroke-width="3"/>
+  <rect x="720" y="420" width="300" height="55" rx="18" fill="#9C27B0"/>
+  <foreignObject x="725" y="430" width="290" height="42">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 20px; font-weight: 800; margin: 0;">آنارکا-فمینیسم</p>
+    </div>
+  </foreignObject>
+  <foreignObject x="735" y="488" width="270" height="150">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: right; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #424242; font-size: 16px; line-height: 1.7; margin: 0;">
+        ✦ پدرسالاری = اولین سلطه<br/>
+        ✦ آزادی زنان = آزادی همه<br/>
+        ✦ نقد دولت و خانواده
+      </p>
+      <p style="color: #9C27B0; font-size: 14px; margin-top: 10px;">👤 اِما گلدمن | لوئیز میشل</p>
+    </div>
+  </foreignObject>
+
+  <!-- Key Insight -->
+  <rect x="100" y="690" width="880" height="130" rx="18" fill="#212121"/>
+  <foreignObject x="120" y="708" width="840" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">❓ سؤال کلیدی این فصل</p>
+      <p style="color: #FFFFFF; font-size: 24px; margin: 0;">
+        چرا با وجود تنوع، آنارشیسم هرگز به <strong style="color: #F9A825;">قدرت پایدار</strong> نرسید؟<br/>
+        آیا «بی‌دولتی» عملی است؟
+      </p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="860" width="1080" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #9E9E9E; font-size: 18px; margin: 0;">📖 فصل ۶ | اسلاید ۳ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad53" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#212121"/>
+      <stop offset="100%" style="stop-color:#000000"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad53)"/>
+  <rect x="0" y="0" width="1080" height="6" fill="#D32F2F"/>
+
+  <foreignObject x="0" y="30" width="1080" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #D32F2F; font-size: 42px; font-weight: 800; margin: 0;">
+        ☠️ کالبدشکافی فاشیسم
+      </h1>
+      <p style="color: #757575; font-size: 20px; margin: 8px 0 0 0;">بدترین محصول ناسیونالیسم افراطی</p>
+    </div>
+  </foreignObject>
+
+  <!-- 8 Characteristics -->
+  <rect x="60" y="130" width="300" height="120" rx="16" fill="rgba(211,47,47,0.12)" stroke="#D32F2F" stroke-width="1"/>
+  <foreignObject x="75" y="142" width="270" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #D32F2F; font-size: 16px; font-weight: 700; margin: 0;">① رهبر کاریزماتیک</p>
+      <p style="color: #BDBDBD; font-size: 15px; margin: 5px 0 0 0;">یک نفر = ملت | اطاعت بی‌چون‌وچرا<br/>هیتلر | موسولینی | فرانکو</p>
+    </div>
+  </foreignObject>
+
+  <rect x="390" y="130" width="300" height="120" rx="16" fill="rgba(211,47,47,0.12)" stroke="#D32F2F" stroke-width="1"/>
+  <foreignObject x="405" y="142" width="270" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #D32F2F; font-size: 16px; font-weight: 700; margin: 0;">② ناسیونالیسم افراطی</p>
+      <p style="color: #BDBDBD; font-size: 15px; margin: 5px 0 0 0;">نژاد/ملت برتر<br/>خلوص نژادی | ضد مهاجرت</p>
+    </div>
+  </foreignObject>
+
+  <rect x="720" y="130" width="300" height="120" rx="16" fill="rgba(211,47,47,0.12)" stroke="#D32F2F" stroke-width="1"/>
+  <foreignObject x="735" y="142" width="270" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #D32F2F; font-size: 16px; font-weight: 700; margin: 0;">③ دشمن‌سازی</p>
+      <p style="color: #BDBDBD; font-size: 15px; margin: 5px 0 0 0;">یهودی | کمونیست | اقلیت<br/>«آن‌ها» مقصر بدبختی «ما»اند</p>
+    </div>
+  </foreignObject>
+
+  <rect x="60" y="275" width="300" height="120" rx="16" fill="rgba(211,47,47,0.12)" stroke="#D32F2F" stroke-width="1"/>
+  <foreignObject x="75" y="287" width="270" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #D32F2F; font-size: 16px; font-weight: 700; margin: 0;">④ نظامی‌گری</p>
+      <p style="color: #BDBDBD; font-size: 15px; margin: 5px 0 0 0;">قدرت نظامی = افتخار ملی<br/>جنگ = تولد دوباره ملت</p>
+    </div>
+  </foreignObject>
+
+  <rect x="390" y="275" width="300" height="120" rx="16" fill="rgba(211,47,47,0.12)" stroke="#D32F2F" stroke-width="1"/>
+  <foreignObject x="405" y="287" width="270" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #D32F2F; font-size: 16px; font-weight: 700; margin: 0;">⑤ ضد دموکراسی</p>
+      <p style="color: #BDBDBD; font-size: 15px; margin: 5px 0 0 0;">پارلمان = ضعف | رأی = هرج‌ومرج<br/>حزب واحد | سانسور کامل</p>
+    </div>
+  </foreignObject>
+
+  <rect x="720" y="275" width="300" height="120" rx="16" fill="rgba(211,47,47,0.12)" stroke="#D32F2F" stroke-width="1"/>
+  <foreignObject x="735" y="287" width="270" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #D32F2F; font-size: 16px; font-weight: 700; margin: 0;">⑥ کنترل اقتصاد</p>
+      <p style="color: #BDBDBD; font-size: 15px; margin: 5px 0 0 0;">نه سوسیالیسم نه لیبرالیسم<br/>کورپوراتیسم: دولت + شرکت‌ها</p>
+    </div>
+  </foreignObject>
+
+  <rect x="170" y="420" width="340" height="120" rx="16" fill="rgba(211,47,47,0.12)" stroke="#D32F2F" stroke-width="1"/>
+  <foreignObject x="185" y="432" width="310" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #D32F2F; font-size: 16px; font-weight: 700; margin: 0;">⑦ نوستالژی گذشته طلایی</p>
+      <p style="color: #BDBDBD; font-size: 15px; margin: 5px 0 0 0;">بازگشت به عظمت از دست رفته<br/>«دوباره بزرگ کردن» ملت</p>
+    </div>
+  </foreignObject>
+
+  <rect x="570" y="420" width="340" height="120" rx="16" fill="rgba(211,47,47,0.12)" stroke="#D32F2F" stroke-width="1"/>
+  <foreignObject x="585" y="432" width="310" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #D32F2F; font-size: 16px; font-weight: 700; margin: 0;">⑧ ضد روشنفکری</p>
+      <p style="color: #BDBDBD; font-size: 15px; margin: 5px 0 0 0;">عقل ضعیف است | غریزه بالاتر<br/>کتاب‌سوزی | تبلیغات احساسی</p>
+    </div>
+  </foreignObject>
+
+  <!-- Key Insight -->
+  <rect x="100" y="575" width="880" height="140" rx="20" fill="rgba(249,168,37,0.1)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="120" y="593" width="840" height="110">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 10px 0;">🤔 فاشیسم چپ بود یا راست؟</p>
+      <p style="color: #FFFFFF; font-size: 20px; line-height: 1.7; margin: 0;">
+        ظاهراً ضد <strong style="color: #EF5350;">سرمایه‌داری</strong> (← چپ) + ضد <strong style="color: #42A5F5;">کمونیسم</strong> (← راست)<br/>
+        اما: <strong style="color: #F9A825;">سلسله‌مراتب + نژادگرایی + ضد برابری</strong> = قطعاً راست افراطی<br/>
+        نام «سوسیالیسم ملی» فریبکارانه بود
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Cases -->
+  <foreignObject x="60" y="748" width="960" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <div style="display: flex; justify-content: center; gap: 20px;">
+        <span style="background: #D32F2F; padding: 10px 20px; border-radius: 20px; color: #FFFFFF; font-size: 17px;">🇮🇹 ایتالیا ۱۹۲۲</span>
+        <span style="background: #D32F2F; padding: 10px 20px; border-radius: 20px; color: #FFFFFF; font-size: 17px;">🇩🇪 آلمان ۱۹۳۳</span>
+        <span style="background: #D32F2F; padding: 10px 20px; border-radius: 20px; color: #FFFFFF; font-size: 17px;">🇪🇸 اسپانیا ۱۹۳۹</span>
+        <span style="background: #D32F2F; padding: 10px 20px; border-radius: 20px; color: #FFFFFF; font-size: 17px;">🇯🇵 ژاپن ۱۹۳۰s</span>
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Eco Quote -->
+  <rect x="180" y="860" width="720" height="90" rx="16" fill="rgba(0,0,0,0.4)" stroke="#757575" stroke-width="1"/>
+  <foreignObject x="195" y="873" width="690" height="65">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 20px; font-style: italic; margin: 0;">
+        «فاشیسم ابدی بازمی‌گردد؛ هر بار با لباسی جدید»
+      </p>
+      <p style="color: #F9A825; font-size: 15px; margin: 5px 0 0 0;">— اومبرتو اکو</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="980" width="1080" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #757575; font-size: 18px; margin: 0;">📖 فصل ۱۲ | اسلاید ۲ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>

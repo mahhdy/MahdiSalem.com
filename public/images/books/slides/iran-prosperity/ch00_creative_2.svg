@@ -1,0 +1,33 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1080" height="1350" fill="#FCFCFC"/>
+    
+    <!-- Top Half: Virtuous Cycle -->
+    <g transform="translate(540, 350)">
+        <text y="-250" text-anchor="middle" font-family="'Vazirmatn'" font-size="44" font-weight="900" fill="#00796B">چرخه فاضل (سناریوی گذار)</text>
+        <rect x="-150" y="-40" width="300" height="80" rx="10" fill="#E0F2F2" stroke="#00897B" stroke-width="2"/>
+        <text text-anchor="middle" y="10" font-family="'Vazirmatn'" font-size="28" font-weight="900" fill="#004D40">آبادانی ملموس</text>
+        <path d="M160,0 A160,160 0 1,1 -160,0 A160,160 0 1,1 160,0" fill="none" stroke="#26A69A" stroke-width="6" stroke-dasharray="10 5"/>
+        <circle cx="160" cy="0" r="10" fill="#26A69A"/>
+        <foreignObject x="180" y="-40" width="200" height="80"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Vazirmatn'; font-size:20px; color:#00695C; font-weight:700; direction:rtl;">اعتماد عمومی</div></foreignObject>
+        <circle cx="0" cy="160" r="10" fill="#26A69A"/>
+        <foreignObject x="-100" y="180" width="200" height="80"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Vazirmatn'; font-size:20px; color:#00695C; font-weight:700; text-align:center;">ثبات سیاسی</div></foreignObject>
+        <circle cx="-160" cy="0" r="10" fill="#26A69A"/>
+        <foreignObject x="-380" y="-40" width="200" height="80"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Vazirmatn'; font-size:20px; color:#00695C; font-weight:700;">تحکیم دموکراسی</div></foreignObject>
+    </g>
+
+    <line x1="100" y1="675" x2="980" y2="675" stroke="#EEE" stroke-width="10" stroke-linecap="round"/>
+
+    <g transform="translate(540, 1030)">
+        <text y="-250" text-anchor="middle" font-family="'Vazirmatn'" font-size="44" font-weight="900" fill="#C62828">چرخه باطل (وضع موجود)</text>
+        <rect x="-150" y="-40" width="300" height="80" rx="10" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+        <text text-anchor="middle" y="10" font-family="'Vazirmatn'" font-size="28" font-weight="900" fill="#B71C1C">بحران معیشت</text>
+        <path d="M160,0 A160,160 0 1,1 -160,0 A160,160 0 1,1 160,0" fill="none" stroke="#EF5350" stroke-width="6" stroke-dasharray="10 5"/>
+        <circle cx="160" cy="0" r="10" fill="#EF5350"/>
+        <foreignObject x="180" y="-40" width="200" height="80"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Vazirmatn'; font-size:20px; color:#B71C1C; font-weight:700; direction:rtl;">نارضایتی</div></foreignObject>
+        <circle cx="0" cy="160" r="10" fill="#EF5350"/>
+        <foreignObject x="-100" y="180" width="200" height="80"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Vazirmatn'; font-size:20px; color:#B71C1C; font-weight:700; text-align:center;">بی‌ثباتی / سرکوب</div></foreignObject>
+        <circle cx="-160" cy="0" r="10" fill="#EF5350"/>
+        <foreignObject x="-380" y="-40" width="200" height="80"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:'Vazirmatn'; font-size:20px; color:#B71C1C; font-weight:700;">انسداد سیاسی</div></foreignObject>
+    </g>
+    </svg>
+    

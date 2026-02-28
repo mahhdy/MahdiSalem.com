@@ -1,0 +1,55 @@
+<svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1080" height="1350" fill="#212121"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="1080" height="100" fill="#FFC107"/>
+    <foreignObject x="0" y="0" width="1080" height="100">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: 'Vazirmatn', sans-serif; font-size: 36px; font-weight: 800; color: #212121; direction: rtl;">
+            فصل ۱۳: بازسازی و توسعه اقتصادی
+        </div>
+    </foreignObject>
+
+    <text x="540" y="220" text-anchor="middle" font-family="'Vazirmatn'" font-size="52" font-weight="900" fill="white">رهایی از «تله نفت»</text>
+
+    <!-- Infographic: Oil Well to Integrated Circuit -->
+    <g transform="translate(540, 650)">
+        <!-- The Shift Arrow -->
+        <path d="M-400,0 L350,0" stroke="#FFC107" stroke-width="60" stroke-linecap="round"/>
+        <path d="M350,0 L420,0 L420,-30 L480,0 L420,30 L420,0 Z" fill="#FFC107"/>
+        
+        <!-- From: Oil -->
+        <g transform="translate(-350, 0)">
+            <rect x="-80" y="-200" width="160" height="400" rx="20" fill="rgba(0,0,0,0.8)" stroke="#FFC107"/>
+            <text y="-140" text-anchor="middle" font-family="'Vazirmatn'" font-size="32" font-weight="900" fill="#FFC107">وضع موجود</text>
+            <text y="0" text-anchor="middle" font-family="'Vazirmatn'" font-size="60">🛢️</text>
+            <text y="100" text-anchor="middle" font-family="'Vazirmatn'" font-size="24" fill="white">اقتصاد رانتی</text>
+            <text y="140" text-anchor="middle" font-family="'Vazirmatn'" font-size="20" fill="#9E9E9E">بسته و منزوی</text>
+        </g>
+
+        <!-- To: Knowledge/Tech -->
+        <g transform="translate(300, 0)">
+            <rect x="-80" y="-200" width="160" height="400" rx="20" fill="rgba(33,150,243,0.2)" stroke="#2196F3" stroke-width="3"/>
+            <text y="-140" text-anchor="middle" font-family="'Vazirmatn'" font-size="32" font-weight="900" fill="#2196F3">آرمان نوین</text>
+            <text y="0" text-anchor="middle" font-family="'Vazirmatn'" font-size="60">💻</text>
+            <text y="100" text-anchor="middle" font-family="'Vazirmatn'" font-size="24" fill="white">اقتصاد پویا</text>
+            <text y="140" text-anchor="middle" font-family="'Vazirmatn'" font-size="20" fill="#9E9E9E">جهانی و خلاق</text>
+        </g>
+    </g>
+
+    <!-- Key point in the middle of arrow -->
+    <rect x="440" y="625" width="200" height="50" rx="25" fill="#FFC107"/>
+    <text x="540" y="658" text-anchor="middle" font-family="'Vazirmatn'" font-size="20" font-weight="900" fill="#212121">تحول ساختاری</text>
+
+    <!-- Summary -->
+    <foreignObject x="100" y="1050" width="880" height="200">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; font-family: 'Vazirmatn'; color: #BDBDBD; font-size: 24px; text-align: center; line-height: 1.8;">
+            نفت باید از <strong style="color: white;">ابزار بقای قدرت</strong> به <strong style="color: #FFC107;">موتور محرکِ زیرساخت‌ها</strong> تبدیل شود.<br/>
+            ثروت ملی متعلق به نسل‌هاست، نه حاکمان.
+        </div>
+    </foreignObject>
+
+    <!-- Slide ID -->
+    <circle cx="1020" cy="1300" r="30" fill="#FFC107"/>
+    <text x="1020" y="1310" text-anchor="middle" font-family="'Vazirmatn', sans-serif" font-size="24" font-weight="bold" fill="#212121">۱۳۲</text>
+    </svg>
+    

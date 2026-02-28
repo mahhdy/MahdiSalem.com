@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad39" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D47A1"/>
+      <stop offset="50%" style="stop-color:#1565C0"/>
+      <stop offset="100%" style="stop-color:#0D47A1"/>
+    </linearGradient>
+    <radialGradient id="spot39" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" style="stop-color:rgba(249,168,37,0.12)"/>
+      <stop offset="100%" style="stop-color:rgba(0,0,0,0)"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgGrad39)"/>
+  <rect width="1080" height="1080" fill="url(#spot39)"/>
+
+  <!-- Decorative -->
+  <text x="830" y="300" font-size="250" fill="#F9A825" opacity="0.06" font-weight="900">♛</text>
+
+  <!-- Part Badge -->
+  <rect x="340" y="50" width="400" height="50" rx="25" fill="rgba(255,255,255,0.15)"/>
+  <foreignObject x="340" y="55" width="400" height="42">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 22px; margin: 0;">🔵 بخش سوم: جهان راست</p>
+    </div>
+  </foreignObject>
+
+  <rect x="370" y="118" width="340" height="50" rx="25" fill="none" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="370" y="125" width="340" height="42">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 24px; margin: 0;">فصل نهم | محافظه‌کاری</p>
+    </div>
+  </foreignObject>
+
+  <!-- Main Title -->
+  <foreignObject x="60" y="200" width="960" height="280">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <h1 style="color: #FFFFFF; font-size: 62px; font-weight: 900; line-height: 1.4; text-shadow: 0 4px 30px rgba(0,0,0,0.3);">
+        تغییر ندهید!<br/>
+        <span style="color: #F9A825;">نظم موجود حکمت دارد</span>
+      </h1>
+      <p style="color: #90CAF9; font-size: 26px; margin-top: 25px; line-height: 1.6;">
+        محافظه‌کاری: قدیمی‌ترین و پایدارترین ایدئولوژی راست<br/>
+        از برک تا ریگان، از چرچیل تا ترامپ
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Definition Box -->
+  <rect x="80" y="510" width="920" height="170" rx="22" fill="rgba(0,0,0,0.25)" stroke="rgba(249,168,37,0.4)" stroke-width="2"/>
+  <foreignObject x="100" y="528" width="880" height="140">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 22px; font-weight: 700; margin: 0 0 12px 0;">📚 تعریف: محافظه‌کاری چیست؟</p>
+      <p style="color: #FFFFFF; font-size: 24px; line-height: 1.8; margin: 0;">
+        نگهداشت <strong style="color: #F9A825;">سنت</strong>، <strong style="color: #F9A825;">نظم</strong> و <strong style="color: #F9A825;">نهادهای اجتماعی</strong><br/>
+        بدبینی نسبت به تغییرات رادیکال | احترام به تجربه تاریخی
+      </p>
+    </div>
+  </foreignObject>
+
+  <!-- Key Pillars -->
+  <rect x="60" y="720" width="220" height="140" rx="16" fill="rgba(255,255,255,0.08)"/>
+  <foreignObject x="70" y="735" width="200" height="115">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 32px; margin: 0;">📜</p>
+      <p style="color: #FFFFFF; font-size: 18px; margin: 8px 0 0 0;">سنت و میراث<br/><span style="color: #90CAF9; font-size: 14px;">تجربه نسل‌ها</span></p>
+    </div>
+  </foreignObject>
+
+  <rect x="300" y="720" width="220" height="140" rx="16" fill="rgba(255,255,255,0.08)"/>
+  <foreignObject x="310" y="735" width="200" height="115">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 32px; margin: 0;">⛪</p>
+      <p style="color: #FFFFFF; font-size: 18px; margin: 8px 0 0 0;">نهادهای اجتماعی<br/><span style="color: #90CAF9; font-size: 14px;">خانواده، کلیسا، محله</span></p>
+    </div>
+  </foreignObject>
+
+  <rect x="540" y="720" width="220" height="140" rx="16" fill="rgba(255,255,255,0.08)"/>
+  <foreignObject x="550" y="735" width="200" height="115">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 32px; margin: 0;">⚖️</p>
+      <p style="color: #FFFFFF; font-size: 18px; margin: 8px 0 0 0;">نظم و قانون<br/><span style="color: #90CAF9; font-size: 14px;">ثبات بر هرج‌ومرج</span></p>
+    </div>
+  </foreignObject>
+
+  <rect x="780" y="720" width="240" height="140" rx="16" fill="rgba(255,255,255,0.08)"/>
+  <foreignObject x="790" y="735" width="220" height="115">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="font-size: 32px; margin: 0;">🐢</p>
+      <p style="color: #FFFFFF; font-size: 18px; margin: 8px 0 0 0;">تغییر تدریجی<br/><span style="color: #90CAF9; font-size: 14px;">نه انقلاب، نه رادیکال</span></p>
+    </div>
+  </foreignObject>
+
+  <!-- Hero Quote -->
+  <rect x="200" y="895" width="680" height="90" rx="16" fill="rgba(249,168,37,0.15)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="215" y="908" width="650" height="65">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #FFFFFF; font-size: 22px; font-style: italic; margin: 0;">
+        «جامعه قراردادی میان مردگان، زندگان و نازادگان است»
+      </p>
+      <p style="color: #F9A825; font-size: 16px; margin: 5px 0 0 0;">— ادموند برک</p>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="1020" width="1080" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction: rtl; text-align: center; font-family: 'Vazirmatn', Tahoma, sans-serif;">
+      <p style="color: #F9A825; font-size: 18px; margin: 0;">📖 فصل ۹ | اسلاید ۱ از ۵</p>
+    </div>
+  </foreignObject>
+
+</svg>
