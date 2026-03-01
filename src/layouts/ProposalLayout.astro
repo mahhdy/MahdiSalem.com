@@ -1,0 +1,311 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import ReadingProgress from "../components/ReadingProgress.astro";
+import TableOfContents from "../components/TableOfContents.astro";
+import Rating from "../components/Rating.astro";
+import WidthToggle from "../components/WidthToggle.astro";
+import RelatedContent from "../components/RelatedContent.astro";
+import ShareButtons from "../components/ShareButtons.astro";
+import Giscus from "../components/Giscus.astro";
+import { t, getLocalizedPath, stripLangPrefix, type Locale } from "../i18n";
+
+interface Chapter {
+  slug: string;
+  title: string;
+  chapterNumber: number;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  lang: Locale;
+  bookSlug: string;
+  chapterNumber?: number;
+  chapters: Chapter[];
+  headings: { depth: number; slug: string; text: string }[];
+  prevChapter?: Chapter;
+  nextChapter?: Chapter;
+  draft?: boolean;
+  author?: string;
+  showHeader?: boolean;
+  tags?: string[];
+  slug?: string;
+}
+
+const {
+  title,
+  description,
+  lang,
+  bookSlug,
+  chapterNumber,
+  chapters,
+  headings,
+  prevChapter,
+  nextChapter,
+  draft = false,
+  author = "مهدی سالم",
+  showHeader = false,
+  tags = [],
+  slug = "",
+} = Astro.props;
+
+const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const currentSlug = slug || stripLangPrefix(Astro.url.pathname);
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  contentType="book_chapter"
+  category="books"
+>
+  <ReadingProgress />
+
+  <!-- Sticky Width Toggle Header -->
+  <WidthToggle title={title} author={author} lang={lang} />
+
+  <div class="content-with-header container-wide py-10">
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- Sidebar: Chapter list -->
+      <aside class="lg:w-64 shrink-0">
+        <div class="sticky top-20">
+          <h2
+            class="text-sm font-bold mb-3 uppercase tracking-wider text-text-muted dark:text-text-dark-muted"
+          >
+            {t("books.toc", lang)}
+          </h2>
+          <nav aria-label="Book chapters">
+            <ul class="space-y-1 text-sm">
+              {
+                chapters.map((ch) => (
+                  <li>
+                    <a
+                      href={getLocalizedPath(
+                        `books/${bookSlug}/${ch.slug}`,
+                        lang,
+                      )}
+                      class:list={[
+                        "block px-3 py-1.5 rounded-lg no-underline transition-colors",
+                        ch.chapterNumber === chapterNumber
+                          ? "bg-primary/10 text-primary dark:bg-primary-light/10 dark:text-primary-light font-medium"
+                          : "text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light hover:bg-surface-dim dark:hover:bg-surface-dark-dim",
+                      ]}
+                    >
+                      {ch.title}
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </nav>
+
+          {/* GitHub "Suggest Edit" */}
+          <a
+            href={`https://github.com/Mahhdy/mahdisalem.com/issues/new?template=suggest-edit.md&title=Edit suggestion: ${encodeURIComponent(title)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-6 flex items-center gap-2 text-sm text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+              ></path></svg
+            >
+            {t("books.suggest_edit", lang)}
+          </a>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <div class="flex-1 min-w-0">
+        {
+          headings.length > 0 && (
+            <div class="mb-8 lg:hidden">
+              <TableOfContents headings={headings} lang={lang} />
+            </div>
+          )
+        }
+
+        <article>
+          {
+            showHeader && (
+              <h1 class="text-3xl md:text-4xl font-bold mb-8">{title}</h1>
+            )
+          }
+          <div class="prose article-content">
+            {
+              draft && (
+                <div class="bg-amber-50 dark:bg-amber-900/20 text-amber-800 dark:text-amber-200 px-4 py-3 rounded-lg mb-8 border border-amber-200 dark:border-amber-800/50 flex items-start gap-3">
+                  <svg
+                    class="w-5 h-5 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                    />
+                  </svg>
+                  <div>
+                    <p class="text-sm font-bold mb-1">
+                      {t("draft.label", lang)}
+                    </p>
+                    <p class="text-sm opacity-90 m-0">
+                      {t("draft.warning", lang)}
+                    </p>
+                  </div>
+                </div>
+              )
+            }
+            <slot />
+          </div>
+        </article>
+
+        <!-- Rating -->
+        <Rating
+          contentId={currentSlug.startsWith("books/")
+            ? currentSlug
+            : `books/${bookSlug}/${currentSlug.split("/").pop()}`}
+          lang={lang}
+        />
+
+        <!-- Tags -->
+        {
+          tags.length > 0 && (
+            <div class="mt-8 pt-6 border-t border-border dark:border-border-dark">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="text-sm text-text-muted dark:text-text-dark-muted">
+                  {t("articles.tags", lang)}:
+                </span>
+                {tags.map((tag) => (
+                  <a
+                    href={getLocalizedPath(
+                      `tags/${encodeURIComponent(tag)}`,
+                      lang,
+                    )}
+                    class="text-xs px-2.5 py-1 rounded-full border border-border dark:border-border-dark text-text-muted dark:text-text-dark-muted hover:border-primary hover:text-primary dark:hover:border-primary-light dark:hover:text-primary-light transition-colors no-underline"
+                  >
+                    #{tag}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )
+        }
+
+        <!-- Related Content -->
+        {
+          tags.length > 0 && (
+            <RelatedContent
+              lang={lang}
+              currentTags={tags}
+              currentSlug={currentSlug}
+            />
+          )
+        }
+
+        <!-- Share & Comments -->
+        <div class="mt-8 pt-6 border-t border-border dark:border-border-dark">
+          <ShareButtons title={title} url={articleUrl} lang={lang} />
+        </div>
+
+        <Giscus lang={lang} />
+
+        <!-- Chapter navigation -->
+        <nav
+          class="mt-12 pt-6 border-t border-border dark:border-border-dark flex justify-between"
+          aria-label="Chapter navigation"
+        >
+          {
+            prevChapter ? (
+              <a
+                href={getLocalizedPath(
+                  `books/${bookSlug}/${prevChapter.slug}`,
+                  lang,
+                )}
+                class="flex items-center gap-2 text-sm no-underline text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light"
+              >
+                <svg
+                  class="w-4 h-4 rtl:rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+                <span>
+                  <span class="block text-xs">
+                    {t("books.prev_chapter", lang)}
+                  </span>
+                  <span class="font-medium">{prevChapter.title}</span>
+                </span>
+              </a>
+            ) : (
+              <div />
+            )
+          }
+
+          {
+            nextChapter ? (
+              <a
+                href={getLocalizedPath(
+                  `books/${bookSlug}/${nextChapter.slug}`,
+                  lang,
+                )}
+                class="flex items-center gap-2 text-sm no-underline text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light text-end"
+              >
+                <span>
+                  <span class="block text-xs">
+                    {t("books.next_chapter", lang)}
+                  </span>
+                  <span class="font-medium">{nextChapter.title}</span>
+                </span>
+                <svg
+                  class="w-4 h-4 rtl:rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </a>
+            ) : (
+              <div />
+            )
+          }
+        </nav>
+      </div>
+
+      <!-- Right sidebar: In-page TOC (desktop only) -->
+      {
+        headings.length > 0 && (
+          <aside class="hidden lg:block w-56 shrink-0">
+            <div class="sticky top-20">
+              <TableOfContents headings={headings} lang={lang} />
+            </div>
+          </aside>
+        )
+      }
+    </div>
+  </div>
+</BaseLayout>

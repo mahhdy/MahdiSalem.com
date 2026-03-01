@@ -12,7 +12,13 @@ interface Props {
   category: Category;
   items: any[];
   lang: "fa" | "en";
-  contentType: "articles" | "books" | "statements" | "multimedia" | "dialogues";
+  contentType:
+    | "articles"
+    | "books"
+    | "proposals"
+    | "statements"
+    | "multimedia"
+    | "dialogues";
 }
 
 const { category, items, lang, contentType } = Astro.props;

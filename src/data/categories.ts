@@ -13,7 +13,7 @@ export interface Category {
   descriptionEn?: string;
   imagePath: string;
   parentCategory?: string;
-  contentTypes: ('articles' | 'books' | 'statements' | 'multimedia' | 'dialogues')[];
+  contentTypes: ('articles' | 'books' | 'proposals' | 'statements' | 'multimedia' | 'dialogues')[];
 }
 
 export const categories: Category[] = [
@@ -26,7 +26,7 @@ export const categories: Category[] = [
     descriptionEn: 'Studies on the nature of being, existence, and reality',
     imagePath: '/images/categories/ontology.svg',
     parentCategory: 'philosophy',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'epistemology',
@@ -36,7 +36,7 @@ export const categories: Category[] = [
     descriptionEn: 'Theories of knowledge, belief, and justification',
     imagePath: '/images/categories/epistemology.svg',
     parentCategory: 'philosophy',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'semantics',
@@ -46,7 +46,7 @@ export const categories: Category[] = [
     descriptionEn: 'Study of meaning and reference in language and logic',
     imagePath: '/images/categories/semantics.svg',
     parentCategory: 'philosophy',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'methodology',
@@ -56,7 +56,7 @@ export const categories: Category[] = [
     descriptionEn: 'Methods of philosophical research and inquiry',
     imagePath: '/images/categories/methodology.svg',
     parentCategory: 'philosophy',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'philosophy-other',
@@ -66,7 +66,7 @@ export const categories: Category[] = [
     descriptionEn: 'General and miscellaneous philosophical topics',
     imagePath: '/images/categories/philosophy-other.svg',
     parentCategory: 'philosophy',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'philosophy-of-politics',
@@ -76,7 +76,7 @@ export const categories: Category[] = [
     descriptionEn: 'Philosophical studies on politics and political ideologies',
     imagePath: '/images/categories/philosophy-of-politics.svg',
     parentCategory: 'philosophy',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   // Science (علم)
   {
@@ -87,7 +87,7 @@ export const categories: Category[] = [
     descriptionEn: 'Philosophical examination of scientific methods, assumptions, and results',
     imagePath: '/images/categories/philosophy-of-science.svg',
     parentCategory: 'science',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'physics',
@@ -97,7 +97,7 @@ export const categories: Category[] = [
     descriptionEn: 'Studies on physics and its foundations',
     imagePath: '/images/categories/physics.svg',
     parentCategory: 'science',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'quantum',
@@ -107,7 +107,7 @@ export const categories: Category[] = [
     descriptionEn: 'Quantum mechanics and its interpretations',
     imagePath: '/images/categories/quantum.svg',
     parentCategory: 'science',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'biology',
@@ -117,7 +117,7 @@ export const categories: Category[] = [
     descriptionEn: 'Biology topics and philosophy of biology',
     imagePath: '/images/categories/biology.svg',
     parentCategory: 'science',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'neuroscience',
@@ -127,7 +127,7 @@ export const categories: Category[] = [
     descriptionEn: 'Neuroscience and related philosophical issues',
     imagePath: '/images/categories/neuroscience.svg',
     parentCategory: 'science',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
 
   // Logic & Mathematics (منطق و ریاضیات)
@@ -139,7 +139,7 @@ export const categories: Category[] = [
     descriptionEn: 'Philosophical studies on the nature and foundations of mathematics',
     imagePath: '/images/categories/philosophy-of-mathematics.svg',
     parentCategory: 'logic-mathematics',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'meta-logic',
@@ -149,7 +149,7 @@ export const categories: Category[] = [
     descriptionEn: 'Study of properties of logical systems',
     imagePath: '/images/categories/meta-logic.svg',
     parentCategory: 'logic-mathematics',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'model-theory',
@@ -159,7 +159,7 @@ export const categories: Category[] = [
     descriptionEn: 'Study of relationship between mathematical structures and formal languages',
     imagePath: '/images/categories/model-theory.svg',
     parentCategory: 'logic-mathematics',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'proof-theory',
@@ -169,7 +169,7 @@ export const categories: Category[] = [
     descriptionEn: 'Study of structure and properties of formal proofs',
     imagePath: '/images/categories/proof-theory.svg',
     parentCategory: 'logic-mathematics',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'set-theory',
@@ -179,7 +179,7 @@ export const categories: Category[] = [
     descriptionEn: 'Set theory and foundations of mathematics',
     imagePath: '/images/categories/set-theory.svg',
     parentCategory: 'logic-mathematics',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'recursion-theory',
@@ -189,7 +189,7 @@ export const categories: Category[] = [
     descriptionEn: 'Computability theory and recursive functions',
     imagePath: '/images/categories/recursion-theory.svg',
     parentCategory: 'logic-mathematics',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
 
   // Ethics (اخلاق)
@@ -201,7 +201,7 @@ export const categories: Category[] = [
     descriptionEn: 'Ethical theories and meta-ethics',
     imagePath: '/images/categories/philosophy-of-ethics.svg',
     parentCategory: 'ethics',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'descriptive-ethics',
@@ -211,7 +211,7 @@ export const categories: Category[] = [
     descriptionEn: 'Descriptive study of morality and moral behaviors',
     imagePath: '/images/categories/descriptive-ethics.svg',
     parentCategory: 'ethics',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'prescriptive-ethics',
@@ -221,7 +221,7 @@ export const categories: Category[] = [
     descriptionEn: 'Normative and prescriptive ethics',
     imagePath: '/images/categories/prescriptive-ethics.svg',
     parentCategory: 'ethics',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'applied-ethics',
@@ -231,7 +231,7 @@ export const categories: Category[] = [
     descriptionEn: 'Application of ethical principles to real-world issues',
     imagePath: '/images/categories/applied-ethics.svg',
     parentCategory: 'ethics',
-    contentTypes: ['articles', 'books', 'statements', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
 
   // Politics (سیاست)
@@ -243,7 +243,7 @@ export const categories: Category[] = [
     descriptionEn: 'Analysis and description of political systems',
     imagePath: '/images/categories/descriptive-politics.svg',
     parentCategory: 'politics',
-    contentTypes: ['articles', 'books', 'statements', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'foundational-politics',
@@ -253,7 +253,7 @@ export const categories: Category[] = [
     descriptionEn: 'Theoretical foundations of politics and political philosophy',
     imagePath: '/images/categories/foundational-politics.svg',
     parentCategory: 'politics',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'iran',
@@ -263,7 +263,7 @@ export const categories: Category[] = [
     descriptionEn: 'Political, social, and cultural issues of Iran',
     imagePath: '/images/categories/iran.svg',
     parentCategory: 'politics',
-    contentTypes: ['articles', 'books', 'statements', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
 
   // Economics (اقتصاد)
@@ -274,7 +274,7 @@ export const categories: Category[] = [
     descriptionFa: 'مسائل اقتصادی و فلسفه اقتصاد',
     descriptionEn: 'Economic issues and philosophy of economics',
     imagePath: '/images/categories/economics.svg',
-    contentTypes: ['articles', 'books', 'statements', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
 
   // Life (زندگی)
@@ -285,14 +285,14 @@ export const categories: Category[] = [
     descriptionFa: 'تأملات درباره زندگی، تجربه و معنا',
     descriptionEn: 'Reflections on life, experience, and meaning',
     imagePath: '/images/categories/life.svg',
-    contentTypes: ['articles', 'books', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'theology',
     nameFa: 'الاهیات و دین',
     nameEn: 'Theology',
     imagePath: '/images/categories/theology.svg',
-    contentTypes: ['articles', 'books', 'statements', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
   {
     slug: 'natural-theology',
@@ -300,7 +300,7 @@ export const categories: Category[] = [
     nameEn: 'Natural Theology',
     imagePath: '/images/categories/natural-theology.svg',
     parentCategory: 'theology',
-    contentTypes: ['articles', 'books', 'statements', 'multimedia', 'dialogues'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
 ];
 
@@ -324,7 +324,7 @@ export function getCategoryDescription(slug: string, lang: 'fa' | 'en'): string 
 /**
  * Get categories filtered by content type
  */
-export function getCategoriesByContentType(contentType: 'articles' | 'books' | 'statements' | 'multimedia' | 'dialogues'): Category[] {
+export function getCategoriesByContentType(contentType: 'articles' | 'books' | 'proposals' | 'statements' | 'multimedia' | 'dialogues'): Category[] {
   return categories.filter((cat) => cat.contentTypes.includes(contentType));
 }
 

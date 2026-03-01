@@ -1,0 +1,413 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ProposalLayout from "../../../layouts/ProposalLayout.astro";
+import { t, getLocalizedPath, stripLangPrefix } from "../../../i18n";
+import PDFViewer from "../../../components/PDFViewer.astro";
+import ImageSlider from "../../../components/ImageSlider.astro";
+import { getCollection, render } from "astro:content";
+import { shouldShowHidden } from "../../../lib/hidden";
+
+const lang = "en";
+const stripPrefix = (id: string) => id.replace(/^en\//, "");
+
+export async function getStaticPaths() {
+  const strip = (id: string) => id.replace(/^en\//, "");
+  const allBooks = await getCollection(
+    "proposals",
+    ({ data }) => data.lang === "en" && !data.draft,
+  );
+  const overviews = allBooks.filter((b) => !b.data.bookSlug);
+  const chapters = allBooks.filter((b) => b.data.bookSlug);
+  const paths = [];
+
+  for (const book of overviews) {
+    const bookChapters = chapters
+      .filter((c) => c.data.bookSlug === book.id)
+      .sort(
+        (a, b) => (a.data.chapterNumber ?? 0) - (b.data.chapterNumber ?? 0),
+      );
+    paths.push({
+      params: { slug: strip(book.id) },
+      props: { entry: book, chapters: bookChapters, isChapter: false },
+    });
+  }
+
+  for (const chapter of chapters) {
+    const bookChapters = chapters
+      .filter((c) => c.data.bookSlug === chapter.data.bookSlug)
+      .sort(
+        (a, b) => (a.data.chapterNumber ?? 0) - (b.data.chapterNumber ?? 0),
+      );
+    const idx = bookChapters.findIndex((c) => c.id === chapter.id);
+    const bookSlugClean = strip(chapter.data.bookSlug!);
+    paths.push({
+      params: { slug: `${bookSlugClean}/${strip(chapter.id)}` },
+      props: {
+        entry: chapter,
+        chapters: bookChapters,
+        isChapter: true,
+        prevChapter: idx > 0 ? bookChapters[idx - 1] : undefined,
+        nextChapter:
+          idx < bookChapters.length - 1 ? bookChapters[idx + 1] : undefined,
+      },
+    });
+  }
+
+  return paths;
+}
+
+const { entry, chapters, isChapter, prevChapter, nextChapter } = Astro.props;
+
+if (entry.data.hidden && !shouldShowHidden(Astro.url)) {
+  return Astro.redirect("/404");
+}
+
+const { Content, headings } = await render(entry);
+
+const bookSlugClean = stripPrefix(entry.data.bookSlug ?? entry.id);
+
+const chapterList = chapters.map((c: any) => {
+  let slug = stripPrefix(c.id).replace(/\.mdx?$/, "");
+
+  // Strip book slug if it's already there (folder structure)
+  if (slug.startsWith(bookSlugClean + "/")) {
+    slug = slug.substring(bookSlugClean.length + 1);
+  }
+
+  return {
+    slug: slug,
+    title: c.data.title,
+    chapterNumber: c.data.chapterNumber ?? 0,
+  };
+});
+---
+
+{
+  isChapter ? (
+    <ProposalLayout
+      title={entry.data.title}
+      description={entry.data.description}
+      lang={lang}
+      bookSlug={bookSlugClean}
+      chapterNumber={entry.data.chapterNumber}
+      chapters={chapterList}
+      headings={headings}
+      prevChapter={
+        prevChapter
+          ? {
+              slug: stripPrefix(prevChapter.id),
+              title: prevChapter.data.title,
+              chapterNumber: prevChapter.data.chapterNumber ?? 0,
+            }
+          : undefined
+      }
+      nextChapter={
+        nextChapter
+          ? {
+              slug: stripPrefix(nextChapter.id),
+              title: nextChapter.data.title,
+              chapterNumber: nextChapter.data.chapterNumber ?? 0,
+            }
+          : undefined
+      }
+      draft={entry.data.draft}
+      showHeader={entry.data["show-header"]}
+    >
+      <Content />
+    </ProposalLayout>
+  ) : (
+    <BaseLayout title={entry.data.title} description={entry.data.description}>
+      <div class="container-narrow py-16">
+        {/* Full-width cover image (default) */}
+        {entry.data.coverImage &&
+          (entry.data.imageDisplay ?? "full") === "full" && (
+            <img
+              src={entry.data.coverImage}
+              alt={entry.data.title}
+              class="w-full max-w-sm mx-auto rounded-xl mb-8"
+              loading="lazy"
+            />
+          )}
+
+        {/* Side image — beside title */}
+        {entry.data.coverImage && entry.data.imageDisplay === "side" ? (
+          <div class="flex flex-col sm:flex-row sm:items-start gap-6 mb-8">
+            <img
+              src={entry.data.coverImage}
+              alt={entry.data.title}
+              class="w-full sm:w-40 md:w-48 h-auto rounded-xl object-cover shrink-0"
+              loading="lazy"
+            />
+            <div>
+              <h1 class="text-3xl md:text-4xl font-bold mb-4">
+                {entry.data.title}
+              </h1>
+              <p class="text-lg text-text-muted dark:text-text-dark-muted">
+                {entry.data.description}
+              </p>
+            </div>
+          </div>
+        ) : entry.data.coverImage && entry.data.imageDisplay === "thumbnail" ? (
+          <div class="flex items-start gap-4 mb-8">
+            <img
+              src={entry.data.coverImage}
+              alt={entry.data.title}
+              class="w-16 h-16 rounded-lg object-cover shrink-0 mt-1"
+              loading="lazy"
+            />
+            <div>
+              <h1 class="text-3xl md:text-4xl font-bold mb-4">
+                {entry.data.title}
+              </h1>
+              <p class="text-lg text-text-muted dark:text-text-dark-muted">
+                {entry.data.description}
+              </p>
+            </div>
+          </div>
+        ) : (
+          <>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">
+              {entry.data.title}
+            </h1>
+            <p class="text-lg text-text-muted dark:text-text-dark-muted mb-8">
+              {entry.data.description}
+            </p>
+          </>
+        )}
+
+        {/* Tab interface if PDF viewer is enabled or hasSlide is true */}
+        {(entry.data.pdfUrl && entry.data.showPdfViewer) ||
+        entry.data.hasSlide ? (
+          <div class="book-tabs mb-8">
+            <div class="flex justify-center mb-6">
+              <div class="inline-flex p-1 bg-surface-dim dark:bg-surface-dark-dim rounded-lg border border-border dark:border-border-dark flex-wrap justify-center">
+                {!entry.data.pdfOnly && (
+                  <button
+                    class="book-tab-btn active px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
+                    data-tab="chapters"
+                    type="button"
+                  >
+                    {t("books.chapters_tab", lang)}
+                  </button>
+                )}
+                {entry.data.pdfUrl && entry.data.showPdfViewer && (
+                  <button
+                    class={`book-tab-btn ${entry.data.pdfOnly ? "active" : ""} px-6 py-2.5 rounded-md text-sm font-medium transition-colors`}
+                    data-tab="pdf"
+                    type="button"
+                  >
+                    {t("books.pdf_tab", lang)}
+                  </button>
+                )}
+                {entry.data.hasSlide &&
+                  entry.data.slideArray &&
+                  entry.data.slideArray.length > 0 && (
+                    <button
+                      class="book-tab-btn px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
+                      data-tab="slides"
+                      type="button"
+                    >
+                      {lang === "en" ? "Slides" : "اسلایدها"}
+                    </button>
+                  )}
+              </div>
+            </div>
+
+            {!entry.data.pdfOnly && (
+              <div
+                id="chapters-tab"
+                class="book-tab-content active transition-opacity duration-300"
+              >
+                {chapterList.length > 0 && (
+                  <div class="mb-8">
+                    <h2 class="text-xl font-bold mb-4">
+                      {t("books.toc", lang)}
+                    </h2>
+                    <ol class="space-y-2">
+                      {chapterList.map((ch: any) => (
+                        <li>
+                          <a
+                            href={`/en/proposals/${bookSlugClean}/${ch.slug}`}
+                            class="flex items-center gap-3 p-3 rounded-lg border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline"
+                          >
+                            <span class="text-sm text-text-muted dark:text-text-dark-muted w-8 text-center shrink-0">
+                              {ch.chapterNumber}
+                            </span>
+                            <span class="text-text-base dark:text-text-dark font-medium">
+                              {ch.title}
+                            </span>
+                          </a>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                )}
+                <div class="prose mt-8">
+                  <Content />
+                </div>
+              </div>
+            )}
+
+            {/* PDF Tab */}
+            {entry.data.pdfUrl && entry.data.showPdfViewer && (
+              <div
+                id="pdf-tab"
+                class={`book-tab-content ${entry.data.pdfOnly ? "active" : ""} transition-opacity duration-300`}
+              >
+                <PDFViewer
+                  pdfUrl={entry.data.pdfUrl}
+                  title={entry.data.title}
+                  lang={lang}
+                />
+              </div>
+            )}
+
+            {/* Slides Tab */}
+            {entry.data.hasSlide &&
+              entry.data.slideArray &&
+              entry.data.slideArray.length > 0 && (
+                <div
+                  id="slides-tab"
+                  class="book-tab-content transition-opacity duration-300 p-2 sm:p-4 bg-surface dark:bg-surface-dark rounded-xl border border-border dark:border-border-dark my-8"
+                >
+                  <ImageSlider images={entry.data.slideArray} />
+                </div>
+              )}
+          </div>
+        ) : null}
+
+        {/* No tabs fallback */}
+        {!(entry.data.pdfUrl && entry.data.showPdfViewer) &&
+          !entry.data.hasSlide &&
+          chapterList.length > 0 && (
+            <div class="mb-8">
+              <h2 class="text-xl font-bold mb-4">{t("books.toc", lang)}</h2>
+              <ol class="space-y-2">
+                {chapterList.map((ch: any) => (
+                  <li>
+                    <a
+                      href={`/en/proposals/${bookSlugClean}/${ch.slug}`}
+                      class="flex items-center gap-3 p-3 rounded-lg border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline"
+                    >
+                      <span class="text-sm text-text-muted dark:text-text-dark-muted w-8 text-center shrink-0">
+                        {ch.chapterNumber}
+                      </span>
+                      <span class="text-text-base dark:text-text-dark font-medium">
+                        {ch.title}
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
+
+        {!(entry.data.pdfUrl && entry.data.showPdfViewer) &&
+          !entry.data.hasSlide &&
+          entry.data.pdfUrl && (
+            <a
+              href={entry.data.pdfUrl}
+              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-secondary text-white font-medium hover:bg-secondary-light transition-colors no-underline"
+              download
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+              {t("books.download_pdf", lang)}
+            </a>
+          )}
+
+        {!(entry.data.pdfUrl && entry.data.showPdfViewer) &&
+          !entry.data.hasSlide && (
+            <div class="prose mt-8">
+              <Content />
+            </div>
+          )}
+      </div>
+    </BaseLayout>
+  )
+}
+
+<style>
+  .book-tab-btn {
+    color: var(--color-text-muted);
+  }
+
+  html.dark .book-tab-btn {
+    color: var(--color-text-dark-muted);
+  }
+
+  .book-tab-btn:hover {
+    color: var(--color-text);
+  }
+
+  html.dark .book-tab-btn:hover {
+    color: var(--color-text-dark);
+  }
+
+  .book-tab-btn.active {
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    color: var(--color-primary);
+  }
+
+  html.dark .book-tab-btn.active {
+    background-color: var(--color-surface-dark);
+    color: var(--color-primary-light);
+  }
+
+  .book-tab-content {
+    display: none;
+  }
+
+  .book-tab-content.active {
+    display: block;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabButtons = document.querySelectorAll(".book-tab-btn");
+    const tabContents = document.querySelectorAll(".book-tab-content");
+
+    if (tabButtons.length === 0) return;
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const tab = button.getAttribute("data-tab");
+
+        tabButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        tabContents.forEach((content) => {
+          if (content.id === `${tab}-tab`) {
+            content.classList.add("active");
+          } else {
+            content.classList.remove("active");
+          }
+        });
+
+        window.history.replaceState(null, "", `#${tab}`);
+      });
+    });
+
+    const hash = window.location.hash.slice(1);
+    // Support chapters, pdf, or slides in hash
+    if (hash === "chapters" || hash === "pdf" || hash === "slides") {
+      const hashButton = document.querySelector(`[data-tab="${hash}"]`);
+      if (hashButton) {
+        (hashButton as HTMLElement).click();
+      }
+    }
+  });
+</script>

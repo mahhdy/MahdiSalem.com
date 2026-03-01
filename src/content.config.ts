@@ -42,6 +42,45 @@ const books = defineCollection({
   }),
 });
 
+const proposals = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/proposals' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    author: z.string().default('مهدی سالم'),
+    lang: z.enum(['fa', 'en']),
+    coverImage: z.string().optional(),
+    imageDisplay: z.enum(['full', 'side', 'thumbnail', 'hidden']).default('full'),
+    cardImage: z.enum(['show', 'hidden']).default('show'),
+    pdfUrl: z.string().optional(),
+    showPdfViewer: z.boolean().default(false),
+    pdfOnly: z.boolean().default(false),
+    hasSlide: z.boolean().default(false),
+    slideArray: z.array(z.string()).nullable().optional(),
+    publishDate: z.coerce.date().optional(),
+    updatedDate: z.coerce.date().optional(),
+    category: z.union([z.string(), z.array(z.string())]).optional(),
+    categories: z.array(z.string()).optional(),
+    subject: z.union([z.string(), z.array(z.string())]).optional(),
+    interface: z.string().optional(),
+    tags: z.array(z.string()).default([]),
+    'show-header': z.boolean().default(false),
+    draft: z.boolean().default(false),
+    hidden: z.boolean().default(false),
+    showInContents: z.boolean().default(true),
+    order: z.number().default(0),
+    bookSlug: z.string().optional(),
+    chapterNumber: z.number().optional(),
+    sourceType: z.string().optional(),
+    book: z.string().optional(),
+    authorTitle: z.string().optional(),
+    email: z.string().optional(),
+    website: z.string().optional(),
+    location: z.string().optional(),
+    date: z.coerce.date().optional(),
+  }),
+});
+
 const articles = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/articles' }),
   schema: z.object({
@@ -205,4 +244,4 @@ const dialogues = defineCollection({
   }),
 });
 
-export const collections = { books, articles, statements, wiki, multimedia, dialogues };
+export const collections = { books, proposals, articles, statements, wiki, multimedia, dialogues };
