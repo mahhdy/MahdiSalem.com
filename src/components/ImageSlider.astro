@@ -9,6 +9,14 @@ const validImages = images || [];
 
 {validImages.length > 0 && (
   <div class="premium-slider relative w-full overflow-hidden rounded-2xl shadow-xl bg-surface-dim dark:bg-surface-dark-dim aspect-[16/10] sm:aspect-[4/3] md:aspect-video group">
+    <!-- Expand/Close Buttons -->
+    <button type="button" class="slider-expand md:opacity-0 group-hover:opacity-100 opacity-100 absolute top-4 right-4 rtl:right-auto rtl:left-4 w-10 h-10 flex items-center justify-center rounded-full bg-black/40 text-white backdrop-blur-md transition-all duration-300 hover:bg-black/60 hover:scale-110 shadow-lg z-30" aria-label="Expand">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
+    </button>
+    <button type="button" class="slider-close hidden absolute top-4 right-4 rtl:right-auto rtl:left-4 w-10 h-10 items-center justify-center rounded-full bg-black/40 text-white backdrop-blur-md transition-all duration-300 hover:bg-black/60 hover:scale-110 shadow-lg z-30" aria-label="Close">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+    </button>
+
     <!-- Slides -->
     <div class="slider-track flex transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] h-full w-full">
       {validImages.map((img, i) => (
@@ -44,6 +52,34 @@ const validImages = images || [];
   </div>
 )}
 
+<style is:global>
+  .premium-slider.is-fullscreen {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100dvh !important;
+    z-index: 9999 !important;
+    border-radius: 0 !important;
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    max-width: none !important;
+    aspect-ratio: auto !important;
+  }
+  .premium-slider.is-fullscreen .slider-expand {
+    display: none !important;
+  }
+  .premium-slider.is-fullscreen .slider-close {
+    display: flex !important;
+  }
+  .premium-slider.is-fullscreen .slider-nav {
+    opacity: 1 !important;
+  }
+  .premium-slider.is-fullscreen .slide img {
+    max-height: 85vh !important;
+    max-width: 95vw !important;
+  }
+</style>
+
 <script>
   class PremiumSlider {
     container: HTMLElement;
@@ -52,9 +88,12 @@ const validImages = images || [];
     dots: NodeListOf<Element>;
     prevBtn: HTMLElement | null;
     nextBtn: HTMLElement | null;
+    expandBtn: HTMLElement | null;
+    closeBtn: HTMLElement | null;
     currentIndex: number;
     totalSlides: number;
     isRtl: boolean;
+    isFullscreen: boolean;
 
     constructor(container: HTMLElement) {
       this.container = container;
@@ -63,14 +102,15 @@ const validImages = images || [];
       this.dots = container.querySelectorAll('.slider-dot');
       this.prevBtn = container.querySelector('.slider-nav.prev');
       this.nextBtn = container.querySelector('.slider-nav.next');
+      this.expandBtn = container.querySelector('.slider-expand');
+      this.closeBtn = container.querySelector('.slider-close');
       this.currentIndex = 0;
       this.totalSlides = this.slides.length;
+      this.isFullscreen = false;
       
       // Determine RTL
       const dir = document.documentElement.getAttribute('dir') || 'ltr';
       this.isRtl = dir === 'rtl';
-
-      if (this.totalSlides <= 1) return;
 
       this.initEvents();
     }
@@ -79,27 +119,67 @@ const validImages = images || [];
       // Swipe support
       let touchStartX = 0;
       let touchEndX = 0;
-      this.container.addEventListener('touchstart', (e: any) => { touchStartX = e.changedTouches[0].screenX; }, {passive: true});
-      this.container.addEventListener('touchend', (e: any) => { 
-        touchEndX = e.changedTouches[0].screenX; 
-        this.handleSwipe(touchStartX, touchEndX);
-      }, {passive: true});
+      
+      if (this.totalSlides > 1) {
+        this.container.addEventListener('touchstart', (e: any) => { touchStartX = e.changedTouches[0].screenX; }, {passive: true});
+        this.container.addEventListener('touchend', (e: any) => { 
+          touchEndX = e.changedTouches[0].screenX; 
+          this.handleSwipe(touchStartX, touchEndX);
+        }, {passive: true});
 
-      // in RTL, left arrow is "next", right arrow is "prev" (or visually previous/next context overrides it)
-      // Visual next is right. Visual prev is left.
-      // If we are looking right and in RTL flex, it moves backwards in array.
-      // Let's just keep next/prev logical buttons independent of visual if we swap the icons or positions! Wait, I positioned them visually: next is right, prev is left.
-      
-      this.prevBtn?.addEventListener('click', () => {
-         this.goToSlide(this.isRtl ? this.currentIndex + 1 : this.currentIndex - 1);
+        this.prevBtn?.addEventListener('click', (e) => {
+           e.stopPropagation();
+           this.goToSlide(this.isRtl ? this.currentIndex + 1 : this.currentIndex - 1);
+        });
+        this.nextBtn?.addEventListener('click', (e) => {
+           e.stopPropagation();
+           this.goToSlide(this.isRtl ? this.currentIndex - 1 : this.currentIndex + 1);
+        });
+        
+        this.dots.forEach((dot: Element, index: number) => {
+          dot.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.goToSlide(index);
+          });
+        });
+      }
+
+      this.expandBtn?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.openFullscreen();
       });
-      this.nextBtn?.addEventListener('click', () => {
-         this.goToSlide(this.isRtl ? this.currentIndex - 1 : this.currentIndex + 1);
+
+      this.closeBtn?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.closeFullscreen();
       });
-      
-      this.dots.forEach((dot: Element, index: number) => {
-        dot.addEventListener('click', () => this.goToSlide(index));
+
+      // Toggle on mobile via slide tap
+      this.slides.forEach(slide => {
+        slide.addEventListener('click', () => {
+          if (!this.isFullscreen && window.innerWidth < 1024) {
+            this.openFullscreen();
+          }
+        });
       });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && this.isFullscreen) {
+          this.closeFullscreen();
+        }
+      });
+    }
+
+    openFullscreen() {
+      this.isFullscreen = true;
+      this.container.classList.add('is-fullscreen');
+      document.body.style.overflow = 'hidden';
+    }
+
+    closeFullscreen() {
+      this.isFullscreen = false;
+      this.container.classList.remove('is-fullscreen');
+      document.body.style.overflow = '';
     }
 
     handleSwipe(start: number, end: number) {
