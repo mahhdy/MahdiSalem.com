@@ -273,12 +273,21 @@ export default function ContentBrowser() {
                     <h1 className="page-title">Content Browser</h1>
                     <p className="page-subtitle">{subtitleText}</p>
                 </div>
-                <button
-                    className={`btn ${editorOpen ? 'btn-secondary' : 'btn-primary'}`}
-                    onClick={() => setEditorOpen(!editorOpen)}
-                >
-                    {editorOpen ? 'Close Batch Editor' : 'Open Batch Editor'}
-                </button>
+                <div style={{ display: 'flex', gap: 12 }}>
+                    <Link
+                        to={collectionFilter ? `/content/${collectionFilter}/new` : `/content/new`}
+                        className="btn btn-primary"
+                        style={{ background: 'var(--success)', borderColor: 'var(--success)' }}
+                    >
+                        + New Content
+                    </Link>
+                    <button
+                        className={`btn ${editorOpen ? 'btn-secondary' : 'btn-primary'}`}
+                        onClick={() => setEditorOpen(!editorOpen)}
+                    >
+                        {editorOpen ? 'Close Batch Editor' : 'Open Batch Editor'}
+                    </button>
+                </div>
             </div>
 
             {/* Batch Editor Panel */}

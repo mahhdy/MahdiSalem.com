@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import ContentBrowser from './pages/ContentBrowser';
 import ContentEditor from './pages/ContentEditor';
+import ContentCreator from './pages/ContentCreator';
 import CategoryManager from './pages/CategoryManager';
 import TagManager from './pages/TagManager';
 import I18nManager from './pages/I18nManager';
@@ -20,6 +21,8 @@ export default function App() {
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/publish-queue" element={<PublishQueue />} />
                 <Route path="/content" element={<ContentBrowser />} />
+                <Route path="/content/new" element={<ContentCreator />} />
+                <Route path="/content/:collection/new" element={<ContentCreator />} />
                 <Route path="/content/:collection/*" element={<ContentEditor />} />
                 <Route path="/categories" element={<CategoryManager />} />
                 <Route path="/tags" element={<TagManager />} />

@@ -584,7 +584,7 @@ export default function ContentEditor() {
             )}
 
             {/* AI Tagging Modal */}
-            {showAiModal && (
+            {(showAiModal && (
                 <div
                     className="modal-overlay"
                     onClick={() => !aiLoading && setShowAiModal(false)}
@@ -703,7 +703,7 @@ export default function ContentEditor() {
                         </div>
                     </div>
                 </div>
-            )}
+            )) as any}
 
             {/* Frontmatter Fields - Grouped into collapsible sections */}
             {sections.map((section) => {
