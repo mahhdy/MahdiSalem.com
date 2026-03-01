@@ -23,7 +23,7 @@
     "admin:client": "cd admin/client && npx vite --port 3333",
     "fix:mermaid": "node scripts/lib/fix-mermaid-quotes.mjs ./src/content",
     "fix:mermaid:dry": "node scripts/lib/fix-mermaid-quotes.mjs ./src/content --dry-run --verbose",
-    "admin:dev": "npm-run-all --parallel dev admin:server admin:client"
+    "admin": "npm-run-all --parallel dev admin:server admin:client"
   },
   "overrides": {
     "minimatch": "^10.2.1",
