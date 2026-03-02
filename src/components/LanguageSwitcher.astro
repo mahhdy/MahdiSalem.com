@@ -1,5 +1,5 @@
 ---
-import { t, getAlternateLocale, getLocalizedPath, type Locale } from '../i18n';
+import { t, getAlternateLocale, getLocalizedPath, type Locale } from "../i18n";
 
 interface Props {
   lang: Locale;
@@ -12,30 +12,34 @@ const altLang = getAlternateLocale(lang);
 const currentPath = Astro.url.pathname;
 
 // Detect content type from current path
-let contentType = '';
-if (currentPath.includes('/articles/')) contentType = 'articles';
-else if (currentPath.includes('/books/')) contentType = 'books';
-else if (currentPath.includes('/multimedia/')) contentType = 'multimedia';
-else if (currentPath.includes('/statements/')) contentType = 'statements';
-else if (currentPath.includes('/wiki/')) contentType = 'wiki';
+let contentType = "";
+if (currentPath.includes("/articles/")) contentType = "articles";
+else if (currentPath.includes("/books/")) contentType = "books";
+else if (currentPath.includes("/proposals/")) contentType = "proposals";
+else if (currentPath.includes("/multimedia/")) contentType = "multimedia";
+else if (currentPath.includes("/statements/")) contentType = "statements";
+else if (currentPath.includes("/wiki/")) contentType = "wiki";
 
 // If we're on a content page, go to the index page of that content type in the other language
 // Otherwise, just switch the language prefix
 let altPath;
 if (contentType) {
   // Go to the content type index page in the alternate language
-  altPath = altLang === 'fa' ? `/${contentType}` : `/en/${contentType}`;
+  altPath = altLang === "fa" ? `/${contentType}` : `/en/${contentType}`;
 } else {
   // For other pages, just swap the language prefix
-  const cleanPath = currentPath.replace(/^\/(en|fa)\//, '/').replace(/^\/(en|fa)$/, '/');
-  altPath = altLang === 'fa' ? cleanPath : `/en${cleanPath === '/' ? '' : cleanPath}`;
+  const cleanPath = currentPath
+    .replace(/^\/(en|fa)\//, "/")
+    .replace(/^\/(en|fa)$/, "/");
+  altPath =
+    altLang === "fa" ? cleanPath : `/en${cleanPath === "/" ? "" : cleanPath}`;
 }
 ---
 
 <a
   href={altPath}
   class="px-3 py-1.5 text-sm rounded-lg border border-border dark:border-border-dark hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors no-underline text-text-base dark:text-text-dark"
-  aria-label={`Switch to ${altLang === 'fa' ? 'Persian' : 'English'}`}
+  aria-label={`Switch to ${altLang === "fa" ? "Persian" : "English"}`}
 >
-  {t('lang.switch', lang)}
+  {t("lang.switch", lang)}
 </a>

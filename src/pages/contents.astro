@@ -17,7 +17,15 @@ const allBooks = await getCollection(
     entry.data.lang === "fa" &&
     !entry.data.draft &&
     !entry.data.hidden &&
-    entry.id.split("/").length === 2,
+    !entry.data.bookSlug,
+);
+const allProposals = await getCollection(
+  "proposals",
+  (entry) =>
+    entry.data.lang === "fa" &&
+    !entry.data.draft &&
+    !entry.data.hidden &&
+    !entry.data.bookSlug,
 );
 const allMultimedia = await getCollection(
   "multimedia",
@@ -36,6 +44,7 @@ const allDialogues = await getCollection(
 const allContent = [
   ...allArticles.map((a) => ({ ...a, contentType: "articles" as const })),
   ...allBooks.map((b) => ({ ...b, contentType: "books" as const })),
+  ...allProposals.map((p) => ({ ...p, contentType: "proposals" as const })),
   ...allMultimedia.map((m) => ({ ...m, contentType: "multimedia" as const })),
   ...allStatements.map((s) => ({ ...s, contentType: "statements" as const })),
   ...allDialogues.map((d) => ({ ...d, contentType: "dialogues" as const })),
@@ -83,7 +92,6 @@ const sortedTags = Array.from(tagMap.entries()).sort(
 <BaseLayout
   title={t("contents.title", lang)}
   description={t("contents.description", lang)}
-  lang={lang}
 >
   <div class="container-wide py-16" dir="rtl">
     <!-- Page header -->
@@ -128,6 +136,16 @@ const sortedTags = Array.from(tagMap.entries()).sort(
         </div>
         <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">
           {t("nav.books", lang)}
+        </div>
+      </div>
+      <div
+        class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center"
+      >
+        <div class="text-3xl font-bold text-primary dark:text-primary-light">
+          {allProposals.length}
+        </div>
+        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">
+          طرح‌ها
         </div>
       </div>
       <div
@@ -248,6 +266,23 @@ const sortedTags = Array.from(tagMap.entries()).sort(
                         </span>
                         <span class="font-bold text-primary dark:text-primary-light">
                           {bks.length}
+                        </span>
+                      </a>
+                    )}
+                    {items.filter((i) => i.contentType === "proposals").length >
+                      0 && (
+                      <a
+                        href={`/proposals?view=list&interface=${category.slug}`}
+                        class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors"
+                      >
+                        <span class="text-text-muted dark:text-text-dark-muted">
+                          طرح‌ها
+                        </span>
+                        <span class="font-bold text-primary dark:text-primary-light">
+                          {
+                            items.filter((i) => i.contentType === "proposals")
+                              .length
+                          }
                         </span>
                       </a>
                     )}

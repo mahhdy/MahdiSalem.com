@@ -20,6 +20,17 @@ const allBooks = await getCollection("books", (entry) => {
 });
 const books = allBooks.sort((a, b) => a.data.order - b.data.order).slice(0, 6);
 
+const allProposals = await getCollection("proposals", (entry) => {
+  const isProposal =
+    entry.data.lang === "fa" &&
+    !entry.data.draft &&
+    entry.id.split("/").length === 2;
+  return isProposal;
+});
+const proposals = allProposals
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 6);
+
 const allArticlesRaw = await getCollection(
   "articles",
   ({ data }) => data.lang === "fa" && !data.draft,
@@ -143,6 +154,12 @@ const dateFormatter = new Intl.DateTimeFormat("fa-IR", {
         کتاب‌ها ({books.length})
       </button>
       <button
+        data-tab="proposals"
+        class="tab-button px-4 py-2.5 font-medium text-sm whitespace-nowrap border-b-2 transition-colors"
+      >
+        طرح‌ها ({proposals.length})
+      </button>
+      <button
         data-tab="articles"
         class="tab-button px-4 py-2.5 font-medium text-sm whitespace-nowrap border-b-2 transition-colors"
       >
@@ -211,6 +228,45 @@ const dateFormatter = new Intl.DateTimeFormat("fa-IR", {
             class="text-sm text-primary dark:text-primary-light no-underline hover:underline"
           >
             مشاهده همه کتاب‌ها ←
+          </a>
+        </div>
+      </div>
+
+      <!-- Proposals Tab -->
+      <div id="proposals-tab" class="tab-content hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {
+            proposals.map((proposal) => (
+              <a
+                href={`/proposals/${stripLangPrefix(proposal.id)
+                  .replace(/\/index\.mdx?$/, "")
+                  .replace(/\.mdx?$/, "")}`}
+                class="article-card group block p-4 rounded-lg border border-border dark:border-border-dark hover:border-primary dark:hover:border-primary-light transition-colors no-underline"
+              >
+                {proposal.data.coverImage && (
+                  <img
+                    src={proposal.data.coverImage}
+                    alt={proposal.data.title}
+                    class="w-full h-32 object-cover rounded-md mb-3"
+                    loading="lazy"
+                  />
+                )}
+                <h3 class="text-base font-bold mb-1.5 text-text-base dark:text-text-dark group-hover:text-primary dark:group-hover:text-primary-light transition-colors line-clamp-1">
+                  {proposal.data.title}
+                </h3>
+                <p class="text-sm text-text-muted dark:text-text-dark-muted line-clamp-2">
+                  {proposal.data.description}
+                </p>
+              </a>
+            ))
+          }
+        </div>
+        <div class="mt-6 text-center">
+          <a
+            href="/proposals"
+            class="text-sm text-primary dark:text-primary-light no-underline hover:underline"
+          >
+            مشاهده همه طرح‌ها ←
           </a>
         </div>
       </div>

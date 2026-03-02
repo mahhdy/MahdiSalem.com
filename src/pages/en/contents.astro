@@ -1,41 +1,57 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import CategoryCard from '../../components/CategoryCard.astro';
-import { t } from '../../i18n';
-import { getCollection } from 'astro:content';
-import { categories, getCategoriesByContentType } from '../../data/categories';
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CategoryCard from "../../components/CategoryCard.astro";
+import { t } from "../../i18n";
+import { getCollection } from "astro:content";
+import { categories, getCategoriesByContentType } from "../../data/categories";
 
-const lang = 'en';
+const lang = "en";
 
 // Get all content
-const allArticles = await getCollection('articles', ({ data }) => data.lang === 'en' && !data.draft);
-const allBooks = await getCollection('books', (entry) => {
-  return entry.data.lang === 'en' && !entry.data.draft && entry.id.split('/').length === 2;
+const allArticles = await getCollection(
+  "articles",
+  ({ data }) => data.lang === "en" && !data.draft,
+);
+const allBooks = await getCollection("books", (entry) => {
+  return entry.data.lang === "en" && !entry.data.draft && !entry.data.bookSlug;
 });
-const allMultimedia = await getCollection('multimedia', ({ data }) => data.lang === 'en' && !data.draft);
-const allStatements = await getCollection('statements', ({ data }) => data.lang === 'en' && !data.draft);
+const allProposals = await getCollection("proposals", (entry) => {
+  return entry.data.lang === "en" && !entry.data.draft && !entry.data.bookSlug;
+});
+const allMultimedia = await getCollection(
+  "multimedia",
+  ({ data }) => data.lang === "en" && !data.draft,
+);
+const allStatements = await getCollection(
+  "statements",
+  ({ data }) => data.lang === "en" && !data.draft,
+);
 
 // Combine all content
 const allContent = [
-  ...allArticles.map(a => ({ ...a, contentType: 'articles' as const })),
-  ...allBooks.map(b => ({ ...b, contentType: 'books' as const })),
-  ...allMultimedia.map(m => ({ ...m, contentType: 'multimedia' as const })),
-  ...allStatements.map(s => ({ ...s, contentType: 'statements' as const })),
+  ...allArticles.map((a) => ({ ...a, contentType: "articles" as const })),
+  ...allBooks.map((b) => ({ ...b, contentType: "books" as const })),
+  ...allProposals.map((p) => ({ ...p, contentType: "proposals" as const })),
+  ...allMultimedia.map((m) => ({ ...m, contentType: "multimedia" as const })),
+  ...allStatements.map((s) => ({ ...s, contentType: "statements" as const })),
 ];
 
 // Group by interface
 const contentByInterface = new Map<string, typeof allContent>();
 
-categories.forEach(category => {
-  const items = allContent.filter(item => {
+categories.forEach((category) => {
+  const items = allContent.filter((item) => {
     // Primary: use the interface field
     if (item.data.interface) {
       return item.data.interface === category.slug;
     }
     // Fallback: check categories array
     const itemCategories = item.data.categories || [];
-    return itemCategories.some((cat: string) => 
-      cat === category.slug || cat === category.nameFa || cat === category.nameEn
+    return itemCategories.some(
+      (cat: string) =>
+        cat === category.slug ||
+        cat === category.nameFa ||
+        cat === category.nameEn,
     );
   });
 
@@ -47,97 +63,198 @@ categories.forEach(category => {
 // Sort categories by content count
 const sortedCategories = Array.from(contentByInterface.entries())
   .sort((a, b) => b[1].length - a[1].length)
-  .map(([slug]) => categories.find(c => c.slug === slug)!)
+  .map(([slug]) => categories.find((c) => c.slug === slug)!)
   .filter(Boolean);
 ---
 
-<BaseLayout title={t('contents.title', lang)} description={t('contents.description', lang)}>
+<BaseLayout
+  title={t("contents.title", lang)}
+  description={t("contents.description", lang)}
+>
   <div class="container-wide py-16">
     <div class="mb-12 text-center">
-      <h1 class="text-3xl md:text-4xl font-bold mb-4">{t('contents.title', lang)}</h1>
-      <p class="text-lg text-text-muted dark:text-text-dark-muted max-w-2xl mx-auto">
-        {t('contents.description', lang)}
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">
+        {t("contents.title", lang)}
+      </h1>
+      <p
+        class="text-lg text-text-muted dark:text-text-dark-muted max-w-2xl mx-auto"
+      >
+        {t("contents.description", lang)}
       </p>
     </div>
 
     <!-- Stats Overview -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-      <div class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center">
-        <div class="text-3xl font-bold text-primary dark:text-primary-light">{allArticles.length}</div>
-        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">{t('nav.articles', lang)}</div>
+    <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
+      <div
+        class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center"
+      >
+        <div class="text-3xl font-bold text-primary dark:text-primary-light">
+          {allArticles.length}
+        </div>
+        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">
+          {t("nav.articles", lang)}
+        </div>
       </div>
-      <div class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center">
-        <div class="text-3xl font-bold text-primary dark:text-primary-light">{allBooks.length}</div>
-        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">{t('nav.books', lang)}</div>
+      <div
+        class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center"
+      >
+        <div class="text-3xl font-bold text-primary dark:text-primary-light">
+          {allBooks.length}
+        </div>
+        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">
+          {t("nav.books", lang)}
+        </div>
       </div>
-      <div class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center">
-        <div class="text-3xl font-bold text-primary dark:text-primary-light">{allMultimedia.length}</div>
-        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">{t('nav.multimedia', lang)}</div>
+      <div
+        class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center"
+      >
+        <div class="text-3xl font-bold text-primary dark:text-primary-light">
+          {allProposals.length}
+        </div>
+        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">
+          Proposals
+        </div>
       </div>
-      <div class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center">
-        <div class="text-3xl font-bold text-primary dark:text-primary-light">{allStatements.length}</div>
-        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">{t('nav.statements', lang)}</div>
+      <div
+        class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center"
+      >
+        <div class="text-3xl font-bold text-primary dark:text-primary-light">
+          {allMultimedia.length}
+        </div>
+        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">
+          {t("nav.multimedia", lang)}
+        </div>
+      </div>
+      <div
+        class="p-6 rounded-xl border border-border dark:border-border-dark bg-surface-dim dark:bg-surface-dark-dim text-center"
+      >
+        <div class="text-3xl font-bold text-primary dark:text-primary-light">
+          {allStatements.length}
+        </div>
+        <div class="text-sm text-text-muted dark:text-text-dark-muted mt-1">
+          {t("nav.statements", lang)}
+        </div>
       </div>
     </div>
 
     <!-- Content by Interface -->
     <div class="mb-8">
-      <h2 class="text-2xl font-bold mb-6">{t('contents.group_interface', lang)}</h2>
+      <h2 class="text-2xl font-bold mb-6">
+        {t("contents.group_interface", lang)}
+      </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {sortedCategories.map(category => {
-          const items = contentByInterface.get(category.slug)!;
-          
-          // Split by content type for this category
-          const articles = items.filter(i => i.contentType === 'articles');
-          const books = items.filter(i => i.contentType === 'books');
-          const multimedia = items.filter(i => i.contentType === 'multimedia');
-          const statements = items.filter(i => i.contentType === 'statements');
-          
-          return (
-            <div class="rounded-xl border border-border dark:border-border-dark p-5 hover:border-primary dark:hover:border-primary-light transition-colors">
-              <div class="flex items-start gap-3 mb-4">
-                <div class="w-10 h-10 flex-shrink-0">
-                  <img src={category.imagePath} alt={category.nameEn} class="w-full h-full object-contain" loading="lazy" />
+        {
+          sortedCategories.map((category) => {
+            const items = contentByInterface.get(category.slug)!;
+
+            // Split by content type for this category
+            const articles = items.filter((i) => i.contentType === "articles");
+            const books = items.filter((i) => i.contentType === "books");
+            const proposals = items.filter(
+              (i) => i.contentType === "proposals",
+            );
+            const multimedia = items.filter(
+              (i) => i.contentType === "multimedia",
+            );
+            const statements = items.filter(
+              (i) => i.contentType === "statements",
+            );
+
+            return (
+              <div class="rounded-xl border border-border dark:border-border-dark p-5 hover:border-primary dark:hover:border-primary-light transition-colors">
+                <div class="flex items-start gap-3 mb-4">
+                  <div class="w-10 h-10 flex-shrink-0">
+                    <img
+                      src={category.imagePath}
+                      alt={category.nameEn}
+                      class="w-full h-full object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="flex-1">
+                    <h3 class="text-lg font-bold text-text dark:text-text-dark mb-1">
+                      {category.nameEn}
+                    </h3>
+                    {category.descriptionEn && (
+                      <p class="text-xs text-text-muted dark:text-text-dark-muted line-clamp-2">
+                        {category.descriptionEn}
+                      </p>
+                    )}
+                  </div>
                 </div>
-                <div class="flex-1">
-                  <h3 class="text-lg font-bold text-text dark:text-text-dark mb-1">{category.nameEn}</h3>
-                  {category.descriptionEn && (
-                    <p class="text-xs text-text-muted dark:text-text-dark-muted line-clamp-2">{category.descriptionEn}</p>
+
+                <div class="grid grid-cols-2 gap-3 text-sm">
+                  {articles.length > 0 && (
+                    <a
+                      href={`/en/articles?view=list&interface=${category.slug}`}
+                      class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors"
+                    >
+                      <span class="text-text-muted dark:text-text-dark-muted">
+                        Articles
+                      </span>
+                      <span class="font-bold text-primary dark:text-primary-light">
+                        {articles.length}
+                      </span>
+                    </a>
+                  )}
+                  {books.length > 0 && (
+                    <a
+                      href={`/en/books?view=list&interface=${category.slug}`}
+                      class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors"
+                    >
+                      <span class="text-text-muted dark:text-text-dark-muted">
+                        Books
+                      </span>
+                      <span class="font-bold text-primary dark:text-primary-light">
+                        {books.length}
+                      </span>
+                    </a>
+                  )}
+                  {proposals.length > 0 && (
+                    <a
+                      href={`/en/proposals?view=list&interface=${category.slug}`}
+                      class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors"
+                    >
+                      <span class="text-text-muted dark:text-text-dark-muted">
+                        Proposals
+                      </span>
+                      <span class="font-bold text-primary dark:text-primary-light">
+                        {proposals.length}
+                      </span>
+                    </a>
+                  )}
+                  {multimedia.length > 0 && (
+                    <a
+                      href={`/en/multimedia?view=list&interface=${category.slug}`}
+                      class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors"
+                    >
+                      <span class="text-text-muted dark:text-text-dark-muted">
+                        Multimedia
+                      </span>
+                      <span class="font-bold text-primary dark:text-primary-light">
+                        {multimedia.length}
+                      </span>
+                    </a>
+                  )}
+                  {statements.length > 0 && (
+                    <a
+                      href={`/en/statements?view=list&interface=${category.slug}`}
+                      class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors"
+                    >
+                      <span class="text-text-muted dark:text-text-dark-muted">
+                        Statements
+                      </span>
+                      <span class="font-bold text-primary dark:text-primary-light">
+                        {statements.length}
+                      </span>
+                    </a>
                   )}
                 </div>
               </div>
-              
-              <div class="grid grid-cols-2 gap-3 text-sm">
-                {articles.length > 0 && (
-                  <a href={`/en/articles?view=list&interface=${category.slug}`} class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors">
-                    <span class="text-text-muted dark:text-text-dark-muted">Articles</span>
-                    <span class="font-bold text-primary dark:text-primary-light">{articles.length}</span>
-                  </a>
-                )}
-                {books.length > 0 && (
-                  <a href={`/en/books?view=list&interface=${category.slug}`} class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors">
-                    <span class="text-text-muted dark:text-text-dark-muted">Books</span>
-                    <span class="font-bold text-primary dark:text-primary-light">{books.length}</span>
-                  </a>
-                )}
-                {multimedia.length > 0 && (
-                  <a href={`/en/multimedia?view=list&interface=${category.slug}`} class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors">
-                    <span class="text-text-muted dark:text-text-dark-muted">Multimedia</span>
-                    <span class="font-bold text-primary dark:text-primary-light">{multimedia.length}</span>
-                  </a>
-                )}
-                {statements.length > 0 && (
-                  <a href={`/en/statements?view=list&interface=${category.slug}`} class="flex items-center justify-between p-2 rounded-lg bg-surface-dim dark:bg-surface-dark-dim hover:bg-primary/5 dark:hover:bg-primary-light/5 no-underline transition-colors">
-                    <span class="text-text-muted dark:text-text-dark-muted">Statements</span>
-                    <span class="font-bold text-primary dark:text-primary-light">{statements.length}</span>
-                  </a>
-                )}
-              </div>
-            </div>
-          );
-        })}
+            );
+          })
+        }
       </div>
     </div>
-
   </div>
 </BaseLayout>

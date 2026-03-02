@@ -1,5 +1,5 @@
 ---
-import { t, getLocalizedPath, type Locale } from '../i18n';
+import { t, getLocalizedPath, type Locale } from "../i18n";
 
 interface Props {
   lang: Locale;
@@ -14,41 +14,117 @@ const currentYear = new Date().getFullYear();
     <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
       <!-- Brand -->
       <div class="col-span-2 md:col-span-1">
-        <a href={getLocalizedPath('', lang)} class="text-lg font-bold text-primary dark:text-primary-light no-underline">
-          {t('site.title', lang)}
+        <a
+          href={getLocalizedPath("", lang)}
+          class="text-lg font-bold text-primary dark:text-primary-light no-underline"
+        >
+          {t("site.title", lang)}
         </a>
         <p class="mt-2 text-sm text-text-muted dark:text-text-dark-muted">
-          {t('site.description', lang)}
+          {t("site.description", lang)}
         </p>
       </div>
 
       <!-- Quick links -->
       <div class="col-span-1">
         <ul class="space-y-2 text-sm">
-          <li><a href={getLocalizedPath('books', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.books', lang)}</a></li>
-          <li><a href={getLocalizedPath('articles', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.articles', lang)}</a></li>
-          <li><a href={getLocalizedPath('statements', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.statements', lang)}</a></li>
-          <li><a href={getLocalizedPath('contents', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.contents', lang)}</a></li>
-          <li><a href={getLocalizedPath('wiki', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.wiki', lang)}</a></li>
-          <li><a href={getLocalizedPath('social', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.social', lang)}</a></li>
+          <li>
+            <a
+              href={getLocalizedPath("books", lang)}
+              class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline"
+              >{t("nav.books", lang)}</a>
+          </li>
+          <li>
+            <a
+              href={getLocalizedPath("proposals", lang)}
+              class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline"
+              >{t("nav.proposals", lang)}</a>
+          </li>
+          <li>
+            <a
+              href={getLocalizedPath("articles", lang)}
+              class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline"
+              >{t("nav.articles", lang)}</a>
+          </li>
+          <li>
+            <a
+              href={getLocalizedPath("statements", lang)}
+              class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline"
+              >{t("nav.statements", lang)}</a>
+          </li>
+          <li>
+            <a
+              href={getLocalizedPath("contents", lang)}
+              class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline"
+              >{t("nav.contents", lang)}</a>
+          </li>
+          <li>
+            <a
+              href={getLocalizedPath("wiki", lang)}
+              class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline"
+              >{t("nav.wiki", lang)}</a>
+          </li>
+          <li>
+            <a
+              href={getLocalizedPath("social", lang)}
+              class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline"
+              >{t("nav.social", lang)}</a>
+          </li>
         </ul>
       </div>
 
       <!-- Help / Contact -->
       <div class="col-span-1">
         <ul class="space-y-2 text-sm">
-          <li><a href={getLocalizedPath('about', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.about', lang)}</a></li>
-          <li><a href={getLocalizedPath('contact', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.contact', lang)}</a></li>
-          <li><a href={getLocalizedPath('support', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.support', lang)}</a></li>
-          <li><a href={getLocalizedPath('tags', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.tags', lang)}</a></li>
-          <li><a href={getLocalizedPath('search', lang)} class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline">{t('nav.search', lang)}</a></li>
+          <li>
+            <a
+              href={getLocalizedPath("about", lang)}
+              class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline"
+              >{t("nav.about", lang)}</a>
+          </li>
+          <li>
+            <a
+              href={getLocalizedPath("contact", lang)}
+              class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline"
+              >{t("nav.contact", lang)}</a>
+          </li>
+          <li>
+            <a
+              href={getLocalizedPath("support", lang)}
+              class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline"
+              >{t("nav.support", lang)}</a>
+          </li>
+          <li>
+            <a
+              href={getLocalizedPath("tags", lang)}
+              class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline"
+              >{t("nav.tags", lang)}</a>
+          </li>
+          <li>
+            <a
+              href={getLocalizedPath("search", lang)}
+              class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline"
+              >{t("nav.search", lang)}</a>
+          </li>
         </ul>
       </div>
     </div>
 
-    <div class="mt-8 pt-6 border-t border-border dark:border-border-dark text-center text-sm text-text-muted dark:text-text-dark-muted">
-      <p>&copy; {currentYear} {t('site.title', lang)}. {t('footer.rights', lang)}</p>
-      <p class="mt-1">{t('footer.built_with', lang)} <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="hover:text-primary dark:hover:text-primary-light">Astro</a></p>
+    <div
+      class="mt-8 pt-6 border-t border-border dark:border-border-dark text-center text-sm text-text-muted dark:text-text-dark-muted"
+    >
+      <p>
+        &copy; {currentYear}
+        {t("site.title", lang)}. {t("footer.rights", lang)}
+      </p>
+      <p class="mt-1">
+        {t("footer.built_with", lang)}
+        <a
+          href="https://astro.build"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-primary dark:hover:text-primary-light">Astro</a>
+      </p>
     </div>
   </div>
 </footer>
