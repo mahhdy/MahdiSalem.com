@@ -20,7 +20,7 @@ const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || "@mahhdy57";
 ---
 
 <div
-  class="telegram-compact-feed p-6 rounded-2xl bg-[#f8fafc] dark:bg-[#0f172a] border border-border dark:border-border-dark"
+  class="telegram-compact-feed p-6 rounded-2xl bg-surface-dim dark:bg-surface-dark-dim border border-border dark:border-border-dark"
   data-worker-url={workerUrl}
   data-limit={limit}
   data-lang={lang}
@@ -104,18 +104,16 @@ const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || "@mahhdy57";
     replyTo?: any;
   }
 
-  function escapeHtml(str: string): string {
-    return (str || "").replace(
-      /[&<>"']/g,
-      (m) =>
-        ({
-          "&": "&amp;",
-          "<": "&lt;",
-          ">": "&gt;",
-          '"': "&quot;",
-          "'": "&#039;",
-        })[m],
-    );
+  function escapeHtml(str?: string): string {
+    if (!str) return "";
+    const map: Record<string, string> = {
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#039;",
+    };
+    return str.replace(/[&<>"']/g, (m) => map[m]);
   }
 
   function buildCompactCard(
@@ -124,7 +122,7 @@ const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || "@mahhdy57";
   ): HTMLElement {
     const card = document.createElement("div");
     card.className =
-      "compact-card bg-white dark:bg-slate-900 border border-border dark:border-border-dark p-4 rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col cursor-pointer";
+      "compact-card bg-surface dark:bg-surface-dark border border-border dark:border-border-dark p-4 rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col cursor-pointer";
     card.setAttribute("dir", lang === "fa" ? "rtl" : "ltr");
     card.onclick = () => window.open(post.link, "_blank");
 
@@ -154,13 +152,13 @@ const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || "@mahhdy57";
     // Thumbnail
     const thumb = post.media?.find((m) => m.thumbnail || m.url);
     if (thumb) {
-      html += `<img src="${thumb.thumbnail || thumb.url}" class="w-full h-32 object-cover rounded-lg mb-3" loading="lazy" />`;
+      html += `<img src="${thumb.thumbnail || thumb.url}" class="w-full h-32 object-cover rounded-lg mb-3" loading="lazy" onerror="this.onerror=null; this.src='/images/feedback-placeholder.png';" />`;
     }
 
     // Reply indicator (Grey Area)
     if (post.replyTo) {
       html += `
-        <div class="bg-slate-100 dark:bg-slate-800 border-r-2 border-[#0088cc] px-2 py-1 rounded text-[10px] text-text-muted mb-2 line-clamp-1">
+        <div class="bg-surface-dim dark:bg-surface-dark-dim border-r-2 border-[#0088cc] px-2 py-1 rounded text-[10px] text-text-muted mb-2 line-clamp-1">
           ↩️ ${lang === "fa" ? "پاسخ" : "Reply"}
         </div>
       `;
@@ -176,6 +174,12 @@ const channelUsername = import.meta.env.PUBLIC_TELEGRAM_CHANNEL || "@mahhdy57";
         '<h3 style="font-size:1.1em;font-weight:700;margin:0 0 0.8em 0;line-height:1.2;">$1</h3>',
       );
     }
+
+    // Process line breaks: normalize <br> to newline, then convert double newlines
+    // to paragraph breaks (<br><br>) and single newlines to spaces to keep the view compact.
+    htmlContent = htmlContent.replace(/<br\s*\/?>/gi, "\n");
+    htmlContent = htmlContent.replace(/\n{2,}/g, "<br><br>");
+    htmlContent = htmlContent.replace(/\n/g, " ");
 
     html += `<div class="text-sm line-clamp-4 text-text-base dark:text-text-dark leading-relaxed mb-3 flex-1 post-content-compact" style="line-height:1.5;">${htmlContent}</div>`;
 
