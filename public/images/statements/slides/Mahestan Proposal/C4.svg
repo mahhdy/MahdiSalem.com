@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0D47A1"/>
+      <stop offset="100%" stop-color="#1A237E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg4)"/>
+  <rect x="0" y="0" width="1080" height="5" fill="#64B5F6"/>
+  <foreignObject x="60" y="40" width="960" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;text-align:center;font-family:Tahoma,Arial,sans-serif;font-size:16px;color:#90CAF9;letter-spacing:2px;">ترکیب مجلس مهستان</div>
+  </foreignObject>
+  <foreignObject x="60" y="90" width="960" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;text-align:center;font-family:Tahoma,Arial,sans-serif;font-size:46px;font-weight:bold;color:#fff;">
+      ۳۰۰ نماینده‌ی منتخب مردم
+    </div>
+  </foreignObject>
+  <!-- Big donut chart representation -->
+  <circle cx="540" cy="430" r="180" fill="none" stroke="#1E88E5" stroke-width="60" stroke-dasharray="905 226" stroke-dashoffset="0"/>
+  <circle cx="540" cy="430" r="180" fill="none" stroke="#FFA726" stroke-width="60" stroke-dasharray="226 905" stroke-dashoffset="-905"/>
+  <circle cx="540" cy="430" r="180" fill="none" stroke="#EF5350" stroke-width="60" stroke-dasharray="113 1018" stroke-dashoffset="-1131"/>
+  <circle cx="540" cy="430" r="130" fill="#0D47A1"/>
+  <foreignObject x="440" y="390" width="200" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:Tahoma,Arial,sans-serif;">
+      <div style="font-size:40px;font-weight:bold;color:#fff;">۳۰۰</div>
+      <div style="font-size:14px;color:#90CAF9;">کرسی</div>
+    </div>
+  </foreignObject>
+  <!-- Legend -->
+  <rect x="80" y="660" width="280" height="90" rx="12" fill="rgba(30,136,229,0.2)" stroke="#1E88E5" stroke-width="1.5"/>
+  <foreignObject x="80" y="660" width="280" height="90">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:Tahoma,Arial,sans-serif;">
+      <div style="font-size:32px;font-weight:bold;color:#64B5F6;">۲۴۰</div>
+      <div style="font-size:14px;color:#BBDEFB;">🔵 کرسی استانی (نسبی)</div>
+    </div>
+  </foreignObject>
+  <rect x="400" y="660" width="280" height="90" rx="12" fill="rgba(255,167,38,0.2)" stroke="#FFA726" stroke-width="1.5"/>
+  <foreignObject x="400" y="660" width="280" height="90">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:Tahoma,Arial,sans-serif;">
+      <div style="font-size:32px;font-weight:bold;color:#FFB74D;">۴۰</div>
+      <div style="font-size:14px;color:#FFE0B2;">🟠 فهرست ملی (سراسری)</div>
+    </div>
+  </foreignObject>
+  <rect x="720" y="660" width="280" height="90" rx="12" fill="rgba(239,83,80,0.2)" stroke="#EF5350" stroke-width="1.5"/>
+  <foreignObject x="720" y="660" width="280" height="90">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:Tahoma,Arial,sans-serif;">
+      <div style="font-size:32px;font-weight:bold;color:#EF9A9A;">۲۰</div>
+      <div style="font-size:14px;color:#FFCDD2;">🔴 تضمینی اقلیت‌ها</div>
+    </div>
+  </foreignObject>
+  <!-- Gender quota -->
+  <rect x="180" y="790" width="720" height="70" rx="14" fill="rgba(206,147,216,0.15)" stroke="#CE93D8" stroke-width="1"/>
+  <foreignObject x="180" y="790" width="720" height="70">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;font-family:Tahoma,Arial,sans-serif;">
+      <div style="font-size:18px;color:#E1BEE7;">👩‍💼 حداقل <strong style="color:#fff;font-size:24px;">۳۰٪</strong> تنوع جنسیتی الزامی در فهرست‌ها</div>
+    </div>
+  </foreignObject>
+  <!-- Bottom note -->
+  <foreignObject x="80" y="890" width="920" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;text-align:center;font-family:Tahoma,Arial,sans-serif;font-size:14px;color:#90CAF9;line-height:1.6;">
+      انتخابات مستقیم · سیستم نسبی-فهرستی · عزل با ۴۰٪ آرا · حداکثر ۲ سال
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="990" width="960" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;text-align:center;font-family:Tahoma,Arial,sans-serif;font-size:13px;color:#64B5F6;opacity:0.5;">۴ از ۲۵ · طرح مهستان</div>
+  </foreignObject>
+</svg>

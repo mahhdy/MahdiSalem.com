@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#263238"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg6)"/>
+  <rect x="0" y="0" width="1080" height="5" fill="#FFD54F"/>
+  <foreignObject x="60" y="40" width="960" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;text-align:center;font-family:Tahoma,Arial,sans-serif;font-size:16px;color:#FFD54F;letter-spacing:2px;">عدالت انتقالی</div>
+  </foreignObject>
+  <foreignObject x="60" y="85" width="960" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;text-align:center;font-family:Tahoma,Arial,sans-serif;font-size:40px;font-weight:bold;color:#fff;">
+      ⚖️ مدل ۵ ستونی
+    </div>
+  </foreignObject>
+  <!-- 5 pillars -->
+  <rect x="40" y="200" width="192" height="380" rx="14" fill="rgba(66,165,245,0.15)" stroke="#42A5F5" stroke-width="1.5"/>
+  <foreignObject x="40" y="200" width="192" height="380">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;height:100%;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:Tahoma,Arial,sans-serif;padding:14px;box-sizing:border-box;">
+      <div style="font-size:40px;">🔍</div>
+      <div style="font-size:16px;font-weight:bold;color:#64B5F6;margin-top:10px;">حقیقت‌یابی</div>
+      <div style="font-size:11px;color:#B0BEC5;margin-top:10px;line-height:1.5;">کمیسیون حقیقت و آشتی ملی · مستندسازی · شهادت قربانیان · جلسات علنی · گزارش نهایی</div>
+    </div>
+  </foreignObject>
+  <rect x="244" y="200" width="192" height="380" rx="14" fill="rgba(239,83,80,0.15)" stroke="#EF5350" stroke-width="1.5"/>
+  <foreignObject x="244" y="200" width="192" height="380">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;height:100%;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:Tahoma,Arial,sans-serif;padding:14px;box-sizing:border-box;">
+      <div style="font-size:40px;">⚔️</div>
+      <div style="font-size:16px;font-weight:bold;color:#EF9A9A;margin-top:10px;">عدالت کیفری</div>
+      <div style="font-size:11px;color:#B0BEC5;margin-top:10px;line-height:1.5;">محاکمات عادلانه · تفکیک سطوح مسئولیت · عفو مشروط رده‌پایین‌ها</div>
+    </div>
+  </foreignObject>
+  <rect x="448" y="200" width="192" height="380" rx="14" fill="rgba(255,167,38,0.15)" stroke="#FFA726" stroke-width="1.5"/>
+  <foreignObject x="448" y="200" width="192" height="380">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;height:100%;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:Tahoma,Arial,sans-serif;padding:14px;box-sizing:border-box;">
+      <div style="font-size:40px;">💰</div>
+      <div style="font-size:16px;font-weight:bold;color:#FFB74D;margin-top:10px;">جبران خسارت</div>
+      <div style="font-size:11px;color:#B0BEC5;margin-top:10px;line-height:1.5;">غرامت مالی · اعاده‌ی حیثیت · درمان روانشناختی · بازگرداندن اموال</div>
+    </div>
+  </foreignObject>
+  <rect x="652" y="200" width="192" height="380" rx="14" fill="rgba(255,213,79,0.15)" stroke="#FFD54F" stroke-width="1.5"/>
+  <foreignObject x="652" y="200" width="192" height="380">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;height:100%;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:Tahoma,Arial,sans-serif;padding:14px;box-sizing:border-box;">
+      <div style="font-size:40px;">🕊️</div>
+      <div style="font-size:16px;font-weight:bold;color:#FFD54F;margin-top:10px;">آشتی ملی</div>
+      <div style="font-size:11px;color:#B0BEC5;margin-top:10px;line-height:1.5;">گفتگوهای ملی · موزه‌ها و یادبودها · اصلاح تاریخ‌نگاری · روز ملی یادبود</div>
+    </div>
+  </foreignObject>
+  <rect x="856" y="200" width="192" height="380" rx="14" fill="rgba(102,187,106,0.15)" stroke="#66BB6A" stroke-width="1.5"/>
+  <foreignObject x="856" y="200" width="192" height="380">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;height:100%;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:Tahoma,Arial,sans-serif;padding:14px;box-sizing:border-box;">
+      <div style="font-size:40px;">🛡️</div>
+      <div style="font-size:16px;font-weight:bold;color:#81C784;margin-top:10px;">عدم تکرار</div>
+      <div style="font-size:11px;color:#B0BEC5;margin-top:10px;line-height:1.5;">اصلاح امنیتی · اصلاح قضا · آموزش حقوق بشر · نهادهای نظارتی</div>
+    </div>
+  </foreignObject>
+  <!-- Bottom quote -->
+  <rect x="100" y="620" width="880" height="100" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <foreignObject x="100" y="620" width="880" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;font-family:Tahoma,Arial,sans-serif;padding:10px;box-sizing:border-box;">
+      <div style="font-size:18px;color:#fff;line-height:1.6;">
+        <span style="color:#EF5350;">⚖️ عدالت بدون آشتی = انتقام</span> ·
+        <span style="color:#FFD54F;">🕊️ آشتی بدون عدالت = فراموشی</span><br/>
+        <span style="color:#66BB6A;font-weight:bold;">✅ عدالت + آشتی = صلح پایدار</span>
+      </div>
+    </div>
+  </foreignObject>
+  <!-- Global examples -->
+  <foreignObject x="60" y="750" width="960" height="240">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;font-family:Tahoma,Arial,sans-serif;padding:10px;box-sizing:border-box;">
+      <div style="font-size:14px;color:#78909C;text-align:center;margin-bottom:14px;">الگوهای جهانی عدالت انتقالی</div>
+      <div style="display:flex;gap:12px;justify-content:center;">
+        <div style="background:rgba(255,255,255,0.05);border-radius:10px;padding:14px;flex:1;text-align:center;">
+          <div style="font-size:24px;">🇿🇦</div>
+          <div style="font-size:13px;font-weight:bold;color:#fff;margin-top:6px;">آفریقای جنوبی</div>
+          <div style="font-size:10px;color:#90A4AE;margin-top:4px;">TRC · عفو مشروط</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.05);border-radius:10px;padding:14px;flex:1;text-align:center;">
+          <div style="font-size:24px;">🇨🇴</div>
+          <div style="font-size:13px;font-weight:bold;color:#fff;margin-top:6px;">کلمبیا</div>
+          <div style="font-size:10px;color:#90A4AE;margin-top:4px;">مدل ۵ ستونی · مرکز حافظه</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.05);border-radius:10px;padding:14px;flex:1;text-align:center;">
+          <div style="font-size:24px;">🇨🇱</div>
+          <div style="font-size:13px;font-weight:bold;color:#fff;margin-top:6px;">شیلی</div>
+          <div style="font-size:10px;color:#90A4AE;margin-top:4px;">گزارش رتیگ · محاکمات تدریجی</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.05);border-radius:10px;padding:14px;flex:1;text-align:center;">
+          <div style="font-size:24px;">🇩🇪</div>
+          <div style="font-size:13px;font-weight:bold;color:#fff;margin-top:6px;">آلمان</div>
+          <div style="font-size:10px;color:#90A4AE;margin-top:4px;">بایگانی اشتازی · یادبودها</div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1010" width="960" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;text-align:center;font-family:Tahoma,Arial,sans-serif;font-size:13px;color:#78909C;opacity:0.5;">۶ از ۲۵ · طرح مهستان</div>
+  </foreignObject>
+</svg>

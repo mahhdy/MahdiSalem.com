@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4A148C"/>
+      <stop offset="50%" stop-color="#6A1B9A"/>
+      <stop offset="100%" stop-color="#311B92"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/></filter>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg1)"/>
+  <!-- Decorative circles -->
+  <circle cx="100" cy="100" r="200" fill="#7B1FA2" opacity="0.15"/>
+  <circle cx="980" cy="980" r="250" fill="#CE93D8" opacity="0.1"/>
+  <circle cx="900" cy="200" r="150" fill="#E1BEE7" opacity="0.08"/>
+  <circle cx="200" cy="900" r="180" fill="#9C27B0" opacity="0.1"/>
+  <!-- Geometric pattern -->
+  <line x1="0" y1="300" x2="1080" y2="300" stroke="#CE93D8" stroke-width="0.5" opacity="0.2"/>
+  <line x1="0" y1="780" x2="1080" y2="780" stroke="#CE93D8" stroke-width="0.5" opacity="0.2"/>
+  <rect x="80" y="320" width="920" height="440" rx="30" fill="none" stroke="#CE93D8" stroke-width="1.5" opacity="0.3"/>
+  <!-- Iran flag colors - subtle top stripe -->
+  <rect x="0" y="0" width="1080" height="6" fill="#2E7D32"/>
+  <rect x="0" y="1074" width="1080" height="6" fill="#C62828"/>
+  <!-- Main content -->
+  <foreignObject x="80" y="160" width="920" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:Tahoma,Arial,sans-serif;font-size:20px;color:#CE93D8;letter-spacing:3px;text-align:center;">
+      بیانیه‌ی چارچوب نهادی
+    </div>
+  </foreignObject>
+  <foreignObject x="80" y="340" width="920" height="180">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:Tahoma,Arial,sans-serif;text-align:center;">
+      <div style="font-size:62px;font-weight:bold;color:#fff;line-height:1.2;">گذار ایران<br/>طرح مهستان</div>
+    </div>
+  </foreignObject>
+  <!-- Divider line -->
+  <rect x="390" y="540" width="300" height="3" rx="1.5" fill="#CE93D8"/>
+  <foreignObject x="80" y="570" width="920" height="120">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:Tahoma,Arial,sans-serif;text-align:center;color:#E1BEE7;">
+      <div style="font-size:22px;line-height:1.6;">ترکیب دموکراسی مستقیم · تخصص‌گرایی · نمایندگی نسبتی</div>
+      <div style="font-size:16px;margin-top:12px;opacity:0.7;">مبتنی بر تجربه‌ی تطبیقی جهانی</div>
+    </div>
+  </foreignObject>
+  <!-- Bottom brand -->
+  <rect x="300" y="850" width="480" height="60" rx="30" fill="rgba(255,255,255,0.1)" stroke="#CE93D8" stroke-width="1"/>
+  <foreignObject x="300" y="850" width="480" height="60">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:Tahoma,Arial,sans-serif;font-size:24px;font-weight:bold;color:#fff;text-align:center;">
+      🇮🇷 ایران برای همه‌ی ایرانیان
+    </div>
+  </foreignObject>
+  <foreignObject x="80" y="940" width="920" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;text-align:center;font-family:Tahoma,Arial,sans-serif;font-size:13px;color:#CE93D8;opacity:0.6;">
+      ⬅ برای مشاهده‌ی کامل طرح، اسلایدها را ورق بزنید
+    </div>
+  </foreignObject>
+</svg>

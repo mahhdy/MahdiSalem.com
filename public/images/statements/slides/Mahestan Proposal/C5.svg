@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B71C1C"/>
+      <stop offset="100%" stop-color="#880E4F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg5)"/>
+  <rect x="0" y="0" width="1080" height="5" fill="#FF8A80"/>
+  <!-- Urgency symbol -->
+  <circle cx="540" cy="540" r="500" fill="none" stroke="#FFCDD2" stroke-width="0.5" opacity="0.1"/>
+  <foreignObject x="60" y="30" width="960" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;text-align:center;font-family:Tahoma,Arial,sans-serif;font-size:16px;color:#FF8A80;letter-spacing:2px;">
+      فرمان‌های اضطراری — هفته‌ی اول
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="75" width="960" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;text-align:center;font-family:Tahoma,Arial,sans-serif;font-size:40px;font-weight:bold;color:#fff;">
+      ⚡ ۱۰ اقدام فوری روز اول
+    </div>
+  </foreignObject>
+  <!-- 10 actions -->
+  <foreignObject x="40" y="180" width="1000" height="800">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;height:100%;overflow:hidden;font-family:Tahoma,Arial,sans-serif;padding:10px;box-sizing:border-box;">
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="display:flex;align-items:center;background:rgba(255,255,255,0.1);border-radius:14px;padding:14px 18px;">
+          <div style="font-size:28px;margin-left:14px;min-width:36px;text-align:center;">🔓</div>
+          <div><div style="font-size:17px;font-weight:bold;color:#fff;">آزادی فوری تمام زندانیان سیاسی و عقیدتی</div></div>
+        </div>
+        <div style="display:flex;align-items:center;background:rgba(255,255,255,0.1);border-radius:14px;padding:14px 18px;">
+          <div style="font-size:28px;margin-left:14px;min-width:36px;text-align:center;">🧕</div>
+          <div><div style="font-size:17px;font-weight:bold;color:#fff;">لغو حجاب اجباری و قوانین کنترل پوشش</div></div>
+        </div>
+        <div style="display:flex;align-items:center;background:rgba(255,255,255,0.1);border-radius:14px;padding:14px 18px;">
+          <div style="font-size:28px;margin-left:14px;min-width:36px;text-align:center;">🌐</div>
+          <div><div style="font-size:17px;font-weight:bold;color:#fff;">رفع کامل فیلترینگ و سانسور اینترنت</div></div>
+        </div>
+        <div style="display:flex;align-items:center;background:rgba(255,255,255,0.1);border-radius:14px;padding:14px 18px;">
+          <div style="font-size:28px;margin-left:14px;min-width:36px;text-align:center;">⛔</div>
+          <div><div style="font-size:17px;font-weight:bold;color:#fff;">تعلیق مجازات اعدام</div></div>
+        </div>
+        <div style="display:flex;align-items:center;background:rgba(255,255,255,0.1);border-radius:14px;padding:14px 18px;">
+          <div style="font-size:28px;margin-left:14px;min-width:36px;text-align:center;">🏛️</div>
+          <div><div style="font-size:17px;font-weight:bold;color:#fff;">آزادی فعالیت احزاب، اتحادیه‌ها و تشکل‌ها</div></div>
+        </div>
+        <div style="display:flex;align-items:center;background:rgba(255,255,255,0.1);border-radius:14px;padding:14px 18px;">
+          <div style="font-size:28px;margin-left:14px;min-width:36px;text-align:center;">⚖️</div>
+          <div><div style="font-size:17px;font-weight:bold;color:#fff;">ممنوعیت بازداشت بدون حکم قضایی</div></div>
+        </div>
+        <div style="display:flex;align-items:center;background:rgba(255,255,255,0.1);border-radius:14px;padding:14px 18px;">
+          <div style="font-size:28px;margin-left:14px;min-width:36px;text-align:center;">❌</div>
+          <div><div style="font-size:17px;font-weight:bold;color:#fff;">لغو فوری محاکم انقلاب</div></div>
+        </div>
+        <div style="display:flex;align-items:center;background:rgba(255,255,255,0.1);border-radius:14px;padding:14px 18px;">
+          <div style="font-size:28px;margin-left:14px;min-width:36px;text-align:center;">✈️</div>
+          <div><div style="font-size:17px;font-weight:bold;color:#fff;">حق بازگشت آزادانه‌ی تبعیدیان</div></div>
+        </div>
+        <div style="display:flex;align-items:center;background:rgba(255,255,255,0.1);border-radius:14px;padding:14px 18px;">
+          <div style="font-size:28px;margin-left:14px;min-width:36px;text-align:center;">💰</div>
+          <div><div style="font-size:17px;font-weight:bold;color:#fff;">مسدودسازی دارایی‌های مشکوک نهادهای حکومتی</div></div>
+        </div>
+        <div style="display:flex;align-items:center;background:rgba(255,255,255,0.1);border-radius:14px;padding:14px 18px;">
+          <div style="font-size:28px;margin-left:14px;min-width:36px;text-align:center;">📁</div>
+          <div><div style="font-size:17px;font-weight:bold;color:#fff;">حفاظت از اسناد نهادهای امنیتی</div></div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+  <foreignObject x="60" y="1010" width="960" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl" style="width:100%;text-align:center;font-family:Tahoma,Arial,sans-serif;font-size:14px;color:#FF8A80;">
+      بدون نیاز به فرایند قانون‌گذاری عادی · فرمان اضطراری مجلس
+    </div>
+  </foreignObject>
+</svg>
