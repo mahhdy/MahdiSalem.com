@@ -73,7 +73,7 @@ categoriesRoutes.post('/', async (c) => {
     nameFa: '${nameFa}',
     nameEn: '${nameEn}',
     imagePath: '/images/categories/${slug}.svg',${parentCategory ? `\n    parentCategory: '${parentCategory}',` : ''}
-    contentTypes: ['articles', 'books', 'statements', 'multimedia'],
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia'],
   },`;
 
         // Insert before the final ];

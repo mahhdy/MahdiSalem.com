@@ -29,6 +29,7 @@ interface RecentItem {
 
 const collectionIcons: Record<string, string> = {
     books: '📚',
+    proposals: '💡',
     articles: '📰',
     statements: '📜',
     multimedia: '🎬',

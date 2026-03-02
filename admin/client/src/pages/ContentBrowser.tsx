@@ -447,6 +447,7 @@ export default function ContentBrowser() {
                 >
                     <option value="">All Collections</option>
                     <option value="books">Books</option>
+                    <option value="proposals">Proposals</option>
                     <option value="articles">Articles</option>
                     <option value="dialogues">Dialogues</option>
                     <option value="statements">Statements</option>

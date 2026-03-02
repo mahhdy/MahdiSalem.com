@@ -291,6 +291,10 @@ a:hover {
   --card-accent: hsl(220, 85%, 60%);
 }
 
+.stat-card.proposals {
+  --card-accent: hsl(200, 80%, 60%);
+}
+
 .stat-card.articles {
   --card-accent: hsl(150, 70%, 50%);
 }

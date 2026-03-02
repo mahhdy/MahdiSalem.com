@@ -1075,6 +1075,7 @@ function getFieldsForCollection(collection: string): FieldDef[] {
 
     switch (collection) {
         case 'books':
+        case 'proposals':
             return [
                 ...common,
                 { key: 'author', label: 'Author', type: 'text' },
