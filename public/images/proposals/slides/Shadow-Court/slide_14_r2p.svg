@@ -1,6 +1,6 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350">
   <rect width="1080" height="1350" fill="#0D1642"/>
-  <rect x="0" y="0" width="1080" height="400" fill="#C0392B" opacity="0.15"/>
+  <rect x="0" y="0" width="1080" height="300" fill="#C0392B" opacity="0.15"/>
   <foreignObject x="60" y="60" width="960" height="80">
     <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#C0392B; font-size:26px; text-align:center;">
       حساس‌ترین موضوع
@@ -13,8 +13,8 @@
       <span style="font-size:28px; color:#F9A825;">مسئولیت حمایت (R2P)</span>
     </div>
   </foreignObject>
-  <rect x="80" y="400" width="920" height="220" rx="15" fill="rgba(192,57,43,0.2)" stroke="#C0392B" stroke-width="2"/>
-  <foreignObject x="100" y="420" width="880" height="180">
+  <rect x="80" y="330" width="920" height="250" rx="15" fill="rgba(192,57,43,0.2)" stroke="#C0392B" stroke-width="2"/>
+  <foreignObject x="100" y="340" width="880" height="220">
     <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:right; line-height:2;">
       <span style="color:#C0392B; font-weight:bold;">نگرانی‌ها:</span>
       <br/>
@@ -25,8 +25,8 @@
       • عدم اطمینان از نتایج
     </div>
   </foreignObject>
-  <rect x="80" y="660" width="920" height="220" rx="15" fill="rgba(46,125,50,0.2)" stroke="#2E7D32" stroke-width="2"/>
-  <foreignObject x="100" y="680" width="880" height="180">
+  <rect x="80" y="640" width="920" height="220" rx="15" fill="rgba(46,125,50,0.2)" stroke="#2E7D32" stroke-width="2"/>
+  <foreignObject x="100" y="640" width="880" height="220">
     <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:right; line-height:2;">
       <span style="color:#2E7D32; font-weight:bold;">استدلال‌ها:</span>
       <br/>
@@ -39,9 +39,9 @@
   </foreignObject>
   <rect x="80" y="920" width="920" height="260" rx="15" fill="#1A237E" stroke="#F9A825" stroke-width="2"/>
   <foreignObject x="100" y="950" width="880" height="210">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:26px; text-align:center; line-height:2;">
-      <span style="color:#F9A825; font-weight:bold; font-size:30px;">نقش دادگاه در سایه:</span>
-      <br/><br/>
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:32px; text-align:center; line-height:2;">
+      <span style="color:#F9A825; font-weight:bold; font-size:40px;">نقش دادگاه در سایه:</span>
+      <br/>
       تحلیل مقتدرانه و بی‌طرفانه
       <br/>
       با مشارکت حقوق‌دانان بین‌المللی
@@ -51,7 +51,7 @@
   </foreignObject>
   <foreignObject x="60" y="1220" width="960" height="100">
     <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.5); font-size:20px; text-align:center; line-height:1.6;">
-      این مسائل نیاز به فرایند حقوقی دارند نه شعار سیاسی
+      این مسائل نیاز به فرایند حقوقی دارند نه شعار سیاسی نه واکنش‌های سیاسی
       <br/>
       📖 لینک مطالعه در بیو
     </div>

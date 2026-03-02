@@ -7,9 +7,9 @@
       چرا «در سایه»؟
     </div>
   </foreignObject>
-  <rect x="60" y="240" width="960" height="320" rx="15" fill="rgba(255,255,255,0.05)" stroke="#F9A825" stroke-width="2"/>
-  <foreignObject x="80" y="260" width="920" height="280">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:28px; text-align:right; line-height:2.2;">
+  <rect x="60" y="220" width="960" height="380" rx="15" fill="rgba(255,255,255,0.05)" stroke="#F9A825" stroke-width="2"/>
+  <foreignObject x="80" y="230" width="920" height="360">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:32px; text-align:right; line-height:2.2;">
       <span style="color:#F9A825; font-weight:bold;">واقعیت تلخ:</span>
       <br/><br/>
       وقتی جنبش از تحریم ورزشی حمایت می‌کند...
@@ -19,9 +19,9 @@
       که بر زندگی هزاران ورزشکار اثر می‌گذارد
     </div>
   </foreignObject>
-  <rect x="60" y="600" width="960" height="320" rx="15" fill="rgba(255,255,255,0.05)" stroke="#C0392B" stroke-width="2"/>
-  <foreignObject x="80" y="620" width="920" height="280">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:28px; text-align:right; line-height:2.2;">
+  <rect x="60" y="650" width="960" height="340" rx="15" fill="rgba(255,255,255,0.05)" stroke="#C0392B" stroke-width="2"/>
+  <foreignObject x="80" y="665" width="920" height="280">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:32px; text-align:right; line-height:2.2;">
       <span style="color:#C0392B; font-weight:bold;">مجازات بدون دادرسی:</span>
       <br/><br/>
       درخواست اخراج فرزندان مقامات...
@@ -29,15 +29,14 @@
       <span style="color:#C0392B;">→</span> مجازاتی که بدون محاکمه اعمال شده
     </div>
   </foreignObject>
-  <rect x="60" y="960" width="960" height="200" rx="15" fill="#2E7D32"/>
-  <foreignObject x="80" y="980" width="920" height="160">
+  <rect x="60" y="1050" width="960" height="150" rx="15" fill="#2E7D32"/>
+  <foreignObject x="80" y="1080" width="920" height="160">
     <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:#FFFFFF; font-size:30px; font-weight:bold; text-align:center; line-height:1.8;">
-      راه‌حل: فرایند دادرسی ساختارمند
-      <br/>
+      راه‌حل: فرایند دادرسی ساختارمند  <br/>
       <span style="font-size:24px; font-weight:normal;">حتی قبل از دست‌یابی به حاکمیت</span>
     </div>
   </foreignObject>
-  <foreignObject x="60" y="1200" width="960" height="120">
+  <foreignObject x="60" y="1260" width="960" height="120">
     <div xmlns="http://www.w3.org/1999/xhtml" style="direction:rtl; font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif; color:rgba(255,255,255,0.5); font-size:20px; text-align:center;">
       📖 کتاب «دادگاه در سایه» | لینک در بیو
     </div>
