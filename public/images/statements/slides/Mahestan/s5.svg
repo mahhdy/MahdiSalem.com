@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" dir="rtl">
+  <defs>
+    <linearGradient id="bgGrad5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E"/>
+      <stop offset="100%" style="stop-color:#283593"/>
+    </linearGradient>
+    <linearGradient id="timelineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C62828"/>
+      <stop offset="50%" style="stop-color:#F9A825"/>
+      <stop offset="100%" style="stop-color:#2E7D32"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1080" height="1080" fill="url(#bgGrad5)"/>
+  <rect x="0" y="0" width="1080" height="10" fill="#F9A825"/>
+  <rect x="0" y="1070" width="1080" height="10" fill="#F9A825"/>
+  
+  <!-- عنوان -->
+  <text x="540" y="80" text-anchor="middle" font-family="Vazirmatn" font-size="52" font-weight="bold" fill="white">خط زمانی گذار</text>
+  <text x="540" y="130" text-anchor="middle" font-family="Vazirmatn" font-size="28" fill="#F9A825">حداکثر ۲۴ ماه</text>
+  
+  <!-- محور زمانی اصلی -->
+  <rect x="100" y="200" width="880" height="8" rx="4" fill="url(#timelineGrad)"/>
+  
+  <!-- نقاط زمانی و فازها -->
+  
+  <!-- فاز ۱ -->
+  <circle cx="150" cy="204" r="20" fill="#E65100" stroke="white" stroke-width="3"/>
+  <text x="150" y="212" text-anchor="middle" font-family="Vazirmatn" font-size="18" font-weight="bold" fill="white">۱</text>
+  <rect x="70" y="260" width="160" height="180" rx="12" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+  <text x="150" y="295" text-anchor="middle" font-family="Vazirmatn" font-size="20" font-weight="bold" fill="#E65100">انتخابات</text>
+  <line x1="90" y1="315" x2="210" y2="315" stroke="#E65100" stroke-width="1"/>
+  <text x="150" y="345" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#E65100">هفته‌ی ۱-۵</text>
+  <text x="150" y="375" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#E65100">ثبت‌نام و تبلیغات</text>
+  <text x="150" y="400" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#E65100">رأی‌گیری</text>
+  <text x="150" y="425" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#E65100">تشکیل مجلس</text>
+  
+  <!-- فاز ۲ -->
+  <circle cx="300" cy="204" r="20" fill="#C62828" stroke="white" stroke-width="3"/>
+  <text x="300" y="212" text-anchor="middle" font-family="Vazirmatn" font-size="18" font-weight="bold" fill="white">۲</text>
+  <rect x="220" y="260" width="160" height="180" rx="12" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+  <text x="300" y="295" text-anchor="middle" font-family="Vazirmatn" font-size="20" font-weight="bold" fill="#C62828">اقدامات فوری</text>
+  <line x1="240" y1="315" x2="360" y2="315" stroke="#C62828" stroke-width="1"/>
+  <text x="300" y="345" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#C62828">هفته‌ی ۱-۸</text>
+  <text x="300" y="375" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#C62828">فرمان‌های اضطراری</text>
+  <text x="300" y="400" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#C62828">تشکیل کابینه</text>
+  <text x="300" y="425" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#C62828">مصوبات فوری</text>
+  
+  <!-- فاز ۳ -->
+  <circle cx="450" cy="204" r="20" fill="#6A1B9A" stroke="white" stroke-width="3"/>
+  <text x="450" y="212" text-anchor="middle" font-family="Vazirmatn" font-size="18" font-weight="bold" fill="white">۳</text>
+  <rect x="370" y="260" width="160" height="180" rx="12" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="2"/>
+  <text x="450" y="295" text-anchor="middle" font-family="Vazirmatn" font-size="20" font-weight="bold" fill="#6A1B9A">ق.ا. موقت</text>
+  <line x1="390" y1="315" x2="510" y2="315" stroke="#6A1B9A" stroke-width="1"/>
+  <text x="450" y="345" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#6A1B9A">هفته‌ی ۱-۱۰</text>
+  <text x="450" y="375" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#6A1B9A">تدوین پیش‌نویس</text>
+  <text x="450" y="400" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#6A1B9A">بازخوردگیری</text>
+  <text x="450" y="425" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#6A1B9A">رفراندوم</text>
+  
+  <!-- فاز ۴ -->
+  <circle cx="600" cy="204" r="20" fill="#1565C0" stroke="white" stroke-width="3"/>
+  <text x="600" y="212" text-anchor="middle" font-family="Vazirmatn" font-size="18" font-weight="bold" fill="white">۴</text>
+  <rect x="520" y="260" width="160" height="180" rx="12" fill="#BBDEFB" stroke="#1565C0" stroke-width="2"/>
+  <text x="600" y="295" text-anchor="middle" font-family="Vazirmatn" font-size="20" font-weight="bold" fill="#1565C0">نهادسازی</text>
+  <line x1="540" y1="315" x2="660" y2="315" stroke="#1565C0" stroke-width="1"/>
+  <text x="600" y="345" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#1565C0">ماه ۳-۱۸</text>
+  <text x="600" y="375" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#1565C0">عدالت انتقالی</text>
+  <text x="600" y="400" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#1565C0">اصلاح امنیتی</text>
+  <text x="600" y="425" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#1565C0">اصلاح قضایی</text>
+  
+  <!-- فاز ۵ -->
+  <circle cx="780" cy="204" r="20" fill="#00695C" stroke="white" stroke-width="3"/>
+  <text x="780" y="212" text-anchor="middle" font-family="Vazirmatn" font-size="18" font-weight="bold" fill="white">۵</text>
+  <rect x="700" y="260" width="160" height="180" rx="12" fill="#E0F2F1" stroke="#00695C" stroke-width="2"/>
+  <text x="780" y="295" text-anchor="middle" font-family="Vazirmatn" font-size="20" font-weight="bold" fill="#00695C">ق.ا. نهایی</text>
+  <line x1="720" y1="315" x2="840" y2="315" stroke="#00695C" stroke-width="1"/>
+  <text x="780" y="345" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#00695C">ماه ۶-۱۸</text>
+  <text x="780" y="375" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#00695C">مجلس مؤسسان</text>
+  <text x="780" y="400" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#00695C">مشاوره‌ی عمومی</text>
+  <text x="780" y="425" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#00695C">رفراندوم</text>
+  
+  <!-- فاز ۶ -->
+  <circle cx="930" cy="204" r="20" fill="#2E7D32" stroke="white" stroke-width="3"/>
+  <text x="930" y="212" text-anchor="middle" font-family="Vazirmatn" font-size="18" font-weight="bold" fill="white">۶</text>
+  <rect x="850" y="260" width="160" height="180" rx="12" fill="#C8E6C9" stroke="#2E7D32" stroke-width="2"/>
+  <text x="930" y="295" text-anchor="middle" font-family="Vazirmatn" font-size="20" font-weight="bold" fill="#2E7D32">انتقال قدرت</text>
+  <line x1="870" y1="315" x2="990" y2="315" stroke="#2E7D32" stroke-width="1"/>
+  <text x="930" y="345" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#2E7D32">ماه ۱۸-۲۴</text>
+  <text x="930" y="375" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#2E7D32">انتخابات نهایی</text>
+  <text x="930" y="400" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#2E7D32">تشکیل دولت</text>
+  <text x="930" y="425" text-anchor="middle" font-family="Vazirmatn" font-size="14" fill="#2E7D32">پایان گذار</text>
+  
+  <!-- نمودار گذشته ← گذار ← آینده -->
+  <g transform="translate(0, 480)">
+    <!-- گذشته -->
+    <rect x="100" y="0" width="250" height="220" rx="15" fill="#FFCDD2" stroke="#C62828" stroke-width="2"/>
+    <text x="225" y="45" text-anchor="middle" font-family="Vazirmatn" font-size="28" font-weight="bold" fill="#C62828">گذشته</text>
+    <line x1="140" y1="65" x2="310" y2="65" stroke="#C62828" stroke-width="1"/>
+    <text x="225" y="100" text-anchor="middle" font-family="Vazirmatn" font-size="18" fill="#C62828">استبداد دینی</text>
+    <text x="225" y="130" text-anchor="middle" font-family="Vazirmatn" font-size="18" fill="#C62828">سرکوب و تبعیض</text>
+    <text x="225" y="160" text-anchor="middle" font-family="Vazirmatn" font-size="18" fill="#C62828">فساد سازمان‌یافته</text>
+    <text x="225" y="190" text-anchor="middle" font-family="Vazirmatn" font-size="18" fill="#C62828">انزوای بین‌المللی</text>
+    
+    <!-- فلش ۱ -->
+    <polygon points="370,110 400,90 400,130" fill="#F9A825"/>
+    
+    <!-- گذار -->
+    <rect x="415" y="0" width="250" height="220" rx="15" fill="#FFF9C4" stroke="#F9A825" stroke-width="2"/>
+    <text x="540" y="45" text-anchor="middle" font-family="Vazirmatn" font-size="28" font-weight="bold" fill="#F9A825">گذار</text>
+    <line x1="455" y1="65" x2="625" y2="65" stroke="#F9A825" stroke-width="1"/>
+    <text x="540" y="100" text-anchor="middle" font-family="Vazirmatn" font-size="18" fill="#F9A825">مجلس مهستان</text>
+    <text x="540" y="130" text-anchor="middle" font-family="Vazirmatn" font-size="18" fill="#F9A825">قانون اساسی موقت</text>
+    <text x="540" y="160" text-anchor="middle" font-family="Vazirmatn" font-size="18" fill="#F9A825">عدالت انتقالی</text>
+    <text x="540" y="190" text-anchor="middle" font-family="Vazirmatn" font-size="18" fill="#F9A825">اصلاحات نهادی</text>
+    
+    <!-- فلش ۲ -->
+    <polygon points="685,110 715,90 715,130" fill="#2E7D32"/>
+    
+    <!-- آینده -->
+    <rect x="730" y="0" width="250" height="220" rx="15" fill="#C8E6C9" stroke="#2E7D32" stroke-width="2"/>
+    <text x="855" y="45" text-anchor="middle" font-family="Vazirmatn" font-size="28" font-weight="bold" fill="#2E7D32">آینده</text>
+    <line x1="770" y1="65" x2="940" y2="65" stroke="#2E7D32" stroke-width="1"/>
+    <text x="855" y="100" text-anchor="middle" font-family="Vazirmatn" font-size="18" fill="#2E7D32">دموکراسی پایدار</text>
+    <text x="855" y="130" text-anchor="middle" font-family="Vazirmatn" font-size="18" fill="#2E7D32">حقوق بشر</text>
+    <text x="855" y="160" text-anchor="middle" font-family="Vazirmatn" font-size="18" fill="#2E7D32">رفاه اقتصادی</text>
+    <text x="855" y="190" text-anchor="middle" font-family="Vazirmatn" font-size="18" fill="#2E7D32">صلح و همکاری</text>
+  </g>
+  
+  <!-- پیام -->
+  <rect x="250" y="750" width="580" height="60" rx="30" fill="rgba(255,255,255,0.15)"/>
+  <text x="540" y="790" text-anchor="middle" font-family="Vazirmatn" font-size="26" fill="white">گذار باید پایان داشته باشد</text>
+  
+  <text x="540" y="1020" text-anchor="middle" font-family="Vazirmatn" font-size="24" fill="rgba(255,255,255,0.5)">۵ / ۶</text>
+</svg>

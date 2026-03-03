@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طرح مجلس مهستان — ارائه‌ی متحرک</title>
+    <style>
+        @font-face {
+            font-family: 'Vazirmatn';
+            src: url('fonts/Vazirmatn-Regular.ttf') format('truetype');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background: linear-gradient(135deg, #1A237E 0%, #283593 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .slide {
+            display: none;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .slide.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .title {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .title h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .title h2 {
+            font-size: 1.5rem;
+            color: #F9A825;
+            font-weight: normal;
+        }
+
+        .center-circle {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, #1565C0, #0D47A1);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 40px;
+            box-shadow: 0 0 60px rgba(21, 101, 192, 0.5);
+            animation: pulse 2s ease-in-out infinite;
+            border: 4px solid #F9A825;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 60px rgba(21, 101, 192, 0.5);
+            }
+
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 80px rgba(21, 101, 192, 0.7);
+            }
+        }
+
+        .center-circle .number {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #F9A825;
+        }
+
+        .center-circle .label {
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            min-width: 200px;
+            backdrop-filter: blur(10px);
+            border: 2px solid;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .box.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .box.blue {
+            border-color: #64B5F6;
+            background: rgba(187, 222, 251, 0.2);
+        }
+
+        .box.yellow {
+            border-color: #FFD54F;
+            background: rgba(255, 249, 196, 0.2);
+        }
+
+        .box.purple {
+            border-color: #BA68C8;
+            background: rgba(243, 229, 245, 0.2);
+        }
+
+        .box.green {
+            border-color: #81C784;
+            background: rgba(200, 230, 201, 0.2);
+        }
+
+        .box.red {
+            border-color: #E57373;
+            background: rgba(255, 205, 210, 0.2);
+        }
+
+        .box.orange {
+            border-color: #FFB74D;
+            background: rgba(255, 243, 224, 0.2);
+        }
+
+        .box .number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .box.blue .number {
+            color: #64B5F6;
+        }
+
+        .box.yellow .number {
+            color: #FFD54F;
+        }
+
+        .box.purple .number {
+            color: #BA68C8;
+        }
+
+        .box.green .number {
+            color: #81C784;
+        }
+
+        .box.red .number {
+            color: #E57373;
+        }
+
+        .box.orange .number {
+            color: #FFB74D;
+        }
+
+        .box .label {
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 50px 0;
+            padding: 20px 0;
+        }
+
+        .timeline-line {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            right: 5%;
+            height: 4px;
+            background: linear-gradient(to left, #C62828, #F9A825, #2E7D32);
+            border-radius: 2px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 1.5s ease;
+        }
+
+        .timeline-line.animate {
+            transform: scaleX(1);
+        }
+
+        .timeline-points {
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            z-index: 1;
+        }
+
+        .timeline-point {
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .timeline-point.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline-point .dot {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            margin: 0 auto 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .timeline-point .text {
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #C8E6C9, #A5D6A7);
+            border-radius: 20px;
+            padding: 30px 50px;
+            text-align: center;
+            max-width: 800px;
+            margin: 40px auto;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 0.8s ease;
+        }
+
+        .cta-box.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .cta-box h3 {
+            color: #1B5E20;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .cta-box p {
+            color: #2E7D32;
+            font-size: 1.2rem;
+        }
+
+        .navigation {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #F9A825;
+            background: rgba(0, 0, 0, 0.3);
+            color: #F9A825;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-btn:hover {
+            background: #F9A825;
+            color: #1A237E;
+        }
+
+        .dots {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .dot-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot-indicator.active {
+            background: #F9A825;
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- اسلاید ۱ -->
+        <div class="slide active" id="slide1">
+            <div class="title">
+                <h1>طرح مجلس مهستان</h1>
+                <h2>چارچوب نهادی گذار دموکراتیک ایران</h2>
+            </div>
+
+            <div class="center-circle">
+                <span class="number">۳۰۰</span>
+                <span class="label">نماینده</span>
+            </div>
+
+            <div class="boxes">
+                <div class="box blue">
+                    <div class="number">۲۴۰</div>
+                    <div class="label">کرسی استانی</div>
+                </div>
+                <div class="box yellow">
+                    <div class="number">۴۰</div>
+                    <div class="label">کرسی ملی</div>
+                </div>
+                <div class="box purple">
+                    <div class="number">۲۰</div>
+                    <div class="label">کرسی اقلیت‌ها</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- اسلاید ۲ -->
+        <div class="slide" id="slide2">
+            <div class="title">
+                <h1>خط زمانی گذار</h1>
+                <h2>حداکثر ۲۴ ماه</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-points">
+                    <div class="timeline-point">
+                        <div class="dot" style="background: #E65100;">۱</div>
+                        <div class="text">انتخابات<br><small>هفته ۵</small></div>
+                    </div>
+                    <div class="timeline-point">
+                        <div class="dot" style="background: #C62828;">۲</div>
+                        <div class="text">اقدامات فوری<br><small>هفته ۸</small></div>
+                    </div>
+                    <div class="timeline-point">
+                        <div class="dot" style="background: #6A1B9A;">۳</div>
+                        <div class="text">ق.ا. موقت<br><small>هفته ۱۰</small></div>
+                    </div>
+                    <div class="timeline-point">
+                        <div class="dot" style="background: #1565C0;">۴</div>
+                        <div class="text">نهادسازی<br><small>ماه ۱۸</small></div>
+                    </div>
+                    <div class="timeline-point">
+                        <div class="dot" style="background: #2E7D32;">۶</div>
+                        <div class="text">پایان گذار<br><small>ماه ۲۴</small></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <h3>ایران برای همه‌ی ایرانیان</h3>
+                <p>تصمیم نهایی فقط با مردم ایران است</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-btn" onclick="prevSlide()">→</button>
+        <div class="dots">
+            <div class="dot-indicator active" onclick="goToSlide(0)"></div>
+            <div class="dot-indicator" onclick="goToSlide(1)"></div>
+        </div>
+        <button class="nav-btn" onclick="nextSlide()">←</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const totalSlides = 2;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot-indicator');
+
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                dots[i].classList.remove('active');
+            });
+
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+
+            // انیمیشن‌های داخل اسلاید
+            setTimeout(() => {
+                const boxes = slides[index].querySelectorAll('.box');
+                boxes.forEach((box, i) => {
+                    setTimeout(() => box.classList.add('visible'), i * 200);
+                });
+
+                const timelineLine = slides[index].querySelector('.timeline-line');
+                if (timelineLine) {
+                    setTimeout(() => timelineLine.classList.add('animate'), 300);
+                }
+
+                const timelinePoints = slides[index].querySelectorAll('.timeline-point');
+                timelinePoints.forEach((point, i) => {
+                    setTimeout(() => point.classList.add('visible'), 800 + i * 200);
+                });
+
+                const ctaBox = slides[index].querySelector('.cta-box');
+                if (ctaBox) {
+                    setTimeout(() => ctaBox.classList.add('visible'), 1500);
+                }
+            }, 100);
+
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            showSlide((currentSlide + 1) % totalSlides);
+        }
+
+        function prevSlide() {
+            showSlide((currentSlide - 1 + totalSlides) % totalSlides);
+        }
+
+        function goToSlide(index) {
+            showSlide(index);
+        }
+
+        // کلیدهای جهت‌نما
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') nextSlide();
+            if (e.key === 'ArrowRight') prevSlide();
+        });
+
+        // اجرای انیمیشن اولیه
+        showSlide(0);
+    </script>
+</body>
+
+</html>

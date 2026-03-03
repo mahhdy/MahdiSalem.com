@@ -1444,107 +1444,118 @@ ${chapters.map((ch, i) => {
 
         await this.loadHashes();
 
-        // 1. Find all potential book items
-        const bookPatterns = [
-            `${CONFIG.sourceDir}/books/*`,
-            ...Object.values(CONFIG.supportedFormats).flat().map(ext => `${CONFIG.sourceDir}/books/*${ext}`),
-            `${CONFIG.sourceDir}/books/*/*`,
-            ...Object.values(CONFIG.supportedFormats).flat().map(ext => `${CONFIG.sourceDir}/books/*/*${ext}`)
-        ];
+        const dirs = await fs.readdir(CONFIG.sourceDir, { withFileTypes: true });
+        const categories = dirs
+            .filter(d => d.isDirectory() && d.name !== 'Archive' && !d.name.startsWith('.'))
+            .map(d => d.name);
 
-        const allItems = await globby(bookPatterns, { expandDirectories: false });
-        const uniqueItems = [...new Set(allItems)].filter(i =>
-            !i.includes('.content-cache') &&
-            !i.includes('/Archive/') &&
-            !i.startsWith('Archive/')
-        );
-
-        console.log(`📚 موارد پیدا شده در بخش کتاب‌ها: ${uniqueItems.length}`);
+        console.log(`📂 دسته‌بندی‌های شناسایی شده: ${categories.join(', ')}`);
 
         const processedPaths = new Set();
 
-        // Process Books
-        for (const itemPath of uniqueItems) {
-            if (processedPaths.has(itemPath)) continue;
+        for (const category of categories) {
+            console.log(`\n🔍 بررسی دسته‌بندی: ${category}`);
 
-            const isDir = (await fs.stat(itemPath)).isDirectory();
-            const ext = path.extname(itemPath).toLowerCase();
+            if (category === 'books') {
+                // ═══════════════════════════════════════════════════════════════
+                // بخش کتاب‌ها
+                // ═══════════════════════════════════════════════════════════════
+                const bookPatterns = [
+                    `${CONFIG.sourceDir}/books/*`,
+                    ...Object.values(CONFIG.supportedFormats).flat().map(ext => `${CONFIG.sourceDir}/books/*${ext}`),
+                    `${CONFIG.sourceDir}/books/*/*`,
+                    ...Object.values(CONFIG.supportedFormats).flat().map(ext => `${CONFIG.sourceDir}/books/*/*${ext}`)
+                ];
 
-            try {
-                if (isDir) {
-                    // It's a directory, treat as a book
-                    await this.processBook(itemPath, options);
-                    processedPaths.add(itemPath);
+                const allItems = await globby(bookPatterns, { expandDirectories: false });
+                const uniqueItems = [...new Set(allItems)].filter(i =>
+                    !i.includes('.content-cache') &&
+                    !i.includes('/Archive/') &&
+                    !i.startsWith('Archive/')
+                );
 
-                    // Mark associated PDFs as processed
-                    const companionPdf = await this.findRelatedPDF(itemPath);
-                    if (companionPdf) processedPaths.add(companionPdf);
-                } else if (CONFIG.supportedFormats.zip.includes(ext)) {
-                    await this.processZipBook(itemPath, options);
-                    processedPaths.add(itemPath);
-                } else if (CONFIG.supportedFormats.latex.includes(ext)) {
-                    await this.processBook(itemPath, options);
-                    processedPaths.add(itemPath);
+                console.log(`   📚 کتاب‌های پیدا شده: ${uniqueItems.length}`);
 
-                    const companionPdf = await this.findRelatedPDF(itemPath);
-                    if (companionPdf) processedPaths.add(companionPdf);
-                } else if (CONFIG.supportedFormats.pdf.includes(ext)) {
-                    // Only process as book if it's not a companion to anything else
-                    // (But we iterate through all items, so we'll check later if it was already processed)
-                    await this.processBook(itemPath, options);
-                    processedPaths.add(itemPath);
-                }
+                for (const itemPath of uniqueItems) {
+                    if (processedPaths.has(itemPath)) continue;
 
-                // If it was a directory or file and processed successfully, we might archive it.
-                // For books, we should be careful. Usually archiving the whole folder or specific files.
-                // Let's archive based on user preference, but here we'll archive the processed item.
-                if (processedPaths.has(itemPath)) {
-                    // If it's a directory, archive its contents or just move it? 
-                    // Better to archive as is.
-                    await this.archiveProcessedFile(itemPath);
-                }
-            } catch (error) {
-                console.error(`❌ خطا در پردازش ${path.basename(itemPath)}: ${error.message}`);
-            }
-        }
+                    const isDir = (await fs.stat(itemPath)).isDirectory();
+                    const ext = path.extname(itemPath).toLowerCase();
 
-        const articlePatterns = Object.values(CONFIG.supportedFormats).flat()
-            .filter(ext => ext !== '.zip')
-            .map(ext => `${CONFIG.sourceDir}/articles/**/*${ext}`);
-        let articleFiles = await globby(articlePatterns);
-        articleFiles = articleFiles.filter(i => !i.includes('/Archive/') && !i.startsWith('Archive/'));
-        console.log(`\n📄 مقالات: ${articleFiles.length}`);
+                    try {
+                        if (isDir) {
+                            await this.processBook(itemPath, options);
+                            processedPaths.add(itemPath);
 
-        for (const file of articleFiles) {
-            const lang = this.detectLanguage(file);
-            const outputDir = path.join(CONFIG.outputDir, 'articles', lang);
-            const baseName = path.basename(file, path.extname(file));
-            const outputFile = path.join(outputDir, `${baseName}.mdx`);
+                            const companionPdf = await this.findRelatedPDF(itemPath);
+                            if (companionPdf) processedPaths.add(companionPdf);
+                        } else if (CONFIG.supportedFormats.zip.includes(ext)) {
+                            await this.processZipBook(itemPath, options);
+                            processedPaths.add(itemPath);
+                        } else if (CONFIG.supportedFormats.latex.includes(ext)) {
+                            await this.processBook(itemPath, options);
+                            processedPaths.add(itemPath);
 
-            try {
-                const currentHash = await this.getFileHash(file);
-                const fileExists = await fs.access(outputFile).then(() => true).catch(() => false);
+                            const companionPdf = await this.findRelatedPDF(itemPath);
+                            if (companionPdf) processedPaths.add(companionPdf);
+                        } else if (CONFIG.supportedFormats.pdf.includes(ext)) {
+                            await this.processBook(itemPath, options);
+                            processedPaths.add(itemPath);
+                        }
 
-                const result_temp = await fs.readFile(file, 'utf-8');
-                const hasForceTag = result_temp.includes('force: true') || result_temp.includes('reprocess: true');
-
-                if (!options.force && !hasForceTag && currentHash && this.hashes[file] === currentHash && fileExists) {
-                    console.log(`⏩ صرف‌نظر: ${path.basename(file)} (بدون تغییر)`);
-                    this.stats.skipped = (this.stats.skipped || 0) + 1;
-                    continue;
-                }
-
-                const result = await this.processFile(file, { lang });
-                if (result) {
-                    await this.saveResult({ ...result, metadata: { ...result.metadata, lang } }, outputDir);
-                    if (currentHash) {
-                        this.hashes[file] = currentHash;
+                        if (processedPaths.has(itemPath)) {
+                            await this.archiveProcessedFile(itemPath);
+                        }
+                    } catch (error) {
+                        console.error(`   ❌ خطا در پردازش کتاب ${path.basename(itemPath)}: ${error.message}`);
                     }
-                    // Archive the file after successful processing
-                    await this.archiveProcessedFile(file);
                 }
-            } catch (error) {
-                console.error(`❌ خطا در ${path.basename(file)}: ${error.message}`);
+            } else {
+                // ═══════════════════════════════════════════════════════════════
+                // بخش موارد تک‌فایلی (Articles, Statements, Proposals و غیره)
+                // ═══════════════════════════════════════════════════════════════
+                const patterns = Object.values(CONFIG.supportedFormats).flat()
+                    .filter(ext => ext !== '.zip')
+                    .map(ext => `${CONFIG.sourceDir}/${category}/**/*${ext}`);
+
+                let files = await globby(patterns);
+                files = files.filter(i => !i.includes('/Archive/') && !i.startsWith('Archive/'));
+
+                console.log(`   📄 تعداد فایل‌های شناسایی شده در ${category}: ${files.length}`);
+
+                for (const file of files) {
+                    if (processedPaths.has(file)) continue;
+
+                    const lang = this.detectLanguage(file);
+                    const outputDir = path.join(CONFIG.outputDir, category, lang);
+                    const baseName = path.basename(file, path.extname(file));
+                    const outputFile = path.join(outputDir, `${baseName}.mdx`);
+
+                    try {
+                        const currentHash = await this.getFileHash(file);
+                        const fileExists = await fs.access(outputFile).then(() => true).catch(() => false);
+
+                        const result_temp = await fs.readFile(file, 'utf-8');
+                        const hasForceTag = result_temp.includes('force: true') || result_temp.includes('reprocess: true');
+
+                        if (!options.force && !hasForceTag && currentHash && this.hashes[file] === currentHash && fileExists) {
+                            console.log(`   ⏩ صرف‌نظر: ${path.basename(file)} (بدون تغییر)`);
+                            this.stats.skipped = (this.stats.skipped || 0) + 1;
+                            continue;
+                        }
+
+                        const result = await this.processFile(file, { lang });
+                        if (result) {
+                            await this.saveResult({ ...result, metadata: { ...result.metadata, lang } }, outputDir);
+                            if (currentHash) {
+                                this.hashes[file] = currentHash;
+                            }
+                            await this.archiveProcessedFile(file);
+                        }
+                    } catch (error) {
+                        console.error(`   ❌ خطا در ${path.basename(file)}: ${error.message}`);
+                    }
+                }
             }
         }
 

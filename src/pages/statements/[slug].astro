@@ -2,6 +2,8 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ShareButtons from "../../components/ShareButtons.astro";
 import PDFViewer from "../../components/PDFViewer.astro";
+import ImageSlider from "../../components/ImageSlider.astro";
+import WidthToggle from "../../components/WidthToggle.astro";
 import { t } from "../../i18n";
 import { getCollection, render } from "astro:content";
 import { shouldShowHidden } from "../../lib/hidden";
@@ -42,7 +44,8 @@ const typeLabels: Record<string, string> = {
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
-  <article class="container-narrow py-16">
+  <WidthToggle title={entry.data.title} author="مهدی سالم" lang={lang} />
+  <article class="container-narrow py-16" data-width-container>
     <header
       class={`mb-8 ${entry.data.coverImage && entry.data.imageDisplay === "side" ? "flex flex-col sm:flex-row sm:items-start gap-6" : entry.data.coverImage && entry.data.imageDisplay === "thumbnail" ? "flex items-start gap-4" : ""}`}
     >
@@ -97,9 +100,9 @@ const typeLabels: Record<string, string> = {
       )
     }
 
-    <div class="prose">
+    <div class="prose statement-content">
       {
-        entry.data.pdfOnly && entry.data.pdfUrl ? (
+        entry.data.pdfOnly && entry.data.pdfUrl && !entry.data.hasSlide ? (
           <div class="pdf-only-statement">
             <PDFViewer
               pdfUrl={entry.data.pdfUrl}
@@ -129,6 +132,97 @@ const typeLabels: Record<string, string> = {
               </a>
             </div>
           </div>
+        ) : entry.data.pdfUrl || entry.data.hasSlide ? (
+          <div class="statement-tabs-container">
+            <div class="flex justify-center mb-6">
+              <div class="inline-flex p-1 bg-surface-dim dark:bg-surface-dark-dim rounded-lg border border-border dark:border-border-dark flex-wrap justify-center">
+                {!entry.data.pdfOnly && (
+                  <button
+                    class="statement-tab-btn active px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
+                    data-tab="content"
+                    type="button"
+                  >
+                    {lang === "fa" ? "متن بیانیه" : "Statement"}
+                  </button>
+                )}
+                {entry.data.pdfUrl && (
+                  <button
+                    class={`statement-tab-btn ${entry.data.pdfOnly ? "active" : ""} px-6 py-2.5 rounded-md text-sm font-medium transition-colors`}
+                    data-tab="pdf"
+                    type="button"
+                  >
+                    {t("books.pdf_tab", lang)}
+                  </button>
+                )}
+                {entry.data.hasSlide &&
+                  entry.data.slideArray &&
+                  entry.data.slideArray.length > 0 && (
+                    <button
+                      class={`statement-tab-btn ${!entry.data.pdfUrl && entry.data.pdfOnly ? "active" : ""} px-6 py-2.5 rounded-md text-sm font-medium transition-colors`}
+                      data-tab="slides"
+                      type="button"
+                    >
+                      {lang === "fa" ? "اسلایدها" : "Slides"}
+                    </button>
+                  )}
+              </div>
+            </div>
+
+            {!entry.data.pdfOnly && (
+              <div
+                id="statement-content-tab"
+                class="statement-tab-content active transition-opacity duration-300"
+              >
+                <Content />
+              </div>
+            )}
+
+            {entry.data.pdfUrl && (
+              <div
+                id="statement-pdf-tab"
+                class={`statement-tab-content ${entry.data.pdfOnly ? "active" : ""} transition-opacity duration-300`}
+              >
+                <PDFViewer
+                  pdfUrl={entry.data.pdfUrl}
+                  title={entry.data.title}
+                  lang={lang}
+                />
+                <div class="mt-8 flex justify-center">
+                  <a
+                    href={entry.data.pdfUrl}
+                    class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary text-white font-medium hover:opacity-90 transition-colors no-underline"
+                    download
+                  >
+                    <svg
+                      class="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      />
+                    </svg>
+                    {t("books.download_pdf", lang)}
+                  </a>
+                </div>
+              </div>
+            )}
+
+            {entry.data.hasSlide &&
+              entry.data.slideArray &&
+              entry.data.slideArray.length > 0 && (
+                <div
+                  id="statement-slides-tab"
+                  class={`statement-tab-content ${!entry.data.pdfUrl && entry.data.pdfOnly ? "active" : ""} transition-opacity duration-300 p-2 sm:p-4 bg-surface dark:bg-surface-dark rounded-xl border border-border dark:border-border-dark my-8`}
+                >
+                  <ImageSlider images={entry.data.slideArray} />
+                </div>
+              )}
+          </div>
         ) : (
           <Content />
         )
@@ -140,3 +234,71 @@ const typeLabels: Record<string, string> = {
     </div>
   </article>
 </BaseLayout>
+
+<style>
+  .statement-tab-btn {
+    color: var(--color-text-muted);
+  }
+  html.dark .statement-tab-btn {
+    color: var(--color-text-dark-muted);
+  }
+  .statement-tab-btn:hover {
+    color: var(--color-text);
+  }
+  html.dark .statement-tab-btn:hover {
+    color: var(--color-text-dark);
+  }
+  .statement-tab-btn.active {
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    color: var(--color-primary);
+  }
+  html.dark .statement-tab-btn.active {
+    background-color: var(--color-surface-dark);
+    color: var(--color-primary-light);
+  }
+  .statement-tab-content {
+    display: none;
+  }
+  .statement-tab-content.active {
+    display: block;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabButtons = document.querySelectorAll(".statement-tab-btn");
+    const tabContents = document.querySelectorAll(".statement-tab-content");
+
+    if (tabButtons.length === 0) return;
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const tab = button.getAttribute("data-tab");
+
+        tabButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        tabContents.forEach((content) => {
+          if (content.id === `statement-${tab}-tab`) {
+            content.classList.add("active");
+          } else {
+            content.classList.remove("active");
+          }
+        });
+
+        window.history.replaceState(null, "", `#${tab}`);
+      });
+    });
+
+    const hash = window.location.hash.slice(1);
+    if (hash === "content" || hash === "pdf" || hash === "slides") {
+      const hashButton = document.querySelector(
+        `.statement-tab-btn[data-tab="${hash}"]`,
+      );
+      if (hashButton) {
+        (hashButton as HTMLElement).click();
+      }
+    }
+  });
+</script>

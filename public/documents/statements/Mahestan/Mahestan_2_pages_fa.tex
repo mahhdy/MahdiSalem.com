@@ -1,0 +1,421 @@
+%%% ============================================================
+%%% اینفوگرافیک دو صفحه‌ای — طرح مجلس مهستان
+%%% فرمت: A4 عمودی — قابل چاپ و اشتراک‌گذاری
+%%% ============================================================
+
+\documentclass[12pt, a4paper]{article}
+\usepackage{fontspec}
+\usepackage[margin=1cm]{geometry}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\usetikzlibrary{
+	shapes.geometric,
+	shapes.misc,
+	arrows.meta,
+	positioning,
+	calc,
+	backgrounds,
+	fit,
+	decorations.pathmorphing,
+	shadows.blur
+}
+
+\usepackage{xepersian}
+
+%% فونت
+\setmainfont[Scale=1.1]{Vazirmatn}
+\setdigitfont[Scale=1.1]{Vazirmatn}
+\newfontfamily\persianfont[Scale=1.1]{Vazirmatn}
+\setlatintextfont{Times New Roman}
+
+\hypersetup{pdfencoding=unicode}
+
+%% رنگ‌ها
+\definecolor{DeepBlue}{HTML}{1A237E}
+\definecolor{PrimaryBlue}{HTML}{1565C0}
+\definecolor{LightBlue}{HTML}{BBDEFB}
+\definecolor{PrimaryGreen}{HTML}{2E7D32}
+\definecolor{LightGreen}{HTML}{C8E6C9}
+\definecolor{PrimaryRed}{HTML}{C62828}
+\definecolor{LightRed}{HTML}{FFCDD2}
+\definecolor{PrimaryPurple}{HTML}{6A1B9A}
+\definecolor{LightPurple}{HTML}{F3E5F5}
+\definecolor{GoldYellow}{HTML}{F9A825}
+\definecolor{LightYellow}{HTML}{FFF9C4}
+\definecolor{PrimaryOrange}{HTML}{E65100}
+\definecolor{LightOrange}{HTML}{FFF3E0}
+\definecolor{TealColor}{HTML}{00695C}
+\definecolor{LightTeal}{HTML}{E0F2F1}
+\definecolor{DarkGray}{HTML}{424242}
+\definecolor{LightGray}{HTML}{F5F5F5}
+
+\pagestyle{empty}
+
+\begin{document}
+	
+	%% صفحه‌ی اول: معرفی کلی و ساختار
+	%% ─── \begin{latin} REMOVED ───
+		\begin{tikzpicture}[remember picture, overlay]
+			
+			%% پس‌زمینه
+			\fill[LightGray] (current page.south west) rectangle (current page.north east);
+			
+			%% هدر
+			\fill[DeepBlue]
+			([yshift=-3cm]current page.north west) rectangle (current page.north east);
+			\fill[GoldYellow]
+			([yshift=-3cm]current page.north west) rectangle
+			([yshift=-3.15cm]current page.north east);
+			
+			%% عنوان اصلی
+			\node[anchor=center, text=white, font=\fontsize{28}{36}\selectfont\bfseries]
+			at ([yshift=-1.2cm]current page.north)
+			{\rl{طرح مجلس مهستان}};
+			\node[anchor=center, text=GoldYellow, font=\large]
+			at ([yshift=-2.2cm]current page.north)
+			{\rl{چارچوب نهادی گذار دموکراتیک ایران}};
+			
+			%% ═══ بخش ۱: چرا مهستان؟ ═══
+			\node[anchor=north west, font=\Large\bfseries\color{DeepBlue}]
+			at ([xshift=1cm, yshift=-4cm]current page.north west)
+			{\rl{چرا این طرح؟}};
+			
+			\draw[DeepBlue, line width=1.5pt]
+			([xshift=1cm, yshift=-4.4cm]current page.north west) --
+			([xshift=6cm, yshift=-4.4cm]current page.north west);
+			
+			%% باکس‌های مشکل و راه‌حل
+			\node[rectangle, rounded corners=8pt, fill=LightRed, draw=PrimaryRed,
+			text width=8.5cm, align=right, inner sep=10pt,
+			font=\small]
+			at ([xshift=5.5cm, yshift=-6cm]current page.north west)
+			{%
+				\textbf{\color{PrimaryRed}\rl{مشکل: خلأ نهادی}}\\[4pt]
+				\rl{تجربه‌ی لیبی، مصر و عراق نشان داد:}\\
+				\rl{بدون نهاد واحد و مشروع = هرج‌ومرج}%
+			};
+			
+			\node[rectangle, rounded corners=8pt, fill=LightGreen, draw=PrimaryGreen,
+			text width=8.5cm, align=right, inner sep=10pt,
+			font=\small]
+			at ([xshift=15.5cm, yshift=-6cm]current page.north west)
+			{%
+				\textbf{\color{PrimaryGreen}\rl{راه‌حل: مجلس مهستان}}\\[4pt]
+				\rl{۳۰۰ نماینده‌ی منتخب مستقیم مردم}\\
+				\rl{نهاد عالی حاکمیت دوران گذار}%
+			};
+			
+			%% فلش بین دو باکس
+			\draw[-Stealth, line width=2pt, PrimaryGreen]
+			([xshift=10cm, yshift=-6cm]current page.north west) --
+			([xshift=11cm, yshift=-6cm]current page.north west);
+			
+			%% ═══ بخش ۲: ترکیب مجلس ═══
+			\node[anchor=north west, font=\Large\bfseries\color{DeepBlue}]
+			at ([xshift=1cm, yshift=-8.5cm]current page.north west)
+			{\rl{ترکیب مجلس مهستان}};
+			
+			\draw[DeepBlue, line width=1.5pt]
+			([xshift=1cm, yshift=-8.9cm]current page.north west) --
+			([xshift=7cm, yshift=-8.9cm]current page.north west);
+			
+			%% نمودار دایره‌ای ترکیب
+			\begin{scope}[shift={([xshift=5cm, yshift=-12.5cm]current page.north west)}]
+				\fill[DeepBlue] (0,0) circle (1.8cm);
+				\node[text=white, font=\Large\bfseries, align=center] at (0,0)
+				{\rl{۳۰۰}\\[-2pt]{\small\rl{نماینده}}};
+				
+				\fill[PrimaryBlue] (0:2.2cm) arc (0:288:2.2cm) --
+				(288:1.9cm) arc (288:0:1.9cm) -- cycle;
+				\fill[GoldYellow] (288:2.2cm) arc (288:336:2.2cm) --
+				(336:1.9cm) arc (336:288:1.9cm) -- cycle;
+				\fill[PrimaryPurple] (336:2.2cm) arc (336:360:2.2cm) --
+				(360:1.9cm) arc (360:336:1.9cm) -- cycle;
+			\end{scope}
+			
+			%% لیبل‌های ترکیب
+			\node[rectangle, rounded corners=5pt, fill=LightBlue, draw=PrimaryBlue,
+			text width=4cm, align=center, inner sep=6pt, font=\small]
+			at ([xshift=11cm, yshift=-10.5cm]current page.north west)
+			{\textbf{\color{PrimaryBlue}\rl{۲۴۰ کرسی استانی}}\\[2pt]
+				\rl{سیستم نسبی-فهرستی}};
+			
+			\node[rectangle, rounded corners=5pt, fill=LightYellow, draw=GoldYellow,
+			text width=4cm, align=center, inner sep=6pt, font=\small]
+			at ([xshift=11cm, yshift=-12.5cm]current page.north west)
+			{\textbf{\color{GoldYellow!80!black}\rl{۴۰ کرسی ملی}}\\[2pt]
+				\rl{فهرست سراسری}};
+			
+			\node[rectangle, rounded corners=5pt, fill=LightPurple, draw=PrimaryPurple,
+			text width=4cm, align=center, inner sep=6pt, font=\small]
+			at ([xshift=11cm, yshift=-14.5cm]current page.north west)
+			{\textbf{\color{PrimaryPurple}\rl{۲۰ کرسی اقلیت‌ها}}\\[2pt]
+				\rl{تضمینی}};
+			
+			%% سهمیه‌ی جنسیتی
+			\node[rectangle, rounded corners=5pt, fill=LightRed, draw=PrimaryRed,
+			text width=4cm, align=center, inner sep=6pt, font=\small]
+			at ([xshift=16.5cm, yshift=-12.5cm]current page.north west)
+			{\textbf{\color{PrimaryRed}\rl{حداقل ۳۰٪}}\\[2pt]
+				\rl{تنوع جنسیتی}\\
+				\rl{در فهرست‌ها}};
+			
+			%% ═══ بخش ۳: ۶ اصل راهنما ═══
+			\node[anchor=north west, font=\Large\bfseries\color{DeepBlue}]
+			at ([xshift=1cm, yshift=-16.5cm]current page.north west)
+			{\rl{۶ اصل راهنما}};
+			
+			\draw[DeepBlue, line width=1.5pt]
+			([xshift=1cm, yshift=-16.9cm]current page.north west) --
+			([xshift=5cm, yshift=-16.9cm]current page.north west);
+			
+			%% آیکون‌های اصول
+			\foreach \i/\title/\col in {
+				1/{\rl{دموکراسی + تخصص}}/PrimaryBlue,
+				2/{\rl{نمایندگی نسبی}}/PrimaryGreen,
+				3/{\rl{دو قانون اساسی}}/PrimaryPurple%
+			}{
+				\node[circle, fill=\col, minimum size=1.2cm,
+				font=\large\bfseries\color{white}]
+				at ([xshift={1.5cm+(\i-1)*6cm}, yshift=-18.5cm]current page.north west)
+				{\rl{\i}};
+				\node[anchor=north, font=\small\bfseries\color{\col}, text width=4.5cm, align=center]
+				at ([xshift={1.5cm+(\i-1)*6cm}, yshift=-19.3cm]current page.north west)
+				{\title};
+			}
+			
+			\foreach \i/\title/\col in {
+				4/{\rl{اصلاح نه تخریب}}/PrimaryOrange,
+				5/{\rl{شفافیت حداکثری}}/TealColor,
+				6/{\rl{فراگیری و حقوق بنیادین}}/PrimaryRed%
+			}{
+				\node[circle, fill=\col, minimum size=1.2cm,
+				font=\large\bfseries\color{white}]
+				at ([xshift={1.5cm+(\i-4)*6cm}, yshift=-21cm]current page.north west)
+				{\rl{\i}};
+				\node[anchor=north, font=\small\bfseries\color{\col}, text width=4.5cm, align=center]
+				at ([xshift={1.5cm+(\i-4)*6cm}, yshift=-21.8cm]current page.north west)
+				{\title};
+			}
+			
+			%% ═══ بخش ۴: خط زمانی ═══
+			\node[anchor=north west, font=\Large\bfseries\color{DeepBlue}]
+			at ([xshift=1cm, yshift=-23.5cm]current page.north west)
+			{\rl{خط زمانی گذار}};
+			
+			\draw[DeepBlue, line width=1.5pt]
+			([xshift=1cm, yshift=-23.9cm]current page.north west) --
+			([xshift=5.5cm, yshift=-23.9cm]current page.north west);
+			
+			%% محور زمانی
+			\draw[DarkGray, line width=2pt, -{Stealth[length=4mm]}]
+			([xshift=2cm, yshift=-25.5cm]current page.north west) --
+			([xshift=18.5cm, yshift=-25.5cm]current page.north west);
+			
+			%% نقاط زمانی
+			\foreach \x/\phase/\col/\label in {
+				2.5/۱/PrimaryOrange/{\rl{انتخابات}},
+				5.5/۲/PrimaryRed/{\rl{اقدامات فوری}},
+				8.5/۳/PrimaryPurple/{\rl{ق.ا. موقت}},
+				11.5/۴/PrimaryBlue/{\rl{نهادسازی}},
+				14.5/۵/TealColor/{\rl{ق.ا. نهایی}},
+				17.5/۶/PrimaryGreen/{\rl{انتقال قدرت}}%
+			}{
+				\fill[\col] ([xshift=\x cm, yshift=-25.5cm]current page.north west) circle (6pt);
+				\node[anchor=south, font=\scriptsize\bfseries\color{\col}]
+				at ([xshift=\x cm, yshift=-25.3cm]current page.north west) {\rl{فاز \phase}};
+				\node[anchor=north, font=\tiny\color{DarkGray}]
+				at ([xshift=\x cm, yshift=-25.7cm]current page.north west) {\label};
+			}
+			
+			%% زمان‌بندی
+			\node[font=\scriptsize\color{DarkGray}]
+			at ([xshift=2.5cm, yshift=-26.3cm]current page.north west) {\rl{هفته ۵}};
+			\node[font=\scriptsize\color{DarkGray}]
+			at ([xshift=8.5cm, yshift=-26.3cm]current page.north west) {\rl{هفته ۱۰}};
+			\node[font=\scriptsize\color{DarkGray}]
+			at ([xshift=14.5cm, yshift=-26.3cm]current page.north west) {\rl{ماه ۱۸}};
+			\node[font=\scriptsize\color{DarkGray}]
+			at ([xshift=17.5cm, yshift=-26.3cm]current page.north west) {\rl{ماه ۲۴}};
+			
+			%% فوتر
+			\fill[DeepBlue]
+			([yshift=1.2cm]current page.south west) rectangle (current page.south east);
+			\fill[GoldYellow]
+			([yshift=1.2cm]current page.south west) rectangle
+			([yshift=1.35cm]current page.south east);
+			
+			\node[anchor=center, text=white, font=\normalsize]
+			at ([yshift=0.6cm]current page.south)
+			{\rl{صفحه‌ی ۱ از ۲} \quad | \quad \rl{نسخه‌ی ۲.۰ — اسفند ۱۴۰۴}};
+			
+		\end{tikzpicture}
+		%% ─── \end{latin} REMOVED ───
+	
+	\newpage
+	
+	%% صفحه‌ی دوم: عدالت انتقالی، اقدامات فوری، فراخوان
+	%% ─── \begin{latin} REMOVED ───
+		\begin{tikzpicture}[remember picture, overlay]
+			
+			%% پس‌زمینه
+			\fill[LightGray] (current page.south west) rectangle (current page.north east);
+			
+			%% هدر
+			\fill[DeepBlue]
+			([yshift=-2.5cm]current page.north west) rectangle (current page.north east);
+			\fill[GoldYellow]
+			([yshift=-2.5cm]current page.north west) rectangle
+			([yshift=-2.65cm]current page.north east);
+			
+			\node[anchor=center, text=white, font=\fontsize{22}{30}\selectfont\bfseries]
+			at ([yshift=-1.25cm]current page.north)
+			{\rl{عدالت انتقالی و اقدامات فوری}};
+			
+			%% ═══ بخش ۱: ۵ ستون عدالت انتقالی ═══
+			\node[anchor=north west, font=\Large\bfseries\color{DeepBlue}]
+			at ([xshift=1cm, yshift=-3.5cm]current page.north west)
+			{\rl{۵ ستون عدالت انتقالی}};
+			
+			\draw[DeepBlue, line width=1.5pt]
+			([xshift=1cm, yshift=-3.9cm]current page.north west) --
+			([xshift=7cm, yshift=-3.9cm]current page.north west);
+			
+			%% ستون‌ها
+			\foreach \i/\title/\col/\items in {
+				1/{\rl{حقیقت‌یابی}}/PrimaryBlue/{%
+					\rl{کمیسیون حقیقت}\\
+					\rl{مستندسازی جنایات}\\
+					\rl{ثبت شهادت‌ها}},
+				2/{\rl{عدالت کیفری}}/PrimaryRed/{%
+					\rl{محاکمات عادلانه}\\
+					\rl{تفکیک مسئولیت‌ها}\\
+					\rl{عفو مشروط}},
+				3/{\rl{جبران خسارت}}/PrimaryOrange/{%
+					\rl{غرامت مالی}\\
+					\rl{اعاده‌ی حیثیت}\\
+					\rl{خدمات درمانی}},
+				4/{\rl{آشتی ملی}}/GoldYellow/{%
+					\rl{گفتگوهای ملی}\\
+					\rl{موزه‌ها و یادبود}\\
+					\rl{اصلاح تاریخ‌نگاری}},
+				5/{\rl{عدم تکرار}}/PrimaryGreen/{%
+					\rl{اصلاح نهادی}\\
+					\rl{آموزش حقوق بشر}\\
+					\rl{نهادهای نظارتی}}%
+			}{
+				\node[rectangle, rounded corners=6pt,
+				fill=\col!15, draw=\col, line width=1pt,
+				text width=3.2cm, align=center,
+				minimum height=3.5cm, inner sep=6pt]
+				at ([xshift={1.8cm+(\i-1)*3.6cm}, yshift=-6.5cm]current page.north west)
+				{%
+					\textbf{\color{\col}\title}\\[4pt]
+					\rl{\rule{2cm}{0.3pt}}\\[3pt]
+					{\scriptsize\items}%
+				};
+			}
+			
+			%% ═══ بخش ۲: ۱۰ اقدام فوری ═══
+			\node[anchor=north west, font=\Large\bfseries\color{DeepBlue}]
+			at ([xshift=1cm, yshift=-9.5cm]current page.north west)
+			{\rl{۱۰ اقدام فوری — هفته‌ی اول}};
+			
+			\draw[DeepBlue, line width=1.5pt]
+			([xshift=1cm, yshift=-9.9cm]current page.north west) --
+			([xshift=8cm, yshift=-9.9cm]current page.north west);
+			
+			%% جدول اقدامات
+			\foreach \i/\action in {
+				1/{\rl{آزادی زندانیان سیاسی}},
+				2/{\rl{لغو حجاب اجباری}},
+				3/{\rl{رفع فیلترینگ اینترنت}},
+				4/{\rl{تعلیق مجازات اعدام}},
+				5/{\rl{آزادی فعالیت احزاب}}%
+			}{
+				\node[circle, fill=PrimaryGreen, minimum size=0.7cm,
+				font=\small\bfseries\color{white}]
+				at ([xshift=1.5cm, yshift={-10.5cm-(\i-1)*0.9cm}]current page.north west) {\rl{\i}};
+				\node[anchor=west, font=\small]
+				at ([xshift=2.1cm, yshift={-10.5cm-(\i-1)*0.9cm}]current page.north west) {\action};
+			}
+			
+			\foreach \i/\action in {
+				6/{\rl{ممنوعیت بازداشت بدون حکم}},
+				7/{\rl{لغو محاکم انقلاب}},
+				8/{\rl{حق بازگشت تبعیدیان}},
+				9/{\rl{مسدودسازی حساب‌های مشکوک}},
+				10/{\rl{حفاظت از اسناد امنیتی}}%
+			}{
+				\node[circle, fill=PrimaryGreen, minimum size=0.7cm,
+				font=\small\bfseries\color{white}]
+				at ([xshift=10.5cm, yshift={-10.5cm-(\i-6)*0.9cm}]current page.north west) {\rl{\i}};
+				\node[anchor=west, font=\small]
+				at ([xshift=11.1cm, yshift={-10.5cm-(\i-6)*0.9cm}]current page.north west) {\action};
+			}
+			
+			%% ═══ بخش ۳: ۱۴ اصل غیرقابل‌نقض ═══
+			\node[anchor=north west, font=\Large\bfseries\color{DeepBlue}]
+			at ([xshift=1cm, yshift=-16cm]current page.north west)
+			{\rl{۱۴ اصل غیرقابل‌نقض}};
+			
+			\draw[DeepBlue, line width=1.5pt]
+			([xshift=1cm, yshift=-16.4cm]current page.north west) --
+			([xshift=6cm, yshift=-16.4cm]current page.north west);
+			
+			%% باکس اصول
+			\node[rectangle, rounded corners=8pt,
+			fill=LightPurple, draw=PrimaryPurple, line width=1.5pt,
+			text width=17.5cm, align=center, inner sep=12pt]
+			at ([xshift=10.25cm, yshift=-18.8cm]current page.north west)
+			{%
+				{\small%
+					\begin{tabular}{r@{\hspace{0.8cm}}r@{\hspace{0.8cm}}r}
+						\rl{۱. حاکمیت مردم} & \rl{۲. جدایی دین از دولت} & \rl{۳. برابری} \\[3pt]
+						\rl{۴. آزادی‌های بنیادین} & \rl{۵. ممنوعیت شکنجه} & \rl{۶. دادرسی عادلانه} \\[3pt]
+						\rl{۷. حقوق اقلیت‌ها} & \rl{۸. حقوق زنان} & \rl{۹. استقلال قضایی} \\[3pt]
+						\rl{۱۰. تمامیت ارضی} & \rl{۱۱. حاکمیت قانون} & \rl{۱۲. عدالت نه انتقام} \\[3pt]
+						\rl{۱۳. آزادی اطلاعات} & \rl{۱۴. تعهد به صلح} & \\
+					\end{tabular}%
+				}%
+			};
+			
+			%% ═══ بخش ۴: فراخوان ═══
+			\node[rectangle, rounded corners=10pt,
+			fill=LightGreen, draw=PrimaryGreen, line width=2pt,
+			text width=17.5cm, align=center, inner sep=15pt]
+			at ([xshift=10.25cm, yshift=-23.5cm]current page.north west)
+			{%
+				{\Large\bfseries\color{PrimaryGreen}\rl{فراخوان به همه‌ی ایرانیان}}\\[8pt]
+				{\normalsize%
+					\textbf{\rl{هر جریان:}} \rl{قانون اساسی موقت خود را بنویسید} \quad
+					\textbf{\rl{هر شهروند:}} \rl{مطالعه و مشارکت کنید}\\[4pt]
+					\textbf{\rl{هر متخصص:}} \rl{دانش خود را در خدمت گذار بگذارید} \quad
+					\textbf{\rl{هر فعال:}} \rl{مستندسازی را ادامه دهید}%
+				}%
+			};
+			
+			%% شعار نهایی
+			\node[anchor=center, font=\fontsize{20}{28}\selectfont\bfseries\color{DeepBlue}]
+			at ([yshift=-26cm]current page.north)
+			{\rl{«ایران برای همه‌ی ایرانیان»}};
+			
+			%% فوتر
+			\fill[DeepBlue]
+			([yshift=1.2cm]current page.south west) rectangle (current page.south east);
+			\fill[GoldYellow]
+			([yshift=1.2cm]current page.south west) rectangle
+			([yshift=1.35cm]current page.south east);
+			
+			\node[anchor=center, text=white, font=\normalsize]
+			at ([yshift=0.6cm]current page.south)
+			{\rl{صفحه‌ی ۲ از ۲} \quad | \quad
+				\rl{تصمیم نهایی فقط با مردم ایران است}};
+			
+		\end{tikzpicture}
+		%% ─── \end{latin} REMOVED ───
+	
+\end{document}

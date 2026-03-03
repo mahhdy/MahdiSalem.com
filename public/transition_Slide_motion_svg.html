@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" dir="rtl">
+  <defs>
+    <linearGradient id="bgGradAnim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E"/>
+      <stop offset="100%" style="stop-color:#283593"/>
+    </linearGradient>
+    
+    <!-- فیلتر درخشش -->
+    <filter id="glowAnim" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- انیمیشن پالس -->
+    <style>
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.05); opacity: 0.9; }
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes slideIn {
+        from { transform: translateX(-50px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes drawLine {
+        from { stroke-dashoffset: 1000; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes countUp {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+      @keyframes flowArrow {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(10px); }
+        100% { transform: translateX(0); }
+      }
+      
+      .pulse { animation: pulse 2s ease-in-out infinite; }
+      .fadeIn { animation: fadeIn 1s ease-out forwards; }
+      .slideIn { animation: slideIn 0.8s ease-out forwards; }
+      .drawLine { 
+        stroke-dasharray: 1000;
+        animation: drawLine 2s ease-out forwards;
+      }
+      .countUp { animation: countUp 0.5s ease-out forwards; }
+      .blink { animation: blink 1.5s ease-in-out infinite; }
+      .flowArrow { animation: flowArrow 1s ease-in-out infinite; }
+      
+      .delay1 { animation-delay: 0.2s; opacity: 0; }
+      .delay2 { animation-delay: 0.4s; opacity: 0; }
+      .delay3 { animation-delay: 0.6s; opacity: 0; }
+      .delay4 { animation-delay: 0.8s; opacity: 0; }
+      .delay5 { animation-delay: 1s; opacity: 0; }
+      .delay6 { animation-delay: 1.2s; opacity: 0; }
+    </style>
+  </defs>
+  
+  <!-- پس‌زمینه -->
+  <rect width="1200" height="800" fill="url(#bgGradAnim)"/>
+  
+  <!-- خطوط تزئینی متحرک -->
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="#F9A825" stroke-width="6" class="drawLine"/>
+  <line x1="0" y1="794" x2="1200" y2="794" stroke="#F9A825" stroke-width="6" class="drawLine" style="animation-delay: 0.3s"/>
+  
+  <!-- عنوان با انیمیشن -->
+  <g class="fadeIn">
+    <text x="600" y="80" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="48" font-weight="bold" fill="white" filter="url(#glowAnim)">
+      طرح مجلس مهستان
+    </text>
+    <text x="600" y="130" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="24" fill="#F9A825">
+      چارچوب نهادی گذار دموکراتیک ایران
+    </text>
+  </g>
+  
+  <!-- دایره‌ی مرکزی با پالس -->
+  <g transform="translate(600, 320)" class="pulse">
+    <circle cx="0" cy="0" r="100" fill="#1565C0" filter="url(#glowAnim)"/>
+    <circle cx="0" cy="0" r="85" fill="#1A237E" stroke="#F9A825" stroke-width="3"/>
+    <text x="0" y="-10" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="56" font-weight="bold" fill="#F9A825">۳۰۰</text>
+    <text x="0" y="30" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="18" fill="white">نماینده</text>
+  </g>
+  
+  <!-- سه باکس اطراف با انیمیشن ورود -->
+  <!-- باکس استانی -->
+  <g class="slideIn delay1">
+    <rect x="150" y="260" width="180" height="120" rx="12" fill="#BBDEFB" stroke="#1565C0" stroke-width="2"/>
+    <text x="240" y="310" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="36" font-weight="bold" fill="#1565C0">۲۴۰</text>
+    <text x="240" y="350" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="18" fill="#1565C0">کرسی استانی</text>
+    <!-- فلش متحرک -->
+    <g class="flowArrow">
+      <polygon points="340,320 370,310 370,330" fill="#1565C0"/>
+    </g>
+  </g>
+  
+  <!-- باکس ملی -->
+  <g class="slideIn delay2">
+    <rect x="150" y="400" width="180" height="120" rx="12" fill="#FFF9C4" stroke="#F9A825" stroke-width="2"/>
+    <text x="240" y="450" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="36" font-weight="bold" fill="#F9A825">۴۰</text>
+    <text x="240" y="490" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="18" fill="#F9A825">کرسی ملی</text>
+    <g class="flowArrow">
+      <polygon points="340,460 370,450 370,470" fill="#F9A825"/>
+    </g>
+  </g>
+  
+  <!-- باکس اقلیت‌ها -->
+  <g class="slideIn delay3" style="transform-origin: right center;">
+    <rect x="870" y="330" width="180" height="120" rx="12" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="2"/>
+    <text x="960" y="380" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="36" font-weight="bold" fill="#6A1B9A">۲۰</text>
+    <text x="960" y="420" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="18" fill="#6A1B9A">کرسی اقلیت‌ها</text>
+    <g class="flowArrow" style="animation-direction: reverse;">
+      <polygon points="860,390 830,380 830,400" fill="#6A1B9A"/>
+    </g>
+  </g>
+  
+  <!-- خط زمانی متحرک -->
+  <g transform="translate(100, 550)">
+    <!-- محور -->
+    <line x1="0" y1="0" x2="1000" y2="0" stroke="white" stroke-width="4" stroke-linecap="round" class="drawLine" style="animation-delay: 1.5s;"/>
+    
+    <!-- نقاط با انیمیشن -->
+    <g class="fadeIn delay4">
+      <circle cx="100" cy="0" r="20" fill="#E65100"/>
+      <text x="100" y="6" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="16" font-weight="bold" fill="white">۱</text>
+      <text x="100" y="45" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="14" fill="white">انتخابات</text>
+    </g>
+    
+    <g class="fadeIn delay5">
+      <circle cx="300" cy="0" r="20" fill="#C62828"/>
+      <text x="300" y="6" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="16" font-weight="bold" fill="white">۲</text>
+      <text x="300" y="45" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="14" fill="white">اقدامات فوری</text>
+    </g>
+    
+    <g class="fadeIn delay5" style="animation-delay: 1.4s;">
+      <circle cx="500" cy="0" r="20" fill="#6A1B9A"/>
+      <text x="500" y="6" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="16" font-weight="bold" fill="white">۳</text>
+      <text x="500" y="45" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="14" fill="white">ق.ا. موقت</text>
+    </g>
+    
+    <g class="fadeIn" style="animation-delay: 1.6s; opacity: 0;">
+      <circle cx="700" cy="0" r="20" fill="#1565C0"/>
+      <text x="700" y="6" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="16" font-weight="bold" fill="white">۴</text>
+      <text x="700" y="45" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="14" fill="white">نهادسازی</text>
+    </g>
+    
+    <g class="fadeIn" style="animation-delay: 1.8s; opacity: 0;">
+      <circle cx="900" cy="0" r="20" fill="#2E7D32"/>
+      <text x="900" y="6" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="16" font-weight="bold" fill="white">۶</text>
+      <text x="900" y="45" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="14" fill="white">پایان گذار</text>
+    </g>
+  </g>
+  
+  <!-- باکس فراخوان با چشمک -->
+  <g class="fadeIn" style="animation-delay: 2s; opacity: 0;">
+    <rect x="300" y="680" width="600" height="70" rx="35" fill="#C8E6C9" stroke="#2E7D32" stroke-width="3"/>
+    <g class="blink">
+      <text x="600" y="725" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="28" font-weight="bold" fill="#1B5E20">
+        ایران برای همه‌ی ایرانیان
+      </text>
+    </g>
+  </g>
+  
+  <!-- اطلاعات پایین -->
+  <text x="600" y="780" text-anchor="middle" font-family="Vazirmatn, sans-serif" font-size="14" fill="rgba(255,255,255,0.5)">
+    طرح مهستان — نسخه‌ی ۲.۰ — اسفند ۱۴۰۴
+  </text>
+  
+</svg>

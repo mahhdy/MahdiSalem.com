@@ -1408,6 +1408,7 @@
 
 /* Base container styles (NOT inside @layer so they have normal specificity) */
 .container-article,
+.container-narrow,
 .container-wide {
   margin-left: auto;
   margin-right: auto;
@@ -1422,6 +1423,7 @@
 @media (min-width: 768px) {
 
   .container-article,
+  .container-narrow,
   .container-wide {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -1431,6 +1433,7 @@
 @media (min-width: 1024px) {
 
   .container-article,
+  .container-narrow,
   .container-wide {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1439,22 +1442,26 @@
 
 /* CSS-driven width overrides via data attribute on <html> */
 html[data-content-width="default"] .container-article,
+html[data-content-width="default"] .container-narrow,
 html[data-content-width="default"] .container-wide {
   max-width: 56rem !important;
   /* 896px */
 }
 
 html[data-content-width="1024"] .container-article,
+html[data-content-width="1024"] .container-narrow,
 html[data-content-width="1024"] .container-wide {
   max-width: 1024px !important;
 }
 
 html[data-content-width="1280"] .container-article,
+html[data-content-width="1280"] .container-narrow,
 html[data-content-width="1280"] .container-wide {
   max-width: 1280px !important;
 }
 
 html[data-content-width="full"] .container-article,
+html[data-content-width="full"] .container-narrow,
 html[data-content-width="full"] .container-wide {
   max-width: 90vw !important;
 }

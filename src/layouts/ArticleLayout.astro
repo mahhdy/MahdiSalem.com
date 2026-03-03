@@ -80,7 +80,7 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
   <!-- Floating Width Toggle (only visible after scroll) -->
   <WidthToggle title={title} author={author} lang={lang} />
 
-  <article class="content-with-header container-article py-10">
+  <article class="content-with-header container-article py-10" data-width-container>
     <!-- Header with optional side/thumbnail image -->
     <header class={`mb-8 ${coverImage && imageDisplay === 'side' ? 'flex flex-col sm:flex-row sm:items-start gap-6' : coverImage && imageDisplay === 'thumbnail' ? 'flex items-start gap-4' : ''}`}>
       {/* Side image — medium size beside header */}

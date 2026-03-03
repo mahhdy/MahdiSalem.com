@@ -64,7 +64,7 @@ const currentSlug = slug || stripLangPrefix(Astro.url.pathname);
   <!-- Sticky Width Toggle Header -->
   <WidthToggle title={title} author={author} lang={lang} />
 
-  <div class="content-with-header container-wide py-10">
+  <div class="content-with-header container-wide py-10" data-width-container>
     <div class="flex flex-col lg:flex-row gap-8">
       <!-- Sidebar: Chapter list -->
       <aside class="lg:w-64 shrink-0">

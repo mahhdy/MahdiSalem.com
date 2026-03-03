@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>اسلایدهای اینستاگرام - طرح مهستان</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap');
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding: 40px;
+            margin: 0;
+        }
+
+        svg {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            font-family: 'Vazirmatn', sans-serif;
+            background: white;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .slide-content {
+            font-family: 'Vazirmatn', sans-serif;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            color: #333;
+        }
+
+        .cover-slide {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            color: white;
+            position: relative;
+            z-index: 10;
+        }
+
+        .cover-slide h2 {
+            color: #F9A825;
+            font-size: 60px;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .cover-slide h1 {
+            color: #FFFFFF;
+            font-size: 110px;
+            font-weight: 900;
+            margin: 0;
+            line-height: 1.2;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .cover-slide h1 span {
+            color: #F9A825;
+            font-size: 150px;
+            display: block;
+        }
+
+        .cover-slide .divider {
+            width: 600px;
+            height: 10px;
+            background-color: #C62828;
+            border-radius: 5px;
+            margin: 50px auto;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .cover-slide p {
+            color: #FFFFFF;
+            font-size: 50px;
+            font-weight: 400;
+            margin: 15px 0;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .wipe-text {
+            position: absolute;
+            bottom: 80px;
+            left: 100px;
+            font-size: 35px;
+            font-weight: 700;
+            opacity: 0.9;
+            color: white;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .content-slide {
+            padding: 190px 80px 80px 80px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .header-title {
+            position: absolute;
+            top: 45px;
+            right: 80px;
+            color: #FFFFFF;
+            font-size: 55px;
+            font-weight: 900;
+            z-index: 10;
+            margin: 0;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            line-height: 1.3;
+        }
+
+        .box {
+            border-radius: 20px;
+            padding: 45px 50px;
+            margin-bottom: 35px;
+            position: relative;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .box::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 25px;
+            border-radius: 0 20px 20px 0;
+        }
+
+        .box h3 {
+            font-size: 55px;
+            font-weight: 900;
+            margin: 0 0 25px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            line-height: 1.3;
+        }
+
+        .box p {
+            font-size: 40px;
+            font-weight: 400;
+            margin: 15px 0;
+            line-height: 1.7;
+            color: #424242;
+            text-align: justify;
+        }
+
+        .box li {
+            font-size: 38px;
+            font-weight: 400;
+            margin: 15px 0;
+            line-height: 1.6;
+            color: #424242;
+        }
+
+        .box ul {
+            margin: 0;
+            padding-right: 40px;
+        }
+
+        .red-box {
+            background-color: #FFEBEE;
+        }
+
+        .red-box::before {
+            background-color: #C62828;
+        }
+
+        .red-box h3 {
+            color: #C62828;
+        }
+
+        .green-box {
+            background-color: #E8F5E9;
+        }
+
+        .green-box::before {
+            background-color: #2E7D32;
+        }
+
+        .green-box h3 {
+            color: #2E7D32;
+        }
+
+        .blue-box {
+            background-color: #E3F2FD;
+        }
+
+        .blue-box::before {
+            background-color: #1565C0;
+        }
+
+        .blue-box h3 {
+            color: #1565C0;
+        }
+
+        .orange-box {
+            background-color: #FFF3E0;
+        }
+
+        .orange-box::before {
+            background-color: #E65100;
+        }
+
+        .orange-box h3 {
+            color: #E65100;
+        }
+
+        .purple-box {
+            background-color: #F3E5F5;
+        }
+
+        .purple-box::before {
+            background-color: #6A1B9A;
+        }
+
+        .purple-box h3 {
+            color: #6A1B9A;
+        }
+
+        .teal-box {
+            background-color: #E0F2F1;
+        }
+
+        .teal-box::before {
+            background-color: #00695C;
+        }
+
+        .teal-box h3 {
+            color: #00695C;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .arm-card {
+            border-radius: 30px;
+            border: 4px solid;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            padding-top: 80px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .arm-icon {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 65px;
+            color: white;
+            position: absolute;
+            top: -65px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .arm-title {
+            font-size: 55px;
+            font-weight: 900;
+            margin: 20px 0;
+        }
+
+        .arm-subtitle {
+            font-size: 38px;
+            font-weight: 700;
+            color: #424242;
+            margin-bottom: 30px;
+        }
+
+        .arm-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: right;
+            flex-grow: 1;
+        }
+
+        .arm-list li {
+            font-size: 35px;
+            color: #424242;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            line-height: 1.4;
+        }
+
+        .arm-list li::before {
+            content: '•';
+            font-size: 50px;
+            line-height: 1;
+        }
+
+        .arm-tech {
+            background-color: #FFF3E0;
+            border-color: #E65100;
+        }
+
+        .arm-tech .arm-icon {
+            background-color: #E65100;
+        }
+
+        .arm-tech .arm-title {
+            color: #E65100;
+        }
+
+        .arm-tech .arm-list li::before {
+            color: #E65100;
+        }
+
+        .arm-demo {
+            background-color: #E3F2FD;
+            border-color: #1565C0;
+        }
+
+        .arm-demo .arm-icon {
+            background-color: #1565C0;
+        }
+
+        .arm-demo .arm-title {
+            color: #1565C0;
+        }
+
+        .arm-demo .arm-list li::before {
+            color: #1565C0;
+        }
+
+        .call-to-action {
+            background-color: white;
+            border-radius: 40px;
+            padding: 70px;
+            text-align: center;
+            margin-top: 50px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .call-to-action h3 {
+            color: #1565C0;
+            font-size: 70px;
+            font-weight: 900;
+            margin: 0 0 40px 0;
+        }
+
+        .call-to-action p {
+            color: #424242;
+            font-size: 45px;
+            font-weight: 700;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .call-to-action .highlight {
+            color: #2E7D32;
+            font-size: 58px;
+            font-weight: 900;
+            display: block;
+            margin-top: 30px;
+        }
+
+        .share-btn {
+            background-color: #F9A825;
+            color: #1565C0;
+            font-size: 45px;
+            font-weight: 900;
+            padding: 25px 60px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 50px;
+            box-shadow: 0 10px 20px rgba(249, 168, 37, 0.4);
+        }
+
+        .quote-text {
+            font-size: 46px;
+            font-weight: 700;
+            color: #424242;
+            text-align: center;
+            margin-bottom: 45px;
+            line-height: 1.6;
+        }
+
+        .small-box {
+            padding: 35px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 130px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .small-box::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 15px;
+            border-radius: 0 20px 20px 0;
+        }
+
+        .small-box h4 {
+            font-size: 42px;
+            font-weight: 900;
+            margin: 0 0 15px 0;
+        }
+
+        .small-box p {
+            font-size: 34px;
+            font-weight: 400;
+            margin: 0;
+            color: #616161;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .sb-blue::before {
+            background-color: #1565C0;
+        }
+
+        .sb-blue h4 {
+            color: #1565C0;
+        }
+
+        .sb-red::before {
+            background-color: #C62828;
+        }
+
+        .sb-red h4 {
+            color: #C62828;
+        }
+
+        .sb-orange::before {
+            background-color: #E65100;
+        }
+
+        .sb-orange h4 {
+            color: #E65100;
+        }
+
+        .sb-yellow::before {
+            background-color: #F9A825;
+        }
+
+        .sb-yellow h4 {
+            color: #F9A825;
+        }
+
+        .sb-green::before {
+            background-color: #2E7D32;
+        }
+
+        .sb-green h4 {
+            color: #2E7D32;
+        }
+
+        .sb-purple::before {
+            background-color: #6A1B9A;
+        }
+
+        .sb-purple h4 {
+            color: #6A1B9A;
+        }
+
+        .priority-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+            margin-bottom: 25px;
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .priority-num {
+            background: #B71C1C;
+            color: white;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 35px;
+            font-weight: 900;
+            flex-shrink: 0;
+        }
+
+        .priority-content h4 {
+            margin: 0 0 10px 0;
+            font-size: 38px;
+            color: #B71C1C;
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Slide 1: Cover -->
+    <svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1080" height="1350" fill="#1565C0" />
+        <path d="M0,0 L1080,0 L1080,450 L0,250 Z" fill="#0D47A1" opacity="0.6" />
+        <path d="M0,1350 L1080,1350 L1080,950 L0,1150 Z" fill="#0D47A1" opacity="0.3" />
+        <circle cx="900" cy="1100" r="400" fill="#F9A825" opacity="0.15" />
+        <circle cx="200" cy="300" r="250" fill="#F9A825" opacity="0.1" />
+
+        <foreignObject x="0" y="0" width="1080" height="1350">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="slide-content cover-slide">
+                <h2>بیانیه‌ی چارچوب نهادی گذار ایران</h2>
+                <h1>طـرح مـجـلـس <span>مــهــســتــان</span></h1>
+                <div class="divider"></div>
+                <p>نقشه‌ی راه عملیاتی، فراگیر و ایمن</p>
+                <p>برای گذار به دموکراسی پایدار</p>
+                <div class="wipe-text">ورق بزنید ⟵</div>
+            </div>
+        </foreignObject>
+    </svg>
+
+    <!-- Slide 2: The Challenge -->
+    <svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1080" height="1350" fill="#FAFAFA" />
+        <rect width="1080" height="160" fill="#1565C0" />
+        <path d="M0,160 L1080,160 L1080,220 L0,180 Z" fill="#0D47A1" opacity="0.5" />
+
+        <foreignObject x="0" y="0" width="1080" height="1350">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="slide-content content-slide">
+                <h2 class="header-title">چالش اصلی دوران گذار چیست؟</h2>
+
+                <div style="padding-top: 10px;">
+                    <div class="box red-box">
+                        <h3>⚠️ خلأ قانونی و نهادی!</h3>
+                        <p>تجربه‌ی کشورهایی مثل لیبی، مصر و عراق نشان داد: <strong>فروپاشی بدون طراحی قبلی مساوی است با
+                                هرج‌ومرج و بازگشت استبداد.</strong></p>
+                    </div>
+
+                    <div class="box green-box">
+                        <h3>✅ پاسخ مهستان: دو قانون اساسی</h3>
+                        <p>برای جلوگیری از خلأ قدرت، قانون‌گذاری دو مرحله‌ای است:</p>
+                        <ul>
+                            <li><strong>۱. قانون اساسی موقت (فوری):</strong> تصویب سریع در ۲ ماه اول برای ایجاد حداقل
+                                چارچوب حقوقی امن.</li>
+                            <li><strong>۲. قانون اساسی نهایی (دائمی):</strong> تدوین با فرصت کافی و همفکری ملی، تصویب
+                                شده از طریق رفراندوم.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </foreignObject>
+    </svg>
+
+    <!-- Slide 3: Principles -->
+    <svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1080" height="1350" fill="#FAFAFA" />
+        <rect width="1080" height="160" fill="#1565C0" />
+        <path d="M0,160 L1080,160 L1080,220 L0,180 Z" fill="#0D47A1" opacity="0.5" />
+
+        <foreignObject x="0" y="0" width="1080" height="1350">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="slide-content content-slide">
+                <h2 class="header-title">اصول طراحی نهادی مهستان</h2>
+
+                <div style="padding-top: 0px;">
+                    <div class="grid-2">
+                        <div class="small-box sb-blue">
+                            <h4>نمایندگی نسبتی</h4>
+                            <p>سیستم متناسب که تضمین می‌کند ترکیب مجلس آینه‌ی واقعی جامعه‌ی ایران و تنوع آن باشد.</p>
+                        </div>
+                        <div class="small-box sb-orange">
+                            <h4>اصلاح نه تخریب</h4>
+                            <p>حفظ ساختارهای اداری و خدماتی با رهبری جدید. پرهیز از فاجعه‌ی انحلال کامل مانند عراق.</p>
+                        </div>
+                        <div class="small-box sb-green">
+                            <h4>شفافیت حداکثری</h4>
+                            <p>جلسات علنی، اسناد عمومی، و شفافیت مالی برای جلوگیری از فساد در دوران گذار.</p>
+                        </div>
+                        <div class="small-box sb-red">
+                            <h4>تعهد به حقوق بنیادین</h4>
+                            <p>حقوق بشر، برابری جنسیتی و حقوق ملیت‌ها غیرقابل‌نقض‌اند و قابل تعلیق نیستند.</p>
+                        </div>
+                    </div>
+
+                    <div class="box purple-box" style="margin-top: 10px;">
+                        <h3>🏛️ تشکیل مجلس مهستان</h3>
+                        <ul>
+                            <li><strong>۳۰۰ نماینده</strong> (استانی، ملی، و حقوق اقلیت‌ها)</li>
+                            <li><strong>۳۰٪ سهمیه‌ی جنسیتی تضمین‌شده</strong> با مکانیسم جایگزینی دقیق.</li>
+                            <li><strong>سازوکار مشارکت و رأی برای ایرانیان خارج از کشور</strong> (دیاسپورا).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </foreignObject>
+    </svg>
+
+    <!-- Slide 4: Technocrat vs Democrat Arm -->
+    <svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1080" height="1350" fill="#FAFAFA" />
+        <rect width="1080" height="160" fill="#1565C0" />
+        <path d="M0,160 L1080,160 L1080,220 L0,180 Z" fill="#0D47A1" opacity="0.5" />
+
+        <foreignObject x="0" y="0" width="1080" height="1350">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="slide-content content-slide">
+                <h2 class="header-title">راز حکمرانی موفق: دو بازوی تصمیم‌گیری</h2>
+
+                <p class="quote-text" style="font-size: 40px; margin-top: -10px; margin-bottom: 70px;">هر تصمیم نیازمند
+                    دو گزارش موازی است: بُعد <strong>واقعیت</strong> و بُعد <strong>ارزش</strong>.</p>
+
+                <div class="grid-2" style="height: 600px; margin-top: 0;">
+                    <div class="arm-card arm-tech">
+                        <div class="arm-icon">🔬</div>
+                        <div class="arm-title">بازوی تخصص</div>
+                        <div class="arm-subtitle">واقعیت چیست؟</div>
+                        <ul class="arm-list">
+                            <li>مرکز تحقیقات مستقل</li>
+                            <li>تحلیل دقیق داده‌ها و آمار</li>
+                            <li>بررسی پیامدهای اقتصادی و حقوقی</li>
+                            <li>استفاده از تجربه‌ی جهانی</li>
+                        </ul>
+                    </div>
+
+                    <div class="arm-card arm-demo">
+                        <div class="arm-icon">📢</div>
+                        <div class="arm-title">بازوی مردم</div>
+                        <div class="arm-subtitle">مردم چه می‌خواهند؟</div>
+                        <ul class="arm-list">
+                            <li>بستر دموکراسی دیجیتال</li>
+                            <li>نظرسنجی‌های ملی علمی</li>
+                            <li>دریافت بازخورد قانون‌گذاری</li>
+                            <li>مجامع مشورتی شهروندی</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box green-box" style="margin-top: 50px; text-align: center; padding: 30px;">
+                    <h3 style="justify-content: center; margin: 0; font-size: 50px;">🌟 تصمیم‌گیری آگاهانه = ترکیب علم +
+                        اراده‌ی ملی</h3>
+                </div>
+            </div>
+        </foreignObject>
+    </svg>
+
+    <!-- Slide 5: Priorities 1st 100 days -->
+    <svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1080" height="1350" fill="#FAFAFA" />
+        <rect width="1080" height="160" fill="#1565C0" />
+        <path d="M0,160 L1080,160 L1080,220 L0,180 Z" fill="#0D47A1" opacity="0.5" />
+
+        <foreignObject x="0" y="0" width="1080" height="1350">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="slide-content content-slide">
+                <h2 class="header-title">اولویت‌های ۱۰۰ روز نخست</h2>
+
+                <div
+                    style="background: #FFEBEE; padding: 30px; border-radius: 20px; margin-top: 10px; border-right: 15px solid #B71C1C;">
+                    <h3 style="color: #B71C1C; margin: 0 0 20px 0; font-size: 45px; font-weight: 900;">هفته‌ی اول:
+                        فرمان‌های اضطراری فوری</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="priority-item" style="margin:0; padding:15px;">
+                            <div class="priority-num" style="width:45px;height:45px;font-size:25px;">۱</div>
+                            <div class="priority-content">
+                                <h4>آزادی زندانیان سیاسی</h4>
+                            </div>
+                        </div>
+                        <div class="priority-item" style="margin:0; padding:15px;">
+                            <div class="priority-num" style="width:45px;height:45px;font-size:25px;">۲</div>
+                            <div class="priority-content">
+                                <h4>لغو حجاب اجباری</h4>
+                            </div>
+                        </div>
+                        <div class="priority-item" style="margin:0; padding:15px;">
+                            <div class="priority-num" style="width:45px;height:45px;font-size:25px;">۳</div>
+                            <div class="priority-content">
+                                <h4>رفع کامل فیلترینگ</h4>
+                            </div>
+                        </div>
+                        <div class="priority-item" style="margin:0; padding:15px;">
+                            <div class="priority-num" style="width:45px;height:45px;font-size:25px;">۴</div>
+                            <div class="priority-content">
+                                <h4>تعلیق مجازات اعدام</h4>
+                            </div>
+                        </div>
+                        <div class="priority-item" style="margin:0; padding:15px;">
+                            <div class="priority-num" style="width:45px;height:45px;font-size:25px;">۵</div>
+                            <div class="priority-content">
+                                <h4>لغو دادگاه‌های انقلاب</h4>
+                            </div>
+                        </div>
+                        <div class="priority-item" style="margin:0; padding:15px;">
+                            <div class="priority-num" style="width:45px;height:45px;font-size:25px;">۶</div>
+                            <div class="priority-content">
+                                <h4>آزادی احزاب و تشکل‌ها</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    style="background: #FFF3E0; padding: 30px; border-radius: 20px; margin-top: 30px; border-right: 15px solid #E65100;">
+                    <h3 style="color: #E65100; margin: 0 0 20px 0; font-size: 45px; font-weight: 900;">هفته‌ی ۱ تا ۴:
+                        مصوبات فوری</h3>
+                    <ul style="font-size: 38px; line-height: 1.6; color: #424242; margin: 0; padding-right: 30px;">
+                        <li><strong>قانون آزادی مطبوعات</strong> و تظاهرات.</li>
+                        <li>مدیریت <strong>بحران اقتصادی</strong> و استقلال بانک مرکزی.</li>
+                        <li><strong>لغو قوانین تبعیض‌آمیز</strong> علیه زنان (ارث، طلاق، سفر).</li>
+                        <li>حمایت از حقوق ملیت‌ها و <strong>آموزش زبان مادری</strong>.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </foreignObject>
+    </svg>
+
+    <!-- Slide 6: Transitional Justice -->
+    <svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1080" height="1350" fill="#FAFAFA" />
+        <rect width="1080" height="160" fill="#1565C0" />
+        <path d="M0,160 L1080,160 L1080,220 L0,180 Z" fill="#0D47A1" opacity="0.5" />
+
+        <foreignObject x="0" y="0" width="1080" height="1350">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="slide-content content-slide">
+                <h2 class="header-title" style="font-size: 50px;">پنج ستون عدالت در فردای گذار</h2>
+
+                <p class="quote-text" style="margin-top: -5px; margin-bottom: 25px;">عدالت بدون آشتی = انتقام | آشتی
+                    بدون عدالت = فراموشی</p>
+
+                <div>
+                    <div class="small-box sb-blue" style="margin-bottom: 15px; min-height: 100px; padding: 25px;">
+                        <h4>۱. حقیقت‌یابی 🔍</h4>
+                        <p>مستندسازی جنایات ۴۵ ساله و ثبت صدای قربانیان در جلسات علنی.</p>
+                    </div>
+
+                    <div class="small-box sb-red" style="margin-bottom: 15px; min-height: 100px; padding: 25px;">
+                        <h4>۲. عدالت کیفری ⚖️</h4>
+                        <p>محاکمه‌ی عادلانه‌ی فرماندهان و طراحان اصلی سرکوب.</p>
+                    </div>
+
+                    <div class="small-box sb-orange" style="margin-bottom: 15px; min-height: 100px; padding: 25px;">
+                        <h4>۳. جبران خسارت 💰</h4>
+                        <p>غرامت مالی، اعاده‌ی حیثیت و بازگرداندن اموال غارت‌شده.</p>
+                    </div>
+
+                    <div class="small-box sb-yellow" style="margin-bottom: 15px; min-height: 100px; padding: 25px;">
+                        <h4>۴. آشتی ملی و حافظه‌ی تاریخی 🕊️</h4>
+                        <p>تأسیس موزه‌ها، بناهای یادبود و اصلاح تاریخ‌نگاری.</p>
+                    </div>
+
+                    <div class="small-box sb-green" style="margin-bottom: 15px; min-height: 100px; padding: 25px;">
+                        <h4>۵. تضمین عدم تکرار 🛡️</h4>
+                        <p>اصلاح نیروهای امنیتی، قضایی و لغو نهادهای ایدئولوژیک.</p>
+                    </div>
+                </div>
+            </div>
+        </foreignObject>
+    </svg>
+
+    <!-- Slide 7: Referendum and Direct Democracy -->
+    <svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1080" height="1350" fill="#FAFAFA" />
+        <rect width="1080" height="160" fill="#1565C0" />
+        <path d="M0,160 L1080,160 L1080,220 L0,180 Z" fill="#0D47A1" opacity="0.5" />
+
+        <foreignObject x="0" y="0" width="1080" height="1350">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="slide-content content-slide">
+                <h2 class="header-title">اعتبار به رأی مردم است!</h2>
+
+                <div style="margin-top: 10px;">
+                    <div class="box blue-box">
+                        <h3>🗳️ رفراندوم‌های الزامی</h3>
+                        <p>مهم‌ترین تصمیمات کشور الزاماً و مستقیماً توسط خود مردم گرفته خواهد شد:</p>
+                        <ul>
+                            <li>تصویب <strong>قانون اساسی موقت و نهایی</strong></li>
+                            <li>تعیین نوع حکومت (جمهوری یا مشروطه)</li>
+                            <li>تعیین ساختار حکمرانی (متمرکز یا عدم‌تمرکز)</li>
+                            <li>تصمیماتی که ⅔ مجلس آن‌ها را سرنوشت‌ساز بدانند</li>
+                        </ul>
+                    </div>
+
+                    <div class="box teal-box">
+                        <h3>🔄 سازوکارهای مردمی</h3>
+                        <p>مجلس نماینده‌ی مردم است، اما اراده‌ی مستقیم مردم بالاتر است:</p>
+                        <ul>
+                            <li>حق <strong>عزل نماینده</strong> در صورت نارضایتی منطقه‌ای با جمع‌آوری امضا.</li>
+                            <li>اجبار مجلس به طرح موضوعات با جمع‌آوری طومارهای مردمی معتبر.</li>
+                            <li>بیشینه‌ی عمر مجلس گذار <strong>۲ سال</strong> است و تمدید آن فرآیند سختی دارد.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </foreignObject>
+    </svg>
+
+    <!-- Slide 8: Call to Action -->
+    <svg width="1080" height="1350" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1080" height="1350" fill="#1565C0" />
+        <path d="M0,0 L1080,0 L1080,1350 L0,600 Z" fill="#0D47A1" opacity="0.6" />
+        <circle cx="540" cy="675" r="400" fill="#F9A825" opacity="0.1" />
+
+        <foreignObject x="0" y="0" width="1080" height="1350">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="slide-content cover-slide"
+                style="justify-content: center; padding: 60px;">
+
+                <h1 style="font-size: 85px; margin-bottom: 30px;"><span
+                        style="color: #F9A825; display: inline; font-size: 95px;">آینده</span> منتظر ما نمی‌ماند!</h1>
+
+                <p
+                    style="font-size: 45px; line-height: 1.6; max-width: 900px; margin: 0 auto; text-shadow: 0 2px 5px rgba(0,0,0,0.3);">
+                    هر جریانی که قصد شرکت در آینده را دارد، باید از هم‌اکنون پیش‌نویس‌ها و برنامه‌ی عملی خود را ارائه
+                    کند.
+                </p>
+
+                <div class="call-to-action">
+                    <h3>فراخوان به همه‌ی ایرانیان</h3>
+                    <p>متن کامل و جامع «طرح مهستان» را بخوانید،</p>
+                    <p>آن را نقد کنید، پیشنهاد دهید و برای ساختن</p>
+                    <span class="highlight">«ایرانِ فردا» مشارکت کنید.</span>
+                </div>
+
+                <div class="share-btn">
+                    <span>ارسال برای دوستان ✈️</span>
+                </div>
+
+            </div>
+        </foreignObject>
+    </svg>
+
+</body>
+
+</html>

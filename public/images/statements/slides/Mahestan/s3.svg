@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" dir="rtl">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E"/>
+      <stop offset="100%" style="stop-color:#283593"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1080" height="1080" fill="url(#bgGrad3)"/>
+  <rect x="0" y="0" width="1080" height="10" fill="#C62828"/>
+  <rect x="0" y="1070" width="1080" height="10" fill="#C62828"/>
+  
+  <!-- عنوان -->
+  <text x="540" y="90" text-anchor="middle" font-family="Vazirmatn" font-size="48" font-weight="bold" fill="white">۱۰ اقدام فوری — هفته‌ی اول</text>
+  <line x1="300" y1="120" x2="780" y2="120" stroke="#C62828" stroke-width="3"/>
+  
+  <!-- آیتم‌ها -->
+  <g>
+    <!-- ستون راست -->
+    <g transform="translate(100, 180)">
+      <circle cx="40" cy="30" r="28" fill="#2E7D32"/>
+      <text x="40" y="40" text-anchor="middle" font-family="Vazirmatn" font-size="24" font-weight="bold" fill="white">۱</text>
+      <text x="85" y="38" font-family="Vazirmatn" font-size="24" fill="white">آزادی زندانیان سیاسی</text>
+    </g>
+    
+    <g transform="translate(100, 260)">
+      <circle cx="40" cy="30" r="28" fill="#2E7D32"/>
+      <text x="40" y="40" text-anchor="middle" font-family="Vazirmatn" font-size="24" font-weight="bold" fill="white">۲</text>
+      <text x="85" y="38" font-family="Vazirmatn" font-size="24" fill="white">لغو حجاب اجباری</text>
+    </g>
+    
+    <g transform="translate(100, 340)">
+      <circle cx="40" cy="30" r="28" fill="#2E7D32"/>
+      <text x="40" y="40" text-anchor="middle" font-family="Vazirmatn" font-size="24" font-weight="bold" fill="white">۳</text>
+      <text x="85" y="38" font-family="Vazirmatn" font-size="24" fill="white">رفع فیلترینگ اینترنت</text>
+    </g>
+    
+    <g transform="translate(100, 420)">
+      <circle cx="40" cy="30" r="28" fill="#2E7D32"/>
+      <text x="40" y="40" text-anchor="middle" font-family="Vazirmatn" font-size="24" font-weight="bold" fill="white">۴</text>
+      <text x="85" y="38" font-family="Vazirmatn" font-size="24" fill="white">تعلیق مجازات اعدام</text>
+    </g>
+    
+    <g transform="translate(100, 500)">
+      <circle cx="40" cy="30" r="28" fill="#2E7D32"/>
+      <text x="40" y="40" text-anchor="middle" font-family="Vazirmatn" font-size="24" font-weight="bold" fill="white">۵</text>
+      <text x="85" y="38" font-family="Vazirmatn" font-size="24" fill="white">آزادی فعالیت احزاب</text>
+    </g>
+    
+    <!-- ستون چپ -->
+    <g transform="translate(560, 180)">
+      <circle cx="40" cy="30" r="28" fill="#2E7D32"/>
+      <text x="40" y="40" text-anchor="middle" font-family="Vazirmatn" font-size="24" font-weight="bold" fill="white">۶</text>
+      <text x="85" y="38" font-family="Vazirmatn" font-size="24" fill="white">ممنوعیت بازداشت خودسرانه</text>
+    </g>
+    
+    <g transform="translate(560, 260)">
+      <circle cx="40" cy="30" r="28" fill="#2E7D32"/>
+      <text x="40" y="40" text-anchor="middle" font-family="Vazirmatn" font-size="24" font-weight="bold" fill="white">۷</text>
+      <text x="85" y="38" font-family="Vazirmatn" font-size="24" fill="white">لغو محاکم انقلاب</text>
+    </g>
+    
+    <g transform="translate(560, 340)">
+      <circle cx="40" cy="30" r="28" fill="#2E7D32"/>
+      <text x="40" y="40" text-anchor="middle" font-family="Vazirmatn" font-size="24" font-weight="bold" fill="white">۸</text>
+      <text x="85" y="38" font-family="Vazirmatn" font-size="24" fill="white">حق بازگشت تبعیدیان</text>
+    </g>
+    
+    <g transform="translate(560, 420)">
+      <circle cx="40" cy="30" r="28" fill="#2E7D32"/>
+      <text x="40" y="40" text-anchor="middle" font-family="Vazirmatn" font-size="24" font-weight="bold" fill="white">۹</text>
+      <text x="85" y="38" font-family="Vazirmatn" font-size="24" fill="white">مسدودسازی حساب‌های مشکوک</text>
+    </g>
+    
+    <g transform="translate(560, 500)">
+      <circle cx="40" cy="30" r="28" fill="#2E7D32"/>
+      <text x="40" y="40" text-anchor="middle" font-family="Vazirmatn" font-size="24" font-weight="bold" fill="white">۱۰</text>
+      <text x="85" y="38" font-family="Vazirmatn" font-size="24" fill="white">حفاظت از اسناد امنیتی</text>
+    </g>
+  </g>
+  
+  <!-- خط جداکننده -->
+  <line x1="100" y1="600" x2="980" y2="600" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  
+  <!-- باکس پایین -->
+  <rect x="100" y="650" width="880" height="300" rx="20" fill="rgba(255,255,255,0.1)"/>
+  
+  <text x="540" y="720" text-anchor="middle" font-family="Vazirmatn" font-size="32" font-weight="bold" fill="#F9A825">بدون نیاز به قانون‌گذاری عادی</text>
+  
+  <text x="540" y="790" text-anchor="middle" font-family="Vazirmatn" font-size="26" fill="white">این اقدامات با فرمان اضطراری مجلس مهستان</text>
+  <text x="540" y="840" text-anchor="middle" font-family="Vazirmatn" font-size="26" fill="white">(رأی اکثریت ساده) صادر می‌شوند</text>
+  
+  <text x="540" y="910" text-anchor="middle" font-family="Vazirmatn" font-size="22" fill="rgba(255,255,255,0.7)">حقوق بنیادین انسان منتظر هیچ فرایندی نمی‌ماند</text>
+  
+  <text x="540" y="1020" text-anchor="middle" font-family="Vazirmatn" font-size="24" fill="rgba(255,255,255,0.5)">۳ / ۶</text>
+</svg>

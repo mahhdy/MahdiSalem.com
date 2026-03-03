@@ -1,0 +1,50 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E"/>
+      <stop offset="100%" style="stop-color:#283593"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bgGrad2)"/>
+  <rect x="0" y="0" width="1080" height="10" fill="#F9A825"/>
+  <rect x="0" y="1070" width="1080" height="10" fill="#F9A825"/>
+  <text x="540" y="100" text-anchor="middle" font-family="Tahoma" font-size="56" font-weight="bold" fill="white">۶ اصل راهنما</text>
+  <line x1="380" y1="140" x2="700" y2="140" stroke="#F9A825" stroke-width="3"/>
+  <rect x="60" y="200" width="460" height="220" rx="16" fill="#BBDEFB"/>
+  <circle cx="140" cy="280" r="40" fill="#1565C0"/>
+  <text x="140" y="295" text-anchor="middle" font-family="Tahoma" font-size="36" font-weight="bold" fill="white">۱</text>
+  <text x="300" y="270" text-anchor="middle" font-family="Tahoma" font-size="28" font-weight="bold" fill="#1565C0">دموکراسی + تخصص</text>
+  <text x="290" y="320" text-anchor="middle" font-family="Tahoma" font-size="20" fill="#1565C0">ترکیب رأی مردم با</text>
+  <text x="290" y="350" text-anchor="middle" font-family="Tahoma" font-size="20" fill="#1565C0">تحلیل متخصصان</text>
+  <rect x="560" y="200" width="460" height="220" rx="16" fill="#C8E6C9"/>
+  <circle cx="640" cy="280" r="40" fill="#2E7D32"/>
+  <text x="640" y="295" text-anchor="middle" font-family="Tahoma" font-size="36" font-weight="bold" fill="white">۲</text>
+  <text x="800" y="270" text-anchor="middle" font-family="Tahoma" font-size="28" font-weight="bold" fill="#2E7D32">نمایندگی نسبی</text>
+  <text x="790" y="320" text-anchor="middle" font-family="Tahoma" font-size="20" fill="#2E7D32">هیچ صدایی</text>
+  <text x="790" y="350" text-anchor="middle" font-family="Tahoma" font-size="20" fill="#2E7D32">نشنیده نمی‌ماند</text>
+  <rect x="60" y="450" width="460" height="220" rx="16" fill="#F3E5F5"/>
+  <circle cx="140" cy="530" r="40" fill="#6A1B9A"/>
+  <text x="140" y="545" text-anchor="middle" font-family="Tahoma" font-size="36" font-weight="bold" fill="white">۳</text>
+  <text x="300" y="520" text-anchor="middle" font-family="Tahoma" font-size="28" font-weight="bold" fill="#6A1B9A">دو قانون اساسی</text>
+  <text x="290" y="570" text-anchor="middle" font-family="Tahoma" font-size="20" fill="#6A1B9A">موقت (۲ ماه)</text>
+  <text x="290" y="600" text-anchor="middle" font-family="Tahoma" font-size="20" fill="#6A1B9A">+ نهایی (۱۸ ماه)</text>
+  <rect x="560" y="450" width="460" height="220" rx="16" fill="#FFF3E0"/>
+  <circle cx="640" cy="530" r="40" fill="#E65100"/>
+  <text x="640" y="545" text-anchor="middle" font-family="Tahoma" font-size="36" font-weight="bold" fill="white">۴</text>
+  <text x="800" y="520" text-anchor="middle" font-family="Tahoma" font-size="28" font-weight="bold" fill="#E65100">اصلاح نه تخریب</text>
+  <text x="790" y="570" text-anchor="middle" font-family="Tahoma" font-size="20" fill="#E65100">درس عراق:</text>
+  <text x="790" y="600" text-anchor="middle" font-family="Tahoma" font-size="20" fill="#E65100">انحلال کامل = فاجعه</text>
+  <rect x="60" y="700" width="460" height="220" rx="16" fill="#E0F2F1"/>
+  <circle cx="140" cy="780" r="40" fill="#00695C"/>
+  <text x="140" y="795" text-anchor="middle" font-family="Tahoma" font-size="36" font-weight="bold" fill="white">۵</text>
+  <text x="300" y="770" text-anchor="middle" font-family="Tahoma" font-size="28" font-weight="bold" fill="#00695C">شفافیت حداکثری</text>
+  <text x="290" y="820" text-anchor="middle" font-family="Tahoma" font-size="20" fill="#00695C">جلسات علنی</text>
+  <text x="290" y="850" text-anchor="middle" font-family="Tahoma" font-size="20" fill="#00695C">شفافیت مالی</text>
+  <rect x="560" y="700" width="460" height="220" rx="16" fill="#FFCDD2"/>
+  <circle cx="640" cy="780" r="40" fill="#C62828"/>
+  <text x="640" y="795" text-anchor="middle" font-family="Tahoma" font-size="36" font-weight="bold" fill="white">۶</text>
+  <text x="800" y="770" text-anchor="middle" font-family="Tahoma" font-size="28" font-weight="bold" fill="#C62828">فراگیری</text>
+  <text x="790" y="820" text-anchor="middle" font-family="Tahoma" font-size="20" fill="#C62828">ایران برای</text>
+  <text x="790" y="850" text-anchor="middle" font-family="Tahoma" font-size="20" fill="#C62828">همه‌ی ایرانیان</text>
+  <text x="540" y="1020" text-anchor="middle" font-family="Tahoma" font-size="24" fill="rgba(255,255,255,0.5)">۲ / ۶</text>
+</svg>

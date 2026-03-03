@@ -156,8 +156,8 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
     contentType="proposal"
     category={entry.data.categories?.[0] || 'proposals'}
   >
-    {entry.data.pdfUrl && <WidthToggle title={entry.data.title} author={entry.data.author} lang={lang} />}
-    <div class="container-wide py-16">
+    <WidthToggle title={entry.data.title} author={entry.data.author} lang={lang} />
+    <div class="container-wide py-16" data-width-container>
       {/* Full-width cover image (default) */}
       {entry.data.coverImage && (entry.data.imageDisplay ?? 'full') === 'full' && (
         <img src={entry.data.coverImage} alt={entry.data.title} class="w-full max-w-sm mx-auto rounded-xl mb-8" loading="lazy" />

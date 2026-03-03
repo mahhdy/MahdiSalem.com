@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import ProposalLayout from "../../../layouts/ProposalLayout.astro";
+import WidthToggle from "../../../components/WidthToggle.astro";
 import { t, getLocalizedPath, stripLangPrefix } from "../../../i18n";
 import PDFViewer from "../../../components/PDFViewer.astro";
 import ImageSlider from "../../../components/ImageSlider.astro";
@@ -117,7 +118,12 @@ const chapterList = chapters.map((c: any) => {
     </ProposalLayout>
   ) : (
     <BaseLayout title={entry.data.title} description={entry.data.description}>
-      <div class="container-narrow py-16">
+      <WidthToggle
+        title={entry.data.title}
+        author={entry.data.author}
+        lang={lang}
+      />
+      <div class="container-narrow py-16" data-width-container>
         {/* Full-width cover image (default) */}
         {entry.data.coverImage &&
           (entry.data.imageDisplay ?? "full") === "full" && (

@@ -2,61 +2,93 @@
 interface Props {
   title: string;
   author?: string;
-  lang: 'fa' | 'en';
+  lang: "fa" | "en";
 }
 
-const { title, author = '', lang } = Astro.props;
-const isArabic = lang === 'fa';
+const { title, author = "", lang } = Astro.props;
+const isArabic = lang === "fa";
 ---
 
 <div
-  class={`floating-toolbar ${isArabic ? 'toolbar-rtl' : 'toolbar-ltr'}`}
+  class={`floating-toolbar ${isArabic ? "toolbar-rtl" : "toolbar-ltr"}`}
   id="width-toggle-header"
   aria-hidden="true"
-  aria-label={isArabic ? 'تنظیمات عرض محتوا' : 'Content width settings'}
+  aria-label={isArabic ? "تنظیمات عرض محتوا" : "Content width settings"}
 >
   <!-- Width Options -->
-  <div class="width-options" role="group" aria-label={isArabic ? 'عرض محتوا' : 'Content width'}>
+  <div
+    class="width-options"
+    role="group"
+    aria-label={isArabic ? "عرض محتوا" : "Content width"}
+  >
     <button
       class="width-btn"
       data-width="default"
-      title={isArabic ? 'عرض عادی - 896px' : 'Comfortable - 896px'}
+      title={isArabic ? "عرض عادی - 896px" : "Comfortable - 896px"}
     >
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <rect x="6" y="3" width="12" height="18" rx="1" />
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <rect x="6" y="3" width="12" height="18" rx="1"></rect>
       </svg>
       <span class="btn-label">S</span>
     </button>
     <button
       class="width-btn"
       data-width="1024"
-      title={isArabic ? 'عرض متوسط - 1024px' : 'Medium - 1024px'}
+      title={isArabic ? "عرض متوسط - 1024px" : "Medium - 1024px"}
     >
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <rect x="4" y="3" width="16" height="18" rx="1" />
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <rect x="4" y="3" width="16" height="18" rx="1"></rect>
       </svg>
       <span class="btn-label">M</span>
     </button>
     <button
       class="width-btn"
       data-width="1280"
-      title={isArabic ? 'عرض بزرگ - 1280px' : 'Large - 1280px'}
+      title={isArabic ? "عرض بزرگ - 1280px" : "Large - 1280px"}
     >
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <rect x="2" y="3" width="20" height="18" rx="1" />
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <rect x="2" y="3" width="20" height="18" rx="1"></rect>
       </svg>
       <span class="btn-label">L</span>
     </button>
     <button
       class="width-btn"
       data-width="full"
-      title={isArabic ? 'تمام عرض - 90vw' : 'Full - 90vw'}
+      title={isArabic ? "تمام عرض - 90vw" : "Full - 90vw"}
     >
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <polyline points="15 3 21 3 21 9" />
-        <polyline points="9 21 3 21 3 15" />
-        <line x1="21" y1="3" x2="14" y2="10" />
-        <line x1="3" y1="21" x2="10" y2="14" />
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <polyline points="15 3 21 3 21 9"></polyline>
+        <polyline points="9 21 3 21 3 15"></polyline>
+        <line x1="21" y1="3" x2="14" y2="10"></line>
+        <line x1="3" y1="21" x2="10" y2="14"></line>
       </svg>
       <span class="btn-label">XL</span>
     </button>
@@ -69,12 +101,19 @@ const isArabic = lang === 'fa';
   <button
     id="go-to-top-btn"
     class="go-to-top-btn"
-    title={isArabic ? 'برو به بالا' : 'Go to top'}
-    aria-label={isArabic ? 'برو به بالا' : 'Go to top'}
+    title={isArabic ? "برو به بالا" : "Go to top"}
+    aria-label={isArabic ? "برو به بالا" : "Go to top"}
   >
-    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-      <line x1="12" y1="19" x2="12" y2="5" />
-      <polyline points="5 12 12 5 19 12" />
+    <svg
+      width="16"
+      height="16"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+    >
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
     </svg>
   </button>
 </div>
@@ -91,10 +130,16 @@ const isArabic = lang === 'fa';
     position: fixed;
     top: calc(var(--site-header-height, 4rem) + 0.5rem);
     padding: 0.5rem;
-    background: linear-gradient(135deg, rgba(26, 95, 122, 0.95) 0%, rgba(41, 128, 185, 0.95) 100%);
+    background: linear-gradient(
+      135deg,
+      rgba(26, 95, 122, 0.95) 0%,
+      rgba(41, 128, 185, 0.95) 100%
+    );
     backdrop-filter: blur(8px);
     border-radius: 0.5rem;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2), 0 0 1px rgba(255, 255, 255, 0.1) inset;
+    box-shadow:
+      0 4px 16px rgba(0, 0, 0, 0.2),
+      0 0 1px rgba(255, 255, 255, 0.1) inset;
     border: 1px solid rgba(255, 255, 255, 0.15);
 
     opacity: 0;
@@ -112,8 +157,14 @@ const isArabic = lang === 'fa';
 
   /* Dark mode adjustments */
   html.dark .floating-toolbar {
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5), 0 0 1px rgba(255, 255, 255, 0.05) inset;
+    background: linear-gradient(
+      135deg,
+      rgba(15, 23, 42, 0.95) 0%,
+      rgba(30, 41, 59, 0.95) 100%
+    );
+    box-shadow:
+      0 4px 16px rgba(0, 0, 0, 0.5),
+      0 0 1px rgba(255, 255, 255, 0.05) inset;
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
@@ -156,20 +207,20 @@ const isArabic = lang === 'fa';
     justify-content: center;
     gap: 0.15rem;
     padding: 0.4rem 0.5rem;
-    
+
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0.375rem;
-    
+
     color: rgba(255, 255, 255, 0.8);
     font-size: 0.65rem;
     font-weight: 600;
     cursor: pointer;
-    
+
     transition: all 0.15s ease-out;
     white-space: nowrap;
     line-height: 1;
-    
+
     user-select: none;
     -webkit-user-select: none;
   }
@@ -201,7 +252,12 @@ const isArabic = lang === 'fa';
   .toolbar-divider {
     width: 1px;
     height: 1.5rem;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0)
+    );
     margin: 0 0.25rem;
     flex-shrink: 0;
   }
@@ -214,17 +270,17 @@ const isArabic = lang === 'fa';
     width: 2rem;
     height: 2rem;
     padding: 0;
-    
+
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0.375rem;
-    
+
     color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
-    
+
     transition: all 0.15s ease-out;
     flex-shrink: 0;
-    
+
     user-select: none;
     -webkit-user-select: none;
   }
@@ -328,20 +384,22 @@ const isArabic = lang === 'fa';
 
 <script is:inline>
   (function () {
-    'use strict';
+    "use strict";
 
     const WIDTH_MAP = {
-      default: '56rem',   // 896px
-      '1024': '1024px',
-      '1280': '1280px',
-      full: '90vw',
+      default: "56rem", // 896px
+      "1024": "1024px",
+      "1280": "1280px",
+      full: "90vw",
     };
 
     const CONTAINER_SELECTORS = [
-      'article.container-article',
-      '.container-article',
-      'div.container-wide',
-      '.container-wide',
+      "[data-width-container]",
+      "article.container-article",
+      ".container-article",
+      ".container-narrow",
+      "div.container-wide",
+      ".container-wide",
     ];
 
     function findContentContainer() {
@@ -358,18 +416,18 @@ const isArabic = lang === 'fa';
         const computed = window.getComputedStyle(el);
         const currentMax = computed.maxWidth;
 
-        if (currentMax && currentMax !== 'none') {
+        if (currentMax && currentMax !== "none") {
           const currentPx = parseFloat(currentMax);
           const desiredPx =
-            desiredMaxWidth === '90vw'
+            desiredMaxWidth === "90vw"
               ? window.innerWidth * 0.9
               : parseFloat(desiredMaxWidth);
 
           if (!isNaN(currentPx) && currentPx < desiredPx) {
             if (!el.dataset.origMaxWidth) {
-              el.dataset.origMaxWidth = el.style.maxWidth || '';
+              el.dataset.origMaxWidth = el.style.maxWidth || "";
             }
-            el.style.setProperty('max-width', desiredMaxWidth, 'important');
+            el.style.setProperty("max-width", desiredMaxWidth, "important");
           }
         }
         el = el.parentElement;
@@ -388,115 +446,124 @@ const isArabic = lang === 'fa';
     }
 
     function initWidthToggle() {
-      const toolbar = document.getElementById('width-toggle-header');
-      const widthBtns = document.querySelectorAll('.width-btn');
-      const goToTopBtn = document.getElementById('go-to-top-btn');
+      const toolbar = document.getElementById("width-toggle-header");
+      const widthBtns = document.querySelectorAll(".width-btn");
+      const goToTopBtn = document.getElementById("go-to-top-btn");
       const container = findContentContainer();
 
       if (!toolbar) return;
 
       if (!container) {
-        console.warn('[WidthToggle] No content container found.');
+        console.warn("[WidthToggle] No content container found.");
         return;
       }
 
       // Load and apply saved width
-      const saved = localStorage.getItem('content-width') || 'default';
+      const saved = localStorage.getItem("content-width") || "default";
       applyWidth(saved);
       setActiveBtn(saved);
 
       // Scroll-based visibility
       let visible = false;
-      const SHOW_AFTER = 300;
+      const SHOW_AFTER = 200;
 
       function onScroll() {
         const y = window.scrollY || document.documentElement.scrollTop;
         if (y > SHOW_AFTER && !visible) {
+          console.log("[WidthToggle] Showing toolbar");
           visible = true;
-          toolbar.classList.add('is-visible');
+          toolbar.classList.add("is-visible");
         } else if (y <= SHOW_AFTER && visible) {
+          console.log("[WidthToggle] Hiding toolbar");
           visible = false;
-          toolbar.classList.remove('is-visible');
+          toolbar.classList.remove("is-visible");
         }
       }
 
       let ticking = false;
-      window.addEventListener('scroll', function () {
-        if (!ticking) {
-          window.requestAnimationFrame(function () {
-            onScroll();
-            ticking = false;
-          });
-          ticking = true;
-        }
-      }, { passive: true });
+      window.addEventListener(
+        "scroll",
+        function () {
+          if (!ticking) {
+            window.requestAnimationFrame(function () {
+              onScroll();
+              ticking = false;
+            });
+            ticking = true;
+          }
+        },
+        { passive: true },
+      );
 
       onScroll();
 
       // Button clicks
       widthBtns.forEach(function (btn) {
-        btn.addEventListener('click', function (e) {
+        btn.addEventListener("click", function (e) {
           e.preventDefault();
           e.stopPropagation();
-          const w = btn.getAttribute('data-width');
+          const w = btn.getAttribute("data-width");
           applyWidth(w);
           setActiveBtn(w);
-          localStorage.setItem('content-width', w);
+          localStorage.setItem("content-width", w);
         });
       });
 
       // Go to top
       if (goToTopBtn) {
-        goToTopBtn.addEventListener('click', function () {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+        goToTopBtn.addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
         });
       }
 
       function applyWidth(key) {
         let value = WIDTH_MAP[key];
-        if (!value) value = WIDTH_MAP['default'];
+        if (!value) value = WIDTH_MAP["default"];
 
         restoreAncestors(container);
 
-        container.style.setProperty('max-width', value, 'important');
-        container.style.setProperty('width', '100%', 'important');
-        container.style.setProperty('margin-left', 'auto', 'important');
-        container.style.setProperty('margin-right', 'auto', 'important');
-        container.style.setProperty('transition', 'max-width 0.35s ease-in-out');
+        container.style.setProperty("max-width", value, "important");
+        container.style.setProperty("width", "100%", "important");
+        container.style.setProperty("margin-left", "auto", "important");
+        container.style.setProperty("margin-right", "auto", "important");
+        container.style.setProperty(
+          "transition",
+          "max-width 0.35s ease-in-out",
+        );
 
         loosenAncestors(container, value);
-        document.documentElement.setAttribute('data-content-width', key);
+        document.documentElement.setAttribute("data-content-width", key);
 
         // Override .prose max-width
-        const proseEls = container.querySelectorAll('.prose');
+        const proseEls = container.querySelectorAll(".prose");
         proseEls.forEach(function (prose) {
-          if (key === 'default') {
-            prose.style.removeProperty('max-width');
+          if (key === "default") {
+            prose.style.removeProperty("max-width");
           } else {
-            prose.style.setProperty('max-width', 'none', 'important');
+            prose.style.setProperty("max-width", "none", "important");
           }
         });
       }
 
       function setActiveBtn(activeKey) {
         widthBtns.forEach(function (btn) {
-          if (btn.getAttribute('data-width') === activeKey) {
-            btn.classList.add('active');
+          if (btn.getAttribute("data-width") === activeKey) {
+            btn.classList.add("active");
           } else {
-            btn.classList.remove('active');
+            btn.classList.remove("active");
           }
         });
       }
     }
 
     // Bootstrap
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initWidthToggle);
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initWidthToggle);
     } else {
       initWidthToggle();
     }
 
-    document.addEventListener('astro:after-swap', initWidthToggle);
-    document.addEventListener('astro:page-load', initWidthToggle);
+    document.addEventListener("astro:after-swap", initWidthToggle);
+    document.addEventListener("astro:page-load", initWidthToggle);
   })();
 </script>
