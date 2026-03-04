@@ -1,0 +1,248 @@
+---
+import { getLocalizedPath, stripLangPrefix } from "../i18n";
+
+interface Slide {
+  id: string;
+  title: string;
+  subtitle?: string;
+  description: string;
+  image: string;
+  ctaText: string;
+  ctaLink: string;
+  cta2Text?: string;
+  cta2Link?: string;
+  type?: string; 
+}
+
+interface Props {
+  slides: Slide[];
+}
+
+const { slides } = Astro.props;
+const lang = "fa";
+---
+
+<div class="fading-hero-container relative w-full h-[600px] sm:h-[650px] md:h-[700px] lg:h-[750px] overflow-hidden bg-black isolation-isolate" dir="rtl">
+  {slides.map((slide, index) => (
+    <div 
+      class={`hero-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out z-0 ${index === 0 ? 'opacity-100 active pointer-events-auto' : 'opacity-0 pointer-events-none'}`} 
+      data-index={index}
+    >
+      <!-- Background Image with Parallax subtle scaling effect -->
+      <div class="absolute inset-0 w-full h-full transform transition-transform duration-[8000ms] scale-100 hero-img-container">
+        <img 
+          src={slide.image || '/images/default-hero-bg.jpg'} 
+          alt={slide.title}
+          class="w-full h-full object-cover"
+          loading={index === 0 ? 'eager' : 'lazy'}
+        />
+        <!-- Gradients for readability -->
+        <div class="absolute inset-0 bg-gradient-to-t from-surface-dark via-surface-dark/70 to-transparent opacity-90 dark:opacity-100"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-surface-dark/90 to-transparent w-full md:w-3/4 opacity-90 dark:opacity-100"></div>
+      </div>
+
+      <!-- Content over the slide -->
+      <div class="absolute inset-0 w-full h-full flex flex-col justify-center items-start z-10 container-wide">
+        <div class="max-w-2xl text-start pt-16 mt-8 md:mt-0 hero-content-block transition-all duration-700 translate-y-8 opacity-0">
+          
+          {slide.type && (
+            <span class="inline-block px-3 py-1 mb-4 rounded-full text-xs font-bold tracking-wider uppercase bg-primary/20 text-primary-light border border-primary/30 backdrop-blur-md">
+              {slide.type}
+            </span>
+          )}
+
+          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 text-white tracking-tight leading-tight hero-title">
+            {slide.title}
+          </h1>
+          
+          {slide.subtitle && (
+            <p class="text-lg md:text-2xl font-medium text-white/80 mb-4 herosubtitle">
+              {slide.subtitle}
+            </p>
+          )}
+          
+          <div class="h-1 w-16 bg-primary rounded-full mb-6 hero-divider"></div>
+          
+          <p class="text-base md:text-lg text-white/70 mb-8 leading-relaxed line-clamp-3 md:line-clamp-4 hero-desc">
+            {slide.description}
+          </p>
+          
+          <div class="flex flex-wrap items-center gap-4 hero-actions">
+            <a
+              href={slide.ctaLink}
+              class="inline-flex items-center px-6 py-3.5 rounded-xl bg-primary text-white font-bold hover:bg-primary-dark transition-all hover:scale-105 active:scale-95 no-underline shadow-lg shadow-primary/30 group"
+            >
+              {slide.ctaText}
+              <svg class="w-5 h-5 ml-2 rtl:mr-2 rtl:ml-0 rotate-180 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+            {slide.cta2Text && slide.cta2Link && (
+              <a
+                href={slide.cta2Link}
+                class="inline-flex items-center px-6 py-3.5 rounded-xl bg-white/10 text-white font-bold backdrop-blur-md border border-white/20 hover:bg-white/20 transition-all hover:scale-105 active:scale-95 no-underline"
+              >
+                {slide.cta2Text}
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  ))}
+
+  <!-- Navigation Indicators (Glass Pills bottom center) -->
+  {slides.length > 1 && (
+    <div class="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 flex items-center gap-2.5 z-20 bg-black/20 backdrop-blur-[10px] px-3 py-2 rounded-full border border-white/10">
+      {slides.map((_, i) => (
+        <button 
+          class="hero-dot group h-2 w-8 overflow-hidden rounded-full transition-all duration-300 ease-out focus:outline-none"
+          data-index={i}
+          aria-label={`Go to slide ${i + 1}`}
+        >
+          <div class={`h-full w-full bg-white/30 group-hover:bg-white/50 transition-colors ${i === 0 ? 'hero-dot-active' : ''}`}>
+            <div class="hero-progress h-full w-0 bg-primary"></div>
+          </div>
+        </button>
+      ))}
+    </div>
+  )}
+</div>
+
+<style is:global>
+  /* Base animation states for content revealing */
+  .hero-slide.active .hero-content-block {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 300ms;
+  }
+  
+  /* Zoom effect on background image while active */
+  .hero-slide .hero-img-container {
+    transform: scale(1.02);
+  }
+  .hero-slide.active .hero-img-container {
+    transform: scale(1.1);
+  }
+
+  /* Progress bar animation for the active glass pill */
+  .hero-dot-active .hero-progress {
+    width: 100%;
+    transition: width 8000ms linear;
+  }
+  
+  /* Make sure the text layers properly handle RTL correctly. Tailwind classes handle most, just safety checks */
+</style>
+
+<script>
+  class FadingHero {
+    container: HTMLElement;
+    slides: NodeListOf<HTMLElement>;
+    dots: NodeListOf<HTMLElement>;
+    currentIndex: number;
+    totalSlides: number;
+    timer: any;
+    intervalTime: number;
+
+    constructor(container: HTMLElement) {
+      this.container = container;
+      this.slides = container.querySelectorAll('.hero-slide');
+      this.dots = container.querySelectorAll('.hero-dot');
+      this.currentIndex = 0;
+      this.totalSlides = this.slides.length;
+      this.intervalTime = 8000; // 8 seconds per slide
+      
+      this.init();
+    }
+
+    init() {
+      if (this.totalSlides <= 1) return;
+
+      // Handle dot clicks
+      this.dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          this.goToSlide(index);
+          this.resetTimer();
+        });
+      });
+
+      // Pause on hover can be nice, but for Hero sliders, usually it's better to keep it going unless they are interacting heavily.
+      // We will let it auto roll.
+
+      this.startTimer();
+      
+      // Force trigger initial animation for the first slide (progress bar)
+      this.triggerDotAnimation(0);
+    }
+
+    triggerDotAnimation(index: number) {
+      this.dots.forEach((dot, i) => {
+        const bgInner = dot.querySelector('div');
+        const progress = dot.querySelector('.hero-progress') as HTMLElement;
+        if (bgInner && progress) {
+          if (i === index) {
+            bgInner.classList.add('hero-dot-active');
+            // reset transition context so it redraws
+            progress.style.transition = 'none';
+            progress.style.width = '0%';
+            setTimeout(() => {
+              progress.style.transition = `width ${this.intervalTime}ms linear`;
+              progress.style.width = '100%';
+            }, 50);
+          } else {
+            bgInner.classList.remove('hero-dot-active');
+            progress.style.transition = 'none';
+            progress.style.width = '0%';
+          }
+        }
+      });
+    }
+
+    goToSlide(index: number) {
+      if (index === this.currentIndex) return;
+      
+      const oldSlide = this.slides[this.currentIndex];
+      const newSlide = this.slides[index];
+
+      // Fade out old
+      oldSlide.classList.remove('opacity-100', 'active', 'pointer-events-auto');
+      oldSlide.classList.add('opacity-0', 'pointer-events-none');
+      
+      // Fade in new
+      newSlide.classList.remove('opacity-0', 'pointer-events-none');
+      newSlide.classList.add('opacity-100', 'active', 'pointer-events-auto');
+
+      this.triggerDotAnimation(index);
+      
+      this.currentIndex = index;
+    }
+
+    nextSlide() {
+      let nextIndex = this.currentIndex + 1;
+      if (nextIndex >= this.totalSlides) nextIndex = 0;
+      this.goToSlide(nextIndex);
+    }
+
+    startTimer() {
+      this.timer = setInterval(() => {
+        this.nextSlide();
+      }, this.intervalTime);
+    }
+
+    resetTimer() {
+      clearInterval(this.timer);
+      this.startTimer();
+    }
+  }
+
+  const initHeroSlider = () => {
+    const heroEles = document.querySelectorAll('.fading-hero-container');
+    heroEles.forEach(hero => {
+      if (!hero.hasAttribute('data-initialized')) {
+        new FadingHero(hero as HTMLElement);
+        hero.setAttribute('data-initialized', 'true');
+      }
+    });
+  };
+
+  document.addEventListener('DOMContentLoaded', initHeroSlider);
+  document.addEventListener('astro:page-load', initHeroSlider);
+</script>
