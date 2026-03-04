@@ -22,7 +22,7 @@ const { slides } = Astro.props;
 const lang = "fa";
 ---
 
-<div class="fading-hero-container relative w-full h-[600px] sm:h-[650px] md:h-[700px] lg:h-[750px] overflow-hidden bg-black isolation-isolate" dir="rtl">
+<div class="fading-hero-container relative w-full h-[450px] sm:h-[550px] md:h-[600px] lg:h-[700px] overflow-hidden bg-black isolation-isolate" dir="rtl">
   {slides.map((slide, index) => (
     <div 
       class={`hero-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out z-0 ${index === 0 ? 'opacity-100 active pointer-events-auto' : 'opacity-0 pointer-events-none'}`} 
@@ -43,7 +43,7 @@ const lang = "fa";
 
       <!-- Content over the slide -->
       <div class="absolute inset-0 w-full h-full flex flex-col justify-center items-start z-10 container-wide">
-        <div class="max-w-2xl text-start pt-16 mt-8 md:mt-0 hero-content-block transition-all duration-700 translate-y-8 opacity-0">
+        <div class="max-w-2xl text-start pt-12 md:pt-16 mt-4 md:mt-0 hero-content-block transition-all duration-700 translate-y-8 opacity-0">
           
           {slide.type && (
             <span class="inline-block px-3 py-1 mb-4 rounded-full text-xs font-bold tracking-wider uppercase bg-primary/20 text-primary-light border border-primary/30 backdrop-blur-md">
@@ -51,7 +51,7 @@ const lang = "fa";
             </span>
           )}
 
-          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 text-white tracking-tight leading-tight hero-title">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-3 text-white tracking-tight leading-tight hero-title">
             {slide.title}
           </h1>
           
@@ -61,9 +61,9 @@ const lang = "fa";
             </p>
           )}
           
-          <div class="h-1 w-16 bg-primary rounded-full mb-6 hero-divider"></div>
+          <div class="h-1 w-16 bg-primary rounded-full mb-4 hero-divider"></div>
           
-          <p class="text-base md:text-lg text-white/70 mb-8 leading-relaxed line-clamp-3 md:line-clamp-4 hero-desc">
+          <p class="text-sm md:text-base lg:text-lg text-white/70 mb-6 leading-relaxed line-clamp-3 md:line-clamp-4 hero-desc">
             {slide.description}
           </p>
           
