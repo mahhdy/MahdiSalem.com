@@ -7,10 +7,71 @@ author: مهدی سالم
 sourceType: markdown
 hasSlide: true
 tags:
-  - گذاردموکراتیک،ایران،مجلس-مهستان
+  - گذاردموکراتیک
+  - ایران
+  - مهستان
+  - مجلس مهستان
+  - ساختار گذار
+  - تنظیمات نهادی
+keywords:
+    - ایران
+    - حقوق بنیادی
+    - اصول تغییر ناپپذیر
+interface: iran
+book: Mahestan Transition Body
+pdfUrl: /documents/proposals/Mahestan_ver2.pdf
+pdfOnly: false
+showPdfViewer: true
+hidden: false
+showInContents: true
+coverImage: /images/proposals/covers/twoWings.png
+imageDisplay: side
+cardImage: show
+show-header: false
+readingTime: 100
+difficulty: "زیاد"
+slideArray: 
+# - /images/proposals/slides/Mahestan/C1.svg
+# - /images/proposals/slides/Mahestan/C2.svg
+# - /images/proposals/slides/Mahestan/C3.svg
+# - /images/proposals/slides/Mahestan/C4.svg
+# - /images/proposals/slides/Mahestan/C5.svg
+# - /images/proposals/slides/Mahestan/C6.svg
+- /images/proposals/slides/Mahestan/s1.svg
+- /images/proposals/slides/Mahestan/s2.svg
+- /images/proposals/slides/Mahestan/s3.svg
+- /images/proposals/slides/Mahestan/s4.svg
+- /images/proposals/slides/Mahestan/s5.svg
+- /images/proposals/slides/Mahestan/s6.svg
+- /images/proposals/slides/Mahestan/Slide_01_Cover.png
+- /images/proposals/slides/Mahestan/Slide_02_Introduction.png
+- /images/proposals/slides/Mahestan/Slide_03_Global_Lessons.png
+- /images/proposals/slides/Mahestan/Slide_04_Principle1_Democracy_Technocracy.png
+- /images/proposals/slides/Mahestan/Slide_05_Principle2_Proportional.png
+- /images/proposals/slides/Mahestan/Slide_05_Principles2_3.png
+- /images/proposals/slides/Mahestan/Slide_06_Mahestan_Overview.png
+- /images/proposals/slides/Mahestan/Slide_07_Composition_300.png
+- /images/proposals/slides/Mahestan/Slide_08_Commissions.png
+- /images/proposals/slides/Mahestan/Slide_09_Cabinet.png
+- /images/proposals/slides/Mahestan/Slide_10_Interim_Constitution.png
+- /images/proposals/slides/Mahestan/Slide_11_Judicial_Military.png
+- /images/proposals/slides/Mahestan/Slide_12_Transitional_Justice.png
+- /images/proposals/slides/Mahestan/Slide_13_Oversight_Bodies.png
+- /images/proposals/slides/Mahestan/Slide_14_Research_Center.png
+- /images/proposals/slides/Mahestan/Slide_15_Democratic_Arm.png
+- /images/proposals/slides/Mahestan/Slide_16_Two_Arms.png
+- /images/proposals/slides/Mahestan/Slide_17_Emergency_Decrees.png
+- /images/proposals/slides/Mahestan/Slide_18_Legislative_Priorities.png
+- /images/proposals/slides/Mahestan/Slide_19_Legislative_Process.png
+- /images/proposals/slides/Mahestan/Slide_20_Fundamental_Principles.png
+- /images/proposals/slides/Mahestan/Slide_21_Full_Structure.png
+- /images/proposals/slides/Mahestan/Slide_22_Timeline.png
+- /images/proposals/slides/Mahestan/Slide_23_Accountability.png
+- /images/proposals/slides/Mahestan/Slide_24_Direct_Democracy.png
+- /images/proposals/slides/Mahestan/Slide_25_Call_To_Action.png
 ---
-# بیانیه‌ی چارچوب نهادی گذار ایران
-## طرح مجلس مهستان — نسخه‌ی بازنگری‌شده
+
+# طرح پیشنهادی مجلس مهستان
 
 ---
 
@@ -23,8 +84,11 @@ tags:
 خشم و خشونت و عمل‌گرایی سریع و انقلابی تا مقطع عبور از جمهوری اسلامی و اطمینان از بازگشت‌ناپذیر بودن آن قابل درک و شاید ضروری باشد — هرچند که هنوز نباید مصداق خشونت کور و یا خارج از اندازه باشد — ولی فراتر از آن، قطعاً و طبیعتاً مانع ساختن و همکاری و همدلی مردمی خواهد بود که همه زجر کشیده و آسیب‌دیده از این نظام قهرآمیز و سرکوب‌گر بوده و هستند. مردمی که از هر قشر و گروه و طبقه هزینه‌های مختلف و گزافی را پرداخت کرده و پرداخت می‌کنند و نمی‌توان این هزینه‌ها را محدود به برخی گروه‌ها و یا افکار و جریان‌ها کرد.
 
 تجربه‌ی جهانی — از تونس و آفریقای جنوبی تا اسپانیا و لهستان و شیلی، و همچنین ضدالگوهایی مانند لیبی، مصر و عراق — نشان داده است که **کیفیت طراحی نهادی دوران گذار** بیش از هر عامل دیگری تعیین‌کننده‌ی سرنوشت نظام سیاسی آینده است. کشورهایی که با آگاهی، فراگیری و اجماع این مرحله را طی کرده‌اند، از دام‌های هرج‌ومرج، بازگشت استبداد و جنگ داخلی گریخته‌اند.
+ایران نیز باید با درس گرفتن از این تجربیات، فرایندی را طراحی و اجرا کند که هم **تضمین‌کننده‌ی انتقال صلح‌آمیز و پایدار قدرت** باشد، و هم **پایه‌گذار نظامی دموکراتیک، پاسخگو و فراگیر** برای آینده باشد.
 
-[]
+- [📥 دانلود خلاصه‌ی ۲ صفحه‌ای طرح مهستان](/documents/statements/Mahestan/Mahestan_2Pages_Summary.pdf)
+- [📥 دانلود خلاصه‌ی اجرایی طرح مهستان](/documents/statements/Mahestan/Mahestan-Summary-7-Pages.pdf)
+- [📥 دانلود بندهای قانونی طرح مهستان](/documents/statements/Mahestan/Mahestan_Transition_Law.pdf)
 ---
 
 ## ۲. اصول راهنمای طراحی نظام نهادی گذار
@@ -4746,12 +4810,7 @@ flowchart TD
 
     style FP fill:#F3E5F5,stroke:#6A1B9A,stroke-width:3px
 ```
-
-
-
-<div dir="rtl">
-
-### ن۲-۲. تغییرات کلیدی سیاست خارجی (ادامه)
+### ن۲-۲. تغییرات کلیدی سیاست خارجی 
 
 | موضوع | سیاست جمهوری اسلامی | سیاست پیشنهادی ایران نوین |
 |-------|---------------------|--------------------------|

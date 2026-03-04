@@ -390,7 +390,18 @@ export default function ContentEditor() {
     const sections = getSectionsForCollection(collection);
 
     // Build "Open on Site" URL
-    const openOnSiteUrl = `http://localhost:4321/${collection}/${fullSlug}`;
+    // Content slugs include language prefix (fa/ or en/), but site URLs:
+    // - Don't include language prefix for Persian (fa)
+    // - Include /en/ prefix for English
+    // - Use lowercase and hyphens (spaces converted to hyphens)
+    const lang = String(frontmatter.lang || 'fa');
+    const slugWithoutLang = fullSlug
+        .replace(/^(fa|en)\//, '')      // Remove language prefix
+        .replace(/\s+/g, '-')           // Convert spaces to hyphens
+        .toLowerCase();                  // Convert to lowercase
+    const openOnSiteUrl = lang === 'en' 
+        ? `http://localhost:4321/en/${collection}/${slugWithoutLang}`
+        : `http://localhost:4321/${collection}/${slugWithoutLang}`;
 
     return (
         <div>
