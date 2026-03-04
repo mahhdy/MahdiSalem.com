@@ -115,8 +115,7 @@ const typeLabels: Record<string, string> = {
                   </button>
                 )}
                 {entry.data.hasSlide &&
-                  entry.data.slideArray &&
-                  entry.data.slideArray.length > 0 && (
+                  ((entry.data.slideArray && entry.data.slideArray.length > 0) || (entry.data.slideAlbums && entry.data.slideAlbums.length > 0)) && (
                     <button
                       class={`statement-tab-btn ${!entry.data.pdfUrl && entry.data.pdfOnly ? "active" : ""} px-6 py-2.5 rounded-md text-sm font-medium transition-colors`}
                       data-tab="slides"
@@ -173,13 +172,12 @@ const typeLabels: Record<string, string> = {
             )}
 
             {entry.data.hasSlide &&
-              entry.data.slideArray &&
-              entry.data.slideArray.length > 0 && (
+              ((entry.data.slideArray && entry.data.slideArray.length > 0) || (entry.data.slideAlbums && entry.data.slideAlbums.length > 0)) && (
                 <div
                   id="statement-slides-tab"
                   class={`statement-tab-content ${!entry.data.pdfUrl && entry.data.pdfOnly ? "active" : ""} transition-opacity duration-300 p-2 sm:p-4 bg-surface dark:bg-surface-dark rounded-xl border border-border dark:border-border-dark my-8`}
                 >
-                  <ImageSlider images={entry.data.slideArray} />
+                  <ImageSlider images={entry.data.slideArray} albums={entry.data.slideAlbums} />
                 </div>
               )}
           </div>

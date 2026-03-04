@@ -32,6 +32,7 @@ interface Props {
   showPdfViewer?: boolean;
   hasSlide?: boolean;
   slideArray?: string[] | null;
+  slideAlbums?: { title: string; slides: string[] }[] | null;
 }
 
 const {
@@ -55,6 +56,7 @@ const {
   showPdfViewer = false,
   hasSlide = false,
   slideArray = [],
+  slideAlbums = [],
 } = Astro.props;
 
 // Determine the content type from the slug for category links
@@ -210,7 +212,7 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
                   {t('books.pdf_tab', lang)}
                 </button>
               )}
-              {hasSlide && slideArray && slideArray.length > 0 && (
+              {hasSlide && ((slideArray && slideArray.length > 0) || (slideAlbums && slideAlbums.length > 0)) && (
                 <button
                   class="article-tab-btn px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
                   data-tab="slides"
@@ -244,9 +246,9 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
             </div>
           )}
 
-          {hasSlide && slideArray && slideArray.length > 0 && (
+          {hasSlide && ((slideArray && slideArray.length > 0) || (slideAlbums && slideAlbums.length > 0)) && (
             <div id="article-slides-tab" class="article-tab-content transition-opacity duration-300 p-2 sm:p-4 bg-surface dark:bg-surface-dark rounded-xl border border-border dark:border-border-dark my-8">
-              <ImageSlider images={slideArray} />
+              <ImageSlider images={slideArray} albums={slideAlbums} />
             </div>
           )}
         </div>

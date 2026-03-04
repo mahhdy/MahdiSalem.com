@@ -16,6 +16,10 @@ const books = defineCollection({
     pdfOnly: z.boolean().default(false),
     hasSlide: z.boolean().default(false),
     slideArray: z.array(z.string()).nullable().optional(),
+    slideAlbums: z.array(z.object({
+      title: z.string(),
+      slides: z.array(z.string())
+    })).optional(),
     publishDate: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
     category: z.union([z.string(), z.array(z.string())]).optional(),
@@ -57,6 +61,10 @@ const proposals = defineCollection({
     pdfOnly: z.boolean().default(false),
     hasSlide: z.boolean().default(false),
     slideArray: z.array(z.string()).nullable().optional(),
+    slideAlbums: z.array(z.object({
+      title: z.string(),
+      slides: z.array(z.string())
+    })).optional(),
     publishDate: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
     category: z.union([z.string(), z.array(z.string())]).optional(),
@@ -104,6 +112,10 @@ const articles = defineCollection({
     pdfOnly: z.boolean().default(false),
     hasSlide: z.boolean().default(false),
     slideArray: z.array(z.string()).nullable().optional(),
+    slideAlbums: z.array(z.object({
+      title: z.string(),
+      slides: z.array(z.string())
+    })).optional(),
     draft: z.boolean().default(false),
     hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
     showInContents: z.boolean().default(true), // Control visibility in All Contents page
@@ -137,6 +149,10 @@ const statements = defineCollection({
     pdfOnly: z.boolean().default(false),
     hasSlide: z.boolean().default(false),
     slideArray: z.array(z.string()).nullable().optional(),
+    slideAlbums: z.array(z.object({
+      title: z.string(),
+      slides: z.array(z.string())
+    })).optional(),
     draft: z.boolean().default(false),
     hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
     showInContents: z.boolean().default(true), // Control visibility in All Contents page
@@ -162,6 +178,10 @@ const wiki = defineCollection({
     hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
     hasSlide: z.boolean().default(false),
     slideArray: z.array(z.string()).nullable().optional(),
+    slideAlbums: z.array(z.object({
+      title: z.string(),
+      slides: z.array(z.string())
+    })).optional(),
     showInContents: z.boolean().default(true), // Control visibility in All Contents page
   }),
 });
@@ -205,6 +225,10 @@ const multimedia = defineCollection({
     hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
     hasSlide: z.boolean().default(false),
     slideArray: z.array(z.string()).nullable().optional(),
+    slideAlbums: z.array(z.object({
+      title: z.string(),
+      slides: z.array(z.string())
+    })).optional(),
     showInContents: z.boolean().default(true), // Control visibility in All Contents page
   }),
 });
@@ -231,6 +255,10 @@ const dialogues = defineCollection({
     pdfOnly: z.boolean().default(false),
     hasSlide: z.boolean().default(false),
     slideArray: z.array(z.string()).nullable().optional(),
+    slideAlbums: z.array(z.object({
+      title: z.string(),
+      slides: z.array(z.string())
+    })).optional(),
     draft: z.boolean().default(false),
     hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
     showInContents: z.boolean().default(true), // Control visibility in All Contents page
