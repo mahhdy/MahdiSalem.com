@@ -4,7 +4,7 @@ description: >-
   این یک نمونه محتوای ویدیویی است که نحوه استفاده از سیستم محتوای چندرسانه‌ای را
   نشان می‌دهد.
 lang: fa
-publishDate: 2025-03-01T00:00:00.000Z
+publishDate: 2025-03-01
 type: video
 mediaUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 thumbnailUrl: /images/mic-sample.svg

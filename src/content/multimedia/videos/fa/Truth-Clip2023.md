@@ -2,7 +2,7 @@
 title: در چیستی صدق و توجیه، و تحلیلی بر مبانی تحلیلی صدق پذیری
 description: صدق و اثبات (توجیه)
 lang: fa
-publishDate: '2023-11-27T00:00:00.000Z'
+publishDate: 2023-11-27
 type: video
 mediaUrl: 'https://youtu.be/sHW1rYVlAPk'
 duration: 1300
