@@ -27,7 +27,7 @@ showInContents: true
 coverImage: /images/proposals/covers/twoWings.png
 imageDisplay: side
 cardImage: show
-show-header: false
+showheader: false
 readingTime: 100
 difficulty: "زیاد"
 slideArray: 

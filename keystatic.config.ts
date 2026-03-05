@@ -39,11 +39,10 @@ const visibilityFields = {
   draft:         fields.checkbox({ label: 'Draft',            defaultValue: false }),
   hidden:        fields.checkbox({ label: 'Hidden',           defaultValue: false }),
   showInContents: fields.checkbox({ label: 'Show in Contents', defaultValue: true }),
-  pdfOnly:       fields.checkbox({ label: 'PDF Only',         defaultValue: false }),
-  showPdfViewer: fields.checkbox({ label: 'Show PDF Viewer',  defaultValue: false }),
-  hasSlide:      fields.checkbox({ label: 'Has Slide',        defaultValue: false }),
-  // Note: 'show-header' uses a hyphen which is not a valid JS identifier.
-  // Use the Astro content file directly to set show-header: true/false.
+  pdfOnly:        fields.checkbox({ label: 'PDF Only',         defaultValue: false }),
+  showPdfViewer:  fields.checkbox({ label: 'Show PDF Viewer',  defaultValue: false }),
+  hasSlide:       fields.checkbox({ label: 'Has Slide',        defaultValue: false }),
+  showheader:     fields.checkbox({ label: 'Show Header',      defaultValue: false }),
 };
 
 /** Presentation & Media */

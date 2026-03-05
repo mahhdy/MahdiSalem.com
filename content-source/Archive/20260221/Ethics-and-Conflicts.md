@@ -14,7 +14,7 @@ tags:
   - اقدام عملی
 draft: true
 interface: philosophy-of-ethics
-show-header: false
+showheader: false
 ---
 ## مقدمه
 

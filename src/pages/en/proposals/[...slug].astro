@@ -112,7 +112,7 @@ const chapterList = chapters.map((c: any) => {
           : undefined
       }
       draft={entry.data.draft}
-      showHeader={entry.data["show-header"]}
+      showHeader={entry.data["showheader"]}
     >
       <Content />
     </ProposalLayout>
@@ -206,7 +206,10 @@ const chapterList = chapters.map((c: any) => {
                   </button>
                 )}
                 {entry.data.hasSlide &&
-                  ((entry.data.slideArray && entry.data.slideArray.length > 0) || (entry.data.slideAlbums && entry.data.slideAlbums.length > 0)) && (
+                  ((entry.data.slideArray &&
+                    entry.data.slideArray.length > 0) ||
+                    (entry.data.slideAlbums &&
+                      entry.data.slideAlbums.length > 0)) && (
                     <button
                       class="book-tab-btn px-6 py-2.5 rounded-md text-sm font-medium transition-colors"
                       data-tab="slides"
@@ -269,12 +272,17 @@ const chapterList = chapters.map((c: any) => {
 
             {/* Slides Tab */}
             {entry.data.hasSlide &&
-              ((entry.data.slideArray && entry.data.slideArray.length > 0) || (entry.data.slideAlbums && entry.data.slideAlbums.length > 0)) && (
+              ((entry.data.slideArray && entry.data.slideArray.length > 0) ||
+                (entry.data.slideAlbums &&
+                  entry.data.slideAlbums.length > 0)) && (
                 <div
                   id="slides-tab"
                   class="book-tab-content transition-opacity duration-300 p-2 sm:p-4 bg-surface dark:bg-surface-dark rounded-xl border border-border dark:border-border-dark my-8"
                 >
-                  <ImageSlider images={entry.data.slideArray} albums={entry.data.slideAlbums} />
+                  <ImageSlider
+                    images={entry.data.slideArray}
+                    albums={entry.data.slideAlbums}
+                  />
                 </div>
               )}
           </div>

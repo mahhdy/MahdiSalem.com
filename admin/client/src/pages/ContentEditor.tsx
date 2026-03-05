@@ -63,7 +63,7 @@ function getSectionsForCollection(collection: string): SectionDef[] {
         {
             id: 'display',
             label: 'Display',
-            keys: ['show-header', 'hidden', 'showInContents', 'order'],
+            keys: ['showheader', 'hidden', 'showInContents', 'order'],
             defaultOpen: false,
         },
     ];

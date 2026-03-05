@@ -18,7 +18,7 @@ categories:
   - ارتش و نظامی‌گری
 draft: false
 hidden: false
-show-header: false
+showheader: false
 category: متفرقه
 keywords:
   - نقش

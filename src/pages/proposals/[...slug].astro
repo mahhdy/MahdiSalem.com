@@ -143,7 +143,7 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
       chapterNumber: nextChapter.data.chapterNumber ?? 0 
     } : undefined}
     draft={entry.data.draft}
-    showHeader={entry.data['show-header']}
+    showHeader={entry.data['showheader']}
     tags={entry.data.tags || []}
     slug={`proposals/${stripPrefix(entry.id)}`}
   >

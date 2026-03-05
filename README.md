@@ -86,7 +86,7 @@ All content must be placed in `src/content/` under the respective collection (`a
 
 - **Format:** All content uses MDX (`.mdx`).
 - **Books:** Books use a single `index.mdx` entry containing all chapters.
-- **Frontmatter Headers:** By default, layout components hide the primary `H1` in articles/books to prevent redundancy. Override with `show-header: true` if needed.
+- **Frontmatter Headers:** By default, layout components hide the primary `H1` in articles/books to prevent redundancy. Override with `showheader: true` if needed.
 
 ### Cover Image Display Control
 

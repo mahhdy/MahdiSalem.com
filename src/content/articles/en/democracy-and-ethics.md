@@ -14,7 +14,7 @@ tags:
   - analytical philosophy
   - Iran
 interface: philosophy-of-ethics
-show-header: false
+showheader: false
 hidden: false
 showInContents: true
 ---

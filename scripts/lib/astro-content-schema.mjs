@@ -77,7 +77,7 @@ export const ContentFrontmatterSchema = z.object({
     .optional(),
 
   // ✅ اختیاری: Display options
-  'show-header': z.boolean()
+  'showheader': z.boolean()
     .optional()
     .default(true),
 
@@ -204,7 +204,7 @@ export class ContentValidator {
       categories: [],
       interface: 'descriptive-politics',
       draft: true,
-      'show-header': true,
+      'showheader': true,
       'show-toc': true,
     };
 

@@ -51,7 +51,7 @@ const FIELD_GROUPS: { label: string; fields: { value: string; label: string }[] 
             { value: 'coverImage', label: 'coverImage' },
             { value: 'imageDisplay', label: 'imageDisplay' },
             { value: 'cardImage', label: 'cardImage' },
-            { value: 'show-header', label: 'show-header' },
+            { value: 'showheader', label: 'showheader' },
         ],
     },
     {
@@ -84,7 +84,7 @@ const FIELD_GROUPS: { label: string; fields: { value: string; label: string }[] 
 ];
 
 const ARRAY_FIELDS = ['tags', 'categories', 'category', 'keywords'];
-const BOOL_FIELDS = ['draft', 'hidden', 'showincontents', 'featured', 'pdfonly', 'showpdfviewer', 'show-header'];
+const BOOL_FIELDS = ['draft', 'hidden', 'showincontents', 'featured', 'pdfonly', 'showpdfviewer', 'showheader'];
 
 export default function ContentBrowser() {
     const [items, setItems] = useState<ContentItem[]>([]);
