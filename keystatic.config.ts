@@ -204,16 +204,8 @@ export default config({
       template: 'src/templates/video-template',
       columns: ['title', 'publishDate', 'draft'],
       schema: {
-        title:        fields.slug({ name: { label: 'Title' } }),
-        description:  fields.text({ label: 'Description', multiline: true }),
-        lang: fields.select({
-          label: 'Language',
-          options: [{ label: 'Persian (fa)', value: 'fa' }, { label: 'English (en)', value: 'en' }],
-          defaultValue: 'fa',
-        }),
-        publishDate:  fields.date({ label: 'Publish Date' }),
-        author:       fields.text({ label: 'Author', defaultValue: 'مهدی سالم' }),
-        // ── Media ──
+        ...commonFields,
+        // ── Video Specific Fields ──
         type: fields.select({
           label: 'Type',
           options: [{ label: 'Video', value: 'video' }],
@@ -231,22 +223,6 @@ export default config({
         }),
         thumbnailUrl: fields.text({ label: 'Thumbnail URL' }),
         duration:     fields.number({ label: 'Duration (seconds)' }),
-        // ── Display ──
-        coverImage: fields.image({ label: 'Cover Image', directory: 'public/images/multimedia', publicPath: '/images/multimedia' }),
-        imageDisplay: fields.select({ label: 'Image Display', options: [{ label: 'Side', value: 'side' }, { label: 'Full', value: 'full' }, { label: 'Thumbnail', value: 'thumbnail' }, { label: 'Hidden', value: 'hidden' }], defaultValue: 'side' }),
-        cardImage:    fields.select({ label: 'Card Image',    options: [{ label: 'Show', value: 'show' }, { label: 'Hidden', value: 'hidden' }], defaultValue: 'show' }),
-        // ── Classification ──
-        interface:    fields.text({ label: 'Interface Taxonomy' }),
-        category:     fields.text({ label: 'Category' }),
-        categories:   fields.array(fields.text({ label: 'Category' }), { label: 'Categories', itemLabel: p => p.value }),
-        tags:         fields.array(fields.text({ label: 'Tag' }),      { label: 'Tags',       itemLabel: p => p.value }),
-        keywords:     fields.array(fields.text({ label: 'Keyword' }),  { label: 'Keywords',   itemLabel: p => p.value }),
-        // ── Visibility ──
-        draft:         fields.checkbox({ label: 'Draft',            defaultValue: true }),
-        hidden:        fields.checkbox({ label: 'Hidden',           defaultValue: false }),
-        showInContents: fields.checkbox({ label: 'Show in Contents', defaultValue: true }),
-        showheader:    fields.checkbox({ label: 'Show Header',      defaultValue: false }),
-        content: fields.markdoc({ label: 'Content' }),
       },
     }),
 
@@ -259,16 +235,8 @@ export default config({
       template: 'src/templates/audio-template',
       columns: ['title', 'publishDate', 'draft'],
       schema: {
-        title:       fields.slug({ name: { label: 'Title' } }),
-        description: fields.text({ label: 'Description', multiline: true }),
-        lang: fields.select({
-          label: 'Language',
-          options: [{ label: 'Persian (fa)', value: 'fa' }, { label: 'English (en)', value: 'en' }],
-          defaultValue: 'fa',
-        }),
-        publishDate: fields.date({ label: 'Publish Date' }),
-        author:      fields.text({ label: 'Author', defaultValue: 'مهدی سالم' }),
-        // ── Media ──
+        ...commonFields,
+        // ── Audio Specific Fields ──
         type: fields.select({
           label: 'Type',
           options: [{ label: 'Audio', value: 'audio' }],
@@ -284,22 +252,6 @@ export default config({
           defaultValue: 'self-hosted',
         }),
         duration: fields.number({ label: 'Duration (seconds)' }),
-        // ── Display ──
-        coverImage: fields.image({ label: 'Cover Image', directory: 'public/images/multimedia', publicPath: '/images/multimedia' }),
-        imageDisplay: fields.select({ label: 'Image Display', options: [{ label: 'Side', value: 'side' }, { label: 'Full', value: 'full' }, { label: 'Thumbnail', value: 'thumbnail' }, { label: 'Hidden', value: 'hidden' }], defaultValue: 'side' }),
-        cardImage:    fields.select({ label: 'Card Image',    options: [{ label: 'Show', value: 'show' }, { label: 'Hidden', value: 'hidden' }], defaultValue: 'show' }),
-        // ── Classification ──
-        interface:   fields.text({ label: 'Interface Taxonomy' }),
-        category:    fields.text({ label: 'Category' }),
-        categories:  fields.array(fields.text({ label: 'Category' }), { label: 'Categories', itemLabel: p => p.value }),
-        tags:        fields.array(fields.text({ label: 'Tag' }),      { label: 'Tags',       itemLabel: p => p.value }),
-        keywords:    fields.array(fields.text({ label: 'Keyword' }),  { label: 'Keywords',   itemLabel: p => p.value }),
-        // ── Visibility ──
-        draft:          fields.checkbox({ label: 'Draft',            defaultValue: true }),
-        hidden:         fields.checkbox({ label: 'Hidden',           defaultValue: false }),
-        showInContents: fields.checkbox({ label: 'Show in Contents', defaultValue: true }),
-        showheader:     fields.checkbox({ label: 'Show Header',      defaultValue: false }),
-        content: fields.markdoc({ label: 'Content' }),
       },
     }),
 
@@ -312,16 +264,8 @@ export default config({
       template: 'src/templates/podcast-template',
       columns: ['title', 'publishDate', 'draft'],
       schema: {
-        title:       fields.slug({ name: { label: 'Title' } }),
-        description: fields.text({ label: 'Description', multiline: true }),
-        lang: fields.select({
-          label: 'Language',
-          options: [{ label: 'Persian (fa)', value: 'fa' }, { label: 'English (en)', value: 'en' }],
-          defaultValue: 'fa',
-        }),
-        publishDate: fields.date({ label: 'Publish Date' }),
-        author:      fields.text({ label: 'Author', defaultValue: 'مهدی سالم' }),
-        // ── Media ──
+        ...commonFields,
+        // ── Podcast Specific Fields ──
         type: fields.select({
           label: 'Type',
           options: [{ label: 'Podcast', value: 'podcast' }],
@@ -340,22 +284,6 @@ export default config({
         episodeNumber: fields.number({ label: 'Episode Number' }),
         seasonNumber:  fields.number({ label: 'Season Number' }),
         duration:      fields.number({ label: 'Duration (seconds)' }),
-        // ── Display ──
-        coverImage: fields.image({ label: 'Cover Image', directory: 'public/images/multimedia', publicPath: '/images/multimedia' }),
-        imageDisplay: fields.select({ label: 'Image Display', options: [{ label: 'Side', value: 'side' }, { label: 'Full', value: 'full' }, { label: 'Thumbnail', value: 'thumbnail' }, { label: 'Hidden', value: 'hidden' }], defaultValue: 'side' }),
-        cardImage:    fields.select({ label: 'Card Image',    options: [{ label: 'Show', value: 'show' }, { label: 'Hidden', value: 'hidden' }], defaultValue: 'show' }),
-        // ── Classification ──
-        interface:   fields.text({ label: 'Interface Taxonomy' }),
-        category:    fields.text({ label: 'Category' }),
-        categories:  fields.array(fields.text({ label: 'Category' }), { label: 'Categories', itemLabel: p => p.value }),
-        tags:        fields.array(fields.text({ label: 'Tag' }),      { label: 'Tags',       itemLabel: p => p.value }),
-        keywords:    fields.array(fields.text({ label: 'Keyword' }),  { label: 'Keywords',   itemLabel: p => p.value }),
-        // ── Visibility ──
-        draft:          fields.checkbox({ label: 'Draft',            defaultValue: true }),
-        hidden:         fields.checkbox({ label: 'Hidden',           defaultValue: false }),
-        showInContents: fields.checkbox({ label: 'Show in Contents', defaultValue: true }),
-        showheader:     fields.checkbox({ label: 'Show Header',      defaultValue: false }),
-        content: fields.markdoc({ label: 'Content' }),
       },
     }),
 
