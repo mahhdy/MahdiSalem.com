@@ -20,6 +20,7 @@ coverImage: /images/articles/covers/self-actualized-entity.png
 showInContents: true
 imageDisplay: full
 cardImage: show
+slug: "self-actualized-entity"
 ---
 
 # آیا امر خود محقق داریم؟

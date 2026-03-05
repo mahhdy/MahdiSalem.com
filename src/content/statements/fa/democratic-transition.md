@@ -8,6 +8,7 @@ interface: iran
 hidden: true
 showInContents: true
 draft: true
+slug: "democratic-transition"
 ---
 <div dir="rtl">
 

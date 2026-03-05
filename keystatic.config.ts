@@ -109,7 +109,8 @@ const slideFields = {
 
 /** Core content shared by all collections */
 const commonFields = {
-  title:       fields.slug({ name: { label: 'Title' } }),
+  title:       fields.text({ label: 'Title' }),
+  slug:        fields.text({ label: 'Identifier (English/Slug)', description: 'This must match the filename and be in English for the URL to work correctly.' }),
   description: fields.text({ label: 'Description', multiline: true }),
   publishDate: fields.date({ label: 'Publish Date' }),
   ...identityFields,
@@ -129,8 +130,8 @@ export default config({
 
     articles: collection({
       label: 'Articles / مقالات',
-      slugField: 'title',
-      path: 'src/content/articles/*/*.mdx',
+      slugField: 'slug',
+      path: 'src/content/articles/*/*',
       format: { contentField: 'content' },
       entryLayout: 'content',
       columns: ['title', 'publishDate', 'lang', 'draft'],
@@ -150,8 +151,8 @@ export default config({
 
     books: collection({
       label: 'Books / کتاب‌ها',
-      slugField: 'title',
-      path: 'src/content/books/*/*.mdx',
+      slugField: 'slug',
+      path: 'src/content/books/*/*',
       format: { contentField: 'content' },
       entryLayout: 'content',
       columns: ['title', 'publishDate', 'lang', 'draft'],
@@ -164,8 +165,8 @@ export default config({
 
     proposals: collection({
       label: 'Proposals / طرح‌ها',
-      slugField: 'title',
-      path: 'src/content/proposals/*/*.mdx',
+      slugField: 'slug',
+      path: 'src/content/proposals/*/*',
       format: { contentField: 'content' },
       entryLayout: 'content',
       columns: ['title', 'publishDate', 'lang', 'draft'],
@@ -174,8 +175,8 @@ export default config({
 
     statements: collection({
       label: 'Statements / بیانیه‌ها',
-      slugField: 'title',
-      path: 'src/content/statements/*/*.mdx',
+      slugField: 'slug',
+      path: 'src/content/statements/*/*',
       format: { contentField: 'content' },
       entryLayout: 'content',
       columns: ['title', 'publishDate', 'lang', 'draft'],
@@ -197,8 +198,8 @@ export default config({
 
     videos: collection({
       label: '🎬 Videos / ویدئو',
-      slugField: 'title',
-      path: 'src/content/multimedia/videos/*/*.mdx',
+      slugField: 'slug',
+      path: 'src/content/multimedia/videos/*/*',
       format: { contentField: 'content' },
       entryLayout: 'content',
       template: 'src/templates/video-template',
@@ -228,8 +229,8 @@ export default config({
 
     audio: collection({
       label: '🎵 Audio / صوتی',
-      slugField: 'title',
-      path: 'src/content/multimedia/audio/*/*.mdx',
+      slugField: 'slug',
+      path: 'src/content/multimedia/audio/*/*',
       format: { contentField: 'content' },
       entryLayout: 'content',
       template: 'src/templates/audio-template',
@@ -257,8 +258,8 @@ export default config({
 
     podcasts: collection({
       label: '🎙️ Podcasts / پادکست',
-      slugField: 'title',
-      path: 'src/content/multimedia/podcasts/*/*.mdx',
+      slugField: 'slug',
+      path: 'src/content/multimedia/podcasts/*/*',
       format: { contentField: 'content' },
       entryLayout: 'content',
       template: 'src/templates/podcast-template',
@@ -289,7 +290,7 @@ export default config({
 
     dialogues: collection({
       label: 'Dialogues / گفتگوها',
-      slugField: 'title',
+      slugField: 'slug',
       path: 'src/content/dialogues/*/*.mdx',
       format: { contentField: 'content' },
       entryLayout: 'content',
@@ -305,7 +306,7 @@ export default config({
 
     wiki: collection({
       label: 'Wiki / دانشنامه',
-      slugField: 'title',
+      slugField: 'slug',
       path: 'src/content/wiki/*/*.mdx',
       format: { contentField: 'content' },
       entryLayout: 'content',

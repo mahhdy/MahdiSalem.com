@@ -25,6 +25,7 @@ categories:
   - فلسفه اخلاق
 cardImage: show
 imageDisplay: full
+slug: "Me-manoochehr-ethics-dialogue"
 ---
 
 ## آیا اخلاق صرفا مبتنی بر امیال و منبعث از آن‌هاست، یا اخلاق مبتنی بر عقلانیت و عینیت منطقی است؟
