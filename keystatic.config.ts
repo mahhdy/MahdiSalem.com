@@ -198,7 +198,7 @@ export default config({
     videos: collection({
       label: '🎬 Videos / ویدئو',
       slugField: 'title',
-      path: 'src/content/multimedia/fa/*',
+      path: 'src/content/multimedia/videos/fa/*',
       format: { contentField: 'content' },
       entryLayout: 'content',
       template: 'src/templates/video-template',
@@ -253,7 +253,7 @@ export default config({
     audio: collection({
       label: '🎵 Audio / صوتی',
       slugField: 'title',
-      path: 'src/content/multimedia/fa/*',
+      path: 'src/content/multimedia/audio/fa/*',
       format: { contentField: 'content' },
       entryLayout: 'content',
       template: 'src/templates/audio-template',
@@ -306,7 +306,7 @@ export default config({
     podcasts: collection({
       label: '🎙️ Podcasts / پادکست',
       slugField: 'title',
-      path: 'src/content/multimedia/fa/*',
+      path: 'src/content/multimedia/podcasts/fa/*',
       format: { contentField: 'content' },
       entryLayout: 'content',
       template: 'src/templates/podcast-template',
