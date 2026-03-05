@@ -130,7 +130,7 @@ export default config({
     articles: collection({
       label: 'Articles / مقالات',
       slugField: 'title',
-      path: 'src/content/articles/*/*',
+      path: 'src/content/articles/*/*.mdx',
       format: { contentField: 'content' },
       entryLayout: 'content',
       columns: ['title', 'publishDate', 'lang', 'draft'],
@@ -151,7 +151,7 @@ export default config({
     books: collection({
       label: 'Books / کتاب‌ها',
       slugField: 'title',
-      path: 'src/content/books/*/*',
+      path: 'src/content/books/*/*.mdx',
       format: { contentField: 'content' },
       entryLayout: 'content',
       columns: ['title', 'publishDate', 'lang', 'draft'],
@@ -165,7 +165,7 @@ export default config({
     proposals: collection({
       label: 'Proposals / طرح‌ها',
       slugField: 'title',
-      path: 'src/content/proposals/*/*',
+      path: 'src/content/proposals/*/*.mdx',
       format: { contentField: 'content' },
       entryLayout: 'content',
       columns: ['title', 'publishDate', 'lang', 'draft'],
@@ -175,7 +175,7 @@ export default config({
     statements: collection({
       label: 'Statements / بیانیه‌ها',
       slugField: 'title',
-      path: 'src/content/statements/*/*',
+      path: 'src/content/statements/*/*.mdx',
       format: { contentField: 'content' },
       entryLayout: 'content',
       columns: ['title', 'publishDate', 'lang', 'draft'],
@@ -198,7 +198,7 @@ export default config({
     videos: collection({
       label: '🎬 Videos / ویدئو',
       slugField: 'title',
-      path: 'src/content/multimedia/videos/*/*',
+      path: 'src/content/multimedia/videos/*/*.mdx',
       format: { contentField: 'content' },
       entryLayout: 'content',
       template: 'src/templates/video-template',
@@ -229,7 +229,7 @@ export default config({
     audio: collection({
       label: '🎵 Audio / صوتی',
       slugField: 'title',
-      path: 'src/content/multimedia/audio/*/*',
+      path: 'src/content/multimedia/audio/*/*.mdx',
       format: { contentField: 'content' },
       entryLayout: 'content',
       template: 'src/templates/audio-template',
@@ -258,7 +258,7 @@ export default config({
     podcasts: collection({
       label: '🎙️ Podcasts / پادکست',
       slugField: 'title',
-      path: 'src/content/multimedia/podcasts/*/*',
+      path: 'src/content/multimedia/podcasts/*/*.mdx',
       format: { contentField: 'content' },
       entryLayout: 'content',
       template: 'src/templates/podcast-template',
@@ -290,7 +290,7 @@ export default config({
     dialogues: collection({
       label: 'Dialogues / گفتگوها',
       slugField: 'title',
-      path: 'src/content/dialogues/*/*',
+      path: 'src/content/dialogues/*/*.mdx',
       format: { contentField: 'content' },
       entryLayout: 'content',
       columns: ['title', 'publishDate', 'lang', 'draft'],
@@ -306,7 +306,7 @@ export default config({
     wiki: collection({
       label: 'Wiki / دانشنامه',
       slugField: 'title',
-      path: 'src/content/wiki/*/*',
+      path: 'src/content/wiki/*/*.mdx',
       format: { contentField: 'content' },
       entryLayout: 'content',
       columns: ['title', 'lang', 'draft'],
