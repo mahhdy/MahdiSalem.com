@@ -62,7 +62,6 @@ const commonFields = {
   ),
   content: fields.markdoc({
     label: 'Content',
-    extension: 'mdx'
   }),
 };
 
@@ -136,7 +135,8 @@ export default config({
         duration: fields.number({ label: 'Duration (seconds)' }),
         platform: fields.select({ 
           label: 'Platform', 
-          options: [{ label: 'YouTube', value: 'youtube' }, { label: 'Vimeo', value: 'vimeo' }, { label: 'Soundcloud', value: 'soundcloud' }, { label: 'Self-hosted', value: 'self-hosted' }] 
+          options: [{ label: 'YouTube', value: 'youtube' }, { label: 'Vimeo', value: 'vimeo' }, { label: 'Soundcloud', value: 'soundcloud' }, { label: 'Self-hosted', value: 'self-hosted' }],
+          defaultValue: 'youtube'
         }),
         podcastName: fields.text({ label: 'Podcast Name' }),
       },
