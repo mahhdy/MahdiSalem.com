@@ -66,6 +66,12 @@ function getSectionsForCollection(collection: string): SectionDef[] {
             keys: ['showheader', 'hidden', 'showInContents', 'order'],
             defaultOpen: false,
         },
+        {
+            id: 'ai',
+            label: '🤖 AI Contribution',
+            keys: ['aiRole'],
+            defaultOpen: true,
+        },
     ];
 }
 
@@ -1069,7 +1075,7 @@ interface FieldDef {
     | 'number'
     | 'image'
     | 'file';
-    options?: string[];
+    options?: (string | { value: string; label: string })[];
     placeholder?: string;
 }
 
@@ -1082,6 +1088,20 @@ function getFieldsForCollection(collection: string): FieldDef[] {
         { key: 'tags', label: 'Tags', type: 'tags' },
         { key: 'hasSlide', label: 'Has Slide', type: 'boolean' },
         { key: 'slideArray', label: 'Slide Images', type: 'tags', placeholder: '/images/1.jpg, /images/2.jpg' },
+        {
+            key: 'aiRole',
+            label: '🤖 AI Contribution',
+            type: 'select',
+            options: [
+                { value: 'human',          label: '✍️ Human Only — No AI at all' },
+                { value: 'ai-visual',      label: '🎨 AI-Enhanced Visuals — graphics only' },
+                { value: 'ai-polish',      label: '✨ AI-Polished — editing & grammar' },
+                { value: 'ai-assisted',    label: '🤝 AI-Assisted — research & data gathering' },
+                { value: 'ai-extended',    label: '💡 AI-Extended — ideas expanded by AI' },
+                { value: 'ai-supervised',  label: '🔍 AI Under Supervision — AI-written, human-reviewed' },
+                { value: 'ai-generated',   label: '🤖 AI-Generated — fully AI, no human review' },
+            ],
+        },
     ];
 
     switch (collection) {
@@ -1317,11 +1337,15 @@ function FieldEditor({
                     onChange={(e) => onChange(e.target.value)}
                 >
                     <option value="">— Select —</option>
-                    {field.options?.map((opt) => (
-                        <option key={opt} value={opt}>
-                            {opt}
-                        </option>
-                    ))}
+                    {field.options?.map((opt) => {
+                        const v = typeof opt === 'string' ? opt : opt.value;
+                        const l = typeof opt === 'string' ? opt : opt.label;
+                        return (
+                            <option key={v} value={v}>
+                                {l}
+                            </option>
+                        );
+                    })}
                 </select>
             )}
 

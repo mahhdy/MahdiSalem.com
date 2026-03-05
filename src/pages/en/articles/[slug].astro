@@ -11,7 +11,9 @@ export async function getStaticPaths() {
     ({ data }) => data.lang === "en" && !data.draft,
   );
   return articles.map((article) => ({
-    params: { slug: article.id.replace(/^en\//, "") },
+    params: {
+      slug: article.id.replace(/^en\//, ""),
+    },
     props: { article },
   }));
 }

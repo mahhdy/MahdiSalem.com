@@ -31,6 +31,7 @@ const books = defineCollection({
     draft: z.boolean().default(false),
     hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
     showInContents: z.boolean().default(true), // Control visibility in All Contents page
+    aiRole: z.enum(['human', 'ai-visual', 'ai-polish', 'ai-assisted', 'ai-extended', 'ai-supervised', 'ai-generated']).default('human').optional(),
     order: z.number().default(0),
     // For chapters within a book
     bookSlug: z.string().optional(),
@@ -119,6 +120,7 @@ const articles = defineCollection({
     draft: z.boolean().default(false),
     hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
     showInContents: z.boolean().default(true), // Control visibility in All Contents page
+    aiRole: z.enum(['human', 'ai-visual', 'ai-polish', 'ai-assisted', 'ai-extended', 'ai-supervised', 'ai-generated']).default('human').optional(),
     // Extra metadata fields (tolerated from content files)
     sourceType: z.string().optional(),
     authorTitle: z.string().optional(),
@@ -156,6 +158,7 @@ const statements = defineCollection({
     draft: z.boolean().default(false),
     hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
     showInContents: z.boolean().default(true), // Control visibility in All Contents page
+    aiRole: z.enum(['human', 'ai-visual', 'ai-polish', 'ai-assisted', 'ai-extended', 'ai-supervised', 'ai-generated']).default('human').optional(),
   }),
 });
 
@@ -183,6 +186,7 @@ const wiki = defineCollection({
       slides: z.array(z.string())
     })).optional(),
     showInContents: z.boolean().default(true), // Control visibility in All Contents page
+    aiRole: z.enum(['human', 'ai-visual', 'ai-polish', 'ai-assisted', 'ai-extended', 'ai-supervised', 'ai-generated']).default('human').optional(),
   }),
 });
 
@@ -230,6 +234,7 @@ const multimedia = defineCollection({
       slides: z.array(z.string())
     })).optional(),
     showInContents: z.boolean().default(true), // Control visibility in All Contents page
+    aiRole: z.enum(['human', 'ai-visual', 'ai-polish', 'ai-assisted', 'ai-extended', 'ai-supervised', 'ai-generated']).default('human').optional(),
   }),
 });
 
@@ -262,6 +267,7 @@ const dialogues = defineCollection({
     draft: z.boolean().default(false),
     hidden: z.boolean().default(false), // If true, content is not shown unless ?force=true in URL
     showInContents: z.boolean().default(true), // Control visibility in All Contents page
+    aiRole: z.enum(['human', 'ai-visual', 'ai-polish', 'ai-assisted', 'ai-extended', 'ai-supervised', 'ai-generated']).default('human').optional(),
     // Extra metadata fields (tolerated from content files)
     sourceType: z.string().optional(),
     authorTitle: z.string().optional(),

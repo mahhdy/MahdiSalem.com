@@ -13,11 +13,6 @@ const identityFields = {
 
 /** Classification & Taxonomy */
 const classificationFields = {
-  lang: fields.select({
-    label: 'Language',
-    options: [{ label: 'Persian (fa)', value: 'fa' }, { label: 'English (en)', value: 'en' }],
-    defaultValue: 'fa',
-  }),
   sourceType: fields.text({ label: 'Source Type' }),
   interface:  fields.text({ label: 'Interface Taxonomy' }),
   category:   fields.text({ label: 'Category' }),
@@ -28,10 +23,25 @@ const classificationFields = {
       { label: 'Beginner / مبتدی',        value: 'مبتدی' },
       { label: 'Intermediate / متوسط',    value: 'متوسط' },
       { label: 'Advanced / پیشرفته',      value: 'پیشرفته' },
+      { label: 'High / زیاد',             value: 'زیاد' },
     ],
     defaultValue: 'متوسط',
   }),
   readingTime: fields.number({ label: 'Reading Time (min)' }),
+  aiRole: fields.select({
+    label: '🤖 AI Contribution',
+    description: 'Level of AI involvement in producing this content',
+    options: [
+      { label: '✍️ Human Only — No AI at all',                    value: 'human' },
+      { label: '🎨 AI-Enhanced Visuals — AI for graphics only',   value: 'ai-visual' },
+      { label: '✨ AI-Polished — AI for editing & grammar',        value: 'ai-polish' },
+      { label: '🤝 AI-Assisted — AI helped research & gather data', value: 'ai-assisted' },
+      { label: '💡 AI-Extended — AI expanded the author\'s ideas', value: 'ai-extended' },
+      { label: '🔍 AI Under Supervision — AI-written, human-reviewed', value: 'ai-supervised' },
+      { label: '🤖 AI-Generated — Fully AI, no human review',     value: 'ai-generated' },
+    ],
+    defaultValue: 'human',
+  }),
 };
 
 /** Visibility Toggles */
@@ -110,7 +120,7 @@ const slideFields = {
 /** Core content shared by all collections */
 const commonFields = {
   title:       fields.text({ label: 'Title' }),
-  slug:        fields.text({ label: 'Identifier (English/Slug)', description: 'This must match the filename and be in English for the URL to work correctly.' }),
+  slug:        fields.text({ label: 'Identifier (English/Slug)', description: 'MUST match the English filename for the URL to work.', validation: { isRequired: true } }),
   description: fields.text({ label: 'Description', multiline: true }),
   publishDate: fields.date({ label: 'Publish Date' }),
   ...identityFields,
@@ -119,24 +129,98 @@ const commonFields = {
   ...mediaFields,
   ...arrayFields,
   ...slideFields,
-  content: fields.markdoc({ label: 'Content' }),
+  content: fields.mdx({ label: 'Content' }),
+};
+
+/** Specialized fields for specific languages if needed */
+const commonFieldsFA = {
+  ...commonFields,
+  lang: fields.text({ label: 'Language', defaultValue: 'fa', validation: { isRequired: true } }),
+};
+
+const commonFieldsEN = {
+  ...commonFields,
+  lang: fields.text({ label: 'Language', defaultValue: 'en', validation: { isRequired: true } }),
 };
 
 // ─── Config ────────────────────────────────────────────────────────────────
 
 export default config({
   storage: { kind: 'local' },
+  
+  ui: {
+    brand: { name: 'MS Admin' },
+    navigation: {
+      'Stats': ['statistics'],
+      '🌐 View Website': [],
+      '🇮🇷 PERSIAN (FA)': [
+        'articles_fa',
+        'videos_fa',
+        'audio_fa',
+        'podcasts_fa',
+        'books_fa',
+        'dialogues_fa',
+        'proposals_fa',
+        'statements_fa',
+        'wiki_fa'
+      ],
+      'ENGLISH (EN)': [
+        'articles_en',
+        'videos_en',
+        'audio_en',
+        'podcasts_en',
+        'books_en',
+        'dialogues_en',
+        'proposals_en',
+        'statements_en',
+        'wiki_en'
+      ],
+    }
+  },
+  singletons: {
+    statistics: {
+      label: '📈 Statistics & Matrix',
+      path: 'src/content/statistics',
+      schema: {
+        totalArticles: fields.integer({ label: 'Total Articles', defaultValue: 0 }),
+        lastUpdate:    fields.date({ label: 'Last Build/Update' }),
+        notes:         fields.text({ label: 'Growth Notes', multiline: true }),
+      },
+    },
+  },
+
   collections: {
 
-    articles: collection({
-      label: 'Articles / مقالات',
+    // --- ARITICLES ---
+    articles_fa: collection({
       slugField: 'slug',
-      path: 'src/content/articles/*/*',
+      label: 'Articles / مقالات',
+      path: 'src/content/articles/fa/*',
       format: { contentField: 'content' },
       entryLayout: 'content',
-      columns: ['title', 'publishDate', 'lang', 'draft'],
+      columns: ['title', 'publishDate', 'draft'],
       schema: {
-        ...commonFields,
+        ...commonFieldsFA,
+        type: fields.select({
+          label: 'Article Type',
+          options: [
+            { label: 'Statement', value: 'statement' },
+            { label: 'Press',     value: 'press' },
+            { label: 'Position',  value: 'position' },
+          ],
+          defaultValue: 'statement',
+        }),
+      },
+    }),
+    articles_en: collection({
+      slugField: 'slug',
+      label: 'Articles / مقالات (EN)',
+      path: 'src/content/articles/en/*',
+      format: { contentField: 'content' },
+      entryLayout: 'content',
+      columns: ['title', 'publishDate', 'draft'],
+      schema: {
+        ...commonFieldsEN,
         type: fields.select({
           label: 'Article Type',
           options: [
@@ -149,170 +233,255 @@ export default config({
       },
     }),
 
-    books: collection({
-      label: 'Books / کتاب‌ها',
+    // --- VIDEOS ---
+    videos_fa: collection({
       slugField: 'slug',
-      path: 'src/content/books/*/*',
-      format: { contentField: 'content' },
-      entryLayout: 'content',
-      columns: ['title', 'publishDate', 'lang', 'draft'],
-      schema: {
-        ...commonFields,
-        bookSlug:      fields.text({ label: 'Book Slug (parent)' }),
-        chapterNumber: fields.number({ label: 'Chapter Number' }),
-      },
-    }),
-
-    proposals: collection({
-      label: 'Proposals / طرح‌ها',
-      slugField: 'slug',
-      path: 'src/content/proposals/*/*',
-      format: { contentField: 'content' },
-      entryLayout: 'content',
-      columns: ['title', 'publishDate', 'lang', 'draft'],
-      schema: { ...commonFields },
-    }),
-
-    statements: collection({
-      label: 'Statements / بیانیه‌ها',
-      slugField: 'slug',
-      path: 'src/content/statements/*/*',
-      format: { contentField: 'content' },
-      entryLayout: 'content',
-      columns: ['title', 'publishDate', 'lang', 'draft'],
-      schema: {
-        ...commonFields,
-        type: fields.select({
-          label: 'Type',
-          options: [
-            { label: 'Statement', value: 'statement' },
-            { label: 'Press',     value: 'press' },
-            { label: 'Position',  value: 'position' },
-          ],
-          defaultValue: 'statement',
-        }),
-      },
-    }),
-
-    // ─── Multimedia: 3 dedicated collections with templates ───────────────────
-
-    videos: collection({
       label: '🎬 Videos / ویدئو',
-      slugField: 'slug',
-      path: 'src/content/multimedia/videos/*/*',
+      path: 'src/content/multimedia/videos/fa/*',
       format: { contentField: 'content' },
       entryLayout: 'content',
       template: 'src/templates/video-template',
       columns: ['title', 'publishDate', 'draft'],
       schema: {
-        ...commonFields,
-        // ── Video Specific Fields ──
+        ...commonFieldsFA,
         type: fields.select({
           label: 'Type',
           options: [{ label: 'Video', value: 'video' }],
           defaultValue: 'video',
         }),
-        mediaUrl:     fields.text({ label: '🔗 Media URL (YouTube/Vimeo/direct)' }),
+        mediaUrl: fields.text({ label: '🔗 Media URL' }),
         platform: fields.select({
           label: 'Platform',
-          options: [
-            { label: 'YouTube',     value: 'youtube' },
-            { label: 'Vimeo',       value: 'vimeo' },
-            { label: 'Self-hosted', value: 'self-hosted' },
-          ],
+          options: [{ label: 'YouTube', value: 'youtube' }, { label: 'Vimeo', value: 'vimeo' }, { label: 'Self', value: 'self-hosted' }],
           defaultValue: 'youtube',
         }),
         thumbnailUrl: fields.text({ label: 'Thumbnail URL' }),
-        duration:     fields.number({ label: 'Duration (seconds)' }),
+        duration: fields.number({ label: 'Duration (s)' }),
+      },
+    }),
+    videos_en: collection({
+      slugField: 'slug',
+      label: '🎬 Videos (EN)',
+      path: 'src/content/multimedia/videos/en/*',
+      format: { contentField: 'content' },
+      entryLayout: 'content',
+      template: 'src/templates/video-template',
+      columns: ['title', 'publishDate', 'draft'],
+      schema: {
+        ...commonFieldsEN,
+        type: fields.select({
+          label: 'Type',
+          options: [{ label: 'Video', value: 'video' }],
+          defaultValue: 'video',
+        }),
+        mediaUrl: fields.text({ label: '🔗 Media URL' }),
+        platform: fields.select({
+          label: 'Platform',
+          options: [{ label: 'YouTube', value: 'youtube' }, { label: 'Vimeo', value: 'vimeo' }, { label: 'Self', value: 'self-hosted' }],
+          defaultValue: 'youtube',
+        }),
+        thumbnailUrl: fields.text({ label: 'Thumbnail URL' }),
+        duration: fields.number({ label: 'Duration (s)' }),
       },
     }),
 
-    audio: collection({
-      label: '🎵 Audio / صوتی',
+    // --- AUDIO ---
+    audio_fa: collection({
       slugField: 'slug',
-      path: 'src/content/multimedia/audio/*/*',
+      label: '🎵 Audio / صوتی',
+      path: 'src/content/multimedia/audio/fa/*',
       format: { contentField: 'content' },
       entryLayout: 'content',
       template: 'src/templates/audio-template',
       columns: ['title', 'publishDate', 'draft'],
       schema: {
-        ...commonFields,
-        // ── Audio Specific Fields ──
-        type: fields.select({
-          label: 'Type',
-          options: [{ label: 'Audio', value: 'audio' }],
-          defaultValue: 'audio',
-        }),
-        mediaUrl: fields.text({ label: '🔗 Audio File URL (mp3 / direct link)' }),
-        platform: fields.select({
-          label: 'Platform',
-          options: [
-            { label: 'Self-hosted', value: 'self-hosted' },
-            { label: 'Soundcloud',  value: 'soundcloud' },
-          ],
-          defaultValue: 'self-hosted',
-        }),
-        duration: fields.number({ label: 'Duration (seconds)' }),
+        ...commonFieldsFA,
+        type: fields.select({ label: 'Type', options: [{ label: 'Audio', value: 'audio' }], defaultValue: 'audio' }),
+        mediaUrl: fields.text({ label: '🔗 Audio URL' }),
+        platform: fields.select({ label: 'Platform', options: [{ label: 'Self', value: 'self-hosted' }, { label: 'SC', value: 'soundcloud' }], defaultValue: 'self-hosted' }),
+        duration: fields.number({ label: 'Duration (s)' }),
+      },
+    }),
+    audio_en: collection({
+      slugField: 'slug',
+      label: '🎵 Audio (EN)',
+      path: 'src/content/multimedia/audio/en/*',
+      format: { contentField: 'content' },
+      entryLayout: 'content',
+      template: 'src/templates/audio-template',
+      columns: ['title', 'publishDate', 'draft'],
+      schema: {
+        ...commonFieldsEN,
+        type: fields.select({ label: 'Type', options: [{ label: 'Audio', value: 'audio' }], defaultValue: 'audio' }),
+        mediaUrl: fields.text({ label: '🔗 Audio URL' }),
+        platform: fields.select({ label: 'Platform', options: [{ label: 'Self', value: 'self-hosted' }, { label: 'SC', value: 'soundcloud' }], defaultValue: 'self-hosted' }),
+        duration: fields.number({ label: 'Duration (s)' }),
       },
     }),
 
-    podcasts: collection({
-      label: '🎙️ Podcasts / پادکست',
+    // --- PODCASTS ---
+    podcasts_fa: collection({
       slugField: 'slug',
-      path: 'src/content/multimedia/podcasts/*/*',
+      label: '🎙️ Podcasts / پادکست',
+      path: 'src/content/multimedia/podcasts/fa/*',
       format: { contentField: 'content' },
       entryLayout: 'content',
       template: 'src/templates/podcast-template',
       columns: ['title', 'publishDate', 'draft'],
       schema: {
-        ...commonFields,
-        // ── Podcast Specific Fields ──
-        type: fields.select({
-          label: 'Type',
-          options: [{ label: 'Podcast', value: 'podcast' }],
-          defaultValue: 'podcast',
-        }),
-        mediaUrl:      fields.text({ label: '🔗 Audio File URL (mp3 / Podbean link)' }),
-        platform: fields.select({
-          label: 'Platform',
-          options: [
-            { label: 'Self-hosted', value: 'self-hosted' },
-            { label: 'Soundcloud',  value: 'soundcloud' },
-          ],
-          defaultValue: 'self-hosted',
-        }),
-        podcastName:   fields.text({ label: 'Podcast Name / نام پادکست' }),
-        episodeNumber: fields.number({ label: 'Episode Number' }),
-        seasonNumber:  fields.number({ label: 'Season Number' }),
-        duration:      fields.number({ label: 'Duration (seconds)' }),
+        ...commonFieldsFA,
+        type: fields.select({ label: 'Type', options: [{ label: 'Podcast', value: 'podcast' }], defaultValue: 'podcast' }),
+        mediaUrl: fields.text({ label: '🔗 Podbean URL' }),
+        platform: fields.select({ label: 'Platform', options: [{ label: 'Self', value: 'self-hosted' }], defaultValue: 'self-hosted' }),
+        podcastName: fields.text({ label: 'Name' }),
+        episodeNumber: fields.number({ label: 'Episode' }),
+        seasonNumber: fields.number({ label: 'Season' }),
+        duration: fields.number({ label: 'Duration' }),
+      },
+    }),
+    podcasts_en: collection({
+      slugField: 'slug',
+      label: '🎙️ Podcasts (EN)',
+      path: 'src/content/multimedia/podcasts/en/*',
+      format: { contentField: 'content' },
+      entryLayout: 'content',
+      template: 'src/templates/podcast-template',
+      columns: ['title', 'publishDate', 'draft'],
+      schema: {
+        ...commonFieldsEN,
+        type: fields.select({ label: 'Type', options: [{ label: 'Podcast', value: 'podcast' }], defaultValue: 'podcast' }),
+        mediaUrl: fields.text({ label: '🔗 Podbean URL' }),
+        platform: fields.select({ label: 'Platform', options: [{ label: 'Self', value: 'self-hosted' }], defaultValue: 'self-hosted' }),
+        podcastName: fields.text({ label: 'Name' }),
+        episodeNumber: fields.number({ label: 'Episode' }),
+        seasonNumber: fields.number({ label: 'Season' }),
+        duration: fields.number({ label: 'Duration' }),
       },
     }),
 
-    dialogues: collection({
+    // --- BOOKS ---
+    books_fa: collection({
+      slugField: 'slug',
+      label: 'Books / کتاب‌ها',
+      path: 'src/content/books/fa/**',
+      format: { contentField: 'content' },
+      entryLayout: 'content',
+      columns: ['title', 'publishDate', 'draft'],
+      schema: {
+        ...commonFieldsFA,
+        bookSlug: fields.text({ label: 'Parent Slug' }),
+        chapterNumber: fields.number({ label: 'Chapter' }),
+      },
+    }),
+    books_en: collection({
+      slugField: 'slug',
+      label: 'Books (EN)',
+      path: 'src/content/books/en/**',
+      format: { contentField: 'content' },
+      entryLayout: 'content',
+      columns: ['title', 'publishDate', 'draft'],
+      schema: {
+        ...commonFieldsEN,
+        bookSlug: fields.text({ label: 'Parent Slug' }),
+        chapterNumber: fields.number({ label: 'Chapter' }),
+      },
+    }),
+
+    // --- DIALOGUES ---
+    dialogues_fa: collection({
+      slugField: 'slug',
       label: 'Dialogues / گفتگوها',
-      slugField: 'slug',
-      path: 'src/content/dialogues/*/*.mdx',
+      path: 'src/content/dialogues/fa/**',
       format: { contentField: 'content' },
       entryLayout: 'content',
-      columns: ['title', 'publishDate', 'lang', 'draft'],
+      columns: ['title', 'publishDate', 'draft'],
       schema: {
-        ...commonFields,
-        participants: fields.array(fields.text({ label: 'Participant' }), {
-          label: 'Participants',
-          itemLabel: props => props.value,
-        }),
+        ...commonFieldsFA,
+        participants: fields.array(fields.text({ label: 'Participant' }), { label: 'Participants', itemLabel: p => p.value }),
+      },
+    }),
+    dialogues_en: collection({
+      slugField: 'slug',
+      label: 'Dialogues (EN)',
+      path: 'src/content/dialogues/en/**',
+      format: { contentField: 'content' },
+      entryLayout: 'content',
+      columns: ['title', 'publishDate', 'draft'],
+      schema: {
+        ...commonFieldsEN,
+        participants: fields.array(fields.text({ label: 'Participant' }), { label: 'Participants', itemLabel: p => p.value }),
       },
     }),
 
-    wiki: collection({
-      label: 'Wiki / دانشنامه',
+    // --- PROPOSALS ---
+    proposals_fa: collection({
       slugField: 'slug',
-      path: 'src/content/wiki/*/*.mdx',
+      label: 'Proposals / طرح‌ها',
+      path: 'src/content/proposals/fa/**',
       format: { contentField: 'content' },
       entryLayout: 'content',
-      columns: ['title', 'lang', 'draft'],
+      columns: ['title', 'publishDate', 'draft'],
+      schema: { ...commonFieldsFA },
+    }),
+    proposals_en: collection({
+      slugField: 'slug',
+      label: 'Proposals (EN)',
+      path: 'src/content/proposals/en/**',
+      format: { contentField: 'content' },
+      entryLayout: 'content',
+      columns: ['title', 'publishDate', 'draft'],
+      schema: { ...commonFieldsEN },
+    }),
+
+    // --- STATEMENTS ---
+    statements_fa: collection({
+      slugField: 'slug',
+      label: 'Statements / بیانیه‌ها',
+      path: 'src/content/statements/fa/**',
+      format: { contentField: 'content' },
+      entryLayout: 'content',
+      columns: ['title', 'publishDate', 'draft'],
       schema: {
-        ...commonFields,
+        ...commonFieldsFA,
+        type: fields.select({ label: 'Type', options: [{ label: 'Statement', value: 'statement' }, { label: 'Press', value: 'press' }, { label: 'Position', value: 'position' }], defaultValue: 'statement' }),
+      },
+    }),
+    statements_en: collection({
+      slugField: 'slug',
+      label: 'Statements (EN)',
+      path: 'src/content/statements/en/**',
+      format: { contentField: 'content' },
+      entryLayout: 'content',
+      columns: ['title', 'publishDate', 'draft'],
+      schema: {
+        ...commonFieldsEN,
+        type: fields.select({ label: 'Type', options: [{ label: 'Statement', value: 'statement' }, { label: 'Press', value: 'press' }, { label: 'Position', value: 'position' }], defaultValue: 'statement' }),
+      },
+    }),
+
+    // --- WIKI ---
+    wiki_fa: collection({
+      slugField: 'slug',
+      label: 'Wiki / دانشنامه',
+      path: 'src/content/wiki/fa/**',
+      format: { contentField: 'content' },
+      entryLayout: 'content',
+      columns: ['title', 'draft'],
+      schema: {
+        ...commonFieldsFA,
+        section: fields.text({ label: 'Section' }),
+        order:   fields.number({ label: 'Order', defaultValue: 0 }),
+      },
+    }),
+    wiki_en: collection({
+      slugField: 'slug',
+      label: 'Wiki (EN)',
+      path: 'src/content/wiki/en/**',
+      format: { contentField: 'content' },
+      entryLayout: 'content',
+      columns: ['title', 'draft'],
+      schema: {
+        ...commonFieldsEN,
         section: fields.text({ label: 'Section' }),
         order:   fields.number({ label: 'Order', defaultValue: 0 }),
       },
