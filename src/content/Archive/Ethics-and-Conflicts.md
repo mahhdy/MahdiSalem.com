@@ -2,10 +2,7 @@
 title: اخلاق و جدال! اخلاق جدال یا جدال اخلاق!
 description: بررسی مجوزهای اخلاقی برای کنش مثبت و حمایتی در راستای رفع ظلم و ستم و تعهدی
 lang: fa
-publishDate: '2025-03-04'
-author: مهدی سالم
-sourceType: markdown
-interface: philosophy-of-ethics
+publishDate: 2025-03-04T00:00:00.000Z
 categories:
   - فلسفه سیاسی
   - اخلاق
@@ -16,24 +13,9 @@ tags:
   - جانبداری
   - اقدام عملی
 draft: true
-hidden: false
+interface: philosophy-of-ethics
 showheader: false
-category: متفرقه
-keywords:
-  - اخلاق
-  - و
-  - جدال!
-  - اخلاق
-  - جدال
-readingTime: 5
-difficulty: متوسط
-coverImage: /images/articles/covers/Ethics-and-Conflicts-cover.png
-showInContents: true
-imageDisplay: full
-cardImage: show
-slug: "Ethics-and-Conflicts"
 ---
-
 ## مقدمه
 
 منظور و دامنه‌ی کنش مورد نظر

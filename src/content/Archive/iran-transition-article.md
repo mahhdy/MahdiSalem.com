@@ -21,6 +21,7 @@ keywords:
   - "نهادها،"
 readingTime: 5
 difficulty: "متوسط"
+interface: iran
 ---
 
 
@@ -314,15 +315,15 @@ graph TD
 
 ### ۹.۲ درخت تصمیم‌گیری
 
-```mermaid align="center"
+```mermaid
 flowchart TD
-    A["شروع"] --> B{"وضعیت؟"}
+    A["شروع"] --> B{وضعیت؟}
     B -->|"موافق"| C["ادامه برنامه"]
-    B -->|"مقاومت"| D{"شدت؟"}
-    D -->|"کم"| E["مذاکره"]
+    B -->|"مقاومت"|"D{شدت؟}
+    D -->"|"کم"| E["مذاکره"]
     D -->|"زیاد"| F["میانجیگری"]
     E --> G["توافق"]
-    F --> H{"موفق؟"}
+    F --> H{موفق؟}
     H -->|"بله"| G
     H -->|"خیر"| I["تغییر برنامه"]
     G --> C
@@ -331,6 +332,7 @@ flowchart TD
     style A fill:#003d6e,stroke:#333,color:white
     style C fill:#51cf66,stroke:#333,color:white
 ```
+
 ---
 
 ## ۱۰. نتیجه‌گیری
