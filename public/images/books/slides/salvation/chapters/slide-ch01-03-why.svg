@@ -16,47 +16,47 @@
 <rect x="560" y="290" width="440" height="140" rx="14" fill="#151d30" stroke="#ffd740" stroke-width="1.3"/>
 <rect x="900" y="308" width="70" height="30" rx="8" fill="#ffd740"/>
 <text x="935" y="329" text-anchor="middle" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="18" font-weight="900" fill="#080c18">۱</text>
-<text x="870" y="335" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="22" font-weight="700" fill="#fff9c4" direction="rtl">ناامیدی مطلق</text>
-<text x="870" y="370" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">وقتی همه‌ی راه‌های داخلی</text>
-<text x="870" y="400" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">بسته به نظر می‌رسند</text>
+<text x="870" y="335" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="22" font-weight="700" fill="#fff9c4" direction="rtl">ناامیدی مطلق</text>
+<text x="870" y="370" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">وقتی همه‌ی راههای داخلی</text>
+<text x="870" y="400" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">بسته به نظر میرسند</text>
 
 <rect x="80" y="290" width="440" height="140" rx="14" fill="#151d30" stroke="#ff80ab" stroke-width="1.3"/>
 <rect x="420" y="308" width="70" height="30" rx="8" fill="#ff80ab"/>
 <text x="455" y="329" text-anchor="middle" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="18" font-weight="900" fill="#080c18">۲</text>
-<text x="390" y="335" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="22" font-weight="700" fill="#f8bbd0" direction="rtl">سوگیری شناختی</text>
-<text x="390" y="370" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">خوش‌بینی غیرواقعی و</text>
-<text x="390" y="400" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">تفکر جادویی</text>
+<text x="390" y="335" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="22" font-weight="700" fill="#f8bbd0" direction="rtl">سوگیری شناختی</text>
+<text x="390" y="370" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">خوش‌بینی غیرواقعی و</text>
+<text x="390" y="400" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">تفکر جادویی</text>
 
 <rect x="560" y="460" width="440" height="140" rx="14" fill="#151d30" stroke="#69f0ae" stroke-width="1.3"/>
 <rect x="900" y="478" width="70" height="30" rx="8" fill="#69f0ae"/>
 <text x="935" y="499" text-anchor="middle" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="18" font-weight="900" fill="#080c18">۳</text>
-<text x="870" y="505" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="22" font-weight="700" fill="#b9f6ca" direction="rtl">تجربه‌ی سرکوب</text>
-<text x="870" y="540" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">دیکتاتوری مطلق هر اقدام</text>
-<text x="870" y="570" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">داخلی را غیرممکن می‌کند</text>
+<text x="870" y="505" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="22" font-weight="700" fill="#b9f6ca" direction="rtl">تجربهی سرکوب</text>
+<text x="870" y="540" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">دیکتاتوری مطلق هر اقدام</text>
+<text x="870" y="570" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">داخلی را غیرممکن میکند</text>
 
 <rect x="80" y="460" width="440" height="140" rx="14" fill="#151d30" stroke="#00e5ff" stroke-width="1.3"/>
 <rect x="420" y="478" width="70" height="30" rx="8" fill="#00e5ff"/>
 <text x="455" y="499" text-anchor="middle" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="18" font-weight="900" fill="#080c18">۴</text>
-<text x="390" y="505" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="22" font-weight="700" fill="#b2ebf2" direction="rtl">حافظه‌ی تاریخی</text>
-<text x="390" y="540" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">روایت «کوروش نجات‌بخش» و</text>
-<text x="390" y="570" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">الگوهای تاریخی مشابه</text>
+<text x="390" y="505" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="22" font-weight="700" fill="#b2ebf2" direction="rtl">حافظهی تاریخی</text>
+<text x="390" y="540" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">روایت «کوروش نجاتبخش» و</text>
+<text x="390" y="570" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">الگوهای تاریخی مشابه</text>
 
 <rect x="560" y="630" width="440" height="140" rx="14" fill="#151d30" stroke="#b388ff" stroke-width="1.3"/>
 <rect x="900" y="648" width="70" height="30" rx="8" fill="#b388ff"/>
 <text x="935" y="669" text-anchor="middle" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="18" font-weight="900" fill="#080c18">۵</text>
-<text x="870" y="675" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="22" font-weight="700" fill="#d1c4e9" direction="rtl">تبلیغات قدرت‌ها</text>
-<text x="870" y="710" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">قدرت‌های بیگانه خود را</text>
-<text x="870" y="740" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">«ناجی» معرفی می‌کنند</text>
+<text x="870" y="675" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="22" font-weight="700" fill="#d1c4e9" direction="rtl">تبلیغات قدرت‌ها</text>
+<text x="870" y="710" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">قدرت‌های بیگانه خود را</text>
+<text x="870" y="740" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">«ناجی» معرفی میکنند</text>
 
 <rect x="80" y="630" width="440" height="140" rx="14" fill="#151d30" stroke="#ea80fc" stroke-width="1.3"/>
 <rect x="420" y="648" width="70" height="30" rx="8" fill="#ea80fc"/>
 <text x="455" y="669" text-anchor="middle" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="18" font-weight="900" fill="#080c18">۶</text>
-<text x="390" y="675" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="22" font-weight="700" fill="#e1bee7" direction="rtl">ضعف جامعه‌ی مدنی</text>
-<text x="390" y="710" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">نبود نهادهای مستقل = نبود</text>
-<text x="390" y="740" text-anchor="end" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">ابزار تغییر از درون</text>
+<text x="390" y="675" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="22" font-weight="700" fill="#e1bee7" direction="rtl">ضعف جامعهی مدنی</text>
+<text x="390" y="710" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">نبود نهادهای مستقل = نبود</text>
+<text x="390" y="740" text-anchor="start" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="15" fill="#546e7a" direction="rtl">ابزار تغییر از درون</text>
 <!-- insight -->
 <rect x="80" y="830" width="920" height="100" rx="14" fill="#0d1520" stroke="#ffd740" stroke-width="1"/>
-<text x="540" y="875" text-anchor="middle" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="22" font-weight="700" fill="#ffd740" direction="rtl">💡 نکته: نجات‌طلبی ریشه در درد واقعی دارد</text>
+<text x="540" y="875" text-anchor="middle" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="22" font-weight="700" fill="#ffd740" direction="rtl">💡 نکته: نجاتطلبی ریشه در درد واقعی دارد</text>
 <text x="540" y="910" text-anchor="middle" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="17" fill="#5c6f88" direction="rtl">اما «درد واقعی» لزوماً به «راه‌حل درست» منجر نمی‌شود</text>
 <!-- bottom -->
 <text x="540" y="1000" text-anchor="middle" font-family="Vazirmatn,IRANSans,Tahoma,sans-serif" font-size="18" fill="#3d5060" direction="rtl">ادامه در اسلاید بعد...</text>

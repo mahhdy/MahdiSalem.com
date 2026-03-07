@@ -20,7 +20,7 @@
 
   <rect class="bg" width="1080" height="1350"/>
 
-  <foreignObject x="80" y="80" width="920" height="110">
+  <foreignObject x="80" y="80" width="920" height="130">
     <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
       <div class="title">نجات‌طلبی در عصر دیجیتال</div>
       <div class="subtitle" style="margin-top:8px;">
@@ -29,8 +29,8 @@
     </div>
   </foreignObject>
 
-  <rect class="card shadow" x="80" y="220" width="920" height="270"/>
-  <foreignObject x="110" y="240" width="860" height="230">
+  <rect class="card shadow" x="80" y="230" width="920" height="270"/>
+  <foreignObject x="110" y="250" width="860" height="230">
     <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl"
          style="display:flex;gap:26px;align-items:flex-start;">
       <div class="icon">📱</div>
@@ -45,8 +45,8 @@
     </div>
   </foreignObject>
 
-  <rect class="card shadow" x="80" y="520" width="920" height="270"/>
-  <foreignObject x="110" y="540" width="860" height="230">
+  <rect class="card shadow" x="80" y="530" width="920" height="270"/>
+  <foreignObject x="110" y="550" width="860" height="230">
     <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl"
          style="display:flex;gap:26px;align-items:flex-start;">
       <div class="icon">💻</div>
@@ -62,8 +62,8 @@
     </div>
   </foreignObject>
 
-  <rect class="card shadow" x="80" y="820" width="920" height="270"/>
-  <foreignObject x="110" y="840" width="860" height="230">
+  <rect class="card shadow" x="80" y="830" width="920" height="270"/>
+  <foreignObject x="110" y="850" width="860" height="230">
     <div xmlns="http://www.w3.org/1999/xhtml" dir="rtl"
          style="display:flex;gap:26px;align-items:flex-start;">
       <div class="icon">🤖</div>
