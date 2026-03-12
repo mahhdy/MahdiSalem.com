@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" font-family="Tahoma, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg9" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#1a1a3e"/>
+    </linearGradient>
+    <linearGradient id="gold9" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0a500"/>
+      <stop offset="100%" stop-color="#ffcc02"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1350" fill="url(#bg9)"/>
+  <rect x="0" y="0" width="1080" height="5" fill="url(#gold9)"/>
+
+  <text x="540" y="60" text-anchor="middle" fill="url(#gold9)" font-size="40" font-weight="bold" direction="rtl">⚖ موجه یا توجیه‌تراشی؟</text>
+  <text x="540" y="95" text-anchor="middle" fill="#8899aa" font-size="24" direction="rtl">ارزیابی ۹ تفاوت ادعایی بین «زور خوب» و «زور بد»</text>
+
+  <!-- Bar chart visualization -->
+  <!-- Legend -->
+  <g transform="translate(540,140)">
+    <rect x="-400" y="0" width="150" height="25" rx="5" fill="#2a9d8f" opacity="0.3"/>
+    <text x="-325" y="18" text-anchor="middle" fill="#2a9d8f" font-size="20" direction="rtl">نیمه‌موجه</text>
+    
+    <rect x="-220" y="0" width="180" height="25" rx="5" fill="#e63946" opacity="0.3"/>
+    <text x="-130" y="18" text-anchor="middle" fill="#e63946" font-size="20" direction="rtl">عمدتاً توجیه‌تراشی</text>
+    
+    <rect x="-10" y="0" width="180" height="25" rx="5" fill="#fca311" opacity="0.3"/>
+    <text x="80" y="18" text-anchor="middle" fill="#fca311" font-size="20" direction="rtl">هر دو وجه حقیقت</text>
+    
+    <rect x="200" y="0" width="180" height="25" rx="5" fill="#457b9d" opacity="0.3"/>
+    <text x="290" y="18" text-anchor="middle" fill="#bed2df" font-size="20" direction="rtl">کاملاً موجه</text>
+  </g>
+
+  <!-- Items -->
+  <!-- 1 -->
+  <g transform="translate(60,210)">
+    <text x="400" y="18" fill="#e8e8e8" font-size="20" direction="rtl">❶ «دموکراسی = مشروعیت زور»</text>
+    <rect x="500" y="2" width="460" height="25" rx="5" fill="#1b2838" stroke="#334"/>
+    <rect x="500" y="2" width="230" height="25" rx="5" fill="#2a9d8f" opacity="0.5"/>
+    <text x="610" y="19" fill="#fff" font-size="16" direction="rtl">نیمه‌موجه</text>
+  </g>
+
+  <!-- 2 -->
+  <g transform="translate(60,260)">
+    <text x="400" y="18" fill="#e8e8e8" font-size="20" direction="rtl">❷ «حفظ نظم، نه الحاق»</text>
+    <rect x="500" y="2" width="460" height="25" rx="5" fill="#1b2838" stroke="#334"/>
+    <rect x="500" y="2" width="380" height="25" rx="5" fill="#e63946" opacity="0.4"/>
+    <text x="680" y="19" fill="#fff" font-size="16" direction="rtl">عمدتاً توجیه‌تراشی</text>
+  </g>
+
+  <!-- 3 -->
+  <g transform="translate(60,310)">
+    <text x="400" y="18" fill="#e8e8e8" font-size="20" direction="rtl">❸ «نیابتی‌های ایران تروریست‌اند»</text>
+    <rect x="500" y="2" width="460" height="25" rx="5" fill="#1b2838" stroke="#334"/>
+    <rect x="500" y="2" width="380" height="25" rx="5" fill="#e63946" opacity="0.4"/>
+    <text x="680" y="19" fill="#fff" font-size="16" direction="rtl">عمدتاً توجیه‌تراشی</text>
+  </g>
+
+  <!-- 4 -->
+  <g transform="translate(60,360)">
+    <text x="400" y="18" fill="#e8e8e8" font-size="20" direction="rtl">❹ «ارزش‌های غربی جهان‌شمول‌اند»</text>
+    <rect x="500" y="2" width="460" height="25" rx="5" fill="#1b2838" stroke="#334"/>
+    <rect x="500" y="2" width="230" height="25" rx="5" fill="#2a9d8f" opacity="0.5"/>
+    <text x="610" y="19" fill="#fff" font-size="16" direction="rtl">نیمه‌موجه</text>
+  </g>
+
+  <!-- 5 -->
+  <g transform="translate(60,410)">
+    <text x="400" y="18" fill="#e8e8e8" font-size="20" direction="rtl">❺ «ناتو دفاعی / روسیه متجاوز»</text>
+    <rect x="500" y="2" width="460" height="25" rx="5" fill="#1b2838" stroke="#334"/>
+    <rect x="500" y="2" width="300" height="25" rx="5" fill="#fca311" opacity="0.4"/>
+    <text x="640" y="19" fill="#fff" font-size="16" direction="rtl">هر دو وجه حقیقت</text>
+  </g>
+
+  <!-- 6 -->
+  <g transform="translate(60,460)">
+    <text x="400" y="18" fill="#e8e8e8" font-size="20" direction="rtl">❻ «تحریم = جایگزین صلح‌آمیز جنگ»</text>
+    <rect x="500" y="2" width="460" height="25" rx="5" fill="#1b2838" stroke="#334"/>
+    <rect x="500" y="2" width="380" height="25" rx="5" fill="#e63946" opacity="0.4"/>
+    <text x="680" y="19" fill="#fff" font-size="16" direction="rtl">عمدتاً توجیه‌تراشی</text>
+  </g>
+
+  <!-- 7 -->
+  <g transform="translate(60,510)">
+    <text x="400" y="18" fill="#e8e8e8" font-size="20" direction="rtl">❼ «استعمار مال گذشته است»</text>
+    <rect x="500" y="2" width="460" height="25" rx="5" fill="#1b2838" stroke="#334"/>
+    <rect x="500" y="2" width="230" height="25" rx="5" fill="#2a9d8f" opacity="0.5"/>
+    <text x="610" y="19" fill="#fff" font-size="16" direction="rtl">نیمه‌موجه</text>
+  </g>
+
+  <!-- 8 -->
+  <g transform="translate(60,560)">
+    <text x="400" y="18" fill="#e8e8e8" font-size="20" direction="rtl">❽ «مدل چین متفاوت: توسعه بدون مداخله»</text>
+    <rect x="500" y="2" width="460" height="25" rx="5" fill="#1b2838" stroke="#334"/>
+    <rect x="500" y="2" width="230" height="25" rx="5" fill="#2a9d8f" opacity="0.5"/>
+    <text x="610" y="19" fill="#fff" font-size="16" direction="rtl">نیمه‌موجه</text>
+  </g>
+
+  <!-- 9 - NEW -->
+  <g transform="translate(60,610)">
+    <text x="400" y="18" fill="#fca311" font-size="20" font-weight="bold" direction="rtl">❾ «زور بر بیگانه ≠ زور بر خودی» ★</text>
+    <rect x="500" y="2" width="460" height="25" rx="5" fill="#1b2838" stroke="#fca311"/>
+    <rect x="500" y="2" width="380" height="25" rx="5" fill="#e63946" opacity="0.5"/>
+    <text x="680" y="19" fill="#fff" font-size="16" direction="rtl">عمدتاً توجیه‌تراشی</text>
+  </g>
+
+  <!-- Summary donut -->
+  <g transform="translate(540,780)">
+    <text x="0" y="-50" text-anchor="middle" fill="url(#gold9)" font-size="24" font-weight="bold" direction="rtl">خلاصه‌ی نتایج</text>
+    
+    <!-- Donut chart (simplified) -->
+    <!-- Background circle -->
+    <circle cx="-180" cy="50" r="80" fill="none" stroke="#1b2838" stroke-width="30"/>
+    <!-- Red segment (3/9 rationalization) ~120deg -->
+    <circle cx="-180" cy="50" r="80" fill="none" stroke="#e63946" stroke-width="30" stroke-dasharray="168 335" stroke-dashoffset="0" opacity="0.7"/>
+    <!-- Green segment (4/9 semi-justified) ~160deg -->
+    <circle cx="-180" cy="50" r="80" fill="none" stroke="#2a9d8f" stroke-width="30" stroke-dasharray="223 280" stroke-dashoffset="-168" opacity="0.7"/>
+    <!-- Yellow segment (1/9 both true) ~40deg -->
+    <circle cx="-180" cy="50" r="80" fill="none" stroke="#fca311" stroke-width="30" stroke-dasharray="56 447" stroke-dashoffset="-391" opacity="0.7"/>
+    <!-- NEW: Additional red for #9 -->
+    <circle cx="-180" cy="50" r="80" fill="none" stroke="#e63946" stroke-width="30" stroke-dasharray="56 447" stroke-dashoffset="-447" opacity="0.7"/>
+    
+    <!-- Center text -->
+    <text x="-180" y="45" text-anchor="middle" fill="#fca311" font-size="30" font-weight="bold">۰</text>
+    <text x="-180" y="70" text-anchor="middle" fill="#aab" font-size="14" direction="rtl">کاملاً موجه</text>
+
+    <!-- Legend -->
+    <g transform="translate(80,-10)">
+      <rect x="40" y="0" width="20" height="20" rx="4" fill="#457b9d" opacity="0.5"/>
+      <text x="30" y="16" fill="#457b9d" font-size="18" font-weight="bold" direction="rtl">۰ مورد کاملاً موجه</text>
+      
+      <rect x="40" y="35" width="20" height="20" rx="4" fill="#2a9d8f" opacity="0.5"/>
+      <text x="30" y="51" fill="#2a9d8f" font-size="18" font-weight="bold" direction="rtl">۴ مورد نیمه‌موجه</text>
+      
+      <rect x="40" y="70" width="20" height="20" rx="4" fill="#e63946" opacity="0.5"/>
+      <text x="30" y="86" fill="#e63946" font-size="18" font-weight="bold" direction="rtl">۴ مورد عمدتاً توجیه‌تراشی</text>
+      
+      <rect x="40" y="105" width="20" height="20" rx="4" fill="#fca311" opacity="0.5"/>
+      <text x="30" y="121" fill="#fca311" font-size="18" font-weight="bold" direction="rtl">۱ مورد هر دو وجه حقیقت</text>
+    </g>
+  </g>
+
+  <!-- Final verdict -->
+  <g transform="translate(540,1000)">
+    <rect x="-440" y="-15" width="880" height="160" rx="15" fill="#fca311" opacity="0.06" stroke="#fca311" stroke-width="2"/>
+    <text x="0" y="20" text-anchor="middle" fill="#fca311" font-size="24" font-weight="bold" direction="rtl">📌 نتیجه‌ی ارزیابی</text>
+    <text x="0" y="60" text-anchor="middle" fill="#e8e8e8" font-size="18" direction="rtl">تفاوت‌های واقعی بین قدرت‌ها وجود دارد و نباید نادیده گرفته شود</text>
+    <text x="0" y="90" text-anchor="middle" fill="#ff6b6b" font-size="20" font-weight="bold" direction="rtl">اما هیچ‌یک نمی‌تواند «معافیت اخلاقی» ایجاد کند</text>
+    <text x="0" y="125" text-anchor="middle" fill="#aab" font-size="17" direction="rtl">تفاوت‌ها حداکثر شدت نقد را تعدیل می‌کنند، نه اینکه حذفش کنند</text>
+  </g>
+
+  <text x="540" y="1260" text-anchor="middle" fill="#fca311" font-size="18" direction="rtl">◀ ادامه</text>
+  <text x="540" y="1290" text-anchor="middle" fill="#556" font-size="14" direction="rtl">۹ از ۱۰</text>
+  <rect x="0" y="1345" width="1080" height="5" fill="url(#gold9)"/>
+</svg>

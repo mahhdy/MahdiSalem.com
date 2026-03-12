@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" font-family="Tahoma, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="50%" stop-color="#1a1a3e"/>
+      <stop offset="100%" stop-color="#0d1b2a"/>
+    </linearGradient>
+    <linearGradient id="gold1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0a500"/>
+      <stop offset="100%" stop-color="#ffcc02"/>
+    </linearGradient>
+    <filter id="gl1">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bigGlow">
+      <feGaussianBlur stdDeviation="20" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1080" height="1350" fill="url(#bg1)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="540" cy="500" r="350" fill="none" stroke="#fca311" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="540" cy="500" r="280" fill="none" stroke="#fca311" stroke-width="0.5" opacity="0.1"/>
+  <circle cx="540" cy="500" r="420" fill="none" stroke="#fca311" stroke-width="0.3" opacity="0.08"/>
+  
+  <!-- Large decorative question mark -->
+  <text x="540" y="380" text-anchor="middle" fill="#fca311" font-size="300" opacity="0.06" filter="url(#bigGlow)">؟</text>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1080" height="5" fill="url(#gold1)"/>
+  
+  <!-- Series badge -->
+  <rect x="340" y="60" width="400" height="45" rx="22" fill="#fca311" opacity="0.15" stroke="#fca311" stroke-width="1"/>
+  <text x="540" y="90" text-anchor="middle" fill="#fca311" font-size="20" direction="rtl">تحلیل انتقادی سیاست بین‌الملل</text>
+
+  <!-- Main title -->
+  <text x="540" y="330" text-anchor="middle" fill="url(#gold1)" font-size="90" font-weight="bold" direction="rtl" filter="url(#gl1)">زور خوب</text>
+  <text x="540" y="440" text-anchor="middle" fill="#e8e8e8" font-size="70" direction="rtl">—</text>
+  <text x="540" y="550" text-anchor="middle" fill="#e63946" font-size="90" font-weight="bold" direction="rtl" filter="url(#gl1)">زور بد</text>
+
+  <!-- Subtitle -->
+  <text x="540" y="710" text-anchor="middle" fill="#8899aa" font-size="28" direction="rtl">آیا زور ذاتاً خوب یا بد است؟</text>
+  <text x="540" y="760" text-anchor="middle" fill="#8899aa" font-size="28" direction="rtl">آیا زور به خودی "بد" و زور به غریبه "خوب" است؟</text>
+  <text x="540" y="810" text-anchor="middle" fill="#8899aa" font-size="28" direction="rtl">آیا صرفا هویتِ زورگو تعیین‌کننده است؟</text>
+  <text x="540" y="860" text-anchor="middle" fill="#8899aa" font-size="28" direction="rtl">آیا منفعت ما صرفا ملاک است؟ زور به نفع ما "خوب" و به ضرر ما "بد"</text>
+
+  <!-- Visual separator -->
+  <line x1="390" y1="920" x2="690" y2="920" stroke="#fca311" stroke-width="2" opacity="0.5"/>
+
+  <!-- Stats preview -->
+  <g transform="translate(540,1000)">
+    <text x="0" y="0" text-anchor="middle" fill="#fdfdfd" font-size="26" direction="rtl">۷۵۰+ پایگاه آمریکایی = «ثبات»</text>
+    <text x="0" y="45" text-anchor="middle" fill="#e72131" font-size="26" direction="rtl">چند متحد منطقه‌ای ایران = «تروریسم»</text>
+    <text x="0" y="90" text-anchor="middle" fill="#a3a3a3" font-size="26" direction="rtl">قرن‌ها استعمار اروپایی = «گذشته»</text>
+  </g>
+
+  <!-- Swipe indicator -->
+  <text x="540" y="1260" text-anchor="middle" fill="#fca311" font-size="18" direction="rtl">◀ برای ادامه بکشید</text>
+  <text x="540" y="1290" text-anchor="middle" fill="#556" font-size="14" direction="rtl">۱ از ۱۰</text>
+
+  <rect x="0" y="1345" width="1080" height="5" fill="url(#gold1)"/>
+</svg>

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" font-family="Tahoma, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#1a1a3e"/>
+    </linearGradient>
+    <linearGradient id="gold5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0a500"/>
+      <stop offset="100%" stop-color="#ffcc02"/>
+    </linearGradient>
+    <linearGradient id="gray5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6c757d"/>
+      <stop offset="100%" stop-color="#495057"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1350" fill="url(#bg5)"/>
+  <rect x="0" y="0" width="1080" height="5" fill="url(#gold5)"/>
+
+  <!-- Header -->
+  <rect x="0" y="20" width="1080" height="80" fill="url(#gray5)" opacity="0.6"/>
+  <text x="540" y="72" text-anchor="middle" fill="#fff" font-size="36" font-weight="bold" direction="rtl">🇪🇺 استعمار اروپایی: تاریخی که «فراموش» شد</text>
+
+  <!-- Map-like visual: Colonies marked -->
+  <g transform="translate(540,220)">
+    <!-- Simplified world shape suggestion -->
+    <ellipse cx="0" cy="0" rx="420" ry="130" fill="none" stroke="#6c757d" stroke-width="1" opacity="0.3" stroke-dasharray="5,5"/>
+    
+    <!-- Colony markers -->
+    <circle cx="-300" cy="-20" r="18" fill="#e63946" opacity="0.4"/>
+    <text x="-300" y="-25" text-anchor="middle" fill="#ff6b6b" font-size="10">آمریکا</text>
+    
+    <circle cx="-100" cy="40" r="18" fill="#e63946" opacity="0.4"/>
+    <text x="-100" y="35" text-anchor="middle" fill="#ff6b6b" font-size="10">آفریقا</text>
+    
+    <circle cx="100" cy="-30" r="18" fill="#e63946" opacity="0.4"/>
+    <text x="100" y="-35" text-anchor="middle" fill="#ff6b6b" font-size="10">خاورمیانه</text>
+    
+    <circle cx="250" cy="10" r="18" fill="#e63946" opacity="0.4"/>
+    <text x="250" y="5" text-anchor="middle" fill="#ff6b6b" font-size="10">هند</text>
+    
+    <circle cx="350" cy="50" r="18" fill="#e63946" opacity="0.4"/>
+    <text x="350" y="45" text-anchor="middle" fill="#ff6b6b" font-size="10">جنوب شرق آسیا</text>
+    
+    <!-- Europe as the source -->
+    <circle cx="-50" cy="-60" r="25" fill="#6c757d" opacity="0.5" stroke="#fca311" stroke-width="2"/>
+    <text x="-50" y="-55" text-anchor="middle" fill="#fca311" font-size="12" font-weight="bold">اروپا</text>
+    
+    <!-- Lines from Europe to colonies -->
+    <line x1="-50" y1="-40" x2="-300" y2="-10" stroke="#6c757d" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.4"/>
+    <line x1="-50" y1="-40" x2="-100" y2="25" stroke="#6c757d" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.4"/>
+    <line x1="-50" y1="-40" x2="100" y2="-15" stroke="#6c757d" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.4"/>
+    <line x1="-50" y1="-40" x2="250" y2="0" stroke="#6c757d" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.4"/>
+    <line x1="-50" y1="-40" x2="350" y2="35" stroke="#6c757d" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.4"/>
+  </g>
+
+  <!-- Country cards -->
+  <!-- Belgium -->
+  <g transform="translate(100,400)">
+    <rect width="420" height="160" rx="12" fill="#1b2838" stroke="#6c757d" stroke-width="1.5"/>
+    <text x="210" y="30" text-anchor="middle" fill="#fca311" font-size="22" font-weight="bold" direction="rtl">🇧🇪 بلژیک — کنگو</text>
+    <line x1="50" y1="45" x2="370" y2="45" stroke="#334" stroke-width="1"/>
+    <text x="210" y="75" text-anchor="middle" fill="#ff6b6b" font-size="42" font-weight="bold">۱۰,۰۰۰,۰۰۰</text>
+    <text x="210" y="100" text-anchor="middle" fill="#aab" font-size="16" direction="rtl">کشته در دوره لئوپولد دوم</text>
+    <text x="210" y="130" text-anchor="middle" fill="#6c757d" font-size="14" direction="rtl">قطع دست بومیان به‌عنوان «مجازات»</text>
+    <text x="210" y="150" text-anchor="middle" fill="#495057" font-size="12" direction="rtl">غرامت: صفر | عذرخواهی: ناقص (۲۰۲۰)</text>
+  </g>
+
+  <!-- Britain -->
+  <g transform="translate(560,400)">
+    <rect width="420" height="160" rx="12" fill="#1b2838" stroke="#6c757d" stroke-width="1.5"/>
+    <text x="210" y="30" text-anchor="middle" fill="#fca311" font-size="22" font-weight="bold" direction="rtl">🇬🇧 انگلیس — هند</text>
+    <line x1="50" y1="45" x2="370" y2="45" stroke="#334" stroke-width="1"/>
+    <text x="210" y="75" text-anchor="middle" fill="#ff6b6b" font-size="36" font-weight="bold">$۴۵ تریلیون</text>
+    <text x="210" y="100" text-anchor="middle" fill="#aab" font-size="16" direction="rtl">برآورد غارت از هند (اوتسا پاتنایک)</text>
+    <text x="210" y="130" text-anchor="middle" fill="#6c757d" font-size="14" direction="rtl">قحطی بنگال ۱۹۴۳: ۲–۳ میلیون کشته</text>
+    <text x="210" y="150" text-anchor="middle" fill="#495057" font-size="12" direction="rtl">غرامت: صفر | عذرخواهی: هرگز</text>
+  </g>
+
+  <!-- France -->
+  <g transform="translate(100,590)">
+    <rect width="420" height="160" rx="12" fill="#1b2838" stroke="#6c757d" stroke-width="1.5"/>
+    <text x="210" y="30" text-anchor="middle" fill="#fca311" font-size="22" font-weight="bold" direction="rtl">🇫🇷 فرانسه — الجزایر و آفریقا</text>
+    <line x1="50" y1="45" x2="370" y2="45" stroke="#334" stroke-width="1"/>
+    <text x="210" y="75" text-anchor="middle" fill="#ff6b6b" font-size="28" font-weight="bold" direction="rtl">۱.۵ میلیون کشته الجزایری</text>
+    <text x="210" y="105" text-anchor="middle" fill="#aab" font-size="15" direction="rtl">شکنجه سیستماتیک + آزمایش هسته‌ای در صحرا</text>
+    <text x="210" y="130" text-anchor="middle" fill="#6c757d" font-size="14" direction="rtl">۴۰+ مداخله نظامی در آفریقا پس از ۱۹۶۰</text>
+    <text x="210" y="150" text-anchor="middle" fill="#495057" font-size="12" direction="rtl">عذرخواهی: «فاجعه» (ماکرون) — نه عذرخواهی رسمی</text>
+  </g>
+
+  <!-- Spain/Portugal -->
+  <g transform="translate(560,590)">
+    <rect width="420" height="160" rx="12" fill="#1b2838" stroke="#6c757d" stroke-width="1.5"/>
+    <text x="210" y="30" text-anchor="middle" fill="#fca311" font-size="22" font-weight="bold" direction="rtl">🇪🇸🇵🇹 اسپانیا و پرتغال</text>
+    <line x1="50" y1="45" x2="370" y2="45" stroke="#334" stroke-width="1"/>
+    <text x="210" y="75" text-anchor="middle" fill="#ff6b6b" font-size="28" font-weight="bold" direction="rtl">۶۰M ← ۶M بومی</text>
+    <text x="210" y="105" text-anchor="middle" fill="#aab" font-size="15" direction="rtl">کاهش ۹۰٪ جمعیت بومی آمریکا (۱۴۹۲–۱۶۰۰)</text>
+    <text x="210" y="130" text-anchor="middle" fill="#6c757d" font-size="14" direction="rtl">کشتار + بیماری + کار اجباری</text>
+    <text x="210" y="150" text-anchor="middle" fill="#495057" font-size="12" direction="rtl">عذرخواهی: مکزیک درخواست کرد — اسپانیا رد کرد</text>
+  </g>
+
+  <!-- Label -->
+  <g transform="translate(540,830)">
+    <rect x="-340" y="-20" width="680" height="50" rx="25" fill="#6c757d" opacity="0.2" stroke="#6c757d" stroke-width="2"/>
+    <text x="0" y="13" text-anchor="middle" fill="#adb5bd" font-size="22" font-weight="bold" direction="rtl">برچسب در گفتمان مسلط: «دوران گذشته» 🕰</text>
+  </g>
+
+  <!-- Key question -->
+  <g transform="translate(540,940)">
+    <rect x="-440" y="-20" width="880" height="200" rx="15" fill="#fca311" opacity="0.06" stroke="#fca311" stroke-width="1"/>
+    <text x="0" y="15" text-anchor="middle" fill="#fca311" font-size="24" font-weight="bold" direction="rtl">❓ پرسش کلیدی</text>
+    <text x="0" y="60" text-anchor="middle" fill="#e8e8e8" font-size="18" direction="rtl">اگر الحاق کریمه توسط روسیه «تجاوز» است (و هست!)</text>
+    <text x="0" y="92" text-anchor="middle" fill="#e8e8e8" font-size="18" direction="rtl">الحاق نیمی از مکزیک توسط آمریکا چه بود؟</text>
+    <text x="0" y="124" text-anchor="middle" fill="#e8e8e8" font-size="18" direction="rtl">قرن‌ها اشغال هند توسط انگلیس چه بود؟</text>
+    <text x="0" y="156" text-anchor="middle" fill="#e8e8e8" font-size="18" direction="rtl">نابودی ۹۰٪ بومیان آمریکا توسط اسپانیا و پرتغال چه بود؟</text>
+  </g>
+
+  <text x="540" y="1260" text-anchor="middle" fill="#fca311" font-size="18" direction="rtl">◀ ادامه</text>
+  <text x="540" y="1290" text-anchor="middle" fill="#556" font-size="14" direction="rtl">۵ از ۱۰</text>
+  <rect x="0" y="1345" width="1080" height="5" fill="url(#gold5)"/>
+</svg>

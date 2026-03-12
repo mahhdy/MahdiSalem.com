@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" font-family="Tahoma, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg8" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#1a1a3e"/>
+    </linearGradient>
+    <linearGradient id="gold8" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0a500"/>
+      <stop offset="100%" stop-color="#ffcc02"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1350" fill="url(#bg8)"/>
+  <rect x="0" y="0" width="1080" height="5" fill="url(#gold8)"/>
+
+  <text x="540" y="60" text-anchor="middle" fill="url(#gold8)" font-size="34" font-weight="bold" direction="rtl">📚 اجماع بین‌پارادایمی</text>
+  <text x="540" y="95" text-anchor="middle" fill="#8899aa" font-size="18" direction="rtl">نقد دوگانه‌ی اخلاقی از چپ تا راست، از آکادمی تا نظامی</text>
+
+  <!-- Scholar cards - Row 1 -->
+  <!-- Chomsky -->
+  <g transform="translate(80,130)">
+    <rect width="290" height="230" rx="15" fill="#1b2838" stroke="#e63946" stroke-width="1.5"/>
+    <circle cx="145" cy="50" r="30" fill="#e63946" opacity="0.2"/>
+    <text x="145" y="42" text-anchor="middle" fill="#e63946" font-size="30">🗣</text>
+    <text x="145" y="95" text-anchor="middle" fill="#fca311" font-size="18" font-weight="bold" direction="rtl">نوام چامسکی</text>
+    <text x="145" y="118" text-anchor="middle" fill="#8899aa" font-size="13" direction="rtl">چپ آزادیخواه | زبان‌شناس</text>
+    <line x1="30" y1="130" x2="260" y2="130" stroke="#334" stroke-width="1"/>
+    <text x="145" y="155" text-anchor="middle" fill="#e8e8e8" font-size="13" direction="rtl">«آمریکا بزرگ‌ترین</text>
+    <text x="145" y="175" text-anchor="middle" fill="#e8e8e8" font-size="13" direction="rtl">دولت یاغی جهان است»</text>
+    <rect x="50" y="195" width="190" height="25" rx="12" fill="#e63946" opacity="0.15"/>
+    <text x="145" y="213" text-anchor="middle" fill="#ff6b6b" font-size="12" direction="rtl">۱۶+ کتاب سیاسی</text>
+  </g>
+
+  <!-- Mearsheimer -->
+  <g transform="translate(395,130)">
+    <rect width="290" height="230" rx="15" fill="#1b2838" stroke="#457b9d" stroke-width="1.5"/>
+    <circle cx="145" cy="50" r="30" fill="#457b9d" opacity="0.2"/>
+    <text x="145" y="42" text-anchor="middle" fill="#457b9d" font-size="30">🎓</text>
+    <text x="145" y="95" text-anchor="middle" fill="#fca311" font-size="18" font-weight="bold" direction="rtl">جان میرشایمر</text>
+    <text x="145" y="118" text-anchor="middle" fill="#8899aa" font-size="13" direction="rtl">واقع‌گرای تهاجمی | شیکاگو</text>
+    <line x1="30" y1="130" x2="260" y2="130" stroke="#334" stroke-width="1"/>
+    <text x="145" y="155" text-anchor="middle" fill="#e8e8e8" font-size="13" direction="rtl">«گسترش ناتو، تحریک روسیه</text>
+    <text x="145" y="175" text-anchor="middle" fill="#e8e8e8" font-size="13" direction="rtl">بود نه ترویج دموکراسی»</text>
+    <rect x="50" y="195" width="190" height="25" rx="12" fill="#457b9d" opacity="0.15"/>
+    <text x="145" y="213" text-anchor="middle" fill="#89CFF0" font-size="12" direction="rtl">واقع‌گرایی | منافع ملی</text>
+  </g>
+
+  <!-- Bacevich -->
+  <g transform="translate(710,130)">
+    <rect width="290" height="230" rx="15" fill="#1b2838" stroke="#2a9d8f" stroke-width="1.5"/>
+    <circle cx="145" cy="50" r="30" fill="#2a9d8f" opacity="0.2"/>
+    <text x="145" y="42" text-anchor="middle" fill="#2a9d8f" font-size="30">🎖</text>
+    <text x="145" y="95" text-anchor="middle" fill="#fca311" font-size="18" font-weight="bold" direction="rtl">اندرو بیسویچ</text>
+    <text x="145" y="118" text-anchor="middle" fill="#8899aa" font-size="13" direction="rtl">محافظه‌کار | سرهنگ بازنشسته</text>
+    <line x1="30" y1="130" x2="260" y2="130" stroke="#334" stroke-width="1"/>
+    <text x="145" y="155" text-anchor="middle" fill="#e8e8e8" font-size="13" direction="rtl">«نظامی‌گری آمریکا هم‌اخلاقاً</text>
+    <text x="145" y="175" text-anchor="middle" fill="#e8e8e8" font-size="13" direction="rtl">و هم استراتژیکاً شکست‌خورده»</text>
+    <rect x="50" y="195" width="190" height="25" rx="12" fill="#2a9d8f" opacity="0.15"/>
+    <text x="145" y="213" text-anchor="middle" fill="#2a9d8f" font-size="12" direction="rtl">نقد از راست محافظه‌کار</text>
+  </g>
+
+  <!-- Row 2 -->
+  <!-- Edward Said -->
+  <g transform="translate(80,395)">
+    <rect width="290" height="230" rx="15" fill="#1b2838" stroke="#9b59b6" stroke-width="1.5"/>
+    <circle cx="145" cy="50" r="30" fill="#9b59b6" opacity="0.2"/>
+    <text x="145" y="42" text-anchor="middle" fill="#9b59b6" font-size="30">📖</text>
+    <text x="145" y="95" text-anchor="middle" fill="#fca311" font-size="18" font-weight="bold" direction="rtl">ادوارد سعید</text>
+    <text x="145" y="118" text-anchor="middle" fill="#8899aa" font-size="13" direction="rtl">پسااستعماری | ادبیات</text>
+    <line x1="30" y1="130" x2="260" y2="130" stroke="#334" stroke-width="1"/>
+    <text x="145" y="155" text-anchor="middle" fill="#e8e8e8" font-size="13" direction="rtl">«غرب شرق را ذاتاً فروتر</text>
+    <text x="145" y="175" text-anchor="middle" fill="#e8e8e8" font-size="13" direction="rtl">بازسازی می‌کند تا سلطه مشروع شود»</text>
+    <rect x="50" y="195" width="190" height="25" rx="12" fill="#9b59b6" opacity="0.15"/>
+    <text x="145" y="213" text-anchor="middle" fill="#9b59b6" font-size="12" direction="rtl">شرق‌شناسی (۱۹۷۸)</text>
+  </g>
+
+  <!-- William Blum -->
+  <g transform="translate(395,395)">
+    <rect width="290" height="230" rx="15" fill="#1b2838" stroke="#e67e22" stroke-width="1.5"/>
+    <circle cx="145" cy="50" r="30" fill="#e67e22" opacity="0.2"/>
+    <text x="145" y="42" text-anchor="middle" fill="#e67e22" font-size="30">📋</text>
+    <text x="145" y="95" text-anchor="middle" fill="#fca311" font-size="18" font-weight="bold" direction="rtl">ویلیام بلوم</text>
+    <text x="145" y="118" text-anchor="middle" fill="#8899aa" font-size="13" direction="rtl">کارمند سابق وزارت خارجه</text>
+    <line x1="30" y1="130" x2="260" y2="130" stroke="#334" stroke-width="1"/>
+    <text x="145" y="155" text-anchor="middle" fill="#e8e8e8" font-size="13" direction="rtl">فهرست مستند ۵۶ مداخله‌ی</text>
+    <text x="145" y="175" text-anchor="middle" fill="#e8e8e8" font-size="13" direction="rtl">آمریکا پس از ۱۹۴۵</text>
+    <rect x="50" y="195" width="190" height="25" rx="12" fill="#e67e22" opacity="0.15"/>
+    <text x="145" y="213" text-anchor="middle" fill="#e67e22" font-size="12" direction="rtl">کشتن امید (۱۹۹۵)</text>
+  </g>
+
+  <!-- Judith Butler -->
+  <g transform="translate(710,395)">
+    <rect width="290" height="230" rx="15" fill="#1b2838" stroke="#e84393" stroke-width="1.5"/>
+    <circle cx="145" cy="50" r="30" fill="#e84393" opacity="0.2"/>
+    <text x="145" y="42" text-anchor="middle" fill="#e84393" font-size="30">💭</text>
+    <text x="145" y="95" text-anchor="middle" fill="#fca311" font-size="18" font-weight="bold" direction="rtl">جودیت باتلر</text>
+    <text x="145" y="118" text-anchor="middle" fill="#8899aa" font-size="13" direction="rtl">فیلسوف | نظریه‌پرداز انتقادی</text>
+    <line x1="30" y1="130" x2="260" y2="130" stroke="#334" stroke-width="1"/>
+    <text x="145" y="155" text-anchor="middle" fill="#e8e8e8" font-size="13" direction="rtl">«کدام زندگی‌ها سوگوار‌بردارند</text>
+    <text x="145" y="175" text-anchor="middle" fill="#e8e8e8" font-size="13" direction="rtl">و کدام فقط آمار هستند؟»</text>
+    <rect x="50" y="195" width="190" height="25" rx="12" fill="#e84393" opacity="0.15"/>
+    <text x="145" y="213" text-anchor="middle" fill="#e84393" font-size="12" direction="rtl">چارچوب‌های جنگ (۲۰۰۹)</text>
+  </g>
+
+  <!-- Key insight -->
+  <g transform="translate(540,680)">
+    <rect x="-450" y="-15" width="900" height="100" rx="15" fill="#fca311" opacity="0.08" stroke="#fca311" stroke-width="1.5"/>
+    <text x="0" y="15" text-anchor="middle" fill="#fca311" font-size="22" font-weight="bold" direction="rtl">🔑 نکته‌ی مهم: اجماع بین‌پارادایمی</text>
+    <text x="0" y="50" text-anchor="middle" fill="#e8e8e8" font-size="17" direction="rtl">چپ‌ها + واقع‌گرایان + محافظه‌کاران + پسااستعماری‌ها + آماردانان</text>
+    <text x="0" y="75" text-anchor="middle" fill="#aab" font-size="16" direction="rtl">همگی از زوایای مختلف به یک نتیجه‌ی مشترک رسیده‌اند</text>
+  </g>
+
+  <!-- Counter-critiques section -->
+  <text x="540" y="830" text-anchor="middle" fill="#e63946" font-size="26" font-weight="bold" direction="rtl">⚡ اما نقد نقد هم هست!</text>
+
+  <!-- Critique cards -->
+  <g transform="translate(80,870)">
+    <rect width="440" height="130" rx="12" fill="#1b2838" stroke="#e63946" stroke-width="1"/>
+    <text x="220" y="30" text-anchor="middle" fill="#ff6b6b" font-size="17" font-weight="bold" direction="rtl">❶ نقد «ضدآمریکایی‌گری»</text>
+    <text x="220" y="58" text-anchor="middle" fill="#aab" font-size="14" direction="rtl">تمرکز نامتناسب بر جرائم آمریکا</text>
+    <text x="220" y="82" text-anchor="middle" fill="#2a9d8f" font-size="13" direction="rtl">پاسخ: وظیفه‌ی اول نقد دولت خود است</text>
+    <rect x="80" y="100" width="280" height="22" rx="11" fill="#fca311" opacity="0.1"/>
+    <text x="220" y="116" text-anchor="middle" fill="#fca311" font-size="12" direction="rtl">ارزیابی: تا حدی وارد، تا حدی نابجا</text>
+  </g>
+
+  <g transform="translate(560,870)">
+    <rect width="440" height="130" rx="12" fill="#1b2838" stroke="#e63946" stroke-width="1"/>
+    <text x="220" y="30" text-anchor="middle" fill="#ff6b6b" font-size="17" font-weight="bold" direction="rtl">❷ نقد «ساده‌سازی»</text>
+    <text x="220" y="58" text-anchor="middle" fill="#aab" font-size="14" direction="rtl">تفاوت کیفی رژیم‌ها نادیده گرفته شده</text>
+    <text x="220" y="82" text-anchor="middle" fill="#2a9d8f" font-size="13" direction="rtl">پاسخ: سازوکار خودتصحیحی عملاً ضعیف بوده</text>
+    <rect x="80" y="100" width="280" height="22" rx="11" fill="#e63946" opacity="0.15"/>
+    <text x="220" y="116" text-anchor="middle" fill="#e63946" font-size="12" direction="rtl">ارزیابی: مهم‌ترین نقد</text>
+  </g>
+
+  <g transform="translate(80,1030)">
+    <rect width="440" height="130" rx="12" fill="#1b2838" stroke="#e63946" stroke-width="1"/>
+    <text x="220" y="30" text-anchor="middle" fill="#ff6b6b" font-size="17" font-weight="bold" direction="rtl">❸ نقد «نسبی‌گرایی اخلاقی»</text>
+    <text x="220" y="58" text-anchor="middle" fill="#aab" font-size="14" direction="rtl">«همه زور می‌زنند» = هیچ‌کس قابل نقد نیست؟</text>
+    <text x="220" y="82" text-anchor="middle" fill="#2a9d8f" font-size="13" direction="rtl">پاسخ: هدف آشکارسازی ناهمسانی است نه توجیه</text>
+    <rect x="80" y="100" width="280" height="22" rx="11" fill="#fca311" opacity="0.1"/>
+    <text x="220" y="116" text-anchor="middle" fill="#fca311" font-size="12" direction="rtl">ارزیابی: هر دو طرف نکته‌ی درستی دارند</text>
+  </g>
+
+  <g transform="translate(560,1030)">
+    <rect width="440" height="130" rx="12" fill="#1b2838" stroke="#e63946" stroke-width="1"/>
+    <text x="220" y="30" text-anchor="middle" fill="#ff6b6b" font-size="17" font-weight="bold" direction="rtl">❹ نقد «مصادره توسط استبداد»</text>
+    <text x="220" y="58" text-anchor="middle" fill="#aab" font-size="14" direction="rtl">ج.ا. از نقد چامسکی برای توجیه سرکوب استفاده می‌کند</text>
+    <text x="220" y="82" text-anchor="middle" fill="#2a9d8f" font-size="13" direction="rtl">پاسخ: سوءاستفاده دلیل سانسور نیست</text>
+    <rect x="80" y="100" width="280" height="22" rx="11" fill="#e63946" opacity="0.15"/>
+    <text x="220" y="116" text-anchor="middle" fill="#e63946" font-size="12" direction="rtl">ارزیابی: بسیار مهم برای بافت ایرانی</text>
+  </g>
+
+  <text x="540" y="1260" text-anchor="middle" fill="#fca311" font-size="18" direction="rtl">◀ ادامه</text>
+  <text x="540" y="1290" text-anchor="middle" fill="#556" font-size="14" direction="rtl">۸ از ۱۰</text>
+  <rect x="0" y="1345" width="1080" height="5" fill="url(#gold8)"/>
+</svg>

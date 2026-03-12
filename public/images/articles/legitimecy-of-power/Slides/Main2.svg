@@ -1,0 +1,541 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1600" font-family="Tahoma, Arial, sans-serif" direction="rtl">
+    <defs>
+    <linearGradient id="mainBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8f6f0"/>
+      <stop offset="30%" stop-color="#f0ebe0"/>
+      <stop offset="100%" stop-color="#e8e0d0"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0f3460"/>
+      <stop offset="50%" stop-color="#16213e"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c9a227"/>
+      <stop offset="50%" stop-color="#e6c84d"/>
+      <stop offset="100%" stop-color="#c9a227"/>
+    </linearGradient>
+    <linearGradient id="sphereGrad" x1="0.2" y1="0.2" x2="0.8" y2="0.8">
+      <stop offset="0%" stop-color="#f5e6c8"/>
+      <stop offset="40%" stop-color="#e6c84d"/>
+      <stop offset="100%" stop-color="#8b6914"/>
+    </linearGradient>
+    <linearGradient id="sphereShadow" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#c9a227" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#3d2e0a" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="goodGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d6a4f"/>
+      <stop offset="100%" stop-color="#1b4332"/>
+    </linearGradient>
+    <linearGradient id="badGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9b2226"/>
+      <stop offset="100%" stop-color="#6a040f"/>
+    </linearGradient>
+    <linearGradient id="selfGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#264653"/>
+      <stop offset="100%" stop-color="#1d3557"/>
+    </linearGradient>
+    <linearGradient id="otherGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6c3d18"/>
+      <stop offset="100%" stop-color="#4a2508"/>
+    </linearGradient>
+    <linearGradient id="tableHead" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f3460"/>
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#e6c84d" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#e6c84d" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="deepShadow">
+      <feDropShadow dx="3" dy="5" stdDeviation="8" flood-color="#1a1a2e" flood-opacity="0.25"/>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="sphereFilter">
+      <feDropShadow dx="4" dy="6" stdDeviation="6" flood-color="#3d2e0a" flood-opacity="0.35"/>
+    </filter>
+
+    <pattern id="dotPattern" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.4" fill="#c9a227" opacity="0.15"/>
+    </pattern>
+  </defs>
+
+  <!-- ============ BACKGROUND ============ -->
+  <rect width="2400" height="1600" fill="url(#mainBg)"/>
+  <rect width="2400" height="1600" fill="url(#dotPattern)"/>
+  <ellipse cx="1550" cy="550" rx="500" ry="400" fill="url(#centerGlow)"/>
+
+  <!-- ============ HEADER ============ -->
+  <rect x="0" y="0" width="2400" height="88" fill="url(#headerGrad)" filter="url(#deepShadow)"/>
+  <rect x="0" y="88" width="2400" height="3" fill="url(#goldAccent)"/>
+
+  <!-- RTL: Title on right -->
+  <text x="2370" y="40" text-anchor="end" fill="#e6c84d" font-size="34" font-weight="bold" direction="rtl">زور خوب — زور بد: دوگانه‌سازی اخلاقی قدرت در سیاست بین‌الملل</text>
+  <text x="2370" y="70" text-anchor="end" fill="#8899aa" font-size="17" direction="rtl">تحلیل انتقادی | آیا ملاکی جهان‌شمول برای داوری درباره‌ی «زور» وجود دارد یا هویت زورگو تعیین‌کننده است؟</text>
+  <text x="30" y="55" text-anchor="start" fill="#556" font-size="12" direction="ltr">MORAL DOUBLE STANDARD — CRITICAL INFOGRAPHIC © 2025</text>
+
+  <!-- ==================================================================== -->
+  <!--  RIGHT COLUMN (PRIMARY — read first in RTL): CENTRAL CONCEPT + QUADRANTS  -->
+  <!-- ==================================================================== -->
+
+  <!-- Central sphere -->
+  <g transform="translate(1550,480)">
+    <!-- Glow rings -->
+    <circle r="175" fill="none" stroke="#c9a227" stroke-width="0.5" opacity="0.2"/>
+    <circle r="190" fill="none" stroke="#c9a227" stroke-width="0.3" opacity="0.12"/>
+
+    <!-- 3D Sphere -->
+    <circle r="125" fill="url(#sphereShadow)" filter="url(#sphereFilter)"/>
+    <circle r="120" fill="url(#sphereGrad)"/>
+    <ellipse cx="-30" cy="-35" rx="45" ry="30" fill="#fff" opacity="0.22"/>
+    <ellipse cx="-20" cy="-25" rx="18" ry="10" fill="#fff" opacity="0.35"/>
+
+    <text x="0" y="-15" text-anchor="middle" fill="#1a1a2e" font-size="54" font-weight="bold" direction="rtl">زور</text>
+    <text x="0" y="22" text-anchor="middle" fill="#3d2e0a" font-size="20" direction="ltr">Force / Coercion</text>
+    <text x="0" y="50" text-anchor="middle" fill="#5a4a1e" font-size="14" direction="rtl">آیا ذاتاً خوب یا بد است؟</text>
+
+    <!-- Connector lines to quadrants -->
+    <line x1="85" y1="-85" x2="230" y2="-210" stroke="#2d6a4f" stroke-width="2" stroke-dasharray="5,4" opacity="0.5"/>
+    <line x1="-85" y1="-85" x2="-230" y2="-210" stroke="#9b2226" stroke-width="2" stroke-dasharray="5,4" opacity="0.5"/>
+    <line x1="85" y1="85" x2="230" y2="180" stroke="#264653" stroke-width="2" stroke-dasharray="5,4" opacity="0.5"/>
+    <line x1="-85" y1="85" x2="-230" y2="180" stroke="#6c3d18" stroke-width="2" stroke-dasharray="5,4" opacity="0.5"/>
+    <line x1="0" y1="125" x2="0" y2="285" stroke="#c9a227" stroke-width="1" stroke-dasharray="3,3" opacity="0.35"/>
+  </g>
+
+  <!-- ===== QUADRANT TOP-RIGHT of sphere: خوب / مشروع ===== -->
+  <!-- In RTL flow, "good" is the natural/first-read side = right -->
+  <g transform="translate(1780,160)" filter="url(#softShadow)">
+    <rect width="360" height="210" rx="14" fill="url(#goodGrad)" opacity="0.95"/>
+    <rect x="2" y="2" width="356" height="206" rx="12" fill="none" stroke="#52b788" stroke-width="1" opacity="0.3"/>
+
+    <text x="330" y="30" text-anchor="end" fill="#b7e4c7" font-size="13" direction="ltr">LEGITIMATE</text>
+    <text x="330" y="58" text-anchor="end" fill="#fff" font-size="28" font-weight="bold" direction="rtl">✓ خوب / مشروع</text>
+    <line x1="20" y1="70" x2="340" y2="70" stroke="#52b788" stroke-width="0.5" opacity="0.4"/>
+
+    <text x="330" y="95" text-anchor="end" fill="#d8f3dc" font-size="13" direction="rtl">● زور «ما» = دفاع و ثبات و دموکراسی</text>
+    <text x="330" y="118" text-anchor="end" fill="#d8f3dc" font-size="13" direction="rtl">● پایگاه نظامی «ما» = تعهد امنیتی</text>
+    <text x="330" y="141" text-anchor="end" fill="#d8f3dc" font-size="13" direction="rtl">● کودتای «ما» = ترویج آزادی</text>
+    <text x="330" y="164" text-anchor="end" fill="#d8f3dc" font-size="13" direction="rtl">● بمب اتم «ما» = بازدارندگی مسئولانه</text>
+    <text x="330" y="195" text-anchor="end" fill="#b7e4c7" font-size="15">🇺🇸 🇬🇧 🇫🇷 🇪🇺</text>
+  </g>
+
+  <!-- ===== QUADRANT TOP-LEFT of sphere: بد / نامشروع ===== -->
+  <g transform="translate(1160,160)" filter="url(#softShadow)">
+    <rect width="360" height="210" rx="14" fill="url(#badGrad)" opacity="0.95"/>
+    <rect x="2" y="2" width="356" height="206" rx="12" fill="none" stroke="#e76f51" stroke-width="1" opacity="0.3"/>
+
+    <text x="330" y="30" text-anchor="end" fill="#f4a6a0" font-size="13" direction="ltr">ILLEGITIMATE</text>
+    <text x="330" y="58" text-anchor="end" fill="#fff" font-size="28" font-weight="bold" direction="rtl">✗ بد / نامشروع</text>
+    <line x1="20" y1="70" x2="340" y2="70" stroke="#e76f51" stroke-width="0.5" opacity="0.4"/>
+
+    <text x="330" y="95" text-anchor="end" fill="#fcd5ce" font-size="13" direction="rtl">● زور «آن‌ها» = تجاوز و تروریسم</text>
+    <text x="330" y="118" text-anchor="end" fill="#fcd5ce" font-size="13" direction="rtl">● متحد منطقه‌ای «آن‌ها» = نیابتی خطرناک</text>
+    <text x="330" y="141" text-anchor="end" fill="#fcd5ce" font-size="13" direction="rtl">● نفوذ «آن‌ها» = صدور انقلاب</text>
+    <text x="330" y="164" text-anchor="end" fill="#fcd5ce" font-size="13" direction="rtl">● برنامه هسته‌ای «آن‌ها» = تهدید وجودی</text>
+    <text x="330" y="195" text-anchor="end" fill="#f4a6a0" font-size="15">🇮🇷 🇷🇺 🇨🇳</text>
+  </g>
+
+  <!-- ===== QUADRANT BOTTOM-RIGHT of sphere: زور بر خودی ===== -->
+  <g transform="translate(1780,580)" filter="url(#softShadow)">
+    <rect width="360" height="185" rx="14" fill="url(#selfGrad)" opacity="0.95"/>
+    <rect x="2" y="2" width="356" height="181" rx="12" fill="none" stroke="#457b9d" stroke-width="1" opacity="0.3"/>
+
+    <text x="330" y="28" text-anchor="end" fill="#a8d0e6" font-size="12" direction="ltr">FORCE ON SELF / CITIZENS</text>
+    <text x="330" y="55" text-anchor="end" fill="#fff" font-size="22" font-weight="bold" direction="rtl">👥 زور بر خودی / شهروند</text>
+    <line x1="20" y1="65" x2="340" y2="65" stroke="#457b9d" stroke-width="0.5" opacity="0.4"/>
+    <text x="330" y="88" text-anchor="end" fill="#a8d0e6" font-size="13" direction="rtl">معیار اصلیِ «شرارت» در گفتمان مسلط</text>
+    <text x="330" y="112" text-anchor="end" fill="#e8e8e8" font-size="12" direction="rtl">ج.ا. معترضان خود را سرکوب می‌کند ← «رژیم شرور»</text>
+    <text x="330" y="136" text-anchor="end" fill="#e8e8e8" font-size="12" direction="rtl">معیار: سخت‌گیرانه 🔍</text>
+    <text x="330" y="165" text-anchor="end" fill="#ff6b6b" font-size="14" font-weight="bold" direction="rtl">← قابل نقد و محکوم — به‌حق ✓</text>
+  </g>
+
+  <!-- ===== QUADRANT BOTTOM-LEFT of sphere: زور بر بیگانه ===== -->
+  <g transform="translate(1160,580)" filter="url(#softShadow)">
+    <rect width="360" height="185" rx="14" fill="url(#otherGrad)" opacity="0.95"/>
+    <rect x="2" y="2" width="356" height="181" rx="12" fill="none" stroke="#c97b3d" stroke-width="1" opacity="0.3"/>
+
+    <text x="330" y="28" text-anchor="end" fill="#e8c89e" font-size="12" direction="ltr">FORCE ON OTHERS / FOREIGNERS</text>
+    <text x="330" y="55" text-anchor="end" fill="#fff" font-size="22" font-weight="bold" direction="rtl">🌍 زور بر بیگانه / دیگری</text>
+    <line x1="20" y1="65" x2="340" y2="65" stroke="#c97b3d" stroke-width="0.5" opacity="0.4"/>
+    <text x="330" y="88" text-anchor="end" fill="#e8c89e" font-size="13" direction="rtl">نادیده‌گرفته‌شده یا «عادی» تلقی‌شده</text>
+    <text x="330" y="112" text-anchor="end" fill="#e8e8e8" font-size="12" direction="rtl">آمریکا: مرگ ۵۰۰K کودک عراقی ← «ارزشش را داشت»</text>
+    <text x="330" y="136" text-anchor="end" fill="#e8e8e8" font-size="12" direction="rtl">معیار: سهل‌گیرانه 🔍</text>
+    <text x="330" y="165" text-anchor="end" fill="#c9a227" font-size="14" font-weight="bold" direction="rtl">← اینجاست که دوگانه آشکار می‌شود! ⚠</text>
+  </g>
+
+  <!-- ===== Arrow labels between sphere and quadrants ===== -->
+  <text x="1870" y="370" text-anchor="end" fill="#2d6a4f" font-size="12" font-weight="bold" direction="rtl" transform="rotate(-30,1870,370)">زور در راستای آرمان من ←</text>
+  <text x="1230" y="370" text-anchor="start" fill="#9b2226" font-size="12" font-weight="bold" direction="rtl" transform="rotate(30,1230,370)">→ زور مقابل آرمان من</text>
+  <text x="1870" y="620" text-anchor="end" fill="#264653" font-size="12" font-weight="bold" direction="rtl" transform="rotate(20,1870,620)">بر شهروندان خود ←</text>
+  <text x="1250" y="620" text-anchor="start" fill="#6c3d18" font-size="12" font-weight="bold" direction="rtl" transform="rotate(-20,1250,620)">→ بر مردمان دیگر</text>
+
+  <!-- ===== PHILOSOPHY BOX (below sphere) ===== -->
+  <g transform="translate(1150,810)" filter="url(#softShadow)">
+    <rect width="990" height="280" rx="14" fill="#1a1a2e" opacity="0.93"/>
+    <rect x="2" y="2" width="986" height="276" rx="12" fill="none" stroke="#c9a227" stroke-width="1" opacity="0.3"/>
+
+    <text x="960" y="32" text-anchor="end" fill="#e6c84d" font-size="20" font-weight="bold" direction="rtl">🤔 پرسش‌های بنیادین: مبانی فلسفی دوگانه</text>
+    <line x1="30" y1="45" x2="960" y2="45" stroke="#c9a227" stroke-width="0.5" opacity="0.25"/>
+
+    <!-- Two columns of questions -->
+    <!-- Right column -->
+    <circle cx="940" cy="72" r="4" fill="#e6c84d" opacity="0.6"/>
+    <text x="928" y="77" text-anchor="end" fill="#e8e8e8" font-size="14" direction="rtl">آیا ملاک مطلق و جهان‌شمولی برای داوری درباره‌ی «زور» وجود دارد؟</text>
+
+    <circle cx="940" cy="102" r="4" fill="#e6c84d" opacity="0.6"/>
+    <text x="928" y="107" text-anchor="end" fill="#e8e8e8" font-size="14" direction="rtl">اگر نسبی است، «مشروعیت» اساساً چه معنایی پیدا می‌کند؟</text>
+
+    <circle cx="940" cy="132" r="4" fill="#ff6b6b" opacity="0.7"/>
+    <text x="928" y="137" text-anchor="end" fill="#ff6b6b" font-size="14" direction="rtl">اگر توافقی و قراردادی باشد، نمی‌توان آن را به افراد خارج از توافق اعمال کرد!</text>
+
+    <circle cx="940" cy="162" r="4" fill="#e6c84d" opacity="0.6"/>
+    <text x="928" y="167" text-anchor="end" fill="#e8e8e8" font-size="14" direction="rtl">برای داوری غیراحساسی → نیاز به سطح و زمینه‌ی عینی و قابل اتکا هست</text>
+
+    <circle cx="940" cy="192" r="4" fill="#ff6b6b" opacity="0.8"/>
+    <text x="928" y="197" text-anchor="end" fill="#ff6b6b" font-size="14" font-weight="bold" direction="rtl">چه کسی «قاعده‌ساز» است؟ چرا قاعده‌اش مشروع و لازم‌الاجراست؟</text>
+
+    <!-- Principle box at bottom -->
+    <rect x="30" y="220" width="930" height="45" rx="10" fill="#c9a227" opacity="0.1" stroke="#c9a227" stroke-width="1"/>
+    <text x="495" y="240" text-anchor="middle" fill="#c9a227" font-size="15" font-weight="bold" direction="rtl">🪞 اصل آینه‌ی برابر: هر حکم اخلاقی تنها وقتی معتبر است که حاکم‌کننده‌اش حاضر باشد همان حکم را بر خود و متحدانش اعمال کند</text>
+    <text x="495" y="258" text-anchor="middle" fill="#8899aa" font-size="11" direction="ltr">Equal Mirror Principle</text>
+  </g>
+
+  <!-- ==================================================================== -->
+  <!--  LEFT COLUMN (SECONDARY): TABLE + SCHOLARS + VERDICT                 -->
+  <!-- ==================================================================== -->
+
+  <!-- ===== COMPARISON TABLE ===== -->
+  <g transform="translate(30,100)" filter="url(#softShadow)">
+    <rect width="1090" height="600" rx="12" fill="#fff" opacity="0.96"/>
+    <rect x="1" y="1" width="1088" height="598" rx="11" fill="none" stroke="#c9a227" stroke-width="0.8" opacity="0.3"/>
+
+    <!-- Table title bar -->
+    <rect x="0" y="0" width="1090" height="42" rx="12" fill="url(#tableHead)"/>
+    <rect x="0" y="30" width="1090" height="12" fill="url(#tableHead)"/>
+    <text x="1060" y="28" text-anchor="end" fill="#e6c84d" font-size="17" font-weight="bold" direction="rtl">📊 ماتریس تطبیقی: رفتار مشابه، برچسب متفاوت</text>
+
+    <!-- RTL Column headers: rightmost = رفتار (first column in RTL) -->
+    <rect x="0" y="42" width="1090" height="32" fill="#e8e0d0"/>
+    <!-- Columns from RIGHT to LEFT: رفتار | ایران | اروپا | چین | روسیه | آمریکا -->
+    <text x="1020" y="63" text-anchor="middle" fill="#1a1a2e" font-size="12" font-weight="bold" direction="rtl">رفتار</text>
+    <text x="870" y="63" text-anchor="middle" fill="#9b2226" font-size="12" font-weight="bold" direction="rtl">🇮🇷 ایران</text>
+    <text x="710" y="63" text-anchor="middle" fill="#6c757d" font-size="12" font-weight="bold" direction="rtl">🇪🇺 اروپا</text>
+    <text x="545" y="63" text-anchor="middle" fill="#9b2226" font-size="12" font-weight="bold" direction="rtl">🇨🇳 چین</text>
+    <text x="380" y="63" text-anchor="middle" fill="#9b2226" font-size="12" font-weight="bold" direction="rtl">🇷🇺 روسیه</text>
+    <text x="200" y="63" text-anchor="middle" fill="#1d3557" font-size="12" font-weight="bold" direction="rtl">🇺🇸 آمریکا</text>
+
+    <!--  Row 1: الحاق ارضی  -->
+    <rect x="0" y="74" width="1090" height="52" fill="#f8f6f0"/>
+    <text x="1020" y="98" text-anchor="middle" fill="#1a1a2e" font-size="12" font-weight="bold" direction="rtl">الحاق ارضی</text>
+
+    <rect x="810" y="84" width="120" height="30" rx="6" fill="#888" opacity="0.08"/>
+    <text x="870" y="104" text-anchor="middle" fill="#777" font-size="10" direction="rtl">✗ بدون الحاق!</text>
+
+    <rect x="650" y="84" width="120" height="30" rx="6" fill="#6c757d" opacity="0.12"/>
+    <text x="710" y="104" text-anchor="middle" fill="#6c757d" font-size="10" direction="rtl">✓ «گذشته»</text>
+
+    <rect x="485" y="84" width="120" height="30" rx="6" fill="#9b2226" opacity="0.12"/>
+    <text x="545" y="104" text-anchor="middle" fill="#9b2226" font-size="10" direction="rtl">✓ «تهدید»</text>
+
+    <rect x="320" y="84" width="120" height="30" rx="6" fill="#9b2226" opacity="0.12"/>
+    <text x="380" y="104" text-anchor="middle" fill="#9b2226" font-size="10" direction="rtl">✓ «تجاوز»</text>
+
+    <rect x="140" y="84" width="120" height="30" rx="6" fill="#2d6a4f" opacity="0.12"/>
+    <text x="200" y="104" text-anchor="middle" fill="#2d6a4f" font-size="10" direction="rtl">✓ «تاریخ»</text>
+
+    <!--  Row 2: پایگاه نظامی  -->
+    <rect x="0" y="126" width="1090" height="52" fill="#fff"/>
+    <text x="1020" y="150" text-anchor="middle" fill="#1a1a2e" font-size="12" font-weight="bold" direction="rtl">پایگاه نظامی</text>
+
+    <rect x="810" y="136" width="120" height="30" rx="6" fill="#9b2226" opacity="0.12"/>
+    <text x="870" y="150" text-anchor="middle" fill="#9b2226" font-size="9" direction="rtl">✗ اما «نفوذ</text>
+    <text x="870" y="162" text-anchor="middle" fill="#9b2226" font-size="9" direction="rtl">بی‌ثبات‌کننده»!</text>
+
+    <rect x="650" y="136" width="120" height="30" rx="6" fill="#2d6a4f" opacity="0.08"/>
+    <text x="710" y="156" text-anchor="middle" fill="#2d6a4f" font-size="10" direction="rtl">✓ «تعهد»</text>
+
+    <rect x="485" y="136" width="120" height="30" rx="6" fill="#9b2226" opacity="0.12"/>
+    <text x="545" y="156" text-anchor="middle" fill="#9b2226" font-size="10" direction="rtl">✓ «نظامی‌سازی»</text>
+
+    <rect x="320" y="136" width="120" height="30" rx="6" fill="#9b2226" opacity="0.12"/>
+    <text x="380" y="156" text-anchor="middle" fill="#9b2226" font-size="10" direction="rtl">✓ «تهاجمی»</text>
+
+    <rect x="140" y="136" width="120" height="30" rx="6" fill="#2d6a4f" opacity="0.12"/>
+    <text x="200" y="156" text-anchor="middle" fill="#2d6a4f" font-size="10" direction="rtl">۷۵۰+ «ثبات»</text>
+
+    <!-- Row 3: نیروی نیابتی -->
+    <rect x="0" y="178" width="1090" height="52" fill="#f8f6f0"/>
+    <text x="1020" y="202" text-anchor="middle" fill="#1a1a2e" font-size="12" font-weight="bold" direction="rtl">نیروی نیابتی</text>
+
+    <rect x="810" y="188" width="120" height="30" rx="6" fill="#9b2226" opacity="0.18"/>
+    <text x="870" y="208" text-anchor="middle" fill="#9b2226" font-size="10" font-weight="bold" direction="rtl">✓ «تروریسم»!</text>
+
+    <rect x="650" y="188" width="120" height="30" rx="6" fill="#6c757d" opacity="0.08"/>
+    <text x="710" y="208" text-anchor="middle" fill="#6c757d" font-size="10" direction="rtl">✓ «مدیریت»</text>
+
+    <rect x="485" y="188" width="120" height="30" rx="6" fill="#888" opacity="0.06"/>
+    <text x="545" y="208" text-anchor="middle" fill="#888" font-size="10">—</text>
+
+    <rect x="320" y="188" width="120" height="30" rx="6" fill="#9b2226" opacity="0.12"/>
+    <text x="380" y="208" text-anchor="middle" fill="#9b2226" font-size="10" direction="rtl">✓ «هیبریدی»</text>
+
+    <rect x="140" y="188" width="120" height="30" rx="6" fill="#2d6a4f" opacity="0.12"/>
+    <text x="200" y="208" text-anchor="middle" fill="#2d6a4f" font-size="10" direction="rtl">✓ «شرکا»</text>
+
+    <!-- Row 4: تغییر رژیم -->
+    <rect x="0" y="230" width="1090" height="52" fill="#fff"/>
+    <text x="1020" y="254" text-anchor="middle" fill="#1a1a2e" font-size="12" font-weight="bold" direction="rtl">تغییر رژیم</text>
+
+    <rect x="810" y="240" width="120" height="30" rx="6" fill="#9b2226" opacity="0.15"/>
+    <text x="870" y="260" text-anchor="middle" fill="#9b2226" font-size="9" direction="rtl">✓ «صدور انقلاب»</text>
+
+    <rect x="650" y="240" width="120" height="30" rx="6" fill="#6c757d" opacity="0.08"/>
+    <text x="710" y="260" text-anchor="middle" fill="#6c757d" font-size="10" direction="rtl">✓ «تاریخی»</text>
+
+    <rect x="485" y="240" width="120" height="30" rx="6" fill="#888" opacity="0.06"/>
+    <text x="545" y="260" text-anchor="middle" fill="#888" font-size="10">—</text>
+
+    <rect x="320" y="240" width="120" height="30" rx="6" fill="#9b2226" opacity="0.12"/>
+    <text x="380" y="260" text-anchor="middle" fill="#9b2226" font-size="10" direction="rtl">✓ «بی‌ثباتی»</text>
+
+    <rect x="140" y="240" width="120" height="30" rx="6" fill="#2d6a4f" opacity="0.12"/>
+    <text x="200" y="260" text-anchor="middle" fill="#2d6a4f" font-size="10" direction="rtl">۵۰+ «دموکراسی»</text>
+
+    <!-- Row 5: سلاح هسته‌ای -->
+    <rect x="0" y="282" width="1090" height="52" fill="#f8f6f0"/>
+    <text x="1020" y="306" text-anchor="middle" fill="#1a1a2e" font-size="12" font-weight="bold" direction="rtl">هسته‌ای</text>
+
+    <rect x="810" y="292" width="120" height="30" rx="6" fill="#9b2226" opacity="0.18"/>
+    <text x="870" y="304" text-anchor="middle" fill="#9b2226" font-size="9" direction="rtl">✗ ندارد اما</text>
+    <text x="870" y="316" text-anchor="middle" fill="#9b2226" font-size="9" font-weight="bold" direction="rtl">«تهدید وجودی»!</text>
+
+    <rect x="650" y="292" width="120" height="30" rx="6" fill="#2d6a4f" opacity="0.08"/>
+    <text x="710" y="312" text-anchor="middle" fill="#2d6a4f" font-size="10" direction="rtl">✓ «بازدارندگی»</text>
+
+    <rect x="485" y="292" width="120" height="30" rx="6" fill="#9b2226" opacity="0.12"/>
+    <text x="545" y="312" text-anchor="middle" fill="#9b2226" font-size="10" direction="rtl">✓ «تهدید»</text>
+
+    <rect x="320" y="292" width="120" height="30" rx="6" fill="#9b2226" opacity="0.12"/>
+    <text x="380" y="312" text-anchor="middle" fill="#9b2226" font-size="10" direction="rtl">✓ «باج‌گیری»</text>
+
+    <rect x="140" y="292" width="120" height="30" rx="6" fill="#2d6a4f" opacity="0.12"/>
+    <text x="200" y="304" text-anchor="middle" fill="#2d6a4f" font-size="9" direction="rtl">تنها استفاده‌کننده!</text>
+    <text x="200" y="316" text-anchor="middle" fill="#2d6a4f" font-size="9" direction="rtl">«بازدارندگی»</text>
+
+    <!-- Row 6: حقوق بشر / شکنجه -->
+    <rect x="0" y="334" width="1090" height="52" fill="#fff"/>
+    <text x="1020" y="358" text-anchor="middle" fill="#1a1a2e" font-size="12" font-weight="bold" direction="rtl">حقوق بشر</text>
+
+    <rect x="810" y="344" width="120" height="30" rx="6" fill="#9b2226" opacity="0.18"/>
+    <text x="870" y="364" text-anchor="middle" fill="#9b2226" font-size="10" font-weight="bold" direction="rtl">✓ «فاحش»</text>
+
+    <rect x="650" y="344" width="120" height="30" rx="6" fill="#6c757d" opacity="0.08"/>
+    <text x="710" y="364" text-anchor="middle" fill="#6c757d" font-size="10" direction="rtl">✓ «چالش»</text>
+
+    <rect x="485" y="344" width="120" height="30" rx="6" fill="#9b2226" opacity="0.12"/>
+    <text x="545" y="364" text-anchor="middle" fill="#9b2226" font-size="10" direction="rtl">✓ «نسل‌کشی»</text>
+
+    <rect x="320" y="344" width="120" height="30" rx="6" fill="#9b2226" opacity="0.12"/>
+    <text x="380" y="364" text-anchor="middle" fill="#9b2226" font-size="10" direction="rtl">✓ «سیستماتیک»</text>
+
+    <rect x="140" y="344" width="120" height="30" rx="6" fill="#2d6a4f" opacity="0.12"/>
+    <text x="200" y="364" text-anchor="middle" fill="#2d6a4f" font-size="10" direction="rtl">✓ «استثنایی»</text>
+
+    <!-- Pattern insight bar -->
+    <rect x="10" y="398" width="1070" height="48" rx="8" fill="#c9a227" opacity="0.06" stroke="#c9a227" stroke-width="1"/>
+    <text x="545" y="418" text-anchor="middle" fill="#8b6914" font-size="13" font-weight="bold" direction="rtl">🔎 الگو: رنگ برچسب تابع «هویت بازیگر» است نه «نوع رفتار» — و این تعریف دوگانه‌ی اخلاقی است</text>
+    <text x="545" y="438" text-anchor="middle" fill="#8b6914" font-size="11" direction="rtl">🟢 سبز = مشروع | 🔴 قرمز = نامشروع | ⚪ خاکستری = فراموش‌شده | 🇮🇷 ایران: حتی بدون رفتار مشابه، باز قرمز!</text>
+
+    <!-- Stats row -->
+    <rect x="0" y="450" width="1090" height="148" rx="0" fill="#1a1a2e" opacity="0.04"/>
+    <text x="1060" y="475" text-anchor="end" fill="#1a1a2e" font-size="14" font-weight="bold" direction="rtl">آمار کلیدی:</text>
+
+    <g transform="translate(920,510)">
+      <circle r="30" fill="#1d3557" opacity="0.08"/>
+      <text x="0" y="-3" text-anchor="middle" fill="#1d3557" font-size="22" font-weight="bold">+۷۵۰</text>
+      <text x="0" y="17" text-anchor="middle" fill="#1d3557" font-size="9" direction="rtl">پایگاه آمریکایی</text>
+    </g>
+    <g transform="translate(760,510)">
+      <circle r="30" fill="#1d3557" opacity="0.08"/>
+      <text x="0" y="-3" text-anchor="middle" fill="#1d3557" font-size="22" font-weight="bold">۸۱</text>
+      <text x="0" y="17" text-anchor="middle" fill="#1d3557" font-size="9" direction="rtl">دخالت در انتخابات</text>
+    </g>
+    <g transform="translate(590,510)">
+      <circle r="30" fill="#9b2226" opacity="0.08"/>
+      <text x="0" y="-3" text-anchor="middle" fill="#9b2226" font-size="20" font-weight="bold">۵۰۰K</text>
+      <text x="0" y="17" text-anchor="middle" fill="#9b2226" font-size="9" direction="rtl">کودک عراقی (تحریم)</text>
+    </g>
+    <g transform="translate(420,510)">
+      <circle r="30" fill="#6c3d18" opacity="0.08"/>
+      <text x="0" y="-3" text-anchor="middle" fill="#6c3d18" font-size="18" font-weight="bold">$۴۵T</text>
+      <text x="0" y="17" text-anchor="middle" fill="#6c3d18" font-size="9" direction="rtl">غارت انگلیس از هند</text>
+    </g>
+    <g transform="translate(260,510)">
+      <circle r="30" fill="#1a1a2e" opacity="0.08"/>
+      <text x="0" y="-3" text-anchor="middle" fill="#1a1a2e" font-size="20" font-weight="bold">$۸T</text>
+      <text x="0" y="17" text-anchor="middle" fill="#1a1a2e" font-size="9" direction="rtl">هزینه جنگ پس از 9/11</text>
+    </g>
+    <g transform="translate(110,510)">
+      <circle r="30" fill="#9b2226" opacity="0.08"/>
+      <text x="0" y="-3" text-anchor="middle" fill="#9b2226" font-size="20" font-weight="bold">۱۰M</text>
+      <text x="0" y="17" text-anchor="middle" fill="#9b2226" font-size="9" direction="rtl">کشته کنگو (بلژیک)</text>
+    </g>
+
+    <!-- Comparison bar -->
+    <text x="1060" y="565" text-anchor="end" fill="#1a1a2e" font-size="11" direction="rtl">دخالت در انتخابات خارجی (۱۹۴۶–۲۰۰۰):</text>
+    <rect x="40" y="572" width="700" height="9" rx="4" fill="#e8e0d0"/>
+    <rect x="40" y="572" width="490" height="9" rx="4" fill="#1d3557" opacity="0.6"/>
+    <rect x="530" y="572" width="210" height="9" rx="4" fill="#9b2226" opacity="0.6"/>
+    <text x="280" y="596" text-anchor="middle" fill="#1d3557" font-size="10" direction="rtl">آمریکا ۸۱ مورد</text>
+    <text x="630" y="596" text-anchor="middle" fill="#9b2226" font-size="10" direction="rtl">روسیه ۳۶ مورد</text>
+  </g>
+
+  <!-- ===== SCHOLARS PANEL (bottom-right in RTL = right side) ===== -->
+  <g transform="translate(1150,1120)" filter="url(#softShadow)">
+    <rect width="620" height="250" rx="12" fill="#fff" opacity="0.94"/>
+    <rect x="1" y="1" width="618" height="248" rx="11" fill="none" stroke="#c9a227" stroke-width="0.5" opacity="0.3"/>
+
+    <text x="590" y="27" text-anchor="end" fill="#1a1a2e" font-size="16" font-weight="bold" direction="rtl">📚 صاحب‌نظران: اجماع بین‌پارادایمی</text>
+    <line x1="20" y1="38" x2="600" y2="38" stroke="#c9a227" stroke-width="0.5" opacity="0.2"/>
+
+    <!-- Scholar chips — 2 rows, RTL order -->
+    <rect x="420" y="48" width="185" height="42" rx="7" fill="#9b2226" opacity="0.06"/>
+    <text x="510" y="65" text-anchor="middle" fill="#9b2226" font-size="11" font-weight="bold" direction="rtl">🗣 نوام چامسکی</text>
+    <text x="510" y="82" text-anchor="middle" fill="#9b2226" font-size="9" direction="rtl">چپ انتقادی</text>
+
+    <rect x="220" y="48" width="190" height="42" rx="7" fill="#1d3557" opacity="0.06"/>
+    <text x="315" y="65" text-anchor="middle" fill="#1d3557" font-size="11" font-weight="bold" direction="rtl">🎓 جان میرشایمر</text>
+    <text x="315" y="82" text-anchor="middle" fill="#1d3557" font-size="9" direction="rtl">واقع‌گرای تهاجمی</text>
+
+    <rect x="15" y="48" width="195" height="42" rx="7" fill="#2d6a4f" opacity="0.06"/>
+    <text x="112" y="65" text-anchor="middle" fill="#2d6a4f" font-size="11" font-weight="bold" direction="rtl">🎖 اندرو بیسویچ</text>
+    <text x="112" y="82" text-anchor="middle" fill="#2d6a4f" font-size="9" direction="rtl">محافظه‌کار (سرهنگ بازنشسته)</text>
+
+    <rect x="420" y="98" width="185" height="42" rx="7" fill="#6c3d18" opacity="0.06"/>
+    <text x="510" y="115" text-anchor="middle" fill="#6c3d18" font-size="11" font-weight="bold" direction="rtl">📖 ادوارد سعید</text>
+    <text x="510" y="132" text-anchor="middle" fill="#6c3d18" font-size="9" direction="rtl">پسااستعماری</text>
+
+    <rect x="220" y="98" width="190" height="42" rx="7" fill="#6a040f" opacity="0.06"/>
+    <text x="315" y="115" text-anchor="middle" fill="#6a040f" font-size="11" font-weight="bold" direction="rtl">📋 ویلیام بلوم</text>
+    <text x="315" y="132" text-anchor="middle" fill="#6a040f" font-size="9" direction="rtl">کارمند سابق وزارت خارجه</text>
+
+    <rect x="15" y="98" width="195" height="42" rx="7" fill="#264653" opacity="0.06"/>
+    <text x="112" y="115" text-anchor="middle" fill="#264653" font-size="11" font-weight="bold" direction="rtl">💭 جودیت باتلر</text>
+    <text x="112" y="132" text-anchor="middle" fill="#264653" font-size="9" direction="rtl">فیلسوف انتقادی</text>
+
+    <!-- Quote -->
+    <rect x="15" y="150" width="590" height="85" rx="8" fill="#1a1a2e" opacity="0.03"/>
+    <text x="590" y="172" text-anchor="end" fill="#1a1a2e" font-size="12" font-style="italic" direction="rtl">«ایالات متحده دقیقاً همان اعمالی را که در دیگران محکوم می‌کند</text>
+    <text x="590" y="192" text-anchor="end" fill="#1a1a2e" font-size="12" font-style="italic" direction="rtl">خود در مقیاسی بسیار بزرگ‌تر انجام می‌دهد» — چامسکی</text>
+    <text x="590" y="218" text-anchor="end" fill="#2d6a4f" font-size="11" font-weight="bold" direction="rtl">نکته: از چپ تا راست، از آکادمی تا ارتش، همه به یک نتیجه رسیده‌اند</text>
+    <text x="590" y="238" text-anchor="end" fill="#9b2226" font-size="11" direction="rtl">⚠ اما: مصادره توسط استبداد + ساده‌سازی + نسبی‌گرایی → نقد نقد هم لازم است</text>
+  </g>
+
+  <!-- ===== VERDICT PANEL (bottom-left area) ===== -->
+  <g transform="translate(30,720)" filter="url(#softShadow)">
+    <rect width="1090" height="645" rx="12" fill="#1a1a2e" opacity="0.95"/>
+    <rect x="2" y="2" width="1086" height="641" rx="10" fill="none" stroke="#c9a227" stroke-width="0.8" opacity="0.3"/>
+
+    <!-- Title -->
+    <text x="1060" y="32" text-anchor="end" fill="#e6c84d" font-size="18" font-weight="bold" direction="rtl">📌 ارزیابی نهایی: ۹ تفاوت ادعایی — موجه یا توجیه‌تراشی؟</text>
+    <line x1="30" y1="45" x2="1060" y2="45" stroke="#c9a227" stroke-width="0.5" opacity="0.2"/>
+
+    <!-- Result bars — RTL: labels on right, bars extend leftward -->
+    <text x="1050" y="73" text-anchor="end" fill="#6c757d" font-size="12" direction="rtl">کاملاً موجه</text>
+    <rect x="150" y="60" width="700" height="18" rx="4" fill="#333" opacity="0.3"/>
+    <rect x="150" y="60" width="0" height="18" rx="4" fill="#2d6a4f" opacity="0.7"/>
+    <text x="160" y="74" fill="#aaa" font-size="11" font-weight="bold">۰</text>
+
+    <text x="1050" y="103" text-anchor="end" fill="#2d6a4f" font-size="12" direction="rtl">نیمه‌موجه</text>
+    <rect x="150" y="90" width="700" height="18" rx="4" fill="#333" opacity="0.3"/>
+    <rect x="150" y="90" width="311" height="18" rx="4" fill="#2d6a4f" opacity="0.6"/>
+    <text x="160" y="104" fill="#fff" font-size="11" font-weight="bold">۴</text>
+
+    <text x="1050" y="133" text-anchor="end" fill="#ff6b6b" font-size="12" direction="rtl">عمدتاً توجیه‌تراشی</text>
+    <rect x="150" y="120" width="700" height="18" rx="4" fill="#333" opacity="0.3"/>
+    <rect x="150" y="120" width="311" height="18" rx="4" fill="#9b2226" opacity="0.6"/>
+    <text x="160" y="134" fill="#fff" font-size="11" font-weight="bold">۴</text>
+
+    <text x="1050" y="163" text-anchor="end" fill="#c9a227" font-size="12" direction="rtl">هر دو وجه حقیقت</text>
+    <rect x="150" y="150" width="700" height="18" rx="4" fill="#333" opacity="0.3"/>
+    <rect x="150" y="150" width="78" height="18" rx="4" fill="#c9a227" opacity="0.6"/>
+    <text x="160" y="164" fill="#fff" font-size="11" font-weight="bold">۱</text>
+
+    <!-- Divider -->
+    <line x1="30" y1="185" x2="1060" y2="185" stroke="#c9a227" stroke-width="0.5" opacity="0.2"/>
+
+    <!-- The 9 items listed -->
+    <text x="1050" y="210" text-anchor="end" fill="#e6c84d" font-size="14" font-weight="bold" direction="rtl">فهرست تفاوت‌های ادعایی و حکم ارزیابی:</text>
+
+    <text x="1050" y="238" text-anchor="end" fill="#2d6a4f" font-size="12" direction="rtl">۱. «دموکراسی = مشروعیت زور» ← نیمه‌موجه 🟡</text>
+    <text x="1050" y="260" text-anchor="end" fill="#ff6b6b" font-size="12" direction="rtl">۲. «حفظ نظم جهانی، نه الحاق» ← عمدتاً توجیه‌تراشی 🔴</text>
+    <text x="1050" y="282" text-anchor="end" fill="#ff6b6b" font-size="12" direction="rtl">۳. «نیابتی‌های ایران تروریست‌اند» ← عمدتاً توجیه‌تراشی 🔴</text>
+    <text x="1050" y="304" text-anchor="end" fill="#2d6a4f" font-size="12" direction="rtl">۴. «ارزش‌های غربی جهان‌شمول‌اند» ← نیمه‌موجه 🟡</text>
+    <text x="1050" y="326" text-anchor="end" fill="#c9a227" font-size="12" direction="rtl">۵. «ناتو دفاعی / روسیه متجاوز» ← هر دو وجه حقیقت دارد 🟠</text>
+    <text x="1050" y="348" text-anchor="end" fill="#ff6b6b" font-size="12" direction="rtl">۶. «تحریم = جایگزین صلح‌آمیز جنگ» ← عمدتاً توجیه‌تراشی 🔴</text>
+    <text x="1050" y="370" text-anchor="end" fill="#2d6a4f" font-size="12" direction="rtl">۷. «استعمار مال گذشته است» ← نیمه‌موجه 🟡</text>
+    <text x="1050" y="392" text-anchor="end" fill="#2d6a4f" font-size="12" direction="rtl">۸. «مدل چین: توسعه بدون مداخله» ← نیمه‌موجه 🟡</text>
+    <text x="1050" y="414" text-anchor="end" fill="#ff6b6b" font-size="12" font-weight="bold" direction="rtl">۹. «زور بر بیگانه ≠ زور بر خودی» ← عمدتاً توجیه‌تراشی 🔴 ★ جدید</text>
+
+    <!-- Divider -->
+    <line x1="30" y1="435" x2="1060" y2="435" stroke="#c9a227" stroke-width="0.5" opacity="0.2"/>
+
+    <!-- Conclusions -->
+    <text x="1050" y="462" text-anchor="end" fill="#e6c84d" font-size="16" font-weight="bold" direction="rtl">🔑 نتیجه‌گیری نهایی</text>
+
+    <circle cx="1040" cy="490" r="4" fill="#e6c84d" opacity="0.7"/>
+    <text x="1030" y="495" text-anchor="end" fill="#e8e8e8" font-size="13" direction="rtl">زور ذاتاً خوب یا بد نیست — بستر، شیوه، تناسب و پاسخ‌گویی تعیین‌کننده‌اند، نه هویت زورگو</text>
+
+    <circle cx="1040" cy="518" r="4" fill="#ff6b6b" opacity="0.7"/>
+    <text x="1030" y="523" text-anchor="end" fill="#ff6b6b" font-size="13" direction="rtl">دوگانه‌ی اخلاقی واقعی و مستند است: هویت بازیگر — نه رفتار — ملاک داوری غالب شده</text>
+
+    <circle cx="1040" cy="546" r="4" fill="#89CFF0" opacity="0.7"/>
+    <text x="1030" y="551" text-anchor="end" fill="#a8d0e6" font-size="13" direction="rtl">تفاوت‌های کیفی رژیم‌ها واقعی‌اند اما نمی‌توانند «معافیت اخلاقی» ایجاد کنند</text>
+
+    <circle cx="1040" cy="574" r="4" fill="#b7e4c7" opacity="0.7"/>
+    <text x="1030" y="579" text-anchor="end" fill="#b7e4c7" font-size="13" direction="rtl">نقد باید همه‌جانبه باشد: هم غرب، هم استبداد داخلی — سکوت در مقابل هیچ‌کدام مجاز نیست</text>
+
+    <circle cx="1040" cy="602" r="4" fill="#c9a227" opacity="0.8"/>
+    <text x="1030" y="607" text-anchor="end" fill="#c9a227" font-size="13" font-weight="bold" direction="rtl">مرز شهروندی ≠ مرز اخلاقی: ارزش جان انسان نباید تابع پاسپورت او باشد</text>
+
+    <!-- Mirror Principle final bar -->
+    <rect x="30" y="622" width="1030" height="20" rx="5" fill="#c9a227" opacity="0.12" stroke="#c9a227" stroke-width="0.8"/>
+    <text x="545" y="637" text-anchor="middle" fill="#c9a227" font-size="11" font-weight="bold" direction="rtl">🪞 اصل آینه‌ی برابر: هر حکم اخلاقی تنها زمانی معتبر است که حاکمش حاضر باشد همان حکم را بر خود و متحدانش اعمال کند</text>
+  </g>
+
+  <!-- ===== BOTTOM-RIGHT CORNER: Test Yourself ===== -->
+  <g transform="translate(1800,1120)" filter="url(#softShadow)">
+    <rect width="570" height="250" rx="12" fill="#fff" opacity="0.94"/>
+    <rect x="1" y="1" width="568" height="248" rx="11" fill="none" stroke="#9b2226" stroke-width="0.8" opacity="0.3"/>
+
+    <text x="540" y="28" text-anchor="end" fill="#9b2226" font-size="16" font-weight="bold" direction="rtl">🧪 آزمون فکری: آینه‌ی معکوس</text>
+    <line x1="20" y1="40" x2="550" y2="40" stroke="#9b2226" stroke-width="0.5" opacity="0.2"/>
+
+    <!-- Test 1 -->
+    <rect x="15" y="50" width="540" height="80" rx="8" fill="#9b2226" opacity="0.04"/>
+    <text x="540" y="72" text-anchor="end" fill="#1a1a2e" font-size="13" font-weight="bold" direction="rtl">آزمون ۱:</text>
+    <text x="540" y="92" text-anchor="end" fill="#1a1a2e" font-size="12" direction="rtl">فرض کنید آمریکا با شهروندان خودش همان رفتاری را می‌کرد</text>
+    <text x="540" y="112" text-anchor="end" fill="#1a1a2e" font-size="12" direction="rtl">که با مردم عراق کرد — آیا هنوز «رهبر جهان آزاد» بود؟</text>
+    <text x="540" y="126" text-anchor="end" fill="#9b2226" font-size="11" font-weight="bold" direction="rtl">← قطعاً نه. پس چرا وقتی قربانی عراقی است، فرق دارد؟</text>
+
+    <!-- Test 2 -->
+    <rect x="15" y="140" width="540" height="80" rx="8" fill="#2d6a4f" opacity="0.04"/>
+    <text x="540" y="162" text-anchor="end" fill="#1a1a2e" font-size="13" font-weight="bold" direction="rtl">آزمون ۲:</text>
+    <text x="540" y="182" text-anchor="end" fill="#1a1a2e" font-size="12" direction="rtl">فرض کنید ج.ا. با شهروندانش خوب رفتار می‌کرد</text>
+    <text x="540" y="202" text-anchor="end" fill="#1a1a2e" font-size="12" direction="rtl">اما همین سرکوب را بر مردم همسایه اعمال می‌کرد — «شرور» بود؟</text>
+    <text x="540" y="216" text-anchor="end" fill="#2d6a4f" font-size="11" font-weight="bold" direction="rtl">← آشکار بودن پاسخ = ناموجه بودن تفکیک شهروند/غیرشهروند</text>
+
+    <!-- Bottom quote -->
+    <text x="285" y="242" text-anchor="middle" fill="#8b6914" font-size="11" font-style="italic" direction="rtl">«قدرتمند آن‌چه می‌تواند انجام می‌دهد و ضعیف آن‌چه باید تحمل می‌کند» — توکیدیدس | اما آیا باید تمکین کرد؟</text>
+  </g>
+
+  <!-- ============ FOOTER ============ -->
+  <rect x="0" y="1562" width="2400" height="3" fill="url(#goldAccent)"/>
+  <rect x="0" y="1565" width="2400" height="35" fill="url(#headerGrad)"/>
+  <text x="2370" y="1588" text-anchor="end" fill="#8899aa" font-size="12" direction="rtl">تحلیل انتقادی: دوگانه‌سازی اخلاقی قدرت در سیاست بین‌الملل | «زور خوب — زور بد» | اصل آینه‌ی برابر ⚖</text>
+  <text x="30" y="1588" text-anchor="start" fill="#556" font-size="11" direction="ltr">MORAL DOUBLE STANDARD IN GLOBAL POLITICS — CRITICAL INFOGRAPHIC — Equal Mirror Principle © 2025</text>
+</svg>

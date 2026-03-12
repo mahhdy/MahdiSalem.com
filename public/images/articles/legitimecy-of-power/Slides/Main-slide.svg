@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1600"
+      font-family="Vazirmatn, Tahoma, Arial, sans-serif">
+
+  <!-- ========= گرادیان‌ها و فیلترها ========= -->
+  <defs>
+
+    <!-- پس‌زمینهٔ روشنِ گرم -->
+    <linearGradient id="bg" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0"  stop-color="#f6f4ee"/>
+      <stop offset="0.35" stop-color="#eee7d9"/>
+      <stop offset="1" stop-color="#e5d8c3"/>
+    </linearGradient>
+
+    <!-- نوار سرصفحه -->
+    <linearGradient id="headGrad" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#16213e"/>
+      <stop offset="1" stop-color="#0f3460"/>
+    </linearGradient>
+
+    <!-- طلایی (برای تأکید) -->
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d6ab26"/>
+      <stop offset="0.5" stop-color="#ffce54"/>
+      <stop offset="1" stop-color="#d6ab26"/>
+    </linearGradient>
+
+    <!-- سبز خوب ↗ -->
+    <linearGradient id="good" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2d6a4f"/>
+      <stop offset="1" stop-color="#1b4332"/>
+    </linearGradient>
+
+    <!-- قرمز بد ↖ -->
+    <linearGradient id="bad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9b2226"/>
+      <stop offset="1" stop-color="#6a040f"/>
+    </linearGradient>
+
+    <!-- آبیِ زور بر خودی ↓ راست -->
+    <linearGradient id="self" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#1d3557"/>
+      <stop offset="1" stop-color="#264653"/>
+    </linearGradient>
+
+    <!-- قهوه‌ایِ زور بر بیگانه ↓ چپ -->
+    <linearGradient id="other" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6c3d18"/>
+      <stop offset="1" stop-color="#4a2508"/>
+    </linearGradient>
+
+    <!-- پس‌زمینهٔ جدول آماری -->
+    <linearGradient id="tblHead" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16213e"/>
+      <stop offset="1" stop-color="#0f3460"/>
+    </linearGradient>
+
+    <!-- فیلتر سایهٔ ملایم -->
+    <filter id="sh" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="6"
+          flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+
+  </defs>
+
+  <!-- ========= پس‌زمینه و سرصفحه ========= -->
+  <rect width="2400" height="1600" fill="url(#bg)"/>
+
+  <!-- سرصفحه -->
+  <rect width="2400" height="90" fill="url(#headGrad)" filter="url(#sh)"/>
+  <text x="2360" y="55" text-anchor="end" direction="rtl"
+        fill="#e6c84d" font-size="34" font-weight="bold">
+      اینفوگرافیِ انتقادی: «زور خوب – زور بد»
+  </text>
+
+  <!-- ========= کرهٔ مرکزیِ «زور» ========= -->
+  <g transform="translate(1200,580)">
+    <circle r="145" fill="#e5d8c3" stroke="#d6ab26" stroke-width="4"/>
+    <text x="0" y="-10" text-anchor="middle" direction="rtl"
+          font-size="56" font-weight="bold" fill="#0f3460">زور</text>
+    <text x="0" y="40" text-anchor="middle" font-size="22"
+          fill="#6a040f" direction="rtl">Force / Coercion</text>
+  </g>
+
+  <!-- ========= چهاربخش (۴ کریدور) ========= -->
+
+  <!-- ✅ خوب / مشروع  (بالا راست) -->
+  <g transform="translate(1600,180)" filter="url(#sh)">
+    <rect width="400" height="230" rx="18" fill="url(#good)"/>
+    <text x="370" y="55" text-anchor="end" direction="rtl"
+          fill="#ffffff" font-size="34" font-weight="bold">
+          خوب / مشروع
+    </text>
+    <line x1="370" y1="65" x2="30" y2="65"
+          stroke="#b7e4c7" stroke-width="1" opacity="0.4"/>
+    <text x="370" y="100" text-anchor="end" direction="rtl"
+          fill="#d8f3dc" font-size="22">
+          زورِ «ما» = دفاع، ثبات، دموکراسی
+    </text>
+    <text x="370" y="135" text-anchor="end" direction="rtl"
+          fill="#d8f3dc" font-size="22">
+          کودتای ما = ترویج آزادی
+    </text>
+    <text x="370" y="170" text-anchor="end" direction="rtl"
+          fill="#d8f3dc" font-size="22">
+          پایگاه ما = تعهد امنیتی
+    </text>
+    <text x="370" y="205" text-anchor="end" direction="rtl"
+          fill="#d8f3dc" font-size="22">
+          سلاح هسته‌ایِ ما = بازدارندگی
+    </text>
+  </g>
+
+  <!-- ❌ بد / نامشروع  (بالا چپ) -->
+  <g transform="translate(400,180)" filter="url(#sh)">
+    <rect width="400" height="230" rx="18" fill="url(#bad)"/>
+    <text x="30" y="55" text-anchor="start" direction="rtl"
+          fill="#ffffff" font-size="34" font-weight="bold">
+          بد / نامشروع
+    </text>
+    <line x1="30" y1="65" x2="370" y2="65"
+          stroke="#fcd5ce" stroke-width="1" opacity="0.4"/>
+    <text x="30" y="100" text-anchor="start" direction="rtl"
+          fill="#fcd5ce" font-size="22">
+          زورِ «دیگری» = تجاوز، تروریسم
+    </text>
+    <text x="30" y="135" text-anchor="start" direction="rtl"
+          fill="#fcd5ce" font-size="22">
+          متحد او = نیابتیِ خطرناک
+    </text>
+    <text x="30" y="170" text-anchor="start" direction="rtl"
+          fill="#fcd5ce" font-size="22">
+          نفوذ او = صدور انقلاب
+    </text>
+    <text x="30" y="205" text-anchor="start" direction="rtl"
+          fill="#fcd5ce" font-size="22">
+          برنامهٔ هسته‌ای‌اش = تهدید
+    </text>
+  </g>
+
+  <!-- 👫 زور بر «خودی»  (پایین راست) -->
+  <g transform="translate(1600,840)" filter="url(#sh)">
+    <rect width="400" height="210" rx="18" fill="url(#self)"/>
+    <text x="370" y="45" text-anchor="end" direction="rtl"
+          fill="#a8d0e6" font-size="30" font-weight="bold">
+          زور بر شهروند / خودی
+    </text>
+    <line x1="370" y1="55" x2="30" y2="55"
+          stroke="#a8d0e6" stroke-width="1" opacity="0.4"/>
+    <text x="370" y="95" text-anchor="end" direction="rtl"
+          fill="#e8e8e8" font-size="22">
+          شاخص اصلی «شرارت» در رسانه‌ها
+    </text>
+    <text x="370" y="130" text-anchor="end" direction="rtl"
+          fill="#ff6b6b" font-size="22">
+          (مثال) سرکوب معترضان در ایران
+    </text>
+    <text x="370" y="165" text-anchor="end" direction="rtl"
+          fill="#ff6b6b" font-size="22">
+          نتیجه: محکومیت سراسری
+    </text>
+  </g>
+
+  <!-- 🌍 زور بر «بیگانه»  (پایین چپ) -->
+  <g transform="translate(400,840)" filter="url(#sh)">
+    <rect width="400" height="210" rx="18" fill="url(#other)"/>
+    <text x="30" y="45" text-anchor="start" direction="rtl"
+          fill="#e8c89e" font-size="30" font-weight="bold">
+          زور بر بیگانه / غریبه
+    </text>
+    <line x1="30" y1="55" x2="370" y2="55"
+          stroke="#e8c89e" stroke-width="1" opacity="0.4"/>
+    <text x="30" y="95" text-anchor="start" direction="rtl"
+          fill="#e8e8e8" font-size="22">
+          نادیده یا کم‌رنگ در افکار عمومیِ غرب
+    </text>
+    <text x="30" y="130" text-anchor="start" direction="rtl"
+          fill="#c9a227" font-size="22">
+          (مثال) مرگ ۵۰۰هزار کودک عراقی
+    </text>
+    <text x="30" y="165" text-anchor="start" direction="rtl"
+          fill="#c9a227" font-size="22">
+          واکنش: «هزینهٔ قابل‌قبول»
+    </text>
+  </g>
+
+  <!-- جهت فلِش‌های چهاربخش -->
+  <text x="1430" y="370" fill="#2d6a4f" direction="rtl" font-size="22">👉 زورِ در راستای آرمان من</text>
+  <text x="970"  y="370" fill="#9b2226" direction="rtl" font-size="22">زورِ در تقابل با آرمان من 👈</text>
+  <text x="1430" y="1030" fill="#1d3557" direction="rtl" font-size="22">👇 بر شهروند خود</text>
+  <text x="970"  y="1030" fill="#6c3d18" direction="rtl" font-size="22">بر بیگانه 👇</text>
+
+  <!-- ========= ستونِ آماریِ سمت راست (اول دیده می‌شود) ========= -->
+  <g transform="translate(40,120)" filter="url(#sh)">
+    <rect width="300" height="1360" rx="20" fill="#ffffff" opacity="0.94"/>
+    <rect x="2" y="2" width="296" height="1356" rx="18"
+          fill="none" stroke="#d6ab26" stroke-width="1" opacity="0.4"/>
+
+    <!-- سرستون -->
+    <rect x="0" y="0" width="300" height="60" rx="20" fill="url(#tblHead)"/>
+    <text x="150" y="40" text-anchor="middle" fill="#e6c84d" direction="rtl"
+          font-size="26" font-weight="bold">فکت‌های کلیدی</text>
+
+    <!-- دیتا آیتم‌ها -->
+    <g transform="translate(150,110)" direction="rtl" text-anchor="middle"
+       fill="#0f3460" font-size="22">
+      <text y="0">۷۵۰+ پایگاه آمریکا</text>
+      <text y="55">۸۱ دخالت انتخاباتی</text>
+      <text y="110">$۸T هزینهٔ جنگ‌های 🇺🇸</text>
+      <text y="165">۵۰۰K مرگ کودکان عراق</text>
+      <text y="220">۱۰M قتلِ کنگو (🇧🇪)</text>
+      <text y="275">$۴۵T غارت هند (🇬🇧)</text>
+      <text y="330">۱٫۵M کشتهٔ الجزایر (🇫🇷)</text>
+      <text y="385">۸۰۰K+ بازداشتی اویغور</text>
+      <text y="440">۱۴K حملهٔ پهپادی 🇺🇸</text>
+    </g>
+  </g>
+
+  <!-- ========= اصل آینهٔ برابر (میانهٔ پایین) ========= -->
+  <g transform="translate(1200,1320)">
+    <rect x="-600" y="0" width="1200" height="120" rx="20"
+          fill="#f6f4ee" stroke="#d6ab26" stroke-width="1.5"/>
+    <text x="0" y="42" text-anchor="middle" fill="#d6ab26" font-size="30"
+          font-weight="bold" direction="rtl">
+          اصل «آینهٔ برابر»
+    </text>
+    <text x="0" y="80" text-anchor="middle" fill="#0f3460" font-size="24"
+          direction="rtl">
+          حکم اخلاقی فقط وقتی مشروع است که
+          حاکم آن را بدون تبعیض بر خود و متحدانش نیز اعمال کند
+    </text>
+  </g>
+
+  <!-- ========= کپی‌رایت پایین ========= -->
+  <rect y="1568" width="2400" height="32" fill="url(#headGrad)"/>
+  <text x="2360" y="1590" text-anchor="end" fill="#e6c84d" font-size="14">
+      «زور خوب – زور بد» | طراحی: نسخهٔ RTL – ۲۰۲۵
+  </text>
+</svg>

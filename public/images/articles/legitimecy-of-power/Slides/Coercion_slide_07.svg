@@ -1,0 +1,202 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" font-family="Tahoma, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg7" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#1a1a3e"/>
+    </linearGradient>
+    <linearGradient id="gold7" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0a500"/>
+      <stop offset="100%" stop-color="#ffcc02"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1350" fill="url(#bg7)"/>
+  <rect x="0" y="0" width="1080" height="5" fill="url(#gold7)"/>
+
+  <!-- Header -->
+  <text x="540" y="60" text-anchor="middle" fill="url(#gold7)" font-size="34" font-weight="bold" direction="rtl">📊 ماتریس رفتار مشابه، برچسب متفاوت</text>
+  <text x="540" y="92" text-anchor="middle" fill="#8899aa" font-size="18" direction="rtl">یک رفتار واحد — پنج داوری متفاوت</text>
+
+  <!-- Table header -->
+  <g transform="translate(0,120)">
+    <rect x="20" y="0" width="1040" height="50" rx="8" fill="#1d3557"/>
+    <text x="120" y="33" text-anchor="middle" fill="#fca311" font-size="15" font-weight="bold" direction="rtl">رفتار</text>
+    <text x="300" y="33" text-anchor="middle" fill="#89CFF0" font-size="15" font-weight="bold">🇺🇸</text>
+    <text x="460" y="33" text-anchor="middle" fill="#ff6b6b" font-size="15" font-weight="bold">🇷🇺</text>
+    <text x="620" y="33" text-anchor="middle" fill="#ff6b6b" font-size="15" font-weight="bold">🇨🇳</text>
+    <text x="780" y="33" text-anchor="middle" fill="#adb5bd" font-size="15" font-weight="bold">🇪🇺</text>
+    <text x="960" y="33" text-anchor="middle" fill="#ff6b6b" font-size="15" font-weight="bold">🇮🇷</text>
+  </g>
+
+  <!-- Row 1: Territorial -->
+  <g transform="translate(0,180)">
+    <rect x="20" y="0" width="1040" height="70" rx="5" fill="#1b2838" stroke="#334" stroke-width="0.5"/>
+    <text x="120" y="25" text-anchor="middle" fill="#fca311" font-size="14" font-weight="bold" direction="rtl">الحاق</text>
+    <text x="120" y="50" text-anchor="middle" fill="#fca311" font-size="14" direction="rtl">ارضی</text>
+    
+    <rect x="240" y="15" width="120" height="40" rx="8" fill="#457b9d" opacity="0.2"/>
+    <text x="300" y="40" text-anchor="middle" fill="#89CFF0" font-size="12" direction="rtl">✓ «تاریخ»</text>
+    
+    <rect x="400" y="15" width="120" height="40" rx="8" fill="#e63946" opacity="0.2"/>
+    <text x="460" y="40" text-anchor="middle" fill="#ff6b6b" font-size="12" direction="rtl">✓ «تجاوز»</text>
+    
+    <rect x="560" y="15" width="120" height="40" rx="8" fill="#e63946" opacity="0.2"/>
+    <text x="620" y="40" text-anchor="middle" fill="#ff6b6b" font-size="12" direction="rtl">✓ «تهدید»</text>
+    
+    <rect x="720" y="15" width="120" height="40" rx="8" fill="#6c757d" opacity="0.2"/>
+    <text x="780" y="40" text-anchor="middle" fill="#adb5bd" font-size="12" direction="rtl">✓ «گذشته»</text>
+    
+    <rect x="900" y="15" width="120" height="40" rx="8" fill="#333" opacity="0.3"/>
+    <text x="960" y="40" text-anchor="middle" fill="#888" font-size="12" direction="rtl">✗ ندارد</text>
+  </g>
+
+  <!-- Row 2: Military bases -->
+  <g transform="translate(0,260)">
+    <rect x="20" y="0" width="1040" height="70" rx="5" fill="#151f30" stroke="#334" stroke-width="0.5"/>
+    <text x="120" y="25" text-anchor="middle" fill="#fca311" font-size="14" font-weight="bold" direction="rtl">پایگاه</text>
+    <text x="120" y="50" text-anchor="middle" fill="#fca311" font-size="14" direction="rtl">نظامی</text>
+    
+    <rect x="240" y="15" width="120" height="40" rx="8" fill="#457b9d" opacity="0.2"/>
+    <text x="300" y="40" text-anchor="middle" fill="#89CFF0" font-size="12" direction="rtl">۷۵۰+ «ثبات»</text>
+    
+    <rect x="400" y="15" width="120" height="40" rx="8" fill="#e63946" opacity="0.2"/>
+    <text x="460" y="40" text-anchor="middle" fill="#ff6b6b" font-size="12" direction="rtl">✓ «تهاجم»</text>
+    
+    <rect x="560" y="15" width="120" height="40" rx="8" fill="#e63946" opacity="0.2"/>
+    <text x="620" y="40" text-anchor="middle" fill="#ff6b6b" font-size="12" direction="rtl">✓ «نظامی‌سازی»</text>
+    
+    <rect x="720" y="15" width="120" height="40" rx="8" fill="#457b9d" opacity="0.15"/>
+    <text x="780" y="40" text-anchor="middle" fill="#89CFF0" font-size="12" direction="rtl">✓ «تعهد»</text>
+    
+    <rect x="900" y="15" width="120" height="40" rx="8" fill="#e63946" opacity="0.15"/>
+    <text x="960" y="40" text-anchor="middle" fill="#ff6b6b" font-size="11" direction="rtl">✗ اما «نفوذ»!</text>
+  </g>
+
+  <!-- Row 3: Proxies -->
+  <g transform="translate(0,340)">
+    <rect x="20" y="0" width="1040" height="70" rx="5" fill="#1b2838" stroke="#334" stroke-width="0.5"/>
+    <text x="120" y="25" text-anchor="middle" fill="#fca311" font-size="14" font-weight="bold" direction="rtl">نیروی</text>
+    <text x="120" y="50" text-anchor="middle" fill="#fca311" font-size="14" direction="rtl">نیابتی</text>
+    
+    <rect x="240" y="15" width="120" height="40" rx="8" fill="#457b9d" opacity="0.2"/>
+    <text x="300" y="40" text-anchor="middle" fill="#89CFF0" font-size="12" direction="rtl">✓ «شرکا»</text>
+    
+    <rect x="400" y="15" width="120" height="40" rx="8" fill="#e63946" opacity="0.2"/>
+    <text x="460" y="40" text-anchor="middle" fill="#ff6b6b" font-size="12" direction="rtl">✓ «جنگ هیبریدی»</text>
+    
+    <rect x="560" y="15" width="120" height="40" rx="8" fill="#333" opacity="0.3"/>
+    <text x="620" y="40" text-anchor="middle" fill="#888" font-size="12" direction="rtl">—</text>
+    
+    <rect x="720" y="15" width="120" height="40" rx="8" fill="#6c757d" opacity="0.2"/>
+    <text x="780" y="40" text-anchor="middle" fill="#adb5bd" font-size="12" direction="rtl">✓ «مدیریت»</text>
+    
+    <rect x="900" y="15" width="120" height="40" rx="8" fill="#e63946" opacity="0.3"/>
+    <text x="960" y="40" text-anchor="middle" fill="#ff6b6b" font-size="12" direction="rtl">✓ «تروریسم»</text>
+  </g>
+
+  <!-- Row 4: Regime change -->
+  <g transform="translate(0,420)">
+    <rect x="20" y="0" width="1040" height="70" rx="5" fill="#151f30" stroke="#334" stroke-width="0.5"/>
+    <text x="120" y="25" text-anchor="middle" fill="#fca311" font-size="14" font-weight="bold" direction="rtl">تغییر</text>
+    <text x="120" y="50" text-anchor="middle" fill="#fca311" font-size="14" direction="rtl">رژیم</text>
+    
+    <rect x="240" y="15" width="120" height="40" rx="8" fill="#457b9d" opacity="0.2"/>
+    <text x="300" y="40" text-anchor="middle" fill="#89CFF0" font-size="12" direction="rtl">۵۰+ «دموکراسی»</text>
+    
+    <rect x="400" y="15" width="120" height="40" rx="8" fill="#e63946" opacity="0.2"/>
+    <text x="460" y="40" text-anchor="middle" fill="#ff6b6b" font-size="12" direction="rtl">✓ «بی‌ثباتی»</text>
+    
+    <rect x="560" y="15" width="120" height="40" rx="8" fill="#333" opacity="0.3"/>
+    <text x="620" y="40" text-anchor="middle" fill="#888" font-size="12" direction="rtl">—</text>
+    
+    <rect x="720" y="15" width="120" height="40" rx="8" fill="#6c757d" opacity="0.2"/>
+    <text x="780" y="40" text-anchor="middle" fill="#adb5bd" font-size="12" direction="rtl">✓ «تاریخی»</text>
+    
+    <rect x="900" y="15" width="120" height="40" rx="8" fill="#e63946" opacity="0.3"/>
+    <text x="960" y="40" text-anchor="middle" fill="#ff6b6b" font-size="11" direction="rtl">✓ «صدور انقلاب»</text>
+  </g>
+
+  <!-- Row 5: Nuclear -->
+  <g transform="translate(0,500)">
+    <rect x="20" y="0" width="1040" height="70" rx="5" fill="#1b2838" stroke="#334" stroke-width="0.5"/>
+    <text x="120" y="25" text-anchor="middle" fill="#fca311" font-size="14" font-weight="bold" direction="rtl">سلاح</text>
+    <text x="120" y="50" text-anchor="middle" fill="#fca311" font-size="14" direction="rtl">هسته‌ای</text>
+    
+    <rect x="240" y="15" width="120" height="40" rx="8" fill="#457b9d" opacity="0.2"/>
+    <text x="300" y="33" text-anchor="middle" fill="#89CFF0" font-size="11" direction="rtl">تنها استفاده‌کننده</text>
+    <text x="300" y="50" text-anchor="middle" fill="#89CFF0" font-size="11" direction="rtl">«بازدارندگی»</text>
+    
+    <rect x="400" y="15" width="120" height="40" rx="8" fill="#e63946" opacity="0.2"/>
+    <text x="460" y="40" text-anchor="middle" fill="#ff6b6b" font-size="12" direction="rtl">✓ «باج‌گیری»</text>
+    
+    <rect x="560" y="15" width="120" height="40" rx="8" fill="#e63946" opacity="0.2"/>
+    <text x="620" y="40" text-anchor="middle" fill="#ff6b6b" font-size="12" direction="rtl">✓ «تهدید»</text>
+    
+    <rect x="720" y="15" width="120" height="40" rx="8" fill="#457b9d" opacity="0.15"/>
+    <text x="780" y="40" text-anchor="middle" fill="#89CFF0" font-size="12" direction="rtl">✓ «بازدارندگی»</text>
+    
+    <rect x="900" y="15" width="120" height="40" rx="8" fill="#e63946" opacity="0.3"/>
+    <text x="960" y="33" text-anchor="middle" fill="#ff6b6b" font-size="11" direction="rtl">✗ ندارد اما</text>
+    <text x="960" y="50" text-anchor="middle" fill="#ff6b6b" font-size="11" direction="rtl">«تهدید وجودی»!</text>
+  </g>
+
+  <!-- Row 6: Torture/HR -->
+  <g transform="translate(0,580)">
+    <rect x="20" y="0" width="1040" height="70" rx="5" fill="#151f30" stroke="#334" stroke-width="0.5"/>
+    <text x="120" y="25" text-anchor="middle" fill="#fca311" font-size="14" font-weight="bold" direction="rtl">شکنجه/</text>
+    <text x="120" y="50" text-anchor="middle" fill="#fca311" font-size="14" direction="rtl">حقوق بشر</text>
+    
+    <rect x="240" y="15" width="120" height="40" rx="8" fill="#457b9d" opacity="0.2"/>
+    <text x="300" y="40" text-anchor="middle" fill="#89CFF0" font-size="12" direction="rtl">✓ «استثنایی»</text>
+    
+    <rect x="400" y="15" width="120" height="40" rx="8" fill="#e63946" opacity="0.2"/>
+    <text x="460" y="40" text-anchor="middle" fill="#ff6b6b" font-size="12" direction="rtl">✓ «سیستماتیک»</text>
+    
+    <rect x="560" y="15" width="120" height="40" rx="8" fill="#e63946" opacity="0.2"/>
+    <text x="620" y="40" text-anchor="middle" fill="#ff6b6b" font-size="12" direction="rtl">✓ «نسل‌کشی»</text>
+    
+    <rect x="720" y="15" width="120" height="40" rx="8" fill="#6c757d" opacity="0.2"/>
+    <text x="780" y="40" text-anchor="middle" fill="#adb5bd" font-size="12" direction="rtl">✓ «چالش»</text>
+    
+    <rect x="900" y="15" width="120" height="40" rx="8" fill="#e63946" opacity="0.3"/>
+    <text x="960" y="40" text-anchor="middle" fill="#ff6b6b" font-size="12" direction="rtl">✓ «فاحش»</text>
+  </g>
+
+  <!-- Color legend -->
+  <g transform="translate(540,700)">
+    <rect x="-350" y="-10" width="200" height="30" rx="5" fill="#457b9d" opacity="0.3"/>
+    <text x="-250" y="12" text-anchor="middle" fill="#89CFF0" font-size="14" direction="rtl">آبی = «مشروع»</text>
+    
+    <rect x="-120" y="-10" width="200" height="30" rx="5" fill="#e63946" opacity="0.3"/>
+    <text x="-20" y="12" text-anchor="middle" fill="#ff6b6b" font-size="14" direction="rtl">قرمز = «نامشروع»</text>
+    
+    <rect x="110" y="-10" width="240" height="30" rx="5" fill="#6c757d" opacity="0.3"/>
+    <text x="230" y="12" text-anchor="middle" fill="#adb5bd" font-size="14" direction="rtl">خاکستری = «فراموش‌شده»</text>
+  </g>
+
+  <!-- Key pattern insight -->
+  <g transform="translate(540,790)">
+    <rect x="-450" y="-20" width="900" height="200" rx="15" fill="#fca311" opacity="0.06" stroke="#fca311" stroke-width="2"/>
+    <text x="0" y="20" text-anchor="middle" fill="#fca311" font-size="28" font-weight="bold" direction="rtl">🔎 الگوی آشکار</text>
+    
+    <text x="0" y="65" text-anchor="middle" fill="#89CFF0" font-size="20" direction="rtl">آمریکا + اروپا (متحدان): تقریباً همه‌جا آبی یا خاکستری</text>
+    <text x="0" y="100" text-anchor="middle" fill="#ff6b6b" font-size="20" direction="rtl">روسیه + چین + ایران (رقبا): تقریباً همه‌جا قرمز</text>
+    
+    <line x1="-300" y1="120" x2="300" y2="120" stroke="#fca311" stroke-width="1" opacity="0.3"/>
+    
+    <text x="0" y="155" text-anchor="middle" fill="#fca311" font-size="22" font-weight="bold" direction="rtl">رنگ برچسب تابع «هویت بازیگر» است، نه «نوع رفتار»</text>
+  </g>
+
+  <!-- Iran special note -->
+  <g transform="translate(540,1050)">
+    <rect x="-420" y="-15" width="840" height="90" rx="12" fill="#e63946" opacity="0.08" stroke="#e63946" stroke-width="1"/>
+    <text x="0" y="15" text-anchor="middle" fill="#e63946" font-size="18" font-weight="bold" direction="rtl">⚠ حالت خاص ایران:</text>
+    <text x="0" y="48" text-anchor="middle" fill="#aab" font-size="17" direction="rtl">ایران در بسیاری مؤلفه‌ها (الحاق، پایگاه، سلاح هسته‌ای) اساساً رفتار مشابه ندارد</text>
+    <text x="0" y="73" text-anchor="middle" fill="#ff6b6b" font-size="17" direction="rtl">اما باز هم برچسب «محور شرارت» و «تهدید وجودی» دریافت می‌کند!</text>
+  </g>
+
+  <text x="540" y="1260" text-anchor="middle" fill="#fca311" font-size="18" direction="rtl">◀ ادامه</text>
+  <text x="540" y="1290" text-anchor="middle" fill="#556" font-size="14" direction="rtl">۷ از ۱۰</text>
+  <rect x="0" y="1345" width="1080" height="5" fill="url(#gold7)"/>
+</svg>
