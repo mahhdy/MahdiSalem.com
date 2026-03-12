@@ -1,0 +1,1204 @@
+---
+title: زور بد - زور خوب
+lang: fa
+draft: false
+publishDate: '2026-03-12T01:18:42.111Z'
+description: >-
+  آیا زور، ذاتاً خوب یا بد است؟ آیا زور و زورگویی خوب و بد داریم؟ آیا این بد و
+  خوب بودن به سطح و دامنه‌ی زورگو بستگی دارد؟ یا نه زورگویی منطق گفتمانی ما خوب
+  و زورگویی منطق گفتمانی دیگران بد است! یعنی آن‌چه تعیین‌کننده‌ی «خوبی» و «بدی»
+  زور است، هویت کاربرِ آن و خودی یا ناخودی انگاشتن ما از اوست؟
+author: مهدی سالم
+coverImage: /images/articles/covers/legitimacy-power.svg
+hasSlide: true
+imageDisplay: side
+cardImage: show
+slideArray:
+  - /images/articles/legitimecy-of-power/Slides/6.svg
+interface: descriptive-politics
+aiRole: ai-assisted
+sourceType: LaTex
+category: politics
+keywords:
+  - قدرت
+  - مشروعیت
+  - زور
+  - اخلاق
+  - سیاست
+  - دوگانه‌ی اخلاقی
+  - امپریالیزم
+  - مماشات
+  - تحول‌خواهی
+  - سیاست بین‌الملل
+  - واقع‌گرایی
+readingTime: 25
+difficulty: متوسط
+pdfUrl: /documents/articles/Hypocrisy.pdf
+showPdfViewer: true
+---
+
+{/* ====================== کامپوننت‌های سفارشی ====================== */}
+
+export const HeroSection = () => (
+  <div style={{
+    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
+    borderRadius: '16px',
+    padding: '3rem 2rem',
+    marginBottom: '2.5rem',
+    textAlign: 'center',
+    position: 'relative',
+    overflow: 'hidden',
+    direction: 'rtl'
+  }}>
+    <svg viewBox="0 0 800 200" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', opacity: 0.08 }}>
+      <defs>
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#grid)"/>
+      <circle cx="650" cy="100" r="120" fill="none" stroke="white" strokeWidth="1" opacity="0.3"/>
+      <circle cx="150" cy="80" r="80" fill="none" stroke="white" strokeWidth="1" opacity="0.2"/>
+    </svg>
+    <div style={{ position: 'relative', zIndex: 1 }}>
+      <h1 style={{ color: '#e94560', fontSize: '2.8rem', fontWeight: '900', margin: '0 0 0.8rem 0', letterSpacing: '-0.02em' }}>
+        زور خوب – زور بد
+      </h1>
+      <p style={{ color: '#a8b2d1', fontSize: '1.15rem', maxWidth: '700px', margin: '0 auto 1.5rem', lineHeight: '2' }}>
+        تأملی انتقادی بر دوگانه‌سازی اخلاقی قدرت در سیاست بین‌الملل
+      </p>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
+        <span style={{ color: '#64ffda', fontSize: '0.9rem' }}>✍️ مهدی سالم</span>
+      </div>
+    </div>
+  </div>
+)
+
+export const Callout = ({ type = 'info', title, children }) => {
+  const styles = {
+    info: { bg: '#e8f4fd', border: '#2196F3', icon: '💡', titleColor: '#1565C0' },
+    warning: { bg: '#fff8e1', border: '#FF9800', icon: '⚠️', titleColor: '#E65100' },
+    quote: { bg: '#f3e5f5', border: '#9C27B0', icon: '💬', titleColor: '#6A1B9A' },
+    critical: { bg: '#fce4ec', border: '#E53935', icon: '🔍', titleColor: '#B71C1C' },
+    success: { bg: '#e8f5e9', border: '#4CAF50', icon: '✅', titleColor: '#2E7D32' }
+  }
+  const s = styles[type] || styles.info
+  return (
+    <div style={{
+      background: s.bg,
+      borderRight: `5px solid ${s.border}`,
+      borderRadius: '8px',
+      padding: '1.2rem 1.5rem',
+      margin: '1.5rem 0',
+      direction: 'rtl'
+    }}>
+      {title && (
+        <div style={{ fontWeight: '700', color: s.titleColor, marginBottom: '0.5rem', fontSize: '1.05rem' }}>
+          {s.icon} {title}
+        </div>
+      )}
+      <div style={{ color: '#333', lineHeight: '2' }}>{children}</div>
+    </div>
+  )
+}
+
+export const ComparisonTable = ({ headers, rows, caption }) => (
+  <div style={{ margin: '2rem 0', direction: 'rtl' }}>
+    <div style={{ overflowX: 'auto', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.08)' }}>
+      <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.95rem' }}>
+        <thead>
+          <tr style={{ background: 'linear-gradient(135deg, #29417a, #1a2a5e)' }}>
+            {headers.map((h, i) => (
+              <th key={i} style={{ color: 'white', padding: '14px 18px', textAlign: 'right', fontWeight: '700' }}>{h}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row, i) => (
+            <tr key={i} style={{ background: i % 2 === 0 ? '#f8f9fa' : 'white', borderBottom: '1px solid #e9ecef' }}>
+              {row.map((cell, j) => (
+                <td key={j} style={{ padding: '12px 18px', textAlign: 'right', lineHeight: '1.8' }}>{cell}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    {caption && <p style={{ textAlign: 'center', color: '#666', fontSize: '0.85rem', marginTop: '0.7rem' }}>📊 {caption}</p>}
+  </div>
+)
+
+export const QuoteBlock = ({ text, author, source }) => (
+  <div style={{
+    background: 'linear-gradient(135deg, #faf5ff 0%, #f0e6ff 100%)',
+    border: '1px solid #d4b5ff',
+    borderRadius: '12px',
+    padding: '2rem',
+    margin: '2rem 0',
+    textAlign: 'center',
+    position: 'relative',
+    direction: 'rtl'
+  }}>
+    <svg width="40" height="32" viewBox="0 0 40 32" style={{ position: 'absolute', top: '12px', right: '16px', opacity: 0.15 }}>
+      <path d="M0 20.8C0 27.2 4 32 10.4 32c4.8 0 8-3.2 8-7.2 0-4-2.8-6.8-6.4-6.8-1.2 0-2 .4-2.8.8C10 12 14.4 5.6 18.4 3.2L14.4 0C6 4.8 0 13.6 0 20.8zm21.6 0C21.6 27.2 25.6 32 32 32c4.8 0 8-3.2 8-7.2 0-4-2.8-6.8-6.4-6.8-1.2 0-2.4.4-2.8.8C31.6 12 36 5.6 40 3.2L36 0c-8.4 4.8-14.4 13.6-14.4 20.8z" fill="#9C27B0"/>
+    </svg>
+    <p style={{ fontSize: '1.15rem', fontStyle: 'italic', color: '#4a148c', lineHeight: '2.2', margin: '0 0 1rem' }}>
+      «{text}»
+    </p>
+    {author && <p style={{ color: '#7b1fa2', fontWeight: '700', margin: '0' }}>— {author}{source && `، ${source}`}</p>}
+  </div>
+)
+
+export const SectionDivider = ({ icon = '◆' }) => (
+  <div style={{ textAlign: 'center', margin: '3rem 0 2rem', color: '#ccc', fontSize: '1.2rem', letterSpacing: '0.5rem' }}>
+    ─── {icon} ───
+  </div>
+)
+
+export const NumberedCard = ({ number, title, children }) => (
+  <div style={{
+    display: 'flex',
+    gap: '1rem',
+    margin: '1.2rem 0',
+    padding: '1.2rem',
+    background: '#f8f9fa',
+    borderRadius: '10px',
+    direction: 'rtl',
+    alignItems: 'flex-start'
+  }}>
+    <div style={{
+      minWidth: '40px', height: '40px',
+      background: 'linear-gradient(135deg, #e94560, #c23152)',
+      borderRadius: '50%',
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      color: 'white', fontWeight: '800', fontSize: '1rem', flexShrink: 0
+    }}>{number}</div>
+    <div>
+      {title && <strong style={{ color: '#1a1a2e', display: 'block', marginBottom: '0.3rem' }}>{title}</strong>}
+      <div style={{ color: '#444', lineHeight: '2' }}>{children}</div>
+    </div>
+  </div>
+)
+
+export const KeywordBadges = ({ items }) => (
+  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', justifyContent: 'center', margin: '1rem 0 2rem', direction: 'rtl' }}>
+    {items.map((item, i) => (
+      <span key={i} style={{
+        background: 'linear-gradient(135deg, #e8eaf6, #c5cae9)',
+        color: '#283593',
+        padding: '6px 14px',
+        borderRadius: '20px',
+        fontSize: '0.85rem',
+        fontWeight: '600'
+      }}>{item}</span>
+    ))}
+  </div>
+)
+
+export const BalanceScaleSVG = () => (
+  <div style={{ textAlign: 'center', margin: '2rem 0' }}>
+    <svg viewBox="0 0 600 400" width="100%" style={{ maxWidth: '500px' }}>
+      <defs>
+        <linearGradient id="pillarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#37474f"/>
+          <stop offset="100%" stopColor="#263238"/>
+        </linearGradient>
+        <linearGradient id="leftPanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#e53935"/>
+          <stop offset="100%" stopColor="#c62828"/>
+        </linearGradient>
+        <linearGradient id="rightPanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#1565c0"/>
+          <stop offset="100%" stopColor="#0d47a1"/>
+        </linearGradient>
+        <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+          <feDropShadow dx="0" dy="3" stdDeviation="4" floodOpacity="0.15"/>
+        </filter>
+      </defs>
+      {/* پایه */}
+      <rect x="280" y="180" width="40" height="180" rx="4" fill="url(#pillarGrad)" filter="url(#shadow)"/>
+      <ellipse cx="300" cy="370" rx="80" ry="18" fill="#455a64" opacity="0.6"/>
+      <rect x="240" y="355" width="120" height="20" rx="10" fill="url(#pillarGrad)"/>
+      {/* بازوی ترازو — کج */}
+      <line x1="80" y1="140" x2="520" y2="180" stroke="#546e7a" strokeWidth="6" strokeLinecap="round" filter="url(#shadow)"/>
+      {/* مرکز */}
+      <circle cx="300" cy="160" r="16" fill="#ffd54f" stroke="#f9a825" strokeWidth="2" filter="url(#shadow)"/>
+      <text x="300" y="165" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#5d4037">⚖</text>
+      {/* زنجیرهای چپ */}
+      <line x1="80" y1="140" x2="80" y2="220" stroke="#78909c" strokeWidth="2" strokeDasharray="4,4"/>
+      {/* کفه چپ - پایین‌تر (سنگین‌تر) */}
+      <path d="M30,220 Q30,250 80,250 Q130,250 130,220 Z" fill="url(#leftPanGrad)" opacity="0.9" filter="url(#shadow)"/>
+      <text x="80" y="240" textAnchor="middle" fontSize="11" fill="white" fontWeight="bold">قدرت‌های بزرگ</text>
+      <text x="80" y="278" textAnchor="middle" fontSize="10" fill="#e53935" fontWeight="600">۷۵۰+ پایگاه نظامی</text>
+      <text x="80" y="295" textAnchor="middle" fontSize="10" fill="#e53935">تغییر رژیم</text>
+      <text x="80" y="312" textAnchor="middle" fontSize="10" fill="#e53935">استعمار نو</text>
+      {/* زنجیرهای راست */}
+      <line x1="520" y1="180" x2="520" y2="230" stroke="#78909c" strokeWidth="2" strokeDasharray="4,4"/>
+      {/* کفه راست - بالاتر (سبک‌تر) */}
+      <path d="M470,230 Q470,260 520,260 Q570,260 570,230 Z" fill="url(#rightPanGrad)" opacity="0.9" filter="url(#shadow)"/>
+      <text x="520" y="250" textAnchor="middle" fontSize="11" fill="white" fontWeight="bold">بازیگران ضعیف‌تر</text>
+      <text x="520" y="288" textAnchor="middle" fontSize="10" fill="#1565c0" fontWeight="600">متحدان منطقه‌ای</text>
+      <text x="520" y="305" textAnchor="middle" fontSize="10" fill="#1565c0">نفوذ محدود</text>
+      {/* برچسب‌ها */}
+      <rect x="180" y="50" width="240" height="36" rx="18" fill="#fff8e1" stroke="#ffd54f" strokeWidth="1.5" filter="url(#shadow)"/>
+      <text x="300" y="73" textAnchor="middle" fontSize="13" fill="#e65100" fontWeight="bold" fontFamily="sans-serif">دوگانه‌ی اخلاقی قدرت</text>
+      {/* فلش‌ها */}
+      <text x="80" y="125" textAnchor="middle" fontSize="20">🏛️</text>
+      <text x="520" y="165" textAnchor="middle" fontSize="20">🌍</text>
+    </svg>
+  </div>
+)
+
+export const ThreeAspectSVG = () => (
+  <div style={{ textAlign: 'center', margin: '2rem 0' }}>
+    <svg viewBox="0 0 600 320" width="100%" style={{ maxWidth: '550px' }}>
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#e8f5e9"/>
+          <stop offset="100%" stopColor="#c8e6c9"/>
+        </linearGradient>
+        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#e3f2fd"/>
+          <stop offset="100%" stopColor="#bbdefb"/>
+        </linearGradient>
+        <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#fff3e0"/>
+          <stop offset="100%" stopColor="#ffe0b2"/>
+        </linearGradient>
+        <filter id="cardShadow">
+          <feDropShadow dx="0" dy="4" stdDeviation="6" floodOpacity="0.12"/>
+        </filter>
+      </defs>
+      {/* عنوان */}
+      <text x="300" y="30" textAnchor="middle" fontSize="16" fontWeight="bold" fill="#1a1a2e" fontFamily="sans-serif">مدل سه‌وجهی ارزیابی زور</text>
+      {/* مرکز */}
+      <circle cx="300" cy="160" r="45" fill="#1a1a2e" filter="url(#cardShadow)"/>
+      <text x="300" y="155" textAnchor="middle" fontSize="24" fill="white">⚡</text>
+      <text x="300" y="175" textAnchor="middle" fontSize="11" fill="#64ffda" fontWeight="bold">زور هوشمند</text>
+      {/* خطوط اتصال */}
+      <line x1="260" y1="135" x2="155" y2="95" stroke="#4CAF50" strokeWidth="2" strokeDasharray="6,3"/>
+      <line x1="340" y1="135" x2="445" y2="95" stroke="#2196F3" strokeWidth="2" strokeDasharray="6,3"/>
+      <line x1="300" y1="205" x2="300" y2="250" stroke="#FF9800" strokeWidth="2" strokeDasharray="6,3"/>
+      {/* کارت ۱: مشروعیت */}
+      <rect x="30" y="55" width="170" height="80" rx="12" fill="url(#grad1)" stroke="#4CAF50" strokeWidth="1.5" filter="url(#cardShadow)"/>
+      <text x="115" y="83" textAnchor="middle" fontSize="22">🏛️</text>
+      <text x="115" y="105" textAnchor="middle" fontSize="13" fontWeight="bold" fill="#2E7D32">مشروعیت</text>
+      <text x="115" y="123" textAnchor="middle" fontSize="9.5" fill="#555">Legitimacy</text>
+      {/* کارت ۲: تناسب */}
+      <rect x="400" y="55" width="170" height="80" rx="12" fill="url(#grad2)" stroke="#2196F3" strokeWidth="1.5" filter="url(#cardShadow)"/>
+      <text x="485" y="83" textAnchor="middle" fontSize="22">⚖️</text>
+      <text x="485" y="105" textAnchor="middle" fontSize="13" fontWeight="bold" fill="#1565C0">تناسب</text>
+      <text x="485" y="123" textAnchor="middle" fontSize="9.5" fill="#555">Proportionality</text>
+      {/* کارت ۳: پاسخ‌گویی */}
+      <rect x="215" y="255" width="170" height="80" rx="12" fill="url(#grad3)" stroke="#FF9800" strokeWidth="1.5" filter="url(#cardShadow)"/>
+      <text x="300" y="283" textAnchor="middle" fontSize="22">📋</text>
+      <text x="300" y="305" textAnchor="middle" fontSize="13" fontWeight="bold" fill="#E65100">پاسخ‌گویی</text>
+      <text x="300" y="323" textAnchor="middle" fontSize="9.5" fill="#555">Accountability</text>
+    </svg>
+  </div>
+)
+
+export const TimelineSVG = () => (
+  <div style={{ textAlign: 'center', margin: '2rem 0' }}>
+    <svg viewBox="0 0 700 200" width="100%" style={{ maxWidth: '650px' }}>
+      <defs>
+        <linearGradient id="timelineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#e53935"/>
+          <stop offset="50%" stopColor="#ffd54f"/>
+          <stop offset="100%" stopColor="#1565c0"/>
+        </linearGradient>
+      </defs>
+      {/* خط زمان */}
+      <line x1="50" y1="100" x2="650" y2="100" stroke="url(#timelineGrad)" strokeWidth="3" strokeLinecap="round"/>
+      {/* نقاط */}
+      {[
+        { x: 100, label: '۱۸۴۶', desc: 'جنگ مکزیک', color: '#e53935' },
+        { x: 220, label: '۱۸۹۸', desc: 'الحاق هاوایی', color: '#e53935' },
+        { x: 340, label: '۱۹۵۳', desc: 'کودتای ایران', color: '#ff9800' },
+        { x: 460, label: '۲۰۱۴', desc: 'الحاق کریمه', color: '#1565c0' },
+        { x: 580, label: '۲۰۲۲', desc: 'حمله به اوکراین', color: '#1565c0' },
+      ].map((p, i) => (
+        <g key={i}>
+          <circle cx={p.x} cy="100" r="8" fill={p.color} stroke="white" strokeWidth="2"/>
+          <text x={p.x} y="80" textAnchor="middle" fontSize="11" fontWeight="bold" fill={p.color}>{p.label}</text>
+          <text x={p.x} y="130" textAnchor="middle" fontSize="9" fill="#555">{p.desc}</text>
+        </g>
+      ))}
+      <text x="350" y="170" textAnchor="middle" fontSize="12" fill="#888" fontStyle="italic">خط زمانی نمونه‌هایی از اعمال زور قدرت‌های بزرگ</text>
+    </svg>
+  </div>
+)
+
+export const ConclusionCard = ({ number, title, children }) => (
+  <div style={{
+    background: 'linear-gradient(135deg, #1a1a2e, #16213e)',
+    borderRadius: '12px',
+    padding: '1.5rem',
+    margin: '1rem 0',
+    direction: 'rtl',
+    display: 'flex',
+    gap: '1.2rem',
+    alignItems: 'flex-start'
+  }}>
+    <div style={{
+      minWidth: '44px', height: '44px',
+      background: 'linear-gradient(135deg, #e94560, #ff6b6b)',
+      borderRadius: '10px',
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      color: 'white', fontWeight: '900', fontSize: '1.2rem', flexShrink: 0
+    }}>{number}</div>
+    <div>
+      <strong style={{ color: '#64ffda', display: 'block', marginBottom: '0.4rem', fontSize: '1.05rem' }}>{title}</strong>
+      <p style={{ color: '#a8b2d1', lineHeight: '2', margin: 0 }}>{children}</p>
+    </div>
+  </div>
+)
+
+export const FootnoteRef = ({ id, children }) => (
+  <sup style={{ color: '#e94560', cursor: 'help', fontWeight: '700' }} title={children}>[{id}]</sup>
+)
+
+export const Footnote = ({ id, children }) => (
+  <div style={{ fontSize: '0.85rem', color: '#666', padding: '0.3rem 0', borderBottom: '1px solid #eee', direction: 'rtl' }}>
+    <span style={{ color: '#e94560', fontWeight: '700' }}>[{id}]</span> {children}
+  </div>
+)
+
+export const AppendixSection = ({ id, title, icon, children }) => (
+  <div style={{
+    margin: '2rem 0',
+    border: '1px solid #e0e0e0',
+    borderRadius: '14px',
+    overflow: 'hidden',
+    direction: 'rtl'
+  }}>
+    <div style={{
+      background: 'linear-gradient(135deg, #29417a, #1a2a5e)',
+      padding: '1rem 1.5rem',
+      display: 'flex',
+      alignItems: 'center',
+      gap: '0.8rem'
+    }}>
+      <span style={{ fontSize: '1.5rem' }}>{icon}</span>
+      <h3 style={{ color: 'white', margin: 0, fontSize: '1.1rem' }} id={id}>{title}</h3>
+    </div>
+    <div style={{ padding: '1.5rem' }}>{children}</div>
+  </div>
+)
+
+export const DataTable = ({ headers, rows, caption, striped = true, highlightFirst = false }) => (
+  <div style={{ margin: '1rem 0', direction: 'rtl' }}>
+    <div style={{ overflowX: 'auto', borderRadius: '10px', border: '1px solid #e0e0e0' }}>
+      <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.88rem' }}>
+        <thead>
+          <tr style={{ background: '#37474f' }}>
+            {headers.map((h, i) => (
+              <th key={i} style={{
+                color: 'white',
+                padding: '10px 14px',
+                textAlign: 'right',
+                fontWeight: '700',
+                fontSize: '0.85rem',
+                whiteSpace: 'nowrap'
+              }}>{h}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row, i) => (
+            <tr key={i} style={{
+              background: striped ? (i % 2 === 0 ? '#fafafa' : 'white') : 'white',
+              borderBottom: '1px solid #eeeeee'
+            }}>
+              {row.map((cell, j) => (
+                <td key={j} style={{
+                  padding: '10px 14px',
+                  textAlign: 'right',
+                  lineHeight: '1.8',
+                  fontWeight: (highlightFirst && j === 0) ? '600' : 'normal',
+                  color: (highlightFirst && j === 0) ? '#1a1a2e' : '#444'
+                }}>{cell}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    {caption && <p style={{ textAlign: 'center', color: '#888', fontSize: '0.8rem', marginTop: '0.5rem' }}>{caption}</p>}
+  </div>
+)
+
+export const MiniStat = ({ icon, value, label, color = '#29417a' }) => (
+  <div style={{
+    textAlign: 'center',
+    padding: '1rem',
+    background: '#f8f9fa',
+    borderRadius: '10px',
+    minWidth: '120px',
+    flex: '1'
+  }}>
+    <div style={{ fontSize: '1.8rem', marginBottom: '0.3rem' }}>{icon}</div>
+    <div style={{ fontSize: '1.4rem', fontWeight: '800', color }}>{value}</div>
+    <div style={{ fontSize: '0.8rem', color: '#666', marginTop: '0.2rem' }}>{label}</div>
+  </div>
+)
+
+export const StatRow = ({ children }) => (
+  <div style={{
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: '1rem',
+    margin: '1.5rem 0',
+    justifyContent: 'center',
+    direction: 'rtl'
+  }}>{children}</div>
+)
+
+export const CheckMark = () => <span style={{ color: '#4CAF50', fontWeight: 'bold' }}>✓</span>
+export const CrossMark = () => <span style={{ color: '#E53935', fontWeight: 'bold' }}>✗</span>
+export const Dash = () => <span style={{ color: '#999' }}>—</span>
+
+export const MilitaryBarChart = () => (
+  <div style={{ textAlign: 'center', margin: '1.5rem 0' }}>
+    <svg viewBox="0 0 650 380" width="100%" style={{ maxWidth: '600px' }}>
+      <defs>
+        <linearGradient id="usBar" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#e53935"/>
+          <stop offset="100%" stopColor="#c62828"/>
+        </linearGradient>
+        <linearGradient id="cnBar" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#ff9800"/>
+          <stop offset="100%" stopColor="#e65100"/>
+        </linearGradient>
+        <linearGradient id="ruBar" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#7b1fa2"/>
+          <stop offset="100%" stopColor="#4a148c"/>
+        </linearGradient>
+        <linearGradient id="ukBar" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#1565c0"/>
+          <stop offset="100%" stopColor="#0d47a1"/>
+        </linearGradient>
+        <linearGradient id="frBar" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#2e7d32"/>
+          <stop offset="100%" stopColor="#1b5e20"/>
+        </linearGradient>
+        <linearGradient id="saBar" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#00897b"/>
+          <stop offset="100%" stopColor="#004d40"/>
+        </linearGradient>
+        <linearGradient id="irBar" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#78909c"/>
+          <stop offset="100%" stopColor="#546e7a"/>
+        </linearGradient>
+      </defs>
+      <text x="325" y="25" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#1a1a2e">هزینه‌های نظامی ۲۰۲۴ (میلیارد دلار)</text>
+      {[
+        { y: 50, width: 500, fill: 'url(#usBar)', label: 'آمریکا', value: '۸۸۶' },
+        { y: 95, width: 167, fill: 'url(#cnBar)', label: 'چین', value: '۲۹۶' },
+        { y: 140, width: 62, fill: 'url(#ruBar)', label: 'روسیه', value: '۱۰۹' },
+        { y: 185, width: 42, fill: 'url(#ukBar)', label: 'بریتانیا', value: '۷۵' },
+        { y: 230, width: 32, fill: 'url(#frBar)', label: 'فرانسه', value: '۵۶' },
+        { y: 275, width: 28, fill: 'url(#saBar)', label: 'عربستان', value: '~۵۰' },
+        { y: 320, width: 6, fill: 'url(#irBar)', label: '🇮🇷 ایران', value: '~۱۰' },
+      ].map((bar, i) => (
+        <g key={i}>
+          <rect x="100" y={bar.y} width={bar.width} height="30" rx="4" fill={bar.fill} opacity="0.9"/>
+          <text x="90" y={bar.y + 20} textAnchor="end" fontSize="11" fill="#333" fontWeight="600">{bar.label}</text>
+          <text x={105 + bar.width} y={bar.y + 20} fontSize="11" fill="#333" fontWeight="bold">{bar.value}$</text>
+        </g>
+      ))}
+      <line x1="100" y1="45" x2="100" y2="355" stroke="#ccc" strokeWidth="1"/>
+      <text x="325" y="375" textAnchor="middle" fontSize="10" fill="#999" fontStyle="italic">منبع: SIPRI Military Expenditure Database 2024</text>
+    </svg>
+  </div>
+)
+
+export const DoubleStandardTable = () => (
+  <DataTable
+    headers={['رفتار', 'وقتی قدرت بزرگ انجام دهد', 'وقتی ایران انجام دهد']}
+    rows={[
+      ['حمایت از نیروهای نیابتی', '«حمایت از متحدان» / «کمک نظامی»', '«حمایت از تروریسم»'],
+      ['برنامه‌ی موشکی', '«بازدارندگی» / «دفاع ملی»', '«تهدید منطقه‌ای» / «بی‌ثبات‌کننده»'],
+      ['برنامه‌ی هسته‌ای', '«حق حاکمیتی» (اسرائیل، هند، پاکستان)', '«تهدید وجودی» / نقض NPT'],
+      ['نفوذ منطقه‌ای', '«رهبری» / «مسئولیت جهانی»', '«امپریالیزم» / «صدور انقلاب»'],
+      ['سرکوب داخلی', '(نادیده گرفته می‌شود: مصر، عربستان)', '«نقض فاحش حقوق بشر»'],
+      ['مداخله در انتخابات دیگران', '«ترویج دموکراسی» (آمریکا)', '«مداخله‌ی خرابکارانه»'],
+      ['تحریم‌ اقتصادی', '«فشار دیپلماتیک» / «ابزار صلح»', '—'],
+      ['حضور نظامی خارجی', '«ثبات‌بخشی» (۷۵۰+ پایگاه آمریکا)', '«اقدام تهاجمی» (حضور مستشاری)'],
+    ]}
+    caption="یک رفتار واحد، دو برچسب متفاوت: جوهر دوگانه‌ی اخلاقی"
+    highlightFirst={true}
+  />
+)
+
+export const MatrixSVG = () => (
+  <div style={{ textAlign: 'center', margin: '1.5rem 0' }}>
+    <svg viewBox="0 0 500 400" width="100%" style={{ maxWidth: '460px' }}>
+      <defs>
+        <linearGradient id="goodZone" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#c8e6c9" stopOpacity="0.7"/>
+          <stop offset="100%" stopColor="#a5d6a7" stopOpacity="0.4"/>
+        </linearGradient>
+        <linearGradient id="badZone" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#ffcdd2" stopOpacity="0.7"/>
+          <stop offset="100%" stopColor="#ef9a9a" stopOpacity="0.4"/>
+        </linearGradient>
+      </defs>
+      <text x="250" y="25" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#1a1a2e">ماتریس ارزیابی زور</text>
+      <line x1="80" y1="50" x2="80" y2="350" stroke="#333" strokeWidth="2"/>
+      <line x1="80" y1="350" x2="470" y2="350" stroke="#333" strokeWidth="2"/>
+      <text x="40" y="200" textAnchor="middle" fontSize="11" fill="#333" fontWeight="600" transform="rotate(-90,40,200)">مشروعیت + تناسب</text>
+      <text x="275" y="385" textAnchor="middle" fontSize="11" fill="#333" fontWeight="600">پاسخ‌گویی</text>
+      <rect x="275" y="50" width="190" height="150" rx="10" fill="url(#goodZone)" stroke="#4CAF50" strokeWidth="1" strokeDasharray="4,2"/>
+      <text x="370" y="130" textAnchor="middle" fontSize="12" fill="#2E7D32" fontWeight="bold">زور هوشمند ✓</text>
+      <rect x="85" y="200" width="190" height="150" rx="10" fill="url(#badZone)" stroke="#E53935" strokeWidth="1" strokeDasharray="4,2"/>
+      <text x="180" y="280" textAnchor="middle" fontSize="12" fill="#C62828" fontWeight="bold">زور ویرانگر ✗</text>
+      {[
+        { x: 150, y: 280, label: '🇷🇺 اوکراین', color: '#E53935' },
+        { x: 200, y: 240, label: '🇺🇸 عراق ۲۰۰۳', color: '#E53935' },
+        { x: 350, y: 120, label: '🇺🇳 عملیات R2P', color: '#4CAF50' },
+        { x: 300, y: 170, label: '🇮🇷 ضد داعش', color: '#FF9800' },
+        { x: 130, y: 310, label: '🇷🇺 کریمه', color: '#9C27B0' },
+        { x: 400, y: 90, label: 'مدل آرمانی', color: '#1565c0' },
+      ].map((p, i) => (
+        <g key={i}>
+          <circle cx={p.x} cy={p.y} r="6" fill={p.color} stroke="white" strokeWidth="1.5"/>
+          <text x={p.x} y={p.y - 12} textAnchor="middle" fontSize="8.5" fill={p.color} fontWeight="600">{p.label}</text>
+        </g>
+      ))}
+      <text x="470" y="380" textAnchor="end" fontSize="9" fill="#999">بالا →</text>
+      <text x="50" y="47" textAnchor="middle" fontSize="9" fill="#999">بالا ↑</text>
+    </svg>
+  </div>
+)
+
+export const ConceptFlowSVG = () => (
+  <div style={{ textAlign: 'center', margin: '1.5rem 0' }}>
+    <svg viewBox="0 0 700 320" width="100%" style={{ maxWidth: '650px' }}>
+      <defs>
+        <linearGradient id="rawForce" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#e53935"/>
+          <stop offset="100%" stopColor="#ff5252"/>
+        </linearGradient>
+        <linearGradient id="smartForce" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#4CAF50"/>
+          <stop offset="100%" stopColor="#66BB6A"/>
+        </linearGradient>
+        <linearGradient id="processGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#fff8e1"/>
+          <stop offset="100%" stopColor="#ffecb3"/>
+        </linearGradient>
+        <filter id="glow">
+          <feDropShadow dx="0" dy="2" stdDeviation="4" floodOpacity="0.15"/>
+        </filter>
+      </defs>
+      <text x="350" y="25" textAnchor="middle" fontSize="15" fontWeight="bold" fill="#1a1a2e">مسیر تبدیل زور خام به زور هوشمند</text>
+      <rect x="20" y="60" width="130" height="60" rx="30" fill="url(#rawForce)" filter="url(#glow)"/>
+      <text x="85" y="87" textAnchor="middle" fontSize="12" fill="white" fontWeight="bold">زور خام</text>
+      <text x="85" y="105" textAnchor="middle" fontSize="9" fill="#ffcdd2">Raw Force</text>
+      <line x1="155" y1="90" x2="195" y2="90" stroke="#999" strokeWidth="2"/>
+      <polygon points="195,85 205,90 195,95" fill="#999"/>
+      <rect x="210" y="55" width="120" height="70" rx="10" fill="url(#processGrad)" stroke="#FFC107" strokeWidth="1.5" filter="url(#glow)"/>
+      <text x="270" y="78" textAnchor="middle" fontSize="18">🏛️</text>
+      <text x="270" y="97" textAnchor="middle" fontSize="10" fontWeight="bold" fill="#E65100">فیلتر مشروعیت</text>
+      <text x="270" y="113" textAnchor="middle" fontSize="8" fill="#888">Legitimacy</text>
+      <line x1="335" y1="90" x2="375" y2="90" stroke="#999" strokeWidth="2"/>
+      <polygon points="375,85 385,90 375,95" fill="#999"/>
+      <rect x="390" y="55" width="120" height="70" rx="10" fill="url(#processGrad)" stroke="#2196F3" strokeWidth="1.5" filter="url(#glow)"/>
+      <text x="450" y="78" textAnchor="middle" fontSize="18">⚖️</text>
+      <text x="450" y="97" textAnchor="middle" fontSize="10" fontWeight="bold" fill="#1565C0">فیلتر تناسب</text>
+      <text x="450" y="113" textAnchor="middle" fontSize="8" fill="#888">Proportionality</text>
+      <line x1="515" y1="90" x2="555" y2="90" stroke="#999" strokeWidth="2"/>
+      <polygon points="555,85 565,90 555,95" fill="#999"/>
+      <rect x="570" y="55" width="110" height="70" rx="10" fill="url(#smartForce)" filter="url(#glow)"/>
+      <text x="625" y="82" textAnchor="middle" fontSize="12" fill="white" fontWeight="bold">زور هوشمند</text>
+      <text x="625" y="100" textAnchor="middle" fontSize="9" fill="#c8e6c9">Smart Force</text>
+      <text x="625" y="116" textAnchor="middle" fontSize="14">✅</text>
+      <line x1="450" y1="130" x2="450" y2="170" stroke="#FF9800" strokeWidth="2"/>
+      <polygon points="445,170 450,180 455,170" fill="#FF9800"/>
+      <rect x="380" y="185" width="140" height="65" rx="10" fill="url(#processGrad)" stroke="#FF9800" strokeWidth="1.5" filter="url(#glow)"/>
+      <text x="450" y="208" textAnchor="middle" fontSize="18">📋</text>
+      <text x="450" y="227" textAnchor="middle" fontSize="10" fontWeight="bold" fill="#E65100">فیلتر پاسخ‌گویی</text>
+      <text x="450" y="242" textAnchor="middle" fontSize="8" fill="#888">Accountability</text>
+      <line x1="270" y1="130" x2="270" y2="270" stroke="#E53935" strokeWidth="1.5" strokeDasharray="5,3"/>
+      <rect x="200" y="275" width="140" height="40" rx="8" fill="#ffebee" stroke="#E53935" strokeWidth="1"/>
+      <text x="270" y="300" textAnchor="middle" fontSize="10" fill="#C62828" fontWeight="bold">❌ زور ویرانگر / نامشروع</text>
+    </svg>
+  </div>
+)
+
+{/* ====================== محتوای اصلی ====================== */}
+
+<HeroSection />
+
+<KeywordBadges items={['زور', 'قدرت', 'دوگانه‌ی اخلاقی', 'امپریالیزم', 'مماشات', 'تحول‌خواهی', 'سیاست بین‌الملل', 'واقع‌گرایی']} />
+
+## چکیده
+
+<Callout type="info" title="چکیده‌ی مقاله">
+
+آیا زور، ذاتاً خوب یا بد است؟ آیا زور و زورگویی خوب و بد داریم؟ آیا این بد و خوب بودن به سطح و دامنه‌ی زورگو بستگی دارد؟ یا نه — زورگویی منطق گفتمانی ما خوب و زورگویی منطق گفتمانی دیگران بد است! یعنی آن‌چه تعیین‌کننده‌ی «خوبی» و «بدی» زور است، هویت کاربرِ آن و خودی یا ناخودی انگاشتن ما از اوست؟
+
+این مقاله با بررسی رفتار قدرت‌های بزرگ جهانی — آمریکا، روسیه، چین و قدرت‌های استعماری سابق اروپایی — در برابر رفتارهای مشابه جمهوری اسلامی ایران، نشان می‌دهد که نظام بین‌الملل دچار نوعی **دوگانه‌سازی اخلاقی** (*Moral Double Standard*) در ارزیابی «زور» و «قدرت» است.
+
+هم‌زمان، پرسشی داخل کشوری نیز مطرح می‌شود: اگر از منظر کنشگرانی و با عقل سلیم مردمانی تحول‌خواه، مماشات با قدرت‌های بزرگ، به‌واسطه‌ی قدرت سرکوب و توان زورگویی و اراده‌ی تخریب آن‌ها عقلانی تلقی می‌شود — یعنی آن‌ها اندیشه‌ی مقاومت را ایدئولوژیک و نابخردانه و دور از تمدن می‌شناسند — آیا این نیروهای تحول‌خواه داخلی نیز نباید همین منطق را مد نظر قرار داده و فرضاً از سازوکارهای مشابهی که در سطح بین‌الملل ترویج می‌کنند و یا معقول می‌شمارند در مبارزات سیاسی داخلی خود بهره بگیرند؟ اموری مشابه تجمیع قدرت میانه، تقویت بازوی تغییر و دیپلماسی تدریجی — که به نظر تعبیر دیگری از همان راهبرد اصلاح‌طلبی انتخاباتی معروف یعنی «فشار از پایین و چانه‌زنی از بالا»ست.
+
+> *این اثر با کمک هوش مصنوعی داده‌ها، نمونه‌ها و مراجع خود را گردآوری کرده است.*
+
+</Callout>
+
+---
+
+## فهرست مطالب
+
+1. [مقدمه: طرح مسئله](#مقدمه-طرح-مسئله)
+2. [چارچوب مفهومی: زور، مشروعیت و دوگانه‌ی اخلاقی](#چارچوب-مفهومی)
+3. [مطالعات تطبیقی: زور در عمل](#مطالعات-تطبیقی)
+4. [پرسش درون‌سیاسی: مماشات با قدرت، استراتژی یا تسلیم؟](#پرسش-درون‌سیاسی)
+5. [تحلیل: نه زور خوب، نه زور بد — زور هوشمند](#تحلیل)
+6. [نقد: محدودیت‌های استدلال تقارنی](#نقد)
+7. [نتیجه‌گیری](#نتیجه‌گیری)
+8. [پیوست‌ها و منابع](#منابع)
+
+<SectionDivider icon="۱" />
+
+## مقدمه: طرح مسئله
+
+در ادبیات روابط بین‌الملل، **زور** (*Force/Coercion*) همواره یکی از مفاهیم محوری بوده است. از توکیدیدس<FootnoteRef id="1">Thucydides</FootnoteRef> تا هابز<FootnoteRef id="2">Thomas Hobbes</FootnoteRef>، از ماکیاولی<FootnoteRef id="3">Niccolò Machiavelli</FootnoteRef> تا هانس مورگنتا<FootnoteRef id="4">Hans Morgenthau</FootnoteRef>، اندیشمندان سیاسی بر نقش زور در تنظیم روابط میان واحدهای سیاسی تأکید کرده‌اند. اما پرسشی که کمتر به‌طور صریح مطرح شده، این است:
+
+<Callout type="critical" title="پرسش اصلی">
+
+**آیا زور، فی‌نفسه خوب یا بد است؟ یا «خوبی» و «بدی» زور، تابعی از هویت و جایگاه به‌کارگیرنده‌ی آن در سلسله‌مراتب قدرت جهانی است؟**
+
+</Callout>
+
+به بیان دیگر:
+
+- آیا زورگویی جمهوری اسلامی ایران بد است، اما زورگویی آمریکا یا روسیه خوب؟
+- آیا تحمیل ایدئولوژی لیبرال-دموکراتیک غربی مشروع است، ولی تحمیل ایدئولوژی انقلاب اسلامی نامشروع؟
+- آیا داشتن صدها پایگاه نظامی در سرتاسر جهان (در مورد آمریکا بیش از **۷۵۰ پایگاه** در **۸۰ کشور**) مقبول است، اما داشتن چند متحد نیابتی منطقه‌ای (در مورد ایران) خطرناک و مذموم؟
+- آیا بدی زورگویی و تعدی و سرکوب به مخاطب آن و نسبت آن با زورگو برمی‌گردد؟ یعنی زورگویی و اعمال زور به خودی بد است، ولی اعمال زور و زورگویی به غیر خودی خوب است؟
+
+این مقاله تلاش می‌کند با رویکردی **انتقادی** و **تطبیقی**، دوگانه‌سازی اخلاقی نهفته در گفتمان مسلط بین‌المللی درباره‌ی «زور» را آشکار سازد و هم‌زمان، دلالت‌های آن را برای سیاست داخلی ایران بررسی کند.
+
+<BalanceScaleSVG />
+
+<SectionDivider icon="۲" />
+
+## چارچوب مفهومی: زور، مشروعیت و دوگانه‌ی اخلاقی
+
+### تعریف زور در روابط بین‌الملل
+
+در واقع‌گرایی کلاسیک، زور ابزاری خنثی و طبیعی در دست دولت‌ها برای تأمین امنیت و منافع ملی‌شان است. مورگنتا در *سیاست میان ملت‌ها*<FootnoteRef id="5">Politics Among Nations</FootnoteRef> زور را جوهره‌ی سیاست بین‌الملل می‌داند:
+
+<QuoteBlock
+  text="سیاست بین‌الملل، مانند هر سیاست دیگری، مبارزه بر سر قدرت است."
+  author="هانس مورگنتا"
+  source="سیاست میان ملت‌ها"
+/>
+
+اما نولیبرال‌ها و سازه‌انگاران<FootnoteRef id="6">Constructivists</FootnoteRef> استدلال می‌کنند که زور بدون بسترِ **هنجاری** (*Normative Context*) قابل ارزیابی نیست. یعنی: زور هنگامی «مشروع» تلقی می‌شود که:
+
+<NumberedCard number="۱" title="چارچوب نهادی">
+  در چارچوب نهادهای بین‌المللی به‌کار رود (مانند مجوز شورای امنیت)
+</NumberedCard>
+
+<NumberedCard number="۲" title="هنجارهای جهان‌شمول">
+  برای حفاظت از هنجارهای جهان‌شمول (حقوق بشر، دموکراسی) باشد
+</NumberedCard>
+
+<NumberedCard number="۳" title="نظم مبتنی بر قواعد">
+  از سوی بازیگرانی اعمال شود که خود را پاسدار «نظم مبتنی بر قواعد» (*Rules-Based Order*) معرفی می‌کنند
+</NumberedCard>
+
+<Callout type="warning" title="مشکل بنیادین">
+
+مشکل آنجاست که تعیین «هنجار جهان‌شمول» و «نظم مبتنی بر قواعد» عملاً در اختیار همان قدرت‌هایی است که بیشترین زور را اعمال می‌کنند. این‌جاست که مفهوم **دوگانه‌ی اخلاقی** (*Moral Double Standard*) اهمیت پیدا می‌کند.
+
+</Callout>
+
+### دوگانه‌ی اخلاقی قدرت
+
+دوگانه‌ی اخلاقی یعنی:
+
+> **یک رفتار واحد، وقتی از سوی «ما» انجام شود، مشروع، ضروری و اخلاقی است؛ ولی همان رفتار، وقتی از سوی «دیگری» انجام شود، نامشروع، خطرناک و غیراخلاقی تلقی می‌شود.**
+
+نوام چامسکی<FootnoteRef id="7">Noam Chomsky</FootnoteRef> در آثار متعدد خود نشان داده است که ایالات متحده دقیقاً همان اعمالی را که در دیگران محکوم می‌کند — مداخله‌ی نظامی، تغییر رژیم، حمایت از نیروهای نیابتی — خود در مقیاسی بسیار بزرگ‌تر انجام می‌دهد، اما این اعمال در گفتمان مسلط رسانه‌ای و آکادمیک غرب از فیلتر **استثناگرایی** (*Exceptionalism*) عبور داده می‌شوند و مشروع جلوه می‌کنند.
+
+<SectionDivider icon="۳" />
+
+## مطالعات تطبیقی: زور در عمل
+
+<TimelineSVG />
+
+### 🇷🇺 روسیه: از الحاق کریمه تا تجاوز به اوکراین
+
+روسیه در سال **۲۰۱۴** شبه‌جزیره‌ی کریمه را — با استناد به حفاظت از اقلیت روس‌زبان — ضمیمه‌ی خاک خود کرد و در سال **۲۰۲۲** حمله‌ی تمام‌عیار نظامی به اوکراین را آغاز کرد. بهانه‌ی مسکو روشن بود: اوکراین حق ندارد شریک دفاعی‌اش (ناتو) را خودش انتخاب کند، زیرا این امر «امنیت ملی» روسیه را تهدید می‌کند.
+
+<Callout type="critical" title="پرسش اساسی">
+
+اگر تعیین سرنوشت یک ملت (*Self-Determination*) اصلی پذیرفته‌شده در حقوق بین‌الملل است، چگونه روسیه می‌تواند آن را نادیده بگیرد و هم‌زمان مدعی حقانیت باشد؟ اما همین پرسش درباره‌ی رفتار ناتو در گسترش به شرق نیز صادق است: آیا فشار بر روسیه از طریق گسترش ناتو تا مرزهایش، خود نوعی زورگویی ساختاری نبوده است؟
+
+</Callout>
+
+---
+
+### 🇺🇸 آمریکا: از الحاق‌های تاریخی تا ادعاهای جدید
+
+ایالات متحده کشوری است که بر بنیاد **الحاق و توسعه‌ی ارضی** ساخته شده است:
+
+- 🗡️ **جنگ با مکزیک** (۱۸۴۶–۱۸۴۸) و الحاق تگزاس، کالیفرنیا و بخش وسیعی از جنوب غرب
+- 🏝️ **الحاق هاوایی** (۱۸۹۸) علی‌رغم مخالفت بومیان پولینزیایی و سرنگونی پادشاهی هاوایی
+- ⚔️ **تصرف فیلیپین، پورتوریکو و گوام** پس از جنگ با اسپانیا
+- 🌎 **مداخلات متعدد** در آمریکای لاتین (گواتمالا، شیلی، نیکاراگوئه، پاناما و ...)
+
+در دوره‌ی معاصر، اظهارات مقامات آمریکایی درباره‌ی الحاق گرینلند، فشار بر کانادا و کنترل کانال پاناما، امتداد تاریخی همین منطق توسعه‌طلبانه است. اما این رفتار در گفتمان بین‌المللی نه «تهاجم» بلکه **«حفاظت از منافع استراتژیک»** نامیده می‌شود.
+
+---
+
+### 🇨🇳 چین: سیاست چین واحد و مسئله‌ی تایوان
+
+جمهوری خلق چین بر اساس سیاست «چین واحد» (*One China Policy*)، تایوان را بخشی جدایی‌ناپذیر از سرزمین اصلی می‌داند و حق استفاده از زور نظامی برای «بازگرداندن» آن را برای خود محفوظ داشته است — فارغ از خواست و اراده‌ی **۲۳ میلیون نفر** جمعیت تایوان که اکثریت آن‌ها هویتی مستقل از چین سرزمین اصلی دارند.
+
+<Callout type="info" title="نکته‌ی تاریخی">
+
+ساکنان تایوان (عمدتاً پیروان حزب ملی‌گرا / کومینتانگ) از ابتدا در مخالفت با حزب کمونیست به این جزیره مهاجرت کردند و مسیر سیاسی متفاوتی را طی کردند. اما این تمایز تاریخی در محاسبات ژئوپلیتیک پکن جایی ندارد.
+
+</Callout>
+
+---
+
+### 🇪🇺 قدرت‌های استعماری سابق اروپایی
+
+انگلستان، فرانسه، بلژیک، اسپانیا، پرتغال و هلند قرن‌ها رسماً سرزمین‌های دیگران را تصرف کردند، منابع‌شان را غارت کردند و مردمان‌شان را به بردگی و استثمار کشاندند. فروپاشی رسمی استعمار به معنای پایان این مناسبات نبود؛ بلکه شیوه‌ها تغییر کرد:
+
+- از استعمار مستقیم به **نواستعمار** (*Neocolonialism*)
+- از اشغال نظامی به **سلطه‌ی اقتصادی** (از طریق نهادهایی چون بانک جهانی و صندوق بین‌المللی پول)
+- از تحمیل فرهنگی آشکار به **هژمونی فرهنگی نرم** (*Soft Power Hegemony*)
+
+---
+
+### 🇮🇷 ایران: نیروهای نیابتی و نفوذ منطقه‌ای
+
+جمهوری اسلامی ایران از طریق حمایت از نیروهای نیابتی در لبنان (حزب‌الله)، عراق (حشد الشعبی)، یمن (انصارالله) و سوریه نفوذ منطقه‌ای خود را گسترش داد. این رفتار در گفتمان غربی «بی‌ثبات‌کننده»، «تروریستی» و «خطرناک» خوانده می‌شود.
+
+<Callout type="quote" title="پرسش تطبیقی">
+
+اگر آمریکا با بیش از **۷۵۰ پایگاه نظامی** در سراسر جهان، و روسیه با حضور نظامی در سوریه و آفریقا (گروه واگنر/آفریقا کورپس)، و فرانسه با پایگاه‌های متعدد در آفریقای غربی و مرکزی، **«قدرت‌های مسئول»** هستند، چرا ایران با تعداد محدودی متحد منطقه‌ای **«تهدید صلح جهانی»** تلقی می‌شود؟
+
+</Callout>
+
+<SectionDivider icon="۴" />
+
+## پرسش درون‌سیاسی: مماشات با قدرت، استراتژی یا تسلیم؟
+
+بخش دوم پرسش اصلی این مقاله ناظر به سیاست داخلی ایران است. اگر در عرصه‌ی بین‌المللی، **مماشات** (*Appeasement / Engagement*) با قدرت‌های بزرگ، «عقلانی» و «واقع‌بینانه» تلقی می‌شود — چنان‌که مارک کارنی<FootnoteRef id="8">Mark Carney</FootnoteRef>، نخست‌وزیر کانادا، در اجلاس داووس ۲۰۲۵ پیشنهاد «تجمیع قدرت‌های میانه» (*Coalition of Middle Powers*) را مطرح کرد — آیا همین منطق نباید در مواجهه‌ی نیروهای تحول‌خواه ایرانی با جمهوری اسلامی نیز به کار رود؟
+
+### قیاس: منطق مماشات در دو سطح
+
+<ComparisonTable
+  headers={['مؤلفه', 'سطح بین‌المللی', 'سطح داخلی ایران']}
+  rows={[
+    ['قدرت مسلط', 'آمریکا / روسیه / چین', 'جمهوری اسلامی'],
+    ['بازیگر ضعیف‌تر', 'قدرت‌های میانه', 'نیروهای تحول‌خواه'],
+    ['راهبرد پیشنهادی', 'تجمیع قدرت میانه', 'ائتلاف و تقویت بازوی تغییر'],
+    ['ابزار', 'دیپلماسی، اقتصاد، اتحاد', 'مدنیت، شبکه‌سازی، مقاومت هوشمند'],
+  ]}
+  caption="قیاس منطق مماشات در دو سطح تحلیل"
+/>
+
+به بیان دیگر: اگر به کانادا و اروپا گفته می‌شود *«با ترامپ درنیفتید، قدرت‌تان را جمع کنید و هوشمندانه بازی کنید»*، چرا نباید به تحول‌خواهان ایرانی نیز گفت: *«به جای رویارویی خام، قدرت خود را تجمیع کنید، بازوی تغییر را تقویت کنید و از ابزارهای تدریجی ولی مؤثر استفاده کنید»*؟
+
+### تجمیع قدرت میانه در سیاست داخلی
+
+مفهوم «قدرت میانه» (*Middle Power*) در ادبیات روابط بین‌الملل ناظر به کشورهایی است که نه ابرقدرتند و نه ضعیف، اما با ائتلاف‌سازی و نهادسازی می‌توانند بر معادلات تأثیر بگذارند. این مفهوم را می‌توان به سیاست داخلی نیز ترجمه کرد:
+
+<NumberedCard number="الف" title="شناسایی نیروهای میانه">
+  طبقه‌ی متوسط، تکنوکرات‌ها، روشنفکران، فعالان مدنی، اصلاح‌طلبان درون‌حکومتی و بیرون‌حکومتی
+</NumberedCard>
+
+<NumberedCard number="ب" title="ائتلاف‌سازی">
+  ایجاد اتحادهای موقتی و موضوعی (نه لزوماً ایدئولوژیک) حول مطالبات مشترک
+</NumberedCard>
+
+<NumberedCard number="ج" title="نهادسازی غیررسمی">
+  تقویت شبکه‌های اجتماعی، صنفی و فرهنگی که ظرفیت بسیج اجتماعی دارند
+</NumberedCard>
+
+<NumberedCard number="د" title="استفاده از شکاف‌های درون‌حاکمیتی">
+  بهره‌گیری از اختلافات درونی حاکمیت برای گشودن فضاهای جدید
+</NumberedCard>
+
+<NumberedCard number="ه" title="حمایت هوشمند از ناجنبش‌ها">
+  ناجنبش‌هایی نظیر زنان، اقلیت‌های جنسی، تکنوکرات‌ها، صنعت‌گران و نظایر آن می‌توانند به شکل غیرمستقیم و غیرسیاسی رنگ و چهره‌ی سیاسی را تغییر دهند و آن‌را مجبور به تغییر رفتار کنند که در فاز بعدی توسط کنش‌گران سیاسی قابل استفاده و بهره‌برداری باشد.
+</NumberedCard>
+
+<SectionDivider icon="۵" />
+
+## تحلیل: نه زور خوب، نه زور بد — زور هوشمند
+
+از منظر تحلیلی، پاسخ به پرسش «زور خوب یا زور بد» نه در ذات زور، بلکه در **شیوه‌ی به‌کارگیری**، **بستر هنجاری** و **نتایج** آن نهفته است. می‌توان مدلی سه‌وجهی پیشنهاد کرد:
+
+<ThreeAspectSVG />
+
+### وجه اول: مشروعیت 🏛️
+
+هر اعمال زوری باید در چارچوب حداقلی از مشروعیت بین‌المللی یا داخلی قرار گیرد. مشروعیت نه لزوماً به معنای مجوز شورای امنیت (که خود ابزار قدرت‌های پنج‌گانه است)، بلکه به معنای همراهی بخش قابل‌توجهی از جامعه‌ی بین‌المللی یا ملی است.
+
+<Callout type="info" title="معیارهای مشروعیت">
+
+مقوله‌ی افکار عمومی، عقل سلیم، خواست جمهور مردم، نظرسنجی‌های معتبر و نظایر آن باید جدی گرفته شده و قطب‌نمای مشروعیت یا عدم مشروعیت کنش‌های سیاسی و بین‌المللی باشند. همچنین بر روی هم‌سرنوشتی و افق بلندمدت داشتن در سطح جهانی بین جوامع مختلف باید تأکید کرد. همان‌گونه که ایده‌ی «یک زمین، یک مردم» می‌توانست به توافق‌های مهم محیط‌زیستی منجر شود.
+
+</Callout>
+
+### وجه دوم: تناسب ⚖️
+
+اصل تناسب (*Proportionality*) ایجاب می‌کند که زورِ به‌کاررفته متناسب با هدف و تهدید باشد.
+
+<Callout type="warning" title="نقض اصل تناسب">
+
+حمله‌ی تمام‌عیار روسیه به اوکراین، یا تحریم‌های فلج‌کننده‌ی آمریکا علیه غیرنظامیان ایرانی، **هر دو** ناقض این اصلند.
+
+</Callout>
+
+### وجه سوم: پاسخ‌گویی 📋
+
+هر بازیگری که زور اعمال می‌کند باید در برابر پیامدهای آن پاسخ‌گو باشد. مشکل نظام کنونی بین‌المللی آن است که قدرت‌های بزرگ عملاً از هر نوع پاسخ‌گویی مؤثری معاف هستند (حق وتو در شورای امنیت، عدم پذیرش صلاحیت دیوان بین‌المللی کیفری و ...).
+
+<SectionDivider icon="۶" />
+
+## نقد: محدودیت‌های استدلال تقارنی
+
+<Callout type="warning" title="هشدار نقدی مهم">
+
+باید به نقدی مهم نیز اشاره کرد: استدلال «همه زور می‌زنند، پس زور ما هم مجاز است» — اگر به ساده‌ترین شکلش فروکاسته شود — می‌تواند به **نسبی‌گرایی اخلاقی مطلق** (*Moral Relativism*) منجر شود که در آن هیچ رفتاری قابل نقد نیست.
+
+</Callout>
+
+هدف این مقاله نه توجیه زور هیچ بازیگری، بلکه **آشکارسازی ناهمسانی در داوری** (*Inconsistency in Judgment*) است. به بیان دیگر:
+
+- ✅ یا باید اصول را **جهان‌شمول** اعمال کرد (حاکمیت ملی، حق تعیین سرنوشت، عدم مداخله — برای همه، از جمله ایران)
+- ❌ یا باید اذعان کرد که نظام بین‌الملل نه بر اساس «قواعد» بلکه بر اساس **قدرت** عمل می‌کند و «قواعد» صرفاً پوششی برای منافع قدرتمندان است
+
+<SectionDivider icon="۷" />
+
+## نتیجه‌گیری
+
+<ConclusionCard number="۱" title="زور ذاتاً نه خوب است و نه بد">
+  آن‌چه خوب و بد است، بستر، شیوه، تناسب و پاسخ‌گویی در به‌کارگیری زور است.
+</ConclusionCard>
+
+<ConclusionCard number="۲" title="دوگانه‌ی اخلاقی واقعی و مستند است">
+  رفتار مشابه از سوی قدرت‌های بزرگ «طبیعی» و از سوی بازیگران ضعیف‌تر «خطرناک» تلقی می‌شود.
+</ConclusionCard>
+
+<ConclusionCard number="۳" title="عقلانیت مماشات هوشمند">
+  در عرصه‌ی داخلی، اگر مماشات با قدرت‌های بزرگ «عقلانیت» است، مماشات هوشمند نیروهای تحول‌خواه با حاکمیت — نه به معنای تسلیم، بلکه به معنای **تجمیع قدرت میانه و تقویت تدریجی بازوی تغییر** — نیز عقلانی است.
+</ConclusionCard>
+
+<ConclusionCard number="۴" title="هوشمندی در به‌کارگیری">
+  هر بازی — چه در عرصه‌ی بین‌المللی و چه در عرصه‌ی داخلی — را می‌توان **خوب** (هوشمندانه و برنده) یا **بد** (بازنده و ویرانگر) بازی کرد. تعیین‌کننده نه ذات زور، بلکه **هوشمندی در به‌کارگیری آن** است.
+</ConclusionCard>
+
+---
+
+<QuoteBlock
+  text="قدرتمند آن‌چه می‌تواند انجام می‌دهد و ضعیف آن‌چه باید تحمل می‌کند."
+  author="توکیدیدس"
+  source="جنگ پلوپونزی"
+/>
+
+<div style={{
+  textAlign: 'center',
+  padding: '1.5rem',
+  background: 'linear-gradient(135deg, #fff8e1, #fff3e0)',
+  borderRadius: '12px',
+  margin: '1rem 0',
+  border: '1px solid #ffe082',
+  direction: 'rtl'
+}}>
+  <p style={{ fontSize: '1.1rem', color: '#e65100', fontWeight: '600', fontStyle: 'italic', lineHeight: '2.2' }}>
+    اما پرسش اصلی این است: آیا باید اخلاق بین‌الملل را بر این واقعیت تلخ بنا کرد، یا می‌توان و باید آن را به چالش کشید؟
+  </p>
+</div>
+
+<SectionDivider icon="📎" />
+
+## پیوست‌ها
+
+{/* ==================== پیوست ۱ ==================== */}
+
+<AppendixSection id="appendix-1" title="پیوست ۱: جدول مقایسه‌ای پایگاه‌های نظامی قدرت‌های بزرگ" icon="🗺️">
+
+<StatRow>
+  <MiniStat icon="🇺🇸" value="۷۵۰+" label="پایگاه آمریکا" color="#e53935" />
+  <MiniStat icon="🇬🇧" value="۱۴۵" label="پایگاه بریتانیا" color="#1565c0" />
+  <MiniStat icon="🇫🇷" value="~۶۰" label="پایگاه فرانسه" color="#0d47a1" />
+  <MiniStat icon="🇷🇺" value="~۳۰" label="پایگاه روسیه" color="#4a148c" />
+  <MiniStat icon="🇨🇳" value="~۵" label="پایگاه چین" color="#e65100" />
+</StatRow>
+
+<DataTable
+  headers={['کشور', 'تعداد تقریبی پایگاه', 'تعداد کشور میزبان', 'نیروی مستقر (هزار نفر)', 'هزینه‌ی نظامی (میلیارد $)']}
+  rows={[
+    ['🇺🇸 ایالات متحده آمریکا', '۷۵۰+', '~۸۰', '~۱۷۳', '~۸۸۶ (۲۰۲۴)'],
+    ['🇬🇧 بریتانیا', '~۱۴۵', '~۴۲', '~۱۵', '~۷۵'],
+    ['🇫🇷 فرانسه', '~۶۰', '~۱۰', '~۷', '~۵۶'],
+    ['🇷🇺 روسیه', '~۳۰', '~۱۰', '~۲۵', '~۱۰۹'],
+    ['🇨🇳 چین', '~۵', '~۳', '~۵', '~۲۹۶'],
+    ['🇮🇷 ایران', '۰ (رسمی)', '۰', '~۵ (مستشاری)', '~۱۰'],
+  ]}
+  caption="منبع: گزارش‌های SIPRI، وزارت دفاع آمریکا و پژوهش‌های مستقل (۲۰۲۳–۲۰۲۴)"
+  highlightFirst={true}
+/>
+
+<Callout type="critical" title="نکته‌ی تحلیلی">
+
+ایران بدون حتی **یک پایگاه نظامی رسمی** در خارج از مرزها، «تهدید نظامی منطقه‌ای» خوانده می‌شود، در حالی که آمریکا با **بیش از ۷۵۰ پایگاه** در ۸۰ کشور، خود را «تضمین‌کننده‌ی صلح جهانی» می‌نامد. این نمونه‌ای بارز از **دوگانه‌ی اخلاقی** در گفتمان بین‌المللی است.
+
+</Callout>
+
+</AppendixSection>
+
+{/* ==================== پیوست ۲ ==================== */}
+
+<AppendixSection id="appendix-2" title="پیوست ۲: مقایسه‌ی مداخلات نظامی قدرت‌های بزرگ (پس از ۱۹۴۵)" icon="⚔️">
+
+<DataTable
+  headers={['بازیگر', 'نمونه مداخله', 'سال', 'مجوز شورای امنیت', 'برچسب گفتمانی']}
+  rows={[
+    ['🇺🇸 آمریکا', 'کودتا در ایران', '۱۹۵۳', <CrossMark />, 'عملیات محرمانه'],
+    ['🇺🇸 آمریکا', 'جنگ ویتنام', '۱۹۵۵–۱۹۷۵', <CrossMark />, 'مهار کمونیسم'],
+    ['🇺🇸 آمریکا', 'حمله به عراق', '۲۰۰۳', <CrossMark />, 'مبارزه با تروریسم / WMD'],
+    ['🇺🇸 آمریکا', 'حمله به لیبی', '۲۰۱۱', <CheckMark />, 'مسئولیت حفاظت (R2P)'],
+    ['🇷🇺 روسیه', 'حمله به گرجستان', '۲۰۰۸', <CrossMark />, 'حفاظت از اتباع'],
+    ['🇷🇺 روسیه', 'الحاق کریمه', '۲۰۱۴', <CrossMark />, 'حق تعیین سرنوشت'],
+    ['🇷🇺 روسیه', 'تجاوز به اوکراین', '۲۰۲۲', <CrossMark />, 'عملیات ویژه‌ی نظامی'],
+    ['🇬🇧 بریتانیا', 'جنگ فالکلند', '۱۹۸۲', <Dash />, 'حفاظت از سرزمین'],
+    ['🇫🇷 فرانسه', 'مداخله در مالی', '۲۰۱۳', <CheckMark />, 'مبارزه با تروریسم'],
+    ['🇨🇳 چین', 'تهدید نظامی تایوان', 'مستمر', <CrossMark />, 'تمامیت ارضی'],
+    ['🇮🇷 ایران', 'حمایت از حزب‌الله', 'از ۱۹۸۲', <CrossMark />, '«محور مقاومت»'],
+    ['🇮🇷 ایران', 'حضور در سوریه', 'از ۲۰۱۲', <CrossMark />, 'مبارزه با داعش'],
+  ]}
+  caption="مقایسه‌ی برچسب‌های گفتمانی مداخلات مشابه از بازیگران مختلف"
+  highlightFirst={true}
+/>
+
+<Callout type="info" title="الگوی مشاهده‌شده">
+
+- مداخلات **آمریکا و متحدانش** با عناوینی چون «مسئولیت حفاظت»، «مبارزه با تروریسم» و «ترویج دموکراسی» مشروعیت‌بخشی می‌شوند.
+- مداخلات **روسیه** با عناوینی چون «حفاظت از اتباع» و «امنیت ملی» توجیه می‌شوند اما «تجاوز» نامیده می‌شوند.
+- حضور **ایران** با عنوان «حمایت از تروریسم» و «بی‌ثبات‌سازی» محکوم می‌شود.
+- **ساختار مشابه، برچسب متفاوت**: این دقیقاً مصداق دوگانه‌ی اخلاقی است.
+
+</Callout>
+
+</AppendixSection>
+
+{/* ==================== پیوست ۳ ==================== */}
+
+<AppendixSection id="appendix-3" title="پیوست ۳: الحاق‌ها و توسعه‌ی ارضی در تاریخ معاصر" icon="🌍">
+
+<DataTable
+  headers={['بازیگر', 'سرزمین الحاق‌شده', 'سال', 'شیوه', 'واکنش بین‌المللی']}
+  rows={[
+    ['🇺🇸 آمریکا', 'تگزاس و جنوب غرب (از مکزیک)', '۱۸۴۸', 'جنگ', 'عادی‌سازی تدریجی'],
+    ['🇺🇸 آمریکا', 'هاوایی', '۱۸۹۸', 'کودتا + الحاق', 'عادی‌سازی'],
+    ['🇺🇸 آمریکا', 'فیلیپین، گوام، پورتوریکو', '۱۸۹۸', 'جنگ با اسپانیا', 'عادی‌سازی'],
+    ['🇷🇺 روسیه', 'کریمه (از اوکراین)', '۲۰۱۴', 'نظامی + همه‌پرسی', 'تحریم'],
+    ['🇷🇺 روسیه', 'مناطقی از اوکراین', '۲۰۲۲', 'اشغال نظامی', 'تحریم شدید'],
+    ['🇨🇳 چین', 'تبت', '۱۹۵۰', 'نظامی', 'محکومیت محدود'],
+    ['🇮🇱 اسرائیل', 'بلندی‌های جولان', '۱۹۶۷ / ۱۹۸۱', 'نظامی + قانون‌گذاری', 'به رسمیت نشناختن (بجز آمریکا)'],
+    ['🇲🇦 مراکش', 'صحرای غربی', '۱۹۷۵', 'نظامی + مهاجرت', 'مناقشه‌آمیز'],
+    ['🇮🇷 ایران', 'هیچ مورد', '—', '—', '—'],
+  ]}
+  caption="ایران تنها قدرت منطقه‌ای مورد بحث است که هیچ الحاق ارضی در تاریخ معاصر ندارد"
+  highlightFirst={true}
+/>
+
+<Callout type="success" title="نکته‌ی کلیدی">
+
+ایران در میان تمامی قدرت‌های مورد بحث، **تنها بازیگری است که هیچ سرزمینی را در تاریخ معاصر الحاق نکرده** و حتی رسماً از سیاست «صدور انقلاب از طریق نظامی» فاصله گرفته است. با این حال، در گفتمان بین‌المللی بیش از کشورهایی که الحاق‌های متعدد داشته‌اند، «تهدید» تلقی می‌شود.
+
+</Callout>
+
+</AppendixSection>
+
+{/* ==================== پیوست ۴ ==================== */}
+
+<AppendixSection id="appendix-4" title="پیوست ۴: تحریم‌های بین‌المللی — چه کسی تحریم می‌شود و چه کسی نمی‌شود؟" icon="🚫">
+
+<DataTable
+  headers={['کشور', 'رفتار مورد بحث', 'تحریم مؤثر؟', 'نوع تحریم']}
+  rows={[
+    ['🇮🇷 ایران', 'برنامه‌ی هسته‌ای / نیروهای نیابتی', <CheckMark />, 'تحریم‌های گسترده‌ی اقتصادی، نفتی، بانکی'],
+    ['🇷🇺 روسیه', 'الحاق کریمه + تجاوز به اوکراین', '⚠️ نسبی', 'تحریم‌ بخشی از اشخاص و شرکت‌ها'],
+    ['🇨🇳 چین', 'سرکوب اویغورها / تهدید تایوان / هنگ‌کنگ', <CrossMark />, 'تحریم‌ نمادین محدود'],
+    ['🇺🇸 آمریکا', 'حمله به عراق بدون مجوز / شکنجه / گوانتانامو', <CrossMark />, 'هیچ تحریمی'],
+    ['🇬🇧 بریتانیا', 'مشارکت در حمله به عراق', <CrossMark />, 'هیچ تحریمی'],
+    ['🇫🇷 فرانسه', 'مداخله‌ی نظامی در آفریقا', <CrossMark />, 'هیچ تحریمی'],
+    ['🇸🇦 عربستان', 'جنگ یمن / قتل خاشقچی', <CrossMark />, 'تحریم‌ بسیار محدود و موقت'],
+    ['🇮🇱 اسرائیل', 'اشغال / شهرک‌سازی / محاصره‌ غزه', <CrossMark />, 'هیچ تحریم مؤثری'],
+  ]}
+  caption="الگوی تحریم‌ها نشان‌دهنده‌ی انتخابی بودن نظام مجازات بین‌المللی است"
+  highlightFirst={true}
+/>
+
+<Callout type="critical" title="نتیجه‌ی تحلیلی">
+
+نظام تحریمی بین‌المللی نه بر اساس **شدت نقض هنجارها**، بلکه بر اساس **جایگاه بازیگر در سلسله‌مراتب قدرت** عمل می‌کند. ایران با **حداقل نقض ارضی** در میان بازیگران مورد بحث، **بیشترین تحریم‌ها** را متحمل شده است.
+
+</Callout>
+
+</AppendixSection>
+
+{/* ==================== پیوست ۵ ==================== */}
+
+<AppendixSection id="appendix-5" title="پیوست ۵: هزینه‌های نظامی — چه کسی واقعاً «تهدید» است؟" icon="💰">
+
+<MilitaryBarChart />
+
+<DataTable
+  headers={['کشور', 'هزینه‌ی نظامی (میلیارد $)', 'نسبت به GDP', 'سرانه (دلار)', 'نسبت به ایران']}
+  rows={[
+    ['🇺🇸 آمریکا', '~۸۸۶', '~۳.۴٪', '~۲,۶۰۰', '۸۸.۶ برابر'],
+    ['🇨🇳 چین', '~۲۹۶', '~۱.۷٪', '~۲۰۵', '۲۹.۶ برابر'],
+    ['🇷🇺 روسیه', '~۱۰۹', '~۵.۹٪', '~۷۵۰', '۱۰.۹ برابر'],
+    ['🇬🇧 بریتانیا', '~۷۵', '~۲.۳٪', '~۱,۱۰۰', '۷.۵ برابر'],
+    ['🇫🇷 فرانسه', '~۵۶', '~۲.۱٪', '~۸۳۰', '۵.۶ برابر'],
+    ['🇸🇦 عربستان', '~۵۰', '~۶.۰٪', '~۱,۴۰۰', '۵.۰ برابر'],
+    ['🇮🇷 ایران', '~۱۰', '~۲.۵٪', '~۱۱۵', 'مبنا'],
+  ]}
+  caption="ایران با هزینه‌ی نظامی حدود ۱/۸۸ آمریکا، «تهدید اصلی منطقه» نامیده می‌شود"
+  highlightFirst={true}
+/>
+
+</AppendixSection>
+
+{/* ==================== پیوست ۶ ==================== */}
+
+<AppendixSection id="appendix-6" title="پیوست ۶: جدول مقایسه‌ی رفتارهای مشابه با برچسب‌های متفاوت" icon="🏷️">
+
+<DoubleStandardTable />
+
+<Callout type="quote" title="تأمل">
+
+این جدول نشان می‌دهد که **معیار ارزیابی رفتار در نظام بین‌الملل، نه ماهیت رفتار، بلکه هویت بازیگر** است. همین رفتار واحد از سوی بازیگران مختلف، برچسب‌های اخلاقی متضاد می‌گیرد.
+
+</Callout>
+
+</AppendixSection>
+
+{/* ==================== پیوست ۷ ==================== */}
+
+<AppendixSection id="appendix-7" title="پیوست ۷: ماتریس تحلیلی — ارزیابی زور بر اساس سه معیار" icon="📐">
+
+<MatrixSVG />
+
+<DataTable
+  headers={['بازیگر / عملیات', 'مشروعیت (۱–۵)', 'تناسب (۱–۵)', 'پاسخ‌گویی (۱–۵)', 'میانگین', 'ارزیابی']}
+  rows={[
+    ['🇺🇸 حمله به عراق (۲۰۰۳)', '۱', '۱', '۱', '۱.۰', '❌ زور ویرانگر'],
+    ['🇷🇺 الحاق کریمه (۲۰۱۴)', '۲', '۲', '۱', '۱.۷', '❌ زور ویرانگر'],
+    ['🇷🇺 تجاوز به اوکراین (۲۰۲۲)', '۱', '۱', '۱', '۱.۰', '❌ زور ویرانگر'],
+    ['🇺🇸 تحریم غیرنظامیان ایران', '۱', '۱', '۱', '۱.۰', '❌ زور ویرانگر'],
+    ['🇨🇳 تهدید نظامی تایوان', '۲', '۲', '۱', '۱.۷', '⚠️ زور مخاطره‌آمیز'],
+    ['🇮🇷 حمایت از ضد داعش', '۳', '۳', '۲', '۲.۷', '⚠️ مشروط'],
+    ['🇺🇳 عملیات R2P (مدل آرمانی)', '۵', '۴', '۴', '۴.۳', '✅ زور هوشمند'],
+  ]}
+  caption="ارزیابی کیفی بر اساس مدل سه‌وجهی (مشروعیت، تناسب، پاسخ‌گویی) — امتیاز ۱=پایین، ۵=بالا"
+  highlightFirst={true}
+/>
+
+<Callout type="warning" title="توضیح روش‌شناختی">
+
+امتیازدهی فوق **کیفی و تقریبی** است و هدف آن نه رتبه‌بندی دقیق، بلکه **نشان دادن الگوی ناهمسانی** در رفتار بازیگران مختلف نسبت به سه معیار پیشنهادی است. تحلیل دقیق‌تر نیازمند معیارهای کمّی و داده‌های میدانی است.
+
+</Callout>
+
+</AppendixSection>
+
+{/* ==================== پیوست ۸ ==================== */}
+
+<AppendixSection id="appendix-8" title="پیوست ۸: نمودار مفهومی — از زور خام تا زور هوشمند" icon="🧭">
+
+<ConceptFlowSVG />
+
+<Callout type="success" title="خلاصه‌ی مدل">
+
+**زور خام** (بدون فیلتر) → ویرانگر و نامشروع
+**زور هوشمند** (عبور از سه فیلتر مشروعیت، تناسب و پاسخ‌گویی) → قابل‌دفاع و سازنده
+
+این مدل هم برای تحلیل سیاست بین‌الملل و هم برای ارزیابی استراتژی‌های تغییر در سیاست داخلی کاربرد دارد.
+
+</Callout>
+
+</AppendixSection>
+
+<SectionDivider icon="📚" />
+
+## منابع
+
+<div style={{
+  background: '#fafafa',
+  borderRadius: '12px',
+  padding: '2rem',
+  margin: '1.5rem 0',
+  direction: 'rtl',
+  border: '1px solid #e0e0e0'
+}}>
+
+<div style={{ marginBottom: '0.5rem', fontWeight: '700', fontSize: '1.1rem', color: '#29417a' }}>📖 منابع پیشنهادی</div>
+
+---
+
+**[1]** مورگنتا، هانس. *سیاست میان ملت‌ها: تلاش برای قدرت و صلح*. ترجمه‌ی حمیرا مشیرزاده. تهران: دفتر مطالعات سیاسی و بین‌المللی، ۱۳۸۴.
+
+**[2]** چامسکی، نوام. *هژمونی یا بقا: جستجوی آمریکا برای سلطه‌ی جهانی*. تهران: نشر نی، ۱۳۸۵.
+
+**[3]** والتز، کنث. *نظریه‌ی سیاست بین‌الملل*. تهران.
+
+**[4]** میرشایمر، جان. *تراژدی سیاست قدرت‌های بزرگ*. تهران.
+
+**[5]** سعید، ادوارد. *شرق‌شناسی*. تهران.
+
+**[6]** سخنرانی مارک کارنی در اجلاس داووس، ژانویه ۲۰۲۵.
+
+**[7]** SIPRI Military Expenditure Database, 2024.
+
+**[8]** U.S. Department of Defense, *Base Structure Report*, 2023.
+
+</div>
+
+---
+
+<div style={{ marginTop: '1rem' }}>
+
+<Footnote id="1">Thucydides — مورخ یونانی و نویسنده‌ی «جنگ پلوپونزی»</Footnote>
+<Footnote id="2">Thomas Hobbes — فیلسوف سیاسی انگلیسی و نویسنده‌ی «لویاتان»</Footnote>
+<Footnote id="3">Niccolò Machiavelli — اندیشمند سیاسی ایتالیایی و نویسنده‌ی «شهریار»</Footnote>
+<Footnote id="4">Hans Morgenthau — بنیان‌گذار رئالیسم کلاسیک در روابط بین‌الملل</Footnote>
+<Footnote id="5">Politics Among Nations — اثر اصلی مورگنتا</Footnote>
+<Footnote id="6">Constructivists — سازه‌انگاران در نظریه‌ی روابط بین‌الملل</Footnote>
+<Footnote id="7">Noam Chomsky — زبان‌شناس و منتقد سیاسی آمریکایی</Footnote>
+<Footnote id="8">Mark Carney — نخست‌وزیر کانادا</Footnote>
+
+</div>
+
+---
+
+<div style={{
+  textAlign: 'center',
+  padding: '2rem',
+  marginTop: '2rem',
+  background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+  borderRadius: '14px',
+  color: '#a8b2d1'
+}}>
+  <p style={{ fontSize: '0.9rem', margin: '0 0 0.5rem' }}>
+    این مقاله با هدف طرح پرسش‌های انتقادی و نه ارائه‌ی پاسخ‌های قطعی تنظیم شده است.
+  </p>
+  <p style={{ fontSize: '0.8rem', color: '#64ffda', margin: 0 }}>
+    ✍️ مهدی سالم — ۲۰۲۵
+  </p>
+</div>

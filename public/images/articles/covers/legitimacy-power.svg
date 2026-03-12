@@ -1,0 +1,374 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+<defs>
+
+  <!-- ─── BACKGROUND ─── -->
+  <radialGradient id="bg" cx="52%" cy="44%" r="80%">
+    <stop offset="0%"   stop-color="#f8f4ee"/>
+    <stop offset="45%"  stop-color="#ede7dc"/>
+    <stop offset="100%" stop-color="#d4ccc0"/>
+  </radialGradient>
+
+  <!-- ─── SPHERE 1 – champagne pearl ─── -->
+  <radialGradient id="sph1" cx="36%" cy="32%" r="65%">
+    <stop offset="0%"   stop-color="#ffffff" stop-opacity="1"/>
+    <stop offset="18%"  stop-color="#f9f2e3" stop-opacity="1"/>
+    <stop offset="55%"  stop-color="#d4b483" stop-opacity="1"/>
+    <stop offset="82%"  stop-color="#9e7a3f" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#5c4015" stop-opacity="1"/>
+  </radialGradient>
+
+  <!-- ─── SPHERE 2 – frosted silver ─── -->
+  <radialGradient id="sph2" cx="38%" cy="30%" r="62%">
+    <stop offset="0%"   stop-color="#ffffff" stop-opacity="1"/>
+    <stop offset="22%"  stop-color="#eef1f5" stop-opacity="1"/>
+    <stop offset="58%"  stop-color="#b8c4d4" stop-opacity="1"/>
+    <stop offset="85%"  stop-color="#7a8fa8" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#3d4f64" stop-opacity="1"/>
+  </radialGradient>
+
+  <!-- ─── SPHERE 3 – rose quartz ─── -->
+  <radialGradient id="sph3" cx="35%" cy="30%" r="60%">
+    <stop offset="0%"   stop-color="#ffffff"/>
+    <stop offset="20%"  stop-color="#fde8e4"/>
+    <stop offset="55%"  stop-color="#e8a89c"/>
+    <stop offset="82%"  stop-color="#c06860"/>
+    <stop offset="100%" stop-color="#7a3030"/>
+  </radialGradient>
+
+  <!-- ─── TORUS ring gradient ─── -->
+  <radialGradient id="tor1" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#fffdf8"/>
+    <stop offset="40%"  stop-color="#e8d5a3"/>
+    <stop offset="80%"  stop-color="#b89050"/>
+    <stop offset="100%" stop-color="#7a5c20" stop-opacity="0.6"/>
+  </radialGradient>
+
+  <!-- ─── GLASS SLAB gradient ─── -->
+  <linearGradient id="glass1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.72"/>
+    <stop offset="35%"  stop-color="#f0e8d8" stop-opacity="0.48"/>
+    <stop offset="70%"  stop-color="#d4c4a0" stop-opacity="0.32"/>
+    <stop offset="100%" stop-color="#b0985e" stop-opacity="0.18"/>
+  </linearGradient>
+
+  <linearGradient id="glass2" x1="100%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.68"/>
+    <stop offset="40%"  stop-color="#dde8f2" stop-opacity="0.42"/>
+    <stop offset="100%" stop-color="#8aa8c8" stop-opacity="0.15"/>
+  </linearGradient>
+
+  <linearGradient id="glass3" x1="20%" y1="0%" x2="80%" y2="100%">
+    <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.60"/>
+    <stop offset="50%"  stop-color="#f5e0e8" stop-opacity="0.35"/>
+    <stop offset="100%" stop-color="#c080a0" stop-opacity="0.12"/>
+  </linearGradient>
+
+  <!-- ─── CONE / PRISM gradient ─── -->
+  <linearGradient id="prism" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.95"/>
+    <stop offset="30%"  stop-color="#f8f0dc" stop-opacity="0.80"/>
+    <stop offset="65%"  stop-color="#c8a850" stop-opacity="0.65"/>
+    <stop offset="100%" stop-color="#705010" stop-opacity="0.50"/>
+  </linearGradient>
+
+  <!-- ─── LIGHT BEAM ─── -->
+  <linearGradient id="beam1" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="beam2" x1="100%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#ffe8c0" stop-opacity="0.40"/>
+    <stop offset="100%" stop-color="#ffe8c0" stop-opacity="0"/>
+  </linearGradient>
+
+  <!-- ─── CAUSTIC shimmer ─── -->
+  <radialGradient id="caust1" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.55"/>
+    <stop offset="60%"  stop-color="#ffe4a0" stop-opacity="0.18"/>
+    <stop offset="100%" stop-color="#ffe4a0" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="caust2" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.45"/>
+    <stop offset="55%"  stop-color="#c8e0ff" stop-opacity="0.15"/>
+    <stop offset="100%" stop-color="#c8e0ff" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- ─── SPECULAR HIGHLIGHT (small bright dot) ─── -->
+  <radialGradient id="spec" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#ffffff" stop-opacity="1"/>
+    <stop offset="50%"  stop-color="#ffffff" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- ─── SHADOW beneath objects ─── -->
+  <radialGradient id="shad" cx="50%" cy="50%" r="50%">
+    <stop offset="0%"   stop-color="#8a7050" stop-opacity="0.28"/>
+    <stop offset="100%" stop-color="#8a7050" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- ─── FILTERS ─── -->
+  <filter id="blur_soft" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="18"/>
+  </filter>
+  <filter id="blur_xs" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="4"/>
+  </filter>
+  <filter id="blur_md">
+    <feGaussianBlur stdDeviation="9"/>
+  </filter>
+  <filter id="glow_w" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="14" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glow_xs" x="-25%" y="-25%" width="150%" height="150%">
+    <feGaussianBlur stdDeviation="5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="inner_shadow">
+    <feOffset dx="4" dy="8"/>
+    <feGaussianBlur stdDeviation="6" result="offset-blur"/>
+    <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"/>
+    <feFlood flood-color="#8a6030" flood-opacity="0.35" result="color"/>
+    <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+    <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+  </filter>
+
+</defs>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- BACKGROUND                                        -->
+<!-- ════════════════════════════════════════════════ -->
+<rect width="1200" height="1200" fill="url(#bg)"/>
+
+<!-- subtle warm vignette -->
+<radialGradient id="vig" cx="50%" cy="50%" r="70%">
+  <stop offset="0%"   stop-color="#f8f4ee" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#b89a70" stop-opacity="0.22"/>
+</radialGradient>
+<rect width="1200" height="1200" fill="url(#vig)"/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- AMBIENT LIGHT POOLS (background glow layers)     -->
+<!-- ════════════════════════════════════════════════ -->
+<ellipse cx="420" cy="380" rx="340" ry="300" fill="url(#caust1)" filter="url(#blur_soft)" opacity="0.7"/>
+<ellipse cx="800" cy="820" rx="300" ry="260" fill="url(#caust2)" filter="url(#blur_soft)" opacity="0.55"/>
+<ellipse cx="860" cy="300" rx="220" ry="200" fill="url(#caust1)" filter="url(#blur_soft)" opacity="0.4"/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- LIGHT BEAMS (volumetric rays)                    -->
+<!-- ════════════════════════════════════════════════ -->
+<!-- Main diagonal beam top-left -->
+<polygon points="180,0 420,0 820,1200 530,1200" fill="url(#beam1)" opacity="0.22"/>
+<!-- Secondary beam -->
+<polygon points="560,0 680,0 980,1200 850,1200" fill="url(#beam2)" opacity="0.14"/>
+<!-- Thin accent ray -->
+<polygon points="310,0 340,0 560,1200 520,1200" fill="#ffffff" opacity="0.07"/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- GROUND SHADOWS (before objects, underneath)      -->
+<!-- ════════════════════════════════════════════════ -->
+<!-- Shadow for big sphere -->
+<ellipse cx="430" cy="860" rx="185" ry="48" fill="url(#shad)" filter="url(#blur_md)"/>
+<!-- Shadow for silver sphere -->
+<ellipse cx="800" cy="730" rx="130" ry="34" filter="url(#blur_md)" fill="#8090a8" opacity="0.18"/>
+<!-- Shadow for prism -->
+<ellipse cx="680" cy="940" rx="110" ry="28" filter="url(#blur_md)" fill="#a09070" opacity="0.16"/>
+<!-- Shadow for glass slabs -->
+<ellipse cx="870" cy="510" rx="80" ry="20" filter="url(#blur_md)" fill="#8090a8" opacity="0.12"/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- GLASS SLABS (back layer, partially behind)       -->
+<!-- ════════════════════════════════════════════════ -->
+
+<!-- Slab A – tall vertical, right side -->
+<g transform="rotate(-12 870 480)">
+  <rect x="820" y="200" width="100" height="560" rx="18"
+        fill="url(#glass2)" stroke="#c8d8e8" stroke-width="1" opacity="0.88"/>
+  <!-- edge highlight -->
+  <rect x="820" y="200" width="8" height="560" rx="4"
+        fill="#ffffff" opacity="0.55"/>
+  <!-- top face illusion -->
+  <rect x="820" y="200" width="100" height="14" rx="6"
+        fill="#ffffff" opacity="0.65"/>
+</g>
+
+<!-- Slab B – wide horizontal, back left -->
+<g transform="rotate(8 300 620)">
+  <rect x="100" y="590" width="420" height="80" rx="16"
+        fill="url(#glass1)" stroke="#ddd0b0" stroke-width="1" opacity="0.80"/>
+  <rect x="100" y="590" width="420" height="10" rx="5"
+        fill="#ffffff" opacity="0.60"/>
+  <rect x="100" y="590" width="10" height="80" rx="5"
+        fill="#ffffff" opacity="0.42"/>
+</g>
+
+<!-- Slab C – diagonal, mid-centre -->
+<g transform="rotate(-22 640 560)">
+  <rect x="510" y="480" width="260" height="60" rx="14"
+        fill="url(#glass3)" stroke="#e8d0d8" stroke-width="1" opacity="0.75"/>
+  <rect x="510" y="480" width="260" height="9" rx="4"
+        fill="#ffffff" opacity="0.55"/>
+</g>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- TORUS RINGS (floating orbital elements)          -->
+<!-- ════════════════════════════════════════════════ -->
+
+<!-- Torus 1 around big champagne sphere (ellipse simulation) -->
+<g transform="rotate(-18 435 720)">
+  <ellipse cx="435" cy="720" rx="240" ry="55"
+           fill="none" stroke="url(#tor1)" stroke-width="22" opacity="0.52"/>
+  <!-- inner ring highlight -->
+  <ellipse cx="435" cy="720" rx="240" ry="55"
+           fill="none" stroke="#ffffff" stroke-width="4" opacity="0.35"
+           stroke-dasharray="80 320"/>
+</g>
+
+<!-- Torus 2 – thin, silver sphere -->
+<g transform="rotate(12 795 580)">
+  <ellipse cx="795" cy="580" rx="165" ry="38"
+           fill="none" stroke="#b8c8dc" stroke-width="14" opacity="0.45"/>
+  <ellipse cx="795" cy="580" rx="165" ry="38"
+           fill="none" stroke="#ffffff" stroke-width="3" opacity="0.30"
+           stroke-dasharray="60 240"/>
+</g>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- MAIN SPHERE – CHAMPAGNE GOLD (hero element)      -->
+<!-- ════════════════════════════════════════════════ -->
+<!-- soft bloom beneath -->
+<circle cx="435" cy="680" r="220" fill="#d4a840" opacity="0.12" filter="url(#blur_soft)"/>
+<!-- body -->
+<circle cx="435" cy="680" r="195" fill="url(#sph1)"/>
+<!-- inner shadow arc (bottom-right darkening) -->
+<path d="M 435 875 A 195 195 0 0 0 620 570" fill="none"
+      stroke="#6b4010" stroke-width="60" opacity="0.18" stroke-linecap="round"/>
+<!-- primary specular highlight -->
+<ellipse cx="368" cy="600" rx="60" ry="42" fill="url(#spec)" opacity="0.82" filter="url(#blur_xs)"/>
+<!-- secondary soft specular -->
+<ellipse cx="500" cy="760" rx="35" ry="22" fill="#ffffff" opacity="0.18" filter="url(#blur_xs)"/>
+<!-- micro glint -->
+<circle cx="355" cy="590" r="10" fill="#ffffff" opacity="0.90" filter="url(#glow_w)"/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- SECONDARY SPHERE – FROSTED SILVER               -->
+<!-- ════════════════════════════════════════════════ -->
+<circle cx="800" cy="575" r="145" fill="#9ab0c8" opacity="0.10" filter="url(#blur_soft)"/>
+<circle cx="800" cy="575" r="138" fill="url(#sph2)"/>
+<path d="M 800 713 A 138 138 0 0 0 930 490" fill="none"
+      stroke="#3d5070" stroke-width="45" opacity="0.15" stroke-linecap="round"/>
+<ellipse cx="744" cy="508" rx="44" ry="30" fill="url(#spec)" opacity="0.78" filter="url(#blur_xs)"/>
+<circle cx="736" cy="500" r="8" fill="#ffffff" opacity="0.88" filter="url(#glow_xs)"/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- TERTIARY SPHERE – ROSE QUARTZ (small accent)    -->
+<!-- ════════════════════════════════════════════════ -->
+<circle cx="275" cy="320" r="88" fill="#e8a0a0" opacity="0.10" filter="url(#blur_soft)"/>
+<circle cx="275" cy="320" r="82" fill="url(#sph3)"/>
+<path d="M 275 402 A 82 82 0 0 0 352 248" fill="none"
+      stroke="#7a3030" stroke-width="28" opacity="0.15" stroke-linecap="round"/>
+<ellipse cx="237" cy="274" rx="28" ry="20" fill="url(#spec)" opacity="0.80" filter="url(#blur_xs)"/>
+<circle cx="231" cy="268" r="6" fill="#ffffff" opacity="0.92" filter="url(#glow_xs)"/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- CRYSTAL PRISM (triangular, refracting light)     -->
+<!-- ════════════════════════════════════════════════ -->
+<g transform="rotate(-8 680 860)">
+  <!-- face 1 – lit -->
+  <polygon points="600,700 760,700 680,920"
+           fill="url(#prism)" stroke="#e8d090" stroke-width="1.5" opacity="0.90"/>
+  <!-- face 2 – shadow side -->
+  <polygon points="600,700 680,920 560,880"
+           fill="#c8a050" opacity="0.30"/>
+  <!-- top edge highlight -->
+  <line x1="600" y1="700" x2="760" y2="700"
+        stroke="#ffffff" stroke-width="3" opacity="0.70" stroke-linecap="round"/>
+  <!-- left edge -->
+  <line x1="600" y1="700" x2="680" y2="920"
+        stroke="#f8e8b0" stroke-width="1.5" opacity="0.50"/>
+  <!-- rainbow dispersion (thin coloured lines below prism) -->
+  <line x1="670" y1="925" x2="590" y2="1020" stroke="#e84040" stroke-width="1.5" opacity="0.45" stroke-linecap="round"/>
+  <line x1="675" y1="924" x2="620" y2="1020" stroke="#e88820" stroke-width="1.5" opacity="0.42"/>
+  <line x1="680" y1="922" x2="650" y2="1020" stroke="#d4c020" stroke-width="1.5" opacity="0.40"/>
+  <line x1="684" y1="921" x2="680" y2="1020" stroke="#40b840" stroke-width="1.5" opacity="0.40"/>
+  <line x1="687" y1="920" x2="712" y2="1020" stroke="#2090e0" stroke-width="1.5" opacity="0.42"/>
+  <line x1="690" y1="920" x2="742" y2="1020" stroke="#8040c8" stroke-width="1.5" opacity="0.42"/>
+</g>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- FLOATING THIN RINGS (additional depth)           -->
+<!-- ════════════════════════════════════════════════ -->
+<!-- Ring around rose sphere -->
+<g transform="rotate(30 275 320)">
+  <ellipse cx="275" cy="320" rx="115" ry="28"
+           fill="none" stroke="#e8b8b0" stroke-width="7" opacity="0.38"/>
+  <ellipse cx="275" cy="320" rx="115" ry="28"
+           fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.28"
+           stroke-dasharray="40 150"/>
+</g>
+
+<!-- Tiny floating ring accent top right -->
+<g transform="rotate(-5 960 240)">
+  <ellipse cx="960" cy="240" rx="80" ry="18"
+           fill="none" stroke="#c8d8e0" stroke-width="9" opacity="0.32"/>
+  <ellipse cx="960" cy="240" rx="80" ry="18"
+           fill="none" stroke="#ffffff" stroke-width="2" opacity="0.22"
+           stroke-dasharray="30 110"/>
+</g>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- CAUSTIC LIGHT PATCHES on floor/background        -->
+<!-- ════════════════════════════════════════════════ -->
+<ellipse cx="350" cy="900" rx="100" ry="28" fill="#ffe080" opacity="0.22" filter="url(#blur_md)"/>
+<ellipse cx="480" cy="940" rx="70" ry="18" fill="#fff0a0" opacity="0.18" filter="url(#blur_md)"/>
+<ellipse cx="720" cy="760" rx="80" ry="22" fill="#e0f0ff" opacity="0.20" filter="url(#blur_md)"/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- LENS FLARE (top-left light source)               -->
+<!-- ════════════════════════════════════════════════ -->
+<!-- core flare -->
+<circle cx="160" cy="140" r="50" fill="#ffffff" opacity="0.60" filter="url(#blur_soft)"/>
+<circle cx="160" cy="140" r="22" fill="#ffffff" opacity="0.88" filter="url(#blur_xs)"/>
+<circle cx="160" cy="140" r="8"  fill="#ffffff" opacity="1.00"/>
+<!-- flare streaks -->
+<line x1="160" y1="60"  x2="160" y2="220" stroke="#ffffff" stroke-width="1.5" opacity="0.30"/>
+<line x1="80"  y1="140" x2="240" y2="140" stroke="#ffffff" stroke-width="1.5" opacity="0.30"/>
+<line x1="100" y1="80"  x2="220" y2="200" stroke="#ffffff" stroke-width="1"   opacity="0.22"/>
+<line x1="220" y1="80"  x2="100" y2="200" stroke="#ffffff" stroke-width="1"   opacity="0.22"/>
+<!-- secondary flare dot (opposite side along diagonal) -->
+<circle cx="820" cy="840" r="14" fill="#ffffff" opacity="0.30" filter="url(#blur_xs)"/>
+<circle cx="820" cy="840" r="5"  fill="#ffffff" opacity="0.50"/>
+<!-- tertiary -->
+<circle cx="550" cy="490" r="7"  fill="#ffffff" opacity="0.25" filter="url(#blur_xs)"/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- MICRO PARTICLE DUST (floating specks of light)  -->
+<!-- ════════════════════════════════════════════════ -->
+<circle cx="310" cy="210" r="2.5" fill="#ffffff" opacity="0.55"/>
+<circle cx="560" cy="160" r="2"   fill="#ffe8a0" opacity="0.50"/>
+<circle cx="720" cy="220" r="1.8" fill="#ffffff" opacity="0.45"/>
+<circle cx="900" cy="380" r="2.2" fill="#ffffff" opacity="0.48"/>
+<circle cx="980" cy="600" r="1.6" fill="#c8e0ff" opacity="0.40"/>
+<circle cx="840" cy="180" r="2.0" fill="#ffffff" opacity="0.50"/>
+<circle cx="180" cy="480" r="1.8" fill="#ffe8b0" opacity="0.42"/>
+<circle cx="1050" cy="750" r="2.0" fill="#ffffff" opacity="0.38"/>
+<circle cx="130" cy="760" r="1.5" fill="#ffffff" opacity="0.35"/>
+<circle cx="620" cy="340" r="1.5" fill="#ffffff" opacity="0.40"/>
+<circle cx="490" cy="820" r="1.8" fill="#ffe8a0" opacity="0.38"/>
+<circle cx="760" cy="1000" r="2.0" fill="#ffffff" opacity="0.35"/>
+
+<!-- ════════════════════════════════════════════════ -->
+<!-- EDGE FRAME (subtle luxe border)                  -->
+<!-- ════════════════════════════════════════════════ -->
+<rect x="28" y="28" width="1144" height="1144" rx="4"
+      fill="none" stroke="#c4a860" stroke-width="0.8" opacity="0.35"/>
+<rect x="36" y="36" width="1128" height="1128" rx="3"
+      fill="none" stroke="#ffffff" stroke-width="0.5" opacity="0.22"/>
+
+<!-- corner accent marks -->
+<path d="M 50 50 L 90 50 M 50 50 L 50 90"   stroke="#c4a860" stroke-width="1.2" opacity="0.55" fill="none"/>
+<path d="M 1150 50 L 1110 50 M 1150 50 L 1150 90"  stroke="#c4a860" stroke-width="1.2" opacity="0.55" fill="none"/>
+<path d="M 50 1150 L 90 1150 M 50 1150 L 50 1110"  stroke="#c4a860" stroke-width="1.2" opacity="0.55" fill="none"/>
+<path d="M 1150 1150 L 1110 1150 M 1150 1150 L 1150 1110" stroke="#c4a860" stroke-width="1.2" opacity="0.55" fill="none"/>
+
+</svg>
