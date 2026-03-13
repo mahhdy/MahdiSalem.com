@@ -1,0 +1,78 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg19" x1="0" y1="1080" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <radialGradient id="glow19" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#14B8A6" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg19)"/>
+  <rect width="1080" height="1080" fill="url(#glow19)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="320" height="48" rx="24"
+        fill="#14B8A6" fill-opacity="0.08" stroke="#14B8A6" stroke-opacity="0.25"/>
+  <text x="200" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#14B8A6"
+        text-anchor="middle" direction="rtl">فصل ۲ · اسلاید ۹ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="155" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#2DD4BF" text-anchor="start" direction="rtl">مثال: «قانون» در سه سطح</text>
+  <text x="1000" y="205" font-family="Vazirmatn, Tahoma" font-size="24" fill="#888"
+        text-anchor="start" direction="rtl">نمایش عملی ابزار سه‌سطحی با مفهومی آشنا</text>
+
+  <!-- سه کارت بزرگ عمودی -->
+  <!-- عام -->
+  <rect x="80" y="260" width="920" height="190" rx="20"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.2" stroke-width="1.5"/>
+  <rect x="80" y="260" width="8" height="190" rx="4" fill="#22C55E" fill-opacity="0.5"/>
+  <text x="1000" y="310" font-family="Vazirmatn, Tahoma" font-size="34" fill="#4ADE80"
+        text-anchor="start" direction="rtl" font-weight="bold">سطح عام</text>
+  <text x="1000" y="360" font-family="Vazirmatn, Tahoma" font-size="24" fill="#DDD"
+        text-anchor="start" direction="rtl">هر سند یا آموزه‌ای که مبتنی بر مشروعیتی کمتر قابل تردید،</text>
+  <text x="1000" y="395" font-family="Vazirmatn, Tahoma" font-size="24" fill="#DDD"
+        text-anchor="start" direction="rtl">روابط انسانی را تنظیم کرده و به واقعیت اجتماعی تبدیل شود</text>
+  <text x="1000" y="430" font-family="Vazirmatn, Tahoma" font-size="20" fill="#888"
+        text-anchor="start" direction="rtl">← شامل فرمان شاه، قوانین مذهبی، و حتی قانون جنگل</text>
+
+  <!-- خاص -->
+  <rect x="80" y="470" width="920" height="190" rx="20"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.2" stroke-width="1.5"/>
+  <rect x="80" y="470" width="8" height="190" rx="4" fill="#06B6D4" fill-opacity="0.5"/>
+  <text x="1000" y="520" font-family="Vazirmatn, Tahoma" font-size="34" fill="#22D3EE"
+        text-anchor="start" direction="rtl" font-weight="bold">سطح خاص</text>
+  <text x="1000" y="570" font-family="Vazirmatn, Tahoma" font-size="24" fill="#DDD"
+        text-anchor="start" direction="rtl">قانون مبتنی بر قرارداد اجتماعی و گفتگوی مدنی</text>
+  <text x="1000" y="605" font-family="Vazirmatn, Tahoma" font-size="24" fill="#DDD"
+        text-anchor="start" direction="rtl">حاصل توازن نیروهای اجتماعی</text>
+  <text x="1000" y="640" font-family="Vazirmatn, Tahoma" font-size="20" fill="#F59E0B"
+        text-anchor="start" direction="rtl">⚠ هنوز ممکن: قانون بردگی مدرن، تبعیض پارلمانی</text>
+
+  <!-- اخص -->
+  <rect x="80" y="680" width="920" height="190" rx="20"
+        fill="#E8B83D" fill-opacity="0.04" stroke="#E8B83D" stroke-opacity="0.2" stroke-width="1.5"/>
+  <rect x="80" y="680" width="8" height="190" rx="4" fill="#E8B83D" fill-opacity="0.5"/>
+  <text x="1000" y="730" font-family="Vazirmatn, Tahoma" font-size="34" fill="#FBBF24"
+        text-anchor="start" direction="rtl" font-weight="bold">سطح اخص</text>
+  <text x="1000" y="780" font-family="Vazirmatn, Tahoma" font-size="24" fill="#DDD"
+        text-anchor="start" direction="rtl">قانونی که با قطب‌نمای اخلاقی سنجیده و پالوده شده</text>
+  <text x="1000" y="815" font-family="Vazirmatn, Tahoma" font-size="24" fill="#DDD"
+        text-anchor="start" direction="rtl">ظرفیت خوداصلاحی دارد · غبارزدایی می‌شود</text>
+  <text x="1000" y="850" font-family="Vazirmatn, Tahoma" font-size="20" fill="#888"
+        text-anchor="start" direction="rtl">← ایدئال: قانونی مبتنی بر ارزش‌های اصیل انسانی و منطق برابری</text>
+
+  <!-- نکته‌ پایینی -->
+  <rect x="200" y="905" width="680" height="60" rx="14"
+        fill="#14B8A6" fill-opacity="0.06" stroke="#14B8A6" stroke-opacity="0.15"/>
+  <text x="540" y="944" font-family="Vazirmatn, Tahoma" font-size="24" fill="#2DD4BF"
+        text-anchor="middle" direction="rtl" font-weight="bold">حق نیز دقیقاً از همین ابزار سه‌سطحی عبور خواهد کرد ←</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#14B8A6" opacity="0.2"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۲</text>
+</svg>

@@ -1,0 +1,81 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg40" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A1018"/>
+      <stop offset="100%" stop-color="#161E2E"/>
+    </linearGradient>
+    <radialGradient id="glow40" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg40)"/>
+  <rect width="1080" height="1080" fill="url(#glow40)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="360" height="48" rx="24"
+        fill="#06B6D4" fill-opacity="0.08" stroke="#06B6D4" stroke-opacity="0.25"/>
+  <text x="220" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#06B6D4"
+        text-anchor="middle" direction="rtl">فصل ۴ · اسلاید ۱ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="180" font-family="Vazirmatn, Tahoma" font-size="64" font-weight="900"
+        fill="#06B6D4" text-anchor="middle" direction="rtl">مکاتب و منشأها</text>
+  <text x="540" y="235" font-family="Vazirmatn, Tahoma" font-size="28" fill="#778"
+        text-anchor="middle" direction="rtl">ده منشأ متمایز · حق از کجا می‌آید؟</text>
+
+  <!-- ۵ منشأ اول -->
+  <rect x="555" y="290" width="470" height="110" rx="16"
+        fill="#DC2626" fill-opacity="0.05" stroke="#DC2626" stroke-opacity="0.3"/>
+  <text x="990" y="340" font-family="Vazirmatn, Tahoma" font-size="32" fill="#F87171"
+        font-weight="bold" text-anchor="start" direction="rtl">۱. قدرت</text>
+  <text x="990" y="380" font-family="Vazirmatn, Tahoma" font-size="24" fill="#AAA"
+        text-anchor="start" direction="rtl">نفوذ · خشونت · ثروت</text>
+
+  <rect x="55" y="290" width="470" height="110" rx="16"
+        fill="#22C55E" fill-opacity="0.05" stroke="#22C55E" stroke-opacity="0.3"/>
+  <text x="490" y="340" font-family="Vazirmatn, Tahoma" font-size="32" fill="#4ADE80"
+        font-weight="bold" text-anchor="start" direction="rtl">۲. طبیعت</text>
+  <text x="490" y="380" font-family="Vazirmatn, Tahoma" font-size="24" fill="#AAA"
+        text-anchor="start" direction="rtl">فطرت · ذات انسانی</text>
+
+  <rect x="555" y="420" width="470" height="110" rx="16"
+        fill="#A855F7" fill-opacity="0.05" stroke="#A855F7" stroke-opacity="0.3"/>
+  <text x="990" y="470" font-family="Vazirmatn, Tahoma" font-size="32" fill="#C084FC"
+        font-weight="bold" text-anchor="start" direction="rtl">۳. ماوراء / وحی</text>
+  <text x="990" y="510" font-family="Vazirmatn, Tahoma" font-size="24" fill="#AAA"
+        text-anchor="start" direction="rtl">دستور الهی · متون مقدس</text>
+
+  <rect x="55" y="420" width="470" height="110" rx="16"
+        fill="#06B6D4" fill-opacity="0.05" stroke="#06B6D4" stroke-opacity="0.3"/>
+  <text x="490" y="470" font-family="Vazirmatn, Tahoma" font-size="32" fill="#06B6D4"
+        font-weight="bold" text-anchor="start" direction="rtl">۴. سازگاری و بقا</text>
+  <text x="490" y="510" font-family="Vazirmatn, Tahoma" font-size="24" fill="#AAA"
+        text-anchor="start" direction="rtl">فرگشت اجتماعی</text>
+
+  <rect x="555" y="550" width="470" height="110" rx="16"
+        fill="#F59E0B" fill-opacity="0.05" stroke="#F59E0B" stroke-opacity="0.3"/>
+  <text x="990" y="600" font-family="Vazirmatn, Tahoma" font-size="32" fill="#F59E0B"
+        font-weight="bold" text-anchor="start" direction="rtl">۵. توافق</text>
+  <text x="990" y="640" font-family="Vazirmatn, Tahoma" font-size="24" fill="#AAA"
+        text-anchor="start" direction="rtl">قرارداد · اجماع · مذاکره</text>
+
+  <!-- نکته -->
+  <rect x="80" y="700" width="920" height="120" rx="18"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.18"/>
+  <text x="540" y="750" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FFFFFF"
+        font-weight="bold" text-anchor="middle" direction="rtl">هیچ منشأ واحدی کافی نیست</text>
+  <text x="540" y="795" font-family="Vazirmatn, Tahoma" font-size="26" fill="#CCC"
+        text-anchor="middle" direction="rtl">هر نظام حقوقی ترکیبی وزن‌دار از این منشأهاست</text>
+
+  <!-- ادامه دارد -->
+  <rect x="200" y="860" width="680" height="65" rx="14"
+        fill="#1A1A30" stroke="#C19A3E" stroke-opacity="0.2"/>
+  <text x="540" y="902" font-family="Vazirmatn, Tahoma" font-size="26" fill="#C19A3E"
+        text-anchor="middle" direction="rtl">۵ منشأ دیگر در اسلاید بعدی ←</text>
+
+  <rect x="40" y="1010" width="1000" height="2.5" rx="1" fill="#06B6D4" opacity="0.3"/>
+  <text x="540" y="1060" font-family="Vazirmatn, Tahoma" font-size="22" fill="#556"
+        text-anchor="middle" direction="rtl">بعدی: منشأهای ۶ تا ۱۰ ←</text>
+</svg>

@@ -1,0 +1,86 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-levels" x1="540" y1="0" x2="540" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A0A2E"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0A1018"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-levels)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="440" height="48" rx="24"
+        fill="#C084FC" fill-opacity="0.08" stroke="#C084FC" stroke-opacity="0.25"/>
+  <text x="260" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#C084FC"
+        text-anchor="middle" direction="rtl">روش‌شناسی نویسنده · تعبیرسازی سه‌سطحی</text>
+
+  <!-- عنوان -->
+  <text x="540" y="155" font-family="Vazirmatn, Tahoma" font-size="52" font-weight="900"
+        fill="#F0E6FF" text-anchor="middle" direction="rtl">سه سطح معنای هر مفهوم</text>
+  <text x="540" y="210" font-family="Vazirmatn, Tahoma" font-size="24" fill="#A78BFA"
+        text-anchor="middle" direction="rtl">ابتکار روش‌شناختی: عام · خاص · اخص</text>
+
+  <!-- خط عمودی مرکزی -->
+  <line x1="540" y1="260" x2="540" y2="870" stroke="#C084FC" stroke-opacity="0.15" stroke-width="2"/>
+
+  <!-- سطح ۱: عام -->
+  <rect x="140" y="270" width="800" height="150" rx="22"
+        fill="#06B6D4" fill-opacity="0.05" stroke="#06B6D4" stroke-opacity="0.3" stroke-width="1.5"/>
+  <circle cx="950" cy="345" r="28" fill="#06B6D4" fill-opacity="0.12" stroke="#06B6D4" stroke-opacity="0.5"/>
+  <text x="950" y="360" font-family="Vazirmatn, Tahoma" font-size="36" fill="#67E8F9"
+        font-weight="bold" text-anchor="middle">۱</text>
+  <text x="870" y="315" font-family="Vazirmatn, Tahoma" font-size="36" fill="#67E8F9"
+        font-weight="bold" text-anchor="start" direction="rtl">عام</text>
+  <text x="870" y="355" font-family="Vazirmatn, Tahoma" font-size="28" fill="#BBB"
+        text-anchor="start" direction="rtl">همه‌ی نمونه‌ها را دربرگیرد · توصیفی و حداقلی</text>
+  <text x="870" y="393" font-family="Vazirmatn, Tahoma" font-size="24" fill="#888"
+        text-anchor="start" direction="rtl">مثال: قانون = هر دستورالعمل رسمی با ضمانت اجرا</text>
+
+  <!-- فلش پایین -->
+  <polygon points="540,430 525,440 555,440" fill="#C084FC" fill-opacity="0.4"/>
+
+  <!-- سطح ۲: خاص -->
+  <rect x="140" y="460" width="800" height="150" rx="22"
+        fill="#F59E0B" fill-opacity="0.05" stroke="#F59E0B" stroke-opacity="0.3" stroke-width="1.5"/>
+  <circle cx="950" cy="535" r="28" fill="#F59E0B" fill-opacity="0.12" stroke="#F59E0B" stroke-opacity="0.5"/>
+  <text x="950" y="550" font-family="Vazirmatn, Tahoma" font-size="36" fill="#FCD34D"
+        font-weight="bold" text-anchor="middle">۲</text>
+  <text x="870" y="505" font-family="Vazirmatn, Tahoma" font-size="36" fill="#FCD34D"
+        font-weight="bold" text-anchor="start" direction="rtl">خاص</text>
+  <text x="870" y="545" font-family="Vazirmatn, Tahoma" font-size="28" fill="#BBB"
+        text-anchor="start" direction="rtl">مدرن و روشنگرانه · مبتنی بر آزادبخشی</text>
+  <text x="870" y="583" font-family="Vazirmatn, Tahoma" font-size="24" fill="#888"
+        text-anchor="start" direction="rtl">مثال: قانون = مبتنی بر قرارداد اجتماعی و گفتگوی مدنی</text>
+
+  <!-- فلش پایین -->
+  <polygon points="540,620 525,630 555,630" fill="#C084FC" fill-opacity="0.4"/>
+
+  <!-- سطح ۳: اخص -->
+  <rect x="140" y="650" width="800" height="150" rx="22"
+        fill="#A855F7" fill-opacity="0.06" stroke="#A855F7" stroke-opacity="0.4" stroke-width="1.5"/>
+  <circle cx="950" cy="725" r="28" fill="#A855F7" fill-opacity="0.15" stroke="#A855F7" stroke-opacity="0.5"/>
+  <text x="950" y="740" font-family="Vazirmatn, Tahoma" font-size="36" fill="#D8B4FE"
+        font-weight="bold" text-anchor="middle">۳</text>
+  <text x="870" y="695" font-family="Vazirmatn, Tahoma" font-size="36" fill="#D8B4FE"
+        font-weight="bold" text-anchor="start" direction="rtl">اخص</text>
+  <text x="870" y="735" font-family="Vazirmatn, Tahoma" font-size="28" fill="#BBB"
+        text-anchor="start" direction="rtl">آرمانی و تجویزی · قطب‌نما و شاخص داوری</text>
+  <text x="870" y="773" font-family="Vazirmatn, Tahoma" font-size="24" fill="#888"
+        text-anchor="start" direction="rtl">مثال: قانون = برنامه‌ی آرمانی با ظرفیت خوداصلاحی</text>
+
+  <!-- نکته‌ی مهم -->
+  <rect x="140" y="850" width="800" height="90" rx="16"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.2"/>
+  <text x="540" y="890" font-family="Vazirmatn, Tahoma" font-size="26" fill="#86EFAC"
+        font-weight="bold" text-anchor="middle" direction="rtl">بیشتر مناقشات فلسفی ← از سخن‌گفتن در سطوح مختلف ناشی می‌شوند</text>
+  <text x="540" y="924" font-family="Vazirmatn, Tahoma" font-size="24" fill="#AAA"
+        text-anchor="middle" direction="rtl">پوزیتیویست: سطح عام · لیبرال: سطح خاص · طبیعت‌گرای نوین: سطح اخص</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="980" width="1000" height="2" rx="1" fill="#C084FC" opacity="0.2"/>
+  <text x="540" y="950" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق و حقوق · روش‌شناسی سه‌سطحی</text>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">«وقتی دو فیلسوف بر سر حق بحث می‌کنند، اغلب در دو سطح مختلف ایستاده‌اند»</text>
+</svg>

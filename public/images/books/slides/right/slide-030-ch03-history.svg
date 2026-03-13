@@ -1,0 +1,86 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg30" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D0D12"/>
+      <stop offset="100%" stop-color="#1A1A28"/>
+    </linearGradient>
+    <linearGradient id="timeline" x1="0" y1="300" x2="0" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#DC2626"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg30)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="360" height="48" rx="24"
+        fill="#F59E0B" fill-opacity="0.08" stroke="#F59E0B" stroke-opacity="0.25"/>
+  <text x="220" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#F59E0B"
+        text-anchor="middle" direction="rtl">فصل ۳ · اسلاید ۱ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="180" font-family="Vazirmatn, Tahoma" font-size="68" font-weight="900"
+        fill="#F59E0B" text-anchor="middle" direction="rtl">تاریخ مفهوم حق</text>
+  <text x="540" y="235" font-family="Vazirmatn, Tahoma" font-size="28" fill="#778"
+        text-anchor="middle" direction="rtl">از حمورابی تا اعلامیهٔ جهانی</text>
+
+  <!-- خط زمانی عمودی سمت راست -->
+  <rect x="920" y="290" width="5" height="610" rx="2.5" fill="url(#timeline)" opacity="0.5"/>
+
+  <!-- نقطهٔ ۱ -->
+  <circle cx="922" cy="330" r="12" fill="#F59E0B"/>
+  <rect x="120" y="300" width="770" height="80" rx="14"
+        fill="#F59E0B" fill-opacity="0.05" stroke="#F59E0B" stroke-opacity="0.2"/>
+  <text x="890" y="335" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F59E0B"
+        font-weight="bold" text-anchor="end" direction="rtl">۱۷۵۴ ق.م. · حمورابی</text>
+  <text x="890" y="368" font-family="Vazirmatn, Tahoma" font-size="22" fill="#AAA"
+        text-anchor="end" direction="rtl">اولین تنظیم مدوّن: تکلیف محور، نه حق محور</text>
+
+  <!-- نقطهٔ ۲ -->
+  <circle cx="922" cy="440" r="12" fill="#E8872E"/>
+  <rect x="120" y="410" width="770" height="80" rx="14"
+        fill="#E8872E" fill-opacity="0.05" stroke="#E8872E" stroke-opacity="0.2"/>
+  <text x="890" y="445" font-family="Vazirmatn, Tahoma" font-size="28" fill="#E8872E"
+        font-weight="bold" text-anchor="end" direction="rtl">۳۵۰ ق.م. · ارسطو</text>
+  <text x="890" y="478" font-family="Vazirmatn, Tahoma" font-size="22" fill="#AAA"
+        text-anchor="end" direction="rtl">عدالت توزیعی · شکوفایی · پایهٔ فضیلت‌گرایی</text>
+
+  <!-- نقطهٔ ۳ -->
+  <circle cx="922" cy="550" r="12" fill="#D06030"/>
+  <rect x="120" y="520" width="770" height="80" rx="14"
+        fill="#D06030" fill-opacity="0.05" stroke="#D06030" stroke-opacity="0.2"/>
+  <text x="890" y="555" font-family="Vazirmatn, Tahoma" font-size="28" fill="#D06030"
+        font-weight="bold" text-anchor="end" direction="rtl">۱۶۹۰ · لاک</text>
+  <text x="890" y="588" font-family="Vazirmatn, Tahoma" font-size="22" fill="#AAA"
+        text-anchor="end" direction="rtl">حیات، آزادی، مالکیت: حقوق طبیعی فردی</text>
+
+  <!-- نقطهٔ ۴ -->
+  <circle cx="922" cy="660" r="12" fill="#C04040"/>
+  <rect x="120" y="630" width="770" height="80" rx="14"
+        fill="#C04040" fill-opacity="0.05" stroke="#C04040" stroke-opacity="0.2"/>
+  <text x="890" y="665" font-family="Vazirmatn, Tahoma" font-size="28" fill="#E05050"
+        font-weight="bold" text-anchor="end" direction="rtl">۱۷۸۹ · انقلاب فرانسه</text>
+  <text x="890" y="698" font-family="Vazirmatn, Tahoma" font-size="22" fill="#AAA"
+        text-anchor="end" direction="rtl">حقوق طبیعی وارد قانون اساسی شد</text>
+
+  <!-- نقطهٔ ۵ -->
+  <circle cx="922" cy="770" r="12" fill="#DC2626"/>
+  <rect x="120" y="740" width="770" height="80" rx="14"
+        fill="#DC2626" fill-opacity="0.05" stroke="#DC2626" stroke-opacity="0.2"/>
+  <text x="890" y="775" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F87171"
+        font-weight="bold" text-anchor="end" direction="rtl">۱۹۴۸ · اعلامیهٔ جهانی</text>
+  <text x="890" y="808" font-family="Vazirmatn, Tahoma" font-size="22" fill="#AAA"
+        text-anchor="end" direction="rtl">رنج هولوکاست ← اجماع جهانی بر حقوق بنیادین</text>
+
+  <!-- بصیرت -->
+  <rect x="90" y="870" width="900" height="100" rx="18"
+        fill="#1A1A30" stroke="#F59E0B" stroke-opacity="0.2"/>
+  <text x="540" y="910" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F59E0B"
+        font-weight="bold" text-anchor="middle" direction="rtl">✦ الگو: بیشتر حقوق از رنج زاده شدند</text>
+  <text x="540" y="950" font-family="Vazirmatn, Tahoma" font-size="24" fill="#AAA"
+        text-anchor="middle" direction="rtl">نه از طراحی خردمندانهٔ میز فلسفه</text>
+
+  <rect x="40" y="1010" width="1000" height="2.5" rx="1" fill="url(#timeline)" opacity="0.3"/>
+  <text x="540" y="1060" font-family="Vazirmatn, Tahoma" font-size="22" fill="#556"
+        text-anchor="middle" direction="rtl">بعدی: ادامهٔ خطّ زمانی ←</text>
+</svg>

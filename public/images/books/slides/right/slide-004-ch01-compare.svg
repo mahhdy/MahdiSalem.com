@@ -1,0 +1,108 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#071115"/>
+      <stop offset="100%" stop-color="#0B1A22"/>
+    </linearGradient>
+    <radialGradient id="glow4" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg4)"/>
+  <rect width="1080" height="1080" fill="url(#glow4)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="320" height="48" rx="24"
+        fill="#06B6D4" fill-opacity="0.08" stroke="#06B6D4" stroke-opacity="0.25"/>
+  <text x="200" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#06B6D4"
+        text-anchor="middle" direction="rtl">فصل ۱ · اسلاید ۴ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="160" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="900"
+        fill="#06B6D4" text-anchor="middle" direction="rtl">دو نگاه به حق: مقایسه</text>
+
+  <!-- جدول مقایسه -->
+  <!-- هدر -->
+  <rect x="80" y="220" width="440" height="65" rx="14"
+        fill="#06B6D4" fill-opacity="0.15"/>
+  <text x="300" y="262" font-family="Vazirmatn, Tahoma" font-size="28" fill="#FFFFFF"
+        text-anchor="middle" direction="rtl" font-weight="bold">رویکرد این کتاب</text>
+
+  <rect x="560" y="220" width="440" height="65" rx="14"
+        fill="#666" fill-opacity="0.15"/>
+  <text x="780" y="262" font-family="Vazirmatn, Tahoma" font-size="28" fill="#CCCCCC"
+        text-anchor="middle" direction="rtl" font-weight="bold">رویکرد رایج</text>
+
+  <!-- ردیف ۱ -->
+  <rect x="80" y="300" width="440" height="75" rx="10"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.1"/>
+  <text x="300" y="347" font-family="Vazirmatn, Tahoma" font-size="24" fill="#7DD3FC"
+        text-anchor="middle" direction="rtl">حق = خروجی فرایند پویا</text>
+
+  <rect x="560" y="300" width="440" height="75" rx="10"
+        fill="#666" fill-opacity="0.04" stroke="#666" stroke-opacity="0.1"/>
+  <text x="780" y="347" font-family="Vazirmatn, Tahoma" font-size="24" fill="#AAA"
+        text-anchor="middle" direction="rtl">حق = داده‌ای ثابت و ازپیش‌موجود</text>
+
+  <!-- ردیف ۲ -->
+  <rect x="80" y="390" width="440" height="75" rx="10"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.1"/>
+  <text x="300" y="437" font-family="Vazirmatn, Tahoma" font-size="24" fill="#7DD3FC"
+        text-anchor="middle" direction="rtl">ساختی‐کشفی (هم‌زمان)</text>
+
+  <rect x="560" y="390" width="440" height="75" rx="10"
+        fill="#666" fill-opacity="0.04" stroke="#666" stroke-opacity="0.1"/>
+  <text x="780" y="437" font-family="Vazirmatn, Tahoma" font-size="24" fill="#AAA"
+        text-anchor="middle" direction="rtl">یا واقعی یا قراردادی</text>
+
+  <!-- ردیف ۳ -->
+  <rect x="80" y="480" width="440" height="75" rx="10"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.1"/>
+  <text x="300" y="527" font-family="Vazirmatn, Tahoma" font-size="24" fill="#7DD3FC"
+        text-anchor="middle" direction="rtl">بدون نقطه ارشمیدسی</text>
+
+  <rect x="560" y="480" width="440" height="75" rx="10"
+        fill="#666" fill-opacity="0.04" stroke="#666" stroke-opacity="0.1"/>
+  <text x="780" y="527" font-family="Vazirmatn, Tahoma" font-size="24" fill="#AAA"
+        text-anchor="middle" direction="rtl">مبنای استعلایی یا بدیهی</text>
+
+  <!-- ردیف ۴ -->
+  <rect x="80" y="570" width="440" height="75" rx="10"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.1"/>
+  <text x="300" y="617" font-family="Vazirmatn, Tahoma" font-size="24" fill="#7DD3FC"
+        text-anchor="middle" direction="rtl">ماشین زنده · خودسامان</text>
+
+  <rect x="560" y="570" width="440" height="75" rx="10"
+        fill="#666" fill-opacity="0.04" stroke="#666" stroke-opacity="0.1"/>
+  <text x="780" y="617" font-family="Vazirmatn, Tahoma" font-size="24" fill="#AAA"
+        text-anchor="middle" direction="rtl">نظام ایستا · بسته</text>
+
+  <!-- ردیف ۵ -->
+  <rect x="80" y="660" width="440" height="75" rx="10"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.1"/>
+  <text x="300" y="707" font-family="Vazirmatn, Tahoma" font-size="24" fill="#7DD3FC"
+        text-anchor="middle" direction="rtl">اخلاق منظوم (ترکیبی)</text>
+
+  <rect x="560" y="660" width="440" height="75" rx="10"
+        fill="#666" fill-opacity="0.04" stroke="#666" stroke-opacity="0.1"/>
+  <text x="780" y="707" font-family="Vazirmatn, Tahoma" font-size="24" fill="#AAA"
+        text-anchor="middle" direction="rtl">تک‌نظریه اخلاقی</text>
+
+  <!-- خط جداکننده وسط -->
+  <rect x="535" y="225" width="3" height="510" rx="1.5" fill="#06B6D4" opacity="0.15"/>
+
+  <!-- نکته پایینی -->
+  <rect x="100" y="790" width="880" height="100" rx="18"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.15"/>
+  <text x="540" y="835" font-family="Vazirmatn, Tahoma" font-size="28" fill="#4ADE80"
+        text-anchor="middle" direction="rtl" font-weight="bold">نوآوری کلیدی:</text>
+  <text x="540" y="875" font-family="Vazirmatn, Tahoma" font-size="24" fill="#CCC"
+        text-anchor="middle" direction="rtl">حق نه کشف می‌شود نه اختراع — بلکه در فرایندی زنده «رخ می‌دهد»</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#06B6D4" opacity="0.2"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۱</text>
+</svg>

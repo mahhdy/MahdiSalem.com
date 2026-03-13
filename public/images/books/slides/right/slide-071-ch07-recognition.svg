@@ -1,0 +1,105 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-recog" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0E1225"/>
+      <stop offset="100%" stop-color="#18102A"/>
+    </linearGradient>
+    <radialGradient id="recogGlow" cx="30%" cy="50%" r="35%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="recogGlow2" cx="70%" cy="50%" r="35%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-recog)"/>
+  <rect width="1080" height="1080" fill="url(#recogGlow)"/>
+  <rect width="1080" height="1080" fill="url(#recogGlow2)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="460" height="48" rx="24"
+        fill="#EC4899" fill-opacity="0.08" stroke="#EC4899" stroke-opacity="0.25"/>
+  <text x="460" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#F9A8D4"
+        text-anchor="start" direction="rtl">فصل ۷ · حق و شناسایی · پرسش بنیادین</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="165" font-family="Vazirmatn, Tahoma" font-size="46" font-weight="900"
+        fill="#FDF2F8" text-anchor="start" direction="rtl">حق بدون شناسایی دیگری</text>
+  <text x="1000" y="218" font-family="Vazirmatn, Tahoma" font-size="44" font-weight="900"
+        fill="#F9A8D4" text-anchor="start" direction="rtl">کارکرد دارد؟</text>
+
+  <!-- دو سیلوئت انسانی ساده -->
+  <!-- شخص ۱ (راست) -->
+  <circle cx="720" cy="400" r="40" fill="none" stroke="#EC4899" stroke-opacity="0.2" stroke-width="2"/>
+  <line x1="720" y1="440" x2="720" y2="540" stroke="#EC4899" stroke-opacity="0.2" stroke-width="2"/>
+  <line x1="720" y1="480" x2="680" y2="520" stroke="#EC4899" stroke-opacity="0.2" stroke-width="2"/>
+  <line x1="720" y1="480" x2="760" y2="520" stroke="#EC4899" stroke-opacity="0.2" stroke-width="2"/>
+  <text x="720" y="580" font-family="Vazirmatn, Tahoma" font-size="20" fill="#F9A8D4"
+        text-anchor="middle" direction="rtl">صاحب حق</text>
+
+  <!-- شخص ۲ (چپ) -->
+  <circle cx="360" cy="400" r="40" fill="none" stroke="#06B6D4" stroke-opacity="0.2" stroke-width="2"/>
+  <line x1="360" y1="440" x2="360" y2="540" stroke="#06B6D4" stroke-opacity="0.2" stroke-width="2"/>
+  <line x1="360" y1="480" x2="320" y2="520" stroke="#06B6D4" stroke-opacity="0.2" stroke-width="2"/>
+  <line x1="360" y1="480" x2="400" y2="520" stroke="#06B6D4" stroke-opacity="0.2" stroke-width="2"/>
+  <text x="360" y="580" font-family="Vazirmatn, Tahoma" font-size="20" fill="#67E8F9"
+        text-anchor="middle" direction="rtl">دیگری</text>
+
+  <!-- فلش‌های شناسایی متقابل -->
+  <line x1="640" y1="390" x2="440" y2="390" stroke="#F59E0B" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="8,5"/>
+  <polygon points="445,390 455,383 455,397" fill="#F59E0B" fill-opacity="0.4"/>
+  <text x="540" y="378" font-family="Vazirmatn, Tahoma" font-size="18" fill="#FCD34D"
+        text-anchor="middle" direction="rtl">شناسایی</text>
+
+  <line x1="440" y1="420" x2="640" y2="420" stroke="#F59E0B" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="8,5"/>
+  <polygon points="635,420 625,413 625,427" fill="#F59E0B" fill-opacity="0.4"/>
+  <text x="540" y="445" font-family="Vazirmatn, Tahoma" font-size="18" fill="#FCD34D"
+        text-anchor="middle" direction="rtl">پذیرش</text>
+
+  <!-- پرسش نویسنده -->
+  <rect x="80" y="610" width="920" height="115" rx="20"
+        fill="#EC4899" fill-opacity="0.04" stroke="#EC4899" stroke-opacity="0.18"/>
+  <text x="960" y="658" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FDF2F8"
+        font-weight="bold" text-anchor="start" direction="rtl">⟡ پرسش نویسنده:</text>
+  <text x="960" y="700" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EEE"
+        text-anchor="start" direction="rtl">«وقتی حقوقی که من برمی‌شمرم با پذیرش دیگران همراه نشود</text>
+  <text x="960" y="735" font-family="Vazirmatn, Tahoma" font-size="24" fill="#F9A8D4"
+        text-anchor="start" direction="rtl">چگونه می‌توانم آن حقوق را تثبیت و از نتایجشان بهره‌مند شوم؟»</text>
+
+  <!-- سه مکانیزم -->
+  <rect x="690" y="760" width="330" height="100" rx="14"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.2"/>
+  <text x="980" y="798" font-family="Vazirmatn, Tahoma" font-size="22" fill="#4ADE80"
+        font-weight="bold" text-anchor="start" direction="rtl">① اختیار خود فرد</text>
+  <text x="980" y="835" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">انتخاب و پذیرش فاعل = اصل</text>
+
+  <rect x="345" y="760" width="330" height="100" rx="14"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.2"/>
+  <text x="635" y="798" font-family="Vazirmatn, Tahoma" font-size="22" fill="#67E8F9"
+        font-weight="bold" text-anchor="start" direction="rtl">② قاعده‌ی اجتماعی</text>
+  <text x="635" y="835" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">هنجار مقبول جمعی = نگهبان</text>
+
+  <rect x="0" y="760" width="330" height="100" rx="14"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.2"/>
+  <text x="290" y="798" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FCD34D"
+        font-weight="bold" text-anchor="start" direction="rtl">③ تصمیم‌گیر ثالث</text>
+  <text x="290" y="835" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">نهاد داوری = ضامن</text>
+
+  <!-- نکته هونت -->
+  <rect x="80" y="890" width="920" height="60" rx="12"
+        fill="#A855F7" fill-opacity="0.03" stroke="#A855F7" stroke-opacity="0.12"/>
+  <text x="960" y="928" font-family="Vazirmatn, Tahoma" font-size="22" fill="#C4B5FD"
+        text-anchor="start" direction="rtl">هونت: حقوق بدون «شناسایی متقابل» فاقد اثربخشی‌اند · Mutual Recognition</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="985" width="1000" height="2" rx="1" fill="#EC4899" opacity="0.2"/>
+  <text x="540" y="1025" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق ارتباطی است · بدون «دیگری» حق معنا ندارد ولی بدون «خود» هم تحقق نمی‌یابد</text>
+  <text x="540" y="1060" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۷ · پل میان فرد و جمع</text>
+</svg>

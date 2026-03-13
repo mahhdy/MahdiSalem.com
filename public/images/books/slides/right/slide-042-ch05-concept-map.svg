@@ -1,0 +1,102 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg42" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#08081A"/>
+      <stop offset="100%" stop-color="#0D1020"/>
+    </linearGradient>
+    <radialGradient id="glow42" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#E8B83D" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#E8B83D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg42)"/>
+  <rect width="1080" height="1080" fill="url(#glow42)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="340" height="48" rx="24"
+        fill="#E8B83D" fill-opacity="0.08" stroke="#E8B83D" stroke-opacity="0.25"/>
+  <text x="210" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#E8B83D"
+        text-anchor="middle" direction="rtl">فصل ۵ · اسلاید ۲ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="150" font-family="Vazirmatn, Tahoma" font-size="46" font-weight="900"
+        fill="#FBBF24" text-anchor="middle" direction="rtl">نقشهٔ همسایگی: حق در مرکز</text>
+  <text x="540" y="200" font-family="Vazirmatn, Tahoma" font-size="22" fill="#888"
+        text-anchor="middle" direction="rtl">هفت مفهوم کلیدی که حق با آن‌ها تعامل دارد</text>
+
+  <!-- دایره مرکزی: حق -->
+  <circle cx="540" cy="530" r="100" fill="#E8B83D" fill-opacity="0.08" stroke="#E8B83D" stroke-opacity="0.5" stroke-width="3"/>
+  <text x="540" y="525" font-family="Vazirmatn, Tahoma" font-size="42" fill="#FBBF24"
+        text-anchor="middle" direction="rtl" font-weight="bold">حق</text>
+  <text x="540" y="565" font-family="Vazirmatn, Tahoma" font-size="18" fill="#CCC"
+        text-anchor="middle" direction="rtl">Right</text>
+
+  <!-- ۷ دایره اطراف -->
+  <!-- عدالت (بالا) -->
+  <line x1="540" y1="430" x2="540" y2="310" stroke="#A855F7" stroke-opacity="0.3" stroke-width="2.5"/>
+  <circle cx="540" cy="275" r="55" fill="#A855F7" fill-opacity="0.06" stroke="#A855F7" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="540" y="272" font-family="Vazirmatn, Tahoma" font-size="22" fill="#C084FC"
+        text-anchor="middle" direction="rtl" font-weight="bold">عدالت</text>
+  <text x="540" y="298" font-family="Vazirmatn, Tahoma" font-size="14" fill="#999"
+        text-anchor="middle">Justice</text>
+
+  <!-- قانون (بالا-راست) -->
+  <line x1="615" y1="455" x2="740" y2="340" stroke="#06B6D4" stroke-opacity="0.3" stroke-width="2.5"/>
+  <circle cx="770" cy="310" r="55" fill="#06B6D4" fill-opacity="0.06" stroke="#06B6D4" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="770" y="307" font-family="Vazirmatn, Tahoma" font-size="22" fill="#22D3EE"
+        text-anchor="middle" direction="rtl" font-weight="bold">قانون</text>
+  <text x="770" y="333" font-family="Vazirmatn, Tahoma" font-size="14" fill="#999"
+        text-anchor="middle">Law</text>
+
+  <!-- آزادی (راست) -->
+  <line x1="640" y1="530" x2="770" y2="530" stroke="#22C55E" stroke-opacity="0.3" stroke-width="2.5"/>
+  <circle cx="810" cy="530" r="55" fill="#22C55E" fill-opacity="0.06" stroke="#22C55E" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="810" y="527" font-family="Vazirmatn, Tahoma" font-size="22" fill="#4ADE80"
+        text-anchor="middle" direction="rtl" font-weight="bold">آزادی</text>
+  <text x="810" y="553" font-family="Vazirmatn, Tahoma" font-size="14" fill="#999"
+        text-anchor="middle">Liberty</text>
+
+  <!-- تکلیف (پایین-راست) -->
+  <line x1="615" y1="605" x2="740" y2="720" stroke="#DC2626" stroke-opacity="0.3" stroke-width="2.5"/>
+  <circle cx="770" cy="750" r="55" fill="#DC2626" fill-opacity="0.06" stroke="#DC2626" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="770" y="747" font-family="Vazirmatn, Tahoma" font-size="22" fill="#F87171"
+        text-anchor="middle" direction="rtl" font-weight="bold">تکلیف</text>
+  <text x="770" y="773" font-family="Vazirmatn, Tahoma" font-size="14" fill="#999"
+        text-anchor="middle">Duty</text>
+
+  <!-- برابری (پایین) -->
+  <line x1="540" y1="630" x2="540" y2="750" stroke="#F59E0B" stroke-opacity="0.3" stroke-width="2.5"/>
+  <circle cx="540" cy="785" r="55" fill="#F59E0B" fill-opacity="0.06" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="540" y="782" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FBBF24"
+        text-anchor="middle" direction="rtl" font-weight="bold">برابری</text>
+  <text x="540" y="808" font-family="Vazirmatn, Tahoma" font-size="14" fill="#999"
+        text-anchor="middle">Equality</text>
+
+  <!-- اخلاق (پایین-چپ) -->
+  <line x1="465" y1="605" x2="340" y2="720" stroke="#EC4899" stroke-opacity="0.3" stroke-width="2.5"/>
+  <circle cx="310" cy="750" r="55" fill="#EC4899" fill-opacity="0.06" stroke="#EC4899" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="310" y="747" font-family="Vazirmatn, Tahoma" font-size="22" fill="#F9A8D4"
+        text-anchor="middle" direction="rtl" font-weight="bold">اخلاق</text>
+  <text x="310" y="773" font-family="Vazirmatn, Tahoma" font-size="14" fill="#999"
+        text-anchor="middle">Ethics</text>
+
+  <!-- قدرت (چپ) -->
+  <line x1="440" y1="530" x2="310" y2="530" stroke="#14B8A6" stroke-opacity="0.3" stroke-width="2"/>
+  <circle cx="270" cy="530" r="55" fill="#14B8A6" fill-opacity="0.06" stroke="#14B8A6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="270" y="527" font-family="Vazirmatn, Tahoma" font-size="22" fill="#2DD4BF"
+        text-anchor="middle" direction="rtl" font-weight="bold">قدرت</text>
+  <text x="270" y="553" font-family="Vazirmatn, Tahoma" font-size="14" fill="#999"
+        text-anchor="middle">Power</text>
+
+  <!-- نکته -->
+  <rect x="120" y="880" width="840" height="55" rx="14"
+        fill="#E8B83D" fill-opacity="0.04" stroke="#E8B83D" stroke-opacity="0.12"/>
+  <text x="540" y="915" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FBBF24"
+        text-anchor="middle" direction="rtl">هر اتصال = یک رابطهٔ پیچیده که در اسلایدهای بعدی بررسی می‌شود</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#E8B83D" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۵</text>
+</svg>

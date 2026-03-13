@@ -49,7 +49,7 @@ showPdfViewer: true
 ---
 
 
-&#123;/* ═══════════════════ تعریف کامپوننت‌ها ═══════════════════ */&#125;
+{/* ═══════════════════ تعریف کامپوننت‌ها ═══════════════════ */}
 
 export const HeroSection = () => (
   <div style={{
@@ -89,17 +89,17 @@ export const HeroSection = () => (
   </div>
 )
 
-export const Callout = (&#123; type = 'info', title, children &#125;) => &#123;
-  const styles = &#123;
-    info:     &#123; bg: '#e8f4fd', border: '#2196F3', icon: '💡', titleColor: '#1565C0' &#125;,
-    warning:  &#123; bg: '#fff8e1', border: '#FF9800', icon: '⚠️', titleColor: '#E65100' &#125;,
-    quote:    &#123; bg: '#f3e5f5', border: '#9C27B0', icon: '💬', titleColor: '#6A1B9A' &#125;,
-    critical: &#123; bg: '#fce4ec', border: '#E53935', icon: '🔍', titleColor: '#B71C1C' &#125;,
-    success:  &#123; bg: '#e8f5e9', border: '#4CAF50', icon: '✅', titleColor: '#2E7D32' &#125;,
-    keypoint: &#123; bg: '#e3f2fd', border: '#1976D2', icon: '🔑', titleColor: '#0D47A1' &#125;,
-    critique: &#123; bg: '#fce4ec', border: '#C62828', icon: '⚖️', titleColor: '#B71C1C' &#125;,
-    example:  &#123; bg: '#e8f5e9', border: '#388E3C', icon: '📝', titleColor: '#1B5E20' &#125;
-  &#125;
+export const Callout = ({ type = 'info', title, children }) => {
+  const styles = {
+    info:     { bg: '#e8f4fd', border: '#2196F3', icon: '💡', titleColor: '#1565C0' },
+    warning:  { bg: '#fff8e1', border: '#FF9800', icon: '⚠️', titleColor: '#E65100' },
+    quote:    { bg: '#f3e5f5', border: '#9C27B0', icon: '💬', titleColor: '#6A1B9A' },
+    critical: { bg: '#fce4ec', border: '#E53935', icon: '🔍', titleColor: '#B71C1C' },
+    success:  { bg: '#e8f5e9', border: '#4CAF50', icon: '✅', titleColor: '#2E7D32' },
+    keypoint: { bg: '#e3f2fd', border: '#1976D2', icon: '🔑', titleColor: '#0D47A1' },
+    critique: { bg: '#fce4ec', border: '#C62828', icon: '⚖️', titleColor: '#B71C1C' },
+    example:  { bg: '#e8f5e9', border: '#388E3C', icon: '📝', titleColor: '#1B5E20' }
+  }
   const s = styles[type] || styles.info
   return (
     <div style={{
@@ -110,17 +110,17 @@ export const Callout = (&#123; type = 'info', title, children &#125;) => &#123;
       margin: '1.5rem 0',
       direction: 'rtl'
     }}>
-      &#123;title && (
+      {title && (
         <div style={{ fontWeight: '700', color: s.titleColor, marginBottom: '0.5rem', fontSize: '1.05rem' }}>
-          &#123;s.icon&#125; &#123;title&#125;
+          {s.icon} {title}
         </div>
-      )&#125;
-      <div style={{ color: '#333', lineHeight: '2' }}>&#123;children&#125;</div>
+      )}
+      <div style={{ color: '#333', lineHeight: '2' }}>{children}</div>
     </div>
   )
-&#125;
+}
 
-export const QuoteBlock = (&#123; text, author, source &#125;) => (
+export const QuoteBlock = ({ text, author, source }) => (
   <div style={{
     background: 'linear-gradient(135deg, #faf5ff 0%, #f0e6ff 100%)',
     border: '1px solid #d4b5ff',
@@ -135,20 +135,20 @@ export const QuoteBlock = (&#123; text, author, source &#125;) => (
       <path d="M0 20.8C0 27.2 4 32 10.4 32c4.8 0 8-3.2 8-7.2 0-4-2.8-6.8-6.4-6.8-1.2 0-2 .4-2.8.8C10 12 14.4 5.6 18.4 3.2L14.4 0C6 4.8 0 13.6 0 20.8zm21.6 0C21.6 27.2 25.6 32 32 32c4.8 0 8-3.2 8-7.2 0-4-2.8-6.8-6.4-6.8-1.2 0-2.4.4-2.8.8C31.6 12 36 5.6 40 3.2L36 0c-8.4 4.8-14.4 13.6-14.4 20.8z" fill="#6A1B9A"/>
     </svg>
     <p style={{ fontSize: '1.1rem', fontStyle: 'italic', color: '#4a148c', lineHeight: '2.2', margin: '0 0 0.8rem' }}>
-      «&#123;text&#125;»
+      «{text}»
     </p>
-    &#123;author && <p style={{ color: '#6A1B9A', fontWeight: '700', margin: 0 }}>— &#123;author&#125;&#123;source && `، $&#123;source&#125;`&#125;</p>&#125;
+    {author && <p style={{ color: '#6A1B9A', fontWeight: '700', margin: 0 }}>— {author}{source && `، ${source}`}</p>}
   </div>
 )
 
-export const SectionDivider = (&#123; icon = '◆', label &#125;) => (
+export const SectionDivider = ({ icon = '◆', label }) => (
   <div style={{ textAlign: 'center', margin: '3rem 0 2rem' }}>
-    <div style={{ color: '#999', fontSize: '1.2rem', letterSpacing: '0.5rem' }}>─── &#123;icon&#125; ───</div>
-    &#123;label && <div style={{ color: '#555', fontSize: '0.85rem', marginTop: '0.3rem' }}>&#123;label&#125;</div>&#125;
+    <div style={{ color: '#999', fontSize: '1.2rem', letterSpacing: '0.5rem' }}>─── {icon} ───</div>
+    {label && <div style={{ color: '#555', fontSize: '0.85rem', marginTop: '0.3rem' }}>{label}</div>}
   </div>
 )
 
-export const NumberedCard = (&#123; number, title, children &#125;) => (
+export const NumberedCard = ({ number, title, children }) => (
   <div style={{
     display: 'flex',
     gap: '1rem',
@@ -165,17 +165,17 @@ export const NumberedCard = (&#123; number, title, children &#125;) => (
       borderRadius: '50%',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
       color: 'white', fontWeight: '800', fontSize: '0.95rem', flexShrink: 0
-    }}>&#123;number&#125;</div>
+    }}>{number}</div>
     <div>
-      &#123;title && <strong style={{ color: '#1a1a2e', display: 'block', marginBottom: '0.3rem' }}>&#123;title&#125;</strong>&#125;
-      <div style={{ color: '#444', lineHeight: '2' }}>&#123;children&#125;</div>
+      {title && <strong style={{ color: '#1a1a2e', display: 'block', marginBottom: '0.3rem' }}>{title}</strong>}
+      <div style={{ color: '#444', lineHeight: '2' }}>{children}</div>
     </div>
   </div>
 )
 
-export const KeywordBadges = (&#123; items &#125;) => (
+export const KeywordBadges = ({ items }) => (
   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', justifyContent: 'center', margin: '1rem 0 2rem', direction: 'rtl' }}>
-    &#123;items.map((item, i) => (
+    {items.map((item, i) => (
       <span key={i} style={{
         background: 'linear-gradient(135deg, #e8eaf6, #c5cae9)',
         color: '#283593',
@@ -183,44 +183,44 @@ export const KeywordBadges = (&#123; items &#125;) => (
         borderRadius: '20px',
         fontSize: '0.85rem',
         fontWeight: '600'
-      }}>&#123;item&#125;</span>
-    ))&#125;
+      }}>{item}</span>
+    ))}
   </div>
 )
 
-export const DataTable = (&#123; headers, rows, caption, highlightFirst = false &#125;) => (
+export const DataTable = ({ headers, rows, caption, highlightFirst = false }) => (
   <div style={{ margin: '1.5rem 0', direction: 'rtl' }}>
     <div style={{ overflowX: 'auto', borderRadius: '10px', boxShadow: '0 2px 12px rgba(0,0,0,0.07)' }}>
       <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem' }}>
         <thead>
           <tr style={{ background: 'linear-gradient(135deg, #29417a, #1a2a5e)' }}>
-            &#123;headers.map((h, i) => (
-              <th key={i} style={{ color: 'white', padding: '12px 16px', textAlign: 'right', fontWeight: '700', fontSize: '0.88rem' }}>&#123;h&#125;</th>
-            ))&#125;
+            {headers.map((h, i) => (
+              <th key={i} style={{ color: 'white', padding: '12px 16px', textAlign: 'right', fontWeight: '700', fontSize: '0.88rem' }}>{h}</th>
+            ))}
           </tr>
         </thead>
         <tbody>
-          &#123;rows.map((row, i) => (
+          {rows.map((row, i) => (
             <tr key={i} style={{ background: i % 2 === 0 ? '#f8f9fa' : 'white', borderBottom: '1px solid #e9ecef' }}>
-              &#123;row.map((cell, j) => (
+              {row.map((cell, j) => (
                 <td key={j} style={{
                   padding: '11px 16px',
                   textAlign: 'right',
                   lineHeight: '1.9',
                   fontWeight: (highlightFirst && j === 0) ? '600' : 'normal',
                   color: (highlightFirst && j === 0) ? '#1a1a2e' : '#444'
-                }}>&#123;cell&#125;</td>
-              ))&#125;
+                }}>{cell}</td>
+              ))}
             </tr>
-          ))&#125;
+          ))}
         </tbody>
       </table>
     </div>
-    &#123;caption && <p style={{ textAlign: 'center', color: '#666', fontSize: '0.82rem', marginTop: '0.6rem' }}>📊 &#123;caption&#125;</p>&#125;
+    {caption && <p style={{ textAlign: 'center', color: '#666', fontSize: '0.82rem', marginTop: '0.6rem' }}>📊 {caption}</p>}
   </div>
 )
 
-export const ConclusionCard = (&#123; number, title, children &#125;) => (
+export const ConclusionCard = ({ number, title, children }) => (
   <div style={{
     background: 'linear-gradient(135deg, #1a1a2e, #16213e)',
     borderRadius: '12px',
@@ -237,25 +237,25 @@ export const ConclusionCard = (&#123; number, title, children &#125;) => (
       borderRadius: '10px',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
       color: 'white', fontWeight: '900', fontSize: '1.1rem', flexShrink: 0
-    }}>&#123;number&#125;</div>
+    }}>{number}</div>
     <div>
-      <strong style={{ color: '#64ffda', display: 'block', marginBottom: '0.4rem', fontSize: '1rem' }}>&#123;title&#125;</strong>
-      <p style={{ color: '#e8e8e8', lineHeight: '2', margin: 0 }}>&#123;children&#125;</p>
+      <strong style={{ color: '#64ffda', display: 'block', marginBottom: '0.4rem', fontSize: '1rem' }}>{title}</strong>
+      <p style={{ color: '#e8e8e8', lineHeight: '2', margin: 0 }}>{children}</p>
     </div>
   </div>
 )
 
-export const FootnoteRef = (&#123; id, children &#125;) => (
-  <sup style={{ color: '#e94560', cursor: 'help', fontWeight: '700' }} title={children}>[&#123;id&#125;]</sup>
+export const FootnoteRef = ({ id, children }) => (
+  <sup style={{ color: '#e94560', cursor: 'help', fontWeight: '700' }} title={children}>[{id}]</sup>
 )
 
-export const Footnote = (&#123; id, children &#125;) => (
+export const Footnote = ({ id, children }) => (
   <div style={{ fontSize: '0.85rem', color: '#555', padding: '0.3rem 0', borderBottom: '1px solid #eee', direction: 'rtl' }}>
-    <span style={{ color: '#e94560', fontWeight: '700' }}>[&#123;id&#125;]</span> &#123;children&#125;
+    <span style={{ color: '#e94560', fontWeight: '700' }}>[{id}]</span> {children}
   </div>
 )
 
-export const ChapterHeader = (&#123; number, title, id &#125;) => (
+export const ChapterHeader = ({ number, title, id }) => (
   <div id={id} style={{
     background: 'linear-gradient(135deg, #29417a, #1a2a5e)',
     borderRadius: '12px',
@@ -270,13 +270,13 @@ export const ChapterHeader = (&#123; number, title, id &#125;) => (
       <circle cx="300" cy="20" r="30" fill="white"/>
     </svg>
     <div style={{ position: 'relative', zIndex: 1 }}>
-      &#123;number && <span style={{ color: '#64ffda', fontSize: '0.85rem', fontWeight: '600', display: 'block', marginBottom: '0.3rem' }}>فصل &#123;number&#125;</span>&#125;
-      <h2 style={{ color: 'white', margin: 0, fontSize: '1.5rem', fontWeight: '800' }}>&#123;title&#125;</h2>
+      {number && <span style={{ color: '#64ffda', fontSize: '0.85rem', fontWeight: '600', display: 'block', marginBottom: '0.3rem' }}>فصل {number}</span>}
+      <h2 style={{ color: 'white', margin: 0, fontSize: '1.5rem', fontWeight: '800' }}>{title}</h2>
     </div>
   </div>
 )
 
-export const AppendixSection = (&#123; id, title, icon, children &#125;) => (
+export const AppendixSection = ({ id, title, icon, children }) => (
   <div style={{
     margin: '2rem 0',
     border: '1px solid #e0e0e0',
@@ -291,14 +291,14 @@ export const AppendixSection = (&#123; id, title, icon, children &#125;) => (
       alignItems: 'center',
       gap: '0.8rem'
     }}>
-      <span style={{ fontSize: '1.4rem' }}>&#123;icon&#125;</span>
-      <h3 style={{ color: 'white', margin: 0, fontSize: '1.1rem' }} id={id}>&#123;title&#125;</h3>
+      <span style={{ fontSize: '1.4rem' }}>{icon}</span>
+      <h3 style={{ color: 'white', margin: 0, fontSize: '1.1rem' }} id={id}>{title}</h3>
     </div>
-    <div style={{ padding: '1.5rem' }}>&#123;children&#125;</div>
+    <div style={{ padding: '1.5rem' }}>{children}</div>
   </div>
 )
 
-&#123;/* ═══════════════════ نمودارهای SVG ═══════════════════ */&#125;
+{/* ═══════════════════ نمودارهای SVG ═══════════════════ */}
 
 export const HohfeldSVG = () => (
   <div style={{ textAlign: 'center', margin: '2rem 0' }}>
@@ -319,35 +319,35 @@ export const HohfeldSVG = () => (
         <filter id="hfShadow"><feDropShadow dx="0" dy="3" stdDeviation="5" floodOpacity="0.12"/></filter>
       </defs>
       <text x="260" y="28" textAnchor="middle" fontSize="15" fontWeight="bold" fill="#1a1a2e">چارچوب چهارگانه‌ی هوفلد</text>
-      &#123;/* کارت ادعا */&#125;
+      {/* کارت ادعا */}
       <rect x="30" y="55" width="210" height="140" rx="14" fill="url(#hf1)" stroke="#1976D2" strokeWidth="1.5" filter="url(#hfShadow)"/>
       <text x="135" y="88" textAnchor="middle" fontSize="24">📋</text>
       <text x="135" y="115" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#0D47A1">ادّعا</text>
       <text x="135" y="135" textAnchor="middle" fontSize="10" fill="#333">Claim-Right</text>
       <text x="135" y="160" textAnchor="middle" fontSize="9.5" fill="#444">↔ تکلیف متناظر (Duty)</text>
       <text x="135" y="180" textAnchor="middle" fontSize="9" fill="#555">A حق دارد، B وظیفه دارد</text>
-      &#123;/* کارت امتیاز */&#125;
+      {/* کارت امتیاز */}
       <rect x="280" y="55" width="210" height="140" rx="14" fill="url(#hf2)" stroke="#C62828" strokeWidth="1.5" filter="url(#hfShadow)"/>
       <text x="385" y="88" textAnchor="middle" fontSize="24">🔓</text>
       <text x="385" y="115" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#B71C1C">امتیاز / آزادی</text>
       <text x="385" y="135" textAnchor="middle" fontSize="10" fill="#333">Privilege / Liberty</text>
       <text x="385" y="160" textAnchor="middle" fontSize="9.5" fill="#444">↔ نبودِ ادعا (No-Claim)</text>
       <text x="385" y="180" textAnchor="middle" fontSize="9" fill="#555">A مجاز است، B ادعایی ندارد</text>
-      &#123;/* کارت قدرت */&#125;
+      {/* کارت قدرت */}
       <rect x="30" y="225" width="210" height="140" rx="14" fill="url(#hf3)" stroke="#388E3C" strokeWidth="1.5" filter="url(#hfShadow)"/>
       <text x="135" y="258" textAnchor="middle" fontSize="24">⚡</text>
       <text x="135" y="285" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#1B5E20">قدرت حقوقی</text>
       <text x="135" y="305" textAnchor="middle" fontSize="10" fill="#333">Power</text>
       <text x="135" y="330" textAnchor="middle" fontSize="9.5" fill="#444">↔ تعرض‌پذیری (Liability)</text>
       <text x="135" y="350" textAnchor="middle" fontSize="9" fill="#555">A می‌تواند وضع B را تغییر دهد</text>
-      &#123;/* کارت مصونیت */&#125;
+      {/* کارت مصونیت */}
       <rect x="280" y="225" width="210" height="140" rx="14" fill="url(#hf4)" stroke="#E65100" strokeWidth="1.5" filter="url(#hfShadow)"/>
       <text x="385" y="258" textAnchor="middle" fontSize="24">🛡️</text>
       <text x="385" y="285" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#E65100">مصونیت</text>
       <text x="385" y="305" textAnchor="middle" fontSize="10" fill="#333">Immunity</text>
       <text x="385" y="330" textAnchor="middle" fontSize="9.5" fill="#444">↔ ناتوانی (Disability)</text>
       <text x="385" y="350" textAnchor="middle" fontSize="9" fill="#555">B نمی‌تواند وضع A را تغییر دهد</text>
-      &#123;/* خطوط ارتباط */&#125;
+      {/* خطوط ارتباط */}
       <line x1="240" y1="125" x2="280" y2="125" stroke="#666" strokeWidth="1.5" strokeDasharray="5,3"/>
       <line x1="240" y1="295" x2="280" y2="295" stroke="#666" strokeWidth="1.5" strokeDasharray="5,3"/>
       <line x1="135" y1="195" x2="135" y2="225" stroke="#666" strokeWidth="1.5" strokeDasharray="5,3"/>
@@ -368,30 +368,30 @@ export const ConceptMapSVG = () => (
         </radialGradient>
       </defs>
       <text x="325" y="25" textAnchor="middle" fontSize="15" fontWeight="bold" fill="#1a1a2e">نقشه‌ی مفهومی حق</text>
-      &#123;/* هاله مرکزی */&#125;
+      {/* هاله مرکزی */}
       <circle cx="325" cy="260" r="120" fill="url(#centerGlow)"/>
-      &#123;/* مرکز */&#125;
+      {/* مرکز */}
       <circle cx="325" cy="260" r="42" fill="#1a1a2e" filter="url(#cmShadow)"/>
       <text x="325" y="256" textAnchor="middle" fontSize="20" fill="white" fontWeight="bold">حق</text>
       <text x="325" y="275" textAnchor="middle" fontSize="9" fill="#64ffda">Right</text>
-      &#123;/* مفاهیم اطراف */&#125;
-      &#123;[
-        &#123; x: 325, y: 80, label: 'عدالت', en: 'Justice', color: '#1565C0', bg: '#e3f2fd' &#125;,
-        &#123; x: 520, y: 130, label: 'آزادی', en: 'Liberty', color: '#C62828', bg: '#fce4ec' &#125;,
-        &#123; x: 590, y: 260, label: 'برابری', en: 'Equality', color: '#6A1B9A', bg: '#f3e5f5' &#125;,
-        &#123; x: 520, y: 390, label: 'قدرت', en: 'Power', color: '#E65100', bg: '#fff3e0' &#125;,
-        &#123; x: 325, y: 440, label: 'کرامت', en: 'Dignity', color: '#2E7D32', bg: '#e8f5e9' &#125;,
-        &#123; x: 130, y: 390, label: 'مسئولیت', en: 'Responsibility', color: '#00695C', bg: '#e0f2f1' &#125;,
-        &#123; x: 60, y: 260, label: 'قانون', en: 'Law', color: '#4E342E', bg: '#efebe9' &#125;,
-        &#123; x: 130, y: 130, label: 'اخلاق', en: 'Morality', color: '#37474F', bg: '#eceff1' &#125;,
+      {/* مفاهیم اطراف */}
+      {[
+        { x: 325, y: 80, label: 'عدالت', en: 'Justice', color: '#1565C0', bg: '#e3f2fd' },
+        { x: 520, y: 130, label: 'آزادی', en: 'Liberty', color: '#C62828', bg: '#fce4ec' },
+        { x: 590, y: 260, label: 'برابری', en: 'Equality', color: '#6A1B9A', bg: '#f3e5f5' },
+        { x: 520, y: 390, label: 'قدرت', en: 'Power', color: '#E65100', bg: '#fff3e0' },
+        { x: 325, y: 440, label: 'کرامت', en: 'Dignity', color: '#2E7D32', bg: '#e8f5e9' },
+        { x: 130, y: 390, label: 'مسئولیت', en: 'Responsibility', color: '#00695C', bg: '#e0f2f1' },
+        { x: 60, y: 260, label: 'قانون', en: 'Law', color: '#4E342E', bg: '#efebe9' },
+        { x: 130, y: 130, label: 'اخلاق', en: 'Morality', color: '#37474F', bg: '#eceff1' },
       ].map((c, i) => (
         <g key={i}>
           <line x1="325" y1="260" x2={c.x} y2={c.y} stroke={c.color} strokeWidth="1.2" strokeDasharray="6,3" opacity="0.4"/>
           <rect x={c.x - 52} y={c.y - 22} width="104" height="44" rx="22" fill={c.bg} stroke={c.color} strokeWidth="1.2" filter="url(#cmShadow)"/>
-          <text x={c.x} y={c.y - 3} textAnchor="middle" fontSize="11" fontWeight="bold" fill={c.color}>&#123;c.label&#125;</text>
-          <text x={c.x} y={c.y + 13} textAnchor="middle" fontSize="8" fill="#555">&#123;c.en&#125;</text>
+          <text x={c.x} y={c.y - 3} textAnchor="middle" fontSize="11" fontWeight="bold" fill={c.color}>{c.label}</text>
+          <text x={c.x} y={c.y + 13} textAnchor="middle" fontSize="8" fill="#555">{c.en}</text>
         </g>
-      ))&#125;
+      ))}
     </svg>
   </div>
 )
@@ -412,9 +412,9 @@ export const OntologySVG = () => (
         <filter id="ontShadow"><feDropShadow dx="0" dy="3" stdDeviation="5" floodOpacity="0.12"/></filter>
       </defs>
       <text x="300" y="25" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#1a1a2e">طیف هستی‌شناسی حق</text>
-      &#123;/* خط طیف */&#125;
+      {/* خط طیف */}
       <line x1="60" y1="140" x2="540" y2="140" stroke="#ccc" strokeWidth="3" strokeLinecap="round"/>
-      &#123;/* واقع‌گرایی */&#125;
+      {/* واقع‌گرایی */}
       <circle cx="100" cy="140" r="30" fill="url(#realGrad)" filter="url(#ontShadow)"/>
       <text x="100" y="136" textAnchor="middle" fontSize="9" fill="white" fontWeight="bold">واقع‌گرایی</text>
       <text x="100" y="150" textAnchor="middle" fontSize="7.5" fill="#e8e8e8">Realism</text>
@@ -422,14 +422,14 @@ export const OntologySVG = () => (
       <text x="100" y="212" textAnchor="middle" fontSize="8" fill="#555">ارسطو، آکویناس</text>
       <text x="100" y="226" textAnchor="middle" fontSize="8" fill="#555">لاک، فینیس</text>
       <text x="100" y="240" textAnchor="middle" fontSize="8" fill="#555">طباطبایی، مطهری</text>
-      &#123;/* راه سوم */&#125;
+      {/* راه سوم */}
       <circle cx="300" cy="140" r="30" fill="url(#midGrad)" filter="url(#ontShadow)"/>
       <text x="300" y="136" textAnchor="middle" fontSize="9" fill="white" fontWeight="bold">راه سوم</text>
       <text x="300" y="150" textAnchor="middle" fontSize="7.5" fill="#e8e8e8">Third Way</text>
       <text x="300" y="195" textAnchor="middle" fontSize="9" fill="#333" fontWeight="600">تکثّرگرایی بنیادمحور</text>
       <text x="300" y="212" textAnchor="middle" fontSize="8" fill="#555">رالز، نوسباوم</text>
       <text x="300" y="226" textAnchor="middle" fontSize="8" fill="#555">تیلور</text>
-      &#123;/* اعتباری‌گرایی */&#125;
+      {/* اعتباری‌گرایی */}
       <circle cx="500" cy="140" r="30" fill="url(#convGrad)" filter="url(#ontShadow)"/>
       <text x="500" y="133" textAnchor="middle" fontSize="8.5" fill="white" fontWeight="bold">اعتباری‌</text>
       <text x="500" y="146" textAnchor="middle" fontSize="8.5" fill="white" fontWeight="bold">گرایی</text>
@@ -437,7 +437,7 @@ export const OntologySVG = () => (
       <text x="500" y="195" textAnchor="middle" fontSize="9" fill="#333" fontWeight="600">حق = قراردادی</text>
       <text x="500" y="212" textAnchor="middle" fontSize="8" fill="#555">آستین، کلزن</text>
       <text x="500" y="226" textAnchor="middle" fontSize="8" fill="#555">هارت، هابز</text>
-      &#123;/* فلش‌ها */&#125;
+      {/* فلش‌ها */}
       <text x="60" y="280" textAnchor="start" fontSize="9" fill="#1565C0">← عینی و ثابت</text>
       <text x="540" y="280" textAnchor="end" fontSize="9" fill="#E65100">ذهنی و متغیر →</text>
     </svg>
@@ -457,7 +457,7 @@ export const DevFeedbackSVG = () => (
         </linearGradient>
       </defs>
       <text x="250" y="25" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#1a1a2e">حلقه‌ی بازخورد مثبت: حقوق و توسعه</text>
-      &#123;/* کارت‌ها */&#125;
+      {/* کارت‌ها */}
       <rect x="20" y="60" width="180" height="70" rx="12" fill="url(#devG1)" stroke="#1976D2" strokeWidth="1.5" filter="url(#devShadow)"/>
       <text x="110" y="90" textAnchor="middle" fontSize="16">⚖️</text>
       <text x="110" y="115" textAnchor="middle" fontSize="12" fontWeight="bold" fill="#0D47A1">تضمین حقوق</text>
@@ -467,7 +467,7 @@ export const DevFeedbackSVG = () => (
       <rect x="160" y="210" width="180" height="70" rx="12" fill="#fff3e0" stroke="#E65100" strokeWidth="1.5" filter="url(#devShadow)"/>
       <text x="250" y="240" textAnchor="middle" fontSize="16">🗣️</text>
       <text x="250" y="265" textAnchor="middle" fontSize="12" fontWeight="bold" fill="#E65100">مطالبه‌ی بیشتر حقوق</text>
-      &#123;/* فلش‌ها */&#125;
+      {/* فلش‌ها */}
       <path d="M200,95 Q250,60 300,95" fill="none" stroke="#333" strokeWidth="2" markerEnd="url(#arrowDev)"/>
       <text x="250" y="55" textAnchor="middle" fontSize="9" fill="#333">نهادسازی، حاکمیت قانون</text>
       <path d="M440,130 Q470,180 340,230" fill="none" stroke="#333" strokeWidth="2"/>
@@ -476,14 +476,14 @@ export const DevFeedbackSVG = () => (
       <path d="M160,240 Q100,200 60,130" fill="none" stroke="#333" strokeWidth="2"/>
       <polygon points="63,133 55,125 60,138" fill="#333"/>
       <text x="70" y="195" textAnchor="middle" fontSize="9" fill="#333">ارزش‌های خودبیانگری</text>
-      &#123;/* مرکز */&#125;
+      {/* مرکز */}
       <text x="250" y="160" textAnchor="middle" fontSize="20">🔄</text>
       <text x="250" y="305" textAnchor="middle" fontSize="9.5" fill="#666" fontStyle="italic">سن (۱۹۹۹)، اینگلهارت و ولزل (۲۰۰۵)</text>
     </svg>
   </div>
 )
 
-&#123;/* ═══════════════════ محتوای اصلی ═══════════════════ */&#125;
+{/* ═══════════════════ محتوای اصلی ═══════════════════ */}
 
 <HeroSection />
 
@@ -1089,22 +1089,22 @@ export const OverlappingConsensusSVG = () => (
         <filter id="ocShadow"><feDropShadow dx="0" dy="2" stdDeviation="4" floodOpacity="0.1"/></filter>
       </defs>
       <text x="260" y="25" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#1a1a2e">اجماع متقاطع: مبانی متفاوت، نتیجه‌ی مشترک</text>
-      &#123;/* دایره‌های سنّت‌ها */&#125;
+      {/* دایره‌های سنّت‌ها */}
       <circle cx="180" cy="180" r="100" fill="#e3f2fd" stroke="#1976D2" strokeWidth="1.5" opacity="0.6"/>
       <circle cx="340" cy="180" r="100" fill="#fce4ec" stroke="#C62828" strokeWidth="1.5" opacity="0.6"/>
       <circle cx="260" cy="290" r="100" fill="#e8f5e9" stroke="#388E3C" strokeWidth="1.5" opacity="0.6"/>
-      &#123;/* ناحیه‌ی تقاطع */&#125;
+      {/* ناحیه‌ی تقاطع */}
       <circle cx="260" cy="210" r="38" fill="#fff8e1" stroke="#E65100" strokeWidth="2" filter="url(#ocShadow)"/>
       <text x="260" y="206" textAnchor="middle" fontSize="10" fontWeight="bold" fill="#E65100">اجماع</text>
       <text x="260" y="222" textAnchor="middle" fontSize="9" fill="#333">منع شکنجه</text>
-      &#123;/* برچسب‌ها */&#125;
+      {/* برچسب‌ها */}
       <text x="130" y="140" textAnchor="middle" fontSize="11" fontWeight="bold" fill="#0D47A1">سنّت اسلامی</text>
       <text x="130" y="158" textAnchor="middle" fontSize="9" fill="#333">مقاصد شریعه</text>
       <text x="390" y="140" textAnchor="middle" fontSize="11" fontWeight="bold" fill="#B71C1C">سنّت لیبرال</text>
       <text x="390" y="158" textAnchor="middle" fontSize="9" fill="#333">امر مطلق کانتی</text>
       <text x="260" y="340" textAnchor="middle" fontSize="11" fontWeight="bold" fill="#1B5E20">سنّت شرق آسیا</text>
       <text x="260" y="358" textAnchor="middle" fontSize="9" fill="#333">ren / انسان‌دوستی</text>
-      &#123;/* حاشیه‌نویسی */&#125;
+      {/* حاشیه‌نویسی */}
       <text x="260" y="375" textAnchor="middle" fontSize="9" fill="#666" fontStyle="italic">رالز، تیلور، النعیم</text>
     </svg>
   </div>
@@ -1163,7 +1163,7 @@ export const OverlappingConsensusSVG = () => (
 
 <SectionDivider icon="📎" label="پیوست‌ها" />
 
-&#123;/* ═══════════════════ پیوست الف ═══════════════════ */&#125;
+{/* ═══════════════════ پیوست الف ═══════════════════ */}
 
 <AppendixSection id="app-glossary" title="پیوست الف: واژه‌نامه‌ی تطبیقی" icon="📖">
 
@@ -1196,7 +1196,7 @@ export const OverlappingConsensusSVG = () => (
 
 </AppendixSection>
 
-&#123;/* ═══════════════════ پیوست ب ═══════════════════ */&#125;
+{/* ═══════════════════ پیوست ب ═══════════════════ */}
 
 <AppendixSection id="app-schools" title="پیوست ب: جدول تطبیقی مکاتب" icon="🏛️">
 
@@ -1220,7 +1220,7 @@ export const OverlappingConsensusSVG = () => (
 
 </AppendixSection>
 
-&#123;/* ═══════════════════ پیوست ج ═══════════════════ */&#125;
+{/* ═══════════════════ پیوست ج ═══════════════════ */}
 
 <AppendixSection id="app-reading" title="پیوست ج: خوانش‌های بیشتر" icon="📚">
 

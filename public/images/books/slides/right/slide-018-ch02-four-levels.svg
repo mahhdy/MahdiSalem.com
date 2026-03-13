@@ -1,0 +1,85 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg18" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0E1A"/>
+      <stop offset="100%" stop-color="#0D1528"/>
+    </linearGradient>
+    <radialGradient id="glow18" cx="50%" cy="55%" r="50%">
+      <stop offset="0%" stop-color="#E8B83D" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#E8B83D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pyramidGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8B83D" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#E8B83D" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg18)"/>
+  <rect width="1080" height="1080" fill="url(#glow18)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="320" height="48" rx="24"
+        fill="#E8B83D" fill-opacity="0.08" stroke="#E8B83D" stroke-opacity="0.25"/>
+  <text x="200" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#E8B83D"
+        text-anchor="middle" direction="rtl">فصل ۲ · اسلاید ۸ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="155" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#E8B83D" text-anchor="middle" direction="rtl">سه سطح + یک: ابزار تحلیلی بنیادین</text>
+  <text x="540" y="205" font-family="Vazirmatn, Tahoma" font-size="24" fill="#888"
+        text-anchor="middle" direction="rtl">نوآوری روش‌شناختی نویسنده برای رفع سوء‌فهم‌های فلسفی</text>
+
+  <!-- هرم چهار سطحی -->
+  <!-- سطح اخص (بالا) -->
+  <polygon points="540,280 700,420 380,420" fill="#E8B83D" fill-opacity="0.08" stroke="#E8B83D" stroke-opacity="0.3" stroke-width="1.5"/>
+  <text x="540" y="370" font-family="Vazirmatn, Tahoma" font-size="26" fill="#E8B83D"
+        text-anchor="middle" direction="rtl" font-weight="bold">اخص</text>
+  <text x="540" y="400" font-family="Vazirmatn, Tahoma" font-size="18" fill="#CCC"
+        text-anchor="middle" direction="rtl">آرمانی · تجویزی · قطب‌نما</text>
+
+  <!-- سطح خاص -->
+  <polygon points="380,425 700,425 780,540 300,540" fill="#06B6D4" fill-opacity="0.06" stroke="#06B6D4" stroke-opacity="0.2" stroke-width="1.2"/>
+  <text x="540" y="480" font-family="Vazirmatn, Tahoma" font-size="26" fill="#22D3EE"
+        text-anchor="middle" direction="rtl" font-weight="bold">خاص</text>
+  <text x="540" y="515" font-family="Vazirmatn, Tahoma" font-size="18" fill="#CCC"
+        text-anchor="middle" direction="rtl">مدرن · روشنگرانه · قراردادی</text>
+
+  <!-- سطح عام -->
+  <polygon points="300,545 780,545 860,660 220,660" fill="#22C55E" fill-opacity="0.05" stroke="#22C55E" stroke-opacity="0.18" stroke-width="1.2"/>
+  <text x="540" y="600" font-family="Vazirmatn, Tahoma" font-size="26" fill="#4ADE80"
+        text-anchor="middle" direction="rtl" font-weight="bold">عام</text>
+  <text x="540" y="635" font-family="Vazirmatn, Tahoma" font-size="18" fill="#CCC"
+        text-anchor="middle" direction="rtl">توصیفی · فراگیر · همهٔ نمونه‌ها</text>
+
+  <!-- سطح حداقلی (پایه) -->
+  <polygon points="220,665 860,665 920,760 160,760" fill="#DC2626" fill-opacity="0.05" stroke="#DC2626" stroke-opacity="0.2" stroke-width="1.2"/>
+  <text x="540" y="710" font-family="Vazirmatn, Tahoma" font-size="26" fill="#F87171"
+        text-anchor="middle" direction="rtl" font-weight="bold">حداقلی</text>
+  <text x="540" y="745" font-family="Vazirmatn, Tahoma" font-size="18" fill="#CCC"
+        text-anchor="middle" direction="rtl">خطّ قرمز · بدون آن بازی متوقف می‌شود</text>
+
+  <!-- توضیح سمت راست -->
+  <rect x="80" y="800" width="440" height="110" rx="16"
+        fill="#FFFFFF" fill-opacity="0.02" stroke="#FFFFFF" stroke-opacity="0.06"/>
+  <text x="460" y="840" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FFFFFF"
+        text-anchor="start" direction="rtl" font-weight="bold">چرا مهم است؟</text>
+  <text x="460" y="878" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="start" direction="rtl">بیشتر مناقشات حقوقی ناشی از حرف زدن</text>
+  <text x="460" y="905" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="start" direction="rtl">در سطوح مختلف بدون آگاهی از آن است</text>
+
+  <!-- نقد سمت چپ -->
+  <rect x="560" y="800" width="440" height="110" rx="16"
+        fill="#DC2626" fill-opacity="0.03" stroke="#DC2626" stroke-opacity="0.1"/>
+  <text x="960" y="840" font-family="Vazirmatn, Tahoma" font-size="22" fill="#F87171"
+        text-anchor="start" direction="rtl" font-weight="bold">⚠ خطر:</text>
+  <text x="960" y="878" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">سطح «اخص» مدینهٔ فاضله نشود:</text>
+  <text x="960" y="905" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">ایدئال تنظیمی یا هدف تحقق‌پذیر؟</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#E8B83D" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۲</text>
+</svg>

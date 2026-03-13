@@ -1,0 +1,79 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg081" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#022C22"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg081)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="360" height="50" rx="25"
+        fill="#22C55E" fill-opacity="0.1" stroke="#22C55E" stroke-opacity="0.5"/>
+  <text x="220" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#4ADE80"
+        text-anchor="middle" direction="rtl">فصل ۸ · اسلاید ۲ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="160" font-family="Vazirmatn, Tahoma" font-size="52" font-weight="bold"
+        fill="#4ADE80" text-anchor="middle" direction="rtl">ماشین زنده: ورودی‌ها و خروجی‌ها</text>
+
+  <!-- بلوک ورودی‌ها -->
+  <rect x="60" y="230" width="360" height="550" rx="24"
+        fill="#022C22" stroke="#22C55E" stroke-opacity="0.6"/>
+  <text x="240" y="285" font-family="Vazirmatn, Tahoma" font-size="32" fill="#BBF7D0"
+        font-weight="bold" text-anchor="middle" direction="rtl">ورودی‌ها</text>
+
+  <text x="240" y="340" font-family="Vazirmatn, Tahoma" font-size="26" fill="#D1FAE5"
+        text-anchor="middle" direction="rtl">تجربهٔ رنج</text>
+  <text x="240" y="385" font-family="Vazirmatn, Tahoma" font-size="26" fill="#D1FAE5"
+        text-anchor="middle" direction="rtl">قدرت‌های موجود</text>
+  <text x="240" y="430" font-family="Vazirmatn, Tahoma" font-size="26" fill="#D1FAE5"
+        text-anchor="middle" direction="rtl">باورها و سنت‌ها</text>
+  <text x="240" y="475" font-family="Vazirmatn, Tahoma" font-size="26" fill="#D1FAE5"
+        text-anchor="middle" direction="rtl">مصالح و نیازها</text>
+  <text x="240" y="520" font-family="Vazirmatn, Tahoma" font-size="26" fill="#D1FAE5"
+        text-anchor="middle" direction="rtl">گفت‌وگو و تعارض</text>
+  <text x="240" y="565" font-family="Vazirmatn, Tahoma" font-size="26" fill="#D1FAE5"
+        text-anchor="middle" direction="rtl">دانش و داده</text>
+
+  <!-- بدنهٔ ماشین -->
+  <rect x="430" y="260" width="220" height="490" rx="40"
+        fill="#052E16" stroke="#4ADE80" stroke-opacity="0.7" stroke-width="2"/>
+  <text x="540" y="320" font-family="Vazirmatn, Tahoma" font-size="30" fill="#BBF7D0"
+        font-weight="bold" text-anchor="middle" direction="rtl">فرایند</text>
+  <text x="540" y="365" font-family="Vazirmatn, Tahoma" font-size="26" fill="#A7F3D0"
+        text-anchor="middle" direction="rtl">نهادها</text>
+  <text x="540" y="405" font-family="Vazirmatn, Tahoma" font-size="26" fill="#A7F3D0"
+        text-anchor="middle" direction="rtl">مشارکت</text>
+  <text x="540" y="445" font-family="Vazirmatn, Tahoma" font-size="26" fill="#A7F3D0"
+        text-anchor="middle" direction="rtl">بازخورد</text>
+  <text x="540" y="485" font-family="Vazirmatn, Tahoma" font-size="26" fill="#A7F3D0"
+        text-anchor="middle" direction="rtl">اصلاح مداوم</text>
+  <text x="540" y="525" font-family="Vazirmatn, Tahoma" font-size="26" fill="#A7F3D0"
+        text-anchor="middle" direction="rtl">اخلاق منظوم</text>
+
+  <!-- بلوک خروجی‌ها -->
+  <rect x="700" y="230" width="320" height="550" rx="24"
+        fill="#111827" stroke="#FACC15" stroke-opacity="0.8"/>
+  <text x="860" y="285" font-family="Vazirmatn, Tahoma" font-size="32" fill="#FACC15"
+        font-weight="bold" text-anchor="middle" direction="rtl">خروجی‌ها</text>
+
+  <text x="860" y="340" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FEF9C3"
+        text-anchor="middle" direction="rtl">تعاریف شفاف حق</text>
+  <text x="860" y="385" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FEF9C3"
+        text-anchor="middle" direction="rtl">توازن حق/تکلیف</text>
+  <text x="860" y="430" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FEF9C3"
+        text-anchor="middle" direction="rtl">کاهش رنج قابل‌اجتناب</text>
+  <text x="860" y="475" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FEF9C3"
+        text-anchor="middle" direction="rtl">افزایش قابلیت‌ها</text>
+  <text x="860" y="520" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FEF9C3"
+        text-anchor="middle" direction="rtl">اعتماد نهادی</text>
+
+  <!-- هشدار -->
+  <rect x="80" y="840" width="920" height="140" rx="18"
+        fill="#1F2937" stroke="#6B7280" stroke-opacity="0.5"/>
+  <text x="540" y="885" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F9FAFB"
+        text-anchor="middle" direction="rtl">⚡ اگر ورودی‌ها منحرف شوند (قدرت مسلط، داده دستکاری‌شده)،</text>
+  <text x="540" y="930" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F9FAFB"
+        text-anchor="middle" direction="rtl">ماشین همان قدر «مهندسی دقیق» ولی ناعادل خواهد بود</text>
+</svg>

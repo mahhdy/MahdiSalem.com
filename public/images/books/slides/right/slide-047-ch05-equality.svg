@@ -1,0 +1,95 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg47" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A1018"/>
+      <stop offset="100%" stop-color="#0D0A18"/>
+    </linearGradient>
+    <radialGradient id="glow47" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg47)"/>
+  <rect width="1080" height="1080" fill="url(#glow47)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="340" height="48" rx="24"
+        fill="#F59E0B" fill-opacity="0.08" stroke="#F59E0B" stroke-opacity="0.25"/>
+  <text x="210" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#F59E0B"
+        text-anchor="middle" direction="rtl">فصل ۵ · اسلاید ۷ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="155" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="900"
+        fill="#FBBF24" text-anchor="middle" direction="rtl">حق و برابری</text>
+  <text x="540" y="210" font-family="Vazirmatn, Tahoma" font-size="26" fill="#888"
+        text-anchor="middle" direction="rtl">آیا حق برابری می‌آورد یا نابرابری را تثبیت می‌کند؟</text>
+
+  <!-- ترازوی نمادین -->
+  <!-- پایه -->
+  <line x1="540" y1="420" x2="540" y2="560" stroke="#FBBF24" stroke-opacity="0.3" stroke-width="3"/>
+  <polygon points="520,560 560,560 540,580" fill="#FBBF24" fill-opacity="0.3"/>
+  <!-- بازوی ترازو -->
+  <line x1="280" y1="400" x2="800" y2="440" stroke="#FBBF24" stroke-opacity="0.3" stroke-width="2.5"/>
+
+  <!-- کفه چپ (سنگین‌تر) -->
+  <rect x="170" y="410" width="220" height="130" rx="16"
+        fill="#DC2626" fill-opacity="0.06" stroke="#DC2626" stroke-opacity="0.2"/>
+  <text x="280" y="460" font-family="Vazirmatn, Tahoma" font-size="24" fill="#F87171"
+        text-anchor="middle" direction="rtl" font-weight="bold">حق بدون برابری</text>
+  <text x="280" y="500" font-family="Vazirmatn, Tahoma" font-size="18" fill="#BBB"
+        text-anchor="middle" direction="rtl">امتیاز ثروتمندان</text>
+  <text x="280" y="525" font-family="Vazirmatn, Tahoma" font-size="18" fill="#BBB"
+        text-anchor="middle" direction="rtl">آزادی صوری بی‌معنا</text>
+
+  <!-- کفه راست -->
+  <rect x="690" y="380" width="220" height="130" rx="16"
+        fill="#22C55E" fill-opacity="0.06" stroke="#22C55E" stroke-opacity="0.2"/>
+  <text x="800" y="430" font-family="Vazirmatn, Tahoma" font-size="24" fill="#4ADE80"
+        text-anchor="middle" direction="rtl" font-weight="bold">برابری بدون حق</text>
+  <text x="800" y="470" font-family="Vazirmatn, Tahoma" font-size="18" fill="#BBB"
+        text-anchor="middle" direction="rtl">یکسان‌سازی اجباری</text>
+  <text x="800" y="495" font-family="Vazirmatn, Tahoma" font-size="18" fill="#BBB"
+        text-anchor="middle" direction="rtl">سرکوب تفاوت‌ها</text>
+
+  <!-- سه نوع برابری -->
+  <rect x="80" y="620" width="290" height="160" rx="18"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.18"/>
+  <text x="225" y="665" font-family="Vazirmatn, Tahoma" font-size="24" fill="#22D3EE"
+        text-anchor="middle" direction="rtl" font-weight="bold">برابری صوری</text>
+  <text x="225" y="705" font-family="Vazirmatn, Tahoma" font-size="18" fill="#CCC"
+        text-anchor="middle" direction="rtl">قانون برای همه یکسان</text>
+  <text x="225" y="735" font-family="Vazirmatn, Tahoma" font-size="18" fill="#999"
+        text-anchor="middle" direction="rtl">لازم ولی کافی نیست</text>
+
+  <rect x="395" y="620" width="290" height="160" rx="18"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.18"/>
+  <text x="540" y="665" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FBBF24"
+        text-anchor="middle" direction="rtl" font-weight="bold">برابری فرصت</text>
+  <text x="540" y="705" font-family="Vazirmatn, Tahoma" font-size="18" fill="#CCC"
+        text-anchor="middle" direction="rtl">دسترسی برابر به امکانات</text>
+  <text x="540" y="735" font-family="Vazirmatn, Tahoma" font-size="18" fill="#999"
+        text-anchor="middle" direction="rtl">بهتر ولی هنوز ناکامل</text>
+
+  <rect x="710" y="620" width="290" height="160" rx="18"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.18"/>
+  <text x="855" y="665" font-family="Vazirmatn, Tahoma" font-size="24" fill="#4ADE80"
+        text-anchor="middle" direction="rtl" font-weight="bold">برابری قابلیت</text>
+  <text x="855" y="705" font-family="Vazirmatn, Tahoma" font-size="18" fill="#CCC"
+        text-anchor="middle" direction="rtl">توان واقعی شکوفایی</text>
+  <text x="855" y="735" font-family="Vazirmatn, Tahoma" font-size="18" fill="#FBBF24"
+        text-anchor="middle" direction="rtl">★ ایدئال نویسنده</text>
+
+  <!-- دیدگاه نویسنده -->
+  <rect x="80" y="820" width="920" height="100" rx="18"
+        fill="#E8B83D" fill-opacity="0.04" stroke="#E8B83D" stroke-opacity="0.18"/>
+  <text x="540" y="860" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FBBF24"
+        text-anchor="middle" direction="rtl" font-weight="bold">دیدگاه نویسنده:</text>
+  <text x="540" y="900" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="middle" direction="rtl">حق بر اساس ظرفیت مخاطبان گسترش و تسطیح می‌یابد تا شبه‌برابر شود</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#F59E0B" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۵</text>
+</svg>

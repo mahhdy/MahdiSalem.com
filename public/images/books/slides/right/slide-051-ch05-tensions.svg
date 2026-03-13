@@ -1,0 +1,50 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg051" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg051)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="360" height="50" rx="25"
+        fill="#EF4444" fill-opacity="0.08" stroke="#EF4444" stroke-opacity="0.4"/>
+  <text x="220" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FCA5A5"
+        text-anchor="middle" direction="rtl">فصل ۵ · اسلاید ۲ از ۱۰ — تنش‌ها</text>
+
+  <!-- عنوان -->
+  <text x="540" y="170" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="bold"
+        fill="#FCA5A5" text-anchor="middle" direction="rtl">چهار دوگانهٔ خطرناک</text>
+
+  <!-- چهار باکس -->
+  <rect x="80" y="230" width="920" height="150" rx="18"
+        fill="#111827" stroke="#4B5563" stroke-opacity="0.6"/>
+  <text x="540" y="280" font-family="Vazirmatn, Tahoma" font-size="32" fill="#F9FAFB"
+        font-weight="bold" text-anchor="middle" direction="rtl">حق / تکلیف</text>
+  <text x="540" y="330" font-family="Vazirmatn, Tahoma" font-size="26" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">زیادی تأکید بر حق → فردگرایی افراطی</text>
+  <text x="540" y="365" font-family="Vazirmatn, Tahoma" font-size="26" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">زیادی تأکید بر تکلیف → سرکوب</text>
+
+  <rect x="80" y="400" width="920" height="150" rx="18"
+        fill="#111827" stroke="#4B5563" stroke-opacity="0.6"/>
+  <text x="540" y="450" font-family="Vazirmatn, Tahoma" font-size="32" fill="#F9FAFB"
+        font-weight="bold" text-anchor="middle" direction="rtl">حق صوری / حق واقعی</text>
+  <text x="540" y="500" font-family="Vazirmatn, Tahoma" font-size="26" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">کتاب بر شکاف «اجازه» و «بهره‌مندی» تأکید می‌کند</text>
+
+  <rect x="80" y="570" width="920" height="150" rx="18"
+        fill="#111827" stroke="#4B5563" stroke-opacity="0.6"/>
+  <text x="540" y="620" font-family="Vazirmatn, Tahoma" font-size="32" fill="#F9FAFB"
+        font-weight="bold" text-anchor="middle" direction="rtl">حق فرد / حق جمع</text>
+  <text x="540" y="670" font-family="Vazirmatn, Tahoma" font-size="26" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">ماشین زنده باید هر دو را هم‌زمان پشتیبانی کند</text>
+
+  <rect x="80" y="740" width="920" height="150" rx="18"
+        fill="#111827" stroke="#4B5563" stroke-opacity="0.6"/>
+  <text x="540" y="790" font-family="Vazirmatn, Tahoma" font-size="32" fill="#F9FAFB"
+        font-weight="bold" text-anchor="middle" direction="rtl">حق قانونی / حق اخلاقی</text>
+  <text x="540" y="840" font-family="Vazirmatn, Tahoma" font-size="26" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">هدف نهایی: نزدیک‌کردن این دو، نه حذف شکاف</text>
+</svg>

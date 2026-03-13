@@ -1,0 +1,95 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg24" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D0A15"/>
+      <stop offset="100%" stop-color="#0A1220"/>
+    </linearGradient>
+    <radialGradient id="glowL24" cx="25%" cy="50%" r="35%">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowR24" cx="75%" cy="50%" r="35%">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg24)"/>
+  <rect width="1080" height="1080" fill="url(#glowL24)"/>
+  <rect width="1080" height="1080" fill="url(#glowR24)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="340" height="48" rx="24"
+        fill="#22C55E" fill-opacity="0.08" stroke="#22C55E" stroke-opacity="0.25"/>
+  <text x="210" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#22C55E"
+        text-anchor="middle" direction="rtl">فصل ۳ · اسلاید ۴ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="155" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#FFFFFF" text-anchor="middle" direction="rtl">تحوّل بزرگ تاریخ حق</text>
+  <text x="540" y="205" font-family="Vazirmatn, Tahoma" font-size="26" fill="#888"
+        text-anchor="middle" direction="rtl">گذار از زبان تکلیف به زبان حق</text>
+
+  <!-- فلش بزرگ از راست به چپ -->
+  <polygon points="780,490 300,490 320,440 180,510 320,580 300,530 780,530"
+           fill="#22C55E" fill-opacity="0.06" stroke="#22C55E" stroke-opacity="0.2" stroke-width="1.5"/>
+
+  <!-- بلوک راست: تکلیف‌محور -->
+  <rect x="600" y="290" width="400" height="420" rx="22"
+        fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.2" stroke-width="1.5"/>
+  <rect x="600" y="290" width="400" height="65" rx="22"
+        fill="#DC2626" fill-opacity="0.1"/>
+  <text x="800" y="332" font-family="Vazirmatn, Tahoma" font-size="30" fill="#F87171"
+        text-anchor="middle" direction="rtl" font-weight="bold">نظام تکلیف‌محور</text>
+
+  <text x="960" y="400" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• فرد تابع جمع و حاکم</text>
+  <text x="960" y="440" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• «وظیفه» زبان اصلی</text>
+  <text x="960" y="480" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• حق = لطف حاکم</text>
+  <text x="960" y="520" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• مشروعیت از بالا (وحی/سلطان)</text>
+
+  <rect x="630" y="570" width="340" height="55" rx="12"
+        fill="#DC2626" fill-opacity="0.08"/>
+  <text x="800" y="605" font-family="Vazirmatn, Tahoma" font-size="20" fill="#F87171"
+        text-anchor="middle" direction="rtl">جوامع سنّتی · فئودالی · دینی</text>
+
+  <!-- بلوک چپ: حق‌محور -->
+  <rect x="80" y="290" width="400" height="420" rx="22"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.2" stroke-width="1.5"/>
+  <rect x="80" y="290" width="400" height="65" rx="22"
+        fill="#22C55E" fill-opacity="0.1"/>
+  <text x="280" y="332" font-family="Vazirmatn, Tahoma" font-size="30" fill="#4ADE80"
+        text-anchor="middle" direction="rtl" font-weight="bold">نظام حق‌محور</text>
+
+  <text x="440" y="400" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• فرد صاحب حق ذاتی</text>
+  <text x="440" y="440" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• «حق» زبان اصلی</text>
+  <text x="440" y="480" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• تکلیف = تضمین حق دیگری</text>
+  <text x="440" y="520" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• مشروعیت از پایین (مردم)</text>
+
+  <rect x="110" y="570" width="340" height="55" rx="12"
+        fill="#22C55E" fill-opacity="0.08"/>
+  <text x="280" y="605" font-family="Vazirmatn, Tahoma" font-size="20" fill="#4ADE80"
+        text-anchor="middle" direction="rtl">جوامع مدرن · لیبرال · دموکراتیک</text>
+
+  <!-- دیدگاه نویسنده -->
+  <rect x="100" y="760" width="880" height="130" rx="20"
+        fill="#E8B83D" fill-opacity="0.04" stroke="#E8B83D" stroke-opacity="0.18"/>
+  <text x="540" y="810" font-family="Vazirmatn, Tahoma" font-size="28" fill="#E8B83D"
+        text-anchor="middle" direction="rtl" font-weight="bold">دیدگاه نقادانه نویسنده:</text>
+  <text x="540" y="850" font-family="Vazirmatn, Tahoma" font-size="24" fill="#CCC"
+        text-anchor="middle" direction="rtl">حق و تکلیف دو روی یک سکه‌اند — تقدّم یکی بر دیگری</text>
+  <text x="540" y="882" font-family="Vazirmatn, Tahoma" font-size="24" fill="#CCC"
+        text-anchor="middle" direction="rtl">نشانهٔ توزیع قدرت در جامعه است نه حقیقت فلسفی</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#22C55E" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۳</text>
+</svg>

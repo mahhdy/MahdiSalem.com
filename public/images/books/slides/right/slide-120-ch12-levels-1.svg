@@ -1,0 +1,73 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D0A18"/>
+      <stop offset="100%" stop-color="#1A1428"/>
+    </linearGradient>
+    <linearGradient id="layerGrad" x1="0" y1="200" x2="0" y2="950" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#C19A3E"/>
+      <stop offset="33%" stop-color="#A855F7"/>
+      <stop offset="66%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#DC2626"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg5)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="360" height="48" rx="24"
+        fill="#C19A3E" fill-opacity="0.08" stroke="#C19A3E" stroke-opacity="0.25"/>
+  <text x="220" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#C19A3E"
+        text-anchor="middle" direction="rtl">فصل ۱۲ · اسلاید ۱ از ۳</text>
+
+  <!-- عنوان -->
+  <text x="540" y="160" font-family="Vazirmatn, Tahoma" font-size="64" font-weight="900"
+        fill="#C19A3E" text-anchor="middle" direction="rtl">چهار سطح حق</text>
+  <text x="540" y="220" font-family="Vazirmatn, Tahoma" font-size="30" fill="#778"
+        text-anchor="middle" direction="rtl">از حداقلی تا آرمانی</text>
+
+  <!-- نوار عمودی سمت راست -->
+  <rect x="970" y="290" width="5" height="650" rx="2.5" fill="url(#layerGrad)" opacity="0.5"/>
+
+  <!-- سطح اخص -->
+  <rect x="80" y="295" width="870" height="130" rx="18"
+        fill="#C19A3E" fill-opacity="0.06" stroke="#C19A3E" stroke-opacity="0.3" stroke-width="2"/>
+  <text x="930" y="355" font-family="Vazirmatn, Tahoma" font-size="38" fill="#C19A3E"
+        font-weight="bold" text-anchor="start" direction="rtl">اخص</text>
+  <text x="880" y="400" font-family="Vazirmatn, Tahoma" font-size="26" fill="#BBB"
+        text-anchor="start" direction="rtl">حقوق مهندسی‌شده · اخلاق منظوم</text>
+
+  <!-- سطح خاص -->
+  <rect x="80" y="445" width="870" height="130" rx="18"
+        fill="#A855F7" fill-opacity="0.06" stroke="#A855F7" stroke-opacity="0.3" stroke-width="2"/>
+  <text x="930" y="505" font-family="Vazirmatn, Tahoma" font-size="38" fill="#A855F7"
+        font-weight="bold" text-anchor="start" direction="rtl">خاص</text>
+  <text x="880" y="550" font-family="Vazirmatn, Tahoma" font-size="26" fill="#BBB"
+        text-anchor="start" direction="rtl">قرارداد اجتماعی · عقلانیت جمعی</text>
+
+  <!-- سطح عام -->
+  <rect x="80" y="595" width="870" height="130" rx="18"
+        fill="#00D4FF" fill-opacity="0.06" stroke="#00D4FF" stroke-opacity="0.3" stroke-width="2"/>
+  <text x="930" y="655" font-family="Vazirmatn, Tahoma" font-size="38" fill="#00D4FF"
+        font-weight="bold" text-anchor="start" direction="rtl">عام</text>
+  <text x="880" y="700" font-family="Vazirmatn, Tahoma" font-size="26" fill="#BBB"
+        text-anchor="start" direction="rtl">هر مرزبندی در هر نظام تعاملی</text>
+
+  <!-- سطح حداقلی -->
+  <rect x="80" y="745" width="870" height="130" rx="18"
+        fill="#DC2626" fill-opacity="0.06" stroke="#DC2626" stroke-opacity="0.3" stroke-width="2"/>
+  <text x="930" y="805" font-family="Vazirmatn, Tahoma" font-size="38" fill="#F87171"
+        font-weight="bold" text-anchor="start" direction="rtl">حداقلی</text>
+  <text x="880" y="850" font-family="Vazirmatn, Tahoma" font-size="26" fill="#BBB"
+        text-anchor="start" direction="rtl">بدون‌شان بازی متوقف می‌شود</text>
+
+  <!-- جمع‌بندی -->
+  <rect x="90" y="920" width="900" height="70" rx="14"
+        fill="#1A1A30" stroke="#C19A3E" stroke-opacity="0.2"/>
+  <text x="540" y="965" font-family="Vazirmatn, Tahoma" font-size="28" fill="#C19A3E"
+        text-anchor="middle" direction="rtl">✦ بیشتر مناقشات حقوقی از خلط سطوح ناشی می‌شوند</text>
+
+  <rect x="40" y="1035" width="1000" height="2.5" rx="1" fill="url(#layerGrad)" opacity="0.3"/>
+  <text x="540" y="1065" font-family="Vazirmatn, Tahoma" font-size="22" fill="#556"
+        text-anchor="middle" direction="rtl">بعدی: تعریف هر سطح ←</text>
+</svg>

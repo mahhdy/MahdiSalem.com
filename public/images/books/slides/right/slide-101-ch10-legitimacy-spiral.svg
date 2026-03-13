@@ -1,0 +1,53 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg101" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg101)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="360" height="50" rx="25"
+        fill="#6366F1" fill-opacity="0.08" stroke="#6366F1" stroke-opacity="0.4"/>
+  <text x="220" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#A5B4FC"
+        text-anchor="middle" direction="rtl">فصل ۱۰ · اسلاید ۱ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="170" font-family="Vazirmatn, Tahoma" font-size="52" font-weight="bold"
+        fill="#A5B4FC" text-anchor="middle" direction="rtl">مشروعیت مارپیچی</text>
+  <text x="540" y="220" font-family="Vazirmatn, Tahoma" font-size="26" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">نه نقطه‌ای، نه ثابت؛ یک دور هرمنوتیکی صعودی</text>
+
+  <!-- سه حلقهٔ مشروعیت -->
+  <circle cx="540" cy="570" r="260" fill="none" stroke="#4B5563" stroke-width="2"/>
+  <circle cx="540" cy="570" r="180" fill="none" stroke="#6B7280" stroke-width="2" stroke-dasharray="8,6"/>
+  <circle cx="540" cy="570" r="100" fill="none" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="4,6"/>
+
+  <text x="540" y="330" font-family="Vazirmatn, Tahoma" font-size="26" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">مرحلهٔ ۱: مشروعیت ادعایی (ابتدایی)</text>
+  <text x="540" y="830" font-family="Vazirmatn, Tahoma" font-size="26" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">مرحلهٔ ۳: مشروعیت آزموده‌شده (پس از بازخورد)</text>
+
+  <!-- برچسب مرجع و مردم -->
+  <text x="840" y="570" font-family="Vazirmatn, Tahoma" font-size="26" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">مرجع</text>
+  <text x="240" y="570" font-family="Vazirmatn, Tahoma" font-size="26" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">مردم</text>
+
+  <!-- پیکان مارپیچ نمادین -->
+  <path d="M 540 330
+           C 750 360, 820 500, 700 600
+           C 620 670, 480 670, 430 610
+           C 380 550, 400 480, 470 450
+           C 520 430, 580 440, 610 470"
+        fill="none" stroke="#6366F1" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- خلاصه -->
+  <rect x="80" y="870" width="920" height="140" rx="18"
+        fill="#111827" stroke="#4B5563" stroke-opacity="0.6"/>
+  <text x="540" y="915" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F9FAFB"
+        text-anchor="middle" direction="rtl">مشروعیت = تابعی از:</text>
+  <text x="540" y="955" font-family="Vazirmatn, Tahoma" font-size="26" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">رعایت حقوق · کارآمدی · مشارکت · امکان نقد و اصلاح</text>
+</svg>

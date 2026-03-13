@@ -1,0 +1,83 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg31" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#08101A"/>
+      <stop offset="50%" stop-color="#0D1828"/>
+      <stop offset="100%" stop-color="#08101A"/>
+    </linearGradient>
+    <radialGradient id="glow31" cx="50%" cy="42%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cyanLine31" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#06B6D4" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg31)"/>
+  <rect width="1080" height="1080" fill="url(#glow31)"/>
+
+  <!-- کادر تزئینی -->
+  <rect x="50" y="50" width="980" height="980" rx="32" fill="none"
+        stroke="#06B6D4" stroke-opacity="0.10" stroke-width="1.5"/>
+  <rect x="70" y="70" width="940" height="940" rx="24" fill="none"
+        stroke="#06B6D4" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- نشان بخش -->
+  <rect x="360" y="130" width="360" height="52" rx="26"
+        fill="#06B6D4" fill-opacity="0.08" stroke="#06B6D4" stroke-opacity="0.3"/>
+  <text x="540" y="165" font-family="Vazirmatn, Tahoma" font-size="26" fill="#06B6D4"
+        text-anchor="middle" direction="rtl" font-weight="bold">بخش اول · زمینه و بازشناسی</text>
+
+  <rect x="140" y="230" width="800" height="2" rx="1" fill="url(#cyanLine31)"/>
+
+  <!-- عدد فصل بزرگ -->
+  <text x="540" y="400" font-family="Vazirmatn, Tahoma" font-size="180" fill="#06B6D4"
+        fill-opacity="0.07" text-anchor="middle" font-weight="900">۴</text>
+
+  <!-- عنوان فصل -->
+  <text x="540" y="510" font-family="Vazirmatn, Tahoma" font-size="72" font-weight="900"
+        fill="#FFFFFF" text-anchor="middle" direction="rtl">مکاتب و منشأها</text>
+
+  <!-- زیرعنوان -->
+  <text x="540" y="580" font-family="Vazirmatn, Tahoma" font-size="28" fill="#22D3EE"
+        text-anchor="middle" direction="rtl">ده منشأ متمایز · فضای برداری حق · حق از کجا می‌آید؟</text>
+
+  <rect x="340" y="620" width="400" height="2" rx="1" fill="url(#cyanLine31)"/>
+
+  <!-- چهار کلیدواژه -->
+  <rect x="790" y="685" width="210" height="65" rx="15"
+        fill="#DC2626" fill-opacity="0.06" stroke="#DC2626" stroke-opacity="0.2"/>
+  <text x="895" y="727" font-family="Vazirmatn, Tahoma" font-size="24" fill="#F87171"
+        text-anchor="middle" direction="rtl" font-weight="bold">ده منشأ</text>
+
+  <rect x="545" y="685" width="210" height="65" rx="15"
+        fill="#F59E0B" fill-opacity="0.06" stroke="#F59E0B" stroke-opacity="0.2"/>
+  <text x="650" y="727" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FBBF24"
+        text-anchor="middle" direction="rtl" font-weight="bold">چندمنشأیی</text>
+
+  <rect x="300" y="685" width="210" height="65" rx="15"
+        fill="#22C55E" fill-opacity="0.06" stroke="#22C55E" stroke-opacity="0.2"/>
+  <text x="405" y="727" font-family="Vazirmatn, Tahoma" font-size="24" fill="#4ADE80"
+        text-anchor="middle" direction="rtl" font-weight="bold">فضای برداری</text>
+
+  <rect x="80" y="685" width="185" height="65" rx="15"
+        fill="#A855F7" fill-opacity="0.06" stroke="#A855F7" stroke-opacity="0.2"/>
+  <text x="172" y="727" font-family="Vazirmatn, Tahoma" font-size="24" fill="#C084FC"
+        text-anchor="middle" direction="rtl" font-weight="bold">نقد تک‌منشأ</text>
+
+  <!-- توضیح -->
+  <rect x="140" y="800" width="800" height="110" rx="18"
+        fill="#FFFFFF" fill-opacity="0.02" stroke="#FFFFFF" stroke-opacity="0.06"/>
+  <text x="540" y="842" font-family="Vazirmatn, Tahoma" font-size="24" fill="#AAA"
+        text-anchor="middle" direction="rtl">حق از یک منبع واحد نمی‌آید</text>
+  <text x="540" y="880" font-family="Vazirmatn, Tahoma" font-size="24" fill="#888"
+        text-anchor="middle" direction="rtl">هر نظام حقوقی ترکیبی وزن‌دار از منشأهای متعدد است</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#06B6D4" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۴ · اسلاید ۱ از ۱۰</text>
+</svg>

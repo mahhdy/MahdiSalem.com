@@ -1,0 +1,82 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg39" x1="0" y1="1080" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0E0A1A"/>
+      <stop offset="100%" stop-color="#150D22"/>
+    </linearGradient>
+    <radialGradient id="glow39" cx="70%" cy="35%" r="45%">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg39)"/>
+  <rect width="1080" height="1080" fill="url(#glow39)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="340" height="48" rx="24"
+        fill="#DC2626" fill-opacity="0.08" stroke="#DC2626" stroke-opacity="0.25"/>
+  <text x="210" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#DC2626"
+        text-anchor="middle" direction="rtl">فصل ۴ · اسلاید ۹ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="155" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#F87171" text-anchor="start" direction="rtl">پرسش‌های باز</text>
+  <text x="1000" y="205" font-family="Vazirmatn, Tahoma" font-size="26" fill="#888"
+        text-anchor="start" direction="rtl">ابهام‌ها و مخاطراتی که خواننده باید بپرسد</text>
+
+  <!-- پرسش ۱ -->
+  <rect x="80" y="270" width="920" height="125" rx="18"
+        fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.15"/>
+  <circle cx="960" cy="305" r="24" fill="#DC2626" fill-opacity="0.15"/>
+  <text x="960" y="313" font-family="Vazirmatn, Tahoma" font-size="20" fill="#F87171"
+        text-anchor="middle" font-weight="bold">۱</text>
+  <text x="920" y="315" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FFFFFF"
+        text-anchor="start" direction="rtl" font-weight="bold">وزن‌دهی منشأها بر چه اساسی؟</text>
+  <text x="920" y="362" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">اگر هر نظام ترکیبی وزن‌دار است، چه کسی وزن‌ها را تعیین می‌کند؟</text>
+
+  <!-- پرسش ۲ -->
+  <rect x="80" y="410" width="920" height="125" rx="18"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.15"/>
+  <circle cx="960" cy="445" r="24" fill="#F59E0B" fill-opacity="0.15"/>
+  <text x="960" y="453" font-family="Vazirmatn, Tahoma" font-size="20" fill="#FBBF24"
+        text-anchor="middle" font-weight="bold">۲</text>
+  <text x="920" y="455" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FFFFFF"
+        text-anchor="start" direction="rtl" font-weight="bold">چندمنشأیی = نسبی‌گرایی؟</text>
+  <text x="920" y="502" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">اگر هر ترکیبی مجاز باشد، چه چیزی ترکیب بد را از خوب جدا می‌کند؟</text>
+
+  <!-- پرسش ۳ -->
+  <rect x="80" y="550" width="920" height="125" rx="18"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.15"/>
+  <circle cx="960" cy="585" r="24" fill="#06B6D4" fill-opacity="0.15"/>
+  <text x="960" y="593" font-family="Vazirmatn, Tahoma" font-size="20" fill="#22D3EE"
+        text-anchor="middle" font-weight="bold">۳</text>
+  <text x="920" y="595" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FFFFFF"
+        text-anchor="start" direction="rtl" font-weight="bold">منشأ «نژاد» چرا حذف نشد؟</text>
+  <text x="920" y="642" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">آیا نگه‌داشتن منشأهای ظالمانه در تصنیف، مشروعیت‌بخشی نیست؟</text>
+
+  <!-- پرسش ۴ -->
+  <rect x="80" y="690" width="920" height="125" rx="18"
+        fill="#A855F7" fill-opacity="0.04" stroke="#A855F7" stroke-opacity="0.15"/>
+  <circle cx="960" cy="725" r="24" fill="#A855F7" fill-opacity="0.15"/>
+  <text x="960" y="733" font-family="Vazirmatn, Tahoma" font-size="20" fill="#C084FC"
+        text-anchor="middle" font-weight="bold">۴</text>
+  <text x="920" y="735" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FFFFFF"
+        text-anchor="start" direction="rtl" font-weight="bold">فضای برداری: زیباست ولی عملی است؟</text>
+  <text x="920" y="782" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">آیا می‌توان واقعاً وزن هر منشأ را اندازه‌گیری و مقایسه کرد؟</text>
+
+  <!-- دعوت -->
+  <rect x="140" y="860" width="800" height="65" rx="16"
+        fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.15"/>
+  <text x="540" y="895" font-family="Vazirmatn, Tahoma" font-size="24" fill="#F87171"
+        text-anchor="middle" direction="rtl">پاسخ نویسنده: اخلاق منظوم + ماشین زنده = قطب‌نمای وزن‌دهی (بخش دوم)</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#DC2626" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۴</text>
+</svg>

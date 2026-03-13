@@ -1,0 +1,133 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg13" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#12081A"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <radialGradient id="glow13" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg13)"/>
+  <rect width="1080" height="1080" fill="url(#glow13)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="320" height="48" rx="24"
+        fill="#A855F7" fill-opacity="0.08" stroke="#A855F7" stroke-opacity="0.25"/>
+  <text x="200" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#A855F7"
+        text-anchor="middle" direction="rtl">فصل ۲ · اسلاید ۳ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="155" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="900"
+        fill="#C084FC" text-anchor="middle" direction="rtl">«حق» در زبان فارسی</text>
+  <text x="540" y="205" font-family="Vazirmatn, Tahoma" font-size="24" fill="#888"
+        text-anchor="middle" direction="rtl">هشت چهره از یک واژه در معدن زبان</text>
+
+  <!-- شبکه ۸ معنا: ۲ ستون × ۴ ردیف -->
+  <!-- ردیف ۱ -->
+  <rect x="560" y="250" width="440" height="80" rx="14"
+        fill="#DC2626" fill-opacity="0.05" stroke="#DC2626" stroke-opacity="0.18"/>
+  <circle cx="960" cy="290" r="20" fill="#DC2626" fill-opacity="0.2"/>
+  <text x="960" y="298" font-family="Vazirmatn, Tahoma" font-size="18" fill="#F87171"
+        text-anchor="middle" font-weight="bold">۱</text>
+  <text x="930" y="283" font-family="Vazirmatn, Tahoma" font-size="25" fill="#F87171"
+        text-anchor="start" direction="rtl" font-weight="bold">سهم و سهمیه</text>
+  <text x="930" y="315" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="start" direction="rtl">آنچه در تقسیم عادلانه شایسته‌ات بود</text>
+
+  <rect x="80" y="250" width="440" height="80" rx="14"
+        fill="#F59E0B" fill-opacity="0.05" stroke="#F59E0B" stroke-opacity="0.18"/>
+  <circle cx="480" cy="290" r="20" fill="#F59E0B" fill-opacity="0.2"/>
+  <text x="480" y="298" font-family="Vazirmatn, Tahoma" font-size="18" fill="#F59E0B"
+        text-anchor="middle" font-weight="bold">۲</text>
+  <text x="450" y="283" font-family="Vazirmatn, Tahoma" font-size="25" fill="#F59E0B"
+        text-anchor="start" direction="rtl" font-weight="bold">آزادی عمل مجاز</text>
+  <text x="450" y="315" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="start" direction="rtl">محدوده‌ای که در آن مختاری</text>
+
+  <!-- ردیف ۲ -->
+  <rect x="560" y="350" width="440" height="80" rx="14"
+        fill="#06B6D4" fill-opacity="0.05" stroke="#06B6D4" stroke-opacity="0.18"/>
+  <circle cx="960" cy="390" r="20" fill="#06B6D4" fill-opacity="0.2"/>
+  <text x="960" y="398" font-family="Vazirmatn, Tahoma" font-size="18" fill="#06B6D4"
+        text-anchor="middle" font-weight="bold">۳</text>
+  <text x="930" y="383" font-family="Vazirmatn, Tahoma" font-size="25" fill="#06B6D4"
+        text-anchor="start" direction="rtl" font-weight="bold">قواعد بازی</text>
+  <text x="930" y="415" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="start" direction="rtl">آنچه طبق قواعد به تو تعلق می‌گیرد</text>
+
+  <rect x="80" y="350" width="440" height="80" rx="14"
+        fill="#22C55E" fill-opacity="0.05" stroke="#22C55E" stroke-opacity="0.18"/>
+  <circle cx="480" cy="390" r="20" fill="#22C55E" fill-opacity="0.2"/>
+  <text x="480" y="398" font-family="Vazirmatn, Tahoma" font-size="18" fill="#4ADE80"
+        text-anchor="middle" font-weight="bold">۴</text>
+  <text x="450" y="383" font-family="Vazirmatn, Tahoma" font-size="25" fill="#4ADE80"
+        text-anchor="start" direction="rtl" font-weight="bold">امتیاز ویژه</text>
+  <text x="450" y="415" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="start" direction="rtl">تفاوت مشروع در شرایط یکسان</text>
+
+  <!-- ردیف ۳ -->
+  <rect x="560" y="450" width="440" height="80" rx="14"
+        fill="#E8B83D" fill-opacity="0.05" stroke="#E8B83D" stroke-opacity="0.18"/>
+  <circle cx="960" cy="490" r="20" fill="#E8B83D" fill-opacity="0.2"/>
+  <text x="960" y="498" font-family="Vazirmatn, Tahoma" font-size="18" fill="#E8B83D"
+        text-anchor="middle" font-weight="bold">۵</text>
+  <text x="930" y="483" font-family="Vazirmatn, Tahoma" font-size="25" fill="#E8B83D"
+        text-anchor="start" direction="rtl" font-weight="bold">عضویت مکتسبه</text>
+  <text x="930" y="515" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="start" direction="rtl">خصوصیاتی که با عضو شدن به ارث می‌بری</text>
+
+  <rect x="80" y="450" width="440" height="80" rx="14"
+        fill="#C084FC" fill-opacity="0.05" stroke="#C084FC" stroke-opacity="0.18"/>
+  <circle cx="480" cy="490" r="20" fill="#C084FC" fill-opacity="0.2"/>
+  <text x="480" y="498" font-family="Vazirmatn, Tahoma" font-size="18" fill="#C084FC"
+        text-anchor="middle" font-weight="bold">۶</text>
+  <text x="450" y="483" font-family="Vazirmatn, Tahoma" font-size="25" fill="#C084FC"
+        text-anchor="start" direction="rtl" font-weight="bold">قابلیت خود‌تعریفی</text>
+  <text x="450" y="515" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="start" direction="rtl">توانایی خود یک حقیقت زاینده است</text>
+
+  <!-- ردیف ۴ -->
+  <rect x="560" y="550" width="440" height="80" rx="14"
+        fill="#EC4899" fill-opacity="0.05" stroke="#EC4899" stroke-opacity="0.18"/>
+  <circle cx="960" cy="590" r="20" fill="#EC4899" fill-opacity="0.2"/>
+  <text x="960" y="598" font-family="Vazirmatn, Tahoma" font-size="18" fill="#EC4899"
+        text-anchor="middle" font-weight="bold">۷</text>
+  <text x="930" y="583" font-family="Vazirmatn, Tahoma" font-size="25" fill="#EC4899"
+        text-anchor="start" direction="rtl" font-weight="bold">توافق تعهدآفرین</text>
+  <text x="930" y="615" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="start" direction="rtl">تعهدات طرف مقابل = حقوق تو</text>
+
+  <rect x="80" y="550" width="440" height="80" rx="14"
+        fill="#14B8A6" fill-opacity="0.05" stroke="#14B8A6" stroke-opacity="0.18"/>
+  <circle cx="480" cy="590" r="20" fill="#14B8A6" fill-opacity="0.2"/>
+  <text x="480" y="598" font-family="Vazirmatn, Tahoma" font-size="18" fill="#14B8A6"
+        text-anchor="middle" font-weight="bold">۸</text>
+  <text x="450" y="583" font-family="Vazirmatn, Tahoma" font-size="25" fill="#14B8A6"
+        text-anchor="start" direction="rtl" font-weight="bold">حریم مصون</text>
+  <text x="450" y="615" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="start" direction="rtl">دامنه‌ای بی‌نیاز از تأیید دیگری</text>
+
+  <!-- نکته کلیدی -->
+  <rect x="100" y="680" width="880" height="90" rx="18"
+        fill="#A855F7" fill-opacity="0.05" stroke="#A855F7" stroke-opacity="0.18"/>
+  <text x="540" y="720" font-family="Vazirmatn, Tahoma" font-size="28" fill="#FFFFFF"
+        text-anchor="middle" direction="rtl" font-weight="bold">نوآوری: شباهت خانوادگی ویتگنشتاینی</text>
+  <text x="540" y="755" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="middle" direction="rtl">این معانی جوهر مشترک ندارند بلکه شبکه‌ای از شباهت‌های متداخل‌اند</text>
+
+  <!-- نقد -->
+  <rect x="100" y="800" width="880" height="100" rx="18"
+        fill="#DC2626" fill-opacity="0.03" stroke="#DC2626" stroke-opacity="0.12"/>
+  <text x="540" y="840" font-family="Vazirmatn, Tahoma" font-size="24" fill="#F87171"
+        text-anchor="middle" direction="rtl" font-weight="bold">⚠ پرسش نقادانه:</text>
+  <text x="540" y="878" font-family="Vazirmatn, Tahoma" font-size="22" fill="#AAA"
+        text-anchor="middle" direction="rtl">آیا این فهرست «مسطّح» نیست؟ کدام معنا بنیادی‌تر است؟</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#A855F7" opacity="0.2"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۲</text>
+</svg>

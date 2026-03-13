@@ -1,0 +1,91 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg28" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D1520"/>
+      <stop offset="100%" stop-color="#0A0E18"/>
+    </linearGradient>
+    <radialGradient id="glow28" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#E8B83D" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#E8B83D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg28)"/>
+  <rect width="1080" height="1080" fill="url(#glow28)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="340" height="48" rx="24"
+        fill="#E8B83D" fill-opacity="0.08" stroke="#E8B83D" stroke-opacity="0.25"/>
+  <text x="210" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#E8B83D"
+        text-anchor="middle" direction="rtl">فصل ۳ · اسلاید ۸ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="155" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#FBBF24" text-anchor="start" direction="rtl">حق در سنّت ایرانی-اسلامی</text>
+  <text x="1000" y="205" font-family="Vazirmatn, Tahoma" font-size="24" fill="#888"
+        text-anchor="start" direction="rtl">میراثی غنی، نقدی ضروری</text>
+
+  <!-- دو ستون -->
+  <!-- ستون راست: ظرفیت‌ها -->
+  <rect x="560" y="270" width="440" height="480" rx="20"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.2"/>
+  <rect x="560" y="270" width="440" height="60" rx="20"
+        fill="#22C55E" fill-opacity="0.1"/>
+  <text x="780" y="310" font-family="Vazirmatn, Tahoma" font-size="28" fill="#4ADE80"
+        text-anchor="middle" direction="rtl" font-weight="bold">ظرفیت‌ها و میراث</text>
+
+  <text x="960" y="375" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• حقّ‌الناس: حق مردم بر یکدیگر</text>
+  <text x="960" y="415" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• عدل الهی: خدا ظالم نیست</text>
+  <text x="960" y="455" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• مصلحت: انعطاف فقهی</text>
+  <text x="960" y="495" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• شورا: مشورت جمعی</text>
+  <text x="960" y="535" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• رسالةالحقوق امام سجّاد</text>
+  <text x="960" y="575" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• فلسفهٔ اخلاق مسکویه/غزالی</text>
+  <rect x="590" y="620" width="380" height="55" rx="12"
+        fill="#22C55E" fill-opacity="0.08"/>
+  <text x="780" y="655" font-family="Vazirmatn, Tahoma" font-size="20" fill="#4ADE80"
+        text-anchor="middle" direction="rtl">منابع غنی برای بازاندیشی حق</text>
+
+  <!-- ستون چپ: چالش‌ها -->
+  <rect x="80" y="270" width="440" height="480" rx="20"
+        fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.2"/>
+  <rect x="80" y="270" width="440" height="60" rx="20"
+        fill="#DC2626" fill-opacity="0.1"/>
+  <text x="300" y="310" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F87171"
+        text-anchor="middle" direction="rtl" font-weight="bold">چالش‌ها و نقدها</text>
+
+  <text x="480" y="375" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• غلبهٔ تکلیف بر حق</text>
+  <text x="480" y="415" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• مشروعیت الهی: مرجع غیرقابل‌نقد</text>
+  <text x="480" y="455" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• نابرابری جنسیتی ساختاری</text>
+  <text x="480" y="495" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• عدم تفکیک حق از تکلیف دینی</text>
+  <text x="480" y="535" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• ایستایی فقهی vs پویایی حق</text>
+  <text x="480" y="575" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">• تمرکز قدرت تفسیری</text>
+  <rect x="110" y="620" width="380" height="55" rx="12"
+        fill="#DC2626" fill-opacity="0.08"/>
+  <text x="300" y="655" font-family="Vazirmatn, Tahoma" font-size="20" fill="#F87171"
+        text-anchor="middle" direction="rtl">نیاز به بازخوانی انتقادی عمیق</text>
+
+  <!-- دیدگاه نویسنده -->
+  <rect x="80" y="790" width="920" height="120" rx="20"
+        fill="#E8B83D" fill-opacity="0.04" stroke="#E8B83D" stroke-opacity="0.18"/>
+  <text x="540" y="838" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FBBF24"
+        text-anchor="middle" direction="rtl" font-weight="bold">دیدگاه نویسنده:</text>
+  <text x="540" y="878" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="middle" direction="rtl">نه رد کامل میراث و نه پذیرش بی‌نقد · بازشناسی انتقادی درون‌ماندگار</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#E8B83D" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۳</text>
+</svg>

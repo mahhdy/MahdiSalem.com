@@ -1,0 +1,115 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg8" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D0D18"/>
+      <stop offset="100%" stop-color="#14101E"/>
+    </linearGradient>
+    <radialGradient id="glow8" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg8)"/>
+  <rect width="1080" height="1080" fill="url(#glow8)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="320" height="48" rx="24"
+        fill="#A855F7" fill-opacity="0.08" stroke="#A855F7" stroke-opacity="0.25"/>
+  <text x="200" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#A855F7"
+        text-anchor="middle" direction="rtl">فصل ۱ · اسلاید ۸ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="155" font-family="Vazirmatn, Tahoma" font-size="46" font-weight="900"
+        fill="#C084FC" text-anchor="middle" direction="rtl">فراتر از دوگانهٔ کلاسیک</text>
+
+  <!-- سه ستون مقایسه -->
+  <!-- ستون راست: حقوق طبیعی -->
+  <rect x="720" y="220" width="290" height="580" rx="20"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.18"/>
+  <rect x="720" y="220" width="290" height="60" rx="20"
+        fill="#F59E0B" fill-opacity="0.1"/>
+  <text x="865" y="260" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F59E0B"
+        text-anchor="middle" direction="rtl" font-weight="bold">حقوق طبیعی</text>
+  <text x="980" y="320" font-family="Vazirmatn, Tahoma" font-size="22" fill="#DDD"
+        text-anchor="start" direction="rtl">• حق ذاتی و ازلی</text>
+  <text x="980" y="360" font-family="Vazirmatn, Tahoma" font-size="22" fill="#DDD"
+        text-anchor="start" direction="rtl">• کشف‌شدنی</text>
+  <text x="980" y="400" font-family="Vazirmatn, Tahoma" font-size="22" fill="#DDD"
+        text-anchor="start" direction="rtl">• مبنای استعلایی</text>
+  <text x="980" y="440" font-family="Vazirmatn, Tahoma" font-size="22" fill="#DDD"
+        text-anchor="start" direction="rtl">• جهان‌شمول</text>
+  <rect x="750" y="490" width="230" height="60" rx="12"
+        fill="#F59E0B" fill-opacity="0.08"/>
+  <text x="865" y="528" font-family="Vazirmatn, Tahoma" font-size="20" fill="#F59E0B"
+        text-anchor="middle" direction="rtl">⚠ کجا تثبیت شده؟</text>
+  <text x="980" y="590" font-family="Vazirmatn, Tahoma" font-size="20" fill="#999"
+        text-anchor="start" direction="rtl">نقد: خطر جزم‌اندیشی</text>
+  <text x="980" y="625" font-family="Vazirmatn, Tahoma" font-size="20" fill="#999"
+        text-anchor="start" direction="rtl">و استفاده ابزاری از</text>
+  <text x="980" y="660" font-family="Vazirmatn, Tahoma" font-size="20" fill="#999"
+        text-anchor="start" direction="rtl">مفهوم «طبیعت»</text>
+
+  <!-- ستون وسط: رویکرد این کتاب -->
+  <rect x="390" y="220" width="300" height="580" rx="20"
+        fill="#06B6D4" fill-opacity="0.06" stroke="#06B6D4" stroke-opacity="0.3" stroke-width="2"/>
+  <rect x="390" y="220" width="300" height="60" rx="20"
+        fill="#06B6D4" fill-opacity="0.15"/>
+  <text x="540" y="260" font-family="Vazirmatn, Tahoma" font-size="28" fill="#22D3EE"
+        text-anchor="middle" direction="rtl" font-weight="bold">رویکرد نوین ★</text>
+  <text x="660" y="320" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FFFFFF"
+        text-anchor="start" direction="rtl">• ساختی‐کشفی</text>
+  <text x="660" y="360" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FFFFFF"
+        text-anchor="start" direction="rtl">• فرایندی و پویا</text>
+  <text x="660" y="400" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FFFFFF"
+        text-anchor="start" direction="rtl">• درون‌ماندگار</text>
+  <text x="660" y="440" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FFFFFF"
+        text-anchor="start" direction="rtl">• تنقیح‌پذیر</text>
+  <rect x="420" y="490" width="240" height="60" rx="12"
+        fill="#06B6D4" fill-opacity="0.1"/>
+  <text x="540" y="528" font-family="Vazirmatn, Tahoma" font-size="20" fill="#22D3EE"
+        text-anchor="middle" direction="rtl">✦ هم ساخته هم کشف</text>
+  <text x="660" y="590" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">مزیت: انعطاف بدون</text>
+  <text x="660" y="625" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">سقوط به نسبی‌گرایی</text>
+  <text x="660" y="660" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">اخلاق منظوم = قطب‌نما</text>
+
+  <!-- ستون چپ: پوزیتیویسم -->
+  <rect x="60" y="220" width="300" height="580" rx="20"
+        fill="#666" fill-opacity="0.04" stroke="#666" stroke-opacity="0.18"/>
+  <rect x="60" y="220" width="300" height="60" rx="20"
+        fill="#666" fill-opacity="0.1"/>
+  <text x="210" y="260" font-family="Vazirmatn, Tahoma" font-size="28" fill="#BBB"
+        text-anchor="middle" direction="rtl" font-weight="bold">پوزیتیویسم</text>
+  <text x="330" y="320" font-family="Vazirmatn, Tahoma" font-size="22" fill="#DDD"
+        text-anchor="start" direction="rtl">• حق = وضع قانون‌گذار</text>
+  <text x="330" y="360" font-family="Vazirmatn, Tahoma" font-size="22" fill="#DDD"
+        text-anchor="start" direction="rtl">• ساخته‌شدنی</text>
+  <text x="330" y="400" font-family="Vazirmatn, Tahoma" font-size="22" fill="#DDD"
+        text-anchor="start" direction="rtl">• صوری و شکلی</text>
+  <text x="330" y="440" font-family="Vazirmatn, Tahoma" font-size="22" fill="#DDD"
+        text-anchor="start" direction="rtl">• نسبی به نظام</text>
+  <rect x="90" y="490" width="240" height="60" rx="12"
+        fill="#666" fill-opacity="0.08"/>
+  <text x="210" y="528" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="middle" direction="rtl">⚠ بدون جهت اخلاقی</text>
+  <text x="330" y="590" font-family="Vazirmatn, Tahoma" font-size="20" fill="#999"
+        text-anchor="start" direction="rtl">نقد: هر قانونی «حق»</text>
+  <text x="330" y="625" font-family="Vazirmatn, Tahoma" font-size="20" fill="#999"
+        text-anchor="start" direction="rtl">می‌شود حتی ظالمانه</text>
+  <text x="330" y="660" font-family="Vazirmatn, Tahoma" font-size="20" fill="#999"
+        text-anchor="start" direction="rtl">آشویتس هم «قانونی» بود</text>
+
+  <!-- جمع‌بندی پایین -->
+  <rect x="120" y="840" width="840" height="80" rx="16"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.12"/>
+  <text x="540" y="890" font-family="Vazirmatn, Tahoma" font-size="26" fill="#22D3EE"
+        text-anchor="middle" direction="rtl" font-weight="bold">راه سوم: نه جزم طبیعی‌گرایانه، نه تسلیم صوری‌گرایانه</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#A855F7" opacity="0.2"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۱</text>
+</svg>

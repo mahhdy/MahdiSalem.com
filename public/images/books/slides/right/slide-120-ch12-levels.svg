@@ -1,0 +1,86 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D0A18"/>
+      <stop offset="100%" stop-color="#1A1428"/>
+    </linearGradient>
+    <linearGradient id="layerGrad" x1="0" y1="200" x2="0" y2="950" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#C19A3E"/>
+      <stop offset="33%" stop-color="#A855F7"/>
+      <stop offset="66%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#DC2626"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg5)"/>
+
+  <!-- سربرگ -->
+  <rect x="680" y="28" width="360" height="44" rx="22"
+        fill="#C19A3E" fill-opacity="0.08" stroke="#C19A3E" stroke-opacity="0.25"/>
+  <text x="860" y="58" font-family="Vazirmatn, Tahoma" font-size="22" fill="#C19A3E"
+        text-anchor="middle" direction="rtl">فصل ۱۲ · اسلاید ۱ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="150" font-family="Vazirmatn, Tahoma" font-size="56" font-weight="900"
+        fill="#C19A3E" text-anchor="middle" direction="rtl">چهار سطح حق</text>
+  <text x="540" y="195" font-family="Vazirmatn, Tahoma" font-size="24" fill="#778"
+        text-anchor="middle" direction="rtl">از حداقلی تا آرمانی — یک ابزار تحلیلی بنیادین</text>
+
+  <!-- خط عمودی چپ -->
+  <rect x="105" y="260" width="4" height="700" rx="2" fill="url(#layerGrad)" opacity="0.4"/>
+
+  <!-- سطح ۱: اخص (بالا) -->
+  <rect x="140" y="265" width="880" height="145" rx="16"
+        fill="#C19A3E" fill-opacity="0.05" stroke="#C19A3E" stroke-opacity="0.3" stroke-width="1.5"/>
+  <text x="990" y="310" font-family="Vazirmatn, Tahoma" font-size="32" fill="#C19A3E"
+        font-weight="bold" text-anchor="start" direction="rtl">سطح اخص</text>
+  <text x="990" y="348" font-family="Vazirmatn, Tahoma" font-size="22" fill="#AAA"
+        text-anchor="start" direction="rtl">حقوق مهندسی‌شده · مبتنی بر اخلاق منظوم</text>
+  <text x="990" y="385" font-family="Vazirmatn, Tahoma" font-size="22" fill="#AAA"
+        text-anchor="start" direction="rtl">خروجی ماشین زنده · ضامن شکوفایی و پایستگی</text>
+
+  <!-- سطح ۲: خاص -->
+  <rect x="140" y="430" width="880" height="145" rx="16"
+        fill="#A855F7" fill-opacity="0.05" stroke="#A855F7" stroke-opacity="0.3" stroke-width="1.5"/>
+  <text x="990" y="475" font-family="Vazirmatn, Tahoma" font-size="32" fill="#A855F7"
+        font-weight="bold" text-anchor="start" direction="rtl">سطح خاص</text>
+  <text x="990" y="513" font-family="Vazirmatn, Tahoma" font-size="22" fill="#AAA"
+        text-anchor="start" direction="rtl">حقوق مبتنی بر قرارداد اجتماعی</text>
+  <text x="990" y="550" font-family="Vazirmatn, Tahoma" font-size="22" fill="#AAA"
+        text-anchor="start" direction="rtl">مشارکت مدنی و عقلانیت جمعی</text>
+
+  <!-- سطح ۳: عام -->
+  <rect x="140" y="595" width="880" height="145" rx="16"
+        fill="#00D4FF" fill-opacity="0.05" stroke="#00D4FF" stroke-opacity="0.3" stroke-width="1.5"/>
+  <text x="990" y="640" font-family="Vazirmatn, Tahoma" font-size="32" fill="#00D4FF"
+        font-weight="bold" text-anchor="start" direction="rtl">سطح عام</text>
+  <text x="990" y="678" font-family="Vazirmatn, Tahoma" font-size="22" fill="#AAA"
+        text-anchor="start" direction="rtl">هر مرزبندی و اختیار در هر نظام تعاملی</text>
+  <text x="990" y="715" font-family="Vazirmatn, Tahoma" font-size="22" fill="#AAA"
+        text-anchor="start" direction="rtl">شامل حقوق خوب و بد</text>
+
+  <!-- سطح ۴: حداقلی (پایین) -->
+  <rect x="140" y="760" width="880" height="145" rx="16"
+        fill="#DC2626" fill-opacity="0.05" stroke="#DC2626" stroke-opacity="0.3" stroke-width="1.5"/>
+  <text x="990" y="805" font-family="Vazirmatn, Tahoma" font-size="32" fill="#F87171"
+        font-weight="bold" text-anchor="start" direction="rtl">سطح حداقلی</text>
+  <text x="990" y="843" font-family="Vazirmatn, Tahoma" font-size="22" fill="#AAA"
+        text-anchor="start" direction="rtl">دامنه‌های مصون از تعرض</text>
+  <text x="990" y="880" font-family="Vazirmatn, Tahoma" font-size="22" fill="#AAA"
+        text-anchor="start" direction="rtl">بدون‌شان بازی متوقف می‌شود</text>
+
+  <!-- پیکان «صعود» -->
+  <text x="80" y="590" font-family="Vazirmatn, Tahoma" font-size="40" fill="#556"
+        text-anchor="middle" transform="rotate(-90, 80, 590)">← صعود آرمانی</text>
+
+  <!-- جمع‌بندی -->
+  <rect x="90" y="935" width="900" height="70" rx="14"
+        fill="#1A1A30" stroke="#C19A3E" stroke-opacity="0.2"/>
+  <text x="540" y="978" font-family="Vazirmatn, Tahoma" font-size="24" fill="#C19A3E"
+        text-anchor="middle" direction="rtl">✦ بیشتر مناقشات حقوقی از خلط سطوح ناشی می‌شوند</text>
+
+  <!-- پانویس -->
+  <rect x="40" y="1035" width="1000" height="2" rx="1" fill="url(#layerGrad)" opacity="0.3"/>
+  <text x="540" y="1065" font-family="Vazirmatn, Tahoma" font-size="20" fill="#445"
+        text-anchor="middle" direction="rtl">بعدی: مقایسهٔ سطوح با مکاتب ←</text>
+</svg>

@@ -1,0 +1,72 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg040" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg040)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="400" height="50" rx="25"
+        fill="#E5E7EB" fill-opacity="0.05" stroke="#9CA3AF" stroke-opacity="0.4"/>
+  <text x="240" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">فصل ۴ · اسلاید ۱ از ۱۰ — مکاتب روی نقشه</text>
+
+  <!-- عنوان -->
+  <text x="540" y="150" font-family="Vazirmatn, Tahoma" font-size="52" font-weight="bold"
+        fill="#E5E7EB" text-anchor="middle" direction="rtl">دو محور برای مکاتب حق</text>
+
+  <!-- محورها -->
+  <line x1="200" y1="820" x2="900" y2="820" stroke="#4B5563" stroke-width="2"/>
+  <line x1="550" y1="330" x2="550" y2="880" stroke="#4B5563" stroke-width="2"/>
+
+  <text x="910" y="815" font-family="Vazirmatn, Tahoma" font-size="22" fill="#9CA3AF"
+        text-anchor="start" direction="rtl">قراردادی / برساختی</text>
+  <text x="190" y="815" font-family="Vazirmatn, Tahoma" font-size="22" fill="#9CA3AF"
+        text-anchor="end" direction="rtl">طبیعی / ذاتی</text>
+
+  <text x="555" y="320" font-family="Vazirmatn, Tahoma" font-size="22" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">فردمحور</text>
+  <text x="555" y="900" font-family="Vazirmatn, Tahoma" font-size="22" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">جمع‌محور</text>
+
+  <!-- نقاط مکاتب (نسبتاً تقریبی) -->
+  <!-- حقوق طبیعی -->
+  <circle cx="260" cy="390" r="16" fill="#22C55E"/>
+  <text x="260" y="375" font-family="Vazirmatn, Tahoma" font-size="22" fill="#BBF7D0"
+        text-anchor="middle" direction="rtl">طبیعی</text>
+
+  <!-- لیبرالیسم/رولزی -->
+  <circle cx="720" cy="430" r="16" fill="#38BDF8"/>
+  <text x="720" y="415" font-family="Vazirmatn, Tahoma" font-size="22" fill="#BAE6FD"
+        text-anchor="middle" direction="rtl">رالز</text>
+
+  <!-- پوزیتیویسم -->
+  <circle cx="780" cy="700" r="16" fill="#F97316"/>
+  <text x="780" y="685" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FED7AA"
+        text-anchor="middle" direction="rtl">پوزیتیویسم</text>
+
+  <!-- مارکسیسم -->
+  <circle cx="430" cy="780" r="16" fill="#DC2626"/>
+  <text x="430" y="765" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FCA5A5"
+        text-anchor="middle" direction="rtl">مارکسیسم</text>
+
+  <!-- قابلیت -->
+  <circle cx="650" cy="600" r="16" fill="#A855F7"/>
+  <text x="650" y="585" font-family="Vazirmatn, Tahoma" font-size="22" fill="#E9D5FF"
+        text-anchor="middle" direction="rtl">قابلیت</text>
+
+  <!-- موضع کتاب -->
+  <circle cx="600" cy="540" r="20" fill="#FACC15"/>
+  <text x="600" y="525" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FEF9C3"
+        font-weight="bold" text-anchor="middle" direction="rtl">این کتاب</text>
+
+  <!-- توضیح -->
+  <rect x="80" y="890" width="920" height="120" rx="18"
+        fill="#111827" stroke="#6B7280" stroke-opacity="0.4"/>
+  <text x="540" y="935" font-family="Vazirmatn, Tahoma" font-size="26" fill="#F9FAFB"
+        text-anchor="middle" direction="rtl">موضع کتاب: میانهٔ فرد/جمع، مایل به قراردادگرایی،</text>
+  <text x="540" y="975" font-family="Vazirmatn, Tahoma" font-size="26" fill="#F9FAFB"
+        text-anchor="middle" direction="rtl">اما با قیود ذاتی (حداقل‌های کرامت و رنج)</text>
+</svg>

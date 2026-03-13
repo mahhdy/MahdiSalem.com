@@ -1,0 +1,56 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg041" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg041)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="400" height="50" rx="25"
+        fill="#F97316" fill-opacity="0.08" stroke="#F97316" stroke-opacity="0.4"/>
+  <text x="240" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FDBA74"
+        text-anchor="middle" direction="rtl">فصل ۴ · اسلاید ۲ از ۱۰ — دو سر طیف</text>
+
+  <!-- عنوان -->
+  <text x="540" y="170" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="bold"
+        fill="#F97316" text-anchor="middle" direction="rtl">طبیعی در برابر پوزیتیویسم</text>
+
+  <!-- دو باکس -->
+  <rect x="80" y="240" width="450" height="520" rx="20"
+        fill="#111827" stroke="#22C55E" stroke-opacity="0.5"/>
+  <text x="310" y="295" font-family="Vazirmatn, Tahoma" font-size="38" fill="#4ADE80"
+        font-weight="bold" text-anchor="middle" direction="rtl">حقوق طبیعی</text>
+  <text x="310" y="380" font-family="Vazirmatn, Tahoma" font-size="30" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">✔ پشتوانهٔ هستی‌شناختی قوی</text>
+  <text x="310" y="465" font-family="Vazirmatn, Tahoma" font-size="30" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">✔ امکان نقد قانون ناعادلانه</text>
+  <text x="310" y="555" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FCA5A5"
+        text-anchor="middle" direction="rtl">✖ «طبیعت» تفسیرپذیر و ابزار قدرت</text>
+  <text x="310" y="650" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FCA5A5"
+        text-anchor="middle" direction="rtl">✖ سابقهٔ توجیه نابرابری</text>
+
+  <rect x="570" y="240" width="450" height="520" rx="40"
+        fill="#111827" stroke="#38BDF8" stroke-opacity="0.5"/>
+  <text x="785" y="295" font-family="Vazirmatn, Tahoma" font-size="38" fill="#38BDF8"
+        font-weight="bold" text-anchor="middle" direction="rtl">پوزیتیویسم حقوقی</text>
+  <text x="785" y="380" font-family="Vazirmatn, Tahoma" font-size="30" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">✔ وضوح تحلیلی</text>
+  <text x="785" y="465" font-family="Vazirmatn, Tahoma" font-size="30" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">✔ کارآمد برای سطح عام حق</text>
+  <text x="785" y="555" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FCA5A5"
+        text-anchor="middle" direction="rtl">✖ ناتوان از نقد قانون ناعادلانه</text>
+  <text x="785" y="650" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FCA5A5"
+        text-anchor="middle" direction="rtl">✖ صوری‌کردن و تهی‌کردن حقوق</text>
+
+  <!-- موضع کتاب -->
+  <rect x="80" y="800" width="920" height="160" rx="18"
+        fill="#1F2937" stroke="#6B7280" stroke-opacity="0.4"/>
+  <text x="540" y="845" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F9FAFB"
+        font-weight="bold" text-anchor="middle" direction="rtl">موضع نویسنده:</text>
+  <text x="540" y="890" font-family="Vazirmatn, Tahoma" font-size="26" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">حقوق طبیعی → الهام برای سطح حداقلی و اخص، نه اثبات لفظی «طبیعت»</text>
+  <text x="540" y="935" font-family="Vazirmatn, Tahoma" font-size="26" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">پوزیتیویسم → ابزار توصیفی در سطح عام، نه معیار نهایی حقانیت</text>
+</svg>

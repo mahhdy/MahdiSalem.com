@@ -1,0 +1,106 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg46" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A0808"/>
+      <stop offset="50%" stop-color="#150510"/>
+      <stop offset="100%" stop-color="#0A0E1A"/>
+    </linearGradient>
+    <radialGradient id="glow46" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg46)"/>
+  <rect width="1080" height="1080" fill="url(#glow46)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="340" height="48" rx="24"
+        fill="#DC2626" fill-opacity="0.08" stroke="#DC2626" stroke-opacity="0.25"/>
+  <text x="210" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#DC2626"
+        text-anchor="middle" direction="rtl">فصل ۵ · اسلاید ۶ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="155" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="900"
+        fill="#F87171" text-anchor="start" direction="rtl">حق و قدرت</text>
+  <text x="1000" y="210" font-family="Vazirmatn, Tahoma" font-size="26" fill="#999"
+        text-anchor="start" direction="rtl">خطرناک‌ترین همسایگی در جغرافیای مفهومی</text>
+
+  <!-- دو حالت: سالم و بیمار -->
+  <!-- حالت سالم -->
+  <rect x="560" y="280" width="440" height="340" rx="22"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.2" stroke-width="1.5"/>
+  <rect x="560" y="280" width="440" height="60" rx="22"
+        fill="#22C55E" fill-opacity="0.1"/>
+  <text x="780" y="320" font-family="Vazirmatn, Tahoma" font-size="28" fill="#4ADE80"
+        text-anchor="middle" direction="rtl" font-weight="bold">حالت سالم</text>
+
+  <!-- فلش دوطرفه -->
+  <rect x="640" y="380" width="140" height="50" rx="10"
+        fill="#22C55E" fill-opacity="0.08"/>
+  <text x="710" y="412" font-family="Vazirmatn, Tahoma" font-size="20" fill="#4ADE80"
+        text-anchor="middle" direction="rtl">حق</text>
+  <text x="780" y="400" font-family="Vazirmatn, Tahoma" font-size="28" fill="#4ADE80"
+        text-anchor="middle">⇄</text>
+  <rect x="820" y="380" width="140" height="50" rx="10"
+        fill="#22C55E" fill-opacity="0.08"/>
+  <text x="890" y="412" font-family="Vazirmatn, Tahoma" font-size="20" fill="#4ADE80"
+        text-anchor="middle" direction="rtl">قدرت</text>
+
+  <text x="960" y="475" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">• قدرت در خدمت تضمین حق</text>
+  <text x="960" y="515" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">• حق محدودکنندهٔ قدرت</text>
+  <text x="960" y="555" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">• توازن و نظارت متقابل</text>
+
+  <!-- حالت بیمار -->
+  <rect x="80" y="280" width="440" height="340" rx="22"
+        fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.2" stroke-width="1.5"/>
+  <rect x="80" y="280" width="440" height="60" rx="22"
+        fill="#DC2626" fill-opacity="0.1"/>
+  <text x="300" y="320" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F87171"
+        text-anchor="middle" direction="rtl" font-weight="bold">حالت بیمار</text>
+
+  <!-- فلش یکطرفه -->
+  <rect x="160" y="380" width="140" height="50" rx="10"
+        fill="#DC2626" fill-opacity="0.08"/>
+  <text x="230" y="412" font-family="Vazirmatn, Tahoma" font-size="20" fill="#F87171"
+        text-anchor="middle" direction="rtl">قدرت</text>
+  <text x="330" y="400" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F87171"
+        text-anchor="middle">→</text>
+  <rect x="360" y="380" width="140" height="50" rx="10"
+        fill="#DC2626" fill-opacity="0.06" stroke="#DC2626" stroke-opacity="0.2" stroke-dasharray="5,3"/>
+  <text x="430" y="412" font-family="Vazirmatn, Tahoma" font-size="20" fill="#F87171"
+        text-anchor="middle" direction="rtl">«حق»</text>
+
+  <text x="480" y="475" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">• قدرت حق را تعریف می‌کند</text>
+  <text x="480" y="515" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">• حق = پوشش ظلم</text>
+  <text x="480" y="555" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">• نابرابری مطالبه</text>
+
+  <!-- تحلیل فوکویی -->
+  <rect x="80" y="660" width="920" height="120" rx="18"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.15"/>
+  <text x="960" y="705" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FBBF24"
+        text-anchor="start" direction="rtl" font-weight="bold">بصیرت فوکویی نویسنده:</text>
+  <text x="960" y="748" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">قدرت فقط سرکوب نمی‌کند — حقیقت می‌سازد! «حقِ» هر دوره</text>
+  <text x="960" y="778" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">بازتاب ساختار قدرت آن دوره نیز هست — پس نقد دائمی لازم</text>
+
+  <!-- دیدگاه نویسنده -->
+  <rect x="100" y="810" width="880" height="100" rx="18"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.18"/>
+  <text x="540" y="855" font-family="Vazirmatn, Tahoma" font-size="26" fill="#4ADE80"
+        text-anchor="middle" direction="rtl" font-weight="bold">پاسخ نویسنده: ماشین زنده باید خودنقاد باشد</text>
+  <text x="540" y="893" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="middle" direction="rtl">تنها ماشینی که خود قدرت را نقد کند، حق واقعی تولید می‌کند</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#DC2626" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۵</text>
+</svg>

@@ -1,0 +1,97 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-as" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F0A1E"/>
+      <stop offset="100%" stop-color="#18102A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-as)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="440" height="48" rx="24"
+        fill="#C084FC" fill-opacity="0.08" stroke="#C084FC" stroke-opacity="0.25"/>
+  <text x="430" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#C084FC"
+        text-anchor="start" direction="rtl">فصل ۸ · حق به مثابه... · اسلاید ۱ از ۲</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="160" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="900"
+        fill="#F0E6FF" text-anchor="start" direction="rtl">هفت چهره‌ی حق</text>
+  <text x="1000" y="212" font-family="Vazirmatn, Tahoma" font-size="24" fill="#D8B4FE"
+        text-anchor="start" direction="rtl">حق به مثابه... · شبکه‌ی تعابیر هم‌خانواده</text>
+
+  <!-- ۷ تعبیر -->
+  <rect x="540" y="260" width="490" height="80" rx="14"
+        fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.25"/>
+  <text x="1000" y="295" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F87171"
+        font-weight="bold" text-anchor="start" direction="rtl">۱. سهم و سهمیه</text>
+  <text x="1000" y="325" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">تقسیم درست بر اساس قواعد بالادستی · عدالت توزیعی</text>
+
+  <rect x="40" y="260" width="490" height="80" rx="14"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.25"/>
+  <text x="500" y="295" font-family="Vazirmatn, Tahoma" font-size="28" fill="#4ADE80"
+        font-weight="bold" text-anchor="start" direction="rtl">۲. محدوده‌ی مجاز عمل</text>
+  <text x="500" y="325" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">آزادی عمل در چارچوب هنجارها · آزادی هوفلدی</text>
+
+  <rect x="540" y="350" width="490" height="80" rx="14"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.25"/>
+  <text x="1000" y="385" font-family="Vazirmatn, Tahoma" font-size="28" fill="#67E8F9"
+        font-weight="bold" text-anchor="start" direction="rtl">۳. قواعد متقابل بازی</text>
+  <text x="1000" y="415" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">امتیازات مبتنی بر قواعد بازی و بازی‌های بالاسری</text>
+
+  <rect x="40" y="350" width="490" height="80" rx="14"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.25"/>
+  <text x="500" y="385" font-family="Vazirmatn, Tahoma" font-size="28" fill="#FCD34D"
+        font-weight="bold" text-anchor="start" direction="rtl">۴. امتیاز ویژه</text>
+  <text x="500" y="415" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">Privilege · تفاوت مشروع کارکردی یا شایستگی</text>
+
+  <rect x="540" y="440" width="490" height="80" rx="14"
+        fill="#A855F7" fill-opacity="0.04" stroke="#A855F7" stroke-opacity="0.25"/>
+  <text x="1000" y="475" font-family="Vazirmatn, Tahoma" font-size="28" fill="#D8B4FE"
+        font-weight="bold" text-anchor="start" direction="rtl">۵. خصوصیات مکسوبه</text>
+  <text x="1000" y="505" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">عضویت آگاهانه · میراث‌بردن حقوق گروه</text>
+
+  <rect x="40" y="440" width="490" height="80" rx="14"
+        fill="#EC4899" fill-opacity="0.04" stroke="#EC4899" stroke-opacity="0.25"/>
+  <text x="500" y="475" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F9A8D4"
+        font-weight="bold" text-anchor="start" direction="rtl">۶. قابلیت خودتعریفی</text>
+  <text x="500" y="505" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">حق نه فقط داشتن بلکه شدن و فراتر رفتن · بُعد وجودی</text>
+
+  <rect x="290" y="530" width="490" height="80" rx="14"
+        fill="#14B8A6" fill-opacity="0.04" stroke="#14B8A6" stroke-opacity="0.25"/>
+  <text x="750" y="565" font-family="Vazirmatn, Tahoma" font-size="28" fill="#5EEAD4"
+        font-weight="bold" text-anchor="start" direction="rtl">۷. توافق تعهدآفرین</text>
+  <text x="750" y="595" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">تعهدات متقابل + حقّ ثانویه: «انتظار رعایت»</text>
+
+  <!-- نکته کلیدی -->
+  <rect x="80" y="650" width="920" height="140" rx="20"
+        fill="#C084FC" fill-opacity="0.04" stroke="#C084FC" stroke-opacity="0.18"/>
+  <text x="960" y="698" font-family="Vazirmatn, Tahoma" font-size="28" fill="#E9D5FF"
+        font-weight="bold" text-anchor="start" direction="rtl">⟡ شباهت خانوادگی ویتگنشتاینی</text>
+  <text x="960" y="740" font-family="Vazirmatn, Tahoma" font-size="23" fill="#DDD"
+        text-anchor="start" direction="rtl">این تعابیر «جوهر مشترک» ندارند بلکه شبکه‌ای از</text>
+  <text x="960" y="775" font-family="Vazirmatn, Tahoma" font-size="23" fill="#DDD"
+        text-anchor="start" direction="rtl">شباهت‌های متداخل‌اند · Family Resemblance</text>
+
+  <!-- ابتکار ویژه -->
+  <rect x="80" y="820" width="920" height="95" rx="16"
+        fill="#14B8A6" fill-opacity="0.04" stroke="#14B8A6" stroke-opacity="0.15"/>
+  <text x="960" y="860" font-family="Vazirmatn, Tahoma" font-size="24" fill="#5EEAD4"
+        font-weight="bold" text-anchor="start" direction="rtl">↰ نکته‌ی برجسته: «حقّ ثانویه و مستتر»</text>
+  <text x="960" y="898" font-family="Vazirmatn, Tahoma" font-size="21" fill="#AAA"
+        text-anchor="start" direction="rtl">حقّ انتظار داشتن = پیش‌شرط هر حقّ دیگری · مفهومی کم‌توجه‌شده</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="960" width="1000" height="2" rx="1" fill="#C084FC" opacity="0.2"/>
+  <text x="540" y="1000" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">نقد: این فهرست مسطّح است · نیاز به سلسله‌مراتب دارد</text>
+  <text x="540" y="1040" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">«قابلیت خودتعریفی» بنیادی‌تر از «امتیاز ویژه» · وزن‌دهی لازم</text>
+</svg>

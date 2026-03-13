@@ -1,0 +1,70 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-spiral" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0C1220"/>
+      <stop offset="100%" stop-color="#151D30"/>
+    </linearGradient>
+    <radialGradient id="spiralGlow" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-spiral)"/>
+  <rect width="1080" height="1080" fill="url(#spiralGlow)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="460" height="48" rx="24"
+        fill="#8B5CF6" fill-opacity="0.08" stroke="#8B5CF6" stroke-opacity="0.25"/>
+  <text x="450" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#A78BFA"
+        text-anchor="start" direction="rtl">فصل ۱۰ · مشروعیت · دور هرمنوتیکی</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="165" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="900"
+        fill="#EDE9FE" text-anchor="start" direction="rtl">مشروعیت: دور یا مارپیچ؟</text>
+  <text x="1000" y="218" font-family="Vazirmatn, Tahoma" font-size="24" fill="#C4B5FD"
+        text-anchor="start" direction="rtl">از دور باطل تا مارپیچ صعودی · رویکرد فرایندی</text>
+
+  <!-- مارپیچ بصری -->
+  <!-- دور ۱ -->
+  <ellipse cx="540" cy="620" rx="350" ry="80" fill="none" stroke="#8B5CF6" stroke-opacity="0.08" stroke-width="1.5"/>
+  <!-- دور ۲ -->
+  <ellipse cx="540" cy="540" rx="280" ry="65" fill="none" stroke="#8B5CF6" stroke-opacity="0.14" stroke-width="1.5"/>
+  <!-- دور ۳ -->
+  <ellipse cx="540" cy="470" rx="210" ry="50" fill="none" stroke="#A78BFA" stroke-opacity="0.22" stroke-width="1.5"/>
+  <!-- دور ۴ -->
+  <ellipse cx="540" cy="410" rx="140" ry="35" fill="none" stroke="#C4B5FD" stroke-opacity="0.35" stroke-width="2"/>
+
+  <!-- فلش صعودی مرکزی -->
+  <line x1="540" y1="680" x2="540" y2="340" stroke="#A78BFA" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="8,5"/>
+  <polygon points="540,340 530,360 550,360" fill="#C4B5FD" fill-opacity="0.5"/>
+
+  <!-- برچسب‌های مراحل -->
+  <text x="900" y="630" font-family="Vazirmatn, Tahoma" font-size="22" fill="#A78BFA"
+        text-anchor="start" direction="rtl">① حقوق اولیه (فرض مشروعیت)</text>
+  <text x="830" y="545" font-family="Vazirmatn, Tahoma" font-size="22" fill="#C4B5FD"
+        text-anchor="start" direction="rtl">② مرجع مشروع‌تر</text>
+  <text x="760" y="475" font-family="Vazirmatn, Tahoma" font-size="22" fill="#DDD6FE"
+        text-anchor="start" direction="rtl">③ حقوق بهتر</text>
+  <text x="690" y="415" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EDE9FE"
+        font-weight="bold" text-anchor="start" direction="rtl">④ مشروعیت عمیق‌تر</text>
+
+  <!-- توضیح دور هرمنوتیکی -->
+  <rect x="80" y="720" width="920" height="200" rx="20"
+        fill="#8B5CF6" fill-opacity="0.04" stroke="#8B5CF6" stroke-opacity="0.18"/>
+  <text x="960" y="768" font-family="Vazirmatn, Tahoma" font-size="28" fill="#EDE9FE"
+        font-weight="bold" text-anchor="start" direction="rtl">دور هرمنوتیکی گادامر، نه دور باطل</text>
+  <text x="960" y="812" font-family="Vazirmatn, Tahoma" font-size="23" fill="#DDD"
+        text-anchor="start" direction="rtl">در هر دور، فهم ما از حق و مشروعیت عمیق‌تر می‌شود</text>
+  <text x="960" y="852" font-family="Vazirmatn, Tahoma" font-size="22" fill="#BBB"
+        text-anchor="start" direction="rtl">مشروعیت نه پیشینی ثابت · نه پسینی صرف</text>
+  <text x="960" y="890" font-family="Vazirmatn, Tahoma" font-size="22" fill="#A78BFA"
+        text-anchor="start" direction="rtl">بلکه فرایندی مارپیچی: فرض → آزمون → تثبیت یا تضعیف</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="960" width="1000" height="2" rx="1" fill="#8B5CF6" opacity="0.2"/>
+  <text x="540" y="1000" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">هشدار: مشروعیت صرفاً فرایندی ← خطر مشروعیت‌بخشی به استبداد کارآمد</text>
+  <text x="540" y="1040" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">راه‌حل: قیود رویه‌ای (شفافیت · مشارکت · حقّ اعتراض) به‌مثابه حقوق پیشینی</text>
+</svg>

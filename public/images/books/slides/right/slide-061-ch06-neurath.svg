@@ -1,0 +1,82 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-ship" x1="0" y1="1080" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A1628"/>
+      <stop offset="40%" stop-color="#0C1E3A"/>
+      <stop offset="100%" stop-color="#091420"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#0369A1" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-ship)"/>
+
+  <!-- دریا: موج‌ها -->
+  <path d="M 0 620 Q 120 590 240 620 Q 360 650 480 620 Q 600 590 720 620 Q 840 650 960 620 Q 1020 605 1080 620 L 1080 1080 L 0 1080 Z"
+        fill="url(#water)" stroke="#0EA5E9" stroke-opacity="0.08" stroke-width="1"/>
+  <path d="M 0 660 Q 150 635 300 660 Q 450 685 600 660 Q 750 635 900 660 Q 1000 675 1080 660 L 1080 1080 L 0 1080 Z"
+        fill="#0C4A6E" fill-opacity="0.04"/>
+  <path d="M 0 710 Q 180 690 360 710 Q 540 730 720 710 Q 900 690 1080 710 L 1080 1080 L 0 1080 Z"
+        fill="#0C4A6E" fill-opacity="0.03"/>
+
+  <!-- کشتی ساده -->
+  <path d="M 350 600 L 380 540 L 700 540 L 730 600 Z"
+        fill="#8B6914" fill-opacity="0.15" stroke="#C19A3E" stroke-opacity="0.3" stroke-width="1.5"/>
+  <rect x="490" y="460" width="8" height="80" fill="#C19A3E" fill-opacity="0.3"/>
+  <polygon points="498,470 498,500 560,485" fill="#F5F0E8" fill-opacity="0.08" stroke="#F5F0E8" stroke-opacity="0.12"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="500" height="48" rx="24"
+        fill="#0EA5E9" fill-opacity="0.08" stroke="#0EA5E9" stroke-opacity="0.25"/>
+  <text x="500" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#7DD3FC"
+        text-anchor="start" direction="rtl">معرفت‌شناسی حق · کشتی نویرات · بدون ارشمیدس</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="155" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="900"
+        fill="#E0F2FE" text-anchor="start" direction="rtl">کشتی نویرات</text>
+  <text x="1000" y="210" font-family="Vazirmatn, Tahoma" font-size="25" fill="#7DD3FC"
+        text-anchor="start" direction="rtl">بازسازی در دریای باز · بدون داک خشک</text>
+
+  <!-- نقل‌قول نویرات -->
+  <rect x="120" y="250" width="840" height="120" rx="18"
+        fill="#0EA5E9" fill-opacity="0.04" stroke="#0EA5E9" stroke-opacity="0.15"/>
+  <text x="920" y="295" font-family="Vazirmatn, Tahoma" font-size="24" fill="#BAE6FD"
+        text-anchor="start" direction="rtl" font-style="italic">«ما مانند ملوانانی هستیم که باید کشتی‌شان را</text>
+  <text x="920" y="335" font-family="Vazirmatn, Tahoma" font-size="24" fill="#BAE6FD"
+        text-anchor="start" direction="rtl" font-style="italic">در دریای باز بازسازی کنند بدون داک خشک»</text>
+  <text x="920" y="362" font-family="Vazirmatn, Tahoma" font-size="18" fill="#556"
+        text-anchor="start" direction="rtl">— اوتو نویرات، ۱۹۳۲</text>
+
+  <!-- دیدگاه نویسنده -->
+  <rect x="80" y="400" width="920" height="170" rx="20"
+        fill="#C19A3E" fill-opacity="0.04" stroke="#C19A3E" stroke-opacity="0.2"/>
+  <text x="960" y="445" font-family="Vazirmatn, Tahoma" font-size="28" fill="#FEF3C7"
+        font-weight="bold" text-anchor="start" direction="rtl">⟡ دیدگاه نویسنده</text>
+  <text x="960" y="488" font-family="Vazirmatn, Tahoma" font-size="23" fill="#EEE"
+        text-anchor="start" direction="rtl">در دریای مواج مفاهیم مبهم غوطه‌وریم</text>
+  <text x="960" y="525" font-family="Vazirmatn, Tahoma" font-size="23" fill="#EEE"
+        text-anchor="start" direction="rtl">ابهام و سرگردانی عیب نیست به شرط آنکه:</text>
+  <text x="960" y="558" font-family="Vazirmatn, Tahoma" font-size="23" fill="#C19A3E"
+        font-weight="bold" text-anchor="start" direction="rtl">نتیجه قابل دفاع‌تر از وضعیت ابتدایی باشد</text>
+
+  <!-- هشدار -->
+  <rect x="120" y="740" width="840" height="110" rx="16"
+        fill="#EF4444" fill-opacity="0.03" stroke="#EF4444" stroke-opacity="0.15"/>
+  <text x="920" y="783" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FCA5A5"
+        font-weight="bold" text-anchor="start" direction="rtl">⚠ هشدار نقادانه</text>
+  <text x="920" y="822" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">بدون معیار «بهتری»، کشتی نویرات بهانه‌ی بی‌انضباطی می‌شود</text>
+  <text x="920" y="845" font-family="Vazirmatn, Tahoma" font-size="20" fill="#888"
+        text-anchor="start" direction="rtl">نیاز به معیار فرافرایندی: کاهش رنج · گسترش انتخاب واقعی · انصاف</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="900" width="1000" height="2" rx="1" fill="#0EA5E9" opacity="0.2"/>
+  <text x="540" y="945" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">کواین: هیچ گزاره‌ی بنیادینی از بازنگری مصون نیست</text>
+  <text x="540" y="985" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">ولی معیار بازسازی خوب: سازگاری درونی · قدرت تبیینی · سادگی · هماهنگی با تجربه</text>
+  <text x="540" y="1050" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">حق و حقوق · معرفت‌شناسی · فصل ۶</text>
+</svg>

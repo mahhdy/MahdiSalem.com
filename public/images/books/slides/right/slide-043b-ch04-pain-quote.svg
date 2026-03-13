@@ -1,0 +1,75 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-quote2" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A0808"/>
+      <stop offset="50%" stop-color="#140A10"/>
+      <stop offset="100%" stop-color="#0A0608"/>
+    </linearGradient>
+    <radialGradient id="quoteGlow2" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-quote2)"/>
+  <rect width="1080" height="1080" fill="url(#quoteGlow2)"/>
+
+  <!-- خط تزئینی عمودی -->
+  <rect x="930" y="200" width="4" height="620" rx="2" fill="#EF4444" opacity="0.15"/>
+
+  <!-- علامت نقل‌قول -->
+  <text x="950" y="290" font-family="Georgia, serif" font-size="160" fill="#EF4444" fill-opacity="0.08"
+        text-anchor="start">"</text>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="300" height="48" rx="24"
+        fill="#EF4444" fill-opacity="0.08" stroke="#EF4444" stroke-opacity="0.2"/>
+  <text x="300" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#FCA5A5"
+        text-anchor="start" direction="rtl">درنگ فلسفی · رنج و حق</text>
+
+  <!-- متن اصلی -->
+  <text x="890" y="370" font-family="IranNastaliq, Vazirmatn, Tahoma" font-size="44" fill="#FEE2E2"
+        text-anchor="start" direction="rtl" font-weight="bold">پیش از هر نظریه‌پردازی</text>
+
+  <text x="890" y="450" font-family="IranNastaliq, Vazirmatn, Tahoma" font-size="48" fill="#FCA5A5"
+        text-anchor="start" direction="rtl" font-weight="bold">فریاد هست</text>
+
+  <!-- خط جدا کننده -->
+  <rect x="350" y="500" width="540" height="2" rx="1" fill="#EF4444" opacity="0.2"/>
+
+  <!-- توضیح -->
+  <text x="890" y="560" font-family="Vazirmatn, Tahoma" font-size="26" fill="#D4A0A0"
+        text-anchor="start" direction="rtl">حقوق بشر از رنج هولوکاست زاده شد</text>
+  <text x="890" y="600" font-family="Vazirmatn, Tahoma" font-size="26" fill="#D4A0A0"
+        text-anchor="start" direction="rtl">حقوق کارگران از رنج استثمار زاده شد</text>
+  <text x="890" y="640" font-family="Vazirmatn, Tahoma" font-size="26" fill="#D4A0A0"
+        text-anchor="start" direction="rtl">حقوق زنان از رنج تبعیض زاده شد</text>
+
+  <!-- خط جدا کننده -->
+  <rect x="350" y="680" width="540" height="2" rx="1" fill="#EF4444" opacity="0.12"/>
+
+  <!-- بصیرت نهایی -->
+  <text x="890" y="740" font-family="Vazirmatn, Tahoma" font-size="28" fill="#FEE2E2"
+        text-anchor="start" direction="rtl" font-weight="bold">ارزش دارد انرژی ثابتی</text>
+  <text x="890" y="780" font-family="Vazirmatn, Tahoma" font-size="28" fill="#FEE2E2"
+        text-anchor="start" direction="rtl" font-weight="bold">برای جلوگیری سرمایه‌گذاری شود</text>
+  <text x="890" y="825" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EF4444"
+        text-anchor="start" direction="rtl">پیشگیری به جای درمان پرهزینه</text>
+
+  <!-- نام -->
+  <text x="890" y="890" font-family="Vazirmatn, Tahoma" font-size="20" fill="#6B3030"
+        text-anchor="start" direction="rtl">— دیدگاه نویسنده</text>
+  <text x="890" y="920" font-family="Vazirmatn, Tahoma" font-size="18" fill="#4A2020"
+        text-anchor="start" direction="rtl">الهام از باتلر و لویناس</text>
+
+  <!-- تزئین -->
+  <circle cx="540" cy="970" r="3" fill="#EF4444" opacity="0.3"/>
+  <circle cx="520" cy="970" r="2" fill="#EF4444" opacity="0.2"/>
+  <circle cx="560" cy="970" r="2" fill="#EF4444" opacity="0.2"/>
+
+  <!-- پاورقی -->
+  <text x="540" y="1030" font-family="Vazirmatn, Tahoma" font-size="20" fill="#3A1515"
+        text-anchor="middle" direction="rtl">حق و حقوق · درنگ فلسفی</text>
+  <text x="540" y="1060" font-family="Vazirmatn, Tahoma" font-size="18" fill="#2A1010"
+        text-anchor="middle" direction="rtl">«آسیب‌پذیری مشترک انسان‌ها بنیاد اخلاقی حقوق است» — باتلر</text>
+</svg>

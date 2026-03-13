@@ -1,0 +1,107 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg20" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B0E1A"/>
+      <stop offset="50%" stop-color="#0F1528"/>
+      <stop offset="100%" stop-color="#0B0E1A"/>
+    </linearGradient>
+    <radialGradient id="glow20" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldLine20" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#F59E0B" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg20)"/>
+  <rect width="1080" height="1080" fill="url(#glow20)"/>
+
+  <!-- کادر تزئینی -->
+  <rect x="60" y="60" width="960" height="960" rx="30" fill="none"
+        stroke="#F59E0B" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="340" height="48" rx="24"
+        fill="#F59E0B" fill-opacity="0.08" stroke="#F59E0B" stroke-opacity="0.25"/>
+  <text x="210" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#F59E0B"
+        text-anchor="middle" direction="rtl">فصل ۲ · اسلاید ۱۰ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="170" font-family="Vazirmatn, Tahoma" font-size="52" font-weight="900"
+        fill="#FBBF24" text-anchor="middle" direction="rtl">درس‌های معدن زبان</text>
+
+  <rect x="200" y="210" width="680" height="2" rx="1" fill="url(#goldLine20)"/>
+
+  <!-- ۵ درس کلیدی -->
+  <rect x="120" y="260" width="840" height="85" rx="16"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.15"/>
+  <circle cx="920" cy="302" r="22" fill="#22C55E" fill-opacity="0.15"/>
+  <text x="920" y="310" font-family="Vazirmatn, Tahoma" font-size="20" fill="#4ADE80"
+        text-anchor="middle" font-weight="bold">۱</text>
+  <text x="880" y="295" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FFFFFF"
+        text-anchor="start" direction="rtl" font-weight="bold">حق یک واژه نیست، یک شبکهٔ معنایی است</text>
+  <text x="880" y="330" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">شباهت خانوادگی ویتگنشتاینی: هشت+ چهره بدون جوهر واحد</text>
+
+  <rect x="120" y="360" width="840" height="85" rx="16"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.15"/>
+  <circle cx="920" cy="402" r="22" fill="#06B6D4" fill-opacity="0.15"/>
+  <text x="920" y="410" font-family="Vazirmatn, Tahoma" font-size="20" fill="#06B6D4"
+        text-anchor="middle" font-weight="bold">۲</text>
+  <text x="880" y="395" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FFFFFF"
+        text-anchor="start" direction="rtl" font-weight="bold">بر حق بودن ≠ حق داشتن</text>
+  <text x="880" y="430" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">تمایزی که در ادبیات فارسی کمتر دیده شده</text>
+
+  <rect x="120" y="460" width="840" height="85" rx="16"
+        fill="#E8B83D" fill-opacity="0.04" stroke="#E8B83D" stroke-opacity="0.15"/>
+  <circle cx="920" cy="502" r="22" fill="#E8B83D" fill-opacity="0.15"/>
+  <text x="920" y="510" font-family="Vazirmatn, Tahoma" font-size="20" fill="#E8B83D"
+        text-anchor="middle" font-weight="bold">۳</text>
+  <text x="880" y="495" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FFFFFF"
+        text-anchor="start" direction="rtl" font-weight="bold">ابزار سه‌سطحی: رفع سوءفهم ساختاری</text>
+  <text x="880" y="530" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">عام · خاص · اخص + حداقلی: هر سطح پاسخ متفاوتی دارد</text>
+
+  <rect x="120" y="560" width="840" height="85" rx="16"
+        fill="#A855F7" fill-opacity="0.04" stroke="#A855F7" stroke-opacity="0.15"/>
+  <circle cx="920" cy="602" r="22" fill="#A855F7" fill-opacity="0.15"/>
+  <text x="920" y="610" font-family="Vazirmatn, Tahoma" font-size="20" fill="#C084FC"
+        text-anchor="middle" font-weight="bold">۴</text>
+  <text x="880" y="595" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FFFFFF"
+        text-anchor="start" direction="rtl" font-weight="bold">حق ذاتاً ارتباطی و جمع‌زاد است</text>
+  <text x="880" y="630" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">بدون شناسایی متقابل، حق صرفاً ادّعاست</text>
+
+  <rect x="120" y="660" width="840" height="85" rx="16"
+        fill="#EC4899" fill-opacity="0.04" stroke="#EC4899" stroke-opacity="0.15"/>
+  <circle cx="920" cy="702" r="22" fill="#EC4899" fill-opacity="0.15"/>
+  <text x="920" y="710" font-family="Vazirmatn, Tahoma" font-size="20" fill="#EC4899"
+        text-anchor="middle" font-weight="bold">۵</text>
+  <text x="880" y="695" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FFFFFF"
+        text-anchor="start" direction="rtl" font-weight="bold">زبان شهود دارد، نظریه ندارد</text>
+  <text x="880" y="730" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">معدن زبان بصیرت می‌دهد ولی نظریه‌پردازی لازم دارد</text>
+
+  <!-- نقل‌قول پایانی -->
+  <rect x="120" y="790" width="840" height="100" rx="18"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.15"/>
+  <text x="540" y="833" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FBBF24"
+        text-anchor="middle" direction="rtl" font-style="italic">«زبان معدنی است که باید با دقّت حفاری شود</text>
+  <text x="540" y="870" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FBBF24"
+        text-anchor="middle" direction="rtl" font-style="italic">ولی گوهرهایش هنوز نیاز به تراش دارند»</text>
+
+  <!-- دعوت -->
+  <rect x="260" y="920" width="560" height="55" rx="14"
+        fill="#1A1A30" stroke="#F59E0B" stroke-opacity="0.2"/>
+  <text x="540" y="956" font-family="Vazirmatn, Tahoma" font-size="24" fill="#E8B83D"
+        text-anchor="middle" direction="rtl">فصل بعدی: تاریخ مفهوم حق ←</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#F59E0B" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۲ — پایان</text>
+</svg>

@@ -1,0 +1,54 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg031" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg031)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="380" height="50" rx="25"
+        fill="#10B981" fill-opacity="0.08" stroke="#10B981" stroke-opacity="0.3"/>
+  <text x="230" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#10B981"
+        text-anchor="middle" direction="rtl">فصل ۳ · اسلاید ۲ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="160" font-family="Vazirmatn, Tahoma" font-size="52" font-weight="bold"
+        fill="#10B981" text-anchor="middle" direction="rtl">دو سنّتِ حق: غرب و اسلام</text>
+
+  <!-- دو باکس مقایسه -->
+  <rect x="70" y="230" width="440" height="620" rx="24"
+        fill="#111827" stroke="#4B5563" stroke-opacity="0.6"/>
+  <text x="290" y="290" font-family="Vazirmatn, Tahoma" font-size="34" fill="#F9FAFB"
+        font-weight="bold" text-anchor="middle" direction="rtl">غرب</text>
+  <text x="290" y="345" font-family="Vazirmatn, Tahoma" font-size="26" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">طبیعت ← قرارداد ← حقوق بشر</text>
+  <text x="290" y="410" font-family="Vazirmatn, Tahoma" font-size="26" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">حق می‌تواند علیه قانون</text>
+  <text x="290" y="450" font-family="Vazirmatn, Tahoma" font-size="26" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">و علیه دولت بسیج شود</text>
+  <text x="290" y="530" font-family="Vazirmatn, Tahoma" font-size="26" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">فاصلهٔ تحلیلی «حق / قانون» پررنگ است</text>
+
+  <rect x="570" y="230" width="440" height="620" rx="24"
+        fill="#111827" stroke="#4B5563" stroke-opacity="0.6"/>
+  <text x="790" y="290" font-family="Vazirmatn, Tahoma" font-size="34" fill="#F9FAFB"
+        font-weight="bold" text-anchor="middle" direction="rtl">اسلام فقهی</text>
+  <text x="790" y="345" font-family="Vazirmatn, Tahoma" font-size="26" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">حق از درون تکلیف الهی برمی‌خیزد</text>
+  <text x="790" y="410" font-family="Vazirmatn, Tahoma" font-size="26" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">حق درون شریعت تعریف می‌شود</text>
+  <text x="790" y="450" font-family="Vazirmatn, Tahoma" font-size="26" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">نه مقابل آن</text>
+  <text x="790" y="530" font-family="Vazirmatn, Tahoma" font-size="26" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">مقاصد شریعه ≈ قیود طراحی بنیادین</text>
+
+  <!-- موضع نویسنده -->
+  <rect x="80" y="880" width="920" height="120" rx="18"
+        fill="#022C22" fill-opacity="0.7" stroke="#10B981" stroke-opacity="0.4"/>
+  <text x="540" y="925" font-family="Vazirmatn, Tahoma" font-size="28" fill="#A7F3D0"
+        font-weight="bold" text-anchor="middle" direction="rtl">موضع کتاب:</text>
+  <text x="540" y="965" font-family="Vazirmatn, Tahoma" font-size="26" fill="#D1FAE5"
+        text-anchor="middle" direction="rtl">استفاده از هر دو منبع، اما انتقال معیار نهایی به ماشین زندهٔ فرایندی</text>
+</svg>

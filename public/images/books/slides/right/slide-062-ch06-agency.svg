@@ -1,0 +1,81 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-agent" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#12081E"/>
+      <stop offset="100%" stop-color="#0A0E1C"/>
+    </linearGradient>
+    <radialGradient id="agentGlow" cx="50%" cy="40%" r="35%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-agent)"/>
+  <rect width="1080" height="1080" fill="url(#agentGlow)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="500" height="48" rx="24"
+        fill="#8B5CF6" fill-opacity="0.08" stroke="#8B5CF6" stroke-opacity="0.25"/>
+  <text x="500" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#A78BFA"
+        text-anchor="start" direction="rtl">فصل ۶ · عاملیت و اراده · پل میان هست و باید</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="165" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="900"
+        fill="#EDE9FE" text-anchor="start" direction="rtl">جهش خلاقانه‌ی عامل</text>
+  <text x="1000" y="220" font-family="Vazirmatn, Tahoma" font-size="25" fill="#C4B5FD"
+        text-anchor="start" direction="rtl">عاملیت = پل میان «هست» و «باید» · پاسخ به شکاف هیوم</text>
+
+  <!-- مسأله هیوم -->
+  <rect x="80" y="270" width="920" height="100" rx="18"
+        fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.18"/>
+  <text x="960" y="315" font-family="Vazirmatn, Tahoma" font-size="26" fill="#F87171"
+        font-weight="bold" text-anchor="start" direction="rtl">⚠ مسأله‌ی هیوم (Is–Ought Problem)</text>
+  <text x="960" y="355" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">از گزاره‌های «هست» به تنهایی نمی‌توان «باید» استنتاج کرد</text>
+
+  <!-- فلش -->
+  <polygon points="540,380 530,390 550,390" fill="#8B5CF6" fill-opacity="0.3"/>
+
+  <!-- پاسخ ۱: عاملیت -->
+  <rect x="80" y="405" width="920" height="160" rx="20"
+        fill="#8B5CF6" fill-opacity="0.04" stroke="#8B5CF6" stroke-opacity="0.2"/>
+  <text x="960" y="448" font-family="Vazirmatn, Tahoma" font-size="28" fill="#D8B4FE"
+        font-weight="bold" text-anchor="start" direction="rtl">پاسخ ۱: عاملیت و اراده</text>
+  <text x="960" y="490" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">عامل به شناسایی و تشخیص می‌رسد</text>
+  <text x="960" y="525" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">مبتنی بر اراده + خلاقیت + ظرفیت ذهنی‌اش</text>
+  <text x="960" y="555" font-family="Vazirmatn, Tahoma" font-size="21" fill="#C4B5FD"
+        text-anchor="start" direction="rtl">این صدور از واقعیت است + عنصر اراده و ارزش‌ها و ترجیحات</text>
+
+  <!-- پاسخ ۲: دستورالعمل (مثال چای) -->
+  <rect x="80" y="580" width="920" height="200" rx="20"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.2"/>
+  <text x="960" y="623" font-family="Vazirmatn, Tahoma" font-size="28" fill="#FCD34D"
+        font-weight="bold" text-anchor="start" direction="rtl">پاسخ ۲: باید منطقی (مثال چای)</text>
+  <text x="960" y="665" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">① چای خوشمزه فقط با آب جوشیده تهیه می‌شود (هست)</text>
+  <text x="960" y="700" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">② علی چای خوشمزه می‌خواهد (خواست)</text>
+  <text x="960" y="735" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FCD34D"
+        font-weight="bold" text-anchor="start" direction="rtl">③ پس علی باید آب بجوشاند! (باید ابزاری)</text>
+  <text x="960" y="770" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">= امر مشروط کانتی · Hypothetical Imperative · شکاف پر نمی‌شود بلکه پل زده می‌شود</text>
+
+  <!-- هشدار نقادانه -->
+  <rect x="80" y="800" width="920" height="110" rx="18"
+        fill="#DC2626" fill-opacity="0.03" stroke="#DC2626" stroke-opacity="0.15"/>
+  <text x="960" y="843" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FCA5A5"
+        font-weight="bold" text-anchor="start" direction="rtl">⚠ نقد: مثال چای برای حقوق بنیادین کافی نیست</text>
+  <text x="960" y="882" font-family="Vazirmatn, Tahoma" font-size="21" fill="#CCC"
+        text-anchor="start" direction="rtl">«مطلوب برای چه کسی؟» · «کارآمد بر اساس چه معیاری؟»</text>
+  <text x="960" y="905" font-family="Vazirmatn, Tahoma" font-size="19" fill="#888"
+        text-anchor="start" direction="rtl">باید ابزاری ≠ باید ارزشی · برای حقوق بنیادین، نظریه‌ی مطلوبیت لازم است</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="950" width="1000" height="2" rx="1" fill="#8B5CF6" opacity="0.2"/>
+  <text x="540" y="995" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">نویسنده: جبرگرایی هیوم خودشکن است و معرفت را از معنا تهی می‌کند</text>
+  <text x="540" y="1050" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۶ · مبانی · ادامه دارد ←</text>
+</svg>

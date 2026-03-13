@@ -1,0 +1,108 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg36" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0D1A"/>
+      <stop offset="100%" stop-color="#0D1225"/>
+    </linearGradient>
+    <radialGradient id="glow36" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#E8B83D" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#E8B83D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg36)"/>
+  <rect width="1080" height="1080" fill="url(#glow36)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="340" height="48" rx="24"
+        fill="#E8B83D" fill-opacity="0.08" stroke="#E8B83D" stroke-opacity="0.25"/>
+  <text x="210" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#E8B83D"
+        text-anchor="middle" direction="rtl">فصل ۴ · اسلاید ۶ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="155" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#FBBF24" text-anchor="middle" direction="rtl">شش مکتب بزرگ فلسفهٔ حق</text>
+  <text x="540" y="205" font-family="Vazirmatn, Tahoma" font-size="24" fill="#888"
+        text-anchor="middle" direction="rtl">هر مکتب یک پاسخ به پرسش «حق از کجا می‌آید؟»</text>
+
+  <!-- ۶ کارت در گرید ۲×۳ -->
+  <!-- ردیف ۱ -->
+  <rect x="560" y="260" width="440" height="175" rx="18"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.18"/>
+  <text x="960" y="305" font-family="Vazirmatn, Tahoma" font-size="28" fill="#4ADE80"
+        text-anchor="start" direction="rtl" font-weight="bold">۱. حقوق طبیعی</text>
+  <text x="960" y="345" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="start" direction="rtl">ارسطو · آکویناس · لاک · فینیس</text>
+  <text x="960" y="380" font-family="Vazirmatn, Tahoma" font-size="18" fill="#999"
+        text-anchor="start" direction="rtl">حق ذاتی · کشف‌شدنی · پیش‌اجتماعی</text>
+  <text x="960" y="415" font-family="Vazirmatn, Tahoma" font-size="16" fill="#F87171"
+        text-anchor="start" direction="rtl">⚠ «طبیعت» توسط چه کسی تفسیر می‌شود؟</text>
+
+  <rect x="80" y="260" width="440" height="175" rx="18"
+        fill="#666" fill-opacity="0.04" stroke="#666" stroke-opacity="0.18"/>
+  <text x="480" y="305" font-family="Vazirmatn, Tahoma" font-size="28" fill="#BBB"
+        text-anchor="start" direction="rtl" font-weight="bold">۲. پوزیتیویسم حقوقی</text>
+  <text x="480" y="345" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="start" direction="rtl">آستین · کلزن · هارت</text>
+  <text x="480" y="380" font-family="Vazirmatn, Tahoma" font-size="18" fill="#999"
+        text-anchor="start" direction="rtl">حق = وضع قانون‌گذار · صوری · بدون بار اخلاقی</text>
+  <text x="480" y="415" font-family="Vazirmatn, Tahoma" font-size="16" fill="#F87171"
+        text-anchor="start" direction="rtl">⚠ آشویتس هم «قانونی» بود</text>
+
+  <!-- ردیف ۲ -->
+  <rect x="560" y="455" width="440" height="175" rx="18"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.18"/>
+  <text x="960" y="500" font-family="Vazirmatn, Tahoma" font-size="28" fill="#FBBF24"
+        text-anchor="start" direction="rtl" font-weight="bold">۳. قراردادگرایی</text>
+  <text x="960" y="540" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="start" direction="rtl">هابز · لاک · روسو · رالز</text>
+  <text x="960" y="575" font-family="Vazirmatn, Tahoma" font-size="18" fill="#999"
+        text-anchor="start" direction="rtl">حق = حاصل توافق عقلانی · قرارداد اجتماعی</text>
+  <text x="960" y="610" font-family="Vazirmatn, Tahoma" font-size="16" fill="#F87171"
+        text-anchor="start" direction="rtl">⚠ کدام توافق؟ توافق واقعی یا فرضی؟</text>
+
+  <rect x="80" y="455" width="440" height="175" rx="18"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.18"/>
+  <text x="480" y="500" font-family="Vazirmatn, Tahoma" font-size="28" fill="#22D3EE"
+        text-anchor="start" direction="rtl" font-weight="bold">۴. فایده‌گرایی</text>
+  <text x="480" y="540" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="start" direction="rtl">بنتام · میل · سینگر</text>
+  <text x="480" y="575" font-family="Vazirmatn, Tahoma" font-size="18" fill="#999"
+        text-anchor="start" direction="rtl">حق = آنچه بیشترین خیر برای بیشترین افراد</text>
+  <text x="480" y="610" font-family="Vazirmatn, Tahoma" font-size="16" fill="#F87171"
+        text-anchor="start" direction="rtl">⚠ اقلیت قربانی اکثریت می‌شود</text>
+
+  <!-- ردیف ۳ -->
+  <rect x="560" y="650" width="440" height="175" rx="18"
+        fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.18"/>
+  <text x="960" y="695" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F87171"
+        text-anchor="start" direction="rtl" font-weight="bold">۵. نقد مارکسی</text>
+  <text x="960" y="735" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="start" direction="rtl">مارکس · فوکو · مطالعات انتقادی حقوق</text>
+  <text x="960" y="770" font-family="Vazirmatn, Tahoma" font-size="18" fill="#999"
+        text-anchor="start" direction="rtl">حق = پوشش ایدئولوژیک سلطهٔ طبقاتی</text>
+  <text x="960" y="805" font-family="Vazirmatn, Tahoma" font-size="16" fill="#F87171"
+        text-anchor="start" direction="rtl">⚠ اگر حق توهّم است، جایگزینش چیست؟</text>
+
+  <rect x="80" y="650" width="440" height="175" rx="18"
+        fill="#A855F7" fill-opacity="0.04" stroke="#A855F7" stroke-opacity="0.18"/>
+  <text x="480" y="695" font-family="Vazirmatn, Tahoma" font-size="28" fill="#C084FC"
+        text-anchor="start" direction="rtl" font-weight="bold">۶. رویکرد قابلیت</text>
+  <text x="480" y="735" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="start" direction="rtl">سن · نوسباوم</text>
+  <text x="480" y="770" font-family="Vazirmatn, Tahoma" font-size="18" fill="#999"
+        text-anchor="start" direction="rtl">حق = قابلیت واقعی انسان برای شکوفایی</text>
+  <text x="480" y="805" font-family="Vazirmatn, Tahoma" font-size="16" fill="#F87171"
+        text-anchor="start" direction="rtl">⚠ لیست قابلیت‌ها چگونه تعیین می‌شود؟</text>
+
+  <!-- نکته -->
+  <rect x="140" y="860" width="800" height="55" rx="14"
+        fill="#E8B83D" fill-opacity="0.04" stroke="#E8B83D" stroke-opacity="0.12"/>
+  <text x="540" y="895" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FBBF24"
+        text-anchor="middle" direction="rtl">جدول تفصیلی مکاتب در پیوست ب کتاب آمده است</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#E8B83D" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۴</text>
+</svg>

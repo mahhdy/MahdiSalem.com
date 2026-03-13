@@ -1,0 +1,50 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgP2" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#1B2A4A"/>
+    </linearGradient>
+    <linearGradient id="glP2" x1="200" y1="0" x2="880" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgP2)"/>
+
+  <g stroke="#A855F7" stroke-opacity="0.03" stroke-width="0.5">
+    <circle cx="540" cy="540" r="120"/>
+    <circle cx="540" cy="540" r="240"/>
+    <circle cx="540" cy="540" r="360"/>
+    <circle cx="540" cy="540" r="480"/>
+  </g>
+
+  <text x="540" y="300" font-family="Vazirmatn, Tahoma" font-size="180" font-weight="900"
+        fill="#A855F7" fill-opacity="0.06" text-anchor="middle">۲</text>
+
+  <text x="540" y="400" font-family="Vazirmatn, Tahoma" font-size="30" fill="#778"
+        text-anchor="middle" direction="rtl">بخش دوم</text>
+
+  <text x="540" y="505" font-family="Vazirmatn, Tahoma" font-size="62" font-weight="900"
+        fill="#FFFFFF" text-anchor="middle" direction="rtl">تأسیس</text>
+  <text x="540" y="565" font-family="Vazirmatn, Tahoma" font-size="34" fill="#A855F7"
+        text-anchor="middle" direction="rtl">نظریهٔ فرایندی حق</text>
+
+  <rect x="290" y="590" width="500" height="3" rx="1.5" fill="url(#glP2)" opacity="0.5"/>
+
+  <text x="540" y="665" font-family="Vazirmatn, Tahoma" font-size="28" fill="#AAB"
+        text-anchor="middle" direction="rtl">فصل ۶: فرض‌های بنیادین</text>
+  <text x="540" y="710" font-family="Vazirmatn, Tahoma" font-size="28" fill="#AAB"
+        text-anchor="middle" direction="rtl">فصل ۷: پل باید و هست</text>
+  <text x="540" y="755" font-family="Vazirmatn, Tahoma" font-size="28" fill="#AAB"
+        text-anchor="middle" direction="rtl">فصل ۸: ماشین زنده</text>
+  <text x="540" y="800" font-family="Vazirmatn, Tahoma" font-size="28" fill="#AAB"
+        text-anchor="middle" direction="rtl">فصل ۹–۱۲: بازی · مشروعیت · اخلاق · سطوح</text>
+
+  <rect x="140" y="870" width="800" height="80" rx="16"
+        fill="#A855F7" fill-opacity="0.05" stroke="#A855F7" stroke-opacity="0.15"/>
+  <text x="540" y="920" font-family="Vazirmatn, Tahoma" font-size="28" fill="#C084FC"
+        text-anchor="middle" direction="rtl">اینجا ماشین ساخته می‌شود</text>
+
+  <rect x="40" y="1035" width="1000" height="2.5" rx="1" fill="url(#glP2)" opacity="0.3"/>
+</svg>

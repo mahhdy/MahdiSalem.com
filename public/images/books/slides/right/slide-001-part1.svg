@@ -1,0 +1,56 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgP1" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#060D18"/>
+      <stop offset="100%" stop-color="#1B2A4A"/>
+    </linearGradient>
+    <linearGradient id="glP1" x1="200" y1="0" x2="880" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8B6914"/>
+      <stop offset="50%" stop-color="#E8C872"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgP1)"/>
+
+  <!-- الگوی تزئینی -->
+  <g stroke="#C19A3E" stroke-opacity="0.03" stroke-width="0.5">
+    <circle cx="540" cy="540" r="120"/>
+    <circle cx="540" cy="540" r="240"/>
+    <circle cx="540" cy="540" r="360"/>
+    <circle cx="540" cy="540" r="480"/>
+  </g>
+
+  <!-- شماره بخش -->
+  <text x="540" y="300" font-family="Vazirmatn, Tahoma" font-size="180" font-weight="900"
+        fill="#C19A3E" fill-opacity="0.08" text-anchor="middle">۱</text>
+
+  <text x="540" y="400" font-family="Vazirmatn, Tahoma" font-size="30" fill="#778"
+        text-anchor="middle" direction="rtl">بخش اول</text>
+
+  <!-- عنوان بخش -->
+  <text x="540" y="500" font-family="Vazirmatn, Tahoma" font-size="68" font-weight="900"
+        fill="#FFFFFF" text-anchor="middle" direction="rtl">زمینه و بازشناسی</text>
+
+  <rect x="290" y="530" width="500" height="3" rx="1.5" fill="url(#glP1)" opacity="0.5"/>
+
+  <!-- فهرست فصل‌ها -->
+  <text x="540" y="620" font-family="Vazirmatn, Tahoma" font-size="30" fill="#AAB"
+        text-anchor="middle" direction="rtl">فصل ۱: چرا حق؟</text>
+  <text x="540" y="670" font-family="Vazirmatn, Tahoma" font-size="30" fill="#AAB"
+        text-anchor="middle" direction="rtl">فصل ۲: معدن زبان</text>
+  <text x="540" y="720" font-family="Vazirmatn, Tahoma" font-size="30" fill="#AAB"
+        text-anchor="middle" direction="rtl">فصل ۳: تاریخ مفهوم حق</text>
+  <text x="540" y="770" font-family="Vazirmatn, Tahoma" font-size="30" fill="#AAB"
+        text-anchor="middle" direction="rtl">فصل ۴: مکاتب و منشأها</text>
+  <text x="540" y="820" font-family="Vazirmatn, Tahoma" font-size="30" fill="#AAB"
+        text-anchor="middle" direction="rtl">فصل ۵: جغرافیای مفهومی</text>
+
+  <!-- پرسش -->
+  <rect x="140" y="880" width="800" height="80" rx="16"
+        fill="#C19A3E" fill-opacity="0.05" stroke="#C19A3E" stroke-opacity="0.15"/>
+  <text x="540" y="930" font-family="Vazirmatn, Tahoma" font-size="28" fill="#C19A3E"
+        text-anchor="middle" direction="rtl">ما میراث‌دار انتقادی چه سنّت‌هایی هستیم؟</text>
+
+  <rect x="40" y="1035" width="1000" height="2.5" rx="1" fill="url(#glP1)" opacity="0.3"/>
+</svg>

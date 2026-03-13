@@ -1,0 +1,77 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg7" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A1628"/>
+      <stop offset="100%" stop-color="#0D0F1A"/>
+    </linearGradient>
+    <radialGradient id="glowCyan7" cx="25%" cy="55%" r="35%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowGreen7" cx="75%" cy="55%" r="35%">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg7)"/>
+  <rect width="1080" height="1080" fill="url(#glowCyan7)"/>
+  <rect width="1080" height="1080" fill="url(#glowGreen7)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="320" height="48" rx="24"
+        fill="#22C55E" fill-opacity="0.08" stroke="#22C55E" stroke-opacity="0.25"/>
+  <text x="200" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#22C55E"
+        text-anchor="middle" direction="rtl">فصل ۱ · اسلاید ۷ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="990" y="160" font-family="Vazirmatn, Tahoma" font-size="52" font-weight="900"
+        fill="#FFFFFF" text-anchor="start" direction="rtl">سه استعارهٔ محوری کتاب</text>
+  <text x="990" y="210" font-family="Vazirmatn, Tahoma" font-size="26" fill="#888"
+        text-anchor="start" direction="rtl">ابزارهای شهودی برای فهم ماهیت حق</text>
+
+  <!-- استعاره ۱: بازی -->
+  <rect x="80" y="270" width="920" height="190" rx="22"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.2" stroke-width="1.5"/>
+  <!-- دایره شماره -->
+  <circle cx="940" cy="320" r="32" fill="#06B6D4" fill-opacity="0.12" stroke="#06B6D4" stroke-opacity="0.4"/>
+  <text x="940" y="330" font-family="Vazirmatn, Tahoma" font-size="30" fill="#06B6D4"
+        text-anchor="middle" font-weight="bold">۱</text>
+  <text x="890" y="330" font-family="Vazirmatn, Tahoma" font-size="38" fill="#22D3EE"
+        text-anchor="start" direction="rtl" font-weight="bold">بازی</text>
+  <text x="890" y="380" font-family="Vazirmatn, Tahoma" font-size="24" fill="#CCC"
+        text-anchor="start" direction="rtl">حق = قواعد بازی اجتماعی · بازیکنان · داوران · تعادل نش</text>
+  <text x="890" y="420" font-family="Vazirmatn, Tahoma" font-size="22" fill="#999"
+        text-anchor="start" direction="rtl">بدون قواعد منصفانه، بازی فرو می‌پاشد یا غیرقابل‌تحمّل می‌شود</text>
+
+  <!-- استعاره ۲: ماشین زنده -->
+  <rect x="80" y="480" width="920" height="190" rx="22"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.2" stroke-width="1.5"/>
+  <circle cx="940" cy="530" r="32" fill="#22C55E" fill-opacity="0.12" stroke="#22C55E" stroke-opacity="0.4"/>
+  <text x="940" y="540" font-family="Vazirmatn, Tahoma" font-size="30" fill="#22C55E"
+        text-anchor="middle" font-weight="bold">۲</text>
+  <text x="890" y="540" font-family="Vazirmatn, Tahoma" font-size="38" fill="#4ADE80"
+        text-anchor="start" direction="rtl" font-weight="bold">ماشین زنده</text>
+  <text x="890" y="590" font-family="Vazirmatn, Tahoma" font-size="24" fill="#CCC"
+        text-anchor="start" direction="rtl">نظام حق = سیستم خودسامان · خودنقاد · خودیادگیرنده</text>
+  <text x="890" y="630" font-family="Vazirmatn, Tahoma" font-size="22" fill="#999"
+        text-anchor="start" direction="rtl">نه ایستا و بسته، بلکه پویا و تنقیح‌پذیر مثل موجود زنده</text>
+
+  <!-- استعاره ۳: قطب‌نما -->
+  <rect x="80" y="690" width="920" height="190" rx="22"
+        fill="#E8B83D" fill-opacity="0.04" stroke="#E8B83D" stroke-opacity="0.2" stroke-width="1.5"/>
+  <circle cx="940" cy="740" r="32" fill="#E8B83D" fill-opacity="0.12" stroke="#E8B83D" stroke-opacity="0.4"/>
+  <text x="940" y="750" font-family="Vazirmatn, Tahoma" font-size="30" fill="#E8B83D"
+        text-anchor="middle" font-weight="bold">۳</text>
+  <text x="890" y="750" font-family="Vazirmatn, Tahoma" font-size="38" fill="#E8B83D"
+        text-anchor="start" direction="rtl" font-weight="bold">قطب‌نما</text>
+  <text x="890" y="800" font-family="Vazirmatn, Tahoma" font-size="24" fill="#CCC"
+        text-anchor="start" direction="rtl">اخلاق = قطب‌نمای حق · جهت‌دهنده نه تعیین‌کنندهٔ مسیر</text>
+  <text x="890" y="840" font-family="Vazirmatn, Tahoma" font-size="22" fill="#999"
+        text-anchor="start" direction="rtl">نقشهٔ دقیق ندارد ولی شمال را نشان می‌دهد</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#22C55E" opacity="0.2"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۱</text>
+</svg>

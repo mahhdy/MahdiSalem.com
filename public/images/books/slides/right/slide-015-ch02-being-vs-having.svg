@@ -1,0 +1,101 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg15" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A0A08"/>
+      <stop offset="50%" stop-color="#120D18"/>
+      <stop offset="100%" stop-color="#0A0E1A"/>
+    </linearGradient>
+    <radialGradient id="glowL15" cx="30%" cy="55%" r="35%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowR15" cx="70%" cy="55%" r="35%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg15)"/>
+  <rect width="1080" height="1080" fill="url(#glowL15)"/>
+  <rect width="1080" height="1080" fill="url(#glowR15)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="320" height="48" rx="24"
+        fill="#E8B83D" fill-opacity="0.08" stroke="#E8B83D" stroke-opacity="0.25"/>
+  <text x="200" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#E8B83D"
+        text-anchor="middle" direction="rtl">فصل ۲ · اسلاید ۵ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="155" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#FFFFFF" text-anchor="middle" direction="rtl">تمایز بنیادین: دو معنای «حق»</text>
+
+  <!-- VS بزرگ -->
+  <text x="540" y="520" font-family="Georgia, serif" font-size="120" fill="#FFFFFF"
+        fill-opacity="0.04" text-anchor="middle" font-weight="bold">VS</text>
+
+  <!-- ستون راست: بر حق بودن -->
+  <rect x="560" y="230" width="440" height="550" rx="24"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.2" stroke-width="1.5"/>
+  <rect x="560" y="230" width="440" height="70" rx="24"
+        fill="#F59E0B" fill-opacity="0.12"/>
+  <text x="780" y="275" font-family="Vazirmatn, Tahoma" font-size="30" fill="#F59E0B"
+        text-anchor="middle" direction="rtl" font-weight="bold">بر حق بودن</text>
+  <text x="780" y="345" font-family="Georgia, serif" font-size="28" fill="#FBBF24"
+        text-anchor="middle" font-style="italic">Being Right</text>
+  <line x1="610" y1="375" x2="950" y2="375" stroke="#F59E0B" stroke-opacity="0.15"/>
+  <text x="960" y="420" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EEE"
+        text-anchor="start" direction="rtl">• مفهوم معرفت‌شناختی‐اخلاقی</text>
+  <text x="960" y="465" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EEE"
+        text-anchor="start" direction="rtl">• درستی گزاره یا عمل</text>
+  <text x="960" y="510" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EEE"
+        text-anchor="start" direction="rtl">• مستقل از قانون و نهاد</text>
+  <text x="960" y="555" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EEE"
+        text-anchor="start" direction="rtl">• ممکن است شناخته نشود</text>
+  <rect x="600" y="600" width="360" height="70" rx="14"
+        fill="#F59E0B" fill-opacity="0.08"/>
+  <text x="780" y="640" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FBBF24"
+        text-anchor="middle" direction="rtl">مثال: معترض محقّ در استبداد</text>
+  <text x="780" y="740" font-family="Vazirmatn, Tahoma" font-size="22" fill="#999"
+        text-anchor="middle" direction="rtl">حق دارد ولی «حقّ قانونی» ندارد</text>
+
+  <!-- ستون چپ: حق داشتن -->
+  <rect x="80" y="230" width="440" height="550" rx="24"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.2" stroke-width="1.5"/>
+  <rect x="80" y="230" width="440" height="70" rx="24"
+        fill="#06B6D4" fill-opacity="0.12"/>
+  <text x="300" y="275" font-family="Vazirmatn, Tahoma" font-size="30" fill="#06B6D4"
+        text-anchor="middle" direction="rtl" font-weight="bold">حق داشتن</text>
+  <text x="300" y="345" font-family="Georgia, serif" font-size="28" fill="#7DD3FC"
+        text-anchor="middle" font-style="italic">Having Right</text>
+  <line x1="130" y1="375" x2="470" y2="375" stroke="#06B6D4" stroke-opacity="0.15"/>
+  <text x="480" y="420" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EEE"
+        text-anchor="start" direction="rtl">• مفهوم حقوقی‐سیاسی</text>
+  <text x="480" y="465" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EEE"
+        text-anchor="start" direction="rtl">• صاحب حق بودن در نظام</text>
+  <text x="480" y="510" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EEE"
+        text-anchor="start" direction="rtl">• وابسته به قانون و نهاد</text>
+  <text x="480" y="555" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EEE"
+        text-anchor="start" direction="rtl">• رسمی و شناخته‌شده</text>
+  <rect x="120" y="600" width="360" height="70" rx="14"
+        fill="#06B6D4" fill-opacity="0.08"/>
+  <text x="300" y="640" font-family="Vazirmatn, Tahoma" font-size="22" fill="#7DD3FC"
+        text-anchor="middle" direction="rtl">مثال: سوءاستفاده از خلأ قانونی</text>
+  <text x="300" y="740" font-family="Vazirmatn, Tahoma" font-size="22" fill="#999"
+        text-anchor="middle" direction="rtl">حقّ قانونی دارد ولی «بر حق» نیست</text>
+
+  <!-- خط عمودی وسط -->
+  <line x1="540" y1="250" x2="540" y2="760" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="2" stroke-dasharray="8,6"/>
+
+  <!-- جمع‌بندی -->
+  <rect x="100" y="820" width="880" height="100" rx="18"
+        fill="#E8B83D" fill-opacity="0.04" stroke="#E8B83D" stroke-opacity="0.15"/>
+  <text x="540" y="862" font-family="Vazirmatn, Tahoma" font-size="28" fill="#E8B83D"
+        text-anchor="middle" direction="rtl" font-weight="bold">دیدگاه نویسنده:</text>
+  <text x="540" y="902" font-family="Vazirmatn, Tahoma" font-size="24" fill="#CCC"
+        text-anchor="middle" direction="rtl">نظام حقوقی خوب آن است که فاصلهٔ «بر حق بودن» و «حق داشتن» را به حداقل برساند</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#E8B83D" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۲</text>
+</svg>

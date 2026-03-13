@@ -1,0 +1,96 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-lang" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#18120A"/>
+      <stop offset="50%" stop-color="#141018"/>
+      <stop offset="100%" stop-color="#0C0A10"/>
+    </linearGradient>
+    <radialGradient id="langGlow" cx="50%" cy="40%" r="35%">
+      <stop offset="0%" stop-color="#C19A3E" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#C19A3E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-lang)"/>
+  <rect width="1080" height="1080" fill="url(#langGlow)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="460" height="48" rx="24"
+        fill="#C19A3E" fill-opacity="0.08" stroke="#C19A3E" stroke-opacity="0.25"/>
+  <text x="460" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#C19A3E"
+        text-anchor="start" direction="rtl">فصل ۲ · روش نویسنده · اکتشاف زبانی</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="165" font-family="IranNastaliq, Vazirmatn, Tahoma" font-size="50" font-weight="900"
+        fill="#FEF3C7" text-anchor="start" direction="rtl">معدن زبان</text>
+  <text x="1000" y="225" font-family="Vazirmatn, Tahoma" font-size="26" fill="#D4C5A0"
+        text-anchor="start" direction="rtl">اکتشاف و انکشاف مفاهیم از درک زبانی</text>
+
+  <!-- نماد معدن: لایه‌های زمین -->
+  <rect x="580" y="290" width="400" height="45" rx="8"
+        fill="#C19A3E" fill-opacity="0.06" stroke="#C19A3E" stroke-opacity="0.15"/>
+  <text x="940" y="320" font-family="Vazirmatn, Tahoma" font-size="20" fill="#D4C5A0"
+        text-anchor="start" direction="rtl">لایه‌ی ۱: کاربرد روزمره‌ی واژه</text>
+
+  <rect x="620" y="345" width="360" height="45" rx="8"
+        fill="#C19A3E" fill-opacity="0.08" stroke="#C19A3E" stroke-opacity="0.18"/>
+  <text x="940" y="375" font-family="Vazirmatn, Tahoma" font-size="20" fill="#D4C5A0"
+        text-anchor="start" direction="rtl">لایه‌ی ۲: ریشه‌شناسی و تاریخ واژه</text>
+
+  <rect x="660" y="400" width="320" height="45" rx="8"
+        fill="#C19A3E" fill-opacity="0.10" stroke="#C19A3E" stroke-opacity="0.22"/>
+  <text x="940" y="430" font-family="Vazirmatn, Tahoma" font-size="20" fill="#D4C5A0"
+        text-anchor="start" direction="rtl">لایه‌ی ۳: شبکه‌ی معنایی هم‌خانواده</text>
+
+  <rect x="700" y="455" width="280" height="45" rx="8"
+        fill="#C19A3E" fill-opacity="0.14" stroke="#C19A3E" stroke-opacity="0.28"/>
+  <text x="940" y="485" font-family="Vazirmatn, Tahoma" font-size="20" fill="#FEF3C7"
+        font-weight="bold" text-anchor="start" direction="rtl">لایه‌ی ۴: شهود و عقل سلیم</text>
+
+  <!-- نماد حفاری -->
+  <text x="550" y="420" font-family="Georgia, serif" font-size="60" fill="#C19A3E" fill-opacity="0.15"
+        text-anchor="middle">⛏</text>
+
+  <!-- فهرست واژه‌های استخراج شده -->
+  <rect x="80" y="290" width="450" height="230" rx="18"
+        fill="#0E0C1A" stroke="#C19A3E" stroke-opacity="0.12"/>
+  <text x="490" y="328" font-family="Vazirmatn, Tahoma" font-size="24" fill="#C19A3E"
+        font-weight="bold" text-anchor="start" direction="rtl">واژه‌های هم‌خانواده‌ی «حق»:</text>
+  <text x="490" y="368" font-family="Vazirmatn, Tahoma" font-size="21" fill="#DDD"
+        text-anchor="start" direction="rtl">حقیقت · حقانیت · استحقاق · تحقیق</text>
+  <text x="490" y="405" font-family="Vazirmatn, Tahoma" font-size="21" fill="#DDD"
+        text-anchor="start" direction="rtl">محقّ · حقه · احقاق · حقوق</text>
+  <text x="490" y="442" font-family="Vazirmatn, Tahoma" font-size="21" fill="#DDD"
+        text-anchor="start" direction="rtl">Right · Recht · Droit · Derecho</text>
+  <text x="490" y="478" font-family="Vazirmatn, Tahoma" font-size="19" fill="#888"
+        text-anchor="start" direction="rtl">هر یک زاویه‌ای از مفهوم بنیادین را آشکار می‌کند</text>
+
+  <!-- دیدگاه نویسنده -->
+  <rect x="80" y="550" width="920" height="220" rx="22"
+        fill="#C19A3E" fill-opacity="0.04" stroke="#C19A3E" stroke-opacity="0.18"/>
+  <text x="960" y="595" font-family="Vazirmatn, Tahoma" font-size="28" fill="#FEF3C7"
+        font-weight="bold" text-anchor="start" direction="rtl">⟡ روش نویسنده</text>
+  <text x="960" y="638" font-family="Vazirmatn, Tahoma" font-size="23" fill="#EEE"
+        text-anchor="start" direction="rtl">«تلاش می‌کنم از معدن زبان و درک زبانی خودم</text>
+  <text x="960" y="675" font-family="Vazirmatn, Tahoma" font-size="23" fill="#EEE"
+        text-anchor="start" direction="rtl">تعابیر و نگرش‌های مختصر را استخراج / اکتشاف کنم»</text>
+  <text x="960" y="715" font-family="Vazirmatn, Tahoma" font-size="22" fill="#D4C5A0"
+        text-anchor="start" direction="rtl">بدون تعهد هستی‌شناختی خاص از ابتدا</text>
+  <text x="960" y="750" font-family="Vazirmatn, Tahoma" font-size="20" fill="#888"
+        text-anchor="start" direction="rtl">قطب‌نمای اصلی: درک شهودی و عقل سلیم</text>
+
+  <!-- مقایسه -->
+  <rect x="80" y="800" width="920" height="90" rx="16"
+        fill="#A855F7" fill-opacity="0.03" stroke="#A855F7" stroke-opacity="0.12"/>
+  <text x="960" y="838" font-family="Vazirmatn, Tahoma" font-size="22" fill="#C4B5FD"
+        text-anchor="start" direction="rtl">شبیه: فلسفه‌ی زبان عادی آستین و رایل + تحلیل مفهومی تحلیلی</text>
+  <text x="960" y="872" font-family="Vazirmatn, Tahoma" font-size="20" fill="#888"
+        text-anchor="start" direction="rtl">ولی با نگاه انکشافی‌تر: زبان نه فقط ابزار بلکه مخزن فهم تاریخی بشر</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="930" width="1000" height="2" rx="1" fill="#C19A3E" opacity="0.2"/>
+  <text x="540" y="975" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">نکته: «این نگرش نظریه‌پردازی نیست، حاصل تلاش فکری است ولی لزوماً تأیید هنجاری ندارد»</text>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۲ · زبان و مفهوم حق</text>
+</svg>

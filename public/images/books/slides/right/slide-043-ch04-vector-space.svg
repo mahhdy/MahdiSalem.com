@@ -1,0 +1,96 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-vec" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0C0E1A"/>
+      <stop offset="100%" stop-color="#12142A"/>
+    </linearGradient>
+    <radialGradient id="vecGlow" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#C084FC" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-vec)"/>
+  <rect width="1080" height="1080" fill="url(#vecGlow)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="480" height="48" rx="24"
+        fill="#C084FC" fill-opacity="0.08" stroke="#C084FC" stroke-opacity="0.25"/>
+  <text x="480" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#C084FC"
+        text-anchor="start" direction="rtl">فصل ۴ · فضای برداری منشأها · ابتکار نویسنده</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="160" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#F0E6FF" text-anchor="start" direction="rtl">هیچ منشأ واحدی کافی نیست</text>
+  <text x="1000" y="215" font-family="Vazirmatn, Tahoma" font-size="25" fill="#D8B4FE"
+        text-anchor="start" direction="rtl">هر نظام حقوقی = ترکیبی وزن‌دار از منشأها</text>
+
+  <!-- نمودار راداری / عنکبوتی ساده -->
+  <!-- مرکز -->
+  <circle cx="540" cy="520" r="4" fill="#C084FC" fill-opacity="0.5"/>
+
+  <!-- خطوط شعاعی (۸ محور) -->
+  <line x1="540" y1="520" x2="540" y2="310" stroke="#C084FC" stroke-opacity="0.1" stroke-width="1"/>
+  <line x1="540" y1="520" x2="700" y2="360" stroke="#C084FC" stroke-opacity="0.1" stroke-width="1"/>
+  <line x1="540" y1="520" x2="750" y2="520" stroke="#C084FC" stroke-opacity="0.1" stroke-width="1"/>
+  <line x1="540" y1="520" x2="700" y2="680" stroke="#C084FC" stroke-opacity="0.1" stroke-width="1"/>
+  <line x1="540" y1="520" x2="540" y2="730" stroke="#C084FC" stroke-opacity="0.1" stroke-width="1"/>
+  <line x1="540" y1="520" x2="380" y2="680" stroke="#C084FC" stroke-opacity="0.1" stroke-width="1"/>
+  <line x1="540" y1="520" x2="330" y2="520" stroke="#C084FC" stroke-opacity="0.1" stroke-width="1"/>
+  <line x1="540" y1="520" x2="380" y2="360" stroke="#C084FC" stroke-opacity="0.1" stroke-width="1"/>
+
+  <!-- برچسب‌های منشأ -->
+  <text x="540" y="295" font-family="Vazirmatn, Tahoma" font-size="18" fill="#F87171"
+        font-weight="bold" text-anchor="middle" direction="rtl">قدرت</text>
+  <text x="720" y="348" font-family="Vazirmatn, Tahoma" font-size="18" fill="#4ADE80"
+        font-weight="bold" text-anchor="start" direction="rtl">طبیعت</text>
+  <text x="770" y="525" font-family="Vazirmatn, Tahoma" font-size="18" fill="#D8B4FE"
+        font-weight="bold" text-anchor="start" direction="rtl">وحی</text>
+  <text x="720" y="698" font-family="Vazirmatn, Tahoma" font-size="18" fill="#67E8F9"
+        font-weight="bold" text-anchor="start" direction="rtl">سازگاری</text>
+  <text x="540" y="755" font-family="Vazirmatn, Tahoma" font-size="18" fill="#FCD34D"
+        font-weight="bold" text-anchor="middle" direction="rtl">توافق</text>
+  <text x="355" y="698" font-family="Vazirmatn, Tahoma" font-size="18" fill="#F9A8D4"
+        font-weight="bold" text-anchor="end" direction="rtl">عملکرد</text>
+  <text x="310" y="525" font-family="Vazirmatn, Tahoma" font-size="18" fill="#5EEAD4"
+        font-weight="bold" text-anchor="end" direction="rtl">مصلحت</text>
+  <text x="355" y="348" font-family="Vazirmatn, Tahoma" font-size="18" fill="#FCA5A5"
+        font-weight="bold" text-anchor="end" direction="rtl">درد و رنج</text>
+
+  <!-- شکل نمونه ۱: لیبرال‌دموکراسی -->
+  <polygon points="540,370 650,400 680,520 650,640 540,670 430,640 400,520 430,400"
+           fill="#22C55E" fill-opacity="0.06" stroke="#22C55E" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <!-- شکل نمونه ۲: استبدادی -->
+  <polygon points="540,320 620,430 640,520 620,580 540,620 480,580 420,520 480,430"
+           fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="5,4"/>
+
+  <!-- راهنما -->
+  <rect x="80" y="250" width="220" height="80" rx="12"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.2"/>
+  <line x1="100" y1="280" x2="140" y2="280" stroke="#22C55E" stroke-opacity="0.5" stroke-width="2"/>
+  <text x="150" y="286" font-family="Vazirmatn, Tahoma" font-size="17" fill="#86EFAC"
+        text-anchor="start" direction="rtl">لیبرال‌دموکراسی</text>
+
+  <rect x="80" y="295" width="220" height="35" rx="0"/>
+  <line x1="100" y1="313" x2="140" y2="313" stroke="#DC2626" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="150" y="319" font-family="Vazirmatn, Tahoma" font-size="17" fill="#FCA5A5"
+        text-anchor="start" direction="rtl">استبدادی</text>
+
+  <!-- دیدگاه نویسنده -->
+  <rect x="80" y="780" width="920" height="140" rx="20"
+        fill="#C084FC" fill-opacity="0.04" stroke="#C084FC" stroke-opacity="0.18"/>
+  <text x="960" y="822" font-family="Vazirmatn, Tahoma" font-size="26" fill="#F0E6FF"
+        font-weight="bold" text-anchor="start" direction="rtl">⟡ ایده‌ی نویسنده: فضای برداری وزن‌دهی‌شده</text>
+  <text x="960" y="865" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">هر نظام حقوقی = بردار ترکیبی با وزن‌های متفاوت از منشأها</text>
+  <text x="960" y="902" font-family="Vazirmatn, Tahoma" font-size="21" fill="#C4B5FD"
+        text-anchor="start" direction="rtl">مقایسه‌ی نظام‌ها = مقایسه‌ی بردارهای وزنی در فضای منشأها</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="960" width="1000" height="2" rx="1" fill="#C084FC" opacity="0.2"/>
+  <text x="540" y="1000" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">جامع‌ترین تصنیف منشأها + منشأ یازدهم (درد و رنج) = ابتکار نویسنده</text>
+  <text x="540" y="1050" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۴ · منشأهای حق · فضای برداری</text>
+</svg>

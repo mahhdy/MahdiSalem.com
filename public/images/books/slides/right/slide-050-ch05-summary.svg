@@ -1,0 +1,98 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg50" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B0E1A"/>
+      <stop offset="50%" stop-color="#0F1528"/>
+      <stop offset="100%" stop-color="#0B0E1A"/>
+    </linearGradient>
+    <radialGradient id="glow50a" cx="30%" cy="40%" r="40%">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow50b" cx="70%" cy="60%" r="40%">
+      <stop offset="0%" stop-color="#E8B83D" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#E8B83D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mixLine50" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#E8B83D" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg50)"/>
+  <rect width="1080" height="1080" fill="url(#glow50a)"/>
+  <rect width="1080" height="1080" fill="url(#glow50b)"/>
+
+  <!-- کادر تزئینی دوگانه -->
+  <rect x="50" y="50" width="980" height="980" rx="32" fill="none"
+        stroke="#E8B83D" stroke-opacity="0.08" stroke-width="1.5"/>
+  <rect x="70" y="70" width="940" height="940" rx="24" fill="none"
+        stroke="#22C55E" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="400" height="48" rx="24"
+        fill="#22C55E" fill-opacity="0.08" stroke="#22C55E" stroke-opacity="0.25"/>
+  <text x="240" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#22C55E"
+        text-anchor="middle" direction="rtl">فصل ۵ · اسلاید ۱۰ از ۱۰ · پایان بخش اول</text>
+
+  <!-- عنوان -->
+  <text x="540" y="175" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="900"
+        fill="#FFFFFF" text-anchor="middle" direction="rtl">جغرافیا روشن شد</text>
+
+  <rect x="200" y="215" width="680" height="2.5" rx="1" fill="url(#mixLine50)"/>
+
+  <!-- ۴ درس -->
+  <rect x="120" y="270" width="840" height="80" rx="14"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.12"/>
+  <circle cx="920" cy="310" r="22" fill="#22C55E" fill-opacity="0.15"/>
+  <text x="920" y="318" font-family="Vazirmatn, Tahoma" font-size="18" fill="#4ADE80"
+        text-anchor="middle" font-weight="bold">۱</text>
+  <text x="880" y="318" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FFFFFF"
+        text-anchor="start" direction="rtl" font-weight="bold">حق و تکلیف دو روی یک سکه‌اند — تقدّم = توزیع قدرت</text>
+
+  <rect x="120" y="365" width="840" height="80" rx="14"
+        fill="#E8B83D" fill-opacity="0.04" stroke="#E8B83D" stroke-opacity="0.12"/>
+  <circle cx="920" cy="405" r="22" fill="#E8B83D" fill-opacity="0.15"/>
+  <text x="920" y="413" font-family="Vazirmatn, Tahoma" font-size="18" fill="#FBBF24"
+        text-anchor="middle" font-weight="bold">۲</text>
+  <text x="880" y="413" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FFFFFF"
+        text-anchor="start" direction="rtl" font-weight="bold">حق = عملیاتی‌سازی عدالت + تضمین آزادی</text>
+
+  <rect x="120" y="460" width="840" height="80" rx="14"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.12"/>
+  <circle cx="920" cy="500" r="22" fill="#06B6D4" fill-opacity="0.15"/>
+  <text x="920" y="508" font-family="Vazirmatn, Tahoma" font-size="18" fill="#22D3EE"
+        text-anchor="middle" font-weight="bold">۳</text>
+  <text x="880" y="508" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FFFFFF"
+        text-anchor="start" direction="rtl" font-weight="bold">اخلاق قطب‌نما · حق نقشه · قانون جاده — هر سه لازم</text>
+
+  <rect x="120" y="555" width="840" height="80" rx="14"
+        fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.12"/>
+  <circle cx="920" cy="595" r="22" fill="#DC2626" fill-opacity="0.15"/>
+  <text x="920" y="603" font-family="Vazirmatn, Tahoma" font-size="18" fill="#F87171"
+        text-anchor="middle" font-weight="bold">۴</text>
+  <text x="880" y="603" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FFFFFF"
+        text-anchor="start" direction="rtl" font-weight="bold">خلط حق با سنت/دین/عرف = تقدّس‌بخشی به نظم موجود</text>
+
+  <!-- نقل‌قول -->
+  <rect x="120" y="680" width="840" height="80" rx="16"
+        fill="#E8B83D" fill-opacity="0.04" stroke="#E8B83D" stroke-opacity="0.15"/>
+  <text x="540" y="730" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FBBF24"
+        text-anchor="middle" direction="rtl" font-style="italic">«اکنون نقشه را داریم — وقت ساختن ماشین رسیده»</text>
+
+  <!-- بلوک بزرگ پایانی: آغاز بخش دوم -->
+  <rect x="100" y="790" width="880" height="130" rx="22"
+        fill="#06B6D4" fill-opacity="0.05" stroke="#06B6D4" stroke-opacity="0.3" stroke-width="2"/>
+  <text x="540" y="840" font-family="Vazirmatn, Tahoma" font-size="32" fill="#22D3EE"
+        text-anchor="middle" direction="rtl" font-weight="bold">✦ بخش دوم: تأسیس ✦</text>
+  <text x="540" y="880" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="middle" direction="rtl">فصل ۶: فرض‌های بنیادین · فصل ۷: پل باید و هست</text>
+  <text x="540" y="910" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="middle" direction="rtl">فصل ۸: ماشین زنده · فصل ۹: بازی · فصل ۱۰: مشروعیت مرجع</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#22C55E" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · بخش اول — پایان کامل</text>
+</svg>

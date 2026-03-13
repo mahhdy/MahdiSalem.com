@@ -1,0 +1,96 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A0A20"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <radialGradient id="glow4" cx="50%" cy="55%" r="35%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="triGrad" x1="0" y1="0" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#DC2626"/>
+      <stop offset="50%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg4)"/>
+  <rect width="1080" height="1080" fill="url(#glow4)"/>
+
+  <!-- سربرگ -->
+  <rect x="680" y="28" width="360" height="44" rx="22"
+        fill="#A855F7" fill-opacity="0.08" stroke="#A855F7" stroke-opacity="0.25"/>
+  <text x="860" y="58" font-family="Vazirmatn, Tahoma" font-size="22" fill="#A855F7"
+        text-anchor="middle" direction="rtl">فصل ۱۱ · اسلاید ۱ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="150" font-family="Vazirmatn, Tahoma" font-size="58" font-weight="900"
+        fill="#A855F7" text-anchor="middle" direction="rtl">اخلاق منظوم</text>
+  <text x="540" y="200" font-family="Vazirmatn, Tahoma" font-size="24" fill="#778"
+        text-anchor="middle" direction="rtl">Constellation Ethics — سه قطب، یک قطب‌نما</text>
+
+  <!-- مثلث بزرگ -->
+  <polygon points="540,290 870,780 210,780"
+           fill="#A855F7" fill-opacity="0.03"
+           stroke="#A855F7" stroke-opacity="0.12" stroke-width="1.5"/>
+
+  <!-- اضلاع با برچسب -->
+  <text x="700" y="520" font-family="Vazirmatn, Tahoma" font-size="16" fill="#556"
+        text-anchor="middle" transform="rotate(-57, 700, 520)">constraint on outcomes</text>
+  <text x="380" y="520" font-family="Vazirmatn, Tahoma" font-size="16" fill="#556"
+        text-anchor="middle" transform="rotate(57, 380, 520)">character sustains rules</text>
+  <text x="540" y="810" font-family="Vazirmatn, Tahoma" font-size="16" fill="#556"
+        text-anchor="middle">feedback shapes character</text>
+
+  <!-- گره وظیفه (بالا) -->
+  <circle cx="540" cy="290" r="60" fill="#DC2626" fill-opacity="0.1"
+          stroke="#DC2626" stroke-opacity="0.6" stroke-width="2.5"/>
+  <text x="540" y="285" font-family="Vazirmatn, Tahoma" font-size="26" fill="#F87171"
+        font-weight="bold" text-anchor="middle" direction="rtl">وظیفه</text>
+  <text x="540" y="312" font-family="Vazirmatn, Tahoma" font-size="15" fill="#999"
+        text-anchor="middle" direction="rtl">مرز تخلّف‌ناپذیر</text>
+
+  <!-- گره نتیجه (چپ‐پایین) -->
+  <circle cx="210" cy="780" r="60" fill="#22C55E" fill-opacity="0.1"
+          stroke="#22C55E" stroke-opacity="0.6" stroke-width="2.5"/>
+  <text x="210" y="775" font-family="Vazirmatn, Tahoma" font-size="26" fill="#4ADE80"
+        font-weight="bold" text-anchor="middle" direction="rtl">نتیجه</text>
+  <text x="210" y="802" font-family="Vazirmatn, Tahoma" font-size="15" fill="#999"
+        text-anchor="middle" direction="rtl">بازخورد عملکردی</text>
+
+  <!-- گره فضیلت (راست‐پایین) -->
+  <circle cx="870" cy="780" r="60" fill="#C19A3E" fill-opacity="0.1"
+          stroke="#C19A3E" stroke-opacity="0.6" stroke-width="2.5"/>
+  <text x="870" y="775" font-family="Vazirmatn, Tahoma" font-size="26" fill="#C19A3E"
+        font-weight="bold" text-anchor="middle" direction="rtl">فضیلت</text>
+  <text x="870" y="802" font-family="Vazirmatn, Tahoma" font-size="15" fill="#999"
+        text-anchor="middle" direction="rtl">بازتولید فرهنگی</text>
+
+  <!-- مرکز: حق -->
+  <circle cx="540" cy="610" r="50" fill="#A855F7" fill-opacity="0.15"
+          stroke="#A855F7" stroke-opacity="0.5" stroke-width="2"/>
+  <text x="540" y="620" font-family="Vazirmatn, Tahoma" font-size="32" fill="#FFFFFF"
+        font-weight="bold" text-anchor="middle">حق</text>
+
+  <!-- فلش‌های به مرکز (خط‌چین) -->
+  <line x1="540" y1="350" x2="540" y2="560" stroke="#DC2626" stroke-opacity="0.3"
+        stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="260" y1="750" x2="495" y2="635" stroke="#22C55E" stroke-opacity="0.3"
+        stroke-width="1.5" stroke-dasharray="6,4"/>
+  <line x1="820" y1="750" x2="585" y2="635" stroke="#C19A3E" stroke-opacity="0.3"
+        stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- نوآوری -->
+  <rect x="90" y="870" width="900" height="100" rx="18"
+        fill="#A855F7" fill-opacity="0.05" stroke="#A855F7" stroke-opacity="0.2"/>
+  <text x="540" y="910" font-family="Vazirmatn, Tahoma" font-size="24" fill="#C084FC"
+        font-weight="bold" text-anchor="middle" direction="rtl">✦ نوآوری: نه کوه واحد پارفیت، بلکه منظومهٔ سه‌قطبی</text>
+  <text x="540" y="948" font-family="Vazirmatn, Tahoma" font-size="22" fill="#99A"
+        text-anchor="middle" direction="rtl">هر قطب حقّ وتو دارد · وزن‌ها با تجربه تنقیح می‌شوند</text>
+
+  <!-- پانویس -->
+  <rect x="40" y="1020" width="1000" height="2" rx="1" fill="url(#triGrad)" opacity="0.3"/>
+  <text x="540" y="1060" font-family="Vazirmatn, Tahoma" font-size="20" fill="#445"
+        text-anchor="middle" direction="rtl">بعدی: پنج اصل حاکم بر منظومه ←</text>
+</svg>

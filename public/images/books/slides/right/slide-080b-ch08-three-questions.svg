@@ -1,0 +1,80 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-table" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0C0E1A"/>
+      <stop offset="100%" stop-color="#10142A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-table)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="500" height="48" rx="24"
+        fill="#06B6D4" fill-opacity="0.08" stroke="#06B6D4" stroke-opacity="0.25"/>
+  <text x="500" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#22D3EE"
+        text-anchor="start" direction="rtl">فصل ۸ · تفکیک سه‌گانه · خروجی / فرایند / ارزیابی</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="160" font-family="Vazirmatn, Tahoma" font-size="46" font-weight="900"
+        fill="#E0F2FE" text-anchor="start" direction="rtl">سه پرسش بنیادین دربارهٔ حق</text>
+  <text x="1000" y="210" font-family="Vazirmatn, Tahoma" font-size="24" fill="#7DD3FC"
+        text-anchor="start" direction="rtl">تفکیکی که وضوح تعریف را تضمین می‌کند</text>
+
+  <!-- ردیف ۱: خروجی -->
+  <rect x="80" y="265" width="920" height="190" rx="22"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.25" stroke-width="2"/>
+  <circle cx="960" cy="305" r="24" fill="#06B6D4" fill-opacity="0.12" stroke="#06B6D4" stroke-opacity="0.5"/>
+  <text x="960" y="312" font-family="Vazirmatn, Tahoma" font-size="20" fill="#67E8F9"
+        font-weight="bold" text-anchor="middle">۱</text>
+  <text x="910" y="310" font-family="Vazirmatn, Tahoma" font-size="30" fill="#67E8F9"
+        font-weight="bold" text-anchor="start" direction="rtl">خروجی: حق چیست؟</text>
+  <text x="960" y="358" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EEE"
+        text-anchor="start" direction="rtl">دامنه‌ی مجاز و مصون کنش، انتخاب و بهره‌مندی</text>
+  <text x="960" y="395" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">که به فاعل(ان) در یک نظام تعاملی نسبت داده می‌شود</text>
+  <text x="960" y="435" font-family="Vazirmatn, Tahoma" font-size="19" fill="#67E8F9"
+        text-anchor="start" direction="rtl">← مختصر و قابل‌آزمون · شبیه تعریف هوفلد ولی غنی‌تر</text>
+
+  <!-- فلش -->
+  <polygon points="540,465 530,475 550,475" fill="#C084FC" fill-opacity="0.3"/>
+
+  <!-- ردیف ۲: فرایند -->
+  <rect x="80" y="490" width="920" height="190" rx="22"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.25" stroke-width="2"/>
+  <circle cx="960" cy="530" r="24" fill="#F59E0B" fill-opacity="0.12" stroke="#F59E0B" stroke-opacity="0.5"/>
+  <text x="960" y="537" font-family="Vazirmatn, Tahoma" font-size="20" fill="#FCD34D"
+        font-weight="bold" text-anchor="middle">۲</text>
+  <text x="910" y="535" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FCD34D"
+        font-weight="bold" text-anchor="start" direction="rtl">فرایند: حق چگونه تولید می‌شود؟</text>
+  <text x="960" y="583" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EEE"
+        text-anchor="start" direction="rtl">نهادسازی · بازشناسی متقابل · رقابت و همکاری</text>
+  <text x="960" y="620" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">نظارت مرجع مشروع · بازتعریف مداوم</text>
+  <text x="960" y="660" font-family="Vazirmatn, Tahoma" font-size="19" fill="#FCD34D"
+        text-anchor="start" direction="rtl">← ماشین زنده با حلقه‌ی بازخورد · اینجا ابتکار اصلی نویسنده</text>
+
+  <!-- فلش -->
+  <polygon points="540,690 530,700 550,700" fill="#C084FC" fill-opacity="0.3"/>
+
+  <!-- ردیف ۳: ارزیابی -->
+  <rect x="80" y="715" width="920" height="190" rx="22"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.25" stroke-width="2"/>
+  <circle cx="960" cy="755" r="24" fill="#22C55E" fill-opacity="0.12" stroke="#22C55E" stroke-opacity="0.5"/>
+  <text x="960" y="762" font-family="Vazirmatn, Tahoma" font-size="20" fill="#4ADE80"
+        font-weight="bold" text-anchor="middle">۳</text>
+  <text x="910" y="760" font-family="Vazirmatn, Tahoma" font-size="30" fill="#4ADE80"
+        font-weight="bold" text-anchor="start" direction="rtl">ارزیابی: حقّ خوب چگونه است؟</text>
+  <text x="960" y="808" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EEE"
+        text-anchor="start" direction="rtl">شفاف · منصفانه · کارآمد · پویا · پایا</text>
+  <text x="960" y="845" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">مبتنی بر کرامت · اخلاق منظوم · قطب‌نمای اخلاقی</text>
+  <text x="960" y="885" font-family="Vazirmatn, Tahoma" font-size="19" fill="#4ADE80"
+        text-anchor="start" direction="rtl">← سطح اخص (آرمانی) · ایدئال تنظیمی</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="950" width="1000" height="2" rx="1" fill="#06B6D4" opacity="0.2"/>
+  <text x="540" y="995" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">این تفکیک سه‌گانه مانع خلط «تعریف حق» با «توصیف نظام حقوقی ایدئال» می‌شود</text>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۸ · ماشین حق · ساختار تعریف</text>
+</svg>

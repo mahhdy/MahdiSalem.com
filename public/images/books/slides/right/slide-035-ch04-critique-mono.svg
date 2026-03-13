@@ -1,0 +1,87 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg35" x1="0" y1="1080" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A0808"/>
+      <stop offset="100%" stop-color="#0D0D18"/>
+    </linearGradient>
+    <radialGradient id="glow35" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg35)"/>
+  <rect width="1080" height="1080" fill="url(#glow35)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="340" height="48" rx="24"
+        fill="#DC2626" fill-opacity="0.08" stroke="#DC2626" stroke-opacity="0.25"/>
+  <text x="210" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#DC2626"
+        text-anchor="middle" direction="rtl">فصل ۴ · اسلاید ۵ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="150" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#F87171" text-anchor="middle" direction="rtl">چرا تک‌منشأیی شکست می‌خورد؟</text>
+  <text x="540" y="200" font-family="Vazirmatn, Tahoma" font-size="24" fill="#888"
+        text-anchor="middle" direction="rtl">نقد نقادانهٔ هر منشأ وقتی تنها و مطلق شود</text>
+
+  <!-- ۵ نقد در کارت‌های کوچک‌تر -->
+  <!-- نقد ۱: فقط قدرت -->
+  <rect x="560" y="260" width="440" height="120" rx="16"
+        fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.15"/>
+  <text x="960" y="305" font-family="Vazirmatn, Tahoma" font-size="24" fill="#F87171"
+        text-anchor="start" direction="rtl" font-weight="bold">اگر فقط قدرت:</text>
+  <text x="960" y="345" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="start" direction="rtl">حق = هر چه قوی‌تر بگوید ← تبدیل به ظلم</text>
+
+  <!-- نقد ۲: فقط طبیعت -->
+  <rect x="80" y="260" width="440" height="120" rx="16"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.15"/>
+  <text x="480" y="305" font-family="Vazirmatn, Tahoma" font-size="24" fill="#4ADE80"
+        text-anchor="start" direction="rtl" font-weight="bold">اگر فقط طبیعت:</text>
+  <text x="480" y="345" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="start" direction="rtl">«طبیعت» کجا ثبت شده؟ ← خطر جزم‌اندیشی</text>
+
+  <!-- نقد ۳: فقط وحی -->
+  <rect x="560" y="400" width="440" height="120" rx="16"
+        fill="#A855F7" fill-opacity="0.04" stroke="#A855F7" stroke-opacity="0.15"/>
+  <text x="960" y="445" font-family="Vazirmatn, Tahoma" font-size="24" fill="#C084FC"
+        text-anchor="start" direction="rtl" font-weight="bold">اگر فقط وحی:</text>
+  <text x="960" y="485" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="start" direction="rtl">مفسّر وحی چه کسی؟ ← تمرکز قدرت تفسیری</text>
+
+  <!-- نقد ۴: فقط توافق -->
+  <rect x="80" y="400" width="440" height="120" rx="16"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.15"/>
+  <text x="480" y="445" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FBBF24"
+        text-anchor="start" direction="rtl" font-weight="bold">اگر فقط توافق:</text>
+  <text x="480" y="485" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="start" direction="rtl">اکثریت بردگی تصویب کند ← مشروع؟</text>
+
+  <!-- نقد ۵: فقط عملکرد -->
+  <rect x="320" y="540" width="440" height="120" rx="16"
+        fill="#14B8A6" fill-opacity="0.04" stroke="#14B8A6" stroke-opacity="0.15"/>
+  <text x="720" y="585" font-family="Vazirmatn, Tahoma" font-size="24" fill="#2DD4BF"
+        text-anchor="start" direction="rtl" font-weight="bold">اگر فقط عملکرد:</text>
+  <text x="720" y="625" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="start" direction="rtl">هر ظلمی که نتیجه‌بخش باشد ← موجّه</text>
+
+  <!-- نتیجه‌گیری بزرگ -->
+  <rect x="80" y="700" width="920" height="120" rx="20"
+        fill="#06B6D4" fill-opacity="0.05" stroke="#06B6D4" stroke-opacity="0.25" stroke-width="2"/>
+  <text x="540" y="750" font-family="Vazirmatn, Tahoma" font-size="32" fill="#22D3EE"
+        text-anchor="middle" direction="rtl" font-weight="bold">نتیجه: حق چندمنشأیی است</text>
+  <text x="540" y="795" font-family="Vazirmatn, Tahoma" font-size="24" fill="#CCC"
+        text-anchor="middle" direction="rtl">هر نظام حقوقی سالم، ترکیبی هوشمند و متوازن از منشأهاست</text>
+
+  <!-- مخاطره -->
+  <rect x="120" y="860" width="840" height="70" rx="16"
+        fill="#DC2626" fill-opacity="0.03" stroke="#DC2626" stroke-opacity="0.12"/>
+  <text x="540" y="900" font-family="Vazirmatn, Tahoma" font-size="22" fill="#F87171"
+        text-anchor="middle" direction="rtl">⚠ مخاطره: چندمنشأیی بدون سلسله‌مراتب = التقاط و سردرگمی — پاسخ نویسنده در فصل‌های بعد</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#DC2626" opacity="0.2"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۴</text>
+</svg>

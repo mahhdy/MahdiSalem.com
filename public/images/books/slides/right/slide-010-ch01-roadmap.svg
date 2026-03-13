@@ -1,0 +1,95 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg10" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B0E1A"/>
+      <stop offset="40%" stop-color="#0F1528"/>
+      <stop offset="100%" stop-color="#0B0E1A"/>
+    </linearGradient>
+    <radialGradient id="glow10a" cx="30%" cy="40%" r="40%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow10b" cx="70%" cy="60%" r="40%">
+      <stop offset="0%" stop-color="#E8B83D" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#E8B83D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldLine10" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E8B83D" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#E8B83D" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#E8B83D" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg10)"/>
+  <rect width="1080" height="1080" fill="url(#glow10a)"/>
+  <rect width="1080" height="1080" fill="url(#glow10b)"/>
+
+  <!-- کادر تزئینی -->
+  <rect x="60" y="60" width="960" height="960" rx="30" fill="none"
+        stroke="#E8B83D" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="320" height="48" rx="24"
+        fill="#06B6D4" fill-opacity="0.08" stroke="#06B6D4" stroke-opacity="0.25"/>
+  <text x="200" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#06B6D4"
+        text-anchor="middle" direction="rtl">فصل ۱ · اسلاید ۱۰ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="190" font-family="Vazirmatn, Tahoma" font-size="58" font-weight="900"
+        fill="#FFFFFF" text-anchor="middle" direction="rtl">نقشهٔ راه کتاب</text>
+
+  <rect x="200" y="220" width="680" height="2.5" rx="1" fill="url(#goldLine10)"/>
+
+  <!-- چهار بخش -->
+  <rect x="560" y="280" width="430" height="130" rx="18"
+        fill="#E8B83D" fill-opacity="0.06" stroke="#E8B83D" stroke-opacity="0.2"/>
+  <text x="950" y="330" font-family="Vazirmatn, Tahoma" font-size="32" fill="#E8B83D"
+        text-anchor="start" direction="rtl" font-weight="bold">بخش ۱: زمینه و بازشناسی</text>
+  <text x="950" y="375" font-family="Vazirmatn, Tahoma" font-size="22" fill="#BBB"
+        text-anchor="start" direction="rtl">فصل‌های ۱ تا ۵ · زبان، تاریخ، مکاتب، جغرافیای مفهومی</text>
+
+  <rect x="560" y="430" width="430" height="130" rx="18"
+        fill="#06B6D4" fill-opacity="0.06" stroke="#06B6D4" stroke-opacity="0.2"/>
+  <text x="950" y="480" font-family="Vazirmatn, Tahoma" font-size="32" fill="#06B6D4"
+        text-anchor="start" direction="rtl" font-weight="bold">بخش ۲: تأسیس</text>
+  <text x="950" y="525" font-family="Vazirmatn, Tahoma" font-size="22" fill="#BBB"
+        text-anchor="start" direction="rtl">فصل‌های ۶ تا ۱۲ · فرض‌ها، ماشین زنده، بازی، اخلاق</text>
+
+  <rect x="560" y="580" width="430" height="130" rx="18"
+        fill="#DC2626" fill-opacity="0.06" stroke="#DC2626" stroke-opacity="0.2"/>
+  <text x="950" y="630" font-family="Vazirmatn, Tahoma" font-size="32" fill="#F87171"
+        text-anchor="start" direction="rtl" font-weight="bold">بخش ۳: آزمون</text>
+  <text x="950" y="675" font-family="Vazirmatn, Tahoma" font-size="22" fill="#BBB"
+        text-anchor="start" direction="rtl">فصل‌های ۱۳ تا ۱۵ · دوگانه‌ها، توسعه، تله‌ها</text>
+
+  <rect x="560" y="730" width="430" height="130" rx="18"
+        fill="#22C55E" fill-opacity="0.06" stroke="#22C55E" stroke-opacity="0.2"/>
+  <text x="950" y="780" font-family="Vazirmatn, Tahoma" font-size="32" fill="#4ADE80"
+        text-anchor="start" direction="rtl" font-weight="bold">بخش ۴: برآیند</text>
+  <text x="950" y="825" font-family="Vazirmatn, Tahoma" font-size="22" fill="#BBB"
+        text-anchor="start" direction="rtl">فصل ۱۶ · نتیجه‌گیری + پیوست‌های تحلیلی</text>
+
+  <!-- خط عمودی اتصال -->
+  <line x1="540" y1="300" x2="540" y2="840" stroke="#E8B83D" stroke-opacity="0.1" stroke-width="2" stroke-dasharray="8,6"/>
+
+  <!-- دایره‌های شماره در خط -->
+  <circle cx="540" cy="345" r="18" fill="#E8B83D" fill-opacity="0.15" stroke="#E8B83D" stroke-opacity="0.4"/>
+  <text x="540" y="353" font-family="Vazirmatn, Tahoma" font-size="20" fill="#E8B83D" text-anchor="middle" font-weight="bold">۱</text>
+  <circle cx="540" cy="495" r="18" fill="#06B6D4" fill-opacity="0.15" stroke="#06B6D4" stroke-opacity="0.4"/>
+  <text x="540" y="503" font-family="Vazirmatn, Tahoma" font-size="20" fill="#06B6D4" text-anchor="middle" font-weight="bold">۲</text>
+  <circle cx="540" cy="645" r="18" fill="#DC2626" fill-opacity="0.15" stroke="#DC2626" stroke-opacity="0.4"/>
+  <text x="540" y="653" font-family="Vazirmatn, Tahoma" font-size="20" fill="#F87171" text-anchor="middle" font-weight="bold">۳</text>
+  <circle cx="540" cy="795" r="18" fill="#22C55E" fill-opacity="0.15" stroke="#22C55E" stroke-opacity="0.4"/>
+  <text x="540" y="803" font-family="Vazirmatn, Tahoma" font-size="20" fill="#4ADE80" text-anchor="middle" font-weight="bold">۴</text>
+
+  <!-- دعوت نهایی -->
+  <rect x="120" y="900" width="840" height="70" rx="16"
+        fill="#E8B83D" fill-opacity="0.06" stroke="#E8B83D" stroke-opacity="0.2"/>
+  <text x="540" y="945" font-family="Vazirmatn, Tahoma" font-size="28" fill="#E8B83D"
+        text-anchor="middle" direction="rtl" font-weight="bold">آماده‌اید؟ سفر از معدن زبان آغاز می‌شود ←</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#E8B83D" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۱ — پایان</text>
+</svg>

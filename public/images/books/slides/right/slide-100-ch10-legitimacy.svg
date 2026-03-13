@@ -1,0 +1,70 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg100" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D0D18"/>
+      <stop offset="100%" stop-color="#1A1A30"/>
+    </linearGradient>
+    <linearGradient id="spiral" x1="0" y1="0" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg100)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="360" height="48" rx="24"
+        fill="#EC4899" fill-opacity="0.08" stroke="#EC4899" stroke-opacity="0.25"/>
+  <text x="220" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EC4899"
+        text-anchor="middle" direction="rtl">فصل ۱۰ · اسلاید ۱ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="190" font-family="Vazirmatn, Tahoma" font-size="64" font-weight="900"
+        fill="#EC4899" text-anchor="middle" direction="rtl">مشروعیت مرجع</text>
+  <text x="540" y="245" font-family="Vazirmatn, Tahoma" font-size="28" fill="#778"
+        text-anchor="middle" direction="rtl">مرجع مشروع کیست؟ مشروعیتش از کجاست؟</text>
+
+  <!-- مارپیچ — حلقه‌های تو در تو -->
+  <circle cx="540" cy="530" r="80" fill="none" stroke="#EC4899" stroke-opacity="0.4" stroke-width="2.5"/>
+  <circle cx="540" cy="530" r="140" fill="none" stroke="#EC4899" stroke-opacity="0.25" stroke-width="2"/>
+  <circle cx="540" cy="530" r="200" fill="none" stroke="#EC4899" stroke-opacity="0.15" stroke-width="1.5"/>
+  <circle cx="540" cy="530" r="260" fill="none" stroke="#EC4899" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- مرکز -->
+  <text x="540" y="520" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FFFFFF"
+        font-weight="bold" text-anchor="middle" direction="rtl">مشروعیت</text>
+  <text x="540" y="555" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="middle" direction="rtl">فرایندی</text>
+
+  <!-- برچسب حلقه‌ها -->
+  <text x="540" y="370" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EC4899"
+        text-anchor="middle" direction="rtl">حقوق بهتر</text>
+  <text x="830" y="535" font-family="Vazirmatn, Tahoma" font-size="22" fill="#F59E0B"
+        text-anchor="middle" direction="rtl">مرجع مشروع‌تر</text>
+  <text x="540" y="700" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EC4899"
+        text-anchor="middle" direction="rtl">حقوق اولیه</text>
+  <text x="250" y="535" font-family="Vazirmatn, Tahoma" font-size="22" fill="#F59E0B"
+        text-anchor="middle" direction="rtl">فرض مشروعیت</text>
+
+  <!-- فلش‌های جهت‌دار مارپیچ -->
+  <text x="700" y="420" font-family="Vazirmatn, Tahoma" font-size="30" fill="#556">↗</text>
+  <text x="700" y="650" font-family="Vazirmatn, Tahoma" font-size="30" fill="#556">↘</text>
+  <text x="370" y="650" font-family="Vazirmatn, Tahoma" font-size="30" fill="#556">↙</text>
+  <text x="370" y="420" font-family="Vazirmatn, Tahoma" font-size="30" fill="#556">↖</text>
+
+  <!-- جعبهٔ کلیدی -->
+  <rect x="80" y="810" width="920" height="120" rx="18"
+        fill="#EC4899" fill-opacity="0.04" stroke="#EC4899" stroke-opacity="0.2"/>
+  <text x="540" y="860" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FFFFFF"
+        font-weight="bold" text-anchor="middle" direction="rtl">دور هرمنوتیکی نه دور باطل</text>
+  <text x="540" y="905" font-family="Vazirmatn, Tahoma" font-size="26" fill="#CCC"
+        text-anchor="middle" direction="rtl">مارپیچ صعودی: در هر دور، فهم عمیق‌تر می‌شود</text>
+
+  <!-- نقد -->
+  <text x="540" y="990" font-family="Vazirmatn, Tahoma" font-size="24" fill="#F87171"
+        text-anchor="middle" direction="rtl">⚡ خطر: رشد اقتصادی ≠ مشروعیت — قیود رویه‌ای لازم است</text>
+
+  <rect x="40" y="1035" width="1000" height="2.5" rx="1" fill="url(#spiral)" opacity="0.3"/>
+  <text x="540" y="1065" font-family="Vazirmatn, Tahoma" font-size="22" fill="#556"
+        text-anchor="middle" direction="rtl">بعدی: اخلاق منظوم ←</text>
+</svg>

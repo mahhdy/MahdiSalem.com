@@ -1,0 +1,105 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0A1A"/>
+      <stop offset="100%" stop-color="#1A1A30"/>
+    </linearGradient>
+    <radialGradient id="rg2" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cyanPurple" x1="0" y1="0" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg2)"/>
+  <rect width="1080" height="1080" fill="url(#rg2)"/>
+
+  <!-- خطوط شعاعی قطب‌نما -->
+  <g stroke="#00D4FF" stroke-opacity="0.06" stroke-width="0.5">
+    <line x1="540" y1="540" x2="540" y2="40"/>
+    <line x1="540" y1="540" x2="1040" y2="540"/>
+    <line x1="540" y1="540" x2="540" y2="1040"/>
+    <line x1="540" y1="540" x2="40" y2="540"/>
+    <line x1="540" y1="540" x2="900" y2="180"/>
+    <line x1="540" y1="540" x2="180" y2="180"/>
+  </g>
+  <circle cx="540" cy="540" r="80" fill="none" stroke="#00D4FF" stroke-opacity="0.08"/>
+  <circle cx="540" cy="540" r="200" fill="none" stroke="#00D4FF" stroke-opacity="0.05"/>
+
+  <!-- سربرگ -->
+  <rect x="680" y="28" width="360" height="44" rx="22"
+        fill="#00D4FF" fill-opacity="0.08" stroke="#00D4FF" stroke-opacity="0.25"/>
+  <text x="860" y="58" font-family="Vazirmatn, Tahoma" font-size="22" fill="#00D4FF"
+        text-anchor="middle" direction="rtl">فصل ۱ · اسلاید ۱ از ۱۰</text>
+
+  <!-- بخش -->
+  <text x="540" y="140" font-family="Vazirmatn, Tahoma" font-size="22" fill="#556"
+        text-anchor="middle" direction="rtl">بخش اول: زمینه و بازشناسی</text>
+
+  <!-- عنوان فصل -->
+  <text x="540" y="250" font-family="Vazirmatn, Tahoma" font-size="76" font-weight="900"
+        fill="#00D4FF" text-anchor="middle" direction="rtl">چرا حق؟</text>
+  <rect x="390" y="278" width="300" height="3" rx="1.5" fill="url(#cyanPurple)" opacity="0.5"/>
+
+  <!-- بصیرت محوری -->
+  <rect x="90" y="320" width="900" height="110" rx="20"
+        fill="#00D4FF" fill-opacity="0.04" stroke="#00D4FF" stroke-opacity="0.18" stroke-width="1.5"/>
+  <text x="540" y="370" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FFFFFF"
+        font-weight="bold" text-anchor="middle" direction="rtl">بدون حق، بازی اجتماعی</text>
+  <text x="540" y="410" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FFFFFF"
+        font-weight="bold" text-anchor="middle" direction="rtl">متوقف یا غیرقابل‌تحمّل می‌شود</text>
+
+  <!-- سه دلیل -->
+  <text x="540" y="490" font-family="Vazirmatn, Tahoma" font-size="28" fill="#A855F7"
+        font-weight="bold" text-anchor="middle" direction="rtl">سه دلیل بنیادین:</text>
+
+  <!-- ستون ۱ -->
+  <rect x="720" y="525" width="310" height="110" rx="14"
+        fill="#A855F7" fill-opacity="0.07" stroke="#A855F7" stroke-opacity="0.3"/>
+  <text x="875" y="570" font-family="Vazirmatn, Tahoma" font-size="28" fill="#C084FC"
+        font-weight="bold" text-anchor="middle" direction="rtl">۱. نظم اجتماعی</text>
+  <text x="875" y="612" font-family="Vazirmatn, Tahoma" font-size="20" fill="#99A"
+        text-anchor="middle" direction="rtl">بدون حق، منطق زور حاکم است</text>
+
+  <!-- ستون ۲ -->
+  <rect x="385" y="525" width="310" height="110" rx="14"
+        fill="#00D4FF" fill-opacity="0.07" stroke="#00D4FF" stroke-opacity="0.3"/>
+  <text x="540" y="570" font-family="Vazirmatn, Tahoma" font-size="28" fill="#00D4FF"
+        font-weight="bold" text-anchor="middle" direction="rtl">۲. شکوفایی</text>
+  <text x="540" y="612" font-family="Vazirmatn, Tahoma" font-size="20" fill="#99A"
+        text-anchor="middle" direction="rtl">بدون حق، استعداد نابود می‌شود</text>
+
+  <!-- ستون ۳ -->
+  <rect x="50" y="525" width="310" height="110" rx="14"
+        fill="#EC4899" fill-opacity="0.07" stroke="#EC4899" stroke-opacity="0.3"/>
+  <text x="205" y="570" font-family="Vazirmatn, Tahoma" font-size="28" fill="#EC4899"
+        font-weight="bold" text-anchor="middle" direction="rtl">۳. کرامت</text>
+  <text x="205" y="612" font-family="Vazirmatn, Tahoma" font-size="20" fill="#99A"
+        text-anchor="middle" direction="rtl">بدون حق، انسان ابزار می‌شود</text>
+
+  <!-- نقد -->
+  <rect x="90" y="680" width="900" height="140" rx="18"
+        fill="#DC2626" fill-opacity="0.05" stroke="#DC2626" stroke-opacity="0.25" stroke-width="1.5"/>
+  <text x="970" y="720" font-family="Vazirmatn, Tahoma" font-size="24" fill="#DC2626"
+        font-weight="bold" text-anchor="end" direction="rtl">⚡ نقد:</text>
+  <text x="540" y="762" font-family="Vazirmatn, Tahoma" font-size="24" fill="#CCC"
+        text-anchor="middle" direction="rtl">اگر حق فقط «خروجی فرایند» باشد،</text>
+  <text x="540" y="798" font-family="Vazirmatn, Tahoma" font-size="24" fill="#CCC"
+        text-anchor="middle" direction="rtl">آیا پیش از فرایند هیچ حقی وجود ندارد؟</text>
+
+  <!-- مقایسه -->
+  <rect x="90" y="860" width="900" height="100" rx="15"
+        fill="#1A237E" fill-opacity="0.3" stroke="#5566CC" stroke-opacity="0.2"/>
+  <text x="540" y="905" font-family="Vazirmatn, Tahoma" font-size="22" fill="#7788DD"
+        text-anchor="middle" direction="rtl">↔ مقایسه: آرنت «حقّ داشتنِ حق» را مشروط به عضویت سیاسی می‌دانست</text>
+  <text x="540" y="940" font-family="Vazirmatn, Tahoma" font-size="22" fill="#7788DD"
+        text-anchor="middle" direction="rtl">ما: حقوق حداقلی حتی پیش از عضویت وجود دارند</text>
+
+  <!-- پانویس -->
+  <rect x="40" y="1005" width="1000" height="2" rx="1" fill="url(#cyanPurple)" opacity="0.3"/>
+  <text x="540" y="1050" font-family="Vazirmatn, Tahoma" font-size="20" fill="#445"
+        text-anchor="middle" direction="rtl">بعدی: تعریف چهارسطحی حق ←</text>
+</svg>

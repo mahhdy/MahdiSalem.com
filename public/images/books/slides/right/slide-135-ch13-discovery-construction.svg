@@ -1,0 +1,84 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-disc" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0E0C1E"/>
+      <stop offset="100%" stop-color="#141228"/>
+    </linearGradient>
+    <radialGradient id="discGlow" cx="35%" cy="45%" r="30%">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="constGlow" cx="65%" cy="45%" r="30%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-disc)"/>
+  <rect width="1080" height="1080" fill="url(#discGlow)"/>
+  <rect width="1080" height="1080" fill="url(#constGlow)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="460" height="48" rx="24"
+        fill="#C084FC" fill-opacity="0.08" stroke="#C084FC" stroke-opacity="0.25"/>
+  <text x="460" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#C084FC"
+        text-anchor="start" direction="rtl">فصل ۱۳ · دوگانه‌ی کشف و ساخت</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="170" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="900"
+        fill="#F0E6FF" text-anchor="start" direction="rtl">کشف یا ساخت؟</text>
+  <text x="1000" y="225" font-family="Vazirmatn, Tahoma" font-size="25" fill="#D8B4FE"
+        text-anchor="start" direction="rtl">Discovery vs Construction · آیا حق پیدا می‌شود یا ایجاد؟</text>
+
+  <!-- دو قطب با ونِ دیاگرام ساده -->
+  <!-- دایره‌ی کشف -->
+  <circle cx="380" cy="480" r="150" fill="#22C55E" fill-opacity="0.03" stroke="#22C55E" stroke-opacity="0.2" stroke-width="2"/>
+  <text x="310" y="430" font-family="Vazirmatn, Tahoma" font-size="32" fill="#4ADE80"
+        font-weight="bold" text-anchor="start" direction="rtl">کشف</text>
+  <text x="310" y="470" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">حقیقت مستقل</text>
+  <text x="310" y="500" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">طبیعت‌گرایی</text>
+  <text x="310" y="530" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">واقع‌گرایی اخلاقی</text>
+
+  <!-- دایره‌ی ساخت -->
+  <circle cx="700" cy="480" r="150" fill="#F59E0B" fill-opacity="0.03" stroke="#F59E0B" stroke-opacity="0.2" stroke-width="2"/>
+  <text x="760" y="430" font-family="Vazirmatn, Tahoma" font-size="32" fill="#FCD34D"
+        font-weight="bold" text-anchor="start" direction="rtl">ساخت</text>
+  <text x="760" y="470" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">برساخت اجتماعی</text>
+  <text x="760" y="500" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">قراردادگرایی</text>
+  <text x="760" y="530" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">نام‌گرایی</text>
+
+  <!-- ناحیه‌ی تداخل -->
+  <text x="540" y="470" font-family="Vazirmatn, Tahoma" font-size="22" fill="#E9D5FF"
+        font-weight="bold" text-anchor="middle" direction="rtl">ساختی</text>
+  <text x="540" y="500" font-family="Vazirmatn, Tahoma" font-size="22" fill="#E9D5FF"
+        font-weight="bold" text-anchor="middle" direction="rtl">کشفی</text>
+
+  <!-- دیدگاه نویسنده -->
+  <rect x="80" y="670" width="920" height="210" rx="22"
+        fill="#C084FC" fill-opacity="0.04" stroke="#C084FC" stroke-opacity="0.2"/>
+  <text x="960" y="715" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F0E6FF"
+        font-weight="bold" text-anchor="start" direction="rtl">⟡ دیدگاه نویسنده: ساختی-کشفی</text>
+  <text x="960" y="758" font-family="Vazirmatn, Tahoma" font-size="23" fill="#EEE"
+        text-anchor="start" direction="rtl">حق نه صرفاً واقعی (ذاتی) و نه صرفاً اعتباری (قراردادی)</text>
+  <text x="960" y="798" font-family="Vazirmatn, Tahoma" font-size="23" fill="#EEE"
+        text-anchor="start" direction="rtl">خروجی فرایندی ساختی-کشفی · Constructive-Discovery</text>
+  <text x="960" y="838" font-family="Vazirmatn, Tahoma" font-size="22" fill="#D8B4FE"
+        text-anchor="start" direction="rtl">سطح استعلایی ثابت (کشفی) + سطح زمینی پویا (ساختی)</text>
+  <text x="960" y="870" font-family="Vazirmatn, Tahoma" font-size="20" fill="#888"
+        text-anchor="start" direction="rtl">حتی اگر ریاضیات را برساختی بدانیم، پاسخ معادله‌ دلبخواه نیست!</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="920" width="1000" height="2" rx="1" fill="#C084FC" opacity="0.2"/>
+  <text x="540" y="965" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">ذات‌گرایی نام‌گرایانه یا اجماع‌گرایانه مشکل‌ساز نیست</text>
+  <text x="540" y="1005" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حتی ذات‌گرایی استعلایی هم مشکل چندانی نمی‌آفریند — نویسنده</text>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۱۳ · دوگانه‌ها · ادامه دارد ←</text>
+</svg>

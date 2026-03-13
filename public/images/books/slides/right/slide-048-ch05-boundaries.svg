@@ -1,0 +1,88 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg48" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D0D1A"/>
+      <stop offset="100%" stop-color="#0A1420"/>
+    </linearGradient>
+    <radialGradient id="glow48" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg48)"/>
+  <rect width="1080" height="1080" fill="url(#glow48)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="340" height="48" rx="24"
+        fill="#EC4899" fill-opacity="0.08" stroke="#EC4899" stroke-opacity="0.25"/>
+  <text x="210" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EC4899"
+        text-anchor="middle" direction="rtl">فصل ۵ · اسلاید ۸ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="155" font-family="Vazirmatn, Tahoma" font-size="46" font-weight="900"
+        fill="#F9A8D4" text-anchor="start" direction="rtl">مرزهای مبهم</text>
+  <text x="1000" y="205" font-family="Vazirmatn, Tahoma" font-size="24" fill="#888"
+        text-anchor="start" direction="rtl">حق در مقابل عرف، سنت، فرهنگ و دین</text>
+
+  <!-- حق در مرکز، چهار مفهوم مرزی اطراف -->
+  <!-- مرکز -->
+  <circle cx="540" cy="500" r="75" fill="#E8B83D" fill-opacity="0.06" stroke="#E8B83D" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="540" y="505" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FBBF24"
+        text-anchor="middle" direction="rtl" font-weight="bold">حق</text>
+
+  <!-- عرف (بالا-راست) -->
+  <line x1="600" y1="440" x2="750" y2="330" stroke="#14B8A6" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="6,4"/>
+  <rect x="680" y="270" width="300" height="120" rx="16"
+        fill="#14B8A6" fill-opacity="0.04" stroke="#14B8A6" stroke-opacity="0.2"/>
+  <text x="940" y="315" font-family="Vazirmatn, Tahoma" font-size="26" fill="#2DD4BF"
+        text-anchor="start" direction="rtl" font-weight="bold">عرف (Custom)</text>
+  <text x="940" y="360" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="start" direction="rtl">غیررسمی · نانوشته · جمعی</text>
+
+  <!-- سنت (پایین-راست) -->
+  <line x1="600" y1="560" x2="750" y2="670" stroke="#A855F7" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="6,4"/>
+  <rect x="680" y="610" width="300" height="120" rx="16"
+        fill="#A855F7" fill-opacity="0.04" stroke="#A855F7" stroke-opacity="0.2"/>
+  <text x="940" y="655" font-family="Vazirmatn, Tahoma" font-size="26" fill="#C084FC"
+        text-anchor="start" direction="rtl" font-weight="bold">سنت (Tradition)</text>
+  <text x="940" y="700" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="start" direction="rtl">تاریخی · وراثتی · مقاومت در برابر تغییر</text>
+
+  <!-- فرهنگ (بالا-چپ) -->
+  <line x1="480" y1="440" x2="330" y2="330" stroke="#F59E0B" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="6,4"/>
+  <rect x="100" y="270" width="300" height="120" rx="16"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.2"/>
+  <text x="360" y="315" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FBBF24"
+        text-anchor="start" direction="rtl" font-weight="bold">فرهنگ (Culture)</text>
+  <text x="360" y="360" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="start" direction="rtl">زیسته · ناخودآگاه · هویت‌ساز</text>
+
+  <!-- دین (پایین-چپ) -->
+  <line x1="480" y1="560" x2="330" y2="670" stroke="#EC4899" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="6,4"/>
+  <rect x="100" y="610" width="300" height="120" rx="16"
+        fill="#EC4899" fill-opacity="0.04" stroke="#EC4899" stroke-opacity="0.2"/>
+  <text x="360" y="655" font-family="Vazirmatn, Tahoma" font-size="26" fill="#F9A8D4"
+        text-anchor="start" direction="rtl" font-weight="bold">دین (Religion)</text>
+  <text x="360" y="700" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="start" direction="rtl">متعالی · اقتدارآمیز · مقدس‌شده</text>
+
+  <!-- نکته کلیدی -->
+  <rect x="80" y="770" width="920" height="90" rx="18"
+        fill="#FFFFFF" fill-opacity="0.02" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <text x="960" y="808" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FFFFFF"
+        text-anchor="start" direction="rtl" font-weight="bold">نکته‌ٔ نویسنده:</text>
+  <text x="960" y="845" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">هر یک از این‌ها می‌تواند به آموزهٔ قانونی تبدیل شود — ولی حق نیستند</text>
+
+  <!-- نقد -->
+  <rect x="80" y="880" width="920" height="60" rx="14"
+        fill="#DC2626" fill-opacity="0.03" stroke="#DC2626" stroke-opacity="0.1"/>
+  <text x="540" y="918" font-family="Vazirmatn, Tahoma" font-size="22" fill="#F87171"
+        text-anchor="middle" direction="rtl">⚠ خلط حق با سنت یا دین = تقدّس‌بخشی به نظم موجود و مقاومت در برابر اصلاح</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#EC4899" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۵</text>
+</svg>

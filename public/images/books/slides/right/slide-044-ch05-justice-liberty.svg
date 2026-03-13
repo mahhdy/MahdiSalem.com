@@ -1,0 +1,119 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg44" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0D1A"/>
+      <stop offset="100%" stop-color="#0D1225"/>
+    </linearGradient>
+    <radialGradient id="glow44" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg44)"/>
+  <rect width="1080" height="1080" fill="url(#glow44)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="340" height="48" rx="24"
+        fill="#A855F7" fill-opacity="0.08" stroke="#A855F7" stroke-opacity="0.25"/>
+  <text x="210" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#A855F7"
+        text-anchor="middle" direction="rtl">فصل ۵ · اسلاید ۴ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="155" font-family="Vazirmatn, Tahoma" font-size="46" font-weight="900"
+        fill="#C084FC" text-anchor="start" direction="rtl">حق ≠ عدالت ≠ آزادی</text>
+  <text x="1000" y="205" font-family="Vazirmatn, Tahoma" font-size="24" fill="#888"
+        text-anchor="start" direction="rtl">سه مفهوم نزدیک اما متمایز — خلطشان خطرناک است</text>
+
+  <!-- سه بلوک عمودی بزرگ -->
+  <!-- عدالت -->
+  <rect x="720" y="270" width="280" height="520" rx="20"
+        fill="#A855F7" fill-opacity="0.04" stroke="#A855F7" stroke-opacity="0.2"/>
+  <rect x="720" y="270" width="280" height="65" rx="20"
+        fill="#A855F7" fill-opacity="0.1"/>
+  <text x="860" y="312" font-family="Vazirmatn, Tahoma" font-size="30" fill="#C084FC"
+        text-anchor="middle" direction="rtl" font-weight="bold">عدالت</text>
+  <text x="970" y="380" font-family="Vazirmatn, Tahoma" font-size="20" fill="#EEE"
+        text-anchor="start" direction="rtl">• کیفیت کلّ نظام</text>
+  <text x="970" y="420" font-family="Vazirmatn, Tahoma" font-size="20" fill="#EEE"
+        text-anchor="start" direction="rtl">• ارزیابی توزیع منابع</text>
+  <text x="970" y="460" font-family="Vazirmatn, Tahoma" font-size="20" fill="#EEE"
+        text-anchor="start" direction="rtl">• معیار: انصاف</text>
+  <text x="970" y="500" font-family="Vazirmatn, Tahoma" font-size="20" fill="#EEE"
+        text-anchor="start" direction="rtl">• مفهوم ارزیابی‌کننده</text>
+  <rect x="745" y="540" width="230" height="50" rx="10"
+        fill="#A855F7" fill-opacity="0.08"/>
+  <text x="860" y="572" font-family="Vazirmatn, Tahoma" font-size="18" fill="#C084FC"
+        text-anchor="middle" direction="rtl">آیا نظام عادلانه است؟</text>
+  <text x="970" y="640" font-family="Vazirmatn, Tahoma" font-size="18" fill="#999"
+        text-anchor="start" direction="rtl">نسبت با حق:</text>
+  <text x="970" y="670" font-family="Vazirmatn, Tahoma" font-size="18" fill="#AAA"
+        text-anchor="start" direction="rtl">عدالت قضاوت می‌کند</text>
+  <text x="970" y="700" font-family="Vazirmatn, Tahoma" font-size="18" fill="#AAA"
+        text-anchor="start" direction="rtl">حق عمل می‌کند</text>
+
+  <!-- حق -->
+  <rect x="400" y="270" width="280" height="520" rx="20"
+        fill="#E8B83D" fill-opacity="0.05" stroke="#E8B83D" stroke-opacity="0.25" stroke-width="2"/>
+  <rect x="400" y="270" width="280" height="65" rx="20"
+        fill="#E8B83D" fill-opacity="0.12"/>
+  <text x="540" y="312" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FBBF24"
+        text-anchor="middle" direction="rtl" font-weight="bold">حق ★</text>
+  <text x="650" y="380" font-family="Vazirmatn, Tahoma" font-size="20" fill="#FFFFFF"
+        text-anchor="start" direction="rtl">• مرزبندی عملی</text>
+  <text x="650" y="420" font-family="Vazirmatn, Tahoma" font-size="20" fill="#FFFFFF"
+        text-anchor="start" direction="rtl">• دامنهٔ مجاز فرد</text>
+  <text x="650" y="460" font-family="Vazirmatn, Tahoma" font-size="20" fill="#FFFFFF"
+        text-anchor="start" direction="rtl">• معیار: مشروعیت</text>
+  <text x="650" y="500" font-family="Vazirmatn, Tahoma" font-size="20" fill="#FFFFFF"
+        text-anchor="start" direction="rtl">• مفهوم عملیاتی‌کننده</text>
+  <rect x="425" y="540" width="230" height="50" rx="10"
+        fill="#E8B83D" fill-opacity="0.1"/>
+  <text x="540" y="572" font-family="Vazirmatn, Tahoma" font-size="18" fill="#FBBF24"
+        text-anchor="middle" direction="rtl">چه می‌توانم بکنم؟</text>
+  <text x="650" y="640" font-family="Vazirmatn, Tahoma" font-size="18" fill="#999"
+        text-anchor="start" direction="rtl">مرکز نقشه:</text>
+  <text x="650" y="670" font-family="Vazirmatn, Tahoma" font-size="18" fill="#FBBF24"
+        text-anchor="start" direction="rtl">حق پل بین عدالت</text>
+  <text x="650" y="700" font-family="Vazirmatn, Tahoma" font-size="18" fill="#FBBF24"
+        text-anchor="start" direction="rtl">و آزادی است</text>
+
+  <!-- آزادی -->
+  <rect x="80" y="270" width="280" height="520" rx="20"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.2"/>
+  <rect x="80" y="270" width="280" height="65" rx="20"
+        fill="#22C55E" fill-opacity="0.1"/>
+  <text x="220" y="312" font-family="Vazirmatn, Tahoma" font-size="30" fill="#4ADE80"
+        text-anchor="middle" direction="rtl" font-weight="bold">آزادی</text>
+  <text x="330" y="380" font-family="Vazirmatn, Tahoma" font-size="20" fill="#EEE"
+        text-anchor="start" direction="rtl">• فضای بی‌مانع</text>
+  <text x="330" y="420" font-family="Vazirmatn, Tahoma" font-size="20" fill="#EEE"
+        text-anchor="start" direction="rtl">• عدم دخالت / توانمندی</text>
+  <text x="330" y="460" font-family="Vazirmatn, Tahoma" font-size="20" fill="#EEE"
+        text-anchor="start" direction="rtl">• معیار: عدم اجبار</text>
+  <text x="330" y="500" font-family="Vazirmatn, Tahoma" font-size="20" fill="#EEE"
+        text-anchor="start" direction="rtl">• مفهوم توصیفی</text>
+  <rect x="105" y="540" width="230" height="50" rx="10"
+        fill="#22C55E" fill-opacity="0.08"/>
+  <text x="220" y="572" font-family="Vazirmatn, Tahoma" font-size="18" fill="#4ADE80"
+        text-anchor="middle" direction="rtl">آیا مانعی هست؟</text>
+  <text x="330" y="640" font-family="Vazirmatn, Tahoma" font-size="18" fill="#999"
+        text-anchor="start" direction="rtl">نسبت با حق:</text>
+  <text x="330" y="670" font-family="Vazirmatn, Tahoma" font-size="18" fill="#AAA"
+        text-anchor="start" direction="rtl">آزادی بدون حق</text>
+  <text x="330" y="700" font-family="Vazirmatn, Tahoma" font-size="18" fill="#AAA"
+        text-anchor="start" direction="rtl">بی‌ضمانت است</text>
+
+  <!-- جمع‌بندی -->
+  <rect x="80" y="830" width="920" height="80" rx="16"
+        fill="#FFFFFF" fill-opacity="0.02" stroke="#E8B83D" stroke-opacity="0.15"/>
+  <text x="540" y="865" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FBBF24"
+        text-anchor="middle" direction="rtl" font-weight="bold">حق = عملیاتی‌سازی عدالت + تضمین آزادی</text>
+  <text x="540" y="898" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="middle" direction="rtl">بدون حق، عدالت آرمان می‌ماند و آزادی ناامن</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#A855F7" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۵</text>
+</svg>

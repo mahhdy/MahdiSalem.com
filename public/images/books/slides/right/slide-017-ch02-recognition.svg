@@ -1,0 +1,88 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg17" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D0D1A"/>
+      <stop offset="100%" stop-color="#0A1420"/>
+    </linearGradient>
+    <radialGradient id="glow17a" cx="30%" cy="50%" r="30%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow17b" cx="70%" cy="50%" r="30%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg17)"/>
+  <rect width="1080" height="1080" fill="url(#glow17a)"/>
+  <rect width="1080" height="1080" fill="url(#glow17b)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="320" height="48" rx="24"
+        fill="#F59E0B" fill-opacity="0.08" stroke="#F59E0B" stroke-opacity="0.25"/>
+  <text x="200" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#F59E0B"
+        text-anchor="middle" direction="rtl">فصل ۲ · اسلاید ۷ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="155" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#FFFFFF" text-anchor="middle" direction="rtl">حق و شناسایی متقابل</text>
+  <text x="540" y="205" font-family="Vazirmatn, Tahoma" font-size="26" fill="#999"
+        text-anchor="middle" direction="rtl">آیا حق بدون «دیگری» کارکردی دارد؟</text>
+
+  <!-- دو دایره متقاطع (ون دیاگرام ساده‌سازی شده) -->
+  <circle cx="420" cy="440" r="170" fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.2" stroke-width="1.5"/>
+  <circle cx="660" cy="440" r="170" fill="#A855F7" fill-opacity="0.04" stroke="#A855F7" stroke-opacity="0.2" stroke-width="1.5"/>
+
+  <text x="340" y="400" font-family="Vazirmatn, Tahoma" font-size="28" fill="#FBBF24"
+        text-anchor="middle" direction="rtl" font-weight="bold">من</text>
+  <text x="340" y="440" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="middle" direction="rtl">حقوقی که</text>
+  <text x="340" y="470" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="middle" direction="rtl">برای خود</text>
+  <text x="340" y="500" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="middle" direction="rtl">بر می‌شمرم</text>
+
+  <text x="740" y="400" font-family="Vazirmatn, Tahoma" font-size="28" fill="#C084FC"
+        text-anchor="middle" direction="rtl" font-weight="bold">دیگری</text>
+  <text x="740" y="440" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="middle" direction="rtl">پذیرش و</text>
+  <text x="740" y="470" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="middle" direction="rtl">شناسایی</text>
+  <text x="740" y="500" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="middle" direction="rtl">از سوی دیگری</text>
+
+  <!-- ناحیه تقاطع -->
+  <text x="540" y="420" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FFFFFF"
+        text-anchor="middle" direction="rtl" font-weight="bold">ناحیهٔ</text>
+  <text x="540" y="455" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FFFFFF"
+        text-anchor="middle" direction="rtl" font-weight="bold">تحقّق حق</text>
+
+  <!-- نقطه‌های تحلیلی -->
+  <rect x="80" y="650" width="440" height="110" rx="16"
+        fill="#F59E0B" fill-opacity="0.05" stroke="#F59E0B" stroke-opacity="0.18"/>
+  <text x="460" y="695" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FBBF24"
+        text-anchor="start" direction="rtl" font-weight="bold">بصیرت نویسنده:</text>
+  <text x="460" y="735" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">حق امری ارتباطی و بینابینی است</text>
+
+  <rect x="560" y="650" width="440" height="110" rx="16"
+        fill="#A855F7" fill-opacity="0.05" stroke="#A855F7" stroke-opacity="0.18"/>
+  <text x="960" y="695" font-family="Vazirmatn, Tahoma" font-size="24" fill="#C084FC"
+        text-anchor="start" direction="rtl" font-weight="bold">پیوند با هگل و هونت:</text>
+  <text x="960" y="735" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">حقوق بدون شناسایی متقابل فاقد اثرند</text>
+
+  <!-- نقد -->
+  <rect x="80" y="790" width="920" height="120" rx="18"
+        fill="#DC2626" fill-opacity="0.03" stroke="#DC2626" stroke-opacity="0.12"/>
+  <text x="960" y="835" font-family="Vazirmatn, Tahoma" font-size="26" fill="#F87171"
+        text-anchor="start" direction="rtl" font-weight="bold">⚠ پرسش نقادانه:</text>
+  <text x="960" y="878" font-family="Vazirmatn, Tahoma" font-size="22" fill="#AAA"
+        text-anchor="start" direction="rtl">اگر حق فقط در تعامل معنا دارد، پس حقّ انسان تنها در جزیره چیست؟</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#F59E0B" opacity="0.2"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۲</text>
+</svg>

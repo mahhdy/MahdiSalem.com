@@ -1,0 +1,80 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-danger" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1C0808"/>
+      <stop offset="50%" stop-color="#180C14"/>
+      <stop offset="100%" stop-color="#0D0A14"/>
+    </linearGradient>
+    <radialGradient id="dangerGlow" cx="50%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-danger)"/>
+  <rect width="1080" height="1080" fill="url(#dangerGlow)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="480" height="48" rx="24"
+        fill="#DC2626" fill-opacity="0.08" stroke="#DC2626" stroke-opacity="0.25"/>
+  <text x="480" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#FCA5A5"
+        text-anchor="start" direction="rtl">فصل ۸ · مخاطرات مهندسی حقوق · هشدار نقادانه</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="170" font-family="Vazirmatn, Tahoma" font-size="52" font-weight="900"
+        fill="#FEE2E2" text-anchor="start" direction="rtl">شمشیر دولبه</text>
+  <text x="1000" y="228" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FCA5A5"
+        text-anchor="start" direction="rtl">«حقوق مهندسی‌شده» — جسورانه و خطرناک</text>
+
+  <!-- شمشیر بصری ساده -->
+  <rect x="530" y="170" width="6" height="100" rx="2" fill="#DC2626" fill-opacity="0.15"/>
+  <polygon points="533,170 520,140 546,140" fill="#DC2626" fill-opacity="0.1" stroke="#DC2626" stroke-opacity="0.2"/>
+
+  <!-- سه خطر -->
+  <!-- خطر ۱ -->
+  <rect x="80" y="280" width="920" height="150" rx="20"
+        fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.2"/>
+  <text x="960" y="325" font-family="Vazirmatn, Tahoma" font-size="30" fill="#F87171"
+        font-weight="bold" text-anchor="start" direction="rtl">⚠ خطر ۱: تکنوکراسی استبدادی</text>
+  <text x="960" y="370" font-family="Vazirmatn, Tahoma" font-size="23" fill="#DDD"
+        text-anchor="start" direction="rtl">اگر حقوق مهندسی‌شدنی باشند، چه کسی مهندس است؟</text>
+  <text x="960" y="410" font-family="Vazirmatn, Tahoma" font-size="21" fill="#AAA"
+        text-anchor="start" direction="rtl">هایک: «غرور کشنده» — فرض طراحی متمرکز = خطای معرفت‌شناختی</text>
+
+  <!-- خطر ۲ -->
+  <rect x="80" y="445" width="920" height="150" rx="20"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.2"/>
+  <text x="960" y="490" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FCD34D"
+        font-weight="bold" text-anchor="start" direction="rtl">⚠ خطر ۲: ابزاری‌شدن انسان</text>
+  <text x="960" y="535" font-family="Vazirmatn, Tahoma" font-size="23" fill="#DDD"
+        text-anchor="start" direction="rtl">هروقت نقض حقوق فردی به «پویایی جامعه» کمک کند...</text>
+  <text x="960" y="575" font-family="Vazirmatn, Tahoma" font-size="21" fill="#AAA"
+        text-anchor="start" direction="rtl">دقیقاً استدلال استالین و مائو: «پیشرفت جمعی مهم‌تر از حقوق فردی»</text>
+
+  <!-- خطر ۳ -->
+  <rect x="80" y="610" width="920" height="150" rx="20"
+        fill="#A855F7" fill-opacity="0.04" stroke="#A855F7" stroke-opacity="0.2"/>
+  <text x="960" y="655" font-family="Vazirmatn, Tahoma" font-size="30" fill="#D8B4FE"
+        font-weight="bold" text-anchor="start" direction="rtl">⚠ خطر ۳: مشروعیت‌بخشی به استبداد کارآمد</text>
+  <text x="960" y="700" font-family="Vazirmatn, Tahoma" font-size="23" fill="#DDD"
+        text-anchor="start" direction="rtl">استدلال حزب کمونیست چین: رشد اقتصادی = مشروعیت</text>
+  <text x="960" y="740" font-family="Vazirmatn, Tahoma" font-size="21" fill="#AAA"
+        text-anchor="start" direction="rtl">مشروعیت صرفاً فرایندی، بدون قیود رویه‌ای خطرناک است</text>
+
+  <!-- راه‌حل -->
+  <rect x="80" y="790" width="920" height="130" rx="20"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.22"/>
+  <text x="960" y="835" font-family="Vazirmatn, Tahoma" font-size="28" fill="#4ADE80"
+        font-weight="bold" text-anchor="start" direction="rtl">✦ راه‌حل: قید کانتی</text>
+  <text x="960" y="878" font-family="Vazirmatn, Tahoma" font-size="23" fill="#EEE"
+        text-anchor="start" direction="rtl">حقوق بنیادین = «محدودیت‌های طراحی» نه «متغیرهای طراحی»</text>
+  <text x="960" y="910" font-family="Vazirmatn, Tahoma" font-size="21" fill="#86EFAC"
+        text-anchor="start" direction="rtl">هیچ مهندسی حقوقی مجاز نیست انسان را صرفاً ابزار کند</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="960" width="1000" height="2" rx="1" fill="#DC2626" opacity="0.2"/>
+  <text x="540" y="1000" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">نویسنده: حداقلی از حقوق به مثابه کرامت غیرقابل‌خدشه لازمه‌ی هر مهندسی است</text>
+  <text x="540" y="1040" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۸ · ماشین حق · مخاطرات و ابهامات</text>
+</svg>

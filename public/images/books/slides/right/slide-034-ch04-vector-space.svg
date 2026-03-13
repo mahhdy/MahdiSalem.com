@@ -1,0 +1,113 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg34" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#08081A"/>
+      <stop offset="100%" stop-color="#0D1020"/>
+    </linearGradient>
+    <radialGradient id="glow34" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg34)"/>
+  <rect width="1080" height="1080" fill="url(#glow34)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="340" height="48" rx="24"
+        fill="#A855F7" fill-opacity="0.08" stroke="#A855F7" stroke-opacity="0.25"/>
+  <text x="210" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#A855F7"
+        text-anchor="middle" direction="rtl">فصل ۴ · اسلاید ۴ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="150" font-family="Vazirmatn, Tahoma" font-size="46" font-weight="900"
+        fill="#C084FC" text-anchor="middle" direction="rtl">فضای برداری: ترکیب وزن‌دار</text>
+  <text x="540" y="200" font-family="Vazirmatn, Tahoma" font-size="24" fill="#888"
+        text-anchor="middle" direction="rtl">نوآوری کلیدی: هر نظام حقوقی = بردار وزن‌دهی‌شده‌ای از ده منشأ</text>
+
+  <!-- نمودار راداری ساده‌سازی‌شده — ده‌ضلعی -->
+  <!-- مرکز -->
+  <circle cx="540" cy="560" r="4" fill="#C084FC"/>
+
+  <!-- حلقه‌های هم‌مرکز -->
+  <circle cx="540" cy="560" r="100" fill="none" stroke="#C084FC" stroke-opacity="0.06" stroke-width="1"/>
+  <circle cx="540" cy="560" r="200" fill="none" stroke="#C084FC" stroke-opacity="0.08" stroke-width="1"/>
+  <circle cx="540" cy="560" r="280" fill="none" stroke="#C084FC" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- خطوط شعاعی (۱۰ محور) و برچسب‌ها -->
+  <!-- محور ۱: قدرت (بالا) -->
+  <line x1="540" y1="560" x2="540" y2="280" stroke="#F87171" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="540" y="265" font-family="Vazirmatn, Tahoma" font-size="18" fill="#F87171"
+        text-anchor="middle" direction="rtl">قدرت</text>
+
+  <!-- محور ۲: طبیعت -->
+  <line x1="540" y1="560" x2="718" y2="310" stroke="#4ADE80" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="735" y="300" font-family="Vazirmatn, Tahoma" font-size="18" fill="#4ADE80"
+        text-anchor="start" direction="rtl">طبیعت</text>
+
+  <!-- محور ۳: ماوراء -->
+  <line x1="540" y1="560" x2="820" y2="460" stroke="#C084FC" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="835" y="455" font-family="Vazirmatn, Tahoma" font-size="18" fill="#C084FC"
+        text-anchor="start" direction="rtl">ماوراء</text>
+
+  <!-- محور ۴: سازگاری -->
+  <line x1="540" y1="560" x2="820" y2="660" stroke="#22D3EE" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="835" y="665" font-family="Vazirmatn, Tahoma" font-size="18" fill="#22D3EE"
+        text-anchor="start" direction="rtl">سازگاری</text>
+
+  <!-- محور ۵: توافق -->
+  <line x1="540" y1="560" x2="718" y2="810" stroke="#FBBF24" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="725" y="830" font-family="Vazirmatn, Tahoma" font-size="18" fill="#FBBF24"
+        text-anchor="start" direction="rtl">توافق</text>
+
+  <!-- محور ۶: نژاد -->
+  <line x1="540" y1="560" x2="540" y2="840" stroke="#EC4899" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="540" y="860" font-family="Vazirmatn, Tahoma" font-size="18" fill="#EC4899"
+        text-anchor="middle" direction="rtl">نژاد</text>
+
+  <!-- محور ۷: عملکرد -->
+  <line x1="540" y1="560" x2="362" y2="810" stroke="#2DD4BF" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="345" y="830" font-family="Vazirmatn, Tahoma" font-size="18" fill="#2DD4BF"
+        text-anchor="start" direction="rtl">عملکرد</text>
+
+  <!-- محور ۸: مصلحت -->
+  <line x1="540" y1="560" x2="260" y2="660" stroke="#FBBF24" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="240" y="665" font-family="Vazirmatn, Tahoma" font-size="18" fill="#FBBF24"
+        text-anchor="start" direction="rtl">مصلحت</text>
+
+  <!-- محور ۹: رنج -->
+  <line x1="540" y1="560" x2="260" y2="460" stroke="#F87171" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="235" y="455" font-family="Vazirmatn, Tahoma" font-size="18" fill="#F87171"
+        text-anchor="start" direction="rtl">رنج ★</text>
+
+  <!-- محور ۱۰: عاملیت -->
+  <line x1="540" y1="560" x2="362" y2="310" stroke="#4ADE80" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="340" y="300" font-family="Vazirmatn, Tahoma" font-size="18" fill="#4ADE80"
+        text-anchor="start" direction="rtl">عاملیت ★</text>
+
+  <!-- یک نمونه بردار (شکل پُرشده) — مثال لیبرال-دموکراتیک -->
+  <polygon points="540,380 650,370 740,480 740,620 660,750 540,760 420,750 340,620 340,480 430,370"
+           fill="#06B6D4" fill-opacity="0.08" stroke="#06B6D4" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <!-- توضیح مثال -->
+  <rect x="100" y="890" width="400" height="80" rx="14"
+        fill="#06B6D4" fill-opacity="0.05" stroke="#06B6D4" stroke-opacity="0.15"/>
+  <circle cx="470" cy="915" r="8" fill="#06B6D4" fill-opacity="0.5"/>
+  <text x="450" y="922" font-family="Vazirmatn, Tahoma" font-size="20" fill="#22D3EE"
+        text-anchor="start" direction="rtl" font-weight="bold">نمونه: لیبرال-دموکراتیک</text>
+  <text x="450" y="952" font-family="Vazirmatn, Tahoma" font-size="18" fill="#AAA"
+        text-anchor="start" direction="rtl">وزن بالا: توافق + طبیعت + عملکرد</text>
+
+  <!-- نکته -->
+  <rect x="540" y="890" width="440" height="80" rx="14"
+        fill="#E8B83D" fill-opacity="0.04" stroke="#E8B83D" stroke-opacity="0.12"/>
+  <text x="940" y="922" font-family="Vazirmatn, Tahoma" font-size="20" fill="#FBBF24"
+        text-anchor="start" direction="rtl" font-weight="bold">ایده‌ی کلیدی:</text>
+  <text x="940" y="952" font-family="Vazirmatn, Tahoma" font-size="18" fill="#CCC"
+        text-anchor="start" direction="rtl">هر نظام = نقطه‌ای در این فضای ۱۰‌بُعدی</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#A855F7" opacity="0.2"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۴</text>
+</svg>

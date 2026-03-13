@@ -1,0 +1,100 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg43" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A0505"/>
+      <stop offset="50%" stop-color="#120D18"/>
+      <stop offset="100%" stop-color="#0A0E1A"/>
+    </linearGradient>
+    <radialGradient id="glowL43" cx="30%" cy="50%" r="35%">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowR43" cx="70%" cy="50%" r="35%">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg43)"/>
+  <rect width="1080" height="1080" fill="url(#glowL43)"/>
+  <rect width="1080" height="1080" fill="url(#glowR43)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="340" height="48" rx="24"
+        fill="#DC2626" fill-opacity="0.08" stroke="#DC2626" stroke-opacity="0.25"/>
+  <text x="210" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#DC2626"
+        text-anchor="middle" direction="rtl">فصل ۵ · اسلاید ۳ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="155" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="900"
+        fill="#FFFFFF" text-anchor="middle" direction="rtl">حق و تکلیف</text>
+  <text x="540" y="210" font-family="Vazirmatn, Tahoma" font-size="26" fill="#999"
+        text-anchor="middle" direction="rtl">رابطه‌ای بنیادین که فهمش کلید فهم حق است</text>
+
+  <!-- دایره بزرگ سکه -->
+  <circle cx="540" cy="500" r="220" fill="none" stroke="#E8B83D" stroke-opacity="0.15" stroke-width="2"/>
+
+  <!-- نیمه راست: حق -->
+  <path d="M540,280 A220,220 0 0,1 540,720" fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.2" stroke-width="1.5"/>
+  <text x="680" y="460" font-family="Vazirmatn, Tahoma" font-size="38" fill="#4ADE80"
+        text-anchor="middle" direction="rtl" font-weight="bold">حق</text>
+  <text x="680" y="505" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="middle" direction="rtl">آنچه من دارم</text>
+  <text x="680" y="540" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="middle" direction="rtl">دامنهٔ آزادی من</text>
+
+  <!-- نیمه چپ: تکلیف -->
+  <path d="M540,720 A220,220 0 0,1 540,280" fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.2" stroke-width="1.5"/>
+  <text x="400" y="460" font-family="Vazirmatn, Tahoma" font-size="38" fill="#F87171"
+        text-anchor="middle" direction="rtl" font-weight="bold">تکلیف</text>
+  <text x="400" y="505" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="middle" direction="rtl">آنچه بر عهدهٔ توست</text>
+  <text x="400" y="540" font-family="Vazirmatn, Tahoma" font-size="20" fill="#CCC"
+        text-anchor="middle" direction="rtl">تضمین حقّ من</text>
+
+  <!-- خط وسط -->
+  <line x1="540" y1="280" x2="540" y2="720" stroke="#E8B83D" stroke-opacity="0.2" stroke-width="2" stroke-dasharray="8,6"/>
+
+  <!-- فلش دو طرفه -->
+  <polygon points="528,290 540,270 552,290" fill="#E8B83D" fill-opacity="0.4"/>
+  <polygon points="528,710 540,730 552,710" fill="#E8B83D" fill-opacity="0.4"/>
+
+  <!-- سه دیدگاه -->
+  <rect x="80" y="760" width="290" height="140" rx="16"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.15"/>
+  <text x="225" y="800" font-family="Vazirmatn, Tahoma" font-size="22" fill="#4ADE80"
+        text-anchor="middle" direction="rtl" font-weight="bold">حق‌محوران:</text>
+  <text x="225" y="835" font-family="Vazirmatn, Tahoma" font-size="18" fill="#CCC"
+        text-anchor="middle" direction="rtl">حق اصل و تکلیف فرع</text>
+  <text x="225" y="865" font-family="Vazirmatn, Tahoma" font-size="16" fill="#999"
+        text-anchor="middle" direction="rtl">لاک · نوزیک · دوورکین</text>
+
+  <rect x="395" y="760" width="290" height="140" rx="16"
+        fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.15"/>
+  <text x="540" y="800" font-family="Vazirmatn, Tahoma" font-size="22" fill="#F87171"
+        text-anchor="middle" direction="rtl" font-weight="bold">تکلیف‌محوران:</text>
+  <text x="540" y="835" font-family="Vazirmatn, Tahoma" font-size="18" fill="#CCC"
+        text-anchor="middle" direction="rtl">تکلیف اصل و حق فرع</text>
+  <text x="540" y="865" font-family="Vazirmatn, Tahoma" font-size="16" fill="#999"
+        text-anchor="middle" direction="rtl">کانت · اونیل · فقه اسلامی</text>
+
+  <rect x="710" y="760" width="290" height="140" rx="16"
+        fill="#E8B83D" fill-opacity="0.05" stroke="#E8B83D" stroke-opacity="0.2"/>
+  <text x="855" y="800" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FBBF24"
+        text-anchor="middle" direction="rtl" font-weight="bold">دیدگاه نویسنده:</text>
+  <text x="855" y="835" font-family="Vazirmatn, Tahoma" font-size="18" fill="#CCC"
+        text-anchor="middle" direction="rtl">دو روی یک سکه — تقدّم</text>
+  <text x="855" y="865" font-family="Vazirmatn, Tahoma" font-size="18" fill="#CCC"
+        text-anchor="middle" direction="rtl">= نشانهٔ توزیع قدرت</text>
+
+  <!-- نکته -->
+  <rect x="120" y="925" width="840" height="50" rx="12"
+        fill="#E8B83D" fill-opacity="0.04" stroke="#E8B83D" stroke-opacity="0.1"/>
+  <text x="540" y="957" font-family="Vazirmatn, Tahoma" font-size="20" fill="#FBBF24"
+        text-anchor="middle" direction="rtl">⚠ در جوامع استبدادی زبان تکلیف غالب می‌شود — نشانهٔ بیماری نظام</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#DC2626" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۵</text>
+</svg>

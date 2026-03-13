@@ -1,0 +1,109 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-card" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0C0A1E"/>
+      <stop offset="100%" stop-color="#14102A"/>
+    </linearGradient>
+    <radialGradient id="cardGlow" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#C19A3E" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#C19A3E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-card)"/>
+  <rect width="1080" height="1080" fill="url(#cardGlow)"/>
+
+  <!-- حاشیه کارت -->
+  <rect x="50" y="90" width="980" height="910" rx="30"
+        fill="none" stroke="#C19A3E" stroke-opacity="0.12" stroke-width="2"/>
+  <rect x="60" y="100" width="960" height="890" rx="26"
+        fill="none" stroke="#C19A3E" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="440" height="48" rx="24"
+        fill="#C19A3E" fill-opacity="0.08" stroke="#C19A3E" stroke-opacity="0.25"/>
+  <text x="430" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#C19A3E"
+        text-anchor="start" direction="rtl">جمع‌بندی · کارت هویت فلسفی نویسنده</text>
+
+  <!-- عنوان -->
+  <text x="540" y="165" font-family="Vazirmatn, Tahoma" font-size="44" font-weight="900"
+        fill="#FEF3C7" text-anchor="middle" direction="rtl">پرتره‌ی یک دستگاه فلسفی</text>
+
+  <!-- ردیف‌های جدول -->
+  <!-- ردیف ۱ -->
+  <rect x="100" y="205" width="880" height="68" rx="10"
+        fill="#06B6D4" fill-opacity="0.03" stroke="#06B6D4" stroke-opacity="0.12"/>
+  <text x="950" y="235" font-family="Vazirmatn, Tahoma" font-size="20" fill="#67E8F9"
+        font-weight="bold" text-anchor="start" direction="rtl">هستی‌شناسی حق</text>
+  <text x="950" y="262" font-family="Vazirmatn, Tahoma" font-size="19" fill="#CCC"
+        text-anchor="start" direction="rtl">خروجی فرایند ساختی-کشفی · نه صرفاً ذاتی و نه صرفاً اعتباری</text>
+
+  <!-- ردیف ۲ -->
+  <rect x="100" y="280" width="880" height="68" rx="10"
+        fill="#A855F7" fill-opacity="0.03" stroke="#A855F7" stroke-opacity="0.12"/>
+  <text x="950" y="310" font-family="Vazirmatn, Tahoma" font-size="20" fill="#C4B5FD"
+        font-weight="bold" text-anchor="start" direction="rtl">معرفت‌شناسی</text>
+  <text x="950" y="337" font-family="Vazirmatn, Tahoma" font-size="19" fill="#CCC"
+        text-anchor="start" direction="rtl">بدون ارشمیدس · بازشناسی انتقادی درون‌ماندگار · کشتی نویرات</text>
+
+  <!-- ردیف ۳ -->
+  <rect x="100" y="355" width="880" height="68" rx="10"
+        fill="#22C55E" fill-opacity="0.03" stroke="#22C55E" stroke-opacity="0.12"/>
+  <text x="950" y="385" font-family="Vazirmatn, Tahoma" font-size="20" fill="#4ADE80"
+        font-weight="bold" text-anchor="start" direction="rtl">روش</text>
+  <text x="950" y="412" font-family="Vazirmatn, Tahoma" font-size="19" fill="#CCC"
+        text-anchor="start" direction="rtl">چهارسطحی (حداقلی/عام/خاص/اخص) + اکتشاف زبانی و انکشافی</text>
+
+  <!-- ردیف ۴ -->
+  <rect x="100" y="430" width="880" height="68" rx="10"
+        fill="#F59E0B" fill-opacity="0.03" stroke="#F59E0B" stroke-opacity="0.12"/>
+  <text x="950" y="460" font-family="Vazirmatn, Tahoma" font-size="20" fill="#FCD34D"
+        font-weight="bold" text-anchor="start" direction="rtl">عاملیت</text>
+  <text x="950" y="487" font-family="Vazirmatn, Tahoma" font-size="19" fill="#CCC"
+        text-anchor="start" direction="rtl">محوری · انسان فاعل مختار خلاق · جهش و اراده‌ورزی</text>
+
+  <!-- ردیف ۵ -->
+  <rect x="100" y="505" width="880" height="68" rx="10"
+        fill="#EC4899" fill-opacity="0.03" stroke="#EC4899" stroke-opacity="0.12"/>
+  <text x="950" y="535" font-family="Vazirmatn, Tahoma" font-size="20" fill="#F9A8D4"
+        font-weight="bold" text-anchor="start" direction="rtl">مرجع مشروعیت</text>
+  <text x="950" y="562" font-family="Vazirmatn, Tahoma" font-size="19" fill="#CCC"
+        text-anchor="start" direction="rtl">فرایندی و مارپیچی · دور هرمنوتیکی صعودی · نه پیشینی ثابت</text>
+
+  <!-- ردیف ۶ -->
+  <rect x="100" y="580" width="880" height="68" rx="10"
+        fill="#14B8A6" fill-opacity="0.03" stroke="#14B8A6" stroke-opacity="0.12"/>
+  <text x="950" y="610" font-family="Vazirmatn, Tahoma" font-size="20" fill="#5EEAD4"
+        font-weight="bold" text-anchor="start" direction="rtl">استعاره‌ی محوری</text>
+  <text x="950" y="637" font-family="Vazirmatn, Tahoma" font-size="19" fill="#CCC"
+        text-anchor="start" direction="rtl">بازی (قاعده‌مند، چندسطحی) + ماشین زنده + اکوسیستم</text>
+
+  <!-- ردیف ۷ -->
+  <rect x="100" y="655" width="880" height="68" rx="10"
+        fill="#DC2626" fill-opacity="0.03" stroke="#DC2626" stroke-opacity="0.12"/>
+  <text x="950" y="685" font-family="Vazirmatn, Tahoma" font-size="20" fill="#FCA5A5"
+        font-weight="bold" text-anchor="start" direction="rtl">اخلاق</text>
+  <text x="950" y="712" font-family="Vazirmatn, Tahoma" font-size="19" fill="#CCC"
+        text-anchor="start" direction="rtl">منظوم · ادغام وظیفه‌گرا/نتیجه‌گرا/فضیلت‌گرا · قطب‌نمای کارکردی</text>
+
+  <!-- ردیف ۸ -->
+  <rect x="100" y="730" width="880" height="68" rx="10"
+        fill="#C19A3E" fill-opacity="0.03" stroke="#C19A3E" stroke-opacity="0.12"/>
+  <text x="950" y="760" font-family="Vazirmatn, Tahoma" font-size="20" fill="#C19A3E"
+        font-weight="bold" text-anchor="start" direction="rtl">غایت</text>
+  <text x="950" y="787" font-family="Vazirmatn, Tahoma" font-size="19" fill="#CCC"
+        text-anchor="start" direction="rtl">شکوفایی · پویایی · پایستگی · انصاف و عدالت</text>
+
+  <!-- هم‌نشینان فلسفی -->
+  <rect x="100" y="820" width="880" height="75" rx="14"
+        fill="#C19A3E" fill-opacity="0.04" stroke="#C19A3E" stroke-opacity="0.18"/>
+  <text x="950" y="852" font-family="Vazirmatn, Tahoma" font-size="19" fill="#D4C5A0"
+        font-weight="bold" text-anchor="start" direction="rtl">هم‌نشینان: هابرماس · سن/نوسباوم · نورث · ویتگنشتاین · پراگماتیسم دیویی</text>
+  <text x="950" y="882" font-family="Vazirmatn, Tahoma" font-size="19" fill="#8B7355"
+        text-anchor="start" direction="rtl">خلأ اصلی: نظریه‌ی مطلوبیت مستقل + جایگاه رنج و آسیب‌پذیری</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="1020" width="1000" height="2" rx="1" fill="#C19A3E" opacity="0.2"/>
+  <text x="540" y="1060" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">حق و حقوق · جمع‌بندی دستگاه فکری نویسنده</text>
+</svg>

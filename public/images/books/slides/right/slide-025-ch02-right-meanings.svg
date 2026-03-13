@@ -1,0 +1,101 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-right" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0C1018"/>
+      <stop offset="100%" stop-color="#141E2E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-right)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="460" height="48" rx="24"
+        fill="#C19A3E" fill-opacity="0.08" stroke="#C19A3E" stroke-opacity="0.25"/>
+  <text x="460" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#C19A3E"
+        text-anchor="start" direction="rtl">فصل ۲ · شبکه‌ی معنایی Right · شباهت خانوادگی</text>
+
+  <!-- عنوان -->
+  <text x="540" y="160" font-family="Vazirmatn, Tahoma" font-size="46" font-weight="900"
+        fill="#FEF3C7" text-anchor="middle" direction="rtl">Right: یک واژه، هشت معنا</text>
+  <text x="540" y="210" font-family="Vazirmatn, Tahoma" font-size="22" fill="#D4C5A0"
+        text-anchor="middle" direction="rtl">Family Resemblance · ویتگنشتاین · جوهر مشترکی نیست</text>
+
+  <!-- مرکز: Right -->
+  <circle cx="540" cy="520" r="70" fill="#C19A3E" fill-opacity="0.06" stroke="#C19A3E" stroke-opacity="0.3" stroke-width="2"/>
+  <text x="540" y="515" font-family="Georgia, serif" font-size="36" fill="#FEF3C7"
+        font-weight="bold" text-anchor="middle">Right</text>
+  <text x="540" y="548" font-family="Vazirmatn, Tahoma" font-size="18" fill="#C19A3E"
+        text-anchor="middle" direction="rtl">حق</text>
+
+  <!-- ۸ معنا به شکل شعاعی -->
+  <!-- ۱ -->
+  <line x1="540" y1="450" x2="540" y2="310" stroke="#C19A3E" stroke-opacity="0.12" stroke-width="1"/>
+  <rect x="430" y="260" width="220" height="50" rx="12"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.2"/>
+  <text x="540" y="292" font-family="Vazirmatn, Tahoma" font-size="20" fill="#67E8F9"
+        text-anchor="middle" direction="rtl">Correct · درست</text>
+
+  <!-- ۲ -->
+  <line x1="590" y1="468" x2="720" y2="340" stroke="#C19A3E" stroke-opacity="0.12" stroke-width="1"/>
+  <rect x="660" y="295" width="220" height="50" rx="12"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.2"/>
+  <text x="770" y="327" font-family="Vazirmatn, Tahoma" font-size="20" fill="#4ADE80"
+        text-anchor="middle" direction="rtl">Legitimate · مشروع</text>
+
+  <!-- ۳ -->
+  <line x1="610" y1="520" x2="780" y2="520" stroke="#C19A3E" stroke-opacity="0.12" stroke-width="1"/>
+  <rect x="780" y="495" width="240" height="50" rx="12"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.2"/>
+  <text x="900" y="527" font-family="Vazirmatn, Tahoma" font-size="20" fill="#FCD34D"
+        text-anchor="middle" direction="rtl">Ethical · اخلاقی</text>
+
+  <!-- ۴ -->
+  <line x1="590" y1="572" x2="720" y2="700" stroke="#C19A3E" stroke-opacity="0.12" stroke-width="1"/>
+  <rect x="660" y="685" width="220" height="50" rx="12"
+        fill="#A855F7" fill-opacity="0.04" stroke="#A855F7" stroke-opacity="0.2"/>
+  <text x="770" y="717" font-family="Vazirmatn, Tahoma" font-size="20" fill="#D8B4FE"
+        text-anchor="middle" direction="rtl">Solution · راه‌حل</text>
+
+  <!-- ۵ -->
+  <line x1="540" y1="590" x2="540" y2="730" stroke="#C19A3E" stroke-opacity="0.12" stroke-width="1"/>
+  <rect x="430" y="730" width="220" height="50" rx="12"
+        fill="#EC4899" fill-opacity="0.04" stroke="#EC4899" stroke-opacity="0.2"/>
+  <text x="540" y="762" font-family="Vazirmatn, Tahoma" font-size="20" fill="#F9A8D4"
+        text-anchor="middle" direction="rtl">Competent · شایسته</text>
+
+  <!-- ۶ -->
+  <line x1="490" y1="572" x2="360" y2="700" stroke="#C19A3E" stroke-opacity="0.12" stroke-width="1"/>
+  <rect x="200" y="685" width="220" height="50" rx="12"
+        fill="#14B8A6" fill-opacity="0.04" stroke="#14B8A6" stroke-opacity="0.2"/>
+  <text x="310" y="717" font-family="Vazirmatn, Tahoma" font-size="20" fill="#5EEAD4"
+        text-anchor="middle" direction="rtl">Fit for Role · مناسب</text>
+
+  <!-- ۷ -->
+  <line x1="470" y1="520" x2="300" y2="520" stroke="#C19A3E" stroke-opacity="0.12" stroke-width="1"/>
+  <rect x="60" y="495" width="240" height="50" rx="12"
+        fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.2"/>
+  <text x="180" y="527" font-family="Vazirmatn, Tahoma" font-size="20" fill="#FCA5A5"
+        text-anchor="middle" direction="rtl">Rightful · حق‌مدار</text>
+
+  <!-- ۸ -->
+  <line x1="490" y1="468" x2="360" y2="340" stroke="#C19A3E" stroke-opacity="0.12" stroke-width="1"/>
+  <rect x="200" y="295" width="220" height="50" rx="12"
+        fill="#8B5CF6" fill-opacity="0.04" stroke="#8B5CF6" stroke-opacity="0.2"/>
+  <text x="310" y="327" font-family="Vazirmatn, Tahoma" font-size="20" fill="#A78BFA"
+        text-anchor="middle" direction="rtl">Legal · قانونی</text>
+
+  <!-- نکته -->
+  <rect x="80" y="820" width="920" height="100" rx="18"
+        fill="#C19A3E" fill-opacity="0.04" stroke="#C19A3E" stroke-opacity="0.18"/>
+  <text x="960" y="862" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FEF3C7"
+        font-weight="bold" text-anchor="start" direction="rtl">⟡ ابتکار نویسنده: تحلیل ویتگنشتاینی</text>
+  <text x="960" y="900" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">این معانی «جوهر مشترک» ندارند بلکه شبکه‌ای از شباهت‌های متداخل‌اند</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="960" width="1000" height="2" rx="1" fill="#C19A3E" opacity="0.2"/>
+  <text x="540" y="1000" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">در فارسی نیز «حق» هم‌زمان: درست · مشروع · سزاوار · قانونی · اخلاقی</text>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۲ · زبان و مفهوم حق</text>
+</svg>

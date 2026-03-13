@@ -1,0 +1,74 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-pareto" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A1218"/>
+      <stop offset="100%" stop-color="#101828"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-pareto)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="520" height="48" rx="24"
+        fill="#14B8A6" fill-opacity="0.08" stroke="#14B8A6" stroke-opacity="0.25"/>
+  <text x="520" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#5EEAD4"
+        text-anchor="start" direction="rtl">فصل ۱۱ · تشبیه ریاضیاتی · بهینه‌سازی چندهدفه</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="160" font-family="Vazirmatn, Tahoma" font-size="46" font-weight="900"
+        fill="#CCFBF1" text-anchor="start" direction="rtl">اخلاق: معادله نه دلبخواه</text>
+  <text x="1000" y="215" font-family="Vazirmatn, Tahoma" font-size="24" fill="#99F6E4"
+        text-anchor="start" direction="rtl">پاسخ واحد ندارد ولی مرز بهینه‌ی پارتو دارد</text>
+
+  <!-- محورهای نمودار -->
+  <line x1="200" y1="300" x2="200" y2="720" stroke="#5EEAD4" stroke-opacity="0.2" stroke-width="2"/>
+  <line x1="200" y1="720" x2="850" y2="720" stroke="#5EEAD4" stroke-opacity="0.2" stroke-width="2"/>
+  <text x="195" y="290" font-family="Vazirmatn, Tahoma" font-size="18" fill="#5EEAD4"
+        text-anchor="end" direction="rtl">↑ آزادی</text>
+  <text x="860" y="745" font-family="Vazirmatn, Tahoma" font-size="18" fill="#5EEAD4"
+        text-anchor="start" direction="rtl">برابری →</text>
+
+  <!-- منحنی پارتو -->
+  <path d="M 250 350 Q 350 360 450 420 Q 550 480 650 580 Q 720 650 780 700"
+        fill="none" stroke="#F59E0B" stroke-opacity="0.6" stroke-width="3"/>
+  <text x="420" y="380" font-family="Vazirmatn, Tahoma" font-size="20" fill="#FCD34D"
+        font-weight="bold" text-anchor="start" direction="rtl">مرز بهینه‌ی پارتو</text>
+
+  <!-- نقاط روی منحنی -->
+  <circle cx="300" cy="360" r="8" fill="#06B6D4" fill-opacity="0.5" stroke="#06B6D4" stroke-opacity="0.8"/>
+  <text x="290" y="345" font-family="Vazirmatn, Tahoma" font-size="16" fill="#67E8F9"
+        text-anchor="end" direction="rtl">لیبرتارین</text>
+
+  <circle cx="530" cy="460" r="8" fill="#22C55E" fill-opacity="0.5" stroke="#22C55E" stroke-opacity="0.8"/>
+  <text x="540" y="450" font-family="Vazirmatn, Tahoma" font-size="16" fill="#4ADE80"
+        text-anchor="start" direction="rtl">سوسیال‌دموکرات</text>
+
+  <circle cx="750" cy="670" r="8" fill="#A855F7" fill-opacity="0.5" stroke="#A855F7" stroke-opacity="0.8"/>
+  <text x="760" y="660" font-family="Vazirmatn, Tahoma" font-size="16" fill="#D8B4FE"
+        text-anchor="start" direction="rtl">برابری‌خواه</text>
+
+  <!-- نقطه زیر منحنی (ناکارآمد) -->
+  <circle cx="500" cy="600" r="8" fill="#DC2626" fill-opacity="0.4" stroke="#DC2626" stroke-opacity="0.6"/>
+  <text x="510" y="625" font-family="Vazirmatn, Tahoma" font-size="16" fill="#F87171"
+        text-anchor="start" direction="rtl">ناکارآمد ✗</text>
+  <line x1="500" y1="600" x2="500" y2="470" stroke="#DC2626" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- دیدگاه نویسنده -->
+  <rect x="80" y="760" width="920" height="180" rx="22"
+        fill="#14B8A6" fill-opacity="0.04" stroke="#14B8A6" stroke-opacity="0.18"/>
+  <text x="960" y="805" font-family="Vazirmatn, Tahoma" font-size="28" fill="#CCFBF1"
+        font-weight="bold" text-anchor="start" direction="rtl">⟡ دیدگاه نویسنده</text>
+  <text x="960" y="848" font-family="Vazirmatn, Tahoma" font-size="23" fill="#EEE"
+        text-anchor="start" direction="rtl">درستی اخلاقی مانند معادله‌ی درجه سوم: محاسباتی ولی نه دلبخواه</text>
+  <text x="960" y="888" font-family="Vazirmatn, Tahoma" font-size="23" fill="#EEE"
+        text-anchor="start" direction="rtl">ولی جواب واحد ندارد: مجموعه‌ی جواب‌های بهینه‌ی پارتو</text>
+  <text x="960" y="925" font-family="Vazirmatn, Tahoma" font-size="21" fill="#5EEAD4"
+        text-anchor="start" direction="rtl">هم غیردلبخواهی حفظ می‌شود · هم تکثر پاسخ‌های معقول توضیح داده می‌شود</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="975" width="1000" height="2" rx="1" fill="#14B8A6" opacity="0.2"/>
+  <text x="540" y="1015" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">Multi-Objective Optimization · Pareto Frontier</text>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۱۱ · اخلاق و حق · تشبیه ریاضیاتی</text>
+</svg>

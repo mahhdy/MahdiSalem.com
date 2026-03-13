@@ -1,0 +1,94 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-def" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0E1C"/>
+      <stop offset="50%" stop-color="#10142A"/>
+      <stop offset="100%" stop-color="#0A0C18"/>
+    </linearGradient>
+    <radialGradient id="defGlow" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-def)"/>
+  <rect width="1080" height="1080" fill="url(#defGlow)"/>
+
+  <!-- حاشیه تزئینی -->
+  <rect x="55" y="95" width="970" height="900" rx="28"
+        fill="none" stroke="#06B6D4" stroke-opacity="0.08" stroke-width="1.5"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="380" height="48" rx="24"
+        fill="#06B6D4" fill-opacity="0.08" stroke="#06B6D4" stroke-opacity="0.25"/>
+  <text x="380" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#22D3EE"
+        text-anchor="start" direction="rtl">تعریف محوری · قلب کتاب</text>
+
+  <!-- عنوان -->
+  <text x="540" y="162" font-family="Vazirmatn, Tahoma" font-size="44" font-weight="900"
+        fill="#E0F2FE" text-anchor="middle" direction="rtl">تعریف نویسنده از «حق»</text>
+
+  <!-- خط جداکننده -->
+  <rect x="200" y="185" width="680" height="2" rx="1" fill="#06B6D4" opacity="0.15"/>
+
+  <!-- متن تعریف -->
+  <text x="980" y="240" font-family="Vazirmatn, Tahoma" font-size="24" fill="#E0F2FE"
+        text-anchor="start" direction="rtl" font-weight="bold">حق آن تعاریف و مرزبندی‌ها،</text>
+  <text x="980" y="278" font-family="Vazirmatn, Tahoma" font-size="24" fill="#E0F2FE"
+        text-anchor="start" direction="rtl" font-weight="bold">اجازه‌ها و اختیارها، امتیازها و استثنائات،</text>
+  <text x="980" y="316" font-family="Vazirmatn, Tahoma" font-size="24" fill="#E0F2FE"
+        text-anchor="start" direction="rtl" font-weight="bold">امکانات و آزادی‌هایی است</text>
+  <text x="980" y="358" font-family="Vazirmatn, Tahoma" font-size="22" fill="#BAE6FD"
+        text-anchor="start" direction="rtl">که بر اساس نقش‌ها و تعاملات و نهادسازی‌ها</text>
+  <text x="980" y="393" font-family="Vazirmatn, Tahoma" font-size="22" fill="#BAE6FD"
+        text-anchor="start" direction="rtl">در مقابل تکالیف، تعهدات و مسئولیت‌ها</text>
+  <text x="980" y="430" font-family="Vazirmatn, Tahoma" font-size="22" fill="#BAE6FD"
+        text-anchor="start" direction="rtl">به منظور پیشبرد توازن و تعادل</text>
+  <text x="980" y="465" font-family="Vazirmatn, Tahoma" font-size="22" fill="#BAE6FD"
+        text-anchor="start" direction="rtl">از سوی مرجعی دارای مشروعیت</text>
+  <text x="980" y="505" font-family="Vazirmatn, Tahoma" font-size="24" fill="#22D3EE"
+        text-anchor="start" direction="rtl" font-weight="bold">منظماً بازتعریف و بازتثبیت می‌شوند</text>
+  <text x="980" y="545" font-family="Vazirmatn, Tahoma" font-size="22" fill="#BAE6FD"
+        text-anchor="start" direction="rtl">تا منجر به جامعه‌ای شود که</text>
+  <text x="980" y="583" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FCD34D"
+        text-anchor="start" direction="rtl" font-weight="bold">مطلوب‌تر، کارآمدتر و مبتنی بر انصاف بیشتر است.</text>
+
+  <!-- خط جداکننده -->
+  <rect x="200" y="615" width="680" height="2" rx="1" fill="#06B6D4" opacity="0.12"/>
+
+  <!-- خلاصه‌ی سه‌کلمه‌ای -->
+  <text x="540" y="665" font-family="Vazirmatn, Tahoma" font-size="20" fill="#888"
+        text-anchor="middle" direction="rtl">به زبان ساده‌تر:</text>
+
+  <rect x="700" y="690" width="280" height="60" rx="14"
+        fill="#06B6D4" fill-opacity="0.05" stroke="#06B6D4" stroke-opacity="0.2"/>
+  <text x="840" y="727" font-family="Vazirmatn, Tahoma" font-size="24" fill="#67E8F9"
+        font-weight="bold" text-anchor="middle" direction="rtl">دامنه‌ی مجاز کنش</text>
+
+  <rect x="390" y="690" width="290" height="60" rx="14"
+        fill="#F59E0B" fill-opacity="0.05" stroke="#F59E0B" stroke-opacity="0.2"/>
+  <text x="535" y="727" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FCD34D"
+        font-weight="bold" text-anchor="middle" direction="rtl">مصون از تعرض</text>
+
+  <rect x="80" y="690" width="290" height="60" rx="14"
+        fill="#22C55E" fill-opacity="0.05" stroke="#22C55E" stroke-opacity="0.2"/>
+  <text x="225" y="727" font-family="Vazirmatn, Tahoma" font-size="24" fill="#4ADE80"
+        font-weight="bold" text-anchor="middle" direction="rtl">بی‌نیاز از تأیید</text>
+
+  <!-- ویژگی تعریف -->
+  <rect x="80" y="780" width="920" height="120" rx="18"
+        fill="#A855F7" fill-opacity="0.03" stroke="#A855F7" stroke-opacity="0.15"/>
+  <text x="960" y="822" font-family="Vazirmatn, Tahoma" font-size="22" fill="#C4B5FD"
+        font-weight="bold" text-anchor="start" direction="rtl">ویژگی: تعریف فرایندمحور نه خروجی‌محور</text>
+  <text x="960" y="858" font-family="Vazirmatn, Tahoma" font-size="21" fill="#AAA"
+        text-anchor="start" direction="rtl">حق خروجی ماشینی زنده، خودسامان و خودنقاد است</text>
+  <text x="960" y="890" font-family="Vazirmatn, Tahoma" font-size="19" fill="#888"
+        text-anchor="start" direction="rtl">نقد: بیشتر شبیه «نظام حقوقی ایدئال» است تا تعریف صرف «حق»</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="940" width="1000" height="2" rx="1" fill="#06B6D4" opacity="0.2"/>
+  <text x="540" y="980" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">تعریفی هنجاری · تا حدودی آرمانی/تجویزی · مقایسه با هوفلد: عمیق‌تر ولی مبهم‌تر</text>
+  <text x="540" y="1050" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">قلب کتاب · فصل ۸ · تعریف محوری</text>
+</svg>

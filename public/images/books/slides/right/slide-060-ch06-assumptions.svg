@@ -1,0 +1,72 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg60" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+    <linearGradient id="warmLine" x1="0" y1="0" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#DC2626"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg60)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="360" height="48" rx="24"
+        fill="#F59E0B" fill-opacity="0.08" stroke="#F59E0B" stroke-opacity="0.25"/>
+  <text x="220" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#F59E0B"
+        text-anchor="middle" direction="rtl">فصل ۶ · اسلاید ۱ از ۱۰</text>
+
+  <text x="540" y="140" font-family="Vazirmatn, Tahoma" font-size="22" fill="#556"
+        text-anchor="middle" direction="rtl">بخش دوم: تأسیس</text>
+
+  <!-- عنوان -->
+  <text x="540" y="255" font-family="Vazirmatn, Tahoma" font-size="64" font-weight="900"
+        fill="#F59E0B" text-anchor="middle" direction="rtl">فرض‌های بنیادین</text>
+  <text x="540" y="310" font-family="Vazirmatn, Tahoma" font-size="28" fill="#778"
+        text-anchor="middle" direction="rtl">چهار پیش‌فرض غیراستدلالی ولی بازنگری‌پذیر</text>
+
+  <!-- فرض ۱ -->
+  <rect x="80" y="370" width="920" height="120" rx="18"
+        fill="#DC2626" fill-opacity="0.05" stroke="#DC2626" stroke-opacity="0.25" stroke-width="2"/>
+  <text x="960" y="420" font-family="Vazirmatn, Tahoma" font-size="36" fill="#F87171"
+        font-weight="bold" text-anchor="start" direction="rtl">۱. عاملیت و اختیار انسان</text>
+  <text x="960" y="468" font-family="Vazirmatn, Tahoma" font-size="26" fill="#AAA"
+        text-anchor="start" direction="rtl">انسان فاعل مختار خلّاق است نه واکنشی صِرف</text>
+
+  <!-- فرض ۲ -->
+  <rect x="80" y="510" width="920" height="120" rx="18"
+        fill="#F59E0B" fill-opacity="0.05" stroke="#F59E0B" stroke-opacity="0.25" stroke-width="2"/>
+  <text x="960" y="560" font-family="Vazirmatn, Tahoma" font-size="36" fill="#F59E0B"
+        font-weight="bold" text-anchor="start" direction="rtl">۲. ارتباطی‌بودن حق</text>
+  <text x="960" y="608" font-family="Vazirmatn, Tahoma" font-size="26" fill="#AAA"
+        text-anchor="start" direction="rtl">حق جز در جمع و تعامل معنا ندارد</text>
+
+  <!-- فرض ۳ -->
+  <rect x="80" y="650" width="920" height="120" rx="18"
+        fill="#22C55E" fill-opacity="0.05" stroke="#22C55E" stroke-opacity="0.25" stroke-width="2"/>
+  <text x="960" y="700" font-family="Vazirmatn, Tahoma" font-size="36" fill="#4ADE80"
+        font-weight="bold" text-anchor="start" direction="rtl">۳. امکان بهبود</text>
+  <text x="960" y="748" font-family="Vazirmatn, Tahoma" font-size="26" fill="#AAA"
+        text-anchor="start" direction="rtl">نظام حقوقی تنقیح‌پذیر و اصلاح‌پذیر است</text>
+
+  <!-- فرض ۴ -->
+  <rect x="80" y="790" width="920" height="120" rx="18"
+        fill="#A855F7" fill-opacity="0.05" stroke="#A855F7" stroke-opacity="0.25" stroke-width="2"/>
+  <text x="960" y="840" font-family="Vazirmatn, Tahoma" font-size="36" fill="#C084FC"
+        font-weight="bold" text-anchor="start" direction="rtl">۴. اخلاق به مثابهٔ قطب‌نما</text>
+  <text x="960" y="888" font-family="Vazirmatn, Tahoma" font-size="26" fill="#AAA"
+        text-anchor="start" direction="rtl">حتی اگر شمالی نباشد، قطب‌نما کار می‌کند</text>
+
+  <!-- نقد -->
+  <rect x="120" y="945" width="840" height="60" rx="12"
+        fill="#1A1A30" stroke="#778" stroke-opacity="0.15"/>
+  <text x="540" y="985" font-family="Vazirmatn, Tahoma" font-size="24" fill="#999"
+        text-anchor="middle" direction="rtl">⚡ نقد: آیا «فرض» به معنای جزم‌اندیشی نیست؟ نه — بازنگری‌پذیرند</text>
+
+  <rect x="40" y="1035" width="1000" height="2.5" rx="1" fill="url(#warmLine)" opacity="0.3"/>
+  <text x="540" y="1065" font-family="Vazirmatn, Tahoma" font-size="22" fill="#556"
+        text-anchor="middle" direction="rtl">بعدی: پل باید و هست ←</text>
+</svg>

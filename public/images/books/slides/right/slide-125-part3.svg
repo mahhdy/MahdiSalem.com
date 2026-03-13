@@ -1,0 +1,47 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgP3" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A0A0A"/>
+      <stop offset="100%" stop-color="#2A1A1A"/>
+    </linearGradient>
+    <linearGradient id="glP3" x1="200" y1="0" x2="880" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#DC2626"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bgP3)"/>
+
+  <g stroke="#DC2626" stroke-opacity="0.03" stroke-width="0.5">
+    <circle cx="540" cy="540" r="120"/>
+    <circle cx="540" cy="540" r="240"/>
+    <circle cx="540" cy="540" r="360"/>
+  </g>
+
+  <text x="540" y="300" font-family="Vazirmatn, Tahoma" font-size="180" font-weight="900"
+        fill="#DC2626" fill-opacity="0.06" text-anchor="middle">۳</text>
+
+  <text x="540" y="400" font-family="Vazirmatn, Tahoma" font-size="30" fill="#778"
+        text-anchor="middle" direction="rtl">بخش سوم</text>
+
+  <text x="540" y="510" font-family="Vazirmatn, Tahoma" font-size="62" font-weight="900"
+        fill="#FFFFFF" text-anchor="middle" direction="rtl">آزمون</text>
+  <text x="540" y="570" font-family="Vazirmatn, Tahoma" font-size="34" fill="#F87171"
+        text-anchor="middle" direction="rtl">تطبیق و نقد</text>
+
+  <rect x="290" y="595" width="500" height="3" rx="1.5" fill="url(#glP3)" opacity="0.5"/>
+
+  <text x="540" y="670" font-family="Vazirmatn, Tahoma" font-size="28" fill="#AAB"
+        text-anchor="middle" direction="rtl">فصل ۱۳: دوگانه‌ها</text>
+  <text x="540" y="715" font-family="Vazirmatn, Tahoma" font-size="28" fill="#AAB"
+        text-anchor="middle" direction="rtl">فصل ۱۴: حق و توسعه</text>
+  <text x="540" y="760" font-family="Vazirmatn, Tahoma" font-size="28" fill="#AAB"
+        text-anchor="middle" direction="rtl">فصل ۱۵: تله‌ها و پارادوکس‌ها</text>
+
+  <rect x="140" y="830" width="800" height="80" rx="16"
+        fill="#DC2626" fill-opacity="0.05" stroke="#DC2626" stroke-opacity="0.15"/>
+  <text x="540" y="880" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F87171"
+        text-anchor="middle" direction="rtl">آیا نظریه زیر فشار واقعیت دوام می‌آورد؟</text>
+
+  <rect x="40" y="1035" width="1000" height="2.5" rx="1" fill="url(#glP3)" opacity="0.3"/>
+</svg>

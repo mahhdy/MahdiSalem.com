@@ -1,0 +1,82 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-nash" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A1628"/>
+      <stop offset="100%" stop-color="#0E1A20"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-nash)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="480" height="48" rx="24"
+        fill="#06B6D4" fill-opacity="0.08" stroke="#06B6D4" stroke-opacity="0.25"/>
+  <text x="480" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#22D3EE"
+        text-anchor="start" direction="rtl">فصل ۹ · بازی اجتماعی · تعادل نش استعلایی</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="165" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#E0F2FE" text-anchor="start" direction="rtl">دو تعادل در بازی حقوق</text>
+  <text x="1000" y="215" font-family="Vazirmatn, Tahoma" font-size="24" fill="#7DD3FC"
+        text-anchor="start" direction="rtl">عقلانیت ابزاری در برابر عقلانیت ارزشی</text>
+
+  <!-- محور عمودی -->
+  <line x1="200" y1="290" x2="200" y2="750" stroke="#67E8F9" stroke-opacity="0.2" stroke-width="2"/>
+  <text x="195" y="280" font-family="Vazirmatn, Tahoma" font-size="18" fill="#67E8F9"
+        text-anchor="end" direction="rtl">↑ مطلوبیت جمعی</text>
+
+  <!-- محور افقی -->
+  <line x1="200" y1="750" x2="900" y2="750" stroke="#67E8F9" stroke-opacity="0.2" stroke-width="2"/>
+  <text x="910" y="770" font-family="Vazirmatn, Tahoma" font-size="18" fill="#67E8F9"
+        text-anchor="start" direction="rtl">مطلوبیت فردی →</text>
+
+  <!-- تعادل پایین (ابزاری) -->
+  <circle cx="600" cy="620" r="45" fill="#DC2626" fill-opacity="0.08" stroke="#DC2626" stroke-opacity="0.4" stroke-width="2"/>
+  <text x="600" y="612" font-family="Vazirmatn, Tahoma" font-size="20" fill="#F87171"
+        font-weight="bold" text-anchor="middle" direction="rtl">تعادل</text>
+  <text x="600" y="638" font-family="Vazirmatn, Tahoma" font-size="18" fill="#FCA5A5"
+        text-anchor="middle" direction="rtl">ابزاری</text>
+
+  <!-- تعادل بالا (استعلایی) -->
+  <circle cx="450" cy="380" r="50" fill="#22C55E" fill-opacity="0.08" stroke="#22C55E" stroke-opacity="0.5" stroke-width="2.5"/>
+  <text x="450" y="372" font-family="Vazirmatn, Tahoma" font-size="22" fill="#4ADE80"
+        font-weight="bold" text-anchor="middle" direction="rtl">تعادل</text>
+  <text x="450" y="400" font-family="Vazirmatn, Tahoma" font-size="18" fill="#86EFAC"
+        text-anchor="middle" direction="rtl">استعلایی</text>
+
+  <!-- فلش صعود -->
+  <path d="M 580 590 Q 520 500 470 420" fill="none"
+        stroke="#FCD34D" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="6,4"/>
+  <polygon points="473,425 463,440 480,438" fill="#FCD34D" fill-opacity="0.5"/>
+  <text x="555" y="510" font-family="Vazirmatn, Tahoma" font-size="18" fill="#FCD34D"
+        text-anchor="middle" direction="rtl" transform="rotate(-35, 555, 510)">گسترش مطلوبیت</text>
+
+  <!-- جعبه توضیحی راست -->
+  <rect x="620" y="300" width="400" height="160" rx="16"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.15"/>
+  <text x="980" y="340" font-family="Vazirmatn, Tahoma" font-size="22" fill="#67E8F9"
+        font-weight="bold" text-anchor="start" direction="rtl">عقلانیت ابزاری</text>
+  <text x="980" y="375" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="start" direction="rtl">محاسباتی · مکانیکی · سودمحور</text>
+  <text x="980" y="415" font-family="Vazirmatn, Tahoma" font-size="22" fill="#4ADE80"
+        font-weight="bold" text-anchor="start" direction="rtl">عقلانیت ارزشی</text>
+  <text x="980" y="450" font-family="Vazirmatn, Tahoma" font-size="20" fill="#BBB"
+        text-anchor="start" direction="rtl">ارگانیکی · احساساتی · معنامحور</text>
+
+  <!-- نکته کلیدی -->
+  <rect x="80" y="800" width="920" height="130" rx="18"
+        fill="#FCD34D" fill-opacity="0.04" stroke="#FCD34D" stroke-opacity="0.2"/>
+  <text x="960" y="845" font-family="Vazirmatn, Tahoma" font-size="28" fill="#FEF3C7"
+        font-weight="bold" text-anchor="start" direction="rtl">⟡ ابتکار نویسنده</text>
+  <text x="960" y="885" font-family="Vazirmatn, Tahoma" font-size="22" fill="#DDD"
+        text-anchor="start" direction="rtl">«گسترش مطلوبیت» خود یک مطلوبیت انسان رهاشده است</text>
+  <text x="960" y="915" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">مقایسه: خواسته‌های مرتبه‌ی دوم فرانکفورت · فراترجیحات سِن</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="970" width="1000" height="2" rx="1" fill="#06B6D4" opacity="0.2"/>
+  <text x="540" y="1010" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">نقد: آیا «تعادل نش» اینجا استعاره است یا ادعای فنی؟</text>
+  <text x="540" y="1050" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">پیشنهاد: «تعادل هنجاری» — الهام از نش ولی فراتر از تعریف ریاضیاتی</text>
+</svg>

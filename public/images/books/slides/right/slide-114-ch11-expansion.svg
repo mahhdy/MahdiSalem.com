@@ -1,0 +1,96 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-expand" x1="0" y1="1080" x2="1080" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A100A"/>
+      <stop offset="100%" stop-color="#0E1820"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-expand)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="460" height="48" rx="24"
+        fill="#22C55E" fill-opacity="0.08" stroke="#22C55E" stroke-opacity="0.25"/>
+  <text x="460" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#4ADE80"
+        text-anchor="start" direction="rtl">فصل ۱۱ · قبض و بسط اخلاق · دیدگاه نویسنده</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="165" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#ECFDF5" text-anchor="start" direction="rtl">اخلاق بسط می‌یابد</text>
+  <text x="1000" y="218" font-family="Vazirmatn, Tahoma" font-size="26" fill="#86EFAC"
+        text-anchor="start" direction="rtl">با پیچیدگی اجتماعی، دامنه‌ی اخلاق گسترش می‌یابد</text>
+
+  <!-- نمودار مراحل — افقی با ارتفاع صعودی -->
+  <!-- مرحله ۱ -->
+  <rect x="800" y="500" width="180" height="190" rx="14"
+        fill="#22C55E" fill-opacity="0.03" stroke="#22C55E" stroke-opacity="0.2"/>
+  <rect x="800" y="640" width="180" height="50" rx="0 0 14 14"
+        fill="#22C55E" fill-opacity="0.08"/>
+  <text x="890" y="540" font-family="Vazirmatn, Tahoma" font-size="20" fill="#4ADE80"
+        font-weight="bold" text-anchor="middle" direction="rtl">فئودالی</text>
+  <text x="890" y="575" font-family="Vazirmatn, Tahoma" font-size="17" fill="#AAA"
+        text-anchor="middle" direction="rtl">اخلاق حداقلی</text>
+  <text x="890" y="600" font-family="Vazirmatn, Tahoma" font-size="17" fill="#AAA"
+        text-anchor="middle" direction="rtl">تکلیف‌محور</text>
+  <text x="890" y="673" font-family="Vazirmatn, Tahoma" font-size="16" fill="#4ADE80"
+        text-anchor="middle" direction="rtl">حق = لطف ارباب</text>
+
+  <!-- فلش -->
+  <polygon points="790,590 778,580 778,600" fill="#86EFAC" fill-opacity="0.3"/>
+
+  <!-- مرحله ۲ -->
+  <rect x="560" y="400" width="210" height="290" rx="14"
+        fill="#06B6D4" fill-opacity="0.03" stroke="#06B6D4" stroke-opacity="0.2"/>
+  <rect x="560" y="640" width="210" height="50" rx="0 0 14 14"
+        fill="#06B6D4" fill-opacity="0.08"/>
+  <text x="665" y="440" font-family="Vazirmatn, Tahoma" font-size="20" fill="#67E8F9"
+        font-weight="bold" text-anchor="middle" direction="rtl">دیوان‌سالاری</text>
+  <text x="665" y="475" font-family="Vazirmatn, Tahoma" font-size="17" fill="#AAA"
+        text-anchor="middle" direction="rtl">تخصص‌ها ضروری</text>
+  <text x="665" y="505" font-family="Vazirmatn, Tahoma" font-size="17" fill="#AAA"
+        text-anchor="middle" direction="rtl">طبقه‌ی متوسط</text>
+  <text x="665" y="535" font-family="Vazirmatn, Tahoma" font-size="17" fill="#AAA"
+        text-anchor="middle" direction="rtl">مشارکت اجباری</text>
+  <text x="665" y="673" font-family="Vazirmatn, Tahoma" font-size="16" fill="#67E8F9"
+        text-anchor="middle" direction="rtl">حق = نیاز نظام</text>
+
+  <!-- فلش -->
+  <polygon points="550,520 538,510 538,530" fill="#7DD3FC" fill-opacity="0.3"/>
+
+  <!-- مرحله ۳ -->
+  <rect x="280" y="300" width="250" height="390" rx="14"
+        fill="#A855F7" fill-opacity="0.04" stroke="#A855F7" stroke-opacity="0.2"/>
+  <rect x="280" y="640" width="250" height="50" rx="0 0 14 14"
+        fill="#A855F7" fill-opacity="0.08"/>
+  <text x="405" y="340" font-family="Vazirmatn, Tahoma" font-size="20" fill="#D8B4FE"
+        font-weight="bold" text-anchor="middle" direction="rtl">جامعه‌ی پیچیده‌ی مدرن</text>
+  <text x="405" y="375" font-family="Vazirmatn, Tahoma" font-size="17" fill="#AAA"
+        text-anchor="middle" direction="rtl">همکاری عمیق‌تر</text>
+  <text x="405" y="405" font-family="Vazirmatn, Tahoma" font-size="17" fill="#AAA"
+        text-anchor="middle" direction="rtl">عوامل اخلاقی آگاه‌تر</text>
+  <text x="405" y="435" font-family="Vazirmatn, Tahoma" font-size="17" fill="#AAA"
+        text-anchor="middle" direction="rtl">گفتگوی مدنی</text>
+  <text x="405" y="465" font-family="Vazirmatn, Tahoma" font-size="17" fill="#AAA"
+        text-anchor="middle" direction="rtl">حوزه‌ی عمومی گسترده</text>
+  <text x="405" y="673" font-family="Vazirmatn, Tahoma" font-size="16" fill="#D8B4FE"
+        text-anchor="middle" direction="rtl">حق = بنیاد نظم</text>
+
+  <!-- دیدگاه نویسنده -->
+  <rect x="80" y="720" width="920" height="170" rx="20"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.18"/>
+  <text x="960" y="762" font-family="Vazirmatn, Tahoma" font-size="28" fill="#FEF3C7"
+        font-weight="bold" text-anchor="start" direction="rtl">⟡ نکته‌ی کلیدی نویسنده</text>
+  <text x="960" y="805" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EEE"
+        text-anchor="start" direction="rtl">مشارکت اخلاقی طبقه‌ی متخصص یک لطف نیست</text>
+  <text x="960" y="845" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FCD34D"
+        font-weight="bold" text-anchor="start" direction="rtl">یک اجبار اجتماعی خودمُصر است</text>
+  <text x="960" y="878" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">هم‌سو: هابرماس (حوزه‌ی عمومی) + آسموگلو-رابینسون (نهادهای فراگیر)</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="930" width="1000" height="2" rx="1" fill="#22C55E" opacity="0.2"/>
+  <text x="540" y="975" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">اخلاق قبض و بسط دارد · بسط آن با تمدن و همکاری عمیق‌تر گره می‌خورد</text>
+  <text x="540" y="1050" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۱۱ · اخلاق و حق · ادامه دارد ←</text>
+</svg>

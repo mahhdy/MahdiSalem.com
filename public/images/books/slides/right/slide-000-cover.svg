@@ -1,0 +1,71 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#060D18"/>
+      <stop offset="100%" stop-color="#1B2A4A"/>
+    </linearGradient>
+    <linearGradient id="gl" x1="300" y1="0" x2="780" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8B6914"/>
+      <stop offset="50%" stop-color="#E8C872"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </linearGradient>
+    <radialGradient id="rg" cx="50%" cy="32%" r="38%">
+      <stop offset="0%" stop-color="#C19A3E" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#C19A3E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <rect width="1080" height="1080" fill="url(#rg)"/>
+
+  <!-- حلقه‌های تزئینی -->
+  <circle cx="540" cy="340" r="160" fill="none" stroke="#C19A3E" stroke-opacity="0.08" stroke-width="1.5"/>
+  <circle cx="540" cy="340" r="250" fill="none" stroke="#C19A3E" stroke-opacity="0.05" stroke-width="1"/>
+  <circle cx="540" cy="340" r="350" fill="none" stroke="#C19A3E" stroke-opacity="0.03" stroke-width="0.8"/>
+  <circle cx="540" cy="340" r="460" fill="none" stroke="#C19A3E" stroke-opacity="0.02" stroke-width="0.5"/>
+
+  <!-- خطوط عمودی ظریف -->
+  <g stroke="#C19A3E" stroke-opacity="0.025" stroke-width="0.5">
+    <line x1="180" y1="0" x2="180" y2="1080"/>
+    <line x1="360" y1="0" x2="360" y2="1080"/>
+    <line x1="540" y1="0" x2="540" y2="1080"/>
+    <line x1="720" y1="0" x2="720" y2="1080"/>
+    <line x1="900" y1="0" x2="900" y2="1080"/>
+  </g>
+
+  <!-- عنوان بزرگ -->
+  <text x="540" y="370" font-family="Vazirmatn, Tahoma" font-size="150" font-weight="900"
+        fill="url(#gl)" text-anchor="middle">حق</text>
+
+  <!-- زیرعنوان -->
+  <text x="540" y="445" font-family="Vazirmatn, Tahoma" font-size="38" fill="#C19A3E"
+        text-anchor="middle" direction="rtl" letter-spacing="6">فرایند · بازی · مهندسی</text>
+
+  <!-- خط جداکننده -->
+  <rect x="340" y="478" width="400" height="2.5" rx="1" fill="url(#gl)"/>
+
+  <!-- تز اصلی -->
+  <text x="540" y="555" font-family="Vazirmatn, Tahoma" font-size="32" fill="#D0D8E0"
+        text-anchor="middle" direction="rtl">حق نه شیء است، نه ویژگی ثابت</text>
+  <text x="540" y="605" font-family="Vazirmatn, Tahoma" font-size="34" fill="#FFFFFF"
+        font-weight="bold" text-anchor="middle" direction="rtl">خروجی یک فرایند زنده است</text>
+
+  <!-- جعبهٔ توضیح -->
+  <rect x="130" y="660" width="820" height="110" rx="18"
+        fill="#C19A3E" fill-opacity="0.05" stroke="#C19A3E" stroke-opacity="0.15"/>
+  <text x="540" y="705" font-family="Vazirmatn, Tahoma" font-size="24" fill="#8899AA"
+        text-anchor="middle" direction="rtl">درآمدی بر نظریهٔ فرایندی حق</text>
+  <text x="540" y="745" font-family="Vazirmatn, Tahoma" font-size="24" fill="#8899AA"
+        text-anchor="middle" direction="rtl">تحلیلی تطبیقی‐انتقادی در فلسفه، حقوق و الهیات</text>
+
+  <!-- پرسش‌های قلاب -->
+  <text x="540" y="855" font-family="Vazirmatn, Tahoma" font-size="27" fill="#C19A3E"
+        text-anchor="middle" direction="rtl">حق از کجا می‌آید؟  چگونه ساخته می‌شود؟</text>
+  <text x="540" y="900" font-family="Vazirmatn, Tahoma" font-size="27" fill="#C19A3E"
+        text-anchor="middle" direction="rtl">چه تضمینی برای عدالت دارد؟</text>
+
+  <!-- پاصفحه -->
+  <rect x="40" y="1005" width="1000" height="2.5" rx="1" fill="url(#gl)" opacity="0.45"/>
+  <text x="540" y="1050" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556677"
+        text-anchor="middle" direction="rtl">ویراست نخست · ۱۴۰۴</text>
+</svg>

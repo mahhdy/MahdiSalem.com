@@ -1,0 +1,56 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-quote" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1C1917"/>
+      <stop offset="100%" stop-color="#0C0A09"/>
+    </linearGradient>
+    <radialGradient id="warmGlow" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#C19A3E" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#C19A3E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-quote)"/>
+  <rect width="1080" height="1080" fill="url(#warmGlow)"/>
+
+  <!-- خط تزئینی طلایی عمودی -->
+  <rect x="920" y="200" width="4" height="680" rx="2" fill="#C19A3E" opacity="0.25"/>
+
+  <!-- علامت نقل‌قول بزرگ -->
+  <text x="940" y="280" font-family="Georgia, serif" font-size="180" fill="#C19A3E" fill-opacity="0.12"
+        text-anchor="start">"</text>
+
+  <!-- متن اصلی نقل‌قول -->
+  <text x="880" y="250" font-family="IranNastaliq, Vazirmatn, Tahoma" font-size="72" fill="#F5F0E8"
+        text-anchor="start" direction="rtl" font-weight="bold">حق خروجی فرایندی زنده است</text>
+  <text x="880" y="385" font-family="IranNastaliq, Vazirmatn, Tahoma" font-size="72" fill="#F5F0E8"
+        text-anchor="start" direction="rtl" font-weight="bold">نه شیئی ثابت</text>
+  <text x="880" y="520" font-family="IranNastaliq, Vazirmatn, Tahoma" font-size="72" fill="#F5F0E8"
+        text-anchor="start" direction="rtl" font-weight="bold">نه ویژگی‌ای ازلی</text>
+
+  <!-- خط جدا کننده -->
+  <rect x="400" y="570" width="480" height="2" rx="1" fill="#C19A3E" opacity="0.3"/>
+
+  <!-- توضیح -->
+  <text x="880" y="630" font-family="Vazirmatn, Tahoma" font-size="26" fill="#D4C5A0"
+        text-anchor="start" direction="rtl">بستنی شیرینی نیست</text>
+  <text x="880" y="690" font-family="Vazirmatn, Tahoma" font-size="26" fill="#D4C5A0"
+        text-anchor="start" direction="rtl">و بستنی‌ساز هم شیرینی نیست</text>
+  <text x="880" y="750" font-family="Vazirmatn, Tahoma" font-size="28" fill="#C19A3E"
+        text-anchor="start" direction="rtl" font-weight="bold">ولی شیرینی مدیریت‌پذیر (نه اتفاقی) جز از این مسیر حاصل نمی‌شود!</text>
+
+  <!-- نام -->
+  <text x="880" y="810" font-family="Vazirmatn, Tahoma" font-size="22" fill="#8B7355"
+        text-anchor="start" direction="rtl">— دیدگاه نویسنده دربارهٔ تعریف فرایندی حق</text>
+
+  <!-- تزئین پایین -->
+  <circle cx="540" cy="920" r="3" fill="#C19A3E" opacity="0.4"/>
+  <circle cx="520" cy="920" r="2" fill="#C19A3E" opacity="0.3"/>
+  <circle cx="560" cy="920" r="2" fill="#C19A3E" opacity="0.3"/>
+
+  <!-- پاورقی -->
+  <text x="540" y="1010" font-family="Vazirmatn, Tahoma" font-size="20" fill="#4A4035"
+        text-anchor="middle" direction="rtl">حق و حقوق · درنگ فلسفی</text>
+  <text x="540" y="1050" font-family="Vazirmatn, Tahoma" font-size="18" fill="#3A3530"
+        text-anchor="middle" direction="rtl">فصل ۸ · ماشین تولید حق</text>
+</svg>

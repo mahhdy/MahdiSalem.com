@@ -1,0 +1,77 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-genus" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0E0818"/>
+      <stop offset="100%" stop-color="#141028"/>
+    </linearGradient>
+    <radialGradient id="genusGlow" cx="50%" cy="40%" r="35%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-genus)"/>
+  <rect width="1080" height="1080" fill="url(#genusGlow)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="480" height="48" rx="24"
+        fill="#A855F7" fill-opacity="0.08" stroke="#A855F7" stroke-opacity="0.25"/>
+  <text x="480" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#C084FC"
+        text-anchor="start" direction="rtl">فصل ۲ · جنس و فصل حق · تحلیل مفهومی</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="168" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="900"
+        fill="#F0E6FF" text-anchor="start" direction="rtl">حق: مفهومی بدون فصل</text>
+  <text x="1000" y="222" font-family="Vazirmatn, Tahoma" font-size="24" fill="#D8B4FE"
+        text-anchor="start" direction="rtl">حق بنیادی‌تر از آن است که فصلی داشته باشد · ولی شرایط ایجاد دارد</text>
+
+  <!-- تشبیه: صدق و کذب -->
+  <rect x="80" y="280" width="920" height="150" rx="20"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.2"/>
+  <text x="960" y="325" font-family="Vazirmatn, Tahoma" font-size="26" fill="#67E8F9"
+        font-weight="bold" text-anchor="start" direction="rtl">تشبیه: حق مانند صدق</text>
+  <text x="960" y="368" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">جمله می‌تواند صادق یا کاذب باشد</text>
+  <text x="960" y="405" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">یا در طیفی بهره‌ی کم یا زیادی از حقیقت مستقل داشته باشد</text>
+
+  <!-- فلش -->
+  <polygon points="540,440 530,450 550,450" fill="#A855F7" fill-opacity="0.3"/>
+
+  <!-- حق به همین ترتیب -->
+  <rect x="80" y="465" width="920" height="170" rx="20"
+        fill="#A855F7" fill-opacity="0.04" stroke="#A855F7" stroke-opacity="0.22"/>
+  <text x="960" y="510" font-family="Vazirmatn, Tahoma" font-size="26" fill="#D8B4FE"
+        font-weight="bold" text-anchor="start" direction="rtl">حق نیز همین‌طور:</text>
+  <text x="960" y="553" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">به نسبت یک مشروعیت و مبنای خاص</text>
+  <text x="960" y="590" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">رعایت شده / کشف شده / رعایت نشده / کشف نشده (مخفی)</text>
+  <text x="960" y="625" font-family="Vazirmatn, Tahoma" font-size="20" fill="#C084FC"
+        text-anchor="start" direction="rtl">ذاتی یا اعتباری بودن منشأ اینجا مهم نیست</text>
+
+  <!-- شرایط ایجاد -->
+  <rect x="80" y="670" width="920" height="130" rx="20"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.18"/>
+  <text x="960" y="715" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FCD34D"
+        font-weight="bold" text-anchor="start" direction="rtl">شرایط ایجاد (ملکه‌ی حق)</text>
+  <text x="960" y="758" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">حق در شرایط تنظیمی یا قابل تنظیم</text>
+  <text x="960" y="790" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FCD34D"
+        text-anchor="start" direction="rtl">خطاپذیر و قابل انحراف تعریف می‌شود</text>
+
+  <!-- نکته عمیق -->
+  <rect x="80" y="830" width="920" height="80" rx="14"
+        fill="#22C55E" fill-opacity="0.03" stroke="#22C55E" stroke-opacity="0.12"/>
+  <text x="960" y="868" font-family="Vazirmatn, Tahoma" font-size="22" fill="#86EFAC"
+        text-anchor="start" direction="rtl">↰ حق فصل ندارد ولی ملکه دارد: «امکان خطا و انحراف» شرط وجود حق است</text>
+  <text x="960" y="900" font-family="Vazirmatn, Tahoma" font-size="19" fill="#888"
+        text-anchor="start" direction="rtl">بدون امکان خطا، حقی وجود ندارد — مانند صدق بدون امکان کذب</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="950" width="1000" height="2" rx="1" fill="#A855F7" opacity="0.2"/>
+  <text x="540" y="995" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">تعریف‌هایی که صرفاً به شرط کافی بپردازند، کمک تحلیلی چندانی نمی‌کنند</text>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۲ · جنس و فصل حق</text>
+</svg>

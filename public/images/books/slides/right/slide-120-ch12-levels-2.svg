@@ -1,0 +1,66 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg5b" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D0A18"/>
+      <stop offset="100%" stop-color="#1A1428"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg5b)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="360" height="48" rx="24"
+        fill="#C19A3E" fill-opacity="0.08" stroke="#C19A3E" stroke-opacity="0.25"/>
+  <text x="220" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#C19A3E"
+        text-anchor="middle" direction="rtl">فصل ۱۲ · اسلاید ۲ از ۳</text>
+
+  <!-- عنوان -->
+  <text x="540" y="145" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#C19A3E" text-anchor="middle" direction="rtl">سطح اخص: تعریف آرمانی</text>
+
+  <!-- جعبهٔ تعریف بزرگ -->
+  <rect x="60" y="195" width="960" height="380" rx="22"
+        fill="#C19A3E" fill-opacity="0.04" stroke="#C19A3E" stroke-opacity="0.25" stroke-width="2"/>
+
+  <text x="540" y="270" font-family="Vazirmatn, Tahoma" font-size="32" fill="#FFFFFF"
+        font-weight="bold" text-anchor="middle" direction="rtl">حقوق مهندسی‌شدهٔ مقیّد به کرامت</text>
+
+  <text x="540" y="330" font-family="Vazirmatn, Tahoma" font-size="30" fill="#DDD"
+        text-anchor="middle" direction="rtl">مبتنی بر اخلاق منظوم</text>
+
+  <text x="540" y="390" font-family="Vazirmatn, Tahoma" font-size="30" fill="#DDD"
+        text-anchor="middle" direction="rtl">ضامن پویایی و پایستگی و شکوفایی</text>
+
+  <text x="540" y="450" font-family="Vazirmatn, Tahoma" font-size="30" fill="#DDD"
+        text-anchor="middle" direction="rtl">خروجی ماشین زنده‌ای که</text>
+
+  <text x="540" y="510" font-family="Vazirmatn, Tahoma" font-size="32" fill="#C19A3E"
+        font-weight="bold" text-anchor="middle" direction="rtl">خودسامان · خودنقاد · خودیادگیرنده است</text>
+
+  <!-- سطح حداقلی -->
+  <text x="540" y="640" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#F87171" text-anchor="middle" direction="rtl">سطح حداقلی: خطّ قرمز</text>
+
+  <rect x="60" y="680" width="960" height="200" rx="22"
+        fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.25" stroke-width="2"/>
+
+  <text x="540" y="755" font-family="Vazirmatn, Tahoma" font-size="32" fill="#FFFFFF"
+        font-weight="bold" text-anchor="middle" direction="rtl">دامنه‌های مجاز و مصون از تعرض</text>
+
+  <text x="540" y="815" font-family="Vazirmatn, Tahoma" font-size="30" fill="#DDD"
+        text-anchor="middle" direction="rtl">که بدون‌شان بازی اجتماعی</text>
+
+  <text x="540" y="860" font-family="Vazirmatn, Tahoma" font-size="32" fill="#F87171"
+        font-weight="bold" text-anchor="middle" direction="rtl">متوقف یا غیرقابل‌تحمّل می‌شود</text>
+
+  <!-- نقد -->
+  <rect x="120" y="920" width="840" height="70" rx="14"
+        fill="#A855F7" fill-opacity="0.06" stroke="#A855F7" stroke-opacity="0.2"/>
+  <text x="540" y="965" font-family="Vazirmatn, Tahoma" font-size="24" fill="#C084FC"
+        text-anchor="middle" direction="rtl">↔ تنش: آیا «حداقلی» ثابت جهانی است یا وابسته به فرهنگ؟</text>
+
+  <rect x="40" y="1035" width="1000" height="2.5" rx="1"
+        fill="#C19A3E" opacity="0.3"/>
+  <text x="540" y="1065" font-family="Vazirmatn, Tahoma" font-size="22" fill="#556"
+        text-anchor="middle" direction="rtl">بعدی: مقایسهٔ سطوح با مکاتب ←</text>
+</svg>

@@ -1,0 +1,91 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg37" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D0818"/>
+      <stop offset="100%" stop-color="#08101A"/>
+    </linearGradient>
+    <radialGradient id="glow37" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg37)"/>
+  <rect width="1080" height="1080" fill="url(#glow37)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="340" height="48" rx="24"
+        fill="#06B6D4" fill-opacity="0.08" stroke="#06B6D4" stroke-opacity="0.25"/>
+  <text x="210" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#06B6D4"
+        text-anchor="middle" direction="rtl">فصل ۴ · اسلاید ۷ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="150" font-family="Vazirmatn, Tahoma" font-size="46" font-weight="900"
+        fill="#22D3EE" text-anchor="middle" direction="rtl">جایگاه نویسنده: فراتر از مکاتب</text>
+  <text x="540" y="200" font-family="Vazirmatn, Tahoma" font-size="24" fill="#888"
+        text-anchor="middle" direction="rtl">نه در هیچ مکتبی و نه بیرون از همه — ترکیبی انتقادی</text>
+
+  <!-- دیاگرام: دایره مرکزی + اتصال به ۶ مکتب -->
+  <!-- دایره مرکزی: نویسنده -->
+  <circle cx="540" cy="520" r="90" fill="#06B6D4" fill-opacity="0.08" stroke="#06B6D4" stroke-opacity="0.4" stroke-width="2.5"/>
+  <text x="540" y="510" font-family="Vazirmatn, Tahoma" font-size="24" fill="#22D3EE"
+        text-anchor="middle" direction="rtl" font-weight="bold">رویکرد</text>
+  <text x="540" y="545" font-family="Vazirmatn, Tahoma" font-size="24" fill="#22D3EE"
+        text-anchor="middle" direction="rtl" font-weight="bold">فرایندی-ساختی</text>
+
+  <!-- خط‌ها و دایره‌های اطراف -->
+  <!-- طبیعی (بالا) -->
+  <line x1="540" y1="430" x2="540" y2="310" stroke="#22C55E" stroke-opacity="0.2" stroke-width="2" stroke-dasharray="6,4"/>
+  <circle cx="540" cy="280" r="40" fill="#22C55E" fill-opacity="0.06" stroke="#22C55E" stroke-opacity="0.3"/>
+  <text x="540" y="288" font-family="Vazirmatn, Tahoma" font-size="18" fill="#4ADE80"
+        text-anchor="middle" direction="rtl">طبیعی</text>
+
+  <!-- پوزیتیویسم (بالا-چپ) -->
+  <line x1="465" y1="455" x2="310" y2="330" stroke="#999" stroke-opacity="0.15" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="280" cy="305" r="40" fill="#666" fill-opacity="0.06" stroke="#666" stroke-opacity="0.3"/>
+  <text x="280" y="313" font-family="Vazirmatn, Tahoma" font-size="16" fill="#AAA"
+        text-anchor="middle" direction="rtl">پوزیتیویسم</text>
+
+  <!-- قراردادگرایی (بالا-راست) -->
+  <line x1="615" y1="455" x2="770" y2="330" stroke="#F59E0B" stroke-opacity="0.2" stroke-width="2" stroke-dasharray="6,4"/>
+  <circle cx="800" cy="305" r="40" fill="#F59E0B" fill-opacity="0.06" stroke="#F59E0B" stroke-opacity="0.3"/>
+  <text x="800" y="313" font-family="Vazirmatn, Tahoma" font-size="16" fill="#FBBF24"
+        text-anchor="middle" direction="rtl">قراردادگرایی</text>
+
+  <!-- فایده‌گرایی (پایین-راست) -->
+  <line x1="615" y1="585" x2="770" y2="700" stroke="#06B6D4" stroke-opacity="0.15" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="800" cy="730" r="40" fill="#06B6D4" fill-opacity="0.06" stroke="#06B6D4" stroke-opacity="0.3"/>
+  <text x="800" y="738" font-family="Vazirmatn, Tahoma" font-size="16" fill="#7DD3FC"
+        text-anchor="middle" direction="rtl">فایده‌گرایی</text>
+
+  <!-- مارکسی (پایین-چپ) -->
+  <line x1="465" y1="585" x2="310" y2="700" stroke="#DC2626" stroke-opacity="0.15" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <circle cx="280" cy="730" r="40" fill="#DC2626" fill-opacity="0.06" stroke="#DC2626" stroke-opacity="0.3"/>
+  <text x="280" y="738" font-family="Vazirmatn, Tahoma" font-size="16" fill="#F87171"
+        text-anchor="middle" direction="rtl">نقد مارکسی</text>
+
+  <!-- قابلیت (پایین) -->
+  <line x1="540" y1="610" x2="540" y2="720" stroke="#A855F7" stroke-opacity="0.25" stroke-width="2.5" stroke-dasharray="6,4"/>
+  <circle cx="540" cy="755" r="40" fill="#A855F7" fill-opacity="0.06" stroke="#A855F7" stroke-opacity="0.4"/>
+  <text x="540" y="763" font-family="Vazirmatn, Tahoma" font-size="18" fill="#C084FC"
+        text-anchor="middle" direction="rtl">قابلیت</text>
+
+  <!-- راهنمای ضخامت خط -->
+  <rect x="80" y="840" width="920" height="75" rx="14"
+        fill="#FFFFFF" fill-opacity="0.02" stroke="#FFFFFF" stroke-opacity="0.06"/>
+  <text x="960" y="870" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">ضخامت خط = میزان قرابت</text>
+  <text x="960" y="900" font-family="Vazirmatn, Tahoma" font-size="20" fill="#AAA"
+        text-anchor="start" direction="rtl">نزدیک‌ترین: قابلیت + قراردادگرایی + طبیعی (بازخوانی‌شده)</text>
+
+  <!-- نکته -->
+  <rect x="100" y="935" width="880" height="50" rx="12"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.12"/>
+  <text x="540" y="968" font-family="Vazirmatn, Tahoma" font-size="22" fill="#22D3EE"
+        text-anchor="middle" direction="rtl">نویسنده از همه وام می‌گیرد ولی تسلیم هیچ‌یک نمی‌شود</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#06B6D4" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۴</text>
+</svg>

@@ -1,0 +1,102 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-permit" x1="0" y1="0" x2="0" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#081418"/>
+      <stop offset="100%" stop-color="#0C1C22"/>
+    </linearGradient>
+    <radialGradient id="shieldGlow" cx="50%" cy="42%" r="25%">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-permit)"/>
+  <rect width="1080" height="1080" fill="url(#shieldGlow)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="420" height="48" rx="24"
+        fill="#22C55E" fill-opacity="0.08" stroke="#22C55E" stroke-opacity="0.25"/>
+  <text x="420" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#4ADE80"
+        text-anchor="start" direction="rtl">فصل ۷ · چیستی مجوز · تحلیل مفهومی</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="168" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="900"
+        fill="#ECFDF5" text-anchor="start" direction="rtl">مجوز چیست؟</text>
+  <text x="1000" y="222" font-family="Vazirmatn, Tahoma" font-size="26" fill="#86EFAC"
+        text-anchor="start" direction="rtl">Permission · حریم امن و دامنه‌ی آزاد برای کنش</text>
+
+  <!-- نماد سپر / حریم -->
+  <path d="M 540 320 L 620 360 L 620 460 Q 620 520 540 560 Q 460 520 460 460 L 460 360 Z"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.2" stroke-width="2"/>
+  <text x="540" y="440" font-family="Vazirmatn, Tahoma" font-size="30" fill="#4ADE80"
+        font-weight="bold" text-anchor="middle" direction="rtl">حریم</text>
+  <text x="540" y="475" font-family="Vazirmatn, Tahoma" font-size="18" fill="#86EFAC"
+        text-anchor="middle" direction="rtl">مصون · آزاد</text>
+
+  <!-- سه بعد مجوز -->
+  <!-- بعد ۱ -->
+  <rect x="640" y="310" width="380" height="75" rx="14"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.2"/>
+  <text x="990" y="345" font-family="Vazirmatn, Tahoma" font-size="24" fill="#67E8F9"
+        font-weight="bold" text-anchor="start" direction="rtl">۱. اجازه‌ی انتخاب</text>
+  <text x="990" y="375" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">آزادی عمل · دامنه‌ی آزاد برای کنش</text>
+
+  <!-- بعد ۲ -->
+  <rect x="640" y="400" width="380" height="75" rx="14"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.2"/>
+  <text x="990" y="435" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FCD34D"
+        font-weight="bold" text-anchor="start" direction="rtl">۲. حریم امن</text>
+  <text x="990" y="465" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">مصون از تخطی · تجاوز · حمله · انسداد</text>
+
+  <!-- بعد ۳ -->
+  <rect x="640" y="490" width="380" height="75" rx="14"
+        fill="#A855F7" fill-opacity="0.04" stroke="#A855F7" stroke-opacity="0.2"/>
+  <text x="990" y="525" font-family="Vazirmatn, Tahoma" font-size="24" fill="#D8B4FE"
+        font-weight="bold" text-anchor="start" direction="rtl">۳. بی‌نیازی از تأیید</text>
+  <text x="990" y="555" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">عمل بدون نیاز به اجازه‌ی مجدد دیگری</text>
+
+  <!-- بعد چپ: منشأ -->
+  <rect x="60" y="310" width="380" height="75" rx="14"
+        fill="#EC4899" fill-opacity="0.04" stroke="#EC4899" stroke-opacity="0.2"/>
+  <text x="400" y="345" font-family="Vazirmatn, Tahoma" font-size="22" fill="#F9A8D4"
+        font-weight="bold" text-anchor="start" direction="rtl">اجازه‌ی اجتماعی-مدنی</text>
+  <text x="400" y="375" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">بازه‌ی انتخاب در چارچوب نهادی</text>
+
+  <rect x="60" y="400" width="380" height="75" rx="14"
+        fill="#14B8A6" fill-opacity="0.04" stroke="#14B8A6" stroke-opacity="0.2"/>
+  <text x="400" y="435" font-family="Vazirmatn, Tahoma" font-size="22" fill="#5EEAD4"
+        font-weight="bold" text-anchor="start" direction="rtl">وضع اجتماعی</text>
+  <text x="400" y="465" font-family="Vazirmatn, Tahoma" font-size="19" fill="#AAA"
+        text-anchor="start" direction="rtl">زمینه و زمین بازی · بستر تعامل</text>
+
+  <!-- پرسش نویسنده -->
+  <rect x="80" y="610" width="920" height="160" rx="22"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.18"/>
+  <text x="960" y="655" font-family="Vazirmatn, Tahoma" font-size="28" fill="#ECFDF5"
+        font-weight="bold" text-anchor="start" direction="rtl">⟡ پرسش‌های نویسنده</text>
+  <text x="960" y="698" font-family="Vazirmatn, Tahoma" font-size="23" fill="#EEE"
+        text-anchor="start" direction="rtl">«آیا مجوز چیزی جز اجازه‌ی انتخاب است؟»</text>
+  <text x="960" y="735" font-family="Vazirmatn, Tahoma" font-size="23" fill="#EEE"
+        text-anchor="start" direction="rtl">«آیا چیزی جز حریم امن و مصون از تجاوز است؟»</text>
+  <text x="960" y="765" font-family="Vazirmatn, Tahoma" font-size="20" fill="#4ADE80"
+        text-anchor="start" direction="rtl">پاسخ: مجوز = هسته‌ی عملیاتی حق · حق بدون مجوز پوچ است</text>
+
+  <!-- تحلیل هوفلدی -->
+  <rect x="80" y="800" width="920" height="80" rx="14"
+        fill="#06B6D4" fill-opacity="0.03" stroke="#06B6D4" stroke-opacity="0.12"/>
+  <text x="960" y="838" font-family="Vazirmatn, Tahoma" font-size="22" fill="#7DD3FC"
+        text-anchor="start" direction="rtl">مقایسه: Liberty هوفلدی = غیاب وظیفه‌ی مخالف · نویسنده: مجوز = حریم مثبت</text>
+  <text x="960" y="870" font-family="Vazirmatn, Tahoma" font-size="19" fill="#888"
+        text-anchor="start" direction="rtl">هوفلد سلبی تعریف می‌کند · نویسنده ایجابی: «فضای امن برای بروز خویشتن»</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="920" width="1000" height="2" rx="1" fill="#22C55E" opacity="0.2"/>
+  <text x="540" y="965" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق و حریم امن · دامنه‌ی آزادی برای انتخاب و رفتار و بروز و ظهور خود (خویشتن)</text>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۷ · پل میان فرد و جمع</text>
+</svg>

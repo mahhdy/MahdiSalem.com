@@ -1,0 +1,82 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg130" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D0A14"/>
+      <stop offset="100%" stop-color="#1A1422"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg130)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="360" height="48" rx="24"
+        fill="#F59E0B" fill-opacity="0.08" stroke="#F59E0B" stroke-opacity="0.25"/>
+  <text x="220" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#F59E0B"
+        text-anchor="middle" direction="rtl">فصل ۱۳ · اسلاید ۱ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="190" font-family="Vazirmatn, Tahoma" font-size="68" font-weight="900"
+        fill="#F59E0B" text-anchor="middle" direction="rtl">دوگانه‌ها</text>
+  <text x="540" y="250" font-family="Vazirmatn, Tahoma" font-size="28" fill="#778"
+        text-anchor="middle" direction="rtl">تنش‌هایی که هرگز حل نمی‌شوند، فقط مدیریت می‌شوند</text>
+
+  <!-- دوگانه ۱ -->
+  <rect x="560" y="310" width="460" height="100" rx="16"
+        fill="#3B82F6" fill-opacity="0.06" stroke="#3B82F6" stroke-opacity="0.3"/>
+  <text x="790" y="370" font-family="Vazirmatn, Tahoma" font-size="34" fill="#60A5FA"
+        font-weight="bold" text-anchor="middle" direction="rtl">آزادی</text>
+  <rect x="60" y="310" width="460" height="100" rx="16"
+        fill="#DC2626" fill-opacity="0.06" stroke="#DC2626" stroke-opacity="0.3"/>
+  <text x="290" y="370" font-family="Vazirmatn, Tahoma" font-size="34" fill="#F87171"
+        font-weight="bold" text-anchor="middle" direction="rtl">برابری</text>
+  <text x="540" y="355" font-family="Vazirmatn, Tahoma" font-size="28" fill="#556"
+        text-anchor="middle">↔</text>
+
+  <!-- دوگانه ۲ -->
+  <rect x="560" y="440" width="460" height="100" rx="16"
+        fill="#22C55E" fill-opacity="0.06" stroke="#22C55E" stroke-opacity="0.3"/>
+  <text x="790" y="500" font-family="Vazirmatn, Tahoma" font-size="34" fill="#4ADE80"
+        font-weight="bold" text-anchor="middle" direction="rtl">فرد</text>
+  <rect x="60" y="440" width="460" height="100" rx="16"
+        fill="#A855F7" fill-opacity="0.06" stroke="#A855F7" stroke-opacity="0.3"/>
+  <text x="290" y="500" font-family="Vazirmatn, Tahoma" font-size="34" fill="#C084FC"
+        font-weight="bold" text-anchor="middle" direction="rtl">جمع</text>
+  <text x="540" y="485" font-family="Vazirmatn, Tahoma" font-size="28" fill="#556"
+        text-anchor="middle">↔</text>
+
+  <!-- دوگانه ۳ -->
+  <rect x="560" y="570" width="460" height="100" rx="16"
+        fill="#F59E0B" fill-opacity="0.06" stroke="#F59E0B" stroke-opacity="0.3"/>
+  <text x="790" y="630" font-family="Vazirmatn, Tahoma" font-size="34" fill="#F59E0B"
+        font-weight="bold" text-anchor="middle" direction="rtl">جهان‌شمول</text>
+  <rect x="60" y="570" width="460" height="100" rx="16"
+        fill="#EC4899" fill-opacity="0.06" stroke="#EC4899" stroke-opacity="0.3"/>
+  <text x="290" y="630" font-family="Vazirmatn, Tahoma" font-size="34" fill="#EC4899"
+        font-weight="bold" text-anchor="middle" direction="rtl">بومی</text>
+  <text x="540" y="615" font-family="Vazirmatn, Tahoma" font-size="28" fill="#556"
+        text-anchor="middle">↔</text>
+
+  <!-- دوگانه ۴ -->
+  <rect x="560" y="700" width="460" height="100" rx="16"
+        fill="#06B6D4" fill-opacity="0.06" stroke="#06B6D4" stroke-opacity="0.3"/>
+  <text x="790" y="760" font-family="Vazirmatn, Tahoma" font-size="34" fill="#06B6D4"
+        font-weight="bold" text-anchor="middle" direction="rtl">ثبات</text>
+  <rect x="60" y="700" width="460" height="100" rx="16"
+        fill="#C19A3E" fill-opacity="0.06" stroke="#C19A3E" stroke-opacity="0.3"/>
+  <text x="290" y="760" font-family="Vazirmatn, Tahoma" font-size="34" fill="#C19A3E"
+        font-weight="bold" text-anchor="middle" direction="rtl">تحوّل</text>
+  <text x="540" y="745" font-family="Vazirmatn, Tahoma" font-size="28" fill="#556"
+        text-anchor="middle">↔</text>
+
+  <!-- بصیرت -->
+  <rect x="80" y="840" width="920" height="120" rx="18"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.18"/>
+  <text x="540" y="890" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FFFFFF"
+        font-weight="bold" text-anchor="middle" direction="rtl">موضع ما: نه انتخاب بلکه بهینهٔ پارتو</text>
+  <text x="540" y="935" font-family="Vazirmatn, Tahoma" font-size="26" fill="#CCC"
+        text-anchor="middle" direction="rtl">هر دوگانه یک طیف است نه یک دوراهی</text>
+
+  <rect x="40" y="1010" width="1000" height="2.5" rx="1" fill="#F59E0B" opacity="0.3"/>
+  <text x="540" y="1060" font-family="Vazirmatn, Tahoma" font-size="22" fill="#556"
+        text-anchor="middle" direction="rtl">بعدی: حق و توسعه ←</text>
+</svg>

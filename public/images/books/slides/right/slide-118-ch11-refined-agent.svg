@@ -1,0 +1,98 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-refined" x1="540" y1="0" x2="540" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A0E28"/>
+      <stop offset="50%" stop-color="#0E0A1C"/>
+      <stop offset="100%" stop-color="#08060E"/>
+    </linearGradient>
+    <radialGradient id="refinedGlow" cx="50%" cy="35%" r="30%">
+      <stop offset="0%" stop-color="#E9D5FF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#E9D5FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-refined)"/>
+  <rect width="1080" height="1080" fill="url(#refinedGlow)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="500" height="48" rx="24"
+        fill="#A855F7" fill-opacity="0.08" stroke="#A855F7" stroke-opacity="0.25"/>
+  <text x="500" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#D8B4FE"
+        text-anchor="start" direction="rtl">فصل ۱۱ · فاعل تنقیح‌شده · جایگزین ابرانسان</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="168" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#F0E6FF" text-anchor="start" direction="rtl">از ابرانسان تا فاعل تنقیح‌شده</text>
+  <text x="1000" y="222" font-family="Vazirmatn, Tahoma" font-size="24" fill="#C4B5FD"
+        text-anchor="start" direction="rtl">Übermensch → Refined Agent · بازاندیشی در مفهوم نیچه‌ای</text>
+
+  <!-- دو ستون مقایسه -->
+  <!-- ابرانسان -->
+  <rect x="555" y="280" width="460" height="280" rx="20"
+        fill="#DC2626" fill-opacity="0.04" stroke="#DC2626" stroke-opacity="0.2"/>
+  <text x="980" y="325" font-family="Vazirmatn, Tahoma" font-size="30" fill="#F87171"
+        font-weight="bold" text-anchor="start" direction="rtl">ابرانسان نیچه</text>
+  <text x="980" y="368" font-family="Vazirmatn, Tahoma" font-size="21" fill="#CCC"
+        text-anchor="start" direction="rtl">• فراتر رفتن از اخلاق متعارف</text>
+  <text x="980" y="400" font-family="Vazirmatn, Tahoma" font-size="21" fill="#CCC"
+        text-anchor="start" direction="rtl">• اراده‌ی معطوف به قدرت</text>
+  <text x="980" y="432" font-family="Vazirmatn, Tahoma" font-size="21" fill="#CCC"
+        text-anchor="start" direction="rtl">• ارزش‌آفرینی فردی</text>
+  <text x="980" y="470" font-family="Vazirmatn, Tahoma" font-size="20" fill="#FCA5A5"
+        text-anchor="start" direction="rtl">⚠ خطر: بار تاریخی فاشیسم</text>
+  <text x="980" y="500" font-family="Vazirmatn, Tahoma" font-size="20" fill="#FCA5A5"
+        text-anchor="start" direction="rtl">⚠ خطر: دیکتاتوری فاعل «برتر»</text>
+  <text x="980" y="540" font-family="Vazirmatn, Tahoma" font-size="18" fill="#888"
+        text-anchor="start" direction="rtl">فردمحور · بدون مکانیزم مهار نهادی</text>
+
+  <!-- فاعل تنقیح‌شده -->
+  <rect x="55" y="280" width="460" height="280" rx="20"
+        fill="#22C55E" fill-opacity="0.04" stroke="#22C55E" stroke-opacity="0.2"/>
+  <text x="475" y="325" font-family="Vazirmatn, Tahoma" font-size="30" fill="#4ADE80"
+        font-weight="bold" text-anchor="start" direction="rtl">فاعل تنقیح‌شده</text>
+  <text x="475" y="368" font-family="Vazirmatn, Tahoma" font-size="21" fill="#CCC"
+        text-anchor="start" direction="rtl">• فراتر رفتن از تعلقات تنقیح‌شده</text>
+  <text x="475" y="400" font-family="Vazirmatn, Tahoma" font-size="21" fill="#CCC"
+        text-anchor="start" direction="rtl">• شهود + مسئولیت + صداقت</text>
+  <text x="475" y="432" font-family="Vazirmatn, Tahoma" font-size="21" fill="#CCC"
+        text-anchor="start" direction="rtl">• تلاش متعهدانه به کشف حقیقت</text>
+  <text x="475" y="470" font-family="Vazirmatn, Tahoma" font-size="20" fill="#86EFAC"
+        text-anchor="start" direction="rtl">✦ قید: مکانیزم‌های نهادی مهار</text>
+  <text x="475" y="500" font-family="Vazirmatn, Tahoma" font-size="20" fill="#86EFAC"
+        text-anchor="start" direction="rtl">✦ قید: پاسخگویی و شفافیت</text>
+  <text x="475" y="540" font-family="Vazirmatn, Tahoma" font-size="18" fill="#888"
+        text-anchor="start" direction="rtl">فرد + نهاد · فراتر رفتن بدون استبداد</text>
+
+  <!-- فلش تحول -->
+  <text x="540" y="425" font-family="Vazirmatn, Tahoma" font-size="32" fill="#C4B5FD"
+        font-weight="bold" text-anchor="middle">→</text>
+
+  <!-- نکته نویسنده -->
+  <rect x="80" y="590" width="920" height="200" rx="22"
+        fill="#A855F7" fill-opacity="0.04" stroke="#A855F7" stroke-opacity="0.18"/>
+  <text x="960" y="635" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F0E6FF"
+        font-weight="bold" text-anchor="start" direction="rtl">⟡ دیدگاه نویسنده</text>
+  <text x="960" y="678" font-family="Vazirmatn, Tahoma" font-size="23" fill="#EEE"
+        text-anchor="start" direction="rtl">«سوژه‌ی دغدغه‌مند شناسایی است که با شهود و حس</text>
+  <text x="960" y="715" font-family="Vazirmatn, Tahoma" font-size="23" fill="#EEE"
+        text-anchor="start" direction="rtl">و مسئولیت‌اش تلاش متعهدانه به کشف حقیقت</text>
+  <text x="960" y="752" font-family="Vazirmatn, Tahoma" font-size="23" fill="#D8B4FE"
+        font-weight="bold" text-anchor="start" direction="rtl">و صداقت بی‌پیرایه در نیل به آن می‌کند»</text>
+  <text x="960" y="782" font-family="Vazirmatn, Tahoma" font-size="19" fill="#888"
+        text-anchor="start" direction="rtl">ضمانت و ضرورتی برای این نیست — ولی فرایند خودسامان آن را ممکن می‌سازد</text>
+
+  <!-- پرسش باز -->
+  <rect x="80" y="820" width="920" height="70" rx="14"
+        fill="#F59E0B" fill-opacity="0.03" stroke="#F59E0B" stroke-opacity="0.12"/>
+  <text x="960" y="862" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FCD34D"
+        font-weight="bold" text-anchor="start" direction="rtl">❓ پرسش باز: چه نهادهایی تضمین‌کننده‌اند که فاعل تنقیح‌شده دیکتاتور نشود؟</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="930" width="1000" height="2" rx="1" fill="#A855F7" opacity="0.2"/>
+  <text x="540" y="975" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">عنصر تأخیرآفرین: عاملیت و اراده و تشخیص‌گری انسان</text>
+  <text x="540" y="1015" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">دور هرمنوتیکی = خودسامان و خودفرورو و خودروشن‌کن</text>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۱۱ · اخلاق و حق · فاعل تنقیح‌شده</text>
+</svg>

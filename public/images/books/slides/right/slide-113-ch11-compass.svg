@@ -1,0 +1,81 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-compass" x1="540" y1="0" x2="540" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0C1A"/>
+      <stop offset="100%" stop-color="#12141F"/>
+    </linearGradient>
+    <radialGradient id="compassGlow" cx="50%" cy="45%" r="30%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-compass)"/>
+  <rect width="1080" height="1080" fill="url(#compassGlow)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="480" height="48" rx="24"
+        fill="#F59E0B" fill-opacity="0.08" stroke="#F59E0B" stroke-opacity="0.25"/>
+  <text x="480" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#FCD34D"
+        text-anchor="start" direction="rtl">فصل ۱۱ · اخلاق به مثابه قطب‌نما · استعاره‌ی محوری</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="160" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="900"
+        fill="#FEF3C7" text-anchor="start" direction="rtl">قطب‌نمای اخلاق</text>
+  <text x="1000" y="215" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FDE68A"
+        text-anchor="start" direction="rtl">حتی اگر واقعاً شمالی در کار نباشد!</text>
+
+  <!-- قطب‌نمای بصری -->
+  <circle cx="540" cy="470" r="155" fill="none" stroke="#F59E0B" stroke-opacity="0.12" stroke-width="2"/>
+  <circle cx="540" cy="470" r="130" fill="none" stroke="#F59E0B" stroke-opacity="0.08" stroke-width="1"/>
+  <circle cx="540" cy="470" r="6" fill="#F59E0B" fill-opacity="0.5"/>
+
+  <!-- عقربه -->
+  <line x1="540" y1="470" x2="540" y2="340" stroke="#EF4444" stroke-opacity="0.6" stroke-width="3"/>
+  <polygon points="540,340 533,360 547,360" fill="#EF4444" fill-opacity="0.6"/>
+  <line x1="540" y1="470" x2="540" y2="580" stroke="#CCC" stroke-opacity="0.3" stroke-width="2"/>
+
+  <!-- جهات -->
+  <text x="540" y="305" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FCD34D"
+        font-weight="bold" text-anchor="middle">شمال اخلاقی</text>
+  <text x="705" y="478" font-family="Vazirmatn, Tahoma" font-size="18" fill="#888"
+        text-anchor="middle">شرق</text>
+  <text x="375" y="478" font-family="Vazirmatn, Tahoma" font-size="18" fill="#888"
+        text-anchor="middle">غرب</text>
+  <text x="540" y="640" font-family="Vazirmatn, Tahoma" font-size="18" fill="#888"
+        text-anchor="middle">جنوب</text>
+
+  <!-- علامت سؤال روی شمال -->
+  <text x="540" y="280" font-family="Georgia, serif" font-size="32" fill="#F59E0B" fill-opacity="0.5"
+        text-anchor="middle">?</text>
+
+  <!-- دیدگاه نویسنده -->
+  <rect x="80" y="680" width="920" height="190" rx="22"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.18"/>
+  <text x="960" y="725" font-family="Vazirmatn, Tahoma" font-size="28" fill="#FEF3C7"
+        font-weight="bold" text-anchor="start" direction="rtl">⟡ دیدگاه نویسنده</text>
+  <text x="960" y="770" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EEE"
+        text-anchor="start" direction="rtl">اخلاق امکان قطب‌نمای کنش و داوری را می‌دهد</text>
+  <text x="960" y="810" font-family="Vazirmatn, Tahoma" font-size="24" fill="#EEE"
+        text-anchor="start" direction="rtl">تا هنگامی که کارکردش باشد، کفایت کارکردی دارد</text>
+  <text x="960" y="850" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FCD34D"
+        text-anchor="start" direction="rtl">موضع احتیاط‌آمیز: نه رورتی (حقیقت نیست) نه مطلق‌گرا (حقیقت قطعی)</text>
+
+  <!-- مقایسه -->
+  <rect x="80" y="890" width="440" height="70" rx="14"
+        fill="#06B6D4" fill-opacity="0.03" stroke="#06B6D4" stroke-opacity="0.12"/>
+  <text x="460" y="932" font-family="Vazirmatn, Tahoma" font-size="20" fill="#7DD3FC"
+        text-anchor="start" direction="rtl">پراگماتیسم جیمز: کارایی = حقیقت</text>
+
+  <rect x="540" y="890" width="460" height="70" rx="14"
+        fill="#A855F7" fill-opacity="0.03" stroke="#A855F7" stroke-opacity="0.12"/>
+  <text x="960" y="932" font-family="Vazirmatn, Tahoma" font-size="20" fill="#C4B5FD"
+        text-anchor="start" direction="rtl">ویتگنشتاین: نردبان را بالا بیا و دور بینداز</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="990" width="1000" height="2" rx="1" fill="#F59E0B" opacity="0.2"/>
+  <text x="540" y="1030" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">هشدار: وقتی به قطب جنوب رسیدی، قطب‌نما گیج‌ات می‌کند — اسیر ابزار نشو</text>
+  <text x="540" y="1060" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۱۱ · اخلاق و حق</text>
+</svg>

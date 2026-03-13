@@ -1,0 +1,76 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg25" x1="540" y1="0" x2="540" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A0808"/>
+      <stop offset="50%" stop-color="#120A10"/>
+      <stop offset="100%" stop-color="#0A0E1A"/>
+    </linearGradient>
+    <radialGradient id="glow25" cx="50%" cy="35%" r="40%">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg25)"/>
+  <rect width="1080" height="1080" fill="url(#glow25)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="340" height="48" rx="24"
+        fill="#DC2626" fill-opacity="0.08" stroke="#DC2626" stroke-opacity="0.25"/>
+  <text x="210" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#DC2626"
+        text-anchor="middle" direction="rtl">فصل ۳ · اسلاید ۵ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="155" font-family="Vazirmatn, Tahoma" font-size="50" font-weight="900"
+        fill="#F87171" text-anchor="middle" direction="rtl">درس تلخ تاریخ</text>
+  <text x="540" y="210" font-family="Vazirmatn, Tahoma" font-size="28" fill="#999"
+        text-anchor="middle" direction="rtl">حق بیشتر از رنج زاده شده تا از طراحی</text>
+
+  <!-- سه رنج تاریخی -->
+  <rect x="80" y="280" width="920" height="160" rx="20"
+        fill="#DC2626" fill-opacity="0.05" stroke="#DC2626" stroke-opacity="0.2" stroke-width="1.5"/>
+  <rect x="80" y="280" width="10" height="160" rx="5" fill="#DC2626" fill-opacity="0.5"/>
+  <text x="960" y="330" font-family="Vazirmatn, Tahoma" font-size="30" fill="#F87171"
+        text-anchor="start" direction="rtl" font-weight="bold">هولوکاست → اعلامیهٔ جهانی ۱۹۴۸</text>
+  <text x="960" y="375" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">میلیون‌ها قربانی بی‌حق → جهان بالاخره نوشت:</text>
+  <text x="960" y="415" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FBBF24"
+        text-anchor="start" direction="rtl" font-style="italic">«کرامت ذاتی تمام اعضای خانوادهٔ بشری»</text>
+
+  <rect x="80" y="460" width="920" height="160" rx="20"
+        fill="#F59E0B" fill-opacity="0.05" stroke="#F59E0B" stroke-opacity="0.2" stroke-width="1.5"/>
+  <rect x="80" y="460" width="10" height="160" rx="5" fill="#F59E0B" fill-opacity="0.5"/>
+  <text x="960" y="510" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FBBF24"
+        text-anchor="start" direction="rtl" font-weight="bold">بردگی → جنبش حقوق مدنی</text>
+  <text x="960" y="555" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">قرن‌ها استثمار → مقاومت و فریاد:</text>
+  <text x="960" y="595" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FBBF24"
+        text-anchor="start" direction="rtl" font-style="italic">«من هم انسانم و حق دارم»</text>
+
+  <rect x="80" y="640" width="920" height="160" rx="20"
+        fill="#A855F7" fill-opacity="0.05" stroke="#A855F7" stroke-opacity="0.2" stroke-width="1.5"/>
+  <rect x="80" y="640" width="10" height="160" rx="5" fill="#A855F7" fill-opacity="0.5"/>
+  <text x="960" y="690" font-family="Vazirmatn, Tahoma" font-size="30" fill="#C084FC"
+        text-anchor="start" direction="rtl" font-weight="bold">استثمار صنعتی → حقوق کارگران</text>
+  <text x="960" y="735" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">رنج کارخانه‌ها → تشکّل‌ها و قوانین کار:</text>
+  <text x="960" y="775" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FBBF24"
+        text-anchor="start" direction="rtl" font-style="italic">«نان و کرامت حقّ ماست»</text>
+
+  <!-- نوآوری نویسنده -->
+  <rect x="100" y="840" width="880" height="70" rx="16"
+        fill="#22C55E" fill-opacity="0.05" stroke="#22C55E" stroke-opacity="0.18"/>
+  <text x="540" y="880" font-family="Vazirmatn, Tahoma" font-size="24" fill="#4ADE80"
+        text-anchor="middle" direction="rtl" font-weight="bold">نوآوری: «رنج و آسیب‌پذیری» به عنوان منشأ نهم حق اضافه شد</text>
+
+  <!-- پرسش نقادانه -->
+  <rect x="100" y="925" width="880" height="50" rx="12"
+        fill="#DC2626" fill-opacity="0.03" stroke="#DC2626" stroke-opacity="0.1"/>
+  <text x="540" y="957" font-family="Vazirmatn, Tahoma" font-size="20" fill="#F87171"
+        text-anchor="middle" direction="rtl">⚠ آیا نظام حقوقی خوب باید منتظر فاجعه بماند تا حق جدید بزاید؟</text>
+
+  <!-- فوتر -->
+  <rect x="40" y="1010" width="1000" height="2" rx="1" fill="#DC2626" opacity="0.15"/>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق: فرایند، بازی، مهندسی · فصل ۳</text>
+</svg>

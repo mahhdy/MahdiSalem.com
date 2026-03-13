@@ -1,0 +1,80 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-hidden" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A1420"/>
+      <stop offset="100%" stop-color="#0E1828"/>
+    </linearGradient>
+    <radialGradient id="hiddenGlow" cx="50%" cy="40%" r="35%">
+      <stop offset="0%" stop-color="#14B8A6" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#14B8A6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-hidden)"/>
+  <rect width="1080" height="1080" fill="url(#hiddenGlow)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="500" height="48" rx="24"
+        fill="#14B8A6" fill-opacity="0.08" stroke="#14B8A6" stroke-opacity="0.25"/>
+  <text x="500" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#5EEAD4"
+        text-anchor="start" direction="rtl">فصل ۸ · ابتکار نویسنده · حق ثانویه و مستتر</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="170" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#CCFBF1" text-anchor="start" direction="rtl">حقّ انتظار داشتن</text>
+  <text x="1000" y="228" font-family="Vazirmatn, Tahoma" font-size="26" fill="#99F6E4"
+        text-anchor="start" direction="rtl">The Right to Expect · پیش‌شرط هر حقّ دیگری</text>
+
+  <!-- لایه‌های حق: ظاهر و مستتر -->
+  <!-- لایه ظاهری -->
+  <rect x="120" y="290" width="840" height="140" rx="22"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.2" stroke-width="2"/>
+  <text x="920" y="340" font-family="Vazirmatn, Tahoma" font-size="30" fill="#67E8F9"
+        font-weight="bold" text-anchor="start" direction="rtl">لایه‌ی آشکار: حقوق صریح</text>
+  <text x="920" y="380" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">مالکیت · آزادی بیان · حق رأی · حریم خصوصی</text>
+  <text x="920" y="415" font-family="Vazirmatn, Tahoma" font-size="19" fill="#888"
+        text-anchor="start" direction="rtl">اعلام‌شده · مدوّن · قابل مطالبه</text>
+
+  <!-- فلش عمودی -->
+  <polygon points="540,440 530,450 550,450" fill="#5EEAD4" fill-opacity="0.3"/>
+  <text x="540" y="478" font-family="Vazirmatn, Tahoma" font-size="18" fill="#5EEAD4"
+        text-anchor="middle" direction="rtl">مبتنی بر ↓</text>
+
+  <!-- لایه مستتر -->
+  <rect x="120" y="495" width="840" height="180" rx="22"
+        fill="#14B8A6" fill-opacity="0.06" stroke="#14B8A6" stroke-opacity="0.3" stroke-width="2.5"/>
+  <text x="920" y="545" font-family="Vazirmatn, Tahoma" font-size="30" fill="#5EEAD4"
+        font-weight="bold" text-anchor="start" direction="rtl">لایه‌ی مستتر: حقّ انتظار</text>
+  <text x="920" y="590" font-family="Vazirmatn, Tahoma" font-size="23" fill="#EEE"
+        text-anchor="start" direction="rtl">«انتظار رعایت توافقات، خود یک حقّ ثانویه است»</text>
+  <text x="920" y="630" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">بدون حقّ انتظار، هیچ حقّ صریحی ضمانت ندارد</text>
+  <text x="920" y="665" font-family="Vazirmatn, Tahoma" font-size="19" fill="#99F6E4"
+        text-anchor="start" direction="rtl">مشابه: حقوق پس‌زمینه‌ای دوورکین · Background Rights</text>
+
+  <!-- توضیح ساختاری -->
+  <rect x="80" y="710" width="920" height="160" rx="22"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.18"/>
+  <text x="960" y="755" font-family="Vazirmatn, Tahoma" font-size="26" fill="#FEF3C7"
+        font-weight="bold" text-anchor="start" direction="rtl">⟡ ساختار منطقی</text>
+  <text x="960" y="798" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">① توافقی وجود دارد (مثلاً قرارداد اجتماعی)</text>
+  <text x="960" y="833" font-family="Vazirmatn, Tahoma" font-size="22" fill="#EEE"
+        text-anchor="start" direction="rtl">② این توافق تعهداتی برای طرفین ایجاد کرده</text>
+  <text x="960" y="865" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FCD34D"
+        font-weight="bold" text-anchor="start" direction="rtl">③ انتظار رعایت = حقّ ثانویه‌ای که پایه‌ی همه‌ی حقوق است</text>
+
+  <!-- ارزش‌گذاری -->
+  <rect x="80" y="895" width="920" height="60" rx="12"
+        fill="#22C55E" fill-opacity="0.03" stroke="#22C55E" stroke-opacity="0.12"/>
+  <text x="960" y="933" font-family="Vazirmatn, Tahoma" font-size="22" fill="#86EFAC"
+        text-anchor="start" direction="rtl">↰ مفهومی ژرف و کم‌توجه‌شده در ادبیات حقوق · ابتکار نویسنده</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="990" width="1000" height="2" rx="1" fill="#14B8A6" opacity="0.2"/>
+  <text x="540" y="1030" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">بدون «حقّ انتظار» هیچ نظام حقوقی‌ای از کاغذ فراتر نمی‌رود</text>
+  <text x="540" y="1060" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۸ · حق به مثابه توافق تعهدآفرین</text>
+</svg>

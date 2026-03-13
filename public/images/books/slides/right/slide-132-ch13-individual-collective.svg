@@ -1,0 +1,73 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg132" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D0B1A"/>
+      <stop offset="100%" stop-color="#1A1035"/>
+    </linearGradient>
+    <radialGradient id="glow132" cx="50%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#EC4899" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg132)"/>
+  <rect width="1080" height="1080" fill="url(#glow132)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="420" height="48" rx="24"
+        fill="#EC4899" fill-opacity="0.08" stroke="#EC4899" stroke-opacity="0.25"/>
+  <text x="410" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#F472B6"
+        text-anchor="start" direction="rtl">فصل ۱۳ · دوگانه‌ی فرد و جمع</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="175" font-family="Vazirmatn, Tahoma" font-size="54" font-weight="900"
+        fill="#FDF2F8" text-anchor="start" direction="rtl">فرد یا جمع؟</text>
+  <text x="1000" y="230" font-family="Vazirmatn, Tahoma" font-size="26" fill="#F9A8D4"
+        text-anchor="start" direction="rtl">آیا حق امری فردی است یا جمع‌زاد؟ · بنیادی‌ترین دوگانه</text>
+
+  <!-- دایره‌ی بزرگ مرکزی: تعامل -->
+  <circle cx="540" cy="520" r="180" fill="none" stroke="#EC4899" stroke-opacity="0.08" stroke-width="2"/>
+  <circle cx="540" cy="520" r="120" fill="none" stroke="#EC4899" stroke-opacity="0.12" stroke-width="1.5"/>
+
+  <!-- قطب فرد (راست) -->
+  <circle cx="760" cy="520" r="90" fill="#06B6D4" fill-opacity="0.06" stroke="#06B6D4" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="760" y="505" font-family="Vazirmatn, Tahoma" font-size="32" fill="#67E8F9"
+        font-weight="bold" text-anchor="middle" direction="rtl">فرد</text>
+  <text x="760" y="545" font-family="Vazirmatn, Tahoma" font-size="19" fill="#7DD3FC"
+        text-anchor="middle" direction="rtl">عاملیت · اختیار</text>
+
+  <!-- قطب جمع (چپ) -->
+  <circle cx="320" cy="520" r="90" fill="#F59E0B" fill-opacity="0.06" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="320" y="505" font-family="Vazirmatn, Tahoma" font-size="32" fill="#FCD34D"
+        font-weight="bold" text-anchor="middle" direction="rtl">جمع</text>
+  <text x="320" y="545" font-family="Vazirmatn, Tahoma" font-size="19" fill="#FDE68A"
+        text-anchor="middle" direction="rtl">نهاد · قرارداد</text>
+
+  <!-- فلش دوطرفه در وسط -->
+  <line x1="430" y1="520" x2="650" y2="520" stroke="#EC4899" stroke-opacity="0.3" stroke-width="2"/>
+  <polygon points="435,520 445,512 445,528" fill="#EC4899" fill-opacity="0.4"/>
+  <polygon points="645,520 635,512 635,528" fill="#EC4899" fill-opacity="0.4"/>
+  <text x="540" y="500" font-family="Vazirmatn, Tahoma" font-size="18" fill="#F9A8D4"
+        text-anchor="middle" direction="rtl">تعامل</text>
+
+  <!-- دیدگاه نویسنده -->
+  <rect x="80" y="680" width="920" height="180" rx="22"
+        fill="#EC4899" fill-opacity="0.04" stroke="#EC4899" stroke-opacity="0.2"/>
+  <text x="960" y="725" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FDF2F8"
+        font-weight="bold" text-anchor="start" direction="rtl">⟡ دیدگاه نویسنده</text>
+  <text x="960" y="773" font-family="Vazirmatn, Tahoma" font-size="24" fill="#DDD"
+        text-anchor="start" direction="rtl">«حق امری ارتباطی و بینابینی است»</text>
+  <text x="960" y="813" font-family="Vazirmatn, Tahoma" font-size="22" fill="#BBB"
+        text-anchor="start" direction="rtl">حق نه پیش‌فرض فردی صرف است و نه برساخت جمعی محض</text>
+  <text x="960" y="845" font-family="Vazirmatn, Tahoma" font-size="21" fill="#F472B6"
+        text-anchor="start" direction="rtl">حق در «فضای میان» زاده شده و در تعامل تحقق می‌یابد</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="910" width="1000" height="2" rx="1" fill="#EC4899" opacity="0.2"/>
+  <text x="540" y="950" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">هم‌سو با آرنت: «حقّ داشتنِ حق» مستلزم عضویت در جامعه‌ی سیاسی</text>
+  <text x="540" y="990" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">هم‌سو با هونت: حقوق بدون «شناسایی متقابل» فاقد اثربخشی‌اند</text>
+  <text x="540" y="1050" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۱۳ · دوگانه‌ها · ادامه دارد ←</text>
+</svg>

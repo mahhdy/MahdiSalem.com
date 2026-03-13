@@ -1,0 +1,58 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg030" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg030)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="360" height="50" rx="25"
+        fill="#38BDF8" fill-opacity="0.08" stroke="#38BDF8" stroke-opacity="0.3"/>
+  <text x="220" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#38BDF8"
+        text-anchor="middle" direction="rtl">فصل ۳ · اسلاید ۱ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="170" font-family="Vazirmatn, Tahoma" font-size="60" font-weight="bold"
+        fill="#38BDF8" text-anchor="middle" direction="rtl">سه موج تاریخی حق</text>
+
+  <!-- سه ستون موج -->
+  <rect x="80" y="240" width="290" height="580" rx="24"
+        fill="#22C55E" fill-opacity="0.05" stroke="#22C55E" stroke-opacity="0.4"/>
+  <text x="225" y="290" font-family="Vazirmatn, Tahoma" font-size="30" fill="#4ADE80"
+        font-weight="bold" text-anchor="middle" direction="rtl">۱. حقوق طبیعی</text>
+  <text x="225" y="340" font-family="Vazirmatn, Tahoma" font-size="26" fill="#D1D5DB"
+        text-anchor="middle" direction="rtl">ارسطو · آکویناس</text>
+  <text x="225" y="390" font-family="Vazirmatn, Tahoma" font-size="24" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">حق = نظم طبیعی/الهی</text>
+
+  <rect x="395" y="240" width="290" height="580" rx="24"
+        fill="#F97316" fill-opacity="0.05" stroke="#F97316" stroke-opacity="0.4"/>
+  <text x="540" y="290" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FDBA74"
+        font-weight="bold" text-anchor="middle" direction="rtl">۲. قرارداد اجتماعی</text>
+  <text x="540" y="340" font-family="Vazirmatn, Tahoma" font-size="26" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">هابز · لاک · روسو</text>
+  <text x="540" y="390" font-family="Vazirmatn, Tahoma" font-size="24" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">حق = توافق عقلانی</text>
+
+  <rect x="710" y="240" width="290" height="580" rx="24"
+        fill="#EC4899" fill-opacity="0.05" stroke="#EC4899" stroke-opacity="0.4"/>
+  <text x="855" y="290" font-family="Vazirmatn, Tahoma" font-size="30" fill="#FB7185"
+        font-weight="bold" text-anchor="middle" direction="rtl">۳. حقوق بشر</text>
+  <text x="855" y="340" font-family="Vazirmatn, Tahoma" font-size="26" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">اعلامیه‌های مدرن</text>
+  <text x="855" y="390" font-family="Vazirmatn, Tahoma" font-size="24" fill="#9CA3AF"
+        text-anchor="middle" direction="rtl">حق = کرامت انسان</text>
+
+  <!-- نقد تطبیقی -->
+  <rect x="80" y="850" width="920" height="170" rx="18"
+        fill="#1F2937" stroke="#6B7280" stroke-opacity="0.4"/>
+  <text x="540" y="895" font-family="Vazirmatn, Tahoma" font-size="30" fill="#F9FAFB"
+        text-anchor="middle" direction="rtl">چارچوب ما:</text>
+  <text x="540" y="940" font-family="Vazirmatn, Tahoma" font-size="26" fill="#D1D5DB"
+        text-anchor="middle" direction="rtl">هر سه موج را در ماشین زنده ادغام می‌کند،</text>
+  <text x="540" y="980" font-family="Vazirmatn, Tahoma" font-size="26" fill="#F97316"
+        text-anchor="middle" direction="rtl">اما هیچ‌کدام را منبع نهایی حق نمی‌داند</text>
+</svg>

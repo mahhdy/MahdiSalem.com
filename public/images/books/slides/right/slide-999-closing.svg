@@ -1,0 +1,85 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-final" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0A14"/>
+      <stop offset="50%" stop-color="#10102A"/>
+      <stop offset="100%" stop-color="#0A0A14"/>
+    </linearGradient>
+    <radialGradient id="finalGlow" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#C19A3E" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#C19A3E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-final)"/>
+  <rect width="1080" height="1080" fill="url(#finalGlow)"/>
+
+  <!-- حاشیه -->
+  <rect x="50" y="50" width="980" height="980" rx="30"
+        fill="none" stroke="#C19A3E" stroke-opacity="0.08" stroke-width="1.5"/>
+
+  <!-- ستاره‌ها -->
+  <circle cx="150" cy="120" r="1.5" fill="#FFF" opacity="0.3"/>
+  <circle cx="900" cy="180" r="1.2" fill="#FFF" opacity="0.25"/>
+  <circle cx="250" cy="900" r="1.5" fill="#FFF" opacity="0.3"/>
+  <circle cx="830" cy="880" r="1" fill="#FFF" opacity="0.2"/>
+  <circle cx="540" cy="100" r="1.8" fill="#FFF" opacity="0.25"/>
+
+  <!-- عنوان اصلی -->
+  <text x="540" y="310" font-family="IranNastaliq, Vazirmatn, Tahoma" font-size="58" fill="#FEF3C7"
+        text-anchor="middle" direction="rtl" font-weight="bold">حق</text>
+
+  <text x="540" y="390" font-family="Vazirmatn, Tahoma" font-size="32" fill="#D4C5A0"
+        text-anchor="middle" direction="rtl">بنیادی‌ترین مفهوم سیاسی-اجتماعی</text>
+
+  <!-- خط -->
+  <rect x="300" y="420" width="480" height="2" rx="1" fill="#C19A3E" opacity="0.2"/>
+
+  <text x="540" y="480" font-family="Vazirmatn, Tahoma" font-size="26" fill="#AAA"
+        text-anchor="middle" direction="rtl">یک غوطه‌وری فکری-فلسفی عمیق</text>
+  <text x="540" y="520" font-family="Vazirmatn, Tahoma" font-size="26" fill="#AAA"
+        text-anchor="middle" direction="rtl">در چیستی، چگونگی و آرمان حق</text>
+
+  <!-- سه ستون خلاصه -->
+  <rect x="700" y="580" width="280" height="100" rx="16"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.15"/>
+  <text x="840" y="620" font-family="Vazirmatn, Tahoma" font-size="22" fill="#67E8F9"
+        font-weight="bold" text-anchor="middle" direction="rtl">بنیادها</text>
+  <text x="840" y="655" font-family="Vazirmatn, Tahoma" font-size="18" fill="#888"
+        text-anchor="middle" direction="rtl">زبان · تاریخ · منشأها</text>
+
+  <rect x="390" y="580" width="280" height="100" rx="16"
+        fill="#F59E0B" fill-opacity="0.04" stroke="#F59E0B" stroke-opacity="0.15"/>
+  <text x="530" y="620" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FCD34D"
+        font-weight="bold" text-anchor="middle" direction="rtl">ساختار</text>
+  <text x="530" y="655" font-family="Vazirmatn, Tahoma" font-size="18" fill="#888"
+        text-anchor="middle" direction="rtl">ماشین · بازی · اخلاق</text>
+
+  <rect x="80" y="580" width="280" height="100" rx="16"
+        fill="#A855F7" fill-opacity="0.04" stroke="#A855F7" stroke-opacity="0.15"/>
+  <text x="220" y="620" font-family="Vazirmatn, Tahoma" font-size="22" fill="#D8B4FE"
+        font-weight="bold" text-anchor="middle" direction="rtl">تنش‌ها</text>
+  <text x="220" y="655" font-family="Vazirmatn, Tahoma" font-size="18" fill="#888"
+        text-anchor="middle" direction="rtl">دوگانه‌ها · پارادوکس‌ها</text>
+
+  <!-- دعوت -->
+  <rect x="120" y="730" width="840" height="110" rx="22"
+        fill="#C19A3E" fill-opacity="0.04" stroke="#C19A3E" stroke-opacity="0.2"/>
+  <text x="540" y="778" font-family="Vazirmatn, Tahoma" font-size="28" fill="#FEF3C7"
+        font-weight="bold" text-anchor="middle" direction="rtl">سرتان برای این غوطه‌وری درد می‌کند؟</text>
+  <text x="540" y="818" font-family="Vazirmatn, Tahoma" font-size="22" fill="#D4C5A0"
+        text-anchor="middle" direction="rtl">نقد کنید · بپرسید · عمیق‌تر شوید</text>
+
+  <!-- تزئین -->
+  <circle cx="540" cy="890" r="3" fill="#C19A3E" opacity="0.4"/>
+  <circle cx="520" cy="890" r="2" fill="#C19A3E" opacity="0.3"/>
+  <circle cx="560" cy="890" r="2" fill="#C19A3E" opacity="0.3"/>
+  <circle cx="500" cy="890" r="1.5" fill="#C19A3E" opacity="0.2"/>
+  <circle cx="580" cy="890" r="1.5" fill="#C19A3E" opacity="0.2"/>
+
+  <!-- پاورقی -->
+  <text x="540" y="960" font-family="Vazirmatn, Tahoma" font-size="20" fill="#4A4035"
+        text-anchor="middle" direction="rtl">حق و حقوق · یک دستگاه فلسفی نقادانه</text>
+  <text x="540" y="1000" font-family="Vazirmatn, Tahoma" font-size="18" fill="#3A3530"
+        text-anchor="middle" direction="rtl">«هر دوگانه‌ای که تو را از دیدن میانه باز دارد، ابزار سلطه شده نه ابزار شناخت»</text>
+</svg>

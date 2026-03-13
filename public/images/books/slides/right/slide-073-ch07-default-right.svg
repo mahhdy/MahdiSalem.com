@@ -1,0 +1,90 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bg-pre" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#14080E"/>
+      <stop offset="100%" stop-color="#0E0C1E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg-pre)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="460" height="48" rx="24"
+        fill="#EC4899" fill-opacity="0.08" stroke="#EC4899" stroke-opacity="0.25"/>
+  <text x="460" y="62" font-family="Vazirmatn, Tahoma" font-size="23" fill="#F9A8D4"
+        text-anchor="start" direction="rtl">فصل ۷ · حق پیش‌فرض یا جمع‌زاد؟</text>
+
+  <!-- عنوان -->
+  <text x="1000" y="170" font-family="Vazirmatn, Tahoma" font-size="48" font-weight="900"
+        fill="#FDF2F8" text-anchor="start" direction="rtl">آیا حق پیش‌فرض است؟</text>
+  <text x="1000" y="225" font-family="Vazirmatn, Tahoma" font-size="24" fill="#F9A8D4"
+        text-anchor="start" direction="rtl">در فضای بدون رقابت، آیا فرد صاحب تمام حقوق است؟</text>
+
+  <!-- آزمایش فکری ۱: فرد منفرد -->
+  <rect x="555" y="280" width="460" height="160" rx="20"
+        fill="#EC4899" fill-opacity="0.04" stroke="#EC4899" stroke-opacity="0.2"/>
+  <text x="980" y="325" font-family="Vazirmatn, Tahoma" font-size="26" fill="#F9A8D4"
+        font-weight="bold" text-anchor="start" direction="rtl">فرض ۱: حق پیش‌فرض</text>
+  <text x="980" y="368" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">در جزیره‌ی تنهایی: همه‌ی حقوق وجود دارد</text>
+  <text x="980" y="405" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">حق = آزادی مطلق فرد منفرد</text>
+  <text x="980" y="430" font-family="Vazirmatn, Tahoma" font-size="19" fill="#F9A8D4"
+        text-anchor="start" direction="rtl">مشکل: بدون «دیگری» حق معنادار نیست</text>
+
+  <!-- آزمایش فکری ۲: جمع‌زاد -->
+  <rect x="55" y="280" width="460" height="160" rx="20"
+        fill="#06B6D4" fill-opacity="0.04" stroke="#06B6D4" stroke-opacity="0.2"/>
+  <text x="480" y="325" font-family="Vazirmatn, Tahoma" font-size="26" fill="#67E8F9"
+        font-weight="bold" text-anchor="start" direction="rtl">فرض ۲: حق جمع‌زاد</text>
+  <text x="480" y="368" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">حق فقط در جمع زاده می‌شود</text>
+  <text x="480" y="405" font-family="Vazirmatn, Tahoma" font-size="22" fill="#CCC"
+        text-anchor="start" direction="rtl">حق = محصول تعامل و رقابت</text>
+  <text x="480" y="430" font-family="Vazirmatn, Tahoma" font-size="19" fill="#67E8F9"
+        text-anchor="start" direction="rtl">مشکل: بدون «خود» حق تحقق نمی‌یابد</text>
+
+  <!-- نتیجه‌ی نویسنده -->
+  <rect x="80" y="480" width="920" height="100" rx="18"
+        fill="#FCD34D" fill-opacity="0.04" stroke="#FCD34D" stroke-opacity="0.22"/>
+  <text x="540" y="525" font-family="Vazirmatn, Tahoma" font-size="32" fill="#FEF3C7"
+        font-weight="bold" text-anchor="middle" direction="rtl">از این رو حق امری ارتباطی و بینابینی است</text>
+  <text x="540" y="565" font-family="Vazirmatn, Tahoma" font-size="22" fill="#FCD34D"
+        text-anchor="middle" direction="rtl">— نویسنده</text>
+
+  <!-- تصویرسازی: حق در میان فرد و جمع -->
+  <circle cx="340" cy="700" r="60" fill="none" stroke="#EC4899" stroke-opacity="0.15" stroke-width="2"/>
+  <text x="340" y="708" font-family="Vazirmatn, Tahoma" font-size="22" fill="#F9A8D4"
+        text-anchor="middle" direction="rtl">فرد</text>
+
+  <circle cx="740" cy="700" r="60" fill="none" stroke="#06B6D4" stroke-opacity="0.15" stroke-width="2"/>
+  <text x="740" y="708" font-family="Vazirmatn, Tahoma" font-size="22" fill="#67E8F9"
+        text-anchor="middle" direction="rtl">جمع</text>
+
+  <!-- فضای میان -->
+  <rect x="420" y="670" width="240" height="60" rx="14"
+        fill="#FCD34D" fill-opacity="0.06" stroke="#FCD34D" stroke-opacity="0.25"/>
+  <text x="540" y="708" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FEF3C7"
+        font-weight="bold" text-anchor="middle" direction="rtl">حق</text>
+  
+  <line x1="400" y1="700" x2="420" y2="700" stroke="#FCD34D" stroke-opacity="0.2" stroke-width="1.5"/>
+  <line x1="660" y1="700" x2="680" y2="700" stroke="#FCD34D" stroke-opacity="0.2" stroke-width="1.5"/>
+
+  <text x="540" y="770" font-family="Vazirmatn, Tahoma" font-size="20" fill="#888"
+        text-anchor="middle" direction="rtl">«فضای میان» — in-between space (آرنت)</text>
+
+  <!-- مقایسه‌ها -->
+  <rect x="80" y="810" width="920" height="100" rx="16"
+        fill="#A855F7" fill-opacity="0.03" stroke="#A855F7" stroke-opacity="0.12"/>
+  <text x="960" y="850" font-family="Vazirmatn, Tahoma" font-size="21" fill="#C4B5FD"
+        text-anchor="start" direction="rtl">آرنت: حقوق فقط در فضای میان‌انسانی معنا می‌یابند</text>
+  <text x="960" y="885" font-family="Vazirmatn, Tahoma" font-size="21" fill="#C4B5FD"
+        text-anchor="start" direction="rtl">هونت: مبارزه برای شناسایی · هگل: بازشناسی خود در دیگری</text>
+
+  <!-- پاورقی -->
+  <rect x="40" y="950" width="1000" height="2" rx="1" fill="#EC4899" opacity="0.2"/>
+  <text x="540" y="995" font-family="Vazirmatn, Tahoma" font-size="20" fill="#556"
+        text-anchor="middle" direction="rtl">حق تنها در بازی و شرایط تعاملی مبتنی بر انتخاب و آزادی عمل معنا دارد</text>
+  <text x="540" y="1055" font-family="Vazirmatn, Tahoma" font-size="18" fill="#445"
+        text-anchor="middle" direction="rtl">فصل ۷ · منشأ حق: فردی-جمعی یا جمع‌زاد</text>
+</svg>

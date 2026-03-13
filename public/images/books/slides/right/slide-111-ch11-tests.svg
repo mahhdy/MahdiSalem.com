@@ -1,0 +1,55 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg111" x1="0" y1="0" x2="1080" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg111)"/>
+
+  <!-- سربرگ -->
+  <rect x="40" y="28" width="380" height="50" rx="25"
+        fill="#A855F7" fill-opacity="0.08" stroke="#A855F7" stroke-opacity="0.4"/>
+  <text x="230" y="62" font-family="Vazirmatn, Tahoma" font-size="24" fill="#C4B5FD"
+        text-anchor="middle" direction="rtl">فصل ۱۱ · اسلاید ۲ از ۱۰</text>
+
+  <!-- عنوان -->
+  <text x="540" y="160" font-family="Vazirmatn, Tahoma" font-size="52" font-weight="bold"
+        fill="#C4B5FD" text-anchor="middle" direction="rtl">سه آزمون برای هر حق</text>
+
+  <!-- سه ستون آزمون -->
+  <rect x="60" y="230" width="300" height="600" rx="18"
+        fill="#111827" stroke="#DC2626" stroke-opacity="0.6"/>
+  <text x="210" y="285" font-family="Vazirmatn, Tahoma" font-size="32" fill="#FCA5A5"
+        font-weight="bold" text-anchor="middle" direction="rtl">آزمون وظیفه</text>
+  <text x="210" y="345" font-family="Vazirmatn, Tahoma" font-size="26" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">آیا کرامت نقض می‌شود؟</text>
+  <text x="210" y="395" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FCA5A5"
+        text-anchor="middle" direction="rtl">اگر بله → حق نامشروع است</text>
+
+  <rect x="390" y="230" width="300" height="600" rx="18"
+        fill="#111827" stroke="#22C55E" stroke-opacity="0.6"/>
+  <text x="540" y="285" font-family="Vazirmatn, Tahoma" font-size="32" fill="#4ADE80"
+        font-weight="bold" text-anchor="middle" direction="rtl">آزمون نتیجه</text>
+  <text x="540" y="345" font-family="Vazirmatn, Tahoma" font-size="26" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">آیا رنج قابل‌اجتناب افزایش می‌یابد؟</text>
+  <text x="540" y="395" font-family="Vazirmatn, Tahoma" font-size="24" fill="#BBF7D0"
+        text-anchor="middle" direction="rtl">اگر بله → حق ناکارآمد است</text>
+
+  <rect x="720" y="230" width="300" height="600" rx="18"
+        fill="#111827" stroke="#FBBF24" stroke-opacity="0.6"/>
+  <text x="870" y="285" font-family="Vazirmatn, Tahoma" font-size="32" fill="#FACC15"
+        font-weight="bold" text-anchor="middle" direction="rtl">آزمون فضیلت</text>
+  <text x="870" y="345" font-family="Vazirmatn, Tahoma" font-size="26" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">آیا فساد نهادی را تقویت می‌کند؟</text>
+  <text x="870" y="395" font-family="Vazirmatn, Tahoma" font-size="24" fill="#FDE68A"
+        text-anchor="middle" direction="rtl">اگر بله → حق ناپایدار است</text>
+
+  <!-- جمع‌بندی -->
+  <rect x="80" y="870" width="920" height="140" rx="18"
+        fill="#1F2937" stroke="#6B7280" stroke-opacity="0.6"/>
+  <text x="540" y="915" font-family="Vazirmatn, Tahoma" font-size="28" fill="#F9FAFB"
+        text-anchor="middle" direction="rtl">حق خوب = حقی که از هر سه آزمون عبور کند،</text>
+  <text x="540" y="955" font-family="Vazirmatn, Tahoma" font-size="26" fill="#E5E7EB"
+        text-anchor="middle" direction="rtl">و در عین حال در سطح حداقلی، عام و خاص قابل تشخیص باشد</text>
+</svg>
