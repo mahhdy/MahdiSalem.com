@@ -1,0 +1,159 @@
+<svg viewBox="0 0 1200 630" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">حق – تحلیل تطبیقی در فلسفه، حقوق و الهیات</title>
+  <desc id="desc">کاور آبستره و سه‌بعدی برای مقاله‌ای دربارهٔ مفهوم حق، با اشکال هندسی، گرادیانت‌ها و نماد ترازوی عدالت.</desc>
+
+  <defs>
+    <!-- پس‌زمینه گرادیان تیره -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="40%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- گرادیان‌های اشکال سه‌بعدی -->
+    <linearGradient id="pillGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e94560"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#facc15"/>
+    </linearGradient>
+
+    <linearGradient id="pillGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="50%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+
+    <radialGradient id="orbGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#0ea5e9" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- هایلایت مرکزی پشت آیکون حق -->
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#22c55e" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- گرادیان دایره اصلی (حق) -->
+    <linearGradient id="coreDisk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- فیلتر سایه نرم -->
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+
+    <filter id="softShadowSmall" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+
+    <!-- الگوی نقطه‌ای برای پس‌زمینه -->
+    <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1f2937"/>
+      <circle cx="22" cy="22" r="1" fill="#111827"/>
+    </pattern>
+  </defs>
+
+  <!-- پس‌زمینه -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- لایه نقطه‌ای -->
+  <rect x="0" y="0" width="1200" height="630" fill="url(#dots)" opacity="0.55"/>
+
+  <!-- هاله‌های آبستره بزرگ -->
+  <circle cx="230" cy="120" r="210" fill="url(#orbGrad)" opacity="0.55"/>
+  <circle cx="980" cy="540" r="260" fill="url(#orbGrad)" opacity="0.45"/>
+
+  <!-- نوار آبستره چپ (سه‌بعدی‌نما) -->
+  <g transform="translate(80,120) skewY(-10)">
+    <rect x="0" y="0" width="60" height="260" rx="30" fill="url(#pillGrad1)" filter="url(#softShadow)"/>
+    <rect x="90" y="40" width="40" height="190" rx="20" fill="url(#pillGrad2)" opacity="0.9" filter="url(#softShadowSmall)"/>
+    <rect x="150" y="10" width="26" height="140" rx="13" fill="#4f46e5" opacity="0.85" filter="url(#softShadowSmall)"/>
+  </g>
+
+  <!-- نوار آبستره راست (سه‌بعدی‌نما) -->
+  <g transform="translate(960,80) skewY(12)">
+    <rect x="0" y="0" width="52" height="230" rx="26" fill="url(#pillGrad2)" filter="url(#softShadow)"/>
+    <rect x="-70" y="40" width="34" height="170" rx="17" fill="url(#pillGrad1)" opacity="0.9" filter="url(#softShadowSmall)"/>
+    <rect x="-120" y="10" width="22" height="120" rx="11" fill="#6366f1" opacity="0.9" filter="url(#softShadowSmall)"/>
+  </g>
+
+  <!-- دیسک مرکزی حق -->
+  <g transform="translate(600,315)">
+    <!-- هاله‌ی بیرونی -->
+    <circle cx="0" cy="0" r="150" fill="url(#coreGlow)" opacity="0.55"/>
+    <!-- حلقه‌های مدارگونه -->
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#22c55e" stroke-width="1.6" stroke-opacity="0.3" stroke-dasharray="6 10"/>
+    <circle cx="0" cy="0" r="180" fill="none" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.25" stroke-dasharray="4 8"/>
+
+    <!-- دیسک اصلی -->
+    <circle cx="0" cy="0" r="115" fill="url(#coreDisk)" filter="url(#softShadow)"/>
+
+    <!-- ترازوی عدالت (مینیمال) -->
+    <g transform="translate(0,0)">
+      <!-- پایه -->
+      <rect x="-6" y="32" width="12" height="40" rx="6" fill="#e5e7eb"/>
+      <rect x="-40" y="70" width="80" height="12" rx="6" fill="#e5e7eb"/>
+
+      <!-- ستون میانی -->
+      <rect x="-3" y="-46" width="6" height="80" rx="3" fill="#f9fafb"/>
+
+      <!-- بازوی ترازو -->
+      <line x1="-70" y1="-40" x2="70" y2="-40" stroke="#f9fafb" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- نقطه اتصال -->
+      <circle cx="0" cy="-40" r="7" fill="#22c55e"/>
+
+      <!-- کفه سمت راست (نماد حق) -->
+      <g transform="translate(52,0)">
+        <line x1="0" y1="-40" x2="0" y2="-5" stroke="#e5e7eb" stroke-width="2.2"/>
+        <line x1="-26" y1="-5" x2="26" y2="-5" stroke="#e5e7eb" stroke-width="2"/>
+        <path d="M -32 -5 Q 0 28 32 -5 Z" fill="#22c55e" fill-opacity="0.9" stroke="#bbf7d0" stroke-width="1.2"/>
+      </g>
+
+      <!-- کفه سمت چپ (نماد باطل/قدرت بی‌مهار) -->
+      <g transform="translate(-52,0)">
+        <line x1="0" y1="-40" x2="0" y2="-1" stroke="#e5e7eb" stroke-width="2.2"/>
+        <line x1="-26" y1="-1" x2="26" y2="-1" stroke="#e5e7eb" stroke-width="2"/>
+        <path d="M -32 -1 Q 0 22 32 -1 Z" fill="#ef4444" fill-opacity="0.85" stroke="#fecaca" stroke-width="1.2"/>
+      </g>
+    </g>
+
+    <!-- متن روی دیسک -->
+    <text x="0" y="-85" text-anchor="middle" fill="#e5e7eb" font-size="22" font-weight="700">
+      حق
+    </text>
+    <text x="0" y="-58" text-anchor="middle" fill="#9ca3af" font-size="13">
+      حقوق، عدالت، آزادی، کرامت
+    </text>
+  </g>
+
+  <!-- عنوان و توضیح سمت چپ (برای کاور) -->
+  <g transform="translate(150,210)">
+    <rect x="-10" y="-60" width="420" height="190" rx="22" fill="#020617" fill-opacity="0.55"/>
+    <rect x="-10" y="-60" width="6" height="190" rx="3" fill="#e94560"/>
+    <text x="20" y="-20" fill="#f9fafb" font-size="40" font-weight="900">
+      حق
+    </text>
+    <text x="20" y="16" fill="#e5e7eb" font-size="20" font-weight="600">
+      تحلیل تطبیقی در فلسفه، حقوق و الهیات
+    </text>
+    <text x="20" y="48" fill="#9ca3af" font-size="14">
+      از حقوق طبیعی تا پوزیتیویسم، از مقاصد شریعه تا حقوق بشر نوین
+    </text>
+    <text x="20" y="84" fill="#6b7280" font-size="13">
+      پژوهشگر • فلسفهٔ حق، کرامت و توسعهٔ انسانی
+    </text>
+  </g>
+
+  <!-- چپ‌چین نسخهٔ انگلیسی کوچک‌تر برای تامبنیل -->
+  <g transform="translate(150,480)">
+    <text x="0" y="0" fill="#9ca3af" font-size="11" font-weight="600">
+      RIGHTS · JUSTICE · FREEDOM · DIGNITY
+    </text>
+  </g>
+</svg>

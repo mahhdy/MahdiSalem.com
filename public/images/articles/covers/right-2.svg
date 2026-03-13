@@ -1,0 +1,438 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0a0a1a"/>
+      <stop offset="30%" stopColor="#1a1a3e"/>
+      <stop offset="60%" stopColor="#0f2447"/>
+      <stop offset="100%" stopColor="#0a0a1a"/>
+    </linearGradient>
+    
+    <radialGradient id="glowPink" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stopColor="#e94560" stopOpacity="0.6"/>
+      <stop offset="100%" stopColor="#e94560" stopOpacity="0"/>
+    </radialGradient>
+    
+    <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stopColor="#64ffda" stopOpacity="0.5"/>
+      <stop offset="100%" stopColor="#64ffda" stopOpacity="0"/>
+    </radialGradient>
+    
+    <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stopColor="#b388ff" stopOpacity="0.4"/>
+      <stop offset="100%" stopColor="#7c4dff" stopOpacity="0"/>
+    </radialGradient>
+    
+    <radialGradient id="glowGold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stopColor="#ffd740" stopOpacity="0.5"/>
+      <stop offset="100%" stopColor="#ffd740" stopOpacity="0"/>
+    </radialGradient>
+
+    <!-- 3D Cube Gradients -->
+    <linearGradient id="cubeTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#e94560"/>
+      <stop offset="100%" stopColor="#ff6b8a"/>
+    </linearGradient>
+    <linearGradient id="cubeLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#b8354d"/>
+      <stop offset="100%" stopColor="#c73e56"/>
+    </linearGradient>
+    <linearGradient id="cubeRight" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#8b2a3e"/>
+      <stop offset="100%" stopColor="#a33048"/>
+    </linearGradient>
+    
+    <!-- Sphere Gradients -->
+    <radialGradient id="sphere1" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stopColor="#80deea"/>
+      <stop offset="40%" stopColor="#64ffda"/>
+      <stop offset="100%" stopColor="#1a7a6d"/>
+    </radialGradient>
+    
+    <radialGradient id="sphere2" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stopColor="#e1bee7"/>
+      <stop offset="40%" stopColor="#b388ff"/>
+      <stop offset="100%" stopColor="#4a148c"/>
+    </radialGradient>
+    
+    <radialGradient id="sphere3" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stopColor="#fff9c4"/>
+      <stop offset="40%" stopColor="#ffd740"/>
+      <stop offset="100%" stopColor="#a67c00"/>
+    </radialGradient>
+
+    <!-- Glass Panel Gradient -->
+    <linearGradient id="glassPanel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#ffffff" stopOpacity="0.12"/>
+      <stop offset="50%" stopColor="#ffffff" stopOpacity="0.05"/>
+      <stop offset="100%" stopColor="#ffffff" stopOpacity="0.1"/>
+    </linearGradient>
+    
+    <linearGradient id="glassEdge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#ffffff" stopOpacity="0.3"/>
+      <stop offset="100%" stopColor="#ffffff" stopOpacity="0.05"/>
+    </linearGradient>
+
+    <!-- Prism Gradients -->
+    <linearGradient id="prismFace1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#64ffda" stopOpacity="0.3"/>
+      <stop offset="100%" stopColor="#1de9b6" stopOpacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="prismFace2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#e94560" stopOpacity="0.25"/>
+      <stop offset="100%" stopColor="#ff6b8a" stopOpacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="prismFace3" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stopColor="#b388ff" stopOpacity="0.2"/>
+      <stop offset="100%" stopColor="#7c4dff" stopOpacity="0.08"/>
+    </linearGradient>
+
+    <!-- Floating Ring Gradient -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#64ffda"/>
+      <stop offset="50%" stopColor="#b388ff"/>
+      <stop offset="100%" stopColor="#e94560"/>
+    </linearGradient>
+    
+    <!-- Light beam -->
+    <linearGradient id="lightBeam" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stopColor="#ffffff" stopOpacity="0.15"/>
+      <stop offset="100%" stopColor="#ffffff" stopOpacity="0"/>
+    </linearGradient>
+    
+    <!-- Rainbow spectrum -->
+    <linearGradient id="spectrum" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#e94560"/>
+      <stop offset="20%" stopColor="#ff9800"/>
+      <stop offset="40%" stopColor="#ffd740"/>
+      <stop offset="60%" stopColor="#64ffda"/>
+      <stop offset="80%" stopColor="#448aff"/>
+      <stop offset="100%" stopColor="#b388ff"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="bigGlow">
+      <feGaussianBlur stdDeviation="20" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadow3d">
+      <feDropShadow dx="4" dy="8" stdDeviation="12" floodColor="#000000" floodOpacity="0.4"/>
+    </filter>
+    
+    <filter id="innerShadow">
+      <feComponentTransfer in="SourceAlpha">
+        <feFuncA type="table" tableValues="1 0"/>
+      </feComponentTransfer>
+      <feGaussianBlur stdDeviation="3"/>
+      <feOffset dx="2" dy="3" result="offsetblur"/>
+      <feFlood floodColor="#000" floodOpacity="0.3" result="color"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feComposite in2="SourceAlpha" operator="in"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode/>
+      </feMerge>
+    </filter>
+
+    <!-- Clip paths -->
+    <clipPath id="roundedRect">
+      <rect x="0" y="0" width="1200" height="630" rx="0"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgMain)" clipPath="url(#roundedRect)"/>
+  
+  <!-- Subtle grid pattern -->
+  <g opacity="0.03">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5"/>
+    </pattern>
+    <rect width="1200" height="630" fill="url(#grid)"/>
+  </g>
+
+  <!-- Ambient glows -->
+  <ellipse cx="250" cy="300" rx="300" ry="250" fill="url(#glowPink)" opacity="0.3"/>
+  <ellipse cx="900" cy="200" rx="250" ry="200" fill="url(#glowCyan)" opacity="0.25"/>
+  <ellipse cx="600" cy="500" rx="200" ry="180" fill="url(#glowPurple)" opacity="0.2"/>
+  <ellipse cx="1000" cy="450" rx="180" ry="150" fill="url(#glowGold)" opacity="0.15"/>
+
+  <!-- ====== ABSTRACT 3D ELEMENTS ====== -->
+
+  <!-- Large transparent prism (center-right) - represents the multifaceted nature of "Haq" -->
+  <g transform="translate(720, 160)" filter="url(#shadow3d)">
+    <!-- Prism back face -->
+    <polygon points="0,200 120,-20 240,200" fill="url(#prismFace3)" stroke="#b388ff" strokeWidth="1" strokeOpacity="0.4"/>
+    <!-- Prism left face -->
+    <polygon points="0,200 120,-20 60,280" fill="url(#prismFace1)" stroke="#64ffda" strokeWidth="1" strokeOpacity="0.3"/>
+    <!-- Prism right face -->
+    <polygon points="240,200 120,-20 180,280" fill="url(#prismFace2)" stroke="#e94560" strokeWidth="1" strokeOpacity="0.3"/>
+    <!-- Prism bottom -->
+    <polygon points="0,200 60,280 180,280 240,200" fill="url(#glassPanel)" stroke="#ffffff" strokeWidth="0.5" strokeOpacity="0.2"/>
+    
+    <!-- Light entering prism -->
+    <line x1="-80" y1="100" x2="80" y2="120" stroke="#ffffff" strokeWidth="3" opacity="0.25" filter="url(#softGlow)"/>
+    
+    <!-- Spectrum leaving prism -->
+    <line x1="200" y1="120" x2="340" y2="80" stroke="#e94560" strokeWidth="2.5" opacity="0.5" filter="url(#softGlow)"/>
+    <line x1="205" y1="130" x2="350" y2="100" stroke="#ff9800" strokeWidth="2" opacity="0.45" filter="url(#softGlow)"/>
+    <line x1="210" y1="140" x2="355" y2="120" stroke="#ffd740" strokeWidth="2" opacity="0.4" filter="url(#softGlow)"/>
+    <line x1="212" y1="150" x2="360" y2="145" stroke="#64ffda" strokeWidth="2" opacity="0.5" filter="url(#softGlow)"/>
+    <line x1="210" y1="160" x2="355" y2="170" stroke="#448aff" strokeWidth="2" opacity="0.4" filter="url(#softGlow)"/>
+    <line x1="205" y1="170" x2="345" y2="195" stroke="#b388ff" strokeWidth="2.5" opacity="0.45" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- 3D Floating Cube (upper-left) -->
+  <g transform="translate(130, 80) rotate(-15)" filter="url(#shadow3d)">
+    <!-- Top face -->
+    <polygon points="45,0 90,20 45,40 0,20" fill="url(#cubeTop)" opacity="0.9"/>
+    <!-- Left face -->
+    <polygon points="0,20 45,40 45,100 0,80" fill="url(#cubeLeft)" opacity="0.9"/>
+    <!-- Right face -->
+    <polygon points="45,40 90,20 90,80 45,100" fill="url(#cubeRight)" opacity="0.9"/>
+    <!-- Edge highlights -->
+    <line x1="45" y1="0" x2="45" y2="40" stroke="#ffffff" strokeWidth="0.5" opacity="0.4"/>
+    <line x1="45" y1="40" x2="45" y2="100" stroke="#ffffff" strokeWidth="0.3" opacity="0.2"/>
+  </g>
+
+  <!-- 3D Floating Cube 2 (smaller, bottom-right) -->
+  <g transform="translate(980, 380) rotate(25)" filter="url(#shadow3d)">
+    <polygon points="30,0 60,14 30,28 0,14" fill="url(#cubeTop)" opacity="0.7"/>
+    <polygon points="0,14 30,28 30,68 0,54" fill="url(#cubeLeft)" opacity="0.7"/>
+    <polygon points="30,28 60,14 60,54 30,68" fill="url(#cubeRight)" opacity="0.7"/>
+  </g>
+  
+  <!-- 3D Cube 3 (tiny, floating) -->
+  <g transform="translate(520, 50) rotate(10)" filter="url(#softGlow)">
+    <polygon points="18,0 36,8 18,16 0,8" fill="url(#cubeTop)" opacity="0.5"/>
+    <polygon points="0,8 18,16 18,38 0,30" fill="url(#cubeLeft)" opacity="0.5"/>
+    <polygon points="18,16 36,8 36,30 18,38" fill="url(#cubeRight)" opacity="0.5"/>
+  </g>
+
+  <!-- Glowing Sphere 1 (Cyan - top right) -->
+  <g transform="translate(950, 80)" filter="url(#shadow3d)">
+    <circle cx="0" cy="0" r="45" fill="url(#sphere1)" opacity="0.85"/>
+    <ellipse cx="-12" cy="-14" rx="15" ry="10" fill="#ffffff" opacity="0.2"/>
+    <circle cx="-8" cy="-12" r="4" fill="#ffffff" opacity="0.35"/>
+  </g>
+
+  <!-- Glowing Sphere 2 (Purple - mid left) -->
+  <g transform="translate(80, 420)" filter="url(#shadow3d)">
+    <circle cx="0" cy="0" r="55" fill="url(#sphere2)" opacity="0.8"/>
+    <ellipse cx="-16" cy="-18" rx="18" ry="12" fill="#ffffff" opacity="0.15"/>
+    <circle cx="-10" cy="-15" r="5" fill="#ffffff" opacity="0.3"/>
+  </g>
+
+  <!-- Glowing Sphere 3 (Gold - small, floating) -->
+  <g transform="translate(1100, 300)" filter="url(#softGlow)">
+    <circle cx="0" cy="0" r="25" fill="url(#sphere3)" opacity="0.75"/>
+    <ellipse cx="-7" cy="-8" rx="8" ry="5" fill="#ffffff" opacity="0.25"/>
+    <circle cx="-5" cy="-6" r="2.5" fill="#ffffff" opacity="0.4"/>
+  </g>
+  
+  <!-- Small decorative sphere -->
+  <g transform="translate(400, 530)">
+    <circle cx="0" cy="0" r="12" fill="url(#sphere1)" opacity="0.5"/>
+  </g>
+
+  <!-- ====== FLOATING RINGS (3D perspective) ====== -->
+  
+  <!-- Large ring 1 -->
+  <g transform="translate(300, 250)">
+    <ellipse cx="0" cy="0" rx="120" ry="35" fill="none" stroke="url(#ringGrad)" strokeWidth="2.5" opacity="0.35" transform="rotate(-20)" filter="url(#softGlow)"/>
+  </g>
+  
+  <!-- Ring 2 -->
+  <g transform="translate(850, 400)">
+    <ellipse cx="0" cy="0" rx="80" ry="22" fill="none" stroke="url(#ringGrad)" strokeWidth="2" opacity="0.3" transform="rotate(15)" filter="url(#softGlow)"/>
+  </g>
+  
+  <!-- Ring 3 (small) -->
+  <g transform="translate(650, 100)">
+    <ellipse cx="0" cy="0" rx="40" ry="12" fill="none" stroke="#64ffda" strokeWidth="1.5" opacity="0.35" transform="rotate(-30)"/>
+  </g>
+
+  <!-- ====== GLASS PANELS (depth effect) ====== -->
+  
+  <!-- Glass panel 1 -->
+  <g transform="translate(160, 200) rotate(-8)" filter="url(#shadow3d)">
+    <rect x="0" y="0" width="180" height="220" rx="12" fill="url(#glassPanel)" stroke="#ffffff" strokeWidth="0.5" strokeOpacity="0.2"/>
+    <rect x="0" y="0" width="180" height="3" rx="1.5" fill="url(#glassEdge)" opacity="0.5"/>
+  </g>
+  
+  <!-- Glass panel 2 -->
+  <g transform="translate(220, 180) rotate(5)" filter="url(#shadow3d)">
+    <rect x="0" y="0" width="160" height="200" rx="12" fill="url(#glassPanel)" stroke="#ffffff" strokeWidth="0.5" strokeOpacity="0.15"/>
+    <rect x="0" y="0" width="160" height="3" rx="1.5" fill="url(#glassEdge)" opacity="0.4"/>
+  </g>
+
+  <!-- ====== ABSTRACT BALANCE / SCALE ====== -->
+  
+  <g transform="translate(340, 280)" opacity="0.6">
+    <!-- Fulcrum -->
+    <polygon points="0,60 12,30 24,60" fill="none" stroke="#64ffda" strokeWidth="1.5" filter="url(#softGlow)"/>
+    <!-- Beam -->
+    <line x1="-60" y1="30" x2="85" y2="25" stroke="#64ffda" strokeWidth="2" filter="url(#softGlow)"/>
+    <!-- Left pan -->
+    <path d="M-70,32 Q-60,50 -50,32" fill="none" stroke="#e94560" strokeWidth="1.5"/>
+    <!-- Right pan -->
+    <path d="M75,27 Q85,45 95,27" fill="none" stroke="#b388ff" strokeWidth="1.5"/>
+    <!-- Decorative dots -->
+    <circle cx="-60" cy="30" r="3" fill="#e94560" opacity="0.8"/>
+    <circle cx="85" cy="25" r="3" fill="#b388ff" opacity="0.8"/>
+  </g>
+
+  <!-- ====== PARTICLE FIELD ====== -->
+  <g opacity="0.5">
+    <circle cx="50" cy="100" r="1.5" fill="#64ffda" filter="url(#softGlow)"/>
+    <circle cx="180" cy="50" r="1" fill="#e94560"/>
+    <circle cx="350" cy="30" r="1.5" fill="#b388ff"/>
+    <circle cx="500" cy="580" r="1" fill="#64ffda"/>
+    <circle cx="700" cy="20" r="1.5" fill="#ffd740" filter="url(#softGlow)"/>
+    <circle cx="1050" cy="100" r="1" fill="#e94560"/>
+    <circle cx="1150" cy="500" r="1.5" fill="#64ffda"/>
+    <circle cx="600" cy="600" r="1" fill="#b388ff"/>
+    <circle cx="900" cy="550" r="1.5" fill="#ffd740"/>
+    <circle cx="150" cy="560" r="1" fill="#e94560" filter="url(#softGlow)"/>
+    <circle cx="450" cy="150" r="0.8" fill="#ffffff"/>
+    <circle cx="780" cy="520" r="0.8" fill="#ffffff"/>
+    <circle cx="1080" cy="200" r="1.2" fill="#64ffda"/>
+    <circle cx="320" cy="480" r="0.8" fill="#b388ff"/>
+    <circle cx="680" cy="380" r="1" fill="#ffd740"/>
+    <circle cx="1020" cy="50" r="0.8" fill="#e94560"/>
+    <circle cx="50" cy="350" r="1.2" fill="#64ffda"/>
+    <circle cx="550" cy="300" r="0.8" fill="#ffffff" opacity="0.3"/>
+  </g>
+
+  <!-- ====== CONNECTING LINES (constellation effect) ====== -->
+  <g stroke="#ffffff" strokeWidth="0.3" opacity="0.08">
+    <line x1="50" y1="100" x2="180" y2="50"/>
+    <line x1="180" y1="50" x2="350" y2="30"/>
+    <line x1="350" y1="30" x2="500" y2="580"/>
+    <line x1="700" y1="20" x2="950" y2="80"/>
+    <line x1="1050" y1="100" x2="1100" y2="300"/>
+    <line x1="80" y1="420" x2="150" y2="560"/>
+    <line x1="900" y1="550" x2="1150" y2="500"/>
+    <line x1="320" y1="480" x2="500" y2="580"/>
+  </g>
+
+  <!-- ====== SPECTRUM BAR (bottom accent) ====== -->
+  <rect x="100" y="600" width="1000" height="4" rx="2" fill="url(#spectrum)" opacity="0.6" filter="url(#softGlow)"/>
+
+  <!-- ====== TYPOGRAPHY ====== -->
+  
+  <!-- Main Title: حق -->
+  <g filter="url(#bigGlow)">
+    <text x="600" y="310" textAnchor="middle" fill="#ffffff" fontSize="140" fontWeight="900" fontFamily="'Noto Sans Arabic', 'Vazirmatn', 'B Nazanin', Arial" letterSpacing="8" opacity="0.95">
+      حق
+    </text>
+  </g>
+  
+  <!-- Title reflection / shadow -->
+  <text x="600" y="312" textAnchor="middle" fill="#64ffda" fontSize="140" fontWeight="900" fontFamily="'Noto Sans Arabic', 'Vazirmatn', 'B Nazanin', Arial" letterSpacing="8" opacity="0.08">
+    حق
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="375" textAnchor="middle" fill="#a8b2d1" fontSize="22" fontWeight="400" fontFamily="'Noto Sans Arabic', 'Vazirmatn', 'B Nazanin', Arial" letterSpacing="3" opacity="0.9">
+    تحلیل تطبیقی در فلسفه، حقوق و الهیات
+  </text>
+  
+  <!-- Decorative line under subtitle -->
+  <line x1="380" y1="395" x2="820" y2="395" stroke="url(#spectrum)" strokeWidth="1.5" opacity="0.5"/>
+  
+  <!-- English subtitle -->
+  <text x="600" y="425" textAnchor="middle" fill="#64ffda" fontSize="14" fontWeight="300" fontFamily="'Inter', 'Segoe UI', Arial, sans-serif" letterSpacing="6" opacity="0.6">
+    RIGHT: A COMPARATIVE ANALYSIS
+  </text>
+
+  <!-- Tag labels -->
+  <g transform="translate(600, 470)" textAnchor="middle">
+    <!-- Philosophy tag -->
+    <rect x="-195" y="-14" width="110" height="28" rx="14" fill="#e94560" fillOpacity="0.15" stroke="#e94560" strokeWidth="1" strokeOpacity="0.4"/>
+    <text x="-140" y="5" fill="#ff8a9e" fontSize="12" fontWeight="500" fontFamily="'Noto Sans Arabic', 'Vazirmatn', Arial" textAnchor="middle">فلسفه</text>
+    
+    <!-- Law tag -->
+    <rect x="-55" y="-14" width="110" height="28" rx="14" fill="#64ffda" fillOpacity="0.12" stroke="#64ffda" strokeWidth="1" strokeOpacity="0.35"/>
+    <text x="0" y="5" fill="#64ffda" fontSize="12" fontWeight="500" fontFamily="'Noto Sans Arabic', 'Vazirmatn', Arial" textAnchor="middle">حقوق</text>
+    
+    <!-- Theology tag -->
+    <rect x="85" y="-14" width="110" height="28" rx="14" fill="#b388ff" fillOpacity="0.12" stroke="#b388ff" strokeWidth="1" strokeOpacity="0.35"/>
+    <text x="140" y="5" fill="#b388ff" fontSize="12" fontWeight="500" fontFamily="'Noto Sans Arabic', 'Vazirmatn', Arial" textAnchor="middle">الهیات</text>
+  </g>
+
+  <!-- Top decorative accent -->
+  <g transform="translate(600, 195)">
+    <line x1="-80" y1="0" x2="-20" y2="0" stroke="#64ffda" strokeWidth="1" opacity="0.5"/>
+    <polygon points="0,-6 6,0 0,6 -6,0" fill="#64ffda" opacity="0.7"/>
+    <line x1="20" y1="0" x2="80" y2="0" stroke="#64ffda" strokeWidth="1" opacity="0.5"/>
+  </g>
+
+  <!-- ====== ABSTRACT GEOMETRIC DECORATIONS ====== -->
+  
+  <!-- Hexagon wireframe (top-left corner) -->
+  <g transform="translate(60, 40)" opacity="0.2">
+    <polygon points="20,0 40,12 40,35 20,47 0,35 0,12" fill="none" stroke="#64ffda" strokeWidth="1"/>
+    <polygon points="20,5 35,14 35,32 20,42 5,32 5,14" fill="none" stroke="#64ffda" strokeWidth="0.5"/>
+  </g>
+  
+  <!-- Triangle wireframe (bottom-right) -->
+  <g transform="translate(1100, 520)" opacity="0.2">
+    <polygon points="20,0 40,35 0,35" fill="none" stroke="#e94560" strokeWidth="1"/>
+    <polygon points="20,8 33,30 7,30" fill="none" stroke="#e94560" strokeWidth="0.5"/>
+  </g>
+
+  <!-- Cross/Plus decorations -->
+  <g opacity="0.15">
+    <line x1="1140" y1="40" x2="1140" y2="65" stroke="#ffd740" strokeWidth="1.5"/>
+    <line x1="1127" y1="52" x2="1153" y2="52" stroke="#ffd740" strokeWidth="1.5"/>
+    
+    <line x1="35" y1="540" x2="35" y2="560" stroke="#b388ff" strokeWidth="1"/>
+    <line x1="25" y1="550" x2="45" y2="550" stroke="#b388ff" strokeWidth="1"/>
+  </g>
+
+  <!-- Dotted orbit paths -->
+  <g opacity="0.08">
+    <ellipse cx="600" cy="315" rx="350" ry="180" fill="none" stroke="#ffffff" strokeWidth="0.8" strokeDasharray="4,8"/>
+    <ellipse cx="600" cy="315" rx="420" ry="220" fill="none" stroke="#ffffff" strokeWidth="0.5" strokeDasharray="3,12"/>
+  </g>
+
+  <!-- Corner accent lines -->
+  <g stroke="#64ffda" strokeWidth="1" opacity="0.3">
+    <line x1="20" y1="20" x2="60" y2="20"/>
+    <line x1="20" y1="20" x2="20" y2="60"/>
+    
+    <line x1="1180" y1="610" x2="1140" y2="610"/>
+    <line x1="1180" y1="610" x2="1180" y2="570"/>
+  </g>
+  <g stroke="#e94560" strokeWidth="1" opacity="0.3">
+    <line x1="1180" y1="20" x2="1140" y2="20"/>
+    <line x1="1180" y1="20" x2="1180" y2="60"/>
+    
+    <line x1="20" y1="610" x2="60" y2="610"/>
+    <line x1="20" y1="610" x2="20" y2="570"/>
+  </g>
+
+  <!-- Subtle vignette overlay -->
+  <rect width="1200" height="630" fill="url(#bgMain)" opacity="0.15"/>
+</svg>

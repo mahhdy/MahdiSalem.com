@@ -1,0 +1,1736 @@
+---
+title: "در چیستی حق!"
+subtitle: "تحلیل تطبیقی در فلسفه، حقوق و الهیات اسلامی و غربی"
+author: "مهدی سالم"
+date: "2026-03-12"
+description: "بررسی جامع و تطبیقی مفهوم حق از منظر فلسفه، حقوق و الهیات اسلامی و غربی"
+keywords: ["حق", "حقوق بشر", "فلسفه حقوق", "حقوق طبیعی", "پوزیتیویسم حقوقی", "مقاصد شریعه", "عدالت", "آزادی", "توسعه"]
+coverImage: /images/articles/covers/legitimacy-power.svg
+hasSlide: true
+imageDisplay: side
+cardImage: show
+slideArray:
+  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_01.svg
+  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_02.svg
+  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_03.svg
+  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_04.svg
+  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_05.svg
+  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_06.svg
+  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_07.svg
+  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_08.svg
+  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_09.svg
+  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_10.svg
+interface: philosophy-of-politics
+aiRole: ai-assisted
+sourceType: LaTex
+category: politics
+tags:
+  - حق
+  - فلسفه حقوق
+  - سیاست
+  - واقع‌گرایی
+  - اعتبارگرایی
+  - غیر واقع‌گرایی
+readingTime: 25
+difficulty: متوسط
+pdfUrl: /documents/articles/right.pdf
+showPdfViewer: true
+---
+
+export const HeroSection = ({ title, subtitle, author }) => (
+  <div style={{
+    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
+    borderRadius: '16px',
+    padding: '3rem 2.5rem',
+    marginBottom: '2.5rem',
+    position: 'relative',
+    overflow: 'hidden',
+    direction: 'rtl',
+  }}>
+    <svg style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', opacity: 0.06 }} viewBox="0 0 800 400">
+      <defs>
+        <pattern id="heroPattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+          <circle cx="30" cy="30" r="12" fill="none" stroke="white" strokeWidth="0.8"/>
+          <path d="M0 30 L60 30 M30 0 L30 60" stroke="white" strokeWidth="0.3"/>
+        </pattern>
+      </defs>
+      <rect width="800" height="400" fill="url(#heroPattern)"/>
+      <circle cx="650" cy="80" r="80" fill="none" stroke="#64ffda" strokeWidth="1.2" opacity="0.4"/>
+      <circle cx="150" cy="320" r="60" fill="none" stroke="#e94560" strokeWidth="1" opacity="0.3"/>
+      <path d="M50 200 Q400 50 750 200 Q400 350 50 200Z" fill="none" stroke="#64ffda" strokeWidth="0.6" opacity="0.3"/>
+    </svg>
+    <div style={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>
+      <div style={{ fontSize: '0.85rem', color: '#64ffda', marginBottom: '1rem', letterSpacing: '2px', fontWeight: 600 }}>
+        پژوهش تطبیقی
+      </div>
+      <h1 style={{ fontSize: '3rem', fontWeight: 900, color: '#ffffff', margin: '0 0 0.8rem 0', lineHeight: 1.3 }}>
+        {title}
+      </h1>
+      <p style={{ fontSize: '1.15rem', color: '#a8b2d1', lineHeight: 2, maxWidth: '700px', margin: '0 auto 1.5rem auto' }}>
+        {subtitle}
+      </p>
+      <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(100,255,218,0.1)', padding: '0.5rem 1.2rem', borderRadius: '20px' }}>
+        <span style={{ color: '#64ffda', fontSize: '0.9rem' }}>✍️</span>
+        <span style={{ color: '#e8e8e8', fontSize: '0.9rem' }}>{author}</span>
+      </div>
+    </div>
+  </div>
+);
+
+export const Callout = ({ type = 'info', title, children }) => {
+  const config = {
+    info: { bg: '#e8f4fd', border: '#2196F3', titleColor: '#1565C0', icon: '💡' },
+    warning: { bg: '#fff8e1', border: '#FF9800', titleColor: '#E65100', icon: '⚠️' },
+    quote: { bg: '#f3e5f5', border: '#9C27B0', titleColor: '#6A1B9A', icon: '💬' },
+    critical: { bg: '#fce4ec', border: '#E53935', titleColor: '#B71C1C', icon: '🔍' },
+    success: { bg: '#e8f5e9', border: '#4CAF50', titleColor: '#2E7D32', icon: '✅' },
+  };
+  const c = config[type] || config.info;
+  return (
+    <div style={{
+      background: c.bg,
+      borderRight: `5px solid ${c.border}`,
+      borderRadius: '8px',
+      padding: '1.2rem 1.5rem',
+      marginBottom: '1.5rem',
+      direction: 'rtl',
+    }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.6rem' }}>
+        <span style={{ fontSize: '1.2rem' }}>{c.icon}</span>
+        <strong style={{ color: c.titleColor, fontSize: '1rem' }}>{title}</strong>
+      </div>
+      <div style={{ color: '#333', lineHeight: 2, fontSize: '0.95rem' }}>{children}</div>
+    </div>
+  );
+};
+
+export const QuoteBlock = ({ children, author, source }) => (
+  <div style={{
+    background: 'linear-gradient(135deg, #f3e5f5 0%, #fce4ec 100%)',
+    borderRadius: '12px',
+    padding: '1.5rem 2rem',
+    marginBottom: '1.5rem',
+    position: 'relative',
+    direction: 'rtl',
+  }}>
+    <svg style={{ position: 'absolute', top: '10px', right: '15px', opacity: 0.15 }} width="40" height="40" viewBox="0 0 40 40">
+      <path d="M10 25c-3 0-5-2-5-5s2-5 5-5c0-5 3-9 8-10l1 3c-4 1-6 4-6 7 3 0 5 2 5 5s-2 5-5 5zm17 0c-3 0-5-2-5-5s2-5 5-5c0-5 3-9 8-10l1 3c-4 1-6 4-6 7 3 0 5 2 5 5s-2 5-5 5z" fill="#9C27B0"/>
+    </svg>
+    <div style={{ color: '#4a148c', lineHeight: 2, fontSize: '1rem', fontStyle: 'italic', paddingRight: '1rem' }}>
+      {children}
+    </div>
+    {(author || source) && (
+      <div style={{ marginTop: '0.8rem', textAlign: 'left', color: '#6A1B9A', fontSize: '0.85rem' }}>
+        {author && <span>— {author}</span>}
+        {source && <span style={{ marginRight: '0.5rem', color: '#888' }}>({source})</span>}
+      </div>
+    )}
+  </div>
+);
+
+export const SectionDivider = ({ number, icon }) => (
+  <div style={{
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '1rem',
+    margin: '2.5rem 0',
+  }}>
+    <div style={{ flex: 1, height: '1px', background: 'linear-gradient(to left, transparent, #ccc, transparent)' }}/>
+    <div style={{
+      width: '45px', height: '45px', borderRadius: '50%',
+      background: 'linear-gradient(135deg, #e94560, #c23152)',
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      color: '#fff', fontWeight: 'bold', fontSize: '1.1rem',
+      boxShadow: '0 3px 10px rgba(233,69,96,0.3)',
+    }}>
+      {icon || number}
+    </div>
+    <div style={{ flex: 1, height: '1px', background: 'linear-gradient(to right, transparent, #ccc, transparent)' }}/>
+  </div>
+);
+
+export const NumberedCard = ({ number, title, children }) => (
+  <div style={{
+    background: '#f8f9fa',
+    borderRadius: '10px',
+    padding: '1.2rem 1.5rem',
+    marginBottom: '1rem',
+    display: 'flex',
+    gap: '1rem',
+    alignItems: 'flex-start',
+    direction: 'rtl',
+  }}>
+    <div style={{
+      minWidth: '36px', height: '36px', borderRadius: '50%',
+      background: 'linear-gradient(135deg, #e94560, #c23152)',
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      color: '#fff', fontWeight: 'bold', fontSize: '0.9rem', flexShrink: 0,
+    }}>
+      {number}
+    </div>
+    <div style={{ flex: 1 }}>
+      {title && <strong style={{ color: '#1a1a2e', display: 'block', marginBottom: '0.3rem' }}>{title}</strong>}
+      <div style={{ color: '#444', lineHeight: 2, fontSize: '0.95rem' }}>{children}</div>
+    </div>
+  </div>
+);
+
+export const DataTable = ({ caption, headers, rows }) => (
+  <div style={{ marginBottom: '1.5rem', overflowX: 'auto', direction: 'rtl' }}>
+    <table style={{ width: '100%', borderCollapse: 'separate', borderSpacing: 0, borderRadius: '12px', overflow: 'hidden', fontSize: '0.92rem' }}>
+      <thead>
+        <tr>
+          {headers.map((h, i) => (
+            <th key={i} style={{
+              background: 'linear-gradient(135deg, #1a1a2e, #16213e)',
+              color: '#ffffff',
+              padding: '0.9rem 1rem',
+              textAlign: 'right',
+              fontWeight: 'bold',
+              fontSize: '0.9rem',
+            }}>{h}</th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((row, ri) => (
+          <tr key={ri}>
+            {row.map((cell, ci) => (
+              <td key={ci} style={{
+                padding: '0.8rem 1rem',
+                background: ri % 2 === 0 ? '#ffffff' : '#f8f9fa',
+                color: '#333',
+                lineHeight: 1.8,
+                borderBottom: '1px solid #eee',
+                textAlign: 'right',
+              }}>{cell}</td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    {caption && (
+      <p style={{ textAlign: 'center', color: '#555', fontSize: '0.83rem', marginTop: '0.6rem', fontStyle: 'italic' }}>
+        {caption}
+      </p>
+    )}
+  </div>
+);
+
+export const KeywordBadges = ({ keywords }) => (
+  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', justifyContent: 'center', marginBottom: '2rem', direction: 'rtl' }}>
+    {keywords.map((kw, i) => (
+      <span key={i} style={{
+        background: '#e8f4fd',
+        color: '#1565C0',
+        padding: '0.35rem 0.9rem',
+        borderRadius: '20px',
+        fontSize: '0.82rem',
+        fontWeight: 500,
+        border: '1px solid #bbdefb',
+      }}>{kw}</span>
+    ))}
+  </div>
+);
+
+export const FootnoteRef = ({ id, text }) => (
+  <sup style={{
+    color: '#e94560',
+    cursor: 'pointer',
+    fontWeight: 'bold',
+    fontSize: '0.75rem',
+    marginRight: '1px',
+    marginLeft: '1px',
+  }} title={text}>[{id}]</sup>
+);
+
+export const Footnote = ({ id, children }) => (
+  <div style={{
+    display: 'flex',
+    gap: '0.6rem',
+    alignItems: 'flex-start',
+    padding: '0.4rem 0',
+    borderBottom: '1px solid #eee',
+    direction: 'ltr',
+    textAlign: 'left',
+  }}>
+    <span style={{ color: '#e94560', fontWeight: 'bold', fontSize: '0.8rem', minWidth: '24px' }}>[{id}]</span>
+    <span style={{ color: '#444', fontSize: '0.85rem', lineHeight: 1.7 }}>{children}</span>
+  </div>
+);
+
+export const ConclusionCard = ({ number, title, children }) => (
+  <div style={{
+    background: 'linear-gradient(135deg, #1a1a2e, #16213e)',
+    borderRadius: '12px',
+    padding: '1.3rem 1.5rem',
+    marginBottom: '1rem',
+    display: 'flex',
+    gap: '1rem',
+    alignItems: 'flex-start',
+    direction: 'rtl',
+  }}>
+    <div style={{
+      minWidth: '36px', height: '36px', borderRadius: '50%',
+      background: 'linear-gradient(135deg, #64ffda, #00bfa5)',
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+      color: '#1a1a2e', fontWeight: 'bold', fontSize: '0.9rem', flexShrink: 0,
+    }}>
+      {number}
+    </div>
+    <div style={{ flex: 1 }}>
+      {title && <strong style={{ color: '#64ffda', display: 'block', marginBottom: '0.4rem' }}>{title}</strong>}
+      <div style={{ color: '#a8b2d1', lineHeight: 2, fontSize: '0.95rem' }}>{children}</div>
+    </div>
+  </div>
+);
+
+export const TableOfContents = () => (
+  <div style={{
+    background: '#f8f9fa',
+    borderRadius: '12px',
+    padding: '1.5rem 2rem',
+    marginBottom: '2.5rem',
+    direction: 'rtl',
+    border: '1px solid #e0e0e0',
+  }}>
+    <h2 style={{ color: '#1a1a2e', fontSize: '1.3rem', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+      📑 فهرست مطالب
+    </h2>
+    <div style={{ lineHeight: 2.2, fontSize: '0.95rem' }}>
+      <div><strong style={{ color: '#e94560' }}>۱.</strong> <a href="#ch-intro" style={{ color: '#1565C0', textDecoration: 'none' }}>درآمد: چرا «حق» مهم‌ترین مفهوم تمدن‌ساز است؟</a></div>
+      <div><strong style={{ color: '#e94560' }}>۲.</strong> <a href="#ch-what-is-right" style={{ color: '#1565C0', textDecoration: 'none' }}>حق چیست؟ تعاریف و تعابیر فلسفی</a></div>
+      <div><strong style={{ color: '#e94560' }}>۳.</strong> <a href="#ch-ontology" style={{ color: '#1565C0', textDecoration: 'none' }}>هستی‌شناسی حق: اعتباری یا واقعی؟</a></div>
+      <div><strong style={{ color: '#e94560' }}>۴.</strong> <a href="#ch-conceptual-map" style={{ color: '#1565C0', textDecoration: 'none' }}>حق در مقابل چه ترسیم می‌شود؟ جغرافیای مفهومی</a></div>
+      <div><strong style={{ color: '#e94560' }}>۵.</strong> <a href="#ch-schools" style={{ color: '#1565C0', textDecoration: 'none' }}>مکاتب و دستگاه‌های فکری</a></div>
+      <div><strong style={{ color: '#e94560' }}>۶.</strong> <a href="#ch-dichotomies" style={{ color: '#1565C0', textDecoration: 'none' }}>دوگانه‌های کلیدی: تحلیل تفصیلی</a></div>
+      <div><strong style={{ color: '#e94560' }}>۷.</strong> <a href="#ch-development" style={{ color: '#1565C0', textDecoration: 'none' }}>حق، توسعه و آبادانی</a></div>
+      <div><strong style={{ color: '#e94560' }}>۸.</strong> <a href="#ch-traps" style={{ color: '#1565C0', textDecoration: 'none' }}>تله‌ها، دام‌ها و تعارضات عملی</a></div>
+      <div><strong style={{ color: '#e94560' }}>۹.</strong> <a href="#ch-solutions" style={{ color: '#1565C0', textDecoration: 'none' }}>راه‌حل‌ها و نگرش‌های نوین</a></div>
+      <div><strong style={{ color: '#e94560' }}>۱۰.</strong> <a href="#ch-conclusion" style={{ color: '#1565C0', textDecoration: 'none' }}>نتیجه‌گیری</a></div>
+      <div style={{ marginTop: '0.5rem', paddingTop: '0.5rem', borderTop: '1px dashed #ccc' }}>
+        <div><strong style={{ color: '#888' }}>پیوست الف.</strong> <a href="#app-glossary" style={{ color: '#1565C0', textDecoration: 'none' }}>واژه‌نامهٔ تطبیقی</a></div>
+        <div><strong style={{ color: '#888' }}>پیوست ب.</strong> <a href="#app-schools-table" style={{ color: '#1565C0', textDecoration: 'none' }}>جدول تطبیقی مکاتب</a></div>
+        <div><strong style={{ color: '#888' }}>پیوست ج.</strong> <a href="#app-further-reading" style={{ color: '#1565C0', textDecoration: 'none' }}>خوانش‌های بیش‌تر</a></div>
+      </div>
+    </div>
+  </div>
+);
+
+<HeroSection
+  title="حق"
+  subtitle="تحلیل تطبیقی در فلسفه، حقوق و الهیات اسلامی و غربی"
+  author="پژوهشگر"
+/>
+
+<KeywordBadges keywords={["حق", "حقوق بشر", "فلسفه حقوق", "حقوق طبیعی", "پوزیتیویسم", "مقاصد شریعه", "عدالت", "آزادی", "توسعه", "کرامت انسانی"]} />
+
+<TableOfContents />
+
+<SectionDivider number="۱" />
+
+<div id="ch-intro"></div>
+
+## 📖 فصل اول: درآمد — چرا «حق» مهم‌ترین مفهوم تمدن‌ساز است؟
+
+واژهٔ «حق» یکی از پرکاربردترین و درعین‌حال پیچیده‌ترین مفاهیم در تاریخ اندیشهٔ بشری است. این واژه در زبان عربی و فارسی هم‌زمان به معنای «ثابت و پابرجا»، «درست و راست»، «آنچه کسی سزاوار آن است»، و نیز یکی از نام‌های خداوند در سنّت اسلامی به‌کار رفته است. در زبان‌های اروپایی نیز واژه‌های *Right* (انگلیسی)، *Droit* (فرانسوی)، و *Recht* (آلمانی) هریک طیف معنایی گسترده‌ای را پوشش می‌دهند که از «حقانیّت» و «درستی» تا «حقّ قانونی» و «عدالت» امتداد دارد.
+
+اهمیت این مفهوم از آنجاست که تقریباً هیچ نظام سیاسی، حقوقی، اخلاقی یا دینی‌ای نمی‌توان یافت که بدون تعریف و تعیین «حق» و «حقوق» شکل گرفته باشد. حقوق بشر، حقوق شهروندی، حقوق مالکیت، حقوق زنان، حقوق کودکان، حقوق حیوانات، حقوق محیط زیست و ده‌ها عنوان دیگر همگی بر بنیاد فهمی از «حق» استوارند. بنابراین، تبیین دقیق این مفهوم از یک پرسش صرفاً آکادمیک فراتر می‌رود و مستقیماً با سرنوشت آزادی، عدالت، توسعه و تمدن بشری پیوند دارد.
+
+### 🔍 پرسش‌های محوری مقاله
+
+این مقاله می‌کوشد به پرسش‌های زیر پاسخ دهد:
+
+<NumberedCard number="۱" title="ماهیت حق">
+  حق چیست و چه تعابیر فلسفی‌ای از آن وجود دارد؟
+</NumberedCard>
+
+<NumberedCard number="۲" title="اعتباری یا حقیقی؟">
+  آیا حق امری اعتباری (ذهنی و قراردادی) است یا حقیقی (عینی و واقعی)؟
+</NumberedCard>
+
+<NumberedCard number="۳" title="مفاهیم متقابل">
+  حق در مقابل چه مفاهیمی تعریف و ترسیم می‌شود؟
+</NumberedCard>
+
+<NumberedCard number="۴" title="دستگاه‌های فکری">
+  مکاتب و دستگاه‌های فکری مختلف (فلسفی، حقوقی، الهیاتی) چگونه به حق نگاه می‌کنند؟
+</NumberedCard>
+
+<NumberedCard number="۵" title="نتایج و تبعات">
+  نتایج و تبعات نظری و عملی هریک از این دیدگاه‌ها چیست؟
+</NumberedCard>
+
+<NumberedCard number="۶" title="جغرافیای مفهومی">
+  حق در نقشهٔ مفاهیم مجاور (آزادی، عدالت، برابری، اخلاق و …) کجا قرار می‌گیرد؟
+</NumberedCard>
+
+<NumberedCard number="۷" title="حق و توسعه">
+  رابطهٔ نگرش به حق با توسعه و آبادانی چگونه بوده است؟
+</NumberedCard>
+
+<NumberedCard number="۸" title="اندیشه‌های مردود">
+  چه اندیشه‌هایی دربارهٔ حق به صراحت رد و کنار گذاشته شده‌اند؟
+</NumberedCard>
+
+<NumberedCard number="۹" title="تله‌ها و دام‌ها">
+  تله‌ها و دام‌های عملی تحقّق حق (صوری‌شدن، تعارض حقوق و …) کدام‌اند؟
+</NumberedCard>
+
+<NumberedCard number="۱۰" title="نگرش‌های نوظهور">
+  راه‌حل‌ها و نگرش‌های نوظهور چه هستند؟
+</NumberedCard>
+
+### 📋 روش و ساختار مقاله
+
+روش مقاله تحلیلی‐تطبیقی است و از منابع اولیهٔ فلسفی، حقوقی و الهیاتی (هم اسلامی و هم غربی) بهره می‌برد. ساختار مقاله به‌گونه‌ای طراحی شده که بدنهٔ اصلی یک روایت یک‌پارچه و خودبسنده ارائه دهد و پیوست‌های تکمیلی برای علاقه‌مندان به تفصیل بیش‌تر در دسترس باشد.
+
+<SectionDivider number="۲" />
+
+<div id="ch-what-is-right"></div>
+
+## ⚖️ فصل دوم: حق چیست؟ تعاریف و تعابیر فلسفی
+
+### 🔤 ریشه‌شناسی و تحول معنایی
+
+#### در زبان عربی و فارسی
+
+ریشهٔ «ح‌ق‌ق» در عربی بر ثبوت و تحقّق دلالت دارد. *لسان العرب* ابن‌منظور ذیل مادّهٔ «حقق» می‌نویسد: «الحقّ نقیض الباطل» (حق نقیض باطل است). این تعریف نشان می‌دهد که در زبان عربی، حق پیش از آنکه مفهومی حقوقی باشد، مفهومی هستی‌شناختی (*ontological*) و معرفت‌شناختی (*epistemological*) است: آنچه واقعی، ثابت و راست است در برابر آنچه باطل، موهوم و دروغ است.
+
+در قرآن کریم، واژهٔ «حق» بیش از ۲۸۰ بار آمده و در معانی گوناگونی به‌کار رفته است: خداوند («هو الله الحقّ»)، قرآن («نزّل الکتاب بالحقّ»)، عدالت و داوری درست («احکم بین الناس بالحقّ»)، واقعیت و حقیقت («جاء الحقّ و زهق الباطل»)، و نیز سهم و نصیب («و فی أموالهم حقّ للسائل و المحروم»).
+
+#### در زبان‌های اروپایی
+
+واژهٔ لاتین *ius* (که *jus* هم نوشته می‌شود) ریشهٔ اصلی واژه‌های حقوقی اروپایی است (*justice*، *juridical*، *jurisprudence*). این واژه هم به معنای «قانون» و هم به معنای «حقّ فردی» به‌کار می‌رفت. از سوی دیگر، واژهٔ *rectus* (مستقیم، درست) ریشهٔ *Right*، *Recht* و *Droit* است. این دوگانگی ریشه‌شناختی نشان‌دهندهٔ آن است که در سنّت غربی نیز حق هم بُعد عینی‐هستی‌شناختی (درستی و راستی) و هم بُعد هنجاری‐حقوقی (ادعا و امتیاز) دارد.
+
+### 📚 تعاریف فلسفی حق
+
+#### حق به مثابهٔ امتیاز (*Privilege*)
+
+در ساده‌ترین معنا، حق یعنی اجازه یا مجوّز انجام کاری. اگر فرد A حقّ انجام فعل X را داشته باشد، به این معناست که انجام X برای او مجاز است و هیچ تکلیفی مبنی بر خودداری از آن ندارد. وسلی هوفلد (*Wesley Hohfeld*) در اثر کلاسیک خود *Fundamental Legal Conceptions* (۱۹۱۹) این معنا را «امتیاز» (*privilege*) یا «آزادی» (*liberty*) نامید و آن را از سه معنای دیگر متمایز کرد.<FootnoteRef id="1" text="Hohfeld, W. N. (1919). Fundamental Legal Conceptions. Yale University Press." />
+
+#### حق به مثابهٔ ادّعا (*Claim*)
+
+دومین معنا و شاید مهم‌ترین معنای حق در ادبیات حقوقی و فلسفی، حق به‌عنوان «ادّعا» (*claim-right*) است. اگر A حقّ ادّعایی نسبت به X در برابر B داشته باشد، B وظیفه (*duty*) دارد X را فراهم کند یا از نقض آن خودداری نماید. ادّعا و وظیفه دو روی یک سکّه‌اند: هرجا حقّ ادّعایی وجود دارد، تکلیف متناظری نیز هست. این دوگانگی را «اصل همبستگی» (*Correlativity Thesis*) می‌نامند.
+
+#### حق به مثابهٔ قدرت (*Power*)
+
+سومین معنا، حق به‌عنوان «قدرت حقوقی» است: توانایی تغییر وضعیت حقوقی خود یا دیگران. مثلاً حقّ وصیّت، حقّ انعقاد قرارداد، یا حقّ بخشش مالکیت. در این معنا، حق یک «توانایی هنجاری» (*normative power*) است.
+
+#### حق به مثابهٔ مصونیت (*Immunity*)
+
+چهارمین معنا، «مصونیت» است: دیگران قدرت حقوقی تغییر وضعیت حقوقی صاحب حق را ندارند. مثلاً مصونیت پارلمانی یا مصونیت از شکنجه.
+
+<Callout type="info" title="چارچوب چهارگانهٔ هوفلد">
+  هوفلد با تمایز میان **ادّعا**، **امتیاز**، **قدرت** و **مصونیت** نشان داد که وقتی کسی از «حق» سخن می‌گوید، باید مشخص کند کدام‌یک از این چهار معنا مراد اوست. بسیاری از مناقشات حقوقی و فلسفی ناشی از خلط همین معانی است.
+</Callout>
+
+<svg width="100%" viewBox="0 0 700 380" style={{ maxWidth: '700px', margin: '1.5rem auto', display: 'block' }}>
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1a1a2e"/>
+      <stop offset="100%" stopColor="#16213e"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#e94560"/>
+      <stop offset="100%" stopColor="#c23152"/>
+    </linearGradient>
+    <filter id="shadow1">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" floodOpacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="700" height="380" rx="16" fill="#fafafa"/>
+  <text x="350" y="35" textAnchor="middle" fill="#1a1a2e" fontSize="16" fontWeight="bold">چارچوب چهارگانهٔ هوفلد (Hohfeld's Framework)</text>
+  <rect x="50" y="60" width="270" height="120" rx="12" fill="url(#g1)" filter="url(#shadow1)"/>
+  <text x="185" y="95" textAnchor="middle" fill="#64ffda" fontSize="14" fontWeight="bold">ادّعا (Claim)</text>
+  <text x="185" y="120" textAnchor="middle" fill="#a8b2d1" fontSize="11">حقّی که تکلیف متناظر ایجاد می‌کند</text>
+  <text x="185" y="145" textAnchor="middle" fill="#e8e8e8" fontSize="10">A حقّ ادّعایی دارد ← B تکلیف دارد</text>
+  <text x="185" y="165" textAnchor="middle" fill="#64ffda" fontSize="10">مهم‌ترین معنای حق</text>
+  <rect x="380" y="60" width="270" height="120" rx="12" fill="url(#g1)" filter="url(#shadow1)"/>
+  <text x="515" y="95" textAnchor="middle" fill="#64ffda" fontSize="14" fontWeight="bold">امتیاز (Privilege)</text>
+  <text x="515" y="120" textAnchor="middle" fill="#a8b2d1" fontSize="11">اجازه و آزادی انجام فعل</text>
+  <text x="515" y="145" textAnchor="middle" fill="#e8e8e8" fontSize="10">A مجاز است X را انجام دهد</text>
+  <text x="515" y="165" textAnchor="middle" fill="#64ffda" fontSize="10">= آزادی (Liberty)</text>
+  <rect x="50" y="210" width="270" height="120" rx="12" fill="url(#g1)" filter="url(#shadow1)"/>
+  <text x="185" y="245" textAnchor="middle" fill="#64ffda" fontSize="14" fontWeight="bold">قدرت (Power)</text>
+  <text x="185" y="270" textAnchor="middle" fill="#a8b2d1" fontSize="11">توانایی تغییر وضعیت حقوقی</text>
+  <text x="185" y="295" textAnchor="middle" fill="#e8e8e8" fontSize="10">وصیّت، قرارداد، بخشش</text>
+  <text x="185" y="315" textAnchor="middle" fill="#64ffda" fontSize="10">= توانایی هنجاری</text>
+  <rect x="380" y="210" width="270" height="120" rx="12" fill="url(#g1)" filter="url(#shadow1)"/>
+  <text x="515" y="245" textAnchor="middle" fill="#64ffda" fontSize="14" fontWeight="bold">مصونیت (Immunity)</text>
+  <text x="515" y="270" textAnchor="middle" fill="#a8b2d1" fontSize="11">حفاظت از تغییر وضعیت حقوقی</text>
+  <text x="515" y="295" textAnchor="middle" fill="#e8e8e8" fontSize="10">مصونیت پارلمانی، منع شکنجه</text>
+  <text x="515" y="315" textAnchor="middle" fill="#64ffda" fontSize="10">دیگران قدرت تغییر ندارند</text>
+  <line x1="320" y1="120" x2="380" y2="120" stroke="#e94560" strokeWidth="2" strokeDasharray="6,3"/>
+  <line x1="320" y1="270" x2="380" y2="270" stroke="#e94560" strokeWidth="2" strokeDasharray="6,3"/>
+  <line x1="185" y1="180" x2="185" y2="210" stroke="#e94560" strokeWidth="2" strokeDasharray="6,3"/>
+  <line x1="515" y1="180" x2="515" y2="210" stroke="#e94560" strokeWidth="2" strokeDasharray="6,3"/>
+  <text x="350" y="370" textAnchor="middle" fill="#555" fontSize="10">هر معنای «حق» باید دقیقاً مشخص شود تا از خلط مفاهیم جلوگیری شود</text>
+</svg>
+
+#### نظریهٔ اراده در برابر نظریهٔ نفع
+
+یکی از بنیادی‌ترین مناقشات در فلسفهٔ حق، مناقشهٔ میان دو نظریهٔ رقیب دربارهٔ ماهیت حق است:
+
+- ⚡ **نظریهٔ اراده** (هارت، کانت، ساویینی): حق یعنی حوزه‌ای از اختیار و ارادهٔ آزاد. صاحب حق کسی است که می‌تواند اِعمال یا اسقاط حقّ خود را اراده کند. بنابراین موجوداتی که فاقد اراده‌اند (مانند حیوانات، جنین، یا نسل‌های آینده) نمی‌توانند به معنای دقیق کلمه «صاحب حق» باشند.
+
+- 🌱 **نظریهٔ نفع** (بنتام، رَز، مک‌کورمیک): حق یعنی نفع یا مصلحتی که به‌اندازهٔ کافی مهم است تا وظیفه‌ای بر دیگران تحمیل کند. در این نظریه، هر موجودی که منافع قابل‌شناسایی دارد (از جمله حیوانات و نسل‌های آینده) بالقوّه می‌تواند صاحب حق باشد.
+
+<Callout type="critical" title="نقد متقابل">
+  نظریهٔ اراده نمی‌تواند حقوق کودکان، ناتوانان ذهنی و نسل‌های آینده را توضیح دهد. نظریهٔ نفع نمی‌تواند توضیح دهد چرا صاحب حق معمولاً اختیار اسقاط حقّ خود را دارد (مثلاً حقّ مالکیت را می‌توان واگذار کرد). نظریه‌های ترکیبی (*hybrid theories*) مانند نظریهٔ کروفت (*Kramer, Simmonds & Steiner, 1998*) کوشیده‌اند هر دو بُعد را لحاظ کنند.
+</Callout>
+
+### 🕌 حق در سنّت فلسفهٔ اسلامی
+
+در فلسفهٔ اسلامی، واژهٔ «حق» پیش از هر چیز بار هستی‌شناختی دارد. حق از اسماء الهی است و به معنای «موجود ثابت و واقعی» به‌کار می‌رود. ابن‌سینا در *الشفاء* و *الإشارات و التنبیهات*، «حقّ» را در مقابل «باطل» قرار می‌دهد و حقّ مطلق را وجود واجب (خداوند) می‌داند. در این دستگاه، «حق» نخست یک مفهوم وجودشناختی است و سپس دلالت‌های اخلاقی و حقوقی از آن استخراج می‌شود.
+
+علامه طباطبایی در *المیزان* حق را چنین تعریف می‌کند: «الحقّ هو الثابت الذی لا یقبل الإنکار» (حق آن امر ثابتی است که انکارپذیر نیست). این تعریف نشان می‌دهد که در سنّت اسلامی، حق امری عینی و واقعی تلقّی شده و اعتباری و قراردادی محض دانسته نشده است.
+
+مرتضی مطهری در *مقدمه‌ای بر جهان‌بینی اسلامی* تصریح می‌کند که حقوق انسانی از «حقایق» نشئت می‌گیرد نه از «قراردادها»: «حقوق واقعی سرچشمه‌اش تکوین است نه وضع و اعتبار.» به‌عبارت‌دیگر، از هست‌ها (طبیعت انسان و جایگاه وجودی او) بایدها (حقوق و تکالیف) استنتاج می‌شود.
+
+<SectionDivider number="۳" />
+
+<div id="ch-ontology"></div>
+
+## 🧠 فصل سوم: هستی‌شناسی حق — اعتباری یا واقعی؟
+
+### طرح مسئله
+
+آیا وقتی می‌گوییم «انسان حقّ آزادی بیان دارد»، از یک واقعیت عینی سخن می‌گوییم (مانند آنکه بگوییم «آب در صد درجه می‌جوشد») یا از یک توافق اجتماعی (مانند آنکه بگوییم «سمت راست جاده باید رانندگی کرد»)؟ این پرسش یکی از بنیادی‌ترین پرسش‌های فلسفهٔ حق است و پاسخ به آن پیامدهای عملی عظیمی دارد.
+
+### 🏛️ دیدگاه واقع‌گرایانه: حق امری حقیقی و عینی
+
+#### حقّ طبیعی در سنّت غربی
+
+مکتب حقوق طبیعی (*Natural Law*) قدیمی‌ترین و پُرنفوذترین مکتب در تاریخ اندیشهٔ حقوقی غربی است. این مکتب مدّعی است حقوق بنیادین انسان از طبیعت انسانی، عقل، یا ارادهٔ الهی سرچشمه می‌گیرد و مقدّم بر هر قانون وضعی (*positive law*) است.
+
+**ارسطو** در *اخلاق نیکوماخوسی* (کتاب پنجم) میان «عدالت طبیعی» (*physikon dikaion*) و «عدالت وضعی» (*nomikon dikaion*) تمایز نهاد. عدالت طبیعی همه‌جا یکسان و ثابت است، اما عدالت وضعی از جامعه‌ای به جامعهٔ دیگر فرق می‌کند.<FootnoteRef id="2" text="Aristotle. Nicomachean Ethics, V.7, 1134b18–1135a5." />
+
+**توماس آکویناس** (*Thomas Aquinas*) در *جامع الهیات* (*Summa Theologiae*) نظام سلسله‌مراتبی از قوانین ترسیم کرد: قانون ابدی (*lex aeterna*) ← قانون طبیعی (*lex naturalis*) ← قانون بشری (*lex humana*) ← قانون الهی (*lex divina*). قانون طبیعی مشارکت عقل انسانی در قانون ابدی الهی است و حقوق بنیادین از آن مشتق می‌شود.<FootnoteRef id="3" text="Aquinas, T. Summa Theologiae, I-II, q.91, a.2." />
+
+**جان لاک** (*John Locke*) در *رسالهٔ دوم دربارهٔ حکومت* (۱۶۸۹) حقّ حیات، آزادی و مالکیت را حقوق طبیعی پیشااجتماعی دانست که دولت موظّف به حفظ آن‌هاست و اگر آن‌ها را نقض کند، مردم حقّ شورش دارند.
+
+#### واقع‌گرایی حقوقی‐اخلاقی معاصر
+
+در دورهٔ معاصر، فیلسوفانی مانند جان فینیس (*John Finnis*) در *قانون طبیعی و حقوق طبیعی* (*Natural Law and Natural Rights*، ۱۹۸۰) کوشیده‌اند سنّت حقوق طبیعی را بدون ابتنای مستقیم بر متافیزیک الهیاتی بازسازی کنند. فینیس هفت «خیر بنیادین» (*basic goods*) را شناسایی می‌کند (زندگی، دانش، بازی، تجربهٔ زیبایی‌شناختی، مراودت اجتماعی، عقلانیت عملی و دین) و حقوق را ابزارهایی برای حفاظت از این خیرها می‌داند.<FootnoteRef id="4" text="Finnis, J. (1980). Natural Law and Natural Rights. Oxford University Press." />
+
+#### واقع‌گرایی در سنّت اسلامی
+
+همان‌طور که در فصل پیشین اشاره شد، غالب متفکران اسلامی (اعم از اشعری و معتزلی و شیعی) حق را امری عینی و واقعی دانسته‌اند، هرچند در *منشأ* این واقعیت اختلاف دارند:
+
+- 🔵 **اشاعره**: حق و باطل، حُسن و قُبح، صرفاً به ارادهٔ الهی بستگی دارد (نظریهٔ امر الهی / *Divine Command Theory*). خداوند هرچه امر کند حق است و هرچه نهی کند باطل.
+- 🟢 **معتزله و شیعه**: حُسن و قُبح ذاتی افعال است و عقل انسان مستقلاً قادر به درک آن‌هاست (*ethical rationalism*). خداوند به آنچه فی‌نفسه حَسَن است امر می‌کند نه آنکه امر او آن را حَسَن سازد.
+- 🟣 **علامه طباطبایی**: حقوق واقعی انسان از «رابطهٔ تکوینی» انسان با سعادتش برمی‌خیزد. هر فعلی که واقعاً انسان را به سعادتش نزدیک کند، «حق» است.
+
+### 🔧 دیدگاه اعتباری‐قراردادی: حق امری ساخته‌شدهٔ بشری
+
+#### پوزیتیویسم حقوقی
+
+جان آستین (*John Austin*) و بعداً هانس کلزن (*Hans Kelsen*) و هربرت هارت (*H.L.A. Hart*) مکتب پوزیتیویسم حقوقی (*Legal Positivism*) را بنا نهادند. تز اصلی: حق چیزی است که نظام حقوقی معتبر اعطا کرده باشد. هیچ «حقّ طبیعی» پیشاقانونی وجود ندارد. ارتباط ضروری‌ای میان قانون و اخلاق نیست.
+
+**آستین**: «قانون فرمان حاکم مقتدر است که با ضمانت اجرا همراه باشد.»<FootnoteRef id="5" text="Austin, J. (1832). The Province of Jurisprudence Determined." />
+
+**کلزن**: «نظریهٔ ناب حقوق» (*Pure Theory of Law*) می‌کوشد حقوق را از هرگونه ارزش‌داوری اخلاقی، سیاسی یا اجتماعی پاک‌سازی کند. هر هنجار حقوقی اعتبارش را از هنجار بالاتر می‌گیرد تا به «هنجار بنیادین» (*Grundnorm*) برسد.<FootnoteRef id="6" text="Kelsen, H. (1934). Reine Rechtslehre [Pure Theory of Law]." />
+
+**هارت**: «قاعدهٔ شناسایی» (*rule of recognition*) معیار اعتبار قوانین است: آنچه بر اساس رویهٔ پذیرفته‌شدهٔ مقامات رسمی، قانون شناخته شود، قانون است.<FootnoteRef id="7" text="Hart, H.L.A. (1961). The Concept of Law. Oxford University Press." />
+
+#### قراردادگرایی اجتماعی
+
+هابز، لاک و روسو هریک شکلی از قراردادگرایی (*Social Contract*) را مطرح کردند. در نظریهٔ هابز، حقوق در وضع طبیعی بی‌معنایند (چون همه علیه همه‌اند) و فقط با قرارداد اجتماعی و واگذاری قدرت به حاکم (*Leviathan*) حقوق به وجود می‌آیند. در نظریهٔ لاک، حقوق طبیعی *پیش* از قرارداد وجود دارند و قرارداد برای حفظ آن‌ها بسته می‌شود. در نظریهٔ روسو، «ارادهٔ عمومی» (*volonté générale*) منشأ حقوق است.
+
+#### نقد نسبی‌گرایانه
+
+نسبی‌گرایان فرهنگی (*cultural relativists*) مانند ملویل هرسکوویتز (*Melville Herskovits*) استدلال کرده‌اند که «حقوق» بازتاب ارزش‌های فرهنگی خاصّ هر جامعه است و نمی‌توان از حقوق جهان‌شمول سخن گفت. این دیدگاه در بیانیهٔ ۱۹۴۷ انجمن مردم‌شناسی آمریکا (*AAA*) که در واکنش به پیش‌نویس اعلامیهٔ جهانی حقوق بشر نوشته شد، بیان رسمی یافت.
+
+### 📊 پیامدهای پذیرش هر دیدگاه
+
+<DataTable
+  caption="مقایسهٔ پیامدهای واقع‌گرایی و اعتباری‌گرایی در حق"
+  headers={["معیار", "واقع‌گرایی (حق = حقیقی)", "اعتباری‌گرایی (حق = قراردادی)"]}
+  rows={[
+    ["جهان‌شمولی", "حقوق بنیادین جهان‌شمول‌اند و فرهنگ نمی‌تواند آن‌ها را نقض کند", "حقوق از فرهنگ به فرهنگ متفاوت‌اند؛ جهان‌شمولی ادعایی نامشروع"],
+    ["ثبات", "هستهٔ حقوق ثابت است (تغییرناپذیر)", "حقوق با تغییر اجتماع تغییر می‌کنند"],
+    ["نقد قدرت", "می‌توان قوانین ظالمانه را به نام «حقّ طبیعی» نقد کرد", "معیار بیرونی برای نقد قانون وضعی وجود ندارد"],
+    ["حقوق بشر", "مبنای مستحکم برای حقوق بشر", "حقوق بشر فقط یک توافق بین‌المللی شکننده"],
+    ["انعطاف", "خطر جزم‌اندیشی و تحمیل ارزش‌های یک فرهنگ", "انعطاف و احترام به تنوّع فرهنگی"],
+    ["خطر عملی", "سوء استفاده از «طبیعت» برای توجیه نابرابری (مثلاً بردگی «طبیعی» در ارسطو)", "بی‌دفاعی در برابر ستم‌های سازمان‌یافته (مثلاً قوانین نورنبرگ نازی «قانونی» بودند)"],
+  ]}
+/>
+
+<Callout type="warning" title="تأکید بر نسبیّت و تهدید حقوق بشر">
+  اگر حق صرفاً قراردادی باشد، آنگاه اعلامیهٔ جهانی حقوق بشر (۱۹۴۸) چیزی بیش از یک «توافق سیاسی» میان دولت‌ها نیست و هر دولتی با خروج از آن توافق، مجاز به نقض آن حقوق خواهد بود. این دقیقاً همان چیزی است که رژیم‌های استبدادی مدّعی آن‌اند: «حقوق بشر غربی به ما ربطی ندارد.»
+
+  از سوی دیگر، اگر حق کاملاً «طبیعی و ثابت» تلقّی شود، خطر آن وجود دارد که تفسیر خاصّ یک فرهنگ یا مذهب از «طبیعت» به‌عنوان حقیقت مطلق تحمیل شود.
+</Callout>
+
+### 🌉 راه سوم: واقع‌گرایی حداقلی و تکثّرگرایی
+
+بسیاری از فیلسوفان معاصر کوشیده‌اند میان واقع‌گرایی افراطی و نسبی‌گرایی افراطی راهی میانه بیابند:
+
+- 📘 **جان رالز** (*John Rawls*): در *حقّ مردمان* (*The Law of Peoples*، ۱۹۹۹) از فهرست «حداقلی» حقوق بشر دفاع کرد که همهٔ «مردمان پسندیده» (*decent peoples*) آن را می‌پذیرند، بدون آنکه نظام لیبرال‌دموکراتیک غربی تحمیل شود.<FootnoteRef id="8" text="Rawls, J. (1999). The Law of Peoples. Harvard University Press." />
+
+- 📗 **مارتا نوسباوم** (*Martha Nussbaum*): رویکرد قابلیت (*Capabilities Approach*) فهرستی از قابلیت‌های بنیادین انسانی (زندگی، سلامت جسمی، تمامیت بدنی، حواس و تخیّل و …) ترسیم می‌کند که هر نظام عادلانه‌ای باید تضمین‌شان کند. این رویکرد هم واقع‌گرا (مبتنی بر طبیعت انسانی) و هم تکثّرگرا (اجازهٔ تنوّع فرهنگی در شیوهٔ تحقّق) است.<FootnoteRef id="9" text="Nussbaum, M. (2000). Women and Human Development. Cambridge University Press." />
+
+- 📙 **چارلز تیلور** (*Charles Taylor*): پیشنهاد «اجماع بر سر هنجارها با اختلاف در مبانی» (*overlapping consensus on norms with disagreement on foundations*) یعنی جوامع مختلف می‌توانند از مبانی فلسفی و دینی متفاوت به حقوق بشر مشترک برسند.
+
+<SectionDivider number="۴" />
+
+<div id="ch-conceptual-map"></div>
+
+## 🗺️ فصل چهارم: حق در مقابل چه ترسیم می‌شود؟ جغرافیای مفهومی
+
+### مفاهیم متقابل حق
+
+#### حق و باطل
+
+در سنّت اسلامی و نیز در فلسفهٔ کلاسیک، حق در مقابل «باطل» (*falsehood / invalid*) ترسیم می‌شود. باطل آن چیزی است که فاقد واقعیت و ثبات است. این تقابل بیش‌تر هستی‌شناختی و معرفت‌شناختی است.
+
+#### حق و تکلیف
+
+در سنّت حقوقی مدرن، حق در مقابل «تکلیف» (*duty / obligation*) ترسیم می‌شود. این دو مفهوم مکمّل یکدیگرند: هرجا حقّی هست، تکلیفی نیز هست (هوفلد). امّا بحث مهمی وجود دارد: آیا حق مقدّم بر تکلیف است یا برعکس؟ در سنّت لیبرال، حق مقدّم است (ابتدا حقوق فرد تعیین می‌شود، سپس تکالیف دیگران). در سنّت اسلامی (به‌ویژه نزد فقها)، تکلیف بنیادی‌تر است و حقوق انسان از تکالیف الهی او استنباط می‌شود.
+
+#### حق و حُکم
+
+در فقه اسلامی، «حق» از «حُکم» تفکیک شده است. حُکم خطاب شارع است که مستقیماً فعل یا ترک فعلی را مقرّر می‌کند (واجب، حرام، مستحب، مکروه، مباح). حق امتیازی است که شخص می‌تواند آن را اِعمال یا اسقاط کند. تمایز مهم: حکم قابل اسقاط نیست ولی حق (در بسیاری موارد) قابل اسقاط است.
+
+### 🔗 نقشهٔ مفاهیم مجاور
+
+مفهوم حق در شبکه‌ای از مفاهیم مرتبط قرار دارد که هریک بخشی از معنا و کارکرد آن را آشکار می‌سازد:
+
+<svg width="100%" viewBox="0 0 800 550" style={{ maxWidth: '800px', margin: '1.5rem auto', display: 'block' }}>
+  <defs>
+    <linearGradient id="centerG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#e94560"/>
+      <stop offset="100%" stopColor="#c23152"/>
+    </linearGradient>
+    <linearGradient id="nodeG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1a1a2e"/>
+      <stop offset="100%" stopColor="#16213e"/>
+    </linearGradient>
+    <filter id="nodeShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" floodOpacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="800" height="550" rx="16" fill="#fafafa"/>
+  <text x="400" y="30" textAnchor="middle" fill="#1a1a2e" fontSize="15" fontWeight="bold">نقشهٔ مفاهیم مجاور حق</text>
+  <circle cx="400" cy="275" r="52" fill="url(#centerG)" filter="url(#nodeShadow)"/>
+  <text x="400" y="272" textAnchor="middle" fill="#ffffff" fontSize="18" fontWeight="bold">حق</text>
+  <text x="400" y="292" textAnchor="middle" fill="#ffd6de" fontSize="10">Right</text>
+  <rect x="80" y="60" width="130" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="145" y="82" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">عدالت</text>
+  <text x="145" y="98" textAnchor="middle" fill="#a8b2d1" fontSize="9">Justice</text>
+  <line x1="190" y1="110" x2="360" y2="245" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="280" y="50" width="130" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="345" y="72" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">آزادی</text>
+  <text x="345" y="88" textAnchor="middle" fill="#a8b2d1" fontSize="9">Liberty</text>
+  <line x1="345" y1="100" x2="385" y2="225" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="490" y="50" width="130" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="555" y="72" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">برابری</text>
+  <text x="555" y="88" textAnchor="middle" fill="#a8b2d1" fontSize="9">Equality</text>
+  <line x1="510" y1="100" x2="430" y2="235" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="620" y="120" width="130" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="685" y="142" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">انصاف</text>
+  <text x="685" y="158" textAnchor="middle" fill="#a8b2d1" fontSize="9">Equity</text>
+  <line x1="635" y1="160" x2="448" y2="260" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="650" y="230" width="120" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="710" y="252" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">اخلاق</text>
+  <text x="710" y="268" textAnchor="middle" fill="#a8b2d1" fontSize="9">Morality</text>
+  <line x1="650" y1="260" x2="452" y2="275" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="640" y="330" width="120" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="700" y="352" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">قانون</text>
+  <text x="700" y="368" textAnchor="middle" fill="#a8b2d1" fontSize="9">Law</text>
+  <line x1="640" y1="355" x2="452" y2="290" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="540" y="430" width="120" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="600" y="452" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">قدرت</text>
+  <text x="600" y="468" textAnchor="middle" fill="#a8b2d1" fontSize="9">Power</text>
+  <line x1="553" y1="435" x2="428" y2="318" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="340" y="460" width="130" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="405" y="482" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">کرامت</text>
+  <text x="405" y="498" textAnchor="middle" fill="#a8b2d1" fontSize="9">Dignity</text>
+  <line x1="400" y1="460" x2="400" y2="327" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="150" y="450" width="130" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="215" y="472" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">مسئولیت</text>
+  <text x="215" y="488" textAnchor="middle" fill="#a8b2d1" fontSize="9">Responsibility</text>
+  <line x1="262" y1="450" x2="375" y2="320" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="30" y="380" width="130" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="95" y="402" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">مشروعیت</text>
+  <text x="95" y="418" textAnchor="middle" fill="#a8b2d1" fontSize="9">Legitimacy</text>
+  <line x1="155" y1="390" x2="355" y2="300" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="20" y="280" width="140" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="90" y="302" textAnchor="middle" fill="#64ffda" fontSize="11" fontWeight="bold">قراردادگرایی</text>
+  <text x="90" y="318" textAnchor="middle" fill="#a8b2d1" fontSize="9">Contractarianism</text>
+  <line x1="160" y1="305" x2="348" y2="275" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="30" y="180" width="130" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="95" y="202" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">تکلیف</text>
+  <text x="95" y="218" textAnchor="middle" fill="#a8b2d1" fontSize="9">Duty</text>
+  <line x1="160" y1="210" x2="350" y2="260" stroke="#e94560" strokeWidth="2" opacity="0.6"/>
+  <rect x="320" y="145" width="130" height="40" rx="8" fill="#fce4ec" stroke="#e94560" strokeWidth="1"/>
+  <text x="385" y="170" textAnchor="middle" fill="#B71C1C" fontSize="10" fontWeight="bold">توسعه (Development)</text>
+  <line x1="385" y1="185" x2="395" y2="223" stroke="#e94560" strokeWidth="1.5" opacity="0.5"/>
+  <text x="400" y="543" textAnchor="middle" fill="#555" fontSize="10">هر مفهوم بخشی از معنا و کارکرد «حق» را آشکار می‌سازد</text>
+</svg>
+
+<Callout type="info" title="نقشهٔ مفهومی حق">
+  <div style={{ lineHeight: 2.2 }}>
+    **الف. عدالت** (*Justice*): چارچوب کلانی که حقوق در آن توزیع می‌شوند. عدالت پرسش از «توزیع درست» حقوق، منابع و فرصت‌هاست.
+
+    **ب. آزادی** (*Liberty / Freedom*): حق غالباً شرط یا مقوّم آزادی است. آزادی بیان، آزادی عقیده، آزادی تجمّع همگی حقوق‌اند.
+
+    **ج. برابری** (*Equality*): حقوق برابر یعنی هر فرد صرف‌نظر از نژاد، جنسیت، طبقه و … از حقوق یکسانی برخوردار است.
+
+    **د. انصاف** (*Equity / Fairness*): فراتر از برابری صوری، انصاف به تفاوت‌های واقعی افراد توجه دارد و ممکن است حقوق نابرابر اعطا کند تا نتیجهٔ برابر حاصل شود.
+
+    **هـ. اخلاق** (*Morality / Ethics*): حقوق اخلاقی (*moral rights*) ممکن است با حقوق قانونی (*legal rights*) هم‌پوشانی داشته یا نداشته باشند.
+
+    **و. قانون** (*Law*): نظام رسمی هنجارهایی که حقوق و تکالیف را مشخص و ضمانت اجرا می‌کند.
+
+    **ز. قدرت** (*Power*): حق بدون قدرت اِعمال، صوری می‌ماند. رابطهٔ حق و قدرت یکی از تنش‌های اصلی اندیشهٔ سیاسی است.
+
+    **ح. کرامت** (*Dignity*): در گفتمان حقوق بشر، کرامت ذاتی انسان مبنای همهٔ حقوق است (مادّهٔ ۱ اعلامیهٔ جهانی حقوق بشر).
+
+    **ط. مسئولیت** (*Responsibility*): داشتن حق مستلزم مسئولیت است هم نسبت به حقوق خود و هم نسبت به حقوق دیگران.
+
+    **ی. مشروعیت** (*Legitimacy*): مشروعیت حکومت از رعایت حقوق نشئت می‌گیرد.
+
+    **ک. قراردادگرایی** (*Contractarianism*): دیدگاهی که حقوق را محصول توافق عقلانی افراد می‌داند.
+
+    **ل. مدنیت** (*Civility / Citizenship*): شهروندی و حقوق و تکالیف مدنی.
+
+    **م. توسعه** (*Development*): ارتباط میان تضمین حقوق و پیشرفت اقتصادی‐اجتماعی.
+  </div>
+</Callout>
+
+<SectionDivider number="۵" />
+
+<div id="ch-schools"></div>
+
+## 🏫 فصل پنجم: مکاتب و دستگاه‌های فکری
+
+### ⚖️ مکتب حقوق طبیعی (*Natural Law*)
+
+این مکتب (از ارسطو و رواقیان تا آکویناس و فینیس) بر وجود معیارهای عینی، عقلی و فراوضعی حق تأکید دارد. قانون وضعی‌ای که با حقوق طبیعی تعارض داشته باشد، «قانون» به‌معنای واقعی نیست (*lex iniusta non est lex*). این مکتب مبنای اعلامیهٔ استقلال آمریکا (۱۷۷۶) و اعلامیهٔ حقوق بشر و شهروند فرانسه (۱۷۸۹) بوده است.
+
+### 📐 پوزیتیویسم حقوقی (*Legal Positivism*)
+
+از آستین و بنتام تا کلزن و هارت. حق چیزی است که نظام حقوقی معتبر مقرّر کرده باشد. جدایی حق و اخلاق (*Separation Thesis*). نقد اصلی: نمی‌تواند ظلم قانونی (مثلاً آپارتاید، قوانین نورنبرگ) را محکوم کند مگر آنکه قاعدهٔ اخلاقی بیرونی را بپذیرد.
+
+### 🗽 لیبرالیسم و حقوق فردی
+
+از لاک تا رالز و نوزیک. حقوق فردی مقدّم بر خیر جمعی‌اند. دولت خادم حقوق افراد است نه تعیین‌کنندهٔ «زندگی خوب». رالز در *نظریهٔ عدالت* (۱۹۷۱) «اصل آزادی برابر» را اولین اصل عدالت قرار داد. نوزیک (*Nozick*) در *آنارشی، دولت و اتوپیا* (۱۹۷۴) از حقوق فردی مطلق و دولت حداقلی دفاع کرد.<FootnoteRef id="10" text="Rawls, J. (1971). A Theory of Justice. Harvard University Press." />
+
+### 🤝 جامعه‌گرایی (*Communitarianism*)
+
+مایکل سندل (*Sandel*)، الیسدر مکین‌تایر (*MacIntyre*)، چارلز تیلور. نقد فردگرایی لیبرال: انسان موجودی اجتماعی‐تاریخی است و حقوقش خارج از بافت اجتماعی معنا ندارد. مکین‌تایر در *در پی فضیلت* (*After Virtue*، ۱۹۸۱) مدّعی شد گفتمان مدرن حقوق شبیه «نهنگ‌بانی در عصر پساآخرالزمانی» است: تکّه‌پاره‌هایی بی‌بنیاد از سنّت‌های اخلاقی ناهمساز.
+
+### 🕌 سنّت فقهی‐حقوقی اسلامی
+
+در فقه اسلامی، حقوق انسان از شریعت الهی استنباط می‌شود. مقاصد شریعه (*Maqasid al-Shariah*) ـ که غزالی و سپس شاطبی آن‌ها را نظام‌مند کردند ـ پنج ضروری اصلی را شناسایی می‌کنند: حفظ دین، جان، عقل، نسل و مال. حقوق فردی و اجتماعی باید در چارچوب این پنج مقصد تبیین شوند.
+
+**محمد طاهر ابن‌عاشور** در *مقاصد الشریعة الإسلامیة* (۱۹۴۶) کوشید مقاصد شریعه را فراتر از فقه جزئی‌نگر، به سطح نظریهٔ حقوقی کلان ارتقا دهد. امروزه اندیشمندانی مانند جاسر عوده (*Jasser Auda*) با رویکرد نظام‌مند (*Systems Approach*) تلاش می‌کنند مقاصد شریعه را با گفتمان حقوق بشر معاصر تطبیق دهند.<FootnoteRef id="11" text="Auda, J. (2008). Maqasid al-Shariah as Philosophy of Islamic Law. IIIT." />
+
+<svg width="100%" viewBox="0 0 750 320" style={{ maxWidth: '750px', margin: '1.5rem auto', display: 'block' }}>
+  <defs>
+    <linearGradient id="maqG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1a1a2e"/>
+      <stop offset="100%" stopColor="#16213e"/>
+    </linearGradient>
+    <filter id="maqShadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" floodOpacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="750" height="320" rx="16" fill="#fafafa"/>
+  <text x="375" y="30" textAnchor="middle" fill="#1a1a2e" fontSize="15" fontWeight="bold">مقاصد پنج‌گانهٔ شریعه (Maqasid al-Shariah)</text>
+  <rect x="30" y="70" width="120" height="90" rx="12" fill="url(#maqG)" filter="url(#maqShadow)"/>
+  <text x="90" y="105" textAnchor="middle" fill="#64ffda" fontSize="22">🕌</text>
+  <text x="90" y="128" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold">حفظ دین</text>
+  <text x="90" y="148" textAnchor="middle" fill="#a8b2d1" fontSize="9">Religion</text>
+  <rect x="175" y="70" width="120" height="90" rx="12" fill="url(#maqG)" filter="url(#maqShadow)"/>
+  <text x="235" y="105" textAnchor="middle" fill="#e94560" fontSize="22">❤️</text>
+  <text x="235" y="128" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold">حفظ جان</text>
+  <text x="235" y="148" textAnchor="middle" fill="#a8b2d1" fontSize="9">Life</text>
+  <rect x="320" y="70" width="120" height="90" rx="12" fill="url(#maqG)" filter="url(#maqShadow)"/>
+  <text x="380" y="105" textAnchor="middle" fill="#ffb74d" fontSize="22">🧠</text>
+  <text x="380" y="128" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold">حفظ عقل</text>
+  <text x="380" y="148" textAnchor="middle" fill="#a8b2d1" fontSize="9">Intellect</text>
+  <rect x="465" y="70" width="120" height="90" rx="12" fill="url(#maqG)" filter="url(#maqShadow)"/>
+  <text x="525" y="105" textAnchor="middle" fill="#81c784" fontSize="22">👨‍👩‍👧</text>
+  <text x="525" y="128" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold">حفظ نسل</text>
+  <text x="525" y="148" textAnchor="middle" fill="#a8b2d1" fontSize="9">Progeny</text>
+  <rect x="610" y="70" width="120" height="90" rx="12" fill="url(#maqG)" filter="url(#maqShadow)"/>
+  <text x="670" y="105" textAnchor="middle" fill="#ffd54f" fontSize="22">💰</text>
+  <text x="670" y="128" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold">حفظ مال</text>
+  <text x="670" y="148" textAnchor="middle" fill="#a8b2d1" fontSize="9">Property</text>
+  <line x1="90" y1="160" x2="375" y2="210" stroke="#64ffda" strokeWidth="1" opacity="0.4"/>
+  <line x1="235" y1="160" x2="375" y2="210" stroke="#64ffda" strokeWidth="1" opacity="0.4"/>
+  <line x1="380" y1="160" x2="375" y2="210" stroke="#64ffda" strokeWidth="1" opacity="0.4"/>
+  <line x1="525" y1="160" x2="375" y2="210" stroke="#64ffda" strokeWidth="1" opacity="0.4"/>
+  <line x1="670" y1="160" x2="375" y2="210" stroke="#64ffda" strokeWidth="1" opacity="0.4"/>
+  <rect x="260" y="210" width="230" height="50" rx="12" fill="#e94560" filter="url(#maqShadow)"/>
+  <text x="375" y="240" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold">ضروریات خمس</text>
+  <rect x="150" y="280" width="450" height="28" rx="8" fill="#f3e5f5"/>
+  <text x="375" y="299" textAnchor="middle" fill="#4a148c" fontSize="11">همهٔ حقوق فردی و اجتماعی باید در چارچوب این پنج مقصد تبیین شوند</text>
+</svg>
+
+### 🔍 رویکرد انتقادی و پسامدرن
+
+مکتب مطالعات انتقادی حقوق (*Critical Legal Studies*) با الهام از مارکسیسم و ساختارشکنی (*deconstruction*) دریدایی مدّعی است حقوق ابزار پنهان‌سازی سلطهٔ طبقاتی، نژادی و جنسیتی است. «حقوق» نقابی است بر چهرهٔ قدرت. فمینیسم حقوقی (مکینون، *MacKinnon*) نشان داد حقوقی که ظاهراً «جهان‌شمول»اند، عملاً بر تجربهٔ مردان سفیدپوست طبقهٔ متوسط مبتنی‌اند.
+
+<SectionDivider number="۶" />
+
+<div id="ch-dichotomies"></div>
+
+## ⚔️ فصل ششم: دوگانه‌های کلیدی — تحلیل تفصیلی
+
+### ذاتی یا اعتباری؟
+
+این پرسش با پرسش هستی‌شناختی فصل سوم هم‌پوشانی دارد اما زاویهٔ متفاوتی دارد. «ذاتی» یعنی حق از ذات انسان (یا ذات اشیا) برمی‌خیزد و «اعتباری» یعنی جامعه آن را وضع کرده است. سنّت حقوق طبیعی و نیز اکثر متفکران اسلامی حقوق بنیادین را ذاتی می‌دانند. پوزیتیویست‌ها و قراردادگرایان آن‌ها را اعتباری.
+
+**تحلیل**: به نظر می‌رسد بتوان تمایزی میان «حقوق بنیادین» (مانند حقّ حیات) و «حقوق فرعی» (مانند حقّ رانندگی از سنّ ۱۸ سالگی) نهاد. حقوق بنیادین وجهی واقعی و ذاتی دارند (ریشه در طبیعت و نیازهای بنیادین انسان)، درحالی‌که حقوق فرعی اعتباری و قابل‌تغییرند.
+
+### ثابت یا متغیّر؟
+
+آیا حقوق در همهٔ زمان‌ها و مکان‌ها ثابت‌اند؟ سنّت حقوق طبیعی پاسخ مثبت می‌دهد. تاریخ‌گرایان (*historicists*) مانند هگل و ساویینی پاسخ منفی. در سنّت اسلامی، تمایز میان «ثوابت» و «متغیّرات» پذیرفته شده: اصول کلی (مانند عدالت، حفظ جان) ثابت‌اند ولی مصادیق و شیوهٔ اجرا متغیّرند.
+
+<Callout type="success" title="مثال تاریخی: تکامل فهم از حق">
+  بردگی تا اواسط قرن نوزدهم در بسیاری از جوامع «قانونی» بود و حتی با استناد به حقوق طبیعی (ارسطو) توجیه می‌شد. امروز تقریباً هیچ مکتب فکری‌ای بردگی را مجاز نمی‌داند. این نشان می‌دهد *فهم ما* از حقوق تکامل یافته، ولی آیا خودِ حق تغییر کرده یا فهم ما از حقیقت ثابتی بهتر شده؟ واقع‌گرایان اخلاقی گزینهٔ دوم را می‌پذیرند: بردگی *همیشه* نادرست بود ولی بشر دیرتر این حقیقت را کشف کرد.
+</Callout>
+
+### فردی یا جمعی؟
+
+سنّت لیبرال تأکید بر حقوق فردی دارد. سنّت‌های اجتماع‌گرا (از جمله سوسیالیسم، جامعه‌گرایی و بسیاری سنّت‌های غیرغربی) بر حقوق جمعی تأکید دارند: حقّ تعیین سرنوشت ملل، حقّ فرهنگی اقلیت‌ها، حقّ توسعه.
+
+**چالش**: حقوق جمعی گاهی با حقوق فردی تعارض می‌یابد. مثلاً حقّ فرهنگی یک جامعهٔ سنّتی ممکن است شامل عملکردهایی (مانند ازدواج اجباری) باشد که حقوق فردی اعضا (به‌ویژه زنان) را نقض می‌کند. منشور آفریقایی حقوق بشر و ملل (*African Charter*، ۱۹۸۱) از معدود اسنادی است که صریحاً حقوق جمعی را در کنار حقوق فردی به رسمیت شناخته است.
+
+### مطلق یا نسبی؟
+
+آیا حقوقی وجود دارند که هرگز و تحت هیچ شرایطی قابل‌نقض نیستند؟ برخی حقوق در حقوق بین‌الملل «غیرقابل تعلیق» (*non-derogable*) شناخته شده‌اند: منع شکنجه، منع بردگی، منع مجازات بدون قانون. اما حتی حقّ حیات هم استثنائاتی دارد (دفاع مشروع، جنگ عادلانه).
+
+**رالز** تمایز مهمی میان «حقوق مطلق» و «حقوق اولویت‌دار» (*prima facie rights*) می‌نهد. حقّ اولویت‌دار حقّی است که در شرایط عادی باید رعایت شود ولی در تعارض با حقّ مهم‌تر، ممکن است محدود گردد. مثلاً حقّ آزادی بیان در تعارض با منع تحریک به نسل‌کشی محدود می‌شود. امّا منع شکنجه حقّی مطلق تلقّی می‌شود که هیچ استثنایی برنمی‌دارد.
+
+**دوورکین** (*Ronald Dworkin*) در *حقوق را جدّی بگیریم* (*Taking Rights Seriously*، ۱۹۷۷) استدلال کرد که حقوق «برگ برنده» (*trumps*) هستند: یعنی حقوق فردی حتی اگر نفع اکثریت اقتضای نقض‌شان را داشته باشد، نباید نقض شوند. حق برنده‌ای است که بر محاسبهٔ سودانگارانه (*utilitarian calculus*) غلبه می‌کند.<FootnoteRef id="12" text="Dworkin, R. (1977). Taking Rights Seriously. Harvard University Press." />
+
+<Callout type="critical" title="تنش مطلق‌گرایی و نسبی‌گرایی در عمل">
+  اگر همهٔ حقوق نسبی و قابل‌تعلیق باشند، هر حکومتی می‌تواند به بهانهٔ «امنیت ملی» یا «مصلحت عمومی» هر حقّی را نقض کند. تاریخ نشان داده که دقیقاً همین اتفاق افتاده است: اردوگاه‌های بازداشت آمریکا برای ژاپنی‌تباران در جنگ جهانی دوم، قوانین اضطراری در بسیاری از کشورهای خاورمیانه‌ای که دهه‌ها ادامه یافته‌اند. از سوی دیگر، مطلق‌انگاری تمام حقوق نیز در عمل ناممکن است زیرا حقوق مختلف گاهی با یکدیگر تعارض می‌یابند.
+</Callout>
+
+### 📊 نتایج و عواقب تطبیقی
+
+<DataTable
+  caption="پیامدهای تأکید بر هر قطب دوگانه‌های حق"
+  headers={["دوگانه", "پیامد تأکید بر قطب اول", "پیامد تأکید بر قطب دوم"]}
+  rows={[
+    ["ذاتی / اعتباری", "مبنای مستحکم برای حقوق بنیادین؛ خطر تحمیل تفسیر خاص از «ذات»", "انعطاف و تکثّر؛ خطر بی‌پایگی حقوق در برابر قدرت"],
+    ["ثابت / متغیّر", "ثبات و قابلیت پیش‌بینی؛ خطر جمود و ناسازگاری با تحول اجتماعی", "سازگاری با تغییرات؛ خطر نسبی‌گرایی و بی‌ثباتی"],
+    ["فردی / جمعی", "حمایت از آزادی و استقلال فرد؛ خطر اتمیسم اجتماعی", "همبستگی اجتماعی؛ خطر سرکوب فرد به نام جمع"],
+    ["مطلق / نسبی", "حمایت مطلق از کرامت؛ تعارض میان حقوق مطلقِ ناسازگار", "انعطاف عملی؛ خطر تعلیق مکرّر حقوق به بهانه‌های سیاسی"],
+  ]}
+/>
+
+<SectionDivider number="۷" />
+
+<div id="ch-development"></div>
+
+## 🌍 فصل هفتم: حق، توسعه و آبادانی — شواهد نظری و تاریخی
+
+### 📐 چارچوب نظری: از آزادی تا توسعه
+
+آمارتیا سن (*Amartya Sen*) در اثر بنیادین خود *توسعه به‌مثابهٔ آزادی* (*Development as Freedom*، ۱۹۹۹) استدلال کرد که توسعه چیزی جز «گسترش آزادی‌های واقعی» نیست. حقوق سیاسی و مدنی صرفاً نتیجهٔ جانبی توسعهٔ اقتصادی نیستند بلکه *شرط و مقوّم* توسعه‌اند. سن با ارائهٔ شواهد تاریخی نشان داد که هیچ قحطی بزرگی در کشوری با مطبوعات آزاد و انتخابات رقابتی رخ نداده است.<FootnoteRef id="13" text="Sen, A. (1999). Development as Freedom. Oxford University Press." />
+
+**رویکرد قابلیت** (*Capabilities Approach*) سن و نوسباوم پلی میان حقوق بشر و توسعه می‌زند: توسعه یعنی افزایش «قابلیت‌های» انسان‌ها (*capabilities*) یعنی آنچه واقعاً قادرند بشوند و انجام دهند. حقوق بشر تضمین‌کنندهٔ حداقل آستانهٔ قابلیت‌ها هستند.
+
+#### حکمرانی خوب و حقوق
+
+بانک جهانی و سازمان ملل از دهه‌ی ۱۹۹۰ مفهوم «حکمرانی خوب» (*good governance*) را به‌عنوان شرط لازم توسعه مطرح کردند. حکمرانی خوب شامل حاکمیت قانون، شفافیت، پاسخگویی و رعایت حقوق بشر است. بدون تضمین حقوق مالکیت، قراردادها بی‌اعتبارند؛ بدون آزادی بیان، فساد نهان می‌ماند؛ بدون حقوق سیاسی، حکومت پاسخگو نیست.
+
+### 📈 شواهد تجربی و پس‌نگر
+
+#### دموکراسی، حقوق و رشد اقتصادی
+
+**داسه‌گوپتا** (*Daron Acemoglu*) و **رابینسون** (*James Robinson*) در *چرا ملت‌ها شکست می‌خورند* (*Why Nations Fail*، ۲۰۱۲) با تحلیل تطبیقی‐تاریخی ده‌ها کشور نشان دادند که «نهادهای فراگیر» (*inclusive institutions*) ـ که حقوق مالکیت، فرصت برابر و مشارکت سیاسی را تضمین می‌کنند ـ عامل اصلی رشد اقتصادی بلندمدّت‌اند. در مقابل، «نهادهای استخراجی» (*extractive institutions*) که حقوق اکثریت را نقض و منابع را به نفع نخبگان مصادره می‌کنند، به فقر و رکود می‌انجامند.<FootnoteRef id="14" text="Acemoglu, D. & Robinson, J. (2012). Why Nations Fail. Crown Business." />
+
+#### آزادی مطبوعات و مبارزه با فساد
+
+تحقیقات برونتی و ودر (*Brunetti & Weder, 2003*) نشان داد همبستگی آماری معناداری میان آزادی مطبوعات و کاهش فساد وجود دارد. کشورهایی که حقّ آزادی بیان و مطبوعات را تضمین می‌کنند، سطح فساد پایین‌تری دارند.<FootnoteRef id="15" text="Brunetti, A. & Weder, B. (2003). A free press is bad news for corruption. Journal of Public Economics, 87(7-8), 1801–1824." />
+
+#### حقوق زنان و توسعهٔ انسانی
+
+برنامهٔ توسعهٔ ملل متحد (*UNDP*) در گزارش‌های توسعهٔ انسانی به‌طور مکرّر نشان داده که شاخص نابرابری جنسیتی (*GII*) همبستگی منفی قوی‌ای با شاخص توسعهٔ انسانی (*HDI*) دارد: هرچه حقوق زنان بیش‌تر رعایت شود، توسعهٔ انسانی بالاتر است.
+
+#### مطالعهٔ موردی: کرهٔ جنوبی و کرهٔ شمالی
+
+دو کشور با زبان، فرهنگ و تاریخ مشترک که پس از ۱۹۵۳ مسیرهای متفاوتی پیمودند. کرهٔ جنوبی با تدریجی اما مداوم گسترش حقوق مدنی و سیاسی (به‌ویژه پس از دموکراتیزاسیون ۱۹۸۷)، امروزه یکی از بیست اقتصاد بزرگ جهان است. کرهٔ شمالی با نقض سیستماتیک حقوق، یکی از فقیرترین کشورهاست. این مقایسه شبه‌آزمایشگاهی (*quasi-experiment*) به‌خوبی نقش نهادهای حقوقی را در توسعه نشان می‌دهد.
+
+<svg width="100%" viewBox="0 0 700 340" style={{ maxWidth: '700px', margin: '1.5rem auto', display: 'block' }}>
+  <defs>
+    <linearGradient id="barSouth" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#4CAF50"/>
+      <stop offset="100%" stopColor="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="barNorth" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#E53935"/>
+      <stop offset="100%" stopColor="#B71C1C"/>
+    </linearGradient>
+    <filter id="barShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" floodOpacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="700" height="340" rx="16" fill="#fafafa"/>
+  <text x="350" y="28" textAnchor="middle" fill="#1a1a2e" fontSize="14" fontWeight="bold">مقایسهٔ شبه‌آزمایشگاهی: کرهٔ جنوبی و کرهٔ شمالی</text>
+  <text x="350" y="48" textAnchor="middle" fill="#555" fontSize="10">دو کشور با فرهنگ مشترک، مسیرهای متفاوت (پس از ۱۹۵۳)</text>
+  <text x="350" y="78" textAnchor="middle" fill="#333" fontSize="11" fontWeight="bold">GDP سرانه (تقریبی - دلار)</text>
+  <line x1="100" y1="90" x2="100" y2="260" stroke="#333" strokeWidth="1.5"/>
+  <line x1="100" y1="260" x2="620" y2="260" stroke="#333" strokeWidth="1.5"/>
+  <text x="90" y="265" textAnchor="end" fill="#555" fontSize="9">0</text>
+  <text x="90" y="215" textAnchor="end" fill="#555" fontSize="9">10K</text>
+  <line x1="100" y1="210" x2="620" y2="210" stroke="#eee" strokeWidth="0.5"/>
+  <text x="90" y="165" textAnchor="end" fill="#555" fontSize="9">20K</text>
+  <line x1="100" y1="160" x2="620" y2="160" stroke="#eee" strokeWidth="0.5"/>
+  <text x="90" y="115" textAnchor="end" fill="#555" fontSize="9">30K</text>
+  <line x1="100" y1="110" x2="620" y2="110" stroke="#eee" strokeWidth="0.5"/>
+  <rect x="150" y="100" width="60" height="160" rx="6" fill="url(#barSouth)" filter="url(#barShadow)"/>
+  <text x="180" y="92" textAnchor="middle" fill="#2E7D32" fontSize="10" fontWeight="bold">~\$33K</text>
+  <text x="180" y="285" textAnchor="middle" fill="#333" fontSize="10">کرهٔ جنوبی</text>
+  <text x="180" y="298" textAnchor="middle" fill="#555" fontSize="8">حقوق مدنی + دموکراسی</text>
+  <rect x="280" y="232" width="60" height="28" rx="6" fill="url(#barNorth)" filter="url(#barShadow)"/>
+  <text x="310" y="225" textAnchor="middle" fill="#B71C1C" fontSize="10" fontWeight="bold">~\$1.8K</text>
+  <text x="310" y="285" textAnchor="middle" fill="#333" fontSize="10">کرهٔ شمالی</text>
+  <text x="310" y="298" textAnchor="middle" fill="#555" fontSize="8">نقض سیستماتیک حقوق</text>
+  <rect x="420" y="90" width="190" height="80" rx="10" fill="#e8f5e9" stroke="#4CAF50" strokeWidth="1"/>
+  <text x="515" y="112" textAnchor="middle" fill="#2E7D32" fontSize="11" fontWeight="bold">نهادهای فراگیر</text>
+  <text x="515" y="130" textAnchor="middle" fill="#333" fontSize="9">✅ حقوق مالکیت</text>
+  <text x="515" y="145" textAnchor="middle" fill="#333" fontSize="9">✅ مشارکت سیاسی</text>
+  <text x="515" y="160" textAnchor="middle" fill="#333" fontSize="9">✅ فرصت برابر</text>
+  <rect x="420" y="185" width="190" height="80" rx="10" fill="#fce4ec" stroke="#E53935" strokeWidth="1"/>
+  <text x="515" y="207" textAnchor="middle" fill="#B71C1C" fontSize="11" fontWeight="bold">نهادهای استخراجی</text>
+  <text x="515" y="225" textAnchor="middle" fill="#333" fontSize="9">❌ سرکوب آزادی‌ها</text>
+  <text x="515" y="240" textAnchor="middle" fill="#333" fontSize="9">❌ مصادرهٔ منابع</text>
+  <text x="515" y="255" textAnchor="middle" fill="#333" fontSize="9">❌ انحصار قدرت</text>
+  <text x="350" y="330" textAnchor="middle" fill="#555" fontSize="10">منبع: Acemoglu & Robinson (2012) — Why Nations Fail</text>
+</svg>
+
+### 🔄 رابطهٔ دوسویه: توسعه نیز حقوق را تقویت می‌کند
+
+رابطهٔ حقوق و توسعه یک‌سویه نیست. رونالد اینگلهارت (*Ronald Inglehart*) در نظریهٔ «مدرنیزاسیون و پسامدرنیزاسیون» با تحلیل داده‌های *World Values Survey* نشان داد که رشد اقتصادی و امنیت وجودی به تدریج ارزش‌های «خودبیانگری» (*self-expression values*) از جمله مطالبهٔ حقوق مدنی و سیاسی را تقویت می‌کند.<FootnoteRef id="16" text="Inglehart, R. & Welzel, C. (2005). Modernization, Cultural Change, and Democracy. Cambridge University Press." /> بنابراین یک حلقهٔ بازخورد مثبت وجود دارد: حقوق ← توسعه ← مطالبهٔ بیش‌تر حقوق ← توسعهٔ بیش‌تر.
+
+<Callout type="info" title="خلاصهٔ شواهد">
+  مجموع شواهد نظری و تجربی حاکی از آن است که:
+
+  **۱.** تضمین حقوق بنیادین (مالکیت، آزادی بیان، مشارکت سیاسی) **شرط لازم** توسعهٔ پایدار است (هرچند شرط کافی نیست).
+
+  **۲.** نقض حقوق ممکن است در کوتاه‌مدّت رشد اقتصادی ایجاد کند (مانند چین معاصر) ولی در بلندمدّت پایدار نیست و هزینه‌های اجتماعی سنگینی دارد.
+
+  **۳.** رابطهٔ حقوق و توسعه دوسویه و تقویت‌کننده است.
+</Callout>
+
+<SectionDivider number="۴" />
+
+<div id="ch-conceptual-map"></div>
+
+## 🗺️ فصل چهارم: حق در مقابل چه ترسیم می‌شود؟ جغرافیای مفهومی
+
+### مفاهیم متقابل حق
+
+#### حق و باطل
+
+در سنّت اسلامی و نیز در فلسفهٔ کلاسیک، حق در مقابل «باطل» (*falsehood / invalid*) ترسیم می‌شود. باطل آن چیزی است که فاقد واقعیت و ثبات است. این تقابل بیش‌تر هستی‌شناختی و معرفت‌شناختی است.
+
+#### حق و تکلیف
+
+در سنّت حقوقی مدرن، حق در مقابل «تکلیف» (*duty / obligation*) ترسیم می‌شود. این دو مفهوم مکمّل یکدیگرند: هرجا حقّی هست، تکلیفی نیز هست (هوفلد). امّا بحث مهمی وجود دارد: آیا حق مقدّم بر تکلیف است یا برعکس؟ در سنّت لیبرال، حق مقدّم است (ابتدا حقوق فرد تعیین می‌شود، سپس تکالیف دیگران). در سنّت اسلامی (به‌ویژه نزد فقها)، تکلیف بنیادی‌تر است و حقوق انسان از تکالیف الهی او استنباط می‌شود.
+
+#### حق و حُکم
+
+در فقه اسلامی، «حق» از «حُکم» تفکیک شده است. حُکم خطاب شارع است که مستقیماً فعل یا ترک فعلی را مقرّر می‌کند (واجب، حرام، مستحب، مکروه، مباح). حق امتیازی است که شخص می‌تواند آن را اِعمال یا اسقاط کند. تمایز مهم: حکم قابل اسقاط نیست ولی حق (در بسیاری موارد) قابل اسقاط است.
+
+### 🔗 نقشهٔ مفاهیم مجاور
+
+مفهوم حق در شبکه‌ای از مفاهیم مرتبط قرار دارد که هریک بخشی از معنا و کارکرد آن را آشکار می‌سازد:
+
+<svg width="100%" viewBox="0 0 800 550" style={{ maxWidth: '800px', margin: '1.5rem auto', display: 'block' }}>
+  <defs>
+    <linearGradient id="centerG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#e94560"/>
+      <stop offset="100%" stopColor="#c23152"/>
+    </linearGradient>
+    <linearGradient id="nodeG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1a1a2e"/>
+      <stop offset="100%" stopColor="#16213e"/>
+    </linearGradient>
+    <filter id="nodeShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" floodOpacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="800" height="550" rx="16" fill="#fafafa"/>
+  <text x="400" y="30" textAnchor="middle" fill="#1a1a2e" fontSize="15" fontWeight="bold">نقشهٔ مفاهیم مجاور حق</text>
+  <circle cx="400" cy="275" r="52" fill="url(#centerG)" filter="url(#nodeShadow)"/>
+  <text x="400" y="272" textAnchor="middle" fill="#ffffff" fontSize="18" fontWeight="bold">حق</text>
+  <text x="400" y="292" textAnchor="middle" fill="#ffd6de" fontSize="10">Right</text>
+  <rect x="80" y="60" width="130" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="145" y="82" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">عدالت</text>
+  <text x="145" y="98" textAnchor="middle" fill="#a8b2d1" fontSize="9">Justice</text>
+  <line x1="190" y1="110" x2="360" y2="245" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="280" y="50" width="130" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="345" y="72" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">آزادی</text>
+  <text x="345" y="88" textAnchor="middle" fill="#a8b2d1" fontSize="9">Liberty</text>
+  <line x1="345" y1="100" x2="385" y2="225" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="490" y="50" width="130" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="555" y="72" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">برابری</text>
+  <text x="555" y="88" textAnchor="middle" fill="#a8b2d1" fontSize="9">Equality</text>
+  <line x1="510" y1="100" x2="430" y2="235" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="620" y="120" width="130" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="685" y="142" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">انصاف</text>
+  <text x="685" y="158" textAnchor="middle" fill="#a8b2d1" fontSize="9">Equity</text>
+  <line x1="635" y1="160" x2="448" y2="260" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="650" y="230" width="120" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="710" y="252" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">اخلاق</text>
+  <text x="710" y="268" textAnchor="middle" fill="#a8b2d1" fontSize="9">Morality</text>
+  <line x1="650" y1="260" x2="452" y2="275" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="640" y="330" width="120" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="700" y="352" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">قانون</text>
+  <text x="700" y="368" textAnchor="middle" fill="#a8b2d1" fontSize="9">Law</text>
+  <line x1="640" y1="355" x2="452" y2="290" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="540" y="430" width="120" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="600" y="452" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">قدرت</text>
+  <text x="600" y="468" textAnchor="middle" fill="#a8b2d1" fontSize="9">Power</text>
+  <line x1="553" y1="435" x2="428" y2="318" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="340" y="460" width="130" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="405" y="482" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">کرامت</text>
+  <text x="405" y="498" textAnchor="middle" fill="#a8b2d1" fontSize="9">Dignity</text>
+  <line x1="400" y1="460" x2="400" y2="327" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="150" y="450" width="130" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="215" y="472" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">مسئولیت</text>
+  <text x="215" y="488" textAnchor="middle" fill="#a8b2d1" fontSize="9">Responsibility</text>
+  <line x1="262" y1="450" x2="375" y2="320" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="30" y="380" width="130" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="95" y="402" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">مشروعیت</text>
+  <text x="95" y="418" textAnchor="middle" fill="#a8b2d1" fontSize="9">Legitimacy</text>
+  <line x1="155" y1="390" x2="355" y2="300" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="20" y="280" width="140" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="90" y="302" textAnchor="middle" fill="#64ffda" fontSize="11" fontWeight="bold">قراردادگرایی</text>
+  <text x="90" y="318" textAnchor="middle" fill="#a8b2d1" fontSize="9">Contractarianism</text>
+  <line x1="160" y1="305" x2="348" y2="275" stroke="#64ffda" strokeWidth="1.5" opacity="0.5"/>
+  <rect x="30" y="180" width="130" height="50" rx="10" fill="url(#nodeG)" filter="url(#nodeShadow)"/>
+  <text x="95" y="202" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">تکلیف</text>
+  <text x="95" y="218" textAnchor="middle" fill="#a8b2d1" fontSize="9">Duty</text>
+  <line x1="160" y1="210" x2="350" y2="260" stroke="#e94560" strokeWidth="2" opacity="0.6"/>
+  <rect x="320" y="145" width="130" height="40" rx="8" fill="#fce4ec" stroke="#e94560" strokeWidth="1"/>
+  <text x="385" y="170" textAnchor="middle" fill="#B71C1C" fontSize="10" fontWeight="bold">توسعه (Development)</text>
+  <line x1="385" y1="185" x2="395" y2="223" stroke="#e94560" strokeWidth="1.5" opacity="0.5"/>
+  <text x="400" y="543" textAnchor="middle" fill="#555" fontSize="10">هر مفهوم بخشی از معنا و کارکرد «حق» را آشکار می‌سازد</text>
+</svg>
+
+<Callout type="info" title="نقشهٔ مفهومی حق">
+  <div style={{ lineHeight: 2.2 }}>
+    **الف. عدالت** (*Justice*): چارچوب کلانی که حقوق در آن توزیع می‌شوند. عدالت پرسش از «توزیع درست» حقوق، منابع و فرصت‌هاست.
+
+    **ب. آزادی** (*Liberty / Freedom*): حق غالباً شرط یا مقوّم آزادی است. آزادی بیان، آزادی عقیده، آزادی تجمّع همگی حقوق‌اند.
+
+    **ج. برابری** (*Equality*): حقوق برابر یعنی هر فرد صرف‌نظر از نژاد، جنسیت، طبقه و … از حقوق یکسانی برخوردار است.
+
+    **د. انصاف** (*Equity / Fairness*): فراتر از برابری صوری، انصاف به تفاوت‌های واقعی افراد توجه دارد و ممکن است حقوق نابرابر اعطا کند تا نتیجهٔ برابر حاصل شود.
+
+    **هـ. اخلاق** (*Morality / Ethics*): حقوق اخلاقی (*moral rights*) ممکن است با حقوق قانونی (*legal rights*) هم‌پوشانی داشته یا نداشته باشند.
+
+    **و. قانون** (*Law*): نظام رسمی هنجارهایی که حقوق و تکالیف را مشخص و ضمانت اجرا می‌کند.
+
+    **ز. قدرت** (*Power*): حق بدون قدرت اِعمال، صوری می‌ماند. رابطهٔ حق و قدرت یکی از تنش‌های اصلی اندیشهٔ سیاسی است.
+
+    **ح. کرامت** (*Dignity*): در گفتمان حقوق بشر، کرامت ذاتی انسان مبنای همهٔ حقوق است (مادّهٔ ۱ اعلامیهٔ جهانی حقوق بشر).
+
+    **ط. مسئولیت** (*Responsibility*): داشتن حق مستلزم مسئولیت است هم نسبت به حقوق خود و هم نسبت به حقوق دیگران.
+
+    **ی. مشروعیت** (*Legitimacy*): مشروعیت حکومت از رعایت حقوق نشئت می‌گیرد.
+
+    **ک. قراردادگرایی** (*Contractarianism*): دیدگاهی که حقوق را محصول توافق عقلانی افراد می‌داند.
+
+    **ل. مدنیت** (*Civility / Citizenship*): شهروندی و حقوق و تکالیف مدنی.
+
+    **م. توسعه** (*Development*): ارتباط میان تضمین حقوق و پیشرفت اقتصادی‐اجتماعی.
+  </div>
+</Callout>
+
+<SectionDivider number="۵" />
+
+<div id="ch-schools"></div>
+
+## 🏫 فصل پنجم: مکاتب و دستگاه‌های فکری
+
+### ⚖️ مکتب حقوق طبیعی (*Natural Law*)
+
+این مکتب (از ارسطو و رواقیان تا آکویناس و فینیس) بر وجود معیارهای عینی، عقلی و فراوضعی حق تأکید دارد. قانون وضعی‌ای که با حقوق طبیعی تعارض داشته باشد، «قانون» به‌معنای واقعی نیست (*lex iniusta non est lex*). این مکتب مبنای اعلامیهٔ استقلال آمریکا (۱۷۷۶) و اعلامیهٔ حقوق بشر و شهروند فرانسه (۱۷۸۹) بوده است.
+
+### 📐 پوزیتیویسم حقوقی (*Legal Positivism*)
+
+از آستین و بنتام تا کلزن و هارت. حق چیزی است که نظام حقوقی معتبر مقرّر کرده باشد. جدایی حق و اخلاق (*Separation Thesis*). نقد اصلی: نمی‌تواند ظلم قانونی (مثلاً آپارتاید، قوانین نورنبرگ) را محکوم کند مگر آنکه قاعدهٔ اخلاقی بیرونی را بپذیرد.
+
+### 🗽 لیبرالیسم و حقوق فردی
+
+از لاک تا رالز و نوزیک. حقوق فردی مقدّم بر خیر جمعی‌اند. دولت خادم حقوق افراد است نه تعیین‌کنندهٔ «زندگی خوب». رالز در *نظریهٔ عدالت* (۱۹۷۱) «اصل آزادی برابر» را اولین اصل عدالت قرار داد. نوزیک (*Nozick*) در *آنارشی، دولت و اتوپیا* (۱۹۷۴) از حقوق فردی مطلق و دولت حداقلی دفاع کرد.<FootnoteRef id="10" text="Rawls, J. (1971). A Theory of Justice. Harvard University Press." />
+
+### 🤝 جامعه‌گرایی (*Communitarianism*)
+
+مایکل سندل (*Sandel*)، الیسدر مکین‌تایر (*MacIntyre*)، چارلز تیلور. نقد فردگرایی لیبرال: انسان موجودی اجتماعی‐تاریخی است و حقوقش خارج از بافت اجتماعی معنا ندارد. مکین‌تایر در *در پی فضیلت* (*After Virtue*، ۱۹۸۱) مدّعی شد گفتمان مدرن حقوق شبیه «نهنگ‌بانی در عصر پساآخرالزمانی» است: تکّه‌پاره‌هایی بی‌بنیاد از سنّت‌های اخلاقی ناهمساز.
+
+### 🕌 سنّت فقهی‐حقوقی اسلامی
+
+در فقه اسلامی، حقوق انسان از شریعت الهی استنباط می‌شود. مقاصد شریعه (*Maqasid al-Shariah*) ـ که غزالی و سپس شاطبی آن‌ها را نظام‌مند کردند ـ پنج ضروری اصلی را شناسایی می‌کنند: حفظ دین، جان، عقل، نسل و مال. حقوق فردی و اجتماعی باید در چارچوب این پنج مقصد تبیین شوند.
+
+**محمد طاهر ابن‌عاشور** در *مقاصد الشریعة الإسلامیة* (۱۹۴۶) کوشید مقاصد شریعه را فراتر از فقه جزئی‌نگر، به سطح نظریهٔ حقوقی کلان ارتقا دهد. امروزه اندیشمندانی مانند جاسر عوده (*Jasser Auda*) با رویکرد نظام‌مند (*Systems Approach*) تلاش می‌کنند مقاصد شریعه را با گفتمان حقوق بشر معاصر تطبیق دهند.<FootnoteRef id="11" text="Auda, J. (2008). Maqasid al-Shariah as Philosophy of Islamic Law. IIIT." />
+
+<svg width="100%" viewBox="0 0 750 320" style={{ maxWidth: '750px', margin: '1.5rem auto', display: 'block' }}>
+  <defs>
+    <linearGradient id="maqG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1a1a2e"/>
+      <stop offset="100%" stopColor="#16213e"/>
+    </linearGradient>
+    <filter id="maqShadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" floodOpacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="750" height="320" rx="16" fill="#fafafa"/>
+  <text x="375" y="30" textAnchor="middle" fill="#1a1a2e" fontSize="15" fontWeight="bold">مقاصد پنج‌گانهٔ شریعه (Maqasid al-Shariah)</text>
+  <rect x="30" y="70" width="120" height="90" rx="12" fill="url(#maqG)" filter="url(#maqShadow)"/>
+  <text x="90" y="105" textAnchor="middle" fill="#64ffda" fontSize="22">🕌</text>
+  <text x="90" y="128" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold">حفظ دین</text>
+  <text x="90" y="148" textAnchor="middle" fill="#a8b2d1" fontSize="9">Religion</text>
+  <rect x="175" y="70" width="120" height="90" rx="12" fill="url(#maqG)" filter="url(#maqShadow)"/>
+  <text x="235" y="105" textAnchor="middle" fill="#e94560" fontSize="22">❤️</text>
+  <text x="235" y="128" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold">حفظ جان</text>
+  <text x="235" y="148" textAnchor="middle" fill="#a8b2d1" fontSize="9">Life</text>
+  <rect x="320" y="70" width="120" height="90" rx="12" fill="url(#maqG)" filter="url(#maqShadow)"/>
+  <text x="380" y="105" textAnchor="middle" fill="#ffb74d" fontSize="22">🧠</text>
+  <text x="380" y="128" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold">حفظ عقل</text>
+  <text x="380" y="148" textAnchor="middle" fill="#a8b2d1" fontSize="9">Intellect</text>
+  <rect x="465" y="70" width="120" height="90" rx="12" fill="url(#maqG)" filter="url(#maqShadow)"/>
+  <text x="525" y="105" textAnchor="middle" fill="#81c784" fontSize="22">👨‍👩‍👧</text>
+  <text x="525" y="128" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold">حفظ نسل</text>
+  <text x="525" y="148" textAnchor="middle" fill="#a8b2d1" fontSize="9">Progeny</text>
+  <rect x="610" y="70" width="120" height="90" rx="12" fill="url(#maqG)" filter="url(#maqShadow)"/>
+  <text x="670" y="105" textAnchor="middle" fill="#ffd54f" fontSize="22">💰</text>
+  <text x="670" y="128" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold">حفظ مال</text>
+  <text x="670" y="148" textAnchor="middle" fill="#a8b2d1" fontSize="9">Property</text>
+  <line x1="90" y1="160" x2="375" y2="210" stroke="#64ffda" strokeWidth="1" opacity="0.4"/>
+  <line x1="235" y1="160" x2="375" y2="210" stroke="#64ffda" strokeWidth="1" opacity="0.4"/>
+  <line x1="380" y1="160" x2="375" y2="210" stroke="#64ffda" strokeWidth="1" opacity="0.4"/>
+  <line x1="525" y1="160" x2="375" y2="210" stroke="#64ffda" strokeWidth="1" opacity="0.4"/>
+  <line x1="670" y1="160" x2="375" y2="210" stroke="#64ffda" strokeWidth="1" opacity="0.4"/>
+  <rect x="260" y="210" width="230" height="50" rx="12" fill="#e94560" filter="url(#maqShadow)"/>
+  <text x="375" y="240" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold">ضروریات خمس</text>
+  <rect x="150" y="280" width="450" height="28" rx="8" fill="#f3e5f5"/>
+  <text x="375" y="299" textAnchor="middle" fill="#4a148c" fontSize="11">همهٔ حقوق فردی و اجتماعی باید در چارچوب این پنج مقصد تبیین شوند</text>
+</svg>
+
+### 🔍 رویکرد انتقادی و پسامدرن
+
+مکتب مطالعات انتقادی حقوق (*Critical Legal Studies*) با الهام از مارکسیسم و ساختارشکنی (*deconstruction*) دریدایی مدّعی است حقوق ابزار پنهان‌سازی سلطهٔ طبقاتی، نژادی و جنسیتی است. «حقوق» نقابی است بر چهرهٔ قدرت. فمینیسم حقوقی (مکینون، *MacKinnon*) نشان داد حقوقی که ظاهراً «جهان‌شمول»اند، عملاً بر تجربهٔ مردان سفیدپوست طبقهٔ متوسط مبتنی‌اند.
+
+<SectionDivider number="۶" />
+
+<div id="ch-dichotomies"></div>
+
+## ⚔️ فصل ششم: دوگانه‌های کلیدی — تحلیل تفصیلی
+
+### ذاتی یا اعتباری؟
+
+این پرسش با پرسش هستی‌شناختی فصل سوم هم‌پوشانی دارد اما زاویهٔ متفاوتی دارد. «ذاتی» یعنی حق از ذات انسان (یا ذات اشیا) برمی‌خیزد و «اعتباری» یعنی جامعه آن را وضع کرده است. سنّت حقوق طبیعی و نیز اکثر متفکران اسلامی حقوق بنیادین را ذاتی می‌دانند. پوزیتیویست‌ها و قراردادگرایان آن‌ها را اعتباری.
+
+**تحلیل**: به نظر می‌رسد بتوان تمایزی میان «حقوق بنیادین» (مانند حقّ حیات) و «حقوق فرعی» (مانند حقّ رانندگی از سنّ ۱۸ سالگی) نهاد. حقوق بنیادین وجهی واقعی و ذاتی دارند (ریشه در طبیعت و نیازهای بنیادین انسان)، درحالی‌که حقوق فرعی اعتباری و قابل‌تغییرند.
+
+### ثابت یا متغیّر؟
+
+آیا حقوق در همهٔ زمان‌ها و مکان‌ها ثابت‌اند؟ سنّت حقوق طبیعی پاسخ مثبت می‌دهد. تاریخ‌گرایان (*historicists*) مانند هگل و ساویینی پاسخ منفی. در سنّت اسلامی، تمایز میان «ثوابت» و «متغیّرات» پذیرفته شده: اصول کلی (مانند عدالت، حفظ جان) ثابت‌اند ولی مصادیق و شیوهٔ اجرا متغیّرند.
+
+<Callout type="success" title="مثال تاریخی: تکامل فهم از حق">
+  بردگی تا اواسط قرن نوزدهم در بسیاری از جوامع «قانونی» بود و حتی با استناد به حقوق طبیعی (ارسطو) توجیه می‌شد. امروز تقریباً هیچ مکتب فکری‌ای بردگی را مجاز نمی‌داند. این نشان می‌دهد *فهم ما* از حقوق تکامل یافته، ولی آیا خودِ حق تغییر کرده یا فهم ما از حقیقت ثابتی بهتر شده؟ واقع‌گرایان اخلاقی گزینهٔ دوم را می‌پذیرند: بردگی *همیشه* نادرست بود ولی بشر دیرتر این حقیقت را کشف کرد.
+</Callout>
+
+### فردی یا جمعی؟
+
+سنّت لیبرال تأکید بر حقوق فردی دارد. سنّت‌های اجتماع‌گرا (از جمله سوسیالیسم، جامعه‌گرایی و بسیاری سنّت‌های غیرغربی) بر حقوق جمعی تأکید دارند: حقّ تعیین سرنوشت ملل، حقّ فرهنگی اقلیت‌ها، حقّ توسعه.
+
+**چالش**: حقوق جمعی گاهی با حقوق فردی تعارض می‌یابد. مثلاً حقّ فرهنگی یک جامعهٔ سنّتی ممکن است شامل عملکردهایی (مانند ازدواج اجباری) باشد که حقوق فردی اعضا (به‌ویژه زنان) را نقض می‌کند. منشور آفریقایی حقوق بشر و ملل (*African Charter*، ۱۹۸۱) از معدود اسنادی است که صریحاً حقوق جمعی را در کنار حقوق فردی به رسمیت شناخته است.
+
+### مطلق یا نسبی؟
+
+آیا حقوقی وجود دارند که هرگز و تحت هیچ شرایطی قابل‌نقض نیستند؟ برخی حقوق در حقوق بین‌الملل «غیرقابل تعلیق» (*non-derogable*) شناخته شده‌اند: منع شکنجه، منع بردگی، منع مجازات بدون قانون. اما حتی حقّ حیات هم استثنائاتی دارد (دفاع مشروع، جنگ عادلانه).
+
+**رالز** تمایز مهمی میان «حقوق مطلق» و «حقوق اولویت‌دار» (*prima facie rights*) می‌نهد. حقّ اولویت‌دار حقّی است که در شرایط عادی باید رعایت شود ولی در تعارض با حقّ مهم‌تر، ممکن است محدود گردد. مثلاً حقّ آزادی بیان در تعارض با منع تحریک به نسل‌کشی محدود می‌شود. امّا منع شکنجه حقّی مطلق تلقّی می‌شود که هیچ استثنایی برنمی‌دارد.
+
+**دوورکین** (*Ronald Dworkin*) در *حقوق را جدّی بگیریم* (*Taking Rights Seriously*، ۱۹۷۷) استدلال کرد که حقوق «برگ برنده» (*trumps*) هستند: یعنی حقوق فردی حتی اگر نفع اکثریت اقتضای نقض‌شان را داشته باشد، نباید نقض شوند. حق برنده‌ای است که بر محاسبهٔ سودانگارانه (*utilitarian calculus*) غلبه می‌کند.<FootnoteRef id="12" text="Dworkin, R. (1977). Taking Rights Seriously. Harvard University Press." />
+
+<Callout type="critical" title="تنش مطلق‌گرایی و نسبی‌گرایی در عمل">
+  اگر همهٔ حقوق نسبی و قابل‌تعلیق باشند، هر حکومتی می‌تواند به بهانهٔ «امنیت ملی» یا «مصلحت عمومی» هر حقّی را نقض کند. تاریخ نشان داده که دقیقاً همین اتفاق افتاده است: اردوگاه‌های بازداشت آمریکا برای ژاپنی‌تباران در جنگ جهانی دوم، قوانین اضطراری در بسیاری از کشورهای خاورمیانه‌ای که دهه‌ها ادامه یافته‌اند. از سوی دیگر، مطلق‌انگاری تمام حقوق نیز در عمل ناممکن است زیرا حقوق مختلف گاهی با یکدیگر تعارض می‌یابند.
+</Callout>
+
+### 📊 نتایج و عواقب تطبیقی
+
+<DataTable
+  caption="پیامدهای تأکید بر هر قطب دوگانه‌های حق"
+  headers={["دوگانه", "پیامد تأکید بر قطب اول", "پیامد تأکید بر قطب دوم"]}
+  rows={[
+    ["ذاتی / اعتباری", "مبنای مستحکم برای حقوق بنیادین؛ خطر تحمیل تفسیر خاص از «ذات»", "انعطاف و تکثّر؛ خطر بی‌پایگی حقوق در برابر قدرت"],
+    ["ثابت / متغیّر", "ثبات و قابلیت پیش‌بینی؛ خطر جمود و ناسازگاری با تحول اجتماعی", "سازگاری با تغییرات؛ خطر نسبی‌گرایی و بی‌ثباتی"],
+    ["فردی / جمعی", "حمایت از آزادی و استقلال فرد؛ خطر اتمیسم اجتماعی", "همبستگی اجتماعی؛ خطر سرکوب فرد به نام جمع"],
+    ["مطلق / نسبی", "حمایت مطلق از کرامت؛ تعارض میان حقوق مطلقِ ناسازگار", "انعطاف عملی؛ خطر تعلیق مکرّر حقوق به بهانه‌های سیاسی"],
+  ]}
+/>
+
+<SectionDivider number="۷" />
+
+<div id="ch-development"></div>
+
+## 🌍 فصل هفتم: حق، توسعه و آبادانی — شواهد نظری و تاریخی
+
+### 📐 چارچوب نظری: از آزادی تا توسعه
+
+آمارتیا سن (*Amartya Sen*) در اثر بنیادین خود *توسعه به‌مثابهٔ آزادی* (*Development as Freedom*، ۱۹۹۹) استدلال کرد که توسعه چیزی جز «گسترش آزادی‌های واقعی» نیست. حقوق سیاسی و مدنی صرفاً نتیجهٔ جانبی توسعهٔ اقتصادی نیستند بلکه *شرط و مقوّم* توسعه‌اند. سن با ارائهٔ شواهد تاریخی نشان داد که هیچ قحطی بزرگی در کشوری با مطبوعات آزاد و انتخابات رقابتی رخ نداده است.<FootnoteRef id="13" text="Sen, A. (1999). Development as Freedom. Oxford University Press." />
+
+**رویکرد قابلیت** (*Capabilities Approach*) سن و نوسباوم پلی میان حقوق بشر و توسعه می‌زند: توسعه یعنی افزایش «قابلیت‌های» انسان‌ها (*capabilities*) یعنی آنچه واقعاً قادرند بشوند و انجام دهند. حقوق بشر تضمین‌کنندهٔ حداقل آستانهٔ قابلیت‌ها هستند.
+
+#### حکمرانی خوب و حقوق
+
+بانک جهانی و سازمان ملل از دهه‌ی ۱۹۹۰ مفهوم «حکمرانی خوب» (*good governance*) را به‌عنوان شرط لازم توسعه مطرح کردند. حکمرانی خوب شامل حاکمیت قانون، شفافیت، پاسخگویی و رعایت حقوق بشر است. بدون تضمین حقوق مالکیت، قراردادها بی‌اعتبارند؛ بدون آزادی بیان، فساد نهان می‌ماند؛ بدون حقوق سیاسی، حکومت پاسخگو نیست.
+
+### 📈 شواهد تجربی و پس‌نگر
+
+#### دموکراسی، حقوق و رشد اقتصادی
+
+**داسه‌گوپتا** (*Daron Acemoglu*) و **رابینسون** (*James Robinson*) در *چرا ملت‌ها شکست می‌خورند* (*Why Nations Fail*، ۲۰۱۲) با تحلیل تطبیقی‐تاریخی ده‌ها کشور نشان دادند که «نهادهای فراگیر» (*inclusive institutions*) ـ که حقوق مالکیت، فرصت برابر و مشارکت سیاسی را تضمین می‌کنند ـ عامل اصلی رشد اقتصادی بلندمدّت‌اند. در مقابل، «نهادهای استخراجی» (*extractive institutions*) که حقوق اکثریت را نقض و منابع را به نفع نخبگان مصادره می‌کنند، به فقر و رکود می‌انجامند.<FootnoteRef id="14" text="Acemoglu, D. & Robinson, J. (2012). Why Nations Fail. Crown Business." />
+
+#### آزادی مطبوعات و مبارزه با فساد
+
+تحقیقات برونتی و ودر (*Brunetti & Weder, 2003*) نشان داد همبستگی آماری معناداری میان آزادی مطبوعات و کاهش فساد وجود دارد. کشورهایی که حقّ آزادی بیان و مطبوعات را تضمین می‌کنند، سطح فساد پایین‌تری دارند.<FootnoteRef id="15" text="Brunetti, A. & Weder, B. (2003). A free press is bad news for corruption. Journal of Public Economics, 87(7-8), 1801–1824." />
+
+#### حقوق زنان و توسعهٔ انسانی
+
+برنامهٔ توسعهٔ ملل متحد (*UNDP*) در گزارش‌های توسعهٔ انسانی به‌طور مکرّر نشان داده که شاخص نابرابری جنسیتی (*GII*) همبستگی منفی قوی‌ای با شاخص توسعهٔ انسانی (*HDI*) دارد: هرچه حقوق زنان بیش‌تر رعایت شود، توسعهٔ انسانی بالاتر است.
+
+#### مطالعهٔ موردی: کرهٔ جنوبی و کرهٔ شمالی
+
+دو کشور با زبان، فرهنگ و تاریخ مشترک که پس از ۱۹۵۳ مسیرهای متفاوتی پیمودند. کرهٔ جنوبی با تدریجی اما مداوم گسترش حقوق مدنی و سیاسی (به‌ویژه پس از دموکراتیزاسیون ۱۹۸۷)، امروزه یکی از بیست اقتصاد بزرگ جهان است. کرهٔ شمالی با نقض سیستماتیک حقوق، یکی از فقیرترین کشورهاست. این مقایسه شبه‌آزمایشگاهی (*quasi-experiment*) به‌خوبی نقش نهادهای حقوقی را در توسعه نشان می‌دهد.
+
+<svg width="100%" viewBox="0 0 700 340" style={{ maxWidth: '700px', margin: '1.5rem auto', display: 'block' }}>
+  <defs>
+    <linearGradient id="barSouth" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#4CAF50"/>
+      <stop offset="100%" stopColor="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="barNorth" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#E53935"/>
+      <stop offset="100%" stopColor="#B71C1C"/>
+    </linearGradient>
+    <filter id="barShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" floodOpacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="700" height="340" rx="16" fill="#fafafa"/>
+  <text x="350" y="28" textAnchor="middle" fill="#1a1a2e" fontSize="14" fontWeight="bold">مقایسهٔ شبه‌آزمایشگاهی: کرهٔ جنوبی و کرهٔ شمالی</text>
+  <text x="350" y="48" textAnchor="middle" fill="#555" fontSize="10">دو کشور با فرهنگ مشترک، مسیرهای متفاوت (پس از ۱۹۵۳)</text>
+  <text x="350" y="78" textAnchor="middle" fill="#333" fontSize="11" fontWeight="bold">GDP سرانه (تقریبی - دلار)</text>
+  <line x1="100" y1="90" x2="100" y2="260" stroke="#333" strokeWidth="1.5"/>
+  <line x1="100" y1="260" x2="620" y2="260" stroke="#333" strokeWidth="1.5"/>
+  <text x="90" y="265" textAnchor="end" fill="#555" fontSize="9">0</text>
+  <text x="90" y="215" textAnchor="end" fill="#555" fontSize="9">10K</text>
+  <line x1="100" y1="210" x2="620" y2="210" stroke="#eee" strokeWidth="0.5"/>
+  <text x="90" y="165" textAnchor="end" fill="#555" fontSize="9">20K</text>
+  <line x1="100" y1="160" x2="620" y2="160" stroke="#eee" strokeWidth="0.5"/>
+  <text x="90" y="115" textAnchor="end" fill="#555" fontSize="9">30K</text>
+  <line x1="100" y1="110" x2="620" y2="110" stroke="#eee" strokeWidth="0.5"/>
+  <rect x="150" y="100" width="60" height="160" rx="6" fill="url(#barSouth)" filter="url(#barShadow)"/>
+  <text x="180" y="92" textAnchor="middle" fill="#2E7D32" fontSize="10" fontWeight="bold">~\$33K</text>
+  <text x="180" y="285" textAnchor="middle" fill="#333" fontSize="10">کرهٔ جنوبی</text>
+  <text x="180" y="298" textAnchor="middle" fill="#555" fontSize="8">حقوق مدنی + دموکراسی</text>
+  <rect x="280" y="232" width="60" height="28" rx="6" fill="url(#barNorth)" filter="url(#barShadow)"/>
+  <text x="310" y="225" textAnchor="middle" fill="#B71C1C" fontSize="10" fontWeight="bold">~\$1.8K</text>
+  <text x="310" y="285" textAnchor="middle" fill="#333" fontSize="10">کرهٔ شمالی</text>
+  <text x="310" y="298" textAnchor="middle" fill="#555" fontSize="8">نقض سیستماتیک حقوق</text>
+  <rect x="420" y="90" width="190" height="80" rx="10" fill="#e8f5e9" stroke="#4CAF50" strokeWidth="1"/>
+  <text x="515" y="112" textAnchor="middle" fill="#2E7D32" fontSize="11" fontWeight="bold">نهادهای فراگیر</text>
+  <text x="515" y="130" textAnchor="middle" fill="#333" fontSize="9">✅ حقوق مالکیت</text>
+  <text x="515" y="145" textAnchor="middle" fill="#333" fontSize="9">✅ مشارکت سیاسی</text>
+  <text x="515" y="160" textAnchor="middle" fill="#333" fontSize="9">✅ فرصت برابر</text>
+  <rect x="420" y="185" width="190" height="80" rx="10" fill="#fce4ec" stroke="#E53935" strokeWidth="1"/>
+  <text x="515" y="207" textAnchor="middle" fill="#B71C1C" fontSize="11" fontWeight="bold">نهادهای استخراجی</text>
+  <text x="515" y="225" textAnchor="middle" fill="#333" fontSize="9">❌ سرکوب آزادی‌ها</text>
+  <text x="515" y="240" textAnchor="middle" fill="#333" fontSize="9">❌ مصادرهٔ منابع</text>
+  <text x="515" y="255" textAnchor="middle" fill="#333" fontSize="9">❌ انحصار قدرت</text>
+  <text x="350" y="330" textAnchor="middle" fill="#555" fontSize="10">منبع: Acemoglu & Robinson (2012) — Why Nations Fail</text>
+</svg>
+
+### 🔄 رابطهٔ دوسویه: توسعه نیز حقوق را تقویت می‌کند
+
+رابطهٔ حقوق و توسعه یک‌سویه نیست. رونالد اینگلهارت (*Ronald Inglehart*) در نظریهٔ «مدرنیزاسیون و پسامدرنیزاسیون» با تحلیل داده‌های *World Values Survey* نشان داد که رشد اقتصادی و امنیت وجودی به تدریج ارزش‌های «خودبیانگری» (*self-expression values*) از جمله مطالبهٔ حقوق مدنی و سیاسی را تقویت می‌کند.<FootnoteRef id="16" text="Inglehart, R. & Welzel, C. (2005). Modernization, Cultural Change, and Democracy. Cambridge University Press." /> بنابراین یک حلقهٔ بازخورد مثبت وجود دارد: حقوق ← توسعه ← مطالبهٔ بیش‌تر حقوق ← توسعهٔ بیش‌تر.
+
+<Callout type="info" title="خلاصهٔ شواهد">
+  مجموع شواهد نظری و تجربی حاکی از آن است که:
+
+  **۱.** تضمین حقوق بنیادین (مالکیت، آزادی بیان، مشارکت سیاسی) **شرط لازم** توسعهٔ پایدار است (هرچند شرط کافی نیست).
+
+  **۲.** نقض حقوق ممکن است در کوتاه‌مدّت رشد اقتصادی ایجاد کند (مانند چین معاصر) ولی در بلندمدّت پایدار نیست و هزینه‌های اجتماعی سنگینی دارد.
+
+  **۳.** رابطهٔ حقوق و توسعه دوسویه و تقویت‌کننده است.
+</Callout>
+<SectionDivider number="۸" />
+
+<div id="ch-traps"></div>
+
+## 🪤 فصل هشتم: تله‌ها، دام‌ها و تعارضات عملی
+
+### 📄 صوری‌شدن حقوق
+
+یکی از مهم‌ترین دام‌ها «صوری‌شدن» (*formalization without substance*) حقوق است: حقوق در قانون نوشته می‌شوند ولی در عمل اجرا نمی‌شوند. بسیاری از کشورهای استبدادی قانون اساسی‌شان مملوّ از حقوق بشر است. قانون اساسی اتحاد شوروی (۱۹۳۶) آزادی بیان، آزادی مطبوعات و آزادی تجمّع را تضمین می‌کرد ولی هیچ‌کدام در عمل وجود نداشت. مارکس پیش‌تر این پدیده را «حقوق صوری» (*formal rights*) در برابر «حقوق واقعی» (*real rights / substantive rights*) نامیده بود.
+
+<Callout type="critical" title="معیار تشخیص صوری‌بودن">
+  حق زمانی واقعی است که:
+
+  **(الف) ضمانت اجرا** داشته باشد (دادگاه مستقل، پلیس قانون‌مدار)؛
+
+  **(ب)** صاحب حق **آگاهی** از حقّ خود داشته باشد؛
+
+  **(ج)** صاحب حق **دسترسی** به سازوکار احقاق حق داشته باشد (وکیل، دادگاه، رسانه)؛
+
+  **(د) هزینهٔ مطالبه** از حق متناسب و قابل‌تحمّل باشد.
+
+  اگر هریک از این شروط نقض شود، حق صوری می‌ماند.
+</Callout>
+
+### 🎭 تغییر نام و چهره: نقض حق در لباس حمایت از حق
+
+گاهی نقض حقوق دقیقاً با ادبیات حقوقی و حقوق‌بشری انجام می‌شود:
+
+- 🏠 **«حمایت از ارزش‌های خانواده»** به‌عنوان پوششی برای سرکوب حقوق زنان.
+- 🛡️ **«مبارزه با تروریسم»** به‌عنوان توجیه شکنجه، بازداشت بدون محاکمه و نظارت فراگیر.
+- 🚔 **«حفظ نظم عمومی»** به‌عنوان بهانهٔ سرکوب تجمّعات مسالمت‌آمیز.
+- 💼 **«حقوق مالکیت فکری»** به‌عنوان ابزار انحصار دانش و فناوری توسط شرکت‌های بزرگ.
+- 🏳️ **«حقّ تعیین سرنوشت»** به‌عنوان ابزار جدایی‌طلبی قومی یا مداخلهٔ نظامی.
+
+### ⚔️ تعارض حقوق: چه کسانی قربانی می‌شوند؟
+
+وقتی حقوق مختلف با هم تعارض می‌یابند، معمولاً حقوق گروه‌های ضعیف‌تر قربانی می‌شود:
+
+#### نابرابری در قدرت مطالبه
+
+همهٔ صاحبان حق در مطالبهٔ حقوقشان برابر نیستند. قدرت مطالبه تابع عوامل متعددی است:
+
+<NumberedCard number="۱" title="ثروت">
+  افراد و گروه‌های ثروتمند به وکلای بهتر، رسانه‌ها و لابی‌گری دسترسی دارند. مطالعهٔ گالانتر (*Marc Galanter, 1974*) با عنوان *"Why the 'Haves' Come Out Ahead"* نشان داد که «بازیگران مکرّر» (*repeat players*) ـ شرکت‌ها، دولت‌ها ـ سیستماتیک از «بازیگران یک‌باره» (*one-shotters*) ـ افراد عادی ـ در دادگاه‌ها پیشی می‌گیرند.
+</NumberedCard>
+
+<NumberedCard number="۲" title="آگاهی">
+  بسیاری از مردم حقوق قانونی خود را نمی‌شناسند. «بی‌سوادی حقوقی» (*legal illiteracy*) یکی از بزرگ‌ترین موانع تحقّق حقوق است.
+</NumberedCard>
+
+<NumberedCard number="۳" title="سازمان‌یافتگی">
+  گروه‌های سازمان‌یافته (مانند صنفی‌ها، اتحادیه‌ها، لابی‌های صنعتی) بسیار مؤثرتر از افراد پراکنده حقوقشان را مطالبه می‌کنند. مشکل «عمل جمعی» (*collective action problem*) که مانکور اولسون (*Mancur Olson*) توضیح داده، گروه‌های بزرگ و پراکنده (مانند مصرف‌کنندگان، مالیات‌دهندگان) را در مطالبهٔ حقوقشان ناتوان می‌سازد.
+</NumberedCard>
+
+<NumberedCard number="۴" title="صدا و رؤیت‌پذیری">
+  گروه‌هایی که صدای رسانه‌ای بلندتری دارند، حقوقشان بیش‌تر شنیده می‌شود. بومیان، مهاجران غیرقانونی، زندانیان و معلولان از جمله «بی‌صداترین» گروه‌ها هستند.
+</NumberedCard>
+
+<svg width="100%" viewBox="0 0 700 300" style={{ maxWidth: '700px', margin: '1.5rem auto', display: 'block' }}>
+  <defs>
+    <linearGradient id="powerG1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#4CAF50"/>
+      <stop offset="100%" stopColor="#81C784"/>
+    </linearGradient>
+    <linearGradient id="powerG2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#E53935"/>
+      <stop offset="100%" stopColor="#EF9A9A"/>
+    </linearGradient>
+    <filter id="pShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" floodOpacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="700" height="300" rx="16" fill="#fafafa"/>
+  <text x="350" y="28" textAnchor="middle" fill="#1a1a2e" fontSize="14" fontWeight="bold">نابرابری در قدرت مطالبهٔ حقوق</text>
+  <text x="350" y="60" textAnchor="middle" fill="#2E7D32" fontSize="12" fontWeight="bold">قدرت مطالبهٔ بالا ⬆️</text>
+  <rect x="70" y="75" width="280" height="35" rx="8" fill="url(#powerG1)" filter="url(#pShadow)"/>
+  <text x="210" y="97" textAnchor="middle" fill="#ffffff" fontSize="11" fontWeight="bold">شرکت‌ها و لابی‌های صنعتی</text>
+  <rect x="70" y="118" width="230" height="35" rx="8" fill="url(#powerG1)" filter="url(#pShadow)" opacity="0.85"/>
+  <text x="185" y="140" textAnchor="middle" fill="#ffffff" fontSize="11" fontWeight="bold">دولت‌ها و نهادهای رسمی</text>
+  <rect x="70" y="161" width="180" height="35" rx="8" fill="#FFB74D" filter="url(#pShadow)"/>
+  <text x="160" y="183" textAnchor="middle" fill="#333" fontSize="11" fontWeight="bold">اتحادیه‌ها و صنف‌ها</text>
+  <rect x="70" y="204" width="130" height="35" rx="8" fill="url(#powerG2)" filter="url(#pShadow)" opacity="0.8"/>
+  <text x="135" y="226" textAnchor="middle" fill="#ffffff" fontSize="11" fontWeight="bold">شهروندان عادی</text>
+  <rect x="70" y="247" width="80" height="35" rx="8" fill="url(#powerG2)" filter="url(#pShadow)"/>
+  <text x="110" y="269" textAnchor="middle" fill="#ffffff" fontSize="10" fontWeight="bold">حاشیه‌نشینان</text>
+  <text x="350" y="287" textAnchor="middle" fill="#B71C1C" fontSize="12" fontWeight="bold">قدرت مطالبهٔ پایین ⬇️</text>
+  <rect x="420" y="80" width="240" height="100" rx="10" fill="#fff8e1" stroke="#FF9800" strokeWidth="1"/>
+  <text x="540" y="102" textAnchor="middle" fill="#E65100" fontSize="11" fontWeight="bold">⚠️ عوامل مؤثر:</text>
+  <text x="540" y="122" textAnchor="middle" fill="#333" fontSize="10">💰 ثروت و دسترسی به وکیل</text>
+  <text x="540" y="140" textAnchor="middle" fill="#333" fontSize="10">📚 آگاهی حقوقی</text>
+  <text x="540" y="158" textAnchor="middle" fill="#333" fontSize="10">🤝 سازمان‌یافتگی</text>
+  <text x="540" y="176" textAnchor="middle" fill="#333" fontSize="10">📢 صدا و رؤیت‌پذیری رسانه‌ای</text>
+  <rect x="420" y="195" width="240" height="55" rx="10" fill="#fce4ec" stroke="#E53935" strokeWidth="1"/>
+  <text x="540" y="217" textAnchor="middle" fill="#B71C1C" fontSize="10" fontWeight="bold">بی‌صداترین گروه‌ها:</text>
+  <text x="540" y="237" textAnchor="middle" fill="#333" fontSize="10">بومیان · مهاجران · زندانیان · معلولان</text>
+</svg>
+
+#### مثال: حقّ مالکیت در برابر حقّ مسکن
+
+در بسیاری از شهرهای بزرگ جهان، حقّ مالکیت زمین‌داران بزرگ و شرکت‌های ساختمانی با حقّ مسکن مناسب شهروندان کم‌درآمد در تعارض است. نتیجه معمولاً به نفع مالکان تمام می‌شود: سوداگری زمین، تخلیهٔ اجباری، و حاشیه‌نشینی فقرا. پروژه‌های «نوسازی شهری» (*urban renewal*) در بسیاری موارد عملاً به «پاکسازی طبقاتی» (*class cleansing*) انجامیده‌اند.
+
+#### مثال: حقّ آزادی بیان در برابر حقّ حریم خصوصی
+
+با ظهور فضای مجازی و شبکه‌های اجتماعی، تعارض میان آزادی بیان و حریم خصوصی حادتر شده است. شرکت‌های فناوری بزرگ (*Big Tech*) از حقّ آزادی بیان برای توجیه عدم نظارت بر محتوای زیان‌بار استفاده می‌کنند، درحالی‌که خود بزرگ‌ترین ناقضان حریم خصوصی‌اند.
+
+### 🔄 پارادوکس‌های حق
+
+#### پارادوکس تساهل
+
+کارل پوپر (*Karl Popper*) در *جامعهٔ باز و دشمنانش* (۱۹۴۵) «پارادوکس تساهل» را مطرح کرد: اگر جامعه‌ای به‌طور مطلق متساهل باشد و حقّ بیان را حتی به دشمنان تساهل بدهد، ممکن است نهایتاً توسط نیروهای نامتساهل سرنگون شود. بنابراین «تساهل با نامتساهلان» خودویران‌گر است.<FootnoteRef id="17" text="Popper, K. (1945). The Open Society and Its Enemies. Routledge." />
+
+#### پارادوکس حقوق دموکراتیک
+
+آیا مردم حقّ دارند به‌صورت دموکراتیک حقوق خود را ملغی کنند؟ آیا می‌توان با رأی اکثریت، حقّ رأی اقلیت را حذف کرد؟ این معمای بنیادین، تنش ذاتی میان دموکراسی (حاکمیت مردم) و لیبرالیسم (حقوق فردی تخلّف‌ناپذیر) را آشکار می‌کند.
+
+### ❌ اندیشه‌های مردود و کنارگذاشته‌شده
+
+برخی اندیشه‌ها دربارهٔ حق در طول تاریخ به دلایل نظری و عملی رد شده‌اند:
+
+<NumberedCard number="۱" title="بردگی طبیعی ارسطو">
+  ارسطو در *سیاست* (کتاب اول) استدلال کرد برخی انسان‌ها «بالطبع برده»اند. این نظر با ظهور حقوق بشر مدرن کاملاً مردود شمرده شد، هرچند در عمل تا قرن نوزدهم بقا داشت.
+</NumberedCard>
+
+<NumberedCard number="۲" title="حقّ الهی پادشاهان (Divine Right of Kings)">
+  نظریه‌ای که قدرت مطلق پادشاه را مستقیماً از خداوند می‌دانست و هر اعتراضی به حاکم را گناه الهی تلقّی می‌کرد. انقلاب‌های انگلستان (۱۶۸۸)، آمریکا (۱۷۷۶) و فرانسه (۱۷۸۹) این نظریه را عملاً مدفون کردند.
+</NumberedCard>
+
+<NumberedCard number="۳" title="داروینیسم اجتماعی">
+  هربرت اسپنسر (*Spencer*) و ویلیام گراهام سامنر (*Sumner*) استدلال کردند «بقای اصلح» توجیه‌کنندهٔ نابرابری اجتماعی است و فقرا «حقّ» ادعایی ندارند. این نظریه پایهٔ علمی نداشت و توجیه‌کنندهٔ نژادپرستی و استعمار شد. پس از جنگ جهانی دوم و وحشت از نازیسم، به‌طور گسترده رد شد.
+</NumberedCard>
+
+<NumberedCard number="۴" title="پوزیتیویسم حقوقی سختگیرانه (آستین)">
+  نظریهٔ «فرمان حاکم» آستین که حق را صرفاً فرمان قدرت‌مدار می‌دانست، حتی توسط پوزیتیویست‌های بعدی (هارت) اصلاح و تعدیل شد. هارت نشان داد که قانون فقط فرمان زورمدار نیست بلکه نظامی مبتنی بر قواعد است.
+</NumberedCard>
+
+<NumberedCard number="۵" title="نفی کامل حقوق فردی (تمامیت‌خواهی)">
+  هم نازیسم و هم استالینیسم فرد را تابع مطلق دولت/حزب/ملت دانستند. پس از ۱۹۴۵ و تأسیس نظام بین‌المللی حقوق بشر، این نظرگاه رسماً و اجماعاً مردود شمرده شد ـ هرچند در عمل هنوز نمونه‌هایی از آن وجود دارد.
+</NumberedCard>
+
+<Callout type="success" title="چرا این اندیشه‌ها کنار گذاشته شدند؟">
+  وجه مشترک همهٔ این اندیشه‌های مردود آن است که:
+
+  - 🔴 «طبیعت» یا «ارادهٔ الهی» را به‌نفع قدرتمندان تفسیر می‌کردند؛
+  - 🔴 شواهد تجربی (تاریخی، آماری، علمی) آن‌ها را تأیید نمی‌کرد؛
+  - 🔴 نتایج عملی‌شان (بردگی، نسل‌کشی، فقر) فاجعه‌بار بود؛
+  - 🟢 جایگزین‌های نظری بهتری (حقوق طبیعی نوین، حقوق بشر، لیبرالیسم، عدالت اجتماعی) ارائه شد.
+</Callout>
+
+<SectionDivider number="۹" />
+
+<div id="ch-solutions"></div>
+
+## 💡 فصل نهم: راه‌حل‌ها و نگرش‌های نوین
+
+### 🌐 تکثّرگرایی حقوقی بنیادمحور
+
+رویکردهای نوین می‌کوشند هم‌زمان از جهان‌شمولی حقوق بنیادین و تنوّع فرهنگی پاسداری کنند. عبدالله احمد النعیم (*Abdullahi An-Na'im*) در *اسلام و دولت سکولار* (*Islam and the Secular State*، ۲۰۰۸) استدلال می‌کند که حقوق بشر نه تحمیل غربی بلکه میراث مشترک بشری است و می‌توان از درون سنّت اسلامی به آن رسید ـ مشروط بر آنکه دولت سکولار (نه لائیک ضددینی) باشد و فضا برای «استدلال مدنی» (*civic reasoning*) فراهم شود.<FootnoteRef id="18" text="An-Na'im, A.A. (2008). Islam and the Secular State. Harvard University Press." />
+
+### ⚖️ عدالت ترمیمی
+
+در برابر نظام‌های عدالت کیفری سنّتی (که بر مجازات تمرکز دارند)، «عدالت ترمیمی» (*restorative justice*) بر ترمیم رابطه میان قربانی، مجرم و جامعه تأکید می‌کند. این رویکرد از سنّت‌های بومی (مائوری نیوزیلند، اوبونتو در آفریقای جنوبی) الهام گرفته و حقوق قربانی را فراتر از «مجازات مجرم» می‌داند: حقّ شنیده‌شدن، حقّ جبران خسارت، حقّ بازسازی کرامت.
+
+### 🌱 حقوق نسل‌های آینده و محیط زیست
+
+یکی از مرزهای نوین گفتمان حقوق، بحث «حقوق نسل‌های آینده» و «حقوق طبیعت» است. اکوادور (۲۰۰۸) و بولیوی (۲۰۱۰) حقوق طبیعت (*Rights of Nature*) را در قانون اساسی خود گنجاندند. نیوزیلند (۲۰۱۷) رودخانهٔ وانگانویی (*Whanganui*) را شخصیت حقوقی بخشید. هند (۲۰۱۷) رودخانه‌های گنگ و یمونا را «شخص حقوقی» اعلام کرد. این تحولات نشان‌دهندهٔ گسترش دایرهٔ «صاحبان حق» فراتر از انسان زندهٔ معاصر است.
+
+### 💻 فناوری و حقوق نوظهور
+
+فضای دیجیتال حقوق نوظهوری ایجاد کرده: حقّ حریم خصوصی دیجیتال، حقّ فراموش‌شدن (*right to be forgotten*)، حقّ دسترسی به اینترنت (که سازمان ملل آن را حقّ بشری دانسته)، و حقّ شفافیت الگوریتمی (*algorithmic transparency*). مقررات عمومی حفاظت از داده‌های اتحادیهٔ اروپا (*GDPR*، ۲۰۱۸) نمونهٔ بارز قانون‌گذاری در این حوزه است.
+
+### 🌉 رویکرد قابلیت‌محور: پلی میان حقوق و توسعه
+
+رویکرد قابلیت سن‐نوسباوم، همان‌طور که در فصل هفتم اشاره شد، یکی از امیدوارکننده‌ترین چارچوب‌ها برای غلبه بر دوگانه‌های سنّتی است. این رویکرد:
+
+- ✅ هم واقع‌گراست (مبتنی بر نیازها و قابلیت‌های واقعی انسان)؛
+- ✅ هم تکثّرگراست (اجازهٔ تنوّع فرهنگی در شیوهٔ تحقّق)؛
+- ✅ هم فردی و هم اجتماعی است (قابلیت‌ها هم فردی‌اند و هم بافت اجتماعی می‌خواهند)؛
+- ✅ حقوق را نه انتزاعی بلکه ملموس و سنجش‌پذیر می‌کند.
+
+### 🤝 گفت‌وگوی تمدّن‌ها و اجماع متقاطع
+
+به جای تحمیل یک مدل واحد، اندیشمندانی مانند رالز، تیلور و النعیم از «اجماع متقاطع» (*overlapping consensus*) دفاع می‌کنند: جوامع و سنّت‌های مختلف می‌توانند از مبانی فلسفی و دینی متفاوت به نتایج هنجاری مشابه برسند. مثلاً:
+
+- 🕌 مسلمان می‌تواند از مقاصد شریعه به منع شکنجه برسد؛
+- 📘 کانتی از امر مطلق اخلاقی؛
+- 📊 فایده‌گرا از محاسبهٔ کاهش رنج؛
+- ☯️ کنفوسیوسی از اصل *ren* (انسان‌دوستی).
+
+نتیجه مشترک است: **منع شکنجه**. اما مبنا متفاوت. این رویکرد هم جهان‌شمولی عملی حقوق را حفظ می‌کند و هم به تنوّع فلسفی‐فرهنگی احترام می‌گذارد.
+
+<svg width="100%" viewBox="0 0 700 380" style={{ maxWidth: '700px', margin: '1.5rem auto', display: 'block' }}>
+  <defs>
+    <linearGradient id="consG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#1a1a2e"/>
+      <stop offset="100%" stopColor="#16213e"/>
+    </linearGradient>
+    <linearGradient id="centerConsG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#64ffda"/>
+      <stop offset="100%" stopColor="#00bfa5"/>
+    </linearGradient>
+    <filter id="cShadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" floodOpacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="700" height="380" rx="16" fill="#fafafa"/>
+  <text x="350" y="28" textAnchor="middle" fill="#1a1a2e" fontSize="14" fontWeight="bold">اجماع متقاطع (Overlapping Consensus)</text>
+  <text x="350" y="48" textAnchor="middle" fill="#555" fontSize="10">مبانی متفاوت، نتیجهٔ هنجاری مشترک</text>
+  <circle cx="350" cy="210" r="55" fill="url(#centerConsG)" filter="url(#cShadow)"/>
+  <text x="350" y="200" textAnchor="middle" fill="#1a1a2e" fontSize="12" fontWeight="bold">نتیجهٔ مشترک:</text>
+  <text x="350" y="218" textAnchor="middle" fill="#1a1a2e" fontSize="11" fontWeight="bold">منع شکنجه</text>
+  <text x="350" y="234" textAnchor="middle" fill="#1a1a2e" fontSize="10">(و حقوق بنیادین)</text>
+  <rect x="40" y="80" width="160" height="70" rx="12" fill="url(#consG)" filter="url(#cShadow)"/>
+  <text x="120" y="108" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">🕌 سنّت اسلامی</text>
+  <text x="120" y="128" textAnchor="middle" fill="#a8b2d1" fontSize="10">مقاصد شریعه</text>
+  <text x="120" y="142" textAnchor="middle" fill="#e8e8e8" fontSize="9">حفظ جان و کرامت</text>
+  <line x1="190" y1="135" x2="300" y2="190" stroke="#64ffda" strokeWidth="2" opacity="0.5"/>
+  <rect x="500" y="80" width="160" height="70" rx="12" fill="url(#consG)" filter="url(#cShadow)"/>
+  <text x="580" y="108" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">📘 سنّت کانتی</text>
+  <text x="580" y="128" textAnchor="middle" fill="#a8b2d1" fontSize="10">امر مطلق اخلاقی</text>
+  <text x="580" y="142" textAnchor="middle" fill="#e8e8e8" fontSize="9">انسان غایت نه وسیله</text>
+  <line x1="510" y1="135" x2="400" y2="190" stroke="#64ffda" strokeWidth="2" opacity="0.5"/>
+  <rect x="40" y="270" width="160" height="70" rx="12" fill="url(#consG)" filter="url(#cShadow)"/>
+  <text x="120" y="298" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">📊 فایده‌گرایی</text>
+  <text x="120" y="318" textAnchor="middle" fill="#a8b2d1" fontSize="10">محاسبهٔ سود و زیان</text>
+  <text x="120" y="332" textAnchor="middle" fill="#e8e8e8" fontSize="9">کاهش رنج کل</text>
+  <line x1="190" y1="290" x2="305" y2="235" stroke="#64ffda" strokeWidth="2" opacity="0.5"/>
+  <rect x="500" y="270" width="160" height="70" rx="12" fill="url(#consG)" filter="url(#cShadow)"/>
+  <text x="580" y="298" textAnchor="middle" fill="#64ffda" fontSize="12" fontWeight="bold">☯️ سنّت کنفوسیوسی</text>
+  <text x="580" y="318" textAnchor="middle" fill="#a8b2d1" fontSize="10">اصل رِن</text>
+  <text x="580" y="332" textAnchor="middle" fill="#e8e8e8" fontSize="9">انسان‌دوستی و هماهنگی</text>
+  <line x1="510" y1="290" x2="395" y2="235" stroke="#64ffda" strokeWidth="2" opacity="0.5"/>
+  <text x="350" y="372" textAnchor="middle" fill="#555" fontSize="10">جوامع مختلف از مبانی متفاوت به حقوق بشر مشترک می‌رسند</text>
+</svg>
+
+<SectionDivider number="۱۰" />
+
+<div id="ch-conclusion"></div>
+
+## 🏁 نتیجه‌گیری
+
+مفهوم حق همچون منشوری است که نور واحد اندیشهٔ بشری را به طیفی از رنگ‌ها تجزیه می‌کند: فلسفی، حقوقی، الهیاتی، سیاسی، اقتصادی و اجتماعی. بررسی تطبیقی نشان داد:
+
+<ConclusionCard number="۱" title="چندلایگی مفهوم حق">
+  حق مفهومی چندلایه و چندبُعدی است و هرگونه تقلیل آن به یک بُعد (مثلاً صرفاً قانونی یا صرفاً اخلاقی) به فهم ناقص و گاه خطرناک می‌انجامد.
+</ConclusionCard>
+
+<ConclusionCard number="۲" title="واقع‌گرایی حداقلی">
+  نه واقع‌گرایی افراطی و نه نسبی‌گرایی افراطی پاسخ‌گوی پیچیدگی‌های حق هستند. «واقع‌گرایی حداقلی» یا «تکثّرگرایی بنیادمحور» ـ که هستهٔ ثابتی از حقوق بنیادین را می‌پذیرد ولی شیوهٔ تحقّق آن‌ها را به تنوّع فرهنگی واگذار می‌کند ـ رویکردی موجّه‌تر و عملی‌تر است.
+</ConclusionCard>
+
+<ConclusionCard number="۳" title="حقوق زیرساخت تمدّن‌اند">
+  شواهد تاریخی و تجربی قویاً از رابطهٔ مثبت میان تضمین حقوق بنیادین و توسعهٔ پایدار حکایت دارند. حقوق نه تجمّل بلکه زیرساخت تمدّن‌اند.
+</ConclusionCard>
+
+<ConclusionCard number="۴" title="هوشیاری مداوم">
+  خطر همیشگی صوری‌شدن حقوق، سوء استفادهٔ قدرتمندان از زبان حقوقی، و نابرابری در قدرت مطالبه وجود دارد. هوشیاری مداوم، نهادسازی مستقل، و توانمندسازی گروه‌های ضعیف ضروری است.
+</ConclusionCard>
+
+<ConclusionCard number="۵" title="ظرفیت‌های سنّت اسلامی">
+  سنّت اسلامی ظرفیت‌های غنی برای مشارکت در گفتمان جهانی حقوق دارد ـ مشروط بر آنکه از جزمیت تاریخی فاصله گیرد و به بازسازی انتقادی مقاصد شریعه بپردازد.
+</ConclusionCard>
+
+<ConclusionCard number="۶" title="چالش‌های بی‌سابقه">
+  آیندهٔ گفتمان حقوق با چالش‌های بی‌سابقه‌ای روبه‌روست: حقوق دیجیتال، حقوق هوش مصنوعی، حقوق نسل‌های آینده، و حقوق طبیعت. پاسخ‌گویی به این چالش‌ها مستلزم خلاقیت نظری و ارادهٔ سیاسی است.
+</ConclusionCard>
+
+<QuoteBlock author="سخن پایانی">
+  در پایان، شاید بهترین تعبیر آن باشد که «حق» نه صرفاً یک مفهوم انتزاعی بلکه یک **«پروژهٔ تمدّنی ناتمام»** است: پروژه‌ای که هر نسل باید آن را بازاندیشی، بازسازی و بار دیگر متحقّق سازد.
+</QuoteBlock>
+
+---
+
+<div id="app-glossary"></div>
+
+## 📖 پیوست الف: واژه‌نامهٔ تطبیقی
+
+<DataTable
+  caption="واژه‌نامهٔ تطبیقی اصطلاحات فارسی/عربی و انگلیسی"
+  headers={["اصطلاح فارسی / عربی", "معادل انگلیسی", "توضیح مختصر"]}
+  rows={[
+    ["حق", "Right / Truth / Reality", "ثابت، واقعی، آنچه سزاوار است"],
+    ["باطل", "Falsehood / Invalid", "نقیض حق"],
+    ["عدالت", "Justice", "توزیع درست حقوق و وظایف"],
+    ["انصاف", "Equity / Fairness", "عدالت با لحاظ تفاوت‌ها"],
+    ["آزادی", "Liberty / Freedom", "نبود مانع بیرونی یا توانایی عمل"],
+    ["تکلیف", "Duty / Obligation", "الزام متناظر با حق"],
+    ["حُکم", "Ruling / Ordinance", "خطاب شارع (فقه اسلامی)"],
+    ["اعتباری", "Conventional / Constructed", "وضع‌شده توسط ذهن یا جامعه"],
+    ["حقیقی", "Real / Objective", "مستقل از ذهن و قرارداد"],
+    ["حقوق طبیعی", "Natural Rights", "حقوق پیشاقانونی مبتنی بر طبیعت"],
+    ["حقوق وضعی", "Positive Law", "قوانین وضع‌شده توسط دولت"],
+    ["مقاصد الشریعه", "Objectives of Sharia", "اهداف کلان شریعت اسلامی"],
+    ["قاعدهٔ شناسایی", "Rule of Recognition", "معیار اعتبار قانون (هارت)"],
+    ["هنجار بنیادین", "Grundnorm", "فرض بنیادین اعتبار (کلزن)"],
+    ["ارادهٔ عمومی", "General Will", "ارادهٔ جمعی مردم (روسو)"],
+    ["قابلیت", "Capability", "آنچه شخص واقعاً قادر به بودن/انجام‌دادنش است"],
+    ["کرامت", "Dignity", "ارزش ذاتی انسان"],
+    ["حقّ ادّعایی", "Claim-right", "حقّی که تکلیف متناظر ایجاد می‌کند"],
+    ["مصونیت", "Immunity", "محافظت از تغییر وضعیت حقوقی"],
+  ]}
+/>
+
+---
+
+<div id="app-schools-table"></div>
+
+## 📊 پیوست ب: جدول تطبیقی مکاتب
+
+<DataTable
+  caption="مقایسهٔ تطبیقی مکاتب فکری دربارهٔ حق"
+  headers={["مکتب", "منشأ حق", "ماهیت", "رابطهٔ حق و اخلاق", "نمایندگان"]}
+  rows={[
+    ["حقوق طبیعی", "طبیعت / عقل / خدا", "واقعی، ثابت", "پیوند ذاتی", "ارسطو، آکویناس، لاک، فینیس"],
+    ["پوزیتیویسم", "قانون‌گذار", "اعتباری، متغیّر", "جدایی", "آستین، کلزن، هارت"],
+    ["لیبرالیسم", "فرد", "فردی، جهان‌شمول", "حق مقدّم بر خیر", "لاک، کانت، رالز، دوورکین"],
+    ["جامعه‌گرایی", "اجتماع", "اجتماعی، تاریخی", "فضیلت مقدّم بر حق", "مکین‌تایر، سندل، تیلور"],
+    ["فایده‌گرایی", "محاسبهٔ سود", "ابزاری، متغیّر", "حق تابع منفعت عمومی", "بنتام، میل"],
+    ["مارکسیسم", "مبارزهٔ طبقاتی", "ایدئولوژیک", "حقوق بورژوایی نقاب سلطه", "مارکس، انگلس"],
+    ["فمینیسم حقوقی", "نقد پدرسالاری", "جنسیتی‐ساختاری", "حقوق «جهان‌شمول» مردانه‌اند", "مکینون، اکین"],
+    ["فقه اسلامی", "شریعت الهی", "واقعی (با عناصر اعتباری)", "تکلیف مقدّم بر حق", "غزالی، شاطبی، ابن‌عاشور"],
+    ["رویکرد قابلیت", "نیازهای انسانی", "واقعی‐اجتماعی", "حق = آستانهٔ قابلیت", "سن، نوسباوم"],
+    ["مطالعات انتقادی", "نقد قدرت", "ساختارشکنانه", "حق ابزار سلطه", "آنگر، کندی"],
+  ]}
+/>
+
+---
+
+<div id="app-further-reading"></div>
+
+## 📚 پیوست ج: خوانش‌های بیش‌تر
+
+### منابع فارسی و عربی
+
+<div style={{ background: '#f8f9fa', borderRadius: '12px', padding: '1.5rem', marginBottom: '1.5rem', direction: 'rtl', lineHeight: 2.2 }}>
+
+**[۱]** مطهری، مرتضی. *مقدمه‌ای بر جهان‌بینی اسلامی* (مجموعه آثار). تهران: صدرا.
+
+**[۲]** طباطبایی، سید محمدحسین. *المیزان فی تفسیر القرآن*. بیروت: مؤسسة الأعلمی.
+
+**[۳]** جوادی آملی، عبدالله. *فلسفهٔ حقوق بشر*. قم: اسراء.
+
+**[۴]** عوده، جاسر. *مقاصد الشریعة: دلیل للمبتدئین*. لندن: المعهد العالمی للفکر الإسلامی.
+
+**[۵]** کاتوزیان، ناصر. *فلسفهٔ حقوق*. تهران: شرکت سهامی انتشار.
+
+**[۶]** راسخ، محمد. *حق و مصلحت: مقالاتی در فلسفهٔ حقوق*. تهران: طرح نو.
+
+</div>
+
+### منابع لاتین
+
+<div style={{ background: '#f8f9fa', borderRadius: '12px', padding: '1.5rem', marginBottom: '1.5rem', direction: 'ltr', textAlign: 'left', lineHeight: 2 }}>
+
+**[7]** Hohfeld, W.N. (1919). *Fundamental Legal Conceptions*. Yale University Press.
+
+**[8]** Hart, H.L.A. (1961). *The Concept of Law*. Oxford University Press.
+
+**[9]** Rawls, J. (1971). *A Theory of Justice*. Harvard University Press.
+
+**[10]** Dworkin, R. (1977). *Taking Rights Seriously*. Harvard University Press.
+
+**[11]** Finnis, J. (1980). *Natural Law and Natural Rights*. Oxford University Press.
+
+**[12]** MacIntyre, A. (1981). *After Virtue*. University of Notre Dame Press.
+
+**[13]** Nussbaum, M. (2000). *Women and Human Development*. Cambridge University Press.
+
+**[14]** Sen, A. (1999). *Development as Freedom*. Oxford University Press.
+
+**[15]** Acemoglu, D. & Robinson, J. (2012). *Why Nations Fail*. Crown Business.
+
+**[16]** An-Na'im, A.A. (2008). *Islam and the Secular State*. Harvard University Press.
+
+**[17]** Auda, J. (2008). *Maqasid al-Shariah as Philosophy of Islamic Law*. IIIT.
+
+**[18]** Edmundson, W.A. (2004). *An Introduction to Rights*. Cambridge University Press.
+
+**[19]** Wenar, L. (2015). Rights. *Stanford Encyclopedia of Philosophy*.
+
+**[20]** Donnelly, J. (2013). *Universal Human Rights in Theory and Practice*. Cornell University Press.
+
+**[21]** Tasioulas, J. (2015). On the Foundations of Human Rights. In *Philosophical Foundations of Human Rights*. Oxford University Press.
+
+</div>
+
+---
+
+## 📝 پانوشت‌ها
+
+<div style={{ background: '#fafafa', borderRadius: '12px', padding: '1.5rem', marginBottom: '2rem' }}>
+
+<Footnote id="1">Hohfeld, W. N. (1919). *Fundamental Legal Conceptions as Applied in Judicial Reasoning*. Yale University Press.</Footnote>
+
+<Footnote id="2">Aristotle. *Nicomachean Ethics*, V.7, 1134b18–1135a5.</Footnote>
+
+<Footnote id="3">Aquinas, T. *Summa Theologiae*, I-II, q.91, a.2.</Footnote>
+
+<Footnote id="4">Finnis, J. (1980). *Natural Law and Natural Rights*. Oxford University Press.</Footnote>
+
+<Footnote id="5">Austin, J. (1832). *The Province of Jurisprudence Determined*.</Footnote>
+
+<Footnote id="6">Kelsen, H. (1934). *Reine Rechtslehre* [Pure Theory of Law].</Footnote>
+
+<Footnote id="7">Hart, H.L.A. (1961). *The Concept of Law*. Oxford University Press.</Footnote>
+
+<Footnote id="8">Rawls, J. (1999). *The Law of Peoples*. Harvard University Press.</Footnote>
+
+<Footnote id="9">Nussbaum, M. (2000). *Women and Human Development*. Cambridge University Press.</Footnote>
+
+<Footnote id="10">Rawls, J. (1971). *A Theory of Justice*. Harvard University Press.</Footnote>
+
+<Footnote id="11">Auda, J. (2008). *Maqasid al-Shariah as Philosophy of Islamic Law*. IIIT.</Footnote>
+
+<Footnote id="12">Dworkin, R. (1977). *Taking Rights Seriously*. Harvard University Press.</Footnote>
+
+<Footnote id="13">Sen, A. (1999). *Development as Freedom*. Oxford University Press.</Footnote>
+
+<Footnote id="14">Acemoglu, D. & Robinson, J. (2012). *Why Nations Fail*. Crown Business.</Footnote>
+
+<Footnote id="15">Brunetti, A. & Weder, B. (2003). A free press is bad news for corruption. *Journal of Public Economics*, 87(7-8), 1801–1824.</Footnote>
+
+<Footnote id="16">Inglehart, R. & Welzel, C. (2005). *Modernization, Cultural Change, and Democracy*. Cambridge University Press.</Footnote>
+
+<Footnote id="17">Popper, K. (1945). *The Open Society and Its Enemies*. Routledge.</Footnote>
+
+<Footnote id="18">An-Na'im, A.A. (2008). *Islam and the Secular State*. Harvard University Press.</Footnote>
+
+</div>
+
+---
+
+<div style={{
+  background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
+  borderRadius: '16px',
+  padding: '2rem 2.5rem',
+  textAlign: 'center',
+  direction: 'rtl',
+}}>
+  <p style={{ color: '#64ffda', fontSize: '1.1rem', fontWeight: 700, marginBottom: '0.5rem' }}>
+    حق: تحلیل تطبیقی در فلسفه، حقوق و الهیات
+  </p>
+  <p style={{ color: '#a8b2d1', fontSize: '0.9rem', lineHeight: 1.8, marginBottom: '0.8rem' }}>
+    این پژوهش با هدف ارائهٔ تصویری جامع و تطبیقی از مفهوم «حق» در سنّت‌های فکری اسلامی و غربی تدوین شده است.
+  </p>
+  <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+    <div>
+      <span style={{ color: '#64ffda', fontSize: '1.5rem', fontWeight: 900 }}>۱۰</span>
+      <span style={{ color: '#a8b2d1', fontSize: '0.8rem', display: 'block' }}>فصل</span>
+    </div>
+    <div>
+      <span style={{ color: '#e94560', fontSize: '1.5rem', fontWeight: 900 }}>۱۰+</span>
+      <span style={{ color: '#a8b2d1', fontSize: '0.8rem', display: 'block' }}>مکتب فکری</span>
+    </div>
+    <div>
+      <span style={{ color: '#64ffda', fontSize: '1.5rem', fontWeight: 900 }}>۲۱</span>
+      <span style={{ color: '#a8b2d1', fontSize: '0.8rem', display: 'block' }}>منبع</span>
+    </div>
+    <div>
+      <span style={{ color: '#e94560', fontSize: '1.5rem', fontWeight: 900 }}>۱۸</span>
+      <span style={{ color: '#a8b2d1', fontSize: '0.8rem', display: 'block' }}>پانوشت</span>
+    </div>
+  </div>
+</div>
