@@ -1,54 +1,52 @@
 ---
-title: در چیستی حق!
-description: بررسی جامع و تطبیقی مفهوم حق از منظر فلسفه، حقوق و الهیات اسلامی و غربی
-lang: fa
-publishDate: '2026-03-12'
-author: مهدی سالم
-sourceType: LaTex
-interface: philosophy-of-politics
-subtitle: تحلیل تطبیقی در فلسفه، حقوق و الهیات اسلامی و غربی
-date: '2026-03-12'
+title: "در چیستی حق!"
+description: "بررسی جامع و تطبیقی مفهوم حق از منظر فلسفه، حقوق و الهیات اسلامی و غربی"
+lang: "fa"
+publishDate: "2026-03-12"
+author: "مهدی سالم"
+sourceType: "LaTex"
+interface: "philosophy-of-politics"
+subtitle: "تحلیل تطبیقی در فلسفه، حقوق و الهیات اسلامی و غربی"
+date: "2026-03-12"
 keywords:
-  - حق
-  - حقوق بشر
-  - فلسفه حقوق
-  - حقوق طبیعی
-  - پوزیتیویسم حقوقی
-  - مقاصد شریعه
-  - عدالت
-  - آزادی
-  - توسعه
-coverImage: /images/articles/covers/legitimacy-power.svg
+  - "حق"
+  - "حقوق بشر"
+  - "فلسفه حقوق"
+  - "حقوق طبیعی"
+  - "پوزیتیویسم حقوقی"
+  - "مقاصد شریعه"
+  - "عدالت"
+  - "آزادی"
+  - "توسعه"
+coverImage: "/images/articles/covers/legitimacy-power.svg"
 hasSlide: true
-imageDisplay: side
-cardImage: show
+imageDisplay: "side"
+cardImage: "show"
 slideArray:
-  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_01.svg
-  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_02.svg
-  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_03.svg
-  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_04.svg
-  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_05.svg
-  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_06.svg
-  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_07.svg
-  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_08.svg
-  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_09.svg
-  - /images/articles/legitimecy-of-power/Slides/Coercion_slide_10.svg
-aiRole: ai-assisted
-category: politics
+  - "/images/articles/legitimecy-of-power/Slides/Coercion_slide_01.svg"
+  - "/images/articles/legitimecy-of-power/Slides/Coercion_slide_02.svg"
+  - "/images/articles/legitimecy-of-power/Slides/Coercion_slide_03.svg"
+  - "/images/articles/legitimecy-of-power/Slides/Coercion_slide_04.svg"
+  - "/images/articles/legitimecy-of-power/Slides/Coercion_slide_05.svg"
+  - "/images/articles/legitimecy-of-power/Slides/Coercion_slide_06.svg"
+  - "/images/articles/legitimecy-of-power/Slides/Coercion_slide_07.svg"
+  - "/images/articles/legitimecy-of-power/Slides/Coercion_slide_08.svg"
+  - "/images/articles/legitimecy-of-power/Slides/Coercion_slide_09.svg"
+  - "/images/articles/legitimecy-of-power/Slides/Coercion_slide_10.svg"
+aiRole: "ai-assisted"
+category: "politics"
 tags:
-  - حق
-  - فلسفه حقوق
-  - سیاست
-  - واقع‌گرایی
-  - اعتبارگرایی
-  - غیر واقع‌گرایی
+  - "حق"
+  - "فلسفه حقوق"
+  - "سیاست"
+  - "واقع‌گرایی"
+  - "اعتبارگرایی"
+  - "غیر واقع‌گرایی"
 readingTime: 25
-difficulty: متوسط
-pdfUrl: /documents/articles/right.pdf
+difficulty: "متوسط"
+pdfUrl: "/documents/articles/right.pdf"
 showPdfViewer: true
 showInContents: false
-draft: true
-hidden: true
 ---
 
 
