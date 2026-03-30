@@ -11,7 +11,6 @@ authorTitle: "پژوهشگر مستقل فلسفه تحلیلی و سیاست‌
 email: "mahhdy@gmail.com"
 website: "mahdisalem.com"
 location: "ریچموند هیل"
-draft: false
 hidden: true
 category: "سیاسی"
 imageDisplay: full
