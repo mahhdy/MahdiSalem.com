@@ -1,0 +1,2348 @@
+\documentclass[a4paper,12pt]{article}
+
+% =========================================================
+% ENGINE NOTE:
+% Compile with XeLaTeX
+% =========================================================
+
+% ---------------------------------------------------------
+% Page layout and core tools
+% ---------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{colortbl}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+
+% ---------------------------------------------------------
+% Colors
+% ---------------------------------------------------------
+\usepackage[dvipsnames,table]{xcolor}
+
+% ---------------------------------------------------------
+% TikZ / PGFPlots
+% ---------------------------------------------------------
+\usepackage{tikz}
+\usetikzlibrary{
+  arrows.meta,
+  positioning,
+  calc,
+  backgrounds,
+  fit,
+  mindmap,
+  shadows,
+  trees,
+  shapes.geometric,
+  decorations.pathreplacing
+}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% ---------------------------------------------------------
+% Boxes
+% ---------------------------------------------------------
+\usepackage[most]{tcolorbox}
+
+% ---------------------------------------------------------
+% Section/title styling
+% ---------------------------------------------------------
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+
+% ---------------------------------------------------------
+% Hyperlinks
+% hyperref should be loaded late
+% ---------------------------------------------------------
+\usepackage[
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=cyan,
+  citecolor=magenta
+]{hyperref}
+
+% ---------------------------------------------------------
+% Icons
+% If fontawesome5 is unavailable on your system, comment it.
+% ---------------------------------------------------------
+\usepackage{fontawesome5}
+
+% ---------------------------------------------------------
+% XeLaTeX font engine packages
+% fontspec before xepersian
+% ---------------------------------------------------------
+\usepackage{fontspec}
+
+% ---------------------------------------------------------
+% Persian support
+% xepersian should be loaded as one of the last packages
+% ---------------------------------------------------------
+\usepackage{xepersian}
+
+% =========================================================
+% FONTS
+% Replace these with fonts installed on your system
+% =========================================================
+\settextfont{Parsi Matn}%{IRNazanin}
+\setlatintextfont{Linux Libertine O}
+
+% Optional:
+% \setdigitfont{IRNazanin}
+
+% =========================================================
+% COLORS
+% =========================================================
+\definecolor{darkbg}{HTML}{FFFFFF} % White background
+\definecolor{midbg}{HTML}{F8F9FA} % Light gray-blue
+\definecolor{lightbg}{HTML}{F1F2F6} % Very light blue
+\definecolor{cardbg}{HTML}{F8FBFF} % Soft card light blue
+\definecolor{deepcard}{HTML}{F1F5F9} % Light gray blue card
+
+\definecolor{greenPrimary}{HTML}{00B894}
+\definecolor{greenLight}{HTML}{55EFC4}
+\definecolor{greenDark}{HTML}{0D2818}
+
+\definecolor{bluePrimary}{HTML}{0984E3}
+\definecolor{blueLight}{HTML}{74B9FF}
+
+\definecolor{purplePrimary}{HTML}{6C5CE7}
+\definecolor{purpleLight}{HTML}{A29BFE}
+
+\definecolor{yellowPrimary}{HTML}{FDCB6E}
+\definecolor{yellowDark}{HTML}{D4A017}
+
+\definecolor{orangePrimary}{HTML}{E17055}
+\definecolor{orangeLight}{HTML}{FAB1A0}
+
+\definecolor{redPrimary}{HTML}{D63031}
+\definecolor{redLight}{HTML}{FF7675}
+\definecolor{redDark}{HTML}{C0392B}
+
+\definecolor{pinkPrimary}{HTML}{E056A0}
+\definecolor{pinkLight}{HTML}{F8A5C2}
+
+\definecolor{tealPrimary}{HTML}{00B4D8}
+\definecolor{legalBlue}{HTML}{3742FA}
+\definecolor{econGreen}{HTML}{27AE60}
+
+\definecolor{textLight}{HTML}{2D3436} % Dark text for light bg
+\definecolor{textMuted}{HTML}{636E72} % Grayed out text
+\definecolor{textDark}{HTML}{2D3436} % Keep dark text dark
+
+% =========================================================
+% PAGE STYLE
+% =========================================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textcolor{purplePrimary}{دانشنامه جامع روش‌های مبارزاتی}}
+\fancyhead[R]{\small\textcolor{textMuted}{\rightmark}}
+\fancyfoot[C]{\textcolor{purplePrimary}{\thepage}}
+\renewcommand{\headrulewidth}{0.5pt}
+
+% safer headrule coloring:
+\makeatletter
+\renewcommand{\headrule}{%
+  \hbox to\headwidth{\color{purplePrimary}\leaders\hrule height \headrulewidth\hfill}
+}
+\makeatother
+
+% =========================================================
+% SECTION FORMATTING
+% =========================================================
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{purplePrimary}}
+  {\thesection}{0.8em}{}
+  [\vspace{0.3em}\color{purplePrimary}\titlerule]
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{bluePrimary}}
+  {\thesubsection}{0.8em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\color{greenPrimary}}
+  {\thesubsubsection}{0.8em}{}
+
+% =========================================================
+% TABLE OF CONTENTS STYLE
+% =========================================================
+\renewcommand{\cftsecleader}{\textcolor{purplePrimary}{\cftdotfill{\cftdotsep}}}
+\renewcommand{\cftsecfont}{\color{purpleLight}\bfseries}
+\renewcommand{\cftsecpagefont}{\color{purpleLight}}
+\renewcommand{\cftsubsecfont}{\color{blueLight}}
+\renewcommand{\cftsubsecpagefont}{\color{blueLight}}
+
+% =========================================================
+% ENUMERATION SPACING
+% =========================================================
+\setlist[itemize]{topsep=4pt,itemsep=3pt}
+\setlist[enumerate]{topsep=4pt,itemsep=3pt}
+
+% =========================================================
+% BOX STYLES
+% =========================================================
+\newtcolorbox{herobox}{
+  enhanced,
+  breakable,
+  colback=midbg,
+  colframe=purplePrimary,
+  coltitle=purplePrimary,
+  fonttitle=\bfseries\Large,
+  boxrule=1.5pt,
+  arc=4mm,
+  left=4mm,
+  right=4mm,
+  top=2mm,
+  bottom=2mm
+}
+
+\newtcolorbox{sectionbox}[2][]{
+  enhanced,
+  breakable,
+  colback=white,
+  colframe=#2,
+  coltitle=#2,
+  fonttitle=\bfseries\large,
+  boxrule=1pt,
+  arc=3mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm,
+  borderline west={2mm}{0mm}{#2},
+  #1
+}
+
+\newtcolorbox{methodcard}[2][]{
+  enhanced,
+  breakable,
+  colback=midbg,
+  colframe=#2,
+  boxrule=0.8pt,
+  arc=2.5mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm,
+  #1
+}
+
+\newtcolorbox{theorycard}[2][]{
+  enhanced,
+  breakable,
+  colback=white,
+  colframe=#2,
+  boxrule=1.2pt,
+  arc=2.5mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm,
+  #1
+}
+
+\newtcolorbox{notebox}[1][yellowPrimary]{
+  enhanced,
+  breakable,
+  colback=darkbg,
+  colframe=#1,
+  boxrule=1pt,
+  arc=2mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm,
+  borderline west={2mm}{0mm}{#1}
+}
+
+\newtcolorbox{summarybox}{
+  enhanced,
+  breakable,
+  colback=greenPrimary!5!white,
+  colframe=greenPrimary,
+  coltitle=greenPrimary!60!black,
+  fonttitle=\bfseries,
+  boxrule=1.2pt,
+  arc=3mm,
+  left=3mm,
+  right=3mm,
+  top=2mm,
+  bottom=2mm
+}
+
+% =========================================================
+% CUSTOM COMMANDS
+% =========================================================
+\newcommand{\success}[1]{\textcolor{greenPrimary}{\faCheckCircle\ \textbf{موفق:}} #1}
+\newcommand{\failure}[1]{\textcolor{redPrimary}{\faTimesCircle\ \textbf{ناموفق:}} #1}
+\newcommand{\partialresult}[1]{\textcolor{yellowPrimary}{\faExclamationTriangle\ \textbf{نسبی:}} #1}
+\newcommand{\debate}[1]{\textcolor{orangePrimary}{\faQuestionCircle\ \textbf{بحث‌برانگیز:}} #1}
+\newcommand{\methodnum}[1]{\textcolor{purpleLight}{\textbf{#1.}}}
+
+% =========================================================
+% OPTIONAL SAFETY TWEAKS
+% =========================================================
+\hypersetup{
+  pdftitle={دانشنامه جامع روش‌های مبارزاتی},
+  pdfauthor={},
+  pdfsubject={تحلیل روش‌های مبارزاتی},
+  pdfkeywords={مقاومت, خشونت‌پرهیزی, مبارزه, نافرمانی مدنی}
+}
+
+% ═══════════════════════════════════════════
+% DOCUMENT START
+% ═══════════════════════════════════════════
+\begin{document}
+
+% ═══════════════════════════════════════════
+% TITLE PAGE
+% ═══════════════════════════════════════════
+\begin{titlepage}
+\begin{tikzpicture}[remember picture, overlay]
+  % Background
+  \fill[darkbg] (current page.south west) rectangle (current page.north east);
+  
+  % Decorative circles
+  \foreach \x/\y/\r/\c in {
+    3/25/4/purplePrimary,
+    18/22/3/bluePrimary,
+    15/5/3.5/greenPrimary,
+    5/8/2.5/pinkPrimary,
+    20/15/2/yellowPrimary%
+  }{
+    \fill[\c, opacity=0.08] (\x,\y) circle (\r);
+    \draw[\c, opacity=0.3] (\x,\y) circle (\r);
+  }
+  
+  % Border
+  \draw[purplePrimary, line width=2pt, rounded corners=15pt] 
+    ([shift={(1cm,1cm)}]current page.south west) rectangle 
+    ([shift={(-1cm,-1cm)}]current page.north east);
+  
+  % Title block
+  \node[anchor=center] at (current page.center) {
+    \begin{minipage}{14cm}
+      \centering
+      
+      {\fontsize{18}{22}\selectfont\textcolor{purpleLight}{\faLandmark}}
+      
+      \vspace{0.8cm}
+      
+      {\fontsize{30}{36}\selectfont\bfseries\textcolor{purplePrimary}{\rl{دانشنامه جامع روش‌های مبارزاتی}}}
+      
+      \vspace{0.5cm}
+      
+      {\fontsize{14}{18}\selectfont\textcolor{textDark}{\rl{از نافرمانی مدنی تا انقلاب مسلحانه}}}
+      
+      {\fontsize{12}{16}\selectfont\textcolor{textMuted}{\rl{تحلیل طیف کامل شیوه‌های مقاومت}}}
+      
+      \vspace{1.2cm}
+      
+      % Category badges
+      \begin{tikzpicture}
+        \node[fill=greenPrimary!10!white, draw=greenPrimary, rounded corners=12pt, inner sep=8pt, text=greenPrimary!60!black, font=\small\bfseries] at (0,0) {\faDove\ \rl{خشونت‌پرهیز}};
+        \node[fill=yellowPrimary!10!white, draw=yellowDark, rounded corners=12pt, inner sep=8pt, text=yellowDark!80!black, font=\small\bfseries] at (4.5,0) {\faBolt\ \rl{خاکستری / ترکیبی}};
+        \node[fill=redPrimary!10!white, draw=redPrimary, rounded corners=12pt, inner sep=8pt, text=white, font=\small\bfseries] at (9.5,0) {\faFire\ \rl{خشونت‌آمیز}};
+      \end{tikzpicture}
+      
+      \vspace{1.5cm}
+      
+      {\fontsize{10}{14}\selectfont\textcolor{textMuted}{\rl{
+        ۶۸+ روش مبارزاتی $\bullet$ ۷ دسته اصلی $\bullet$ ۶ چارچوب نظری\\[4pt]
+        بر اساس آثار شارپ، چنووث، گاندی، گرامشی، فانون، مائو، فریره و اسکات
+      }}}
+      
+    \end{minipage}
+  };
+  
+\end{tikzpicture}
+\end{titlepage}
+
+% ═══════════════════════════════════════════
+% TABLE OF CONTENTS
+% ═══════════════════════════════════════════
+\newpage
+\pagecolor{darkbg}
+\color{textLight}
+
+\renewcommand{\cftsecleader}{\textcolor{purplePrimary}{\cftdotfill{\cftdotsep}}}
+\renewcommand{\cftsecfont}{\color{purplePrimary}\bfseries}
+\renewcommand{\cftsecpagefont}{\color{purplePrimary}}
+\renewcommand{\cftsubsecfont}{\color{bluePrimary}}
+\renewcommand{\cftsubsecpagefont}{\color{bluePrimary}}
+
+\tableofcontents
+\newpage
+
+% ═══════════════════════════════════════════
+% SPECTRUM DIAGRAM
+% ═══════════════════════════════════════════
+\section{طیف کامل روش‌های مبارزاتی}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  scale=0.95,
+  transform shape,
+  every node/.style={font=\small}
+]
+
+% Main gradient bar
+\shade[left color=greenPrimary, right color=redPrimary, middle color=yellowPrimary] 
+  (0,0) rectangle (16,0.6);
+
+% Category markers and labels
+\foreach \x/\label/\col/\sublabels in {
+  1.6/{\rl{خشونت‌پرهیز محض}}/greenPrimary/{\rl{بیانیه و طومار},\rl{تظاهرات},\rl{اعتصاب غذا}},
+  4.5/{\rl{خشونت‌گریز فعال}}/bluePrimary/{\rl{نافرمانی مدنی},\rl{اعتصاب سراسری},\rl{مداخله بدون خشونت}},
+  7.5/{\rl{ترکیبی / خاکستری}}/yellowDark/{\rl{جنگ سایبری},\rl{خرابکاری اقتصادی},\rl{دفاع غیرنظامی}},
+  10.8/{\rl{خشونت محدود}}/orangePrimary/{\rl{شورش محدود},\rl{چریکی شهری},\rl{دفاع مسلحانه}},
+  14/{\rl{خشونت تمام‌عیار}}/redPrimary/{\rl{جنگ چریکی},\rl{انقلاب مسلحانه},\rl{جنگ متعارف}}
+}{
+  % Marker dot
+  \fill[\col] (\x,0.3) circle (0.15);
+  
+  % Category label
+  \node[\col, font=\footnotesize\bfseries, above] at (\x,0.8) {\label};
+  
+  % Vertical line down
+  \draw[\col, thick] (\x,-0.1) -- (\x,-0.5);
+}
+
+% Sub-labels (manually placed for clarity)
+\node[textMuted, font=\scriptsize, below] at (1.6,-0.6) {\rl{بیانیه و طومار}};
+\node[textMuted, font=\scriptsize, below] at (1.6,-1.0) {\rl{تظاهرات}};
+\node[textMuted, font=\scriptsize, below] at (1.6,-1.4) {\rl{اعتصاب غذا}};
+
+\node[textMuted, font=\scriptsize, below] at (4.5,-0.6) {\rl{نافرمانی مدنی}};
+\node[textMuted, font=\scriptsize, below] at (4.5,-1.0) {\rl{اعتصاب سراسری}};
+\node[textMuted, font=\scriptsize, below] at (4.5,-1.4) {\rl{مداخله بدون خشونت}};
+
+\node[textMuted, font=\scriptsize, below] at (7.5,-0.6) {\rl{جنگ سایبری}};
+\node[textMuted, font=\scriptsize, below] at (7.5,-1.0) {\rl{خرابکاری اقتصادی}};
+\node[textMuted, font=\scriptsize, below] at (7.5,-1.4) {\rl{دفاع غیرنظامی فعال}};
+
+\node[textMuted, font=\scriptsize, below] at (10.8,-0.6) {\rl{شورش محدود}};
+\node[textMuted, font=\scriptsize, below] at (10.8,-1.0) {\rl{چریکی شهری}};
+\node[textMuted, font=\scriptsize, below] at (10.8,-1.4) {\rl{دفاع مسلحانه}};
+
+\node[textMuted, font=\scriptsize, below] at (14,-0.6) {\rl{جنگ چریکی}};
+\node[textMuted, font=\scriptsize, below] at (14,-1.0) {\rl{انقلاب مسلحانه}};
+\node[textMuted, font=\scriptsize, below] at (14,-1.4) {\rl{جنگ متعارف}};
+
+% Direction arrow
+\draw[-{Stealth[length=8pt]}, textMuted, thick] (1,-2.2) -- (15,-2.2);
+\node[textMuted, font=\scriptsize, left] at (1,-2.2) {\faDove\ کمترین خشونت};
+\node[textMuted, font=\scriptsize, right] at (15,-2.2) {بیشترین خشونت \faFire};
+
+% Framework references box
+\draw[cardbg, fill=cardbg, rounded corners=5pt] (0.5,-3) rectangle (15.5,-4.2);
+\node[purpleLight, font=\footnotesize\bfseries] at (8,-3.3) {\faBook\ \rl{چارچوب‌های نظری کلیدی}};
+\node[textMuted, font=\scriptsize] at (2.5,-3.8) {\rl{جین شارپ — ۱۹۸ روش}};
+\node[textMuted, font=\scriptsize] at (5.8,-3.8) {\rl{گاندی — ساتیاگراها}};
+\node[textMuted, font=\scriptsize] at (8.8,-3.8) {\rl{چنووث — مقاومت مدنی}};
+\node[textMuted, font=\scriptsize] at (11.8,-3.8) {\rl{مائو — جنگ خلق}};
+\node[textMuted, font=\scriptsize] at (14.2,-3.8) {\rl{کلازویتس}};
+
+\end{tikzpicture}
+\caption{طیف کامل روش‌های مبارزاتی — از خشونت‌پرهیزی محض تا جنگ تمام‌عیار}
+\end{figure}
+
+
+% ═══════════════════════════════════════════════════
+% PART ONE: NONVIOLENT METHODS
+% ═══════════════════════════════════════════════════
+
+\section{\textcolor{greenPrimary}{\faDove} بخش اول: روش‌های خشونت‌پرهیز}
+
+\begin{sectionbox}{greenPrimary}
+بر اساس طبقه‌بندی \textbf{\lr{Gene Sharp}} در کتاب \lr{«The Politics of Nonviolent Action»} — \textbf{۱۹۸ روش مشخص} در سه دسته اصلی. خشونت‌پرهیزی به معنای انفعال نیست، بلکه بهره‌گیری هوشمندانه از قدرت بدون توسل به زور فیزیکی است.
+\end{sectionbox}
+
+
+\subsection{\textcolor{greenPrimary}{\faCircle[regular]} ۱-الف) اعتراض و متقاعدسازی (\lr{Protest \& Persuasion})}
+
+اقداماتی نمادین برای ابراز مخالفت و جلب توجه افکار عمومی — بدون ایجاد اختلال مستقیم در نظام.
+
+\begin{methodcard}{greenPrimary}
+\subsubsection{\methodnum{1} بیانیه‌های رسمی}
+\textbf{توضیح:} انتشار نامه‌های سرگشاده، بیانیه‌ها، طومارها و درخواست‌نامه‌ها. یکی از کم‌هزینه‌ترین اما مؤثرترین ابزارهای ابراز مخالفت جمعی.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{بیانیه ۷۷ منشور (چکسلواکی ۱۹۷۷) — زمینه‌ساز انقلاب مخملی ۱۲ سال بعد}
+  \item \success{نامه از زندان بیرمنگام — مارتین لوتر کینگ (۱۹۶۳) — یکی از مهم‌ترین متون حقوق مدنی}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{greenPrimary}
+\subsubsection{\methodnum{2} تظاهرات و راهپیمایی}
+\textbf{توضیح:} حرکت جمعی در خیابان‌ها با شعار و پلاکارد. متداول‌ترین و شناخته‌شده‌ترین شیوه اعتراض.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{راهپیمایی نمک گاندی (۱۹۳۰) — ۳۸۸ کیلومتر پیاده‌روی تا ساحل}
+  \item \success{راهپیمایی واشنگتن (۱۹۶۳) — ۲۵۰٬۰۰۰ نفر — «من رؤیایی دارم»}
+\end{itemize}
+\begin{itemize}[label=\textcolor{redPrimary}{\faTimesCircle}]
+  \item \failure{تظاهرات میدان تیان‌آن‌من (۱۹۸۹) — سرکوب خونین توسط ارتش چین}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{greenPrimary}
+\subsubsection{\methodnum{3} تحصن و اعتصاب غذا}
+\textbf{توضیح:} ماندن در یک مکان یا خودداری از خوردن غذا برای اعتراض. قدرت اخلاقی و تأثیر رسانه‌ای بالا.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{اعتصاب غذای گاندی — بارها مؤثر در تغییر سیاست‌ها و توقف خشونت فرقه‌ای}
+\end{itemize}
+\begin{itemize}[label=\textcolor{redPrimary}{\faTimesCircle}]
+  \item \failure{اعتصاب غذای زندانیان IRA ا(۱۹۸۱) — ۱۰ نفر جان باختند بدون امتیاز فوری، اما تأثیر بلندمدت بر افکار عمومی}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{greenPrimary}
+\subsubsection{\methodnum{4} هنر اعتراضی و نمادین}
+\textbf{توضیح:} استفاده از موسیقی، نقاشی دیواری، تئاتر خیابانی، شعر و طنز سیاسی.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{آهنگ‌های ضد آپارتاید در آفریقای جنوبی — نقش کلیدی در انسجام جنبش}
+  \item \success{سرود «ال پوئبلو» (شیلی) — نماد مقاومت علیه پینوشه}
+  \item \success{سرودهای انقلابی ایران (۱۳۵۷) — «ای ایران»}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{greenPrimary}
+\subsubsection{\methodnum{5} نمادپردازی عمومی}
+\textbf{توضیح:} پوشیدن رنگ/نماد خاص، روشن کردن شمع، سکوت جمعی. هزینه پایین، اثر انسجام‌بخش بالا.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{انقلاب نارنجی اوکراین (۲۰۰۴) — رنگ نارنجی نماد اعتراض به تقلب}
+  \item \success{چتر زرد هنگ‌کنگ (۲۰۱۴)}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{greenPrimary}
+\subsubsection{\methodnum{6} عبادت و مراسم اعتراضی}
+\textbf{توضیح:} برگزاری نماز، دعا یا مراسم مذهبی به شکل اعتراضی. ترکیب قدرت معنوی با اعتراض سیاسی.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{نمازهای جمعه در کلیسای نیکلای (لایپزیگ ۱۹۸۹) — زمینه‌ساز سقوط دیوار برلین}
+  \item \success{تشییع جنازه‌های سیاسی ایران (۱۳۵۷) — چرخه اربعین باعث تداوم جنبش شد}
+\end{itemize}
+\end{methodcard}
+
+
+% ───────────────────────────────────────────
+\subsection{\textcolor{bluePrimary}{\faCircle[regular]} ۱-ب) عدم‌همکاری (\lr{Non-cooperation})}
+
+خودداری سیستماتیک از همکاری با نظام حاکم — مؤثرترین ابزار قدرت خشونت‌پرهیز. این دسته مستقیماً «ستون‌های قدرت» را هدف قرار می‌دهد.
+
+\subsubsection*{عدم‌همکاری اجتماعی}
+
+\begin{methodcard}{bluePrimary}
+\subsubsection{\methodnum{7} تحریم اجتماعی (\lr{Social Boycott})}
+\textbf{توضیح:} قطع روابط اجتماعی با عوامل حکومت، طردکردن، عدم سلام و کلام.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{تحریم اجتماعی همکاران رژیم آپارتاید در جوامع سیاه‌پوست}
+  \item \success{تحریم اجتماعی لویالیست‌ها در انقلاب آمریکا}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{bluePrimary}
+\subsubsection{\methodnum{8} عدم حضور و ترک (\lr{Walkout / Stay-away})}
+\textbf{توضیح:} ترک جلسات، مدارس، دانشگاه‌ها و اماکن عمومی.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{اعتصاب دانشجویی ۱۹۶۸ فرانسه — زمینه‌ساز بحران سیاسی بزرگ}
+  \item \success{ترک مدارس توسط دانش‌آموزان سووتو (آفریقای جنوبی ۱۹۷۶)}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{bluePrimary}
+\subsubsection{\methodnum{9} سکوت اجتماعی (\lr{Silence Strike})}
+\textbf{توضیح:} خاموشی جمعی و پرهیز از صحبت در مکان‌ها و زمان‌های خاص.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{«سکوت عمومی» در برخی شهرهای لهستان در دوره حکومت نظامی}
+\end{itemize}
+\end{methodcard}
+
+\subsubsection*{عدم‌همکاری اقتصادی}
+
+\begin{methodcard}{bluePrimary}
+\subsubsection{\methodnum{10} تحریم اقتصادی و بایکوت}
+\textbf{توضیح:} خودداری از خرید کالاهای خاص، بایکوت برندها و شرکت‌های وابسته به حکومت.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{بایکوت اتوبوس مونتگمری (۱۹۵۵-۱۹۵۶) — ۳۸۱ روز — پیروزی تاریخی}
+  \item \success{تحریم کالاهای انگلیسی توسط گاندی (جنبش سوادشی)}
+  \item \success{جنبش BDS علیه اسرائیل (از ۲۰۰۵)}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{bluePrimary}
+\subsubsection{\methodnum{11} اعتصاب کارگری و صنفی}
+\textbf{توضیح:} توقف کار در کارخانه‌ها، ادارات و بخش‌های تولیدی. یکی از قدرتمندترین ابزارهای عدم‌همکاری.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{اعتصابات لخ والسا و همبستگی (لهستان ۱۹۸۰) — آغاز سقوط کمونیسم اروپای شرقی}
+  \item \success{اعتصاب کارگران نفت (ایران ۱۳۵۷) — کمرشکن رژیم پهلوی}
+  \item \success{اعتصاب عمومی سودان (۲۰۱۹)}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{bluePrimary}
+\subsubsection{\methodnum{12} اعتصاب بازار و تعطیلی مغازه‌ها}
+\textbf{توضیح:} بستن مغازه‌ها و بازارها به نشانه اعتراض. در جوامع سنتی بسیار مؤثر.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{بسته شدن بازار تهران (۱۳۵۷) — نقش کلیدی بازاریان در سرنگونی}
+  \item \success{هارتال‌های هند علیه بریتانیا}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{bluePrimary}
+\subsubsection{\methodnum{13} خروج سرمایه و تحریم مالی}
+\textbf{توضیح:} خارج کردن سپرده‌ها از بانک‌ها، عدم پرداخت مالیات، فرار سرمایه.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{کمپین عدم پرداخت مالیات گاندی}
+  \item \success{حرکت خروج سرمایه (Divestment) از آفریقای جنوبی (دهه ۱۹۸۰)}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{bluePrimary}
+\subsubsection{\methodnum{14} اعتصاب عمومی / سراسری}
+\textbf{توضیح:} توقف همزمان فعالیت‌های اقتصادی در سطح ملی. «سلاح اتمی» مبارزه خشونت‌پرهیز.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{اعتصاب سراسری سودان (ژوئن ۲۰۱۹) — مؤثر در سقوط البشیر}
+\end{itemize}
+\begin{itemize}[label=\textcolor{yellowPrimary}{\faExclamationTriangle}]
+  \item \partialresult{اعتصاب عمومی میانمار (۲۰۲۱) — اثر کوتاه‌مدت، کودتا ادامه یافت}
+\end{itemize}
+\end{methodcard}
+
+\subsubsection*{عدم‌همکاری سیاسی}
+
+\begin{methodcard}{bluePrimary}
+\subsubsection{\methodnum{15} تحریم انتخابات}
+\textbf{توضیح:} عدم شرکت در انتخابات برای سلب مشروعیت از حکومت.
+
+\begin{itemize}[label=\textcolor{yellowPrimary}{\faExclamationTriangle}]
+  \item \debate{اثربخشی آن شدیداً به شرایط بستگی دارد — گاهی حکومت‌ها از آن به نفع خود استفاده می‌کنند و گاهی مشروعیت را زیر سؤال می‌برد.}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{bluePrimary}
+\subsubsection{\methodnum{16} نافرمانی مدنی (\lr{Civil Disobedience})}
+\textbf{توضیح:} نقض آگاهانه و علنی قوانین ناعادلانه و پذیرش عواقب آن. مفهومی که هنری دیوید ثورو آن را نظریه‌پردازی کرد.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{نشستن رزا پارکس در بخش سفیدپوستان اتوبوس (۱۹۵۵)}
+  \item \success{نشست‌های اعتراضی (Sit-ins) جنبش حقوق مدنی آمریکا}
+  \item \success{حرکت نمک گاندی — نقض قانون انحصار نمک بریتانیا}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{bluePrimary}
+\subsubsection{\methodnum{17} استعفای دسته‌جمعی و عدم همکاری بوروکراتیک}
+\textbf{توضیح:} کارمندان دولت از اجرای دستورات خودداری کرده یا دسته‌جمعی استعفا می‌دهند.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{استعفای مقامات در انقلاب مخملی چکسلواکی}
+  \item \success{عدم همکاری نیروهای پلیس فیلیپین با مارکوس (۱۹۸۶)}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{bluePrimary}
+\subsubsection{\methodnum{18} ایجاد حکومت موازی / ساختارهای جایگزین}
+\textbf{توضیح:} ایجاد نهادهای مستقل از دولت: دادگاه، آموزش، خدمات عمومی.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{«جامعه موازی» واتسلاو هاول در چکسلواکی}
+  \item \success{کنگره ملی آفریقا (ANC) — ساختارهای موازی در دوره آپارتاید}
+\end{itemize}
+\end{methodcard}
+
+
+% ───────────────────────────────────────────
+\subsection{\textcolor{purplePrimary}{\faCircle[regular]} ۱-ج) مداخله خشونت‌پرهیز (\lr{Nonviolent Intervention})}
+
+مستقیم‌ترین شکل اقدام خشونت‌پرهیز — ایجاد اختلال فعال در عملکرد نظام بدون توسل به خشونت.
+
+\begin{methodcard}{purplePrimary}
+\subsubsection{\methodnum{19} اشغال غیرخشونت‌آمیز (\lr{Sit-in / Occupation})}
+\textbf{توضیح:} اشغال فیزیکی مکان‌ها (پارک‌ها، میادین، ساختمان‌ها).
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{اشغال میدان تحریر قاهره (۲۰۱۱) — سقوط مبارک در ۱۸ روز}
+  \item \success{Sit-ins در رستوران‌های تفکیک نژادی (آمریکا ۱۹۶۰)}
+\end{itemize}
+\begin{itemize}[label=\textcolor{yellowPrimary}{\faExclamationTriangle}]
+  \item \partialresult{جنبش اشغال وال‌استریت (۲۰۱۱) — تأثیر فرهنگی بدون تغییر ساختاری فوری}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{purplePrimary}
+\subsubsection{\methodnum{20} مسدودسازی و بلوکه (\lr{Blockade})}
+\textbf{توضیح:} مسدود کردن جاده‌ها، خیابان‌ها و ورودی ساختمان‌ها با بدن.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{مسدودسازی پل ادموند پتوس (سلما، ۱۹۶۵)}
+  \item \success{ایستادن جلوی تانک — «مرد تانک» تیان‌آن‌من (نماد جهانی مقاومت)}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{purplePrimary}
+\subsubsection{\methodnum{21} کاروان‌های آزادی (\lr{Freedom Rides})}
+\textbf{توضیح:} سفر گروهی به مناطق ممنوعه برای شکستن تفکیک و قوانین ناعادلانه.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{کاروان‌های آزادی آمریکا (۱۹۶۱) — شکستن تفکیک نژادی در اتوبوس‌های بین‌شهری}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{purplePrimary}
+\subsubsection{\methodnum{22} زنجیره انسانی}
+\textbf{توضیح:} تشکیل زنجیره‌ای از انسان‌ها در مسیرهای طولانی.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{راه بالتیک (۱۹۸۹) — ۲ میلیون نفر، ۶۰۰ کیلومتر، استقلال سه کشور بالتیک}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{purplePrimary}
+\subsubsection{\methodnum{23} اقدام مستقیم اقتصادی}
+\textbf{توضیح:} تأسیس تعاونی‌ها، بازارهای جایگزین، ارزهای محلی.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{برنامه سازنده گاندی (چرخ ریسندگی / خادی)}
+  \item \success{تعاونی‌های موندراگون (باسک)}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{purplePrimary}
+\subsubsection{\methodnum{24} پناه‌دهی و حفاظت (\lr{Sanctuary})}
+\textbf{توضیح:} پناه دادن به افراد تحت تعقیب در خانه‌ها، کلیساها، سفارت‌ها.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{پناه‌دهی یهودیان توسط شهروندان دانمارکی (جنگ جهانی دوم) — نجات ۷۰۰۰+ نفر}
+  \item \success{جنبش پناهگاه (Sanctuary Movement) آمریکا دهه ۱۹۸۰}
+\end{itemize}
+\end{methodcard}
+
+
+% ───────────────────────────────────────────
+\subsection{\textcolor{purplePrimary}{\faCircle[regular]} ۱-د) برنامه سازنده (\lr{Constructive Program})}
+
+رویکرد گاندیایی — ساختن جایگزین به‌جای صرفاً مبارزه علیه وضع موجود.
+
+\begin{methodcard}{purplePrimary}
+\subsubsection{\methodnum{25} خودکفایی اقتصادی}
+\textbf{توضیح:} تولید محلی، کشاورزی جمعی، تعاونی‌سازی.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{جنبش خادی هند — ریسندگی به‌عنوان مقاومت و خودکفایی}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{purplePrimary}
+\subsubsection{\methodnum{26} آموزش مستقل و جایگزین}
+\textbf{توضیح:} تأسیس مدارس، دانشگاه‌ها و محافل علمی مستقل.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{«دانشگاه پرنده» لهستان در دوره حکومت نظامی}
+  \item \success{مدارس ملی دوره مشروطه ایران}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{purplePrimary}
+\subsubsection{\methodnum{27} رسانه‌های مستقل و زیرزمینی}
+\textbf{توضیح:} نشریات سامیزدات، رادیوهای آزاد، رسانه‌های دیجیتال.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{سامیزدات شوروی — انتشار ادبیات ممنوعه به‌صورت دست‌نویس}
+  \item \success{رادیو \lr{Solidarność} لهستان}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{purplePrimary}
+\subsubsection{\methodnum{28} سازماندهی اجتماعی و شبکه‌سازی}
+\textbf{توضیح:} ایجاد انجمن‌ها، اتحادیه‌ها، گروه‌های محلی خودگردان.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{انجمن‌های همبستگی (لهستان)}
+  \item \success{کمیته‌های مردمی فلسطین (انتفاضه اول)}
+\end{itemize}
+\end{methodcard}
+
+
+% ═══════════════════════════════════════════════════
+% PART TWO: DIGITAL METHODS
+% ═══════════════════════════════════════════════════
+
+\section{\textcolor{purpleLight}{\faGlobe} بخش دوم: روش‌های نوین و دیجیتال}
+
+\begin{sectionbox}{purplePrimary}
+ابزارهای قرن ۲۱ — از هکتیویسم تا مقاومت الگوریتمی. فناوری هم ابزار مبارزه است و هم ابزار سرکوب.
+\end{sectionbox}
+
+\begin{methodcard}{purplePrimary}
+\subsubsection{\methodnum{29} بسیج آنلاین و شبکه‌های اجتماعی}
+\textbf{توضیح:} استفاده از توییتر، تلگرام، اینستاگرام برای هماهنگی و انتشار اخبار.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{بهار عربی (۲۰۱۱) — فیسبوک و توییتر نقش کلیدی در هماهنگی}
+  \item \success{جنبش ژینا (۱۴۰۱) — شبکه‌های اجتماعی و VPN}
+\end{itemize}
+\begin{itemize}[label=\textcolor{redPrimary}{\faExclamationTriangle}]
+  \item \textcolor{redPrimary}{\faExclamationTriangle\ \textbf{ریسک:}} حکومت‌ها نیز از همین ابزارها برای ردیابی و شناسایی معترضان استفاده می‌کنند.
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{purplePrimary}
+\subsubsection{\methodnum{30} هکتیویسم (Hacktivism)}
+\textbf{توضیح:} حملات DDoS، هک سایت‌های دولتی، افشاگری دیجیتال.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{Anonymous علیه ISIS و حکومت‌های سرکوبگر}
+  \item \success{افشاگری‌های ویکی‌لیکس}
+\end{itemize}
+\begin{itemize}[label=\textcolor{yellowPrimary}{\faExclamationTriangle}]
+  \item \debate{مرز بین اعتراض دیجیتال و جرم سایبری مبهم و بحث‌برانگیز است.}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{purplePrimary}
+\subsubsection{\methodnum{31} مستندسازی و شهادت دیجیتال}
+\textbf{توضیح:} فیلم‌برداری از سرکوب و انتشار آن، ثبت جرایم حقوق بشری.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{ویدیوی مرگ جورج فلوید (۲۰۲۰) — جنبش BLM جهانی شد}
+  \item \success{ویدیوهای مهسا امینی و خشونت گشت ارشاد}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{purplePrimary}
+\subsubsection{\methodnum{32} جنگ اطلاعاتی و ضداطلاعات}
+\textbf{توضیح:} افشاگری، لو دادن فساد، نشت اسناد، تبلیغات ضد حکومتی.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{اسناد پاناما (۲۰۱۶) — افشای فساد مالی جهانی}
+  \item \success{اسنودن و افشای برنامه‌های جاسوسی NSA}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{purplePrimary}
+\subsubsection{\methodnum{33} VPN، رمزنگاری و شبکه‌های مش}
+\textbf{توضیح:} دور زدن سانسور و فیلترینگ، ارتباطات رمزنگاری‌شده.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{شبکه‌های Tor و Signal در کشورهای اقتدارگرا}
+  \item \success{اینترنت ماهواره‌ای استارلینک در اوکراین}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{purplePrimary}
+\subsubsection{\methodnum{34} کمپین‌های بین‌المللی آنلاین}
+\textbf{توضیح:} پتیشن‌ها، هشتگ‌های جهانی، فشار بر شرکت‌ها و دولت‌ها.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{\texttt{\#MahsaAmini} — یکی از بزرگ‌ترین هشتگ‌های تاریخ توییتر}
+  \item \success{Change.org و Avaaz در کمپین‌های متعدد}
+\end{itemize}
+\end{methodcard}
+
+
+% ═══════════════════════════════════════════════════
+% PART THREE: GRAY ZONE
+% ═══════════════════════════════════════════════════
+
+\section{\textcolor{yellowDark}{\faBolt} بخش سوم: روش‌های خاکستری و ترکیبی (\lr{Gray Zone})}
+
+\begin{sectionbox}{yellowDark}
+حوزه‌ای بین خشونت و عدم خشونت — مرزها مبهم و بحث‌برانگیز هستند. بسیاری از متفکران درباره دسته‌بندی این روش‌ها اختلاف نظر دارند.
+\end{sectionbox}
+
+\begin{methodcard}{yellowDark}
+\subsubsection{\methodnum{35} خرابکاری هدفمند (\lr{Sabotage})}
+\textbf{توضیح:} تخریب زیرساخت‌ها، تجهیزات و ماشین‌آلات حکومتی \textbf{بدون آسیب به انسان}.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{خرابکاری نلسون ماندلا و MK (بازوی نظامی ANC) — ابتدا فقط زیرساخت‌ها هدف بودند}
+\end{itemize}
+\begin{itemize}[label=\textcolor{yellowPrimary}{\faExclamationTriangle}]
+  \item \debate{آیا خرابکاری مادی خشونت محسوب می‌شود؟ گاندی: بله. شارپ: بستگی به زمینه دارد.}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{yellowDark}
+\subsubsection{\methodnum{36} کُندکاری و اخلال (\lr{Go-Slow / Work-to-Rule})}
+\textbf{توضیح:} انجام کار بسیار آهسته یا مطابق دقیق با \textit{تمام} قوانین تا سیستم فلج شود.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{کُندکاری کارگران ایتالیایی — «اعتصاب سفید»}
+  \item \success{Work-to-rule خلبانان و کنترلرهای هوایی}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{yellowDark}
+\subsubsection{\methodnum{37} دفاع فعال غیرمسلحانه}
+\textbf{توضیح:} مقاومت فیزیکی بدون سلاح: سنگربندی، ایجاد حصار انسانی.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{باریکادهای لیتوانی (۱۹۹۱) — دفاع از پارلمان مقابل تانک‌های شوروی}
+\end{itemize}
+\begin{itemize}[label=\textcolor{yellowPrimary}{\faExclamationTriangle}]
+  \item \debate{وقتی سنگربندی با پرتاب سنگ همراه شود، مرز خاکستری‌تر می‌شود.}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{yellowDark}
+\subsubsection{\methodnum{38} کمپین فشار اقتصادی بین‌المللی}
+\textbf{توضیح:} تحریم‌های هدفمند، جلوگیری از سرمایه‌گذاری، فشار بر شرکت‌ها.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{تحریم‌های ضد آپارتاید (دهه ۱۹۸۰)}
+\end{itemize}
+\begin{itemize}[label=\textcolor{yellowPrimary}{\faExclamationTriangle}]
+  \item \debate{تحریم‌ها اغلب بیش از حکومت به مردم عادی آسیب می‌زنند.}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{yellowDark}
+\subsubsection{\methodnum{39} شورش محدود (\lr{Limited Riot})}
+\textbf{توضیح:} تجمعات خودجوش با سطح پایین خشونت (پرتاب سنگ، شکستن شیشه).
+
+\begin{itemize}
+  \item انتفاضه اول فلسطین (۱۹۸۷) — عمدتاً سنگ و تحریم
+  \item جلیقه‌زردهای فرانسه (۲۰۱۸)
+\end{itemize}
+\begin{itemize}[label=\textcolor{yellowPrimary}{\faExclamationTriangle}]
+  \item \debate{برخی آن را بخشی از مقاومت مشروع و برخی خشونت غیرموجه می‌دانند.}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{yellowDark}
+\subsubsection{\methodnum{40} جنگ روانی و اختلال ذهنی}
+\textbf{توضیح:} ایجاد ترس، عدم اطمینان و شک در ذهن نیروهای حکومتی.
+
+\begin{itemize}
+  \item انتشار شایعات هدفمند
+  \item عملیات روانی برای تضعیف روحیه سرکوبگران
+\end{itemize}
+\end{methodcard}
+
+
+% ═══════════════════════════════════════════════════
+% PART FOUR: VIOLENT METHODS
+% ═══════════════════════════════════════════════════
+
+\section{\textcolor{redPrimary}{\faFire} بخش چهارم: روش‌های خشونت‌آمیز}
+
+\begin{notebox}[redPrimary]
+\textcolor{redPrimary}{\faExclamationTriangle\ \textbf{یادآوری:}} این بخش صرفاً جنبه آکادمیک و تحلیلی دارد. هدف درک جامع پدیده‌های تاریخی است، نه ترویج خشونت. تحقیقات نشان می‌دهد روش‌های خشونت‌آمیز در مجموع اثربخشی کمتری دارند.
+\end{notebox}
+
+\subsection{\textcolor{orangePrimary}{\faCircle[regular]} ۴-الف) خشونت محدود و هدفمند}
+
+\begin{methodcard}{orangePrimary}
+\subsubsection{\methodnum{41} ترور هدفمند سیاسی (\lr{Targeted Assassination})}
+\textbf{توضیح:} کشتن مقامات خاص حکومتی یا نظامی.
+
+\begin{itemize}
+  \item ترور الکساندر دوم روسیه (۱۸۸۱) — نارودنیک‌ها
+  \item ترور رفیق حریری (۲۰۰۵) $\rightarrow$ انقلاب سدر لبنان
+\end{itemize}
+\begin{itemize}[label=\textcolor{redPrimary}{\faExclamationTriangle}]
+  \item \textcolor{orangePrimary}{\faExclamationTriangle\ \textbf{نتیجه:}} معمولاً به تشدید سرکوب و چرخه خشونت منجر می‌شود.
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{orangePrimary}
+\subsubsection{\methodnum{42} چریکی شهری (\lr{Urban Guerrilla})}
+\textbf{توضیح:} عملیات نظامی کوچک‌مقیاس در شهرها، کمین، بمب‌گذاری.
+
+\begin{itemize}
+  \item توپامارو (اروگوئه) — نهایتاً سرکوب شدند و دیکتاتوری نظامی تثبیت شد
+  \item IRA در ایرلند شمالی — نهایتاً پس از ۳۰ سال به توافق صلح رسید
+\end{itemize}
+\begin{itemize}[label=\textcolor{redPrimary}{\faExclamationTriangle}]
+  \item \textcolor{orangePrimary}{\faExclamationTriangle\ \textbf{اثربخشی:}} بسیار پایین. اغلب به انزوای سیاسی و توجیه سرکوب منجر می‌شود.
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{orangePrimary}
+\subsubsection{\methodnum{43} دفاع مسلحانه مردمی}
+\textbf{توضیح:} مسلح شدن مردم برای دفاع از محله‌ها و مناطق خود در برابر حمله مستقیم.
+
+\begin{itemize}
+  \item دفاع مردمی کوبانی علیه داعش (۲۰۱۴)
+  \item شوراهای حفاظت محله‌ای در جنگ داخلی سوریه
+\end{itemize}
+\end{methodcard}
+
+
+% ───────────────────────────────────────────
+\subsection{\textcolor{redPrimary}{\faCircle[regular]} ۴-ب) جنگ چریکی / پارتیزانی (\lr{Guerrilla Warfare})}
+
+\begin{methodcard}{redPrimary}
+\subsubsection{\methodnum{44} جنگ چریکی روستایی}
+\textbf{توضیح:} مبارزه مسلحانه از پایگاه‌های روستایی. مدل مائویی «محاصره شهر از روستا».
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{انقلاب چین (۱۹۴۹) — مائو تسه‌تونگ}
+  \item \success{انقلاب کوبا (۱۹۵۹) — فیدل کاسترو و چه‌گوارا}
+  \item \success{ویتنام — ویت‌کنگ و ارتش خلق}
+\end{itemize}
+\begin{itemize}[label=\textcolor{redPrimary}{\faTimesCircle}]
+  \item \failure{چه‌گوارا در بولیوی (۱۹۶۷) — فاقد پایگاه مردمی، دستگیر و اعدام شد}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{redPrimary}
+\subsubsection{\methodnum{45} جنگ چریکی شهری مسلحانه}
+\textbf{توضیح:} عملیات مسلحانه سازمان‌یافته در بافت شهری.
+
+\begin{itemize}
+  \item گروه بادر-ماینهوف / فراکسیون ارتش سرخ (آلمان)
+  \item بریگاد سرخ (ایتالیا)
+\end{itemize}
+\begin{itemize}[label=\textcolor{redPrimary}{\faTimesCircle}]
+  \item \failure{غالباً ناموفق — منجر به انزوای اجتماعی، از دست دادن حمایت مردمی و سرکوب شدید.}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{redPrimary}
+\subsubsection{\methodnum{46} جنگ نامتقارن (\lr{Asymmetric Warfare})}
+\textbf{توضیح:} استفاده از تاکتیک‌های نامتعارف توسط نیروی ضعیف‌تر علیه قوی‌تر.
+
+\begin{itemize}
+  \item حزب‌الله لبنان (۲۰۰۶)
+  \item طالبان در افغانستان — ۲۰ سال مقاومت و بازگشت به قدرت
+  \item مقاومت عراق پس از ۲۰۰۳
+\end{itemize}
+\end{methodcard}
+
+
+% ───────────────────────────────────────────
+\subsection{\textcolor{redDark}{\faCircle[regular]} ۴-ج) انقلاب مسلحانه و قیام (\lr{Armed Revolution \& Insurrection})}
+
+\begin{methodcard}{redDark}
+\subsubsection{\methodnum{47} قیام مسلحانه شهری (Insurrection)}
+\textbf{توضیح:} خیزش مسلحانه مردمی برای تصرف قدرت سیاسی.
+
+\begin{itemize}
+  \item کمون پاریس (۱۸۷۱) — ۷۲ روز حکومت مردمی
+  \item انقلاب اکتبر روسیه (۱۹۱۷) — بلشویک‌ها
+  \item قیام ورشو (۱۹۴۴) — ناموفق و خونین، ۲۰۰٬۰۰۰ کشته
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{redDark}
+\subsubsection{\methodnum{48} جنگ آزادی‌بخش ملی}
+\textbf{توضیح:} مبارزه مسلحانه برای استقلال از استعمار.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{جنگ استقلال الجزایر (۱۹۵۴-۱۹۶۲)}
+  \item \success{جنبش‌های ضداستعماری آفریقا (موزامبیک، آنگولا، گینه‌بیسائو)}
+  \item \success{جنگ استقلال آمریکا (۱۷۷۵-۱۷۸۳)}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{redDark}
+\subsubsection{\methodnum{49} کودتای نظامی مردمی / انقلابی}
+\textbf{توضیح:} بخشی از ارتش به مردم می‌پیوندد و قدرت را از حکومت می‌گیرد.
+
+\begin{itemize}
+  \item انقلاب میخک پرتغال (۱۹۷۴) — کودتای نظامیان چپ‌گرا بدون خونریزی
+  \item کودتای ناصر در مصر (۱۹۵۲)
+\end{itemize}
+\begin{itemize}[label=\textcolor{redPrimary}{\faExclamationTriangle}]
+  \item \textcolor{orangePrimary}{\faExclamationTriangle\ \textbf{ریسک بزرگ:}} ارتش اغلب خود به دیکتاتور جدید تبدیل می‌شود.
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{redDark}
+\subsubsection{\methodnum{50} جنگ داخلی تمام‌عیار (Civil War)}
+\textbf{توضیح:} درگیری مسلحانه گسترده بین نیروهای حکومتی و مخالفان.
+
+\begin{itemize}
+  \item جنگ داخلی اسپانیا (۱۹۳۶-۱۹۳۹) — ۵۰۰٬۰۰۰+ کشته
+  \item جنگ داخلی سوریه (۲۰۱۱-اکنون) — ۵۰۰٬۰۰۰+ کشته، میلیون‌ها آواره
+  \item جنگ داخلی آمریکا (۱۸۶۱-۱۸۶۵) — ۶۲۰٬۰۰۰ کشته
+\end{itemize}
+\begin{itemize}[label=\textcolor{redPrimary}{\faExclamationTriangle}]
+  \item \textcolor{redPrimary}{\faExclamationTriangle\ \textbf{هزینه:}} فاجعه‌بارترین شکل مبارزه با بیشترین تلفات غیرنظامی.
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{redDark}
+\subsubsection{\methodnum{51} جنگ خلقی طولانی‌مدت (Protracted People's War)}
+\textbf{توضیح:} مدل مائویی سه‌مرحله‌ای: دفاع استراتژیک $\rightarrow$ تعادل استراتژیک $\rightarrow$ تعرض استراتژیک.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{انقلاب چین (۱۹۲۷-۱۹۴۹)}
+  \item \success{ویتنام (۱۹۴۵-۱۹۷۵)}
+\end{itemize}
+\begin{itemize}[label=\textcolor{redPrimary}{\faTimesCircle}]
+  \item \failure{شاینینگ پث (سندرو لومینوسو — پرو) — سرکوب شد و رهبر دستگیر شد}
+\end{itemize}
+\end{methodcard}
+
+
+% ═══════════════════════════════════════════════════
+% PART FIVE: LEGAL & DIPLOMATIC
+% ═══════════════════════════════════════════════════
+
+\section{\textcolor{legalBlue}{\faBalanceScale} بخش پنجم: روش‌های حقوقی، دیپلماتیک و نهادی}
+
+\begin{sectionbox}{legalBlue}
+مبارزه از طریق سیستم‌های حقوقی، نهادهای بین‌المللی و فشار دیپلماتیک. این روش‌ها اغلب مکمل سایر روش‌ها هستند، نه جایگزین آنها.
+\end{sectionbox}
+
+\begin{methodcard}{legalBlue}
+\subsubsection{\methodnum{52} دادخواهی و شکایت حقوقی (Litigation)}
+\textbf{توضیح:} استفاده از دادگاه‌های داخلی و بین‌المللی برای احقاق حق.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{پرونده \textit{Brown v. Board of Education} (۱۹۵۴) — پایان تفکیک نژادی در مدارس آمریکا}
+  \item \success{دادگاه حقوق بشر اروپا — صدها رأی علیه دولت‌های ناقض حقوق بشر}
+  \item \success{نظر مشورتی دیوان بین‌المللی دادگستری درباره دیوار حائل (۲۰۰۴)}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{legalBlue}
+\subsubsection{\methodnum{53} صلاحیت جهانی (Universal Jurisdiction)}
+\textbf{توضیح:} محاکمه جنایتکاران جنگی در دادگاه‌های کشورهای ثالث.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{بازداشت پینوشه در لندن (۱۹۹۸) — نقطه عطف حقوق بین‌الملل}
+  \item \success{محاکمه مقامات سوری در آلمان (دادگاه کوبلنز ۲۰۲۰-۲۰۲۲)}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{legalBlue}
+\subsubsection{\methodnum{54} ارجاع به دیوان کیفری بین‌المللی (ICC)}
+\textbf{توضیح:} پیگیری جنایات جنگی، جنایات علیه بشریت و نسل‌کشی.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{حکم بازداشت عمر البشیر (سودان)}
+  \item \success{حکم بازداشت پوتین (۲۰۲۳)}
+\end{itemize}
+\begin{itemize}[label=\textcolor{yellowPrimary}{\faExclamationTriangle}]
+  \item \debate{قدرت اجرایی محدود — وابسته به همکاری دولت‌ها.}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{legalBlue}
+\subsubsection{\methodnum{55} لابی‌گری و دیپلماسی عمومی}
+\textbf{توضیح:} فشار بر پارلمان‌ها و دولت‌های خارجی برای حمایت.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{لابی ضد آپارتاید در کنگره آمریکا $\rightarrow$ قانون تحریم ۱۹۸۶}
+  \item \success{دیاسپورای تبتی به رهبری دالایی لاما}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{legalBlue}
+\subsubsection{\methodnum{56} مبارزه پارلمانی و انتخاباتی}
+\textbf{توضیح:} شرکت در انتخابات، تشکیل حزب، فعالیت در چارچوب قانونی.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{حزب سبز آلمان — از جنبش اعتراضی خیابانی به حزب حاکم}
+  \item \success{ANC پس از آپارتاید — تبدیل از جنبش مقاومتی به حزب حاکم}
+\end{itemize}
+\begin{itemize}[label=\textcolor{yellowPrimary}{\faExclamationTriangle}]
+  \item \debate{در نظام‌های اقتدارگرای بسته اغلب ممکن نیست یا بی‌معناست.}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{legalBlue}
+\subsubsection{\methodnum{57} همه‌پرسی و ابتکار مردمی}
+\textbf{توضیح:} تلاش برای تغییر قوانین از طریق رأی‌گیری مستقیم مردم.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{همه‌پرسی استقلال تیمور شرقی (۱۹۹۹)}
+  \item \success{همه‌پرسی طلاق در ایرلند (۱۹۹۵)}
+\end{itemize}
+\begin{itemize}[label=\textcolor{yellowPrimary}{\faExclamationTriangle}]
+  \item \partialresult{همه‌پرسی استقلال کاتالونیا (۲۰۱۷) — توسط مادرید لغو و غیرقانونی اعلام شد}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{legalBlue}
+\subsubsection{\methodnum{58} عدالت انتقالی و کمیسیون‌های حقیقت‌یاب}
+\textbf{توضیح:} فرآیندهای پس از سرکوب برای آشتی ملی و پاسخگویی.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{کمیسیون حقیقت و آشتی آفریقای جنوبی (TRC) به ریاست دزموند توتو}
+  \item \success{کمیسیون‌های حقیقت آرژانتین و شیلی}
+\end{itemize}
+\end{methodcard}
+
+
+% ═══════════════════════════════════════════════════
+% PART SIX: ECONOMIC & STRUCTURAL
+% ═══════════════════════════════════════════════════
+
+\section{\textcolor{econGreen}{\faCoins} بخش ششم: روش‌های اقتصادی و ساختاری}
+
+\begin{sectionbox}{econGreen}
+مبارزه از طریق تغییر ساختارهای اقتصادی — «قدرت کیف پول». اقتصاد شریان حیات هر حکومتی است.
+\end{sectionbox}
+
+\begin{methodcard}{econGreen}
+\subsubsection{\methodnum{59} تحریم‌های بین‌المللی اقتصادی}
+\textbf{توضیح:} فشار اقتصادی دولت‌های خارجی بر حکومت هدف.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{تحریم آفریقای جنوبی $\rightarrow$ پایان آپارتاید}
+\end{itemize}
+\begin{itemize}[label=\textcolor{redPrimary}{\faTimesCircle}]
+  \item \failure{۶۰ سال تحریم کوبا بدون تغییر رژیم}
+\end{itemize}
+\begin{itemize}[label=\textcolor{yellowPrimary}{\faExclamationTriangle}]
+  \item \debate{تحریم‌های ایران، کوبا، کره شمالی — اثر ویرانگر بر مردم عادی بیش از حکومت}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{econGreen}
+\subsubsection{\methodnum{60} اقتصاد جایگزین و تعاونی}
+\textbf{توضیح:} ایجاد ساختارهای اقتصادی مستقل از دولت.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{تعاونی‌های موندراگون (اسپانیا) — بزرگ‌ترین مجموعه تعاونی جهان}
+  \item \success{اقتصاد همبستگی برزیل}
+  \item \success{کیبوتص‌های اسرائیل (اوایل)}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{econGreen}
+\subsubsection{\methodnum{61} ارزهای جایگزین و رمزارز}
+\textbf{توضیح:} استفاده از بیت‌کوین و ارزهای رمزنگاری‌شده برای دور زدن کنترل مالی دولت.
+
+\begin{itemize}
+  \item استفاده از بیت‌کوین در ونزوئلا و ایران
+  \item کمک‌رسانی رمزارزی به اوکراین (۲۰۲۲) — میلیون‌ها دلار
+\end{itemize}
+\begin{itemize}[label=\textcolor{yellowPrimary}{\faExclamationTriangle}]
+  \item \debate{هنوز در مرحله آزمایشی — قابلیت مقیاس‌پذیری نامشخص.}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{econGreen}
+\subsubsection{\methodnum{62} جنبش سرمایه‌گذاری اخلاقی (Divestment)}
+\textbf{توضیح:} فشار بر دانشگاه‌ها، صندوق‌ها و شرکت‌ها برای خروج سرمایه.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{خروج سرمایه از آفریقای جنوبی (دهه ۱۹۸۰)}
+\end{itemize}
+\begin{itemize}
+  \item در جریان: جنبش خروج سرمایه از سوخت‌های فسیلی
+  \item در جریان: BDS و خروج سرمایه از اسرائیل
+\end{itemize}
+\end{methodcard}
+
+
+% ═══════════════════════════════════════════════════
+% PART SEVEN: CULTURAL & IDEOLOGICAL
+% ═══════════════════════════════════════════════════
+
+\section{\textcolor{pinkPrimary}{\faTheaterMasks} بخش هفتم: روش‌های فرهنگی، آموزشی و ایدئولوژیک}
+
+\begin{sectionbox}{pinkPrimary}
+مبارزه از طریق تغییر ذهنیت، فرهنگ‌سازی و ساخت هژمونی جایگزین. «جنگ موضعی» گرامشی: تغییر فرهنگ مقدم بر تغییر سیاسی.
+\end{sectionbox}
+
+\begin{methodcard}{pinkPrimary}
+\subsubsection{\methodnum{63} جنگ فرهنگی (\lr{Culture War / Counter-Hegemony})}
+\textbf{توضیح:} بر اساس نظریه گرامشی — تغییر فرهنگ مسلط قبل از تغییر سیاسی. تولید ادبیات، سینما، موسیقی و هنر جایگزین.
+
+\begin{itemize}
+  \item سینمای موج نو ایران — زیرسؤال بردن روایت رسمی
+  \item ادبیات مقاومت فلسطین (غسان کنفانی، محمود درویش)
+  \item تئاتر سرکوب‌شدگان (آگوستو بوآل)
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{pinkPrimary}
+\subsubsection{\methodnum{64} آگاهی‌بخشی و آموزش رادیکال (\lr{Consciousness-Raising})}
+\textbf{توضیح:} بر اساس نظریه پائولو فریره — آموزش به‌عنوان ابزار رهایی.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{آموزش سوادآموزی فریره در برزیل — «آموزش ستمدیدگان»}
+  \item \success{حلقه‌های آگاهی‌بخشی جنبش فمینیستی (دهه ۱۹۷۰)}
+  \item \success{مدارس نوین دوره مشروطه ایران}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{pinkPrimary}
+\subsubsection{\methodnum{65} طنز سیاسی و کارناوال اعتراضی}
+\textbf{توضیح:} استفاده از خنده، طنز، کاریکاتور و پارودی برای بی‌اعتبارسازی قدرت.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{جنبش Otpor صربستان — استفاده سیستماتیک از طنز علیه میلوشویچ}
+  \item \success{Yes Men — شوخی‌های سازمان‌یافته علیه شرکت‌های بزرگ}
+  \item \success{جوک‌های سیاسی دوره شوروی — تضعیف تدریجی مشروعیت نظام}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{pinkPrimary}
+\subsubsection{\methodnum{66} احیای هویت فرهنگی و زبانی}
+\textbf{توضیح:} مقاومت فرهنگی از طریق حفظ زبان، آداب و سنن.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{احیای زبان عبری (اسرائیل)}
+  \item \success{احیای زبان کاتالان در دوره فرانکو}
+  \item \success{جنبش نگریتود (N\'{e}gritude) آفریقا و کارائیب — ام\'{ه} سزر و لئوپولد سنگور}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{pinkPrimary}
+\subsubsection{\methodnum{67} زنانه‌کردن مبارزه و فمینیسم مقاومتی}
+\textbf{توضیح:} مبارزه با استفاده از هویت جنسیتی و به‌چالش‌کشیدن پدرسالاری.
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faCheckCircle}]
+  \item \success{«زن، زندگی، آزادی» (ایران ۱۴۰۱)}
+  \item \success{مادران میدان مه (آرژانتین) — مقاومت خشونت‌پرهیز مادران ناپدیدشدگان}
+  \item \success{جنبش «Ni Una Menos» (آمریکای لاتین)}
+\end{itemize}
+\end{methodcard}
+
+\begin{methodcard}{pinkPrimary}
+\subsubsection{\methodnum{68} مقاومت روزمره (\lr{Everyday Resistance})}
+\textbf{توضیح:} بر اساس نظریه جیمز اسکات — مقاومت پنهان و خُرد روزمره. شایعه‌پراکنی، وانمودکردن، سرقت خرد، کُندکاری، شعرنویسی روی دیوار.
+
+\begin{itemize}
+  \item مقاومت روزمره دهقانان مالزیایی (مطالعه میدانی اسکات)
+  \item عدم رعایت حجاب اجباری در ایران — مقاومت روزمره میلیون‌ها زن
+\end{itemize}
+\end{methodcard}
+
+
+% ═══════════════════════════════════════════════════
+% PART EIGHT: THEORETICAL FRAMEWORKS
+% ═══════════════════════════════════════════════════
+
+\section{\textcolor{tealPrimary}{\faBrain} بخش هشتم: چارچوب‌های استراتژیک و نظری}
+
+\begin{sectionbox}{tealPrimary}
+نظریه‌های کلیدی که روش‌های مبارزاتی را در یک چارچوب منسجم قرار می‌دهند. هر نظریه‌پرداز زاویه دید متفاوتی به مقاومت دارد.
+\end{sectionbox}
+
+\begin{theorycard}{tealPrimary}
+\subsection*{\textcolor{tealPrimary}{\faBook} ۱. \lr{Gene Sharp} — \lr{«From Dictatorship to Democracy»}}
+
+\begin{itemize}[label=\textcolor{tealPrimary}{$\bullet$}]
+  \item \textbf{۱۹۸ روش} اقدام خشونت‌پرهیز در سه دسته
+  \item نظریه \textbf{«ستون‌های قدرت»} — قدرت از رضایت مردم ناشی می‌شود
+  \item اگر ستون‌ها (ارتش، پلیس، بوروکراسی، اقتصاد) از حکومت جدا شوند، حکومت سقوط می‌کند
+  \item \textbf{تأثیر:} الهام‌بخش انقلاب‌های رنگی، بهار عربی، Otpor صربستان
+\end{itemize}
+\end{theorycard}
+
+\begin{theorycard}{greenPrimary}
+\subsection*{\textcolor{greenPrimary}{\faBook} ۲. \lr{Mahatma Gandhi} — \lr{Satyagraha} (\lr{«Truth-force»})}
+
+\begin{itemize}[label=\textcolor{greenPrimary}{$\bullet$}]
+  \item خشونت‌پرهیزی به‌عنوان \textbf{اصل اخلاقی} (نه صرفاً تاکتیک)
+  \item سه بخش: مقاومت (عدم همکاری) + برنامه سازنده + فداکاری شخصی
+  \item \textbf{کلید:} تبدیل رنج خود به ابزار تغییر وجدان سرکوبگر
+  \item \textbf{تأثیر:} استقلال هند، الهام‌بخش کینگ، ماندلا و جنبش‌های جهانی
+\end{itemize}
+\end{theorycard}
+
+\begin{theorycard}{yellowDark}
+\subsection*{\textcolor{yellowDark}{\faBook} ۳. \lr{Erica Chenoweth} — \lr{«Why Civil Resistance Works»}}
+
+\begin{itemize}[label=\textcolor{yellowDark}{$\bullet$}]
+  \item تحلیل آماری \textbf{۳۲۳ جنبش} (۱۹۰۰-۲۰۰۶)
+  \item \textbf{یافته کلیدی:} جنبش‌های خشونت‌پرهیز \textbf{۲ برابر} موفق‌تر از مسلحانه
+  \item \textbf{قانون ۳.۵\%:} اگر ۳.۵\% جمعیت فعالانه شرکت کنند، هیچ حکومتی دوام نمی‌آورد
+  \item حکومت‌های سرنگون‌شده با روش خشونت‌پرهیز، ۴۰\% بیشتر احتمال دموکراسی پایدار
+\end{itemize}
+\end{theorycard}
+
+\begin{theorycard}{redPrimary}
+\subsection*{\textcolor{redPrimary}{\faBook} ۴. \lr{Frantz Fanon} — \lr{«The Wretched of the Earth»}}
+
+\begin{itemize}[label=\textcolor{redPrimary}{$\bullet$}]
+  \item خشونت به‌عنوان \textbf{ابزار رهایی} استعمارزدگان
+  \item خشونت استعمار فقط با خشونت متقابل شکسته می‌شود
+  \item خشونت اثر درمانی/رهایی‌بخش روانی بر استعمارزده دارد
+  \item \textbf{تأثیر:} جنبش‌های ضداستعماری آفریقا، بلک پنتر
+\end{itemize}
+\end{theorycard}
+
+\begin{theorycard}{redDark}
+\subsection*{\textcolor{redDark}{\faBook} ۵. \lr{Mao Tse-tung} — \lr{Protracted People's War} }
+
+\begin{itemize}[label=\textcolor{redDark}{$\bullet$}]
+  \item سه مرحله: دفاع $\rightarrow$ تعادل $\rightarrow$ حمله
+  \item «چریک ماهی است و مردم دریا»
+  \item اهمیت حیاتی پایگاه مردمی در مبارزه مسلحانه
+  \item \textbf{تأثیر:} ویتنام، کوبا، جنبش‌های مائویی جهان
+\end{itemize}
+\end{theorycard}
+
+\begin{theorycard}{purplePrimary}
+\subsection*{\textcolor{purplePrimary}{\faBook} ۶. \lr{Antonio Gramsci} — \lr{Hegemony and War of Position} }
+
+\begin{itemize}[label=\textcolor{purplePrimary}{$\bullet$}]
+  \item تغییر فرهنگی \textbf{مقدم} بر تغییر سیاسی
+  \item «جنگ موضعی» = تصرف تدریجی نهادهای فرهنگی
+  \item نقش کلیدی روشنفکران ارگانیک
+  \item \textbf{تأثیر:} جنبش‌های نوین چپ، مطالعات فرهنگی
+\end{itemize}
+\end{theorycard}
+
+
+% ═══════════════════════════════════════════════════
+% PART NINE: COMPARATIVE ANALYSIS
+% ═══════════════════════════════════════════════════
+
+\section{\textcolor{purpleLight}{\faChartBar} بخش نهم: تحلیل مقایسه‌ای اثربخشی}
+
+% ───────────────────────────────────────────
+% BAR CHART: Success Rates
+% ───────────────────────────────────────────
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  xbar,
+  width=14cm,
+  height=8cm,
+  xlabel={نرخ موفقیت (\%)},
+  xlabel style={font=\small, color=textLight},
+  symbolic y coords={
+    {دموکراسی پایدار (خشونت‌آمیز)},
+    {دموکراسی پایدار (خشونت‌پرهیز)},
+    {موفقیت خشونت‌آمیز},
+    {موفقیت خشونت‌پرهیز}
+  },
+  ytick=data,
+  yticklabel style={font=\small, color=textLight},
+  xticklabel style={font=\small, color=textMuted},
+  xmin=0, xmax=65,
+  nodes near coords,
+  nodes near coords style={font=\small\bfseries, color=white},
+  bar width=18pt,
+  axis line style={color=textMuted},
+  tick style={color=textMuted},
+  grid=major,
+  grid style={color=cardbg},
+  area style,
+  every axis plot/.append style={fill opacity=0.85}
+]
+
+\addplot[fill=greenPrimary, draw=greenPrimary] coordinates {
+  (53,{موفقیت خشونت‌پرهیز})
+};
+
+\addplot[fill=redPrimary, draw=redPrimary] coordinates {
+  (26,{موفقیت خشونت‌آمیز})
+};
+
+\addplot[fill=greenLight, draw=greenLight] coordinates {
+  (57,{دموکراسی پایدار (خشونت‌پرهیز)})
+};
+
+\addplot[fill=redLight, draw=redLight] coordinates {
+  (6,{دموکراسی پایدار (خشونت‌آمیز)})
+};
+
+\end{axis}
+\end{tikzpicture}
+\caption{مقایسه نرخ موفقیت و دموکراسی پایدار — بر اساس تحقیقات چنووث و استفان (۱۹۰۰-۲۰۰۶)}
+\end{figure}
+
+\begin{notebox}[yellowPrimary]
+\textcolor{yellowPrimary}{\faStar\ \textbf{قانون ۳.۵ درصد (چنووث):}} هیچ جنبش خشونت‌پرهیزی که مشارکت فعال ۳.۵\% جمعیت را جذب کرده باشد، تاکنون شکست نخورده است.
+\end{notebox}
+
+
+% ───────────────────────────────────────────
+% COMPARATIVE TABLE
+% ───────────────────────────────────────────
+
+\subsection{جدول مقایسه‌ای نمونه‌های تاریخی}
+
+{
+\small
+\rowcolors{2}{deepcard}{cardbg}
+\begin{longtable}{
+  >{\raggedright\arraybackslash}p{3cm}
+  >{\centering\arraybackslash}p{1.5cm}
+  >{\centering\arraybackslash}p{2cm}
+  >{\centering\arraybackslash}p{2.5cm}
+  >{\centering\arraybackslash}p{1.5cm}
+  >{\centering\arraybackslash}p{2cm}
+}
+\toprule
+\rowcolor{midbg}
+\textcolor{white}{\textbf{جنبش}} &
+\textcolor{white}{\textbf{کشور}} &
+\textcolor{white}{\textbf{دوره}} &
+\textcolor{white}{\textbf{روش غالب}} &
+\textcolor{white}{\textbf{نتیجه}} &
+\textcolor{white}{\textbf{دموکراسی؟}} \\
+\midrule
+\endhead
+
+استقلال هند & هند & ۱۹۱۵-۴۷ & \textcolor{greenPrimary}{خشونت‌پرهیز} & \textcolor{greenPrimary}{\faCheck} & \textcolor{greenPrimary}{\faCheck\ بله} \\
+
+حقوق مدنی آمریکا & آمریکا & ۱۹۵۵-۶۸ & \textcolor{greenPrimary}{خشونت‌پرهیز} & \textcolor{greenPrimary}{\faCheck} & \textcolor{greenPrimary}{\faCheck\ بله} \\
+
+انقلاب مخملی & چکسلواکی & ۱۹۸۹ & \textcolor{greenPrimary}{خشونت‌پرهیز} & \textcolor{greenPrimary}{\faCheck} & \textcolor{greenPrimary}{\faCheck\ بله} \\
+
+همبستگی & لهستان & ۱۹۸۰-۸۹ & \textcolor{greenPrimary}{خشونت‌پرهیز} & \textcolor{greenPrimary}{\faCheck} & \textcolor{greenPrimary}{\faCheck\ بله} \\
+
+قدرت مردم & فیلیپین & ۱۹۸۶ & \textcolor{greenPrimary}{خشونت‌پرهیز} & \textcolor{greenPrimary}{\faCheck} & \textcolor{yellowPrimary}{$\sim$ نسبی} \\
+
+سقوط دیوار برلین & آلمان شرقی & ۱۹۸۹ & \textcolor{greenPrimary}{خشونت‌پرهیز} & \textcolor{greenPrimary}{\faCheck} & \textcolor{greenPrimary}{\faCheck\ بله} \\
+
+ضد آپارتاید & آفریقای جنوبی & ۱۹۶۰-۹۴ & \textcolor{yellowPrimary}{ترکیبی} & \textcolor{greenPrimary}{\faCheck} & \textcolor{greenPrimary}{\faCheck\ بله} \\
+
+بهار عربی — مصر & مصر & ۲۰۱۱ & \textcolor{greenPrimary}{خشونت‌پرهیز} & \textcolor{yellowPrimary}{$\sim$ موقت} & \textcolor{redPrimary}{\faTimes\ کودتا} \\
+
+بهار عربی — تونس & تونس & ۲۰۱۱ & \textcolor{greenPrimary}{خشونت‌پرهیز} & \textcolor{greenPrimary}{\faCheck} & \textcolor{yellowPrimary}{$\sim$ پسرفت} \\
+
+انقلاب کوبا & کوبا & ۱۹۵۳-۵۹ & \textcolor{redPrimary}{مسلحانه} & \textcolor{greenPrimary}{\faCheck} & \textcolor{redPrimary}{\faTimes\ دیکتاتوری} \\
+
+جنگ استقلال الجزایر & الجزایر & ۱۹۵۴-۶۲ & \textcolor{redPrimary}{مسلحانه} & \textcolor{greenPrimary}{\faCheck} & \textcolor{redPrimary}{\faTimes\ اقتدارگرا} \\
+
+جنگ داخلی سوریه & سوریه & ۲۰۱۱-اکنون & \textcolor{redPrimary}{مسلحانه} & \textcolor{redPrimary}{\faTimes} & \textcolor{redPrimary}{\faTimes\ ویرانی} \\
+
+انقلاب ایران ۵۷ & ایران & ۱۹۷۸-۷۹ & \textcolor{yellowPrimary}{ترکیبی} & \textcolor{greenPrimary}{\faCheck\ سرنگونی} & \textcolor{redPrimary}{\faTimes\ اقتدارگرا} \\
+
+جنبش ژینا & ایران & ۱۴۰۱ & \textcolor{greenPrimary}{خشونت‌پرهیز} & \textcolor{yellowPrimary}{$\circlearrowright$ در جریان} & \textcolor{yellowPrimary}{$\circlearrowright$ نامشخص} \\
+
+\bottomrule
+\end{longtable}
+}
+
+
+% ═══════════════════════════════════════════════════
+% PILLARS OF POWER DIAGRAM
+% ═══════════════════════════════════════════════════
+
+\subsection{نمودار ستون‌های قدرت (مدل جین شارپ)}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.9, transform shape]
+
+% Foundation
+\fill[greenPrimary, rounded corners=3pt] (-6,-0.5) rectangle (6,0.3);
+\node[white, font=\bfseries] at (0,-0.1) {\faUsers\ رضایت و اطاعت مردم};
+
+% Pillars
+\foreach \x/\label in {
+  -5/ارتش و پلیس,
+  -3/بوروکراسی,
+  -1/اقتصاد,
+  1/رسانه,
+  3/مشروعیت,
+  5/{آموزش و دین}
+}{
+  \fill[gray!60, rounded corners=2pt] (\x-0.5,0.3) rectangle (\x+0.5,5);
+  \node[white, font=\tiny\bfseries, rotate=90] at (\x,2.65) {\label};
+}
+
+% Roof (Government)
+\fill[redPrimary, opacity=0.85] (-6.5,5) -- (0,6.5) -- (6.5,5) -- cycle;
+\node[white, font=\bfseries] at (0,5.5) {حکومت / قدرت};
+
+% Crack lines
+\draw[yellowPrimary, thick, dashed] (0.5,3) -- (1.8,3.5);
+\draw[yellowPrimary, thick, dashed] (-0.5,2.5) -- (0.8,3);
+
+% Annotation
+\node[
+  draw=yellowPrimary,
+  fill=cardbg,
+  rounded corners=4pt,
+  text width=4cm,
+  align=center,
+  font=\scriptsize,
+  text=textLight
+] at (9,3) {
+  \textcolor{yellowPrimary}{\textbf{کلید موفقیت:}}\\[3pt]
+  جدا کردن ستون‌ها از حکومت\\[2pt]
+  \textcolor{greenPrimary}{= سقوط بدون خشونت}
+};
+
+% Bottom annotation
+\node[
+  draw=purplePrimary,
+  fill=darkbg,
+  rounded corners=4pt,
+  text width=12cm,
+  align=center,
+  font=\scriptsize,
+  text=textMuted
+] at (0,-1.5) {
+  وقتی مردم رضایت و اطاعت خود را پس بگیرند، ستون‌ها فرو می‌ریزند\\
+  — جین شارپ، «از دیکتاتوری به دموکراسی»
+};
+
+\end{tikzpicture}
+\caption{مدل ستون‌های قدرت — هر حکومتی بر رضایت مردم استوار است}
+\end{figure}
+
+
+% ═══════════════════════════════════════════════════
+% ESCALATION LADDER
+% ═══════════════════════════════════════════════════
+
+\subsection{نمودار فرآیند تشدید \lr{(Escalation Ladder)}}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  scale=0.85,
+  transform shape,
+  step/.style={
+    draw=#1,
+    fill=#1!10,
+    rounded corners=6pt,
+    minimum width=4.5cm,
+    minimum height=1.3cm,
+    text=white,
+    font=\small\bfseries,
+    align=center,
+    text width=4cm
+  },
+  arr/.style={
+    -{Stealth[length=6pt]},
+    thick,
+    #1
+  },
+  note/.style={
+    font=\tiny,
+    color=textMuted,
+    align=center
+  }
+]
+
+% Steps
+\node[step=greenPrimary] (s1) at (0,0) {\rl{مرحله ۱}\\\rl{اعتراض نمادین و بیانیه}};
+\node[step=bluePrimary] (s2) at (3.5,2) {\rl{مرحله ۲}\\\rl{عدم‌همکاری و اعتصاب}};
+\node[step=purplePrimary] (s3) at (7,4) {\rl{مرحله ۳}\\\rl{نافرمانی مدنی و مداخله}};
+\node[step=yellowDark] (s4) at (10.5,6) {\rl{مرحله ۴}\\\textcolor{yellowPrimary}{\rl{نقطه تصمیم}}};
+
+% Arrows between steps
+\draw[arr=greenPrimary] (s1.north east) -- node[note, above, sloped] {\rl{سرکوب} $\rightarrow$} (s2.south west);
+\draw[arr=bluePrimary] (s2.north east) -- node[note, above, sloped] {\rl{تشدید سرکوب} $\rightarrow$} (s3.south west);
+\draw[arr=purplePrimary] (s3.north east) -- node[note, above, sloped] {\rl{خشونت حکومت} $\rightarrow$} (s4.south west);
+
+% Branch A: Continue nonviolent
+\node[
+  draw=greenPrimary,
+  fill=greenDark,
+  rounded corners=6pt,
+  minimum width=5cm,
+  minimum height=2cm,
+  text=greenLight,
+  font=\small,
+  align=center,
+  text width=4.5cm
+] (brA) at (5,9) {
+  \textbf{\textcolor{greenPrimary}{\rl{مسیر الف: پایداری خشونت‌پرهیز}}}\\[3pt]
+  $\rightarrow$ \rl{جذب بیشتر مردم}\\
+  $\rightarrow$ \rl{شکاف در ستون‌های قدرت}\\[3pt]
+  \textcolor{greenPrimary}{\textbf{\rl{احتمال موفقیت:} $\sim$۵۳\%}}
+};
+
+% Branch B: Turn violent
+\node[
+  draw=redPrimary,
+  fill=redPrimary!10,
+  rounded corners=6pt,
+  minimum width=5cm,
+  minimum height=2cm,
+  text=redLight,
+  font=\small,
+  align=center,
+  text width=4.5cm
+] (brB) at (15,9) {
+  \textbf{\textcolor{redPrimary}{مسیر ب: تغییر به خشونت}}\\[3pt]
+  $\rightarrow$ از دست دادن حمایت مردمی\\
+  $\rightarrow$ مشروعیت‌بخشی به سرکوب\\[3pt]
+  \textcolor{redPrimary}{\textbf{احتمال موفقیت: $\sim$۲۶\%}}
+};
+
+% Decision arrows
+\draw[arr=greenPrimary, line width=2pt] (s4.north west) -- (brA.south east);
+\draw[arr=redPrimary, line width=2pt] (s4.north east) -- (brB.south west);
+
+% Key insight
+\node[
+  draw=purpleLight,
+  fill=darkbg,
+  rounded corners=4pt,
+  text width=5.5cm,
+  align=center,
+  font=\scriptsize,
+  text=textMuted
+] at (0,8) {
+  \textcolor{purpleLight}{\textbf{نکته کلیدی چنووث:}}\\[3pt]
+  تغییر از خشونت‌پرهیز به خشونت\\
+  بزرگ‌ترین اشتباه استراتژیک است
+};
+
+\end{tikzpicture}
+\caption{نردبان تشدید — نقطه تصمیم و دو مسیر متفاوت}
+\end{figure}
+
+
+% ═══════════════════════════════════════════════════
+% DILEMMA ACTION
+% ═══════════════════════════════════════════════════
+
+\subsection{مفهوم «اقدام معماگونه» (\lr{Dilemma Action})}
+
+\begin{sectionbox}{yellowDark}
+یکی از مهم‌ترین مفاهیم استراتژیک: طراحی اقدامی که حکومت را در وضعیت «باخت-باخت» قرار دهد.
+\end{sectionbox}
+
+\begin{notebox}[yellowPrimary]
+\textbf{\textcolor{yellowPrimary}{منطق اقدام معماگونه:}}
+
+\vspace{6pt}
+\textbf{اگر حکومت سرکوب کند:}
+\begin{itemize}[label=$\rightarrow$, leftmargin=15pt]
+  \item افکار عمومی بیشتر به سمت مخالفان
+  \item فشار بین‌المللی افزایش
+  \item شکاف در نیروهای امنیتی
+\end{itemize}
+
+\textbf{اگر حکومت سرکوب نکند:}
+\begin{itemize}[label=$\rightarrow$, leftmargin=15pt]
+  \item جنبش گسترش می‌یابد
+  \item حکومت ضعیف به نظر می‌رسد
+  \item انگیزه مشارکت بیشتر
+\end{itemize}
+
+\vspace{4pt}
+\textcolor{greenPrimary}{\textbf{نتیجه:}} حکومت در هر صورت بازنده است. \textcolor{greenPrimary}{\faCheckCircle}
+\end{notebox}
+
+\vspace{8pt}
+\textbf{نمونه‌های تاریخی:}
+
+\begin{itemize}[label=\textcolor{yellowPrimary}{\faStar}, leftmargin=15pt]
+  \item \textbf{راهپیمایی نمک (۱۹۳۰):} شکستن قانون نمک $\rightarrow$ بریتانیا یا سرکوب می‌کرد (رسوایی جهانی) یا اجازه می‌داد (شکست انحصار)
+  \item \textbf{Sit-in رستوران‌ها (۱۹۶۰):} نشستن در بخش تفکیک‌شده $\rightarrow$ یا خشونت علنی در تلویزیون (رسوایی) یا پذیرش (پایان تفکیک)
+  \item \textbf{Otpor صربستان (۲۰۰۰):} بازداشت جوانان بدون خشونت $\rightarrow$ میلوشویچ هر بار بیشتر رسوا می‌شد
+\end{itemize}
+
+
+% ═══════════════════════════════════════════════════
+% PART TEN: HYBRID MOVEMENTS
+% ═══════════════════════════════════════════════════
+
+\section{\textcolor{pinkPrimary}{\faRandom} بخش دهم: جنبش‌های ترکیبی — واقعیت پیچیده میدانی}
+
+\begin{sectionbox}{pinkPrimary}
+در عمل، بسیاری از جنبش‌ها ترکیبی از روش‌های مختلف هستند. تقسیم‌بندی خشن/غیرخشن در واقعیت مرزهای مبهمی دارد.
+\end{sectionbox}
+
+
+\subsection{نمونه ۱: ضد آپارتاید — آفریقای جنوبی}
+
+\begin{methodcard}{pinkPrimary}
+\textbf{ترکیب:} تقریباً تمام روش‌ها به کار گرفته شدند.
+
+\begin{center}
+\small
+\begin{tabular}{r l}
+\toprule
+\textcolor{greenPrimary}{\faCircle} اعتراض نمادین & تظاهرات، تشییع جنازه \\
+\textcolor{bluePrimary}{\faCircle} عدم‌همکاری & تحریم، اعتصاب \\
+\textcolor{purplePrimary}{\faCircle} مداخله & اشغال اراضی \\
+\textcolor{yellowPrimary}{\faCircle} خرابکاری & MK (بازوی نظامی ANC) \\
+\textcolor{redPrimary}{\faCircle} خشونت محدود & عملیات نظامی MK \\
+\textcolor{legalBlue}{\faCircle} حقوقی & فشار بین‌المللی، تحریم \\
+\textcolor{pinkPrimary}{\faCircle} فرهنگی & موسیقی، شعر، تئاتر \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{نتیجه:} \textcolor{greenPrimary}{\faCheckCircle\ موفق} — پایان آپارتاید (۱۹۹۴)
+\end{methodcard}
+
+
+\subsection{نمونه ۲: فلسطین — مقایسه دو انتفاضه}
+
+\begin{methodcard}{pinkPrimary}
+\textbf{انتفاضه اول (۱۹۸۷-۱۹۹۳):}
+\begin{itemize}
+  \item عمدتاً خشونت‌پرهیز + سنگ
+  \item تحریم، اعتصاب، کمیته‌های مردمی
+  \item \textbf{نتیجه:} توافق اسلو \textcolor{yellowPrimary}{\faExclamationTriangle}
+\end{itemize}
+
+\vspace{6pt}
+\textbf{انتفاضه دوم (۲۰۰۰-۲۰۰۵):}
+\begin{itemize}
+  \item عمدتاً مسلحانه
+  \item عملیات انتحاری، درگیری نظامی
+  \item \textbf{نتیجه:} شکست + تشدید اشغال \textcolor{redPrimary}{\faTimesCircle}
+\end{itemize}
+
+\vspace{6pt}
+\begin{notebox}[yellowPrimary]
+\textcolor{yellowPrimary}{\textbf{درس تاریخی:}} مقایسه دو انتفاضه یکی از بهترین شواهد تجربی برتری نسبی رویکرد خشونت‌پرهیز است. انتفاضه اول با هزینه انسانی بسیار کمتر، دستاورد سیاسی بیشتری داشت.
+\end{notebox}
+\end{methodcard}
+
+
+\subsection{نمونه ۳: انقلاب ایران ۱۳۵۷}
+
+\begin{methodcard}{pinkPrimary}
+\textbf{ترکیب:} عمدتاً خشونت‌پرهیز با عناصر خشن در مراحل پایانی.
+
+\begin{center}
+\small
+\begin{tabular}{r l}
+\toprule
+\textcolor{greenPrimary}{\faCircle} تظاهرات & راهپیمایی‌های میلیونی در خیابان‌ها \\
+\textcolor{bluePrimary}{\faCircle} اعتصاب & نفت، بازار، دانشگاه \\
+\textcolor{pinkPrimary}{\faCircle} مذهبی & چرخه اربعین، مسجد، منبر \\
+\textcolor{yellowPrimary}{\faCircle} خرابکاری & آتش زدن بانک‌ها، سینماها \\
+\textcolor{redPrimary}{\faCircle} خشونت & درگیری‌های ۲۱-۲۲ بهمن \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{نتیجه:} \textcolor{greenPrimary}{\faCheckCircle\ سرنگونی شاه} — اما \textcolor{redPrimary}{\faTimesCircle\ نه دموکراسی}
+
+\vspace{4pt}
+\begin{notebox}[orangePrimary]
+\textcolor{orangePrimary}{\textbf{نکته تحلیلی:}} انقلاب ۵۷ نشان می‌دهد که سرنگونی حکومت به تنهایی تضمین‌کننده آزادی نیست. فقدان برنامه سازنده و ساختارهای دموکراتیک آماده، منجر به جایگزینی یک اقتدارگرایی با دیگری شد.
+\end{notebox}
+\end{methodcard}
+
+
+\subsection{نمونه ۴: ایرلند شمالی}
+
+\begin{methodcard}{pinkPrimary}
+\textbf{ترکیب:} خشونت‌پرهیز + مسلحانه + سیاسی به‌صورت موازی.
+
+\begin{center}
+\small
+\begin{tabular}{r l}
+\toprule
+\textcolor{greenPrimary}{\faCircle} اعتراض & راهپیمایی حقوق مدنی \\
+\textcolor{redPrimary}{\faCircle} مسلحانه & عملیات IRA \\
+\textcolor{legalBlue}{\faCircle} سیاسی & شین فین در پارلمان \\
+\textcolor{purplePrimary}{\faCircle} اعتصاب غذا & بابی ساندز (۱۹۸۱) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{نتیجه:} \textcolor{greenPrimary}{\faCheckCircle} توافق جمعه نیک (۱۹۹۸) — پس از ۳۰ سال «دردسرها» (The Troubles)
+
+\vspace{4pt}
+\begin{notebox}
+\textcolor{yellowPrimary}{\textbf{نکته:}} صلح نهایتاً از طریق مذاکره و فرآیند سیاسی حاصل شد، نه از طریق پیروزی نظامی هیچ‌یک از طرفین.
+\end{notebox}
+\end{methodcard}
+
+
+% ═══════════════════════════════════════════════════
+% DECISION MATRIX
+% ═══════════════════════════════════════════════════
+
+\section{\textcolor{tealPrimary}{\faCompass} بخش یازدهم: ماتریس تصمیم‌گیری}
+
+\begin{sectionbox}{tealPrimary}
+کدام روش در چه شرایطی مناسب‌تر است؟ هیچ فرمول واحدی وجود ندارد، اما تحقیقات الگوهایی را نشان می‌دهد.
+\end{sectionbox}
+
+{
+\small
+\rowcolors{2}{deepcard}{cardbg}
+\begin{longtable}{
+  >{\raggedright\arraybackslash}p{4cm}
+  >{\raggedright\arraybackslash}p{4cm}
+  >{\raggedright\arraybackslash}p{5cm}
+}
+\toprule
+\rowcolor{midbg}
+\textcolor{white}{\textbf{شرایط}} &
+\textcolor{white}{\textbf{روش مناسب‌تر}} &
+\textcolor{white}{\textbf{دلیل}} \\
+\midrule
+\endhead
+
+حکومت به افکار عمومی حساس است &
+\textcolor{greenPrimary}{\faCircle} خشونت‌پرهیز نمادین &
+فشار اخلاقی و رسوایی مؤثر است \\
+
+سانسور شدید رسانه‌ای &
+\textcolor{purplePrimary}{\faCircle} دیجیتال + رسانه زیرزمینی &
+دور زدن سانسور و رسیدن به مخاطب \\
+
+اقتصاد وابسته به مشارکت مردم &
+\textcolor{bluePrimary}{\faCircle} اعتصاب و تحریم &
+فلج اقتصادی قدرت فوق‌العاده دارد \\
+
+جامعه چندقومیتی &
+\textcolor{greenPrimary}{\faCircle} فراگیرترین روش خشونت‌پرهیز &
+حفظ وحدت در تنوع \\
+
+سرکوب وحشیانه بدون مرز &
+\textcolor{yellowPrimary}{\faCircle} ترکیب خاکستری + بین‌المللی &
+فشار چندجانبه ضروری است \\
+
+اشغال نظامی خارجی &
+\textcolor{yellowPrimary}{\faCircle} ترکیبی (خشن + غیرخشن) &
+تاریخ نشان داده هر دو لازم‌اند \\
+
+نظام در آستانه فروپاشی &
+\textcolor{bluePrimary}{\faCircle} عدم‌همکاری سراسری &
+آخرین ضربه به ستون‌های قدرت \\
+
+جامعه بسیار سنتی/مذهبی &
+\textcolor{pinkPrimary}{\faCircle} فرهنگی + مذهبی &
+استفاده از زبان و نمادهای آشنا \\
+
+دیاسپورای قوی &
+\textcolor{legalBlue}{\faCircle} لابی بین‌المللی + حقوقی &
+فشار مؤثر از بیرون \\
+
+ارتش ضعیف / منقسم &
+\textcolor{greenPrimary}{\faCircle} خشونت‌پرهیز + جذب نظامیان &
+شکاف در ستون نظامی \\
+
+\bottomrule
+\end{longtable}
+}
+
+
+% ═══════════════════════════════════════════════════
+% SUCCESS FACTORS DIAGRAM
+% ═══════════════════════════════════════════════════
+
+\subsection{عوامل کلیدی موفقیت}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  scale=0.9,
+  transform shape,
+  factor/.style={
+    draw=#1,
+    fill=#1!8,
+    circle,
+    minimum size=2.2cm,
+    text=#1,
+    font=\scriptsize\bfseries,
+    align=center,
+    text width=2cm
+  },
+  center/.style={
+    draw=purplePrimary,
+    fill=darkbg,
+    circle,
+    minimum size=2.8cm,
+    text=white,
+    font=\small\bfseries,
+    align=center
+  }
+]
+
+% Center
+\node[center] (c) at (0,0) {عوامل\\موفقیت};
+
+% Factors around the center
+\node[factor=greenPrimary] (f1) at (90:4) {وحدت و\\انسجام};
+\node[factor=bluePrimary] (f2) at (38:4) {مشارکت\\گسترده};
+\node[factor=yellowDark] (f3) at (-14:4) {استراتژی\\منسجم};
+\node[factor=orangePrimary] (f4) at (-65:4) {تاب‌آوری و\\پایداری};
+\node[factor=purpleLight] (f5) at (-115:4) {جذب نیروهای\\حکومتی};
+\node[factor=pinkPrimary] (f6) at (-166:4) {حمایت\\بین‌المللی};
+\node[factor=greenLight] (f7) at (142:4) {رهبری\\(متمرکز/توزیعی)};
+
+% Connecting lines
+\foreach \f in {f1,f2,f3,f4,f5,f6,f7}{
+  \draw[textMuted, dashed, thin] (c) -- (\f);
+}
+
+\end{tikzpicture}
+\caption{هفت عامل کلیدی موفقیت جنبش‌های مقاومتی}
+\end{figure}
+
+
+% ═══════════════════════════════════════════════════
+% CONCENTRIC RINGS DIAGRAM
+% ═══════════════════════════════════════════════════
+
+\section{\textcolor{purpleLight}{\faBullseye} نمودار حلقوی جامع}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.85, transform shape]
+
+% Concentric rings (outermost = least violent)
+\fill[greenPrimary, opacity=0.08] (0,0) circle (7.5);
+\draw[greenPrimary, thick, dashed] (0,0) circle (7.5);
+
+\fill[bluePrimary, opacity=0.08] (0,0) circle (6.3);
+\draw[bluePrimary, thick, dashed] (0,0) circle (6.3);
+
+\fill[purplePrimary, opacity=0.08] (0,0) circle (5.1);
+\draw[purplePrimary, thick, dashed] (0,0) circle (5.1);
+
+\fill[yellowDark, opacity=0.08] (0,0) circle (4.0);
+\draw[yellowDark, thick, dashed] (0,0) circle (4.0);
+
+\fill[orangePrimary, opacity=0.08] (0,0) circle (3.0);
+\draw[orangePrimary, thick, dashed] (0,0) circle (3.0);
+
+\fill[redPrimary, opacity=0.08] (0,0) circle (2.0);
+\draw[redPrimary, thick, dashed] (0,0) circle (2.0);
+
+% Center
+\fill[darkbg] (0,0) circle (1.2);
+\draw[purpleLight] (0,0) circle (1.2);
+\node[text=purpleLight, font=\tiny\bfseries, align=center] at (0,0.15) {هدف نهایی:};
+\node[text=white, font=\scriptsize\bfseries] at (0,-0.15) {تغییر قدرت};
+\node[text=yellowPrimary, font=\tiny] at (0,-0.5) {آزادی و عدالت};
+
+% Ring labels (top)
+\node[greenPrimary, font=\tiny\bfseries] at (0,7.8) {اعتراض نمادین — بیانیه، تظاهرات، هنر};
+\node[bluePrimary, font=\tiny\bfseries] at (0,6.6) {عدم‌همکاری — اعتصاب، تحریم، نافرمانی};
+\node[purplePrimary, font=\tiny\bfseries] at (0,5.4) {مداخله و دیجیتال — اشغال، هکتیویسم};
+\node[yellowDark, font=\tiny\bfseries] at (0,4.25) {خاکستری — خرابکاری، کندکاری};
+\node[orangePrimary, font=\tiny\bfseries] at (0,3.2) {خشونت محدود};
+\node[redPrimary, font=\tiny\bfseries] at (0,2.2) {خشونت کامل};
+
+% Cross-cutting labels
+% Left: Legal
+\node[
+  draw=legalBlue,
+  fill=cardbg,
+  rounded corners=3pt,
+  font=\tiny\bfseries,
+  text=legalBlue,
+  align=center,
+  inner sep=4pt
+] at (-9,0) {حقوقی\\عرضی — همه سطوح};
+\draw[legalBlue, dashed, thin] (-8.2,0) -- (-5.5,0);
+
+% Right: Cultural
+\node[
+  draw=pinkPrimary,
+  fill=cardbg,
+  rounded corners=3pt,
+  font=\tiny\bfseries,
+  text=pinkPrimary,
+  align=center,
+  inner sep=4pt
+] at (9,0) {فرهنگی\\عرضی — همه سطوح};
+\draw[pinkPrimary, dashed, thin] (8.2,0) -- (5.5,0);
+
+% Bottom: Economic
+\node[
+  draw=econGreen,
+  fill=cardbg,
+  rounded corners=3pt,
+  font=\tiny\bfseries,
+  text=econGreen,
+  align=center,
+  inner sep=4pt
+] at (0,-9) {اقتصادی\\عرضی — همه سطوح};
+\draw[econGreen, dashed, thin] (0,-8.4) -- (0,-7.7);
+
+% Annotations
+% Left annotation: Success rate
+\node[
+  draw=greenPrimary,
+  fill=greenDark,
+  rounded corners=4pt,
+  font=\tiny,
+  text=textLight,
+  align=center,
+  text width=3.5cm,
+  inner sep=5pt
+] at (-9,-4) {
+  \textcolor{greenPrimary}{\textbf{نرخ موفقیت}}\\[3pt]
+  بیرونی‌ترین: $\sim$۵۳\%\\
+  درونی‌ترین: $\sim$۲۶\%\\[2pt]
+  \textcolor{textMuted}{\scriptsize هرچه به مرکز نزدیک‌تر}\\
+  \textcolor{textMuted}{\scriptsize = خشن‌تر = کم‌اثرتر}
+};
+
+% Right annotation: Participation
+\node[
+  draw=yellowPrimary,
+  fill=cardbg,
+  rounded corners=4pt,
+  font=\tiny,
+  text=textLight,
+  align=center,
+  text width=3.5cm,
+  inner sep=5pt
+] at (9,-4) {
+  \textcolor{yellowPrimary}{\textbf{مشارکت مردمی}}\\[3pt]
+  بیرونی: بیشترین\\
+  درونی: کمترین\\[2pt]
+  \textcolor{textMuted}{\scriptsize خشونت مانع مشارکت}\\
+  \textcolor{textMuted}{\scriptsize گسترده می‌شود}
+};
+
+\end{tikzpicture}
+\caption{نمودار حلقوی جامع — از بیرون به درون: افزایش خشونت، کاهش اثربخشی و مشارکت}
+\end{figure}
+
+
+% ═══════════════════════════════════════════════════
+% READING LIST
+% ═══════════════════════════════════════════════════
+
+\section{\textcolor{purpleLight}{\faBookOpen} منابع کلیدی برای مطالعه بیشتر}
+
+\subsection*{\textcolor{greenPrimary}{\faDove} خشونت‌پرهیزی}
+
+\begin{itemize}[label=\textcolor{greenPrimary}{\faBook}, leftmargin=20pt]
+  \item \textbf{Gene Sharp} — \textit{From Dictatorship to Democracy} (2010)
+  \item \textbf{Gene Sharp} — \textit{The Politics of Nonviolent Action} (3 vols, 1973)
+  \item \textbf{Erica Chenoweth \& Maria Stephan} — \textit{Why Civil Resistance Works} (2011)
+  \item \textbf{Mahatma Gandhi} — \textit{Hind Swaraj} (1909)
+  \item \textbf{Martin Luther King Jr.} — \textit{Letter from Birmingham Jail} (1963)
+  \item \textbf{V\'{a}clav Havel} — \textit{The Power of the Powerless} (1978)
+  \item \textbf{Srdja Popovic} — \textit{Blueprint for Revolution} (2015)
+\end{itemize}
+
+\subsection*{\textcolor{redPrimary}{\faFire} خشونت‌آمیز و انتقادی}
+
+\begin{itemize}[label=\textcolor{redPrimary}{\faBook}, leftmargin=20pt]
+  \item \textbf{Frantz Fanon} — \textit{The Wretched of the Earth} (1961)
+  \item \textbf{Mao Tse-tung} — \textit{On Guerrilla Warfare} (1937)
+  \item \textbf{Che Guevara} — \textit{Guerrilla Warfare} (1961)
+  \item \textbf{Carl von Clausewitz} — \textit{On War} (1832)
+  \item \textbf{Peter Gelderloos} — \textit{How Nonviolence Protects the State} (2007)
+\end{itemize}
+
+\subsection*{\textcolor{pinkPrimary}{\faTheaterMasks} فرهنگی و ساختاری}
+
+\begin{itemize}[label=\textcolor{pinkPrimary}{\faBook}, leftmargin=20pt]
+  \item \textbf{\lr{Antonio Gramsci}} — \textit{\lr{Prison Notebooks}} (1929-1935)
+  \item \textbf{\lr{Paulo Freire}} — \textit{\lr{Pedagogy of the Oppressed}} (1968)
+  \item \textbf{\lr{James C. Scott}} — \textit{\lr{Weapons of the Weak}} (1985)
+  \item \textbf{\lr{James C. Scott}} — \textit{\lr{Domination and the Arts of Resistance}} (1990)
+  \item \textbf{\lr{Saul Alinsky}} — \textit{\lr{Rules for Radicals}} (1971)
+\end{itemize}
+
+
+% ═══════════════════════════════════════════════════
+% FINAL TREE DIAGRAM
+% ═══════════════════════════════════════════════════
+
+\section{\textcolor{purpleLight}{\faProjectDiagram} نمودار درختی جامع}
+
+\section{\textcolor{purpleLight}{\faProjectDiagram} نمودار درختی جامع}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  scale=0.9,
+  transform shape,
+  root/.style={
+    draw=purplePrimary,
+    fill=white,
+    rounded corners=10pt,
+    font=\small\bfseries,
+    text=purplePrimary,
+    minimum width=4.5cm,
+    minimum height=1cm,
+    align=center,
+    line width=1.5pt,
+    inner sep=10pt,
+    z level=1
+  },
+  cat/.style={
+    draw=#1,
+    fill=white,
+    rounded corners=6pt,
+    font=\tiny\bfseries,
+    text=#1,
+    minimum width=2.8cm,
+    minimum height=0.7cm,
+    align=center,
+    line width=1.2pt
+  },
+  leaf/.style={
+    draw=#1!30,
+    fill=white,
+    rounded corners=3pt,
+    font=\tiny,
+    text=textDark,
+    minimum width=1.8cm,
+    minimum height=0.45cm,
+    align=center,
+    text width=1.7cm,
+    line width=0.4pt
+  },
+  conn/.style={draw=textMuted, opacity=0.3, thin},
+  edge from parent/.style={draw=textMuted, opacity=0.25, thin}
+]
+
+% Main Root
+\node[root] (RT) at (0,0) {\rl{روش‌های مبارزاتی}};
+
+% --- Tier 1 (2 categories) ---
+% Green
+\node[cat=greenPrimary] (C1) at (-3.2, -2) {\rl{اعتراض نمادین}};
+\foreach \i/\txt in {1/\rl{بیانیه}, 2/\rl{تظاهرات}, 3/\rl{اعتصاب غذا}, 4/\rl{هنر اعتراضی}, 5/\rl{نمادپردازی}, 6/\rl{عبادت اعتراضی}} {
+  \node[leaf=greenPrimary] (L1\i) at (-3.2, -2 - \i*0.65) {\txt};
+}
+\draw[conn] (RT.south) -- (C1.north);
+\draw[conn] (C1.south) -- (L11.north); \foreach \i in {1,...,5} { \pgfmathtruncatemacro{\next}{\i+1} \draw[conn] (L1\i.south) -- (L1\next.north); }
+
+% Blue
+\node[cat=bluePrimary] (C2) at (3.2, -2) {\rl{عدم‌همکاری}};
+\foreach \i/\txt in {1/\rl{تحریم اجتماعی}, 2/\rl{بایکوت اقتصادی}, 3/\rl{اعتصاب}, 4/\rl{نافرمانی مدنی}, 5/\rl{استعفای جمعی}, 6/\rl{حکومت موازی}} {
+  \node[leaf=bluePrimary] (L2\i) at (3.2, -2 - \i*0.65) {\txt};
+}
+\draw[conn] (RT.south) -- (C2.north);
+\draw[conn] (C2.south) -- (L21.north); \foreach \i in {1,...,5} { \pgfmathtruncatemacro{\next}{\i+1} \draw[conn] (L2\i.south) -- (L2\next.north); }
+
+% --- Tier 2 (3 categories) ---
+% Purple
+\node[cat=purplePrimary] (C3) at (-4.2, -7.5) {\rl{مداخله و دیجیتال}};
+\foreach \i/\txt in {1/\rl{اشغال / Sit-in}, 2/\rl{زنجیره انسانی}, 3/\rl{بسیج آنلاین}, 4/\rl{هکتیویسم}, 5/\rl{مستندسازی}, 6/\rl{ضد سانسور}} {
+  \node[leaf=purplePrimary] (L3\i) at (-4.2, -7.5 - \i*0.65) {\txt};
+}
+\draw[conn] (RT.south) -- (C3.north);
+\draw[conn] (C3.south) -- (L31.north); \foreach \i in {1,...,5} { \pgfmathtruncatemacro{\next}{\i+1} \draw[conn] (L3\i.south) -- (L3\next.north); }
+
+% Yellow
+\node[cat=yellowDark] (C4) at (0, -7.5) {\rl{منطقه خاکستری}};
+\foreach \i/\txt in {1/\rl{خرابکاری}, 2/\rl{کندکاری}, 3/\rl{شورش محدود}, 4/\rl{جنگ سایبری}} {
+  \node[leaf=yellowDark] (L4\i) at (0, -7.5 - \i*0.65) {\txt};
+}
+\draw[conn] (RT.south) -- (C4.north);
+\draw[conn] (C4.south) -- (L41.north); \foreach \i in {1,...,3} { \pgfmathtruncatemacro{\next}{\i+1} \draw[conn] (L4\i.south) -- (L4\next.north); }
+
+% Pink
+\node[cat=pinkPrimary] (C5) at (4.2, -7.5) {\rl{حقوقی / فرهنگی}};
+\foreach \i/\txt in {1/\rl{دادخواهی}, 2/ICC, 3/\rl{لابی‌گری}, 4/\rl{جنگ فرهنگی}, 5/\rl{طنز سیاسی}, 6/\rl{مقاومت روزمره}} {
+  \node[leaf=pinkPrimary] (L5\i) at (4.2, -7.5 - \i*0.65) {\txt};
+}
+\draw[conn] (RT.south) -- (C5.north);
+\draw[conn] (C5.south) -- (L51.north); \foreach \i in {1,...,5} { \pgfmathtruncatemacro{\next}{\i+1} \draw[conn] (L5\i.south) -- (L5\next.north); }
+
+% --- Tier 3 (2 categories) ---
+% Orange
+\node[cat=orangePrimary] (C6) at (-2.5, -13) {\rl{خشونت محدود}};
+\foreach \i/\txt in {1/\rl{ترور هدفمند}, 2/\rl{چریکی شهری}, 3/\rl{دفاع مسلحانه}} {
+  \node[leaf=orangePrimary] (L6\i) at (-2.5, -13 - \i*0.65) {\txt};
+}
+\draw[conn] (RT.south) -- (C6.north);
+\draw[conn] (C6.south) -- (L61.north); \foreach \i in {1,...,2} { \pgfmathtruncatemacro{\next}{\i+1} \draw[conn] (L6\i.south) -- (L6\next.north); }
+
+% Red
+\node[cat=redPrimary] (C7) at (2.5, -13) {\rl{خشونت تمام‌عیار}};
+\foreach \i/\txt in {1/\rl{جنگ چریکی}, 2/\rl{قیام مسلحانه}, 3/\rl{جنگ آزادی‌بخش}, 4/\rl{کودتا}, 5/\rl{جنگ داخلی}} {
+  \node[leaf=redPrimary] (L7\i) at (2.5, -13 - \i*0.65) {\txt};
+}
+\draw[conn] (RT.south) -- (C7.north);
+\draw[conn] (C7.south) -- (L71.north); \foreach \i in {1,...,4} { \pgfmathtruncatemacro{\next}{\i+1} \draw[conn] (L7\i.south) -- (L7\next.north); }
+
+\end{tikzpicture}
+\caption{نمودار درختی جامع روش‌های مبارزاتی — طبقه‌بندی سلسله‌مراتبی و عرضی}
+\end{figure}
+
+
+% ═══════════════════════════════════════════════════
+% FINAL SUMMARY
+% ═══════════════════════════════════════════════════
+
+\newpage
+
+\section*{\textcolor{purpleLight}{\faBullseye} جمع‌بندی نهایی}
+
+\begin{herobox}
+
+\begin{center}
+{\Large\bfseries\textcolor{white}{خلاصه دانشنامه جامع روش‌های مبارزاتی}}
+\end{center}
+
+\vspace{12pt}
+
+\textbf{\textcolor{purpleLight}{۷ دسته اصلی شناسایی‌شده:}}
+
+\vspace{8pt}
+
+\begin{enumerate}[label=\textcolor{purpleLight}{\arabic*.}, leftmargin=20pt]
+  \item \textcolor{greenPrimary}{\textbf{اعتراض نمادین}} — ۶ زیرروش اصلی
+  \item \textcolor{bluePrimary}{\textbf{عدم‌همکاری}} — ۱۲+ زیرروش اصلی
+  \item \textcolor{purplePrimary}{\textbf{مداخله خشونت‌پرهیز و دیجیتال}} — ۱۲+ زیرروش اصلی
+  \item \textcolor{yellowDark}{\textbf{منطقه خاکستری}} — ۶ زیرروش اصلی
+  \item \textcolor{orangePrimary}{\textbf{خشونت محدود}} — ۴ زیرروش اصلی
+  \item \textcolor{redPrimary}{\textbf{خشونت تمام‌عیار}} — ۸ زیرروش اصلی
+  \item \textcolor{pinkPrimary}{\textbf{حقوقی، فرهنگی و اقتصادی (عرضی)}} — ۱۵+ زیرروش
+\end{enumerate}
+
+\vspace{12pt}
+
+\textbf{\textcolor{purpleLight}{۶ چارچوب نظری:}} شارپ، گاندی، چنووث، فانون، مائو، گرامشی
+
+\vspace{12pt}
+
+\end{herobox}
+
+\vspace{12pt}
+
+\begin{summarybox}
+
+\begin{center}
+{\large\bfseries\textcolor{greenPrimary}{\faStar\ یافته کلیدی تحقیقات}}
+\end{center}
+
+\vspace{8pt}
+
+\begin{center}
+{\Large\bfseries\textcolor{greenLight}{جنبش‌های خشونت‌پرهیز ۲ برابر موفق‌ترند}}
+
+\vspace{4pt}
+
+{\large و \textbf{۱۰ برابر} بیشتر به دموکراسی پایدار منجر می‌شوند.}
+
+\vspace{8pt}
+
+\textcolor{yellowPrimary}{\faStar\ اگر ۳.۵\% جمعیت فعالانه مشارکت کنند، موفقیت تقریباً قطعی است.}
+\end{center}
+
+\end{summarybox}
+
+\vspace{12pt}
+
+\begin{center}
+\textcolor{textMuted}{\small
+مجموع روش‌های شناسایی‌شده: \textcolor{purpleLight}{\textbf{۶۸+ روش}} در \textcolor{purpleLight}{\textbf{۷ دسته اصلی}} و \textcolor{purpleLight}{\textbf{۶ چارچوب نظری}}\\[4pt]
+بر اساس آثار شارپ، چنووث، گاندی، گرامشی، فانون، مائو، فریره، اسکات و پوپوویچ\\[8pt]
+\textcolor{textMuted}{\rule{8cm}{0.5pt}}\\[4pt]
+تهیه‌شده برای مطالعه آکادمیک و تحلیلی
+}
+\end{center}
+
+
+\end{document}
