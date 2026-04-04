@@ -16,7 +16,7 @@ keywords:
   - واجب الوجود
 readingTime: 20
 difficulty: زیاد
-coverImage: /images/articles/covers/self-actualized-entity.png
+coverImage: /images/articles/covers/self-actualized-entity.webp
 showInContents: true
 imageDisplay: full
 cardImage: show

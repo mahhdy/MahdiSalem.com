@@ -12,9 +12,18 @@
 
 ## Content Pipeline & Schema
 
-- Content files: Markdown/MDX, frontmatter includes title, description, lang, publishDate, categories, tags, interface, draft
-- Books: folder per book, `index.md` for overview, chapters as `.md` files, `pdfUrl` for PDF, `showPdfViewer: true` for viewer
-- Scripts/Pipeline:
+- **Schema**: Defined in `src/content.config.ts`. Extends the basic Astro `zod` schema with:
+  - **Visual Controls**: `imageDisplay`, `cardImage` for granular layout control.
+  - **Multimedia**: Specific fields for `duration`, `platform` (YouTube/Self-hosted), and `mediaUrl`.
+  - **Governance**: `draft`, `hidden`, and `aiRole` (to track AI assistance levels).
+  - **Extended PDF/Slides**: `pdfUrl`, `showPdfViewer`, `hasSlide`, `slideArray`.
+
+- **Books**: Now structured as **folders** per book. 
+  - `src/content/books/{fa|en}/{book-slug}/index.mdx` is the entry point.
+  - Chapters are separate `.mdx` files in the same folder.
+  - `bookSlug` field links chapters to summaries.
+
+- **Scripts/Pipeline**:
   - `process-content.mjs`: Core pipeline for converting LaTeX, DOCX, and HTML to MDX.
   - Mermaid Processor: Automated Farsi support and interactive controls (Zoom/Pan).
   - Archiving: Automatic movement of processed source files to `content-source/Archive/YYYYMMDD`.

@@ -19,7 +19,7 @@ readingTime: 500
 difficulty: "ساده"
 showInContents: true
 slug: "liberation-methods"
-coverImage: /images/articles/covers/iran-transition-article-cover.png
+coverImage: /images/articles/covers/iran-transition-article-cover.webp
 date: 2026-03-30
 tags:
   - "خشونت"

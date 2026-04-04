@@ -82,22 +82,47 @@ Alternatively, you can run them individually:
 
 ### Content Structure
 
-All content must be placed in `src/content/` under the respective collection (`articles`, `books`, `statements`, `multimedia`) and localized folder (`fa/` or `en/`).
+All content is managed through Astro Content Collections in `src/content/`. Each collection has specific rules:
 
-- **Format:** All content uses MDX (`.mdx`).
-- **Books:** Books use a single `index.mdx` entry containing all chapters.
-- **Frontmatter Headers:** By default, layout components hide the primary `H1` in articles/books to prevent redundancy. Override with `showheader: true` if needed.
+- **Articles**: Single `.mdx` files in `src/content/articles/{fa|en}/`.
+- **Books**: Folder-based structure in `src/content/books/{fa|en}/`. Each folder represents a book and contains:
+  - `index.mdx`: The main book entry (metadata for the cover, description, etc.).
+  - `chapter-*.mdx`: Individual chapter files.
+- **Multimedia**: Single `.mdx` files in `src/content/multimedia/{fa|en}/`.
+- **Statements/Wiki**: Markdown/MDX files in their respective folders.
 
-### Cover Image Display Control
+### Metadata (Frontmatter) Rules
 
-Two frontmatter fields control how cover images appear:
+The site uses a rich schema defined in `src/content.config.ts`. Every piece of content should include:
 
-- **`imageDisplay`**: Controls image rendering on the **detail page**.
-  - `full` (default) — full-width banner image above content
-  - `side` — small image beside the title/header
-  - `thumbnail` — tiny icon-sized image next to title
-  - `hidden` — image exists in frontmatter but is not rendered on the page
-  - *Multimedia pages default to `side` so the media player stays prominent.*
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| `title` | string | The headline of the content. |
+| `description` | string | A short summary for SEO and cards. |
+| `lang` | "fa" \| "en" | Language of the content. |
+| `publishDate` | date | ISO date (e.g., 2024-04-03). |
+| `coverImage` | string | Path to image (e.g., `/images/articles/covers/my-img.png`). |
+| `imageDisplay` | enum | `full` (banner), `side` (beside title), `thumbnail`, `hidden`. |
+| `cardImage` | enum | `show` or `hidden` (control visibility in lists). |
+| `draft` | boolean | If `true`, only shown in admin/dev. |
+| `hidden` | boolean | If `true`, hidden from site unless forced. |
+| `aiRole` | enum | `human`, `ai-visual`, `ai-generated`, etc. (Track AI usage). |
+
+**Book-Specific Metadata:**
+- `bookSlug`: (For chapters) The slug of the parent book folder.
+- `chapterNumber`: (For chapters) Numeric order for navigation.
+- `pdfUrl`: Path to a downloadable PDF.
+- `showPdfViewer`: `true` to enable the in-page PDF reader.
+
+### Pushing Content & Real-Time Updates
+
+The website is deployed via **Cloudflare Pages**, which automatically builds and deploys on every push to the `main` branch.
+
+1. **Local Prep**: Use the Admin Panel (`npm run admin:dev`) to create/edit content and metadata.
+2. **Commit**: `git add .` then `git commit -m "feat: add new article [title]"`
+3. **Push**: `git push origin main`
+4. **Build**: Cloudflare will start a build automatically. Monitor progress at `https://dash.cloudflare.com`.
+5. **Verify**: The deployment is live within 2-3 minutes.
 
 - **`cardImage`**: Controls image rendering in **card/list views**.
   - `show` (default) — cover image is visible in article/book cards

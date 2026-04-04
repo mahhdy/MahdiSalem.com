@@ -17,7 +17,7 @@ hidden: false
 draft: false
 readingTime: 40
 difficulty: متوسط
-coverImage: "/images/dialogues/covers/me-manoochehr-ethics-dialogue-cover.png"
+coverImage: "/images/dialogues/covers/me-manoochehr-ethics-dialogue-cover.webp"
 pdfOnly: false
 showPdfViewer: false
 showInContents: true

@@ -44,6 +44,16 @@ Help translate content between Persian and English:
 - Sources should be cited where applicable
 - Content should align with the mission of promoting democracy and human rights
 
+### Maintainer Guidelines / راهنمای مدیران محتوا
+
+For those adding direct content (Articles, Books, Wiki):
+
+1. **Content Structure**: Follow the folder-based structure for Books (see `README.md`).
+2. **Metadata Consistency**: Ensure every `.mdx` file has the required frontmatter (`title`, `lang`, `publishDate`, `imageDisplay`, etc.).
+3. **Draft Workflow**: Use `draft: true` while editing. Remove it once the content is ready for the public.
+4. **Pushing to Live**: Commit and push directly to the `main` branch to trigger an automatic Cloudflare Pages deployment.
+5. **Technical References**: Detailed metadata rules are available in the **[README.md](./README.md)**.
+
 ## Code Contributions / مشارکت در کد
 
 1. Fork the repository
