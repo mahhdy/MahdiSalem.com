@@ -1,0 +1,211 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+  </style>
+  <linearGradient id="bg43" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0a0e27"/>
+    <stop offset="50%" stop-color="#0d1333"/>
+    <stop offset="100%" stop-color="#1a0a1e"/>
+  </linearGradient>
+  <filter id="sh43"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#bg43)"/>
+
+<!-- Header -->
+<text x="960" y="45" fill="#fff" font-size="32" font-weight="900" text-anchor="middle">🎓 فروپاشی آموزش: نسلی که از مدرسه محروم شد</text>
+<text x="960" y="72" fill="#d4af37" font-size="15" font-weight="400" text-anchor="middle">عراق ۱۹۸۰: بهترین سیستم آموزشی عرب — عراق ۲۰۲۳: ۳.۵ میلیون کودک خارج مدرسه</text>
+<line x1="150" y1="88" x2="1770" y2="88" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ====== TOP LEFT: BEFORE/AFTER COMPARISON ====== -->
+<rect x="60" y="105" width="580" height="370" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh43)"/>
+<text x="350" y="135" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📅 قبل و بعد — مقایسه آموزشی</text>
+
+<!-- 1980 Era (Golden) -->
+<rect x="80" y="150" width="250" height="305" rx="10" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+<text x="205" y="175" fill="#2ecc71" font-size="13" font-weight="900" text-anchor="middle">عراق ۱۹۸۰</text>
+<text x="205" y="192" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">«عصر طلایی آموزش عرب»</text>
+
+<text x="100" y="218" fill="rgba(255,255,255,0.6)" font-size="10">✅ باسوادی: ۸۹%</text>
+<text x="100" y="238" fill="rgba(255,255,255,0.6)" font-size="10">✅ جایزه UNESCO (ریشه‌کنی بیسوادی)</text>
+<text x="100" y="258" fill="rgba(255,255,255,0.6)" font-size="10">✅ آموزش رایگان تا دانشگاه</text>
+<text x="100" y="278" fill="rgba(255,255,255,0.6)" font-size="10">✅ بورسیه خارجی گسترده</text>
+<text x="100" y="298" fill="rgba(255,255,255,0.6)" font-size="10">✅ ۵۲% دانشجویان زن</text>
+<text x="100" y="318" fill="rgba(255,255,255,0.6)" font-size="10">✅ ۲۰ دانشگاه معتبر</text>
+<text x="100" y="338" fill="rgba(255,255,255,0.6)" font-size="10">✅ تحقیقات هسته‌ای/پزشکی</text>
+<text x="100" y="358" fill="rgba(255,255,255,0.6)" font-size="10">✅ نرخ ثبت‌نام ابتدایی: ۱۰۰%</text>
+
+<rect x="100" y="370" width="190" height="25" rx="4" fill="rgba(46,204,113,0.15)"/>
+<text x="195" y="388" fill="#2ecc71" font-size="11" font-weight="700" text-anchor="middle">رتبه ۱ عرب</text>
+
+<!-- 2023 Era (Devastated) -->
+<rect x="345" y="150" width="270" height="305" rx="10" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="480" y="175" fill="#e74c3c" font-size="13" font-weight="900" text-anchor="middle">عراق ۲۰۲۳</text>
+<text x="480" y="192" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">«نسل گمشده»</text>
+
+<text x="365" y="218" fill="rgba(255,255,255,0.6)" font-size="10">❌ باسوادی: ۸۰% (سقوط ۹ واحد)</text>
+<text x="365" y="238" fill="rgba(255,255,255,0.6)" font-size="10">❌ ۳.۵M کودک خارج مدرسه</text>
+<text x="365" y="258" fill="rgba(255,255,255,0.6)" font-size="10">❌ ۸,۰۰۰ مدرسه تخریب شده</text>
+<text x="365" y="278" fill="rgba(255,255,255,0.6)" font-size="10">❌ ۳ شیفته شدن مدارس</text>
+<text x="365" y="298" fill="rgba(255,255,255,0.6)" font-size="10">❌ فرار اساتید (۸۴+ ترور شدند)</text>
+<text x="365" y="318" fill="rgba(255,255,255,0.6)" font-size="10">❌ مدرک‌فروشی سیستماتیک</text>
+<text x="365" y="338" fill="rgba(255,255,255,0.6)" font-size="10">❌ ۰ دانشگاه در Top 500</text>
+<text x="365" y="358" fill="rgba(255,255,255,0.6)" font-size="10">❌ ترک تحصیل: ۳۰%+</text>
+
+<rect x="365" y="370" width="220" height="25" rx="4" fill="rgba(231,76,60,0.15)"/>
+<text x="475" y="388" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">رتبه ۱۵+ عرب</text>
+
+<!-- ====== TOP MIDDLE: LITERACY & ENROLLMENT TRENDS ====== -->
+<rect x="665" y="105" width="600" height="370" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh43)"/>
+<text x="965" y="135" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📉 روند باسوادی و ثبت‌نام ۱۹۸۰–۲۰۲۳</text>
+
+<!-- Chart area -->
+<!-- Y axis -->
+<text x="700" y="170" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="end">100%</text>
+<text x="700" y="230" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="end">80%</text>
+<text x="700" y="290" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="end">60%</text>
+<text x="700" y="350" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="end">40%</text>
+<text x="700" y="410" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="end">20%</text>
+
+<!-- Grid -->
+<line x1="710" y1="168" x2="1230" y2="168" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<line x1="710" y1="228" x2="1230" y2="228" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<line x1="710" y1="288" x2="1230" y2="288" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<line x1="710" y1="348" x2="1230" y2="348" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<line x1="710" y1="408" x2="1230" y2="408" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+<!-- X axis -->
+<text x="740" y="440" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">۱۹۸۰</text>
+<text x="850" y="440" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">۱۹۹۰</text>
+<text x="960" y="440" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">۲۰۰۳</text>
+<text x="1070" y="440" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">۲۰۱۴</text>
+<text x="1180" y="440" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">۲۰۲۳</text>
+
+<!-- Invasion line -->
+<line x1="960" y1="158" x2="960" y2="430" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.5"/>
+
+<!-- Literacy line (Iraq) -->
+<polyline points="740,178 850,188 960,218 1070,238 1180,228" fill="none" stroke="#ff9800" stroke-width="2.5"/>
+<text x="1190" y="224" fill="#ff9800" font-size="9" font-weight="700">باسوادی ۸۰%</text>
+
+<!-- Primary enrollment -->
+<polyline points="740,168 850,173 960,228 1070,288 1180,248" fill="none" stroke="#00b4d8" stroke-width="2" stroke-dasharray="6,3"/>
+<text x="1190" y="244" fill="#00b4d8" font-size="9" font-weight="700">ثبت‌نام ابتدایی ۸۵%</text>
+
+<!-- Secondary enrollment -->
+<polyline points="740,228 850,248 960,318 1070,358 1180,328" fill="none" stroke="#9b59b6" stroke-width="2" stroke-dasharray="6,3"/>
+<text x="1190" y="324" fill="#9b59b6" font-size="9" font-weight="700">متوسطه ۴۵%</text>
+
+<!-- Iran reference -->
+<polyline points="740,268 850,228 960,198 1070,188 1180,178" fill="none" stroke="#2ecc71" stroke-width="1.5" opacity="0.5"/>
+<text x="1190" y="174" fill="#2ecc71" font-size="8" opacity="0.6">ایران ۹۷%</text>
+
+<!-- Legend -->
+<rect x="720" y="455" width="10" height="10" rx="2" fill="#ff9800"/>
+<text x="735" y="464" fill="rgba(255,255,255,0.5)" font-size="8">باسوادی عراق</text>
+<rect x="830" y="455" width="10" height="10" rx="2" fill="#00b4d8"/>
+<text x="845" y="464" fill="rgba(255,255,255,0.5)" font-size="8">ثبت‌نام ابتدایی</text>
+<rect x="950" y="455" width="10" height="10" rx="2" fill="#9b59b6"/>
+<text x="965" y="464" fill="rgba(255,255,255,0.5)" font-size="8">متوسطه</text>
+<rect x="1040" y="455" width="10" height="10" rx="2" fill="#2ecc71"/>
+<text x="1055" y="464" fill="rgba(255,255,255,0.5)" font-size="8">ایران (مرجع)</text>
+
+<!-- ====== TOP RIGHT: BRAIN DRAIN ====== -->
+<rect x="1290" y="105" width="570" height="370" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh43)"/>
+<text x="1575" y="135" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">🧠 فرار مغزها — بزرگ‌ترین فاجعه خاموش</text>
+
+<!-- Brain drain stats -->
+<rect x="1310" y="155" width="530" height="55" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="1325" y="178" fill="#e74c3c" font-size="18" font-weight="900">۴۰%</text>
+<text x="1395" y="175" fill="rgba(255,255,255,0.6)" font-size="11">پزشکان عراقی از کشور رفتند</text>
+<text x="1395" y="195" fill="rgba(255,255,255,0.35)" font-size="9">۲۰۰۳–۲۰۰۶: ۱۲,۰۰۰ پزشک فرار</text>
+
+<rect x="1310" y="218" width="530" height="55" rx="8" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+<text x="1325" y="241" fill="#ff9800" font-size="18" font-weight="900">۸۴+</text>
+<text x="1395" y="238" fill="rgba(255,255,255,0.6)" font-size="11">استاد دانشگاه ترور شده</text>
+<text x="1395" y="258" fill="rgba(255,255,255,0.35)" font-size="9">هدف‌گیری سیستماتیک نخبگان ۲۰۰۳-۲۰۰۷</text>
+
+<rect x="1310" y="281" width="530" height="55" rx="8" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.12)" stroke-width="1"/>
+<text x="1325" y="304" fill="#00b4d8" font-size="18" font-weight="900">۶,۰۰۰+</text>
+<text x="1425" y="301" fill="rgba(255,255,255,0.6)" font-size="11">استاد دانشگاه فرار کرده</text>
+<text x="1425" y="321" fill="rgba(255,255,255,0.35)" font-size="9">از ۱۸,۰۰۰ استاد → ۱۲,۰۰۰ باقی (کیفیت↓)</text>
+
+<rect x="1310" y="344" width="530" height="55" rx="8" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+<text x="1325" y="367" fill="#9b59b6" font-size="18" font-weight="900">۲M+</text>
+<text x="1395" y="364" fill="rgba(255,255,255,0.6)" font-size="11">نخبه و تحصیلکرده مهاجرت کرده</text>
+<text x="1395" y="384" fill="rgba(255,255,255,0.35)" font-size="9">اردن، سوئد، آمریکا، استرالیا — بازگشت: نزدیک صفر</text>
+
+<rect x="1310" y="410" width="530" height="48" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="1575" y="432" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">⚠️ عراق: تنها کشوری که نخبگانش هدف‌گیری شدند</text>
+<text x="1575" y="448" fill="rgba(255,255,255,0.35)" font-size="9" text-anchor="middle">بازسازی بدون مغز: مثل ساختن بیمارستان بدون پزشک</text>
+
+<!-- ====== BOTTOM: SCHOOL INFRASTRUCTURE ====== -->
+<rect x="60" y="495" width="900" height="200" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh43)"/>
+<text x="510" y="525" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">🏫 زیرساخت آموزشی — ارقام تکان‌دهنده</text>
+
+<g transform="translate(85,540)">
+  <rect x="0" y="0" width="170" height="65" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="85" y="22" fill="#e74c3c" font-size="20" font-weight="900" text-anchor="middle">۸,۰۰۰+</text>
+  <text x="85" y="42" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">مدرسه تخریب/آسیب‌دیده</text>
+  <text x="85" y="56" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">از ۲۲,۰۰۰ مدرسه</text>
+
+  <rect x="185" y="0" width="170" height="65" rx="8" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="270" y="22" fill="#ff9800" font-size="20" font-weight="900" text-anchor="middle">۳ شیفت</text>
+  <text x="270" y="42" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">مدارس ۳ شیفته</text>
+  <text x="270" y="56" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">هر شیفت ۲.۵ ساعت</text>
+
+  <rect x="370" y="0" width="170" height="65" rx="8" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.12)" stroke-width="1"/>
+  <text x="455" y="22" fill="#00b4d8" font-size="20" font-weight="900" text-anchor="middle">۵۰:۱</text>
+  <text x="455" y="42" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">نسبت دانش‌آموز/معلم</text>
+  <text x="455" y="56" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">(استاندارد: ۲۵:۱)</text>
+
+  <rect x="555" y="0" width="170" height="65" rx="8" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+  <text x="640" y="22" fill="#9b59b6" font-size="20" font-weight="900" text-anchor="middle">$۱۲۰</text>
+  <text x="640" y="42" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">هزینه سالانه/دانش‌آموز</text>
+  <text x="640" y="56" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">(ایران: $۱,۲۰۰ | ترکیه: $۳,۵۰۰)</text>
+
+  <rect x="740" y="0" width="130" height="65" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="805" y="22" fill="#e74c3c" font-size="20" font-weight="900" text-anchor="middle">۳۰%</text>
+  <text x="805" y="42" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">ترک تحصیل</text>
+  <text x="805" y="56" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">(دختران: ۴۰%+)</text>
+</g>
+
+<rect x="85" y="620" width="850" height="55" rx="8" fill="rgba(231,76,60,0.05)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="510" y="642" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">⚡ نیاز فوری: ۸,۰۰۰ مدرسه جدید | ۱۰۰,۰۰۰ معلم | بودجه ×۱۰</text>
+<text x="510" y="660" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">بودجه آموزش عراق: ≈۶% از بودجه کل (استاندارد جهانی: ۱۵-۲۰%)</text>
+
+<!-- ====== BOTTOM RIGHT: GENERATION IMPACT ====== -->
+<rect x="985" y="495" width="870" height="200" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh43)"/>
+<text x="1420" y="525" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">👨‍👩‍👧‍👦 تأثیر نسلی — ۳ نسل از دست رفته</text>
+
+<rect x="1010" y="540" width="260" height="70" rx="8" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+<text x="1140" y="562" fill="#ff9800" font-size="12" font-weight="700" text-anchor="middle">نسل ۱: تحریم (۱۹۹۰–۲۰۰۳)</text>
+<text x="1140" y="580" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">سقوط کیفیت، کمبود کتاب و تجهیزات</text>
+<text x="1140" y="596" fill="rgba(255,255,255,0.3)" font-size="8" text-anchor="middle">≈۵M کودک آسیب‌دیده</text>
+
+<rect x="1285" y="540" width="260" height="70" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="1415" y="562" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">نسل ۲: جنگ (۲۰۰۳–۲۰۱۴)</text>
+<text x="1415" y="580" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">ناامنی، آوارگی، ترور اساتید</text>
+<text x="1415" y="596" fill="rgba(255,255,255,0.3)" font-size="8" text-anchor="middle">≈۴M کودک خارج مدرسه</text>
+
+<rect x="1560" y="540" width="270" height="70" rx="8" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+<text x="1695" y="562" fill="#9b59b6" font-size="12" font-weight="700" text-anchor="middle">نسل ۳: داعش+ (۲۰۱۴–۲۰۲۳)</text>
+<text x="1695" y="580" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">ویرانی مدارس، آموزش داعشی</text>
+<text x="1695" y="596" fill="rgba(255,255,255,0.3)" font-size="8" text-anchor="middle">≈۳.۵M کودک محروم</text>
+
+<rect x="1010" y="620" width="820" height="55" rx="8" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+<text x="1420" y="642" fill="#d4af37" font-size="11" font-weight="700" text-anchor="middle">🔮 پیامد بلندمدت: نسلی بدون مهارت = بیکاری مزمن = جذب در شبه‌نظامیان</text>
+<text x="1420" y="660" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">چرخه معیوب: بی‌سوادی → بیکاری → خشونت → آوارگی → بی‌سوادی نسل بعد</text>
+
+<!-- ====== BOTTOM NOTE ====== -->
+<rect x="60" y="715" width="1800" height="60" rx="10" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+<text x="960" y="740" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📌 ملتی که نخبگانش کشته یا فراری شدند، نمی‌تواند بازسازی کند — مغز ملت، بمباران شد</text>
+<text x="960" y="760" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">از UNESCO Award 1982 تا «۳.۵ میلیون کودک بی‌مدرسه» ۲۰۲۳ — این فاصله نام‌اش «آزادسازی» بود</text>
+
+<!-- Footer -->
+<text x="60" y="42" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 43 / 60</text>
+<text x="1860" y="42" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۸: توسعه انسانی</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: UNESCO, UNICEF, World Bank Education Stats, Iraqi Ministry of Education, BRussells Tribunal</text>
+</svg>

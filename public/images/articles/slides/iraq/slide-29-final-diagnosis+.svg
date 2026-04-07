@@ -1,0 +1,133 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill:#0a0e27; }
+    .title { fill:#fff; font-size:32px; font-weight:900; text-anchor:middle; }
+    .subtitle { fill:#d4af37; font-size:16px; text-anchor:middle; }
+    .glass { rx:16; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .label { font-size:14px; font-weight:700; text-anchor:middle; }
+    .big { font-size:26px; font-weight:900; text-anchor:middle; }
+    .small { fill:rgba(255,255,255,0.65); font-size:12px; text-anchor:middle; }
+    .mini { fill:rgba(255,255,255,0.35); font-size:11px; text-anchor:middle; }
+    .num { font-size:30px; font-weight:900; text-anchor:middle; }
+    .axis { stroke:rgba(255,255,255,0.10); stroke-width:1; }
+    .axis-label { fill:rgba(255,255,255,0.55); font-size:12px; font-weight:700; }
+    .quote { fill:#fff; font-size:28px; font-weight:900; text-anchor:middle; }
+    .quote2 { fill:#d4af37; font-size:22px; font-weight:800; text-anchor:middle; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#000" flood-opacity="0.35"/></filter>
+  <radialGradient id="core-g" cx="50%" cy="50%" r="60%">
+    <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.28"/>
+    <stop offset="55%" stop-color="#ff9800" stop-opacity="0.14"/>
+    <stop offset="100%" stop-color="#0a0e27" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="diag-g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#2ecc71" stop-opacity="0.8"/>
+    <stop offset="50%" stop-color="#d4af37" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#e74c3c" stop-opacity="0.85"/>
+  </linearGradient>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+
+<text x="960" y="44" class="title">عراق در یک جمله: تشخیص نهایی</text>
+<text x="960" y="70" class="subtitle">یک اسلاید جمع‌بندی برای فشرده‌سازی ۲۵ سال بحران در یک تصویر</text>
+<line x1="230" y1="86" x2="1690" y2="86" stroke="#d4af37" stroke-width="1" opacity="0.35"/>
+
+<!-- Main quote -->
+<rect x="150" y="110" width="1620" height="130" class="glass" filter="url(#sh)"/>
+<text x="960" y="160" class="quote">عراقِ پس از ۲۰۰۳ نه «آزاد» شد، نه «بازسازی»؛ بلکه از یک دیکتاتوری متمرکز</text>
+<text x="960" y="198" class="quote2">به یک دولت ضعیفِ رانتی، فرقه‌ای و میدان‌دارِ نیروهای داخلی و خارجی تبدیل شد</text>
+
+<!-- Center diagnosis map -->
+<rect x="90" y="270" width="1140" height="620" class="glass" filter="url(#sh)"/>
+<text x="660" y="306" fill="#d4af37" font-size="18" font-weight="800" text-anchor="middle">ماتریس تشخیصی عراق امروز</text>
+<line x1="180" y1="580" x2="1140" y2="580" class="axis"/>
+<line x1="660" y1="360" x2="660" y2="850" class="axis"/>
+
+<text x="660" y="348" class="axis-label" text-anchor="middle">مشروعیت بالا</text>
+<text x="660" y="874" class="axis-label" text-anchor="middle">مشروعیت پایین</text>
+<text x="160" y="585" class="axis-label" text-anchor="end">ظرفیت دولت پایین</text>
+<text x="1160" y="585" class="axis-label">ظرفیت دولت بالا</text>
+
+<!-- Quadrants -->
+<rect x="180" y="360" width="480" height="220" rx="16" fill="rgba(46,204,113,0.04)" stroke="rgba(46,204,113,0.10)"/>
+<rect x="660" y="360" width="480" height="220" rx="16" fill="rgba(52,152,219,0.04)" stroke="rgba(52,152,219,0.10)"/>
+<rect x="180" y="580" width="480" height="270" rx="16" fill="rgba(231,76,60,0.05)" stroke="rgba(231,76,60,0.12)"/>
+<rect x="660" y="580" width="480" height="270" rx="16" fill="rgba(241,196,15,0.05)" stroke="rgba(241,196,15,0.12)"/>
+
+<text x="420" y="392" fill="#2ecc71" font-size="15" font-weight="800" text-anchor="middle">دولت آرمانی</text>
+<text x="900" y="392" fill="#3498db" font-size="15" font-weight="800" text-anchor="middle">اقتدار کارآمد اما مشروع</text>
+<text x="420" y="612" fill="#e74c3c" font-size="15" font-weight="800" text-anchor="middle">فروپاشی / دولت شکست‌خورده</text>
+<text x="900" y="612" fill="#f1c40f" font-size="15" font-weight="800" text-anchor="middle">دولت قوی اما کم‌مشروعیت</text>
+
+<!-- Iraq point -->
+<circle cx="760" cy="710" r="130" fill="url(#core-g)"/>
+<circle cx="760" cy="710" r="18" fill="#e74c3c" stroke="#fff" stroke-width="3"/>
+<line x1="760" y1="710" x2="980" y2="680" stroke="url(#diag-g)" stroke-width="3"/>
+<rect x="995" y="635" width="170" height="90" rx="14" fill="rgba(231,76,60,0.10)" stroke="rgba(231,76,60,0.25)" filter="url(#sh)"/>
+<text x="1080" y="668" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">عراق ۲۰۲۴</text>
+<text x="1080" y="691" fill="#fff" font-size="13" font-weight="700" text-anchor="middle">ظرفیت متوسط/ضعیف</text>
+<text x="1080" y="711" fill="rgba(255,255,255,0.6)" font-size="12" text-anchor="middle">مشروعیت پایین</text>
+
+<!-- Diagnosis labels -->
+<g transform="translate(220,420)">
+  <rect x="0" y="0" width="170" height="42" rx="10" fill="rgba(255,255,255,0.04)"/>
+  <text x="85" y="18" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">جایگاه عراق:</text>
+  <text x="85" y="34" fill="#e74c3c" font-size="12" font-weight="800" text-anchor="middle">دولت ضعیفِ زنده‌مانده</text>
+</g>
+<g transform="translate(220,480)">
+  <rect x="0" y="0" width="400" height="130" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)"/>
+  <text x="380" y="28" fill="#d4af37" font-size="14" font-weight="800" text-anchor="end">علائم اصلی</text>
+  <text x="380" y="55" fill="rgba(255,255,255,0.66)" font-size="12" text-anchor="end">• انحصار خشونت ناقص: دولت + حشد + احزاب + عشایر</text>
+  <text x="380" y="78" fill="rgba(255,255,255,0.66)" font-size="12" text-anchor="end">• درآمد بالا، خدمات ضعیف: نفت هست؛ دولت کارآمد نیست</text>
+  <text x="380" y="101" fill="rgba(255,255,255,0.66)" font-size="12" text-anchor="end">• انتخابات هست؛ پاسخ‌گویی واقعی ضعیف است</text>
+  <text x="380" y="124" fill="rgba(255,255,255,0.66)" font-size="12" text-anchor="end">• کشور واحد مانده؛ اما انسجام ملی هنوز شکننده است</text>
+</g>
+
+<!-- Right stats -->
+<rect x="1270" y="270" width="560" height="620" class="glass" filter="url(#sh)"/>
+<text x="1550" y="306" fill="#d4af37" font-size="18" font-weight="800" text-anchor="middle">عراق در ۵ شاخص خلاصه</text>
+
+<g transform="translate(1310,340)">
+  <rect x="0" y="0" width="240" height="90" rx="14" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.18)"/>
+  <text x="120" y="38" class="num" fill="#e74c3c">ضعیف</text>
+  <text x="120" y="65" class="small">مشروعیت دولت</text>
+
+  <rect x="260" y="0" width="240" height="90" rx="14" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.18)"/>
+  <text x="380" y="38" class="num" fill="#ff9800">متوسط</text>
+  <text x="380" y="65" class="small">توان امنیتی</text>
+
+  <rect x="0" y="110" width="240" height="90" rx="14" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.18)"/>
+  <text x="120" y="148" class="num" fill="#2ecc71">بالا</text>
+  <text x="120" y="175" class="small">درآمد نفتی</text>
+
+  <rect x="260" y="110" width="240" height="90" rx="14" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.18)"/>
+  <text x="380" y="148" class="num" fill="#9b59b6">بسیار بالا</text>
+  <text x="380" y="175" class="small">نفوذ خارجی</text>
+
+  <rect x="0" y="220" width="500" height="90" rx="14" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.18)"/>
+  <text x="250" y="258" class="num" fill="#00b4d8">بلاتکلیف</text>
+  <text x="250" y="285" class="small">آینده ساخت دولت-ملت</text>
+</g>
+
+<!-- One sentence decomposition -->
+<rect x="1310" y="675" width="500" height="170" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+<text x="1560" y="705" fill="#ffffff" font-size="16" font-weight="900" text-anchor="middle">اگر بخواهیم عراق را در یک جمله بگوییم:</text>
+<text x="1560" y="740" fill="#d4af37" font-size="20" font-weight="900" text-anchor="middle">«کشوری ثروتمند، اما دولتی فقیر»</text>
+<text x="1560" y="770" fill="rgba(255,255,255,0.68)" font-size="13" text-anchor="middle">ثروت زیر زمین هست، اما نظم سیاسی نمی‌گذارد به رفاه عمومی تبدیل شود</text>
+<text x="1560" y="795" fill="rgba(255,255,255,0.68)" font-size="13" text-anchor="middle">نه کاملاً شکست‌خورده، نه واقعاً تثبیت‌شده؛ بلکه در وضعیت تعلیق مزمن</text>
+<text x="1560" y="820" fill="#e74c3c" font-size="13" font-weight="800" text-anchor="middle">بزرگ‌ترین خطر: عادی شدن بحران و پایین آمدن سقف انتظار مردم</text>
+
+<!-- Bottom strip -->
+<rect x="90" y="920" width="1740" height="92" rx="14" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.18)" filter="url(#sh)"/>
+<text x="960" y="953" fill="#d4af37" font-size="16" font-weight="800" text-anchor="middle">📌 نتیجه سیاسی</text>
+<text x="960" y="978" fill="#ffffff" font-size="20" font-weight="900" text-anchor="middle">مسئله اصلی عراق دیگر فقط «جنگ» نیست؛ مسئله اصلی، ناتوانی نظام پس از جنگ در تولید دولتِ کارآمد و مشروع است</text>
+<text x="960" y="999" fill="rgba(255,255,255,0.55)" font-size="12" text-anchor="middle">بنابراین پرسش آینده این نیست که آیا عراق منابع دارد؛ پرسش این است که آیا می‌تواند از چرخه محاصصه، رانت و نفوذ خارجی عبور کند یا نه</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.30)" font-size="13">SLIDE 29 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.30)" font-size="13" text-anchor="end">فصل ۷: نتیجه‌گیری کلان</text>
+<text x="960" y="1064" class="mini">اسلاید ترکیبی بر پایه یافته‌های کل ارائه: امنیت، محاصصه، افکار عمومی، اقتصاد، نفوذ خارجی و بحران دولت‌سازی</text>
+</svg>

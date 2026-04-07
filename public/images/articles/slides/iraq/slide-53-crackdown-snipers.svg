@@ -1,0 +1,155 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+  </style>
+  <linearGradient id="bg53" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0a0e27"/>
+    <stop offset="50%" stop-color="#0d1333"/>
+    <stop offset="100%" stop-color="#1a0a1e"/>
+  </linearGradient>
+  <filter id="sh53"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#bg53)"/>
+
+<!-- Header -->
+<text x="960" y="45" fill="#fff" font-size="32" font-weight="900" text-anchor="middle">🎯 سرکوب تشرین: تک‌تیراندازان، ترور، ربودن</text>
+<text x="960" y="72" fill="#d4af37" font-size="15" font-weight="400" text-anchor="middle">۸۰۰+ کشته — ۲۵,۰۰۰+ زخمی — صدها ربوده‌شده — صفر محاکمه | «دموکراسی» عراقی در عمل</text>
+<line x1="150" y1="88" x2="1770" y2="88" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ====== TOP: METHODS OF SUPPRESSION ====== -->
+<rect x="60" y="105" width="1800" height="280" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh53)"/>
+<text x="960" y="135" fill="#e74c3c" font-size="15" font-weight="900" text-anchor="middle">⚠️ روش‌های سرکوب — ابزارهای مرگ</text>
+
+<g transform="translate(90,155)">
+  <!-- Snipers -->
+  <rect x="0" y="0" width="330" height="200" rx="10" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+  <text x="165" y="28" fill="#e74c3c" font-size="16" font-weight="900" text-anchor="middle">🎯 تک‌تیراندازان</text>
+  <text x="165" y="50" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">سلاح اصلی سرکوب</text>
+  <text x="20" y="78" fill="rgba(255,255,255,0.5)" font-size="9">▸ مستقر روی پشت‌بام‌ها</text>
+  <text x="20" y="98" fill="rgba(255,255,255,0.5)" font-size="9">▸ تیر به سر و سینه (قصد کشتن)</text>
+  <text x="20" y="118" fill="rgba(255,255,255,0.5)" font-size="9">▸ «لباس‌شخصی» = هویت نامعلوم</text>
+  <text x="20" y="138" fill="rgba(255,255,255,0.5)" font-size="9">▸ UN: «از سلاح‌های نظامی استفاده شد»</text>
+  <text x="20" y="162" fill="#e74c3c" font-size="10" font-weight="700">≈۴۰% کشته‌ها = تیر در سر</text>
+  <text x="20" y="180" fill="rgba(255,255,255,0.35)" font-size="8">عاملان: هرگز شناسایی نشدند</text>
+  <text x="20" y="195" fill="rgba(255,255,255,0.3)" font-size="7">«ما نمی‌دانیم چه کسی شلیک می‌کند» — نخست‌وزیر!</text>
+
+  <!-- Tear gas -->
+  <rect x="350" y="0" width="330" height="200" rx="10" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+  <text x="515" y="28" fill="#ff9800" font-size="16" font-weight="900" text-anchor="middle">💨 گاز اشک‌آور نظامی</text>
+  <text x="515" y="50" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">سلاح کشنده در لباس «کنترل جمعیت»</text>
+  <text x="370" y="78" fill="rgba(255,255,255,0.5)" font-size="9">▸ گلوله گاز ۱۰ برابر سنگین‌تر از استاندارد</text>
+  <text x="370" y="98" fill="rgba(255,255,255,0.5)" font-size="9">▸ شلیک مستقیم به سر معترضان</text>
+  <text x="370" y="118" fill="rgba(255,255,255,0.5)" font-size="9">▸ ۱۰+ نفر با گلوله گاز در جمجمه کشته</text>
+  <text x="370" y="138" fill="rgba(255,255,255,0.5)" font-size="9">▸ ساخت صربستان و ایران</text>
+  <text x="370" y="162" fill="#ff9800" font-size="10" font-weight="700">قربانیان: غالباً نوجوانان ۱۵-۲۰ ساله</text>
+  <text x="370" y="180" fill="rgba(255,255,255,0.35)" font-size="8">تصاویر گلوله گاز در جمجمه = نماد سرکوب</text>
+
+  <!-- Kidnapping -->
+  <rect x="700" y="0" width="330" height="200" rx="10" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.15)" stroke-width="1"/>
+  <text x="865" y="28" fill="#9b59b6" font-size="16" font-weight="900" text-anchor="middle">🔗 ربودن فعالان</text>
+  <text x="865" y="50" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">سرکوب خاموش</text>
+  <text x="720" y="78" fill="rgba(255,255,255,0.5)" font-size="9">▸ ربودن شبانه از خانه</text>
+  <text x="720" y="98" fill="rgba(255,255,255,0.5)" font-size="9">▸ شکنجه + تهدید خانواده</text>
+  <text x="720" y="118" fill="rgba(255,255,255,0.5)" font-size="9">▸ آزادی مشروط به «سکوت»</text>
+  <text x="720" y="138" fill="rgba(255,255,255,0.5)" font-size="9">▸ ≈۱۰۰+ فعال ربوده شده</text>
+  <text x="720" y="162" fill="#9b59b6" font-size="10" font-weight="700">برخی هرگز بازنگشتند</text>
+  <text x="720" y="180" fill="rgba(255,255,255,0.35)" font-size="8">عاملان: «لباس‌شخصی» = شبه‌نظامیان</text>
+
+  <!-- Targeted killing -->
+  <rect x="1050" y="0" width="330" height="200" rx="10" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+  <text x="1215" y="28" fill="#e74c3c" font-size="16" font-weight="900" text-anchor="middle">💀 ترور هدفمند</text>
+  <text x="1215" y="50" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">حذف فیزیکی رهبران</text>
+  <text x="1070" y="78" fill="rgba(255,255,255,0.5)" font-size="9">▸ با صدا خفه‌کن — شب‌ها</text>
+  <text x="1070" y="98" fill="rgba(255,255,255,0.5)" font-size="9">▸ بمب مغناطیسی زیر خودرو</text>
+  <text x="1070" y="118" fill="rgba(255,255,255,0.5)" font-size="9">▸ ≈۸۰+ فعال/روزنامه‌نگار ترور</text>
+  <text x="1070" y="138" fill="rgba(255,255,255,0.5)" font-size="9">▸ صفر محاکمه عاملان</text>
+  <text x="1070" y="162" fill="#e74c3c" font-size="10" font-weight="700">هشام الهاشمی (۲۰۲۰)</text>
+  <text x="1070" y="180" fill="rgba(255,255,255,0.35)" font-size="8">تحلیلگر برجسته — ترور مقابل خانه‌اش</text>
+  <text x="1070" y="195" fill="rgba(255,255,255,0.3)" font-size="7">عاملان شناسایی اما آزاد!</text>
+</g>
+
+<!-- ====== MIDDLE LEFT: PROMINENT VICTIMS ====== -->
+<rect x="60" y="405" width="620" height="280" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh53)"/>
+<text x="370" y="435" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">🕊️ قربانیان شاخص — صدایی که خاموش شد</text>
+
+<g transform="translate(80,452)">
+  <rect x="0" y="0" width="580" height="42" rx="6" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="15" y="17" fill="#e74c3c" font-size="11" font-weight="900">هشام الهاشمی — تحلیلگر امنیتی</text>
+  <text x="15" y="34" fill="rgba(255,255,255,0.5)" font-size="9">ژوئیه ۲۰۲۰: ترور مقابل خانه | عامل: عناصر کتائب حزب‌الله | نتیجه: آزاد شدند!</text>
+
+  <rect x="0" y="48" width="580" height="42" rx="6" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+  <text x="15" y="65" fill="#ff9800" font-size="11" font-weight="900">صفاء السراي — فعال مدنی (بصره)</text>
+  <text x="15" y="82" fill="rgba(255,255,255,0.5)" font-size="9">دسامبر ۲۰۱۹: ربوده و کشته شد | جنازه در رودخانه | بدون تحقیق</text>
+
+  <rect x="0" y="96" width="580" height="42" rx="6" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+  <text x="15" y="113" fill="#00b4d8" font-size="11" font-weight="900">فاهم الطائی — فعال حقوق بشر</text>
+  <text x="15" y="130" fill="rgba(255,255,255,0.5)" font-size="9">۲۰۲۰: بمب مغناطیسی زیر خودرو | تهدید قبلی توسط شبه‌نظامیان</text>
+
+  <rect x="0" y="144" width="580" height="42" rx="6" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+  <text x="15" y="161" fill="#9b59b6" font-size="11" font-weight="900">ریهام یعقوب — فعال زن (بصره)</text>
+  <text x="15" y="178" fill="rgba(255,255,255,0.5)" font-size="9">آگوست ۲۰۲۰: ترور | پزشک + فعال حقوق زنان | ۲۹ ساله</text>
+
+  <rect x="0" y="192" width="580" height="30" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="290" y="212" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">+ ده‌ها فعال، وبلاگ‌نویس، و روزنامه‌نگار ناشناخته — صداهایی که جهان نشنید</text>
+</g>
+
+<!-- ====== MIDDLE RIGHT: WHO DID IT? ====== -->
+<rect x="705" y="405" width="560" height="280" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh53)"/>
+<text x="985" y="435" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">❓ چه کسی سرکوب کرد؟</text>
+
+<g transform="translate(725,455)">
+  <rect x="0" y="0" width="520" height="45" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="15" y="18" fill="#e74c3c" font-size="11" font-weight="900">🔴 شبه‌نظامیان (PMF/حشد الشعبی)</text>
+  <text x="15" y="36" fill="rgba(255,255,255,0.5)" font-size="9">عصائب اهل الحق + کتائب حزب‌الله → تک‌تیرانداز + ربودن + ترور</text>
+
+  <rect x="0" y="52" width="520" height="45" rx="8" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="15" y="70" fill="#ff9800" font-size="11" font-weight="900">🟠 نیروهای امنیتی دولت</text>
+  <text x="15" y="88" fill="rgba(255,255,255,0.5)" font-size="9">SWAT + یگان ویژه → گاز اشک‌آور سنگین + آب‌پاش + تیراندازی</text>
+
+  <rect x="0" y="104" width="520" height="45" rx="8" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+  <text x="15" y="122" fill="#9b59b6" font-size="11" font-weight="900">🟣 «لباس‌شخصی‌ها» (Third Party)</text>
+  <text x="15" y="140" fill="rgba(255,255,255,0.5)" font-size="9">هویت نامعلوم — دولت: «نمی‌دانیم کی‌اند!» — مردم: «همه می‌دانیم»</text>
+
+  <rect x="0" y="156" width="520" height="45" rx="8" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+  <text x="15" y="174" fill="#00b4d8" font-size="11" font-weight="700">🔵 نقش ایران (مستقیم)</text>
+  <text x="15" y="192" fill="rgba(255,255,255,0.5)" font-size="9">قاسم سلیمانی شخصاً به بغداد رفت و «مدیریت بحران» کرد → سرکوب بیشتر</text>
+</g>
+
+<rect x="725" y="665" width="520" height="12" rx="3" fill="rgba(231,76,60,0.06)"/>
+<text x="985" y="675" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">مسئولیت = پخش شده بین ده‌ها بازیگر → هیچ‌کس پاسخگو نیست</text>
+
+<!-- ====== RIGHT: ACCOUNTABILITY GAP ====== -->
+<rect x="1290" y="405" width="570" height="280" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh53)"/>
+<text x="1575" y="435" fill="#e74c3c" font-size="14" font-weight="900" text-anchor="middle">⚖️ شکاف پاسخگویی — مصونیت مطلق</text>
+
+<g transform="translate(1310,455)">
+  <rect x="0" y="0" width="530" height="52" rx="8" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+  <text x="265" y="22" fill="#e74c3c" font-size="20" font-weight="900" text-anchor="middle">۸۰۰+ کشته → صفر محاکمه</text>
+  <text x="265" y="42" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">هیچ فرمانده‌ای بازداشت نشد | هیچ تحقیق مستقلی انجام نشد</text>
+
+  <rect x="0" y="62" width="530" height="42" rx="6" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+  <text x="15" y="82" fill="#ff9800" font-size="10" font-weight="700">«کمیته تحقیق» دولتی → هرگز نتیجه اعلام نکرد</text>
+  <text x="15" y="98" fill="rgba(255,255,255,0.4)" font-size="8">۵ کمیته تشکیل شد — ۰ گزارش منتشر شد — ۰ مجرم شناسایی شد</text>
+
+  <rect x="0" y="112" width="530" height="42" rx="6" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+  <text x="15" y="132" fill="#00b4d8" font-size="10" font-weight="700">قتل هاشمی: عاملان دستگیر → آزاد شدند!</text>
+  <text x="15" y="148" fill="rgba(255,255,255,0.4)" font-size="8">حتی وقتی عاملان شناخته شدند، شبه‌نظامیان اجازه محاکمه ندادند</text>
+
+  <rect x="0" y="162" width="530" height="42" rx="6" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+  <text x="15" y="182" fill="#9b59b6" font-size="10" font-weight="700">ICC/ICJ: هیچ اقدامی | آمریکا: سکوت</text>
+  <text x="15" y="198" fill="rgba(255,255,255,0.4)" font-size="8">«دموکراسی» عراق = متحد آمریکا → بنابراین حق سرکوب دارد?!</text>
+</g>
+
+<!-- ====== BOTTOM NOTE ====== -->
+<rect x="60" y="705" width="1800" height="55" rx="10" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+<text x="960" y="728" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📌 ۸۰۰ جوان عراقی جان دادند — جهان بیانیه داد و رفت | هنگ‌کنگ ۰ کشته = صدها مقاله | تشرین ۸۰۰ کشته = سکوت</text>
+<text x="960" y="748" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">پیام: جان عراقی ارزان است — مخصوصاً وقتی قاتل «متحد» باشد</text>
+
+<!-- Footer -->
+<text x="60" y="42" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 53 / 60</text>
+<text x="1860" y="42" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۹: جنبش تشرین</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: OHCHR, Amnesty International, HRW, UNAMI, CPJ, Iraqi IHCHR | ۲۰۱۹-۲۰۲۱</text>
+</svg>

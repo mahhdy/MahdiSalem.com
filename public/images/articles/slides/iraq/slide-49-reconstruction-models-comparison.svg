@@ -1,0 +1,191 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+  </style>
+  <linearGradient id="bg49" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0a0e27"/>
+    <stop offset="50%" stop-color="#0d1333"/>
+    <stop offset="100%" stop-color="#1a0a1e"/>
+  </linearGradient>
+  <filter id="sh49"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#bg49)"/>
+
+<!-- Header -->
+<text x="960" y="45" fill="#fff" font-size="30" font-weight="900" text-anchor="middle">🔄 چرا عراق «ژاپن» نشد؟ — مقایسه با الگوهای موفق بازسازی</text>
+<text x="960" y="72" fill="#d4af37" font-size="15" font-weight="400" text-anchor="middle">ژاپن ۱۹۴۵ | آلمان ۱۹۴۵ | کره ۱۹۵۳ → معجزه اقتصادی | عراق ۲۰۰۳ → شکست کامل — چرا؟</text>
+<line x1="150" y1="88" x2="1770" y2="88" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ====== MAIN TABLE: COMPARISON ====== -->
+<rect x="60" y="105" width="1800" height="440" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh49)"/>
+<text x="960" y="132" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📊 مقایسه ۴ مدل بازسازی پس از جنگ</text>
+
+<!-- Column headers -->
+<g transform="translate(80,145)">
+  <rect x="0" y="0" width="200" height="28" rx="4" fill="rgba(255,255,255,0.03)"/>
+  <text x="100" y="19" fill="rgba(255,255,255,0.5)" font-size="11" font-weight="700" text-anchor="middle">شاخص</text>
+
+  <rect x="215" y="0" width="360" height="28" rx="4" fill="rgba(46,204,113,0.08)"/>
+  <text x="395" y="19" fill="#2ecc71" font-size="11" font-weight="700" text-anchor="middle">🇯🇵 ژاپن (۱۹۴۵)</text>
+
+  <rect x="590" y="0" width="360" height="28" rx="4" fill="rgba(59,130,246,0.08)"/>
+  <text x="770" y="19" fill="#3b82f6" font-size="11" font-weight="700" text-anchor="middle">🇩🇪 آلمان (۱۹۴۵)</text>
+
+  <rect x="965" y="0" width="360" height="28" rx="4" fill="rgba(155,89,182,0.08)"/>
+  <text x="1145" y="19" fill="#9b59b6" font-size="11" font-weight="700" text-anchor="middle">🇰🇷 کره جنوبی (۱۹۵۳)</text>
+
+  <rect x="1340" y="0" width="360" height="28" rx="4" fill="rgba(231,76,60,0.08)"/>
+  <text x="1520" y="19" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">🇮🇶 عراق (۲۰۰۳)</text>
+</g>
+
+<!-- Data Rows -->
+<g transform="translate(80,180)">
+  <!-- Row 1: Planning -->
+  <rect x="0" y="0" width="1700" height="38" rx="4" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <text x="100" y="24" fill="#d4af37" font-size="10" font-weight="700" text-anchor="middle">برنامه‌ریزی قبل</text>
+  <text x="395" y="18" fill="#2ecc71" font-size="9" text-anchor="middle">۲ سال تحقیق مفصل</text>
+  <text x="395" y="32" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">کمیته بورن + شناخت فرهنگی</text>
+  <text x="770" y="18" fill="#3b82f6" font-size="9" text-anchor="middle">طرح مارشال: ۴ سال آماده‌سازی</text>
+  <text x="770" y="32" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">درک عمیق جامعه آلمان</text>
+  <text x="1145" y="18" fill="#9b59b6" font-size="9" text-anchor="middle">۱۰ سال برنامه ۵‌ساله</text>
+  <text x="1145" y="32" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">Park Chung-hee: توسعه ملی</text>
+  <text x="1520" y="18" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">≈ صفر! «فقط ۶۰ روز»</text>
+  <text x="1520" y="32" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">«گل و شیرینی» — رامسفلد</text>
+
+  <!-- Row 2: Institution Preservation -->
+  <rect x="0" y="44" width="1700" height="38" rx="4" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <text x="100" y="68" fill="#d4af37" font-size="10" font-weight="700" text-anchor="middle">حفظ نهادها</text>
+  <text x="395" y="62" fill="#2ecc71" font-size="9" text-anchor="middle">✅ امپراتور حفظ شد</text>
+  <text x="395" y="76" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">بوروکراسی ژاپنی دست‌نخورده ماند</text>
+  <text x="770" y="62" fill="#3b82f6" font-size="9" text-anchor="middle">✅ بوروکراسی آلمان حفظ شد</text>
+  <text x="770" y="76" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">فقط نازی‌زدایی رده بالا</text>
+  <text x="1145" y="62" fill="#9b59b6" font-size="9" text-anchor="middle">✅ ارتش/دولت حفظ شد</text>
+  <text x="1145" y="76" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">بازسازی روی ساختار موجود</text>
+  <text x="1520" y="62" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">❌ همه نهادها منحل شد!</text>
+  <text x="1520" y="76" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">فرمان ۱ و ۲ برمر = فروپاشی</text>
+
+  <!-- Row 3: Military -->
+  <rect x="0" y="88" width="1700" height="38" rx="4" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <text x="100" y="112" fill="#d4af37" font-size="10" font-weight="700" text-anchor="middle">ارتش سابق</text>
+  <text x="395" y="106" fill="#2ecc71" font-size="9" text-anchor="middle">خلع سلاح + ادغام تدریجی</text>
+  <text x="770" y="106" fill="#3b82f6" font-size="9" text-anchor="middle">Bundeswehr جدید از نظامیان سابق</text>
+  <text x="1145" y="106" fill="#9b59b6" font-size="9" text-anchor="middle">ارتش = موتور صنعتی‌سازی</text>
+  <text x="1520" y="106" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">❌ ۴۰۰K نظامی بیکار → شورشی</text>
+
+  <!-- Row 4: Investment -->
+  <rect x="0" y="132" width="1700" height="38" rx="4" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <text x="100" y="156" fill="#d4af37" font-size="10" font-weight="700" text-anchor="middle">سرمایه‌گذاری</text>
+  <text x="395" y="150" fill="#2ecc71" font-size="9" text-anchor="middle">$۱۵B (امروز: $۱۵۰B)</text>
+  <text x="395" y="164" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">مستقیم در زیرساخت ژاپن</text>
+  <text x="770" y="150" fill="#3b82f6" font-size="9" text-anchor="middle">مارشال: $۱۳B ($۱۵۰B امروز)</text>
+  <text x="770" y="164" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">بازسازی صنعت + زیرساخت</text>
+  <text x="1145" y="150" fill="#9b59b6" font-size="9" text-anchor="middle">$۶B کمک آمریکا + وام</text>
+  <text x="1145" y="164" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">+ سرمایه‌گذاری صنعتی داخلی</text>
+  <text x="1520" y="150" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">$۶۰B «بازسازی» → $۵۰B+ فساد</text>
+  <text x="1520" y="164" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">SIGIR: «بزرگ‌ترین هدررفت تاریخ»</text>
+
+  <!-- Row 5: Duration -->
+  <rect x="0" y="176" width="1700" height="38" rx="4" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <text x="100" y="200" fill="#d4af37" font-size="10" font-weight="700" text-anchor="middle">مدت اشغال</text>
+  <text x="395" y="194" fill="#2ecc71" font-size="9" text-anchor="middle">۷ سال (۱۹۴۵–۱۹۵۲)</text>
+  <text x="395" y="208" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">مک‌آرتور: فرماندار مؤثر</text>
+  <text x="770" y="194" fill="#3b82f6" font-size="9" text-anchor="middle">۱۰ سال (۱۹۴۵–۱۹۵۵)</text>
+  <text x="770" y="208" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">انتقال تدریجی قدرت</text>
+  <text x="1145" y="194" fill="#9b59b6" font-size="9" text-anchor="middle">حضور مداوم آمریکا</text>
+  <text x="1145" y="208" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">۲۸K نیرو هنوز در کره</text>
+  <text x="1520" y="194" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">۸ سال جنگ + خروج عجولانه</text>
+  <text x="1520" y="208" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">۲۰۱۱: خروج → ۲۰۱۴: داعش!</text>
+
+  <!-- Row 6: Result -->
+  <rect x="0" y="220" width="1700" height="42" rx="4" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <text x="100" y="244" fill="#d4af37" font-size="10" font-weight="700" text-anchor="middle">نتیجه ۲۰ سال بعد</text>
+  <text x="395" y="238" fill="#2ecc71" font-size="10" font-weight="900" text-anchor="middle">🏆 دومین اقتصاد جهان</text>
+  <text x="395" y="254" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">دموکراسی پایدار + تکنولوژی</text>
+  <text x="770" y="238" fill="#3b82f6" font-size="10" font-weight="900" text-anchor="middle">🏆 قدرت اول اروپا</text>
+  <text x="770" y="254" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">اتحادیه اروپا + صنعت</text>
+  <text x="1145" y="238" fill="#9b59b6" font-size="10" font-weight="900" text-anchor="middle">🏆 معجزه هان‌ریور</text>
+  <text x="1145" y="254" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">Samsung, Hyundai, K-pop</text>
+  <text x="1520" y="238" fill="#e74c3c" font-size="11" font-weight="900" text-anchor="middle">❌ شکست مطلق</text>
+  <text x="1520" y="254" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">فساد, داعش, آوارگی, فقر</text>
+</g>
+
+<!-- ====== BOTTOM: WHY DID IRAQ FAIL? ====== -->
+<rect x="60" y="565" width="1800" height="260" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh49)"/>
+<text x="960" y="595" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">❓ ۷ دلیل اصلی شکست بازسازی عراق (vs موفقیت ژاپن/آلمان)</text>
+
+<g transform="translate(85,610)">
+  <!-- Reason 1 -->
+  <rect x="0" y="0" width="480" height="52" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="15" y="20" fill="#e74c3c" font-size="12" font-weight="900">۱. انحلال دولت (فرمان ۱ و ۲ برمر)</text>
+  <text x="15" y="38" fill="rgba(255,255,255,0.5)" font-size="9">ژاپن: نهادها حفظ شد | عراق: همه چیز از صفر → هرج‌ومرج</text>
+
+  <!-- Reason 2 -->
+  <rect x="0" y="58" width="480" height="52" rx="8" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="15" y="78" fill="#ff9800" font-size="12" font-weight="900">۲. بدون برنامه (No Plan B)</text>
+  <text x="15" y="96" fill="rgba(255,255,255,0.5)" font-size="9">مارشال: ۴ سال طراحی | عراق: «۶۰ روز کافیه» — رامسفلد</text>
+
+  <!-- Reason 3 -->
+  <rect x="0" y="116" width="480" height="52" rx="8" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.12)" stroke-width="1"/>
+  <text x="15" y="136" fill="#00b4d8" font-size="12" font-weight="900">۳. محاصصه به‌جای شایسته‌سالاری</text>
+  <text x="15" y="154" fill="rgba(255,255,255,0.5)" font-size="9">ژاپن: تکنوکرات | عراق: سهمیه فرقه‌ای → فساد ساختاری</text>
+
+  <!-- Reason 4 -->
+  <rect x="0" y="174" width="480" height="38" rx="8" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+  <text x="15" y="197" fill="#9b59b6" font-size="12" font-weight="900">۴. نبود اجماع داخلی</text>
+
+  <!-- Right column -->
+  <!-- Reason 5 -->
+  <rect x="500" y="0" width="480" height="52" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="515" y="20" fill="#e74c3c" font-size="12" font-weight="900">۵. نفوذ منطقه‌ای مخرب</text>
+  <text x="515" y="38" fill="rgba(255,255,255,0.5)" font-size="9">ژاپن: جزیره = محافظت‌شده | عراق: ایران+ترکیه+سعودی+سوریه</text>
+
+  <!-- Reason 6 -->
+  <rect x="500" y="58" width="480" height="52" rx="8" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+  <text x="515" y="78" fill="#ff9800" font-size="12" font-weight="900">۶. فساد سیستماتیک بازسازی</text>
+  <text x="515" y="96" fill="rgba(255,255,255,0.5)" font-size="9">مارشال: نظارت شدید | عراق: SIGIR → ۲۵% بودجه = دزدی</text>
+
+  <!-- Reason 7 -->
+  <rect x="500" y="116" width="480" height="52" rx="8" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+  <text x="515" y="136" fill="#00b4d8" font-size="12" font-weight="900">۷. هدف واقعی: نفت نه ملت‌سازی</text>
+  <text x="515" y="154" fill="rgba(255,255,255,0.5)" font-size="9">ژاپن: دشمن جنگ سرد → انگیزه واقعی | عراق: فقط نفت + ژئوپلتیک</text>
+
+  <!-- Key quote -->
+  <rect x="500" y="174" width="480" height="38" rx="8" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+  <text x="740" y="197" fill="#d4af37" font-size="10" font-weight="700" text-anchor="middle">💡 «عراق ژاپن نبود — چون آمریکا مک‌آرتور نبود»</text>
+
+  <!-- Far right: Score -->
+  <rect x="1010" y="0" width="680" height="212" rx="12" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="1350" y="28" fill="#d4af37" font-size="13" font-weight="700" text-anchor="middle">🏆 نمره بازسازی</text>
+  
+  <text x="1060" y="58" fill="#2ecc71" font-size="28" font-weight="900">A+</text>
+  <text x="1060" y="78" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">ژاپن</text>
+  
+  <text x="1200" y="58" fill="#3b82f6" font-size="28" font-weight="900">A+</text>
+  <text x="1200" y="78" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">آلمان</text>
+  
+  <text x="1340" y="58" fill="#9b59b6" font-size="28" font-weight="900">A</text>
+  <text x="1340" y="78" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">کره</text>
+  
+  <text x="1500" y="58" fill="#e74c3c" font-size="36" font-weight="900">F</text>
+  <text x="1500" y="78" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">عراق</text>
+
+  <text x="1350" y="108" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">GDP سرانه ۲۰ سال بعد از بازسازی:</text>
+  <text x="1350" y="128" fill="#2ecc71" font-size="9" text-anchor="middle">ژاپن ۱۹۶۵: $۸,۹۰۰ (x۱۰) | آلمان ۱۹۶۵: $۱۲,۰۰۰ (x۸)</text>
+  <text x="1350" y="148" fill="#9b59b6" font-size="9" text-anchor="middle">کره ۱۹۷۳: $۴,۰۰۰ (x۶) | عراق ۲۰۲۳: $۱۱,۰۰۰ (x۰.۸)</text>
+  <text x="1350" y="172" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">⚠️ عراق تنها کشور تاریخ که پس از «بازسازی»</text>
+  <text x="1350" y="190" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">GDP سرانه‌اش از قبل جنگ کمتر است</text>
+</g>
+
+<!-- ====== BOTTOM NOTE ====== -->
+<rect x="60" y="845" width="1800" height="55" rx="10" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+<text x="960" y="868" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📌 ژاپن و آلمان ثابت کردند که بازسازی ممکن است — عراق ثابت کرد که بدون برنامه، بدون صداقت، و با فساد، محال است</text>
+<text x="960" y="888" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">تفاوت: ژاپن = ملت‌سازی واقعی | عراق = regime change بدون nation building</text>
+
+<!-- Footer -->
+<text x="60" y="42" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 49 / 60</text>
+<text x="1860" y="42" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۸: توسعه انسانی</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: RAND Corporation, SIGIR, World Bank, Maddison Project, Dower "Embracing Defeat"</text>
+</svg>

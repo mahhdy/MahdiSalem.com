@@ -1,0 +1,196 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width:1; rx:10; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+<text x="960" y="42" class="title">۲۰ سال بعد: عراق کجاست؟ — کارنامه ۲۰۰۳–۲۰۲۳</text>
+<text x="960" y="68" class="subtitle">مقایسه جامع وعده‌ها با واقعیت — آنچه قرار بود بشود و آنچه شد</text>
+<line x1="150" y1="84" x2="1770" y2="84" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ===================== SCORECARD GRID: 12 INDICATORS ===================== -->
+<rect x="60" y="100" width="1800" height="620" rx="14" class="glass" filter="url(#sh)"/>
+<text x="960" y="130" fill="#d4af37" font-size="16" font-weight="900" text-anchor="middle">📊 کارنامه ۲۰ ساله: ۱۲ شاخص کلیدی</text>
+
+<!-- Headers -->
+<g transform="translate(80,145)">
+  <rect x="0" y="0" width="280" height="25" rx="4" fill="rgba(255,255,255,0.03)"/>
+  <text x="140" y="17" fill="rgba(255,255,255,0.5)" font-size="11" font-weight="700" text-anchor="middle">شاخص</text>
+  <rect x="295" y="0" width="280" height="25" rx="4" fill="rgba(0,180,216,0.06)"/>
+  <text x="435" y="17" fill="#00b4d8" font-size="11" font-weight="700" text-anchor="middle">وعده ۲۰۰۳</text>
+  <rect x="590" y="0" width="280" height="25" rx="4" fill="rgba(231,76,60,0.06)"/>
+  <text x="730" y="17" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">واقعیت ۲۰۲۳</text>
+  <rect x="885" y="0" width="120" height="25" rx="4" fill="rgba(212,175,55,0.06)"/>
+  <text x="945" y="17" fill="#d4af37" font-size="11" font-weight="700" text-anchor="middle">نمره</text>
+  <!-- Second column set -->
+  <rect x="1030" y="0" width="230" height="25" rx="4" fill="rgba(255,255,255,0.03)"/>
+  <text x="1145" y="17" fill="rgba(255,255,255,0.5)" font-size="11" font-weight="700" text-anchor="middle">شاخص</text>
+  <rect x="1275" y="0" width="230" height="25" rx="4" fill="rgba(0,180,216,0.06)"/>
+  <text x="1390" y="17" fill="#00b4d8" font-size="11" font-weight="700" text-anchor="middle">وعده ۲۰۰۳</text>
+  <rect x="1520" y="0" width="230" height="25" rx="4" fill="rgba(231,76,60,0.06)"/>
+  <text x="1635" y="17" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">واقعیت ۲۰۲۳</text>
+  <rect x="1765" y="0" width="80" height="25" rx="4" fill="rgba(212,175,55,0.06)"/>
+  <text x="1805" y="17" fill="#d4af37" font-size="11" font-weight="700" text-anchor="middle">نمره</text>
+</g>
+
+<!-- LEFT COLUMN: 6 indicators -->
+<g transform="translate(80,178)">
+  <!-- 1. Democracy -->
+  <rect x="0" y="0" width="930" height="42" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="16" fill="#d4af37" font-size="11" font-weight="700">🏛️ دموکراسی</text>
+  <text x="15" y="33" fill="rgba(255,255,255,0.4)" font-size="9">Freedom House</text>
+  <text x="310" y="16" fill="#00b4d8" font-size="10" text-anchor="middle">دموکراسی لیبرال</text>
+  <text x="310" y="33" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">الگوی ژاپن پس از ۱۹۴۵</text>
+  <text x="605" y="16" fill="#e74c3c" font-size="10" text-anchor="middle">«آزاد نیست» (Not Free)</text>
+  <text x="605" y="33" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">امتیاز: ۲۹/۱۰۰ (رتبه ۱۵۵)</text>
+  <text x="945" y="22" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">F</text>
+
+  <!-- 2. Security -->
+  <rect x="0" y="50" width="930" height="42" rx="6" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="66" fill="#d4af37" font-size="11" font-weight="700">🛡️ امنیت</text>
+  <text x="310" y="66" fill="#00b4d8" font-size="10" text-anchor="middle">ثبات + پایان ترور</text>
+  <text x="605" y="66" fill="#e74c3c" font-size="10" text-anchor="middle">سلول‌های داعش فعال</text>
+  <text x="605" y="83" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">+ شبه‌نظامیان > ارتش</text>
+  <text x="945" y="72" fill="#ff9800" font-size="18" font-weight="900" text-anchor="middle">D</text>
+
+  <!-- 3. Corruption -->
+  <rect x="0" y="100" width="930" height="42" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="116" fill="#d4af37" font-size="11" font-weight="700">💰 فساد</text>
+  <text x="15" y="133" fill="rgba(255,255,255,0.4)" font-size="9">Transparency Int'l</text>
+  <text x="310" y="116" fill="#00b4d8" font-size="10" text-anchor="middle">حکمرانی خوب</text>
+  <text x="605" y="116" fill="#e74c3c" font-size="10" text-anchor="middle">رتبه ۱۵۷/۱۸۰</text>
+  <text x="605" y="133" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">$۱۵۰B+ دزدیده شده</text>
+  <text x="945" y="122" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">F</text>
+
+  <!-- 4. Economy -->
+  <rect x="0" y="150" width="930" height="42" rx="6" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="166" fill="#d4af37" font-size="11" font-weight="700">📈 اقتصاد</text>
+  <text x="310" y="166" fill="#00b4d8" font-size="10" text-anchor="middle">اقتصاد متنوع</text>
+  <text x="605" y="166" fill="#e74c3c" font-size="10" text-anchor="middle">۹۵% وابسته به نفت</text>
+  <text x="605" y="183" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">بیکاری ۱۶%+ | جوانان ۳۶%</text>
+  <text x="945" y="172" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">F</text>
+
+  <!-- 5. Infrastructure -->
+  <rect x="0" y="200" width="930" height="42" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="216" fill="#d4af37" font-size="11" font-weight="700">⚡ زیرساخت</text>
+  <text x="310" y="216" fill="#00b4d8" font-size="10" text-anchor="middle">بازسازی کامل</text>
+  <text x="605" y="216" fill="#e74c3c" font-size="10" text-anchor="middle">برق: ۱۲ ساعت/روز</text>
+  <text x="605" y="233" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">فاضلاب: ۸۰% بدون تصفیه</text>
+  <text x="945" y="222" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">F</text>
+
+  <!-- 6. Health -->
+  <rect x="0" y="250" width="930" height="42" rx="6" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="266" fill="#d4af37" font-size="11" font-weight="700">🏥 بهداشت</text>
+  <text x="310" y="266" fill="#00b4d8" font-size="10" text-anchor="middle">سیستم نوین</text>
+  <text x="605" y="266" fill="#ff9800" font-size="10" text-anchor="middle">بدتر از ۲۰۰۲</text>
+  <text x="605" y="283" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">فرار پزشکان + کمبود دارو</text>
+  <text x="945" y="272" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">F</text>
+</g>
+
+<!-- RIGHT COLUMN: 6 indicators -->
+<g transform="translate(1110,178)">
+  <!-- 7. Education -->
+  <rect x="0" y="0" width="735" height="42" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="16" fill="#d4af37" font-size="11" font-weight="700">🎓 آموزش</text>
+  <text x="195" y="16" fill="#00b4d8" font-size="10" text-anchor="middle">نوسازی</text>
+  <text x="440" y="16" fill="#ff9800" font-size="10" text-anchor="middle">سقوط کیفیت</text>
+  <text x="440" y="33" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">۳.۵M کودک خارج مدرسه</text>
+  <text x="695" y="22" fill="#ff9800" font-size="18" font-weight="900" text-anchor="middle">D</text>
+
+  <!-- 8. Human Rights -->
+  <rect x="0" y="50" width="735" height="42" rx="6" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="66" fill="#d4af37" font-size="11" font-weight="700">⚖️ حقوق بشر</text>
+  <text x="195" y="66" fill="#00b4d8" font-size="10" text-anchor="middle">آزادی</text>
+  <text x="440" y="66" fill="#e74c3c" font-size="10" text-anchor="middle">ترور فعالان + سانسور</text>
+  <text x="695" y="72" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">F</text>
+
+  <!-- 9. Sovereignty -->
+  <rect x="0" y="100" width="735" height="42" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="116" fill="#d4af37" font-size="11" font-weight="700">🏴 حاکمیت ملی</text>
+  <text x="195" y="116" fill="#00b4d8" font-size="10" text-anchor="middle">مستقل</text>
+  <text x="440" y="116" fill="#e74c3c" font-size="10" text-anchor="middle">نفوذ ایران ۸۰%+</text>
+  <text x="440" y="133" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">+ ترکیه + آمریکا</text>
+  <text x="695" y="122" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">F</text>
+
+  <!-- 10. National Unity -->
+  <rect x="0" y="150" width="735" height="42" rx="6" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="166" fill="#d4af37" font-size="11" font-weight="700">🤝 وحدت ملی</text>
+  <text x="195" y="166" fill="#00b4d8" font-size="10" text-anchor="middle">ملت واحد</text>
+  <text x="440" y="166" fill="#ff9800" font-size="10" text-anchor="middle">محاصصه + ۳ هویت</text>
+  <text x="440" y="183" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">تشرین: نقطه امید (اما سرکوب شد)</text>
+  <text x="695" y="172" fill="#ff9800" font-size="18" font-weight="900" text-anchor="middle">D</text>
+
+  <!-- 11. WMD Threat (original justification) -->
+  <rect x="0" y="200" width="735" height="42" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="216" fill="#d4af37" font-size="11" font-weight="700">🔬 تهدید WMD</text>
+  <text x="195" y="216" fill="#00b4d8" font-size="10" text-anchor="middle">حذف تهدید</text>
+  <text x="440" y="216" fill="#2ecc71" font-size="10" text-anchor="middle">هرگز وجود نداشت ✓</text>
+  <text x="695" y="222" fill="rgba(155,89,182,0.7)" font-size="14" font-weight="900" text-anchor="middle">N/A</text>
+
+  <!-- 12. Regional Stability -->
+  <rect x="0" y="250" width="735" height="42" rx="6" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="266" fill="#d4af37" font-size="11" font-weight="700">🌍 ثبات منطقه</text>
+  <text x="195" y="266" fill="#00b4d8" font-size="10" text-anchor="middle">اثر دومینوی مثبت</text>
+  <text x="440" y="266" fill="#e74c3c" font-size="10" text-anchor="middle">داعش + سوریه + یمن</text>
+  <text x="440" y="283" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">بدترین بی‌ثباتی ۱۰۰ ساله</text>
+  <text x="695" y="272" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">F</text>
+</g>
+
+<!-- OVERALL GRADE -->
+<rect x="200" y="480" width="1520" height="80" rx="12" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.25)" stroke-width="2"/>
+<text x="960" y="510" fill="#e74c3c" font-size="28" font-weight="900" text-anchor="middle">نمره کلی پروژه «آزادسازی عراق»: F (شکست مطلق)</text>
+<text x="960" y="535" fill="rgba(255,255,255,0.5)" font-size="14" text-anchor="middle">از ۱۲ شاخص: ۸ نمره F | ۳ نمره D | ۱ N/A — هیچ شاخصی بهتر از ۲۰۰۲ نیست</text>
+<text x="960" y="555" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">حتی WMD (تنها توجیه رسمی) اصلاً وجود نداشت — یعنی هدف اصلی هم پوچ بود</text>
+
+<!-- ===================== BOTTOM: HUMAN COST SUMMARY ===================== -->
+<rect x="60" y="740" width="1800" height="115" rx="14" class="glass" filter="url(#sh)"/>
+<text x="960" y="770" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">💔 بهای انسانی ۲۰ سال — خلاصه نهایی</text>
+<g transform="translate(100,785)">
+  <rect x="0" y="0" width="230" height="55" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="115" y="20" fill="#e74c3c" font-size="20" font-weight="900" text-anchor="middle">۳۰۰K+</text>
+  <text x="115" y="40" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">غیرنظامی عراقی کشته</text>
+
+  <rect x="248" y="0" width="230" height="55" rx="8" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="363" y="20" fill="#ff9800" font-size="20" font-weight="900" text-anchor="middle">۹.۲M</text>
+  <text x="363" y="40" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">آواره عراقی</text>
+
+  <rect x="496" y="0" width="230" height="55" rx="8" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.12)" stroke-width="1"/>
+  <text x="611" y="20" fill="#00b4d8" font-size="20" font-weight="900" text-anchor="middle">$۳T+</text>
+  <text x="611" y="40" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">هزینه مستقیم آمریکا</text>
+
+  <rect x="744" y="0" width="230" height="55" rx="8" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+  <text x="859" y="20" fill="#9b59b6" font-size="20" font-weight="900" text-anchor="middle">۴,۵۵۰</text>
+  <text x="859" y="40" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">سرباز آمریکایی کشته</text>
+
+  <rect x="992" y="0" width="230" height="55" rx="8" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.12)" stroke-width="1"/>
+  <text x="1107" y="20" fill="#2ecc71" font-size="20" font-weight="900" text-anchor="middle">۳۰K+</text>
+  <text x="1107" y="40" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">خودکشی کهنه‌سرباز</text>
+
+  <rect x="1240" y="0" width="230" height="55" rx="8" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.12)" stroke-width="1"/>
+  <text x="1355" y="20" fill="#d4af37" font-size="20" font-weight="900" text-anchor="middle">$۱۵۰B+</text>
+  <text x="1355" y="40" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">فساد عراقی</text>
+
+  <rect x="1488" y="0" width="230" height="55" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+  <text x="1603" y="20" fill="#e74c3c" font-size="20" font-weight="900" text-anchor="middle">صفر</text>
+  <text x="1603" y="40" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">محاکمه مسئولان</text>
+</g>
+
+<!-- ===================== BOTTOM BAR ===================== -->
+<rect x="60" y="875" width="1800" height="80" rx="10" class="note-box"/>
+<text x="960" y="903" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">📌 پس از ۲۰ سال: عراق در هیچ شاخصی بهتر از دوران صدام نیست — فقط دیکتاتور عوض شد: یک نفر → یک سیستم</text>
+<text x="960" y="925" fill="rgba(255,255,255,0.5)" font-size="12" text-anchor="middle">وعده: دموکراسی، آزادی، رفاه | واقعیت: محاصصه، فساد، شبه‌نظامی، فقر، فرار مغزها</text>
+<text x="960" y="945" fill="rgba(255,255,255,0.35)" font-size="11" text-anchor="middle">تنها نقطه روشن: نسل تشرین — جوانانی که می‌دانند چه نمی‌خواهند (اما هنوز نمی‌دانند چگونه)</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 40 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۱۰: جمع‌بندی</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: Freedom House, Transparency Int'l, World Bank, WHO, UNHCR, Watson Institute | داده‌های ۲۰۲۳</text>
+</svg>

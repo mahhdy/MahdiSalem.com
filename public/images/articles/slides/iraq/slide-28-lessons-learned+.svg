@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill:#ffffff; font-size:32px; font-weight:900; text-anchor:middle; }
+    .subtitle { fill:#d4af37; font-size:16px; font-weight:400; text-anchor:middle; }
+    .glass { rx:16; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .lesson-box { rx:14; stroke-width:1.5; }
+    .lesson-title { font-size:20px; font-weight:800; }
+    .lesson-text { fill:rgba(255,255,255,0.72); font-size:13px; }
+    .case-text { fill:rgba(255,255,255,0.60); font-size:12px; }
+    .num { font-size:28px; font-weight:900; text-anchor:middle; }
+    .impact { font-size:11px; font-weight:700; text-anchor:middle; }
+    .arrow-label { fill:#d4af37; font-size:12px; font-weight:700; text-anchor:middle; }
+    .footer-note { fill:rgba(255,255,255,0.55); font-size:12px; text-anchor:middle; }
+    .tiny { fill:rgba(255,255,255,0.30); font-size:11px; text-anchor:middle; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#000" flood-opacity="0.35"/></filter>
+  <linearGradient id="warn-g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.24"/>
+    <stop offset="100%" stop-color="#ff9800" stop-opacity="0.10"/>
+  </linearGradient>
+  <linearGradient id="gold-g" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#d4af37" stop-opacity="0.85"/>
+    <stop offset="100%" stop-color="#f4d03f" stop-opacity="0.35"/>
+  </linearGradient>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+
+<text x="960" y="44" class="title">درس‌های عراق: جهان چه چیزی باید یاد بگیرد؟</text>
+<text x="960" y="70" class="subtitle">۲۰۰۳ فقط یک جنگ نبود؛ یک آزمایش پرهزینه درباره قدرت، دولت‌سازی و پیامدهای بی‌ثبات‌سازی بود</text>
+<line x1="220" y1="86" x2="1700" y2="86" stroke="#d4af37" stroke-width="1" opacity="0.35"/>
+
+<!-- Top thesis -->
+<rect x="130" y="105" width="1660" height="90" class="glass" filter="url(#sh)"/>
+<text x="960" y="138" fill="#d4af37" font-size="18" font-weight="800" text-anchor="middle">تز اصلی</text>
+<text x="960" y="165" fill="#ffffff" font-size="24" font-weight="900" text-anchor="middle">سرنگونی یک رژیم آسان‌تر از ساختن یک نظم پایدار است</text>
+<text x="960" y="186" fill="rgba(255,255,255,0.60)" font-size="13" text-anchor="middle">عراق نشان داد اطلاعات غلط + اشغال بدون برنامه + مهندسی فرقه‌ای + اقتصاد رانتی = چرخه‌ای از خشونت، فساد و فروپاشی اعتماد</text>
+
+<!-- Center spine -->
+<line x1="960" y1="220" x2="960" y2="840" stroke="url(#gold-g)" stroke-width="3" opacity="0.65"/>
+<circle cx="960" cy="255" r="7" fill="#d4af37"/>
+<circle cx="960" cy="375" r="7" fill="#d4af37"/>
+<circle cx="960" cy="495" r="7" fill="#d4af37"/>
+<circle cx="960" cy="615" r="7" fill="#d4af37"/>
+<circle cx="960" cy="735" r="7" fill="#d4af37"/>
+
+<!-- LESSON 1 -->
+<rect x="90" y="215" width="760" height="85" class="lesson-box" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.22)" filter="url(#sh)"/>
+<text x="810" y="247" class="lesson-title" fill="#e74c3c" direction="rtl"  text-anchor="start">۱) اطلاعات غلط، جنگ‌های فاجعه‌بار می‌سازد</text>
+<text x="810" y="271" class="lesson-text" text-anchor="end">وقتی تصمیم جنگ بر پایه اطلاعات سیاسی‌شده و نه شواهد مستقل باشد، هزینه انسانی و ژئوپلیتیک می‌تواند نسل‌ها ادامه یابد.</text>
+<text x="810" y="290" class="case-text" text-anchor="end">مصداق عراق: سلاح‌های کشتار جمعی هرگز پیدا نشد؛ اما کشور نابود شد.</text>
+<line x1="850" y1="255" x2="940" y2="255" stroke="#e74c3c" stroke-width="2" opacity="0.45"/>
+<text x="895" y="247" class="arrow-label">دروغ → جنگ</text>
+
+<!-- LESSON 2 -->
+<rect x="1070" y="215" width="760" height="85" class="lesson-box" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.22)" filter="url(#sh)"/>
+<text x="1790" y="247" class="lesson-title" fill="#ff9800" direction="rtl"  text-anchor="start">۲) انحلال نهادها، خلأ امنیتی تولید می‌کند</text>
+<text x="1790" y="271" class="lesson-text" text-anchor="end">اگر ارتش، پلیس و بوروکراسی را یک‌باره حذف کنید، هزاران نیروی مسلح و بیکار وارد شورش، قاچاق و افراط‌گرایی می‌شوند.</text>
+<text x="1790" y="290" class="case-text" text-anchor="end">مصداق عراق: Order No.2 و بعث‌زدایی، دولت را از درون منفجر کرد.</text>
+<line x1="980" y1="255" x2="1070" y2="255" stroke="#ff9800" stroke-width="2" opacity="0.45"/>
+<text x="1025" y="247" class="arrow-label">خلأ → شورش</text>
+
+<!-- LESSON 3 -->
+<rect x="90" y="335" width="760" height="85" class="lesson-box" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.22)" filter="url(#sh)"/>
+<text x="810" y="367" class="lesson-title" fill="#00b4d8" direction="rtl"  text-anchor="start">۳) دموکراسیِ مهندسی‌شده بدون شهروندی، به محاصصه ختم می‌شود</text>
+<text x="810" y="391" class="lesson-text" text-anchor="end">انتخابات به‌تنهایی کافی نیست؛ اگر هویت فرقه‌ای مبنای توزیع قدرت باشد، صندوق رأی به ماشین تقسیم غنیمت تبدیل می‌شود.</text>
+<text x="810" y="410" class="case-text" text-anchor="end">مصداق عراق: محاصصه، دولت را از پاسخ‌گویی به سهم‌خواهی تبدیل کرد.</text>
+<line x1="850" y1="375" x2="940" y2="375" stroke="#00b4d8" stroke-width="2" opacity="0.45"/>
+<text x="895" y="367" class="arrow-label">انتخابات ≠ دولت‌سازی</text>
+
+<!-- LESSON 4 -->
+<rect x="1070" y="335" width="760" height="85" class="lesson-box" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.22)" filter="url(#sh)"/>
+<text x="1790" y="367" class="lesson-title" fill="#2ecc71" direction="rtl"  text-anchor="start">۴) فساد در دولت‌های رانتی، دشمنی خاموش اما کشنده است</text>
+<text x="1790" y="391" class="lesson-text" text-anchor="end">وقتی پول نفت به جای سرمایه‌گذاری عمومی، به شبکه‌های حزبی و شبه‌دولتی برود، دولت از درون پوسیده می‌شود.</text>
+<text x="1790" y="410" class="case-text" text-anchor="end">مصداق عراق: درآمد عظیم نفتی، به برق، آب، اشتغال و خدمات تبدیل نشد.</text>
+<line x1="980" y1="375" x2="1070" y2="375" stroke="#2ecc71" stroke-width="2" opacity="0.45"/>
+<text x="1025" y="367" class="arrow-label">نفت → رانت</text>
+
+<!-- LESSON 5 -->
+<rect x="90" y="455" width="760" height="85" class="lesson-box" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.22)" filter="url(#sh)"/>
+<text x="810" y="487" class="lesson-title" fill="#9b59b6" direction="rtl"  text-anchor="start">۵) اشغال خارجی اغلب نفوذ رقیبان منطقه‌ای را افزایش می‌دهد</text>
+<text x="810" y="511" class="lesson-text" text-anchor="end">برهم‌زدن توازن داخلی، معمولاً میدان را برای بازیگران منطقه‌ای باز می‌کند؛ نه برای استقلال ملی.</text>
+<text x="810" y="530" class="case-text" text-anchor="end">مصداق عراق: حذف صدام، ناخواسته مهم‌ترین رقیب ایران را برداشت.</text>
+<line x1="850" y1="495" x2="940" y2="495" stroke="#9b59b6" stroke-width="2" opacity="0.45"/>
+<text x="895" y="487" class="arrow-label">اشغال → نفوذ نیابتی</text>
+
+<!-- LESSON 6 -->
+<rect x="1070" y="455" width="760" height="85" class="lesson-box" fill="rgba(241,196,15,0.08)" stroke="rgba(241,196,15,0.24)" filter="url(#sh)"/>
+<text x="1790" y="487" class="lesson-title" fill="#f1c40f" direction="rtl"  text-anchor="start">۶) افراط‌گرایی از خلأ، تحقیر و بی‌دولتی تغذیه می‌کند</text>
+<text x="1790" y="511" class="lesson-text" text-anchor="end">تروریسم فقط ایدئولوژی نیست؛ محصول زندان‌ها، تبعیض، جنگ داخلی و شکست حکومت نیز هست.</text>
+<text x="1790" y="530" class="case-text" text-anchor="end">مصداق عراق: از القاعده عراق تا داعش — مسیر مستقیم از ۲۰۰۳ تا ۲۰۱۴.</text>
+<line x1="980" y1="495" x2="1070" y2="495" stroke="#f1c40f" stroke-width="2" opacity="0.45"/>
+<text x="1025" y="487" class="arrow-label">خلأ → داعش</text>
+
+<!-- LESSON 7 -->
+<rect x="90" y="575" width="760" height="85" class="lesson-box" fill="rgba(52,152,219,0.08)" stroke="rgba(52,152,219,0.22)" filter="url(#sh)"/>
+<text x="810" y="607" class="lesson-title" fill="#3498db" direction="rtl"  text-anchor="start">۷) بازسازی بدون مشروعیت اجتماعی شکست می‌خورد</text>
+<text x="810" y="631" class="lesson-text" text-anchor="end">می‌توان جاده و ساختمان ساخت؛ اما اعتماد، هویت ملی و حس عدالت را نمی‌توان از بیرون تزریق کرد.</text>
+<text x="810" y="650" class="case-text" text-anchor="end">مصداق عراق: میلیاردها دلار هزینه شد؛ اما دولت در چشم مردم معتبر نشد.</text>
+<line x1="850" y1="615" x2="940" y2="615" stroke="#3498db" stroke-width="2" opacity="0.45"/>
+<text x="895" y="607" class="arrow-label">پول ≠ مشروعیت</text>
+
+<!-- LESSON 8 -->
+<rect x="1070" y="575" width="760" height="85" class="lesson-box" fill="rgba(230,126,34,0.08)" stroke="rgba(230,126,34,0.22)" filter="url(#sh)"/>
+<text x="1790" y="607" class="lesson-title" fill="#e67e22" direction="rtl"  text-anchor="start">۸) هزینه واقعی جنگ، پس از پایان عملیات نظامی شروع می‌شود</text>
+<text x="1790" y="631" class="lesson-text" text-anchor="end">هزینه جنگ فقط بودجه پنتاگون نیست؛ شامل درمان، بازسازی، مهاجرت، بی‌ثباتی منطقه‌ای و نسل از‌دست‌رفته نیز هست.</text>
+<text x="1790" y="650" class="case-text" text-anchor="end">مصداق عراق: تهاجم سه‌هفته‌ای به بحرانی بیست‌ساله تبدیل شد.</text>
+<line x1="980" y1="615" x2="1070" y2="615" stroke="#e67e22" stroke-width="2" opacity="0.45"/>
+<text x="1025" y="607" class="arrow-label">Shock &amp; Awe → ۲۰ سال</text>
+
+<!-- LESSON 9 -->
+<rect x="90" y="695" width="760" height="85" class="lesson-box" fill="rgba(26,188,156,0.08)" stroke="rgba(26,188,156,0.22)" filter="url(#sh)"/>
+<text x="810" y="727" class="lesson-title" fill="#1abc9c" direction="rtl"  text-anchor="start">۹) نسل جوان، حافظه شکست‌ها را به مطالبه تغییر تبدیل می‌کند</text>
+<text x="810" y="751" class="lesson-text" text-anchor="end">جنگ‌ها شاید نظام‌ها را عوض کنند، اما آینده را نسل‌هایی می‌سازند که فساد، فرقه‌گرایی و دخالت خارجی را تجربه کرده‌اند.</text>
+<text x="810" y="770" class="case-text" text-anchor="end">مصداق عراق: اعتراضات ۲۰۱۹ و شعار «نرید وطن» علیه کل نظم پس از ۲۰۰۳ بود.</text>
+<line x1="850" y1="735" x2="940" y2="735" stroke="#1abc9c" stroke-width="2" opacity="0.45"/>
+<text x="895" y="727" class="arrow-label">حافظه → اعتراض</text>
+
+<!-- Right-side impact stack -->
+<rect x="1070" y="695" width="760" height="145" fill="url(#warn-g)" stroke="rgba(231,76,60,0.28)" stroke-width="1.5" rx="16" filter="url(#sh)"/>
+<text x="1450" y="725" fill="#ffffff" font-size="20" font-weight="900" text-anchor="middle">خلاصه یک فرمول خطرناک</text>
+<text x="1450" y="752" fill="#d4af37" font-size="16" font-weight="800" text-anchor="middle">دروغ اطلاعاتی + فروپاشی نهادها + مهندسی فرقه‌ای + رانت نفتی</text>
+<text x="1450" y="779" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">= جنگ داخلی + افراط‌گرایی + نفوذ خارجی + دولت ضعیف</text>
+
+<g transform="translate(1135,795)">
+  <rect x="0" y="0" width="150" height="30" rx="8" fill="rgba(231,76,60,0.12)" stroke="rgba(231,76,60,0.18)"/>
+  <text x="75" y="20" class="impact" fill="#e74c3c">هزینه انسانی عظیم</text>
+  <rect x="165" y="0" width="150" height="30" rx="8" fill="rgba(255,152,0,0.12)" stroke="rgba(255,152,0,0.18)"/>
+  <text x="240" y="20" class="impact" fill="#ff9800">نسل ازدست‌رفته</text>
+  <rect x="330" y="0" width="150" height="30" rx="8" fill="rgba(0,180,216,0.12)" stroke="rgba(0,180,216,0.18)"/>
+  <text x="405" y="20" class="impact" fill="#00b4d8">فروپاشی اعتماد</text>
+  <rect x="495" y="0" width="150" height="30" rx="8" fill="rgba(155,89,182,0.12)" stroke="rgba(155,89,182,0.18)"/>
+  <text x="570" y="20" class="impact" fill="#9b59b6">بی‌ثباتی منطقه‌ای</text>
+</g>
+
+<!-- Bottom quote -->
+<rect x="130" y="875" width="1660" height="115" class="glass" filter="url(#sh)"/>
+<text x="960" y="914" fill="#d4af37" font-size="17" font-weight="800" text-anchor="middle">📌 جمع‌بندی نهایی</text>
+<text x="960" y="945" fill="#ffffff" font-size="26" font-weight="900" text-anchor="middle">عراق به جهان یاد داد که «تغییر رژیم» بدون فهم جامعه، می‌تواند از خودِ دیکتاتوری هم میراثی پیچیده‌تر بسازد</text>
+<text x="960" y="972" class="footer-note">اگر هدف، صلح پایدار باشد: حقیقت باید مقدم بر تبلیغات، نهادسازی مقدم بر تخریب، و شهروندی مقدم بر سهم‌خواهی باشد</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.30)" font-size="13">SLIDE 28 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.30)" font-size="13" text-anchor="end">فصل ۷: آینده و درس‌ها</text>
+<text x="960" y="1064" class="tiny">منابع مفهومی: Iraq Inquiry (Chilcot), SIGIR, Costs of War Project, World Bank, UN, International Crisis Group | جمع‌بندی تحلیلی</text>
+</svg>

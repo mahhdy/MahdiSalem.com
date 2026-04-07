@@ -1,0 +1,249 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width:1; rx:10; }
+    .axis-label { fill: rgba(255,255,255,0.6); font-size: 13px; font-weight: 600; }
+    .axis-val { fill: rgba(255,255,255,0.3); font-size: 10px; }
+    .country-name { font-size: 11px; font-weight: 600; }
+    .country-data { font-size: 9px; fill: rgba(255,255,255,0.4); }
+    .grid { stroke: rgba(255,255,255,0.04); stroke-width: 1; }
+    .trend-line { stroke: rgba(212,175,55,0.3); stroke-width: 1.5; stroke-dasharray: 6,4; fill: none; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+  <filter id="glow-iraq">
+    <feGaussianBlur stdDeviation="10" result="b"/>
+    <feFlood flood-color="#e74c3c" flood-opacity="0.5"/>
+    <feComposite in2="b" operator="in"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+
+<!-- Header -->
+<text x="960" y="42" class="title">پارادوکس عراق: ثروت نفتی بدون رضایت مردم</text>
+<text x="960" y="68" class="subtitle">GDP سرانه در برابر شاخص رضایت از زندگی — عراق در مقایسه با ۱۵ کشور منطقه</text>
+<line x1="250" y1="84" x2="1670" y2="84" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- CHART AREA: x=180→1400, y=120→820          -->
+<!-- X-axis: GDP per capita (\$0→\$70,000)        -->
+<!-- Y-axis: Life Satisfaction (0→8 out of 10)  -->
+<!-- Bubble size = population (scaled)          -->
+<!-- ══════════════════════════════════════════ -->
+
+<rect x="100" y="95" width="1340" height="770" class="glass" filter="url(#sh)"/>
+
+<!-- Y-Axis: Life Satisfaction -->
+<line x1="180" y1="800" x2="180" y2="130" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+<polygon points="180,130 175,145 185,145" fill="rgba(255,255,255,0.3)"/>
+<text x="120" y="470" class="axis-label" text-anchor="middle" transform="rotate(-90,120,470)">رضایت از زندگی (۰–۱۰) →</text>
+
+<!-- Y scale: 0→8. Range 800-140=660px. 1 unit = 82.5px -->
+<text x="170" y="803" class="axis-val" text-anchor="end">۰</text>
+<line x1="180" y1="800" x2="1400" y2="800" class="grid"/>
+<text x="170" y="720" class="axis-val" text-anchor="end">۱</text>
+<line x1="180" y1="717.5" x2="1400" y2="717.5" class="grid"/>
+<text x="170" y="638" class="axis-val" text-anchor="end">۲</text>
+<line x1="180" y1="635" x2="1400" y2="635" class="grid"/>
+<text x="170" y="555" class="axis-val" text-anchor="end">۳</text>
+<line x1="180" y1="552.5" x2="1400" y2="552.5" class="grid"/>
+<text x="170" y="473" class="axis-val" text-anchor="end">۴</text>
+<line x1="180" y1="470" x2="1400" y2="470" class="grid"/>
+<text x="170" y="390" class="axis-val" text-anchor="end">۵</text>
+<line x1="180" y1="387.5" x2="1400" y2="387.5" class="grid"/>
+<text x="170" y="308" class="axis-val" text-anchor="end">۶</text>
+<line x1="180" y1="305" x2="1400" y2="305" class="grid"/>
+<text x="170" y="225" class="axis-val" text-anchor="end">۷</text>
+<line x1="180" y1="222.5" x2="1400" y2="222.5" class="grid"/>
+<text x="170" y="143" class="axis-val" text-anchor="end">۸</text>
+<line x1="180" y1="140" x2="1400" y2="140" class="grid"/>
+
+<!-- X-Axis: GDP per capita -->
+<line x1="180" y1="800" x2="1400" y2="800" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+<polygon points="1400,800 1385,795 1385,805" fill="rgba(255,255,255,0.3)"/>
+<text x="790" y="840" class="axis-label" text-anchor="middle">GDP سرانه (دلار، PPP) →</text>
+
+<!-- X scale: \$0→\$70,000. Range 180→1400=1220px. \$10K = 174.3px -->
+<text x="180" y="818" class="axis-val" text-anchor="middle">$۰</text>
+<text x="354" y="818" class="axis-val" text-anchor="middle">$۱۰K</text>
+<line x1="354" y1="140" x2="354" y2="800" class="grid"/>
+<text x="529" y="818" class="axis-val" text-anchor="middle">$۲۰K</text>
+<line x1="529" y1="140" x2="529" y2="800" class="grid"/>
+<text x="703" y="818" class="axis-val" text-anchor="middle">$۳۰K</text>
+<line x1="703" y1="140" x2="703" y2="800" class="grid"/>
+<text x="877" y="818" class="axis-val" text-anchor="middle">$۴۰K</text>
+<line x1="877" y1="140" x2="877" y2="800" class="grid"/>
+<text x="1051" y="818" class="axis-val" text-anchor="middle">$۵۰K</text>
+<line x1="1051" y1="140" x2="1051" y2="800" class="grid"/>
+<text x="1226" y="818" class="axis-val" text-anchor="middle">$۶۰K</text>
+<line x1="1226" y1="140" x2="1226" y2="800" class="grid"/>
+<text x="1400" y="818" class="axis-val" text-anchor="middle">$۷۰K</text>
+
+<!-- Trend line (approximate global correlation) -->
+<path d="M 200,720 Q 500,450 900,300 T 1380,180" class="trend-line"/>
+<text x="1300" y="175" fill="rgba(212,175,55,0.4)" font-size="10">خط روند جهانی</text>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- COUNTRY BUBBLES                            -->
+<!-- GDP→x: x = 180 + (gdp/70000) × 1220       -->
+<!-- Satisfaction→y: y = 800 - (sat/8) × 660    -->
+<!-- Pop→r: scaled (log-ish)                    -->
+<!-- ══════════════════════════════════════════ -->
+
+<!-- 1. Yemen — GDP \$2,500, Sat 3.2, Pop 33M → x=224, y=536, r=18 -->
+<circle cx="224" cy="536" r="18" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+<text x="224" y="520" class="country-name" fill="rgba(255,255,255,0.5)" text-anchor="middle">🇾🇪 یمن</text>
+
+<!-- 2. Syria — GDP \$3,000, Sat 2.8, Pop 22M → x=232, y=569, r=16 -->
+<circle cx="252" cy="569" r="16" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+<text x="252" y="553" class="country-name" fill="rgba(255,255,255,0.5)" text-anchor="middle">🇸🇾 سوریه</text>
+
+<!-- 3. Jordan — GDP \$10,500, Sat 4.6, Pop 11M → x=363, y=422, r=13 -->
+<circle cx="363" cy="422" r="13" fill="rgba(0,180,216,0.15)" stroke="rgba(0,180,216,0.3)" stroke-width="1"/>
+<text x="363" y="406" class="country-name" fill="#00b4d8" text-anchor="middle">🇯🇴 اردن</text>
+
+<!-- 4. Egypt — GDP \$14,000, Sat 4.2, Pop 105M → x=424, y=455, r=28 -->
+<circle cx="424" cy="455" r="28" fill="rgba(255,152,0,0.1)" stroke="rgba(255,152,0,0.25)" stroke-width="1"/>
+<text x="424" y="439" class="country-name" fill="#ff9800" text-anchor="middle">🇪🇬 مصر</text>
+
+<!-- 5. ★ IRAQ — GDP \$11,500, Sat 4.0, Pop 42M → x=380, y=472, r=22 -->
+<!-- OUTLIER: Iraq has decent GDP but very low satisfaction -->
+<circle cx="380" cy="472" r="26" fill="rgba(231,76,60,0.2)" stroke="#e74c3c" stroke-width="2.5" filter="url(#glow-iraq)"/>
+<text x="380" y="456" class="country-name" fill="#e74c3c" text-anchor="middle" font-size="13" font-weight="800">🇮🇶 عراق</text>
+<text x="380" y="505" class="country-data" fill="#e74c3c" text-anchor="middle">\$11.5K GDP — رضایت ۴.۰ فقط!</text>
+
+<!-- Arrow showing where Iraq SHOULD be based on GDP -->
+<line x1="380" y1="465" x2="380" y2="380" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.5"/>
+<circle cx="380" cy="375" r="8" fill="none" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.5"/>
+<text x="395" y="370" fill="#d4af37" font-size="10" font-weight="600">جایگاه مورد انتظار ←</text>
+<text x="395" y="383" fill="rgba(212,175,55,0.5)" font-size="9">بر اساس GDP باید رضایت ≈۵.۵ باشد</text>
+
+<!-- 6. Iran — GDP \$16,000, Sat 4.8, Pop 87M → x=459, y=405, r=26 -->
+<circle cx="459" cy="405" r="26" fill="rgba(46,204,113,0.12)" stroke="#2ecc71" stroke-width="1.5"/>
+<text x="459" y="389" class="country-name" fill="#2ecc71" text-anchor="middle">🇮🇷 ایران</text>
+
+<!-- 7. Lebanon — GDP \$13,000, Sat 3.5, Pop 5.5M → x=407, y="511", r=10 -->
+<circle cx="407" cy="511" r="10" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.3)" stroke-width="1"/>
+<text x="425" y="508" class="country-name" fill="rgba(231,76,60,0.6)" text-anchor="start" font-size="10">🇱🇧 لبنان</text>
+
+<!-- 8. Tunisia — GDP \$12,500, Sat 4.4, Pop 12M → x=398, y="438", r=13 -->
+<circle cx="440" cy="438" r="13" fill="rgba(0,180,216,0.1)" stroke="rgba(0,180,216,0.2)" stroke-width="1"/>
+<text x="458" y="432" class="country-name" fill="rgba(0,180,216,0.5)" text-anchor="start" font-size="10">🇹🇳 تونس</text>
+
+<!-- 9. Turkey — GDP \$36,000, Sat 5.4, Pop 85M → x=807, y=357, r=25 -->
+<circle cx="807" cy="357" r="25" fill="rgba(255,152,0,0.1)" stroke="rgba(255,152,0,0.25)" stroke-width="1"/>
+<text x="807" y="341" class="country-name" fill="#ff9800" text-anchor="middle">🇹🇷 ترکیه</text>
+
+<!-- 10. Saudi — GDP \$56,000, Sat 6.5, Pop 36M → x=1156, y=268, r=20 -->
+<circle cx="1156" cy="268" r="20" fill="rgba(46,204,113,0.12)" stroke="rgba(46,204,113,0.25)" stroke-width="1"/>
+<text x="1156" y="252" class="country-name" fill="#2ecc71" text-anchor="middle">🇸🇦 عربستان</text>
+
+<!-- 11. Kuwait — GDP \$52,000, Sat 6.2, Pop 4.3M → x=1086, y=292, r=9 -->
+<circle cx="1086" cy="292" r="9" fill="rgba(46,204,113,0.12)" stroke="rgba(46,204,113,0.2)" stroke-width="1"/>
+<text x="1086" y="278" class="country-name" fill="rgba(46,204,113,0.6)" text-anchor="middle" font-size="10">🇰🇼 کویت</text>
+
+<!-- 12. UAE — GDP \$68,000, Sat 7.2, Pop 10M → x=1384, y=208, r=12 -->
+<circle cx="1384" cy="208" r="12" fill="rgba(46,204,113,0.15)" stroke="rgba(46,204,113,0.3)" stroke-width="1"/>
+<text x="1370" y="194" class="country-name" fill="#2ecc71" text-anchor="end">🇦🇪 امارات</text>
+
+<!-- 13. Qatar — GDP \$66,000, Sat 7.0, Pop 2.9M → x=1349, y=224, r=8 -->
+<circle cx="1349" cy="224" r="8" fill="rgba(46,204,113,0.12)" stroke="rgba(46,204,113,0.2)" stroke-width="1"/>
+<text x="1332" y="215" class="country-name" fill="rgba(46,204,113,0.5)" text-anchor="end" font-size="10">🇶🇦 قطر</text>
+
+<!-- 14. Bahrain — GDP \$54,000, Sat 6.0, Pop 1.5M → x=1121, y=305, r=7 -->
+<circle cx="1121" cy="305" r="7" fill="rgba(0,180,216,0.1)" stroke="rgba(0,180,216,0.2)" stroke-width="1"/>
+<text x="1140" y="302" class="country-name" fill="rgba(0,180,216,0.5)" text-anchor="start" font-size="10">🇧🇭 بحرین</text>
+
+<!-- 15. Oman — GDP \$40,000, Sat 6.4, Pop 4.5M → x=877, y=275, r=9 -->
+<circle cx="877" cy="275" r="9" fill="rgba(46,204,113,0.1)" stroke="rgba(46,204,113,0.2)" stroke-width="1"/>
+<text x="877" y="262" class="country-name" fill="rgba(46,204,113,0.5)" text-anchor="middle" font-size="10">🇴🇲 عمان</text>
+
+<!-- 16. Libya — GDP \$15,000, Sat 3.8, Pop 7M → x=441, y=488, r=11 -->
+<circle cx="470" cy="488" r="11" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+<text x="487" y="484" class="country-name" fill="rgba(255,255,255,0.4)" text-anchor="start" font-size="10">🇱🇾 لیبی</text>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- RIGHT PANEL: Analysis                      -->
+<!-- ══════════════════════════════════════════ -->
+<rect x="1470" y="95" width="400" height="770" class="glass" filter="url(#sh)"/>
+
+<text x="1670" y="135" fill="#d4af37" font-size="18px" font-weight="700" text-anchor="middle">تحلیل: چرا عراق outlier است؟</text>
+<line x1="1490" y1="150" x2="1850" y2="150" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+<!-- Gap indicator -->
+<rect x="1490" y="165" width="360" height="70" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+<text x="1670" y="188" fill="#e74c3c" font-size="24" font-weight="900" text-anchor="middle">−۱.۵ واحد</text>
+<text x="1670" y="208" fill="rgba(231,76,60,0.6)" font-size="11" text-anchor="middle">فاصله عراق از خط روند: بدترین در منطقه</text>
+<text x="1670" y="225" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">با GDP \$11.5K باید رضایت ≈۵.۵ باشد — فقط ۴.۰ است</text>
+
+<line x1="1490" y1="250" x2="1850" y2="250" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+<!-- Reasons list -->
+<text x="1840" y="275" fill="#d4af37" font-size="14" font-weight="700" text-anchor="end">دلایل نارضایتی با وجود درآمد نفتی:</text>
+
+<text x="1840" y="305" fill="#e74c3c" font-size="12" font-weight="600" text-anchor="end">۱. خدمات عمومی فاجعه‌بار</text>
+<text x="1840" y="322" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="end">برق ۸ ساعت/روز، آب آلوده، بیمارستان ویران</text>
+
+<text x="1840" y="352" fill="#e74c3c" font-size="12" font-weight="600" text-anchor="end">۲. فساد سیستماتیک</text>
+<text x="1840" y="369" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="end">\$150B+ سرقت‌شده → ثروت نفت به مردم نمی‌رسد</text>
+
+<text x="1840" y="399" fill="#e74c3c" font-size="12" font-weight="600" text-anchor="end">۳. بیکاری جوانان</text>
+<text x="1840" y="416" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="end">۳۶% بیکاری جوان — ناامیدی نسلی</text>
+
+<text x="1840" y="446" fill="#e74c3c" font-size="12" font-weight="600" text-anchor="end">۴. ناامنی مزمن</text>
+<text x="1840" y="463" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="end">بمب‌گذاری، ترور، شبه‌نظامی = ترس دائمی</text>
+
+<text x="1840" y="493" fill="#e74c3c" font-size="12" font-weight="600" text-anchor="end">۵. فقدان حاکمیت ملی</text>
+<text x="1840" y="510" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="end">ایران + آمریکا + ترکیه = تصمیم‌گیران واقعی</text>
+
+<text x="1840" y="540" fill="#e74c3c" font-size="12" font-weight="600" text-anchor="end">۶. نابرابری شدید</text>
+<text x="1840" y="557" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="end">ضریب جینی ۰.۲۹ ظاهری اما واقعی ≈۰.۵۵+</text>
+
+<line x1="1490" y1="580" x2="1850" y2="580" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+<!-- Comparison box -->
+<text x="1670" y="605" fill="#d4af37" font-size="13" font-weight="700" text-anchor="middle">مقایسه با کشورهای مشابه:</text>
+
+<rect x="1490" y="618" width="360" height="50" rx="6" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+<text x="1670" y="638" fill="#2ecc71" font-size="12" font-weight="600" text-anchor="middle">🇮🇷 ایران: GDP \$16K → رضایت ۴.۸</text>
+<text x="1670" y="655" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">GDP بیشتر + رضایت بیشتر = روی خط روند</text>
+
+<rect x="1490" y="678" width="360" height="50" rx="6" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.15)" stroke-width="1"/>
+<text x="1670" y="698" fill="#00b4d8" font-size="12" font-weight="600" text-anchor="middle">🇯🇴 اردن: GDP \$10.5K → رضایت ۴.۶</text>
+<text x="1670" y="715" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">GDP کمتر از عراق اما رضایت بیشتر!</text>
+
+<rect x="1490" y="738" width="360" height="50" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="1670" y="758" fill="#e74c3c" font-size="12" font-weight="600" text-anchor="middle">🇮🇶 عراق: GDP \$11.5K → رضایت ۴.۰</text>
+<text x="1670" y="775" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">نفت دارد ولی مردمش ناراضی‌ترین منطقه</text>
+
+<!-- Size legend -->
+<g transform="translate(1500,800)">
+  <text x="0" y="12" fill="rgba(255,255,255,0.4)" font-size="10">اندازه حباب = جمعیت:</text>
+  <circle cx="185" cy="8" r="6" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="196" y="12" fill="rgba(255,255,255,0.3)" font-size="9">۵M</text>
+  <circle cx="230" cy="8" r="14" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="249" y="12" fill="rgba(255,255,255,0.3)" font-size="9">۴۰M</text>
+  <circle cx="290" cy="8" r="22" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="317" y="12" fill="rgba(255,255,255,0.3)" font-size="9">۱۰۰M</text>
+</g>
+
+<!-- ══════════════════════════ -->
+<!-- BOTTOM INSIGHT BAR         -->
+<!-- ══════════════════════════ -->
+<rect x="60" y="890" width="1800" height="80" rx="10" class="note-box"/>
+<text x="960" y="918" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">📌 عراق با ۴مین ذخیره نفتی جهان، ناراضی‌ترین مردم خاورمیانه را دارد — «نفرین منابع» در عمل</text>
+<text x="960" y="940" fill="rgba(255,255,255,0.5)" font-size="12" text-anchor="middle">GDP بالا + رضایت پایین = شکاف توزیع. درآمد نفت در جیب نخبگان محاصصه‌ای → مردم فقیرتر از اردن بدون نفت</text>
+<text x="960" y="958" fill="rgba(255,255,255,0.35)" font-size="11" text-anchor="middle">اردن با GDP کمتر، رضایت بالاتری دارد — چون خدمات عمومی، امنیت و حاکمیت قانون بهتر عمل می‌کند</text>
+
+<!-- Footer -->
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 19 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۵: افکار عمومی</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: World Bank WDI 2023, World Happiness Report 2023, Gallup World Poll, IMF WEO | GDP = PPP per capita</text>
+</svg>

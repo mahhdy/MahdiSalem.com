@@ -1,0 +1,225 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width:1; rx:10; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+<text x="960" y="42" class="title">ائتلاف مایلان: چه کسانی آمدند، چه کسانی نه گفتند؟</text>
+<text x="960" y="68" class="subtitle">«Coalition of the Willing» — ۴۹ کشور روی کاغذ، فقط ۴ کشور در عمل جنگیدند</text>
+<line x1="150" y1="84" x2="1770" y2="84" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ===================== TOP: MAIN CONTRIBUTORS ===================== -->
+<rect x="60" y="100" width="1800" height="250" rx="14" class="glass" filter="url(#sh)"/>
+<text x="960" y="130" fill="#e74c3c" font-size="16" font-weight="900" text-anchor="middle">⚔️ مشارکت‌کنندگان اصلی (نیروی رزمی واقعی)</text>
+<line x1="80" y1="142" x2="1840" y2="142" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+
+<!-- USA -->
+<rect x="80" y="155" width="410" height="180" rx="10" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.2)" stroke-width="1.5"/>
+<text x="285" y="178" fill="#e74c3c" font-size="20" font-weight="900" text-anchor="middle">🇺🇸 ایالات متحده آمریکا</text>
+<line x1="100" y1="188" x2="470" y2="188" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="100" y="208" fill="rgba(255,255,255,0.7)" font-size="12">نیرو (اوج): ۱۷۰,۰۰۰ سرباز</text>
+<text x="100" y="226" fill="rgba(255,255,255,0.65)" font-size="11">کشته: ۴,۵۵۰ | زخمی: ۳۲,۲۹۲</text>
+<text x="100" y="244" fill="rgba(255,255,255,0.6)" font-size="11">هزینه: $۲.۴ تریلیون (مستقیم + VA)</text>
+<text x="100" y="262" fill="rgba(255,255,255,0.55)" font-size="10">حضور: ۲۰۰۳–۲۰۱۱ (رزمی) | ۲۰۱۴–اکنون (مشاوره)</text>
+<!-- Bar -->
+<rect x="100" y="275" width="370" height="14" rx="3" fill="rgba(255,255,255,0.04)"/>
+<rect x="100" y="275" width="370" height="14" rx="3" fill="rgba(231,76,60,0.3)"/>
+<text x="100" y="300" fill="rgba(231,76,60,0.6)" font-size="9">۹۵%+ بار نظامی و مالی جنگ</text>
+<rect x="100" y="308" width="370" height="18" rx="3" fill="rgba(231,76,60,0.08)"/>
+<text x="285" y="322" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">نسبت نیرو: ████████████████████ ۱۷۰K</text>
+
+<!-- UK -->
+<rect x="510" y="155" width="410" height="180" rx="10" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.2)" stroke-width="1.5"/>
+<text x="715" y="178" fill="#00b4d8" font-size="20" font-weight="900" text-anchor="middle">🇬🇧 بریتانیا</text>
+<line x1="530" y1="188" x2="900" y2="188" stroke="rgba(0,180,216,0.15)" stroke-width="1"/>
+<text x="530" y="208" fill="rgba(255,255,255,0.7)" font-size="12">نیرو (اوج): ۴۶,۰۰۰ سرباز</text>
+<text x="530" y="226" fill="rgba(255,255,255,0.65)" font-size="11">کشته: ۱۷۹ | زخمی: ۶,۷۰۰+</text>
+<text x="530" y="244" fill="rgba(255,255,255,0.6)" font-size="11">منطقه: جنوب عراق (بصره)</text>
+<text x="530" y="262" fill="rgba(255,255,255,0.55)" font-size="10">خروج رزمی: ۲۰۰۹ | چیلکات: «جنگ نامشروع بود»</text>
+<rect x="530" y="275" width="370" height="14" rx="3" fill="rgba(255,255,255,0.04)"/>
+<rect x="530" y="275" width="100" height="14" rx="3" fill="rgba(0,180,216,0.3)"/>
+<rect x="530" y="308" width="370" height="18" rx="3" fill="rgba(0,180,216,0.08)"/>
+<text x="715" y="322" fill="#00b4d8" font-size="10" font-weight="700" text-anchor="middle">نسبت نیرو: █████░░░░░░░░░░░░░░░ ۴۶K</text>
+
+<!-- Australia -->
+<rect x="940" y="155" width="410" height="180" rx="10" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+<text x="1145" y="178" fill="#2ecc71" font-size="18" font-weight="900" text-anchor="middle">🇦🇺 استرالیا</text>
+<line x1="960" y1="188" x2="1330" y2="188" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+<text x="960" y="208" fill="rgba(255,255,255,0.65)" font-size="11">نیرو: ۲,۰۰۰ | کشته: ۲ | منطقه: جنوب</text>
+<text x="960" y="226" fill="rgba(255,255,255,0.6)" font-size="11">SAS + نیروی هوایی — عملیات محدود</text>
+<text x="960" y="244" fill="rgba(255,255,255,0.55)" font-size="10">خروج: ۲۰۰۹ | انگیزه: اتحاد با آمریکا (AUKUS)</text>
+<rect x="960" y="275" width="370" height="14" rx="3" fill="rgba(255,255,255,0.04)"/>
+<rect x="960" y="275" width="5" height="14" rx="3" fill="rgba(46,204,113,0.3)"/>
+<rect x="960" y="308" width="370" height="18" rx="3" fill="rgba(46,204,113,0.08)"/>
+<text x="1145" y="322" fill="#2ecc71" font-size="10" font-weight="700" text-anchor="middle">نسبت نیرو: ░░░░░░░░░░░░░░░░░░░░ ۲K</text>
+
+<!-- Poland -->
+<rect x="1370" y="155" width="480" height="180" rx="10" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+<text x="1610" y="178" fill="#ff9800" font-size="18" font-weight="900" text-anchor="middle">🇵🇱 لهستان (فرمانده بخش مرکزی-جنوب)</text>
+<line x1="1390" y1="188" x2="1830" y2="188" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+<text x="1390" y="208" fill="rgba(255,255,255,0.65)" font-size="11">نیرو: ۲,۵۰۰ (اوج) | کشته: ۲۳</text>
+<text x="1390" y="226" fill="rgba(255,255,255,0.6)" font-size="11">فرمانده بخش MND-CS (با اوکراین/اسپانیا/ایتالیا)</text>
+<text x="1390" y="244" fill="rgba(255,255,255,0.55)" font-size="10">انگیزه: پیوستن به ناتو + نزدیکی به آمریکا</text>
+<text x="1390" y="262" fill="rgba(255,255,255,0.5)" font-size="10">خروج: ۲۰۰۸</text>
+<rect x="1390" y="275" width="440" height="14" rx="3" fill="rgba(255,255,255,0.04)"/>
+<rect x="1390" y="275" width="6" height="14" rx="3" fill="rgba(255,152,0,0.3)"/>
+<rect x="1390" y="308" width="440" height="18" rx="3" fill="rgba(255,152,0,0.08)"/>
+<text x="1610" y="322" fill="#ff9800" font-size="10" font-weight="700" text-anchor="middle">نسبت نیرو: ░░░░░░░░░░░░░░░░░░░░ ۲.۵K</text>
+
+<!-- ===================== MIDDLE: WHO SAID NO ===================== -->
+<rect x="60" y="365" width="880" height="350" rx="14" fill="rgba(46,204,113,0.03)" stroke="rgba(46,204,113,0.15)" stroke-width="1.5" filter="url(#sh)"/>
+<text x="500" y="395" fill="#2ecc71" font-size="16" font-weight="900" text-anchor="middle">✋ کسانی که «نه» گفتند — و تاریخ حق را به آنها داد</text>
+<line x1="80" y1="408" x2="920" y2="408" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+
+<!-- France -->
+<rect x="80" y="420" width="400" height="80" rx="10" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.12)" stroke-width="1"/>
+<text x="100" y="442" fill="#2ecc71" font-size="15" font-weight="900">🇫🇷 فرانسه — شیراک</text>
+<text x="100" y="460" fill="rgba(255,255,255,0.65)" font-size="11">وتو در شورای امنیت — «ما متقاعد نشدیم»</text>
+<text x="100" y="476" fill="rgba(255,255,255,0.55)" font-size="10">دومینیک دو ویلپن: سخنرانی تاریخی در سازمان ملل</text>
+<text x="100" y="492" fill="rgba(46,204,113,0.5)" font-size="9">آمریکا: «سیب‌زمینی آزادی» بجای French Fries! (تلافی کودکانه)</text>
+
+<!-- Germany -->
+<rect x="500" y="420" width="420" height="80" rx="10" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.12)" stroke-width="1"/>
+<text x="520" y="442" fill="#2ecc71" font-size="15" font-weight="900">🇩🇪 آلمان — شرودر</text>
+<text x="520" y="460" fill="rgba(255,255,255,0.65)" font-size="11">«ماجراجویی نظامی نخواهیم کرد»</text>
+<text x="520" y="476" fill="rgba(255,255,255,0.55)" font-size="10">رد حمله بدون مجوز شورای امنیت</text>
+<text x="520" y="492" fill="rgba(255,255,255,0.45)" font-size="9">بعداً: شرودر مشاور گازپروم شد (رسوایی دیگر)</text>
+
+<!-- Russia -->
+<rect x="80" y="510" width="400" height="65" rx="10" fill="rgba(231,76,60,0.05)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="100" y="532" fill="#e74c3c" font-size="14" font-weight="700">🇷🇺 روسیه — پوتین</text>
+<text x="100" y="550" fill="rgba(255,255,255,0.6)" font-size="10">وتو در شورای امنیت | اما: خودش بعداً سوریه و اوکراین را...</text>
+<text x="100" y="565" fill="rgba(255,255,255,0.45)" font-size="9">درس نگرفت — فقط مخالف بود چون منافعش ایجاب می‌کرد</text>
+
+<!-- China -->
+<rect x="500" y="510" width="420" height="65" rx="10" fill="rgba(255,152,0,0.05)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+<text x="520" y="532" fill="#ff9800" font-size="14" font-weight="700">🇨🇳 چین</text>
+<text x="520" y="550" fill="rgba(255,255,255,0.6)" font-size="10">مخالفت در شورای امنیت (بدون وتو)</text>
+<text x="520" y="565" fill="rgba(255,255,255,0.45)" font-size="9">بعداً: بزرگ‌ترین برنده اقتصادی عراق! (قراردادهای نفتی)</text>
+
+<!-- Turkey -->
+<rect x="80" y="585" width="400" height="55" rx="10" fill="rgba(212,175,55,0.05)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+<text x="100" y="607" fill="#d4af37" font-size="14" font-weight="700">🇹🇷 ترکیه (شگفتی بزرگ)</text>
+<text x="100" y="625" fill="rgba(255,255,255,0.6)" font-size="10">پارلمان رد کرد! ارتش آمریکا نتوانست از شمال حمله کند</text>
+<text x="100" y="637" fill="rgba(255,255,255,0.45)" font-size="9">رامسفلد: عصبانی — اما دموکراسی ترکیه کار خودش را کرد</text>
+
+<!-- UN / Arab League -->
+<rect x="500" y="585" width="420" height="55" rx="10" fill="rgba(0,180,216,0.05)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+<text x="520" y="607" fill="#00b4d8" font-size="14" font-weight="700">🌍 سازمان ملل + اتحادیه عرب</text>
+<text x="520" y="625" fill="rgba(255,255,255,0.6)" font-size="10">کوفی عنان: «جنگ غیرقانونی بود» (۲۰۰۴)</text>
+<text x="520" y="637" fill="rgba(255,255,255,0.45)" font-size="9">اتحادیه عرب: مخالفت رسمی — اما عربستان/کویت: همکاری عملی</text>
+
+<!-- World opinion stat -->
+<rect x="80" y="650" width="840" height="50" rx="8" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.12)" stroke-width="1"/>
+<text x="500" y="670" fill="#2ecc71" font-size="12" font-weight="700" text-anchor="middle">🌍 افکار عمومی جهان (فوریه ۲۰۰۳): ۳۶ میلیون نفر در ۶۰۰ شهر علیه جنگ راهپیمایی کردند</text>
+<text x="500" y="690" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">بزرگ‌ترین اعتراض همزمان تاریخ بشر — نیویورک تایمز: «دومین ابرقدرت جهان: افکار عمومی»</text>
+
+<!-- ===================== RIGHT: COALITION BREAKDOWN ===================== -->
+<rect x="960" y="365" width="900" height="350" rx="14" class="glass" filter="url(#sh)"/>
+<text x="1410" y="395" fill="#d4af37" font-size="16" font-weight="900" text-anchor="middle">📊 تحلیل ائتلاف: واقعیت پشت اعداد</text>
+<line x1="980" y1="408" x2="1840" y2="408" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+
+<!-- Stat boxes -->
+<g transform="translate(990,420)">
+  <rect x="0" y="0" width="200" height="65" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="100" y="22" fill="#e74c3c" font-size="24" font-weight="900" text-anchor="middle">۴۹</text>
+  <text x="100" y="42" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">کشور «عضو ائتلاف»</text>
+  <text x="100" y="56" fill="rgba(255,255,255,0.35)" font-size="8" text-anchor="middle">روی کاغذ</text>
+
+  <rect x="215" y="0" width="200" height="65" rx="8" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="315" y="22" fill="#ff9800" font-size="24" font-weight="900" text-anchor="middle">۴</text>
+  <text x="315" y="42" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">کشور با نیروی رزمی واقعی</text>
+  <text x="315" y="56" fill="rgba(255,255,255,0.35)" font-size="8" text-anchor="middle">آمریکا/بریتانیا/استرالیا/لهستان</text>
+
+  <rect x="430" y="0" width="200" height="65" rx="8" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.12)" stroke-width="1"/>
+  <text x="530" y="22" fill="#00b4d8" font-size="24" font-weight="900" text-anchor="middle">۳۳</text>
+  <text x="530" y="42" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">کشور با نیروی نمادین</text>
+  <text x="530" y="56" fill="rgba(255,255,255,0.35)" font-size="8" text-anchor="middle">۵۰–۲,۵۰۰ نفر (اکثراً غیررزمی)</text>
+
+  <rect x="645" y="0" width="200" height="65" rx="8" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+  <text x="745" y="22" fill="#9b59b6" font-size="24" font-weight="900" text-anchor="middle">۱۲</text>
+  <text x="745" y="42" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">کشور فقط اسماً!</text>
+  <text x="745" y="56" fill="rgba(255,255,255,0.35)" font-size="8" text-anchor="middle">صفر نیرو — فقط بیانیه حمایت</text>
+</g>
+
+<!-- Why countries joined -->
+<text x="1410" y="510" fill="rgba(255,255,255,0.5)" font-size="13" font-weight="700" text-anchor="middle">🎯 انگیزه‌های پیوستن به ائتلاف</text>
+<line x1="980" y1="520" x2="1840" y2="520" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+<g transform="translate(990,530)">
+  <rect x="0" y="0" width="410" height="35" rx="6" fill="rgba(231,76,60,0.05)" stroke="rgba(231,76,60,0.08)" stroke-width="1"/>
+  <text x="205" y="14" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">💰 کمک مالی آمریکا (رشوه دیپلماتیک)</text>
+  <text x="205" y="29" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">اسپانیا + ایتالیا + اوکراین: وعده‌های مالی و نظامی</text>
+
+  <rect x="425" y="0" width="410" height="35" rx="6" fill="rgba(255,152,0,0.05)" stroke="rgba(255,152,0,0.08)" stroke-width="1"/>
+  <text x="630" y="14" fill="#ff9800" font-size="11" font-weight="700" text-anchor="middle">🏛️ عضویت ناتو/اتحادیه اروپا</text>
+  <text x="630" y="29" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">لهستان + رومانی + بلغارستان: «بلیط ورود» به غرب</text>
+
+  <rect x="0" y="45" width="410" height="35" rx="6" fill="rgba(0,180,216,0.05)" stroke="rgba(0,180,216,0.08)" stroke-width="1"/>
+  <text x="205" y="59" fill="#00b4d8" font-size="11" font-weight="700" text-anchor="middle">🤝 اتحاد استراتژیک با واشنگتن</text>
+  <text x="205" y="74" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">استرالیا + ژاپن + کره جنوبی: حفظ رابطه</text>
+
+  <rect x="425" y="45" width="410" height="35" rx="6" fill="rgba(155,89,182,0.05)" stroke="rgba(155,89,182,0.08)" stroke-width="1"/>
+  <text x="630" y="59" fill="#9b59b6" font-size="11" font-weight="700" text-anchor="middle">😰 ترس از تنبیه واشنگتن</text>
+  <text x="630" y="74" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">«یا با ما هستید یا با تروریست‌ها» — بوش</text>
+</g>
+
+<!-- Withdrawal timeline -->
+<text x="1410" y="625" fill="rgba(255,255,255,0.5)" font-size="13" font-weight="700" text-anchor="middle">📅 خروج زنجیره‌ای (دومینوی فرار)</text>
+<line x1="980" y1="635" x2="1840" y2="635" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+<g transform="translate(1000,645)">
+  <text x="0" y="14" fill="rgba(255,255,255,0.6)" font-size="10">🇪🇸 اسپانیا: ۲۰۰۴ (بمب مادرید → رأی مردم → خروج فوری)</text>
+  <text x="0" y="32" fill="rgba(255,255,255,0.55)" font-size="10">🇮🇹 ایتالیا: ۲۰۰۶ | 🇯🇵 ژاپن: ۲۰۰۶ | 🇩🇰 دانمارک: ۲۰۰۷</text>
+  <text x="0" y="50" fill="rgba(255,255,255,0.5)" font-size="10">🇵🇱 لهستان: ۲۰۰۸ | 🇬🇧 بریتانیا: ۲۰۰۹ | 🇦🇺 استرالیا: ۲۰۰۹</text>
+  <text x="0" y="68" fill="rgba(231,76,60,0.6)" font-size="10" font-weight="700">تا ۲۰۰۹: فقط آمریکا مانده بود — «ائتلاف» تمام شد</text>
+</g>
+
+<!-- ===================== BOTTOM: REALITY CHECK ===================== -->
+<rect x="60" y="735" width="1800" height="120" rx="14" class="glass" filter="url(#sh)"/>
+<text x="960" y="762" fill="#d4af37" font-size="16" font-weight="900" text-anchor="middle">⚖️ مقایسه: ائتلاف عراق vs جنگ اول خلیج فارس (۱۹۹۱)</text>
+<line x1="80" y1="775" x2="1840" y2="775" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+
+<g transform="translate(100,788)">
+  <text x="260" y="14" fill="rgba(255,255,255,0.4)" font-size="11" font-weight="700" text-anchor="middle">شاخص</text>
+  <text x="640" y="14" fill="#2ecc71" font-size="11" font-weight="700" text-anchor="middle">🏆 جنگ اول خلیج (۱۹۹۱)</text>
+  <text x="1100" y="14" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">❌ جنگ عراق (۲۰۰۳)</text>
+
+  <line x1="0" y1="22" x2="1620" y2="22" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="260" y="40" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">مجوز سازمان ملل</text>
+  <text x="640" y="40" fill="#2ecc71" font-size="10" text-anchor="middle">✅ قطعنامه ۶۷۸ شورای امنیت</text>
+  <text x="1100" y="40" fill="#e74c3c" font-size="10" text-anchor="middle">❌ بدون مجوز (وتوی فرانسه/روسیه)</text>
+
+  <line x1="0" y1="48" x2="1620" y2="48" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <text x="260" y="66" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">تعداد کشورهای رزمی</text>
+  <text x="640" y="66" fill="#2ecc71" font-size="10" text-anchor="middle">۳۵ کشور (شامل عربستان/مصر/سوریه!)</text>
+  <text x="1100" y="66" fill="#e74c3c" font-size="10" text-anchor="middle">۴ کشور واقعی (بقیه نمادین)</text>
+
+  <line x1="0" y1="74" x2="1620" y2="74" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <text x="260" y="92" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">سهم مالی متحدان</text>
+  <text x="640" y="92" fill="#2ecc71" font-size="10" text-anchor="middle">عربستان + کویت: $۳۶B (اکثر هزینه)</text>
+  <text x="1100" y="92" fill="#e74c3c" font-size="10" text-anchor="middle">آمریکا: ۹۵%+ هزینه (تنها)</text>
+</g>
+
+<!-- ===================== BOTTOM BAR ===================== -->
+<rect x="60" y="875" width="1800" height="80" rx="10" class="note-box"/>
+<text x="960" y="903" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">📌 «ائتلاف مایلان» بزرگ‌ترین دروغ دیپلماتیک جنگ بود — ۴۹ کشور روی کاغذ = ۱ کشور در عمل</text>
+<text x="960" y="925" fill="rgba(255,255,255,0.5)" font-size="12" text-anchor="middle">تفاوت با ۱۹۹۱: مجوز سازمان ملل + ائتلاف واقعی + حمایت عرب‌ها | ۲۰۰۳: هیچ‌کدام</text>
+<text x="960" y="945" fill="rgba(255,255,255,0.35)" font-size="11" text-anchor="middle">درس: وقتی مشروعیت بین‌المللی نباشد، حتی متحدان هم فرار می‌کنند — و آمریکا تنها می‌ماند</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 38 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۹: بازیگران کلیدی</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: CRS Coalition Reports, iCasualties.org, Brookings Iraq Index, UK MoD | ۲۰۰۳–۲۰۱۱</text>
+</svg>

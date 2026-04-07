@@ -1,0 +1,230 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width:1; rx:10; }
+    .river-label { fill: #00b4d8; font-size: 16px; font-weight: 700; }
+    .dam-label { fill: #fff; font-size: 11px; font-weight: 600; text-anchor: middle; }
+    .dam-country { font-size: 10px; font-weight: 700; text-anchor: middle; }
+    .flow-val { fill: #00b4d8; font-size: 13px; font-weight: 700; text-anchor: middle; }
+    .stat-num { font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .stat-label { fill: rgba(255,255,255,0.6); font-size: 12px; text-anchor: middle; }
+    .year-label { fill: rgba(255,255,255,0.5); font-size: 11px; text-anchor: middle; }
+    .bar-water { fill: rgba(0,180,216,0.5); rx: 3; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+  <linearGradient id="river-g" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#00b4d8" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#00b4d8" stop-opacity="0.1"/>
+  </linearGradient>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+<text x="960" y="42" class="title">بحران آب: ترکیه و ایران عراق را خفه می‌کنند</text>
+<text x="960" y="68" class="subtitle">کاهش ۶۰% جریان دجله و فرات — بمب ساعتی بعدی عراق</text>
+<line x1="250" y1="84" x2="1670" y2="84" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- LEFT: Flow diagram -->
+<rect x="60" y="95" width="1050" height="760" class="glass" filter="url(#sh)"/>
+
+<!-- EUPHRATES FLOW -->
+<text x="280" y="130" class="river-label">فرات (Euphrates)</text>
+
+<!-- Turkey source -->
+<rect x="140" y="150" width="140" height="60" rx="8" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.2)" stroke-width="1.5"/>
+<text x="210" y="173" class="dam-country" fill="#e74c3c">🇹🇷 ترکیه</text>
+<text x="210" y="190" class="dam-label">سرچشمه: ۳۰B m³/سال</text>
+<text x="210" y="205" fill="rgba(255,255,255,0.35)" font-size="9" text-anchor="middle">۲۲ سد بزرگ (GAP Project)</text>
+
+<!-- Arrow down with flow reduction -->
+<line x1="210" y1="215" x2="210" y2="275" stroke="#00b4d8" stroke-width="8" opacity="0.2"/>
+<line x1="210" y1="215" x2="210" y2="275" stroke="#00b4d8" stroke-width="3" opacity="0.5"/>
+<rect x="230" y="230" width="120" height="25" rx="5" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="290" y="247" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">▼ ۵۰% کاهش</text>
+
+<!-- Syria transit -->
+<rect x="140" y="280" width="140" height="50" rx="8" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+<text x="210" y="303" class="dam-country" fill="#ff9800">🇸🇾 سوریه</text>
+<text x="210" y="318" class="dam-label">عبوری: ۱۵B m³</text>
+
+<line x1="210" y1="335" x2="210" y2="380" stroke="#00b4d8" stroke-width="5" opacity="0.15"/>
+<line x1="210" y1="335" x2="210" y2="380" stroke="#00b4d8" stroke-width="2" opacity="0.4"/>
+<rect x="230" y="345" width="100" height="22" rx="5" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+<text x="280" y="360" fill="#ff9800" font-size="10" font-weight="700" text-anchor="middle">▼ ۳۰% دیگر</text>
+
+<!-- Iraq receives -->
+<rect x="140" y="385" width="140" height="70" rx="8" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.2)" stroke-width="1.5"/>
+<text x="210" y="408" class="dam-country" fill="#00b4d8">🇮🇶 عراق</text>
+<text x="210" y="425" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">فقط ۹B m³</text>
+<text x="210" y="442" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">از ۳۰B → ۹B (▼ ۷۰%)</text>
+
+<!-- TIGRIS FLOW -->
+<text x="620" y="130" class="river-label">دجله (Tigris)</text>
+
+<!-- Turkey source -->
+<rect x="540" y="150" width="140" height="60" rx="8" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.2)" stroke-width="1.5"/>
+<text x="610" y="173" class="dam-country" fill="#e74c3c">🇹🇷 ترکیه</text>
+<text x="610" y="190" class="dam-label">سرچشمه: ۲۱B m³/سال</text>
+<text x="610" y="205" fill="rgba(255,255,255,0.35)" font-size="9" text-anchor="middle">سد ایلیسو ۲۰۲۰</text>
+
+<line x1="610" y1="215" x2="610" y2="275" stroke="#00b4d8" stroke-width="7" opacity="0.2"/>
+<line x1="610" y1="215" x2="610" y2="275" stroke="#00b4d8" stroke-width="3" opacity="0.5"/>
+<rect x="630" y="230" width="120" height="25" rx="5" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="690" y="247" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">▼ ۴۰% کاهش</text>
+
+<!-- Iran tributaries -->
+<rect x="770" y="280" width="140" height="60" rx="8" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+<text x="840" y="303" class="dam-country" fill="#2ecc71">🇮🇷 ایران</text>
+<text x="840" y="318" class="dam-label">شاخه‌های فرعی: ۸B m³</text>
+<text x="840" y="333" fill="rgba(255,255,255,0.35)" font-size="9" text-anchor="middle">سدهای سیروان + دیاله</text>
+
+<!-- Iran cut arrow -->
+<path d="M 770,310 L 700,310 L 700,340" fill="none" stroke="#2ecc71" stroke-width="2" opacity="0.4"/>
+<rect x="715" y="295" width="50" height="18" rx="4" fill="rgba(231,76,60,0.1)"/>
+<text x="740" y="308" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">▼ ۸۰%</text>
+
+<!-- Iraq Tigris receives -->
+<rect x="540" y="345" width="200" height="70" rx="8" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.2)" stroke-width="1.5"/>
+<text x="640" y="368" class="dam-country" fill="#00b4d8">🇮🇶 عراق — دجله</text>
+<text x="640" y="385" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">فقط ۱۱B m³</text>
+<text x="640" y="402" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">از ۲۹B → ۱۱B (▼ ۶۲%)</text>
+
+<!-- Combined total -->
+<rect x="240" y="475" width="400" height="70" rx="10" fill="rgba(231,76,60,0.1)" stroke="#e74c3c" stroke-width="2"/>
+<text x="440" y="500" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">کل آب ورودی عراق: ۲۰B m³</text>
+<text x="440" y="520" fill="rgba(255,255,255,0.5)" font-size="12" text-anchor="middle">از ۵۹B m³ در ۱۹۸۰ → ۲۰B در ۲۰۲۳ (▼ ۶۶%)</text>
+<text x="440" y="536" fill="rgba(231,76,60,0.6)" font-size="10" text-anchor="middle">نیاز واقعی عراق: ۴۳B m³ → کسری: ۲۳B m³!</text>
+
+<!-- Timeline bars -->
+<text x="440" y="580" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">روند کاهش آب ورودی عراق</text>
+
+<g transform="translate(140,600)">
+  <text x="0" y="15" class="year-label">۱۹۸۰</text>
+  <rect x="60" y="2" width="600" height="20" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="60" y="2" width="600" height="20" class="bar-water" opacity="0.7"/>
+  <text x="670" y="17" class="flow-val">۵۹B m³</text>
+
+  <text x="0" y="45" class="year-label">۱۹۹۰</text>
+  <rect x="60" y="32" width="600" height="20" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="60" y="32" width="457" height="20" class="bar-water" opacity="0.6"/>
+  <text x="527" y="47" class="flow-val">۴۵B m³</text>
+  <text x="560" y="47" fill="rgba(231,76,60,0.5)" font-size="9">پروژه GAP ترکیه</text>
+
+  <text x="0" y="75" class="year-label">۲۰۰۰</text>
+  <rect x="60" y="62" width="600" height="20" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="60" y="62" width="355" height="20" class="bar-water" opacity="0.5"/>
+  <text x="425" y="77" class="flow-val">۳۵B m³</text>
+
+  <text x="0" y="105" class="year-label">۲۰۱۰</text>
+  <rect x="60" y="92" width="600" height="20" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="60" y="92" width="274" height="20" class="bar-water" opacity="0.4"/>
+  <text x="344" y="107" class="flow-val">۲۷B m³</text>
+  <text x="380" y="107" fill="rgba(231,76,60,0.5)" font-size="9">سد ایلیسو ساخت</text>
+
+  <text x="0" y="135" class="year-label">۲۰۲۳</text>
+  <rect x="60" y="122" width="600" height="20" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="60" y="122" width="203" height="20" rx="3" fill="rgba(231,76,60,0.5)"/>
+  <text x="273" y="137" class="flow-val" fill="#e74c3c">۲۰B m³ ⚠️</text>
+
+  <text x="0" y="165" class="year-label" fill="#e74c3c">۲۰۴۰؟</text>
+  <rect x="60" y="152" width="600" height="20" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="60" y="152" width="102" height="20" rx="3" fill="rgba(231,76,60,0.6)"/>
+  <text x="172" y="167" class="flow-val" fill="#e74c3c">۱۰B m³ 💀</text>
+  <text x="210" y="167" fill="rgba(231,76,60,0.6)" font-size="9">+ تغییر اقلیم</text>
+</g>
+
+<!-- RIGHT: Impact Analysis -->
+<rect x="1140" y="95" width="720" height="760" class="glass" filter="url(#sh)"/>
+<text x="1500" y="130" fill="#d4af37" font-size="18" font-weight="700" text-anchor="middle">پیامدهای بحران آب</text>
+<line x1="1160" y1="145" x2="1840" y2="145" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+<!-- Stat boxes row 1 -->
+<g transform="translate(1160,160)">
+  <rect x="0" y="0" width="210" height="80" rx="10" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+  <text x="105" y="35" class="stat-num" fill="#e74c3c">۷M</text>
+  <text x="105" y="58" class="stat-label">هکتار زمین کشاورزی</text>
+  <text x="105" y="72" fill="rgba(231,76,60,0.5)" font-size="10" text-anchor="middle">از دست رفته یا در خطر</text>
+
+  <rect x="225" y="0" width="210" height="80" rx="10" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+  <text x="330" y="35" class="stat-num" fill="#ff9800">۳۹%</text>
+  <text x="330" y="58" class="stat-label">کاهش تولید گندم</text>
+  <text x="330" y="72" fill="rgba(255,152,0,0.5)" font-size="10" text-anchor="middle">نسبت به ۲۰۰۰</text>
+
+  <rect x="450" y="0" width="210" height="80" rx="10" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.15)" stroke-width="1"/>
+  <text x="555" y="35" class="stat-num" fill="#00b4d8">۵۰°C</text>
+  <text x="555" y="58" class="stat-label">دمای بصره تابستان</text>
+  <text x="555" y="72" fill="rgba(0,180,216,0.5)" font-size="10" text-anchor="middle">غیرقابل سکونت شدن</text>
+</g>
+
+<line x1="1160" y1="260" x2="1840" y2="260" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+<!-- Agriculture -->
+<g transform="translate(1170,275)">
+  <text x="0" y="16" fill="#2ecc71" font-size="22">🌾</text>
+  <text x="35" y="16" fill="#2ecc71" font-size="14" font-weight="700">کشاورزی</text>
+  <text x="640" y="16" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="end">خشکسالی ۲۰۲۱: ۵۰% محصول از بین رفت</text>
+  <text x="640" y="34" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="end">مهاجرت روستایی → شهر (۳M+ نفر)</text>
+  <text x="640" y="52" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="end">وابستگی ۹۰%+ به واردات غذایی</text>
+</g>
+
+<!-- Marshes -->
+<g transform="translate(1170,345)">
+  <text x="0" y="16" fill="#00b4d8" font-size="22">🦆</text>
+  <text x="35" y="16" fill="#00b4d8" font-size="14" font-weight="700">تالاب‌های میانرودان (اهوار)</text>
+  <text x="640" y="16" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="end">۹۰% تالاب‌ها خشک شده — میراث ۵,۰۰۰ ساله</text>
+  <text x="640" y="34" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="end">عرب‌های اهوار: ۵۰۰K → ۱۰۰K (فرار)</text>
+  <text x="640" y="52" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="end">UNESCO: در خطر حذف از میراث جهانی</text>
+</g>
+
+<!-- Health -->
+<g transform="translate(1170,415)">
+  <text x="0" y="16" fill="#e74c3c" font-size="22">🏥</text>
+  <text x="35" y="16" fill="#e74c3c" font-size="14" font-weight="700">بهداشت</text>
+  <text x="640" y="16" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="end">شوری آب بصره ۲۰۱۸: ۱۱۸K بیمار مسموم</text>
+  <text x="640" y="34" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="end">سرطان و بیماری‌های کلیوی در جنوب ↑</text>
+</g>
+
+<!-- Conflict potential -->
+<g transform="translate(1170,475)">
+  <text x="0" y="16" fill="#ff9800" font-size="22">⚔️</text>
+  <text x="35" y="16" fill="#ff9800" font-size="14" font-weight="700">پتانسیل درگیری</text>
+  <text x="640" y="16" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="end">ترکیه: «آب مال ماست — مثل نفت شما»</text>
+  <text x="640" y="34" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="end">ایران: انحراف رودخانه‌های مرزی بدون مذاکره</text>
+  <text x="640" y="52" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="end">عراق: هیچ معاهده الزام‌آوری ندارد ⚠️</text>
+</g>
+
+<!-- Climate change overlay -->
+<g transform="translate(1170,545)">
+  <text x="0" y="16" fill="#d4af37" font-size="22">🌡️</text>
+  <text x="35" y="16" fill="#d4af37" font-size="14" font-weight="700">تغییر اقلیم (تشدیدکننده)</text>
+  <text x="640" y="16" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="end">بارش ▼ ۲۰% در ۳۰ سال اخیر</text>
+  <text x="640" y="34" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="end">دمای میانگین ▲ ۱.۵°C (دو برابر میانگین جهانی)</text>
+  <text x="640" y="52" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="end">طوفان‌های شن: ۲۷۲ روز/سال تا ۲۰۵۰ (NASA)</text>
+  <text x="640" y="70" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="end">عراق = ۵مین کشور آسیب‌پذیر جهان از اقلیم</text>
+</g>
+
+<!-- Comparison box -->
+<rect x="1170" y="640" width="640" height="55" rx="8" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.15)" stroke-width="1"/>
+<text x="1490" y="663" fill="#00b4d8" font-size="13" font-weight="700" text-anchor="middle">مقایسه: آب سرانه (m³/نفر/سال)</text>
+<text x="1490" y="683" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="middle">عراق ۱۹۸۰: ۶,۰۰۰ | عراق ۲۰۲۳: ۱,۰۰۰ (خط فقر آبی!) | ترکیه: ۲,۸۰۰ | ایران: ۱,۵۰۰</text>
+
+<!-- Prediction -->
+<rect x="1170" y="710" width="640" height="55" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.2)" stroke-width="1.5"/>
+<text x="1490" y="733" fill="#e74c3c" font-size="14" font-weight="700" text-anchor="middle">⚠️ پیش‌بینی ۲۰۴۰: عراق زیر خط فقر مطلق آبی</text>
+<text x="1490" y="753" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle">بدون توافق بین‌المللی آب = مهاجرت میلیونی از جنوب عراق → بحران انسانی عظیم</text>
+
+<!-- BOTTOM BAR -->
+<rect x="60" y="875" width="1800" height="80" rx="10" class="note-box"/>
+<text x="960" y="903" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">📌 بحران آب ممکن است خطرناک‌تر از داعش باشد — عراق در ۱۵ سال آینده با کمبود مطلق آب مواجه خواهد شد</text>
+<text x="960" y="925" fill="rgba(255,255,255,0.5)" font-size="12" text-anchor="middle">ترکیه ۲۲ سد بزرگ (پروژه GAP) + ایران انحراف رودخانه‌ها = عراق هیچ اهرم فشاری ندارد (نه نظامی، نه حقوقی)</text>
+<text x="960" y="945" fill="rgba(255,255,255,0.35)" font-size="11" text-anchor="middle">تنها راه‌حل: معاهده سه‌جانبه آب + سرمایه‌گذاری در آب‌شیرین‌کن + کشاورزی مدرن — هیچ‌کدام در دستور کار نیست</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 27 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۷: بحران‌های آینده</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: FAO AQUASTAT, World Bank Iraq Water Study (2021), NASA GRACE, Iraqi MoWR | ارقام ۲۰۲۲–۲۰۲۳</text>
+</svg>

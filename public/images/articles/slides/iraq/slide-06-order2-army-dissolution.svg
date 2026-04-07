@@ -1,0 +1,226 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .sub { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:12; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .gantt-bg { fill: rgba(255,255,255,0.02); stroke: rgba(255,255,255,0.05); stroke-width: 1; rx: 4; }
+    .gantt-row { fill: rgba(255,255,255,0.015); }
+    .gantt-label { fill: rgba(255,255,255,0.8); font-size: 12px; font-weight: 500; text-anchor: end; }
+    .gantt-bar { rx: 4; opacity: 0.8; }
+    .gantt-milestone { fill: #d4af37; }
+    .month-label { fill: rgba(255,255,255,0.3); font-size: 10px; text-anchor: middle; }
+    .month-line { stroke: rgba(255,255,255,0.04); stroke-width: 1; }
+    .num-big { font-size: 38px; font-weight: 900; text-anchor: middle; }
+    .num-label { fill: rgba(255,255,255,0.7); font-size: 13px; text-anchor: middle; }
+    .flow-arrow { fill: none; stroke: rgba(231,76,60,0.5); stroke-width: 2; marker-end: url(#arrowR); }
+    @keyframes slideRight { from{opacity:0;transform:translateX(-30px)} to{opacity:1;transform:translateX(0)} }
+    .sr1{animation:slideRight 0.7s ease-out 0.2s both}
+    .sr2{animation:slideRight 0.7s ease-out 0.4s both}
+    .sr3{animation:slideRight 0.7s ease-out 0.6s both}
+    .sr4{animation:slideRight 0.7s ease-out 0.8s both}
+    .sr5{animation:slideRight 0.7s ease-out 1.0s both}
+    .sr6{animation:slideRight 0.7s ease-out 1.2s both}
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+  <marker id="arrowR" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="rgba(231,76,60,0.6)"/>
+  </marker>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+
+<text x="960" y="48" class="title">فرمان شماره ۲ برمر: بذر تمام فاجعه‌ها</text>
+<text x="960" y="75" class="sub">انحلال ارتش ۴۰۰,۰۰۰ نفری عراق — ۲۳ مه ۲۰۰۳ — و پیامدهای زنجیره‌ای آن</text>
+<line x1="300" y1="92" x2="1620" y2="92" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- === بخش بالا: گانت‌چارت (آوریل ۲۰۰۳ – دسامبر ۲۰۰۴) === -->
+<rect x="60" y="110" width="1800" height="380" class="glass" filter="url(#sh)"/>
+<text x="960" y="140" fill="rgba(255,255,255,0.5)" font-size="14" text-anchor="middle">📅 گانت‌چارت: از سقوط بغداد تا ظهور شورش (آوریل ۲۰۰۳ – دسامبر ۲۰۰۴)</text>
+
+<!-- ستون‌های ماه -->
+<!-- X: 280 شروع آوریل ۲۰۰۳, هر ماه ≈75px, 21 ماه تا دسامبر ۲۰۰۴ -->
+<g>
+  <text x="280" y="168" class="month-label">آوریل</text><line x1="280" y1="175" x2="280" y2="470" class="month-line"/>
+  <text x="355" y="168" class="month-label">مه</text><line x1="355" y1="175" x2="355" y2="470" class="month-line"/>
+  <text x="430" y="168" class="month-label">ژوئن</text><line x1="430" y1="175" x2="430" y2="470" class="month-line"/>
+  <text x="505" y="168" class="month-label">ژوئیه</text><line x1="505" y1="175" x2="505" y2="470" class="month-line"/>
+  <text x="580" y="168" class="month-label">اوت</text><line x1="580" y1="175" x2="580" y2="470" class="month-line"/>
+  <text x="655" y="168" class="month-label">سپت</text><line x1="655" y1="175" x2="655" y2="470" class="month-line"/>
+  <text x="730" y="168" class="month-label">اکت</text><line x1="730" y1="175" x2="730" y2="470" class="month-line"/>
+  <text x="805" y="168" class="month-label">نوا</text><line x1="805" y1="175" x2="805" y2="470" class="month-line"/>
+  <text x="880" y="168" class="month-label">دسا</text><line x1="880" y1="175" x2="880" y2="470" class="month-line"/>
+  <text x="955" y="168" class="month-label">ژان۰۴</text><line x1="955" y1="175" x2="955" y2="470" class="month-line"/>
+  <text x="1030" y="168" class="month-label">فور</text><line x1="1030" y1="175" x2="1030" y2="470" class="month-line"/>
+  <text x="1105" y="168" class="month-label">مار</text><line x1="1105" y1="175" x2="1105" y2="470" class="month-line"/>
+  <text x="1180" y="168" class="month-label">آور</text><line x1="1180" y1="175" x2="1180" y2="470" class="month-line"/>
+  <text x="1255" y="168" class="month-label">مه</text><line x1="1255" y1="175" x2="1255" y2="470" class="month-line"/>
+  <text x="1330" y="168" class="month-label">ژوئن</text><line x1="1330" y1="175" x2="1330" y2="470" class="month-line"/>
+  <text x="1405" y="168" class="month-label">ژوئیه</text><line x1="1405" y1="175" x2="1405" y2="470" class="month-line"/>
+  <text x="1480" y="168" class="month-label">اوت</text><line x1="1480" y1="175" x2="1480" y2="470" class="month-line"/>
+  <text x="1555" y="168" class="month-label">سپت</text><line x1="1555" y1="175" x2="1555" y2="470" class="month-line"/>
+  <text x="1630" y="168" class="month-label">نوا</text><line x1="1630" y1="175" x2="1630" y2="470" class="month-line"/>
+  <text x="1705" y="168" class="month-label">دسا</text><line x1="1705" y1="175" x2="1705" y2="470" class="month-line"/>
+</g>
+
+<!-- خط عمودی فرمان ۲ -->
+<line x1="355" y1="155" x2="355" y2="475" stroke="#e74c3c" stroke-width="3" opacity="0.8"/>
+<text x="355" y="152" fill="#e74c3c" font-size="13" font-weight="900" text-anchor="middle">🔴 فرمان ۲ (۲۳ مه)</text>
+
+<!-- ردیف‌های گانت -->
+<!-- ردیف ۱: ارتش عراق -->
+<g class="sr1">
+  <rect x="80" y="185" width="1760" height="30" class="gantt-row" rx="3"/>
+  <text x="265" y="205" class="gantt-label">ارتش عراق (۴۰۰K نفر)</text>
+  <rect x="280" y="190" width="75" height="20" class="gantt-bar" fill="#2ecc71"/>
+  <text x="317" y="205" fill="#fff" font-size="9" text-anchor="middle">فعال</text>
+  <rect x="355" y="190" width="20" height="20" class="gantt-bar" fill="#e74c3c"/>
+  <text x="365" y="205" fill="#fff" font-size="8" text-anchor="middle">✕</text>
+  <text x="400" y="205" fill="#e74c3c" font-size="10" font-weight="600">منحل — یک‌شبه ۴۰۰K مسلح بیکار</text>
+</g>
+
+<!-- ردیف ۲: پلیس -->
+<g class="sr2">
+  <rect x="80" y="220" width="1760" height="30" class="gantt-row" rx="3"/>
+  <text x="265" y="240" class="gantt-label">پلیس عراق (۶۰K نفر)</text>
+  <rect x="280" y="225" width="75" height="20" class="gantt-bar" fill="#2ecc71"/>
+  <rect x="355" y="225" width="20" height="20" class="gantt-bar" fill="#e74c3c"/>
+  <text x="400" y="240" fill="#e74c3c" font-size="10" font-weight="600">منحل — خلأ امنیتی کامل</text>
+</g>
+
+<!-- ردیف ۳: سازمان اطلاعات -->
+<g class="sr3">
+  <rect x="80" y="255" width="1760" height="30" class="gantt-row" rx="3"/>
+  <text x="265" y="275" class="gantt-label">المخابرات (اطلاعات)</text>
+  <rect x="280" y="260" width="75" height="20" class="gantt-bar" fill="#2ecc71"/>
+  <rect x="355" y="260" width="20" height="20" class="gantt-bar" fill="#e74c3c"/>
+  <text x="400" y="275" fill="#e74c3c" font-size="10" font-weight="600">منحل — صفر اطلاعات از شورشیان</text>
+</g>
+
+<!-- ردیف ۴: شورش مسلحانه -->
+<g class="sr4">
+  <rect x="80" y="300" width="1760" height="30" class="gantt-row" rx="3"/>
+  <text x="265" y="320" class="gantt-label">شورش مسلحانه (سنی)</text>
+  <rect x="430" y="305" width="1330" height="20" class="gantt-bar" fill="rgba(231,76,60,0.6)"/>
+  <text x="1095" y="320" fill="#fff" font-size="10" text-anchor="middle">شورش فزاینده — بمب‌گذاری، تک‌تیراندازی، IED</text>
+</g>
+
+<!-- ردیف ۵: القاعده عراق -->
+<g class="sr5">
+  <rect x="80" y="335" width="1760" height="30" class="gantt-row" rx="3"/>
+  <text x="265" y="355" class="gantt-label">القاعده عراق (زرقاوی)</text>
+  <rect x="505" y="340" width="1255" height="20" class="gantt-bar" fill="rgba(30,30,30,0.9)" stroke="#fff" stroke-width="0.5"/>
+  <text x="1132" y="355" fill="#fff" font-size="10" text-anchor="middle">🏴 ورود زرقاوی — جذب نظامیان سابق بعثی — حملات انتحاری</text>
+</g>
+
+<!-- ردیف ۶: بازسازی ارتش جدید -->
+<g class="sr6">
+  <rect x="80" y="380" width="1760" height="30" class="gantt-row" rx="3"/>
+  <text x="265" y="400" class="gantt-label">ارتش جدید عراق</text>
+  <rect x="580" y="385" width="75" height="20" class="gantt-bar" fill="rgba(46,204,113,0.3)"/>
+  <text x="617" y="400" fill="#2ecc71" font-size="8" text-anchor="middle">شروع</text>
+  <rect x="655" y="385" width="1105" height="20" class="gantt-bar" fill="rgba(46,204,113,0.4)"/>
+  <text x="1207" y="400" fill="#fff" font-size="10" text-anchor="middle">بازسازی کند — ضعیف — فاقد تجربه — ۵ سال تا رسیدن به ظرفیت حداقلی</text>
+</g>
+
+<!-- ردیف ۷: نیروهای آمریکایی -->
+<rect x="80" y="420" width="1760" height="30" class="gantt-row" rx="3"/>
+<text x="265" y="440" class="gantt-label">نیروهای آمریکایی</text>
+<rect x="280" y="425" width="1480" height="20" class="gantt-bar" fill="rgba(59,130,246,0.4)"/>
+<text x="1020" y="440" fill="#fff" font-size="10" text-anchor="middle">حضور مداوم — ناکافی برای پر کردن خلأ امنیتی (۱۵۰K نفر برای ۲۷M جمعیت)</text>
+
+<!-- نقاط عطف -->
+<g>
+  <polygon points="280,460 290,475 270,475" class="gantt-milestone"/>
+  <text x="280" y="485" fill="#d4af37" font-size="9" text-anchor="middle">سقوط بغداد</text>
+  <polygon points="355,460 365,475 345,475" fill="#e74c3c"/>
+  <text x="355" y="485" fill="#e74c3c" font-size="9" text-anchor="middle" font-weight="700">فرمان ۲</text>
+  <polygon points="1180,460 1190,475 1170,475" fill="#ff9800"/>
+  <text x="1180" y="485" fill="#ff9800" font-size="9" text-anchor="middle">نبرد فلوجه ۱</text>
+  <polygon points="1555,460 1565,475 1545,475" fill="#ff5722"/>
+  <text x="1555" y="485" fill="#ff5722" font-size="9" text-anchor="middle">نبرد فلوجه ۲</text>
+</g>
+
+<!-- === بخش پایین: نمودار جریان — از ارتش منحل تا داعش === -->
+<rect x="60" y="510" width="1800" height="300" class="glass" filter="url(#sh)"/>
+<text x="960" y="540" fill="#fff" font-size="20" font-weight="700" text-anchor="middle">🔗 زنجیره‌ی علّی: از انحلال ارتش تا تأسیس داعش</text>
+
+<!-- گره‌ها -->
+<rect x="100" y="570" width="200" height="60" rx="10" fill="rgba(46,204,113,0.15)" stroke="#2ecc71" stroke-width="1.5" filter="url(#sh)"/>
+<text x="200" y="595" fill="#2ecc71" font-size="13" font-weight="700" text-anchor="middle">ارتش عراق</text>
+<text x="200" y="615" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">۴۰۰,۰۰۰ مسلح آموزش‌دیده</text>
+
+<rect x="370" y="570" width="200" height="60" rx="10" fill="rgba(231,76,60,0.15)" stroke="#e74c3c" stroke-width="1.5" filter="url(#sh)"/>
+<text x="470" y="595" fill="#e74c3c" font-size="13" font-weight="700" text-anchor="middle">فرمان ۲ برمر</text>
+<text x="470" y="615" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">۲۳ مه ۲۰۰۳</text>
+
+<rect x="640" y="555" width="200" height="35" rx="8" fill="rgba(241,196,15,0.1)" stroke="#f1c40f" stroke-width="1"/>
+<text x="740" y="577" fill="#f1c40f" font-size="11" font-weight="600" text-anchor="middle">بیکاری + تحقیر + خشم</text>
+
+<rect x="640" y="600" width="200" height="35" rx="8" fill="rgba(241,196,15,0.1)" stroke="#f1c40f" stroke-width="1"/>
+<text x="740" y="622" fill="#f1c40f" font-size="11" font-weight="600" text-anchor="middle">سلاح + مهارت نظامی</text>
+
+<rect x="910" y="570" width="200" height="60" rx="10" fill="rgba(255,152,0,0.15)" stroke="#ff9800" stroke-width="1.5" filter="url(#sh)"/>
+<text x="1010" y="595" fill="#ff9800" font-size="13" font-weight="700" text-anchor="middle">پیوستن به شورش</text>
+<text x="1010" y="615" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">بعثی‌ها + قبایل سنی</text>
+
+<rect x="1180" y="570" width="200" height="60" rx="10" fill="rgba(30,30,30,0.9)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" filter="url(#sh)"/>
+<text x="1280" y="595" fill="#fff" font-size="13" font-weight="700" text-anchor="middle">القاعده عراق</text>
+<text x="1280" y="615" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">زرقاوی + نظامیان سابق</text>
+
+<rect x="1450" y="555" width="200" height="35" rx="8" fill="rgba(231,76,60,0.1)" stroke="#e74c3c" stroke-width="1"/>
+<text x="1550" y="577" fill="#e74c3c" font-size="11" font-weight="600" text-anchor="middle">زندان بوکا (حاضنه)</text>
+
+<rect x="1450" y="600" width="200" height="35" rx="8" fill="rgba(231,76,60,0.1)" stroke="#e74c3c" stroke-width="1"/>
+<text x="1550" y="622" fill="#e74c3c" font-size="11" font-weight="600" text-anchor="middle">ادغام بعثی + جهادی</text>
+
+<rect x="1700" y="570" width="140" height="60" rx="10" fill="rgba(20,20,20,1)" stroke="#fff" stroke-width="2" filter="url(#sh)"/>
+<text x="1770" y="595" fill="#fff" font-size="15" font-weight="900" text-anchor="middle">داعش</text>
+<text x="1770" y="615" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">۲۰۱۴</text>
+
+<!-- فلش‌ها -->
+<path d="M300,600 L370,600" class="flow-arrow"/>
+<path d="M570,595 L640,575" class="flow-arrow"/>
+<path d="M570,600 L640,618" class="flow-arrow"/>
+<path d="M840,575 L910,590" class="flow-arrow"/>
+<path d="M840,618 L910,600" class="flow-arrow"/>
+<path d="M1110,600 L1180,600" class="flow-arrow"/>
+<path d="M1380,590 L1450,575" class="flow-arrow"/>
+<path d="M1380,600 L1450,618" class="flow-arrow"/>
+<path d="M1650,590 L1700,590" class="flow-arrow"/>
+<path d="M1650,618 L1700,605" class="flow-arrow"/>
+
+<!-- آمار پایین -->
+<g transform="translate(80,830)">
+  <rect x="0" y="0" width="350" height="100" rx="10" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <text x="175" y="35" class="num-big" fill="#e74c3c">۴۰۰,۰۰۰</text>
+  <text x="175" y="58" class="num-label">نظامی یک‌شبه بیکار شده</text>
+  <text x="175" y="78" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">بدون حقوق بازنشستگی، بدون جایگزین</text>
+
+  <rect x="400" y="0" width="350" height="100" rx="10" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <text x="575" y="35" class="num-big" fill="#ff9800">۱۰۰,۰۰۰+</text>
+  <text x="575" y="58" class="num-label">به شورش مسلحانه پیوستند</text>
+  <text x="575" y="78" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">CIA estimate — Rand Corporation 2008</text>
+
+  <rect x="800" y="0" width="350" height="100" rx="10" fill="rgba(30,30,30,0.8)" stroke="rgba(255,255,255,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <text x="975" y="35" class="num-big" fill="#fff">۱۷/۲۵</text>
+  <text x="975" y="58" class="num-label">فرماندهان ارشد داعش = نظامی سابق بعث</text>
+  <text x="975" y="78" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">Haji Bakr, Abu Muslim, Abu Ayman al-Iraqi...</text>
+
+  <rect x="1200" y="0" width="350" height="100" rx="10" fill="rgba(212,175,55,0.08)" stroke="rgba(212,175,55,0.2)" stroke-width="1" filter="url(#sh)"/>
+  <text x="1375" y="35" class="num-big" fill="#d4af37">بوکا</text>
+  <text x="1375" y="58" class="num-label">زندانی که داعش در آن متولد شد</text>
+  <text x="1375" y="78" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">بغدادی + صدها فرمانده آینده در یک اردوگاه</text>
+</g>
+
+<!-- نقل‌قول -->
+<rect x="80" y="950" width="1760" height="50" rx="8" fill="rgba(212,175,55,0.05)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+<text x="960" y="980" fill="#d4af37" font-size="15" font-weight="500" text-anchor="middle" font-style="italic">«انحلال ارتش بزرگ‌ترین اشتباه ما بود. ما ۴۰۰ هزار دشمن مسلح ساختیم.» — ژنرال ریکاردو سانچز، فرمانده ائتلاف ۲۰۰۳</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 06 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۲: زوال امنیت</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: CPA Order No. 2, Rand Corp 2008, Hashim 2006, Whiteside (West Point) 2016, Reuter (Spiegel) 2015</text>
+</svg>

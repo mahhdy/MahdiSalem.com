@@ -1,0 +1,166 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+  </style>
+  <linearGradient id="bg47" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0a0e27"/>
+    <stop offset="50%" stop-color="#0d1333"/>
+    <stop offset="100%" stop-color="#1a0a1e"/>
+  </linearGradient>
+  <filter id="sh47"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#bg47)"/>
+
+<!-- Header -->
+<text x="960" y="45" fill="#fff" font-size="32" font-weight="900" text-anchor="middle">👩 زنان عراقی: از پیشرفته‌ترین عرب تا سرکوب سیستماتیک</text>
+<text x="960" y="72" fill="#d4af37" font-size="15" font-weight="400" text-anchor="middle">عراق ۱۹۸۰: اولین وزیر زن عرب — عراق ۲۰۲۳: قتل‌های ناموسی + ازدواج کودک</text>
+<line x1="150" y1="88" x2="1770" y2="88" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ====== LEFT: BEFORE/AFTER ====== -->
+<rect x="60" y="105" width="580" height="440" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh47)"/>
+<text x="350" y="135" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📅 وضعیت زنان: ۱۹۸۰ vs ۲۰۲۳</text>
+
+<!-- 1980 (Golden) -->
+<rect x="80" y="150" width="255" height="375" rx="10" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+<text x="207" y="175" fill="#2ecc71" font-size="13" font-weight="900" text-anchor="middle">🌟 عراق ۱۹۸۰</text>
+<text x="207" y="192" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">«پیشرفته‌ترین قوانین زنان عرب»</text>
+
+<text x="95" y="215" fill="rgba(255,255,255,0.6)" font-size="9">✅ حق رأی (۱۹۵۸)</text>
+<text x="95" y="235" fill="rgba(255,255,255,0.6)" font-size="9">✅ اولین وزیر زن عرب (۱۹۵۹)</text>
+<text x="95" y="255" fill="rgba(255,255,255,0.6)" font-size="9">✅ قانون خانواده مترقی (۱۹۵۹)</text>
+<text x="95" y="275" fill="rgba(255,255,255,0.6)" font-size="9">✅ ممنوعیت ازدواج اجباری</text>
+<text x="95" y="295" fill="rgba(255,255,255,0.6)" font-size="9">✅ حق طلاق برابر</text>
+<text x="95" y="315" fill="rgba(255,255,255,0.6)" font-size="9">✅ ۵۲% دانشجویان زن</text>
+<text x="95" y="335" fill="rgba(255,255,255,0.6)" font-size="9">✅ ۴۰% نیروی کار</text>
+<text x="95" y="355" fill="rgba(255,255,255,0.6)" font-size="9">✅ پزشک/مهندس/قاضی زن</text>
+<text x="95" y="375" fill="rgba(255,255,255,0.6)" font-size="9">✅ آموزش اجباری دختران</text>
+<text x="95" y="395" fill="rgba(255,255,255,0.6)" font-size="9">✅ پوشش: آزاد</text>
+
+<rect x="95" y="410" width="230" height="25" rx="4" fill="rgba(46,204,113,0.15)"/>
+<text x="210" y="427" fill="#2ecc71" font-size="10" font-weight="700" text-anchor="middle">رتبه ۱ حقوق زنان عرب</text>
+
+<text x="210" y="455" fill="rgba(255,255,255,0.3)" font-size="8" text-anchor="middle">GII (1980) ≈ بهتر از ترکیه</text>
+<text x="210" y="470" fill="rgba(255,255,255,0.3)" font-size="8" text-anchor="middle">مشارکت سیاسی: فعال</text>
+
+<!-- 2023 (Devastated) -->
+<rect x="350" y="150" width="270" height="375" rx="10" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="485" y="175" fill="#e74c3c" font-size="13" font-weight="900" text-anchor="middle">⚠️ عراق ۲۰۲۳</text>
+<text x="485" y="192" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">«پسرفت ۴ دهه‌ای»</text>
+
+<text x="365" y="215" fill="rgba(255,255,255,0.6)" font-size="9">❌ بیکاری زنان: ۴۹%</text>
+<text x="365" y="235" fill="rgba(255,255,255,0.6)" font-size="9">❌ ازدواج کودک: ۲۴% زیر ۱۸</text>
+<text x="365" y="255" fill="rgba(255,255,255,0.6)" font-size="9">❌ قتل ناموسی: ≈۱۰۰۰/سال</text>
+<text x="365" y="275" fill="rgba(255,255,255,0.6)" font-size="9">❌ ماده ۴۰۹: تخفیف برای قتل</text>
+<text x="365" y="295" fill="rgba(255,255,255,0.6)" font-size="9">❌ ۱۵% نیروی کار فقط</text>
+<text x="365" y="315" fill="rgba(255,255,255,0.6)" font-size="9">❌ ۱M+ بیوه جنگ</text>
+<text x="365" y="335" fill="rgba(255,255,255,0.6)" font-size="9">❌ ترک تحصیل دختران: ۴۰%</text>
+<text x="365" y="355" fill="rgba(255,255,255,0.6)" font-size="9">❌ فشار پوشش اجباری</text>
+<text x="365" y="375" fill="rgba(255,255,255,0.6)" font-size="9">❌ فعالان زن: ترور شدند</text>
+<text x="365" y="395" fill="rgba(255,255,255,0.6)" font-size="9">❌ تلاش برای تغییر قانون خانواده</text>
+
+<rect x="365" y="410" width="235" height="25" rx="4" fill="rgba(231,76,60,0.15)"/>
+<text x="482" y="427" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">رتبه ۱۴۷/۱۹۱ (GII)</text>
+
+<text x="482" y="455" fill="rgba(255,255,255,0.3)" font-size="8" text-anchor="middle">بدتر از یمن و سودان</text>
+<text x="482" y="470" fill="rgba(255,255,255,0.3)" font-size="8" text-anchor="middle">کوتای ۲۵% مجلس = نمایشی</text>
+
+<!-- ====== MIDDLE: GENDER INDICATORS ====== -->
+<rect x="665" y="105" width="600" height="440" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh47)"/>
+<text x="965" y="135" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📊 شاخص‌های جنسیتی — مقایسه منطقه‌ای</text>
+
+<!-- Female Labor Force Participation -->
+<text x="685" y="165" fill="rgba(255,255,255,0.6)" font-size="11" font-weight="700">👷‍♀️ مشارکت اقتصادی زنان (% نیروی کار)</text>
+<g transform="translate(685,175)">
+  <text x="0" y="14" fill="rgba(255,255,255,0.5)" font-size="9">ترکیه</text>
+  <rect x="75" y="2" width="480" height="18" rx="3" fill="rgba(255,255,255,0.03)"/>
+  <rect x="75" y="2" width="168" height="18" rx="3" fill="rgba(46,204,113,0.3)"/>
+  <text x="250" y="15" fill="#2ecc71" font-size="9" font-weight="700">۳۵%</text>
+
+  <text x="0" y="34" fill="rgba(255,255,255,0.5)" font-size="9">ایران</text>
+  <rect x="75" y="22" width="480" height="18" rx="3" fill="rgba(255,255,255,0.03)"/>
+  <rect x="75" y="22" width="96" height="18" rx="3" fill="rgba(0,180,216,0.3)"/>
+  <text x="178" y="35" fill="#00b4d8" font-size="9" font-weight="700">۲۰%</text>
+
+  <text x="0" y="54" fill="#e74c3c" font-size="9" font-weight="700">عراق</text>
+  <rect x="75" y="42" width="480" height="20" rx="3" fill="rgba(255,255,255,0.03)"/>
+  <rect x="75" y="42" width="72" height="20" rx="3" fill="rgba(231,76,60,0.4)" stroke="rgba(231,76,60,0.5)" stroke-width="1"/>
+  <text x="155" y="56" fill="#e74c3c" font-size="10" font-weight="900">۱۵%</text>
+</g>
+
+<!-- Education gender gap -->
+<text x="685" y="260" fill="rgba(255,255,255,0.6)" font-size="11" font-weight="700">🎓 شکاف تحصیلی جنسیتی</text>
+<g transform="translate(685,270)">
+  <rect x="0" y="0" width="555" height="42" rx="6" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+  <text x="15" y="18" fill="#ff9800" font-size="10" font-weight="700">بی‌سوادی زنان: ۲۵% (مردان: ۱۲%)</text>
+  <text x="15" y="34" fill="rgba(255,255,255,0.4)" font-size="8">روستایی: بی‌سوادی زنان ۴۵%+ | دختران مناطق جنگی: ۶۰% ترک تحصیل</text>
+</g>
+
+<!-- Violence stats -->
+<text x="685" y="333" fill="rgba(255,255,255,0.6)" font-size="11" font-weight="700">⚠️ خشونت علیه زنان</text>
+<g transform="translate(685,343)">
+  <rect x="0" y="0" width="270" height="55" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="135" y="20" fill="#e74c3c" font-size="16" font-weight="900" text-anchor="middle">≈۱,۰۰۰</text>
+  <text x="135" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">قتل ناموسی/سال</text>
+  <text x="135" y="50" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">اغلب «خودکشی» ثبت می‌شود</text>
+
+  <rect x="285" y="0" width="270" height="55" rx="8" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+  <text x="420" y="20" fill="#9b59b6" font-size="16" font-weight="900" text-anchor="middle">۷,۰۰۰+</text>
+  <text x="420" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">زن اسیر داعش (ایزدی)</text>
+  <text x="420" y="50" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">۲,۷۰۰ هنوز مفقود</text>
+</g>
+
+<!-- War widows -->
+<text x="685" y="420" fill="rgba(255,255,255,0.6)" font-size="11" font-weight="700">💔 بیوه‌های جنگ</text>
+<g transform="translate(685,430)">
+  <rect x="0" y="0" width="555" height="48" rx="6" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+  <text x="15" y="18" fill="#00b4d8" font-size="13" font-weight="900">≈۱–۲ میلیون بیوه</text>
+  <text x="15" y="38" fill="rgba(255,255,255,0.4)" font-size="9">بغداد = «شهر بیوه‌ها» — اغلب بدون درآمد، مسکن، یا حمایت اجتماعی</text>
+</g>
+
+<!-- Legal regression -->
+<rect x="685" y="490" width="555" height="42" rx="6" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="690" y="510" fill="#e74c3c" font-size="10" font-weight="700">⚖️ لایحه تعدیل قانون خانواده ۲۰۲۴: ازدواج دختر ۹ ساله! (تلاش جریان مذهبی)</text>
+<text x="690" y="526" fill="rgba(255,255,255,0.35)" font-size="8">مقاومت جامعه مدنی + فشار بین‌المللی → هنوز معلق | اما نشان‌دهنده جهت حرکت</text>
+
+<!-- ====== RIGHT: SUCCESS STORIES ====== -->
+<rect x="1290" y="105" width="570" height="440" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh47)"/>
+<text x="1575" y="135" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">💪 نقاط روشن: مقاومت زنان</text>
+
+<rect x="1310" y="155" width="530" height="55" rx="8" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.12)" stroke-width="1"/>
+<text x="1325" y="178" fill="#2ecc71" font-size="12" font-weight="900">🔥 تشرین ۲۰۱۹: زنان در خط مقدم</text>
+<text x="1325" y="198" fill="rgba(255,255,255,0.5)" font-size="10">۴۰%+ معترضان زن — بزرگ‌ترین حضور زنانه از ۱۹۵۸</text>
+
+<rect x="1310" y="218" width="530" height="55" rx="8" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.12)" stroke-width="1"/>
+<text x="1325" y="241" fill="#00b4d8" font-size="12" font-weight="900">🏛️ سهمیه ۲۵% مجلس</text>
+<text x="1325" y="261" fill="rgba(255,255,255,0.5)" font-size="10">۸۳ نماینده زن (۲۰۲۱) — اما اغلب نماینده حزب/قبیله نه زنان</text>
+
+<rect x="1310" y="281" width="530" height="55" rx="8" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+<text x="1325" y="304" fill="#9b59b6" font-size="12" font-weight="900">📱 جنبش دیجیتال زنان</text>
+<text x="1325" y="324" fill="rgba(255,255,255,0.5)" font-size="10">فعالان آنلاین + NGOها | اما: ≈۴۰ فعال زن ترور/تهدید شده</text>
+
+<rect x="1310" y="344" width="530" height="55" rx="8" fill="rgba(212,175,55,0.08)" stroke="rgba(212,175,55,0.12)" stroke-width="1"/>
+<text x="1325" y="367" fill="#d4af37" font-size="12" font-weight="900">👩‍⚕️ زنان در بازسازی</text>
+<text x="1325" y="387" fill="rgba(255,255,255,0.5)" font-size="10">پزشکان، معلمان، روزنامه‌نگاران — ستون بی‌صدای جامعه</text>
+
+<rect x="1310" y="407" width="530" height="55" rx="8" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+<text x="1325" y="430" fill="#ff9800" font-size="12" font-weight="900">🏆 نادیا مراد: نوبل صلح ۲۰۱۸</text>
+<text x="1325" y="450" fill="rgba(255,255,255,0.5)" font-size="10">اسیر داعش → فعال حقوق بشر → جایزه نوبل — صدای بی‌صدایان</text>
+
+<!-- Structural barriers -->
+<rect x="1310" y="475" width="530" height="55" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="1575" y="498" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">⛔ موانع ساختاری</text>
+<text x="1325" y="520" fill="rgba(255,255,255,0.4)" font-size="9">محاصصه مذهبی + قبیله‌گرایی + شبه‌نظامیان = سه‌ضلعی سرکوب زنان</text>
+
+<!-- ====== BOTTOM NOTE ====== -->
+<rect x="60" y="565" width="1800" height="65" rx="10" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+<text x="960" y="590" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📌 «آزادسازی» عراق → پسرفت ۴ دهه‌ای حقوق زنان | از اولین وزیر زن عرب تا قتل‌های ناموسی سیستماتیک</text>
+<text x="960" y="612" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">تنها امید: نسل تشرین — زنانی که در ۲۰۱۹ بدون حجاب اجباری به خیابان آمدند و گفتند «نرید وطن»</text>
+
+<!-- Footer -->
+<text x="60" y="42" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 47 / 60</text>
+<text x="1860" y="42" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۸: توسعه انسانی</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: UNDP GII, UN Women, HRW, OWFI Iraq, ILO Gender Stats, UNICEF Child Marriage | ۲۰۲۳</text>
+</svg>

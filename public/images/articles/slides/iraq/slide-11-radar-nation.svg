@@ -1,0 +1,253 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 34px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 17px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .axis-label { fill: rgba(255,255,255,0.85); font-size: 14px; font-weight: 600; text-anchor: middle; }
+    .axis-val { fill: rgba(255,255,255,0.3); font-size: 10px; text-anchor: middle; }
+    .legend-text { fill: rgba(255,255,255,0.8); font-size: 14px; font-weight: 500; }
+    .detail-title { fill: #fff; font-size: 15px; font-weight: 700; }
+    .detail-text { fill: rgba(255,255,255,0.6); font-size: 12px; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width: 1; rx: 10; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+  <filter id="glow-iran">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feFlood flood-color="#2ecc71" flood-opacity="0.3"/>
+    <feComposite in2="blur" operator="in"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glow-iraq">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feFlood flood-color="#e74c3c" flood-opacity="0.3"/>
+    <feComposite in2="blur" operator="in"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+
+<!-- Header -->
+<text x="960" y="50" class="title">مقایسه مفهوم «ملت» — ایران در برابر عراق</text>
+<text x="960" y="80" class="subtitle">چرا ایران قابل تجزیه نیست اما عراق شکننده ماند؟ — تحلیل ۸ محوری</text>
+<line x1="300" y1="98" x2="1620" y2="98" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- Radar Chart Container -->
+<rect x="80" y="110" width="1000" height="850" class="glass" filter="url(#sh)"/>
+
+<!-- RADAR CHART — Center: 580, 540 | Radius: 320 -->
+<!-- 8 axes at 45° intervals. 0°=top, clockwise -->
+<!-- Axis angles: 0, 45, 90, 135, 180, 225, 270, 315 degrees -->
+<!-- Scale rings: 20%, 40%, 60%, 80%, 100% of R=320 → 64, 128, 192, 256, 320 -->
+
+<!-- Grid rings -->
+<g opacity="0.15">
+  <polygon points="580,220 806,314 806,540 806,766 580,860 354,766 354,540 354,314" fill="none" stroke="#fff" stroke-width="0.5"/>
+  <polygon points="580,284 742,346 742,540 742,734 580,796 418,734 418,540 418,346" fill="none" stroke="#fff" stroke-width="0.5"/>
+  <polygon points="580,348 678,378 678,540 678,702 580,732 482,702 482,540 482,378" fill="none" stroke="#fff" stroke-width="0.5"/>
+  <polygon points="580,412 614,410 614,540 614,670 580,668 546,670 546,540 546,410" fill="none" stroke="#fff" stroke-width="0.5"/>
+</g>
+
+<!-- Grid ring 100% (octagon) -->
+<polygon points="580,220 806.3,314 900,540 806.3,766 580,860 353.7,766 260,540 353.7,314" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+<!-- Grid ring 80% -->
+<polygon points="580,284 761,357.2 836,540 761,722.8 580,796 399,722.8 324,540 399,357.2" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.7"/>
+<!-- Grid ring 60% -->
+<polygon points="580,348 715.8,400.4 772,540 715.8,679.6 580,732 444.2,679.6 388,540 444.2,400.4" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="0.7"/>
+<!-- Grid ring 40% -->
+<polygon points="580,412 670.5,443.6 708,540 670.5,636.4 580,668 489.5,636.4 452,540 489.5,443.6" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="0.7"/>
+<!-- Grid ring 20% -->
+<polygon points="580,476 625.3,486.8 644,540 625.3,593.2 580,604 534.7,593.2 516,540 534.7,486.8" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/>
+
+<!-- Axis lines -->
+<g stroke="rgba(255,255,255,0.1)" stroke-width="0.7">
+  <line x1="580" y1="540" x2="580" y2="220"/>
+  <line x1="580" y1="540" x2="806.3" y2="314"/>
+  <line x1="580" y1="540" x2="900" y2="540"/>
+  <line x1="580" y1="540" x2="806.3" y2="766"/>
+  <line x1="580" y1="540" x2="580" y2="860"/>
+  <line x1="580" y1="540" x2="353.7" y2="766"/>
+  <line x1="580" y1="540" x2="260" y2="540"/>
+  <line x1="580" y1="540" x2="353.7" y2="314"/>
+</g>
+
+<!-- Scale labels (on top axis) -->
+<text x="555" y="478" class="axis-val">۲۰</text>
+<text x="555" y="414" class="axis-val">۴۰</text>
+<text x="555" y="350" class="axis-val">۶۰</text>
+<text x="555" y="286" class="axis-val">۸۰</text>
+<text x="555" y="222" class="axis-val">۱۰۰</text>
+
+<!-- Axis labels (8 dimensions) -->
+<!-- 0°=top: پیوستگی تاریخی -->
+<text x="580" y="195" class="axis-label">پیوستگی تاریخی</text>
+<!-- 45°: هویت ملی واحد -->
+<text x="840" y="295" class="axis-label">هویت ملی واحد</text>
+<!-- 90°: وفاداری ارتش -->
+<text x="940" y="545" class="axis-label">وفاداری ارتش</text>
+<!-- 135°: انسجام مذهبی -->
+<text x="840" y="800" class="axis-label">انسجام مذهبی</text>
+<!-- 180°: نهادهای مدنی -->
+<text x="580" y="895" class="axis-label">نهادهای مدنی</text>
+<!-- 225°: زبان مشترک -->
+<text x="310" y="800" class="axis-label">زبان مشترک</text>
+<!-- 270°: تجربه دموکراسی -->
+<text x="210" y="545" class="axis-label">تجربه دموکراسی</text>
+<!-- 315°: مقاومت در برابر تجزیه -->
+<text x="310" y="295" class="axis-label">مقاومت تجزیه</text>
+
+<!-- IRAN DATA POLYGON -->
+<!-- Scores (0-100): History=95, Identity=85, Army=90, Religion=70, Civil=55, Language=80, Democracy=35, AntiSplit=95 -->
+<!-- Calculated coordinates for each score on each axis (angle, scaled from center 580,540, R=320) -->
+<polygon points="
+  580,236
+  772.8,330.8
+  868,540
+  734.3,715.6
+  580,684
+  396.8,715.6
+  372,540
+  387.5,330.8
+" fill="rgba(46,204,113,0.15)" stroke="#2ecc71" stroke-width="2.5" filter="url(#glow-iran)"/>
+
+<!-- IRAQ DATA POLYGON -->
+<!-- Scores (0-100): History=40, Identity=30, Army=20, Religion=35, Civil=25, Language=55, Democracy=30, AntiSplit=25 -->
+<polygon points="
+  580,412
+  625.3,471.6
+  516,540
+  603.6,619.2
+  580,700
+  475.1,619.2
+  436,540
+  512.2,471.6
+" fill="rgba(231,76,60,0.15)" stroke="#e74c3c" stroke-width="2.5" filter="url(#glow-iraq)"/>
+
+<!-- Data point dots — Iran (green) -->
+<g fill="#2ecc71">
+  <circle cx="580" cy="236" r="5"/><circle cx="772.8" cy="330.8" r="5"/>
+  <circle cx="868" cy="540" r="5"/><circle cx="734.3" cy="715.6" r="5"/>
+  <circle cx="580" cy="684" r="5"/><circle cx="396.8" cy="715.6" r="5"/>
+  <circle cx="372" cy="540" r="5"/><circle cx="387.5" cy="330.8" r="5"/>
+</g>
+<!-- Data point dots — Iraq (red) -->
+<g fill="#e74c3c">
+  <circle cx="580" cy="412" r="5"/><circle cx="625.3" cy="471.6" r="5"/>
+  <circle cx="516" cy="540" r="5"/><circle cx="603.6" cy="619.2" r="5"/>
+  <circle cx="580" cy="700" r="5"/><circle cx="475.1" cy="619.2" r="5"/>
+  <circle cx="436" cy="540" r="5"/><circle cx="512.2" cy="471.6" r="5"/>
+</g>
+
+<!-- Center dot -->
+<circle cx="580" cy="540" r="3" fill="rgba(255,255,255,0.3)"/>
+
+<!-- Legend -->
+<g transform="translate(330,920)">
+  <rect x="0" y="0" width="22" height="12" rx="3" fill="rgba(46,204,113,0.5)" stroke="#2ecc71" stroke-width="1.5"/>
+  <text x="30" y="11" class="legend-text" fill="#2ecc71">ایران — میانگین: ۷۶/۱۰۰</text>
+  <rect x="250" y="0" width="22" height="12" rx="3" fill="rgba(231,76,60,0.5)" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="280" y="11" class="legend-text" fill="#e74c3c">عراق — میانگین: ۳۳/۱۰۰</text>
+</g>
+
+<!-- ===== RIGHT PANEL: Detail explanations ===== -->
+<rect x="1110" y="110" width="730" height="850" class="glass" filter="url(#sh)"/>
+
+<text x="1475" y="150" fill="#d4af37" font-size="20" font-weight="700" text-anchor="middle">تحلیل تفصیلی هر محور</text>
+<line x1="1140" y1="165" x2="1810" y2="165" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+<!-- Item 1 -->
+<g transform="translate(1140,180)">
+  <text x="0" y="15" class="detail-title" text-anchor="start">۱. پیوستگی تاریخی</text>
+  <rect x="445" y="3" width="80" height="16" rx="4" fill="rgba(46,204,113,0.2)"/>
+  <text x="485" y="16" fill="#2ecc71" font-size="12" font-weight="700" text-anchor="middle">🇮🇷 ۹۵</text>
+  <rect x="535" y="3" width="80" height="16" rx="4" fill="rgba(231,76,60,0.2)"/>
+  <text x="575" y="16" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">🇮🇶 ۴۰</text>
+  <text x="0" y="35" class="detail-text" text-anchor="start">ایران: ۲۵۰۰ سال دولت پیوسته | عراق: مرزهای مصنوعی ۱۹۲۰</text>
+</g>
+
+<!-- Item 2 -->
+<g transform="translate(1140,260)">
+  <text x="0" y="15" class="detail-title" text-anchor="start">۲. هویت ملی واحد</text>
+  <rect x="445" y="3" width="80" height="16" rx="4" fill="rgba(46,204,113,0.2)"/>
+  <text x="485" y="16" fill="#2ecc71" font-size="12" font-weight="700" text-anchor="middle">🇮🇷 ۸۵</text>
+  <rect x="535" y="3" width="80" height="16" rx="4" fill="rgba(231,76,60,0.2)"/>
+  <text x="575" y="16" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">🇮🇶 ۳۰</text>
+  <text x="0" y="35" class="detail-text" text-anchor="start">ایران: «ایرانی بودن» فرااقوامی | عراق: شیعه/سنی/کرد = ۳ هویت</text>
+</g>
+
+<!-- Item 3 -->
+<g transform="translate(1140,340)">
+  <text x="0" y="15" class="detail-title" text-anchor="start">۳. وفاداری ارتش به ملت</text>
+  <rect x="445" y="3" width="80" height="16" rx="4" fill="rgba(46,204,113,0.2)"/>
+  <text x="485" y="16" fill="#2ecc71" font-size="12" font-weight="700" text-anchor="middle">🇮🇷 ۹۰</text>
+  <rect x="535" y="3" width="80" height="16" rx="4" fill="rgba(231,76,60,0.2)"/>
+  <text x="575" y="16" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">🇮🇶 ۲۰</text>
+  <text x="0" y="35" class="detail-text" text-anchor="start">ایران: ارتش + سپاه ملی | عراق: ارتش منحل → شبه‌نظامیان طایفه‌ای</text>
+</g>
+
+<!-- Item 4 -->
+<g transform="translate(1140,420)">
+  <text x="0" y="15" class="detail-title" text-anchor="start">۴. انسجام مذهبی</text>
+  <rect x="445" y="3" width="80" height="16" rx="4" fill="rgba(46,204,113,0.2)"/>
+  <text x="485" y="16" fill="#2ecc71" font-size="12" font-weight="700" text-anchor="middle">🇮🇷 ۷۰</text>
+  <rect x="535" y="3" width="80" height="16" rx="4" fill="rgba(231,76,60,0.2)"/>
+  <text x="575" y="16" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">🇮🇶 ۳۵</text>
+  <text x="0" y="35" class="detail-text" text-anchor="start">ایران: ۹۰%+ شیعه، مذهب ≠ عامل شکاف | عراق: ۶۰/۳۵ شیعه‌سنی → جنگ فرقه‌ای</text>
+</g>
+
+<!-- Item 5 -->
+<g transform="translate(1140,500)">
+  <text x="0" y="15" class="detail-title" text-anchor="start">۵. نهادهای مدنی</text>
+  <rect x="445" y="3" width="80" height="16" rx="4" fill="rgba(46,204,113,0.2)"/>
+  <text x="485" y="16" fill="#2ecc71" font-size="12" font-weight="700" text-anchor="middle">🇮🇷 ۵۵</text>
+  <rect x="535" y="3" width="80" height="16" rx="4" fill="rgba(231,76,60,0.2)"/>
+  <text x="575" y="16" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">🇮🇶 ۲۵</text>
+  <text x="0" y="35" class="detail-text" text-anchor="start">ایران: دانشگاه‌ها، مطبوعات ۱۲۰ ساله | عراق: نهادها زیر سایه بعث/اشغال</text>
+</g>
+
+<!-- Item 6 -->
+<g transform="translate(1140,580)">
+  <text x="0" y="15" class="detail-title" text-anchor="start">۶. زبان مشترک</text>
+  <rect x="445" y="3" width="80" height="16" rx="4" fill="rgba(46,204,113,0.2)"/>
+  <text x="485" y="16" fill="#2ecc71" font-size="12" font-weight="700" text-anchor="middle">🇮🇷 ۸۰</text>
+  <rect x="535" y="3" width="80" height="16" rx="4" fill="rgba(231,76,60,0.2)"/>
+  <text x="575" y="16" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">🇮🇶 ۵۵</text>
+  <text x="0" y="35" class="detail-text" text-anchor="start">ایران: فارسی = زبان ملی فرااقوامی | عراق: عربی اکثریت اما کردی = رسمی دوم</text>
+</g>
+
+<!-- Item 7 -->
+<g transform="translate(1140,660)">
+  <text x="0" y="15" class="detail-title" text-anchor="start">۷. تجربه دموکراسی</text>
+  <rect x="445" y="3" width="80" height="16" rx="4" fill="rgba(46,204,113,0.2)"/>
+  <text x="485" y="16" fill="#2ecc71" font-size="12" font-weight="700" text-anchor="middle">🇮🇷 ۳۵</text>
+  <rect x="535" y="3" width="80" height="16" rx="4" fill="rgba(231,76,60,0.2)"/>
+  <text x="575" y="16" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">🇮🇶 ۳۰</text>
+  <text x="0" y="35" class="detail-text" text-anchor="start">ایران: مشروطه ۱۹۰۶ → محدود اما زنده | عراق: انتخابات محاصصه‌ای = دموکراسی‌نما</text>
+</g>
+
+<!-- Item 8 -->
+<g transform="translate(1140,740)">
+  <text x="0" y="15" class="detail-title" text-anchor="start">۸. مقاومت در برابر تجزیه</text>
+  <rect x="445" y="3" width="80" height="16" rx="4" fill="rgba(46,204,113,0.2)"/>
+  <text x="485" y="16" fill="#2ecc71" font-size="12" font-weight="700" text-anchor="middle">🇮🇷 ۹۵</text>
+  <rect x="535" y="3" width="80" height="16" rx="4" fill="rgba(231,76,60,0.2)"/>
+  <text x="575" y="16" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">🇮🇶 ۲۵</text>
+  <text x="0" y="35" class="detail-text" text-anchor="start">ایران: هیچ جنبش جدایی‌طلب موفق | عراق: کردستان رفراندوم ۲۰۱۷ + داعش ۳۰%</text>
+</g>
+
+<!-- Bottom insight box -->
+<g transform="translate(1140,810)">
+  <rect x="0" y="0" width="640" height="55" class="note-box"/>
+  <text x="320" y="22" fill="#d4af37" font-size="14" font-weight="600" text-anchor="middle">💡 نتیجه: سطح ایران ۲.۳ برابر عراق — ملت‌سازی ارگانیک vs مرزکشی استعماری</text>
+  <text x="320" y="42" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">ایران ۷۶/۱۰۰ — عراق ۳۳/۱۰۰ | اختلاف ۴۳ واحد در ۸ محور کلیدی</text>
+</g>
+
+<!-- Footer -->
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 11 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۴: ایران در برابر عراق</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: Fragile States Index, WVS, Polity IV, CIA World Factbook, Encyclopaedia Iranica | تحلیل تطبیقی نگارنده</text>
+</svg>

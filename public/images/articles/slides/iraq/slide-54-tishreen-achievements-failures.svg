@@ -1,0 +1,168 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+  </style>
+  <linearGradient id="bg54" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0a0e27"/>
+    <stop offset="50%" stop-color="#0d1333"/>
+    <stop offset="100%" stop-color="#1a0a1e"/>
+  </linearGradient>
+  <filter id="sh54"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#bg54)"/>
+
+<!-- Header -->
+<text x="960" y="45" fill="#fff" font-size="32" font-weight="900" text-anchor="middle">📋 دستاوردها و شکست‌های تشرین — ترازنامه</text>
+<text x="960" y="72" fill="#d4af37" font-size="15" font-weight="400" text-anchor="middle">آنچه به دست آمد — آنچه از دست رفت — آنچه هنوز زنده است</text>
+<line x1="150" y1="88" x2="1770" y2="88" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ====== LEFT: ACHIEVEMENTS ====== -->
+<rect x="60" y="105" width="580" height="500" rx="14" fill="rgba(46,204,113,0.04)" stroke="rgba(46,204,113,0.12)" stroke-width="1" filter="url(#sh54)"/>
+<text x="350" y="135" fill="#2ecc71" font-size="16" font-weight="900" text-anchor="middle">✅ دستاوردها</text>
+
+<g transform="translate(80,152)">
+  <rect x="0" y="0" width="540" height="48" rx="8" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.12)" stroke-width="1"/>
+  <text x="15" y="18" fill="#2ecc71" font-size="11" font-weight="900">۱. استعفای نخست‌وزیر عبدالمهدی (دسامبر ۲۰۱۹)</text>
+  <text x="15" y="36" fill="rgba(255,255,255,0.5)" font-size="9">اولین بار: فشار خیابان = سقوط دولت</text>
+
+  <rect x="0" y="54" width="540" height="48" rx="8" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="15" y="72" fill="#2ecc71" font-size="11" font-weight="900">۲. قانون انتخابات جدید (۲۰۲۰)</text>
+  <text x="15" y="90" fill="rgba(255,255,255,0.5)" font-size="9">حوزه فردی → شانس مستقلین بالا رفت</text>
+
+  <rect x="0" y="108" width="540" height="48" rx="8" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="15" y="126" fill="#2ecc71" font-size="11" font-weight="900">۳. ورود ≈۴۰ نماینده تشرینی به مجلس (۲۰۲۱)</text>
+  <text x="15" y="144" fill="rgba(255,255,255,0.5)" font-size="9">تاریخی اما ناکافی (از ۳۲۹ کرسی)</text>
+
+  <rect x="0" y="162" width="540" height="48" rx="8" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="15" y="180" fill="#2ecc71" font-size="11" font-weight="900">۴. شکست روایت فرقه‌ای</text>
+  <text x="15" y="198" fill="rgba(255,255,255,0.5)" font-size="9">اثبات: هویت ملی > هویت طایفه‌ای | محاصصه مشروعیت باخت</text>
+
+  <rect x="0" y="216" width="540" height="48" rx="8" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="15" y="234" fill="#2ecc71" font-size="11" font-weight="900">۵. بیداری مدنی نسل جدید</text>
+  <text x="15" y="252" fill="rgba(255,255,255,0.5)" font-size="9">NGOها + رسانه مستقل + فعالان = سرمایه آینده</text>
+
+  <rect x="0" y="270" width="540" height="48" rx="8" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="15" y="288" fill="#2ecc71" font-size="11" font-weight="900">۶. افشای نقش ایران در افکار عمومی</text>
+  <text x="15" y="306" fill="rgba(255,255,255,0.5)" font-size="9">آتش کنسولگری نجف = پیام: «ما می‌دانیم چه کسی حکومت واقعی است»</text>
+
+  <rect x="0" y="324" width="540" height="48" rx="8" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="15" y="342" fill="#2ecc71" font-size="11" font-weight="900">۷. الهام‌بخشی منطقه‌ای (لبنان اکتبر ۲۰۱۹)</text>
+  <text x="15" y="360" fill="rgba(255,255,255,0.5)" font-size="9">«ثورة تشرين» → اعتراضات لبنان هم‌زمان شروع شد</text>
+</g>
+
+<!-- Score -->
+<rect x="80" y="545" width="540" height="42" rx="8" fill="rgba(46,204,113,0.1)" stroke="rgba(46,204,113,0.2)" stroke-width="2"/>
+<text x="350" y="570" fill="#2ecc71" font-size="14" font-weight="900" text-anchor="middle">دستاوردها: مهم اما ناکافی — تغییر فرهنگ بله، تغییر ساختار نه</text>
+
+<!-- ====== MIDDLE: FAILURES ====== -->
+<rect x="665" y="105" width="600" height="500" rx="14" fill="rgba(231,76,60,0.04)" stroke="rgba(231,76,60,0.12)" stroke-width="1" filter="url(#sh54)"/>
+<text x="965" y="135" fill="#e74c3c" font-size="16" font-weight="900" text-anchor="middle">❌ شکست‌ها و ناکامی‌ها</text>
+
+<g transform="translate(685,152)">
+  <rect x="0" y="0" width="560" height="48" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="15" y="18" fill="#e74c3c" font-size="11" font-weight="900">۱. محاصصه شکست نخورد — فقط بازآرایی شد</text>
+  <text x="15" y="36" fill="rgba(255,255,255,0.5)" font-size="9">الکاظمی → السودانی: هر دو محصول سیستم محاصصه</text>
+
+  <rect x="0" y="54" width="560" height="48" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="15" y="72" fill="#e74c3c" font-size="11" font-weight="900">۲. شبه‌نظامیان قدرتمندتر شدند</text>
+  <text x="15" y="90" fill="rgba(255,255,255,0.5)" font-size="9">تشرین = بهانه تقویت PMF | اکنون: ≈۲۰۰K نیرو + بودجه رسمی</text>
+
+  <rect x="0" y="108" width="560" height="48" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="15" y="126" fill="#e74c3c" font-size="11" font-weight="900">۳. فساد بدتر شد</text>
+  <text x="15" y="144" fill="rgba(255,255,255,0.5)" font-size="9">دزدی قرن (۲۰۲۲): $۲.۵B ناپدید شد! — بزرگ‌ترین سرقت تاریخ عراق</text>
+
+  <rect x="0" y="162" width="560" height="48" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="15" y="180" fill="#e74c3c" font-size="11" font-weight="900">۴. صفر پاسخگویی برای ۸۰۰ شهید</text>
+  <text x="15" y="198" fill="rgba(255,255,255,0.5)" font-size="9">هیچ فرمانده‌ای محاکمه نشد — خون شهدا بر زمین ماند</text>
+
+  <rect x="0" y="216" width="560" height="48" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="15" y="234" fill="#e74c3c" font-size="11" font-weight="900">۵. کووید + سرکوب = پراکندگی جنبش</text>
+  <text x="15" y="252" fill="rgba(255,255,255,0.5)" font-size="9">مارس ۲۰۲۰: کرونا = بهانه ایده‌آل برای پاکسازی میدان تحریر</text>
+
+  <rect x="0" y="270" width="560" height="48" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="15" y="288" fill="#e74c3c" font-size="11" font-weight="900">۶. ترور و ارعاب فعالان ادامه دارد</text>
+  <text x="15" y="306" fill="rgba(255,255,255,0.5)" font-size="9">۲۰۲۰–۲۰۲۳: ده‌ها فعال ترور شدند — فضای ترس حاکم شد</text>
+
+  <rect x="0" y="324" width="560" height="48" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="15" y="342" fill="#e74c3c" font-size="11" font-weight="900">۷. نسل تشرین مهاجرت می‌کند</text>
+  <text x="15" y="360" fill="rgba(255,255,255,0.5)" font-size="9">بسیاری از فعالان از ترس ترور، عراق را ترک کردند → فرار مغز نسل امید</text>
+</g>
+
+<!-- Score -->
+<rect x="685" y="545" width="560" height="42" rx="8" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.2)" stroke-width="2"/>
+<text x="965" y="570" fill="#e74c3c" font-size="14" font-weight="900" text-anchor="middle">شکست‌ها: ساختاری و عمیق — سیستم خود را ترمیم کرد</text>
+
+<!-- ====== RIGHT: WHAT IS STILL ALIVE ====== -->
+<rect x="1290" y="105" width="570" height="500" rx="14" fill="rgba(212,175,55,0.04)" stroke="rgba(212,175,55,0.12)" stroke-width="1" filter="url(#sh54)"/>
+<text x="1575" y="135" fill="#d4af37" font-size="16" font-weight="900" text-anchor="middle">🔥 آنچه هنوز زنده است</text>
+
+<g transform="translate(1310,155)">
+  <rect x="0" y="0" width="530" height="55" rx="8" fill="rgba(212,175,55,0.08)" stroke="rgba(212,175,55,0.12)" stroke-width="1"/>
+  <text x="265" y="22" fill="#d4af37" font-size="13" font-weight="900" text-anchor="middle">💡 آگاهی سیاسی نسل جدید</text>
+  <text x="265" y="42" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">این نسل دیگر فریب محاصصه را نمی‌خورد</text>
+
+  <rect x="0" y="62" width="530" height="55" rx="8" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+  <text x="265" y="84" fill="#d4af37" font-size="13" font-weight="900" text-anchor="middle">🏛️ حضور در مجلس و شوراها</text>
+  <text x="265" y="104" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">≈۴۰ نماینده مستقل = پایه بلندمدت</text>
+
+  <rect x="0" y="124" width="530" height="55" rx="8" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+  <text x="265" y="146" fill="#d4af37" font-size="13" font-weight="900" text-anchor="middle">📱 رسانه‌های مستقل و جامعه مدنی</text>
+  <text x="265" y="166" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">صدها NGO + کانال + پادکست = صدای جایگزین</text>
+
+  <rect x="0" y="186" width="530" height="55" rx="8" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+  <text x="265" y="208" fill="#d4af37" font-size="13" font-weight="900" text-anchor="middle">🎨 فرهنگ مقاومت (هنر + ادبیات)</text>
+  <text x="265" y="228" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">گرافیتی، آهنگ‌ها، شعرها = حافظه ملی</text>
+
+  <rect x="0" y="248" width="530" height="55" rx="8" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+  <text x="265" y="270" fill="#d4af37" font-size="13" font-weight="900" text-anchor="middle">🌱 تغییر دموگرافیک = تغییر حتمی</text>
+  <text x="265" y="290" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">۷۰% جمعیت زیر ۳۰ = این نسل آینده عراق را تعیین می‌کند</text>
+</g>
+
+<!-- Historical quote -->
+<rect x="1310" y="475" width="530" height="72" rx="10" fill="rgba(212,175,55,0.08)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+<text x="1575" y="498" fill="#d4af37" font-size="13" font-weight="700" text-anchor="middle" font-style="italic">«تشرین نمُرد — تشرین بذر است»</text>
+<text x="1575" y="518" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">— شعار دیوارنویسی بغداد ۲۰۲۱</text>
+<text x="1575" y="538" fill="rgba(255,255,255,0.35)" font-size="9" text-anchor="middle">هر انقلابی ممکن است سرکوب شود — اما ایده‌ها نمی‌میرند</text>
+
+<!-- ====== BOTTOM: COMPARATIVE ANALYSIS ====== -->
+<rect x="60" y="625" width="1800" height="155" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh54)"/>
+<text x="960" y="655" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">🔄 مقایسه تشرین با جنبش‌های مشابه</text>
+
+<g transform="translate(90,670)">
+  <!-- Tahrir Egypt -->
+  <rect x="0" y="0" width="400" height="45" rx="6" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+  <text x="15" y="18" fill="#ff9800" font-size="10" font-weight="700">🇪🇬 مصر ۲۰۱۱: سقوط مبارک → اما: کودتا ۲۰۱۳ → سیسی</text>
+  <text x="15" y="36" fill="rgba(255,255,255,0.4)" font-size="8">شباهت: انقلاب بدون ساختار جایگزین = بازگشت نظم قدیم</text>
+
+  <!-- Hong Kong -->
+  <rect x="420" y="0" width="400" height="45" rx="6" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+  <text x="435" y="18" fill="#00b4d8" font-size="10" font-weight="700">🇭🇰 هنگ‌کنگ ۲۰۱۹: ۰ کشته → توجه جهانی عظیم</text>
+  <text x="435" y="36" fill="rgba(255,255,255,0.4)" font-size="8">تفاوت: تشرین ۸۰۰ کشته → سکوت جهانی (جان عراقی ارزان‌تر؟)</text>
+
+  <!-- Iran 2022 -->
+  <rect x="840" y="0" width="400" height="45" rx="6" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+  <text x="855" y="18" fill="#9b59b6" font-size="10" font-weight="700">🇮🇷 ایران ۱۴۰۱ (ژینا): سرکوب → اما: تغییر فرهنگی عمیق</text>
+  <text x="855" y="36" fill="rgba(255,255,255,0.4)" font-size="8">شباهت: هر دو = نسل جوان vs سیستم مسلح | هر دو سرکوب شدند</text>
+
+  <!-- Sudan -->
+  <rect x="1260" y="0" width="400" height="45" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="1275" y="18" fill="#e74c3c" font-size="10" font-weight="700">🇸🇩 سودان ۲۰۱۹: سقوط البشیر → اما: جنگ داخلی ۲۰۲۳</text>
+  <text x="1275" y="36" fill="rgba(255,255,255,0.4)" font-size="8">درس: انقلاب بدون حذف ساختار نظامی = بازگشت خشونت</text>
+</g>
+
+<rect x="90" y="735" width="1700" height="30" rx="4" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+<text x="940" y="755" fill="#d4af37" font-size="10" font-weight="700" text-anchor="middle">💡 درس مشترک: انقلاب بدون سازمان + بدون جایگزین ساختاری = تغییر فرهنگی بله، تغییر سیاسی نه (هنوز)</text>
+
+<!-- ====== BOTTOM NOTE ====== -->
+<rect x="60" y="798" width="1800" height="55" rx="10" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+<text x="960" y="820" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📌 تشرین شکست خورد؟ خیر — تشرین هنوز در حال وقوع است. فقط سرعتش تغییر کرده.</text>
+<text x="960" y="840" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">۷۰% جمعیت عراق زیر ۳۰ سال = نسل تشرین. آنها فراموش نکرده‌اند. فقط منتظرند.</text>
+
+<!-- Footer -->
+<text x="60" y="42" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 54 / 60</text>
+<text x="1860" y="42" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۹: جنبش تشرین</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: ICG, Chatham House, OHCHR, Iraqi Parliament Records, Al-Monitor, Middle East Eye | ۲۰۱۹-۲۰۲۳</text>
+</svg>

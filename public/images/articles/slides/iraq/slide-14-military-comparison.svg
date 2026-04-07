@@ -1,0 +1,210 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width:1; rx:10; }
+    .cat-label { fill: rgba(255,255,255,0.9); font-size: 14px; font-weight: 700; text-anchor: middle; }
+    .cat-icon { font-size: 22px; text-anchor: middle; }
+    .val-iran { fill: #2ecc71; font-size: 14px; font-weight: 700; }
+    .val-iraq { fill: #e74c3c; font-size: 14px; font-weight: 700; }
+    .bar-iran { fill: rgba(46,204,113,0.5); rx: 3; }
+    .bar-iraq { fill: rgba(231,76,60,0.5); rx: 3; }
+    .bar-bg-l { fill: rgba(255,255,255,0.04); rx: 3; }
+    .bar-bg-r { fill: rgba(255,255,255,0.04); rx: 3; }
+    .ratio { fill: #d4af37; font-size: 12px; font-weight: 700; text-anchor: middle; }
+    .flag-label { font-size: 18px; font-weight: 900; text-anchor: middle; }
+    @keyframes growRight { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes growLeft { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    .grow-r { animation: growRight 1s ease-out both; transform-origin: right center; }
+    .grow-l { animation: growLeft 1s ease-out both; transform-origin: left center; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+  <linearGradient id="iran-bar-g" x1="1" y1="0" x2="0" y2="0">
+    <stop offset="0%" stop-color="#2ecc71" stop-opacity="0.7"/>
+    <stop offset="100%" stop-color="#2ecc71" stop-opacity="0.15"/>
+  </linearGradient>
+  <linearGradient id="iraq-bar-g" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.7"/>
+    <stop offset="100%" stop-color="#e74c3c" stop-opacity="0.15"/>
+  </linearGradient>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+
+<!-- Header -->
+<text x="960" y="45" class="title">مقایسه قدرت نظامی: ایران در برابر عراق (۲۰۲۳)</text>
+<text x="960" y="72" class="subtitle">مقایسه کمّی ۱۰ شاخص کلیدی — چرا عراق قادر به دفاع مستقل نیست؟</text>
+<line x1="250" y1="88" x2="1670" y2="88" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- Main container -->
+<rect x="60" y="100" width="1800" height="830" class="glass" filter="url(#sh)"/>
+
+<!-- Column headers -->
+<!-- Iran flag/label on LEFT (bars grow right-to-left toward center) -->
+<!-- Iraq flag/label on RIGHT (bars grow left-to-right toward center) -->
+<!-- Center axis at x=960 -->
+
+<text x="480" y="135" class="flag-label" fill="#2ecc71">🇮🇷 ایران</text>
+<text x="480" y="155" fill="rgba(46,204,113,0.5)" font-size="12" text-anchor="middle">رتبه جهانی: ۱۴</text>
+
+<text x="1440" y="135" class="flag-label" fill="#e74c3c">🇮🇶 عراق</text>
+<text x="1440" y="155" fill="rgba(231,76,60,0.5)" font-size="12" text-anchor="middle">رتبه جهانی: ۵۷</text>
+
+<!-- Center divider -->
+<line x1="960" y1="170" x2="960" y2="890" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+<text x="960" y="168" fill="rgba(255,255,255,0.3)" font-size="11" text-anchor="middle">VS</text>
+
+<!-- ════════════════════════════════════════════════════ -->
+<!-- MIRRORED BARS — 10 categories                       -->
+<!-- Iran: bars extend LEFT from x=940. Iraq: RIGHT from x=980 -->
+<!-- Max bar width: 700px each side                       -->
+<!-- Row height: 68px. Start y=180                        -->
+<!-- ════════════════════════════════════════════════════ -->
+
+<!-- ─── Row 1: Personnel ─── y=185 -->
+<text x="960" y="198" class="cat-icon">👥</text>
+<text x="960" y="215" class="cat-label">پرسنل فعال</text>
+<!-- Iran: 610K → 610/610=100% → 700px -->
+<rect x="240" y="220" width="700" height="18" class="bar-bg-l"/>
+<rect x="240" y="220" width="700" height="18" fill="url(#iran-bar-g)"/>
+<text x="235" y="234" class="val-iran" text-anchor="end">۶۱۰,۰۰۰</text>
+<!-- Iraq: 193K → 193/610=31.6% → 221px -->
+<rect x="980" y="220" width="700" height="18" class="bar-bg-r"/>
+<rect x="980" y="220" width="221" height="18" fill="url(#iraq-bar-g)"/>
+<text x="1210" y="234" class="val-iraq">۱۹۳,۰۰۰</text>
+<text x="960" y="245" class="ratio">۳.۲×</text>
+
+<!-- ─── Row 2: Reserves + Paramilitary ─── y=253 -->
+<text x="960" y="268" class="cat-icon">🛡️</text>
+<text x="960" y="285" class="cat-label">ذخیره + شبه‌نظامی</text>
+<!-- Iran: 350K reserves + 190K IRGC + Basij ~1M → total ~1.5M → 700px -->
+<rect x="240" y="290" width="700" height="18" class="bar-bg-l"/>
+<rect x="240" y="290" width="700" height="18" fill="url(#iran-bar-g)"/>
+<text x="235" y="304" class="val-iran" text-anchor="end">۱,۵۰۰,۰۰۰+</text>
+<!-- Iraq: PMF 150K + reserves 50K → 200K → 200/1500=13.3% → 93px -->
+<rect x="980" y="290" width="700" height="18" class="bar-bg-r"/>
+<rect x="980" y="290" width="93" height="18" fill="url(#iraq-bar-g)"/>
+<text x="1082" y="304" class="val-iraq">۲۰۰,۰۰۰</text>
+<text x="960" y="315" class="ratio">۷.۵×</text>
+
+<!-- ─── Row 3: Tanks ─── y=323 -->
+<text x="960" y="338" class="cat-icon">🔩</text>
+<text x="960" y="355" class="cat-label">تانک</text>
+<!-- Iran: 1996 → 700px -->
+<rect x="240" y="360" width="700" height="18" class="bar-bg-l"/>
+<rect x="240" y="360" width="700" height="18" fill="url(#iran-bar-g)"/>
+<text x="235" y="374" class="val-iran" text-anchor="end">۱,۹۹۶</text>
+<!-- Iraq: 272 → 272/1996=13.6% → 95px -->
+<rect x="980" y="360" width="700" height="18" class="bar-bg-r"/>
+<rect x="980" y="360" width="95" height="18" fill="url(#iraq-bar-g)"/>
+<text x="1084" y="374" class="val-iraq">۲۷۲</text>
+<text x="960" y="385" class="ratio">۷.۳×</text>
+
+<!-- ─── Row 4: Aircraft ─── y=393 -->
+<text x="960" y="408" class="cat-icon">✈️</text>
+<text x="960" y="425" class="cat-label">هواپیمای جنگی</text>
+<!-- Iran: 186 → 700px -->
+<rect x="240" y="430" width="700" height="18" class="bar-bg-l"/>
+<rect x="240" y="430" width="700" height="18" fill="url(#iran-bar-g)"/>
+<text x="235" y="444" class="val-iran" text-anchor="end">۱۸۶</text>
+<!-- Iraq: 34 (F-16) → 34/186=18.3% → 128px -->
+<rect x="980" y="430" width="700" height="18" class="bar-bg-r"/>
+<rect x="980" y="430" width="128" height="18" fill="url(#iraq-bar-g)"/>
+<text x="1117" y="444" class="val-iraq">۳۴</text>
+<text x="960" y="455" class="ratio">۵.۵×</text>
+
+<!-- ─── Row 5: Missiles ─── y=463 -->
+<text x="960" y="478" class="cat-icon">🚀</text>
+<text x="960" y="495" class="cat-label">موشک بالستیک</text>
+<!-- Iran: 3000+ → 700px -->
+<rect x="240" y="500" width="700" height="18" class="bar-bg-l"/>
+<rect x="240" y="500" width="700" height="18" fill="url(#iran-bar-g)"/>
+<text x="235" y="514" class="val-iran" text-anchor="end">۳,۰۰۰+</text>
+<!-- Iraq: 0 (no ballistic missiles) → 0px -->
+<rect x="980" y="500" width="700" height="18" class="bar-bg-r"/>
+<rect x="980" y="500" width="3" height="18" fill="url(#iraq-bar-g)"/>
+<text x="995" y="514" class="val-iraq">۰</text>
+<text x="960" y="525" class="ratio">∞</text>
+
+<!-- ─── Row 6: Naval ─── y=533 -->
+<text x="960" y="548" class="cat-icon">🚢</text>
+<text x="960" y="565" class="cat-label">ناوگان دریایی</text>
+<!-- Iran: 398 → 700px -->
+<rect x="240" y="570" width="700" height="18" class="bar-bg-l"/>
+<rect x="240" y="570" width="700" height="18" fill="url(#iran-bar-g)"/>
+<text x="235" y="584" class="val-iran" text-anchor="end">۳۹۸ فروند</text>
+<!-- Iraq: 56 → 56/398=14% → 98px -->
+<rect x="980" y="570" width="700" height="18" class="bar-bg-r"/>
+<rect x="980" y="570" width="98" height="18" fill="url(#iraq-bar-g)"/>
+<text x="1087" y="584" class="val-iraq">۵۶ فروند</text>
+<text x="960" y="595" class="ratio">۷.۱×</text>
+
+<!-- ─── Row 7: Defense Budget ─── y=603 -->
+<text x="960" y="618" class="cat-icon">💵</text>
+<text x="960" y="635" class="cat-label">بودجه دفاعی ($B)</text>
+<!-- Iran: \$25B → 700px -->
+<rect x="240" y="640" width="700" height="18" class="bar-bg-l"/>
+<rect x="240" y="640" width="700" height="18" fill="url(#iran-bar-g)"/>
+<text x="235" y="654" class="val-iran" text-anchor="end">$۲۵B (+ سپاه)</text>
+<!-- Iraq: \$7.6B → 7.6/25=30.4% → 213px -->
+<rect x="980" y="640" width="700" height="18" class="bar-bg-r"/>
+<rect x="980" y="640" width="213" height="18" fill="url(#iraq-bar-g)"/>
+<text x="1202" y="654" class="val-iraq">$۷.۶B</text>
+<text x="960" y="665" class="ratio">۳.۳×</text>
+
+<!-- ─── Row 8: Drone Fleet ─── y=673 -->
+<text x="960" y="688" class="cat-icon">🛸</text>
+<text x="960" y="705" class="cat-label">پهپاد نظامی</text>
+<!-- Iran: 2000+ → 700px -->
+<rect x="240" y="710" width="700" height="18" class="bar-bg-l"/>
+<rect x="240" y="710" width="700" height="18" fill="url(#iran-bar-g)"/>
+<text x="235" y="724" class="val-iran" text-anchor="end">۲,۰۰۰+ (شاهد، ابابیل، مهاجر)</text>
+<!-- Iraq: ~50 (CH-4B Chinese) → 50/2000=2.5% → 18px -->
+<rect x="980" y="710" width="700" height="18" class="bar-bg-r"/>
+<rect x="980" y="710" width="18" height="18" fill="url(#iraq-bar-g)"/>
+<text x="1008" y="724" class="val-iraq">~۵۰</text>
+<text x="960" y="735" class="ratio">۴۰×</text>
+
+<!-- ─── Row 9: Domestic Production ─── y=743 -->
+<text x="960" y="758" class="cat-icon">🏭</text>
+<text x="960" y="775" class="cat-label">تولید داخلی تسلیحات</text>
+<!-- Iran: 85% → 700×0.85=595px -->
+<rect x="345" y="780" width="595" height="18" class="bar-bg-l"/>
+<rect x="345" y="780" width="595" height="18" fill="url(#iran-bar-g)"/>
+<text x="235" y="794" class="val-iran" text-anchor="end">۸۵% بومی</text>
+<!-- Iraq: 5% → 700×0.05=35px -->
+<rect x="980" y="780" width="700" height="18" class="bar-bg-r"/>
+<rect x="980" y="780" width="35" height="18" fill="url(#iraq-bar-g)"/>
+<text x="1025" y="794" class="val-iraq">۵% بومی</text>
+<text x="960" y="805" class="ratio">۱۷×</text>
+
+<!-- ─── Row 10: Cyber Capability ─── y=813 -->
+<text x="960" y="828" class="cat-icon">💻</text>
+<text x="960" y="845" class="cat-label">توان سایبری</text>
+<!-- Iran: Tier 3 (top 15) → 80% → 560px -->
+<rect x="380" y="850" width="560" height="18" class="bar-bg-l"/>
+<rect x="380" y="850" width="560" height="18" fill="url(#iran-bar-g)"/>
+<text x="235" y="864" class="val-iran" text-anchor="end">Tier 3 — ۱۵ برتر جهان</text>
+<!-- Iraq: Minimal → 5% → 35px -->
+<rect x="980" y="850" width="700" height="18" class="bar-bg-r"/>
+<rect x="980" y="850" width="35" height="18" fill="url(#iraq-bar-g)"/>
+<text x="1025" y="864" class="val-iraq">حداقل</text>
+<text x="960" y="875" class="ratio">—</text>
+
+<!-- ════════════════════════════════════ -->
+<!-- BOTTOM INSIGHT BAR                   -->
+<!-- ════════════════════════════════════ -->
+<rect x="80" y="945" width="1760" height="70" rx="10" class="note-box"/>
+<text x="960" y="970" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📌 نتیجه: ایران در تمام ۱۰ شاخص نظامی برتری مطلق دارد — عراق فاقد قدرت بازدارندگی مستقل است</text>
+<text x="960" y="992" fill="rgba(255,255,255,0.45)" font-size="11" text-anchor="middle">ارتش عراق پس از انحلال ۲۰۰۳ هرگز بازسازی واقعی نشد | وابستگی به آمریکا (تسلیحات) + ایران (شبه‌نظامی) = حاکمیت ناقص</text>
+
+<!-- Footer -->
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 14 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۴: ایران در برابر عراق</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: Global Firepower Index 2023, IISS Military Balance 2023, SIPRI, Jane's Defence | تمام ارقام تقریبی</text>
+</svg>

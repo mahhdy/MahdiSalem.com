@@ -1,0 +1,279 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width:1; rx:10; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+<text x="960" y="42" class="title">رسانه و پروپاگاندا: جنگ عراق چگونه فروخته شد؟</text>
+<text x="960" y="68" class="subtitle">از CNN تا الجزیره — نقش رسانه در ساختن روایت جنگ و پنهان‌کردن حقیقت</text>
+<line x1="150" y1="84" x2="1770" y2="84" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ===================== TOP: PROPAGANDA PIPELINE ===================== -->
+<rect x="60" y="100" width="1800" height="200" rx="14" class="glass" filter="url(#sh)"/>
+<text x="960" y="130" fill="#d4af37" font-size="16" font-weight="900" text-anchor="middle">🔄 خط تولید پروپاگاندا: از کاخ سفید تا ذهن شهروندان</text>
+<line x1="80" y1="142" x2="1840" y2="142" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+
+<!-- Pipeline nodes -->
+<!-- Node 1: White House -->
+<rect x="100" y="160" width="200" height="75" rx="10" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.2)" stroke-width="1.5"/>
+<text x="200" y="185" fill="#e74c3c" font-size="14" font-weight="700" text-anchor="middle">🏛️ کاخ سفید</text>
+<text x="200" y="203" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">تولید روایت</text>
+<text x="200" y="218" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">چینی/رامسفلد/رایس</text>
+
+<!-- Arrow -->
+<line x1="305" y1="197" x2="370" y2="197" stroke="#d4af37" stroke-width="2" opacity="0.4"/>
+<polygon points="370,192 380,197 370,202" fill="#d4af37" opacity="0.5"/>
+
+<!-- Node 2: Intelligence -->
+<rect x="385" y="160" width="200" height="75" rx="10" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.2)" stroke-width="1.5"/>
+<text x="485" y="185" fill="#ff9800" font-size="14" font-weight="700" text-anchor="middle">🕵️ اطلاعات (CIA)</text>
+<text x="485" y="203" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">Cherry-picking شواهد</text>
+<text x="485" y="218" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">Curveball + منابع جعلی</text>
+
+<line x1="590" y1="197" x2="655" y2="197" stroke="#d4af37" stroke-width="2" opacity="0.4"/>
+<polygon points="655,192 665,197 655,202" fill="#d4af37" opacity="0.5"/>
+
+<!-- Node 3: Think Tanks -->
+<rect x="670" y="160" width="200" height="75" rx="10" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.2)" stroke-width="1.5"/>
+<text x="770" y="185" fill="#9b59b6" font-size="14" font-weight="700" text-anchor="middle">🏢 اندیشکده‌ها</text>
+<text x="770" y="203" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">مشروعیت‌بخشی آکادمیک</text>
+<text x="770" y="218" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">AEI + PNAC + Heritage</text>
+
+<line x1="875" y1="197" x2="940" y2="197" stroke="#d4af37" stroke-width="2" opacity="0.4"/>
+<polygon points="940,192 950,197 940,202" fill="#d4af37" opacity="0.5"/>
+
+<!-- Node 4: Media -->
+<rect x="955" y="160" width="200" height="75" rx="10" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.2)" stroke-width="1.5"/>
+<text x="1055" y="185" fill="#00b4d8" font-size="14" font-weight="700" text-anchor="middle">📺 رسانه‌ها</text>
+<text x="1055" y="203" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">تکرار بدون تحقیق</text>
+<text x="1055" y="218" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">CNN/FOX/NYT/WaPo</text>
+
+<line x1="1160" y1="197" x2="1225" y2="197" stroke="#d4af37" stroke-width="2" opacity="0.4"/>
+<polygon points="1225,192 1235,197 1225,202" fill="#d4af37" opacity="0.5"/>
+
+<!-- Node 5: Public -->
+<rect x="1240" y="160" width="200" height="75" rx="10" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.2)" stroke-width="1.5"/>
+<text x="1340" y="185" fill="#2ecc71" font-size="14" font-weight="700" text-anchor="middle">👥 افکار عمومی</text>
+<text x="1340" y="203" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">۷۲% آمریکایی‌ها موافق جنگ</text>
+<text x="1340" y="218" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">مارس ۲۰۰۳</text>
+
+<line x1="1445" y1="197" x2="1510" y2="197" stroke="#d4af37" stroke-width="2" opacity="0.4"/>
+<polygon points="1510,192 1520,197 1510,202" fill="#d4af37" opacity="0.5"/>
+
+<!-- Node 6: Congress -->
+<rect x="1525" y="160" width="200" height="75" rx="10" fill="rgba(212,175,55,0.08)" stroke="rgba(212,175,55,0.2)" stroke-width="1.5"/>
+<text x="1625" y="185" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">🏛️ کنگره</text>
+<text x="1625" y="203" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">مجوز جنگ (۲۹۶ موافق)</text>
+<text x="1625" y="218" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">شامل هیلاری + کری + بایدن</text>
+
+<!-- Feedback loop arrow -->
+<path d="M 1725,197 Q 1780,197 1780,260 Q 1780,285 100,285 Q 80,285 80,250 Q 80,235 100,235" fill="none" stroke="rgba(231,76,60,0.2)" stroke-width="1.5" stroke-dasharray="6,4"/>
+<text x="960" y="280" fill="rgba(231,76,60,0.5)" font-size="10" text-anchor="middle" font-style="italic">حلقه بازخورد: مجوز کنگره ← تقویت روایت دولت ← رسانه بیشتر ←...</text>
+
+<!-- ===================== MIDDLE LEFT: KEY LIES ===================== -->
+<rect x="60" y="320" width="580" height="420" rx="14" fill="rgba(231,76,60,0.03)" stroke="rgba(231,76,60,0.15)" stroke-width="1.5" filter="url(#sh)"/>
+<text x="350" y="352" fill="#e74c3c" font-size="16" font-weight="900" text-anchor="middle">🤥 ۷ دروغ بزرگ رسانه‌ای</text>
+<line x1="80" y1="365" x2="620" y2="365" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+
+<!-- Lie 1 -->
+<g transform="translate(80,375)">
+  <rect x="0" y="0" width="540" height="42" rx="6" fill="rgba(231,76,60,0.04)" stroke="rgba(231,76,60,0.08)" stroke-width="1"/>
+  <circle cx="20" cy="21" r="12" fill="rgba(231,76,60,0.15)" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="20" y="26" fill="#e74c3c" font-size="11" font-weight="900" text-anchor="middle">۱</text>
+  <text x="42" y="16" fill="#e74c3c" font-size="11" font-weight="700">«عراق سلاح کشتار جمعی دارد»</text>
+  <text x="42" y="34" fill="rgba(255,255,255,0.5)" font-size="10">واقعیت: هیچ WMD یافت نشد — صفر | منبع اصلی: Curveball (اطلاعات آلمان)</text>
+</g>
+
+<!-- Lie 2 -->
+<g transform="translate(80,425)">
+  <rect x="0" y="0" width="540" height="42" rx="6" fill="rgba(231,76,60,0.04)" stroke="rgba(231,76,60,0.08)" stroke-width="1"/>
+  <circle cx="20" cy="21" r="12" fill="rgba(231,76,60,0.15)" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="20" y="26" fill="#e74c3c" font-size="11" font-weight="900" text-anchor="middle">۲</text>
+  <text x="42" y="16" fill="#e74c3c" font-size="11" font-weight="700">«صدام با القاعده ارتباط دارد»</text>
+  <text x="42" y="34" fill="rgba(255,255,255,0.5)" font-size="10">واقعیت: هیچ ارتباطی نبود — کمیسیون ۹/۱۱ تأیید کرد</text>
+</g>
+
+<!-- Lie 3 -->
+<g transform="translate(80,475)">
+  <rect x="0" y="0" width="540" height="42" rx="6" fill="rgba(231,76,60,0.04)" stroke="rgba(231,76,60,0.08)" stroke-width="1"/>
+  <circle cx="20" cy="21" r="12" fill="rgba(231,76,60,0.15)" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="20" y="26" fill="#e74c3c" font-size="11" font-weight="900" text-anchor="middle">۳</text>
+  <text x="42" y="16" fill="#e74c3c" font-size="11" font-weight="700">«مردم ما را با گل استقبال می‌کنند»</text>
+  <text x="42" y="34" fill="rgba(255,255,255,0.5)" font-size="10">واقعیت: چینی به NBC — استقبال‌کنندگان ← شورش در ۳ ماه</text>
+</g>
+
+<!-- Lie 4 -->
+<g transform="translate(80,525)">
+  <rect x="0" y="0" width="540" height="42" rx="6" fill="rgba(231,76,60,0.04)" stroke="rgba(231,76,60,0.08)" stroke-width="1"/>
+  <circle cx="20" cy="21" r="12" fill="rgba(231,76,60,0.15)" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="20" y="26" fill="#e74c3c" font-size="11" font-weight="900" text-anchor="middle">۴</text>
+  <text x="42" y="16" fill="#e74c3c" font-size="11" font-weight="700">«هزینه جنگ: $۵۰B (رامسفلد)»</text>
+  <text x="42" y="34" fill="rgba(255,255,255,0.5)" font-size="10">واقعیت: $۳+ تریلیون (۶۰× بیشتر) — لری لیندسی اخراج شد بخاطر گفتن حقیقت</text>
+</g>
+
+<!-- Lie 5 -->
+<g transform="translate(80,575)">
+  <rect x="0" y="0" width="540" height="42" rx="6" fill="rgba(231,76,60,0.04)" stroke="rgba(231,76,60,0.08)" stroke-width="1"/>
+  <circle cx="20" cy="21" r="12" fill="rgba(231,76,60,0.15)" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="20" y="26" fill="#e74c3c" font-size="11" font-weight="900" text-anchor="middle">۵</text>
+  <text x="42" y="16" fill="#e74c3c" font-size="11" font-weight="700">«لوله‌های آلومینیومی = سانتریفیوژ هسته‌ای»</text>
+  <text x="42" y="34" fill="rgba(255,255,255,0.5)" font-size="10">واقعیت: برای موشک معمولی بود — IAEA از ابتدا رد کرد</text>
+</g>
+
+<!-- Lie 6 -->
+<g transform="translate(80,625)">
+  <rect x="0" y="0" width="540" height="42" rx="6" fill="rgba(231,76,60,0.04)" stroke="rgba(231,76,60,0.08)" stroke-width="1"/>
+  <circle cx="20" cy="21" r="12" fill="rgba(231,76,60,0.15)" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="20" y="26" fill="#e74c3c" font-size="11" font-weight="900" text-anchor="middle">۶</text>
+  <text x="42" y="16" fill="#e74c3c" font-size="11" font-weight="700">«اورانیوم از نیجر» (Yellowcake)</text>
+  <text x="42" y="34" fill="rgba(255,255,255,0.5)" font-size="10">واقعیت: سند جعلی بود — جو ویلسون افشا کرد → همسرش لو رفت (CIA)</text>
+</g>
+
+<!-- Lie 7 -->
+<g transform="translate(80,675)">
+  <rect x="0" y="0" width="540" height="42" rx="6" fill="rgba(231,76,60,0.04)" stroke="rgba(231,76,60,0.08)" stroke-width="1"/>
+  <circle cx="20" cy="21" r="12" fill="rgba(231,76,60,0.15)" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="20" y="26" fill="#e74c3c" font-size="11" font-weight="900" text-anchor="middle">۷</text>
+  <text x="42" y="16" fill="#e74c3c" font-size="11" font-weight="700">«سرنگونی مجسمه = آزادسازی مردمی»</text>
+  <text x="42" y="34" fill="rgba(255,255,255,0.5)" font-size="10">واقعیت: صحنه‌سازی ارتش آمریکا — فقط ۱۵۰ نفر حاضر (دوربین زاویه بسته)</text>
+</g>
+
+<!-- ===================== MIDDLE RIGHT: MEDIA SCORECARD ===================== -->
+<rect x="670" y="320" width="580" height="210" rx="14" class="glass" filter="url(#sh)"/>
+<text x="960" y="352" fill="#00b4d8" font-size="16" font-weight="900" text-anchor="middle">📊 کارنامه رسانه‌ها: قبل vs بعد از جنگ</text>
+<line x1="690" y1="365" x2="1230" y2="365" stroke="rgba(0,180,216,0.15)" stroke-width="1"/>
+
+<!-- Media comparison table -->
+<g transform="translate(690,378)">
+  <!-- Headers -->
+  <text x="130" y="14" fill="rgba(255,255,255,0.4)" font-size="11" font-weight="700" text-anchor="middle">رسانه</text>
+  <text x="290" y="14" fill="rgba(231,76,60,0.6)" font-size="11" font-weight="700" text-anchor="middle">قبل از جنگ</text>
+  <text x="440" y="14" fill="rgba(46,204,113,0.6)" font-size="11" font-weight="700" text-anchor="middle">بعد از جنگ</text>
+
+  <line x1="0" y1="22" x2="540" y2="22" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- NYT -->
+  <text x="130" y="40" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="middle">نیویورک تایمز</text>
+  <text x="290" y="40" fill="#e74c3c" font-size="11" text-anchor="middle">جودیت میلر: تبلیغ WMD</text>
+  <text x="440" y="40" fill="#2ecc71" font-size="11" text-anchor="middle">عذرخواهی ۲۰۰۴ (کافی نبود)</text>
+
+  <line x1="0" y1="50" x2="540" y2="50" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- CNN -->
+  <text x="130" y="68" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="middle">CNN</text>
+  <text x="290" y="68" fill="#e74c3c" font-size="11" text-anchor="middle">Embedded journalism</text>
+  <text x="440" y="68" fill="#ff9800" font-size="11" text-anchor="middle">نیمه‌انتقادی (دیر)</text>
+
+  <line x1="0" y1="78" x2="540" y2="78" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- FOX -->
+  <text x="130" y="96" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="middle">FOX News</text>
+  <text x="290" y="96" fill="#e74c3c" font-size="11" text-anchor="middle">پروپاگاندا کامل</text>
+  <text x="440" y="96" fill="#e74c3c" font-size="11" text-anchor="middle">هنوز هم توجیه می‌کند</text>
+
+  <line x1="0" y1="106" x2="540" y2="106" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- BBC -->
+  <text x="130" y="124" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="middle">BBC</text>
+  <text x="290" y="124" fill="#ff9800" font-size="11" text-anchor="middle">انتقادی‌تر (اما کافی نه)</text>
+  <text x="440" y="124" fill="#2ecc71" font-size="11" text-anchor="middle">گزارش چیلکات ← افشاگری</text>
+
+  <line x1="0" y1="134" x2="540" y2="134" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Al Jazeera -->
+  <text x="130" y="152" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="middle">الجزیره</text>
+  <text x="290" y="152" fill="#2ecc71" font-size="11" text-anchor="middle">نشان‌دادن تلفات غیرنظامی</text>
+  <text x="440" y="152" fill="#ff9800" font-size="11" text-anchor="middle">بمباران دفتر بغداد ← سانسور</text>
+</g>
+
+<!-- ===================== BOTTOM RIGHT: EMBEDDED JOURNALISM ===================== -->
+<rect x="670" y="545" width="580" height="195" rx="14" fill="rgba(155,89,182,0.04)" stroke="rgba(155,89,182,0.15)" stroke-width="1.5" filter="url(#sh)"/>
+<text x="960" y="575" fill="#9b59b6" font-size="16" font-weight="900" text-anchor="middle">📹 روزنامه‌نگاری نهفته (Embedded)</text>
+<line x1="690" y1="588" x2="1230" y2="588" stroke="rgba(155,89,182,0.15)" stroke-width="1"/>
+
+<g transform="translate(690,600)">
+  <text x="0" y="14" fill="rgba(255,255,255,0.7)" font-size="12">📎 ۶۰۰+ خبرنگار «نهفته» در واحدهای نظامی آمریکا</text>
+  <text x="0" y="34" fill="rgba(255,255,255,0.6)" font-size="11">• فقط از زاویه سرباز آمریکایی گزارش می‌دادند</text>
+  <text x="0" y="54" fill="rgba(255,255,255,0.6)" font-size="11">• تلفات غیرنظامی = «خسارت جانبی» (Collateral Damage)</text>
+  <text x="0" y="74" fill="rgba(255,255,255,0.6)" font-size="11">• سانسور ناخودآگاه: وابستگی به ارتش برای امنیت = خودسانسوری</text>
+  <text x="0" y="94" fill="rgba(255,255,255,0.6)" font-size="11">• نتیجه: جنگ مثل فیلم اکشن به نظر می‌رسید — نه فاجعه انسانی</text>
+</g>
+
+<rect x="700" y="705" width="530" height="25" rx="5" fill="rgba(155,89,182,0.06)"/>
+<text x="965" y="722" fill="#9b59b6" font-size="10" font-weight="600" text-anchor="middle">مقایسه: ویتنام (خبرنگار آزاد → افکار عمومی ضدجنگ) vs عراق (نهفته → حمایت از جنگ)</text>
+
+<!-- ===================== FAR RIGHT: KEY FIGURES & QUOTES ===================== -->
+<rect x="1280" y="320" width="580" height="420" rx="14" class="glass" filter="url(#sh)"/>
+<text x="1570" y="352" fill="#d4af37" font-size="16" font-weight="900" text-anchor="middle">💬 جملات تاریخی (دروغ‌ها و اعترافات)</text>
+<line x1="1300" y1="365" x2="1840" y2="365" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+
+<!-- Quote 1: Powell -->
+<rect x="1300" y="375" width="540" height="55" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="1570" y="395" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle" font-style="italic">«هر ادعایی که ارائه دادیم بر مبنای منابع محکم بود»</text>
+<text x="1570" y="413" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">— کالین پاول، سازمان ملل (فوریه ۲۰۰۳)</text>
+<text x="1570" y="426" fill="rgba(231,76,60,0.5)" font-size="9" text-anchor="middle">بعداً: «لکه‌ای بر کارنامه‌ام — تا ابد با من می‌ماند» (۲۰۰۵)</text>
+
+<!-- Quote 2: Bush -->
+<rect x="1300" y="440" width="540" height="55" rx="8" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+<text x="1570" y="460" fill="#ff9800" font-size="11" font-weight="700" text-anchor="middle" font-style="italic">«مأموریت انجام شد» (Mission Accomplished)</text>
+<text x="1570" y="478" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">— جرج بوش، روی ناو (مه ۲۰۰۳)</text>
+<text x="1570" y="491" fill="rgba(255,152,0,0.5)" font-size="9" text-anchor="middle">واقعیت: جنگ تازه شروع شده بود — ۹۵%+ تلفات بعد از این بنر بود</text>
+
+<!-- Quote 3: Cheney -->
+<rect x="1300" y="505" width="540" height="45" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="1570" y="525" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle" font-style="italic">«ما به عنوان آزادی‌بخش استقبال خواهیم شد»</text>
+<text x="1570" y="543" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">— دیک چینی (مارس ۲۰۰۳)</text>
+
+<!-- Quote 4: Rumsfeld -->
+<rect x="1300" y="560" width="540" height="45" rx="8" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+<text x="1570" y="580" fill="#ff9800" font-size="11" font-weight="700" text-anchor="middle" font-style="italic">«شما با ارتشی که دارید می‌جنگید، نه آنکه می‌خواهید»</text>
+<text x="1570" y="598" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">— رامسفلد (توجیه کمبود تجهیزات سربازان)</text>
+
+<!-- Quote 5: Blair - Chilcot -->
+<rect x="1300" y="615" width="540" height="55" rx="8" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+<text x="1570" y="635" fill="#00b4d8" font-size="11" font-weight="700" text-anchor="middle" font-style="italic">«عراق تهدید جدی و فوری بود»</text>
+<text x="1570" y="653" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">— تونی بلر (۲۰۰۳) | گزارش چیلکات: «مبنای اطلاعاتی نداشت» (۲۰۱۶)</text>
+<text x="1570" y="666" fill="rgba(0,180,216,0.5)" font-size="9" text-anchor="middle">بلر: ۱۳ سال بعد هم عذرخواهی نکرد — فقط «تأسف»</text>
+
+<!-- Whistleblowers -->
+<rect x="1300" y="680" width="540" height="50" rx="8" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+<text x="1570" y="700" fill="#2ecc71" font-size="12" font-weight="700" text-anchor="middle">🦸 افشاگران شجاع (که بهایش را پرداختند)</text>
+<text x="1570" y="718" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">جو ویلسون (اورانیوم نیجر) | چلسی منینگ (WikiLeaks) | دنیل الزبرگ | هانس بلیکس</text>
+
+<!-- ===================== BOTTOM: MEDIA TRUST IMPACT ===================== -->
+<rect x="60" y="755" width="1800" height="100" rx="14" class="glass" filter="url(#sh)"/>
+<text x="960" y="785" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📉 تأثیر بر اعتماد به رسانه: قبل و بعد از عراق</text>
+
+<!-- Trust bars -->
+<g transform="translate(120,800)">
+  <text x="0" y="14" fill="rgba(255,255,255,0.5)" font-size="11">اعتماد به رسانه (آمریکا) ۲۰۰۲:</text>
+  <rect x="280" y="2" width="500" height="18" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <rect x="280" y="2" width="265" height="18" rx="4" fill="rgba(46,204,113,0.4)"/>
+  <text x="555" y="16" fill="#2ecc71" font-size="11" font-weight="700">۵۳%</text>
+
+  <text x="0" y="40" fill="rgba(255,255,255,0.5)" font-size="11">اعتماد به رسانه (آمریکا) ۲۰۲۳:</text>
+  <rect x="280" y="28" width="500" height="18" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <rect x="280" y="28" width="160" height="18" rx="4" fill="rgba(231,76,60,0.4)"/>
+  <text x="450" y="42" fill="#e74c3c" font-size="11" font-weight="700">۳۲% (▼ ۲۱ واحد)</text>
+  <text x="560" y="42" fill="rgba(255,255,255,0.35)" font-size="9">Gallup: «عراق نقطه شکست اعتماد به رسانه بود»</text>
+</g>
+
+<!-- ===================== BOTTOM BAR ===================== -->
+<rect x="60" y="875" width="1800" height="80" rx="10" class="note-box"/>
+<text x="960" y="903" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">📌 جنگ عراق بزرگ‌ترین شکست رسانه‌ای قرن ۲۱ بود — رسانه‌ها همدست شدند، نه ناظر</text>
+<text x="960" y="925" fill="rgba(255,255,255,0.5)" font-size="12" text-anchor="middle">نیویورک تایمز ۲۰۰۴ عذرخواهی کرد — اما صدها هزار نفر قبلاً مرده بودند | هیچ سردبیری محاکمه نشد</text>
+<text x="960" y="945" fill="rgba(255,255,255,0.35)" font-size="11" text-anchor="middle">درس: در عصر جنگ اطلاعاتی، رسانه مستقل + سواد رسانه‌ای شهروندان = خط اول دفاع علیه جنگ</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 30 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۸: رسانه، روایت و حافظه</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: Chilcot Report, Senate Intel Committee, Columbia Journalism Review, Gallup Media Trust Survey | ۲۰۰۳–۲۰۲۳</text>
+</svg>

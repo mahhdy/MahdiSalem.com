@@ -1,0 +1,252 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width:1; rx:10; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+  <linearGradient id="dark-g" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.1"/>
+    <stop offset="100%" stop-color="#0a0e27" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+<text x="960" y="42" class="title">ابوغریب و جنایات جنگی: وقتی «آزادی‌بخشان» شکنجه‌گر شدند</text>
+<text x="960" y="68" class="subtitle">رسوایی ابوغریب (۲۰۰۴) + فلوجه + حدیثه + WikiLeaks — پرونده‌ای که هنوز باز است</text>
+<line x1="150" y1="84" x2="1770" y2="84" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ===================== TOP LEFT: ABU GHRAIB TIMELINE ===================== -->
+<rect x="60" y="100" width="600" height="400" rx="14" fill="url(#dark-g)" stroke="rgba(231,76,60,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+<text x="360" y="132" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">🏚️ ابوغریب: خط زمانی رسوایی</text>
+<line x1="80" y1="145" x2="640" y2="145" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+
+<!-- Timeline -->
+<line x1="130" y1="165" x2="130" y2="475" stroke="rgba(231,76,60,0.2)" stroke-width="3"/>
+
+<!-- Oct 2003 -->
+<circle cx="130" cy="178" r="7" fill="#e74c3c" opacity="0.7"/>
+<text x="150" y="175" fill="#e74c3c" font-size="11" font-weight="700">اکتبر ۲۰۰۳</text>
+<text x="150" y="192" fill="rgba(255,255,255,0.65)" font-size="10">شروع شکنجه سیستماتیک در ابوغریب</text>
+<text x="150" y="206" fill="rgba(255,255,255,0.45)" font-size="9">۷,۰۰۰+ بازداشتی بدون اتهام رسمی</text>
+
+<!-- Jan 2004 -->
+<circle cx="130" cy="228" r="7" fill="#ff9800" opacity="0.7"/>
+<text x="150" y="225" fill="#ff9800" font-size="11" font-weight="700">ژانویه ۲۰۰۴</text>
+<text x="150" y="242" fill="rgba(255,255,255,0.65)" font-size="10">جو داربی (سرباز) عکس‌ها را به CID گزارش می‌دهد</text>
+<text x="150" y="256" fill="rgba(255,255,255,0.45)" font-size="9">← قهرمان واقعی: تهدید به مرگ شد</text>
+
+<!-- Apr 2004 -->
+<circle cx="130" cy="278" r="10" fill="#e74c3c" stroke="#e74c3c" stroke-width="2" opacity="0.9"/>
+<text x="150" y="275" fill="#e74c3c" font-size="12" font-weight="700">آوریل ۲۰۰۴ — انفجار رسانه‌ای</text>
+<text x="150" y="292" fill="rgba(255,255,255,0.7)" font-size="11">CBS (60 Minutes II) عکس‌ها را منتشر می‌کند</text>
+<text x="150" y="306" fill="rgba(255,255,255,0.5)" font-size="10">شوک جهانی — اعتبار آمریکا فروپاشید</text>
+
+<!-- Aug 2004 -->
+<circle cx="130" cy="330" r="7" fill="#d4af37" opacity="0.7"/>
+<text x="150" y="327" fill="#d4af37" font-size="11" font-weight="700">آگوست ۲۰۰۴</text>
+<text x="150" y="344" fill="rgba(255,255,255,0.65)" font-size="10">گزارش تاگوبا: «شکنجه سیستماتیک و عمدی»</text>
+<text x="150" y="358" fill="rgba(255,255,255,0.45)" font-size="9">ژنرال تاگوبا بعداً مجبور به بازنشستگی شد</text>
+
+<!-- 2005-2006 -->
+<circle cx="130" cy="382" r="7" fill="#ff9800" opacity="0.6"/>
+<text x="150" y="379" fill="#ff9800" font-size="11" font-weight="700">۲۰۰۵–۲۰۰۶</text>
+<text x="150" y="396" fill="rgba(255,255,255,0.65)" font-size="10">محاکمه ۱۱ سرباز رده‌پایین — هیچ افسر ارشدی محاکمه نشد</text>
+<text x="150" y="410" fill="rgba(255,255,255,0.45)" font-size="9">لیندی انگلند: ۳ سال زندان | گرانر: ۱۰ سال | رامسفلد: هیچ</text>
+
+<!-- 2014 -->
+<circle cx="130" cy="435" r="6" fill="rgba(255,255,255,0.3)"/>
+<text x="150" y="432" fill="rgba(255,255,255,0.4)" font-size="11" font-weight="700">۲۰۱۴</text>
+<text x="150" y="449" fill="rgba(255,255,255,0.5)" font-size="10">گزارش سنا: CIA «تکنیک‌های بازجویی پیشرفته» = شکنجه</text>
+<text x="150" y="463" fill="rgba(255,255,255,0.45)" font-size="9">Waterboarding + حبس انفرادی + محرومیت خواب</text>
+
+<!-- Accountability box -->
+<rect x="80" y="478" width="560" height="15" rx="3" fill="rgba(231,76,60,0.08)"/>
+<text x="360" y="490" fill="#e74c3c" font-size="9" font-weight="600" text-anchor="middle">محاکمه‌شدگان ارشد: ۰ | رامسفلد/چینی/بوش/بلر: صفر مسئولیت کیفری</text>
+
+<!-- ===================== TOP RIGHT: METHODS OF TORTURE ===================== -->
+<rect x="690" y="100" width="560" height="400" rx="14" class="glass" filter="url(#sh)"/>
+<text x="970" y="132" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">⛓️ روش‌های مستند شکنجه</text>
+<text x="970" y="150" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">(بر اساس گزارش تاگوبا + سنا + ICRC)</text>
+<line x1="710" y1="160" x2="1230" y2="160" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+
+<g transform="translate(710,172)">
+  <!-- Category: Physical -->
+  <rect x="0" y="0" width="260" height="155" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="130" y="20" fill="#e74c3c" font-size="13" font-weight="700" text-anchor="middle">جسمی</text>
+  <text x="15" y="40" fill="rgba(255,255,255,0.6)" font-size="10">• Waterboarding (شبیه‌سازی غرق)</text>
+  <text x="15" y="57" fill="rgba(255,255,255,0.6)" font-size="10">• آویزان‌کردن از دست (استرس)</text>
+  <text x="15" y="74" fill="rgba(255,255,255,0.6)" font-size="10">• محرومیت از خواب (۱۸۰+ ساعت)</text>
+  <text x="15" y="91" fill="rgba(255,255,255,0.6)" font-size="10">• ضرب‌وشتم تا حد مرگ</text>
+  <text x="15" y="108" fill="rgba(255,255,255,0.6)" font-size="10">• حبس در جعبه تنگ (coffin box)</text>
+  <text x="15" y="125" fill="rgba(255,255,255,0.6)" font-size="10">• Rectal feeding (تغذیه اجباری مقعدی)</text>
+  <text x="15" y="142" fill="rgba(231,76,60,0.5)" font-size="9">حداقل ۱۰۰+ مرگ در بازداشت مستند شده</text>
+
+  <!-- Category: Psychological -->
+  <rect x="275" y="0" width="260" height="155" rx="8" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+  <text x="405" y="20" fill="#9b59b6" font-size="13" font-weight="700" text-anchor="middle">روانی / جنسی</text>
+  <text x="290" y="40" fill="rgba(255,255,255,0.6)" font-size="10">• برهنه‌کردن + عکاسی تحقیرآمیز</text>
+  <text x="290" y="57" fill="rgba(255,255,255,0.6)" font-size="10">• شبیه‌سازی اعدام</text>
+  <text x="290" y="74" fill="rgba(255,255,255,0.6)" font-size="10">• استفاده از سگ برای ارعاب</text>
+  <text x="290" y="91" fill="rgba(255,255,255,0.6)" font-size="10">• تحقیر مذهبی (توهین به قرآن)</text>
+  <text x="290" y="108" fill="rgba(255,255,255,0.6)" font-size="10">• اجبار به اعمال جنسی</text>
+  <text x="290" y="125" fill="rgba(255,255,255,0.6)" font-size="10">• حبس انفرادی ماه‌ها بدون تماس</text>
+  <text x="290" y="142" fill="rgba(155,89,182,0.5)" font-size="9">هدف: «شکستن» روحی بازداشتی</text>
+</g>
+
+<!-- Legal framework abuse -->
+<rect x="710" y="340" width="535" height="70" rx="8" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+<text x="978" y="362" fill="#d4af37" font-size="12" font-weight="700" text-anchor="middle">⚖️ پوشش حقوقی: «یادداشت‌های شکنجه» (Torture Memos)</text>
+<text x="978" y="380" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">جان یو (وزارت دادگستری): «رئیس‌جمهور اختیار دارد — کنوانسیون ژنو شامل نمی‌شود»</text>
+<text x="978" y="396" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">بازتعریف شکنجه: «فقط اگر درد معادل نارسایی عضو باشد» ← مجوز قانونی سیستماتیک</text>
+
+<!-- Stats -->
+<rect x="710" y="420" width="165" height="70" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="793" y="447" fill="#e74c3c" font-size="24" font-weight="900" text-anchor="middle">۱۰۰K+</text>
+<text x="793" y="468" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">بازداشتی بدون اتهام</text>
+<text x="793" y="482" fill="rgba(255,255,255,0.35)" font-size="9" text-anchor="middle">در طول اشغال</text>
+
+<rect x="890" y="420" width="165" height="70" rx="8" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+<text x="973" y="447" fill="#ff9800" font-size="24" font-weight="900" text-anchor="middle">۷۰–۹۰%</text>
+<text x="973" y="468" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">بازداشت اشتباهی</text>
+<text x="973" y="482" fill="rgba(255,255,255,0.35)" font-size="9" text-anchor="middle">ICRC تخمین</text>
+
+<rect x="1070" y="420" width="175" height="70" rx="8" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+<text x="1158" y="447" fill="#9b59b6" font-size="24" font-weight="900" text-anchor="middle">۱۱</text>
+<text x="1158" y="468" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">سرباز محکوم‌شده</text>
+<text x="1158" y="482" fill="rgba(255,255,255,0.35)" font-size="9" text-anchor="middle">همه رده‌پایین</text>
+
+<!-- ===================== FAR RIGHT: OTHER WAR CRIMES ===================== -->
+<rect x="1280" y="100" width="580" height="400" rx="14" class="glass" filter="url(#sh)"/>
+<text x="1570" y="132" fill="#ff9800" font-size="18" font-weight="900" text-anchor="middle">📋 سایر جنایات جنگی مستند</text>
+<line x1="1300" y1="145" x2="1840" y2="145" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+
+<!-- Fallujah -->
+<rect x="1300" y="158" width="540" height="80" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="1320" y="178" fill="#e74c3c" font-size="13" font-weight="700">🏚️ فلوجه (نوامبر ۲۰۰۴)</text>
+<text x="1320" y="196" fill="rgba(255,255,255,0.65)" font-size="10">محاصره و بمباران شهر ۳۰۰K نفری — ۶۰%+ ساختمان‌ها تخریب</text>
+<text x="1320" y="212" fill="rgba(255,255,255,0.55)" font-size="10">استفاده از فسفر سفید (سلاح شیمیایی) — پنتاگون ابتدا انکار، بعد اعتراف</text>
+<text x="1320" y="228" fill="rgba(255,255,255,0.45)" font-size="9">پیامد: افزایش ۱۲ برابری سرطان و نقص مادرزادی در فلوجه (Lancet)</text>
+
+<!-- Haditha -->
+<rect x="1300" y="248" width="540" height="70" rx="8" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+<text x="1320" y="268" fill="#ff9800" font-size="13" font-weight="700">💀 کشتار حدیثه (نوامبر ۲۰۰۵)</text>
+<text x="1320" y="286" fill="rgba(255,255,255,0.65)" font-size="10">۲۴ غیرنظامی (شامل زنان و کودکان) توسط تفنگداران دریایی</text>
+<text x="1320" y="302" fill="rgba(255,255,255,0.55)" font-size="10">ابتدا «درگیری با شورشیان» گزارش شد — ویدیو خلافش را ثابت کرد</text>
+<text x="1320" y="314" fill="rgba(255,255,255,0.45)" font-size="9">نتیجه: ۱ نفر محکوم → تخفیف مجازات → صفر زندان 😐</text>
+
+<!-- Blackwater Nisour -->
+<rect x="1300" y="328" width="540" height="70" rx="8" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+<text x="1320" y="348" fill="#9b59b6" font-size="13" font-weight="700">🔫 میدان نسور — بلک‌واتر (سپتامبر ۲۰۰۷)</text>
+<text x="1320" y="366" fill="rgba(255,255,255,0.65)" font-size="10">۱۷ غیرنظامی کشته در میدان شهر — تیراندازی بی‌دلیل</text>
+<text x="1320" y="382" fill="rgba(255,255,255,0.55)" font-size="10">محاکمه ۲۰۱۴: ۴ نفر محکوم → ۲۰۲۰: ترامپ عفو کرد!</text>
+<text x="1320" y="394" fill="rgba(231,76,60,0.5)" font-size="9">عفو ترامپ = پیام: «جان عراقی ارزشی ندارد»</text>
+
+<!-- WikiLeaks -->
+<rect x="1300" y="408" width="540" height="80" rx="8" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.12)" stroke-width="1"/>
+<text x="1320" y="428" fill="#00b4d8" font-size="13" font-weight="700">📹 ویکی‌لیکس — «قتل جانبی» (ژوئیه ۲۰۰۷)</text>
+<text x="1320" y="446" fill="rgba(255,255,255,0.65)" font-size="10">ویدیوی هلیکوپتر آپاچی: تیراندازی به خبرنگاران رویترز + رهگذران</text>
+<text x="1320" y="462" fill="rgba(255,255,255,0.55)" font-size="10">«دوباره شلیک کن... خب خودشان بچه آوردند وسط جنگ» (صدای خلبان)</text>
+<text x="1320" y="478" fill="rgba(255,255,255,0.45)" font-size="9">چلسی منینگ: ۳۵ سال زندان (بعداً عفو اوباما) | آسانژ: هنوز در دادگاه</text>
+
+<!-- ===================== BOTTOM: IMPACT + RECRUITMENT TOOL ===================== -->
+<rect x="60" y="515" width="900" height="210" rx="14" class="glass" filter="url(#sh)"/>
+<text x="510" y="545" fill="#d4af37" font-size="16" font-weight="900" text-anchor="middle">📊 تأثیر ابوغریب بر جذب نیرو تروریستی</text>
+<line x1="80" y1="558" x2="940" y2="558" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+
+<!-- Before/After recruitment chart -->
+<g transform="translate(90,575)">
+  <text x="0" y="14" fill="rgba(255,255,255,0.5)" font-size="11">حملات شورشی/ماه (قبل ابوغریب — مارس ۲۰۰۴):</text>
+  <rect x="400" y="2" width="480" height="18" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <rect x="400" y="2" width="200" height="18" rx="4" fill="rgba(0,180,216,0.4)"/>
+  <text x="610" y="16" fill="#00b4d8" font-size="11" font-weight="700">~۱,۰۰۰/ماه</text>
+
+  <text x="0" y="42" fill="rgba(255,255,255,0.5)" font-size="11">حملات شورشی/ماه (بعد ابوغریب — ژوئن ۲۰۰۴):</text>
+  <rect x="400" y="30" width="480" height="18" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <rect x="400" y="30" width="420" height="18" rx="4" fill="rgba(231,76,60,0.5)"/>
+  <text x="830" y="44" fill="#e74c3c" font-size="11" font-weight="700">~۳,۰۰۰/ماه (▲ ۳×)</text>
+
+  <text x="0" y="70" fill="rgba(255,255,255,0.5)" font-size="11">حملات شورشی/ماه (اوج — اکتبر ۲۰۰۶):</text>
+  <rect x="400" y="58" width="480" height="18" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <rect x="400" y="58" width="480" height="18" rx="4" fill="rgba(231,76,60,0.6)"/>
+  <text x="890" y="72" fill="#e74c3c" font-size="11" font-weight="700">~۵,۰۰۰+/ماه (▲ ۵×)</text>
+</g>
+
+<rect x="90" y="665" width="850" height="45" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="515" y="685" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">ابوغریب بزرگ‌ترین ابزار جذب نیروی القاعده و بعداً داعش شد</text>
+<text x="515" y="702" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">ابوبکر البغدادی: «هر عکس ابوغریب = ۱,۰۰۰ داوطلب جهادی» | بن لادن: «ببینید دموکراسی آمریکایی چیست»</text>
+
+<!-- ===================== BOTTOM RIGHT: INTERNATIONAL LAW ===================== -->
+<rect x="990" y="515" width="870" height="210" rx="14" fill="rgba(212,175,55,0.03)" stroke="rgba(212,175,55,0.15)" stroke-width="1.5" filter="url(#sh)"/>
+<text x="1425" y="545" fill="#d4af37" font-size="16" font-weight="900" text-anchor="middle">⚖️ حقوق بین‌الملل: چه می‌گوید؟ چه شد؟</text>
+<line x1="1010" y1="558" x2="1840" y2="558" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+
+<g transform="translate(1010,570)">
+  <!-- Law column -->
+  <rect x="0" y="0" width="410" height="40" rx="6" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="205" y="16" fill="#2ecc71" font-size="11" font-weight="700" text-anchor="middle">📜 قانون</text>
+  <text x="205" y="33" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">کنوانسیون ژنو ۳: ممنوعیت مطلق شکنجه زندانیان جنگی</text>
+
+  <!-- Reality column -->
+  <rect x="425" y="0" width="410" height="40" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="630" y="16" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">💔 واقعیت</text>
+  <text x="630" y="33" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">آمریکا: «اینها رزمنده غیرقانونی‌اند — ژنو شامل نمی‌شود»</text>
+
+  <rect x="0" y="50" width="410" height="40" rx="6" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="205" y="66" fill="#2ecc71" font-size="11" font-weight="700" text-anchor="middle">📜 قانون</text>
+  <text x="205" y="83" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">ICC: صلاحیت رسیدگی به جنایات جنگی</text>
+
+  <rect x="425" y="50" width="410" height="40" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="630" y="66" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">💔 واقعیت</text>
+  <text x="630" y="83" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">آمریکا عضو ICC نیست + قانون «حمله به لاهه» (ASPA 2002)</text>
+
+  <rect x="0" y="100" width="410" height="40" rx="6" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="205" y="116" fill="#2ecc71" font-size="11" font-weight="700" text-anchor="middle">📜 قانون</text>
+  <text x="205" y="133" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">مسئولیت فرماندهی: فرمانده مسئول زیردستان است</text>
+
+  <rect x="425" y="100" width="410" height="40" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="630" y="116" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">💔 واقعیت</text>
+  <text x="630" y="133" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">رامسفلد/سانچز/میلر: هیچ‌کدام محاکمه نشدند</text>
+</g>
+
+<!-- ===================== BOTTOM STRIP: GLOBAL IMPACT ===================== -->
+<rect x="60" y="745" width="1800" height="110" rx="14" class="glass" filter="url(#sh)"/>
+<text x="960" y="775" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">🌍 تأثیر جهانی: ابوغریب چگونه جهان را تغییر داد</text>
+
+<g transform="translate(80,790)">
+  <rect x="0" y="0" width="340" height="48" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="170" y="18" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">📉 اعتبار جهانی آمریکا</text>
+  <text x="170" y="36" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">محبوبیت آمریکا در خاورمیانه: ۷۵% → ۱۲%</text>
+
+  <rect x="360" y="0" width="340" height="48" rx="8" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+  <text x="530" y="18" fill="#ff9800" font-size="11" font-weight="700" text-anchor="middle">🎯 ابزار بسیج تروریستی</text>
+  <text x="530" y="36" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">داعش: عکس‌های ابوغریب = بنر جذب اصلی</text>
+
+  <rect x="720" y="0" width="340" height="48" rx="8" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+  <text x="890" y="18" fill="#00b4d8" font-size="11" font-weight="700" text-anchor="middle">⚖️ استاندارد دوگانه</text>
+  <text x="890" y="36" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">آمریکا: «حقوق بشر برای همه» — جز زندانیان ما</text>
+
+  <rect x="1080" y="0" width="340" height="48" rx="8" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+  <text x="1250" y="18" fill="#9b59b6" font-size="11" font-weight="700" text-anchor="middle">🔓 گوانتانامو هنوز باز است</text>
+  <text x="1250" y="36" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">۲۰۲۴: ۳۰ نفر هنوز بدون محاکمه</text>
+
+  <rect x="1440" y="0" width="300" height="48" rx="8" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="1590" y="18" fill="#2ecc71" font-size="11" font-weight="700" text-anchor="middle">📸 قدرت تصویر</text>
+  <text x="1590" y="36" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">یک عکس > هزار بیانیه دیپلماتیک</text>
+</g>
+
+<!-- ===================== BOTTOM BAR ===================== -->
+<rect x="60" y="875" width="1800" height="80" rx="10" class="note-box"/>
+<text x="960" y="903" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">📌 ابوغریب نشان داد: ارتشی که برای «آزادسازی» آمده بود، خودش شکنجه‌گر شد — و هیچ‌کس پاسخگو نبود</text>
+<text x="960" y="925" fill="rgba(255,255,255,0.5)" font-size="12" text-anchor="middle">۱۱ سرباز رده‌پایین محاکمه شدند — اما رامسفلد، چینی و بوش که سیستم را طراحی کردند هرگز پاسخ ندادند</text>
+<text x="960" y="945" fill="rgba(255,255,255,0.35)" font-size="11" text-anchor="middle">سؤال اصلی: اگر آمریکا خودش را از حقوق بین‌الملل معاف کند، چه کسی باید قوانین جنگ را رعایت کند؟</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 31 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۸: رسانه، روایت و حافظه</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: Taguba Report, Senate Torture Report (2014), ICRC, WikiLeaks, Lancet Fallujah Study | ۲۰۰۳–۲۰۲۴</text>
+</svg>

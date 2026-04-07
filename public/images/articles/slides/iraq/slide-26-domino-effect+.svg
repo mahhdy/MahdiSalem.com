@@ -1,0 +1,211 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width:1; rx:10; }
+    .dom-title { fill: #fff; font-size: 14px; font-weight: 800; text-anchor: middle; }
+    .dom-year { fill: #d4af37; font-size: 12px; font-weight: 700; text-anchor: middle; }
+    .dom-desc { fill: rgba(255,255,255,0.6); font-size: 10px; text-anchor: middle; }
+    .dom-stat { fill: rgba(255,255,255,0.4); font-size: 9px; text-anchor: middle; }
+    .dom-flag { font-size: 30px; text-anchor: middle; }
+    .chain-arrow { fill: none; stroke-width: 2.5; opacity: 0.4; }
+    .cause-label { fill: rgba(255,255,255,0.5); font-size: 9px; font-weight: 600; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+  <filter id="glow-origin"><feGaussianBlur stdDeviation="12" result="b"/><feFlood flood-color="#e74c3c" flood-opacity="0.4"/><feComposite in2="b" operator="in"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <marker id="ch-r" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto"><polygon points="0 0, 12 4, 0 8" fill="#e74c3c" opacity="0.5"/></marker>
+  <marker id="ch-o" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto"><polygon points="0 0, 12 4, 0 8" fill="#ff9800" opacity="0.5"/></marker>
+  <marker id="ch-p" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto"><polygon points="0 0, 12 4, 0 8" fill="#9333ea" opacity="0.5"/></marker>
+  <marker id="ch-b" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto"><polygon points="0 0, 12 4, 0 8" fill="#3b82f6" opacity="0.5"/></marker>
+  <marker id="ch-g" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto"><polygon points="0 0, 12 4, 0 8" fill="#2ecc71" opacity="0.5"/></marker>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+
+<text x="960" y="42" class="title">اثر دومینو: چگونه جنگ عراق خاورمیانه را ویران کرد</text>
+<text x="960" y="68" class="subtitle">زنجیره علّی از ۲۰۰۳ تا امروز — هر بحران ریشه در عراق دارد</text>
+<line x1="250" y1="84" x2="1670" y2="84" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<rect x="60" y="95" width="1800" height="760" class="glass" filter="url(#sh)"/>
+
+<!-- ORIGIN: Iraq 2003 -->
+<rect x="130" y="280" width="200" height="260" rx="14" fill="rgba(231,76,60,0.12)" stroke="#e74c3c" stroke-width="2.5" filter="url(#glow-origin)"/>
+<text x="230" y="318" class="dom-flag">🇮🇶</text>
+<text x="230" y="345" class="dom-title" fill="#e74c3c" font-size="16">حمله به عراق</text>
+<text x="230" y="365" class="dom-year">۲۰۰۳</text>
+<line x1="160" y1="378" x2="300" y2="378" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+<text x="230" y="398" class="dom-desc">سقوط صدام + انحلال ارتش</text>
+<text x="230" y="413" class="dom-desc">محاصصه طایفه‌ای</text>
+<text x="230" y="428" class="dom-desc">ظهور القاعده عراق</text>
+<text x="230" y="443" class="dom-desc">جنگ فرقه‌ای ۲۰۰۶</text>
+<text x="230" y="470" class="dom-stat" fill="#e74c3c">نقطه صفر تمام بحران‌ها</text>
+<text x="230" y="490" class="dom-stat" fill="#e74c3c">۲۰۰K+ کشته | ۸.۵M آواره</text>
+<text x="230" y="520" fill="#d4af37" font-size="24" text-anchor="middle">💥</text>
+
+<!-- D2: Iran Empowerment -->
+<rect x="400" y="130" width="180" height="190" rx="12" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.2)" stroke-width="1.5"/>
+<text x="490" y="160" class="dom-flag" font-size="24">🇮🇷</text>
+<text x="490" y="182" class="dom-title" fill="#2ecc71">تقویت ایران</text>
+<text x="490" y="200" class="dom-year">۲۰۰۳–۲۰۱۰</text>
+<line x1="420" y1="212" x2="560" y2="212" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+<text x="490" y="230" class="dom-desc">حذف رقیب اصلی (صدام)</text>
+<text x="490" y="245" class="dom-desc">نفوذ در عراق جدید</text>
+<text x="490" y="260" class="dom-desc">تقویت محور مقاومت</text>
+<text x="490" y="280" class="dom-desc">حزب‌الله + حماس + حوثی</text>
+<text x="490" y="300" class="dom-stat" fill="#2ecc71">شیعه‌ها قدرتمند شدند</text>
+<path d="M 330,350 C 360,280 400,240 400,230" class="chain-arrow" stroke="#2ecc71" marker-end="url(#ch-g)"/>
+
+<!-- D3: AQI → ISIS -->
+<rect x="400" y="410" width="180" height="200" rx="12" fill="rgba(30,30,30,0.3)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+<text x="490" y="440" class="dom-flag" font-size="24">🏴</text>
+<text x="490" y="462" class="dom-title">القاعده → داعش</text>
+<text x="490" y="480" class="dom-year">۲۰۰۴–۲۰۱۴</text>
+<line x1="420" y1="492" x2="560" y2="492" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+<text x="490" y="510" class="dom-desc">زرقاوی → بغدادی</text>
+<text x="490" y="525" class="dom-desc">ارتش منحل‌شده = نیروی داعش</text>
+<text x="490" y="540" class="dom-desc">زندانیان بوکا = رهبران</text>
+<text x="490" y="555" class="dom-desc">نارضایتی سنی = سربازگیری</text>
+<text x="490" y="580" class="dom-stat">«بدون ۲۰۰۳ داعش وجود نداشت»</text>
+<path d="M 330,440 C 370,440 390,445 400,450" class="chain-arrow" stroke="rgba(255,255,255,0.3)" marker-end="url(#ch-r)"/>
+
+<!-- D4: Arab Spring -->
+<rect x="650" y="130" width="180" height="190" rx="12" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.2)" stroke-width="1.5"/>
+<text x="740" y="160" class="dom-flag" font-size="24">🌊</text>
+<text x="740" y="182" class="dom-title" fill="#ff9800">بهار عربی</text>
+<text x="740" y="200" class="dom-year">۲۰۱۱</text>
+<line x1="670" y1="212" x2="810" y2="212" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+<text x="740" y="230" class="dom-desc">تونس → مصر → لیبی → سوریه</text>
+<text x="740" y="245" class="dom-desc">«اگر صدام سقوط کرد ما هم»</text>
+<text x="740" y="260" class="dom-desc">اما بدون نهاد جایگزین</text>
+<text x="740" y="280" class="dom-desc">= هرج‌ومرج به سبک عراق</text>
+<text x="740" y="300" class="dom-stat" fill="#ff9800">هم امید هم هشدار</text>
+<path d="M 580,210 C 610,200 630,195 650,195" class="chain-arrow" stroke="#ff9800" marker-end="url(#ch-o)"/>
+
+<!-- D5: Syria War -->
+<rect x="650" y="400" width="180" height="215" rx="12" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.2)" stroke-width="1.5"/>
+<text x="740" y="430" class="dom-flag" font-size="24">🇸🇾</text>
+<text x="740" y="452" class="dom-title" fill="#e74c3c">جنگ سوریه</text>
+<text x="740" y="470" class="dom-year">۲۰۱۱–اکنون</text>
+<line x1="670" y1="482" x2="810" y2="482" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="740" y="500" class="dom-desc">شبه‌نظامیان عراقی → سوریه</text>
+<text x="740" y="515" class="dom-desc">داعش از عراق گسترش یافت</text>
+<text x="740" y="530" class="dom-desc">ایران: تکرار مدل عراق</text>
+<text x="740" y="545" class="dom-desc">روسیه: ورود به خاورمیانه</text>
+<text x="740" y="565" class="dom-stat" fill="#e74c3c">۵۰۰K+ کشته | ۱۲M آواره</text>
+<text x="740" y="585" class="dom-stat" fill="#e74c3c">بحران پناهندگی اروپا</text>
+<text x="740" y="600" class="dom-stat">مستقیماً ریشه در ۲۰۰۳</text>
+<path d="M 580,510 C 610,500 630,495 650,490" class="chain-arrow" stroke="#e74c3c" marker-end="url(#ch-r)"/>
+<path d="M 740,320 L 740,400" class="chain-arrow" stroke="#ff9800" marker-end="url(#ch-o)"/>
+
+<!-- D6: ISIS Caliphate -->
+<rect x="900" y="250" width="180" height="195" rx="12" fill="rgba(30,30,30,0.4)" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+<text x="990" y="280" class="dom-flag" font-size="24">🏴</text>
+<text x="990" y="302" class="dom-title">خلافت داعش</text>
+<text x="990" y="320" class="dom-year" fill="#e74c3c">۲۰۱۴–۲۰۱۷</text>
+<line x1="920" y1="332" x2="1060" y2="332" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+<text x="990" y="350" class="dom-desc">۳۰% عراق + ۳۰% سوریه</text>
+<text x="990" y="365" class="dom-desc">۴۰K جنگجوی خارجی</text>
+<text x="990" y="380" class="dom-desc">ترور: پاریس، بروکسل، نیس</text>
+<text x="990" y="400" class="dom-stat">بزرگترین گروه تروریستی تاریخ</text>
+<text x="990" y="425" class="dom-stat">نتیجه مستقیم ۲۰۰۳</text>
+<path d="M 580,520 C 700,500 850,400 900,380" class="chain-arrow" stroke="rgba(255,255,255,0.3)" marker-end="url(#ch-r)"/>
+
+<!-- D7: Yemen -->
+<rect x="900" y="520" width="180" height="160" rx="12" fill="rgba(147,51,234,0.06)" stroke="rgba(147,51,234,0.2)" stroke-width="1.5"/>
+<text x="990" y="550" class="dom-flag" font-size="24">🇾🇪</text>
+<text x="990" y="572" class="dom-title" fill="#9333ea">جنگ یمن</text>
+<text x="990" y="590" class="dom-year">۲۰۱۵–اکنون</text>
+<line x1="920" y1="602" x2="1060" y2="602" stroke="rgba(147,51,234,0.15)" stroke-width="1"/>
+<text x="990" y="620" class="dom-desc">حوثی‌ها (حمایت ایران)</text>
+<text x="990" y="635" class="dom-desc">عربستان: جنگ نیابتی</text>
+<text x="990" y="660" class="dom-stat" fill="#9333ea">۱۵۰K+ کشته | بدترین بحران انسانی</text>
+<path d="M 580,260 C 700,340 850,480 900,550" class="chain-arrow" stroke="#9333ea" marker-end="url(#ch-p)"/>
+
+<!-- D8: Europe Refugees -->
+<rect x="1150" y="140" width="180" height="160" rx="12" fill="rgba(59,130,246,0.06)" stroke="rgba(59,130,246,0.2)" stroke-width="1.5"/>
+<text x="1240" y="170" class="dom-flag" font-size="24">🇪🇺</text>
+<text x="1240" y="192" class="dom-title" fill="#3b82f6">بحران پناهندگی</text>
+<text x="1240" y="210" class="dom-year">۲۰۱۵</text>
+<line x1="1170" y1="222" x2="1310" y2="222" stroke="rgba(59,130,246,0.15)" stroke-width="1"/>
+<text x="1240" y="240" class="dom-desc">۱.۵M+ پناهنده → اروپا</text>
+<text x="1240" y="255" class="dom-desc">رشد راست افراطی</text>
+<text x="1240" y="270" class="dom-desc">Brexit (بخشی)</text>
+<text x="1240" y="285" class="dom-stat" fill="#3b82f6">تغییر سیاست اروپا</text>
+<path d="M 830,480 C 950,350 1100,250 1150,230" class="chain-arrow" stroke="#3b82f6" marker-end="url(#ch-b)"/>
+
+<!-- D9: Populism -->
+<rect x="1150" y="360" width="180" height="140" rx="12" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.15)" stroke-width="1.5"/>
+<text x="1240" y="390" class="dom-flag" font-size="24">🗳️</text>
+<text x="1240" y="412" class="dom-title" fill="#ff9800">ظهور پوپولیسم</text>
+<text x="1240" y="430" class="dom-year">۲۰۱۶–۲۰۲۳</text>
+<line x1="1170" y1="442" x2="1310" y2="442" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+<text x="1240" y="460" class="dom-desc">ترامپ، اوربان، لوپن</text>
+<text x="1240" y="475" class="dom-desc">ضد مهاجرت + ضد جنگ</text>
+<text x="1240" y="490" class="dom-stat" fill="#ff9800">جنگ عراق = تغییر سیاست جهان</text>
+<path d="M 1240,300 L 1240,360" class="chain-arrow" stroke="#ff9800" marker-end="url(#ch-o)"/>
+
+<!-- D10: Libya -->
+<rect x="1150" y="560" width="180" height="140" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+<text x="1240" y="590" class="dom-flag" font-size="24">🇱🇾</text>
+<text x="1240" y="612" class="dom-title" fill="rgba(255,255,255,0.7)">سقوط لیبی</text>
+<text x="1240" y="630" class="dom-year">۲۰۱۱</text>
+<line x1="1170" y1="642" x2="1310" y2="642" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+<text x="1240" y="660" class="dom-desc">«این بار مثل عراق نمی‌شود»</text>
+<text x="1240" y="675" class="dom-desc">شد! بدتر. هنوز ۲ دولت رقیب</text>
+<text x="1240" y="690" class="dom-stat">تکرار الگوی عراق</text>
+<path d="M 830,250 C 950,300 1100,500 1150,590" class="chain-arrow" stroke="rgba(255,255,255,0.2)" marker-end="url(#ch-r)"/>
+
+<!-- SUMMARY PANEL -->
+<rect x="1400" y="140" width="430" height="560" rx="14" fill="rgba(212,175,55,0.04)" stroke="rgba(212,175,55,0.15)" stroke-width="1.5"/>
+<text x="1615" y="175" fill="#d4af37" font-size="18" font-weight="700" text-anchor="middle">📊 حساب نهایی اثر دومینو</text>
+<line x1="1420" y1="190" x2="1810" y2="190" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+
+<g transform="translate(1420,205)">
+  <rect x="0" y="0" width="190" height="55" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+  <text x="95" y="22" fill="#e74c3c" font-size="20" font-weight="900" text-anchor="middle">۱.۵M+</text>
+  <text x="95" y="40" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">کل کشته‌ها (منطقه)</text>
+  <rect x="200" y="0" width="190" height="55" rx="8" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+  <text x="295" y="22" fill="#ff9800" font-size="20" font-weight="900" text-anchor="middle">۳۷M+</text>
+  <text x="295" y="40" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">آواره کل منطقه</text>
+</g>
+<g transform="translate(1420,275)">
+  <rect x="0" y="0" width="190" height="55" rx="8" fill="rgba(59,130,246,0.08)" stroke="rgba(59,130,246,0.15)" stroke-width="1"/>
+  <text x="95" y="22" fill="#3b82f6" font-size="20" font-weight="900" text-anchor="middle">$۸T+</text>
+  <text x="95" y="40" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">هزینه کل</text>
+  <rect x="200" y="0" width="190" height="55" rx="8" fill="rgba(147,51,234,0.08)" stroke="rgba(147,51,234,0.15)" stroke-width="1"/>
+  <text x="295" y="22" fill="#9333ea" font-size="20" font-weight="900" text-anchor="middle">۵ کشور</text>
+  <text x="295" y="40" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">دولت شکست‌خورده</text>
+</g>
+
+<line x1="1420" y1="350" x2="1810" y2="350" stroke="rgba(212,175,55,0.08)" stroke-width="1"/>
+<text x="1615" y="378" fill="#d4af37" font-size="13" font-weight="700" text-anchor="middle">زنجیره علّی:</text>
+<text x="1800" y="400" fill="rgba(255,255,255,0.65)" font-size="11" text-anchor="end">عراق ۲۰۰۳ → القاعده عراق → داعش</text>
+<text x="1800" y="420" fill="rgba(255,255,255,0.65)" font-size="11" text-anchor="end">عراق ۲۰۰۳ → تقویت ایران → محور مقاومت</text>
+<text x="1800" y="440" fill="rgba(255,255,255,0.65)" font-size="11" text-anchor="end">عراق ۲۰۰۳ → الهام بهار عربی → سوریه + لیبی</text>
+<text x="1800" y="460" fill="rgba(255,255,255,0.65)" font-size="11" text-anchor="end">سوریه → بحران پناهندگی → Brexit + پوپولیسم</text>
+<text x="1800" y="480" fill="rgba(255,255,255,0.65)" font-size="11" text-anchor="end">تقویت ایران → حوثی‌ها → جنگ یمن</text>
+
+<line x1="1420" y1="500" x2="1810" y2="500" stroke="rgba(212,175,55,0.08)" stroke-width="1"/>
+<rect x="1430" y="515" width="370" height="65" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="1615" y="540" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle" font-style="italic">«حمله به عراق بدترین تصمیم</text>
+<text x="1615" y="558" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle" font-style="italic">سیاست خارجی آمریکا بود.»</text>
+<text x="1615" y="573" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">— باراک اوباما، ۲۰۰۷</text>
+<rect x="1430" y="590" width="370" height="55" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+<text x="1615" y="612" fill="rgba(255,255,255,0.6)" font-size="12" font-weight="700" text-anchor="middle" font-style="italic">«داعش فرزند ناخواسته ۲۰۰۳ بود.»</text>
+<text x="1615" y="637" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">— Patrick Cockburn, 2015</text>
+
+<!-- BOTTOM BAR -->
+<rect x="60" y="875" width="1800" height="80" rx="10" class="note-box"/>
+<text x="960" y="903" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">📌 یک تصمیم در ۲۰۰۳ → ۱.۵M کشته + ۳۷M آواره + ۵ دولت شکست‌خورده + تغییر سیاست جهان</text>
+<text x="960" y="925" fill="rgba(255,255,255,0.5)" font-size="12" text-anchor="middle">بدون حمله ۲۰۰۳: احتمالاً نه داعش بود، نه جنگ سوریه، نه بحران پناهندگی اروپا، نه ترامپ (به این شکل)</text>
+<text x="960" y="945" fill="rgba(255,255,255,0.35)" font-size="11" text-anchor="middle">همبستگی ≠ علیت مطلق — اما شواهد قوی: عراق ۲۰۰۳ = «نقطه شکست» خاورمیانه معاصر</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 26 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۷: اثر منطقه‌ای</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: Brown Univ. Costs of War, UNHCR, ICG, Cockburn (2015), IISS Strategic Survey | تحلیل زنجیره علّی نگارنده</text>
+</svg>

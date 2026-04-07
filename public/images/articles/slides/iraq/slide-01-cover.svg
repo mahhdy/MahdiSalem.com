@@ -1,0 +1,139 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: url(#bgGrad); }
+    .glass { fill: rgba(255,255,255,0.04); stroke: rgba(255,255,255,0.08); stroke-width: 1; rx: 18; }
+    .glass2 { fill: rgba(255,255,255,0.07); stroke: rgba(212,175,55,0.15); stroke-width: 1.5; rx: 14; }
+    .title { fill: #ffffff; font-size: 62px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 30px; font-weight: 500; text-anchor: middle; }
+    .stat-num { fill: #e74c3c; font-size: 48px; font-weight: 900; text-anchor: middle; }
+    .stat-label { fill: rgba(255,255,255,0.7); font-size: 16px; font-weight: 300; text-anchor: middle; }
+    .dim { fill: rgba(255,255,255,0.35); font-size: 14px; text-anchor: middle; }
+    .gold-line { stroke: #d4af37; stroke-width: 2; opacity: 0.6; }
+    .red-glow { fill: #e74c3c; opacity: 0.15; }
+    .tag { fill: rgba(231,76,60,0.15); stroke: #e74c3c; stroke-width: 1; rx: 8; }
+    .tag-text { fill: #e74c3c; font-size: 14px; font-weight: 700; text-anchor: middle; }
+    @keyframes pulse { 0%,100%{ opacity:0.15; } 50%{ opacity:0.35; } }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes flicker { 0%,100%{ opacity:0.6; } 50%{ opacity:1; } }
+    .pulse { animation: pulse 3s ease-in-out infinite; }
+    .fade1 { animation: fadeUp 1s ease-out 0.3s both; }
+    .fade2 { animation: fadeUp 1s ease-out 0.6s both; }
+    .fade3 { animation: fadeUp 1s ease-out 0.9s both; }
+    .fade4 { animation: fadeUp 1s ease-out 1.2s both; }
+    .flicker { animation: flicker 2s ease-in-out infinite; }
+    .iraq-path { fill: rgba(231,76,60,0.12); stroke: #e74c3c; stroke-width: 1.5; opacity: 0.6; }
+    .grid-line { stroke: rgba(255,255,255,0.03); stroke-width: 1; }
+  </style>
+  <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#0a0e27"/>
+    <stop offset="50%" style="stop-color:#0d1333"/>
+    <stop offset="100%" style="stop-color:#1a0a1e"/>
+  </linearGradient>
+  <radialGradient id="glowRed" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:0.3"/>
+    <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:0"/>
+  </radialGradient>
+  <radialGradient id="glowGold" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" style="stop-color:#d4af37;stop-opacity:0.2"/>
+    <stop offset="100%" style="stop-color:#d4af37;stop-opacity:0"/>
+  </radialGradient>
+  <filter id="blur1"><feGaussianBlur stdDeviation="40"/></filter>
+  <filter id="blur2"><feGaussianBlur stdDeviation="80"/></filter>
+  <filter id="shadow1"><feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/></filter>
+</defs>
+
+<!-- پس‌زمینه -->
+<rect class="bg" width="1920" height="1080"/>
+
+<!-- شبکه‌ی پس‌زمینه -->
+<g opacity="0.4">
+  <line x1="0" y1="200" x2="1920" y2="200" class="grid-line"/>
+  <line x1="0" y1="400" x2="1920" y2="400" class="grid-line"/>
+  <line x1="0" y1="600" x2="1920" y2="600" class="grid-line"/>
+  <line x1="0" y1="800" x2="1920" y2="800" class="grid-line"/>
+  <line x1="400" y1="0" x2="400" y2="1080" class="grid-line"/>
+  <line x1="800" y1="0" x2="800" y2="1080" class="grid-line"/>
+  <line x1="1200" y1="0" x2="1200" y2="1080" class="grid-line"/>
+  <line x1="1600" y1="0" x2="1600" y2="1080" class="grid-line"/>
+</g>
+
+<!-- افکت‌های نوری -->
+<ellipse cx="960" cy="450" rx="500" ry="350" fill="url(#glowRed)" filter="url(#blur2)" class="pulse"/>
+<ellipse cx="400" cy="300" rx="250" ry="200" fill="url(#glowGold)" filter="url(#blur2)" opacity="0.5"/>
+<ellipse cx="1500" cy="700" rx="200" ry="180" fill="url(#glowGold)" filter="url(#blur2)" opacity="0.3"/>
+
+<!-- نقشه‌ی تقریبی عراق (مرکز) -->
+<g transform="translate(660,180) scale(1.8)" class="pulse">
+  <path d="M120,20 L160,10 L200,25 L230,15 L260,30 L280,70 L300,100 L310,150 L290,200 L280,250 L300,300 L290,350 L260,380 L240,400 L200,420 L160,410 L140,380 L100,360 L80,320 L60,280 L50,240 L40,200 L50,160 L70,120 L90,80 L100,50 Z" class="iraq-path"/>
+  <!-- بغداد -->
+  <circle cx="180" cy="220" r="6" fill="#e74c3c" class="flicker"/>
+  <text x="195" y="225" fill="rgba(255,255,255,0.6)" font-size="11" font-weight="300">بغداد</text>
+  <!-- بصره -->
+  <circle cx="260" cy="370" r="4" fill="#d4af37" opacity="0.7"/>
+  <text x="240" y="390" fill="rgba(255,255,255,0.4)" font-size="9" font-weight="300">بصره</text>
+  <!-- موصل -->
+  <circle cx="170" cy="60" r="4" fill="#d4af37" opacity="0.7"/>
+  <text x="185" y="65" fill="rgba(255,255,255,0.4)" font-size="9" font-weight="300">موصل</text>
+  <!-- اربیل -->
+  <circle cx="220" cy="80" r="3.5" fill="#00b4d8" opacity="0.7"/>
+  <text x="235" y="85" fill="rgba(255,255,255,0.4)" font-size="9" font-weight="300">اربیل</text>
+</g>
+
+<!-- عنوان اصلی -->
+<g class="fade1">
+  <text x="960" y="130" class="title" filter="url(#shadow1)">کالبدشکافی مداخلات خارجی در عراق</text>
+</g>
+
+<!-- زیرعنوان -->
+<g class="fade2">
+  <line x1="660" y1="155" x2="1260" y2="155" class="gold-line"/>
+  <text x="960" y="195" class="subtitle">از وعده‌ی دموکراسی تا واقعیت فروپاشی  •  ۲۰۰۳–۲۰۲۶</text>
+  <line x1="660" y1="210" x2="1260" y2="210" class="gold-line"/>
+</g>
+
+<!-- پنل‌های آماری پایین -->
+<g class="fade3">
+  <!-- پنل ۱: کشته‌ها -->
+  <rect x="110" y="770" width="320" height="180" class="glass2" filter="url(#shadow1)"/>
+  <text x="270" y="830" class="stat-num">+۶۰۰,۰۰۰</text>
+  <text x="270" y="865" class="stat-label">کشته‌ی غیرنظامی عراقی</text>
+  <text x="270" y="890" class="dim">۲۰۰۳–۲۰۲۳ • برآورد لنست و ORB</text>
+  <rect x="170" y="910" width="200" height="26" class="tag"/>
+  <text x="270" y="928" class="tag-text">هر ۵۲ دقیقه یک نفر</text>
+
+  <!-- پنل ۲: آوارگان -->
+  <rect x="500" y="770" width="320" height="180" class="glass2" filter="url(#shadow1)"/>
+  <text x="660" y="830" fill="#00b4d8" font-size="48" font-weight="900" text-anchor="middle">۹.۲M</text>
+  <text x="660" y="865" class="stat-label">آواره‌ی داخلی و خارجی</text>
+  <text x="660" y="890" class="dim">UNHCR • اوج: ۲۰۰۶–۲۰۰۸ و ۲۰۱۴–۲۰۱۷</text>
+  <rect x="580" y="910" width="160" height="26" class="tag"/>
+  <text x="660" y="928" class="tag-text">هر ۴ عراقی، ۱ آواره</text>
+
+  <!-- پنل ۳: هزینه -->
+  <rect x="890" y="770" width="320" height="180" class="glass2" filter="url(#shadow1)"/>
+  <text x="1050" y="830" fill="#d4af37" font-size="48" font-weight="900" text-anchor="middle">+</text>
+  <text x="1050" y="865" class="stat-label">هزینه‌ی مستقیم و غیرمستقیم آمریکا</text>
+  <text x="1050" y="890" class="dim">Stiglitz &amp; Bilmes + Watson Institute</text>
+  <rect x="960" y="910" width="180" height="26" class="tag"/>
+  <text x="1050" y="928" class="tag-text">,۰۰۰ به‌ازای هر آمریکایی</text>
+
+  <!-- پنل ۴: فساد -->
+  <rect x="1280" y="770" width="320" height="180" class="glass2" filter="url(#shadow1)"/>
+  <text x="1440" y="830" fill="#f39c12" font-size="48" font-weight="900" text-anchor="middle"></text>
+  <text x="1440" y="865" class="stat-label">فساد و اختلاس در عراق</text>
+  <text x="1440" y="890" class="dim">۲۰۰۳–۲۰۲۳ • کمیسیون یکپارچگی</text>
+  <rect x="1360" y="910" width="160" height="26" class="tag"/>
+  <text x="1440" y="928" class="tag-text">رتبه ۱۵۷ از ۱۸۰</text>
+</g>
+
+<!-- برچسب‌های گوشه -->
+<g class="fade4">
+  <text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13" font-weight="300">SLIDE 01 / 60</text>
+  <text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" font-weight="300" text-anchor="end">گزارش تحلیلی جامع • ۱۸۵ صفحه • ۲۰۲۶</text>
+  <text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="12" text-anchor="middle">تمام داده‌ها مستند و ارجاع‌دار — منابع: بانک جهانی، UNDP، Lancet، SIGIR، Watson Institute، Arab Barometer</text>
+</g>
+
+</svg>

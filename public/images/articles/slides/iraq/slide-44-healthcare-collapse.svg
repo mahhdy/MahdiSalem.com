@@ -1,0 +1,261 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+  </style>
+  <linearGradient id="bg44" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0a0e27"/>
+    <stop offset="50%" stop-color="#0d1333"/>
+    <stop offset="100%" stop-color="#1a0a1e"/>
+  </linearGradient>
+  <filter id="sh44"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#bg44)"/>
+
+<!-- Header -->
+<text x="960" y="45" fill="#fff" font-size="32" font-weight="900" text-anchor="middle">🏥 فروپاشی نظام بهداشت: از بهترین عرب تا بحران انسانی</text>
+<text x="960" y="72" fill="#d4af37" font-size="15" font-weight="400" text-anchor="middle">عراق ۱۹۸۰: پوشش ۹۷% بهداشت | عراق ۲۰۲۳: بیمارستان‌ها بدون دارو و پزشک</text>
+<line x1="150" y1="88" x2="1770" y2="88" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ====== LEFT: HEALTH INDICATORS DASHBOARD ====== -->
+<rect x="60" y="105" width="600" height="480" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh44)"/>
+<text x="360" y="135" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📊 شاخص‌های کلیدی بهداشت — قبل vs بعد</text>
+
+<!-- Indicator rows -->
+<g transform="translate(80,155)">
+  <!-- Life Expectancy -->
+  <rect x="0" y="0" width="560" height="55" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="20" fill="#d4af37" font-size="11" font-weight="700">❤️ امید به زندگی</text>
+  <rect x="15" y="30" width="120" height="18" rx="4" fill="rgba(46,204,113,0.12)"/>
+  <text x="75" y="43" fill="#2ecc71" font-size="10" font-weight="700" text-anchor="middle">۱۹۸۰: ۶۵ سال</text>
+  <rect x="145" y="30" width="120" height="18" rx="4" fill="rgba(255,152,0,0.12)"/>
+  <text x="205" y="43" fill="#ff9800" font-size="10" font-weight="700" text-anchor="middle">۲۰۰۶: ۴۸ سال!</text>
+  <rect x="275" y="30" width="120" height="18" rx="4" fill="rgba(231,76,60,0.12)"/>
+  <text x="335" y="43" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">۲۰۲۳: ۷۰.۵ سال</text>
+  <text x="420" y="20" fill="rgba(255,255,255,0.3)" font-size="9">ایران: ۷۷ | ترکیه: ۷۶</text>
+  <text x="420" y="43" fill="rgba(255,255,255,0.25)" font-size="8">↓ ۱۷ سال سقوط در ۲۰۰۶!</text>
+
+  <!-- Infant Mortality -->
+  <rect x="0" y="63" width="560" height="55" rx="8" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="83" fill="#d4af37" font-size="11" font-weight="700">👶 مرگ نوزاد (هر ۱۰۰۰ تولد)</text>
+  <rect x="15" y="93" width="120" height="18" rx="4" fill="rgba(46,204,113,0.12)"/>
+  <text x="75" y="106" fill="#2ecc71" font-size="10" font-weight="700" text-anchor="middle">۱۹۹۰: ۴۰</text>
+  <rect x="145" y="93" width="120" height="18" rx="4" fill="rgba(231,76,60,0.12)"/>
+  <text x="205" y="106" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">۲۰۰۵: ۱۰۸!</text>
+  <rect x="275" y="93" width="120" height="18" rx="4" fill="rgba(255,152,0,0.12)"/>
+  <text x="335" y="106" fill="#ff9800" font-size="10" font-weight="700" text-anchor="middle">۲۰۲۳: ۲۳</text>
+  <text x="420" y="83" fill="rgba(255,255,255,0.3)" font-size="9">ایران: ۱۱ | ترکیه: ۹</text>
+  <text x="420" y="106" fill="rgba(255,255,255,0.25)" font-size="8">بهبود اما هنوز بالا</text>
+
+  <!-- Maternal Mortality -->
+  <rect x="0" y="126" width="560" height="55" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="146" fill="#d4af37" font-size="11" font-weight="700">🤰 مرگ مادران (هر ۱۰۰K)</text>
+  <rect x="15" y="156" width="120" height="18" rx="4" fill="rgba(46,204,113,0.12)"/>
+  <text x="75" y="169" fill="#2ecc71" font-size="10" font-weight="700" text-anchor="middle">۱۹۹۰: ۵۰</text>
+  <rect x="145" y="156" width="120" height="18" rx="4" fill="rgba(231,76,60,0.12)"/>
+  <text x="205" y="169" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">۲۰۰۶: ۲۹۴!</text>
+  <rect x="275" y="156" width="120" height="18" rx="4" fill="rgba(255,152,0,0.12)"/>
+  <text x="335" y="169" fill="#ff9800" font-size="10" font-weight="700" text-anchor="middle">۲۰۲۳: ۷۹</text>
+  <text x="420" y="146" fill="rgba(255,255,255,0.3)" font-size="9">ایران: ۱۶ | اردن: ۴۱</text>
+
+  <!-- Doctors per 10K -->
+  <rect x="0" y="189" width="560" height="55" rx="8" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="209" fill="#d4af37" font-size="11" font-weight="700">👨‍⚕️ پزشک (هر ۱۰,۰۰۰ نفر)</text>
+  <rect x="15" y="219" width="120" height="18" rx="4" fill="rgba(46,204,113,0.12)"/>
+  <text x="75" y="232" fill="#2ecc71" font-size="10" font-weight="700" text-anchor="middle">۱۹۹۰: ۱۸</text>
+  <rect x="145" y="219" width="120" height="18" rx="4" fill="rgba(231,76,60,0.12)"/>
+  <text x="205" y="232" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">۲۰۰۶: ۵!</text>
+  <rect x="275" y="219" width="120" height="18" rx="4" fill="rgba(255,152,0,0.12)"/>
+  <text x="335" y="232" fill="#ff9800" font-size="10" font-weight="700" text-anchor="middle">۲۰۲۳: ۸.۵</text>
+  <text x="420" y="209" fill="rgba(255,255,255,0.3)" font-size="9">ایران: ۱۶ | ترکیه: ۲۰</text>
+  <text x="420" y="232" fill="rgba(255,255,255,0.25)" font-size="8">نیاز: ≈۱۵ — کمبود ۴۰%</text>
+
+  <!-- Hospital Beds -->
+  <rect x="0" y="252" width="560" height="55" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="272" fill="#d4af37" font-size="11" font-weight="700">🛏️ تخت بیمارستان (هر ۱۰,۰۰۰)</text>
+  <rect x="15" y="282" width="120" height="18" rx="4" fill="rgba(46,204,113,0.12)"/>
+  <text x="75" y="295" fill="#2ecc71" font-size="10" font-weight="700" text-anchor="middle">۱۹۹۰: ۲۰</text>
+  <rect x="145" y="282" width="120" height="18" rx="4" fill="rgba(231,76,60,0.12)"/>
+  <text x="205" y="295" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">۲۰۰۸: ۸</text>
+  <rect x="275" y="282" width="120" height="18" rx="4" fill="rgba(255,152,0,0.12)"/>
+  <text x="335" y="295" fill="#ff9800" font-size="10" font-weight="700" text-anchor="middle">۲۰۲۳: ۱۳</text>
+  <text x="420" y="272" fill="rgba(255,255,255,0.3)" font-size="9">ایران: ۱۷ | اردن: ۱۴</text>
+
+  <!-- Clean Water -->
+  <rect x="0" y="315" width="560" height="55" rx="8" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="15" y="335" fill="#d4af37" font-size="11" font-weight="700">💧 دسترسی آب سالم</text>
+  <rect x="15" y="345" width="120" height="18" rx="4" fill="rgba(46,204,113,0.12)"/>
+  <text x="75" y="358" fill="#2ecc71" font-size="10" font-weight="700" text-anchor="middle">۱۹۹۰: ۹۵%</text>
+  <rect x="145" y="345" width="120" height="18" rx="4" fill="rgba(231,76,60,0.12)"/>
+  <text x="205" y="358" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">۲۰۰۷: ۳۵%</text>
+  <rect x="275" y="345" width="120" height="18" rx="4" fill="rgba(255,152,0,0.12)"/>
+  <text x="335" y="358" fill="#ff9800" font-size="10" font-weight="700" text-anchor="middle">۲۰۲۳: ۶۰%</text>
+  <text x="420" y="335" fill="rgba(255,255,255,0.3)" font-size="9">بحران بصره ۲۰۱۸: مسمومیت آب</text>
+  <text x="420" y="358" fill="rgba(255,255,255,0.25)" font-size="8">۱۱۸,۰۰۰ بستری!</text>
+</g>
+
+<!-- Summary -->
+<rect x="80" y="538" width="560" height="30" rx="6" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="360" y="558" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">⚠️ هیچ شاخصی به سطح ۱۹۹۰ بازنگشته — حتی با $۱۰B+ کمک بین‌المللی</text>
+
+<!-- ====== MIDDLE: HOSPITAL DESTRUCTION MAP ====== -->
+<rect x="685" y="105" width="590" height="480" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh44)"/>
+<text x="980" y="135" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">🗺️ تخریب زیرساخت بیمارستانی — استان به استان</text>
+
+<!-- Schematic map/table approach -->
+<g transform="translate(710,155)">
+  <!-- Mosul/Nineveh -->
+  <rect x="0" y="0" width="540" height="48" rx="6" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+  <text x="15" y="20" fill="#e74c3c" font-size="12" font-weight="900">نینوا (موصل)</text>
+  <text x="15" y="38" fill="rgba(255,255,255,0.4)" font-size="9">۷۰% بیمارستان‌ها تخریب شده (داعش + نبرد آزادسازی)</text>
+  <text x="490" y="28" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="end">۷۰%↓</text>
+
+  <!-- Anbar -->
+  <rect x="0" y="56" width="540" height="48" rx="6" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="15" y="76" fill="#e74c3c" font-size="12" font-weight="900">انبار (فلوجه/رمادی)</text>
+  <text x="15" y="94" fill="rgba(255,255,255,0.4)" font-size="9">۶۵% تخریب — ۲ بیمارستان اصلی از ۱۲ فعال</text>
+  <text x="490" y="84" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="end">۶۵%↓</text>
+
+  <!-- Saladin -->
+  <rect x="0" y="112" width="540" height="48" rx="6" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="15" y="132" fill="#ff9800" font-size="12" font-weight="900">صلاح‌الدین (تکریت)</text>
+  <text x="15" y="150" fill="rgba(255,255,255,0.4)" font-size="9">۵۵% آسیب — کمبود شدید تجهیزات</text>
+  <text x="490" y="140" fill="#ff9800" font-size="18" font-weight="900" text-anchor="end">۵۵%↓</text>
+
+  <!-- Diyala -->
+  <rect x="0" y="168" width="540" height="48" rx="6" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+  <text x="15" y="188" fill="#ff9800" font-size="12" font-weight="700">دیالی</text>
+  <text x="15" y="206" fill="rgba(255,255,255,0.4)" font-size="9">۴۰% آسیب — نبرد مداوم شبه‌نظامی/داعش</text>
+  <text x="490" y="196" fill="#ff9800" font-size="18" font-weight="900" text-anchor="end">۴۰%↓</text>
+
+  <!-- Basra -->
+  <rect x="0" y="224" width="540" height="48" rx="6" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+  <text x="15" y="244" fill="#00b4d8" font-size="12" font-weight="700">بصره</text>
+  <text x="15" y="262" fill="rgba(255,255,255,0.4)" font-size="9">سالم اما: آلودگی آب ۲۰۱۸ → ۱۱۸K بستری | سرطان↑</text>
+  <text x="490" y="252" fill="#00b4d8" font-size="14" font-weight="700" text-anchor="end">بحران آب</text>
+
+  <!-- Baghdad -->
+  <rect x="0" y="280" width="540" height="48" rx="6" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+  <text x="15" y="300" fill="#d4af37" font-size="12" font-weight="700">بغداد</text>
+  <text x="15" y="318" fill="rgba(255,255,255,0.4)" font-size="9">فشار جمعیتی: ۹M نفر، بیمارستان برای ۳M | صف ۱۲ ساعته</text>
+  <text x="490" y="308" fill="#d4af37" font-size="14" font-weight="700" text-anchor="end">فشار ×۳</text>
+
+  <!-- Kurdistan -->
+  <rect x="0" y="336" width="540" height="48" rx="6" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="15" y="356" fill="#2ecc71" font-size="12" font-weight="700">کردستان</text>
+  <text x="15" y="374" fill="rgba(255,255,255,0.4)" font-size="9">وضعیت بهتر — اما بحران مالی ۲۰۱۴+ → کاهش خدمات</text>
+  <text x="490" y="364" fill="#2ecc71" font-size="14" font-weight="700" text-anchor="end">بهترین وضع</text>
+</g>
+
+<!-- Total -->
+<rect x="710" y="548" width="540" height="25" rx="4" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="980" y="565" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">مجموع: ۱۲ بیمارستان بزرگ + ۱۸۰ مرکز بهداشت تخریب کامل</text>
+
+<!-- ====== RIGHT: DISEASE & CRISIS ====== -->
+<rect x="1300" y="105" width="560" height="480" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh44)"/>
+<text x="1580" y="135" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">⚠️ بحران‌های بهداشتی فعال</text>
+
+<!-- Crisis cards -->
+<rect x="1320" y="155" width="520" height="60" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="1335" y="178" fill="#e74c3c" font-size="13" font-weight="900">🔴 سرطان‌های ناشی از اورانیوم</text>
+<text x="1335" y="198" fill="rgba(255,255,255,0.5)" font-size="10">افزایش ۷ برابری سرطان در فلوجه | ۱۲x نقص مادرزادی</text>
+
+<rect x="1320" y="223" width="520" height="60" rx="8" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+<text x="1335" y="246" fill="#ff9800" font-size="13" font-weight="900">🟠 بهداشت روان (PTSD)</text>
+<text x="1335" y="266" fill="rgba(255,255,255,0.5)" font-size="10">≈۵M نفر PTSD | ۰ روانپزشک در ۱۲ استان | خودکشی↑</text>
+
+<rect x="1320" y="291" width="520" height="60" rx="8" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.15)" stroke-width="1"/>
+<text x="1335" y="314" fill="#00b4d8" font-size="13" font-weight="900">🔵 وبا و بیماری‌های آبی</text>
+<text x="1335" y="334" fill="rgba(255,255,255,0.5)" font-size="10">شیوع مکرر وبا (۲۰۰۷, ۲۰۱۵, ۲۰۲۲) | فاضلاب بدون تصفیه</text>
+
+<rect x="1320" y="359" width="520" height="60" rx="8" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.15)" stroke-width="1"/>
+<text x="1335" y="382" fill="#9b59b6" font-size="13" font-weight="900">🟣 کووید-۱۹</text>
+<text x="1335" y="402" fill="rgba(255,255,255,0.5)" font-size="10">سیستم بهداشت فروپاشید | اکسیژن تمام شد | ۲۵,۰۰۰ فوتی رسمی</text>
+
+<rect x="1320" y="427" width="520" height="60" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="1335" y="450" fill="#e74c3c" font-size="13" font-weight="900">🔴 سوءتغذیه کودکان</text>
+<text x="1335" y="470" fill="rgba(255,255,255,0.5)" font-size="10">۲۲% کودکان زیر ۵ سال کوتاه‌قد | ۸% لاغر مفرط</text>
+
+<!-- Doctor flight stat -->
+<rect x="1320" y="500" width="520" height="68" rx="8" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.12)" stroke-width="1"/>
+<text x="1580" y="524" fill="#d4af37" font-size="12" font-weight="700" text-anchor="middle">👨‍⚕️ فرار پزشکان — ارقام</text>
+<text x="1335" y="546" fill="rgba(255,255,255,0.5)" font-size="10">۲۰۰۲: ۳۴,۰۰۰ پزشک → ۲۰۰۶: ۱۶,۰۰۰ → ۲۰۲۳: ≈۲۲,۰۰۰</text>
+<text x="1335" y="562" fill="rgba(255,255,255,0.35)" font-size="9">برای ۴۲M جمعیت → ۱ پزشک برای ۱,۹۰۰ نفر (استاندارد WHO: ۱:۱,۰۰۰)</text>
+
+<!-- ====== BOTTOM: DU CONTAMINATION SPECIAL SECTION ====== -->
+<rect x="60" y="605" width="900" height="195" rx="14" fill="rgba(231,76,60,0.05)" stroke="rgba(231,76,60,0.12)" stroke-width="1" filter="url(#sh44)"/>
+<text x="510" y="635" fill="#e74c3c" font-size="14" font-weight="900" text-anchor="middle">☢️ اورانیوم ضعیف‌شده (DU) — میراث سمی جنگ</text>
+
+<g transform="translate(85,650)">
+  <rect x="0" y="0" width="175" height="60" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="87" y="20" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">۱,۰۰۰+</text>
+  <text x="87" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">تُن DU شلیک شده</text>
+  <text x="87" y="52" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">۱۹۹۱ + ۲۰۰۳</text>
+
+  <rect x="190" y="0" width="175" height="60" rx="8" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="277" y="20" fill="#ff9800" font-size="18" font-weight="900" text-anchor="middle">x۱۲</text>
+  <text x="277" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">افزایش نقص مادرزادی</text>
+  <text x="277" y="52" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">فلوجه vs میانگین جهانی</text>
+
+  <rect x="380" y="0" width="175" height="60" rx="8" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+  <text x="467" y="20" fill="#9b59b6" font-size="18" font-weight="900" text-anchor="middle">x۷</text>
+  <text x="467" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">افزایش سرطان فلوجه</text>
+  <text x="467" y="52" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">بدتر از هیروشیما</text>
+
+  <rect x="570" y="0" width="175" height="60" rx="8" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.12)" stroke-width="1"/>
+  <text x="657" y="20" fill="#00b4d8" font-size="18" font-weight="900" text-anchor="middle">۴.۵B</text>
+  <text x="657" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">سال نیمه‌عمر U-238</text>
+  <text x="657" y="52" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">آلودگی ابدی</text>
+
+  <rect x="760" y="0" width="115" height="60" rx="8" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+  <text x="817" y="20" fill="#e74c3c" font-size="15" font-weight="900" text-anchor="middle">صفر</text>
+  <text x="817" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">پاکسازی</text>
+  <text x="817" y="52" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">هیچ اقدامی</text>
+</g>
+
+<text x="510" y="730" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">محققان: «فلوجه بدتر از هیروشیما» — مجله Int'l Journal of Environmental Research 2010</text>
+<text x="510" y="748" fill="rgba(255,255,255,0.3)" font-size="9" text-anchor="middle">آمریکا و بریتانیا هنوز هرگونه ارتباط DU با سرطان را رد می‌کنند</text>
+
+<!-- ====== BOTTOM RIGHT: HEALTH SPENDING ====== -->
+<rect x="985" y="605" width="870" height="195" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh44)"/>
+<text x="1420" y="635" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">💊 بودجه بهداشت — مقایسه منطقه‌ای</text>
+
+<!-- Spending comparison bars -->
+<g transform="translate(1010,655)">
+  <text x="0" y="15" fill="rgba(255,255,255,0.6)" font-size="10">ترکیه</text>
+  <rect x="85" y="2" width="500" height="20" rx="3" fill="rgba(255,255,255,0.03)"/>
+  <rect x="85" y="2" width="420" height="20" rx="3" fill="rgba(46,204,113,0.3)"/>
+  <text x="520" y="17" fill="#2ecc71" font-size="10" font-weight="700">$۱,۱۰۰/نفر</text>
+
+  <text x="0" y="38" fill="rgba(255,255,255,0.6)" font-size="10">ایران</text>
+  <rect x="85" y="25" width="500" height="20" rx="3" fill="rgba(255,255,255,0.03)"/>
+  <rect x="85" y="25" width="280" height="20" rx="3" fill="rgba(0,180,216,0.3)"/>
+  <text x="380" y="40" fill="#00b4d8" font-size="10" font-weight="700">$۵۸۰/نفر</text>
+
+  <text x="0" y="61" fill="rgba(255,255,255,0.6)" font-size="10">اردن</text>
+  <rect x="85" y="48" width="500" height="20" rx="3" fill="rgba(255,255,255,0.03)"/>
+  <rect x="85" y="48" width="200" height="20" rx="3" fill="rgba(155,89,182,0.3)"/>
+  <text x="300" y="63" fill="#9b59b6" font-size="10" font-weight="700">$۳۵۰/نفر</text>
+
+  <text x="0" y="84" fill="#e74c3c" font-size="10" font-weight="700">عراق</text>
+  <rect x="85" y="71" width="500" height="22" rx="3" fill="rgba(255,255,255,0.03)"/>
+  <rect x="85" y="71" width="100" height="22" rx="3" fill="rgba(231,76,60,0.4)" stroke="rgba(231,76,60,0.5)" stroke-width="1"/>
+  <text x="200" y="87" fill="#e74c3c" font-size="11" font-weight="900">$۱۶۰/نفر</text>
+  <text x="300" y="87" fill="rgba(255,255,255,0.3)" font-size="8">(≈۴% بودجه دولت — WHO: حداقل ۱۵%)</text>
+</g>
+
+<rect x="1010" y="762" width="820" height="25" rx="4" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="1420" y="779" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">عراق ۶x کمتر از ترکیه بودجه بهداشتی دارد — با جمعیت جوان‌تر و بیمارتر</text>
+
+<!-- ====== BOTTOM NOTE ====== -->
+<rect x="60" y="820" width="1800" height="60" rx="10" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+<text x="960" y="845" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📌 عراقی که ۱۹۸۰ بهترین سیستم بهداشتی عرب بود، امروز نمی‌تواند آب سالم برای شهروندانش تأمین کند</text>
+<text x="960" y="865" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">میراث جنگ فقط گلوله نیست — اورانیوم ضعیف‌شده نسل‌ها را مسموم کرده و هیچ‌کس پاسخگو نیست</text>
+
+<!-- Footer -->
+<text x="60" y="42" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 44 / 60</text>
+<text x="1860" y="42" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۸: توسعه انسانی</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: WHO, UNICEF, Lancet, Int'l Journal of Env. Research, Iraqi MoH, World Bank Health Stats</text>
+</svg>

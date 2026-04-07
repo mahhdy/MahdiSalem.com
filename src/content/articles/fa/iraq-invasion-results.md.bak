@@ -6,93 +6,80 @@ publishDate: '2026-04-04'
 description: عراق و نتایج مداخله‌ی خارجی
 author: مهدی سالم
 coverImage: /images/articles/covers/iraq-invasion-results.webp
+showInContents: true
 imageDisplay: thumbnail
 cardImage: show
 category: مداخلات خارجی
 interface: descriptive-politics
-pdfOnly: false
+pdfOnly: true
 showPdfViewer: true
 pdfUrl: /documents/articles/iraq-invasion-results.pdf
 hasSlide: true
-slideAlbums:
-  - title: Infography
-    slides:
-        - /images/articles/slides/iraq/slide-01-cover.svg
-        - /images/articles/slides/iraq/slide-02-promises-vs-reality.svg
-        - /images/articles/slides/iraq/slide-03-wmd-lies.svg
-        - /images/articles/slides/iraq/slide-04-infrastructure.svg
-        - /images/articles/slides/iraq/slide-05-casualties-timeline.svg
-        - /images/articles/slides/iraq/slide-06-order2-army-dissolution.svg
-        - /images/articles/slides/iraq/slide-07-zarqawi-to-baghdadi.svg
-        - /images/articles/slides/iraq/slide-08-muhasasa-power-chart.svg
-        - /images/articles/slides/iraq/slide-09-corruption-sankey.svg
-        - /images/articles/slides/iraq/slide-10-trust-heatmap.svg
-        - /images/articles/slides/iraq/slide-11-radar-nation.svg
-        - /images/articles/slides/iraq/slide-12-dual-timeline.svg
-        - /images/articles/slides/iraq/slide-13-iran-influence.svg
-        - /images/articles/slides/iraq/slide-14-military-comparison.svg
-        - /images/articles/slides/iraq/slide-15-j-curve.svg
-        - /images/articles/slides/iraq/slide-16-public-opinion.svg
-        - /images/articles/slides/iraq/slide-17-identity-stacked.svg
-        - /images/articles/slides/iraq/slide-18-generations.svg
-        - /images/articles/slides/iraq/slide-19-satisfaction-scatter.svg
-        - /images/articles/slides/iraq/slide-20-brain-drain.svg
-        - /images/articles/slides/iraq/slide-21-map-casualties.svg
-        - /images/articles/slides/iraq/slide-22-displacement.svg
-        - /images/articles/slides/iraq/slide-23-resource-curse.svg
-        - /images/articles/slides/iraq/slide-24-cost-of-war.svg
-        - /images/articles/slides/iraq/slide-25-scenario-matrix.svg
-        - /images/articles/slides/iraq/slide-25-scenarios+.svg
-        - /images/articles/slides/iraq/slide-26-domino-effect-PART2.svg
-        - /images/articles/slides/iraq/slide-26-domino-effect.svg
-        - /images/articles/slides/iraq/slide-26-domino-effect+.svg
-        - /images/articles/slides/iraq/slide-27-water-crisis.svg
-        - /images/articles/slides/iraq/slide-27-water-crisis+.svg
-        - /images/articles/slides/iraq/slide-28-lessons-learned.svg
-        - /images/articles/slides/iraq/slide-28-lessons-learned+.svg
-        - /images/articles/slides/iraq/slide-29-final-diagnosis+.svg
-        - /images/articles/slides/iraq/slide-29-tishreen-movement.svg
-        - /images/articles/slides/iraq/slide-30-media-propaganda-PART2.svg
-        - /images/articles/slides/iraq/slide-31-abu-ghraib.svg
-        - /images/articles/slides/iraq/slide-32-contractors-PART2.svg
-        - /images/articles/slides/iraq/slide-33-cultural-destruction.svg
-        - /images/articles/slides/iraq/slide-34-veterans-crisis-PART2.svg
-        - /images/articles/slides/iraq/slide-35-key-players.svg
-        - /images/articles/slides/iraq/slide-36-neocon-network-PART2.svg
-        - /images/articles/slides/iraq/slide-37-insurgent-factions.svg
-        - /images/articles/slides/iraq/slide-38-coalition-willing-PART2.svg
-        - /images/articles/slides/iraq/slide-39-international-law.svg
-        - /images/articles/slides/iraq/slide-40-twenty-years-later.svg
-        - /images/articles/slides/iraq/slide-41-hdi-development-index.svg
-        - /images/articles/slides/iraq/slide-42-gdp-oil-economy.svg
-        - /images/articles/slides/iraq/slide-43-education-collapse.svg
-        - /images/articles/slides/iraq/slide-44-healthcare-collapse.svg
-        - /images/articles/slides/iraq/slide-45-refugee-displacement.svg
-        - /images/articles/slides/iraq/slide-46-water-environment-crisis.svg
-        - /images/articles/slides/iraq/slide-47-women-gender-regression.svg
-        - /images/articles/slides/iraq/slide-48-cultural-heritage-destruction.svg
-        - /images/articles/slides/iraq/slide-49-reconstruction-models-comparison.svg
-        - /images/articles/slides/iraq/slide-50-development-scorecard-summary.svg
-        - /images/articles/slides/iraq/slide-51-tishreen-birth.svg
-        - /images/articles/slides/iraq/slide-52-protest-map-tahrir.svg
-        - /images/articles/slides/iraq/slide-53-crackdown-snipers.svg
-        - /images/articles/slides/iraq/slide-54-tishreen-achievements-failures.svg
-        - /images/articles/slides/iraq/slide-55-civil-society-new-generation.svg
-  - title: Instagram
-    slides:
-       - /images/articles/slides/iraq/instagram/slide1.png
-       - /images/articles/slides/iraq/instagram/slide2.png   
-       - /images/articles/slides/iraq/instagram/slide3.png   
-       - /images/articles/slides/iraq/instagram/slide4.png
-       - /images/articles/slides/iraq/instagram/slide5.png
-       - /images/articles/slides/iraq/instagram/slide6.png   
-       - /images/articles/slides/iraq/instagram/slide7.png   
-       - /images/articles/slides/iraq/instagram/slide8.png
-       - /images/articles/slides/iraq/instagram/slide9.png
-       - /images/articles/slides/iraq/instagram/slide10.png  
+slideArray:
+  - /images/articles/slides/iraq/slide-01-cover.svg
+  - /images/articles/slides/iraq/slide-02-promises-vs-reality.svg
+  - /images/articles/slides/iraq/slide-03-wmd-lies.svg
+  - /images/articles/slides/iraq/slide-04-infrastructure.svg
+  - /images/articles/slides/iraq/slide-05-casualties-timeline.svg
+  - /images/articles/slides/iraq/slide-06-order2-army-dissolution.svg
+  - /images/articles/slides/iraq/slide-07-zarqawi-to-baghdadi.svg
+  - /images/articles/slides/iraq/slide-08-muhasasa-power-chart.svg
+  - /images/articles/slides/iraq/slide-09-corruption-sankey.svg
+  - /images/articles/slides/iraq/slide-10-trust-heatmap.svg
+  - /images/articles/slides/iraq/slide-11-radar-nation.svg
+  - /images/articles/slides/iraq/slide-12-dual-timeline.svg
+  - /images/articles/slides/iraq/slide-13-iran-influence.svg
+  - /images/articles/slides/iraq/slide-14-military-comparison.svg
+  - /images/articles/slides/iraq/slide-15-j-curve.svg
+  - /images/articles/slides/iraq/slide-16-public-opinion.svg
+  - /images/articles/slides/iraq/slide-17-identity-stacked.svg
+  - /images/articles/slides/iraq/slide-18-generations.svg
+  - /images/articles/slides/iraq/slide-19-satisfaction-scatter.svg
+  - /images/articles/slides/iraq/slide-20-brain-drain.svg
+  - /images/articles/slides/iraq/slide-21-map-casualties.svg
+  - /images/articles/slides/iraq/slide-22-displacement.svg
+  - /images/articles/slides/iraq/slide-23-resource-curse.svg
+  - /images/articles/slides/iraq/slide-24-cost-of-war.svg
+  - /images/articles/slides/iraq/slide-25-scenario-matrix.svg
+  - /images/articles/slides/iraq/slide-25-scenarios+.svg
+  - /images/articles/slides/iraq/slide-26-domino-effect-PART2.svg
+  - /images/articles/slides/iraq/slide-26-domino-effect.svg
+  - /images/articles/slides/iraq/slide-26-domino-effect+.svg
+  - /images/articles/slides/iraq/slide-27-water-crisis.svg
+  - /images/articles/slides/iraq/slide-27-water-crisis+.svg
+  - /images/articles/slides/iraq/slide-28-lessons-learned.svg
+  - /images/articles/slides/iraq/slide-28-lessons-learned+.svg
+  - /images/articles/slides/iraq/slide-29-final-diagnosis+.svg
+  - /images/articles/slides/iraq/slide-29-tishreen-movement.svg
+  - /images/articles/slides/iraq/slide-30-media-propaganda-PART2.svg
+  - /images/articles/slides/iraq/slide-31-abu-ghraib.svg
+  - /images/articles/slides/iraq/slide-32-contractors-PART2.svg
+  - /images/articles/slides/iraq/slide-33-cultural-destruction.svg
+  - /images/articles/slides/iraq/slide-34-veterans-crisis-PART2.svg
+  - /images/articles/slides/iraq/slide-35-key-players.svg
+  - /images/articles/slides/iraq/slide-36-neocon-network-PART2.svg
+  - /images/articles/slides/iraq/slide-37-insurgent-factions.svg
+  - /images/articles/slides/iraq/slide-38-coalition-willing-PART2.svg
+  - /images/articles/slides/iraq/slide-39-international-law.svg
+  - /images/articles/slides/iraq/slide-40-twenty-years-later.svg
+  - /images/articles/slides/iraq/slide-41-hdi-development-index.svg
+  - /images/articles/slides/iraq/slide-42-gdp-oil-economy.svg
+  - /images/articles/slides/iraq/slide-43-education-collapse.svg
+  - /images/articles/slides/iraq/slide-44-healthcare-collapse.svg
+  - /images/articles/slides/iraq/slide-45-refugee-displacement.svg
+  - /images/articles/slides/iraq/slide-46-water-environment-crisis.svg
+  - /images/articles/slides/iraq/slide-47-women-gender-regression.svg
+  - /images/articles/slides/iraq/slide-48-cultural-heritage-destruction.svg
+  - /images/articles/slides/iraq/slide-49-reconstruction-models-comparison.svg
+  - /images/articles/slides/iraq/slide-50-development-scorecard-summary.svg
+  - /images/articles/slides/iraq/slide-51-tishreen-birth.svg
+  - /images/articles/slides/iraq/slide-52-protest-map-tahrir.svg
+  - /images/articles/slides/iraq/slide-53-crackdown-snipers.svg
+  - /images/articles/slides/iraq/slide-54-tishreen-achievements-failures.svg
+  - /images/articles/slides/iraq/slide-55-civil-society-new-generation.svg
 ---
 
-# قسمتی از PDF مقاله‌ی ۱۸۰ صفحه‌ای: بحران‌های تخصصی پسا‌جنگ — بهای اجتماعی و زیست‌محیطی
+# بخش اول: بحران‌های تخصصی پسا‌جنگ — بهای اجتماعی و زیست‌محیطی
 
 ---
 

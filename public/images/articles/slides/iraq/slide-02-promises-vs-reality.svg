@@ -1,0 +1,147 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: url(#bgGrad2); }
+    .section-title { fill: #ffffff; font-size: 36px; font-weight: 900; text-anchor: middle; }
+    .section-sub { fill: #d4af37; font-size: 18px; font-weight: 400; text-anchor: middle; }
+    .glass { rx: 14; fill: rgba(255,255,255,0.04); stroke: rgba(255,255,255,0.08); stroke-width: 1; }
+    .promise-box { rx: 12; fill: rgba(46,204,113,0.08); stroke: rgba(46,204,113,0.25); stroke-width: 1.5; }
+    .reality-box { rx: 12; fill: rgba(231,76,60,0.08); stroke: rgba(231,76,60,0.25); stroke-width: 1.5; }
+    .promise-title { fill: #2ecc71; font-size: 22px; font-weight: 700; }
+    .reality-title { fill: #e74c3c; font-size: 22px; font-weight: 700; }
+    .data-lg { font-size: 36px; font-weight: 900; }
+    .data-md { font-size: 20px; font-weight: 700; }
+    .data-sm { font-size: 14px; font-weight: 400; fill: rgba(255,255,255,0.6); }
+    .label { fill: rgba(255,255,255,0.8); font-size: 15px; font-weight: 500; }
+    .vs { fill: #d4af37; font-size: 28px; font-weight: 900; text-anchor: middle; }
+    .bar-promise { fill: rgba(46,204,113,0.5); rx: 4; }
+    .bar-reality { fill: rgba(231,76,60,0.5); rx: 4; }
+    .bar-bg { fill: rgba(255,255,255,0.05); rx: 4; }
+    .arrow-down { fill: #e74c3c; }
+    .connector { stroke: rgba(212,175,55,0.3); stroke-width: 1; stroke-dasharray: 6,4; }
+    @keyframes slideIn { from { opacity:0; transform:translateX(-40px); } to { opacity:1; transform:translateX(0); } }
+    @keyframes slideInR { from { opacity:0; transform:translateX(40px); } to { opacity:1; transform:translateX(0); } }
+    .sl1 { animation: slideIn 0.8s ease-out 0.2s both; }
+    .sl2 { animation: slideInR 0.8s ease-out 0.4s both; }
+    .sl3 { animation: slideIn 0.8s ease-out 0.6s both; }
+    .sl4 { animation: slideInR 0.8s ease-out 0.8s both; }
+    .sl5 { animation: slideIn 0.8s ease-out 1.0s both; }
+    .sl6 { animation: slideInR 0.8s ease-out 1.2s both; }
+  </style>
+  <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#0a0e27"/>
+    <stop offset="100%" style="stop-color:#0d1333"/>
+  </linearGradient>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+
+<!-- عنوان -->
+<text x="960" y="55" class="section-title">وعده‌های واشنگتن در برابر واقعیت بغداد</text>
+<text x="960" y="85" class="section-sub">تحلیل شش‌محوری هزینه–فایده: آنچه گفتند و آنچه شد</text>
+<line x1="300" y1="100" x2="1620" y2="100" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ستون سمت چپ: وعده‌ها  |  ستون سمت راست: واقعیت -->
+<text x="520" y="140" class="promise-title" text-anchor="middle">🟢 وعده‌ها (۲۰۰۲–۲۰۰۳)</text>
+<text x="1400" y="140" class="reality-title" text-anchor="middle">🔴 واقعیت (۲۰۰۳–۲۰۲۳)</text>
+<text x="960" y="140" class="vs">VS</text>
+
+<!-- ردیف ۱: هزینه‌ی جنگ -->
+<g class="sl1">
+  <rect x="80" y="165" width="800" height="120" class="promise-box" filter="url(#sh)"/>
+  <text x="470" y="200" fill="#2ecc71" class="data-lg" text-anchor="end">\–60B</text>
+  <text x="470" y="228" class="label" text-anchor="end">هزینه‌ی کل جنگ و بازسازی</text>
+  <text x="470" y="252" class="data-sm" text-anchor="end">«هزینه خیلی کم خواهد بود» — رامسفلد، ژانویه ۲۰۰۳</text>
+  <text x="470" y="272" class="data-sm" text-anchor="end">«عراق خودش هزینه‌ی بازسازی را می‌دهد» — وُلفویتز</text>
+</g>
+<g class="sl2">
+  <rect x="1040" y="165" width="800" height="120" class="reality-box" filter="url(#sh)"/>
+  <text x="1450" y="200" fill="#e74c3c" class="data-lg" text-anchor="end">\,000B+</text>
+  <text x="1450" y="228" class="label" text-anchor="end">هزینه‌ی واقعی (مستقیم + غیرمستقیم)</text>
+  <text x="1450" y="252" class="data-sm" text-anchor="end">Watson Institute 2021: \.3T مستقیم + \+ مراقبت کهنه‌سربازان</text>
+  <text x="1450" y="272" class="data-sm" text-anchor="end">ضریب خطا: ×۵۰ بیشتر از برآورد اولیه</text>
+  <!-- مقایسه‌ی بصری بار -->
+  <rect x="1060" y="276" width="760" height="6" class="bar-bg"/>
+  <rect x="1060" y="276" width="760" height="6" class="bar-reality"/>
+  <rect x="1060" y="276" width="15" height="6" class="bar-promise"/>
+</g>
+<line x1="940" y1="175" x2="940" y2="285" class="connector"/>
+
+<!-- ردیف ۲: مدت جنگ -->
+<g class="sl3">
+  <rect x="80" y="305" width="800" height="110" class="promise-box" filter="url(#sh)"/>
+  <text x="470" y="345" fill="#2ecc71" class="data-lg" text-anchor="end">۶ هفته</text>
+  <text x="470" y="373" class="label" text-anchor="end">مدت عملیات نظامی</text>
+  <text x="470" y="397" class="data-sm" text-anchor="end">«پذیرایی با شاخه‌ی گل» — چینی ، مارس ۲۰۰۳</text>
+</g>
+<g class="sl4">
+  <rect x="1040" y="305" width="800" height="110" class="reality-box" filter="url(#sh)"/>
+  <text x="1450" y="345" fill="#e74c3c" class="data-lg" text-anchor="end">۲۰+ سال</text>
+  <text x="1450" y="373" class="label" text-anchor="end">حضور نظامی مستمر (۲۰۰۳–۲۰۲۳+)</text>
+  <text x="1450" y="397" class="data-sm" text-anchor="end">هنوز ۲,۵۰۰ نظامی آمریکایی در عراق مستقرند (۲۰۲۴)</text>
+  <rect x="1060" y="400" width="760" height="6" class="bar-bg"/>
+  <rect x="1060" y="400" width="760" height="6" class="bar-reality"/>
+  <rect x="1060" y="400" width="3" height="6" class="bar-promise"/>
+</g>
+<line x1="940" y1="315" x2="940" y2="415" class="connector"/>
+
+<!-- ردیف ۳: تلفات آمریکایی -->
+<g class="sl5">
+  <rect x="80" y="435" width="800" height="110" class="promise-box" filter="url(#sh)"/>
+  <text x="470" y="475" fill="#2ecc71" class="data-lg" text-anchor="end">«حداقلی»</text>
+  <text x="470" y="503" class="label" text-anchor="end">تلفات نیروهای ائتلاف</text>
+  <text x="470" y="527" class="data-sm" text-anchor="end">«مأموریت انجام شد» — بوش، ۱ مه ۲۰۰۳ (روی ناو)</text>
+</g>
+<g class="sl6">
+  <rect x="1040" y="435" width="800" height="110" class="reality-box" filter="url(#sh)"/>
+  <text x="1450" y="475" fill="#e74c3c" class="data-lg" text-anchor="end">۴,۵۵۰ کشته + ۳۲,۰۰۰ زخمی</text>
+  <text x="1450" y="503" class="label" text-anchor="end">نیروهای آمریکایی (بدون پیمانکاران خصوصی)</text>
+  <text x="1450" y="527" class="data-sm" text-anchor="end">+ ۳۰,۰۰۰ خودکشی کهنه‌سرباز (PTSD) تا ۲۰۲۳</text>
+</g>
+
+<!-- ردیف ۴: خلاصه‌ی عراقی‌ها -->
+<rect x="80" y="570" width="1760" height="130" class="glass" filter="url(#sh)"/>
+<text x="960" y="610" fill="#ffffff" font-size="24" font-weight="700" text-anchor="middle">تلفات عراقی: فاجعه‌ای در مقیاس نسل‌کشی</text>
+<!-- مینی‌بار چارت تلفات -->
+<g transform="translate(140,630)">
+  <!-- Lancet -->
+  <rect x="0" y="0" width="380" height="50" rx="6" fill="rgba(231,76,60,0.12)" stroke="rgba(231,76,60,0.3)" stroke-width="1"/>
+  <rect x="2" y="2" width="376" height="46" rx="5" fill="rgba(231,76,60,0.15)"/>
+  <text x="190" y="22" fill="#e74c3c" font-size="22" font-weight="900" text-anchor="middle">۶۰۱,۰۲۷</text>
+  <text x="190" y="42" fill="rgba(255,255,255,0.6)" font-size="12" text-anchor="middle">Lancet (2006) — extrapolated to 2023: 1M+</text>
+  <!-- IBC -->
+  <rect x="420" y="0" width="280" height="50" rx="6" fill="rgba(241,196,15,0.12)" stroke="rgba(241,196,15,0.3)" stroke-width="1"/>
+  <rect x="422" y="2" width="180" height="46" rx="5" fill="rgba(241,196,15,0.15)"/>
+  <text x="560" y="22" fill="#f1c40f" font-size="22" font-weight="900" text-anchor="middle">۲۱۰,۰۰۰</text>
+  <text x="560" y="42" fill="rgba(255,255,255,0.6)" font-size="12" text-anchor="middle">Iraq Body Count (مستند)</text>
+  <!-- ORB -->
+  <rect x="740" y="0" width="380" height="50" rx="6" fill="rgba(231,76,60,0.12)" stroke="rgba(231,76,60,0.3)" stroke-width="1"/>
+  <rect x="742" y="2" width="376" height="46" rx="5" fill="rgba(231,76,60,0.2)"/>
+  <text x="930" y="22" fill="#e74c3c" font-size="22" font-weight="900" text-anchor="middle">۱,۰۳۳,۰۰۰</text>
+  <text x="930" y="42" fill="rgba(255,255,255,0.6)" font-size="12" text-anchor="middle">ORB International (2007)</text>
+  <!-- UNDP -->
+  <rect x="1160" y="0" width="280" height="50" rx="6" fill="rgba(0,180,216,0.12)" stroke="rgba(0,180,216,0.3)" stroke-width="1"/>
+  <rect x="1162" y="2" width="200" height="46" rx="5" fill="rgba(0,180,216,0.15)"/>
+  <text x="1300" y="22" fill="#00b4d8" font-size="22" font-weight="900" text-anchor="middle">۴۰۰,۰۰۰+</text>
+  <text x="1300" y="42" fill="rgba(255,255,255,0.6)" font-size="12" text-anchor="middle">UNDP + WHO (برآورد میانه)</text>
+</g>
+
+<!-- جعبه‌ی نقل‌قول -->
+<rect x="80" y="720" width="1760" height="80" rx="10" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.2)" stroke-width="1"/>
+<text x="960" y="755" fill="#d4af37" font-size="20" font-weight="700" text-anchor="middle" font-style="italic">«ما عراق را آزاد خواهیم کرد و مردمش از ما سپاسگزار خواهند بود.»</text>
+<text x="960" y="785" fill="rgba(255,255,255,0.4)" font-size="14" text-anchor="middle">— جورج دبلیو بوش، ۱۷ مارس ۲۰۰۳ (اولتیماتوم ۴۸ ساعته به صدام)</text>
+
+<!-- نقل‌قول واقعیت -->
+<rect x="80" y="820" width="1760" height="80" rx="10" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+<text x="960" y="855" fill="#e74c3c" font-size="20" font-weight="700" text-anchor="middle" font-style="italic">«جنگ عراق بدترین فاجعه‌ی سیاست خارجی آمریکا از ویتنام بود.»</text>
+<text x="960" y="885" fill="rgba(255,255,255,0.4)" font-size="14" text-anchor="middle">— رابرت گیتس، وزیر دفاع (۲۰۰۶–۲۰۱۱)، خاطرات ۲۰۱۴</text>
+
+<!-- پانوشت -->
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13" font-weight="300">SLIDE 02 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" font-weight="300" text-anchor="end">فصل ۱: کالبدشکافی تهاجم</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: CBO 2008, Watson Institute 2021, Stiglitz/Bilmes 2008, Lancet 2006, IBC 2023, ORB 2007</text>
+
+</svg>

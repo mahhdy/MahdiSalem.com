@@ -1,0 +1,265 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+  </style>
+  <linearGradient id="bg45" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0a0e27"/>
+    <stop offset="50%" stop-color="#0d1333"/>
+    <stop offset="100%" stop-color="#1a0a1e"/>
+  </linearGradient>
+  <filter id="sh45"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#bg45)"/>
+
+<!-- Header -->
+<text x="960" y="45" fill="#fff" font-size="32" font-weight="900" text-anchor="middle">🏚️ بحران آوارگی: ۹.۲ میلیون عراقی بی‌خانمان شدند</text>
+<text x="960" y="72" fill="#d4af37" font-size="15" font-weight="400" text-anchor="middle">بزرگ‌ترین آوارگی خاورمیانه تا پیش از سوریه — از هر ۴ عراقی، ۱ نفر آواره شده</text>
+<line x1="150" y1="88" x2="1770" y2="88" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ====== TOP: DISPLACEMENT TIMELINE ====== -->
+<rect x="60" y="105" width="1800" height="230" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh45)"/>
+<text x="960" y="132" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">📅 موج‌های آوارگی — ۲۰۰۳ تا ۲۰۲۳</text>
+
+<!-- Timeline axis -->
+<line x1="140" y1="250" x2="1780" y2="250" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+
+<!-- Wave 1: 2003-2004 Invasion -->
+<circle cx="260" cy="250" r="6" fill="#e74c3c"/>
+<line x1="260" y1="165" x2="260" y2="244" stroke="#e74c3c" stroke-width="1.5" opacity="0.6"/>
+<rect x="185" y="150" width="150" height="48" rx="6" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+<text x="260" y="168" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">موج ۱: تهاجم</text>
+<text x="260" y="183" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">۲۰۰۳–۲۰۰۴</text>
+<text x="260" y="196" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">≈۱M آواره</text>
+<text x="260" y="270" fill="rgba(255,255,255,0.35)" font-size="8" text-anchor="middle">بمباران + غارت</text>
+
+<!-- Wave 2: 2006-2007 Sectarian War -->
+<circle cx="540" cy="250" r="8" fill="#e74c3c" stroke="#fff" stroke-width="1"/>
+<line x1="540" y1="150" x2="540" y2="242" stroke="#e74c3c" stroke-width="2" opacity="0.7"/>
+<rect x="455" y="135" width="170" height="52" rx="6" fill="rgba(231,76,60,0.12)" stroke="rgba(231,76,60,0.25)" stroke-width="1"/>
+<text x="540" y="153" fill="#e74c3c" font-size="11" font-weight="900" text-anchor="middle">موج ۲: جنگ فرقه‌ای</text>
+<text x="540" y="168" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">۲۰۰۶–۲۰۰۷</text>
+<text x="540" y="183" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">≈۲.۷M آواره!</text>
+<text x="540" y="270" fill="rgba(255,255,255,0.35)" font-size="8" text-anchor="middle">پاکسازی محله‌ها</text>
+
+<!-- Wave 3: 2008-2013 Calm -->
+<circle cx="810" cy="250" r="5" fill="#ff9800"/>
+<line x1="810" y1="178" x2="810" y2="245" stroke="#ff9800" stroke-width="1" opacity="0.5"/>
+<rect x="735" y="165" width="150" height="42" rx="6" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+<text x="810" y="182" fill="#ff9800" font-size="10" font-weight="700" text-anchor="middle">آرامش نسبی</text>
+<text x="810" y="196" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">۲۰۰۸–۲۰۱۳</text>
+<text x="810" y="270" fill="rgba(255,255,255,0.35)" font-size="8" text-anchor="middle">بازگشت جزئی</text>
+
+<!-- Wave 4: 2014 ISIS -->
+<circle cx="1100" cy="250" r="10" fill="#e74c3c" stroke="#fff" stroke-width="2"/>
+<line x1="1100" y1="140" x2="1100" y2="240" stroke="#e74c3c" stroke-width="2.5" opacity="0.8"/>
+<rect x="1005" y="125" width="190" height="57" rx="6" fill="rgba(231,76,60,0.15)" stroke="rgba(231,76,60,0.3)" stroke-width="2"/>
+<text x="1100" y="143" fill="#e74c3c" font-size="12" font-weight="900" text-anchor="middle">موج ۳: سقوط موصل</text>
+<text x="1100" y="160" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">ژوئن ۲۰۱۴ (داعش)</text>
+<text x="1100" y="177" fill="#e74c3c" font-size="11" font-weight="900" text-anchor="middle">≈۳.۴M آواره!</text>
+<text x="1100" y="270" fill="rgba(255,255,255,0.35)" font-size="8" text-anchor="middle">۵۰۰K از موصل در ۳ روز</text>
+
+<!-- Wave 5: Liberation -->
+<circle cx="1380" cy="250" r="7" fill="#ff9800"/>
+<line x1="1380" y1="170" x2="1380" y2="243" stroke="#ff9800" stroke-width="1.5" opacity="0.6"/>
+<rect x="1295" y="155" width="170" height="48" rx="6" fill="rgba(255,152,0,0.1)" stroke="rgba(255,152,0,0.18)" stroke-width="1"/>
+<text x="1380" y="172" fill="#ff9800" font-size="10" font-weight="700" text-anchor="middle">موج ۴: آزادسازی</text>
+<text x="1380" y="187" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">۲۰۱۶–۲۰۱۷</text>
+<text x="1380" y="200" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">آوارگی از جنگ شهری</text>
+<text x="1380" y="270" fill="rgba(255,255,255,0.35)" font-size="8" text-anchor="middle">نبرد موصل: ۹ ماه</text>
+
+<!-- Wave 6: 2023 Status -->
+<circle cx="1660" cy="250" r="7" fill="#d4af37"/>
+<line x1="1660" y1="168" x2="1660" y2="243" stroke="#d4af37" stroke-width="1.5" opacity="0.6"/>
+<rect x="1575" y="153" width="170" height="52" rx="6" fill="rgba(212,175,55,0.1)" stroke="rgba(212,175,55,0.18)" stroke-width="1"/>
+<text x="1660" y="171" fill="#d4af37" font-size="10" font-weight="700" text-anchor="middle">وضعیت ۲۰۲۳</text>
+<text x="1660" y="186" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">۱.۲M هنوز آواره داخلی</text>
+<text x="1660" y="200" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">+ ۴M+ خارج عراق</text>
+<text x="1660" y="270" fill="rgba(255,255,255,0.35)" font-size="8" text-anchor="middle">بازگشت: ≈۵۰%</text>
+
+<!-- Cumulative label -->
+<text x="960" y="310" fill="#d4af37" font-size="11" font-weight="700" text-anchor="middle">مجموع تجمعی: ≈۹.۲ میلیون آواره (با تکرار) — از هر ۴ عراقی ۱ نفر</text>
+
+<!-- ====== MIDDLE LEFT: WHERE DID THEY GO? ====== -->
+<rect x="60" y="350" width="560" height="310" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh45)"/>
+<text x="340" y="380" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">🌍 عراقیان کجا رفتند؟</text>
+
+<text x="80" y="402" fill="#ff9800" font-size="11" font-weight="700">🌐 پناهندگان خارجی (≈۴M+)</text>
+
+<g transform="translate(80,410)">
+  <rect x="0" y="0" width="520" height="30" rx="4" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="10" y="20" fill="rgba(255,255,255,0.6)" font-size="10">🇸🇾 سوریه</text>
+  <rect x="110" y="5" width="260" height="18" rx="3" fill="rgba(231,76,60,0.25)"/>
+  <text x="385" y="20" fill="#e74c3c" font-size="10" font-weight="700">۱.۲–۱.۵M</text>
+
+  <rect x="0" y="36" width="520" height="30" rx="4" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+  <text x="10" y="56" fill="rgba(255,255,255,0.6)" font-size="10">🇯🇴 اردن</text>
+  <rect x="110" y="41" width="160" height="18" rx="3" fill="rgba(255,152,0,0.25)"/>
+  <text x="285" y="56" fill="#ff9800" font-size="10" font-weight="700">۷۵۰K</text>
+
+  <rect x="0" y="72" width="520" height="30" rx="4" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+  <text x="10" y="92" fill="rgba(255,255,255,0.6)" font-size="10">🇸🇪🇩🇪🇺🇸 اروپا/آمریکا</text>
+  <rect x="160" y="77" width="130" height="18" rx="3" fill="rgba(0,180,216,0.25)"/>
+  <text x="305" y="92" fill="#00b4d8" font-size="10" font-weight="700">۵۰۰K+</text>
+
+  <rect x="0" y="108" width="520" height="30" rx="4" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+  <text x="10" y="128" fill="rgba(255,255,255,0.6)" font-size="10">🇪🇬🇱🇧🇦🇪 سایر عرب</text>
+  <rect x="160" y="113" width="100" height="18" rx="3" fill="rgba(155,89,182,0.25)"/>
+  <text x="275" y="128" fill="#9b59b6" font-size="10" font-weight="700">۴۰۰K+</text>
+
+  <rect x="0" y="144" width="520" height="30" rx="4" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="10" y="164" fill="rgba(255,255,255,0.6)" font-size="10">🇮🇷 ایران</text>
+  <rect x="110" y="149" width="40" height="18" rx="3" fill="rgba(46,204,113,0.25)"/>
+  <text x="165" y="164" fill="#2ecc71" font-size="10" font-weight="700">۱۰۰K+</text>
+</g>
+
+<!-- IDP stat -->
+<rect x="80" y="604" width="520" height="40" rx="8" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.12)" stroke-width="1"/>
+<text x="340" y="622" fill="#d4af37" font-size="11" font-weight="700" text-anchor="middle">🏠 آوارگان داخلی ۲۰۲۳: ≈۱.۲M نفر هنوز در کمپ‌ها</text>
+<text x="340" y="638" fill="rgba(255,255,255,0.35)" font-size="9" text-anchor="middle">+ ۴.۵M بازگشته اما بدون خانه/شغل</text>
+
+<!-- ====== MIDDLE: DISPLACEMENT IMPACT CARDS ====== -->
+<rect x="645" y="350" width="600" height="310" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh45)"/>
+<text x="945" y="380" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">💔 تأثیر آوارگی — ارقام انسانی</text>
+
+<g transform="translate(665,395)">
+  <rect x="0" y="0" width="270" height="62" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="135" y="22" fill="#e74c3c" font-size="20" font-weight="900" text-anchor="middle">۱.۵M</text>
+  <text x="135" y="40" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">یتیم عراقی</text>
+  <text x="135" y="54" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">بسیاری جذب داعش/شبه‌نظامی</text>
+
+  <rect x="285" y="0" width="270" height="62" rx="8" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="420" y="22" fill="#ff9800" font-size="20" font-weight="900" text-anchor="middle">۴M+</text>
+  <text x="420" y="40" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">کودک ترومازده</text>
+  <text x="420" y="54" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">بدون دسترسی به روانپزشک</text>
+
+  <rect x="0" y="72" width="270" height="62" rx="8" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.12)" stroke-width="1"/>
+  <text x="135" y="94" fill="#00b4d8" font-size="20" font-weight="900" text-anchor="middle">۶۰%</text>
+  <text x="135" y="112" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">آوارگان زیر خط فقر</text>
+  <text x="135" y="126" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">vs میانگین ملی ۲۵%</text>
+
+  <rect x="285" y="72" width="270" height="62" rx="8" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+  <text x="420" y="94" fill="#9b59b6" font-size="20" font-weight="900" text-anchor="middle">۷۵%</text>
+  <text x="420" y="112" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">زنان سرپرست خانوار</text>
+  <text x="420" y="126" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">بدون درآمد پایدار</text>
+
+  <rect x="0" y="144" width="270" height="62" rx="8" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="135" y="166" fill="#2ecc71" font-size="20" font-weight="900" text-anchor="middle">۸۰%</text>
+  <text x="135" y="184" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">خانه بازنگشتگان تخریب</text>
+  <text x="135" y="198" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">بازسازی: ≈۱۰% فقط</text>
+
+  <rect x="285" y="144" width="270" height="62" rx="8" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+  <text x="420" y="166" fill="#d4af37" font-size="20" font-weight="900" text-anchor="middle">صفر</text>
+  <text x="420" y="184" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">غرامت به آوارگان</text>
+  <text x="420" y="198" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">نه از عراق، نه آمریکا</text>
+</g>
+
+<!-- ====== RIGHT: MINORITIES ERASED ====== -->
+<rect x="1270" y="350" width="590" height="310" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh45)"/>
+<text x="1565" y="380" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">🕊️ اقلیت‌های پاک‌شده — نسل‌کشی خاموش</text>
+
+<!-- Christians -->
+<rect x="1290" y="395" width="550" height="52" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="1305" y="415" fill="#e74c3c" font-size="12" font-weight="900">✝️ مسیحیان</text>
+<text x="1305" y="435" fill="rgba(255,255,255,0.5)" font-size="10">۲۰۰۳: ۱.۵M نفر → ۲۰۲۳: ≈۱۵۰K (سقوط ۹۰%!)</text>
+<text x="1780" y="420" fill="#e74c3c" font-size="16" font-weight="900" text-anchor="end">-۹۰%</text>
+
+<!-- Mandaeans -->
+<rect x="1290" y="455" width="550" height="52" rx="8" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+<text x="1305" y="475" fill="#ff9800" font-size="12" font-weight="900">⭐ مندائیان (صابئین)</text>
+<text x="1305" y="495" fill="rgba(255,255,255,0.5)" font-size="10">۲۰۰۳: ۷۰K → ۲۰۲۳: ≈۵K (در آستانه انقراض)</text>
+<text x="1780" y="480" fill="#ff9800" font-size="16" font-weight="900" text-anchor="end">-۹۳%</text>
+
+<!-- Yazidis -->
+<rect x="1290" y="515" width="550" height="52" rx="8" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+<text x="1305" y="535" fill="#9b59b6" font-size="12" font-weight="900">☀️ ایزدی‌ها</text>
+<text x="1305" y="555" fill="rgba(255,255,255,0.5)" font-size="10">نسل‌کشی ۲۰۱۴: ۵,۰۰۰+ کشته | ۷,۰۰۰ زن اسیر داعش</text>
+<text x="1780" y="540" fill="#9b59b6" font-size="14" font-weight="900" text-anchor="end">نسل‌کشی</text>
+
+<!-- Jews -->
+<rect x="1290" y="575" width="550" height="48" rx="8" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+<text x="1305" y="595" fill="#00b4d8" font-size="12" font-weight="700">✡️ یهودیان</text>
+<text x="1305" y="613" fill="rgba(255,255,255,0.5)" font-size="10">۲۰۰۳: ≈۳۵ نفر باقی‌مانده → ۲۰۲۳: ≈۴ نفر (عملاً صفر)</text>
+<text x="1780" y="600" fill="#00b4d8" font-size="14" font-weight="900" text-anchor="end">≈۰</text>
+
+<!-- Summary -->
+<rect x="1290" y="630" width="550" height="20" rx="4" fill="rgba(231,76,60,0.06)"/>
+<text x="1565" y="644" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">عراق «آزادشده» تنوع ۵,۰۰۰ ساله‌اش را در ۲۰ سال از دست داد</text>
+
+<!-- ====== BOTTOM: MOSUL CASE STUDY ====== -->
+<rect x="60" y="680" width="880" height="180" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh45)"/>
+<text x="500" y="710" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📍 مطالعه موردی: موصل — شهری که دوبار ویران شد</text>
+
+<g transform="translate(85,725)">
+  <rect x="0" y="0" width="200" height="55" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="100" y="20" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">۵۰۰K</text>
+  <text x="100" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">فراری در ۳ روز (ژوئن ۲۰۱۴)</text>
+  <text x="100" y="50" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">ارتش ۳۰K نفره فرار کرد</text>
+
+  <rect x="215" y="0" width="200" height="55" rx="8" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="315" y="20" fill="#ff9800" font-size="18" font-weight="900" text-anchor="middle">۸۰%</text>
+  <text x="315" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">شهر قدیم تخریب شده</text>
+  <text x="315" y="50" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">آزادسازی = بمباران سنگین</text>
+
+  <rect x="430" y="0" width="200" height="55" rx="8" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.12)" stroke-width="1"/>
+  <text x="530" y="20" fill="#00b4d8" font-size="18" font-weight="900" text-anchor="middle">$۵۰B</text>
+  <text x="530" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">هزینه تخمینی بازسازی</text>
+  <text x="530" y="50" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">دریافتی تا ۲۰۲۳: ≈$۱B</text>
+
+  <rect x="645" y="0" width="200" height="55" rx="8" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+  <text x="745" y="20" fill="#9b59b6" font-size="18" font-weight="900" text-anchor="middle">۸,۰۰۰+</text>
+  <text x="745" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">جسد زیر آوار</text>
+  <text x="745" y="50" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">تا ۲۰۲۳ بیرون نیامده‌اند</text>
+</g>
+
+<rect x="85" y="795" width="830" height="50" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="500" y="815" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">مسجد النوری (محل اعلام خلافت داعش ۲۰۱۴) — تخریب ۲۰۱۷ — بازسازی UNESCO هنوز ناقص</text>
+<text x="500" y="833" fill="rgba(255,255,255,0.35)" font-size="9" text-anchor="middle">موصل: نمونه‌ی کامل «آزادسازی ویرانگر» — نجات شهر با نابود کردن آن</text>
+
+<!-- ====== BOTTOM RIGHT: CAMP CONDITIONS ====== -->
+<rect x="965" y="680" width="890" height="180" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh45)"/>
+<text x="1410" y="710" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">⛺ شرایط کمپ‌ها — ۲۰۲۳</text>
+
+<g transform="translate(990,725)">
+  <rect x="0" y="0" width="170" height="55" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="85" y="20" fill="#e74c3c" font-size="16" font-weight="900" text-anchor="middle">۲۶</text>
+  <text x="85" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">کمپ هنوز فعال</text>
+  <text x="85" y="50" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">(از ۱۴۰ اوج)</text>
+
+  <rect x="185" y="0" width="170" height="55" rx="8" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="270" y="20" fill="#ff9800" font-size="16" font-weight="900" text-anchor="middle">۱۸۰K</text>
+  <text x="270" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">ساکن کمپ رسمی</text>
+  <text x="270" y="50" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">+ ۱M غیررسمی</text>
+
+  <rect x="370" y="0" width="170" height="55" rx="8" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.12)" stroke-width="1"/>
+  <text x="455" y="20" fill="#00b4d8" font-size="16" font-weight="900" text-anchor="middle">۵۰%</text>
+  <text x="455" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">کودکان بدون مدرسه</text>
+  <text x="455" y="50" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">نسل بعدی بیسواد</text>
+
+  <rect x="555" y="0" width="170" height="55" rx="8" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+  <text x="640" y="20" fill="#9b59b6" font-size="16" font-weight="900" text-anchor="middle">۰</text>
+  <text x="640" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">برنامه ادغام ملی</text>
+  <text x="640" y="50" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">بدون استراتژی بازگشت</text>
+
+  <rect x="740" y="0" width="115" height="55" rx="8" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+  <text x="797" y="20" fill="#e74c3c" font-size="16" font-weight="900" text-anchor="middle">۴۰%</text>
+  <text x="797" y="38" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">بیماری مزمن</text>
+  <text x="797" y="50" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">PTSD غالب</text>
+</g>
+
+<rect x="990" y="795" width="840" height="50" rx="6" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+<text x="1410" y="815" fill="#d4af37" font-size="10" font-weight="700" text-anchor="middle">⚠️ دولت عراق: «تا ۲۰۲۴ همه کمپ‌ها بسته می‌شوند» — بدون جایگزین!</text>
+<text x="1410" y="833" fill="rgba(255,255,255,0.35)" font-size="9" text-anchor="middle">بستن کمپ ≠ حل مشکل — فقط نامرئی کردن آوارگان</text>
+
+<!-- ====== BOTTOM NOTE ====== -->
+<rect x="60" y="878" width="1800" height="55" rx="10" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+<text x="960" y="900" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📌 «آزادسازی» ۹.۲ میلیون نفر را بی‌خانمان کرد — تنوع ۵,۰۰۰ ساله را محو کرد — و هنوز هیچ‌کس پاسخگو نیست</text>
+<text x="960" y="920" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">مسیحیان بین‌النهرین ≈ از ۱.۵M → ۱۵۰K | ایزدی‌ها = نسل‌کشی رسمی | مندائیان = در آستانه انقراض</text>
+
+<!-- Footer -->
+<text x="60" y="42" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 45 / 60</text>
+<text x="1860" y="42" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۸: توسعه انسانی</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: UNHCR, IOM, OCHA, Minority Rights Group, UNICEF, World Bank | داده‌های ۲۰۲۳</text>
+</svg>

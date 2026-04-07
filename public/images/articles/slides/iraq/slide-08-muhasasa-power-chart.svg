@@ -1,0 +1,209 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .sub { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .shia-fill { fill: rgba(46,204,113,0.15); stroke: #2ecc71; stroke-width: 1.5; rx: 10; }
+    .sunni-fill { fill: rgba(255,152,0,0.15); stroke: #ff9800; stroke-width: 1.5; rx: 10; }
+    .kurd-fill { fill: rgba(0,180,216,0.15); stroke: #00b4d8; stroke-width: 1.5; rx: 10; }
+    .other-fill { fill: rgba(128,128,128,0.1); stroke: #888; stroke-width: 1; rx: 8; }
+    .position-box { rx: 6; stroke-width: 1; }
+    .pos-label { fill: #fff; font-size: 13px; font-weight: 700; text-anchor: middle; }
+    .pos-sub { fill: rgba(255,255,255,0.5); font-size: 10px; text-anchor: middle; }
+    .sect-title { font-size: 22px; font-weight: 900; text-anchor: middle; }
+    .sect-pct { font-size: 16px; font-weight: 500; text-anchor: middle; }
+    .connector { stroke: rgba(255,255,255,0.1); stroke-width: 1; stroke-dasharray: 3,3; }
+    .pie-shia { fill: #2ecc71; }
+    .pie-sunni { fill: #ff9800; }
+    .pie-kurd { fill: #00b4d8; }
+    .pie-other { fill: #888; }
+    @keyframes popIn { from{opacity:0;transform:scale(0.7)} to{opacity:1;transform:scale(1)} }
+    .p1{animation:popIn 0.5s ease-out 0.2s both}
+    .p2{animation:popIn 0.5s ease-out 0.4s both}
+    .p3{animation:popIn 0.5s ease-out 0.6s both}
+    .p4{animation:popIn 0.5s ease-out 0.8s both}
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+
+<text x="960" y="45" class="title">نظام محاصصه: تقسیم فرقه‌ای قدرت در عراق</text>
+<text x="960" y="72" class="sub">قانون نانوشته‌ای که از ۲۰۰۳ هر منصب را بر اساس فرقه/قومیت توزیع می‌کند</text>
+<line x1="300" y1="88" x2="1620" y2="88" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ===== نمودار دایره‌ای جمعیت (بالا چپ) ===== -->
+<g class="p1" transform="translate(200,200)">
+  <text x="0" y="-30" fill="rgba(255,255,255,0.6)" font-size="14" font-weight="600" text-anchor="middle">ترکیب جمعیتی عراق</text>
+  <!-- pie chart manual -->
+  <!-- شیعه 60% = 216° -->
+  <path d="M0,0 L0,-100 A100,100 0 1,1 -86.6,50 Z" class="pie-shia" opacity="0.7"/>
+  <!-- سنی 20% = 72° -->
+  <path d="M0,0 L-86.6,50 A100,100 0 0,1 -30.9,-95.1 Z" class="pie-sunni" opacity="0.7"/>
+  <!-- کرد 15% = 54° -->
+  <path d="M0,0 L-30.9,-95.1 A100,100 0 0,1 30.9,-95.1 Z" class="pie-kurd" opacity="0.7"/>
+  <!-- سایر 5% = 18° -->
+  <path d="M0,0 L30.9,-95.1 A100,100 0 0,1 0,-100 Z" class="pie-other" opacity="0.7"/>
+  <!-- labels -->
+  <text x="-30" y="30" fill="#fff" font-size="14" font-weight="700" text-anchor="middle">۶۰%</text>
+  <text x="-30" y="46" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">شیعه</text>
+  <text x="-70" y="-30" fill="#fff" font-size="12" font-weight="700" text-anchor="middle">۲۰%</text>
+  <text x="-70" y="-16" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">سنی</text>
+  <text x="0" y="-60" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">۱۵%</text>
+  <text x="0" y="-48" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">کرد</text>
+  <text x="25" y="-85" fill="#fff" font-size="9" text-anchor="middle">۵%</text>
+</g>
+
+<!-- ===== ساختار قدرت (مرکز و راست) ===== -->
+
+<!-- سطح ۱: سه منصب اصلی -->
+<text x="960" y="130" fill="rgba(255,255,255,0.5)" font-size="14" text-anchor="middle">سه منصب کلیدی — تقسیم نانوشته اما الزامی</text>
+
+<g class="p2">
+  <!-- نخست‌وزیر = شیعه -->
+  <rect x="450" y="150" width="280" height="110" class="shia-fill" filter="url(#sh)"/>
+  <text x="590" y="185" fill="#2ecc71" font-size="20" font-weight="900" text-anchor="middle">نخست‌وزیر</text>
+  <text x="590" y="208" fill="#2ecc71" font-size="14" text-anchor="middle">همیشه شیعه</text>
+  <text x="590" y="228" class="pos-sub">قدرت اجرایی اصلی</text>
+  <text x="590" y="248" class="pos-sub">مالکی←عبادی←عبدالمهدی←الکاظمی←السودانی</text>
+  
+  <!-- رئیس پارلمان = سنی -->
+  <rect x="820" y="150" width="280" height="110" class="sunni-fill" filter="url(#sh)"/>
+  <text x="960" y="185" fill="#ff9800" font-size="20" font-weight="900" text-anchor="middle">رئیس پارلمان</text>
+  <text x="960" y="208" fill="#ff9800" font-size="14" text-anchor="middle">همیشه سنی</text>
+  <text x="960" y="228" class="pos-sub">قدرت تقنینی</text>
+  <text x="960" y="248" class="pos-sub">الحسنی←النجیفی←الجبوری←الحلبوسی</text>
+  
+  <!-- رئیس‌جمهور = کرد -->
+  <rect x="1190" y="150" width="280" height="110" class="kurd-fill" filter="url(#sh)"/>
+  <text x="1330" y="185" fill="#00b4d8" font-size="20" font-weight="900" text-anchor="middle">رئیس‌جمهور</text>
+  <text x="1330" y="208" fill="#00b4d8" font-size="14" text-anchor="middle">همیشه کرد</text>
+  <text x="1330" y="228" class="pos-sub">تشریفاتی (عمدتاً)</text>
+  <text x="1330" y="248" class="pos-sub">طالبانی←معصوم←صالح←رشید</text>
+</g>
+
+<!-- سطح ۲: وزارت‌ها -->
+<text x="960" y="300" fill="rgba(255,255,255,0.4)" font-size="13" text-anchor="middle">─────── توزیع وزارت‌ها و نهادهای کلیدی ───────</text>
+
+<g class="p3">
+  <!-- ستون شیعه -->
+  <rect x="100" y="320" width="500" height="340" class="shia-fill" filter="url(#sh)"/>
+  <text x="350" y="350" fill="#2ecc71" class="sect-title">🟢 سهم شیعه</text>
+  <text x="350" y="375" fill="#2ecc71" class="sect-pct">≈ ۵۵–۶۰% مناصب</text>
+  
+  <rect x="130" y="395" width="210" height="40" rx="6" fill="rgba(46,204,113,0.2)" stroke="#2ecc71" stroke-width="1"/>
+  <text x="235" y="420" class="pos-label">وزارت کشور</text>
+  
+  <rect x="360" y="395" width="210" height="40" rx="6" fill="rgba(46,204,113,0.2)" stroke="#2ecc71" stroke-width="1"/>
+  <text x="465" y="420" class="pos-label">وزارت نفت</text>
+  
+  <rect x="130" y="445" width="210" height="40" rx="6" fill="rgba(46,204,113,0.2)" stroke="#2ecc71" stroke-width="1"/>
+  <text x="235" y="470" class="pos-label">وزارت دارایی</text>
+  
+  <rect x="360" y="445" width="210" height="40" rx="6" fill="rgba(46,204,113,0.2)" stroke="#2ecc71" stroke-width="1"/>
+  <text x="465" y="470" class="pos-label">بانک مرکزی</text>
+  
+  <rect x="130" y="495" width="440" height="40" rx="6" fill="rgba(46,204,113,0.2)" stroke="#2ecc71" stroke-width="1"/>
+  <text x="350" y="520" class="pos-label">فرماندهی کل نیروهای مسلح + حشد الشعبی</text>
+  
+  <rect x="130" y="545" width="440" height="45" rx="6" fill="rgba(46,204,113,0.1)" stroke="rgba(46,204,113,0.3)" stroke-width="1"/>
+  <text x="350" y="565" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle">۱۰+ حزب رقیب: دعوه، صدر، حکمت، فتح، بدر...</text>
+  <text x="350" y="582" fill="rgba(255,255,255,0.35)" font-size="10" text-anchor="middle">رقابت داخلی شدید → بن‌بست سیاسی مکرر</text>
+  
+  <rect x="130" y="600" width="440" height="35" rx="6" fill="rgba(46,204,113,0.08)"/>
+  <text x="350" y="622" fill="rgba(46,204,113,0.7)" font-size="12" font-weight="600" text-anchor="middle">📌 ایران بر بیشتر احزاب شیعه نفوذ دارد</text>
+
+  <!-- ستون سنی -->
+  <rect x="640" y="320" width="400" height="340" class="sunni-fill" filter="url(#sh)"/>
+  <text x="840" y="350" fill="#ff9800" class="sect-title">🟠 سهم سنی</text>
+  <text x="840" y="375" fill="#ff9800" class="sect-pct">≈ ۲۵–۳۰% مناصب</text>
+  
+  <rect x="670" y="395" width="340" height="40" rx="6" fill="rgba(255,152,0,0.2)" stroke="#ff9800" stroke-width="1"/>
+  <text x="840" y="420" class="pos-label">وزارت دفاع (سنتاً)</text>
+  
+  <rect x="670" y="445" width="340" height="40" rx="6" fill="rgba(255,152,0,0.2)" stroke="#ff9800" stroke-width="1"/>
+  <text x="840" y="470" class="pos-label">استانداری‌ها: انبار، صلاح‌الدین، نینوا</text>
+  
+  <rect x="670" y="495" width="340" height="40" rx="6" fill="rgba(255,152,0,0.15)" stroke="rgba(255,152,0,0.3)" stroke-width="1"/>
+  <text x="840" y="520" class="pos-label">بخشی از وزارت‌های خدماتی</text>
+  
+  <rect x="670" y="555" width="340" height="45" rx="6" fill="rgba(255,152,0,0.1)"/>
+  <text x="840" y="575" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle">احساس مداوم «به‌حاشیه‌رانی»</text>
+  <text x="840" y="592" fill="rgba(255,255,255,0.35)" font-size="10" text-anchor="middle">= زمینه‌ی شورش و حمایت از داعش</text>
+  
+  <rect x="670" y="610" width="340" height="35" rx="6" fill="rgba(255,152,0,0.08)"/>
+  <text x="840" y="632" fill="rgba(255,152,0,0.7)" font-size="12" font-weight="600" text-anchor="middle">📌 عربستان و ترکیه حامی سیاسی</text>
+  
+  <!-- ستون کرد -->
+  <rect x="1080" y="320" width="400" height="340" class="kurd-fill" filter="url(#sh)"/>
+  <text x="1280" y="350" fill="#00b4d8" class="sect-title">🔵 سهم کرد</text>
+  <text x="1280" y="375" fill="#00b4d8" class="sect-pct">≈ ۱۵–۲۰% مناصب + خودمختاری</text>
+  
+  <rect x="1110" y="395" width="340" height="40" rx="6" fill="rgba(0,180,216,0.2)" stroke="#00b4d8" stroke-width="1"/>
+  <text x="1280" y="420" class="pos-label">وزارت خارجه (سنتاً)</text>
+  
+  <rect x="1110" y="445" width="340" height="40" rx="6" fill="rgba(0,180,216,0.2)" stroke="#00b4d8" stroke-width="1"/>
+  <text x="1280" y="470" class="pos-label">پیشمرگه (ارتش مستقل)</text>
+  
+  <rect x="1110" y="495" width="340" height="40" rx="6" fill="rgba(0,180,216,0.2)" stroke="#00b4d8" stroke-width="1"/>
+  <text x="1280" y="520" class="pos-label">بودجه‌ی ۱۲% فدرال + نفت مستقل</text>
+  
+  <rect x="1110" y="555" width="340" height="45" rx="6" fill="rgba(0,180,216,0.1)"/>
+  <text x="1280" y="575" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle">عملاً یک «دولت درون دولت»</text>
+  <text x="1280" y="592" fill="rgba(255,255,255,0.35)" font-size="10" text-anchor="middle">رفراندوم استقلال ۲۰۱۷ → سرکوب بغداد</text>
+  
+  <rect x="1110" y="610" width="340" height="35" rx="6" fill="rgba(0,180,216,0.08)"/>
+  <text x="1280" y="632" fill="rgba(0,180,216,0.7)" font-size="12" font-weight="600" text-anchor="middle">📌 رقابت KDP (بارزانی) vs PUK (طالبانی)</text>
+</g>
+
+<!-- ===== ردیف تحلیلی پایین ===== -->
+<g class="p4">
+  <rect x="80" y="690" width="1760" height="130" class="glass" filter="url(#sh)"/>
+  <text x="960" y="720" fill="#d4af37" font-size="18" font-weight="700" text-anchor="middle">⚠️ چرا محاصصه مانع توسعه است؟</text>
+  
+  <g transform="translate(120,740)">
+    <rect x="0" y="0" width="400" height="60" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+    <text x="200" y="22" fill="#e74c3c" font-size="13" font-weight="700" text-anchor="middle">شایسته‌سالاری = صفر</text>
+    <text x="200" y="42" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle">وزیر نه بر اساس تخصص بلکه بر اساس فرقه</text>
+    
+    <rect x="440" y="0" width="400" height="60" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+    <text x="640" y="22" fill="#e74c3c" font-size="13" font-weight="700" text-anchor="middle">فساد نهادینه</text>
+    <text x="640" y="42" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle">هر حزب وزارتش را «غنیمت جنگی» می‌داند</text>
+    
+    <rect x="880" y="0" width="400" height="60" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+    <text x="1080" y="22" fill="#e74c3c" font-size="13" font-weight="700" text-anchor="middle">بن‌بست دائمی</text>
+    <text x="1080" y="42" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle">تشکیل دولت: ۲۰۱۰→۸ ماه • ۲۰۲۱→۱۲ ماه</text>
+    
+    <rect x="1320" y="0" width="330" height="60" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+    <text x="1485" y="22" fill="#e74c3c" font-size="13" font-weight="700" text-anchor="middle">هویت > شهروندی</text>
+    <text x="1485" y="42" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle">مردم به فرقه رأی می‌دهند نه برنامه</text>
+  </g>
+</g>
+
+<!-- نقل‌قول -->
+<rect x="80" y="840" width="1760" height="50" rx="8" fill="rgba(212,175,55,0.05)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+<text x="960" y="870" fill="#d4af37" font-size="15" font-weight="500" text-anchor="middle" font-style="italic">«محاصصه یعنی هیچ‌کس مسئول نیست و همه سهم می‌خواهند. این دموکراسی نیست — بازار سیاه قدرت است.» — یک تحلیل‌گر عراقی</text>
+
+<!-- آمار سریع -->
+<rect x="80" y="910" width="1760" height="65" class="glass"/>
+<text x="200" y="940" fill="#e74c3c" font-size="28" font-weight="900" text-anchor="middle"></text>
+<text x="200" y="962" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle">فساد ۲۰۰۳–۲۰۲۳</text>
+<text x="500" y="940" fill="#ff9800" font-size="28" font-weight="900" text-anchor="middle">رتبه ۱۵۷</text>
+<text x="500" y="962" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle">شاخص فساد (از ۱۸۰)</text>
+<text x="800" y="940" fill="#00b4d8" font-size="28" font-weight="900" text-anchor="middle">۸%</text>
+<text x="800" y="962" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle">اعتماد به احزاب</text>
+<text x="1100" y="940" fill="#2ecc71" font-size="28" font-weight="900" text-anchor="middle">۱۸%</text>
+<text x="1100" y="962" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle">اعتماد به پارلمان</text>
+<text x="1400" y="940" fill="#d4af37" font-size="28" font-weight="900" text-anchor="middle">۱۲ ماه</text>
+<text x="1400" y="962" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle">بن‌بست تشکیل دولت ۲۰۲۱</text>
+<text x="1700" y="940" fill="#e74c3c" font-size="28" font-weight="900" text-anchor="middle">۰%</text>
+<text x="1700" y="962" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle">اصلاحات ساختاری</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 08 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۳: محاصصه و بن‌بست سیاسی</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: Iraq Constitution 2005, Haddad 2011, Dodge 2012, Arab Barometer 2022, Transparency Intl</text>
+</svg>

@@ -1,0 +1,278 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width:1; rx:10; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+  <linearGradient id="pess-g" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.25"/>
+    <stop offset="100%" stop-color="#e74c3c" stop-opacity="0.03"/>
+  </linearGradient>
+  <linearGradient id="real-g" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#ff9800" stop-opacity="0.25"/>
+    <stop offset="100%" stop-color="#ff9800" stop-opacity="0.03"/>
+  </linearGradient>
+  <linearGradient id="opti-g" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#2ecc71" stop-opacity="0.25"/>
+    <stop offset="100%" stop-color="#2ecc71" stop-opacity="0.03"/>
+  </linearGradient>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+<text x="960" y="42" class="title">سه سناریوی آینده عراق: ۲۰۲۵–۲۰۴۰</text>
+<text x="960" y="68" class="subtitle">بدبینانه (تجزیه) — واقع‌بینانه (وضع موجود شکننده) — خوش‌بینانه (فدرالیسم موفق)</text>
+<line x1="120" y1="84" x2="1800" y2="84" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- Probability bar at top -->
+<rect x="120" y="92" width="1680" height="30" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+<text x="960" y="112" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle" font-weight="600">احتمال تخمینی بر اساس روندهای فعلی</text>
+<rect x="122" y="94" width="420" height="26" rx="5" fill="rgba(231,76,60,0.2)"/>
+<text x="332" y="112" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">۲۵% بدبینانه</text>
+<rect x="542" y="94" width="840" height="26" rx="5" fill="rgba(255,152,0,0.2)"/>
+<text x="962" y="112" fill="#ff9800" font-size="11" font-weight="700" text-anchor="middle">۵۰% واقع‌بینانه</text>
+<rect x="1382" y="94" width="416" height="26" rx="5" fill="rgba(46,204,113,0.2)"/>
+<text x="1590" y="112" fill="#2ecc71" font-size="11" font-weight="700" text-anchor="middle">۲۵% خوش‌بینانه</text>
+
+<!-- ===================== COLUMN 1: PESSIMISTIC ===================== -->
+<rect x="60" y="132" width="580" height="730" rx="14" fill="url(#pess-g)" stroke="rgba(231,76,60,0.25)" stroke-width="1.5" filter="url(#sh)"/>
+
+<!-- Header -->
+<rect x="80" y="145" width="540" height="65" rx="10" fill="rgba(231,76,60,0.12)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+<text x="350" y="170" fill="#e74c3c" font-size="28" font-weight="900" text-anchor="middle">😰</text>
+<text x="350" y="197" fill="#e74c3c" font-size="20" font-weight="900" text-anchor="middle">سناریوی بدبینانه: تجزیه</text>
+
+<!-- Scenario description -->
+<rect x="80" y="222" width="540" height="40" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="350" y="240" fill="rgba(255,255,255,0.7)" font-size="12" text-anchor="middle" font-weight="600">«عراق به سه دولت‌شهر تبدیل می‌شود»</text>
+<text x="350" y="255" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">الگوی یوگسلاوی — تکرار در بین‌النهرین</text>
+
+<!-- Trigger conditions -->
+<text x="590" y="285" fill="#e74c3c" font-size="13" font-weight="700" text-anchor="end">⚡ محرک‌های فعال‌سازی</text>
+<line x1="80" y1="292" x2="620" y2="292" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+
+<g transform="translate(90,300)">
+  <circle cx="12" cy="10" r="4" fill="#e74c3c" opacity="0.6"/>
+  <text x="25" y="14" fill="rgba(255,255,255,0.65)" font-size="11">جنگ داخلی مجدد بین شیعه-سنی</text>
+  <circle cx="12" cy="32" r="4" fill="#e74c3c" opacity="0.6"/>
+  <text x="25" y="36" fill="rgba(255,255,255,0.65)" font-size="11">استقلال کامل کردستان</text>
+  <circle cx="12" cy="54" r="4" fill="#e74c3c" opacity="0.6"/>
+  <text x="25" y="58" fill="rgba(255,255,255,0.65)" font-size="11">سقوط قیمت نفت زیر $۴۰</text>
+  <circle cx="12" cy="76" r="4" fill="#e74c3c" opacity="0.6"/>
+  <text x="25" y="80" fill="rgba(255,255,255,0.65)" font-size="11">جنگ نیابتی ایران-عربستان در خاک عراق</text>
+</g>
+
+<!-- Outcomes -->
+<text x="590" y="405" fill="#e74c3c" font-size="13" font-weight="700" text-anchor="end">📉 پیامدها</text>
+<line x1="80" y1="412" x2="620" y2="412" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+
+<g transform="translate(90,420)">
+  <rect x="0" y="0" width="255" height="52" rx="6" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="128" y="18" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">GDP ▼ ۷۰%</text>
+  <text x="128" y="38" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">فروپاشی اقتصادی مثل سوریه</text>
+
+  <rect x="268" y="0" width="255" height="52" rx="6" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="395" y="18" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">۵M+ آواره</text>
+  <text x="395" y="38" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">بحران انسانی بزرگ</text>
+
+  <rect x="0" y="62" width="255" height="52" rx="6" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="128" y="80" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">داعش ۲.۰</text>
+  <text x="128" y="100" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">بازگشت ترور در خلأ قدرت</text>
+
+  <rect x="268" y="62" width="255" height="52" rx="6" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="395" y="80" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">۳ دولت‌شهر</text>
+  <text x="395" y="100" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">کرد / سنی / شیعه</text>
+</g>
+
+<!-- Winners/Losers -->
+<text x="590" y="555" fill="#e74c3c" font-size="13" font-weight="700" text-anchor="end">🎯 برندگان و بازندگان</text>
+<line x1="80" y1="562" x2="620" y2="562" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+
+<g transform="translate(90,570)">
+  <text x="0" y="14" fill="rgba(255,255,255,0.5)" font-size="11" font-weight="700">برندگان:</text>
+  <text x="60" y="14" fill="rgba(255,255,255,0.6)" font-size="11">ایران (هژمونی بر جنوب) | ترکیه (کنترل شمال)</text>
+  <text x="0" y="34" fill="rgba(255,255,255,0.5)" font-size="11" font-weight="700">بازندگان:</text>
+  <text x="60" y="34" fill="rgba(255,255,255,0.6)" font-size="11">مردم عراق | ثبات منطقه | اقتصاد جهانی نفت</text>
+</g>
+
+<!-- Mini map showing split -->
+<rect x="100" y="620" width="520" height="130" rx="8" fill="rgba(231,76,60,0.04)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="360" y="645" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle" font-weight="600">نقشه فرضی تجزیه</text>
+<!-- Simplified Iraq outline split into 3 -->
+<rect x="130" y="660" width="140" height="70" rx="6" fill="rgba(46,204,113,0.1)" stroke="rgba(46,204,113,0.2)" stroke-width="1"/>
+<text x="200" y="685" fill="#2ecc71" font-size="11" font-weight="700" text-anchor="middle">کردستان</text>
+<text x="200" y="700" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">نفت کرکوک + اربیل</text>
+<text x="200" y="715" fill="rgba(255,255,255,0.3)" font-size="9" text-anchor="middle">متحد ترکیه/اسرائیل</text>
+
+<rect x="285" y="660" width="140" height="70" rx="6" fill="rgba(255,152,0,0.1)" stroke="rgba(255,152,0,0.2)" stroke-width="1"/>
+<text x="355" y="685" fill="#ff9800" font-size="11" font-weight="700" text-anchor="middle">سنی‌ستان</text>
+<text x="355" y="700" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">انبار + موصل</text>
+<text x="355" y="715" fill="rgba(255,255,255,0.3)" font-size="9" text-anchor="middle">فقیر + بی‌ثبات</text>
+
+<rect x="440" y="660" width="160" height="70" rx="6" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+<text x="520" y="685" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">شیعه‌ستان</text>
+<text x="520" y="700" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">بغداد + بصره + نفت جنوب</text>
+<text x="520" y="715" fill="rgba(255,255,255,0.3)" font-size="9" text-anchor="middle">دولت مشتری ایران</text>
+
+<!-- Timeline estimate -->
+<rect x="100" y="762" width="520" height="35" rx="6" fill="rgba(231,76,60,0.06)"/>
+<text x="360" y="784" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">⏰ افق زمانی: ۵–۱۰ سال آینده اگر بحران تشدید شود</text>
+
+
+<!-- ===================== COLUMN 2: REALISTIC ===================== -->
+<rect x="670" y="132" width="580" height="730" rx="14" fill="url(#real-g)" stroke="rgba(255,152,0,0.25)" stroke-width="1.5" filter="url(#sh)"/>
+
+<rect x="690" y="145" width="540" height="65" rx="10" fill="rgba(255,152,0,0.12)" stroke="rgba(255,152,0,0.2)" stroke-width="1"/>
+<text x="960" y="170" fill="#ff9800" font-size="28" font-weight="900" text-anchor="middle">😐</text>
+<text x="960" y="197" fill="#ff9800" font-size="20" font-weight="900" text-anchor="middle">سناریوی واقع‌بینانه: وضع موجود شکننده</text>
+
+<rect x="690" y="222" width="540" height="40" rx="8" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+<text x="960" y="240" fill="rgba(255,255,255,0.7)" font-size="12" text-anchor="middle" font-weight="600">«نه جنگ، نه صلح — فقط بقا»</text>
+<text x="960" y="255" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">الگوی لبنان — بحران دائمی بدون فروپاشی کامل</text>
+
+<!-- Conditions -->
+<text x="1200" y="285" fill="#ff9800" font-size="13" font-weight="700" text-anchor="end">📊 ویژگی‌های این سناریو</text>
+<line x1="690" y1="292" x2="1230" y2="292" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+
+<g transform="translate(700,300)">
+  <circle cx="12" cy="10" r="4" fill="#ff9800" opacity="0.6"/>
+  <text x="25" y="14" fill="rgba(255,255,255,0.65)" font-size="11">محاصصه ادامه می‌یابد — بدون اصلاحات ساختاری</text>
+  <circle cx="12" cy="32" r="4" fill="#ff9800" opacity="0.6"/>
+  <text x="25" y="36" fill="rgba(255,255,255,0.65)" font-size="11">فساد سیستماتیک ادامه‌دار (۱۵۰B$+ هدررفت)</text>
+  <circle cx="12" cy="54" r="4" fill="#ff9800" opacity="0.6"/>
+  <text x="25" y="58" fill="rgba(255,255,255,0.65)" font-size="11">شیلیای‌ها کنترل نظامی-سیاسی دارند</text>
+  <circle cx="12" cy="76" r="4" fill="#ff9800" opacity="0.6"/>
+  <text x="25" y="80" fill="rgba(255,255,255,0.65)" font-size="11">اعتراضات دوره‌ای بدون نتیجه</text>
+  <circle cx="12" cy="98" r="4" fill="#ff9800" opacity="0.6"/>
+  <text x="25" y="102" fill="rgba(255,255,255,0.65)" font-size="11">نفت تنها ستون اقتصاد — بدون تنوع</text>
+</g>
+
+<!-- Outcomes -->
+<text x="1200" y="425" fill="#ff9800" font-size="13" font-weight="700" text-anchor="end">📈 شاخص‌های کلیدی</text>
+<line x1="690" y1="432" x2="1230" y2="432" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+
+<g transform="translate(700,440)">
+  <rect x="0" y="0" width="255" height="52" rx="6" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="128" y="18" fill="#ff9800" font-size="18" font-weight="900" text-anchor="middle">GDP ±۲%</text>
+  <text x="128" y="38" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">رشد کند وابسته به نفت</text>
+
+  <rect x="268" y="0" width="255" height="52" rx="6" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="395" y="18" fill="#ff9800" font-size="18" font-weight="900" text-anchor="middle">بیکاری ۳۰%+</text>
+  <text x="395" y="38" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">جوانان: ۵۰%+ بیکار</text>
+
+  <rect x="0" y="62" width="255" height="52" rx="6" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="128" y="80" fill="#ff9800" font-size="18" font-weight="900" text-anchor="middle">فرار مغزها ↑</text>
+  <text x="128" y="100" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">۱۰K+ تحصیل‌کرده/سال</text>
+
+  <rect x="268" y="62" width="255" height="52" rx="6" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="395" y="80" fill="#ff9800" font-size="18" font-weight="900" text-anchor="middle">خدمات: D</text>
+  <text x="395" y="100" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">برق ۱۲ ساعت | آب آلوده</text>
+</g>
+
+<!-- Daily life description -->
+<text x="1200" y="565" fill="#ff9800" font-size="13" font-weight="700" text-anchor="end">🏠 زندگی روزمره شهروند عراقی</text>
+<line x1="690" y1="572" x2="1230" y2="572" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+
+<g transform="translate(700,580)">
+  <text x="0" y="14" fill="rgba(255,255,255,0.6)" font-size="11">• برق دولتی: ۸–۱۲ ساعت | ژنراتور: بقیه (ماهانه $۱۵۰+)</text>
+  <text x="0" y="34" fill="rgba(255,255,255,0.6)" font-size="11">• استخدام: فقط با واسطه حزبی (محاصصه در کار)</text>
+  <text x="0" y="54" fill="rgba(255,255,255,0.6)" font-size="11">• بهداشت: بیمارستان‌های دولتی ← مرگ | خصوصی ← فقر</text>
+  <text x="0" y="74" fill="rgba(255,255,255,0.6)" font-size="11">• امنیت: نسبتاً بهتر از ۲۰۰۶ اما ترور هنوز موجود</text>
+  <text x="0" y="94" fill="rgba(255,255,255,0.6)" font-size="11">• امید: نسل جوان عصبانی اما ناتوان از تغییر سیستم</text>
+</g>
+
+<!-- Danger zone -->
+<rect x="710" y="690" width="520" height="60" rx="8" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+<text x="970" y="715" fill="#ff9800" font-size="12" font-weight="700" text-anchor="middle">⚠️ خطر: بحران‌های چندگانه (آب + جمعیت + اقلیم)</text>
+<text x="970" y="735" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">ممکن است وضع موجود را به سمت سناریوی بدبینانه هل دهد</text>
+
+<rect x="710" y="762" width="520" height="35" rx="6" fill="rgba(255,152,0,0.06)"/>
+<text x="970" y="784" fill="#ff9800" font-size="12" font-weight="700" text-anchor="middle">⏰ وضعیت فعلی — ادامه تا اطلاع ثانوی</text>
+
+
+<!-- ===================== COLUMN 3: OPTIMISTIC ===================== -->
+<rect x="1280" y="132" width="580" height="730" rx="14" fill="url(#opti-g)" stroke="rgba(46,204,113,0.25)" stroke-width="1.5" filter="url(#sh)"/>
+
+<rect x="1300" y="145" width="540" height="65" rx="10" fill="rgba(46,204,113,0.12)" stroke="rgba(46,204,113,0.2)" stroke-width="1"/>
+<text x="1570" y="170" fill="#2ecc71" font-size="28" font-weight="900" text-anchor="middle">🌟</text>
+<text x="1570" y="197" fill="#2ecc71" font-size="20" font-weight="900" text-anchor="middle">سناریوی خوش‌بینانه: فدرالیسم موفق</text>
+
+<rect x="1300" y="222" width="540" height="40" rx="8" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+<text x="1570" y="240" fill="rgba(255,255,255,0.7)" font-size="12" text-anchor="middle" font-weight="600">«عراق دموکراتیک و متحد — رویا یا ممکن؟»</text>
+<text x="1570" y="255" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">الگوی مالزی/اندونزی — تنوع قومی + توسعه</text>
+
+<!-- Prerequisites -->
+<text x="1810" y="285" fill="#2ecc71" font-size="13" font-weight="700" text-anchor="end">🔑 پیش‌شرط‌های ضروری</text>
+<line x1="1300" y1="292" x2="1840" y2="292" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+
+<g transform="translate(1310,300)">
+  <circle cx="12" cy="10" r="4" fill="#2ecc71" opacity="0.6"/>
+  <text x="25" y="14" fill="rgba(255,255,255,0.65)" font-size="11">لغو محاصصه → انتخابات فراقومیتی</text>
+  <circle cx="12" cy="32" r="4" fill="#2ecc71" opacity="0.6"/>
+  <text x="25" y="36" fill="rgba(255,255,255,0.65)" font-size="11">خلع سلاح شبه‌نظامیان (حشد → ارتش ملی)</text>
+  <circle cx="12" cy="54" r="4" fill="#2ecc71" opacity="0.6"/>
+  <text x="25" y="58" fill="rgba(255,255,255,0.65)" font-size="11">تنوع اقتصادی: نفت → صنعت + تکنولوژی + کشاورزی</text>
+  <circle cx="12" cy="76" r="4" fill="#2ecc71" opacity="0.6"/>
+  <text x="25" y="80" fill="rgba(255,255,255,0.65)" font-size="11">معاهده آب با ترکیه و ایران</text>
+  <circle cx="12" cy="98" r="4" fill="#2ecc71" opacity="0.6"/>
+  <text x="25" y="102" fill="rgba(255,255,255,0.65)" font-size="11">سیستم قضایی مستقل + مبارزه واقعی با فساد</text>
+</g>
+
+<!-- Outcomes -->
+<text x="1810" y="425" fill="#2ecc71" font-size="13" font-weight="700" text-anchor="end">🌱 دستاوردها تا ۲۰۴۰</text>
+<line x1="1300" y1="432" x2="1840" y2="432" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+
+<g transform="translate(1310,440)">
+  <rect x="0" y="0" width="255" height="52" rx="6" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.12)" stroke-width="1"/>
+  <text x="128" y="18" fill="#2ecc71" font-size="18" font-weight="900" text-anchor="middle">GDP ▲ ۳×</text>
+  <text x="128" y="38" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">$۲۵۰B → $۷۵۰B</text>
+
+  <rect x="268" y="0" width="255" height="52" rx="6" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.12)" stroke-width="1"/>
+  <text x="395" y="18" fill="#2ecc71" font-size="18" font-weight="900" text-anchor="middle">HDI: ۰.۷۵+</text>
+  <text x="395" y="38" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">سطح مالزی فعلی</text>
+
+  <rect x="0" y="62" width="255" height="52" rx="6" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.12)" stroke-width="1"/>
+  <text x="128" y="80" fill="#2ecc71" font-size="18" font-weight="900" text-anchor="middle">بیکاری ۸%</text>
+  <text x="128" y="100" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">ایجاد ۵M شغل جدید</text>
+
+  <rect x="268" y="62" width="255" height="52" rx="6" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.12)" stroke-width="1"/>
+  <text x="395" y="80" fill="#2ecc71" font-size="18" font-weight="900" text-anchor="middle">بازگشت مغزها</text>
+  <text x="395" y="100" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">دیاسپورا → استارتاپ</text>
+</g>
+
+<!-- Key reforms needed -->
+<text x="1810" y="565" fill="#2ecc71" font-size="13" font-weight="700" text-anchor="end">🏗️ اصلاحات کلیدی</text>
+<line x1="1300" y1="572" x2="1840" y2="572" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+
+<g transform="translate(1310,580)">
+  <text x="0" y="14" fill="rgba(255,255,255,0.6)" font-size="11">🏛️ قانون اساسی جدید (بدون مادهٔ ۱۴۲ معلق)</text>
+  <text x="0" y="34" fill="rgba(255,255,255,0.6)" font-size="11">⚖️ عدالت انتقالی: محاکمه فاسدان + آشتی ملی</text>
+  <text x="0" y="54" fill="rgba(255,255,255,0.6)" font-size="11">🎓 اصلاح آموزش: ۱۰% GDP → آموزش و تحقیقات</text>
+  <text x="0" y="74" fill="rgba(255,255,255,0.6)" font-size="11">🛢️ صندوق ثروت ملی (مدل نروژ) برای نسل‌های بعد</text>
+  <text x="0" y="94" fill="rgba(255,255,255,0.6)" font-size="11">🌍 سیاست خارجی بی‌طرف: نه محور ایران، نه آمریکا</text>
+</g>
+
+<!-- Success factors -->
+<rect x="1320" y="690" width="520" height="60" rx="8" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+<text x="1580" y="715" fill="#2ecc71" font-size="12" font-weight="700" text-anchor="middle">💪 نقاط قوت عراق (سرمایه‌های بالقوه)</text>
+<text x="1580" y="735" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">نفت + جمعیت جوان + آب (با مدیریت) + تمدن کهن + موقعیت جغرافیایی</text>
+
+<rect x="1320" y="762" width="520" height="35" rx="6" fill="rgba(46,204,113,0.06)"/>
+<text x="1580" y="784" fill="#2ecc71" font-size="12" font-weight="700" text-anchor="middle">⏰ افق: ۱۵–۲۰ سال — نیاز به نسل جدید رهبری</text>
+
+
+<!-- ===================== BOTTOM BAR ===================== -->
+<rect x="60" y="875" width="1800" height="80" rx="10" class="note-box"/>
+<text x="960" y="903" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">📌 سناریوی واقع‌بینانه محتمل‌ترین است — اما بحران آب و جمعیت می‌تواند تعادل را بشکند</text>
+<text x="960" y="925" fill="rgba(255,255,255,0.5)" font-size="12" text-anchor="middle">عراق در نقطه عطف تاریخی است: یا اصلاحات ساختاری انجام شود یا فروپاشی تدریجی اجتناب‌ناپذیر خواهد بود</text>
+<text x="960" y="945" fill="rgba(255,255,255,0.35)" font-size="11" text-anchor="middle">کلید تحول: نسل جوان عراقی (۶۰% زیر ۲۵ سال) — آیا سیستم اجازه مشارکت واقعی را به آنها می‌دهد؟</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 25 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۷: آینده عراق و منطقه</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: Chatham House, ICG, Brookings Iraq Index, CSIS Future of Iraq | تحلیل سناریویی ۲۰۲۴</text>
+</svg>

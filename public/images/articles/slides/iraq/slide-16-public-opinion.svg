@@ -1,0 +1,293 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width:1; rx:10; }
+    .donut-title { fill: #fff; font-size: 16px; font-weight: 700; text-anchor: middle; }
+    .donut-sub { fill: rgba(255,255,255,0.4); font-size: 11px; text-anchor: middle; }
+    .center-pct { fill: #fff; font-size: 28px; font-weight: 900; text-anchor: middle; }
+    .center-label { fill: rgba(255,255,255,0.5); font-size: 11px; text-anchor: middle; }
+    .legend-item { font-size: 12px; fill: rgba(255,255,255,0.75); }
+    .legend-pct { font-size: 12px; font-weight: 700; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+
+<!-- Header -->
+<text x="960" y="42" class="title">افکار عمومی عراقی‌ها: چهار پرسش کلیدی</text>
+<text x="960" y="68" class="subtitle">نظرسنجی‌های Arab Barometer (۲۰۲۱-۲۰۲۳) و Gallup Iraq — نمونه: ۳,۰۰۰+ نفر</text>
+<line x1="250" y1="84" x2="1670" y2="84" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ════════════════════════════════ -->
+<!-- DONUT 1: US Invasion — Top Left -->
+<!-- ════════════════════════════════ -->
+<rect x="60" y="100" width="430" height="420" class="glass" filter="url(#sh)"/>
+<text x="275" y="135" class="donut-title">نظر درباره حمله آمریکا ۲۰۰۳</text>
+<text x="275" y="153" class="donut-sub">«آیا حمله آمریکا برای عراق مفید بود؟»</text>
+
+<!-- Donut center: 275, 310. R=110, inner R=70 -->
+<!-- Segments: Wrong/Harmful=67% (red), Somewhat=18% (orange), Right=15% (blue-gray) -->
+<!-- SVG donut via stroke-dasharray on circles. Circumference = 2π×110 ≈ 691.15 -->
+
+<g transform="translate(275,310)">
+  <!-- Background ring -->
+  <circle cx="0" cy="0" r="110" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="40"/>
+
+  <!-- Segment 1: Wrong 67% = 463.07 of 691.15 | starts at 0 -->
+  <circle cx="0" cy="0" r="110" fill="none" stroke="#e74c3c" stroke-opacity="0.7"
+    stroke-width="40" stroke-dasharray="463.07 228.08"
+    stroke-dashoffset="0" transform="rotate(-90)"/>
+
+  <!-- Segment 2: Somewhat 18% = 124.41 | starts at 463.07 -->
+  <circle cx="0" cy="0" r="110" fill="none" stroke="#ff9800" stroke-opacity="0.6"
+    stroke-width="40" stroke-dasharray="124.41 566.74"
+    stroke-dashoffset="-463.07" transform="rotate(-90)"/>
+
+  <!-- Segment 3: Right 15% = 103.67 | starts at 587.48 -->
+  <circle cx="0" cy="0" r="110" fill="none" stroke="rgba(255,255,255,0.25)"
+    stroke-width="40" stroke-dasharray="103.67 587.48"
+    stroke-dashoffset="-587.48" transform="rotate(-90)"/>
+
+  <!-- Center -->
+  <circle cx="0" cy="0" r="68" fill="#0a0e27"/>
+  <text x="0" y="-5" class="center-pct" fill="#e74c3c">۶۷%</text>
+  <text x="0" y="14" class="center-label">اشتباه بود</text>
+</g>
+
+<!-- Legend -->
+<g transform="translate(100,445)">
+  <rect x="0" y="0" width="14" height="14" rx="3" fill="#e74c3c" opacity="0.7"/>
+  <text x="20" y="12" class="legend-item">اشتباه / مضر بود</text>
+  <text x="180" y="12" class="legend-pct" fill="#e74c3c">۶۷%</text>
+
+  <rect x="0" y="22" width="14" height="14" rx="3" fill="#ff9800" opacity="0.6"/>
+  <text x="20" y="34" class="legend-item">تا حدی</text>
+  <text x="180" y="34" class="legend-pct" fill="#ff9800">۱۸%</text>
+
+  <rect x="0" y="44" width="14" height="14" rx="3" fill="rgba(255,255,255,0.25)"/>
+  <text x="20" y="56" class="legend-item">درست بود</text>
+  <text x="180" y="56" class="legend-pct" fill="rgba(255,255,255,0.6)">۱۵%</text>
+</g>
+
+<!-- ════════════════════════════════ -->
+<!-- DONUT 2: Iran Influence — Top Right -->
+<!-- ════════════════════════════════ -->
+<rect x="520" y="100" width="430" height="420" class="glass" filter="url(#sh)"/>
+<text x="735" y="135" class="donut-title">نظر درباره نفوذ ایران</text>
+<text x="735" y="153" class="donut-sub">«نفوذ ایران در عراق مثبت است یا منفی؟»</text>
+
+<g transform="translate(735,310)">
+  <circle cx="0" cy="0" r="110" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="40"/>
+
+  <!-- Negative 58% = 400.87 -->
+  <circle cx="0" cy="0" r="110" fill="none" stroke="#9333ea" stroke-opacity="0.7"
+    stroke-width="40" stroke-dasharray="400.87 290.28"
+    stroke-dashoffset="0" transform="rotate(-90)"/>
+
+  <!-- Mixed 22% = 152.05 -->
+  <circle cx="0" cy="0" r="110" fill="none" stroke="#ff9800" stroke-opacity="0.6"
+    stroke-width="40" stroke-dasharray="152.05 539.10"
+    stroke-dashoffset="-400.87" transform="rotate(-90)"/>
+
+  <!-- Positive 20% = 138.23 -->
+  <circle cx="0" cy="0" r="110" fill="none" stroke="#2ecc71" stroke-opacity="0.5"
+    stroke-width="40" stroke-dasharray="138.23 552.92"
+    stroke-dashoffset="-552.92" transform="rotate(-90)"/>
+
+  <circle cx="0" cy="0" r="68" fill="#0a0e27"/>
+  <text x="0" y="-5" class="center-pct" fill="#9333ea">۵۸%</text>
+  <text x="0" y="14" class="center-label">منفی</text>
+</g>
+
+<g transform="translate(560,445)">
+  <rect x="0" y="0" width="14" height="14" rx="3" fill="#9333ea" opacity="0.7"/>
+  <text x="20" y="12" class="legend-item">منفی / بسیار منفی</text>
+  <text x="200" y="12" class="legend-pct" fill="#9333ea">۵۸%</text>
+
+  <rect x="0" y="22" width="14" height="14" rx="3" fill="#ff9800" opacity="0.6"/>
+  <text x="20" y="34" class="legend-item">مختلط</text>
+  <text x="200" y="34" class="legend-pct" fill="#ff9800">۲۲%</text>
+
+  <rect x="0" y="44" width="14" height="14" rx="3" fill="#2ecc71" opacity="0.5"/>
+  <text x="20" y="56" class="legend-item">مثبت</text>
+  <text x="200" y="56" class="legend-pct" fill="#2ecc71">۲۰%</text>
+</g>
+
+<!-- ════════════════════════════════════ -->
+<!-- DONUT 3: Democracy — Bottom Left    -->
+<!-- ════════════════════════════════════ -->
+<rect x="980" y="100" width="430" height="420" class="glass" filter="url(#sh)"/>
+<text x="1195" y="135" class="donut-title">ارزیابی دموکراسی عراق</text>
+<text x="1195" y="153" class="donut-sub">«آیا سیستم فعلی عراق دموکراتیک است؟»</text>
+
+<g transform="translate(1195,310)">
+  <circle cx="0" cy="0" r="110" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="40"/>
+
+  <!-- Not democratic 52% = 359.40 -->
+  <circle cx="0" cy="0" r="110" fill="none" stroke="#e74c3c" stroke-opacity="0.65"
+    stroke-width="40" stroke-dasharray="359.40 331.75"
+    stroke-dashoffset="0" transform="rotate(-90)"/>
+
+  <!-- Somewhat 30% = 207.35 -->
+  <circle cx="0" cy="0" r="110" fill="none" stroke="#00b4d8" stroke-opacity="0.5"
+    stroke-width="40" stroke-dasharray="207.35 483.80"
+    stroke-dashoffset="-359.40" transform="rotate(-90)"/>
+
+  <!-- Yes democratic 18% = 124.41 -->
+  <circle cx="0" cy="0" r="110" fill="none" stroke="#2ecc71" stroke-opacity="0.5"
+    stroke-width="40" stroke-dasharray="124.41 566.74"
+    stroke-dashoffset="-566.74" transform="rotate(-90)"/>
+
+  <circle cx="0" cy="0" r="68" fill="#0a0e27"/>
+  <text x="0" y="-5" class="center-pct" fill="#e74c3c">۵۲%</text>
+  <text x="0" y="14" class="center-label">غیردموکراتیک</text>
+</g>
+
+<g transform="translate(1020,445)">
+  <rect x="0" y="0" width="14" height="14" rx="3" fill="#e74c3c" opacity="0.65"/>
+  <text x="20" y="12" class="legend-item">اصلاً دموکراتیک نیست</text>
+  <text x="220" y="12" class="legend-pct" fill="#e74c3c">۵۲%</text>
+
+  <rect x="0" y="22" width="14" height="14" rx="3" fill="#00b4d8" opacity="0.5"/>
+  <text x="20" y="34" class="legend-item">تا حدودی</text>
+  <text x="220" y="34" class="legend-pct" fill="#00b4d8">۳۰%</text>
+
+  <rect x="0" y="44" width="14" height="14" rx="3" fill="#2ecc71" opacity="0.5"/>
+  <text x="20" y="56" class="legend-item">بله، دموکراتیک است</text>
+  <text x="220" y="56" class="legend-pct" fill="#2ecc71">۱۸%</text>
+</g>
+
+<!-- ════════════════════════════════════ -->
+<!-- DONUT 4: Future — Bottom Right      -->
+<!-- ════════════════════════════════════ -->
+<rect x="1440" y="100" width="430" height="420" class="glass" filter="url(#sh)"/>
+<text x="1655" y="135" class="donut-title">چشم‌انداز آینده عراق</text>
+<text x="1655" y="153" class="donut-sub">«آینده عراق در ۵ سال آینده چگونه خواهد بود؟»</text>
+
+<g transform="translate(1655,310)">
+  <circle cx="0" cy="0" r="110" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="40"/>
+
+  <!-- Pessimistic 45% = 311.02 -->
+  <circle cx="0" cy="0" r="110" fill="none" stroke="#e74c3c" stroke-opacity="0.6"
+    stroke-width="40" stroke-dasharray="311.02 380.13"
+    stroke-dashoffset="0" transform="rotate(-90)"/>
+
+  <!-- Uncertain 28% = 193.52 -->
+  <circle cx="0" cy="0" r="110" fill="none" stroke="#ff9800" stroke-opacity="0.55"
+    stroke-width="40" stroke-dasharray="193.52 497.63"
+    stroke-dashoffset="-311.02" transform="rotate(-90)"/>
+
+  <!-- Optimistic 27% = 186.61 -->
+  <circle cx="0" cy="0" r="110" fill="none" stroke="#2ecc71" stroke-opacity="0.5"
+    stroke-width="40" stroke-dasharray="186.61 504.54"
+    stroke-dashoffset="-504.54" transform="rotate(-90)"/>
+
+  <circle cx="0" cy="0" r="68" fill="#0a0e27"/>
+  <text x="0" y="-5" class="center-pct" fill="#e74c3c">۴۵%</text>
+  <text x="0" y="14" class="center-label">بدبین</text>
+</g>
+
+<g transform="translate(1480,445)">
+  <rect x="0" y="0" width="14" height="14" rx="3" fill="#e74c3c" opacity="0.6"/>
+  <text x="20" y="12" class="legend-item">بدبین / بسیار بد</text>
+  <text x="200" y="12" class="legend-pct" fill="#e74c3c">۴۵%</text>
+
+  <rect x="0" y="22" width="14" height="14" rx="3" fill="#ff9800" opacity="0.55"/>
+  <text x="20" y="34" class="legend-item">نامطمئن</text>
+  <text x="200" y="34" class="legend-pct" fill="#ff9800">۲۸%</text>
+
+  <rect x="0" y="44" width="14" height="14" rx="3" fill="#2ecc71" opacity="0.5"/>
+  <text x="20" y="56" class="legend-item">خوش‌بین</text>
+  <text x="200" y="56" class="legend-pct" fill="#2ecc71">۲۷%</text>
+</g>
+
+<!-- ════════════════════════════════════ -->
+<!-- CROSS-ANALYSIS STRIP (bottom)       -->
+<!-- ════════════════════════════════════ -->
+<rect x="60" y="540" width="1800" height="280" class="glass" filter="url(#sh)"/>
+<text x="960" y="575" fill="#d4af37" font-size="18" font-weight="700" text-anchor="middle">تحلیل ترکیبی: شکاف نسلی و قومی</text>
+<line x1="100" y1="590" x2="1820" y2="590" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+<!-- Age breakdown bars -->
+<text x="1800" y="618" fill="rgba(255,255,255,0.7)" font-size="13" font-weight="600" text-anchor="end">تفکیک سنی: «حمله آمریکا اشتباه بود»</text>
+
+<!-- 18-29 -->
+<g transform="translate(120,630)">
+  <text x="0" y="14" fill="rgba(255,255,255,0.5)" font-size="12">۱۸–۲۹ سال:</text>
+  <rect x="110" y="2" width="600" height="18" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="110" y="2" width="348" height="18" rx="3" fill="rgba(231,76,60,0.4)"/>
+  <text x="468" y="16" fill="#e74c3c" font-size="12" font-weight="700">۵۸%</text>
+  <text x="510" y="16" fill="rgba(255,255,255,0.35)" font-size="10">(بسیاری حمله را ندیده‌اند)</text>
+</g>
+
+<!-- 30-44 -->
+<g transform="translate(120,658)">
+  <text x="0" y="14" fill="rgba(255,255,255,0.5)" font-size="12">۳۰–۴۴ سال:</text>
+  <rect x="110" y="2" width="600" height="18" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="110" y="2" width="414" height="18" rx="3" fill="rgba(231,76,60,0.5)"/>
+  <text x="534" y="16" fill="#e74c3c" font-size="12" font-weight="700">۶۹%</text>
+</g>
+
+<!-- 45-59 -->
+<g transform="translate(120,686)">
+  <text x="0" y="14" fill="rgba(255,255,255,0.5)" font-size="12">۴۵–۵۹ سال:</text>
+  <rect x="110" y="2" width="600" height="18" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="110" y="2" width="462" height="18" rx="3" fill="rgba(231,76,60,0.6)"/>
+  <text x="582" y="16" fill="#e74c3c" font-size="12" font-weight="700">۷۷%</text>
+</g>
+
+<!-- 60+ -->
+<g transform="translate(120,714)">
+  <text x="0" y="14" fill="rgba(255,255,255,0.5)" font-size="12">۶۰+ سال:</text>
+  <rect x="110" y="2" width="600" height="18" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="110" y="2" width="486" height="18" rx="3" fill="rgba(231,76,60,0.7)"/>
+  <text x="606" y="16" fill="#e74c3c" font-size="12" font-weight="700">۸۱%</text>
+  <text x="648" y="16" fill="rgba(255,255,255,0.35)" font-size="10">(عراق قبل را به یاد دارند)</text>
+</g>
+
+<!-- Ethnic breakdown -->
+<text x="1800" y="618" fill="rgba(255,255,255,0.7)" font-size="13" font-weight="600" text-anchor="end">تفکیک سنی: «حمله آمریکا اشتباه بود»</text>
+
+<g transform="translate(850,630)">
+  <text x="0" y="0" fill="rgba(255,255,255,0.7)" font-size="13" font-weight="600">تفکیک قومی‌مذهبی: «نفوذ ایران منفی است»</text>
+
+  <!-- Sunni Arabs -->
+  <text x="0" y="28" fill="rgba(255,255,255,0.5)" font-size="12">عرب سنی:</text>
+  <rect x="110" y="16" width="500" height="18" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="110" y="16" width="450" height="18" rx="3" fill="rgba(147,51,234,0.6)"/>
+  <text x="570" y="30" fill="#9333ea" font-size="12" font-weight="700">۹۰%</text>
+
+  <!-- Kurds -->
+  <text x="0" y="56" fill="rgba(255,255,255,0.5)" font-size="12">کرد:</text>
+  <rect x="110" y="44" width="500" height="18" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="110" y="44" width="425" height="18" rx="3" fill="rgba(147,51,234,0.5)"/>
+  <text x="545" y="58" fill="#9333ea" font-size="12" font-weight="700">۸۵%</text>
+
+  <!-- Shia Arabs -->
+  <text x="0" y="84" fill="rgba(255,255,255,0.5)" font-size="12">عرب شیعه:</text>
+  <rect x="110" y="72" width="500" height="18" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="110" y="72" width="200" height="18" rx="3" fill="rgba(147,51,234,0.35)"/>
+  <text x="320" y="86" fill="#9333ea" font-size="12" font-weight="700">۴۰%</text>
+  <text x="365" y="86" fill="rgba(255,255,255,0.35)" font-size="10">(حتی شیعیان نیز ناراضی‌اند)</text>
+</g>
+
+<!-- ═══════════════════════ -->
+<!-- BOTTOM INSIGHT BAR      -->
+<!-- ═══════════════════════ -->
+<rect x="60" y="840" width="1800" height="85" rx="10" class="note-box"/>
+<text x="960" y="868" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">📊 خلاصه: اکثریت عراقی‌ها حمله ۲۰۰۳ را اشتباه، نفوذ ایران را منفی، و سیستم فعلی را غیردموکراتیک می‌دانند</text>
+<text x="960" y="890" fill="rgba(255,255,255,0.5)" font-size="12" text-anchor="middle">نکته مهم: حتی ۴۰% شیعیان عرب نیز نفوذ ایران را منفی ارزیابی می‌کنند — این نشان‌دهنده رشد ناسیونالیسم عراقی فرامذهبی است</text>
+<text x="960" y="910" fill="rgba(255,255,255,0.35)" font-size="11" text-anchor="middle">نسل جوان (۱۸–۲۹) کمترین مخالفت با حمله را دارد — نه به دلیل حمایت، بلکه چون عراق صدام را تجربه نکرده‌اند</text>
+
+<!-- Footer -->
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 16 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۵: افکار عمومی</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: Arab Barometer Wave VII (2022), Gallup Iraq Survey (2021), IIACSS Baghdad (2023) | نمونه: ۳,۲۰۰ نفر</text>
+</svg>

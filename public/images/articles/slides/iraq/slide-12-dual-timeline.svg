@@ -1,0 +1,294 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .year-mark { fill: rgba(255,255,255,0.25); font-size: 11px; text-anchor: middle; }
+    .year-major { fill: rgba(255,255,255,0.5); font-size: 13px; font-weight: 700; text-anchor: middle; }
+    .ev-ir { fill: #2ecc71; font-size: 10.5px; }
+    .ev-iq { fill: #e74c3c; font-size: 10.5px; }
+    .ev-sh { fill: #d4af37; font-size: 10.5px; font-weight: 600; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width: 1; rx: 10; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+  <linearGradient id="iran-gl" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#2ecc71" stop-opacity="0.2"/>
+    <stop offset="50%" stop-color="#2ecc71" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#2ecc71" stop-opacity="0.5"/>
+  </linearGradient>
+  <linearGradient id="iraq-gl" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.2"/>
+    <stop offset="50%" stop-color="#e74c3c" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#e74c3c" stop-opacity="0.5"/>
+  </linearGradient>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+
+<!-- Header -->
+<text x="960" y="42" class="title">تایم‌لاین تطبیقی: ایران و عراق (۱۹۰۰–۲۰۲۳)</text>
+<text x="960" y="68" class="subtitle">دو مسیر متفاوت ملت‌سازی — از مشروطه تا امروز</text>
+<line x1="200" y1="82" x2="1720" y2="82" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- Legend -->
+<g transform="translate(540,90)">
+  <line x1="0" y1="6" x2="25" y2="6" stroke="#2ecc71" stroke-width="3"/>
+  <text x="32" y="11" fill="#2ecc71" font-size="12" font-weight="600">🇮🇷 ایران</text>
+  <line x1="140" y1="6" x2="165" y2="6" stroke="#e74c3c" stroke-width="3"/>
+  <text x="172" y="11" fill="#e74c3c" font-size="12" font-weight="600">🇮🇶 عراق</text>
+  <line x1="280" y1="6" x2="305" y2="6" stroke="#d4af37" stroke-width="3" stroke-dasharray="4,3"/>
+  <text x="312" y="11" fill="#d4af37" font-size="12" font-weight="600">رویداد مشترک</text>
+  <circle cx="440" cy="6" r="5" fill="#ff9800"/>
+  <text x="450" y="11" fill="#ff9800" font-size="12" font-weight="600">کودتا/مداخله خارجی</text>
+</g>
+
+<!-- Main container -->
+<rect x="60" y="110" width="1800" height="840" class="glass" filter="url(#sh)"/>
+
+<!-- ══════════════════════════════════════════════ -->
+<!-- TIMELINE SCALE: 1900→2023 = 123 years         -->
+<!-- X range: 140→1800 = 1660px → 13.5px/year      -->
+<!-- Formula: x = 140 + (year - 1900) × 13.5       -->
+<!-- Iran line:   y = 420                            -->
+<!-- Iraq line:   y = 660                            -->
+<!-- Center axis: y = 540                            -->
+<!-- ══════════════════════════════════════════════ -->
+
+<!-- Decade grid lines -->
+<g>
+  <line x1="140" y1="140" x2="140" y2="910" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="140" y="928" class="year-major">۱۹۰۰</text>
+
+  <line x1="275" y1="140" x2="275" y2="910" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <text x="275" y="928" class="year-mark">۱۹۱۰</text>
+
+  <line x1="410" y1="140" x2="410" y2="910" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="410" y="928" class="year-major">۱۹۲۰</text>
+
+  <line x1="546" y1="140" x2="546" y2="910" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <text x="546" y="928" class="year-mark">۱۹۳۰</text>
+
+  <line x1="681" y1="140" x2="681" y2="910" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <text x="681" y="928" class="year-mark">۱۹۴۰</text>
+
+  <line x1="816" y1="140" x2="816" y2="910" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="816" y="928" class="year-major">۱۹۵۰</text>
+
+  <line x1="951" y1="140" x2="951" y2="910" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <text x="951" y="928" class="year-mark">۱۹۶۰</text>
+
+  <line x1="1087" y1="140" x2="1087" y2="910" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <text x="1087" y="928" class="year-mark">۱۹۷۰</text>
+
+  <line x1="1222" y1="140" x2="1222" y2="910" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="1222" y="928" class="year-major">۱۹۸۰</text>
+
+  <line x1="1357" y1="140" x2="1357" y2="910" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <text x="1357" y="928" class="year-mark">۱۹۹۰</text>
+
+  <line x1="1492" y1="140" x2="1492" y2="910" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="1492" y="928" class="year-major">۲۰۰۰</text>
+
+  <line x1="1627" y1="140" x2="1627" y2="910" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <text x="1627" y="928" class="year-mark">۲۰۱۰</text>
+
+  <line x1="1762" y1="140" x2="1762" y2="910" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <text x="1762" y="928" class="year-mark">۲۰۲۰</text>
+</g>
+
+<!-- Central divider -->
+<line x1="130" y1="540" x2="1810" y2="540" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="6,4"/>
+
+<!-- Side labels -->
+<text x="82" y="420" fill="#2ecc71" font-size="14" font-weight="700" text-anchor="middle">🇮🇷</text>
+<text x="82" y="438" fill="#2ecc71" font-size="10" font-weight="600" text-anchor="middle">ایران</text>
+<text x="82" y="660" fill="#e74c3c" font-size="14" font-weight="700" text-anchor="middle">🇮🇶</text>
+<text x="82" y="678" fill="#e74c3c" font-size="10" font-weight="600" text-anchor="middle">عراق</text>
+
+<!-- Main timeline lines -->
+<line x1="140" y1="420" x2="1800" y2="420" stroke="url(#iran-gl)" stroke-width="2.5"/>
+<line x1="140" y1="660" x2="1800" y2="660" stroke="url(#iraq-gl)" stroke-width="2.5"/>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- IRAN EVENTS (above y=420, stems go UP) -->
+<!-- ═══════════════════════════════════════ -->
+
+<!-- 1906 Mashruteh — x=221 -->
+<circle cx="221" cy="420" r="5" fill="#2ecc71" stroke="#0a0e27" stroke-width="2"/>
+<line x1="221" y1="415" x2="221" y2="335" stroke="rgba(46,204,113,0.4)" stroke-width="1"/>
+<rect x="162" y="310" width="118" height="26" rx="5" fill="rgba(46,204,113,0.1)" stroke="rgba(46,204,113,0.25)" stroke-width="0.7"/>
+<text x="221" y="322" class="ev-ir" text-anchor="middle" font-weight="700">۱۹۰۶ مشروطه</text>
+<text x="221" y="333" class="ev-ir" text-anchor="middle" font-size="9" opacity="0.7">اولین قانون اساسی</text>
+
+<!-- 1921 Coup / 1925 Pahlavi — x=424 -->
+<circle cx="478" cy="420" r="5" fill="#2ecc71" stroke="#0a0e27" stroke-width="2"/>
+<line x1="478" y1="415" x2="478" y2="365" stroke="rgba(46,204,113,0.4)" stroke-width="1"/>
+<rect x="419" y="340" width="118" height="26" rx="5" fill="rgba(46,204,113,0.1)" stroke="rgba(46,204,113,0.25)" stroke-width="0.7"/>
+<text x="478" y="352" class="ev-ir" text-anchor="middle" font-weight="700">۱۹۲۵ پهلوی اول</text>
+<text x="478" y="363" class="ev-ir" text-anchor="middle" font-size="9" opacity="0.7">نوسازی متمرکز</text>
+
+<!-- 1941 Allied Occupation — x=694 -->
+<circle cx="694" cy="420" r="4" fill="#ff9800" stroke="#0a0e27" stroke-width="2"/>
+<line x1="694" y1="415" x2="694" y2="285" stroke="rgba(255,152,0,0.3)" stroke-width="1"/>
+<rect x="635" y="260" width="118" height="26" rx="5" fill="rgba(255,152,0,0.1)" stroke="rgba(255,152,0,0.25)" stroke-width="0.7"/>
+<text x="694" y="272" class="ev-ir" text-anchor="middle" font-weight="700" fill="#ff9800">۱۹۴۱ اشغال متفقین</text>
+<text x="694" y="283" class="ev-ir" text-anchor="middle" font-size="9" fill="#ff9800" opacity="0.7">برکناری رضاشاه</text>
+
+<!-- 1951 Oil Nationalization — x=829 -->
+<circle cx="829" cy="420" r="5" fill="#2ecc71" stroke="#0a0e27" stroke-width="2"/>
+<line x1="829" y1="415" x2="829" y2="335" stroke="rgba(46,204,113,0.4)" stroke-width="1"/>
+<rect x="770" y="310" width="118" height="26" rx="5" fill="rgba(46,204,113,0.1)" stroke="rgba(46,204,113,0.25)" stroke-width="0.7"/>
+<text x="829" y="322" class="ev-ir" text-anchor="middle" font-weight="700">۱۹۵۱ ملی شدن نفت</text>
+<text x="829" y="333" class="ev-ir" text-anchor="middle" font-size="9" opacity="0.7">مصدق — نقطه عطف</text>
+
+<!-- 1953 CIA Coup — x=856 -->
+<circle cx="856" cy="420" r="5" fill="#ff9800" stroke="#0a0e27" stroke-width="2"/>
+<line x1="856" y1="415" x2="856" y2="195" stroke="rgba(255,152,0,0.3)" stroke-width="1"/>
+<rect x="797" y="170" width="118" height="26" rx="5" fill="rgba(255,152,0,0.12)" stroke="rgba(255,152,0,0.3)" stroke-width="0.7"/>
+<text x="856" y="182" class="ev-ir" text-anchor="middle" font-weight="700" fill="#ff9800">۱۹۵۳ کودتای ۲۸ مرداد</text>
+<text x="856" y="193" class="ev-ir" text-anchor="middle" font-size="9" fill="#ff9800" opacity="0.7">CIA + MI6</text>
+
+<!-- 1963 White Revolution — x=991 -->
+<circle cx="991" cy="420" r="4" fill="#2ecc71" stroke="#0a0e27" stroke-width="2"/>
+<line x1="991" y1="415" x2="991" y2="365" stroke="rgba(46,204,113,0.4)" stroke-width="1"/>
+<rect x="932" y="340" width="118" height="26" rx="5" fill="rgba(46,204,113,0.1)" stroke="rgba(46,204,113,0.25)" stroke-width="0.7"/>
+<text x="991" y="352" class="ev-ir" text-anchor="middle" font-weight="700">۱۹۶۳ انقلاب سفید</text>
+<text x="991" y="363" class="ev-ir" text-anchor="middle" font-size="9" opacity="0.7">اصلاحات ارضی</text>
+
+<!-- 1979 Revolution — x=1207 -->
+<circle cx="1207" cy="420" r="7" fill="#2ecc71" stroke="#fff" stroke-width="2"/>
+<line x1="1207" y1="413" x2="1207" y2="245" stroke="rgba(46,204,113,0.5)" stroke-width="1.5"/>
+<rect x="1142" y="218" width="130" height="28" rx="5" fill="rgba(46,204,113,0.15)" stroke="rgba(46,204,113,0.4)" stroke-width="1"/>
+<text x="1207" y="231" class="ev-ir" text-anchor="middle" font-weight="900" font-size="12">۱۹۷۹ انقلاب اسلامی</text>
+<text x="1207" y="243" class="ev-ir" text-anchor="middle" font-size="9" opacity="0.7">تغییر نظام — حفظ تمامیت ارضی</text>
+
+<!-- 1997 Khatami — x=1451 -->
+<circle cx="1451" cy="420" r="4" fill="#2ecc71" stroke="#0a0e27" stroke-width="2"/>
+<line x1="1451" y1="415" x2="1451" y2="365" stroke="rgba(46,204,113,0.4)" stroke-width="1"/>
+<rect x="1392" y="340" width="118" height="26" rx="5" fill="rgba(46,204,113,0.1)" stroke="rgba(46,204,113,0.25)" stroke-width="0.7"/>
+<text x="1451" y="352" class="ev-ir" text-anchor="middle" font-weight="700">۱۹۹۷ اصلاحات</text>
+<text x="1451" y="363" class="ev-ir" text-anchor="middle" font-size="9" opacity="0.7">خاتمی — گشایش مدنی</text>
+
+<!-- 2009 Green Movement — x=1613 -->
+<circle cx="1613" cy="420" r="4" fill="#2ecc71" stroke="#0a0e27" stroke-width="2"/>
+<line x1="1613" y1="415" x2="1613" y2="295" stroke="rgba(46,204,113,0.4)" stroke-width="1"/>
+<rect x="1554" y="270" width="118" height="26" rx="5" fill="rgba(46,204,113,0.1)" stroke="rgba(46,204,113,0.25)" stroke-width="0.7"/>
+<text x="1613" y="282" class="ev-ir" text-anchor="middle" font-weight="700">۲۰۰۹ جنبش سبز</text>
+<text x="1613" y="293" class="ev-ir" text-anchor="middle" font-size="9" opacity="0.7">اعتراض مدنی</text>
+
+<!-- 2022 Mahsa — x=1789 -->
+<circle cx="1789" cy="420" r="4" fill="#2ecc71" stroke="#0a0e27" stroke-width="2"/>
+<line x1="1789" y1="415" x2="1789" y2="335" stroke="rgba(46,204,113,0.4)" stroke-width="1"/>
+<rect x="1725" y="310" width="128" height="26" rx="5" fill="rgba(46,204,113,0.1)" stroke="rgba(46,204,113,0.25)" stroke-width="0.7"/>
+<text x="1789" y="322" class="ev-ir" text-anchor="middle" font-weight="700">۲۰۲۲ ژینا</text>
+<text x="1789" y="333" class="ev-ir" text-anchor="middle" font-size="9" opacity="0.7">زن، زندگی، آزادی</text>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- IRAQ EVENTS (below y=660, stems go DOWN) -->
+<!-- ═══════════════════════════════════════ -->
+
+<!-- 1920 Revolt — x=410 -->
+<circle cx="410" cy="660" r="5" fill="#e74c3c" stroke="#0a0e27" stroke-width="2"/>
+<line x1="410" y1="665" x2="410" y2="735" stroke="rgba(231,76,60,0.4)" stroke-width="1"/>
+<rect x="351" y="738" width="118" height="26" rx="5" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.25)" stroke-width="0.7"/>
+<text x="410" y="750" class="ev-iq" text-anchor="middle" font-weight="700">۱۹۲۰ انقلاب عراق</text>
+<text x="410" y="761" class="ev-iq" text-anchor="middle" font-size="9" opacity="0.7">علیه بریتانیا</text>
+
+<!-- 1921 Kingdom — x=424 -->
+<circle cx="444" cy="660" r="4" fill="#e74c3c" stroke="#0a0e27" stroke-width="2"/>
+<line x1="444" y1="665" x2="444" y2="795" stroke="rgba(231,76,60,0.4)" stroke-width="1"/>
+<rect x="385" y="798" width="118" height="26" rx="5" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.25)" stroke-width="0.7"/>
+<text x="444" y="810" class="ev-iq" text-anchor="middle" font-weight="700">۱۹۲۱ پادشاهی</text>
+<text x="444" y="821" class="ev-iq" text-anchor="middle" font-size="9" opacity="0.7">فیصل اول — ساخت بریتانیا</text>
+
+<!-- 1958 Coup — x=924 -->
+<circle cx="924" cy="660" r="5" fill="#ff9800" stroke="#0a0e27" stroke-width="2"/>
+<line x1="924" y1="665" x2="924" y2="735" stroke="rgba(255,152,0,0.4)" stroke-width="1"/>
+<rect x="865" y="738" width="118" height="26" rx="5" fill="rgba(255,152,0,0.1)" stroke="rgba(255,152,0,0.25)" stroke-width="0.7"/>
+<text x="924" y="750" class="ev-iq" text-anchor="middle" font-weight="700" fill="#ff9800">۱۹۵۸ کودتا</text>
+<text x="924" y="761" class="ev-iq" text-anchor="middle" font-size="9" fill="#ff9800" opacity="0.7">قاسم — سقوط سلطنت</text>
+
+<!-- 1963 Baath first — x=991 -->
+<circle cx="991" cy="660" r="4" fill="#ff9800" stroke="#0a0e27" stroke-width="2"/>
+<line x1="991" y1="665" x2="991" y2="795" stroke="rgba(255,152,0,0.3)" stroke-width="1"/>
+<rect x="932" y="798" width="118" height="26" rx="5" fill="rgba(255,152,0,0.1)" stroke="rgba(255,152,0,0.25)" stroke-width="0.7"/>
+<text x="991" y="810" class="ev-iq" text-anchor="middle" font-weight="700" fill="#ff9800">۱۹۶۳ بعث اول</text>
+<text x="991" y="821" class="ev-iq" text-anchor="middle" font-size="9" fill="#ff9800" opacity="0.7">کودتای CIA</text>
+
+<!-- 1968 Baath second — x=1058 -->
+<circle cx="1058" cy="660" r="5" fill="#e74c3c" stroke="#0a0e27" stroke-width="2"/>
+<line x1="1058" y1="665" x2="1058" y2="735" stroke="rgba(231,76,60,0.4)" stroke-width="1"/>
+<rect x="999" y="738" width="118" height="26" rx="5" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.25)" stroke-width="0.7"/>
+<text x="1058" y="750" class="ev-iq" text-anchor="middle" font-weight="700">۱۹۶۸ بعث دوم</text>
+<text x="1058" y="761" class="ev-iq" text-anchor="middle" font-size="9" opacity="0.7">آغاز دیکتاتوری</text>
+
+<!-- 1979 Saddam — x=1207 -->
+<circle cx="1207" cy="660" r="6" fill="#e74c3c" stroke="#fff" stroke-width="2"/>
+<line x1="1207" y1="665" x2="1207" y2="795" stroke="rgba(231,76,60,0.5)" stroke-width="1.5"/>
+<rect x="1142" y="798" width="130" height="28" rx="5" fill="rgba(231,76,60,0.15)" stroke="rgba(231,76,60,0.4)" stroke-width="1"/>
+<text x="1207" y="811" class="ev-iq" text-anchor="middle" font-weight="900" font-size="12">۱۹۷۹ صدام حسین</text>
+<text x="1207" y="823" class="ev-iq" text-anchor="middle" font-size="9" opacity="0.7">استبداد مطلق</text>
+
+<!-- 1990 Kuwait — x=1357 -->
+<circle cx="1357" cy="660" r="5" fill="#e74c3c" stroke="#0a0e27" stroke-width="2"/>
+<line x1="1357" y1="665" x2="1357" y2="735" stroke="rgba(231,76,60,0.4)" stroke-width="1"/>
+<rect x="1298" y="738" width="118" height="26" rx="5" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.25)" stroke-width="0.7"/>
+<text x="1357" y="750" class="ev-iq" text-anchor="middle" font-weight="700">۱۹۹۰ اشغال کویت</text>
+<text x="1357" y="761" class="ev-iq" text-anchor="middle" font-size="9" opacity="0.7">+ تحریم ویرانگر</text>
+
+<!-- 2003 Invasion — x=1532 -->
+<circle cx="1532" cy="660" r="7" fill="#e74c3c" stroke="#fff" stroke-width="2"/>
+<line x1="1532" y1="665" x2="1532" y2="845" stroke="rgba(231,76,60,0.5)" stroke-width="1.5"/>
+<rect x="1467" y="848" width="130" height="28" rx="5" fill="rgba(231,76,60,0.15)" stroke="rgba(231,76,60,0.4)" stroke-width="1"/>
+<text x="1532" y="861" class="ev-iq" text-anchor="middle" font-weight="900" font-size="12">۲۰۰۳ حمله آمریکا</text>
+<text x="1532" y="873" class="ev-iq" text-anchor="middle" font-size="9" opacity="0.7">سقوط دولت — هرج‌ومرج</text>
+
+<!-- 2014 ISIS — x=1681 -->
+<circle cx="1681" cy="660" r="6" fill="#e74c3c" stroke="#0a0e27" stroke-width="2"/>
+<line x1="1681" y1="665" x2="1681" y2="735" stroke="rgba(231,76,60,0.4)" stroke-width="1"/>
+<rect x="1622" y="738" width="118" height="26" rx="5" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.25)" stroke-width="0.7"/>
+<text x="1681" y="750" class="ev-iq" text-anchor="middle" font-weight="700">۲۰۱۴ داعش</text>
+<text x="1681" y="761" class="ev-iq" text-anchor="middle" font-size="9" opacity="0.7">سقوط موصل — ۳۰% عراق</text>
+
+<!-- 2019 Tishreen — x=1762 -->
+<circle cx="1762" cy="660" r="4" fill="#e74c3c" stroke="#0a0e27" stroke-width="2"/>
+<line x1="1762" y1="665" x2="1762" y2="795" stroke="rgba(231,76,60,0.4)" stroke-width="1"/>
+<rect x="1703" y="798" width="118" height="26" rx="5" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.25)" stroke-width="0.7"/>
+<text x="1762" y="810" class="ev-iq" text-anchor="middle" font-weight="700">۲۰۱۹ تشرین</text>
+<text x="1762" y="821" class="ev-iq" text-anchor="middle" font-size="9" opacity="0.7">قیام مردمی</text>
+
+<!-- ═════════════════════════════════ -->
+<!-- SHARED EVENT: 1980-88 War        -->
+<!-- ═════════════════════════════════ -->
+<!-- War zone highlight: 1980→1988. x=1222→1330 -->
+<rect x="1222" y="430" width="108" height="220" rx="6" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.2)" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="1276" y="535" class="ev-sh" text-anchor="middle" font-size="13" font-weight="700">جنگ ۸ ساله</text>
+<text x="1276" y="550" class="ev-sh" text-anchor="middle" font-size="10" opacity="0.7">۱۹۸۰–۱۹۸۸</text>
+<text x="1276" y="565" fill="rgba(255,255,255,0.35)" text-anchor="middle" font-size="9">۱ میلیون+ کشته</text>
+
+<!-- ═════════════ -->
+<!-- INSIGHT STRIP -->
+<!-- ═════════════ -->
+<rect x="120" y="148" width="380" height="56" rx="8" class="note-box"/>
+<text x="310" y="169" fill="#d4af37" font-size="12" font-weight="700" text-anchor="middle">💡 الگوی کلیدی:</text>
+<text x="310" y="185" fill="rgba(255,255,255,0.5)" font-size="10.5" text-anchor="middle">ایران: ۵ تحول درون‌زا + ۲ مداخله خارجی</text>
+<text x="310" y="198" fill="rgba(255,255,255,0.5)" font-size="10.5" text-anchor="middle">عراق: ۵ کودتا + ۲ اشغال خارجی + ۰ تحول ارگانیک</text>
+
+<!-- Continuity annotation -->
+<rect x="1430" y="148" width="360" height="44" rx="8" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+<text x="1610" y="168" fill="#2ecc71" font-size="11" font-weight="600" text-anchor="middle">🇮🇷 ایران: ۱۲۰ سال دولت مدرن پیوسته</text>
+<text x="1610" y="184" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">تغییر نظام ≠ تجزیه — هر بار یکپارچه‌تر</text>
+
+<rect x="1430" y="195" width="360" height="44" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="1610" y="215" fill="#e74c3c" font-size="11" font-weight="600" text-anchor="middle">🇮🇶 عراق: ۱۰۰ سال بحران هویت</text>
+<text x="1610" y="231" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">هر تغییر = شکاف عمیق‌تر قومی‌مذهبی</text>
+
+<!-- Footer -->
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 12 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۴: ایران در برابر عراق</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: Abrahamian (2008), Tripp (2007), Dodge (2003), Cleveland &amp; Bunton (2018) | تایم‌لاین تطبیقی نگارنده</text>
+</svg>

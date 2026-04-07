@@ -1,0 +1,263 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width:1; rx:10; }
+    .group-title { fill: #fff; font-size: 18px; font-weight: 800; text-anchor: middle; }
+    .year-label { fill: rgba(255,255,255,0.6); font-size: 13px; font-weight: 600; text-anchor: middle; }
+    .seg-label { fill: #fff; font-size: 11px; font-weight: 600; text-anchor: middle; }
+    .pct-label { fill: rgba(255,255,255,0.9); font-size: 12px; font-weight: 700; text-anchor: middle; }
+    .legend-text { fill: rgba(255,255,255,0.75); font-size: 13px; }
+    .axis-label { fill: rgba(255,255,255,0.4); font-size: 11px; text-anchor: end; }
+    .trend-text { fill: #d4af37; font-size: 12px; font-weight: 600; text-anchor: middle; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+
+<!-- Header -->
+<text x="960" y="42" class="title">هویت عراقی‌ها: «خود را اول چه می‌دانید؟»</text>
+<text x="960" y="68" class="subtitle">تحول هویت اولیه در سه مقطع زمانی — تفکیک شیعه عرب، سنی عرب، و کرد</text>
+<line x1="250" y1="84" x2="1670" y2="84" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- Legend -->
+<g transform="translate(480,95)">
+  <rect x="0" y="0" width="18" height="14" rx="3" fill="#3b82f6" opacity="0.7"/>
+  <text x="24" y="12" class="legend-text">عراقی (هویت ملی)</text>
+
+  <rect x="200" y="0" width="18" height="14" rx="3" fill="#e74c3c" opacity="0.7"/>
+  <text x="224" y="12" class="legend-text">مذهبی (شیعه/سنی)</text>
+
+  <rect x="420" y="0" width="18" height="14" rx="3" fill="#ff9800" opacity="0.7"/>
+  <text x="444" y="12" class="legend-text">قومی (عرب/کرد)</text>
+
+  <rect x="620" y="0" width="18" height="14" rx="3" fill="#9333ea" opacity="0.6"/>
+  <text x="644" y="12" class="legend-text">قبیله‌ای/محلی</text>
+
+  <rect x="810" y="0" width="18" height="14" rx="3" fill="rgba(255,255,255,0.15)"/>
+  <text x="834" y="12" class="legend-text">سایر/بدون پاسخ</text>
+</g>
+
+<!-- Y-Axis scale (shared) -->
+<g transform="translate(0,0)">
+  <text x="75" y="733" class="axis-label">۰%</text>
+  <text x="75" y="613" class="axis-label">۲۰%</text>
+  <text x="75" y="493" class="axis-label">۴۰%</text>
+  <text x="75" y="373" class="axis-label">۶۰%</text>
+  <text x="75" y="253" class="axis-label">۸۰%</text>
+  <text x="75" y="133" class="axis-label">۱۰۰%</text>
+  <!-- Grid lines -->
+  <line x1="85" y1="730" x2="1850" y2="730" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="85" y1="610" x2="1850" y2="610" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="85" y1="490" x2="1850" y2="490" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="85" y1="370" x2="1850" y2="370" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="85" y1="250" x2="1850" y2="250" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="85" y1="130" x2="1850" y2="130" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+</g>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SECTION 1: SHIA ARAB (x: 100-660)         -->
+<!-- Bar height scale: 600px = 100% (130→730)   -->
+<!-- Bar width: 90px. Gap between years: 20px   -->
+<!-- ══════════════════════════════════════════ -->
+<rect x="95" y="115" width="570" height="640" class="glass" filter="url(#sh)"/>
+<text x="380" y="148" class="group-title">عرب شیعه</text>
+
+<!-- 2004 Bar — x=160, width=90 -->
+<text x="205" y="750" class="year-label">۲۰۰۴</text>
+<!-- National 22% = 132px (from 730 up) -->
+<rect x="160" y="598" width="90" height="132" rx="2" fill="#3b82f6" opacity="0.7"/>
+<text x="205" y="670" class="pct-label">۲۲%</text>
+<!-- Religious 48% = 288px -->
+<rect x="160" y="310" width="90" height="288" rx="2" fill="#e74c3c" opacity="0.7"/>
+<text x="205" y="462" class="pct-label">۴۸%</text>
+<!-- Ethnic 12% = 72px -->
+<rect x="160" y="238" width="90" height="72" rx="2" fill="#ff9800" opacity="0.7"/>
+<text x="205" y="278" class="pct-label">۱۲%</text>
+<!-- Tribal 13% = 78px -->
+<rect x="160" y="160" width="90" height="78" rx="2" fill="#9333ea" opacity="0.6"/>
+<text x="205" y="204" class="pct-label">۱۳%</text>
+<!-- Other 5% = 30px -->
+<rect x="160" y="130" width="90" height="30" rx="2" fill="rgba(255,255,255,0.12)"/>
+
+<!-- 2012 Bar — x=280 -->
+<text x="325" y="750" class="year-label">۲۰۱۲</text>
+<!-- National 34% = 204px -->
+<rect x="280" y="526" width="90" height="204" rx="2" fill="#3b82f6" opacity="0.7"/>
+<text x="325" y="634" class="pct-label">۳۴%</text>
+<!-- Religious 38% = 228px -->
+<rect x="280" y="298" width="90" height="228" rx="2" fill="#e74c3c" opacity="0.7"/>
+<text x="325" y="418" class="pct-label">۳۸%</text>
+<!-- Ethnic 12% = 72px -->
+<rect x="280" y="226" width="90" height="72" rx="2" fill="#ff9800" opacity="0.7"/>
+<text x="325" y="266" class="pct-label">۱۲%</text>
+<!-- Tribal 10% = 60px -->
+<rect x="280" y="166" width="90" height="60" rx="2" fill="#9333ea" opacity="0.6"/>
+<text x="325" y="200" class="pct-label">۱۰%</text>
+<!-- Other 6% = 36px -->
+<rect x="280" y="130" width="90" height="36" rx="2" fill="rgba(255,255,255,0.12)"/>
+
+<!-- 2022 Bar — x=400 -->
+<text x="445" y="750" class="year-label">۲۰۲۲</text>
+<!-- National 48% = 288px ← Significant rise! -->
+<rect x="400" y="442" width="90" height="288" rx="2" fill="#3b82f6" opacity="0.8"/>
+<text x="445" y="592" class="pct-label" font-size="13">۴۸%</text>
+<!-- Religious 28% = 168px -->
+<rect x="400" y="274" width="90" height="168" rx="2" fill="#e74c3c" opacity="0.6"/>
+<text x="445" y="364" class="pct-label">۲۸%</text>
+<!-- Ethnic 10% = 60px -->
+<rect x="400" y="214" width="90" height="60" rx="2" fill="#ff9800" opacity="0.6"/>
+<text x="445" y="248" class="pct-label">۱۰%</text>
+<!-- Tribal 8% = 48px -->
+<rect x="400" y="166" width="90" height="48" rx="2" fill="#9333ea" opacity="0.5"/>
+<text x="445" y="194" class="pct-label">۸%</text>
+<!-- Other 6% -->
+<rect x="400" y="130" width="90" height="36" rx="2" fill="rgba(255,255,255,0.12)"/>
+
+<!-- Trend arrow for Shia national identity -->
+<line x1="205" y1="660" x2="445" y2="580" stroke="#3b82f6" stroke-width="2" opacity="0.6" marker-end="url(#arrowBlue)"/>
+<text x="340" y="565" class="trend-text" fill="#3b82f6">هویت ملی ▲ ۲۶ واحد</text>
+<line x1="205" y1="450" x2="445" y2="355" stroke="#e74c3c" stroke-width="2" opacity="0.4" stroke-dasharray="4,3"/>
+<text x="340" y="775" class="trend-text" fill="#e74c3c">هویت مذهبی ▼ ۲۰ واحد</text>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SECTION 2: SUNNI ARAB (x: 680-1240)       -->
+<!-- ══════════════════════════════════════════ -->
+<rect x="675" y="115" width="570" height="640" class="glass" filter="url(#sh)"/>
+<text x="960" y="148" class="group-title">عرب سنی</text>
+
+<!-- 2004 Bar — x=740 -->
+<text x="785" y="750" class="year-label">۲۰۰۴</text>
+<!-- National 38% = 228px -->
+<rect x="740" y="502" width="90" height="228" rx="2" fill="#3b82f6" opacity="0.7"/>
+<text x="785" y="622" class="pct-label">۳۸%</text>
+<!-- Religious 30% = 180px -->
+<rect x="740" y="322" width="90" height="180" rx="2" fill="#e74c3c" opacity="0.7"/>
+<text x="785" y="418" class="pct-label">۳۰%</text>
+<!-- Ethnic 18% = 108px -->
+<rect x="740" y="214" width="90" height="108" rx="2" fill="#ff9800" opacity="0.7"/>
+<text x="785" y="274" class="pct-label">۱۸%</text>
+<!-- Tribal 10% = 60px -->
+<rect x="740" y="154" width="90" height="60" rx="2" fill="#9333ea" opacity="0.6"/>
+<text x="785" y="188" class="pct-label">۱۰%</text>
+<!-- Other 4% -->
+<rect x="740" y="130" width="90" height="24" rx="2" fill="rgba(255,255,255,0.12)"/>
+
+<!-- 2012 Bar — x=860 -->
+<text x="905" y="750" class="year-label">۲۰۱۲</text>
+<!-- National 28% = 168px -->
+<rect x="860" y="562" width="90" height="168" rx="2" fill="#3b82f6" opacity="0.6"/>
+<text x="905" y="652" class="pct-label">۲۸%</text>
+<!-- Religious 35% = 210px -->
+<rect x="860" y="352" width="90" height="210" rx="2" fill="#e74c3c" opacity="0.7"/>
+<text x="905" y="462" class="pct-label">۳۵%</text>
+<!-- Ethnic 20% = 120px -->
+<rect x="860" y="232" width="90" height="120" rx="2" fill="#ff9800" opacity="0.7"/>
+<text x="905" y="296" class="pct-label">۲۰%</text>
+<!-- Tribal 12% = 72px -->
+<rect x="860" y="160" width="90" height="72" rx="2" fill="#9333ea" opacity="0.6"/>
+<text x="905" y="200" class="pct-label">۱۲%</text>
+<!-- Other 5% -->
+<rect x="860" y="130" width="90" height="30" rx="2" fill="rgba(255,255,255,0.12)"/>
+
+<!-- 2022 Bar — x=980 -->
+<text x="1025" y="750" class="year-label">۲۰۲۲</text>
+<!-- National 42% = 252px -->
+<rect x="980" y="478" width="90" height="252" rx="2" fill="#3b82f6" opacity="0.8"/>
+<text x="1025" y="610" class="pct-label" font-size="13">۴۲%</text>
+<!-- Religious 25% = 150px -->
+<rect x="980" y="328" width="90" height="150" rx="2" fill="#e74c3c" opacity="0.6"/>
+<text x="1025" y="408" class="pct-label">۲۵%</text>
+<!-- Ethnic 18% = 108px -->
+<rect x="980" y="220" width="90" height="108" rx="2" fill="#ff9800" opacity="0.6"/>
+<text x="1025" y="278" class="pct-label">۱۸%</text>
+<!-- Tribal 10% = 60px -->
+<rect x="980" y="160" width="90" height="60" rx="2" fill="#9333ea" opacity="0.5"/>
+<text x="1025" y="194" class="pct-label">۱۰%</text>
+<!-- Other 5% -->
+<rect x="980" y="130" width="90" height="30" rx="2" fill="rgba(255,255,255,0.12)"/>
+
+<!-- Trend: Sunni national identity dipped then recovered -->
+<text x="905" y="775" class="trend-text" fill="#3b82f6">هویت ملی: ۳۸→۲۸→۴۲ (U-shape)</text>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- SECTION 3: KURDS (x: 1260-1820)           -->
+<!-- ══════════════════════════════════════════ -->
+<rect x="1255" y="115" width="570" height="640" class="glass" filter="url(#sh)"/>
+<text x="1540" y="148" class="group-title">کرد</text>
+
+<!-- 2004 Bar — x=1320 -->
+<text x="1365" y="750" class="year-label">۲۰۰۴</text>
+<!-- National (Iraqi) 8% = 48px -->
+<rect x="1320" y="682" width="90" height="48" rx="2" fill="#3b82f6" opacity="0.5"/>
+<text x="1365" y="710" class="pct-label">۸%</text>
+<!-- Religious 5% = 30px -->
+<rect x="1320" y="652" width="90" height="30" rx="2" fill="#e74c3c" opacity="0.5"/>
+<text x="1365" y="672" class="pct-label" font-size="10">۵%</text>
+<!-- Ethnic (Kurdish) 72% = 432px -->
+<rect x="1320" y="220" width="90" height="432" rx="2" fill="#ff9800" opacity="0.8"/>
+<text x="1365" y="442" class="pct-label" font-size="13">۷۲%</text>
+<!-- Tribal 10% = 60px -->
+<rect x="1320" y="160" width="90" height="60" rx="2" fill="#9333ea" opacity="0.6"/>
+<text x="1365" y="194" class="pct-label">۱۰%</text>
+<!-- Other 5% -->
+<rect x="1320" y="130" width="90" height="30" rx="2" fill="rgba(255,255,255,0.12)"/>
+
+<!-- 2012 Bar — x=1440 -->
+<text x="1485" y="750" class="year-label">۲۰۱۲</text>
+<!-- National 5% = 30px -->
+<rect x="1440" y="700" width="90" height="30" rx="2" fill="#3b82f6" opacity="0.4"/>
+<text x="1485" y="720" class="pct-label" font-size="10">۵%</text>
+<!-- Religious 5% = 30px -->
+<rect x="1440" y="670" width="90" height="30" rx="2" fill="#e74c3c" opacity="0.5"/>
+<text x="1485" y="690" class="pct-label" font-size="10">۵%</text>
+<!-- Ethnic 78% = 468px -->
+<rect x="1440" y="202" width="90" height="468" rx="2" fill="#ff9800" opacity="0.85"/>
+<text x="1485" y="442" class="pct-label" font-size="13">۷۸%</text>
+<!-- Tribal 8% = 48px -->
+<rect x="1440" y="154" width="90" height="48" rx="2" fill="#9333ea" opacity="0.5"/>
+<text x="1485" y="182" class="pct-label">۸%</text>
+<!-- Other 4% -->
+<rect x="1440" y="130" width="90" height="24" rx="2" fill="rgba(255,255,255,0.12)"/>
+
+<!-- 2022 Bar — x=1560 -->
+<text x="1605" y="750" class="year-label">۲۰۲۲</text>
+<!-- National 12% = 72px -->
+<rect x="1560" y="658" width="90" height="72" rx="2" fill="#3b82f6" opacity="0.6"/>
+<text x="1605" y="698" class="pct-label">۱۲%</text>
+<!-- Religious 5% = 30px -->
+<rect x="1560" y="628" width="90" height="30" rx="2" fill="#e74c3c" opacity="0.5"/>
+<text x="1605" y="648" class="pct-label" font-size="10">۵%</text>
+<!-- Ethnic 65% = 390px -->
+<rect x="1560" y="238" width="90" height="390" rx="2" fill="#ff9800" opacity="0.75"/>
+<text x="1605" y="440" class="pct-label" font-size="13">۶۵%</text>
+<!-- Tribal 10% = 60px -->
+<rect x="1560" y="178" width="90" height="60" rx="2" fill="#9333ea" opacity="0.5"/>
+<text x="1605" y="212" class="pct-label">۱۰%</text>
+<!-- Other 8% -->
+<rect x="1560" y="130" width="90" height="48" rx="2" fill="rgba(255,255,255,0.12)"/>
+
+<!-- Trend: Kurdish ethnic identity declining slightly, Iraqi rising -->
+<text x="1485" y="775" class="trend-text" fill="#ff9800">هویت قومی: ۷۲→۷۸→۶۵ (کاهش پس از داعش)</text>
+<text x="1485" y="793" class="trend-text" fill="#3b82f6">هویت عراقی: ۸→۵→۱۲ (رشد جزئی)</text>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- BOTTOM INSIGHT BAR                         -->
+<!-- ══════════════════════════════════════════ -->
+<rect x="60" y="810" width="1800" height="110" rx="10" class="note-box"/>
+<text x="960" y="840" fill="#d4af37" font-size="16" font-weight="700" text-anchor="middle">📊 روند کلیدی: هویت ملی عراقی در حال رشد است — به‌ویژه در میان شیعیان عرب</text>
+<text x="960" y="865" fill="rgba(255,255,255,0.55)" font-size="12" text-anchor="middle">شیعیان: ۲۲%→۴۸% هویت ملی (+۲۶) | سنی‌ها: ۳۸%→۴۲% (+۴ با افت و بازگشت) | کردها: ۸%→۱۲% (همچنان قومی‌محور)</text>
+<text x="960" y="888" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">عامل تغییر: جنبش تشرین ۲۰۱۹ — نسل جوان شعار «نه ایران، نه آمریکا» سر داد = ناسیونالیسم عراقی فرامذهبی</text>
+<text x="960" y="908" fill="rgba(255,255,255,0.3)" font-size="11" text-anchor="middle">استثنا: کردها همچنان ۶۵% هویت قومی دارند — اما رفراندوم شکست‌خورده ۲۰۱۷ و بحران اقتصادی KRG = کاهش نسبی</text>
+
+<!-- Footer -->
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 17 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۵: افکار عمومی و هویت</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: Arab Barometer Waves III-VII, WVS Iraq Module, Munqith Dagher/IIACSS (2004-2022) | تحلیل روند نگارنده</text>
+</svg>

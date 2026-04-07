@@ -1,0 +1,325 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 30px; font-weight: 900; text-anchor: middle; }
+    .sub { fill: #d4af37; font-size: 15px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .rl { fill: rgba(255,255,255,0.8); font-size: 11px; font-weight: 600; text-anchor: end; }
+    .cl { fill: rgba(255,255,255,0.5); font-size: 10px; font-weight: 600; text-anchor: middle; }
+    .cell { rx: 3; stroke: rgba(0,0,0,0.3); stroke-width: 1; }
+    .cv { fill: #fff; font-size: 9px; font-weight: 700; text-anchor: middle; dominant-baseline: central; }
+    .sl { fill: rgba(255,255,255,0.35); font-size: 9px; font-weight: 600; text-anchor: end; }
+    .ta { font-size: 14px; text-anchor: middle; }
+    .insight { rx:10; stroke-width:1; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+<text x="960" y="40" class="title">هیت‌مپ اعتماد: سقوط اعتماد عمومی عراقی‌ها (۲۰۰۴–۲۰۲۲)</text>
+<text x="960" y="62" class="sub">هر سلول = درصد «اعتماد» یا «اعتماد زیاد» | سبز = بالا | قرمز = بحرانی | منابع: Arab Barometer, Gallup, IIACSS</text>
+<line x1="250" y1="75" x2="1670" y2="75" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- راهنما -->
+<g transform="translate(80,88)">
+  <rect x="0" y="0" width="22" height="12" rx="2" fill="rgba(46,204,113,0.8)"/><text x="28" y="10" fill="rgba(255,255,255,0.5)" font-size="9">70+</text>
+  <rect x="60" y="0" width="22" height="12" rx="2" fill="rgba(46,204,113,0.5)"/><text x="88" y="10" fill="rgba(255,255,255,0.5)" font-size="9">50–69</text>
+  <rect x="130" y="0" width="22" height="12" rx="2" fill="rgba(241,196,15,0.5)"/><text x="158" y="10" fill="rgba(255,255,255,0.5)" font-size="9">30–49</text>
+  <rect x="200" y="0" width="22" height="12" rx="2" fill="rgba(255,152,0,0.5)"/><text x="228" y="10" fill="rgba(255,255,255,0.5)" font-size="9">15–29</text>
+  <rect x="270" y="0" width="22" height="12" rx="2" fill="rgba(231,76,60,0.7)"/><text x="298" y="10" fill="rgba(255,255,255,0.5)" font-size="9">&lt;15</text>
+</g>
+
+<!-- متغیرهای layout -->
+<!-- cols: x0=310, w=120, gap=6 => 10 cols -->
+<!-- rows: y0=125, h=38, gap=3 -->
+
+<!-- سربرگ ستون -->
+<text x="370" y="118" class="cl">۲۰۰۴</text>
+<text x="496" y="118" class="cl">۲۰۰۶</text>
+<text x="622" y="118" class="cl">۲۰۰۸</text>
+<text x="748" y="118" class="cl">۲۰۱۰</text>
+<text x="874" y="118" class="cl">۲۰۱۲</text>
+<text x="1000" y="118" class="cl">۲۰۱۴</text>
+<text x="1126" y="118" class="cl">۲۰۱۶</text>
+<text x="1252" y="118" class="cl">۲۰۱۸</text>
+<text x="1378" y="118" class="cl">۲۰۲۰</text>
+<text x="1504" y="118" class="cl">۲۰۲۲</text>
+<text x="1610" y="118" class="cl">Δ</text>
+
+<!-- === سکشن ۱: نهادهای سیاسی === -->
+<text x="295" y="140" class="sl" fill="#e74c3c">نهادهای سیاسی</text>
+
+<!-- R1: دولت -->
+<text x="295" y="158" class="rl">دولت مرکزی</text>
+<rect x="310" y="143" width="120" height="30" class="cell" fill="rgba(46,204,113,0.5)"/><text x="370" y="158" class="cv">52</text>
+<rect x="436" y="143" width="120" height="30" class="cell" fill="rgba(241,196,15,0.5)"/><text x="496" y="158" class="cv">38</text>
+<rect x="562" y="143" width="120" height="30" class="cell" fill="rgba(241,196,15,0.4)"/><text x="622" y="158" class="cv">35</text>
+<rect x="688" y="143" width="120" height="30" class="cell" fill="rgba(241,196,15,0.4)"/><text x="748" y="158" class="cv">32</text>
+<rect x="814" y="143" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="874" y="158" class="cv">28</text>
+<rect x="940" y="143" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1000" y="158" class="cv">22</text>
+<rect x="1066" y="143" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1126" y="158" class="cv">20</text>
+<rect x="1192" y="143" width="120" height="30" class="cell" fill="rgba(255,152,0,0.4)"/><text x="1252" y="158" class="cv">18</text>
+<rect x="1318" y="143" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1378" y="158" class="cv">20</text>
+<rect x="1444" y="143" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1504" y="158" class="cv">22</text>
+<text x="1610" y="158" class="ta" fill="#e74c3c">▼30</text>
+
+<!-- R2: پارلمان -->
+<text x="295" y="191" class="rl">پارلمان</text>
+<rect x="310" y="176" width="120" height="30" class="cell" fill="rgba(241,196,15,0.5)"/><text x="370" y="191" class="cv">45</text>
+<rect x="436" y="176" width="120" height="30" class="cell" fill="rgba(241,196,15,0.4)"/><text x="496" y="191" class="cv">32</text>
+<rect x="562" y="176" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="622" y="191" class="cv">25</text>
+<rect x="688" y="176" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="748" y="191" class="cv">22</text>
+<rect x="814" y="176" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="874" y="191" class="cv">20</text>
+<rect x="940" y="176" width="120" height="30" class="cell" fill="rgba(255,152,0,0.4)"/><text x="1000" y="191" class="cv">18</text>
+<rect x="1066" y="176" width="120" height="30" class="cell" fill="rgba(231,76,60,0.5)"/><text x="1126" y="191" class="cv">15</text>
+<rect x="1192" y="176" width="120" height="30" class="cell" fill="rgba(231,76,60,0.6)"/><text x="1252" y="191" class="cv">12</text>
+<rect x="1318" y="176" width="120" height="30" class="cell" fill="rgba(231,76,60,0.5)"/><text x="1378" y="191" class="cv">14</text>
+<rect x="1444" y="176" width="120" height="30" class="cell" fill="rgba(255,152,0,0.4)"/><text x="1504" y="191" class="cv">18</text>
+<text x="1610" y="191" class="ta" fill="#e74c3c">▼27</text>
+
+<!-- R3: احزاب -->
+<text x="295" y="224" class="rl">احزاب سیاسی</text>
+<rect x="310" y="209" width="120" height="30" class="cell" fill="rgba(241,196,15,0.4)"/><text x="370" y="224" class="cv">30</text>
+<rect x="436" y="209" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="496" y="224" class="cv">20</text>
+<rect x="562" y="209" width="120" height="30" class="cell" fill="rgba(255,152,0,0.4)"/><text x="622" y="224" class="cv">15</text>
+<rect x="688" y="209" width="120" height="30" class="cell" fill="rgba(231,76,60,0.5)"/><text x="748" y="224" class="cv">12</text>
+<rect x="814" y="209" width="120" height="30" class="cell" fill="rgba(231,76,60,0.6)"/><text x="874" y="224" class="cv">10</text>
+<rect x="940" y="209" width="120" height="30" class="cell" fill="rgba(231,76,60,0.7)"/><text x="1000" y="224" class="cv">8</text>
+<rect x="1066" y="209" width="120" height="30" class="cell" fill="rgba(231,76,60,0.8)"/><text x="1126" y="224" class="cv">7</text>
+<rect x="1192" y="209" width="120" height="30" class="cell" fill="rgba(231,76,60,0.8)"/><text x="1252" y="224" class="cv">6</text>
+<rect x="1318" y="209" width="120" height="30" class="cell" fill="rgba(231,76,60,0.8)"/><text x="1378" y="224" class="cv">7</text>
+<rect x="1444" y="209" width="120" height="30" class="cell" fill="rgba(231,76,60,0.8)"/><text x="1504" y="224" class="cv">8</text>
+<text x="1610" y="224" class="ta" fill="#e74c3c">▼22</text>
+
+<!-- R4: قضایی -->
+<text x="295" y="257" class="rl">قوه قضاییه</text>
+<rect x="310" y="242" width="120" height="30" class="cell" fill="rgba(241,196,15,0.4)"/><text x="370" y="257" class="cv">35</text>
+<rect x="436" y="242" width="120" height="30" class="cell" fill="rgba(241,196,15,0.4)"/><text x="496" y="257" class="cv">30</text>
+<rect x="562" y="242" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="622" y="257" class="cv">28</text>
+<rect x="688" y="242" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="748" y="257" class="cv">26</text>
+<rect x="814" y="242" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="874" y="257" class="cv">24</text>
+<rect x="940" y="242" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1000" y="257" class="cv">22</text>
+<rect x="1066" y="242" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1126" y="257" class="cv">22</text>
+<rect x="1192" y="242" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1252" y="257" class="cv">20</text>
+<rect x="1318" y="242" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1378" y="257" class="cv">22</text>
+<rect x="1444" y="242" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1504" y="257" class="cv">25</text>
+<text x="1610" y="257" class="ta" fill="#e74c3c">▼10</text>
+
+<!-- === سکشن ۲: امنیتی === -->
+<text x="295" y="287" class="sl" fill="#2ecc71">نهادهای امنیتی</text>
+
+<!-- R5: ارتش -->
+<text x="295" y="305" class="rl">ارتش</text>
+<rect x="310" y="290" width="120" height="30" class="cell" fill="rgba(241,196,15,0.4)"/><text x="370" y="305" class="cv">35</text>
+<rect x="436" y="290" width="120" height="30" class="cell" fill="rgba(241,196,15,0.5)"/><text x="496" y="305" class="cv">40</text>
+<rect x="562" y="290" width="120" height="30" class="cell" fill="rgba(46,204,113,0.4)"/><text x="622" y="305" class="cv">50</text>
+<rect x="688" y="290" width="120" height="30" class="cell" fill="rgba(46,204,113,0.5)"/><text x="748" y="305" class="cv">55</text>
+<rect x="814" y="290" width="120" height="30" class="cell" fill="rgba(46,204,113,0.5)"/><text x="874" y="305" class="cv">58</text>
+<rect x="940" y="290" width="120" height="30" class="cell" fill="rgba(241,196,15,0.4)"/><text x="1000" y="305" class="cv">35</text>
+<rect x="1066" y="290" width="120" height="30" class="cell" fill="rgba(46,204,113,0.5)"/><text x="1126" y="305" class="cv">60</text>
+<rect x="1192" y="290" width="120" height="30" class="cell" fill="rgba(46,204,113,0.6)"/><text x="1252" y="305" class="cv">65</text>
+<rect x="1318" y="290" width="120" height="30" class="cell" fill="rgba(46,204,113,0.7)"/><text x="1378" y="305" class="cv">70</text>
+<rect x="1444" y="290" width="120" height="30" class="cell" fill="rgba(46,204,113,0.7)"/><text x="1504" y="305" class="cv">72</text>
+<text x="1610" y="305" class="ta" fill="#2ecc71">▲37</text>
+
+<!-- R6: حشد -->
+<text x="295" y="338" class="rl">حشد الشعبی</text>
+<rect x="310" y="323" width="120" height="30" class="cell" fill="rgba(128,128,128,0.2)"/><text x="370" y="338" class="cv">—</text>
+<rect x="436" y="323" width="120" height="30" class="cell" fill="rgba(128,128,128,0.2)"/><text x="496" y="338" class="cv">—</text>
+<rect x="562" y="323" width="120" height="30" class="cell" fill="rgba(128,128,128,0.2)"/><text x="622" y="338" class="cv">—</text>
+<rect x="688" y="323" width="120" height="30" class="cell" fill="rgba(128,128,128,0.2)"/><text x="748" y="338" class="cv">—</text>
+<rect x="814" y="323" width="120" height="30" class="cell" fill="rgba(128,128,128,0.2)"/><text x="874" y="338" class="cv">—</text>
+<rect x="940" y="323" width="120" height="30" class="cell" fill="rgba(46,204,113,0.6)"/><text x="1000" y="338" class="cv">68</text>
+<rect x="1066" y="323" width="120" height="30" class="cell" fill="rgba(46,204,113,0.6)"/><text x="1126" y="338" class="cv">65</text>
+<rect x="1192" y="323" width="120" height="30" class="cell" fill="rgba(46,204,113,0.5)"/><text x="1252" y="338" class="cv">60</text>
+<rect x="1318" y="323" width="120" height="30" class="cell" fill="rgba(46,204,113,0.5)"/><text x="1378" y="338" class="cv">58</text>
+<rect x="1444" y="323" width="120" height="30" class="cell" fill="rgba(46,204,113,0.5)"/><text x="1504" y="338" class="cv">58</text>
+<text x="1610" y="338" class="ta" fill="#ff9800">▼10</text>
+
+<!-- === سکشن ۳: اجتماعی === -->
+<text x="295" y="368" class="sl" fill="#d4af37">نهادهای اجتماعی</text>
+
+<!-- R7: مراجع دینی -->
+<text x="295" y="386" class="rl">مراجع دینی</text>
+<rect x="310" y="371" width="120" height="30" class="cell" fill="rgba(46,204,113,0.8)"/><text x="370" y="386" class="cv">75</text>
+<rect x="436" y="371" width="120" height="30" class="cell" fill="rgba(46,204,113,0.7)"/><text x="496" y="386" class="cv">70</text>
+<rect x="562" y="371" width="120" height="30" class="cell" fill="rgba(46,204,113,0.6)"/><text x="622" y="386" class="cv">68</text>
+<rect x="688" y="371" width="120" height="30" class="cell" fill="rgba(46,204,113,0.5)"/><text x="748" y="386" class="cv">62</text>
+<rect x="814" y="371" width="120" height="30" class="cell" fill="rgba(46,204,113,0.5)"/><text x="874" y="386" class="cv">60</text>
+<rect x="940" y="371" width="120" height="30" class="cell" fill="rgba(46,204,113,0.5)"/><text x="1000" y="386" class="cv">58</text>
+<rect x="1066" y="371" width="120" height="30" class="cell" fill="rgba(46,204,113,0.5)"/><text x="1126" y="386" class="cv">55</text>
+<rect x="1192" y="371" width="120" height="30" class="cell" fill="rgba(46,204,113,0.5)"/><text x="1252" y="386" class="cv">55</text>
+<rect x="1318" y="371" width="120" height="30" class="cell" fill="rgba(46,204,113,0.5)"/><text x="1378" y="386" class="cv">55</text>
+<rect x="1444" y="371" width="120" height="30" class="cell" fill="rgba(46,204,113,0.5)"/><text x="1504" y="386" class="cv">55</text>
+<text x="1610" y="386" class="ta" fill="#ff9800">▼20</text>
+
+<!-- === سکشن ۴: بازیگران خارجی === -->
+<text x="295" y="416" class="sl" fill="#3b82f6">بازیگران خارجی</text>
+
+<!-- R8: آمریکا -->
+<text x="295" y="434" class="rl">آمریکا 🇺🇸</text>
+<rect x="310" y="419" width="120" height="30" class="cell" fill="rgba(46,204,113,0.5)"/><text x="370" y="434" class="cv">55</text>
+<rect x="436" y="419" width="120" height="30" class="cell" fill="rgba(241,196,15,0.4)"/><text x="496" y="434" class="cv">30</text>
+<rect x="562" y="419" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="622" y="434" class="cv">20</text>
+<rect x="688" y="419" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="748" y="434" class="cv">22</text>
+<rect x="814" y="419" width="120" height="30" class="cell" fill="rgba(255,152,0,0.4)"/><text x="874" y="434" class="cv">18</text>
+<rect x="940" y="419" width="120" height="30" class="cell" fill="rgba(255,152,0,0.4)"/><text x="1000" y="434" class="cv">15</text>
+<rect x="1066" y="419" width="120" height="30" class="cell" fill="rgba(231,76,60,0.5)"/><text x="1126" y="434" class="cv">12</text>
+<rect x="1192" y="419" width="120" height="30" class="cell" fill="rgba(231,76,60,0.6)"/><text x="1252" y="434" class="cv">10</text>
+<rect x="1318" y="419" width="120" height="30" class="cell" fill="rgba(231,76,60,0.6)"/><text x="1378" y="434" class="cv">10</text>
+<rect x="1444" y="419" width="120" height="30" class="cell" fill="rgba(231,76,60,0.5)"/><text x="1504" y="434" class="cv">12</text>
+<text x="1610" y="434" class="ta" fill="#e74c3c">▼43</text>
+
+<!-- R9: ایران -->
+<text x="295" y="467" class="rl">ایران 🇮🇷</text>
+<rect x="310" y="452" width="120" height="30" class="cell" fill="rgba(241,196,15,0.5)"/><text x="370" y="467" class="cv">40</text>
+<rect x="436" y="452" width="120" height="30" class="cell" fill="rgba(241,196,15,0.5)"/><text x="496" y="467" class="cv">45</text>
+<rect x="562" y="452" width="120" height="30" class="cell" fill="rgba(241,196,15,0.5)"/><text x="622" y="467" class="cv">42</text>
+<rect x="688" y="452" width="120" height="30" class="cell" fill="rgba(241,196,15,0.5)"/><text x="748" y="467" class="cv">38</text>
+<rect x="814" y="452" width="120" height="30" class="cell" fill="rgba(241,196,15,0.4)"/><text x="874" y="467" class="cv">35</text>
+<rect x="940" y="452" width="120" height="30" class="cell" fill="rgba(241,196,15,0.5)"/><text x="1000" y="467" class="cv">40</text>
+<rect x="1066" y="452" width="120" height="30" class="cell" fill="rgba(241,196,15,0.4)"/><text x="1126" y="467" class="cv">32</text>
+<rect x="1192" y="452" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1252" y="467" class="cv">25</text>
+<rect x="1318" y="452" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1378" y="467" class="cv">22</text>
+<rect x="1444" y="452" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1504" y="467" class="cv">20</text>
+<text x="1610" y="467" class="ta" fill="#e74c3c">▼20</text>
+
+<!-- R10: عربستان -->
+<text x="295" y="500" class="rl">عربستان 🇸🇦</text>
+<rect x="310" y="485" width="120" height="30" class="cell" fill="rgba(231,76,60,0.6)"/><text x="370" y="500" class="cv">10</text>
+<rect x="436" y="485" width="120" height="30" class="cell" fill="rgba(231,76,60,0.6)"/><text x="496" y="500" class="cv">8</text>
+<rect x="562" y="485" width="120" height="30" class="cell" fill="rgba(231,76,60,0.7)"/><text x="622" y="500" class="cv">8</text>
+<rect x="688" y="485" width="120" height="30" class="cell" fill="rgba(231,76,60,0.6)"/><text x="748" y="500" class="cv">10</text>
+<rect x="814" y="485" width="120" height="30" class="cell" fill="rgba(231,76,60,0.6)"/><text x="874" y="500" class="cv">10</text>
+<rect x="940" y="485" width="120" height="30" class="cell" fill="rgba(231,76,60,0.6)"/><text x="1000" y="500" class="cv">8</text>
+<rect x="1066" y="485" width="120" height="30" class="cell" fill="rgba(231,76,60,0.6)"/><text x="1126" y="500" class="cv">10</text>
+<rect x="1192" y="485" width="120" height="30" class="cell" fill="rgba(231,76,60,0.5)"/><text x="1252" y="500" class="cv">12</text>
+<rect x="1318" y="485" width="120" height="30" class="cell" fill="rgba(231,76,60,0.5)"/><text x="1378" y="500" class="cv">15</text>
+<rect x="1444" y="485" width="120" height="30" class="cell" fill="rgba(255,152,0,0.4)"/><text x="1504" y="500" class="cv">18</text>
+<text x="1610" y="500" class="ta" fill="#2ecc71">▲8</text>
+
+<!-- R11: سازمان ملل -->
+<text x="295" y="533" class="rl">سازمان ملل 🇺🇳</text>
+<rect x="310" y="518" width="120" height="30" class="cell" fill="rgba(241,196,15,0.5)"/><text x="370" y="533" class="cv">45</text>
+<rect x="436" y="518" width="120" height="30" class="cell" fill="rgba(241,196,15,0.4)"/><text x="496" y="533" class="cv">35</text>
+<rect x="562" y="518" width="120" height="30" class="cell" fill="rgba(241,196,15,0.4)"/><text x="622" y="533" class="cv">30</text>
+<rect x="688" y="518" width="120" height="30" class="cell" fill="rgba(241,196,15,0.4)"/><text x="748" y="533" class="cv">30</text>
+<rect x="814" y="518" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="874" y="533" class="cv">28</text>
+<rect x="940" y="518" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1000" y="533" class="cv">25</text>
+<rect x="1066" y="518" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1126" y="533" class="cv">22</text>
+<rect x="1192" y="518" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1252" y="533" class="cv">20</text>
+<rect x="1318" y="518" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1378" y="533" class="cv">22</text>
+<rect x="1444" y="518" width="120" height="30" class="cell" fill="rgba(255,152,0,0.5)"/><text x="1504" y="533" class="cv">25</text>
+<text x="1610" y="533" class="ta" fill="#e74c3c">▼20</text>
+
+<!-- === بخش تحلیلی === -->
+<rect x="60" y="560" width="900" height="230" class="glass" filter="url(#sh)"/>
+<text x="510" y="590" fill="#d4af37" font-size="18" font-weight="700" text-anchor="middle">📊 ۵ یافته‌ی کلیدی از هیت‌مپ</text>
+
+<g transform="translate(90,605)">
+  <rect x="0" y="0" width="840" height="35" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+  <text x="420" y="14" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">۱. سقوط آزاد اعتماد سیاسی</text>
+  <text x="420" y="28" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">احزاب: 30→8% | پارلمان: 45→18% | دولت: 52→22% — روند یکپارچه نزولی در ۲۰ سال</text>
+
+  <rect x="0" y="42" width="840" height="35" rx="6" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+  <text x="420" y="56" fill="#2ecc71" font-size="12" font-weight="700" text-anchor="middle">۲. تنها استثنا: ارتش (▲37 واحد)</text>
+  <text x="420" y="70" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">ارتش بعد از شکست داعش اعتبار یافت — اما در ۲۰۱۴ سقوط موصل اعتماد را کاهش داد (35%)</text>
+
+  <rect x="0" y="84" width="840" height="35" rx="6" fill="rgba(59,130,246,0.06)" stroke="rgba(59,130,246,0.15)" stroke-width="1"/>
+  <text x="420" y="98" fill="#3b82f6" font-size="12" font-weight="700" text-anchor="middle">۳. سقوط اعتماد به آمریکا: بزرگ‌ترین سقوط (▼43 واحد)</text>
+  <text x="420" y="112" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">از 55% (۲۰۰۴ — امید اولیه) به 10% (۲۰۱۸) — حتی کردها که متحد بودند ناامید شدند</text>
+
+  <rect x="0" y="126" width="840" height="35" rx="6" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+  <text x="420" y="140" fill="#ff9800" font-size="12" font-weight="700" text-anchor="middle">۴. ایران نیز اعتماد از دست داد (▼20 واحد)</text>
+  <text x="420" y="154" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">شیعیان عراقی ایران را «همسایه‌ی مداخله‌گر» می‌دانند نه «حامی» — تشرین ۲۰۱۹ نقطه‌ی عطف</text>
+
+  <rect x="0" y="168" width="840" height="35" rx="6" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+  <text x="420" y="182" fill="#d4af37" font-size="12" font-weight="700" text-anchor="middle">۵. مراجع دینی تنها نهاد پایدار (اما در حال کاهش)</text>
+  <text x="420" y="196" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">سیستانی = بالاترین اعتماد فردی — اما نگرانی از جانشینی و سیاسی شدن مراجع</text>
+</g>
+
+<!-- رادار مینی (سمت راست) -->
+<rect x="1000" y="560" width="860" height="230" class="glass" filter="url(#sh)"/>
+<text x="1430" y="590" fill="#fff" font-size="16" font-weight="700" text-anchor="middle">اعتماد ۲۰۲۲: رادار مقایسه‌ای</text>
+
+<!-- simplified radar as stacked bars -->
+<g transform="translate(1050,610)">
+  <!-- ارتش -->
+  <text x="0" y="14" fill="rgba(255,255,255,0.6)" font-size="11">ارتش</text>
+  <rect x="100" y="2" width="660" height="16" rx="3" fill="rgba(255,255,255,0.05)"/>
+  <rect x="100" y="2" width="475" height="16" rx="3" fill="rgba(46,204,113,0.6)"/>
+  <text x="585" y="14" fill="#fff" font-size="10" font-weight="700">72%</text>
+
+  <!-- حشد -->
+  <text x="0" y="38" fill="rgba(255,255,255,0.6)" font-size="11">حشد</text>
+  <rect x="100" y="26" width="660" height="16" rx="3" fill="rgba(255,255,255,0.05)"/>
+  <rect x="100" y="26" width="383" height="16" rx="3" fill="rgba(46,204,113,0.5)"/>
+  <text x="493" y="38" fill="#fff" font-size="10" font-weight="700">58%</text>
+
+  <!-- مراجع -->
+  <text x="0" y="62" fill="rgba(255,255,255,0.6)" font-size="11">مراجع</text>
+  <rect x="100" y="50" width="660" height="16" rx="3" fill="rgba(255,255,255,0.05)"/>
+  <rect x="100" y="50" width="363" height="16" rx="3" fill="rgba(46,204,113,0.5)"/>
+  <text x="473" y="62" fill="#fff" font-size="10" font-weight="700">55%</text>
+
+  <!-- رسانه -->
+  <text x="0" y="86" fill="rgba(255,255,255,0.6)" font-size="11">رسانه</text>
+  <rect x="100" y="74" width="660" height="16" rx="3" fill="rgba(255,255,255,0.05)"/>
+  <rect x="100" y="74" width="231" height="16" rx="3" fill="rgba(241,196,15,0.5)"/>
+  <text x="341" y="86" fill="#fff" font-size="10" font-weight="700">35%</text>
+
+  <!-- قضایی -->
+  <text x="0" y="110" fill="rgba(255,255,255,0.6)" font-size="11">قضایی</text>
+  <rect x="100" y="98" width="660" height="16" rx="3" fill="rgba(255,255,255,0.05)"/>
+  <rect x="100" y="98" width="165" height="16" rx="3" fill="rgba(255,152,0,0.5)"/>
+  <text x="275" y="110" fill="#fff" font-size="10" font-weight="700">25%</text>
+
+  <!-- دولت -->
+  <text x="0" y="134" fill="rgba(255,255,255,0.6)" font-size="11">دولت</text>
+  <rect x="100" y="122" width="660" height="16" rx="3" fill="rgba(255,255,255,0.05)"/>
+  <rect x="100" y="122" width="145" height="16" rx="3" fill="rgba(255,152,0,0.5)"/>
+  <text x="255" y="134" fill="#fff" font-size="10" font-weight="700">22%</text>
+
+  <!-- پارلمان -->
+  <text x="0" y="158" fill="rgba(255,255,255,0.6)" font-size="11">پارلمان</text>
+  <rect x="100" y="146" width="660" height="16" rx="3" fill="rgba(255,255,255,0.05)"/>
+  <rect x="100" y="146" width="119" height="16" rx="3" fill="rgba(231,76,60,0.5)"/>
+  <text x="229" y="158" fill="#fff" font-size="10" font-weight="700">18%</text>
+
+  <!-- آمریکا -->
+  <text x="0" y="182" fill="rgba(255,255,255,0.6)" font-size="11">آمریکا</text>
+  <rect x="100" y="170" width="660" height="16" rx="3" fill="rgba(255,255,255,0.05)"/>
+  <rect x="100" y="170" width="79" height="16" rx="3" fill="rgba(231,76,60,0.6)"/>
+  <text x="189" y="182" fill="#fff" font-size="10" font-weight="700">12%</text>
+
+  <!-- احزاب -->
+  <text x="0" y="206" fill="rgba(255,255,255,0.6)" font-size="11">احزاب</text>
+  <rect x="100" y="194" width="660" height="16" rx="3" fill="rgba(255,255,255,0.05)"/>
+  <rect x="100" y="194" width="53" height="16" rx="3" fill="rgba(231,76,60,0.8)"/>
+  <text x="163" y="206" fill="#fff" font-size="10" font-weight="700">8%</text>
+</g>
+
+<!-- نقل‌قول -->
+<rect x="60" y="810" width="1800" height="48" rx="8" fill="rgba(231,76,60,0.05)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="960" y="838" fill="#e74c3c" font-size="14" font-weight="500" text-anchor="middle" font-style="italic">«مردم عراق به هیچ‌کس اعتماد ندارند — نه دولت، نه احزاب، نه آمریکا، نه ایران. فقط ارتش و آیت‌الله سیستانی.» — Arab Barometer ۲۰۲۲</text>
+
+<!-- آمار سریع -->
+<rect x="60" y="875" width="1800" height="60" class="glass"/>
+<text x="240" y="905" fill="#e74c3c" font-size="26" font-weight="900" text-anchor="middle">۸%</text>
+<text x="240" y="925" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">اعتماد به احزاب (پایین‌ترین جهان)</text>
+<text x="560" y="905" fill="#ff9800" font-size="26" font-weight="900" text-anchor="middle">▼۴۳pt</text>
+<text x="560" y="925" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">سقوط اعتماد به آمریکا</text>
+<text x="880" y="905" fill="#2ecc71" font-size="26" font-weight="900" text-anchor="middle">۷۲%</text>
+<text x="880" y="925" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">اعتماد به ارتش (بالاترین)</text>
+<text x="1200" y="905" fill="#d4af37" font-size="26" font-weight="900" text-anchor="middle">۵۵%</text>
+<text x="1200" y="925" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">اعتماد به مراجع (در حال کاهش)</text>
+<text x="1520" y="905" fill="#3b82f6" font-size="26" font-weight="900" text-anchor="middle">▼۲۰pt</text>
+<text x="1520" y="925" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">سقوط اعتماد به ایران</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 10 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۳: سقوط اعتماد عمومی</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: Arab Barometer 2006–2022, Gallup World Poll, IIACSS Baghdad, NDI Iraq Polls, Chatham House Surveys</text>
+</svg>

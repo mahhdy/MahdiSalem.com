@@ -1,0 +1,208 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+  </style>
+  <linearGradient id="bg42" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0a0e27"/>
+    <stop offset="50%" stop-color="#0d1333"/>
+    <stop offset="100%" stop-color="#1a0a1e"/>
+  </linearGradient>
+  <filter id="sh42"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#bg42)"/>
+
+<!-- Header -->
+<text x="960" y="45" fill="#fff" font-size="32" font-weight="900" text-anchor="middle">اقتصاد عراق: نفرین نفت و وعده توسعه‌ای که هرگز نیامد</text>
+<text x="960" y="72" fill="#d4af37" font-size="15" font-weight="400" text-anchor="middle">$۶۰۰ میلیارد درآمد نفتی ۲۰۰۳–۲۰۲۳ — کجا رفت؟</text>
+<line x1="150" y1="88" x2="1770" y2="88" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ====== TOP LEFT: GDP PER CAPITA COMPARISON ====== -->
+<rect x="60" y="105" width="620" height="400" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh42)"/>
+<text x="370" y="135" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">💵 تولید ناخالص سرانه (PPP) — مقایسه</text>
+
+<!-- Bar chart: GDP per capita 2023 -->
+<g transform="translate(90,155)">
+  <!-- UAE -->
+  <rect x="0" y="0" width="45" height="220" rx="3" fill="rgba(46,204,113,0.25)"/>
+  <text x="22" y="-8" fill="#2ecc71" font-size="9" font-weight="700" text-anchor="middle">$۸۸K</text>
+  <text x="22" y="235" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">امارات</text>
+
+  <!-- Saudi -->
+  <rect x="60" y="60" width="45" height="160" rx="3" fill="rgba(59,130,246,0.25)"/>
+  <text x="82" y="52" fill="#3b82f6" font-size="9" font-weight="700" text-anchor="middle">$۵۶K</text>
+  <text x="82" y="235" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">سعودی</text>
+
+  <!-- Kuwait -->
+  <rect x="120" y="80" width="45" height="140" rx="3" fill="rgba(0,180,216,0.25)"/>
+  <text x="142" y="72" fill="#00b4d8" font-size="9" font-weight="700" text-anchor="middle">$۴۸K</text>
+  <text x="142" y="235" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">کویت</text>
+
+  <!-- Turkey -->
+  <rect x="180" y="125" width="45" height="95" rx="3" fill="rgba(155,89,182,0.25)"/>
+  <text x="202" y="117" fill="#9b59b6" font-size="9" font-weight="700" text-anchor="middle">$۳۵K</text>
+  <text x="202" y="235" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">ترکیه</text>
+
+  <!-- Iran -->
+  <rect x="240" y="160" width="45" height="60" rx="3" fill="rgba(46,204,113,0.2)"/>
+  <text x="262" y="152" fill="#2ecc71" font-size="9" font-weight="700" text-anchor="middle">$۱۵K</text>
+  <text x="262" y="235" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">ایران</text>
+
+  <!-- IRAQ (highlighted) -->
+  <rect x="300" y="175" width="55" height="45" rx="4" fill="rgba(231,76,60,0.35)" stroke="rgba(231,76,60,0.5)" stroke-width="2"/>
+  <text x="327" y="167" fill="#e74c3c" font-size="11" font-weight="900" text-anchor="middle">$۱۱K</text>
+  <text x="327" y="235" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">عراق</text>
+
+  <!-- Jordan -->
+  <rect x="370" y="180" width="45" height="40" rx="3" fill="rgba(255,152,0,0.2)"/>
+  <text x="392" y="172" fill="#ff9800" font-size="9" font-weight="700" text-anchor="middle">$۱۰K</text>
+  <text x="392" y="235" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">اردن</text>
+
+  <!-- Syria -->
+  <rect x="430" y="200" width="45" height="20" rx="3" fill="rgba(155,89,182,0.15)"/>
+  <text x="452" y="195" fill="#9b59b6" font-size="8" font-weight="700" text-anchor="middle">$۳K</text>
+  <text x="452" y="235" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">سوریه</text>
+</g>
+
+<!-- Context note -->
+<rect x="90" y="420" width="560" height="65" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="370" y="440" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">⚠️ عراق با ذخایر نفتی رتبه ۵ جهان</text>
+<text x="370" y="458" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">GDP سرانه‌اش ۸ برابر کمتر از امارات و ۵ برابر کمتر از کویت</text>
+<text x="370" y="474" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">تنها دلیل: فساد ساختاری + جنگ + سوءمدیریت</text>
+
+<!-- ====== TOP MIDDLE: OIL DEPENDENCY DONUT ====== -->
+<rect x="705" y="105" width="500" height="400" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh42)"/>
+<text x="955" y="135" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">🛢️ وابستگی به نفت — نفرین منابع</text>
+
+<!-- Donut chart -->
+<circle cx="955" cy="300" r="100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="35"/>
+<circle cx="955" cy="300" r="100" fill="none" stroke="#e74c3c" stroke-width="35" stroke-dasharray="597 31" stroke-dashoffset="157" opacity="0.7"/>
+<circle cx="955" cy="300" r="100" fill="none" stroke="#2ecc71" stroke-width="35" stroke-dasharray="31 597" stroke-dashoffset="157" opacity="0.6"/>
+
+<text x="955" y="290" fill="#e74c3c" font-size="36" font-weight="900" text-anchor="middle">۹۵٪</text>
+<text x="955" y="315" fill="rgba(255,255,255,0.6)" font-size="12" text-anchor="middle">درآمد نفتی</text>
+
+<rect x="730" y="425" width="15" height="15" rx="3" fill="#e74c3c" opacity="0.7"/>
+<text x="750" y="437" fill="rgba(255,255,255,0.6)" font-size="10">نفت: ۹۵% بودجه</text>
+<rect x="880" y="425" width="15" height="15" rx="3" fill="#2ecc71" opacity="0.6"/>
+<text x="900" y="437" fill="rgba(255,255,255,0.6)" font-size="10">غیرنفتی: ۵%</text>
+<text x="955" y="465" fill="rgba(255,255,255,0.3)" font-size="9" text-anchor="middle">مقایسه: نروژ ۲۰% | امارات ۳۰% | عربستان ۴۵%</text>
+<text x="955" y="480" fill="rgba(255,255,255,0.3)" font-size="9" text-anchor="middle">وعده ۲۰۰۳: اقتصاد متنوع مانند دوبی!</text>
+
+<!-- ====== TOP RIGHT: WHERE DID \$600B GO? ====== -->
+<rect x="1230" y="105" width="630" height="400" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh42)"/>
+<text x="1545" y="135" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">💸 $۶۰۰B درآمد نفتی — کجا رفت؟</text>
+
+<g transform="translate(1260,155)">
+  <rect x="0" y="0" width="570" height="48" rx="6" fill="rgba(231,76,60,0.12)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+  <rect x="0" y="0" width="145" height="48" rx="6" fill="rgba(231,76,60,0.25)"/>
+  <text x="72" y="22" fill="#fff" font-size="13" font-weight="900" text-anchor="middle">$۱۵۰B+</text>
+  <text x="72" y="38" fill="rgba(255,255,255,0.6)" font-size="8" text-anchor="middle">فساد مستقیم</text>
+  <text x="360" y="28" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">۲۵%+ — دزدیده شده (قراردادهای وهمی، ارواح حقوق‌بگیر)</text>
+
+  <rect x="0" y="56" width="570" height="48" rx="6" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+  <rect x="0" y="56" width="115" height="48" rx="6" fill="rgba(255,152,0,0.2)"/>
+  <text x="57" y="78" fill="#fff" font-size="13" font-weight="900" text-anchor="middle">$۱۲۰B</text>
+  <text x="57" y="94" fill="rgba(255,255,255,0.6)" font-size="8" text-anchor="middle">امنیت</text>
+  <text x="340" y="84" fill="#ff9800" font-size="10" font-weight="700" text-anchor="middle">۲۰% — نیروهای امنیتی (بیشتر شبه‌نظامی)</text>
+
+  <rect x="0" y="112" width="570" height="48" rx="6" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.15)" stroke-width="1"/>
+  <rect x="0" y="112" width="190" height="48" rx="6" fill="rgba(0,180,216,0.2)"/>
+  <text x="95" y="134" fill="#fff" font-size="13" font-weight="900" text-anchor="middle">$۲۰۰B</text>
+  <text x="95" y="150" fill="rgba(255,255,255,0.6)" font-size="8" text-anchor="middle">حقوق</text>
+  <text x="385" y="140" fill="#00b4d8" font-size="10" font-weight="700" text-anchor="middle">۳۳% — حقوق ۴M+ کارمند (بوروکراسی متورم)</text>
+
+  <rect x="0" y="168" width="570" height="48" rx="6" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+  <rect x="0" y="168" width="55" height="48" rx="6" fill="rgba(46,204,113,0.2)"/>
+  <text x="27" y="190" fill="#fff" font-size="11" font-weight="900" text-anchor="middle">$۵۰B</text>
+  <text x="27" y="206" fill="rgba(255,255,255,0.5)" font-size="7" text-anchor="middle">واقعی</text>
+  <text x="310" y="196" fill="#2ecc71" font-size="10" font-weight="700" text-anchor="middle">≈۸% — زیرساخت واقعی (اغلب ناقص)</text>
+
+  <rect x="0" y="224" width="570" height="42" rx="6" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+  <rect x="0" y="224" width="85" height="42" rx="6" fill="rgba(155,89,182,0.15)"/>
+  <text x="42" y="248" fill="#fff" font-size="11" font-weight="900" text-anchor="middle">$۸۰B</text>
+  <text x="310" y="248" fill="#9b59b6" font-size="10" font-weight="700" text-anchor="middle">≈۱۴% — یارانه سوخت + سایر</text>
+</g>
+
+<rect x="1260" y="440" width="570" height="48" rx="8" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+<text x="1545" y="460" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">⚡ هر خانوار عراقی سهمش $۱۵۰,۰۰۰ بود — دریافتی: ≈ $۰</text>
+<text x="1545" y="478" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">(\$600B ÷ 4M خانوار = سهم هر خانوار اگر عادلانه تقسیم می‌شد)</text>
+
+<!-- ====== BOTTOM LEFT: UNEMPLOYMENT CRISIS ====== -->
+<rect x="60" y="525" width="880" height="260" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh42)"/>
+<text x="500" y="555" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📊 بحران بیکاری — بمب ساعتی اقتصاد عراق</text>
+
+<g transform="translate(90,575)">
+  <text x="0" y="15" fill="rgba(255,255,255,0.6)" font-size="10">بیکاری کل</text>
+  <rect x="150" y="2" width="600" height="22" rx="4" fill="rgba(255,255,255,0.03)"/>
+  <rect x="150" y="2" width="96" height="22" rx="4" fill="rgba(255,152,0,0.35)"/>
+  <text x="260" y="18" fill="#ff9800" font-size="11" font-weight="700">۱۶.۵%</text>
+
+  <text x="0" y="48" fill="rgba(255,255,255,0.6)" font-size="10">جوانان (۱۵-۲۴)</text>
+  <rect x="150" y="35" width="600" height="22" rx="4" fill="rgba(255,255,255,0.03)"/>
+  <rect x="150" y="35" width="216" height="22" rx="4" fill="rgba(231,76,60,0.45)"/>
+  <text x="380" y="51" fill="#e74c3c" font-size="11" font-weight="900">۳۶%</text>
+
+  <text x="0" y="81" fill="rgba(255,255,255,0.6)" font-size="10">زنان</text>
+  <rect x="150" y="68" width="600" height="22" rx="4" fill="rgba(255,255,255,0.03)"/>
+  <rect x="150" y="68" width="294" height="22" rx="4" fill="rgba(155,89,182,0.4)"/>
+  <text x="460" y="84" fill="#9b59b6" font-size="11" font-weight="900">۴۹%</text>
+
+  <text x="0" y="114" fill="rgba(255,255,255,0.6)" font-size="10">اشتغال غیررسمی</text>
+  <rect x="150" y="101" width="600" height="22" rx="4" fill="rgba(255,255,255,0.03)"/>
+  <rect x="150" y="101" width="378" height="22" rx="4" fill="rgba(0,180,216,0.3)"/>
+  <text x="545" y="117" fill="#00b4d8" font-size="11" font-weight="700">۶۳%</text>
+
+  <text x="0" y="147" fill="rgba(255,255,255,0.6)" font-size="10">اشتغال دولتی</text>
+  <rect x="150" y="134" width="600" height="22" rx="4" fill="rgba(255,255,255,0.03)"/>
+  <rect x="150" y="134" width="240" height="22" rx="4" fill="rgba(212,175,55,0.3)"/>
+  <text x="405" y="150" fill="#d4af37" font-size="11" font-weight="700">۴۰%</text>
+</g>
+
+<rect x="90" y="752" width="820" height="22" rx="4" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="500" y="767" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">هر ساله ۷۰۰,۰۰۰ جوان وارد بازار کار — فقط ۱۰۰,۰۰۰ شغل جدید ایجاد</text>
+
+<!-- ====== BOTTOM RIGHT: POVERTY & INEQUALITY ====== -->
+<rect x="965" y="525" width="890" height="260" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh42)"/>
+<text x="1410" y="555" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">🏚️ فقر و نابرابری</text>
+
+<g transform="translate(990,570)">
+  <rect x="0" y="0" width="200" height="70" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+  <text x="100" y="25" fill="#e74c3c" font-size="22" font-weight="900" text-anchor="middle">۲۵٪</text>
+  <text x="100" y="45" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">زیر خط فقر</text>
+  <text x="100" y="60" fill="rgba(255,255,255,0.3)" font-size="8" text-anchor="middle">(۱۱ میلیون نفر)</text>
+
+  <rect x="215" y="0" width="200" height="70" rx="8" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+  <text x="315" y="25" fill="#ff9800" font-size="22" font-weight="900" text-anchor="middle">۴۰٪</text>
+  <text x="315" y="45" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">آسیب‌پذیر فقر</text>
+  <text x="315" y="60" fill="rgba(255,255,255,0.3)" font-size="8" text-anchor="middle">(نزدیک خط فقر)</text>
+
+  <rect x="430" y="0" width="200" height="70" rx="8" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.15)" stroke-width="1"/>
+  <text x="530" y="25" fill="#00b4d8" font-size="22" font-weight="900" text-anchor="middle">۴:۱</text>
+  <text x="530" y="45" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">شکاف درآمدی</text>
+
+  <rect x="645" y="0" width="200" height="70" rx="8" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.15)" stroke-width="1"/>
+  <text x="745" y="25" fill="#9b59b6" font-size="22" font-weight="900" text-anchor="middle">۷۰٪</text>
+  <text x="745" y="45" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">فقر مناطق جنگی</text>
+</g>
+
+<!-- Regional disparity -->
+<rect x="990" y="655" width="840" height="110" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+<text x="1410" y="680" fill="rgba(255,255,255,0.6)" font-size="11" font-weight="700" text-anchor="middle">🗺️ نابرابری منطقه‌ای</text>
+<text x="1010" y="700" fill="#2ecc71" font-size="10">▸ بغداد: فقر ۱۲% — دسترسی بیشتر به خدمات</text>
+<text x="1010" y="718" fill="#ff9800" font-size="10">▸ بصره (ثروتمندترین در نفت): فقر ۳۰% — آب آلوده!</text>
+<text x="1010" y="736" fill="#e74c3c" font-size="10">▸ نینوا/انبار (پس از داعش): فقر ۶۰-۷۰% — ویرانی کامل</text>
+<text x="1010" y="754" fill="#9b59b6" font-size="10">▸ کردستان: فقر ۸% — عملاً اقتصاد جداگانه</text>
+
+<!-- ====== BOTTOM NOTE BAR ====== -->
+<rect x="60" y="805" width="1800" height="65" rx="10" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+<text x="960" y="830" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📌 پارادوکس عراق: پنجمین ذخیره نفتی جهان + ۲۵% زیر خط فقر = نفرین منابع در عمل</text>
+<text x="960" y="852" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">اقتصادی که ۹۵% وابسته به نفت است، اقتصاد نیست — «صندوق تقسیم غنیمت» است</text>
+
+<!-- Footer -->
+<text x="60" y="42" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 42 / 60</text>
+<text x="1860" y="42" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۸: توسعه انسانی</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: World Bank, IMF, ILO, COSIT Iraq, Transparency International | داده‌های ۲۰۲۲-۲۰۲۳</text>
+</svg>

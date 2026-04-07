@@ -1,0 +1,279 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width:1; rx:10; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+<text x="960" y="42" class="title">بحران کهنه‌سربازان: قربانیان فراموش‌شده آمریکایی</text>
+<text x="960" y="68" class="subtitle">PTSD + خودکشی + بی‌خانمانی + مواد مخدر — جنگ وقتی تمام نمی‌شود که برگردی خانه</text>
+<line x1="150" y1="84" x2="1770" y2="84" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ===================== TOP: KEY STATISTICS ===================== -->
+<rect x="60" y="100" width="1800" height="140" rx="14" class="glass" filter="url(#sh)"/>
+<text x="960" y="128" fill="#d4af37" font-size="16" font-weight="900" text-anchor="middle">📊 ارقام تکان‌دهنده: کهنه‌سربازان عراق و افغانستان</text>
+<line x1="80" y1="140" x2="1840" y2="140" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+
+<g transform="translate(80,150)">
+  <rect x="0" y="0" width="245" height="75" rx="10" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+  <text x="123" y="28" fill="#e74c3c" font-size="30" font-weight="900" text-anchor="middle">۳۰,۱۷۷</text>
+  <text x="123" y="50" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="middle">خودکشی (۲۰۰۱–۲۰۲۱)</text>
+  <text x="123" y="65" fill="rgba(231,76,60,0.5)" font-size="9" text-anchor="middle">۴× بیشتر از کشته‌شدگان جنگ</text>
+
+  <rect x="260" y="0" width="245" height="75" rx="10" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+  <text x="383" y="28" fill="#ff9800" font-size="30" font-weight="900" text-anchor="middle">~۵۲۲K</text>
+  <text x="383" y="50" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="middle">مبتلا به PTSD</text>
+  <text x="383" y="65" fill="rgba(255,152,0,0.5)" font-size="9" text-anchor="middle">۲۰–۳۰% کل خدمت‌کنندگان</text>
+
+  <rect x="520" y="0" width="245" height="75" rx="10" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.15)" stroke-width="1"/>
+  <text x="643" y="28" fill="#00b4d8" font-size="30" font-weight="900" text-anchor="middle">۱.۸M</text>
+  <text x="643" y="50" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="middle">معلولیت تأیید‌شده VA</text>
+  <text x="643" y="65" fill="rgba(0,180,216,0.5)" font-size="9" text-anchor="middle">TBI + قطع عضو + شیمیایی</text>
+
+  <rect x="780" y="0" width="245" height="75" rx="10" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.15)" stroke-width="1"/>
+  <text x="903" y="28" fill="#9b59b6" font-size="30" font-weight="900" text-anchor="middle">۳۷K</text>
+  <text x="903" y="50" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="middle">بی‌خانمان کهنه‌سرباز</text>
+  <text x="903" y="65" fill="rgba(155,89,182,0.5)" font-size="9" text-anchor="middle">هر شب در خیابان</text>
+
+  <rect x="1040" y="0" width="245" height="75" rx="10" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+  <text x="1163" y="28" fill="#2ecc71" font-size="30" font-weight="900" text-anchor="middle">$۲.۴T</text>
+  <text x="1163" y="50" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="middle">هزینه مراقبت تا ۲۰۵۰</text>
+  <text x="1163" y="65" fill="rgba(46,204,113,0.5)" font-size="9" text-anchor="middle">Watson Institute تخمین</text>
+
+  <rect x="1300" y="0" width="400" height="75" rx="10" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.2)" stroke-width="1.5"/>
+  <text x="1500" y="28" fill="#e74c3c" font-size="30" font-weight="900" text-anchor="middle">۱۷ نفر/روز ☠️</text>
+  <text x="1500" y="50" fill="rgba(255,255,255,0.6)" font-size="11" text-anchor="middle">نرخ خودکشی کهنه‌سربازان</text>
+  <text x="1500" y="65" fill="rgba(231,76,60,0.5)" font-size="9" text-anchor="middle">هر ۸۵ دقیقه یک کهنه‌سرباز خودکشی می‌کند</text>
+</g>
+
+<!-- ===================== LEFT: SUICIDE TREND CHART ===================== -->
+<rect x="60" y="255" width="580" height="350" rx="14" class="glass" filter="url(#sh)"/>
+<text x="350" y="285" fill="#e74c3c" font-size="16" font-weight="900" text-anchor="middle">📈 روند خودکشی کهنه‌سربازان (نفر/سال)</text>
+<line x1="80" y1="298" x2="620" y2="298" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+
+<!-- Bar chart -->
+<g transform="translate(100,310)">
+  <!-- Y axis scale indicator -->
+  <text x="0" y="10" fill="rgba(255,255,255,0.3)" font-size="9" text-anchor="end">۲,۵۰۰</text>
+  <line x1="10" y1="7" x2="500" y2="7" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <text x="0" y="65" fill="rgba(255,255,255,0.3)" font-size="9" text-anchor="end">۱,۵۰۰</text>
+  <line x1="10" y1="62" x2="500" y2="62" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <text x="0" y="120" fill="rgba(255,255,255,0.3)" font-size="9" text-anchor="end">۵۰۰</text>
+  <line x1="10" y1="117" x2="500" y2="117" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Bars -->
+  <!-- 2005 -->
+  <rect x="25" y="95" width="35" height="60" rx="3" fill="rgba(231,76,60,0.3)"/>
+  <text x="43" y="165" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">۲۰۰۵</text>
+  <text x="43" y="90" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">۸۰۰</text>
+
+  <!-- 2007 -->
+  <rect x="75" y="75" width="35" height="80" rx="3" fill="rgba(231,76,60,0.35)"/>
+  <text x="93" y="165" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">۲۰۰۷</text>
+  <text x="93" y="70" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">۱,۱۰۰</text>
+
+  <!-- 2009 -->
+  <rect x="125" y="55" width="35" height="100" rx="3" fill="rgba(231,76,60,0.4)"/>
+  <text x="143" y="165" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">۲۰۰۹</text>
+  <text x="143" y="50" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">۱,۴۰۰</text>
+
+  <!-- 2011 -->
+  <rect x="175" y="42" width="35" height="113" rx="3" fill="rgba(231,76,60,0.45)"/>
+  <text x="193" y="165" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">۲۰۱۱</text>
+  <text x="193" y="37" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">۱,۶۵۰</text>
+
+  <!-- 2014 -->
+  <rect x="225" y="30" width="35" height="125" rx="3" fill="rgba(231,76,60,0.5)"/>
+  <text x="243" y="165" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">۲۰۱۴</text>
+  <text x="243" y="25" fill="#e74c3c" font-size="8" text-anchor="middle">۱,۸۰۰</text>
+
+  <!-- 2017 -->
+  <rect x="275" y="22" width="35" height="133" rx="3" fill="rgba(231,76,60,0.55)"/>
+  <text x="293" y="165" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">۲۰۱۷</text>
+  <text x="293" y="17" fill="#e74c3c" font-size="8" text-anchor="middle">۱,۹۵۰</text>
+
+  <!-- 2019 -->
+  <rect x="325" y="18" width="35" height="137" rx="3" fill="rgba(231,76,60,0.6)"/>
+  <text x="343" y="165" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">۲۰۱۹</text>
+  <text x="343" y="13" fill="#e74c3c" font-size="8" text-anchor="middle">۲,۰۰۰</text>
+
+  <!-- 2021 -->
+  <rect x="375" y="10" width="35" height="145" rx="3" fill="rgba(231,76,60,0.7)"/>
+  <text x="393" y="165" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">۲۰۲۱</text>
+  <text x="393" y="5" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">۲,۱۰۰+</text>
+
+  <!-- 2023 -->
+  <rect x="425" y="7" width="35" height="148" rx="3" fill="rgba(231,76,60,0.75)" stroke="#e74c3c" stroke-width="1"/>
+  <text x="443" y="165" fill="#e74c3c" font-size="8" font-weight="700" text-anchor="middle">۲۰۲۳</text>
+  <text x="443" y="2" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">۲,۲۰۰+</text>
+</g>
+
+<!-- Note under chart -->
+<rect x="80" y="505" width="540" height="42" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="350" y="522" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">مقایسه: کشته‌شدگان جنگی آمریکا در عراق: ۴,۵۵۰</text>
+<text x="350" y="540" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">خودکشی بعد از بازگشت: ۳۰,۱۷۷+ = ۶.۶× بیشتر از جنگ 💔</text>
+
+<!-- Comparison with combat deaths -->
+<rect x="80" y="555" width="540" height="38" rx="6" fill="rgba(255,152,0,0.04)"/>
+<text x="350" y="578" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">جنگ واقعی بعد از جنگ است — میدان نبرد عوض شد: از فلوجه به ذهن سرباز</text>
+
+<!-- ===================== CENTER: PTSD + TBI BREAKDOWN ===================== -->
+<rect x="670" y="255" width="580" height="350" rx="14" class="glass" filter="url(#sh)"/>
+<text x="960" y="285" fill="#ff9800" font-size="16" font-weight="900" text-anchor="middle">🧠 آسیب‌های روانی و جسمی</text>
+<line x1="690" y1="298" x2="1230" y2="298" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+
+<!-- PTSD -->
+<rect x="690" y="310" width="540" height="80" rx="10" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+<text x="710" y="332" fill="#ff9800" font-size="14" font-weight="700">🔴 PTSD (اختلال استرس پس از سانحه)</text>
+<text x="710" y="350" fill="rgba(255,255,255,0.65)" font-size="11">۲۰–۳۰% سربازان عراق/افغانستان مبتلا شدند (~۵۲۲K نفر)</text>
+<text x="710" y="368" fill="rgba(255,255,255,0.55)" font-size="10">علائم: کابوس، پرخاشگری، بی‌حسی عاطفی، ترس از صدای بلند</text>
+<text x="710" y="384" fill="rgba(255,255,255,0.45)" font-size="9">فقط ۵۰% درمان حرفه‌ای دریافت می‌کنند — VA: صف انتظار ۶ ماه+</text>
+
+<!-- TBI -->
+<rect x="690" y="400" width="540" height="70" rx="10" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.15)" stroke-width="1"/>
+<text x="710" y="422" fill="#00b4d8" font-size="14" font-weight="700">💥 TBI (آسیب مغزی تروماتیک)</text>
+<text x="710" y="440" fill="rgba(255,255,255,0.65)" font-size="11">۳۸۰,۰۰۰+ مورد تأیید‌شده — «امضای جنگ عراق»</text>
+<text x="710" y="456" fill="rgba(255,255,255,0.55)" font-size="10">IED (بمب کنار جاده‌ای) → موج انفجار → آسیب مغزی حتی بدون زخم ظاهری</text>
+<text x="710" y="468" fill="rgba(255,255,255,0.45)" font-size="9">پیامد بلندمدت: آلزایمر زودرس + افسردگی مزمن</text>
+
+<!-- Substance abuse -->
+<rect x="690" y="480" width="260" height="60" rx="8" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+<text x="710" y="500" fill="#9b59b6" font-size="12" font-weight="700">💊 اعتیاد</text>
+<text x="710" y="518" fill="rgba(255,255,255,0.6)" font-size="10">۱ از ۱۰ سرباز → اوپیوئید</text>
+<text x="710" y="532" fill="rgba(255,255,255,0.45)" font-size="9">VA خودش تجویز می‌کرد!</text>
+
+<!-- MST -->
+<rect x="965" y="480" width="265" height="60" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="985" y="500" fill="#e74c3c" font-size="12" font-weight="700">⚠️ MST (آزار جنسی نظامی)</text>
+<text x="985" y="518" fill="rgba(255,255,255,0.6)" font-size="10">۱ از ۳ زن سرباز + ۱ از ۵۰ مرد</text>
+<text x="985" y="532" fill="rgba(255,255,255,0.45)" font-size="9">گزارش‌دهی: فقط ۲۰% (ترس)</text>
+
+<!-- Moral injury -->
+<rect x="690" y="550" width="540" height="45" rx="8" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.12)" stroke-width="1"/>
+<text x="960" y="570" fill="#d4af37" font-size="12" font-weight="700" text-anchor="middle">💔 آسیب اخلاقی (Moral Injury) — مفهوم جدید روانشناسی جنگ</text>
+<text x="960" y="588" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">«کارهایی کردم که هرگز نمی‌توانم ببخشم» — عذاب وجدان از کشتن غیرنظامیان/کودکان</text>
+
+<!-- ===================== RIGHT: FAMILY + SOCIETY IMPACT ===================== -->
+<rect x="1280" y="255" width="580" height="350" rx="14" class="glass" filter="url(#sh)"/>
+<text x="1570" y="285" fill="#2ecc71" font-size="16" font-weight="900" text-anchor="middle">👨‍👩‍👧‍👦 تأثیر بر خانواده و جامعه</text>
+<line x1="1300" y1="298" x2="1840" y2="298" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+
+<g transform="translate(1300,310)">
+  <!-- Divorce -->
+  <rect x="0" y="0" width="540" height="50" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="20" y="18" fill="#e74c3c" font-size="13" font-weight="700">💔 طلاق</text>
+  <text x="20" y="38" fill="rgba(255,255,255,0.6)" font-size="10">نرخ طلاق کهنه‌سربازان: ۳× بالاتر از میانگین | خشونت خانگی: ۲× بیشتر</text>
+
+  <!-- Children -->
+  <rect x="0" y="60" width="540" height="50" rx="8" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+  <text x="20" y="78" fill="#ff9800" font-size="13" font-weight="700">👶 کودکان</text>
+  <text x="20" y="98" fill="rgba(255,255,255,0.6)" font-size="10">۲M+ کودک با والد مبتلا به PTSD — اضطراب + افسردگی + مشکلات رفتاری</text>
+
+  <!-- Homelessness -->
+  <rect x="0" y="120" width="540" height="50" rx="8" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+  <text x="20" y="138" fill="#9b59b6" font-size="13" font-weight="700">🏚️ بی‌خانمانی</text>
+  <text x="20" y="158" fill="rgba(255,255,255,0.6)" font-size="10">۳۷,۰۰۰ کهنه‌سرباز هر شب در خیابان | ۱۱% کل بی‌خانمان‌های آمریکا = کهنه‌سرباز</text>
+
+  <!-- Incarceration -->
+  <rect x="0" y="180" width="540" height="50" rx="8" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+  <text x="20" y="198" fill="#00b4d8" font-size="13" font-weight="700">⛓️ زندان</text>
+  <text x="20" y="218" fill="rgba(255,255,255,0.6)" font-size="10">۱۸۰,۰۰۰+ کهنه‌سرباز در زندان — اکثراً مرتبط با PTSD/مواد</text>
+
+  <!-- Employment -->
+  <rect x="0" y="240" width="540" height="45" rx="8" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+  <text x="20" y="258" fill="#d4af37" font-size="13" font-weight="700">💼 بیکاری</text>
+  <text x="20" y="275" fill="rgba(255,255,255,0.6)" font-size="10">نرخ بیکاری کهنه‌سربازان جوان: ۲× میانگین ملی | مهارت‌های جنگی ≠ بازار کار</text>
+</g>
+
+<!-- ===================== BOTTOM: VA SYSTEM FAILURE ===================== -->
+<rect x="60" y="620" width="870" height="230" rx="14" fill="rgba(231,76,60,0.04)" stroke="rgba(231,76,60,0.15)" stroke-width="1.5" filter="url(#sh)"/>
+<text x="495" y="650" fill="#e74c3c" font-size="16" font-weight="900" text-anchor="middle">🏥 شکست سیستم VA (وزارت کهنه‌سربازان)</text>
+<line x1="80" y1="663" x2="910" y2="663" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+
+<g transform="translate(80,678)">
+  <rect x="0" y="0" width="410" height="45" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="205" y="17" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">رسوایی ۲۰۱۴: ۴۰+ کهنه‌سرباز در صف انتظار مُردند</text>
+  <text x="205" y="37" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">بیمارستان VA فینیکس: لیست انتظار مخفی → ماه‌ها تأخیر</text>
+
+  <rect x="425" y="0" width="410" height="45" rx="6" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+  <text x="630" y="17" fill="#ff9800" font-size="12" font-weight="700" text-anchor="middle">میانگین زمان انتظار: ۶–۱۲ ماه</text>
+  <text x="630" y="37" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">برای PTSD درخواست می‌کنی → ۶ ماه بعد نوبت داری</text>
+
+  <rect x="0" y="55" width="410" height="45" rx="6" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+  <text x="205" y="72" fill="#9b59b6" font-size="12" font-weight="700" text-anchor="middle">بوروکراسی: ادعای معلولیت = ۲–۵ سال</text>
+  <text x="205" y="92" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">۷۰% ادعاهای اولیه رد → اعتراض → سال‌ها انتظار</text>
+
+  <rect x="425" y="55" width="410" height="45" rx="6" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+  <text x="630" y="72" fill="#00b4d8" font-size="12" font-weight="700" text-anchor="middle">Burn Pit: نسل جدید Agent Orange</text>
+  <text x="630" y="92" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">سوزاندن زباله نظامی → سرطان ریه | بایدن ۲۰۲۲: PACT Act</text>
+</g>
+
+<rect x="80" y="790" width="830" height="48" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="495" y="810" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">بودجه VA: $۳۰۱B/سال (۲۰۲۴) — دومین بودجه دولتی بعد از پنتاگون</text>
+<text x="495" y="830" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">و باز هم کافی نیست — سیستم طراحی‌شده برای ۱۰۰K بیمار، الان ۹M+ بیمار دارد</text>
+
+<!-- ===================== BOTTOM RIGHT: COMPARISON WITH IRAQI VICTIMS ===================== -->
+<rect x="960" y="620" width="900" height="230" rx="14" class="glass" filter="url(#sh)"/>
+<text x="1410" y="650" fill="#d4af37" font-size="16" font-weight="900" text-anchor="middle">⚖️ مقایسه: قربانیان آمریکایی vs عراقی</text>
+<line x1="980" y1="663" x2="1840" y2="663" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+
+<!-- Comparison table -->
+<g transform="translate(990,678)">
+  <text x="200" y="14" fill="rgba(255,255,255,0.4)" font-size="11" font-weight="700" text-anchor="middle">شاخص</text>
+  <text x="470" y="14" fill="#00b4d8" font-size="11" font-weight="700" text-anchor="middle">🇺🇸 آمریکا</text>
+  <text x="700" y="14" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">🇮🇶 عراق</text>
+
+  <line x1="0" y1="22" x2="830" y2="22" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="200" y="40" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">کشته‌شدگان جنگ</text>
+  <text x="470" y="40" fill="#00b4d8" font-size="10" text-anchor="middle">۴,۵۵۰ سرباز</text>
+  <text x="700" y="40" fill="#e74c3c" font-size="10" text-anchor="middle">۳۰۰,۰۰۰+ غیرنظامی</text>
+
+  <line x1="0" y1="48" x2="830" y2="48" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <text x="200" y="66" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">خودکشی بعد از جنگ</text>
+  <text x="470" y="66" fill="#00b4d8" font-size="10" text-anchor="middle">۳۰,۱۷۷+</text>
+  <text x="700" y="66" fill="#e74c3c" font-size="10" text-anchor="middle">ناشناخته (سیستم ثبت ندارد)</text>
+
+  <line x1="0" y1="74" x2="830" y2="74" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <text x="200" y="92" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">PTSD</text>
+  <text x="470" y="92" fill="#00b4d8" font-size="10" text-anchor="middle">۵۲۲K (درمان دارند)</text>
+  <text x="700" y="92" fill="#e74c3c" font-size="10" text-anchor="middle">میلیون‌ها (درمان ندارند)</text>
+
+  <line x1="0" y1="100" x2="830" y2="100" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <text x="200" y="118" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">غرامت/بازسازی</text>
+  <text x="470" y="118" fill="#00b4d8" font-size="10" text-anchor="middle">$۲.۴T بودجه VA</text>
+  <text x="700" y="118" fill="#e74c3c" font-size="10" text-anchor="middle">$۰ غرامت از آمریکا</text>
+
+  <line x1="0" y1="126" x2="830" y2="126" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <text x="200" y="144" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">توجه رسانه‌ای</text>
+  <text x="470" y="144" fill="#00b4d8" font-size="10" text-anchor="middle">فیلم + کتاب + بنیاد</text>
+  <text x="700" y="144" fill="#e74c3c" font-size="10" text-anchor="middle">فراموشی کامل 😶</text>
+</g>
+
+<rect x="990" y="835" width="830" height="15" rx="3" fill="rgba(212,175,55,0.06)"/>
+<text x="1405" y="847" fill="rgba(212,175,55,0.6)" font-size="9" text-anchor="middle">هر دو طرف قربانی‌اند — اما مقیاس عراقی ۱۰۰× بزرگ‌تر است و کسی نمی‌پرسد</text>
+
+<!-- ===================== BOTTOM BAR ===================== -->
+<rect x="60" y="875" width="1800" height="80" rx="10" class="note-box"/>
+<text x="960" y="903" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">📌 جنگ عراق دو ملت را ویران کرد: عراقی‌ها در میدان نبرد — آمریکایی‌ها بعد از بازگشت</text>
+<text x="960" y="925" fill="rgba(255,255,255,0.5)" font-size="12" text-anchor="middle">۳۰K+ خودکشی آمریکایی + ۳۰۰K+ کشته عراقی = بهایی که سیاستمداران هرگز نپرداختند</text>
+<text x="960" y="945" fill="rgba(255,255,255,0.35)" font-size="11" text-anchor="middle">سؤال اخلاقی: اگر جنگ‌ها توسط رأی‌دهندگان آگاه تأیید شوند — و نتایجش عادلانه تقسیم شود — آیا هنوز رأی می‌دادند؟</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 34 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۸: رسانه، روایت و حافظه</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: VA National Suicide Report (2023), Watson Institute, RAND Corp, DoD Casualty Reports | ۲۰۰۱–۲۰۲۴</text>
+</svg>

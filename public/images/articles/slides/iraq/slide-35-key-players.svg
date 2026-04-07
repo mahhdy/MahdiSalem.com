@@ -1,0 +1,218 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width:1; rx:10; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+<text x="960" y="42" class="title">بازیگران کلیدی: چه کسانی عراق را ویران کردند؟</text>
+<text x="960" y="68" class="subtitle">پروفایل ۱۲ نفری که تاریخ عراق (و جهان) را تغییر دادند — از واشنگتن تا بغداد</text>
+<line x1="150" y1="84" x2="1770" y2="84" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- Section label: ARCHITECTS (American) -->
+<rect x="60" y="95" width="1800" height="22" rx="4" fill="rgba(231,76,60,0.08)"/>
+<text x="960" y="112" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">🇺🇸 معماران جنگ — واشنگتن</text>
+
+<!-- ===================== ROW 1: US ARCHITECTS (4 cards) ===================== -->
+
+<!-- Card 1: George W. Bush -->
+<rect x="60" y="125" width="430" height="195" rx="12" fill="rgba(231,76,60,0.05)" stroke="rgba(231,76,60,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+<circle cx="120" cy="180" r="38" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.25)" stroke-width="2"/>
+<text x="120" y="188" fill="#e74c3c" font-size="28" text-anchor="middle">👤</text>
+<text x="175" y="163" fill="#e74c3c" font-size="16" font-weight="900">جرج دبلیو بوش</text>
+<text x="175" y="182" fill="rgba(255,255,255,0.5)" font-size="11">رئیس‌جمهور آمریکا (۲۰۰۱–۲۰۰۹)</text>
+<text x="175" y="200" fill="rgba(255,255,255,0.6)" font-size="10">تصمیم نهایی حمله — «خدا به من گفت به عراق حمله کن»</text>
+<text x="175" y="216" fill="rgba(255,255,255,0.5)" font-size="10">دروغ WMD + «مأموریت انجام شد» + اشغال بدون برنامه</text>
+<!-- Verdict bar -->
+<rect x="75" y="230" width="400" height="25" rx="5" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="275" y="247" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">⚖️ محاکمه: هرگز | اکنون: نقاشی می‌کشد در تگزاس | امتیاز مسئولیت: ■■■■■ ۵/۵</text>
+<rect x="75" y="260" width="400" height="18" rx="3" fill="rgba(255,255,255,0.02)"/>
+<rect x="75" y="260" width="400" height="18" rx="3" fill="rgba(231,76,60,0.15)"/>
+<text x="275" y="273" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">مسئولیت ■■■■■■■■■■ ۱۰۰%</text>
+
+<!-- Card 2: Dick Cheney -->
+<rect x="505" y="125" width="430" height="195" rx="12" fill="rgba(231,76,60,0.05)" stroke="rgba(231,76,60,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+<circle cx="565" cy="180" r="38" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.25)" stroke-width="2"/>
+<text x="565" y="188" fill="#e74c3c" font-size="28" text-anchor="middle">🦹</text>
+<text x="620" y="163" fill="#e74c3c" font-size="16" font-weight="900">دیک چینی</text>
+<text x="620" y="182" fill="rgba(255,255,255,0.5)" font-size="11">معاون رئیس‌جمهور | CEO سابق هالیبرتون</text>
+<text x="620" y="200" fill="rgba(255,255,255,0.6)" font-size="10">مغز متفکر واقعی جنگ — ارتباط صدام-القاعده (جعلی)</text>
+<text x="620" y="216" fill="rgba(255,255,255,0.5)" font-size="10">هالیبرتون: $۳۹.۵B قرارداد | یادداشت‌های شکنجه را تأیید کرد</text>
+<rect x="520" y="230" width="400" height="25" rx="5" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="720" y="247" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">⚖️ محاکمه: هرگز | اکنون: شرکت سرمایه‌گذاری | امتیاز: ■■■■■ ۵/۵</text>
+<rect x="520" y="260" width="400" height="18" rx="3" fill="rgba(231,76,60,0.15)"/>
+<text x="720" y="273" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">مسئولیت ■■■■■■■■■■ ۱۰۰% — بسیاری او را مسئول اصلی می‌دانند</text>
+
+<!-- Card 3: Donald Rumsfeld -->
+<rect x="950" y="125" width="430" height="195" rx="12" fill="rgba(255,152,0,0.05)" stroke="rgba(255,152,0,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+<circle cx="1010" cy="180" r="38" fill="rgba(255,152,0,0.1)" stroke="rgba(255,152,0,0.25)" stroke-width="2"/>
+<text x="1010" y="188" fill="#ff9800" font-size="28" text-anchor="middle">⚔️</text>
+<text x="1065" y="163" fill="#ff9800" font-size="16" font-weight="900">دونالد رامسفلد</text>
+<text x="1065" y="182" fill="rgba(255,255,255,0.5)" font-size="11">وزیر دفاع (۲۰۰۱–۲۰۰۶)</text>
+<text x="1065" y="200" fill="rgba(255,255,255,0.6)" font-size="10">«جنگ سبک» با نیروی کم → خلأ امنیتی → هرج‌ومرج</text>
+<text x="1065" y="216" fill="rgba(255,255,255,0.5)" font-size="10">ابوغریب: «اتفاق می‌افتد» | غارت موزه: «همان گلدان‌هاست»</text>
+<rect x="965" y="230" width="400" height="25" rx="5" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+<text x="1165" y="247" fill="#ff9800" font-size="10" font-weight="700" text-anchor="middle">⚖️ محاکمه: هرگز | درگذشت ۲۰۲۱ | امتیاز: ■■■■■ ۵/۵</text>
+<rect x="965" y="260" width="400" height="18" rx="3" fill="rgba(255,152,0,0.15)"/>
+<text x="1165" y="273" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">مسئولیت ■■■■■■■■■■ ۱۰۰% — معمار عملیاتی فاجعه</text>
+
+<!-- Card 4: Paul Wolfowitz -->
+<rect x="1395" y="125" width="465" height="195" rx="12" fill="rgba(155,89,182,0.05)" stroke="rgba(155,89,182,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+<circle cx="1455" cy="180" r="38" fill="rgba(155,89,182,0.1)" stroke="rgba(155,89,182,0.25)" stroke-width="2"/>
+<text x="1455" y="188" fill="#9b59b6" font-size="28" text-anchor="middle">🧠</text>
+<text x="1510" y="163" fill="#9b59b6" font-size="16" font-weight="900">پل ولفوویتز</text>
+<text x="1510" y="182" fill="rgba(255,255,255,0.5)" font-size="11">معاون وزیر دفاع | نئوکان ارشد</text>
+<text x="1510" y="200" fill="rgba(255,255,255,0.6)" font-size="10">معمار فکری: «دموکراسی‌سازی خاورمیانه از بغداد شروع شود»</text>
+<text x="1510" y="216" fill="rgba(255,255,255,0.5)" font-size="10">«نفت عراق هزینه بازسازی را تأمین می‌کند» — هرگز نشد</text>
+<rect x="1410" y="230" width="435" height="25" rx="5" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+<text x="1628" y="247" fill="#9b59b6" font-size="10" font-weight="700" text-anchor="middle">⚖️ هرگز | بعد: رئیس بانک جهانی (رسوایی → استعفا) | امتیاز: ■■■■□ ۴/۵</text>
+<rect x="1410" y="260" width="350" height="18" rx="3" fill="rgba(155,89,182,0.15)"/>
+<text x="1585" y="273" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">مسئولیت ■■■■■■■■░░ ۸۰% — ایدئولوگ اصلی</text>
+
+<!-- Section label: UK + CPA -->
+<rect x="60" y="330" width="1800" height="22" rx="4" fill="rgba(0,180,216,0.08)"/>
+<text x="960" y="347" fill="#00b4d8" font-size="12" font-weight="700" text-anchor="middle">🇬🇧 بریتانیا + اشغال عراق</text>
+
+<!-- ===================== ROW 2: UK + CPA (4 cards) ===================== -->
+
+<!-- Card 5: Tony Blair -->
+<rect x="60" y="360" width="430" height="175" rx="12" fill="rgba(0,180,216,0.05)" stroke="rgba(0,180,216,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+<circle cx="120" cy="410" r="35" fill="rgba(0,180,216,0.1)" stroke="rgba(0,180,216,0.25)" stroke-width="2"/>
+<text x="120" y="418" fill="#00b4d8" font-size="26" text-anchor="middle">🇬🇧</text>
+<text x="172" y="395" fill="#00b4d8" font-size="15" font-weight="900">تونی بلر</text>
+<text x="172" y="413" fill="rgba(255,255,255,0.5)" font-size="10">نخست‌وزیر بریتانیا (۱۹۹۷–۲۰۰۷)</text>
+<text x="172" y="430" fill="rgba(255,255,255,0.6)" font-size="10">«پرونده ۴۵ دقیقه» جعلی → مشروعیت‌بخشی اروپایی به جنگ</text>
+<text x="172" y="446" fill="rgba(255,255,255,0.5)" font-size="10">چیلکات ۲۰۱۶: «توجیه حقوقی ناکافی بود»</text>
+<rect x="75" y="458" width="400" height="22" rx="4" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+<text x="275" y="474" fill="#00b4d8" font-size="9" font-weight="700" text-anchor="middle">⚖️ هرگز محاکمه نشد | اکنون: مشاور $۱۰M+/سال | مسئولیت: ■■■■□ ۴/۵</text>
+<rect x="75" y="485" width="320" height="14" rx="2" fill="rgba(0,180,216,0.15)"/>
+
+<!-- Card 6: Paul Bremer -->
+<rect x="505" y="360" width="430" height="175" rx="12" fill="rgba(255,152,0,0.05)" stroke="rgba(255,152,0,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+<circle cx="565" cy="410" r="35" fill="rgba(255,152,0,0.1)" stroke="rgba(255,152,0,0.25)" stroke-width="2"/>
+<text x="565" y="418" fill="#ff9800" font-size="26" text-anchor="middle">📋</text>
+<text x="617" y="395" fill="#ff9800" font-size="15" font-weight="900">پل بریمر (CPA)</text>
+<text x="617" y="413" fill="rgba(255,255,255,0.5)" font-size="10">حاکم مطلق عراق (مه ۲۰۰۳ – ژوئن ۲۰۰۴)</text>
+<text x="617" y="430" fill="rgba(255,255,255,0.6)" font-size="10">فرمان ۱: بعث‌زدایی (۳۰K+ اخراج) | فرمان ۲: انحلال ارتش (۴۰۰K)</text>
+<text x="617" y="446" fill="rgba(255,255,255,0.5)" font-size="10">$۸.۷B گم‌شده + مصونیت پیمانکاران (فرمان ۱۷)</text>
+<rect x="520" y="458" width="400" height="22" rx="4" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+<text x="720" y="474" fill="#ff9800" font-size="9" font-weight="700" text-anchor="middle">⚖️ هرگز | مدال آزادی از بوش! | مسئولیت: ■■■■■ ۵/۵ (فرمان ۱ و ۲)</text>
+<rect x="520" y="485" width="400" height="14" rx="2" fill="rgba(255,152,0,0.15)"/>
+
+<!-- Card 7: Colin Powell -->
+<rect x="950" y="360" width="430" height="175" rx="12" fill="rgba(212,175,55,0.05)" stroke="rgba(212,175,55,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+<circle cx="1010" cy="410" r="35" fill="rgba(212,175,55,0.1)" stroke="rgba(212,175,55,0.25)" stroke-width="2"/>
+<text x="1010" y="418" fill="#d4af37" font-size="26" text-anchor="middle">🎤</text>
+<text x="1062" y="395" fill="#d4af37" font-size="15" font-weight="900">کالین پاول</text>
+<text x="1062" y="413" fill="rgba(255,255,255,0.5)" font-size="10">وزیر خارجه (۲۰۰۱–۲۰۰۵)</text>
+<text x="1062" y="430" fill="rgba(255,255,255,0.6)" font-size="10">سخنرانی سازمان ملل (فوریه ۲۰۰۳) — لوله آزمایش جعلی</text>
+<text x="1062" y="446" fill="rgba(255,255,255,0.5)" font-size="10">«بزرگ‌ترین لکه بر کارنامه‌ام» — اما دیر فهمید/گفت</text>
+<rect x="965" y="458" width="400" height="22" rx="4" fill="rgba(212,175,55,0.08)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+<text x="1165" y="474" fill="#d4af37" font-size="9" font-weight="700" text-anchor="middle">⚖️ درگذشت ۲۰۲۱ | نقش: مجری نه معمار | مسئولیت: ■■■□□ ۳/۵</text>
+<rect x="965" y="485" width="240" height="14" rx="2" fill="rgba(212,175,55,0.15)"/>
+
+<!-- Card 8: Condoleezza Rice -->
+<rect x="1395" y="360" width="465" height="175" rx="12" fill="rgba(155,89,182,0.05)" stroke="rgba(155,89,182,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+<circle cx="1455" cy="410" r="35" fill="rgba(155,89,182,0.1)" stroke="rgba(155,89,182,0.25)" stroke-width="2"/>
+<text x="1455" y="418" fill="#9b59b6" font-size="26" text-anchor="middle">🏛️</text>
+<text x="1507" y="395" fill="#9b59b6" font-size="15" font-weight="900">کاندولیزا رایس</text>
+<text x="1507" y="413" fill="rgba(255,255,255,0.5)" font-size="10">مشاور امنیت ملی → وزیر خارجه</text>
+<text x="1507" y="430" fill="rgba(255,255,255,0.6)" font-size="10">«نمی‌خواهیم اثبات WMD یک ابر قارچی باشد»</text>
+<text x="1507" y="446" fill="rgba(255,255,255,0.5)" font-size="10">نقش: هماهنگ‌کننده روایت جنگ در رسانه‌ها</text>
+<rect x="1410" y="458" width="435" height="22" rx="4" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+<text x="1628" y="474" fill="#9b59b6" font-size="9" font-weight="700" text-anchor="middle">⚖️ هرگز | اکنون: استاد استنفورد | مسئولیت: ■■■□□ ۳/۵</text>
+<rect x="1410" y="485" width="260" height="14" rx="2" fill="rgba(155,89,182,0.15)"/>
+
+<!-- Section label: IRAQI ACTORS -->
+<rect x="60" y="510" width="1800" height="22" rx="4" fill="rgba(46,204,113,0.08)"/>
+<text x="960" y="527" fill="#2ecc71" font-size="12" font-weight="700" text-anchor="middle">🇮🇶 بازیگران عراقی + منطقه‌ای</text>
+
+<!-- ===================== ROW 3: IRAQI + REGIONAL (4 cards) ===================== -->
+
+<!-- Card 9: Nouri al-Maliki -->
+<rect x="60" y="540" width="430" height="175" rx="12" fill="rgba(46,204,113,0.05)" stroke="rgba(46,204,113,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+<circle cx="120" cy="590" r="35" fill="rgba(46,204,113,0.1)" stroke="rgba(46,204,113,0.25)" stroke-width="2"/>
+<text x="120" y="598" fill="#2ecc71" font-size="26" text-anchor="middle">🇮🇶</text>
+<text x="172" y="575" fill="#2ecc71" font-size="15" font-weight="900">نوری المالکی</text>
+<text x="172" y="593" fill="rgba(255,255,255,0.5)" font-size="10">نخست‌وزیر عراق (۲۰۰۶–۲۰۱۴)</text>
+<text x="172" y="610" fill="rgba(255,255,255,0.6)" font-size="10">فرقه‌گرایی سیستماتیک → حذف سنی‌ها از ارتش و دولت</text>
+<text x="172" y="626" fill="rgba(255,255,255,0.5)" font-size="10">سقوط موصل ۲۰۱۴: ارتش فرار کرد — ۶ لشکر vs ۱,۵۰۰ داعشی</text>
+<rect x="75" y="640" width="400" height="22" rx="4" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+<text x="275" y="656" fill="#2ecc71" font-size="9" font-weight="700" text-anchor="middle">⚖️ هنوز در قدرت (هیئت رئیسه) | مسئولیت سقوط موصل: ■■■■■ ۵/۵</text>
+<rect x="75" y="667" width="400" height="14" rx="2" fill="rgba(46,204,113,0.15)"/>
+
+<!-- Card 10: Ahmad Chalabi -->
+<rect x="505" y="540" width="430" height="175" rx="12" fill="rgba(255,152,0,0.05)" stroke="rgba(255,152,0,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+<circle cx="565" cy="590" r="35" fill="rgba(255,152,0,0.1)" stroke="rgba(255,152,0,0.25)" stroke-width="2"/>
+<text x="565" y="598" fill="#ff9800" font-size="26" text-anchor="middle">🎭</text>
+<text x="617" y="575" fill="#ff9800" font-size="15" font-weight="900">احمد چلبی</text>
+<text x="617" y="593" fill="rgba(255,255,255,0.5)" font-size="10">رهبر کنگره ملی عراق (تبعیدی)</text>
+<text x="617" y="610" fill="rgba(255,255,255,0.6)" font-size="10">منبع اصلی اطلاعات جعلی WMD به CIA/پنتاگون</text>
+<text x="617" y="626" fill="rgba(255,255,255,0.5)" font-size="10">«ژنرال دروغ» — وعده: مردم با گل استقبال می‌کنند</text>
+<rect x="520" y="640" width="400" height="22" rx="4" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+<text x="720" y="656" fill="#ff9800" font-size="9" font-weight="700" text-anchor="middle">⚖️ درگذشت ۲۰۱۵ | محکوم به کلاهبرداری در اردن | مسئولیت: ■■■■□ ۴/۵</text>
+<rect x="520" y="667" width="320" height="14" rx="2" fill="rgba(255,152,0,0.15)"/>
+
+<!-- Card 11: Qasem Soleimani -->
+<rect x="950" y="540" width="430" height="175" rx="12" fill="rgba(231,76,60,0.05)" stroke="rgba(231,76,60,0.18)" stroke-width="1.5" filter="url(#sh)"/>
+<circle cx="1010" cy="590" r="35" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.25)" stroke-width="2"/>
+<text x="1010" y="598" fill="#e74c3c" font-size="26" text-anchor="middle">🇮🇷</text>
+<text x="1062" y="575" fill="#e74c3c" font-size="15" font-weight="900">قاسم سلیمانی</text>
+<text x="1062" y="593" fill="rgba(255,255,255,0.5)" font-size="10">فرمانده نیروی قدس سپاه پاسداران</text>
+<text x="1062" y="610" fill="rgba(255,255,255,0.6)" font-size="10">معمار نفوذ ایران در عراق — کنترل شبه‌نظامیان</text>
+<text x="1062" y="626" fill="rgba(255,255,255,0.5)" font-size="10">ترور ژانویه ۲۰۲۰ در بغداد توسط آمریکا</text>
+<rect x="965" y="640" width="400" height="22" rx="4" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="1165" y="656" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">⚖️ ترور ۲۰۲۰ | نقش: حاکم سایه عراق | مسئولیت نفوذ ایران: ■■■■■ ۵/۵</text>
+<rect x="965" y="667" width="400" height="14" rx="2" fill="rgba(231,76,60,0.15)"/>
+
+<!-- Card 12: Abu Bakr al-Baghdadi -->
+<rect x="1395" y="540" width="465" height="175" rx="12" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.25)" stroke-width="1.5" filter="url(#sh)"/>
+<circle cx="1455" cy="590" r="35" fill="rgba(231,76,60,0.15)" stroke="rgba(231,76,60,0.3)" stroke-width="2"/>
+<text x="1455" y="598" fill="#e74c3c" font-size="26" text-anchor="middle">💀</text>
+<text x="1507" y="575" fill="#e74c3c" font-size="15" font-weight="900">ابوبکر البغدادی</text>
+<text x="1507" y="593" fill="rgba(255,255,255,0.5)" font-size="10">«خلیفه» داعش (۲۰۱۴–۲۰۱۹)</text>
+<text x="1507" y="610" fill="rgba(255,255,255,0.6)" font-size="10">زندان بوکا آمریکایی → رادیکالیزه‌شدن → خلافت</text>
+<text x="1507" y="626" fill="rgba(255,255,255,0.5)" font-size="10">نسل‌کشی ایزدی‌ها + تخریب نینوا + ترور جهانی</text>
+<rect x="1410" y="640" width="435" height="22" rx="4" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="1628" y="656" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">⚖️ کشته ۲۰۱۹ (عملیات آمریکا) | محصول مستقیم اشغال | مسئولیت ترور: ■■■■■ ۵/۵</text>
+<rect x="1410" y="667" width="435" height="14" rx="2" fill="rgba(231,76,60,0.2)"/>
+
+<!-- ===================== BOTTOM: ACCOUNTABILITY SCORECARD ===================== -->
+<rect x="60" y="700" width="1800" height="155" rx="14" class="glass" filter="url(#sh)"/>
+<text x="960" y="728" fill="#d4af37" font-size="16" font-weight="900" text-anchor="middle">⚖️ کارنامه پاسخگویی: چه کسی مجازات شد؟</text>
+<line x1="80" y1="740" x2="1840" y2="740" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+
+<g transform="translate(100,755)">
+  <!-- Punished row -->
+  <rect x="0" y="0" width="820" height="40" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="15" y="16" fill="#e74c3c" font-size="12" font-weight="700">❌ هرگز مجازات نشدند:</text>
+  <text x="15" y="33" fill="rgba(255,255,255,0.6)" font-size="10">بوش | چینی | رامسفلد | ولفوویتز | رایس | بلر | بریمر | مالکی — هیچ‌کدام حتی بازجویی نشدند</text>
+
+  <rect x="840" y="0" width="780" height="40" rx="6" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="855" y="16" fill="#2ecc71" font-size="12" font-weight="700">✅ مجازات‌شدگان:</text>
+  <text x="855" y="33" fill="rgba(255,255,255,0.6)" font-size="10">۱۱ سرباز رده‌پایین ابوغریب (حداکثر ۱۰ سال) | چلسی منینگ (افشاگر — ۳۵ سال!) | لیبی (معاون چینی — عفو)</text>
+
+  <!-- Irony box -->
+  <rect x="0" y="50" width="1620" height="38" rx="6" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.12)" stroke-width="1"/>
+  <text x="810" y="67" fill="#d4af37" font-size="12" font-weight="700" text-anchor="middle">🎭 طنز تلخ: کسانی که دروغ گفتند و جنگ راه انداختند آزادند — کسانی که حقیقت را افشا کردند زندانی شدند</text>
+  <text x="810" y="83" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">چلسی منینگ: ۳۵ سال بخاطر افشای جنایات | آسانژ: ۱۴ سال زندان/سفارت | بوش: مدال آزادی به بریمر داد</text>
+</g>
+
+<!-- ===================== BOTTOM BAR ===================== -->
+<rect x="60" y="875" width="1800" height="80" rx="10" class="note-box"/>
+<text x="960" y="903" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">📌 ۱۲ نفر تصمیم گرفتند — ۱ میلیون+ نفر بهایش را پرداختند — هیچ‌کس پاسخگو نشد</text>
+<text x="960" y="925" fill="rgba(255,255,255,0.5)" font-size="12" text-anchor="middle">از بوش تا بغدادی: زنجیره‌ای از تصمیمات که هر کدام فاجعه بعدی را رقم زد</text>
+<text x="960" y="945" fill="rgba(255,255,255,0.35)" font-size="11" text-anchor="middle">سؤال اصلی: اگر رهبران بدانند هرگز محاکمه نمی‌شوند — چه انگیزه‌ای برای پرهیز از جنگ دارند؟</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 35 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۹: بازیگران کلیدی</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: Chilcot Report, Senate Intel Committee, CPA Orders, ICC Records, Biographical Archives | تحلیل ۲۰۲۴</text>
+</svg>

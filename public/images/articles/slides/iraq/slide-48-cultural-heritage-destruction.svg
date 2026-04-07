@@ -1,0 +1,218 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+  </style>
+  <linearGradient id="bg48" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0a0e27"/>
+    <stop offset="50%" stop-color="#0d1333"/>
+    <stop offset="100%" stop-color="#1a0a1e"/>
+  </linearGradient>
+  <filter id="sh48"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#bg48)"/>
+
+<!-- Header -->
+<text x="960" y="45" fill="#fff" font-size="32" font-weight="900" text-anchor="middle">🏛️ تخریب میراث فرهنگی: ۷,۰۰۰ سال تمدن زیر بمب و تیشه</text>
+<text x="960" y="72" fill="#d4af37" font-size="15" font-weight="400" text-anchor="middle">بین‌النهرین: مهد تمدن بشر — از غارت موزه ملی تا تخریب نمرود و نینوا توسط داعش</text>
+<line x1="150" y1="88" x2="1770" y2="88" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ====== TOP: TIMELINE OF DESTRUCTION ====== -->
+<rect x="60" y="105" width="1800" height="200" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh48)"/>
+<text x="960" y="132" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📅 تایم‌لاین تخریب — از بمباران تا بولدوزر</text>
+
+<!-- Timeline axis -->
+<line x1="140" y1="220" x2="1780" y2="220" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+
+<!-- 2003: Museum looting -->
+<circle cx="260" cy="220" r="8" fill="#e74c3c" stroke="#fff" stroke-width="1"/>
+<rect x="170" y="145" width="180" height="58" rx="6" fill="rgba(231,76,60,0.12)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+<text x="260" y="163" fill="#e74c3c" font-size="10" font-weight="900" text-anchor="middle">آوریل ۲۰۰۳</text>
+<text x="260" y="178" fill="rgba(255,255,255,0.6)" font-size="9" text-anchor="middle">غارت موزه ملی عراق</text>
+<text x="260" y="193" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">۱۵,۰۰۰ اثر سرقت شده</text>
+<text x="260" y="240" fill="rgba(255,255,255,0.35)" font-size="7" text-anchor="middle">آمریکا: «اتفاق می‌افتد»</text>
+
+<!-- 2003: National Library -->
+<circle cx="460" cy="220" r="6" fill="#ff9800"/>
+<rect x="375" y="148" width="170" height="52" rx="6" fill="rgba(255,152,0,0.1)" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+<text x="460" y="166" fill="#ff9800" font-size="10" font-weight="700" text-anchor="middle">آوریل ۲۰۰۳</text>
+<text x="460" y="181" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">آتش‌سوزی کتابخانه ملی</text>
+<text x="460" y="193" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">۱M+ نسخه خطی نابود</text>
+
+<!-- 2003-2006: Looting of sites -->
+<circle cx="660" cy="220" r="6" fill="#ff9800"/>
+<rect x="570" y="148" width="180" height="52" rx="6" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+<text x="660" y="166" fill="#ff9800" font-size="10" font-weight="700" text-anchor="middle">۲۰۰۳–۲۰۰۶</text>
+<text x="660" y="181" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">غارت ۱۲,۰۰۰+ سایت</text>
+<text x="660" y="193" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">حفاری غیرقانونی گسترده</text>
+
+<!-- 2006: Samarra bombing -->
+<circle cx="860" cy="220" r="7" fill="#e74c3c"/>
+<rect x="770" y="148" width="180" height="52" rx="6" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="860" y="166" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">فوریه ۲۰۰۶</text>
+<text x="860" y="181" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">بمب‌گذاری مرقد سامرا</text>
+<text x="860" y="193" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">گنبد طلایی → جنگ فرقه‌ای</text>
+
+<!-- 2014-2015: ISIS systematic -->
+<circle cx="1100" cy="220" r="10" fill="#e74c3c" stroke="#fff" stroke-width="2"/>
+<rect x="1000" y="140" width="200" height="62" rx="6" fill="rgba(231,76,60,0.15)" stroke="rgba(231,76,60,0.3)" stroke-width="2"/>
+<text x="1100" y="158" fill="#e74c3c" font-size="11" font-weight="900" text-anchor="middle">۲۰۱۴–۲۰۱۷</text>
+<text x="1100" y="175" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">تخریب سیستماتیک داعش</text>
+<text x="1100" y="192" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">نمرود، نینوا، هترا، موصل</text>
+<text x="1100" y="240" fill="rgba(255,255,255,0.35)" font-size="7" text-anchor="middle">ویدئوی تخریب = پروپاگاندا</text>
+
+<!-- 2017: Al-Nuri Mosque -->
+<circle cx="1350" cy="220" r="7" fill="#ff9800"/>
+<rect x="1260" y="148" width="180" height="52" rx="6" fill="rgba(255,152,0,0.1)" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+<text x="1350" y="166" fill="#ff9800" font-size="10" font-weight="700" text-anchor="middle">ژوئن ۲۰۱۷</text>
+<text x="1350" y="181" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">تخریب مسجد النوری</text>
+<text x="1350" y="193" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">مناره الحدباء ۸۰۰ ساله</text>
+
+<!-- 2023: Status -->
+<circle cx="1600" cy="220" r="7" fill="#d4af37"/>
+<rect x="1510" y="148" width="180" height="52" rx="6" fill="rgba(212,175,55,0.1)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+<text x="1600" y="166" fill="#d4af37" font-size="10" font-weight="700" text-anchor="middle">۲۰۲۳</text>
+<text x="1600" y="181" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">بازسازی ناقص</text>
+<text x="1600" y="193" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">UNESCO: ۱۰% بازیابی</text>
+
+<!-- ====== MIDDLE LEFT: MUSEUM LOOTING ====== -->
+<rect x="60" y="325" width="590" height="310" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh48)"/>
+<text x="355" y="355" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">🏺 غارت موزه ملی عراق — آوریل ۲۰۰۳</text>
+
+<g transform="translate(80,370)">
+  <rect x="0" y="0" width="260" height="60" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="130" y="22" fill="#e74c3c" font-size="20" font-weight="900" text-anchor="middle">۱۵,۰۰۰</text>
+  <text x="130" y="40" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">اثر سرقت شده</text>
+  <text x="130" y="52" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">بسیاری ۵,۰۰۰+ ساله</text>
+
+  <rect x="275" y="0" width="260" height="60" rx="8" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.12)" stroke-width="1"/>
+  <text x="405" y="22" fill="#2ecc71" font-size="20" font-weight="900" text-anchor="middle">۷,۰۰۰</text>
+  <text x="405" y="40" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">بازیابی شده</text>
+  <text x="405" y="52" fill="rgba(255,255,255,0.3)" font-size="7" text-anchor="middle">(≈۴۷% فقط — ۲۰ سال بعد)</text>
+
+  <rect x="0" y="70" width="535" height="50" rx="6" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+  <text x="15" y="90" fill="#ff9800" font-size="10" font-weight="700">📌 گفته رامسفلد (وزیر دفاع آمریکا):</text>
+  <text x="15" y="108" fill="rgba(255,255,255,0.5)" font-size="9" italic="true">«Stuff happens... freedom is untidy» — در پاسخ به غارت ۷,۰۰۰ سال تمدن</text>
+
+  <rect x="0" y="128" width="535" height="48" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="15" y="148" fill="#e74c3c" font-size="10" font-weight="700">⚠️ واقعیت: آمریکا وزارت نفت را حفاظت کرد — موزه را رها کرد</text>
+  <text x="15" y="165" fill="rgba(255,255,255,0.4)" font-size="9">تنها ساختمان دولتی محافظت‌شده = وزارت نفت + سفارت‌ها</text>
+
+  <rect x="0" y="184" width="535" height="42" rx="6" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+  <text x="267" y="205" fill="#00b4d8" font-size="10" font-weight="700" text-anchor="middle">قاچاق آثار: بازار سیاه هنوز فعال — eBay, Christie's, خلیج</text>
+  <text x="267" y="220" fill="rgba(255,255,255,0.35)" font-size="8" text-anchor="middle">Hobby Lobby (آمریکا): ۳,۸۰۰ اثر عراقی قاچاق → جریمه $۳M فقط!</text>
+</g>
+
+<!-- ====== MIDDLE: ISIS SYSTEMATIC DESTRUCTION ====== -->
+<rect x="675" y="325" width="590" height="310" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh48)"/>
+<text x="970" y="355" fill="#e74c3c" font-size="14" font-weight="900" text-anchor="middle">💥 تخریب سیستماتیک داعش — «فرهنگ‌کُشی»</text>
+
+<g transform="translate(695,370)">
+  <!-- Nimrud -->
+  <rect x="0" y="0" width="545" height="42" rx="6" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+  <text x="15" y="18" fill="#e74c3c" font-size="11" font-weight="900">🏛️ نمرود (کلخو) — پایتخت آشور | ۳,۰۰۰ ساله</text>
+  <text x="15" y="34" fill="rgba(255,255,255,0.4)" font-size="9">مارس ۲۰۱۵: بولدوزر + مواد منفجره → تخریب ≈۸۰%</text>
+
+  <!-- Nineveh -->
+  <rect x="0" y="48" width="545" height="42" rx="6" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="15" y="66" fill="#ff9800" font-size="11" font-weight="900">🏰 نینوا — بزرگ‌ترین شهر جهان باستان</text>
+  <text x="15" y="82" fill="rgba(255,255,255,0.4)" font-size="9">دروازه نرگال + لاماسوها → پتک‌زنی ویدئویی + تخریب دیوارها</text>
+
+  <!-- Hatra -->
+  <rect x="0" y="96" width="545" height="42" rx="6" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+  <text x="15" y="114" fill="#9b59b6" font-size="11" font-weight="900">🏺 هترا — میراث جهانی UNESCO | ۲,۰۰۰ ساله</text>
+  <text x="15" y="130" fill="rgba(255,255,255,0.4)" font-size="9">مارس ۲۰۱۵: تخریب مجسمه‌ها و ستون‌ها → «بت‌شکنی»</text>
+
+  <!-- Mosul Museum -->
+  <rect x="0" y="144" width="545" height="42" rx="6" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.12)" stroke-width="1"/>
+  <text x="15" y="162" fill="#00b4d8" font-size="11" font-weight="900">🖼️ موزه موصل — ویدئوی تکان‌دهنده فوریه ۲۰۱۵</text>
+  <text x="15" y="178" fill="rgba(255,255,255,0.4)" font-size="9">لاماسوی بالدار آشوری + مجسمه‌های پارتی → پتک + دریل</text>
+
+  <!-- Mosques/Shrines -->
+  <rect x="0" y="192" width="545" height="42" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="15" y="210" fill="#e74c3c" font-size="11" font-weight="700">🕌 ۳۶ مسجد + ۴۵ زیارتگاه + ۲ کلیسا تخریب شده</text>
+  <text x="15" y="226" fill="rgba(255,255,255,0.4)" font-size="9">مقبره یونس (نبی) | مقبره شیث | مسجد النوری + مناره الحدباء</text>
+</g>
+
+<!-- Stats -->
+<rect x="695" y="610" width="240" height="18" rx="3" fill="rgba(231,76,60,0.08)"/>
+<text x="815" y="623" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">مجموع: ≈۱۰۰+ سایت باستانی تخریب‌شده</text>
+
+<!-- ====== RIGHT: WHAT WAS LOST ====== -->
+<rect x="1290" y="325" width="570" height="310" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh48)"/>
+<text x="1575" y="355" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📜 چه از دست رفت — ارزش بی‌بدیل</text>
+
+<g transform="translate(1310,370)">
+  <rect x="0" y="0" width="530" height="48" rx="6" fill="rgba(212,175,55,0.08)" stroke="rgba(212,175,55,0.12)" stroke-width="1"/>
+  <text x="15" y="18" fill="#d4af37" font-size="11" font-weight="900">📋 الواح گلی سومری/بابلی</text>
+  <text x="15" y="35" fill="rgba(255,255,255,0.5)" font-size="9">قدیمی‌ترین نوشته‌های بشر (۳,۵۰۰ ق.م) — بسیاری در بازار سیاه</text>
+
+  <rect x="0" y="55" width="530" height="48" rx="6" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+  <text x="15" y="73" fill="#00b4d8" font-size="11" font-weight="900">🗿 لاماسوهای آشوری (گاو بالدار)</text>
+  <text x="15" y="90" fill="rgba(255,255,255,0.5)" font-size="9">۲,۸۰۰ ساله — نماد تمدن بین‌النهرین → پتک‌زنی داعش</text>
+
+  <rect x="0" y="110" width="530" height="48" rx="6" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+  <text x="15" y="128" fill="#9b59b6" font-size="11" font-weight="900">📚 نسخ خطی عثمانی/عباسی</text>
+  <text x="15" y="145" fill="rgba(255,255,255,0.5)" font-size="9">آتش‌سوزی کتابخانه ملی ۲۰۰۳ + کتابخانه موصل ۲۰۱۵</text>
+
+  <rect x="0" y="165" width="530" height="48" rx="6" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="15" y="183" fill="#2ecc71" font-size="11" font-weight="700">🏗️ معماری تاریخی موصل</text>
+  <text x="15" y="200" fill="rgba(255,255,255,0.5)" font-size="9">۸۰% شهر قدیم ویران — خانه‌های عثمانی، کلیساها، حمام‌ها</text>
+
+  <rect x="0" y="220" width="530" height="40" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="265" y="243" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">⚠️ تخمین UNESCO: خسارت ≈ «غیرقابل محاسبه» — میراث بشریت بود نه فقط عراق</text>
+</g>
+
+<!-- ====== BOTTOM: RECONSTRUCTION EFFORTS ====== -->
+<rect x="60" y="655" width="880" height="170" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh48)"/>
+<text x="500" y="685" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">🔧 تلاش‌های بازسازی — کند و ناکافی</text>
+
+<g transform="translate(85,700)">
+  <rect x="0" y="0" width="200" height="55" rx="8" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.12)" stroke-width="1"/>
+  <text x="100" y="20" fill="#2ecc71" font-size="15" font-weight="900" text-anchor="middle">$۱۰۰M</text>
+  <text x="100" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">بودجه UNESCO برای</text>
+  <text x="100" y="50" fill="rgba(255,255,255,0.3)" font-size="8" text-anchor="middle">بازسازی موصل</text>
+
+  <rect x="215" y="0" width="200" height="55" rx="8" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="315" y="20" fill="#ff9800" font-size="15" font-weight="900" text-anchor="middle">≈۱۰%</text>
+  <text x="315" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">پیشرفت بازسازی</text>
+  <text x="315" y="50" fill="rgba(255,255,255,0.3)" font-size="8" text-anchor="middle">سایت‌های باستانی</text>
+
+  <rect x="430" y="0" width="200" height="55" rx="8" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.12)" stroke-width="1"/>
+  <text x="530" y="20" fill="#00b4d8" font-size="15" font-weight="900" text-anchor="middle">۴۷%</text>
+  <text x="530" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">آثار موزه بازیابی</text>
+  <text x="530" y="50" fill="rgba(255,255,255,0.3)" font-size="8" text-anchor="middle">۷K از ۱۵K</text>
+
+  <rect x="645" y="0" width="200" height="55" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+  <text x="745" y="20" fill="#e74c3c" font-size="15" font-weight="900" text-anchor="middle">$۰</text>
+  <text x="745" y="38" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">غرامت آمریکا</text>
+  <text x="745" y="50" fill="rgba(255,255,255,0.3)" font-size="8" text-anchor="middle">برای غارت ۲۰۰۳</text>
+</g>
+
+<text x="500" y="780" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">مناره الحدباء (۸۰۰ ساله) در حال بازسازی توسط UNESCO — تکمیل تخمینی: ۲۰۲۷</text>
+<text x="500" y="798" fill="rgba(255,255,255,0.3)" font-size="8" text-anchor="middle">اما: آنچه تخریب شد «اصیل» بود — بازسازی = کپی | تمدن اصل بازنمی‌گردد</text>
+
+<!-- ====== BOTTOM RIGHT: GLOBAL CONTEXT ====== -->
+<rect x="965" y="655" width="890" height="170" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh48)"/>
+<text x="1410" y="685" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">🌍 در مقیاس جهانی: چرا مهم است؟</text>
+
+<text x="985" y="710" fill="rgba(255,255,255,0.6)" font-size="10">▸ بین‌النهرین = مهد خط، ریاضی، قانون، کشاورزی، شهرنشینی بشر</text>
+<text x="985" y="730" fill="rgba(255,255,255,0.6)" font-size="10">▸ حمورابی (۱۷۵۰ ق.م): اولین قانون مدون → بشر بدون عراق، تاریخش ناقص است</text>
+<text x="985" y="750" fill="rgba(255,255,255,0.6)" font-size="10">▸ گیلگمش: اولین حماسه ادبی بشر — ۱,۰۰۰ سال قبل از هومر</text>
+<text x="985" y="770" fill="rgba(255,255,255,0.6)" font-size="10">▸ بابل: یکی از ۷ عجایب جهان باستان → اکنون سایت نظامی آمریکا بود</text>
+
+<rect x="985" y="785" width="850" height="30" rx="4" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="1410" y="805" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">⚡ کمپ آلفا (Camp Alpha): پایگاه آمریکا روی ویرانه‌های بابل → آسیب ساختاری به دیوارها و خاک</text>
+
+<!-- ====== BOTTOM NOTE ====== -->
+<rect x="60" y="845" width="1800" height="55" rx="10" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+<text x="960" y="868" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📌 ۷,۰۰۰ سال میراث بشری — در ۲۰ سال بین بمب آمریکا، پتک داعش، و بی‌توجهی جهان ویران شد</text>
+<text x="960" y="888" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">رامسفلد: «Stuff happens» — سومریان، آشوریان، بابلیان: ۷ هزار سال «stuff» بشری</text>
+
+<!-- Footer -->
+<text x="60" y="42" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 48 / 60</text>
+<text x="1860" y="42" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۸: توسعه انسانی</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: UNESCO, Smithsonian, British Museum, ASOR Cultural Heritage, Iraq Museum Database</text>
+</svg>

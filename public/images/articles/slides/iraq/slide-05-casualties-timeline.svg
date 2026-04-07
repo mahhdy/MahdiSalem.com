@@ -1,0 +1,145 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 34px; font-weight: 900; text-anchor: middle; }
+    .sub { fill: #d4af37; font-size: 17px; font-weight: 400; text-anchor: middle; }
+    .axis-line { stroke: rgba(255,255,255,0.15); stroke-width: 1; }
+    .grid { stroke: rgba(255,255,255,0.04); stroke-width: 1; }
+    .ax { fill: rgba(255,255,255,0.5); font-size: 12px; text-anchor: middle; }
+    .yl { fill: rgba(255,255,255,0.4); font-size: 11px; text-anchor: end; }
+    .area-f { fill: url(#aG); opacity: 0.6; }
+    .area-l { fill: none; stroke: #e74c3c; stroke-width: 2.5; }
+    .dot { fill: #e74c3c; stroke: #fff; stroke-width: 1.5; }
+    .dl { fill: #fff; font-size: 11px; font-weight: 700; text-anchor: middle; }
+    .ev { stroke: rgba(212,175,55,0.4); stroke-width: 1; stroke-dasharray: 4,3; }
+    .el { fill: #d4af37; font-size: 11px; font-weight: 500; text-anchor: middle; }
+    .sb { rx: 10; fill: rgba(231,76,60,0.08); stroke: rgba(231,76,60,0.25); stroke-width: 1; }
+    .bn { fill: #e74c3c; font-size: 42px; font-weight: 900; text-anchor: middle; }
+    .bl { fill: rgba(255,255,255,0.7); font-size: 14px; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    @keyframes drawL { from { stroke-dashoffset: 3000; } to { stroke-dashoffset: 0; } }
+    .draw { stroke-dasharray: 3000; animation: drawL 3s ease-out both; }
+  </style>
+  <linearGradient id="aG" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:0.4"/>
+    <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:0"/>
+  </linearGradient>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+  <radialGradient id="gR2" cx="50%" cy="40%" r="50%">
+    <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:0.08"/>
+    <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:0"/>
+  </radialGradient>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+<ellipse cx="960" cy="400" rx="800" ry="350" fill="url(#gR2)"/>
+
+<text x="960" y="50" class="title">بیست سال خون: تایم‌لاین تلفات غیرنظامی عراق</text>
+<text x="960" y="80" class="sub">برآورد سالانه‌ی کشته‌شدگان غیرنظامی بر اساس منابع متعدد — ۲۰۰۳ تا ۲۰۲۳</text>
+<line x1="300" y1="98" x2="1620" y2="98" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- شبکه -->
+<line x1="180" y1="160" x2="1740" y2="160" class="grid"/>
+<line x1="180" y1="314" x2="1740" y2="314" class="grid"/>
+<line x1="180" y1="468" x2="1740" y2="468" class="grid"/>
+<line x1="180" y1="622" x2="1740" y2="622" class="grid"/>
+<text x="170" y="165" class="yl">۳۵K</text>
+<text x="170" y="319" class="yl">۲۵K</text>
+<text x="170" y="473" class="yl">۱۵K</text>
+<text x="170" y="627" class="yl">۵K</text>
+<text x="170" y="705" class="yl">۰</text>
+
+<line x1="180" y1="700" x2="1740" y2="700" class="axis-line"/>
+<line x1="180" y1="160" x2="180" y2="700" class="axis-line"/>
+
+<!-- سال‌ها -->
+<text x="180" y="725" class="ax">۰۳</text>
+<text x="258" y="725" class="ax">۰۴</text>
+<text x="336" y="725" class="ax">۰۵</text>
+<text x="414" y="725" class="ax">۰۶</text>
+<text x="492" y="725" class="ax">۰۷</text>
+<text x="570" y="725" class="ax">۰۸</text>
+<text x="648" y="725" class="ax">۰۹</text>
+<text x="726" y="725" class="ax">۱۰</text>
+<text x="804" y="725" class="ax">۱۱</text>
+<text x="882" y="725" class="ax">۱۲</text>
+<text x="960" y="725" class="ax">۱۳</text>
+<text x="1038" y="725" class="ax">۱۴</text>
+<text x="1116" y="725" class="ax">۱۵</text>
+<text x="1194" y="725" class="ax">۱۶</text>
+<text x="1272" y="725" class="ax">۱۷</text>
+<text x="1350" y="725" class="ax">۱۸</text>
+<text x="1428" y="725" class="ax">۱۹</text>
+<text x="1506" y="725" class="ax">۲۰</text>
+<text x="1584" y="725" class="ax">۲۱</text>
+<text x="1662" y="725" class="ax">۲۲</text>
+<text x="1740" y="725" class="ax">۲۳</text>
+
+<!-- Area -->
+<path class="area-f" d="M180,423 L258,438 L336,268 L414,176 L492,268 L570,515 L648,577 L726,638 L804,646 L882,631 L960,561 L1038,423 L1116,438 L1194,454 L1272,623 L1350,654 L1428,677 L1506,685 L1584,688 L1662,691 L1740,692 L1740,700 L180,700 Z"/>
+<path class="area-l draw" d="M180,423 L258,438 L336,268 L414,176 L492,268 L570,515 L648,577 L726,638 L804,646 L882,631 L960,561 L1038,423 L1116,438 L1194,454 L1272,623 L1350,654 L1428,677 L1506,685 L1584,688 L1662,691 L1740,692"/>
+
+<!-- نقاط -->
+<circle cx="180" cy="423" r="5" class="dot"/><text x="180" y="413" class="dl">۱۸K</text>
+<circle cx="258" cy="438" r="5" class="dot"/><text x="258" y="428" class="dl">۱۷K</text>
+<circle cx="336" cy="268" r="5" class="dot"/><text x="336" y="255" class="dl">۲۸K</text>
+<circle cx="414" cy="176" r="7" fill="#ff0000" stroke="#fff" stroke-width="2"/><text x="414" y="163" class="dl" font-size="14" fill="#ff6b6b">۳۴K ⬆</text>
+<circle cx="492" cy="268" r="5" class="dot"/><text x="492" y="255" class="dl">۲۸K</text>
+<circle cx="570" cy="515" r="5" class="dot"/><text x="570" y="505" class="dl">۱۲K</text>
+<circle cx="648" cy="577" r="4" class="dot"/><text x="648" y="567" class="dl">۸K</text>
+<circle cx="726" cy="638" r="4" class="dot"/><text x="726" y="628" class="dl">۴K</text>
+<circle cx="882" cy="631" r="4" class="dot"/><text x="882" y="621" class="dl">۴.۵K</text>
+<circle cx="960" cy="561" r="5" class="dot"/><text x="960" y="551" class="dl">۹K</text>
+<circle cx="1038" cy="423" r="6" fill="#ff3300" stroke="#fff" stroke-width="2"/><text x="1038" y="410" class="dl" font-size="13" fill="#ff6b6b">۱۸K</text>
+<circle cx="1116" cy="438" r="5" class="dot"/><text x="1116" y="428" class="dl">۱۷K</text>
+<circle cx="1194" cy="454" r="5" class="dot"/><text x="1194" y="444" class="dl">۱۶K</text>
+<circle cx="1272" cy="623" r="4" class="dot"/><text x="1272" y="613" class="dl">۵K</text>
+<circle cx="1350" cy="654" r="4" class="dot"/><text x="1350" y="644" class="dl">۳K</text>
+<circle cx="1428" cy="677" r="3" class="dot"/><text x="1428" y="667" class="dl">۱.۵K</text>
+<circle cx="1584" cy="688" r="3" class="dot"/><text x="1584" y="678" class="dl">۰.۸K</text>
+<circle cx="1740" cy="692" r="3" class="dot"/><text x="1740" y="682" class="dl">۰.۵K</text>
+
+<!-- رویدادها -->
+<rect x="340" y="138" width="226" height="22" rx="4" fill="rgba(231,76,60,0.2)" stroke="rgba(231,76,60,0.4)" stroke-width="1"/>
+<text x="453" y="154" class="el" fill="#e74c3c" font-weight="700">جنگ فرقه‌ای ۰۵–۰۸</text>
+<line x1="414" y1="130" x2="414" y2="170" class="ev"/><text x="414" y="126" class="el" font-size="10">💥 سامرا</text>
+<line x1="492" y1="130" x2="492" y2="260" class="ev"/><text x="492" y="126" class="el" font-size="10">🔺 Surge</text>
+<line x1="804" y1="160" x2="804" y2="640" class="ev"/><text x="804" y="152" class="el" font-size="10">🇺🇸 خروج</text>
+<rect x="1042" y="138" width="226" height="22" rx="4" fill="rgba(20,20,20,0.9)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+<text x="1155" y="154" fill="#fff" font-size="11" font-weight="700" text-anchor="middle">🏴 داعش ۱۴–۱۷</text>
+<line x1="1428" y1="660" x2="1428" y2="700" class="ev"/><text x="1428" y="655" class="el" font-size="10">✊ تشرین</text>
+
+<!-- باکس‌های آماری -->
+<rect x="80" y="760" width="400" height="130" class="sb" filter="url(#sh)"/>
+<text x="280" y="810" class="bn">+۳۰۰,۰۰۰</text>
+<text x="280" y="840" class="bl">مجموع تلفات مستقیم (برآورد میانه)</text>
+<text x="280" y="862" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">IBC + UNAMI + WHO combined estimate</text>
+<text x="280" y="880" fill="rgba(255,255,255,0.3)" font-size="10" text-anchor="middle">محدوده: ۲۱۰K (مستند) تا ۱M+ (نظرسنجی)</text>
+
+<rect x="540" y="760" width="400" height="130" class="sb" filter="url(#sh)"/>
+<text x="740" y="810" fill="#f39c12" font-size="42" font-weight="900" text-anchor="middle">هر ۵۲ دقیقه</text>
+<text x="740" y="840" class="bl">یک غیرنظامی عراقی کشته شد</text>
+<text x="740" y="862" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">میانگین ۲۰۰۳–۲۰۰۸ (اوج خشونت)</text>
+
+<rect x="1000" y="760" width="400" height="130" rx="10" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.25)" stroke-width="1" filter="url(#sh)"/>
+<text x="1200" y="810" fill="#00b4d8" font-size="42" font-weight="900" text-anchor="middle">۲ موج</text>
+<text x="1200" y="840" class="bl">جنگ فرقه‌ای (۰۵–۰۸) + داعش (۱۴–۱۷)</text>
+<text x="1200" y="862" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">هر بار عراق بازمی‌گشت، بحران جدید آغاز شد</text>
+
+<rect x="1460" y="760" width="380" height="130" rx="10" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.25)" stroke-width="1" filter="url(#sh)"/>
+<text x="1650" y="810" fill="#2ecc71" font-size="42" font-weight="900" text-anchor="middle">▼ ۹۸%</text>
+<text x="1650" y="840" class="bl">کاهش تلفات: ۲۰۰۶ → ۲۰۲۳</text>
+<text x="1650" y="862" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">از ۳۴,۰۰۰ به ۵۰۰ در سال</text>
+<text x="1650" y="880" fill="rgba(255,255,255,0.3)" font-size="10" text-anchor="middle">اما هر کشته‌ای یک خانواده‌ی ویران شده</text>
+
+<!-- نقل‌قول -->
+<rect x="80" y="910" width="1760" height="55" rx="8" fill="rgba(231,76,60,0.05)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="960" y="940" fill="#e74c3c" font-size="16" font-weight="500" text-anchor="middle" font-style="italic">«ما آمار نمی‌شماریم» — ژنرال تامی فرنکس. واقعیت: کسی آمار عراقی‌ها را نشمرد چون مهم نبودند.</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 05 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۱: تلفات غیرنظامی</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: Iraq Body Count, Lancet 2006, ORB 2007, UNAMI Monthly Reports, WHO 2008, Watson Institute</text>
+</svg>

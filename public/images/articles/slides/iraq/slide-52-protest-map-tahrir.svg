@@ -1,0 +1,242 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+  </style>
+  <linearGradient id="bg52" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0a0e27"/>
+    <stop offset="50%" stop-color="#0d1333"/>
+    <stop offset="100%" stop-color="#1a0a1e"/>
+  </linearGradient>
+  <filter id="sh52"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#bg52)"/>
+
+<!-- Header -->
+<text x="960" y="45" fill="#fff" font-size="32" font-weight="900" text-anchor="middle">🗺️ نقشه اعتراضات تشرین و «جمهوری تحریر»</text>
+<text x="960" y="72" fill="#d4af37" font-size="15" font-weight="400" text-anchor="middle">۱۱ استان شیعه‌نشین — شیعیان علیه حکومت شیعه — زلزله‌ای در روایت محاصصه</text>
+<line x1="150" y1="88" x2="1770" y2="88" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ====== LEFT: PROTEST MAP ====== -->
+<rect x="60" y="105" width="620" height="530" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh52)"/>
+<text x="370" y="135" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">🗺️ نقشه شماتیک — شهرهای درگیر</text>
+
+<!-- Iraq outline -->
+<path d="M220,200 L330,175 L450,180 L530,215 L550,290 L560,370 L540,440 L490,500 L420,540 L350,560 L280,545 L230,500 L190,430 L175,360 L180,290 L200,240 Z" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+
+<!-- Kurdistan label -->
+<text x="400" y="200" fill="rgba(255,255,255,0.2)" font-size="9" text-anchor="middle">کردستان (بدون اعتراض)</text>
+
+<!-- Baghdad -->
+<circle cx="370" cy="310" r="22" fill="rgba(231,76,60,0.3)" stroke="#e74c3c" stroke-width="2"/>
+<circle cx="370" cy="310" r="8" fill="#e74c3c"/>
+<text x="370" y="295" fill="#e74c3c" font-size="11" font-weight="900" text-anchor="middle">بغداد</text>
+<text x="370" y="342" fill="rgba(255,255,255,0.5)" font-size="7" text-anchor="middle">۵۰۰K+ | تحریر</text>
+
+<!-- Basra -->
+<circle cx="490" cy="490" r="16" fill="rgba(231,76,60,0.25)" stroke="#e74c3c" stroke-width="1.5"/>
+<circle cx="490" cy="490" r="5" fill="#e74c3c"/>
+<text x="490" y="478" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">بصره</text>
+<text x="490" y="512" fill="rgba(255,255,255,0.4)" font-size="7" text-anchor="middle">۱۰۰K+</text>
+
+<!-- Nasiriyah -->
+<circle cx="420" cy="460" r="15" fill="rgba(231,76,60,0.3)" stroke="#e74c3c" stroke-width="2"/>
+<circle cx="420" cy="460" r="5" fill="#e74c3c"/>
+<text x="420" y="448" fill="#e74c3c" font-size="9" font-weight="900" text-anchor="middle">ناصریه 💀</text>
+<text x="420" y="482" fill="rgba(255,255,255,0.5)" font-size="7" text-anchor="middle">خونین‌ترین</text>
+
+<!-- Najaf -->
+<circle cx="330" cy="390" r="12" fill="rgba(255,152,0,0.25)" stroke="#ff9800" stroke-width="1.5"/>
+<text x="305" y="392" fill="#ff9800" font-size="8" font-weight="700" text-anchor="end">نجف 🔥</text>
+
+<!-- Karbala -->
+<circle cx="320" cy="355" r="11" fill="rgba(255,152,0,0.2)" stroke="#ff9800" stroke-width="1"/>
+<text x="295" y="358" fill="#ff9800" font-size="8" font-weight="700" text-anchor="end">کربلا</text>
+
+<!-- Diwaniyah -->
+<circle cx="360" cy="420" r="9" fill="rgba(231,76,60,0.2)" stroke="#e74c3c" stroke-width="1"/>
+<text x="345" y="418" fill="rgba(255,255,255,0.4)" font-size="7" text-anchor="end">دیوانیه</text>
+
+<!-- Hilla -->
+<circle cx="350" cy="345" r="9" fill="rgba(231,76,60,0.2)" stroke="#e74c3c" stroke-width="1"/>
+<text x="335" y="348" fill="rgba(255,255,255,0.4)" font-size="7" text-anchor="end">حلّه</text>
+
+<!-- Amarah -->
+<circle cx="460" cy="420" r="9" fill="rgba(231,76,60,0.2)" stroke="#e74c3c" stroke-width="1"/>
+<text x="460" y="438" fill="rgba(255,255,255,0.4)" font-size="7" text-anchor="middle">عماره</text>
+
+<!-- Kut -->
+<circle cx="430" cy="365" r="8" fill="rgba(231,76,60,0.15)" stroke="#e74c3c" stroke-width="1"/>
+<text x="445" y="368" fill="rgba(255,255,255,0.4)" font-size="7">کوت</text>
+
+<!-- Samawah -->
+<circle cx="380" cy="480" r="8" fill="rgba(231,76,60,0.15)" stroke="#e74c3c" stroke-width="1"/>
+<text x="380" y="496" fill="rgba(255,255,255,0.4)" font-size="7" text-anchor="middle">سماوه</text>
+
+<!-- Legend -->
+<g transform="translate(100,560)">
+  <circle cx="8" cy="8" r="8" fill="rgba(231,76,60,0.3)" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="22" y="12" fill="rgba(255,255,255,0.5)" font-size="8">شدید (۱۰۰K+)</text>
+  <circle cx="150" cy="8" r="5" fill="rgba(231,76,60,0.2)" stroke="#e74c3c" stroke-width="1"/>
+  <text x="162" y="12" fill="rgba(255,255,255,0.5)" font-size="8">فعال</text>
+  <circle cx="240" cy="8" r="5" fill="rgba(255,152,0,0.2)" stroke="#ff9800" stroke-width="1"/>
+  <text x="252" y="12" fill="rgba(255,255,255,0.5)" font-size="8">+ آتش کنسولگری</text>
+</g>
+
+<rect x="80" y="590" width="580" height="30" rx="4" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="370" y="610" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">⚡ همه شهرها شیعه‌نشین — شیعیان علیه حکومت شیعه + نفوذ ایران</text>
+
+<!-- ====== MIDDLE: TAHRIR REPUBLIC ====== -->
+<rect x="705" y="105" width="590" height="280" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh52)"/>
+<text x="1000" y="135" fill="#2ecc71" font-size="14" font-weight="900" text-anchor="middle">🏛️ «جمهوری تحریر» — آرمان‌شهر مردمی</text>
+<text x="1000" y="155" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">میدان تحریر بغداد → شهر خودمختار با خدمات کامل</text>
+
+<g transform="translate(725,168)">
+  <rect x="0" y="0" width="170" height="42" rx="6" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.12)" stroke-width="1"/>
+  <text x="85" y="17" fill="#2ecc71" font-size="10" font-weight="700" text-anchor="middle">📚 کتابخانه آزاد</text>
+  <text x="85" y="33" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">هزاران کتاب اهدایی</text>
+
+  <rect x="185" y="0" width="170" height="42" rx="6" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.12)" stroke-width="1"/>
+  <text x="270" y="17" fill="#00b4d8" font-size="10" font-weight="700" text-anchor="middle">🏥 بهداری صحرایی</text>
+  <text x="270" y="33" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">پزشکان داوطلب</text>
+
+  <rect x="370" y="0" width="170" height="42" rx="6" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+  <text x="455" y="17" fill="#ff9800" font-size="10" font-weight="700" text-anchor="middle">🍞 آشپزخانه عمومی</text>
+  <text x="455" y="33" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">غذای رایگان</text>
+
+  <rect x="0" y="48" width="170" height="42" rx="6" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+  <text x="85" y="65" fill="#9b59b6" font-size="10" font-weight="700" text-anchor="middle">🎨 گالری هنر</text>
+  <text x="85" y="81" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">نقاشی + موسیقی</text>
+
+  <rect x="185" y="48" width="170" height="42" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="270" y="65" fill="#e74c3c" font-size="10" font-weight="700" text-anchor="middle">📡 رادیو تحریر</text>
+  <text x="270" y="81" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">پخش زنده اخبار</text>
+
+  <rect x="370" y="48" width="170" height="42" rx="6" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+  <text x="455" y="65" fill="#d4af37" font-size="10" font-weight="700" text-anchor="middle">🛡️ نگهبانی ۲۴h</text>
+  <text x="455" y="81" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="middle">محافظت داوطلبانه</text>
+
+  <rect x="0" y="96" width="540" height="42" rx="6" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="270" y="113" fill="#2ecc71" font-size="10" font-weight="700" text-anchor="middle">🎓 کلاس‌های آموزشی: زبان، حقوق شهروندی، تاریخ عراق — دانشگاه خیابانی</text>
+  <text x="270" y="129" fill="rgba(255,255,255,0.35)" font-size="8" text-anchor="middle">نکته: هیچ‌یک از این خدمات توسط دولت عراق ارائه نمی‌شد — مردم خودشان ساختند</text>
+</g>
+
+<rect x="725" y="340" width="545" height="30" rx="4" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+<text x="997" y="360" fill="#2ecc71" font-size="10" font-weight="700" text-anchor="middle">💡 جمهوری تحریر = اثبات: عراقیان بدون محاصصه می‌توانند ملت باشند</text>
+
+<!-- ====== MIDDLE BOTTOM: CASUALTIES BY CITY ====== -->
+<rect x="705" y="400" width="590" height="235" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh52)"/>
+<text x="1000" y="430" fill="#e74c3c" font-size="14" font-weight="900" text-anchor="middle">💀 تلفات بر اساس شهر — خونین‌ترین‌ها</text>
+
+<g transform="translate(725,445)">
+  <!-- Nasiriyah -->
+  <text x="0" y="15" fill="rgba(255,255,255,0.6)" font-size="10">ناصریه</text>
+  <rect x="90" y="2" width="470" height="20" rx="3" fill="rgba(255,255,255,0.03)"/>
+  <rect x="90" y="2" width="280" height="20" rx="3" fill="rgba(231,76,60,0.45)"/>
+  <text x="385" y="17" fill="#e74c3c" font-size="10" font-weight="900">۱۰۰+ کشته</text>
+  <text x="470" y="17" fill="rgba(255,255,255,0.3)" font-size="8">خونین‌ترین!</text>
+
+  <!-- Baghdad -->
+  <text x="0" y="40" fill="rgba(255,255,255,0.6)" font-size="10">بغداد</text>
+  <rect x="90" y="27" width="470" height="20" rx="3" fill="rgba(255,255,255,0.03)"/>
+  <rect x="90" y="27" width="250" height="20" rx="3" fill="rgba(231,76,60,0.35)"/>
+  <text x="355" y="42" fill="#e74c3c" font-size="10" font-weight="700">≈۲۵۰ کشته</text>
+
+  <!-- Karbala -->
+  <text x="0" y="65" fill="rgba(255,255,255,0.6)" font-size="10">کربلا</text>
+  <rect x="90" y="52" width="470" height="20" rx="3" fill="rgba(255,255,255,0.03)"/>
+  <rect x="90" y="52" width="110" height="20" rx="3" fill="rgba(255,152,0,0.35)"/>
+  <text x="215" y="67" fill="#ff9800" font-size="10" font-weight="700">≈۶۰ کشته</text>
+
+  <!-- Basra -->
+  <text x="0" y="90" fill="rgba(255,255,255,0.6)" font-size="10">بصره</text>
+  <rect x="90" y="77" width="470" height="20" rx="3" fill="rgba(255,255,255,0.03)"/>
+  <rect x="90" y="77" width="90" height="20" rx="3" fill="rgba(255,152,0,0.3)"/>
+  <text x="195" y="92" fill="#ff9800" font-size="10" font-weight="700">≈۵۰ کشته</text>
+
+  <!-- Najaf -->
+  <text x="0" y="115" fill="rgba(255,255,255,0.6)" font-size="10">نجف</text>
+  <rect x="90" y="102" width="470" height="20" rx="3" fill="rgba(255,255,255,0.03)"/>
+  <rect x="90" y="102" width="70" height="20" rx="3" fill="rgba(0,180,216,0.3)"/>
+  <text x="175" y="117" fill="#00b4d8" font-size="10" font-weight="700">≈۴۰ کشته</text>
+
+  <!-- Others -->
+  <text x="0" y="140" fill="rgba(255,255,255,0.6)" font-size="10">سایر شهرها</text>
+  <rect x="90" y="127" width="470" height="20" rx="3" fill="rgba(255,255,255,0.03)"/>
+  <rect x="90" y="127" width="180" height="20" rx="3" fill="rgba(155,89,182,0.25)"/>
+  <text x="285" y="142" fill="#9b59b6" font-size="10" font-weight="700">≈۳۰۰ کشته</text>
+</g>
+
+<rect x="725" y="610" width="545" height="18" rx="3" fill="rgba(231,76,60,0.06)"/>
+<text x="997" y="623" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">مجموع: ≈۸۰۰ کشته + ۲۵,۰۰۰ زخمی — بیشتر با گلوله جنگی و گاز اشک‌آور سنگین</text>
+
+<!-- ====== RIGHT: INTERNET & MEDIA ====== -->
+<rect x="1320" y="105" width="540" height="530" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh52)"/>
+<text x="1590" y="135" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📱 جنگ دیجیتال: سانسور vs مقاومت</text>
+
+<!-- Internet shutdowns -->
+<text x="1340" y="162" fill="#e74c3c" font-size="12" font-weight="900">🚫 قطع اینترنت — سلاح دولت</text>
+
+<g transform="translate(1340,175)">
+  <rect x="0" y="0" width="500" height="30" rx="4" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <rect x="0" y="0" width="350" height="30" rx="4" fill="rgba(231,76,60,0.15)"/>
+  <text x="10" y="20" fill="#fff" font-size="9" font-weight="700">۲–۹ اکتبر: قطع کامل ۷ روز</text>
+  <text x="430" y="20" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="end">شدید</text>
+
+  <rect x="0" y="36" width="500" height="30" rx="4" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+  <rect x="0" y="36" width="200" height="30" rx="4" fill="rgba(255,152,0,0.15)"/>
+  <text x="10" y="56" fill="#fff" font-size="9" font-weight="700">۲۵–۲۸ اکتبر: قطع ۴ روز</text>
+  <text x="430" y="56" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="end">موج دوم</text>
+
+  <rect x="0" y="72" width="500" height="30" rx="4" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+  <rect x="0" y="72" width="450" height="30" rx="4" fill="rgba(231,76,60,0.12)"/>
+  <text x="10" y="92" fill="#fff" font-size="9" font-weight="700">نوامبر: قطع ۲۰ روز متوالی! (طولانی‌ترین)</text>
+  <text x="430" y="92" fill="rgba(255,255,255,0.4)" font-size="8" text-anchor="end">رکورد</text>
+
+  <rect x="0" y="108" width="500" height="30" rx="4" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+  <rect x="0" y="108" width="150" height="30" rx="4" fill="rgba(155,89,182,0.12)"/>
+  <text x="10" y="128" fill="#fff" font-size="9" font-weight="700">دسامبر-ژانویه: قطع‌های متناوب</text>
+</g>
+
+<rect x="1340" y="325" width="500" height="28" rx="4" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="1590" y="344" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">خسارت قطع اینترنت: ≈$۲.۳B | NetBlocks: «بدترین قطعی جهان ۲۰۱۹»</text>
+
+<!-- Counter-measures -->
+<text x="1340" y="375" fill="#2ecc71" font-size="12" font-weight="900">💪 مقاومت دیجیتال معترضان</text>
+
+<g transform="translate(1340,390)">
+  <rect x="0" y="0" width="500" height="35" rx="6" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+  <text x="15" y="15" fill="#2ecc71" font-size="10" font-weight="700">🔐 VPN + Tor → دور زدن فیلتر</text>
+  <text x="15" y="28" fill="rgba(255,255,255,0.4)" font-size="8">دانلود قبلی VPN → آمادگی برای قطع</text>
+
+  <rect x="0" y="40" width="500" height="35" rx="6" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+  <text x="15" y="55" fill="#00b4d8" font-size="10" font-weight="700">📲 بلوتوث + Bridgefy → شبکه مش محلی</text>
+  <text x="15" y="68" fill="rgba(255,255,255,0.4)" font-size="8">انتقال پیام بدون اینترنت — تاکتیک هنگ‌کنگی</text>
+
+  <rect x="0" y="80" width="500" height="35" rx="6" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+  <text x="15" y="95" fill="#ff9800" font-size="10" font-weight="700">📹 ذخیره آفلاین + آپلود تأخیری</text>
+  <text x="15" y="108" fill="rgba(255,255,255,0.4)" font-size="8">فیلم‌برداری → ذخیره → آپلود بعد از وصل اینترنت</text>
+
+  <rect x="0" y="120" width="500" height="35" rx="6" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+  <text x="15" y="135" fill="#9b59b6" font-size="10" font-weight="700">📋 تلگرام: صدها کانال هماهنگی</text>
+  <text x="15" y="148" fill="rgba(255,255,255,0.4)" font-size="8">سازمان‌دهی افقی — بدون رهبر مرکزی</text>
+</g>
+
+<!-- International response -->
+<rect x="1340" y="558" width="500" height="60" rx="8" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+<text x="1590" y="578" fill="#d4af37" font-size="11" font-weight="700" text-anchor="middle">🌍 واکنش بین‌المللی: بیانیه بدون اقدام</text>
+<text x="1355" y="598" fill="rgba(255,255,255,0.4)" font-size="9">UN + HRW + Amnesty: «محکوم می‌کنیم» — آمریکا: سکوت (متحد حکومت!)</text>
+<text x="1355" y="612" fill="rgba(255,255,255,0.35)" font-size="8">ایران: «توطئه خارجی» — شبه‌نظامیان: «تخریب‌کاران»</text>
+
+<!-- ====== BOTTOM NOTE ====== -->
+<rect x="60" y="655" width="1800" height="55" rx="10" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+<text x="960" y="678" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📌 جمهوری تحریر = عراقی که مردم می‌خواستند: بدون فرقه، بدون فساد، بدون ترس — و دقیقاً به همین دلیل سرکوب شد</text>
+<text x="960" y="698" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">هنگ‌کنگ جهانی شد — تشرین فراموش شد | ۸۰۰ کشته vs صفر عکس‌العمل بین‌المللی</text>
+
+<!-- Footer -->
+<text x="60" y="42" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 52 / 60</text>
+<text x="1860" y="42" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۹: جنبش تشرین</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: OHCHR, ICG, NetBlocks, Access Now, Al Jazeera, BBC Arabic, Iraqi IHCHR | ۲۰۱۹-۲۰۲۰</text>
+</svg>

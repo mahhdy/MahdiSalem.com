@@ -1,0 +1,211 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width:1; rx:10; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+  <linearGradient id="lesson-g1" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#e74c3c" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#e74c3c" stop-opacity="0.02"/>
+  </linearGradient>
+  <linearGradient id="lesson-g2" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ff9800" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#ff9800" stop-opacity="0.02"/>
+  </linearGradient>
+  <linearGradient id="lesson-g3" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#d4af37" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#d4af37" stop-opacity="0.02"/>
+  </linearGradient>
+  <linearGradient id="lesson-g4" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00b4d8" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#00b4d8" stop-opacity="0.02"/>
+  </linearGradient>
+  <linearGradient id="lesson-g5" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#2ecc71" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#2ecc71" stop-opacity="0.02"/>
+  </linearGradient>
+  <linearGradient id="lesson-g6" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#9b59b6" stop-opacity="0.12"/>
+    <stop offset="100%" stop-color="#9b59b6" stop-opacity="0.02"/>
+  </linearGradient>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+<text x="960" y="42" class="title">درس‌های جنگ عراق برای جهان</text>
+<text x="960" y="68" class="subtitle">شش درس کلیدی که بشریت نباید فراموش کند — و احتمالاً خواهد کرد</text>
+<line x1="200" y1="84" x2="1720" y2="84" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ===================== LESSON 1 ===================== -->
+<rect x="60" y="100" width="580" height="300" rx="14" fill="url(#lesson-g1)" stroke="rgba(231,76,60,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+
+<!-- Lesson number badge -->
+<circle cx="100" cy="135" r="22" fill="rgba(231,76,60,0.15)" stroke="#e74c3c" stroke-width="2"/>
+<text x="100" y="142" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">۱</text>
+
+<text x="135" y="142" fill="#e74c3c" font-size="18" font-weight="700">دروغ می‌تواند جنگ بسازد</text>
+<text x="135" y="162" fill="rgba(255,255,255,0.5)" font-size="12">Lies Can Start Wars</text>
+
+<line x1="80" y1="175" x2="620" y2="175" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+
+<!-- Content -->
+<text x="90" y="198" fill="rgba(255,255,255,0.7)" font-size="12">🔬 سلاح‌های کشتار جمعی وجود نداشت — اما جنگ شروع شد</text>
+<text x="90" y="220" fill="rgba(255,255,255,0.6)" font-size="11">• پاول در سازمان ملل: «شواهد قاطع» — همه جعلی بود</text>
+<text x="90" y="240" fill="rgba(255,255,255,0.6)" font-size="11">• اطلاعات سازمان‌یافته برای توجیه تصمیم از پیش‌گرفته</text>
+<text x="90" y="260" fill="rgba(255,255,255,0.6)" font-size="11">• رسانه‌ها نقش تسهیل‌کننده داشتند (نه نقد)</text>
+
+<!-- Quote box -->
+<rect x="80" y="278" width="540" height="50" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="350" y="298" fill="#e74c3c" font-size="11" font-weight="600" text-anchor="middle" font-style="italic">«بزرگ‌ترین شکست اطلاعاتی در تاریخ مدرن»</text>
+<text x="350" y="316" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">— کمیسیون تحقیق سنا (۲۰۰۸)</text>
+
+<!-- Relevance today -->
+<rect x="80" y="340" width="540" height="45" rx="6" fill="rgba(231,76,60,0.04)"/>
+<text x="350" y="358" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle" font-weight="600">📌 امروز: عصر اطلاعات غلط + AI = خطر تکرار ۱۰۰ برابر</text>
+<text x="350" y="375" fill="rgba(255,255,255,0.35)" font-size="10" text-anchor="middle">درس: هر جنگی با یک دروغ شروع می‌شود — شهروند باید بپرسد «شواهد کجاست؟»</text>
+
+<!-- ===================== LESSON 2 ===================== -->
+<rect x="670" y="100" width="580" height="300" rx="14" fill="url(#lesson-g2)" stroke="rgba(255,152,0,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+
+<circle cx="710" cy="135" r="22" fill="rgba(255,152,0,0.15)" stroke="#ff9800" stroke-width="2"/>
+<text x="710" y="142" fill="#ff9800" font-size="18" font-weight="900" text-anchor="middle">۲</text>
+
+<text x="745" y="142" fill="#ff9800" font-size="18" font-weight="700">فتح آسان‌ترین بخش جنگ است</text>
+<text x="745" y="162" fill="rgba(255,255,255,0.5)" font-size="12">Winning the War ≠ Winning the Peace</text>
+
+<line x1="690" y1="175" x2="1230" y2="175" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+
+<text x="700" y="198" fill="rgba(255,255,255,0.7)" font-size="12">⚔️ سقوط صدام: ۲۱ روز | بازسازی: ۲۰+ سال (ناتمام)</text>
+<text x="700" y="220" fill="rgba(255,255,255,0.6)" font-size="11">• پنتاگون: برنامه جنگ عالی | برنامه پس‌از‌جنگ: صفر</text>
+<text x="700" y="240" fill="rgba(255,255,255,0.6)" font-size="11">• رامسفلد: «ما ملت‌سازی نمی‌کنیم» — سپس مجبور شدند</text>
+<text x="700" y="260" fill="rgba(255,255,255,0.6)" font-size="11">• فرمان ۱ و ۲ بریمر: بزرگ‌ترین اشتباه استراتژیک</text>
+
+<rect x="690" y="278" width="540" height="50" rx="8" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+<text x="960" y="298" fill="#ff9800" font-size="11" font-weight="600" text-anchor="middle" font-style="italic">«اگر کشوری را می‌شکنید، مالک آن می‌شوید»</text>
+<text x="960" y="316" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">— قانون پاتری (Colin Powell's Pottery Barn Rule)</text>
+
+<rect x="690" y="340" width="540" height="45" rx="6" fill="rgba(255,152,0,0.04)"/>
+<text x="960" y="358" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle" font-weight="600">📌 مورد مشابه: افغانستان ۲۰۰۱–۲۰۲۱ (تکرار دقیق)</text>
+<text x="960" y="375" fill="rgba(255,255,255,0.35)" font-size="10" text-anchor="middle">درس: قبل از حمله بپرسید «روز بعد چه می‌شود؟»</text>
+
+<!-- ===================== LESSON 3 ===================== -->
+<rect x="1280" y="100" width="580" height="300" rx="14" fill="url(#lesson-g3)" stroke="rgba(212,175,55,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+
+<circle cx="1320" cy="135" r="22" fill="rgba(212,175,55,0.15)" stroke="#d4af37" stroke-width="2"/>
+<text x="1320" y="142" fill="#d4af37" font-size="18" font-weight="900" text-anchor="middle">۳</text>
+
+<text x="1355" y="142" fill="#d4af37" font-size="18" font-weight="700">محاصصه قومی = بمب ساعتی</text>
+<text x="1355" y="162" fill="rgba(255,255,255,0.5)" font-size="12">Ethno-Sectarian Power Sharing = Time Bomb</text>
+
+<line x1="1300" y1="175" x2="1840" y2="175" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+
+<text x="1310" y="198" fill="rgba(255,255,255,0.7)" font-size="12">🏛️ تقسیم قدرت بر اساس هویت → نهادینه‌سازی تفرقه</text>
+<text x="1310" y="220" fill="rgba(255,255,255,0.6)" font-size="11">• لبنان + بوسنی + عراق: الگوی تکراری شکست</text>
+<text x="1310" y="240" fill="rgba(255,255,255,0.6)" font-size="11">• رهبران قومی ← انگیزه حفظ تفرقه (= حفظ قدرت)</text>
+<text x="1310" y="260" fill="rgba(255,255,255,0.6)" font-size="11">• شهروندی ← هویت فرعی (من شیعه/سنی‌ام، نه عراقی)</text>
+
+<rect x="1300" y="278" width="540" height="50" rx="8" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+<text x="1570" y="298" fill="#d4af37" font-size="11" font-weight="600" text-anchor="middle" font-style="italic">«محاصصه نه فقط فساد آورد — هویت ملی را کشت»</text>
+<text x="1570" y="316" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">— تحلیلگر عراقی، اعتراضات تشرین ۲۰۱۹</text>
+
+<rect x="1300" y="340" width="540" height="45" rx="6" fill="rgba(212,175,55,0.04)"/>
+<text x="1570" y="358" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle" font-weight="600">📌 جایگزین: دموکراسی شهروندی (نه قومی) + فدرالیسم اداری</text>
+<text x="1570" y="375" fill="rgba(255,255,255,0.35)" font-size="10" text-anchor="middle">درس: وحدت ملی ساختنی‌ست — اما نه با تقسیم کیک قدرت</text>
+
+<!-- ===================== LESSON 4 ===================== -->
+<rect x="60" y="420" width="580" height="300" rx="14" fill="url(#lesson-g4)" stroke="rgba(0,180,216,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+
+<circle cx="100" cy="455" r="22" fill="rgba(0,180,216,0.15)" stroke="#00b4d8" stroke-width="2"/>
+<text x="100" y="462" fill="#00b4d8" font-size="18" font-weight="900" text-anchor="middle">۴</text>
+
+<text x="135" y="462" fill="#00b4d8" font-size="18" font-weight="700">انحلال نهادها = هرج‌ومرج</text>
+<text x="135" y="482" fill="rgba(255,255,255,0.5)" font-size="12">Disbanding Institutions = Chaos</text>
+
+<line x1="80" y1="495" x2="620" y2="495" stroke="rgba(0,180,216,0.15)" stroke-width="1"/>
+
+<text x="90" y="518" fill="rgba(255,255,255,0.7)" font-size="12">🎖️ انحلال ارتش ۴۰۰K نفره = ۴۰۰K مرد مسلح بیکار و عصبانی</text>
+<text x="90" y="540" fill="rgba(255,255,255,0.6)" font-size="11">• بعث‌زدایی افراطی → حذف ۳۰K+ متخصص از دولت</text>
+<text x="90" y="560" fill="rgba(255,255,255,0.6)" font-size="11">• پلیس، دادگاه، بانک مرکزی — همه فروپاشید</text>
+<text x="90" y="580" fill="rgba(255,255,255,0.6)" font-size="11">• افسران صدام → فرماندهان داعش (شامل بغدادی)</text>
+
+<rect x="80" y="598" width="540" height="50" rx="8" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+<text x="350" y="618" fill="#00b4d8" font-size="11" font-weight="600" text-anchor="middle" font-style="italic">«بزرگ‌ترین اشتباه استراتژیک در تاریخ نظامی مدرن آمریکا»</text>
+<text x="350" y="636" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">— ژنرال پتریئوس درباره فرمان شماره ۲</text>
+
+<rect x="80" y="660" width="540" height="45" rx="6" fill="rgba(0,180,216,0.04)"/>
+<text x="350" y="678" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle" font-weight="600">📌 مشابه: لیبی ۲۰۱۱ — انحلال ارتش قذافی → شبه‌نظامیان</text>
+<text x="350" y="695" fill="rgba(255,255,255,0.35)" font-size="10" text-anchor="middle">درس: نهادهای بد قابل اصلاح‌اند — خلأ نهادی قابل اصلاح نیست</text>
+
+<!-- ===================== LESSON 5 ===================== -->
+<rect x="670" y="420" width="580" height="300" rx="14" fill="url(#lesson-g5)" stroke="rgba(46,204,113,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+
+<circle cx="710" cy="455" r="22" fill="rgba(46,204,113,0.15)" stroke="#2ecc71" stroke-width="2"/>
+<text x="710" y="462" fill="#2ecc71" font-size="18" font-weight="900" text-anchor="middle">۵</text>
+
+<text x="745" y="462" fill="#2ecc71" font-size="18" font-weight="700">نفت نفرین است — نه نعمت</text>
+<text x="745" y="482" fill="rgba(255,255,255,0.5)" font-size="12">The Resource Curse is Real</text>
+
+<line x1="690" y1="495" x2="1230" y2="495" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+
+<text x="700" y="518" fill="rgba(255,255,255,0.7)" font-size="12">🛢️ ۵مین ذخایر نفتی جهان — اما ۲۵% زیر خط فقر</text>
+<text x="700" y="540" fill="rgba(255,255,255,0.6)" font-size="11">• نفت ← حکومت نیاز به مالیات مردم ندارد ← پاسخگو نیست</text>
+<text x="700" y="560" fill="rgba(255,255,255,0.6)" font-size="11">• ۹۵% درآمد دولت از نفت → اقتصاد تک‌پایه شکننده</text>
+<text x="700" y="580" fill="rgba(255,255,255,0.6)" font-size="11">• جنگ برای کنترل نفت = محرک اصلی درگیری داخلی</text>
+
+<rect x="690" y="598" width="540" height="50" rx="8" fill="rgba(46,204,113,0.06)" stroke="rgba(46,204,113,0.1)" stroke-width="1"/>
+<text x="960" y="618" fill="#2ecc71" font-size="11" font-weight="600" text-anchor="middle" font-style="italic">«نفت بدون نهاد = فساد | نفت با نهاد = نروژ»</text>
+<text x="960" y="636" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">— مقایسه: نروژ $۱.۴T صندوق ثروت | عراق $۰ صندوق + $۱۵۰B سرقت</text>
+
+<rect x="690" y="660" width="540" height="45" rx="6" fill="rgba(46,204,113,0.04)"/>
+<text x="960" y="678" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle" font-weight="600">📌 راه‌حل: صندوق ثروت ملی + تنوع اقتصادی + شفافیت</text>
+<text x="960" y="695" fill="rgba(255,255,255,0.35)" font-size="10" text-anchor="middle">درس: ثروت طبیعی بدون حکمرانی خوب = لعنت ابدی</text>
+
+<!-- ===================== LESSON 6 ===================== -->
+<rect x="1280" y="420" width="580" height="300" rx="14" fill="url(#lesson-g6)" stroke="rgba(155,89,182,0.2)" stroke-width="1.5" filter="url(#sh)"/>
+
+<circle cx="1320" cy="455" r="22" fill="rgba(155,89,182,0.15)" stroke="#9b59b6" stroke-width="2"/>
+<text x="1320" y="462" fill="#9b59b6" font-size="18" font-weight="900" text-anchor="middle">۶</text>
+
+<text x="1355" y="462" fill="#9b59b6" font-size="18" font-weight="700">مردم هزینه می‌پردازند — نه سیاستمداران</text>
+<text x="1355" y="482" fill="rgba(255,255,255,0.5)" font-size="12">People Pay the Price — Never Politicians</text>
+
+<line x1="1300" y1="495" x2="1840" y2="495" stroke="rgba(155,89,182,0.15)" stroke-width="1"/>
+
+<text x="1310" y="518" fill="rgba(255,255,255,0.7)" font-size="12">💔 بوش و بلر در تگزاس و لندن — عراقی‌ها در ویرانه‌ها</text>
+<text x="1310" y="540" fill="rgba(255,255,255,0.6)" font-size="11">• ۳۰۰K+ غیرنظامی کشته | ۹.۲M آواره</text>
+<text x="1310" y="560" fill="rgba(255,255,255,0.6)" font-size="11">• نسلی کامل با PTSD | کودکان بدون مدرسه</text>
+<text x="1310" y="580" fill="rgba(255,255,255,0.6)" font-size="11">• هیچ مقام آمریکایی یا بریتانیایی محاکمه نشد</text>
+
+<rect x="1300" y="598" width="540" height="50" rx="8" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+<text x="1570" y="618" fill="#9b59b6" font-size="11" font-weight="600" text-anchor="middle" font-style="italic">«ما در آنجا نبودیم — آنها نمی‌توانستند از آنجا بروند»</text>
+<text x="1570" y="636" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle">— سرباز آمریکایی بازنشسته درباره تفاوت تجربه</text>
+
+<rect x="1300" y="660" width="540" height="45" rx="6" fill="rgba(155,89,182,0.04)"/>
+<text x="1570" y="678" fill="rgba(255,255,255,0.5)" font-size="11" text-anchor="middle" font-weight="600">📌 عدالت: دادگاه کیفری بین‌المللی باید صلاحیت جهانی داشته باشد</text>
+<text x="1570" y="695" fill="rgba(255,255,255,0.35)" font-size="10" text-anchor="middle">درس: بدون پاسخگویی، تاریخ تکرار خواهد شد — و می‌شود</text>
+
+<!-- ===================== CENTRAL SYNTHESIS ===================== -->
+<rect x="60" y="740" width="1800" height="110" rx="14" class="glass" filter="url(#sh)"/>
+
+<!-- Summary strip -->
+<text x="960" y="770" fill="#d4af37" font-size="16" font-weight="900" text-anchor="middle">خلاصه ۲۰ ساله عراق در یک جمله:</text>
+
+<rect x="200" y="785" width="1520" height="50" rx="10" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.2)" stroke-width="1.5"/>
+<text x="960" y="810" fill="#fff" font-size="18" font-weight="700" text-anchor="middle">جنگ عراق ثابت کرد: دموکراسی صادراتی نیست — نمی‌توان با بمب آزادی آورد</text>
+<text x="960" y="830" fill="rgba(255,255,255,0.5)" font-size="12" text-anchor="middle">و ثابت کرد: بدون نهاد، بدون عدالت انتقالی، بدون برنامه = فاجعه تضمین‌شده</text>
+
+<!-- ===================== BOTTOM BAR ===================== -->
+<rect x="60" y="875" width="1800" height="80" rx="10" class="note-box"/>
+<text x="960" y="903" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">📌 آیا این درس‌ها آموخته شد؟ افغانستان ۲۰۲۱، لیبی ۲۰۱۱ — جواب: خیر</text>
+<text x="960" y="925" fill="rgba(255,255,255,0.5)" font-size="12" text-anchor="middle">هزینه یادنگرفتن: $۸ تریلیون + ۹۰۰K+ کشته + ۳۷M آواره (فقط جنگ‌های پس‌از ۱۱ سپتامبر)</text>
+<text x="960" y="945" fill="rgba(255,255,255,0.35)" font-size="11" text-anchor="middle">تنها امید: نسل جدید رهبران و شهروندان آگاه — در عراق و در جهان — که «دیگر هرگز» بگویند و جدی باشند</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 28 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۷: آینده عراق و منطقه</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: Chilcot Report (2016), Senate Intel Committee, Costs of War Project, RAND Corp | تحلیل تطبیقی ۲۰۲۴</text>
+</svg>

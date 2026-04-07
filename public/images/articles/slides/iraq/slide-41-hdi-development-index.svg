@@ -1,0 +1,238 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+  </style>
+  <linearGradient id="bg41" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0a0e27"/>
+    <stop offset="50%" stop-color="#0d1333"/>
+    <stop offset="100%" stop-color="#1a0a1e"/>
+  </linearGradient>
+  <filter id="sh41"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+  <linearGradient id="hdiGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#e74c3c"/>
+    <stop offset="33%" stop-color="#ff9800"/>
+    <stop offset="66%" stop-color="#f1c40f"/>
+    <stop offset="100%" stop-color="#2ecc71"/>
+  </linearGradient>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#bg41)"/>
+
+<!-- Header -->
+<text x="960" y="45" fill="#fff" font-size="32" font-weight="900" text-anchor="middle">شاخص توسعه انسانی (HDI) — سقوط عراق در رده‌بندی جهانی</text>
+<text x="960" y="72" fill="#d4af37" font-size="15" font-weight="400" text-anchor="middle">UNDP Human Development Index: سلامت + آموزش + درآمد — عراق از «توسعه متوسط» به «پایین» سقوط کرد</text>
+<line x1="150" y1="88" x2="1770" y2="88" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ====== LEFT: HDI TIMELINE CHART ====== -->
+<rect x="60" y="105" width="900" height="440" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh41)"/>
+<text x="510" y="135" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">📉 روند HDI عراق: ۱۹۹۰–۲۰۲۳</text>
+
+<!-- Y-axis labels -->
+<text x="105" y="170" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="end">0.80</text>
+<text x="105" y="230" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="end">0.70</text>
+<text x="105" y="290" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="end">0.60</text>
+<text x="105" y="350" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="end">0.50</text>
+<text x="105" y="410" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="end">0.40</text>
+<text x="105" y="470" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="end">0.30</text>
+
+<!-- Grid lines -->
+<line x1="115" y1="168" x2="920" y2="168" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<line x1="115" y1="228" x2="920" y2="228" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<line x1="115" y1="288" x2="920" y2="288" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<line x1="115" y1="348" x2="920" y2="348" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<line x1="115" y1="408" x2="920" y2="408" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+<line x1="115" y1="468" x2="920" y2="468" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+<!-- X-axis labels -->
+<text x="140" y="500" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">۱۹۹۰</text>
+<text x="258" y="500" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">۱۹۹۵</text>
+<text x="376" y="500" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">۲۰۰۰</text>
+<text x="494" y="500" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">۲۰۰۳</text>
+<text x="612" y="500" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">۲۰۰۸</text>
+<text x="730" y="500" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">۲۰۱۴</text>
+<text x="848" y="500" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">۲۰۲۰</text>
+<text x="910" y="500" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">۲۰۲۳</text>
+
+<!-- Invasion marker -->
+<line x1="494" y1="155" x2="494" y2="490" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.6"/>
+<text x="494" y="152" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">تهاجم ۲۰۰۳</text>
+
+<!-- ISIS marker -->
+<line x1="730" y1="155" x2="730" y2="490" stroke="#ff9800" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+<text x="730" y="152" fill="#ff9800" font-size="8" text-anchor="middle">داعش ۲۰۱۴</text>
+
+<!-- Iran line (reference) -->
+<polyline points="140,215 258,205 376,195 494,190 612,185 730,180 848,175 910,172" fill="none" stroke="#2ecc71" stroke-width="2" opacity="0.6"/>
+<text x="920" y="168" fill="#2ecc71" font-size="9" font-weight="700">ایران 0.780</text>
+
+<!-- Saudi line (reference) -->
+<polyline points="140,230 258,220 376,210 494,195 612,185 730,175 848,170 910,165" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.5"/>
+<text x="920" y="158" fill="#3b82f6" font-size="9" font-weight="700">عربستان 0.875</text>
+
+<!-- Iraq line (main) -->
+<polyline points="140,220 258,310 376,295 494,310 612,340 730,390 848,355 910,360" fill="none" stroke="#e74c3c" stroke-width="3"/>
+<circle cx="140" cy="220" r="4" fill="#d4af37" stroke="#fff" stroke-width="1"/>
+<circle cx="258" cy="310" r="4" fill="#ff9800"/>
+<circle cx="376" cy="295" r="4" fill="#ff9800"/>
+<circle cx="494" cy="310" r="5" fill="#e74c3c" stroke="#fff" stroke-width="1.5"/>
+<circle cx="612" cy="340" r="4" fill="#e74c3c"/>
+<circle cx="730" cy="390" r="5" fill="#e74c3c" stroke="#fff" stroke-width="1.5"/>
+<circle cx="848" cy="355" r="4" fill="#e74c3c"/>
+<circle cx="910" cy="360" r="5" fill="#e74c3c" stroke="#fff" stroke-width="2"/>
+
+<!-- Iraq data labels -->
+<text x="140" y="212" fill="#d4af37" font-size="9" font-weight="700" text-anchor="middle">0.692</text>
+<text x="258" y="302" fill="#ff9800" font-size="8" text-anchor="middle">0.530</text>
+<text x="376" y="287" fill="#ff9800" font-size="8" text-anchor="middle">0.556</text>
+<text x="494" y="328" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">0.530</text>
+<text x="612" y="358" fill="#e74c3c" font-size="8" text-anchor="middle">0.490</text>
+<text x="730" y="408" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">0.400</text>
+<text x="848" y="347" fill="#e74c3c" font-size="8" text-anchor="middle">0.452</text>
+<text x="910" y="378" fill="#e74c3c" font-size="10" font-weight="900" text-anchor="middle">0.686</text>
+
+<!-- Legend -->
+<rect x="130" y="512" width="10" height="10" rx="2" fill="#e74c3c"/>
+<text x="145" y="521" fill="rgba(255,255,255,0.6)" font-size="9">عراق</text>
+<rect x="200" y="512" width="10" height="10" rx="2" fill="#2ecc71"/>
+<text x="215" y="521" fill="rgba(255,255,255,0.6)" font-size="9">ایران</text>
+<rect x="260" y="512" width="10" height="10" rx="2" fill="#3b82f6"/>
+<text x="275" y="521" fill="rgba(255,255,255,0.6)" font-size="9">عربستان</text>
+
+<!-- Annotation box -->
+<rect x="120" y="380" width="200" height="50" rx="6" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+<text x="220" y="398" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">📉 سقوط ۴۰ رتبه‌ای</text>
+<text x="220" y="414" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle">از رتبه ۱۰۶ → ۱۴۵/۱۹۱</text>
+<text x="220" y="426" fill="rgba(255,255,255,0.4)" font-size="7" text-anchor="middle">دسته‌بندی: «توسعه متوسط رو به پایین»</text>
+
+<!-- ====== RIGHT: REGIONAL COMPARISON BAR CHART ====== -->
+<rect x="985" y="105" width="870" height="440" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh41)"/>
+<text x="1420" y="135" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">📊 مقایسه HDI منطقه‌ای ۲۰۲۳ — عراق vs همسایگان</text>
+
+<!-- HDI Scale bar -->
+<rect x="1020" y="155" width="800" height="12" rx="6" fill="url(#hdiGrad)" opacity="0.3"/>
+<text x="1020" y="182" fill="rgba(255,255,255,0.3)" font-size="8">پایین</text>
+<text x="1420" y="182" fill="rgba(255,255,255,0.3)" font-size="8" text-anchor="middle">متوسط</text>
+<text x="1820" y="182" fill="rgba(255,255,255,0.3)" font-size="8" text-anchor="end">بالا</text>
+
+<!-- Country bars -->
+<!-- UAE -->
+<rect x="1020" y="200" width="690" height="32" rx="4" fill="rgba(46,204,113,0.15)" stroke="rgba(46,204,113,0.3)" stroke-width="1"/>
+<text x="1035" y="221" fill="#fff" font-size="11" font-weight="700">🇦🇪 امارات</text>
+<text x="1700" y="221" fill="#2ecc71" font-size="13" font-weight="900">0.911</text>
+<text x="1740" y="221" fill="rgba(255,255,255,0.3)" font-size="9">رتبه ۲۶</text>
+
+<!-- Saudi -->
+<rect x="1020" y="240" width="665" height="32" rx="4" fill="rgba(59,130,246,0.12)" stroke="rgba(59,130,246,0.25)" stroke-width="1"/>
+<text x="1035" y="261" fill="#fff" font-size="11" font-weight="700">🇸🇦 عربستان</text>
+<text x="1675" y="261" fill="#3b82f6" font-size="13" font-weight="900">0.875</text>
+<text x="1715" y="261" fill="rgba(255,255,255,0.3)" font-size="9">رتبه ۳۵</text>
+
+<!-- Kuwait -->
+<rect x="1020" y="280" width="640" height="32" rx="4" fill="rgba(59,130,246,0.10)" stroke="rgba(59,130,246,0.2)" stroke-width="1"/>
+<text x="1035" y="301" fill="#fff" font-size="11" font-weight="700">🇰🇼 کویت</text>
+<text x="1650" y="301" fill="#3b82f6" font-size="13" font-weight="900">0.855</text>
+<text x="1690" y="301" fill="rgba(255,255,255,0.3)" font-size="9">رتبه ۵۰</text>
+
+<!-- Iran -->
+<rect x="1020" y="320" width="580" height="32" rx="4" fill="rgba(46,204,113,0.10)" stroke="rgba(46,204,113,0.2)" stroke-width="1"/>
+<text x="1035" y="341" fill="#fff" font-size="11" font-weight="700">🇮🇷 ایران</text>
+<text x="1590" y="341" fill="#2ecc71" font-size="13" font-weight="900">0.780</text>
+<text x="1630" y="341" fill="rgba(255,255,255,0.3)" font-size="9">رتبه ۷۶</text>
+
+<!-- Turkey -->
+<rect x="1020" y="360" width="570" height="32" rx="4" fill="rgba(0,180,216,0.10)" stroke="rgba(0,180,216,0.2)" stroke-width="1"/>
+<text x="1035" y="381" fill="#fff" font-size="11" font-weight="700">🇹🇷 ترکیه</text>
+<text x="1580" y="381" fill="#00b4d8" font-size="13" font-weight="900">0.838</text>
+<text x="1620" y="381" fill="rgba(255,255,255,0.3)" font-size="9">رتبه ۴۵</text>
+
+<!-- Jordan -->
+<rect x="1020" y="400" width="520" height="32" rx="4" fill="rgba(255,152,0,0.10)" stroke="rgba(255,152,0,0.2)" stroke-width="1"/>
+<text x="1035" y="421" fill="#fff" font-size="11" font-weight="700">🇯🇴 اردن</text>
+<text x="1530" y="421" fill="#ff9800" font-size="13" font-weight="900">0.736</text>
+<text x="1570" y="421" fill="rgba(255,255,255,0.3)" font-size="9">رتبه ۸۶</text>
+
+<!-- IRAQ (highlighted) -->
+<rect x="1020" y="445" width="460" height="38" rx="6" fill="rgba(231,76,60,0.15)" stroke="rgba(231,76,60,0.4)" stroke-width="2"/>
+<text x="1035" y="470" fill="#fff" font-size="13" font-weight="900">🇮🇶 عراق</text>
+<text x="1470" y="470" fill="#e74c3c" font-size="16" font-weight="900">0.686</text>
+<text x="1520" y="470" fill="#e74c3c" font-size="10" font-weight="700">رتبه ۱۲۱</text>
+
+<!-- Syria -->
+<rect x="1020" y="490" width="360" height="32" rx="4" fill="rgba(155,89,182,0.10)" stroke="rgba(155,89,182,0.2)" stroke-width="1"/>
+<text x="1035" y="511" fill="#fff" font-size="11" font-weight="700">🇸🇾 سوریه</text>
+<text x="1370" y="511" fill="#9b59b6" font-size="13" font-weight="900">0.577</text>
+<text x="1410" y="511" fill="rgba(255,255,255,0.3)" font-size="9">رتبه ۱۵۷</text>
+
+<!-- ====== BOTTOM: THREE COMPONENT BREAKDOWN ====== -->
+<rect x="60" y="565" width="580" height="230" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh41)"/>
+<text x="350" y="595" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">🔬 سه مؤلفه HDI عراق — ۲۰۲۳</text>
+
+<!-- Health -->
+<rect x="85" y="615" width="530" height="48" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="100" y="638" fill="#e74c3c" font-size="12" font-weight="700">🏥 سلامت (امید به زندگی)</text>
+<text x="100" y="655" fill="rgba(255,255,255,0.5)" font-size="10">۷۰.۵ سال (۱۹۹۰: ۶۵ | ۲۰۰۲: ۵۹ | ۲۰۰۶: ۴۸!)</text>
+<rect x="420" y="625" width="180" height="14" rx="3" fill="rgba(255,255,255,0.05)"/>
+<rect x="420" y="625" width="120" height="14" rx="3" fill="rgba(231,76,60,0.4)"/>
+<text x="555" y="636" fill="rgba(255,255,255,0.4)" font-size="8">67%</text>
+
+<!-- Education -->
+<rect x="85" y="670" width="530" height="48" rx="8" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+<text x="100" y="693" fill="#ff9800" font-size="12" font-weight="700">🎓 آموزش (سال‌های تحصیل)</text>
+<text x="100" y="710" fill="rgba(255,255,255,0.5)" font-size="10">متوسط ۷.۳ سال (ایران: ۱۰.۶ | ترکیه: ۸.۹)</text>
+<rect x="420" y="680" width="180" height="14" rx="3" fill="rgba(255,255,255,0.05)"/>
+<rect x="420" y="680" width="100" height="14" rx="3" fill="rgba(255,152,0,0.4)"/>
+<text x="555" y="691" fill="rgba(255,255,255,0.4)" font-size="8">55%</text>
+
+<!-- Income -->
+<rect x="85" y="725" width="530" height="48" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="100" y="748" fill="#e74c3c" font-size="12" font-weight="700">💰 درآمد (GNI سرانه)</text>
+<text x="100" y="765" fill="rgba(255,255,255,0.5)" font-size="10">$۹,۲۰۰ PPP (ایران: $۱۴,۷۰۰ | عربستان: $۴۷,۵۰۰)</text>
+<rect x="420" y="735" width="180" height="14" rx="3" fill="rgba(255,255,255,0.05)"/>
+<rect x="420" y="735" width="85" height="14" rx="3" fill="rgba(231,76,60,0.4)"/>
+<text x="555" y="746" fill="rgba(255,255,255,0.4)" font-size="8">47%</text>
+
+<!-- ====== MIDDLE BOTTOM: KEY INSIGHTS ====== -->
+<rect x="665" y="565" width="610" height="230" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh41)"/>
+<text x="970" y="595" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">💡 نکات کلیدی</text>
+
+<text x="685" y="625" fill="#e74c3c" font-size="11" font-weight="700">▸ عراق ۱۹۹۰ (قبل از تحریم): HDI = 0.692 (توسعه متوسط-بالا)</text>
+<text x="685" y="648" fill="#ff9800" font-size="11" font-weight="700">▸ عراق ۲۰۰۳ (شروع تهاجم): HDI ≈ 0.556 (اثر تحریم‌ها)</text>
+<text x="685" y="671" fill="#e74c3c" font-size="11" font-weight="700">▸ عراق ۲۰۱۴ (سقوط موصل): HDI ≈ 0.400 (بدترین)</text>
+<text x="685" y="694" fill="#ff9800" font-size="11" font-weight="700">▸ عراق ۲۰۲۳: HDI = 0.686 (هنوز کمتر از ۱۹۹۰!)</text>
+<text x="685" y="720" fill="rgba(255,255,255,0.5)" font-size="10">→ نتیجه: پس از ۲۰ سال و ۳ تریلیون دلار، عراق هنوز</text>
+<text x="685" y="738" fill="rgba(255,255,255,0.5)" font-size="10">   به سطح توسعه ۱۹۹۰ خود بازنگشته</text>
+
+<rect x="685" y="755" width="570" height="30" rx="6" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="970" y="775" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">⚠️ ۳۳ سال عقب‌ماندگی: عراق ۲۰۲۳ ≈ عراق ۱۹۹۰</text>
+
+<!-- ====== RIGHT BOTTOM: LOST DECADES ====== -->
+<rect x="1300" y="565" width="555" height="230" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" stroke-width="1" filter="url(#sh41)"/>
+<text x="1577" y="595" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📅 دهه‌های از دست رفته</text>
+
+<rect x="1320" y="612" width="515" height="40" rx="6" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+<text x="1577" y="632" fill="#ff9800" font-size="11" font-weight="700" text-anchor="middle">دهه ۱: تحریم ۱۹۹۰–۲۰۰۳</text>
+<text x="1577" y="647" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">فروپاشی زیرساخت، ۵۰۰K+ کودک مرده</text>
+
+<rect x="1320" y="658" width="515" height="40" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+<text x="1577" y="678" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">دهه ۲: اشغال + جنگ داخلی ۲۰۰۳–۲۰۱۴</text>
+<text x="1577" y="693" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">تلاشی دولت، فرار مغزها، ۳۰۰K+ کشته</text>
+
+<rect x="1320" y="704" width="515" height="40" rx="6" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+<text x="1577" y="724" fill="#9b59b6" font-size="11" font-weight="700" text-anchor="middle">دهه ۳: داعش + بازسازی ناقص ۲۰۱۴–۲۰۲۳</text>
+<text x="1577" y="739" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">ویرانی موصل، فساد بازسازی، کووید</text>
+
+<rect x="1320" y="755" width="515" height="30" rx="6" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+<text x="1577" y="775" fill="#d4af37" font-size="10" font-weight="700" text-anchor="middle">نتیجه: ۳ دهه تمدن‌سوزی = بازگشت به نقطه صفر</text>
+
+<!-- ====== BOTTOM NOTE BAR ====== -->
+<rect x="60" y="815" width="1800" height="65" rx="10" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+<text x="960" y="840" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📌 عراقی که در ۱۹۸۰ بهترین سیستم بهداشتی عرب را داشت، امروز در ردیف کشورهای «توسعه‌نیافته» است</text>
+<text x="960" y="862" fill="rgba(255,255,255,0.4)" font-size="11" text-anchor="middle">این سقوط نه محصول طبیعت، بلکه محصول سیاست است: تحریم + تهاجم + اشغال + محاصصه + فساد</text>
+
+<!-- Footer -->
+<text x="60" y="42" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 41 / 60</text>
+<text x="1860" y="42" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۸: توسعه انسانی</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: UNDP Human Development Report 2023-24, World Bank, WHO | تمام داده‌ها بر اساس PPP 2017</text>
+</svg>

@@ -1,0 +1,181 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: url(#bg3); }
+    .title { fill: #fff; font-size: 34px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 17px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .timeline-line { stroke: #d4af37; stroke-width: 3; }
+    .timeline-dot { fill: #d4af37; }
+    .timeline-dot-red { fill: #e74c3c; }
+    .timeline-dot-green { fill: #2ecc71; }
+    .tl-year { fill: #d4af37; font-size: 16px; font-weight: 700; text-anchor: middle; }
+    .tl-text { fill: rgba(255,255,255,0.8); font-size: 12px; font-weight: 400; text-anchor: middle; }
+    .tl-text-red { fill: #e74c3c; font-size: 13px; font-weight: 600; text-anchor: middle; }
+    .claim-box { rx:10; fill:rgba(231,76,60,0.08); stroke:rgba(231,76,60,0.3); stroke-width:1; }
+    .truth-box { rx:10; fill:rgba(46,204,113,0.08); stroke:rgba(46,204,113,0.3); stroke-width:1; }
+    .label-dim { fill:rgba(255,255,255,0.5); font-size:12px; text-anchor:middle; }
+    .big-x { fill:#e74c3c; font-size:80px; font-weight:900; text-anchor:middle; opacity:0.12; }
+    @keyframes appear { from{opacity:0;transform:scale(0.8)} to{opacity:1;transform:scale(1)} }
+    .a1{animation:appear 0.6s ease-out 0.2s both}
+    .a2{animation:appear 0.6s ease-out 0.5s both}
+    .a3{animation:appear 0.6s ease-out 0.8s both}
+    .a4{animation:appear 0.6s ease-out 1.1s both}
+    .a5{animation:appear 0.6s ease-out 1.4s both}
+  </style>
+  <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#0a0e27"/>
+    <stop offset="100%" style="stop-color:#1a0a1e"/>
+  </linearGradient>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+  <radialGradient id="gR" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:0.12"/>
+    <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:0"/>
+  </radialGradient>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+<ellipse cx="960" cy="540" rx="600" ry="400" fill="url(#gR)"/>
+
+<!-- عنوان -->
+<text x="960" y="50" class="title">بزرگ‌ترین دروغ قرن: سلاح‌های کشتار جمعی عراق</text>
+<text x="960" y="80" class="subtitle">زنجیره‌ی ادعاها، ساخت روایت و سقوط اعتبار اطلاعاتی</text>
+<line x1="250" y1="95" x2="1670" y2="95" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- تایم‌لاین افقی -->
+<line x1="100" y1="280" x2="1820" y2="280" class="timeline-line" opacity="0.4"/>
+
+<!-- ۲۰۰۱ -->
+<g class="a1">
+  <circle cx="200" cy="280" r="10" class="timeline-dot"/>
+  <text x="200" y="260" class="tl-year">۲۰۰۱</text>
+  <rect x="120" y="300" width="160" height="75" class="claim-box" filter="url(#sh)"/>
+  <text x="200" y="322" class="tl-text-red">۱۱ سپتامبر</text>
+  <text x="200" y="340" class="tl-text">پیوند جعلی:</text>
+  <text x="200" y="356" class="tl-text">صدام = القاعده</text>
+  <text x="200" y="370" class="label-dim">هیچ مدرکی نبود</text>
+</g>
+
+<!-- ۲۰۰۲ -->
+<g class="a2">
+  <circle cx="490" cy="280" r="10" class="timeline-dot-red"/>
+  <text x="490" y="260" class="tl-year">سپت ۲۰۰۲</text>
+  <rect x="370" y="300" width="240" height="90" class="claim-box" filter="url(#sh)"/>
+  <text x="490" y="322" class="tl-text-red">«لوله‌های آلومینیومی»</text>
+  <text x="490" y="340" class="tl-text">ادعای برنامه‌ی هسته‌ای</text>
+  <text x="490" y="358" class="tl-text">رایس: «ابر قارچی»</text>
+  <text x="490" y="376" class="label-dim">DOE: لوله‌ها برای راکت است</text>
+</g>
+
+<!-- ۲۰۰۳ فوریه -->
+<g class="a3">
+  <circle cx="830" cy="280" r="14" class="timeline-dot-red"/>
+  <text x="830" y="256" class="tl-year">فوریه ۲۰۰۳</text>
+  <rect x="690" y="300" width="280" height="120" class="claim-box" filter="url(#sh)"/>
+  <text x="830" y="322" fill="#e74c3c" font-size="16" font-weight="700" text-anchor="middle">سخنرانی پاول در سازمان ملل</text>
+  <text x="830" y="345" class="tl-text">آزمایشگاه‌های بیولوژیکی سیار</text>
+  <text x="830" y="363" class="tl-text">ذخایر سلاح شیمیایی</text>
+  <text x="830" y="381" class="tl-text">پیوند با زرقاوی</text>
+  <text x="830" y="400" class="label-dim">منبع: «کرو‌بال» — فراری بی‌اعتبار</text>
+</g>
+
+<!-- ۲۰۰۳ مارس -->
+<g class="a4">
+  <circle cx="1170" cy="280" r="12" class="timeline-dot-red"/>
+  <text x="1170" y="260" class="tl-year">مارس ۲۰۰۳</text>
+  <rect x="1060" y="300" width="220" height="75" class="claim-box" filter="url(#sh)"/>
+  <text x="1170" y="325" fill="#e74c3c" font-size="16" font-weight="700" text-anchor="middle">آغاز حمله</text>
+  <text x="1170" y="348" class="tl-text">بدون مجوز شورای امنیت</text>
+  <text x="1170" y="366" class="tl-text">بر اساس «اطلاعات قطعی»</text>
+</g>
+
+<!-- ۲۰۰۴ -->
+<g class="a5">
+  <circle cx="1550" cy="280" r="14" class="timeline-dot-green"/>
+  <text x="1550" y="256" class="tl-year">۲۰۰۴</text>
+  <rect x="1400" y="300" width="300" height="100" class="truth-box" filter="url(#sh)"/>
+  <text x="1550" y="325" fill="#2ecc71" font-size="16" font-weight="700" text-anchor="middle">گزارش ISG (دوئلفر)</text>
+  <text x="1550" y="350" fill="#2ecc71" font-size="14" font-weight="600" text-anchor="middle">هیچ WMD یافت نشد</text>
+  <text x="1550" y="372" class="tl-text">برنامه‌ی هسته‌ای: متوقف از ۱۹۹۱</text>
+  <text x="1550" y="390" class="tl-text">سلاح شیمیایی: نابود از ۱۹۹۵</text>
+</g>
+
+<!-- X بزرگ -->
+<text x="960" y="510" class="big-x">WMD = ZERO</text>
+
+<!-- پنل ۱: زنجیره‌ی دروغ -->
+<rect x="80" y="450" width="560" height="310" class="glass" filter="url(#sh)"/>
+<text x="360" y="485" fill="#e74c3c" font-size="20" font-weight="700" text-anchor="middle">🔴 زنجیره‌ی تولید دروغ</text>
+<g transform="translate(110,505)">
+  <rect x="0" y="0" width="500" height="32" rx="6" fill="rgba(231,76,60,0.1)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+  <text x="250" y="22" fill="rgba(255,255,255,0.8)" font-size="13" text-anchor="middle">۱. فراری‌های بی‌اعتبار (کرو‌بال، چلبی) → CIA</text>
+  <rect x="0" y="40" width="500" height="32" rx="6" fill="rgba(231,76,60,0.12)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+  <text x="250" y="62" fill="rgba(255,255,255,0.8)" font-size="13" text-anchor="middle">۲. CIA → دفتر طرح‌های ویژه (OSP) → چینی/رامسفلد</text>
+  <rect x="0" y="80" width="500" height="32" rx="6" fill="rgba(231,76,60,0.14)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+  <text x="250" y="102" fill="rgba(255,255,255,0.8)" font-size="13" text-anchor="middle">۳. چینی → NYT (جودیت میلر) → «منبع مستقل»</text>
+  <rect x="0" y="120" width="500" height="32" rx="6" fill="rgba(231,76,60,0.16)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+  <text x="250" y="142" fill="rgba(255,255,255,0.8)" font-size="13" text-anchor="middle">۴. NYT → CNN/Fox → «اجماع رسانه‌ای»</text>
+  <rect x="0" y="160" width="500" height="32" rx="6" fill="rgba(231,76,60,0.2)" stroke="rgba(231,76,60,0.3)" stroke-width="1"/>
+  <text x="250" y="182" fill="#e74c3c" font-size="13" font-weight="700" text-anchor="middle">۵. «اجماع» → کنگره → مجوز جنگ (اکتبر ۲۰۰۲)</text>
+  <!-- فلش‌های ارتباطی -->
+  <text x="510" y="15" fill="rgba(231,76,60,0.4)" font-size="20">↓</text>
+  <text x="510" y="55" fill="rgba(231,76,60,0.4)" font-size="20">↓</text>
+  <text x="510" y="95" fill="rgba(231,76,60,0.4)" font-size="20">↓</text>
+  <text x="510" y="135" fill="rgba(231,76,60,0.4)" font-size="20">↓</text>
+</g>
+
+<!-- پنل ۲: هشداردهندگان -->
+<rect x="700" y="450" width="550" height="310" class="glass" filter="url(#sh)"/>
+<text x="975" y="485" fill="#2ecc71" font-size="20" font-weight="700" text-anchor="middle">🟢 صداهای نادیده‌گرفته‌شده</text>
+<g transform="translate(725,505)">
+  <rect x="0" y="0" width="500" height="30" rx="6" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.2)" stroke-width="1"/>
+  <text x="250" y="21" fill="rgba(255,255,255,0.8)" font-size="12" text-anchor="middle">بلیکس (UNMOVIC): «هیچ مدرکی نیافتیم» — فوریه ۲۰۰۳</text>
+  <rect x="0" y="38" width="500" height="30" rx="6" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.2)" stroke-width="1"/>
+  <text x="250" y="59" fill="rgba(255,255,255,0.8)" font-size="12" text-anchor="middle">البرادعی (IAEA): «اسناد نیجر جعلی است» — مارس ۲۰۰۳</text>
+  <rect x="0" y="76" width="500" height="30" rx="6" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.2)" stroke-width="1"/>
+  <text x="250" y="97" fill="rgba(255,255,255,0.8)" font-size="12" text-anchor="middle">فرانسه (دو ویلپن): وتوی قاطع در شورای امنیت</text>
+  <rect x="0" y="114" width="500" height="30" rx="6" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.2)" stroke-width="1"/>
+  <text x="250" y="135" fill="rgba(255,255,255,0.8)" font-size="12" text-anchor="middle">آلمان (شرودر): مخالفت صریح با جنگ</text>
+  <rect x="0" y="152" width="500" height="30" rx="6" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.2)" stroke-width="1"/>
+  <text x="250" y="173" fill="rgba(255,255,255,0.8)" font-size="12" text-anchor="middle">INR (اطلاعات وزارت خارجه): شک جدی به لوله‌ها</text>
+  <rect x="0" y="190" width="500" height="30" rx="6" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.2)" stroke-width="1"/>
+  <text x="250" y="211" fill="rgba(255,255,255,0.8)" font-size="12" text-anchor="middle">۱۵ فوریه ۲۰۰۳: ۱۵ میلیون نفر در ۶۰۰ شهر ضد جنگ</text>
+</g>
+
+<!-- پنل ۳: اعترافات -->
+<rect x="1310" y="450" width="530" height="310" class="glass" filter="url(#sh)"/>
+<text x="1575" y="485" fill="#d4af37" font-size="20" font-weight="700" text-anchor="middle">📋 اعترافات بعدی</text>
+<g transform="translate(1335,505)">
+  <rect x="0" y="0" width="480" height="50" rx="6" fill="rgba(212,175,55,0.08)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+  <text x="240" y="20" fill="#d4af37" font-size="13" font-weight="600" text-anchor="middle">کالین پاول (۲۰۰۵):</text>
+  <text x="240" y="40" fill="rgba(255,255,255,0.7)" font-size="11" text-anchor="middle">«آن سخنرانی لکه‌ای دائمی بر کارنامه‌ام است»</text>
+
+  <rect x="0" y="60" width="480" height="50" rx="6" fill="rgba(212,175,55,0.08)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+  <text x="240" y="80" fill="#d4af37" font-size="13" font-weight="600" text-anchor="middle">جرج تنت، رئیس CIA (۲۰۰۷):</text>
+  <text x="240" y="100" fill="rgba(255,255,255,0.7)" font-size="11" text-anchor="middle">«اشتباه کردیم. اطلاعات ضعیف بود.»</text>
+
+  <rect x="0" y="120" width="480" height="50" rx="6" fill="rgba(212,175,55,0.08)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+  <text x="240" y="140" fill="#d4af37" font-size="13" font-weight="600" text-anchor="middle">تونی بلر (گزارش چیلکات ۲۰۱۶):</text>
+  <text x="240" y="160" fill="rgba(255,255,255,0.7)" font-size="11" text-anchor="middle">«بر اساس اطلاعات ناقص و ارزیابی اغراق‌آمیز»</text>
+
+  <rect x="0" y="180" width="480" height="50" rx="6" fill="rgba(212,175,55,0.08)" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+  <text x="240" y="200" fill="#d4af37" font-size="13" font-weight="600" text-anchor="middle">جورج بوش (۲۰۱۰):</text>
+  <text x="240" y="220" fill="rgba(255,255,255,0.7)" font-size="11" text-anchor="middle">«بزرگ‌ترین ناراحتی دوران ریاست‌جمهوری‌ام»</text>
+</g>
+
+<!-- نقل‌قول پایانی -->
+<rect x="80" y="790" width="1760" height="70" rx="10" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.2)" stroke-width="1"/>
+<text x="960" y="825" fill="#e74c3c" font-size="18" font-weight="600" text-anchor="middle" font-style="italic">«هیچ‌کس محاکمه نشد. هیچ‌کس عذرخواهی واقعی نکرد. جنگی بر اساس دروغ آغاز شد و میلیون‌ها نفر بهای آن را پرداختند.»</text>
+
+<!-- رادار شکست اطلاعاتی -->
+<rect x="80" y="880" width="1760" height="90" class="glass"/>
+<text x="960" y="910" fill="rgba(255,255,255,0.6)" font-size="14" text-anchor="middle">📊 امتیاز شکست اطلاعاتی (از ۱۰): جمع‌آوری اطلاعات: ۳/۱۰ | تحلیل: ۲/۱۰ | صداقت با کنگره: ۱/۱۰ | پاسخگویی: ۰/۱۰ | درس‌آموزی: ۴/۱۰</text>
+<text x="960" y="935" fill="rgba(255,255,255,0.3)" font-size="11" text-anchor="middle">منابع: Senate Intelligence Committee 2004-2008, Butler Report 2004, Chilcot Inquiry 2016, Duelfer Report 2004, Robb-Silberman Commission 2005</text>
+<text x="960" y="955" fill="rgba(255,255,255,0.3)" font-size="11" text-anchor="middle">نکته: حتی گزارش‌های رسمی آمریکا و بریتانیا شکست اطلاعاتی را تأیید کردند — اما هیچ مسئول ارشدی محاکمه نشد</text>
+
+<!-- پانوشت -->
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 03 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۱: شکست اطلاعاتی WMD</text>
+</svg>

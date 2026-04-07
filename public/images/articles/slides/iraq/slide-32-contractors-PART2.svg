@@ -1,0 +1,264 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+    .bg { fill: #0a0e27; }
+    .title { fill: #fff; font-size: 32px; font-weight: 900; text-anchor: middle; }
+    .subtitle { fill: #d4af37; font-size: 16px; font-weight: 400; text-anchor: middle; }
+    .glass { rx:14; fill:rgba(255,255,255,0.04); stroke:rgba(255,255,255,0.08); stroke-width:1; }
+    .note-box { fill: rgba(212,175,55,0.06); stroke: rgba(212,175,55,0.15); stroke-width:1; rx:10; }
+  </style>
+  <filter id="sh"><feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+</defs>
+
+<rect class="bg" width="1920" height="1080"/>
+<text x="960" y="42" class="title">خصوصی‌سازی جنگ: بلک‌واتر و ارتش سایه آمریکا</text>
+<text x="960" y="68" class="subtitle">برای اولین بار در تاریخ: پیمانکاران خصوصی > سربازان رسمی در میدان جنگ</text>
+<line x1="150" y1="84" x2="1770" y2="84" stroke="#d4af37" stroke-width="1" opacity="0.3"/>
+
+<!-- ===================== TOP: SOLDIERS vs CONTRACTORS COMPARISON ===================== -->
+<rect x="60" y="100" width="1800" height="180" rx="14" class="glass" filter="url(#sh)"/>
+<text x="960" y="130" fill="#d4af37" font-size="16" font-weight="900" text-anchor="middle">⚔️ مقایسه: سرباز رسمی vs پیمانکار خصوصی</text>
+<line x1="80" y1="142" x2="1840" y2="142" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+
+<!-- Comparison table headers -->
+<g transform="translate(100,155)">
+  <text x="160" y="14" fill="rgba(255,255,255,0.4)" font-size="11" font-weight="700" text-anchor="middle">معیار</text>
+  <text x="480" y="14" fill="#00b4d8" font-size="11" font-weight="700" text-anchor="middle">🎖️ سرباز ارتش آمریکا</text>
+  <text x="830" y="14" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">💰 پیمانکار خصوصی</text>
+  <text x="1200" y="14" fill="#d4af37" font-size="11" font-weight="700" text-anchor="middle">⚖️ نتیجه</text>
+
+  <line x1="0" y1="22" x2="1650" y2="22" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Row 1: Pay -->
+  <text x="160" y="40" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">حقوق روزانه</text>
+  <text x="480" y="40" fill="#00b4d8" font-size="10" text-anchor="middle">$۵۰–$۱۵۰/روز</text>
+  <text x="830" y="40" fill="#e74c3c" font-size="10" text-anchor="middle">$۵۰۰–$۱,۵۰۰/روز (۱۰×)</text>
+  <text x="1200" y="40" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">بودجه نظامی → جیب شرکت‌ها</text>
+
+  <line x1="0" y1="48" x2="1650" y2="48" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Row 2: Accountability -->
+  <text x="160" y="66" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">پاسخگویی قانونی</text>
+  <text x="480" y="66" fill="#00b4d8" font-size="10" text-anchor="middle">UCMJ (قانون نظامی)</text>
+  <text x="830" y="66" fill="#e74c3c" font-size="10" text-anchor="middle">CPA Order 17: مصونیت کامل!</text>
+  <text x="1200" y="66" fill="rgba(231,76,60,0.6)" font-size="10" text-anchor="middle">← بزرگ‌ترین مشکل</text>
+
+  <line x1="0" y1="74" x2="1650" y2="74" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Row 3: Number -->
+  <text x="160" y="92" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">تعداد (اوج ۲۰۰۸)</text>
+  <text x="480" y="92" fill="#00b4d8" font-size="10" text-anchor="middle">~۱۵۰,۰۰۰ سرباز</text>
+  <text x="830" y="92" fill="#e74c3c" font-size="10" text-anchor="middle">~۱۶۰,۰۰۰+ پیمانکار</text>
+  <text x="1200" y="92" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">اولین جنگ: پیمانکار > سرباز</text>
+
+  <line x1="0" y1="100" x2="1650" y2="100" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Row 4: Casualties reporting -->
+  <text x="160" y="118" fill="rgba(255,255,255,0.6)" font-size="10" text-anchor="middle">گزارش تلفات</text>
+  <text x="480" y="118" fill="#00b4d8" font-size="10" text-anchor="middle">رسمی + مراسم + رسانه‌ای</text>
+  <text x="830" y="118" fill="#e74c3c" font-size="10" text-anchor="middle">مخفی — در آمار نمی‌آید</text>
+  <text x="1200" y="118" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">هزینه سیاسی جنگ کاهش → ادامه جنگ</text>
+</g>
+
+<!-- ===================== LEFT: TOP CONTRACTORS ===================== -->
+<rect x="60" y="300" width="600" height="440" rx="14" class="glass" filter="url(#sh)"/>
+<text x="360" y="332" fill="#e74c3c" font-size="18" font-weight="900" text-anchor="middle">🏢 بزرگ‌ترین برندگان جنگ</text>
+<line x1="80" y1="345" x2="640" y2="345" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+
+<!-- Company 1: KBR/Halliburton -->
+<rect x="80" y="355" width="560" height="80" rx="10" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.15)" stroke-width="1.5"/>
+<text x="100" y="377" fill="#e74c3c" font-size="15" font-weight="900">۱. KBR / هالیبرتون</text>
+<text x="100" y="395" fill="rgba(255,255,255,0.65)" font-size="11">قرارداد: $۳۹.۵B (بدون مناقصه!) — LOGCAP</text>
+<text x="100" y="411" fill="rgba(255,255,255,0.55)" font-size="10">پشتیبانی لجستیک، غذا، سوخت، پایگاه‌ها</text>
+<text x="100" y="427" fill="rgba(231,76,60,0.5)" font-size="9">CEO سابق: دیک چینی (معاون رئیس‌جمهور!) — تضاد منافع آشکار</text>
+
+<!-- Company 2: Blackwater -->
+<rect x="80" y="445" width="560" height="80" rx="10" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.15)" stroke-width="1.5"/>
+<text x="100" y="467" fill="#9b59b6" font-size="15" font-weight="900">۲. بلک‌واتر (Academi)</text>
+<text x="100" y="485" fill="rgba(255,255,255,0.65)" font-size="11">قرارداد: $۲.۴B — محافظت VIP + عملیات نظامی</text>
+<text x="100" y="501" fill="rgba(255,255,255,0.55)" font-size="10">بنیان‌گذار: اریک پرینس (مرتبط با ترامپ/امارات)</text>
+<text x="100" y="517" fill="rgba(155,89,182,0.5)" font-size="9">۲۰۰+ حادثه تیراندازی ثبت‌شده | میدان نسور: ۱۷ کشته غیرنظامی</text>
+
+<!-- Company 3: Bechtel -->
+<rect x="80" y="535" width="270" height="70" rx="10" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.12)" stroke-width="1"/>
+<text x="100" y="557" fill="#00b4d8" font-size="13" font-weight="700">۳. Bechtel</text>
+<text x="100" y="573" fill="rgba(255,255,255,0.6)" font-size="10">$۲.۳B — بازسازی زیرساخت</text>
+<text x="100" y="589" fill="rgba(255,255,255,0.45)" font-size="9">۸۰%+ پروژه‌ها ناتمام یا بی‌کیفیت</text>
+
+<!-- Company 4: DynCorp -->
+<rect x="370" y="535" width="270" height="70" rx="10" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+<text x="390" y="557" fill="#ff9800" font-size="13" font-weight="700">۴. DynCorp</text>
+<text x="390" y="573" fill="rgba(255,255,255,0.6)" font-size="10">$۱.۵B — آموزش پلیس عراق</text>
+<text x="390" y="589" fill="rgba(255,255,255,0.45)" font-size="9">رسوایی‌های متعدد قاچاق انسان</text>
+
+<!-- Company 5: CACI -->
+<rect x="80" y="615" width="270" height="70" rx="10" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="100" y="637" fill="#e74c3c" font-size="13" font-weight="700">۵. CACI International</text>
+<text x="100" y="653" fill="rgba(255,255,255,0.6)" font-size="10">بازجویی زندانیان ابوغریب</text>
+<text x="100" y="669" fill="rgba(231,76,60,0.5)" font-size="9">دخالت مستقیم در شکنجه — هرگز محاکمه نشد</text>
+
+<!-- Company 6: L3 -->
+<rect x="370" y="615" width="270" height="70" rx="10" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.12)" stroke-width="1"/>
+<text x="390" y="637" fill="#d4af37" font-size="13" font-weight="700">۶. L3 Technologies</text>
+<text x="390" y="653" fill="rgba(255,255,255,0.6)" font-size="10">مترجمان + شنود الکترونیکی</text>
+<text x="390" y="669" fill="rgba(212,175,55,0.5)" font-size="9">$۱B+ قرارداد اطلاعاتی</text>
+
+<!-- Total -->
+<rect x="80" y="695" width="560" height="35" rx="6" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="360" y="718" fill="#e74c3c" font-size="14" font-weight="900" text-anchor="middle">مجموع قراردادها: $۱۳۸B+ (فقط ۱۰ شرکت بزرگ) 💰</text>
+
+<!-- ===================== CENTER: MONEY FLOW ===================== -->
+<rect x="690" y="300" width="560" height="250" rx="14" class="glass" filter="url(#sh)"/>
+<text x="970" y="332" fill="#d4af37" font-size="16" font-weight="900" text-anchor="middle">💸 جریان پول: از مالیات‌دهنده تا سهام‌دار</text>
+<line x1="710" y1="345" x2="1230" y2="345" stroke="rgba(212,175,55,0.15)" stroke-width="1"/>
+
+<!-- Flow diagram -->
+<g transform="translate(720,360)">
+  <!-- Taxpayer -->
+  <rect x="0" y="0" width="140" height="50" rx="8" fill="rgba(0,180,216,0.08)" stroke="rgba(0,180,216,0.15)" stroke-width="1"/>
+  <text x="70" y="20" fill="#00b4d8" font-size="11" font-weight="700" text-anchor="middle">👤 مالیات‌دهنده</text>
+  <text x="70" y="38" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">آمریکایی</text>
+
+  <line x1="145" y1="25" x2="185" y2="25" stroke="#d4af37" stroke-width="2" opacity="0.4"/>
+  <polygon points="185,20 195,25 185,30" fill="#d4af37" opacity="0.5"/>
+
+  <!-- Pentagon -->
+  <rect x="200" y="0" width="120" height="50" rx="8" fill="rgba(255,152,0,0.08)" stroke="rgba(255,152,0,0.15)" stroke-width="1"/>
+  <text x="260" y="20" fill="#ff9800" font-size="11" font-weight="700" text-anchor="middle">🏛️ پنتاگون</text>
+  <text x="260" y="38" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">$۸۰۰B+/سال</text>
+
+  <line x1="325" y1="25" x2="365" y2="25" stroke="#d4af37" stroke-width="2" opacity="0.4"/>
+  <polygon points="365,20 375,25 365,30" fill="#d4af37" opacity="0.5"/>
+
+  <!-- Contractors -->
+  <rect x="380" y="0" width="140" height="50" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+  <text x="450" y="20" fill="#e74c3c" font-size="11" font-weight="700" text-anchor="middle">🏢 پیمانکاران</text>
+  <text x="450" y="38" fill="rgba(255,255,255,0.5)" font-size="10" text-anchor="middle">$۱۳۸B+ عراق</text>
+
+  <!-- Arrow down from contractors -->
+  <line x1="450" y1="55" x2="450" y2="80" stroke="#d4af37" stroke-width="2" opacity="0.4"/>
+  <polygon points="445,80 450,90 455,80" fill="#d4af37" opacity="0.5"/>
+
+  <!-- Split into two -->
+  <!-- Shareholders -->
+  <rect x="310" y="95" width="130" height="45" rx="8" fill="rgba(46,204,113,0.08)" stroke="rgba(46,204,113,0.15)" stroke-width="1"/>
+  <text x="375" y="113" fill="#2ecc71" font-size="10" font-weight="700" text-anchor="middle">📈 سهام‌داران</text>
+  <text x="375" y="130" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">سود ۳۰۰–۵۰۰%</text>
+
+  <!-- Lobbyists -->
+  <rect x="310" y="150" width="130" height="45" rx="8" fill="rgba(155,89,182,0.08)" stroke="rgba(155,89,182,0.15)" stroke-width="1"/>
+  <text x="375" y="168" fill="#9b59b6" font-size="10" font-weight="700" text-anchor="middle">🤝 لابی‌گران</text>
+  <text x="375" y="185" fill="rgba(255,255,255,0.5)" font-size="9" text-anchor="middle">→ کنگره → قرارداد بعدی</text>
+
+  <!-- Revolving door arrow -->
+  <path d="M 445,95 Q 510,120 510,170 Q 510,200 260,200 Q 200,200 200,55" fill="none" stroke="rgba(231,76,60,0.25)" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="380" y="210" fill="rgba(231,76,60,0.5)" font-size="9" text-anchor="middle" font-style="italic">درب گردان: مقام دولتی ↔ مدیر شرکت</text>
+</g>
+
+<!-- ===================== CENTER BOTTOM: WASTE & FRAUD ===================== -->
+<rect x="690" y="565" width="560" height="175" rx="14" fill="rgba(231,76,60,0.04)" stroke="rgba(231,76,60,0.15)" stroke-width="1.5" filter="url(#sh)"/>
+<text x="970" y="595" fill="#e74c3c" font-size="16" font-weight="900" text-anchor="middle">🔥 اتلاف و کلاهبرداری مستند</text>
+<line x1="710" y1="608" x2="1230" y2="608" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+
+<g transform="translate(710,620)">
+  <text x="0" y="14" fill="rgba(255,255,255,0.7)" font-size="11">💰 $۸.۷B پول نقد گم‌شده (CPA — بریمر دوره) — هرگز پیدا نشد</text>
+  <text x="0" y="34" fill="rgba(255,255,255,0.65)" font-size="11">🏗️ $۶۰B پروژه بازسازی → ۸۰%+ ناتمام، بی‌کیفیت یا تکراری</text>
+  <text x="0" y="54" fill="rgba(255,255,255,0.6)" font-size="11">⛽ KBR: $۶۱M برای سوخت‌رسانی اضافه‌حساب شده (DCAA)</text>
+  <text x="0" y="74" fill="rgba(255,255,255,0.6)" font-size="11">🏥 بیمارستان‌های ساخته‌شده بدون آب و برق — هرگز افتتاح نشدند</text>
+  <text x="0" y="94" fill="rgba(255,255,255,0.6)" font-size="11">🎓 SIGIR (بازرس ویژه): ۸۲ پرونده کیفری — اکثراً جریمه نه زندان</text>
+</g>
+
+<rect x="710" y="725" width="520" height="15" rx="3" fill="rgba(231,76,60,0.08)"/>
+<text x="970" y="737" fill="#e74c3c" font-size="9" font-weight="700" text-anchor="middle">تخمین کل اتلاف/کلاهبرداری: $۲۵–$۶۰B (کمیسیون جنگ ۲۰۱۱)</text>
+
+<!-- ===================== RIGHT: REVOLVING DOOR PROFILES ===================== -->
+<rect x="1280" y="300" width="580" height="440" rx="14" class="glass" filter="url(#sh)"/>
+<text x="1570" y="332" fill="#9b59b6" font-size="16" font-weight="900" text-anchor="middle">🚪 درب گردان: از دولت به شرکت (و بالعکس)</text>
+<line x1="1300" y1="345" x2="1840" y2="345" stroke="rgba(155,89,182,0.15)" stroke-width="1"/>
+
+<!-- Profile 1: Cheney -->
+<rect x="1300" y="355" width="540" height="65" rx="8" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.12)" stroke-width="1"/>
+<text x="1320" y="375" fill="#e74c3c" font-size="13" font-weight="700">دیک چینی</text>
+<text x="1320" y="393" fill="rgba(255,255,255,0.6)" font-size="10">CEO هالیبرتون (۱۹۹۵–۲۰۰۰) → معاون رئیس‌جمهور (۲۰۰۱–۲۰۰۹)</text>
+<text x="1320" y="409" fill="rgba(231,76,60,0.5)" font-size="9">هالیبرتون/KBR: $۳۹.۵B قرارداد بدون مناقصه | سهام چینی: ↑ ۳,۲۸۱%</text>
+
+<!-- Profile 2: Rumsfeld -->
+<rect x="1300" y="430" width="540" height="55" rx="8" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.12)" stroke-width="1"/>
+<text x="1320" y="450" fill="#ff9800" font-size="13" font-weight="700">دونالد رامسفلد</text>
+<text x="1320" y="468" fill="rgba(255,255,255,0.6)" font-size="10">CEO شرکت‌های دارویی → وزیر دفاع → مشاور شرکت‌های نظامی</text>
+<text x="1320" y="482" fill="rgba(255,152,0,0.5)" font-size="9">معمار «جنگ سبک» + اصرار بر کاهش سربازان → نیاز بیشتر به پیمانکار</text>
+
+<!-- Profile 3: Prince -->
+<rect x="1300" y="495" width="540" height="55" rx="8" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.12)" stroke-width="1"/>
+<text x="1320" y="515" fill="#9b59b6" font-size="13" font-weight="700">اریک پرینس (بنیان‌گذار بلک‌واتر)</text>
+<text x="1320" y="533" fill="rgba(255,255,255,0.6)" font-size="10">Navy SEAL سابق → بلک‌واتر → مشاور ترامپ → شرکت نظامی در امارات + چین</text>
+<text x="1320" y="547" fill="rgba(155,89,182,0.5)" font-size="9">خواهرش: بتسی دیووس (وزیر آموزش ترامپ) — شبکه قدرت خانوادگی</text>
+
+<!-- Profile 4: Bremer -->
+<rect x="1300" y="560" width="540" height="55" rx="8" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.12)" stroke-width="1"/>
+<text x="1320" y="580" fill="#00b4d8" font-size="13" font-weight="700">پل بریمر (حاکم CPA)</text>
+<text x="1320" y="598" fill="rgba(255,255,255,0.6)" font-size="10">دیپلمات → حاکم مطلق عراق (۲۰۰۳–۲۰۰۴) → مشاور شرکت‌های بازسازی</text>
+<text x="1320" y="612" fill="rgba(0,180,216,0.5)" font-size="9">فرمان ۱۷: مصونیت کامل پیمانکاران از قانون عراق</text>
+
+<!-- Profile 5: Wolfowitz -->
+<rect x="1300" y="625" width="540" height="55" rx="8" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.12)" stroke-width="1"/>
+<text x="1320" y="645" fill="#d4af37" font-size="13" font-weight="700">پل ولفوویتز</text>
+<text x="1320" y="663" fill="rgba(255,255,255,0.6)" font-size="10">معاون وزیر دفاع (معمار فکری جنگ) → رئیس بانک جهانی (۲۰۰۵)</text>
+<text x="1320" y="677" fill="rgba(212,175,55,0.5)" font-size="9">«هزینه بازسازی از درآمد نفت عراق تأمین می‌شود» — هرگز نشد</text>
+
+<!-- Key stat -->
+<rect x="1300" y="692" width="540" height="40" rx="8" fill="rgba(231,76,60,0.08)" stroke="rgba(231,76,60,0.15)" stroke-width="1"/>
+<text x="1570" y="712" fill="#e74c3c" font-size="12" font-weight="700" text-anchor="middle">کمک‌های مالی شرکت‌های نظامی به کنگره (۲۰۰۰–۲۰۰۸): $۲۰۰M+</text>
+<text x="1570" y="728" fill="rgba(255,255,255,0.4)" font-size="9" text-anchor="middle">بازگشت سرمایه: ۱ دلار لابی = ۶۰۰ دلار قرارداد (ROI: ۶۰,۰۰۰%)</text>
+
+<!-- ===================== BOTTOM: STOCK PRICE COMPARISON ===================== -->
+<rect x="60" y="755" width="1800" height="100" rx="14" class="glass" filter="url(#sh)"/>
+<text x="960" y="782" fill="#d4af37" font-size="14" font-weight="700" text-anchor="middle">📈 ارزش سهام شرکت‌های نظامی: قبل و بعد از جنگ عراق (۲۰۰۲ → ۲۰۰۸)</text>
+
+<g transform="translate(100,795)">
+  <!-- Halliburton -->
+  <rect x="0" y="0" width="300" height="42" rx="6" fill="rgba(231,76,60,0.06)" stroke="rgba(231,76,60,0.1)" stroke-width="1"/>
+  <text x="15" y="16" fill="#e74c3c" font-size="11" font-weight="700">هالیبرتون</text>
+  <text x="15" y="34" fill="rgba(255,255,255,0.5)" font-size="10">$۱۲ → $۵۱ (▲ ۳۲۵%)</text>
+  <rect x="160" y="5" width="130" height="12" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="160" y="5" width="130" height="12" rx="3" fill="rgba(46,204,113,0.5)"/>
+
+  <!-- Lockheed -->
+  <rect x="320" y="0" width="300" height="42" rx="6" fill="rgba(255,152,0,0.06)" stroke="rgba(255,152,0,0.1)" stroke-width="1"/>
+  <text x="335" y="16" fill="#ff9800" font-size="11" font-weight="700">لاکهید مارتین</text>
+  <text x="335" y="34" fill="rgba(255,255,255,0.5)" font-size="10">$۵۱ → $۱۱۰ (▲ ۱۱۶%)</text>
+  <rect x="480" y="5" width="130" height="12" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="480" y="5" width="75" height="12" rx="3" fill="rgba(46,204,113,0.4)"/>
+
+  <!-- Raytheon -->
+  <rect x="640" y="0" width="300" height="42" rx="6" fill="rgba(0,180,216,0.06)" stroke="rgba(0,180,216,0.1)" stroke-width="1"/>
+  <text x="655" y="16" fill="#00b4d8" font-size="11" font-weight="700">ریتیون</text>
+  <text x="655" y="34" fill="rgba(255,255,255,0.5)" font-size="10">$۲۸ → $۶۳ (▲ ۱۲۵%)</text>
+  <rect x="800" y="5" width="130" height="12" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="800" y="5" width="80" height="12" rx="3" fill="rgba(46,204,113,0.4)"/>
+
+  <!-- Boeing -->
+  <rect x="960" y="0" width="300" height="42" rx="6" fill="rgba(155,89,182,0.06)" stroke="rgba(155,89,182,0.1)" stroke-width="1"/>
+  <text x="975" y="16" fill="#9b59b6" font-size="11" font-weight="700">بوئینگ</text>
+  <text x="975" y="34" fill="rgba(255,255,255,0.5)" font-size="10">$۳۳ → $۸۸ (▲ ۱۶۷%)</text>
+  <rect x="1120" y="5" width="130" height="12" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="1120" y="5" width="90" height="12" rx="3" fill="rgba(46,204,113,0.4)"/>
+
+  <!-- S&P 500 comparison -->
+  <rect x="1280" y="0" width="380" height="42" rx="6" fill="rgba(212,175,55,0.06)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+  <text x="1295" y="16" fill="#d4af37" font-size="11" font-weight="700">مقایسه: S&amp;P 500</text>
+  <text x="1295" y="34" fill="rgba(255,255,255,0.5)" font-size="10">۲۰۰۲–۲۰۰۸: ▲ ۲۸% (فقط!) | جنگ = سوددهی ۱۰× بازار</text>
+</g>
+
+<!-- ===================== BOTTOM BAR ===================== -->
+<rect x="60" y="875" width="1800" height="80" rx="10" class="note-box"/>
+<text x="960" y="903" fill="#d4af37" font-size="15" font-weight="700" text-anchor="middle">📌 جنگ عراق ثابت کرد: وقتی جنگ سودآور باشد، صلح دشمن بیزینس است</text>
+<text x="960" y="925" fill="rgba(255,255,255,0.5)" font-size="12" text-anchor="middle">$۱۳۸B+ قرارداد خصوصی + $۶۰B+ اتلاف = بزرگ‌ترین انتقال ثروت نظامی از دولت به بخش خصوصی در تاریخ</text>
+<text x="960" y="945" fill="rgba(255,255,255,0.35)" font-size="11" text-anchor="middle">آیزنهاور ۱۹۶۱: «از مجتمع نظامی-صنعتی بترسید» — ۶۰ سال بعد: مجتمع برنده شد 🎖️→💰</text>
+
+<text x="60" y="40" fill="rgba(255,255,255,0.3)" font-size="13">SLIDE 32 / 60</text>
+<text x="1860" y="40" fill="rgba(255,255,255,0.3)" font-size="13" text-anchor="end">فصل ۸: رسانه، روایت و حافظه</text>
+<text x="960" y="1065" fill="rgba(255,255,255,0.2)" font-size="11" text-anchor="middle">منابع: SIGIR Reports, CBO, Commission on Wartime Contracting (2011), OpenSecrets.org | ۲۰۰۳–۲۰۲۳</text>
+</svg>
