@@ -63,8 +63,22 @@ const showNav = validImages.length > 1;
         <button class={`slider-dot h-2.5 rounded-full transition-all duration-300 ease-out shadow-inner ${i === 0 ? 'bg-primary dark:bg-primary-light w-8' : 'bg-text-muted/40 hover:bg-text-muted/70 dark:bg-white/50 dark:hover:bg-white/80 w-2.5'}`} data-index={i} aria-label={`Go to slide ${i + 1}`}></button>
       ))}
     </div>
+
+    <!-- Zoom Controls (Visible in Fullscreen) -->
+    <div class="zoom-controls hidden absolute bottom-6 right-6 flex-col gap-2 z-40">
+      <button type="button" class="zoom-in-btn w-12 h-12 flex items-center justify-center rounded-xl bg-white/20 dark:bg-black/40 text-white backdrop-blur-md transition-all hover:bg-white/30 dark:hover:bg-black/60 shadow-lg border border-white/10" title="Zoom In">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+      </button>
+      <button type="button" class="zoom-out-btn w-12 h-12 flex items-center justify-center rounded-xl bg-white/20 dark:bg-black/40 text-white backdrop-blur-md transition-all hover:bg-white/30 dark:hover:bg-black/60 shadow-lg border border-white/10" title="Zoom Out">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path></svg>
+      </button>
+      <button type="button" class="zoom-reset-btn w-12 h-12 flex items-center justify-center rounded-xl bg-white/20 dark:bg-black/40 text-white backdrop-blur-md transition-all hover:bg-white/30 dark:hover:bg-black/60 shadow-lg border border-white/10" title="Reset Zoom">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+      </button>
+    </div>
   </div>
-)}
+)
+}
 
 <style is:global>
   .scrollbar-hide::-webkit-scrollbar {
@@ -96,12 +110,29 @@ const showNav = validImages.length > 1;
     opacity: 1 !important;
   }
   .premium-slider.is-fullscreen .slide img {
-    max-height: 85vh !important;
+    max-height: 90vh !important;
     max-width: 95vw !important;
+    cursor: zoom-in;
+    transition: box-shadow 0.3s ease;
+  }
+  .premium-slider.is-fullscreen .zoom-controls {
+    display: flex !important;
+  }
+  .premium-slider.is-fullscreen .slider-dots {
+    bottom: 24px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .slide.is-zoomed img {
+    cursor: grab;
+  }
+  .slide.is-zoomed.is-dragging img {
+    cursor: grabbing;
   }
 </style>
 
 <script>
+  import Panzoom from '@panzoom/panzoom';
+
   class PremiumSlider {
     container: HTMLElement;
     track: HTMLElement | null;
@@ -111,10 +142,14 @@ const showNav = validImages.length > 1;
     nextBtn: HTMLElement | null;
     expandBtn: HTMLElement | null;
     closeBtn: HTMLElement | null;
+    zoomInBtn: HTMLElement | null;
+    zoomOutBtn: HTMLElement | null;
+    zoomResetBtn: HTMLElement | null;
     currentIndex: number;
     totalSlides: number;
     isRtl: boolean;
     isFullscreen: boolean;
+    panzooms: Map<HTMLElement, any>;
 
     constructor(container: HTMLElement) {
       this.container = container;
@@ -125,15 +160,94 @@ const showNav = validImages.length > 1;
       this.nextBtn = container.querySelector('.slider-nav.next');
       this.expandBtn = container.querySelector('.slider-expand');
       this.closeBtn = container.querySelector('.slider-close');
+      this.zoomInBtn = container.querySelector('.zoom-in-btn');
+      this.zoomOutBtn = container.querySelector('.zoom-out-btn');
+      this.zoomResetBtn = container.querySelector('.zoom-reset-btn');
+      
       this.currentIndex = 0;
       this.totalSlides = this.slides.length;
       this.isFullscreen = false;
+      this.panzooms = new Map();
       
       const dir = document.documentElement.getAttribute('dir') || 'ltr';
       this.isRtl = dir === 'rtl';
 
       this.initEvents();
       this.initInteractiveElements();
+      this.initPanzoom();
+    }
+
+    initPanzoom() {
+      this.slides.forEach((slide) => {
+        const img = slide.querySelector('img');
+        if (img) {
+          const pz = Panzoom(img, {
+            maxScale: 6,
+            minScale: 1,
+            contain: 'outside', // Allows moving inside the view
+            step: 0.3,
+            handleStartEvent: (event: any) => {
+              // Always allow multi-touch (pinch)
+              if (event.touches && event.touches.length > 1) return true;
+              
+              // For single touch/click, only allow panzoom if in fullscreen or already zoomed
+              if (!this.isFullscreen && pz.getScale() === 1) return false;
+              
+              event.preventDefault();
+              return true;
+            }
+          });
+          
+          this.panzooms.set(slide as HTMLElement, pz);
+
+          // Track zooming state
+          img.parentElement?.addEventListener('wheel', (event: any) => {
+            if (this.isFullscreen || pz.getScale() > 1) {
+              pz.zoomWithWheel(event);
+              this.updateZoomState(slide as HTMLElement, pz.getScale());
+            }
+          }, { passive: false });
+
+          img.addEventListener('panzoomchange', (e: any) => {
+             this.updateZoomState(slide as HTMLElement, e.detail.scale);
+          });
+
+          // Track dragging state for cursor
+          img.addEventListener('panzoomstart', () => {
+             if (pz.getScale() > 1) slide.classList.add('is-dragging');
+          });
+          img.addEventListener('panzoomend', () => {
+             slide.classList.remove('is-dragging');
+          });
+
+          // Double tap/click to zoom
+          let lastClickTime = 0;
+          img.addEventListener('click', (e: MouseEvent) => {
+            const currentTime = new Date().getTime();
+            const clickDelay = currentTime - lastClickTime;
+            lastClickTime = currentTime;
+
+            if (clickDelay < 300) {
+              // Double click detected
+              e.preventDefault();
+              e.stopPropagation();
+              if (pz.getScale() > 1) {
+                pz.reset();
+              } else {
+                pz.zoomIn();
+              }
+            }
+          });
+        }
+      });
+    }
+
+    updateZoomState(slide: HTMLElement, scale: number) {
+        if (scale > 1) {
+            slide.classList.add('is-zoomed');
+        } else {
+            slide.classList.remove('is-zoomed');
+        }
     }
 
     initInteractiveElements() {
@@ -195,11 +309,37 @@ const showNav = validImages.length > 1;
         this.closeFullscreen();
       });
 
+      // Zoom Buttons
+      this.zoomInBtn?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const currentSlide = this.slides[this.currentIndex] as HTMLElement;
+        const pz = this.panzooms.get(currentSlide);
+        if (pz) pz.zoomIn();
+      });
+
+      this.zoomOutBtn?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const currentSlide = this.slides[this.currentIndex] as HTMLElement;
+        const pz = this.panzooms.get(currentSlide);
+        if (pz) pz.zoomOut();
+      });
+
+      this.zoomResetBtn?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const currentSlide = this.slides[this.currentIndex] as HTMLElement;
+        const pz = this.panzooms.get(currentSlide);
+        if (pz) pz.reset();
+      });
+
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && this.isFullscreen) {
           this.closeFullscreen();
         }
       });
+    }
+
+    resetAllZooms() {
+        this.panzooms.forEach(pz => pz.reset({ animate: false }));
     }
 
     updateImages(newImages: string[]) {
@@ -218,6 +358,7 @@ const showNav = validImages.length > 1;
           </div>
         `).join('');
         this.slides = this.container.querySelectorAll('.slide');
+        this.initPanzoom();
       }
 
       const dotsContainer = this.container.querySelector('.slider-dots');
@@ -259,9 +400,15 @@ const showNav = validImages.length > 1;
       this.isFullscreen = false;
       this.container.classList.remove('is-fullscreen');
       document.body.style.overflow = '';
+      this.resetAllZooms();
     }
 
     handleSwipe(start: number, end: number) {
+      // Don't swipe if current slide is zoomed in
+      const currentSlide = this.slides[this.currentIndex] as HTMLElement;
+      const pz = this.panzooms.get(currentSlide);
+      if (pz && pz.getScale() > 1) return;
+
       const threshold = 50;
       if (start - end > threshold) {
          this.goToSlide(this.isRtl ? this.currentIndex - 1 : this.currentIndex + 1);
@@ -274,6 +421,11 @@ const showNav = validImages.length > 1;
       if (index < 0) index = this.totalSlides - 1;
       if (index >= this.totalSlides) index = 0;
       
+      // Reset zoom of current slide before moving
+      const oldSlide = this.slides[this.currentIndex] as HTMLElement;
+      const oldPz = this.panzooms.get(oldSlide);
+      if (oldPz && oldPz.getScale() > 1) oldPz.reset({ animate: true });
+
       this.currentIndex = index;
       
       const directionMult = this.isRtl ? 1 : -1;
