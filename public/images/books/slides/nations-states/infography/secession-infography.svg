@@ -1,0 +1,656 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1189mm" height="841mm" viewBox="0 0 1189 841">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2=".5" y2="1">
+      <stop offset="0%" stop-color="#eef2ff" />
+      <stop offset="50%" stop-color="#faf5ff" />
+      <stop offset="100%" stop-color="#fff7ed" />
+    </linearGradient>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#4c1d95" />
+    </linearGradient>
+    <linearGradient id="specG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4338ca" />
+      <stop offset="50%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#dc2626" />
+    </linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#475569" flood-opacity=".2" />
+    </filter>
+    <style>
+      .t1 {
+        font: 700 17px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+        fill: #fff
+      }
+
+      .t2 {
+        font: 500 7px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+        fill: #e0e7ff
+      }
+
+      .sec {
+        font: 700 9.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+        fill: #1e1b4b
+      }
+
+      .ct {
+        font: 700 6.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+        fill: #1e1b4b
+      }
+
+      .bd {
+        font: 500 5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+        fill: #334155
+      }
+
+      .sm {
+        font: 500 4.2px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+        fill: #475569
+      }
+
+      .tn {
+        font: 500 3.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+        fill: #64748b
+      }
+
+      .lb {
+        font: 700 5.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+        fill: #1e1b4b
+      }
+
+      .mn {
+        font: 600 3.5px ui-monospace, monospace;
+        fill: #475569
+      }
+
+      .wh {
+        fill: #fff
+      }
+
+      .tblh {
+        font: 700 5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+        fill: #1e1b4b
+      }
+
+      .tbl {
+        font: 500 4.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+        fill: #334155
+      }
+
+      .hm0 {
+        fill: #f0fdf4
+      }
+
+      .hm1 {
+        fill: #bbf7d0
+      }
+
+      .hm2 {
+        fill: #86efac
+      }
+
+      .hm3 {
+        fill: #4ade80
+      }
+
+      .hm4 {
+        fill: #22c55e
+      }
+
+      .hm5 {
+        fill: #16a34a
+      }
+
+      .hm6 {
+        fill: #15803d
+      }
+
+      .hm7 {
+        fill: #166534
+      }
+    </style>
+    <clipPath id="c225x140">
+      <rect width="225" height="140" rx="6" />
+    </clipPath>
+    <clipPath id="c225x110">
+      <rect width="225" height="110" rx="6" />
+    </clipPath>
+    <clipPath id="c225x90">
+      <rect width="225" height="90" rx="6" />
+    </clipPath>
+    <clipPath id="c225x160">
+      <rect width="225" height="160" rx="6" />
+    </clipPath>
+    <clipPath id="c460x100">
+      <rect width="460" height="100" rx="6" />
+    </clipPath>
+  </defs>
+
+  <rect width="1189" height="841" fill="url(#bg)" />
+
+  <!-- HEADER -->
+  <rect x="10" y="8" width="1169" height="48" rx="12" fill="url(#hdr)" filter="url(#sh)" />
+  <text x="1165" y="28" text-anchor="end" class="t1">حقوق بین‌الملل، جدایی و استقلال: تحلیل تطبیقی عمیق</text>
+  <text x="1165" y="42" text-anchor="end" class="t2">کوزوو • کریمه • تایوان • سومالیلند • جنوب سودان — اصول، تنش‌ها،
+    موارد کلیدی، هیت‌مپ مدل‌های حکمرانی جهان</text>
+  <text x="1165" y="52" text-anchor="end" class="t2">International Law &amp; Secession Atlas — Deep Comparative Analysis
+    + Governance Models Heatmap</text>
+
+  <!-- ═══ ROW 1: PRINCIPLES ═══ -->
+  <rect x="10" y="64" width="1169" height="130" rx="10" fill="#fff" stroke="#e0e7ff" filter="url(#sh)" />
+  <text x="1165" y="78" text-anchor="end" class="sec">اصول بنیادین حقوق بین‌الملل و تنش میان آنها</text>
+
+  <!-- Five principle boxes -->
+  <g transform="translate(16,86)">
+    <rect width="218" height="96" rx="6" fill="#eff6ff" stroke="#93c5fd" />
+    <g clip-path="url(#c225x110)">
+      <text x="210" y="12" text-anchor="end" class="ct">حق تعیین سرنوشت</text>
+      <text x="210" y="22" text-anchor="end" class="bd">ماده ۱ منشور ملل متحد + میثاقین ۱۹۶۶</text>
+      <text x="210" y="32" text-anchor="end" class="bd">ملت‌ها حق دارند نظام سیاسی خود را تعیین کنند.</text>
+      <text x="210" y="44" text-anchor="end" class="sm">داخلی: خودگردانی در چارچوب دولت موجود</text>
+      <text x="210" y="54" text-anchor="end" class="sm">خارجی: جدایی — فقط استعمار/اشغال/سرکوب</text>
+      <text x="210" y="66" text-anchor="end" class="tn">بیشتر برای استعمارزدایی تفسیر شده</text>
+      <text x="210" y="78" text-anchor="end" class="mn">Self-determination: internal preferred</text>
+      <text x="210" y="90" text-anchor="end" class="mn">External: colonial / occupation / extreme repression</text>
+    </g>
+  </g>
+
+  <g transform="translate(242,86)">
+    <rect width="218" height="96" rx="6" fill="#fef2f2" stroke="#fca5a5" />
+    <g clip-path="url(#c225x110)">
+      <text x="210" y="12" text-anchor="end" class="ct">تمامیت ارضی</text>
+      <text x="210" y="22" text-anchor="end" class="bd">ماده ۲ بند ۴ منشور ملل متحد</text>
+      <text x="210" y="32" text-anchor="end" class="bd">مرزهای دولت‌ها باید محترم شمرده شود.</text>
+      <text x="210" y="44" text-anchor="end" class="sm">مانع اصلی جدایی یک‌طرفه در حقوق بین‌الملل</text>
+      <text x="210" y="54" text-anchor="end" class="sm">شورای امنیت معمولاً از این اصل حمایت می‌کند.</text>
+      <text x="210" y="66" text-anchor="end" class="tn">تنش ساختاری: تعیین سرنوشت vs تمامیت ارضی</text>
+      <text x="210" y="78" text-anchor="end" class="mn">Territorial integrity: dominant norm</text>
+      <text x="210" y="90" text-anchor="end" class="mn">Security Council almost always supports it</text>
+    </g>
+  </g>
+
+  <g transform="translate(468,86)">
+    <rect width="218" height="96" rx="6" fill="#fef9c3" stroke="#fde047" />
+    <g clip-path="url(#c225x110)">
+      <text x="210" y="12" text-anchor="end" class="ct">Uti possidetis juris</text>
+      <text x="210" y="22" text-anchor="end" class="bd">مرزهای استعماری در استقلال حفظ شوند.</text>
+      <text x="210" y="32" text-anchor="end" class="bd">هدف: جلوگیری از جنگ بر سر مرزها.</text>
+      <text x="210" y="44" text-anchor="end" class="sm">از آمریکای لاتین و آفریقا آمده؛ جهانی شده</text>
+      <text x="210" y="54" text-anchor="end" class="sm">سومالیلند: استدلال بر اساس همین اصل</text>
+      <text x="210" y="66" text-anchor="end" class="tn">اصل: مرزهای بد بهتر از جنگ بر سر مرز است</text>
+      <text x="210" y="78" text-anchor="end" class="mn">Colonial borders frozen at independence</text>
+    </g>
+  </g>
+
+  <g transform="translate(694,86)">
+    <rect width="218" height="96" rx="6" fill="#fdf4ff" stroke="#d946ef" />
+    <g clip-path="url(#c225x110)">
+      <text x="210" y="12" text-anchor="end" class="ct">جدایی جبرانی (Remedial Secession)</text>
+      <text x="210" y="22" text-anchor="end" class="bd">اگر سرکوب سیستماتیک + نبود راه داخلی →</text>
+      <text x="210" y="32" text-anchor="end" class="bd">شاید حق جدایی وجود داشته باشد.</text>
+      <text x="210" y="44" text-anchor="end" class="sm">نظریه حقوقی، نه قاعده قطعی و مسلّم</text>
+      <text x="210" y="54" text-anchor="end" class="sm">بحث‌برانگیزترین مفهوم در این حوزه</text>
+      <text x="210" y="66" text-anchor="end" class="tn">شرایط: ① سرکوب گسترده ② بن‌بست مذاکره ③ آخرین راه</text>
+      <text x="210" y="78" text-anchor="end" class="mn">Remedial secession: theory, not settled law</text>
+      <text x="210" y="90" text-anchor="end" class="mn">Kosovo 2008: closest precedent</text>
+    </g>
+  </g>
+
+  <g transform="translate(920,86)">
+    <rect width="246" height="96" rx="6" fill="#f0fdf4" stroke="#34d399" />
+    <g clip-path="url(#c225x110)">
+      <text x="238" y="12" text-anchor="end" class="ct">شناسایی بین‌المللی</text>
+      <text x="238" y="22" text-anchor="end" class="bd">بدون شناسایی دیگر دولت‌ها، استقلال ناقص است.</text>
+      <text x="238" y="32" text-anchor="end" class="bd">شناسایی عملِ سیاسی است، نه صرفاً حقوقی.</text>
+      <text x="238" y="44" text-anchor="end" class="sm">اعلامی (declaratory) vs تأسیسی (constitutive)؟</text>
+      <text x="238" y="54" text-anchor="end" class="sm">عملاً: بدون شناسایی → بدون عضویت → انزوا</text>
+      <text x="238" y="66" text-anchor="end" class="tn">قدرت‌های بزرگ نقش تعیین‌کننده دارند</text>
+      <text x="238" y="78" text-anchor="end" class="mn">Recognition is political, not just legal</text>
+      <text x="238" y="90" text-anchor="end" class="mn">Great powers decide who gets recognized</text>
+    </g>
+  </g>
+
+  <!-- ═══ ROW 2: FIVE CASE STUDIES ═══ -->
+  <rect x="10" y="202" width="1169" height="190" rx="10" fill="#fff" stroke="#e0e7ff" filter="url(#sh)" />
+  <text x="1165" y="216" text-anchor="end" class="sec">پنج مورد کلیدی: تحلیل تطبیقی عمیق</text>
+
+  <!-- Kosovo -->
+  <g transform="translate(16,224)">
+    <rect width="225" height="160" rx="6" fill="#eff6ff" stroke="#6366f1" />
+    <g clip-path="url(#c225x160)">
+      <rect width="225" height="18" rx="6" fill="#6366f1" />
+      <text x="218" y="12" text-anchor="end" class="ct wh">🇽🇰 کوزوو (۲۰۰۸)</text>
+      <text x="218" y="30" text-anchor="end" class="bd">پیش‌زمینه: سرکوب آلبانیایی‌ها توسط صربستان</text>
+      <text x="218" y="40" text-anchor="end" class="bd">پاک‌سازی قومی ۱۹۹۸-۹۹ → مداخله ناتو</text>
+      <text x="218" y="50" text-anchor="end" class="bd">ادارهٔ موقت UNMIK → اعلام استقلال ۲۰۰۸</text>
+      <text x="218" y="62" text-anchor="end" class="sm">ICJ ۲۰۱۰: «ناقض حقوق بین‌الملل نیست»</text>
+      <text x="218" y="72" text-anchor="end" class="sm">≈۱۰۰ شناسایی | عضو IMF | نه عضو UN</text>
+      <text x="218" y="84" text-anchor="end" class="sm">استدلال: جدایی جبرانی + sui generis</text>
+      <text x="218" y="96" text-anchor="end" class="tn">مخالفان: روسیه، چین، هند، اسپانیا</text>
+      <text x="218" y="106" text-anchor="end" class="tn">ترس از سابقه‌سازی در مناطق دیگر</text>
+      <text x="218" y="120" text-anchor="end" class="lb">سرکوب: ✓✓✓ | رضایت: ✗ | شناسایی: جزئی</text>
+      <text x="218" y="134" text-anchor="end" class="mn">Closest case to remedial secession</text>
+      <text x="218" y="148" text-anchor="end" class="mn">ICJ: narrow ruling, no general right found</text>
+    </g>
+  </g>
+
+  <!-- Crimea -->
+  <g transform="translate(249,224)">
+    <rect width="225" height="160" rx="6" fill="#fef2f2" stroke="#dc2626" />
+    <g clip-path="url(#c225x160)">
+      <rect width="225" height="18" rx="6" fill="#dc2626" />
+      <text x="218" y="12" text-anchor="end" class="ct wh">🇷🇺/🇺🇦 کریمه (۲۰۱۴)</text>
+      <text x="218" y="30" text-anchor="end" class="bd">بحران اوکراین → نیروهای بدون نشان روسیه</text>
+      <text x="218" y="40" text-anchor="end" class="bd">کنترل نظامی شبه‌جزیره بدون مقاومت جدی</text>
+      <text x="218" y="50" text-anchor="end" class="bd">همه‌پرسی زیر اشغال: ۹۷٪ الحاق → الحاق به روسیه</text>
+      <text x="218" y="62" text-anchor="end" class="sm">قطعنامه ۶۸/۲۶۲ مجمع: الحاق بی‌اعتبار</text>
+      <text x="218" y="72" text-anchor="end" class="sm">تحریم‌های گسترده غربی علیه روسیه</text>
+      <text x="218" y="84" text-anchor="end" class="sm">استدلال روسیه: تعیین سرنوشت + حفاظت اقلیت</text>
+      <text x="218" y="96" text-anchor="end" class="tn">تفاوت با کوزوو: مداخله نظامی خارجی مستقیم</text>
+      <text x="218" y="106" text-anchor="end" class="tn">بدون سرکوب سیستماتیک قبلی اوکراین</text>
+      <text x="218" y="120" text-anchor="end" class="lb">سرکوب: ✗ | اشغال: ✓✓✓ | شناسایی: ≈۱۰</text>
+      <text x="218" y="134" text-anchor="end" class="mn">Overwhelmingly rejected as illegal annexation</text>
+      <text x="218" y="148" text-anchor="end" class="mn">Use of force + sham referendum = not valid</text>
+    </g>
+  </g>
+
+  <!-- Taiwan -->
+  <g transform="translate(482,224)">
+    <rect width="225" height="160" rx="6" fill="#fefce8" stroke="#d97706" />
+    <g clip-path="url(#c225x160)">
+      <rect width="225" height="18" rx="6" fill="#d97706" />
+      <text x="218" y="12" text-anchor="end" class="ct wh">🇹🇼 تایوان</text>
+      <text x="218" y="30" text-anchor="end" class="bd">ROC ۱۹۱۲ → شکست در جنگ داخلی ۱۹۴۹</text>
+      <text x="218" y="40" text-anchor="end" class="bd">عقب‌نشینی به تایوان؛ تا ۱۹۷۱ کرسی UN</text>
+      <text x="218" y="50" text-anchor="end" class="bd">دولت عملاً مستقل: ارتش، اقتصاد، دموکراسی</text>
+      <text x="218" y="62" text-anchor="end" class="sm">≈۱۳ شناسایی | آمریکا: حمایت عملی بدون رسمی</text>
+      <text x="218" y="72" text-anchor="end" class="sm">PRC: تایوان بخشی از چین؛ تهدید نظامی</text>
+      <text x="218" y="84" text-anchor="end" class="sm">این مورد «جدایی» نیست: جنگ داخلیِ ناتمام</text>
+      <text x="218" y="96" text-anchor="end" class="tn">بزرگ‌ترین ریسک ژئوپلیتیکِ جهان</text>
+      <text x="218" y="106" text-anchor="end" class="tn">GDP per capita بالا، صنعت نیمه‌رسانا</text>
+      <text x="218" y="120" text-anchor="end" class="lb">ماهیت: جنگ داخلی | شناسایی: ≈۱۳ | ریسک: بالا</text>
+      <text x="218" y="134" text-anchor="end" class="mn">Not secession; unfinished civil war</text>
+      <text x="218" y="148" text-anchor="end" class="mn">Top geopolitical flashpoint globally</text>
+    </g>
+  </g>
+
+  <!-- Somaliland -->
+  <g transform="translate(715,224)">
+    <rect width="225" height="160" rx="6" fill="#f0fdf4" stroke="#16a34a" />
+    <g clip-path="url(#c225x160)">
+      <rect width="225" height="18" rx="6" fill="#16a34a" />
+      <text x="218" y="12" text-anchor="end" class="ct wh">سومالیلند (از ۱۹۹۱)</text>
+      <text x="218" y="30" text-anchor="end" class="bd">مستعمره سابق بریتانیا؛ استقلال ۱۹۶۰</text>
+      <text x="218" y="40" text-anchor="end" class="bd">اتحاد داوطلبانه با سومالی ایتالیایی → شکست</text>
+      <text x="218" y="50" text-anchor="end" class="bd">از ۱۹۹۱ عملاً مستقل: دولت، ارتش، پول، انتخابات</text>
+      <text x="218" y="62" text-anchor="end" class="sm">صفر شناسایی رسمی علیرغم ۳۳+ سال استقلال عملی</text>
+      <text x="218" y="72" text-anchor="end" class="sm">استدلال: بازگشت به مرزهای استعماری (uti possidetis)</text>
+      <text x="218" y="84" text-anchor="end" class="sm">ثبات نسبی، انتخابات، انتقال مسالمت‌آمیز قدرت</text>
+      <text x="218" y="96" text-anchor="end" class="tn">مانع: ترس از سابقه‌سازی در آفریقا</text>
+      <text x="218" y="106" text-anchor="end" class="tn">اتحادیه آفریقا: حفظ مرزهای موجود</text>
+      <text x="218" y="120" text-anchor="end" class="lb">عملکرد: ✓✓ | شناسایی: ✗ | ثبات: نسبی</text>
+      <text x="218" y="134" text-anchor="end" class="mn">Most successful unrecognized state</text>
+      <text x="218" y="148" text-anchor="end" class="mn">Uti possidetis argument exists but not applied</text>
+    </g>
+  </g>
+
+  <!-- South Sudan -->
+  <g transform="translate(948,224)">
+    <rect width="225" height="160" rx="6" fill="#fdf4ff" stroke="#a855f7" />
+    <g clip-path="url(#c225x160)">
+      <rect width="225" height="18" rx="6" fill="#a855f7" />
+      <text x="218" y="12" text-anchor="end" class="ct wh">🇸🇸 جنوب سودان (۲۰۱۱)</text>
+      <text x="218" y="30" text-anchor="end" class="bd">جنگ داخلی طولانی شمال-جنوب</text>
+      <text x="218" y="40" text-anchor="end" class="bd">توافقنامه جامع صلح ۲۰۰۵ (CPA)</text>
+      <text x="218" y="50" text-anchor="end" class="bd">همه‌پرسی ۲۰۱۱: ۹۸.۸٪ → استقلال با رضایت</text>
+      <text x="218" y="62" text-anchor="end" class="sm">شناسایی کامل | عضو سازمان ملل ۲۰۱۱</text>
+      <text x="218" y="72" text-anchor="end" class="sm">اما: جنگ داخلی ۲۰۱۳ | یکی از ضعیف‌ترین دولت‌ها</text>
+      <text x="218" y="84" text-anchor="end" class="sm">درس: رضایت دولت مادر = مسیر آسان‌تر</text>
+      <text x="218" y="96" text-anchor="end" class="tn">اما رضایت + استقلال ≠ ثبات خودکار</text>
+      <text x="218" y="106" text-anchor="end" class="tn">ساختن دولت سخت‌تر از گرفتن استقلال است</text>
+      <text x="218" y="120" text-anchor="end" class="lb">رضایت: ✓ | شناسایی: ✓✓✓ | ثبات: ✗✗</text>
+      <text x="218" y="134" text-anchor="end" class="mn">Consensual secession: easiest path</text>
+      <text x="218" y="148" text-anchor="end" class="mn">But independence ≠ stability or peace</text>
+    </g>
+  </g>
+
+  <!-- ═══ ROW 3: COMPARISON MATRIX ═══ -->
+  <rect x="10" y="400" width="690" height="165" rx="10" fill="#fff" stroke="#e0e7ff" filter="url(#sh)" />
+  <text x="692" y="414" text-anchor="end" class="sec">ماتریس مقایسه‌ای: معیارهای کلیدی</text>
+
+  <!-- Table headers -->
+  <g class="tblh" text-anchor="middle">
+    <rect x="16" y="422" width="85" height="14" rx="3" fill="#e0e7ff" />
+    <text x="58" y="432">معیار</text>
+    <rect x="105" y="422" width="105" height="14" rx="3" fill="#e0e7ff" />
+    <text x="157" y="432">کوزوو</text>
+    <rect x="214" y="422" width="105" height="14" rx="3" fill="#e0e7ff" />
+    <text x="266" y="432">کریمه</text>
+    <rect x="323" y="422" width="105" height="14" rx="3" fill="#e0e7ff" />
+    <text x="375" y="432">تایوان</text>
+    <rect x="432" y="422" width="105" height="14" rx="3" fill="#e0e7ff" />
+    <text x="484" y="432">سومالیلند</text>
+    <rect x="541" y="422" width="105" height="14" rx="3" fill="#e0e7ff" />
+    <text x="593" y="432">جنوب سودان</text>
+  </g>
+
+  <g class="tbl" text-anchor="middle">
+    <text x="58" y="452">سرکوب قبلی</text>
+    <text x="157" y="452">✓✓✓</text><text x="266" y="452">✗</text><text x="375" y="452">نامربوط</text><text x="484"
+      y="452">✓✓</text><text x="593" y="452">✓✓✓</text>
+
+    <text x="58" y="466">مداخله نظامی</text>
+    <text x="157" y="466">ناتو</text><text x="266" y="466">روسیه ✓✓✓</text><text x="375" y="466">✗</text><text x="484"
+      y="466">✗</text><text x="593" y="466">✗</text>
+
+    <text x="58" y="480">همه‌پرسی معتبر</text>
+    <text x="157" y="480">✗ پارلمانی</text><text x="266" y="480">✗ زیر اشغال</text><text x="375" y="480">✗</text><text
+      x="484" y="480">✗ عملی</text><text x="593" y="480">✓✓✓</text>
+
+    <text x="58" y="494">رضایت دولت مادر</text>
+    <text x="157" y="494">✗</text><text x="266" y="494">✗</text><text x="375" y="494">✗</text><text x="484"
+      y="494">✗</text><text x="593" y="494">✓</text>
+
+    <text x="58" y="508">اداره بین‌المللی</text>
+    <text x="157" y="508">✓ UNMIK</text><text x="266" y="508">✗</text><text x="375" y="508">✗</text><text x="484"
+      y="508">✗</text><text x="593" y="508">✗</text>
+
+    <text x="58" y="522">شناسایی</text>
+    <text x="157" y="522">≈۱۰۰</text><text x="266" y="522">≈۱۰</text><text x="375" y="522">≈۱۳</text><text x="484"
+      y="522">۰</text><text x="593" y="522">۱۹۳</text>
+
+    <text x="58" y="536">عضویت UN</text>
+    <text x="157" y="536">✗</text><text x="266" y="536">✗</text><text x="375" y="536">✗</text><text x="484"
+      y="536">✗</text><text x="593" y="536">✓</text>
+
+    <text x="58" y="550">ثبات داخلی</text>
+    <text x="157" y="550">نسبی</text><text x="266" y="550">تحت روسیه</text><text x="375" y="550">بالا</text><text
+      x="484" y="550">نسبی</text><text x="593" y="550">ضعیف</text>
+  </g>
+
+  <g stroke="#e2e8f0" stroke-width=".5">
+    <line x1="16" y1="443" x2="692" y2="443" />
+    <line x1="16" y1="457" x2="692" y2="457" />
+    <line x1="16" y1="471" x2="692" y2="471" />
+    <line x1="16" y1="485" x2="692" y2="485" />
+    <line x1="16" y1="499" x2="692" y2="499" />
+    <line x1="16" y1="513" x2="692" y2="513" />
+    <line x1="16" y1="527" x2="692" y2="527" />
+    <line x1="16" y1="541" x2="692" y2="541" />
+  </g>
+
+  <!-- ═══ RIGHT SIDE ROW 3: KEY INSIGHTS ═══ -->
+  <rect x="708" y="400" width="471" height="165" rx="10" fill="#fff" stroke="#c4b5fd" filter="url(#sh)" />
+  <text x="1171" y="414" text-anchor="end" class="sec">درس‌های کلیدی و بینش‌ها</text>
+
+  <g transform="translate(714,422)">
+    <rect width="224" height="62" rx="5" fill="#eff6ff" stroke="#93c5fd" />
+    <g clip-path="url(#c225x90)">
+      <text x="216" y="10" text-anchor="end" class="ct">۱) جدایی یک‌طرفه تقریباً غیرممکن است</text>
+      <text x="216" y="22" text-anchor="end" class="bd">بدون رضایت دولت مادر یا فشار بین‌المللی</text>
+      <text x="216" y="32" text-anchor="end" class="bd">استثنائی، جدایی به رسمیت شناخته نمی‌شود.</text>
+      <text x="216" y="44" text-anchor="end" class="sm">حتی کوزوو هنوز عضو UN نشده.</text>
+      <text x="216" y="56" text-anchor="end" class="mn">Unilateral secession: nearly impossible</text>
+    </g>
+
+    <rect x="232" width="224" height="62" rx="5" fill="#fef2f2" stroke="#fca5a5" />
+    <g clip-path="url(#c225x90)" transform="translate(232,0)">
+      <text x="216" y="10" text-anchor="end" class="ct">۲) شناسایی = تصمیم سیاسی</text>
+      <text x="216" y="22" text-anchor="end" class="bd">شناسایی بر اساس منافع قدرت‌های بزرگ</text>
+      <text x="216" y="32" text-anchor="end" class="bd">تعیین می‌شود، نه فقط معیار حقوقی.</text>
+      <text x="216" y="44" text-anchor="end" class="sm">سومالیلند: عملکرد خوب اما شناسایی صفر.</text>
+      <text x="216" y="56" text-anchor="end" class="mn">Recognition = geopolitics, not just law</text>
+    </g>
+  </g>
+
+  <g transform="translate(714,490)">
+    <rect width="224" height="62" rx="5" fill="#fef9c3" stroke="#fde047" />
+    <g clip-path="url(#c225x90)">
+      <text x="216" y="10" text-anchor="end" class="ct">۳) رضایت دولت مادر = تنها مسیر مطمئن</text>
+      <text x="216" y="22" text-anchor="end" class="bd">جنوب سودان تنها مورد موفقِ رضایت‌محور.</text>
+      <text x="216" y="32" text-anchor="end" class="bd">اما رضایت ≠ ثبات پس از استقلال.</text>
+      <text x="216" y="44" text-anchor="end" class="sm">ساختن دولت سخت‌تر از گرفتن استقلال است.</text>
+      <text x="216" y="56" text-anchor="end" class="mn">Consent-based: only reliable path</text>
+    </g>
+
+    <rect x="232" width="224" height="62" rx="5" fill="#f0fdf4" stroke="#34d399" />
+    <g clip-path="url(#c225x90)" transform="translate(232,0)">
+      <text x="216" y="10" text-anchor="end" class="ct">۴) هر مورد یگانه (sui generis) است</text>
+      <text x="216" y="22" text-anchor="end" class="bd">هیچ الگوی عمومی وجود ندارد. بافتار تعیین‌کننده است:</text>
+      <text x="216" y="32" text-anchor="end" class="bd">تاریخ، قومیت، ژئوپلیتیک، ثروت، اعتماد.</text>
+      <text x="216" y="44" text-anchor="end" class="sm">آنچه در یک مورد کار کرد، در دیگری نه.</text>
+      <text x="216" y="56" text-anchor="end" class="mn">Every case is sui generis; context is king</text>
+    </g>
+  </g>
+
+  <!-- ═══ ROW 4: HEATMAP — GOVERNANCE MODELS BY REGION ═══ -->
+  <rect x="10" y="574" width="1169" height="258" rx="10" fill="#fff" stroke="#e0e7ff" filter="url(#sh)" />
+  <text x="1165" y="590" text-anchor="end" class="sec">هیت‌مپ: توزیع مدل‌های حکمرانی در جهان — به تفکیک قاره /
+    منطقه</text>
+
+  <!-- Legend -->
+  <g transform="translate(20,598)">
+    <text x="0" y="0" class="sm">رنگ‌بندی: تعداد کشورها در هر خانه</text>
+    <rect x="200" y="-8" width="14" height="10" rx="2" class="hm0" stroke="#cbd5e1" />
+    <text x="218" y="0" class="tn">۰-۲</text>
+    <rect x="240" y="-8" width="14" height="10" rx="2" class="hm1" stroke="#cbd5e1" />
+    <text x="258" y="0" class="tn">۳-۵</text>
+    <rect x="280" y="-8" width="14" height="10" rx="2" class="hm2" stroke="#cbd5e1" />
+    <text x="298" y="0" class="tn">۶-۱۰</text>
+    <rect x="320" y="-8" width="14" height="10" rx="2" class="hm3" stroke="#cbd5e1" />
+    <text x="338" y="0" class="tn">۱۱-۱۵</text>
+    <rect x="360" y="-8" width="14" height="10" rx="2" class="hm4" stroke="#cbd5e1" />
+    <text x="378" y="0" class="tn">۱۶-۲۰</text>
+    <rect x="400" y="-8" width="14" height="10" rx="2" class="hm5" stroke="#cbd5e1" />
+    <text x="418" y="0" class="tn">۲۱-۲۵</text>
+    <rect x="440" y="-8" width="14" height="10" rx="2" class="hm6" stroke="#cbd5e1" />
+    <text x="458" y="0" class="tn">۲۶-۳۰</text>
+    <rect x="480" y="-8" width="14" height="10" rx="2" class="hm7" stroke="#cbd5e1" />
+    <text x="498" y="0" class="tn">۳۰+</text>
+  </g>
+
+  <!-- Table headers -->
+  <g transform="translate(20,618)">
+    <rect x="0" y="0" width="170" height="18" rx="3" fill="#e0e7ff" />
+    <text x="85" y="12" text-anchor="middle" class="tblh">مدل حکمرانی</text>
+
+    <rect x="178" y="0" width="100" height="18" rx="3" fill="#e0e7ff" />
+    <text x="228" y="12" text-anchor="middle" class="tblh">اروپا</text>
+
+    <rect x="286" y="0" width="100" height="18" rx="3" fill="#e0e7ff" />
+    <text x="336" y="12" text-anchor="middle" class="tblh">آسیا</text>
+
+    <rect x="394" y="0" width="100" height="18" rx="3" fill="#e0e7ff" />
+    <text x="444" y="12" text-anchor="middle" class="tblh">آفریقا</text>
+
+    <rect x="502" y="0" width="110" height="18" rx="3" fill="#e0e7ff" />
+    <text x="557" y="12" text-anchor="middle" class="tblh">آمریکا (شمال+جنوب)</text>
+
+    <rect x="620" y="0" width="100" height="18" rx="3" fill="#e0e7ff" />
+    <text x="670" y="12" text-anchor="middle" class="tblh">اقیانوسیه</text>
+
+    <rect x="728" y="0" width="80" height="18" rx="3" fill="#e0e7ff" />
+    <text x="768" y="12" text-anchor="middle" class="tblh">مجموع</text>
+  </g>
+
+  <!-- Row 1: Unitary Centralized -->
+  <g transform="translate(20,640)">
+    <rect x="0" y="0" width="170" height="26" rx="3" fill="#f8fafc" stroke="#e2e8f0" />
+    <text x="85" y="14" text-anchor="middle" class="tbl">بسیط متمرکز</text>
+    <text x="85" y="22" text-anchor="middle" class="tn">Unitary Centralized</text>
+
+    <rect x="178" y="0" width="100" height="26" rx="3" class="hm4" stroke="#e2e8f0" />
+    <text x="228" y="16" text-anchor="middle" class="tbl">≈۲۰</text>
+
+    <rect x="286" y="0" width="100" height="26" rx="3" class="hm5" stroke="#e2e8f0" />
+    <text x="336" y="16" text-anchor="middle" class="tbl">≈۲۵</text>
+
+    <rect x="394" y="0" width="100" height="26" rx="3" class="hm7" stroke="#e2e8f0" />
+    <text x="444" y="16" text-anchor="middle" class="tbl">≈۴۰</text>
+
+    <rect x="502" y="0" width="110" height="26" rx="3" class="hm3" stroke="#e2e8f0" />
+    <text x="557" y="16" text-anchor="middle" class="tbl">≈۱۵</text>
+
+    <rect x="620" y="0" width="100" height="26" rx="3" class="hm2" stroke="#e2e8f0" />
+    <text x="670" y="16" text-anchor="middle" class="tbl">≈۸</text>
+
+    <rect x="728" y="0" width="80" height="26" rx="3" fill="#1e1b4b" stroke="#e2e8f0" />
+    <text x="768" y="16" text-anchor="middle" class="tbl wh">≈۱۰۸</text>
+  </g>
+
+  <!-- Row 2: Unitary Decentralized -->
+  <g transform="translate(20,670)">
+    <rect x="0" y="0" width="170" height="26" rx="3" fill="#f8fafc" stroke="#e2e8f0" />
+    <text x="85" y="14" text-anchor="middle" class="tbl">بسیط تمرکززدایی‌شده</text>
+    <text x="85" y="22" text-anchor="middle" class="tn">Unitary Decentralized</text>
+
+    <rect x="178" y="0" width="100" height="26" rx="3" class="hm3" stroke="#e2e8f0" />
+    <text x="228" y="16" text-anchor="middle" class="tbl">≈۱۲</text>
+
+    <rect x="286" y="0" width="100" height="26" rx="3" class="hm2" stroke="#e2e8f0" />
+    <text x="336" y="16" text-anchor="middle" class="tbl">≈۸</text>
+
+    <rect x="394" y="0" width="100" height="26" rx="3" class="hm2" stroke="#e2e8f0" />
+    <text x="444" y="16" text-anchor="middle" class="tbl">≈۸</text>
+
+    <rect x="502" y="0" width="110" height="26" rx="3" class="hm2" stroke="#e2e8f0" />
+    <text x="557" y="16" text-anchor="middle" class="tbl">≈۱۰</text>
+
+    <rect x="620" y="0" width="100" height="26" rx="3" class="hm1" stroke="#e2e8f0" />
+    <text x="670" y="16" text-anchor="middle" class="tbl">≈۴</text>
+
+    <rect x="728" y="0" width="80" height="26" rx="3" fill="#312e81" stroke="#e2e8f0" />
+    <text x="768" y="16" text-anchor="middle" class="tbl wh">≈۴۲</text>
+  </g>
+
+  <!-- Row 3: Regional / Quasi-Federal -->
+  <g transform="translate(20,700)">
+    <rect x="0" y="0" width="170" height="26" rx="3" fill="#f8fafc" stroke="#e2e8f0" />
+    <text x="85" y="14" text-anchor="middle" class="tbl">منطقه‌ای / شبه‌فدرال</text>
+    <text x="85" y="22" text-anchor="middle" class="tn">Regional / Quasi-Federal</text>
+
+    <rect x="178" y="0" width="100" height="26" rx="3" class="hm1" stroke="#e2e8f0" />
+    <text x="228" y="16" text-anchor="middle" class="tbl">≈۴</text>
+
+    <rect x="286" y="0" width="100" height="26" rx="3" class="hm0" stroke="#e2e8f0" />
+    <text x="336" y="16" text-anchor="middle" class="tbl">≈۲</text>
+
+    <rect x="394" y="0" width="100" height="26" rx="3" class="hm0" stroke="#e2e8f0" />
+    <text x="444" y="16" text-anchor="middle" class="tbl">≈۱</text>
+
+    <rect x="502" y="0" width="110" height="26" rx="3" class="hm0" stroke="#e2e8f0" />
+    <text x="557" y="16" text-anchor="middle" class="tbl">≈۱</text>
+
+    <rect x="620" y="0" width="100" height="26" rx="3" class="hm0" stroke="#e2e8f0" />
+    <text x="670" y="16" text-anchor="middle" class="tbl">≈۰</text>
+
+    <rect x="728" y="0" width="80" height="26" rx="3" fill="#4c1d95" stroke="#e2e8f0" />
+    <text x="768" y="16" text-anchor="middle" class="tbl wh">≈۸</text>
+  </g>
+
+  <!-- Row 4: Federal Symmetric -->
+  <g transform="translate(20,730)">
+    <rect x="0" y="0" width="170" height="26" rx="3" fill="#f8fafc" stroke="#e2e8f0" />
+    <text x="85" y="14" text-anchor="middle" class="tbl">فدرال متقارن</text>
+    <text x="85" y="22" text-anchor="middle" class="tn">Federal Symmetric</text>
+
+    <rect x="178" y="0" width="100" height="26" rx="3" class="hm1" stroke="#e2e8f0" />
+    <text x="228" y="16" text-anchor="middle" class="tbl">≈۴</text>
+
+    <rect x="286" y="0" width="100" height="26" rx="3" class="hm1" stroke="#e2e8f0" />
+    <text x="336" y="16" text-anchor="middle" class="tbl">≈۳</text>
+
+    <rect x="394" y="0" width="100" height="26" rx="3" class="hm0" stroke="#e2e8f0" />
+    <text x="444" y="16" text-anchor="middle" class="tbl">≈۲</text>
+
+    <rect x="502" y="0" width="110" height="26" rx="3" class="hm1" stroke="#e2e8f0" />
+    <text x="557" y="16" text-anchor="middle" class="tbl">≈۵</text>
+
+    <rect x="620" y="0" width="100" height="26" rx="3" class="hm1" stroke="#e2e8f0" />
+    <text x="670" y="16" text-anchor="middle" class="tbl">≈۳</text>
+
+    <rect x="728" y="0" width="80" height="26" rx="3" fill="#6d28d9" stroke="#e2e8f0" />
+    <text x="768" y="16" text-anchor="middle" class="tbl wh">≈۱۷</text>
+  </g>
+
+  <!-- Row 5: Federal Asymmetric -->
+  <g transform="translate(20,760)">
+    <rect x="0" y="0" width="170" height="26" rx="3" fill="#f8fafc" stroke="#e2e8f0" />
+    <text x="85" y="14" text-anchor="middle" class="tbl">فدرال نامتقارن</text>
+    <text x="85" y="22" text-anchor="middle" class="tn">Federal Asymmetric</text>
+
+    <rect x="178" y="0" width="100" height="26" rx="3" class="hm1" stroke="#e2e8f0" />
+    <text x="228" y="16" text-anchor="middle" class="tbl">≈۳</text>
+
+    <rect x="286" y="0" width="100" height="26" rx="3" class="hm1" stroke="#e2e8f0" />
+    <text x="336" y="16" text-anchor="middle" class="tbl">≈۴</text>
+
+    <rect x="394" y="0" width="100" height="26" rx="3" class="hm1" stroke="#e2e8f0" />
+    <text x="444" y="16" text-anchor="middle" class="tbl">≈۳</text>
+
+    <rect x="502" y="0" width="110" height="26" rx="3" class="hm0" stroke="#e2e8f0" />
+    <text x="557" y="16" text-anchor="middle" class="tbl">≈۲</text>
+
+    <rect x="620" y="0" width="100" height="26" rx="3" class="hm0" stroke="#e2e8f0" />
+    <text x="670" y="16" text-anchor="middle" class="tbl">≈۰</text>
+
+    <rect x="728" y="0" width="80" height="26" rx="3" fill="#7c3aed" stroke="#e2e8f0" />
+    <text x="768" y="16" text-anchor="middle" class="tbl wh">≈۱۲</text>
+  </g>
+
+  <!-- Row 6: Special Autonomous -->
+  <g transform="translate(20,790)">
+    <rect x="0" y="0" width="170" height="26" rx="3" fill="#f8fafc" stroke="#e2e8f0" />
+    <text x="85" y="14" text-anchor="middle" class="tbl">واحدهای خودمختار ویژه</text>
+    <text x="85" y="22" text-anchor="middle" class="tn">Special Autonomous Units</text>
+
+    <rect x="178" y="0" width="100" height="26" rx="3" class="hm2" stroke="#e2e8f0" />
+    <text x="228" y="16" text-anchor="middle" class="tbl">≈۶</text>
+
+    <rect x="286" y="0" width="100" height="26" rx="3" class="hm1" stroke="#e2e8f0" />
+    <text x="336" y="16" text-anchor="middle" class="tbl">≈۴</text>
+
+    <rect x="394" y="0" width="100" height="26" rx="3" class="hm0" stroke="#e2e8f0" />
+    <text x="444" y="16" text-anchor="middle" class="tbl">≈۲</text>
+
+    <rect x="502" y="0" width="110" height="26" rx="3" class="hm1" stroke="#e2e8f0" />
+    <text x="557" y="16" text-anchor="middle" class="tbl">≈۳</text>
+
+    <rect x="620" y="0" width="100" height="26" rx="3" class="hm0" stroke="#e2e8f0" />
+    <text x="670" y="16" text-anchor="middle" class="tbl">≈۱</text>
+
+    <rect x="728" y="0" width="80" height="26" rx="3" fill="#a855f7" stroke="#e2e8f0" />
+    <text x="768" y="16" text-anchor="middle" class="tbl wh">≈۱۶</text>
+  </g>
+
+  <!-- Heatmap analysis box -->
+  <g transform="translate(838,618)">
+    <rect width="330" height="200" rx="8" fill="#f5f3ff" stroke="#c4b5fd" />
+
+    <text x="322" y="14" text-anchor="end" class="ct">تحلیل هیت‌مپ</text>
+
+    <text x="322" y="30" text-anchor="end" class="bd">• آفریقا بیشترین تعداد کشور بسیط متمرکز را دارد (≈۴۰)</text>
+    <text x="322" y="42" text-anchor="end" class="bd">• اروپا بیشترین تنوع مدل‌ها را نشان می‌دهد</text>
+    <text x="322" y="54" text-anchor="end" class="bd">• آمریکا (شمال+جنوب) بیشترین فدرالیسم متقارن (≈۵)</text>
+    <text x="322" y="66" text-anchor="end" class="bd">• آسیا بیشترین فدرالیسم نامتقارن (≈۴)</text>
+    <text x="322" y="78" text-anchor="end" class="bd">• اقیانوسیه عمدتاً بسیط یا فدرال ساده</text>
+
+    <text x="322" y="96" text-anchor="end" class="sm">روند جهانی: حرکت تدریجی از تمرکز</text>
+    <text x="322" y="108" text-anchor="end" class="sm">به سمت تمرکززدایی، اما نه لزوماً فدرالیسم.</text>
+
+    <text x="322" y="124" text-anchor="end" class="sm">مدل غالب جهان: هنوز بسیط متمرکز (≈۱۰۸ از ≈۱۹۳)</text>
+    <text x="322" y="136" text-anchor="end" class="sm">فدرالیسم: ≈۲۹ کشور (≈۱۵٪)</text>
+    <text x="322" y="148" text-anchor="end" class="sm">خودمختاری ویژه: ≈۱۶ کشور دارای واحدهای خاص</text>
+
+    <text x="322" y="166" text-anchor="end" class="tn">نکته: دسته‌بندی تقریبی است؛ برخی کشورها</text>
+    <text x="322" y="176" text-anchor="end" class="tn">بین دو مدل قرار دارند (مثل بریتانیا، اسپانیا).</text>
+
+    <text x="322" y="192" text-anchor="end" class="mn">Dominant model: unitary centralized (56%)</text>
+  </g>
+
+  <!-- ═══ FOOTER ═══ -->
+  <text x="1165" y="838" text-anchor="end" class="tn">International Law &amp; Secession Atlas — Comparative Analysis —
+    اعداد تقریبی بر اساس تحلیل‌های Forum of Federations, CIA World Factbook, UN data — ویرایش‌پذیر</text>
+
+</svg>

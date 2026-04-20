@@ -1,0 +1,684 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="594mm" height="841mm" viewBox="0 0 594 841">
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2=".6" y2="1">
+            <stop offset="0%" stop-color="#f0f4ff" />
+            <stop offset="50%" stop-color="#f5f3ff" />
+            <stop offset="100%" stop-color="#fef9f0" />
+        </linearGradient>
+        <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#312e81" />
+            <stop offset="50%" stop-color="#4c1d95" />
+            <stop offset="100%" stop-color="#7c3aed" />
+        </linearGradient>
+        <linearGradient id="nodeG" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#4c1d95" />
+            <stop offset="100%" stop-color="#6d28d9" />
+        </linearGradient>
+        <linearGradient id="snakeG" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#991b1b" />
+            <stop offset="60%" stop-color="#dc2626" />
+            <stop offset="100%" stop-color="#ef4444" />
+        </linearGradient>
+        <filter id="sh" x="-15%" y="-15%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#475569" flood-opacity=".22" />
+        </filter>
+        <style>
+            .t1 {
+                font: 700 13px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #fff
+            }
+
+            .t2 {
+                font: 500 5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #e0e7ff
+            }
+
+            .sec {
+                font: 700 7.2px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #1e1b4b
+            }
+
+            .map {
+                font: 700 6.8px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #1e1b4b
+            }
+
+            .ct {
+                font: 700 6.3px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #1e1b4b
+            }
+
+            .bd {
+                font: 500 4.6px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #334155
+            }
+
+            .sm {
+                font: 500 4.05px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #475569
+            }
+
+            .tn {
+                font: 500 3.7px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #64748b
+            }
+
+            .lb {
+                font: 700 4.2px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #1e1b4b
+            }
+
+            .mn {
+                font: 600 2.6px ui-monospace, monospace;
+                fill: #475569
+            }
+
+            .wh {
+                fill: #fff
+            }
+
+            .tbl {
+                font: 600 5.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #334155
+            }
+
+            .tblh {
+                font: 700 6px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #1e1b4b
+            }
+        </style>
+        <!-- clip paths for cards -->
+        <clipPath id="c178x54">
+            <rect width="178" height="54" rx="5" />
+        </clipPath>
+        <clipPath id="c178x56">
+            <rect width="178" height="56" rx="5" />
+        </clipPath>
+        <clipPath id="c178x72">
+            <rect width="178" height="72" rx="5" />
+        </clipPath>
+        <clipPath id="c86x56">
+            <rect width="86" height="56" rx="5" />
+        </clipPath>
+        <clipPath id="c86x58">
+            <rect width="86" height="58" rx="5" />
+        </clipPath>
+        <!-- icons -->
+        <g id="il">
+            <circle cx="7" cy="5" r="2" fill="#fbbf24" />
+            <path d="M7 7.2C5 9,4 12,4 14H10C10 12,9 9,7 7.2Z" fill="#f59e0b" />
+            <rect x="6.4" y="1.2" width="1.2" height="3.6" fill="#fde68a" />
+        </g>
+        <g id="iv">
+            <rect x="2" y="4" width="10" height="8" rx="1" fill="#e0e7ff" stroke="#6366f1" stroke-width=".7" />
+            <path d="M4.4 8L5.8 9.3L8.9 6.2" fill="none" stroke="#4f46e5" stroke-width="1" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <rect x="5" y="1.5" width="4" height="3" rx=".6" fill="#818cf8" />
+        </g>
+        <g id="ib">
+            <path d="M7 2.4L9.5 2.4L8.2 4.9Z" fill="#64748b" />
+            <rect x="7.6" y="2.4" width="1.1" height="8" rx=".5" fill="#475569" />
+            <rect x="3.5" y="10.6" width="9.4" height="1.4" rx=".6" fill="#334155" />
+            <line x1="2.3" y1="4.4" x2="14.1" y2="4.4" stroke="#475569" stroke-width="1" />
+            <path d="M3.5 4.4L1.5 7.5H5.4Z" fill="#94a3b8" />
+            <path d="M12.8 4.4L10.8 7.5H14.8Z" fill="#94a3b8" />
+        </g>
+        <g id="is">
+            <rect x="2" y="4" width="11" height="8.2" rx=".8" fill="#fecdd3" stroke="#e11d48" stroke-width=".7" />
+            <rect x="3.4" y="2.4" width="8.2" height="2" fill="#fb7185" />
+            <rect x="4.2" y="6.6" width="1.8" height="5.6" fill="#fda4af" />
+            <rect x="6.8" y="6.6" width="1.8" height="5.6" fill="#fda4af" />
+            <rect x="9.4" y="6.6" width="1.8" height="5.6" fill="#fda4af" />
+        </g>
+        <g id="im">
+            <path d="M2.3 5.4H12.9L11.6 10.5H3.6Z" fill="#fde68a" stroke="#d97706" stroke-width=".7" />
+            <path d="M3.6 5.4C3.6 3.1,11.6 3.1,11.6 5.4" fill="#fbbf24" />
+            <circle cx="5.4" cy="12" r=".85" fill="#78350f" />
+            <circle cx="9.9" cy="12" r=".85" fill="#78350f" />
+        </g>
+        <g id="ip">
+            <path d="M2.5 3.2L5.7 2L9.5 3.3L12.6 2.1V10.8L9.5 12L5.7 10.9L2.5 12Z" fill="#a5f3fc" stroke="#0891b2"
+                stroke-width=".7" />
+            <line x1="5.7" y1="2" x2="5.7" y2="10.9" stroke="#0e7490" stroke-width=".45" />
+            <line x1="9.5" y1="3.3" x2="9.5" y2="12" stroke="#0e7490" stroke-width=".45" />
+        </g>
+    </defs>
+
+    <rect width="594" height="841" fill="url(#bg)" />
+
+    <!-- HEADER -->
+    <rect x="10" y="10" width="574" height="42" rx="10" fill="url(#hdr)" filter="url(#sh)" />
+    <text x="572" y="26" text-anchor="end" class="t1">اطلس پارادوکس‌های سیاسی-اجتماعی</text>
+    <text x="572" y="37" text-anchor="end" class="t2">نمای کلی • دسته‌بندی • منطق نهادی • نمونه‌ها • روایت‌های تصویری —
+        Political-Social Paradoxes Atlas</text>
+    <text x="572" y="46" text-anchor="end" class="t2">پوپر، میل، توکویل، برلین، راولز، آرنت، روسو — از رواداری و آزادی
+        تا دموکراسی، برابری، فدرالیسم و بازار</text>
+
+    <!-- INTRO -->
+    <rect x="10" y="58" width="574" height="27" rx="7" fill="#fff" stroke="#e0e7ff" filter="url(#sh)" />
+    <text x="572" y="67" text-anchor="end" class="sec">فرمول مشترک بیشتر پارادوکس‌ها</text>
+    <text x="572" y="74.5" text-anchor="end" class="bd">۱) یک اصل خوب داریم، ۲) آن را مطلق یا بی‌قید اجرا می‌کنیم، ۳)
+        اصل بر ضد خود عمل می‌کند یا با خیرِ رقیب در تنش می‌افتد، ۴) راه‌حل: طراحی نهادی و موازنه.</text>
+    <text x="572" y="80.5" text-anchor="end" class="tn">مثال: رواداری مطلق ← نابودی رواداری | آزادی مطلق ← سلطه |
+        اکثریتِ بی‌مهار ← استبداد | بازارِ بی‌تنظیم ← انحصار</text>
+
+    <!-- LEGEND -->
+    <g transform="translate(12,90)">
+        <rect x="0" y="0" width="7" height="7" rx="2" fill="#dbeafe" stroke="#3b82f6" /><text x="11" y="5.2"
+            class="sm">آزادی</text>
+        <rect x="44" y="0" width="7" height="7" rx="2" fill="#ede9fe" stroke="#8b5cf6" /><text x="55" y="5.2"
+            class="sm">دموکراسی</text>
+        <rect x="102" y="0" width="7" height="7" rx="2" fill="#d1fae5" stroke="#10b981" /><text x="113" y="5.2"
+            class="sm">عدالت و برابری</text>
+        <rect x="178" y="0" width="7" height="7" rx="2" fill="#fae8ff" stroke="#d946ef" /><text x="189" y="5.2"
+            class="sm">هویت و کثرت</text>
+        <rect x="253" y="0" width="7" height="7" rx="2" fill="#ffe4e6" stroke="#f43f5e" /><text x="264" y="5.2"
+            class="sm">دولت و نهادها</text>
+        <rect x="330" y="0" width="7" height="7" rx="2" fill="#fef3c7" stroke="#d97706" /><text x="341" y="5.2"
+            class="sm">اقتصاد سیاسی</text>
+        <rect x="406" y="0" width="7" height="7" rx="2" fill="#fce7f3" stroke="#db2777" /><text x="417" y="5.2"
+            class="sm">صلح و گذار</text>
+        <rect x="472" y="0" width="7" height="7" rx="2" fill="#ccfbf1" stroke="#14b8a6" /><text x="483" y="5.2"
+            class="sm">سرزمین و فدرالیسم</text>
+    </g>
+
+    <!-- OVERVIEW MAP -->
+    <rect x="10" y="104" width="574" height="128" rx="8" fill="#fff" stroke="#e0e7ff" filter="url(#sh)" />
+    <text x="572" y="114" text-anchor="end" class="sec">نمای کلی: نقشهٔ بزرگِ پارادوکس‌ها</text>
+
+    <!-- central node -->
+    <rect x="222" y="122" width="150" height="20" rx="7" fill="url(#nodeG)" filter="url(#sh)" />
+    <text x="342" y="134.5" text-anchor="end" class="map wh">پارادوکس‌های سیاسی-اجتماعی</text>
+
+    <!-- top row nodes -->
+    <rect x="20" y="154" width="126" height="28" rx="7" fill="#dbeafe" stroke="#3b82f6" filter="url(#sh)" />
+    <text x="128" y="165" text-anchor="end" class="map">آزادی • رواداری</text>
+    <text x="128" y="174" text-anchor="end" class="map">بیان • امنیت</text>
+
+    <rect x="156" y="154" width="126" height="28" rx="7" fill="#ede9fe" stroke="#8b5cf6" filter="url(#sh)" />
+    <text x="264" y="165" text-anchor="end" class="map">دموکراسی • اکثریت</text>
+    <text x="264" y="174" text-anchor="end" class="map">نمایندگی • پوپولیسم</text>
+
+    <rect x="312" y="154" width="126" height="28" rx="7" fill="#d1fae5" stroke="#10b981" filter="url(#sh)" />
+    <text x="430" y="165" text-anchor="end" class="map">برابری • عدالت</text>
+    <text x="430" y="174" text-anchor="end" class="map">قانون • حقوق</text>
+
+    <rect x="448" y="154" width="126" height="28" rx="7" fill="#fae8ff" stroke="#d946ef" filter="url(#sh)" />
+    <text x="566" y="165" text-anchor="end" class="map">هویت • کثرت‌گرایی</text>
+    <text x="566" y="174" text-anchor="end" class="map">سکولاریسم • فرهنگ</text>
+
+    <!-- second row nodes -->
+    <rect x="48" y="196" width="112" height="24" rx="7" fill="#ffe4e6" stroke="#f43f5e" filter="url(#sh)" />
+    <text x="152" y="206" text-anchor="end" class="map">اقتدار • مشروعیت</text>
+    <text x="152" y="214" text-anchor="end" class="map">شفافیت • قضا</text>
+
+    <rect x="174" y="196" width="112" height="24" rx="7" fill="#fef3c7" stroke="#d97706" filter="url(#sh)" />
+    <text x="278" y="206" text-anchor="end" class="map">بازار • مالکیت</text>
+    <text x="278" y="214" text-anchor="end" class="map">رفاه • انحصار</text>
+
+    <rect x="300" y="196" width="112" height="24" rx="7" fill="#fce7f3" stroke="#db2777" filter="url(#sh)" />
+    <text x="404" y="206" text-anchor="end" class="map">صلح • انقلاب</text>
+    <text x="404" y="214" text-anchor="end" class="map">اصلاحات • گذار</text>
+
+    <rect x="426" y="196" width="138" height="24" rx="7" fill="#ccfbf1" stroke="#14b8a6" filter="url(#sh)" />
+    <text x="556" y="206" text-anchor="end" class="map">فدرالیسم • خودمختاری</text>
+    <text x="556" y="214" text-anchor="end" class="map">مرزها • وحدت / واگرایی</text>
+
+    <!-- connection lines drawn BEHIND nodes using opacity -->
+    <g opacity=".35" stroke="#6366f1" stroke-width="1.1" fill="none">
+        <line x1="297" y1="142" x2="83" y2="154" />
+        <line x1="297" y1="142" x2="219" y2="154" />
+        <line x1="297" y1="142" x2="375" y2="154" />
+        <line x1="297" y1="142" x2="511" y2="154" />
+        <line x1="297" y1="142" x2="104" y2="196" />
+        <line x1="297" y1="142" x2="230" y2="196" />
+        <line x1="297" y1="142" x2="356" y2="196" />
+        <line x1="297" y1="142" x2="495" y2="196" />
+    </g>
+
+    <text x="572" y="228" text-anchor="end" class="bd">منطق مشترک: هرجا خیرِ عمومی را بدون قید پیش ببریم، ممکن است یا بر
+        ضد خود عمل کند یا با خیرِ دیگری در تعارض ساختاری بیفتد.</text>
+
+    <!-- ════════ LEFT COLUMN ════════ -->
+    <rect x="10" y="240" width="186" height="410" rx="8" fill="#fff" stroke="#bfdbfe" filter="url(#sh)" />
+    <use href="#il" x="14" y="244" />
+    <text x="188" y="252" text-anchor="end" class="sec">۱) آزادی و جامعه باز</text>
+
+    <!-- Card: Tolerance -->
+    <g transform="translate(14,260)">
+        <rect width="178" height="54" rx="5" fill="#eff6ff" stroke="#93c5fd" />
+        <g clip-path="url(#c178x54)">
+            <text x="171" y="8" text-anchor="end" class="ct">پارادوکس رواداری (پوپر)</text>
+            <text x="171" y="16" text-anchor="end" class="bd">اگر نسبت به نابودکنندگان رواداری هم روادار باشیم،</text>
+            <text x="171" y="22" text-anchor="end" class="bd">آنها می‌توانند رواداری را از بین ببرند.</text>
+            <text x="171" y="30" text-anchor="end" class="sm">خطر: استفاده از آزادی برای برچیدن آزادی.</text>
+            <text x="171" y="37" text-anchor="end" class="sm">راه‌حل: دفاع از قانون اساسی، منع تحریک خشونت.</text>
+            <text x="171" y="45" text-anchor="end" class="tn">روایت: درِ باز اگر برای آتش‌افروز هم باز بماند، خانه
+                می‌سوزد.</text>
+            <text x="171" y="51" text-anchor="end" class="mn">Tolerance without limit → end of tolerance</text>
+        </g>
+    </g>
+
+    <!-- Card: Liberty -->
+    <g transform="translate(14,318)">
+        <rect width="178" height="54" rx="5" fill="#eff6ff" stroke="#93c5fd" />
+        <g clip-path="url(#c178x54)">
+            <text x="171" y="8" text-anchor="end" class="ct">پارادوکس آزادی (برلین)</text>
+            <text x="171" y="16" text-anchor="end" class="bd">آزادیِ مطلق می‌تواند آزادیِ واقعیِ ضعیف‌ترها</text>
+            <text x="171" y="22" text-anchor="end" class="bd">را از بین ببرد.</text>
+            <text x="171" y="30" text-anchor="end" class="sm">خطر: ارعاب، استثمار، خشونت خصوصی.</text>
+            <text x="171" y="37" text-anchor="end" class="sm">راه‌حل: حقوق بنیادین، قانون، ضدسلطه.</text>
+            <text x="171" y="45" text-anchor="end" class="tn">روایت: مسابقه بدون داور فقط به نفع قوی‌ترین است.</text>
+            <text x="171" y="51" text-anchor="end" class="mn">Unlimited liberty → domination of the weak</text>
+        </g>
+    </g>
+
+    <!-- Card: Free Speech -->
+    <g transform="translate(14,376)">
+        <rect width="178" height="54" rx="5" fill="#eff6ff" stroke="#93c5fd" />
+        <g clip-path="url(#c178x54)">
+            <text x="171" y="8" text-anchor="end" class="ct">پارادوکس آزادی بیان (میل)</text>
+            <text x="171" y="16" text-anchor="end" class="bd">بیان بی‌حد با نفرت‌پراکنی و تهدید،</text>
+            <text x="171" y="22" text-anchor="end" class="bd">میدان گفت‌وگوی آزاد را ویران می‌کند.</text>
+            <text x="171" y="30" text-anchor="end" class="sm">خطر: خاموشی قربانیان یا سانسور گسترده.</text>
+            <text x="171" y="37" text-anchor="end" class="sm">راه‌حل: معیار دقیق برای تهدید و افترا.</text>
+            <text x="171" y="45" text-anchor="end" class="tn">روایت: بلندگوی دائمیِ چند نفر، صدای بقیه را صفر
+                می‌کند.</text>
+            <text x="171" y="51" text-anchor="end" class="mn">Speech absolutism erodes speech conditions</text>
+        </g>
+    </g>
+
+    <!-- Card: Security -->
+    <g transform="translate(14,434)">
+        <rect width="178" height="54" rx="5" fill="#eff6ff" stroke="#93c5fd" />
+        <g clip-path="url(#c178x54)">
+            <text x="171" y="8" text-anchor="end" class="ct">پارادوکس امنیت و آزادی</text>
+            <text x="171" y="16" text-anchor="end" class="bd">امنیت بیشتر = کنترل بیشتر =</text>
+            <text x="171" y="22" text-anchor="end" class="bd">آزادی و حریم خصوصی کمتر.</text>
+            <text x="171" y="30" text-anchor="end" class="sm">خطر: جامعه مراقبتی، خودسانسوری.</text>
+            <text x="171" y="37" text-anchor="end" class="sm">راه‌حل: تناسب، مجوز قضایی، زمان‌مندی.</text>
+            <text x="171" y="45" text-anchor="end" class="tn">روایت: قفل خوب است؛ دیوار شیشه‌ای یعنی حریم صفر.</text>
+            <text x="171" y="51" text-anchor="end" class="mn">Security ↑ often privacy ↓</text>
+        </g>
+    </g>
+
+    <!-- Democracy sub-header -->
+    <g transform="translate(14,492)">
+        <rect width="178" height="14" rx="5" fill="#ede9fe" stroke="#8b5cf6" />
+        <use href="#iv" x="3" y="0" />
+        <text x="171" y="10" text-anchor="end" class="ct">دموکراسی و نمایندگی</text>
+    </g>
+
+    <!-- Card: Democracy + Majority -->
+    <g transform="translate(14,510)">
+        <rect width="86" height="58" rx="5" fill="#f5f3ff" stroke="#a78bfa" />
+        <g clip-path="url(#c86x58)">
+            <text x="80" y="8" text-anchor="end" class="ct">دموکراسی</text>
+            <text x="80" y="16" text-anchor="end" class="sm">مردم می‌توانند به کسی</text>
+            <text x="80" y="22" text-anchor="end" class="sm">رأی دهند که بعداً</text>
+            <text x="80" y="28" text-anchor="end" class="sm">قواعد رقابت را</text>
+            <text x="80" y="34" text-anchor="end" class="sm">تضعیف کند.</text>
+            <text x="80" y="43" text-anchor="end" class="tn">راه‌حل: حقوق بنیادین،</text>
+            <text x="80" y="49" text-anchor="end" class="tn">تفکیک قوا، رسانه آزاد</text>
+        </g>
+
+        <rect x="92" width="86" height="58" rx="5" fill="#f5f3ff" stroke="#a78bfa" />
+        <g clip-path="url(#c86x58)" transform="translate(92,0)">
+            <text x="80" y="8" text-anchor="end" class="ct">اکثریت (توکویل/میل)</text>
+            <text x="80" y="16" text-anchor="end" class="sm">اکثریتِ بی‌مهار</text>
+            <text x="80" y="22" text-anchor="end" class="sm">می‌تواند حقوق اقلیت</text>
+            <text x="80" y="28" text-anchor="end" class="sm">را نابود کند.</text>
+            <text x="80" y="43" text-anchor="end" class="tn">راه‌حل: منشور حقوق،</text>
+            <text x="80" y="49" text-anchor="end" class="tn">دادگاه، فدرالیسم</text>
+        </g>
+    </g>
+
+    <!-- Card: Representation + Technocracy -->
+    <g transform="translate(14,572)">
+        <rect width="86" height="58" rx="5" fill="#f5f3ff" stroke="#a78bfa" />
+        <g clip-path="url(#c86x58)">
+            <text x="80" y="8" text-anchor="end" class="ct">نمایندگی</text>
+            <text x="80" y="16" text-anchor="end" class="sm">نماینده باید هم صدای</text>
+            <text x="80" y="22" text-anchor="end" class="sm">مردم و هم صاحب</text>
+            <text x="80" y="28" text-anchor="end" class="sm">تشخیص مستقل باشد.</text>
+            <text x="80" y="43" text-anchor="end" class="tn">راه‌حل: احزاب، شفافیت،</text>
+            <text x="80" y="49" text-anchor="end" class="tn">انتخابات دوره‌ای</text>
+        </g>
+
+        <rect x="92" width="86" height="58" rx="5" fill="#f5f3ff" stroke="#a78bfa" />
+        <g clip-path="url(#c86x58)" transform="translate(92,0)">
+            <text x="80" y="8" text-anchor="end" class="ct">تکنوکراسی</text>
+            <text x="80" y="16" text-anchor="end" class="sm">سیاست به تخصص نیاز</text>
+            <text x="80" y="22" text-anchor="end" class="sm">دارد ولی مشروعیت</text>
+            <text x="80" y="28" text-anchor="end" class="sm">باید مردمی بماند.</text>
+            <text x="80" y="43" text-anchor="end" class="tn">راه‌حل: نهاد تخصصیِ</text>
+            <text x="80" y="49" text-anchor="end" class="tn">شفاف و پاسخ‌گو</text>
+        </g>
+    </g>
+
+    <!-- Card: Populism -->
+    <g transform="translate(14,634)">
+        <rect width="178" height="14" rx="5" fill="#f5f3ff" stroke="#a78bfa" />
+        <g clip-path="url(#c178x54)">
+            <text x="171" y="10" text-anchor="end" class="tn">پوپولیسم: به نام مردم می‌آید، اما نهادهای حافظ مردم را
+                تضعیف می‌کند. ← راه‌حل: نهادسازی، تفکیک قوا، سواد رسانه‌ای.</text>
+        </g>
+    </g>
+
+    <!-- ════════ CENTER COLUMN ════════ -->
+    <rect x="204" y="240" width="186" height="410" rx="8" fill="#fff" stroke="#a7f3d0" filter="url(#sh)" />
+    <use href="#ib" x="208" y="244" />
+    <text x="382" y="252" text-anchor="end" class="sec">۲) عدالت، برابری، هویت و کثرت</text>
+
+    <!-- Card: Equality -->
+    <g transform="translate(208,260)">
+        <rect width="178" height="56" rx="5" fill="#ecfdf5" stroke="#6ee7b7" />
+        <g clip-path="url(#c178x56)">
+            <text x="171" y="8" text-anchor="end" class="ct">پارادوکس برابری (راولز)</text>
+            <text x="171" y="16" text-anchor="end" class="bd">برابری صوری نابرابری واقعی را حفظ می‌کند؛</text>
+            <text x="171" y="22" text-anchor="end" class="bd">جبران فعال خودْ نامتقارنی می‌آورد.</text>
+            <text x="171" y="30" text-anchor="end" class="sm">خطر: تثبیت امتیازها یا مداخلهٔ بی‌مشروعیت.</text>
+            <text x="171" y="37" text-anchor="end" class="sm">راه‌حل: بازتوزیع هدفمند، خدمات عمومی.</text>
+            <text x="171" y="45" text-anchor="end" class="tn">روایت: خط شروع یکسان، وقتی بعضی‌ها سال‌ها جلوترند.</text>
+            <text x="171" y="52" text-anchor="end" class="mn">Formal vs substantive equality</text>
+        </g>
+    </g>
+
+    <!-- Card: Law & Justice -->
+    <g transform="translate(208,320)">
+        <rect width="178" height="56" rx="5" fill="#ecfdf5" stroke="#6ee7b7" />
+        <g clip-path="url(#c178x56)">
+            <text x="171" y="8" text-anchor="end" class="ct">پارادوکس قانون و عدالت</text>
+            <text x="171" y="16" text-anchor="end" class="bd">اجرای سخت قانون گاه ناعادلانه است؛</text>
+            <text x="171" y="22" text-anchor="end" class="bd">عدولِ زیاد هم خودسری می‌آورد.</text>
+            <text x="171" y="30" text-anchor="end" class="sm">خطر: بی‌رحمی حقوقی یا بی‌ثباتی.</text>
+            <text x="171" y="37" text-anchor="end" class="sm">راه‌حل: تفسیر قضایی، انصاف، رویه.</text>
+            <text x="171" y="45" text-anchor="end" class="tn">روایت: خط‌کش مفید است، اما پیچیدگی انسانی را
+                نمی‌سنجد.</text>
+            <text x="171" y="52" text-anchor="end" class="mn">Rule of law vs equity / fairness</text>
+        </g>
+    </g>
+
+    <!-- Card: Pluralism -->
+    <g transform="translate(208,380)">
+        <rect width="178" height="56" rx="5" fill="#fdf4ff" stroke="#e879f9" />
+        <g clip-path="url(#c178x56)">
+            <text x="171" y="8" text-anchor="end" class="ct">پارادوکس کثرت‌گرایی</text>
+            <text x="171" y="16" text-anchor="end" class="bd">تنوع نیازمند حداقلی از ارزش‌های مشترک است؛</text>
+            <text x="171" y="22" text-anchor="end" class="bd">بدون آن، جامعه فرومی‌پاشد.</text>
+            <text x="171" y="30" text-anchor="end" class="sm">خطر: تجزیه هنجاری یا همسان‌سازی اجباری.</text>
+            <text x="171" y="37" text-anchor="end" class="sm">راه‌حل: قانون اساسی مشترک + تنوع.</text>
+            <text x="171" y="45" text-anchor="end" class="tn">روایت: ارکستر بدون کوکِ مشترک فقط سروصداست.</text>
+            <text x="171" y="52" text-anchor="end" class="mn">Pluralism needs a common floor</text>
+        </g>
+    </g>
+
+    <!-- Card: Identity -->
+    <g transform="translate(208,440)">
+        <rect width="178" height="56" rx="5" fill="#fdf4ff" stroke="#e879f9" />
+        <g clip-path="url(#c178x56)">
+            <text x="171" y="8" text-anchor="end" class="ct">پارادوکس هویت و شهروندی</text>
+            <text x="171" y="16" text-anchor="end" class="bd">هویت مشترک برای انسجام لازم است؛ اما</text>
+            <text x="171" y="22" text-anchor="end" class="bd">هرچه بسته‌تر تعریف شود، افرادِ بیشتری排除 می‌شوند.</text>
+            <text x="171" y="30" text-anchor="end" class="sm">خطر: ملی‌گرایی تنگ یا ضعف انسجام مدنی.</text>
+            <text x="171" y="37" text-anchor="end" class="sm">راه‌حل: شهروندی قانون‌اساسی + نمادهای فراگیر.</text>
+            <text x="171" y="45" text-anchor="end" class="tn">روایت: «ما»یِ خیلی تنگ، از بیرون‌کردن تغذیه می‌کند.</text>
+            <text x="171" y="52" text-anchor="end" class="mn">Shared identity vs exclusion</text>
+        </g>
+    </g>
+
+    <!-- Mini cards: Multiculturalism + Secularism -->
+    <g transform="translate(208,500)">
+        <rect width="86" height="56" rx="5" fill="#fdf4ff" stroke="#e879f9" />
+        <g clip-path="url(#c86x56)">
+            <text x="80" y="8" text-anchor="end" class="ct">چندفرهنگ‌گرایی</text>
+            <text x="80" y="16" text-anchor="end" class="sm">احترام به فرهنگ‌ها ممکن</text>
+            <text x="80" y="22" text-anchor="end" class="sm">است تحمل تبعیضِ</text>
+            <text x="80" y="28" text-anchor="end" class="sm">درون‌گروهی بالا ببرد.</text>
+            <text x="80" y="43" text-anchor="end" class="tn">راه‌حل: تقدم حقوق</text>
+            <text x="80" y="49" text-anchor="end" class="tn">بنیادین فرد</text>
+        </g>
+
+        <rect x="92" width="86" height="56" rx="5" fill="#fdf4ff" stroke="#e879f9" />
+        <g clip-path="url(#c86x56)" transform="translate(92,0)">
+            <text x="80" y="8" text-anchor="end" class="ct">سکولاریسم</text>
+            <text x="80" y="16" text-anchor="end" class="sm">بی‌طرفی دینی نیازمند</text>
+            <text x="80" y="22" text-anchor="end" class="sm">تنظیم حضور دین در</text>
+            <text x="80" y="28" text-anchor="end" class="sm">عرصه عمومی می‌شود.</text>
+            <text x="80" y="43" text-anchor="end" class="tn">راه‌حل: سکولاریسم</text>
+            <text x="80" y="49" text-anchor="end" class="tn">حقوق‌محور</text>
+        </g>
+    </g>
+
+    <!-- Summary box -->
+    <g transform="translate(208,560)">
+        <rect width="178" height="72" rx="5" fill="#f1f5f9" stroke="#cbd5e1" />
+        <g clip-path="url(#c178x72)">
+            <text x="171" y="10" text-anchor="end" class="ct">جمع‌بندی این ستون</text>
+            <text x="171" y="19" text-anchor="end" class="bd">در عدالت و هویت، مشکل معمولاً</text>
+            <text x="171" y="25.5" text-anchor="end" class="bd">این است: هم قواعد واحد می‌خواهیم</text>
+            <text x="171" y="32" text-anchor="end" class="bd">و هم تفاوت‌های واقعی را نمی‌توان نادیده گرفت.</text>
+            <text x="171" y="41" text-anchor="end" class="sm">پاسخ: حقوق بنیادین + تنوع محدود +</text>
+            <text x="171" y="47.5" text-anchor="end" class="sm">داوری قانون اساسی + خدمات عمومی برابر.</text>
+            <text x="171" y="56" text-anchor="end" class="tn">«برابری» و «تنوع» ذاتاً دشمن نیستند؛</text>
+            <text x="171" y="62" text-anchor="end" class="tn">بدون معماری حقوقی اما علیه هم عمل می‌کنند.</text>
+            <text x="171" y="69" text-anchor="end" class="mn">Universal rights / real differences / balance</text>
+        </g>
+    </g>
+
+    <!-- ════════ RIGHT COLUMN ════════ -->
+    <rect x="398" y="240" width="186" height="410" rx="8" fill="#fff" stroke="#fecdd3" filter="url(#sh)" />
+    <use href="#is" x="402" y="244" />
+    <text x="576" y="252" text-anchor="end" class="sec">۳) دولت، اقتصاد، صلح و فدرالیسم</text>
+
+    <!-- Card: Authority -->
+    <g transform="translate(402,260)">
+        <rect width="178" height="54" rx="5" fill="#fff1f2" stroke="#fda4af" />
+        <g clip-path="url(#c178x54)">
+            <text x="171" y="8" text-anchor="end" class="ct">اقتدار و مشروعیت (آرنت)</text>
+            <text x="171" y="16" text-anchor="end" class="bd">دولت به اقتدار نیاز دارد؛ اما هرچه</text>
+            <text x="171" y="22" text-anchor="end" class="bd">اقتدار بیشتر، خطر خودکامگی بالاتر.</text>
+            <text x="171" y="30" text-anchor="end" class="sm">خطر: دولت ناتوان یا دولت مستبد.</text>
+            <text x="171" y="37" text-anchor="end" class="sm">راه‌حل: تفکیک قوا، پاسخ‌گویی، چرخش قدرت.</text>
+            <text x="171" y="45" text-anchor="end" class="tn">روایت: موتور قوی بدون ترمز، خطرناک است.</text>
+            <text x="171" y="51" text-anchor="end" class="mn">Authority needs accountability</text>
+        </g>
+    </g>
+
+    <!-- Card: Transparency -->
+    <g transform="translate(402,318)">
+        <rect width="178" height="54" rx="5" fill="#fff1f2" stroke="#fda4af" />
+        <g clip-path="url(#c178x54)">
+            <text x="171" y="8" text-anchor="end" class="ct">پارادوکس شفافیت</text>
+            <text x="171" y="16" text-anchor="end" class="bd">شفافیت برای پاسخ‌گویی حیاتی؛ اما شفافیت</text>
+            <text x="171" y="22" text-anchor="end" class="bd">کامل مذاکره و مصالحه را فلج می‌کند.</text>
+            <text x="171" y="30" text-anchor="end" class="sm">خطر: دولت تاریک یا حکمرانی فلج.</text>
+            <text x="171" y="37" text-anchor="end" class="sm">راه‌حل: شفافیت لایه‌بندی‌شده، انتشار با تأخیر.</text>
+            <text x="171" y="45" text-anchor="end" class="tn">روایت: پخش زنده همه جلسات = شاید هیچ توافقی.</text>
+            <text x="171" y="51" text-anchor="end" class="mn">Transparency vs governability</text>
+        </g>
+    </g>
+
+    <!-- Card: Free Market -->
+    <g transform="translate(402,376)">
+        <rect width="178" height="54" rx="5" fill="#fefce8" stroke="#fde047" />
+        <g clip-path="url(#c178x54)">
+            <text x="171" y="8" text-anchor="end" class="ct">بازار آزاد و انحصار</text>
+            <text x="171" y="16" text-anchor="end" class="bd">بازار رها می‌تواند به انحصار برسد و</text>
+            <text x="171" y="22" text-anchor="end" class="bd">خودِ رقابت را نابود کند.</text>
+            <text x="171" y="30" text-anchor="end" class="sm">خطر: تمرکز ثروت، سلطه پلتفرمی.</text>
+            <text x="171" y="37" text-anchor="end" class="sm">راه‌حل: ضدانحصار، قواعد رقابت، شفافیت.</text>
+            <text x="171" y="45" text-anchor="end" class="tn">روایت: اگر یکی کل پیست را بخرد، مسابقه نیست.</text>
+            <text x="171" y="51" text-anchor="end" class="mn">Free market can kill competition</text>
+        </g>
+    </g>
+
+    <!-- Card: Welfare -->
+    <g transform="translate(402,434)">
+        <rect width="178" height="54" rx="5" fill="#fefce8" stroke="#fde047" />
+        <g clip-path="url(#c178x54)">
+            <text x="171" y="8" text-anchor="end" class="ct">رفاه و وابستگی</text>
+            <text x="171" y="16" text-anchor="end" class="bd">دولت رفاه ضروری است؛ اما طراحی بد</text>
+            <text x="171" y="22" text-anchor="end" class="bd">وابستگی و فشار مالی می‌سازد.</text>
+            <text x="171" y="30" text-anchor="end" class="sm">خطر: فقر یا رفاه ناکارآمد.</text>
+            <text x="171" y="37" text-anchor="end" class="sm">راه‌حل: رفاه فعال + اشتغال + آموزش.</text>
+            <text x="171" y="45" text-anchor="end" class="tn">روایت: تور نجات لازم است؛ نردبان خروج هم لازم.</text>
+            <text x="171" y="51" text-anchor="end" class="mn">Welfare needs empowerment</text>
+        </g>
+    </g>
+
+    <!-- Mini cards: Revolution + Federalism -->
+    <g transform="translate(402,492)">
+        <rect width="86" height="56" rx="5" fill="#fce7f3" stroke="#f9a8d4" />
+        <g clip-path="url(#c86x56)">
+            <text x="80" y="8" text-anchor="end" class="ct">انقلاب و اصلاحات</text>
+            <text x="80" y="16" text-anchor="end" class="sm">انقلاب برای رهایی</text>
+            <text x="80" y="22" text-anchor="end" class="sm">می‌آید، اما می‌تواند</text>
+            <text x="80" y="28" text-anchor="end" class="sm">اقتدار تازه بسازد.</text>
+            <text x="80" y="43" text-anchor="end" class="tn">راه‌حل: توالی‌گذاری</text>
+            <text x="80" y="49" text-anchor="end" class="tn">و نهادسازی زودهنگام</text>
+        </g>
+
+        <rect x="92" width="86" height="56" rx="5" fill="#ccfbf1" stroke="#5eead4" />
+        <g clip-path="url(#c86x56)" transform="translate(92,0)">
+            <text x="80" y="8" text-anchor="end" class="ct">فدرالیسم</text>
+            <text x="80" y="16" text-anchor="end" class="sm">خودگردانی هم ابزار</text>
+            <text x="80" y="22" text-anchor="end" class="sm">مدیریت تنوع و هم</text>
+            <text x="80" y="28" text-anchor="end" class="sm">ظرفیت واگرایی.</text>
+            <text x="80" y="43" text-anchor="end" class="tn">راه‌حل: صلاحیت روشن</text>
+            <text x="80" y="49" text-anchor="end" class="tn">و داوری بی‌طرف</text>
+        </g>
+    </g>
+
+    <!-- Summary box right -->
+    <g transform="translate(402,552)">
+        <rect width="178" height="72" rx="5" fill="#f1f5f9" stroke="#cbd5e1" />
+        <g clip-path="url(#c178x72)">
+            <text x="171" y="10" text-anchor="end" class="ct">جمع‌بندی این ستون</text>
+            <text x="171" y="19" text-anchor="end" class="bd">مسئله «قدرت بیشتر/کمتر» نیست بلکه</text>
+            <text x="171" y="25.5" text-anchor="end" class="bd">«قدرتِ مهارشده و پاسخ‌گو» است.</text>
+            <text x="171" y="34" text-anchor="end" class="bd">بازار بدون ضدانحصار ضدآزادی می‌شود.</text>
+            <text x="171" y="40.5" text-anchor="end" class="bd">خودمختاری هم چسب وحدت و هم سکوی جدایی.</text>
+            <text x="171" y="49" text-anchor="end" class="sm">پاسخ‌های ناب کم‌اند: باید بین عدالت،</text>
+            <text x="171" y="55.5" text-anchor="end" class="sm">ثبات، پاسخ‌گویی و آشتی تعادل ساخت.</text>
+            <text x="171" y="64" text-anchor="end" class="tn">دولت ضعیف همیشه آزادتر نیست.</text>
+            <text x="171" y="69" text-anchor="end" class="mn">Capacity + accountability + rights</text>
+        </g>
+    </g>
+
+    <!-- ════════ KNOWLEDGE TABLE ════════ -->
+    <rect x="10" y="660" width="574" height="88" rx="8" fill="#fff" stroke="#e0e7ff" filter="url(#sh)" />
+    <text x="572" y="670" text-anchor="end" class="sec">لایهٔ دانش فشرده</text>
+
+    <!-- Headers -->
+    <rect x="14" y="678" width="72" height="11" rx="3" fill="#e0e7ff" />
+    <rect x="90" y="678" width="178" height="11" rx="3" fill="#e0e7ff" />
+    <rect x="272" y="678" width="130" height="11" rx="3" fill="#e0e7ff" />
+    <rect x="406" y="678" width="174" height="11" rx="3" fill="#e0e7ff" />
+    <text x="82" y="686" text-anchor="end" class="tblh">نام</text>
+    <text x="262" y="686" text-anchor="end" class="tblh">تعریف کوتاه</text>
+    <text x="396" y="686" text-anchor="end" class="tblh">خطر افراط</text>
+    <text x="574" y="686" text-anchor="end" class="tblh">راه‌حل نهادی</text>
+
+    <!-- Rows -->
+    <text x="82" y="698" text-anchor="end" class="tbl">رواداری</text>
+    <text x="262" y="698" text-anchor="end" class="tbl">رواداری مطلق ← ضدرواداری قوی می‌شود</text>
+    <text x="396" y="698" text-anchor="end" class="tbl">نابودی جامعهٔ باز</text>
+    <text x="574" y="698" text-anchor="end" class="tbl">دفاع قانون اساسی، منع تحریک خشونت</text>
+
+    <text x="82" y="709" text-anchor="end" class="tbl">آزادی</text>
+    <text x="262" y="709" text-anchor="end" class="tbl">آزادی بی‌حد ← سلطهٔ قوی‌ترها</text>
+    <text x="396" y="709" text-anchor="end" class="tbl">استثمار و ارعاب</text>
+    <text x="574" y="709" text-anchor="end" class="tbl">حقوق بنیادین، قانون، ضدسلطه</text>
+
+    <text x="82" y="720" text-anchor="end" class="tbl">دموکراسی</text>
+    <text x="262" y="720" text-anchor="end" class="tbl">رأی‌گیری می‌تواند ضددموکراتیک شود</text>
+    <text x="396" y="720" text-anchor="end" class="tbl">تخریب رقابت سیاسی</text>
+    <text x="574" y="720" text-anchor="end" class="tbl">تفکیک قوا، قضا، رسانه، حقوق بنیادین</text>
+
+    <text x="82" y="731" text-anchor="end" class="tbl">اکثریت</text>
+    <text x="262" y="731" text-anchor="end" class="tbl">اکثریتِ بی‌مهار ← سرکوب اقلیت</text>
+    <text x="396" y="731" text-anchor="end" class="tbl">استبداد اکثریت</text>
+    <text x="574" y="731" text-anchor="end" class="tbl">منشور حقوق، دادگاه، فدرالیسم</text>
+
+    <text x="82" y="742" text-anchor="end" class="tbl">بازار آزاد</text>
+    <text x="262" y="742" text-anchor="end" class="tbl">بازار رها ← انحصار ← ضدرقابت</text>
+    <text x="396" y="742" text-anchor="end" class="tbl">سلطه اقتصادی</text>
+    <text x="574" y="742" text-anchor="end" class="tbl">ضدانحصار، تنظیم‌گری تناسبی</text>
+
+    <!-- ════════ BOTTOM STRIP ════════ -->
+    <!-- Left: Spectrums -->
+    <rect x="10" y="756" width="194" height="75" rx="8" fill="#fff" stroke="#e0e7ff" filter="url(#sh)" />
+    <text x="196" y="766" text-anchor="end" class="sec">طیف‌های محوری</text>
+
+    <text x="42" y="781" text-anchor="end" class="lb">نظم / قانون</text>
+    <line x1="46" y1="778" x2="150" y2="778" stroke="#93c5fd" stroke-width="4.5" stroke-linecap="round" />
+    <circle cx="98" cy="778" r="4.5" fill="#3b82f6" />
+    <text x="192" y="781" text-anchor="end" class="lb">آزادی</text>
+
+    <text x="42" y="796" text-anchor="end" class="lb">حقوق اقلیت</text>
+    <line x1="46" y1="793" x2="150" y2="793" stroke="#a78bfa" stroke-width="4.5" stroke-linecap="round" />
+    <circle cx="106" cy="793" r="4.5" fill="#7c3aed" />
+    <text x="192" y="796" text-anchor="end" class="lb">اکثریت</text>
+
+    <text x="42" y="811" text-anchor="end" class="lb">وحدت</text>
+    <line x1="46" y1="808" x2="150" y2="808" stroke="#5eead4" stroke-width="4.5" stroke-linecap="round" />
+    <circle cx="112" cy="808" r="4.5" fill="#14b8a6" />
+    <text x="192" y="811" text-anchor="end" class="lb">خودمختاری</text>
+
+    <text x="196" y="825" text-anchor="end" class="tn">هر جامعه نقطهٔ تعادل متفاوتی انتخاب می‌کند.</text>
+
+    <!-- Center: Ouroboros / Snake eating itself -->
+    <rect x="212" y="756" width="148" height="75" rx="8" fill="#fff" stroke="#e0e7ff" filter="url(#sh)" />
+    <text x="352" y="766" text-anchor="end" class="sec">مفهوم پارادوکس</text>
+
+    <!-- Ouroboros snake -->
+    <g transform="translate(246,780)">
+        <!-- body circle -->
+        <ellipse cx="24" cy="18" rx="19" ry="17" fill="none" stroke="url(#snakeG)" stroke-width="4.5"
+            stroke-linecap="round" />
+
+        <!-- scales pattern -->
+        <g opacity=".3" stroke="#7f1d1d" stroke-width=".4" fill="none">
+            <path d="M8 6 Q10 8 8 10" />
+            <path d="M12 3 Q14 5 12 7" />
+            <path d="M38 8 Q36 10 38 12" />
+            <path d="M40 16 Q38 18 40 20" />
+            <path d="M36 28 Q34 26 36 24" />
+            <path d="M12 30 Q14 28 12 26" />
+            <path d="M6 22 Q8 20 6 18" />
+        </g>
+
+        <!-- head eating tail -->
+        <circle cx="24" cy="1" r="5.5" fill="#dc2626" />
+        <!-- eye -->
+        <circle cx="22" cy="0" r="1.2" fill="#fef2f2" />
+        <circle cx="22" cy="0" r=".6" fill="#1e1b4b" />
+        <!-- mouth opening eating the tail -->
+        <path d="M19 3 Q24 6 29 3" fill="#991b1b" />
+        <!-- tail going into mouth -->
+        <path d="M24 35 Q32 35 36 28 Q40 21 38 14 Q36 8 30 4" fill="none" stroke="#fca5a5" stroke-width="3"
+            stroke-linecap="round" stroke-dasharray="1.5 2" />
+
+        <!-- label below -->
+        <text x="24" y="42" text-anchor="middle" class="sm">اصل خوب → افراط → ضد خود</text>
+        <text x="24" y="48" text-anchor="middle" class="mn">Good principle → excess → self-devouring</text>
+    </g>
+
+    <!-- Right: Visual narratives -->
+    <rect x="368" y="756" width="216" height="75" rx="8" fill="#fff" stroke="#e0e7ff" filter="url(#sh)" />
+    <text x="576" y="766" text-anchor="end" class="sec">روایت‌های تصویری کوتاه</text>
+
+    <use href="#il" x="374" y="772" />
+    <text x="572" y="779" text-anchor="end" class="bd">خانهٔ باز برای آتش‌افروز = نابودی خانه ← رواداری</text>
+
+    <use href="#iv" x="374" y="787" />
+    <text x="572" y="794" text-anchor="end" class="bd">صندوق رأی می‌تواند خودش را بی‌معنا کند ← دموکراسی</text>
+
+    <use href="#im" x="374" y="802" />
+    <text x="572" y="809" text-anchor="end" class="bd">آزادی رقابت اگر به انحصار برسد ← بازار آزاد</text>
+
+    <use href="#ip" x="374" y="817" />
+    <text x="572" y="824" text-anchor="end" class="bd">خودگردانی: هم چسبِ ماندن، هم سکوی جدایی ← فدرالیسم</text>
+
+</svg>

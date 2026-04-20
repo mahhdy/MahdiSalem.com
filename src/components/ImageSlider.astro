@@ -1,41 +1,56 @@
 ---
+/**
+ * ImageSlider Component v2.1 (Full Standalone Premium Version)
+ * Optimized for MDX frontmatter integration.
+ */
+interface Album {
+  title: string;
+  slides: string[];
+}
 interface Props {
-  images?: string[] | null;
-  albums?: { title: string; slides: string[] }[] | null;
+  images?: string[];
+  albums?: Album[];
 }
 
 const { images = [], albums = [] } = Astro.props;
+
+// Use the first album's slides if regular slides is empty but albums are present
 const validAlbums = (albums || []).filter(a => a.slides && a.slides.length > 0);
 const hasAlbums = validAlbums.length > 0;
 const validImages = hasAlbums ? validAlbums[0].slides : (images || []);
+
 const albumsJson = hasAlbums ? JSON.stringify(validAlbums) : null;
-const showNav = validImages.length > 1;
 ---
 
-{hasAlbums && (
-  <div class="slider-albums-nav flex items-center gap-2 overflow-x-auto whitespace-nowrap scrollbar-hide mb-4 pb-2" data-albums={albumsJson}>
-    {validAlbums.map((album, i) => (
-      <button 
-        class={`album-tab-btn px-4 py-1.5 rounded-full text-sm font-medium transition-colors border ${i === 0 ? 'bg-primary text-white border-primary dark:border-primary-light active-album' : 'bg-surface dark:bg-surface-dark border-border dark:border-border-dark hover:border-primary/50'}`}
-        data-index={i}
-      >
-        {album.title}
-      </button>
-    ))}
-  </div>
-)}
+<div class="image-slider-wrapper w-full mt-8 mb-12">
+  {hasAlbums && (
+    <div class="slider-albums-nav flex flex-wrap gap-2 mb-6 p-2 bg-surface-dim/50 dark:bg-surface-dark-dim/50 rounded-xl border border-border dark:border-border-dark overflow-x-auto no-scrollbar" data-albums={albumsJson}>
+      {validAlbums.map((album, idx) => (
+        <button
+          class={`album-tab-btn flex-none px-5 py-2.5 rounded-lg text-sm font-bold transition-all duration-300 border-2 select-none whitespace-nowrap ${idx === 0 
+            ? 'bg-primary text-white border-primary dark:border-primary-light active-album' 
+            : 'bg-surface dark:bg-surface-dark border-border dark:border-border-dark text-text-muted dark:text-text-dark-muted hover:border-primary/50'}`}
+          data-index={idx}
+        >
+          {album.title}
+        </button>
+      ))}
+    </div>
+  )}
 
-{validImages.length > 0 && (
-  <div class="premium-slider relative w-full overflow-hidden rounded-2xl shadow-xl bg-surface-dim dark:bg-surface-dark-dim aspect-[16/10] sm:aspect-[4/3] md:aspect-video group">
-    <!-- Expand/Close Buttons -->
-    <button type="button" class="slider-expand md:opacity-0 group-hover:opacity-100 opacity-100 absolute top-4 right-4 rtl:right-auto rtl:left-4 w-10 h-10 flex items-center justify-center rounded-full bg-black/40 text-white backdrop-blur-md transition-all duration-300 hover:bg-black/60 hover:scale-110 shadow-lg z-30" aria-label="Expand">
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
-    </button>
-    <button type="button" class="slider-close hidden absolute top-4 right-4 rtl:right-auto rtl:left-4 w-10 h-10 items-center justify-center rounded-full bg-black/40 text-white backdrop-blur-md transition-all duration-300 hover:bg-black/60 hover:scale-110 shadow-lg z-30" aria-label="Close">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+  <div class="premium-slider relative w-full overflow-hidden rounded-2xl shadow-xl bg-surface-dim dark:bg-surface-dark-dim aspect-[16/10] sm:aspect-[4/3] md:aspect-video group" id="main-slider">
+    <!-- Top actions -->
+    <div class="absolute top-4 right-4 z-20 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <button class="slider-expand-btn p-3 rounded-xl bg-black/40 backdrop-blur-md text-white hover:bg-black/60 transition-all border border-white/20" title="Full Screen">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" /></svg>
+       </button>
+    </div>
+
+    <button class="slider-close-btn hidden fixed top-6 right-6 z-[60] p-4 rounded-2xl bg-black/40 backdrop-blur-xl text-white hover:bg-primary transition-all border border-white/20">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
     </button>
 
-    <!-- Slides -->
+    <!-- Main Track -->
     <div class="slider-track flex transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] h-full w-full">
       {validImages.map((img, i) => (
         <div class="slide shrink-0 w-full h-full flex items-center justify-center p-4">
@@ -50,84 +65,54 @@ const showNav = validImages.length > 1;
     </div>
 
     <!-- Navigation Arrows -->
-    <button class={`slider-nav prev absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-white/20 dark:bg-black/30 text-text dark:text-white backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white/40 dark:hover:bg-black/50 hover:scale-110 shadow-lg z-10 ${showNav ? '' : 'hidden'}`} aria-label="Previous">
-      <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path></svg>
+    <button class="slider-prev-btn absolute left-4 top-1/2 -translate-y-1/2 z-20 p-4 rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-primary opacity-0 group-hover:opacity-100 transition-all duration-300 disabled:opacity-0">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
     </button>
-    <button class={`slider-nav next absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-white/20 dark:bg-black/30 text-text dark:text-white backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white/40 dark:hover:bg-black/50 hover:scale-110 shadow-lg z-10 ${showNav ? '' : 'hidden'}`} aria-label="Next">
-      <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+    <button class="slider-next-btn absolute right-4 top-1/2 -translate-y-1/2 z-20 p-4 rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-primary opacity-0 group-hover:opacity-100 transition-all duration-300 disabled:opacity-0">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
     </button>
+
+    <!-- Fullscreen Controls (Only visible in fullscreen) -->
+    <div class="slider-fs-controls absolute bottom-10 left-1/2 -translate-x-1/2 z-50 hidden flex items-center gap-4 p-2 bg-black/40 backdrop-blur-xl rounded-2xl border border-white/10">
+       <button class="zoom-out-btn p-3 text-white hover:text-primary transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM13 10H7" /></svg></button>
+       <button class="zoom-reset-btn px-4 text-xs font-bold text-white uppercase tracking-widest hover:text-primary transition-colors">Reset</button>
+       <button class="zoom-in-btn p-3 text-white hover:text-primary transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" /></svg></button>
+    </div>
 
     <!-- Dots -->
-    <div class={`slider-dots absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2.5 p-2 rounded-full bg-white/20 dark:bg-black/30 backdrop-blur-md shadow-sm z-10 ${showNav ? '' : 'hidden'}`}>
+    <div class="slider-dots absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2.5 px-4 py-2 bg-black/10 backdrop-blur-lg rounded-full border border-white/5">
       {validImages.map((_, i) => (
-        <button class={`slider-dot h-2.5 rounded-full transition-all duration-300 ease-out shadow-inner ${i === 0 ? 'bg-primary dark:bg-primary-light w-8' : 'bg-text-muted/40 hover:bg-text-muted/70 dark:bg-white/50 dark:hover:bg-white/80 w-2.5'}`} data-index={i} aria-label={`Go to slide ${i + 1}`}></button>
+        <button 
+          class={`slider-dot h-2.5 rounded-full transition-all duration-300 ease-out shadow-inner ${i === 0 ? 'bg-primary dark:bg-primary-light w-8' : 'bg-white/50 hover:bg-white/80 w-2.5'}`} 
+          data-index={i}
+          aria-label={`Go to slide ${i+1}`}
+        ></button>
       ))}
     </div>
-
-    <!-- Zoom Controls (Visible in Fullscreen) -->
-    <div class="zoom-controls hidden absolute bottom-6 right-6 flex-col gap-2 z-40">
-      <button type="button" class="zoom-in-btn w-12 h-12 flex items-center justify-center rounded-xl bg-white/20 dark:bg-black/40 text-white backdrop-blur-md transition-all hover:bg-white/30 dark:hover:bg-black/60 shadow-lg border border-white/10" title="Zoom In">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
-      </button>
-      <button type="button" class="zoom-out-btn w-12 h-12 flex items-center justify-center rounded-xl bg-white/20 dark:bg-black/40 text-white backdrop-blur-md transition-all hover:bg-white/30 dark:hover:bg-black/60 shadow-lg border border-white/10" title="Zoom Out">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path></svg>
-      </button>
-      <button type="button" class="zoom-reset-btn w-12 h-12 flex items-center justify-center rounded-xl bg-white/20 dark:bg-black/40 text-white backdrop-blur-md transition-all hover:bg-white/30 dark:hover:bg-black/60 shadow-lg border border-white/10" title="Reset Zoom">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-      </button>
-    </div>
   </div>
-)
-}
+</div>
 
 <style is:global>
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
   .premium-slider.is-fullscreen {
     position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
+    inset: 0 !important;
+    z-index: 1000 !important;
     width: 100vw !important;
-    height: 100dvh !important;
-    z-index: 9999 !important;
+    height: 100vh !important;
+    background: #000 !important;
     border-radius: 0 !important;
-    background-color: rgba(0, 0, 0, 0.95) !important;
-    max-width: none !important;
-    aspect-ratio: auto !important;
+    margin: 0 !important;
   }
-  .premium-slider.is-fullscreen .slider-expand {
-    display: none !important;
-  }
-  .premium-slider.is-fullscreen .slider-close {
-    display: flex !important;
-  }
-  .premium-slider.is-fullscreen .slider-nav {
-    opacity: 1 !important;
-  }
-  .premium-slider.is-fullscreen .slide img {
-    max-height: 90vh !important;
-    max-width: 95vw !important;
-    cursor: zoom-in;
-    transition: box-shadow 0.3s ease;
-  }
-  .premium-slider.is-fullscreen .zoom-controls {
-    display: flex !important;
-  }
-  .premium-slider.is-fullscreen .slider-dots {
-    bottom: 24px;
-    background: rgba(0, 0, 0, 0.4);
-  }
-  .slide.is-zoomed img {
-    cursor: grab;
-  }
-  .slide.is-zoomed.is-dragging img {
-    cursor: grabbing;
-  }
+  .premium-slider.is-fullscreen .slider-track { height: 100%; width: 100%; }
+  .premium-slider.is-fullscreen .slider-close-btn { display: block !important; }
+  .premium-slider.is-fullscreen .slider-fs-controls { display: flex !important; }
+  .premium-slider.is-fullscreen .slider-expand-btn { display: none !important; }
+  
+  .slide.is-zoomed { cursor: grab; }
+  .slide.is-dragging { cursor: grabbing; }
+  
+  [data-lang="fa"] .image-slider-wrapper { direction: ltr; }
+  [data-lang="fa"] .slider-albums-nav { direction: rtl; }
 </style>
 
 <script>
@@ -145,54 +130,53 @@ const showNav = validImages.length > 1;
     zoomInBtn: HTMLElement | null;
     zoomOutBtn: HTMLElement | null;
     zoomResetBtn: HTMLElement | null;
-    currentIndex: number;
-    totalSlides: number;
-    isRtl: boolean;
-    isFullscreen: boolean;
-    panzooms: Map<HTMLElement, any>;
+    
+    currentIndex: number = 0;
+    totalSlides: number = 0;
+    isFullscreen: boolean = false;
+    isRtl: boolean = false;
+    panzooms: Map<HTMLElement, any> = new Map();
 
     constructor(container: HTMLElement) {
       this.container = container;
       this.track = container.querySelector('.slider-track');
       this.slides = container.querySelectorAll('.slide');
       this.dots = container.querySelectorAll('.slider-dot');
-      this.prevBtn = container.querySelector('.slider-nav.prev');
-      this.nextBtn = container.querySelector('.slider-nav.next');
-      this.expandBtn = container.querySelector('.slider-expand');
-      this.closeBtn = container.querySelector('.slider-close');
+      this.prevBtn = container.querySelector('.slider-prev-btn');
+      this.nextBtn = container.querySelector('.slider-next-btn');
+      this.expandBtn = container.querySelector('.slider-expand-btn');
+      this.closeBtn = container.querySelector('.slider-close-btn');
       this.zoomInBtn = container.querySelector('.zoom-in-btn');
       this.zoomOutBtn = container.querySelector('.zoom-out-btn');
       this.zoomResetBtn = container.querySelector('.zoom-reset-btn');
       
-      this.currentIndex = 0;
       this.totalSlides = this.slides.length;
-      this.isFullscreen = false;
-      this.panzooms = new Map();
       
       const dir = document.documentElement.getAttribute('dir') || 'ltr';
       this.isRtl = dir === 'rtl';
 
       this.initEvents();
-      this.initInteractiveElements();
       this.initPanzoom();
     }
 
     initPanzoom() {
+      // Clear old panzooms
+      this.panzooms.forEach(pz => pz.destroy());
+      this.panzooms.clear();
+
       this.slides.forEach((slide) => {
         const img = slide.querySelector('img');
         if (img) {
+          // Initialize Panzoom on EACH image
+          // @ts-ignore
           const pz = Panzoom(img, {
             maxScale: 6,
             minScale: 1,
-            contain: 'outside', // Allows moving inside the view
+            contain: 'outside',
             step: 0.3,
             handleStartEvent: (event: any) => {
-              // Always allow multi-touch (pinch)
               if (event.touches && event.touches.length > 1) return true;
-              
-              // For single touch/click, only allow panzoom if in fullscreen or already zoomed
               if (!this.isFullscreen && pz.getScale() === 1) return false;
-              
               event.preventDefault();
               return true;
             }
@@ -200,193 +184,118 @@ const showNav = validImages.length > 1;
           
           this.panzooms.set(slide as HTMLElement, pz);
 
-          // Track zooming state
+          // Wheel zoom
           img.parentElement?.addEventListener('wheel', (event: any) => {
             if (this.isFullscreen || pz.getScale() > 1) {
               pz.zoomWithWheel(event);
-              this.updateZoomState(slide as HTMLElement, pz.getScale());
             }
           }, { passive: false });
 
-          img.addEventListener('panzoomchange', (e: any) => {
-             this.updateZoomState(slide as HTMLElement, e.detail.scale);
-          });
-
-          // Track dragging state for cursor
-          img.addEventListener('panzoomstart', () => {
-             if (pz.getScale() > 1) slide.classList.add('is-dragging');
-          });
-          img.addEventListener('panzoomend', () => {
-             slide.classList.remove('is-dragging');
-          });
-
-          // Double tap/click to zoom
+          // Double click/tap zoom
           let lastClickTime = 0;
           img.addEventListener('click', (e: MouseEvent) => {
             const currentTime = new Date().getTime();
-            const clickDelay = currentTime - lastClickTime;
-            lastClickTime = currentTime;
-
-            if (clickDelay < 300) {
-              // Double click detected
+            if (currentTime - lastClickTime < 300) {
               e.preventDefault();
-              e.stopPropagation();
-              if (pz.getScale() > 1) {
-                pz.reset();
-              } else {
-                pz.zoomIn();
-              }
+              pz.getScale() > 1 ? pz.reset() : pz.zoomIn();
             }
+            lastClickTime = currentTime;
           });
         }
       });
     }
 
-    updateZoomState(slide: HTMLElement, scale: number) {
-        if (scale > 1) {
-            slide.classList.add('is-zoomed');
-        } else {
-            slide.classList.remove('is-zoomed');
-        }
-    }
-
-    initInteractiveElements() {
-      // Dots
-      if (this.dots) {
-        this.dots.forEach((dot: Element, index: number) => {
-          // Remove old listeners by cloning, but it's easier to just set onclick
-          (dot as HTMLElement).onclick = (e) => {
-            e.stopPropagation();
-            this.goToSlide(index);
-          };
-        });
-      }
-
-      // Toggle on mobile via slide tap
-      if (this.slides) {
-        this.slides.forEach(slide => {
-          (slide as HTMLElement).onclick = () => {
-            if (!this.isFullscreen && window.innerWidth < 1024) {
-              this.openFullscreen();
-            }
-          };
-        });
-      }
-    }
-
     initEvents() {
-      // Nav arrows
-      if (this.prevBtn) {
-        this.prevBtn.addEventListener('click', (e) => {
-           e.stopPropagation();
-           this.goToSlide(this.isRtl ? this.currentIndex + 1 : this.currentIndex - 1);
-        });
-      }
-      if (this.nextBtn) {
-        this.nextBtn.addEventListener('click', (e) => {
-           e.stopPropagation();
-           this.goToSlide(this.isRtl ? this.currentIndex - 1 : this.currentIndex + 1);
-        });
-      }
-
-      // Swipe support
-      let touchStartX = 0;
-      let touchEndX = 0;
-      
-      this.container.addEventListener('touchstart', (e: any) => { touchStartX = e.changedTouches[0].screenX; }, {passive: true});
-      this.container.addEventListener('touchend', (e: any) => { 
-        touchEndX = e.changedTouches[0].screenX; 
-        if (this.totalSlides > 1) this.handleSwipe(touchStartX, touchEndX);
-      }, {passive: true});
-
-      this.expandBtn?.addEventListener('click', (e) => {
+      this.prevBtn?.addEventListener('click', (e) => {
         e.stopPropagation();
-        this.openFullscreen();
+        this.goToSlide(this.isRtl ? this.currentIndex + 1 : this.currentIndex - 1);
+      });
+      this.nextBtn?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.goToSlide(this.isRtl ? this.currentIndex - 1 : this.currentIndex + 1);
       });
 
-      this.closeBtn?.addEventListener('click', (e) => {
-        e.stopPropagation();
-        this.closeFullscreen();
+      this.dots.forEach((dot: Element, i: number) => {
+        (dot as HTMLElement).onclick = () => this.goToSlide(i);
       });
 
-      // Zoom Buttons
-      this.zoomInBtn?.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const currentSlide = this.slides[this.currentIndex] as HTMLElement;
-        const pz = this.panzooms.get(currentSlide);
-        if (pz) pz.zoomIn();
+      this.expandBtn?.addEventListener('click', () => this.openFullscreen());
+      this.closeBtn?.addEventListener('click', () => this.closeFullscreen());
+
+      this.zoomInBtn?.addEventListener('click', () => {
+        const pz = this.panzooms.get(this.slides[this.currentIndex] as HTMLElement);
+        pz?.zoomIn();
+      });
+      this.zoomOutBtn?.addEventListener('click', () => {
+        const pz = this.panzooms.get(this.slides[this.currentIndex] as HTMLElement);
+        pz?.zoomOut();
+      });
+      this.zoomResetBtn?.addEventListener('click', () => {
+        const pz = this.panzooms.get(this.slides[this.currentIndex] as HTMLElement);
+        pz?.reset();
       });
 
-      this.zoomOutBtn?.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const currentSlide = this.slides[this.currentIndex] as HTMLElement;
-        const pz = this.panzooms.get(currentSlide);
-        if (pz) pz.zoomOut();
-      });
-
-      this.zoomResetBtn?.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const currentSlide = this.slides[this.currentIndex] as HTMLElement;
-        const pz = this.panzooms.get(currentSlide);
-        if (pz) pz.reset();
-      });
-
+      // Key events
       document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && this.isFullscreen) {
-          this.closeFullscreen();
-        }
+        if (e.key === 'Escape') this.closeFullscreen();
+        if (e.key === 'ArrowRight') this.goToSlide(this.isRtl ? this.currentIndex - 1 : this.currentIndex + 1);
+        if (e.key === 'ArrowLeft') this.goToSlide(this.isRtl ? this.currentIndex + 1 : this.currentIndex - 1);
       });
+
+      // Swipe
+      let startX = 0;
+      this.container.addEventListener('touchstart', (e: any) => { startX = e.touches[0].clientX; }, {passive: true});
+      this.container.addEventListener('touchend', (e: any) => {
+        const endX = e.changedTouches[0].clientX;
+        if (Math.abs(startX - endX) > 50) {
+          this.goToSlide(startX > endX ? (this.isRtl ? this.currentIndex - 1 : this.currentIndex + 1) : (this.isRtl ? this.currentIndex + 1 : this.currentIndex - 1));
+        }
+      }, {passive: true});
     }
 
-    resetAllZooms() {
-        this.panzooms.forEach(pz => pz.reset({ animate: false }));
+    goToSlide(index: number) {
+      if (index < 0) index = this.totalSlides - 1;
+      if (index >= this.totalSlides) index = 0;
+      
+      const oldPz = this.panzooms.get(this.slides[this.currentIndex] as HTMLElement);
+      if (oldPz?.getScale() > 1) oldPz.reset();
+
+      this.currentIndex = index;
+      if (this.track) {
+        const offset = (this.isRtl ? 1 : -1) * 100 * this.currentIndex;
+        this.track.style.transform = `translateX(${offset}%)`;
+      }
+
+      this.dots.forEach((dot, i) => {
+        dot.classList.toggle('bg-primary', i === this.currentIndex);
+        dot.classList.toggle('w-8', i === this.currentIndex);
+        dot.classList.toggle('bg-white/50', i !== this.currentIndex);
+        dot.classList.toggle('w-2.5', i !== this.currentIndex);
+      });
     }
 
     updateImages(newImages: string[]) {
-      this.totalSlides = newImages.length;
-      this.currentIndex = 0;
+      if (!this.track) return;
+      this.track.innerHTML = newImages.map((img, i) => `
+        <div class="slide shrink-0 w-full h-full flex items-center justify-center p-4">
+          <img src="${img}" class="max-w-full max-h-full object-contain rounded-lg shadow-2xl" loading="${i === 0 ? 'eager' : 'lazy'}" />
+        </div>
+      `).join('');
       
-      if (this.track) {
-        this.track.innerHTML = newImages.map((img, i) => `
-          <div class="slide shrink-0 w-full h-full flex items-center justify-center p-4">
-            <img 
-              src="${img}" 
-              alt="Slide ${i + 1}" 
-              class="max-w-full max-h-full object-contain rounded-lg drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)]" 
-              loading="${i === 0 ? 'eager' : 'lazy'}" 
-            />
-          </div>
-        `).join('');
-        this.slides = this.container.querySelectorAll('.slide');
-        this.initPanzoom();
-      }
-
+      this.slides = this.container.querySelectorAll('.slide');
+      this.totalSlides = this.slides.length;
+      this.initPanzoom();
+      
+      // Update dots
       const dotsContainer = this.container.querySelector('.slider-dots');
       if (dotsContainer) {
-        if (this.totalSlides > 1) {
-          dotsContainer.innerHTML = newImages.map((_, i) => `
-            <button class="slider-dot h-2.5 rounded-full transition-all duration-300 ease-out shadow-inner ${i === 0 ? 'bg-primary dark:bg-primary-light w-8' : 'bg-text-muted/40 hover:bg-text-muted/70 dark:bg-white/50 dark:hover:bg-white/80 w-2.5'}" data-index="${i}" aria-label="Go to slide ${i + 1}"></button>
-          `).join('');
-          this.dots = this.container.querySelectorAll('.slider-dot');
-          dotsContainer.classList.remove('hidden');
-        } else {
-          dotsContainer.innerHTML = '';
-          this.dots = this.container.querySelectorAll('.slider-dot');
-          dotsContainer.classList.add('hidden');
-        }
+        dotsContainer.innerHTML = newImages.map((_, i) => `
+          <button class="slider-dot h-2.5 rounded-full transition-all ${i === 0 ? 'bg-primary w-8' : 'bg-white/50 w-2.5'}" data-index="${i}"></button>
+        `).join('');
+        this.dots = dotsContainer.querySelectorAll('.slider-dot');
+        this.dots.forEach((dot, i) => (dot as HTMLElement).onclick = () => this.goToSlide(i));
       }
-
-      if (this.prevBtn && this.nextBtn) {
-        if (this.totalSlides > 1) {
-          this.prevBtn.classList.remove('hidden');
-          this.nextBtn.classList.remove('hidden');
-        } else {
-          this.prevBtn.classList.add('hidden');
-          this.nextBtn.classList.add('hidden');
-        }
-      }
-
-      this.initInteractiveElements();
+      
       this.goToSlide(0);
     }
 
@@ -400,103 +309,29 @@ const showNav = validImages.length > 1;
       this.isFullscreen = false;
       this.container.classList.remove('is-fullscreen');
       document.body.style.overflow = '';
-      this.resetAllZooms();
-    }
-
-    handleSwipe(start: number, end: number) {
-      // Don't swipe if current slide is zoomed in
-      const currentSlide = this.slides[this.currentIndex] as HTMLElement;
-      const pz = this.panzooms.get(currentSlide);
-      if (pz && pz.getScale() > 1) return;
-
-      const threshold = 50;
-      if (start - end > threshold) {
-         this.goToSlide(this.isRtl ? this.currentIndex - 1 : this.currentIndex + 1);
-      } else if (end - start > threshold) {
-         this.goToSlide(this.isRtl ? this.currentIndex + 1 : this.currentIndex - 1);
-      }
-    }
-
-    goToSlide(index: number) {
-      if (index < 0) index = this.totalSlides - 1;
-      if (index >= this.totalSlides) index = 0;
-      
-      // Reset zoom of current slide before moving
-      const oldSlide = this.slides[this.currentIndex] as HTMLElement;
-      const oldPz = this.panzooms.get(oldSlide);
-      if (oldPz && oldPz.getScale() > 1) oldPz.reset({ animate: true });
-
-      this.currentIndex = index;
-      
-      const directionMult = this.isRtl ? 1 : -1;
-      const offset = directionMult * 100 * this.currentIndex;
-      
-      if(this.track) {
-         this.track.style.transform = `translateX(${offset}%)`;
-      }
-
-      this.dots.forEach((dot: Element, i: number) => {
-        if (i === this.currentIndex) {
-           dot.classList.add('bg-primary', 'dark:bg-primary-light', 'w-8');
-           dot.classList.remove('bg-text-muted/40', 'hover:bg-text-muted/70', 'dark:bg-white/50', 'dark:hover:bg-white/80', 'w-2.5');
-        } else {
-           dot.classList.add('bg-text-muted/40', 'hover:bg-text-muted/70', 'dark:bg-white/50', 'dark:hover:bg-white/80', 'w-2.5');
-           dot.classList.remove('bg-primary', 'dark:bg-primary-light', 'w-8');
-        }
-      });
+      this.panzooms.forEach(pz => pz.reset());
     }
   }
 
-  const initSliders = () => {
-    const sliders = document.querySelectorAll('.premium-slider');
-    sliders.forEach(slider => {
-      // Find associated album nav if any
-      const navContainer = slider.previousElementSibling;
-      const hasAlbums = navContainer && navContainer.classList.contains('slider-albums-nav');
+  const init = () => {
+    document.querySelectorAll('.premium-slider').forEach(slider => {
+      const ps = new PremiumSlider(slider as HTMLElement);
       
-      let premiumSlider: PremiumSlider | null = null;
-      if(!slider.hasAttribute('data-initialized')) {
-        premiumSlider = new PremiumSlider(slider as HTMLElement);
-        (slider as any)._premiumSlider = premiumSlider;
-        slider.setAttribute('data-initialized', 'true');
-      } else {
-        premiumSlider = (slider as any)._premiumSlider;
-      }
-
-      // Attach Album logic
-      if (hasAlbums && navContainer && premiumSlider) {
-        if(!navContainer.hasAttribute('data-initialized')) {
-          const albumsJson = navContainer.getAttribute('data-albums');
-          if (albumsJson) {
-            try {
-              const albums = JSON.parse(albumsJson);
-              const buttons = navContainer.querySelectorAll('.album-tab-btn');
-              buttons.forEach((btn, idx) => {
-                btn.addEventListener('click', () => {
-                  // Update active UI
-                  buttons.forEach(b => {
-                    b.classList.remove('bg-primary', 'text-white', 'border-primary', 'dark:border-primary-light', 'active-album');
-                    b.classList.add('bg-surface', 'dark:bg-surface-dark', 'border-border', 'dark:border-border-dark');
-                  });
-                  btn.classList.add('bg-primary', 'text-white', 'border-primary', 'dark:border-primary-light', 'active-album');
-                  btn.classList.remove('bg-surface', 'dark:bg-surface-dark', 'border-border', 'dark:border-border-dark');
-                  
-                  // Update slides
-                  const newSlides = albums[idx].slides || [];
-                  premiumSlider?.updateImages(newSlides);
-                });
-              });
-            } catch (e) {
-              console.error("Failed to parse albums JSON", e);
-            }
-          }
-          navContainer.setAttribute('data-initialized', 'true');
-        }
+      // If there's an album nav, link it
+      const nav = slider.parentElement?.querySelector('.slider-albums-nav') as HTMLElement;
+      if (nav) {
+        const albums = JSON.parse(nav.dataset.albums || '[]');
+        nav.querySelectorAll('.album-tab-btn').forEach((btn, idx) => {
+          btn.addEventListener('click', () => {
+            nav.querySelectorAll('.album-tab-btn').forEach(b => b.classList.remove('bg-primary', 'text-white', 'active-album'));
+            btn.classList.add('bg-primary', 'text-white', 'active-album');
+            ps.updateImages(albums[idx].slides);
+          });
+        });
       }
     });
   };
-  
-  document.addEventListener('DOMContentLoaded', initSliders);
-  document.addEventListener('astro:page-load', initSliders);
-</script>
 
+  document.addEventListener('astro:page-load', init);
+  document.addEventListener('DOMContentLoaded', init);
+</script>

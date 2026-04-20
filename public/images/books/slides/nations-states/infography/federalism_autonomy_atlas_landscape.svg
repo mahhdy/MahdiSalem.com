@@ -1,0 +1,755 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1189mm" height="841mm" viewBox="0 0 1189 841">
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2=".5" y2="1">
+            <stop offset="0%" stop-color="#eef2ff" />
+            <stop offset="50%" stop-color="#f5f3ff" />
+            <stop offset="100%" stop-color="#fefce8" />
+        </linearGradient>
+        <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#312e81" />
+            <stop offset="40%" stop-color="#4c1d95" />
+            <stop offset="100%" stop-color="#7c3aed" />
+        </linearGradient>
+        <linearGradient id="nodeG" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#4c1d95" />
+            <stop offset="100%" stop-color="#6d28d9" />
+        </linearGradient>
+        <filter id="sh" x="-10%" y="-10%" width="130%" height="130%">
+            <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#475569" flood-opacity=".2" />
+        </filter>
+        <style>
+            .t1 {
+                font: 700 18px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #fff
+            }
+
+            .t2 {
+                font: 500 7.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #e0e7ff
+            }
+
+            .sec {
+                font: 700 10px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #1e1b4b
+            }
+
+            .subsec {
+                font: 700 7.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #1e1b4b
+            }
+
+            .ct {
+                font: 700 7px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #1e1b4b
+            }
+
+            .bd {
+                font: 500 5.2px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #334155
+            }
+
+            .sm {
+                font: 500 4.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #475569
+            }
+
+            .tn {
+                font: 500 3.8px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #64748b
+            }
+
+            .lb {
+                font: 700 5.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #1e1b4b
+            }
+
+            .mn {
+                font: 600 3.8px ui-monospace, monospace;
+                fill: #475569
+            }
+
+            .wh {
+                fill: #fff
+            }
+
+            .tblh {
+                font: 700 5.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #1e1b4b
+            }
+
+            .tbl {
+                font: 500 4.8px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #334155
+            }
+
+            .tblb {
+                font: 700 4.8px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #334155
+            }
+
+            .map {
+                font: 700 6.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                fill: #1e1b4b
+            }
+        </style>
+
+        <clipPath id="cFull">
+            <rect width="1169" height="9999" />
+        </clipPath>
+        <clipPath id="c220x130">
+            <rect width="220" height="130" rx="6" />
+        </clipPath>
+        <clipPath id="c220x160">
+            <rect width="220" height="160" rx="6" />
+        </clipPath>
+        <clipPath id="c220x200">
+            <rect width="220" height="200" rx="6" />
+        </clipPath>
+        <clipPath id="c220x240">
+            <rect width="220" height="240" rx="6" />
+        </clipPath>
+        <clipPath id="c220x280">
+            <rect width="220" height="280" rx="6" />
+        </clipPath>
+        <clipPath id="c220x320">
+            <rect width="220" height="320" rx="6" />
+        </clipPath>
+        <clipPath id="c460x130">
+            <rect width="460" height="130" rx="6" />
+        </clipPath>
+        <clipPath id="c460x160">
+            <rect width="460" height="160" rx="6" />
+        </clipPath>
+        <clipPath id="c460x100">
+            <rect width="460" height="100" rx="6" />
+        </clipPath>
+        <clipPath id="c1100x60">
+            <rect width="1100" height="60" rx="6" />
+        </clipPath>
+    </defs>
+
+    <rect width="1189" height="841" fill="url(#bg)" />
+
+    <!-- ═══ HEADER ═══ -->
+    <rect x="10" y="10" width="1169" height="50" rx="12" fill="url(#hdr)" filter="url(#sh)" />
+    <text x="1165" y="30" text-anchor="end" class="t1">اطلس جامع فدرالیسم، خودمختاری، خودگردانی و تقسیمات کشوری</text>
+    <text x="1165" y="44" text-anchor="end" class="t2">انواع نظام‌ها • سطوح خودکنترلی • تقسیم صلاحیت‌ها • مبانی حقوقی •
+        حقوق بین‌الملل • تجارب • چالش‌ها — Federalism &amp; Autonomy Atlas</text>
+    <text x="1165" y="54" text-anchor="end" class="t2">طرح عرضی چندستونه — مناسب چاپ، ارائه، جزوه و پوستر آکادمیک</text>
+
+    <!-- ═══ ROW 1: OVERVIEW SPECTRUM ═══ -->
+    <rect x="10" y="68" width="1169" height="72" rx="10" fill="#fff" stroke="#e0e7ff" filter="url(#sh)" />
+    <text x="1165" y="80" text-anchor="end" class="sec">طیف کلی: از تمرکز مطلق تا استقلال کامل</text>
+
+    <!-- Spectrum bar -->
+    <defs>
+        <linearGradient id="specG" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#1e1b4b" />
+            <stop offset="20%" stop-color="#4338ca" />
+            <stop offset="40%" stop-color="#7c3aed" />
+            <stop offset="60%" stop-color="#a855f7" />
+            <stop offset="80%" stop-color="#d946ef" />
+            <stop offset="100%" stop-color="#f43f5e" />
+        </linearGradient>
+    </defs>
+    <rect x="40" y="92" width="1100" height="14" rx="7" fill="url(#specG)" opacity=".85" />
+
+    <!-- Spectrum labels -->
+    <g class="lb">
+        <text x="65" y="88" text-anchor="middle">بسیط متمرکز</text>
+        <text x="65" y="120" text-anchor="middle" class="tn">ایران، ترکیه</text>
+
+        <text x="260" y="88" text-anchor="middle">بسیط تمرکززدایی‌شده</text>
+        <text x="260" y="120" text-anchor="middle" class="tn">فرانسه، ژاپن</text>
+
+        <text x="460" y="88" text-anchor="middle">منطقه‌ای / شبه‌فدرال</text>
+        <text x="460" y="120" text-anchor="middle" class="tn">اسپانیا، بریتانیا</text>
+
+        <text x="660" y="88" text-anchor="middle">فدرال متقارن</text>
+        <text x="660" y="120" text-anchor="middle" class="tn">آلمان، سوئیس</text>
+
+        <text x="860" y="88" text-anchor="middle">فدرال نامتقارن</text>
+        <text x="860" y="120" text-anchor="middle" class="tn">عراق، هند، کانادا</text>
+
+        <text x="1060" y="88" text-anchor="middle">کنفدرال / شبه‌مستقل</text>
+        <text x="1060" y="120" text-anchor="middle" class="tn">اتحادیه اروپا</text>
+    </g>
+
+    <!-- tick marks -->
+    <g stroke="#fff" stroke-width="2">
+        <line x1="65" y1="92" x2="65" y2="106" />
+        <line x1="260" y1="92" x2="260" y2="106" />
+        <line x1="460" y1="92" x2="460" y2="106" />
+        <line x1="660" y1="92" x2="660" y2="106" />
+        <line x1="860" y1="92" x2="860" y2="106" />
+        <line x1="1060" y1="92" x2="1060" y2="106" />
+    </g>
+    <text x="40" y="135" class="tn">← تمرکز بیشتر</text>
+    <text x="1140" y="135" text-anchor="end" class="tn">استقلال بیشتر →</text>
+
+    <!-- ═══ ROW 2: FIVE MAIN COLUMNS ═══ -->
+
+    <!-- COL 1: Levels of Autonomy -->
+    <rect x="10" y="148" width="226" height="335" rx="10" fill="#fff" stroke="#c7d2fe" filter="url(#sh)" />
+    <text x="228" y="162" text-anchor="end" class="sec">سطوح خودکنترلی</text>
+
+    <g transform="translate(14,170)">
+        <rect width="218" height="320" rx="6" fill="#eef2ff" stroke="#a5b4fc" />
+        <g clip-path="url(#c220x320)">
+            <!-- L0 -->
+            <rect x="4" y="4" width="210" height="42" rx="5" fill="#e0e7ff" stroke="#818cf8" />
+            <text x="206" y="16" text-anchor="end" class="ct">L0: واحد صرفاً اداری</text>
+            <text x="206" y="26" text-anchor="end" class="bd">مجری دستورات مرکز، بدون قانون‌گذاری مستقل</text>
+            <text x="206" y="36" text-anchor="end" class="sm">نمونه: استانداری‌های ایران، ولایت‌های ترکیه</text>
+
+            <!-- L1 -->
+            <rect x="4" y="50" width="210" height="42" rx="5" fill="#dbeafe" stroke="#60a5fa" />
+            <text x="206" y="62" text-anchor="end" class="ct">L1: خودگردانی اداری محدود</text>
+            <text x="206" y="72" text-anchor="end" class="bd">شهرداری، خدمات شهری، مجوز محلی</text>
+            <text x="206" y="82" text-anchor="end" class="sm">نمونه: Prefectures ژاپن، شوراهای ایران</text>
+
+            <!-- L2 -->
+            <rect x="4" y="96" width="210" height="42" rx="5" fill="#c7d2fe" stroke="#818cf8" />
+            <text x="206" y="108" text-anchor="end" class="ct">L2: تمرکززدایی سیاسی</text>
+            <text x="206" y="118" text-anchor="end" class="bd">شورای منطقه‌ای، آموزش و فرهنگ محلی</text>
+            <text x="206" y="128" text-anchor="end" class="sm">نمونه: مناطق فرانسه، اندونزی</text>
+
+            <!-- L3 -->
+            <rect x="4" y="142" width="210" height="48" rx="5" fill="#a5b4fc" stroke="#6366f1" />
+            <text x="206" y="154" text-anchor="end" class="ct wh">L3: خودمختاری گسترده</text>
+            <text x="206" y="164" text-anchor="end" class="bd">پارلمان، دولت، زبان رسمی محلی، پلیس</text>
+            <text x="206" y="174" text-anchor="end" class="sm">نمونه: اسکاتلند، کاتالونیا، باسک، آلاند</text>
+            <text x="206" y="183" text-anchor="end" class="tn">مبنا: قانون عادی یا قانون اساسی</text>
+
+            <!-- L4 -->
+            <rect x="4" y="194" width="210" height="52" rx="5" fill="#818cf8" stroke="#6366f1" />
+            <text x="206" y="206" text-anchor="end" class="ct wh">L4: واحد فدرال</text>
+            <text x="206" y="216" text-anchor="end" class="bd wh">قانون‌گذاری تضمین‌شده در قانون اساسی</text>
+            <text x="206" y="226" text-anchor="end" class="sm">نمونه: ایالات آمریکا، لَندهای آلمان، کانتون سوئیس</text>
+            <text x="206" y="236" text-anchor="end" class="tn">مشارکت در حکومت ملی از طریق مجلس دوم</text>
+
+            <!-- L5 -->
+            <rect x="4" y="250" width="210" height="52" rx="5" fill="#6366f1" stroke="#4f46e5" />
+            <text x="206" y="262" text-anchor="end" class="ct wh">L5: شبه‌دولتی</text>
+            <text x="206" y="272" text-anchor="end" class="bd wh">کنترل وسیع بر قانون‌گذاری، مالیات، قضا</text>
+            <text x="206" y="282" text-anchor="end" class="sm wh">نمونه: هنگ‌کنگ سابق، گرینلند، ماکائو</text>
+            <text x="206" y="292" text-anchor="end" class="tn">روابط خارجی محدود، کنترل مرزی جزئی</text>
+
+            <text x="110" y="314" text-anchor="middle" class="mn">L0 = min autonomy → L5 = max autonomy</text>
+        </g>
+    </g>
+
+    <!-- COL 2: Services Distribution -->
+    <rect x="244" y="148" width="226" height="335" rx="10" fill="#fff" stroke="#a7f3d0" filter="url(#sh)" />
+    <text x="462" y="162" text-anchor="end" class="sec">تقسیم صلاحیت‌ها و خدمات</text>
+
+    <g transform="translate(248,170)">
+        <!-- Central -->
+        <rect width="218" height="90" rx="6" fill="#fef2f2" stroke="#fca5a5" />
+        <g clip-path="url(#c220x130)">
+            <text x="210" y="12" text-anchor="end" class="ct">امور حاکمیتی مرکزی (انحصاری)</text>
+            <text x="210" y="24" text-anchor="end" class="bd">• دفاع و ارتش</text>
+            <text x="210" y="34" text-anchor="end" class="bd">• سیاست خارجی و دیپلماسی</text>
+            <text x="210" y="44" text-anchor="end" class="bd">• پول ملی و بانک مرکزی</text>
+            <text x="210" y="54" text-anchor="end" class="bd">• تابعیت، گذرنامه، مهاجرت</text>
+            <text x="210" y="64" text-anchor="end" class="bd">• گمرک و تجارت خارجی</text>
+            <text x="210" y="74" text-anchor="end" class="sm">در تقریباً همهٔ مدل‌ها (حتی فدرال) مرکزی می‌ماند</text>
+            <text x="210" y="84" text-anchor="end" class="mn">Defense, FP, currency, citizenship</text>
+        </g>
+    </g>
+
+    <g transform="translate(248,264)">
+        <!-- Shared -->
+        <rect width="218" height="105" rx="6" fill="#fef9c3" stroke="#fde047" />
+        <g clip-path="url(#c220x130)">
+            <text x="210" y="12" text-anchor="end" class="ct">امور مشترک / قابل‌تقسیم</text>
+            <text x="210" y="24" text-anchor="end" class="bd">• پلیس و نظم عمومی</text>
+            <text x="210" y="34" text-anchor="end" class="bd">• آموزش و برنامه درسی</text>
+            <text x="210" y="44" text-anchor="end" class="bd">• بهداشت و سلامت</text>
+            <text x="210" y="54" text-anchor="end" class="bd">• مالیات (تقسیم درآمد)</text>
+            <text x="210" y="64" text-anchor="end" class="bd">• منابع طبیعی و انرژی</text>
+            <text x="210" y="74" text-anchor="end" class="bd">• محیط زیست، رسانه، فرهنگ</text>
+            <text x="210" y="84" text-anchor="end" class="sm">بسته به مدل: بخشی مرکزی، بخشی محلی</text>
+            <text x="210" y="96" text-anchor="end" class="mn">Police, education, health, tax, resources</text>
+        </g>
+    </g>
+
+    <g transform="translate(248,373)">
+        <!-- Local -->
+        <rect width="218" height="90" rx="6" fill="#ecfdf5" stroke="#6ee7b7" />
+        <g clip-path="url(#c220x130)">
+            <text x="210" y="12" text-anchor="end" class="ct">امور محلی کلاسیک</text>
+            <text x="210" y="24" text-anchor="end" class="bd">• آب و فاضلاب، پسماند</text>
+            <text x="210" y="34" text-anchor="end" class="bd">• حمل‌ونقل شهری</text>
+            <text x="210" y="44" text-anchor="end" class="bd">• مجوز ساختمان، کاربری زمین</text>
+            <text x="210" y="54" text-anchor="end" class="bd">• آتش‌نشانی، پارک‌ها</text>
+            <text x="210" y="64" text-anchor="end" class="bd">• بازارهای محلی</text>
+            <text x="210" y="76" text-anchor="end" class="sm">معمولاً در همهٔ مدل‌ها به سطح محلی سپرده می‌شود</text>
+            <text x="210" y="86" text-anchor="end" class="mn">Water, transit, fire, parks, permits</text>
+        </g>
+    </g>
+
+    <!-- Residual label -->
+    <g transform="translate(248,468)">
+        <rect width="218" height="14" rx="4" fill="#f1f5f9" stroke="#cbd5e1" />
+        <text x="210" y="10" text-anchor="end" class="sm">صلاحیت باقیمانده: نزد مرکز (هند) یا نزد واحدها (آمریکا،
+            سوئیس)</text>
+    </g>
+
+    <!-- COL 3: Legal Basis -->
+    <rect x="478" y="148" width="226" height="335" rx="10" fill="#fff" stroke="#fde68a" filter="url(#sh)" />
+    <text x="696" y="162" text-anchor="end" class="sec">مبنای حقوقی تقسیم قدرت</text>
+
+    <g transform="translate(482,170)">
+        <rect width="218" height="56" rx="6" fill="#fef3c7" stroke="#fbbf24" />
+        <g clip-path="url(#c220x130)">
+            <text x="210" y="12" text-anchor="end" class="ct">قانون اساسی نوشته (مدوّن)</text>
+            <text x="210" y="24" text-anchor="end" class="bd">صلاحیت‌ها در متن قانون اساسی تقسیم شده؛</text>
+            <text x="210" y="34" text-anchor="end" class="bd">مرکز نمی‌تواند یک‌طرفه تغییر دهد.</text>
+            <text x="210" y="46" text-anchor="end" class="sm">نمونه: آمریکا، آلمان، هند، عراق، سوئیس</text>
+        </g>
+    </g>
+
+    <g transform="translate(482,230)">
+        <rect width="218" height="56" rx="6" fill="#fef9c3" stroke="#fde047" />
+        <g clip-path="url(#c220x130)">
+            <text x="210" y="12" text-anchor="end" class="ct">قانون عادی / واگذاری (Devolution)</text>
+            <text x="210" y="24" text-anchor="end" class="bd">پارلمان مرکزی اختیار می‌دهد و نظری</text>
+            <text x="210" y="34" text-anchor="end" class="bd">می‌تواند پس بگیرد.</text>
+            <text x="210" y="46" text-anchor="end" class="sm">نمونه: بریتانیا (اسکاتلند، ولز، ایرلند شمالی)</text>
+        </g>
+    </g>
+
+    <g transform="translate(482,290)">
+        <rect width="218" height="46" rx="6" fill="#ecfdf5" stroke="#6ee7b7" />
+        <g clip-path="url(#c220x130)">
+            <text x="210" y="12" text-anchor="end" class="ct">کامان‌لاو / عرف / رویه</text>
+            <text x="210" y="24" text-anchor="end" class="bd">سنت حقوقی تاریخی، نه متن مدوّن واحد.</text>
+            <text x="210" y="36" text-anchor="end" class="sm">نمونه: بخش‌هایی از نظام بریتانیا و نیوزیلند</text>
+        </g>
+    </g>
+
+    <g transform="translate(482,340)">
+        <rect width="218" height="46" rx="6" fill="#fdf4ff" stroke="#e879f9" />
+        <g clip-path="url(#c220x130)">
+            <text x="210" y="12" text-anchor="end" class="ct">معاهده بین‌المللی</text>
+            <text x="210" y="24" text-anchor="end" class="bd">خودمختاری ناشی از توافق بین‌المللی.</text>
+            <text x="210" y="36" text-anchor="end" class="sm">نمونه: آلاند (۱۹۲۱)، بوسنی (دیتون ۱۹۹۵)</text>
+        </g>
+    </g>
+
+    <g transform="translate(482,390)">
+        <rect width="218" height="46" rx="6" fill="#f1f5f9" stroke="#94a3b8" />
+        <g clip-path="url(#c220x130)">
+            <text x="210" y="12" text-anchor="end" class="ct">واقعی / عملی (de facto)</text>
+            <text x="210" y="24" text-anchor="end" class="bd">بدون مبنای حقوقی رسمی؛ در عمل مستقل.</text>
+            <text x="210" y="36" text-anchor="end" class="sm">نمونه: سومالیلند، شمال قبرس، تایوان (بحثی)</text>
+        </g>
+    </g>
+
+    <g transform="translate(482,440)">
+        <rect width="218" height="38" rx="5" fill="#fff" stroke="#cbd5e1" />
+        <text x="210" y="13" text-anchor="end" class="sm">نکته: مبنای حقوقی، میزان ثبات و قابلیت</text>
+        <text x="210" y="25" text-anchor="end" class="sm">بازپس‌گیری اختیارات را تعیین می‌کند.</text>
+        <text x="210" y="34" text-anchor="end" class="mn">Constitutional > Statutory > De facto</text>
+    </g>
+
+    <!-- COL 4: International Law -->
+    <rect x="712" y="148" width="226" height="335" rx="10" fill="#fff" stroke="#fecdd3" filter="url(#sh)" />
+    <text x="930" y="162" text-anchor="end" class="sec">حقوق بین‌الملل: جدایی و استقلال</text>
+
+    <g transform="translate(716,170)">
+        <rect width="218" height="56" rx="6" fill="#ffe4e6" stroke="#fb7185" />
+        <g clip-path="url(#c220x130)">
+            <text x="210" y="12" text-anchor="end" class="ct">حق تعیین سرنوشت</text>
+            <text x="210" y="24" text-anchor="end" class="bd">ماده ۱ منشور ملل متحد + میثاقین ۱۹۶۶</text>
+            <text x="210" y="34" text-anchor="end" class="bd">اما بیشتر برای مستعمرات تفسیر شده؛</text>
+            <text x="210" y="44" text-anchor="end" class="bd">تفسیر گسترده‌تر آن بحث‌برانگیز است.</text>
+            <text x="210" y="52" text-anchor="end" class="mn">Self-determination: mostly decolonization</text>
+        </g>
+    </g>
+
+    <g transform="translate(716,230)">
+        <rect width="218" height="46" rx="6" fill="#fce7f3" stroke="#f9a8d4" />
+        <g clip-path="url(#c220x130)">
+            <text x="210" y="12" text-anchor="end" class="ct">تمامیت ارضی</text>
+            <text x="210" y="24" text-anchor="end" class="bd">اصل حفظ مرزهای موجود دولت‌ها؛</text>
+            <text x="210" y="34" text-anchor="end" class="bd">مانع اصلی جدایی یک‌طرفه در حقوق بین‌الملل.</text>
+            <text x="210" y="42" text-anchor="end" class="mn">Territorial integrity blocks unilateral secession</text>
+        </g>
+    </g>
+
+    <g transform="translate(716,280)">
+        <rect width="218" height="46" rx="6" fill="#fdf4ff" stroke="#e879f9" />
+        <g clip-path="url(#c220x130)">
+            <text x="210" y="12" text-anchor="end" class="ct">Uti possidetis juris</text>
+            <text x="210" y="24" text-anchor="end" class="bd">مرزهای استعماری در استقلال حفظ شوند؛</text>
+            <text x="210" y="34" text-anchor="end" class="bd">مانع تغییر مرزهای به‌ارث‌رسیده.</text>
+            <text x="210" y="42" text-anchor="end" class="mn">Colonial borders frozen at independence</text>
+        </g>
+    </g>
+
+    <g transform="translate(716,330)">
+        <rect width="218" height="56" rx="6" fill="#fef2f2" stroke="#fca5a5" />
+        <g clip-path="url(#c220x130)">
+            <text x="210" y="12" text-anchor="end" class="ct">جدایی جبرانی (Remedial Secession)</text>
+            <text x="210" y="24" text-anchor="end" class="bd">اگر سرکوب سیستماتیک و هیچ راه‌حل داخلی نباشد،</text>
+            <text x="210" y="34" text-anchor="end" class="bd">شاید حق جدایی وجود داشته باشد.</text>
+            <text x="210" y="44" text-anchor="end" class="sm">بسیار بحث‌برانگیز: کوزوو ۲۰۰۸ مهم‌ترین نمونه</text>
+            <text x="210" y="52" text-anchor="end" class="mn">Controversial; Kosovo 2008 as key precedent</text>
+        </g>
+    </g>
+
+    <g transform="translate(716,390)">
+        <rect width="218" height="56" rx="6" fill="#f1f5f9" stroke="#94a3b8" />
+        <g clip-path="url(#c220x130)">
+            <text x="210" y="12" text-anchor="end" class="ct">شناسایی بین‌المللی</text>
+            <text x="210" y="24" text-anchor="end" class="bd">استقلال بدون شناسایی اکثر دولت‌ها،</text>
+            <text x="210" y="34" text-anchor="end" class="bd">ناقص و عملاً بی‌اثر باقی می‌ماند.</text>
+            <text x="210" y="44" text-anchor="end" class="sm">نمونه: سومالیلند (بدون شناسایی)، کوزوو (جزئی)</text>
+            <text x="210" y="52" text-anchor="end" class="mn">Recognition is constitutive, not just declaratory</text>
+        </g>
+    </g>
+
+    <g transform="translate(716,450)">
+        <rect width="218" height="30" rx="5" fill="#fff" stroke="#cbd5e1" />
+        <text x="210" y="12" text-anchor="end" class="sm">جمع‌بندی: حقوق بین‌الملل به‌شدت به نفع</text>
+        <text x="210" y="24" text-anchor="end" class="sm">حفظ مرزها و علیه جدایی یک‌طرفه است.</text>
+    </g>
+
+    <!-- COL 5: Experiences & Challenges -->
+    <rect x="946" y="148" width="233" height="335" rx="10" fill="#fff" stroke="#c4b5fd" filter="url(#sh)" />
+    <text x="1171" y="162" text-anchor="end" class="sec">تجارب و چالش‌ها</text>
+
+    <!-- Successful -->
+    <g transform="translate(950,170)">
+        <rect width="225" height="90" rx="6" fill="#ecfdf5" stroke="#34d399" />
+        <g clip-path="url(#c220x130)">
+            <text x="217" y="12" text-anchor="end" class="ct">تجارب نسبتاً موفق ✓</text>
+            <text x="217" y="24" text-anchor="end" class="bd">سوئیس: فدرالیسم چندزبانه + دموکراسی مستقیم</text>
+            <text x="217" y="34" text-anchor="end" class="bd">آلمان: فدرالیسم متقارن + مالی منسجم</text>
+            <text x="217" y="44" text-anchor="end" class="bd">کانادا: مدیریت تفاوت کبک + دوزبانگی</text>
+            <text x="217" y="54" text-anchor="end" class="bd">آلاند: خودمختاری زبانیِ پایدار از ۱۹۲۱</text>
+            <text x="217" y="64" text-anchor="end" class="bd">هند: فدرالیسم بزرگ‌ترین دموکراسی جهان</text>
+            <text x="217" y="78" text-anchor="end" class="sm">عوامل موفقیت: قواعد روشن، داوری بی‌طرف، اعتماد</text>
+            <text x="217" y="86" text-anchor="end" class="mn">Clear rules + fair arbitration + trust</text>
+        </g>
+    </g>
+
+    <!-- Challenged -->
+    <g transform="translate(950,264)">
+        <rect width="225" height="90" rx="6" fill="#fef9c3" stroke="#fbbf24" />
+        <g clip-path="url(#c220x130)">
+            <text x="217" y="12" text-anchor="end" class="ct">تجارب چالش‌دار ⚠</text>
+            <text x="217" y="24" text-anchor="end" class="bd">عراق: نفت، بودجه، پیشمرگه، تنش مرکز-اقلیم</text>
+            <text x="217" y="34" text-anchor="end" class="bd">بوسنی: ساختار دیتون پیچیده و کم‌کارآمد</text>
+            <text x="217" y="44" text-anchor="end" class="bd">اسپانیا/کاتالونیا: تنش استقلال‌طلبی ۲۰۱۷</text>
+            <text x="217" y="54" text-anchor="end" class="bd">بلژیک: تمرکززدایی رو به فرسایش انسجام</text>
+            <text x="217" y="64" text-anchor="end" class="bd">نیجریه: تنش‌های قومی و نفتی در فدرالیسم</text>
+            <text x="217" y="78" text-anchor="end" class="sm">عوامل چالش: ابهام صلاحیت، منابع، هویت، امنیت</text>
+            <text x="217" y="86" text-anchor="end" class="mn">Ambiguity + resources + identity + security</text>
+        </g>
+    </g>
+
+    <!-- Failed -->
+    <g transform="translate(950,358)">
+        <rect width="225" height="70" rx="6" fill="#fef2f2" stroke="#fca5a5" />
+        <g clip-path="url(#c220x130)">
+            <text x="217" y="12" text-anchor="end" class="ct">تجارب شکست‌خورده ✗</text>
+            <text x="217" y="24" text-anchor="end" class="bd">یوگسلاوی: فروپاشی خونین و جنگ‌های ۹۰</text>
+            <text x="217" y="34" text-anchor="end" class="bd">اتحاد شوروی: فروپاشی ۱۹۹۱</text>
+            <text x="217" y="44" text-anchor="end" class="bd">سودان: جدایی جنوب سودان ۲۰۱۱</text>
+            <text x="217" y="56" text-anchor="end" class="sm">عوامل شکست: سرکوب، بی‌اعتمادی عمیق، نبود داوری</text>
+            <text x="217" y="64" text-anchor="end" class="mn">Repression + deep mistrust + no arbitration</text>
+        </g>
+    </g>
+
+    <!-- Challenges box -->
+    <g transform="translate(950,432)">
+        <rect width="225" height="48" rx="6" fill="#f5f3ff" stroke="#a78bfa" />
+        <g clip-path="url(#c220x130)">
+            <text x="217" y="12" text-anchor="end" class="ct">چالش‌های کلیدی</text>
+            <text x="217" y="24" text-anchor="end" class="sm">تقسیم درآمد • تعارض صلاحیت • هویت و واگرایی</text>
+            <text x="217" y="34" text-anchor="end" class="sm">نابرابری مناطق • امنیت • بن‌بست نهادی • مشروعیت</text>
+            <text x="217" y="44" text-anchor="end" class="mn">Revenue, jurisdiction, identity, security, deadlock</text>
+        </g>
+    </g>
+
+    <!-- ═══ ROW 3: COMPARATIVE TABLE ═══ -->
+    <rect x="10" y="492" width="1169" height="175" rx="10" fill="#fff" stroke="#e0e7ff" filter="url(#sh)" />
+    <text x="1165" y="506" text-anchor="end" class="sec">جدول مقایسه‌ای: توزیع صلاحیت‌ها در هر سطح خودکنترلی</text>
+
+    <!-- Table headers -->
+    <rect x="18" y="514" width="100" height="16" rx="3" fill="#e0e7ff" />
+    <rect x="122" y="514" width="150" height="16" rx="3" fill="#e0e7ff" />
+    <rect x="276" y="514" width="150" height="16" rx="3" fill="#e0e7ff" />
+    <rect x="430" y="514" width="150" height="16" rx="3" fill="#e0e7ff" />
+    <rect x="584" y="514" width="150" height="16" rx="3" fill="#e0e7ff" />
+    <rect x="738" y="514" width="150" height="16" rx="3" fill="#e0e7ff" />
+    <rect x="892" y="514" width="130" height="16" rx="3" fill="#e0e7ff" />
+    <rect x="1026" y="514" width="149" height="16" rx="3" fill="#e0e7ff" />
+
+    <text x="68" y="525" text-anchor="middle" class="tblh">حوزه / صلاحیت</text>
+    <text x="197" y="525" text-anchor="middle" class="tblh">L0 اداری</text>
+    <text x="351" y="525" text-anchor="middle" class="tblh">L1 خودگردانی محدود</text>
+    <text x="505" y="525" text-anchor="middle" class="tblh">L2 تمرکززدایی</text>
+    <text x="659" y="525" text-anchor="middle" class="tblh">L3 خودمختاری</text>
+    <text x="813" y="525" text-anchor="middle" class="tblh">L4 فدرال</text>
+    <text x="957" y="525" text-anchor="middle" class="tblh">L5 شبه‌دولتی</text>
+    <text x="1100" y="525" text-anchor="middle" class="tblh">مبنای اصلی</text>
+
+    <!-- rows -->
+    <g class="tbl">
+        <text x="68" y="546" text-anchor="middle">دفاع</text>
+        <text x="197" y="546" text-anchor="middle">مرکز</text>
+        <text x="351" y="546" text-anchor="middle">مرکز</text>
+        <text x="505" y="546" text-anchor="middle">مرکز</text>
+        <text x="659" y="546" text-anchor="middle">مرکز</text>
+        <text x="813" y="546" text-anchor="middle">مرکز</text>
+        <text x="957" y="546" text-anchor="middle">مرکز (عمدتاً)</text>
+        <text x="1100" y="546" text-anchor="middle">قانون اساسی</text>
+
+        <text x="68" y="560" text-anchor="middle">سیاست خارجی</text>
+        <text x="197" y="560" text-anchor="middle">مرکز</text>
+        <text x="351" y="560" text-anchor="middle">مرکز</text>
+        <text x="505" y="560" text-anchor="middle">مرکز</text>
+        <text x="659" y="560" text-anchor="middle">مرکز</text>
+        <text x="813" y="560" text-anchor="middle">مرکز</text>
+        <text x="957" y="560" text-anchor="middle">محدود محلی</text>
+        <text x="1100" y="560" text-anchor="middle">قانون اساسی</text>
+
+        <text x="68" y="574" text-anchor="middle">پلیس</text>
+        <text x="197" y="574" text-anchor="middle">مرکز</text>
+        <text x="351" y="574" text-anchor="middle">مرکز</text>
+        <text x="505" y="574" text-anchor="middle">بخشی مشترک</text>
+        <text x="659" y="574" text-anchor="middle">محلی / مشترک</text>
+        <text x="813" y="574" text-anchor="middle">ایالتی</text>
+        <text x="957" y="574" text-anchor="middle">محلی</text>
+        <text x="1100" y="574" text-anchor="middle">قانون عادی/اساسی</text>
+
+        <text x="68" y="588" text-anchor="middle">آموزش</text>
+        <text x="197" y="588" text-anchor="middle">مرکز</text>
+        <text x="351" y="588" text-anchor="middle">عمدتاً مرکز</text>
+        <text x="505" y="588" text-anchor="middle">مشترک</text>
+        <text x="659" y="588" text-anchor="middle">محلی</text>
+        <text x="813" y="588" text-anchor="middle">ایالتی</text>
+        <text x="957" y="588" text-anchor="middle">محلی</text>
+        <text x="1100" y="588" text-anchor="middle">متنوع</text>
+
+        <text x="68" y="602" text-anchor="middle">مالیات</text>
+        <text x="197" y="602" text-anchor="middle">مرکز</text>
+        <text x="351" y="602" text-anchor="middle">مرکز + عوارض</text>
+        <text x="505" y="602" text-anchor="middle">مشترک</text>
+        <text x="659" y="602" text-anchor="middle">سهم قابل‌توجه</text>
+        <text x="813" y="602" text-anchor="middle">ایالتی + مرکزی</text>
+        <text x="957" y="602" text-anchor="middle">عمدتاً محلی</text>
+        <text x="1100" y="602" text-anchor="middle">قانون اساسی/عادی</text>
+        <text x="68" y="616" text-anchor="middle">منابع طبیعی</text>
+        <text x="197" y="616" text-anchor="middle">مرکز</text>
+        <text x="351" y="616" text-anchor="middle">مرکز</text>
+        <text x="505" y="616" text-anchor="middle">مرکز + مشورت</text>
+        <text x="659" y="616" text-anchor="middle">مشترک / بحثی</text>
+        <text x="813" y="616" text-anchor="middle">مشترک / ایالتی</text>
+        <text x="957" y="616" text-anchor="middle">محلی</text>
+        <text x="1100" y="616" text-anchor="middle">قانون اساسی</text>
+
+        <text x="68" y="630" text-anchor="middle">بهداشت</text>
+        <text x="197" y="630" text-anchor="middle">مرکز</text>
+        <text x="351" y="630" text-anchor="middle">مرکز + اجرا</text>
+        <text x="505" y="630" text-anchor="middle">مشترک</text>
+        <text x="659" y="630" text-anchor="middle">محلی / مشترک</text>
+        <text x="813" y="630" text-anchor="middle">ایالتی</text>
+        <text x="957" y="630" text-anchor="middle">محلی</text>
+        <text x="1100" y="630" text-anchor="middle">متنوع</text>
+
+        <text x="68" y="644" text-anchor="middle">زبان رسمی</text>
+        <text x="197" y="644" text-anchor="middle">ملی تنها</text>
+        <text x="351" y="644" text-anchor="middle">ملی تنها</text>
+        <text x="505" y="644" text-anchor="middle">ملی + محلی</text>
+        <text x="659" y="644" text-anchor="middle">محلی رسمی</text>
+        <text x="813" y="644" text-anchor="middle">ایالتی ممکن</text>
+        <text x="957" y="644" text-anchor="middle">محلی مستقل</text>
+        <text x="1100" y="644" text-anchor="middle">قانون اساسی/عادی</text>
+
+        <text x="68" y="658" text-anchor="middle">قضا</text>
+        <text x="197" y="658" text-anchor="middle">مرکز</text>
+        <text x="351" y="658" text-anchor="middle">مرکز</text>
+        <text x="505" y="658" text-anchor="middle">مرکز</text>
+        <text x="659" y="658" text-anchor="middle">بخشی محلی</text>
+        <text x="813" y="658" text-anchor="middle">دوسطحی</text>
+        <text x="957" y="658" text-anchor="middle">محلی گسترده</text>
+        <text x="1100" y="658" text-anchor="middle">قانون اساسی</text>
+    </g>
+
+    <!-- table row separators -->
+    <g stroke="#e2e8f0" stroke-width=".6">
+        <line x1="18" y1="537" x2="1175" y2="537" />
+        <line x1="18" y1="551" x2="1175" y2="551" />
+        <line x1="18" y1="565" x2="1175" y2="565" />
+        <line x1="18" y1="579" x2="1175" y2="579" />
+        <line x1="18" y1="593" x2="1175" y2="593" />
+        <line x1="18" y1="607" x2="1175" y2="607" />
+        <line x1="18" y1="621" x2="1175" y2="621" />
+        <line x1="18" y1="635" x2="1175" y2="635" />
+        <line x1="18" y1="649" x2="1175" y2="649" />
+    </g>
+
+    <!-- ═══ ROW 4: CASE STUDIES + PARADOX + KEY INSIGHTS ═══ -->
+
+    <!-- LEFT: Country comparison cards -->
+    <rect x="10" y="676" width="460" height="155" rx="10" fill="#fff" stroke="#c7d2fe" filter="url(#sh)" />
+    <text x="462" y="690" text-anchor="end" class="sec">مقایسهٔ موردی: هفت کشور</text>
+
+    <!-- Country cards row 1 -->
+    <g transform="translate(16,698)">
+        <!-- Iran -->
+        <rect width="105" height="58" rx="5" fill="#fee2e2" stroke="#fca5a5" />
+        <text x="98" y="10" text-anchor="end" class="ct">🇮🇷 ایران</text>
+        <text x="98" y="20" text-anchor="end" class="sm">بسیط متمرکز (L0-L1)</text>
+        <text x="98" y="30" text-anchor="end" class="sm">استان‌ها مجری مرکز</text>
+        <text x="98" y="40" text-anchor="end" class="sm">شوراها: اختیار محدود</text>
+        <text x="98" y="50" text-anchor="end" class="tn">قانون‌گذاری مستقل: ندارد</text>
+
+        <!-- Iraq -->
+        <rect x="112" width="105" height="58" rx="5" fill="#fef3c7" stroke="#fbbf24" />
+        <text x="210" y="10" text-anchor="end" class="ct">🇮🇶 عراق</text>
+        <text x="210" y="20" text-anchor="end" class="sm">فدرال نامتقارن (L4)</text>
+        <text x="210" y="30" text-anchor="end" class="sm">کردستان: پارلمان، دولت</text>
+        <text x="210" y="40" text-anchor="end" class="sm">سایر استان‌ها: L1-L2</text>
+        <text x="210" y="50" text-anchor="end" class="tn">تنش: نفت، بودجه، امنیت</text>
+
+        <!-- India -->
+        <rect x="224" width="105" height="58" rx="5" fill="#dbeafe" stroke="#60a5fa" />
+        <text x="322" y="10" text-anchor="end" class="ct">🇮🇳 هند</text>
+        <text x="322" y="20" text-anchor="end" class="sm">فدرال مرکزگرا (L4)</text>
+        <text x="322" y="30" text-anchor="end" class="sm">سه فهرست: مرکز/ایالت/مشترک</text>
+        <text x="322" y="40" text-anchor="end" class="sm">۲۸ ایالت + ۸ قلمرو</text>
+        <text x="322" y="50" text-anchor="end" class="tn">ترتیبات خاص: کشمیر سابق</text>
+
+        <!-- Germany -->
+        <rect x="336" width="105" height="58" rx="5" fill="#ecfdf5" stroke="#6ee7b7" />
+        <text x="434" y="10" text-anchor="end" class="ct">🇩🇪 آلمان</text>
+        <text x="434" y="20" text-anchor="end" class="sm">فدرال متقارن (L4)</text>
+        <text x="434" y="30" text-anchor="end" class="sm">۱۶ لَند + بوندسرات</text>
+        <text x="434" y="40" text-anchor="end" class="sm">مالیه مشترک منسجم</text>
+        <text x="434" y="50" text-anchor="end" class="tn">مدل موفق: تعادل بین وحدت و تنوع</text>
+    </g>
+
+    <!-- Country cards row 2 -->
+    <g transform="translate(16,762)">
+        <!-- Spain -->
+        <rect width="140" height="58" rx="5" fill="#fae8ff" stroke="#e879f9" />
+        <text x="132" y="10" text-anchor="end" class="ct">🇪🇸 اسپانیا</text>
+        <text x="132" y="20" text-anchor="end" class="sm">منطقه‌ای/شبه‌فدرال (L3)</text>
+        <text x="132" y="30" text-anchor="end" class="sm">۱۷ جامعه خودمختار نامتقارن</text>
+        <text x="132" y="40" text-anchor="end" class="sm">باسک: مالیاتِ مستقل</text>
+        <text x="132" y="50" text-anchor="end" class="tn">بحران کاتالونیا ۲۰۱۷</text>
+
+        <!-- UK -->
+        <rect x="148" width="140" height="58" rx="5" fill="#ccfbf1" stroke="#5eead4" />
+        <text x="280" y="10" text-anchor="end" class="ct">🇬🇧 بریتانیا</text>
+        <text x="280" y="20" text-anchor="end" class="sm">بسیط + Devolution (L3)</text>
+        <text x="280" y="30" text-anchor="end" class="sm">اسکاتلند: پارلمان + دولت</text>
+        <text x="280" y="40" text-anchor="end" class="sm">ولز: اختیار کمتر</text>
+        <text x="280" y="50" text-anchor="end" class="tn">مبنا: قانون عادی (پس‌گرفتنی)</text>
+
+        <!-- Switzerland -->
+        <rect x="296" width="140" height="58" rx="5" fill="#f0fdf4" stroke="#86efac" />
+        <text x="428" y="10" text-anchor="end" class="ct">🇨🇭 سوئیس</text>
+        <text x="428" y="20" text-anchor="end" class="sm">فدرال متقارن (L4+)</text>
+        <text x="428" y="30" text-anchor="end" class="sm">۲۶ کانتون + دموکراسی مستقیم</text>
+        <text x="428" y="40" text-anchor="end" class="sm">۴ زبان رسمی</text>
+        <text x="428" y="50" text-anchor="end" class="tn">مدل موفق: ثبات + تنوع + مشارکت</text>
+    </g>
+
+    <!-- CENTER: Paradox of Federalism/Autonomy -->
+    <rect x="478" y="676" width="240" height="155" rx="10" fill="#fff" stroke="#c4b5fd" filter="url(#sh)" />
+    <text x="710" y="690" text-anchor="end" class="sec">پارادوکس محوری</text>
+
+    <!-- Ouroboros snake -->
+    <g transform="translate(510,706)">
+        <ellipse cx="30" cy="22" rx="24" ry="20" fill="none" stroke="#7c3aed" stroke-width="5" stroke-linecap="round"
+            opacity=".8" />
+        <!-- scales -->
+        <g opacity=".25" stroke="#4c1d95" stroke-width=".6" fill="none">
+            <path d="M10 8 Q12 10 10 13" />
+            <path d="M15 4 Q17 6 15 9" />
+            <path d="M50 10 Q48 12 50 15" />
+            <path d="M53 20 Q51 22 53 25" />
+            <path d="M48 35 Q46 33 48 30" />
+            <path d="M15 38 Q17 36 15 33" />
+            <path d="M8 28 Q10 26 8 23" />
+        </g>
+        <!-- head -->
+        <circle cx="30" cy="2" r="7" fill="#7c3aed" />
+        <!-- eye -->
+        <circle cx="28" cy="1" r="1.5" fill="#fef2f2" />
+        <circle cx="28" cy="1" r=".7" fill="#1e1b4b" />
+        <!-- mouth -->
+        <path d="M24 5 Q30 8 36 5" fill="#4c1d95" />
+        <!-- tail into mouth -->
+        <path d="M30 42 Q40 42 48 35 Q54 26 52 18 Q50 10 42 6" fill="none" stroke="#a78bfa" stroke-width="3.5"
+            stroke-linecap="round" stroke-dasharray="2 2.5" />
+    </g>
+
+    <g transform="translate(576,700)">
+        <text x="130" y="8" text-anchor="end" class="ct">پارادوکس فدرالیسم</text>
+        <text x="130" y="20" text-anchor="end" class="bd">خودگردانی هم ابزار مدیریت</text>
+        <text x="130" y="28" text-anchor="end" class="bd">تنوع و حفظ وحدت است،</text>
+        <text x="130" y="36" text-anchor="end" class="bd">و هم ظرفیت نهادیِ واگرایی</text>
+        <text x="130" y="44" text-anchor="end" class="bd">و جدایی را می‌سازد.</text>
+
+        <text x="130" y="58" text-anchor="end" class="ct">پارادوکس خودمختاری</text>
+        <text x="130" y="68" text-anchor="end" class="bd">اعطای خودمختاری تنش را</text>
+        <text x="130" y="76" text-anchor="end" class="bd">کاهش می‌دهد اما همزمان</text>
+        <text x="130" y="84" text-anchor="end" class="bd">توقعات را بالا می‌برد و</text>
+        <text x="130" y="92" text-anchor="end" class="bd">منازعهٔ مرزیِ صلاحیت ایجاد می‌کند.</text>
+
+        <text x="130" y="110" text-anchor="end" class="sm">مار خودخور: اصل خوب → افراط → ضد خود</text>
+        <text x="130" y="120" text-anchor="end" class="mn">Autonomy: glue of unity AND exit platform</text>
+    </g>
+
+    <!-- RIGHT: Key Insights -->
+    <rect x="726" y="676" width="453" height="155" rx="10" fill="#fff" stroke="#a7f3d0" filter="url(#sh)" />
+    <text x="1171" y="690" text-anchor="end" class="sec">بینش‌های کلیدی و درس‌های عملی</text>
+
+    <g transform="translate(732,700)">
+        <!-- Insight 1 -->
+        <rect width="216" height="58" rx="5" fill="#f0fdf4" stroke="#6ee7b7" />
+        <text x="208" y="10" text-anchor="end" class="ct">۱) خودمختاری ≠ فدرالیسم</text>
+        <text x="208" y="20" text-anchor="end" class="bd">برای خودمختار بودن نیازی به فدرال بودن نیست.</text>
+        <text x="208" y="30" text-anchor="end" class="bd">اسکاتلند، آلاند، گرینلند: خودمختارِ غیرفدرال.</text>
+        <text x="208" y="40" text-anchor="end" class="sm">مهم نه «عنوان» بلکه «محتوای اختیارات» و</text>
+        <text x="208" y="50" text-anchor="end" class="sm">«ضمانت حقوقی» آنهاست.</text>
+
+        <!-- Insight 2 -->
+        <rect x="224" width="216" height="58" rx="5" fill="#fdf4ff" stroke="#e879f9" />
+        <text x="432" y="10" text-anchor="end" class="ct">۲) ثبات = قواعد روشن + داوری بی‌طرف</text>
+        <text x="432" y="20" text-anchor="end" class="bd">تجارب موفق: صلاحیت‌ها شفاف، تقسیم مالی</text>
+        <text x="432" y="30" text-anchor="end" class="bd">منصفانه، دادگاه قانون اساسی فعال.</text>
+        <text x="432" y="40" text-anchor="end" class="sm">تجارب ناموفق: ابهام صلاحیت، بی‌اعتمادی،</text>
+        <text x="432" y="50" text-anchor="end" class="sm">نبود داور نهایی.</text>
+    </g>
+
+    <g transform="translate(732,764)">
+        <!-- Insight 3 -->
+        <rect width="216" height="58" rx="5" fill="#fefce8" stroke="#fde047" />
+        <text x="208" y="10" text-anchor="end" class="ct">۳) حقوق بین‌الملل ≠ حق جدایی آسان</text>
+        <text x="208" y="20" text-anchor="end" class="bd">حقوق بین‌الملل شدیداً به نفع تمامیت ارضی</text>
+        <text x="208" y="30" text-anchor="end" class="bd">و علیه جدایی یک‌طرفه است.</text>
+        <text x="208" y="40" text-anchor="end" class="sm">جدایی جبرانی: فقط در سرکوب سیستماتیک،</text>
+        <text x="208" y="50" text-anchor="end" class="sm">و حتی آن هم بحث‌برانگیز (کوزوو).</text>
+
+        <!-- Insight 4 -->
+        <rect x="224" width="216" height="58" rx="5" fill="#eff6ff" stroke="#93c5fd" />
+        <text x="432" y="10" text-anchor="end" class="ct">۴) بافتار (Context) تعیین‌کننده است</text>
+        <text x="432" y="20" text-anchor="end" class="bd">هیچ مدل جهانشمولی وجود ندارد: آنچه در</text>
+        <text x="432" y="30" text-anchor="end" class="bd">سوئیس کار می‌کند، لزوماً در عراق کار نمی‌کند.</text>
+        <text x="432" y="40" text-anchor="end" class="sm">عوامل: تاریخ، قومیت، جغرافیا، ثروت، اعتماد</text>
+        <text x="432" y="50" text-anchor="end" class="sm">اجتماعی، سنت حقوقی، محیط منطقه‌ای.</text>
+    </g>
+
+    <!-- ═══ FOOTER ═══ -->
+    <rect x="10" y="838" width="1169" height="0" rx="0" fill="none" />
+
+</svg>
