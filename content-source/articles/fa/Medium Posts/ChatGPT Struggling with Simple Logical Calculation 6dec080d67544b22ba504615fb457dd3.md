@@ -1,0 +1,164 @@
+# ChatGPT: Struggling with Simple Logical Calculations
+
+# ChatGPT: Struggling with Simple Logical Calculations
+
+Introduction
+
+---
+
+### ChatGPT:
+Struggling with Simple Logical Calculations
+
+### Introduction
+
+Despite the considerable advancements in artificial intelligence and
+natural language processing, the ChatGPT model by OpenAI still
+encounters difficulties when handling relatively simple logical
+calculations. This article will explore some of the limitations of the
+model by analyzing a specific user’s study, highlighting where the model
+went wrong in solving basic logical expressions, and discussing the
+implications of these shortcomings.
+
+> The Problem persists in both version 3.5 and Version 4.
+> 
+
+### Case Study: Logical Truth Tables
+
+In a recent interaction, a user requested a truth table for multiple
+logical expressions, but ChatGPT failed to deliver accurate results on
+multiple occasions. The expressions were as follows:
+
+```
+X: ~A<=>B
+Y: ~(A^B)
+Z: ~B<=>A
+M: (A v B) ^ ~(A^B)
+N: (A v B) ^ ~B<=>A
+O: (A v B) ^ ~A<=>B
+```
+
+After several attempts, ChatGPT struggled to produce an accurate
+truth table for expression Z, leading to inaccurate results for other
+expressions.
+
+### Interactions
+
+I just was trying to compare these two logical sentences through
+Truth Table, I tried to provide feedbacks and add more steps to help
+him/her:
+
+```
+X: (A v B) ^ ~ (A ^ B)
+Y: (A v B) ^ (~A <=>B)
+```
+
+> Version 3.5
+> 
+
+![](https://cdn-images-1.medium.com/max/800/1*9eRLr8eaNPvGEkNaqFFkXw.png)
+
+![](https://cdn-images-1.medium.com/max/800/1*JZYOm-8ccEXDWQjGxez4GA.png)
+
+![](https://cdn-images-1.medium.com/max/800/1*UCdjVJo-TOZofVdC4BG1sw.png)
+
+![](https://cdn-images-1.medium.com/max/800/1*5xnZnT5feFf-6C7qRMsRrQ.png)
+
+![](https://cdn-images-1.medium.com/max/800/1*bJGYjq1o2y0IWafPQ9-aEA.png)
+
+Tried to provide a reminder to him!
+
+several more tries…
+
+![](https://cdn-images-1.medium.com/max/800/1*qI5qcqSJKfkuP_OHg9YazA.png)
+
+![](https://cdn-images-1.medium.com/max/800/1*WHwZHxEhAfUuRHtiHsL16g.png)
+
+I asked for line by line interpretation. I found out it is
+comparing A and B, not ~A and B!
+
+More efforts without proper result.
+
+![](https://cdn-images-1.medium.com/max/800/1*ykdV0XtDFSym3YbV5E-l8w.png)
+
+I provided the answer as final effort!
+
+![](https://cdn-images-1.medium.com/max/800/1*nd52Nia0M8AYwxhDecRlhw.png)
+
+My final effort to get correct result out
+of it!
+
+Then switched to GPT4, to see if that is better!
+
+![](https://cdn-images-1.medium.com/max/800/1*NFRMeqUNxjB1vqkSlyLR4Q.png)
+
+Expected 40% better reasoning capability on
+Ver 4
+
+> version 4
+> 
+
+![](https://cdn-images-1.medium.com/max/800/1*14PIakod4xdItY3kYcg56g.png)
+
+![](https://cdn-images-1.medium.com/max/800/1*DgrOL3DwjTM-L74bHupwfQ.png)
+
+![](https://cdn-images-1.medium.com/max/800/1*B7szDr9BWQqDaUuYIdfpqg.png)
+
+![](https://cdn-images-1.medium.com/max/800/1*O0j3LxNlOh5JGNSfqii4dA.png)
+
+![](https://cdn-images-1.medium.com/max/800/1*-HbTSWk10uhkOGF8r0Adgg.png)
+
+And Finally, He provide me this article and I just added this section
+to it ;-). Much better is writing articles and essays or suggesting how
+to improve his own article!
+
+### User
+Feedback
+
+Throughout the interaction, the user pointed out errors in the
+provided truth tables, highlighting the incorrect results for expression
+Z. Despite receiving feedback, ChatGPT continued to produce inaccurate
+tables, demonstrating an inability to understand the user’s request and
+adapt accordingly.
+
+### Implications
+
+The inability of ChatGPT to perform simple logical calculations
+raises concerns about its reliability in more complex problem-solving
+scenarios. This limitation could lead to misconceptions or
+misinformation if users rely on the model without verifying its
+results.
+
+Furthermore, the interaction demonstrates that ChatGPT’s capacity to
+learn from user feedback is limited. Despite the user’s attempts to
+guide the model towards the correct answer, the model failed to produce
+accurate results.
+
+### Conclusion
+
+While ChatGPT has made significant advancements in natural language
+understanding and generation, it is crucial to recognize its
+limitations, particularly when it comes to logical calculations. Users
+must be cautious when relying on the model for accurate results and
+should always verify the information provided.
+
+As AI and natural language processing continue to evolve, developers
+must focus on improving models like ChatGPT, ensuring that they can
+handle a wide range of tasks, including simple logical calculations,
+with higher accuracy and responsiveness to user feedback.
+
+Mahdi Salem,
+
+Richmond Hill, ON,
+
+17-March 2023
+
+P.S: Article main text is by chatGPT itself.
+
+By [Mahdi
+Salem](https://medium.com/@mahhdy) on [March 17,
+2023](https://medium.com/p/6281e372ad9d).
+
+[Canonical link](https://medium.com/@mahhdy/chatgpt-struggling-with-simple-logical-calculations-6281e372ad9d)
+
+Exported from [Medium](https://medium.com/) on April 9,
+2024.

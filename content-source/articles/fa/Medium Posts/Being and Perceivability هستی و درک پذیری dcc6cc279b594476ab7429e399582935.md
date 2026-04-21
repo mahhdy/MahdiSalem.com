@@ -1,0 +1,642 @@
+# Being and Perceivability هستی و درک پذیری
+
+# Being and Perceivability
+
+Exploring the Relationship Between Beliefs and the Real World
+
+---
+
+### Introduction:
+
+The relationship between our beliefs and the real world has been a
+subject of interest in philosophy and cognitive science. In this
+analysis, we will examine the logical arguments concerning the
+connection between beliefs and the real world, and whether logical
+necessities can be applied to all aspects of the world.
+
+### Logical Argument:
+
+1. There are entities in the world, which we will refer to as beings or the world (Existence).
+2. Our beliefs are the result of our understanding of the world, which includes sensing, perceiving, cognizing, memorizing, recalling, and interacting with perceived materials (Perception and
+Cognition).
+3. We hold beliefs about the world (Understandings).
+4. Valid beliefs can only exist if we accept the necessity of logical axioms such as the law of identity and the law of contradiction (Logical Necessity).
+5. Based on points 3 and 4, the existence of beliefs in the world, exemplified by our own beliefs, justifies that there are perceivable entities in the world (Perceivable Existence).
+6. We cannot conclude that everything in the world is necessarily perceivable (Possibility of Non-Perceivable Entities).
+7. We cannot assert that logical necessities are essential and valid for the possible non-perceivable parts of the world (Lack of Grounds for Generalization).
+
+### Summary of the Argument:
+
+The argument suggests that beliefs about the world are formed through
+our understanding and perception of it. These beliefs are only valid if
+they adhere to logical necessities such as the law of identity and the
+law of contradiction. However, it is also acknowledged that not
+everything in the world may be perceivable, and therefore it cannot be
+concluded that logical necessities apply to all aspects of the
+world.
+
+### Validity and Soundness:
+
+The validity of an argument refers to whether its conclusion follows
+logically from its premises. The soundness of an argument refers to
+whether its premises are true and the argument is valid. The presented
+argument seems valid, as the conclusion follows logically from the
+premises. However, whether or not the argument is sound depends on the
+truth of all its premises.
+
+### Conclusion:
+
+While we can recognize that our beliefs are formed through our
+understanding and perception of the world, and that logical necessities
+apply to perceivable aspects of the world, we cannot definitively
+conclude that these logical necessities apply to all aspects of the
+world, particularly non-perceivable entities. This leaves room for
+further inquiry and exploration in the relationship between beliefs and
+the real world.
+
+Mahdi, Richmond Hill, ON, CA
+
+---
+
+### فهم پذیر بودن و هست بودن؛ رابطه ی بین باورهای ما و جهان واقعی
+
+### مقدمه
+
+برهان در مورد رابطه‌ی بین فهم‌پذیری و تطبیق‌پذیری با اصول منطقی است. در
+این برهان، ما در مورد هستومندها* و واقعیت‌ها صحبت می‌کنیم و نگاهی به
+چگونگی ارتباط این هستومندها با باورها و فهم‌پذیری ما از آن‌ها
+می‌اندازیم.
+
+- هستومند معادل انگلیسی Entity و شیء است.
+- هستومندها و واقعیت‌های متنوعی در جهان وجود دارند.
+انسان‌ها باورهایی در مورد این هستومندها دارند که توسط گرایش‌های گزاره‌ای
+قابل بیان هستند و به اصول و ضروریات منطقی پایبندند. برای فهم درست از
+هستومندها، اصول منطقی مانند اصل همانی و عدم تناقض باید رعایت
+شوند.
+- هستومندهایی که قابل فهم هستند و به ما آشکار می‌شوند،
+با ضروریات منطقی همخوانی دارند. این بدان معناست که گرایش‌های گزاره‌ای
+معتبر، از روابط منطقی معتبری پیروی می‌کنند. به عبارت دیگر، اگر یک هستومند
+قابل فهم باشد، این هستومند از اصول و ضروریات منطقی پیروی
+می‌کند.
+- اما در مورد هستومندهایی که قابل فهم نیستند، نمی‌توان
+اطمینان حاصل کرد که آن‌ها از ضروریات منطقی پیروی می‌کنند یا خیر. این نوع
+هستومندها برای ما تقریر ناپذیر و غیر قابل صورت بندی هستند و به همین دلیل
+نمی‌توانیم از رابطه‌ی آن‌ها با اصول منطقی بحث کنیم.
+- بنابراین، گرچه می‌توانیم برای هستومندهای قابل فهم
+اطمینان حاصل کنیم که از اصول منطقی پیروی می‌کنند، نمی‌توانیم همین اطمینان
+را برای کل هستومندها و واقعیت‌های جهان داشته باشیم. این محدودیت در فهم ما
+از جهان باعث می‌شود که نتوانیم ادعای عمومی در مورد کاربرد اصول منطقی برای
+هر هستومندی در هستی بیان کنیم.
+
+در این بخش خلاصه ی استدلالی به فارسی درباره رابطه بین باورهای ما و
+جهان واقعی بررسی می‌شود. استدلال به شرح زیر است:
+
+1. هستومندها و واقعیت‌هایی وجود دارند.
+2. ما فهم‌هایی از هستومندها داریم که به شکل باورهایمان
+به صورت گرایش گزاره ای قابل بیان است. (قابلیت صورت بندی منطقی
+دارد)
+3. دانش و باورهای من به نسبت هستی محدود است، یعنی موجه
+است این که وجود دارند چیزهایی که من باوری در خصوص آن ها نداشته باشم.
+(محدودیت تجربه و باورهای من نسبت به هستی)
+4. اصول و ضروریات منطقی بر هر صورت بندی از گرایش های
+گزاره ای حاکم هستند. (بدون اصول و ضروریات منطقی صورت بندی منطقی معتبر و
+WFF نخواهیم داشت. )
+5. فهم درست داشتن بدون ضروریات منطقی از جمله اصل این
+همانی و عدم تناقض ممکن نیست. (مبانی منطق بر گرایش های گزاره ای باورهای
+ما حاکم است.)
+6. چیزهایی از هستی که به فهم ما می‌آیند و قابلیت صورت
+بندی منطقی و WFF شدن می یابند، با ضروریات منطقی منطبق هستند. (گرایش
+گزاره ای معتبر، از روابط منطقی معتبری پیروی می کند)
+7. اگر هر آنچه هست فارغ از محدودیت‌های تجربه‌ی ما،
+فهم‌پذیر باشند، آن‌ها از ضروریات منطق تبعیت می‌کنند. (فهم پذیری = قابلیت
+تقریر و صورت بندی به شیوه ی گزاره ای = تبعیت از اصول و ضروریات
+منطقی)
+8. اگر چیزهایی باشند که فهم‌پذیر نباشند، نمی‌توان از
+تبعیت یا عدم تبعیت آن‌ها از ضروریات منطقی سخنی گفت. (نا اطلاعی از کیفیت
+تطبیق پذیری روابط منطقی بر موارد تقریر ناپذیر و غیر قابل صورت
+بندی)
+9. نمی‌توان از عمومیت داشتن این اصول منطقی برای هر
+هستومندی در هستی خبری داد و ادعای موجهی را بیان کرد.
+
+### خلاصه استدلال:
+
+استدلال نشان می‌دهد که باورهای ما درباره جهان واقعی بر اساس فهم و درک
+ما از هستی شکل می‌گیرند. این باورها تنها زمانی معتبر هستند که با ضروریات
+منطقی مطابقت داشته باشند. با این حال، همچنین ‌اگر بپذیریم که همه چیز در
+جهان واقعی قابل فهم نیست، بنابراین نمی‌توان نتیجه‌گیری کرد که ضروریات
+منطقی به همه جنبه‌های جهان واقعی قابلیت تسری دارند.
+
+استدلال صوری منطقی معتبر این برهان به زبان فرمال به شرح زیر است:
+
+```
+1- ∃x (W(x) ∧ B(x)) (Premise)
+
+2- ∀x (W(x) ∧ (B(x) → L(x))) (Premise)
+
+3- ∀x (W(x) ∧ (L(x) ↔ P(x))) (Premise)
+
+4- ∃x (W(x) ∧ ¬P(x)) (Premise)
+
+.: ∃x (W(x) ∧ ¬L(x))
+```
+
+```
+1- ∀x W(x)
+
+2- ∃x (W(x) ∧ B(x))
+
+3- ∀x (W(x) ∧ (B(x) → L(x)))
+
+4- ∃x (W(x) ∧ B(x) ∧ L(x))
+
+5- ∀x (W(x) ∧ (L(x) ↔ P(x)))
+
+6- ∀x (W(x) ∧ (B(x) ↔ P(x)))
+
+7- ∃x (W(x) ∧ ¬P(x))
+
+.: ∃x (W(x) ∧ ¬L(x))
+```
+
+توضیحات:
+
+1. W(x): x هستومند واقعی
+2. B(x): باور داریم به x
+3. L(x): x با اصول منطقی سازگار است
+4. P(x): x قابل فهم است
+
+> با استفاده از این پیش‌فرض‌ها، ما به استنتاج می‌رسیم که برای حداقل یک هستی
+وجود دارد که فهم‌پذیر نیست و آن هستی از ضروریات منطقی تبعیت نمی‌کند.
+> 
+
+![](https://cdn-images-1.medium.com/max/800/1*uLPNEPywc0sVehQCzMQ8Lw.png)
+
+اثبات صورت خلاصه با استنباط طبیعی
+
+![](https://cdn-images-1.medium.com/max/800/1*ooqw33ES3uWVqODDB5EgPA.png)
+
+### اثبات صورت تفصیلی با استنباط طبیعی
+
+صورت بندی اولیه ی برهان:
+
+1. چیزهایی و واقعیت هایی به نام هستی وجود دارند. (هستنده یا هستومندهایی هستند)
+2. من فهم هایی از هستی به شکل باور دارم. (من ارجاعاتی به برخی هستومندهای هستی دارم که حاوی گرایش گزاره ای است)
+3. به این دلیل که فهم درست داشتن بدون ضروریات منطقی از جمله اصل این همانی و عدم تناقض ممکن نیست.
+4. بنابراین موجه است چیزهایی از هستی که به فهم ما می آیند را منطبق با ضروریات منطقی بشناسیم. یعنی نتیجه بگیریم در هستی واقعیت های فهم پذیری هست که بر اساس اصول منطقی کار می کنند.(1و2و3)
+5. اگر هر آنچه هست فارغ از محدودیت های تجربه ی من، فهم پذیر باشند بنابراین هر آنچه واجد هستی است از ضروریات منطق تبعیت می کنند.
+6. اگر باشند چیزهایی که فهم پذیر نباشند، نمی توان از تبعیت یا عدم تبعیت آن ها از ضروریات منطقی سخنی گفت.
+7. بنا به تعریف من قادرنیستم در خصوص عدم وجود موارد فهم ناپذیر در هستی باور موجهی داشته باشم.
+8. بنابراین نمی توانم از عمومیت داشتن این اصول منطقی برای هر هستنده ای در هستی خبری بدهم و ادعای موجهی را بیان کنم.
+
+By [Mahdi Salem](https://medium.com/@mahhdy) on [February 27,2023](https://medium.com/p/b0b30f081d80).
+
+[Canonical link](https://medium.com/@mahhdy/being-and-perceivability-b0b30f081d80)
+
+# First Critics _o3
+
+Critical Review of “Being and Perceivability / هستی و درک‌پذیری”
+
+(English first, Persian summary follows)
+
+────────────────────────────────────────
+
+A. Conceptual and Philosophical Analysis
+
+────────────────────────────────────────
+
+1. Category Confusion (Object vs Proposition)
+    - The laws of identity (¬(A≠A)) and non-contradiction (¬(A∧¬A)) are constraints on propositions or conceptual representations, not on the external objects themselves.
+    - Premise 4 (“Valid beliefs can only exist if … LNC & LOI hold for the world”) silently shifts from “beliefs are governed by logic” (true) to “their objects are governed by logic” (non-trivial and unargued).
+    - Fix: Distinguish two domains:
+    
+    – O: mind-independent objects,
+    
+    – Φ: propositions (belief-contents) about O.
+    
+    Laws of logic apply necessarily to Φ; whether O is “logical” is a separate metaphysical thesis that has to be argued, not assumed.
+    
+2. Performative Self-Undermining
+    - To doubt the universality of logic you must already use logic (you need LNC to distinguish “applies” from “does not apply”). Hence Premise 7 (“we cannot assert that logical necessities are essential …”) is expressible only by presupposing what it doubts.
+3. Epistemic vs. Metaphysical Modality
+    - The conclusion you can legitimately draw is merely epistemic: “we lack warrant to extend logical laws to unperceivable reality”.
+    - You illicitly jump to a metaphysical possibility: “maybe in the noumenal realm logic fails”. That does not follow; at most we have agnosticism.
+4. Redundancy of Premises 1-3 (English part)
+    - 1 states existence, 2 explains cognition, 3 restates 2. Compress to one substantive premise.
+5. Empirical Premise Needed
+    - Premise 6 (“some entities are not perceivable”) is asserted, not established. You need an argument (Kantian noumenon, quantum gravity, etc.) or weaken it to an epistemic modal claim: “it is not ruled out a priori that some entities are unperceivable”.
+
+────────────────────────────────────────
+
+B. Formal Reconstruction and Diagnosis
+
+────────────────────────────────────────
+
+You supplied two axiom-sets; both contain syntactic and semantic flaws.
+
+1. First Formal Set
+    1. ∃x (W(x) ∧ B(x))
+    2. ∀x (W(x) ∧ (B(x) → L(x)))
+    3. ∀x (W(x) ∧ (L(x) ↔ P(x)))
+    4. ∃x (W(x) ∧ ¬P(x))⊢ ∃x (W(x) ∧ ¬L(x))
+    
+    Problems
+    
+    a. In (2) and (3) the conjunction W(x) ∧ (…) is inside the universal quantifier: that forces W(x) to hold for every x, which contradicts premise (1) (existential import becomes trivial).
+    
+    b. Line 3 makes L(x) ↔ P(x) hold for every x, but in English you only want it for perceivable entities.
+    
+    c. Category mistake again: L(x) should be predicated of Φ-type items, not W-type.
+    
+2. Second Formal Set
+    
+    Similar defects plus an invalid step from (6) to (7): (B ↔ P) does not follow from previous premises.
+    
+3. Corrected Two-Sort System
+    
+    Sorts
+    
+    E(y): y is an extra-mental entity.
+    
+    C(p): p is a cognitive representation (proposition).
+    
+    Bel(p,y): p is a belief-content about y.
+    
+    Percep(y): y is perceivable.
+    
+    Axioms
+    
+    A1 ∃y E(y) (Realism)
+    
+    A2 ∀p∀y [Bel(p,y) → C(p) ∧ E(y)] (Intentionality)
+    
+    A3 ∀p [C(p) → Logical(p)] (Logic governs propositions)
+    
+    A4 ∃y E(y) ∧ ¬Percep(y) (Possible unperceivable) (optional / disputable)
+    
+    From A1-A3 we can derive:
+    
+    ∀y∀p [Bel(p,y) → Logical(p)].
+    
+    Nothing about Logical(y) is derivable. If you add A4, you still cannot conclude ¬Logical(y). The correct formal statement of your intended conclusion is only:
+    
+    ```
+     ¬□∀y [E(y) → Logical(y)].
+    ```
+    
+    i.e. “it is not knowably necessary that every entity is logical.”
+    
+
+────────────────────────────────────────
+
+C. Suggested Revised Argument (Prose)
+
+────────────────────────────────────────
+
+1. Belief-contents are formulated in a logical framework; therefore every intelligible proposition presupposes logical axioms (analytic-transcendental point).
+2. From 1 we cannot infer that the objects those propositions are about obey or fail to obey logic; we can only remain agnostic.
+3. Because we cannot rule out (a priori) the existence of entities for which no propositions can be formed (they are in principle unperceivable), we equally cannot extend logical necessity to them.
+4. Therefore our epistemic warrant for the universality of logic stops at the boundary of the thinkable.
+
+That conclusion is strictly epistemic, not metaphysical.
+
+────────────────────────────────────────
+
+D. Persian Summary & Corrections
+
+────────────────────────────────────────
+
+۱. در متن فارسی نیز «اصل عدم تناقض» و «اصل همانی» باید بر «صورت‌های گزاره‌ای» (Φ) اعمال شود، نه بر «هستومند» (E). بنابراین بند ۶ («اگر چیزهایی باشند که فهم‌پذیر نباشند، نمی‌توان از تبعیت یا عدم تبعیت آن‌ها از ضروریات منطقی سخنی گفت») حداکثر نشان می‌دهد که دربارهٔ آن‌ها سکوت موجه است، نه این‌که احتمال عدم تبعیتشان موجه است.
+
+۲. در صورت‌بندی صوری، باید دو قلمرو متمایز تعریف شود:
+
+– E(x): هستومند خارجی
+
+– Φ(p): گزاره یا محتوا
+
+سپس قوانین منطق فقط بر Φ(p) تعریف می‌شوند.
+
+۳. گزاره‌ی ۳ («∀x (W(x)∧(L↔P))») عملاً می‌گوید برای هر x، W(x) درست است؛ این با بند ۴ ناسازگار و از نظر معناشناختی نادرست است.
+
+۴. عبارت «فهم‌ناپذیر» در قدم ۸ باید به صورت یک مدالیتهٔ معرفتی (ممکن است/نمی‌دانیم) بازنویسی شود تا مغالطهٔ التزام به ضدّ برطرف شود.
+
+────────────────────────────────────────
+
+E. Further Reading
+
+────────────────────────────────────────
+
+- Kant, Critique of Pure Reason, Transcendental Analytic (on the a priori status of logic).
+- Husserl, Logical Investigations, Investigation I (meaning-intentionality distinction).
+- Putnam, “The Thesis of the Universality of Logic” in Realism and Reason.
+- Priest, In Contradiction (for what it would even mean for “the world” to violate LNC).
+
+────────────────────────────────────────
+
+Conclusion
+
+────────────────────────────────────────
+
+Your core intuition—that the reach of logical necessity is coterminous with the reach of intelligible representation—is defensible, but the present argument needs:
+
+1. A strict separation between ontology (objects) and logical form (propositions).
+2. A reconstruction that expresses ignorance, not the possibility of illogical being.
+3. A syntactically sound formal proof using two-sort predicate logic.
+
+Once those repairs are in place the paper will present a coherent transcendental-epistemic thesis rather than an ontological one.
+
+---
+
+# Critical Academic Review: "Being and Perceivability"
+
+---
+
+## 1. Philosophical Context and Contribution
+
+Your argument engages with a venerable tradition at the intersection of epistemology, metaphysics, and philosophical logic. The core thesis—that we cannot justifiably extend the universality of logical principles to all of reality, particularly non-perceivable domains—intersects with several major philosophical positions:
+
+- **Kant's phenomenon/noumenon distinction**: Like Kant, you suggest that our cognitive apparatus (which operates under logical constraints) can only access a structured portion of reality (phenomena), while things-in-themselves (noumena) remain beyond justified logical characterization.
+- **Wittgenstein's Tractatus (7)**: *"Whereof one cannot speak, thereof one must be silent"*—your argument essentially recapitulates this for the scope of logical laws.
+- **Epistemic humility traditions** in both Islamic philosophy (particularly the limits of *'aql*/reason in Ghazali's *Tahāfut al-Falāsifa*) and Western analytic epistemology.
+
+However, the argument as presented suffers from several significant structural, formal, and philosophical problems that undermine its force. I will address these systematically.
+
+---
+
+## 2. Critical Analysis of the Informal Argument
+
+### 2.1. Equivocation Between Epistemological and Ontological Claims
+
+This is the most fundamental problem. The argument oscillates between two very different claims:
+
+- **(A) Epistemological claim**: We *cannot know or justifiably assert* whether logical principles apply to non-perceivable entities.
+- **(B) Ontological claim**: Logical principles *do not (or may not) apply* to non-perceivable entities.
+
+Your informal argument (particularly steps 6–9 of the Farsi version) supports **(A)**. You write:
+
+> «اگر چیزهایی باشند که فهم‌پذیر نباشند، نمی‌توان از تبعیت یا عدم تبعیت آن‌ها از ضروریات منطقی سخنی گفت.»
+> 
+
+This says we cannot *speak of* their compliance—an epistemological limitation. But your formal conclusion is:
+
+> ∃x (W(x) ∧ ¬L(x))
+> 
+
+This says there *exists* something that does *not* follow logical principles—an ontological assertion. These are radically different, and the formal conclusion is far stronger than what the informal argument warrants. This constitutes a **non sequitur** at the most critical juncture of the argument.
+
+### 2.2. The Perceivability-Logic Biconditional
+
+Your argument's pivot is the claim:
+
+> «فهم پذیری = قابلیت تقریر و صورت بندی به شیوه ی گزاره ای = تبعیت از اصول و ضروریات منطقی»
+> 
+
+That is: **Perceivability ↔ Propositional formulability ↔ Compliance with logical principles**
+
+This chain of equivalences is problematic in both directions:
+
+**Direction 1: P(x) → L(x)** (If perceivable, then logically consistent)
+This is defensible. If something enters our cognitive grasp sufficiently to be propositionally formulated, then the formulation is governed by logical norms (WFF constraints, non-contradiction, etc.). This is broadly accepted.
+
+**Direction 2: L(x) → P(x)** (If logically consistent, then perceivable)
+This is highly questionable. Why should the ontological property of being logically consistent *entail* that something is perceivable by cognitive agents? Consider: mathematical entities in Platonism are logically consistent but their "perceivability" is controversial. Quantum superposition states may be logically consistent under non-classical logics yet resist ordinary perception. An entity could be perfectly logically well-behaved and yet forever beyond any possible experience.
+
+The **critical point**: your formal proof *depends* on the L(x) → P(x) direction (via contrapositive: ¬P(x) → ¬L(x)). If you only have P(x) → L(x), you cannot derive ¬L(x) from ¬P(x)—that would be the **fallacy of denying the antecedent**.
+
+### 2.3. Self-Referential Instability
+
+The argument uses logical principles (modus tollens, existential/universal instantiation, the law of non-contradiction) to argue that logical principles may not apply universally. This creates a tension:
+
+- If the argument's conclusion is correct—that logical laws may not hold for some parts of reality—then on what basis do we trust the *logical apparatus used to reach this conclusion*?
+- The argument treats logic as both the tool of reasoning and the object of doubt, without addressing this reflexivity.
+
+This is not necessarily fatal (one can use logic to explore logic's limits, as Gödel demonstrated), but it requires explicit acknowledgment and careful handling, which is absent here.
+
+### 2.4. The Unjustified Leap in Premise 3 / Step 6 of the English Argument
+
+The English version states:
+
+> "6. We cannot conclude that everything in the world is necessarily perceivable"
+> 
+
+This is presented as obvious, but it deserves far more argument. There are serious philosophical positions that deny this:
+
+- **Berkeleyan idealism**: *esse est percipi* (to be is to be perceived)
+- **Verificationism**: meaningful claims about entities require perceivability conditions
+- **Constructive empiricism** (van Fraassen): while it allows for non-perceivable entities, it treats claims about them differently
+- **Pragmatism** (Peirce, James): truth and reality are defined in terms of what is ultimately experienceable
+
+By simply assuming the existence of non-perceivable entities as a premise, you beg the question against these traditions.
+
+### 2.5. Ambiguity in "Perceivable" (فهم‌پذیر)
+
+The term «فهم‌پذیر» conflates several distinct notions:
+
+1. **Sensibly perceivable** (قابل حس): accessible to the five senses
+2. **Conceptually graspable** (قابل تصور): capable of being thought about
+3. **Propositionally expressible** (قابل تقریر): can be put into propositions
+4. **Knowable in principle** (قابل شناخت): can in principle be known by some cognitive agent
+
+These are not equivalent. Something might be propositionally expressible but not sensibly perceivable (e.g., abstract mathematical truths). Something might be conceptually graspable but not propositionally expressible (e.g., qualia, mystical experiences). The argument's force varies dramatically depending on which sense is intended, yet no disambiguation is provided.
+
+---
+
+## 3. Critical Analysis of the Formal Proofs
+
+### 3.1. First Formalization
+
+```
+1- ∃x (W(x) ∧ B(x))                    (Premise)
+2- ∀x (W(x) ∧ (B(x) → L(x)))          (Premise)
+3- ∀x (W(x) ∧ (L(x) ↔ P(x)))          (Premise)
+4- ∃x (W(x) ∧ ¬P(x))                   (Premise)
+.: ∃x (W(x) ∧ ¬L(x))
+```
+
+### 3.1.1. Syntactic Error: ∧ vs. →
+
+Premises 2 and 3 use conjunction (∧) where a conditional (→) is almost certainly intended:
+
+- **As written**, `∀x (W(x) ∧ (B(x) → L(x)))` means: *For every x in the domain, x is a real entity AND if believed then logically consistent.* This entails that **everything in the domain is a real entity**, which is an extremely strong (and likely unintended) claim.
+- **Intended meaning** is probably: `∀x (W(x) → (B(x) → L(x)))` — *For every x, if x is a real entity, then if x is believed, x is logically consistent.*
+
+This error recurs in premise 3. While it doesn't break the validity of *this particular* proof (since the stronger ∧ claims entail the weaker → claims), it represents a formalization error that would cause problems in other inferential contexts.
+
+### 3.1.2. Validity Check (Corrected)
+
+With the corrected reading, the proof is **formally valid**:
+
+```
+1.  ∃x (W(x) ∧ B(x))                      Premise
+2.  ∀x (W(x) → (B(x) → L(x)))            Premise
+3.  ∀x (W(x) → (L(x) ↔ P(x)))            Premise
+4.  ∃x (W(x) ∧ ¬P(x))                     Premise
+5.  W(a) ∧ ¬P(a)                           Existential Instantiation (4)
+6.  W(a)                                    Simplification (5)
+7.  ¬P(a)                                  Simplification (5)
+8.  W(a) → (L(a) ↔ P(a))                  Universal Instantiation (3)
+9.  L(a) ↔ P(a)                            Modus Ponens (6, 8)
+10. L(a) → P(a)                            Biconditional Elimination (9)
+11. ¬L(a)                                  Modus Tollens (10, 7)
+12. W(a) ∧ ¬L(a)                           Conjunction (6, 11)
+13. ∃x (W(x) ∧ ¬L(x))                     Existential Generalization (12)
+```
+
+**The argument is valid.** But validity merely means: *if* the premises are true, *then* the conclusion must be true. The critical question is **soundness**—are all premises true?
+
+### 3.1.3. Soundness Concerns
+
+| Premise | Status | Problem |
+| --- | --- | --- |
+| 1. ∃x (W(x) ∧ B(x)) | Plausible | Minimal existential claim |
+| 2. ∀x (W(x) → (B(x) → L(x))) | Defensible | If we believe something, our belief-formulation is governed by logic |
+| 3. ∀x (W(x) → (L(x) ↔ P(x))) | **Problematic** | The L→P direction is unjustified (see §2.2) |
+| 4. ∃x (W(x) ∧ ¬P(x)) | **Assumed** | Existence of non-perceivable entities is question-begging (see §2.4) |
+
+**Premise 3 is the weakest link.** The biconditional does all the heavy lifting—and the critical direction (L→P) is unsupported.
+
+### 3.2. Second Formalization
+
+```
+1- ∀x W(x)
+2- ∃x (W(x) ∧ B(x))
+3- ∀x (W(x) ∧ (B(x) → L(x)))
+4- ∃x (W(x) ∧ B(x) ∧ L(x))
+5- ∀x (W(x) ∧ (L(x) ↔ P(x)))
+6- ∀x (W(x) ∧ (B(x) ↔ P(x)))
+7- ∃x (W(x) ∧ ¬P(x))
+.: ∃x (W(x) ∧ ¬L(x))
+```
+
+### Additional Issues:
+
+1. **Premise 1** (`∀x W(x)`): If the domain is stipulated to be all real entities, this is trivially true but uninformative. If the domain is broader (all possible things), it's false.
+2. **Line 4** appears to be derived from 2 and 3, which is correct (instantiate 3 for the witness of 2, apply modus ponens).
+3. **Line 6** (`∀x (W(x) ∧ (B(x) ↔ P(x)))`): This is claimed to follow but **does not validly derive from the previous lines**. From B(x) → L(x) and L(x) ↔ P(x), we get B(x) → P(x). But B(x) ↔ P(x) requires also P(x) → B(x), which is **nowhere established**. Can everything perceivable be believed? This seems false—there are perceivable things we don't (yet) believe anything about.
+4. **Premise 7 contradicts premise 1 + premise 5** in an interesting way: If ∀x W(x) and ∀x(W(x) ∧ (L(x) ↔ P(x))), the conclusion follows trivially and immediately, making premises 1–4 and 6 redundant. The proof is valid but bloated.
+
+---
+
+## 4. The Fundamental Mismatch and Proposed Correction
+
+### 4.1. The Core Problem Restated
+
+Your informal argument's actual conclusion is:
+
+> ما نمی‌توانیم ادعای موجهی در خصوص عمومیت اصول منطقی برای همه هستومندها داشته باشیم.
+> 
+
+*"We cannot make a justified claim about the universality of logical principles for all entities."*
+
+This is an **epistemological** claim about the limits of justified assertion. But your formalization concludes:
+
+> ∃x (W(x) ∧ ¬L(x))
+> 
+
+*"There exists a real entity that does not follow logical principles."*
+
+This is an **ontological** claim about the structure of reality. The gap between these is enormous.
+
+### 4.2. Proposed Corrected Formalization
+
+To properly capture the epistemological conclusion, you need an epistemic or doxastic operator. Let me introduce:
+
+- **J(φ)**: "It is justified to assert φ" (or use K for knowledge)
+
+**Corrected premises and conclusion:**
+
+```
+Domain: entities (هستومندها)
+W(x): x is a real entity
+B(x): we hold beliefs about x
+P(x): x is perceivable (فهم‌پذیر)
+L(x): x complies with logical principles
+J(φ): φ is justifiably assertible
+
+Premises:
+1. ∃x (W(x) ∧ B(x))                           — Some entities are believed-about
+2. ∀x ((W(x) ∧ B(x)) → P(x))                  — Believed entities are perceivable
+3. ∀x ((W(x) ∧ P(x)) → L(x))                  — Perceivable entities follow logic
+4. ¬J(∀x (W(x) → P(x)))                        — It's not justified that all entities are perceivable
+5. ∀x ((W(x) ∧ ¬P(x)) → (¬J(L(x)) ∧ ¬J(¬L(x))))  — For non-perceivable entities,
+                                                       neither L nor ¬L is justified
+
+Conclusion:
+.: ¬J(∀x (W(x) → L(x)))                        — It's not justified to assert all entities follow logic
+```
+
+**Proof sketch:**
+From (4), it is not justified that all entities are perceivable. So there may be non-perceivable entities. By (5), for any such entity, we cannot justify either L(x) or ¬L(x). Therefore, the universal claim ∀x(W(x) → L(x)) is not justified—for it to be justified, we'd need J(L(x)) for every entity, including non-perceivable ones, which (5) denies.
+
+This corrected formalization:
+
+- Avoids the epistemological/ontological conflation
+- Does not require the unjustified biconditional L(x) ↔ P(x)
+- Only uses the defensible direction P(x) → L(x)
+- Properly captures the informal argument's actual conclusion
+
+### 4.3. A Note on the Biconditional
+
+If you wish to retain the biconditional and the ontological conclusion, you need to provide independent argument for **L(x) → P(x)**. One possible route:
+
+> *Logical principles are constitutively tied to propositional structure. Propositional structure requires a possible cognitive grasp (perceivability). Therefore, logical consistency is only a well-defined property for perceivable entities—for non-perceivable entities, L(x) is not false but **undefined**.*
+> 
+
+But this would require **three-valued logic** or **partial predicates**, where L(x) is neither true nor false for non-perceivable x. In classical logic, your conclusion ¬L(x) asserts that x *violates* logic, which is much stronger than "logic doesn't apply to x."
+
+---
+
+## 5. Additional Philosophical Concerns
+
+### 5.1. The Status of Logical Laws
+
+Your argument treats logical laws as dependent on perceivability. But there is a long tradition (logical realism, Fregean Platonism) that holds logical laws as **mind-independent, ontologically fundamental features of reality**—not dependent on perception or cognition for their applicability. On such views, logical laws apply to all of reality *by their very nature*, and the question of perceivability is irrelevant.
+
+### 5.2. The Analogy with Mathematical Induction
+
+Consider: mathematical induction works for all natural numbers, including those no human has ever contemplated. Similarly, one might argue that logical laws apply to all entities, including non-perceived ones, by the very nature of logical necessity. Your argument needs to address why the "necessity" in "logical necessity" doesn't already entail universality.
+
+### 5.3. A Possible Counter-Argument
+
+A critic might argue:
+
+1. Logical laws are **necessarily** true (they hold in all possible worlds).
+2. Non-perceivable entities, if they exist, exist in the actual world.
+3. The actual world is a possible world.
+4. Therefore, logical laws hold for non-perceivable entities.
+
+Your argument must contend with this modal characterization. Merely saying "we can't verify" doesn't defeat the necessity claim—it just shows we can't *verify* it empirically, which a logical realist would readily concede while insisting the laws hold nonetheless.
+
+### 5.4. Connection to Islamic Philosophy (فلسفه اسلامی)
+
+Your argument has interesting parallels and tensions with Islamic philosophical traditions:
+
+- **Al-Ghazali**: Similarly argued for limits of rational/logical inquiry, particularly regarding divine attributes and the unseen (*ghayb*). However, Ghazali's argument was embedded in a theological framework that yours avoids.
+- **Ibn Sina (Avicenna)**: Would likely resist your conclusion, as he held that logical principles (particularly non-contradiction) are self-evident (*badīhī*) and apply to all of existence, including the metaphysically inaccessible.
+- **Mulla Sadra**: His *transcendent theosophy* (*al-ḥikma al-mutaʿāliya*) might offer a middle ground, where existence (*wujūd*) has gradations, and logical principles apply differently across levels.
+
+---
+
+## 6. Summary of Findings
+
+| Aspect | Assessment |
+| --- | --- |
+| **Philosophical novelty** | Moderate—echoes Kant, Wittgenstein, and Ghazali, but provides a fresh formal articulation |
+| **Informal argument** | Contains a significant epistemological/ontological conflation |
+| **Formal validity** | Valid (the conclusion follows from the premises) |
+| **Formal soundness** | Doubtful (Premise 3's biconditional and Premise 4 are under-supported) |
+| **Formalization accuracy** | Poor (∧/→ confusion; biconditional overclaims; mismatch with informal conclusion) |
+| **Self-consistency** | Questionable (uses logic to undermine logic's universality) |
+| **Bilingual consistency** | The Farsi version is more nuanced and epistemically modest than the formal proof |
+
+### Key Corrections Needed:
+
+1. **Replace the ontological formal conclusion** with an epistemological one using a justification operator.
+2. **Replace the biconditional** L(x) ↔ P(x) with the one-directional P(x) → L(x), unless independent argument for the converse is provided.
+3. **Fix the universal quantifier syntax**: use → not ∧ in the body of universally quantified conditionals.
+4. **Disambiguate "perceivable"** (فهم‌پذیر) explicitly.
+5. **Address the self-referential concern**: explain how the argument can use logic to question logic's scope.
+6. **Engage with logical realism**: address the counter-argument that logical necessity already entails universality.
+
+---
+
+*Reviewed with reference to standards in philosophical logic, formal epistemology, and the history of philosophy (Western and Islamic traditions).*
