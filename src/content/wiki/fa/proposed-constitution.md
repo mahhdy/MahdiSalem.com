@@ -9,6 +9,9 @@ hidden: false
 showInContents: true
 draft: true
 slug: "proposed-constitution"
+coverImage: /images/articles/covers/علت-و-دلیل-تمایزی-نام-گذارانه-یا-ماهوی.webp
+imageDisplay: full
+cardImage: show
 ---
 
 ## پیشگفتار

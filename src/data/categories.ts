@@ -302,6 +302,16 @@ export const categories: Category[] = [
     parentCategory: 'theology',
     contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
   },
+  {
+    slug: 'technology',
+    nameFa: 'تکنولوژی',
+    nameEn: 'Technology',
+    descriptionFa: 'مباحث مربوط به فناوری و دنیای دیجیتال',
+    descriptionEn: 'Topics related to technology and the digital world',
+    imagePath: '/images/categories/technology.svg',
+    parentCategory: 'science',
+    contentTypes: ['articles', 'books', 'proposals', 'statements', 'multimedia', 'dialogues'],
+  },
 ];
 
 /**

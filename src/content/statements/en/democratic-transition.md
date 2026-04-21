@@ -9,6 +9,9 @@ type: statement
 interface: iran
 hidden: false
 showInContents: true
+coverImage: /images/articles/covers/ضرورت-و-علم-الهی.webp
+imageDisplay: full
+cardImage: show
 ---
 
 ## Introduction

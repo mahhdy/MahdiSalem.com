@@ -14,7 +14,7 @@ const path = require('path');
 
 const ROOT = __dirname;
 const SRC_DIR = path.join(ROOT, 'content-source', 'articles', 'fa', 'Medium Posts');
-const INDEX_FILE = path.join(ROOT, 'content-source', 'articles', 'fa', 'Medium Posts 2e6e9556a4c946bab33c5015e1bcb8ce.md');
+const INDEX_FILE = path.join(ROOT, 'content-source', 'articles', 'fa', 'Medium Posts', 'Medium Posts 2e6e9556a4c946bab33c5015e1bcb8ce.md');
 const OUT_FA = path.join(ROOT, 'src', 'content', 'articles', 'fa', 'medium');
 const OUT_EN = path.join(ROOT, 'src', 'content', 'articles', 'en', 'medium');
 const OLD_FA = path.join(ROOT, 'src', 'content', 'articles', 'fa');
@@ -39,8 +39,8 @@ const OVERRIDES = {
   },
   "ChatGPT Struggling with Simple Logical Calculation": {
     lang: 'en',
-    categories: ['philosophy-other', 'methodology'],
-    interface: 'paper',
+    categories: ['philosophy-of-science', 'philosophy-other'],
+    interface: 'tech',
   },
   "What is Superstation خرافه چیست؟": {
     categories: ['methodology', 'epistemology', 'philosophy-of-science'],
@@ -167,8 +167,8 @@ const OVERRIDES = {
     interface: 'paper',
   },
   "زبان؛ شبکه‌ی دلالت، ارجاع و معنا": {
-    categories: ['neuroscience', 'semantics', 'philosophy-other'],
-    interface: 'paper',
+    categories: ['semantics', 'neuroscience', 'philosophy-other'],
+    interface: 'tech',
   },
   "سکولاریسم؛ نقد یک دیدگاه": {
     categories: ['ontology', 'theology', 'foundational-politics'],

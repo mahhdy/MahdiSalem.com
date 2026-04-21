@@ -1,517 +1,422 @@
-{
-  "global_instruction": "Please generate a high-quality, professional article cover image for each entry. The design must be artistic, creative, colorful, and web-optimized (suggested 16:9 aspect ratio). Use the 'suggested_prompt' or the description to guide the 3D abstract style.",
-  "master_style_suffix": "Premium 3D abstract digital art, cinematic lighting, ultra-detailed, vibrant harmonious colors, futuristic, exciting 8k resolution style, artistic and unique.",
-  "articles": [
-    {
-      "title": "Avicenna’s argument for the existence of God- Logi",
-      "description": "Avicenna’s argument for the existence of God is known as the “Possibility-Necessity Argument” and can be formulated as follows:",
-      "target_filename": "Avicennas-argument-for-the-existence-of-God-Logi.png",
-      "category": "philosophy-other",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing Avicenna’s argument for the existence of God- Logi. Avicenna’s argument for the existence of God is known as the “Possibility-Necessity Argument” and can be formulated as follows:. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "Being and Perceivability هستی و درک پذیری",
-      "description": "Exploring the Relationship Between Beliefs and the Real World",
-      "target_filename": "Being-and-Perceivability-هستی-و-درک-پذیری.png",
-      "category": "epistemology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing Being and Perceivability هستی و درک پذیری. Exploring the Relationship Between Beliefs and the Real World. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "ChatGPT Struggling with Simple Logical Calculation",
-      "description": "Despite the considerable advancements in artificial intelligence and natural language processing, the ChatGPT model by OpenAI still encounters difficulties when",
-      "target_filename": "ChatGPT-Struggling-with-Simple-Logical-Calculation.png",
-      "category": "philosophy-other",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing ChatGPT Struggling with Simple Logical Calculation. Despite the considerable advancements in artificial intelligence and natural language processing, the ChatGPT model by OpenAI still encounters difficulties when. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "What is Superstation خرافه چیست؟",
-      "description": "هر سیستمی از باور یا روش و روش هایی برای تولید و تفسیر پدیده ها، که در مقایسه با منبع اصلی معرفتی یک عصر ناسازگار و یا نا همخوان باشند، خرافی خوانده می شوند. به",
-      "target_filename": "What-is-Superstation-خرافه-چیست.png",
-      "category": "methodology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing What is Superstation خرافه چیست؟. هر سیستمی از باور یا روش و روش هایی برای تولید و تفسیر پدیده ها، که در مقایسه با منبع اصلی معرفتی یک عصر ناسازگار و یا نا همخوان باشند، خرافی خوانده می شوند. به. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "آگاهی؛ سوالی سخت و مساله ای در هم تنیده",
-      "description": "عناصر مربوط به آگاهی که در شکل گیری آن سهمی هستند یا از آن متاثر شده اند:",
-      "target_filename": "آگاهی-سوالی-سخت-و-مساله-ای-در-هم-تنیده.png",
-      "category": "neuroscience",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing آگاهی؛ سوالی سخت و مساله ای در هم تنیده. عناصر مربوط به آگاهی که در شکل گیری آن سهمی هستند یا از آن متاثر شده اند:. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "آیا بایدی هست؟",
-      "description": "چالش های باید و هست برای دیدگاه های طبیعت گرا",
-      "target_filename": "آیا-بایدی-هست.png",
-      "category": "philosophy-of-ethics",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing آیا بایدی هست؟. چالش های باید و هست برای دیدگاه های طبیعت گرا. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "آیا می‌توان از امر خودبنیان امر خودمحقق حرف زد؟",
-      "description": "در مقابله ی ممکن و واقع شده، Possible vs Actual (Actualized) آیا می توان صحبتی از امر خود واقع شده/ امر خود محقق کرد؟",
-      "target_filename": "آیا-میتوان-از-امر-خودبنیان-امر-خودمحقق-حرف-زد.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing آیا می‌توان از امر خودبنیان امر خودمحقق حرف زد؟. در مقابله ی ممکن و واقع شده، Possible vs Actual (Actualized) آیا می توان صحبتی از امر خود واقع شده/ امر خود محقق کرد؟. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "آیا واقعیتی هست؟",
-      "description": "آیا واقعیت، گزاره یا توصیف مندی حاصل خطای نادقیق بودن، یا به تعبیری اثر ناظر هستند؟",
-      "target_filename": "آیا-واقعیتی-هست.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing آیا واقعیتی هست؟. آیا واقعیت، گزاره یا توصیف مندی حاصل خطای نادقیق بودن، یا به تعبیری اثر ناظر هستند؟. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "اخلاق منظوم",
-      "description": "جمع مکاتب اخلاقی، برای اخلاقی زیستن هوشمندانه!",
-      "target_filename": "اخلاق-منظوم.png",
-      "category": "prescriptive-ethics",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing اخلاق منظوم. جمع مکاتب اخلاقی، برای اخلاقی زیستن هوشمندانه!. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "اخلاق؛ نهادشناسی اخلاق",
-      "description": "اخلاق در هر دو مفهوم 1- هنجاری (Ethics) و 2- ارزشمحور (Morality) خودش با اختلافاتی، از طریق مفهوم سازی و پاداش سازیِ مفهومی-اجتماعی؛ رفتار مطلوب رو تقویت می کنن",
-      "target_filename": "اخلاق-نهادشناسی-اخلاق.png",
-      "category": "philosophy-of-ethics",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing اخلاق؛ نهادشناسی اخلاق. اخلاق در هر دو مفهوم 1- هنجاری (Ethics) و 2- ارزشمحور (Morality) خودش با اختلافاتی، از طریق مفهوم سازی و پاداش سازیِ مفهومی-اجتماعی؛ رفتار مطلوب رو تقویت می کنن. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "ارزش و رفتار؛ یک پویا شناسی",
-      "description": "در خصوص مبحث متاخری که دیروز نا تمام موند، در مبحث ارزش، به نظر حداقل دو وضعیت هست.",
-      "target_filename": "ارزش-و-رفتار-یک-پویا-شناسی.png",
-      "category": "descriptive-ethics",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing ارزش و رفتار؛ یک پویا شناسی. در خصوص مبحث متاخری که دیروز نا تمام موند، در مبحث ارزش، به نظر حداقل دو وضعیت هست.. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "ایران؛ حاکمیت و عقلانیت ابزاری",
-      "description": "در ایران مشکل اصلی اینه که چرخه ی عقلانیت و تعهد حاکمیت به عقلانیت ابزاری شکسته شده. به همین سادگی؟! حکومت نشانه ای از توجه به مقتضیات…",
-      "target_filename": "ایران-حاکمیت-و-عقلانیت-ابزاری.png",
-      "category": "iran",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing ایران؛ حاکمیت و عقلانیت ابزاری. در ایران مشکل اصلی اینه که چرخه ی عقلانیت و تعهد حاکمیت به عقلانیت ابزاری شکسته شده. به همین سادگی؟! حکومت نشانه ای از توجه به مقتضیات…. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "این استدلال تو شبیه این هست",
-      "description": "3- کلید قفل های بسته را باز می کند برای عبور کردن.",
-      "target_filename": "این-استدلال-تو-شبیه-این-هست.png",
-      "category": "philosophy-other",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing این استدلال تو شبیه این هست. 3- کلید قفل های بسته را باز می کند برای عبور کردن.. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "براهین من درآوردی برای خدا!",
-      "description": "خداسازی و خدابازی، ایده های مفرحی هستند. بنده به مثابه یک فرد غیرباورمند که دلیلی برای باور به یک موجود سوپرنچرال، یا عامل فرامادی در سپهر حیات انسانی و طبیعی ن",
-      "target_filename": "براهین-من-درآوردی-برای-خدا.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing براهین من درآوردی برای خدا!. خداسازی و خدابازی، ایده های مفرحی هستند. بنده به مثابه یک فرد غیرباورمند که دلیلی برای باور به یک موجود سوپرنچرال، یا عامل فرامادی در سپهر حیات انسانی و طبیعی ن. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "بررسی انتقادیِ “برهان فرگشتی برعلیه طبیعت گرایی”",
-      "description": "پوچیِ بنیاد گزاردن یک دیدگاه فلسفی بر عقل بی اعتبار فرگشتی از دیدگاه پلنتیجا (EAAN)",
-      "target_filename": "بررسی-انتقادیِ-برهان-فرگشتی-برعلیه-طبیعت-گرایی.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing بررسی انتقادیِ “برهان فرگشتی برعلیه طبیعت گرایی”. پوچیِ بنیاد گزاردن یک دیدگاه فلسفی بر عقل بی اعتبار فرگشتی از دیدگاه پلنتیجا (EAAN). Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "بررسی تقلیل هستی به داده!",
-      "description": "کدام خاصیت یا خاصیت های هستی غیر قابل تقلیل به داده یا گزاره هستند؟",
-      "target_filename": "بررسی-تقلیل-هستی-به-داده.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing بررسی تقلیل هستی به داده!. کدام خاصیت یا خاصیت های هستی غیر قابل تقلیل به داده یا گزاره هستند؟. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "بهشت زمینی یا بهشت آسمانی؛ انتخابِ اجبار یا اجبارِ",
-      "description": "ترجیح یک شیوه ی زیستی فرضا مدرن و مبتنی بر عقلانیت ابزاری یا سنتی و مبتنی بر عقلانیت استعلایی، چرا، کی و چگونه موجه می شود؟ چرا و چگونه…",
-      "target_filename": "بهشت-زمینی-یا-بهشت-آسمانی-انتخابِ-اجبار-یا-اجبارِ.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing بهشت زمینی یا بهشت آسمانی؛ انتخابِ اجبار یا اجبارِ. ترجیح یک شیوه ی زیستی فرضا مدرن و مبتنی بر عقلانیت ابزاری یا سنتی و مبتنی بر عقلانیت استعلایی، چرا، کی و چگونه موجه می شود؟ چرا و چگونه…. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "تسلسل و دور! بچرخ تا بچرخیم!",
-      "description": "به سادگی می توان تسلسل در مقام اثبات (شناخت) را رد کرد، ولی در مقام ثبوتی نمی توان برای تسلسل موضع قدرتمندی اتخاذ کرد!",
-      "target_filename": "تسلسل-و-دور-بچرخ-تا-بچرخیم.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing تسلسل و دور! بچرخ تا بچرخیم!. به سادگی می توان تسلسل در مقام اثبات (شناخت) را رد کرد، ولی در مقام ثبوتی نمی توان برای تسلسل موضع قدرتمندی اتخاذ کرد!. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "تعابیری فیزیکالیستی از …!",
-      "description": "حرکت چیست؟ حرکت از دید من به وضعیتی اطلاق میشود که در آن، توانایی تبیین گزارهای و توصیف وضعیت به شکل غیر پارامتری میسر نباشد. به زبان دیگر شی متحرک و یا سیستم م",
-      "target_filename": "تعابیری-فیزیکالیستی-از.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing تعابیری فیزیکالیستی از …!. حرکت چیست؟ حرکت از دید من به وضعیتی اطلاق میشود که در آن، توانایی تبیین گزارهای و توصیف وضعیت به شکل غیر پارامتری میسر نباشد. به زبان دیگر شی متحرک و یا سیستم م. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "تفسیر و متن مقدس؛ چالش ها، ارزش ها",
-      "description": "متن مقدس، متنی است که شاکله ی اصلی و بنیاد هدایت تشریعی را در ادیان ابراهیمی بر عهده دارد. این متن در کنار نبی ( پیام آور از موجود عالی/ ذات باری)، دو ستون این ",
-      "target_filename": "تفسیر-و-متن-مقدس-چالش-ها-ارزش-ها.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing تفسیر و متن مقدس؛ چالش ها، ارزش ها. متن مقدس، متنی است که شاکله ی اصلی و بنیاد هدایت تشریعی را در ادیان ابراهیمی بر عهده دارد. این متن در کنار نبی ( پیام آور از موجود عالی/ ذات باری)، دو ستون این . Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "جبر و اختیار؛ یک سازگارگرایی ناسازگار!",
-      "description": "توضیحات امروز من سازگارگرا (Compatibilist) بود. مبتنی بر تفاوت در شرایط و میزان یادگیری و در نتیجه تمایز دستگاههای استنتاجی در ایجنتهای (agents) کنشگر؛ که پاسخ ",
-      "target_filename": "جبر-و-اختیار-یک-سازگارگرایی-ناسازگار.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing جبر و اختیار؛ یک سازگارگرایی ناسازگار!. توضیحات امروز من سازگارگرا (Compatibilist) بود. مبتنی بر تفاوت در شرایط و میزان یادگیری و در نتیجه تمایز دستگاههای استنتاجی در ایجنتهای (agents) کنشگر؛ که پاسخ . Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "جبر یا اختیار؛ ترسیم ایستگاه‌های اندیشه ورزی",
-      "description": "ملاحظات و نیازمندی های یک بررسی عاملانه در خصوص این دغدغه ی شهودی چیست؟",
-      "target_filename": "جبر-یا-اختیار-ترسیم-ایستگاههای-اندیشه-ورزی.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing جبر یا اختیار؛ ترسیم ایستگاه‌های اندیشه ورزی. ملاحظات و نیازمندی های یک بررسی عاملانه در خصوص این دغدغه ی شهودی چیست؟. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "حدوث و قدیم؛ برخی چالش ها",
-      "description": "بحث تجزی و یا لایتجزی. مدتهاست در کلاب هاوس گرم است.",
-      "target_filename": "حدوث-و-قدیم-برخی-چالش-ها.png",
-      "category": "epistemology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing حدوث و قدیم؛ برخی چالش ها. بحث تجزی و یا لایتجزی. مدتهاست در کلاب هاوس گرم است.. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "حصول کثرت از وحدت، چگونه؟",
-      "description": "بدایة الحکمة (darsgoftar.net)(https://darsgoftar.net/mbook/42/2177#:~:text=%D8%A7%DB%8C%D9%86%20%D9%82%D8%A7%D8%B9%D8%AF%D9%87%20%D8%B9%D8%A8%D8%A7%D8%B1%D8%AA%",
-      "target_filename": "حصول-کثرت-از-وحدت-چگونه.png",
-      "category": "semantics",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing حصول کثرت از وحدت، چگونه؟. بدایة الحکمة (darsgoftar.net)(https://darsgoftar.net/mbook/42/2177#:~:text=%D8%A7%DB%8C%D9%86%20%D9%82%D8%A7%D8%B9%D8%AF%D9%87%20%D8%B9%D8%A8%D8%A7%D8%B1%D8%AA%. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "حقیقت و سروش!",
-      "description": "در موضوع ارائه مطلب “حقیقت و روش” اقای عبدالکریم سروش در کلاب هاوس",
-      "target_filename": "حقیقت-و-سروش.png",
-      "category": "descriptive-politics",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing حقیقت و سروش!. در موضوع ارائه مطلب “حقیقت و روش” اقای عبدالکریم سروش در کلاب هاوس. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "حقیقت و واقعیت؛ وحدت یا کثرت!",
-      "description": "به شکل کلی حقیقت عاملی است که تفاوت ها، چند چهرگی ها و اختلافات را در دیدگاهی واحد و یکپارچه گرد هم آوری (خلاصه) می کند. به شکلی استعاری،",
-      "target_filename": "حقیقت-و-واقعیت-وحدت-یا-کثرت.png",
-      "category": "epistemology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing حقیقت و واقعیت؛ وحدت یا کثرت!. به شکل کلی حقیقت عاملی است که تفاوت ها، چند چهرگی ها و اختلافات را در دیدگاهی واحد و یکپارچه گرد هم آوری (خلاصه) می کند. به شکلی استعاری،. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "خدای عملگر!",
-      "description": "اندر باب مسخره بازی ای به نام. “ امکان و وجوب “",
-      "target_filename": "خدای-عملگر.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing خدای عملگر!. اندر باب مسخره بازی ای به نام. “ امکان و وجوب “. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "خطامندی منشا بنیادی شدن",
-      "description": "خطا و کامل نبودن به مثابه دلیل اصلی صیروریت و شدن",
-      "target_filename": "خطامندی-منشا-بنیادی-شدن.png",
-      "category": "epistemology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing خطامندی منشا بنیادی شدن. خطا و کامل نبودن به مثابه دلیل اصلی صیروریت و شدن. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "در توضیح موضع آتئیستی و حدود ادعاهای معرفت شناختی",
-      "description": "فرض کنید، جسمی از دور نزدیک می شود، عده ای ایده هایی و داستان هایی در خصوص آن دارند. یا حادثه ای رخ داده است که غرابت زیادی برای افراد داشته و برای آن ها درک پذ",
-      "target_filename": "در-توضیح-موضع-آتئیستی-و-حدود-ادعاهای-معرفت-شناختی.png",
-      "category": "epistemology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing در توضیح موضع آتئیستی و حدود ادعاهای معرفت شناختی. فرض کنید، جسمی از دور نزدیک می شود، عده ای ایده هایی و داستان هایی در خصوص آن دارند. یا حادثه ای رخ داده است که غرابت زیادی برای افراد داشته و برای آن ها درک پذ. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "در چرایی مجازات!",
-      "description": "مجازات چیست با چه مفاهیمی هم خانواده است و با آن ها چه تفاوتی دارد.",
-      "target_filename": "در-چرایی-مجازات.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing در چرایی مجازات!. مجازات چیست با چه مفاهیمی هم خانواده است و با آن ها چه تفاوتی دارد.. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "ذات و صفات و معناداری",
-      "description": "آیا تفکیک سلبیه و ثبوتیه بودن صفات و قابلیت تصدیق آن به امر واجب معنا دار است؟",
-      "target_filename": "ذات-و-صفات-و-معناداری.png",
-      "category": "methodology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing ذات و صفات و معناداری. آیا تفکیک سلبیه و ثبوتیه بودن صفات و قابلیت تصدیق آن به امر واجب معنا دار است؟. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "ذات گرایی و اسلام",
-      "description": "در مباحثه ی وریا، ویشتاسب و مبحث اسلام حقیقتی یکان دارد!",
-      "target_filename": "ذات-گرایی-و-اسلام.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing ذات گرایی و اسلام. در مباحثه ی وریا، ویشتاسب و مبحث اسلام حقیقتی یکان دارد!. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "رابطه ی معرفت دینی و معرفت بشری",
-      "description": "(برداشت های بنده از صحبت های انتهایی مرتضی سرابی در گفتگو با فرج سرکوهی)",
-      "target_filename": "رابطه-ی-معرفت-دینی-و-معرفت-بشری.png",
-      "category": "methodology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing رابطه ی معرفت دینی و معرفت بشری. (برداشت های بنده از صحبت های انتهایی مرتضی سرابی در گفتگو با فرج سرکوهی). Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "رابطه‌ی معرفت دینی و معرفت بشری",
-      "description": "(برداشت های بنده از صحبت های انتهایی مرتضی سرابی در گفتگو با فرج سرکوهی)",
-      "target_filename": "رابطهی-معرفت-دینی-و-معرفت-بشری.png",
-      "category": "philosophy-of-science",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing رابطه‌ی معرفت دینی و معرفت بشری. (برداشت های بنده از صحبت های انتهایی مرتضی سرابی در گفتگو با فرج سرکوهی). Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "زبان؛ شبکه‌ی دلالت، ارجاع و معنا",
-      "description": "از دید من عقل سلیم، برآیند تاریخی (گذشتهنگر) درک محیط طبیعی و انسانی در بین انسانهای در ارتباط (جامعهی زبانی مرتبط) هست. به عبارت دیگه، مرکزیت و اشتراک عمومی در",
-      "target_filename": "زبان-شبکهی-دلالت-ارجاع-و-معنا.png",
-      "category": "neuroscience",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing زبان؛ شبکه‌ی دلالت، ارجاع و معنا. از دید من عقل سلیم، برآیند تاریخی (گذشتهنگر) درک محیط طبیعی و انسانی در بین انسانهای در ارتباط (جامعهی زبانی مرتبط) هست. به عبارت دیگه، مرکزیت و اشتراک عمومی در. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "سکولاریسم؛ نقد یک دیدگاه",
-      "description": "خلاصه ای از استدلال مرتضی سرابی در دفاع از حکومت دینی و نه گفتن به سکولاریزم:",
-      "target_filename": "سکولاریسم-نقد-یک-دیدگاه.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing سکولاریسم؛ نقد یک دیدگاه. خلاصه ای از استدلال مرتضی سرابی در دفاع از حکومت دینی و نه گفتن به سکولاریزم:. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "شعبده بازی چیست؟ برهان شعبده بازانه کدام است!",
-      "description": "شعبده بازها، ترتیبات مخفی و پنهانی در اختیار دارند که روند امور را به ما متفاوت جلوه می دهند. قرمزی لیوانی که ما می بینیم از محتوای آن نیست،",
-      "target_filename": "شعبده-بازی-چیست-برهان-شعبده-بازانه-کدام-است.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing شعبده بازی چیست؟ برهان شعبده بازانه کدام است!. شعبده بازها، ترتیبات مخفی و پنهانی در اختیار دارند که روند امور را به ما متفاوت جلوه می دهند. قرمزی لیوانی که ما می بینیم از محتوای آن نیست،. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "صدق و کذب از کجاست؟",
-      "description": "نویز و چگونگی حصول به صدق و کذب (از تک ارزشی به چند ارزشی!)",
-      "target_filename": "صدق-و-کذب-از-کجاست.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing صدق و کذب از کجاست؟. نویز و چگونگی حصول به صدق و کذب (از تک ارزشی به چند ارزشی!). Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "صدق یا اثبات",
-      "description": "1- صدق و توجیه به باورها و گرایش های گزاره ای مرتبط هستند.",
-      "target_filename": "صدق-یا-اثبات.png",
-      "category": "proof-theory",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing صدق یا اثبات. 1- صدق و توجیه به باورها و گرایش های گزاره ای مرتبط هستند.. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "صیروریت، شدن (Becoming)",
-      "description": "تفاسیر و تصاویر علی از صیروریت/ شدن (Becoming) هستی:",
-      "target_filename": "صیروریت-شدن-Becoming.png",
-      "category": "philosophy-of-mathematics",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing صیروریت، شدن (Becoming). تفاسیر و تصاویر علی از صیروریت/ شدن (Becoming) هستی:. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "ضرورت و علم الهی!",
-      "description": "در بی خوابی و مطالعه ی اتفاقی مجدد! مقاله ی” بررسی تمایز جهت جمله و جهت شیء از دیدگاه پلنتینگا”",
-      "target_filename": "ضرورت-و-علم-الهی.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing ضرورت و علم الهی!. در بی خوابی و مطالعه ی اتفاقی مجدد! مقاله ی” بررسی تمایز جهت جمله و جهت شیء از دیدگاه پلنتینگا”. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "طبیعت گرایی؛ خام یا اصیل",
-      "description": "چالش های طبیعت گرایی؛ آیا تقلیل ناگرایی ممکن است؟",
-      "target_filename": "طبیعت-گرایی-خام-یا-اصیل.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing طبیعت گرایی؛ خام یا اصیل. چالش های طبیعت گرایی؛ آیا تقلیل ناگرایی ممکن است؟. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "طرح اولیه‌ی مبارزه‌ی موثر",
-      "description": "ایده هایی برای یک تغییر اجتماعی-سیاسی موثر!",
-      "target_filename": "طرح-اولیهی-مبارزهی-موثر.png",
-      "category": "iran",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing طرح اولیه‌ی مبارزه‌ی موثر. ایده هایی برای یک تغییر اجتماعی-سیاسی موثر!. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "عقلانیت انقلابی، چگونه!",
-      "description": "چگونه میتوان، قدمهای مطمئنی با کمترین ریسک بازگشتپذیری یا بینتیجه بودن در راستای تغییرات بنیادین و ضروری برداشت؟",
-      "target_filename": "عقلانیت-انقلابی-چگونه.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing عقلانیت انقلابی، چگونه!. چگونه میتوان، قدمهای مطمئنی با کمترین ریسک بازگشتپذیری یا بینتیجه بودن در راستای تغییرات بنیادین و ضروری برداشت؟. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "علت و دلیل، تمایزی نام گذارانه یا ماهوی!",
-      "description": "آیا علیت بر اشیا حادث می شود؟ یا برهم کنش رویدادها است؟ و یا نتیجه ی وضعیت و چینشی خاص از ویژگی ها است به شکلی که نتیجه ی بر هم افتادن و “عملیات پذیری آن ویژگی ",
-      "target_filename": "علت-و-دلیل-تمایزی-نام-گذارانه-یا-ماهوی.png",
-      "category": "epistemology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing علت و دلیل، تمایزی نام گذارانه یا ماهوی!. آیا علیت بر اشیا حادث می شود؟ یا برهم کنش رویدادها است؟ و یا نتیجه ی وضعیت و چینشی خاص از ویژگی ها است به شکلی که نتیجه ی بر هم افتادن و “عملیات پذیری آن ویژگی . Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "علم و دین",
-      "description": "دیشب (یکشنبه شب) در جلسه ی علم و دین دکتر عبدالکریم سروش حاضر بودم.",
-      "target_filename": "علم-و-دین.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing علم و دین. دیشب (یکشنبه شب) در جلسه ی علم و دین دکتر عبدالکریم سروش حاضر بودم.. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "علم و دین؛ نقادی سخنرانی عبدالکریم سروش",
-      "description": "معرفی اجمالی سخنرانی در صفحه ی بنیاد سهروردی",
-      "target_filename": "علم-و-دین-نقادی-سخنرانی-عبدالکریم-سروش.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing علم و دین؛ نقادی سخنرانی عبدالکریم سروش. معرفی اجمالی سخنرانی در صفحه ی بنیاد سهروردی. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "علم و ضرورت، چشم‌پوشی یا فراموشی!",
-      "description": "رابطه ی اصل یکنواختی طبیعت Nature Unity ، Law of Nature ، با ضرورت قانونی کارل همپل و همچنین مفهوم موجبیت determination چیست؟",
-      "target_filename": "علم-و-ضرورت-چشمپوشی-یا-فراموشی.png",
-      "category": "methodology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing علم و ضرورت، چشم‌پوشی یا فراموشی!. رابطه ی اصل یکنواختی طبیعت Nature Unity ، Law of Nature ، با ضرورت قانونی کارل همپل و همچنین مفهوم موجبیت determination چیست؟. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "علیت و ابطال پذیری! پرسش و پاسخی در کلاب هاوس",
-      "description": "سوال اول رو به صورت بخش بندی شده پاسخ های کوتاه کوتاه داده ام.",
-      "target_filename": "علیت-و-ابطال-پذیری-پرسش-و-پاسخی-در-کلاب-هاوس.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing علیت و ابطال پذیری! پرسش و پاسخی در کلاب هاوس. سوال اول رو به صورت بخش بندی شده پاسخ های کوتاه کوتاه داده ام.. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "علیت و مبانی تحلیلی آن",
-      "description": "مقدمات و مبانی حصول به روابط علی در یک سیستم",
-      "target_filename": "علیت-و-مبانی-تحلیلی-آن.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing علیت و مبانی تحلیلی آن. مقدمات و مبانی حصول به روابط علی در یک سیستم. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "علیت، چیستی، چرایی و چگونگی",
-      "description": "این متن پیش نویس و راهنمای ارائه بحث در جلسه ی کلاب هاوسی من و خشایار ایرانی و دکتر مهدی و خشایار عفیفی عزیز بود که با اندکی افزونه اینجا ارائه شده است. بنابرای",
-      "target_filename": "علیت-چیستی-چرایی-و-چگونگی.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing علیت، چیستی، چرایی و چگونگی. این متن پیش نویس و راهنمای ارائه بحث در جلسه ی کلاب هاوسی من و خشایار ایرانی و دکتر مهدی و خشایار عفیفی عزیز بود که با اندکی افزونه اینجا ارائه شده است. بنابرای. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "فرگشت؛ علم یا آرزو",
-      "description": "چرا باید به دلیل اینکه یک تئوری احتمال تایید سوگیری های و ارزش های ذهنی ما رو به همراه داشته باشند یا نداشته باشد (حداقل در نگاه و درک…",
-      "target_filename": "فرگشت-علم-یا-آرزو.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing فرگشت؛ علم یا آرزو. چرا باید به دلیل اینکه یک تئوری احتمال تایید سوگیری های و ارزش های ذهنی ما رو به همراه داشته باشند یا نداشته باشد (حداقل در نگاه و درک…. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "فلسفه‌ی ذهن",
-      "description": "هستی در چه تعبیری متحرک است و در چه تعبیری غیر متحرک، آیا هستی محرک لایتحرک است؟",
-      "target_filename": "فلسفهی-ذهن.png",
-      "category": "neuroscience",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing فلسفه‌ی ذهن. هستی در چه تعبیری متحرک است و در چه تعبیری غیر متحرک، آیا هستی محرک لایتحرک است؟. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "متافیزیک‌ها…",
-      "description": "اهمیت داشتن تصویر و تعبیری دقیق و اتمیک از هستیشناسی مفاهیم رابطهای و عملگرها",
-      "target_filename": "متافیزیکها.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing متافیزیک‌ها…. اهمیت داشتن تصویر و تعبیری دقیق و اتمیک از هستیشناسی مفاهیم رابطهای و عملگرها. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "محدود یا نامحدود بودن عالم!",
-      "description": "تحلیل مفهومی محدود بودن و نهایت داشتن و بر هم حد زدن (تمایز آفرینی) در هر جهان/مجموعهی مفروض",
-      "target_filename": "محدود-یا-نامحدود-بودن-عالم.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing محدود یا نامحدود بودن عالم!. تحلیل مفهومی محدود بودن و نهایت داشتن و بر هم حد زدن (تمایز آفرینی) در هر جهان/مجموعهی مفروض. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "مشکل وحدت-کثرت و راه حل سیستم بودن!",
-      "description": "ایده ای برای تشریح مشکل در بررسی تحلیلی گسسته و پیوستگی و مقوله ای قابلیت مپ شدن گسسته در یک امر پیوسته!",
-      "target_filename": "مشکل-وحدت-کثرت-و-راه-حل-سیستم-بودن.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing مشکل وحدت-کثرت و راه حل سیستم بودن!. ایده ای برای تشریح مشکل در بررسی تحلیلی گسسته و پیوستگی و مقوله ای قابلیت مپ شدن گسسته در یک امر پیوسته!. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "نامه‌ای به رحمت!",
-      "description": "شما حرکت خوبی شروع کردی، یک کار جمعی واقعا خوب و مهم. ما هنوز تو کار جمعی خیلی ضعیف هستیم. احتمالا دیدی من حتی این ایده رو داشتم که بتونیم حرکت حزبی رو هم تمرین",
-      "target_filename": "نامهای-به-رحمت.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing نامه‌ای به رحمت!. شما حرکت خوبی شروع کردی، یک کار جمعی واقعا خوب و مهم. ما هنوز تو کار جمعی خیلی ضعیف هستیم. احتمالا دیدی من حتی این ایده رو داشتم که بتونیم حرکت حزبی رو هم تمرین. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "نظریه بازی‌ها",
-      "description": "نظریه بازیها شاخهای از ریاضیات و اقتصاد است که به مطالعه رفتارهای رقابتی و تعاونی بین بازیکنان میپردازد. در نظریه بازیها، تعدادی مفهوم اساسی وجود دارد که کمک می",
-      "target_filename": "نظریه-بازیها.png",
-      "category": "economics",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing نظریه بازی‌ها. نظریه بازیها شاخهای از ریاضیات و اقتصاد است که به مطالعه رفتارهای رقابتی و تعاونی بین بازیکنان میپردازد. در نظریه بازیها، تعدادی مفهوم اساسی وجود دارد که کمک می. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "نظم یا بی‌نظمی، مساله این است!",
-      "description": "بر اساس اصل آنتروپیک Anthropic Principle (اصل انسان نگر) جایی که سوال از نظم و قاعده و علم باشد، شرایط به گونه ای بوده است که چنین سوال قابل طرح باشد. یعنی صرف ",
-      "target_filename": "نظم-یا-بینظمی-مساله-این-است.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing نظم یا بی‌نظمی، مساله این است!. بر اساس اصل آنتروپیک Anthropic Principle (اصل انسان نگر) جایی که سوال از نظم و قاعده و علم باشد، شرایط به گونه ای بوده است که چنین سوال قابل طرح باشد. یعنی صرف . Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "نقد و بررسی برهان امکان و وجوب",
-      "description": "در تفسیر طبیعتگرا از هستی، هستی به عنوان یک سیستم پیچیده شناخته میشود، سیستمی شامل اجزا و روابطی که وضعیت شهودی و تجربی ما را شکل می دهد. هستی در کلیت خود به عن",
-      "target_filename": "نقد-و-بررسی-برهان-امکان-و-وجوب.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing نقد و بررسی برهان امکان و وجوب. در تفسیر طبیعتگرا از هستی، هستی به عنوان یک سیستم پیچیده شناخته میشود، سیستمی شامل اجزا و روابطی که وضعیت شهودی و تجربی ما را شکل می دهد. هستی در کلیت خود به عن. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "نوع شناسی هستی",
-      "description": "ایده ی این مطلب این است که اگر قبول کنیم، تحویل پذیری ملاک خوبی برای تفکیک و گروه بندی ویژگی ها است. چه گروه هایی از ویژگی ها، توضیح دهنده ی شهودی هستند که ما ا",
-      "target_filename": "نوع-شناسی-هستی.png",
-      "category": "ontology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing نوع شناسی هستی. ایده ی این مطلب این است که اگر قبول کنیم، تحویل پذیری ملاک خوبی برای تفکیک و گروه بندی ویژگی ها است. چه گروه هایی از ویژگی ها، توضیح دهنده ی شهودی هستند که ما ا. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "هستی‌شناسی و معرفت‌شناسی اخلاق، باورمند غیرباورمند",
-      "description": "آیا باورمندی و اعتقادات فرای طبیعی در اخلاقی بودن و تبیین اخلاق یاری رسان است؟",
-      "target_filename": "هستیشناسی-و-معرفتشناسی-اخلاق-باورمند-غیرباورمند.png",
-      "category": "philosophy-of-ethics",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing هستی‌شناسی و معرفت‌شناسی اخلاق، باورمند غیرباورمند. آیا باورمندی و اعتقادات فرای طبیعی در اخلاقی بودن و تبیین اخلاق یاری رسان است؟. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "پیامبری و عاشقی…",
-      "description": "عشق و عاشقی، معیاری برای تشخیص پیامبری راستین!",
-      "target_filename": "پیامبری-و-عاشقی.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing پیامبری و عاشقی…. عشق و عاشقی، معیاری برای تشخیص پیامبری راستین!. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "چارچوبی برای مقایسه‌ی تبیین‌ها! نظریه‌ها!",
-      "description": "چه مدلی و متغیرهای برای مقایسه ی نظریه ها و تبیین ها معتبر است؟",
-      "target_filename": "چارچوبی-برای-مقایسهی-تبیینها-نظریهها.png",
-      "category": "epistemology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing چارچوبی برای مقایسه‌ی تبیین‌ها! نظریه‌ها!. چه مدلی و متغیرهای برای مقایسه ی نظریه ها و تبیین ها معتبر است؟. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "چالش‌های علم و امتزاج علم و خدا!",
-      "description": "اگر امر فراطبیعی را در قواعد و تحلیل علمی خود بیاوریم، در اصل چه کرده ایم؟ خیلی ساده آن را در اصل طبیعی کرده ایم! (مانند هر پارامتر دیگری در طبیعت!)",
-      "target_filename": "چالشهای-علم-و-امتزاج-علم-و-خدا.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing چالش‌های علم و امتزاج علم و خدا!. اگر امر فراطبیعی را در قواعد و تحلیل علمی خود بیاوریم، در اصل چه کرده ایم؟ خیلی ساده آن را در اصل طبیعی کرده ایم! (مانند هر پارامتر دیگری در طبیعت!). Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "چرا برده‌داری موجه هست یا نیست!",
-      "description": "ساختارگرایی و ساختار قدرت درست و غلط را بوجود می آورد یا درست و غلط را برای تحقق، ممکن یا ناممکن می کند؟",
-      "target_filename": "چرا-بردهداری-موجه-هست-یا-نیست.png",
-      "category": "philosophy-of-ethics",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing چرا برده‌داری موجه هست یا نیست!. ساختارگرایی و ساختار قدرت درست و غلط را بوجود می آورد یا درست و غلط را برای تحقق، ممکن یا ناممکن می کند؟. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "چرا سنت اندیشی؟ یا نسبی گرایی پر رنگ فرهنگی-اخلاقی",
-      "description": "در نقد نگاه خشایار ایرانی در دفاع از سنت گرایی و نسبی گرایی شدید فرهنگی در حوزه ی ارزش های بینا فردی/ اخلاق",
-      "target_filename": "چرا-سنت-اندیشی-یا-نسبی-گرایی-پر-رنگ-فرهنگی-اخلاقی.png",
-      "category": "philosophy-of-ethics",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing چرا سنت اندیشی؟ یا نسبی گرایی پر رنگ فرهنگی-اخلاقی. در نقد نگاه خشایار ایرانی در دفاع از سنت گرایی و نسبی گرایی شدید فرهنگی در حوزه ی ارزش های بینا فردی/ اخلاق. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "“خطرات “رفع خطر احتمالی!",
-      "description": "آیا پذیرش شرطبندی پاسکال به خداباوری میانجامد؟ به دین باوری میانجامد یا به همه چیز باوری!",
-      "target_filename": "خطرات-رفع-خطر-احتمالی.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing “خطرات “رفع خطر احتمالی!. آیا پذیرش شرطبندی پاسکال به خداباوری میانجامد؟ به دین باوری میانجامد یا به همه چیز باوری!. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "“در چرایی “نه به تنظیم دقیق!",
-      "description": "جهان خاص، منحصر به فرد و تنظیم شده، یا جهانی غیر خاص در میان انبوه جهان ها و انبوه تنظیمات همه مطلوب!",
-      "target_filename": "در-چرایی-نه-به-تنظیم-دقیق.png",
-      "category": "theology",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing “در چرایی “نه به تنظیم دقیق!. جهان خاص، منحصر به فرد و تنظیم شده، یا جهانی غیر خاص در میان انبوه جهان ها و انبوه تنظیمات همه مطلوب!. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "راهبرد گذار دموکراتیک ایران: نهادها، مشارکت و همکاری",
-      "description": "طرحی ابتدایی برای گذار مسالمت‌آمیز به دموکراسی",
-      "target_filename": "iran-transition-article.png",
-      "category": "general",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing راهبرد گذار دموکراتیک ایران: نهادها، مشارکت و همکاری. طرحی ابتدایی برای گذار مسالمت‌آمیز به دموکراسی. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "نقش ارتش در انقلاب‌ها: خلاصه‌ای از یک مطالعه‌ی تطبیقی جامع",
-      "description": "نسخه‌ی خلاصه شده و شماتیک از یک مطالعه‌ی تطبیقی جامع در مورد نقش ارتش در سرنوشت انقلاب‌ها با تحلیل ۱۵ انقلاب تاریخی و ارائه الگوهای رفتار نظامی",
-      "target_filename": "Militaries-and-Revolutions.png",
-      "category": "general",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing نقش ارتش در انقلاب‌ها: خلاصه‌ای از یک مطالعه‌ی تطبیقی جامع. نسخه‌ی خلاصه شده و شماتیک از یک مطالعه‌ی تطبیقی جامع در مورد نقش ارتش در سرنوشت انقلاب‌ها با تحلیل ۱۵ انقلاب تاریخی و ارائه الگوهای رفتار نظامی. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "فهرست جامع شیوه‌های مبارزاتی: از خشونت‌پرهیز تا خشن",
-      "description": "مروری ساختارمند، تطبیقی و تاریخی بر طیف‌های مختلف کنش و مبارزه سیاسی/اجتماعی، همراه با نمونه‌ها و نمودارهای خلاصه.",
-      "target_filename": "violent-non-violent.png",
-      "category": "general",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing فهرست جامع شیوه‌های مبارزاتی: از خشونت‌پرهیز تا خشن. مروری ساختارمند، تطبیقی و تاریخی بر طیف‌های مختلف کنش و مبارزه سیاسی/اجتماعی، همراه با نمونه‌ها و نمودارهای خلاصه.. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    },
-    {
-      "title": "🔥 راهنمای جامع روش‌ها و شیوه‌های مبارزاتی",
-      "description": "تحلیل طیف کامل روش‌های مقاومت و مبارزه از خشونت‌پرهیزی تا مسلحانه",
-      "target_filename": "violent-non-violent_2.png",
-      "category": "general",
-      "suggested_prompt": "A premium, cinematic, ultra-detailed 3D abstract digital art piece representing 🔥 راهنمای جامع روش‌ها و شیوه‌های مبارزاتی. تحلیل طیف کامل روش‌های مقاومت و مبارزه از خشونت‌پرهیزی تا مسلحانه. Artistic and creative, vibrant colors, cinematic lighting, exciting aesthetic. 8k resolution style."
-    }
-  ]
-}
+[
+  {
+    "title": "Avicenna’s argument for the existence of God- Logi",
+    "description": "A deep philosophical/scientific exploration of Avicenna’s argument for the existence of God- Logi",
+    "category_slug": "philosophy-other",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to philosophy-other"
+  },
+  {
+    "title": "Being and Perceivability هستی و درک پذیری",
+    "description": "A deep philosophical/scientific exploration of topics related to Being and Perceivability هستی و درک پذیری",
+    "category_slug": "epistemology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to epistemology, ontology, philosophy-other"
+  },
+  {
+    "title": "ChatGPT Struggling with Simple Logical Calculation",
+    "description": "A deep philosophical/scientific exploration of topics related to ChatGPT Struggling with Simple Logical Calculation",
+    "category_slug": "philosophy-of-science",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to philosophy-of-science, philosophy-other"
+  },
+  {
+    "title": "Medium Posts",
+    "description": "A deep philosophical/scientific exploration of Medium Posts",
+    "category_slug": "philosophy-other",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to philosophy-other"
+  },
+  {
+    "title": "What is Superstation خرافه چیست؟",
+    "description": "A deep philosophical/scientific exploration of What is Superstation خرافه چیست؟",
+    "category_slug": "methodology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to methodology, epistemology, philosophy-of-science"
+  },
+  {
+    "title": "آگاهی؛ سوالی سخت و مساله ای در هم تنیده",
+    "description": "A deep philosophical/scientific exploration of آگاهی؛ سوالی سخت و مساله ای در هم تنیده",
+    "category_slug": "neuroscience",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to neuroscience, philosophy-other, life"
+  },
+  {
+    "title": "آیا بایدی هست؟",
+    "description": "A deep philosophical/scientific exploration of آیا بایدی هست؟",
+    "category_slug": "philosophy-of-ethics",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to philosophy-of-ethics, ontology, philosophy-other"
+  },
+  {
+    "title": "آیا می‌توان از امر خودبنیان امر خودمحقق حرف زد؟",
+    "description": "A deep philosophical/scientific exploration of آیا می‌توان از امر خودبنیان امر خودمحقق حرف زد؟",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, ontology, philosophy-other"
+  },
+  {
+    "title": "آیا واقعیتی هست؟",
+    "description": "A deep philosophical/scientific exploration of آیا واقعیتی هست؟",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, epistemology, philosophy-other"
+  },
+  {
+    "title": "اخلاق منظوم",
+    "description": "A deep philosophical/scientific exploration of اخلاق منظوم",
+    "category_slug": "prescriptive-ethics",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to prescriptive-ethics, philosophy-of-ethics"
+  },
+  {
+    "title": "اخلاق؛ نهادشناسی اخلاق",
+    "description": "A deep philosophical/scientific exploration of اخلاق؛ نهادشناسی اخلاق",
+    "category_slug": "philosophy-of-ethics",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to philosophy-of-ethics, descriptive-ethics, life"
+  },
+  {
+    "title": "ارزش و رفتار؛ یک پویا شناسی",
+    "description": "A deep philosophical/scientific exploration of ارزش و رفتار؛ یک پویا شناسی",
+    "category_slug": "descriptive-ethics",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to descriptive-ethics, philosophy-of-ethics, life"
+  },
+  {
+    "title": "ایران؛ حاکمیت و عقلانیت ابزاری",
+    "description": "A deep philosophical/scientific exploration of ایران؛ حاکمیت و عقلانیت ابزاری",
+    "category_slug": "iran",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to iran, foundational-politics, descriptive-politics"
+  },
+  {
+    "title": "این استدلال تو شبیه این هست",
+    "description": "A deep philosophical/scientific exploration of این استدلال تو شبیه این هست",
+    "category_slug": "philosophy-other",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to philosophy-other, epistemology"
+  },
+  {
+    "title": "براهین من درآوردی برای خدا!",
+    "description": "A deep philosophical/scientific exploration of براهین من درآوردی برای خدا!",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, ontology, philosophy-other"
+  },
+  {
+    "title": "بررسی انتقادیِ “برهان فرگشتی برعلیه طبیعت گرایی”",
+    "description": "A deep philosophical/scientific exploration of بررسی انتقادیِ “برهان فرگشتی برعلیه طبیعت گرایی”",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, biology, philosophy-of-science"
+  },
+  {
+    "title": "بررسی تقلیل هستی به داده!",
+    "description": "A deep philosophical/scientific exploration of بررسی تقلیل هستی به داده!",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, philosophy-other, philosophy-of-science"
+  },
+  {
+    "title": "بهشت زمینی یا بهشت آسمانی؛ انتخابِ اجبار یا اجبارِ",
+    "description": "A deep philosophical/scientific exploration of بهشت زمینی یا بهشت آسمانی؛ انتخابِ اجبار یا اجبارِ",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, theology, philosophy-of-ethics"
+  },
+  {
+    "title": "تسلسل و دور! بچرخ تا بچرخیم!",
+    "description": "A deep philosophical/scientific exploration of تسلسل و دور! بچرخ تا بچرخیم!",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, ontology, philosophy-other"
+  },
+  {
+    "title": "تعابیری فیزیکالیستی از …!",
+    "description": "A deep philosophical/scientific exploration of تعابیری فیزیکالیستی از …!",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, ontology, physics"
+  },
+  {
+    "title": "تفسیر و متن مقدس؛ چالش ها، ارزش ها",
+    "description": "A deep philosophical/scientific exploration of تفسیر و متن مقدس؛ چالش ها، ارزش ها",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, epistemology, philosophy-of-ethics"
+  },
+  {
+    "title": "جبر و اختیار؛ یک سازگارگرایی ناسازگار!",
+    "description": "A deep philosophical/scientific exploration of جبر و اختیار؛ یک سازگارگرایی ناسازگار!",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, philosophy-of-ethics, ontology"
+  },
+  {
+    "title": "جبر یا اختیار؛ ترسیم ایستگاه‌های اندیشه ورزی",
+    "description": "A deep philosophical/scientific exploration of جبر یا اختیار؛ ترسیم ایستگاه‌های اندیشه ورزی",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, theology, philosophy-other"
+  },
+  {
+    "title": "حدوث و قدیم؛ برخی چالش ها",
+    "description": "A deep philosophical/scientific exploration of حدوث و قدیم؛ برخی چالش ها",
+    "category_slug": "epistemology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to epistemology, ontology, theology"
+  },
+  {
+    "title": "حصول کثرت از وحدت، چگونه؟",
+    "description": "A deep philosophical/scientific exploration of حصول کثرت از وحدت، چگونه؟",
+    "category_slug": "semantics",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to semantics, theology, ontology"
+  },
+  {
+    "title": "حقیقت و سروش!",
+    "description": "A deep philosophical/scientific exploration of حقیقت و سروش!",
+    "category_slug": "descriptive-politics",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to descriptive-politics, epistemology, life"
+  },
+  {
+    "title": "حقیقت و واقعیت؛ وحدت یا کثرت!",
+    "description": "A deep philosophical/scientific exploration of حقیقت و واقعیت؛ وحدت یا کثرت!",
+    "category_slug": "epistemology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to epistemology, ontology, semantics"
+  },
+  {
+    "title": "خدای عملگر!",
+    "description": "A deep philosophical/scientific exploration of خدای عملگر!",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, ontology, philosophy-other"
+  },
+  {
+    "title": "خطامندی منشا بنیادی شدن",
+    "description": "A deep philosophical/scientific exploration of خطامندی منشا بنیادی شدن",
+    "category_slug": "epistemology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to epistemology, philosophy-of-science, methodology"
+  },
+  {
+    "title": "در توضیح موضع آتئیستی و حدود ادعاهای معرفت شناختی",
+    "description": "A deep philosophical/scientific exploration of در توضیح موضع آتئیستی و حدود ادعاهای معرفت شناختی",
+    "category_slug": "epistemology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to epistemology, philosophy-other, theology"
+  },
+  {
+    "title": "در چرایی مجازات!",
+    "description": "A deep philosophical/scientific exploration of در چرایی مجازات!",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, applied-ethics, philosophy-of-ethics"
+  },
+  {
+    "title": "ذات و صفات و معناداری",
+    "description": "A deep philosophical/scientific exploration of ذات و صفات و معناداری",
+    "category_slug": "methodology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to methodology, semantics, theology"
+  },
+  {
+    "title": "ذات گرایی و اسلام",
+    "description": "A deep philosophical/scientific exploration of ذات گرایی و اسلام",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, theology, epistemology"
+  },
+  {
+    "title": "رابطه ی معرفت دینی و معرفت بشری",
+    "description": "A deep philosophical/scientific exploration of رابطه ی معرفت دینی و معرفت بشری",
+    "category_slug": "methodology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to methodology, epistemology, theology"
+  },
+  {
+    "title": "رابطه‌ی معرفت دینی و معرفت بشری",
+    "description": "A deep philosophical/scientific exploration of رابطه‌ی معرفت دینی و معرفت بشری",
+    "category_slug": "philosophy-of-science",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to philosophy-of-science, epistemology, methodology"
+  },
+  {
+    "title": "زبان؛ شبکه‌ی دلالت، ارجاع و معنا",
+    "description": "A deep philosophical/scientific exploration of زبان؛ شبکه‌ی دلالت، ارجاع و معنا",
+    "category_slug": "semantics",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to semantics, neuroscience, philosophy-other"
+  },
+  {
+    "title": "سکولاریسم؛ نقد یک دیدگاه",
+    "description": "A deep philosophical/scientific exploration of سکولاریسم؛ نقد یک دیدگاه",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, theology, foundational-politics"
+  },
+  {
+    "title": "شعبده بازی چیست؟ برهان شعبده بازانه کدام است!",
+    "description": "A deep philosophical/scientific exploration of شعبده بازی چیست؟ برهان شعبده بازانه کدام است!",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, philosophy-other, epistemology"
+  },
+  {
+    "title": "صدق و کذب از کجاست؟",
+    "description": "A deep philosophical/scientific exploration of صدق و کذب از کجاست؟",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, semantics, epistemology"
+  },
+  {
+    "title": "صدق یا اثبات",
+    "description": "A deep philosophical/scientific exploration of صدق یا اثبات",
+    "category_slug": "proof-theory",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to proof-theory, semantics, philosophy-other"
+  },
+  {
+    "title": "صیروریت، شدن (Becoming)",
+    "description": "A deep philosophical/scientific exploration of صیروریت، شدن (Becoming)",
+    "category_slug": "philosophy-of-mathematics",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to philosophy-of-mathematics, ontology, physics"
+  },
+  {
+    "title": "ضرورت و علم الهی!",
+    "description": "A deep philosophical/scientific exploration of ضرورت و علم الهی!",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, theology, semantics"
+  },
+  {
+    "title": "طبیعت گرایی؛ خام یا اصیل",
+    "description": "A deep philosophical/scientific exploration of طبیعت گرایی؛ خام یا اصیل",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, ontology, philosophy-of-science"
+  },
+  {
+    "title": "طرح اولیه‌ی مبارزه‌ی موثر",
+    "description": "A deep philosophical/scientific exploration of طرح اولیه‌ی مبارزه‌ی موثر",
+    "category_slug": "iran",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to iran, descriptive-politics, foundational-politics"
+  },
+  {
+    "title": "عقلانیت انقلابی، چگونه!",
+    "description": "A deep philosophical/scientific exploration of عقلانیت انقلابی، چگونه!",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, foundational-politics, iran"
+  },
+  {
+    "title": "علت و دلیل، تمایزی نام گذارانه یا ماهوی!",
+    "description": "A deep philosophical/scientific exploration of علت و دلیل، تمایزی نام گذارانه یا ماهوی!",
+    "category_slug": "epistemology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to epistemology, ontology, methodology"
+  },
+  {
+    "title": "علم و دین",
+    "description": "A deep philosophical/scientific exploration of علم و دین",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, epistemology, philosophy-of-science"
+  },
+  {
+    "title": "علم و دین؛ نقادی سخنرانی عبدالکریم سروش",
+    "description": "A deep philosophical/scientific exploration of علم و دین؛ نقادی سخنرانی عبدالکریم سروش",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, epistemology, philosophy-of-science"
+  },
+  {
+    "title": "علم و ضرورت، چشم‌پوشی یا فراموشی!",
+    "description": "A deep philosophical/scientific exploration of علم و ضرورت، چشم‌پوشی یا فراموشی!",
+    "category_slug": "methodology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to methodology, philosophy-of-science, ontology"
+  },
+  {
+    "title": "علیت و ابطال پذیری! پرسش و پاسخی در کلاب هاوس",
+    "description": "A deep philosophical/scientific exploration of علیت و ابطال پذیری! پرسش و پاسخی در کلاب هاوس",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, ontology, philosophy-of-science"
+  },
+  {
+    "title": "علیت و مبانی تحلیلی آن",
+    "description": "A deep philosophical/scientific exploration of علیت و مبانی تحلیلی آن",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, philosophy-of-science, methodology"
+  },
+  {
+    "title": "علیت، چیستی، چرایی و چگونگی",
+    "description": "A deep philosophical/scientific exploration of علیت، چیستی، چرایی و چگونگی",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, philosophy-other, methodology"
+  },
+  {
+    "title": "فرگشت؛ علم یا آرزو",
+    "description": "A deep philosophical/scientific exploration of فرگشت؛ علم یا آرزو",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, biology, philosophy-of-science"
+  },
+  {
+    "title": "فلسفه‌ی ذهن",
+    "description": "A deep philosophical/scientific exploration of فلسفه‌ی ذهن",
+    "category_slug": "neuroscience",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to neuroscience, philosophy-other, ontology"
+  },
+  {
+    "title": "متافیزیک‌ها…",
+    "description": "A deep philosophical/scientific exploration of متافیزیک‌ها…",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, philosophy-other, theology"
+  },
+  {
+    "title": "محدود یا نامحدود بودن عالم!",
+    "description": "A deep philosophical/scientific exploration of محدود یا نامحدود بودن عالم!",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, philosophy-other, theology"
+  },
+  {
+    "title": "مشکل وحدت-کثرت و راه حل سیستم بودن!",
+    "description": "A deep philosophical/scientific exploration of مشکل وحدت-کثرت و راه حل سیستم بودن!",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, set-theory, philosophy-other"
+  },
+  {
+    "title": "نامه‌ای به رحمت!",
+    "description": "A deep philosophical/scientific exploration of نامه‌ای به رحمت!",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, philosophy-of-ethics, life"
+  },
+  {
+    "title": "نظریه بازی‌ها",
+    "description": "A deep philosophical/scientific exploration of نظریه بازی‌ها",
+    "category_slug": "economics",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to economics, descriptive-politics, life"
+  },
+  {
+    "title": "نظم یا بی‌نظمی، مساله این است!",
+    "description": "A deep philosophical/scientific exploration of نظم یا بی‌نظمی، مساله این است!",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, philosophy-of-ethics, theology"
+  },
+  {
+    "title": "نقد و بررسی برهان امکان و وجوب",
+    "description": "A deep philosophical/scientific exploration of نقد و بررسی برهان امکان و وجوب",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, theology, philosophy-other"
+  },
+  {
+    "title": "نوع شناسی هستی",
+    "description": "A deep philosophical/scientific exploration of نوع شناسی هستی",
+    "category_slug": "ontology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to ontology, semantics, life"
+  },
+  {
+    "title": "هستی‌شناسی و معرفت‌شناسی اخلاق، باورمند غیرباورمند",
+    "description": "A deep philosophical/scientific exploration of هستی‌شناسی و معرفت‌شناسی اخلاق، باورمند غیرباورمند",
+    "category_slug": "philosophy-of-ethics",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to philosophy-of-ethics, epistemology, ontology"
+  },
+  {
+    "title": "پیامبری و عاشقی…",
+    "description": "A deep philosophical/scientific exploration of پیامبری و عاشقی…",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, life, philosophy-of-ethics"
+  },
+  {
+    "title": "چارچوبی برای مقایسه‌ی تبیین‌ها! نظریه‌ها!",
+    "description": "A deep philosophical/scientific exploration of چارچوبی برای مقایسه‌ی تبیین‌ها! نظریه‌ها!",
+    "category_slug": "epistemology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to epistemology, methodology, philosophy-of-science"
+  },
+  {
+    "title": "چالش‌های علم و امتزاج علم و خدا!",
+    "description": "A deep philosophical/scientific exploration of چالش‌های علم و امتزاج علم و خدا!",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, ontology, epistemology"
+  },
+  {
+    "title": "چرا برده‌داری موجه هست یا نیست!",
+    "description": "A deep philosophical/scientific exploration of چرا برده‌داری موجه هست یا نیست!",
+    "category_slug": "philosophy-of-ethics",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to philosophy-of-ethics, foundational-politics, applied-ethics"
+  },
+  {
+    "title": "چرا سنت اندیشی؟ یا نسبی گرایی پر رنگ فرهنگی-اخلاقی",
+    "description": "A deep philosophical/scientific exploration of چرا سنت اندیشی؟ یا نسبی گرایی پر رنگ فرهنگی-اخلاقی",
+    "category_slug": "philosophy-of-ethics",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to philosophy-of-ethics, descriptive-ethics, epistemology"
+  },
+  {
+    "title": "“خطرات “رفع خطر احتمالی!",
+    "description": "A deep philosophical/scientific exploration of “خطرات “رفع خطر احتمالی!",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, epistemology, philosophy-other"
+  },
+  {
+    "title": "“در چرایی “نه به تنظیم دقیق!",
+    "description": "A deep philosophical/scientific exploration of “در چرایی “نه به تنظیم دقیق!",
+    "category_slug": "theology",
+    "visual_prompt": "3D abstract cinematic art, high quality webp, 3d render, vibrant colors, related to theology, philosophy-of-science, ontology"
+  }
+]

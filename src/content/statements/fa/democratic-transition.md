@@ -9,6 +9,9 @@ hidden: true
 showInContents: true
 draft: true
 slug: "democratic-transition"
+coverImage: /images/articles/covers/طرح-اولیهی-مبارزهی-موثر.webp
+imageDisplay: full
+cardImage: show
 ---
 <div dir="rtl">
 

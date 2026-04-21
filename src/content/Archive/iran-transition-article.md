@@ -22,6 +22,9 @@ keywords:
 readingTime: 5
 difficulty: "متوسط"
 interface: iran
+coverImage: /images/articles/covers/biology.png
+imageDisplay: full
+cardImage: show
 ---
 
 

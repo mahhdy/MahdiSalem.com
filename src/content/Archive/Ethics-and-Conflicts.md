@@ -15,6 +15,9 @@ tags:
 draft: true
 interface: philosophy-of-ethics
 showheader: false
+coverImage: /images/articles/covers/applied-ethics.png
+imageDisplay: full
+cardImage: show
 ---
 ## مقدمه
 

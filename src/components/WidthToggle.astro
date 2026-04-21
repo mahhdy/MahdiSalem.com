@@ -147,8 +147,8 @@ const isArabic = lang === "fa";
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 
-    /* Place toolbar under the site header (header uses z-50) */
-    z-index: 40;
+    /* Place toolbar under the site header (header uses z-50) or above if needed */
+    z-index: 100;
 
     display: flex;
     align-items: center;
@@ -397,6 +397,7 @@ const isArabic = lang === "fa";
       "[data-width-container]",
       "article.container-article",
       ".container-article",
+      ".medium-article-wrapper",
       ".container-narrow",
       "div.container-wide",
       ".container-wide",
@@ -534,13 +535,13 @@ const isArabic = lang === "fa";
         loosenAncestors(container, value);
         document.documentElement.setAttribute("data-content-width", key);
 
-        // Override .prose max-width
-        const proseEls = container.querySelectorAll(".prose");
-        proseEls.forEach(function (prose) {
+        // Override .prose and .medium-article-wrapper max-width
+        const wrappers = container.querySelectorAll(".prose, .medium-article-wrapper");
+        wrappers.forEach(function (el) {
           if (key === "default") {
-            prose.style.removeProperty("max-width");
+            el.style.removeProperty("max-width");
           } else {
-            prose.style.setProperty("max-width", "none", "important");
+            el.style.setProperty("max-width", "none", "important");
           }
         });
       }

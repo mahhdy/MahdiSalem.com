@@ -17,6 +17,9 @@ keywords:
   - "مدیریت تنوع"
   - "حقوق اقلیت‌ها"
   - "تمرکززدایی"
+coverImage: /images/articles/covers/Being-and-Perceivability-هستی-و-درک-پذیری.webp
+imageDisplay: full
+cardImage: show
 ---
 
 

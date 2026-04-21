@@ -21,8 +21,8 @@ category: philosophy-other
 keywords:
   - philosophy-other
 showInContents: true
-coverImage: /images/articles/covers/philosophy-other.jpg
-imageDisplay: side
+coverImage: /images/articles/covers/Avicennas-argument-for-the-existence-of-God-Logi.webp
+imageDisplay: full
 cardImage: show
 hasSlide: false
 ---
@@ -97,20 +97,20 @@ Let:
 
 Here’s a breakdown of the set theory notation:
 
-- The first premise is ∀x [C(x) → ∃y (Ca(x,y))], which states that everything that is contingent has a cause.
-- The second premise is C(U), which asserts that the universe is contingent.
-- The third premise is Ca(U,c), which follows from the first two premises using universal instantiation.
-- The fourth premise is ∀x [(C(x) ∧ ¬N(x)) → ∃y (Ca(x,y))], which says that if something is contingent but not necessary, then it has a cause.
-- The fifth premise is ¬∃y∃z [C(z) ∧ Ca(z,y) ∧ Ca(y,c)], which denies the possibility of an infinite regress of contingent causes.
-- The sixth premise is ∀x [C(x) ∧ Ca(x,U) → N(x)], which states that if something is contingent and has the universe as its cause, then it is necessary.
-- The conclusion is G ∈ {x | N(x)}, which asserts that God is a member of the set of necessary beings.
+- The first premise is `∀x [C(x) → ∃y (Ca(x,y))]`, which states that everything that is contingent has a cause.
+- The second premise is `C(U)`, which asserts that the universe is contingent.
+- The third premise is `Ca(U,c)`, which follows from the first two premises using universal instantiation.
+- The fourth premise is `∀x [(C(x) ∧ ¬N(x)) → ∃y (Ca(x,y))]`, which says that if something is contingent but not necessary, then it has a cause.
+- The fifth premise is `¬∃y∃z [C(z) ∧ Ca(z,y) ∧ Ca(y,c)]`, which denies the possibility of an infinite regress of contingent causes.
+- The sixth premise is `∀x [C(x) ∧ Ca(x,U) → N(x)]`, which states that if something is contingent and has the universe as its cause, then it is necessary.
+- The conclusion is <code>G ∈ &#123;x | N(x)&#125;</code>, which asserts that God is a member of the set of necessary beings.
 
 ---
 
 Here is a formal representation of Avicenna’s Possibility-Necessity Argument **using model language**:
 
-Let Cx denote “x is contingent” and U denote “the universe exists”.
-Let Cyx denote “y is the cause of x”. Let Nx denote “x is necessary” and G denote “God exists”.
+Let `Cx` denote “x is contingent” and `U` denote “the universe exists”.
+Let `Cyx` denote “y is the cause of x”. Let `Nx` denote “x is necessary” and `G` denote “God exists”.
 
 ```
 1- ∀x (Cx → ∃y (Cyx))
@@ -130,13 +130,13 @@ Let Cyx denote “y is the cause of x”. Let Nx denote “x is necessary” and
 
 Here’s a breakdown of the model language:
 
-- The first premise is ∀x (Cx → ∃y (Cyx)), which states that everything that is contingent has a cause.
-- The second premise is C(U), which asserts that the universe is contingent.
-- The third premise is CyUc, which follows from the first two premises using universal instantiation.
-- The fourth premise is C(c) → ∃z (Czca), which says that if something is contingent, then it has a cause.
-- The fifth premise is ¬∃z (Czca), which denies the possibility of an infinite regress of contingent causes.
-- The sixth premise is □∃x (Nx ∧ Cx ∧ CyxU), which follows from premises 3 and 5, using modal logic and the definition of a necessary being.
-- The conclusion is G, which follows from premise 6, by definition of God as a necessary being.
+- The first premise is `∀x (Cx → ∃y (Cyx))`, which states that everything that is contingent has a cause.
+- The second premise is `C(U)`, which asserts that the universe is contingent.
+- The third premise is `CyUc`, which follows from the first two premises using universal instantiation.
+- The fourth premise is `C(c) → ∃z (Czca)`, which says that if something is contingent, then it has a cause.
+- The fifth premise is `¬∃z (Czca)`, which denies the possibility of an infinite regress of contingent causes.
+- The sixth premise is `□∃x (Nx ∧ Cx ∧ CyxU)`, which follows from premises 3 and 5, using modal logic and the definition of a necessary being.
+- The conclusion is `G`, which follows from premise 6, by definition of God as a necessary being.
 
 ---
 
@@ -160,13 +160,13 @@ a formal representation of Avicenna’s Possibility-Necessity Argument using **p
 
 Here’s a breakdown of the notation:
 
-- ∀x (Contingent(x) → ∃y (Cause(y, x))) is the first premise, which states that everything that is contingent has a cause.
-- Contingent(Universe) is the second premise, which asserts that the universe is contingent.
-- Cause(c, Universe) follows from the first two premises using universal instantiation.
-- Contingent(c) → ∃z (Cause(z, c)) is the fourth premise, which says that if something is contingent, then it has a cause.
-- ¬∃z (Cause(z, c)) is the fifth premise, which denies the possibility of an infinite regress of contingent causes.
-- Necessarily ∃x (Necessary(x) ∧ Cause(x, Universe)) follows from premises 3 and 5, using modus ponens and the definition of a necessary being.
-- Therefore, God exists is the conclusion, which follows from the sixth premise and the definition of God as a necessary being.
+- `∀x (Contingent(x) → ∃y (Cause(y, x)))` is the first premise, which states that everything that is contingent has a cause.
+- `Contingent(Universe)` is the second premise, which asserts that the universe is contingent.
+- `Cause(c, Universe)` follows from the first two premises using universal instantiation.
+- `Contingent(c) → ∃z (Cause(z, c))` is the fourth premise, which says that if something is contingent, then it has a cause.
+- `¬∃z (Cause(z, c))` is the fifth premise, which denies the possibility of an infinite regress of contingent causes.
+- `Necessarily ∃x (Necessary(x) ∧ Cause(x, Universe))` follows from premises 3 and 5, using modus ponens and the definition of a necessary being.
+- `Therefore, God exists` is the conclusion, which follows from the sixth premise and the definition of God as a necessary being.
 
 ---
 

@@ -1,0 +1,695 @@
+[
+  {
+    "title": "Avicenna’s argument for the existence of God- Logi",
+    "interface": "paper",
+    "categories": [
+      "philosophy-other"
+    ],
+    "path": "fa/medium/Avicennas-argument-for-the-existence-of-God-Logi.mdx"
+  },
+  {
+    "title": "Being and Perceivability هستی و درک پذیری",
+    "interface": "paper",
+    "categories": [
+      "epistemology",
+      "ontology",
+      "philosophy-other"
+    ],
+    "path": "fa/medium/../en/medium/Being-and-Perceivability-هستی-و-درک-پذیری.mdx"
+  },
+  {
+    "title": "ChatGPT Struggling with Simple Logical Calculation",
+    "interface": "tech",
+    "categories": [
+      "philosophy-of-science",
+      "philosophy-other"
+    ],
+    "path": "fa/medium/../en/medium/ChatGPT-Struggling-with-Simple-Logical-Calculation.mdx"
+  },
+  {
+    "title": "Medium Posts",
+    "interface": "paper",
+    "categories": [
+      "philosophy-other"
+    ],
+    "path": "fa/medium/Medium-Posts.mdx"
+  },
+  {
+    "title": "What is Superstation خرافه چیست؟",
+    "interface": "paper",
+    "categories": [
+      "methodology",
+      "epistemology",
+      "philosophy-of-science"
+    ],
+    "path": "fa/medium/What-is-Superstation-خرافه-چیست.mdx"
+  },
+  {
+    "title": "آگاهی؛ سوالی سخت و مساله ای در هم تنیده",
+    "interface": "paper",
+    "categories": [
+      "neuroscience",
+      "philosophy-other",
+      "life"
+    ],
+    "path": "fa/medium/آگاهی-سوالی-سخت-و-مساله-ای-در-هم-تنیده.mdx"
+  },
+  {
+    "title": "آیا بایدی هست؟",
+    "interface": "paper",
+    "categories": [
+      "philosophy-of-ethics",
+      "ontology",
+      "philosophy-other"
+    ],
+    "path": "fa/medium/آیا-بایدی-هست.mdx"
+  },
+  {
+    "title": "آیا می‌توان از امر خودبنیان امر خودمحقق حرف زد؟",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "ontology",
+      "philosophy-other"
+    ],
+    "path": "fa/medium/آیا-میتوان-از-امر-خودبنیان-امر-خودمحقق-حرف-زد.mdx"
+  },
+  {
+    "title": "آیا واقعیتی هست؟",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "epistemology",
+      "philosophy-other"
+    ],
+    "path": "fa/medium/آیا-واقعیتی-هست.mdx"
+  },
+  {
+    "title": "اخلاق منظوم",
+    "interface": "paper",
+    "categories": [
+      "prescriptive-ethics",
+      "philosophy-of-ethics"
+    ],
+    "path": "fa/medium/اخلاق-منظوم.mdx"
+  },
+  {
+    "title": "اخلاق؛ نهادشناسی اخلاق",
+    "interface": "paper",
+    "categories": [
+      "philosophy-of-ethics",
+      "descriptive-ethics",
+      "life"
+    ],
+    "path": "fa/medium/اخلاق-نهادشناسی-اخلاق.mdx"
+  },
+  {
+    "title": "ارزش و رفتار؛ یک پویا شناسی",
+    "interface": "paper",
+    "categories": [
+      "descriptive-ethics",
+      "philosophy-of-ethics",
+      "life"
+    ],
+    "path": "fa/medium/ارزش-و-رفتار-یک-پویا-شناسی.mdx"
+  },
+  {
+    "title": "ایران؛ حاکمیت و عقلانیت ابزاری",
+    "interface": "iran",
+    "categories": [
+      "iran",
+      "foundational-politics",
+      "descriptive-politics"
+    ],
+    "path": "fa/medium/ایران-حاکمیت-و-عقلانیت-ابزاری.mdx"
+  },
+  {
+    "title": "این استدلال تو شبیه این هست",
+    "interface": "paper",
+    "categories": [
+      "philosophy-other",
+      "epistemology"
+    ],
+    "path": "fa/medium/این-استدلال-تو-شبیه-این-هست.mdx"
+  },
+  {
+    "title": "براهین من درآوردی برای خدا!",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "ontology",
+      "philosophy-other"
+    ],
+    "path": "fa/medium/براهین-من-درآوردی-برای-خدا.mdx"
+  },
+  {
+    "title": "بررسی انتقادیِ “برهان فرگشتی برعلیه طبیعت گرایی”",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "biology",
+      "philosophy-of-science"
+    ],
+    "path": "fa/medium/بررسی-انتقادیِ-برهان-فرگشتی-برعلیه-طبیعت-گرایی.mdx"
+  },
+  {
+    "title": "بررسی تقلیل هستی به داده!",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "philosophy-other",
+      "philosophy-of-science"
+    ],
+    "path": "fa/medium/بررسی-تقلیل-هستی-به-داده.mdx"
+  },
+  {
+    "title": "بهشت زمینی یا بهشت آسمانی؛ انتخابِ اجبار یا اجبارِ",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "theology",
+      "philosophy-of-ethics"
+    ],
+    "path": "fa/medium/بهشت-زمینی-یا-بهشت-آسمانی-انتخابِ-اجبار-یا-اجبارِ.mdx"
+  },
+  {
+    "title": "تسلسل و دور! بچرخ تا بچرخیم!",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "ontology",
+      "philosophy-other"
+    ],
+    "path": "fa/medium/تسلسل-و-دور-بچرخ-تا-بچرخیم.mdx"
+  },
+  {
+    "title": "تعابیری فیزیکالیستی از …!",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "ontology",
+      "physics"
+    ],
+    "path": "fa/medium/تعابیری-فیزیکالیستی-از.mdx"
+  },
+  {
+    "title": "تفسیر و متن مقدس؛ چالش ها، ارزش ها",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "epistemology",
+      "philosophy-of-ethics"
+    ],
+    "path": "fa/medium/تفسیر-و-متن-مقدس-چالش-ها-ارزش-ها.mdx"
+  },
+  {
+    "title": "جبر و اختیار؛ یک سازگارگرایی ناسازگار!",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "philosophy-of-ethics",
+      "ontology"
+    ],
+    "path": "fa/medium/جبر-و-اختیار-یک-سازگارگرایی-ناسازگار.mdx"
+  },
+  {
+    "title": "جبر یا اختیار؛ ترسیم ایستگاه‌های اندیشه ورزی",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "theology",
+      "philosophy-other"
+    ],
+    "path": "fa/medium/جبر-یا-اختیار-ترسیم-ایستگاههای-اندیشه-ورزی.mdx"
+  },
+  {
+    "title": "حدوث و قدیم؛ برخی چالش ها",
+    "interface": "paper",
+    "categories": [
+      "epistemology",
+      "ontology",
+      "theology"
+    ],
+    "path": "fa/medium/حدوث-و-قدیم-برخی-چالش-ها.mdx"
+  },
+  {
+    "title": "حصول کثرت از وحدت، چگونه؟",
+    "interface": "paper",
+    "categories": [
+      "semantics",
+      "theology",
+      "ontology"
+    ],
+    "path": "fa/medium/حصول-کثرت-از-وحدت-چگونه.mdx"
+  },
+  {
+    "title": "حقیقت و سروش!",
+    "interface": "paper",
+    "categories": [
+      "descriptive-politics",
+      "epistemology",
+      "life"
+    ],
+    "path": "fa/medium/حقیقت-و-سروش.mdx"
+  },
+  {
+    "title": "حقیقت و واقعیت؛ وحدت یا کثرت!",
+    "interface": "paper",
+    "categories": [
+      "epistemology",
+      "ontology",
+      "semantics"
+    ],
+    "path": "fa/medium/حقیقت-و-واقعیت-وحدت-یا-کثرت.mdx"
+  },
+  {
+    "title": "خدای عملگر!",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "ontology",
+      "philosophy-other"
+    ],
+    "path": "fa/medium/خدای-عملگر.mdx"
+  },
+  {
+    "title": "خطامندی منشا بنیادی شدن",
+    "interface": "paper",
+    "categories": [
+      "epistemology",
+      "philosophy-of-science",
+      "methodology"
+    ],
+    "path": "fa/medium/خطامندی-منشا-بنیادی-شدن.mdx"
+  },
+  {
+    "title": "در توضیح موضع آتئیستی و حدود ادعاهای معرفت شناختی",
+    "interface": "paper",
+    "categories": [
+      "epistemology",
+      "philosophy-other",
+      "theology"
+    ],
+    "path": "fa/medium/در-توضیح-موضع-آتئیستی-و-حدود-ادعاهای-معرفت-شناختی.mdx"
+  },
+  {
+    "title": "در چرایی مجازات!",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "applied-ethics",
+      "philosophy-of-ethics"
+    ],
+    "path": "fa/medium/در-چرایی-مجازات.mdx"
+  },
+  {
+    "title": "ذات و صفات و معناداری",
+    "interface": "paper",
+    "categories": [
+      "methodology",
+      "semantics",
+      "theology"
+    ],
+    "path": "fa/medium/ذات-و-صفات-و-معناداری.mdx"
+  },
+  {
+    "title": "ذات گرایی و اسلام",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "theology",
+      "epistemology"
+    ],
+    "path": "fa/medium/ذات-گرایی-و-اسلام.mdx"
+  },
+  {
+    "title": "رابطه ی معرفت دینی و معرفت بشری",
+    "interface": "paper",
+    "categories": [
+      "methodology",
+      "epistemology",
+      "theology"
+    ],
+    "path": "fa/medium/رابطه-ی-معرفت-دینی-و-معرفت-بشری.mdx"
+  },
+  {
+    "title": "رابطه‌ی معرفت دینی و معرفت بشری",
+    "interface": "paper",
+    "categories": [
+      "philosophy-of-science",
+      "epistemology",
+      "methodology"
+    ],
+    "path": "fa/medium/رابطهی-معرفت-دینی-و-معرفت-بشری.mdx"
+  },
+  {
+    "title": "زبان؛ شبکه‌ی دلالت، ارجاع و معنا",
+    "interface": "tech",
+    "categories": [
+      "semantics",
+      "neuroscience",
+      "philosophy-other"
+    ],
+    "path": "fa/medium/زبان-شبکهی-دلالت-ارجاع-و-معنا.mdx"
+  },
+  {
+    "title": "سکولاریسم؛ نقد یک دیدگاه",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "theology",
+      "foundational-politics"
+    ],
+    "path": "fa/medium/سکولاریسم-نقد-یک-دیدگاه.mdx"
+  },
+  {
+    "title": "شعبده بازی چیست؟ برهان شعبده بازانه کدام است!",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "philosophy-other",
+      "epistemology"
+    ],
+    "path": "fa/medium/شعبده-بازی-چیست-برهان-شعبده-بازانه-کدام-است.mdx"
+  },
+  {
+    "title": "صدق و کذب از کجاست؟",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "semantics",
+      "epistemology"
+    ],
+    "path": "fa/medium/صدق-و-کذب-از-کجاست.mdx"
+  },
+  {
+    "title": "صدق یا اثبات",
+    "interface": "paper",
+    "categories": [
+      "proof-theory",
+      "semantics",
+      "philosophy-other"
+    ],
+    "path": "fa/medium/صدق-یا-اثبات.mdx"
+  },
+  {
+    "title": "صیروریت، شدن (Becoming)",
+    "interface": "paper",
+    "categories": [
+      "philosophy-of-mathematics",
+      "ontology",
+      "physics"
+    ],
+    "path": "fa/medium/صیروریت-شدن-Becoming.mdx"
+  },
+  {
+    "title": "ضرورت و علم الهی!",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "theology",
+      "semantics"
+    ],
+    "path": "fa/medium/ضرورت-و-علم-الهی.mdx"
+  },
+  {
+    "title": "طبیعت گرایی؛ خام یا اصیل",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "ontology",
+      "philosophy-of-science"
+    ],
+    "path": "fa/medium/طبیعت-گرایی-خام-یا-اصیل.mdx"
+  },
+  {
+    "title": "طرح اولیه‌ی مبارزه‌ی موثر",
+    "interface": "iran",
+    "categories": [
+      "iran",
+      "descriptive-politics",
+      "foundational-politics"
+    ],
+    "path": "fa/medium/طرح-اولیهی-مبارزهی-موثر.mdx"
+  },
+  {
+    "title": "عقلانیت انقلابی، چگونه!",
+    "interface": "iran",
+    "categories": [
+      "ontology",
+      "foundational-politics",
+      "iran"
+    ],
+    "path": "fa/medium/عقلانیت-انقلابی-چگونه.mdx"
+  },
+  {
+    "title": "علت و دلیل، تمایزی نام گذارانه یا ماهوی!",
+    "interface": "paper",
+    "categories": [
+      "epistemology",
+      "ontology",
+      "methodology"
+    ],
+    "path": "fa/medium/علت-و-دلیل-تمایزی-نام-گذارانه-یا-ماهوی.mdx"
+  },
+  {
+    "title": "علم و دین",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "epistemology",
+      "philosophy-of-science"
+    ],
+    "path": "fa/medium/علم-و-دین.mdx"
+  },
+  {
+    "title": "علم و دین؛ نقادی سخنرانی عبدالکریم سروش",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "epistemology",
+      "philosophy-of-science"
+    ],
+    "path": "fa/medium/علم-و-دین-نقادی-سخنرانی-عبدالکریم-سروش.mdx"
+  },
+  {
+    "title": "علم و ضرورت، چشم‌پوشی یا فراموشی!",
+    "interface": "paper",
+    "categories": [
+      "methodology",
+      "philosophy-of-science",
+      "ontology"
+    ],
+    "path": "fa/medium/علم-و-ضرورت-چشمپوشی-یا-فراموشی.mdx"
+  },
+  {
+    "title": "علیت و ابطال پذیری! پرسش و پاسخی در کلاب هاوس",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "ontology",
+      "philosophy-of-science"
+    ],
+    "path": "fa/medium/علیت-و-ابطال-پذیری-پرسش-و-پاسخی-در-کلاب-هاوس.mdx"
+  },
+  {
+    "title": "علیت و مبانی تحلیلی آن",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "philosophy-of-science",
+      "methodology"
+    ],
+    "path": "fa/medium/علیت-و-مبانی-تحلیلی-آن.mdx"
+  },
+  {
+    "title": "علیت، چیستی، چرایی و چگونگی",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "philosophy-other",
+      "methodology"
+    ],
+    "path": "fa/medium/علیت-چیستی-چرایی-و-چگونگی.mdx"
+  },
+  {
+    "title": "فرگشت؛ علم یا آرزو",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "biology",
+      "philosophy-of-science"
+    ],
+    "path": "fa/medium/فرگشت-علم-یا-آرزو.mdx"
+  },
+  {
+    "title": "فلسفه‌ی ذهن",
+    "interface": "paper",
+    "categories": [
+      "neuroscience",
+      "philosophy-other",
+      "ontology"
+    ],
+    "path": "fa/medium/فلسفهی-ذهن.mdx"
+  },
+  {
+    "title": "متافیزیک‌ها…",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "philosophy-other",
+      "theology"
+    ],
+    "path": "fa/medium/متافیزیکها.mdx"
+  },
+  {
+    "title": "محدود یا نامحدود بودن عالم!",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "philosophy-other",
+      "theology"
+    ],
+    "path": "fa/medium/محدود-یا-نامحدود-بودن-عالم.mdx"
+  },
+  {
+    "title": "مشکل وحدت-کثرت و راه حل سیستم بودن!",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "set-theory",
+      "philosophy-other"
+    ],
+    "path": "fa/medium/مشکل-وحدت-کثرت-و-راه-حل-سیستم-بودن.mdx"
+  },
+  {
+    "title": "نامه‌ای به رحمت!",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "philosophy-of-ethics",
+      "life"
+    ],
+    "path": "fa/medium/نامهای-به-رحمت.mdx"
+  },
+  {
+    "title": "نظریه بازی‌ها",
+    "interface": "paper",
+    "categories": [
+      "economics",
+      "descriptive-politics",
+      "life"
+    ],
+    "path": "fa/medium/نظریه-بازیها.mdx"
+  },
+  {
+    "title": "نظم یا بی‌نظمی، مساله این است!",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "philosophy-of-ethics",
+      "theology"
+    ],
+    "path": "fa/medium/نظم-یا-بینظمی-مساله-این-است.mdx"
+  },
+  {
+    "title": "نقد و بررسی برهان امکان و وجوب",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "theology",
+      "philosophy-other"
+    ],
+    "path": "fa/medium/نقد-و-بررسی-برهان-امکان-و-وجوب.mdx"
+  },
+  {
+    "title": "نوع شناسی هستی",
+    "interface": "paper",
+    "categories": [
+      "ontology",
+      "semantics",
+      "life"
+    ],
+    "path": "fa/medium/نوع-شناسی-هستی.mdx"
+  },
+  {
+    "title": "هستی‌شناسی و معرفت‌شناسی اخلاق، باورمند غیرباورمند",
+    "interface": "paper",
+    "categories": [
+      "philosophy-of-ethics",
+      "epistemology",
+      "ontology"
+    ],
+    "path": "fa/medium/هستیشناسی-و-معرفتشناسی-اخلاق-باورمند-غیرباورمند.mdx"
+  },
+  {
+    "title": "پیامبری و عاشقی…",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "life",
+      "philosophy-of-ethics"
+    ],
+    "path": "fa/medium/پیامبری-و-عاشقی.mdx"
+  },
+  {
+    "title": "چارچوبی برای مقایسه‌ی تبیین‌ها! نظریه‌ها!",
+    "interface": "paper",
+    "categories": [
+      "epistemology",
+      "methodology",
+      "philosophy-of-science"
+    ],
+    "path": "fa/medium/چارچوبی-برای-مقایسهی-تبیینها-نظریهها.mdx"
+  },
+  {
+    "title": "چالش‌های علم و امتزاج علم و خدا!",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "ontology",
+      "epistemology"
+    ],
+    "path": "fa/medium/چالشهای-علم-و-امتزاج-علم-و-خدا.mdx"
+  },
+  {
+    "title": "چرا برده‌داری موجه هست یا نیست!",
+    "interface": "paper",
+    "categories": [
+      "philosophy-of-ethics",
+      "foundational-politics",
+      "applied-ethics"
+    ],
+    "path": "fa/medium/چرا-بردهداری-موجه-هست-یا-نیست.mdx"
+  },
+  {
+    "title": "چرا سنت اندیشی؟ یا نسبی گرایی پر رنگ فرهنگی-اخلاقی",
+    "interface": "paper",
+    "categories": [
+      "philosophy-of-ethics",
+      "descriptive-ethics",
+      "epistemology"
+    ],
+    "path": "fa/medium/چرا-سنت-اندیشی-یا-نسبی-گرایی-پر-رنگ-فرهنگی-اخلاقی.mdx"
+  },
+  {
+    "title": "“خطرات “رفع خطر احتمالی!",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "epistemology",
+      "philosophy-other"
+    ],
+    "path": "fa/medium/خطرات-رفع-خطر-احتمالی.mdx"
+  },
+  {
+    "title": "“در چرایی “نه به تنظیم دقیق!",
+    "interface": "paper",
+    "categories": [
+      "theology",
+      "philosophy-of-science",
+      "ontology"
+    ],
+    "path": "fa/medium/در-چرایی-نه-به-تنظیم-دقیق.mdx"
+  }
+]

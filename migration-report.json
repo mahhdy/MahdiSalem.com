@@ -22,7 +22,16 @@
     "فایل": "ChatGPT-Struggling-with-Simple-Logical-Calculation.mdx",
     "lang": "en",
     "وضعیت": "منتشرشده",
-    "دسته‌بندی": "philosophy-other, methodology",
+    "دسته‌بندی": "philosophy-of-science, philosophy-other",
+    "interface": "tech",
+    "publishDate": "2024-01-01"
+  },
+  {
+    "عنوان": "Medium Posts",
+    "فایل": "Medium-Posts.mdx",
+    "lang": "fa",
+    "وضعیت": "منتشرشده",
+    "دسته‌بندی": "philosophy-other",
     "interface": "paper",
     "publishDate": "2024-01-01"
   },
@@ -310,8 +319,8 @@
     "فایل": "زبان-شبکهی-دلالت-ارجاع-و-معنا.mdx",
     "lang": "fa",
     "وضعیت": "منتشرشده",
-    "دسته‌بندی": "neuroscience, semantics, philosophy-other",
-    "interface": "paper",
+    "دسته‌بندی": "semantics, neuroscience, philosophy-other",
+    "interface": "tech",
     "publishDate": "2024-01-01"
   },
   {
