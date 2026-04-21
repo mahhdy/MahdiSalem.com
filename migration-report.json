@@ -1,0 +1,485 @@
+[
+  {
+    "title": "Avicenna’s argument for the existence of God- Logi",
+    "file": "Avicennas-argument-for-the-existence-of-God--Logi.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "Being and Perceivability هستی و درک پذیری",
+    "file": "Being-and-Perceivability-هستی-و-درک-پذیری.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "ChatGPT Struggling with Simple Logical Calculation",
+    "file": "ChatGPT-Struggling-with-Simple-Logical-Calculation.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "What is Superstation خرافه چیست؟",
+    "file": "What-is-Superstation-خرافه-چیست؟.mdx",
+    "status": "Published",
+    "categories": "methodology, physics, iran, life",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "آگاهی؛ سوالی سخت و مساله ای در هم تنیده",
+    "file": "آگاهی؛-سوالی-سخت-و-مساله-ای-در-هم-تنیده.mdx",
+    "status": "Published",
+    "categories": "physics, quantum, economics, life",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "آیا بایدی هست؟",
+    "file": "آیا-بایدی-هست؟.mdx",
+    "status": "Published",
+    "categories": "physics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "آیا می‌توان از امر خودبنیان امر خودمحقق حرف زد؟",
+    "file": "آیا-میتوان-از-امر-خودبنیان-امر-خودمحقق-حرف-زد؟.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "آیا واقعیتی هست؟",
+    "file": "آیا-واقعیتی-هست؟.mdx",
+    "status": "Published",
+    "categories": "physics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "اخلاق منظوم",
+    "file": "اخلاق-منظوم.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "اخلاق؛ نهادشناسی اخلاق",
+    "file": "اخلاق؛-نهادشناسی-اخلاق.mdx",
+    "status": "Published",
+    "categories": "physics, descriptive-ethics, life",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "ارزش و رفتار؛ یک پویا شناسی",
+    "file": "ارزش-و-رفتار؛-یک-پویا-شناسی.mdx",
+    "status": "Published",
+    "categories": "iran",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "ایران؛ حاکمیت و عقلانیت ابزاری",
+    "file": "ایران؛-حاکمیت-و-عقلانیت-ابزاری.mdx",
+    "status": "Published",
+    "categories": "iran",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "این استدلال تو شبیه این هست",
+    "file": "این-استدلال-تو-شبیه-این-هست.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "براهین من درآوردی برای خدا!",
+    "file": "براهین-من-درآوردی-برای-خدا.mdx",
+    "status": "Published",
+    "categories": "physics, quantum",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "بررسی انتقادیِ “برهان فرگشتی برعلیه طبیعت گرایی”",
+    "file": "بررسی-انتقادیِ-برهان-فرگشتی-برعلیه-طبیعت-گرایی.mdx",
+    "status": "Published",
+    "categories": "semantics, physics, quantum, life",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "بررسی تقلیل هستی به داده!",
+    "file": "بررسی-تقلیل-هستی-به-داده.mdx",
+    "status": "Published",
+    "categories": "physics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "بهشت زمینی یا بهشت آسمانی؛ انتخابِ اجبار یا اجبارِ",
+    "file": "بهشت-زمینی-یا-بهشت-آسمانی؛-انتخابِ-اجبار-یا-اجبارِ.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "تسلسل و دور! بچرخ تا بچرخیم!",
+    "file": "تسلسل-و-دور-بچرخ-تا-بچرخیم.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "تعابیری فیزیکالیستی از …!",
+    "file": "تعابیری-فیزیکالیستی-از-.mdx",
+    "status": "Published",
+    "categories": "physics, quantum",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "تفسیر و متن مقدس؛ چالش ها، ارزش ها",
+    "file": "تفسیر-و-متن-مقدس؛-چالش-ها،-ارزش-ها.mdx",
+    "status": "Published",
+    "categories": "life",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "جبر و اختیار؛ یک سازگارگرایی ناسازگار!",
+    "file": "جبر-و-اختیار؛-یک-سازگارگرایی-ناسازگار.mdx",
+    "status": "Published",
+    "categories": "physics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "جبر یا اختیار؛ ترسیم ایستگاه‌های اندیشه ورزی",
+    "file": "جبر-یا-اختیار؛-ترسیم-ایستگاههای-اندیشه-ورزی.mdx",
+    "status": "Published",
+    "categories": "physics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "حدوث و قدیم؛ برخی چالش ها",
+    "file": "حدوث-و-قدیم؛-برخی-چالش-ها.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "حصول کثرت از وحدت، چگونه؟",
+    "file": "حصول-کثرت-از-وحدت،-چگونه؟.mdx",
+    "status": "Draft",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "حقیقت و سروش!",
+    "file": "حقیقت-و-سروش.mdx",
+    "status": "Draft",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "حقیقت و واقعیت؛ وحدت یا کثرت!",
+    "file": "حقیقت-و-واقعیت؛-وحدت-یا-کثرت.mdx",
+    "status": "Published",
+    "categories": "physics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "خدای عملگر!",
+    "file": "خدای-عملگر.mdx",
+    "status": "Published",
+    "categories": "physics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "خطامندی منشا بنیادی شدن",
+    "file": "خطامندی-منشا-بنیادی-شدن.mdx",
+    "status": "Published",
+    "categories": "quantum",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "در توضیح موضع آتئیستی و حدود ادعاهای معرفت شناختی",
+    "file": "در-توضیح-موضع-آتئیستی-و-حدود-ادعاهای-معرفت-شناختی.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "در چرایی مجازات!",
+    "file": "در-چرایی-مجازات.mdx",
+    "status": "Draft",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "ذات و صفات و معناداری",
+    "file": "ذات-و-صفات-و-معناداری.mdx",
+    "status": "Published",
+    "categories": "semantics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "ذات گرایی و اسلام",
+    "file": "ذات-گرایی-و-اسلام.mdx",
+    "status": "Published",
+    "categories": "life",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "رابطه ی معرفت دینی و معرفت بشری",
+    "file": "رابطه-ی-معرفت-دینی-و-معرفت-بشری.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "رابطه‌ی معرفت دینی و معرفت بشری",
+    "file": "رابطهی-معرفت-دینی-و-معرفت-بشری.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "زبان؛ شبکه‌ی دلالت، ارجاع و معنا",
+    "file": "زبان؛-شبکهی-دلالت،-ارجاع-و-معنا.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "سکولاریسم؛ نقد یک دیدگاه",
+    "file": "سکولاریسم؛-نقد-یک-دیدگاه.mdx",
+    "status": "Published",
+    "categories": "iran, economics, life",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "شعبده بازی چیست؟ برهان شعبده بازانه کدام است!",
+    "file": "شعبده-بازی-چیست؟-برهان-شعبده-بازانه-کدام-است.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "صدق و کذب از کجاست؟",
+    "file": "صدق-و-کذب-از-کجاست؟.mdx",
+    "status": "Published",
+    "categories": "quantum",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "صدق یا اثبات",
+    "file": "صدق-یا-اثبات.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "صیروریت، شدن (Becoming)",
+    "file": "صیروریت،-شدن-Becoming.mdx",
+    "status": "Published",
+    "categories": "physics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "ضرورت و علم الهی!",
+    "file": "ضرورت-و-علم-الهی.mdx",
+    "status": "Published",
+    "categories": "physics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "طبیعت گرایی؛ خام یا اصیل",
+    "file": "طبیعت-گرایی؛-خام-یا-اصیل.mdx",
+    "status": "Published",
+    "categories": "physics, life",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "طرح اولیه‌ی مبارزه‌ی موثر",
+    "file": "طرح-اولیهی-مبارزهی-موثر.mdx",
+    "status": "Published",
+    "categories": "physics, iran",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "عقلانیت انقلابی، چگونه!",
+    "file": "عقلانیت-انقلابی،-چگونه.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "علت و دلیل، تمایزی نام گذارانه یا ماهوی!",
+    "file": "علت-و-دلیل،-تمایزی-نام-گذارانه-یا-ماهوی.mdx",
+    "status": "Published",
+    "categories": "physics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "علم و دین",
+    "file": "علم-و-دین.mdx",
+    "status": "Published",
+    "categories": "physics, iran, life",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "علم و دین؛ نقادی سخنرانی عبدالکریم سروش",
+    "file": "علم-و-دین؛-نقادی-سخنرانی-عبدالکریم-سروش.mdx",
+    "status": "Published",
+    "categories": "physics, quantum, iran, life",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "علم و ضرورت، چشم‌پوشی یا فراموشی!",
+    "file": "علم-و-ضرورت،-چشمپوشی-یا-فراموشی.mdx",
+    "status": "Published",
+    "categories": "physics, quantum, biology",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "علیت و ابطال پذیری! پرسش و پاسخی در کلاب هاوس",
+    "file": "علیت-و-ابطال-پذیری-پرسش-و-پاسخی-در-کلاب-هاوس.mdx",
+    "status": "Published",
+    "categories": "physics, quantum",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "علیت و مبانی تحلیلی آن",
+    "file": "علیت-و-مبانی-تحلیلی-آن.mdx",
+    "status": "Published",
+    "categories": "physics, quantum",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "علیت، چیستی، چرایی و چگونگی",
+    "file": "علیت،-چیستی،-چرایی-و-چگونگی.mdx",
+    "status": "Published",
+    "categories": "physics, quantum, iran",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "فرگشت؛ علم یا آرزو",
+    "file": "فرگشت؛-علم-یا-آرزو.mdx",
+    "status": "Published",
+    "categories": "physics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "فلسفه‌ی ذهن",
+    "file": "فلسفهی-ذهن.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "متافیزیک‌ها…",
+    "file": "متافیزیکها.mdx",
+    "status": "Published",
+    "categories": "ontology, physics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "محدود یا نامحدود بودن عالم!",
+    "file": "محدود-یا-نامحدود-بودن-عالم.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "مشکل وحدت-کثرت و راه حل سیستم بودن!",
+    "file": "مشکل-وحدت-کثرت-و-راه-حل-سیستم-بودن.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "نامه‌ای به رحمت!",
+    "file": "نامهای-به-رحمت.mdx",
+    "status": "Published",
+    "categories": "economics, life",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "نظریه بازی‌ها",
+    "file": "نظریه-بازیها.mdx",
+    "status": "Published",
+    "categories": "economics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "نظم یا بی‌نظمی، مساله این است!",
+    "file": "نظم-یا-بینظمی،-مساله-این-است.mdx",
+    "status": "Published",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "نقد و بررسی برهان امکان و وجوب",
+    "file": "نقد-و-بررسی-برهان-امکان-و-وجوب.mdx",
+    "status": "Published",
+    "categories": "semantics, physics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "نوع شناسی هستی",
+    "file": "نوع-شناسی-هستی.mdx",
+    "status": "Published",
+    "categories": "physics, quantum",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "هستی‌شناسی و معرفت‌شناسی اخلاق، باورمند غیرباورمند",
+    "file": "هستیشناسی-و-معرفتشناسی-اخلاق،-باورمند-غیرباورمند.mdx",
+    "status": "Published",
+    "categories": "ontology, epistemology, semantics, descriptive-ethics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "پیامبری و عاشقی…",
+    "file": "پیامبری-و-عاشقی.mdx",
+    "status": "Published",
+    "categories": "physics, life",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "چارچوبی برای مقایسه‌ی تبیین‌ها! نظریه‌ها!",
+    "file": "چارچوبی-برای-مقایسهی-تبیینها-نظریهها.mdx",
+    "status": "Published",
+    "categories": "physics, quantum",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "چالش‌های علم و امتزاج علم و خدا!",
+    "file": "چالشهای-علم-و-امتزاج-علم-و-خدا.mdx",
+    "status": "Published",
+    "categories": "physics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "چرا برده‌داری موجه هست یا نیست!",
+    "file": "چرا-بردهداری-موجه-هست-یا-نیست.mdx",
+    "status": "Draft",
+    "categories": "philosophy-other",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "چرا سنت اندیشی؟ یا نسبی گرایی پر رنگ فرهنگی-اخلاقی",
+    "file": "چرا-سنت-اندیشی؟-یا-نسبی-گرایی-پر-رنگ-فرهنگی-اخلاقی.mdx",
+    "status": "Published",
+    "categories": "ontology, physics, iran, economics, life",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "“خطرات “رفع خطر احتمالی!",
+    "file": "خطرات-رفع-خطر-احتمالی.mdx",
+    "status": "Published",
+    "categories": "physics, life",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  },
+  {
+    "title": "“در چرایی “نه به تنظیم دقیق!",
+    "file": "در-چرایی-نه-به-تنظیم-دقیق.mdx",
+    "status": "Published",
+    "categories": "physics",
+    "action": "Cleaned, IDs removed, UI wrapper added, SVG injected"
+  }
+]

@@ -1963,3 +1963,10 @@ html.dark img[src$=".svg"][alt] {
     display: none !important;
   }
 }
+/* Medium Article Premium Style */
+.medium-article-wrapper.premium-design { max-width: 800px; margin: 0 auto; color: #333; font-family: 'Georgia', serif; line-height: 1.8; padding: 2rem; background: #fff; box-shadow: 0 10px 40px rgba(0,0,0,0.05); border-radius: 12px; }
+.medium-article-wrapper.premium-design h1, .medium-article-wrapper.premium-design h2, .medium-article-wrapper.premium-design h3 { font-family: 'Helvetica Neue', Arial, sans-serif; color: #111; margin-top: 2em; margin-bottom: 1em; }
+.medium-article-wrapper.premium-design p { margin-bottom: 1.5em; font-size: 1.125rem; }
+.medium-article-wrapper.premium-design a { color: #0f766e; text-decoration: underline; text-decoration-color: rgba(15, 118, 110, 0.4); text-underline-offset: 4px; transition: all 0.2s; }
+.medium-article-wrapper.premium-design a:hover { color: #115e59; text-decoration-color: #115e59; }
+.medium-article-wrapper.premium-design blockquote { border-right: 4px solid #0f766e; padding-right: 1.5rem; color: #555; font-style: italic; background: #f9f9f9; padding: 1.5rem; border-radius: 8px; margin: 2rem 0; }
