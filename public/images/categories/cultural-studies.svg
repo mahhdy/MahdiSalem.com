@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Overlapping spheres of culture -->
+  <circle cx="85" cy="85" r="50" stroke="currentColor" stroke-width="3" fill="currentColor" opacity="0.15"/>
+  <circle cx="115" cy="85" r="50" stroke="currentColor" stroke-width="3" fill="currentColor" opacity="0.15"/>
+  <circle cx="100" cy="115" r="50" stroke="currentColor" stroke-width="3" fill="currentColor" opacity="0.15"/>
+  
+  <!-- Symbolic artifacts/icons inside -->
+  <path d="M90 75 L110 75 M100 65 L100 85" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+  <circle cx="80" cy="115" r="6" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+  <rect x="115" y="110" width="10" height="10" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+</svg>

@@ -10,12 +10,14 @@ files.forEach(file => {
     const filePath = path.join(baseDir, file);
     let content = fs.readFileSync(filePath, 'utf8');
 
-    // Matches the previously translated footer
-    const regex = /\n\nتوسط\s+\[مهدی سالم\]\((.*?)\)\s+در\s+\[(.*?)\]\((.*?)\)\./g;
+    // Regex to match the "ugly" footer we want to replace
+    const footerRegex = /<div className="medium-source-footer">[\s\S]*?<div className="footer-date">انتشار در تاریخ: (.*?)<\/div>[\s\S]*?<\/div>[\s\S]*?<\/div>/g;
 
-    const newContent = content.replace(regex, (match, authorLink, dateText, articleLink) => {
-        return `
-<div className="medium-source-footer">
+    const newContent = content.replace(footerRegex, (match, dateText) => {
+        // We try to keep the same link if possible, but currently we only have the profile link
+        // UNLESS we find a way to extract the real article link.
+        // For now, we'll use the profile link as fallback but keep the date.
+        return `<div className="medium-source-footer">
   <div className="footer-content">
     <div className="medium-icon-container">
       ${mediumIcon}
@@ -23,7 +25,7 @@ files.forEach(file => {
     <div className="footer-text">
       <span className="published-label">منتشر شده در مدیوم نویسنده</span>
       <p className="main-footer-text">
-        توسط <a href="${authorLink}">مهدی سالم</a> در <a href="${articleLink}">${dateText}</a>
+        توسط <a href="https://medium.com/@mahhdy">مهدی سالم</a> در <a href="https://medium.com/@mahhdy">${dateText}</a>
       </p>
     </div>
   </div>
@@ -32,8 +34,8 @@ files.forEach(file => {
 
     if (content !== newContent) {
         fs.writeFileSync(filePath, newContent);
-        console.log(`Premium footer applied: ${file}`);
+        console.log(`Upgraded footer: ${file}`);
     }
 });
 
-console.log('Done.');
+console.log('Upgrade complete.');

@@ -5,7 +5,7 @@ lang: fa
 publishDate: '2024-01-01'
 author: مهدی سالم
 sourceType: medium
-interface: paper
+interface: theology
 book: ''
 pdfUrl: ''
 pdfOnly: false
@@ -116,8 +116,8 @@ hasSlide: false
 - (A v B) ^ ~ (A ^ B)
 - (A v ~B) ^ (~A v B)
 - (A v B) ^ (~A v ~B)
-- A <=> ~B
-- ~A <=> B
+- `A <=> ~B`
+- `~A <=> B`
 
 همانگونه که روشن است، در تعبیر دوم، رابطه ی دو شرطی بین A و نقیض B با فرض یک رابطه ی دو شرطی بین A , B که در مباحث علیت لازم می آید را ناسازگار می کند. یعنی با فرض انحصار عقلی بودن دو چیز، فرض رابطه ی علی (در شکل شرط لازم و کافی) بین آن دو محال می شود. این موضوع به خوبی در اعداد یا شب و روز مشخص است. ولی به مساله ی مهم تری مانند وجود که می رسیم، گویا همه چیز را فراموش کرده و این دویی که متمایز و غیر قابل جمع دانسته ایم، با هم در یک رابطه ی علی ضروری مندرج سازگار می بینیم!
 
@@ -125,11 +125,11 @@ hasSlide: false
 
 جدول ارزش برای نمایش ناسازگاری و تناقض در بین یک رابطه ی دو شرطی و یک رابطه ی حصر عقلی (XOR)
 
-### اثبات ناسازگاری و تناقض بین A <=> ~B و A <=> B
+### اثبات ناسازگاری و تناقض بین `A <=> ~B` و `A <=> B`
 
 صورت تناقض
 
-(A <=> B) ^ ~ (A <=> B) ≡ (A <=> B) ^ (~A <=>B) ≡ (A <=> B) ^ (A XOR B)
+` (A <=> B) ^ ~ (A <=> B) ≡ (A <=> B) ^ (~A <=>B) ≡ (A <=> B) ^ (A XOR B) `
 
 ```
 1- A <=> ~B (Premise) 2- ~ (A <=> B) (Premise) 3- (A -> ~B) ^ (~B -> A) (From 1, definition of biconditional) 4- ~ ( (A -> B) ^ (B -> A) ) (From 2, definition of biconditional) 5- ~(A -> B) v ~(B -> A) (From 4, De Morgan's law) 6- (~A v B) v (~B v A) (From 5, definition of implication) 7- (~A v ~B) ^ (B v A) (From 6, distributivity) 8- (A -> ~B) ^ (~B -> A) <=> (~A v ~B) ^ (B v A) (From 3 and 7, equivalence of biconditional) 9- A <=> ~B <=> ~ (A <=> B) (From 1, 2, and 8, equivalence of biconditional)
