@@ -402,9 +402,11 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
 
 <script>
   // Tab switching for book pages with PDF viewer
-  document.addEventListener('DOMContentLoaded', () => {
+  const initTabs = () => {
     const tabButtons = document.querySelectorAll('.book-tab-btn');
     const tabContents = document.querySelectorAll('.book-tab-content');
+
+    if (tabButtons.length === 0) return;
 
     tabButtons.forEach((button) => {
       button.addEventListener('click', () => {
@@ -436,5 +438,9 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
         (hashButton as HTMLElement).click();
       }
     }
-  });
+  };
+
+  document.addEventListener('DOMContentLoaded', initTabs);
+  document.addEventListener('astro:page-load', initTabs);
+
 </script>
