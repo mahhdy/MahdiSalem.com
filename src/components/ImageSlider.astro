@@ -1,8 +1,10 @@
 ---
 /**
- * ImageSlider Component v2.1 (Full Standalone Premium Version)
- * Optimized for MDX frontmatter integration.
+ * ImageSlider Component v3.1 (Premium PhotoSwipe Integration)
+ * Optimized for high-performance zooming, panning, and RTL support.
  */
+import 'photoswipe/style.css';
+
 interface Album {
   title: string;
   slides: string[];
@@ -17,12 +19,13 @@ const { images = [], albums = [] } = Astro.props;
 // Use the first album's slides if regular slides is empty but albums are present
 const validAlbums = (albums || []).filter(a => a.slides && a.slides.length > 0);
 const hasAlbums = validAlbums.length > 0;
-const validImages = hasAlbums ? validAlbums[0].slides : (images || []);
+const initialImages = hasAlbums ? validAlbums[0].slides : (images || []);
 
 const albumsJson = hasAlbums ? JSON.stringify(validAlbums) : null;
+const uniqueId = `slider-${Math.random().toString(36).substr(2, 9)}`;
 ---
 
-<div class="image-slider-wrapper w-full mt-8 mb-12">
+<div class="image-slider-wrapper w-full mt-8 mb-12 select-none" id={uniqueId}>
   {hasAlbums && (
     <div class="slider-albums-nav flex flex-wrap gap-2 mb-6 p-2 bg-surface-dim/50 dark:bg-surface-dark-dim/50 rounded-xl border border-border dark:border-border-dark overflow-x-auto no-scrollbar" data-albums={albumsJson}>
       {validAlbums.map((album, idx) => (
@@ -38,52 +41,51 @@ const albumsJson = hasAlbums ? JSON.stringify(validAlbums) : null;
     </div>
   )}
 
-  <div class="premium-slider relative w-full overflow-hidden rounded-2xl shadow-xl bg-surface-dim dark:bg-surface-dark-dim aspect-[16/10] sm:aspect-[4/3] md:aspect-video group" id="main-slider">
-    <!-- Top actions -->
-    <div class="absolute top-4 right-4 z-20 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-       <button class="slider-expand-btn p-3 rounded-xl bg-black/40 backdrop-blur-md text-white hover:bg-black/60 transition-all border border-white/20" title="Full Screen">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" /></svg>
-       </button>
+  <div class="premium-slider relative w-full overflow-hidden rounded-2xl shadow-xl bg-surface-dim dark:bg-surface-dark-dim aspect-[16/10] sm:aspect-[4/3] md:aspect-video group">
+    <!-- Overlay Hints -->
+    <div class="absolute inset-0 z-10 pointer-events-none flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+       <div class="px-4 py-2 bg-black/40 backdrop-blur-md text-white text-xs font-medium rounded-full border border-white/10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+         Click to zoom & pan
+       </div>
     </div>
 
-    <button class="slider-close-btn hidden fixed top-6 right-6 z-[60] p-4 rounded-2xl bg-black/40 backdrop-blur-xl text-white hover:bg-primary transition-all border border-white/20">
-      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
-    </button>
-
     <!-- Main Track -->
-    <div class="slider-track flex transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] h-full w-full">
-      {validImages.map((img, i) => (
-        <div class="slide shrink-0 w-full h-full flex items-center justify-center p-4">
+    <div class="slider-track flex transition-transform duration-600 ease-[cubic-bezier(0.23,1,0.32,1)] h-full w-full cursor-zoom-in">
+      {initialImages.map((img, i) => (
+        <a 
+          href={img}
+          data-pswp-width="2500" 
+          data-pswp-height="1800"
+          class="slide shrink-0 w-full h-full flex items-center justify-center p-4 md:p-8 outline-none"
+        >
           <img 
             src={img} 
             alt={`Slide ${i + 1}`} 
-            class="max-w-full max-h-full object-contain rounded-lg drop-shadow-[0_8px_24px_rgba(0,0,0,0.15)]" 
+            class="max-w-full max-h-full object-contain rounded-lg drop-shadow-2xl transition-transform duration-500 hover:scale-[1.02]" 
             loading={i === 0 ? 'eager' : 'lazy'} 
           />
-        </div>
+        </a>
       ))}
     </div>
 
     <!-- Navigation Arrows -->
-    <button class="slider-prev-btn absolute left-4 top-1/2 -translate-y-1/2 z-20 p-4 rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-primary opacity-0 group-hover:opacity-100 transition-all duration-300 disabled:opacity-0">
+    <button class="slider-prev-btn absolute left-4 top-1/2 -translate-y-1/2 z-20 p-4 rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-primary opacity-0 group-hover:opacity-100 transition-all duration-300 disabled:opacity-0 focus:outline-none focus:ring-2 focus:ring-primary">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
     </button>
-    <button class="slider-next-btn absolute right-4 top-1/2 -translate-y-1/2 z-20 p-4 rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-primary opacity-0 group-hover:opacity-100 transition-all duration-300 disabled:opacity-0">
+    <button class="slider-next-btn absolute right-4 top-1/2 -translate-y-1/2 z-20 p-4 rounded-full bg-black/20 backdrop-blur-md text-white hover:bg-primary opacity-0 group-hover:opacity-100 transition-all duration-300 disabled:opacity-0 focus:outline-none focus:ring-2 focus:ring-primary">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
     </button>
 
-    <!-- Fullscreen Controls (Only visible in fullscreen) -->
-    <div class="slider-fs-controls absolute bottom-10 left-1/2 -translate-x-1/2 z-50 hidden flex items-center gap-4 p-2 bg-black/40 backdrop-blur-xl rounded-2xl border border-white/10">
-       <button class="zoom-out-btn p-3 text-white hover:text-primary transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM13 10H7" /></svg></button>
-       <button class="zoom-reset-btn px-4 text-xs font-bold text-white uppercase tracking-widest hover:text-primary transition-colors">Reset</button>
-       <button class="zoom-in-btn p-3 text-white hover:text-primary transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7" /></svg></button>
+    <!-- Progress Indicator -->
+    <div class="absolute top-4 left-6 z-20 flex items-center gap-2 px-3 py-1.5 bg-black/30 backdrop-blur-md rounded-lg border border-white/10 text-[10px] font-bold text-white tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity">
+       <span class="current-idx">1</span> / <span class="total-count">{initialImages.length}</span>
     </div>
 
     <!-- Dots -->
     <div class="slider-dots absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2.5 px-4 py-2 bg-black/10 backdrop-blur-lg rounded-full border border-white/5">
-      {validImages.map((_, i) => (
+      {initialImages.map((_, i) => (
         <button 
-          class={`slider-dot h-2.5 rounded-full transition-all duration-300 ease-out shadow-inner ${i === 0 ? 'bg-primary dark:bg-primary-light w-8' : 'bg-white/50 hover:bg-white/80 w-2.5'}`} 
+          class={`slider-dot h-2 rounded-full transition-all duration-500 ease-out ${i === 0 ? 'bg-primary dark:bg-primary-light w-8' : 'bg-white/40 hover:bg-white/70 w-2'}`} 
           data-index={i}
           aria-label={`Go to slide ${i+1}`}
         ></button>
@@ -93,49 +95,51 @@ const albumsJson = hasAlbums ? JSON.stringify(validAlbums) : null;
 </div>
 
 <style is:global>
-  .premium-slider.is-fullscreen {
-    position: fixed !important;
-    inset: 0 !important;
-    z-index: 1000 !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    background: #000 !important;
-    border-radius: 0 !important;
-    margin: 0 !important;
+  /* PhotoSwipe Customization to match brand */
+  .pswp {
+    --pswp-bg: rgba(0, 0, 0, 0.92);
+    --pswp-placeholder-bg: #1a1a1a;
   }
-  .premium-slider.is-fullscreen .slider-track { height: 100%; width: 100%; }
-  .premium-slider.is-fullscreen .slider-close-btn { display: block !important; }
-  .premium-slider.is-fullscreen .slider-fs-controls { display: flex !important; }
-  .premium-slider.is-fullscreen .slider-expand-btn { display: none !important; }
   
-  .slide.is-zoomed { cursor: grab; }
-  .slide.is-dragging { cursor: grabbing; }
-  
+  .pswp__button--arrow {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 50% !important;
+    margin: 0 20px !important;
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .pswp__button--arrow:hover {
+    background: var(--color-primary, #3b82f6) !important;
+  }
+
+  /* Force LTR for PhotoSwipe UI elements to fix RTL counter and icon issues */
+  .pswp__counter, 
+  .pswp__ui { 
+    direction: ltr !important; 
+  }
+
   [data-lang="fa"] .image-slider-wrapper { direction: ltr; }
   [data-lang="fa"] .slider-albums-nav { direction: rtl; }
 </style>
 
 <script>
-  import Panzoom from '@panzoom/panzoom';
+  import PhotoSwipeLightbox from 'photoswipe/lightbox';
 
   class PremiumSlider {
     container: HTMLElement;
     track: HTMLElement | null;
-    slides: NodeListOf<Element>;
-    dots: NodeListOf<Element>;
+    slides: NodeListOf<HTMLElement>;
+    dots: NodeListOf<HTMLElement>;
     prevBtn: HTMLElement | null;
     nextBtn: HTMLElement | null;
-    expandBtn: HTMLElement | null;
-    closeBtn: HTMLElement | null;
-    zoomInBtn: HTMLElement | null;
-    zoomOutBtn: HTMLElement | null;
-    zoomResetBtn: HTMLElement | null;
+    currentIdxEl: HTMLElement | null;
     
     currentIndex: number = 0;
     totalSlides: number = 0;
-    isFullscreen: boolean = false;
     isRtl: boolean = false;
-    panzooms: Map<HTMLElement, any> = new Map();
+    lightbox: any = null;
 
     constructor(container: HTMLElement) {
       this.container = container;
@@ -144,187 +148,158 @@ const albumsJson = hasAlbums ? JSON.stringify(validAlbums) : null;
       this.dots = container.querySelectorAll('.slider-dot');
       this.prevBtn = container.querySelector('.slider-prev-btn');
       this.nextBtn = container.querySelector('.slider-next-btn');
-      this.expandBtn = container.querySelector('.slider-expand-btn');
-      this.closeBtn = container.querySelector('.slider-close-btn');
-      this.zoomInBtn = container.querySelector('.zoom-in-btn');
-      this.zoomOutBtn = container.querySelector('.zoom-out-btn');
-      this.zoomResetBtn = container.querySelector('.zoom-reset-btn');
+      this.currentIdxEl = container.querySelector('.current-idx');
       
       this.totalSlides = this.slides.length;
-      
-      const dir = document.documentElement.getAttribute('dir') || 'ltr';
-      this.isRtl = dir === 'rtl';
+      this.isRtl = document.documentElement.getAttribute('dir') === 'rtl';
 
       this.initEvents();
-      this.initPanzoom();
+      this.initLightbox();
+      
+      // Force initial update
+      this.goToSlide(0, false);
     }
 
-    initPanzoom() {
-      // Clear old panzooms
-      this.panzooms.forEach(pz => pz.destroy());
-      this.panzooms.clear();
+    initLightbox() {
+      if (this.lightbox) {
+        this.lightbox.destroy();
+      }
 
-      this.slides.forEach((slide) => {
-        const img = slide.querySelector('img');
-        if (img) {
-          // Initialize Panzoom on EACH image
-          // @ts-ignore
-          const pz = Panzoom(img, {
-            maxScale: 6,
-            minScale: 1,
-            contain: 'outside',
-            step: 0.3,
-            handleStartEvent: (event: any) => {
-              if (event.touches && event.touches.length > 1) return true;
-              if (!this.isFullscreen && pz.getScale() === 1) return false;
-              event.preventDefault();
-              return true;
-            }
-          });
-          
-          this.panzooms.set(slide as HTMLElement, pz);
+      this.lightbox = new PhotoSwipeLightbox({
+        gallery: this.container.querySelector('.premium-slider'),
+        children: 'a.slide',
+        pswpModule: () => import('photoswipe'),
+      });
 
-          // Wheel zoom
-          img.parentElement?.addEventListener('wheel', (event: any) => {
-            if (this.isFullscreen || pz.getScale() > 1) {
-              pz.zoomWithWheel(event);
-            }
-          }, { passive: false });
+      this.lightbox.on('beforeOpen', () => {
+        this.lightbox.options.index = this.currentIndex;
+      });
 
-          // Double click/tap zoom
-          let lastClickTime = 0;
-          img.addEventListener('click', (e: MouseEvent) => {
-            const currentTime = new Date().getTime();
-            if (currentTime - lastClickTime < 300) {
-              e.preventDefault();
-              pz.getScale() > 1 ? pz.reset() : pz.zoomIn();
-            }
-            lastClickTime = currentTime;
-          });
+      this.lightbox.on('change', () => {
+        if (this.lightbox.pswp) {
+          this.goToSlide(this.lightbox.pswp.currIndex, false);
         }
       });
+
+      this.lightbox.init();
     }
 
     initEvents() {
+      // Clear old listeners if any (though scripts in Astro usually run once)
       this.prevBtn?.addEventListener('click', (e) => {
+        e.preventDefault();
         e.stopPropagation();
         this.goToSlide(this.isRtl ? this.currentIndex + 1 : this.currentIndex - 1);
       });
+
       this.nextBtn?.addEventListener('click', (e) => {
+        e.preventDefault();
         e.stopPropagation();
         this.goToSlide(this.isRtl ? this.currentIndex - 1 : this.currentIndex + 1);
       });
 
-      this.dots.forEach((dot: Element, i: number) => {
-        (dot as HTMLElement).onclick = () => this.goToSlide(i);
+      this.dots.forEach((dot, i) => {
+        dot.addEventListener('click', (e) => {
+          e.preventDefault();
+          this.goToSlide(i);
+        });
       });
 
-      this.expandBtn?.addEventListener('click', () => this.openFullscreen());
-      this.closeBtn?.addEventListener('click', () => this.closeFullscreen());
-
-      this.zoomInBtn?.addEventListener('click', () => {
-        const pz = this.panzooms.get(this.slides[this.currentIndex] as HTMLElement);
-        pz?.zoomIn();
-      });
-      this.zoomOutBtn?.addEventListener('click', () => {
-        const pz = this.panzooms.get(this.slides[this.currentIndex] as HTMLElement);
-        pz?.zoomOut();
-      });
-      this.zoomResetBtn?.addEventListener('click', () => {
-        const pz = this.panzooms.get(this.slides[this.currentIndex] as HTMLElement);
-        pz?.reset();
+      // Lightbox trigger is handled automatically by PhotoSwipeLightbox for <a> children,
+      // but we need to stop the default link behavior if we want to handle index sync.
+      this.track?.addEventListener('click', (e) => {
+        const link = (e.target as HTMLElement).closest('a.slide');
+        if (link) {
+          e.preventDefault();
+          const index = Array.from(this.slides).indexOf(link as HTMLElement);
+          this.lightbox.loadAndOpen(index);
+        }
       });
 
-      // Key events
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') this.closeFullscreen();
-        if (e.key === 'ArrowRight') this.goToSlide(this.isRtl ? this.currentIndex - 1 : this.currentIndex + 1);
-        if (e.key === 'ArrowLeft') this.goToSlide(this.isRtl ? this.currentIndex + 1 : this.currentIndex - 1);
-      });
-
-      // Swipe
+      // Swipe support
       let startX = 0;
       this.container.addEventListener('touchstart', (e: any) => { startX = e.touches[0].clientX; }, {passive: true});
       this.container.addEventListener('touchend', (e: any) => {
         const endX = e.changedTouches[0].clientX;
-        if (Math.abs(startX - endX) > 50) {
-          this.goToSlide(startX > endX ? (this.isRtl ? this.currentIndex - 1 : this.currentIndex + 1) : (this.isRtl ? this.currentIndex + 1 : this.currentIndex - 1));
+        const diff = startX - endX;
+        if (Math.abs(diff) > 50) {
+          this.goToSlide(diff > 0 ? (this.isRtl ? this.currentIndex - 1 : this.currentIndex + 1) : (this.isRtl ? this.currentIndex + 1 : this.currentIndex - 1));
         }
       }, {passive: true});
     }
 
-    goToSlide(index: number) {
+    goToSlide(index: number, animate = true) {
       if (index < 0) index = this.totalSlides - 1;
       if (index >= this.totalSlides) index = 0;
       
-      const oldPz = this.panzooms.get(this.slides[this.currentIndex] as HTMLElement);
-      if (oldPz?.getScale() > 1) oldPz.reset();
-
       this.currentIndex = index;
+      
       if (this.track) {
         const offset = (this.isRtl ? 1 : -1) * 100 * this.currentIndex;
+        this.track.style.transition = animate ? 'transform 0.6s cubic-bezier(0.23, 1, 0.32, 1)' : 'none';
         this.track.style.transform = `translateX(${offset}%)`;
       }
 
+      if (this.currentIdxEl) this.currentIdxEl.textContent = (this.currentIndex + 1).toString();
+
       this.dots.forEach((dot, i) => {
-        dot.classList.toggle('bg-primary', i === this.currentIndex);
-        dot.classList.toggle('w-8', i === this.currentIndex);
-        dot.classList.toggle('bg-white/50', i !== this.currentIndex);
-        dot.classList.toggle('w-2.5', i !== this.currentIndex);
+        const isActive = i === this.currentIndex;
+        dot.classList.toggle('bg-primary', isActive);
+        dot.classList.toggle('w-8', isActive);
+        dot.classList.toggle('bg-white/40', !isActive);
+        dot.classList.toggle('w-2', !isActive);
       });
     }
 
     updateImages(newImages: string[]) {
       if (!this.track) return;
+      
       this.track.innerHTML = newImages.map((img, i) => `
-        <div class="slide shrink-0 w-full h-full flex items-center justify-center p-4">
-          <img src="${img}" class="max-w-full max-h-full object-contain rounded-lg shadow-2xl" loading="${i === 0 ? 'eager' : 'lazy'}" />
-        </div>
+        <a href="${img}" data-pswp-width="2500" data-pswp-height="1800" class="slide shrink-0 w-full h-full flex items-center justify-center p-4 md:p-8 outline-none">
+          <img src="${img}" alt="Slide ${i+1}" class="max-w-full max-h-full object-contain rounded-lg drop-shadow-2xl transition-transform duration-500 hover:scale-[1.02]" loading="${i === 0 ? 'eager' : 'lazy'}" />
+        </a>
       `).join('');
       
       this.slides = this.container.querySelectorAll('.slide');
       this.totalSlides = this.slides.length;
-      this.initPanzoom();
       
+      const totalCountEl = this.container.querySelector('.total-count');
+      if (totalCountEl) totalCountEl.textContent = this.totalSlides.toString();
+
       // Update dots
       const dotsContainer = this.container.querySelector('.slider-dots');
       if (dotsContainer) {
         dotsContainer.innerHTML = newImages.map((_, i) => `
-          <button class="slider-dot h-2.5 rounded-full transition-all ${i === 0 ? 'bg-primary w-8' : 'bg-white/50 w-2.5'}" data-index="${i}"></button>
+          <button class="slider-dot h-2 rounded-full transition-all duration-500 ${i === 0 ? 'bg-primary w-8' : 'bg-white/40 w-2'}" data-index="${i}"></button>
         `).join('');
         this.dots = dotsContainer.querySelectorAll('.slider-dot');
-        this.dots.forEach((dot, i) => (dot as HTMLElement).onclick = () => this.goToSlide(i));
       }
       
-      this.goToSlide(0);
-    }
-
-    openFullscreen() {
-      this.isFullscreen = true;
-      this.container.classList.add('is-fullscreen');
-      document.body.style.overflow = 'hidden';
-    }
-
-    closeFullscreen() {
-      this.isFullscreen = false;
-      this.container.classList.remove('is-fullscreen');
-      document.body.style.overflow = '';
-      this.panzooms.forEach(pz => pz.reset());
+      this.initLightbox();
+      this.initEvents(); // Re-bind events to new dots/slides
+      this.goToSlide(0, false);
     }
   }
 
-  const init = () => {
-    document.querySelectorAll('.premium-slider').forEach(slider => {
-      const ps = new PremiumSlider(slider as HTMLElement);
+  const initSliders = () => {
+    document.querySelectorAll('.image-slider-wrapper').forEach(wrapper => {
+      // Prevent multiple initializations
+      if ((wrapper as any)._sliderInit) return;
+      (wrapper as any)._sliderInit = true;
+
+      const ps = new PremiumSlider(wrapper as HTMLElement);
       
-      // If there's an album nav, link it
-      const nav = slider.parentElement?.querySelector('.slider-albums-nav') as HTMLElement;
+      const nav = wrapper.querySelector('.slider-albums-nav') as HTMLElement;
       if (nav) {
         const albums = JSON.parse(nav.dataset.albums || '[]');
         nav.querySelectorAll('.album-tab-btn').forEach((btn, idx) => {
           btn.addEventListener('click', () => {
-            nav.querySelectorAll('.album-tab-btn').forEach(b => b.classList.remove('bg-primary', 'text-white', 'active-album'));
-            btn.classList.add('bg-primary', 'text-white', 'active-album');
+            nav.querySelectorAll('.album-tab-btn').forEach(b => {
+              b.classList.remove('bg-primary', 'text-white', 'active-album', 'border-primary');
+              b.classList.add('bg-surface', 'dark:bg-surface-dark', 'border-border', 'dark:border-border-dark');
+            });
+            btn.classList.add('bg-primary', 'text-white', 'active-album', 'border-primary');
+            btn.classList.remove('bg-surface', 'dark:bg-surface-dark', 'border-border', 'dark:border-border-dark');
             ps.updateImages(albums[idx].slides);
           });
         });
@@ -332,6 +307,9 @@ const albumsJson = hasAlbums ? JSON.stringify(validAlbums) : null;
     });
   };
 
-  document.addEventListener('astro:page-load', init);
-  document.addEventListener('DOMContentLoaded', init);
+  // Run on initial load
+  initSliders();
+
+  // Support for Astro View Transitions if added
+  document.addEventListener('astro:page-load', initSliders);
 </script>
