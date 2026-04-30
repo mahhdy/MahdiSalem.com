@@ -1,0 +1,450 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 1700" width="2200" height="1700">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap');
+
+      .fa {
+        font-family: "Vazirmatn", "Tahoma", sans-serif;
+        direction: rtl;
+        unicode-bidi: plaintext;
+      }
+
+      .en {
+        font-family: "Inter", "Segoe UI", sans-serif;
+        direction: ltr;
+        unicode-bidi: plaintext;
+      }
+
+      .title-fa {
+        font-size: 46px;
+        font-weight: 800;
+        fill: #172033;
+      }
+
+      .subtitle-en {
+        font-size: 19px;
+        font-weight: 500;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .small-muted {
+        font-size: 13px;
+        fill: #94A3B8;
+      }
+
+      .section-fa {
+        font-size: 25px;
+        font-weight: 800;
+        fill: #1E293B;
+      }
+
+      .section-en {
+        font-size: 13px;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .p-title {
+        font-size: 19px;
+        font-weight: 800;
+      }
+
+      .p-en {
+        font-size: 11px;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .p-label {
+        font-size: 11.5px;
+        font-weight: 800;
+        fill: #334155;
+      }
+
+      .p-body {
+        font-size: 12.5px;
+        font-weight: 600;
+        fill: #334155;
+      }
+
+      .p-small {
+        font-size: 10px;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .p-repair {
+        font-size: 11.5px;
+        font-weight: 800;
+      }
+
+      .fallacy-title {
+        font-size: 15px;
+        font-weight: 800;
+        fill: #1E293B;
+      }
+
+      .fallacy-text {
+        font-size: 12px;
+        font-weight: 600;
+        fill: #475569;
+      }
+
+      .fallacy-en {
+        font-size: 10px;
+        fill: #64748B;
+        font-style: italic;
+      }
+    </style>
+
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBFCFF" />
+      <stop offset="50%" stop-color="#F6F8FC" />
+      <stop offset="100%" stop-color="#EEF3F8" />
+    </linearGradient>
+
+    <linearGradient id="warningGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF7ED" />
+      <stop offset="100%" stop-color="#FEE2E2" />
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#0F172A" flood-opacity="0.10" />
+    </filter>
+
+    <filter id="cardShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#0F172A" flood-opacity="0.095" />
+    </filter>
+  </defs>
+
+  <rect width="2200" height="1700" fill="url(#bgGrad)" />
+  <circle cx="180" cy="190" r="170" fill="#FEE2E2" opacity="0.30" />
+  <circle cx="2010" cy="260" r="190" fill="#EDE9FE" opacity="0.26" />
+  <circle cx="2040" cy="1510" r="210" fill="#DCFCE7" opacity="0.22" />
+  <circle cx="180" cy="1510" r="180" fill="#FEF3C7" opacity="0.26" />
+
+  <text x="1100" y="70" text-anchor="middle" class="fa title-fa">آسیب‌شناسی گفتگو</text>
+  <text x="1100" y="105" text-anchor="middle" class="en subtitle-en">
+    Pathologies of Dialogue · Failure Modes · Kommunikationspathologien
+  </text>
+  <text x="1100" y="130" text-anchor="middle" class="en small-muted">
+    Card 04 · From Healthy Forms to Degenerate Forms · v1
+  </text>
+
+  <!-- Conceptual warning band -->
+  <g transform="translate(180,170)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="1840" height="86" rx="24" fill="url(#warningGrad)" stroke="#FED7AA" stroke-width="1.4" />
+    <circle cx="52" cy="43" r="28" fill="#FFFFFF" opacity="0.95" />
+    <text x="52" y="53" text-anchor="middle" font-size="28">⚠️</text>
+
+    <text x="1810" y="34" text-anchor="start" class="fa section-fa">هر گونه گفتگو می‌تواند به نسخه ناسالم خود منحرف
+      شود</text>
+    <text x="1810" y="62" text-anchor="start" class="fa" font-size="14" font-weight="600" fill="#475569">
+      آسیب معمولاً زمانی رخ می‌دهد که «هدف»، «قدرت»، «قواعد» یا «امنیت روانی» از تعادل خارج شود.
+    </text>
+
+    <text x="90" y="42" text-anchor="start" class="en section-en">
+      Healthy genres collapse when goals, power, rules, or psychological safety are distorted.
+    </text>
+  </g>
+
+  <text x="1100" y="285" text-anchor="middle" class="fa section-fa">نقشه انحرافات اصلی</text>
+  <text x="1100" y="308" text-anchor="middle" class="en section-en">Core degeneration map: healthy form → pathological
+    form → repair move</text>
+
+  <g transform="translate(120,300)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="610" height="190" rx="22" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.6" />
+
+    <circle cx="46" cy="46" r="28" fill="#EF4444" opacity="0.18" />
+    <text x="46" y="56" text-anchor="middle" font-size="26">⚔️</text>
+
+    <text x="585" y="30" text-anchor="start" class="fa p-title" fill="#1E293B">گفتگو</text>
+    <text x="585" y="50" text-anchor="end" class="en p-en">Dialogue</text>
+
+    <line x1="28" y1="72" x2="582" y2="72" stroke="#E2E8F0" stroke-width="1" />
+
+    <text x="585" y="100" text-anchor="start" class="fa p-label" fill="#EF4444">انحراف / Pathology</text>
+    <text x="585" y="122" text-anchor="start" class="fa p-body">مونولوگ موازی</text>
+    <text x="28" y="122" text-anchor="start" class="en p-small">Parallel Monologue</text>
+
+    <text x="585" y="150" text-anchor="start" class="fa p-label">سازوکار آسیب</text>
+    <text x="585" y="170" text-anchor="start" class="fa p-body">هر طرف فقط نوبت حرف‌زدن خود را انتظار می‌کشد</text>
+
+    <rect x="28" y="146" width="220" height="28" rx="14" fill="#EF4444" opacity="0.12" />
+    <text x="138" y="165" text-anchor="middle" class="fa p-repair" fill="#EF4444">بازتاب شنیده‌ها</text>
+  </g>
+  <g transform="translate(795,300)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="610" height="190" rx="22" fill="#FFFFFF" stroke="#F97316" stroke-width="1.6" />
+
+    <circle cx="46" cy="46" r="28" fill="#F97316" opacity="0.18" />
+    <text x="46" y="56" text-anchor="middle" font-size="26">🎤</text>
+
+    <text x="585" y="30" text-anchor="start" class="fa p-title" fill="#1E293B">مناظره</text>
+    <text x="585" y="50" text-anchor="end" class="en p-en">Debate</text>
+
+    <line x1="28" y1="72" x2="582" y2="72" stroke="#E2E8F0" stroke-width="1" />
+
+    <text x="585" y="100" text-anchor="start" class="fa p-label" fill="#F97316">انحراف / Pathology</text>
+    <text x="585" y="122" text-anchor="start" class="fa p-body">جنگ کلامی</text>
+    <text x="28" y="122" text-anchor="start" class="en p-small">Verbal Combat</text>
+
+    <text x="585" y="150" text-anchor="start" class="fa p-label">سازوکار آسیب</text>
+    <text x="585" y="170" text-anchor="start" class="fa p-body">هدف از حقیقت‌جویی به شکست‌دادن شخص تغییر می‌کند</text>
+
+    <rect x="28" y="146" width="220" height="28" rx="14" fill="#F97316" opacity="0.12" />
+    <text x="138" y="165" text-anchor="middle" class="fa p-repair" fill="#F97316">قواعد داوری</text>
+  </g>
+  <g transform="translate(1470,300)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="610" height="190" rx="22" fill="#FFFFFF" stroke="#EAB308" stroke-width="1.6" />
+
+    <circle cx="46" cy="46" r="28" fill="#EAB308" opacity="0.18" />
+    <text x="46" y="56" text-anchor="middle" font-size="26">🤝</text>
+
+    <text x="585" y="30" text-anchor="start" class="fa p-title" fill="#1E293B">مذاکره</text>
+    <text x="585" y="50" text-anchor="end" class="en p-en">Negotiation</text>
+
+    <line x1="28" y1="72" x2="582" y2="72" stroke="#E2E8F0" stroke-width="1" />
+
+    <text x="585" y="100" text-anchor="start" class="fa p-label" fill="#EAB308">انحراف / Pathology</text>
+    <text x="585" y="122" text-anchor="start" class="fa p-body">باج‌گیری و اجبار</text>
+    <text x="28" y="122" text-anchor="end" class="en p-small">Coercion</text>
+
+    <text x="585" y="150" text-anchor="start" class="fa p-label">سازوکار آسیب</text>
+    <text x="585" y="170" text-anchor="start" class="fa p-body">گزینه‌های واقعی طرف مقابل حذف می‌شود</text>
+
+    <rect x="28" y="146" width="220" height="28" rx="14" fill="#EAB308" opacity="0.12" />
+    <text x="138" y="165" text-anchor="middle" class="fa p-repair" fill="#EAB308">بازگشت به BATNA</text>
+  </g>
+  <g transform="translate(120,520)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="610" height="190" rx="22" fill="#FFFFFF" stroke="#22C55E" stroke-width="1.6" />
+
+    <circle cx="46" cy="46" r="28" fill="#22C55E" opacity="0.18" />
+    <text x="46" y="56" text-anchor="middle" font-size="26">💡</text>
+
+    <text x="585" y="30" text-anchor="start" class="fa p-title" fill="#1E293B">طوفان فکری</text>
+    <text x="585" y="50" text-anchor="end" class="en p-en">Brainstorming</text>
+
+    <line x1="28" y1="72" x2="582" y2="72" stroke="#E2E8F0" stroke-width="1" />
+
+    <text x="585" y="100" text-anchor="start" class="fa p-label" fill="#22C55E">انحراف / Pathology</text>
+    <text x="585" y="122" text-anchor="start" class="fa p-body">گروه‌اندیشی</text>
+    <text x="28" y="122" text-anchor="start" class="en p-small">Groupthink</text>
+
+    <text x="585" y="150" text-anchor="start" class="fa p-label">سازوکار آسیب</text>
+    <text x="585" y="170" text-anchor="start" class="fa p-body">هماهنگی ظاهری جایگزین تنوع ایده می‌شود</text>
+
+    <rect x="28" y="146" width="220" height="28" rx="14" fill="#22C55E" opacity="0.12" />
+    <text x="138" y="165" text-anchor="middle" class="fa p-repair" fill="#22C55E">نقش منتقد</text>
+  </g>
+  <g transform="translate(795,520)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="610" height="190" rx="22" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.6" />
+
+    <circle cx="46" cy="46" r="28" fill="#0EA5E9" opacity="0.18" />
+    <text x="46" y="56" text-anchor="middle" font-size="26">🛋️</text>
+
+    <text x="585" y="30" text-anchor="start" class="fa p-title" fill="#1E293B">مشاوره</text>
+    <text x="585" y="50" text-anchor="end" class="en p-en">Counseling</text>
+
+    <line x1="28" y1="72" x2="582" y2="72" stroke="#E2E8F0" stroke-width="1" />
+
+    <text x="585" y="100" text-anchor="start" class="fa p-label" fill="#0EA5E9">انحراف / Pathology</text>
+    <text x="585" y="122" text-anchor="start" class="fa p-body">دستوردهی و نسخه‌پیچی</text>
+    <text x="28" y="122" text-anchor="start" class="en p-small">Prescription</text>
+
+    <text x="585" y="150" text-anchor="start" class="fa p-label">سازوکار آسیب</text>
+    <text x="585" y="170" text-anchor="start" class="fa p-body">شنیدن جای خود را به کنترل و نصیحت می‌دهد</text>
+
+    <rect x="28" y="146" width="220" height="28" rx="14" fill="#0EA5E9" opacity="0.12" />
+    <text x="138" y="165" text-anchor="middle" class="fa p-repair" fill="#0EA5E9">پرسش باز</text>
+  </g>
+  <g transform="translate(1470,520)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="610" height="190" rx="22" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="1.6" />
+
+    <circle cx="46" cy="46" r="28" fill="#8B5CF6" opacity="0.18" />
+    <text x="46" y="56" text-anchor="middle" font-size="26">💙</text>
+
+    <text x="585" y="30" text-anchor="start" class="fa p-title" fill="#1E293B">درد دل</text>
+    <text x="585" y="50" text-anchor="end" class="en p-en">Heart-Talk</text>
+
+    <line x1="28" y1="72" x2="582" y2="72" stroke="#E2E8F0" stroke-width="1" />
+
+    <text x="585" y="100" text-anchor="start" class="fa p-label" fill="#8B5CF6">انحراف / Pathology</text>
+    <text x="585" y="122" text-anchor="start" class="fa p-body">غیبت و تخریب غایب</text>
+    <text x="28" y="122" text-anchor="start" class="en p-small">Gossip / Defamation</text>
+
+    <text x="585" y="150" text-anchor="start" class="fa p-label">سازوکار آسیب</text>
+    <text x="585" y="170" text-anchor="start" class="fa p-body">تخلیه هیجان با بی‌اعتبارکردن فرد سوم انجام می‌شود</text>
+
+    <rect x="28" y="146" width="220" height="28" rx="14" fill="#8B5CF6" opacity="0.12" />
+    <text x="138" y="165" text-anchor="middle" class="fa p-repair" fill="#8B5CF6">مرزبندی اخلاقی</text>
+  </g>
+  <g transform="translate(120,740)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="610" height="190" rx="22" fill="#FFFFFF" stroke="#EC4899" stroke-width="1.6" />
+
+    <circle cx="46" cy="46" r="28" fill="#EC4899" opacity="0.18" />
+    <text x="46" y="56" text-anchor="middle" font-size="26">🔐</text>
+
+    <text x="585" y="30" text-anchor="start" class="fa p-title" fill="#1E293B">اعتراف</text>
+    <text x="585" y="50" text-anchor="end" class="en p-en">Confession</text>
+
+    <line x1="28" y1="72" x2="582" y2="72" stroke="#E2E8F0" stroke-width="1" />
+
+    <text x="585" y="100" text-anchor="start" class="fa p-label" fill="#EC4899">انحراف / Pathology</text>
+    <text x="585" y="122" text-anchor="start" class="fa p-body">خودافشایی بی‌مرز</text>
+    <text x="28" y="122" text-anchor="start" class="en p-small">Over-disclosure</text>
+
+    <text x="585" y="150" text-anchor="start" class="fa p-label">سازوکار آسیب</text>
+    <text x="585" y="170" text-anchor="start" class="fa p-body">امنیت رابطه با بارگذاری هیجانی بیش از ظرفیت شکسته
+      می‌شود</text>
+
+    <rect x="28" y="146" width="220" height="28" rx="14" fill="#EC4899" opacity="0.12" />
+    <text x="138" y="165" text-anchor="middle" class="fa p-repair" fill="#EC4899">رضایت شنونده</text>
+  </g>
+  <g transform="translate(795,740)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="610" height="190" rx="22" fill="#FFFFFF" stroke="#14B8A6" stroke-width="1.6" />
+
+    <circle cx="46" cy="46" r="28" fill="#14B8A6" opacity="0.18" />
+    <text x="46" y="56" text-anchor="middle" font-size="26">🪞</text>
+
+    <text x="585" y="30" text-anchor="start" class="fa p-title" fill="#1E293B">فراگفتگو</text>
+    <text x="585" y="50" text-anchor="end" class="en p-en">Meta-dialogue</text>
+
+    <line x1="28" y1="72" x2="582" y2="72" stroke="#E2E8F0" stroke-width="1" />
+
+    <text x="585" y="100" text-anchor="start" class="fa p-label" fill="#14B8A6">انحراف / Pathology</text>
+    <text x="585" y="122" text-anchor="start" class="fa p-body">تحلیل‌زدگی رابطه</text>
+    <text x="28" y="122" text-anchor="start" class="en p-small">Process Overload</text>
+
+    <text x="585" y="150" text-anchor="start" class="fa p-label">سازوکار آسیب</text>
+    <text x="585" y="170" text-anchor="start" class="fa p-body">گفتگو درباره گفتگو جای خود گفتگو را می‌گیرد</text>
+
+    <rect x="28" y="146" width="220" height="28" rx="14" fill="#14B8A6" opacity="0.12" />
+    <text x="138" y="165" text-anchor="middle" class="fa p-repair" fill="#14B8A6">بازگشت به موضوع</text>
+  </g>
+  <g transform="translate(1470,740)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="610" height="190" rx="22" fill="#FFFFFF" stroke="#64748B" stroke-width="1.6" />
+
+    <circle cx="46" cy="46" r="28" fill="#64748B" opacity="0.18" />
+    <text x="46" y="56" text-anchor="middle" font-size="26">🤫</text>
+
+    <text x="585" y="30" text-anchor="start" class="fa p-title" fill="#1E293B">سکوت</text>
+    <text x="585" y="50" text-anchor="end" class="en p-en">Silence</text>
+
+    <line x1="28" y1="72" x2="582" y2="72" stroke="#E2E8F0" stroke-width="1" />
+
+    <text x="585" y="100" text-anchor="start" class="fa p-label" fill="#64748B">انحراف / Pathology</text>
+    <text x="585" y="122" text-anchor="start" class="fa p-body">قهر خاموش</text>
+    <text x="28" y="122" text-anchor="start" class="en p-small">Silent Treatment</text>
+
+    <text x="585" y="150" text-anchor="start" class="fa p-label">سازوکار آسیب</text>
+    <text x="585" y="170" text-anchor="start" class="fa p-body">سکوت از تأمل به تنبیه عاطفی تبدیل می‌شود</text>
+
+    <rect x="28" y="146" width="220" height="28" rx="14" fill="#64748B" opacity="0.12" />
+    <text x="138" y="165" text-anchor="middle" class="fa p-repair" fill="#64748B">نام‌گذاری نیاز</text>
+  </g>
+
+  <!-- Fallacies / Traps section -->
+  <g transform="translate(120,990)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="1960" height="330" rx="26" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.4" />
+
+    <text x="1930" y="42" text-anchor="start" class="fa section-fa">تله‌ها و مغالطات پرتکرار</text>
+    <text x="30" y="42" text-anchor="start" class="en section-en">Common Traps and Fallacies</text>
+
+    <line x1="30" y1="62" x2="1930" y2="62" stroke="#E2E8F0" stroke-width="1" />
+
+    <!-- 8 fallacy chips -->
+    <g transform="translate(45,95)">
+      <g transform="translate(0,0)">
+        <rect x="0" y="0" width="430" height="72" rx="18" fill="#FEF2F2" stroke="#FCA5A5" />
+        <text x="405" y="28" text-anchor="start" class="fa fallacy-title">کاه‌مرد</text>
+        <text x="20" y="28" text-anchor="start" class="en fallacy-en">Straw Man</text>
+        <text x="405" y="52" text-anchor="start" class="fa fallacy-text">تحریف موضع طرف مقابل برای حمله آسان‌تر</text>
+      </g>
+
+      <g transform="translate(490,0)">
+        <rect x="0" y="0" width="430" height="72" rx="18" fill="#FFF7ED" stroke="#FDBA74" />
+        <text x="405" y="28" text-anchor="start" class="fa fallacy-title">حمله شخصی</text>
+        <text x="20" y="28" text-anchor="start" class="en fallacy-en">Ad Hominem</text>
+        <text x="405" y="52" text-anchor="start" class="fa fallacy-text">جایگزینی نقد ایده با تخریب شخص</text>
+      </g>
+
+      <g transform="translate(980,0)">
+        <rect x="0" y="0" width="430" height="72" rx="18" fill="#FEFCE8" stroke="#FCD34D" />
+        <text x="405" y="28" text-anchor="start" class="fa fallacy-title">دوراهی کاذب</text>
+        <text x="20" y="28" text-anchor="start" class="en fallacy-en">False Dilemma</text>
+        <text x="405" y="52" text-anchor="start" class="fa fallacy-text">نمایش مسئله به‌صورت فقط دو گزینه</text>
+      </g>
+
+      <g transform="translate(1470,0)">
+        <rect x="0" y="0" width="430" height="72" rx="18" fill="#F0FDF4" stroke="#86EFAC" />
+        <text x="405" y="28" text-anchor="start" class="fa fallacy-title">شیب لغزنده</text>
+        <text x="20" y="28" text-anchor="start" class="en fallacy-en">Slippery Slope</text>
+        <text x="405" y="52" text-anchor="start" class="fa fallacy-text">بزرگ‌نمایی پیامدهای زنجیره‌ای بی‌دلیل</text>
+      </g>
+
+      <g transform="translate(0,100)">
+        <rect x="0" y="0" width="430" height="72" rx="18" fill="#EFF6FF" stroke="#93C5FD" />
+        <text x="405" y="28" text-anchor="start" class="fa fallacy-title">گازلایتینگ</text>
+        <text x="20" y="28" text-anchor="start" class="en fallacy-en">Gaslighting</text>
+        <text x="405" y="52" text-anchor="start" class="fa fallacy-text">تردیدآفرینی در ادراک و حافظه طرف مقابل</text>
+      </g>
+
+      <g transform="translate(490,100)">
+        <rect x="0" y="0" width="430" height="72" rx="18" fill="#F5F3FF" stroke="#C4B5FD" />
+        <text x="405" y="28" text-anchor="start" class="fa fallacy-title">تغییر زمین بازی</text>
+        <text x="20" y="28" text-anchor="start" class="en fallacy-en">Moving Goalposts</text>
+        <text x="405" y="52" text-anchor="start" class="fa fallacy-text">جابجایی معیار پس از پاسخ طرف مقابل</text>
+      </g>
+
+      <g transform="translate(980,100)">
+        <rect x="0" y="0" width="430" height="72" rx="18" fill="#FDF2F8" stroke="#F9A8D4" />
+        <text x="405" y="28" text-anchor="start" class="fa fallacy-title">مهرطلبی گفتگویی</text>
+        <text x="20" y="28" text-anchor="start" class="en fallacy-en">Appeasement</text>
+        <text x="405" y="52" text-anchor="start" class="fa fallacy-text">قربانی‌کردن صداقت برای حفظ صلح ظاهری</text>
+      </g>
+
+      <g transform="translate(1470,100)">
+        <rect x="0" y="0" width="430" height="72" rx="18" fill="#ECFDF5" stroke="#5EEAD4" />
+        <text x="405" y="28" text-anchor="start" class="fa fallacy-title">توافق‌نمایی</text>
+        <text x="20" y="28" text-anchor="start" class="en fallacy-en">Pseudo-consensus</text>
+        <text x="405" y="52" text-anchor="start" class="fa fallacy-text">پنهان‌کردن اختلاف واقعی پشت توافق سطحی</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Repair protocol -->
+  <g transform="translate(220,1370)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="1760" height="120" rx="24" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="1730" y="36" text-anchor="start" class="fa section-fa">پروتکل ترمیم گفتگو</text>
+    <text x="30" y="36" text-anchor="start" class="en section-en">Repair Protocol</text>
+
+    <line x1="30" y1="55" x2="1730" y2="55" stroke="#E2E8F0" />
+
+    <g transform="translate(70,85)">
+      <circle cx="0" cy="0" r="14" fill="#E0F2FE" /><text x="0" y="5" text-anchor="middle" font-size="12">۱</text>
+      <text x="24" y="5" text-anchor="end" class="fa p-body">توقف و نام‌گذاری آسیب</text>
+
+      <circle cx="360" cy="0" r="14" fill="#FEF3C7" /><text x="360" y="5" text-anchor="middle" font-size="12">۲</text>
+      <text x="384" y="5" text-anchor="end" class="fa p-body">بازتعریف هدف گفتگو</text>
+
+      <circle cx="720" cy="0" r="14" fill="#DCFCE7" /><text x="720" y="5" text-anchor="middle" font-size="12">۳</text>
+      <text x="744" y="5" text-anchor="end" class="fa p-body">بازگشت به قواعد مشترک</text>
+
+      <circle cx="1080" cy="0" r="14" fill="#EDE9FE" /><text x="1080" y="5" text-anchor="middle" font-size="12">۴</text>
+      <text x="1104" y="5" text-anchor="end" class="fa p-body">بازتاب شنیده‌ها پیش از پاسخ</text>
+
+      <circle cx="1440" cy="0" r="14" fill="#FFE4E6" /><text x="1440" y="5" text-anchor="middle" font-size="12">۵</text>
+      <text x="1464" y="5" text-anchor="end" class="fa p-body">توافق بر گام بعدی</text>
+    </g>
+  </g>
+
+  <text x="1100" y="1545" text-anchor="middle" class="fa" font-size="15" font-weight="700" fill="#64748B">
+    در اسلاید بعدی: چارچوب نظری و نظریه‌پردازان کلیدی گفتگو
+  </text>
+  <text x="1100" y="1570" text-anchor="middle" class="en" font-size="12" fill="#94A3B8" font-style="italic">
+    Next: Theoretical Frameworks — Buber, Habermas, Bohm, Grice, Austin, Searle, Rosenberg
+  </text>
+
+  <line x1="120" y1="1635" x2="2080" y2="1635" stroke="#E2E8F0" stroke-width="1" />
+</svg>

@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" font-family="Vazirmatn, Inter, sans-serif">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAFBFD"/>
+      <stop offset="100%" stop-color="#EEF2F7"/>
+    </linearGradient>
+    <radialGradient id="coreGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E0E7FF"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dx="2" dy="4"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1100" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="800" y="60" text-anchor="middle" font-size="34" font-weight="700" fill="#1E293B">
+    جغرافیای مفهومی گفتگو
+  </text>
+  <text x="800" y="92" text-anchor="middle" font-size="18" fill="#64748B" font-style="italic">
+    Conceptual Geography of Dialogue · Sprachgeographie des Gesprächs
+  </text>
+  <text x="800" y="118" text-anchor="middle" font-size="13" fill="#94A3B8">
+    نقشه راه مرکزی — Master Map · v0
+  </text>
+
+  <!-- Central Core -->
+  <circle cx="800" cy="550" r="140" fill="url(#coreGrad)" stroke="#6366F1" stroke-width="2" filter="url(#softShadow)"/>
+  <circle cx="800" cy="550" r="110" fill="none" stroke="#A5B4FC" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="800" y="535" text-anchor="middle" font-size="22" font-weight="700" fill="#312E81">SPEECH</text>
+  <text x="800" y="560" text-anchor="middle" font-size="16" fill="#4338CA">سخن گفتن</text>
+  <text x="800" y="582" text-anchor="middle" font-size="11" fill="#6366F1" font-style="italic">Sprache · Parole · Loquela</text>
+
+  <!-- 7 Orbiting Modules -->
+  <!-- Module 1: Taxonomy -->
+  <g transform="translate(280,260)" filter="url(#softShadow)">
+    <rect width="280" height="160" rx="20" fill="#FFFFFF" stroke="#FCA5A5" stroke-width="2"/>
+    <circle cx="40" cy="40" r="22" fill="#FEE2E2"/>
+    <text x="40" y="46" text-anchor="middle" font-size="20">🌳</text>
+    <text x="80" y="38" font-size="16" font-weight="700" fill="#991B1B">نسخه ۱ · گونه‌شناسی</text>
+    <text x="80" y="58" font-size="12" fill="#7F1D1D" font-style="italic">Taxonomy · Typologie</text>
+    <line x1="20" y1="78" x2="260" y2="78" stroke="#FECACA" stroke-width="1"/>
+    <text x="20" y="100" font-size="12" fill="#475569">• درخت کامل گونه‌ها (۴ سطح)</text>
+    <text x="20" y="120" font-size="12" fill="#475569">• ۴۰+ نوع گفتگو</text>
+    <text x="20" y="140" font-size="12" fill="#475569">• طیف رنگی معنادار</text>
+  </g>
+
+  <!-- Module 2: Matrix -->
+  <g transform="translate(640,180)" filter="url(#softShadow)">
+    <rect width="280" height="160" rx="20" fill="#FFFFFF" stroke="#FCD34D" stroke-width="2"/>
+    <circle cx="40" cy="40" r="22" fill="#FEF3C7"/>
+    <text x="40" y="46" text-anchor="middle" font-size="20">🎛️</text>
+    <text x="80" y="38" font-size="16" font-weight="700" fill="#92400E">نسخه ۲ · ماتریس ابعاد</text>
+    <text x="80" y="58" font-size="12" fill="#78350F" font-style="italic">Six-Dimension Matrix</text>
+    <line x1="20" y1="78" x2="260" y2="78" stroke="#FDE68A" stroke-width="1"/>
+    <text x="20" y="100" font-size="12" fill="#475569">• تعداد طرفین، نیت، رسمیت</text>
+    <text x="20" y="120" font-size="12" fill="#475569">• همزمانی، قدرت، عمق</text>
+    <text x="20" y="140" font-size="12" fill="#475569">• جدول مقایسه ۶×۲۴</text>
+  </g>
+
+  <!-- Module 3: Profile Cards -->
+  <g transform="translate(1040,260)" filter="url(#softShadow)">
+    <rect width="280" height="160" rx="20" fill="#FFFFFF" stroke="#86EFAC" stroke-width="2"/>
+    <circle cx="40" cy="40" r="22" fill="#DCFCE7"/>
+    <text x="40" y="46" text-anchor="middle" font-size="20">🗂️</text>
+    <text x="80" y="38" font-size="16" font-weight="700" fill="#166534">نسخه ۳ · کارت پروفایل</text>
+    <text x="80" y="58" font-size="12" fill="#14532D" font-style="italic">Profile Cards · Steckbriefe</text>
+    <line x1="20" y1="78" x2="260" y2="78" stroke="#BBF7D0" stroke-width="1"/>
+    <text x="20" y="100" font-size="12" fill="#475569">• ۲۴ کارت تخصصی</text>
+    <text x="20" y="120" font-size="12" fill="#475569">• هدف، قواعد، KPI، تله‌ها</text>
+    <text x="20" y="140" font-size="12" fill="#475569">• مثال تاریخی + معاصر</text>
+  </g>
+
+  <!-- Module 4: Pathology -->
+  <g transform="translate(1180,500)" filter="url(#softShadow)">
+    <rect width="280" height="160" rx="20" fill="#FFFFFF" stroke="#7DD3FC" stroke-width="2"/>
+    <circle cx="40" cy="40" r="22" fill="#E0F2FE"/>
+    <text x="40" y="46" text-anchor="middle" font-size="20">🧬</text>
+    <text x="80" y="38" font-size="16" font-weight="700" fill="#075985">نسخه ۴ · آسیب‌شناسی</text>
+    <text x="80" y="58" font-size="12" fill="#0C4A6E" font-style="italic">Pathology · Pathologie</text>
+    <line x1="20" y1="78" x2="260" y2="78" stroke="#BAE6FD" stroke-width="1"/>
+    <text x="20" y="100" font-size="12" fill="#475569">• مغالطات کلاسیک (Fallacies)</text>
+    <text x="20" y="120" font-size="12" fill="#475569">• انحرافات هر گونه</text>
+    <text x="20" y="140" font-size="12" fill="#475569">• چهار سوار آپوکالیپس گاتمن</text>
+  </g>
+
+  <!-- Module 5: Theory -->
+  <g transform="translate(1040,780)" filter="url(#softShadow)">
+    <rect width="280" height="160" rx="20" fill="#FFFFFF" stroke="#C4B5FD" stroke-width="2"/>
+    <circle cx="40" cy="40" r="22" fill="#EDE9FE"/>
+    <text x="40" y="46" text-anchor="middle" font-size="20">📚</text>
+    <text x="80" y="38" font-size="16" font-weight="700" fill="#5B21B6">نسخه ۵ · چارچوب نظری</text>
+    <text x="80" y="58" font-size="12" fill="#4C1D95" font-style="italic">Theoretical Frame</text>
+    <line x1="20" y1="78" x2="260" y2="78" stroke="#DDD6FE" stroke-width="1"/>
+    <text x="20" y="100" font-size="12" fill="#475569">• Habermas · Buber · Bohm</text>
+    <text x="20" y="120" font-size="12" fill="#475569">• Grice · Austin · Searle</text>
+    <text x="20" y="140" font-size="12" fill="#475569">• Gadamer · Rosenberg</text>
+  </g>
+
+  <!-- Module 6: Persian-Islamic Card -->
+  <g transform="translate(640,860)" filter="url(#softShadow)">
+    <rect width="280" height="160" rx="20" fill="#FFFFFF" stroke="#F0ABFC" stroke-width="2" stroke-dasharray="5,3"/>
+    <circle cx="40" cy="40" r="22" fill="#FAE8FF"/>
+    <text x="40" y="46" text-anchor="middle" font-size="20">🕌</text>
+    <text x="80" y="38" font-size="16" font-weight="700" fill="#86198F">نسخه ۶ · سنت ایرانی-اسلامی</text>
+    <text x="80" y="58" font-size="12" fill="#701A75" font-style="italic">Persian-Islamic Tradition</text>
+    <line x1="20" y1="78" x2="260" y2="78" stroke="#F5D0FE" stroke-width="1"/>
+    <text x="20" y="100" font-size="12" fill="#475569">• مناظره، مباهله، محاجّه</text>
+    <text x="20" y="120" font-size="12" fill="#475569">• مرید-مراد، شطح، مناجات</text>
+    <text x="20" y="140" font-size="12" fill="#475569">• مکاتبات عرفانی</text>
+  </g>
+
+  <!-- Module 7: Decision Flow -->
+  <g transform="translate(280,780)" filter="url(#softShadow)">
+    <rect width="280" height="160" rx="20" fill="#FFFFFF" stroke="#5EEAD4" stroke-width="2"/>
+    <circle cx="40" cy="40" r="22" fill="#CCFBF1"/>
+    <text x="40" y="46" text-anchor="middle" font-size="20">🧭</text>
+    <text x="80" y="38" font-size="16" font-weight="700" fill="#115E59">نسخه ۷ · فلوچارت انتخاب</text>
+    <text x="80" y="58" font-size="12" fill="#134E4A" font-style="italic">Decision Flowchart</text>
+    <line x1="20" y1="78" x2="260" y2="78" stroke="#99F6E4" stroke-width="1"/>
+    <text x="20" y="100" font-size="12" fill="#475569">• راهنمای کاربردی</text>
+    <text x="20" y="120" font-size="12" fill="#475569">• «چه نوع گفتگویی لازم دارم؟»</text>
+    <text x="20" y="140" font-size="12" fill="#475569">• درخت تصمیم گام‌به‌گام</text>
+  </g>
+
+  <!-- Connecting lines from core to modules -->
+  <g stroke="#CBD5E1" stroke-width="1.2" fill="none" stroke-dasharray="4,4" opacity="0.7">
+    <path d="M 700,500 Q 550,420 480,420"/>
+    <path d="M 750,430 Q 740,360 780,340"/>
+    <path d="M 900,500 Q 1050,420 1120,420"/>
+    <path d="M 940,550 Q 1100,560 1180,580"/>
+    <path d="M 900,650 Q 1050,750 1120,860"/>
+    <path d="M 800,690 Q 790,800 780,860"/>
+    <path d="M 700,650 Q 550,750 480,860"/>
+  </g>
+
+  <!-- Six Dimensions ring (around core) -->
+  <g font-size="11" fill="#6366F1" font-weight="600">
+    <text x="800" y="380" text-anchor="middle">① تعداد طرفین</text>
+    <text x="985" y="475" text-anchor="middle">② نیت</text>
+    <text x="985" y="635" text-anchor="middle">③ رسمیت</text>
+    <text x="800" y="735" text-anchor="middle">④ همزمانی</text>
+    <text x="615" y="635" text-anchor="middle">⑤ قدرت</text>
+    <text x="615" y="475" text-anchor="middle">⑥ عمق</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="100" y1="1040" x2="1500" y2="1040" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="100" y="1065" font-size="11" fill="#94A3B8">طراحی بر اساس نمودار اولیه حسین بیات · گسترش‌یافته</text>
+  <text x="1500" y="1065" text-anchor="end" font-size="11" fill="#94A3B8">Conceptual Geography of Speech · Master Map v0</text>
+  <text x="800" y="1085" text-anchor="middle" font-size="10" fill="#CBD5E1" font-style="italic">
+    «در آغاز، کلمه بود» — Im Anfang war das Wort — In principio erat Verbum
+  </text>
+</svg>

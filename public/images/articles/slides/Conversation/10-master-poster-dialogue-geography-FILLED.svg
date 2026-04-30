@@ -1,0 +1,759 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4200 2970" width="4200" height="2970">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+
+      .fa { font-family: "Vazirmatn", "Tahoma", sans-serif; direction: rtl; unicode-bidi: plaintext; }
+      .en { font-family: "Inter", "Segoe UI", sans-serif; direction: ltr; unicode-bidi: plaintext; }
+
+      .poster-title { font-size: 72px; font-weight: 900; fill: #111827; letter-spacing: -1px; }
+      .poster-subtitle { font-size: 25px; font-weight: 700; fill: #475569; }
+      .poster-en { font-size: 15px; font-weight: 800; fill: #64748B; letter-spacing: 1.5px; text-transform: uppercase; }
+
+      .section-title { font-size: 27px; font-weight: 900; fill: #1E293B; }
+      .section-en { font-size: 13px; fill: #64748B; font-style: italic; }
+
+      .core-fa { font-size: 45px; font-weight: 900; fill: #111827; }
+      .core-en { font-size: 17px; font-weight: 700; fill: #64748B; font-style: italic; }
+      .core-small { font-size: 16px; font-weight: 700; fill: #334155; }
+
+      .ring-label { font-size: 17px; font-weight: 900; fill: #1E293B; }
+      .ring-small { font-size: 12px; font-weight: 700; fill: #64748B; }
+
+      .num { font-size: 13px; font-weight: 900; }
+      .row-title { font-size: 16px; font-weight: 900; fill: #1E293B; }
+      .row-en { font-size: 10.5px; fill: #64748B; font-style: italic; }
+      .row-body { font-size: 11.8px; font-weight: 650; fill: #475569; }
+
+      .node-title { font-size: 17px; font-weight: 900; fill: #1E293B; }
+      .node-en { font-size: 10.5px; fill: #64748B; font-style: italic; }
+      .node-body { font-size: 12px; font-weight: 650; fill: #334155; }
+
+      .panel-title { font-size: 20px; font-weight: 900; fill: #111827; }
+      .panel-en { font-size: 10.8px; fill: #64748B; font-style: italic; }
+      .panel-line { font-weight: 650; fill: #334155; }
+
+      .path-title { font-size: 14px; font-weight: 900; fill: #1E293B; }
+      .path-body { font-size: 12px; font-weight: 700; fill: #475569; }
+      .path-repair { font-size: 9px; font-weight: 900; }
+
+      .theory-name { font-size: 15px; font-weight: 900; fill: #1E293B; }
+      .theory-concept { font-size: 12px; font-weight: 650; fill: #475569; }
+      .theory-en { font-size: 10px; font-weight: 900; }
+
+      .decision-need { font-size: 13.5px; font-weight: 900; fill: #1E293B; }
+      .decision-form { font-size: 14.5px; font-weight: 900; fill: #334155; }
+      .decision-rule { font-size: 11.7px; font-weight: 650; fill: #64748B; }
+      .decision-avoid { font-size: 10.8px; font-weight: 650; fill: #94A3B8; }
+
+      .matrix-title { font-size: 14.5px; font-weight: 900; fill: #1E293B; }
+      .matrix-body { font-size: 12.3px; font-weight: 650; fill: #475569; }
+
+      .footer-fa { font-size: 15px; font-weight: 800; fill: #64748B; }
+      .footer-en { font-size: 12px; font-weight: 700; fill: #94A3B8; font-style: italic; }
+    </style>
+
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="48%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EEF3F8"/>
+    </linearGradient>
+
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EEF2FF"/>
+      <stop offset="42%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#ECFDF5"/>
+    </linearGradient>
+
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#EEF2FF"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="9" stdDeviation="14" flood-color="#0F172A" flood-opacity="0.11"/>
+    </filter>
+
+    <filter id="cardShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.09"/>
+    </filter>
+
+    <filter id="tinyShadow" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#0F172A" flood-opacity="0.075"/>
+    </filter>
+
+    <marker id="arrowHead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#94A3B8"/>
+    </marker>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E2E8F0" stroke-width="0.55" opacity="0.42"/>
+    </pattern>
+  </defs>
+
+  <rect width="4200" height="2970" fill="url(#bgGrad)"/>
+  <rect width="4200" height="2970" fill="url(#grid)" opacity="0.35"/>
+
+  <circle cx="260" cy="250" r="260" fill="#EDE9FE" opacity="0.24"/>
+  <circle cx="3920" cy="285" r="285" fill="#DCFCE7" opacity="0.23"/>
+  <circle cx="3850" cy="2720" r="330" fill="#DBEAFE" opacity="0.22"/>
+  <circle cx="250" cy="2700" r="300" fill="#FEF3C7" opacity="0.25"/>
+
+  <!-- Header -->
+  <g transform="translate(115,60)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="3970" height="260" rx="34" fill="url(#headerGrad)" stroke="#CBD5E1" stroke-width="1.4"/>
+
+    <text x="1985" y="62" text-anchor="middle" class="en poster-en">
+      MASTER POSTER · CONCEPTUAL GEOGRAPHY OF SPEAKING / TALK / DIALOGUE
+    </text>
+
+    <text x="1985" y="140" text-anchor="middle" class="fa poster-title">
+      پوستر مادر جغرافیای مفهومی گفتگو
+    </text>
+
+    <text x="1985" y="188" text-anchor="middle" class="fa poster-subtitle">
+      نقشه‌ای جامع از ابعاد، گونه‌ها، نظریه‌ها، آسیب‌ها، فرهنگ، پروفایل‌ها و راهنمای انتخاب نوع گفتگو
+    </text>
+
+    <line x1="70" y1="214" x2="3900" y2="214" stroke="#CBD5E1" stroke-width="1.3"/>
+
+    <text x="80" y="242" text-anchor="start" class="en footer-en">
+      Filled version · Newspaper-map hybrid · Print-ready A0/A1 landscape
+    </text>
+
+    <text x="3890" y="242" text-anchor="start" class="fa footer-fa">
+      مسیر خواندن: هسته ← ابعاد ← گونه‌ها ← ماتریس کاربرد ← نظریه ← فرهنگ ← آسیب ← انتخاب
+    </text>
+  </g>
+
+  <!-- Left dimensions block -->
+  <g transform="translate(75,350)">
+    <text x="620" y="32" text-anchor="start" class="fa section-title">ابعاد تشخیص هر گفتگو</text>
+    <text x="620" y="56" text-anchor="end" class="en section-en">Diagnostic dimensions</text>
+  </g>
+
+  <g transform="translate(95,415)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="600" height="72" rx="20" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.3"/>
+    <circle cx="38" cy="36" r="22" fill="#2563EB" opacity="0.16"/>
+    <text x="38" y="42" text-anchor="middle" class="en num" fill="#2563EB">01</text>
+
+    <text x="572" y="26" text-anchor="start" class="fa row-title">تعداد طرفین</text>
+    <text x="572" y="45" text-anchor="end" class="en row-en">Participants</text>
+    <text x="572" y="62" text-anchor="start" class="fa row-body">یک‌جانبه، دوجانبه، چندجانبه، جمعی</text>
+  </g>  <g transform="translate(95,500)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="600" height="72" rx="20" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.3"/>
+    <circle cx="38" cy="36" r="22" fill="#7C3AED" opacity="0.16"/>
+    <text x="38" y="42" text-anchor="middle" class="en num" fill="#7C3AED">02</text>
+
+    <text x="572" y="26" text-anchor="start" class="fa row-title">نیت</text>
+    <text x="572" y="45" text-anchor="end" class="en row-en">Intention</text>
+    <text x="572" y="62" text-anchor="start" class="fa row-body">رقابتی، مشارکتی، ترمیمی، آیینی، آموزشی</text>
+  </g>  <g transform="translate(95,585)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="600" height="72" rx="20" fill="#FFFFFF" stroke="#0F766E" stroke-width="1.3"/>
+    <circle cx="38" cy="36" r="22" fill="#0F766E" opacity="0.16"/>
+    <text x="38" y="42" text-anchor="middle" class="en num" fill="#0F766E">03</text>
+
+    <text x="572" y="26" text-anchor="start" class="fa row-title">رسمیت</text>
+    <text x="572" y="45" text-anchor="end" class="en row-en">Formality</text>
+    <text x="572" y="62" text-anchor="start" class="fa row-body">گپ دوستانه تا مذاکره دیپلماتیک</text>
+  </g>  <g transform="translate(95,670)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="600" height="72" rx="20" fill="#FFFFFF" stroke="#EA580C" stroke-width="1.3"/>
+    <circle cx="38" cy="36" r="22" fill="#EA580C" opacity="0.16"/>
+    <text x="38" y="42" text-anchor="middle" class="en num" fill="#EA580C">04</text>
+
+    <text x="572" y="26" text-anchor="start" class="fa row-title">رسانه</text>
+    <text x="572" y="45" text-anchor="end" class="en row-en">Medium</text>
+    <text x="572" y="62" text-anchor="start" class="fa row-body">حضوری، تلفنی، نوشتاری، تصویری، دیجیتال</text>
+  </g>  <g transform="translate(95,755)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="600" height="72" rx="20" fill="#FFFFFF" stroke="#DB2777" stroke-width="1.3"/>
+    <circle cx="38" cy="36" r="22" fill="#DB2777" opacity="0.16"/>
+    <text x="38" y="42" text-anchor="middle" class="en num" fill="#DB2777">05</text>
+
+    <text x="572" y="26" text-anchor="start" class="fa row-title">قدرت</text>
+    <text x="572" y="45" text-anchor="end" class="en row-en">Power</text>
+    <text x="572" y="62" text-anchor="start" class="fa row-body">متقارن یا نامتقارن؛ همتا یا سلسله‌مراتبی</text>
+  </g>  <g transform="translate(95,840)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="600" height="72" rx="20" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.3"/>
+    <circle cx="38" cy="36" r="22" fill="#16A34A" opacity="0.16"/>
+    <text x="38" y="42" text-anchor="middle" class="en num" fill="#16A34A">06</text>
+
+    <text x="572" y="26" text-anchor="start" class="fa row-title">عمق</text>
+    <text x="572" y="45" text-anchor="end" class="en row-en">Depth</text>
+    <text x="572" y="62" text-anchor="start" class="fa row-body">سطحی، عاطفی، فلسفی، وجودی</text>
+  </g>  <g transform="translate(95,925)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="600" height="72" rx="20" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.3"/>
+    <circle cx="38" cy="36" r="22" fill="#EF4444" opacity="0.16"/>
+    <text x="38" y="42" text-anchor="middle" class="en num" fill="#EF4444">07</text>
+
+    <text x="572" y="26" text-anchor="start" class="fa row-title">هدف‌مندی</text>
+    <text x="572" y="45" text-anchor="end" class="en row-en">Goal</text>
+    <text x="572" y="62" text-anchor="start" class="fa row-body">مسئله‌محور، رابطه‌محور، حقیقت‌محور</text>
+  </g>  <g transform="translate(95,1010)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="600" height="72" rx="20" fill="#FFFFFF" stroke="#64748B" stroke-width="1.3"/>
+    <circle cx="38" cy="36" r="22" fill="#64748B" opacity="0.16"/>
+    <text x="38" y="42" text-anchor="middle" class="en num" fill="#64748B">08</text>
+
+    <text x="572" y="26" text-anchor="start" class="fa row-title">فرهنگ</text>
+    <text x="572" y="45" text-anchor="end" class="en row-en">Culture</text>
+    <text x="572" y="62" text-anchor="start" class="fa row-body">درون‌فرهنگی، بین‌فرهنگی، فرافرهنگی</text>
+  </g>
+
+  <!-- Pathology block background -->
+  <g transform="translate(95,1110)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="600" height="635" rx="28" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.5"/>
+    <rect x="0" y="0" width="600" height="70" rx="28" fill="#EF4444" opacity="0.10"/>
+    <text x="570" y="43" text-anchor="start" class="fa panel-title">آسیب‌شناسی سریع گفتگو</text>
+    <text x="30" y="43" text-anchor="start" class="en panel-en">Pathology Map</text>
+  </g>
+
+  <g transform="translate(115,1190)">
+    <rect x="0" y="0" width="560" height="56" rx="17" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="32" cy="28" r="16" fill="#EF4444" opacity="0.16"/>
+    <text x="532" y="23" text-anchor="start" class="fa path-title">گفتگو</text>
+    <text x="532" y="43" text-anchor="start" class="fa path-body">← مونولوگ موازی</text>
+    <rect x="58" y="14" width="105" height="28" rx="14" fill="#EF4444" opacity="0.12"/>
+    <text x="110" y="33" text-anchor="middle" class="fa path-repair" fill="#EF4444">بازتاب</text>
+  </g>  <g transform="translate(115,1260)">
+    <rect x="0" y="0" width="560" height="56" rx="17" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="32" cy="28" r="16" fill="#F97316" opacity="0.16"/>
+    <text x="532" y="23" text-anchor="start" class="fa path-title">مناظره</text>
+    <text x="532" y="43" text-anchor="start" class="fa path-body">← جنگ کلامی</text>
+    <rect x="58" y="14" width="105" height="28" rx="14" fill="#F97316" opacity="0.12"/>
+    <text x="110" y="33" text-anchor="middle" class="fa path-repair" fill="#F97316">قاعده</text>
+  </g>  <g transform="translate(115,1330)">
+    <rect x="0" y="0" width="560" height="56" rx="17" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="32" cy="28" r="16" fill="#EAB308" opacity="0.16"/>
+    <text x="532" y="23" text-anchor="start" class="fa path-title">مذاکره</text>
+    <text x="532" y="43" text-anchor="start" class="fa path-body">← باج‌گیری و اجبار</text>
+    <rect x="58" y="14" width="105" height="28" rx="14" fill="#EAB308" opacity="0.12"/>
+    <text x="110" y="33" text-anchor="middle" class="fa path-repair" fill="#EAB308">BATNA</text>
+  </g>  <g transform="translate(115,1400)">
+    <rect x="0" y="0" width="560" height="56" rx="17" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="32" cy="28" r="16" fill="#22C55E" opacity="0.16"/>
+    <text x="532" y="23" text-anchor="start" class="fa path-title">طوفان فکری</text>
+    <text x="532" y="43" text-anchor="start" class="fa path-body">← گروه‌اندیشی</text>
+    <rect x="58" y="14" width="105" height="28" rx="14" fill="#22C55E" opacity="0.12"/>
+    <text x="110" y="33" text-anchor="middle" class="fa path-repair" fill="#22C55E">منتقد</text>
+  </g>  <g transform="translate(115,1470)">
+    <rect x="0" y="0" width="560" height="56" rx="17" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="32" cy="28" r="16" fill="#0EA5E9" opacity="0.16"/>
+    <text x="532" y="23" text-anchor="start" class="fa path-title">مشاوره</text>
+    <text x="532" y="43" text-anchor="start" class="fa path-body">← نسخه‌پیچی</text>
+    <rect x="58" y="14" width="105" height="28" rx="14" fill="#0EA5E9" opacity="0.12"/>
+    <text x="110" y="33" text-anchor="middle" class="fa path-repair" fill="#0EA5E9">پرسش باز</text>
+  </g>  <g transform="translate(115,1540)">
+    <rect x="0" y="0" width="560" height="56" rx="17" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="32" cy="28" r="16" fill="#8B5CF6" opacity="0.16"/>
+    <text x="532" y="23" text-anchor="start" class="fa path-title">درد دل</text>
+    <text x="532" y="43" text-anchor="start" class="fa path-body">← غیبت و تخریب</text>
+    <rect x="58" y="14" width="105" height="28" rx="14" fill="#8B5CF6" opacity="0.12"/>
+    <text x="110" y="33" text-anchor="middle" class="fa path-repair" fill="#8B5CF6">مرزبندی</text>
+  </g>  <g transform="translate(115,1610)">
+    <rect x="0" y="0" width="560" height="56" rx="17" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="32" cy="28" r="16" fill="#14B8A6" opacity="0.16"/>
+    <text x="532" y="23" text-anchor="start" class="fa path-title">فراگفتگو</text>
+    <text x="532" y="43" text-anchor="start" class="fa path-body">← تحلیل‌زدگی رابطه</text>
+    <rect x="58" y="14" width="105" height="28" rx="14" fill="#14B8A6" opacity="0.12"/>
+    <text x="110" y="33" text-anchor="middle" class="fa path-repair" fill="#14B8A6">بازگشت</text>
+  </g>  <g transform="translate(115,1680)">
+    <rect x="0" y="0" width="560" height="56" rx="17" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="32" cy="28" r="16" fill="#64748B" opacity="0.16"/>
+    <text x="532" y="23" text-anchor="start" class="fa path-title">سکوت</text>
+    <text x="532" y="43" text-anchor="start" class="fa path-body">← قهر خاموش</text>
+    <rect x="58" y="14" width="105" height="28" rx="14" fill="#64748B" opacity="0.12"/>
+    <text x="110" y="33" text-anchor="middle" class="fa path-repair" fill="#64748B">نام‌گذاری نیاز</text>
+  </g>
+  <g transform="translate(95,1770)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="600" height="300" rx="26" fill="#FFFFFF" stroke="#14B8A6" stroke-width="1.45"/>
+    <rect x="0" y="0" width="600" height="64" rx="26" fill="#14B8A6" opacity="0.10"/>
+    <rect x="0" y="44" width="600" height="20" fill="#14B8A6" opacity="0.10"/>
+
+    <circle cx="48" cy="42" r="28" fill="#14B8A6" opacity="0.18"/>
+    <text x="48" y="53" text-anchor="middle" font-size="26">🧯</text>
+
+    <text x="570" y="36" text-anchor="start" class="fa panel-title">پروتکل ترمیم گفتگو</text>
+    <text x="570" y="56" text-anchor="end" class="en panel-en">Repair Protocol</text>
+
+    <line x1="30" y1="74" x2="570" y2="74" stroke="#14B8A6" stroke-width="2" opacity="0.45"/>
+    <text x="570" y="92" text-anchor="start" class="fa panel-line" font-size="13">۱. توقف کوتاه و کاهش هیجان</text>
+    <text x="570" y="118" text-anchor="start" class="fa panel-line" font-size="13">۲. نام‌گذاری آسیب بدون اتهام</text>
+    <text x="570" y="144" text-anchor="start" class="fa panel-line" font-size="13">۳. بازتعریف هدف گفتگو</text>
+    <text x="570" y="170" text-anchor="start" class="fa panel-line" font-size="13">۴. بازگشت به قواعد مشترک</text>
+    <text x="570" y="196" text-anchor="start" class="fa panel-line" font-size="13">۵. بازتاب شنیده‌ها پیش از پاسخ</text>
+    <text x="570" y="222" text-anchor="start" class="fa panel-line" font-size="13">۶. پرسش باز به جای نسخه‌پیچی</text>
+    <text x="570" y="248" text-anchor="start" class="fa panel-line" font-size="13">۷. توافق بر یک گام بعدی کوچک</text>
+    <text x="570" y="274" text-anchor="start" class="fa panel-line" font-size="13">۸. اگر ظرفیت نیست، زمان گفتگو را تغییر بده</text>
+
+  </g>
+
+  <!-- Central master map panel -->
+  <g transform="translate(760,350)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="2040" height="1465" rx="34" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.4"/>
+    <rect x="0" y="0" width="2040" height="74" rx="34" fill="#EEF2FF"/>
+    <text x="2010" y="47" text-anchor="start" class="fa section-title">نقشه مرکزی گونه‌شناسی و کاربرد گفتگو</text>
+    <text x="35" y="47" text-anchor="start" class="en section-en">Central taxonomy + practical matrix</text>
+  </g>
+
+  <!-- Connector lines -->
+  <g opacity="0.70">
+    <path d="M1715 905 C1460 770, 1230 620, 1100 560" fill="none" stroke="#CBD5E1" stroke-width="3" marker-end="url(#arrowHead)"/>
+    <path d="M1810 820 C1770 670, 1695 535, 1605 470" fill="none" stroke="#CBD5E1" stroke-width="3" marker-end="url(#arrowHead)"/>
+    <path d="M1950 820 C2100 660, 2200 580, 2100 540" fill="none" stroke="#CBD5E1" stroke-width="3" marker-end="url(#arrowHead)"/>
+    <path d="M2025 910 C2190 900, 2310 870, 2220 850" fill="none" stroke="#CBD5E1" stroke-width="3" marker-end="url(#arrowHead)"/>
+    <path d="M1960 1040 C2090 1115, 2150 1180, 2100 1150" fill="none" stroke="#CBD5E1" stroke-width="3" marker-end="url(#arrowHead)"/>
+    <path d="M1815 1110 C1760 1200, 1690 1280, 1600 1270" fill="none" stroke="#CBD5E1" stroke-width="3" marker-end="url(#arrowHead)"/>
+    <path d="M1680 1045 C1510 1130, 1290 1230, 1100 1160" fill="none" stroke="#CBD5E1" stroke-width="3" marker-end="url(#arrowHead)"/>
+    <path d="M1645 930 C1420 900, 1190 870, 830 850" fill="none" stroke="#CBD5E1" stroke-width="3" marker-end="url(#arrowHead)"/>
+  </g>
+
+  <!-- Core rings -->
+  <g transform="translate(1810,900)" filter="url(#softShadow)">
+    <circle cx="0" cy="0" r="280" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2.2"/>
+    <circle cx="0" cy="0" r="210" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.4"/>
+    <circle cx="0" cy="0" r="140" fill="#EEF2FF" stroke="#C4B5FD" stroke-width="2"/>
+    <circle cx="0" cy="0" r="82" fill="url(#coreGrad)" stroke="#7C3AED" stroke-width="3"/>
+
+    <text x="0" y="-18" text-anchor="middle" class="fa core-fa">گفتگو</text>
+    <text x="0" y="18" text-anchor="middle" class="en core-en">Dialogue</text>
+    <text x="0" y="50" text-anchor="middle" class="fa core-small">رابطه + معنا + کنش</text>
+
+    <text x="0" y="-232" text-anchor="middle" class="fa ring-label">رسانه</text>
+    <text x="230" y="-5" text-anchor="middle" class="fa ring-label">نیت</text>
+    <text x="0" y="245" text-anchor="middle" class="fa ring-label">رسمیت</text>
+    <text x="-230" y="-5" text-anchor="middle" class="fa ring-label">قدرت</text>
+
+    <text x="165" y="-162" text-anchor="middle" class="fa ring-small">عمق</text>
+    <text x="-165" y="-162" text-anchor="middle" class="fa ring-small">فرهنگ</text>
+    <text x="165" y="178" text-anchor="middle" class="fa ring-small">هدف</text>
+    <text x="-165" y="178" text-anchor="middle" class="fa ring-small">قواعد</text>
+  </g>
+
+  <g transform="translate(895,460)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="405" height="128" rx="22" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.4"/>
+    <circle cx="40" cy="40" r="25" fill="#2563EB" opacity="0.16"/>
+    <text x="40" y="50" text-anchor="middle" font-size="24">🎙️</text>
+
+    <text x="378" y="30" text-anchor="start" class="fa node-title">یک‌جانبه</text>
+    <text x="378" y="49" text-anchor="end" class="en node-en">Monologic</text>
+    <line x1="24" y1="64" x2="380" y2="64" stroke="#E2E8F0"/>
+    <text x="378" y="96" text-anchor="start" class="fa node-body">سخنرانی، خطابه، روایت، پادکست، دعا، اعتراف</text>
+  </g>  <g transform="translate(1395,360)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="405" height="128" rx="22" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.4"/>
+    <circle cx="40" cy="40" r="25" fill="#0EA5E9" opacity="0.16"/>
+    <text x="40" y="50" text-anchor="middle" font-size="24">💬</text>
+
+    <text x="378" y="30" text-anchor="start" class="fa node-title">دوجانبه</text>
+    <text x="378" y="49" text-anchor="end" class="en node-en">Dyadic</text>
+    <line x1="24" y1="64" x2="380" y2="64" stroke="#E2E8F0"/>
+    <text x="378" y="96" text-anchor="start" class="fa node-body">مکالمه، مصاحبه، مشاوره، مذاکره، درد دل</text>
+  </g>  <g transform="translate(1900,460)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="405" height="128" rx="22" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.4"/>
+    <circle cx="40" cy="40" r="25" fill="#16A34A" opacity="0.16"/>
+    <text x="40" y="50" text-anchor="middle" font-size="24">👥</text>
+
+    <text x="378" y="30" text-anchor="start" class="fa node-title">چندجانبه</text>
+    <text x="378" y="49" text-anchor="end" class="en node-en">Multi-party</text>
+    <line x1="24" y1="64" x2="380" y2="64" stroke="#E2E8F0"/>
+    <text x="378" y="96" text-anchor="start" class="fa node-body">پنل، شورا، جلسه، طوفان فکری، حلقه یادگیری</text>
+  </g>  <g transform="translate(2170,790)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="405" height="128" rx="22" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.4"/>
+    <circle cx="40" cy="40" r="25" fill="#EF4444" opacity="0.16"/>
+    <text x="40" y="50" text-anchor="middle" font-size="24">⚔️</text>
+
+    <text x="378" y="30" text-anchor="start" class="fa node-title">رقابتی</text>
+    <text x="378" y="49" text-anchor="end" class="en node-en">Competitive</text>
+    <line x1="24" y1="64" x2="380" y2="64" stroke="#E2E8F0"/>
+    <text x="378" y="96" text-anchor="start" class="fa node-body">جدل، مناظره، استیضاح، کراس‌اگزمینیشن</text>
+  </g>  <g transform="translate(2100,1120)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="405" height="128" rx="22" fill="#FFFFFF" stroke="#22C55E" stroke-width="1.4"/>
+    <circle cx="40" cy="40" r="25" fill="#22C55E" opacity="0.16"/>
+    <text x="40" y="50" text-anchor="middle" font-size="24">💡</text>
+
+    <text x="378" y="30" text-anchor="start" class="fa node-title">مشارکتی</text>
+    <text x="378" y="49" text-anchor="end" class="en node-en">Collaborative</text>
+    <line x1="24" y1="64" x2="380" y2="64" stroke="#E2E8F0"/>
+    <text x="378" y="96" text-anchor="start" class="fa node-body">همفکری، کوچینگ، منتورینگ، Peer Review</text>
+  </g>  <g transform="translate(1395,1220)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="405" height="128" rx="22" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="1.4"/>
+    <circle cx="40" cy="40" r="25" fill="#8B5CF6" opacity="0.16"/>
+    <text x="40" y="50" text-anchor="middle" font-size="24">🛋️</text>
+
+    <text x="378" y="30" text-anchor="start" class="fa node-title">درمانی ـ ترمیمی</text>
+    <text x="378" y="49" text-anchor="end" class="en node-en">Therapeutic</text>
+    <line x1="24" y1="64" x2="380" y2="64" stroke="#E2E8F0"/>
+    <text x="378" y="96" text-anchor="start" class="fa node-body">مشاوره، NVC، گفتگوی ترمیمی، همدلی</text>
+  </g>  <g transform="translate(895,1120)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="405" height="128" rx="22" fill="#FFFFFF" stroke="#F97316" stroke-width="1.4"/>
+    <circle cx="40" cy="40" r="25" fill="#F97316" opacity="0.16"/>
+    <text x="40" y="50" text-anchor="middle" font-size="24">🕌</text>
+
+    <text x="378" y="30" text-anchor="start" class="fa node-title">معنوی ـ آیینی</text>
+    <text x="378" y="49" text-anchor="end" class="en node-en">Ritual / Spiritual</text>
+    <line x1="24" y1="64" x2="380" y2="64" stroke="#E2E8F0"/>
+    <text x="378" y="96" text-anchor="start" class="fa node-body">مناجات، ذکر، مباهله، مرشد ـ مرید</text>
+  </g>  <g transform="translate(825,790)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="405" height="128" rx="22" fill="#FFFFFF" stroke="#14B8A6" stroke-width="1.4"/>
+    <circle cx="40" cy="40" r="25" fill="#14B8A6" opacity="0.16"/>
+    <text x="40" y="50" text-anchor="middle" font-size="24">🪞</text>
+
+    <text x="378" y="30" text-anchor="start" class="fa node-title">فراگفتگو</text>
+    <text x="378" y="49" text-anchor="end" class="en node-en">Meta-dialogue</text>
+    <line x1="24" y1="64" x2="380" y2="64" stroke="#E2E8F0"/>
+    <text x="378" y="96" text-anchor="start" class="fa node-body">گفتگو درباره هدف، قواعد، کیفیت و خرابی گفتگو</text>
+  </g>
+
+  <!-- Matrix inside central panel -->
+  <g transform="translate(825,1295)">
+    <text x="1520" y="30" text-anchor="start" class="fa section-title">ماتریس انتخاب کاربردی</text>
+    <text x="20" y="30" text-anchor="start" class="en section-en">Need → Suitable conversational form</text>
+  </g>
+
+  <g transform="translate(875,1360)">
+    <rect x="0" y="0" width="360" height="92" rx="20" fill="#2563EB" opacity="0.10" stroke="#2563EB" stroke-width="1.1"/>
+    <text x="335" y="32" text-anchor="start" class="fa matrix-title">اگر هدف فهم است</text>
+    <text x="335" y="61" text-anchor="start" class="fa matrix-body">گفتگو، پرسشگری، دیالوگ تأملی</text>
+  </g>  <g transform="translate(1255,1360)">
+    <rect x="0" y="0" width="360" height="92" rx="20" fill="#22C55E" opacity="0.10" stroke="#22C55E" stroke-width="1.1"/>
+    <text x="335" y="32" text-anchor="start" class="fa matrix-title">اگر هدف ایده است</text>
+    <text x="335" y="61" text-anchor="start" class="fa matrix-body">همفکری، طوفان فکری، طراحی مشترک</text>
+  </g>  <g transform="translate(1635,1360)">
+    <rect x="0" y="0" width="360" height="92" rx="20" fill="#F97316" opacity="0.10" stroke="#F97316" stroke-width="1.1"/>
+    <text x="335" y="32" text-anchor="start" class="fa matrix-title">اگر هدف آزمون است</text>
+    <text x="335" y="61" text-anchor="start" class="fa matrix-body">بحث، مناظره، نقد، Peer Review</text>
+  </g>  <g transform="translate(2015,1360)">
+    <rect x="0" y="0" width="360" height="92" rx="20" fill="#EAB308" opacity="0.10" stroke="#EAB308" stroke-width="1.1"/>
+    <text x="335" y="32" text-anchor="start" class="fa matrix-title">اگر هدف توافق است</text>
+    <text x="335" y="61" text-anchor="start" class="fa matrix-body">مذاکره، میانجی‌گری، قرارداد</text>
+  </g>  <g transform="translate(875,1470)">
+    <rect x="0" y="0" width="360" height="92" rx="20" fill="#0EA5E9" opacity="0.10" stroke="#0EA5E9" stroke-width="1.1"/>
+    <text x="335" y="32" text-anchor="start" class="fa matrix-title">اگر نیاز عاطفی است</text>
+    <text x="335" y="61" text-anchor="start" class="fa matrix-body">درد دل، همدلی، شنیدن فعال</text>
+  </g>  <g transform="translate(1255,1470)">
+    <rect x="0" y="0" width="360" height="92" rx="20" fill="#EF4444" opacity="0.10" stroke="#EF4444" stroke-width="1.1"/>
+    <text x="335" y="32" text-anchor="start" class="fa matrix-title">اگر رابطه زخمی است</text>
+    <text x="335" y="61" text-anchor="start" class="fa matrix-body">گفتگوی ترمیمی، NVC، عذرخواهی</text>
+  </g>  <g transform="translate(1635,1470)">
+    <rect x="0" y="0" width="360" height="92" rx="20" fill="#14B8A6" opacity="0.10" stroke="#14B8A6" stroke-width="1.1"/>
+    <text x="335" y="32" text-anchor="start" class="fa matrix-title">اگر قواعد خراب است</text>
+    <text x="335" y="61" text-anchor="start" class="fa matrix-body">فراگفتگو و بازتعریف هدف</text>
+  </g>  <g transform="translate(2015,1470)">
+    <rect x="0" y="0" width="360" height="92" rx="20" fill="#8B5CF6" opacity="0.10" stroke="#8B5CF6" stroke-width="1.1"/>
+    <text x="335" y="32" text-anchor="start" class="fa matrix-title">اگر معنا مطرح است</text>
+    <text x="335" y="61" text-anchor="start" class="fa matrix-body">گفتگوی عمیق، معنوی، وجودی</text>
+  </g>
+
+  <!-- Right panels -->
+  <g transform="translate(2860,390)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="1225" height="315" rx="26" fill="#FFFFFF" stroke="#DB2777" stroke-width="1.45"/>
+    <rect x="0" y="0" width="1225" height="64" rx="26" fill="#DB2777" opacity="0.10"/>
+    <rect x="0" y="44" width="1225" height="20" fill="#DB2777" opacity="0.10"/>
+
+    <circle cx="48" cy="42" r="28" fill="#DB2777" opacity="0.18"/>
+    <text x="48" y="53" text-anchor="middle" font-size="26">🧩</text>
+
+    <text x="1195" y="36" text-anchor="start" class="fa panel-title">کارت پروفایل هر گونه گفتگو</text>
+    <text x="1195" y="56" text-anchor="end" class="en panel-en">Profile Card Template</text>
+
+    <line x1="30" y1="74" x2="1195" y2="74" stroke="#DB2777" stroke-width="2" opacity="0.45"/>
+    <text x="1195" y="92" text-anchor="start" class="fa panel-line" font-size="14">تعریف دقیق یک‌خطی هر گونه گفتگو</text>
+    <text x="1195" y="119" text-anchor="start" class="fa panel-line" font-size="14">هدف اصلی و خروجی مطلوب</text>
+    <text x="1195" y="146" text-anchor="start" class="fa panel-line" font-size="14">بازیگران، نقش‌ها و نسبت قدرت</text>
+    <text x="1195" y="173" text-anchor="start" class="fa panel-line" font-size="14">قواعد حاکم و مرزهای اخلاقی</text>
+    <text x="1195" y="200" text-anchor="start" class="fa panel-line" font-size="14">مثال واقعی، تاریخی یا آموزشی</text>
+    <text x="1195" y="227" text-anchor="start" class="fa panel-line" font-size="14">شاخص موفقیت و نشانه شکست</text>
+    <text x="1195" y="254" text-anchor="start" class="fa panel-line" font-size="14">تله‌ها، مغالطات و مهارت لازم</text>
+    <text x="1195" y="281" text-anchor="start" class="fa panel-line" font-size="14">نسخه سالم و نسخه منحرف‌شده</text>
+
+  </g>
+  <g transform="translate(2860,735)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="1225" height="325" rx="26" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.45"/>
+    <rect x="0" y="0" width="1225" height="64" rx="26" fill="#EF4444" opacity="0.10"/>
+    <rect x="0" y="44" width="1225" height="20" fill="#EF4444" opacity="0.10"/>
+
+    <circle cx="48" cy="42" r="28" fill="#EF4444" opacity="0.18"/>
+    <text x="48" y="53" text-anchor="middle" font-size="26">🧨</text>
+
+    <text x="1195" y="36" text-anchor="start" class="fa panel-title">تله‌ها و مغالطات پرتکرار</text>
+    <text x="1195" y="56" text-anchor="end" class="en panel-en">Common Traps &amp; Fallacies</text>
+
+    <line x1="30" y1="74" x2="1195" y2="74" stroke="#EF4444" stroke-width="2" opacity="0.45"/>
+    <text x="1195" y="92" text-anchor="start" class="fa panel-line" font-size="14">کاه‌مرد: تحریف موضع طرف مقابل</text>
+    <text x="1195" y="119" text-anchor="start" class="fa panel-line" font-size="14">حمله شخصی: تخریب گوینده به جای نقد ایده</text>
+    <text x="1195" y="146" text-anchor="start" class="fa panel-line" font-size="14">دوراهی کاذب: محدودکردن مسئله به فقط دو گزینه</text>
+    <text x="1195" y="173" text-anchor="start" class="fa panel-line" font-size="14">شیب لغزنده: بزرگ‌نمایی پیامدهای بی‌دلیل</text>
+    <text x="1195" y="200" text-anchor="start" class="fa panel-line" font-size="14">گازلایتینگ: تردیدآفرینی در ادراک طرف مقابل</text>
+    <text x="1195" y="227" text-anchor="start" class="fa panel-line" font-size="14">تغییر زمین بازی: جابه‌جایی معیار پس از پاسخ</text>
+    <text x="1195" y="254" text-anchor="start" class="fa panel-line" font-size="14">توافق‌نمایی: پنهان‌کردن اختلاف واقعی</text>
+    <text x="1195" y="281" text-anchor="start" class="fa panel-line" font-size="14">مهرطلبی گفتگویی: قربانی‌کردن صداقت برای صلح ظاهری</text>
+
+  </g>
+  <g transform="translate(2860,1090)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="1225" height="365" rx="26" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.45"/>
+    <rect x="0" y="0" width="1225" height="64" rx="26" fill="#16A34A" opacity="0.10"/>
+    <rect x="0" y="44" width="1225" height="20" fill="#16A34A" opacity="0.10"/>
+
+    <circle cx="48" cy="42" r="28" fill="#16A34A" opacity="0.18"/>
+    <text x="48" y="53" text-anchor="middle" font-size="26">🕌</text>
+
+    <text x="1195" y="36" text-anchor="start" class="fa panel-title">لایه فرهنگی ـ ایرانی ـ اسلامی</text>
+    <text x="1195" y="56" text-anchor="end" class="en panel-en">Iranian-Islamic Dialogue Layer</text>
+
+    <line x1="30" y1="74" x2="1195" y2="74" stroke="#16A34A" stroke-width="2" opacity="0.45"/>
+    <text x="1195" y="92" text-anchor="start" class="fa panel-line" font-size="14">محاجّه قرآنی: احتجاج، تمثیل، دعوت و تذکر</text>
+    <text x="1195" y="120" text-anchor="start" class="fa panel-line" font-size="14">مناظره حوزوی: تقریر، اشکال، نقض و ابرام</text>
+    <text x="1195" y="148" text-anchor="start" class="fa panel-line" font-size="14">مباهله: داوری آیینی ـ ایمانی در نزاع حق</text>
+    <text x="1195" y="176" text-anchor="start" class="fa panel-line" font-size="14">مناجات: گفتگوی رابطه‌مند با امر قدسی</text>
+    <text x="1195" y="204" text-anchor="start" class="fa panel-line" font-size="14">ذکر و حلقه عرفانی: هم‌آوایی، حضور و سکوت</text>
+    <text x="1195" y="232" text-anchor="start" class="fa panel-line" font-size="14">مراد ـ مرید: گفتگوی تربیتی در رابطه نامتقارن</text>
+    <text x="1195" y="260" text-anchor="start" class="fa panel-line" font-size="14">رسائل و مکاتبات: گفتگوی ناهمزمان و تأملی</text>
+    <text x="1195" y="288" text-anchor="start" class="fa panel-line" font-size="14">شطحیات: گفتار پارادوکسیکال عارفانه</text>
+    <text x="1195" y="316" text-anchor="start" class="fa panel-line" font-size="14">محورهای خوانش: ادب، حقیقت، سلوک، حضور</text>
+
+  </g>
+  <g transform="translate(2860,1485)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="1225" height="330" rx="26" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.45"/>
+    <rect x="0" y="0" width="1225" height="64" rx="26" fill="#2563EB" opacity="0.10"/>
+    <rect x="0" y="44" width="1225" height="20" fill="#2563EB" opacity="0.10"/>
+
+    <circle cx="48" cy="42" r="28" fill="#2563EB" opacity="0.18"/>
+    <text x="48" y="53" text-anchor="middle" font-size="26">🎨</text>
+
+    <text x="1195" y="36" text-anchor="start" class="fa panel-title">منطق طراحی نسخه نهایی</text>
+    <text x="1195" y="56" text-anchor="end" class="en panel-en">Final Infographic Design Logic</text>
+
+    <line x1="30" y1="74" x2="1195" y2="74" stroke="#2563EB" stroke-width="2" opacity="0.45"/>
+    <text x="1195" y="92" text-anchor="start" class="fa panel-line" font-size="14">هسته مرکزی: تعریف گفتگو و نسبت آن با معنا</text>
+    <text x="1195" y="120" text-anchor="start" class="fa panel-line" font-size="14">حلقه اول: ابعاد تشخیص و موقعیت گفتگو</text>
+    <text x="1195" y="148" text-anchor="start" class="fa panel-line" font-size="14">حلقه دوم: گونه‌ها و زیرگونه‌ها</text>
+    <text x="1195" y="176" text-anchor="start" class="fa panel-line" font-size="14">پنل‌های جانبی: نظریه، فرهنگ، آسیب، کاربرد</text>
+    <text x="1195" y="204" text-anchor="start" class="fa panel-line" font-size="14">رنگ‌ها باید معنای ثابت و تکرارشونده داشته باشند</text>
+    <text x="1195" y="232" text-anchor="start" class="fa panel-line" font-size="14">فارسی و انگلیسی جایگاه منظم داشته باشند</text>
+    <text x="1195" y="260" text-anchor="start" class="fa panel-line" font-size="14">نسخه نهایی: A0/A1، وب اسکرول‌شونده، دک آموزشی</text>
+    <text x="1195" y="288" text-anchor="start" class="fa panel-line" font-size="14">مسیر خواندن: هسته ← ابعاد ← گونه‌ها ← کاربرد</text>
+
+  </g>
+
+  <!-- Theory strip -->
+  <g transform="translate(115,1915)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="3970" height="335" rx="32" fill="#F8FAFC" stroke="#CBD5E1"/>
+    <rect x="0" y="0" width="3970" height="70" rx="32" fill="#FFFFFF"/>
+    <text x="3940" y="45" text-anchor="start" class="fa section-title">چارچوب نظری: عدسی‌های خواندن گفتگو</text>
+    <text x="35" y="45" text-anchor="start" class="en section-en">Theoretical lenses: relation, action, interpretation, cooperation, politeness, repair</text>
+    <line x1="35" y1="72" x2="3940" y2="72" stroke="#CBD5E1"/>
+  </g>
+
+  <g transform="translate(170,2025)">
+    <rect x="0" y="0" width="455" height="78" rx="20" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.25"/>
+    <circle cx="36" cy="39" r="20" fill="#7C3AED" opacity="0.16"/>
+    <text x="430" y="28" text-anchor="start" class="fa theory-name">مارتین بوبر</text>
+    <text x="430" y="50" text-anchor="start" class="fa theory-concept">رابطه من ـ تو؛ دیگری ابزار نیست</text>
+    <text x="36" y="45" text-anchor="middle" class="en theory-en" fill="#7C3AED">Buber</text>
+  </g>  <g transform="translate(650,2025)">
+    <rect x="0" y="0" width="455" height="78" rx="20" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.25"/>
+    <circle cx="36" cy="39" r="20" fill="#2563EB" opacity="0.16"/>
+    <text x="430" y="28" text-anchor="start" class="fa theory-name">یورگن هابرماس</text>
+    <text x="430" y="50" text-anchor="start" class="fa theory-concept">کنش ارتباطی و عقلانیت تفاهمی</text>
+    <text x="36" y="45" text-anchor="middle" class="en theory-en" fill="#2563EB">Hab.</text>
+  </g>  <g transform="translate(1130,2025)">
+    <rect x="0" y="0" width="455" height="78" rx="20" fill="#FFFFFF" stroke="#0F766E" stroke-width="1.25"/>
+    <circle cx="36" cy="39" r="20" fill="#0F766E" opacity="0.16"/>
+    <text x="430" y="28" text-anchor="start" class="fa theory-name">دیوید بوهم</text>
+    <text x="430" y="50" text-anchor="start" class="fa theory-concept">تعلیق پیش‌فرض‌ها و یادگیری جمعی</text>
+    <text x="36" y="45" text-anchor="middle" class="en theory-en" fill="#0F766E">Bohm</text>
+  </g>  <g transform="translate(1610,2025)">
+    <rect x="0" y="0" width="455" height="78" rx="20" fill="#FFFFFF" stroke="#EA580C" stroke-width="1.25"/>
+    <circle cx="36" cy="39" r="20" fill="#EA580C" opacity="0.16"/>
+    <text x="430" y="28" text-anchor="start" class="fa theory-name">پل گرایس</text>
+    <text x="430" y="50" text-anchor="start" class="fa theory-concept">اصل همکاری: کمیت، کیفیت، ربط، شیوه</text>
+    <text x="36" y="45" text-anchor="middle" class="en theory-en" fill="#EA580C">Grice</text>
+  </g>  <g transform="translate(2090,2025)">
+    <rect x="0" y="0" width="455" height="78" rx="20" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.25"/>
+    <circle cx="36" cy="39" r="20" fill="#DC2626" opacity="0.16"/>
+    <text x="430" y="28" text-anchor="start" class="fa theory-name">آستین و سرل</text>
+    <text x="430" y="50" text-anchor="start" class="fa theory-concept">کنش گفتاری؛ گفتن یعنی انجام دادن</text>
+    <text x="36" y="45" text-anchor="middle" class="en theory-en" fill="#DC2626">A/S</text>
+  </g>  <g transform="translate(2570,2025)">
+    <rect x="0" y="0" width="455" height="78" rx="20" fill="#FFFFFF" stroke="#DB2777" stroke-width="1.25"/>
+    <circle cx="36" cy="39" r="20" fill="#DB2777" opacity="0.16"/>
+    <text x="430" y="28" text-anchor="start" class="fa theory-name">براون، لوینسون، لیچ</text>
+    <text x="430" y="50" text-anchor="start" class="fa theory-concept">ادب، وجهه، آبرو و فاصله اجتماعی</text>
+    <text x="36" y="45" text-anchor="middle" class="en theory-en" fill="#DB2777">Pol.</text>
+  </g>  <g transform="translate(3050,2025)">
+    <rect x="0" y="0" width="455" height="78" rx="20" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.25"/>
+    <circle cx="36" cy="39" r="20" fill="#16A34A" opacity="0.16"/>
+    <text x="430" y="28" text-anchor="start" class="fa theory-name">مارشال روزنبرگ</text>
+    <text x="430" y="50" text-anchor="start" class="fa theory-concept">مشاهده، احساس، نیاز، درخواست</text>
+    <text x="36" y="45" text-anchor="middle" class="en theory-en" fill="#16A34A">NVC</text>
+  </g>  <g transform="translate(3530,2025)">
+    <rect x="0" y="0" width="455" height="78" rx="20" fill="#FFFFFF" stroke="#64748B" stroke-width="1.25"/>
+    <circle cx="36" cy="39" r="20" fill="#64748B" opacity="0.16"/>
+    <text x="430" y="28" text-anchor="start" class="fa theory-name">هانس گادامر</text>
+    <text x="430" y="50" text-anchor="start" class="fa theory-concept">فهم به‌مثابه ادغام افق‌ها</text>
+    <text x="36" y="45" text-anchor="middle" class="en theory-en" fill="#64748B">Gad.</text>
+  </g>  <g transform="translate(170,2125)">
+    <rect x="0" y="0" width="455" height="78" rx="20" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.25"/>
+    <circle cx="36" cy="39" r="20" fill="#0EA5E9" opacity="0.16"/>
+    <text x="430" y="28" text-anchor="start" class="fa theory-name">سقراط</text>
+    <text x="430" y="50" text-anchor="start" class="fa theory-concept">پرسشگری، زایش معنا، آزمون ادعا</text>
+    <text x="36" y="45" text-anchor="middle" class="en theory-en" fill="#0EA5E9">Soc.</text>
+  </g>  <g transform="translate(650,2125)">
+    <rect x="0" y="0" width="455" height="78" rx="20" fill="#FFFFFF" stroke="#F97316" stroke-width="1.25"/>
+    <circle cx="36" cy="39" r="20" fill="#F97316" opacity="0.16"/>
+    <text x="430" y="28" text-anchor="start" class="fa theory-name">تحلیل گفتمان</text>
+    <text x="430" y="50" text-anchor="start" class="fa theory-concept">قدرت، زمینه، نوبت، کنش و هویت</text>
+    <text x="36" y="45" text-anchor="middle" class="en theory-en" fill="#F97316">Disc.</text>
+  </g>  <g transform="translate(1130,2125)">
+    <rect x="0" y="0" width="455" height="78" rx="20" fill="#FFFFFF" stroke="#14B8A6" stroke-width="1.25"/>
+    <circle cx="36" cy="39" r="20" fill="#14B8A6" opacity="0.16"/>
+    <text x="430" y="28" text-anchor="start" class="fa theory-name">تحلیل مکالمه</text>
+    <text x="430" y="50" text-anchor="start" class="fa theory-concept">نوبت‌گیری، repair، adjacency pairs</text>
+    <text x="36" y="45" text-anchor="middle" class="en theory-en" fill="#14B8A6">CA</text>
+  </g>  <g transform="translate(1610,2125)">
+    <rect x="0" y="0" width="455" height="78" rx="20" fill="#FFFFFF" stroke="#EAB308" stroke-width="1.25"/>
+    <circle cx="36" cy="39" r="20" fill="#EAB308" opacity="0.16"/>
+    <text x="430" y="28" text-anchor="start" class="fa theory-name">هرمنوتیک</text>
+    <text x="430" y="50" text-anchor="start" class="fa theory-concept">فهم تاریخی و افق‌های تفسیری</text>
+    <text x="36" y="45" text-anchor="middle" class="en theory-en" fill="#EAB308">Herm.</text>
+  </g>  <g transform="translate(2090,2125)">
+    <rect x="0" y="0" width="455" height="78" rx="20" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="1.25"/>
+    <circle cx="36" cy="39" r="20" fill="#8B5CF6" opacity="0.16"/>
+    <text x="430" y="28" text-anchor="start" class="fa theory-name">روان‌شناسی ارتباط</text>
+    <text x="430" y="50" text-anchor="start" class="fa theory-concept">هیجان، هم‌تنظیمی، شنیدن فعال</text>
+    <text x="36" y="45" text-anchor="middle" class="en theory-en" fill="#8B5CF6">Psy.</text>
+  </g>  <g transform="translate(2570,2125)">
+    <rect x="0" y="0" width="455" height="78" rx="20" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.25"/>
+    <circle cx="36" cy="39" r="20" fill="#EF4444" opacity="0.16"/>
+    <text x="430" y="28" text-anchor="start" class="fa theory-name">اخلاق گفتگو</text>
+    <text x="430" y="50" text-anchor="start" class="fa theory-concept">حرمت، انصاف، صداقت و مسئولیت</text>
+    <text x="36" y="45" text-anchor="middle" class="en theory-en" fill="#EF4444">Eth.</text>
+  </g>  <g transform="translate(3050,2125)">
+    <rect x="0" y="0" width="455" height="78" rx="20" fill="#FFFFFF" stroke="#22C55E" stroke-width="1.25"/>
+    <circle cx="36" cy="39" r="20" fill="#22C55E" opacity="0.16"/>
+    <text x="430" y="28" text-anchor="start" class="fa theory-name">هوش مصنوعی گفتگویی</text>
+    <text x="430" y="50" text-anchor="start" class="fa theory-concept">Human-AI Dialogue و UX مکالمه‌ای</text>
+    <text x="36" y="45" text-anchor="middle" class="en theory-en" fill="#22C55E">AI</text>
+  </g>  <g transform="translate(3530,2125)">
+    <rect x="0" y="0" width="455" height="78" rx="20" fill="#FFFFFF" stroke="#334155" stroke-width="1.25"/>
+    <circle cx="36" cy="39" r="20" fill="#334155" opacity="0.16"/>
+    <text x="430" y="28" text-anchor="start" class="fa theory-name">فرهنگ و زبان</text>
+    <text x="430" y="50" text-anchor="start" class="fa theory-concept">ادب، بافت، کنایه، سکوت و مقام</text>
+    <text x="36" y="45" text-anchor="middle" class="en theory-en" fill="#334155">Cult.</text>
+  </g>
+
+  <!-- Decision flow panel -->
+  <g transform="translate(115,2290)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="3970" height="405" rx="32" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <rect x="0" y="0" width="3970" height="74" rx="32" fill="#ECFDF5"/>
+    <text x="3940" y="47" text-anchor="start" class="fa section-title">راهنمای انتخاب نوع گفتگو در موقعیت واقعی</text>
+    <text x="35" y="47" text-anchor="start" class="en section-en">Decision flow: identify the dominant need, then choose the safest conversational form</text>
+
+    <g transform="translate(45,102)">
+      <rect x="0" y="0" width="165" height="250" rx="24" fill="#F8FAFC" stroke="#CBD5E1"/>
+      <text x="132" y="42" text-anchor="start" class="fa" font-size="19" font-weight="900" fill="#1E293B">شروع</text>
+      <text x="132" y="82" text-anchor="start" class="fa" font-size="13" font-weight="700" fill="#475569">نیاز غالب چیست؟</text>
+      <text x="132" y="122" text-anchor="start" class="fa" font-size="12" font-weight="650" fill="#64748B">حمایت؟</text>
+      <text x="132" y="150" text-anchor="start" class="fa" font-size="12" font-weight="650" fill="#64748B">ایده؟</text>
+      <text x="132" y="178" text-anchor="start" class="fa" font-size="12" font-weight="650" fill="#64748B">توافق؟</text>
+      <text x="132" y="206" text-anchor="start" class="fa" font-size="12" font-weight="650" fill="#64748B">ترمیم؟</text>
+    </g>
+  </g>
+
+  <g transform="translate(250,2405)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="590" height="116" rx="23" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.35"/>
+    <rect x="0" y="0" width="590" height="36" rx="23" fill="#0EA5E9" opacity="0.12"/>
+
+    <text x="562" y="25" text-anchor="start" class="fa decision-need">حمایت عاطفی</text>
+    <text x="562" y="63" text-anchor="start" class="fa decision-form">درد دل / گوش‌دادن همدلانه</text>
+    <text x="562" y="88" text-anchor="start" class="fa decision-rule">قاعده: اول بازتاب، بعد تحلیل</text>
+    <text x="562" y="108" text-anchor="start" class="fa decision-avoid">پرهیز: نصیحت زودهنگام</text>
+  </g>  <g transform="translate(870,2405)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="590" height="116" rx="23" fill="#FFFFFF" stroke="#22C55E" stroke-width="1.35"/>
+    <rect x="0" y="0" width="590" height="36" rx="23" fill="#22C55E" opacity="0.12"/>
+
+    <text x="562" y="25" text-anchor="start" class="fa decision-need">تولید گزینه</text>
+    <text x="562" y="63" text-anchor="start" class="fa decision-form">همفکری / طوفان فکری</text>
+    <text x="562" y="88" text-anchor="start" class="fa decision-rule">قاعده: تعلیق داوری در تولید ایده</text>
+    <text x="562" y="108" text-anchor="start" class="fa decision-avoid">پرهیز: کشتن ایده خام</text>
+  </g>  <g transform="translate(1490,2405)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="590" height="116" rx="23" fill="#FFFFFF" stroke="#F97316" stroke-width="1.35"/>
+    <rect x="0" y="0" width="590" height="36" rx="23" fill="#F97316" opacity="0.12"/>
+
+    <text x="562" y="25" text-anchor="start" class="fa decision-need">آزمون دلیل</text>
+    <text x="562" y="63" text-anchor="start" class="fa decision-form">بحث / مناظره</text>
+    <text x="562" y="88" text-anchor="start" class="fa decision-rule">قاعده: نقد ادعا، نه شخص</text>
+    <text x="562" y="108" text-anchor="start" class="fa decision-avoid">پرهیز: حمله شخصی</text>
+  </g>  <g transform="translate(2110,2405)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="590" height="116" rx="23" fill="#FFFFFF" stroke="#EAB308" stroke-width="1.35"/>
+    <rect x="0" y="0" width="590" height="36" rx="23" fill="#EAB308" opacity="0.12"/>
+
+    <text x="562" y="25" text-anchor="start" class="fa decision-need">توافق منافع</text>
+    <text x="562" y="63" text-anchor="start" class="fa decision-form">مذاکره</text>
+    <text x="562" y="88" text-anchor="start" class="fa decision-rule">قاعده: تفکیک موضع از منفعت</text>
+    <text x="562" y="108" text-anchor="start" class="fa decision-avoid">پرهیز: اجبار پنهان</text>
+  </g>  <g transform="translate(2730,2405)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="590" height="116" rx="23" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.35"/>
+    <rect x="0" y="0" width="590" height="36" rx="23" fill="#EF4444" opacity="0.12"/>
+
+    <text x="562" y="25" text-anchor="start" class="fa decision-need">رنجش و تعارض</text>
+    <text x="562" y="63" text-anchor="start" class="fa decision-form">گفتگوی ترمیمی / NVC</text>
+    <text x="562" y="88" text-anchor="start" class="fa decision-rule">قاعده: نیاز را پشت سرزنش ببین</text>
+    <text x="562" y="108" text-anchor="start" class="fa decision-avoid">پرهیز: دفاع و سرزنش</text>
+  </g>  <g transform="translate(3350,2405)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="590" height="116" rx="23" fill="#FFFFFF" stroke="#14B8A6" stroke-width="1.35"/>
+    <rect x="0" y="0" width="590" height="36" rx="23" fill="#14B8A6" opacity="0.12"/>
+
+    <text x="562" y="25" text-anchor="start" class="fa decision-need">خرابی قواعد</text>
+    <text x="562" y="63" text-anchor="start" class="fa decision-form">فراگفتگو</text>
+    <text x="562" y="88" text-anchor="start" class="fa decision-rule">قاعده: درباره فرایند حرف بزن</text>
+    <text x="562" y="108" text-anchor="start" class="fa decision-avoid">پرهیز: تحلیل‌زدگی</text>
+  </g>  <g transform="translate(560,2545)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="590" height="116" rx="23" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="1.35"/>
+    <rect x="0" y="0" width="590" height="36" rx="23" fill="#8B5CF6" opacity="0.12"/>
+
+    <text x="562" y="25" text-anchor="start" class="fa decision-need">ابهام شخصی</text>
+    <text x="562" y="63" text-anchor="start" class="fa decision-form">مشاوره / کوچینگ</text>
+    <text x="562" y="88" text-anchor="start" class="fa decision-rule">قاعده: پرسش باز پیش از راهکار</text>
+    <text x="562" y="108" text-anchor="start" class="fa decision-avoid">پرهیز: نسخه‌پیچی</text>
+  </g>  <g transform="translate(1180,2545)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="590" height="116" rx="23" fill="#FFFFFF" stroke="#64748B" stroke-width="1.35"/>
+    <rect x="0" y="0" width="590" height="36" rx="23" fill="#64748B" opacity="0.12"/>
+
+    <text x="562" y="25" text-anchor="start" class="fa decision-need">نیاز به تأمل</text>
+    <text x="562" y="63" text-anchor="start" class="fa decision-form">سکوت معنادار / مکاتبه</text>
+    <text x="562" y="88" text-anchor="start" class="fa decision-rule">قاعده: به زمان فهم احترام بگذار</text>
+    <text x="562" y="108" text-anchor="start" class="fa decision-avoid">پرهیز: فشار برای پاسخ فوری</text>
+  </g>  <g transform="translate(1800,2545)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="590" height="116" rx="23" fill="#FFFFFF" stroke="#DB2777" stroke-width="1.35"/>
+    <rect x="0" y="0" width="590" height="36" rx="23" fill="#DB2777" opacity="0.12"/>
+
+    <text x="562" y="25" text-anchor="start" class="fa decision-need">نیاز به معنا</text>
+    <text x="562" y="63" text-anchor="start" class="fa decision-form">گفتگوی عمیق / وجودی</text>
+    <text x="562" y="88" text-anchor="start" class="fa decision-rule">قاعده: حضور و صداقت مقدم است</text>
+    <text x="562" y="108" text-anchor="start" class="fa decision-avoid">پرهیز: سطحی‌سازی</text>
+  </g>  <g transform="translate(2420,2545)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="590" height="116" rx="23" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.35"/>
+    <rect x="0" y="0" width="590" height="36" rx="23" fill="#2563EB" opacity="0.12"/>
+
+    <text x="562" y="25" text-anchor="start" class="fa decision-need">آموزش و انتقال فهم</text>
+    <text x="562" y="63" text-anchor="start" class="fa decision-form">تدریس گفتگویی / منتورینگ</text>
+    <text x="562" y="88" text-anchor="start" class="fa decision-rule">قاعده: از پرسش تا مفهوم حرکت کن</text>
+    <text x="562" y="108" text-anchor="start" class="fa decision-avoid">پرهیز: سخنرانی یک‌طرفه</text>
+  </g>  <g transform="translate(3040,2545)" filter="url(#tinyShadow)">
+    <rect x="0" y="0" width="590" height="116" rx="23" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.35"/>
+    <rect x="0" y="0" width="590" height="36" rx="23" fill="#16A34A" opacity="0.12"/>
+
+    <text x="562" y="25" text-anchor="start" class="fa decision-need">یادگیری جمعی</text>
+    <text x="562" y="63" text-anchor="start" class="fa decision-form">حلقه گفتگو / Peer Review</text>
+    <text x="562" y="88" text-anchor="start" class="fa decision-rule">قاعده: نوبت، بازخورد، جمع‌بندی</text>
+    <text x="562" y="108" text-anchor="start" class="fa decision-avoid">پرهیز: گروه‌اندیشی</text>
+  </g>
+
+  <!-- Final footer -->
+  <line x1="115" y1="2818" x2="4085" y2="2818" stroke="#CBD5E1"/>
+  <text x="4085" y="2860" text-anchor="start" class="fa footer-fa">
+    اصل راهنما: گفتگوی خوب یعنی انتخاب قالب درست برای نیاز واقعی، با حفظ حقیقت، رابطه، امنیت و امکان ترمیم.
+  </text>
+  <text x="115" y="2860" text-anchor="start" class="en footer-en">
+    Filled Master Poster · Dialogue Geography · Core + Dimensions + Taxonomy + Matrix + Theory + Culture + Pathology + Decision Flow
+  </text>
+</svg>

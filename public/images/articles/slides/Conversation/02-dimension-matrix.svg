@@ -1,0 +1,857 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 1700" width="2200" height="1700">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap');
+
+      .fa {
+        font-family: "Vazirmatn", "Tahoma", sans-serif;
+        direction: rtl;
+        unicode-bidi: plaintext;
+      }
+
+      .en {
+        font-family: "Inter", "Segoe UI", sans-serif;
+        direction: ltr;
+        unicode-bidi: plaintext;
+      }
+
+      .title-fa {
+        font-size: 46px;
+        font-weight: 800;
+        fill: #172033;
+      }
+
+      .subtitle-en {
+        font-size: 19px;
+        font-weight: 500;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .small-muted {
+        font-size: 13px;
+        fill: #94A3B8;
+      }
+
+      .section-title-fa {
+        font-size: 24px;
+        font-weight: 800;
+        fill: #1E293B;
+      }
+
+      .section-title-en {
+        font-size: 13px;
+        font-weight: 500;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .dim-title-fa {
+        font-size: 18px;
+        font-weight: 800;
+      }
+
+      .dim-title-en {
+        font-size: 11px;
+        font-style: italic;
+      }
+
+      .dim-pole {
+        font-size: 12px;
+        font-weight: 600;
+        fill: #475569;
+      }
+
+      .dim-desc {
+        font-size: 11.5px;
+        fill: #475569;
+        font-weight: 500;
+      }
+
+      .matrix-genre-fa {
+        font-size: 14px;
+        font-weight: 700;
+        fill: #1E293B;
+      }
+
+      .matrix-genre-en {
+        font-size: 10px;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .matrix-header {
+        font-size: 12px;
+        font-weight: 700;
+        fill: #334155;
+      }
+
+      .matrix-header-en {
+        font-size: 9px;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .radar-title-fa {
+        font-size: 16px;
+        font-weight: 800;
+        fill: #1E293B;
+      }
+
+      .radar-title-en {
+        font-size: 10.5px;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .radar-axis-label {
+        font-size: 9.5px;
+        font-weight: 600;
+        fill: #475569;
+      }
+    </style>
+
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBFCFF" />
+      <stop offset="100%" stop-color="#EEF3F8" />
+    </linearGradient>
+
+    <!-- Six dimension gradients -->
+    <linearGradient id="dim1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DBEAFE" />
+      <stop offset="100%" stop-color="#60A5FA" />
+    </linearGradient>
+    <linearGradient id="dim2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE7F3" />
+      <stop offset="100%" stop-color="#F472B6" />
+    </linearGradient>
+    <linearGradient id="dim3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7" />
+      <stop offset="100%" stop-color="#FBBF24" />
+    </linearGradient>
+    <linearGradient id="dim4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D1FAE5" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="dim5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EDE9FE" />
+      <stop offset="100%" stop-color="#A78BFA" />
+    </linearGradient>
+    <linearGradient id="dim6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE4E6" />
+      <stop offset="100%" stop-color="#FB7185" />
+    </linearGradient>
+
+    <!-- Card backgrounds -->
+    <linearGradient id="card1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#EFF6FF" />
+    </linearGradient>
+    <linearGradient id="card2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FDF2F8" />
+    </linearGradient>
+    <linearGradient id="card3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FFFBEB" />
+    </linearGradient>
+    <linearGradient id="card4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#ECFDF5" />
+    </linearGradient>
+    <linearGradient id="card5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F5F3FF" />
+    </linearGradient>
+    <linearGradient id="card6" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FFF1F2" />
+    </linearGradient>
+
+    <!-- Spectrum gradient for matrix bars -->
+    <linearGradient id="specBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E0E7FF" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.10" />
+    </filter>
+    <filter id="cardShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0F172A" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <rect width="2200" height="1700" fill="url(#bgGrad)" />
+  <circle cx="200" cy="200" r="170" fill="#DBEAFE" opacity="0.30" />
+  <circle cx="2000" cy="280" r="190" fill="#FCE7F3" opacity="0.28" />
+  <circle cx="2030" cy="1500" r="200" fill="#D1FAE5" opacity="0.26" />
+  <circle cx="180" cy="1500" r="180" fill="#EDE9FE" opacity="0.28" />
+
+  <!-- HEADER -->
+  <text x="1100" y="70" text-anchor="middle" class="fa title-fa">ماتریس ابعاد شش‌گانه گفتگو</text>
+  <text x="1100" y="105" text-anchor="middle" class="en subtitle-en">
+    Six-Dimensional Matrix of Dialogue · Sechs Dimensionen des Gesprächs
+  </text>
+  <text x="1100" y="130" text-anchor="middle" class="en small-muted">
+    Card 02 · Analytical Dimensions · Comparative Profiling · v1
+  </text>
+
+  <!-- ============================================================
+       SECTION A: SIX DIMENSION CARDS (Top)
+       3 columns × 2 rows
+       Each card: 660 × 200
+       ============================================================ -->
+  <text x="1100" y="180" text-anchor="middle" class="fa section-title-fa">شش بُعد تحلیلی</text>
+  <text x="1100" y="202" text-anchor="middle" class="en section-title-en">The Six Analytical Lenses</text>
+
+  <!-- DIM 1: Participation (Top-Left) -->
+  <g transform="translate(100,230)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="660" height="200" rx="20" fill="url(#card1)" stroke="#93C5FD" stroke-width="1.5" />
+    <rect x="0" y="0" width="660" height="48" rx="20" fill="url(#dim1)" />
+    <rect x="0" y="28" width="660" height="20" fill="url(#dim1)" />
+
+    <circle cx="40" cy="24" r="20" fill="#FFFFFF" opacity="0.95" />
+    <text x="40" y="32" text-anchor="middle" font-size="20">👥</text>
+
+    <text x="640" y="22" text-anchor="start" class="fa dim-title-fa" fill="#FFFFFF">۱. تعداد طرفین</text>
+    <text x="640" y="40" text-anchor="end" class="en dim-title-en" fill="#DBEAFE">Participation Structure</text>
+
+    <!-- Spectrum visualization -->
+    <g transform="translate(40,80)">
+      <line x1="0" y1="20" x2="580" y2="20" stroke="#CBD5E1" stroke-width="2" />
+      <circle cx="0" cy="20" r="8" fill="#3B82F6" />
+      <circle cx="145" cy="20" r="8" fill="#60A5FA" />
+      <circle cx="290" cy="20" r="8" fill="#93C5FD" />
+      <circle cx="435" cy="20" r="8" fill="#BFDBFE" />
+      <circle cx="580" cy="20" r="8" fill="#DBEAFE" />
+
+      <text x="0" y="50" text-anchor="middle" class="fa dim-pole">تک‌گویی</text>
+      <text x="0" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Monologue</text>
+
+      <text x="145" y="50" text-anchor="middle" class="fa dim-pole">دوجانبه</text>
+      <text x="145" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B" font-style="italic">Dyad</text>
+
+      <text x="290" y="50" text-anchor="middle" class="fa dim-pole">سه‌جانبه</text>
+      <text x="290" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B" font-style="italic">Triad</text>
+
+      <text x="435" y="50" text-anchor="middle" class="fa dim-pole">گروهی</text>
+      <text x="435" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B" font-style="italic">Group</text>
+
+      <text x="580" y="50" text-anchor="middle" class="fa dim-pole">جمعی</text>
+      <text x="580" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B" font-style="italic">Crowd</text>
+    </g>
+
+    <text x="640" y="180" text-anchor="start" class="fa dim-desc">از سخنرانی تا حلقه گفتگو · ساختار مشارکت</text>
+  </g>
+
+  <!-- DIM 2: Intentionality (Top-Center) -->
+  <g transform="translate(770,230)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="660" height="200" rx="20" fill="url(#card2)" stroke="#F9A8D4" stroke-width="1.5" />
+    <rect x="0" y="0" width="660" height="48" rx="20" fill="url(#dim2)" />
+    <rect x="0" y="28" width="660" height="20" fill="url(#dim2)" />
+
+    <circle cx="40" cy="24" r="20" fill="#FFFFFF" opacity="0.95" />
+    <text x="40" y="32" text-anchor="middle" font-size="20">🎯</text>
+
+    <text x="640" y="22" text-anchor="start" class="fa dim-title-fa" fill="#FFFFFF">۲. نیت و جهت‌گیری</text>
+    <text x="640" y="40" text-anchor="end" class="en dim-title-en" fill="#FCE7F3">Intentionality</text>
+
+    <g transform="translate(40,80)">
+      <line x1="0" y1="20" x2="580" y2="20" stroke="#CBD5E1" stroke-width="2" />
+      <circle cx="0" cy="20" r="8" fill="#DC2626" />
+      <circle cx="145" cy="20" r="8" fill="#F97316" />
+      <circle cx="290" cy="20" r="8" fill="#EAB308" />
+      <circle cx="435" cy="20" r="8" fill="#22C55E" />
+      <circle cx="580" cy="20" r="8" fill="#0EA5E9" />
+
+      <text x="0" y="50" text-anchor="middle" class="fa dim-pole">تخریب</text>
+      <text x="0" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B" font-style="italic">Destroy</text>
+
+      <text x="145" y="50" text-anchor="middle" class="fa dim-pole">غلبه</text>
+      <text x="145" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Dominate</text>
+
+      <text x="290" y="50" text-anchor="middle" class="fa dim-pole">مبادله</text>
+      <text x="290" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Exchange</text>
+
+      <text x="435" y="50" text-anchor="middle" class="fa dim-pole">کشف</text>
+      <text x="435" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Discover</text>
+
+      <text x="580" y="50" text-anchor="middle" class="fa dim-pole">حضور</text>
+      <text x="580" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B" font-style="italic">Be
+        With</text>
+    </g>
+
+    <text x="640" y="180" text-anchor="start" class="fa dim-desc">طیف نیت از تقابل تا مراقبت · جهت‌گیری بنیادی</text>
+  </g>
+
+  <!-- DIM 3: Formality (Top-Right) -->
+  <g transform="translate(1440,230)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="660" height="200" rx="20" fill="url(#card3)" stroke="#FCD34D" stroke-width="1.5" />
+    <rect x="0" y="0" width="660" height="48" rx="20" fill="url(#dim3)" />
+    <rect x="0" y="28" width="660" height="20" fill="url(#dim3)" />
+
+    <circle cx="40" cy="24" r="20" fill="#FFFFFF" opacity="0.95" />
+    <text x="40" y="32" text-anchor="middle" font-size="20">🎩</text>
+
+    <text x="640" y="22" text-anchor="start" class="fa dim-title-fa" fill="#78350F">۳. رسمیت و زمینه</text>
+    <text x="640" y="40" text-anchor="end" class="en dim-title-en" fill="#92400E">Formality / Context</text>
+
+    <g transform="translate(40,80)">
+      <line x1="0" y1="20" x2="580" y2="20" stroke="#CBD5E1" stroke-width="2" />
+      <circle cx="0" cy="20" r="8" fill="#FEF3C7" />
+      <circle cx="145" cy="20" r="8" fill="#FDE68A" />
+      <circle cx="290" cy="20" r="8" fill="#FCD34D" />
+      <circle cx="435" cy="20" r="8" fill="#F59E0B" />
+      <circle cx="580" cy="20" r="8" fill="#B45309" />
+
+      <text x="0" y="50" text-anchor="middle" class="fa dim-pole">صمیمی</text>
+      <text x="0" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Intimate</text>
+
+      <text x="145" y="50" text-anchor="middle" class="fa dim-pole">دوستانه</text>
+      <text x="145" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Casual</text>
+
+      <text x="290" y="50" text-anchor="middle" class="fa dim-pole">حرفه‌ای</text>
+      <text x="290" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Professional</text>
+
+      <text x="435" y="50" text-anchor="middle" class="fa dim-pole">رسمی</text>
+      <text x="435" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Formal</text>
+
+      <text x="580" y="50" text-anchor="middle" class="fa dim-pole">آیینی</text>
+      <text x="580" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Ritual</text>
+    </g>
+
+    <text x="640" y="180" text-anchor="start" class="fa dim-desc">از پچ‌پچ خانوادگی تا تشریفات دیپلماتیک</text>
+  </g>
+
+  <!-- DIM 4: Synchronicity (Bottom-Left) -->
+  <g transform="translate(100,450)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="660" height="200" rx="20" fill="url(#card4)" stroke="#6EE7B7" stroke-width="1.5" />
+    <rect x="0" y="0" width="660" height="48" rx="20" fill="url(#dim4)" />
+    <rect x="0" y="28" width="660" height="20" fill="url(#dim4)" />
+
+    <circle cx="40" cy="24" r="20" fill="#FFFFFF" opacity="0.95" />
+    <text x="40" y="32" text-anchor="middle" font-size="20">⏱️</text>
+
+    <text x="640" y="22" text-anchor="start" class="fa dim-title-fa" fill="#FFFFFF">۴. رسانه و همزمانی</text>
+    <text x="640" y="40" text-anchor="end" class="en dim-title-en" fill="#D1FAE5">Medium / Temporality</text>
+
+    <g transform="translate(40,80)">
+      <line x1="0" y1="20" x2="580" y2="20" stroke="#CBD5E1" stroke-width="2" />
+      <circle cx="0" cy="20" r="8" fill="#10B981" />
+      <circle cx="145" cy="20" r="8" fill="#34D399" />
+      <circle cx="290" cy="20" r="8" fill="#6EE7B7" />
+      <circle cx="435" cy="20" r="8" fill="#A7F3D0" />
+      <circle cx="580" cy="20" r="8" fill="#D1FAE5" />
+
+      <text x="0" y="50" text-anchor="middle" class="fa dim-pole">حضوری</text>
+      <text x="0" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">In-Person</text>
+
+      <text x="145" y="50" text-anchor="middle" class="fa dim-pole">تصویری</text>
+      <text x="145" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B" font-style="italic">Video</text>
+
+      <text x="290" y="50" text-anchor="middle" class="fa dim-pole">صوتی</text>
+      <text x="290" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B" font-style="italic">Audio</text>
+
+      <text x="435" y="50" text-anchor="middle" class="fa dim-pole">چت</text>
+      <text x="435" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B" font-style="italic">Chat</text>
+
+      <text x="580" y="50" text-anchor="middle" class="fa dim-pole">نامه</text>
+      <text x="580" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Letter</text>
+    </g>
+
+    <text x="640" y="180" text-anchor="start" class="fa dim-desc">از همزمان حضوری تا ناهمزمان نوشتاری</text>
+  </g>
+
+  <!-- DIM 5: Power (Bottom-Center) -->
+  <g transform="translate(770,450)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="660" height="200" rx="20" fill="url(#card5)" stroke="#C4B5FD" stroke-width="1.5" />
+    <rect x="0" y="0" width="660" height="48" rx="20" fill="url(#dim5)" />
+    <rect x="0" y="28" width="660" height="20" fill="url(#dim5)" />
+
+    <circle cx="40" cy="24" r="20" fill="#FFFFFF" opacity="0.95" />
+    <text x="40" y="32" text-anchor="middle" font-size="20">⚖️</text>
+
+    <text x="640" y="22" text-anchor="start" class="fa dim-title-fa" fill="#FFFFFF">۵. قدرت و جایگاه</text>
+    <text x="640" y="40" text-anchor="end" class="en dim-title-en" fill="#EDE9FE">Power Relation</text>
+
+    <g transform="translate(40,80)">
+      <line x1="0" y1="20" x2="580" y2="20" stroke="#CBD5E1" stroke-width="2" />
+      <circle cx="0" cy="20" r="8" fill="#7C3AED" />
+      <circle cx="145" cy="20" r="8" fill="#8B5CF6" />
+      <circle cx="290" cy="20" r="8" fill="#A78BFA" />
+      <circle cx="435" cy="20" r="8" fill="#C4B5FD" />
+      <circle cx="580" cy="20" r="8" fill="#DDD6FE" />
+
+      <text x="0" y="50" text-anchor="middle" class="fa dim-pole">سلطه</text>
+      <text x="0" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Dominance</text>
+
+      <text x="145" y="50" text-anchor="middle" class="fa dim-pole">سلسله‌مراتبی</text>
+      <text x="145" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Hierarchical</text>
+
+      <text x="290" y="50" text-anchor="middle" class="fa dim-pole">نامتقارن</text>
+      <text x="290" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Asymmetric</text>
+
+      <text x="435" y="50" text-anchor="middle" class="fa dim-pole">متقارن</text>
+      <text x="435" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Symmetric</text>
+
+      <text x="580" y="50" text-anchor="middle" class="fa dim-pole">همتا</text>
+      <text x="580" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B" font-style="italic">Peer</text>
+    </g>
+
+    <text x="640" y="180" text-anchor="start" class="fa dim-desc">رئیس-کارمند، استاد-شاگرد، یا گفتگوی همتایان</text>
+  </g>
+
+  <!-- DIM 6: Depth/Risk (Bottom-Right) -->
+  <g transform="translate(1440,450)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="660" height="200" rx="20" fill="url(#card6)" stroke="#FDA4AF" stroke-width="1.5" />
+    <rect x="0" y="0" width="660" height="48" rx="20" fill="url(#dim6)" />
+    <rect x="0" y="28" width="660" height="20" fill="url(#dim6)" />
+
+    <circle cx="40" cy="24" r="20" fill="#FFFFFF" opacity="0.95" />
+    <text x="40" y="32" text-anchor="middle" font-size="20">🌊</text>
+
+    <text x="640" y="22" text-anchor="start" class="fa dim-title-fa" fill="#FFFFFF">۶. عمق و ریسک</text>
+    <text x="640" y="40" text-anchor="end" class="en dim-title-en" fill="#FFE4E6">Depth / Vulnerability</text>
+
+    <g transform="translate(40,80)">
+      <line x1="0" y1="20" x2="580" y2="20" stroke="#CBD5E1" stroke-width="2" />
+      <circle cx="0" cy="20" r="8" fill="#FECDD3" />
+      <circle cx="145" cy="20" r="8" fill="#FDA4AF" />
+      <circle cx="290" cy="20" r="8" fill="#FB7185" />
+      <circle cx="435" cy="20" r="8" fill="#E11D48" />
+      <circle cx="580" cy="20" r="8" fill="#9F1239" />
+
+      <text x="0" y="50" text-anchor="middle" class="fa dim-pole">سطحی</text>
+      <text x="0" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B" font-style="italic">Small
+        Talk</text>
+
+      <text x="145" y="50" text-anchor="middle" class="fa dim-pole">واقعی</text>
+      <text x="145" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Factual</text>
+
+      <text x="290" y="50" text-anchor="middle" class="fa dim-pole">عقیدتی</text>
+      <text x="290" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Opinion</text>
+
+      <text x="435" y="50" text-anchor="middle" class="fa dim-pole">احساسی</text>
+      <text x="435" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Emotional</text>
+
+      <text x="580" y="50" text-anchor="middle" class="fa dim-pole">وجودی</text>
+      <text x="580" y="64" text-anchor="middle" class="en" font-size="9" fill="#64748B"
+        font-style="italic">Existential</text>
+    </g>
+
+    <text x="640" y="180" text-anchor="start" class="fa dim-desc">از گپ هواشناسی تا گفتگوی عمیق وجودی</text>
+  </g>
+
+  <!-- ============================================================
+       SECTION B: COMPARATIVE MATRIX (Middle)
+       8 genres × 6 dimensions
+       ============================================================ -->
+  <text x="1100" y="710" text-anchor="middle" class="fa section-title-fa">ماتریس مقایسه‌ای ۸ گونه نمونه</text>
+  <text x="1100" y="732" text-anchor="middle" class="en section-title-en">Comparative Matrix · 8 Sample Genres × 6
+    Dimensions</text>
+
+  <g transform="translate(220,760)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="1760" height="510" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+
+    <!-- Header row -->
+    <rect x="0" y="0" width="1760" height="60" rx="20" fill="#F8FAFC" />
+    <rect x="0" y="40" width="1760" height="20" fill="#F8FAFC" />
+
+    <!-- Genre column header -->
+    <text x="280" y="28" text-anchor="end" class="fa matrix-header">گونه گفتگو</text>
+    <text x="280" y="48" text-anchor="end" class="en matrix-header-en">Genre</text>
+
+    <!-- Dimension column headers -->
+    <g>
+      <text x="450" y="28" text-anchor="middle" class="fa matrix-header">طرفین</text>
+      <text x="450" y="48" text-anchor="middle" class="en matrix-header-en">Participants</text>
+
+      <text x="680" y="28" text-anchor="middle" class="fa matrix-header">نیت</text>
+      <text x="680" y="48" text-anchor="middle" class="en matrix-header-en">Intent</text>
+
+      <text x="910" y="28" text-anchor="middle" class="fa matrix-header">رسمیت</text>
+      <text x="910" y="48" text-anchor="middle" class="en matrix-header-en">Formality</text>
+
+      <text x="1140" y="28" text-anchor="middle" class="fa matrix-header">رسانه</text>
+      <text x="1140" y="48" text-anchor="middle" class="en matrix-header-en">Medium</text>
+
+      <text x="1370" y="28" text-anchor="middle" class="fa matrix-header">قدرت</text>
+      <text x="1370" y="48" text-anchor="middle" class="en matrix-header-en">Power</text>
+
+      <text x="1600" y="28" text-anchor="middle" class="fa matrix-header">عمق</text>
+      <text x="1600" y="48" text-anchor="middle" class="en matrix-header-en">Depth</text>
+    </g>
+
+    <!-- Vertical separator -->
+    <line x1="305" y1="0" x2="305" y2="510" stroke="#E2E8F0" stroke-width="1" />
+
+    <!-- Row template: ROW_Y = 60 + (idx * 56) -->
+    <!-- Each row contains a genre name + 6 dimension bars -->
+
+    <!-- ROW 1: Quarrel -->
+    <g transform="translate(0,60)">
+      <rect x="0" y="0" width="1760" height="56" fill="#FEF2F2" opacity="0.4" />
+      <rect x="0" y="0" width="6" height="56" fill="#EF4444" />
+      <text x="280" y="24" text-anchor="start" class="fa matrix-genre-fa">جدل و ستیزه</text>
+      <text x="280" y="42" text-anchor="end" class="en matrix-genre-en">Quarrel</text>
+      <!-- bars: x positions 350, 580, 810, 1040, 1270, 1500; width 200 -->
+      <!-- Participants: dyad (40%) -->
+      <rect x="350" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="350" y="20" width="80" height="14" rx="7" fill="url(#dim1)" />
+      <!-- Intent: destroy (10%) -->
+      <rect x="580" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="580" y="20" width="20" height="14" rx="7" fill="#DC2626" />
+      <!-- Formality: casual (25%) -->
+      <rect x="810" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="810" y="20" width="50" height="14" rx="7" fill="url(#dim3)" />
+      <!-- Medium: in-person (15%) -->
+      <rect x="1040" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1040" y="20" width="30" height="14" rx="7" fill="url(#dim4)" />
+      <!-- Power: variable / asymmetric (50%) -->
+      <rect x="1270" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1270" y="20" width="100" height="14" rx="7" fill="url(#dim5)" />
+      <!-- Depth: emotional (75%) -->
+      <rect x="1500" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1500" y="20" width="150" height="14" rx="7" fill="url(#dim6)" />
+    </g>
+
+    <!-- ROW 2: Debate -->
+    <g transform="translate(0,116)">
+      <rect x="0" y="0" width="1760" height="56" fill="#FFF7ED" opacity="0.4" />
+      <rect x="0" y="0" width="6" height="56" fill="#F97316" />
+      <text x="280" y="24" text-anchor="start" class="fa matrix-genre-fa">مناظره</text>
+      <text x="280" y="42" text-anchor="end" class="en matrix-genre-en">Debate</text>
+      <rect x="350" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="350" y="20" width="100" height="14" rx="7" fill="url(#dim1)" />
+      <rect x="580" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="580" y="20" width="60" height="14" rx="7" fill="#F97316" />
+      <rect x="810" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="810" y="20" width="160" height="14" rx="7" fill="url(#dim3)" />
+      <rect x="1040" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1040" y="20" width="40" height="14" rx="7" fill="url(#dim4)" />
+      <rect x="1270" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1270" y="20" width="140" height="14" rx="7" fill="url(#dim5)" />
+      <rect x="1500" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1500" y="20" width="100" height="14" rx="7" fill="url(#dim6)" />
+    </g>
+
+    <!-- ROW 3: Negotiation -->
+    <g transform="translate(0,172)">
+      <rect x="0" y="0" width="1760" height="56" fill="#FEFCE8" opacity="0.4" />
+      <rect x="0" y="0" width="6" height="56" fill="#EAB308" />
+      <text x="280" y="24" text-anchor="start" class="fa matrix-genre-fa">مذاکره</text>
+      <text x="280" y="42" text-anchor="end" class="en matrix-genre-en">Negotiation</text>
+      <rect x="350" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="350" y="20" width="80" height="14" rx="7" fill="url(#dim1)" />
+      <rect x="580" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="580" y="20" width="100" height="14" rx="7" fill="#EAB308" />
+      <rect x="810" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="810" y="20" width="140" height="14" rx="7" fill="url(#dim3)" />
+      <rect x="1040" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1040" y="20" width="60" height="14" rx="7" fill="url(#dim4)" />
+      <rect x="1270" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1270" y="20" width="120" height="14" rx="7" fill="url(#dim5)" />
+      <rect x="1500" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1500" y="20" width="80" height="14" rx="7" fill="url(#dim6)" />
+    </g>
+
+    <!-- ROW 4: Socratic -->
+    <g transform="translate(0,228)">
+      <rect x="0" y="0" width="1760" height="56" fill="#F0FDF4" opacity="0.4" />
+      <rect x="0" y="0" width="6" height="56" fill="#22C55E" />
+      <text x="280" y="24" text-anchor="start" class="fa matrix-genre-fa">گفتگوی سقراطی</text>
+      <text x="280" y="42" text-anchor="end" class="en matrix-genre-en">Socratic Dialogue</text>
+      <rect x="350" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="350" y="20" width="80" height="14" rx="7" fill="url(#dim1)" />
+      <rect x="580" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="580" y="20" width="160" height="14" rx="7" fill="#22C55E" />
+      <rect x="810" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="810" y="20" width="120" height="14" rx="7" fill="url(#dim3)" />
+      <rect x="1040" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1040" y="20" width="40" height="14" rx="7" fill="url(#dim4)" />
+      <rect x="1270" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1270" y="20" width="100" height="14" rx="7" fill="url(#dim5)" />
+      <rect x="1500" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1500" y="20" width="160" height="14" rx="7" fill="url(#dim6)" />
+    </g>
+
+    <!-- ROW 5: Brainstorming -->
+    <g transform="translate(0,284)">
+      <rect x="0" y="0" width="1760" height="56" fill="#F0FDF4" opacity="0.4" />
+      <rect x="0" y="0" width="6" height="56" fill="#22C55E" />
+      <text x="280" y="24" text-anchor="start" class="fa matrix-genre-fa">طوفان فکری</text>
+      <text x="280" y="42" text-anchor="end" class="en matrix-genre-en">Brainstorming</text>
+      <rect x="350" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="350" y="20" width="160" height="14" rx="7" fill="url(#dim1)" />
+      <rect x="580" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="580" y="20" width="160" height="14" rx="7" fill="#22C55E" />
+      <rect x="810" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="810" y="20" width="100" height="14" rx="7" fill="url(#dim3)" />
+      <rect x="1040" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1040" y="20" width="50" height="14" rx="7" fill="url(#dim4)" />
+      <rect x="1270" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1270" y="20" width="170" height="14" rx="7" fill="url(#dim5)" />
+      <rect x="1500" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1500" y="20" width="60" height="14" rx="7" fill="url(#dim6)" />
+    </g>
+
+    <!-- ROW 6: Therapeutic -->
+    <g transform="translate(0,340)">
+      <rect x="0" y="0" width="1760" height="56" fill="#F0F9FF" opacity="0.4" />
+      <rect x="0" y="0" width="6" height="56" fill="#0EA5E9" />
+      <text x="280" y="24" text-anchor="start" class="fa matrix-genre-fa">گفتگوی درمانی</text>
+      <text x="280" y="42" text-anchor="end" class="en matrix-genre-en">Therapeutic Dialogue</text>
+      <rect x="350" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="350" y="20" width="60" height="14" rx="7" fill="url(#dim1)" />
+      <rect x="580" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="580" y="20" width="190" height="14" rx="7" fill="#0EA5E9" />
+      <rect x="810" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="810" y="20" width="130" height="14" rx="7" fill="url(#dim3)" />
+      <rect x="1040" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1040" y="20" width="40" height="14" rx="7" fill="url(#dim4)" />
+      <rect x="1270" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1270" y="20" width="60" height="14" rx="7" fill="url(#dim5)" />
+      <rect x="1500" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1500" y="20" width="190" height="14" rx="7" fill="url(#dim6)" />
+    </g>
+
+    <!-- ROW 7: I-Thou -->
+    <g transform="translate(0,396)">
+      <rect x="0" y="0" width="1760" height="56" fill="#F0F9FF" opacity="0.4" />
+      <rect x="0" y="0" width="6" height="56" fill="#0EA5E9" />
+      <text x="280" y="24" text-anchor="start" class="fa matrix-genre-fa">گفت‌وگوی من-تو</text>
+      <text x="280" y="42" text-anchor="end" class="en matrix-genre-en">I-Thou Encounter</text>
+      <rect x="350" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="350" y="20" width="60" height="14" rx="7" fill="url(#dim1)" />
+      <rect x="580" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="580" y="20" width="200" height="14" rx="7" fill="#0EA5E9" />
+      <rect x="810" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="810" y="20" width="50" height="14" rx="7" fill="url(#dim3)" />
+      <rect x="1040" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1040" y="20" width="20" height="14" rx="7" fill="url(#dim4)" />
+      <rect x="1270" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1270" y="20" width="180" height="14" rx="7" fill="url(#dim5)" />
+      <rect x="1500" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1500" y="20" width="200" height="14" rx="7" fill="url(#dim6)" />
+    </g>
+
+    <!-- ROW 8: Small Talk -->
+    <g transform="translate(0,452)">
+      <rect x="0" y="0" width="1760" height="56" fill="#F0F9FF" opacity="0.4" />
+      <rect x="0" y="0" width="6" height="56" fill="#0EA5E9" />
+      <text x="280" y="24" text-anchor="start" class="fa matrix-genre-fa">گپ دوستانه</text>
+      <text x="280" y="42" text-anchor="end" class="en matrix-genre-en">Small Talk</text>
+      <rect x="350" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="350" y="20" width="80" height="14" rx="7" fill="url(#dim1)" />
+      <rect x="580" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="580" y="20" width="180" height="14" rx="7" fill="#0EA5E9" />
+      <rect x="810" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="810" y="20" width="40" height="14" rx="7" fill="url(#dim3)" />
+      <rect x="1040" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1040" y="20" width="50" height="14" rx="7" fill="url(#dim4)" />
+      <rect x="1270" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1270" y="20" width="180" height="14" rx="7" fill="url(#dim5)" />
+      <rect x="1500" y="20" width="200" height="14" rx="7" fill="#E2E8F0" />
+      <rect x="1500" y="20" width="20" height="14" rx="7" fill="url(#dim6)" />
+    </g>
+  </g>
+
+  <!-- ============================================================
+       SECTION C: RADAR CHARTS (Bottom)
+       3 comparative profiles
+       ============================================================ -->
+  <text x="1100" y="1310" text-anchor="middle" class="fa section-title-fa">پروفایل رادار سه گونه شاخص</text>
+  <text x="1100" y="1332" text-anchor="middle" class="en section-title-en">Radar Profiles · Three Iconic Genres
+    Compared</text>
+
+  <!-- Radar Chart Helper: center at (cx, cy), radius R=130
+       Six axes at angles: 90°, 30°, -30°, -90°, -150°, 150° (top, top-right, bottom-right, bottom, bottom-left, top-left)
+       Labels: 1=Participants, 2=Intent, 3=Formality, 4=Medium, 5=Power, 6=Depth -->
+
+  <!-- ===== RADAR 1: Debate (Orange) ===== -->
+  <g transform="translate(380,1370)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="310" rx="20" fill="#FFFFFF" stroke="#FDBA74" stroke-width="1.8" />
+    <rect x="0" y="0" width="480" height="40" rx="20" fill="#FB923C" />
+
+    <rect x="0" y="20" width="480" height="20" fill="#FB923C" />
+    <text x="465" y="26" text-anchor="start" class="fa radar-title-fa" fill="#FFFFFF">مناظره</text>
+    <text x="15" y="26" text-anchor="start" class="en radar-title-en" fill="#FFEDD5">Debate · Disputatio</text>
+
+    <!-- Radar grid -->
+    <g transform="translate(240,180)">
+      <!-- Concentric polygons (4 rings: 25%, 50%, 75%, 100%) -->
+      <polygon points="0,-32.5 28.1,-16.25 28.1,16.25 0,32.5 -28.1,16.25 -28.1,-16.25" fill="none" stroke="#E2E8F0"
+        stroke-width="1" />
+      <polygon points="0,-65 56.3,-32.5 56.3,32.5 0,65 -56.3,32.5 -56.3,-32.5" fill="none" stroke="#E2E8F0"
+        stroke-width="1" />
+      <polygon points="0,-97.5 84.4,-48.75 84.4,48.75 0,97.5 -84.4,48.75 -84.4,-48.75" fill="none" stroke="#E2E8F0"
+        stroke-width="1" />
+      <polygon points="0,-130 112.6,-65 112.6,65 0,130 -112.6,65 -112.6,-65" fill="none" stroke="#CBD5E1"
+        stroke-width="1.3" />
+
+      <!-- Axes -->
+      <g stroke="#CBD5E1" stroke-width="1">
+        <line x1="0" y1="0" x2="0" y2="-130" />
+        <line x1="0" y1="0" x2="112.6" y2="-65" />
+        <line x1="0" y1="0" x2="112.6" y2="65" />
+        <line x1="0" y1="0" x2="0" y2="130" />
+        <line x1="0" y1="0" x2="-112.6" y2="65" />
+        <line x1="0" y1="0" x2="-112.6" y2="-65" />
+      </g>
+
+      <!-- Data polygon for Debate: P=50%, I=30%, F=80%, M=20%, Pw=70%, D=50% -->
+      <!-- vertex calculation: r = R * value; x = r*cos(angle), y = -r*sin(angle) -->
+      <!-- top (P=0.5): (0, -65) -->
+      <!-- top-right (I=0.3): r=39; (33.8,-19.5) -->
+      <!-- bottom-right (F=0.8): r=104; (90.1,52) -->
+      <!-- bottom (M=0.2): (0, 26) -->
+      <!-- bottom-left (Pw=0.7): r=91; (-78.8,45.5) -->
+      <!-- top-left (D=0.5): r=65; (-56.3,-32.5) -->
+      <polygon points="0,-65 33.8,-19.5 90.1,52 0,26 -78.8,45.5 -56.3,-32.5" fill="#FB923C" fill-opacity="0.25"
+        stroke="#F97316" stroke-width="2.2" />
+
+      <!-- Data points -->
+      <circle cx="0" cy="-65" r="4" fill="#F97316" />
+      <circle cx="33.8" cy="-19.5" r="4" fill="#F97316" />
+      <circle cx="90.1" cy="52" r="4" fill="#F97316" />
+      <circle cx="0" cy="26" r="4" fill="#F97316" />
+      <circle cx="-78.8" cy="45.5" r="4" fill="#F97316" />
+      <circle cx="-56.3" cy="-32.5" r="4" fill="#F97316" />
+
+      <!-- Axis labels -->
+      <text x="0" y="-145" text-anchor="middle" class="fa radar-axis-label">طرفین</text>
+      <text x="125" y="-72" text-anchor="middle" class="fa radar-axis-label">نیت</text>
+      <text x="125" y="78" text-anchor="middle" class="fa radar-axis-label">رسمیت</text>
+      <text x="0" y="148" text-anchor="middle" class="fa radar-axis-label">رسانه</text>
+      <text x="-125" y="78" text-anchor="middle" class="fa radar-axis-label">قدرت</text>
+      <text x="-125" y="-72" text-anchor="middle" class="fa radar-axis-label">عمق</text>
+    </g>
+  </g>
+
+  <!-- ===== RADAR 2: Therapeutic Dialogue (Blue) ===== -->
+  <g transform="translate(880,1370)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="310" rx="20" fill="#FFFFFF" stroke="#7DD3FC" stroke-width="1.8" />
+    <rect x="0" y="0" width="480" height="40" rx="20" fill="#0EA5E9" />
+    <rect x="0" y="20" width="480" height="20" fill="#0EA5E9" />
+    <text x="465" y="26" text-anchor="start" class="fa radar-title-fa" fill="#FFFFFF">گفتگوی درمانی</text>
+    <text x="15" y="26" text-anchor="start" class="en radar-title-en" fill="#E0F2FE">Therapeutic Dialogue</text>
+
+    <g transform="translate(240,180)">
+      <polygon points="0,-32.5 28.1,-16.25 28.1,16.25 0,32.5 -28.1,16.25 -28.1,-16.25" fill="none" stroke="#E2E8F0"
+        stroke-width="1" />
+      <polygon points="0,-65 56.3,-32.5 56.3,32.5 0,65 -56.3,32.5 -56.3,-32.5" fill="none" stroke="#E2E8F0"
+        stroke-width="1" />
+      <polygon points="0,-97.5 84.4,-48.75 84.4,48.75 0,97.5 -84.4,48.75 -84.4,-48.75" fill="none" stroke="#E2E8F0"
+        stroke-width="1" />
+      <polygon points="0,-130 112.6,-65 112.6,65 0,130 -112.6,65 -112.6,-65" fill="none" stroke="#CBD5E1"
+        stroke-width="1.3" />
+
+      <g stroke="#CBD5E1" stroke-width="1">
+        <line x1="0" y1="0" x2="0" y2="-130" />
+        <line x1="0" y1="0" x2="112.6" y2="-65" />
+        <line x1="0" y1="0" x2="112.6" y2="65" />
+        <line x1="0" y1="0" x2="0" y2="130" />
+        <line x1="0" y1="0" x2="-112.6" y2="65" />
+        <line x1="0" y1="0" x2="-112.6" y2="-65" />
+      </g>
+
+      <!-- Therapeutic: P=30%, I=95%, F=65%, M=20%, Pw=30%, D=95% -->
+      <!-- top (P=0.3): (0, -39) -->
+      <!-- top-right (I=0.95): r=123.5; (107,-61.75) -->
+      <!-- bottom-right (F=0.65): r=84.5; (73.2,42.25) -->
+      <!-- bottom (M=0.2): (0, 26) -->
+      <!-- bottom-left (Pw=0.3): r=39; (-33.8,19.5) -->
+      <!-- top-left (D=0.95): r=123.5; (-107,-61.75) -->
+      <polygon points="0,-39 107,-61.75 73.2,42.25 0,26 -33.8,19.5 -107,-61.75" fill="#0EA5E9" fill-opacity="0.25"
+        stroke="#0284C7" stroke-width="2.2" />
+
+      <circle cx="0" cy="-39" r="4" fill="#0284C7" />
+      <circle cx="107" cy="-61.75" r="4" fill="#0284C7" />
+      <circle cx="73.2" cy="42.25" r="4" fill="#0284C7" />
+      <circle cx="0" cy="26" r="4" fill="#0284C7" />
+      <circle cx="-33.8" cy="19.5" r="4" fill="#0284C7" />
+      <circle cx="-107" cy="-61.75" r="4" fill="#0284C7" />
+
+      <text x="0" y="-145" text-anchor="middle" class="fa radar-axis-label">طرفین</text>
+      <text x="125" y="-72" text-anchor="middle" class="fa radar-axis-label">نیت</text>
+      <text x="125" y="78" text-anchor="middle" class="fa radar-axis-label">رسمیت</text>
+      <text x="0" y="148" text-anchor="middle" class="fa radar-axis-label">رسانه</text>
+      <text x="-125" y="78" text-anchor="middle" class="fa radar-axis-label">قدرت</text>
+      <text x="-125" y="-72" text-anchor="middle" class="fa radar-axis-label">عمق</text>
+    </g>
+  </g>
+
+  <!-- ===== RADAR 3: Brainstorming (Green) ===== -->
+  <g transform="translate(1380,1370)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="310" rx="20" fill="#FFFFFF" stroke="#86EFAC" stroke-width="1.8" />
+    <rect x="0" y="0" width="480" height="40" rx="20" fill="#22C55E" />
+    <rect x="0" y="20" width="480" height="20" fill="#22C55E" />
+    <text x="465" y="26" text-anchor="start" class="fa radar-title-fa" fill="#FFFFFF">طوفان فکری</text>
+    <text x="15" y="26" text-anchor="start" class="en radar-title-en" fill="#DCFCE7">Brainstorming</text>
+
+    <g transform="translate(240,180)">
+      <polygon points="0,-32.5 28.1,-16.25 28.1,16.25 0,32.5 -28.1,16.25 -28.1,-16.25" fill="none" stroke="#E2E8F0"
+        stroke-width="1" />
+      <polygon points="0,-65 56.3,-32.5 56.3,32.5 0,65 -56.3,32.5 -56.3,-32.5" fill="none" stroke="#E2E8F0"
+        stroke-width="1" />
+      <polygon points="0,-97.5 84.4,-48.75 84.4,48.75 0,97.5 -84.4,48.75 -84.4,-48.75" fill="none" stroke="#E2E8F0"
+        stroke-width="1" />
+      <polygon points="0,-130 112.6,-65 112.6,65 0,130 -112.6,65 -112.6,-65" fill="none" stroke="#CBD5E1"
+        stroke-width="1.3" />
+
+      <g stroke="#CBD5E1" stroke-width="1">
+        <line x1="0" y1="0" x2="0" y2="-130" />
+        <line x1="0" y1="0" x2="112.6" y2="-65" />
+        <line x1="0" y1="0" x2="112.6" y2="65" />
+        <line x1="0" y1="0" x2="0" y2="130" />
+        <line x1="0" y1="0" x2="-112.6" y2="65" />
+        <line x1="0" y1="0" x2="-112.6" y2="-65" />
+      </g>
+
+      <!-- Brainstorming: P=85%, I=80%, F=50%, M=25%, Pw=85%, D=30% -->
+      <!-- top (P=0.85): (0, -110.5) -->
+      <!-- top-right (I=0.8): r=104; (90.1,-52) -->
+      <!-- bottom-right (F=0.5): r=65; (56.3,32.5) -->
+      <!-- bottom (M=0.25): (0, 32.5) -->
+      <!-- bottom-left (Pw=0.85): r=110.5; (-95.7,55.25) -->
+      <!-- top-left (D=0.3): r=39; (-33.8,-19.5) -->
+      <polygon points="0,-110.5 90.1,-52 56.3,32.5 0,32.5 -95.7,55.25 -33.8,-19.5" fill="#22C55E" fill-opacity="0.25"
+        stroke="#16A34A" stroke-width="2.2" />
+
+      <circle cx="0" cy="-110.5" r="4" fill="#16A34A" />
+      <circle cx="90.1" cy="-52" r="4" fill="#16A34A" />
+      <circle cx="56.3" cy="32.5" r="4" fill="#16A34A" />
+      <circle cx="0" cy="32.5" r="4" fill="#16A34A" />
+      <circle cx="-95.7" cy="55.25" r="4" fill="#16A34A" />
+      <circle cx="-33.8" cy="-19.5" r="4" fill="#16A34A" />
+
+      <text x="0" y="-145" text-anchor="middle" class="fa radar-axis-label">طرفین</text>
+      <text x="125" y="-72" text-anchor="middle" class="fa radar-axis-label">نیت</text>
+      <text x="125" y="78" text-anchor="middle" class="fa radar-axis-label">رسمیت</text>
+      <text x="0" y="148" text-anchor="middle" class="fa radar-axis-label">رسانه</text>
+      <text x="-125" y="78" text-anchor="middle" class="fa radar-axis-label">قدرت</text>
+      <text x="-125" y="-72" text-anchor="middle" class="fa radar-axis-label">عمق</text>
+    </g>
+  </g>
+
+  <line x1="120" y1="1695" x2="2080" y2="1695" stroke="#E2E8F0" stroke-width="1" />
+</svg>

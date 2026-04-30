@@ -1156,21 +1156,9 @@ export class ContentPipeline {
     }
 
     stringifyYaml(obj) {
-        const lines = [];
-        for (const [key, value] of Object.entries(obj)) {
-            if (value === undefined || value === null) continue;
-            if (Array.isArray(value)) {
-                lines.push(`${key}:`);
-                value.forEach(item => lines.push(`  - "${String(item).replace(/"/g, '\\"')}"`));
-            } else if (value instanceof Date) {
-                lines.push(`${key}: ${value.toISOString().split('T')[0]}`);
-            } else if (typeof value === 'string') {
-                lines.push(`${key}: "${value.replace(/"/g, '\\"')}"`);
-            } else {
-                lines.push(`${key}: ${value}`);
-            }
-        }
-        return lines.join('\n');
+        // Use gray-matter's stringify for robust YAML generation
+        const yaml = matter.stringify('', obj).trim();
+        return yaml.replace(/^---$/gm, '').trim();
     }
 
     async saveResult(result, outputDir, customFileName = null) {

@@ -1,0 +1,343 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 1700" width="2200" height="1700">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap');
+      .fa { font-family: "Vazirmatn", "Tahoma", sans-serif; direction: rtl; unicode-bidi: plaintext; }
+      .en { font-family: "Inter", "Segoe UI", sans-serif; direction: ltr; unicode-bidi: plaintext; }
+
+      .title-fa { font-size: 46px; font-weight: 800; fill: #172033; }
+      .subtitle-en { font-size: 19px; font-weight: 500; fill: #64748B; font-style: italic; }
+      .small-muted { font-size: 13px; fill: #94A3B8; }
+
+      .section-fa { font-size: 25px; font-weight: 800; fill: #1E293B; }
+      .section-en { font-size: 13px; fill: #64748B; font-style: italic; }
+
+      .card-title { font-size: 18.5px; font-weight: 800; }
+      .card-en { font-size: 10.5px; fill: #64748B; font-style: italic; }
+      .card-label { font-size: 11.5px; font-weight: 800; fill: #334155; }
+      .card-body { font-size: 12.2px; font-weight: 600; fill: #334155; }
+      .chip-text { font-size: 11.5px; font-weight: 800; }
+      .card-risk { font-size: 10.8px; font-weight: 700; fill: #64748B; }
+
+      .axis-title { font-size: 16px; font-weight: 800; fill: #1E293B; }
+      .axis-body { font-size: 12.5px; font-weight: 600; fill: #475569; }
+      .rule-title { font-size: 15px; font-weight: 800; fill: #1E293B; }
+      .rule-body { font-size: 12px; font-weight: 600; fill: #475569; }
+    </style>
+
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBF5"/>
+      <stop offset="45%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF3F8"/>
+    </linearGradient>
+
+    <linearGradient id="cultureGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ECFDF5"/>
+      <stop offset="50%" stop-color="#FFF7ED"/>
+      <stop offset="100%" stop-color="#EEF2FF"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+
+    <filter id="cardShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#0F172A" flood-opacity="0.095"/>
+    </filter>
+  </defs>
+
+  <rect width="2200" height="1700" fill="url(#bgGrad)"/>
+  <circle cx="190" cy="200" r="175" fill="#DCFCE7" opacity="0.26"/>
+  <circle cx="2020" cy="260" r="195" fill="#FEF3C7" opacity="0.31"/>
+  <circle cx="2050" cy="1500" r="220" fill="#EDE9FE" opacity="0.26"/>
+  <circle cx="170" cy="1500" r="185" fill="#FFE4E6" opacity="0.20"/>
+
+  <text x="1100" y="70" text-anchor="middle" class="fa title-fa">لایه فرهنگی ـ ایرانی ـ اسلامی گفتگو</text>
+  <text x="1100" y="105" text-anchor="middle" class="en subtitle-en">
+    Iranian-Islamic Dialogue Layer · Ritual · Scholarly · Mystical · Epistolary Forms
+  </text>
+  <text x="1100" y="130" text-anchor="middle" class="en small-muted">
+    Card 06 · Cultural Expansion of the Conceptual Geography of Talk
+  </text>
+
+  <!-- Intro band -->
+  <g transform="translate(180,170)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="1840" height="100" rx="28" fill="url(#cultureGrad)" stroke="#FDBA74" stroke-width="1.2"/>
+    <circle cx="54" cy="54" r="32" fill="#FFFFFF" opacity="0.96"/>
+    <text x="54" y="65" text-anchor="middle" font-size="30">🧿</text>
+
+    <text x="1810" y="40" text-anchor="start" class="fa section-fa">در سنت ایرانی ـ اسلامی، گفتگو فقط تکنیک ارتباطی نیست؛ نوعی سلوک، ادب و نسبت با حقیقت است</text>
+    <text x="1810" y="72" text-anchor="start" class="fa" font-size="14" font-weight="600" fill="#475569">
+      از مناظره علمی تا مناجات، از محاجّه قرآنی تا مکاتبات عرفانی، صورت‌های گفتگو با اخلاق، آیین، تربیت و معنا پیوند دارند.
+    </text>
+
+    <text x="95" y="56" text-anchor="start" class="en section-en">
+      In this layer, dialogue becomes adab, ritual, scholarship, spiritual training, and a mode of truth-seeking.
+    </text>
+  </g>
+
+  <text x="1100" y="305" text-anchor="middle" class="fa section-fa">گونه‌های برجسته در سنت ایرانی ـ اسلامی</text>
+  <text x="1100" y="328" text-anchor="middle" class="en section-en">Major culturally embedded forms of dialogue</text>
+
+  <g transform="translate(120,340)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="470" height="245" rx="24" fill="#FFFFFF" stroke="#0F766E" stroke-width="1.5"/>
+
+    <circle cx="48" cy="48" r="30" fill="#0F766E" opacity="0.16"/>
+    <text x="48" y="59" text-anchor="middle" font-size="29">📖</text>
+
+    <text x="445" y="34" text-anchor="start" class="fa card-title" fill="#1E293B">محاجّه قرآنی</text>
+    <text x="445" y="56" text-anchor="end" class="en card-en">Qur'anic Argumentation</text>
+
+    <line x1="28" y1="76" x2="442" y2="76" stroke="#E2E8F0"/>
+
+    <text x="445" y="103" text-anchor="start" class="fa card-label" fill="#0F766E">تعریف</text>
+    <text x="445" y="126" text-anchor="start" class="fa card-body">گفتگوی استدلالی پیامبران، مؤمنان و مخالفان</text>
+
+    <text x="445" y="158" text-anchor="start" class="fa card-label">صورت ارتباطی</text>
+    <text x="445" y="180" text-anchor="start" class="fa card-body">پرسش، احتجاج، تمثیل، دعوت و تذکر</text>
+
+    <rect x="28" y="198" width="185" height="29" rx="14.5" fill="#0F766E" opacity="0.11"/>
+    <text x="120" y="218" text-anchor="middle" class="fa chip-text" fill="#0F766E">حقیقت‌جویی</text>
+
+    <text x="445" y="218" text-anchor="start" class="fa card-risk">آسیب: جدل بی‌ثمر</text>
+  </g>  <g transform="translate(615,340)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="470" height="245" rx="24" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.5"/>
+
+    <circle cx="48" cy="48" r="30" fill="#7C3AED" opacity="0.16"/>
+    <text x="48" y="59" text-anchor="middle" font-size="29">🕌</text>
+
+    <text x="445" y="34" text-anchor="start" class="fa card-title" fill="#1E293B">مناظره حوزوی</text>
+    <text x="445" y="56" text-anchor="end" class="en card-en">Seminary Debate</text>
+
+    <line x1="28" y1="76" x2="442" y2="76" stroke="#E2E8F0"/>
+
+    <text x="445" y="103" text-anchor="start" class="fa card-label" fill="#7C3AED">تعریف</text>
+    <text x="445" y="126" text-anchor="start" class="fa card-body">گفتگوی علمی با محور دلیل، اشکال و پاسخ</text>
+
+    <text x="445" y="158" text-anchor="start" class="fa card-label">صورت ارتباطی</text>
+    <text x="445" y="180" text-anchor="start" class="fa card-body">تقریر، نقد، نقض، ابرام و جمع‌بندی</text>
+
+    <rect x="28" y="198" width="185" height="29" rx="14.5" fill="#7C3AED" opacity="0.11"/>
+    <text x="120" y="218" text-anchor="middle" class="fa chip-text" fill="#7C3AED">دقت مفهومی</text>
+
+    <text x="445" y="218" text-anchor="start" class="fa card-risk">آسیب: غلبه‌طلبی لفظی</text>
+  </g>  <g transform="translate(1110,340)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="470" height="245" rx="24" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.5"/>
+
+    <circle cx="48" cy="48" r="30" fill="#DC2626" opacity="0.16"/>
+    <text x="48" y="59" text-anchor="middle" font-size="29">🔥</text>
+
+    <text x="445" y="34" text-anchor="start" class="fa card-title" fill="#1E293B">مباهله</text>
+    <text x="445" y="56" text-anchor="end" class="en card-en">Mubahala</text>
+
+    <line x1="28" y1="76" x2="442" y2="76" stroke="#E2E8F0"/>
+
+    <text x="445" y="103" text-anchor="start" class="fa card-label" fill="#DC2626">تعریف</text>
+    <text x="445" y="126" text-anchor="start" class="fa card-body">صورت آیینی ـ ایمانیِ داوری نهایی در نزاع حق</text>
+
+    <text x="445" y="158" text-anchor="start" class="fa card-label">صورت ارتباطی</text>
+    <text x="445" y="180" text-anchor="start" class="fa card-body">دعوت رسمی، التزام وجودی، واگذاری داوری به امر قدسی</text>
+
+    <rect x="28" y="198" width="185" height="29" rx="14.5" fill="#DC2626" opacity="0.11"/>
+    <text x="120" y="218" text-anchor="middle" class="fa chip-text" fill="#DC2626">تعهد وجودی</text>
+
+    <text x="445" y="218" text-anchor="start" class="fa card-risk">آسیب: نمایش تهدیدآمیز</text>
+  </g>  <g transform="translate(1605,340)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="470" height="245" rx="24" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5"/>
+
+    <circle cx="48" cy="48" r="30" fill="#2563EB" opacity="0.16"/>
+    <text x="48" y="59" text-anchor="middle" font-size="29">🤲</text>
+
+    <text x="445" y="34" text-anchor="start" class="fa card-title" fill="#1E293B">مناجات</text>
+    <text x="445" y="56" text-anchor="end" class="en card-en">Munajat</text>
+
+    <line x1="28" y1="76" x2="442" y2="76" stroke="#E2E8F0"/>
+
+    <text x="445" y="103" text-anchor="start" class="fa card-label" fill="#2563EB">تعریف</text>
+    <text x="445" y="126" text-anchor="start" class="fa card-body">گفتگوی یک‌جانبه اما رابطه‌مند با امر قدسی</text>
+
+    <text x="445" y="158" text-anchor="start" class="fa card-label">صورت ارتباطی</text>
+    <text x="445" y="180" text-anchor="start" class="fa card-body">دعا، شکایت، شکر، طلب، اعتراف و امید</text>
+
+    <rect x="28" y="198" width="185" height="29" rx="14.5" fill="#2563EB" opacity="0.11"/>
+    <text x="120" y="218" text-anchor="middle" class="fa chip-text" fill="#2563EB">پاکسازی درون</text>
+
+    <text x="445" y="218" text-anchor="start" class="fa card-risk">آسیب: تکرار بی‌حضور</text>
+  </g>  <g transform="translate(120,615)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="470" height="245" rx="24" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
+
+    <circle cx="48" cy="48" r="30" fill="#16A34A" opacity="0.16"/>
+    <text x="48" y="59" text-anchor="middle" font-size="29">🌀</text>
+
+    <text x="445" y="34" text-anchor="start" class="fa card-title" fill="#1E293B">ذکر و حلقه عرفانی</text>
+    <text x="445" y="56" text-anchor="end" class="en card-en">Dhikr / Sufi Circle</text>
+
+    <line x1="28" y1="76" x2="442" y2="76" stroke="#E2E8F0"/>
+
+    <text x="445" y="103" text-anchor="start" class="fa card-label" fill="#16A34A">تعریف</text>
+    <text x="445" y="126" text-anchor="start" class="fa card-body">گفتگوی جمعیِ آهنگین با محور یاد و حضور</text>
+
+    <text x="445" y="158" text-anchor="start" class="fa card-label">صورت ارتباطی</text>
+    <text x="445" y="180" text-anchor="start" class="fa card-body">تکرار، هم‌آوایی، سکوت، سماع و هم‌تنظیمی</text>
+
+    <rect x="28" y="198" width="185" height="29" rx="14.5" fill="#16A34A" opacity="0.11"/>
+    <text x="120" y="218" text-anchor="middle" class="fa chip-text" fill="#16A34A">هم‌نَفَسی</text>
+
+    <text x="445" y="218" text-anchor="start" class="fa card-risk">آسیب: هیجان‌زدگی بی‌معنا</text>
+  </g>  <g transform="translate(615,615)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="470" height="245" rx="24" fill="#FFFFFF" stroke="#EA580C" stroke-width="1.5"/>
+
+    <circle cx="48" cy="48" r="30" fill="#EA580C" opacity="0.16"/>
+    <text x="48" y="59" text-anchor="middle" font-size="29">🧕</text>
+
+    <text x="445" y="34" text-anchor="start" class="fa card-title" fill="#1E293B">مراد ـ مرید</text>
+    <text x="445" y="56" text-anchor="end" class="en card-en">Master–Disciple Dialogue</text>
+
+    <line x1="28" y1="76" x2="442" y2="76" stroke="#E2E8F0"/>
+
+    <text x="445" y="103" text-anchor="start" class="fa card-label" fill="#EA580C">تعریف</text>
+    <text x="445" y="126" text-anchor="start" class="fa card-body">گفتگوی تربیتی و سلوکی در رابطه نامتقارن</text>
+
+    <text x="445" y="158" text-anchor="start" class="fa card-label">صورت ارتباطی</text>
+    <text x="445" y="180" text-anchor="start" class="fa card-body">پرسش، حکایت، تذکر، سکوت و اشارت</text>
+
+    <rect x="28" y="198" width="185" height="29" rx="14.5" fill="#EA580C" opacity="0.11"/>
+    <text x="120" y="218" text-anchor="middle" class="fa chip-text" fill="#EA580C">تربیت باطنی</text>
+
+    <text x="445" y="218" text-anchor="start" class="fa card-risk">آسیب: اطاعت کورکورانه</text>
+  </g>  <g transform="translate(1110,615)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="470" height="245" rx="24" fill="#FFFFFF" stroke="#64748B" stroke-width="1.5"/>
+
+    <circle cx="48" cy="48" r="30" fill="#64748B" opacity="0.16"/>
+    <text x="48" y="59" text-anchor="middle" font-size="29">✉️</text>
+
+    <text x="445" y="34" text-anchor="start" class="fa card-title" fill="#1E293B">رسائل و مکاتبات</text>
+    <text x="445" y="56" text-anchor="end" class="en card-en">Epistolary Dialogue</text>
+
+    <line x1="28" y1="76" x2="442" y2="76" stroke="#E2E8F0"/>
+
+    <text x="445" y="103" text-anchor="start" class="fa card-label" fill="#64748B">تعریف</text>
+    <text x="445" y="126" text-anchor="start" class="fa card-body">گفتگوی ناهمزمان از راه نامه و رساله</text>
+
+    <text x="445" y="158" text-anchor="start" class="fa card-label">صورت ارتباطی</text>
+    <text x="445" y="180" text-anchor="start" class="fa card-body">پرسش مکتوب، پاسخ تفصیلی، وصیت، نصیحت و احتجاج</text>
+
+    <rect x="28" y="198" width="185" height="29" rx="14.5" fill="#64748B" opacity="0.11"/>
+    <text x="120" y="218" text-anchor="middle" class="fa chip-text" fill="#64748B">تأمل آهسته</text>
+
+    <text x="445" y="218" text-anchor="start" class="fa card-risk">آسیب: ابهام بی‌امکان اصلاح فوری</text>
+  </g>  <g transform="translate(1605,615)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="470" height="245" rx="24" fill="#FFFFFF" stroke="#DB2777" stroke-width="1.5"/>
+
+    <circle cx="48" cy="48" r="30" fill="#DB2777" opacity="0.16"/>
+    <text x="48" y="59" text-anchor="middle" font-size="29">⚡</text>
+
+    <text x="445" y="34" text-anchor="start" class="fa card-title" fill="#1E293B">شطحیات</text>
+    <text x="445" y="56" text-anchor="end" class="en card-en">Paradoxical Mystic Utterance</text>
+
+    <line x1="28" y1="76" x2="442" y2="76" stroke="#E2E8F0"/>
+
+    <text x="445" y="103" text-anchor="start" class="fa card-label" fill="#DB2777">تعریف</text>
+    <text x="445" y="126" text-anchor="start" class="fa card-body">گفتار پارادوکسیکال در مرز تجربه، زبان و حیرت</text>
+
+    <text x="445" y="158" text-anchor="start" class="fa card-label">صورت ارتباطی</text>
+    <text x="445" y="180" text-anchor="start" class="fa card-body">عبارت کوتاه، تکان‌دهنده، نمادین و چندلایه</text>
+
+    <rect x="28" y="198" width="185" height="29" rx="14.5" fill="#DB2777" opacity="0.11"/>
+    <text x="120" y="218" text-anchor="middle" class="fa chip-text" fill="#DB2777">گشودن افق</text>
+
+    <text x="445" y="218" text-anchor="start" class="fa card-risk">آسیب: بدفهمی یا خودنمایی</text>
+  </g>
+
+  <!-- Axes section -->
+  <g transform="translate(150,890)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="1900" height="245" rx="28" fill="#FFFFFF" stroke="#E2E8F0"/>
+
+    <text x="1870" y="42" text-anchor="start" class="fa section-fa">چهار محور خوانش فرهنگی گفتگو</text>
+    <text x="30" y="42" text-anchor="start" class="en section-en">Four cultural axes for interpretation</text>
+    <line x1="30" y1="62" x2="1870" y2="62" stroke="#E2E8F0"/>
+
+    <g transform="translate(70,95)">
+      <rect x="0" y="0" width="410" height="105" rx="22" fill="#ECFDF5" stroke="#86EFAC"/>
+      <text x="385" y="33" text-anchor="start" class="fa axis-title">ادب</text>
+      <text x="385" y="62" text-anchor="start" class="fa axis-body">حفظ حرمت، نوبت، مقام، سن و نسبت</text>
+      <text x="26" y="62" text-anchor="start" class="en" font-size="11" fill="#64748B">Adab / Courtesy</text>
+    </g>
+
+    <g transform="translate(520,95)">
+      <rect x="0" y="0" width="410" height="105" rx="22" fill="#FFF7ED" stroke="#FDBA74"/>
+      <text x="385" y="33" text-anchor="start" class="fa axis-title">حقیقت</text>
+      <text x="385" y="62" text-anchor="start" class="fa axis-body">دعوی، دلیل، شاهد، برهان و انصاف</text>
+      <text x="26" y="62" text-anchor="start" class="en" font-size="11" fill="#64748B">Truth / Burhan</text>
+    </g>
+
+    <g transform="translate(970,95)">
+      <rect x="0" y="0" width="410" height="105" rx="22" fill="#EEF2FF" stroke="#C4B5FD"/>
+      <text x="385" y="33" text-anchor="start" class="fa axis-title">سلوک</text>
+      <text x="385" y="62" text-anchor="start" class="fa axis-body">گفتگو به‌مثابه تربیت نفس و عبور از خود</text>
+      <text x="26" y="62" text-anchor="start" class="en" font-size="11" fill="#64748B">Spiritual Path</text>
+    </g>
+
+    <g transform="translate(1420,95)">
+      <rect x="0" y="0" width="410" height="105" rx="22" fill="#EFF6FF" stroke="#93C5FD"/>
+      <text x="385" y="33" text-anchor="start" class="fa axis-title">حضور</text>
+      <text x="385" y="62" text-anchor="start" class="fa axis-body">کیفیت دل، نیت، توجه و نسبت با مخاطب</text>
+      <text x="26" y="62" text-anchor="start" class="en" font-size="11" fill="#64748B">Presence / Niyyah</text>
+    </g>
+  </g>
+
+  <!-- Rules and cautions -->
+  <g transform="translate(170,1190)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="1860" height="230" rx="28" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="1830" y="42" text-anchor="start" class="fa section-fa">قواعد طراحی این لایه در اینفوگرافیک نهایی</text>
+    <text x="30" y="42" text-anchor="start" class="en section-en">Design rules for the final infographic layer</text>
+    <line x1="30" y1="62" x2="1830" y2="62" stroke="#E2E8F0"/>
+
+    <g transform="translate(60,92)">
+      <rect x="0" y="0" width="420" height="92" rx="20" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="395" y="30" text-anchor="start" class="fa rule-title">تفکیک آیین از استدلال</text>
+      <text x="395" y="58" text-anchor="start" class="fa rule-body">مباهله، مناظره، دعا و محاجّه را در یک سطح نگذاریم</text>
+    </g>
+
+    <g transform="translate(510,92)">
+      <rect x="0" y="0" width="420" height="92" rx="20" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="395" y="30" text-anchor="start" class="fa rule-title">نشان‌دادن رابطه قدرت</text>
+      <text x="395" y="58" text-anchor="start" class="fa rule-body">مراد ـ مرید، استاد ـ شاگرد و واعظ ـ مخاطب نامتقارن‌اند</text>
+    </g>
+
+    <g transform="translate(960,92)">
+      <rect x="0" y="0" width="420" height="92" rx="20" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="395" y="30" text-anchor="start" class="fa rule-title">حفظ لایه ادبی و عرفانی</text>
+      <text x="395" y="58" text-anchor="start" class="fa rule-body">شعر، حکایت، نامه و شطح، گونه‌های گفتگویی غیرمستقیم‌اند</text>
+    </g>
+
+    <g transform="translate(1410,92)">
+      <rect x="0" y="0" width="420" height="92" rx="20" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="395" y="30" text-anchor="start" class="fa rule-title">پرهیز از شرق‌زدگی تزئینی</text>
+      <text x="395" y="58" text-anchor="start" class="fa rule-body">این لایه باید تحلیلی باشد، نه فقط ornament و نقش‌ونگار</text>
+    </g>
+  </g>
+
+  <!-- Integration note -->
+  <g transform="translate(260,1460)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="1680" height="82" rx="24" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <text x="1645" y="34" text-anchor="start" class="fa" font-size="18" font-weight="800" fill="#1E293B">
+      جایگاه در نقشه نهایی
+    </text>
+    <text x="1645" y="60" text-anchor="start" class="fa" font-size="13.5" font-weight="600" fill="#475569">
+      این لایه می‌تواند به‌صورت یک حلقه پیرامونی یا کارت جانبی در کنار گونه‌شناسی جهانی گفتگو اضافه شود.
+    </text>
+    <text x="36" y="52" text-anchor="start" class="en" font-size="12" fill="#64748B" font-style="italic">
+      Suggested placement: cultural outer ring or dedicated side panel in the master infographic.
+    </text>
+  </g>
+
+  <text x="1100" y="1605" text-anchor="middle" class="fa" font-size="15" font-weight="700" fill="#64748B">
+    در اسلاید بعدی: فلوچارت انتخاب نوع گفتگو برای موقعیت‌های واقعی
+  </text>
+  <text x="1100" y="1630" text-anchor="middle" class="en" font-size="12" fill="#94A3B8" font-style="italic">
+    Next: Decision Flowchart — Which type of dialogue fits this situation?
+  </text>
+
+  <line x1="120" y1="1650" x2="2080" y2="1650" stroke="#E2E8F0"/>
+</svg>

@@ -1,0 +1,414 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 1700" width="2200" height="1700">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap');
+
+      .fa {
+        font-family: "Vazirmatn", "Tahoma", sans-serif;
+        direction: rtl;
+        unicode-bidi: plaintext;
+      }
+
+      .en {
+        font-family: "Inter", "Segoe UI", sans-serif;
+        direction: ltr;
+        unicode-bidi: plaintext;
+      }
+
+      .title-fa {
+        font-size: 46px;
+        font-weight: 800;
+        fill: #172033;
+      }
+
+      .subtitle-en {
+        font-size: 19px;
+        font-weight: 500;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .small-muted {
+        font-size: 13px;
+        fill: #94A3B8;
+      }
+
+      .section-fa {
+        font-size: 25px;
+        font-weight: 800;
+        fill: #1E293B;
+      }
+
+      .section-en {
+        font-size: 13px;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .node-title {
+        font-size: 19px;
+        font-weight: 800;
+        fill: #1E293B;
+      }
+
+      .node-en {
+        font-size: 11px;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .node-question {
+        font-size: 14px;
+        font-weight: 800;
+        fill: #334155;
+      }
+
+      .node-hint {
+        font-size: 12px;
+        font-weight: 600;
+        fill: #64748B;
+      }
+
+      .result-title {
+        font-size: 18px;
+        font-weight: 800;
+        fill: #1E293B;
+      }
+
+      .result-en {
+        font-size: 10.5px;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .result-label {
+        font-size: 11px;
+        font-weight: 800;
+        fill: #334155;
+      }
+
+      .result-body {
+        font-size: 12px;
+        font-weight: 600;
+        fill: #334155;
+      }
+
+      .result-avoid {
+        font-size: 10.5px;
+        font-weight: 700;
+        fill: #64748B;
+      }
+
+      .axis-title {
+        font-size: 14px;
+        font-weight: 800;
+        fill: #1E293B;
+      }
+
+      .axis-body {
+        font-size: 11.5px;
+        font-weight: 600;
+        fill: #475569;
+      }
+
+      .tag {
+        font-size: 11px;
+        font-weight: 800;
+        fill: #475569;
+      }
+    </style>
+
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBFCFF" />
+      <stop offset="50%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF3F8" />
+    </linearGradient>
+
+    <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF" />
+      <stop offset="50%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F0FDF4" />
+    </linearGradient>
+
+    <marker id="arrowHead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#94A3B8" />
+    </marker>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#0F172A" flood-opacity="0.10" />
+    </filter>
+
+    <filter id="cardShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#0F172A" flood-opacity="0.095" />
+    </filter>
+  </defs>
+
+  <rect width="2200" height="1700" fill="url(#bgGrad)" />
+  <circle cx="180" cy="210" r="175" fill="#DBEAFE" opacity="0.30" />
+  <circle cx="2020" cy="250" r="195" fill="#DCFCE7" opacity="0.25" />
+  <circle cx="2040" cy="1510" r="220" fill="#FEF3C7" opacity="0.25" />
+  <circle cx="170" cy="1510" r="185" fill="#FCE7F3" opacity="0.22" />
+
+  <text x="1100" y="70" text-anchor="middle" class="fa title-fa">فلوچارت انتخاب نوع گفتگو</text>
+  <text x="1100" y="105" text-anchor="middle" class="en subtitle-en">
+    Dialogue Decision Flowchart · Choosing the Right Conversational Form
+  </text>
+  <text x="1100" y="130" text-anchor="middle" class="en small-muted">
+    Card 07 · From Situation Diagnosis to Dialogue Type
+  </text>
+
+  <!-- Intro band -->
+  <g transform="translate(180,170)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="1840" height="104" rx="28" fill="url(#flowGrad)" stroke="#BFDBFE" stroke-width="1.3" />
+    <circle cx="54" cy="52" r="32" fill="#FFFFFF" opacity="0.95" />
+    <text x="54" y="63" text-anchor="middle" font-size="30">🧭</text>
+
+    <text x="1810" y="39" text-anchor="start" class="fa section-fa">پرسش اصلی: الان به چه نوع گفتگویی نیاز داریم؟</text>
+    <text x="1810" y="70" text-anchor="start" class="fa" font-size="14" font-weight="600" fill="#475569">
+      انتخاب نادرست قالب گفتگو، حتی با نیت خوب، می‌تواند به سوءتفاهم، دفاع، فرسودگی یا تشدید تعارض منجر شود.
+    </text>
+
+    <text x="95" y="55" text-anchor="start" class="en section-en">
+      A good conversation begins by matching the form of talk to the real need of the situation.
+    </text>
+  </g>
+
+  <!-- Main flowchart title -->
+  <text x="1100" y="310" text-anchor="middle" class="fa section-fa">از تشخیص موقعیت تا انتخاب قالب گفتگو</text>
+  <text x="1100" y="333" text-anchor="middle" class="en section-en">Ask the dominant need first; then select the safest
+    and most useful form.</text>
+
+  <!-- Flow arrows -->
+  <g opacity="0.95">
+    <path d="M1100 470 C1100 505, 1100 520, 1100 552" fill="none" stroke="#94A3B8" stroke-width="3"
+      marker-end="url(#arrowHead)" />
+    <path d="M880 640 C640 670, 405 730, 340 960" fill="none" stroke="#94A3B8" stroke-width="3"
+      marker-end="url(#arrowHead)" />
+    <path d="M1030 690 C865 735, 655 800, 815 960" fill="none" stroke="#94A3B8" stroke-width="3"
+      marker-end="url(#arrowHead)" />
+    <path d="M1125 705 C1125 780, 1190 860, 1340 960" fill="none" stroke="#94A3B8" stroke-width="3"
+      marker-end="url(#arrowHead)" />
+    <path d="M1310 650 C1515 700, 1710 785, 1870 960" fill="none" stroke="#94A3B8" stroke-width="3"
+      marker-end="url(#arrowHead)" />
+    <path d="M940 750 C770 840, 610 995, 595 1195" fill="none" stroke="#94A3B8" stroke-width="3"
+      marker-end="url(#arrowHead)" />
+    <path d="M1100 750 C1095 875, 1100 1010, 1105 1195" fill="none" stroke="#94A3B8" stroke-width="3"
+      marker-end="url(#arrowHead)" />
+    <path d="M1260 750 C1435 850, 1595 1010, 1605 1195" fill="none" stroke="#94A3B8" stroke-width="3"
+      marker-end="url(#arrowHead)" />
+  </g>
+
+  <!-- Start node -->
+  <g transform="translate(770,365)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="660" height="110" rx="30" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.8" />
+    <circle cx="58" cy="55" r="34" fill="#DBEAFE" />
+    <text x="58" y="67" text-anchor="middle" font-size="32">🎯</text>
+    <text x="630" y="42" text-anchor="start" class="fa" font-size="22" font-weight="800" fill="#1E293B">نیاز غالب موقعیت
+      را تشخیص بده</text>
+    <text x="630" y="72" text-anchor="start" class="fa" font-size="13.5" font-weight="600" fill="#475569">
+      آیا نیاز اصلی «حمایت»، «حل مسئله»، «توافق»، «حقیقت‌جویی»، «ترمیم» یا «فهم فرایند» است؟
+    </text>
+    <text x="100" y="75" text-anchor="start" class="en" font-size="12" fill="#64748B" font-style="italic">
+      Start with the dominant need.
+    </text>
+  </g>
+
+  <!-- Central diagnosis node -->
+  <g transform="translate(760,555)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="680" height="205" rx="30" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <text x="650" y="40" text-anchor="start" class="fa" font-size="23" font-weight="800" fill="#1E293B">پرسش‌های
+      تصمیم‌ساز</text>
+    <text x="30" y="40" text-anchor="start" class="en" font-size="12" fill="#64748B" font-style="italic">Decision
+      Questions</text>
+    <line x1="30" y1="62" x2="650" y2="62" stroke="#E2E8F0" />
+
+    <g transform="translate(40,88)">
+      <rect x="0" y="0" width="285" height="42" rx="21" fill="#EFF6FF" stroke="#BFDBFE" />
+      <text x="265" y="27" text-anchor="start" class="fa tag">حمایت عاطفی؟</text>
+      <text x="20" y="27" text-anchor="start" class="en" font-size="10" fill="#64748B">Support</text>
+    </g>
+
+    <g transform="translate(355,88)">
+      <rect x="0" y="0" width="285" height="42" rx="21" fill="#F0FDF4" stroke="#BBF7D0" />
+      <text x="265" y="27" text-anchor="start" class="fa tag">تولید راه‌حل؟</text>
+      <text x="20" y="27" text-anchor="start" class="en" font-size="10" fill="#64748B">Ideation</text>
+    </g>
+
+    <g transform="translate(40,142)">
+      <rect x="0" y="0" width="285" height="42" rx="21" fill="#FFF7ED" stroke="#FED7AA" />
+      <text x="265" y="27" text-anchor="start" class="fa tag">آزمون دلیل؟</text>
+      <text x="20" y="27" text-anchor="start" class="en" font-size="10" fill="#64748B">Reasoning</text>
+    </g>
+
+    <g transform="translate(355,142)">
+      <rect x="0" y="0" width="285" height="42" rx="21" fill="#FEFCE8" stroke="#FDE68A" />
+      <text x="265" y="27" text-anchor="start" class="fa tag">توافق و منفعت؟</text>
+      <text x="20" y="27" text-anchor="start" class="en" font-size="10" fill="#64748B">Agreement</text>
+    </g>
+  </g>
+
+  <!-- Result cards -->
+  <g transform="translate(110,980)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="460" height="178" rx="22" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.5" />
+
+    <circle cx="43" cy="43" r="27" fill="#0EA5E9" opacity="0.16" />
+    <text x="43" y="53" text-anchor="middle" font-size="25">💙</text>
+
+    <text x="435" y="32" text-anchor="start" class="fa result-title">درد دل / همدلی</text>
+    <text x="435" y="52" text-anchor="end" class="en result-en">Heart-Talk / Empathic Listening</text>
+
+    <line x1="26" y1="68" x2="434" y2="68" stroke="#E2E8F0" />
+
+    <text x="435" y="94" text-anchor="start" class="fa result-label" fill="#0EA5E9">مناسب برای</text>
+    <text x="435" y="114" text-anchor="start" class="fa result-body">تخلیه هیجان، حمایت، فهمیده‌شدن</text>
+
+    <text x="435" y="140" text-anchor="start" class="fa result-label">قاعده طلایی</text>
+    <text x="435" y="160" text-anchor="start" class="fa result-body">اول بازتاب، بعد تحلیل</text>
+
+    <text x="26" y="160" text-anchor="end" class="fa result-avoid">پرهیز: نصیحت زودهنگام</text>
+  </g>
+  <g transform="translate(620,980)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="460" height="178" rx="22" fill="#FFFFFF" stroke="#22C55E" stroke-width="1.5" />
+
+    <circle cx="43" cy="43" r="27" fill="#22C55E" opacity="0.16" />
+    <text x="43" y="53" text-anchor="middle" font-size="25">💡</text>
+
+    <text x="435" y="32" text-anchor="start" class="fa result-title">همفکری / طوفان فکری</text>
+    <text x="435" y="52" text-anchor="end" class="en result-en">Brainstorming / Co-thinking</text>
+
+    <line x1="26" y1="68" x2="434" y2="68" stroke="#E2E8F0" />
+
+    <text x="435" y="94" text-anchor="start" class="fa result-label" fill="#22C55E">مناسب برای</text>
+    <text x="435" y="114" text-anchor="start" class="fa result-body">تولید گزینه، ایده‌پردازی، طراحی راه‌حل</text>
+
+    <text x="435" y="140" text-anchor="start" class="fa result-label">قاعده طلایی</text>
+    <text x="435" y="160" text-anchor="start" class="fa result-body">تعلیق داوری در مرحله تولید</text>
+
+    <text x="26" y="160" text-anchor="end" class="fa result-avoid">پرهیز: کشتن ایده خام</text>
+  </g>
+  <g transform="translate(1130,980)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="460" height="178" rx="22" fill="#FFFFFF" stroke="#F97316" stroke-width="1.5" />
+
+    <circle cx="43" cy="43" r="27" fill="#F97316" opacity="0.16" />
+    <text x="43" y="53" text-anchor="middle" font-size="25">🎤</text>
+
+    <text x="435" y="32" text-anchor="start" class="fa result-title">بحث / مناظره</text>
+    <text x="435" y="52" text-anchor="end" class="en result-en">Discussion / Debate</text>
+
+    <line x1="26" y1="68" x2="434" y2="68" stroke="#E2E8F0" />
+
+    <text x="435" y="94" text-anchor="start" class="fa result-label" fill="#F97316">مناسب برای</text>
+    <text x="435" y="114" text-anchor="start" class="fa result-body">روشن‌کردن اختلاف، آزمون دلیل‌ها</text>
+
+    <text x="435" y="140" text-anchor="start" class="fa result-label">قاعده طلایی</text>
+    <text x="435" y="160" text-anchor="start" class="fa result-body">نقد ادعا، نه تخریب شخص</text>
+
+    <text x="26" y="160" text-anchor="end" class="fa result-avoid">پرهیز: حمله شخصی</text>
+  </g>
+  <g transform="translate(1640,980)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="460" height="178" rx="22" fill="#FFFFFF" stroke="#EAB308" stroke-width="1.5" />
+
+    <circle cx="43" cy="43" r="27" fill="#EAB308" opacity="0.16" />
+    <text x="43" y="53" text-anchor="middle" font-size="25">🤝</text>
+
+    <text x="435" y="32" text-anchor="start" class="fa result-title">مذاکره</text>
+    <text x="435" y="52" text-anchor="end" class="en result-en">Negotiation</text>
+
+    <line x1="26" y1="68" x2="434" y2="68" stroke="#E2E8F0" />
+
+    <text x="435" y="94" text-anchor="start" class="fa result-label" fill="#EAB308">مناسب برای</text>
+    <text x="435" y="114" text-anchor="start" class="fa result-body">توافق، معامله، تقسیم منافع</text>
+
+    <text x="435" y="140" text-anchor="start" class="fa result-label">قاعده طلایی</text>
+    <text x="435" y="160" text-anchor="start" class="fa result-body">تفکیک موضع از منفعت</text>
+
+    <text x="26" y="160" text-anchor="end" class="fa result-avoid">پرهیز: اجبار پنهان</text>
+  </g>
+  <g transform="translate(365,1210)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="460" height="178" rx="22" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="1.5" />
+
+    <circle cx="43" cy="43" r="27" fill="#8B5CF6" opacity="0.16" />
+    <text x="43" y="53" text-anchor="middle" font-size="25">🛋️</text>
+
+    <text x="435" y="32" text-anchor="start" class="fa result-title">مشاوره / کوچینگ</text>
+    <text x="435" y="52" text-anchor="end" class="en result-en">Counseling / Coaching</text>
+
+    <line x1="26" y1="68" x2="434" y2="68" stroke="#E2E8F0" />
+
+    <text x="435" y="94" text-anchor="start" class="fa result-label" fill="#8B5CF6">مناسب برای</text>
+    <text x="435" y="114" text-anchor="start" class="fa result-body">ابهام شخصی، تصمیم فردی، رشد مهارت</text>
+
+    <text x="435" y="140" text-anchor="start" class="fa result-label">قاعده طلایی</text>
+    <text x="435" y="160" text-anchor="start" class="fa result-body">پرسش باز پیش از راهکار</text>
+
+    <text x="26" y="160" text-anchor="end" class="fa result-avoid">پرهیز: نسخه‌پیچی</text>
+  </g>
+  <g transform="translate(875,1210)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="460" height="178" rx="22" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.5" />
+
+    <circle cx="43" cy="43" r="27" fill="#EF4444" opacity="0.16" />
+    <text x="43" y="53" text-anchor="middle" font-size="25">🕊️</text>
+
+    <text x="435" y="32" text-anchor="start" class="fa result-title">گفتگوی ترمیمی</text>
+    <text x="435" y="52" text-anchor="end" class="en result-en">Restorative / NVC Dialogue</text>
+
+    <line x1="26" y1="68" x2="434" y2="68" stroke="#E2E8F0" />
+
+    <text x="435" y="94" text-anchor="start" class="fa result-label" fill="#EF4444">مناسب برای</text>
+    <text x="435" y="114" text-anchor="start" class="fa result-body">تعارض، رنجش، رابطه آسیب‌دیده</text>
+
+    <text x="435" y="140" text-anchor="start" class="fa result-label">قاعده طلایی</text>
+    <text x="435" y="160" text-anchor="start" class="fa result-body">مشاهده، احساس، نیاز، درخواست</text>
+
+    <text x="26" y="160" text-anchor="end" class="fa result-avoid">پرهیز: سرزنش و دفاع</text>
+  </g>
+  <g transform="translate(1385,1210)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="460" height="178" rx="22" fill="#FFFFFF" stroke="#14B8A6" stroke-width="1.5" />
+
+    <circle cx="43" cy="43" r="27" fill="#14B8A6" opacity="0.16" />
+    <text x="43" y="53" text-anchor="middle" font-size="25">🪞</text>
+
+    <text x="435" y="32" text-anchor="start" class="fa result-title">فراگفتگو</text>
+    <text x="435" y="52" text-anchor="end" class="en result-en">Meta-dialogue</text>
+
+    <line x1="26" y1="68" x2="434" y2="68" stroke="#E2E8F0" />
+
+    <text x="435" y="94" text-anchor="start" class="fa result-label" fill="#14B8A6">مناسب برای</text>
+    <text x="435" y="114" text-anchor="start" class="fa result-body">خرابی قواعد، سوءتفاهم درباره خود گفتگو</text>
+
+    <text x="435" y="140" text-anchor="start" class="fa result-label">قاعده طلایی</text>
+    <text x="435" y="160" text-anchor="start" class="fa result-body">درباره فرایند حرف بزن، نه فقط محتوا</text>
+
+    <text x="26" y="160" text-anchor="end" class="fa result-avoid">پرهیز: تحلیل‌زدگی</text>
+  </g>
+
+  <!-- Context filters -->
+  <g transform="translate(140,1445)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="1920" height="135" rx="28" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="1890" y="38" text-anchor="start" class="fa section-fa">پیش از شروع، سه فیلتر زمینه‌ای را بررسی کن</text>
+    <text x="30" y="38" text-anchor="start" class="en section-en">Before starting, check three context filters</text>
+    <line x1="30" y1="58" x2="1890" y2="58" stroke="#E2E8F0" />
+
+    <g transform="translate(70,82)">
+      <circle cx="0" cy="0" r="14" fill="#DBEAFE" />
+      <text x="24" y="5" text-anchor="end" class="fa axis-body">قدرت: رابطه متقارن است یا نامتقارن؟</text>
+
+      <circle cx="485" cy="0" r="14" fill="#DCFCE7" />
+      <text x="509" y="5" text-anchor="end" class="fa axis-body">رسمیت: گفتگوی رسمی لازم است یا غیررسمی؟</text>
+
+      <circle cx="970" cy="0" r="14" fill="#FEF3C7" />
+      <text x="994" y="5" text-anchor="end" class="fa axis-body">رسانه: حضوری، نوشتاری، تلفنی، تصویری یا
+        ناهمزمان؟</text>
+
+      <circle cx="1455" cy="0" r="14" fill="#EDE9FE" />
+      <text x="1479" y="5" text-anchor="end" class="fa axis-body">ظرفیت: طرفین الان توان روانی گفتگو دارند؟</text>
+    </g>
+  </g>
+
+  <text x="1100" y="1635" text-anchor="middle" class="fa" font-size="15" font-weight="700" fill="#64748B">
+    در اسلاید بعدی: نقشه مونتاژ نسخه نهایی اینفوگرافیک جامع
+  </text>
+  <text x="1100" y="1660" text-anchor="middle" class="en" font-size="12" fill="#94A3B8" font-style="italic">
+    Next: Final Infographic Assembly Blueprint
+  </text>
+</svg>

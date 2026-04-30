@@ -1,0 +1,416 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1250" width="1800" height="1250">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap');
+
+      .fa {
+        font-family: "Vazirmatn", "Tahoma", sans-serif;
+        direction: rtl;
+        unicode-bidi: plaintext;
+      }
+
+      .en {
+        font-family: "Inter", "Segoe UI", sans-serif;
+        direction: ltr;
+        unicode-bidi: plaintext;
+      }
+
+      .title-fa {
+        font-size: 43px;
+        font-weight: 800;
+        fill: #172033;
+      }
+
+      .subtitle-en {
+        font-size: 20px;
+        font-weight: 500;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .small-muted {
+        font-size: 14px;
+        fill: #94A3B8;
+      }
+
+      .card-title {
+        font-size: 20px;
+        font-weight: 800;
+      }
+
+      .card-subtitle {
+        font-size: 13.5px;
+        font-style: italic;
+        font-weight: 500;
+      }
+
+      .card-line {
+        font-size: 15px;
+        font-weight: 500;
+        fill: #475569;
+      }
+
+      .lens-title {
+        font-size: 14px;
+        font-weight: 800;
+        fill: #1E293B;
+      }
+
+      .lens-sub {
+        font-size: 11px;
+        fill: #475569;
+        font-style: italic;
+      }
+
+      .question {
+        font-size: 17px;
+        font-weight: 700;
+        fill: #334155;
+      }
+
+      .question-en {
+        font-size: 11.5px;
+        fill: #64748B;
+        font-style: italic;
+      }
+    </style>
+
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBFCFF" />
+      <stop offset="42%" stop-color="#F4F7FB" />
+      <stop offset="100%" stop-color="#EEF3F8" />
+    </linearGradient>
+
+    <radialGradient id="coreGrad" cx="50%" cy="42%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="58%" stop-color="#EEF2FF" />
+      <stop offset="100%" stop-color="#DDE6FF" />
+    </radialGradient>
+
+    <linearGradient id="coreStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <linearGradient id="redCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FFF1F2" />
+    </linearGradient>
+    <linearGradient id="amberCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FFFBEB" />
+    </linearGradient>
+    <linearGradient id="greenCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F0FDF4" />
+    </linearGradient>
+    <linearGradient id="skyCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F0F9FF" />
+    </linearGradient>
+    <linearGradient id="violetCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F5F3FF" />
+    </linearGradient>
+    <linearGradient id="fuchsiaCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FDF4FF" />
+    </linearGradient>
+    <linearGradient id="tealCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F0FDFA" />
+    </linearGradient>
+
+    <radialGradient id="lensA" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#C7D2FE" stop-opacity="0.55" />
+    </radialGradient>
+    <radialGradient id="lensB" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#BAE6FD" stop-opacity="0.55" />
+    </radialGradient>
+    <radialGradient id="lensC" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#BBF7D0" stop-opacity="0.55" />
+    </radialGradient>
+    <radialGradient id="lensD" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#FDE68A" stop-opacity="0.58" />
+    </radialGradient>
+    <radialGradient id="lensE" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#FBCFE8" stop-opacity="0.55" />
+    </radialGradient>
+    <radialGradient id="lensF" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#DDD6FE" stop-opacity="0.55" />
+    </radialGradient>
+
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.10" />
+    </filter>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.085" />
+    </filter>
+    <filter id="lensShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.10" />
+    </filter>
+  </defs>
+
+  <rect width="1800" height="1250" fill="url(#bgGrad)" />
+
+  <circle cx="180" cy="170" r="150" fill="#E0F2FE" opacity="0.45" />
+  <circle cx="1620" cy="250" r="180" fill="#F5D0FE" opacity="0.28" />
+  <circle cx="1500" cy="1120" r="210" fill="#DCFCE7" opacity="0.32" />
+  <circle cx="260" cy="1060" r="170" fill="#FEF3C7" opacity="0.32" />
+
+  <text x="900" y="68" text-anchor="middle" class="fa title-fa">جغرافیای مفهومی گفتگو</text>
+  <text x="900" y="103" text-anchor="middle" class="en subtitle-en">
+    Conceptual Geography of Speech, Expression &amp; Communicative Action
+  </text>
+  <text x="900" y="130" text-anchor="middle" class="en small-muted">
+    Master Map · Central Index · v2
+  </text>
+
+  <!-- ===== CONNECTORS (drawn first, behind everything) ===== -->
+  <g stroke="#CBD5E1" stroke-width="1.45" fill="none" stroke-dasharray="5 7" opacity="0.7">
+    <path d="M 665 500 C 520 420, 415 360, 300 325" />
+    <path d="M 1135 500 C 1280 420, 1385 360, 1490 330" />
+    <path d="M 720 590 C 580 600, 480 615, 310 615" />
+    <path d="M 1080 590 C 1220 600, 1320 615, 1490 615" />
+    <path d="M 760 700 C 680 800, 560 870, 310 920" />
+    <path d="M 1040 700 C 1120 800, 1240 870, 1490 920" />
+    <path d="M 900 810 C 900 870, 900 905, 900 945" />
+  </g>
+
+  <!-- ===== CORE (drawn before lenses so lenses overlap on top) ===== -->
+  <g filter="url(#softShadow)">
+    <circle cx="900" cy="555" r="160" fill="url(#coreGrad)" stroke="url(#coreStroke)" stroke-width="3" />
+    <circle cx="900" cy="555" r="125" fill="none" stroke="#A5B4FC" stroke-width="1.2" stroke-dasharray="4 6"
+      opacity="0.75" />
+
+    <text x="900" y="510" text-anchor="middle" class="en" font-size="24" font-weight="800" fill="#312E81">
+      SPEECH · EXPRESSION
+    </text>
+    <text x="900" y="548" text-anchor="middle" class="fa" font-size="32" font-weight="800" fill="#1E1B4B">
+      سخن، بیان، ابراز
+    </text>
+    <text x="900" y="578" text-anchor="middle" class="fa" font-size="19" font-weight="700" fill="#4338CA">
+      و کنش ارتباطی
+    </text>
+    <text x="900" y="604" text-anchor="middle" class="en" font-size="13" fill="#6366F1" font-style="italic">
+      Communicative Action
+    </text>
+    <text x="900" y="623" text-anchor="middle" class="en" font-size="12.5" fill="#6366F1" font-style="italic">
+      kommunikatives Handeln · acte communicationnel
+    </text>
+  </g>
+
+  <!-- ===== ANALYTICAL LENSES (drawn AFTER core, on top, overlapping its edge) =====
+       Positioned at radius ~210 from core center (900,555).
+       Lens radius = 78. Core radius = 160. Overlap ≈ 28px (subtle, elegant).
+  -->
+  <g opacity="0.97">
+    <!-- Top -->
+    <g filter="url(#lensShadow)">
+      <circle cx="900" cy="345" r="78" fill="url(#lensA)" stroke="#A5B4FC" stroke-width="1.8" />
+      <text x="900" y="338" text-anchor="middle" class="fa lens-title">تعداد طرفین</text>
+      <text x="900" y="360" text-anchor="middle" class="en lens-sub">Participation</text>
+    </g>
+
+    <!-- Top-Right -->
+    <g filter="url(#lensShadow)">
+      <circle cx="1082" cy="450" r="78" fill="url(#lensB)" stroke="#7DD3FC" stroke-width="1.8" />
+      <text x="1082" y="443" text-anchor="middle" class="fa lens-title">نیت و جهت‌گیری</text>
+      <text x="1082" y="465" text-anchor="middle" class="en lens-sub">Intentionality</text>
+    </g>
+
+    <!-- Bottom-Right -->
+    <g filter="url(#lensShadow)">
+      <circle cx="1082" cy="660" r="78" fill="url(#lensC)" stroke="#86EFAC" stroke-width="1.8" />
+      <text x="1082" y="653" text-anchor="middle" class="fa lens-title">رسمیت و زمینه</text>
+      <text x="1082" y="675" text-anchor="middle" class="en lens-sub">Formality / Context</text>
+    </g>
+
+    <!-- Bottom -->
+    <g filter="url(#lensShadow)">
+      <circle cx="900" cy="765" r="78" fill="url(#lensD)" stroke="#FCD34D" stroke-width="1.8" />
+      <text x="900" y="758" text-anchor="middle" class="fa lens-title">رسانه و زمان</text>
+      <text x="900" y="780" text-anchor="middle" class="en lens-sub">Medium / Temporality</text>
+    </g>
+
+    <!-- Bottom-Left -->
+    <g filter="url(#lensShadow)">
+      <circle cx="718" cy="660" r="78" fill="url(#lensE)" stroke="#F9A8D4" stroke-width="1.8" />
+      <text x="718" y="653" text-anchor="middle" class="fa lens-title">قدرت و جایگاه</text>
+      <text x="718" y="675" text-anchor="middle" class="en lens-sub">Power Relation</text>
+    </g>
+
+    <!-- Top-Left -->
+    <g filter="url(#lensShadow)">
+      <circle cx="718" cy="450" r="78" fill="url(#lensF)" stroke="#C4B5FD" stroke-width="1.8" />
+      <text x="718" y="443" text-anchor="middle" class="fa lens-title">عمق و ریسک</text>
+      <text x="718" y="465" text-anchor="middle" class="en lens-sub">Depth / Risk</text>
+    </g>
+  </g>
+
+  <!-- ===== Caption for analytical lenses ===== -->
+  <g filter="url(#cardShadow)">
+    <rect x="540" y="170" width="720" height="62" rx="18" fill="#FFFFFF" opacity="0.94" stroke="#E2E8F0" />
+    <text x="900" y="196" text-anchor="middle" class="fa" font-size="15" font-weight="700" fill="#334155">
+      این دایره‌ها برش‌های تحلیلی برای گونه‌شناسی سخن‌اند، نه ارجاع به کارت‌ها
+    </text>
+    <text x="900" y="218" text-anchor="middle" class="en" font-size="11.5" fill="#64748B" font-style="italic">
+      Analytical lenses, not navigation pointers — different cuts through one phenomenon
+    </text>
+  </g>
+
+  <!-- ===== CARDS ===== -->
+
+  <!-- Card 1: Taxonomy (top-left) -->
+  <g transform="translate(1300,240)" filter="url(#cardShadow)">
+    <rect width="380" height="190" rx="24" fill="url(#redCard)" stroke="#FCA5A5" stroke-width="2" />
+    <circle cx="50" cy="46" r="27" fill="#FEE2E2" />
+    <text x="50" y="55" text-anchor="middle" font-size="24">🌳</text>
+
+    <text x="354" y="42" text-anchor="start" class="fa card-title" fill="#991B1B">گونه‌شناسی · کارت یکم</text>
+    <text x="354" y="65" text-anchor="end" class="en card-subtitle" fill="#7F1D1D">Taxonomy · Typologie</text>
+    <line x1="26" y1="88" x2="354" y2="88" stroke="#FECACA" stroke-width="1" />
+
+    <text x="354" y="116" text-anchor="start" class="fa card-line">• درخت کامل گونه‌ها در چند سطح</text>
+    <text x="354" y="141" text-anchor="start" class="fa card-line">• بیش از چهل نوع گفتار و مکالمه</text>
+    <text x="354" y="166" text-anchor="start" class="fa card-line">• طیف تقابل، رقابت، همکاری، مراقبت</text>
+  </g>
+
+  <!-- Card 2: Matrix (middle-left) -->
+  <g transform="translate(120,240)" filter="url(#cardShadow)">
+    <rect width="380" height="190" rx="24" fill="url(#amberCard)" stroke="#FCD34D" stroke-width="2" />
+    <circle cx="50" cy="46" r="27" fill="#FEF3C7" />
+    <text x="50" y="55" text-anchor="middle" font-size="24">🎛️</text>
+
+    <text x="354" y="42" text-anchor="start" class="fa card-title" fill="#92400E">ماتریس ابعاد · کارت دوم</text>
+    <text x="354" y="65" text-anchor="end" class="en card-subtitle" fill="#78350F">Dimensional Matrix · Matrix der
+      Dimensionen</text>
+    <line x1="26" y1="88" x2="354" y2="88" stroke="#FDE68A" stroke-width="1" />
+
+    <text x="354" y="116" text-anchor="start" class="fa card-line">• تعداد طرفین، نیت، رسمیت</text>
+    <text x="354" y="141" text-anchor="start" class="fa card-line">• رسانه، همزمانی، قدرت، عمق</text>
+    <text x="354" y="166" text-anchor="start" class="fa card-line">• جدول مقایسه‌ای برای گونه‌ها</text>
+  </g>
+
+  <!-- Card 7: Decision Flow (bottom-left) -->
+  <g transform="translate(710,900)" filter="url(#cardShadow)">
+    <rect width="380" height="190" rx="24" fill="url(#tealCard)" stroke="#5EEAD4" stroke-width="2" />
+    <circle cx="50" cy="46" r="27" fill="#CCFBF1" />
+    <text x="50" y="55" text-anchor="middle" font-size="24">🧭</text>
+
+    <text x="354" y="42" text-anchor="start" class="fa card-title" fill="#115E59">فلوچارت انتخاب · کارت هفتم</text>
+    <text x="354" y="65" text-anchor="end" class="en card-subtitle" fill="#134E4A">Decision Flowchart ·
+      Entscheidungsbaum</text>
+    <line x1="26" y1="88" x2="354" y2="88" stroke="#99F6E4" stroke-width="1" />
+
+    <text x="354" y="116" text-anchor="start" class="fa card-line">• چه نوع گفت‌وگویی لازم دارم؟</text>
+    <text x="354" y="141" text-anchor="start" class="fa card-line">• اقناع، حل اختلاف، درمان، یادگیری؟</text>
+    <text x="354" y="166" text-anchor="start" class="fa card-line">• راهنمای عملی برای انتخاب فرم مناسب</text>
+  </g>
+
+  <!-- Card 3: Profile Cards (top-right) -->
+  <g transform="translate(1340,520)" filter="url(#cardShadow)">
+    <rect width="380" height="190" rx="24" fill="url(#greenCard)" stroke="#86EFAC" stroke-width="2" />
+    <circle cx="50" cy="46" r="27" fill="#DCFCE7" />
+    <text x="50" y="55" text-anchor="middle" font-size="24">🗂️</text>
+
+    <text x="354" y="42" text-anchor="start" class="fa card-title" fill="#166534">کارت‌های پروفایل · کارت سوم</text>
+    <text x="354" y="65" text-anchor="end" class="en card-subtitle" fill="#14532D">Profile Cards · Steckbriefe</text>
+    <line x1="26" y1="88" x2="354" y2="88" stroke="#BBF7D0" stroke-width="1" />
+
+    <text x="354" y="116" text-anchor="start" class="fa card-line">• بیست‌وچهار کارت تخصصی</text>
+    <text x="354" y="141" text-anchor="start" class="fa card-line">• هدف، قواعد، شاخص موفقیت، تله‌ها</text>
+    <text x="354" y="166" text-anchor="start" class="fa card-line">• مثال تاریخی، سازمانی و روزمره</text>
+  </g>
+
+  <!-- Card 4: Pathology (middle-right) -->
+  <g transform="translate(80,520)" filter="url(#cardShadow)">
+    <rect width="380" height="190" rx="24" fill="url(#skyCard)" stroke="#7DD3FC" stroke-width="2" />
+    <circle cx="50" cy="46" r="27" fill="#E0F2FE" />
+    <text x="50" y="55" text-anchor="middle" font-size="24">🧬</text>
+
+    <text x="354" y="42" text-anchor="start" class="fa card-title" fill="#075985">آسیب‌شناسی · کارت چهارم</text>
+    <text x="354" y="65" text-anchor="end" class="en card-subtitle" fill="#0C4A6E">Pathology · Pathologie</text>
+    <line x1="26" y1="88" x2="354" y2="88" stroke="#BAE6FD" stroke-width="1" />
+
+    <text x="354" y="116" text-anchor="start" class="fa card-line">• مغالطات، تحریف‌ها، بازی‌های زبانی</text>
+    <text x="354" y="141" text-anchor="start" class="fa card-line">• انحراف هر گونه به نسخه ناسالم خود</text>
+    <text x="354" y="166" text-anchor="start" class="fa card-line">• از گفت‌وگو تا جدل، سلطه و گسست</text>
+  </g>
+
+  <!-- Card 5: Theory (bottom-right) -->
+  <g transform="translate(1300,800)" filter="url(#cardShadow)">
+    <rect width="380" height="190" rx="24" fill="url(#violetCard)" stroke="#C4B5FD" stroke-width="2" />
+    <circle cx="50" cy="46" r="27" fill="#EDE9FE" />
+    <text x="50" y="55" text-anchor="middle" font-size="24">📚</text>
+
+    <text x="354" y="42" text-anchor="start" class="fa card-title" fill="#5B21B6">چارچوب نظری · کارت پنجم</text>
+    <text x="354" y="65" text-anchor="end" class="en card-subtitle" fill="#4C1D95">Theoretical Frame · cadre
+      théorique</text>
+    <line x1="26" y1="88" x2="354" y2="88" stroke="#DDD6FE" stroke-width="1" />
+
+    <text x="354" y="116" text-anchor="start" class="fa card-line">• هابرماس، بوبر، بوهم، گادامر</text>
+    <text x="354" y="141" text-anchor="start" class="fa card-line">• گرایس، آستین، سرل، روزنبرگ</text>
+    <text x="354" y="166" text-anchor="start" class="fa card-line">• از کنش گفتاری تا کنش ارتباطی</text>
+  </g>
+
+  <!-- Card 6: Persian-Islamic Tradition (bottom-center) -->
+  <g transform="translate(120,800)" filter="url(#cardShadow)">
+    <rect width="380" height="190" rx="24" fill="url(#fuchsiaCard)" stroke="#F0ABFC" stroke-width="2" />
+    <circle cx="50" cy="46" r="27" fill="#FAE8FF" />
+    <text x="50" y="55" text-anchor="middle" font-size="24">🕌</text>
+
+    <text x="354" y="42" text-anchor="start" class="fa card-title" fill="#86198F">سنت ایرانی-اسلامی · کارت ششم</text>
+    <text x="354" y="65" text-anchor="end" class="en card-subtitle" fill="#701A75">Persian-Islamic Tradition</text>
+    <line x1="26" y1="88" x2="354" y2="88" stroke="#F5D0FE" stroke-width="1" />
+
+    <text x="354" y="115" text-anchor="start" class="fa card-line">• مناظره، محاجّه، مباهله، مناجات</text>
+    <text x="354" y="138" text-anchor="start" class="fa card-line">• مرید و مراد، شطح، وعظ، مجلس</text>
+  </g>
+
+  <!-- ===== ENGAGEMENT QUESTIONS ===== -->
+  <g filter="url(#cardShadow)">
+    <rect x="250" y="1120" width="1300" height="70" rx="22" fill="#FFFFFF" opacity="0.94" stroke="#E2E8F0" />
+
+    <g>
+      <circle cx="305" cy="1160" r="9" fill="#FCA5A5" />
+      <text x="325" y="1155" text-anchor="end" class="fa question">آیا سکوت می‌تواند بلیغ‌ترین سخن باشد؟</text>
+      <text x="325" y="1176" text-anchor="start" class="en question-en">Can silence be the most eloquent speech?</text>
+    </g>
+
+    <g>
+      <circle cx="780" cy="1160" r="9" fill="#86EFAC" />
+      <text x="800" y="1155" text-anchor="end" class="fa question">مرز میان مذاکره و باج‌گیری کجاست؟</text>
+      <text x="800" y="1176" text-anchor="start" class="en question-en">Where lies the line between negotiation and
+        coercion?</text>
+    </g>
+
+    <g>
+      <circle cx="1200" cy="1160" r="9" fill="#7DD3FC" />
+      <text x="1220" y="1155" text-anchor="end" class="fa question">گفتگو از چه نقطه‌ای به جدل سقوط می‌کند؟</text>
+      <text x="1220" y="1176" text-anchor="start" class="en question-en">When does dialogue collapse into combat?</text>
+    </g>
+  </g>
+
+  <!-- ===== FOOTER ===== -->
+  <line x1="120" y1="1230" x2="1680" y2="1230" stroke="#E2E8F0" stroke-width="1" />
+  <!-- =======================
+       FOOTER
+  ======================== -->
+  <line x1="120" y1="1190" x2="1680" y2="1190" stroke="#E2E8F0" stroke-width="1" />
+
+  <text x="120" y="1216" text-anchor="end" class="fa small-muted">
+    طراحی بر اساس نمودار اولیه حسین بیات · بازطراحی و توسعه مفهومی
+  </text>
+
+  <text x="1680" y="1216" text-anchor="end" class="en small-muted">
+    Conceptual Geography of Conversation · Master Map v1
+  </text>
+</svg>

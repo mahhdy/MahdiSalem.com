@@ -1,0 +1,364 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 1700" width="2200" height="1700">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap');
+      .fa { font-family: "Vazirmatn", "Tahoma", sans-serif; direction: rtl; unicode-bidi: plaintext; }
+      .en { font-family: "Inter", "Segoe UI", sans-serif; direction: ltr; unicode-bidi: plaintext; }
+
+      .title-fa { font-size: 46px; font-weight: 800; fill: #172033; }
+      .subtitle-en { font-size: 19px; font-weight: 500; fill: #64748B; font-style: italic; }
+      .small-muted { font-size: 13px; fill: #94A3B8; }
+
+      .section-fa { font-size: 25px; font-weight: 800; fill: #1E293B; }
+      .section-en { font-size: 13px; fill: #64748B; font-style: italic; }
+
+      .card-title { font-size: 19px; font-weight: 800; }
+      .card-en { font-size: 11px; fill: #64748B; font-style: italic; }
+      .card-label { font-size: 11.5px; font-weight: 800; fill: #334155; }
+      .card-body { font-size: 12.3px; font-weight: 600; fill: #334155; }
+      .card-small { font-size: 10px; fill: #64748B; font-style: italic; }
+      .chip-text { font-size: 11.5px; font-weight: 800; }
+      .card-risk { font-size: 10.8px; font-weight: 700; fill: #64748B; }
+
+      .lens-title { font-size: 19px; font-weight: 800; fill: #1E293B; }
+      .lens-body { font-size: 13px; font-weight: 600; fill: #475569; }
+      .timeline-year { font-size: 13px; font-weight: 800; fill: #1E293B; }
+      .timeline-text { font-size: 12px; font-weight: 600; fill: #475569; }
+    </style>
+
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBFCFF"/>
+      <stop offset="55%" stop-color="#F6F8FC"/>
+      <stop offset="100%" stop-color="#EEF3F8"/>
+    </linearGradient>
+
+    <linearGradient id="theoryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EEF2FF"/>
+      <stop offset="50%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#ECFDF5"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+
+    <filter id="cardShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#0F172A" flood-opacity="0.095"/>
+    </filter>
+  </defs>
+
+  <rect width="2200" height="1700" fill="url(#bgGrad)"/>
+  <circle cx="190" cy="210" r="170" fill="#EDE9FE" opacity="0.32"/>
+  <circle cx="2010" cy="255" r="190" fill="#DCFCE7" opacity="0.25"/>
+  <circle cx="2050" cy="1500" r="220" fill="#DBEAFE" opacity="0.24"/>
+  <circle cx="170" cy="1500" r="185" fill="#FCE7F3" opacity="0.22"/>
+
+  <text x="1100" y="70" text-anchor="middle" class="fa title-fa">چارچوب نظری گفتگو</text>
+  <text x="1100" y="105" text-anchor="middle" class="en subtitle-en">
+    Theoretical Frameworks of Dialogue · Philosophy · Pragmatics · Ethics
+  </text>
+  <text x="1100" y="130" text-anchor="middle" class="en small-muted">
+    Card 05 · Buber, Habermas, Bohm, Grice, Austin, Searle, Rosenberg, Gadamer
+  </text>
+
+  <!-- Intro band -->
+  <g transform="translate(180,170)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="1840" height="104" rx="26" fill="url(#theoryGrad)" stroke="#D8B4FE" stroke-width="1.2"/>
+    <circle cx="54" cy="52" r="31" fill="#FFFFFF" opacity="0.95"/>
+    <text x="54" y="63" text-anchor="middle" font-size="30">🧠</text>
+
+    <text x="1810" y="38" text-anchor="start" class="fa section-fa">نظریه‌ها به ما می‌گویند «در گفتگو چه چیزی واقعاً رخ می‌دهد»</text>
+    <text x="1810" y="68" text-anchor="start" class="fa" font-size="14" font-weight="600" fill="#475569">
+      گفتگو فقط تبادل واژه‌ها نیست؛ رابطه، قدرت، فهم، کنش، اخلاق، ادب و حقیقت‌جویی هم‌زمان در آن فعال‌اند.
+    </text>
+
+    <text x="95" y="52" text-anchor="start" class="en section-en">
+      Dialogue is not merely exchange of words; it is relation, action, interpretation, ethics, and power in motion.
+    </text>
+  </g>
+
+  <text x="1100" y="300" text-anchor="middle" class="fa section-fa">نظریه‌پردازان و ایده‌های کلیدی</text>
+  <text x="1100" y="322" text-anchor="middle" class="en section-en">Key thinkers and their conceptual contribution to the geography of talk</text>
+
+  <g transform="translate(120,335)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="470" height="255" rx="24" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.5"/>
+
+    <circle cx="48" cy="48" r="30" fill="#7C3AED" opacity="0.16"/>
+    <text x="48" y="59" text-anchor="middle" font-size="29">🤝</text>
+
+    <text x="445" y="34" text-anchor="start" class="fa card-title" fill="#1E293B">مارتین بوبر</text>
+    <text x="445" y="56" text-anchor="end" class="en card-en">Martin Buber</text>
+
+    <line x1="28" y1="78" x2="442" y2="78" stroke="#E2E8F0"/>
+
+    <text x="445" y="105" text-anchor="start" class="fa card-label" fill="#7C3AED">مفهوم کلیدی</text>
+    <text x="445" y="128" text-anchor="start" class="fa card-body">رابطه من ـ تو</text>
+    <text x="28" y="128" text-anchor="start" class="en card-small">I–Thou Relation</text>
+
+    <text x="445" y="162" text-anchor="start" class="fa card-label">هسته نظری</text>
+    <text x="445" y="184" text-anchor="start" class="fa card-body">گفتگو وقتی اصیل است که دیگری ابزار نباشد</text>
+
+    <rect x="28" y="204" width="195" height="30" rx="15" fill="#7C3AED" opacity="0.11"/>
+    <text x="126" y="224" text-anchor="middle" class="fa chip-text" fill="#7C3AED">اخلاق رابطه</text>
+
+    <text x="445" y="224" text-anchor="start" class="fa card-risk">ریسک: رمانتیک‌کردن گفتگو</text>
+  </g>  <g transform="translate(615,335)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="470" height="255" rx="24" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5"/>
+
+    <circle cx="48" cy="48" r="30" fill="#2563EB" opacity="0.16"/>
+    <text x="48" y="59" text-anchor="middle" font-size="29">🏛️</text>
+
+    <text x="445" y="34" text-anchor="start" class="fa card-title" fill="#1E293B">یورگن هابرماس</text>
+    <text x="445" y="56" text-anchor="end" class="en card-en">Jürgen Habermas</text>
+
+    <line x1="28" y1="78" x2="442" y2="78" stroke="#E2E8F0"/>
+
+    <text x="445" y="105" text-anchor="start" class="fa card-label" fill="#2563EB">مفهوم کلیدی</text>
+    <text x="445" y="128" text-anchor="start" class="fa card-body">کنش ارتباطی</text>
+    <text x="28" y="128" text-anchor="start" class="en card-small">Communicative Action</text>
+
+    <text x="445" y="162" text-anchor="start" class="fa card-label">هسته نظری</text>
+    <text x="445" y="184" text-anchor="start" class="fa card-body">عقلانیت گفتگویی بر پایه دلیل و تفاهم</text>
+
+    <rect x="28" y="204" width="195" height="30" rx="15" fill="#2563EB" opacity="0.11"/>
+    <text x="126" y="224" text-anchor="middle" class="fa chip-text" fill="#2563EB">فضای عمومی</text>
+
+    <text x="445" y="224" text-anchor="start" class="fa card-risk">ریسک: نادیده‌گرفتن قدرت پنهان</text>
+  </g>  <g transform="translate(1110,335)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="470" height="255" rx="24" fill="#FFFFFF" stroke="#0F766E" stroke-width="1.5"/>
+
+    <circle cx="48" cy="48" r="30" fill="#0F766E" opacity="0.16"/>
+    <text x="48" y="59" text-anchor="middle" font-size="29">🌀</text>
+
+    <text x="445" y="34" text-anchor="start" class="fa card-title" fill="#1E293B">دیوید بوهم</text>
+    <text x="445" y="56" text-anchor="end" class="en card-en">David Bohm</text>
+
+    <line x1="28" y1="78" x2="442" y2="78" stroke="#E2E8F0"/>
+
+    <text x="445" y="105" text-anchor="start" class="fa card-label" fill="#0F766E">مفهوم کلیدی</text>
+    <text x="445" y="128" text-anchor="start" class="fa card-body">گفتگوی بوهمی</text>
+    <text x="28" y="128" text-anchor="start" class="en card-small">Bohmian Dialogue</text>
+
+    <text x="445" y="162" text-anchor="start" class="fa card-label">هسته نظری</text>
+    <text x="445" y="184" text-anchor="start" class="fa card-body">تعلیق پیش‌فرض‌ها برای دیدن جریان اندیشه</text>
+
+    <rect x="28" y="204" width="195" height="30" rx="15" fill="#0F766E" opacity="0.11"/>
+    <text x="126" y="224" text-anchor="middle" class="fa chip-text" fill="#0F766E">یادگیری جمعی</text>
+
+    <text x="445" y="224" text-anchor="start" class="fa card-risk">ریسک: ابهام و بی‌ساختاری</text>
+  </g>  <g transform="translate(1605,335)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="470" height="255" rx="24" fill="#FFFFFF" stroke="#EA580C" stroke-width="1.5"/>
+
+    <circle cx="48" cy="48" r="30" fill="#EA580C" opacity="0.16"/>
+    <text x="48" y="59" text-anchor="middle" font-size="29">🧭</text>
+
+    <text x="445" y="34" text-anchor="start" class="fa card-title" fill="#1E293B">پل گرایس</text>
+    <text x="445" y="56" text-anchor="end" class="en card-en">H. P. Grice</text>
+
+    <line x1="28" y1="78" x2="442" y2="78" stroke="#E2E8F0"/>
+
+    <text x="445" y="105" text-anchor="start" class="fa card-label" fill="#EA580C">مفهوم کلیدی</text>
+    <text x="445" y="128" text-anchor="start" class="fa card-body">اصل همکاری</text>
+    <text x="28" y="128" text-anchor="start" class="en card-small">Cooperative Principle</text>
+
+    <text x="445" y="162" text-anchor="start" class="fa card-label">هسته نظری</text>
+    <text x="445" y="184" text-anchor="start" class="fa card-body">کیفیت، کمیت، ربط و شیوه، نظم معنا را می‌سازند</text>
+
+    <rect x="28" y="204" width="195" height="30" rx="15" fill="#EA580C" opacity="0.11"/>
+    <text x="126" y="224" text-anchor="middle" class="fa chip-text" fill="#EA580C">تحلیل مکالمه</text>
+
+    <text x="445" y="224" text-anchor="start" class="fa card-risk">ریسک: برداشت مکانیکی از ادب</text>
+  </g>  <g transform="translate(120,620)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="470" height="255" rx="24" fill="#FFFFFF" stroke="#DC2626" stroke-width="1.5"/>
+
+    <circle cx="48" cy="48" r="30" fill="#DC2626" opacity="0.16"/>
+    <text x="48" y="59" text-anchor="middle" font-size="29">🗣️</text>
+
+    <text x="445" y="34" text-anchor="start" class="fa card-title" fill="#1E293B">آستین و سرل</text>
+    <text x="445" y="56" text-anchor="end" class="en card-en">Austin &amp; Searle</text>
+
+    <line x1="28" y1="78" x2="442" y2="78" stroke="#E2E8F0"/>
+
+    <text x="445" y="105" text-anchor="start" class="fa card-label" fill="#DC2626">مفهوم کلیدی</text>
+    <text x="445" y="128" text-anchor="start" class="fa card-body">کنش گفتاری</text>
+    <text x="28" y="128" text-anchor="start" class="en card-small">Speech Act Theory</text>
+
+    <text x="445" y="162" text-anchor="start" class="fa card-label">هسته نظری</text>
+    <text x="445" y="184" text-anchor="start" class="fa card-body">گفتن، نوعی انجام دادن است</text>
+
+    <rect x="28" y="204" width="195" height="30" rx="15" fill="#DC2626" opacity="0.11"/>
+    <text x="126" y="224" text-anchor="middle" class="fa chip-text" fill="#DC2626">قدرت کلمات</text>
+
+    <text x="445" y="224" text-anchor="start" class="fa card-risk">ریسک: غفلت از زمینه فرهنگی</text>
+  </g>  <g transform="translate(615,620)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="470" height="255" rx="24" fill="#FFFFFF" stroke="#DB2777" stroke-width="1.5"/>
+
+    <circle cx="48" cy="48" r="30" fill="#DB2777" opacity="0.16"/>
+    <text x="48" y="59" text-anchor="middle" font-size="29">🎭</text>
+
+    <text x="445" y="34" text-anchor="start" class="fa card-title" fill="#1E293B">براون، لوینسون و لیچ</text>
+    <text x="445" y="56" text-anchor="end" class="en card-en">Brown, Levinson &amp; Leech</text>
+
+    <line x1="28" y1="78" x2="442" y2="78" stroke="#E2E8F0"/>
+
+    <text x="445" y="105" text-anchor="start" class="fa card-label" fill="#DB2777">مفهوم کلیدی</text>
+    <text x="445" y="128" text-anchor="start" class="fa card-body">نظریه ادب</text>
+    <text x="28" y="128" text-anchor="start" class="en card-small">Politeness Theory</text>
+
+    <text x="445" y="162" text-anchor="start" class="fa card-label">هسته نظری</text>
+    <text x="445" y="184" text-anchor="start" class="fa card-body">گفتگو با مدیریت آبرو، وجهه و فاصله اجتماعی پیش می‌رود</text>
+
+    <rect x="28" y="204" width="195" height="30" rx="15" fill="#DB2777" opacity="0.11"/>
+    <text x="126" y="224" text-anchor="middle" class="fa chip-text" fill="#DB2777">ادب گفتاری</text>
+
+    <text x="445" y="224" text-anchor="start" class="fa card-risk">ریسک: جهان‌شمول‌سازی بیش از حد</text>
+  </g>  <g transform="translate(1110,620)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="470" height="255" rx="24" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
+
+    <circle cx="48" cy="48" r="30" fill="#16A34A" opacity="0.16"/>
+    <text x="48" y="59" text-anchor="middle" font-size="29">🕊️</text>
+
+    <text x="445" y="34" text-anchor="start" class="fa card-title" fill="#1E293B">مارشال روزنبرگ</text>
+    <text x="445" y="56" text-anchor="end" class="en card-en">Marshall Rosenberg</text>
+
+    <line x1="28" y1="78" x2="442" y2="78" stroke="#E2E8F0"/>
+
+    <text x="445" y="105" text-anchor="start" class="fa card-label" fill="#16A34A">مفهوم کلیدی</text>
+    <text x="445" y="128" text-anchor="start" class="fa card-body">ارتباط بدون خشونت</text>
+    <text x="28" y="128" text-anchor="start" class="en card-small">Nonviolent Communication</text>
+
+    <text x="445" y="162" text-anchor="start" class="fa card-label">هسته نظری</text>
+    <text x="445" y="184" text-anchor="start" class="fa card-body">مشاهده، احساس، نیاز و درخواست مسیر گفتگوی امن‌اند</text>
+
+    <rect x="28" y="204" width="195" height="30" rx="15" fill="#16A34A" opacity="0.11"/>
+    <text x="126" y="224" text-anchor="middle" class="fa chip-text" fill="#16A34A">ترمیم تعارض</text>
+
+    <text x="445" y="224" text-anchor="start" class="fa card-risk">ریسک: فرمولی‌شدن همدلی</text>
+  </g>  <g transform="translate(1605,620)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="470" height="255" rx="24" fill="#FFFFFF" stroke="#64748B" stroke-width="1.5"/>
+
+    <circle cx="48" cy="48" r="30" fill="#64748B" opacity="0.16"/>
+    <text x="48" y="59" text-anchor="middle" font-size="29">📜</text>
+
+    <text x="445" y="34" text-anchor="start" class="fa card-title" fill="#1E293B">هانس گئورگ گادامر</text>
+    <text x="445" y="56" text-anchor="end" class="en card-en">Hans-Georg Gadamer</text>
+
+    <line x1="28" y1="78" x2="442" y2="78" stroke="#E2E8F0"/>
+
+    <text x="445" y="105" text-anchor="start" class="fa card-label" fill="#64748B">مفهوم کلیدی</text>
+    <text x="445" y="128" text-anchor="start" class="fa card-body">هرمنوتیک گفتگو</text>
+    <text x="28" y="128" text-anchor="start" class="en card-small">Hermeneutic Dialogue</text>
+
+    <text x="445" y="162" text-anchor="start" class="fa card-label">هسته نظری</text>
+    <text x="445" y="184" text-anchor="start" class="fa card-body">فهم، ادغام افق‌ها در گفتگویی تاریخی است</text>
+
+    <rect x="28" y="204" width="195" height="30" rx="15" fill="#64748B" opacity="0.11"/>
+    <text x="126" y="224" text-anchor="middle" class="fa chip-text" fill="#64748B">تفسیر و فهم</text>
+
+    <text x="445" y="224" text-anchor="start" class="fa card-risk">ریسک: کندی و انتزاع نظری</text>
+  </g>
+
+  <!-- Three lenses -->
+  <g transform="translate(150,910)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="1900" height="215" rx="28" fill="#FFFFFF" stroke="#E2E8F0"/>
+
+    <text x="1870" y="42" text-anchor="start" class="fa section-fa">سه عدسی تحلیلی برای خواندن هر گفتگو</text>
+    <text x="30" y="42" text-anchor="start" class="en section-en">Three analytical lenses for reading any conversation</text>
+    <line x1="30" y1="62" x2="1870" y2="62" stroke="#E2E8F0"/>
+
+    <g transform="translate(80,90)">
+      <rect x="0" y="0" width="520" height="90" rx="22" fill="#EFF6FF" stroke="#93C5FD"/>
+      <text x="490" y="32" text-anchor="start" class="fa lens-title">عدسی حقیقت</text>
+      <text x="490" y="60" text-anchor="start" class="fa lens-body">آیا گفتگو به فهم دقیق‌تر واقعیت کمک می‌کند؟</text>
+      <text x="28" y="58" text-anchor="start" class="en card-small">Truth · Reasons · Evidence</text>
+    </g>
+
+    <g transform="translate(690,90)">
+      <rect x="0" y="0" width="520" height="90" rx="22" fill="#F0FDF4" stroke="#86EFAC"/>
+      <text x="490" y="32" text-anchor="start" class="fa lens-title">عدسی رابطه</text>
+      <text x="490" y="60" text-anchor="start" class="fa lens-body">آیا شأن، امنیت و اعتماد طرفین حفظ می‌شود؟</text>
+      <text x="28" y="58" text-anchor="start" class="en card-small">Relation · Trust · Face</text>
+    </g>
+
+    <g transform="translate(1300,90)">
+      <rect x="0" y="0" width="520" height="90" rx="22" fill="#FFF7ED" stroke="#FDBA74"/>
+      <text x="490" y="32" text-anchor="start" class="fa lens-title">عدسی کنش</text>
+      <text x="490" y="60" text-anchor="start" class="fa lens-body">گفتار چه کاری انجام می‌دهد: وعده، تهدید، دعوت، حکم؟</text>
+      <text x="28" y="58" text-anchor="start" class="en card-small">Action · Speech Acts · Consequences</text>
+    </g>
+  </g>
+
+  <!-- Timeline -->
+  <g transform="translate(170,1180)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="1860" height="205" rx="28" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="1830" y="42" text-anchor="start" class="fa section-fa">خط تاریخی کوتاه اندیشه گفتگو</text>
+    <text x="30" y="42" text-anchor="start" class="en section-en">Short intellectual timeline</text>
+
+    <line x1="120" y1="112" x2="1740" y2="112" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+
+    <g transform="translate(160,112)">
+      <circle cx="0" cy="0" r="14" fill="#7C3AED"/>
+      <text x="0" y="-32" text-anchor="middle" class="timeline-year">Socrates</text>
+      <text x="0" y="42" text-anchor="middle" class="fa timeline-text">پرسشگری</text>
+    </g>
+
+    <g transform="translate(430,112)">
+      <circle cx="0" cy="0" r="14" fill="#64748B"/>
+      <text x="0" y="-32" text-anchor="middle" class="timeline-year">Gadamer</text>
+      <text x="0" y="42" text-anchor="middle" class="fa timeline-text">فهم تاریخی</text>
+    </g>
+
+    <g transform="translate(700,112)">
+      <circle cx="0" cy="0" r="14" fill="#7C3AED"/>
+      <text x="0" y="-32" text-anchor="middle" class="timeline-year">Buber</text>
+      <text x="0" y="42" text-anchor="middle" class="fa timeline-text">من ـ تو</text>
+    </g>
+
+    <g transform="translate(970,112)">
+      <circle cx="0" cy="0" r="14" fill="#EA580C"/>
+      <text x="0" y="-32" text-anchor="middle" class="timeline-year">Grice</text>
+      <text x="0" y="42" text-anchor="middle" class="fa timeline-text">اصل همکاری</text>
+    </g>
+
+    <g transform="translate(1240,112)">
+      <circle cx="0" cy="0" r="14" fill="#DC2626"/>
+      <text x="0" y="-32" text-anchor="middle" class="timeline-year">Austin/Searle</text>
+      <text x="0" y="42" text-anchor="middle" class="fa timeline-text">کنش گفتاری</text>
+    </g>
+
+    <g transform="translate(1510,112)">
+      <circle cx="0" cy="0" r="14" fill="#2563EB"/>
+      <text x="0" y="-32" text-anchor="middle" class="timeline-year">Habermas</text>
+      <text x="0" y="42" text-anchor="middle" class="fa timeline-text">عقلانیت ارتباطی</text>
+    </g>
+
+    <g transform="translate(1740,112)">
+      <circle cx="0" cy="0" r="14" fill="#16A34A"/>
+      <text x="0" y="-32" text-anchor="middle" class="timeline-year">NVC / AI</text>
+      <text x="0" y="42" text-anchor="middle" class="fa timeline-text">ترمیم و انسان ـ ماشین</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(260,1430)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="1680" height="82" rx="24" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <text x="1645" y="34" text-anchor="start" class="fa" font-size="18" font-weight="800" fill="#1E293B">
+      کاربرد در اینفوگرافیک اصلی
+    </text>
+    <text x="1645" y="60" text-anchor="start" class="fa" font-size="13.5" font-weight="600" fill="#475569">
+      هر گونه گفتگو را می‌توان با این پرسش‌ها سنجید: چه رابطه‌ای می‌سازد؟ چه کنشی انجام می‌دهد؟ چه حقیقتی را روشن یا پنهان می‌کند؟
+    </text>
+    <text x="36" y="52" text-anchor="start" class="en" font-size="12" fill="#64748B" font-style="italic">
+      Diagnostic questions: What relation? What action? What truth-effect?
+    </text>
+  </g>
+
+  <text x="1100" y="1585" text-anchor="middle" class="fa" font-size="15" font-weight="700" fill="#64748B">
+    در اسلاید بعدی: لایه فرهنگی ـ ایرانی ـ اسلامی گفتگو
+  </text>
+  <text x="1100" y="1610" text-anchor="middle" class="en" font-size="12" fill="#94A3B8" font-style="italic">
+    Next: Iranian-Islamic Layer — Monazereh, Mohajjeh, Mobahaleh, Munajat, Sufi Circles, Epistolary Dialogue
+  </text>
+
+  <line x1="120" y1="1640" x2="2080" y2="1640" stroke="#E2E8F0"/>
+</svg>

@@ -1,0 +1,731 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 1700" width="2200" height="1700">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap');
+
+      .fa {
+        font-family: "Vazirmatn", "Tahoma", sans-serif;
+        direction: rtl;
+        unicode-bidi: plaintext;
+      }
+
+      .en {
+        font-family: "Inter", "Segoe UI", sans-serif;
+        direction: ltr;
+        unicode-bidi: plaintext;
+      }
+
+      .title-fa {
+        font-size: 46px;
+        font-weight: 800;
+        fill: #172033;
+      }
+
+      .subtitle-en {
+        font-size: 19px;
+        font-weight: 500;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .small-muted {
+        font-size: 13px;
+        fill: #94A3B8;
+      }
+
+      .family-title {
+        font-size: 26px;
+        font-weight: 800;
+      }
+
+      .family-sub {
+        font-size: 13px;
+        font-style: italic;
+      }
+
+      .card-title {
+        font-size: 20px;
+        font-weight: 800;
+        fill: #FFFFFF;
+      }
+
+      .card-en {
+        font-size: 11.5px;
+        font-style: italic;
+        font-weight: 500;
+      }
+
+      .label {
+        font-size: 11.5px;
+        font-weight: 800;
+        fill: #1E293B;
+      }
+
+      .label-en {
+        font-size: 9px;
+        font-style: italic;
+        fill: #64748B;
+      }
+
+      .body-text {
+        font-size: 12.2px;
+        font-weight: 500;
+        fill: #334155;
+      }
+
+      .example {
+        font-size: 12px;
+        font-weight: 700;
+        fill: #334155;
+      }
+
+      .nav-title {
+        font-size: 16px;
+        font-weight: 800;
+        fill: #1E293B;
+      }
+
+      .nav-text {
+        font-size: 12px;
+        font-weight: 600;
+        fill: #475569;
+      }
+
+      .nav-en {
+        font-size: 10px;
+        fill: #64748B;
+        font-style: italic;
+      }
+    </style>
+
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBFCFF" />
+      <stop offset="48%" stop-color="#F6F8FC" />
+      <stop offset="100%" stop-color="#EEF3F8" />
+    </linearGradient>
+
+    <linearGradient id="yellowBanner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+
+    <linearGradient id="greenBanner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86EFAC" />
+      <stop offset="100%" stop-color="#16A34A" />
+    </linearGradient>
+
+    <linearGradient id="yellowHead" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+
+    <linearGradient id="greenHead" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22C55E" />
+      <stop offset="100%" stop-color="#15803D" />
+    </linearGradient>
+
+    <linearGradient id="yellowBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FEFCE8" />
+    </linearGradient>
+
+    <linearGradient id="greenBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F0FDF4" />
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#0F172A" flood-opacity="0.10" />
+    </filter>
+
+    <filter id="cardShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#0F172A" flood-opacity="0.095" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="2200" height="1700" fill="url(#bgGrad)" />
+  <circle cx="180" cy="190" r="170" fill="#FEF3C7" opacity="0.36" />
+  <circle cx="2010" cy="260" r="190" fill="#DCFCE7" opacity="0.32" />
+  <circle cx="2040" cy="1510" r="210" fill="#FEF3C7" opacity="0.22" />
+  <circle cx="180" cy="1510" r="180" fill="#DCFCE7" opacity="0.26" />
+
+  <!-- Header -->
+  <text x="1100" y="70" text-anchor="middle" class="fa title-fa">پروفایل گونه‌های گفتگو — بخش دوم</text>
+  <text x="1100" y="105" text-anchor="middle" class="en subtitle-en">
+    Genre Profiles · Part II · Transactional &amp; Collaborative Families
+  </text>
+  <text x="1100" y="130" text-anchor="middle" class="en small-muted">
+    Card 03b · Optimized Profile Cards · Definition · Goal · Rules · KPI · Pitfall · Example
+  </text>
+
+  <!-- Yellow family banner -->
+  <g transform="translate(100,170)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="2000" height="58" rx="18" fill="url(#yellowBanner)" />
+    <circle cx="42" cy="29" r="21" fill="#FFFFFF" opacity="0.95" />
+    <text x="42" y="37" text-anchor="middle" font-size="21">🤝</text>
+    <text x="1980" y="27" text-anchor="start" class="fa family-title" fill="#78350F">خانواده تبادلی-معاملاتی</text>
+    <text x="1600" y="45" text-anchor="start" class="en family-sub" fill="#FFFBEB">Transactional · negotiation ·
+      Austausch / Verhandlung</text>
+  </g>
+
+  <!-- Green family banner -->
+  <g transform="translate(100,750)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="2000" height="58" rx="18" fill="url(#greenBanner)" />
+    <circle cx="42" cy="29" r="21" fill="#FFFFFF" opacity="0.95" />
+    <text x="42" y="37" text-anchor="middle" font-size="21">🌱</text>
+    <text x="1980" y="27" text-anchor="start" class="fa family-title" fill="#FFFFFF">خانواده مشارکتی-اکتشافی</text>
+    <text x="1600" y="45" text-anchor="start" class="en family-sub" fill="#DCFCE7">Collaborative · exploratory ·
+      ko-konstruktiv</text>
+  </g>
+
+  <g transform="translate(120,250)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#yellowBody)" stroke="#FCD34D" stroke-width="1.5" />
+
+    <!-- Header -->
+    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#yellowHead)" />
+    <rect x="0" y="42" width="480" height="22" fill="#D97706" />
+    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96" />
+    <text x="38" y="39" text-anchor="middle" font-size="18">🤝</text>
+
+    <text x="462" y="27" text-anchor="start" class="fa card-title">مذاکره</text>
+    <text x="250" y="50" text-anchor="start" class="en card-en" fill="#FEF3C7">Negotiation · Verhandlung</text>
+
+    <!-- Definition -->
+    <g transform="translate(20,84)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📖 تعریف</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Definition</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">گفتگوی هدف‌مند برای رسیدن به توافق یا مبادله
+        منافع</text>
+    </g>
+
+    <!-- Goal -->
+    <g transform="translate(20,140)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🎯 هدف</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Goal</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">یافتن راه‌حل قابل قبول، تقسیم ارزش، یا خلق ارزش
+        مشترک</text>
+    </g>
+
+    <!-- Rules -->
+    <g transform="translate(20,196)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📜 قواعد</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Rules</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">شفافیت منافع، BATNA، امتیازدهی مرحله‌ای، احترام
+        متقابل</text>
+    </g>
+
+    <!-- KPI -->
+    <g transform="translate(20,252)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">✅ شاخص</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">KPI</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">توافق پایدار، رضایت نسبی طرفین، اجرای‌پذیری
+        تعهدات</text>
+    </g>
+
+    <!-- Trap -->
+    <g transform="translate(20,308)">
+      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🪤 تله رایج</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Pitfall</text>
+      <text x="426" y="40" text-anchor="start" class="fa body-text">چانه‌زنی موضعی، پنهان‌کاری افراطی، باج‌گیری
+        نرم</text>
+    </g>
+
+    <!-- Example -->
+    <g transform="translate(20,392)">
+      <rect x="0" y="0" width="440" height="58" rx="18" fill="#FEF3C7" stroke="#FCD34D" />
+      <text x="426" y="22" text-anchor="start" class="fa label" fill="#92400E">نمونه / Example</text>
+      <text x="426" y="43" text-anchor="start" class="fa example">مذاکرات کمپ دیوید، قرارداد تجاری، مذاکره حقوق و
+        مزایا</text>
+    </g>
+  </g>
+  <g transform="translate(610,250)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#yellowBody)" stroke="#FCD34D" stroke-width="1.5" />
+
+    <!-- Header -->
+    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#yellowHead)" />
+    <rect x="0" y="42" width="480" height="22" fill="#D97706" />
+    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96" />
+    <text x="38" y="39" text-anchor="middle" font-size="18">🧮</text>
+
+    <text x="462" y="27" text-anchor="start" class="fa card-title">چانه‌زنی</text>
+    <text x="250" y="50" text-anchor="start" class="en card-en" fill="#FEF3C7">Bargaining · Haggling</text>
+
+    <!-- Definition -->
+    <g transform="translate(20,84)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📖 تعریف</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Definition</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">مبادله امتیازها بر سر قیمت، سهم، زمان یا
+        شرایط</text>
+    </g>
+
+    <!-- Goal -->
+    <g transform="translate(20,140)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🎯 هدف</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Goal</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">کاهش هزینه یا افزایش منفعت در یک معامله محدود</text>
+    </g>
+
+    <!-- Rules -->
+    <g transform="translate(20,196)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📜 قواعد</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Rules</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">پیشنهاد اولیه، ضدپیشنهاد، امتیاز کوچک، سقف و کف
+        روشن</text>
+    </g>
+
+    <!-- KPI -->
+    <g transform="translate(20,252)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">✅ شاخص</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">KPI</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">رسیدن به قیمت یا شرط قابل قبول بدون تخریب
+        رابطه</text>
+    </g>
+
+    <!-- Trap -->
+    <g transform="translate(20,308)">
+      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🪤 تله رایج</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Pitfall</text>
+      <text x="426" y="40" text-anchor="start" class="fa body-text">لنگرگذاری فریبنده، فرسایش اعتماد، تبدیل معامله به
+        زورآزمایی</text>
+    </g>
+
+    <!-- Example -->
+    <g transform="translate(20,392)">
+      <rect x="0" y="0" width="440" height="58" rx="18" fill="#FEF3C7" stroke="#FCD34D" />
+      <text x="426" y="22" text-anchor="start" class="fa label" fill="#92400E">نمونه / Example</text>
+      <text x="426" y="43" text-anchor="start" class="fa example">بازار سنتی، خرید سازمانی، توافق بر سر بودجه
+        پروژه</text>
+    </g>
+  </g>
+  <g transform="translate(1100,250)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#yellowBody)" stroke="#FCD34D" stroke-width="1.5" />
+
+    <!-- Header -->
+    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#yellowHead)" />
+    <rect x="0" y="42" width="480" height="22" fill="#D97706" />
+    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96" />
+    <text x="38" y="39" text-anchor="middle" font-size="18">🕊️</text>
+
+    <text x="462" y="27" text-anchor="start" class="fa card-title">میانجی‌گری</text>
+    <text x="250" y="50" text-anchor="start" class="en card-en" fill="#FEF3C7">Mediation · Vermittlung</text>
+
+    <!-- Definition -->
+    <g transform="translate(20,84)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📖 تعریف</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Definition</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">گفتگوی تسهیل‌شده با حضور شخص ثالث بی‌طرف</text>
+    </g>
+
+    <!-- Goal -->
+    <g transform="translate(20,140)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🎯 هدف</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Goal</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">کاهش تنش، بازسازی ارتباط، یافتن راه‌حل
+        مرضی‌الطرفین</text>
+    </g>
+
+    <!-- Rules -->
+    <g transform="translate(20,196)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📜 قواعد</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Rules</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">بی‌طرفی میانجی، محرمانگی، نوبت برابر، تمرکز بر
+        منافع</text>
+    </g>
+
+    <!-- KPI -->
+    <g transform="translate(20,252)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">✅ شاخص</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">KPI</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">کاهش تعارض، توافق عملی، حفظ شأن طرفین</text>
+    </g>
+
+    <!-- Trap -->
+    <g transform="translate(20,308)">
+      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🪤 تله رایج</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Pitfall</text>
+      <text x="426" y="40" text-anchor="start" class="fa body-text">جانبداری پنهان، فشار برای توافق ظاهری، نادیده‌گرفتن
+        قدرت</text>
+    </g>
+
+    <!-- Example -->
+    <g transform="translate(20,392)">
+      <rect x="0" y="0" width="440" height="58" rx="18" fill="#FEF3C7" stroke="#FCD34D" />
+      <text x="426" y="22" text-anchor="start" class="fa label" fill="#92400E">نمونه / Example</text>
+      <text x="426" y="43" text-anchor="start" class="fa example">حل اختلاف خانوادگی، کارگری، سازمانی یا
+        دیپلماتیک</text>
+    </g>
+  </g>
+  <g transform="translate(1590,250)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#yellowBody)" stroke="#FCD34D" stroke-width="1.5" />
+
+    <!-- Header -->
+    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#yellowHead)" />
+    <rect x="0" y="42" width="480" height="22" fill="#D97706" />
+    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96" />
+    <text x="38" y="39" text-anchor="middle" font-size="18">🎙️</text>
+
+    <text x="462" y="27" text-anchor="start" class="fa card-title">مصاحبه</text>
+    <text x="250" y="50" text-anchor="start" class="en card-en" fill="#FEF3C7">Interview · Entretien</text>
+
+    <!-- Definition -->
+    <g transform="translate(20,84)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📖 تعریف</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Definition</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">پرسش و پاسخ ساختاریافته برای استخراج روایت یا
+        داده</text>
+    </g>
+
+    <!-- Goal -->
+    <g transform="translate(20,140)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🎯 هدف</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Goal</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">کسب اطلاعات، سنجش صلاحیت، فهم تجربه یا تولید
+        خبر</text>
+    </g>
+
+    <!-- Rules -->
+    <g transform="translate(20,196)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📜 قواعد</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Rules</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">پرسش روشن، گوش دادن فعال، پیگیری، رعایت اخلاق و
+        رضایت</text>
+    </g>
+
+    <!-- KPI -->
+    <g transform="translate(20,252)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">✅ شاخص</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">KPI</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">داده معتبر، روایت غنی، پاسخ‌های دقیق و قابل
+        تحلیل</text>
+    </g>
+
+    <!-- Trap -->
+    <g transform="translate(20,308)">
+      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🪤 تله رایج</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Pitfall</text>
+      <text x="426" y="40" text-anchor="start" class="fa body-text">پرسش القایی، سوگیری مصاحبه‌گر، کنترل بیش از حد
+        روایت</text>
+    </g>
+
+    <!-- Example -->
+    <g transform="translate(20,392)">
+      <rect x="0" y="0" width="440" height="58" rx="18" fill="#FEF3C7" stroke="#FCD34D" />
+      <text x="426" y="22" text-anchor="start" class="fa label" fill="#92400E">نمونه / Example</text>
+      <text x="426" y="43" text-anchor="start" class="fa example">مصاحبه شغلی، خبری، پژوهشی یا بالینی</text>
+    </g>
+  </g>
+  <g transform="translate(120,830)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#greenBody)" stroke="#86EFAC" stroke-width="1.5" />
+
+    <!-- Header -->
+    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#greenHead)" />
+    <rect x="0" y="42" width="480" height="22" fill="#16A34A" />
+    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96" />
+    <text x="38" y="39" text-anchor="middle" font-size="18">🧠</text>
+
+    <text x="462" y="27" text-anchor="start" class="fa card-title">گفت‌وگوی سقراطی</text>
+    <text x="250" y="50" text-anchor="start" class="en card-en" fill="#DCFCE7">Socratic Dialogue · Maieutic</text>
+
+    <!-- Definition -->
+    <g transform="translate(20,84)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📖 تعریف</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Definition</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">پرسشگری زاینده برای آشکارکردن پیش‌فرض‌ها و
+        تناقض‌ها</text>
+    </g>
+
+    <!-- Goal -->
+    <g transform="translate(20,140)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🎯 هدف</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Goal</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">تولد فهم، پالایش مفهوم، حرکت از گمان به بصیرت</text>
+    </g>
+
+    <!-- Rules -->
+    <g transform="translate(20,196)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📜 قواعد</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Rules</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">پرسش دقیق، پرهیز از خطابه، پذیرش نادانی، دنبال‌کردن
+        دلیل</text>
+    </g>
+
+    <!-- KPI -->
+    <g transform="translate(20,252)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">✅ شاخص</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">KPI</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">تعریف روشن‌تر، کشف تناقض، تغییر سطح فهم</text>
+    </g>
+
+    <!-- Trap -->
+    <g transform="translate(20,308)">
+      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🪤 تله رایج</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Pitfall</text>
+      <text x="426" y="40" text-anchor="start" class="fa body-text">تحقیر مخاطب، بازی قدرت، تبدیل پرسش به بازجویی
+        فلسفی</text>
+    </g>
+
+    <!-- Example -->
+    <g transform="translate(20,392)">
+      <rect x="0" y="0" width="440" height="58" rx="18" fill="#DCFCE7" stroke="#86EFAC" />
+      <text x="426" y="22" text-anchor="start" class="fa label" fill="#166534">نمونه / Example</text>
+      <text x="426" y="43" text-anchor="start" class="fa example">دیالوگ‌های افلاطون، کلاس فلسفه، کوچینگ مفهومی</text>
+    </g>
+  </g>
+  <g transform="translate(610,830)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#greenBody)" stroke="#86EFAC" stroke-width="1.5" />
+
+    <!-- Header -->
+    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#greenHead)" />
+    <rect x="0" y="42" width="480" height="22" fill="#16A34A" />
+    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96" />
+    <text x="38" y="39" text-anchor="middle" font-size="18">🌌</text>
+
+    <text x="462" y="27" text-anchor="start" class="fa card-title">گفت‌وگوی بوهمی</text>
+    <text x="250" y="50" text-anchor="start" class="en card-en" fill="#DCFCE7">Bohmian Dialogue</text>
+
+    <!-- Definition -->
+    <g transform="translate(20,84)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📖 تعریف</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Definition</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">تعلیق پیش‌فرض‌ها برای پدیدارشدن معنای مشترک در
+        جمع</text>
+    </g>
+
+    <!-- Goal -->
+    <g transform="translate(20,140)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🎯 هدف</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Goal</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">دیدن فرایند فکر، کاهش دفاع‌مندی، ساخت میدان فهم
+        مشترک</text>
+    </g>
+
+    <!-- Rules -->
+    <g transform="translate(20,196)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📜 قواعد</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Rules</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">تعلیق قضاوت، گوش دادن عمیق، سخن از تجربه،
+        بی‌شتابی</text>
+    </g>
+
+    <!-- KPI -->
+    <g transform="translate(20,252)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">✅ شاخص</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">KPI</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">ظهور بینش جمعی، کاهش قطبیت، شنیده‌شدن صداهای
+        متنوع</text>
+    </g>
+
+    <!-- Trap -->
+    <g transform="translate(20,308)">
+      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🪤 تله رایج</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Pitfall</text>
+      <text x="426" y="40" text-anchor="start" class="fa body-text">تبدیل به بحث آزاد بی‌جهت یا درمان گروهی
+        بی‌قاب</text>
+    </g>
+
+    <!-- Example -->
+    <g transform="translate(20,392)">
+      <rect x="0" y="0" width="440" height="58" rx="18" fill="#DCFCE7" stroke="#86EFAC" />
+      <text x="426" y="22" text-anchor="start" class="fa label" fill="#166534">نمونه / Example</text>
+      <text x="426" y="43" text-anchor="start" class="fa example">حلقه‌های گفتگوی سازمانی، گروه‌های یادگیری عمیق</text>
+    </g>
+  </g>
+  <g transform="translate(1100,830)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#greenBody)" stroke="#86EFAC" stroke-width="1.5" />
+
+    <!-- Header -->
+    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#greenHead)" />
+    <rect x="0" y="42" width="480" height="22" fill="#16A34A" />
+    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96" />
+    <text x="38" y="39" text-anchor="middle" font-size="18">💡</text>
+
+    <text x="462" y="27" text-anchor="start" class="fa card-title">طوفان فکری</text>
+    <text x="250" y="50" text-anchor="start" class="en card-en" fill="#DCFCE7">Brainstorming · Ideation</text>
+
+    <!-- Definition -->
+    <g transform="translate(20,84)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📖 تعریف</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Definition</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">تولید جمعی ایده با تعویق نقد و تشویق واگرایی</text>
+    </g>
+
+    <!-- Goal -->
+    <g transform="translate(20,140)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🎯 هدف</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Goal</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">افزایش تعداد و تنوع ایده‌ها پیش از ارزیابی</text>
+    </g>
+
+    <!-- Rules -->
+    <g transform="translate(20,196)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📜 قواعد</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Rules</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">قضاوت ممنوع، ایده زیاد، ترکیب ایده‌ها، استقبال از
+        عجیب‌ها</text>
+    </g>
+
+    <!-- KPI -->
+    <g transform="translate(20,252)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">✅ شاخص</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">KPI</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">تعداد ایده‌ها، تنوع، ایده‌های قابل نمونه‌سازی</text>
+    </g>
+
+    <!-- Trap -->
+    <g transform="translate(20,308)">
+      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🪤 تله رایج</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Pitfall</text>
+      <text x="426" y="40" text-anchor="start" class="fa body-text">سلطه افراد پرصدا، نقد زودهنگام، هم‌رنگی گروهی</text>
+    </g>
+
+    <!-- Example -->
+    <g transform="translate(20,392)">
+      <rect x="0" y="0" width="440" height="58" rx="18" fill="#DCFCE7" stroke="#86EFAC" />
+      <text x="426" y="22" text-anchor="start" class="fa label" fill="#166534">نمونه / Example</text>
+      <text x="426" y="43" text-anchor="start" class="fa example">Design Thinking، جلسات محصول، نوآوری سازمانی</text>
+    </g>
+  </g>
+  <g transform="translate(1590,830)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#greenBody)" stroke="#86EFAC" stroke-width="1.5" />
+
+    <!-- Header -->
+    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#greenHead)" />
+    <rect x="0" y="42" width="480" height="22" fill="#16A34A" />
+    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96" />
+    <text x="38" y="39" text-anchor="middle" font-size="18">🏛️</text>
+
+    <text x="462" y="27" text-anchor="start" class="fa card-title">هم‌اندیشی</text>
+    <text x="250" y="50" text-anchor="start" class="en card-en" fill="#DCFCE7">Deliberation · Council</text>
+
+    <!-- Definition -->
+    <g transform="translate(20,84)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📖 تعریف</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Definition</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">گفتگوی سنجیده جمعی برای تصمیم یا داوری مشترک</text>
+    </g>
+
+    <!-- Goal -->
+    <g transform="translate(20,140)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🎯 هدف</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Goal</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">تصمیم بهتر، مشروعیت جمعی، ترکیب دیدگاه‌های
+        ذی‌نفعان</text>
+    </g>
+
+    <!-- Rules -->
+    <g transform="translate(20,196)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📜 قواعد</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Rules</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">دستور جلسه، شواهد مشترک، نوبت برابر، ثبت
+        تصمیم</text>
+    </g>
+
+    <!-- KPI -->
+    <g transform="translate(20,252)">
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">✅ شاخص</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">KPI</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">تصمیم شفاف، پذیرش جمعی، کیفیت استدلال‌ها</text>
+    </g>
+
+    <!-- Trap -->
+    <g transform="translate(20,308)">
+      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🪤 تله رایج</text>
+      <text x="14" y="18" text-anchor="start" class="en label-en">Pitfall</text>
+      <text x="426" y="40" text-anchor="start" class="fa body-text">گروه‌اندیشی، سلطه مقام، جلسه‌زدگی و تصمیم‌های
+        مبهم</text>
+    </g>
+
+    <!-- Example -->
+    <g transform="translate(20,392)">
+      <rect x="0" y="0" width="440" height="58" rx="18" fill="#DCFCE7" stroke="#86EFAC" />
+      <text x="426" y="22" text-anchor="start" class="fa label" fill="#166534">نمونه / Example</text>
+      <text x="426" y="43" text-anchor="start" class="fa example">شورا، پنل تخصصی، هیئت علمی، World Café</text>
+    </g>
+  </g>
+
+  <!-- Footer / Navigation -->
+  <g transform="translate(120,1378)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="1960" height="118" rx="22" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" />
+
+    <text x="1930" y="34" text-anchor="start" class="fa nav-title">راهنمای خواندن کارت‌های پروفایل</text>
+    <text x="30" y="34" text-anchor="start" class="en nav-en">Profile Card Anatomy · compact professional version</text>
+
+    <line x1="30" y1="50" x2="1930" y2="50" stroke="#E2E8F0" stroke-width="1" />
+
+    <g transform="translate(60,78)">
+      <circle cx="0" cy="0" r="12" fill="#F1F5F9" />
+      <text x="0" y="4" text-anchor="middle" font-size="11">📖</text>
+      <text x="20" y="4" text-anchor="end" class="fa nav-text">تعریف</text>
+
+      <circle cx="250" cy="0" r="12" fill="#F1F5F9" />
+      <text x="250" y="4" text-anchor="middle" font-size="11">🎯</text>
+      <text x="270" y="4" text-anchor="end" class="fa nav-text">هدف</text>
+
+      <circle cx="500" cy="0" r="12" fill="#F1F5F9" />
+      <text x="500" y="4" text-anchor="middle" font-size="11">📜</text>
+      <text x="520" y="4" text-anchor="end" class="fa nav-text">قواعد</text>
+
+      <circle cx="750" cy="0" r="12" fill="#F1F5F9" />
+      <text x="750" y="4" text-anchor="middle" font-size="11">✅</text>
+      <text x="770" y="4" text-anchor="end" class="fa nav-text">شاخص موفقیت یا شکست</text>
+
+      <circle cx="1080" cy="0" r="12" fill="#F1F5F9" />
+      <text x="1080" y="4" text-anchor="middle" font-size="11">🪤</text>
+      <text x="1100" y="4" text-anchor="end" class="fa nav-text">تله رایج</text>
+
+      <circle cx="1340" cy="0" r="12" fill="#F1F5F9" />
+      <text x="1340" y="4" text-anchor="middle" font-size="11">🧭</text>
+      <text x="1360" y="4" text-anchor="end" class="fa nav-text">مثال تاریخی / کاربردی</text>
+    </g>
+  </g>
+
+  <text x="1100" y="1540" text-anchor="middle" class="fa" font-size="15" font-weight="700" fill="#64748B">
+    در اسلاید بعدی: خانواده مراقبتی-وجودی و حالت‌های فرا-ارتباطی
+  </text>
+  <text x="1100" y="1565" text-anchor="middle" class="en" font-size="12" fill="#94A3B8" font-style="italic">
+    Next: Caring-Existential Profiles and Meta-Communicative Modes
+  </text>
+
+  <line x1="120" y1="1635" x2="2080" y2="1635" stroke="#E2E8F0" stroke-width="1" />
+</svg>

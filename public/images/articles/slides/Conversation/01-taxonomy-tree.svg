@@ -1,0 +1,613 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 1700" width="2200" height="1700">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap');
+
+      .fa {
+        font-family: "Vazirmatn", "Tahoma", sans-serif;
+        direction: rtl;
+        unicode-bidi: plaintext;
+      }
+
+      .en {
+        font-family: "Inter", "Segoe UI", sans-serif;
+        direction: ltr;
+        unicode-bidi: plaintext;
+      }
+
+      .title-fa {
+        font-size: 46px;
+        font-weight: 800;
+        fill: #172033;
+      }
+
+      .subtitle-en {
+        font-size: 19px;
+        font-weight: 500;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .small-muted {
+        font-size: 13px;
+        fill: #94A3B8;
+      }
+
+      .family-title-fa {
+        font-size: 24px;
+        font-weight: 800;
+      }
+
+      .family-sub-en {
+        font-size: 13px;
+        font-weight: 500;
+        font-style: italic;
+      }
+
+      .family-tag {
+        font-size: 12px;
+        font-weight: 700;
+        fill: #FFFFFF;
+      }
+
+      .type-fa {
+        font-size: 15px;
+        font-weight: 700;
+        fill: #1E293B;
+      }
+
+      .type-en {
+        font-size: 11px;
+        fill: #64748B;
+        font-style: italic;
+      }
+
+      .subtype-fa {
+        font-size: 12px;
+        fill: #475569;
+        font-weight: 500;
+      }
+
+      .core-fa {
+        font-size: 30px;
+        font-weight: 800;
+        fill: #1E1B4B;
+      }
+
+      .core-en {
+        font-size: 15px;
+        font-weight: 600;
+        fill: #4338CA;
+        font-style: italic;
+      }
+
+      .legend-title {
+        font-size: 14px;
+        font-weight: 700;
+        fill: #334155;
+      }
+
+      .legend-text {
+        font-size: 12px;
+        fill: #475569;
+      }
+    </style>
+
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBFCFF" />
+      <stop offset="100%" stop-color="#EEF3F8" />
+    </linearGradient>
+    <radialGradient id="coreGrad" cx="50%" cy="42%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#DDE6FF" />
+    </radialGradient>
+
+    <linearGradient id="famRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FECACA" />
+      <stop offset="100%" stop-color="#F87171" />
+    </linearGradient>
+    <linearGradient id="famOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FED7AA" />
+      <stop offset="100%" stop-color="#FB923C" />
+    </linearGradient>
+    <linearGradient id="famYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="100%" stop-color="#FACC15" />
+    </linearGradient>
+    <linearGradient id="famGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BBF7D0" />
+      <stop offset="100%" stop-color="#4ADE80" />
+    </linearGradient>
+    <linearGradient id="famBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BAE6FD" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <linearGradient id="cardRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FEF2F2" />
+    </linearGradient>
+    <linearGradient id="cardOrange" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FFF7ED" />
+    </linearGradient>
+    <linearGradient id="cardYellow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FEFCE8" />
+    </linearGradient>
+    <linearGradient id="cardGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F0FDF4" />
+    </linearGradient>
+    <linearGradient id="cardBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F0F9FF" />
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.10" />
+    </filter>
+    <filter id="cardShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0F172A" flood-opacity="0.08" />
+    </filter>
+    <filter id="coreShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <rect width="2200" height="1700" fill="url(#bgGrad)" />
+  <circle cx="200" cy="200" r="170" fill="#FEE2E2" opacity="0.32" />
+  <circle cx="2000" cy="280" r="190" fill="#DBEAFE" opacity="0.30" />
+  <circle cx="2030" cy="1500" r="200" fill="#DCFCE7" opacity="0.28" />
+  <circle cx="180" cy="1500" r="180" fill="#FEF3C7" opacity="0.28" />
+
+  <!-- HEADER -->
+  <text x="1100" y="70" text-anchor="middle" class="fa title-fa">درخت گونه‌شناسی گفتگو</text>
+  <text x="1100" y="105" text-anchor="middle" class="en subtitle-en">
+    Taxonomy of Speech &amp; Dialogue · Typologie des Gesprächs · Typologie du discours
+  </text>
+  <text x="1100" y="130" text-anchor="middle" class="en small-muted">
+    Card 01 · Five Families · Forty+ Genres · v3 (Quincunx Layout)
+  </text>
+
+  <!-- Spectrum bar -->
+  <g transform="translate(500,160)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="1200" height="38" rx="19" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="6" y="6" width="237" height="26" rx="13" fill="url(#famRed)" />
+    <rect x="245" y="6" width="237" height="26" rx="13" fill="url(#famOrange)" />
+    <rect x="484" y="6" width="237" height="26" rx="13" fill="url(#famYellow)" />
+    <rect x="723" y="6" width="237" height="26" rx="13" fill="url(#famGreen)" />
+    <rect x="962" y="6" width="232" height="26" rx="13" fill="url(#famBlue)" />
+    <text x="124" y="24" text-anchor="middle" class="fa family-tag">تقابل</text>
+    <text x="363" y="24" text-anchor="middle" class="fa family-tag">رقابت</text>
+    <text x="602" y="24" text-anchor="middle" class="fa family-tag" fill="#78350F">تبادل</text>
+    <text x="841" y="24" text-anchor="middle" class="fa family-tag">همکاری</text>
+    <text x="1078" y="24" text-anchor="middle" class="fa family-tag">مراقبت</text>
+  </g>
+  <text x="500" y="222" text-anchor="middle" class="en small-muted">← Antagonistic</text>
+  <text x="1700" y="222" text-anchor="middle" class="en small-muted">Caring →</text>
+
+  <!-- ============================================================
+       LAYOUT (Quincunx — 5 dots)
+       
+       Family 1 (Red, top-left)         Family 2 (Orange, top-right)
+       at (130, 280)                    at (1530, 280)
+       
+       Family 5 (Blue, mid-left)   CORE   Family 3 (Yellow, mid-right)
+       at (130, 760)            (1100,830)  at (1530, 760)
+       
+                    Family 4 (Green, bottom-center)
+                    at (830, 1240)
+       
+       Each family group: 540 wide × 460 tall
+       Header: 540×80
+       2x3 cards grid (2 cols × 3 rows): each card 250×85, gap 20
+       ============================================================ -->
+
+  <!-- CORE -->
+  <g transform="translate(1100,830)" filter="url(#coreShadow)">
+    <circle cx="0" cy="0" r="125" fill="url(#coreGrad)" stroke="#6366F1" stroke-width="2.5" />
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#A5B4FC" stroke-width="1" stroke-dasharray="3 5" opacity="0.7" />
+    <text x="0" y="-18" text-anchor="middle" class="en core-en">SPEECH</text>
+    <text x="0" y="22" text-anchor="middle" class="fa core-fa">سخن گفتن</text>
+    <text x="0" y="52" text-anchor="middle" class="en core-en">Sprache · Parole</text>
+  </g>
+
+  <!-- CONNECTORS to core -->
+  <g stroke-width="2.5" fill="none" opacity="0.4">
+    <!-- to Red (top-left) -->
+    <path d="M 980 760 C 800 600, 600 460, 400 380" stroke="#F87171" />
+    <!-- to Orange (top-right) -->
+    <path d="M 1220 760 C 1400 600, 1600 460, 1800 380" stroke="#FB923C" />
+    <!-- to Yellow (mid-right) -->
+    <path d="M 1225 830 C 1400 830, 1500 830, 1660 870" stroke="#FACC15" />
+    <!-- to Blue (mid-left) -->
+    <path d="M 975 830 C 800 830, 700 830, 540 870" stroke="#38BDF8" />
+    <!-- to Green (bottom) -->
+    <path d="M 1100 955 C 1100 1050, 1100 1130, 1100 1230" stroke="#4ADE80" />
+  </g>
+
+  <!-- ============================================================
+       FAMILY 1: ANTAGONISTIC (RED) — Top Left
+       Position: (130, 280), size: 540×500
+       ============================================================ -->
+  <g transform="translate(130,280)">
+    <!-- Header -->
+    <g filter="url(#softShadow)">
+      <rect x="0" y="0" width="540" height="80" rx="20" fill="url(#famRed)" />
+      <circle cx="490" cy="40" r="24" fill="#FFFFFF" opacity="0.95" />
+      <text x="490" y="50" text-anchor="middle" font-size="24">⚔️</text>
+      <text x="455" y="36" text-anchor="start" class="fa family-title-fa" fill="#FFFFFF">خانواده تقابلی</text>
+      <text x="455" y="60" text-anchor="end" class="en family-sub-en" fill="#FEE2E2">Antagonistic · streitend</text>
+    </g>
+
+    <!-- Row 1 -->
+    <g transform="translate(0,100)">
+      <g filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardRed)" stroke="#FCA5A5" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#EF4444" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">جدل و ستیزه</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Quarrel</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">دعوا، فحاشی، تخریب</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">حمله شخصی، تحقیر</text>
+      </g>
+      <g transform="translate(290,0)" filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardRed)" stroke="#FCA5A5" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#EF4444" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">جنگ کلامی</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Verbal Combat</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">طعنه، ریشخند، Roast</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">Trash Talk</text>
+      </g>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0,200)">
+      <g filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardRed)" stroke="#FCA5A5" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#EF4444" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">بازجویی و استنطاق</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Interrogation</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">کراس‌اگزمینیشن</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">استیضاح، اعتراف‌گیری</text>
+      </g>
+      <g transform="translate(290,0)" filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardRed)" stroke="#FCA5A5" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#EF4444" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">تهدید و باج‌گیری</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Coercion · Threat</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">اولتیماتوم</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">دیپلماسی توپخانه</text>
+      </g>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(0,300)">
+      <g filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardRed)" stroke="#FCA5A5" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#EF4444" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">پلمیک و هجویه</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Polemic · Diatribe</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">حمله ایدئولوژیک</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">رد متخاصمانه</text>
+      </g>
+      <g transform="translate(290,0)" filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardRed)" stroke="#FCA5A5" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#EF4444" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">تبلیغات سیاه</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Black Propaganda</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">شایعه‌سازی</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">گازلایتینگ</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============================================================
+       FAMILY 2: COMPETITIVE-PERSUASIVE (ORANGE) — Top Right
+       Position: (1530, 280)
+       ============================================================ -->
+  <g transform="translate(1530,280)">
+    <g filter="url(#softShadow)">
+      <rect x="0" y="0" width="540" height="80" rx="20" fill="url(#famOrange)" />
+      <circle cx="490" cy="40" r="24" fill="#FFFFFF" opacity="0.95" />
+      <text x="490" y="50" text-anchor="middle" font-size="24">🎯</text>
+      <text x="455" y="36" text-anchor="start" class="fa family-title-fa" fill="#FFFFFF">خانواده رقابتی-اقناعی</text>
+      <text x="455" y="60" text-anchor="end" class="en family-sub-en" fill="#FFEDD5">Competitive · Persuasive</text>
+    </g>
+
+    <g transform="translate(0,100)">
+      <g filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardOrange)" stroke="#FDBA74" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#F97316" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">مناظره</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Debate · Disputatio</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">پارلمانی، آکسفورد</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">لینکلن-داگلاس</text>
+      </g>
+      <g transform="translate(290,0)" filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardOrange)" stroke="#FDBA74" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#F97316" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">مباحثه</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Discussion</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">استدلال، نقد متقابل</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">بحث آکادمیک</text>
+      </g>
+    </g>
+
+    <g transform="translate(0,200)">
+      <g filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardOrange)" stroke="#FDBA74" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#F97316" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">سخنرانی اقناعی</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Rhetoric · Oratory</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">خطابه، نطق سیاسی</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">TED Talk، سخنرانی</text>
+      </g>
+      <g transform="translate(290,0)" filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardOrange)" stroke="#FDBA74" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#F97316" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">دفاعیه</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Apologia · Defense</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">دفاع حقوقی</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">دفاع از تز، Pitch</text>
+      </g>
+    </g>
+
+    <g transform="translate(0,300)">
+      <g filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardOrange)" stroke="#FDBA74" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#F97316" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">محاجّه</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Disputation · Eristic</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">جدال احسن</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">مناظره کلامی</text>
+      </g>
+      <g transform="translate(290,0)" filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardOrange)" stroke="#FDBA74" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#F97316" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">بازاریابی و فروش</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Sales Pitch</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">Cold Call، تبلیغ</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">Elevator Pitch</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============================================================
+       FAMILY 5: CARING-EXISTENTIAL (BLUE) — Mid Left
+       Position: (130, 760)
+       ============================================================ -->
+  <g transform="translate(130,760)">
+    <g filter="url(#softShadow)">
+      <rect x="0" y="0" width="540" height="80" rx="20" fill="url(#famBlue)" />
+      <circle cx="490" cy="40" r="24" fill="#FFFFFF" opacity="0.95" />
+      <text x="490" y="50" text-anchor="middle" font-size="24">💙</text>
+      <text x="455" y="36" text-anchor="start" class="fa family-title-fa" fill="#FFFFFF">خانواده مراقبتی-وجودی</text>
+      <text x="455" y="60" text-anchor="end" class="en family-sub-en" fill="#E0F2FE">Caring · Existential</text>
+    </g>
+
+    <g transform="translate(0,100)">
+      <g filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardBlue)" stroke="#7DD3FC" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#0EA5E9" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">درد دل و همدلی</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Heart-Talk · Empathy</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">گوش دادن فعال</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">حضور همدلانه</text>
+      </g>
+      <g transform="translate(290,0)" filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardBlue)" stroke="#7DD3FC" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#0EA5E9" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">گفتگوی درمانی</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Therapeutic Dialogue</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">روان‌درمانی</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">مشاوره</text>
+      </g>
+    </g>
+
+    <g transform="translate(0,200)">
+      <g filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardBlue)" stroke="#7DD3FC" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#0EA5E9" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">گفت‌وگوی من-تو</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">I-Thou · Ich-Du</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">حضور وجودی (بوبر)</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">گفت‌وگوی عمیق</text>
+      </g>
+      <g transform="translate(290,0)" filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardBlue)" stroke="#7DD3FC" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#0EA5E9" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">اعتراف و رازگویی</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Confession</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">اعتراف کلیسایی</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">خودافشایی</text>
+      </g>
+    </g>
+
+    <g transform="translate(0,300)">
+      <g filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardBlue)" stroke="#7DD3FC" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#0EA5E9" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">مناجات و دعا</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Prayer · Invocation</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">نیایش، ذکر</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">گفتگوی معنوی</text>
+      </g>
+      <g transform="translate(290,0)" filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardBlue)" stroke="#7DD3FC" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#0EA5E9" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">گپ دوستانه</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Small Talk · Chit-chat</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">معاشرت، حال‌پرسی</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">پیوندسازی</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============================================================
+       FAMILY 3: TRANSACTIONAL (YELLOW) — Mid Right
+       Position: (1530, 760)
+       ============================================================ -->
+  <g transform="translate(1530,760)">
+    <g filter="url(#softShadow)">
+      <rect x="0" y="0" width="540" height="80" rx="20" fill="url(#famYellow)" />
+      <circle cx="490" cy="40" r="24" fill="#FFFFFF" opacity="0.95" />
+      <text x="490" y="50" text-anchor="middle" font-size="24">🤝</text>
+      <text x="455" y="36" text-anchor="start" class="fa family-title-fa" fill="#78350F">خانواده تبادلی-معاملاتی</text>
+      <text x="455" y="60" text-anchor="end" class="en family-sub-en" fill="#92400E">Transactional · Negotiation</text>
+    </g>
+
+    <g transform="translate(0,100)">
+      <g filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardYellow)" stroke="#FCD34D" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#EAB308" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">مذاکره</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Negotiation</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">توزیعی، تلفیقی</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">BATNA، Win-Win</text>
+      </g>
+      <g transform="translate(290,0)" filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardYellow)" stroke="#FCD34D" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#EAB308" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">چانه‌زنی</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Bargaining · Haggling</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">بازاری، قیمتی</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">Trade-off</text>
+      </g>
+    </g>
+
+    <g transform="translate(0,200)">
+      <g filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardYellow)" stroke="#FCD34D" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#EAB308" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">میانجی‌گری</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Mediation</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">حل اختلاف</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">داوری</text>
+      </g>
+      <g transform="translate(290,0)" filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardYellow)" stroke="#FCD34D" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#EAB308" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">مصاحبه</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Interview · Entretien</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">شغلی، خبری</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">پژوهشی، بالینی</text>
+      </g>
+    </g>
+
+    <g transform="translate(0,300)">
+      <g filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardYellow)" stroke="#FCD34D" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#EAB308" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">دیپلماسی</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Diplomacy</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">رسمی، Track II</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">پشت‌پرده</text>
+      </g>
+      <g transform="translate(290,0)" filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardYellow)" stroke="#FCD34D" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#EAB308" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">جلسه کاری</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Business Meeting</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">Stand-up، Briefing</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">Status Update</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============================================================
+       FAMILY 4: COLLABORATIVE (GREEN) — Bottom Center
+       Position: (830, 1240)
+       ============================================================ -->
+  <g transform="translate(830,1180)">
+    <g filter="url(#softShadow)">
+      <rect x="0" y="0" width="540" height="80" rx="20" fill="url(#famGreen)" />
+      <circle cx="490" cy="40" r="24" fill="#FFFFFF" opacity="0.95" />
+      <text x="490" y="50" text-anchor="middle" font-size="24">🌱</text>
+      <text x="455" y="36" text-anchor="start" class="fa family-title-fa" fill="#FFFFFF">خانواده مشارکتی-اکتشافی</text>
+      <text x="455" y="60" text-anchor="end" class="en family-sub-en" fill="#DCFCE7">Collaborative · Exploratory</text>
+    </g>
+
+    <g transform="translate(0,100)">
+      <g filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardGreen)" stroke="#86EFAC" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#22C55E" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">گفت‌وگوی سقراطی</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Socratic · Maieutic</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">پرسش‌گری، مامایی فکر</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">Elenchus</text>
+      </g>
+      <g transform="translate(290,0)" filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardGreen)" stroke="#86EFAC" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#22C55E" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">گفت‌وگوی بوهمی</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Bohmian Dialogue</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">تعلیق پیش‌فرض</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">معنای مشترک</text>
+      </g>
+    </g>
+
+    <g transform="translate(0,200)">
+      <g filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardGreen)" stroke="#86EFAC" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#22C55E" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">طوفان فکری</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Brainstorming</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">واگرا، همگرا</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">Design Thinking</text>
+      </g>
+      <g transform="translate(290,0)" filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardGreen)" stroke="#86EFAC" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#22C55E" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">هم‌اندیشی</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Deliberation · Council</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">شورا، پنل</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">World Café</text>
+      </g>
+    </g>
+
+    <g transform="translate(0,300)">
+      <g filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardGreen)" stroke="#86EFAC" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#22C55E" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">داوری همتا</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Peer Review · Critique</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">بازخورد سازنده</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">حلقه نقد</text>
+      </g>
+      <g transform="translate(290,0)" filter="url(#cardShadow)">
+        <rect x="0" y="0" width="250" height="85" rx="14" fill="url(#cardGreen)" stroke="#86EFAC" stroke-width="1.3" />
+        <rect x="245" y="0" width="5" height="85" rx="2" fill="#22C55E" />
+        <text x="232" y="24" text-anchor="start" class="fa type-fa">یاددهی-یادگیری</text>
+        <text x="14" y="24" text-anchor="start-" class="en type-en">Teaching · Tutoring</text>
+        <text x="232" y="48" text-anchor="start" class="fa subtype-fa">سمینار، کلاس</text>
+        <text x="232" y="68" text-anchor="start" class="fa subtype-fa">Mentoring، Coaching</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- META-MODES (under core) -->
+  <g transform="translate(940,990)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="320" height="62" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"
+      stroke-dasharray="4 4" />
+    <text x="305" y="22" text-anchor="start" class="fa" font-size="13" font-weight="800" fill="#475569">حالت‌های
+      فرا-ارتباطی</text>
+    <text x="15" y="22" text-anchor="start-" class="en" font-size="10" fill="#64748B"
+      font-style="italic">Meta-modes</text>
+    <text x="305" y="44" text-anchor="start" class="fa" font-size="11" fill="#64748B">سکوت · فرا-گفتگو · مونولوگ ·
+      تک‌گویی درونی</text>
+    <text x="15" y="58" text-anchor="start-" class="en" font-size="9.5" fill="#94A3B8" font-style="italic">cut across
+      all five families</text>
+  </g>
+
+  <!-- LEGEND -->
+  <g transform="translate(800,1600)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="600" height="60" rx="18" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="585" y="25" text-anchor="start" class="fa legend-title">راهنمای خواندن نمودار</text>
+    <text x="15" y="25" text-anchor="start-" class="en legend-text" font-style="italic">Reading guide</text>
+    <text x="585" y="48" text-anchor="start" class="fa legend-text">پنج خانواده در طیف نیت · هر خانواده شامل ۶ گونه · هر
+      گونه با ۲ زیرگونه</text>
+  </g>
+
+  <line x1="120" y1="1695" x2="2080" y2="1695" stroke="#E2E8F0" stroke-width="1" />
+</svg>

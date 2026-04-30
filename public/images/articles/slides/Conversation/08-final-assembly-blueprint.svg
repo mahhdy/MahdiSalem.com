@@ -1,0 +1,349 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2200 1700" width="2200" height="1700">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap');
+      .fa { font-family: "Vazirmatn", "Tahoma", sans-serif; direction: rtl; unicode-bidi: plaintext; }
+      .en { font-family: "Inter", "Segoe UI", sans-serif; direction: ltr; unicode-bidi: plaintext; }
+
+      .title-fa { font-size: 46px; font-weight: 800; fill: #172033; }
+      .subtitle-en { font-size: 19px; font-weight: 500; fill: #64748B; font-style: italic; }
+      .small-muted { font-size: 13px; fill: #94A3B8; }
+
+      .section-fa { font-size: 25px; font-weight: 800; fill: #1E293B; }
+      .section-en { font-size: 13px; fill: #64748B; font-style: italic; }
+
+      .block-title { font-size: 18.5px; font-weight: 800; fill: #1E293B; }
+      .block-en { font-size: 10.5px; fill: #64748B; font-style: italic; }
+      .block-body { font-size: 12.2px; font-weight: 600; fill: #334155; }
+      .block-note { font-size: 11.5px; font-weight: 800; }
+
+      .check-title { font-size: 14px; font-weight: 800; fill: #1E293B; }
+      .check-text { font-size: 11.5px; font-weight: 600; fill: #475569; }
+
+      .map-label { font-size: 13px; font-weight: 800; fill: #1E293B; }
+      .map-small { font-size: 10.5px; fill: #64748B; font-style: italic; }
+      .export-title { font-size: 16px; font-weight: 800; fill: #1E293B; }
+      .export-body { font-size: 12.2px; font-weight: 600; fill: #475569; }
+    </style>
+
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBFCFF"/>
+      <stop offset="50%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF3F8"/>
+    </linearGradient>
+
+    <linearGradient id="assemblyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EEF2FF"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#ECFDF5"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+
+    <filter id="cardShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#0F172A" flood-opacity="0.095"/>
+    </filter>
+  </defs>
+
+  <rect width="2200" height="1700" fill="url(#bgGrad)"/>
+  <circle cx="180" cy="215" r="180" fill="#EDE9FE" opacity="0.30"/>
+  <circle cx="2020" cy="260" r="195" fill="#DCFCE7" opacity="0.24"/>
+  <circle cx="2040" cy="1500" r="225" fill="#DBEAFE" opacity="0.24"/>
+  <circle cx="170" cy="1500" r="190" fill="#FEF3C7" opacity="0.27"/>
+
+  <text x="1100" y="70" text-anchor="middle" class="fa title-fa">نقشه مونتاژ نسخه نهایی اینفوگرافیک</text>
+  <text x="1100" y="105" text-anchor="middle" class="en subtitle-en">
+    Final Assembly Blueprint · From Slide System to Master Infographic
+  </text>
+  <text x="1100" y="130" text-anchor="middle" class="en small-muted">
+    Card 08 · Layout Strategy, Visual Hierarchy, Export Checklist
+  </text>
+
+  <!-- Intro band -->
+  <g transform="translate(180,170)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="1840" height="104" rx="28" fill="url(#assemblyGrad)" stroke="#C4B5FD" stroke-width="1.3"/>
+    <circle cx="54" cy="52" r="32" fill="#FFFFFF" opacity="0.96"/>
+    <text x="54" y="63" text-anchor="middle" font-size="30">🧩</text>
+
+    <text x="1810" y="39" text-anchor="start" class="fa section-fa">هدف نهایی: تبدیل مجموعه اسلایدها به یک اینفوگرافیک مادر، خوانا و چندلایه</text>
+    <text x="1810" y="70" text-anchor="start" class="fa" font-size="14" font-weight="600" fill="#475569">
+      هر اسلاید یک ماژول است؛ نسخه نهایی باید این ماژول‌ها را با سلسله‌مراتب، رنگ، فاصله، و مسیر خواندن روشن ترکیب کند.
+    </text>
+
+    <text x="95" y="55" text-anchor="start" class="en section-en">
+      Each slide becomes a module; the final infographic needs hierarchy, rhythm, spacing, and a clear reading path.
+    </text>
+  </g>
+
+  <text x="1100" y="315" text-anchor="middle" class="fa section-fa">ماژول‌های اصلی نسخه نهایی</text>
+  <text x="1100" y="338" text-anchor="middle" class="en section-en">Primary modules to be assembled into the master map</text>
+
+  <g transform="translate(120,335)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="450" height="190" rx="24" fill="#FFFFFF" stroke="#2563EB" stroke-width="1.5"/>
+
+    <circle cx="46" cy="46" r="29" fill="#2563EB" opacity="0.16"/>
+    <text x="46" y="57" text-anchor="middle" font-size="27">🧠</text>
+
+    <text x="424" y="35" text-anchor="start" class="fa block-title">هسته مفهومی</text>
+    <text x="424" y="55" text-anchor="end" class="en block-en">Conceptual Core</text>
+
+    <line x1="26" y1="74" x2="424" y2="74" stroke="#E2E8F0"/>
+
+    <text x="424" y="104" text-anchor="start" class="fa block-body">تعریف گفتگو، گفتار، سخن، مکالمه و نسبت آن‌ها با معنا، رابطه و کنش</text>
+
+    <rect x="26" y="142" width="398" height="30" rx="15" fill="#2563EB" opacity="0.10"/>
+    <text x="225" y="162" text-anchor="middle" class="fa block-note" fill="#2563EB">مرکز نقشه</text>
+  </g>  <g transform="translate(620,335)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="450" height="190" rx="24" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.5"/>
+
+    <circle cx="46" cy="46" r="29" fill="#7C3AED" opacity="0.16"/>
+    <text x="46" y="57" text-anchor="middle" font-size="27">🌳</text>
+
+    <text x="424" y="35" text-anchor="start" class="fa block-title">درخت گونه‌شناسی</text>
+    <text x="424" y="55" text-anchor="end" class="en block-en">Dialogue Taxonomy</text>
+
+    <line x1="26" y1="74" x2="424" y2="74" stroke="#E2E8F0"/>
+
+    <text x="424" y="104" text-anchor="start" class="fa block-body">تقسیم گفتگوها بر اساس تعداد طرفین، نیت، رسمیت، قدرت، رسانه و عمق</text>
+
+    <rect x="26" y="142" width="398" height="30" rx="15" fill="#7C3AED" opacity="0.10"/>
+    <text x="225" y="162" text-anchor="middle" class="fa block-note" fill="#7C3AED">حلقه اول و دوم</text>
+  </g>  <g transform="translate(1120,335)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="450" height="190" rx="24" fill="#FFFFFF" stroke="#0F766E" stroke-width="1.5"/>
+
+    <circle cx="46" cy="46" r="29" fill="#0F766E" opacity="0.16"/>
+    <text x="46" y="57" text-anchor="middle" font-size="27">📊</text>
+
+    <text x="424" y="35" text-anchor="start" class="fa block-title">ماتریس مقایسه‌ای</text>
+    <text x="424" y="55" text-anchor="end" class="en block-en">Comparative Matrix</text>
+
+    <line x1="26" y1="74" x2="424" y2="74" stroke="#E2E8F0"/>
+
+    <text x="424" y="104" text-anchor="start" class="fa block-body">جدول گونه‌ها در برابر ابعاد شش‌گانه و شاخص‌های تشخیص کاربرد</text>
+
+    <rect x="26" y="142" width="398" height="30" rx="15" fill="#0F766E" opacity="0.10"/>
+    <text x="225" y="162" text-anchor="middle" class="fa block-note" fill="#0F766E">پنل تحلیلی</text>
+  </g>  <g transform="translate(1620,335)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="450" height="190" rx="24" fill="#FFFFFF" stroke="#EA580C" stroke-width="1.5"/>
+
+    <circle cx="46" cy="46" r="29" fill="#EA580C" opacity="0.16"/>
+    <text x="46" y="57" text-anchor="middle" font-size="27">🧩</text>
+
+    <text x="424" y="35" text-anchor="start" class="fa block-title">کارت‌های پروفایل</text>
+    <text x="424" y="55" text-anchor="end" class="en block-en">Profile Cards</text>
+
+    <line x1="26" y1="74" x2="424" y2="74" stroke="#E2E8F0"/>
+
+    <text x="424" y="104" text-anchor="start" class="fa block-body">برای هر گونه: تعریف، هدف، قواعد، مثال، KPI، آسیب و مهارت لازم</text>
+
+    <rect x="26" y="142" width="398" height="30" rx="15" fill="#EA580C" opacity="0.10"/>
+    <text x="225" y="162" text-anchor="middle" class="fa block-note" fill="#EA580C">واحدهای آموزشی</text>
+  </g>  <g transform="translate(120,555)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="450" height="190" rx="24" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.5"/>
+
+    <circle cx="46" cy="46" r="29" fill="#EF4444" opacity="0.16"/>
+    <text x="46" y="57" text-anchor="middle" font-size="27">⚠️</text>
+
+    <text x="424" y="35" text-anchor="start" class="fa block-title">آسیب‌شناسی</text>
+    <text x="424" y="55" text-anchor="end" class="en block-en">Pathology Map</text>
+
+    <line x1="26" y1="74" x2="424" y2="74" stroke="#E2E8F0"/>
+
+    <text x="424" y="104" text-anchor="start" class="fa block-body">نشان می‌دهد هر قالب سالم گفتگو چگونه به صورت ناسالم خود منحرف می‌شود</text>
+
+    <rect x="26" y="142" width="398" height="30" rx="15" fill="#EF4444" opacity="0.10"/>
+    <text x="225" y="162" text-anchor="middle" class="fa block-note" fill="#EF4444">نقشه هشدار</text>
+  </g>  <g transform="translate(620,555)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="450" height="190" rx="24" fill="#FFFFFF" stroke="#14B8A6" stroke-width="1.5"/>
+
+    <circle cx="46" cy="46" r="29" fill="#14B8A6" opacity="0.16"/>
+    <text x="46" y="57" text-anchor="middle" font-size="27">📚</text>
+
+    <text x="424" y="35" text-anchor="start" class="fa block-title">چارچوب نظری</text>
+    <text x="424" y="55" text-anchor="end" class="en block-en">Theory Layer</text>
+
+    <line x1="26" y1="74" x2="424" y2="74" stroke="#E2E8F0"/>
+
+    <text x="424" y="104" text-anchor="start" class="fa block-body">بوبر، هابرماس، بوهم، گرایس، آستین، سرل، روزنبرگ و گادامر</text>
+
+    <rect x="26" y="142" width="398" height="30" rx="15" fill="#14B8A6" opacity="0.10"/>
+    <text x="225" y="162" text-anchor="middle" class="fa block-note" fill="#14B8A6">لایه توضیحی</text>
+  </g>  <g transform="translate(1120,555)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="450" height="190" rx="24" fill="#FFFFFF" stroke="#16A34A" stroke-width="1.5"/>
+
+    <circle cx="46" cy="46" r="29" fill="#16A34A" opacity="0.16"/>
+    <text x="46" y="57" text-anchor="middle" font-size="27">🕌</text>
+
+    <text x="424" y="35" text-anchor="start" class="fa block-title">لایه فرهنگی</text>
+    <text x="424" y="55" text-anchor="end" class="en block-en">Cultural Layer</text>
+
+    <line x1="26" y1="74" x2="424" y2="74" stroke="#E2E8F0"/>
+
+    <text x="424" y="104" text-anchor="start" class="fa block-body">مناظره حوزوی، محاجّه، مباهله، مناجات، ذکر، مکاتبات و شطحیات</text>
+
+    <rect x="26" y="142" width="398" height="30" rx="15" fill="#16A34A" opacity="0.10"/>
+    <text x="225" y="162" text-anchor="middle" class="fa block-note" fill="#16A34A">حلقه زمینه‌ای</text>
+  </g>  <g transform="translate(1620,555)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="450" height="190" rx="24" fill="#FFFFFF" stroke="#DB2777" stroke-width="1.5"/>
+
+    <circle cx="46" cy="46" r="29" fill="#DB2777" opacity="0.16"/>
+    <text x="46" y="57" text-anchor="middle" font-size="27">🧭</text>
+
+    <text x="424" y="35" text-anchor="start" class="fa block-title">فلوچارت کاربردی</text>
+    <text x="424" y="55" text-anchor="end" class="en block-en">Decision Flow</text>
+
+    <line x1="26" y1="74" x2="424" y2="74" stroke="#E2E8F0"/>
+
+    <text x="424" y="104" text-anchor="start" class="fa block-body">کمک می‌کند برای هر موقعیت واقعی، قالب مناسب گفتگو انتخاب شود</text>
+
+    <rect x="26" y="142" width="398" height="30" rx="15" fill="#DB2777" opacity="0.10"/>
+    <text x="225" y="162" text-anchor="middle" class="fa block-note" fill="#DB2777">راهنمای عمل</text>
+  </g>
+
+  <!-- Master layout visualization -->
+  <g transform="translate(180,790)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="1840" height="365" rx="30" fill="#FFFFFF" stroke="#E2E8F0"/>
+
+    <text x="1810" y="42" text-anchor="start" class="fa section-fa">پیشنهاد چیدمان برای پوستر مادر</text>
+    <text x="30" y="42" text-anchor="start" class="en section-en">Suggested master poster layout</text>
+    <line x1="30" y1="62" x2="1810" y2="62" stroke="#E2E8F0"/>
+
+    <!-- Left side panels -->
+    <g transform="translate(70,95)">
+      <rect x="0" y="0" width="330" height="92" rx="20" fill="#EFF6FF" stroke="#BFDBFE"/>
+      <text x="305" y="32" text-anchor="start" class="fa map-label">پنل نظریه</text>
+      <text x="305" y="57" text-anchor="start" class="fa" font-size="11.5" font-weight="600" fill="#475569">بوبر، هابرماس، بوهم، گرایس</text>
+      <text x="24" y="58" text-anchor="start" class="en map-small">Theory</text>
+
+      <rect x="0" y="122" width="330" height="92" rx="20" fill="#F0FDF4" stroke="#BBF7D0"/>
+      <text x="305" y="154" text-anchor="start" class="fa map-label">پنل فرهنگی</text>
+      <text x="305" y="179" text-anchor="start" class="fa" font-size="11.5" font-weight="600" fill="#475569">ایرانی ـ اسلامی، عرفانی، آیینی</text>
+      <text x="24" y="180" text-anchor="start" class="en map-small">Culture</text>
+    </g>
+
+    <!-- Central radial map -->
+    <g transform="translate(920,205)">
+      <circle cx="0" cy="0" r="132" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+      <circle cx="0" cy="0" r="92" fill="#EEF2FF" stroke="#C4B5FD" stroke-width="2"/>
+      <circle cx="0" cy="0" r="52" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.5"/>
+
+      <text x="0" y="-8" text-anchor="middle" class="fa map-label">گفتگو</text>
+      <text x="0" y="14" text-anchor="middle" class="en map-small">Dialogue</text>
+
+      <text x="0" y="-112" text-anchor="middle" class="fa" font-size="11" font-weight="800" fill="#2563EB">رسانه</text>
+      <text x="118" y="-6" text-anchor="middle" class="fa" font-size="11" font-weight="800" fill="#16A34A">نیت</text>
+      <text x="0" y="122" text-anchor="middle" class="fa" font-size="11" font-weight="800" fill="#EA580C">رسمیت</text>
+      <text x="-118" y="-6" text-anchor="middle" class="fa" font-size="11" font-weight="800" fill="#DB2777">قدرت</text>
+
+      <line x1="-170" y1="0" x2="-135" y2="0" stroke="#CBD5E1" stroke-width="2"/>
+      <line x1="135" y1="0" x2="170" y2="0" stroke="#CBD5E1" stroke-width="2"/>
+      <line x1="0" y1="-170" x2="0" y2="-135" stroke="#CBD5E1" stroke-width="2"/>
+      <line x1="0" y1="135" x2="0" y2="170" stroke="#CBD5E1" stroke-width="2"/>
+    </g>
+
+    <!-- Right side panels -->
+    <g transform="translate(1440,95)">
+      <rect x="0" y="0" width="330" height="92" rx="20" fill="#FFF7ED" stroke="#FED7AA"/>
+      <text x="305" y="32" text-anchor="start" class="fa map-label">پنل آسیب‌ها</text>
+      <text x="305" y="57" text-anchor="start" class="fa" font-size="11.5" font-weight="600" fill="#475569">انحراف، مغالطه، ترمیم</text>
+      <text x="24" y="58" text-anchor="start" class="en map-small">Pathologies</text>
+
+      <rect x="0" y="122" width="330" height="92" rx="20" fill="#FDF2F8" stroke="#F9A8D4"/>
+      <text x="305" y="154" text-anchor="start" class="fa map-label">راهنمای انتخاب</text>
+      <text x="305" y="179" text-anchor="start" class="fa" font-size="11.5" font-weight="600" fill="#475569">فلوچارت کاربردی موقعیت‌ها</text>
+      <text x="24" y="180" text-anchor="start" class="en map-small">Decision Flow</text>
+    </g>
+
+    <!-- Bottom strip -->
+    <g transform="translate(515,305)">
+      <rect x="0" y="0" width="810" height="40" rx="20" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <text x="405" y="26" text-anchor="middle" class="fa" font-size="12.5" font-weight="800" fill="#475569">
+        مسیر خواندن پیشنهادی: هسته ← گونه‌شناسی ← مقایسه ← پروفایل‌ها ← آسیب‌شناسی ← کاربرد
+      </text>
+    </g>
+  </g>
+
+  <!-- Checklist -->
+  <g transform="translate(140,1195)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="1920" height="310" rx="30" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <text x="1890" y="42" text-anchor="start" class="fa section-fa">چک‌لیست طراحی و خروجی</text>
+    <text x="30" y="42" text-anchor="start" class="en section-en">Design and export checklist</text>
+    <line x1="30" y1="62" x2="1890" y2="62" stroke="#E2E8F0"/>
+
+  <g transform="translate(90,95)">
+    <rect x="0" y="0" width="430" height="74" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="34" cy="37" r="18" fill="#2563EB" opacity="0.18"/>
+    <text x="34" y="43" text-anchor="middle" class="en" font-size="13" font-weight="800" fill="#2563EB">01</text>
+
+    <text x="405" y="28" text-anchor="start" class="fa check-title">یکدستی تایپوگرافی</text>
+    <text x="405" y="52" text-anchor="start" class="fa check-text">Vazirmatn برای فارسی، Inter برای انگلیسی</text>
+  </g>  <g transform="translate(545,95)">
+    <rect x="0" y="0" width="430" height="74" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="34" cy="37" r="18" fill="#7C3AED" opacity="0.18"/>
+    <text x="34" y="43" text-anchor="middle" class="en" font-size="13" font-weight="800" fill="#7C3AED">02</text>
+
+    <text x="405" y="28" text-anchor="start" class="fa check-title">راهنمای رنگ</text>
+    <text x="405" y="52" text-anchor="start" class="fa check-text">هر رنگ باید معنای ثابت و تکرارشونده داشته باشد</text>
+  </g>  <g transform="translate(1000,95)">
+    <rect x="0" y="0" width="430" height="74" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="34" cy="37" r="18" fill="#0F766E" opacity="0.18"/>
+    <text x="34" y="43" text-anchor="middle" class="en" font-size="13" font-weight="800" fill="#0F766E">03</text>
+
+    <text x="405" y="28" text-anchor="start" class="fa check-title">سلسله‌مراتب دیداری</text>
+    <text x="405" y="52" text-anchor="start" class="fa check-text">هسته، حلقه، کارت، حاشیه و یادداشت تفکیک شوند</text>
+  </g>  <g transform="translate(1455,95)">
+    <rect x="0" y="0" width="430" height="74" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="34" cy="37" r="18" fill="#EA580C" opacity="0.18"/>
+    <text x="34" y="43" text-anchor="middle" class="en" font-size="13" font-weight="800" fill="#EA580C">04</text>
+
+    <text x="405" y="28" text-anchor="start" class="fa check-title">کاهش تراکم متن</text>
+    <text x="405" y="52" text-anchor="start" class="fa check-text">هر بلوک حداکثر یک ایده اصلی منتقل کند</text>
+  </g>  <g transform="translate(90,190)">
+    <rect x="0" y="0" width="430" height="74" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="34" cy="37" r="18" fill="#EF4444" opacity="0.18"/>
+    <text x="34" y="43" text-anchor="middle" class="en" font-size="13" font-weight="800" fill="#EF4444">05</text>
+
+    <text x="405" y="28" text-anchor="start" class="fa check-title">آسیب و ترمیم</text>
+    <text x="405" y="52" text-anchor="start" class="fa check-text">کنار هر گونه، نسخه ناسالم و راه ترمیم بیاید</text>
+  </g>  <g transform="translate(545,190)">
+    <rect x="0" y="0" width="430" height="74" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="34" cy="37" r="18" fill="#14B8A6" opacity="0.18"/>
+    <text x="34" y="43" text-anchor="middle" class="en" font-size="13" font-weight="800" fill="#14B8A6">06</text>
+
+    <text x="405" y="28" text-anchor="start" class="fa check-title">قابلیت چاپ</text>
+    <text x="405" y="52" text-anchor="start" class="fa check-text">نسخه A1 یا A0 با حاشیه امن خروجی گرفته شود</text>
+  </g>  <g transform="translate(1000,190)">
+    <rect x="0" y="0" width="430" height="74" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="34" cy="37" r="18" fill="#16A34A" opacity="0.18"/>
+    <text x="34" y="43" text-anchor="middle" class="en" font-size="13" font-weight="800" fill="#16A34A">07</text>
+
+    <text x="405" y="28" text-anchor="start" class="fa check-title">نسخه دیجیتال</text>
+    <text x="405" y="52" text-anchor="start" class="fa check-text">برای اسکرول عمودی، بخش‌ها جدا و خوانا شوند</text>
+  </g>  <g transform="translate(1455,190)">
+    <rect x="0" y="0" width="430" height="74" rx="18" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="34" cy="37" r="18" fill="#DB2777" opacity="0.18"/>
+    <text x="34" y="43" text-anchor="middle" class="en" font-size="13" font-weight="800" fill="#DB2777">08</text>
+
+    <text x="405" y="28" text-anchor="start" class="fa check-title">کاربردپذیری</text>
+    <text x="405" y="52" text-anchor="start" class="fa check-text">کاربر باید بداند کدام گفتگو را کجا به‌کار ببرد</text>
+  </g>
+  </g>
+
+  <!-- Export recommendation -->
+  <g transform="translate(260,1545)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="1680" height="82" rx="24" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="1645" y="34" text-anchor="start" class="fa export-title">پیشنهاد خروجی نهایی</text>
+    <text x="1645" y="60" text-anchor="start" class="fa export-body">
+      یک نسخه پوستر افقی A1 برای چاپ، یک نسخه اسکرول عمودی برای وب، و یک نسخه اسلایدی برای ارائه آموزشی تهیه شود.
+    </text>
+    <text x="36" y="52" text-anchor="start" class="en" font-size="12" fill="#64748B" font-style="italic">
+      Recommended exports: A1 poster, vertical web infographic, and presentation deck.
+    </text>
+  </g>
+
+  <text x="1100" y="1665" text-anchor="middle" class="fa" font-size="15" font-weight="700" fill="#64748B">
+    در ادامه می‌توان اسلایدهای تکمیلی ساخت: نسخه دیجیتال، راهنمای چاپ، یا تولید SVG مادر نهایی
+  </text>
+</svg>
