@@ -54,12 +54,12 @@
             }
 
             .tn {
-                font: 500 3.8px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                font: 500 4.2px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
                 fill: #64748b
             }
 
             .lb {
-                font: 700 5.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+                font: 700 7.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
                 fill: #1e1b4b
             }
 
@@ -152,26 +152,26 @@
             <stop offset="100%" stop-color="#f43f5e" />
         </linearGradient>
     </defs>
-    <rect x="40" y="92" width="1100" height="14" rx="7" fill="url(#specG)" opacity=".85" />
+    <rect x="40" y="97" width="1100" height="14" rx="7" fill="url(#specG)" opacity=".85" />
 
     <!-- Spectrum labels -->
     <g class="lb">
-        <text x="65" y="88" text-anchor="middle">بسیط متمرکز</text>
+        <text x="65" y="90" text-anchor="middle">بسیط متمرکز</text>
         <text x="65" y="120" text-anchor="middle" class="tn">ایران، ترکیه</text>
 
-        <text x="260" y="88" text-anchor="middle">بسیط تمرکززدایی‌شده</text>
+        <text x="260" y="90" text-anchor="middle">بسیط تمرکززدایی‌شده</text>
         <text x="260" y="120" text-anchor="middle" class="tn">فرانسه، ژاپن</text>
 
-        <text x="460" y="88" text-anchor="middle">منطقه‌ای / شبه‌فدرال</text>
+        <text x="460" y="90" text-anchor="middle">منطقه‌ای / شبه‌فدرال</text>
         <text x="460" y="120" text-anchor="middle" class="tn">اسپانیا، بریتانیا</text>
 
-        <text x="660" y="88" text-anchor="middle">فدرال متقارن</text>
+        <text x="660" y="90" text-anchor="middle">فدرال متقارن</text>
         <text x="660" y="120" text-anchor="middle" class="tn">آلمان، سوئیس</text>
 
-        <text x="860" y="88" text-anchor="middle">فدرال نامتقارن</text>
+        <text x="860" y="90" text-anchor="middle">فدرال نامتقارن</text>
         <text x="860" y="120" text-anchor="middle" class="tn">عراق، هند، کانادا</text>
 
-        <text x="1060" y="88" text-anchor="middle">کنفدرال / شبه‌مستقل</text>
+        <text x="1060" y="90" text-anchor="middle">کنفدرال / شبه‌مستقل</text>
         <text x="1060" y="120" text-anchor="middle" class="tn">اتحادیه اروپا</text>
     </g>
 
@@ -184,8 +184,8 @@
         <line x1="860" y1="92" x2="860" y2="106" />
         <line x1="1060" y1="92" x2="1060" y2="106" />
     </g>
-    <text x="40" y="135" class="tn">← تمرکز بیشتر</text>
-    <text x="1140" y="135" text-anchor="end" class="tn">استقلال بیشتر →</text>
+    <text x="40" y="135" class="lb">← تمرکز بیشتر</text>
+    <text x="1140" y="135" text-anchor="end" class="lb">استقلال بیشتر →</text>
 
     <!-- ═══ ROW 2: FIVE MAIN COLUMNS ═══ -->
 
@@ -194,7 +194,7 @@
     <text x="228" y="162" text-anchor="end" class="sec">سطوح خودکنترلی</text>
 
     <g transform="translate(14,170)">
-        <rect width="218" height="320" rx="6" fill="#eef2ff" stroke="#a5b4fc" />
+        <rect width="218" height="305" rx="6" fill="#eef2ff" stroke="#a5b4fc" />
         <g clip-path="url(#c220x320)">
             <!-- L0 -->
             <rect x="4" y="4" width="210" height="42" rx="5" fill="#e0e7ff" stroke="#818cf8" />
@@ -235,7 +235,7 @@
             <text x="206" y="282" text-anchor="end" class="sm wh">نمونه: هنگ‌کنگ سابق، گرینلند، ماکائو</text>
             <text x="206" y="292" text-anchor="end" class="tn">روابط خارجی محدود، کنترل مرزی جزئی</text>
 
-            <text x="110" y="314" text-anchor="middle" class="mn">L0 = min autonomy → L5 = max autonomy</text>
+            <text x="110" y="310" text-anchor="middle" class="mn">L0 = min autonomy → L5 = max autonomy</text>
         </g>
     </g>
 
@@ -276,7 +276,7 @@
 
     <g transform="translate(248,373)">
         <!-- Local -->
-        <rect width="218" height="90" rx="6" fill="#ecfdf5" stroke="#6ee7b7" />
+        <rect width="218" height="85" rx="6" fill="#ecfdf5" stroke="#6ee7b7" />
         <g clip-path="url(#c220x130)">
             <text x="210" y="12" text-anchor="end" class="ct">امور محلی کلاسیک</text>
             <text x="210" y="24" text-anchor="end" class="bd">• آب و فاضلاب، پسماند</text>
@@ -284,14 +284,14 @@
             <text x="210" y="44" text-anchor="end" class="bd">• مجوز ساختمان، کاربری زمین</text>
             <text x="210" y="54" text-anchor="end" class="bd">• آتش‌نشانی، پارک‌ها</text>
             <text x="210" y="64" text-anchor="end" class="bd">• بازارهای محلی</text>
-            <text x="210" y="76" text-anchor="end" class="sm">معمولاً در همهٔ مدل‌ها به سطح محلی سپرده می‌شود</text>
-            <text x="210" y="86" text-anchor="end" class="mn">Water, transit, fire, parks, permits</text>
+            <text x="210" y="76" text-anchor="end" class="sm">معمولاً در همهٔ مدل‌ها به سطح محلی سپرده می‌شود (Water,
+                transit, fire, parks, permits)</text>
         </g>
     </g>
 
     <!-- Residual label -->
-    <g transform="translate(248,468)">
-        <rect width="218" height="14" rx="4" fill="#f1f5f9" stroke="#cbd5e1" />
+    <g transform="translate(248,463)">
+        <rect width="218" height="17" rx="4" fill="#f1f5f9" stroke="#cbd5e1" />
         <text x="210" y="10" text-anchor="end" class="sm">صلاحیت باقیمانده: نزد مرکز (هند) یا نزد واحدها (آمریکا،
             سوئیس)</text>
     </g>
@@ -349,9 +349,9 @@
 
     <g transform="translate(482,440)">
         <rect width="218" height="38" rx="5" fill="#fff" stroke="#cbd5e1" />
-        <text x="210" y="13" text-anchor="end" class="sm">نکته: مبنای حقوقی، میزان ثبات و قابلیت</text>
-        <text x="210" y="25" text-anchor="end" class="sm">بازپس‌گیری اختیارات را تعیین می‌کند.</text>
-        <text x="210" y="34" text-anchor="end" class="mn">Constitutional > Statutory > De facto</text>
+        <text x="210" y="13" text-anchor="end" class="sm">نکته: مبنای حقوقی، میزان ثبات و قابلیت بازپس‌گیری اختیارات را
+            تعیین می‌کند.</text>
+        <text x="210" y="22" text-anchor="end" class="mn">Constitutional > Statutory > De facto</text>
     </g>
 
     <!-- COL 4: International Law -->

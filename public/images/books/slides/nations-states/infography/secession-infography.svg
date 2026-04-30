@@ -50,7 +50,7 @@
       }
 
       .tn {
-        font: 500 3.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+        font: 500 4.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
         fill: #64748b
       }
 
@@ -69,12 +69,12 @@
       }
 
       .tblh {
-        font: 700 5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+        font: 700 8px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
         fill: #1e1b4b
       }
 
       .tbl {
-        font: 500 4.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
+        font: 500 6.5px 'Vazirmatn', 'Noto Sans Arabic', sans-serif;
         fill: #334155
       }
 
@@ -650,7 +650,7 @@
   </g>
 
   <!-- ═══ FOOTER ═══ -->
-  <text x="1165" y="838" text-anchor="end" class="tn">International Law &amp; Secession Atlas — Comparative Analysis —
+  <text x="600" y="828" text-anchor="middle" class="tn">International Law &amp; Secession Atlas — Comparative Analysis —
     اعداد تقریبی بر اساس تحلیل‌های Forum of Federations, CIA World Factbook, UN data — ویرایش‌پذیر</text>
 
 </svg>
