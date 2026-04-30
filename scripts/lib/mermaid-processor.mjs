@@ -93,36 +93,35 @@ function fixGanttAxes(code) {
     return code;
 }
 
-function autoQuoteFarsiNodes(code) {
+function autoQuoteFarsiNodes(code, diagramType) {
     const lines = code.split('\n');
     const result = lines.map(line => {
-        line = line.replace(
-            /([A-Za-z]\d*)($$)([^$$"]+)(])/g,
-            (m, id, open, text, close) => {
-                const t = text.trim();
-                if (!t || t.charAt(0) === '"') return m;
-                if (/[\u0600-\u06FF]/.test(t)) return `${id}${open}"${t}"${close}`;
-                return m;
-            }
-        );
-        line = line.replace(
-            /([A-Za-z]\d*)(\()([^)"]+)(\))/g,
-            (m, id, open, text, close) => {
-                const t = text.trim();
-                if (!t || t.charAt(0) === '"') return m;
-                if (/[\u0600-\u06FF]/.test(t)) return `${id}${open}"${t}"${close}`;
-                return m;
-            }
-        );
+        // 1. Double Markers: (( )), {{ }}, [[ ]], ([ ])
+        line = line.replace(/([A-Za-z0-9_]+)?(\(\(|\{\{|\[\[|\(\[)([^)\]}]+)(\)\)|\}\}|\]\]|\]\))/g, (m, id, open, text, close) => {
+            const t = text.trim();
+            if (!t || t.charAt(0) === '"' || !/[\u0600-\u06FF]/.test(t)) return m;
+            return (id || '') + open + '"' + t + '"' + close;
+        });
+
+        // 2. Single Markers: ( ), [ ], { }, > ]
+        line = line.replace(/([A-Za-z0-9_]+)?(\(|\[|\{|\>)([^)\]}"\s][^)\]}"]*)(\)|\]|\})/g, (m, id, open, text, close) => {
+            const t = text.trim();
+            if (!t || t.charAt(0) === '"' || !/[\u0600-\u06FF]/.test(t)) return m;
+            if (t.includes('=') && diagramType !== 'mindmap') return m;
+            return (id || '') + open + '"' + t + '"' + close;
+        });
+
         return line;
     });
     code = result.join('\n');
 
+    // 3. Edge labels |text|
     code = code.replace(/\|([^|"]+)\|/g, (m, text) => {
         const t = text.trim();
         if (!t || t.charAt(0) === '"' || !/[\u0600-\u06FF]/.test(t)) return m;
         return `|"${t}"|`;
     });
+
     return code;
 }
 
@@ -306,7 +305,7 @@ export class MermaidProcessor {
 
                     // ─── Auto-quote Farsi (not for gantt/timeline/quadrant) ───
                     if (!['gantt', 'timeline', 'quadrantChart'].includes(diagramType)) {
-                        code = autoQuoteFarsiNodes(code);
+                        code = autoQuoteFarsiNodes(code, diagramType);
                     }
 
                     self.stats.fixed++;

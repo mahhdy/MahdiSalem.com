@@ -36,6 +36,7 @@ function detectDiagramType(code) {
     if (fl.startsWith('pie')) return 'pie';
     if (fl.startsWith('timeline')) return 'timeline';
     if (fl.startsWith('mindmap')) return 'mindmap';
+    if (fl.startsWith('quadrantchart')) return 'quadrantchart';
     if (fl.startsWith('classdiagram') || fl.startsWith('classDiagram')) return 'class';
     return 'unknown';
 }
@@ -98,32 +99,36 @@ function restoreBrTags(code) {
     return code.replace(/__MERMAID_BR__/g, '<br/>');
 }
 
-// Auto-quote Farsi in flowchart/graph node labels.
-// Uses simple two-step approach to avoid complex nested char classes.
-function autoQuoteFarsiNodes(code) {
-    // Step 1: quote Farsi text in square brackets: ID["text"] or ID[text]
-    // Only touch nodes that contain Farsi and aren't already quoted
-    // Process line by line to be safe
+/**
+ * Robustly quote Farsi text in Mermaid nodes while preserving various marker types.
+ * Handles: ID((text)), ID([text]), ID(text), ID[text], ID{{text}}, ID>text], etc.
+ */
+function autoQuoteFarsiNodes(code, diagramType) {
     var lines = code.split('\n');
     var result = lines.map(function (line) {
-        // Match node definition: letters+digits + open bracket + content + close bracket
-        // But only if content has Farsi and is not already quoted
-        return line.replace(/([A-Za-z]\d*)(\[)([^\]"]+)(])/g, function (m, id, open, text, close) {
+        // 1. Double Markers: (( )), {{ }}, [[ ]], ([ ])
+        // We match these first so they aren't partially consumed by single-marker regex.
+        line = line.replace(/([A-Za-z0-9_]+)?(\(\(|\{\{|\[\[|\(\[)([^)\]}]+)(\)\)|\}\}|\]\]|\]\))/g, function (m, id, open, text, close) {
             var t = text.trim();
-            if (!t || t.charAt(0) === '"') return m;
-            if (/[\u0600-\u06FF]/.test(t)) return id + open + '"' + t + '"' + close;
-            return m;
-        }).replace(/([A-Za-z]\d*)(\()([^)"]+)(\))/g, function (m, id, open, text, close) {
-            // Skip double-paren (( which is already handled or mindmap
-            var t = text.trim();
-            if (!t || t.charAt(0) === '"') return m;
-            if (/[\u0600-\u06FF]/.test(t)) return id + open + '"' + t + '"' + close;
-            return m;
+            if (!t || t.charAt(0) === '"' || !/[\u0600-\u06FF]/.test(t)) return m;
+            return (id || '') + open + '"' + t + '"' + close;
         });
+
+        // 2. Single Markers: ( ), [ ], { }, > ]
+        // Use a character class that excludes quotes and the markers themselves to avoid over-matching.
+        line = line.replace(/([A-Za-z0-9_]+)?(\(|\[|\{|\>)([^)\]}"\s][^)\]}"]*)(\)|\]|\})/g, function (m, id, open, text, close) {
+            var t = text.trim();
+            if (!t || t.charAt(0) === '"' || !/[\u0600-\u06FF]/.test(t)) return m;
+            // Special case: don't quote if it looks like a tag or attribute (rare in Mermaid but safety first)
+            if (t.includes('=') && !diagramType === 'mindmap') return m;
+            return (id || '') + open + '"' + t + '"' + close;
+        });
+
+        return line;
     });
     code = result.join('\n');
 
-    // Step 2: quote Farsi edge labels |text|
+    // 3. Edge labels |text|
     code = code.replace(/\|([^|"]+)\|/g, function (m, text) {
         var t = text.trim();
         if (!t || t.charAt(0) === '"' || !/[\u0600-\u06FF]/.test(t)) return m;
@@ -178,7 +183,7 @@ export function remarkMermaid() {
 
             // STEP 4: Auto-quote Farsi (not for gantt/timeline — they use different syntax)
             if (diagramType !== 'gantt' && diagramType !== 'timeline') {
-                code = autoQuoteFarsiNodes(code);
+                code = autoQuoteFarsiNodes(code, diagramType);
             }
 
             // STEP 5: Restore <br/>
