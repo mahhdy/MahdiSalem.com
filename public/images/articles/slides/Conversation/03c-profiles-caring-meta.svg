@@ -2,79 +2,152 @@
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap');
-      .fa { font-family: "Vazirmatn", "Tahoma", sans-serif; direction: rtl; unicode-bidi: plaintext; }
-      .en { font-family: "Inter", "Segoe UI", sans-serif; direction: ltr; unicode-bidi: plaintext; }
 
-      .title-fa { font-size: 46px; font-weight: 800; fill: #172033; }
-      .subtitle-en { font-size: 19px; font-weight: 500; fill: #64748B; font-style: italic; }
-      .small-muted { font-size: 13px; fill: #94A3B8; }
+      .fa {
+        font-family: "Vazirmatn", "Tahoma", sans-serif;
+        direction: rtl;
+        unicode-bidi: plaintext;
+      }
 
-      .family-title { font-size: 26px; font-weight: 800; }
-      .family-sub { font-size: 13px; font-style: italic; }
+      .en {
+        font-family: "Inter", "Segoe UI", sans-serif;
+        direction: ltr;
+        unicode-bidi: plaintext;
+      }
 
-      .card-title { font-size: 20px; font-weight: 800; fill: #FFFFFF; }
-      .card-en { font-size: 11.5px; font-style: italic; font-weight: 500; }
+      .title-fa {
+        font-size: 46px;
+        font-weight: 800;
+        fill: #172033;
+      }
 
-      .label { font-size: 11.5px; font-weight: 800; fill: #1E293B; }
-      .label-en { font-size: 9px; font-style: italic; fill: #64748B; }
-      .body-text { font-size: 12.2px; font-weight: 500; fill: #334155; }
-      .example { font-size: 12px; font-weight: 700; fill: #334155; }
+      .subtitle-en {
+        font-size: 19px;
+        font-weight: 500;
+        fill: #64748B;
+        font-style: italic;
+      }
 
-      .nav-title { font-size: 16px; font-weight: 800; fill: #1E293B; }
-      .nav-text { font-size: 12px; font-weight: 600; fill: #475569; }
-      .nav-en { font-size: 10px; fill: #64748B; font-style: italic; }
+      .small-muted {
+        font-size: 13px;
+        fill: #94A3B8;
+      }
+
+      .family-title {
+        font-size: 26px;
+        font-weight: 800;
+      }
+
+      .family-sub {
+        font-size: 13px;
+        font-style: italic;
+      }
+
+      .card-title {
+        font-size: 20px;
+        font-weight: 800;
+        fill: #FFFFFF;
+      }
+
+      .card-en {
+        font-size: 11.5px;
+        font-style: italic;
+        font-weight: 500;
+      }
+
+      .label {
+        font-size: 11.5px;
+        font-weight: 800;
+        fill: #1E293B;
+      }
+
+      .label-en {
+        font-size: 9px;
+        font-style: italic;
+        fill: #64748B;
+      }
+
+      .body-text {
+        font-size: 12.2px;
+        font-weight: 500;
+        fill: #334155;
+      }
+
+      .example {
+        font-size: 12px;
+        font-weight: 700;
+        fill: #334155;
+      }
+
+      .nav-title {
+        font-size: 16px;
+        font-weight: 800;
+        fill: #1E293B;
+      }
+
+      .nav-text {
+        font-size: 12px;
+        font-weight: 600;
+        fill: #475569;
+      }
+
+      .nav-en {
+        font-size: 10px;
+        fill: #64748B;
+        font-style: italic;
+      }
     </style>
 
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FBFCFF"/>
-      <stop offset="48%" stop-color="#F6F8FC"/>
-      <stop offset="100%" stop-color="#EEF3F8"/>
+      <stop offset="0%" stop-color="#FBFCFF" />
+      <stop offset="48%" stop-color="#F6F8FC" />
+      <stop offset="100%" stop-color="#EEF3F8" />
     </linearGradient>
 
     <linearGradient id="blueBanner" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7DD3FC"/>
-      <stop offset="100%" stop-color="#0284C7"/>
+      <stop offset="0%" stop-color="#7DD3FC" />
+      <stop offset="100%" stop-color="#0284C7" />
     </linearGradient>
 
     <linearGradient id="violetBanner" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#C4B5FD"/>
-      <stop offset="100%" stop-color="#7C3AED"/>
+      <stop offset="0%" stop-color="#C4B5FD" />
+      <stop offset="100%" stop-color="#7C3AED" />
     </linearGradient>
 
     <linearGradient id="blueHead" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0EA5E9"/>
-      <stop offset="100%" stop-color="#0369A1"/>
+      <stop offset="0%" stop-color="#0EA5E9" />
+      <stop offset="100%" stop-color="#0369A1" />
     </linearGradient>
 
     <linearGradient id="violetHead" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#8B5CF6"/>
-      <stop offset="100%" stop-color="#5B21B6"/>
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#5B21B6" />
     </linearGradient>
 
     <linearGradient id="blueBody" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#F0F9FF"/>
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F0F9FF" />
     </linearGradient>
 
     <linearGradient id="violetBody" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#F5F3FF"/>
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F5F3FF" />
     </linearGradient>
 
     <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#0F172A" flood-opacity="0.10"/>
+      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#0F172A" flood-opacity="0.10" />
     </filter>
 
     <filter id="cardShadow" x="-15%" y="-15%" width="130%" height="130%">
-      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#0F172A" flood-opacity="0.095"/>
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#0F172A" flood-opacity="0.095" />
     </filter>
   </defs>
 
-  <rect width="2200" height="1700" fill="url(#bgGrad)"/>
-  <circle cx="180" cy="190" r="170" fill="#E0F2FE" opacity="0.36"/>
-  <circle cx="2010" cy="260" r="190" fill="#EDE9FE" opacity="0.32"/>
-  <circle cx="2040" cy="1510" r="210" fill="#E0F2FE" opacity="0.22"/>
-  <circle cx="180" cy="1510" r="180" fill="#EDE9FE" opacity="0.26"/>
+  <rect width="2200" height="1700" fill="url(#bgGrad)" />
+  <circle cx="180" cy="190" r="170" fill="#E0F2FE" opacity="0.36" />
+  <circle cx="2010" cy="260" r="190" fill="#EDE9FE" opacity="0.32" />
+  <circle cx="2040" cy="1510" r="210" fill="#E0F2FE" opacity="0.22" />
+  <circle cx="180" cy="1510" r="180" fill="#EDE9FE" opacity="0.26" />
 
   <text x="1100" y="70" text-anchor="middle" class="fa title-fa">پروفایل گونه‌های گفتگو — بخش سوم</text>
   <text x="1100" y="105" text-anchor="middle" class="en subtitle-en">
@@ -85,440 +158,481 @@
   </text>
 
   <g transform="translate(100,170)" filter="url(#softShadow)">
-    <rect x="0" y="0" width="2000" height="58" rx="18" fill="url(#blueBanner)"/>
-    <circle cx="42" cy="29" r="21" fill="#FFFFFF" opacity="0.95"/>
+    <rect x="0" y="0" width="2000" height="58" rx="18" fill="url(#blueBanner)" />
+    <circle cx="42" cy="29" r="21" fill="#FFFFFF" opacity="0.95" />
     <text x="42" y="37" text-anchor="middle" font-size="21">💙</text>
-    <text x="1980" y="27" text-anchor="end" class="fa family-title" fill="#FFFFFF">خانواده مراقبتی-وجودی</text>
-    <text x="30" y="40" text-anchor="start" class="en family-sub" fill="#E0F2FE">Caring · existential · empathic · therapeutic</text>
+    <text x="1980" y="27" text-anchor="start" class="fa family-title" fill="#FFFFFF">خانواده مراقبتی-وجودی</text>
+    <text x="30" y="40" text-anchor="start" class="en family-sub" fill="#E0F2FE">Caring · existential · empathic ·
+      therapeutic</text>
   </g>
 
   <g transform="translate(100,750)" filter="url(#softShadow)">
-    <rect x="0" y="0" width="2000" height="58" rx="18" fill="url(#violetBanner)"/>
-    <circle cx="42" cy="29" r="21" fill="#FFFFFF" opacity="0.95"/>
+    <rect x="0" y="0" width="2000" height="58" rx="18" fill="url(#violetBanner)" />
+    <circle cx="42" cy="29" r="21" fill="#FFFFFF" opacity="0.95" />
     <text x="42" y="37" text-anchor="middle" font-size="21">🪞</text>
-    <text x="1980" y="27" text-anchor="end" class="fa family-title" fill="#FFFFFF">حالت‌های فراارتباطی</text>
-    <text x="30" y="40" text-anchor="start" class="en family-sub" fill="#EDE9FE">Meta-communicative modes · silence · reflection · process awareness</text>
+    <text x="1980" y="27" text-anchor="start" class="fa family-title" fill="#FFFFFF">حالت‌های فراارتباطی</text>
+    <text x="30" y="40" text-anchor="start" class="en family-sub" fill="#EDE9FE">Meta-communicative modes · silence ·
+      reflection · process awareness</text>
   </g>
 
   <g transform="translate(120,250)" filter="url(#cardShadow)">
-    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#blueBody)" stroke="#7DD3FC" stroke-width="1.5"/>
+    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#blueBody)" stroke="#7DD3FC" stroke-width="1.5" />
 
-    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#blueHead)"/>
-    <rect x="0" y="42" width="480" height="22" fill="#0284C7"/>
-    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96"/>
+    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#blueHead)" />
+    <rect x="0" y="42" width="480" height="22" fill="#0284C7" />
+    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96" />
     <text x="38" y="39" text-anchor="middle" font-size="18">💙</text>
 
-    <text x="462" y="27" text-anchor="end" class="fa card-title">درد دل و همدلی</text>
-    <text x="18" y="50" text-anchor="start" class="en card-en" fill="#E0F2FE">Heart-Talk · Empathy</text>
+    <text x="462" y="27" text-anchor="start" class="fa card-title">درد دل و همدلی</text>
+    <text x="250" y="50" text-anchor="start" class="en card-en" fill="#E0F2FE">Heart-Talk · Empathy</text>
 
     <g transform="translate(20,84)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">📖 تعریف</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📖 تعریف</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Definition</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">گفتگوی عاطفی برای شنیده‌شدن، تخلیه هیجان و هم‌تنظیمی</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">گفتگوی عاطفی برای شنیده‌شدن، تخلیه هیجان و
+        هم‌تنظیمی</text>
     </g>
 
     <g transform="translate(20,140)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">🎯 هدف</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🎯 هدف</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Goal</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">حضور همدلانه، کاهش تنهایی، تنظیم هیجان و پیوند انسانی</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">حضور همدلانه، کاهش تنهایی، تنظیم هیجان و پیوند
+        انسانی</text>
     </g>
 
     <g transform="translate(20,196)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">📜 قواعد</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📜 قواعد</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Rules</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">گوش دادن فعال، قضاوت‌نکردن، بازتاب احساس، حفظ محرمانگی</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">گوش دادن فعال، قضاوت‌نکردن، بازتاب احساس، حفظ
+        محرمانگی</text>
     </g>
 
     <g transform="translate(20,252)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">✅ شاخص</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">✅ شاخص</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">KPI</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">احساس فهمیده‌شدن، آرامش نسبی، کاهش تنش هیجانی</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">احساس فهمیده‌شدن، آرامش نسبی، کاهش تنش هیجانی</text>
     </g>
 
     <g transform="translate(20,308)">
-      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">🪤 تله رایج</text>
+      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🪤 تله رایج</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Pitfall</text>
-      <text x="426" y="40" text-anchor="end" class="fa body-text">تبدیل درد دل به غیبت، نشخوار، وابستگی یا تخریب غایب</text>
+      <text x="426" y="40" text-anchor="start" class="fa body-text">تبدیل درد دل به غیبت، نشخوار، وابستگی یا تخریب
+        غایب</text>
     </g>
 
     <g transform="translate(20,392)">
-      <rect x="0" y="0" width="440" height="58" rx="18" fill="#E0F2FE" stroke="#7DD3FC"/>
-      <text x="426" y="22" text-anchor="end" class="fa label" fill="#075985">نمونه / Example</text>
-      <text x="426" y="43" text-anchor="end" class="fa example">گفتگوی صمیمی با دوست، همراهی سوگ، حمایت عاطفی</text>
+      <rect x="0" y="0" width="440" height="58" rx="18" fill="#E0F2FE" stroke="#7DD3FC" />
+      <text x="426" y="22" text-anchor="start" class="fa label" fill="#075985">نمونه / Example</text>
+      <text x="426" y="43" text-anchor="start" class="fa example">گفتگوی صمیمی با دوست، همراهی سوگ، حمایت عاطفی</text>
     </g>
-  </g>  <g transform="translate(610,250)" filter="url(#cardShadow)">
-    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#blueBody)" stroke="#7DD3FC" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(610,250)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#blueBody)" stroke="#7DD3FC" stroke-width="1.5" />
 
-    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#blueHead)"/>
-    <rect x="0" y="42" width="480" height="22" fill="#0284C7"/>
-    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96"/>
+    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#blueHead)" />
+    <rect x="0" y="42" width="480" height="22" fill="#0284C7" />
+    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96" />
     <text x="38" y="39" text-anchor="middle" font-size="18">🛋️</text>
 
-    <text x="462" y="27" text-anchor="end" class="fa card-title">گفتگوی درمانی</text>
-    <text x="18" y="50" text-anchor="start" class="en card-en" fill="#E0F2FE">Therapeutic Dialogue</text>
+    <text x="462" y="27" text-anchor="start" class="fa card-title">گفتگوی درمانی</text>
+    <text x="250" y="50" text-anchor="start" class="en card-en" fill="#E0F2FE">Therapeutic Dialogue</text>
 
     <g transform="translate(20,84)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">📖 تعریف</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📖 تعریف</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Definition</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">گفتگوی حرفه‌ای برای فهم، بازسازی روایت و تغییر روانی</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">گفتگوی حرفه‌ای برای فهم، بازسازی روایت و تغییر
+        روانی</text>
     </g>
 
     <g transform="translate(20,140)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">🎯 هدف</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🎯 هدف</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Goal</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">بینش، کاهش رنج، تغییر الگو، توانمندسازی مراجع</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">بینش، کاهش رنج، تغییر الگو، توانمندسازی مراجع</text>
     </g>
 
     <g transform="translate(20,196)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">📜 قواعد</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📜 قواعد</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Rules</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">قرارداد درمانی، مرزبندی، محرمانگی، عدم قضاوت، همدلی حرفه‌ای</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">قرارداد درمانی، مرزبندی، محرمانگی، عدم قضاوت، همدلی
+        حرفه‌ای</text>
     </g>
 
     <g transform="translate(20,252)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">✅ شاخص</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">✅ شاخص</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">KPI</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">کاهش نشانه‌ها، افزایش عاملیت، بهبود روابط و خودفهمی</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">کاهش نشانه‌ها، افزایش عاملیت، بهبود روابط و
+        خودفهمی</text>
     </g>
 
     <g transform="translate(20,308)">
-      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">🪤 تله رایج</text>
+      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🪤 تله رایج</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Pitfall</text>
-      <text x="426" y="40" text-anchor="end" class="fa body-text">نصیحت‌گری، وابستگی درمانی، انتقال و انتقال متقابل مدیریت‌نشده</text>
+      <text x="426" y="40" text-anchor="start" class="fa body-text">نصیحت‌گری، وابستگی درمانی، انتقال و انتقال متقابل
+        مدیریت‌نشده</text>
     </g>
 
     <g transform="translate(20,392)">
-      <rect x="0" y="0" width="440" height="58" rx="18" fill="#E0F2FE" stroke="#7DD3FC"/>
-      <text x="426" y="22" text-anchor="end" class="fa label" fill="#075985">نمونه / Example</text>
-      <text x="426" y="43" text-anchor="end" class="fa example">روان‌درمانی، مشاوره فردی، گفتگوی بالینی</text>
+      <rect x="0" y="0" width="440" height="58" rx="18" fill="#E0F2FE" stroke="#7DD3FC" />
+      <text x="426" y="22" text-anchor="start" class="fa label" fill="#075985">نمونه / Example</text>
+      <text x="426" y="43" text-anchor="start" class="fa example">روان‌درمانی، مشاوره فردی، گفتگوی بالینی</text>
     </g>
-  </g>  <g transform="translate(1100,250)" filter="url(#cardShadow)">
-    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#blueBody)" stroke="#7DD3FC" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(1100,250)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#blueBody)" stroke="#7DD3FC" stroke-width="1.5" />
 
-    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#blueHead)"/>
-    <rect x="0" y="42" width="480" height="22" fill="#0284C7"/>
-    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96"/>
+    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#blueHead)" />
+    <rect x="0" y="42" width="480" height="22" fill="#0284C7" />
+    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96" />
     <text x="38" y="39" text-anchor="middle" font-size="18">🌌</text>
 
-    <text x="462" y="27" text-anchor="end" class="fa card-title">گفت‌وگوی من-تو</text>
-    <text x="18" y="50" text-anchor="start" class="en card-en" fill="#E0F2FE">I-Thou · Ich-Du</text>
+    <text x="462" y="27" text-anchor="start" class="fa card-title">گفت‌وگوی من-تو</text>
+    <text x="250" y="50" text-anchor="start" class="en card-en" fill="#E0F2FE">I-Thou · Ich-Du</text>
 
     <g transform="translate(20,84)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">📖 تعریف</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📖 تعریف</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Definition</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">مواجهه وجودی با دیگری به‌مثابه حضور، نه ابزار یا شیء</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">مواجهه وجودی با دیگری به‌مثابه حضور، نه ابزار یا
+        شیء</text>
     </g>
 
     <g transform="translate(20,140)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">🎯 هدف</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🎯 هدف</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Goal</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">دیدار اصیل، حضور متقابل، گشودگی وجودی و کرامت دیگری</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">دیدار اصیل، حضور متقابل، گشودگی وجودی و کرامت
+        دیگری</text>
     </g>
 
     <g transform="translate(20,196)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">📜 قواعد</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📜 قواعد</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Rules</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">ابزارنکردن طرف، حضور کامل، شنیدن بی‌واسطه، پذیرش راز دیگری</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">ابزارنکردن طرف، حضور کامل، شنیدن بی‌واسطه، پذیرش راز
+        دیگری</text>
     </g>
 
     <g transform="translate(20,252)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">✅ شاخص</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">✅ شاخص</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">KPI</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">احساس ملاقات واقعی، کاهش شیءوارگی، عمق پیوند انسانی</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">احساس ملاقات واقعی، کاهش شیءوارگی، عمق پیوند
+        انسانی</text>
     </g>
 
     <g transform="translate(20,308)">
-      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">🪤 تله رایج</text>
+      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🪤 تله رایج</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Pitfall</text>
-      <text x="426" y="40" text-anchor="end" class="fa body-text">رمانتیزه‌کردن رابطه یا تبدیل من-تو به سلطه عاطفی</text>
+      <text x="426" y="40" text-anchor="start" class="fa body-text">رمانتیزه‌کردن رابطه یا تبدیل من-تو به سلطه
+        عاطفی</text>
     </g>
 
     <g transform="translate(20,392)">
-      <rect x="0" y="0" width="440" height="58" rx="18" fill="#E0F2FE" stroke="#7DD3FC"/>
-      <text x="426" y="22" text-anchor="end" class="fa label" fill="#075985">نمونه / Example</text>
-      <text x="426" y="43" text-anchor="end" class="fa example">رابطه عمیق انسانی در سنت مارتین بوبر</text>
+      <rect x="0" y="0" width="440" height="58" rx="18" fill="#E0F2FE" stroke="#7DD3FC" />
+      <text x="426" y="22" text-anchor="start" class="fa label" fill="#075985">نمونه / Example</text>
+      <text x="426" y="43" text-anchor="start" class="fa example">رابطه عمیق انسانی در سنت مارتین بوبر</text>
     </g>
-  </g>  <g transform="translate(1590,250)" filter="url(#cardShadow)">
-    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#blueBody)" stroke="#7DD3FC" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(1590,250)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#blueBody)" stroke="#7DD3FC" stroke-width="1.5" />
 
-    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#blueHead)"/>
-    <rect x="0" y="42" width="480" height="22" fill="#0284C7"/>
-    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96"/>
+    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#blueHead)" />
+    <rect x="0" y="42" width="480" height="22" fill="#0284C7" />
+    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96" />
     <text x="38" y="39" text-anchor="middle" font-size="18">🔐</text>
 
-    <text x="462" y="27" text-anchor="end" class="fa card-title">اعتراف و رازگویی</text>
-    <text x="18" y="50" text-anchor="start" class="en card-en" fill="#E0F2FE">Confession · Confidence</text>
+    <text x="462" y="27" text-anchor="start" class="fa card-title">اعتراف و رازگویی</text>
+    <text x="250" y="50" text-anchor="start" class="en card-en" fill="#E0F2FE">Confession · Confidence</text>
 
     <g transform="translate(20,84)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">📖 تعریف</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📖 تعریف</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Definition</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">بیان امر پنهان، خطا، گناه یا آسیب‌پذیری نزد دیگری</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">بیان امر پنهان، خطا، گناه یا آسیب‌پذیری نزد
+        دیگری</text>
     </g>
 
     <g transform="translate(20,140)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">🎯 هدف</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🎯 هدف</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Goal</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">سبک‌شدن، طلب بخشش، بازیابی صداقت یا ترمیم رابطه</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">سبک‌شدن، طلب بخشش، بازیابی صداقت یا ترمیم
+        رابطه</text>
     </g>
 
     <g transform="translate(20,196)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">📜 قواعد</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📜 قواعد</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Rules</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">امنیت، محرمانگی، عدم سوءاستفاده، ظرفیت شنونده</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">امنیت، محرمانگی، عدم سوءاستفاده، ظرفیت شنونده</text>
     </g>
 
     <g transform="translate(20,252)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">✅ شاخص</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">✅ شاخص</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">KPI</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">کاهش بار پنهان‌کاری، ترمیم اعتماد، پذیرش مسئولیت</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">کاهش بار پنهان‌کاری، ترمیم اعتماد، پذیرش
+        مسئولیت</text>
     </g>
 
     <g transform="translate(20,308)">
-      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">🪤 تله رایج</text>
+      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🪤 تله رایج</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Pitfall</text>
-      <text x="426" y="40" text-anchor="end" class="fa body-text">خودافشایی بی‌مرز، اعتراف اجباری، استفاده ابزاری از راز</text>
+      <text x="426" y="40" text-anchor="start" class="fa body-text">خودافشایی بی‌مرز، اعتراف اجباری، استفاده ابزاری از
+        راز</text>
     </g>
 
     <g transform="translate(20,392)">
-      <rect x="0" y="0" width="440" height="58" rx="18" fill="#E0F2FE" stroke="#7DD3FC"/>
-      <text x="426" y="22" text-anchor="end" class="fa label" fill="#075985">نمونه / Example</text>
-      <text x="426" y="43" text-anchor="end" class="fa example">اعتراف دینی، گفتگوی زوجین، خودافشایی درمانی</text>
+      <rect x="0" y="0" width="440" height="58" rx="18" fill="#E0F2FE" stroke="#7DD3FC" />
+      <text x="426" y="22" text-anchor="start" class="fa label" fill="#075985">نمونه / Example</text>
+      <text x="426" y="43" text-anchor="start" class="fa example">اعتراف دینی، گفتگوی زوجین، خودافشایی درمانی</text>
     </g>
-  </g>  <g transform="translate(120,830)" filter="url(#cardShadow)">
-    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#blueBody)" stroke="#7DD3FC" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(120,830)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#blueBody)" stroke="#7DD3FC" stroke-width="1.5" />
 
-    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#blueHead)"/>
-    <rect x="0" y="42" width="480" height="22" fill="#0284C7"/>
-    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96"/>
+    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#blueHead)" />
+    <rect x="0" y="42" width="480" height="22" fill="#0284C7" />
+    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96" />
     <text x="38" y="39" text-anchor="middle" font-size="18">🙏</text>
 
-    <text x="462" y="27" text-anchor="end" class="fa card-title">مناجات و دعا</text>
-    <text x="18" y="50" text-anchor="start" class="en card-en" fill="#E0F2FE">Prayer · Invocation</text>
+    <text x="462" y="27" text-anchor="start" class="fa card-title">مناجات و دعا</text>
+    <text x="250" y="50" text-anchor="start" class="en card-en" fill="#E0F2FE">Prayer · Invocation</text>
 
     <g transform="translate(20,84)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">📖 تعریف</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📖 تعریف</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Definition</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">گفتار خطاب‌مند به امر قدسی، خداوند یا افق متعالی</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">گفتار خطاب‌مند به امر قدسی، خداوند یا افق
+        متعالی</text>
     </g>
 
     <g transform="translate(20,140)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">🎯 هدف</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🎯 هدف</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Goal</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">تسلیم، طلب یاری، شکر، آرامش، معنا دادن به رنج</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">تسلیم، طلب یاری، شکر، آرامش، معنا دادن به رنج</text>
     </g>
 
     <g transform="translate(20,196)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">📜 قواعد</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📜 قواعد</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Rules</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">نیت، خشوع، صداقت درونی، زبان نمادین یا آیینی</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">نیت، خشوع، صداقت درونی، زبان نمادین یا آیینی</text>
     </g>
 
     <g transform="translate(20,252)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">✅ شاخص</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">✅ شاخص</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">KPI</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">آرامش، امید، انسجام معنایی، احساس اتصال به امر متعالی</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">آرامش، امید، انسجام معنایی، احساس اتصال به امر
+        متعالی</text>
     </g>
 
     <g transform="translate(20,308)">
-      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">🪤 تله رایج</text>
+      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🪤 تله رایج</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Pitfall</text>
-      <text x="426" y="40" text-anchor="end" class="fa body-text">لفظ‌گرایی، معامله‌گری با امر قدسی، نمایش‌دادن دینداری</text>
+      <text x="426" y="40" text-anchor="start" class="fa body-text">لفظ‌گرایی، معامله‌گری با امر قدسی، نمایش‌دادن
+        دینداری</text>
     </g>
 
     <g transform="translate(20,392)">
-      <rect x="0" y="0" width="440" height="58" rx="18" fill="#E0F2FE" stroke="#7DD3FC"/>
-      <text x="426" y="22" text-anchor="end" class="fa label" fill="#075985">نمونه / Example</text>
-      <text x="426" y="43" text-anchor="end" class="fa example">مناجات، نیایش، ذکر، دعاهای جمعی یا فردی</text>
+      <rect x="0" y="0" width="440" height="58" rx="18" fill="#E0F2FE" stroke="#7DD3FC" />
+      <text x="426" y="22" text-anchor="start" class="fa label" fill="#075985">نمونه / Example</text>
+      <text x="426" y="43" text-anchor="start" class="fa example">مناجات، نیایش، ذکر، دعاهای جمعی یا فردی</text>
     </g>
-  </g>  <g transform="translate(610,830)" filter="url(#cardShadow)">
-    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#blueBody)" stroke="#7DD3FC" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(610,830)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#blueBody)" stroke="#7DD3FC" stroke-width="1.5" />
 
-    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#blueHead)"/>
-    <rect x="0" y="42" width="480" height="22" fill="#0284C7"/>
-    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96"/>
+    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#blueHead)" />
+    <rect x="0" y="42" width="480" height="22" fill="#0284C7" />
+    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96" />
     <text x="38" y="39" text-anchor="middle" font-size="18">☕</text>
 
-    <text x="462" y="27" text-anchor="end" class="fa card-title">گپ دوستانه</text>
-    <text x="18" y="50" text-anchor="start" class="en card-en" fill="#E0F2FE">Small Talk · Chit-chat</text>
+    <text x="462" y="27" text-anchor="start" class="fa card-title">گپ دوستانه</text>
+    <text x="250" y="50" text-anchor="start" class="en card-en" fill="#E0F2FE">Small Talk · Chit-chat</text>
 
     <g transform="translate(20,84)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">📖 تعریف</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📖 تعریف</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Definition</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">گفتگوی سبک و کم‌ریسک برای حفظ پیوند اجتماعی</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">گفتگوی سبک و کم‌ریسک برای حفظ پیوند اجتماعی</text>
     </g>
 
     <g transform="translate(20,140)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">🎯 هدف</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🎯 هدف</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Goal</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">گرم‌کردن رابطه، کاهش فاصله، ساختن امنیت اولیه</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">گرم‌کردن رابطه، کاهش فاصله، ساختن امنیت اولیه</text>
     </g>
 
     <g transform="translate(20,196)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">📜 قواعد</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📜 قواعد</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Rules</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">موضوعات کم‌تنش، نوبت کوتاه، خوش‌رویی، رعایت مرز فرهنگی</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">موضوعات کم‌تنش، نوبت کوتاه، خوش‌رویی، رعایت مرز
+        فرهنگی</text>
     </g>
 
     <g transform="translate(20,252)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">✅ شاخص</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">✅ شاخص</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">KPI</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">راحتی متقابل، آغاز رابطه، انتقال نرم به گفتگوی جدی‌تر</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">راحتی متقابل، آغاز رابطه، انتقال نرم به گفتگوی
+        جدی‌تر</text>
     </g>
 
     <g transform="translate(20,308)">
-      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">🪤 تله رایج</text>
+      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🪤 تله رایج</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Pitfall</text>
-      <text x="426" y="40" text-anchor="end" class="fa body-text">سطحی‌ماندن دائمی، کلیشه‌گویی، ورود ناگهانی به حریم خصوصی</text>
+      <text x="426" y="40" text-anchor="start" class="fa body-text">سطحی‌ماندن دائمی، کلیشه‌گویی، ورود ناگهانی به حریم
+        خصوصی</text>
     </g>
 
     <g transform="translate(20,392)">
-      <rect x="0" y="0" width="440" height="58" rx="18" fill="#E0F2FE" stroke="#7DD3FC"/>
-      <text x="426" y="22" text-anchor="end" class="fa label" fill="#075985">نمونه / Example</text>
-      <text x="426" y="43" text-anchor="end" class="fa example">احوال‌پرسی، گفتگوی آسانسوری، معاشرت کاری</text>
+      <rect x="0" y="0" width="440" height="58" rx="18" fill="#E0F2FE" stroke="#7DD3FC" />
+      <text x="426" y="22" text-anchor="start" class="fa label" fill="#075985">نمونه / Example</text>
+      <text x="426" y="43" text-anchor="start" class="fa example">احوال‌پرسی، گفتگوی آسانسوری، معاشرت کاری</text>
     </g>
-  </g>  <g transform="translate(1100,830)" filter="url(#cardShadow)">
-    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#violetBody)" stroke="#C4B5FD" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(1100,830)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#violetBody)" stroke="#C4B5FD" stroke-width="1.5" />
 
-    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#violetHead)"/>
-    <rect x="0" y="42" width="480" height="22" fill="#7C3AED"/>
-    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96"/>
+    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#violetHead)" />
+    <rect x="0" y="42" width="480" height="22" fill="#7C3AED" />
+    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96" />
     <text x="38" y="39" text-anchor="middle" font-size="18">🤫</text>
 
-    <text x="462" y="27" text-anchor="end" class="fa card-title">سکوت معنادار</text>
-    <text x="18" y="50" text-anchor="start" class="en card-en" fill="#EDE9FE">Meaningful Silence</text>
+    <text x="462" y="27" text-anchor="start" class="fa card-title">سکوت معنادار</text>
+    <text x="250" y="50" text-anchor="start" class="en card-en" fill="#EDE9FE">Meaningful Silence</text>
 
     <g transform="translate(20,84)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">📖 تعریف</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📖 تعریف</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Definition</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">حضور ارتباطی بدون کلام که حامل معنا، احترام یا مقاومت است</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">حضور ارتباطی بدون کلام که حامل معنا، احترام یا
+        مقاومت است</text>
     </g>
 
     <g transform="translate(20,140)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">🎯 هدف</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🎯 هدف</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Goal</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">تأمل، همدلی بی‌کلام، احترام، مرزبندی یا اعتراض خاموش</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">تأمل، همدلی بی‌کلام، احترام، مرزبندی یا اعتراض
+        خاموش</text>
     </g>
 
     <g transform="translate(20,196)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">📜 قواعد</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📜 قواعد</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Rules</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">حساسیت به زمینه، بدن‌مندی، زمان‌بندی، پرهیز از ابهام مخرب</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">حساسیت به زمینه، بدن‌مندی، زمان‌بندی، پرهیز از ابهام
+        مخرب</text>
     </g>
 
     <g transform="translate(20,252)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">✅ شاخص</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">✅ شاخص</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">KPI</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">فهم مشترک بدون کلام، آرامش، کاهش تنش یا تعمیق معنا</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">فهم مشترک بدون کلام، آرامش، کاهش تنش یا تعمیق
+        معنا</text>
     </g>
 
     <g transform="translate(20,308)">
-      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">🪤 تله رایج</text>
+      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🪤 تله رایج</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Pitfall</text>
-      <text x="426" y="40" text-anchor="end" class="fa body-text">سوءبرداشت، قهر خاموش، تنبیه عاطفی یا انفعال</text>
+      <text x="426" y="40" text-anchor="start" class="fa body-text">سوءبرداشت، قهر خاموش، تنبیه عاطفی یا انفعال</text>
     </g>
 
     <g transform="translate(20,392)">
-      <rect x="0" y="0" width="440" height="58" rx="18" fill="#EDE9FE" stroke="#C4B5FD"/>
-      <text x="426" y="22" text-anchor="end" class="fa label" fill="#5B21B6">نمونه / Example</text>
-      <text x="426" y="43" text-anchor="end" class="fa example">سکوت در سوگ، سکوت درمانگر، سکوت اعتراضی</text>
+      <rect x="0" y="0" width="440" height="58" rx="18" fill="#EDE9FE" stroke="#C4B5FD" />
+      <text x="426" y="22" text-anchor="start" class="fa label" fill="#5B21B6">نمونه / Example</text>
+      <text x="426" y="43" text-anchor="start" class="fa example">سکوت در سوگ، سکوت درمانگر، سکوت اعتراضی</text>
     </g>
-  </g>  <g transform="translate(1590,830)" filter="url(#cardShadow)">
-    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#violetBody)" stroke="#C4B5FD" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(1590,830)" filter="url(#cardShadow)">
+    <rect x="0" y="0" width="480" height="480" rx="22" fill="url(#violetBody)" stroke="#C4B5FD" stroke-width="1.5" />
 
-    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#violetHead)"/>
-    <rect x="0" y="42" width="480" height="22" fill="#7C3AED"/>
-    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96"/>
+    <rect x="0" y="0" width="480" height="64" rx="22" fill="url(#violetHead)" />
+    <rect x="0" y="42" width="480" height="22" fill="#7C3AED" />
+    <circle cx="38" cy="32" r="19" fill="#FFFFFF" opacity="0.96" />
     <text x="38" y="39" text-anchor="middle" font-size="18">🪞</text>
 
-    <text x="462" y="27" text-anchor="end" class="fa card-title">فراگفتگو</text>
-    <text x="18" y="50" text-anchor="start" class="en card-en" fill="#EDE9FE">Meta-dialogue</text>
+    <text x="462" y="27" text-anchor="start" class="fa card-title">فراگفتگو</text>
+    <text x="250" y="50" text-anchor="start" class="en card-en" fill="#EDE9FE">Meta-dialogue</text>
 
     <g transform="translate(20,84)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">📖 تعریف</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📖 تعریف</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Definition</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">گفتگو درباره خود گفتگو، قواعد، رابطه یا فرایند ارتباط</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">گفتگو درباره خود گفتگو، قواعد، رابطه یا فرایند
+        ارتباط</text>
     </g>
 
     <g transform="translate(20,140)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">🎯 هدف</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🎯 هدف</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Goal</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">بازتنظیم رابطه، اصلاح سوءفهم، طراحی قواعد گفتگوی بهتر</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">بازتنظیم رابطه، اصلاح سوءفهم، طراحی قواعد گفتگوی
+        بهتر</text>
     </g>
 
     <g transform="translate(20,196)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">📜 قواعد</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">📜 قواعد</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Rules</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">توقف محتوای اصلی، نام‌گذاری فرایند، گفتن از شیوه گفتن</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">توقف محتوای اصلی، نام‌گذاری فرایند، گفتن از شیوه
+        گفتن</text>
     </g>
 
     <g transform="translate(20,252)">
-      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">✅ شاخص</text>
+      <rect x="0" y="0" width="440" height="48" rx="14" fill="#FFFFFF" opacity="0.56" />
+      <text x="426" y="18" text-anchor="start" class="fa label">✅ شاخص</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">KPI</text>
-      <text x="426" y="38" text-anchor="end" class="fa body-text">کاهش سوءتفاهم، توافق بر قواعد، بازگشت سالم به گفتگوی اصلی</text>
+      <text x="426" y="38" text-anchor="start" class="fa body-text">کاهش سوءتفاهم، توافق بر قواعد، بازگشت سالم به گفتگوی
+        اصلی</text>
     </g>
 
     <g transform="translate(20,308)">
-      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70"/>
-      <text x="426" y="18" text-anchor="end" class="fa label">🪤 تله رایج</text>
+      <rect x="0" y="0" width="440" height="62" rx="14" fill="#FFFFFF" opacity="0.70" />
+      <text x="426" y="18" text-anchor="start" class="fa label">🪤 تله رایج</text>
       <text x="14" y="18" text-anchor="start" class="en label-en">Pitfall</text>
-      <text x="426" y="40" text-anchor="end" class="fa body-text">فرار از موضوع، تحلیل‌زدگی، تبدیل گفتگو به نقد دائمی رابطه</text>
+      <text x="426" y="40" text-anchor="start" class="fa body-text">فرار از موضوع، تحلیل‌زدگی، تبدیل گفتگو به نقد دائمی
+        رابطه</text>
     </g>
 
     <g transform="translate(20,392)">
-      <rect x="0" y="0" width="440" height="58" rx="18" fill="#EDE9FE" stroke="#C4B5FD"/>
-      <text x="426" y="22" text-anchor="end" class="fa label" fill="#5B21B6">نمونه / Example</text>
-      <text x="426" y="43" text-anchor="end" class="fa example">«الان چطور داریم با هم حرف می‌زنیم؟»</text>
+      <rect x="0" y="0" width="440" height="58" rx="18" fill="#EDE9FE" stroke="#C4B5FD" />
+      <text x="426" y="22" text-anchor="start" class="fa label" fill="#5B21B6">نمونه / Example</text>
+      <text x="426" y="43" text-anchor="start" class="fa example">«الان چطور داریم با هم حرف می‌زنیم؟»</text>
     </g>
   </g>
 
   <g transform="translate(120,1378)" filter="url(#cardShadow)">
-    <rect x="0" y="0" width="1960" height="118" rx="22" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <rect x="0" y="0" width="1960" height="118" rx="22" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2" />
 
-    <text x="1930" y="34" text-anchor="end" class="fa nav-title">نکته تحلیلی</text>
+    <text x="1930" y="34" text-anchor="start" class="fa nav-title">نکته تحلیلی</text>
     <text x="30" y="34" text-anchor="start" class="en nav-en">Analytical note</text>
 
-    <line x1="30" y1="50" x2="1930" y2="50" stroke="#E2E8F0" stroke-width="1"/>
+    <line x1="30" y1="50" x2="1930" y2="50" stroke="#E2E8F0" stroke-width="1" />
 
-    <text x="1930" y="80" text-anchor="end" class="fa nav-text">
+    <text x="1930" y="80" text-anchor="start" class="fa nav-text">
       خانواده مراقبتی بیش از هر خانواده دیگر به «امنیت روانی»، «اعتماد» و «ظرفیت شنیدن» وابسته است.
     </text>
     <text x="30" y="80" text-anchor="start" class="en nav-en">
@@ -533,5 +647,5 @@
     Next: Pathologies of Dialogue and Failure Modes
   </text>
 
-  <line x1="120" y1="1635" x2="2080" y2="1635" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="120" y1="1635" x2="2080" y2="1635" stroke="#E2E8F0" stroke-width="1" />
 </svg>
