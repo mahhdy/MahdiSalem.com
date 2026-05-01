@@ -1,0 +1,79 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg20" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0A0B"/>
+      <stop offset="57%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#320B12"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:66px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .section { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:35px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .name { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:28px; font-weight:850; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .desc { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:22px; fill:#CFCFCF; direction:rtl; unicode-bidi:bidi-override; }
+      .latin { font-family:"Segoe UI",Arial,sans-serif; font-size:21px; fill:#F6C15A; font-weight:800; letter-spacing:1px; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg20)"/>
+  <circle cx="250" cy="815" r="360" fill="#D72638" opacity="0.08"/>
+  <circle cx="1650" cy="260" r="310" fill="#D72638" opacity="0.09"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 20 / KEY CRITICS</text>
+  <text x="1740" y="155" text-anchor="start" class="title">منتقدان شاخص چپ نو</text>
+  <line x1="930" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <g transform="translate(160,255)">
+    <rect x="0" y="0" width="760" height="710" rx="35" fill="#FFFFFF" opacity="0.055" stroke="#FFFFFF" stroke-opacity="0.13"/>
+    <rect x="0" y="0" width="760" height="90" rx="35" fill="#D72638" opacity="0.75"/>
+    <rect x="0" y="60" width="760" height="30" fill="#D72638" opacity="0.75"/>
+    <text x="700" y="58" text-anchor="start" class="section">منتقدان راست، لیبرال و نئومحافظه‌کار</text>
+
+    <g transform="translate(55,135)">
+      <circle cx="38" cy="38" r="38" fill="#D72638" opacity="0.85"/>
+      <text x="650" y="35" text-anchor="start" class="name">دنیل بل</text>
+      <text x="650" y="68" text-anchor="start" class="desc">بدبینی نسبت به رادیکالیسم فرهنگی و ایدئولوژی‌زدگی</text>
+
+      <circle cx="38" cy="130" r="38" fill="#FFFFFF" opacity="0.10"/>
+      <text x="650" y="127" text-anchor="start" class="name">ریمون آرون</text>
+      <text x="650" y="160" text-anchor="start" class="desc">نقد شور انقلابی دانشجویان و دفاع از عقلانیت لیبرال</text>
+
+      <circle cx="38" cy="222" r="38" fill="#FFFFFF" opacity="0.10"/>
+      <text x="650" y="219" text-anchor="start" class="name">ایروینگ کریستول</text>
+      <text x="650" y="252" text-anchor="start" class="desc">نقد نئومحافظه‌کارانه بر پیامدهای فرهنگی چپ نو</text>
+
+      <circle cx="38" cy="314" r="38" fill="#FFFFFF" opacity="0.10"/>
+      <text x="650" y="311" text-anchor="start" class="name">آلن بلوم</text>
+      <text x="650" y="344" text-anchor="start" class="desc">نقد سیاست‌زدگی دانشگاه و نسبی‌گرایی فرهنگی</text>
+
+      <text x="45" y="510" class="latin">ORDER / LIBERAL REASON / CULTURAL CONSERVATISM</text>
+    </g>
+  </g>
+
+  <g transform="translate(1000,255)">
+    <rect x="0" y="0" width="760" height="710" rx="35" fill="#FFFFFF" opacity="0.055" stroke="#FFFFFF" stroke-opacity="0.13"/>
+    <rect x="0" y="0" width="760" height="90" rx="35" fill="#D72638" opacity="0.75"/>
+    <rect x="0" y="60" width="760" height="30" fill="#D72638" opacity="0.75"/>
+    <text x="700" y="58" text-anchor="start" class="section">منتقدان از درون چپ یا سنت مارکسیستی</text>
+
+    <g transform="translate(55,135)">
+      <circle cx="38" cy="38" r="38" fill="#D72638" opacity="0.85"/>
+      <text x="650" y="35" text-anchor="start" class="name">لشک کولاکوفسکی</text>
+      <text x="650" y="68" text-anchor="start" class="desc">نقد وعده‌های رهایی‌بخش مارکسیسم و خطر توتالیتاریسم</text>
+
+      <circle cx="38" cy="130" r="38" fill="#FFFFFF" opacity="0.10"/>
+      <text x="650" y="127" text-anchor="start" class="name">یورگن هابرماس</text>
+      <text x="650" y="160" text-anchor="start" class="desc">نقد برخی اشکال کنش رادیکال و دفاع از عقلانیت ارتباطی</text>
+
+      <circle cx="38" cy="222" r="38" fill="#FFFFFF" opacity="0.10"/>
+      <text x="650" y="219" text-anchor="start" class="name">اریک هابسبام</text>
+      <text x="650" y="252" text-anchor="start" class="desc">نقد فاصله‌گرفتن از سیاست طبقاتی و سازمان کارگری</text>
+
+      <circle cx="38" cy="314" r="38" fill="#FFFFFF" opacity="0.10"/>
+      <text x="650" y="311" text-anchor="start" class="name">مارکسیست‌های ارتدوکس</text>
+      <text x="650" y="344" text-anchor="start" class="desc">نقد فرهنگ‌گرایی، پراکندگی سازمانی و ضعف اقتصاد سیاسی</text>
+
+      <text x="45" y="510" class="latin">CLASS / ORGANIZATION / ECONOMIC POLITICS</text>
+    </g>
+  </g>
+</svg>

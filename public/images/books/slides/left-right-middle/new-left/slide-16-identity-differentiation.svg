@@ -1,0 +1,64 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg16" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0C0C0D"/>
+      <stop offset="55%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#300A11"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:64px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .quote { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:38px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .body { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:27px; fill:#E3E3E3; direction:rtl; unicode-bidi:bidi-override; }
+      .small { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:24px; fill:#CBCBCB; direction:rtl; unicode-bidi:bidi-override; }
+      .tag { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:29px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .latin { font-family:"Segoe UI",Arial,sans-serif; font-size:22px; fill:#F6C15A; font-weight:800; letter-spacing:1px; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg16)"/>
+  <circle cx="960" cy="610" r="430" fill="#D72638" opacity="0.055"/>
+  <circle cx="960" cy="610" r="270" fill="#FFFFFF" opacity="0.035"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 16 / IDENTITY AND DIFFERENTIATION</text>
+  <text x="1740" y="155" text-anchor="start" class="title">هویت‌بخشی و تمایزبخشی چپ نو</text>
+  <line x1="730" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Central manifesto -->
+  <g transform="translate(370,270)">
+    <rect x="0" y="0" width="1180" height="160" rx="34" fill="#D72638" opacity="0.82"/>
+    <text x="1120" y="66" text-anchor="start" class="quote">«ما چپیم، اما استالینیست نیستیم.»</text>
+    <text x="1120" y="116" text-anchor="start" class="body">«ما دموکراتیم، اما آزادی را فقط حقوقی و لیبرالی نمی‌فهمیم.»</text>
+  </g>
+
+  <!-- four identity statements -->
+  <g transform="translate(250,500)">
+    <rect x="0" y="0" width="650" height="170" rx="26" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="600" y="55" text-anchor="start" class="tag">ضد اقتدارگرایی</text>
+    <text x="600" y="105" text-anchor="start" class="body">حزب، دولت، ارتش، دانشگاه و خانواده سنتی</text>
+    <text x="600" y="140" text-anchor="start" class="small">همگی می‌توانند سازوکار سلطه باشند.</text>
+  </g>
+
+  <g transform="translate(1020,500)">
+    <rect x="0" y="0" width="650" height="170" rx="26" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="600" y="55" text-anchor="start" class="tag">فراتر از اقتصادگرایی</text>
+    <text x="600" y="105" text-anchor="start" class="body">طبقه مهم است، اما فرهنگ، جنسیت، نژاد</text>
+    <text x="600" y="140" text-anchor="start" class="small">و بدن نیز میدان سیاست‌اند.</text>
+  </g>
+
+  <g transform="translate(250,725)">
+    <rect x="0" y="0" width="650" height="170" rx="26" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="600" y="55" text-anchor="start" class="tag">دموکراسی از پایین</text>
+    <text x="600" y="105" text-anchor="start" class="body">سیاست فقط تسخیر دولت نیست؛</text>
+    <text x="600" y="140" text-anchor="start" class="small">خودگردانی، شورا و مشارکت مستقیم مهم است.</text>
+  </g>
+
+  <g transform="translate(1020,725)">
+    <rect x="0" y="0" width="650" height="170" rx="26" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="600" y="55" text-anchor="start" class="tag">سوژه‌های فراموش‌شده</text>
+    <text x="600" y="105" text-anchor="start" class="body">زنان، سیاهان، مستعمرات، جوانان، دانشجویان</text>
+    <text x="600" y="140" text-anchor="start" class="small">و اقلیت‌ها وارد میدان سیاست می‌شوند.</text>
+  </g>
+
+  <text x="960" y="980" text-anchor="middle" class="latin">FROM FACTORY TO UNIVERSITY / STREET / HOME / BODY / MEDIA</text>
+</svg>

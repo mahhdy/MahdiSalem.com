@@ -1,0 +1,79 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080808"/>
+      <stop offset="45%" stop-color="#171717"/>
+      <stop offset="100%" stop-color="#330D13"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:68px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .cardtitle { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:34px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .body { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:26px; fill:#DCDCDC; direction:rtl; unicode-bidi:bidi-override; }
+      .latin { font-family:"Segoe UI",Arial,sans-serif; font-size:24px; fill:#F6C15A; font-weight:700; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg5)"/>
+  <circle cx="280" cy="820" r="360" fill="#D72638" opacity="0.09"/>
+  <circle cx="1640" cy="270" r="260" fill="#D72638" opacity="0.10"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 05 / PHILOSOPHICAL ROOTS</text>
+  <text x="1740" y="155" text-anchor="start" class="title">ریشه‌های فلسفی و نظری</text>
+  <line x1="875" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Cards row 1 -->
+  <g transform="translate(220,270)">
+    <rect x="0" y="0" width="450" height="210" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="405" y="60" text-anchor="start" class="cardtitle">مارکس جوان</text>
+    <text x="405" y="108" text-anchor="start" class="body">بیگانگی، پراکسیس، رهایی</text>
+    <text x="405" y="150" text-anchor="start" class="body">انسان خلاق و تاریخی</text>
+    <text x="35" y="185" class="latin">ALIENATION</text>
+  </g>
+
+  <g transform="translate(735,270)">
+    <rect x="0" y="0" width="450" height="210" rx="28" fill="#D72638" opacity="0.18" stroke="#D72638" stroke-opacity="0.45"/>
+    <text x="405" y="60" text-anchor="start" class="cardtitle">مکتب فرانکفورت</text>
+    <text x="405" y="108" text-anchor="start" class="body">نقد عقلانیت ابزاری</text>
+    <text x="405" y="150" text-anchor="start" class="body">صنعت فرهنگ و سلطه مدرن</text>
+    <text x="35" y="185" class="latin">CRITICAL THEORY</text>
+  </g>
+
+  <g transform="translate(1250,270)">
+    <rect x="0" y="0" width="450" height="210" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="405" y="60" text-anchor="start" class="cardtitle">فروید و روان‌کاوی</text>
+    <text x="405" y="108" text-anchor="start" class="body">سرکوب میل، تمدن، ناخودآگاه</text>
+    <text x="405" y="150" text-anchor="start" class="body">خوانش مارکوزه از رهایی</text>
+    <text x="35" y="185" class="latin">EROS</text>
+  </g>
+
+  <!-- Cards row 2 -->
+  <g transform="translate(220,555)">
+    <rect x="0" y="0" width="450" height="210" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="405" y="60" text-anchor="start" class="cardtitle">اگزیستانسیالیسم</text>
+    <text x="405" y="108" text-anchor="start" class="body">آزادی، مسئولیت، انتخاب</text>
+    <text x="405" y="150" text-anchor="start" class="body">سارتر و سیاست تعهد</text>
+    <text x="35" y="185" class="latin">EXISTENCE</text>
+  </g>
+
+  <g transform="translate(735,555)">
+    <rect x="0" y="0" width="450" height="210" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="405" y="60" text-anchor="start" class="cardtitle">ضداستعمار</text>
+    <text x="405" y="108" text-anchor="start" class="body">فانون، جهان سوم، خشونت استعمار</text>
+    <text x="405" y="150" text-anchor="start" class="body">رهایی ملی و فرهنگی</text>
+    <text x="35" y="185" class="latin">DECOLONIZATION</text>
+  </g>
+
+  <g transform="translate(1250,555)">
+    <rect x="0" y="0" width="450" height="210" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="405" y="60" text-anchor="start" class="cardtitle">آنارشیسم و ضداقتدارگرایی</text>
+    <text x="405" y="108" text-anchor="start" class="body">بی‌اعتمادی به قدرت متمرکز</text>
+    <text x="405" y="150" text-anchor="start" class="body">خودگردانی، شورا، کنش مستقیم</text>
+    <text x="35" y="185" class="latin">DIRECT ACTION</text>
+  </g>
+
+  <g transform="translate(290,850)">
+    <rect x="0" y="0" width="1340" height="85" rx="22" fill="#000000" opacity="0.30"/>
+    <text x="1290" y="55" text-anchor="start" class="body">نتیجه: چپ نو مارکسیسم را با نقد فرهنگ، روان‌کاوی، ضداستعمار و سیاست زندگی روزمره پیوند زد.</text>
+  </g>
+</svg>

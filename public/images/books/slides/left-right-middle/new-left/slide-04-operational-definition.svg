@@ -1,0 +1,84 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111111"/>
+      <stop offset="50%" stop-color="#171717"/>
+      <stop offset="100%" stop-color="#27070E"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:68px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .center { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:50px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .node { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:29px; font-weight:700; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .small { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:27px; fill:#D5D5D5; direction:rtl; unicode-bidi:bidi-override; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg4)"/>
+  <circle cx="960" cy="590" r="430" fill="#D72638" opacity="0.06"/>
+  <circle cx="960" cy="590" r="305" fill="#FFFFFF" opacity="0.035"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 04 / OPERATIONAL DEFINITION</text>
+  <text x="1740" y="155" text-anchor="start" class="title">تعریف عملیاتی چپ نو</text>
+  <line x1="900" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- network lines -->
+  <g stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="4">
+    <line x1="960" y1="570" x2="960" y2="300"/>
+    <line x1="960" y1="570" x2="1260" y2="365"/>
+    <line x1="960" y1="570" x2="1420" y2="590"/>
+    <line x1="960" y1="570" x2="1245" y2="795"/>
+    <line x1="960" y1="570" x2="960" y2="890"/>
+    <line x1="960" y1="570" x2="660" y2="795"/>
+    <line x1="960" y1="570" x2="505" y2="590"/>
+    <line x1="960" y1="570" x2="660" y2="365"/>
+  </g>
+
+  <!-- center -->
+  <circle cx="960" cy="570" r="155" fill="#D72638" opacity="0.92"/>
+  <text x="960" y="550" text-anchor="middle" class="center">رهایی</text>
+  <text x="960" y="610" text-anchor="middle" class="small">از سلطه چندلایه</text>
+
+  <!-- nodes -->
+  <g>
+    <circle cx="960" cy="300" r="90" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="960" y="312" text-anchor="middle" class="node">طبقه</text>
+  </g>
+
+  <g>
+    <circle cx="1260" cy="365" r="96" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="1260" y="377" text-anchor="middle" class="node">نژاد</text>
+  </g>
+
+  <g>
+    <circle cx="1420" cy="590" r="103" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="1420" y="602" text-anchor="middle" class="node">جنسیت</text>
+  </g>
+
+  <g>
+    <circle cx="1245" cy="795" r="107" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="1245" y="807" text-anchor="middle" class="node">فرهنگ</text>
+  </g>
+
+  <g>
+    <circle cx="960" cy="890" r="100" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="960" y="902" text-anchor="middle" class="node">بدن</text>
+  </g>
+
+  <g>
+    <circle cx="660" cy="795" r="112" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="660" y="807" text-anchor="middle" class="node">رسانه</text>
+  </g>
+
+  <g>
+    <circle cx="505" cy="590" r="115" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="505" y="602" text-anchor="middle" class="node">امپریالیسم</text>
+  </g>
+
+  <g>
+    <circle cx="660" cy="365" r="104" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <text x="660" y="377" text-anchor="middle" class="node">دولت</text>
+  </g>
+
+  <text x="1740" y="980" text-anchor="start" class="small">چپ نو سیاست را از کارخانه و حزب، به دانشگاه، خیابان، خانه، بدن و رسانه گسترش داد.</text>
+</svg>

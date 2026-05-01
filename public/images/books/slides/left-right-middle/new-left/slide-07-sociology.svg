@@ -1,0 +1,62 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg7" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0B0C"/>
+      <stop offset="56%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#310A12"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:68px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .head { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:37px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .body { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:28px; fill:#E4E4E4; direction:rtl; unicode-bidi:bidi-override; }
+      .small { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:24px; fill:#C8C8C8; direction:rtl; unicode-bidi:bidi-override; }
+      .latin { font-family:"Segoe UI",Arial,sans-serif; font-size:24px; fill:#F6C15A; font-weight:700; letter-spacing:1px; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg7)"/>
+  <circle cx="1600" cy="250" r="260" fill="#D72638" opacity="0.10"/>
+  <circle cx="280" cy="850" r="360" fill="#D72638" opacity="0.08"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 07 / SOCIOLOGY</text>
+  <text x="1740" y="155" text-anchor="start" class="title">جامعه‌شناسی چپ نو</text>
+  <line x1="990" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Main diagram -->
+  <g transform="translate(180,275)">
+    <rect x="0" y="0" width="1560" height="640" rx="38" fill="#FFFFFF" opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.12"/>
+
+    <!-- left: apparent -->
+    <g transform="translate(80,80)">
+      <rect x="0" y="0" width="610" height="480" rx="30" fill="#FFFFFF" opacity="0.06"/>
+      <text x="560" y="60" text-anchor="start" class="head">ظاهر جامعه مدرن</text>
+      <line x1="100" y1="88" x2="560" y2="88" stroke="#FFFFFF" stroke-opacity="0.20" stroke-width="4"/>
+      <text x="560" y="145" text-anchor="start" class="body">دموکراتیک</text>
+      <text x="560" y="205" text-anchor="start" class="body">رفاه‌مند</text>
+      <text x="560" y="265" text-anchor="start" class="body">آزاد</text>
+      <text x="560" y="325" text-anchor="start" class="body">علمی و تکنوکراتیک</text>
+      <text x="560" y="385" text-anchor="start" class="body">مصرفی و پر از انتخاب</text>
+    </g>
+
+    <!-- arrow -->
+    <g transform="translate(720,260)">
+      <path d="M0,70 L145,70 L145,20 L260,120 L145,220 L145,170 L0,170 Z" fill="#D72638" opacity="0.78"/>
+      <text x="132" y="132" text-anchor="middle" class="latin">CRITIQUE</text>
+    </g>
+
+    <!-- right: hidden -->
+    <g transform="translate(870,80)">
+      <rect x="0" y="0" width="610" height="480" rx="30" fill="#D72638" opacity="0.17" stroke="#D72638" stroke-opacity="0.45"/>
+      <text x="560" y="60" text-anchor="start" class="head">واقعیت پنهان از نگاه چپ نو</text>
+      <line x1="55" y1="88" x2="560" y2="88" stroke="#D72638" stroke-opacity="0.55" stroke-width="4"/>
+      <text x="560" y="145" text-anchor="start" class="body">سلطه نخبگان سیاسی ـ اقتصادی ـ نظامی</text>
+      <text x="560" y="205" text-anchor="start" class="body">بیگانگی و تهی‌شدن معنا</text>
+      <text x="560" y="265" text-anchor="start" class="body">دستکاری میل توسط رسانه و بازار</text>
+      <text x="560" y="325" text-anchor="start" class="body">نژادپرستی، پدرسالاری، امپریالیسم</text>
+      <text x="560" y="385" text-anchor="start" class="body">انفعال شهروند در برابر بوروکراسی</text>
+    </g>
+  </g>
+
+  <text x="1740" y="985" text-anchor="start" class="small">چپ نو جامعه را فقط از مسیر اقتصاد نمی‌خواند؛ فرهنگ، قدرت، رسانه، دانشگاه و زندگی روزمره نیز میدان تحلیل‌اند.</text>
+</svg>

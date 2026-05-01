@@ -1,0 +1,82 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg26" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0B0C"/>
+      <stop offset="56%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#300B12"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:61px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .center { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:43px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .head { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:31px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .body { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:23px; fill:#D8D8D8; direction:rtl; unicode-bidi:bidi-override; }
+      .latin { font-family:"Segoe UI",Arial,sans-serif; font-size:20px; fill:#F6C15A; font-weight:800; letter-spacing:1px; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg26)"/>
+  <circle cx="960" cy="610" r="430" fill="#D72638" opacity="0.055"/>
+  <circle cx="960" cy="610" r="270" fill="#FFFFFF" opacity="0.035"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 26 / DEEP ROOTS</text>
+  <text x="1740" y="155" text-anchor="start" class="title">ریشه‌های فلسفی، انسان‌شناختی، جامعه‌شناختی و آرمانی</text>
+  <line x1="430" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Center -->
+  <circle cx="960" cy="575" r="150" fill="#D72638" opacity="0.90"/>
+  <text x="960" y="555" text-anchor="middle" class="center">چپ نو</text>
+  <text x="960" y="610" text-anchor="middle" class="body">پروژه رهایی چندلایه</text>
+
+  <g stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4">
+    <line x1="960" y1="575" x2="960" y2="300"/>
+    <line x1="960" y1="575" x2="1325" y2="380"/>
+    <line x1="960" y1="575" x2="1385" y2="660"/>
+    <line x1="960" y1="575" x2="960" y2="860"/>
+    <line x1="960" y1="575" x2="535" y2="660"/>
+    <line x1="960" y1="575" x2="595" y2="380"/>
+  </g>
+
+  <!-- Nodes -->
+  <g>
+    <rect x="735" y="245" width="450" height="145" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="1135" y="300" text-anchor="start" class="head">ریشه فلسفی</text>
+    <text x="1135" y="345" text-anchor="start" class="body">مارکس جوان، هگل، فروید، اگزیستانسیالیسم، نظریه انتقادی</text>
+    <text x="760" y="365" class="latin">PHILOSOPHY</text>
+  </g>
+
+  <g>
+    <rect x="1190" y="335" width="490" height="145" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="1630" y="390" text-anchor="start" class="head">ریشه انسان‌شناختی</text>
+    <text x="1630" y="435" text-anchor="start" class="body">انسان خلاق، تاریخی، بدن‌مند، میل‌ورز و مشارکت‌جو</text>
+    <text x="1220" y="455" class="latin">ANTHROPOLOGY</text>
+  </g>
+
+  <g>
+    <rect x="1225" y="615" width="490" height="145" rx="28" fill="#D72638" opacity="0.18" stroke="#D72638" stroke-opacity="0.45"/>
+    <text x="1665" y="670" text-anchor="start" class="head">ریشه جامعه‌شناختی</text>
+    <text x="1665" y="715" text-anchor="start" class="body">نخبگان قدرت، بوروکراسی، رسانه، دانشگاه، مصرف‌گرایی</text>
+    <text x="1255" y="735" class="latin">SOCIOLOGY</text>
+  </g>
+
+  <g>
+    <rect x="735" y="805" width="450" height="145" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="1135" y="860" text-anchor="start" class="head">ریشه آرمانی</text>
+    <text x="1135" y="905" text-anchor="start" class="body">برابری، آزادی، دموکراسی مشارکتی، خودگردانی، رهایی روزمره</text>
+    <text x="760" y="925" class="latin">EMANCIPATION</text>
+  </g>
+
+  <g>
+    <rect x="205" y="615" width="490" height="145" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="645" y="670" text-anchor="start" class="head">ریشه فرهنگی</text>
+    <text x="645" y="715" text-anchor="start" class="body">ضدفرهنگ، هنر اعتراضی، موسیقی، سبک زندگی، رسانه</text>
+    <text x="235" y="735" class="latin">CULTURE</text>
+  </g>
+
+  <g>
+    <rect x="240" y="335" width="490" height="145" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="680" y="390" text-anchor="start" class="head">ریشه سیاسی</text>
+    <text x="680" y="435" text-anchor="start" class="body">ضدجنگ، حقوق مدنی، ضداستعمار، ضداقتدارگرایی</text>
+    <text x="270" y="455" class="latin">POLITICS</text>
+  </g>
+</svg>

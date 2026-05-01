@@ -1,0 +1,112 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg25" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090909"/>
+      <stop offset="58%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#320B12"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:62px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .th { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:27px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .td { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:21px; fill:#E5E5E5; direction:rtl; unicode-bidi:bidi-override; }
+      .school { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:24px; font-weight:900; fill:#F6C15A; direction:rtl; unicode-bidi:bidi-override; }
+      .note { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:25px; fill:#DADADA; direction:rtl; unicode-bidi:bidi-override; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg25)"/>
+  <circle cx="260" cy="820" r="360" fill="#D72638" opacity="0.08"/>
+  <circle cx="1660" cy="270" r="320" fill="#D72638" opacity="0.09"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 25 / FINAL COMPARATIVE MATRIX</text>
+  <text x="1740" y="155" text-anchor="start" class="title">ماتریس مقایسه نهایی با مکاتب رقیب</text>
+  <line x1="620" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <g transform="translate(110,245)">
+    <rect x="0" y="0" width="1700" height="725" rx="28" fill="#FFFFFF" opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <rect x="0" y="0" width="1700" height="78" rx="28" fill="#D72638" opacity="0.76"/>
+    <rect x="0" y="54" width="1700" height="24" fill="#D72638" opacity="0.76"/>
+
+    <!-- columns -->
+    <line x1="250" y1="0" x2="250" y2="725" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="2"/>
+    <line x1="560" y1="0" x2="560" y2="725" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="2"/>
+    <line x1="870" y1="0" x2="870" y2="725" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="2"/>
+    <line x1="1180" y1="0" x2="1180" y2="725" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="2"/>
+    <line x1="1435" y1="0" x2="1435" y2="725" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="2"/>
+
+    <!-- rows -->
+    <g stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="2">
+      <line x1="0" y1="168" x2="1700" y2="168"/>
+      <line x1="0" y1="258" x2="1700" y2="258"/>
+      <line x1="0" y1="348" x2="1700" y2="348"/>
+      <line x1="0" y1="438" x2="1700" y2="438"/>
+      <line x1="0" y1="528" x2="1700" y2="528"/>
+      <line x1="0" y1="618" x2="1700" y2="618"/>
+    </g>
+
+    <text x="1660" y="50" text-anchor="start" class="th">مکتب</text>
+    <text x="1395" y="50" text-anchor="start" class="th">مسئله اصلی</text>
+    <text x="1140" y="50" text-anchor="start" class="th">سوژه رهایی</text>
+    <text x="830" y="50" text-anchor="start" class="th">راه‌حل</text>
+    <text x="520" y="50" text-anchor="start" class="th">نقد چپ نو</text>
+    <text x="210" y="50" text-anchor="start" class="th">نقطه قوت</text>
+
+    <!-- row 1 -->
+    <text x="1660" y="125" text-anchor="start" class="school">مارکسیسم کلاسیک</text>
+    <text x="1395" y="115" text-anchor="start" class="td">استثمار طبقاتی</text>
+    <text x="1140" y="115" text-anchor="start" class="td">پرولتاریا</text>
+    <text x="830" y="105" text-anchor="start" class="td">انقلاب طبقاتی و</text>
+    <text x="830" y="132" text-anchor="start" class="td">مالکیت جمعی</text>
+    <text x="520" y="105" text-anchor="start" class="td">اقتصادگرایی و کم‌توجهی</text>
+    <text x="520" y="132" text-anchor="start" class="td">به فرهنگ، جنسیت، نژاد</text>
+    <text x="210" y="115" text-anchor="start" class="td">تحلیل سرمایه</text>
+
+    <!-- row 2 -->
+    <text x="1660" y="215" text-anchor="start" class="school">سوسیال‌دموکراسی</text>
+    <text x="1395" y="205" text-anchor="start" class="td">نابرابری و فقر</text>
+    <text x="1140" y="205" text-anchor="start" class="td">شهروند / کارگر</text>
+    <text x="830" y="195" text-anchor="start" class="td">رفاه، مالیات،</text>
+    <text x="830" y="222" text-anchor="start" class="td">اصلاحات تدریجی</text>
+    <text x="520" y="205" text-anchor="start" class="td">سازش با سرمایه‌داری و بوروکراسی</text>
+    <text x="210" y="205" text-anchor="start" class="td">قابلیت حکمرانی</text>
+
+    <!-- row 3 -->
+    <text x="1660" y="305" text-anchor="start" class="school">کمونیسم شوروی</text>
+    <text x="1395" y="295" text-anchor="start" class="td">مالکیت خصوصی</text>
+    <text x="1140" y="295" text-anchor="start" class="td">حزب / طبقه</text>
+    <text x="830" y="285" text-anchor="start" class="td">دولت سوسیالیستی</text>
+    <text x="830" y="312" text-anchor="start" class="td">متمرکز</text>
+    <text x="520" y="295" text-anchor="start" class="td">اقتدارگرایی، سرکوب، بوروکراسی</text>
+    <text x="210" y="295" text-anchor="start" class="td">بسیج سازمانی</text>
+
+    <!-- row 4 -->
+    <text x="1660" y="395" text-anchor="start" class="school">لیبرالیسم</text>
+    <text x="1395" y="385" text-anchor="start" class="td">محدودیت آزادی فردی</text>
+    <text x="1140" y="385" text-anchor="start" class="td">فرد حقوقی</text>
+    <text x="830" y="385" text-anchor="start" class="td">حقوق، قانون، انتخابات</text>
+    <text x="520" y="385" text-anchor="start" class="td">غفلت از سلطه ساختاری</text>
+    <text x="210" y="385" text-anchor="start" class="td">حقوق فردی</text>
+
+    <!-- row 5 -->
+    <text x="1660" y="485" text-anchor="start" class="school">سرمایه‌داری لیبرال</text>
+    <text x="1395" y="475" text-anchor="start" class="td">رشد و کارایی</text>
+    <text x="1140" y="475" text-anchor="start" class="td">مصرف‌کننده / کارآفرین</text>
+    <text x="830" y="475" text-anchor="start" class="td">بازار آزاد</text>
+    <text x="520" y="465" text-anchor="start" class="td">مصرف‌زدگی، بیگانگی،</text>
+    <text x="520" y="492" text-anchor="start" class="td">نابرابری و کالایی‌شدن</text>
+    <text x="210" y="475" text-anchor="start" class="td">نوآوری و تولید</text>
+
+    <!-- row 6 -->
+    <text x="1660" y="575" text-anchor="start" class="school">چپ نو</text>
+    <text x="1395" y="565" text-anchor="start" class="td">سلطه چندلایه</text>
+    <text x="1140" y="555" text-anchor="start" class="td">گروه‌های فرودست،</text>
+    <text x="1140" y="582" text-anchor="start" class="td">جنبش‌ها، انسان رها</text>
+    <text x="830" y="555" text-anchor="start" class="td">دموکراسی مشارکتی،</text>
+    <text x="830" y="582" text-anchor="start" class="td">کنش مستقیم، فرهنگ انتقادی</text>
+    <text x="520" y="565" text-anchor="start" class="td">ابهام سازمانی و ضعف راهبرد قدرت</text>
+    <text x="210" y="565" text-anchor="start" class="td">نقد فرهنگ و سلطه</text>
+
+    <text x="1660" y="672" text-anchor="start" class="note">جمع‌بندی: چپ نو، مسئله چپ را از «مالکیت و طبقه» به «سلطه چندلایه و رهایی زندگی روزمره» گسترش داد.</text>
+  </g>
+</svg>

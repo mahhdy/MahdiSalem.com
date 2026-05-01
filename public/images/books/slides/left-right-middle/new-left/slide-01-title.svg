@@ -1,0 +1,64 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#17070A"/>
+      <stop offset="55%" stop-color="#2A0B10"/>
+      <stop offset="100%" stop-color="#090909"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="72%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#D72638" stop-opacity="0.55"/>
+      <stop offset="45%" stop-color="#D72638" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .title { font-family: "Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size: 96px; font-weight: 900; fill: #FFFFFF; direction: rtl; unicode-bidi: bidi-override; }
+      .subtitle { font-family: "Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size: 42px; font-weight: 500; fill: #F1D9D9; direction: rtl; unicode-bidi: bidi-override; }
+      .small { font-family: "Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size: 30px; fill: #C7C7C7; direction: rtl; unicode-bidi: bidi-override; }
+      .latin { font-family: "Segoe UI",Arial,sans-serif; font-size: 34px; fill: #F6C15A; letter-spacing: 2px; }
+      .label { font-family: "Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size: 28px; fill: #FFFFFF; direction: rtl; unicode-bidi: bidi-override; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg1)"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+
+  <!-- Abstract protest collage shapes -->
+  <circle cx="1540" cy="165" r="205" fill="#D72638" opacity="0.18"/>
+  <circle cx="1650" cy="330" r="120" fill="#F6C15A" opacity="0.08"/>
+  <path d="M0,850 C260,760 430,900 670,805 C880,720 1070,760 1250,850 C1450,950 1680,900 1920,790 L1920,1080 L0,1080 Z" fill="#000000" opacity="0.42"/>
+  <path d="M0,912 C310,820 520,975 760,875 C1030,760 1230,845 1440,930 C1605,995 1760,950 1920,860 L1920,1080 L0,1080 Z" fill="#D72638" opacity="0.19"/>
+
+  <!-- Raised hands silhouettes -->
+  <g fill="#050505" opacity="0.92">
+    <rect x="165" y="775" width="36" height="260" rx="16"/>
+    <circle cx="183" cy="748" r="34"/>
+    <rect x="255" y="715" width="38" height="330" rx="16"/>
+    <circle cx="274" cy="685" r="38"/>
+    <rect x="350" y="815" width="34" height="230" rx="15"/>
+    <circle cx="367" cy="787" r="30"/>
+    <rect x="1575" y="735" width="42" height="330" rx="18"/>
+    <circle cx="1596" cy="700" r="40"/>
+    <rect x="1665" y="800" width="34" height="260" rx="14"/>
+    <circle cx="1682" cy="772" r="31"/>
+  </g>
+
+  <!-- Main heading -->
+  <text x="1550" y="335" text-anchor="start" class="title">چپ نو</text>
+  <text x="1550" y="415" text-anchor="start" class="subtitle">از نقد سرمایه‌داری و استالینیسم</text>
+  <text x="1550" y="475" text-anchor="start" class="subtitle">تا سیاست فرهنگ، هویت و رهایی</text>
+
+  <line x1="760" y1="535" x2="1550" y2="535" stroke="#D72638" stroke-width="8" stroke-linecap="round"/>
+  <text x="1550" y="600" text-anchor="start" class="small">معرفی تاریخی، فلسفی، جامعه‌شناختی و مقایسه‌ای</text>
+
+  <g transform="translate(410,250)">
+    <rect x="0" y="0" width="390" height="470" rx="28" fill="#FFFFFF" opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.16"/>
+    <text x="340" y="80" text-anchor="start" class="label">محورها</text>
+    <text x="340" y="145" text-anchor="start" class="small">منشأ و زمینه تاریخی</text>
+    <text x="340" y="198" text-anchor="start" class="small">ریشه‌های نظری</text>
+    <text x="340" y="251" text-anchor="start" class="small">افراد و آثار کلیدی</text>
+    <text x="340" y="304" text-anchor="start" class="small">تحولات سیاسی ـ فرهنگی</text>
+    <text x="340" y="357" text-anchor="start" class="small">نقدها و مقایسه‌ها</text>
+  </g>
+
+  <text x="110" y="1005" class="latin">NEW LEFT / 1950s-1970s</text>
+</svg>

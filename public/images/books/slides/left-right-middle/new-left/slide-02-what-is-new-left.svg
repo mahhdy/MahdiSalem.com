@@ -1,0 +1,61 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111111"/>
+      <stop offset="65%" stop-color="#1D1D1D"/>
+      <stop offset="100%" stop-color="#300B12"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:70px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .body { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:34px; fill:#EDEDED; direction:rtl; unicode-bidi:bidi-override; }
+      .body2 { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:30px; fill:#CFCFCF; direction:rtl; unicode-bidi:bidi-override; }
+      .tag { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:28px; font-weight:700; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .num { font-family:"Segoe UI",Arial,sans-serif; font-size:36px; font-weight:800; fill:#D72638; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg2)"/>
+  <circle cx="220" cy="180" r="260" fill="#D72638" opacity="0.09"/>
+  <circle cx="1720" cy="860" r="350" fill="#D72638" opacity="0.11"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 02 / CORE QUESTION</text>
+  <text x="1740" y="155" text-anchor="start" class="title">چپ نو چه بود؟</text>
+  <line x1="965" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <g transform="translate(270,280)">
+    <rect x="0" y="0" width="1380" height="135" rx="28" fill="#FFFFFF" opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="1320" y="58" text-anchor="start" class="body">چپ نو نه یک حزب واحد بود و نه یک ایدئولوژی کاملاً منسجم؛</text>
+    <text x="1320" y="105" text-anchor="start" class="body2">بلکه خانواده‌ای از جنبش‌ها، نظریه‌ها و حساسیت‌های سیاسی در برابر سلطه بود.</text>
+  </g>
+
+  <g transform="translate(270,485)">
+    <rect x="0" y="0" width="410" height="300" rx="30" fill="#D72638" opacity="0.18"/>
+    <text x="360" y="70" text-anchor="start" class="tag">نه صرفاً اقتصاد</text>
+    <text x="360" y="125" text-anchor="start" class="body2">فرهنگ، بدن، جنسیت،</text>
+    <text x="360" y="170" text-anchor="start" class="body2">نژاد، دانشگاه، رسانه،</text>
+    <text x="360" y="215" text-anchor="start" class="body2">زندگی روزمره</text>
+  </g>
+
+  <g transform="translate(755,485)">
+    <rect x="0" y="0" width="410" height="300" rx="30" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="360" y="70" text-anchor="start" class="tag">نه استالینیستی</text>
+    <text x="360" y="125" text-anchor="start" class="body2">منتقد بوروکراسی،</text>
+    <text x="360" y="170" text-anchor="start" class="body2">حزب‌سالاری و</text>
+    <text x="360" y="215" text-anchor="start" class="body2">اقتدارگرایی شوروی</text>
+  </g>
+
+  <g transform="translate(1240,485)">
+    <rect x="0" y="0" width="410" height="300" rx="30" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="360" y="70" text-anchor="start" class="tag">نه لیبرال صرف</text>
+    <text x="360" y="125" text-anchor="start" class="body2">آزادی را فقط حقوقی</text>
+    <text x="360" y="170" text-anchor="start" class="body2">نمی‌فهمید؛ بلکه</text>
+    <text x="360" y="215" text-anchor="start" class="body2">ساختاری و تاریخی</text>
+  </g>
+
+  <g transform="translate(270,870)">
+    <circle cx="35" cy="35" r="35" fill="#D72638"/>
+    <text x="35" y="48" text-anchor="middle" class="num">!</text>
+    <text x="1460" y="48" text-anchor="start" class="body2">نکته کلیدی: چپ نو بیشتر «افق انتقادی و جنبشی» بود تا مکتب حزبی بسته.</text>
+  </g>
+</svg>

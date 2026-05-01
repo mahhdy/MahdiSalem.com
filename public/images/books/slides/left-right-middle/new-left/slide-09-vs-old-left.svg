@@ -1,0 +1,75 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg9" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0C0C0D"/>
+      <stop offset="60%" stop-color="#181818"/>
+      <stop offset="100%" stop-color="#2E0B11"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:66px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .th { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:33px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .td { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:25px; fill:#E6E6E6; direction:rtl; unicode-bidi:bidi-override; }
+      .axis { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:27px; font-weight:800; fill:#F6C15A; direction:rtl; unicode-bidi:bidi-override; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg9)"/>
+  <text x="110" y="92" class="kicker">SLIDE 09 / COMPARE WITH OLD LEFT</text>
+  <text x="1740" y="155" text-anchor="start" class="title">تمایز با چپ سنتی</text>
+  <line x1="1010" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Table base -->
+  <g transform="translate(170,255)">
+    <rect x="0" y="0" width="1580" height="710" rx="28" fill="#FFFFFF" opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.12"/>
+
+    <!-- header -->
+    <rect x="0" y="0" width="1580" height="86" rx="28" fill="#D72638" opacity="0.78"/>
+    <rect x="0" y="58" width="1580" height="28" fill="#D72638" opacity="0.78"/>
+
+    <!-- columns -->
+    <line x1="520" y1="0" x2="520" y2="710" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="3"/>
+    <line x1="1060" y1="0" x2="1060" y2="710" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="3"/>
+
+    <!-- rows -->
+    <g stroke="#FFFFFF" stroke-opacity="0.11" stroke-width="2">
+      <line x1="0" y1="190" x2="1580" y2="190"/>
+      <line x1="0" y1="294" x2="1580" y2="294"/>
+      <line x1="0" y1="398" x2="1580" y2="398"/>
+      <line x1="0" y1="502" x2="1580" y2="502"/>
+      <line x1="0" y1="606" x2="1580" y2="606"/>
+    </g>
+
+    <text x="1510" y="55" text-anchor="start" class="th">محور</text>
+    <text x="1000" y="55" text-anchor="start" class="th">چپ سنتی / Old Left</text>
+    <text x="470" y="55" text-anchor="start" class="th">چپ نو / New Left</text>
+
+    <text x="1510" y="145" text-anchor="start" class="axis">سوژه اصلی</text>
+    <text x="1000" y="145" text-anchor="start" class="td">طبقه کارگر صنعتی</text>
+    <text x="470" y="130" text-anchor="start" class="td">دانشجویان، زنان، اقلیت‌ها،</text>
+    <text x="470" y="162" text-anchor="start" class="td">جهان سوم، روشنفکران</text>
+
+    <text x="1510" y="248" text-anchor="start" class="axis">مسئله اصلی</text>
+    <text x="1000" y="248" text-anchor="start" class="td">مالکیت، طبقه، دولت</text>
+    <text x="470" y="232" text-anchor="start" class="td">سلطه چندلایه: طبقه، نژاد،</text>
+    <text x="470" y="264" text-anchor="start" class="td">جنسیت، فرهنگ، امپریالیسم</text>
+
+    <text x="1510" y="352" text-anchor="start" class="axis">سازمان</text>
+    <text x="1000" y="352" text-anchor="start" class="td">حزب، اتحادیه، مرکزیت</text>
+    <text x="470" y="352" text-anchor="start" class="td">جنبش، شبکه، شورا، کنش مستقیم</text>
+
+    <text x="1510" y="456" text-anchor="start" class="axis">نگاه به شوروی</text>
+    <text x="1000" y="456" text-anchor="start" class="td">غالباً دفاعی یا وابسته</text>
+    <text x="470" y="456" text-anchor="start" class="td">انتقادی، ضد استالینیستی</text>
+
+    <text x="1510" y="560" text-anchor="start" class="axis">سیاست</text>
+    <text x="1000" y="544" text-anchor="start" class="td">انقلاب یا اصلاح اقتصادی</text>
+    <text x="1000" y="576" text-anchor="start" class="td">با محوریت دولت و تولید</text>
+    <text x="470" y="544" text-anchor="start" class="td">دموکراسی مشارکتی، فرهنگ،</text>
+    <text x="470" y="576" text-anchor="start" class="td">سبک زندگی و رهایی روزمره</text>
+
+    <text x="1510" y="665" text-anchor="start" class="axis">نظریه</text>
+    <text x="1000" y="665" text-anchor="start" class="td">مارکسیسم ارتدوکس</text>
+    <text x="470" y="665" text-anchor="start" class="td">مارکسیسم انتقادی، فمینیسم، پسااستعمار</text>
+  </g>
+</svg>

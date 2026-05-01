@@ -1,0 +1,89 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg18" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0B0C"/>
+      <stop offset="56%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#310A11"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:62px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .head { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:36px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .body { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:26px; fill:#E0E0E0; direction:rtl; unicode-bidi:bidi-override; }
+      .small { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:23px; fill:#C9C9C9; direction:rtl; unicode-bidi:bidi-override; }
+      .warning { font-family:"Segoe UI",Arial,sans-serif; font-size:64px; font-weight:900; fill:#F6C15A; }
+      .note { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:27px; fill:#F6C15A; font-weight:800; direction:rtl; unicode-bidi:bidi-override; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg18)"/>
+  <circle cx="230" cy="230" r="310" fill="#D72638" opacity="0.08"/>
+  <circle cx="1660" cy="850" r="370" fill="#D72638" opacity="0.09"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 18 / DARKER AND CONTESTED LEGACIES</text>
+  <text x="1740" y="155" text-anchor="start" class="title">میراث‌های بحث‌برانگیز و خودانتقادی</text>
+  <line x1="620" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <g transform="translate(180,260)">
+    <rect x="0" y="0" width="1560" height="655" rx="36" fill="#FFFFFF" opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.12"/>
+
+    <!-- card 1 -->
+    <g transform="translate(70,70)">
+      <rect x="0" y="0" width="440" height="170" rx="26" fill="#D72638" opacity="0.18" stroke="#D72638" stroke-opacity="0.45"/>
+      <text x="55" y="70" class="warning">!</text>
+      <text x="390" y="58" text-anchor="start" class="head">رمانتیزه‌کردن انقلاب</text>
+      <text x="390" y="108" text-anchor="start" class="body">گاهی برخی انقلاب‌های جهان سوم</text>
+      <text x="390" y="140" text-anchor="start" class="small">بیش از حد آرمانی و ساده‌سازی شدند.</text>
+    </g>
+
+    <!-- card 2 -->
+    <g transform="translate(560,70)">
+      <rect x="0" y="0" width="440" height="170" rx="26" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="55" y="70" class="warning">!</text>
+      <text x="390" y="58" text-anchor="start" class="head">ابهام درباره خشونت</text>
+      <text x="390" y="108" text-anchor="start" class="body">در برخی شاخه‌های رادیکال،</text>
+      <text x="390" y="140" text-anchor="start" class="small">خشونت انقلابی جذابیت یافت.</text>
+    </g>
+
+    <!-- card 3 -->
+    <g transform="translate(1050,70)">
+      <rect x="0" y="0" width="440" height="170" rx="26" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="55" y="70" class="warning">!</text>
+      <text x="390" y="58" text-anchor="start" class="head">انشعاب و فرقه‌گرایی</text>
+      <text x="390" y="108" text-anchor="start" class="body">نبود سازمان پایدار،</text>
+      <text x="390" y="140" text-anchor="start" class="small">به شکاف‌های متعدد انجامید.</text>
+    </g>
+
+    <!-- card 4 -->
+    <g transform="translate(70,285)">
+      <rect x="0" y="0" width="440" height="170" rx="26" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="55" y="70" class="warning">!</text>
+      <text x="390" y="58" text-anchor="start" class="head">فاصله از طبقه کارگر</text>
+      <text x="390" y="108" text-anchor="start" class="body">پایگاه دانشگاهی و فرهنگی</text>
+      <text x="390" y="140" text-anchor="start" class="small">گاهی پیوند طبقاتی را تضعیف کرد.</text>
+    </g>
+
+    <!-- card 5 -->
+    <g transform="translate(560,285)">
+      <rect x="0" y="0" width="440" height="170" rx="26" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="55" y="70" class="warning">!</text>
+      <text x="390" y="58" text-anchor="start" class="head">سیاست به‌مثابه سبک زندگی</text>
+      <text x="390" y="108" text-anchor="start" class="body">خطر تبدیل سیاست به ژست فرهنگی</text>
+      <text x="390" y="140" text-anchor="start" class="small">یا مصرف هویت اعتراضی.</text>
+    </g>
+
+    <!-- card 6 -->
+    <g transform="translate(1050,285)">
+      <rect x="0" y="0" width="440" height="170" rx="26" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="55" y="70" class="warning">!</text>
+      <text x="390" y="58" text-anchor="start" class="head">سیاست هویت افراطی؟</text>
+      <text x="390" y="108" text-anchor="start" class="body">برخی منتقدان چپ می‌گویند</text>
+      <text x="390" y="140" text-anchor="start" class="small">طبقه زیر سایه هویت رفت.</text>
+    </g>
+
+    <g transform="translate(70,520)">
+      <rect x="0" y="0" width="1420" height="75" rx="22" fill="#000000" opacity="0.32"/>
+      <text x="1370" y="49" text-anchor="start" class="note">این اسلاید را می‌توان با عنوان «خودانتقادی چپ نو» ارائه کرد تا روایت یک‌طرفه نشود.</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,62 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg24" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080808"/>
+      <stop offset="50%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#310A12"/>
+    </linearGradient>
+    <radialGradient id="glow24" cx="73%" cy="28%" r="55%">
+      <stop offset="0%" stop-color="#D72638" stop-opacity="0.42"/>
+      <stop offset="48%" stop-color="#D72638" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:70px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .sentence { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:38px; font-weight:800; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .head { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:34px; font-weight:900; fill:#F6C15A; direction:rtl; unicode-bidi:bidi-override; }
+      .item { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:26px; fill:#E5E5E5; direction:rtl; unicode-bidi:bidi-override; }
+      .question { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:36px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .latin { font-family:"Segoe UI",Arial,sans-serif; font-size:24px; fill:#F6C15A; font-weight:800; letter-spacing:2px; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg24)"/>
+  <rect width="1920" height="1080" fill="url(#glow24)"/>
+  <path d="M0,880 C260,760 470,925 730,805 C990,685 1210,760 1430,860 C1610,942 1770,900 1920,805 L1920,1080 L0,1080 Z" fill="#D72638" opacity="0.17"/>
+  <path d="M0,945 C300,850 510,1010 770,895 C1030,780 1250,865 1470,940 C1650,1002 1800,960 1920,885 L1920,1080 L0,1080 Z" fill="#000000" opacity="0.40"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 24 / FINAL SUMMARY</text>
+  <text x="1740" y="155" text-anchor="start" class="title">جمع‌بندی نهایی</text>
+  <line x1="1110" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <g transform="translate(220,270)">
+    <rect x="0" y="0" width="1480" height="180" rx="34" fill="#D72638" opacity="0.82"/>
+    <text x="1420" y="70" text-anchor="start" class="sentence">چپ نو تلاشی بود برای بازتعریف چپ پس از بحران استالینیسم</text>
+    <text x="1420" y="125" text-anchor="start" class="sentence">و محدودیت‌های لیبرال‌سرمایه‌داری؛ پروژه‌ای برای رهایی چندلایه انسان.</text>
+  </g>
+
+  <g transform="translate(220,510)">
+    <rect x="0" y="0" width="700" height="300" rx="30" fill="#FFFFFF" opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.13"/>
+    <text x="650" y="58" text-anchor="start" class="head">میراث اصلی</text>
+    <text x="650" y="115" text-anchor="start" class="item">• گسترش سیاست از دولت و اقتصاد به فرهنگ و بدن</text>
+    <text x="650" y="165" text-anchor="start" class="item">• نقد هم‌زمان سرمایه‌داری غربی و کمونیسم بوروکراتیک</text>
+    <text x="650" y="215" text-anchor="start" class="item">• تبدیل دانشگاه و خیابان به میدان سیاست</text>
+    <text x="650" y="265" text-anchor="start" class="item">• تقویت جنبش‌های نوین اجتماعی</text>
+  </g>
+
+  <g transform="translate(1000,510)">
+    <rect x="0" y="0" width="700" height="300" rx="30" fill="#FFFFFF" opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.13"/>
+    <text x="650" y="58" text-anchor="start" class="head">فرمول نهایی</text>
+    <text x="650" y="120" text-anchor="start" class="item">چپ سنتی: طبقه + مالکیت + دولت</text>
+    <text x="650" y="175" text-anchor="start" class="item">چپ نو: طبقه + نژاد + جنسیت + فرهنگ</text>
+    <text x="650" y="230" text-anchor="start" class="item">+ استعمار + رسانه + بدن + زندگی روزمره</text>
+  </g>
+
+  <g transform="translate(300,865)">
+    <rect x="0" y="0" width="1320" height="95" rx="28" fill="#000000" opacity="0.38"/>
+    <text x="1260" y="60" text-anchor="start" class="question">پرسش پایانی: آیا چپ نو چپ را نجات داد یا آن را از اقتصاد و طبقه دور کرد؟</text>
+  </g>
+
+  <text x="110" y="1010" class="latin">NEW LEFT / CULTURE / PARTICIPATION / EMANCIPATION</text>
+</svg>

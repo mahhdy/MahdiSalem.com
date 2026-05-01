@@ -1,0 +1,63 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg15" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0A0B"/>
+      <stop offset="60%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#320B12"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:70px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .big { font-family:"Segoe UI",Arial,sans-serif; font-size:190px; font-weight:900; fill:#D72638; letter-spacing:8px; }
+      .head { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:34px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .body { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:25px; fill:#DCDCDC; direction:rtl; unicode-bidi:bidi-override; }
+      .note { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:28px; fill:#F6C15A; font-weight:800; direction:rtl; unicode-bidi:bidi-override; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg15)"/>
+  <text x="110" y="92" class="kicker">SLIDE 15 / 1968 AS EXPLOSIVE MOMENT</text>
+  <text x="1740" y="155" text-anchor="start" class="title">۱۹۶۸؛ لحظه انفجاری</text>
+  <line x1="965" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <text x="265" y="410" class="big">1968</text>
+  <path d="M95,710 C280,600 425,775 600,670 C760,575 890,620 1010,700 C1165,803 1335,785 1500,700 C1675,610 1815,640 1920,575 L1920,1080 L0,1080 L0,765 Z" fill="#D72638" opacity="0.17"/>
+  <path d="M0,840 C260,735 450,880 715,775 C970,675 1150,750 1350,835 C1540,915 1720,835 1920,740 L1920,1080 L0,1080 Z" fill="#000000" opacity="0.38"/>
+
+  <g transform="translate(760,270)">
+    <rect x="0" y="0" width="430" height="210" rx="28" fill="#D72638" opacity="0.20" stroke="#D72638" stroke-opacity="0.45"/>
+    <text x="380" y="60" text-anchor="start" class="head">مه فرانسه</text>
+    <text x="380" y="108" text-anchor="start" class="body">اعتراضات دانشجویی</text>
+    <text x="380" y="145" text-anchor="start" class="body">پیوند با اعتصاب کارگری</text>
+    <text x="380" y="182" text-anchor="start" class="body">نقد دانشگاه، دولت و زندگی بوروکراتیک</text>
+  </g>
+
+  <g transform="translate(1250,270)">
+    <rect x="0" y="0" width="430" height="210" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="380" y="60" text-anchor="start" class="head">بهار پراگ</text>
+    <text x="380" y="108" text-anchor="start" class="body">تلاش برای سوسیالیسم انسانی‌تر</text>
+    <text x="380" y="145" text-anchor="start" class="body">اصلاحات دموکراتیک</text>
+    <text x="380" y="182" text-anchor="start" class="body">پایان با مداخله پیمان ورشو</text>
+  </g>
+
+  <g transform="translate(760,540)">
+    <rect x="0" y="0" width="430" height="210" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="380" y="60" text-anchor="start" class="head">آمریکا</text>
+    <text x="380" y="108" text-anchor="start" class="body">ضد جنگ ویتنام</text>
+    <text x="380" y="145" text-anchor="start" class="body">حقوق مدنی و جنبش دانشجویی</text>
+    <text x="380" y="182" text-anchor="start" class="body">اعتراضات شیکاگو و دانشگاه‌ها</text>
+  </g>
+
+  <g transform="translate(1250,540)">
+    <rect x="0" y="0" width="430" height="210" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="380" y="60" text-anchor="start" class="head">مکزیک، آلمان، ایتالیا، ژاپن</text>
+    <text x="380" y="108" text-anchor="start" class="body">جهانی‌شدن اعتراض دانشجویی</text>
+    <text x="380" y="145" text-anchor="start" class="body">بحران اقتدار دولت و دانشگاه</text>
+    <text x="380" y="182" text-anchor="start" class="body">پیوند با ضدفرهنگ و رسانه</text>
+  </g>
+
+  <g transform="translate(260,860)">
+    <rect x="0" y="0" width="1400" height="82" rx="22" fill="#000000" opacity="0.35"/>
+    <text x="1350" y="53" text-anchor="start" class="note">۱۹۶۸ برای چپ نو نه فقط یک سال، بلکه نماد انفجار نقد اقتدار در جهان مدرن بود.</text>
+  </g>
+</svg>

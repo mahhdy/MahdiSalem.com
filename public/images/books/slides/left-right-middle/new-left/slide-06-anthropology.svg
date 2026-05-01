@@ -1,0 +1,70 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101010"/>
+      <stop offset="58%" stop-color="#181818"/>
+      <stop offset="100%" stop-color="#2D0C11"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:68px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .body { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:31px; fill:#EDEDED; direction:rtl; unicode-bidi:bidi-override; }
+      .small { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:26px; fill:#CFCFCF; direction:rtl; unicode-bidi:bidi-override; }
+      .bigword { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:42px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .latin { font-family:"Segoe UI",Arial,sans-serif; font-size:24px; fill:#F6C15A; font-weight:700; letter-spacing:1px; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg6)"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 06 / ANTHROPOLOGY</text>
+  <text x="1740" y="155" text-anchor="start" class="title">انسان‌شناسی چپ نو</text>
+  <line x1="950" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Human figure / abstract -->
+  <g transform="translate(300,275)">
+    <circle cx="250" cy="135" r="85" fill="#D72638" opacity="0.92"/>
+    <path d="M250 230 C165 230 95 300 95 385 L95 620 L405 620 L405 385 C405 300 335 230 250 230 Z" fill="#FFFFFF" opacity="0.08" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <line x1="250" y1="300" x2="250" y2="615" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5"/>
+    <line x1="130" y1="430" x2="370" y2="430" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5"/>
+    <circle cx="250" cy="430" r="145" fill="none" stroke="#D72638" stroke-opacity="0.32" stroke-width="8"/>
+    <text x="250" y="730" text-anchor="middle" class="latin">HUMAN AS CREATIVE / HISTORICAL / EMBODIED</text>
+  </g>
+
+  <!-- Right side explanation -->
+  <g transform="translate(780,290)">
+    <rect x="0" y="0" width="890" height="125" rx="24" fill="#D72638" opacity="0.20"/>
+    <text x="835" y="52" text-anchor="start" class="bigword">انسان فقط «کارگر اقتصادی» نیست</text>
+    <text x="835" y="94" text-anchor="start" class="small">بلکه موجودی خلاق، ارتباطی، تاریخی، فرهنگی، بدن‌مند و میل‌ورز است.</text>
+  </g>
+
+  <g transform="translate(780,470)">
+    <rect x="0" y="0" width="420" height="190" rx="25" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="370" y="55" text-anchor="start" class="body">بیگانگی</text>
+    <text x="370" y="102" text-anchor="start" class="small">انسان از کار، میل، معنا</text>
+    <text x="370" y="140" text-anchor="start" class="small">و روابط انسانی جدا می‌شود.</text>
+  </g>
+
+  <g transform="translate(1250,470)">
+    <rect x="0" y="0" width="420" height="190" rx="25" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="370" y="55" text-anchor="start" class="body">مصرف‌زدگی</text>
+    <text x="370" y="102" text-anchor="start" class="small">نیازهای کاذب و سبک زندگی</text>
+    <text x="370" y="140" text-anchor="start" class="small">به جای خودآیینی می‌نشیند.</text>
+  </g>
+
+  <g transform="translate(780,700)">
+    <rect x="0" y="0" width="420" height="190" rx="25" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="370" y="55" text-anchor="start" class="body">استانداردشدگی</text>
+    <text x="370" y="102" text-anchor="start" class="small">رسانه و بازار، انسان</text>
+    <text x="370" y="140" text-anchor="start" class="small">را قابل پیش‌بینی می‌کنند.</text>
+  </g>
+
+  <g transform="translate(1250,700)">
+    <rect x="0" y="0" width="420" height="190" rx="25" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="370" y="55" text-anchor="start" class="body">انفعال سیاسی</text>
+    <text x="370" y="102" text-anchor="start" class="small">دموکراسی نمایندگی کافی نیست؛</text>
+    <text x="370" y="140" text-anchor="start" class="small">مشارکت واقعی لازم است.</text>
+  </g>
+
+  <text x="1740" y="995" text-anchor="start" class="small">پرسش محوری: رهایی فقط نان بیشتر است یا زندگی خلاق، مشارکتی و غیرسلطه‌گرانه؟</text>
+</svg>

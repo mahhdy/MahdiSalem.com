@@ -1,0 +1,88 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg21" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0B0C"/>
+      <stop offset="58%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#310B12"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:66px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .year { font-family:"Segoe UI",Arial,sans-serif; font-size:34px; font-weight:900; fill:#F6C15A; }
+      .event { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:27px; font-weight:850; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .desc { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:22px; fill:#CFCFCF; direction:rtl; unicode-bidi:bidi-override; }
+      .note { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:26px; fill:#DADADA; direction:rtl; unicode-bidi:bidi-override; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg21)"/>
+  <circle cx="250" cy="250" r="310" fill="#D72638" opacity="0.08"/>
+  <circle cx="1660" cy="850" r="370" fill="#D72638" opacity="0.09"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 21 / KEY EVENTS</text>
+  <text x="1740" y="155" text-anchor="start" class="title">حادثه‌ها و نقاط عطف کلیدی</text>
+  <line x1="770" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <g transform="translate(220,255)">
+    <rect x="0" y="0" width="1480" height="705" rx="36" fill="#FFFFFF" opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <line x1="740" y1="80" x2="740" y2="625" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="5"/>
+
+    <!-- Left column -->
+    <g transform="translate(80,70)">
+      <circle cx="600" cy="20" r="16" fill="#D72638"/>
+      <text x="560" y="30" text-anchor="start" class="year">1956</text>
+      <text x="520" y="28" text-anchor="start" class="event">مجارستان و سوئز</text>
+      <text x="520" y="62" text-anchor="start" class="desc">بحران اعتبار شوروی و امپریالیسم غربی</text>
+
+      <circle cx="600" cy="120" r="16" fill="#D72638"/>
+      <text x="560" y="130" text-anchor="start" class="year">1960</text>
+      <text x="520" y="128" text-anchor="start" class="event">New Left Review و نامه میلز</text>
+      <text x="520" y="162" text-anchor="start" class="desc">صورت‌بندی فکری چپ نو در بریتانیا و آمریکا</text>
+
+      <circle cx="600" cy="220" r="16" fill="#D72638"/>
+      <text x="560" y="230" text-anchor="start" class="year">1962</text>
+      <text x="520" y="228" text-anchor="start" class="event">بیانیه پورت هورون</text>
+      <text x="520" y="262" text-anchor="start" class="desc">دموکراسی مشارکتی و SDS</text>
+
+      <circle cx="600" cy="320" r="16" fill="#D72638"/>
+      <text x="560" y="330" text-anchor="start" class="year">1964</text>
+      <text x="520" y="328" text-anchor="start" class="event">جنبش آزادی بیان برکلی</text>
+      <text x="520" y="362" text-anchor="start" class="desc">دانشگاه به میدان سیاست تبدیل می‌شود</text>
+
+      <circle cx="600" cy="420" r="16" fill="#D72638"/>
+      <text x="560" y="430" text-anchor="start" class="year">1965-73</text>
+      <text x="520" y="428" text-anchor="start" class="event">اعتراضات ضد جنگ ویتنام</text>
+      <text x="520" y="462" text-anchor="start" class="desc">ضدنظامی‌گری و ضد امپریالیسم</text>
+    </g>
+
+    <!-- Right column -->
+    <g transform="translate(830,70)">
+      <circle cx="30" cy="20" r="16" fill="#D72638"/>
+      <text x="80" y="30" class="year">1968</text>
+      <text x="560" y="28" text-anchor="start" class="event">مه فرانسه، پراگ، شیکاگو، مکزیک</text>
+      <text x="560" y="62" text-anchor="start" class="desc">اوج جهانی اعتراض دانشجویی و ضداقتدارگرایی</text>
+
+      <circle cx="30" cy="120" r="16" fill="#D72638"/>
+      <text x="80" y="130" class="year">1969</text>
+      <text x="560" y="128" text-anchor="start" class="event">انشعاب SDS</text>
+      <text x="560" y="162" text-anchor="start" class="desc">رادیکالیزه‌شدن بخشی از جنبش و شکاف سازمانی</text>
+
+      <circle cx="30" cy="220" r="16" fill="#D72638"/>
+      <text x="80" y="230" class="year">1970s</text>
+      <text x="560" y="228" text-anchor="start" class="event">فمینیسم، اکولوژی، مطالعات فرهنگی</text>
+      <text x="560" y="262" text-anchor="start" class="desc">گسترش سیاست به جنسیت، طبیعت و رسانه</text>
+
+      <circle cx="30" cy="320" r="16" fill="#D72638"/>
+      <text x="80" y="330" class="year">1980s+</text>
+      <text x="560" y="328" text-anchor="start" class="event">انتقال میراث به دانشگاه و فرهنگ عمومی</text>
+      <text x="560" y="362" text-anchor="start" class="desc">نظریه انتقادی، مطالعات نژاد، جنسیت و پسااستعمار</text>
+
+      <circle cx="30" cy="420" r="16" fill="#D72638"/>
+      <text x="80" y="430" class="year">Today</text>
+      <text x="560" y="428" text-anchor="start" class="event">حضور غیرمستقیم در جنبش‌های نوین</text>
+      <text x="560" y="462" text-anchor="start" class="desc">سیاست هویت، عدالت اجتماعی، محیط زیست، ضدنژادپرستی</text>
+    </g>
+  </g>
+
+  <text x="1740" y="1010" text-anchor="start" class="note">این خط زمانی نشان می‌دهد که چپ نو هم رخداد خیابانی بود، هم جریان نظری و هم میراث فرهنگی.</text>
+</svg>

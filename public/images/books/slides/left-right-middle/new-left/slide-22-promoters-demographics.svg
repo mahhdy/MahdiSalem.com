@@ -1,0 +1,81 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg22" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0C0C0D"/>
+      <stop offset="56%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#2F0B12"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:63px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .head { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:35px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .item { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:28px; font-weight:800; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .small { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:23px; fill:#CACACA; direction:rtl; unicode-bidi:bidi-override; }
+      .percent { font-family:"Segoe UI",Arial,sans-serif; font-size:42px; font-weight:900; fill:#F6C15A; }
+      .note { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:26px; fill:#DADADA; direction:rtl; unicode-bidi:bidi-override; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg22)"/>
+  <circle cx="960" cy="610" r="435" fill="#D72638" opacity="0.055"/>
+  <text x="110" y="92" class="kicker">SLIDE 22 / PROMOTERS AND DEMOGRAPHICS</text>
+  <text x="1740" y="155" text-anchor="start" class="title">مبلغین، معرفین و دموگرافی طرفداران</text>
+  <line x1="610" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <g transform="translate(170,260)">
+    <rect x="0" y="0" width="520" height="650" rx="34" fill="#FFFFFF" opacity="0.055" stroke="#FFFFFF" stroke-opacity="0.13"/>
+    <rect x="0" y="0" width="520" height="86" rx="34" fill="#D72638" opacity="0.74"/>
+    <rect x="0" y="58" width="520" height="28" fill="#D72638" opacity="0.74"/>
+    <text x="470" y="55" text-anchor="start" class="head">حاملان اصلی</text>
+    <text x="470" y="140" text-anchor="start" class="item">دانشجویان و جوانان شهری</text>
+    <text x="470" y="200" text-anchor="start" class="item">استادان و روشنفکران</text>
+    <text x="470" y="260" text-anchor="start" class="item">فعالان ضدجنگ</text>
+    <text x="470" y="320" text-anchor="start" class="item">کنشگران حقوق مدنی</text>
+    <text x="470" y="380" text-anchor="start" class="item">فمینیست‌ها</text>
+    <text x="470" y="440" text-anchor="start" class="item">هنرمندان و نویسندگان</text>
+    <text x="470" y="500" text-anchor="start" class="item">بخشی از کارگران رادیکال</text>
+    <text x="470" y="560" text-anchor="start" class="item">فعالان ضداستعماری</text>
+  </g>
+
+  <g transform="translate(735,260)">
+    <rect x="0" y="0" width="520" height="650" rx="34" fill="#FFFFFF" opacity="0.055" stroke="#FFFFFF" stroke-opacity="0.13"/>
+    <rect x="0" y="0" width="520" height="86" rx="34" fill="#D72638" opacity="0.74"/>
+    <rect x="0" y="58" width="520" height="28" fill="#D72638" opacity="0.74"/>
+    <text x="470" y="55" text-anchor="start" class="head">رسانه‌ها و نهادهای انتقال</text>
+    <text x="470" y="140" text-anchor="start" class="item">نشریات دانشجویی</text>
+    <text x="470" y="200" text-anchor="start" class="item">New Left Review</text>
+    <text x="470" y="260" text-anchor="start" class="item">گروه‌های مطالعه و دانشگاه‌ها</text>
+    <text x="470" y="320" text-anchor="start" class="item">تظاهرات خیابانی</text>
+    <text x="470" y="380" text-anchor="start" class="item">موسیقی، سینما و هنر اعتراضی</text>
+    <text x="470" y="440" text-anchor="start" class="item">انتشارات چپ</text>
+    <text x="470" y="500" text-anchor="start" class="item">کمون‌ها و فضاهای ضدفرهنگ</text>
+    <text x="470" y="560" text-anchor="start" class="item">شبکه‌های جنبشی فراملی</text>
+  </g>
+
+  <g transform="translate(1300,260)">
+    <rect x="0" y="0" width="440" height="650" rx="34" fill="#D72638" opacity="0.16" stroke="#D72638" stroke-opacity="0.45"/>
+    <text x="390" y="65" text-anchor="start" class="head">پروفایل غالب</text>
+
+    <text x="390" y="160" text-anchor="start" class="item">دانشگاهی</text>
+    <rect x="45" y="130" width="250" height="24" rx="12" fill="#FFFFFF" opacity="0.10"/>
+    <rect x="45" y="130" width="210" height="24" rx="12" fill="#F6C15A" opacity="0.90"/>
+
+    <text x="390" y="250" text-anchor="start" class="item">شهری</text>
+    <rect x="45" y="220" width="250" height="24" rx="12" fill="#FFFFFF" opacity="0.10"/>
+    <rect x="45" y="220" width="195" height="24" rx="12" fill="#F6C15A" opacity="0.90"/>
+
+    <text x="390" y="340" text-anchor="start" class="item">جوان</text>
+    <rect x="45" y="310" width="250" height="24" rx="12" fill="#FFFFFF" opacity="0.10"/>
+    <rect x="45" y="310" width="225" height="24" rx="12" fill="#F6C15A" opacity="0.90"/>
+
+    <text x="390" y="430" text-anchor="start" class="item">فرهنگی ـ رسانه‌ای</text>
+    <rect x="45" y="400" width="250" height="24" rx="12" fill="#FFFFFF" opacity="0.10"/>
+    <rect x="45" y="400" width="205" height="24" rx="12" fill="#F6C15A" opacity="0.90"/>
+
+    <text x="390" y="530" text-anchor="start" class="small">در مقایسه با چپ سنتی، پایگاه چپ نو</text>
+    <text x="390" y="565" text-anchor="start" class="small">کمتر حزبی ـ اتحادیه‌ای و بیشتر</text>
+    <text x="390" y="600" text-anchor="start" class="small">دانشگاهی، شهری و جنبشی بود.</text>
+  </g>
+
+  <text x="1740" y="1000" text-anchor="start" class="note">نکته: چون چپ نو حزب متمرکز نبود، دموگرافی آن را باید در شبکه‌های جنبشی، دانشگاهی و فرهنگی سنجید.</text>
+</svg>

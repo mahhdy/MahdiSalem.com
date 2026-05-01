@@ -1,0 +1,73 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg27" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080808"/>
+      <stop offset="55%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#310A12"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:66px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .qnum { font-family:"Segoe UI",Arial,sans-serif; font-size:42px; font-weight:900; fill:#F6C15A; }
+      .question { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:31px; font-weight:850; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .hint { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:23px; fill:#CCCCCC; direction:rtl; unicode-bidi:bidi-override; }
+      .note { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:26px; fill:#DADADA; direction:rtl; unicode-bidi:bidi-override; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg27)"/>
+  <circle cx="260" cy="820" r="360" fill="#D72638" opacity="0.08"/>
+  <circle cx="1660" cy="260" r="320" fill="#D72638" opacity="0.09"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 27 / DISCUSSION QUESTIONS</text>
+  <text x="1740" y="155" text-anchor="start" class="title">پرسش‌های بحث و ارائه کلاسی</text>
+  <line x1="790" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <g transform="translate(200,260)">
+    <rect x="0" y="0" width="1520" height="650" rx="36" fill="#FFFFFF" opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.12"/>
+
+    <g transform="translate(70,70)">
+      <rect x="0" y="0" width="660" height="120" rx="24" fill="#D72638" opacity="0.18" stroke="#D72638" stroke-opacity="0.45"/>
+      <text x="55" y="72" class="qnum">01</text>
+      <text x="610" y="50" text-anchor="start" class="question">آیا چپ نو، چپ را نجات داد؟</text>
+      <text x="610" y="88" text-anchor="start" class="hint">یا آن را از مسئله طبقه و اقتصاد سیاسی دور کرد؟</text>
+    </g>
+
+    <g transform="translate(790,70)">
+      <rect x="0" y="0" width="660" height="120" rx="24" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="55" y="72" class="qnum">02</text>
+      <text x="610" y="50" text-anchor="start" class="question">آزادی از نگاه چپ نو چیست؟</text>
+      <text x="610" y="88" text-anchor="start" class="hint">حقوق فردی، رهایی ساختاری، یا سبک زندگی رها؟</text>
+    </g>
+
+    <g transform="translate(70,235)">
+      <rect x="0" y="0" width="660" height="120" rx="24" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="55" y="72" class="qnum">03</text>
+      <text x="610" y="50" text-anchor="start" class="question">آیا سیاست هویت میراث چپ نو است؟</text>
+      <text x="610" y="88" text-anchor="start" class="hint">اگر بله، آیا این میراث سازنده است یا تفرقه‌زا؟</text>
+    </g>
+
+    <g transform="translate(790,235)">
+      <rect x="0" y="0" width="660" height="120" rx="24" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="55" y="72" class="qnum">04</text>
+      <text x="610" y="50" text-anchor="start" class="question">چرا دانشگاه برای چپ نو مهم شد؟</text>
+      <text x="610" y="88" text-anchor="start" class="hint">دانشگاه به‌مثابه محل تولید دانش یا محل تولید سلطه؟</text>
+    </g>
+
+    <g transform="translate(70,400)">
+      <rect x="0" y="0" width="660" height="120" rx="24" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="55" y="72" class="qnum">05</text>
+      <text x="610" y="50" text-anchor="start" class="question">آیا چپ نو برنامه سیاسی داشت؟</text>
+      <text x="610" y="88" text-anchor="start" class="hint">یا بیشتر زبان اعتراض، نقد و جنبش بود؟</text>
+    </g>
+
+    <g transform="translate(790,400)">
+      <rect x="0" y="0" width="660" height="120" rx="24" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+      <text x="55" y="72" class="qnum">06</text>
+      <text x="610" y="50" text-anchor="start" class="question">امروز چه چیزی از چپ نو باقی مانده؟</text>
+      <text x="610" y="88" text-anchor="start" class="hint">فمینیسم، محیط زیست، ضدنژادپرستی، نقد رسانه، عدالت اجتماعی؟</text>
+    </g>
+  </g>
+
+  <text x="1740" y="990" text-anchor="start" class="note">این اسلاید برای پایان ارائه، بحث گروهی، یا طراحی سؤال امتحانی قابل استفاده است.</text>
+</svg>

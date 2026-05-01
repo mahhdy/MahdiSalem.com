@@ -1,0 +1,60 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg28" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080808"/>
+      <stop offset="55%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#310A12"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:68px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .head { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:34px; font-weight:900; fill:#F6C15A; direction:rtl; unicode-bidi:bidi-override; }
+      .ref { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:26px; fill:#E6E6E6; direction:rtl; unicode-bidi:bidi-override; }
+      .latin { font-family:"Segoe UI",Arial,sans-serif; font-size:24px; fill:#DCDCDC; }
+      .note { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:25px; fill:#CFCFCF; direction:rtl; unicode-bidi:bidi-override; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg28)"/>
+  <circle cx="280" cy="820" r="370" fill="#D72638" opacity="0.08"/>
+  <circle cx="1640" cy="260" r="330" fill="#D72638" opacity="0.09"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 28 / SUGGESTED REFERENCES</text>
+  <text x="1740" y="155" text-anchor="start" class="title">منابع پیشنهادی برای مطالعه بیشتر</text>
+  <line x1="715" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <g transform="translate(170,255)">
+    <rect x="0" y="0" width="760" height="675" rx="34" fill="#FFFFFF" opacity="0.055" stroke="#FFFFFF" stroke-opacity="0.13"/>
+    <text x="700" y="65" text-anchor="start" class="head">متون نظری و فلسفی</text>
+
+    <text x="700" y="130" text-anchor="start" class="ref">• هربرت مارکوزه — انسان تک‌ساحتی</text>
+    <text x="700" y="180" text-anchor="start" class="ref">• هربرت مارکوزه — اروس و تمدن</text>
+    <text x="700" y="230" text-anchor="start" class="ref">• آدورنو و هورکهایمر — دیالکتیک روشنگری</text>
+    <text x="700" y="280" text-anchor="start" class="ref">• سی. رایت میلز — نخبگان قدرت</text>
+    <text x="700" y="330" text-anchor="start" class="ref">• سی. رایت میلز — نامه‌ای به چپ نو</text>
+    <text x="700" y="380" text-anchor="start" class="ref">• گای دبور — جامعه نمایش</text>
+    <text x="700" y="430" text-anchor="start" class="ref">• اریش فروم — گریز از آزادی</text>
+    <text x="700" y="480" text-anchor="start" class="ref">• ژان پل سارتر — اگزیستانسیالیسم و تعهد سیاسی</text>
+    <text x="70" y="610" class="latin">CRITICAL THEORY / ALIENATION / CULTURE INDUSTRY</text>
+  </g>
+
+  <g transform="translate(990,255)">
+    <rect x="0" y="0" width="760" height="675" rx="34" fill="#FFFFFF" opacity="0.055" stroke="#FFFFFF" stroke-opacity="0.13"/>
+    <text x="700" y="65" text-anchor="start" class="head">متون تاریخی، جنبشی و فرهنگی</text>
+
+    <text x="700" y="130" text-anchor="start" class="ref">• SDS — بیانیه پورت هورون</text>
+    <text x="700" y="180" text-anchor="start" class="ref">• فرانتس فانون — دوزخیان زمین</text>
+    <text x="700" y="230" text-anchor="start" class="ref">• سیمون دوبووار — جنس دوم</text>
+    <text x="700" y="280" text-anchor="start" class="ref">• ریموند ویلیامز — فرهنگ و جامعه</text>
+    <text x="700" y="330" text-anchor="start" class="ref">• ای. پی. تامپسون — ساختن طبقه کارگر انگلیس</text>
+    <text x="700" y="380" text-anchor="start" class="ref">• استوارت هال — مطالعات فرهنگی و ایدئولوژی</text>
+    <text x="700" y="430" text-anchor="start" class="ref">• New Left Review — آرشیو و تاریخچه چپ نو</text>
+    <text x="700" y="480" text-anchor="start" class="ref">• تاریخ جنبش‌های ۱۹۶۸، ضدجنگ و حقوق مدنی</text>
+    <text x="70" y="610" class="latin">MOVEMENTS / 1968 / PARTICIPATORY DEMOCRACY</text>
+  </g>
+
+  <g transform="translate(300,960)">
+    <rect x="0" y="0" width="1320" height="62" rx="20" fill="#000000" opacity="0.35"/>
+    <text x="1270" y="42" text-anchor="start" class="note">پیشنهاد: این اسلاید را در پایان ارائه یا به‌عنوان صفحه منابع فایل پاورپوینت قرار دهید.</text>
+  </g>
+</svg>

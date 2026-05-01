@@ -1,0 +1,76 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg10" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D0D0E"/>
+      <stop offset="55%" stop-color="#191919"/>
+      <stop offset="100%" stop-color="#2B0A10"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:66px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .th { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:34px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .td { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:27px; fill:#E6E6E6; direction:rtl; unicode-bidi:bidi-override; }
+      .axis { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:28px; font-weight:800; fill:#F6C15A; direction:rtl; unicode-bidi:bidi-override; }
+      .note { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:27px; fill:#DADADA; direction:rtl; unicode-bidi:bidi-override; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg10)"/>
+  <circle cx="260" cy="220" r="300" fill="#D72638" opacity="0.08"/>
+  <circle cx="1660" cy="850" r="340" fill="#D72638" opacity="0.09"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 10 / COMPARE WITH LIBERALISM</text>
+  <text x="1740" y="155" text-anchor="start" class="title">چپ نو در برابر لیبرالیسم</text>
+  <line x1="790" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <g transform="translate(190,250)">
+    <rect x="0" y="0" width="1540" height="640" rx="30" fill="#FFFFFF" opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.12"/>
+
+    <rect x="0" y="0" width="1540" height="84" rx="30" fill="#D72638" opacity="0.76"/>
+    <rect x="0" y="58" width="1540" height="26" fill="#D72638" opacity="0.76"/>
+    <line x1="505" y1="0" x2="505" y2="640" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="3"/>
+    <line x1="1035" y1="0" x2="1035" y2="640" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="3"/>
+
+    <g stroke="#FFFFFF" stroke-opacity="0.11" stroke-width="2">
+      <line x1="0" y1="175" x2="1540" y2="175"/>
+      <line x1="0" y1="268" x2="1540" y2="268"/>
+      <line x1="0" y1="361" x2="1540" y2="361"/>
+      <line x1="0" y1="454" x2="1540" y2="454"/>
+      <line x1="0" y1="547" x2="1540" y2="547"/>
+    </g>
+
+    <text x="1480" y="54" text-anchor="start" class="th">محور</text>
+    <text x="980" y="54" text-anchor="start" class="th">لیبرالیسم</text>
+    <text x="455" y="54" text-anchor="start" class="th">چپ نو</text>
+
+    <text x="1480" y="135" text-anchor="start" class="axis">آزادی</text>
+    <text x="980" y="135" text-anchor="start" class="td">حقوق فردی و آزادی قانونی</text>
+    <text x="455" y="118" text-anchor="start" class="td">آزادی از سلطه ساختاری،</text>
+    <text x="455" y="150" text-anchor="start" class="td">اقتصادی و فرهنگی</text>
+
+    <text x="1480" y="227" text-anchor="start" class="axis">دولت</text>
+    <text x="980" y="227" text-anchor="start" class="td">محدود یا رفاهی</text>
+    <text x="455" y="227" text-anchor="start" class="td">مشکوک به بوروکراسی و تمرکز قدرت</text>
+
+    <text x="1480" y="320" text-anchor="start" class="axis">بازار</text>
+    <text x="980" y="320" text-anchor="start" class="td">قلمرو انتخاب فردی</text>
+    <text x="455" y="320" text-anchor="start" class="td">سازوکار نابرابری، مصرف‌زدگی و بیگانگی</text>
+
+    <text x="1480" y="413" text-anchor="start" class="axis">فرد</text>
+    <text x="980" y="413" text-anchor="start" class="td">فرد خودمختار حقوقی</text>
+    <text x="455" y="413" text-anchor="start" class="td">فرد ساخته‌شده در تاریخ، فرهنگ و قدرت</text>
+
+    <text x="1480" y="506" text-anchor="start" class="axis">دموکراسی</text>
+    <text x="980" y="506" text-anchor="start" class="td">انتخابات و نمایندگی</text>
+    <text x="455" y="506" text-anchor="start" class="td">مشارکت مستقیم و دموکراسی از پایین</text>
+
+    <text x="1480" y="599" text-anchor="start" class="axis">تبعیض</text>
+    <text x="980" y="599" text-anchor="start" class="td">مسئله حقوقی ـ قانونی</text>
+    <text x="455" y="599" text-anchor="start" class="td">مسئله نهادی، تاریخی، فرهنگی و اقتصادی</text>
+  </g>
+
+  <g transform="translate(250,925)">
+    <rect x="0" y="0" width="1420" height="80" rx="22" fill="#000000" opacity="0.32"/>
+    <text x="1370" y="52" text-anchor="start" class="note">جمع‌بندی: چپ نو می‌گفت لیبرالیسم آزادی را بیش از حد فردی و حقوقی می‌فهمد.</text>
+  </g>
+</svg>

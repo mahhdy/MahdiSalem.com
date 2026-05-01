@@ -1,0 +1,55 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg19" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0B0C"/>
+      <stop offset="55%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#310A11"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:66px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .head { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:36px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .body { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:26px; fill:#E3E3E3; direction:rtl; unicode-bidi:bidi-override; }
+      .small { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:23px; fill:#C8C8C8; direction:rtl; unicode-bidi:bidi-override; }
+      .label { font-family:"Segoe UI",Arial,sans-serif; font-size:24px; fill:#F6C15A; font-weight:800; letter-spacing:1px; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg19)"/>
+  <circle cx="240" cy="250" r="310" fill="#D72638" opacity="0.08"/>
+  <circle cx="1660" cy="840" r="390" fill="#D72638" opacity="0.10"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 19 / MAJOR CRITICISMS</text>
+  <text x="1740" y="155" text-anchor="start" class="title">بزرگ‌ترین انتقادات به چپ نو</text>
+  <line x1="760" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <g transform="translate(160,270)">
+    <rect x="0" y="0" width="760" height="630" rx="34" fill="#FFFFFF" opacity="0.055" stroke="#FFFFFF" stroke-opacity="0.13"/>
+    <rect x="0" y="0" width="760" height="88" rx="34" fill="#D72638" opacity="0.74"/>
+    <rect x="0" y="60" width="760" height="28" fill="#D72638" opacity="0.74"/>
+    <text x="700" y="56" text-anchor="start" class="head">نقدهای راست و محافظه‌کاران</text>
+    <text x="700" y="150" text-anchor="start" class="body">• تضعیف نظم اجتماعی، خانواده، دین و میهن‌دوستی</text>
+    <text x="700" y="220" text-anchor="start" class="body">• دامن‌زدن به نسبی‌گرایی اخلاقی و بی‌ثباتی فرهنگی</text>
+    <text x="700" y="290" text-anchor="start" class="body">• سیاسی‌کردن دانشگاه و آموزش عالی</text>
+    <text x="700" y="360" text-anchor="start" class="body">• بی‌اعتمادی افراطی به اقتدار، قانون و سنت</text>
+    <text x="700" y="450" text-anchor="start" class="small">از نگاه این منتقدان، چپ نو بنیان «فرهنگ مشترک»</text>
+    <text x="700" y="488" text-anchor="start" class="small">و نظم اجتماعی لیبرال ـ محافظه‌کارانه را فرسوده کرد.</text>
+    <text x="60" y="585" class="label">RIGHT / CONSERVATIVE CRITIQUE</text>
+  </g>
+
+  <g transform="translate(1000,270)">
+    <rect x="0" y="0" width="760" height="630" rx="34" fill="#FFFFFF" opacity="0.055" stroke="#FFFFFF" stroke-opacity="0.13"/>
+    <rect x="0" y="0" width="760" height="88" rx="34" fill="#D72638" opacity="0.74"/>
+    <rect x="0" y="60" width="760" height="28" fill="#D72638" opacity="0.74"/>
+    <text x="700" y="56" text-anchor="start" class="head">نقدهای لیبرال و چپ سنتی</text>
+    <text x="700" y="150" text-anchor="start" class="body">• بی‌توجهی کافی به آزادی‌های لیبرال و پلورالیسم</text>
+    <text x="700" y="220" text-anchor="start" class="body">• رمانتیسم انقلابی و فقدان راهبرد پایدار قدرت</text>
+    <text x="700" y="290" text-anchor="start" class="body">• فاصله‌گرفتن از طبقه کارگر و اقتصاد سیاسی</text>
+    <text x="700" y="360" text-anchor="start" class="body">• تبدیل سیاست طبقاتی به فرهنگ، هویت و سبک زندگی</text>
+    <text x="700" y="450" text-anchor="start" class="small">از نگاه این منتقدان، چپ نو شور اخلاقی داشت،</text>
+    <text x="700" y="488" text-anchor="start" class="small">اما سازمان، استراتژی و برنامه اقتصادی منسجم کم داشت.</text>
+    <text x="60" y="585" class="label">LIBERAL / OLD LEFT CRITIQUE</text>
+  </g>
+
+  <text x="1740" y="990" text-anchor="start" class="small">نکته ارائه: انتقادها را نه صرفاً خصمانه، بلکه به‌عنوان بخشی از فهم میراث چپ نو توضیح دهید.</text>
+</svg>

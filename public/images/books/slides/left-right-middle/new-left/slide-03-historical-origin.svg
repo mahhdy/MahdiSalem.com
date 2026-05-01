@@ -1,0 +1,61 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0C0C0D"/>
+      <stop offset="60%" stop-color="#19191C"/>
+      <stop offset="100%" stop-color="#2E1114"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:68px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .year { font-family:"Segoe UI",Arial,sans-serif; font-size:44px; font-weight:900; fill:#FFFFFF; }
+      .body { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:30px; fill:#E9E9E9; direction:rtl; unicode-bidi:bidi-override; }
+      .small { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:25px; fill:#BBBBBB; direction:rtl; unicode-bidi:bidi-override; }
+      .quote { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:34px; font-weight:700; fill:#F6C15A; direction:rtl; unicode-bidi:bidi-override; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg3)"/>
+  <path d="M0,0 L620,0 C500,240 300,430 0,540 Z" fill="#D72638" opacity="0.12"/>
+  <path d="M1920,1080 L1280,1080 C1410,820 1645,650 1920,540 Z" fill="#D72638" opacity="0.12"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 03 / HISTORICAL ORIGIN</text>
+  <text x="1740" y="155" text-anchor="start" class="title">منشأ تاریخی و مبدا وجودی</text>
+  <line x1="840" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Timeline -->
+  <line x1="260" y1="535" x2="1660" y2="535" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="8" stroke-linecap="round"/>
+  <g>
+    <circle cx="360" cy="535" r="28" fill="#D72638"/>
+    <text x="360" y="455" text-anchor="middle" class="year">1956</text>
+    <text x="500" y="595" text-anchor="start" class="body">مجارستان و سوئز</text>
+    <text x="500" y="635" text-anchor="start" class="small">بحران اخلاقی شوروی و امپریالیسم غربی</text>
+  </g>
+
+  <g>
+    <circle cx="700" cy="535" r="28" fill="#D72638"/>
+    <text x="700" y="455" text-anchor="middle" class="year">1960</text>
+    <text x="840" y="595" text-anchor="start" class="body">New Left Review</text>
+    <text x="840" y="635" text-anchor="start" class="small">صورت‌بندی نظری چپ نو در بریتانیا</text>
+  </g>
+
+  <g>
+    <circle cx="1040" cy="535" r="28" fill="#D72638"/>
+    <text x="1040" y="455" text-anchor="middle" class="year">1962</text>
+    <text x="1180" y="595" text-anchor="start" class="body">بیانیه پورت هورون</text>
+    <text x="1180" y="635" text-anchor="start" class="small">دموکراسی مشارکتی در چپ نو آمریکا</text>
+  </g>
+
+  <g>
+    <circle cx="1380" cy="535" r="28" fill="#D72638"/>
+    <text x="1380" y="455" text-anchor="middle" class="year">1968</text>
+    <text x="1520" y="595" text-anchor="start" class="body">لحظه انفجاری</text>
+    <text x="1520" y="635" text-anchor="start" class="small">فرانسه، پراگ، آمریکا، مکزیک، آلمان</text>
+  </g>
+
+  <g transform="translate(260,760)">
+    <rect x="0" y="0" width="1400" height="150" rx="30" fill="#FFFFFF" opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <text x="1325" y="58" text-anchor="start" class="quote">چرا پدید آمد؟</text>
+    <text x="1325" y="108" text-anchor="start" class="body">چون هم سرمایه‌داری مصرفی و هم کمونیسم بوروکراتیک، وعده رهایی انسان را ناکافی یا شکست‌خورده نشان می‌دادند.</text>
+  </g>
+</svg>

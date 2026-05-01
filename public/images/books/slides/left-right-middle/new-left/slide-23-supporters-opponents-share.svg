@@ -1,0 +1,79 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg23" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0A0B"/>
+      <stop offset="58%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#310B12"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:64px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .th { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:32px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .td { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:23px; fill:#E5E5E5; direction:rtl; unicode-bidi:bidi-override; }
+      .axis { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:26px; font-weight:900; fill:#F6C15A; direction:rtl; unicode-bidi:bidi-override; }
+      .note { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:26px; fill:#DADADA; direction:rtl; unicode-bidi:bidi-override; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg23)"/>
+  <circle cx="250" cy="830" r="370" fill="#D72638" opacity="0.08"/>
+  <circle cx="1660" cy="260" r="320" fill="#D72638" opacity="0.09"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 23 / SUPPORTERS AND OPPONENTS</text>
+  <text x="1740" y="155" text-anchor="start" class="title">سهم طرفداران و مخالفان در حوزه‌های مختلف</text>
+  <line x1="560" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <g transform="translate(155,245)">
+    <rect x="0" y="0" width="1610" height="705" rx="30" fill="#FFFFFF" opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <rect x="0" y="0" width="1610" height="84" rx="30" fill="#D72638" opacity="0.76"/>
+    <rect x="0" y="58" width="1610" height="26" fill="#D72638" opacity="0.76"/>
+
+    <line x1="415" y1="0" x2="415" y2="705" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="3"/>
+    <line x1="1010" y1="0" x2="1010" y2="705" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="3"/>
+
+    <g stroke="#FFFFFF" stroke-opacity="0.11" stroke-width="2">
+      <line x1="0" y1="175" x2="1610" y2="175"/>
+      <line x1="0" y1="266" x2="1610" y2="266"/>
+      <line x1="0" y1="357" x2="1610" y2="357"/>
+      <line x1="0" y1="448" x2="1610" y2="448"/>
+      <line x1="0" y1="539" x2="1610" y2="539"/>
+      <line x1="0" y1="630" x2="1610" y2="630"/>
+    </g>
+
+    <text x="1550" y="54" text-anchor="start" class="th">حوزه</text>
+    <text x="950" y="54" text-anchor="start" class="th">سهم طرفداران</text>
+    <text x="365" y="54" text-anchor="start" class="th">سهم مخالفان</text>
+
+    <text x="1550" y="135" text-anchor="start" class="axis">دانشگاه</text>
+    <text x="950" y="121" text-anchor="start" class="td">اثر بسیار بالا؛ نظریه انتقادی، مطالعات فرهنگی،</text>
+    <text x="950" y="151" text-anchor="start" class="td">جنسیت، نژاد و پسااستعمار</text>
+    <text x="365" y="135" text-anchor="start" class="td">نقد سیاسی‌شدن دانشگاه و آموزش</text>
+
+    <text x="1550" y="226" text-anchor="start" class="axis">فرهنگ عمومی</text>
+    <text x="950" y="226" text-anchor="start" class="td">اثر زیاد بر موسیقی، سینما، ادبیات و سبک زندگی</text>
+    <text x="365" y="226" text-anchor="start" class="td">واکنش محافظه‌کارانه و جنگ فرهنگی</text>
+
+    <text x="1550" y="317" text-anchor="start" class="axis">سیاست حزبی</text>
+    <text x="950" y="317" text-anchor="start" class="td">اثر غیرمستقیم بر احزاب سبز، سوسیال‌دموکرات و چپ رادیکال</text>
+    <text x="365" y="317" text-anchor="start" class="td">احزاب راست، لیبرال نظم‌گرا و ضدکمونیست‌ها</text>
+
+    <text x="1550" y="408" text-anchor="start" class="axis">جنبش‌های اجتماعی</text>
+    <text x="950" y="394" text-anchor="start" class="td">اثر بالا؛ ضدجنگ، فمینیسم، ضدنژادپرستی،</text>
+    <text x="950" y="424" text-anchor="start" class="td">محیط زیست و آزادی دانشگاه</text>
+    <text x="365" y="408" text-anchor="start" class="td">دولت، پلیس، محافظه‌کاران، بخشی از اتحادیه‌ها</text>
+
+    <text x="1550" y="499" text-anchor="start" class="axis">طبقه کارگر صنعتی</text>
+    <text x="950" y="499" text-anchor="start" class="td">پیوند محدودتر و ناپایدارتر نسبت به چپ سنتی</text>
+    <text x="365" y="499" text-anchor="start" class="td">نقد از سوی چپ سنتی و اتحادیه‌های کارگری</text>
+
+    <text x="1550" y="590" text-anchor="start" class="axis">اقتصاد سیاسی</text>
+    <text x="950" y="590" text-anchor="start" class="td">نقد سرمایه‌داری اثرگذار، اما کمتر برنامه‌مند</text>
+    <text x="365" y="590" text-anchor="start" class="td">اقتصاددانان لیبرال، نئولیبرال و محافظه‌کار</text>
+
+    <text x="1550" y="675" text-anchor="start" class="axis">نتیجه</text>
+    <text x="950" y="675" text-anchor="start" class="td">موفقیت بیشتر در زبان سیاسی، فرهنگ و جنبش‌ها</text>
+    <text x="365" y="675" text-anchor="start" class="td">مقاومت قوی در سیاست رسمی و نهادهای نظم‌گرا</text>
+  </g>
+
+  <text x="1740" y="1010" text-anchor="start" class="note">چپ نو در قدرت دولتی کمتر موفق بود، اما در فرهنگ، دانشگاه و زبان جنبش‌های اجتماعی اثر عمیق گذاشت.</text>
+</svg>

@@ -1,0 +1,94 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg12" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0B0C"/>
+      <stop offset="58%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#300B12"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:66px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .section { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:36px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .name { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:28px; font-weight:800; fill:#F1F1F1; direction:rtl; unicode-bidi:bidi-override; }
+      .role { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:22px; fill:#CFCFCF; direction:rtl; unicode-bidi:bidi-override; }
+      .latin { font-family:"Segoe UI",Arial,sans-serif; font-size:20px; fill:#F6C15A; font-weight:700; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg12)"/>
+  <circle cx="250" cy="250" r="290" fill="#D72638" opacity="0.08"/>
+  <circle cx="1640" cy="820" r="360" fill="#D72638" opacity="0.09"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 12 / KEY FIGURES</text>
+  <text x="1740" y="155" text-anchor="start" class="title">افراد کلیدی و شاخص</text>
+  <line x1="910" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Two main panels -->
+  <g transform="translate(160,255)">
+    <rect x="0" y="0" width="760" height="710" rx="35" fill="#FFFFFF" opacity="0.055" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <rect x="0" y="0" width="760" height="92" rx="35" fill="#D72638" opacity="0.72"/>
+    <rect x="0" y="62" width="760" height="30" fill="#D72638" opacity="0.72"/>
+    <text x="700" y="58" text-anchor="start" class="section">نظریه‌پردازان و الهام‌بخش‌ها</text>
+
+    <g transform="translate(50,135)">
+      <circle cx="38" cy="38" r="38" fill="#D72638" opacity="0.85"/>
+      <text x="650" y="35" text-anchor="start" class="name">هربرت مارکوزه</text>
+      <text x="650" y="68" text-anchor="start" class="role">نقد جامعه صنعتی، میل، رهایی</text>
+
+      <circle cx="38" cy="128" r="38" fill="#FFFFFF" opacity="0.10"/>
+      <text x="650" y="125" text-anchor="start" class="name">سی. رایت میلز</text>
+      <text x="650" y="158" text-anchor="start" class="role">نخبگان قدرت، نامه به چپ نو</text>
+
+      <circle cx="38" cy="218" r="38" fill="#FFFFFF" opacity="0.10"/>
+      <text x="650" y="215" text-anchor="start" class="name">فرانتس فانون</text>
+      <text x="650" y="248" text-anchor="start" class="role">ضداستعمار، روان‌شناسی استعمار</text>
+
+      <circle cx="38" cy="308" r="38" fill="#FFFFFF" opacity="0.10"/>
+      <text x="650" y="305" text-anchor="start" class="name">ریموند ویلیامز و ای. پی. تامپسون</text>
+      <text x="650" y="338" text-anchor="start" class="role">فرهنگ، طبقه، تاریخ اجتماعی</text>
+
+      <circle cx="38" cy="398" r="38" fill="#FFFFFF" opacity="0.10"/>
+      <text x="650" y="395" text-anchor="start" class="name">استوارت هال</text>
+      <text x="650" y="428" text-anchor="start" class="role">مطالعات فرهنگی، ایدئولوژی، رسانه</text>
+
+      <circle cx="38" cy="488" r="38" fill="#FFFFFF" opacity="0.10"/>
+      <text x="650" y="485" text-anchor="start" class="name">گای دبور</text>
+      <text x="650" y="518" text-anchor="start" class="role">جامعه نمایش، نقد کالایی‌شدن زندگی</text>
+    </g>
+  </g>
+
+  <g transform="translate(1000,255)">
+    <rect x="0" y="0" width="760" height="710" rx="35" fill="#FFFFFF" opacity="0.055" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <rect x="0" y="0" width="760" height="92" rx="35" fill="#D72638" opacity="0.72"/>
+    <rect x="0" y="62" width="760" height="30" fill="#D72638" opacity="0.72"/>
+    <text x="700" y="58" text-anchor="start" class="section">کنشگران و چهره‌های جنبشی</text>
+
+    <g transform="translate(50,135)">
+      <circle cx="38" cy="38" r="38" fill="#D72638" opacity="0.85"/>
+      <text x="650" y="35" text-anchor="start" class="name">تام هیدن</text>
+      <text x="650" y="68" text-anchor="start" class="role">SDS و بیانیه پورت هورون</text>
+
+      <circle cx="38" cy="128" r="38" fill="#FFFFFF" opacity="0.10"/>
+      <text x="650" y="125" text-anchor="start" class="name">ماریو ساویو</text>
+      <text x="650" y="158" text-anchor="start" class="role">جنبش آزادی بیان برکلی</text>
+
+      <circle cx="38" cy="218" r="38" fill="#FFFFFF" opacity="0.10"/>
+      <text x="650" y="215" text-anchor="start" class="name">آنجلا دیویس</text>
+      <text x="650" y="248" text-anchor="start" class="role">ضدنژادپرستی، فمینیسم، چپ رادیکال</text>
+
+      <circle cx="38" cy="308" r="38" fill="#FFFFFF" opacity="0.10"/>
+      <text x="650" y="305" text-anchor="start" class="name">دنیل کوهن-بندیت</text>
+      <text x="650" y="338" text-anchor="start" class="role">مه ۱۹۶۸ فرانسه</text>
+
+      <circle cx="38" cy="398" r="38" fill="#FFFFFF" opacity="0.10"/>
+      <text x="650" y="395" text-anchor="start" class="name">ابی هافمن</text>
+      <text x="650" y="428" text-anchor="start" class="role">ضدفرهنگ، اعتراض نمایشی، Yippies</text>
+
+      <circle cx="38" cy="488" r="38" fill="#FFFFFF" opacity="0.10"/>
+      <text x="650" y="485" text-anchor="start" class="name">فعالان SNCC و جنبش حقوق مدنی</text>
+      <text x="650" y="518" text-anchor="start" class="role">ضدنژادپرستی و دموکراسی مشارکتی</text>
+    </g>
+  </g>
+
+  <text x="960" y="1015" text-anchor="middle" class="latin">FROM THEORY TO MOVEMENT / FROM UNIVERSITY TO STREET</text>
+</svg>

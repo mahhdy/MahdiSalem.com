@@ -1,0 +1,53 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg8" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101010"/>
+      <stop offset="50%" stop-color="#181818"/>
+      <stop offset="100%" stop-color="#300B11"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:68px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .wordBig { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:56px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .wordMed { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:40px; font-weight:800; fill:#EFEFEF; direction:rtl; unicode-bidi:bidi-override; }
+      .wordSmall { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:31px; font-weight:700; fill:#CFCFCF; direction:rtl; unicode-bidi:bidi-override; }
+      .note { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:27px; fill:#DADADA; direction:rtl; unicode-bidi:bidi-override; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg8)"/>
+  <circle cx="960" cy="600" r="410" fill="#D72638" opacity="0.06"/>
+  <circle cx="960" cy="600" r="260" fill="#FFFFFF" opacity="0.035"/>
+  <path d="M0,930 C290,820 470,1010 770,875 C1040,755 1260,880 1470,940 C1655,995 1780,935 1920,850 L1920,1080 L0,1080 Z" fill="#D72638" opacity="0.16"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 08 / MAIN CONCERNS</text>
+  <text x="1740" y="155" text-anchor="start" class="title">موضوعات و دغدغه‌های اصلی</text>
+  <line x1="815" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Word cloud -->
+  <g>
+    <rect x="245" y="260" width="1430" height="620" rx="45" fill="#FFFFFF" opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.10"/>
+
+    <text x="960" y="420" text-anchor="middle" class="wordBig">دموکراسی مشارکتی</text>
+    <text x="1245" y="525" text-anchor="middle" class="wordMed">ضدجنگ و ضدنظامی‌گری</text>
+    <text x="680" y="525" text-anchor="middle" class="wordMed" fill="#F6C15A">ضد امپریالیسم</text>
+
+    <text x="480" y="650" text-anchor="middle" class="wordSmall">حقوق مدنی</text>
+    <text x="770" y="650" text-anchor="middle" class="wordSmall">ضدنژادپرستی</text>
+    <text x="1090" y="650" text-anchor="middle" class="wordSmall">آزادی دانشگاه</text>
+    <text x="1400" y="650" text-anchor="middle" class="wordSmall">آزادی بیان</text>
+
+    <text x="520" y="760" text-anchor="middle" class="wordSmall">فمینیسم</text>
+    <text x="805" y="760" text-anchor="middle" class="wordSmall">آزادی جنسی</text>
+    <text x="1110" y="760" text-anchor="middle" class="wordSmall">محیط زیست</text>
+    <text x="1420" y="760" text-anchor="middle" class="wordSmall">نقد مصرف‌گرایی</text>
+
+    <text x="620" y="345" text-anchor="middle" class="wordSmall">فرهنگ جوانان</text>
+    <text x="1320" y="345" text-anchor="middle" class="wordSmall">خودگردانی و شوراها</text>
+  </g>
+
+  <g transform="translate(290,925)">
+    <rect x="0" y="0" width="1340" height="82" rx="22" fill="#000000" opacity="0.30"/>
+    <text x="1290" y="53" text-anchor="start" class="note">چپ نو سیاست را از دولت و حزب به فرهنگ، خیابان، دانشگاه، رسانه، بدن و خانه گسترش داد.</text>
+  </g>
+</svg>

@@ -1,0 +1,84 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg11" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090909"/>
+      <stop offset="52%" stop-color="#171717"/>
+      <stop offset="100%" stop-color="#320C12"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:64px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .center { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:48px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .node { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:28px; font-weight:800; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .small { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:25px; fill:#D0D0D0; direction:rtl; unicode-bidi:bidi-override; }
+      .quote { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:30px; fill:#F6C15A; font-weight:800; direction:rtl; unicode-bidi:bidi-override; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg11)"/>
+  <circle cx="960" cy="570" r="435" fill="#D72638" opacity="0.055"/>
+  <circle cx="960" cy="570" r="285" fill="#FFFFFF" opacity="0.035"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 11 / CRITIQUE OF CAPITALISM</text>
+  <text x="1740" y="155" text-anchor="start" class="title">نقد چپ نو به سرمایه‌داری</text>
+  <line x1="815" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Center -->
+  <g>
+    <circle cx="960" cy="560" r="145" fill="#D72638" opacity="0.90"/>
+    <text x="960" y="540" text-anchor="middle" class="center">سرمایه‌داری</text>
+    <text x="960" y="595" text-anchor="middle" class="small">نه فقط تولید کالا؛ تولید میل و سوژه</text>
+  </g>
+
+  <!-- Lines -->
+  <g stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="4">
+    <line x1="960" y1="560" x2="960" y2="310"/>
+    <line x1="960" y1="560" x2="1320" y2="390"/>
+    <line x1="960" y1="560" x2="1360" y2="690"/>
+    <line x1="960" y1="560" x2="960" y2="835"/>
+    <line x1="960" y1="560" x2="560" y2="690"/>
+    <line x1="960" y1="560" x2="600" y2="390"/>
+  </g>
+
+  <!-- Nodes -->
+  <g>
+    <rect x="770" y="250" width="380" height="120" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="960" y="303" text-anchor="middle" class="node">مصرف‌گرایی</text>
+    <text x="960" y="340" text-anchor="middle" class="small">نیازهای کاذب و کنترل میل</text>
+  </g>
+
+  <g>
+    <rect x="1160" y="345" width="420" height="120" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="1370" y="398" text-anchor="middle" class="node">صنعت فرهنگ</text>
+    <text x="1370" y="435" text-anchor="middle" class="small">رسانه، تبلیغات، استانداردسازی</text>
+  </g>
+
+  <g>
+    <rect x="1210" y="650" width="420" height="120" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="1420" y="703" text-anchor="middle" class="node">دانشگاه و تکنوکراسی</text>
+    <text x="1420" y="740" text-anchor="middle" class="small">علم در خدمت بازار، دولت و ارتش</text>
+  </g>
+
+  <g>
+    <rect x="770" y="795" width="380" height="120" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="960" y="848" text-anchor="middle" class="node">بیگانگی</text>
+    <text x="960" y="885" text-anchor="middle" class="small">فاصله از کار، معنا، خلاقیت</text>
+  </g>
+
+  <g>
+    <rect x="290" y="650" width="420" height="120" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="500" y="703" text-anchor="middle" class="node">نابرابری ساختاری</text>
+    <text x="500" y="740" text-anchor="middle" class="small">طبقه، نژاد، جنسیت، استعمار</text>
+  </g>
+
+  <g>
+    <rect x="340" y="345" width="420" height="120" rx="28" fill="#FFFFFF" opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <text x="550" y="398" text-anchor="middle" class="node">رفاه بدون رهایی</text>
+    <text x="550" y="435" text-anchor="middle" class="small">آزادی ظاهری در قفس مصرف</text>
+  </g>
+
+  <g transform="translate(310,945)">
+    <rect x="0" y="0" width="1300" height="78" rx="22" fill="#000000" opacity="0.32"/>
+    <text x="1250" y="50" text-anchor="start" class="quote">پرسش چپ نو: آیا جامعه مرفه، الزاماً جامعه آزاد است؟</text>
+  </g>
+</svg>

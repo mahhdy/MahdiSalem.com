@@ -1,0 +1,99 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg14" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0B0C"/>
+      <stop offset="56%" stop-color="#171719"/>
+      <stop offset="100%" stop-color="#2F0B12"/>
+    </linearGradient>
+    <style>
+      .kicker { font-family:"Segoe UI",Arial,sans-serif; font-size:28px; fill:#F6C15A; letter-spacing:3px; }
+      .title { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:66px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .year { font-family:"Segoe UI",Arial,sans-serif; font-size:38px; font-weight:900; fill:#FFFFFF; }
+      .phase { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:30px; font-weight:900; fill:#FFFFFF; direction:rtl; unicode-bidi:bidi-override; }
+      .body { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:24px; fill:#D7D7D7; direction:rtl; unicode-bidi:bidi-override; }
+      .note { font-family:"Vazirmatn","IRANSans","Segoe UI",Tahoma,sans-serif; font-size:27px; fill:#DADADA; direction:rtl; unicode-bidi:bidi-override; }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg14)"/>
+  <circle cx="250" cy="820" r="360" fill="#D72638" opacity="0.08"/>
+  <circle cx="1650" cy="250" r="310" fill="#D72638" opacity="0.09"/>
+
+  <text x="110" y="92" class="kicker">SLIDE 14 / HISTORICAL DEVELOPMENT</text>
+  <text x="1740" y="155" text-anchor="start" class="title">سیر تحولات و تغییرات</text>
+  <line x1="920" y1="190" x2="1740" y2="190" stroke="#D72638" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- Timeline -->
+  <g transform="translate(180,285)">
+    <rect x="0" y="0" width="1560" height="645" rx="36" fill="#FFFFFF" opacity="0.045" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <line x1="110" y1="315" x2="1450" y2="315" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- 1 -->
+    <g transform="translate(110,125)">
+      <line x1="0" y1="115" x2="0" y2="315" stroke="#D72638" stroke-width="5" opacity="0.8"/>
+      <circle cx="0" cy="190" r="26" fill="#D72638"/>
+      <text x="0" y="0" text-anchor="middle" class="year">1956-60</text>
+      <rect x="-125" y="25" width="250" height="135" rx="20" fill="#FFFFFF" opacity="0.07"/>
+      <text x="95" y="72" text-anchor="start" class="phase">تولد فکری</text>
+      <text x="95" y="110" text-anchor="start" class="body">بحران مجارستان و سوئز</text>
+      <text x="95" y="142" text-anchor="start" class="body">نشریات و حلقه‌ها</text>
+    </g>
+
+    <!-- 2 -->
+    <g transform="translate(380,365)">
+      <line x1="0" y1="-50" x2="0" y2="80" stroke="#D72638" stroke-width="5" opacity="0.8"/>
+      <circle cx="0" cy="-50" r="26" fill="#D72638"/>
+      <text x="0" y="140" text-anchor="middle" class="year">1960-64</text>
+      <rect x="-125" y="165" width="250" height="135" rx="20" fill="#FFFFFF" opacity="0.07"/>
+      <text x="95" y="212" text-anchor="start" class="phase">صورت‌بندی</text>
+      <text x="95" y="250" text-anchor="start" class="body">New Left Review</text>
+      <text x="95" y="282" text-anchor="start" class="body">Port Huron Statement</text>
+    </g>
+
+    <!-- 3 -->
+    <g transform="translate(650,125)">
+      <line x1="0" y1="115" x2="0" y2="315" stroke="#D72638" stroke-width="5" opacity="0.8"/>
+      <circle cx="0" cy="190" r="26" fill="#D72638"/>
+      <text x="0" y="0" text-anchor="middle" class="year">1964-68</text>
+      <rect x="-125" y="25" width="250" height="135" rx="20" fill="#FFFFFF" opacity="0.07"/>
+      <text x="95" y="72" text-anchor="start" class="phase">جنبش‌سازی</text>
+      <text x="95" y="110" text-anchor="start" class="body">دانشجویان، حقوق مدنی</text>
+      <text x="95" y="142" text-anchor="start" class="body">ضد جنگ ویتنام</text>
+    </g>
+
+    <!-- 4 -->
+    <g transform="translate(920,365)">
+      <line x1="0" y1="-50" x2="0" y2="80" stroke="#D72638" stroke-width="5" opacity="0.8"/>
+      <circle cx="0" cy="-50" r="26" fill="#D72638"/>
+      <text x="0" y="140" text-anchor="middle" class="year">1968</text>
+      <rect x="-125" y="165" width="250" height="135" rx="20" fill="#D72638" opacity="0.20" stroke="#D72638" stroke-opacity="0.45"/>
+      <text x="95" y="212" text-anchor="start" class="phase">اوج نمادین</text>
+      <text x="95" y="250" text-anchor="start" class="body">فرانسه، پراگ، آمریکا</text>
+      <text x="95" y="282" text-anchor="start" class="body">اعتراض جهانی</text>
+    </g>
+
+    <!-- 5 -->
+    <g transform="translate(1190,125)">
+      <line x1="0" y1="115" x2="0" y2="315" stroke="#D72638" stroke-width="5" opacity="0.8"/>
+      <circle cx="0" cy="190" r="26" fill="#D72638"/>
+      <text x="0" y="0" text-anchor="middle" class="year">1969-75</text>
+      <rect x="-125" y="25" width="250" height="135" rx="20" fill="#FFFFFF" opacity="0.07"/>
+      <text x="95" y="72" text-anchor="start" class="phase">انشعاب‌ها</text>
+      <text x="95" y="110" text-anchor="start" class="body">رادیکالیزه‌شدن بخشی</text>
+      <text x="95" y="142" text-anchor="start" class="body">فمینیسم و اکولوژی</text>
+    </g>
+
+    <!-- 6 -->
+    <g transform="translate(1450,365)">
+      <line x1="0" y1="-50" x2="0" y2="80" stroke="#D72638" stroke-width="5" opacity="0.8"/>
+      <circle cx="0" cy="-50" r="26" fill="#D72638"/>
+      <text x="0" y="140" text-anchor="middle" class="year">پس از 1975</text>
+      <rect x="-125" y="165" width="250" height="135" rx="20" fill="#FFFFFF" opacity="0.07"/>
+      <text x="95" y="212" text-anchor="start" class="phase">میراث دانشگاهی</text>
+      <text x="95" y="250" text-anchor="start" class="body">مطالعات فرهنگی</text>
+      <text x="95" y="282" text-anchor="start" class="body">جنسیت، نژاد، پسااستعمار</text>
+    </g>
+  </g>
+
+  <text x="1740" y="1000" text-anchor="start" class="note">چپ نو از حلقه‌های فکری به خیابان، از خیابان به جنبش‌های اجتماعی و سپس به دانشگاه و فرهنگ عمومی منتقل شد.</text>
+</svg>
