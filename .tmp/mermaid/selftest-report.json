@@ -1,0 +1,58 @@
+[
+  {
+    "id": "selftest-valid-flowchart-br",
+    "file": "SELFTEST",
+    "index": 1,
+    "startLine": 1,
+    "endLine": 3,
+    "hash": "selftest001",
+    "diagramType": "flowchart",
+    "expectedOk": true,
+    "code": "flowchart TB\n    A[\"خط اول<br/>خط دوم\"] --> B[\"OK\"]",
+    "ok": true,
+    "error": null,
+    "svgLength": 7928
+  },
+  {
+    "id": "selftest-valid-pie",
+    "file": "SELFTEST",
+    "index": 2,
+    "startLine": 1,
+    "endLine": 7,
+    "hash": "selftest002",
+    "diagramType": "pie",
+    "expectedOk": true,
+    "code": "pie\n    title اولویتبندی ارزشها\n    \"آزادی فردی\" : 35\n    \"نظم و سنت\" : 20\n    \"برابری اقتصادی\" : 30",
+    "ok": true,
+    "error": null,
+    "svgLength": 3262
+  },
+  {
+    "id": "selftest-valid-xychart-beta",
+    "file": "SELFTEST",
+    "index": 3,
+    "startLine": 1,
+    "endLine": 6,
+    "hash": "selftest003",
+    "diagramType": "xychart",
+    "expectedOk": true,
+    "code": "xychart-beta\n    title \"Income trend\"\n    x-axis [1, 2, 3, 4]\n    y-axis \"Y\" 0 --> 10\n    line [1, 3, 5, 8]",
+    "ok": true,
+    "error": null,
+    "svgLength": 6642
+  },
+  {
+    "id": "selftest-invalid-flowchart",
+    "file": "SELFTEST",
+    "index": 4,
+    "startLine": 1,
+    "endLine": 2,
+    "hash": "selftest004",
+    "diagramType": "flowchart",
+    "expectedOk": false,
+    "code": "flowchart TB\n    A -->",
+    "ok": false,
+    "error": "Parse error on line 3:\n...wchart TB    A -->\n---------------------^\nExpecting 'AMP', 'COLON', 'PIPE', 'TESTSTR', 'DOWN', 'DEFAULT', 'NUM', 'COMMA', 'NODE_STRING', 'BRKT', 'MINUS', 'MULT', 'UNICODE_TEXT', got 'EOF'",
+    "svgLength": 0
+  }
+]

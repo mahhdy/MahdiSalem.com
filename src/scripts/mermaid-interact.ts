@@ -38,13 +38,31 @@ class MermaidInteract {
     private setupEvents() {
         if (!this.svg) return;
 
+        // Selectors matching remark-mermaid.mjs
+        const zoomInBtn = this.wrapper.querySelector('.mermaid-zoom-in') as HTMLElement;
+        const zoomOutBtn = this.wrapper.querySelector('.mermaid-zoom-out') as HTMLElement;
+        const resetBtn = this.wrapper.querySelector('.mermaid-reset') as HTMLElement;
+        
+        // Secondary selectors for other versions/plugins
         const zoomSlider = this.wrapper.querySelector('.mermaid-zoom-slider') as HTMLInputElement;
         const panBtn = this.wrapper.querySelector('.pan-btn') as HTMLElement;
-        const resetBtn = this.wrapper.querySelector('.reset-btn') as HTMLElement;
+        const legacyResetBtn = this.wrapper.querySelector('.reset-btn') as HTMLElement;
         const zoomBtn = this.wrapper.querySelector('.zoom-btn') as HTMLElement;
         const expandBtn = this.wrapper.querySelector('.expand-btn') as HTMLElement;
 
-        // 1. Zoom Slider
+        // 1. Zoom Controls
+        if (zoomInBtn) {
+            zoomInBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                this.updateZoom(this.state.zoom + 0.2);
+            });
+        }
+        if (zoomOutBtn) {
+            zoomOutBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                this.updateZoom(this.state.zoom - 0.2);
+            });
+        }
         if (zoomSlider) {
             zoomSlider.addEventListener('input', (e) => {
                 this.state.zoom = parseFloat((e.target as HTMLInputElement).value);
@@ -63,12 +81,12 @@ class MermaidInteract {
         }
 
         // 3. Reset
-        if (resetBtn) {
-            resetBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                this.resetView();
-            });
-        }
+        const handleReset = (e: Event) => {
+            e.stopPropagation();
+            this.resetView();
+        };
+        if (resetBtn) resetBtn.addEventListener('click', handleReset);
+        if (legacyResetBtn) legacyResetBtn.addEventListener('click', handleReset);
 
         // 4. Full Screen
         if (zoomBtn) {
@@ -183,22 +201,35 @@ class MermaidInteract {
 
     private toggleFullScreen() {
         const modal = document.createElement('div');
-        modal.className = 'mermaid-modal';
+        modal.className = 'mermaid-modal interact-active';
+        
+        // Clone the wrapper structure for the modal to reuse styles and interaction logic
         modal.innerHTML = `
             <div class="close-modal" title="Exit Fullscreen">&times;</div>
-            <div class="mermaid-content">
-                ${this.container.innerHTML}
+            <div class="mermaid-wrapper modal-mode">
+                ${this.wrapper.querySelector('.mermaid-toolbar')?.outerHTML || ''}
+                <div class="mermaid">
+                    ${this.container.innerHTML}
+                </div>
             </div>
         `;
+        
         document.body.appendChild(modal);
         document.body.style.overflow = 'hidden';
 
+        const modalWrapper = modal.querySelector('.mermaid-wrapper') as HTMLElement;
         const modalSvg = modal.querySelector('svg');
+        
         if (modalSvg) {
             modalSvg.style.maxWidth = 'none';
             modalSvg.style.height = 'auto';
-            // Start with a legible size in modal
-            modalSvg.style.minWidth = '1200px';
+            // Start with a reasonable size, allowing user to zoom in
+            modalSvg.style.minWidth = '90vw';
+        }
+
+        // Initialize a NEW interaction instance for the modal
+        if (modalWrapper) {
+            new MermaidInteract(modalWrapper);
         }
 
         const closeModal = () => {
@@ -209,9 +240,11 @@ class MermaidInteract {
             }, 300);
         };
 
-        modal.addEventListener('click', closeModal);
-        const content = modal.querySelector('.mermaid-content');
-        content?.addEventListener('click', e => e.stopPropagation());
+        // Close on click outside (on the modal background)
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+        
         modal.querySelector('.close-modal')?.addEventListener('click', closeModal);
 
         // Escape key to close
@@ -234,4 +267,5 @@ export function initMermaid() {
 // Handle Page Lifecycle
 if (typeof document !== 'undefined') {
     document.addEventListener('DOMContentLoaded', initMermaid);
+    document.addEventListener('mermaid-ready', initMermaid);
 }

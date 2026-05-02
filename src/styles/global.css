@@ -206,18 +206,21 @@
     direction: ltr !important;
     text-align: center !important;
     margin: 3rem auto;
-    padding: 2rem;
+    width: 100%;
+    max-width: 100%;
+    padding: 2.5rem 1.5rem;
     background: #ffffff;
     border-radius: 16px;
     overflow: hidden;
-    /* Changed to hidden, inner .mermaid handles scroll */
-    max-height: none;
+    position: relative;
     border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow:
       0 4px 20px rgba(0, 0, 0, 0.04),
       0 2px 8px rgba(0, 0, 0, 0.02);
-    position: relative;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   html.dark .mermaid-wrapper {
@@ -326,6 +329,25 @@
     color: #0f172a !important;
   }
 
+  .mermaid-divider {
+    width: 1px;
+    height: 24px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: auto 0.25rem;
+  }
+
+  html.dark .mermaid-divider {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Reset button needs to be wider than others */
+  .mermaid-reset {
+    width: auto !important;
+    padding: 0 0.75rem;
+    font-size: 0.85rem !important;
+    font-weight: 600;
+  }
+
   /* Collapsed State - Intelligent clipping */
   .mermaid-wrapper.is-collapsed {
     max-height: 450px !important;
@@ -376,8 +398,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: zoom-out;
     animation: mermaidModalFade 0.3s ease;
+  }
+
+  /* Specific styles for interaction wrapper inside modal */
+  .mermaid-wrapper.modal-mode {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: 95vw;
+    height: 95vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mermaid-wrapper.modal-mode .mermaid-toolbar {
+    top: 2rem;
+    right: 6rem; /* Make room for close button */
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  html.dark .mermaid-wrapper.modal-mode .mermaid-toolbar {
+    background: rgba(15, 23, 42, 0.6);
+  }
+
+  .mermaid-wrapper.modal-mode .mermaid-tool-btn {
+    color: white;
   }
 
   @keyframes mermaidModalFade {
@@ -475,6 +526,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     font-family: "Vazirmatn", sans-serif !important;
     overflow: auto;
     position: relative;

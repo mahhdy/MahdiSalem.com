@@ -155,18 +155,54 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"
     ></script>
     <script is:inline>
-      // Initialize Mermaid with full RTL / Farsi / Gantt support
-      if (typeof mermaid !== "undefined") {
-        const isDark = document.documentElement.classList.contains("dark");
-        mermaid.initialize({
-          startOnLoad: false, // We call mermaid.run() manually below
+      const mermaidSources = new WeakMap();
+
+      function getMermaidDiagramType(code) {
+        const cleaned = String(code)
+          .replace(/^\s*%%\{[\s\S]*?\}%%\s*/g, "")
+          .split("\n")
+          .map((line) => line.trim())
+          .filter((line) => line && !line.startsWith("%%"))
+          .join("\n")
+          .trim();
+
+        const firstLine = cleaned.split("\n")[0]?.trim() || "";
+
+        if (/^flowchart\b|^graph\b/.test(firstLine)) return "flowchart";
+        if (/^sequenceDiagram\b/.test(firstLine)) return "sequence";
+        if (/^classDiagram\b/.test(firstLine)) return "class";
+        if (/^stateDiagram(?:-v2)?\b/.test(firstLine)) return "state";
+        if (/^erDiagram\b/.test(firstLine)) return "er";
+        if (/^gantt\b/.test(firstLine)) return "gantt";
+        if (/^journey\b/.test(firstLine)) return "journey";
+        if (/^gitGraph\b/.test(firstLine)) return "gitgraph";
+        if (/^pie\b/.test(firstLine)) return "pie";
+        if (/^quadrantChart\b/.test(firstLine)) return "quadrant";
+        if (/^requirementDiagram\b/.test(firstLine)) return "requirement";
+        if (/^mindmap\b/.test(firstLine)) return "mindmap";
+        if (/^timeline\b/.test(firstLine)) return "timeline";
+        if (/^sankey-beta\b/.test(firstLine)) return "sankey";
+        if (/^xychart-beta\b|^xychart\b/.test(firstLine)) return "xychart";
+        if (/^block-beta\b|^block\b/.test(firstLine)) return "block";
+        if (/^architecture-beta\b|^architecture\b/.test(firstLine)) return "architecture";
+        if (/^packet-beta\b|^packet\b/.test(firstLine)) return "packet";
+        if (/^kanban\b/.test(firstLine)) return "kanban";
+
+        return "unknown";
+      }
+
+      function getMermaidConfig(isDark) {
+        return {
+          startOnLoad: false,
           theme: isDark ? "dark" : "default",
+          securityLevel: "loose",
           fontFamily: '"Vazirmatn", "Vazir", "Tahoma", sans-serif',
           flowchart: {
-            useMaxWidth: false,
             htmlLabels: true,
+            useMaxWidth: true,
             curve: "basis",
           },
+          sequence: { useMaxWidth: true },
           gantt: {
             useMaxWidth: true,
             titleTopMargin: 25,
@@ -189,56 +225,89 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
           themeVariables: {
             fontFamily: '"Vazirmatn", "Vazir", "Tahoma", sans-serif',
           },
+        };
+      }
+
+      function cacheMermaidSources() {
+        document.querySelectorAll(".mermaid").forEach((el) => {
+          if (!mermaidSources.has(el) && !el.hasAttribute("data-processed")) {
+            const code = el.textContent || "";
+            mermaidSources.set(el, code);
+            
+            // Decorative: Add diagram type as class to wrapper for CSS
+            const type = getMermaidDiagramType(code);
+            const wrapper = el.closest(".mermaid-wrapper");
+            if (wrapper) {
+              wrapper.setAttribute("data-diagram-type", type);
+              wrapper.classList.add("mermaid-type-" + type);
+              
+              // Auto-collapse large types if not explicitly set
+              if (!wrapper.hasAttribute("data-expanded") && 
+                  ["gantt", "timeline", "mindmap", "block", "xychart"].includes(type)) {
+                wrapper.classList.add("is-collapsed");
+              }
+            }
+          }
         });
       }
 
-      function runMermaid() {
-        if (typeof mermaid !== "undefined") {
-          // Save original code before Mermaid touches it
-          document
-            .querySelectorAll(".mermaid:not([data-original-code])")
-            .forEach((el) => {
-              el.setAttribute("data-original-code", el.textContent);
-            });
-          mermaid
-            .run({ querySelector: ".mermaid:not([data-processed])" })
-            .catch(console.error);
+      async function runMermaid() {
+        if (typeof mermaid === "undefined") return;
+
+        cacheMermaidSources();
+
+        try {
+          await mermaid.run({
+            querySelector: ".mermaid:not([data-processed])",
+          });
+          document.dispatchEvent(new CustomEvent("mermaid-ready"));
+        } catch (error) {
+          console.error("Mermaid render error:", error);
         }
       }
 
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", runMermaid);
-      } else {
-        runMermaid();
+      function resetMermaidDiagrams() {
+        document.querySelectorAll(".mermaid").forEach((el) => {
+          const code = mermaidSources.get(el);
+          if (typeof code === "string") {
+            el.textContent = code;
+            el.removeAttribute("data-processed");
+          }
+        });
+      }
+
+      function initializeMermaidForCurrentTheme() {
+        if (typeof mermaid === "undefined") return;
+        const isDark = document.documentElement.classList.contains("dark");
+        mermaid.initialize(getMermaidConfig(isDark));
+      }
+
+      // Initial execution
+      if (typeof mermaid !== "undefined") {
+        initializeMermaidForCurrentTheme();
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", runMermaid);
+        } else {
+          runMermaid();
+        }
       }
 
       // Re-render on theme change
-      const themeObserver = new MutationObserver(function (mutations) {
-        mutations.forEach(function (mutation) {
-          if (
-            mutation.attributeName === "class" &&
-            typeof mermaid !== "undefined"
-          ) {
-            const isDark = document.documentElement.classList.contains("dark");
-            mermaid.initialize({
-              theme: isDark ? "dark" : "default",
-              startOnLoad: false,
-            });
+      const themeObserver = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+          if (mutation.attributeName !== "class") continue;
+          if (typeof mermaid === "undefined") continue;
 
-            // Restore original text so Mermaid can re-render it
-            document.querySelectorAll(".mermaid").forEach((el) => {
-              const code = el.getAttribute("data-original-code");
-              if (code) {
-                el.innerHTML = code;
-                el.removeAttribute("data-processed");
-              }
-            });
-
-            runMermaid();
-          }
-        });
+          initializeMermaidForCurrentTheme();
+          resetMermaidDiagrams();
+          runMermaid();
+        }
       });
-      themeObserver.observe(document.documentElement, { attributes: true });
+
+      themeObserver.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ["class"],
+      });
     </script>
 
     <script>
