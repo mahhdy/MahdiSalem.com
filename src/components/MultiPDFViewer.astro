@@ -1,0 +1,153 @@
+---
+import PDFViewer from './PDFViewer.astro';
+import { t } from '../i18n';
+
+interface Props {
+  pdfUrl?: string;
+  pdfArray?: { title: string; url: string }[];
+  title: string; // Default title for single PDF
+  lang: 'fa' | 'en';
+}
+
+const { pdfUrl, pdfArray = [], title, lang } = Astro.props;
+
+// Normalize PDFs into a single array
+const pdfs = [...pdfArray];
+
+// If pdfUrl is provided and not already in the array, add it to the beginning
+if (pdfUrl && !pdfs.some(p => p.url === pdfUrl)) {
+  pdfs.unshift({ title: title, url: pdfUrl });
+}
+
+const hasMultiple = pdfs.length > 1;
+---
+
+<div class="multi-pdf-viewer-container">
+  {hasMultiple && (
+    <div class="flex justify-center mb-8">
+      <div class="inline-flex p-1.5 bg-surface-dim dark:bg-surface-dark-dim rounded-xl border border-border dark:border-border-dark flex-wrap justify-center gap-1.5 shadow-inner">
+        {pdfs.map((pdf, index) => (
+          <button
+            class={`pdf-subtab-btn ${index === 0 ? 'active' : ''} px-5 py-2 rounded-lg text-sm font-bold transition-all duration-300 ease-out flex items-center gap-2`}
+            data-pdf-index={index}
+            type="button"
+          >
+            <svg class="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            {pdf.title}
+          </button>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <div class="pdf-contents-stack relative">
+    {pdfs.map((pdf, index) => (
+      <div 
+        id={`pdf-content-${index}`} 
+        class={`pdf-content-item ${index === 0 ? 'active' : ''} transition-all duration-500`}
+        style={index === 0 ? 'display: block; opacity: 1; transform: translateY(0);' : 'display: none; opacity: 0; transform: translateY(10px);'}
+      >
+        <PDFViewer pdfUrl={pdf.url} title={pdf.title} lang={lang} />
+        
+        <div class="mt-8 flex justify-center">
+          <a
+            href={pdf.url}
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-white font-bold hover:shadow-xl hover:shadow-primary/20 transition-all no-underline transform hover:-translate-y-0.5 active:translate-y-0"
+            download={pdf.title}
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            {t('books.download_pdf', lang)}: {pdf.title}
+          </a>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+  .pdf-subtab-btn {
+    color: var(--color-text-muted);
+  }
+  html.dark .pdf-subtab-btn {
+    color: var(--color-text-dark-muted);
+  }
+  .pdf-subtab-btn:hover {
+    color: var(--color-text);
+    background-color: rgba(var(--color-primary-rgb), 0.05);
+  }
+  html.dark .pdf-subtab-btn:hover {
+    color: var(--color-text-dark);
+    background-color: rgba(var(--color-primary-light-rgb), 0.05);
+  }
+  .pdf-subtab-btn.active {
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    color: var(--color-primary);
+    transform: scale(1.02);
+  }
+  html.dark .pdf-subtab-btn.active {
+    background-color: var(--color-surface-dark);
+    color: var(--color-primary-light);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.3);
+  }
+  
+  .pdf-content-item.active {
+    display: block !important;
+    animation: pdfSlideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  @keyframes pdfSlideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
+<script>
+  function initMultiPdf() {
+    const containers = document.querySelectorAll('.multi-pdf-viewer-container');
+    
+    containers.forEach(container => {
+      const buttons = container.querySelectorAll('.pdf-subtab-btn');
+      const contents = container.querySelectorAll('.pdf-content-item');
+      
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          const index = button.getAttribute('data-pdf-index');
+          if (!index) return;
+
+          // Update buttons
+          buttons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          
+          // Update contents
+          contents.forEach((content, i) => {
+            const htmlContent = content as HTMLElement;
+            if (i.toString() === index) {
+              htmlContent.style.display = 'block';
+              setTimeout(() => {
+                htmlContent.style.opacity = '1';
+                htmlContent.style.transform = 'translateY(0)';
+              }, 10);
+              htmlContent.classList.add('active');
+            } else {
+              htmlContent.style.opacity = '0';
+              htmlContent.style.transform = 'translateY(10px)';
+              setTimeout(() => {
+                htmlContent.style.display = 'none';
+              }, 300);
+              htmlContent.classList.remove('active');
+            }
+          });
+        });
+      });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initMultiPdf);
+  document.addEventListener('astro:after-swap', initMultiPdf);
+  document.addEventListener('astro:page-load', initMultiPdf);
+</script>

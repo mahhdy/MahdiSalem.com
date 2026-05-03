@@ -7,6 +7,7 @@ import WidthToggle from "../components/WidthToggle.astro";
 import RelatedContent from "../components/RelatedContent.astro";
 import ShareButtons from "../components/ShareButtons.astro";
 import Giscus from "../components/Giscus.astro";
+import MultiPDFViewer from "../components/MultiPDFViewer.astro";
 import { t, getLocalizedPath, stripLangPrefix, type Locale } from "../i18n";
 
 interface Chapter {
@@ -30,6 +31,9 @@ interface Props {
   showHeader?: boolean;
   tags?: string[];
   slug?: string;
+  pdfUrl?: string;
+  pdfArray?: { title: string; url: string }[];
+  pdfOnly?: boolean;
 }
 
 const {
@@ -47,6 +51,9 @@ const {
   showHeader = false,
   tags = [],
   slug = "",
+  pdfUrl,
+  pdfArray,
+  pdfOnly = false,
 } = Astro.props;
 
 const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
@@ -167,7 +174,19 @@ const currentSlug = slug || stripLangPrefix(Astro.url.pathname);
                 </div>
               )
             }
-            <slot />
+            {
+              (pdfUrl || (pdfArray && pdfArray.length > 0)) && (
+                <div class="mb-8">
+                  <MultiPDFViewer
+                    pdfUrl={pdfUrl}
+                    pdfArray={pdfArray}
+                    title={title}
+                    lang={lang}
+                  />
+                </div>
+              )
+            }
+            {!pdfOnly && <slot />}
           </div>
         </article>
 

@@ -7,6 +7,7 @@ import WidthToggle from "../components/WidthToggle.astro";
 import RelatedContent from "../components/RelatedContent.astro";
 import ShareButtons from "../components/ShareButtons.astro";
 import Giscus from "../components/Giscus.astro";
+import MultiPDFViewer from "../components/MultiPDFViewer.astro";
 import { t, getLocalizedPath, stripLangPrefix, type Locale } from "../i18n";
 
 interface Chapter {
@@ -30,6 +31,9 @@ interface Props {
   showHeader?: boolean;
   tags?: string[];
   slug?: string;
+  pdfUrl?: string;
+  pdfArray?: { title: string; url: string }[];
+  pdfOnly?: boolean;
 }
 
 const {
@@ -47,6 +51,9 @@ const {
   showHeader = false,
   tags = [],
   slug = "",
+  pdfUrl,
+  pdfArray,
+  pdfOnly = false,
 } = Astro.props;
 
 const articleUrl = new URL(Astro.url.pathname, Astro.site).toString();
@@ -56,8 +63,8 @@ const currentSlug = slug || stripLangPrefix(Astro.url.pathname);
 <BaseLayout
   title={title}
   description={description}
-  contentType="book_chapter"
-  category="books"
+  contentType="proposal"
+  category="proposals"
 >
   <ReadingProgress />
 
@@ -72,7 +79,7 @@ const currentSlug = slug || stripLangPrefix(Astro.url.pathname);
           <h2
             class="text-sm font-bold mb-3 uppercase tracking-wider text-text-muted dark:text-text-dark-muted"
           >
-            {t("books.toc", lang)}
+            {t("proposals.toc", lang) || t("books.toc", lang)}
           </h2>
           <nav aria-label="Book chapters">
             <ul class="space-y-1 text-sm">
@@ -81,7 +88,7 @@ const currentSlug = slug || stripLangPrefix(Astro.url.pathname);
                   <li>
                     <a
                       href={getLocalizedPath(
-                        `books/${bookSlug}/${ch.slug}`,
+                        `proposals/${bookSlug}/${ch.slug}`,
                         lang,
                       )}
                       class:list={[
@@ -118,7 +125,7 @@ const currentSlug = slug || stripLangPrefix(Astro.url.pathname);
                 d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
               ></path></svg
             >
-            {t("books.suggest_edit", lang)}
+            {t("proposals.suggest_edit", lang) || t("books.suggest_edit", lang)}
           </a>
         </div>
       </aside>
@@ -167,15 +174,27 @@ const currentSlug = slug || stripLangPrefix(Astro.url.pathname);
                 </div>
               )
             }
-            <slot />
+            {
+              (pdfUrl || (pdfArray && pdfArray.length > 0)) && (
+                <div class="mb-8">
+                  <MultiPDFViewer
+                    pdfUrl={pdfUrl}
+                    pdfArray={pdfArray}
+                    title={title}
+                    lang={lang}
+                  />
+                </div>
+              )
+            }
+            {!pdfOnly && <slot />}
           </div>
         </article>
 
         <!-- Rating -->
         <Rating
-          contentId={currentSlug.startsWith("books/")
+          contentId={currentSlug.startsWith("proposals/")
             ? currentSlug
-            : `books/${bookSlug}/${currentSlug.split("/").pop()}`}
+            : `proposals/${bookSlug}/${currentSlug.split("/").pop()}`}
           lang={lang}
         />
 
@@ -230,7 +249,7 @@ const currentSlug = slug || stripLangPrefix(Astro.url.pathname);
             prevChapter ? (
               <a
                 href={getLocalizedPath(
-                  `books/${bookSlug}/${prevChapter.slug}`,
+                  `proposals/${bookSlug}/${prevChapter.slug}`,
                   lang,
                 )}
                 class="flex items-center gap-2 text-sm no-underline text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light"
@@ -250,7 +269,7 @@ const currentSlug = slug || stripLangPrefix(Astro.url.pathname);
                 </svg>
                 <span>
                   <span class="block text-xs">
-                    {t("books.prev_chapter", lang)}
+                    {t("proposals.prev_chapter", lang) || t("books.prev_chapter", lang)}
                   </span>
                   <span class="font-medium">{prevChapter.title}</span>
                 </span>
@@ -264,14 +283,14 @@ const currentSlug = slug || stripLangPrefix(Astro.url.pathname);
             nextChapter ? (
               <a
                 href={getLocalizedPath(
-                  `books/${bookSlug}/${nextChapter.slug}`,
+                  `proposals/${bookSlug}/${nextChapter.slug}`,
                   lang,
                 )}
                 class="flex items-center gap-2 text-sm no-underline text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light text-end"
               >
                 <span>
                   <span class="block text-xs">
-                    {t("books.next_chapter", lang)}
+                    {t("proposals.next_chapter", lang) || t("books.next_chapter", lang)}
                   </span>
                   <span class="font-medium">{nextChapter.title}</span>
                 </span>

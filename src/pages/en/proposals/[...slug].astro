@@ -4,6 +4,7 @@ import ProposalLayout from "../../../layouts/ProposalLayout.astro";
 import WidthToggle from "../../../components/WidthToggle.astro";
 import { t, getLocalizedPath, stripLangPrefix } from "../../../i18n";
 import PDFViewer from "../../../components/PDFViewer.astro";
+import MultiPDFViewer from "../../../components/MultiPDFViewer.astro";
 import ImageSlider from "../../../components/ImageSlider.astro";
 import { getCollection, render } from "astro:content";
 import { shouldShowHidden } from "../../../lib/hidden";
@@ -113,6 +114,9 @@ const chapterList = chapters.map((c: any) => {
       }
       draft={entry.data.draft}
       showHeader={entry.data["showheader"]}
+      pdfUrl={entry.data.pdfUrl}
+      pdfArray={entry.data.pdfArray}
+      pdfOnly={entry.data.pdfOnly}
     >
       <Content />
     </ProposalLayout>
@@ -182,7 +186,7 @@ const chapterList = chapters.map((c: any) => {
         )}
 
         {/* Tab interface if PDF viewer is enabled or hasSlide is true */}
-        {(entry.data.pdfUrl && entry.data.showPdfViewer) ||
+        {((entry.data.pdfUrl || (entry.data.pdfArray && entry.data.pdfArray.length > 0)) && entry.data.showPdfViewer) ||
         entry.data.hasSlide ? (
           <div class="book-tabs mb-8">
             <div class="flex justify-center mb-6">
@@ -196,7 +200,7 @@ const chapterList = chapters.map((c: any) => {
                     {t("books.chapters_tab", lang)}
                   </button>
                 )}
-                {entry.data.pdfUrl && entry.data.showPdfViewer && (
+                {(entry.data.pdfUrl || (entry.data.pdfArray && entry.data.pdfArray.length > 0)) && entry.data.showPdfViewer && (
                   <button
                     class={`book-tab-btn ${entry.data.pdfOnly ? "active" : ""} px-6 py-2.5 rounded-md text-sm font-medium transition-colors`}
                     data-tab="pdf"
@@ -257,13 +261,14 @@ const chapterList = chapters.map((c: any) => {
             )}
 
             {/* PDF Tab */}
-            {entry.data.pdfUrl && entry.data.showPdfViewer && (
+            {(entry.data.pdfUrl || (entry.data.pdfArray && entry.data.pdfArray.length > 0)) && entry.data.showPdfViewer && (
               <div
                 id="pdf-tab"
                 class={`book-tab-content ${entry.data.pdfOnly ? "active" : ""} transition-opacity duration-300`}
               >
-                <PDFViewer
+                <MultiPDFViewer
                   pdfUrl={entry.data.pdfUrl}
+                  pdfArray={entry.data.pdfArray}
                   title={entry.data.title}
                   lang={lang}
                 />
@@ -289,7 +294,7 @@ const chapterList = chapters.map((c: any) => {
         ) : null}
 
         {/* No tabs fallback */}
-        {!(entry.data.pdfUrl && entry.data.showPdfViewer) &&
+        {!((entry.data.pdfUrl || (entry.data.pdfArray && entry.data.pdfArray.length > 0)) && entry.data.showPdfViewer) &&
           !entry.data.hasSlide &&
           chapterList.length > 0 && (
             <div class="mb-8">
@@ -314,32 +319,58 @@ const chapterList = chapters.map((c: any) => {
             </div>
           )}
 
-        {!(entry.data.pdfUrl && entry.data.showPdfViewer) &&
+        {!((entry.data.pdfUrl || (entry.data.pdfArray && entry.data.pdfArray.length > 0)) && entry.data.showPdfViewer) &&
           !entry.data.hasSlide &&
-          entry.data.pdfUrl && (
-            <a
-              href={entry.data.pdfUrl}
-              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-secondary text-white font-medium hover:bg-secondary-light transition-colors no-underline"
-              download
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                />
-              </svg>
-              {t("books.download_pdf", lang)}
-            </a>
+          (entry.data.pdfUrl || (entry.data.pdfArray && entry.data.pdfArray.length > 0)) && (
+            <div class="mt-8 flex flex-col items-center gap-4">
+              {entry.data.pdfUrl && (
+                <a
+                  href={entry.data.pdfUrl}
+                  class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-secondary text-white font-medium hover:bg-secondary-light transition-colors no-underline"
+                  download
+                >
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                  {t("books.download_pdf", lang)}
+                </a>
+              )}
+              {entry.data.pdfArray && entry.data.pdfArray.map(pdf => (
+                <a
+                  href={pdf.url}
+                  class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-secondary text-white font-medium hover:bg-secondary-light transition-colors no-underline"
+                  download={pdf.title}
+                >
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                  {t("books.download_pdf", lang)}: {pdf.title}
+                </a>
+              ))}
+            </div>
           )}
 
-        {!(entry.data.pdfUrl && entry.data.showPdfViewer) &&
+        {!((entry.data.pdfUrl || (entry.data.pdfArray && entry.data.pdfArray.length > 0)) && entry.data.showPdfViewer) &&
           !entry.data.hasSlide && (
             <div class="prose mt-8">
               <Content />

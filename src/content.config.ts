@@ -12,6 +12,10 @@ const books = defineCollection({
     imageDisplay: z.enum(['full', 'side', 'thumbnail', 'hidden']).default('full'), // How cover image is displayed on the detail page
     cardImage: z.enum(['show', 'hidden']).default('show'), // Whether cover image is shown in card/list views
     pdfUrl: z.string().optional(),
+    pdfArray: z.array(z.object({
+      title: z.string(),
+      url: z.string()
+    })).optional(),
     showPdfViewer: z.boolean().default(false),
     pdfOnly: z.boolean().default(false),
     hasSlide: z.boolean().default(false),
@@ -58,6 +62,10 @@ const proposals = defineCollection({
     imageDisplay: z.enum(['full', 'side', 'thumbnail', 'hidden']).default('full'),
     cardImage: z.enum(['show', 'hidden']).default('show'),
     pdfUrl: z.string().optional(),
+    pdfArray: z.array(z.object({
+      title: z.string(),
+      url: z.string()
+    })).optional(),
     showPdfViewer: z.boolean().default(false),
     pdfOnly: z.boolean().default(false),
     hasSlide: z.boolean().default(false),
@@ -110,6 +118,10 @@ const articles = defineCollection({
     imageDisplay: z.enum(['full', 'side', 'thumbnail', 'hidden']).default('full'), // How cover image is displayed on the detail page
     cardImage: z.enum(['show', 'hidden']).default('show'), // Whether cover image is shown in card/list views
     pdfUrl: z.string().optional(),
+    pdfArray: z.array(z.object({
+      title: z.string(),
+      url: z.string()
+    })).optional(),
     pdfOnly: z.boolean().default(false),
     hasSlide: z.boolean().default(false),
     slideArray: z.array(z.string()).nullable().optional(),
@@ -148,6 +160,10 @@ const statements = defineCollection({
     imageDisplay: z.enum(['full', 'side', 'thumbnail', 'hidden']).default('full'), // How cover image is displayed on the detail page
     cardImage: z.enum(['show', 'hidden']).default('show'), // Whether cover image is shown in card/list views
     pdfUrl: z.string().optional(),
+    pdfArray: z.array(z.object({
+      title: z.string(),
+      url: z.string()
+    })).optional(),
     pdfOnly: z.boolean().default(false),
     hasSlide: z.boolean().default(false),
     slideArray: z.array(z.string()).nullable().optional(),
@@ -246,6 +262,8 @@ const dialogues = defineCollection({
     lang: z.enum(['fa', 'en']),
     publishDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
+    type: z.enum(['video', 'audio', 'podcast']).optional(),
+    mediaUrl: z.string().optional(),
     participants: z.array(z.string()).default(['مهدی سالم']),
     category: z.union([z.string(), z.array(z.string())]).optional(),
     categories: z.array(z.string()).default([]),
@@ -257,6 +275,10 @@ const dialogues = defineCollection({
     imageDisplay: z.enum(['full', 'side', 'thumbnail', 'hidden']).default('full'), // How cover image is displayed on the detail page
     cardImage: z.enum(['show', 'hidden']).default('show'), // Whether cover image is shown in card/list views
     pdfUrl: z.string().optional(),
+    pdfArray: z.array(z.object({
+      title: z.string(),
+      url: z.string()
+    })).optional(),
     pdfOnly: z.boolean().default(false),
     hasSlide: z.boolean().default(false),
     slideArray: z.array(z.string()).nullable().optional(),
