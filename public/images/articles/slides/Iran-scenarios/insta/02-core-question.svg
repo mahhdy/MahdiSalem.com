@@ -1,0 +1,78 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7FAFC"/>
+      <stop offset="100%" stop-color="#EAF3FA"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#172A3A"/>
+      <stop offset="100%" stop-color="#1F4E79"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.16"/>
+    </filter>
+    <style>
+      .fo{font-family:Vazirmatn,Tahoma,Arial,sans-serif;direction:rtl;unicode-bidi:plaintext;box-sizing:border-box;color:#172A3A}
+      .title{font-size:49px;font-weight:900;line-height:1.25;text-align:center;color:white}
+      .sub{font-size:22px;font-weight:600;line-height:1.6;text-align:center;color:rgba(255,255,255,.86)}
+      .h{font-size:31px;font-weight:900;line-height:1.35;color:#172A3A}
+      .body{font-size:25px;line-height:1.72;color:#263849}
+      .small{font-size:18px;line-height:1.55;color:#4A5568;text-align:center}
+      .label{font-size:23px;font-weight:900;text-align:center;line-height:1.35}
+      .mini{font-size:18px;line-height:1.5;text-align:center;color:#34495E}
+    </style>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1080" height="255" fill="url(#header)"/>
+  <path d="M0,185 C350,285 690,190 1080,300 L1080,380 L0,380 Z" fill="#0F766E" opacity="0.25"/>
+
+  <foreignObject x="70" y="52" width="940" height="155">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+      <div class="title">مقایسه‌ی غلط؟</div>
+      <div class="sub">دیکتاتوری قطعی در برابر دیکتاتوری احتمالی</div>
+    </div>
+  </foreignObject>
+
+  <rect x="70" y="315" width="940" height="180" rx="30" fill="#FFF8E1" stroke="#B7791F" stroke-width="4" filter="url(#shadow)"/>
+  <foreignObject x="110" y="345" width="860" height="125">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+      <div class="h" style="color:#B7791F;">استدلال رایج</div>
+      <div class="body">«وضع موجود دیکتاتوری است؛ آینده فقط احتمالاً دیکتاتوری است. پس تغییر همیشه بهتر است.»</div>
+    </div>
+  </foreignObject>
+
+  <rect x="85" y="570" width="410" height="250" rx="28" fill="#FCE8EF" stroke="#8B1E3F" stroke-width="4" filter="url(#shadow)"/>
+  <foreignObject x="115" y="610" width="350" height="175">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+      <div class="label" style="color:#8B1E3F;">وضع موجود</div>
+      <div class="mini">دیکتاتوری بالفعل<br/>نهادهای سرکوب<br/>انسداد سیاسی</div>
+    </div>
+  </foreignObject>
+
+  <rect x="585" y="570" width="410" height="250" rx="28" fill="#EAF3FA" stroke="#1F4E79" stroke-width="4" filter="url(#shadow)"/>
+  <foreignObject x="615" y="610" width="350" height="175">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+      <div class="label" style="color:#1F4E79;">آینده</div>
+      <div class="mini">نه یک گزینه<br/>بلکه چند سناریو<br/>با امکان‌ها و خطرها</div>
+    </div>
+  </foreignObject>
+
+  <line x1="495" y1="695" x2="585" y2="695" stroke="#4A5568" stroke-width="5"/>
+  <path d="M585 695 L560 680 L560 710 Z" fill="#4A5568"/>
+
+  <rect x="90" y="870" width="900" height="105" rx="24" fill="#172A3A" filter="url(#shadow)"/>
+  <foreignObject x="125" y="895" width="830" height="62">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+      <div class="small" style="color:white;font-size:23px;font-weight:800;">
+        پرسش مهم‌تر: فقط «از چه چیزی عبور می‌کنیم؟» نیست؛ «به کدام مسیر وارد می‌شویم؟» هم هست.
+      </div>
+    </div>
+  </foreignObject>
+
+  <foreignObject x="70" y="1010" width="940" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo small">
+      مهدی سالم | مقایسه‌ی دیکتاتوری مستقر با استبداد احتمالی
+    </div>
+  </foreignObject>
+</svg>

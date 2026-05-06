@@ -1,0 +1,78 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#172A3A"/>
+      <stop offset="60%" stop-color="#1F4E79"/>
+      <stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.26"/>
+    </filter>
+    <style>
+      .fo{font-family:Vazirmatn,Tahoma,Arial,sans-serif;direction:rtl;unicode-bidi:plaintext;box-sizing:border-box;color:#172A3A}
+      .title{font-size:49px;font-weight:900;line-height:1.25;text-align:center;color:white}
+      .sub{font-size:23px;font-weight:600;line-height:1.55;text-align:center;color:rgba(255,255,255,.88)}
+      .h{font-size:31px;font-weight:900;line-height:1.35;text-align:center;color:#172A3A}
+      .body{font-size:24px;line-height:1.7;text-align:center;color:#263849}
+      .item{font-size:16px;font-weight:900;line-height:1.35;text-align:center;color:#1F4E79}
+      .quote{font-size:29px;font-weight:900;line-height:1.65;text-align:center;color:white}
+      .small{font-size:18px;line-height:1.5;text-align:center;color:#4A5568}
+    </style>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <path d="M0,0 C320,90 650,120 1080,55 L1080,0 Z" fill="#5B2A86" opacity="0.22"/>
+  <path d="M0,210 C390,340 720,260 1080,390 L1080,520 C705,420 360,545 0,420 Z" fill="#0F766E" opacity="0.20"/>
+  <path d="M0,785 C350,630 720,735 1080,610 L1080,1080 L0,1080 Z" fill="#8B1E3F" opacity="0.20"/>
+
+  <foreignObject x="70" y="60" width="940" height="145">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+      <div class="title">نه تسلیم، نه خوش‌بینی کور</div>
+      <div class="sub">راه معقول: دفاع از گذار، همراه با مطالبه‌ی تضمین‌های دموکراتیک</div>
+    </div>
+  </foreignObject>
+
+  <rect x="90" y="250" width="900" height="220" rx="32" fill="#ffffff" opacity="0.96" filter="url(#shadow)"/>
+  <foreignObject x="130" y="285" width="820" height="155">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+      <div class="body">
+        نقد خطر استبداد آینده، دفاع از جمهوری اسلامی نیست.  
+        اما نفرت از وضع موجود هم نباید ما را نسبت به خطرات بدیل‌ها نابینا کند.
+      </div>
+    </div>
+  </foreignObject>
+
+  <circle cx="540" cy="635" r="90" fill="#ffffff" stroke="#B7791F" stroke-width="5" filter="url(#shadow)"/>
+  <foreignObject x="455" y="590" width="170" height="90">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo h" style="color:#B7791F;">مهار قدرت</div>
+  </foreignObject>
+
+  <!-- safeguards -->
+  <rect x="105" y="555" width="215" height="62" rx="16" fill="#EAF3FA" stroke="#1F4E79" stroke-width="2"/>
+  <foreignObject x="120" y="570" width="185" height="35"><div xmlns="http://www.w3.org/1999/xhtml" class="fo item">انتخابات آزاد</div></foreignObject>
+
+  <rect x="760" y="555" width="215" height="62" rx="16" fill="#EAF3FA" stroke="#1F4E79" stroke-width="2"/>
+  <foreignObject x="775" y="570" width="185" height="35"><div xmlns="http://www.w3.org/1999/xhtml" class="fo item">رسانه آزاد</div></foreignObject>
+
+  <rect x="105" y="700" width="215" height="62" rx="16" fill="#EAF3FA" stroke="#1F4E79" stroke-width="2"/>
+  <foreignObject x="120" y="715" width="185" height="35"><div xmlns="http://www.w3.org/1999/xhtml" class="fo item">حقوق برابر</div></foreignObject>
+
+  <rect x="760" y="700" width="215" height="62" rx="16" fill="#EAF3FA" stroke="#1F4E79" stroke-width="2"/>
+  <foreignObject x="775" y="715" width="185" height="35"><div xmlns="http://www.w3.org/1999/xhtml" class="fo item">قضای مستقل</div></foreignObject>
+
+  <rect x="370" y="800" width="340" height="62" rx="16" fill="#EAF3FA" stroke="#1F4E79" stroke-width="2"/>
+  <foreignObject x="390" y="815" width="300" height="35"><div xmlns="http://www.w3.org/1999/xhtml" class="fo item">نظارت بر نیروهای نظامی</div></foreignObject>
+
+  <rect x="90" y="880" width="900" height="105" rx="26" fill="#172A3A" filter="url(#shadow)"/>
+  <foreignObject x="125" y="892" width="830" height="90">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo quote">
+      چگونه از دیکتاتوری موجود عبور کنیم، بی‌آنکه بذر دیکتاتوری بعدی را در همان مسیر بکاریم؟
+    </div>
+  </foreignObject>
+
+  <foreignObject x="90" y="1015" width="900" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo small" style="color:white;">
+      مقاله را بخوانید، نقد کنید و درباره‌ی آینده‌ی ایران گفت‌وگو کنیم. — مهدی سالم
+    </div>
+  </foreignObject>
+</svg>

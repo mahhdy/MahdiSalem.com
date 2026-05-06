@@ -1,0 +1,79 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7FAFC"/>
+      <stop offset="100%" stop-color="#F3E8FF"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#172A3A"/>
+      <stop offset="100%" stop-color="#5B2A86"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.16"/>
+    </filter>
+    <style>
+      .fo{font-family:Vazirmatn,Tahoma,Arial,sans-serif;direction:rtl;unicode-bidi:plaintext;box-sizing:border-box;color:#172A3A}
+      .title{font-size:47px;font-weight:900;line-height:1.25;text-align:center;color:white}
+      .sub{font-size:23px;font-weight:600;line-height:1.55;text-align:center;color:rgba(255,255,255,.86)}
+      .h{font-size:31px;font-weight:900;line-height:1.35;text-align:center}
+      .body{font-size:23px;line-height:1.65;color:#263849;text-align:center}
+      .small{font-size:18px;line-height:1.55;color:#4A5568;text-align:center}
+      .quote{font-size:25px;font-weight:900;line-height:1.55;text-align:center;color:white}
+    </style>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <rect width="1080" height="260" fill="url(#header)"/>
+  <path d="M0,200 C370,330 720,230 1080,360 L1080,460 L0,460 Z" fill="#0F766E" opacity="0.20"/>
+
+  <foreignObject x="70" y="55" width="940" height="165">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+      <div class="title">بدبینی مطلق؟ خوش‌بینی ساده‌دلانه؟</div>
+      <div class="sub">مسئله انتخاب بین ترس و امید نیست؛ مسئله بررسی نشانه‌ها و تضمین‌هاست.</div>
+    </div>
+  </foreignObject>
+
+  <rect x="80" y="330" width="425" height="350" rx="32" fill="#FCE8EF" stroke="#8B1E3F" stroke-width="5" filter="url(#shadow)"/>
+  <foreignObject x="115" y="375" width="355" height="260">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+      <div class="h" style="color:#8B1E3F;">نگاه بدبینانه</div>
+      <div class="body">
+        از چاله به چاه.<br/>
+        اگر بدیل از اکنون نقد را تحمل نکند، پس از قدرت‌گیری احتمالاً اقتدارگراتر می‌شود.
+      </div>
+    </div>
+  </foreignObject>
+
+  <rect x="575" y="330" width="425" height="350" rx="32" fill="#E6FFFA" stroke="#0F766E" stroke-width="5" filter="url(#shadow)"/>
+  <foreignObject x="610" y="375" width="355" height="260">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+      <div class="h" style="color:#0F766E;">نگاه خوش‌بینانه</div>
+      <div class="body">
+        هیجان‌ها گذراست.<br/>
+        پس از گذار، قانون، انتخابات و جامعه‌ی مدنی می‌توانند قدرت را مهار کنند.
+      </div>
+    </div>
+  </foreignObject>
+
+  <!-- Balance visual -->
+  <line x1="540" y1="710" x2="540" y2="850" stroke="#4A5568" stroke-width="6"/>
+  <line x1="320" y1="755" x2="760" y2="755" stroke="#4A5568" stroke-width="6"/>
+  <circle cx="540" cy="755" r="18" fill="#4A5568"/>
+
+  <path d="M320 755 L250 850 L390 850 Z" fill="#FCE8EF" stroke="#8B1E3F" stroke-width="4"/>
+  <path d="M760 755 L690 850 L830 850 Z" fill="#E6FFFA" stroke="#0F766E" stroke-width="4"/>
+
+  <foreignObject x="175" y="858" width="290" height="55">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo small" style="color:#8B1E3F;font-weight:900;">خطر بازتولید استبداد</div>
+  </foreignObject>
+  <foreignObject x="615" y="858" width="290" height="55">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo small" style="color:#0F766E;font-weight:900;">امکان گشایش</div>
+  </foreignObject>
+
+  <rect x="120" y="945" width="840" height="72" rx="20" fill="#172A3A" filter="url(#shadow)"/>
+  <foreignObject x="150" y="960" width="780" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="fo quote">
+      راه عقلانی: نه بدبینی مطلق، نه خوش‌بینی کور؛ بلکه مطالبه‌ی تضمین‌های مهار قدرت.
+    </div>
+  </foreignObject>
+</svg>

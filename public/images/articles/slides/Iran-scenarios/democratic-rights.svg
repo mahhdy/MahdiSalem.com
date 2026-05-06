@@ -1,0 +1,340 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="3200" viewBox="0 0 2200 3200">
+    <defs>
+        <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#F7FAFC" />
+            <stop offset="55%" stop-color="#EAF3FA" />
+            <stop offset="100%" stop-color="#EEF2FF" />
+        </linearGradient>
+
+        <linearGradient id="navy4" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#172A3A" />
+            <stop offset="100%" stop-color="#1F4E79" />
+        </linearGradient>
+
+        <linearGradient id="green4" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#E6FFFA" />
+            <stop offset="100%" stop-color="#A7F3D0" />
+        </linearGradient>
+
+        <linearGradient id="red4" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#FCE8EF" />
+            <stop offset="100%" stop-color="#FDA4AF" />
+        </linearGradient>
+
+        <linearGradient id="amber4" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#FFF8E1" />
+            <stop offset="100%" stop-color="#FDE68A" />
+        </linearGradient>
+
+        <linearGradient id="purple4" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#F3E8FF" />
+            <stop offset="100%" stop-color="#DDD6FE" />
+        </linearGradient>
+
+        <filter id="shadow4" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000000" flood-opacity="0.18" />
+        </filter>
+
+        <filter id="softShadow4" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.12" />
+        </filter>
+
+        <marker id="arrow4" markerWidth="16" markerHeight="16" refX="12" refY="8" orient="auto">
+            <path d="M 0 0 L 16 8 L 0 16 z" fill="#4A5568" />
+        </marker>
+
+        <style>
+            .fo {
+                font-family: Vazirmatn, Tahoma, Arial, sans-serif;
+                direction: rtl;
+                unicode-bidi: plaintext;
+                color: #172A3A;
+                box-sizing: border-box;
+            }
+
+            .title {
+                font-size: 58px;
+                font-weight: 900;
+                line-height: 1.25;
+                text-align: center;
+                color: #ffffff;
+            }
+
+            .subtitle {
+                font-size: 30px;
+                font-weight: 600;
+                line-height: 1.65;
+                text-align: center;
+                color: rgba(255, 255, 255, 0.88);
+            }
+
+            .sectionTitle {
+                font-size: 34px;
+                font-weight: 900;
+                line-height: 1.35;
+                color: #172A3A;
+            }
+
+            .body {
+                font-size: 23px;
+                line-height: 1.72;
+                color: #263849;
+            }
+
+            .small {
+                font-size: 18px;
+                line-height: 1.55;
+                color: #34495E;
+            }
+
+            .miniTitle {
+                font-size: 23px;
+                font-weight: 900;
+                line-height: 1.35;
+                text-align: center;
+            }
+
+            .miniBody {
+                font-size: 16px;
+                line-height: 1.45;
+                text-align: center;
+                color: #34495E;
+            }
+
+            .tableHead {
+                font-size: 24px;
+                font-weight: 900;
+                color: #ffffff;
+                text-align: center;
+            }
+
+            .tableCell {
+                font-size: 18px;
+                line-height: 1.55;
+                color: #263849;
+            }
+
+            .quote {
+                font-size: 33px;
+                font-weight: 900;
+                line-height: 1.65;
+                text-align: center;
+                color: #ffffff;
+            }
+        </style>
+    </defs>
+
+    <rect width="2200" height="3200" fill="url(#bg4)" />
+
+    <!-- Header band -->
+    <rect x="0" y="0" width="2200" height="440" fill="url(#navy4)" />
+    <path d="M0,320 C620,460 1220,360 2200,530 L2200,680 L0,680 Z" fill="#0F766E" opacity="0.25" />
+    <path d="M0,380 C780,560 1450,460 2200,610 L2200,740 L0,740 Z" fill="#5B2A86" opacity="0.18" />
+
+    <foreignObject x="160" y="85" width="1880" height="270">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+            <div class="title">چگونه از بازتولید استبداد جلوگیری کنیم؟</div>
+            <div class="subtitle">نقشه‌ی تضمین‌های دموکراتیک، هشدارهای گذار و معیارهای ارزیابی بدیل‌ها</div>
+            <div class="subtitle" style="font-size:22px;">مهدی سالم</div>
+        </div>
+    </foreignObject>
+
+    <!-- Main thesis -->
+    <rect x="160" y="520" width="1880" height="210" rx="30" fill="#ffffff" filter="url(#shadow4)" stroke="#1F4E79"
+        stroke-width="4" />
+    <foreignObject x="220" y="555" width="1760" height="145">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+            <div class="sectionTitle">تز اصلی</div>
+            <div class="body">
+                قدرت با نیت خوب مهار نمی‌شود. هر بدیلی، چه جمهوری‌خواه، چه سلطنت‌طلب، چه تکنوکرات، چه سکولار، اگر فاقد
+                سازوکارهای محدودکننده باشد، می‌تواند به شکل تازه‌ای از استبداد تبدیل شود.
+            </div>
+        </div>
+    </foreignObject>
+
+    <!-- Central power map -->
+    <rect x="160" y="800" width="1880" height="950" rx="34" fill="#ffffff" filter="url(#shadow4)" />
+
+    <foreignObject x="220" y="835" width="1760" height="70">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo sectionTitle" style="text-align:center;">
+            نقشه‌ی مهار قدرت
+        </div>
+    </foreignObject>
+
+    <g transform="translate(260,930)">
+        <!-- Central node -->
+        <circle cx="840" cy="370" r="145" fill="url(#amber4)" stroke="#B7791F" stroke-width="6"
+            filter="url(#softShadow4)" />
+        <foreignObject x="695" y="310" width="290" height="125">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+                <div class="miniTitle" style="font-size:30px;color:#B7791F;">قدرت سیاسی</div>
+                <div class="miniBody">میل طبیعی به تمرکز، بقا و گسترش اختیار</div>
+            </div>
+        </foreignObject>
+
+        <!-- Nodes around -->
+        <rect x="40" y="40" width="330" height="125" rx="20" fill="url(#green4)" stroke="#0F766E" stroke-width="4" />
+        <foreignObject x="65" y="62" width="280" height="85">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+                <div class="miniTitle" style="color:#0F766E;">انتخابات آزاد</div>
+                <div class="miniBody">رقابت واقعی و امکان جابه‌جایی قدرت</div>
+            </div>
+        </foreignObject>
+
+        <rect x="675" y="0" width="330" height="125" rx="20" fill="url(#green4)" stroke="#0F766E" stroke-width="4" />
+        <foreignObject x="700" y="22" width="280" height="85">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+                <div class="miniTitle" style="color:#0F766E;">رسانه‌ی آزاد</div>
+                <div class="miniBody">نقد عمومی و افشای فساد</div>
+            </div>
+        </foreignObject>
+
+        <rect x="1300" y="40" width="330" height="125" rx="20" fill="url(#green4)" stroke="#0F766E" stroke-width="4" />
+        <foreignObject x="1325" y="62" width="280" height="85">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+                <div class="miniTitle" style="color:#0F766E;">قضای مستقل</div>
+                <div class="miniBody">قانون بالاتر از رهبر، حزب یا خاندان</div>
+            </div>
+        </foreignObject>
+
+        <rect x="40" y="575" width="330" height="125" rx="20" fill="url(#purple4)" stroke="#5B2A86" stroke-width="4" />
+        <foreignObject x="65" y="597" width="280" height="85">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+                <div class="miniTitle" style="color:#5B2A86;">حقوق برابر</div>
+                <div class="miniBody">حفاظت از اقلیت‌ها و مخالفان</div>
+            </div>
+        </foreignObject>
+
+        <rect x="675" y="615" width="330" height="125" rx="20" fill="url(#purple4)" stroke="#5B2A86" stroke-width="4" />
+        <foreignObject x="700" y="637" width="280" height="85">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+                <div class="miniTitle" style="color:#5B2A86;">مجلس مؤسسان</div>
+                <div class="miniBody">قانون اساسی با رأی شهروندان</div>
+            </div>
+        </foreignObject>
+
+        <rect x="1300" y="575" width="330" height="125" rx="20" fill="url(#purple4)" stroke="#5B2A86"
+            stroke-width="4" />
+        <foreignObject x="1325" y="597" width="280" height="85">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+                <div class="miniTitle" style="color:#5B2A86;">کنترل ارتش</div>
+                <div class="miniBody">نظارت غیرنظامی بر نیروهای مسلح</div>
+            </div>
+        </foreignObject>
+
+        <!-- Arrows -->
+        <line x1="370" y1="150" x2="710" y2="290" stroke="#4A5568" stroke-width="4" marker-end="url(#arrow4)" />
+        <line x1="840" y1="125" x2="840" y2="230" stroke="#4A5568" stroke-width="4" marker-end="url(#arrow4)" />
+        <line x1="1300" y1="150" x2="970" y2="290" stroke="#4A5568" stroke-width="4" marker-end="url(#arrow4)" />
+        <line x1="370" y1="620" x2="710" y2="455" stroke="#4A5568" stroke-width="4" marker-end="url(#arrow4)" />
+        <line x1="840" y1="615" x2="840" y2="515" stroke="#4A5568" stroke-width="4" marker-end="url(#arrow4)" />
+        <line x1="1300" y1="620" x2="970" y2="455" stroke="#4A5568" stroke-width="4" marker-end="url(#arrow4)" />
+    </g>
+
+    <!-- Green vs Red flags -->
+    <rect x="160" y="1830" width="920" height="640" rx="32" fill="#ffffff" filter="url(#shadow4)" stroke="#0F766E"
+        stroke-width="4" />
+    <rect x="1120" y="1830" width="920" height="640" rx="32" fill="#ffffff" filter="url(#shadow4)" stroke="#8B1E3F"
+        stroke-width="4" />
+
+    <foreignObject x="210" y="1870" width="820" height="70">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo sectionTitle" style="color:#0F766E;text-align:center;">
+            نشانه‌های اطمینان‌بخش
+        </div>
+    </foreignObject>
+
+    <foreignObject x="1170" y="1870" width="820" height="70">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo sectionTitle" style="color:#8B1E3F;text-align:center;">
+            نشانه‌های هشداردهنده
+        </div>
+    </foreignObject>
+
+    <!-- Green list -->
+    <g transform="translate(220,1970)">
+        <rect x="0" y="0" width="800" height="78" rx="16" fill="url(#green4)" />
+        <rect x="0" y="92" width="800" height="78" rx="16" fill="url(#green4)" />
+        <rect x="0" y="184" width="800" height="78" rx="16" fill="url(#green4)" />
+        <rect x="0" y="276" width="800" height="78" rx="16" fill="url(#green4)" />
+        <rect x="0" y="368" width="800" height="78" rx="16" fill="url(#green4)" />
+
+        <foreignObject x="25" y="13" width="750" height="55">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo body" style="font-size:21px;">پذیرش روشن انتخابات آزاد و
+                رقابتی</div>
+        </foreignObject>
+        <foreignObject x="25" y="105" width="750" height="55">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo body" style="font-size:21px;">حق نقد رهبر، خاندان، حزب
+                یا دولت انتقالی</div>
+        </foreignObject>
+        <foreignObject x="25" y="197" width="750" height="55">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo body" style="font-size:21px;">تعهد به حقوق برابر
+                اقلیت‌های قومی، مذهبی و سیاسی</div>
+        </foreignObject>
+        <foreignObject x="25" y="289" width="750" height="55">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo body" style="font-size:21px;">شفافیت مالی و پرهیز از
+                رانت‌سازی برای نزدیکان قدرت</div>
+        </foreignObject>
+        <foreignObject x="25" y="381" width="750" height="55">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo body" style="font-size:21px;">تدوین قانون اساسی توسط
+                نهاد منتخب مردم</div>
+        </foreignObject>
+    </g>
+
+    <!-- Red list -->
+    <g transform="translate(1180,1970)">
+        <rect x="0" y="0" width="800" height="78" rx="16" fill="url(#red4)" />
+        <rect x="0" y="92" width="800" height="78" rx="16" fill="url(#red4)" />
+        <rect x="0" y="184" width="800" height="78" rx="16" fill="url(#red4)" />
+        <rect x="0" y="276" width="800" height="78" rx="16" fill="url(#red4)" />
+        <rect x="0" y="368" width="800" height="78" rx="16" fill="url(#red4)" />
+
+        <foreignObject x="25" y="13" width="750" height="55">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo body" style="font-size:21px;">تحقیر منتقدان با برچسب
+                خائن، تجزیه‌طلب یا ضدملت</div>
+        </foreignObject>
+        <foreignObject x="25" y="105" width="750" height="55">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo body" style="font-size:21px;">تقدیس رهبر یا نماد سیاسی و
+                فراتر دانستن او از نقد</div>
+        </foreignObject>
+        <foreignObject x="25" y="197" width="750" height="55">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo body" style="font-size:21px;">توجیه سرکوب موقت به نام
+                امنیت، وحدت یا نجات کشور</div>
+        </foreignObject>
+        <foreignObject x="25" y="289" width="750" height="55">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo body" style="font-size:21px;">ارجاع مکرر آزادی سیاسی به
+                آینده‌ای نامعلوم</div>
+        </foreignObject>
+        <foreignObject x="25" y="381" width="750" height="55">
+            <div xmlns="http://www.w3.org/1999/xhtml" class="fo body" style="font-size:21px;">نظامی‌سازی سیاست و واگذاری
+                قدرت واقعی به نهادهای امنیتی</div>
+        </foreignObject>
+    </g>
+
+    <!-- Decision checklist -->
+    <rect x="160" y="2540" width="1880" height="280" rx="32" fill="#ffffff" filter="url(#shadow4)" stroke="#B7791F"
+        stroke-width="4" />
+    <foreignObject x="220" y="2580" width="1760" height="200">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+            <div class="sectionTitle" style="text-align:center;color:#B7791F;">چک‌لیست ارزیابی هر بدیل سیاسی</div>
+            <div class="body" style="text-align:center;">
+                آیا این بدیل قدرت را محدود می‌کند یا آن را در دست فرد، خاندان، حزب، نهاد نظامی یا ایدئولوژی تازه‌ای
+                متمرکز می‌سازد؟
+                آیا مخالفان را شهروند برابر می‌داند یا دشمن داخلی؟ آیا انتخابات آزاد و رسانه‌ی مستقل را از اکنون
+                می‌پذیرد یا به آینده حواله می‌دهد؟
+            </div>
+        </div>
+    </foreignObject>
+
+    <!-- Final quote -->
+    <rect x="160" y="2880" width="1880" height="210" rx="32" fill="#172A3A" filter="url(#shadow4)" />
+    <foreignObject x="230" y="2925" width="1740" height="125">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo quote">
+            آزادی وقتی آغاز می‌شود که قدرت، پیش از آنکه مستقر شود، محدود، پاسخ‌گو و نقدپذیر شده باشد.
+        </div>
+    </foreignObject>
+
+    <foreignObject x="160" y="3120" width="1880" height="55">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo" style="text-align:center;font-size:19px;color:#4A5568;">
+            اینفوگرافیک تحلیلی بر اساس مقاله‌ی «مقایسه‌ی دیکتاتوری مستقر با استبداد احتمالی پس از گذار» — مهدی سالم
+        </div>
+    </foreignObject>
+</svg>

@@ -1,0 +1,428 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="3200" viewBox="0 0 2200 3200">
+    <defs>
+        <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#10243A" />
+            <stop offset="45%" stop-color="#172A3A" />
+            <stop offset="100%" stop-color="#281A33" />
+        </linearGradient>
+
+        <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#FFFFFF" />
+            <stop offset="100%" stop-color="#EAF3FA" />
+        </linearGradient>
+
+        <linearGradient id="tealGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#E6FFFA" />
+            <stop offset="100%" stop-color="#B2F5EA" />
+        </linearGradient>
+
+        <linearGradient id="redGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#FCE8EF" />
+            <stop offset="100%" stop-color="#F8C7D7" />
+        </linearGradient>
+
+        <linearGradient id="amberGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#FFF8E1" />
+            <stop offset="100%" stop-color="#FFE7A3" />
+        </linearGradient>
+
+        <linearGradient id="purpleGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#F3E8FF" />
+            <stop offset="100%" stop-color="#D8B4FE" />
+        </linearGradient>
+
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000000" flood-opacity="0.28" />
+        </filter>
+
+        <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.20" />
+        </filter>
+
+        <marker id="arrowWhite" markerWidth="16" markerHeight="16" refX="12" refY="8" orient="auto">
+            <path d="M 0 0 L 16 8 L 0 16 z" fill="#ffffff" opacity="0.85" />
+        </marker>
+
+        <marker id="arrowTeal" markerWidth="16" markerHeight="16" refX="12" refY="8" orient="auto">
+            <path d="M 0 0 L 16 8 L 0 16 z" fill="#0F766E" />
+        </marker>
+
+        <marker id="arrowRed" markerWidth="16" markerHeight="16" refX="12" refY="8" orient="auto">
+            <path d="M 0 0 L 16 8 L 0 16 z" fill="#8B1E3F" />
+        </marker>
+
+        <style>
+            .fo {
+                font-family: Vazirmatn, Tahoma, Arial, sans-serif;
+                direction: rtl;
+                unicode-bidi: plaintext;
+                color: #172A3A;
+                box-sizing: border-box;
+            }
+
+            .title {
+                font-size: 66px;
+                font-weight: 900;
+                line-height: 1.35;
+                text-align: center;
+            }
+
+            .subtitle {
+                font-size: 34px;
+                font-weight: 600;
+                line-height: 1.7;
+                text-align: center;
+                color: #1F4E79;
+            }
+
+            .author {
+                font-size: 28px;
+                font-weight: 700;
+                color: #4A5568;
+                text-align: center;
+            }
+
+            .sectionTitle {
+                font-size: 34px;
+                font-weight: 900;
+                color: #172A3A;
+                line-height: 1.35;
+            }
+
+            .body {
+                font-size: 24px;
+                line-height: 1.75;
+                color: #263849;
+            }
+
+            .small {
+                font-size: 19px;
+                line-height: 1.65;
+                color: #34495E;
+            }
+
+            .tiny {
+                font-size: 16px;
+                line-height: 1.55;
+                color: #34495E;
+            }
+
+            .whiteTitle {
+                color: #ffffff;
+                font-size: 48px;
+                font-weight: 900;
+                line-height: 1.25;
+                text-align: center;
+            }
+
+            .whiteSmall {
+                color: rgba(255, 255, 255, 0.84);
+                font-size: 22px;
+                line-height: 1.6;
+                text-align: center;
+            }
+
+            .scenarioName {
+                font-size: 29px;
+                font-weight: 900;
+                text-align: center;
+                line-height: 1.35;
+            }
+
+            .branchPlus {
+                font-size: 18px;
+                line-height: 1.55;
+                color: #0F766E;
+                text-align: center;
+            }
+
+            .branchMinus {
+                font-size: 18px;
+                line-height: 1.55;
+                color: #8B1E3F;
+                text-align: center;
+            }
+
+            .badgePlus {
+                display: inline-block;
+                background: #0F766E;
+                color: #ffffff;
+                border-radius: 999px;
+                padding: 2px 10px;
+                font-weight: 900;
+                margin-left: 6px;
+            }
+
+            .badgeMinus {
+                display: inline-block;
+                background: #8B1E3F;
+                color: #ffffff;
+                border-radius: 999px;
+                padding: 2px 10px;
+                font-weight: 900;
+                margin-left: 6px;
+            }
+        </style>
+    </defs>
+
+    <!-- Background -->
+    <rect width="2200" height="3200" fill="url(#bg1)" />
+
+    <!-- Abstract waves -->
+    <path d="M0,0 C480,120 880,300 2200,170 L2200,0 Z" fill="#1F4E79" opacity="0.85" />
+    <path d="M0,260 C620,430 1120,430 2200,560 L2200,930 C1480,760 650,760 0,520 Z" fill="#0F766E" opacity="0.42" />
+    <path d="M0,1610 C700,1320 1420,1540 2200,1260 L2200,3200 L0,3200 Z" fill="#5B2A86" opacity="0.30" />
+    <path d="M0,2070 C650,1810 1460,1970 2200,1710 L2200,3200 L0,3200 Z" fill="#8B1E3F" opacity="0.22" />
+
+    <!-- Grid -->
+    <g opacity="0.07" stroke="#ffffff" stroke-width="1">
+        <path d="M100 0 V3200" />
+        <path d="M200 0 V3200" />
+        <path d="M300 0 V3200" />
+        <path d="M400 0 V3200" />
+        <path d="M500 0 V3200" />
+        <path d="M600 0 V3200" />
+        <path d="M700 0 V3200" />
+        <path d="M800 0 V3200" />
+        <path d="M900 0 V3200" />
+        <path d="M1000 0 V3200" />
+        <path d="M1100 0 V3200" />
+        <path d="M1200 0 V3200" />
+        <path d="M1300 0 V3200" />
+        <path d="M1400 0 V3200" />
+        <path d="M1500 0 V3200" />
+        <path d="M1600 0 V3200" />
+        <path d="M1700 0 V3200" />
+        <path d="M1800 0 V3200" />
+        <path d="M1900 0 V3200" />
+        <path d="M2000 0 V3200" />
+        <path d="M2100 0 V3200" />
+        <path d="M0 100 H2200" />
+        <path d="M0 200 H2200" />
+        <path d="M0 300 H2200" />
+        <path d="M0 400 H2200" />
+        <path d="M0 500 H2200" />
+        <path d="M0 600 H2200" />
+        <path d="M0 700 H2200" />
+        <path d="M0 800 H2200" />
+        <path d="M0 900 H2200" />
+        <path d="M0 1000 H2200" />
+        <path d="M0 1100 H2200" />
+        <path d="M0 1200 H2200" />
+        <path d="M0 1300 H2200" />
+        <path d="M0 1400 H2200" />
+        <path d="M0 1500 H2200" />
+        <path d="M0 1600 H2200" />
+        <path d="M0 1700 H2200" />
+        <path d="M0 1800 H2200" />
+        <path d="M0 1900 H2200" />
+        <path d="M0 2000 H2200" />
+        <path d="M0 2100 H2200" />
+        <path d="M0 2200 H2200" />
+        <path d="M0 2300 H2200" />
+        <path d="M0 2400 H2200" />
+        <path d="M0 2500 H2200" />
+        <path d="M0 2600 H2200" />
+        <path d="M0 2700 H2200" />
+        <path d="M0 2800 H2200" />
+        <path d="M0 2900 H2200" />
+        <path d="M0 3000 H2200" />
+        <path d="M0 3100 H2200" />
+    </g>
+
+    <!-- Title card -->
+    <rect x="160" y="95" width="1880" height="360" rx="34" fill="url(#titleGrad)" filter="url(#shadow)"
+        opacity="0.98" />
+    <foreignObject x="210" y="130" width="1780" height="300">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+            <div class="title">مقایسه‌ی دیکتاتوری مستقر با استبداد احتمالی پس از گذار</div>
+            <div class="subtitle">نقشه‌ی سناریوهای آینده‌ی ایران در وضعیت عدم قطعیت</div>
+            <div class="author">نویسنده: مهدی سالم</div>
+        </div>
+    </foreignObject>
+
+    <!-- Core question box -->
+    <rect x="160" y="515" width="1880" height="190" rx="26" fill="#FFF8E1" stroke="#B7791F" stroke-width="4"
+        filter="url(#softShadow)" />
+    <foreignObject x="205" y="540" width="1790" height="150">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+            <div class="sectionTitle">پرسش مرکزی</div>
+            <div class="body">
+                آیا حرکت از یک دیکتاتوری بالفعل به سوی بدیلی که خود نشانه‌هایی از اقتدارگرایی دارد، الزاماً حرکتی عقلانی
+                و رو به جلو است؟
+            </div>
+        </div>
+    </foreignObject>
+
+    <!-- Center Iran -->
+    <circle cx="1100" cy="1425" r="190" fill="rgba(255,255,255,0.10)" stroke="#ffffff" stroke-width="5" />
+    <circle cx="1100" cy="1425" r="235" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="10 14"
+        opacity="0.35" />
+    <foreignObject x="910" y="1320" width="380" height="210">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+            <div class="whiteTitle">ایران</div>
+            <div class="whiteSmall">در وضعیت گذار<br />میان امکان، خطر و عدم قطعیت</div>
+        </div>
+    </foreignObject>
+
+    <!-- Scenario cards and branches -->
+    <!-- Secular Republic -->
+    <rect x="135" y="850" width="390" height="105" rx="22" fill="#ffffff" stroke="#0F766E" stroke-width="5"
+        filter="url(#softShadow)" />
+    <foreignObject x="155" y="868" width="350" height="75">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo scenarioName">جمهوری سکولار</div>
+    </foreignObject>
+
+    <rect x="65" y="1000" width="315" height="140" rx="18" fill="url(#tealGrad)" stroke="#0F766E" stroke-width="3" />
+    <foreignObject x="85" y="1012" width="275" height="115">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo branchPlus">
+            <span class="badgePlus">+</span> عاملیت مردم و احزاب<br />
+            انتخابات، رقابت نهادمند و امکان نظارت عمومی
+        </div>
+    </foreignObject>
+
+    <rect x="395" y="1000" width="315" height="140" rx="18" fill="url(#redGrad)" stroke="#8B1E3F" stroke-width="3" />
+    <foreignObject x="415" y="1012" width="275" height="115">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo branchMinus">
+            <span class="badgeMinus">−</span> بی‌ثباتی حزبی<br />
+            قطبی‌سازی، ائتلاف‌های شکننده و رقابت ناسالم
+        </div>
+    </foreignObject>
+
+    <!-- Monarchy -->
+    <rect x="1675" y="850" width="390" height="105" rx="22" fill="#ffffff" stroke="#B7791F" stroke-width="5"
+        filter="url(#softShadow)" />
+    <foreignObject x="1695" y="868" width="350" height="75">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo scenarioName">پادشاهی مشروطه</div>
+    </foreignObject>
+
+    <rect x="1490" y="1000" width="315" height="140" rx="18" fill="url(#tealGrad)" stroke="#0F766E" stroke-width="3" />
+    <foreignObject x="1510" y="1012" width="275" height="115">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo branchPlus">
+            <span class="badgePlus">+</span> نماد وحدت ملی<br />
+            انسجام، تداوم تاریخی و کاهش شکاف نمادین
+        </div>
+    </foreignObject>
+
+    <rect x="1820" y="1000" width="315" height="140" rx="18" fill="url(#redGrad)" stroke="#8B1E3F" stroke-width="3" />
+    <foreignObject x="1840" y="1012" width="275" height="115">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo branchMinus">
+            <span class="badgeMinus">−</span> تمرکز اقتدار<br />
+            خطر تقدیس سلطنت، قدرت فراقانونی و حذف نقد
+        </div>
+    </foreignObject>
+
+    <!-- IRI Survival -->
+    <rect x="1675" y="1715" width="390" height="115" rx="22" fill="#ffffff" stroke="#8B1E3F" stroke-width="5"
+        filter="url(#softShadow)" />
+    <foreignObject x="1695" y="1730" width="350" height="85">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo scenarioName">بقای جمهوری اسلامی</div>
+    </foreignObject>
+
+    <rect x="1490" y="1875" width="315" height="150" rx="18" fill="url(#tealGrad)" stroke="#0F766E" stroke-width="3" />
+    <foreignObject x="1510" y="1890" width="275" height="120">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo branchPlus">
+            <span class="badgePlus">+</span> اصلاح از درون<br />
+            کاهش تنش خارجی، تعدیل اجتماعی و پرهیز از فروپاشی
+        </div>
+    </foreignObject>
+
+    <rect x="1820" y="1875" width="315" height="150" rx="18" fill="url(#redGrad)" stroke="#8B1E3F" stroke-width="3" />
+    <foreignObject x="1840" y="1890" width="275" height="120">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo branchMinus">
+            <span class="badgeMinus">−</span> تشدید انسداد<br />
+            امنیتی‌سازی، سرکوب و حرکت به سوی تمامیت‌خواهی
+        </div>
+    </foreignObject>
+
+    <!-- Collapse -->
+    <rect x="135" y="1715" width="390" height="115" rx="22" fill="#ffffff" stroke="#8B1E3F" stroke-width="5"
+        filter="url(#softShadow)" />
+    <foreignObject x="155" y="1730" width="350" height="85">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo scenarioName">فروپاشی و کلنگی‌شدن</div>
+    </foreignObject>
+
+    <rect x="65" y="1875" width="315" height="150" rx="18" fill="url(#tealGrad)" stroke="#0F766E" stroke-width="3" />
+    <foreignObject x="85" y="1890" width="275" height="120">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo branchPlus">
+            <span class="badgePlus">+</span> اتحاد پس از بحران<br />
+            امکان موقت بودن فروپاشی و بازسازی نظم نو
+        </div>
+    </foreignObject>
+
+    <rect x="395" y="1875" width="315" height="150" rx="18" fill="url(#redGrad)" stroke="#8B1E3F" stroke-width="3" />
+    <foreignObject x="415" y="1890" width="275" height="120">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo branchMinus">
+            <span class="badgeMinus">−</span> دولت فروپاشیده<br />
+            خشونت، ناامنی، واگرایی، جنگ داخلی و مهاجرت گسترده
+        </div>
+    </foreignObject>
+
+    <!-- War -->
+    <rect x="800" y="2170" width="600" height="120" rx="24" fill="#ffffff" stroke="#5B2A86" stroke-width="5"
+        filter="url(#softShadow)" />
+    <foreignObject x="830" y="2185" width="540" height="90">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo scenarioName">جنگ و مداخله‌ی خارجی</div>
+    </foreignObject>
+
+    <rect x="510" y="2355" width="515" height="150" rx="18" fill="url(#tealGrad)" stroke="#0F766E" stroke-width="3" />
+    <foreignObject x="535" y="2370" width="465" height="120">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo branchPlus">
+            <span class="badgePlus">+</span> آزادسازی یا نجات‌بخشی کم‌هزینه<br />
+            کاهش سریع توان سرکوب و شکستن بن‌بست داخلی
+        </div>
+    </foreignObject>
+
+    <rect x="1175" y="2355" width="515" height="150" rx="18" fill="url(#redGrad)" stroke="#8B1E3F" stroke-width="3" />
+    <foreignObject x="1200" y="2370" width="465" height="120">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo branchMinus">
+            <span class="badgeMinus">−</span> جنگ پرهزینه و وابستگی بعدی<br />
+            تخریب زیرساخت، استعمار نو، بی‌ثباتی و ملی‌گرایی واکنشی
+        </div>
+    </foreignObject>
+
+    <!-- Arrows from center -->
+    <line x1="960" y1="1300" x2="525" y2="955" stroke="#ffffff" stroke-width="4" marker-end="url(#arrowWhite)"
+        opacity="0.85" />
+    <line x1="1240" y1="1300" x2="1675" y2="955" stroke="#ffffff" stroke-width="4" marker-end="url(#arrowWhite)"
+        opacity="0.85" />
+    <line x1="1240" y1="1555" x2="1675" y2="1715" stroke="#ffffff" stroke-width="4" marker-end="url(#arrowWhite)"
+        opacity="0.85" />
+    <line x1="960" y1="1555" x2="525" y2="1715" stroke="#ffffff" stroke-width="4" marker-end="url(#arrowWhite)"
+        opacity="0.85" />
+    <line x1="1100" y1="1615" x2="1100" y2="2170" stroke="#ffffff" stroke-width="4" stroke-dasharray="12 12"
+        marker-end="url(#arrowWhite)" opacity="0.75" />
+
+    <!-- Branch arrows -->
+    <line x1="260" y1="955" x2="220" y2="1000" stroke="#0F766E" stroke-width="3" marker-end="url(#arrowTeal)" />
+    <line x1="400" y1="955" x2="510" y2="1000" stroke="#8B1E3F" stroke-width="3" marker-end="url(#arrowRed)" />
+
+    <line x1="1805" y1="955" x2="1660" y2="1000" stroke="#0F766E" stroke-width="3" marker-end="url(#arrowTeal)" />
+    <line x1="1940" y1="955" x2="1975" y2="1000" stroke="#8B1E3F" stroke-width="3" marker-end="url(#arrowRed)" />
+
+    <line x1="1805" y1="1830" x2="1660" y2="1875" stroke="#0F766E" stroke-width="3" marker-end="url(#arrowTeal)" />
+    <line x1="1940" y1="1830" x2="1975" y2="1875" stroke="#8B1E3F" stroke-width="3" marker-end="url(#arrowRed)" />
+
+    <line x1="260" y1="1830" x2="220" y2="1875" stroke="#0F766E" stroke-width="3" marker-end="url(#arrowTeal)" />
+    <line x1="400" y1="1830" x2="510" y2="1875" stroke="#8B1E3F" stroke-width="3" marker-end="url(#arrowRed)" />
+
+    <line x1="980" y1="2290" x2="800" y2="2355" stroke="#0F766E" stroke-width="3" marker-end="url(#arrowTeal)" />
+    <line x1="1220" y1="2290" x2="1400" y2="2355" stroke="#8B1E3F" stroke-width="3" marker-end="url(#arrowRed)" />
+
+    <!-- Bottom analytical notes -->
+    <rect x="160" y="2655" width="1880" height="355" rx="32" fill="#ffffff" opacity="0.95" filter="url(#shadow)" />
+    <foreignObject x="210" y="2695" width="1780" height="285">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo">
+            <div class="sectionTitle">خوانش تحلیلی نقشه</div>
+            <div class="body">
+                مسئله‌ی آینده‌ی ایران انتخابی ساده میان «بد» و «خوب» نیست. هر سناریو هم ظرفیت گشایش دارد و هم خطر
+                بازتولید استبداد، بی‌ثباتی یا وابستگی. بنابراین ارزیابی عقلانی باید به جای نام‌ها و نمادها، بر مسیر
+                گذار، کیفیت نهادسازی، مهار قدرت، حق نقد، حقوق برابر و نقش بازیگران خارجی تمرکز کند.
+            </div>
+            <div class="small">
+                اصل راهنما: نه تسلیم وضع موجود، نه خوش‌بینی ساده‌دلانه نسبت به هر بدیل؛ بلکه مطالبه‌ی تضمین‌های
+                دموکراتیک پیش از تولد نظم جدید.
+            </div>
+        </div>
+    </foreignObject>
+</svg>
