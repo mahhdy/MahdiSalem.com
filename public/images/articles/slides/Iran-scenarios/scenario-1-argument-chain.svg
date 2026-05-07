@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" width="960" height="640">
+  <defs>
+    <style>
+      text { font-family: 'Vazirmatn', 'Tahoma', 'Arial Unicode MS', Arial, sans-serif; }
+      .bg { fill: #FDFBF7; }
+      .panel { fill: #FFFFFF; stroke: #EFECE6; stroke-width: 1.5; }
+      .panel-blue { fill: #F4F7F9; stroke: #D0E1EE; stroke-width: 1.5; }
+      .panel-dark { fill: #2D2A26; }
+      .panel-green { fill: #F2F7F4; stroke: #CDE2D6; stroke-width: 1.5; }
+      .panel-red { fill: #FCF4F4; stroke: #F3D0D0; stroke-width: 1.5; }
+      
+      .text-main { fill: #2D2A26; }
+      .text-sub { fill: #6B665E; }
+      .text-light { fill: #FFFFFF; }
+      .text-blue { fill: #3A6B88; }
+      .text-green { fill: #3E795B; }
+      .text-red { fill: #A73A3A; }
+      
+      .line { stroke: #D5D1CB; stroke-width: 2; }
+      .line-green { stroke: #3E795B; stroke-width: 2; }
+      .line-red { stroke: #A73A3A; stroke-width: 2; }
+    </style>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#4A443D" flood-opacity="0.04" />
+    </filter>
+    
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#D5D1CB" />
+    </marker>
+    <marker id="arrowR" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#A73A3A" />
+    </marker>
+    <marker id="arrowG" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3E795B" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="640" class="bg" />
+
+  <!-- Header -->
+  <text x="480" y="45" text-anchor="middle" class="text-main" font-size="22" font-weight="bold" direction="rtl">زنجیره‌ی استدلال: از «ممکن» تا «انتخاب معقول»</text>
+  <text x="480" y="72" text-anchor="middle" class="text-sub" font-size="14" direction="rtl">مقدمات اثبات می‌کنند که سناریو «ممکن» است — اما برای «معقول بودن» به ۴ شرط اضافه نیاز است</text>
+
+  <!-- ===== ROW 1: THREE PREMISES ===== -->
+  <!-- Premise 1 -->
+  <rect x="20" y="100" width="280" height="84" class="panel" rx="16" filter="url(#shadow)" />
+  <rect x="20" y="100" width="280" height="6" fill="#3A6B88" rx="3" />
+  <text x="280" y="128" text-anchor="start" class="text-blue" font-size="12" font-weight="bold" direction="rtl">مقدمه‌ی اول</text>
+  <text x="280" y="148" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">این سناریو ممکن است</text>
+  <text x="280" y="168" text-anchor="start" class="text-sub" font-size="12" direction="rtl">هیچ ضرورت تاریخی آن را منتفی نمی‌کند</text>
+
+  <!-- Premise 2 -->
+  <rect x="340" y="100" width="280" height="84" class="panel" rx="16" filter="url(#shadow)" />
+  <rect x="340" y="100" width="280" height="6" fill="#3A6B88" rx="3" />
+  <text x="600" y="128" text-anchor="start" class="text-blue" font-size="12" font-weight="bold" direction="rtl">مقدمه‌ی دوم</text>
+  <text x="600" y="148" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">تجربه‌شده است</text>
+  <text x="600" y="168" text-anchor="start" class="text-sub" font-size="12" direction="rtl">اسپانیا، کره، تایوان، آمریکای لاتین</text>
+
+  <!-- Premise 3 -->
+  <rect x="660" y="100" width="280" height="84" class="panel" rx="16" filter="url(#shadow)" />
+  <rect x="660" y="100" width="280" height="6" fill="#3A6B88" rx="3" />
+  <text x="920" y="128" text-anchor="start" class="text-blue" font-size="12" font-weight="bold" direction="rtl">مقدمه‌ی سوم</text>
+  <text x="920" y="148" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">شواهدی در تأیید آن هست</text>
+  <text x="920" y="168" text-anchor="start" class="text-sub" font-size="12" direction="rtl">تغییر نسلی، فشار اقتصادی، جامعه‌ی مدنی</text>
+
+  <!-- Arrows from premises down -->
+  <line x1="160" y1="184" x2="160" y2="214" class="line" />
+  <line x1="480" y1="184" x2="480" y2="214" class="line" />
+  <line x1="800" y1="184" x2="800" y2="214" class="line" />
+
+  <!-- Horizontal line connecting arrows -->
+  <line x1="160" y1="214" x2="800" y2="214" class="line" />
+  <line x1="480" y1="214" x2="480" y2="234" class="line" marker-end="url(#arrow)" />
+
+  <!-- ===== QUESTION BOX ===== -->
+  <rect x="230" y="240" width="500" height="64" class="panel-dark" rx="16" filter="url(#shadow)" />
+  <text x="480" y="266" text-anchor="middle" class="text-light" font-size="15" font-weight="bold" direction="rtl">آیا این سه مقدمه برای نتیجه‌ی «انتخاب معقول» کافی‌اند؟</text>
+  <text x="480" y="288" text-anchor="middle" fill="#C5C2BD" font-size="13" direction="rtl">آیا ممکن بودن + تجربه‌شده بودن + شواهد = بهترین انتخاب؟</text>
+
+  <!-- Answer: NO -->
+  <line x1="480" y1="304" x2="480" y2="334" class="line-red" marker-end="url(#arrowR)" />
+  <rect x="390" y="312" width="180" height="30" class="panel" rx="15" />
+  <text x="480" y="332" text-anchor="middle" class="text-red" font-size="13" font-weight="bold">خیر — لازم‌اند، اما نه کافی</text>
+
+  <!-- ===== ROW 3: 4 CONDITIONS ===== -->
+  <!-- Condition boxes -->
+  <rect x="20" y="348" width="215" height="94" class="panel-blue" rx="14" />
+  <text x="220" y="374" text-anchor="start" class="text-blue" font-size="12" font-weight="bold" direction="rtl">شرط ۱</text>
+  <text x="220" y="394" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">محتمل‌ترین گزینه</text>
+  <text x="220" y="416" text-anchor="start" class="text-sub" font-size="11.5" direction="rtl">نسبت به فروپاشی یا مداخله</text>
+
+  <rect x="255" y="348" width="215" height="94" class="panel-blue" rx="14" />
+  <text x="455" y="374" text-anchor="start" class="text-blue" font-size="12" font-weight="bold" direction="rtl">شرط ۲</text>
+  <text x="455" y="394" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">گزینه‌ای با صرفه</text>
+  <text x="455" y="416" text-anchor="start" class="text-sub" font-size="11.5" direction="rtl">معقولیت هزینه‌ی زمانی و انسانی</text>
+
+  <rect x="490" y="348" width="215" height="94" class="panel-blue" rx="14" />
+  <text x="690" y="374" text-anchor="start" class="text-blue" font-size="12" font-weight="bold" direction="rtl">شرط ۳</text>
+  <text x="690" y="394" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">نتیجه‌ای پایدار</text>
+  <text x="690" y="416" text-anchor="start" class="text-sub" font-size="11.5" direction="rtl">تغییر واقعی ساختار قدرت</text>
+
+  <rect x="725" y="348" width="215" height="94" class="panel-blue" rx="14" />
+  <text x="925" y="374" text-anchor="start" class="text-blue" font-size="12" font-weight="bold" direction="rtl">شرط ۴</text>
+  <text x="925" y="394" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">ریسک پایین‌تر</text>
+  <text x="925" y="416" text-anchor="start" class="text-sub" font-size="11.5" direction="rtl">انحراف معیار پیامدها کمتر باشد</text>
+
+  <!-- Arrows from conditions -->
+  <line x1="127" y1="442" x2="127" y2="470" class="line" />
+  <line x1="362" y1="442" x2="362" y2="470" class="line" />
+  <line x1="597" y1="442" x2="597" y2="470" class="line" />
+  <line x1="832" y1="442" x2="832" y2="470" class="line" />
+  <line x1="127" y1="470" x2="832" y2="470" class="line" />
+  <line x1="480" y1="470" x2="480" y2="494" class="line" marker-end="url(#arrow)" />
+
+  <!-- ===== DECISION FORK ===== -->
+  <rect x="230" y="500" width="500" height="44" class="panel-dark" rx="14" filter="url(#shadow)" />
+  <text x="480" y="527" text-anchor="middle" class="text-light" font-size="14" direction="rtl">آیا همه‌ی ۴ شرط برقرارند؟ (+ شروط مؤید هم در نظر بگیرید)</text>
+
+  <!-- YES branch -->
+  <line x1="320" y1="544" x2="220" y2="570" class="line-green" marker-end="url(#arrowG)" />
+  <text x="250" y="555" class="text-green" font-size="13" font-weight="bold">بله</text>
+  <rect x="20" y="560" width="360" height="64" class="panel-green" rx="14" />
+  <text x="365" y="586" text-anchor="start" class="text-green" font-size="14" font-weight="bold" direction="rtl">بله ← سناریو انتخاب معقول است</text>
+  <text x="365" y="608" text-anchor="start" class="text-sub" font-size="11.5" direction="rtl">با کنش آگاهانه و حفظ استقلال انتقادی دنبال شود</text>
+
+  <!-- NO branch -->
+  <line x1="640" y1="544" x2="740" y2="570" class="line-red" marker-end="url(#arrowR)" />
+  <text x="710" y="555" class="text-red" font-size="13" font-weight="bold">خیر</text>
+  <rect x="580" y="560" width="360" height="64" class="panel-red" rx="14" />
+  <text x="925" y="586" text-anchor="start" class="text-red" font-size="14" font-weight="bold" direction="rtl">خیر ← بازنگری در اولویت سناریو</text>
+  <text x="925" y="608" text-anchor="start" class="text-sub" font-size="11.5" direction="rtl">سناریوهای بدیل باید جدی‌تر ارزیابی شوند</text>
+</svg>

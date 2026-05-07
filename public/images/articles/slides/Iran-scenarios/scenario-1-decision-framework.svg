@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" width="960" height="720">
+  <defs>
+    <style>
+      text { font-family: 'Vazirmatn', 'Tahoma', 'Arial Unicode MS', Arial, sans-serif; }
+      .bg { fill: #FDFBF7; }
+      .panel { fill: #FFFFFF; stroke: #EFECE6; stroke-width: 1.5; }
+      .text-main { fill: #2D2A26; }
+      .text-sub { fill: #6B665E; }
+      .text-muted { fill: #9A958D; }
+      
+      .accent-blue { fill: #3A6B88; }
+      .bg-blue { fill: #F4F7F9; }
+      
+      .accent-green { fill: #3E795B; }
+      .bg-green { fill: #F2F7F4; }
+      
+      .accent-amber { fill: #B37700; }
+      .bg-amber { fill: #FFFBF2; }
+      
+      .accent-red { fill: #A73A3A; }
+      .bg-red { fill: #FCF4F4; }
+    </style>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#4A443D" flood-opacity="0.04" />
+    </filter>
+  </defs>
+
+  <rect width="960" height="720" class="bg" />
+
+  <!-- Header -->
+  <text x="480" y="48" text-anchor="middle" class="text-main" font-size="22" font-weight="bold" direction="rtl">چارچوب تصمیم‌گیری: آیا سناریوی تحول از درون «انتخاب معقول» است؟</text>
+  <text x="480" y="74" text-anchor="middle" class="text-sub" font-size="14" direction="rtl">برای موافقت یا مخالفت، کدام محور زیر نقطه‌ی اتکای شماست؟</text>
+
+  <!-- Panels -->
+  <!-- Q1: شروط لازم (top-right) -->
+  <rect x="490" y="100" width="450" height="290" class="panel" rx="20" filter="url(#shadow)" />
+  <rect x="490" y="100" width="450" height="60" class="bg-blue" rx="20" />
+  <rect x="490" y="140" width="450" height="20" class="bg-blue" />
+  
+  <rect x="850" y="116" width="70" height="28" class="accent-blue" rx="14" />
+  <text x="885" y="135" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="bold">لازم</text>
+  <text x="836" y="128" text-anchor="start" class="accent-blue" font-size="18" font-weight="bold" direction="rtl">شروط لازم</text>
+  <text x="836" y="148" text-anchor="start" class="text-sub" font-size="12" direction="rtl">همه باید برقرار باشند — نقض هر کدام = خروج از «انتخاب معقول»</text>
+
+  <line x1="510" y1="160" x2="930" y2="160" stroke="#EFECE6" stroke-width="1" />
+
+  <!-- Item 1 -->
+  <circle cx="910" cy="190" r="10" class="accent-blue" />
+  <text x="910" y="194" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="bold">۱</text>
+  <text x="886" y="194" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">محتمل‌ترین گزینه در مقایسه با بدیل‌ها باشد</text>
+  <text x="886" y="214" text-anchor="start" class="text-sub" font-size="12" direction="rtl">نه فقط «محتمل» — بلکه نسبت به تداوم وضع/فروپاشی برتری داشته باشد</text>
+
+  <!-- Item 2 -->
+  <circle cx="910" cy="242" r="10" class="accent-blue" />
+  <text x="910" y="246" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="bold">۲</text>
+  <text x="886" y="246" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">هزینه‌ی زمانی و انسانی آن معقول باشد</text>
+  <text x="886" y="266" text-anchor="start" class="text-sub" font-size="12" direction="rtl">اگر چند دهه طول کشد، هزینه‌ی انتظار نباید از منافع آینده بیشتر باشد</text>
+
+  <!-- Item 3 -->
+  <circle cx="910" cy="294" r="10" class="accent-blue" />
+  <text x="910" y="298" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="bold">۳</text>
+  <text x="886" y="298" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">خروجی واقعی، نهادینه و پایدار باشد</text>
+  <text x="886" y="318" text-anchor="start" class="text-sub" font-size="12" direction="rtl">نه فقط تغییر سیما — تغییر ساختار قدرت باید محقق شود</text>
+
+  <!-- Item 4 -->
+  <circle cx="910" cy="346" r="10" class="accent-blue" />
+  <text x="910" y="350" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="bold">۴</text>
+  <text x="886" y="350" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">انحراف معیار پیامدها از بدیل‌ها کمتر باشد</text>
+  <text x="886" y="370" text-anchor="start" class="text-sub" font-size="12" direction="rtl">ریسک = احتمال شکست + وسعت پیامدهای بد. هر دو لحاظ شوند.</text>
+
+
+  <!-- Q2: شروط مؤید (top-left) -->
+  <rect x="20" y="100" width="450" height="290" class="panel" rx="20" filter="url(#shadow)" />
+  <rect x="20" y="100" width="450" height="60" class="bg-green" rx="20" />
+  <rect x="20" y="140" width="450" height="20" class="bg-green" />
+  
+  <rect x="30" y="116" width="80" height="28" class="accent-green" rx="14" />
+  <text x="70" y="135" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="bold">ترجیح‌بخش</text>
+  <text x="450" y="128" text-anchor="start" class="accent-green" font-size="18" font-weight="bold" direction="rtl">شروط مؤید</text>
+  <text x="450" y="148" text-anchor="start" class="text-sub" font-size="12" direction="rtl">هر کدام برقرار باشد، این گزینه را بر سایرین مرجح می‌کند</text>
+
+  <line x1="40" y1="160" x2="450" y2="160" stroke="#EFECE6" stroke-width="1" />
+
+  <!-- Item 1 -->
+  <circle cx="440" cy="190" r="10" class="bg-green" />
+  <text x="440" y="194" text-anchor="middle" class="accent-green" font-size="12" font-weight="bold">✓</text>
+  <text x="416" y="194" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">عاملیت اخلاقی حفظ می‌شود</text>
+  <text x="416" y="214" text-anchor="start" class="text-sub" font-size="12" direction="rtl">هزینه بر نظام، نه بر اقشار فرودست</text>
+
+  <!-- Item 2 -->
+  <circle cx="440" cy="242" r="10" class="bg-green" />
+  <text x="440" y="246" text-anchor="middle" class="accent-green" font-size="12" font-weight="bold">✓</text>
+  <text x="416" y="246" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">چرخه‌ی خشونت تعمیق نمی‌یابد</text>
+  <text x="416" y="266" text-anchor="start" class="text-sub" font-size="12" direction="rtl">جنبش‌های مسالمت‌آمیزتر، پس از پیروزی دموکراتیک‌تر می‌شوند</text>
+
+  <!-- Item 3 -->
+  <circle cx="440" cy="294" r="10" class="bg-green" />
+  <text x="440" y="298" text-anchor="middle" class="accent-green" font-size="12" font-weight="bold">✓</text>
+  <text x="416" y="298" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">مسئولیت شکست بر نظام می‌ماند</text>
+  <text x="416" y="318" text-anchor="start" class="text-sub" font-size="12" direction="rtl">فعالان شاهدان ناتوانی نظامند، نه مسئول انقلاب ناکام</text>
+
+  <!-- Item 4 -->
+  <circle cx="440" cy="346" r="10" class="bg-green" />
+  <text x="440" y="350" text-anchor="middle" class="accent-green" font-size="12" font-weight="bold">✓</text>
+  <text x="416" y="350" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">نهادهای مدنی در مسیر رشد می‌کنند</text>
+  <text x="416" y="370" text-anchor="start" class="text-sub" font-size="12" direction="rtl">برخلاف فروپاشی سریع که جامعه را بدون زیرساخت رها می‌کند</text>
+
+  <!-- Q3: سایر ملاحظات (bottom-left) -->
+  <rect x="20" y="410" width="450" height="290" class="panel" rx="20" filter="url(#shadow)" />
+  <rect x="20" y="410" width="450" height="60" class="bg-amber" rx="20" />
+  <rect x="20" y="450" width="450" height="20" class="bg-amber" />
+  
+  <rect x="30" y="426" width="80" height="28" class="accent-amber" rx="14" />
+  <text x="70" y="445" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="bold">ملاحظات</text>
+  <text x="450" y="438" text-anchor="start" class="accent-amber" font-size="18" font-weight="bold" direction="rtl">سایر ملاحظات</text>
+  <text x="450" y="458" text-anchor="start" class="text-sub" font-size="12" direction="rtl">عواملی که احتمال یا صرفه‌ی این سناریو را تغییر می‌دهند</text>
+
+  <line x1="40" y1="470" x2="450" y2="470" stroke="#EFECE6" stroke-width="1" />
+
+  <!-- Item 1 -->
+  <circle cx="440" cy="500" r="6" class="accent-amber" />
+  <text x="420" y="504" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">نقش فعال نخبگان</text>
+  <text x="420" y="524" text-anchor="start" class="text-sub" font-size="12" direction="rtl">کنش نخبگان مستقل این سناریو را محتمل‌تر می‌کند</text>
+
+  <!-- Item 2 -->
+  <circle cx="440" cy="552" r="6" class="accent-amber" />
+  <text x="420" y="556" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">درگیری ≠ تأیید</text>
+  <text x="420" y="576" text-anchor="start" class="text-sub" font-size="12" direction="rtl">همکاری با حفظ استقلال انتقادی، نه تبدیل شدن به بازوی نظام</text>
+
+  <!-- Item 3 -->
+  <circle cx="440" cy="604" r="6" class="accent-amber" />
+  <text x="420" y="608" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">رد توسط نظام → مسئولیت با اوست</text>
+  <text x="420" y="628" text-anchor="start" class="text-sub" font-size="12" direction="rtl">اگر حاکمیت نخبگان مستقل را پس زد، بار محرومیت با اوست</text>
+
+  <!-- Item 4 -->
+  <circle cx="440" cy="656" r="6" class="accent-amber" />
+  <text x="420" y="660" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">گسترش دامنه‌ی نخبگانی</text>
+  <text x="420" y="680" text-anchor="start" class="text-sub" font-size="12" direction="rtl">مشارکت متخصصان، طبقه‌ی حاکمیت را متکثرتر می‌کند</text>
+
+  <!-- Q4: هشدارها (bottom-right) -->
+  <rect x="490" y="410" width="450" height="290" class="panel" rx="20" filter="url(#shadow)" />
+  <rect x="490" y="410" width="450" height="60" class="bg-red" rx="20" />
+  <rect x="490" y="450" width="450" height="20" class="bg-red" />
+  
+  <rect x="850" y="426" width="70" height="28" class="accent-red" rx="14" />
+  <text x="885" y="445" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="bold">هشدار</text>
+  <text x="836" y="438" text-anchor="start" class="accent-red" font-size="18" font-weight="bold" direction="rtl">هشدارها</text>
+  <text x="836" y="458" text-anchor="start" class="text-sub" font-size="12" direction="rtl">موانع جدی که باید صادقانه در ترازنامه لحاظ شوند</text>
+
+  <line x1="510" y1="470" x2="930" y2="470" stroke="#EFECE6" stroke-width="1" />
+
+  <!-- Item 1 -->
+  <path d="M 910 494 l 6 12 l -12 0 z" class="accent-red" />
+  <text x="890" y="504" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">مثال چین: توسعه‌ی اقتدارگرا، نه دموکراسی</text>
+  <text x="890" y="524" text-anchor="start" class="text-sub" font-size="12" direction="rtl">اصلاح درون‌ساختاری ضرورتاً به آزادی نمی‌انجامد</text>
+
+  <!-- Item 2 -->
+  <path d="M 910 546 l 6 12 l -12 0 z" class="accent-red" />
+  <text x="890" y="556" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">مثال کره: فشار از پایین بود، نه تصمیم از بالا</text>
+  <text x="890" y="576" text-anchor="start" class="text-sub" font-size="12" direction="rtl">جامعه‌ی مدنی محرک اصلی بود، نه نخبگان حکومتی</text>
+
+  <!-- Item 3 -->
+  <path d="M 910 598 l 6 12 l -12 0 z" class="accent-red" />
+  <text x="890" y="608" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">مشروعیت ایدئولوژیک: اصلاح = تهدید وجودی</text>
+  <text x="890" y="628" text-anchor="start" class="text-sub" font-size="12" direction="rtl">در ج.ا.ا اصلاح جدی به بنیادهای مشروعیت حمله می‌کند</text>
+
+  <!-- Item 4 -->
+  <path d="M 910 650 l 6 12 l -12 0 z" class="accent-red" />
+  <text x="890" y="660" text-anchor="start" class="text-main" font-size="14" font-weight="bold" direction="rtl">اقتصاد رانتی + نهادهای موازی = اصلاح خنثی‌شدنی</text>
+  <text x="890" y="680" text-anchor="start" class="text-sub" font-size="12" direction="rtl">هر اصلاح جدی می‌تواند توسط نهادهای قدرت خنثی شود</text>
+  
+</svg>
