@@ -1,0 +1,267 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" dir="rtl"
+  font-family="Tahoma, 'B Nazanin', 'Iranian Sans', sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c29" />
+      <stop offset="50%" style="stop-color:#302b63" />
+      <stop offset="100%" style="stop-color:#24243e" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f7971e" />
+      <stop offset="100%" style="stop-color:#ffd200" />
+    </linearGradient>
+    <linearGradient id="dangerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e44d26" />
+      <stop offset="100%" style="stop-color:#f09819" />
+    </linearGradient>
+    <linearGradient id="safeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#11998e" />
+      <stop offset="100%" style="stop-color:#38ef7d" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea" />
+      <stop offset="100%" style="stop-color:#764ba2" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.12)" />
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0.04)" />
+    </linearGradient>
+    <linearGradient id="quoteGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(247,151,30,0.15)" />
+      <stop offset="100%" style="stop-color:rgba(255,210,0,0.05)" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.4)" />
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="1000" fill="url(#bgGrad)" />
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+  </pattern>
+  <rect width="1400" height="1000" fill="url(#grid)" />
+  <!-- Decorative circles -->
+  <circle cx="1200" cy="100" r="250" fill="rgba(247,151,30,0.04)" />
+  <circle cx="200" cy="500" r="300" fill="rgba(102,126,234,0.04)" />
+  <circle cx="1100" cy="800" r="200" fill="rgba(17,153,142,0.03)" />
+  <circle cx="700" cy="200" r="350" fill="rgba(118,75,162,0.02)" />
+
+  <!-- Decorative corner elements -->
+  <path d="M 20 20 L 70 20 L 70 25 L 25 25 L 25 70 L 20 70 Z" fill="url(#goldGrad)" opacity="0.3" />
+  <path d="M 1380 20 L 1330 20 L 1330 25 L 1375 25 L 1375 70 L 1380 70 Z" fill="url(#goldGrad)" opacity="0.3" />
+  <path d="M 20 980 L 70 980 L 70 975 L 25 975 L 25 930 L 20 930 Z" fill="url(#goldGrad)" opacity="0.3" />
+  <path d="M 1380 980 L 1330 980 L 1330 975 L 1375 975 L 1375 930 L 1380 930 Z" fill="url(#goldGrad)" opacity="0.3" />
+
+  <!-- ===== TITLE SECTION ===== -->
+  <text x="700" y="50" text-anchor="middle" fill="url(#goldGrad)" font-size="26" font-weight="bold"
+    filter="url(#glow)">پراگماتیکس گفتمان سیاسی در شرایط انسداد</text>
+  <text x="700" y="78" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="14">تقابل استلزام منطقی و دلالت
+    معنایی · یادداشت انتقادی</text>
+  <line x1="350" y1="92" x2="1050" y2="92" stroke="url(#goldGrad)" stroke-width="1" opacity="0.4" />
+
+  <!-- ===== ROW 1: Two Pillars + Sweets Example (side by side) ===== -->
+
+  <!-- Left: Two Pillars -->
+  <text x="1100" y="125" text-anchor="middle" fill="url(#goldGrad)" font-size="16" font-weight="bold">دو بُعد هر
+    گزاره</text>
+
+  <!-- Card: Logical Entailment -->
+  <g filter="url(#shadow)">
+    <rect x="1050" y="140" width="310" height="130" rx="14" fill="url(#cardGrad)" stroke="rgba(102,126,234,0.4)"
+      stroke-width="1.5" />
+    <rect x="1050" y="140" width="7" height="130" rx="3" fill="url(#blueGrad)" />
+    <text x="1205" y="168" text-anchor="middle" fill="#a8b4ff" font-size="14" font-weight="bold">استلزام منطقی</text>
+    <text x="1205" y="186" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="10" font-style="italic">Logical
+      Entailment</text>
+    <text x="1205" y="210" text-anchor="middle" fill="rgba(255,255,255,0.75)" font-size="11">آنچه منطقاً از گزاره نتیجه
+      می‌شود</text>
+    <text x="1205" y="230" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10">• صرفاً ساختار صوری • مستقل
+      از بافتار</text>
+    <text x="1205" y="248" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10">• حداقلی و
+      محافظه‌کارانه</text>
+  </g>
+
+  <!-- Card: Pragmatic Implicature -->
+  <g filter="url(#shadow)">
+    <rect x="710" y="140" width="310" height="130" rx="14" fill="url(#cardGrad)" stroke="rgba(247,151,30,0.4)"
+      stroke-width="1.5" />
+    <rect x="1013" y="140" width="7" height="130" rx="3" fill="url(#goldGrad)" />
+    <text x="865" y="168" text-anchor="middle" fill="#ffd200" font-size="14" font-weight="bold">دلالت معنایی /
+      کاربردشناختی</text>
+    <text x="865" y="186" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-size="10"
+      font-style="italic">Pragmatic Implicature</text>
+    <text x="865" y="210" text-anchor="middle" fill="rgba(255,255,255,0.75)" font-size="11">آنچه مخاطب در بافتار استنباط
+      می‌کند</text>
+    <text x="865" y="230" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10">• وابسته به زمینه • ناظر بر
+      ترجیح</text>
+    <text x="865" y="248" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10">• قدرتمند و اثرگذار</text>
+  </g>
+
+  <!-- Gap warning -->
+  <text x="1100" y="295" text-anchor="middle" fill="url(#dangerGrad)" font-size="16" filter="url(#glow)">⚠</text>
+  <text x="1100" y="314" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="11" font-weight="bold">شکاف بین
+    این دو = فضای دستکاری</text>
+
+  <!-- Right: Sweets Example -->
+  <text x="340" y="125" text-anchor="middle" fill="url(#goldGrad)" font-size="16" font-weight="bold">مثال روشن‌گر: آزمون
+    شیرینی</text>
+  <g filter="url(#shadow)">
+    <rect x="40" y="140" width="640" height="180" rx="14" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.1)"
+      stroke-width="1" />
+    <!-- Three sweets -->
+    <text x="620" y="178" text-anchor="middle" font-size="24">🍰</text>
+    <text x="570" y="178" text-anchor="middle" font-size="24">🍩</text>
+    <text x="520" y="178" text-anchor="middle" font-size="24">🧁</text>
+    <text x="470" y="180" text-anchor="end" fill="rgba(255,255,255,0.9)" font-size="13" font-weight="bold">«این شیرینی
+      شکلاتی خوشمزه/ شیرین است»</text>
+    <line x1="80" y1="196" x2="640" y2="196" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+    <text x="640" y="218" text-anchor="end" fill="#a8b4ff" font-size="11">بار منطقی: حداقل یکی از شیرینی‌ها خوشمزه است
+      (بدیهی!)</text>
+    <text x="640" y="240" text-anchor="end" fill="#ffd200" font-size="11">بار معنایی: این شیرینی از بقیه بهتر است =
+      ترجیح</text>
+    <line x1="80" y1="255" x2="640" y2="255" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+    <text x="360" y="278" text-anchor="middle" fill="url(#dangerGrad)" font-size="13" font-weight="bold">⚠ اگر بار منطقی
+      = بار معنایی بود، بیان چنان جمله‌ای پوچ و عبث می‌بود!</text>
+    <text x="360" y="298" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="10">از کرامات شیخ ما این بود /
+      شیره را خورد و گفت شیرین بود</text>
+  </g>
+
+  <!-- ===== SECTION 3: Political Application (REDESIGNED) ===== -->
+  <line x1="100" y1="345" x2="1300" y2="345" stroke="url(#goldGrad)" stroke-width="1" opacity="0.3" />
+  <text x="700" y="375" text-anchor="middle" fill="url(#goldGrad)" font-size="18" font-weight="bold"
+    filter="url(#glow)">تطبیق سیاسی: تحلیل یک گزاره‌ی نمونه</text>
+
+  <!-- Large Quote Card -->
+  <g filter="url(#shadow)">
+    <rect x="100" y="395" width="1200" height="115" rx="18" fill="url(#quoteGrad)" stroke="url(#goldGrad)"
+      stroke-width="2" />
+    <!-- Speaker icon -->
+    <circle cx="1230" cy="435" r="25" fill="rgba(247,151,30,0.15)" stroke="url(#goldGrad)" stroke-width="1.5" />
+    <text x="1230" y="443" text-anchor="middle" font-size="22">🎙️</text>
+    <text x="1185" y="438" text-anchor="end" fill="rgba(255,255,255,0.5)" font-size="10">گوینده‌ی شناخته‌شده (متخصص و
+      معتمد عمومی)</text>
+    <!-- Quote marks -->
+    <text x="1185" y="475" text-anchor="end" fill="url(#goldGrad)" font-size="32" opacity="0.4">«</text>
+    <text x="700" y="478" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-size="16" font-weight="bold">مردم حق
+      دارند برای احقاق حقوق ضایع‌شده‌ی خود و بازگشت قدرت ملی</text>
+    <text x="700" y="500" text-anchor="middle" fill="rgba(255,255,255,0.95)" font-size="16" font-weight="bold">به آن‌ها،
+      از دیگران کمک بخواهند.</text>
+    <text x="245" y="490" text-anchor="start" fill="url(#goldGrad)" font-size="32" opacity="0.4">»</text>
+  </g>
+
+  <!-- Down arrows from quote to two analysis cards -->
+  <line x1="450" y1="510" x2="450" y2="540" stroke="url(#goldGrad)" stroke-width="2" opacity="0.5" />
+  <polygon points="445,535 450,545 455,535" fill="url(#goldGrad)" opacity="0.5" />
+  <line x1="950" y1="510" x2="950" y2="540" stroke="url(#blueGrad)" stroke-width="2" opacity="0.5" />
+  <polygon points="945,535 950,545 955,535" fill="url(#blueGrad)" opacity="0.5" />
+
+  <!-- Two Analysis Cards Side by Side -->
+  <!-- Card 1: Pragmatic Implicature (بار معنایی) -->
+  <g filter="url(#shadow)">
+    <rect x="100" y="550" width="550" height="190" rx="16" fill="url(#cardGrad)" stroke="rgba(247,151,30,0.5)"
+      stroke-width="2" />
+    <rect x="643" y="550" width="7" height="190" rx="3" fill="url(#goldGrad)" />
+    <text x="375" y="580" text-anchor="middle" fill="#ffd200" font-size="15" font-weight="bold">بار معنایی (دلالت
+      کاربردشناختی)</text>
+    <text x="375" y="598" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="10" font-style="italic">آنچه
+      مخاطب عام در بافتار فعلی استنباط می‌کند</text>
+    <line x1="150" y1="608" x2="600" y2="608" stroke="rgba(255,210,0,0.15)" stroke-width="1" />
+    <text x="610" y="632" text-anchor="end" fill="rgba(255,255,255,0.85)" font-size="12">✦ این حق نه‌فقط وجود دارد، بلکه
+      ارزش احقاق و پیگیری دارد</text>
+    <text x="610" y="655" text-anchor="end" fill="rgba(255,255,255,0.85)" font-size="12">✦ مداخله‌ی خارجی گزینه‌ای مشروع
+      و قابل دفاع است</text>
+    <text x="610" y="678" text-anchor="end" fill="rgba(255,255,255,0.85)" font-size="12">✦ وضع موجود آن‌قدر بد هست که هر
+      تغییری بهبود محسوب شود</text>
+    <text x="610" y="701" text-anchor="end" fill="rgba(255,255,255,0.85)" font-size="12">✦ هزینه‌های مداخله قابل تحمل یا
+      ناچیزند</text>
+    <text x="610" y="724" text-anchor="end" fill="#ffd200" font-size="11" font-weight="bold">← این‌ها «گفته نشده‌اند»
+      اما «منتقل شده‌اند»</text>
+  </g>
+
+  <!-- Card 2: Logical Entailment (بار منطقی) -->
+  <g filter="url(#shadow)">
+    <rect x="750" y="550" width="550" height="190" rx="16" fill="url(#cardGrad)" stroke="rgba(102,126,234,0.5)"
+      stroke-width="2" />
+    <rect x="750" y="550" width="7" height="190" rx="3" fill="url(#blueGrad)" />
+    <text x="1025" y="580" text-anchor="middle" fill="#a8b4ff" font-size="15" font-weight="bold">بار منطقی (استلزام
+      صوری)</text>
+    <text x="1025" y="598" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="10" font-style="italic">آنچه
+      صرفاً از ساختار منطقی جمله نتیجه می‌شود</text>
+    <line x1="800" y1="608" x2="1250" y2="608" stroke="rgba(168,180,255,0.15)" stroke-width="1" />
+    <text x="1260" y="632" text-anchor="end" fill="rgba(255,255,255,0.85)" font-size="12">• مردم حقی دارند (بدون ارزیابی
+      عاقبت اِعمال آن)</text>
+    <text x="1260" y="655" text-anchor="end" fill="rgba(255,255,255,0.85)" font-size="12">• درخواست کمک از دیگران ممکن
+      است (نه لزوماً مطلوب)</text>
+    <text x="1260" y="678" text-anchor="end" fill="rgba(255,255,255,0.85)" font-size="12">• هیچ ادعایی درباره‌ی نتیجه و
+      هزینه‌ مطرح نشده</text>
+    <text x="1260" y="701" text-anchor="end" fill="rgba(255,255,255,0.85)" font-size="12">• هیچ مقایسه‌ای با سایر
+      گزینه‌ها صورت نگرفته</text>
+    <text x="1260" y="724" text-anchor="end" fill="#a8b4ff" font-size="11" font-weight="bold">← ادعای گوینده: «فقط همین
+      را گفتم!»</text>
+  </g>
+
+  <!-- Down arrows to summary -->
+  <line x1="375" y1="740" x2="375" y2="770" stroke="url(#dangerGrad)" stroke-width="2" opacity="0.5" />
+  <line x1="1025" y1="740" x2="1025" y2="770" stroke="url(#dangerGrad)" stroke-width="2" opacity="0.5" />
+  <!-- Converging lines -->
+  <line x1="375" y1="770" x2="700" y2="790" stroke="url(#dangerGrad)" stroke-width="2" opacity="0.4" />
+  <line x1="1025" y1="770" x2="700" y2="790" stroke="url(#dangerGrad)" stroke-width="2" opacity="0.4" />
+  <polygon points="695,785 700,798 705,785" fill="url(#dangerGrad)" opacity="0.6" />
+
+  <!-- Summary Card: Speech Act -->
+  <g filter="url(#shadow)">
+    <rect x="130" y="800" width="1140" height="145" rx="18" fill="rgba(228,77,38,0.08)" stroke="url(#dangerGrad)"
+      stroke-width="2" />
+    <text x="700" y="828" text-anchor="middle" fill="url(#dangerGrad)" font-size="16" font-weight="bold"
+      filter="url(#glow)">⚠ کنش گفتاری: آنچه واقعاً منتقل و دریافت می‌شود</text>
+    <text x="700" y="848" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="10">Speech Act Analysis:
+      Perlocutionary Effect</text>
+    <line x1="200" y1="858" x2="1200" y2="858" stroke="rgba(228,77,38,0.2)" stroke-width="1" />
+
+    <!-- Three columns of conclusion -->
+    <text x="1120" y="882" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="12" font-weight="bold">مخاطب محق
+      است بپذیرد:</text>
+    <text x="1120" y="905" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="11">گوینده از مداخله‌ی
+      خارجی</text>
+    <text x="1120" y="923" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="11">حمایت ضمنی می‌کند</text>
+
+    <text x="700" y="882" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="12" font-weight="bold">موضع‌گیری
+      پنهان:</text>
+    <text x="700" y="905" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="11">طرح ابعاد موجّه مداخله در
+      تقابل</text>
+    <text x="700" y="923" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="11">با منتقدان = دفاع از یک
+      سمت</text>
+
+    <text x="280" y="882" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="12" font-weight="bold">خنثی‌نمایی
+      کاذب:</text>
+    <text x="280" y="905" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="11">استناد به بار منطقی برای
+      فرار</text>
+    <text x="280" y="923" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="11">از مسئولیت بار معنایی</text>
+
+    <!-- Bottom line -->
+    <line x1="200" y1="938" x2="1200" y2="938" stroke="rgba(228,77,38,0.2)" stroke-width="1" />
+    <text x="700" y="970" text-anchor="middle" fill="url(#safeGrad)" font-size="12" font-weight="bold">✓ بیان مسئولانه =
+      افشای نقص تحلیل + طرح ریسک‌ها + خودداری از ساده‌سازی + پذیرش مسئولیت پیامدهای گفتاری</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="300" y1="975" x2="1100" y2="975" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+  <text x="700" y="990" text-anchor="middle" fill="rgba(255,255,255,0.25)" font-size="9">مبانی نظری: گرایس (اصول همکاری)
+    · آستین و سرل (کنش‌های گفتاری) · فرکلاف و ون‌دایک (تحلیل گفتمان انتقادی) | ارجاع تاریخی: جنگ‌های ایران و روس ·
+    معاهدات گلستان و ترکمانچای</text>
+</svg>
