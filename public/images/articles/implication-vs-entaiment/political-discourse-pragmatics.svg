@@ -77,7 +77,7 @@
   <!-- ===== ROW 1: Two Pillars + Sweets Example (side by side) ===== -->
 
   <!-- Left: Two Pillars -->
-  <text x="1100" y="125" text-anchor="middle" fill="url(#goldGrad)" font-size="16" font-weight="bold">دو بُعد هر
+  <text x="1030" y="125" text-anchor="MIDDLE" fill="url(#goldGrad)" font-size="16" font-weight="bold">دو بُعد هر
     گزاره</text>
 
   <!-- Card: Logical Entailment -->
@@ -113,8 +113,8 @@
   </g>
 
   <!-- Gap warning -->
-  <text x="1100" y="295" text-anchor="middle" fill="url(#dangerGrad)" font-size="16" filter="url(#glow)">⚠</text>
-  <text x="1100" y="314" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="11" font-weight="bold">شکاف بین
+  <text x="1030" y="295" text-anchor="middle" fill="url(#dangerGrad)" font-size="16" filter="url(#glow)">⚠</text>
+  <text x="1030" y="314" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="11" font-weight="bold">شکاف بین
     این دو = فضای دستکاری</text>
 
   <!-- Right: Sweets Example -->
@@ -131,9 +131,11 @@
       شکلاتی خوشمزه/ شیرین است»</text>
     <line x1="80" y1="196" x2="640" y2="196" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
     <text x="640" y="218" text-anchor="end" fill="#a8b4ff" font-size="11">بار منطقی: حداقل یکی از شیرینی‌ها خوشمزه است
-      (بدیهی!)</text>
+      (موضع پیش‌فرض نسبت به شیرینی!)</text>
     <text x="640" y="240" text-anchor="end" fill="#ffd200" font-size="11">بار معنایی: این شیرینی از بقیه بهتر است =
-      ترجیح</text>
+      (ترجیح)
+      /
+      توصیه به توجه ویژه به آن شیرینی!</text>
     <line x1="80" y1="255" x2="640" y2="255" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
     <text x="360" y="278" text-anchor="middle" fill="url(#dangerGrad)" font-size="13" font-weight="bold">⚠ اگر بار منطقی
       = بار معنایی بود، بیان چنان جمله‌ای پوچ و عبث می‌بود!</text>
