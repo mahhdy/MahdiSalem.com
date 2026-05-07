@@ -26,14 +26,17 @@ keywords:
 readingTime: 15
 pdfOnly: false
 showPdfViewer: false
-pdfUrl: 
-hasSlide: false
+hasSlide: true
 difficulty: متوسط
 showInContents: true
 coverImage: /images/articles/covers/implication-vs-entaiment/cover.webp
 imageDisplay: full
 cardImage: show
 slug: implication-vs-entaiment
+hasSlide: true
+slideArray:
+  - /images/articles/implication-vs-entaiment/political-discourse-pragmatics.svg
+
 ---
 
 ## تقابل استلزام منطقی و دلالت کاربردشناختی: یادداشت انتقادی

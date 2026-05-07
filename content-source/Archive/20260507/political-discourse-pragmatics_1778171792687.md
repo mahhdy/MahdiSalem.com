@@ -16,7 +16,7 @@ categories:
   - فلسفه زبان
 draft: false
 hidden: false
-showheader: false
+showheader: true
 category: متفرقه
 keywords:
   - انواع
