@@ -30,6 +30,8 @@ export async function getStaticPaths() {
   });
 }
 
+import * as RichComponents from "../../components/mdx/RichArticleComponents";
+
 const { article, slug: routeSlug } = Astro.props;
 
 // Hidden content guard — return 404 unless ?force=true
@@ -72,5 +74,5 @@ const slug =
   slideArray={article.data.slideArray}
   slideAlbums={article.data.slideAlbums}
 >
-  <Content />
+  <Content components={{ ...RichComponents }} />
 </ArticleLayout>
