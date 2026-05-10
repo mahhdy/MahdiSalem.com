@@ -1,0 +1,294 @@
+<svg width="3508" height="2480" viewBox="0 0 3508 2480" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .bg {
+                fill: #FDFCF0
+            }
+
+            .header {
+                font-family: 'Arial', 'Tahoma', sans-serif;
+                font-weight: 900;
+                font-size: 56px;
+                fill: #FDFCF0
+            }
+
+            .section {
+                font-family: 'Arial', 'Tahoma', sans-serif;
+                font-weight: 800;
+                font-size: 32px;
+                fill: #162635
+            }
+
+            .country {
+                font-family: 'Arial', 'Tahoma', sans-serif;
+                font-weight: 900;
+                font-size: 22px;
+                fill: #111
+            }
+
+            .cardtitle {
+                font-family: 'Arial', 'Tahoma', sans-serif;
+                font-weight: 800;
+                font-size: 22px;
+                fill: #162635
+            }
+
+            .body {
+                font-family: 'Tahoma', 'Arial', sans-serif;
+                font-size: 16px;
+                fill: #303030
+            }
+
+            .white {
+                font-family: 'Tahoma', 'Arial', sans-serif;
+                font-size: 22px;
+                fill: #ffffff
+            }
+
+            .small {
+                font-family: 'Tahoma', 'Arial', sans-serif;
+                font-size: 13px;
+                fill: #444
+            }
+
+            .card {
+                fill: #FFFDF7;
+                stroke: #D7D1BC;
+                stroke-width: 2
+            }
+        </style>
+        <linearGradient id="ng" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#24374B" />
+            <stop offset="100%" stop-color="#10202F" />
+        </linearGradient>
+    </defs>
+    <rect width="3508" height="2480" class="bg" />
+    <rect x="0" y="0" width="3508" height="120" fill="url(#ng)" />
+    <text x="3400" y="72" text-anchor="end" class="header">دکترین‌های هسته‌ای و نرخ پذیرش جهانی</text>
+    <text x="3400" y="105" text-anchor="end" class="body" fill="#CCC">مقایسه رویکردهای بازدارندگی هسته‌ای کشورهای دارای
+        سلاح اتمی</text>
+
+    <!-- ROW 1: 3 cards -->
+    <!-- Card 1: NFU -->
+    <rect x="60" y="160" width="1080" height="340" rx="22" class="card" />
+    <text x="1100" y="210" class="cardtitle" text-anchor="end">عدم استفاده نخست (NFU)</text>
+    <circle cx="180" cy="290" r="65" fill="none" stroke="#D4AF37" stroke-width="14" />
+    <text x="180" y="305" font-size="32" font-family="Arial" font-weight="800" fill="#162635"
+        text-anchor="middle">۲۲٪</text>
+    <text x="1080" y="270" class="body" text-anchor="end">
+        <tspan x="1080" dy="0">تعهد رسمی به آغاز نکردن جنگ هسته‌ای</tspan>
+        <tspan x="1080" dy="24">حتی در شرایط بحرانی و تهدید وجودی</tspan>
+        <tspan x="1080" dy="36">کشورها: چین — هند</tspan>
+    </text>
+
+    <!-- Card 2: LOW -->
+    <rect x="1200" y="160" width="1080" height="340" rx="22" class="card" />
+    <text x="2240" y="210" class="cardtitle" text-anchor="end">پرتاب بر اساس هشدار</text>
+    <circle cx="1320" cy="290" r="65" fill="none" stroke="#D4AF37" stroke-width="14" />
+    <text x="1320" y="305" font-size="32" font-family="Arial" font-weight="800" fill="#162635"
+        text-anchor="middle">۳۴٪</text>
+    <text x="2220" y="270" class="body" text-anchor="end">
+        <tspan x="2220" dy="0">شلیک پیش از اصابت حمله دشمن</tspan>
+        <tspan x="2220" dy="24">بر اساس هشدار ماهواره‌ای و رادار</tspan>
+        <tspan x="2220" dy="36">کشورها: آمریکا — روسیه</tspan>
+    </text>
+
+    <!-- Card 3: CMD -->
+    <rect x="2340" y="160" width="1100" height="340" rx="22" class="card" />
+    <text x="3400" y="210" class="cardtitle" text-anchor="end">بازدارندگی حداقلی معتبر</text>
+    <circle cx="2460" cy="290" r="65" fill="none" stroke="#D4AF37" stroke-width="14" />
+    <text x="2460" y="305" font-size="32" font-family="Arial" font-weight="800" fill="#162635"
+        text-anchor="middle">۲۷٪</text>
+    <text x="3380" y="270" class="body" text-anchor="end">
+        <tspan x="3380" dy="0">حفظ کمترین تعداد کلاهک لازم</tspan>
+        <tspan x="3380" dy="24">برای تضمین توان ضربه دوم</tspan>
+        <tspan x="3380" dy="36">کشورها: چین — هند — فرانسه</tspan>
+    </text>
+
+    <!-- ROW 2: 3 cards -->
+    <!-- Card 4: Full Spectrum -->
+    <rect x="60" y="540" width="1080" height="340" rx="22" class="card" />
+    <text x="1100" y="590" class="cardtitle" text-anchor="end">بازدارندگی طیفی کامل</text>
+    <circle cx="180" cy="670" r="65" fill="none" stroke="#D4AF37" stroke-width="14" />
+    <text x="180" y="685" font-size="32" font-family="Arial" font-weight="800" fill="#162635"
+        text-anchor="middle">۲۸٪</text>
+    <text x="1080" y="650" class="body" text-anchor="end">
+        <tspan x="1080" dy="0">ترکیب سلاح‌های تاکتیکی و راهبردی</tspan>
+        <tspan x="1080" dy="24">برای پاسخ در تمامی سطوح تهدید</tspan>
+        <tspan x="1080" dy="36">کشورها: پاکستان — روسیه</tspan>
+    </text>
+
+    <!-- Card 5: Ambiguity -->
+    <rect x="1200" y="540" width="1080" height="340" rx="22" class="card" />
+    <text x="2240" y="590" class="cardtitle" text-anchor="end">ابهام راهبردی</text>
+    <circle cx="1320" cy="670" r="65" fill="none" stroke="#D4AF37" stroke-width="14" />
+    <text x="1320" y="685" font-size="32" font-family="Arial" font-weight="800" fill="#162635"
+        text-anchor="middle">۳۱٪</text>
+    <text x="2220" y="650" class="body" text-anchor="end">
+        <tspan x="2220" dy="0">عدم اعلام رسمی اندازه زرادخانه</tspan>
+        <tspan x="2220" dy="24">یا آستانه استفاده از سلاح هسته‌ای</tspan>
+        <tspan x="2220" dy="36">کشورها: اسرائیل — بخشی از ناتو</tspan>
+    </text>
+
+    <!-- Card 6: Regime Survival -->
+    <rect x="2340" y="540" width="1100" height="340" rx="22" class="card" />
+    <text x="3400" y="590" class="cardtitle" text-anchor="end">بازدارندگی بقای رژیم</text>
+    <circle cx="2460" cy="670" r="65" fill="none" stroke="#D4AF37" stroke-width="14" />
+    <text x="2460" y="685" font-size="32" font-family="Arial" font-weight="800" fill="#162635"
+        text-anchor="middle">۹٪</text>
+    <text x="3380" y="650" class="body" text-anchor="end">
+        <tspan x="3380" dy="0">تمرکز بر بقای ساختار سیاسی</tspan>
+        <tspan x="3380" dy="24">و جلوگیری از فروپاشی نظام حاکم</tspan>
+        <tspan x="3380" dy="36">کشورها: کره شمالی</tspan>
+    </text>
+
+    <!-- SECTION 2: STOPPED PROGRAMS -->
+    <text x="3400" y="960" class="section" text-anchor="end">برنامه‌های هسته‌ای نظامی شناسایی و متوقف‌شده</text>
+    <rect x="60" y="990" width="3380" height="700" rx="20" class="card" />
+
+    <!-- Table Header -->
+    <rect x="80" y="1010" width="3340" height="40" rx="8" fill="#162635" />
+    <text x="3360" y="1038" class="white" text-anchor="end" font-size="22" font-weight="700">کشور</text>
+    <text x="2900" y="1038" class="white" text-anchor="end" font-size="22" font-weight="700">دوره فعالیت</text>
+    <text x="2400" y="1038" class="white" text-anchor="end" font-size="22" font-weight="700">نحوه توقف</text>
+    <text x="1400" y="1038" class="white" text-anchor="end" font-size="22" font-weight="700">توضیحات</text>
+
+    <!-- Row backgrounds -->
+    <rect x="80" y="1055" width="3340" height="48" fill="#F8F6ED" rx="4" />
+    <rect x="80" y="1107" width="3340" height="48" fill="#FFFDF7" rx="4" />
+    <rect x="80" y="1159" width="3340" height="48" fill="#F8F6ED" rx="4" />
+    <rect x="80" y="1211" width="3340" height="48" fill="#FFFDF7" rx="4" />
+    <rect x="80" y="1263" width="3340" height="48" fill="#F8F6ED" rx="4" />
+    <rect x="80" y="1315" width="3340" height="48" fill="#FFFDF7" rx="4" />
+    <rect x="80" y="1367" width="3340" height="48" fill="#F8F6ED" rx="4" />
+    <rect x="80" y="1419" width="3340" height="48" fill="#FFFDF7" rx="4" />
+    <rect x="80" y="1471" width="3340" height="48" fill="#F8F6ED" rx="4" />
+    <rect x="80" y="1523" width="3340" height="48" fill="#FFFDF7" rx="4" />
+    <rect x="80" y="1575" width="3340" height="48" fill="#F8F6ED" rx="4" />
+    <rect x="80" y="1627" width="3340" height="48" fill="#FFFDF7" rx="4" />
+
+    <!-- Data rows -->
+    <g class="body">
+        <text x="3360" y="1085" text-anchor="end">آفریقای جنوبی</text><text x="2900" y="1085"
+            text-anchor="end">۱۹۷۰–۱۹۹۱</text><text x="2400" y="1085" text-anchor="end">انصراف داوطلبانه</text><text
+            x="1400" y="1085" text-anchor="end">۶ کلاهک ساخته و داوطلبانه تخریب کرد؛ تنها کشور با خلع سلاح کامل</text>
+
+        <text x="3360" y="1137" text-anchor="end">عراق</text><text x="2900" y="1137"
+            text-anchor="end">۱۹۸۰–۱۹۹۱</text><text x="2400" y="1137" text-anchor="end">حمله نظامی و بازرسی</text><text
+            x="1400" y="1137" text-anchor="end">حمله اسرائیل به اوسیراک ۱۹۸۱ و بازرسی‌های سازمان ملل پس از جنگ
+            خلیج</text>
+
+        <text x="3360" y="1189" text-anchor="end">لیبی</text><text x="2900" y="1189"
+            text-anchor="end">۱۹۷۰–۲۰۰۳</text><text x="2400" y="1189" text-anchor="end">انصراف دیپلماتیک</text><text
+            x="1400" y="1189" text-anchor="end">قذافی پس از مذاکره با آمریکا و بریتانیا، برنامه را کنار گذاشت</text>
+
+        <text x="3360" y="1241" text-anchor="end">سوریه</text><text x="2900" y="1241"
+            text-anchor="end">۲۰۰۱–۲۰۰۷</text><text x="2400" y="1241" text-anchor="end">حمله نظامی</text><text x="1400"
+            y="1241" text-anchor="end">حمله هوایی اسرائیل به تأسیسات الکبار در ۲۰۰۷</text>
+
+        <text x="3360" y="1293" text-anchor="end">کره جنوبی</text><text x="2900" y="1293"
+            text-anchor="end">۱۹۷۰–۱۹۷۵</text><text x="2400" y="1293" text-anchor="end">فشار آمریکا</text><text x="1400"
+            y="1293" text-anchor="end">تحت فشار شدید واشنگتن برنامه مخفی متوقف شد</text>
+
+        <text x="3360" y="1345" text-anchor="end">تایوان</text><text x="2900" y="1345"
+            text-anchor="end">۱۹۶۷–۱۹۸۸</text><text x="2400" y="1345" text-anchor="end">فشار آمریکا و
+            افشاگری</text><text x="1400" y="1345" text-anchor="end">سرهنگ چانگ سین‌یی اطلاعات را به سیا داد؛ برنامه منحل
+            شد</text>
+
+        <text x="3360" y="1397" text-anchor="end">برزیل</text><text x="2900" y="1397"
+            text-anchor="end">۱۹۷۵–۱۹۹۰</text><text x="2400" y="1397" text-anchor="end">انصراف داوطلبانه</text><text
+            x="1400" y="1397" text-anchor="end">برنامه مخفی نظامی در دوره دیکتاتوری؛ با دموکراسی کنار گذاشته شد</text>
+
+        <text x="3360" y="1449" text-anchor="end">آرژانتین</text><text x="2900" y="1449"
+            text-anchor="end">۱۹۷۸–۱۹۹۰</text><text x="2400" y="1449" text-anchor="end">انصراف داوطلبانه</text><text
+            x="1400" y="1449" text-anchor="end">پس از بازگشت دموکراسی و توافق دوجانبه با برزیل</text>
+
+        <text x="3360" y="1501" text-anchor="end">سوئد</text><text x="2900" y="1501"
+            text-anchor="end">۱۹۴۵–۱۹۶۸</text><text x="2400" y="1501" text-anchor="end">انصراف سیاستی</text><text
+            x="1400" y="1501" text-anchor="end">علی‌رغم توانایی فنی بالا، پس از الحاق به NPT منصرف شد</text>
+
+        <text x="3360" y="1553" text-anchor="end">سوئیس</text><text x="2900" y="1553"
+            text-anchor="end">۱۹۴۵–۱۹۶۹</text><text x="2400" y="1553" text-anchor="end">انصراف سیاستی</text><text
+            x="1400" y="1553" text-anchor="end">مطالعات محرمانه انجام شد اما سیاست بی‌طرفی مانع ادامه شد</text>
+
+        <text x="3360" y="1605" text-anchor="end">یوگسلاوی</text><text x="2900" y="1605"
+            text-anchor="end">۱۹۵۳–۱۹۸۷</text><text x="2400" y="1605" text-anchor="end">انصراف / فروپاشی</text><text
+            x="1400" y="1605" text-anchor="end">تیتو برنامه را در دوره عدم تعهد آغاز کرد؛ با فروپاشی یوگسلاوی پایان
+            یافت</text>
+
+        <text x="3360" y="1657" text-anchor="end">مصر / میانمار</text><text x="2900" y="1657" text-anchor="end">دهه‌های
+            مختلف</text><text x="2400" y="1657" text-anchor="end">عدم موفقیت فنی</text><text x="1400" y="1657"
+            text-anchor="end">تلاش‌های اولیه بدون دستیابی به توانمندی کافی متوقف شد</text>
+    </g>
+
+    <!-- SECTION 3: THRESHOLD STATES -->
+    <text x="3400" y="1760" class="section" text-anchor="end">راهبرد هسته‌ای کشورهای آستانه‌ای و غیرهسته‌ای</text>
+    <rect x="60" y="1790" width="3380" height="640" rx="20" class="card" />
+
+    <!-- Table Header -->
+    <rect x="80" y="1810" width="3340" height="40" rx="8" fill="#162635" />
+    <text x="3360" y="1838" class="white" text-anchor="end" font-size="22" font-weight="700">کشور</text>
+    <text x="2800" y="1838" class="white" text-anchor="end" font-size="22" font-weight="700">وضعیت</text>
+    <text x="2200" y="1838" class="white" text-anchor="end" font-size="22" font-weight="700">سیاست</text>
+    <text x="1600" y="1838" class="white" text-anchor="end" font-size="22" font-weight="700">توانمندی غنی‌سازی</text>
+    <text x="900" y="1838" class="white" text-anchor="end" font-size="22" font-weight="700">توضیحات</text>
+
+    <g class="body">
+        <rect x="80" y="1855" width="3340" height="52" fill="#F8F6ED" rx="4" />
+        <text x="3360" y="1888" text-anchor="end" font-weight="700">ایران</text><text x="2800" y="1888"
+            text-anchor="end">آستانه هسته‌ای</text><text x="2200" y="1888" text-anchor="end">ابهام ـ آستانه</text><text
+            x="1600" y="1888" text-anchor="end">غنی‌سازی ۶۰٪ فعال</text><text x="900" y="1888" text-anchor="end">زمان
+            گریز هسته‌ای: کمتر از ۲ هفته (برآورد ۲۰۲۶)</text>
+
+        <rect x="80" y="1911" width="3340" height="52" fill="#FFFDF7" rx="4" />
+        <text x="3360" y="1944" text-anchor="end" font-weight="700">ژاپن</text><text x="2800" y="1944"
+            text-anchor="end">آستانه بالقوه</text><text x="2200" y="1944" text-anchor="end">غیرهسته‌ای فعال</text><text
+            x="1600" y="1944" text-anchor="end">بازفرآوری پلوتونیم</text><text x="900" y="1944" text-anchor="end">۴۵ تن
+            پلوتونیم ذخیره؛ توان فنی بالا در ۶–۱۲ ماه</text>
+
+        <rect x="80" y="1967" width="3340" height="52" fill="#F8F6ED" rx="4" />
+        <text x="3360" y="2000" text-anchor="end" font-weight="700">کره جنوبی</text><text x="2800" y="2000"
+            text-anchor="end">تحت چتر ناتو</text><text x="2200" y="2000" text-anchor="end">غیرهسته‌ای</text><text
+            x="1600" y="2000" text-anchor="end">تکنولوژی پیشرفته</text><text x="900" y="2000" text-anchor="end">بحث
+            داخلی فعال درباره سلاح مستقل؛ توافق واشنگتن ۲۰۲۳</text>
+
+        <rect x="80" y="2023" width="3340" height="52" fill="#FFFDF7" rx="4" />
+        <text x="3360" y="2056" text-anchor="end" font-weight="700">آلمان</text><text x="2800" y="2056"
+            text-anchor="end">تحت چتر ناتو</text><text x="2200" y="2056" text-anchor="end">اشتراک هسته‌ای</text><text
+            x="1600" y="2056" text-anchor="end">صنعت هسته‌ای پیشرفته</text><text x="900" y="2056"
+            text-anchor="end">میزبان بمب‌های تاکتیکی آمریکا (بی‑۶۱)</text>
+
+        <rect x="80" y="2079" width="3340" height="52" fill="#F8F6ED" rx="4" />
+        <text x="3360" y="2112" text-anchor="end" font-weight="700">ترکیه</text><text x="2800" y="2112"
+            text-anchor="end">تحت چتر ناتو</text><text x="2200" y="2112" text-anchor="end">اشتراک هسته‌ای</text><text
+            x="1600" y="2112" text-anchor="end">نیروگاه آکویو</text><text x="900" y="2112" text-anchor="end">میزبان
+            بمب‌های بی‑۶۱؛ اردوغان تمایل به سلاح مستقل اعلام کرد</text>
+
+        <rect x="80" y="2135" width="3340" height="52" fill="#FFFDF7" rx="4" />
+        <text x="3360" y="2168" text-anchor="end" font-weight="700">عربستان</text><text x="2800" y="2168"
+            text-anchor="end">طالب توانمندی</text><text x="2200" y="2168" text-anchor="end">دکترین واکنشی</text><text
+            x="1600" y="2168" text-anchor="end">در حال توسعه</text><text x="900" y="2168" text-anchor="end">اعلام کرده
+            اگر ایران هسته‌ای شود پاسخ مشابه خواهد داد</text>
+
+        <rect x="80" y="2191" width="3340" height="52" fill="#F8F6ED" rx="4" />
+        <text x="3360" y="2224" text-anchor="end" font-weight="700">اوکراین</text><text x="2800" y="2224"
+            text-anchor="end">خلع‌سلاح‌شده</text><text x="2200" y="2224" text-anchor="end">غیرهسته‌ای</text><text
+            x="1600" y="2224" text-anchor="end">ندارد</text><text x="900" y="2224" text-anchor="end">یادداشت بوداپست
+            ۱۹۹۴؛ کلاهک‌ها به روسیه بازگردانده شد</text>
+
+        <rect x="80" y="2247" width="3340" height="52" fill="#FFFDF7" rx="4" />
+        <text x="3360" y="2280" text-anchor="end" font-weight="700">قزاقستان / بلاروس</text><text x="2800" y="2280"
+            text-anchor="end">خلع‌سلاح‌شده</text><text x="2200" y="2280" text-anchor="end">غیرهسته‌ای</text><text
+            x="1600" y="2280" text-anchor="end">ندارد</text><text x="900" y="2280" text-anchor="end">کلاهک‌های شوروی پس
+            از فروپاشی به روسیه منتقل شد</text>
+
+        <rect x="80" y="2303" width="3340" height="52" fill="#F8F6ED" rx="4" />
+        <text x="3360" y="2336" text-anchor="end" font-weight="700">لهستان / ایتالیا / هلند</text><text x="2800"
+            y="2336" text-anchor="end">ناتو</text><text x="2200" y="2336" text-anchor="end">اشتراک هسته‌ای</text><text
+            x="1600" y="2336" text-anchor="end">صنعتی</text><text x="900" y="2336" text-anchor="end">در چارچوب اشتراک
+            هسته‌ای ناتو میزبان یا آموزش‌دیده</text>
+    </g>
+
+    <text x="3380" y="2440" class="small" text-anchor="end">منبع: آژانس بین‌المللی انرژی اتمی (IAEA)، گزارش‌های SIPRI و
+        تحلیل‌های استراتژیک ۲۰۲۶</text>
+</svg>

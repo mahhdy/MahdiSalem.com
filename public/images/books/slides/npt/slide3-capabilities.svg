@@ -1,0 +1,318 @@
+<svg width="3508" height="2480" viewBox="0 0 3508 2480" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .bg {
+                fill: #FDFCF0
+            }
+
+            .header {
+                font-family: 'Arial', 'Tahoma', sans-serif;
+                font-weight: 900;
+                font-size: 50px;
+                fill: #FDFCF0
+            }
+
+            .section {
+                font-family: 'Arial', 'Tahoma', sans-serif;
+                font-weight: 800;
+                font-size: 30px;
+                fill: #162635
+            }
+
+            .body {
+                font-family: 'Tahoma', 'Arial', sans-serif;
+                font-size: 26px;
+                font-weight: 500;
+                fill: #303030
+            }
+
+            .small {
+                font-family: 'Tahoma', 'Arial', sans-serif;
+                font-size: 15px;
+                fill: #444
+            }
+
+            .white {
+                font-family: 'Tahoma', 'Arial', sans-serif;
+                font-size: 22px;
+                fill: #ffffff
+            }
+
+            .card {
+                fill: #FFFDF7;
+                stroke: #D7D1BC;
+                stroke-width: 2
+            }
+        </style>
+        <linearGradient id="ng" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#24374B" />
+            <stop offset="100%" stop-color="#10202F" />
+        </linearGradient>
+    </defs>
+    <rect width="3508" height="2480" class="bg" />
+    <rect x="0" y="0" width="3508" height="110" fill="url(#ng)" />
+    <text x="3400" y="68" text-anchor="end" class="header">ماتریس توانمندی هسته‌ای کشورها و کاربردهای انرژی اتمی</text>
+
+    <!-- SECTION 1: CAPABILITY MATRIX -->
+    <text x="3400" y="160" class="section" text-anchor="end">توانمندی هسته‌ای کشورهای جهان — نوع فناوری و مصرف</text>
+    <rect x="50" y="180" width="3408" height="1080" rx="18" class="card" />
+
+    <!-- Header -->
+    <rect x="70" y="200" width="3368" height="36" rx="6" fill="#162635" />
+    <text x="3380" y="225" class="white" fill="#FFF" text-anchor="end" font-weight="700">کشور</text>
+    <text x="2980" y="225" class="white" fill="#FFF" text-anchor="end" font-weight="700">برق</text>
+    <text x="2680" y="225" class="white" fill="#FFF" text-anchor="end" font-weight="700">پزشکی</text>
+    <text x="2380" y="225" class="white" fill="#FFF" text-anchor="end" font-weight="700">نظامی</text>
+    <text x="2080" y="225" class="white" fill="#FFF" text-anchor="end" font-weight="700">پیشرانش دریایی</text>
+    <text x="1730" y="225" class="white" fill="#FFF" text-anchor="end" font-weight="700">غنی‌سازی</text>
+    <text x="1430" y="225" class="white" fill="#FFF" text-anchor="end" font-weight="700">بازفرآوری</text>
+    <text x="1130" y="225" class="white" fill="#FFF" text-anchor="end" font-weight="700">تحقیقاتی</text>
+    <text x="830" y="225" class="white" fill="#FFF" text-anchor="end" font-weight="700">صنعتی</text>
+    <text x="500" y="225" class="white" fill="#FFF" text-anchor="end" font-weight="700">کشاورزی</text>
+
+    <!-- Data: ● = active, ○ = limited, — = none -->
+    <!-- Row helper: alternating bg -->
+    <g class="body" font-size="18" text-anchor="middle">
+
+        <rect x="70" y="240" width="3368" height="38" fill="#F8F6ED" />
+        <text x="3380" y="265" text-anchor="end" font-weight="700">آمریکا</text>
+        <text x="2980" y="265">●</text><text x="2680" y="265">●</text><text x="2380" y="265">●</text><text x="2080"
+            y="265">●</text><text x="1730" y="265">●</text><text x="1430" y="265">●</text><text x="1130"
+            y="265">●</text><text x="830" y="265">●</text><text x="500" y="265">●</text>
+
+        <rect x="70" y="282" width="3368" height="38" fill="#FFFDF7" />
+        <text x="3380" y="307" text-anchor="end" font-weight="700">روسیه</text>
+        <text x="2980" y="307">●</text><text x="2680" y="307">●</text><text x="2380" y="307">●</text><text x="2080"
+            y="307">●</text><text x="1730" y="307">●</text><text x="1430" y="307">●</text><text x="1130"
+            y="307">●</text><text x="830" y="307">●</text><text x="500" y="307">●</text>
+
+        <rect x="70" y="324" width="3368" height="38" fill="#F8F6ED" />
+        <text x="3380" y="349" text-anchor="end" font-weight="700">فرانسه</text>
+        <text x="2980" y="349">●</text><text x="2680" y="349">●</text><text x="2380" y="349">●</text><text x="2080"
+            y="349">●</text><text x="1730" y="349">●</text><text x="1430" y="349">●</text><text x="1130"
+            y="349">●</text><text x="830" y="349">●</text><text x="500" y="349">○</text>
+
+        <rect x="70" y="366" width="3368" height="38" fill="#FFFDF7" />
+        <text x="3380" y="391" text-anchor="end" font-weight="700">بریتانیا</text>
+        <text x="2980" y="391">●</text><text x="2680" y="391">●</text><text x="2380" y="391">●</text><text x="2080"
+            y="391">●</text><text x="1730" y="391">●</text><text x="1430" y="391">●</text><text x="1130"
+            y="391">●</text><text x="830" y="391">○</text><text x="500" y="391">○</text>
+
+        <rect x="70" y="408" width="3368" height="38" fill="#F8F6ED" />
+        <text x="3380" y="433" text-anchor="end" font-weight="700">چین</text>
+        <text x="2980" y="433">●</text><text x="2680" y="433">●</text><text x="2380" y="433">●</text><text x="2080"
+            y="433">●</text><text x="1730" y="433">●</text><text x="1430" y="433">●</text><text x="1130"
+            y="433">●</text><text x="830" y="433">●</text><text x="500" y="433">●</text>
+
+        <rect x="70" y="450" width="3368" height="38" fill="#FFFDF7" />
+        <text x="3380" y="475" text-anchor="end" font-weight="700">هند</text>
+        <text x="2980" y="475">●</text><text x="2680" y="475">●</text><text x="2380" y="475">●</text><text x="2080"
+            y="475">●</text><text x="1730" y="475">●</text><text x="1430" y="475">●</text><text x="1130"
+            y="475">●</text><text x="830" y="475">●</text><text x="500" y="475">●</text>
+
+        <rect x="70" y="492" width="3368" height="38" fill="#F8F6ED" />
+        <text x="3380" y="517" text-anchor="end" font-weight="700">پاکستان</text>
+        <text x="2980" y="517">●</text><text x="2680" y="517">○</text><text x="2380" y="517">●</text><text x="2080"
+            y="517">—</text><text x="1730" y="517">●</text><text x="1430" y="517">●</text><text x="1130"
+            y="517">●</text><text x="830" y="517">○</text><text x="500" y="517">●</text>
+
+        <rect x="70" y="534" width="3368" height="38" fill="#FFFDF7" />
+        <text x="3380" y="559" text-anchor="end" font-weight="700">اسرائیل</text>
+        <text x="2980" y="559">○</text><text x="2680" y="559">●</text><text x="2380" y="559">●</text><text x="2080"
+            y="559">○</text><text x="1730" y="559">●</text><text x="1430" y="559">●</text><text x="1130"
+            y="559">●</text><text x="830" y="559">●</text><text x="500" y="559">●</text>
+
+        <rect x="70" y="576" width="3368" height="38" fill="#F8F6ED" />
+        <text x="3380" y="601" text-anchor="end" font-weight="700">کره شمالی</text>
+        <text x="2980" y="601">○</text><text x="2680" y="601">○</text><text x="2380" y="601">●</text><text x="2080"
+            y="601">—</text><text x="1730" y="601">●</text><text x="1430" y="601">●</text><text x="1130"
+            y="601">○</text><text x="830" y="601">—</text><text x="500" y="601">—</text>
+
+        <rect x="70" y="618" width="3368" height="38" fill="#FFFDF7" />
+        <text x="3380" y="643" text-anchor="end" font-weight="700">ژاپن</text>
+        <text x="2980" y="643">●</text><text x="2680" y="643">●</text><text x="2380" y="643">—</text><text x="2080"
+            y="643">—</text><text x="1730" y="643">●</text><text x="1430" y="643">●</text><text x="1130"
+            y="643">●</text><text x="830" y="643">●</text><text x="500" y="643">●</text>
+
+        <rect x="70" y="660" width="3368" height="38" fill="#F8F6ED" />
+        <text x="3380" y="685" text-anchor="end" font-weight="700">آلمان</text>
+        <text x="2980" y="685">●</text><text x="2680" y="685">●</text><text x="2380" y="685">—</text><text x="2080"
+            y="685">—</text><text x="1730" y="685">●</text><text x="1430" y="685">—</text><text x="1130"
+            y="685">●</text><text x="830" y="685">●</text><text x="500" y="685">●</text>
+
+        <rect x="70" y="702" width="3368" height="38" fill="#FFFDF7" />
+        <text x="3380" y="727" text-anchor="end" font-weight="700">کره جنوبی</text>
+        <text x="2980" y="727">●</text><text x="2680" y="727">●</text><text x="2380" y="727">—</text><text x="2080"
+            y="727">—</text><text x="1730" y="727">○</text><text x="1430" y="727">—</text><text x="1130"
+            y="727">●</text><text x="830" y="727">●</text><text x="500" y="727">●</text>
+
+        <rect x="70" y="744" width="3368" height="38" fill="#F8F6ED" />
+        <text x="3380" y="769" text-anchor="end" font-weight="700">کانادا</text>
+        <text x="2980" y="769">●</text><text x="2680" y="769">●</text><text x="2380" y="769">—</text><text x="2080"
+            y="769">—</text><text x="1730" y="769">●</text><text x="1430" y="769">—</text><text x="1130"
+            y="769">●</text><text x="830" y="769">●</text><text x="500" y="769">●</text>
+
+        <rect x="70" y="786" width="3368" height="38" fill="#FFFDF7" />
+        <text x="3380" y="811" text-anchor="end" font-weight="700">ایران</text>
+        <text x="2980" y="811">●</text><text x="2680" y="811">●</text><text x="2380" y="811">—</text><text x="2080"
+            y="811">—</text><text x="1730" y="811">●</text><text x="1430" y="811">—</text><text x="1130"
+            y="811">●</text><text x="830" y="811">○</text><text x="500" y="811">○</text>
+
+        <rect x="70" y="828" width="3368" height="38" fill="#F8F6ED" />
+        <text x="3380" y="853" text-anchor="end" font-weight="700">برزیل</text>
+        <text x="2980" y="853">●</text><text x="2680" y="853">●</text><text x="2380" y="853">—</text><text x="2080"
+            y="853">●</text><text x="1730" y="853">●</text><text x="1430" y="853">—</text><text x="1130"
+            y="853">●</text><text x="830" y="853">○</text><text x="500" y="853">●</text>
+
+        <rect x="70" y="870" width="3368" height="38" fill="#FFFDF7" />
+        <text x="3380" y="895" text-anchor="end" font-weight="700">آرژانتین</text>
+        <text x="2980" y="895">●</text><text x="2680" y="895">●</text><text x="2380" y="895">—</text><text x="2080"
+            y="895">—</text><text x="1730" y="895">●</text><text x="1430" y="895">—</text><text x="1130"
+            y="895">●</text><text x="830" y="895">○</text><text x="500" y="895">●</text>
+
+        <rect x="70" y="912" width="3368" height="38" fill="#F8F6ED" />
+        <text x="3380" y="937" text-anchor="end" font-weight="700">استرالیا</text>
+        <text x="2980" y="937">—</text><text x="2680" y="937">●</text><text x="2380" y="937">—</text><text x="2080"
+            y="937">●</text><text x="1730" y="937">●</text><text x="1430" y="937">—</text><text x="1130"
+            y="937">●</text><text x="830" y="937">●</text><text x="500" y="937">●</text>
+
+    </g>
+
+    <!-- Legend -->
+    <g class="body" transform="translate(100,980)">
+        <text x="400" y="0" text-anchor="end" font-weight="700">راهنما:</text>
+        <text x="530" y="0" text-anchor="end" font-size="18">● فعال</text>
+        <text x="680" y="0" text-anchor="end" font-size="18">○ محدود</text>
+        <text x="830" y="0" text-anchor="end" font-size="18">— ندارد</text>
+    </g>
+
+    <!-- Notes about naval propulsion -->
+    <g class="small" transform="translate(100,1010)">
+        <text x="3340" y="0" text-anchor="end">پیشرانش دریایی: موتور هسته‌ای زیردریایی، ناوهواپیمابر و یخ‌شکن. آمریکا،
+            روسیه، فرانسه، بریتانیا، چین و هند دارای ناوگان هسته‌ای هستند.</text>
+        <text x="3340" y="22" text-anchor="end">برزیل در حال ساخت نخستین زیردریایی هسته‌ای خود است. استرالیا در چارچوب
+            پیمان آکوس (AUKUS) زیردریایی هسته‌ای دریافت خواهد کرد.</text>
+    </g>
+
+    <!-- SECTION 2: NUCLEAR ENERGY USES -->
+    <text x="3400" y="1320" class="section" text-anchor="end">کاربردهای جامع انرژی و فناوری هسته‌ای</text>
+    <rect x="50" y="1350" width="3408" height="1080" rx="18" class="card" />
+
+    <!-- Category Cards -->
+    <!-- 1. Electricity -->
+    <rect x="80" y="1380" width="800" height="480" rx="14" fill="#F0EDE0" stroke="#D7D1BC" />
+    <rect x="80" y="1380" width="800" height="50" rx="14" fill="#162635" />
+    <text x="480" y="1412" class="white" fill="#FFF" text-anchor="middle" font-weight="700" font-size="20">⚡ تولید
+        برق</text>
+    <text x="460" y="1460" class="body" text-anchor="end">
+        <tspan x="860" dy="0">• نیروگاه‌های بزرگ (۱۰۰۰+ مگاوات)</tspan>
+        <tspan x="860" dy="50">• رآکتورهای کوچک مدولار (SMR)</tspan>
+        <tspan x="860" dy="50">• رآکتورهای نسل چهارم</tspan>
+        <tspan x="860" dy="50">• ریزرآکتورها برای مناطق دورافتاده</tspan>
+        <tspan x="860" dy="55">۴۴۰ رآکتور فعال در ۳۲ کشور</tspan>
+        <tspan x="860" dy="40">≈ ۱۰٪ برق جهان</tspan>
+        <tspan x="860" dy="40">فرانسه ۷۰٪ — آمریکا ۲۰٪ — ایران ۱٪</tspan>
+    </text>
+
+    <!-- 2. Medical -->
+    <rect x="910" y="1380" width="800" height="480" rx="14" fill="#F0EDE0" stroke="#D7D1BC" />
+    <rect x="910" y="1380" width="800" height="50" rx="14" fill="#162635" />
+    <text x="1310" y="1412" class="white" fill="#FFF" text-anchor="middle" font-weight="700" font-size="20">🏥 پزشکی و
+        دارویی</text>
+    <text x="1690" y="1460" class="body" text-anchor="end">
+        <tspan x="1690" dy="0">• تشخیص سرطان (PET، SPECT)</tspan>
+        <tspan x="1690" dy="50">• پرتودرمانی و براکی‌تراپی</tspan>
+        <tspan x="1690" dy="50">• تولید رادیوداروها (مو‑۹۹، ید‑۱۳۱)</tspan>
+        <tspan x="1690" dy="50">• استریلیزاسیون تجهیزات پزشکی</tspan>
+        <tspan x="1690" dy="55">سالانه ۵۰+ میلیون پروسه تشخیصی</tspan>
+        <tspan x="1690" dy="40">بیش از ۱۰٬۰۰۰ بیمارستان در جهان</tspan>
+    </text>
+
+    <!-- 3. Military -->
+    <rect x="1740" y="1380" width="800" height="480" rx="14" fill="#F0EDE0" stroke="#D7D1BC" />
+    <rect x="1740" y="1380" width="800" height="50" rx="14" fill="#162635" />
+    <text x="2140" y="1412" class="white" fill="#FFF" text-anchor="middle" font-weight="700" font-size="20">🎯 نظامی و
+        دفاعی</text>
+    <text x="2520" y="1460" class="body" text-anchor="end">
+        <tspan x="2520" dy="0">• کلاهک‌های راهبردی و تاکتیکی</tspan>
+        <tspan x="2520" dy="50">• زیردریایی هسته‌ای (SSBN/SSN)</tspan>
+        <tspan x="2520" dy="50">• ناوهواپیمابر هسته‌ای</tspan>
+        <tspan x="2520" dy="50">• موشک‌های بالستیک قاره‌پیما</tspan>
+        <tspan x="2520" dy="50">• بمب‌افکن‌های راهبردی</tspan>
+        <tspan x="2520" dy="55">۹ کشور دارای سلاح هسته‌ای</tspan>
+        <tspan x="2520" dy="40">≈ ۱۲٬۱۰۰ کلاهک در جهان</tspan>
+    </text>
+
+    <!-- 4. Naval -->
+    <rect x="2570" y="1380" width="870" height="480" rx="14" fill="#F0EDE0" stroke="#D7D1BC" />
+    <rect x="2570" y="1380" width="870" height="50" rx="14" fill="#162635" />
+    <text x="3005" y="1412" class="white" fill="#FFF" text-anchor="middle" font-weight="700" font-size="20">🚢 پیشرانش
+        دریایی</text>
+    <text x="3420" y="1460" class="body" text-anchor="end">
+        <tspan x="3420" dy="0">• زیردریایی‌های حمله و بالستیکی</tspan>
+        <tspan x="3420" dy="50">• ناوهواپیمابر (آمریکا، فرانسه)</tspan>
+        <tspan x="3420" dy="50">• یخ‌شکن‌های قطبی (روسیه)</tspan>
+        <tspan x="3420" dy="50">• ناوشکن و رزمناو آینده</tspan>
+        <tspan x="3420" dy="55">۱۶۰+ شناور هسته‌ای فعال</tspan>
+        <tspan x="3420" dy="40">۶ کشور دارای ناوگان هسته‌ای</tspan>
+    </text>
+
+    <!-- Row 2 of categories -->
+    <!-- 5. Industry -->
+    <rect x="80" y="1890" width="800" height="460" rx="14" fill="#F0EDE0" stroke="#D7D1BC" />
+    <rect x="80" y="1890" width="800" height="50" rx="14" fill="#162635" />
+    <text x="480" y="1922" class="white" fill="#FFF" text-anchor="middle" font-weight="700" font-size="20">🏭
+        صنعت</text>
+    <text x="860" y="1970" class="body" text-anchor="end">
+        <tspan x="860" dy="0">• گاماگرافی (بازرسی جوش و لوله)</tspan>
+        <tspan x="860" dy="50">• ردیاب‌های رادیواکتیو</tspan>
+        <tspan x="860" dy="50">• تولید هیدروژن سبز</tspan>
+        <tspan x="860" dy="50">• شیرین‌سازی آب دریا</tspan>
+        <tspan x="860" dy="50">• گرمایش منطقه‌ای</tspan>
+        <tspan x="860" dy="55">بیش از ۷۰ کشور از کاربرد صنعتی استفاده</tspan>
+    </text>
+
+    <!-- 6. Agriculture -->
+    <rect x="910" y="1890" width="800" height="460" rx="14" fill="#F0EDE0" stroke="#D7D1BC" />
+    <rect x="910" y="1890" width="800" height="50" rx="14" fill="#162635" />
+    <text x="1310" y="1922" class="white" fill="#FFF" text-anchor="middle" font-weight="700" font-size="20">🌾 کشاورزی و
+        غذا</text>
+    <text x="1690" y="1970" class="body" text-anchor="end">
+        <tspan x="1690" dy="0">• پرتودهی مواد غذایی (حفظ و نگهداری)</tspan>
+        <tspan x="1690" dy="50">• عقیمسازی حشرات (SIT)</tspan>
+        <tspan x="1690" dy="50">• اصلاح ژنتیک گیاهان با پرتو</tspan>
+        <tspan x="1690" dy="50">• مدیریت منابع آب با ایزوتوپ</tspan>
+        <tspan x="1690" dy="55">۳٬۴۰۰+ رقم گیاهی جهش‌یافته</tspan>
+        <tspan x="1690" dy="40">از طریق آژانس FAO/IAEA</tspan>
+    </text>
+
+    <!-- 7. Research -->
+    <rect x="1740" y="1890" width="800" height="460" rx="14" fill="#F0EDE0" stroke="#D7D1BC" />
+    <rect x="1740" y="1890" width="800" height="50" rx="14" fill="#162635" />
+    <text x="2140" y="1922" class="white" fill="#FFF" text-anchor="middle" font-weight="700" font-size="20">🔬 تحقیقات
+        علمی</text>
+    <text x="2520" y="1970" class="body" text-anchor="end">
+        <tspan x="2520" dy="0">• شتاب‌دهنده‌های ذره‌ای (CERN)</tspan>
+        <tspan x="2520" dy="50">• همجوشی هسته‌ای (ITER)</tspan>
+        <tspan x="2520" dy="50">• رآکتورهای تحقیقاتی (۲۲۰+ جهان)</tspan>
+        <tspan x="2520" dy="50">• آنالیز فعال‌سازی نوترونی</tspan>
+        <tspan x="2520" dy="50">• باستان‌سنجی کربن‑۱۴</tspan>
+    </text>
+
+    <!-- 8. Space -->
+    <rect x="2570" y="1890" width="870" height="460" rx="14" fill="#F0EDE0" stroke="#D7D1BC" />
+    <rect x="2570" y="1890" width="870" height="50" rx="14" fill="#162635" />
+    <text x="3005" y="1922" class="white" fill="#FFF" text-anchor="middle" font-weight="700" font-size="20">🚀
+        فضایی</text>
+    <text x="3420" y="1970" class="body" text-anchor="end">
+        <tspan x="3420" dy="0">• ژنراتور ترموالکتریک (RTG)</tspan>
+        <tspan x="3420" dy="50">• کاوشگرهای سیارهای</tspan>
+        <tspan x="3420" dy="50">• پیشرانش هسته‌ای فضایی (NTP)</tspan>
+        <tspan x="3420" dy="50">• ماهواره‌های رادار هسته‌ای</tspan>
+        <tspan x="3420" dy="55">ناسا و روسکاسموس — فعال</tspan>
+        <tspan x="3420" dy="40">چین و هند — در حال توسعه</tspan>
+    </text>
+
+    <text x="3400" y="2440" class="small" text-anchor="end">منبع: آژانس بین‌المللی انرژی اتمی (IAEA)، انجمن هسته‌ای
+        جهانی (WNA)، SIPRI — ۲۰۲۶</text>
+</svg>

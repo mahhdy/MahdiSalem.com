@@ -1,0 +1,300 @@
+<svg width="3508" height="2480" viewBox="0 0 3508 2480" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+.bg{fill:#FDFCF0}.header{font-family:'Arial','Tahoma',sans-serif;font-weight:900;font-size:56px;fill:#FDFCF0}.section{font-family:'Arial','Tahoma',sans-serif;font-weight:800;font-size:32px;fill:#162635}.country{font-family:'Arial','Tahoma',sans-serif;font-weight:900;font-size:24px;fill:#111}.body{font-family:'Tahoma','Arial',sans-serif;font-size:16px;fill:#303030}.small{font-family:'Tahoma','Arial',sans-serif;font-size:13px;fill:#444}.tiny{font-family:'Tahoma','Arial',sans-serif;font-size:11px;fill:#555}.axis{stroke:#162635;stroke-width:3}.grid{stroke:#DADADA;stroke-width:1;stroke-dasharray:5 5}.card{fill:#FFFDF7;stroke:#D7D1BC;stroke-width:2}
+</style>
+<linearGradient id="ng" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#24374B"/><stop offset="100%" stop-color="#10202F"/></linearGradient>
+<linearGradient id="gg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#E8CA72"/><stop offset="100%" stop-color="#B98A14"/></linearGradient>
+</defs>
+<rect width="3508" height="2480" class="bg"/>
+<!-- HEADER -->
+<rect x="0" y="0" width="3508" height="120" fill="url(#ng)"/>
+<text x="3400" y="72" text-anchor="end" class="header">خط زمانی توسعه سلاح هسته‌ای کشورها</text>
+<text x="3400" y="105" text-anchor="end" class="body" fill="#CCC">از پروژه منهتن تا دوران مدرن — تحلیل جامع ۲۰۲۶</text>
+
+<!-- TIMELINE CARD -->
+<rect x="50" y="140" width="3408" height="2300" rx="24" class="card"/>
+
+<!-- AXIS -->
+<line x1="420" y1="240" x2="3350" y2="240" class="axis"/>
+
+<!-- YEARS: 1945-2025 evenly spaced -->
+<g class="small" text-anchor="middle">
+<text x="470" y="225">۱۹۴۵</text>
+<text x="650" y="225">۱۹۵۰</text>
+<text x="830" y="225">۱۹۵۵</text>
+<text x="1010" y="225">۱۹۶۰</text>
+<text x="1190" y="225">۱۹۶۵</text>
+<text x="1370" y="225">۱۹۷۰</text>
+<text x="1550" y="225">۱۹۷۵</text>
+<text x="1730" y="225">۱۹۸۰</text>
+<text x="1910" y="225">۱۹۸۵</text>
+<text x="2090" y="225">۱۹۹۰</text>
+<text x="2270" y="225">۱۹۹۵</text>
+<text x="2450" y="225">۲۰۰۰</text>
+<text x="2630" y="225">۲۰۰۵</text>
+<text x="2810" y="225">۲۰۱۰</text>
+<text x="2990" y="225">۲۰۱۵</text>
+<text x="3170" y="225">۲۰۲۰</text>
+<text x="3350" y="225">۲۰۲۵</text>
+</g>
+<!-- GRID -->
+<g>
+<line x1="470" y1="240" x2="470" y2="2380" class="grid"/>
+<line x1="650" y1="240" x2="650" y2="2380" class="grid"/>
+<line x1="830" y1="240" x2="830" y2="2380" class="grid"/>
+<line x1="1010" y1="240" x2="1010" y2="2380" class="grid"/>
+<line x1="1190" y1="240" x2="1190" y2="2380" class="grid"/>
+<line x1="1370" y1="240" x2="1370" y2="2380" class="grid"/>
+<line x1="1550" y1="240" x2="1550" y2="2380" class="grid"/>
+<line x1="1730" y1="240" x2="1730" y2="2380" class="grid"/>
+<line x1="1910" y1="240" x2="1910" y2="2380" class="grid"/>
+<line x1="2090" y1="240" x2="2090" y2="2380" class="grid"/>
+<line x1="2270" y1="240" x2="2270" y2="2380" class="grid"/>
+<line x1="2450" y1="240" x2="2450" y2="2380" class="grid"/>
+<line x1="2630" y1="240" x2="2630" y2="2380" class="grid"/>
+<line x1="2810" y1="240" x2="2810" y2="2380" class="grid"/>
+<line x1="2990" y1="240" x2="2990" y2="2380" class="grid"/>
+<line x1="3170" y1="240" x2="3170" y2="2380" class="grid"/>
+<line x1="3350" y1="240" x2="3350" y2="2380" class="grid"/>
+</g>
+
+<!-- ========= USA ========= -->
+<g>
+<text x="380" y="330" class="country" text-anchor="end">ایالات متحده</text>
+<line x1="420" y1="320" x2="3350" y2="320" stroke="#D7D7D7" stroke-width="2"/>
+<!-- 1945 ترینیتی -->
+<circle cx="470" cy="320" r="11" fill="url(#gg)" stroke="#162635" stroke-width="2"/>
+<text x="470" y="300" class="small" text-anchor="middle">ترینیتی ۱۹۴۵</text>
+<!-- 1952 هیدروژنی -->
+<circle cx="722" cy="320" r="8" fill="#162635"/>
+<text x="722" y="350" class="small" text-anchor="middle">بمب هیدروژنی ۱۹۵۲</text>
+<!-- 1970 MIRV -->
+<circle cx="1370" cy="320" r="8" fill="#162635"/>
+<text x="1370" y="300" class="small" text-anchor="middle">موشک‌های چندکلاهکی</text>
+<!-- 2023 B-21 / Columbia -->
+<circle cx="3242" cy="320" r="8" fill="#162635"/>
+<text x="3242" y="350" class="small" text-anchor="middle">بمب‌افکن بی‑۲۱ و زیردریایی کلمبیا</text>
+</g>
+
+<!-- ========= RUSSIA ========= -->
+<g>
+<text x="380" y="430" class="country" text-anchor="end">روسیه / شوروی</text>
+<line x1="420" y1="420" x2="3350" y2="420" stroke="#D7D7D7" stroke-width="2"/>
+<!-- 1949 -->
+<circle cx="614" cy="420" r="11" fill="url(#gg)" stroke="#162635" stroke-width="2"/>
+<text x="614" y="400" class="small" text-anchor="middle">آزمایش نخست ۱۹۴۹</text>
+<!-- 1961 تزار بامبا -->
+<circle cx="1046" cy="420" r="8" fill="#162635"/>
+<text x="1046" y="450" class="small" text-anchor="middle">تزار بامبا ۱۹۶۱</text>
+<!-- 1975 استقرار انبوه -->
+<circle cx="1550" cy="420" r="8" fill="#162635"/>
+<text x="1550" y="400" class="small" text-anchor="middle">استقرار انبوه موشک‌های بالستیک</text>
+<!-- 2019 آوانگارد -->
+<circle cx="3134" cy="420" r="8" fill="#162635"/>
+<text x="3134" y="450" class="small" text-anchor="middle">آوانگارد و سارمات</text>
+</g>
+
+<!-- ========= UK ========= -->
+<g>
+<text x="380" y="530" class="country" text-anchor="end">بریتانیا</text>
+<line x1="420" y1="520" x2="3350" y2="520" stroke="#D7D7D7" stroke-width="2"/>
+<!-- 1952 -->
+<circle cx="722" cy="520" r="11" fill="url(#gg)" stroke="#162635" stroke-width="2"/>
+<text x="722" y="500" class="small" text-anchor="middle">عملیات هاریکین ۱۹۵۲</text>
+<!-- 1957 گرماهسته‌ای -->
+<circle cx="902" cy="520" r="8" fill="#162635"/>
+<text x="902" y="550" class="small" text-anchor="middle">بمب گرماهسته‌ای ۱۹۵۷</text>
+<!-- 1994 ترایدنت -->
+<circle cx="2234" cy="520" r="8" fill="#162635"/>
+<text x="2234" y="500" class="small" text-anchor="middle">موشک ترایدنت ۲</text>
+</g>
+
+<!-- ========= FRANCE ========= -->
+<g>
+<text x="380" y="630" class="country" text-anchor="end">فرانسه</text>
+<line x1="420" y1="620" x2="3350" y2="620" stroke="#D7D7D7" stroke-width="2"/>
+<!-- 1960 -->
+<circle cx="1010" cy="620" r="11" fill="url(#gg)" stroke="#162635" stroke-width="2"/>
+<text x="1010" y="600" class="small" text-anchor="middle">ژربواز آبی ۱۹۶۰</text>
+<!-- 1964 نیروی ضربتی -->
+<circle cx="1154" cy="620" r="8" fill="#162635"/>
+<text x="1154" y="650" class="small" text-anchor="middle">نیروی ضربتی هسته‌ای</text>
+<!-- 2010 M51 -->
+<circle cx="2810" cy="620" r="8" fill="#162635"/>
+<text x="2810" y="600" class="small" text-anchor="middle">موشک دریاپایه ام‑۵۱</text>
+</g>
+
+<!-- ========= CHINA ========= -->
+<g>
+<text x="380" y="730" class="country" text-anchor="end">چین</text>
+<line x1="420" y1="720" x2="3350" y2="720" stroke="#D7D7D7" stroke-width="2"/>
+<!-- 1964 -->
+<circle cx="1154" cy="720" r="11" fill="url(#gg)" stroke="#162635" stroke-width="2"/>
+<text x="1154" y="700" class="small" text-anchor="middle">آزمایش ۵۹۶ — ۱۹۶۴</text>
+<!-- 1964 NFU -->
+<circle cx="1250" cy="720" r="8" fill="#162635"/>
+<text x="1250" y="750" class="small" text-anchor="middle">دکترین عدم استفاده نخست</text>
+<!-- 2021 سیلوها -->
+<circle cx="3206" cy="720" r="8" fill="#162635"/>
+<text x="3206" y="700" class="small" text-anchor="middle">سیلوهای دی‌اف‑۴۱</text>
+</g>
+
+<!-- ========= INDIA ========= -->
+<g>
+<text x="380" y="830" class="country" text-anchor="end">هند</text>
+<line x1="420" y1="820" x2="3350" y2="820" stroke="#D7D7D7" stroke-width="2"/>
+<!-- 1974 بودای خندان -->
+<circle cx="1514" cy="820" r="11" fill="url(#gg)" stroke="#162635" stroke-width="2"/>
+<text x="1514" y="800" class="small" text-anchor="middle">بودای خندان ۱۹۷۴</text>
+<!-- 1998 شاکتی -->
+<circle cx="2378" cy="820" r="8" fill="#162635"/>
+<text x="2378" y="850" class="small" text-anchor="middle">آزمایش شاکتی ۱۹۹۸</text>
+<!-- 2018 آگنی-5 -->
+<circle cx="3098" cy="820" r="8" fill="#162635"/>
+<text x="3098" y="800" class="small" text-anchor="middle">موشک آگنی‑۵</text>
+</g>
+
+<!-- ========= PAKISTAN ========= -->
+<g>
+<text x="380" y="930" class="country" text-anchor="end">پاکستان</text>
+<line x1="420" y1="920" x2="3350" y2="920" stroke="#D7D7D7" stroke-width="2"/>
+<!-- 1998 چاگای -->
+<circle cx="2378" cy="920" r="11" fill="url(#gg)" stroke="#162635" stroke-width="2"/>
+<text x="2378" y="900" class="small" text-anchor="middle">آزمایش چاگای ۱۹۹۸</text>
+<!-- 2011 نصر -->
+<circle cx="2846" cy="920" r="8" fill="#162635"/>
+<text x="2846" y="950" class="small" text-anchor="middle">موشک تاکتیکی نصر</text>
+</g>
+
+<!-- ========= ISRAEL ========= -->
+<g>
+<text x="380" y="1030" class="country" text-anchor="end">اسرائیل</text>
+<line x1="420" y1="1020" x2="3350" y2="1020" stroke="#D7D7D7" stroke-width="2"/>
+<!-- ~1966 ابهام -->
+<circle cx="1226" cy="1020" r="11" fill="#888" stroke="#162635" stroke-width="2"/>
+<text x="1226" y="1000" class="small" text-anchor="middle">ابهام راهبردی — دهه ۶۰</text>
+<!-- 1999 دلفین -->
+<circle cx="2414" cy="1020" r="8" fill="#162635"/>
+<text x="2414" y="1050" class="small" text-anchor="middle">زیردریایی‌های دلفین</text>
+</g>
+
+<!-- ========= DPRK ========= -->
+<g>
+<text x="380" y="1130" class="country" text-anchor="end">کره شمالی</text>
+<line x1="420" y1="1120" x2="3350" y2="1120" stroke="#D7D7D7" stroke-width="2"/>
+<!-- 2006 -->
+<circle cx="2666" cy="1120" r="11" fill="url(#gg)" stroke="#162635" stroke-width="2"/>
+<text x="2666" y="1100" class="small" text-anchor="middle">نخستین آزمایش ۲۰۰۶</text>
+<!-- 2017 هواسونگ -->
+<circle cx="3062" cy="1120" r="8" fill="#162635"/>
+<text x="3062" y="1150" class="small" text-anchor="middle">موشک بالستیک قاره‌پیما هواسونگ</text>
+</g>
+
+<!-- ========= LEGEND ========= -->
+<g transform="translate(100,1220)">
+<text x="300" y="0" class="section" text-anchor="end">راهنما</text>
+<circle cx="40" cy="40" r="11" fill="url(#gg)" stroke="#162635" stroke-width="2"/>
+<text x="130" y="46" class="body" text-anchor="end">نخستین آزمایش هسته‌ای</text>
+<circle cx="200" cy="40" r="8" fill="#162635"/>
+<text x="340" y="46" class="body" text-anchor="end">رویداد کلیدی بعدی</text>
+<circle cx="400" cy="40" r="11" fill="#888" stroke="#162635" stroke-width="2"/>
+<text x="580" y="46" class="body" text-anchor="end">وضعیت اعلام‌نشده / ابهام</text>
+</g>
+
+<!-- ========= ARSENAL SECTION ========= -->
+<text x="3400" y="1340" class="section" text-anchor="end">برآورد اندازه زرادخانه‌های هسته‌ای (۲۰۲۶)</text>
+<rect x="80" y="1370" width="3340" height="400" rx="20" class="card"/>
+
+<!-- Labels + bars -->
+<g>
+<!-- روسیه ~5580 -->
+<text x="260" y="1420" class="country" text-anchor="end">روسیه ≈ ۵٬۵۸۰</text>
+<rect x="300" y="1400" width="1600" height="30" rx="6" fill="#162635"/>
+<!-- آمریکا ~5044 -->
+<text x="260" y="1465" class="country" text-anchor="end">آمریکا ≈ ۵٬۰۴۴</text>
+<rect x="300" y="1445" width="1450" height="30" rx="6" fill="#24374B"/>
+<!-- چین ~500 -->
+<text x="260" y="1510" class="country" text-anchor="end">چین ≈ ۵۰۰</text>
+<rect x="300" y="1490" width="290" height="30" rx="6" fill="#D4AF37"/>
+<!-- فرانسه ~290 -->
+<text x="260" y="1555" class="country" text-anchor="end">فرانسه ≈ ۲۹۰</text>
+<rect x="300" y="1535" width="170" height="30" rx="6" fill="#B99633"/>
+<!-- بریتانیا ~225 -->
+<text x="260" y="1600" class="country" text-anchor="end">بریتانیا ≈ ۲۲۵</text>
+<rect x="300" y="1580" width="130" height="30" rx="6" fill="#C7A94D"/>
+<!-- هند ~172 -->
+<text x="2200" y="1420" class="country" text-anchor="end">هند ≈ ۱۷۲</text>
+<rect x="2240" y="1400" width="100" height="30" rx="6" fill="#8E7A3A"/>
+<!-- پاکستان ~170 -->
+<text x="2200" y="1465" class="country" text-anchor="end">پاکستان ≈ ۱۷۰</text>
+<rect x="2240" y="1445" width="98" height="30" rx="6" fill="#7D6B35"/>
+<!-- اسرائیل ~90 -->
+<text x="2200" y="1510" class="country" text-anchor="end">اسرائیل ≈ ۹۰</text>
+<rect x="2240" y="1490" width="52" height="30" rx="6" fill="#6B5C30"/>
+<!-- کره شمالی ~50 -->
+<text x="2200" y="1555" class="country" text-anchor="end">کره شمالی ≈ ۵۰</text>
+<rect x="2240" y="1535" width="30" height="30" rx="6" fill="#555"/>
+</g>
+
+<!-- ========= TRIAD SECTION ========= -->
+<text x="3400" y="1830" class="section" text-anchor="end">سه‌گانه هسته‌ای — توزیع توان پرتاب</text>
+<rect x="80" y="1860" width="3340" height="570" rx="20" class="card"/>
+
+<!-- Legend -->
+<rect x="140" y="1890" width="20" height="20" fill="#162635"/>
+<text x="280" y="1906" class="small" text-anchor="end">زمینی — موشک بالستیک</text>
+<rect x="320" y="1890" width="20" height="20" fill="#D4AF37"/>
+<text x="480" y="1906" class="small" text-anchor="end">دریایی — زیردریایی</text>
+<rect x="520" y="1890" width="20" height="20" fill="#6B7C8C"/>
+<text x="680" y="1906" class="small" text-anchor="end">هوایی — بمب‌افکن</text>
+
+<!-- USA -->
+<text x="380" y="1960" class="country" text-anchor="end">آمریکا</text>
+<rect x="420" y="1940" width="300" height="26" rx="4" fill="#162635"/>
+<rect x="730" y="1940" width="260" height="26" rx="4" fill="#D4AF37"/>
+<rect x="1000" y="1940" width="240" height="26" rx="4" fill="#6B7C8C"/>
+<!-- Russia -->
+<text x="380" y="2010" class="country" text-anchor="end">روسیه</text>
+<rect x="420" y="1990" width="330" height="26" rx="4" fill="#162635"/>
+<rect x="760" y="1990" width="230" height="26" rx="4" fill="#D4AF37"/>
+<rect x="1000" y="1990" width="200" height="26" rx="4" fill="#6B7C8C"/>
+<!-- China -->
+<text x="380" y="2060" class="country" text-anchor="end">چین</text>
+<rect x="420" y="2040" width="220" height="26" rx="4" fill="#162635"/>
+<rect x="650" y="2040" width="150" height="26" rx="4" fill="#D4AF37"/>
+<rect x="810" y="2040" width="100" height="26" rx="4" fill="#6B7C8C"/>
+<!-- France -->
+<text x="380" y="2110" class="country" text-anchor="end">فرانسه</text>
+<rect x="420" y="2090" width="100" height="26" rx="4" fill="#162635"/>
+<rect x="530" y="2090" width="200" height="26" rx="4" fill="#D4AF37"/>
+<rect x="740" y="2090" width="130" height="26" rx="4" fill="#6B7C8C"/>
+<!-- UK -->
+<text x="1700" y="1960" class="country" text-anchor="end">بریتانیا</text>
+<rect x="1740" y="1940" width="40" height="26" rx="4" fill="#162635"/>
+<rect x="1790" y="1940" width="220" height="26" rx="4" fill="#D4AF37"/>
+<rect x="2020" y="1940" width="100" height="26" rx="4" fill="#6B7C8C"/>
+<!-- India -->
+<text x="1700" y="2010" class="country" text-anchor="end">هند</text>
+<rect x="1740" y="1990" width="160" height="26" rx="4" fill="#162635"/>
+<rect x="1910" y="1990" width="100" height="26" rx="4" fill="#D4AF37"/>
+<rect x="2020" y="1990" width="80" height="26" rx="4" fill="#6B7C8C"/>
+<!-- Pakistan -->
+<text x="1700" y="2060" class="country" text-anchor="end">پاکستان</text>
+<rect x="1740" y="2040" width="150" height="26" rx="4" fill="#162635"/>
+<rect x="1900" y="2040" width="50" height="26" rx="4" fill="#D4AF37"/>
+<rect x="1960" y="2040" width="80" height="26" rx="4" fill="#6B7C8C"/>
+<!-- Israel -->
+<text x="1700" y="2110" class="country" text-anchor="end">اسرائیل</text>
+<rect x="1740" y="2090" width="110" height="26" rx="4" fill="#162635"/>
+<rect x="1860" y="2090" width="120" height="26" rx="4" fill="#D4AF37"/>
+<rect x="1990" y="2090" width="100" height="26" rx="4" fill="#6B7C8C"/>
+<!-- NK -->
+<text x="1700" y="2160" class="country" text-anchor="end">کره شمالی</text>
+<rect x="1740" y="2140" width="130" height="26" rx="4" fill="#162635"/>
+<rect x="1880" y="2140" width="15" height="26" rx="4" fill="#D4AF37"/>
+<rect x="1905" y="2140" width="10" height="26" rx="4" fill="#6B7C8C"/>
+
+<!-- Notes -->
+<text x="3380" y="2400" class="tiny" text-anchor="end">منبع: فدراسیون دانشمندان آمریکا (FAS)، انستیتو تحقیقات صلح استکهلم (SIPRI) — ۲۰۲۶</text>
+</svg>
