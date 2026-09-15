@@ -38,6 +38,7 @@ if (contentType) {
 
 <a
   href={altPath}
+  onclick={`try { localStorage.setItem('preferred_lang', '${altLang}'); } catch(e){}`}
   class="px-3 py-1.5 text-sm rounded-lg border border-border dark:border-border-dark hover:bg-surface-dim dark:hover:bg-surface-dark-dim transition-colors no-underline text-text-base dark:text-text-dark"
   aria-label={`Switch to ${altLang === "fa" ? "Persian" : "English"}`}
 >

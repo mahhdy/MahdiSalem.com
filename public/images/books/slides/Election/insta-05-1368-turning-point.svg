@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" dir="rtl">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;700;900&amp;display=swap');
+    * { font-family: 'Vazirmatn', sans-serif; }
+  </style>
+  <linearGradient id="ibg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#0a0e27"/>
+    <stop offset="55%" style="stop-color:#0d1333"/>
+    <stop offset="100%" style="stop-color:#160b24"/>
+  </linearGradient>
+  <linearGradient id="goldTxt" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#f7dd9c"/>
+    <stop offset="100%" stop-color="#c89a2e"/>
+  </linearGradient>
+  <filter id="ish"><feDropShadow dx="0" dy="3" stdDeviation="10" flood-color="#000" flood-opacity="0.5"/></filter>
+  <filter id="glow"><feGaussianBlur stdDeviation="18" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1080" height="1080" fill="url(#ibg)"/>
+<rect x="4" y="4" width="1072" height="1072" rx="46" fill="none" stroke="#0a0e27" stroke-width="10" opacity="0.55" filter="url(#glow)"/>
+<rect x="62" y="78" width="956" height="924" rx="34" fill="rgba(255,255,255,0.035)" stroke="rgba(255,255,255,0.09)" stroke-width="1.5" filter="url(#ish)"/>
+<rect x="115" y="118" width="387.0" height="46" rx="23" fill="#d4af37"/>
+<text x="308.5" y="148" fill="#ffffff" font-size="17" font-weight="700" text-anchor="middle">نقطه‌ی عطف، مرداد ۱۳۶۸</text>
+<text x="540.0" y="360.0" fill="url(#goldTxt)" font-size="54" font-weight="900" text-anchor="middle">شبی که موازنه‌ی</text>
+<text x="540.0" y="423.72" fill="url(#goldTxt)" font-size="54" font-weight="900" text-anchor="middle">قدرت تغییر کرد</text>
+<line x1="370.0" y1="490" x2="710.0" y2="490" stroke="#d4af37" stroke-width="3" opacity="0.75"/>
+<text x="540.0" y="550" fill="#ffffff" font-size="25" font-weight="600" text-anchor="middle">◈  حذفِ نخست‌وزیری</text>
+<text x="540.0" y="612" fill="#ffffff" font-size="25" font-weight="600" text-anchor="middle">◈  افزودنِ «مطلقه» به ولایتِ فقیه</text>
+<text x="540.0" y="674" fill="#ffffff" font-size="25" font-weight="600" text-anchor="middle">◈  تأسیسِ مجمعِ تشخیصِ مصلحت</text>
+<text x="540.0" y="940.0" fill="rgba(255,255,255,0.85)" font-size="21" font-weight="400" text-anchor="middle">بازنگریِ قانونِ اساسی که هرگز</text>
+<text x="540.0" y="970.45" text-anchor="middle" font-size="21"><tspan fill="#d4af37" font-weight="700">به رأیِ مردم بازنگشت</tspan></text>
+<text x="985" y="1002" fill="rgba(255,255,255,0.32)" font-size="22" font-weight="700" text-anchor="end">۵ / ۱۲</text>
+</svg>

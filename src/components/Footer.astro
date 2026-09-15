@@ -78,6 +78,12 @@ const currentYear = new Date().getFullYear();
         <ul class="space-y-2 text-sm">
           <li>
             <a
+              href={getLocalizedPath("resume", lang)}
+              class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline"
+              >{t("nav.resume", lang)}</a>
+          </li>
+          <li>
+            <a
               href={getLocalizedPath("about", lang)}
               class="text-text-muted dark:text-text-dark-muted hover:text-primary dark:hover:text-primary-light no-underline"
               >{t("nav.about", lang)}</a>

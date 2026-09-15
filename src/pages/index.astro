@@ -144,6 +144,31 @@ if (statements.length > 0) {
 ---
 
 <BaseLayout>
+  <!-- System Locale & Browser Language Redirection for Non-Persian Visitors -->
+  <script is:inline>
+    (function () {
+      try {
+        var preferred = localStorage.getItem("preferred_lang");
+        if (preferred === "fa") return;
+        if (preferred === "en") {
+          window.location.replace("/en/resume");
+          return;
+        }
+        var langs = navigator.languages || [navigator.language || ""];
+        var hasPersian = false;
+        for (var i = 0; i < langs.length; i++) {
+          if (String(langs[i]).toLowerCase().indexOf("fa") === 0) {
+            hasPersian = true;
+            break;
+          }
+        }
+        if (!hasPersian) {
+          window.location.replace("/en/resume");
+        }
+      } catch (e) {}
+    })();
+  </script>
+
   <!-- Fading Hero Slider replaces the old static hero -->
   <HeroSlider slides={heroSlides} />
 

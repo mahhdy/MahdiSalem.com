@@ -16,7 +16,14 @@ interface Props {
 const { lang } = Astro.props;
 const dir = getDir(lang);
 
-const primaryNav = [
+const primaryNav = lang === 'en' ? [
+  { key: "nav.home", path: "" },
+  { key: "nav.resume", path: "resume" },
+  { key: "nav.about", path: "about" },
+  { key: "nav.books", path: "books" },
+  { key: "nav.articles", path: "articles" },
+  { key: "nav.contact", path: "contact" },
+] : [
   { key: "nav.home", path: "" },
   { key: "nav.about", path: "about" },
   { key: "nav.books", path: "books" },
@@ -25,7 +32,20 @@ const primaryNav = [
   { key: "nav.multimedia", path: "multimedia" },
 ];
 
-const secondaryNav = [
+const secondaryNav = lang === 'en' ? [
+  { key: "nav.proposals", path: "proposals" },
+  { key: "nav.multimedia", path: "multimedia" },
+  { key: "nav.dialogues", path: "dialogues" },
+  { key: "nav.statements", path: "statements" },
+  { key: "nav.wiki", path: "wiki" },
+  { key: "nav.social", path: "social" },
+  { key: "nav.tags", path: "tags" },
+  { key: "nav.timeline", path: "timeline" },
+  { key: "nav.drafts", path: "drafts" },
+  { key: "nav.support", path: "support" },
+  { key: "nav.analytics", path: "analytics" },
+] : [
+  { key: "nav.resume", path: "resume" },
   { key: "nav.dialogues", path: "dialogues" },
   { key: "nav.statements", path: "statements" },
   { key: "nav.wiki", path: "wiki" },
