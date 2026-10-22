@@ -11,6 +11,10 @@ const altLang = getAlternateLocale(lang);
 // Build the alternate URL maintaining content type context
 const currentPath = Astro.url.pathname;
 
+// Check if current page is the resume / profile page (which has no Persian counterpart)
+const isResume =
+  currentPath.includes("/resume") || currentPath.includes("/profile");
+
 // Detect content type from current path
 let contentType = "";
 if (currentPath.includes("/articles/")) contentType = "articles";
@@ -20,10 +24,13 @@ else if (currentPath.includes("/multimedia/")) contentType = "multimedia";
 else if (currentPath.includes("/statements/")) contentType = "statements";
 else if (currentPath.includes("/wiki/")) contentType = "wiki";
 
+// If switching to Persian from the resume page, transfer to the main Persian page ('/')
 // If we're on a content page, go to the index page of that content type in the other language
 // Otherwise, just switch the language prefix
-let altPath;
-if (contentType) {
+let altPath: string;
+if (isResume && altLang === "fa") {
+  altPath = "/";
+} else if (contentType) {
   // Go to the content type index page in the alternate language
   altPath = altLang === "fa" ? `/${contentType}` : `/en/${contentType}`;
 } else {

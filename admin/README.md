@@ -25,13 +25,13 @@ Every destructive operation (Content delete, Tag rename, Category update, I18n c
 
 ## Usage
 
-Run the following command from the project root:
+Install dependencies once from the project root with `npm install`, then run:
 
 ```bash
 npm run admin:dev
 ```
 
-This will concurrently start both the API server and the frontend development server.
+This starts the API server and frontend development server. The frontend is available at `http://localhost:3333` and the API at `http://localhost:3334`.
 
 ## Troubleshooting
 

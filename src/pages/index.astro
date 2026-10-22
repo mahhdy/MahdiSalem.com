@@ -148,23 +148,100 @@ if (statements.length > 0) {
   <script is:inline>
     (function () {
       try {
-        var preferred = localStorage.getItem("preferred_lang");
-        if (preferred === "fa") return;
-        if (preferred === "en") {
-          window.location.replace("/en/resume");
+        function hasPersianSupport() {
+          // 1. Browser language preferences
+          var langs = navigator.languages || (navigator.language ? [navigator.language] : []);
+          for (var i = 0; i < langs.length; i++) {
+            var l = String(langs[i]).toLowerCase();
+            if (
+              l.indexOf("fa") === 0 ||
+              l.indexOf("-fa") !== -1 ||
+              l.indexOf("pes") === 0 ||
+              l.indexOf("prs") === 0 ||
+              l.indexOf("farsi") !== -1 ||
+              l.indexOf("persian") !== -1 ||
+              l.indexOf("iran") !== -1
+            ) {
+              return true;
+            }
+          }
+
+          // 2. System / Intl locale and Timezone
+          try {
+            if (typeof Intl !== "undefined" && Intl.DateTimeFormat) {
+              var dtf = Intl.DateTimeFormat().resolvedOptions();
+              var loc = String(dtf.locale || "").toLowerCase();
+              if (
+                loc.indexOf("fa") === 0 ||
+                loc.indexOf("-fa") !== -1 ||
+                loc.indexOf("pes") === 0 ||
+                loc.indexOf("prs") === 0
+              ) {
+                return true;
+              }
+              var tz = String(dtf.timeZone || "").toLowerCase();
+              if (tz === "asia/tehran" || tz.indexOf("iran") !== -1) {
+                return true;
+              }
+            }
+          } catch (e) {}
+
+          // 3. System installed Persian fonts (detectable on machines with Persian language support)
+          try {
+            var canvas = document.createElement("canvas");
+            var ctx = canvas.getContext("2d");
+            if (ctx) {
+              var sample = "abcdefghijklmnopqrstuvwxyz0123456789";
+              var baseFont = "monospace";
+              ctx.font = "72px " + baseFont;
+              var baseWidth = ctx.measureText(sample).width;
+
+              var persianFonts = [
+                "B Nazanin",
+                "IRANSans",
+                "Vazir",
+                "Vazirmatn",
+                "B Yekan",
+                "Shabnam",
+                "Sahel",
+                "Samim",
+                "Parastoo",
+                "B Titr",
+                "B Mitra",
+                "B Zar",
+                "IranNastaliq"
+              ];
+
+              for (var j = 0; j < persianFonts.length; j++) {
+                ctx.font = "72px '" + persianFonts[j] + "', " + baseFont;
+                if (ctx.measureText(sample).width !== baseWidth) {
+                  return true;
+                }
+              }
+            }
+          } catch (e) {}
+
+          return false;
+        }
+
+        var hasPersian = hasPersianSupport();
+
+        // If the machine has Persian installed/configured, never redirect to the English resume
+        if (hasPersian) {
+          try {
+            localStorage.setItem("preferred_lang", "fa");
+          } catch (e) {}
           return;
         }
-        var langs = navigator.languages || [navigator.language || ""];
-        var hasPersian = false;
-        for (var i = 0; i < langs.length; i++) {
-          if (String(langs[i]).toLowerCase().indexOf("fa") === 0) {
-            hasPersian = true;
-            break;
-          }
+
+        // If Persian is explicitly preferred by the user, stay on Persian
+        var preferred = localStorage.getItem("preferred_lang");
+        if (preferred === "fa") {
+          return;
         }
-        if (!hasPersian) {
-          window.location.replace("/en/resume");
-        }
+
+        // Only non-Persian machines/browsers without a Persian preference are redirected
+        window.location.replace("/en/resume");
       } catch (e) {}
     })();
   </script>
